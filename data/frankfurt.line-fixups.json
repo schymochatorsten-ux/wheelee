@@ -1,0 +1,9 @@
+{
+  "comment": "Geprüfte Ausnahmen für den Zeilenumbruch in Liste_allgemeiner_Parkplaetze.pdf. Jede Zeile hier wird beim Parsen fest mit ihrer Folgezeile verbunden, weil die Fortsetzung wie ein eigenständiger Eintrag aussieht und die Heuristik sie sonst trennt. Bitte nur nach Blick in data/raw/frankfurt.txt ergänzen.",
+  "forcedJoins": [
+    "Bockenheimer Anlage 2-3 / A298 (Mo-Fr 9-17 h) Höchstparkdauer 2",
+    "Eschersheimer Landstraße 393 (Mo-Fr, 9-11 Uhr + 14-16 Uhr) / integr.",
+    "Friedberger Landstraße / Ecke Gießener Straße / Eingang",
+    "Palleskestraße AOK / Billtalstraße, Mo, Di, Mi, Fr 8-16.30, Do 8-18.00"
+  ]
+}

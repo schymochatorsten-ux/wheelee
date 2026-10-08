@@ -1,0 +1,170 @@
+"use client";
+
+import { useCallback, useEffect, useMemo, useState } from "react";
+import dynamic from "next/dynamic";
+import type { ParkingSpot } from "@/lib/types";
+import { distanceMeters, findNearest, formatDistance, hasCoordinates, sortByDistance } from "@/lib/geo";
+import type { LatLng } from "@/lib/geo";
+import { detectMapsTarget, type MapsTarget } from "@/lib/navigation";
+import { useGeolocation } from "@/hooks/useGeolocation";
+import { SpotDetails } from "./SpotDetails";
+import { SpotList } from "./SpotList";
+
+/**
+ * Hält Karte, Liste und Detailansicht zusammen: Standort anfragen,
+ * nächstgelegenen Parkplatz bestimmen, Auswahl verwalten.
+ *
+ * Leaflet greift beim Laden auf `window` zu und darf deshalb nicht auf dem
+ * Server gerendert werden.
+ */
+const ParkingMap = dynamic(() => import("./map/ParkingMap"), {
+  ssr: false,
+  loading: () => (
+    <div className="flex h-full items-center justify-center bg-neutral-100 dark:bg-neutral-900">
+      <p className="text-sm text-neutral-500">Karte wird geladen …</p>
+    </div>
+  ),
+});
+
+interface MapSectionProps {
+  spots: ParkingSpot[];
+  center: LatLng;
+  cityName: string;
+}
+
+type View = "map" | "list";
+
+export function MapSection({ spots, center, cityName }: MapSectionProps) {
+  const geo = useGeolocation();
+  const [selected, setSelected] = useState<ParkingSpot | null>(null);
+  const [view, setView] = useState<View>("map");
+  const [mapsTarget, setMapsTarget] = useState<MapsTarget>("google");
+  const [focus, setFocus] = useState<{ lat: number; lng: number; key: string } | null>(null);
+
+  // Standort direkt anfragen: Der Nutzen der App hängt daran, und der Browser
+  // fragt selbst um Erlaubnis.
+  useEffect(() => {
+    geo.request();
+  }, [geo.request]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    setMapsTarget(detectMapsTarget(navigator.userAgent));
+  }, []);
+
+  const origin = geo.position ?? center;
+
+  const nearest = useMemo(
+    () => (geo.position ? findNearest(spots, geo.position) : null),
+    [spots, geo.position],
+  );
+
+  const nearby = useMemo(() => sortByDistance(spots, origin), [spots, origin]);
+
+  const unlocated = useMemo(() => spots.filter((spot) => !hasCoordinates(spot)), [spots]);
+
+  // Beim ersten Standort auf den nächstgelegenen Parkplatz zoomen.
+  useEffect(() => {
+    if (geo.status === "ready" && nearest) {
+      setFocus({ lat: nearest.lat, lng: nearest.lng, key: `nearest-${nearest.id}` });
+    }
+  }, [geo.status, nearest]);
+
+  const select = useCallback((spot: ParkingSpot) => {
+    setSelected(spot);
+    setView("map");
+    if (hasCoordinates(spot)) {
+      setFocus({ lat: spot.lat, lng: spot.lng, key: `spot-${spot.id}-${Date.now()}` });
+    }
+  }, []);
+
+  const selectedDistance =
+    selected && geo.position && hasCoordinates(selected)
+      ? distanceMeters(geo.position, { lat: selected.lat, lng: selected.lng })
+      : null;
+
+  return (
+    <div className="flex h-dvh flex-col">
+      <header className="shrink-0 border-b border-neutral-200 px-4 py-3 dark:border-neutral-800">
+        <div className="flex items-baseline justify-between gap-3">
+          <h1 className="text-lg font-semibold">
+            Behindertenparkplätze <span className="text-neutral-500">{cityName}</span>
+          </h1>
+          <div
+            role="tablist"
+            aria-label="Ansicht wählen"
+            className="flex shrink-0 overflow-hidden rounded-lg border border-neutral-300 text-sm dark:border-neutral-700"
+          >
+            {(["map", "list"] as const).map((option) => (
+              <button
+                key={option}
+                type="button"
+                role="tab"
+                aria-selected={view === option}
+                onClick={() => setView(option)}
+                className={`min-h-11 px-3 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none ${
+                  view === option
+                    ? "bg-blue-700 text-white"
+                    : "bg-white text-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
+                }`}
+              >
+                {option === "map" ? "Karte" : "Liste"}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <p aria-live="polite" className="mt-1.5 text-sm text-neutral-600 dark:text-neutral-400">
+          {geo.status === "locating" && "Standort wird ermittelt …"}
+          {geo.status === "ready" &&
+            (nearest
+              ? `Nächster Parkplatz: ${nearest.street ?? nearest.label} – ${formatDistance(nearest.distanceMeters)}`
+              : "Kein verorteter Parkplatz in der Nähe.")}
+          {geo.message}
+          {geo.status === "idle" && `${spots.length} Parkplätze in ${cityName}.`}
+        </p>
+
+        {(geo.status === "denied" || geo.status === "timeout" || geo.status === "unavailable") && (
+          <button
+            type="button"
+            onClick={geo.request}
+            className="mt-2 min-h-11 rounded-lg border border-neutral-300 px-3 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
+          >
+            Standort erneut versuchen
+          </button>
+        )}
+      </header>
+
+      <main className="relative min-h-0 flex-1">
+        {view === "map" ? (
+          <>
+            <ParkingMap
+              spots={spots}
+              center={center}
+              userPosition={geo.position}
+              nearestId={nearest?.id ?? null}
+              focus={focus}
+              onSelect={select}
+            />
+            {selected && (
+              <SpotDetails
+                spot={selected}
+                distanceMeters={selectedDistance}
+                mapsTarget={mapsTarget}
+                onClose={() => setSelected(null)}
+              />
+            )}
+          </>
+        ) : (
+          <div className="h-full overflow-y-auto px-4 py-4">
+            <SpotList
+              nearby={nearby}
+              unlocated={unlocated}
+              hasUserPosition={geo.position !== null}
+              onSelect={select}
+            />
+          </div>
+        )}
+      </main>
+    </div>
+  );
+}

@@ -1,0 +1,4 @@
+{
+  "comment": "Manuelle Korrekturen zum Importergebnis. Sie gewinnen immer gegen Parser und Geocoding und überleben jeden erneuten Importlauf. Schlüssel ist die Parkplatz-ID aus data/frankfurt.parsed.json. Erlaubte Felder: lat, lng, geoAccuracy, street, houseNumber, note, district, label, timeRestriction, spotCount. Zusätzlich 'reason' zur Dokumentation der Korrektur.",
+  "spots": {}
+}

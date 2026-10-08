@@ -1,0 +1,2874 @@
+{
+  "ffm-00e86d96fd": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:19:45.597Z"
+  },
+  "ffm-015c4cbc85": {
+    "lat": 50.0806119,
+    "lng": 8.6437316,
+    "accuracy": "street",
+    "query": "Heinrich-Seliger-Str.",
+    "displayName": "Heinrich-Seliger-Straße, Adolf-Miersch-Siedlung, Niederrad, Süd, Frankfurt am Main, Hessen, 60528, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:30.432Z"
+  },
+  "ffm-01d2af5a48": {
+    "lat": 50.0920383,
+    "lng": 8.6497667,
+    "accuracy": "house",
+    "query": "Heinrich-Hoffmann-Straße 2",
+    "displayName": "2, Heinrich-Hoffmann-Straße, Niederrad, Süd, Frankfurt am Main, Hessen, 60528, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:29.122Z"
+  },
+  "ffm-01ffa48bba": {
+    "lat": 50.093957,
+    "lng": 8.6070935,
+    "accuracy": "street",
+    "query": "Alte Falterstraße",
+    "displayName": "Alte Falterstraße, Griesheim, West, Frankfurt am Main, Hessen, 65933, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:03.393Z"
+  },
+  "ffm-026f7ac9eb": {
+    "lat": 50.1019372,
+    "lng": 8.5454721,
+    "accuracy": "house",
+    "query": "Albanusstraße 35",
+    "displayName": "35, Albanusstraße, Höchst, West, Frankfurt am Main, Hessen, 65929, Deutschland",
+    "fetchedAt": "2026-10-08T20:15:43.671Z"
+  },
+  "ffm-02ee7251d3": {
+    "lat": 50.1182287,
+    "lng": 8.6358149,
+    "accuracy": "house",
+    "query": "Galvanistraße 31",
+    "displayName": "31, Galvanistraße, City West, Kuhwaldsiedlung, Bockenheim, Innenstadt 2, Frankfurt am Main, Hessen, 60486, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:30.430Z"
+  },
+  "ffm-03e1909df3": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:21:38.922Z"
+  },
+  "ffm-049276ea4e": {
+    "lat": 50.1253706,
+    "lng": 8.6783711,
+    "accuracy": "street",
+    "query": "Fürstenberger Str.25-27",
+    "displayName": "Fürstenbergerstraße, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60322, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:27.990Z"
+  },
+  "ffm-04fc099b7d": {
+    "lat": 50.1162679,
+    "lng": 8.5573146,
+    "accuracy": "street",
+    "query": "Dunantring",
+    "displayName": "Dunantring, Sossenheim, West, Frankfurt am Main, Hessen, 65936, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:22.178Z"
+  },
+  "ffm-060852e53a": {
+    "lat": 50.1022352,
+    "lng": 8.5909477,
+    "accuracy": "street",
+    "query": "Jägerallee",
+    "displayName": "Jägerallee, Griesheim, West, Frankfurt am Main, Hessen, 65933, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:09.413Z"
+  },
+  "ffm-06460fb99b": {
+    "lat": 50.1230782,
+    "lng": 8.6475401,
+    "accuracy": "street",
+    "query": "Am Weingarten 18-20",
+    "displayName": "Am Weingarten, Einkaufsmeile Leipziger Straße, Bockenheim, Innenstadt 2, Frankfurt am Main, Hessen, 60487, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:28.625Z"
+  },
+  "ffm-06be066e75": {
+    "lat": 50.1235451,
+    "lng": 8.5625222,
+    "accuracy": "street",
+    "query": "Michaelstraße",
+    "displayName": "Michaelstraße, Sossenheim, West, Frankfurt am Main, Hessen, 65936, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:03.036Z"
+  },
+  "ffm-097250b02e": {
+    "lat": 50.0804548,
+    "lng": 8.6496756,
+    "accuracy": "house",
+    "query": "Königslacher Straße 37",
+    "displayName": "37, Königslacher Straße, Niederrad, Süd, Frankfurt am Main, Hessen, 60528, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:44.659Z"
+  },
+  "ffm-0a44f4333d": {
+    "lat": 50.1000302,
+    "lng": 8.7011484,
+    "accuracy": "house",
+    "query": "Auf dem Mühlberg 73",
+    "displayName": "73, Auf dem Mühlberg, Sachsenhausen Süd, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60599, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:42.692Z"
+  },
+  "ffm-0b09572cce": {
+    "lat": 50.12152,
+    "lng": 8.6670332,
+    "accuracy": "house",
+    "query": "Unterlindau 73",
+    "displayName": "73, Unterlindau, Westend Süd, Innenstadt 2, Frankfurt am Main, Hessen, 60323, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:48.730Z"
+  },
+  "ffm-0c8fad4421": {
+    "lat": 50.0975833,
+    "lng": 8.6277887,
+    "accuracy": "house",
+    "query": "Ackermannstraße 10",
+    "displayName": "10, Ackermannstraße, Hellerhofsiedlung, Europaviertel, Gallus, Innenstadt 1, Frankfurt am Main, Hessen, 60326, Deutschland",
+    "fetchedAt": "2026-10-08T20:15:33.840Z"
+  },
+  "ffm-0df9cb5c24": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:20:48.140Z"
+  },
+  "ffm-0efc8e31e8": {
+    "lat": 50.1015306,
+    "lng": 8.547641,
+    "accuracy": "approximate",
+    "query": "Königsteiner Str., Emmerich-Josef-Str.",
+    "displayName": "Parkhaus Königsteiner Straße, 28, Emmerich-Josef-Straße, Höchst, West, Frankfurt am Main, Hessen, 65929, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:39.682Z"
+  },
+  "ffm-0f546e87da": {
+    "lat": 50.1011735,
+    "lng": 8.6882003,
+    "accuracy": "house",
+    "query": "Bruchstraße 25",
+    "displayName": "25, Bruchstraße, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60594, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:45.185Z"
+  },
+  "ffm-0f907d9df6": {
+    "lat": 50.1260689,
+    "lng": 8.6238801,
+    "accuracy": "house",
+    "query": "Hohensteiner Straße 17",
+    "displayName": "17, Hohensteiner Straße, Hausen, Mitte-West, Frankfurt am Main, Hessen, 60487, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:41.803Z"
+  },
+  "ffm-107d866e7d": {
+    "lat": 50.1007993,
+    "lng": 8.5451749,
+    "accuracy": "house",
+    "query": "Justinuskirchstraße 3a",
+    "displayName": "ehem. Postamt, 3a, Justinuskirchstraße, Höchst, West, Frankfurt am Main, Hessen, 65929, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:22.803Z"
+  },
+  "ffm-11448881dd": {
+    "lat": 50.1168968,
+    "lng": 8.6798525,
+    "accuracy": "street",
+    "query": "Große Eschenheimer Str.",
+    "displayName": "Große Eschenheimer Straße, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60313, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:56.707Z"
+  },
+  "ffm-1176eb7e3d": {
+    "lat": 50.1151173,
+    "lng": 8.7083021,
+    "accuracy": "house",
+    "query": "Röderbergweg 82",
+    "displayName": "August-Stunz-Zentrum, 82, Röderbergweg, Ostend, Bornheim/Ostend, Frankfurt am Main, Hessen, 60314, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:23.472Z"
+  },
+  "ffm-12606e45bd": {
+    "lat": 50.143832,
+    "lng": 8.7560149,
+    "accuracy": "house",
+    "query": "Hahnenkammstraße 3",
+    "displayName": "3, Hahnenkammstraße, Enkheim, Bergen-Enkheim, Frankfurt am Main, Hessen, 60388, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:08.976Z"
+  },
+  "ffm-1337b7f8cc": {
+    "lat": 50.1510954,
+    "lng": 8.6927187,
+    "accuracy": "street",
+    "query": "Jaspertstr.",
+    "displayName": "Jaspertstraße, Preungesheim, Nord-Ost, Frankfurt am Main, Hessen, 60435, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:13.867Z"
+  },
+  "ffm-1369ad6c9f": {
+    "lat": 50.0854574,
+    "lng": 8.6471024,
+    "accuracy": "approximate",
+    "query": "Schwarzwaldstr.46",
+    "displayName": "46, Schwarzwaldstraße, Niederrad, Süd, Frankfurt am Main, Hessen, 60528, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:05.514Z"
+  },
+  "ffm-13fe3a7eb3": {
+    "lat": 50.1092996,
+    "lng": 8.599706,
+    "accuracy": "street",
+    "query": "Waldschulstraße",
+    "displayName": "Waldschulstraße, KGV Gutleut Anlage III, Griesheim, West, Frankfurt am Main, Hessen, 65933, Deutschland",
+    "fetchedAt": "2026-10-08T20:26:03.247Z"
+  },
+  "ffm-1492739142": {
+    "lat": 50.1181113,
+    "lng": 8.768863,
+    "accuracy": "street",
+    "query": "Bregenzer Straße",
+    "displayName": "Bregenzer Straße, Fechenheim, Ost, Frankfurt am Main, Hessen, 60386, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:37.867Z"
+  },
+  "ffm-14bbc19564": {
+    "lat": 50.1213528,
+    "lng": 8.6419848,
+    "accuracy": "house",
+    "query": "Kurfürstenplatz 34",
+    "displayName": "34, Kurfürstenplatz, Bockenheim, Innenstadt 2, Frankfurt am Main, Hessen, 60486, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:01.397Z"
+  },
+  "ffm-1534cfb9df": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:21:57.720Z"
+  },
+  "ffm-16defce0a0": {
+    "lat": 50.1353395,
+    "lng": 8.6711618,
+    "accuracy": "house",
+    "query": "Eschersheimer Landstraße 249",
+    "displayName": "Jugend- und Sozialamt, 241-249, Eschersheimer Landstraße, Westend Nord, Innenstadt 2, Frankfurt am Main, Hessen, 60320, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:49.788Z"
+  },
+  "ffm-1b711bb144": {
+    "lat": 50.1055972,
+    "lng": 8.6876508,
+    "accuracy": "house",
+    "query": "Brückenstraße 21",
+    "displayName": "21, Brückenstraße, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60594, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:46.519Z"
+  },
+  "ffm-1c2b5313e2": {
+    "lat": 50.1038414,
+    "lng": 8.6357451,
+    "accuracy": "house",
+    "query": "Frankenallee 169",
+    "displayName": "Gemeinschaftspraxis für Allgemeinmedizin im Gallusviertel, 169, Frankenallee, Hellerhofsiedlung, Europaviertel, Gallus, Innenstadt 1, Frankfurt am Main, Hessen, 60326, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:05.833Z"
+  },
+  "ffm-1d06fa40e6": {
+    "lat": 50.1027704,
+    "lng": 8.5387006,
+    "accuracy": "street",
+    "query": "Liederbacher Straße 9-11",
+    "displayName": "Liederbacher Straße, Höchst, West, Frankfurt am Main, Hessen, 65929, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:30.384Z"
+  },
+  "ffm-1d47d4f481": {
+    "lat": 50.1063345,
+    "lng": 8.6478952,
+    "accuracy": "house",
+    "query": "Frankenallee 38",
+    "displayName": "38, Frankenallee, Gallus, Innenstadt 1, Frankfurt am Main, Hessen, 60327, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:07.128Z"
+  },
+  "ffm-1db2579518": {
+    "lat": 50.1045398,
+    "lng": 8.5520357,
+    "accuracy": "house",
+    "query": "Palleskestraße 14",
+    "displayName": "14, Palleskestraße, Höchst, West, Frankfurt am Main, Hessen, 65929, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:40.729Z"
+  },
+  "ffm-1e5dd647a2": {
+    "lat": 50.1105446,
+    "lng": 8.6807394,
+    "accuracy": "house",
+    "query": "Paulsplatz 7",
+    "displayName": "7, Paulsplatz, Altstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:47.662Z"
+  },
+  "ffm-1e5f1bb24b": {
+    "lat": 50.1192275,
+    "lng": 8.6534649,
+    "accuracy": "approximate",
+    "query": "Bockenheimer Warte",
+    "displayName": "Bockenheimer Warte, Westend Süd, Innenstadt 2, Frankfurt am Main, Hessen, 60325, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:22.652Z"
+  },
+  "ffm-1eba2e22fa": {
+    "lat": 50.1211138,
+    "lng": 8.6739089,
+    "accuracy": "house",
+    "query": "Grüneburgweg 12",
+    "displayName": "12, Grüneburgweg, Westend Süd, Innenstadt 2, Frankfurt am Main, Hessen, 60322, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:02.966Z"
+  },
+  "ffm-1ff05bffda": {
+    "lat": 50.1386757,
+    "lng": 8.7166162,
+    "accuracy": "house",
+    "query": "Heinz-Herbert-Karry-Straße 3",
+    "displayName": "3, Heinz-Herbert-Karry-Straße, Seckbach, Ost, Frankfurt am Main, Hessen, 60389, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:32.985Z"
+  },
+  "ffm-2139d5ebb0": {
+    "lat": 50.1254735,
+    "lng": 8.6744051,
+    "accuracy": "house",
+    "query": "Eschersheimer Landstraße 105",
+    "displayName": "105-107, Eschersheimer Landstraße, Westend Nord, Innenstadt 2, Frankfurt am Main, Hessen, 60322, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:48.364Z"
+  },
+  "ffm-22cd557afe": {
+    "lat": 50.1580312,
+    "lng": 8.6593857,
+    "accuracy": "house",
+    "query": "Nußzeil 48",
+    "displayName": "Pfarrer-Münzenberger-Haus, 48, Nußzeil, Eschersheim, Mitte-Nord, Frankfurt am Main, Hessen, 60433, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:09.297Z"
+  },
+  "ffm-22d136b5d2": {
+    "lat": 50.111315,
+    "lng": 8.7671236,
+    "accuracy": "street",
+    "query": "Starkenburger Straße",
+    "displayName": "Starkenburger Straße, Fechenheim, Ost, Frankfurt am Main, Hessen, 60386, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:30.117Z"
+  },
+  "ffm-23741a8576": {
+    "lat": 50.1149276,
+    "lng": 8.6766014,
+    "accuracy": "house",
+    "query": "Börsenstraße 7",
+    "displayName": "7, Börsenstraße, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60313, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:26.170Z"
+  },
+  "ffm-239ae231ce": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:16:09.278Z"
+  },
+  "ffm-23d73f4019": {
+    "lat": 50.1223596,
+    "lng": 8.7004761,
+    "accuracy": "house",
+    "query": "Berger Straße 116",
+    "displayName": "116, Berger Straße, Nordend Ost, Innenstadt 3, Frankfurt am Main, Hessen, 60316, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:56.149Z"
+  },
+  "ffm-24ca6a882e": {
+    "lat": 50.180303,
+    "lng": 8.6395656,
+    "accuracy": "house",
+    "query": "Langestraße 25",
+    "displayName": "25, Helene-Lange-Straße, Riedberg, Kalbach-Riedberg, Frankfurt am Main, Hessen, 60438, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:17.653Z"
+  },
+  "ffm-26375b386c": {
+    "lat": 50.105474,
+    "lng": 8.5460961,
+    "accuracy": "house",
+    "query": "Gotenstraße 1",
+    "displayName": "1, Gotenstraße, Höchst, West, Frankfurt am Main, Hessen, 65929, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:50.001Z"
+  },
+  "ffm-271280ba6c": {
+    "lat": 50.1251113,
+    "lng": 8.6108034,
+    "accuracy": "street",
+    "query": "Radilostr.",
+    "displayName": "Radilostraße, Rödelheim, Mitte-West, Frankfurt am Main, Hessen, 60489, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:01.928Z"
+  },
+  "ffm-279b7ee4f0": {
+    "lat": 50.1582252,
+    "lng": 8.6479461,
+    "accuracy": "house",
+    "query": "Oranienstraße 16b",
+    "displayName": "16b, Oranienstraße, Heddernheim, Nord-West, Frankfurt am Main, Hessen, 60439, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:36.760Z"
+  },
+  "ffm-282984860f": {
+    "lat": 50.122131,
+    "lng": 8.699968,
+    "accuracy": "house",
+    "query": "Berger Straße 106",
+    "displayName": "106, Berger Straße, Nordend Ost, Innenstadt 3, Frankfurt am Main, Hessen, 60316, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:53.987Z"
+  },
+  "ffm-28d8047e62": {
+    "lat": 50.1123113,
+    "lng": 8.677979,
+    "accuracy": "house",
+    "query": "Roßmarkt 13",
+    "displayName": "13, Roßmarkt, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:30.158Z"
+  },
+  "ffm-29334eb7ca": {
+    "lat": 50.1311315,
+    "lng": 8.6976337,
+    "accuracy": "house",
+    "query": "Gellertstraße 41",
+    "displayName": "41, Gellertstraße, Nordend Ost, Innenstadt 3, Frankfurt am Main, Hessen, 60389, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:37.215Z"
+  },
+  "ffm-2ace4218e4": {
+    "lat": 50.1547022,
+    "lng": 8.694898,
+    "accuracy": "house",
+    "query": "Weilbrunnstraße 20a",
+    "displayName": "20a, Weilbrunnstraße, Preungesheim, Nord-Ost, Frankfurt am Main, Hessen, 60435, Deutschland",
+    "fetchedAt": "2026-10-08T20:26:07.022Z"
+  },
+  "ffm-2afad7c63a": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:22:58.296Z"
+  },
+  "ffm-2b5163a81c": {
+    "lat": 50.1407221,
+    "lng": 8.6654746,
+    "accuracy": "approximate",
+    "query": "Gustav-Freytag-Str.7",
+    "displayName": "7, Gustav-Freytag-Straße, Dornbusch, Mitte-Nord, Frankfurt am Main, Hessen, 60320, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:04.766Z"
+  },
+  "ffm-2bef16c8cf": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:26:28.696Z"
+  },
+  "ffm-2c647227f9": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:23:51.393Z"
+  },
+  "ffm-2cfe869fe8": {
+    "lat": 50.1113718,
+    "lng": 8.6798633,
+    "accuracy": "street",
+    "query": "Berliner Straße 43",
+    "displayName": "Berliner Straße, Altstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:05.161Z"
+  },
+  "ffm-2d1cb11b57": {
+    "lat": 50.1121189,
+    "lng": 8.6859564,
+    "accuracy": "street",
+    "query": "Fahrgasse",
+    "displayName": "Fahrgasse, Altstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:57.401Z"
+  },
+  "ffm-2db4b2d47a": {
+    "lat": 50.1107519,
+    "lng": 8.6883482,
+    "accuracy": "approximate",
+    "query": "Stadtwerke, Kurt-Schumacher-Str.",
+    "displayName": "Stadtwerke / VGF, 8, Kurt-Schumacher-Straße, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:05.255Z"
+  },
+  "ffm-2e11bb6a01": {
+    "lat": 50.1192629,
+    "lng": 8.6590725,
+    "accuracy": "street",
+    "query": "Bockenheimer Landstr.",
+    "displayName": "Bockenheimer Landstraße, Westend Süd, Innenstadt 2, Frankfurt am Main, Hessen, 60325, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:20.036Z"
+  },
+  "ffm-2e6445f1a1": {
+    "lat": 50.1117147,
+    "lng": 8.6764457,
+    "accuracy": "house",
+    "query": "Kaiserstraße 2",
+    "displayName": "Lindt, 2-4, Kaiserstraße, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:25.953Z"
+  },
+  "ffm-2ef14d5dd5": {
+    "lat": 50.1528147,
+    "lng": 8.625679,
+    "accuracy": "house",
+    "query": "Am Alten Schloß 21",
+    "displayName": "21, Am Alten Schloß, Praunheim, Mitte-West, Frankfurt am Main, Hessen, 60439, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:10.652Z"
+  },
+  "ffm-2f3d982976": {
+    "lat": 50.1232551,
+    "lng": 8.7023072,
+    "accuracy": "house",
+    "query": "Berger Straße 130",
+    "displayName": "130, Berger Straße, Bornheim, Bornheim/Ostend, Frankfurt am Main, Hessen, 60385, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:57.541Z"
+  },
+  "ffm-3161e54eb7": {
+    "lat": 50.1030384,
+    "lng": 8.5379498,
+    "accuracy": "house",
+    "query": "Gebeschusstr. 58",
+    "displayName": "58, Gebeschusstraße, Unterliederbach, West, Frankfurt am Main, Hessen, 65929, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:35.359Z"
+  },
+  "ffm-31c33bee86": {
+    "lat": 50.1177694,
+    "lng": 8.5637082,
+    "accuracy": "street",
+    "query": "Alt Sossenheim 46-48",
+    "displayName": "Alt-Sossenheim, Sossenheim, West, Frankfurt am Main, Hessen, 65936, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:00.887Z"
+  },
+  "ffm-33052a8500": {
+    "lat": 50.1094105,
+    "lng": 8.6774318,
+    "accuracy": "approximate",
+    "query": "Weißfrauenstr.1",
+    "displayName": "1, Weißfrauenstraße, Altstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:26:09.777Z"
+  },
+  "ffm-34018b002e": {
+    "lat": 50.1115631,
+    "lng": 8.6745416,
+    "accuracy": "house",
+    "query": "Große Gallusstraße 13",
+    "displayName": "13, Große Gallusstraße, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:59.155Z"
+  },
+  "ffm-35ac9ec1dc": {
+    "lat": 50.1147063,
+    "lng": 8.6915593,
+    "accuracy": "house",
+    "query": "Zeil 15",
+    "displayName": "15, Zeil, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60313, Deutschland",
+    "fetchedAt": "2026-10-08T20:26:33.626Z"
+  },
+  "ffm-3634febead": {
+    "lat": 50.2053809,
+    "lng": 8.7114814,
+    "accuracy": "approximate",
+    "query": "Bürgerhaus, Im Sauern",
+    "displayName": "Bürgerhaus Nieder-Erlenbach, 10, Im Sauern, Nieder-Erlenbach, Frankfurt am Main, Hessen, 60437, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:55.855Z"
+  },
+  "ffm-3687136819": {
+    "lat": 50.1158865,
+    "lng": 8.6822478,
+    "accuracy": "street",
+    "query": "Stiftstr.",
+    "displayName": "Stiftstraße, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60313, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:36.277Z"
+  },
+  "ffm-36ed809ce5": {
+    "lat": 50.1232209,
+    "lng": 8.6888126,
+    "accuracy": "street",
+    "query": "Koselstraße 11-13",
+    "displayName": "Koselstraße, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60318, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:54.972Z"
+  },
+  "ffm-37dfe16f40": {
+    "lat": 50.1081238,
+    "lng": 8.6137955,
+    "accuracy": "house",
+    "query": "Am Römerhof 19",
+    "displayName": "Kfz.-Zulassungsstelle, 19, Am Römerhof, Bockenheim, Innenstadt 2, Frankfurt am Main, Hessen, 60486, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:24.315Z"
+  },
+  "ffm-38b246883e": {
+    "lat": 50.1184132,
+    "lng": 8.648898,
+    "accuracy": "house",
+    "query": "Jordanstraße 7",
+    "displayName": "7, Jordanstraße, Bockenheim, Innenstadt 2, Frankfurt am Main, Hessen, 60486, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:15.536Z"
+  },
+  "ffm-38b2b27450": {
+    "lat": 50.0997984,
+    "lng": 8.5459715,
+    "accuracy": "approximate",
+    "query": "Höchster Marktplatz, Melchiorstraße",
+    "displayName": "Höchster Marktplatz, Melchiorstraße, Höchst, West, Frankfurt am Main, Hessen, 65929, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:55.742Z"
+  },
+  "ffm-39495b2af7": {
+    "lat": 50.1637204,
+    "lng": 8.6385054,
+    "accuracy": "street",
+    "query": "Oberschelder Weg",
+    "displayName": "Oberschelder Weg, Heddernheim, Nord-West, Frankfurt am Main, Hessen, 60439, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:14.716Z"
+  },
+  "ffm-39e9456761": {
+    "lat": 50.1206988,
+    "lng": 8.6824583,
+    "accuracy": "approximate",
+    "query": "Sternstr.24",
+    "displayName": "24, Sternstraße, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60318, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:32.603Z"
+  },
+  "ffm-3caa81a15d": {
+    "lat": 50.1154467,
+    "lng": 8.6986254,
+    "accuracy": "approximate",
+    "query": "Zoo, Alfred-Brehm-Platz",
+    "displayName": "Zoo, Alfred-Brehm-Platz, Ostend, Bornheim/Ostend, Frankfurt am Main, Hessen, 60316, Deutschland",
+    "fetchedAt": "2026-10-08T20:15:46.236Z"
+  },
+  "ffm-3ceaf33dad": {
+    "lat": 50.0999411,
+    "lng": 8.5516921,
+    "accuracy": "street",
+    "query": "Mainberg",
+    "displayName": "Mainberg, Höchst, West, Frankfurt am Main, Hessen, 65929, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:38.134Z"
+  },
+  "ffm-3dbd1cbe64": {
+    "lat": 50.1202146,
+    "lng": 8.6489801,
+    "accuracy": "house",
+    "query": "Adalbertstr. 4",
+    "displayName": "4, Adalbertstraße, Bockenheim, Innenstadt 2, Frankfurt am Main, Hessen, 60486, Deutschland",
+    "fetchedAt": "2026-10-08T20:15:37.386Z"
+  },
+  "ffm-3e04a7f78f": {
+    "lat": 50.1161376,
+    "lng": 8.6886348,
+    "accuracy": "street",
+    "query": "Porzellanhofstraße 19",
+    "displayName": "Porzellanhofstraße, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60313, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:59.374Z"
+  },
+  "ffm-3ede623a42": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:20:45.287Z"
+  },
+  "ffm-3ee10bc002": {
+    "lat": 50.1157943,
+    "lng": 8.6902063,
+    "accuracy": "street",
+    "query": "Klapperfeldstraße",
+    "displayName": "Klapperfeldstraße, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60313, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:36.952Z"
+  },
+  "ffm-406fe99e32": {
+    "lat": 50.1242855,
+    "lng": 8.6902054,
+    "accuracy": "house",
+    "query": "Zeißelstraße 20",
+    "displayName": "20, Zeißelstraße, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60318, Deutschland",
+    "fetchedAt": "2026-10-08T20:26:38.291Z"
+  },
+  "ffm-414732f98a": {
+    "lat": 50.1207598,
+    "lng": 8.6877431,
+    "accuracy": "house",
+    "query": "Scheffelstraße 13",
+    "displayName": "13, Scheffelstraße, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60318, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:43.720Z"
+  },
+  "ffm-4251d4cdae": {
+    "lat": 50.1036184,
+    "lng": 8.6793375,
+    "accuracy": "street",
+    "query": "Schweizer Straße 66-68",
+    "displayName": "Schweizer Straße, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60594, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:11.459Z"
+  },
+  "ffm-42f4f246b6": {
+    "lat": 50.1854199,
+    "lng": 8.6875647,
+    "accuracy": "street",
+    "query": "Korffstr.",
+    "displayName": "Korffstraße, Harheim, Frankfurt am Main, Hessen, 60437, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:52.454Z"
+  },
+  "ffm-43e1513950": {
+    "lat": 50.0944177,
+    "lng": 8.6859454,
+    "accuracy": "house",
+    "query": "Großer Hasenpfad 74",
+    "displayName": "74, Großer Hasenpfad, Sachsenhausen Süd, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60598, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:01.740Z"
+  },
+  "ffm-440f7eb298": {
+    "lat": 50.1160222,
+    "lng": 8.6710309,
+    "accuracy": "street",
+    "query": "Bockenheimer Anlage 2-3",
+    "displayName": "Bockenheimer Anlage, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60313, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:17.555Z"
+  },
+  "ffm-451c6e7798": {
+    "lat": 50.1136506,
+    "lng": 8.6931758,
+    "accuracy": "street",
+    "query": "Langestr.",
+    "displayName": "Lange Straße, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:16.236Z"
+  },
+  "ffm-465708371a": {
+    "lat": 50.1014525,
+    "lng": 8.6334658,
+    "accuracy": "street",
+    "query": "Krifteler Straße",
+    "displayName": "Krifteler Straße, Hellerhofsiedlung, Europaviertel, Gallus, Innenstadt 1, Frankfurt am Main, Hessen, 60326, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:00.190Z"
+  },
+  "ffm-46b29d827f": {
+    "lat": 50.120244,
+    "lng": 8.6427566,
+    "accuracy": "house",
+    "query": "Kurfürstenplatz 35",
+    "displayName": "35, Kurfürstenplatz, Bockenheim, Innenstadt 2, Frankfurt am Main, Hessen, 60486, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:02.589Z"
+  },
+  "ffm-46d81ad753": {
+    "lat": 50.0862305,
+    "lng": 8.649161,
+    "accuracy": "street",
+    "query": "Frauenhofstraße",
+    "displayName": "Frauenhofstraße, Niederrad, Süd, Frankfurt am Main, Hessen, 60528, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:12.697Z"
+  },
+  "ffm-46e683adad": {
+    "lat": 50.120564,
+    "lng": 8.6446252,
+    "accuracy": "street",
+    "query": "Große Seestraße 41-43",
+    "displayName": "Große Seestraße, Bockenheim, Innenstadt 2, Frankfurt am Main, Hessen, 60486, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:00.520Z"
+  },
+  "ffm-47c3ff6ab2": {
+    "lat": 50.1295741,
+    "lng": 8.7296654,
+    "accuracy": "house",
+    "query": "Am Erlenbruch 26",
+    "displayName": "26, Am Erlenbruch, Riederwald, Ost, Frankfurt am Main, Hessen, 60386, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:13.660Z"
+  },
+  "ffm-480033bc04": {
+    "lat": 50.116309,
+    "lng": 8.6848231,
+    "accuracy": "street",
+    "query": "Schäfergasse",
+    "displayName": "Schäfergasse, Regenbogenviertel, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60313, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:39.855Z"
+  },
+  "ffm-49c8069339": {
+    "lat": 50.1200787,
+    "lng": 8.6955864,
+    "accuracy": "house",
+    "query": "Berger Straße 40-42",
+    "displayName": "Dr. med. Hans Michaelis, 40-42, Berger Straße, Nordend Ost, Innenstadt 3, Frankfurt am Main, Hessen, 60316, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:00.633Z"
+  },
+  "ffm-4aa6f82c77": {
+    "lat": 50.1066305,
+    "lng": 8.6937636,
+    "accuracy": "house",
+    "query": "Deutschherrnufer 30",
+    "displayName": "29-30, Deutschherrnufer, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60594, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:01.408Z"
+  },
+  "ffm-4b06b9f41a": {
+    "lat": 50.1133379,
+    "lng": 8.7000797,
+    "accuracy": "house",
+    "query": "Zobelstraße 5",
+    "displayName": "5, Zobelstraße, Ostend, Bornheim/Ostend, Frankfurt am Main, Hessen, 60316, Deutschland",
+    "fetchedAt": "2026-10-08T20:26:43.000Z"
+  },
+  "ffm-4c34d50ab5": {
+    "lat": 50.1286184,
+    "lng": 8.6833498,
+    "accuracy": "street",
+    "query": "Oeder Weg 1",
+    "displayName": "Oeder Weg, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60318, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:18.513Z"
+  },
+  "ffm-4c93041a44": {
+    "lat": 50.1262889,
+    "lng": 8.7019142,
+    "accuracy": "house",
+    "query": "Burgstraße 106",
+    "displayName": "106, Burgstraße, Nordend Ost, Innenstadt 3, Frankfurt am Main, Hessen, 60389, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:51.108Z"
+  },
+  "ffm-4cca12aab4": {
+    "lat": 50.092382,
+    "lng": 8.6511848,
+    "accuracy": "street",
+    "query": "Heinrich-Hoffmann-Str.",
+    "displayName": "Heinrich-Hoffmann-Straße, Niederrad, Süd, Frankfurt am Main, Hessen, 60528, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:27.151Z"
+  },
+  "ffm-4d1a57df16": {
+    "lat": 50.1233218,
+    "lng": 8.6412411,
+    "accuracy": "house",
+    "query": "Mühlgasse 8-12",
+    "displayName": "8-12, Mühlgasse, Bockenheim, Innenstadt 2, Frankfurt am Main, Hessen, 60486, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:04.330Z"
+  },
+  "ffm-4d369601ae": {
+    "lat": 50.1191603,
+    "lng": 8.6975014,
+    "accuracy": "house",
+    "query": "Sandweg 57",
+    "displayName": "57, Sandweg, Nordend Ost, Innenstadt 3, Frankfurt am Main, Hessen, 60316, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:35.738Z"
+  },
+  "ffm-4e146431cd": {
+    "lat": 50.1286184,
+    "lng": 8.6833498,
+    "accuracy": "street",
+    "query": "Oeder Weg",
+    "displayName": "Oeder Weg, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60318, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:23.722Z"
+  },
+  "ffm-4e307fbfb8": {
+    "lat": 50.1124571,
+    "lng": 8.6831367,
+    "accuracy": "street",
+    "query": "An der Kleinmarkthalle",
+    "displayName": "An der Kleinmarkthalle, Altstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:35.383Z"
+  },
+  "ffm-4e472026ac": {
+    "lat": 50.1035856,
+    "lng": 8.6404587,
+    "accuracy": "street",
+    "query": "Kostheimer Straße 2-4",
+    "displayName": "Kostheimer Straße, Europaviertel, Gallus, Innenstadt 1, Frankfurt am Main, Hessen, 60326, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:56.346Z"
+  },
+  "ffm-4eef938591": {
+    "lat": 50.1224577,
+    "lng": 8.6468414,
+    "accuracy": "house",
+    "query": "Am Weingarten 2",
+    "displayName": "2, Am Weingarten, Einkaufsmeile Leipziger Straße, Bockenheim, Innenstadt 2, Frankfurt am Main, Hessen, 60487, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:29.870Z"
+  },
+  "ffm-4f3a4a87d9": {
+    "lat": 50.1051913,
+    "lng": 8.5484927,
+    "accuracy": "approximate",
+    "query": "Konrad-Glatt-Str.19",
+    "displayName": "19, Konrad-Glatt-Straße, Höchst, West, Frankfurt am Main, Hessen, 65929, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:45.883Z"
+  },
+  "ffm-4fcef46835": {
+    "lat": 50.1444935,
+    "lng": 8.6830306,
+    "accuracy": "street",
+    "query": "Eckenheimer Landstraße",
+    "displayName": "Eckenheimer Landstraße, Eckenheim, Nord-Ost, Frankfurt am Main, Hessen, 60435, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:32.946Z"
+  },
+  "ffm-4fdd435b58": {
+    "lat": 50.1281782,
+    "lng": 8.641568,
+    "accuracy": "street",
+    "query": "Ginnheimer Landstr.",
+    "displayName": "Ginnheimer Landstraße, Bockenheim, Innenstadt 2, Frankfurt am Main, Hessen, 60487, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:42.712Z"
+  },
+  "ffm-51ba391a89": {
+    "lat": 50.1021959,
+    "lng": 8.549871,
+    "accuracy": "house",
+    "query": "Emmerich-Josef-Straße 9",
+    "displayName": "9, Emmerich-Josef-Straße, Höchst, West, Frankfurt am Main, Hessen, 65929, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:40.945Z"
+  },
+  "ffm-51fb9d5cb2": {
+    "lat": 50.1153282,
+    "lng": 8.67344,
+    "accuracy": "house",
+    "query": "Hochstraße 51",
+    "displayName": "51, Hochstraße, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60313, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:39.283Z"
+  },
+  "ffm-520292bda8": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:26:24.162Z"
+  },
+  "ffm-525b7f5d55": {
+    "lat": 50.1550602,
+    "lng": 8.7515181,
+    "accuracy": "house",
+    "query": "Marktstraße 20",
+    "displayName": "20, Marktstraße, Bergen, Bergen-Enkheim, Frankfurt am Main, Hessen, 60388, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:49.068Z"
+  },
+  "ffm-53e579c16a": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:24:06.667Z"
+  },
+  "ffm-5471f6da30": {
+    "lat": 50.1020077,
+    "lng": 8.6717853,
+    "accuracy": "house",
+    "query": "Schaumainkai 71",
+    "displayName": "Villa Liebieg, 71, Schaumainkai, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60596, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:42.472Z"
+  },
+  "ffm-54bd3067ac": {
+    "lat": 50.1352325,
+    "lng": 8.6839895,
+    "accuracy": "street",
+    "query": "Eckenheimer Landstr.",
+    "displayName": "Eckenheimer Landstraße, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60320, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:26.320Z"
+  },
+  "ffm-55607c95cb": {
+    "lat": 50.1317899,
+    "lng": 8.6909562,
+    "accuracy": "house",
+    "query": "Rat-Beil-Straße 41",
+    "displayName": "41, Rat-Beil-Straße, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60318, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:03.680Z"
+  },
+  "ffm-566a6820af": {
+    "lat": 50.1237643,
+    "lng": 8.6402325,
+    "accuracy": "house",
+    "query": "Friesengasse 7",
+    "displayName": "5-7, Friesengasse, Einkaufsmeile Leipziger Straße, Bockenheim, Innenstadt 2, Frankfurt am Main, Hessen, 60487, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:23.076Z"
+  },
+  "ffm-56e0f82116": {
+    "lat": 50.131425,
+    "lng": 8.6198226,
+    "accuracy": "approximate",
+    "query": "Hausener Weg",
+    "displayName": "Hausener Weg, Ludwig-Landmann-Straße, Rödelheim, Mitte-West, Frankfurt am Main, Hessen, 60487, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:20.676Z"
+  },
+  "ffm-5700bc6fdf": {
+    "lat": 50.1164933,
+    "lng": 8.6812911,
+    "accuracy": "house",
+    "query": "Stiftstraße 30",
+    "displayName": "30, Stiftstraße, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60313, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:33.853Z"
+  },
+  "ffm-5710499875": {
+    "lat": 50.1230423,
+    "lng": 8.6825303,
+    "accuracy": "street",
+    "query": "Hermannstr",
+    "displayName": "Hermannstraße, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60318, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:36.668Z"
+  },
+  "ffm-57c92fb47a": {
+    "lat": 50.1060155,
+    "lng": 8.6823109,
+    "accuracy": "house",
+    "query": "Schifferstraße 65-67",
+    "displayName": "Martha-Haus, 65-67, Schifferstraße, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60594, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:53.332Z"
+  },
+  "ffm-57f4d3915c": {
+    "lat": 50.1122569,
+    "lng": 8.6661676,
+    "accuracy": "house",
+    "query": "Zimmerweg 6",
+    "displayName": "6, Zimmerweg, Westend Süd, Innenstadt 2, Frankfurt am Main, Hessen, 60325, Deutschland",
+    "fetchedAt": "2026-10-08T20:26:41.351Z"
+  },
+  "ffm-58bbd0ef08": {
+    "lat": 50.1265782,
+    "lng": 8.6851324,
+    "accuracy": "house",
+    "query": "Glauburgstraße 64",
+    "displayName": "64, Glauburgstraße, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60318, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:47.353Z"
+  },
+  "ffm-59449142f7": {
+    "lat": 50.1180974,
+    "lng": 8.7683406,
+    "accuracy": "house",
+    "query": "Bregenzer Straße 17",
+    "displayName": "17, Bregenzer Straße, Fechenheim, Ost, Frankfurt am Main, Hessen, 60386, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:35.364Z"
+  },
+  "ffm-594de0089b": {
+    "lat": 50.1200856,
+    "lng": 8.7009766,
+    "accuracy": "street",
+    "query": "Wingertstr.29-31",
+    "displayName": "Wingertstraße, Ostend, Bornheim/Ostend, Frankfurt am Main, Hessen, 60316, Deutschland",
+    "fetchedAt": "2026-10-08T20:26:20.529Z"
+  },
+  "ffm-596f8b34c8": {
+    "lat": 50.1141416,
+    "lng": 8.6777035,
+    "accuracy": "street",
+    "query": "Biebergasse",
+    "displayName": "Biebergasse, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60313, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:13.251Z"
+  },
+  "ffm-5afd81bc53": {
+    "lat": 50.0833798,
+    "lng": 8.6436854,
+    "accuracy": "street",
+    "query": "Adolf-Miersch-Straße 4e",
+    "displayName": "Adolf-Miersch-Straße, Adolf-Miersch-Siedlung, Niederrad, Süd, Frankfurt am Main, Hessen, 60528, Deutschland",
+    "fetchedAt": "2026-10-08T20:15:40.757Z"
+  },
+  "ffm-5b0d395fc5": {
+    "lat": 50.08983,
+    "lng": 8.694161,
+    "accuracy": "approximate",
+    "query": "Südfriedhof",
+    "displayName": "Südfriedhof, Sachsenhausen, Süd, Frankfurt am Main, Hessen, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:37.934Z"
+  },
+  "ffm-5c99e8197d": {
+    "lat": 50.1214258,
+    "lng": 8.7140413,
+    "accuracy": "house",
+    "query": "Gagernstraße 20",
+    "displayName": "20, Gagernstraße, Ostend, Bornheim/Ostend, Frankfurt am Main, Hessen, 60385, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:29.208Z"
+  },
+  "ffm-5d128c4ef8": {
+    "lat": 50.1204067,
+    "lng": 8.6845014,
+    "accuracy": "house",
+    "query": "Jahnstraße 15",
+    "displayName": "15, Jahnstraße, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60318, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:10.818Z"
+  },
+  "ffm-5dbeff5888": {
+    "lat": 50.1190992,
+    "lng": 8.6431518,
+    "accuracy": "street",
+    "query": "Adalbertstr.",
+    "displayName": "Adalbertstraße, Bockenheim, Innenstadt 2, Frankfurt am Main, Hessen, 60486, Deutschland",
+    "fetchedAt": "2026-10-08T20:15:36.081Z"
+  },
+  "ffm-5dda419631": {
+    "lat": 50.1245493,
+    "lng": 8.6094171,
+    "accuracy": "street",
+    "query": "Röderichstr.",
+    "displayName": "Röderichstraße, Rödelheim, Mitte-West, Frankfurt am Main, Hessen, 60489, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:26.415Z"
+  },
+  "ffm-5e3fb51d59": {
+    "lat": 50.1009617,
+    "lng": 8.5428818,
+    "accuracy": "house",
+    "query": "Leverkuser Straße 14",
+    "displayName": "14, Leverkuser Straße, Höchst, West, Frankfurt am Main, Hessen, 65929, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:26.653Z"
+  },
+  "ffm-5fb0f26eb4": {
+    "lat": 50.1203421,
+    "lng": 8.6434389,
+    "accuracy": "approximate",
+    "query": "Elisabethenkirche, Elisabethenplatz",
+    "displayName": "Elisabethenkirche, 5, Elisabethenplatz, Bockenheim, Innenstadt 2, Frankfurt am Main, Hessen, 60486, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:35.435Z"
+  },
+  "ffm-5fea3f9655": {
+    "lat": 50.133103,
+    "lng": 8.7334719,
+    "accuracy": "street",
+    "query": "Vatterstraße",
+    "displayName": "Vatterstraße, Seckbach, Ost, Frankfurt am Main, Hessen, 60386, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:53.453Z"
+  },
+  "ffm-6087433aac": {
+    "lat": 50.119901,
+    "lng": 8.6835143,
+    "accuracy": "house",
+    "query": "Schleidenstraße 14",
+    "displayName": "14, Schleidenstraße, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60318, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:57.535Z"
+  },
+  "ffm-6087ec1636": {
+    "lat": 50.1660186,
+    "lng": 8.655242,
+    "accuracy": "street",
+    "query": "Im Uhrig",
+    "displayName": "Im Uhrig, Eschersheim, Mitte-Nord, Frankfurt am Main, Hessen, 60433, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:59.265Z"
+  },
+  "ffm-6152f5c613": {
+    "lat": 50.1300676,
+    "lng": 8.6622796,
+    "accuracy": "street",
+    "query": "Sebastian-Rinz-Straße",
+    "displayName": "Sebastian-Rinz-Straße, Westend Nord, Innenstadt 2, Frankfurt am Main, Hessen, 60323, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:15.615Z"
+  },
+  "ffm-619642c9fe": {
+    "lat": 50.083949,
+    "lng": 8.6409374,
+    "accuracy": "street",
+    "query": "Jugenheimer Str.",
+    "displayName": "Jugenheimer Straße, Adolf-Miersch-Siedlung, Niederrad, Süd, Frankfurt am Main, Hessen, 60528, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:21.621Z"
+  },
+  "ffm-61aed3f161": {
+    "lat": 50.1196216,
+    "lng": 8.6930269,
+    "accuracy": "house",
+    "query": "Baumweg 45",
+    "displayName": "45, Baumweg, Nordend Ost, Innenstadt 3, Frankfurt am Main, Hessen, 60316, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:49.249Z"
+  },
+  "ffm-633149040e": {
+    "lat": 50.1231657,
+    "lng": 8.6577291,
+    "accuracy": "approximate",
+    "query": "Palmengarten, Siesmayerstr.",
+    "displayName": "Tiefgarage Palmengarten, Siesmayerstraße, Westend Nord, Innenstadt 2, Frankfurt am Main, Hessen, 60323, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:17.266Z"
+  },
+  "ffm-646c1d36dc": {
+    "lat": 50.1172838,
+    "lng": 8.7154128,
+    "accuracy": "house",
+    "query": "Ostparkstr. 65",
+    "displayName": "65, Ostparkstraße, Ostend, Bornheim/Ostend, Frankfurt am Main, Hessen, 60385, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:38.011Z"
+  },
+  "ffm-65448bca61": {
+    "lat": 50.1118253,
+    "lng": 8.6793762,
+    "accuracy": "street",
+    "query": "Kornmarkt 6-8",
+    "displayName": "Kornmarkt, Altstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:53.710Z"
+  },
+  "ffm-658907e085": {
+    "lat": 50.1182721,
+    "lng": 8.6204372,
+    "accuracy": "street",
+    "query": "Amperestraße",
+    "displayName": "Amperestraße, Kuhwaldsiedlung, Bockenheim, Innenstadt 2, Frankfurt am Main, Hessen, 60486, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:22.779Z"
+  },
+  "ffm-65f189258e": {
+    "lat": 50.1190573,
+    "lng": 8.6995969,
+    "accuracy": "street",
+    "query": "Waldschmidtstr.",
+    "displayName": "Waldschmidtstraße, Ostend, Bornheim/Ostend, Frankfurt am Main, Hessen, 60316, Deutschland",
+    "fetchedAt": "2026-10-08T20:26:00.205Z"
+  },
+  "ffm-6677e32500": {
+    "lat": 50.1175416,
+    "lng": 8.6622591,
+    "accuracy": "house",
+    "query": "Brentanostr. 25",
+    "displayName": "25, Brentanostraße, Westend Süd, Innenstadt 2, Frankfurt am Main, Hessen, 60325, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:41.015Z"
+  },
+  "ffm-670d77b863": {
+    "lat": 50.1252231,
+    "lng": 8.6090483,
+    "accuracy": "street",
+    "query": "Alexanderstraße 94",
+    "displayName": "Alexanderstraße, Rödelheim, Mitte-West, Frankfurt am Main, Hessen, 60489, Deutschland",
+    "fetchedAt": "2026-10-08T20:15:44.984Z"
+  },
+  "ffm-68e31be6bb": {
+    "lat": 50.1032157,
+    "lng": 8.6876537,
+    "accuracy": "house",
+    "query": "Gutzkowstraße 9",
+    "displayName": "9, Gutzkowstraße, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60594, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:07.719Z"
+  },
+  "ffm-698cc5551a": {
+    "lat": 50.1110913,
+    "lng": 8.6850783,
+    "accuracy": "street",
+    "query": "Domplatz",
+    "displayName": "Domplatz, Altstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:06.738Z"
+  },
+  "ffm-6abf9d0798": {
+    "lat": 50.1294202,
+    "lng": 8.6967096,
+    "accuracy": "house",
+    "query": "Böttgerstraße 20",
+    "displayName": "20, Böttgerstraße, Nordend Ost, Innenstadt 3, Frankfurt am Main, Hessen, 60389, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:31.653Z"
+  },
+  "ffm-6add9bb925": {
+    "lat": 50.1238743,
+    "lng": 8.703565,
+    "accuracy": "house",
+    "query": "Berger Straße 146",
+    "displayName": "146, Berger Straße, Bornheim, Bornheim/Ostend, Frankfurt am Main, Hessen, 60385, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:59.287Z"
+  },
+  "ffm-6b6605f815": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:22:33.884Z"
+  },
+  "ffm-6bf7120dba": {
+    "lat": 50.1742213,
+    "lng": 8.6417986,
+    "accuracy": "house",
+    "query": "Olof-Palme-Straße 37",
+    "displayName": "37, Olof-Palme-Straße, Mertonviertel, Niederursel, Nord-West, Frankfurt am Main, Hessen, 60439, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:35.389Z"
+  },
+  "ffm-6c397e3549": {
+    "lat": 50.1231217,
+    "lng": 8.6436176,
+    "accuracy": "house",
+    "query": "Leipziger Straße 67",
+    "displayName": "67, Leipziger Straße, Einkaufsmeile Leipziger Straße, Bockenheim, Innenstadt 2, Frankfurt am Main, Hessen, 60487, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:21.087Z"
+  },
+  "ffm-6dfa277347": {
+    "lat": 50.1152659,
+    "lng": 8.690796,
+    "accuracy": "house",
+    "query": "Heiligkreuzgasse 15",
+    "displayName": "15, Heiligkreuzgasse, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60313, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:24.547Z"
+  },
+  "ffm-6f77458ff3": {
+    "lat": 50.115209,
+    "lng": 8.689245,
+    "accuracy": "street",
+    "query": "Klingerstraße",
+    "displayName": "Klingerstraße, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60313, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:43.454Z"
+  },
+  "ffm-702bd7893f": {
+    "lat": 50.1237465,
+    "lng": 8.6066329,
+    "accuracy": "street",
+    "query": "Westerbachstr.",
+    "displayName": "Westerbachstraße, Rödelheim, Mitte-West, Frankfurt am Main, Hessen, 60489, Deutschland",
+    "fetchedAt": "2026-10-08T20:26:12.295Z"
+  },
+  "ffm-703d001108": {
+    "lat": 50.1427704,
+    "lng": 8.6687232,
+    "accuracy": "approximate",
+    "query": "Fritz-Tarnow-Straße",
+    "displayName": "Fritz-Tarnow-Straße, Eschersheimer Landstraße, Dornbusch, Mitte-Nord, Frankfurt am Main, Hessen, 60320, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:25.497Z"
+  },
+  "ffm-70a448ad25": {
+    "lat": 50.1323625,
+    "lng": 8.7167291,
+    "accuracy": "street",
+    "query": "Inheidener Str.",
+    "displayName": "Inheidener Straße, Bornheim, Bornheim/Ostend, Frankfurt am Main, Hessen, 60385, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:06.584Z"
+  },
+  "ffm-7128f702bb": {
+    "lat": 50.1506861,
+    "lng": 8.6914623,
+    "accuracy": "house",
+    "query": "Homburger Landstraße 120",
+    "displayName": "120, Homburger Landstraße, Preungesheim, Nord-Ost, Frankfurt am Main, Hessen, 60435, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:46.530Z"
+  },
+  "ffm-714a1a07eb": {
+    "lat": 50.1172209,
+    "lng": 8.6466385,
+    "accuracy": "street",
+    "query": "Robert-Mayer-Straße",
+    "displayName": "Robert-Mayer-Straße, Bockenheim, Innenstadt 2, Frankfurt am Main, Hessen, 60486, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:22.255Z"
+  },
+  "ffm-724d8eb631": {
+    "lat": 50.1008594,
+    "lng": 8.6828343,
+    "accuracy": "house",
+    "query": "Diesterwegstr. 20",
+    "displayName": "20, Diesterwegstraße, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60594, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:04.257Z"
+  },
+  "ffm-743e7fcbb9": {
+    "lat": 50.1100217,
+    "lng": 8.6804113,
+    "accuracy": "street",
+    "query": "Limpurgergasse 4-8",
+    "displayName": "Limpurgergasse, Altstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:32.126Z"
+  },
+  "ffm-7506dff0dd": {
+    "lat": 50.1133084,
+    "lng": 8.6983958,
+    "accuracy": "house",
+    "query": "Hanauer Landstraße 25",
+    "displayName": "Asian River, 25, Hanauer Landstraße, Ostend, Bornheim/Ostend, Frankfurt am Main, Hessen, 60314, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:11.559Z"
+  },
+  "ffm-772f1959c8": {
+    "lat": 50.1213192,
+    "lng": 8.6645503,
+    "accuracy": "house",
+    "query": "Friedrichstraße 25",
+    "displayName": "25, Friedrichstraße, Westend Süd, Innenstadt 2, Frankfurt am Main, Hessen, 60323, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:21.803Z"
+  },
+  "ffm-7834757282": {
+    "lat": 50.1286184,
+    "lng": 8.6833498,
+    "accuracy": "street",
+    "query": "Oeder Weg",
+    "displayName": "Oeder Weg, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60318, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:21.363Z"
+  },
+  "ffm-790cedb81c": {
+    "lat": 50.1237219,
+    "lng": 8.6523439,
+    "accuracy": "house",
+    "query": "Zeppelinallee 43",
+    "displayName": "43, Zeppelinallee, Bockenheim, Innenstadt 2, Frankfurt am Main, Hessen, 60325, Deutschland",
+    "fetchedAt": "2026-10-08T20:26:40.050Z"
+  },
+  "ffm-794cd8824e": {
+    "lat": 50.1247628,
+    "lng": 8.7689391,
+    "accuracy": "house",
+    "query": "Alt Fechenheim 76",
+    "displayName": "76, Alt-Fechenheim, Fechenheim, Ost, Frankfurt am Main, Hessen, 60386, Deutschland",
+    "fetchedAt": "2026-10-08T20:15:50.130Z"
+  },
+  "ffm-79c8890679": {
+    "lat": 50.1368488,
+    "lng": 8.6715664,
+    "accuracy": "approximate",
+    "query": "Haus Dornbusch, Eschersheimer Landstr.",
+    "displayName": "Dornbusch Kebap Haus, 226, Eschersheimer Landstraße, Dornbusch, Mitte-Nord, Frankfurt am Main, Hessen, 60320, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:44.548Z"
+  },
+  "ffm-7a86480719": {
+    "lat": 50.1561116,
+    "lng": 8.6599124,
+    "accuracy": "street",
+    "query": "Josephskirchstraße",
+    "displayName": "Josephskirchstraße, Eschersheim, Mitte-Nord, Frankfurt am Main, Hessen, 60433, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:18.175Z"
+  },
+  "ffm-7a8e48ed55": {
+    "lat": 50.1550022,
+    "lng": 8.6923668,
+    "accuracy": "house",
+    "query": "Am Dorfgarten 1",
+    "displayName": "Friseursalon CES, 1, Am Dorfgarten, Preungesheim, Nord-Ost, Frankfurt am Main, Hessen, 60435, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:11.898Z"
+  },
+  "ffm-7b1c74309c": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:23:46.446Z"
+  },
+  "ffm-7ccac69826": {
+    "lat": 50.1444935,
+    "lng": 8.6830306,
+    "accuracy": "street",
+    "query": "Eckenheimer Landstraße",
+    "displayName": "Eckenheimer Landstraße, Eckenheim, Nord-Ost, Frankfurt am Main, Hessen, 60435, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:29.198Z"
+  },
+  "ffm-7d79359840": {
+    "lat": 50.0857669,
+    "lng": 8.6423274,
+    "accuracy": "street",
+    "query": "Odenwaldstraße",
+    "displayName": "Odenwaldstraße, Niederrad, Süd, Frankfurt am Main, Hessen, 60528, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:17.277Z"
+  },
+  "ffm-7db1af45c3": {
+    "lat": 50.1217359,
+    "lng": 8.63959,
+    "accuracy": "house",
+    "query": "Schloßstraße 35",
+    "displayName": "35, Schloßstraße, Bockenheim, Innenstadt 2, Frankfurt am Main, Hessen, 60486, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:59.285Z"
+  },
+  "ffm-7e2265a9f9": {
+    "lat": 50.1103524,
+    "lng": 8.6764522,
+    "accuracy": "street",
+    "query": "Bethmannstr. 1-3",
+    "displayName": "Bethmannstraße, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:06.459Z"
+  },
+  "ffm-7e5bcc6965": {
+    "lat": 50.1015582,
+    "lng": 8.6812576,
+    "accuracy": "house",
+    "query": "Schweizer Straße 55",
+    "displayName": "55, Schweizer Straße, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60594, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:12.768Z"
+  },
+  "ffm-7f4ae6efdf": {
+    "lat": 50.0999398,
+    "lng": 8.6856849,
+    "accuracy": "street",
+    "query": "Diesterwegplatz",
+    "displayName": "Diesterwegplatz, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60594, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:03.061Z"
+  },
+  "ffm-7f5749d426": {
+    "lat": 50.1037213,
+    "lng": 8.6883871,
+    "accuracy": "house",
+    "query": "Schifferstraße 13",
+    "displayName": "13, Schifferstraße, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60594, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:52.075Z"
+  },
+  "ffm-7fc422797c": {
+    "lat": 50.1022014,
+    "lng": 8.6812463,
+    "accuracy": "house",
+    "query": "Gutzkowstr. 50",
+    "displayName": "50, Gutzkowstraße, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60594, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:06.414Z"
+  },
+  "ffm-7fca3f5b59": {
+    "lat": 50.1316772,
+    "lng": 8.6886659,
+    "accuracy": "house",
+    "query": "Rat-Beil-Straße 57",
+    "displayName": "57, Rat-Beil-Straße, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60318, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:05.334Z"
+  },
+  "ffm-800158dbd1": {
+    "lat": 50.1468267,
+    "lng": 8.6593504,
+    "accuracy": "house",
+    "query": "Hügelstraße 186",
+    "displayName": "186, Hügelstraße, Ginnheim, Mitte-Nord, Frankfurt am Main, Hessen, 60431, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:53.247Z"
+  },
+  "ffm-806aecb7ee": {
+    "lat": 50.1134493,
+    "lng": 8.6871286,
+    "accuracy": "house",
+    "query": "An der Staufenmauer 3",
+    "displayName": "3, An der Staufenmauer, Altstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:37.134Z"
+  },
+  "ffm-81572d48c7": {
+    "lat": 50.094367,
+    "lng": 8.4920999,
+    "accuracy": "street",
+    "query": "Bartholomäusgasse",
+    "displayName": "Bartholomäusgasse, Alt-Zeilsheim, Zeilsheim, West, Frankfurt am Main, Hessen, 65931, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:47.992Z"
+  },
+  "ffm-81b2854025": {
+    "lat": 50.1630308,
+    "lng": 8.6372654,
+    "accuracy": "house",
+    "query": "Heddernheimer Landstraße 138",
+    "displayName": "138, Heddernheimer Landstraße, Heddernheim, Nord-West, Frankfurt am Main, Hessen, 60439, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:23.276Z"
+  },
+  "ffm-835c2cf92c": {
+    "lat": 50.1140161,
+    "lng": 8.7002676,
+    "accuracy": "house",
+    "query": "Am Tiergarten 10",
+    "displayName": "KT 124, 10, Bernhard-Grzimek-Allee, Ostend, Bornheim/Ostend, Frankfurt am Main, Hessen, 60316, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:25.579Z"
+  },
+  "ffm-8361c6cc41": {
+    "lat": 50.1534665,
+    "lng": 8.634728,
+    "accuracy": "street",
+    "query": "In der Römerstadt",
+    "displayName": "In der Römerstadt, Heddernheim, Nord-West, Frankfurt am Main, Hessen, 60439, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:02.728Z"
+  },
+  "ffm-8598ffc147": {
+    "lat": 50.1388509,
+    "lng": 8.6462762,
+    "accuracy": "house",
+    "query": "Ginnheimer Landstraße 127",
+    "displayName": "127, Ginnheimer Landstraße, Ginnheim, Mitte-Nord, Frankfurt am Main, Hessen, 60431, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:43.948Z"
+  },
+  "ffm-8659417894": {
+    "lat": 50.1136848,
+    "lng": 8.6885917,
+    "accuracy": "street",
+    "query": "Allerheiligenstr.",
+    "displayName": "Allerheiligenstraße, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60313, Deutschland",
+    "fetchedAt": "2026-10-08T20:15:48.735Z"
+  },
+  "ffm-870ce4edc2": {
+    "lat": 50.1003551,
+    "lng": 8.5466669,
+    "accuracy": "street",
+    "query": "Melchiorstr.",
+    "displayName": "Melchiorstraße, Höchst, West, Frankfurt am Main, Hessen, 65929, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:54.530Z"
+  },
+  "ffm-87d7f01e08": {
+    "lat": 50.1262353,
+    "lng": 8.6752112,
+    "accuracy": "approximate",
+    "query": "Vogtstr.64",
+    "displayName": "64, Vogtstraße, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60322, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:56.528Z"
+  },
+  "ffm-8870a7995c": {
+    "lat": 50.1480142,
+    "lng": 8.6651725,
+    "accuracy": "house",
+    "query": "Hügelstraße 134",
+    "displayName": "134, Hügelstraße, Dornbusch, Mitte-Nord, Frankfurt am Main, Hessen, 60431, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:51.969Z"
+  },
+  "ffm-8974f98a2b": {
+    "lat": 50.1030202,
+    "lng": 8.6653894,
+    "accuracy": "approximate",
+    "query": "Gewerkschaftshaus, Wilhelm-Leuschner-Str.",
+    "displayName": "Gewerkschaftshaus, 93, Wilhelm-Leuschner-Straße, Gutleutviertel, Innenstadt 1, Frankfurt am Main, Hessen, 60329, Deutschland",
+    "fetchedAt": "2026-10-08T20:26:18.007Z"
+  },
+  "ffm-8981c57914": {
+    "lat": 50.1219154,
+    "lng": 8.6892584,
+    "accuracy": "house",
+    "query": "Scheffelstraße 33",
+    "displayName": "33, Scheffelstraße, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60318, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:44.950Z"
+  },
+  "ffm-8ad927d02d": {
+    "lat": 50.1113737,
+    "lng": 8.6877987,
+    "accuracy": "approximate",
+    "query": "Kurt-Schumacher-Str.13",
+    "displayName": "13, Kurt-Schumacher-Straße, Altstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:10.590Z"
+  },
+  "ffm-8b0f397b57": {
+    "lat": 50.0999518,
+    "lng": 8.5431024,
+    "accuracy": "house",
+    "query": "Leverkuser Straße 11",
+    "displayName": "11, Leverkuser Straße, Höchst, West, Frankfurt am Main, Hessen, 65929, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:25.428Z"
+  },
+  "ffm-8fb6a99c68": {
+    "lat": 50.11251,
+    "lng": 8.5405576,
+    "accuracy": "street",
+    "query": "Sossenheimer Weg",
+    "displayName": "Sossenheimer Weg, Unterliederbach, West, Frankfurt am Main, Hessen, 65929, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:23.856Z"
+  },
+  "ffm-90cd076c10": {
+    "lat": 50.145862,
+    "lng": 8.7063736,
+    "accuracy": "street",
+    "query": "Friedberger Landstraße",
+    "displayName": "Friedberger Landstraße, Seckbach, Ost, Frankfurt am Main, Hessen, 60389, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:18.873Z"
+  },
+  "ffm-9120f09b1e": {
+    "lat": 50.2007193,
+    "lng": 8.6745675,
+    "accuracy": "street",
+    "query": "Deuil-La-Barre-Str.",
+    "displayName": "Deuil-La-Barre-Straße, Nieder-Eschbach, Frankfurt am Main, Hessen, 60437, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:00.160Z"
+  },
+  "ffm-91c1194d47": {
+    "lat": 50.107813,
+    "lng": 8.6726737,
+    "accuracy": "house",
+    "query": "Untermainanlage 8",
+    "displayName": "8, Untermainanlage, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60329, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:49.953Z"
+  },
+  "ffm-91d2475eea": {
+    "lat": 50.1073841,
+    "lng": 8.6508622,
+    "accuracy": "street",
+    "query": "Heinrichstraße 158",
+    "displayName": "Heinrichstraße, Gallus, Innenstadt 1, Frankfurt am Main, Hessen, 60327, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:31.760Z"
+  },
+  "ffm-96d82bc3f5": {
+    "lat": 50.1131747,
+    "lng": 8.7028206,
+    "accuracy": "house",
+    "query": "Bärenstr. 1",
+    "displayName": "1, Bärenstraße, Ostend, Bornheim/Ostend, Frankfurt am Main, Hessen, 60316, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:45.164Z"
+  },
+  "ffm-9712e2c0b5": {
+    "lat": 50.1256845,
+    "lng": 8.7075936,
+    "accuracy": "house",
+    "query": "Spessartstraße 7",
+    "displayName": "7, Spessartstraße, Bornheim, Bornheim/Ostend, Frankfurt am Main, Hessen, 60385, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:25.060Z"
+  },
+  "ffm-97878f249a": {
+    "lat": 50.1246941,
+    "lng": 8.7126627,
+    "accuracy": "street",
+    "query": "Saalburgallee",
+    "displayName": "Saalburgallee, Bornheim, Bornheim/Ostend, Frankfurt am Main, Hessen, 60385, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:32.722Z"
+  },
+  "ffm-989c739d8e": {
+    "lat": 50.1076821,
+    "lng": 8.664955,
+    "accuracy": "street",
+    "query": "Am Hauptbahnhof",
+    "displayName": "Am Hauptbahnhof, Bahnhofsviertel, Innenstadt 1, Frankfurt am Main, Hessen, 60329, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:17.380Z"
+  },
+  "ffm-99249c3fab": {
+    "lat": 50.1078408,
+    "lng": 8.660446,
+    "accuracy": "house",
+    "query": "Ottostraße 7",
+    "displayName": "7, Ottostraße, Gallus, Innenstadt 1, Frankfurt am Main, Hessen, 60329, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:39.353Z"
+  },
+  "ffm-9ab04fc8d1": {
+    "lat": 50.1478395,
+    "lng": 8.6664051,
+    "accuracy": "approximate",
+    "query": "Hügelstr.",
+    "displayName": "Hügelstraße, Dornbusch, Mitte-Nord, Frankfurt am Main, Hessen, 60433, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:50.576Z"
+  },
+  "ffm-9ab21f0c82": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:20:16.806Z"
+  },
+  "ffm-9aee981ee8": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:26:08.290Z"
+  },
+  "ffm-9b22fab755": {
+    "lat": 50.1129343,
+    "lng": 8.6859066,
+    "accuracy": "house",
+    "query": "Fahrgasse 89",
+    "displayName": "Junvin Asia Supermarkt, 89, Fahrgasse, Altstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:54.952Z"
+  },
+  "ffm-9cb1d6a7bd": {
+    "lat": 50.101045,
+    "lng": 8.5523238,
+    "accuracy": "house",
+    "query": "Bolongarostr. 109",
+    "displayName": "109, Bolongarostraße, Höchst, West, Frankfurt am Main, Hessen, 65929, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:24.420Z"
+  },
+  "ffm-9cb9911de3": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:23:43.627Z"
+  },
+  "ffm-9d399a05ff": {
+    "lat": 50.1038959,
+    "lng": 8.6741407,
+    "accuracy": "street",
+    "query": "Schaumainkai 59",
+    "displayName": "Schaumainkai, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60596, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:41.182Z"
+  },
+  "ffm-9dfc493122": {
+    "lat": 50.1212138,
+    "lng": 8.5694511,
+    "accuracy": "street",
+    "query": "Sossenheimer Riedstr.",
+    "displayName": "Sossenheimer Riedstraße, Sossenheim, West, Frankfurt am Main, Hessen, 65936, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:21.371Z"
+  },
+  "ffm-9e2539ec0f": {
+    "lat": 50.1466278,
+    "lng": 8.6841485,
+    "accuracy": "street",
+    "query": "Kurzröderstraße",
+    "displayName": "Kurzröderstraße, Eckenheim, Nord-Ost, Frankfurt am Main, Hessen, 60435, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:13.648Z"
+  },
+  "ffm-9e2e9f310c": {
+    "lat": 50.1035288,
+    "lng": 8.5447115,
+    "accuracy": "house",
+    "query": "Höchster Bahnstraße 2a",
+    "displayName": "2a, Höchster Bahnstraße, Höchst, West, Frankfurt am Main, Hessen, 65929, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:40.523Z"
+  },
+  "ffm-9e633215c7": {
+    "lat": 50.1115755,
+    "lng": 8.692091,
+    "accuracy": "house",
+    "query": "Rechneigrabenstraße 10",
+    "displayName": "Evangelischer Regionalverband Frankfurt, 10, Rechneigrabenstraße, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:07.918Z"
+  },
+  "ffm-9ea87952f9": {
+    "lat": 50.1535956,
+    "lng": 8.6622212,
+    "accuracy": "street",
+    "query": "Am Lindenbaum",
+    "displayName": "Am Lindenbaum, Eschersheim, Mitte-Nord, Frankfurt am Main, Hessen, 60433, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:20.367Z"
+  },
+  "ffm-9eb1afbcd9": {
+    "lat": 50.0980259,
+    "lng": 8.6901447,
+    "accuracy": "approximate",
+    "query": "Bindingstraße 9H",
+    "displayName": "9H, Bindingstraße, Sachsenhausen Süd, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60598, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:14.472Z"
+  },
+  "ffm-9ebafe1815": {
+    "lat": 50.1367652,
+    "lng": 8.6713523,
+    "accuracy": "street",
+    "query": "Eschersheimer Landstraße 42-44",
+    "displayName": "Eschersheimer Landstraße, Dornbusch, Mitte-Nord, Frankfurt am Main, Hessen, 60320, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:46.309Z"
+  },
+  "ffm-9ebba2b27b": {
+    "lat": 50.1301711,
+    "lng": 8.7167368,
+    "accuracy": "house",
+    "query": "Inheidener Straße 53",
+    "displayName": "53, Inheidener Straße, Bornheim, Bornheim/Ostend, Frankfurt am Main, Hessen, 60385, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:04.022Z"
+  },
+  "ffm-a055c84b86": {
+    "lat": 50.1045822,
+    "lng": 8.6862228,
+    "accuracy": "approximate",
+    "query": "Schifferstr.44",
+    "displayName": "44, Schifferstraße, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60594, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:50.378Z"
+  },
+  "ffm-a0e131d922": {
+    "lat": 50.1048866,
+    "lng": 8.5457692,
+    "accuracy": "street",
+    "query": "Gerlachstraße",
+    "displayName": "Gerlachstraße, Höchst, West, Frankfurt am Main, Hessen, 65929, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:40.203Z"
+  },
+  "ffm-a0f1836f69": {
+    "lat": 50.1005779,
+    "lng": 8.730487,
+    "accuracy": "house",
+    "query": "Offenbacher Landstraße 421",
+    "displayName": "421, Offenbacher Landstraße, Oberrad, Süd, Frankfurt am Main, Hessen, 60599, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:33.991Z"
+  },
+  "ffm-a1002fe6c5": {
+    "lat": 50.0853232,
+    "lng": 8.5814894,
+    "accuracy": "street",
+    "query": "Alt Schwanheim",
+    "displayName": "Alt-Schwanheim, Schwanheim, West, Frankfurt am Main, Hessen, 60529, Deutschland",
+    "fetchedAt": "2026-10-08T20:15:59.512Z"
+  },
+  "ffm-a15923e5be": {
+    "lat": 50.0929163,
+    "lng": 8.6496037,
+    "accuracy": "house",
+    "query": "Marienburgstraße 7",
+    "displayName": "5-7, Marienburgstraße, Niederrad, Süd, Frankfurt am Main, Hessen, 60528, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:45.944Z"
+  },
+  "ffm-a17ab12283": {
+    "lat": 50.1168433,
+    "lng": 8.6922878,
+    "accuracy": "approximate",
+    "query": "Friedberger Anlage",
+    "displayName": "Friedberger Anlage, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:15.862Z"
+  },
+  "ffm-a2a4159847": {
+    "lat": 50.1226075,
+    "lng": 8.6729909,
+    "accuracy": "house",
+    "query": "Auf der Körnerwiese 5",
+    "displayName": "5, Auf der Körnerwiese, Westend Nord, Innenstadt 2, Frankfurt am Main, Hessen, 60322, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:43.927Z"
+  },
+  "ffm-a30c2efd5e": {
+    "lat": 50.1093939,
+    "lng": 8.6749413,
+    "accuracy": "approximate",
+    "query": "Willy-Brandt-Platz",
+    "displayName": "Willy-Brandt-Platz, Friedensstraße, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:26:19.284Z"
+  },
+  "ffm-a3228fac52": {
+    "lat": 50.1142955,
+    "lng": 8.6918279,
+    "accuracy": "house",
+    "query": "Breite Gasse 28",
+    "displayName": "Gesundheitsamt Frankfurt, 28, Breite Gasse, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60313, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:39.757Z"
+  },
+  "ffm-a3587243de": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:23:26.370Z"
+  },
+  "ffm-a3a82af6b1": {
+    "lat": 50.1230782,
+    "lng": 8.6475401,
+    "accuracy": "street",
+    "query": "Am Weingarten",
+    "displayName": "Am Weingarten, Einkaufsmeile Leipziger Straße, Bockenheim, Innenstadt 2, Frankfurt am Main, Hessen, 60487, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:27.347Z"
+  },
+  "ffm-a555bba4c9": {
+    "lat": 50.1045668,
+    "lng": 8.6919059,
+    "accuracy": "street",
+    "query": "Dreieichstraße",
+    "displayName": "Dreieichstraße, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60594, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:18.588Z"
+  },
+  "ffm-a6671231e6": {
+    "lat": 50.1156057,
+    "lng": 8.6861042,
+    "accuracy": "house",
+    "query": "Große Friedberger Straße 21",
+    "displayName": "21, Große Friedberger Straße, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60313, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:57.931Z"
+  },
+  "ffm-a7c2f57d99": {
+    "lat": 50.1142247,
+    "lng": 8.6545799,
+    "accuracy": "street",
+    "query": "Schumannstraße",
+    "displayName": "Schumannstraße, Westend Süd, Innenstadt 2, Frankfurt am Main, Hessen, 60325, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:04.257Z"
+  },
+  "ffm-a82fe55f3a": {
+    "lat": 50.1580312,
+    "lng": 8.6593857,
+    "accuracy": "house",
+    "query": "Nußzeil 48",
+    "displayName": "Pfarrer-Münzenberger-Haus, 48, Nußzeil, Eschersheim, Mitte-Nord, Frankfurt am Main, Hessen, 60433, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:08.173Z"
+  },
+  "ffm-a9c19ca9cc": {
+    "lat": 50.1243357,
+    "lng": 8.6860068,
+    "accuracy": "approximate",
+    "query": "Stalburgstr.3",
+    "displayName": "3, Stalburgstraße, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60318, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:27.659Z"
+  },
+  "ffm-aa2417c064": {
+    "lat": 50.1045668,
+    "lng": 8.6919059,
+    "accuracy": "street",
+    "query": "Dreieichstraße",
+    "displayName": "Dreieichstraße, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60594, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:20.920Z"
+  },
+  "ffm-aa61035636": {
+    "lat": 50.1113707,
+    "lng": 8.6846226,
+    "accuracy": "street",
+    "query": "Domstr.",
+    "displayName": "Domstraße, Altstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:09.270Z"
+  },
+  "ffm-ab6e1c95b3": {
+    "lat": 50.125185,
+    "lng": 8.5686979,
+    "accuracy": "approximate",
+    "query": "Toni-Sender-Str.73",
+    "displayName": "73, Toni-Sender-Straße, Sossenheim, West, Frankfurt am Main, Hessen, 65936, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:47.521Z"
+  },
+  "ffm-ac4946ad10": {
+    "lat": 50.1004376,
+    "lng": 8.6712107,
+    "accuracy": "house",
+    "query": "Gartenstraße 112",
+    "displayName": "112, Gartenstraße, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60596, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:31.845Z"
+  },
+  "ffm-ac80656845": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:21:34.425Z"
+  },
+  "ffm-ad1eda0250": {
+    "lat": 50.1086442,
+    "lng": 8.6582575,
+    "accuracy": "street",
+    "query": "Mainzer Landstraße 65-67",
+    "displayName": "Mainzer Landstraße, Gallus, Innenstadt 1, Frankfurt am Main, Hessen, 60327, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:39.516Z"
+  },
+  "ffm-ad4b2a29d5": {
+    "lat": 50.1023314,
+    "lng": 8.5461777,
+    "accuracy": "street",
+    "query": "Dalbergstr.",
+    "displayName": "Dalbergstraße, Höchst, West, Frankfurt am Main, Hessen, 65929, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:53.607Z"
+  },
+  "ffm-ae1501c985": {
+    "lat": 50.1286168,
+    "lng": 8.6929285,
+    "accuracy": "house",
+    "query": "Friedberger Landstraße 142",
+    "displayName": "142, Friedberger Landstraße, Nordend Ost, Innenstadt 3, Frankfurt am Main, Hessen, 60316, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:20.151Z"
+  },
+  "ffm-ae2212d5cf": {
+    "lat": 50.1820779,
+    "lng": 8.6946919,
+    "accuracy": "street",
+    "query": "Reginastraße",
+    "displayName": "Reginastraße, Harheim, Frankfurt am Main, Hessen, 60437, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:10.499Z"
+  },
+  "ffm-afb00ca3e4": {
+    "lat": 50.119001,
+    "lng": 8.6711503,
+    "accuracy": "house",
+    "query": "Gärtnerweg 62",
+    "displayName": "Villa Gründergeist, 62, Gärtnerweg, Westend Süd, Innenstadt 2, Frankfurt am Main, Hessen, 60322, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:33.591Z"
+  },
+  "ffm-b056484e53": {
+    "lat": 50.0868759,
+    "lng": 8.6492487,
+    "accuracy": "house",
+    "query": "Frauenhofstraße 25",
+    "displayName": "25, Frauenhofstraße, Niederrad, Süd, Frankfurt am Main, Hessen, 60528, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:09.780Z"
+  },
+  "ffm-b25efbc4bf": {
+    "lat": 50.119901,
+    "lng": 8.6835143,
+    "accuracy": "approximate",
+    "query": "Schleidenstr.14",
+    "displayName": "14, Schleidenstraße, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60318, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:55.881Z"
+  },
+  "ffm-b2fac5bff8": {
+    "lat": 50.1246072,
+    "lng": 8.6128695,
+    "accuracy": "house",
+    "query": "Alt Rödelheim 8",
+    "displayName": "8, Alt-Rödelheim, Rödelheim, Mitte-West, Frankfurt am Main, Hessen, 60489, Deutschland",
+    "fetchedAt": "2026-10-08T20:15:54.537Z"
+  },
+  "ffm-b3606d8a69": {
+    "lat": 50.1345883,
+    "lng": 8.7050756,
+    "accuracy": "street",
+    "query": "Dortelweiler Str.",
+    "displayName": "Dortelweiler Straße, Bornheim, Bornheim/Ostend, Frankfurt am Main, Hessen, 60389, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:11.868Z"
+  },
+  "ffm-b450cc7927": {
+    "lat": 50.1144314,
+    "lng": 8.6829851,
+    "accuracy": "street",
+    "query": "Zeil",
+    "displayName": "Zeil, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60313, Deutschland",
+    "fetchedAt": "2026-10-08T20:26:36.639Z"
+  },
+  "ffm-b5b0e75b13": {
+    "lat": 50.1168968,
+    "lng": 8.6798525,
+    "accuracy": "street",
+    "query": "Große Eschenheimer Str.",
+    "displayName": "Große Eschenheimer Straße, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60313, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:54.292Z"
+  },
+  "ffm-b60f24eb94": {
+    "lat": 50.2007193,
+    "lng": 8.6745675,
+    "accuracy": "street",
+    "query": "Deuil-La-Barre-Str.",
+    "displayName": "Deuil-La-Barre-Straße, Nieder-Eschbach, Frankfurt am Main, Hessen, 60437, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:57.750Z"
+  },
+  "ffm-b62e03b89b": {
+    "lat": 50.1005254,
+    "lng": 8.7249718,
+    "accuracy": "house",
+    "query": "Offenbacher Landstraße 357",
+    "displayName": "357, Offenbacher Landstraße, Oberrad, Süd, Frankfurt am Main, Hessen, 60599, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:31.490Z"
+  },
+  "ffm-b6374ee1e1": {
+    "lat": 50.1127051,
+    "lng": 8.6817116,
+    "accuracy": "street",
+    "query": "Liebfrauenberg",
+    "displayName": "Liebfrauenberg, Altstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60313, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:29.151Z"
+  },
+  "ffm-b7024ee0cb": {
+    "lat": 50.1099674,
+    "lng": 8.6835773,
+    "accuracy": "street",
+    "query": "Saalgasse 7-9",
+    "displayName": "Saalgasse, Altstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:34.462Z"
+  },
+  "ffm-b713d19298": {
+    "lat": 50.1144905,
+    "lng": 8.7152908,
+    "accuracy": "house",
+    "query": "Ferdinand-Happ-Straße 59",
+    "displayName": "59, Ferdinand-Happ-Straße, Osthafen, Ostend, Bornheim/Ostend, Frankfurt am Main, Hessen, 60314, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:04.589Z"
+  },
+  "ffm-b729ef26ba": {
+    "lat": 50.1004104,
+    "lng": 8.725867,
+    "accuracy": "house",
+    "query": "Offenbacher Landstraße 369",
+    "displayName": "369, Offenbacher Landstraße, Oberrad, Süd, Frankfurt am Main, Hessen, 60599, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:32.716Z"
+  },
+  "ffm-b73de4f519": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:22:43.344Z"
+  },
+  "ffm-b7421e50d4": {
+    "lat": 50.1214119,
+    "lng": 8.6451592,
+    "accuracy": "approximate",
+    "query": "Rohmerplatz",
+    "displayName": "Rohmerplatz, Bockenheim, Innenstadt 2, Frankfurt am Main, Hessen, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:28.883Z"
+  },
+  "ffm-b8b4f9aed2": {
+    "lat": 50.1340295,
+    "lng": 8.612898,
+    "accuracy": "house",
+    "query": "Stephan-Heise-Straße 43",
+    "displayName": "43, Stephan-Heise-Straße, Westhausen, Praunheim, Mitte-West, Frankfurt am Main, Hessen, 60488, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:31.334Z"
+  },
+  "ffm-b8c259ca7e": {
+    "lat": 50.1193782,
+    "lng": 8.6983561,
+    "accuracy": "house",
+    "query": "Sandweg 54",
+    "displayName": "54, Sandweg, Nordend Ost, Innenstadt 3, Frankfurt am Main, Hessen, 60316, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:37.000Z"
+  },
+  "ffm-b9cd0be09c": {
+    "lat": 50.1449156,
+    "lng": 8.6677448,
+    "accuracy": "house",
+    "query": "Eschersheimer Landstraße 393",
+    "displayName": "393, Eschersheimer Landstraße, Dornbusch, Mitte-Nord, Frankfurt am Main, Hessen, 60320, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:51.042Z"
+  },
+  "ffm-ba71412196": {
+    "lat": 50.1153753,
+    "lng": 8.6746809,
+    "accuracy": "house",
+    "query": "Kaiserhofstraße 15",
+    "displayName": "15, Kaiserhofstraße, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60313, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:24.551Z"
+  },
+  "ffm-bae611c574": {
+    "lat": 50.1124654,
+    "lng": 8.6881363,
+    "accuracy": "street",
+    "query": "Kurt-Schumacher-Str.",
+    "displayName": "Kurt-Schumacher-Straße, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:07.980Z"
+  },
+  "ffm-bb0ef57ebe": {
+    "lat": 50.1045469,
+    "lng": 8.6864116,
+    "accuracy": "approximate",
+    "query": "Schifferstr.42",
+    "displayName": "42, Schifferstraße, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60594, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:47.416Z"
+  },
+  "ffm-bbcb6804f1": {
+    "lat": 50.1274039,
+    "lng": 8.6256112,
+    "accuracy": "house",
+    "query": "Elbinger Straße 2",
+    "displayName": "2, Elbinger Straße, Hausen, Mitte-West, Frankfurt am Main, Hessen, 60487, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:34.197Z"
+  },
+  "ffm-bc38b3a3c5": {
+    "lat": 50.1080371,
+    "lng": 8.6657608,
+    "accuracy": "house",
+    "query": "Kaiserstraße 72",
+    "displayName": "72, Kaiserstraße, Bahnhofsviertel, Innenstadt 1, Frankfurt am Main, Hessen, 60329, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:27.324Z"
+  },
+  "ffm-bd8429a6c6": {
+    "lat": 50.1223705,
+    "lng": 8.6444477,
+    "accuracy": "house",
+    "query": "Kurfürstenstraße 8",
+    "displayName": "8, Kurfürstenstraße, Bockenheim, Innenstadt 2, Frankfurt am Main, Hessen, 60486, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:03.966Z"
+  },
+  "ffm-bd99256227": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:26:32.320Z"
+  },
+  "ffm-bea8a5f50d": {
+    "lat": 50.1211678,
+    "lng": 8.6799934,
+    "accuracy": "house",
+    "query": "Oeder Weg 43",
+    "displayName": "43, Oeder Weg, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60318, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:24.955Z"
+  },
+  "ffm-bfb40f203b": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:22:22.316Z"
+  },
+  "ffm-bfca8b4995": {
+    "lat": 50.1025924,
+    "lng": 8.5521768,
+    "accuracy": "street",
+    "query": "Zuckschwerdtstr.",
+    "displayName": "Zuckschwerdtstraße, Höchst, West, Frankfurt am Main, Hessen, 65929, Deutschland",
+    "fetchedAt": "2026-10-08T20:26:45.451Z"
+  },
+  "ffm-c035ffe097": {
+    "lat": 50.1097223,
+    "lng": 8.6810785,
+    "accuracy": "house",
+    "query": "Alte Mainzer Gasse 4",
+    "displayName": "4, Alte Mainzer Gasse, Altstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:04.719Z"
+  },
+  "ffm-c09aa4b0e9": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:20:12.788Z"
+  },
+  "ffm-c0cb353186": {
+    "lat": 50.1303682,
+    "lng": 8.686207,
+    "accuracy": "approximate",
+    "query": "Bürgerhospital, Nibelungenallee",
+    "displayName": "Bürgerhospital, 37-41, Nibelungenallee, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60318, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:06.950Z"
+  },
+  "ffm-c18668439f": {
+    "lat": 50.1044847,
+    "lng": 8.6890862,
+    "accuracy": "house",
+    "query": "Affentorplatz 10",
+    "displayName": "10, Affentorplatz, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60594, Deutschland",
+    "fetchedAt": "2026-10-08T20:15:42.008Z"
+  },
+  "ffm-c21de39e48": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:15:57.045Z"
+  },
+  "ffm-c3f5186dcd": {
+    "lat": 50.0862119,
+    "lng": 8.6433805,
+    "accuracy": "street",
+    "query": "Bruchfeldstr.",
+    "displayName": "Bruchfeldstraße, Niederrad, Süd, Frankfurt am Main, Hessen, 60528, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:43.425Z"
+  },
+  "ffm-c461110b34": {
+    "lat": 50.10039,
+    "lng": 8.7208567,
+    "accuracy": "house",
+    "query": "Offenbacher Landstraße 299",
+    "displayName": "299, Offenbacher Landstraße, Oberrad, Süd, Frankfurt am Main, Hessen, 60599, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:28.343Z"
+  },
+  "ffm-c5666434e1": {
+    "lat": 50.1060851,
+    "lng": 8.6498713,
+    "accuracy": "street",
+    "query": "Speyerer Straße 1",
+    "displayName": "Speyerer Straße, Gallus, Innenstadt 1, Frankfurt am Main, Hessen, 60327, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:26.444Z"
+  },
+  "ffm-c62183aa8b": {
+    "lat": 50.0949667,
+    "lng": 8.6700941,
+    "accuracy": "street",
+    "query": "Waidmannstraße 47-49",
+    "displayName": "Waidmannstraße, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60596, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:57.751Z"
+  },
+  "ffm-c699885053": {
+    "lat": 50.0878752,
+    "lng": 8.511433,
+    "accuracy": "street",
+    "query": "Richard-Weidlich-Platz",
+    "displayName": "Richard-Weidlich-Platz, Märchensiedlung, Sindlingen, West, Frankfurt am Main, Hessen, 65931, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:16.539Z"
+  },
+  "ffm-c6eee508e1": {
+    "lat": 50.0906858,
+    "lng": 8.6074718,
+    "accuracy": "house",
+    "query": "Alt Griesheim 18",
+    "displayName": "18, Alt-Griesheim, Griesheim, West, Frankfurt am Main, Hessen, 65933, Deutschland",
+    "fetchedAt": "2026-10-08T20:15:51.886Z"
+  },
+  "ffm-c8974a5bbb": {
+    "lat": 50.1110456,
+    "lng": 8.6865486,
+    "accuracy": "house",
+    "query": "Fahrgasse 19",
+    "displayName": "19, Fahrgasse, Altstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:53.620Z"
+  },
+  "ffm-c9abf71e18": {
+    "lat": 50.1126508,
+    "lng": 8.6803895,
+    "accuracy": "street",
+    "query": "Bleidenstraße 9",
+    "displayName": "Bleidenstraße, Altstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:15.802Z"
+  },
+  "ffm-cb1da524a1": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:16:41.448Z"
+  },
+  "ffm-ccf5cff750": {
+    "lat": 50.1159886,
+    "lng": 8.6959359,
+    "accuracy": "house",
+    "query": "Pfingstweidstraße 3",
+    "displayName": "3, Pfingstweidstraße, Ostend, Bornheim/Ostend, Frankfurt am Main, Hessen, 60316, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:57.617Z"
+  },
+  "ffm-cd54940117": {
+    "lat": 50.127686,
+    "lng": 8.707052,
+    "accuracy": "house",
+    "query": "Neebstraße 2",
+    "displayName": "2, Neebstraße, Bornheim, Bornheim/Ostend, Frankfurt am Main, Hessen, 60385, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:05.588Z"
+  },
+  "ffm-cdd0bebc15": {
+    "lat": 50.1063178,
+    "lng": 8.6836179,
+    "accuracy": "house",
+    "query": "Schulstraße 31",
+    "displayName": "Krankenhaus Sachsenhausen, 31, Schulstraße, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60594, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:01.206Z"
+  },
+  "ffm-cf8adf203c": {
+    "lat": 50.1219662,
+    "lng": 8.6603972,
+    "accuracy": "house",
+    "query": "Feldbergstraße 38",
+    "displayName": "38, Feldbergstraße, Westend Süd, Innenstadt 2, Frankfurt am Main, Hessen, 60323, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:02.836Z"
+  },
+  "ffm-cfcdd01c2e": {
+    "lat": 50.1132605,
+    "lng": 8.6839272,
+    "accuracy": "street",
+    "query": "Hasengasse 21-23",
+    "displayName": "Hasengasse, Altstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:18.107Z"
+  },
+  "ffm-cffe0db47d": {
+    "lat": 50.1115387,
+    "lng": 8.6678219,
+    "accuracy": "house",
+    "query": "Marienstraße 15",
+    "displayName": "Marienbogen, 15, Marienstraße, Bahnhofsviertel, Innenstadt 1, Frankfurt am Main, Hessen, 60329, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:47.791Z"
+  },
+  "ffm-d0f1adf448": {
+    "lat": 50.1303447,
+    "lng": 8.6874397,
+    "accuracy": "street",
+    "query": "Richard-Wagner-Straße 14",
+    "displayName": "Richard-Wagner-Straße, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60318, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:13.686Z"
+  },
+  "ffm-d12f641f45": {
+    "lat": 50.10302,
+    "lng": 8.6911816,
+    "accuracy": "house",
+    "query": "Dreieichstraße 59",
+    "displayName": "HNO Zentrum Frankfurt, 59, Dreieichstraße, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60594, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:16.245Z"
+  },
+  "ffm-d15b09b325": {
+    "lat": 50.1205934,
+    "lng": 8.6864236,
+    "accuracy": "house",
+    "query": "Eckenheimer Landstraße 16",
+    "displayName": "16, Eckenheimer Landstraße, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60318, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:30.444Z"
+  },
+  "ffm-d19a5d2605": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:17:34.104Z"
+  },
+  "ffm-d22bd4268f": {
+    "lat": 50.0836994,
+    "lng": 8.6387858,
+    "accuracy": "house",
+    "query": "Jugenheimer Straße 45",
+    "displayName": "45, Jugenheimer Straße, Adolf-Miersch-Siedlung, Niederrad, Süd, Frankfurt am Main, Hessen, 60528, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:19.916Z"
+  },
+  "ffm-d34fcd7988": {
+    "lat": 50.1253886,
+    "lng": 8.7654495,
+    "accuracy": "street",
+    "query": "Konstanzer Straße",
+    "displayName": "Konstanzer Straße, Fechenheim, Ost, Frankfurt am Main, Hessen, 60386, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:50.013Z"
+  },
+  "ffm-d518a14751": {
+    "lat": 50.1419953,
+    "lng": 8.7524834,
+    "accuracy": "street",
+    "query": "Borsigallee",
+    "displayName": "Borsigallee, Enkheim, Bergen-Enkheim, Frankfurt am Main, Hessen, 60388, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:30.399Z"
+  },
+  "ffm-d83a1efae9": {
+    "lat": 50.1054435,
+    "lng": 8.6456024,
+    "accuracy": "house",
+    "query": "Frankenallee 62",
+    "displayName": "62, Frankenallee, Europaviertel, Gallus, Innenstadt 1, Frankfurt am Main, Hessen, 60327, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:08.410Z"
+  },
+  "ffm-d83aee0112": {
+    "lat": 50.1024643,
+    "lng": 8.5477629,
+    "accuracy": "street",
+    "query": "Kasinostr.",
+    "displayName": "Kasinostraße, Höchst, West, Frankfurt am Main, Hessen, 65929, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:29.825Z"
+  },
+  "ffm-d919c71b22": {
+    "lat": 50.1291031,
+    "lng": 8.6818764,
+    "accuracy": "street",
+    "query": "Falkensteiner Straße",
+    "displayName": "Falkensteiner Straße, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60322, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:00.370Z"
+  },
+  "ffm-d98905e429": {
+    "lat": 50.1000737,
+    "lng": 8.6826836,
+    "accuracy": "house",
+    "query": "Textorstraße 81",
+    "displayName": "81, Textorstraße, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60594, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:39.145Z"
+  },
+  "ffm-da1da64b1b": {
+    "lat": 50.1137327,
+    "lng": 8.6847487,
+    "accuracy": "approximate",
+    "query": "Parkhaus, Töngesgasse",
+    "displayName": "Parkhaus Konstablerwache, 8, Töngesgasse, Altstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:45.026Z"
+  },
+  "ffm-db2a0a2a4e": {
+    "lat": 50.0979787,
+    "lng": 8.6745643,
+    "accuracy": "approximate",
+    "query": "Thorwaldsenstr.33",
+    "displayName": "33, Thorwaldsenstraße, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60596, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:41.616Z"
+  },
+  "ffm-db6722c2ae": {
+    "lat": 50.1181096,
+    "lng": 8.6713358,
+    "accuracy": "house",
+    "query": "Reuterweg 18",
+    "displayName": "18, Reuterweg, Westend Süd, Innenstadt 2, Frankfurt am Main, Hessen, 60323, Deutschland",
+    "fetchedAt": "2026-10-08T20:24:12.157Z"
+  },
+  "ffm-db6f10ad6e": {
+    "lat": 50.1247692,
+    "lng": 8.7650278,
+    "accuracy": "approximate",
+    "query": "Gartenbad, Konstanzer Straße",
+    "displayName": "Gartenbad Fechenheim, Konstanzer Straße, Fechenheim, Ost, Frankfurt am Main, Hessen, 60386, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:47.531Z"
+  },
+  "ffm-dbda4986d1": {
+    "lat": 50.1045668,
+    "lng": 8.6919059,
+    "accuracy": "street",
+    "query": "Dreieichstraße",
+    "displayName": "Dreieichstraße, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60594, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:14.477Z"
+  },
+  "ffm-dc5fcf22fd": {
+    "lat": 50.1438672,
+    "lng": 8.6925608,
+    "accuracy": "street",
+    "query": "Marbachweg 95-103",
+    "displayName": "Marbachweg, Eckenheim, Nord-Ost, Frankfurt am Main, Hessen, 60435, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:44.721Z"
+  },
+  "ffm-dcd1cbdad4": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:20:37.869Z"
+  },
+  "ffm-deab14836d": {
+    "lat": 50.1256682,
+    "lng": 8.6442311,
+    "accuracy": "house",
+    "query": "Falkstraße 92",
+    "displayName": "92, Falkstraße, Bockenheim, Innenstadt 2, Frankfurt am Main, Hessen, 60487, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:01.613Z"
+  },
+  "ffm-df4b98aa7c": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:26:16.341Z"
+  },
+  "ffm-df5133a361": {
+    "lat": 50.1234422,
+    "lng": 8.6403613,
+    "accuracy": "house",
+    "query": "Kleine Seestraße 6",
+    "displayName": "6, Kleine Seestraße, Bockenheim, Innenstadt 2, Frankfurt am Main, Hessen, 60486, Deutschland",
+    "fetchedAt": "2026-10-08T20:21:40.885Z"
+  },
+  "ffm-e1512a15f3": {
+    "lat": 50.102063,
+    "lng": 8.6370899,
+    "accuracy": "house",
+    "query": "Mainzer Landstraße 323",
+    "displayName": "Boz Urfa Kebap, 323, Mainzer Landstraße, Europaviertel, Gallus, Innenstadt 1, Frankfurt am Main, Hessen, 60326, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:40.791Z"
+  },
+  "ffm-e2869df280": {
+    "lat": 50.1296591,
+    "lng": 8.697484,
+    "accuracy": "street",
+    "query": "Martin-Luther-Str.",
+    "displayName": "Martin-Luther-Straße, Nordend Ost, Innenstadt 3, Frankfurt am Main, Hessen, 60389, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:52.102Z"
+  },
+  "ffm-e2889787a6": {
+    "lat": 50.145912,
+    "lng": 8.6141163,
+    "accuracy": "house",
+    "query": "Damaschkeanger 158",
+    "displayName": "158, Damaschkeanger, Praunheim, Mitte-West, Frankfurt am Main, Hessen, 60488, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:54.875Z"
+  },
+  "ffm-e3c6399d59": {
+    "lat": 50.086409,
+    "lng": 8.5133062,
+    "accuracy": "house",
+    "query": "Sindlinger Bahnstraße 113",
+    "displayName": "113, Sindlinger Bahnstraße, Märchensiedlung, Sindlingen, West, Frankfurt am Main, Hessen, 65931, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:18.924Z"
+  },
+  "ffm-e5afd887b8": {
+    "lat": 50.1139485,
+    "lng": 8.6826585,
+    "accuracy": "street",
+    "query": "Holzgraben 26-28",
+    "displayName": "Holzgraben, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60313, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:43.547Z"
+  },
+  "ffm-e6a0fb4444": {
+    "lat": 50.1284799,
+    "lng": 8.7092037,
+    "accuracy": "house",
+    "query": "Gronauer Straße 24",
+    "displayName": "24, Gronauer Straße, Bornheim, Bornheim/Ostend, Frankfurt am Main, Hessen, 60385, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:51.757Z"
+  },
+  "ffm-e7098f633c": {
+    "lat": 50.1140046,
+    "lng": 8.6749354,
+    "accuracy": "house",
+    "query": "Goethestraße 14",
+    "displayName": "14, Goethestraße, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60313, Deutschland",
+    "fetchedAt": "2026-10-08T20:19:48.753Z"
+  },
+  "ffm-e83ae99da9": {
+    "lat": 50.1504138,
+    "lng": 8.6937357,
+    "accuracy": "street",
+    "query": "Obere Kreuzäckerstraße 11-15",
+    "displayName": "Obere Kreuzäckerstraße, Preungesheim, Nord-Ost, Frankfurt am Main, Hessen, 60435, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:10.533Z"
+  },
+  "ffm-e83eb49ced": {
+    "lat": 50.1032965,
+    "lng": 8.6796031,
+    "accuracy": "street",
+    "query": "Schweizer Str.",
+    "displayName": "Schweizer Straße, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60594, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:09.712Z"
+  },
+  "ffm-e89d864ee0": {
+    "lat": 50.0831424,
+    "lng": 8.6511468,
+    "accuracy": "approximate",
+    "query": "Rennbahn, Schwarzwaldstraße",
+    "displayName": "Trinkhalle an der Rennbahn, Schwarzwaldstraße, Niederrad, Süd, Frankfurt am Main, Hessen, 60528, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:07.269Z"
+  },
+  "ffm-e9936a0096": {
+    "lat": 50.1287825,
+    "lng": 8.7059091,
+    "accuracy": "house",
+    "query": "Im Prüfling 19",
+    "displayName": "19, Im Prüfling, Bornheim, Bornheim/Ostend, Frankfurt am Main, Hessen, 60389, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:54.550Z"
+  },
+  "ffm-e9bad3fdab": {
+    "lat": 50.1108596,
+    "lng": 8.6537279,
+    "accuracy": "street",
+    "query": "Brüsseler Straße",
+    "displayName": "Brüsseler Straße, Gallus, Innenstadt 1, Frankfurt am Main, Hessen, 60327, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:49.822Z"
+  },
+  "ffm-e9d8ef2f9d": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:20:10.244Z"
+  },
+  "ffm-e9ee6cbbe8": {
+    "lat": null,
+    "lng": null,
+    "accuracy": "none",
+    "query": null,
+    "displayName": null,
+    "fetchedAt": "2026-10-08T20:24:19.580Z"
+  },
+  "ffm-ec850f63f6": {
+    "lat": 50.0971645,
+    "lng": 8.5048326,
+    "accuracy": "street",
+    "query": "Pfaffenwiese",
+    "displayName": "Pfaffenwiese, Kolonie, Zeilsheim, West, Frankfurt am Main, Hessen, 65931, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:56.349Z"
+  },
+  "ffm-ecd429903f": {
+    "lat": 50.1131901,
+    "lng": 8.6789486,
+    "accuracy": "street",
+    "query": "An der Hauptwache",
+    "displayName": "An der Hauptwache, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60313, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:32.393Z"
+  },
+  "ffm-eda56de2e3": {
+    "lat": 50.1000051,
+    "lng": 8.7246189,
+    "accuracy": "house",
+    "query": "Offenbacher Landstraße 350",
+    "displayName": "350, Offenbacher Landstraße, Oberrad, Süd, Frankfurt am Main, Hessen, 60599, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:29.735Z"
+  },
+  "ffm-ee3417d543": {
+    "lat": 50.0984411,
+    "lng": 8.5015584,
+    "accuracy": "street",
+    "query": "Bechtenwaldstraße",
+    "displayName": "Bechtenwaldstraße, Siedlung Taunusblick, Zeilsheim, West, Frankfurt am Main, Hessen, 65931, Deutschland",
+    "fetchedAt": "2026-10-08T20:16:52.126Z"
+  },
+  "ffm-ef2e25a42c": {
+    "lat": 50.1101989,
+    "lng": 8.6769341,
+    "accuracy": "street",
+    "query": "Bethmannstraße 13-19",
+    "displayName": "Bethmannstraße, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:10.756Z"
+  },
+  "ffm-f0a775d1a4": {
+    "lat": 50.0997546,
+    "lng": 8.5647271,
+    "accuracy": "house",
+    "query": "Alt Nied 3",
+    "displayName": "3, Alt-Nied, Nied, West, Frankfurt am Main, Hessen, 65934, Deutschland",
+    "fetchedAt": "2026-10-08T20:15:53.198Z"
+  },
+  "ffm-f0e8df5e80": {
+    "lat": 50.1602403,
+    "lng": 8.6458199,
+    "accuracy": "house",
+    "query": "Heddernheimer Landstraße 53",
+    "displayName": "53, Heddernheimer Landstraße, Heddernheim, Nord-West, Frankfurt am Main, Hessen, 60439, Deutschland",
+    "fetchedAt": "2026-10-08T20:20:21.994Z"
+  },
+  "ffm-f1d74fcd18": {
+    "lat": 50.1000986,
+    "lng": 8.5720701,
+    "accuracy": "house",
+    "query": "Luthmerstraße 49",
+    "displayName": "49, Luthmerstraße, Nied, West, Frankfurt am Main, Hessen, 65934, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:35.213Z"
+  },
+  "ffm-f204a6001d": {
+    "lat": 50.1091321,
+    "lng": 8.6612979,
+    "accuracy": "approximate",
+    "query": "Hauptbahnhof, Düsseldorfer Str.",
+    "displayName": "B-Strecke, Düsseldorfer Straße, Bahnhofsviertel, Innenstadt 1, Frankfurt am Main, Hessen, 60329, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:23.434Z"
+  },
+  "ffm-f3f71d9a24": {
+    "lat": 50.1238227,
+    "lng": 8.6826189,
+    "accuracy": "street",
+    "query": "Adlerflychtstraße",
+    "displayName": "Adlerflychtstraße, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60318, Deutschland",
+    "fetchedAt": "2026-10-08T20:15:39.638Z"
+  },
+  "ffm-f4ade88044": {
+    "lat": 50.1103524,
+    "lng": 8.6764522,
+    "accuracy": "street",
+    "query": "Bethmannstraße",
+    "displayName": "Bethmannstraße, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:09.439Z"
+  },
+  "ffm-f4ae8461d4": {
+    "lat": 50.1103547,
+    "lng": 8.6860221,
+    "accuracy": "street",
+    "query": "Weckmarkt",
+    "displayName": "Weckmarkt, Altstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:26:05.779Z"
+  },
+  "ffm-f4f7218b40": {
+    "lat": 50.1240624,
+    "lng": 8.6797649,
+    "accuracy": "house",
+    "query": "Lersnerstraße 22",
+    "displayName": "22, Lersnerstraße, Nordend West, Innenstadt 3, Frankfurt am Main, Hessen, 60322, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:23.682Z"
+  },
+  "ffm-f5a7422418": {
+    "lat": 50.0968953,
+    "lng": 8.501027,
+    "accuracy": "house",
+    "query": "Pfaffenwiese 46a",
+    "displayName": "DRK Ortsverein Zeilsheim, 46a, Pfaffenwiese, Kolonie, Zeilsheim, West, Frankfurt am Main, Hessen, 65931, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:53.261Z"
+  },
+  "ffm-f77df8a381": {
+    "lat": 50.1048153,
+    "lng": 8.6791952,
+    "accuracy": "house",
+    "query": "Metzlerstraße 34",
+    "displayName": "34, Metzlerstraße, Sachsenhausen Nord, Sachsenhausen, Süd, Frankfurt am Main, Hessen, 60594, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:59.530Z"
+  },
+  "ffm-f77f8f6bca": {
+    "lat": 50.1020677,
+    "lng": 8.638308,
+    "accuracy": "house",
+    "query": "Mainzer Landstraße 315-321",
+    "displayName": "315-321, Mainzer Landstraße, Europaviertel, Gallus, Innenstadt 1, Frankfurt am Main, Hessen, 60326, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:42.042Z"
+  },
+  "ffm-f990219a63": {
+    "lat": 50.1108686,
+    "lng": 8.5345941,
+    "accuracy": "approximate",
+    "query": "Ludwig-Erhard-Schule, Legienstraße",
+    "displayName": "Ludwig-Erhard-Schule, 5, Legienstraße, Unterliederbach, West, Frankfurt am Main, Hessen, 65929, Deutschland",
+    "fetchedAt": "2026-10-08T20:22:19.329Z"
+  },
+  "ffm-fa20e58a50": {
+    "lat": 50.11491,
+    "lng": 8.6776505,
+    "accuracy": "street",
+    "query": "Börsenplatz",
+    "displayName": "Börsenplatz, Innenstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60313, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:27.401Z"
+  },
+  "ffm-faa05f2717": {
+    "lat": 50.0978271,
+    "lng": 8.7272123,
+    "accuracy": "house",
+    "query": "Wiener Straße 23",
+    "displayName": "23, Wiener Straße, Oberrad, Süd, Frankfurt am Main, Hessen, 60599, Deutschland",
+    "fetchedAt": "2026-10-08T20:26:13.824Z"
+  },
+  "ffm-fd2f7463a9": {
+    "lat": 50.1115432,
+    "lng": 8.6824039,
+    "accuracy": "approximate",
+    "query": "Berliner Str.33-35",
+    "displayName": "33-35, Berliner Straße, Altstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:17:03.713Z"
+  },
+  "ffm-fd3fdffcac": {
+    "lat": 50.1011958,
+    "lng": 8.5471977,
+    "accuracy": "house",
+    "query": "Emmerich-Josef-Str. 32",
+    "displayName": "32, Emmerich-Josef-Straße, Höchst, West, Frankfurt am Main, Hessen, 65929, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:36.659Z"
+  },
+  "ffm-fdd7cc6536": {
+    "lat": 50.0967975,
+    "lng": 8.6092608,
+    "accuracy": "house",
+    "query": "Espenstraße 44",
+    "displayName": "44, Espenstraße, Griesheim, West, Frankfurt am Main, Hessen, 65933, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:52.246Z"
+  },
+  "ffm-fdeba421bb": {
+    "lat": 50.1495953,
+    "lng": 8.681658,
+    "accuracy": "approximate",
+    "query": "Engelthaler Str.9",
+    "displayName": "9, Engelthaler Straße, Eckenheim, Nord-Ost, Frankfurt am Main, Hessen, 60435, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:42.709Z"
+  },
+  "ffm-fe38b1fb25": {
+    "lat": 50.1133776,
+    "lng": 8.6827369,
+    "accuracy": "house",
+    "query": "Töngesgasse 40",
+    "displayName": "40, Töngesgasse, Altstadt, Innenstadt 1, Frankfurt am Main, Hessen, 60311, Deutschland",
+    "fetchedAt": "2026-10-08T20:25:43.363Z"
+  },
+  "ffm-fe9cd2abb7": {
+    "lat": 50.1169891,
+    "lng": 8.6681626,
+    "accuracy": "house",
+    "query": "Oberlindau 3",
+    "displayName": "3, Oberlindau, Westend Süd, Innenstadt 2, Frankfurt am Main, Hessen, 60323, Deutschland",
+    "fetchedAt": "2026-10-08T20:23:11.740Z"
+  },
+  "ffm-ffc75902a0": {
+    "lat": 50.100392,
+    "lng": 8.5460323,
+    "accuracy": "house",
+    "query": "Emmerich-Josef-Str. 39",
+    "displayName": "39, Emmerich-Josef-Straße, Höchst, West, Frankfurt am Main, Hessen, 65929, Deutschland",
+    "fetchedAt": "2026-10-08T20:18:38.400Z"
+  }
+}
