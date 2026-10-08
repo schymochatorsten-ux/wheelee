@@ -1,0 +1,52 @@
+{
+  "50.217877,8.266027": {
+    "street": "Wiesbadener Straße",
+    "houseNumber": null,
+    "district": null
+  },
+  "50.222442,8.269364": {
+    "street": "Am Hexenturm",
+    "houseNumber": null,
+    "district": null
+  },
+  "50.208010,8.263549": {
+    "street": "Rudolf-Virchow-Straße",
+    "houseNumber": null,
+    "district": null
+  },
+  "50.208090,8.263327": {
+    "street": "Rudolf-Virchow-Straße",
+    "houseNumber": null,
+    "district": null
+  },
+  "50.200978,8.222160": {
+    "street": "Mehlbaumweg",
+    "houseNumber": null,
+    "district": null
+  },
+  "50.218822,8.274730": {
+    "street": "Über dem Totenhof",
+    "houseNumber": null,
+    "district": null
+  },
+  "48.312764,10.156477": {
+    "street": "Günzburger Straße",
+    "houseNumber": null,
+    "district": null
+  },
+  "48.304747,10.159705": {
+    "street": "An der Mauer",
+    "houseNumber": null,
+    "district": null
+  },
+  "48.306877,10.153754": {
+    "street": "Herzog-Georg-Straße",
+    "houseNumber": null,
+    "district": null
+  },
+  "48.305799,10.154323": {
+    "street": "Herzog-Ludwig-Straße",
+    "houseNumber": null,
+    "district": null
+  }
+}

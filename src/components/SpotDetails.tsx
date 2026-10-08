@@ -89,7 +89,9 @@ export function SpotDetails({ spot, distanceMeters, mapsTarget, onClose }: SpotD
         <div className="flex gap-2">
           <dt className="text-neutral-500">Entfernung</dt>
           <dd>
-            {distanceMeters === null ? "Standort nicht freigegeben" : formatDistance(distanceMeters)}
+            {distanceMeters === null
+              ? "Standort nicht freigegeben"
+              : formatDistance(distanceMeters)}
           </dd>
         </div>
       </dl>

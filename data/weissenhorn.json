@@ -1,0 +1,74 @@
+{
+  "city": {
+    "slug": "weissenhorn",
+    "name": "Weißenhorn",
+    "center": {
+      "lat": 48.3047,
+      "lng": 10.1594
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "generatedAt": "2026-10-08",
+  "spots": [
+    {
+      "id": "weissenhorn-8b4380d3ef",
+      "city": "weissenhorn",
+      "label": "An der Mauer",
+      "street": "An der Mauer",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weißenhorn",
+      "spotCount": 2,
+      "lat": 48.3047469,
+      "lng": 10.1597047,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28390494), ODbL"
+    },
+    {
+      "id": "weissenhorn-a84d22b189",
+      "city": "weissenhorn",
+      "label": "Günzburger Straße",
+      "street": "Günzburger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weißenhorn",
+      "spotCount": 1,
+      "lat": 48.3127637,
+      "lng": 10.1564775,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14133815633), ODbL"
+    },
+    {
+      "id": "weissenhorn-bbfcabb552",
+      "city": "weissenhorn",
+      "label": "Herzog-Ludwig-Straße",
+      "street": "Herzog-Ludwig-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weißenhorn",
+      "spotCount": 2,
+      "lat": 48.3057994,
+      "lng": 10.1543227,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1534390460), ODbL"
+    },
+    {
+      "id": "weissenhorn-71c9e2e48f",
+      "city": "weissenhorn",
+      "label": "P10 Bahnhof Nord",
+      "street": "Herzog-Georg-Straße",
+      "houseNumber": null,
+      "note": "P10 Bahnhof Nord · Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weißenhorn",
+      "spotCount": 2,
+      "lat": 48.306877,
+      "lng": 10.153754,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/343739971), ODbL"
+    }
+  ]
+}

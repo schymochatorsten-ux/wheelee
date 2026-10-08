@@ -3,9 +3,15 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import dynamic from "next/dynamic";
 import type { ParkingSpot } from "@/lib/types";
-import { distanceMeters, findNearest, formatDistance, hasCoordinates, sortByDistance } from "@/lib/geo";
-import type { LatLng } from "@/lib/geo";
+import {
+  distanceMeters,
+  findNearest,
+  formatDistance,
+  hasCoordinates,
+  sortByDistance,
+} from "@/lib/geo";
 import { detectMapsTarget, type MapsTarget } from "@/lib/navigation";
+import type { CityInfo } from "@/lib/parking/spots";
 import { useGeolocation } from "@/hooks/useGeolocation";
 import { SpotDetails } from "./SpotDetails";
 import { SpotList } from "./SpotList";
@@ -28,13 +34,22 @@ const ParkingMap = dynamic(() => import("./map/ParkingMap"), {
 
 interface MapSectionProps {
   spots: ParkingSpot[];
-  center: LatLng;
-  cityName: string;
+  cities: CityInfo[];
+  /** Stadt, auf die ohne Nutzerstandort zentriert wird. */
+  defaultCity: CityInfo;
 }
 
 type View = "map" | "list";
 
-export function MapSection({ spots, center, cityName }: MapSectionProps) {
+/** „Frankfurt am Main, Idstein und Weißenhorn" */
+function cityNames(cities: readonly CityInfo[]): string {
+  const names = cities.map((city) => city.name);
+  if (names.length <= 1) return names.join("");
+  return `${names.slice(0, -1).join(", ")} und ${names[names.length - 1]}`;
+}
+
+export function MapSection({ spots, cities, defaultCity }: MapSectionProps) {
+  const center = defaultCity.center;
   const geo = useGeolocation();
   const [selected, setSelected] = useState<ParkingSpot | null>(null);
   const [view, setView] = useState<View>("map");
@@ -87,7 +102,8 @@ export function MapSection({ spots, center, cityName }: MapSectionProps) {
       <header className="shrink-0 border-b border-neutral-200 px-4 py-3 dark:border-neutral-800">
         <div className="flex items-baseline justify-between gap-3">
           <h1 className="text-lg font-semibold">
-            Behindertenparkplätze <span className="text-neutral-500">{cityName}</span>
+            Behindertenparkplätze{" "}
+            <span className="block text-sm font-normal text-neutral-500">{cityNames(cities)}</span>
           </h1>
           <div
             role="tablist"
@@ -120,7 +136,7 @@ export function MapSection({ spots, center, cityName }: MapSectionProps) {
               ? `Nächster Parkplatz: ${nearest.street ?? nearest.label} – ${formatDistance(nearest.distanceMeters)}`
               : "Kein verorteter Parkplatz in der Nähe.")}
           {geo.message}
-          {geo.status === "idle" && `${spots.length} Parkplätze in ${cityName}.`}
+          {geo.status === "idle" && `${spots.length} Parkplätze in ${cities.length} Städten.`}
         </p>
 
         {(geo.status === "denied" || geo.status === "timeout" || geo.status === "unavailable") && (
@@ -160,6 +176,7 @@ export function MapSection({ spots, center, cityName }: MapSectionProps) {
               nearby={nearby}
               unlocated={unlocated}
               hasUserPosition={geo.position !== null}
+              cities={cities}
               onSelect={select}
             />
           </div>

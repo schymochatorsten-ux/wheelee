@@ -17,10 +17,18 @@ export const paths = {
   geocodeCache: path.join(projectRoot, "data", "geocode-cache.json"),
   /** Manuelle Korrekturen; gewinnen immer gegen das Geocoding. */
   overrides: path.join(projectRoot, "data", "frankfurt.overrides.json"),
-  /** Fertige Seed-Datei für die App. */
-  seed: path.join(projectRoot, "data", "frankfurt.json"),
-  /** Qualitätsreport des Imports. */
-  report: path.join(projectRoot, "data", "frankfurt.report.md"),
+  /**
+   * Ergebnis der PDF-Kette.
+   *
+   * Bewusst **nicht** `frankfurt.json`: Seit die Stadt ihre Daten als WFS
+   * anbietet (`npm run import:wfs`), ist das die bessere Quelle – amtliche
+   * Koordinaten statt Geocoding, 458 statt 359 Standorte. Die PDF-Kette bleibt
+   * als Rückfallebene erhalten, darf die Seed-Datei der App aber nicht
+   * überschreiben; zwei Importwege auf dieselbe Datei wären eine Falle.
+   */
+  seed: path.join(projectRoot, "data", "frankfurt-pdf-liste.json"),
+  /** Qualitätsreport der PDF-Kette. */
+  report: path.join(projectRoot, "data", "frankfurt-pdf-liste.report.md"),
 } as const;
 
 export const city = {

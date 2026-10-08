@@ -1,0 +1,104 @@
+{
+  "city": {
+    "slug": "idstein",
+    "name": "Idstein",
+    "center": {
+      "lat": 50.2187,
+      "lng": 8.2686
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "generatedAt": "2026-10-08",
+  "spots": [
+    {
+      "id": "idstein-9b2104eb89",
+      "city": "idstein",
+      "label": "Am Hexenturm",
+      "street": "Am Hexenturm",
+      "houseNumber": null,
+      "note": "Am Hexenturm · Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Idstein",
+      "spotCount": 2,
+      "lat": 50.2224416,
+      "lng": 8.269364,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/12473382), ODbL"
+    },
+    {
+      "id": "idstein-6c383efd74",
+      "city": "idstein",
+      "label": "Mehlbaumweg",
+      "street": "Mehlbaumweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Idstein",
+      "spotCount": 1,
+      "lat": 50.2009779,
+      "lng": 8.2221598,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1270733398), ODbL"
+    },
+    {
+      "id": "idstein-b26fa151cb",
+      "city": "idstein",
+      "label": "Rudolf-Virchow-Straße",
+      "street": "Rudolf-Virchow-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Idstein",
+      "spotCount": 1,
+      "lat": 50.2080097,
+      "lng": 8.2635495,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/674623148), ODbL"
+    },
+    {
+      "id": "idstein-6041bb9528",
+      "city": "idstein",
+      "label": "Rudolf-Virchow-Straße",
+      "street": "Rudolf-Virchow-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Idstein",
+      "spotCount": 1,
+      "lat": 50.2080905,
+      "lng": 8.2633271,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/674623149), ODbL"
+    },
+    {
+      "id": "idstein-51eb69e9b8",
+      "city": "idstein",
+      "label": "Über dem Totenhof",
+      "street": "Über dem Totenhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Idstein",
+      "spotCount": 3,
+      "lat": 50.2188223,
+      "lng": 8.2747302,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1356765738), ODbL"
+    },
+    {
+      "id": "idstein-443f224a32",
+      "city": "idstein",
+      "label": "Wiesbadener Straße",
+      "street": "Wiesbadener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Idstein",
+      "spotCount": 1,
+      "lat": 50.2178772,
+      "lng": 8.2660273,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1652786352), ODbL"
+    }
+  ]
+}

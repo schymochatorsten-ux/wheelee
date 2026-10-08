@@ -1,5 +1,5 @@
 import { MapSection } from "@/components/MapSection";
-import { getAllSpots, getCity } from "@/lib/parking/spots";
+import { getAllSpots, getCities, getDefaultCity } from "@/lib/parking/spots";
 
 /**
  * Startseite: Karte und Liste der Behindertenparkplätze.
@@ -8,8 +8,5 @@ import { getAllSpots, getCity } from "@/lib/parking/spots";
  * so verlässt er das Gerät nicht.
  */
 export default function Home() {
-  const city = getCity();
-  const spots = getAllSpots();
-
-  return <MapSection spots={spots} center={city.center} cityName={city.name} />;
+  return <MapSection spots={getAllSpots()} cities={getCities()} defaultCity={getDefaultCity()} />;
 }

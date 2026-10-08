@@ -15,7 +15,10 @@
     "import:parse": "tsx scripts/import/parse-pdf.mts",
     "import:geocode": "tsx scripts/import/geocode.mts",
     "import:build": "tsx scripts/import/build-seed.mts",
-    "import:report": "tsx scripts/import/report.mts"
+    "import:report": "tsx scripts/import/report.mts",
+    "import:osm": "tsx scripts/import/osm-import.mts",
+    "import:wfs": "tsx scripts/import/wfs-import.mts",
+    "sources": "tsx scripts/import/find-sources.mts"
   },
   "dependencies": {
     "leaflet": "1.9.4",

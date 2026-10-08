@@ -25,6 +25,7 @@ Zentrale Aufgabenliste zum Projekt (Grundlage: [Konzept.md](Konzept.md)).
 - [x] 1.3 ESLint + Prettier + Vitest + npm-Scripts (`lint`, `format`, `typecheck`, `test`)
 - [x] 1.4 `.gitignore` ergänzt, `README.md` mit Stack, Entwicklung, Importkette und Lizenzen
 - [x] 1.5 Ordnerstruktur angelegt: `src/lib/` (Daten, Geo), `src/lib/parking/` (Quellenlogik), `scripts/import/`, `data/`
+- [x] 1.8 Mehrstädte-Fähigkeit in der Datenschicht: `src/lib/parking/spots.ts` lädt alle Seed-Dateien, die Karte zeigt alle Städte gemeinsam
 - [!] 1.6 Erste Commits + Branch-Strategie – **blockiert:** `git` ist auf diesem Rechner nicht im PATH, ich kann nicht committen
 - [ ] 1.7 Rest-Audit-Findings bereinigen: `postcss` (über `next`) und `braces` (über `eslint-config-next`) sind nur per Next-16-Upgrade behebbar – bewusst zurückgestellt
 
@@ -41,6 +42,28 @@ Zentrale Aufgabenliste zum Projekt (Grundlage: [Konzept.md](Konzept.md)).
 - [x] 2.9 Kontrollgröße: eigene Stellplatzsumme (505) stimmt mit der Gesamtsumme der Quelle (505) überein, keine ungeparsten Zeilen
 - [ ] 2.10 Nacharbeit aus dem Report abarbeiten: Parkplätze ohne Koordinate und unsichere Treffer in `frankfurt.overrides.json` korrigieren
 - [ ] 2.11 Drei Örtlichkeiten ohne Stadtteil in der Quelle nachtragen (im Report gelistet)
+
+## 2a. Quellenstrategie
+
+- [x] 2a.1 Rangfolge festgelegt: amtlicher Geodienst → amtliche Datei → OpenStreetMap
+- [x] 2a.2 `npm run sources -- <Stadt>` durchsucht **GovData**, das Metaportal von Bund, Ländern und Kommunen, nach amtlichen Datensätzen inklusive Lizenz und Downloadformaten
+- [x] 2a.3 Wheelmap geprüft und verworfen: die Parkplatzdaten dort stammen von Parkopedia und sind nicht frei weiterverwendbar; die übrigen Daten sind ohnehin OpenStreetMap
+- [x] 2a.4 Mapy.cz geprüft und verworfen: die Nutzungsbedingungen untersagen die Kombination mit anderen Kartendaten
+- [x] 2a.5 **Frankfurt auf den amtlichen WFS umgestellt** – 458 statt 359 Standorte, 615 statt 505 Stellplätze, alle mit amtlicher Koordinate statt 166 hausgenauen
+- [ ] 2a.6 Weitere Städte mit amtlichem Datensatz anbinden – GovData listet u. a. Berlin, Köln, Düsseldorf, Bochum, Neuss, Bottrop, Gelsenkirchen, Heidelberg, Freiburg, Ulm und gebündelte Daten für NRW und Baden-Württemberg
+- [ ] 2a.7 Lizenzangabe je Stadt im Datenmodell führen und in der Oberfläche anzeigen (bisher nur als Freitext in `source`)
+
+## 2b. Weitere Städte: Idstein und Weißenhorn
+
+- [x] 2b.1 Quellenrecherche: **keine** offene Liste der Stadtverwaltung für Idstein oder Weißenhorn – bestätigt über GovData (0 von 122 bundesweiten Datensätzen passen) und über die Websites beider Städte; OpenStreetMap ist die einzige frei nutzbare Quelle
+- [x] 2b.2 OSM-Importer `scripts/import/osm-import.mts` (`npm run import:osm`), konfigurierbar über `scripts/import/cities.mts`
+- [x] 2b.3 Abgrenzung über die Gemeindegrenze (`map_to_area`) statt Bounding-Box – sonst landen Nachbargemeinden mit in den Daten
+- [x] 2b.4 Schutz gegen falsch leere Importe: Overpass meldet Überlast teils mit HTTP 200 und leerem Ergebnis; ein leeres Ergebnis gilt erst nach Bestätigung durch einen zweiten Spiegel
+- [x] 2b.5 Adressen über Nominatim-Rückwärtssuche ergänzt, Ergebnis in `data/osm-address-cache.json`
+- [x] 2b.6 Ergebnis: Idstein 6 Standorte / 9 Stellplätze, Weißenhorn 4 Standorte / 7 Stellplätze
+- [x] 2b.7 Unvollständigkeit in der Oberfläche benannt (Quellenabschnitt in der Listenansicht)
+- [ ] 2b.8 Bei beiden Stadtverwaltungen nach einer amtlichen Liste fragen – das wäre die deutlich bessere Quelle
+- [ ] 2b.9 Fehlende Parkplätze in OpenStreetMap nachtragen; davon profitiert die App und alle anderen Nutzungen
 
 ## 3. Datenmodell & Backend
 

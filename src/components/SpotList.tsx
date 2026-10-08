@@ -2,6 +2,7 @@
 
 import type { ParkingSpot, ParkingSpotWithDistance } from "@/lib/types";
 import { formatDistance } from "@/lib/geo";
+import type { CityInfo } from "@/lib/parking/spots";
 
 /**
  * Listenansicht der Parkplätze.
@@ -18,6 +19,8 @@ interface SpotListProps {
   unlocated: readonly ParkingSpot[];
   /** Liegt ein echter Nutzerstandort vor, oder wird ab Stadtmitte gerechnet? */
   hasUserPosition: boolean;
+  /** Für den Hinweis, wie vollständig die Daten je Stadt sind. */
+  cities: readonly CityInfo[];
   onSelect: (spot: ParkingSpot) => void;
 }
 
@@ -26,7 +29,9 @@ function spotLine(spot: ParkingSpot): string {
   return street.length > 0 ? street : spot.label;
 }
 
-export function SpotList({ nearby, unlocated, hasUserPosition, onSelect }: SpotListProps) {
+export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect }: SpotListProps) {
+  const crowdsourced = cities.filter((city) => city.coverage === "crowdsourced");
+
   return (
     <div className="space-y-6">
       <section aria-labelledby="nearby-heading">
@@ -86,6 +91,29 @@ export function SpotList({ nearby, unlocated, hasUserPosition, onSelect }: SpotL
           </ul>
         </section>
       )}
+
+      <section aria-labelledby="sources-heading" className="text-sm text-neutral-500">
+        <h2 id="sources-heading" className="font-semibold text-neutral-700 dark:text-neutral-300">
+          Woher die Daten kommen
+        </h2>
+        <ul className="mt-1 space-y-1">
+          {cities.map((city) => (
+            <li key={city.slug}>
+              <span className="font-medium">{city.name}</span>: {city.spotCount} Standorte mit{" "}
+              {city.spaceCount} Stellplätzen · {city.source}
+            </li>
+          ))}
+        </ul>
+        {crowdsourced.length > 0 && (
+          <p className="mt-2">
+            Für {crowdsourced.map((city) => city.name).join(" und ")} gibt es keine Liste der
+            Stadtverwaltung. Die Daten stammen aus OpenStreetMap, zeigen überwiegend Parkplätze mit
+            ausgewiesenen Behindertenstellplätzen statt einzelner Stellplätze am Straßenrand und
+            sind unvollständig – ein fehlender Eintrag heißt nicht, dass es dort keinen
+            Behindertenparkplatz gibt.
+          </p>
+        )}
+      </section>
     </div>
   );
 }

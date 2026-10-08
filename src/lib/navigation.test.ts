@@ -5,7 +5,9 @@ const spot = { lat: 50.1138, lng: 8.6794, label: "Zeil 15 / Nähe Zentralbibliot
 
 describe("detectMapsTarget", () => {
   it("erkennt Apple-Geräte", () => {
-    expect(detectMapsTarget("Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X)")).toBe("apple");
+    expect(detectMapsTarget("Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X)")).toBe(
+      "apple",
+    );
     expect(detectMapsTarget("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)")).toBe("apple");
   });
 
