@@ -31,11 +31,18 @@ Weitere Skripte:
 
 ```bash
 npm run build        # Produktionsbuild
+npm run start        # Produktionsbuild ausliefern
 npm run lint         # ESLint
 npm run typecheck    # TypeScript ohne Emit
 npm run test         # Vitest einmalig
 npm run format       # Prettier schreibend
+npm run clean        # Build-Zwischenstand löschen
 ```
+
+> **`npm run build` nicht starten, während `npm run dev` läuft.** Beide
+> schreiben nach `.next`, und der Entwicklungsserver stolpert danach über die
+> Dateien des Produktionsbuilds – sichtbar als `Cannot find module './897.js'`
+> oder ähnlich. Passiert es doch: Server beenden, `npm run clean`, neu starten.
 
 ## Projektstruktur
 

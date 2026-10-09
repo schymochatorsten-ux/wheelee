@@ -180,7 +180,16 @@ ob sich an der Quelle etwas getan hat.
 - [x] 6.9 Knopf „zurück zu meinem Standort" (◎ in der Leiste über der Karte)
 - [x] 6.10 **Navigationsleiste über der Karte:** nächster Parkplatz mit Entfernung und ein Knopf, der direkt die Navigation startet – ohne erst den richtigen Marker suchen zu müssen
 - [x] 6.11 **Legende für die Markerfarben** (Fragezeichen unten rechts). Grün ist der nächstgelegene, Blau eine genaue Position, Grau eine nur ungefähre. Ohne Erklärung war besonders Grau irreführend, obwohl es die wichtigste Information trägt.
-- [ ] 6.12 Stadtwechsel ohne Standortfreigabe – eine Suche nach Ort oder Adresse fehlt
+- [ ] 6.12 **Zieladresse eingeben und am Ziel parken.** Bisher beantwortet die App nur „wo parke ich _hier_". Die häufigere Frage ist aber „wo parke ich _dort_, wo ich hinwill" – zum Arzttermin, zum Amt, zum Besuch. Man will das vor der Abfahrt wissen, nicht nach der Ankunft.
+  - Eingabefeld für Ziel (Adresse oder Ortsname), Suche über Nominatim
+  - Danach zwei Wege, beide sinnvoll:
+    - **direkt navigieren** zum nächstgelegenen Behindertenparkplatz am Ziel statt zum Ziel selbst
+    - **Liste der Parkplätze im Umkreis** des Ziels (Vorschlag: 300 m, 500 m und 1 km zur Auswahl), mit Entfernung zum Ziel statt zum eigenen Standort
+  - Die Liste ist die bessere Voreinstellung: Der nächstgelegene Platz kann belegt sein, und wer die Alternativen kennt, fährt nicht zweimal.
+  - Karte auf das Ziel zentrieren und den Zielpunkt eigens markieren, damit Ziel und Parkplatz unterscheidbar bleiben
+  - Zuletzt gesuchte Ziele merken – wiederkehrende Fahrten sind der Normalfall
+  - Technisch vorhanden ist alles: `sortByDistance` rechnet gegen jeden beliebigen Punkt, nicht nur gegen den eigenen Standort
+- [ ] 6.14 Stadtwechsel ohne Standortfreigabe – eine Suche nach Ort oder Adresse fehlt (wird durch 6.12 weitgehend miterledigt)
 - [ ] 6.13 Die Navigationsleiste verdeckt auf kleinen Displays rund ein Fünftel der Karte. Prüfen, ob sie sich beim Scrollen einklappen sollte.
 
 ---

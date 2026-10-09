@@ -37,8 +37,13 @@ export const spotIcon = pin("#1d4ed8", 28);
 /** Der nächstgelegene Parkplatz – deutlich größer und in Signalfarbe. */
 export const nearestIcon = pin("#047857", 38, "wheelee-pin--nearest");
 
-/** Parkplatz, dessen Koordinate nur auf Straßenebene bekannt ist. */
-export const approximateIcon = pin("#6b7280", 28, "wheelee-pin--approximate");
+/**
+ * Parkplatz, dessen Koordinate nur auf Straßenebene bekannt ist.
+ *
+ * Rot statt des früheren Grau: Die ungenaue Position ist die wichtigste
+ * Warnung der Karte und ging in Grau unter.
+ */
+export const approximateIcon = pin("#dc2626", 28, "wheelee-pin--approximate");
 
 /** Der eigene Standort. */
 export const userIcon = L.divIcon({

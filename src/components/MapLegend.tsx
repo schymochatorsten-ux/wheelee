@@ -22,7 +22,7 @@ const ENTRIES = [
     note: "Koordinate aus der Quelle",
   },
   {
-    color: "#6b7280",
+    color: "#dc2626",
     label: "Parkplatz, Position ungefähr",
     note: "liegt in dieser Straße, die genaue Stelle kann abweichen",
   },
