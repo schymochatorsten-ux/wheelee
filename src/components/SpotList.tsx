@@ -4,6 +4,7 @@ import type { ParkingSpot, ParkingSpotWithDistance } from "@/lib/types";
 import { formatDistance } from "@/lib/geo";
 import type { CityInfo } from "@/lib/parking/spots";
 import { normalizeTimeRestriction, restrictionState } from "@/lib/opening-hours";
+import { FeedbackButton } from "./FeedbackButton";
 import { ThemeToggle } from "./ThemeToggle";
 
 /**
@@ -112,6 +113,14 @@ export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect 
         <div className="mt-2 flex flex-wrap items-center gap-3">
           <span className="text-sm text-neutral-600 dark:text-neutral-400">Darstellung</span>
           <ThemeToggle />
+        </div>
+
+        <div className="mt-4">
+          <p className="mb-2 text-sm text-neutral-600 dark:text-neutral-400">
+            Stimmt etwas nicht? Fehlt ein Parkplatz oder gibt es einen nicht mehr? Rückmeldungen
+            sind die einzige Quelle, die solche Änderungen bemerkt.
+          </p>
+          <FeedbackButton />
         </div>
       </section>
 

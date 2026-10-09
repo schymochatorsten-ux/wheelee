@@ -20,25 +20,30 @@ Hier steht, woran zuletzt gearbeitet wurde und was als Nächstes dran ist.
 **Nach jeder abgeschlossenen Aufgabe aktualisieren**, damit nach einer
 Unterbrechung nahtlos weitergearbeitet werden kann.
 
-**Zuletzt abgeschlossen:** 3.0d und 3.0f – Adressen vollständig, Platzhalter-Datenfehler behoben (2026-10-09)
+**Zuletzt abgeschlossen:** 7.8 Feedback-Knopf (2026-10-09)
 **Gerade in Arbeit:** –
+
+**Wartet auf dich:**
+
+- **D-06 E-Mail-Adresse für Fehlermeldungen** – **erst ab 13.10.2026 ansprechen**, du legst die Adresse bis dahin an. Der Knopf ist fertig und sagt solange offen, dass die Adresse fehlt. Danach genügt eine Zeile in `src/lib/feedback.ts`.
+- **D-02 Datenbank** (Supabase oder Neon) – blockiert Abschnitt 5 und damit die Bewertungen
+- **D-03** Missbrauchsschutz · **D-05** Umgang mit ungenauen Positionen
+- **10.2** Impressum und Datenschutzerklärung brauchen deine Angaben
+- **Abschnitt 13 (Finanzierung)** ist gesperrt, bis du ihn freigibst
+
 **Als Nächstes geplant**, in dieser Reihenfolge:
 
-1. ~~9.1 Dark Mode~~ · ~~13.11 Stadtteil-Beschriftung~~ · ~~13.12 Lizenz-Platzhalter~~
-2. ~~12.2 Tests für die Importkette~~ · ~~3.0e Straßennummern als Namen~~
-3. ~~7.5 Zeitbeschränkungen deuten~~ – 801 Falschangaben entfernt
-4. ~~7.4 Teilen-Funktion~~ · ~~9.2 dunkle Kartenkacheln~~
-5. ~~2d.8 Ungenutzte amtliche Quellen~~ – Ergebnis: tote Links bei GovData, kein Importerfehler
-6. ~~7.7 Zeithinweis in der Liste~~ · ~~12.7 PWA-Grundlagen~~
-7. ~~3.0d Letzte Standorte ohne Straßennamen~~ · ~~3.0f Platzhalter im Straßenfeld~~
-8. 3.5 Dubletten zusammenführen – die Validierung meldet sie, behoben sind sie nicht
-9. 6.13 Navigationsleiste verdeckt ein Fünftel der Karte
-10. 10.5 Haftungshinweis sichtbar formulieren
+1. 6.15 Navigationsleiste mit × schließbar machen
+2. 6.16 Kurze Auswahl naher Parkplätze statt nur des nächsten
+3. 3.5 Dubletten zusammenführen – die Validierung meldet sie, behoben sind sie nicht
+4. 10.5 Haftungshinweis sichtbar formulieren
+5. 2d.9 Regensburg hat weder amtliche Daten noch OSM-Treffer
+6. 3.9a Rostock: amtliche Quelle nennt 5 Standorte, OSM kennt 99
+7. 9.7 Kontraste nach WCAG AA prüfen
+8. 12.3 E2E-Smoke-Test
 
-**Tests:** 100 (zu Beginn dieser Arbeitsreihe: 46)
-
-**Nicht ohne Entscheidung machbar:** alles in Abschnitt 5 und 8 (Datenbank, D-02),
-Abschnitt 11 (Benutzerkonten), 10.2 Impressum und Datenschutz (braucht deine Angaben).
+**Stand:** 145 Punkte – 57 erledigt, 86 offen, 5 brauchen deine Entscheidung,
+3 gesperrt. **Tests: 107** (zu Beginn dieser Arbeitsreihe: 46).
 
 ---
 
@@ -49,6 +54,10 @@ Abschnitt 11 (Benutzerkonten), 10.2 Impressum und Datenschutz (braucht deine Ang
 - [!] **D-02 Datenbank konkret wählen** – Supabase oder Neon. Blockiert Abschnitt 3 und damit die Bewertungen; die Seed-Dateien sind von der Wahl unabhängig.
 - [!] **D-03 Missbrauchsschutz für Bewertungen ohne Accounts** – Empfehlung: eine Bewertung pro Parkplatz pro Gerät (LocalStorage) plus IP-Rate-Limit serverseitig.
 - [!] **D-05 Umgang mit Parkplätzen ohne Koordinaten** – Empfehlung: nicht auf den Stadtteil-Mittelpunkt setzen, sondern als „Position ungenau" kennzeichnen und nur in der Liste führen. Derzeit faktisch gelöst, weil alle importierten Standorte Koordinaten haben.
+- [!] **D-06 E-Mail-Adresse für Fehlermeldungen festlegen** – **ab 13.10.2026 nachfragen.** Du legst die Adresse bis dahin selbst an; vorher nicht erinnern. Der Feedback-Knopf ist gebaut, verschickt aber an eine Platzhalteradresse. Zu klären:
+  - Welche Adresse soll es sein? Eine eigene wie `feedback@…` oder eine bestehende?
+  - Sie wird im Quelltext stehen und ist damit öffentlich – auf Spam gefasst sein. Eine eigene Adresse mit Filter ist einer privaten vorzuziehen.
+  - Bis zur Entscheidung steht `FEEDBACK_EMAIL` in `src/lib/feedback.ts` auf einem Platzhalter, den der Knopf sichtbar meldet, statt stillschweigend ins Leere zu schicken.
 
 ---
 
@@ -99,7 +108,7 @@ Laufender Stand: **[data/\_import-status.md](data/_import-status.md)** – von d
 - [x] 2d.4 Fortschrittsverwaltung: Quelle, Abruf-URL, Anzahlen und Probleme werden nach jeder Stadt fortgeschrieben
 - [x] 2d.5 Schutz gegen falsch gedeutete Koordinatensysteme: UTM-Zone aus `srsName`, zusätzlich Abstandsprüfung zum Stadtmittelpunkt
 - [x] 2d.6 Adress-Rückwärtssuche für Quellen ohne Straßennamen
-- [x] 2d.7 **Alle 83 Großstädte importiert** – 13.370 Standorte, 33.209 Stellplätze, davon 16 Städte amtlich
+- [x] 2d.7 **Alle 83 Großstädte importiert** – 13.463 Standorte, 33.209 Stellplätze, davon 16 Städte amtlich
 - [x] 2d.8 **Fünf Städte mit ungenutzter amtlicher Quelle untersucht** (2026-10-09). Ergebnis: bei keiner liegt es am Importer.
   - **Kiel und Krefeld haben überhaupt keine Behindertenparkplatz-Daten.** Ihre Treffer waren „Bewohnerparken Kiel" und „Bewohnerparken Krefeld" – Anwohnerparken, dieselbe Verwechslung wie bei Aachen. Dass der Importer sie ablehnt, ist richtig; OpenStreetMap ist dort die korrekte Quelle.
   - **Bochum, Bielefeld und Karlsruhe haben echte Datensätze, aber tote Links.** Bochums ArcGIS-Dienst existiert nicht mehr (der Server listet 58 Dienste, keiner davon passt), die Dateien auf `bochum.opendata.ruhr` antworten mit 403 auch mit Referer. Karlsruhes Dienstpfad liefert 404. Bielefelds Portal war nicht erreichbar.
@@ -194,7 +203,7 @@ ob sich an der Quelle etwas getan hat.
 - [ ] 5.1 Schema `parking_spot`: id, city, street, house_number, label, district, lat, lng, spot_count, time_restriction, geo_accuracy, source, license, verified, created_at
 - [ ] 5.2 Schema `rating`: id, spot_id, vote (`exists` / `gone`), created_at, device_hash
 - [ ] 5.3 Tabelle `city` mit Quelle, Lizenz, Importdatum und Abdeckungsgrad
-- [ ] 5.4 API: `GET /api/spots` mit Bounding-Box-Filter – 13.370 Standorte an den Browser zu schicken skaliert nicht ewig
+- [ ] 5.4 API: `GET /api/spots` mit Bounding-Box-Filter – 13.463 Standorte an den Browser zu schicken skaliert nicht ewig
 - [ ] 5.5 API: `GET /api/spots/:id` inklusive Bewertungs-Aggregat
 - [ ] 5.6 API: `POST /api/spots/:id/ratings` mit Validierung und Rate-Limit
 - [ ] 5.7 Migrationen und Seed-Lauf aus den Dateien in `data/`
@@ -210,11 +219,11 @@ ob sich an der Quelle etwas getan hat.
 - [x] 6.4 Zustände abgedeckt: verweigert, nicht verfügbar, Zeitüberschreitung – mit verständlichem Hinweis und Fallback auf die Stadtmitte
 - [x] 6.5 Nächstgelegener Parkplatz wird berechnet, hervorgehoben und benannt
 - [x] 6.6 Entfernungsformatierung in m und km, Aktualisierung bei Standortänderung
-- [~] 6.7 Mobile Leistung: Clustering und stückweises Laden sind drin, aber alle 13.370 Marker werden erzeugt. Besser: nur laden, was im Kartenausschnitt liegt (hängt mit 5.4 zusammen).
+- [~] 6.7 Mobile Leistung: Clustering und stückweises Laden sind drin, aber alle 13.463 Marker werden erzeugt. Besser: nur laden, was im Kartenausschnitt liegt (hängt mit 5.4 zusammen).
 - [x] 6.8 **Beim Start auf den eigenen Standort zentrieren** statt auf den nächstgelegenen Parkplatz – die erste Frage beim Öffnen ist „wo bin ich"
 - [x] 6.9 Knopf „zurück zu meinem Standort" (◎ in der Leiste über der Karte)
 - [x] 6.10 **Navigationsleiste über der Karte:** nächster Parkplatz mit Entfernung und ein Knopf, der direkt die Navigation startet – ohne erst den richtigen Marker suchen zu müssen
-- [x] 6.11 **Legende für die Markerfarben** (Fragezeichen unten rechts). Grün ist der nächstgelegene, Blau eine genaue Position, Grau eine nur ungefähre. Ohne Erklärung war besonders Grau irreführend, obwohl es die wichtigste Information trägt.
+- [x] 6.11 **Legende für die Markerfarben** (Fragezeichen unten rechts). Grün ist der nächstgelegene, Blau eine genaue Position, Rot eine nur ungefähre. Ohne Erklärung war besonders die dritte Farbe irreführend, obwohl es die wichtigste Information trägt.
 - [ ] 6.12 **Zieladresse eingeben und am Ziel parken.** Bisher beantwortet die App nur „wo parke ich _hier_". Die häufigere Frage ist aber „wo parke ich _dort_, wo ich hinwill" – zum Arzttermin, zum Amt, zum Besuch. Man will das vor der Abfahrt wissen, nicht nach der Ankunft.
   - Eingabefeld für Ziel (Adresse oder Ortsname), Suche über Nominatim
   - Danach zwei Wege, beide sinnvoll:
@@ -225,7 +234,19 @@ ob sich an der Quelle etwas getan hat.
   - Zuletzt gesuchte Ziele merken – wiederkehrende Fahrten sind der Normalfall
   - Technisch vorhanden ist alles: `sortByDistance` rechnet gegen jeden beliebigen Punkt, nicht nur gegen den eigenen Standort
 - [ ] 6.14 Stadtwechsel ohne Standortfreigabe – eine Suche nach Ort oder Adresse fehlt (wird durch 6.12 weitgehend miterledigt)
-- [ ] 6.13 Die Navigationsleiste verdeckt auf kleinen Displays rund ein Fünftel der Karte. Prüfen, ob sie sich beim Scrollen einklappen sollte.
+- [ ] 6.13 Die Navigationsleiste verdeckt auf kleinen Displays rund ein Fünftel der Karte. Prüfen, ob sie sich beim Scrollen einklappen sollte. (Hängt mit 6.15 zusammen – ein Schließen-Knopf löst dasselbe Problem auf andere Weise.)
+- [ ] 6.15 **Navigationsleiste schließbar machen.** Ein × rechts oben in der Leiste, das das Angebot „Nächster Behindertenparkplatz … navigieren" wegklappt und die Karte freigibt.
+  - Wer die Karte selbst durchsehen will, soll den Vorschlag loswerden können
+  - Nach dem Schließen ein kleiner Knopf am Rand, der sie zurückholt – nicht endgültig verschwinden lassen
+  - Entscheidung merken, aber nur für die Sitzung: Beim nächsten Öffnen ist der Vorschlag wieder die wahrscheinlich hilfreichste Anzeige
+  - Zusammen mit 6.9 (◎ zurück zum Standort) in einer Zeile unterbringen, damit nicht zwei Knopfreihen entstehen
+- [ ] 6.16 **Statt nur des nächsten Parkplatzes eine kurze Auswahl zeigen.** Ein Knopf in der Leiste schaltet von „der eine nächste" auf „die nächsten drei bis fünf", aus denen man wählt.
+  - Der Grund ist derselbe wie bei 6.12: Der nächstgelegene Platz kann belegt sein, und wer die Alternativen schon kennt, fährt nicht zweimal.
+  - Je Eintrag: Adresse, Entfernung, Anzahl Stellplätze und – falls bekannt – ob eine Zeitbeschränkung gerade gilt
+  - Auswahl setzt das Navigationsziel; der Knopf „Navigation starten" bleibt
+  - Auf der Karte die angebotenen Parkplätze gemeinsam hervorheben, damit die Lage zueinander erkennbar ist
+  - Als aufklappbare Liste in der Leiste, nicht als eigene Ansicht – sonst verliert man die Karte aus dem Blick
+  - Überschneidet sich mit der vorhandenen Listenansicht; sinnvoll wäre, beide auf dieselbe Komponente zu stützen statt sie zweimal zu bauen
 
 ---
 
@@ -240,8 +261,13 @@ ob sich an der Quelle etwas getan hat.
   - Davon versteht die App 83 % sicher und sagt in der Detailansicht, ob die Beschränkung **gerade gilt** oder **gerade nicht**
   - Wo die Angabe nicht zweifelsfrei deutbar ist, steht bewusst nichts. Eine falsch verstandene Zeitangabe ist schlimmer als keine: Wer glaubt, der Platz sei frei, und ein Knöllchen bekommt, ist schlechter dran als jemand, der selbst nachsieht.
   - `npm run report:times` zeigt, welche Formen noch fehlen und wie oft sie vorkommen
-- [ ] 7.6 Die restlichen 17 % der Zeitangaben deuten lernen – meist Sonderfälle wie „Mo-Th 06:00-24:00, Fr-Sa 06:00-02:00" (über Mitternacht) oder „nur an Veranstaltungen". Lohnt erst, wenn die häufigen Formen abgedeckt sind.
-- [ ] 7.7 Den Hinweis auch in der Liste zeigen, nicht nur in der Detailansicht
+- [x] 7.6 **Hinweis auch in der Liste** – „Beschränkung gilt jetzt" steht neben dem Eintrag, dafür muss man die Details nicht öffnen
+- [ ] 7.7 Die restlichen 17 % der Zeitangaben deuten lernen – meist Sonderfälle wie „Mo-Th 06:00-24:00, Fr-Sa 06:00-02:00" (über Mitternacht) oder „nur an Veranstaltungen". Lohnt erst, wenn die häufigen Formen abgedeckt sind.
+- [ ] 7.8 **Feedback- und Fehlermeldeknopf.** Gut sichtbar, nicht in einem Untermenü. Öffnet eine vorbereitete E-Mail mit dem Betreff **„Wheelee Fehlermeldung"**.
+  - Empfängeradresse ist **noch offen** – siehe D-06
+  - Die Adresse steht als einzelne Konstante in `src/lib/feedback.ts` und ist in einer Zeile austauschbar
+  - Vorausgefüllt werden Gerät, Browser und – falls die Detailansicht offen war – der betroffene Parkplatz samt ID. Das spart Rückfragen; ohne diese Angaben ist eine Fehlermeldung oft nicht nachvollziehbar.
+  - Keine personenbezogenen Daten ohne Zutun: Der Standort wird **nicht** mitgeschickt
 
 ---
 
@@ -324,16 +350,16 @@ sondern Voraussetzung für einen Teil der Kernfunktion.
   - Im Benutzerkonto speichern, damit die Einstellung auf allen Geräten gilt
   - Auch ohne Konto nutzbar machen (LocalStorage) – die Karten-App-Wahl ist nichts, wofür man sich anmelden sollte
   - Geräteerkennung bleibt die Voreinstellung, wenn nichts gewählt wurde
-- [ ] 11.3 Eigene Bewertungen einsehen und zurückziehen
-- [ ] 11.4 Gespeicherte Parkplätze (Favoriten) – häufig angefahrene Ziele
-- [ ] 11.5 Vertrauensstufen: Wer wiederholt zutreffend meldet, bekommt mehr Gewicht in der Validierung
-- [ ] 11.6 Datenschutz: Datensparsamkeit, Löschfunktion, Auskunft nach DSGVO
+- [ ] 11.4 Eigene Bewertungen einsehen und zurückziehen
+- [ ] 11.5 Gespeicherte Parkplätze (Favoriten) – häufig angefahrene Ziele
+- [ ] 11.6 Vertrauensstufen: Wer wiederholt zutreffend meldet, bekommt mehr Gewicht in der Validierung
+- [ ] 11.7 Datenschutz: Datensparsamkeit, Löschfunktion, Auskunft nach DSGVO
 
 ---
 
 ## 12. Qualität und Deployment
 
-- [x] 12.1 Unit-Tests: Parser, Adress-Aufspaltung, Distanzberechnung, Karten-App-Links (42 Tests)
+- [x] 12.1 Unit-Tests: Parser, Adress-Aufspaltung, Distanzberechnung, Karten-App-Links, Theme, Zeitangaben
 - [x] 12.2 **Tests für die Importkette** – 25 neue Tests zu UTM-Umrechnung, Zonenerkennung aus `srsName`, Koordinatenableitung, Feldzuordnung, GML-Parser und CSV-Leser. Alle geprüften Fälle stammen aus echten Quellen, nicht aus Erfundenem; darunter der Dresden-Fehler, der belegt, dass die falsche Zone ein plausibel aussehendes Ergebnis liefert.
 - [ ] 12.3 E2E-Smoke-Test: Karte lädt, Marker klickbar, Liste wechselt, Detailansicht öffnet
 - [ ] 12.4 Lighthouse-Prüfung auf Mobil (Leistung und Barrierefreiheit)
@@ -346,22 +372,38 @@ sondern Voraussetzung für einen Teil der Kernfunktion.
 
 ---
 
-## 13. Abschlusstest
+## 13. Finanzierung
+
+> **Nicht umsetzen, bevor du es ausdrücklich freigibst.** Dieser Abschnitt ist
+> nur Vormerkung. Nichts davon ist gebaut, und nichts davon wird gebaut, bis
+> du es Punkt für Punkt freigibst.
+
+- [-] 13.1 **Spenden-Knopf.** Zu klären wären: Anbieter (PayPal, Ko-fi, Stripe, Betterplace), Einmal- oder Dauerspende, und ob eine natürliche Person oder ein Verein empfängt – das hat steuerliche Folgen. Zurückhaltend platzieren: Wer auf einen Behindertenparkplatz angewiesen ist, soll nicht das Gefühl bekommen, für eine Selbstverständlichkeit zu zahlen.
+- [-] 13.2 **Werbebanner (Google AdSense oder vergleichbar).** Technisch einfach, bringt aber Folgen mit, die vor der Entscheidung auf dem Tisch liegen sollten:
+  - **Datenschutz:** AdSense setzt Tracking-Cookies. Das verlangt ein Einwilligungsbanner und widerspricht 10.4 („keine Tracker") sowie dem Grundsatz des Konzepts, mit Daten sparsam umzugehen.
+  - **Bedienbarkeit:** Werbung auf einer Karte, die man einhändig im Auto bedient, kostet Fläche und erzeugt Fehlklicks – genau bei der Zielgruppe, der die App helfen soll.
+  - **Ertrag:** Bei einer Nischen-App ohne Reichweite steht der Erlös kaum im Verhältnis zum Vertrauensverlust.
+  - **Alternativen, die weniger kosten:** Spenden allein, Förderung durch Kommunen oder Sozialverbände, oder eine datenschutzfreundliche Anzeigenform ohne Tracking (etwa EthicalAds).
+- [-] 13.3 Falls Werbung kommt: Einwilligungsbanner, Impressum und Datenschutzerklärung müssen vorher stehen (10.2, 10.4) – ohne sie wäre es rechtswidrig.
+
+---
+
+## 14. Abschlusstest
 
 **Erst ausführen, wenn alle übrigen Punkte erledigt sind.** Ein vollständiger
 Durchgang durch die fertige App, von Hand, auf echten Geräten – nicht als
 Ersatz für die automatischen Tests, sondern als letzter Blick darauf, ob das
 Ganze im Alltag funktioniert.
 
-- [ ] 13.1 Alle Funktionen durchspielen: Karte, Standort, nächster Parkplatz, Suche, Detailansicht, Navigation starten, Bewerten, Dark Mode umschalten
-- [ ] 13.2 Alle Zustände der Standortbestimmung: erlaubt, abgelehnt, später erlaubt, Zeitüberschreitung, ungenau, Standort wechselt während der Nutzung
-- [ ] 13.3 Echte Geräte: iPhone (Safari), Android (Chrome), Desktop; kleines Display, großes Display, Querformat
-- [ ] 13.4 Schlechte Bedingungen: langsames Netz, Funkloch mitten in der Nutzung, Akkusparmodus, Sonnenlicht auf dem Display
-- [ ] 13.5 Bedienung einhändig und im Sitzen, mit Handschuhen, bei Vergrößerung auf 200 %
-- [ ] 13.6 Mit Screenreader und nur mit Tastatur durch alle Abläufe
-- [ ] 13.7 Stichprobe in der Wirklichkeit: zehn Parkplätze aussuchen und vor Ort prüfen, ob sie existieren und die Angaben stimmen. Kein Test am Schreibtisch ersetzt das.
-- [ ] 13.8 Von jemandem testen lassen, der die App wirklich braucht – Rollstuhlfahrer:innen oder Inhaber:innen eines Parkausweises. Deren Urteil wiegt schwerer als jede Prüfliste hier.
-- [ ] 13.9 Gefundene Mängel sammeln, bewerten und vor der Veröffentlichung abarbeiten
+- [ ] 14.1 Alle Funktionen durchspielen: Karte, Standort, nächster Parkplatz, Suche, Detailansicht, Navigation starten, Bewerten, Dark Mode umschalten
+- [ ] 14.2 Alle Zustände der Standortbestimmung: erlaubt, abgelehnt, später erlaubt, Zeitüberschreitung, ungenau, Standort wechselt während der Nutzung
+- [ ] 14.3 Echte Geräte: iPhone (Safari), Android (Chrome), Desktop; kleines Display, großes Display, Querformat
+- [ ] 14.4 Schlechte Bedingungen: langsames Netz, Funkloch mitten in der Nutzung, Akkusparmodus, Sonnenlicht auf dem Display
+- [ ] 14.5 Bedienung einhändig und im Sitzen, mit Handschuhen, bei Vergrößerung auf 200 %
+- [ ] 14.6 Mit Screenreader und nur mit Tastatur durch alle Abläufe
+- [ ] 14.7 Stichprobe in der Wirklichkeit: zehn Parkplätze aussuchen und vor Ort prüfen, ob sie existieren und die Angaben stimmen. Kein Test am Schreibtisch ersetzt das.
+- [ ] 14.8 Von jemandem testen lassen, der die App wirklich braucht – Rollstuhlfahrer:innen oder Inhaber:innen eines Parkausweises. Deren Urteil wiegt schwerer als jede Prüfliste hier.
+- [ ] 14.9 Gefundene Mängel sammeln, bewerten und vor der Veröffentlichung abarbeiten
 
 ### Zwischentest am 2026-10-09 (Vorgriff, ersetzt 13.1–13.9 nicht)
 
@@ -379,9 +421,9 @@ dunklem Modus. **Was funktioniert:**
 
 **Was dabei auffiel und noch offen ist:**
 
-- [ ] 13.10 Kein Umschalter für den Dark Mode (siehe 9.1) – die App folgt nur der Systemeinstellung
-- [x] 13.11 „Stadtteil: Hamburg" behoben – das Feld heißt jetzt „Stadt", wenn die Quelle keinen Stadtteil nennt. Weglassen wäre falsch gewesen: Bei 84 Städten ist die Stadt eine nützliche Angabe, nur die Beschriftung war es nicht.
-- [x] 13.12 „(nicht angegeben)" wird in der Oberfläche nicht mehr angezeigt. Die fehlende Lizenz bleibt ein Problem der Daten (2a.5), ist aber eine Verwaltungsnotiz und gehört in den Importbericht, nicht vor die Nutzer:innen.
+- [x] 14.10 Dark-Mode-Umschalter ergänzt (siehe 9.1)
+- [x] 14.11 „Stadtteil: Hamburg" behoben – das Feld heißt jetzt „Stadt", wenn die Quelle keinen Stadtteil nennt. Weglassen wäre falsch gewesen: Bei 84 Städten ist die Stadt eine nützliche Angabe, nur die Beschriftung war es nicht.
+- [x] 14.12 „(nicht angegeben)" wird in der Oberfläche nicht mehr angezeigt. Die fehlende Lizenz bleibt ein Problem der Daten (2a.5), ist aber eine Verwaltungsnotiz und gehört in den Importbericht, nicht vor die Nutzer:innen.
 
 ---
 
@@ -401,7 +443,7 @@ dunklem Modus. **Was funktioniert:**
 
 ## Notizen zur Datenlage
 
-- **84 Städte, 13.370 Standorte, 33.209 Stellplätze.** 16 Städte aus amtlicher Quelle (17.966 Stellplätze), der Rest aus OpenStreetMap.
+- **84 Städte, 13.463 Standorte, 33.209 Stellplätze.** 16 Städte aus amtlicher Quelle (17.966 Stellplätze), der Rest aus OpenStreetMap.
 - Die beiden Quellenarten sind nicht vergleichbar: amtliche Listen führen einzelne Stellplätze am Straßenrand, OpenStreetMap überwiegend Parkplätze mit ausgewiesenen Behindertenstellplätzen. Die Oberfläche sagt das, und so muss es bleiben.
 - Vier Fehlerklassen sind beim Import aufgetreten und werden jetzt abgefangen; alle vier hätten Daten erzeugt, die beim Draufschauen richtig aussehen:
   - **Falsche UTM-Zone.** Dresdens Dienst liefert Zone 33. Als Zone 32 gedeutet ergaben sich Koordinaten bei 7,7° Ost – mitten in Deutschland, aber 450 km daneben.

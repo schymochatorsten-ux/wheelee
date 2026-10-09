@@ -5,6 +5,7 @@ import type { ParkingSpot } from "@/lib/types";
 import { formatDistance } from "@/lib/geo";
 import { mapsLabel, mapsUrl, type MapsTarget } from "@/lib/navigation";
 import { normalizeTimeRestriction, restrictionState } from "@/lib/opening-hours";
+import { FeedbackButton } from "./FeedbackButton";
 import { ShareButton } from "./ShareButton";
 
 /**
@@ -173,8 +174,11 @@ export function SpotDetails({
         </a>
       )}
 
-      <div className="mt-2">
+      <div className="mt-2 space-y-2">
         <ShareButton spot={spot} />
+        {/* Direkt am Parkplatz melden: Nur hier weiß die Meldung, worum es
+            geht – die ID wandert in die Mail und spart jede Rückfrage. */}
+        <FeedbackButton spot={spot} variant="subtle" />
       </div>
 
       {/* Die Bewertungen (Abschnitt 8 der ToDos) brauchen die Datenbank-
