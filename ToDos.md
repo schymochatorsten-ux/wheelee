@@ -176,8 +176,12 @@ ob sich an der Quelle etwas getan hat.
 - [x] 6.5 Nächstgelegener Parkplatz wird berechnet, hervorgehoben und benannt
 - [x] 6.6 Entfernungsformatierung in m und km, Aktualisierung bei Standortänderung
 - [~] 6.7 Mobile Leistung: Clustering und stückweises Laden sind drin, aber alle 13.370 Marker werden erzeugt. Besser: nur laden, was im Kartenausschnitt liegt (hängt mit 5.4 zusammen).
-- [ ] 6.8 Stadtwechsel ohne Standortfreigabe – derzeit zentriert die Karte fest auf eine Stadt, eine Suche nach Ort oder Adresse fehlt
-- [ ] 6.9 Knopf „zurück zu meinem Standort", wenn man weggescrollt hat
+- [x] 6.8 **Beim Start auf den eigenen Standort zentrieren** statt auf den nächstgelegenen Parkplatz – die erste Frage beim Öffnen ist „wo bin ich"
+- [x] 6.9 Knopf „zurück zu meinem Standort" (◎ in der Leiste über der Karte)
+- [x] 6.10 **Navigationsleiste über der Karte:** nächster Parkplatz mit Entfernung und ein Knopf, der direkt die Navigation startet – ohne erst den richtigen Marker suchen zu müssen
+- [x] 6.11 **Legende für die Markerfarben** (Fragezeichen unten rechts). Grün ist der nächstgelegene, Blau eine genaue Position, Grau eine nur ungefähre. Ohne Erklärung war besonders Grau irreführend, obwohl es die wichtigste Information trägt.
+- [ ] 6.12 Stadtwechsel ohne Standortfreigabe – eine Suche nach Ort oder Adresse fehlt
+- [ ] 6.13 Die Navigationsleiste verdeckt auf kleinen Displays rund ein Fünftel der Karte. Prüfen, ob sie sich beim Scrollen einklappen sollte.
 
 ---
 
@@ -262,6 +266,12 @@ sondern Voraussetzung für einen Teil der Kernfunktion.
 
 - [ ] 11.1 Registrierung und Anmeldung, möglichst ohne Passwort (Magic Link oder Passkey) – jede zusätzliche Hürde trifft genau die Zielgruppe
 - [ ] 11.2 Anmeldung so spät wie möglich verlangen: erst beim Downvote, nicht beim Öffnen der App
+- [ ] 11.3 **Einstellung: bevorzugte Karten-App.** Derzeit rät die App anhand des Geräts – Apple Karten auf iPhone und Mac, sonst Google Maps. Wer etwas anderes nutzt, soll das einmal festlegen können statt es bei jeder Navigation hinzunehmen.
+  - Auswahl aus den unterstützten Apps: Google Maps, Apple Karten, OpenStreetMap, HERE WeGo, Waze und „Standard-App des Geräts" (`geo:`-Link, den das Betriebssystem selbst zuordnet)
+  - Die Liste steht bereits in `src/lib/navigation.ts` (`MAPS_APPS`) und ist um weitere Apps erweiterbar; es fehlt nur der Ort, an dem die Wahl gespeichert wird
+  - Im Benutzerkonto speichern, damit die Einstellung auf allen Geräten gilt
+  - Auch ohne Konto nutzbar machen (LocalStorage) – die Karten-App-Wahl ist nichts, wofür man sich anmelden sollte
+  - Geräteerkennung bleibt die Voreinstellung, wenn nichts gewählt wurde
 - [ ] 11.3 Eigene Bewertungen einsehen und zurückziehen
 - [ ] 11.4 Gespeicherte Parkplätze (Favoriten) – häufig angefahrene Ziele
 - [ ] 11.5 Vertrauensstufen: Wer wiederholt zutreffend meldet, bekommt mehr Gewicht in der Validierung

@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import type { ParkingSpot } from "@/lib/types";
 import {
@@ -13,6 +13,8 @@ import {
 import { detectMapsTarget, type MapsTarget } from "@/lib/navigation";
 import type { CityInfo } from "@/lib/parking/spots";
 import { useGeolocation } from "@/hooks/useGeolocation";
+import { MapLegend } from "./MapLegend";
+import { NearestBar } from "./NearestBar";
 import { SpotDetails } from "./SpotDetails";
 import { SpotList } from "./SpotList";
 
@@ -89,12 +91,29 @@ export function MapSection({ spots, cities, defaultCity }: MapSectionProps) {
     [spots],
   );
 
-  // Beim ersten Standort auf den nächstgelegenen Parkplatz zoomen.
+  /**
+   * Beim ersten Standort auf **den Nutzer** zentrieren, nicht auf den
+   * nächstgelegenen Parkplatz.
+   *
+   * Vorher sprang die Karte zum Parkplatz, und man sah sich selbst nicht mehr.
+   * Die erste Frage beim Öffnen ist aber „wo bin ich", nicht „wo ist das Ziel" –
+   * zumal der Parkplatz in Sichtweite liegen kann und beides dann ohnehin im
+   * Bild ist.
+   */
+  const centeredOnUser = useRef(false);
+
   useEffect(() => {
-    if (geo.status === "ready" && nearest) {
-      setFocus({ lat: nearest.lat, lng: nearest.lng, key: `nearest-${nearest.id}` });
-    }
-  }, [geo.status, nearest]);
+    if (geo.status !== "ready" || !geo.position || centeredOnUser.current) return;
+    centeredOnUser.current = true;
+    setFocus({ lat: geo.position.lat, lng: geo.position.lng, key: "eigener-standort" });
+  }, [geo.status, geo.position]);
+
+  /** Karte zurück auf den eigenen Standort holen. */
+  const backToMe = useCallback(() => {
+    if (!geo.position) return;
+    setView("map");
+    setFocus({ lat: geo.position.lat, lng: geo.position.lng, key: `standort-${Date.now()}` });
+  }, [geo.position]);
 
   const select = useCallback((spot: ParkingSpot) => {
     setSelected(spot);
@@ -176,6 +195,18 @@ export function MapSection({ spots, cities, defaultCity }: MapSectionProps) {
               focus={focus}
               onSelect={select}
             />
+            {/* Nur zeigen, solange keine Detailansicht offen ist – sonst
+                stünden zwei Navigationsknöpfe übereinander. */}
+            {!selected && (
+              <NearestBar
+                nearest={nearest}
+                mapsTarget={mapsTarget}
+                hasPosition={geo.position !== null}
+                onBackToMe={backToMe}
+                onShowDetails={select}
+              />
+            )}
+            <MapLegend />
             {selected && (
               <SpotDetails
                 spot={selected}

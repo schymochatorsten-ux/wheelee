@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { detectMapsTarget, mapsLabel, mapsUrl } from "./navigation";
+import { detectMapsTarget, MAPS_APPS, mapsLabel, mapsShortLabel, mapsUrl } from "./navigation";
 
 const spot = { lat: 50.1138, lng: 8.6794, label: "Zeil 15 / Nähe Zentralbibliothek" };
 
@@ -39,5 +39,39 @@ describe("mapsUrl", () => {
 
   it("gibt ohne Koordinate null zurück", () => {
     expect(mapsUrl({ lat: null, lng: null, label: "irgendwo" }, "google")).toBeNull();
+  });
+
+  it("unterstützt die weiteren Karten-Apps", () => {
+    expect(mapsUrl(spot, "osm")).toContain("openstreetmap.org/directions");
+    expect(mapsUrl(spot, "waze")).toContain("waze.com/ul?ll=50.1138,8.6794");
+    expect(mapsUrl(spot, "here")).toContain("share.here.com");
+    // Der geo:-Link überlässt dem Betriebssystem die Wahl der App.
+    expect(mapsUrl(spot, "geo")).toBe("geo:50.1138,8.6794?q=50.1138,8.6794");
+  });
+
+  it("führt immer über die Koordinate, nie über die Adresse", () => {
+    // Bei vielen Parkplätzen ist der Straßenname nur die nächstgelegene
+    // Straße – die Koordinate stimmt dagegen.
+    for (const app of MAPS_APPS) {
+      const url = mapsUrl(spot, app.id);
+      expect(url, app.id).toContain("50.1138");
+      expect(url, app.id).toContain("8.6794");
+    }
+  });
+});
+
+describe("MAPS_APPS", () => {
+  it("hat eindeutige Kennungen und Beschriftungen", () => {
+    const ids = MAPS_APPS.map((app) => app.id);
+    expect(new Set(ids).size).toBe(ids.length);
+    for (const app of MAPS_APPS) {
+      expect(app.label.length).toBeGreaterThan(0);
+      expect(app.shortLabel.length).toBeGreaterThan(0);
+    }
+  });
+
+  it("liefert für jede App einen Kurznamen", () => {
+    expect(mapsShortLabel("waze")).toBe("Waze");
+    expect(mapsShortLabel("apple")).toBe("Apple Karten");
   });
 });
