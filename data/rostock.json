@@ -1,0 +1,89 @@
+{
+  "city": {
+    "slug": "rostock",
+    "name": "Rostock",
+    "center": {
+      "lat": 54.2067306,
+      "lng": 12.170033
+    }
+  },
+  "source": "Rostocker Heide – Rostock (nicht angegeben)",
+  "generatedAt": "2026-10-08",
+  "spots": [
+    {
+      "id": "rostock-8ae6f698ed",
+      "city": "rostock",
+      "label": "Blocksbrückenweg",
+      "street": "Blocksbrückenweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rostock",
+      "spotCount": 1,
+      "lat": 54.2165469,
+      "lng": 12.187421,
+      "geoAccuracy": "house",
+      "source": "Rostocker Heide – Rostock (nicht angegeben)"
+    },
+    {
+      "id": "rostock-c6b265797d",
+      "city": "rostock",
+      "label": "Stellstellenweg",
+      "street": "Stellstellenweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rostock",
+      "spotCount": 1,
+      "lat": 54.2074494,
+      "lng": 12.1850883,
+      "geoAccuracy": "house",
+      "source": "Rostocker Heide – Rostock (nicht angegeben)"
+    },
+    {
+      "id": "rostock-22f0383d35",
+      "city": "rostock",
+      "label": "Strandaufgang 33",
+      "street": "Strandaufgang 33",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rostock",
+      "spotCount": 1,
+      "lat": 54.2067306,
+      "lng": 12.1566806,
+      "geoAccuracy": "house",
+      "source": "Rostocker Heide – Rostock (nicht angegeben)"
+    },
+    {
+      "id": "rostock-32259158e1",
+      "city": "rostock",
+      "label": "Warnemünder Straße",
+      "street": "Warnemünder Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rostock",
+      "spotCount": 1,
+      "lat": 54.1906763,
+      "lng": 12.1583986,
+      "geoAccuracy": "house",
+      "source": "Rostocker Heide – Rostock (nicht angegeben)"
+    },
+    {
+      "id": "rostock-0a72b6db9f",
+      "city": "rostock",
+      "label": "Wiesenweg",
+      "street": "Wiesenweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rostock",
+      "spotCount": 1,
+      "lat": 54.2059158,
+      "lng": 12.170033,
+      "geoAccuracy": "house",
+      "source": "Rostocker Heide – Rostock (nicht angegeben)"
+    }
+  ]
+}

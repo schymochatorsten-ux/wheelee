@@ -54,6 +54,47 @@ Bewertungen bleiben voneinander unabhängig.
 
 ## Datenimport
 
+### Die deutschen Großstädte importieren
+
+Der Import läuft Stadt für Stadt, größte zuerst, und schreibt den Stand nach
+**jeder einzelnen Stadt** fort. Ein Abbruch ist dadurch unkritisch.
+
+```bash
+npm run sources:scan            # einmalig: welche Stadt hat amtliche Daten?
+npm run import:city -- --next   # nächste offene Stadt
+npm run import:city -- --rest   # alle verbleibenden, größte zuerst
+npm run import:city -- --rest --max 10
+npm run import:city -- berlin   # gezielt eine Stadt (auch erneut)
+```
+
+**Wo der Stand steht:** [data/\_import-status.md](data/_import-status.md). Die
+Datei nennt oben die nächste offene Stadt samt fertigem Befehl, darunter für
+jede Stadt die verwendete Quelle, die genaue Abruf-URL, die Anzahl der
+Standorte und etwaige Probleme. Sie wird von den Skripten selbst geschrieben –
+nicht von Hand bearbeiten.
+
+[data/\_quellen-status.md](data/_quellen-status.md) hält fest, welche Stadt
+überhaupt eine amtliche Quelle hat und in welchen Formaten.
+
+#### Fallstricke, die der Import abfängt
+
+Jeder dieser Punkte ist einmal wirklich passiert und hätte falsche Daten
+erzeugt, die beim Draufschauen richtig aussehen:
+
+- **Falsche UTM-Zone.** Dresdens Dienst liefert Zone 33. Als Zone 32 gedeutet
+  ergaben sich Koordinaten bei 7,7° Ost – mitten in Deutschland, aber 450 km
+  daneben. Die Zone wird jetzt aus der `srsName`-Angabe gelesen, und zusätzlich
+  prüft der Import, ob die Punkte überhaupt in der Nähe der Stadt liegen.
+- **Stadtname als Teilstring.** „Essen" steckt in „Hessen", und Essen bekam
+  dadurch den Frankfurter Datensatz. Verglichen wird jetzt auf Wortgrenzen.
+- **Leere Antwort als Ergebnis.** Overpass meldet Überlast teils mit HTTP 200
+  und leerer Liste. Ein leeres Ergebnis gilt erst nach Bestätigung durch einen
+  zweiten Spiegel.
+- **Themenfremde Treffer.** Die Suche nach „Parken Menschen mit Behinderung"
+  lieferte für Hamburg Werkstätten und Tagesförderstätten; der richtige
+  Datensatz heißt „Behindertenstellplätze". Datensätze müssen jetzt sowohl von
+  Parken als auch von Behinderung handeln.
+
 ### Welche Quelle für eine neue Stadt?
 
 In dieser Reihenfolge, von der besten zur schlechtesten:

@@ -41,11 +41,18 @@ interface MapSectionProps {
 
 type View = "map" | "list";
 
-/** „Frankfurt am Main, Idstein und Weißenhorn" */
-function cityNames(cities: readonly CityInfo[]): string {
+/** So viele Parkplätze zeigt die Liste höchstens. */
+const LIST_LIMIT = 100;
+
+/**
+ * Untertitel im Kopf. Bei wenigen Städten ihre Namen, sonst die Anzahl –
+ * 84 Namen nebeneinander wären unlesbar.
+ */
+function citySubtitle(cities: readonly CityInfo[]): string {
   const names = cities.map((city) => city.name);
-  if (names.length <= 1) return names.join("");
-  return `${names.slice(0, -1).join(", ")} und ${names[names.length - 1]}`;
+  if (names.length === 1) return names[0];
+  if (names.length <= 3) return `${names.slice(0, -1).join(", ")} und ${names[names.length - 1]}`;
+  return `${names.length} Städte`;
 }
 
 export function MapSection({ spots, cities, defaultCity }: MapSectionProps) {
@@ -73,9 +80,14 @@ export function MapSection({ spots, cities, defaultCity }: MapSectionProps) {
     [spots, geo.position],
   );
 
-  const nearby = useMemo(() => sortByDistance(spots, origin), [spots, origin]);
+  // Nur die nächsten Parkplätze listen. 13.000 Einträge zu rendern würde das
+  // Gerät blockieren, und weiter entfernte helfen beim Parken ohnehin nicht.
+  const nearby = useMemo(() => sortByDistance(spots, origin).slice(0, LIST_LIMIT), [spots, origin]);
 
-  const unlocated = useMemo(() => spots.filter((spot) => !hasCoordinates(spot)), [spots]);
+  const unlocated = useMemo(
+    () => spots.filter((spot) => !hasCoordinates(spot)).slice(0, LIST_LIMIT),
+    [spots],
+  );
 
   // Beim ersten Standort auf den nächstgelegenen Parkplatz zoomen.
   useEffect(() => {
@@ -103,7 +115,9 @@ export function MapSection({ spots, cities, defaultCity }: MapSectionProps) {
         <div className="flex items-baseline justify-between gap-3">
           <h1 className="text-lg font-semibold">
             Behindertenparkplätze{" "}
-            <span className="block text-sm font-normal text-neutral-500">{cityNames(cities)}</span>
+            <span className="block text-sm font-normal text-neutral-500">
+              {citySubtitle(cities)}
+            </span>
           </h1>
           <div
             role="tablist"
@@ -136,7 +150,8 @@ export function MapSection({ spots, cities, defaultCity }: MapSectionProps) {
               ? `Nächster Parkplatz: ${nearest.street ?? nearest.label} – ${formatDistance(nearest.distanceMeters)}`
               : "Kein verorteter Parkplatz in der Nähe.")}
           {geo.message}
-          {geo.status === "idle" && `${spots.length} Parkplätze in ${cities.length} Städten.`}
+          {geo.status === "idle" &&
+            `${spots.length.toLocaleString("de-DE")} Parkplätze in ${cities.length} Städten.`}
         </p>
 
         {(geo.status === "denied" || geo.status === "timeout" || geo.status === "unavailable") && (

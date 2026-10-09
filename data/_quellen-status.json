@@ -1,0 +1,1907 @@
+[
+  {
+    "rank": 1,
+    "city": "Berlin",
+    "slug": "berlin",
+    "state": "Berlin",
+    "population": 3782202,
+    "official": [
+      {
+        "title": "Behindertenparkplätze",
+        "govdata": "https://www.govdata.de/suche/daten/behindertenparkplatze25b4c",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://gdi.berlin.de/services/wfs/behindertenparkplaetze?request=GetCapabilities&service=WFS"
+          }
+        ]
+      },
+      {
+        "title": "Parken im Straßenraum",
+        "govdata": "https://www.govdata.de/suche/daten/parken-im-strassenraum",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://gdi.berlin.de/services/wfs/parkplaetze?request=GetCapabilities&service=WFS"
+          }
+        ]
+      },
+      {
+        "title": "Parkraumbewirtschaftung (Parkzonen)",
+        "govdata": "https://www.govdata.de/suche/daten/parkraumbewirtschaftung-parkzonen",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://gdi.berlin.de/services/wfs/parkraumbewirtschaftung?request=GetCapabilities&service=WFS"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
+    "rank": 2,
+    "city": "Hamburg",
+    "slug": "hamburg",
+    "state": "Hamburg",
+    "population": 1910160,
+    "official": [
+      {
+        "title": "Behindertenstellplätze Hamburg",
+        "govdata": "https://www.govdata.de/suche/daten/behindertenstellplatze-hamburgd98fb",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/wfs_behindertenstellplaetze?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typename=de.hh.up:behindertenstellplaetze"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/wfs_behindertenstellplaetze?SERVICE=WFS&VERSION=1.1.0&REQUEST=DescribeFeatureType&typename=de.hh.up:behindertenstellplaetze"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/wfs_behindertenstellplaetze?Service=WFS&Version=1.1.0&Request=GetCapabilities"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/download?url=https://geodienste.hamburg.de/wfs_behindertenstellplaetze&f=csv"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/download?url=https://geodienste.hamburg.de/wfs_behindertenstellplaetze&f=json"
+          }
+        ]
+      },
+      {
+        "title": "Behindertenstellplätze Hamburg",
+        "govdata": "https://www.govdata.de/suche/daten/behindertenstellplatze-hamburg8e6a9",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/download%3furl%3dhttps://geodienste.hamburg.de/wfs_behindertenstellplaetze%26f%3dcsv"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/wfs_behindertenstellplaetze%3fService%3dWFS%26Version%3d1.1.0%26Request%3dGetCapabilities"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/download%3furl%3dhttps://geodienste.hamburg.de/wfs_behindertenstellplaetze%26f%3djson"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/wfs_behindertenstellplaetze%3fSERVICE%3dWFS%26VERSION%3d2.0.0%26REQUEST%3dGetFeature%26typename%3dde.hh.up:behindertenstellplaetze"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/wfs_behindertenstellplaetze%3fSERVICE%3dWFS%26VERSION%3d1.1.0%26REQUEST%3dDescribeFeatureType%26typename%3dde.hh.up:behindertenstellplaetze"
+          }
+        ]
+      },
+      {
+        "title": "Parkhäuser Hamburg",
+        "govdata": "https://www.govdata.de/suche/daten/parkhauser-hamburgd49b7",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/wfs_parkhaeuser%3fService%3dWFS%26Version%3d1.1.0%26Request%3dGetCapabilities"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/download%3furl%3dhttps://geodienste.hamburg.de/wfs_parkhaeuser%26f%3djson"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/wfs_parkhaeuser%3fservice%3dWFS%26request%3dDescribeFeatureType%26version%3d2.0.0%26typename%3dde.hh.up:parkhaeuser"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/download%3furl%3dhttps://geodienste.hamburg.de/wfs_parkhaeuser%26f%3dcsv"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/wfs_parkhaeuser%3fSERVICE%3dWFS%26VERSION%3d2.0.0%26REQUEST%3dGetFeature%26typename%3dde.hh.up:parkhaeuser"
+          }
+        ]
+      },
+      {
+        "title": "Parkhäuser Hamburg",
+        "govdata": "https://www.govdata.de/suche/daten/parkhauser-hamburg0da4d",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/wfs_parkhaeuser?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typename=de.hh.up:parkhaeuser"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/wfs_parkhaeuser?service=WFS&request=DescribeFeatureType&version=2.0.0&typename=de.hh.up:parkhaeuser"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/wfs_parkhaeuser?Service=WFS&Version=1.1.0&Request=GetCapabilities"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/download?url=https://geodienste.hamburg.de/wfs_parkhaeuser&f=csv"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/download?url=https://geodienste.hamburg.de/wfs_parkhaeuser&f=json"
+          }
+        ]
+      },
+      {
+        "title": "Reisebusparkplätze Hamburg",
+        "govdata": "https://www.govdata.de/suche/daten/reisebusparkplatze-hamburgc46d4",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/wfs_reisebusparkplaetze%3fSERVICE%3dWFS%26VERSION%3d1.1.0%26REQUEST%3dDescribeFeatureType%26typename%3dde.hh.up:reisebusparkplaetze"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/download%3furl%3dhttps://geodienste.hamburg.de/wfs_reisebusparkplaetze%26f%3dcsv"
+          },
+          {
+            "format": "JSON",
+            "url": "https://daten-hamburg.de/transport_verkehr/reisebusparkplaetze/DATEXII_3_7_Reisebusparkplaetze_Hamburg.json"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/download%3furl%3dhttps://geodienste.hamburg.de/wfs_reisebusparkplaetze%26f%3djson"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/wfs_reisebusparkplaetze%3fService%3dWFS%26Request%3dGetCapabilities"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/wfs_reisebusparkplaetze%3fSERVICE%3dWFS%26VERSION%3d1.1.0%26REQUEST%3dGetFeature%26typename%3dde.hh.up:reisebusparkplaetze"
+          }
+        ]
+      },
+      {
+        "title": "Motorradstellplätze Hamburg",
+        "govdata": "https://www.govdata.de/suche/daten/motorradstellplatze-hamburg",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/wfs_motorradstellplaetze%3fService%3dWFS%26Version%3d1.1.0%26Request%3dGetCapabilities"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/wfs_motorradstellplaetze%3fSERVICE%3dWFS%26VERSION%3d2.0.0%26REQUEST%3dGetFeature%26typename%3dde.hh.up:motorradstellplaetze"
+          },
+          {
+            "format": "JSON",
+            "url": "https://daten-hamburg.de/transport_verkehr/motorradstellplaetze/DATEXII_3_7_Motorradstellplaetze_Hamburg.json"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/download%3furl%3dhttps://geodienste.hamburg.de/wfs_motorradstellplaetze%26f%3dcsv"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/wfs_motorradstellplaetze%3fservice%3dWFS%26request%3dDescribeFeatureType%26version%3d2.0.0%26typename%3dde.hh.up:motorradstellplaetze"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/download%3furl%3dhttps://geodienste.hamburg.de/wfs_motorradstellplaetze%26f%3djson"
+          }
+        ]
+      },
+      {
+        "title": "Bewohnerparkgebiete Hamburg",
+        "govdata": "https://www.govdata.de/suche/daten/bewohnerparkgebiete-hamburg00040",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/HH_WFS_bewohnerparkgebiete?SERVICE=WFS&VERSION=1.1.0&REQUEST=GetFeature&typename=de.hh.up:bewohnerparkgebiete"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/HH_WFS_bewohnerparkgebiete?service=WFS&request=DescribeFeatureType&version=1.1.0&typename=de.hh.up:bewohnerparkgebiete"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/HH_WFS_bewohnerparkgebiete?SERVICE=WFS&REQUEST=GetCapabilities"
+          }
+        ]
+      },
+      {
+        "title": "Reisebusparkplätze Hamburg",
+        "govdata": "https://www.govdata.de/suche/daten/reisebusparkplatze-hamburg35e4d",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/wfs_reisebusparkplaetze?SERVICE=WFS&VERSION=1.1.0&REQUEST=GetFeature&typename=de.hh.up:reisebusparkplaetze"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/wfs_reisebusparkplaetze?SERVICE=WFS&VERSION=1.1.0&REQUEST=DescribeFeatureType&typename=de.hh.up:reisebusparkplaetze"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/wfs_reisebusparkplaetze?Service=WFS&Request=GetCapabilities"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/download?url=https://geodienste.hamburg.de/wfs_reisebusparkplaetze&f=csv"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/download?url=https://geodienste.hamburg.de/wfs_reisebusparkplaetze&f=json"
+          },
+          {
+            "format": "JSON",
+            "url": "https://daten-hamburg.de/transport_verkehr/reisebusparkplaetze/DATEXII_3_7_Reisebusparkplaetze_Hamburg.json"
+          }
+        ]
+      },
+      {
+        "title": "Motorradstellplätze Hamburg",
+        "govdata": "https://www.govdata.de/suche/daten/motorradstellplatze-hamburg1bd52",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/wfs_motorradstellplaetze?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typename=de.hh.up:motorradstellplaetze"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/wfs_motorradstellplaetze?service=WFS&request=DescribeFeatureType&version=2.0.0&typename=de.hh.up:motorradstellplaetze"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/wfs_motorradstellplaetze?Service=WFS&Version=1.1.0&Request=GetCapabilities"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/download?url=https://geodienste.hamburg.de/wfs_motorradstellplaetze&f=csv"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/download?url=https://geodienste.hamburg.de/wfs_motorradstellplaetze&f=json"
+          },
+          {
+            "format": "JSON",
+            "url": "https://daten-hamburg.de/transport_verkehr/motorradstellplaetze/DATEXII_3_7_Motorradstellplaetze_Hamburg.json"
+          }
+        ]
+      },
+      {
+        "title": "Öffentlicher Parkraum Hamburg",
+        "govdata": "https://www.govdata.de/suche/daten/offentlicher-parkraum-hamburg01746",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/HH_WFS_Parkraum?SERVICE=WFS&VERSION=1.1.0&REQUEST=GetFeature&typename=de.hh.up:parkraum"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/HH_WFS_Parkraum?service=WFS&request=DescribeFeatureType&version=1.1.0&typename=de.hh.up:parkraum"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geodienste.hamburg.de/HH_WFS_Parkraum?SERVICE=WFS&REQUEST=GetCapabilities"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
+    "rank": 3,
+    "city": "München",
+    "slug": "muenchen",
+    "state": "Bayern",
+    "population": 1510378,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 4,
+    "city": "Köln",
+    "slug": "koeln",
+    "state": "Nordrhein-Westfalen",
+    "population": 1087353,
+    "official": [
+      {
+        "title": "Behindertenparkplätze in Köln",
+        "govdata": "https://www.govdata.de/suche/daten/behindertenparkplatze-in-koln",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "ARCGIS",
+            "url": "https://geoportal.stadt-koeln.de/arcgis/rest/services/basiskarten/stadtplanthemen/MapServer/0?f=json&amp%3Bpretty=true"
+          },
+          {
+            "format": "ARCGIS",
+            "url": "https://geoportal.stadt-koeln.de/arcgis/rest/services/verkehr/behindertenparkplaetze/MapServer?f=pjson"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geoportal.stadt-koeln.de/arcgis/services/verkehr/behindertenparkplaetze/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+          }
+        ]
+      },
+      {
+        "title": "Behindertenparkplatz - Stadt Köln",
+        "govdata": "https://www.govdata.de/suche/daten/behindertenparkplatz-stadt-kolnffcb6",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geoportal.stadt-koeln.de/arcgis/services/verkehr/behindertenparkplaetze/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+          }
+        ]
+      },
+      {
+        "title": "Bewohnerparkgebiete - Stadt Köln",
+        "govdata": "https://www.govdata.de/suche/daten/bewohnerparkgebiete-stadt-koln",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geoportal.stadt-koeln.de/wss/service/bewohnerparken_wfs/guest?REQUEST=GetCapabilities&SERVICE=WFS"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geoportal.stadt-koeln.de/wss/service/bewohnerparken_wfs/guest"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
+    "rank": 5,
+    "city": "Frankfurt am Main",
+    "slug": "frankfurt",
+    "state": "Hessen",
+    "population": 775790,
+    "official": [
+      {
+        "title": "WFS Parken in der Stadt Frankfurt am Main",
+        "govdata": "https://www.govdata.de/suche/daten/wfs-parken-in-der-stadt-frankfurt-am-main",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "GML",
+            "url": "https://geodatenkatalog.frankfurt.de/geonetwork/srv/api/records/5f02f6f8-e9f4-431d-a610-d6b6ab24b1f1/formatters/xml"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geowebdienste.frankfurt.de/Parken?service=WFS&version=1.1.0&request=GetCapabilities"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
+    "rank": 6,
+    "city": "Stuttgart",
+    "slug": "stuttgart",
+    "state": "Baden-Württemberg",
+    "population": 633484,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 7,
+    "city": "Düsseldorf",
+    "slug": "duesseldorf",
+    "state": "Nordrhein-Westfalen",
+    "population": 631217,
+    "official": [
+      {
+        "title": "Allgemeine Behindertenparkplätze in Düsseldorf",
+        "govdata": "https://www.govdata.de/suche/daten/allgemeine-behindertenparkplatze-in-dusseldorf",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "JSON",
+            "url": "https://opendata.duesseldorf.de/dataset/30461a52-22ed-4f8f-a75b-d22ea8ce8b45/resource/a3b426f0-9bd8-4d07-960f-ad962933aa16"
+          },
+          {
+            "format": "KML",
+            "url": "https://opendata.duesseldorf.de/dataset/30461a52-22ed-4f8f-a75b-d22ea8ce8b45/resource/b22c8982-bd07-4d71-b2f4-8b501ce0fcd0"
+          }
+        ]
+      },
+      {
+        "title": "Anzahl der allgemeinen und personenbezogenen Behindertenparkplätze in Düsseldorf",
+        "govdata": "https://www.govdata.de/suche/daten/anzahl-der-allgemeinen-und-personenbezogenen-behindertenparkplatze-in-dusseldorf",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "CSV",
+            "url": "https://opendata.duesseldorf.de/sites/default/files/Anzahl%20allgemeine%20und%20personenbezogenen%20Behindertenparkpl%C3%A4tze%20in%20den%20Stadtbezirken_1.csv"
+          },
+          {
+            "format": "JSON",
+            "url": "https://opendata.duesseldorf.de/dataset/1e90873e-60b4-4762-abb5-55ed91d24169/resource/8c90be8b-4f42-4b20-993b-fd21226a2229"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
+    "rank": 8,
+    "city": "Leipzig",
+    "slug": "leipzig",
+    "state": "Sachsen",
+    "population": 619879,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 9,
+    "city": "Dortmund",
+    "slug": "dortmund",
+    "state": "Nordrhein-Westfalen",
+    "population": 595471,
+    "official": [
+      {
+        "title": "Behindertenstellplätze",
+        "govdata": "https://www.govdata.de/suche/daten/behindertenstellplatze",
+        "license": "Datenlizenz Deutschland – Zero – Version 2.0",
+        "resources": [
+          {
+            "format": "CSV",
+            "url": "https://open-data.dortmund.de/api/v2/catalog/datasets/fb66-behindertenstellplaetze/exports/csv?use_labels=true"
+          },
+          {
+            "format": "JSON",
+            "url": "https://open-data.dortmund.de/api/v2/catalog/datasets/fb66-behindertenstellplaetze/exports/json"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://open-data.dortmund.de/api/v2/catalog/datasets/fb66-behindertenstellplaetze/exports/geojson"
+          },
+          {
+            "format": "JSON",
+            "url": "https://open-data.dortmund.de/api/v2/catalog/datasets/fb66-behindertenstellplaetze/exports/jsonl"
+          },
+          {
+            "format": "KML",
+            "url": "https://open-data.dortmund.de/api/v2/catalog/datasets/fb66-behindertenstellplaetze/exports/kml"
+          },
+          {
+            "format": "SHP",
+            "url": "https://open-data.dortmund.de/api/v2/catalog/datasets/fb66-behindertenstellplaetze/exports/shp"
+          },
+          {
+            "format": "XLS",
+            "url": "https://open-data.dortmund.de/api/v2/catalog/datasets/fb66-behindertenstellplaetze/exports/xls?use_labels=true"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
+    "rank": 10,
+    "city": "Essen",
+    "slug": "essen",
+    "state": "Nordrhein-Westfalen",
+    "population": 586608,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 11,
+    "city": "Bremen",
+    "slug": "bremen",
+    "state": "Bremen",
+    "population": 577026,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 12,
+    "city": "Dresden",
+    "slug": "dresden",
+    "state": "Sachsen",
+    "population": 566222,
+    "official": [
+      {
+        "title": "Parken für Menschen mit Behinderungen",
+        "govdata": "https://www.govdata.de/suche/daten/parken-fur-menschen-mit-behinderungen37640",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://kommisdd.dresden.de/net3/public/ogc.ashx?NodeId=1462&Service=WFS&Request=GetCapabilities"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
+    "rank": 13,
+    "city": "Hannover",
+    "slug": "hannover",
+    "state": "Niedersachsen",
+    "population": 548186,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 14,
+    "city": "Nürnberg",
+    "slug": "nuernberg",
+    "state": "Bayern",
+    "population": 523026,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 15,
+    "city": "Duisburg",
+    "slug": "duisburg",
+    "state": "Nordrhein-Westfalen",
+    "population": 500319,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 16,
+    "city": "Bochum",
+    "slug": "bochum",
+    "state": "Nordrhein-Westfalen",
+    "population": 365587,
+    "official": [
+      {
+        "title": "Bochum - Behindertenparkplätze",
+        "govdata": "https://www.govdata.de/suche/daten/bochum-behindertenparkplatze",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "GEOJSON",
+            "url": "https://bochum.opendata.ruhr/dataset/2f795562-450f-42fa-9ed0-dfc214f02e04/resource/5125ebf5-8da2-4bf7-b38a-253b7cd39f39/download/bochum_behindertenparkplatze.geojson"
+          },
+          {
+            "format": "CSV",
+            "url": "https://bochum.opendata.ruhr/dataset/2f795562-450f-42fa-9ed0-dfc214f02e04/resource/8de35e84-3049-4772-9829-6a0d166a3b04/download/bochum_behindertenparkplatze.csv"
+          },
+          {
+            "format": "ARCGIS",
+            "url": "https://geoservicekkm.bochum.de/arcgis/rest/services/maponline/Behindertenparkplaetze/MapServer?f=jsapi"
+          },
+          {
+            "format": "ARCGIS",
+            "url": "https://geoservicekkm.bochum.de/arcgis/rest/services/maponline/Behindertenparkplaetze/MapServer"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
+    "rank": 17,
+    "city": "Wuppertal",
+    "slug": "wuppertal",
+    "state": "Nordrhein-Westfalen",
+    "population": 358876,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 18,
+    "city": "Bielefeld",
+    "slug": "bielefeld",
+    "state": "Nordrhein-Westfalen",
+    "population": 341755,
+    "official": [
+      {
+        "title": "Schwerbehindertenparkplätze",
+        "govdata": "https://www.govdata.de/suche/daten/schwerbehindertenparkplatze",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "CSV",
+            "url": "https://open-data.bielefeld.de/dataset/9d1ac93f-849d-4082-9ed2-663b2abdc3a2/resource/0c4276b3-cbf0-4dde-bdc3-607f3cca7ff9"
+          },
+          {
+            "format": "SHP",
+            "url": "https://open-data.bielefeld.de/dataset/9d1ac93f-849d-4082-9ed2-663b2abdc3a2/resource/35d9100d-edc6-43ad-9748-464d51bac0ea"
+          },
+          {
+            "format": "WFS",
+            "url": "https://open-data.bielefeld.de/dataset/9d1ac93f-849d-4082-9ed2-663b2abdc3a2/resource/0e9fcc5d-aa8d-4da0-bca0-723b8ff0054e"
+          }
+        ]
+      },
+      {
+        "title": "Parkplätze",
+        "govdata": "https://www.govdata.de/suche/daten/parkplatze",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://open-data.bielefeld.de/dataset/c862b66c-e7ff-48f0-af0c-c9032186c46c/resource/85055693-eb62-406a-861a-d52f5c08acb5"
+          },
+          {
+            "format": "CSV",
+            "url": "https://open-data.bielefeld.de/dataset/c862b66c-e7ff-48f0-af0c-c9032186c46c/resource/abd93018-7e1e-443e-9788-df23c16b937e"
+          },
+          {
+            "format": "GML",
+            "url": "https://open-data.bielefeld.de/dataset/c862b66c-e7ff-48f0-af0c-c9032186c46c/resource/7efac644-c02e-4026-8505-a6c761994b2c"
+          },
+          {
+            "format": "SHP",
+            "url": "https://open-data.bielefeld.de/dataset/c862b66c-e7ff-48f0-af0c-c9032186c46c/resource/0822e6ce-429e-4618-b228-0ca2343b83d6"
+          }
+        ]
+      },
+      {
+        "title": "Park + Ride Parkplätze",
+        "govdata": "https://www.govdata.de/suche/daten/park-ride-parkplatze14ff9",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "CSV",
+            "url": "https://open-data.bielefeld.de/dataset/ace6b463-38be-4bff-9f97-fc04226800f0/resource/646f8ae1-998c-4a4d-b550-5b0c2cc3b258"
+          },
+          {
+            "format": "WFS",
+            "url": "https://open-data.bielefeld.de/dataset/ace6b463-38be-4bff-9f97-fc04226800f0/resource/c6566236-0bdf-4bb5-b04a-e69daf2d7983"
+          },
+          {
+            "format": "GML",
+            "url": "https://open-data.bielefeld.de/dataset/ace6b463-38be-4bff-9f97-fc04226800f0/resource/5f1724f2-b7e1-44e6-8e1e-0f00026aa0b8"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
+    "rank": 19,
+    "city": "Bonn",
+    "slug": "bonn",
+    "state": "Nordrhein-Westfalen",
+    "population": 336465,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 20,
+    "city": "Münster",
+    "slug": "muenster",
+    "state": "Nordrhein-Westfalen",
+    "population": 320979,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 21,
+    "city": "Mannheim",
+    "slug": "mannheim",
+    "state": "Baden-Württemberg",
+    "population": 319953,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 22,
+    "city": "Karlsruhe",
+    "slug": "karlsruhe",
+    "state": "Baden-Württemberg",
+    "population": 309999,
+    "official": [
+      {
+        "title": "Points of Interest - Parken und Autoservices",
+        "govdata": "https://www.govdata.de/suche/daten/points-of-interest-parken-und-autoservices",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "GEOJSON",
+            "url": "https://geoportal.karlsruhe.de/server/rest/services/Stadtplan/Stadtplan_POIs_Parken_Autoservices/MapServer/6/query%3fwhere%3dGRUPPENNAME_DE+%253D+%2527Autopr%c3%bcfstellen%2527%26outFields%3dNAME%252CGRUPPENNAME_DE%252CUPDATED%26returnGeometry%3dtrue%26f%3dgeojson"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://geoportal.karlsruhe.de/server/rest/services/Stadtplan/Stadtplan_POIs_Parken_Autoservices/MapServer/9/query%3fwhere%3dGRUPPENNAME_DE+%253D+%2527Autowaschstationen%2527%26outFields%3dNAME%252CGRUPPENNAME_DE%252CUPDATED%26returnGeometry%3dtrue%26f%3dgeojson"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://geoportal.karlsruhe.de/server/rest/services/Stadtplan/Stadtplan_POIs_Parken_Autoservices/MapServer/11/query%3fwhere%3dGRUPPENNAME_DE+%253D+%2527Stadtmobil%20carsharing%2527%26outFields%3dNAME%252CGRUPPENNAME_DE%252CUPDATED%26returnGeometry%3dtrue%26f%3dgeojson"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://geoportal.karlsruhe.de/server/rest/services/Stadtplan/Stadtplan_POIs_Parken_Autoservices/MapServer/5/query%3fwhere%3dGRUPPENNAME_DE+%253D+%2527Autoclubs%2527%26outFields%3dNAME%252CGRUPPENNAME_DE%252CUPDATED%26returnGeometry%3dtrue%26f%3dgeojson"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://geoportal.karlsruhe.de/server/rest/services/Stadtplan/Stadtplan_POIs_Parken_Autoservices/MapServer/10/query%3fwhere%3dGRUPPENNAME_DE+%253D+%2527Autowerkst%c3%a4tten%2527%26outFields%3dNAME%252CGRUPPENNAME_DE%252CUPDATED%26returnGeometry%3dtrue%26f%3dgeojson"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://geoportal.karlsruhe.de/server/rest/services/Stadtplan/Stadtplan_POIs_Parken_Autoservices/MapServer/2/query%3fwhere%3dGRUPPENNAME_DE+%253D+%2527Park%252BRide%2527%26outFields%3dNAME%252CGRUPPENNAME_DE%252CUPDATED%26returnGeometry%3dtrue%26f%3dgeojson"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://geoportal.karlsruhe.de/server/rest/services/Stadtplan/Stadtplan_POIs_Parken_Autoservices/MapServer/4/query%3fwhere%3dGRUPPENNAME_DE+%253D+%2527Abschleppdienste%2527%26outFields%3dNAME%252CGRUPPENNAME_DE%252CUPDATED%26returnGeometry%3dtrue%26f%3dgeojson"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://geoportal.karlsruhe.de/server/rest/services/Stadtplan/Stadtplan_POIs_Parken_Autoservices/MapServer/14/query%3fwhere%3dGRUPPENNAME_DE+%253D+%2527Verkehrs%c3%bcbungspl%c3%a4tze%2527%26outFields%3dNAME%252CGRUPPENNAME_DE%252CUPDATED%26returnGeometry%3dtrue%26f%3dgeojson"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://geoportal.karlsruhe.de/server/rest/services/Stadtplan/Stadtplan_POIs_Parken_Autoservices/MapServer/8/query%3fwhere%3dGRUPPENNAME_DE+%253D+%2527Autoverwertungen%2527%26outFields%3dNAME%252CGRUPPENNAME_DE%252CUPDATED%26returnGeometry%3dtrue%26f%3dgeojson"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://geoportal.karlsruhe.de/server/rest/services/Stadtplan/Stadtplan_POIs_Parken_Autoservices/MapServer/1/query%3fwhere%3dGRUPPENNAME_DE+%253D+%2527Behindertenparkpl%c3%a4tze%2527%26outFields%3dNAME%252CGRUPPENNAME_DE%252CUPDATED%26returnGeometry%3dtrue%26f%3dgeojson"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://geoportal.karlsruhe.de/server/rest/services/Stadtplan/Stadtplan_POIs_Parken_Autoservices/MapServer/3/query%3fwhere%3dGRUPPENNAME_DE+%253D+%2527Parkh%c3%a4user/Tiefgaragen%2527%26outFields%3dNAME%252CGRUPPENNAME_DE%252CUPDATED%26returnGeometry%3dtrue%26f%3dgeojson"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://geoportal.karlsruhe.de/server/rest/services/Stadtplan/Stadtplan_POIs_Parken_Autoservices/MapServer/13/query%3fwhere%3dGRUPPENNAME_DE+%253D+%2527Taxi%2527%26outFields%3dNAME%252CGRUPPENNAME_DE%252CUPDATED%26returnGeometry%3dtrue%26f%3dgeojson"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://geoportal.karlsruhe.de/server/rest/services/Stadtplan/Stadtplan_POIs_Parken_Autoservices/MapServer/7/query%3fwhere%3dGRUPPENNAME_DE+%253D+%2527Autovermietungen%2527%26outFields%3dNAME%252CGRUPPENNAME_DE%252CUPDATED%26returnGeometry%3dtrue%26f%3dgeojson"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://geoportal.karlsruhe.de/server/rest/services/Stadtplan/Stadtplan_POIs_Parken_Autoservices/MapServer/0/query%3fwhere%3dGRUPPENNAME_DE+%253D+%2527barrierefrei%20zug%c3%a4ngliche%20Parkh%c3%a4user%2527%26outFields%3dNAME%252CGRUPPENNAME_DE%252CUPDATED%26returnGeometry%3dtrue%26f%3dgeojson"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://geoportal.karlsruhe.de/server/rest/services/Stadtplan/Stadtplan_POIs_Parken_Autoservices/MapServer/12/query%3fwhere%3dGRUPPENNAME_DE+%253D+%2527Tankstellen%2527%26outFields%3dNAME%252CGRUPPENNAME_DE%252CUPDATED%26returnGeometry%3dtrue%26f%3dgeojson"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
+    "rank": 23,
+    "city": "Augsburg",
+    "slug": "augsburg",
+    "state": "Bayern",
+    "population": 302103,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 24,
+    "city": "Wiesbaden",
+    "slug": "wiesbaden",
+    "state": "Hessen",
+    "population": 283083,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 25,
+    "city": "Mönchengladbach",
+    "slug": "moenchengladbach",
+    "state": "Nordrhein-Westfalen",
+    "population": 262374,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 26,
+    "city": "Gelsenkirchen",
+    "slug": "gelsenkirchen",
+    "state": "Nordrhein-Westfalen",
+    "population": 259105,
+    "official": [
+      {
+        "title": "Behindertenparkplätze der Stadt Gelsenkirchen",
+        "govdata": "https://www.govdata.de/suche/daten/behindertenparkplatze-der-stadt-gelsenkirchen",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "JSON",
+            "url": "https://maps.gelsenkirchen.de/geoserver/infrastrukturdatenbank/ogc/features/v1/collections/behindertenparkplatz/items?f=json"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
+    "rank": 27,
+    "city": "Braunschweig",
+    "slug": "braunschweig",
+    "state": "Niedersachsen",
+    "population": 252811,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 28,
+    "city": "Kiel",
+    "slug": "kiel",
+    "state": "Schleswig-Holstein",
+    "population": 250917,
+    "official": [
+      {
+        "title": "Bewohnerparken Kiel",
+        "govdata": "https://www.govdata.de/suche/daten/bewohnerparken-kiel",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://ims.kiel.de/geodatenextern/services/Stadtplan/LHKielWmsWfs/MapServer/WFSServer?request=GetFeature&service=WFS&typeName=Bewohnerparken&outputFormat=GML3"
+          },
+          {
+            "format": "WFS",
+            "url": "https://ims.kiel.de/geodatenextern/services/Stadtplan/LHKielWmsWfs/MapServer/WFSServer?request=GetFeature&service=WFS&typeName=Bewohnerparken&outputFormat=geoJSON"
+          },
+          {
+            "format": "WFS",
+            "url": "https://ims.kiel.de/geodatenextern/services/Stadtplan/LHKielWmsWfs/MapServer/WFSServer?request=GetFeature&service=WFS&typeName=Bewohnerparken&outputFormat=CSV"
+          }
+        ]
+      },
+      {
+        "title": "Parkplätze- und häuser in Kiel",
+        "govdata": "https://www.govdata.de/suche/daten/parkplatze-und-hauser-in-kiel",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://ims.kiel.de/geodatenextern/services/Stadtplan/LHKielWmsWfs/MapServer/WFSServer?request=GetFeature&service=WFS&typeName=Parkplaetze_und_-haeuser&outputFormat=GML3"
+          },
+          {
+            "format": "WFS",
+            "url": "https://ims.kiel.de/geodatenextern/services/Stadtplan/LHKielWmsWfs/MapServer/WFSServer?request=GetFeature&service=WFS&typeName=Parkplaetze_und_-haeuser&outputFormat=geoJSON"
+          },
+          {
+            "format": "WFS",
+            "url": "https://ims.kiel.de/geodatenextern/services/Stadtplan/LHKielWmsWfs/MapServer/WFSServer?request=GetFeature&service=WFS&typeName=Parkplaetze_und_-haeuser&outputFormat=CSV"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
+    "rank": 29,
+    "city": "Chemnitz",
+    "slug": "chemnitz",
+    "state": "Sachsen",
+    "population": 249237,
+    "official": [
+      {
+        "title": "Parkplätze Wohnmobil",
+        "govdata": "https://www.govdata.de/suche/daten/parkplatze-wohnmobil",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "CSV",
+            "url": "https://portal-chemnitz.opendata.arcgis.com/api/download/v1/items/efbffb13fed349e68413358daf5f742b/csv?layers=0"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://portal-chemnitz.opendata.arcgis.com/api/download/v1/items/efbffb13fed349e68413358daf5f742b/geojson?layers=0"
+          },
+          {
+            "format": "ARCGIS",
+            "url": "https://services6.arcgis.com/jiszdsDupTUO3fSM/arcgis/rest/services/Parkpl%C3%A4tze_Wohnmobil/FeatureServer/0"
+          },
+          {
+            "format": "KML",
+            "url": "https://portal-chemnitz.opendata.arcgis.com/api/download/v1/items/efbffb13fed349e68413358daf5f742b/kml?layers=0"
+          }
+        ]
+      },
+      {
+        "title": "Parkplätze Reisebus",
+        "govdata": "https://www.govdata.de/suche/daten/parkplatze-reisebus",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "CSV",
+            "url": "https://portal-chemnitz.opendata.arcgis.com/api/download/v1/items/296d8dcef1c744fcb007af436de382d9/csv?layers=0"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://portal-chemnitz.opendata.arcgis.com/api/download/v1/items/296d8dcef1c744fcb007af436de382d9/geojson?layers=0"
+          },
+          {
+            "format": "ARCGIS",
+            "url": "https://services6.arcgis.com/jiszdsDupTUO3fSM/arcgis/rest/services/Parkpl%C3%A4tze_Bus_Sicht/FeatureServer/0"
+          },
+          {
+            "format": "KML",
+            "url": "https://portal-chemnitz.opendata.arcgis.com/api/download/v1/items/296d8dcef1c744fcb007af436de382d9/kml?layers=0"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
+    "rank": 30,
+    "city": "Aachen",
+    "slug": "aachen",
+    "state": "Nordrhein-Westfalen",
+    "population": 249070,
+    "official": [
+      {
+        "title": "Bewohnerparkzonen Stadt Aachen",
+        "govdata": "https://www.govdata.de/suche/daten/bewohnerparkzonen-stadt-aachen3fdf7",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geoserver.aachen.de/opendata/bewohnerparkzonen/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=bewohnerparkzonen:bewohnerparkzonen&maxFeatures=50&outputFormat=SHAPE-ZIP"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
+    "rank": 31,
+    "city": "Halle (Saale)",
+    "slug": "halle",
+    "state": "Sachsen-Anhalt",
+    "population": 242083,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 32,
+    "city": "Magdeburg",
+    "slug": "magdeburg",
+    "state": "Sachsen-Anhalt",
+    "population": 239364,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 33,
+    "city": "Freiburg im Breisgau",
+    "slug": "freiburg",
+    "state": "Baden-Württemberg",
+    "population": 236140,
+    "official": [
+      {
+        "title": "Behindertenparkplätze in Freiburg i. Br.",
+        "govdata": "https://www.govdata.de/suche/daten/behindertenparkplatze-in-freiburg-i-brf304a",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geoportal.freiburg.de/wfs/gut_parken/gut_parken?REQUEST=GetCapabilities&SERVICE=WFS"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geoportal.freiburg.de/wfs/gut_parken/gut_parken?REQUEST=GetFeature&SRSNAME=EPSG:25832&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=behindertenparkplatz_detail%2Cbehindertenparkpl_uebersicht&OUTPUTFORMAT=geopackage"
+          }
+        ]
+      },
+      {
+        "title": "Echtzeitbelegung Behindertenstellplätze der Stadt Freiburg i. Br.",
+        "govdata": "https://www.govdata.de/suche/daten/echtzeitbelegung-behindertenstellplatze-der-stadt-freiburg-i-br6399a",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geoportal.freiburg.de/wfs/gdm_parkpl/gdm_parkpl?REQUEST=GetCapabilities&SERVICE=WFS"
+          }
+        ]
+      },
+      {
+        "title": "Parkscheinautomaten der Stadt Freiburg i. Br.",
+        "govdata": "https://www.govdata.de/suche/daten/parkscheinautomaten-der-stadt-freiburg-i-br3644b",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geoportal.freiburg.de/wfs/gut_parken/gut_parken?REQUEST=GetCapabilities&SERVICE=WFS"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geoportal.freiburg.de/wfs/gut_parken/gut_parken?REQUEST=GetFeature&SRSNAME=EPSG:25832&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=psa&OUTPUTFORMAT=geopackage"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geoportal.freiburg.de/wfs/gut_parken/gut_parken?REQUEST=GetFeature&SRSNAME=EPSG:25832&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=psa&OUTPUTFORMAT=shapezip"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geoportal.freiburg.de/wfs/gut_parken/gut_parken?REQUEST=GetFeature&SRSNAME=EPSG:25832&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=psa&OUTPUTFORMAT=geojson"
+          }
+        ]
+      },
+      {
+        "title": "Parkgebührenzonen der Stadt Freiburg i. Br.",
+        "govdata": "https://www.govdata.de/suche/daten/parkgebuhrenzonen-der-stadt-freiburg-i-br9fd50",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geoportal.freiburg.de/wfs/gut_parken/gut_parken?REQUEST=GetCapabilities&SERVICE=WFS"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geoportal.freiburg.de/wfs/gut_parken/gut_parken?REQUEST=GetFeature&SRSNAME=EPSG:25832&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=parkgebzonen&OUTPUTFORMAT=geojson"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geoportal.freiburg.de/wfs/gut_parken/gut_parken?REQUEST=GetFeature&SRSNAME=EPSG:25832&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=parkgebzonen&OUTPUTFORMAT=geopackage"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geoportal.freiburg.de/wfs/gut_parken/gut_parken?REQUEST=GetFeature&SRSNAME=EPSG:25832&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=parkgebzonen&OUTPUTFORMAT=shapezip"
+          }
+        ]
+      },
+      {
+        "title": "Parkplatzkataster der Stadt Freiburg i. Br. (Teilgebiete, zurückliegende Erfassung)",
+        "govdata": "https://www.govdata.de/suche/daten/parkplatzkataster-der-stadt-freiburg-i-br-teilgebiete-zuruckliegende-erfassung03c72",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geoportal.freiburg.de/wfs/digit_parken/digit_parken?REQUEST=GetFeature&SRSNAME=EPSG:25832&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=parkplatzkataster&OUTPUTFORMAT=geojson"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geoportal.freiburg.de/wfs/digit_parken/digit_parken?REQUEST=GetCapabilities&SERVICE=WFS"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geoportal.freiburg.de/wfs/digit_parken/digit_parken?REQUEST=GetFeature&SRSNAME=EPSG:25832&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=parkplatzkataster&OUTPUTFORMAT=shapezip"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geoportal.freiburg.de/wfs/digit_parken/digit_parken?REQUEST=GetFeature&SRSNAME=EPSG:25832&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=parkplatzkataster&OUTPUTFORMAT=geopackage"
+          }
+        ]
+      },
+      {
+        "title": "Parkplatzkataster Stand 2023 (Straßenebene) der Stadt Freiburg i. Br.",
+        "govdata": "https://www.govdata.de/suche/daten/parkplatzkataster-stand-2023-strassenebene-der-stadt-freiburg-i-brccd7f",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geoportal.freiburg.de/wfs/digit_parken/digit_parken?REQUEST=GetCapabilities&SERVICE=WFS"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geoportal.freiburg.de/wfs/digit_parken/digit_parken?REQUEST=GetFeature&SRSNAME=EPSG:25832&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=parkkartierung_mercedes_kanten&OUTPUTFORMAT=shapezip"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geoportal.freiburg.de/wfs/digit_parken/digit_parken?REQUEST=GetFeature&SRSNAME=EPSG:25832&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=parkkartierung_mercedes_kanten&OUTPUTFORMAT=geojson"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geoportal.freiburg.de/wfs/digit_parken/digit_parken?REQUEST=GetFeature&SRSNAME=EPSG:25832&SERVICE=WFS&VERSION=2.0.0&TYPENAMES=parkkartierung_mercedes_kanten&OUTPUTFORMAT=geopackage"
+          }
+        ]
+      },
+      {
+        "title": "Parkdaten Freiburg im Breisgau",
+        "govdata": "https://www.govdata.de/suche/daten/parkdaten-freiburg-im-breisgau",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geoportal.freiburg.de/wfs/gdm_pls/gdm_pls?request=GetFeature&service=WFS&version=2.0.0&typeName=pls&outputFormat=text/xml%3B%20subtype=gml/3.1.1"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
+    "rank": 34,
+    "city": "Krefeld",
+    "slug": "krefeld",
+    "state": "Nordrhein-Westfalen",
+    "population": 230103,
+    "official": [
+      {
+        "title": "Bewohnerparken Krefeld",
+        "govdata": "https://www.govdata.de/suche/daten/bewohnerparken-krefeld2e02f",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geoservices.krzn.de/security-proxy/services/wfs_skre_bewohnerparkzonen?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=gis:skre_antragsbereiche&outputFormat=application/geo%2Bjson"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geoservices.krzn.de/security-proxy/services/wfs_skre_bewohnerparkzonen?Service=WFS&Version=2.0.0&Request=GetCapabilities"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
+    "rank": 35,
+    "city": "Mainz",
+    "slug": "mainz",
+    "state": "Rheinland-Pfalz",
+    "population": 220085,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 36,
+    "city": "Lübeck",
+    "slug": "luebeck",
+    "state": "Schleswig-Holstein",
+    "population": 218095,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 37,
+    "city": "Erfurt",
+    "slug": "erfurt",
+    "state": "Thüringen",
+    "population": 214969,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 38,
+    "city": "Oberhausen",
+    "slug": "oberhausen",
+    "state": "Nordrhein-Westfalen",
+    "population": 210829,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 39,
+    "city": "Rostock",
+    "slug": "rostock",
+    "state": "Mecklenburg-Vorpommern",
+    "population": 209920,
+    "official": [
+      {
+        "title": "Rostocker Heide",
+        "govdata": "https://www.govdata.de/suche/daten/rostocker-heide",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "CSV",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_aussichtspunkte.csv"
+          },
+          {
+            "format": "XLSX",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_aussichtspunkte.xlsx"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_aussichtspunkte.json"
+          },
+          {
+            "format": "KML",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_aussichtspunkte.kml"
+          },
+          {
+            "format": "GML",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_aussichtspunkte.gml"
+          },
+          {
+            "format": "CSV",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_forsthaeuser.csv"
+          },
+          {
+            "format": "XLSX",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_forsthaeuser.xlsx"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_forsthaeuser.json"
+          },
+          {
+            "format": "KML",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_forsthaeuser.kml"
+          },
+          {
+            "format": "GML",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_forsthaeuser.gml"
+          },
+          {
+            "format": "CSV",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_interessante_ziele.csv"
+          },
+          {
+            "format": "XLSX",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_interessante_ziele.xlsx"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_interessante_ziele.json"
+          },
+          {
+            "format": "KML",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_interessante_ziele.kml"
+          },
+          {
+            "format": "GML",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_interessante_ziele.gml"
+          },
+          {
+            "format": "CSV",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_lehrpfade.csv"
+          },
+          {
+            "format": "XLSX",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_lehrpfade.xlsx"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_lehrpfade.json"
+          },
+          {
+            "format": "SHP",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_lehrpfade.shp.zip"
+          },
+          {
+            "format": "KML",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_lehrpfade.kml"
+          },
+          {
+            "format": "GML",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_lehrpfade.gml"
+          },
+          {
+            "format": "CSV",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_naturdenkmale.csv"
+          },
+          {
+            "format": "XLSX",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_naturdenkmale.xlsx"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_naturdenkmale.json"
+          },
+          {
+            "format": "KML",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_naturdenkmale.kml"
+          },
+          {
+            "format": "GML",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_naturdenkmale.gml"
+          },
+          {
+            "format": "CSV",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_parkplaetze.csv"
+          },
+          {
+            "format": "XLSX",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_parkplaetze.xlsx"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_parkplaetze.json"
+          },
+          {
+            "format": "KML",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_parkplaetze.kml"
+          },
+          {
+            "format": "GML",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_parkplaetze.gml"
+          },
+          {
+            "format": "CSV",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_reitwege.csv"
+          },
+          {
+            "format": "XLSX",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_reitwege.xlsx"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_reitwege.json"
+          },
+          {
+            "format": "SHP",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_reitwege.shp.zip"
+          },
+          {
+            "format": "KML",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_reitwege.kml"
+          },
+          {
+            "format": "GML",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_reitwege.gml"
+          },
+          {
+            "format": "CSV",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_wanderwege.csv"
+          },
+          {
+            "format": "XLSX",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_wanderwege.xlsx"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_wanderwege.json"
+          },
+          {
+            "format": "SHP",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_wanderwege.shp.zip"
+          },
+          {
+            "format": "KML",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_wanderwege.kml"
+          },
+          {
+            "format": "GML",
+            "url": "https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_wanderwege.gml"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geo.sv.rostock.de/geodienste/rostocker_heide/wfs"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
+    "rank": 40,
+    "city": "Kassel",
+    "slug": "kassel",
+    "state": "Hessen",
+    "population": 204202,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 41,
+    "city": "Hagen",
+    "slug": "hagen",
+    "state": "Nordrhein-Westfalen",
+    "population": 188814,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 42,
+    "city": "Potsdam",
+    "slug": "potsdam",
+    "state": "Brandenburg",
+    "population": 187119,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 43,
+    "city": "Saarbrücken",
+    "slug": "saarbruecken",
+    "state": "Saarland",
+    "population": 181959,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 44,
+    "city": "Hamm",
+    "slug": "hamm",
+    "state": "Nordrhein-Westfalen",
+    "population": 179916,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 45,
+    "city": "Oldenburg",
+    "slug": "oldenburg",
+    "state": "Niedersachsen",
+    "population": 177055,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 46,
+    "city": "Ludwigshafen am Rhein",
+    "slug": "ludwigshafen",
+    "state": "Rheinland-Pfalz",
+    "population": 173353,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 47,
+    "city": "Mülheim an der Ruhr",
+    "slug": "muelheim",
+    "state": "Nordrhein-Westfalen",
+    "population": 172124,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 48,
+    "city": "Osnabrück",
+    "slug": "osnabrueck",
+    "state": "Niedersachsen",
+    "population": 168145,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 49,
+    "city": "Leverkusen",
+    "slug": "leverkusen",
+    "state": "Nordrhein-Westfalen",
+    "population": 167256,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 50,
+    "city": "Heidelberg",
+    "slug": "heidelberg",
+    "state": "Baden-Württemberg",
+    "population": 162273,
+    "official": [
+      {
+        "title": "Behindertenparkplätze in Heidelberg",
+        "govdata": "https://www.govdata.de/suche/daten/behindertenparkplatze-in-heidelberg",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "GEOJSON",
+            "url": "https://ckan.datenplattform.heidelberg.de/dataset/708df8e2-d452-483e-9e57-f04027d52a17/resource/6dc64728-65ba-47ed-bbe2-9e59b5dbaa0c/download/features_new.geojson"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
+    "rank": 51,
+    "city": "Darmstadt",
+    "slug": "darmstadt",
+    "state": "Hessen",
+    "population": 162243,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 52,
+    "city": "Solingen",
+    "slug": "solingen",
+    "state": "Nordrhein-Westfalen",
+    "population": 160824,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 53,
+    "city": "Herne",
+    "slug": "herne",
+    "state": "Nordrhein-Westfalen",
+    "population": 156449,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 54,
+    "city": "Regensburg",
+    "slug": "regensburg",
+    "state": "Bayern",
+    "population": 156200,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 55,
+    "city": "Paderborn",
+    "slug": "paderborn",
+    "state": "Nordrhein-Westfalen",
+    "population": 155300,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 56,
+    "city": "Neuss",
+    "slug": "neuss",
+    "state": "Nordrhein-Westfalen",
+    "population": 154955,
+    "official": [
+      {
+        "title": "Stadt Neuss: Behindertenparkplätze",
+        "govdata": "https://www.govdata.de/suche/daten/stadt-neuss-behindertenparkplatze",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "CSV",
+            "url": "https://opendata.rhein-kreis-neuss.de/api/v2/catalog/datasets/stadt-neuss-behindertenparkplaetze/exports/csv?use_labels=true"
+          },
+          {
+            "format": "JSON",
+            "url": "https://opendata.rhein-kreis-neuss.de/api/v2/catalog/datasets/stadt-neuss-behindertenparkplaetze/exports/json"
+          },
+          {
+            "format": "GEOJSON",
+            "url": "https://opendata.rhein-kreis-neuss.de/api/v2/catalog/datasets/stadt-neuss-behindertenparkplaetze/exports/geojson"
+          },
+          {
+            "format": "JSON",
+            "url": "https://opendata.rhein-kreis-neuss.de/api/v2/catalog/datasets/stadt-neuss-behindertenparkplaetze/exports/jsonl"
+          },
+          {
+            "format": "KML",
+            "url": "https://opendata.rhein-kreis-neuss.de/api/v2/catalog/datasets/stadt-neuss-behindertenparkplaetze/exports/kml"
+          },
+          {
+            "format": "SHP",
+            "url": "https://opendata.rhein-kreis-neuss.de/api/v2/catalog/datasets/stadt-neuss-behindertenparkplaetze/exports/shp"
+          },
+          {
+            "format": "XLS",
+            "url": "https://opendata.rhein-kreis-neuss.de/api/v2/catalog/datasets/stadt-neuss-behindertenparkplaetze/exports/xls?use_labels=true"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
+    "rank": 57,
+    "city": "Ingolstadt",
+    "slug": "ingolstadt",
+    "state": "Bayern",
+    "population": 143100,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 58,
+    "city": "Offenbach am Main",
+    "slug": "offenbach",
+    "state": "Hessen",
+    "population": 142000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 59,
+    "city": "Fürth",
+    "slug": "fuerth",
+    "state": "Bayern",
+    "population": 131000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 60,
+    "city": "Ulm",
+    "slug": "ulm",
+    "state": "Baden-Württemberg",
+    "population": 129000,
+    "official": [
+      {
+        "title": "Behindertenparkplätze Ulm",
+        "govdata": "https://www.govdata.de/suche/daten/behindertenparkplatze-ulm4f0be",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "GEOJSON",
+            "url": "https://datenhub.ulm.de/ckan/dataset/694e940c-6255-472a-865b-2f36c726f13e/resource/546b9525-236a-4be8-8bca-74618a0e7118/download/blaue_parkplatze_web.geojson"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
+    "rank": 61,
+    "city": "Heilbronn",
+    "slug": "heilbronn",
+    "state": "Baden-Württemberg",
+    "population": 128600,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 62,
+    "city": "Pforzheim",
+    "slug": "pforzheim",
+    "state": "Baden-Württemberg",
+    "population": 128200,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 63,
+    "city": "Wolfsburg",
+    "slug": "wolfsburg",
+    "state": "Niedersachsen",
+    "population": 128000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 64,
+    "city": "Würzburg",
+    "slug": "wuerzburg",
+    "state": "Bayern",
+    "population": 127900,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 65,
+    "city": "Göttingen",
+    "slug": "goettingen",
+    "state": "Niedersachsen",
+    "population": 121000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 66,
+    "city": "Reutlingen",
+    "slug": "reutlingen",
+    "state": "Baden-Württemberg",
+    "population": 118000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 67,
+    "city": "Bottrop",
+    "slug": "bottrop",
+    "state": "Nordrhein-Westfalen",
+    "population": 117400,
+    "official": [
+      {
+        "title": "Behindertenparkplätze in Bottrop",
+        "govdata": "https://www.govdata.de/suche/daten/behindertenparkplatze-in-bottrop51f3f",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://gis.bottrop.de/arcgis/services/Themenkarten/Parkplaetze/MapServer/WFSServer?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAME=Behinderten_Parkplaetze__Punkte_%2CBehinderten_Parkplaetze__Polygone_&outputFormat=SHAPE%2BZIP"
+          },
+          {
+            "format": "WFS",
+            "url": "https://gis.bottrop.de/arcgis/services/Themenkarten/Parkplaetze/MapServer/WFSServer?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAME=Behinderten_Parkplaetze__Punkte_%2CBehinderten_Parkplaetze__Polygone_&outputFormat=GeoJSON"
+          },
+          {
+            "format": "WFS",
+            "url": "https://gis.bottrop.de/arcgis/services/Themenkarten/Parkplaetze/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+          }
+        ]
+      },
+      {
+        "title": "Parkmöglichkeiten in der Innenstadt Bottrop",
+        "govdata": "https://www.govdata.de/suche/daten/parkmoglichkeiten-in-der-innenstadt-bottrop2db8f",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://gis.bottrop.de/arcgis/services/Themenkarten/Parkplaetze/MapServer/WFSServer?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAME=Parkm%C3%B6glichkeiten_Innenstadt__Punkte_%2CParkm%C3%B6glichkeiten_Innenstadt__Polygone_&outputFormat=SHAPE%2BZIP"
+          },
+          {
+            "format": "WFS",
+            "url": "https://gis.bottrop.de/arcgis/services/Themenkarten/Parkplaetze/MapServer/WFSServer?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAME=Parkm%C3%B6glichkeiten_Innenstadt__Punkte_%2CParkm%C3%B6glichkeiten_Innenstadt__Polygone_&outputFormat=geoJSON"
+          },
+          {
+            "format": "WFS",
+            "url": "https://gis.bottrop.de/arcgis/services/Themenkarten/Parkplaetze/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+          }
+        ]
+      },
+      {
+        "title": "Park & Ride Standorte Bottrop",
+        "govdata": "https://www.govdata.de/suche/daten/park-ride-standorte-bottropac604",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://gis.bottrop.de/arcgis/services/Themenkarten/Parkplaetze/MapServer/WFSServer?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAME=Park_u_Ride_Bottrop&outputFormat=SHAPE%2BZIP"
+          },
+          {
+            "format": "WFS",
+            "url": "https://gis.bottrop.de/arcgis/services/Themenkarten/Parkplaetze/MapServer/WFSServer?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAME=Park_u_Ride_Bottrop&outputFormat=geoJSON"
+          },
+          {
+            "format": "WFS",
+            "url": "https://gis.bottrop.de/arcgis/services/Themenkarten/Parkplaetze/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
+    "rank": 68,
+    "city": "Erlangen",
+    "slug": "erlangen",
+    "state": "Bayern",
+    "population": 116300,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 69,
+    "city": "Remscheid",
+    "slug": "remscheid",
+    "state": "Nordrhein-Westfalen",
+    "population": 116000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 70,
+    "city": "Koblenz",
+    "slug": "koblenz",
+    "state": "Rheinland-Pfalz",
+    "population": 115000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 71,
+    "city": "Bremerhaven",
+    "slug": "bremerhaven",
+    "state": "Bremen",
+    "population": 113600,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 72,
+    "city": "Recklinghausen",
+    "slug": "recklinghausen",
+    "state": "Nordrhein-Westfalen",
+    "population": 112600,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 73,
+    "city": "Bergisch Gladbach",
+    "slug": "bergisch-gladbach",
+    "state": "Nordrhein-Westfalen",
+    "population": 112000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 74,
+    "city": "Trier",
+    "slug": "trier",
+    "state": "Rheinland-Pfalz",
+    "population": 111500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 75,
+    "city": "Jena",
+    "slug": "jena",
+    "state": "Thüringen",
+    "population": 111300,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 76,
+    "city": "Salzgitter",
+    "slug": "salzgitter",
+    "state": "Niedersachsen",
+    "population": 105500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 77,
+    "city": "Moers",
+    "slug": "moers",
+    "state": "Nordrhein-Westfalen",
+    "population": 104500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 78,
+    "city": "Siegen",
+    "slug": "siegen",
+    "state": "Nordrhein-Westfalen",
+    "population": 103000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 79,
+    "city": "Gütersloh",
+    "slug": "guetersloh",
+    "state": "Nordrhein-Westfalen",
+    "population": 102000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 80,
+    "city": "Hildesheim",
+    "slug": "hildesheim",
+    "state": "Niedersachsen",
+    "population": 101000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 81,
+    "city": "Kaiserslautern",
+    "slug": "kaiserslautern",
+    "state": "Rheinland-Pfalz",
+    "population": 100600,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 82,
+    "city": "Cottbus",
+    "slug": "cottbus",
+    "state": "Brandenburg",
+    "population": 98000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 83,
+    "city": "Witten",
+    "slug": "witten",
+    "state": "Nordrhein-Westfalen",
+    "population": 96000,
+    "official": [],
+    "plan": "osm"
+  }
+]

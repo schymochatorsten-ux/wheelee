@@ -31,12 +31,14 @@ function spotLine(spot: ParkingSpot): string {
 
 export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect }: SpotListProps) {
   const crowdsourced = cities.filter((city) => city.coverage === "crowdsourced");
+  const official = cities.filter((city) => city.coverage === "official");
+  const officialSpaces = official.reduce((sum, city) => sum + city.spaceCount, 0);
 
   return (
     <div className="space-y-6">
       <section aria-labelledby="nearby-heading">
         <h2 id="nearby-heading" className="text-base font-semibold">
-          {hasUserPosition ? "Parkplätze in der Nähe" : "Alle Parkplätze"}
+          {hasUserPosition ? "Parkplätze in der Nähe" : "Nächste Parkplätze"}
         </h2>
         {!hasUserPosition && (
           <p className="mt-1 text-sm text-neutral-500">
@@ -96,23 +98,39 @@ export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect 
         <h2 id="sources-heading" className="font-semibold text-neutral-700 dark:text-neutral-300">
           Woher die Daten kommen
         </h2>
-        <ul className="mt-1 space-y-1">
-          {cities.map((city) => (
-            <li key={city.slug}>
-              <span className="font-medium">{city.name}</span>: {city.spotCount} Standorte mit{" "}
-              {city.spaceCount} Stellplätzen · {city.source}
-            </li>
-          ))}
-        </ul>
+
+        <p className="mt-1">
+          {official.length} {official.length === 1 ? "Stadt stellt" : "Städte stellen"} eine
+          amtliche Liste bereit ({officialSpaces.toLocaleString("de-DE")} Stellplätze). Für{" "}
+          {crowdsourced.length} weitere{crowdsourced.length === 1 ? " Stadt" : " Städte"} gibt es
+          keine, dort stammen die Daten aus OpenStreetMap.
+        </p>
+
         {crowdsourced.length > 0 && (
           <p className="mt-2">
-            Für {crowdsourced.map((city) => city.name).join(" und ")} gibt es keine Liste der
-            Stadtverwaltung. Die Daten stammen aus OpenStreetMap, zeigen überwiegend Parkplätze mit
-            ausgewiesenen Behindertenstellplätzen statt einzelner Stellplätze am Straßenrand und
-            sind unvollständig – ein fehlender Eintrag heißt nicht, dass es dort keinen
+            Die OpenStreetMap-Daten zeigen überwiegend Parkplätze mit ausgewiesenen
+            Behindertenstellplätzen statt einzelner Stellplätze am Straßenrand und sind
+            unvollständig – ein fehlender Eintrag heißt dort nicht, dass es keinen
             Behindertenparkplatz gibt.
           </p>
         )}
+
+        {/* Die vollständige Liste gehört dazu, soll die Seite aber nicht fluten. */}
+        <details className="mt-2">
+          <summary className="cursor-pointer py-2 font-medium text-neutral-700 dark:text-neutral-300">
+            Alle {cities.length} Städte mit Quelle
+          </summary>
+          <ul className="mt-1 space-y-1">
+            {[...cities]
+              .sort((a, b) => a.name.localeCompare(b.name, "de-DE"))
+              .map((city) => (
+                <li key={city.slug}>
+                  <span className="font-medium">{city.name}</span>: {city.spotCount} Standorte,{" "}
+                  {city.spaceCount} Stellplätze · {city.source}
+                </li>
+              ))}
+          </ul>
+        </details>
       </section>
     </div>
   );

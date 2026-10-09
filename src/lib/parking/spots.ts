@@ -1,7 +1,5 @@
 import type { ParkingSpot } from "../types";
-import frankfurt from "../../../data/frankfurt.json";
-import idstein from "../../../data/idstein.json";
-import weissenhorn from "../../../data/weissenhorn.json";
+import { seeds } from "./seeds.generated";
 
 /**
  * Zugriff auf die Parkplatzdaten.
@@ -10,6 +8,13 @@ import weissenhorn from "../../../data/weissenhorn.json";
  * Funktionen hier sind die einzige Stelle, die das weiß – wenn die Daten später
  * aus einer Datenbank kommen, ändert sich nur dieses Modul.
  */
+
+export interface SeedFile {
+  city: { slug: string; name: string; center: { lat: number; lng: number } };
+  source: string;
+  generatedAt: string;
+  spots: ParkingSpot[];
+}
 
 export interface CityInfo {
   slug: string;
@@ -20,31 +25,14 @@ export interface CityInfo {
   source: string;
   /** Anzahl der Standorte dieser Stadt. */
   spotCount: number;
+  /** Summe der Stellplätze, nicht nur der Standorte. */
+  spaceCount: number;
   /**
    * Stammt die Liste von der Stadtverwaltung (vollständig) oder aus
    * OpenStreetMap (unvollständig)? Das muss die Oberfläche sagen können.
    */
   coverage: "official" | "crowdsourced";
-  /** Summe der Stellplätze, nicht nur der Standorte. */
-  spaceCount: number;
 }
-
-interface SeedFile {
-  city: { slug: string; name: string; center: { lat: number; lng: number } };
-  source: string;
-  generatedAt: string;
-  spots: ParkingSpot[];
-}
-
-/**
- * Reihenfolge bestimmt die Vorauswahl der Karte: Frankfurt ist die größte
- * Stadt und hat die einzige amtliche Liste.
- */
-const seeds: { seed: SeedFile; coverage: CityInfo["coverage"] }[] = [
-  { seed: frankfurt as SeedFile, coverage: "official" },
-  { seed: idstein as SeedFile, coverage: "crowdsourced" },
-  { seed: weissenhorn as SeedFile, coverage: "crowdsourced" },
-];
 
 export function getCities(): CityInfo[] {
   return seeds.map(({ seed, coverage }) => ({

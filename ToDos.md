@@ -53,6 +53,25 @@ Zentrale Aufgabenliste zum Projekt (Grundlage: [Konzept.md](Konzept.md)).
 - [ ] 2a.6 Weitere Städte mit amtlichem Datensatz anbinden – GovData listet u. a. Berlin, Köln, Düsseldorf, Bochum, Neuss, Bottrop, Gelsenkirchen, Heidelberg, Freiburg, Ulm und gebündelte Daten für NRW und Baden-Württemberg
 - [ ] 2a.7 Lizenzangabe je Stadt im Datenmodell führen und in der Oberfläche anzeigen (bisher nur als Freitext in `source`)
 
+## 2c. Alle deutschen Großstädte
+
+Laufender Stand: **[data/\_import-status.md](data/_import-status.md)** – von den Skripten selbst geschrieben, nach jeder einzelnen Stadt aktualisiert.
+
+- [x] 2c.1 Städteregister mit allen 83 Großstädten ab 100.000 Einwohnern, nach Einwohnerzahl sortiert (`scripts/import/german-cities.mts`)
+- [x] 2c.2 `npm run sources:scan` prüft alle 83 Städte in einem Durchgang gegen GovData – 21 haben eine amtliche, maschinenlesbare Quelle
+- [x] 2c.3 Generischer Importer für amtliche Geodaten: WFS (GeoJSON und GML), ArcGIS-REST, GeoJSON-Datei, JSON, CSV – mit automatischer Feldzuordnung
+- [x] 2c.4 Fortschrittsverwaltung `scripts/import/status.mts`: schreibt nach jeder Stadt Quelle, Abruf-URL, Anzahlen und Probleme fort
+- [x] 2c.5 Schutz gegen falsch gedeutete Koordinatensysteme: UTM-Zone aus `srsName`, zusätzlich Abstandsprüfung zum Stadtmittelpunkt
+- [x] 2c.6 Adress-Rückwärtssuche für Quellen ohne Straßennamen (Dresden liefert nur Barrierefreiheitsdaten)
+- [x] 2c.7 **Alle 83 Großstädte importiert** – 13.370 Standorte mit 33.209 Stellplätzen, davon 16 Städte aus amtlicher Quelle
+- [x] 2c.8 Seed-Index wird erzeugt statt gepflegt (`npm run import:index`) – eine importierte Stadt kann nicht mehr versehentlich aus der App fallen
+- [x] 2c.9 Oberfläche für 84 Städte angepasst: Liste auf die 100 nächsten begrenzt, Quellenangaben zusammengefasst
+- [ ] 2c.11 Fünf Städte haben eine amtliche Quelle, die der Importer nicht lesen konnte – dort steht derzeit OSM: **Bochum** (Portal antwortet 403), **Bielefeld** (CKAN-Ressourcenseiten), **Karlsruhe** (ArcGIS-Pfade liefern 404), **Kiel**, **Krefeld**
+- [ ] 2c.12 Regensburg: weder amtliche Quelle noch OSM-Treffer – prüfen, ob die Abfrage oder die Datenlage schuld ist
+- [ ] 2c.13 Stichproben gegen die Quellen: bei den OSM-Städten wirken einzelne Zahlen niedrig (Wuppertal 66 Standorte bei 359.000 Einwohnern)
+- [ ] 2c.9 Lizenzangabe je Stadt sauber führen – GovData liefert sie oft nicht, dann steht „nicht angegeben"
+- [ ] 2c.10 Dresdens Datensatz enthält Barrierefreiheitsangaben je Stellplatz (Breite, Neigung, Belag, Bordabsenkung). Das geht über das Konzept hinaus, wäre für Rollstuhlfahrer:innen aber sehr wertvoll – als Erweiterung prüfen.
+
 ## 2b. Weitere Städte: Idstein und Weißenhorn
 
 - [x] 2b.1 Quellenrecherche: **keine** offene Liste der Stadtverwaltung für Idstein oder Weißenhorn – bestätigt über GovData (0 von 122 bundesweiten Datensätzen passen) und über die Websites beider Städte; OpenStreetMap ist die einzige frei nutzbare Quelle
