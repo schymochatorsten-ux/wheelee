@@ -344,16 +344,16 @@
         "license": "nicht angegeben",
         "resources": [
           {
+            "format": "WFS",
+            "url": "https://geoportal.stadt-koeln.de/arcgis/services/verkehr/behindertenparkplaetze/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+          },
+          {
             "format": "ARCGIS",
             "url": "https://geoportal.stadt-koeln.de/arcgis/rest/services/basiskarten/stadtplanthemen/MapServer/0?f=json&amp%3Bpretty=true"
           },
           {
             "format": "ARCGIS",
             "url": "https://geoportal.stadt-koeln.de/arcgis/rest/services/verkehr/behindertenparkplaetze/MapServer?f=pjson"
-          },
-          {
-            "format": "WFS",
-            "url": "https://geoportal.stadt-koeln.de/arcgis/services/verkehr/behindertenparkplaetze/MapServer/WFSServer?request=GetCapabilities&service=WFS"
           }
         ]
       },
@@ -399,12 +399,12 @@
         "license": "nicht angegeben",
         "resources": [
           {
-            "format": "GML",
-            "url": "https://geodatenkatalog.frankfurt.de/geonetwork/srv/api/records/5f02f6f8-e9f4-431d-a610-d6b6ab24b1f1/formatters/xml"
-          },
-          {
             "format": "WFS",
             "url": "https://geowebdienste.frankfurt.de/Parken?service=WFS&version=1.1.0&request=GetCapabilities"
+          },
+          {
+            "format": "GML",
+            "url": "https://geodatenkatalog.frankfurt.de/geonetwork/srv/api/records/5f02f6f8-e9f4-431d-a610-d6b6ab24b1f1/formatters/xml"
           }
         ]
       }
@@ -635,16 +635,16 @@
         "license": "nicht angegeben",
         "resources": [
           {
-            "format": "CSV",
-            "url": "https://open-data.bielefeld.de/dataset/9d1ac93f-849d-4082-9ed2-663b2abdc3a2/resource/0c4276b3-cbf0-4dde-bdc3-607f3cca7ff9"
-          },
-          {
             "format": "SHP",
             "url": "https://open-data.bielefeld.de/dataset/9d1ac93f-849d-4082-9ed2-663b2abdc3a2/resource/35d9100d-edc6-43ad-9748-464d51bac0ea"
           },
           {
             "format": "WFS",
             "url": "https://open-data.bielefeld.de/dataset/9d1ac93f-849d-4082-9ed2-663b2abdc3a2/resource/0e9fcc5d-aa8d-4da0-bca0-723b8ff0054e"
+          },
+          {
+            "format": "CSV",
+            "url": "https://open-data.bielefeld.de/dataset/9d1ac93f-849d-4082-9ed2-663b2abdc3a2/resource/0c4276b3-cbf0-4dde-bdc3-607f3cca7ff9"
           }
         ]
       },
@@ -654,8 +654,8 @@
         "license": "nicht angegeben",
         "resources": [
           {
-            "format": "WFS",
-            "url": "https://open-data.bielefeld.de/dataset/c862b66c-e7ff-48f0-af0c-c9032186c46c/resource/85055693-eb62-406a-861a-d52f5c08acb5"
+            "format": "SHP",
+            "url": "https://open-data.bielefeld.de/dataset/c862b66c-e7ff-48f0-af0c-c9032186c46c/resource/0822e6ce-429e-4618-b228-0ca2343b83d6"
           },
           {
             "format": "CSV",
@@ -666,8 +666,8 @@
             "url": "https://open-data.bielefeld.de/dataset/c862b66c-e7ff-48f0-af0c-c9032186c46c/resource/7efac644-c02e-4026-8505-a6c761994b2c"
           },
           {
-            "format": "SHP",
-            "url": "https://open-data.bielefeld.de/dataset/c862b66c-e7ff-48f0-af0c-c9032186c46c/resource/0822e6ce-429e-4618-b228-0ca2343b83d6"
+            "format": "WFS",
+            "url": "https://open-data.bielefeld.de/dataset/c862b66c-e7ff-48f0-af0c-c9032186c46c/resource/85055693-eb62-406a-861a-d52f5c08acb5"
           }
         ]
       },
@@ -677,16 +677,16 @@
         "license": "nicht angegeben",
         "resources": [
           {
+            "format": "GML",
+            "url": "https://open-data.bielefeld.de/dataset/ace6b463-38be-4bff-9f97-fc04226800f0/resource/5f1724f2-b7e1-44e6-8e1e-0f00026aa0b8"
+          },
+          {
             "format": "CSV",
             "url": "https://open-data.bielefeld.de/dataset/ace6b463-38be-4bff-9f97-fc04226800f0/resource/646f8ae1-998c-4a4d-b550-5b0c2cc3b258"
           },
           {
             "format": "WFS",
             "url": "https://open-data.bielefeld.de/dataset/ace6b463-38be-4bff-9f97-fc04226800f0/resource/c6566236-0bdf-4bb5-b04a-e69daf2d7983"
-          },
-          {
-            "format": "GML",
-            "url": "https://open-data.bielefeld.de/dataset/ace6b463-38be-4bff-9f97-fc04226800f0/resource/5f1724f2-b7e1-44e6-8e1e-0f00026aa0b8"
           }
         ]
       }
@@ -1559,6 +1559,10 @@
         "license": "nicht angegeben",
         "resources": [
           {
+            "format": "XLS",
+            "url": "https://opendata.rhein-kreis-neuss.de/api/v2/catalog/datasets/stadt-neuss-behindertenparkplaetze/exports/xls?use_labels=true"
+          },
+          {
             "format": "CSV",
             "url": "https://opendata.rhein-kreis-neuss.de/api/v2/catalog/datasets/stadt-neuss-behindertenparkplaetze/exports/csv?use_labels=true"
           },
@@ -1567,8 +1571,8 @@
             "url": "https://opendata.rhein-kreis-neuss.de/api/v2/catalog/datasets/stadt-neuss-behindertenparkplaetze/exports/json"
           },
           {
-            "format": "GEOJSON",
-            "url": "https://opendata.rhein-kreis-neuss.de/api/v2/catalog/datasets/stadt-neuss-behindertenparkplaetze/exports/geojson"
+            "format": "SHP",
+            "url": "https://opendata.rhein-kreis-neuss.de/api/v2/catalog/datasets/stadt-neuss-behindertenparkplaetze/exports/shp"
           },
           {
             "format": "JSON",
@@ -1579,12 +1583,8 @@
             "url": "https://opendata.rhein-kreis-neuss.de/api/v2/catalog/datasets/stadt-neuss-behindertenparkplaetze/exports/kml"
           },
           {
-            "format": "SHP",
-            "url": "https://opendata.rhein-kreis-neuss.de/api/v2/catalog/datasets/stadt-neuss-behindertenparkplaetze/exports/shp"
-          },
-          {
-            "format": "XLS",
-            "url": "https://opendata.rhein-kreis-neuss.de/api/v2/catalog/datasets/stadt-neuss-behindertenparkplaetze/exports/xls?use_labels=true"
+            "format": "GEOJSON",
+            "url": "https://opendata.rhein-kreis-neuss.de/api/v2/catalog/datasets/stadt-neuss-behindertenparkplaetze/exports/geojson"
           }
         ]
       }
@@ -1726,15 +1726,15 @@
         "resources": [
           {
             "format": "WFS",
+            "url": "https://gis.bottrop.de/arcgis/services/Themenkarten/Parkplaetze/MapServer/WFSServer?request=GetCapabilities&service=WFS"
+          },
+          {
+            "format": "WFS",
             "url": "https://gis.bottrop.de/arcgis/services/Themenkarten/Parkplaetze/MapServer/WFSServer?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAME=Parkm%C3%B6glichkeiten_Innenstadt__Punkte_%2CParkm%C3%B6glichkeiten_Innenstadt__Polygone_&outputFormat=SHAPE%2BZIP"
           },
           {
             "format": "WFS",
             "url": "https://gis.bottrop.de/arcgis/services/Themenkarten/Parkplaetze/MapServer/WFSServer?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAME=Parkm%C3%B6glichkeiten_Innenstadt__Punkte_%2CParkm%C3%B6glichkeiten_Innenstadt__Polygone_&outputFormat=geoJSON"
-          },
-          {
-            "format": "WFS",
-            "url": "https://gis.bottrop.de/arcgis/services/Themenkarten/Parkplaetze/MapServer/WFSServer?request=GetCapabilities&service=WFS"
           }
         ]
       },
@@ -1879,6 +1879,15 @@
   },
   {
     "rank": 81,
+    "city": "Hanau",
+    "slug": "hanau",
+    "state": "Hessen",
+    "population": 100800,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 82,
     "city": "Kaiserslautern",
     "slug": "kaiserslautern",
     "state": "Rheinland-Pfalz",
@@ -1887,7 +1896,7 @@
     "plan": "osm"
   },
   {
-    "rank": 82,
+    "rank": 83,
     "city": "Cottbus",
     "slug": "cottbus",
     "state": "Brandenburg",
@@ -1896,11 +1905,1018 @@
     "plan": "osm"
   },
   {
-    "rank": 83,
+    "rank": 84,
     "city": "Witten",
     "slug": "witten",
     "state": "Nordrhein-Westfalen",
     "population": 96000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 85,
+    "city": "Schwerin",
+    "slug": "schwerin",
+    "state": "Mecklenburg-Vorpommern",
+    "population": 96000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 86,
+    "city": "Ludwigsburg",
+    "slug": "ludwigsburg",
+    "state": "Baden-Württemberg",
+    "population": 94000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 87,
+    "city": "Esslingen am Neckar",
+    "slug": "esslingen",
+    "state": "Baden-Württemberg",
+    "population": 93500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 88,
+    "city": "Gießen",
+    "slug": "giessen",
+    "state": "Hessen",
+    "population": 92900,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 89,
+    "city": "Iserlohn",
+    "slug": "iserlohn",
+    "state": "Nordrhein-Westfalen",
+    "population": 92400,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 90,
+    "city": "Düren",
+    "slug": "dueren",
+    "state": "Nordrhein-Westfalen",
+    "population": 92200,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 91,
+    "city": "Flensburg",
+    "slug": "flensburg",
+    "state": "Schleswig-Holstein",
+    "population": 92000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 92,
+    "city": "Gera",
+    "slug": "gera",
+    "state": "Thüringen",
+    "population": 91800,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 93,
+    "city": "Tübingen",
+    "slug": "tuebingen",
+    "state": "Baden-Württemberg",
+    "population": 91000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 94,
+    "city": "Zwickau",
+    "slug": "zwickau",
+    "state": "Sachsen",
+    "population": 87200,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 95,
+    "city": "Ratingen",
+    "slug": "ratingen",
+    "state": "Nordrhein-Westfalen",
+    "population": 87000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 96,
+    "city": "Villingen-Schwenningen",
+    "slug": "villingen-schwenningen",
+    "state": "Baden-Württemberg",
+    "population": 86300,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 97,
+    "city": "Lünen",
+    "slug": "luenen",
+    "state": "Nordrhein-Westfalen",
+    "population": 86000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 98,
+    "city": "Konstanz",
+    "slug": "konstanz",
+    "state": "Baden-Württemberg",
+    "population": 85000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 99,
+    "city": "Worms",
+    "slug": "worms",
+    "state": "Rheinland-Pfalz",
+    "population": 84000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 100,
+    "city": "Marl",
+    "slug": "marl",
+    "state": "Nordrhein-Westfalen",
+    "population": 83500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 101,
+    "city": "Minden",
+    "slug": "minden",
+    "state": "Nordrhein-Westfalen",
+    "population": 82000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 102,
+    "city": "Velbert",
+    "slug": "velbert",
+    "state": "Nordrhein-Westfalen",
+    "population": 81000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 103,
+    "city": "Neumünster",
+    "slug": "neumuenster",
+    "state": "Schleswig-Holstein",
+    "population": 80500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 104,
+    "city": "Norderstedt",
+    "slug": "norderstedt",
+    "state": "Schleswig-Holstein",
+    "population": 80000,
+    "official": [
+      {
+        "title": "Parkplätze",
+        "govdata": "https://www.govdata.de/suche/daten/parkplatzebb4ee",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geoservice.norderstedt.de/geoserver/pub/wfs?SERVICE=WFS&version=2.0.0&request=GetCapabilities"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geoservice.norderstedt.de/geoserver/pub/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=pub:parken&outputFormat=GML3"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geoservice.norderstedt.de/geoserver/pub/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=pub:parken&outputFormat=SHAPE-ZIP"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geoservice.norderstedt.de/geoserver/pub/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=pub:parken&outputFormat=CSV"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geoservice.norderstedt.de/geoserver/pub/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=pub:parken&outputFormat=application/json"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
+    "rank": 105,
+    "city": "Dessau-Roßlau",
+    "slug": "dessau-rosslau",
+    "state": "Sachsen-Anhalt",
+    "population": 78500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 106,
+    "city": "Lüneburg",
+    "slug": "lueneburg",
+    "state": "Niedersachsen",
+    "population": 78000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 107,
+    "city": "Delmenhorst",
+    "slug": "delmenhorst",
+    "state": "Niedersachsen",
+    "population": 77500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 108,
+    "city": "Bamberg",
+    "slug": "bamberg",
+    "state": "Bayern",
+    "population": 77200,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 109,
+    "city": "Marburg",
+    "slug": "marburg",
+    "state": "Hessen",
+    "population": 77000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 110,
+    "city": "Viersen",
+    "slug": "viersen",
+    "state": "Nordrhein-Westfalen",
+    "population": 76800,
+    "official": [
+      {
+        "title": "Wesentliche Parkplätze Radverkehr Kreis Viersen",
+        "govdata": "https://www.govdata.de/suche/daten/wesentliche-parkplatze-radverkehr-kreis-viersen7503d",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geo.kreis-viersen.de/ows/sammeldienst?SERVICE=WFS&REQUEST=GetFeature&VERSION=1.1.0&TYPENAME=parkplaetze_radverkehr_kvie&SRSNAME=EPSG:25832&outputFormat=csv"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geo.kreis-viersen.de/ows/sammeldienst?SERVICE=WFS&REQUEST=GetFeature&VERSION=1.1.0&TYPENAME=parkplaetze_radverkehr_kvie&SRSNAME=EPSG:25832&outputFormat=GeoJSON"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geo.kreis-viersen.de/ows/sammeldienst?SERVICE=WFS&REQUEST=GetCapabilities"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geo.kreis-viersen.de/ows/sammeldienst?SERVICE=WFS&REQUEST=GetFeature&VERSION=1.1.0&TYPENAME=parkplaetze_radverkehr_kvie&SRSNAME=EPSG:25832&outputFormat=SHP"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geo.kreis-viersen.de/ows/sammeldienst?SERVICE=WFS&REQUEST=GetFeature&VERSION=1.1.0&TYPENAME=parkplaetze_radverkehr_kvie&SRSNAME=EPSG:25832&outputFormat=GPKG"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geo.kreis-viersen.de/ows/sammeldienst?SERVICE=WFS&REQUEST=GetFeature&VERSION=1.1.0&TYPENAME=parkplaetze_radverkehr_kvie&SRSNAME=EPSG:25832&outputFormat=KML"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geo.kreis-viersen.de/ows/sammeldienst?SERVICE=WFS&REQUEST=GetFeature&VERSION=1.1.0&TYPENAME=parkplaetze_radverkehr_kvie&SRSNAME=EPSG:25832&outputFormat=GPX"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
+    "rank": 111,
+    "city": "Rheine",
+    "slug": "rheine",
+    "state": "Nordrhein-Westfalen",
+    "population": 76000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 112,
+    "city": "Gladbeck",
+    "slug": "gladbeck",
+    "state": "Nordrhein-Westfalen",
+    "population": 75500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 113,
+    "city": "Troisdorf",
+    "slug": "troisdorf",
+    "state": "Nordrhein-Westfalen",
+    "population": 75000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 114,
+    "city": "Bayreuth",
+    "slug": "bayreuth",
+    "state": "Bayern",
+    "population": 74800,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 115,
+    "city": "Dorsten",
+    "slug": "dorsten",
+    "state": "Nordrhein-Westfalen",
+    "population": 74500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 116,
+    "city": "Detmold",
+    "slug": "detmold",
+    "state": "Nordrhein-Westfalen",
+    "population": 74000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 117,
+    "city": "Landshut",
+    "slug": "landshut",
+    "state": "Bayern",
+    "population": 73500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 118,
+    "city": "Castrop-Rauxel",
+    "slug": "castrop-rauxel",
+    "state": "Nordrhein-Westfalen",
+    "population": 73000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 119,
+    "city": "Lüdenscheid",
+    "slug": "luedenscheid",
+    "state": "Nordrhein-Westfalen",
+    "population": 72500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 120,
+    "city": "Arnsberg",
+    "slug": "arnsberg",
+    "state": "Nordrhein-Westfalen",
+    "population": 72200,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 121,
+    "city": "Brandenburg an der Havel",
+    "slug": "brandenburg-havel",
+    "state": "Brandenburg",
+    "population": 72000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 122,
+    "city": "Aschaffenburg",
+    "slug": "aschaffenburg",
+    "state": "Bayern",
+    "population": 71500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 123,
+    "city": "Bocholt",
+    "slug": "bocholt",
+    "state": "Nordrhein-Westfalen",
+    "population": 71000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 124,
+    "city": "Celle",
+    "slug": "celle",
+    "state": "Niedersachsen",
+    "population": 70000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 125,
+    "city": "Fulda",
+    "slug": "fulda",
+    "state": "Hessen",
+    "population": 69000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 126,
+    "city": "Kempten (Allgäu)",
+    "slug": "kempten",
+    "state": "Bayern",
+    "population": 68900,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 127,
+    "city": "Aalen",
+    "slug": "aalen",
+    "state": "Baden-Württemberg",
+    "population": 68500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 128,
+    "city": "Lippstadt",
+    "slug": "lippstadt",
+    "state": "Nordrhein-Westfalen",
+    "population": 68000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 129,
+    "city": "Dinslaken",
+    "slug": "dinslaken",
+    "state": "Nordrhein-Westfalen",
+    "population": 67500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 130,
+    "city": "Herford",
+    "slug": "herford",
+    "state": "Nordrhein-Westfalen",
+    "population": 67000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 131,
+    "city": "Kerpen",
+    "slug": "kerpen",
+    "state": "Nordrhein-Westfalen",
+    "population": 66500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 132,
+    "city": "Rüsselsheim am Main",
+    "slug": "ruesselsheim",
+    "state": "Hessen",
+    "population": 66000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 133,
+    "city": "Neuwied",
+    "slug": "neuwied",
+    "state": "Rheinland-Pfalz",
+    "population": 65500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 134,
+    "city": "Weimar",
+    "slug": "weimar",
+    "state": "Thüringen",
+    "population": 65200,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 135,
+    "city": "Sindelfingen",
+    "slug": "sindelfingen",
+    "state": "Baden-Württemberg",
+    "population": 65000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 136,
+    "city": "Rosenheim",
+    "slug": "rosenheim",
+    "state": "Bayern",
+    "population": 64500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 137,
+    "city": "Plauen",
+    "slug": "plauen",
+    "state": "Sachsen",
+    "population": 64000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 138,
+    "city": "Grevenbroich",
+    "slug": "grevenbroich",
+    "state": "Nordrhein-Westfalen",
+    "population": 63500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 139,
+    "city": "Neubrandenburg",
+    "slug": "neubrandenburg",
+    "state": "Mecklenburg-Vorpommern",
+    "population": 63000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 140,
+    "city": "Friedrichshafen",
+    "slug": "friedrichshafen",
+    "state": "Baden-Württemberg",
+    "population": 62500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 141,
+    "city": "Garbsen",
+    "slug": "garbsen",
+    "state": "Niedersachsen",
+    "population": 62200,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 142,
+    "city": "Bergheim",
+    "slug": "bergheim",
+    "state": "Nordrhein-Westfalen",
+    "population": 62000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 143,
+    "city": "Hürth",
+    "slug": "huerth",
+    "state": "Nordrhein-Westfalen",
+    "population": 61500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 144,
+    "city": "Schwäbisch Gmünd",
+    "slug": "schwaebisch-gmuend",
+    "state": "Baden-Württemberg",
+    "population": 61000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 145,
+    "city": "Offenburg",
+    "slug": "offenburg",
+    "state": "Baden-Württemberg",
+    "population": 60500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 146,
+    "city": "Greifswald",
+    "slug": "greifswald",
+    "state": "Mecklenburg-Vorpommern",
+    "population": 60000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 147,
+    "city": "Wesel",
+    "slug": "wesel",
+    "state": "Nordrhein-Westfalen",
+    "population": 59800,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 148,
+    "city": "Göppingen",
+    "slug": "goeppingen",
+    "state": "Baden-Württemberg",
+    "population": 59500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 149,
+    "city": "Neu-Ulm",
+    "slug": "neu-ulm",
+    "state": "Bayern",
+    "population": 59200,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 150,
+    "city": "Stralsund",
+    "slug": "stralsund",
+    "state": "Mecklenburg-Vorpommern",
+    "population": 59000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 151,
+    "city": "Langenfeld (Rheinland)",
+    "slug": "langenfeld",
+    "state": "Nordrhein-Westfalen",
+    "population": 58800,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 152,
+    "city": "Unna",
+    "slug": "unna",
+    "state": "Nordrhein-Westfalen",
+    "population": 58500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 153,
+    "city": "Lingen (Ems)",
+    "slug": "lingen",
+    "state": "Niedersachsen",
+    "population": 58200,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 154,
+    "city": "Euskirchen",
+    "slug": "euskirchen",
+    "state": "Nordrhein-Westfalen",
+    "population": 58000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 155,
+    "city": "Hameln",
+    "slug": "hameln",
+    "state": "Niedersachsen",
+    "population": 57500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 156,
+    "city": "Frankfurt (Oder)",
+    "slug": "frankfurt-oder",
+    "state": "Brandenburg",
+    "population": 57000,
+    "official": [
+      {
+        "title": "WFS Parken in der Stadt Frankfurt am Main",
+        "govdata": "https://www.govdata.de/suche/daten/wfs-parken-in-der-stadt-frankfurt-am-main",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geowebdienste.frankfurt.de/Parken?service=WFS&version=1.1.0&request=GetCapabilities"
+          },
+          {
+            "format": "GML",
+            "url": "https://geodatenkatalog.frankfurt.de/geonetwork/srv/api/records/5f02f6f8-e9f4-431d-a610-d6b6ab24b1f1/formatters/xml"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
+    "rank": 157,
+    "city": "Görlitz",
+    "slug": "goerlitz",
+    "state": "Sachsen",
+    "population": 56500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 158,
+    "city": "Waiblingen",
+    "slug": "waiblingen",
+    "state": "Baden-Württemberg",
+    "population": 56300,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 159,
+    "city": "Sankt Augustin",
+    "slug": "sankt-augustin",
+    "state": "Nordrhein-Westfalen",
+    "population": 56200,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 160,
+    "city": "Hilden",
+    "slug": "hilden",
+    "state": "Nordrhein-Westfalen",
+    "population": 56100,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 161,
+    "city": "Eschweiler",
+    "slug": "eschweiler",
+    "state": "Nordrhein-Westfalen",
+    "population": 56000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 162,
+    "city": "Stolberg (Rhld.)",
+    "slug": "stolberg",
+    "state": "Nordrhein-Westfalen",
+    "population": 55900,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 163,
+    "city": "Meerbusch",
+    "slug": "meerbusch",
+    "state": "Nordrhein-Westfalen",
+    "population": 55800,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 164,
+    "city": "Baden-Baden",
+    "slug": "baden-baden",
+    "state": "Baden-Württemberg",
+    "population": 55200,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 165,
+    "city": "Bad Homburg vor der Höhe",
+    "slug": "bad-homburg",
+    "state": "Hessen",
+    "population": 55000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 166,
+    "city": "Langenhagen",
+    "slug": "langenhagen",
+    "state": "Niedersachsen",
+    "population": 54800,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 167,
+    "city": "Pulheim",
+    "slug": "pulheim",
+    "state": "Nordrhein-Westfalen",
+    "population": 54600,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 168,
+    "city": "Wetzlar",
+    "slug": "wetzlar",
+    "state": "Hessen",
+    "population": 54000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 169,
+    "city": "Nordhorn",
+    "slug": "nordhorn",
+    "state": "Niedersachsen",
+    "population": 53900,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 170,
+    "city": "Schweinfurt",
+    "slug": "schweinfurt",
+    "state": "Bayern",
+    "population": 53800,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 171,
+    "city": "Hattingen",
+    "slug": "hattingen",
+    "state": "Nordrhein-Westfalen",
+    "population": 53500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 172,
+    "city": "Willich",
+    "slug": "willich",
+    "state": "Nordrhein-Westfalen",
+    "population": 52800,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 173,
+    "city": "Ibbenbüren",
+    "slug": "ibbenbueren",
+    "state": "Nordrhein-Westfalen",
+    "population": 52000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 174,
+    "city": "Passau",
+    "slug": "passau",
+    "state": "Bayern",
+    "population": 51900,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 175,
+    "city": "Wolfenbüttel",
+    "slug": "wolfenbuettel",
+    "state": "Niedersachsen",
+    "population": 51800,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 176,
+    "city": "Elmshorn",
+    "slug": "elmshorn",
+    "state": "Schleswig-Holstein",
+    "population": 51500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 177,
+    "city": "Speyer",
+    "slug": "speyer",
+    "state": "Rheinland-Pfalz",
+    "population": 51200,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 178,
+    "city": "Bad Kreuznach",
+    "slug": "bad-kreuznach",
+    "state": "Rheinland-Pfalz",
+    "population": 51000,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 179,
+    "city": "Ravensburg",
+    "slug": "ravensburg",
+    "state": "Baden-Württemberg",
+    "population": 50900,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 180,
+    "city": "Böblingen",
+    "slug": "boeblingen",
+    "state": "Baden-Württemberg",
+    "population": 50800,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 181,
+    "city": "Gummersbach",
+    "slug": "gummersbach",
+    "state": "Nordrhein-Westfalen",
+    "population": 50700,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 182,
+    "city": "Goslar",
+    "slug": "goslar",
+    "state": "Niedersachsen",
+    "population": 50500,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 183,
+    "city": "Rastatt",
+    "slug": "rastatt",
+    "state": "Baden-Württemberg",
+    "population": 50400,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 184,
+    "city": "Peine",
+    "slug": "peine",
+    "state": "Niedersachsen",
+    "population": 50300,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 185,
+    "city": "Emden",
+    "slug": "emden",
+    "state": "Niedersachsen",
+    "population": 50200,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 186,
+    "city": "Lörrach",
+    "slug": "loerrach",
+    "state": "Baden-Württemberg",
+    "population": 50100,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 187,
+    "city": "Freising",
+    "slug": "freising",
+    "state": "Bayern",
+    "population": 50000,
     "official": [],
     "plan": "osm"
   }

@@ -1,0 +1,59 @@
+{
+  "city": {
+    "slug": "rheine",
+    "name": "Rheine",
+    "center": {
+      "lat": 52.2862669,
+      "lng": 7.4638906
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "generatedAt": "2026-10-09",
+  "spots": [
+    {
+      "id": "rheine-008f3d3c70",
+      "city": "rheine",
+      "label": "Behindertenparkplatz Rheine",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rheine",
+      "spotCount": 1,
+      "lat": 52.2790039,
+      "lng": 7.4368749,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13335486092), ODbL"
+    },
+    {
+      "id": "rheine-36efcd0073",
+      "city": "rheine",
+      "label": "Behindertenparkplatz Rheine",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rheine",
+      "spotCount": 1,
+      "lat": 52.2862669,
+      "lng": 7.4638906,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/192609437), ODbL"
+    },
+    {
+      "id": "rheine-1e9622a122",
+      "city": "rheine",
+      "label": "REWE",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rheine",
+      "spotCount": 3,
+      "lat": 52.2863552,
+      "lng": 7.4710719,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/233172893), ODbL"
+    }
+  ]
+}

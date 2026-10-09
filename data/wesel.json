@@ -1,0 +1,74 @@
+{
+  "city": {
+    "slug": "wesel",
+    "name": "Wesel",
+    "center": {
+      "lat": 51.6651021,
+      "lng": 6.6267209
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "generatedAt": "2026-10-09",
+  "spots": [
+    {
+      "id": "wesel-10f35ae4df",
+      "city": "wesel",
+      "label": "Behindertenparkplatz Wesel",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wesel",
+      "spotCount": 5,
+      "lat": 51.6651021,
+      "lng": 6.609053,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1196052283), ODbL"
+    },
+    {
+      "id": "wesel-eaa63b921d",
+      "city": "wesel",
+      "label": "Behindertenparkplatz Wesel",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wesel",
+      "spotCount": 3,
+      "lat": 51.665645,
+      "lng": 6.6110038,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1272703173), ODbL"
+    },
+    {
+      "id": "wesel-4af218b91a",
+      "city": "wesel",
+      "label": "P & R Wesel Bahnhof Ost",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wesel",
+      "spotCount": 6,
+      "lat": 51.6574197,
+      "lng": 6.6285428,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/343420206), ODbL"
+    },
+    {
+      "id": "wesel-4737a86d65",
+      "city": "wesel",
+      "label": "P & R Wesel Bahnhof West",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wesel",
+      "spotCount": 6,
+      "lat": 51.6572055,
+      "lng": 6.6267209,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/343102923), ODbL"
+    }
+  ]
+}

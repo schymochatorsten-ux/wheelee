@@ -1,0 +1,44 @@
+{
+  "city": {
+    "slug": "lingen",
+    "name": "Lingen (Ems)",
+    "center": {
+      "lat": 52.5605374,
+      "lng": 7.3852918
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "generatedAt": "2026-10-09",
+  "spots": [
+    {
+      "id": "lingen-97230f5e1d",
+      "city": "lingen",
+      "label": "Behindertenparkplatz Lingen (Ems)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lingen (Ems)",
+      "spotCount": 2,
+      "lat": 52.5605374,
+      "lng": 7.294776,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1029378724), ODbL"
+    },
+    {
+      "id": "lingen-15c3c93da1",
+      "city": "lingen",
+      "label": "Behindertenparkplatz Lingen (Ems)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lingen (Ems)",
+      "spotCount": 3,
+      "lat": 52.5122761,
+      "lng": 7.3852918,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1159725354), ODbL"
+    }
+  ]
+}

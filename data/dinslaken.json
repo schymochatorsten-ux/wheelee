@@ -1,0 +1,119 @@
+{
+  "city": {
+    "slug": "dinslaken",
+    "name": "Dinslaken",
+    "center": {
+      "lat": 51.5650189,
+      "lng": 6.7382907
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "generatedAt": "2026-10-09",
+  "spots": [
+    {
+      "id": "dinslaken-439f666954",
+      "city": "dinslaken",
+      "label": "Behindertenparkplatz Dinslaken",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dinslaken",
+      "spotCount": 1,
+      "lat": 51.5673895,
+      "lng": 6.7443567,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/48014496), ODbL"
+    },
+    {
+      "id": "dinslaken-078c030e85",
+      "city": "dinslaken",
+      "label": "Behindertenparkplatz Dinslaken",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dinslaken",
+      "spotCount": 2,
+      "lat": 51.5609558,
+      "lng": 6.7330846,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/842440183), ODbL"
+    },
+    {
+      "id": "dinslaken-a5c4a2aa51",
+      "city": "dinslaken",
+      "label": "Behindertenparkplatz Dinslaken",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dinslaken",
+      "spotCount": 2,
+      "lat": 51.5650189,
+      "lng": 6.7394296,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/842456074), ODbL"
+    },
+    {
+      "id": "dinslaken-f53eaa00dd",
+      "city": "dinslaken",
+      "label": "Behindertenparkplatz Dinslaken",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dinslaken",
+      "spotCount": 1,
+      "lat": 51.5797725,
+      "lng": 6.7382907,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/879187852), ODbL"
+    },
+    {
+      "id": "dinslaken-023cbdcca3",
+      "city": "dinslaken",
+      "label": "Behindertenparkplatz Dinslaken",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dinslaken",
+      "spotCount": 1,
+      "lat": 51.5646684,
+      "lng": 6.7395656,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1194693724), ODbL"
+    },
+    {
+      "id": "dinslaken-ff9ebb99ff",
+      "city": "dinslaken",
+      "label": "Behindertenparkplatz Dinslaken",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dinslaken",
+      "spotCount": 2,
+      "lat": 51.5614708,
+      "lng": 6.7350661,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1289052869), ODbL"
+    },
+    {
+      "id": "dinslaken-230d7bb839",
+      "city": "dinslaken",
+      "label": "Park & Ride, Dinslaken",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dinslaken",
+      "spotCount": 2,
+      "lat": 51.5678245,
+      "lng": 6.7358416,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/94897934), ODbL"
+    }
+  ]
+}

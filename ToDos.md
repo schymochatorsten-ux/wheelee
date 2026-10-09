@@ -8,9 +8,14 @@ Wie Daten importiert, geprüft und aktuell gehalten werden, steht in
 
 **Letzte Aktualisierung:** 2026-10-09
 
-**Stand in Zahlen:** 84 Städte, 13.463 Standorte, 33.209 Stellplätze. Karte, Liste
-und Detailansicht laufen. Es fehlen vor allem: Bewertungen (brauchen die
-Datenbank), Rechtstexte und Deployment.
+**Endziel:** jeden öffentlichen Behindertenparkplatz in Deutschland erfassen,
+der sich aus einer öffentlichen Quelle importieren lässt – siehe
+[Abschnitt 2e](#2e-ganz-deutschland).
+
+**Stand in Zahlen:** 84 von rund 10.700 Gemeinden, 13.463 Standorte,
+33.209 Stellplätze. Karte, Liste und Detailansicht laufen. Es fehlen vor allem:
+Bewertungen (brauchen die Datenbank), Rechtstexte und Deployment – und der
+weitaus größte Teil Deutschlands.
 
 ---
 
@@ -42,7 +47,7 @@ Unterbrechung nahtlos weitergearbeitet werden kann.
 7. 9.7 Kontraste nach WCAG AA prüfen
 8. 12.3 E2E-Smoke-Test
 
-**Stand:** 145 Punkte – 57 erledigt, 86 offen, 5 brauchen deine Entscheidung,
+**Stand:** 148 Punkte – 57 erledigt, 89 offen, 5 brauchen deine Entscheidung,
 3 gesperrt. **Tests: 107** (zu Beginn dieser Arbeitsreihe: 46).
 
 ---
@@ -117,20 +122,32 @@ Laufender Stand: **[data/\_import-status.md](data/_import-status.md)** – von d
 - [ ] 2d.9 **Regensburg** hat weder amtliche Daten noch OSM-Treffer – prüfen, ob die Abfrage oder die Datenlage schuld ist
 - [ ] 2d.10 Auffällig niedrige OSM-Zahlen stichprobenartig prüfen, etwa Wuppertal mit 66 Standorten bei 359.000 Einwohnern
 
-### 2e. Alle Städte Deutschlands
+### 2e. Ganz Deutschland
 
-**Ziel: flächendeckende Abdeckung.** Die 83 Großstädte sind nur der Anfang –
-rund zwei Drittel der Menschen in Deutschland leben anderswo, und gerade in
-kleineren Orten ist die Parkplatzsuche ohne Karte mühsamer, weil es weniger
-Plätze gibt.
+> **Das Endziel des Projekts: jeden öffentlichen Behindertenparkplatz in
+> Deutschland erfassen, der sich aus einer öffentlichen Quelle importieren
+> lässt.** Nicht die größten Städte, nicht die wichtigsten – alle.
 
-- [ ] 2e.1 **Alle Städte mit amtlichen Daten erfassen, unabhängig von der Einwohnerzahl.** Jeden GovData-Datensatz zu Behindertenparkplätzen durchgehen und die zugehörige Stadt importieren – das ist die billigste Ausweitung, weil die Daten gut sind und der Importer sie schon lesen kann.
+Die 84 bisher erfassten Städte sind ein Anfang, kein Zwischenstand kurz vor
+dem Ziel. Deutschland hat rund 10.700 Gemeinden; zwei Drittel der Menschen
+leben außerhalb der Großstädte. Gerade dort ist die Parkplatzsuche ohne Karte
+mühsamer, weil es weniger Plätze gibt und niemand sie auflistet.
+
+Was „importierbar" heißt: amtliche Daten der Gemeinde oder des Landes, sonst
+OpenStreetMap. Beides ist frei nutzbar, beides kann der Importer bereits
+lesen. Nicht importierbar sind Daten hinter Lizenzschranken (Parkopedia) oder
+solche, die nur als Bild oder gedruckter Plan vorliegen.
+
+- [ ] 2e.0 **Abdeckung messbar machen.** Ohne Maßstab bleibt „alle" eine Absichtserklärung. Nötig ist ein Bericht, der zeigt: wie viele Gemeinden erfasst, wie viele mit amtlicher Quelle, wie viele nur aus OSM, wie viele geprüft ohne Treffer. Erst damit ist erkennbar, ob das Ziel näher rückt.
+- [ ] 2e.1 **Alle Gemeinden mit amtlichen Daten erfassen, unabhängig von der Einwohnerzahl.** Jeden GovData-Datensatz zu Behindertenparkplätzen durchgehen und die zugehörige Gemeinde importieren – das ist die billigste Ausweitung, weil die Daten gut sind und der Importer sie schon lesen kann.
 - [ ] 2e.2 Landesportale einbeziehen, die GovData nicht lückenlos spiegelt: Open.NRW, MobiData BW, Open Data Hessen, daten.berlin.de, Geodatenportal Bayern
 - [ ] 2e.3 **Landesweite Sammeldatensätze auswerten** – „Gebündelte Daten Behindertenparkplätze NRW" (Mobilithek) und die Park-API von MobiData BW decken in einem Zug viele Kommunen ab, auch kleine
-- [ ] 2e.4 Städteregister ausbauen: alle Gemeinden ab 20.000 Einwohnern (rund 650), danach stufenweise weiter nach unten
-- [ ] 2e.5 Restliche Gemeinden aus OpenStreetMap – der Importer kann das bereits, es fehlt nur die Liste
-- [ ] 2e.6 Laufzeit und Last beherrschen: Nominatim und Overpass vertragen keine Massenabfragen. Bei mehreren hundert Städten den Lauf über Tage verteilen; die Fortschrittsverwaltung macht das unkritisch.
-- [ ] 2e.7 Ab einigen hundert Städten die Datenhaltung überdenken – eine Seed-Datei je Stadt und alle Standorte im Browser skaliert nicht (hängt mit 5.4 zusammen)
+- [ ] 2e.4 **Gemeinderegister aufbauen** statt der handgepflegten Städteliste. Das amtliche Gemeindeverzeichnis des Statistischen Bundesamts enthält alle rund 10.700 Gemeinden mit Schlüssel, Name und Einwohnerzahl – als Datei einlesen, nicht abtippen.
+- [ ] 2e.5 Stufenweise vorgehen, größte zuerst: ab 50.000 Einwohnern (rund 190 Gemeinden), dann ab 20.000 (rund 650), dann ab 10.000, dann der Rest. So ist nach jeder Stufe ein nutzbarer Stand erreicht.
+- [ ] 2e.6 Restliche Gemeinden aus OpenStreetMap – der Importer kann das bereits, es fehlt nur die Liste
+- [ ] 2e.7 **Laufzeit und Last beherrschen.** Bei 10.700 Gemeinden ist eine Overpass-Abfrage je Gemeinde nicht vertretbar – das wäre Missbrauch eines Gemeinschaftsdienstes. Bessere Wege: ein landesweiter Overpass-Durchlauf je Bundesland statt je Gemeinde, oder ein eigener Auszug aus einem Planet-Download. Vor dem Massenimport zu entscheiden, nicht danach.
+- [ ] 2e.8 **Datenhaltung überdenken, bevor es so weit ist.** Eine Seed-Datei je Gemeinde und alle Standorte im Browser trägt bei 84 Städten und 13.463 Standorten; bei mehreren tausend Gemeinden nicht mehr. Hängt an 5.4 (Bounding-Box-API) und sollte vor Stufe zwei von 2e.5 gelöst sein.
+- [ ] 2e.9 Gemeinden ohne Treffer getrennt festhalten – „geprüft, nichts gefunden" ist etwas anderes als „noch nicht geprüft". Sonst wird jede Gemeinde bei jedem Durchlauf erneut abgefragt.
 
 ---
 
