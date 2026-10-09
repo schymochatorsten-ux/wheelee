@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T22:59:57.830Z",
+  "updatedAt": "2026-10-09T06:37:22.577Z",
   "records": [
     {
       "rank": 1,
@@ -443,13 +443,13 @@
       "state": "Nordrhein-Westfalen",
       "population": 249070,
       "plan": "official",
-      "usedSource": "amtlich (WFS)",
-      "usedUrl": "https://geoserver.aachen.de/opendata/bewohnerparkzonen/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=bewohnerparkzonen%3Abewohnerparkzonen&outputFormat=application%2Fjson&srsName=EPSG%3A4326",
+      "usedSource": "OpenStreetMap",
+      "usedUrl": "Overpass, OSM relation/62564 (Aachen, Städteregion Aachen, Nordrhein-Westfalen, Deutschland)",
       "status": "fertig",
-      "locations": 28,
-      "spaces": 28,
-      "attemptedAt": "2026-10-08T22:19:15.646Z",
-      "message": null
+      "locations": 111,
+      "spaces": 191,
+      "attemptedAt": "2026-10-09T06:37:20.672Z",
+      "message": "amtliche Quelle nicht nutzbar, OSM verwendet"
     },
     {
       "rank": 31,
@@ -492,8 +492,8 @@
       "usedUrl": "https://geoportal.freiburg.de/wfs/gut_parken/gut_parken?service=WFS&version=2.0.0&request=GetFeature&typeNames=ms%3Abehindertenparkplatz_detail",
       "status": "fertig",
       "locations": 330,
-      "spaces": 11485,
-      "attemptedAt": "2026-10-08T22:19:31.033Z",
+      "spaces": 334,
+      "attemptedAt": "2026-10-09T06:37:22.577Z",
       "message": null
     },
     {

@@ -1,6 +1,6 @@
 # Importstand der deutschen Großstädte
 
-Zuletzt aktualisiert: 2026-10-08T22:59:57.830Z
+Zuletzt aktualisiert: 2026-10-09T06:37:22.577Z
 
 Diese Datei schreiben die Importskripte selbst nach **jeder einzelnen Stadt**.
 Sie ist damit auch nach einem Abbruch mitten im Lauf korrekt.
@@ -23,8 +23,8 @@ npm run import:city -- --rest
 | fertig                  | 83    |
 | offen                   | 0     |
 | mit Problem             | 0     |
-| importierte Standorte   | 13370 |
-| importierte Stellplätze | 33209 |
+| importierte Standorte   | 13453 |
+| importierte Stellplätze | 22221 |
 
 ## Städte in Bearbeitungsreihenfolge
 
@@ -59,10 +59,10 @@ npm run import:city -- --rest
 | ✅  |   27 | Braunschweig          |   252.811 | OpenStreetMap     |        85 |         226 | fertig                                       |
 | ✅  |   28 | Kiel                  |   250.917 | OpenStreetMap     |        85 |         241 | amtliche Quelle nicht nutzbar, OSM verwendet |
 | ✅  |   29 | Chemnitz              |   249.237 | amtlich (ARCGIS)  |        13 |          56 | fertig                                       |
-| ✅  |   30 | Aachen                |   249.070 | amtlich (WFS)     |        28 |          28 | fertig                                       |
+| ✅  |   30 | Aachen                |   249.070 | OpenStreetMap     |       111 |         191 | amtliche Quelle nicht nutzbar, OSM verwendet |
 | ✅  |   31 | Halle (Saale)         |   242.083 | OpenStreetMap     |        62 |         178 | fertig                                       |
 | ✅  |   32 | Magdeburg             |   239.364 | OpenStreetMap     |       208 |         345 | fertig                                       |
-| ✅  |   33 | Freiburg im Breisgau  |   236.140 | amtlich (WFS)     |       330 |       11485 | fertig                                       |
+| ✅  |   33 | Freiburg im Breisgau  |   236.140 | amtlich (WFS)     |       330 |         334 | fertig                                       |
 | ✅  |   34 | Krefeld               |   230.103 | OpenStreetMap     |        40 |          71 | amtliche Quelle nicht nutzbar, OSM verwendet |
 | ✅  |   35 | Mainz                 |   220.085 | OpenStreetMap     |       171 |         295 | fertig                                       |
 | ✅  |   36 | Lübeck                |   218.095 | OpenStreetMap     |       281 |         357 | fertig                                       |
@@ -145,7 +145,7 @@ npm run import:city -- --rest
 - **Braunschweig** (OpenStreetMap): `Overpass, OSM relation/62531 (Braunschweig, Niedersachsen, Deutschland)`
 - **Kiel** (OpenStreetMap): `Overpass, OSM relation/27021 (Kiel, Altenholz, Schleswig-Holstein, Deutschland)`
 - **Chemnitz** (amtlich (ARCGIS)): `https://services6.arcgis.com/jiszdsDupTUO3fSM/arcgis/rest/services/Parkpl%C3%A4tze_Wohnmobil/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson&returnGeometry=true`
-- **Aachen** (amtlich (WFS)): `https://geoserver.aachen.de/opendata/bewohnerparkzonen/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=bewohnerparkzonen%3Abewohnerparkzonen&outputFormat=application%2Fjson&srsName=EPSG%3A4326`
+- **Aachen** (OpenStreetMap): `Overpass, OSM relation/62564 (Aachen, Städteregion Aachen, Nordrhein-Westfalen, Deutschland)`
 - **Halle (Saale)** (OpenStreetMap): `Overpass, OSM relation/62638 (Halle (Saale), Sachsen-Anhalt, Deutschland)`
 - **Magdeburg** (OpenStreetMap): `Overpass, OSM relation/62481 (Magdeburg, Sachsen-Anhalt, Deutschland)`
 - **Freiburg im Breisgau** (amtlich (WFS)): `https://geoportal.freiburg.de/wfs/gut_parken/gut_parken?service=WFS&version=2.0.0&request=GetFeature&typeNames=ms%3Abehindertenparkplatz_detail`

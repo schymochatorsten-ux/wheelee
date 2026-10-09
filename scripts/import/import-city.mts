@@ -73,9 +73,25 @@ function readDistrict(value: unknown): string | null {
   return text;
 }
 
+/**
+ * Anzahl der Stellplätze – bewusst streng.
+ *
+ * Die frühere Fassung entfernte alle Nicht-Ziffern. Aus einem Datum wie
+ * „1.1.2012" wurde dadurch die Zahl 112012, und Freiburg kam auf 11.485
+ * Stellplätze an 330 Standorten – das 60-Fache des Üblichen. Wird hier ein
+ * falsches Feld erwischt, ist eine 1 die harmlosere Annahme als eine
+ * Fantasiezahl.
+ *
+ * Mehr als 50 ausgewiesene Behindertenstellplätze an einem Standort gibt es
+ * in der Praxis nicht; ein solcher Wert bedeutet die falsche Spalte.
+ */
 function readCount(value: unknown): number {
-  const parsed = Number.parseInt(String(value ?? "").replace(/\D+/gu, ""), 10);
-  return Number.isFinite(parsed) && parsed > 0 ? parsed : 1;
+  const text = String(value ?? "").trim();
+  const match = /^(\d{1,3})$/u.exec(text);
+  if (!match) return 1;
+
+  const parsed = Number.parseInt(match[1], 10);
+  return parsed >= 1 && parsed <= 50 ? parsed : 1;
 }
 
 function spotId(slug: string, feature: GeoFeature, index: number): string {
@@ -337,9 +353,16 @@ async function importCity(city: GermanCity): Promise<void> {
       try {
         console.log(`  Versuche ${resource.format}: ${resource.url.slice(0, 90)}`);
 
+        // Nur wenn der Datensatz selbst von Behinderung handelt, darf eine
+        // einzelne namenlose Ebene als die richtige gelten.
+        const titleMentionsDisability = /behinder|rollstuhl|barrierefrei/iu.test(official.title);
+
         const result =
           resource.format === "WFS"
-            ? await fetchWfsFeatures(resource.url, await findWfsLayer(resource.url))
+            ? await fetchWfsFeatures(
+                resource.url,
+                await findWfsLayer(resource.url, titleMentionsDisability),
+              )
             : resource.format === "ARCGIS"
               ? await fetchArcGis(resource.url)
               : await fetchGeoJson(resource.url);

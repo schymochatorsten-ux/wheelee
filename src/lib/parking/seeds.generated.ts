@@ -40,43 +40,43 @@ import seed33 from "../../../data/bielefeld.json";
 import seed34 from "../../../data/leverkusen.json";
 import seed35 from "../../../data/duisburg.json";
 import seed36 from "../../../data/bremen.json";
-import seed37 from "../../../data/erlangen.json";
-import seed38 from "../../../data/paderborn.json";
-import seed39 from "../../../data/koblenz.json";
-import seed40 from "../../../data/cottbus.json";
-import seed41 from "../../../data/kassel.json";
-import seed42 from "../../../data/moenchengladbach.json";
-import seed43 from "../../../data/oldenburg.json";
-import seed44 from "../../../data/darmstadt.json";
-import seed45 from "../../../data/erfurt.json";
-import seed46 from "../../../data/mannheim.json";
-import seed47 from "../../../data/braunschweig.json";
-import seed48 from "../../../data/kiel.json";
-import seed49 from "../../../data/jena.json";
-import seed50 from "../../../data/wolfsburg.json";
-import seed51 from "../../../data/trier.json";
-import seed52 from "../../../data/oberhausen.json";
-import seed53 from "../../../data/moers.json";
-import seed54 from "../../../data/wuppertal.json";
-import seed55 from "../../../data/hagen.json";
-import seed56 from "../../../data/halle.json";
-import seed57 from "../../../data/kaiserslautern.json";
-import seed58 from "../../../data/recklinghausen.json";
-import seed59 from "../../../data/muelheim.json";
-import seed60 from "../../../data/pforzheim.json";
-import seed61 from "../../../data/wiesbaden.json";
-import seed62 from "../../../data/ulm.json";
-import seed63 from "../../../data/reutlingen.json";
-import seed64 from "../../../data/fuerth.json";
-import seed65 from "../../../data/siegen.json";
-import seed66 from "../../../data/krefeld.json";
-import seed67 from "../../../data/neuss.json";
-import seed68 from "../../../data/hildesheim.json";
-import seed69 from "../../../data/ludwigshafen.json";
-import seed70 from "../../../data/herne.json";
-import seed71 from "../../../data/guetersloh.json";
-import seed72 from "../../../data/ingolstadt.json";
-import seed73 from "../../../data/aachen.json";
+import seed37 from "../../../data/aachen.json";
+import seed38 from "../../../data/erlangen.json";
+import seed39 from "../../../data/paderborn.json";
+import seed40 from "../../../data/koblenz.json";
+import seed41 from "../../../data/cottbus.json";
+import seed42 from "../../../data/kassel.json";
+import seed43 from "../../../data/moenchengladbach.json";
+import seed44 from "../../../data/oldenburg.json";
+import seed45 from "../../../data/darmstadt.json";
+import seed46 from "../../../data/erfurt.json";
+import seed47 from "../../../data/mannheim.json";
+import seed48 from "../../../data/braunschweig.json";
+import seed49 from "../../../data/kiel.json";
+import seed50 from "../../../data/jena.json";
+import seed51 from "../../../data/wolfsburg.json";
+import seed52 from "../../../data/trier.json";
+import seed53 from "../../../data/oberhausen.json";
+import seed54 from "../../../data/moers.json";
+import seed55 from "../../../data/wuppertal.json";
+import seed56 from "../../../data/hagen.json";
+import seed57 from "../../../data/halle.json";
+import seed58 from "../../../data/kaiserslautern.json";
+import seed59 from "../../../data/recklinghausen.json";
+import seed60 from "../../../data/muelheim.json";
+import seed61 from "../../../data/pforzheim.json";
+import seed62 from "../../../data/wiesbaden.json";
+import seed63 from "../../../data/ulm.json";
+import seed64 from "../../../data/reutlingen.json";
+import seed65 from "../../../data/fuerth.json";
+import seed66 from "../../../data/siegen.json";
+import seed67 from "../../../data/krefeld.json";
+import seed68 from "../../../data/neuss.json";
+import seed69 from "../../../data/hildesheim.json";
+import seed70 from "../../../data/ludwigshafen.json";
+import seed71 from "../../../data/herne.json";
+import seed72 from "../../../data/guetersloh.json";
+import seed73 from "../../../data/ingolstadt.json";
 import seed74 from "../../../data/heilbronn.json";
 import seed75 from "../../../data/bremerhaven.json";
 import seed76 from "../../../data/remscheid.json";
@@ -156,18 +156,18 @@ export const seeds: SeedEntry[] = [
   { seed: seed59 as SeedFile, coverage: "crowdsourced" },
   { seed: seed60 as SeedFile, coverage: "crowdsourced" },
   { seed: seed61 as SeedFile, coverage: "crowdsourced" },
-  { seed: seed62 as SeedFile, coverage: "official" },
-  { seed: seed63 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed62 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed63 as SeedFile, coverage: "official" },
   { seed: seed64 as SeedFile, coverage: "crowdsourced" },
   { seed: seed65 as SeedFile, coverage: "crowdsourced" },
   { seed: seed66 as SeedFile, coverage: "crowdsourced" },
-  { seed: seed67 as SeedFile, coverage: "official" },
-  { seed: seed68 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed67 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed68 as SeedFile, coverage: "official" },
   { seed: seed69 as SeedFile, coverage: "crowdsourced" },
   { seed: seed70 as SeedFile, coverage: "crowdsourced" },
   { seed: seed71 as SeedFile, coverage: "crowdsourced" },
   { seed: seed72 as SeedFile, coverage: "crowdsourced" },
-  { seed: seed73 as SeedFile, coverage: "official" },
+  { seed: seed73 as SeedFile, coverage: "crowdsourced" },
   { seed: seed74 as SeedFile, coverage: "crowdsourced" },
   { seed: seed75 as SeedFile, coverage: "crowdsourced" },
   { seed: seed76 as SeedFile, coverage: "crowdsourced" },

@@ -1,6 +1,8 @@
 # ToDos – wheelee
 
 Zentrale Aufgabenliste zum Projekt (Grundlage: [Konzept.md](Konzept.md)).
+Wie Daten importiert, geprüft und aktuell gehalten werden, steht in
+[Datenpflege.md](Datenpflege.md).
 
 **Status-Legende:** `[ ]` offen · `[~]` in Arbeit · `[x]` erledigt · `[!]` blockiert / Entscheidung nötig · `[-]` verworfen / später
 
@@ -74,16 +76,35 @@ Laufender Stand: **[data/\_import-status.md](data/_import-status.md)** – von d
 - [ ] 2d.9 **Regensburg** hat weder amtliche Daten noch OSM-Treffer – prüfen, ob die Abfrage oder die Datenlage schuld ist
 - [ ] 2d.10 Auffällig niedrige OSM-Zahlen stichprobenartig prüfen, etwa Wuppertal mit 66 Standorten bei 359.000 Einwohnern
 
-### 2e. Alle übrigen Städte Deutschlands
+### 2e. Alle Städte Deutschlands
 
-- [ ] 2e.1 **Mittel- und Kleinstädte erfassen, für die Daten existieren.** Die 83 Großstädte sind nur der Anfang; die Mehrheit der Menschen in Deutschland lebt anderswo. Vorgehen: alle GovData-Datensätze zu Behindertenparkplätzen durchgehen, unabhängig von der Einwohnerzahl, und jede Stadt importieren, die einen hat.
-- [ ] 2e.2 Landesportale einbeziehen, die GovData nicht vollständig spiegelt: Open.NRW, MobiData BW, Open Data Hessen, daten.berlin.de, Geodatenportal Bayern
-- [ ] 2e.3 Städte ohne amtliche Daten aus OpenStreetMap ergänzen – der Importer kann das schon, es fehlt nur die Städteliste. Sinnvoller Schnitt: alle Gemeinden ab 20.000 Einwohnern, danach nach Bedarf.
-- [ ] 2e.4 Laufzeit und Last im Blick behalten: Nominatim und Overpass vertragen keine Massenabfragen. Bei mehreren hundert Städten den Lauf über Tage verteilen und Zwischenstände nutzen.
+**Ziel: flächendeckende Abdeckung.** Die 83 Großstädte sind nur der Anfang –
+rund zwei Drittel der Menschen in Deutschland leben anderswo, und gerade in
+kleineren Orten ist die Parkplatzsuche ohne Karte mühsamer, weil es weniger
+Plätze gibt.
+
+- [ ] 2e.1 **Alle Städte mit amtlichen Daten erfassen, unabhängig von der Einwohnerzahl.** Jeden GovData-Datensatz zu Behindertenparkplätzen durchgehen und die zugehörige Stadt importieren – das ist die billigste Ausweitung, weil die Daten gut sind und der Importer sie schon lesen kann.
+- [ ] 2e.2 Landesportale einbeziehen, die GovData nicht lückenlos spiegelt: Open.NRW, MobiData BW, Open Data Hessen, daten.berlin.de, Geodatenportal Bayern
+- [ ] 2e.3 **Landesweite Sammeldatensätze auswerten** – „Gebündelte Daten Behindertenparkplätze NRW" (Mobilithek) und die Park-API von MobiData BW decken in einem Zug viele Kommunen ab, auch kleine
+- [ ] 2e.4 Städteregister ausbauen: alle Gemeinden ab 20.000 Einwohnern (rund 650), danach stufenweise weiter nach unten
+- [ ] 2e.5 Restliche Gemeinden aus OpenStreetMap – der Importer kann das bereits, es fehlt nur die Liste
+- [ ] 2e.6 Laufzeit und Last beherrschen: Nominatim und Overpass vertragen keine Massenabfragen. Bei mehreren hundert Städten den Lauf über Tage verteilen; die Fortschrittsverwaltung macht das unkritisch.
+- [ ] 2e.7 Ab einigen hundert Städten die Datenhaltung überdenken – eine Seed-Datei je Stadt und alle Standorte im Browser skaliert nicht (hängt mit 5.4 zusammen)
 
 ---
 
 ## 3. Datenvalidierung
+
+### Befund der ersten Prüfung (2026-10-09)
+
+`npm run validate` hat 84 Städte geprüft. Bericht: [data/\_validierung.md](data/_validierung.md).
+
+- [ ] 3.0 **61 % aller Standorte haben keinen Straßennamen** (8.209 von 13.380). In Nürnberg heißen 473 von 487 Einträgen wörtlich „Behindertenparkplatz Nürnberg", in München 172 von 219. Ursache: OpenStreetMap-Objekte tragen selten ein `addr:street`, und der Importer hat für diesen Weg keine Adresse nachgeschlagen. Auf der Karte fällt es kaum auf, in der Liste und in der Detailansicht ist es wertlos. **Das ist der größte Qualitätsmangel im Bestand und hat Vorrang.**
+  - [x] 3.0a **Behoben.** Von 61 % ohne Straßennamen auf **1 %** (89 von 13.463). 42 % der Standorte haben jetzt zusätzlich eine Hausnummer. Nürnberg hat statt 15 nun 279 verschiedene Bezeichnungen.
+  - [x] 3.0b **Über OpenStreetMap statt über Nominatim gelöst** (`npm run import:streets`): eine Overpass-Abfrage je Stadt für alle benannten Straßen, dann lokal die nächstgelegene zuordnen – über ein Raster, sonst wären es Millionen Abstandsberechnungen. Statt 8.200 Einzelabfragen an einen freien Geocoder sind es rund 140 Abfragen, und der Lauf dauert Minuten statt Stunden. Hausnummern kommen aus den Adressobjekten derselben Abfrage.
+  - [x] 3.0c `npm run import:addresses` (Nominatim, eine Anfrage je Standort) bleibt als Rückfallebene für Städte, in denen OpenStreetMap keine Straßen führt
+  - [ ] 3.0d Die letzten 89 Standorte liegen über 150 m von jeder Straße entfernt – meist Parkplatzflächen im Grünen. Einzeln ansehen oder den Radius für diese Fälle erhöhen.
+  - [ ] 3.0e Ein Nebenbefund: Ein Nürnberger Standort heißt jetzt „A 9" – die nächstgelegene Straße war die Autobahn. Für Rastplätze richtig, in der Liste aber irritierend. Autobahnen als Namensgeber ausschließen, wenn eine andere Straße in Reichweite liegt.
 
 Bisher prüft der Import nur, ob eine Koordinate überhaupt plausibel ist (liegt sie
 in Deutschland, liegt sie nahe der richtigen Stadt). Das fängt grobe Fehler ab,
@@ -97,7 +118,14 @@ Abgleich mit einer zweiten, unabhängigen Quelle.
 - [ ] 3.5 **Doppelte Einträge finden.** Zwei Standorte derselben Stadt im Abstand weniger Meter sind meist derselbe Parkplatz – etwa wenn eine Quelle je Stellplatz einen Eintrag führt und eine andere je Standort.
 - [ ] 3.6 **Kennzahlen je Stadt vergleichen.** Stellplätze je 10.000 Einwohner über alle Städte auftragen; Ausreißer nach unten zeigen Lücken in der Datenlage, nicht in der Wirklichkeit. Das ist der billigste Test überhaupt und hätte Hamburgs 10 Standorte sofort auffallen lassen.
 - [ ] 3.7 Ergebnis sichtbar machen: Standorte, die von zwei Quellen bestätigt sind, in der Detailansicht als geprüft kennzeichnen. Das ist genau die Information, die Nutzer:innen vor einer vergeblichen Fahrt bewahrt.
-- [ ] 3.8 Validierungslauf als eigenes Skript (`npm run validate`) mit Bericht je Stadt, analog zum Importreport
+- [x] 3.8 Validierungslauf als eigenes Skript (`npm run validate`) mit Bericht je Stadt
+- [x] 3.9 **Erste vollständige Prüfung durchgeführt** – sie hat vier echte Fehler gefunden, drei davon sofort behoben:
+  - [x] **Aachen hatte den falschen Datensatz.** Importiert waren „Bewohnerparkzonen" – Anwohnerparken, nicht Behindertenparkplätze. Durchgerutscht, weil der Importer bei Diensten mit nur einer Ebene diese ungefragt nahm. Jetzt nur noch, wenn der Datensatz-Titel selbst von Behinderung handelt. Aachen hat jetzt 111 statt 28 Standorte.
+  - [x] **Freiburg hatte 11.485 Stellplätze an 330 Standorten** – das 60-Fache des Üblichen. Die Zählung entfernte alle Nicht-Ziffern, aus „1.1.2012" wurde so 112012. Jetzt werden nur reine Zahlen bis 50 akzeptiert; Freiburg hat 334 Stellplätze.
+  - [x] **„0 % von OpenStreetMap bestätigt" war irreführend**, wenn die Overpass-Abfrage gar nichts geliefert hatte. Ein nicht durchgeführter Abgleich wird jetzt als solcher ausgewiesen.
+  - [ ] 3.9a **Rostock:** die amtliche Quelle nennt 5 Standorte, OpenStreetMap kennt 99. Das sind 0,2 Stellplätze je 10.000 Einwohner gegenüber 8,5 im Mittel – die amtliche Quelle ist fast leer und sollte nicht bevorzugt werden.
+  - [ ] 3.9b Quellenwechsel automatisieren: Liefert eine amtliche Quelle auffällig weniger als OpenStreetMap, soll der Importer das melden statt stillschweigend die schlechtere Quelle zu nehmen.
+- [ ] 3.10 Bestätigungsquoten nachgehen: Neuss 95 % und Ulm 81 % zeigen, dass ein hoher Wert erreichbar ist. Köln 24 %, Dresden 19 %, Düsseldorf 5 % – dort lohnt die Stichprobe, ob die amtlichen Koordinaten oder die OSM-Daten versetzt sind.
 
 ---
 
@@ -114,7 +142,13 @@ ob sich an der Quelle etwas getan hat.
   - OpenStreetMap: hier gibt es kein Änderungsdatum je Stadt – dort reicht ein fester Takt
 - [ ] 4.2 **Vorschlag für den Takt:** die Änderungsprüfung **monatlich**, ein vollständiger Neuimport nur dann, wenn sie eine Änderung meldet. Zusätzlich **alle sechs Monate** ein Neuimport aller Städte, unabhängig vom gemeldeten Datum – manche Portale pflegen ihr Änderungsdatum nicht. Die OSM-Städte alle **drei Monate**, weil dort laufend kartiert wird und ein Lauf wenig kostet.
 - [ ] 4.3 Änderungsdatum je Stadt im Importstatus mitführen, damit die Prüfung weiß, womit sie vergleicht
-- [ ] 4.4 `npm run sources:check` als eigener Befehl, der nur prüft und berichtet, ohne etwas zu schreiben
+- [ ] 4.4 **Skript `npm run sources:check` bauen**, das die monatliche Prüfung durchführt:
+  - liest das gespeicherte Änderungsdatum je Stadt aus `data/_import-status.json`
+  - holt das aktuelle Datum der Quelle (CKAN `metadata_modified`, `HTTP HEAD` mit `Last-Modified`/`ETag`, WFS-`GetCapabilities`)
+  - lädt dabei **keine** Parkplatzdaten herunter
+  - schreibt `data/_aktualitaet.md`: unverändert / geändert / nicht prüfbar, je Stadt
+  - nennt am Ende die fertigen Befehle für die Städte, die neu importiert werden sollten
+  - Ablauf und Takt stehen in [Datenpflege.md](Datenpflege.md#3-monatlich-auf-aktualität-prüfen)
 - [ ] 4.5 Automatisieren, sobald die App läuft – etwa als monatlicher GitHub-Actions-Lauf, der bei Änderungen einen Pull Request mit den neuen Daten öffnet. So bleibt die Kontrolle beim Menschen.
 - [ ] 4.6 Importdatum je Stadt in der Oberfläche zeigen („Daten vom …"), damit niemand veraltete Angaben für aktuell hält
 
@@ -159,15 +193,32 @@ ob sich an der Quelle etwas getan hat.
 
 ## 8. Bewertungen
 
-Blockiert durch D-02 (Datenbank).
+Blockiert durch D-02 (Datenbank). **Noch nichts davon ist gebaut** – bisher
+existiert nur die Festlegung, wie es funktionieren soll.
+
+### Regeln (festgelegt 2026-10-09)
+
+|                     | 👍 „Existiert"               | 👎 „Existiert nicht mehr"    |
+| ------------------- | ---------------------------- | ---------------------------- |
+| Benutzerkonto nötig | **nein**                     | **ja**                       |
+| Begrenzung          | 1× pro Parkplatz pro Sitzung | 1× pro Parkplatz pro Sitzung |
+
+Der Gedanke dahinter: Eine Bestätigung kann kaum Schaden anrichten – im
+schlimmsten Fall bleibt ein Parkplatz gelistet, den es noch gibt. Eine Meldung
+„existiert nicht mehr" entwertet dagegen einen Eintrag, auf den sich jemand
+verlässt, und muss deshalb zurechenbar sein. Die niedrige Hürde steht da, wo
+sie nützt, und die höhere da, wo sie schützt.
 
 - [ ] 8.1 UI: 👍 „Existiert" / 👎 „Existiert nicht mehr" in der Detailansicht
-- [ ] 8.2 Zählerstände und Zeitpunkte anzeigen („zuletzt bestätigt am …")
-- [ ] 8.3 Keine automatische Änderung der Parkplatzdaten durch Bewertungen (laut Konzept)
-- [ ] 8.4 Optimistisches UI-Update mit Fehlerbehandlung bei Offline
-- [ ] 8.5 Doppelabstimmung begrenzen (siehe D-03)
-- [ ] 8.6 Interne Übersicht gemeldeter Parkplätze für das manuelle Review
-- [ ] 8.7 Bewertungen in die Validierung einbeziehen: mehrfach als „existiert nicht mehr" gemeldete Plätze gehören auf die Prüfliste aus Abschnitt 3
+- [ ] 8.2 **Upvote ohne Konto**, begrenzt auf einmal pro Parkplatz und Sitzung
+- [ ] 8.3 **Downvote nur mit Benutzerkonto**, ebenfalls einmal pro Parkplatz und Sitzung. Ohne Anmeldung ist die Schaltfläche sichtbar, aber deaktiviert, mit Hinweis warum – nicht einfach weglassen, sonst wirkt die App kaputt.
+- [ ] 8.4 Sitzungsbegrenzung serverseitig durchsetzen, nicht nur im Browser. LocalStorage allein ist kein Schutz, sondern eine Bequemlichkeit.
+- [ ] 8.5 Zählerstände und Zeitpunkte anzeigen („zuletzt bestätigt am …")
+- [ ] 8.6 Keine automatische Änderung der Parkplatzdaten durch Bewertungen (laut Konzept)
+- [ ] 8.7 Optimistisches UI-Update mit Fehlerbehandlung bei Offline
+- [ ] 8.8 Interne Übersicht gemeldeter Parkplätze für das manuelle Review
+- [ ] 8.9 Bewertungen in die Validierung einbeziehen: mehrfach als „existiert nicht mehr" gemeldete Plätze gehören auf die Prüfliste aus Abschnitt 3
+- [ ] 8.10 Abhängigkeit beachten: 8.3 setzt Abschnitt 11 (Benutzerkonten) voraus. Entweder Konten vorziehen oder zunächst nur Upvotes ausliefern.
 
 ---
 
@@ -205,8 +256,12 @@ Blockiert durch D-02 (Datenbank).
 Laut Konzept bewusst nicht im ersten Umfang. Für später vorgemerkt, weil mehrere
 spätere Funktionen daran hängen.
 
-- [ ] 11.1 Entscheiden, **ob** Konten überhaupt gebraucht werden. Sie lösen das Missbrauchsproblem bei Bewertungen (D-03) sauberer als Gerätekennungen, kosten aber Hürde, Aufwand und Datenschutzverantwortung. Eine Zwischenstufe wäre ein anonymer, gerätegebundener Schlüssel ohne Registrierung.
-- [ ] 11.2 Falls ja: Registrierung und Anmeldung, möglichst ohne Passwort (Magic Link oder Passkey)
+**Entschieden (2026-10-09):** Konten werden gebraucht, weil Downvotes sie
+voraussetzen (siehe Abschnitt 8). Sie sind damit kein „vielleicht später" mehr,
+sondern Voraussetzung für einen Teil der Kernfunktion.
+
+- [ ] 11.1 Registrierung und Anmeldung, möglichst ohne Passwort (Magic Link oder Passkey) – jede zusätzliche Hürde trifft genau die Zielgruppe
+- [ ] 11.2 Anmeldung so spät wie möglich verlangen: erst beim Downvote, nicht beim Öffnen der App
 - [ ] 11.3 Eigene Bewertungen einsehen und zurückziehen
 - [ ] 11.4 Gespeicherte Parkplätze (Favoriten) – häufig angefahrene Ziele
 - [ ] 11.5 Vertrauensstufen: Wer wiederholt zutreffend meldet, bekommt mehr Gewicht in der Validierung
@@ -243,6 +298,26 @@ Ganze im Alltag funktioniert.
 - [ ] 13.7 Stichprobe in der Wirklichkeit: zehn Parkplätze aussuchen und vor Ort prüfen, ob sie existieren und die Angaben stimmen. Kein Test am Schreibtisch ersetzt das.
 - [ ] 13.8 Von jemandem testen lassen, der die App wirklich braucht – Rollstuhlfahrer:innen oder Inhaber:innen eines Parkausweises. Deren Urteil wiegt schwerer als jede Prüfliste hier.
 - [ ] 13.9 Gefundene Mängel sammeln, bewerten und vor der Veröffentlichung abarbeiten
+
+### Zwischentest am 2026-10-09 (Vorgriff, ersetzt 13.1–13.9 nicht)
+
+Ein Durchgang durch den heutigen Stand, mobil (375 × 812), in hellem und
+dunklem Modus. **Was funktioniert:**
+
+- Karte lädt mit Clustering, OpenStreetMap-Attribution sichtbar
+- Standortbestimmung: abgelehnt, erneut versucht, erteilt – alle drei Wege führen zum richtigen Ergebnis
+- Mit Standort: „Nächster Parkplatz: Rathausstraße – 70 m", Marker hervorgehoben, Liste korrekt nach Entfernung sortiert
+- Detailansicht öffnet, Fokus springt auf „Schließen", Escape schließt
+- „In Google Maps öffnen" erzeugt den richtigen Link mit Koordinate
+- Alle 49 sichtbaren Marker haben Rolle, Namen und sind per Tastatur erreichbar
+- 102 fokussierbare Elemente, **keines ohne Namen**, **kein Touch-Ziel unter 44 px**, kein horizontales Scrollen
+- Heller und dunkler Modus funktionieren beide
+
+**Was dabei auffiel und noch offen ist:**
+
+- [ ] 13.10 Kein Umschalter für den Dark Mode (siehe 9.1) – die App folgt nur der Systemeinstellung
+- [ ] 13.11 Stadtteil steht bei vielen Städten nur als Stadtname, weil die Quelle keinen nennt – in der Detailansicht wirkt „Stadtteil: Hamburg" sinnlos. Besser weglassen, wenn beides gleich ist.
+- [ ] 13.12 Die Quellenangabe in der Detailansicht endet oft auf „(nicht angegeben)" – das ist die fehlende Lizenz (2a.5) und gehört so nicht in die Oberfläche.
 
 ---
 

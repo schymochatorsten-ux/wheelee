@@ -21,7 +21,10 @@
     "sources": "tsx scripts/import/find-sources.mts",
     "sources:scan": "tsx scripts/import/scan-sources.mts",
     "import:city": "tsx scripts/import/import-city.mts",
-    "import:index": "tsx scripts/import/generate-index.mts"
+    "import:index": "tsx scripts/import/generate-index.mts",
+    "validate": "tsx scripts/import/validate.mts",
+    "import:addresses": "tsx scripts/import/enrich-addresses.mts",
+    "import:streets": "tsx scripts/import/street-names.mts"
   },
   "dependencies": {
     "leaflet": "1.9.4",

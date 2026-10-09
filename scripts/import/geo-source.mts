@@ -306,8 +306,19 @@ function buildWfsUrl(baseUrl: string, params: Record<string, string>): URL {
   return url;
 }
 
-/** Layer eines WFS auflisten und den mit Behindertenparkplätzen wählen. */
-export async function findWfsLayer(baseUrl: string): Promise<string> {
+/**
+ * Layer eines WFS auflisten und den mit Behindertenparkplätzen wählen.
+ *
+ * `allowSingleLayerFallback` darf nur gesetzt werden, wenn schon der
+ * Datensatz-Titel von Behindertenparkplätzen handelt. Sonst greift der
+ * Fallback bei beliebigen Parkdiensten zu: Aachen bekam so den Datensatz
+ * „Bewohnerparkzonen" – fachlich etwas völlig anderes, und der Abgleich mit
+ * OpenStreetMap bestätigte prompt keinen einzigen Standort.
+ */
+export async function findWfsLayer(
+  baseUrl: string,
+  allowSingleLayerFallback = false,
+): Promise<string> {
   const url = buildWfsUrl(baseUrl, { service: "WFS", request: "GetCapabilities" });
 
   const xml = await fetchText(url.toString());
@@ -335,9 +346,9 @@ export async function findWfsLayer(baseUrl: string): Promise<string> {
   );
   if (relevant) return relevant.name;
 
-  // Hat der Dienst nur eine Ebene, ist sie gemeint – der Datensatz als Ganzes
-  // handelt ja bereits von Behindertenparkplätzen.
-  if (layers.length === 1) return layers[0].name;
+  // Hat der Dienst nur eine Ebene und handelt der Datensatz nachweislich von
+  // Behindertenparkplätzen, ist sie gemeint.
+  if (layers.length === 1 && allowSingleLayerFallback) return layers[0].name;
 
   throw new Error(
     `Kein Layer mit Behindertenparkplätzen gefunden. Vorhanden: ${layers
