@@ -296,21 +296,6 @@
       "source": "OpenStreetMap (way/202074894), ODbL"
     },
     {
-      "id": "bielefeld-dd141f598d",
-      "city": "bielefeld",
-      "label": "Behindertenparkplatz Bielefeld",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Bielefeld",
-      "spotCount": 8,
-      "lat": 51.9314292,
-      "lng": 8.5954171,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/258206288), ODbL"
-    },
-    {
       "id": "bielefeld-98fdf49a48",
       "city": "bielefeld",
       "label": "Benatzkystraße",
@@ -1029,6 +1014,21 @@
       "lng": 8.610134,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/5133432), ODbL"
+    },
+    {
+      "id": "bielefeld-dd141f598d",
+      "city": "bielefeld",
+      "label": "Morsestraße",
+      "street": "Morsestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bielefeld",
+      "spotCount": 8,
+      "lat": 51.9314292,
+      "lng": 8.5954171,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/258206288), ODbL"
     },
     {
       "id": "bielefeld-1d95d56dc7",

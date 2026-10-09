@@ -8,9 +8,37 @@ Wie Daten importiert, geprüft und aktuell gehalten werden, steht in
 
 **Letzte Aktualisierung:** 2026-10-09
 
-**Stand in Zahlen:** 84 Städte, 13.370 Standorte, 33.209 Stellplätze. Karte, Liste
+**Stand in Zahlen:** 84 Städte, 13.463 Standorte, 33.209 Stellplätze. Karte, Liste
 und Detailansicht laufen. Es fehlen vor allem: Bewertungen (brauchen die
-Datenbank), Datenvalidierung, Rechtstexte und Deployment.
+Datenbank), Rechtstexte und Deployment.
+
+---
+
+## Arbeitsstand
+
+Hier steht, woran zuletzt gearbeitet wurde und was als Nächstes dran ist.
+**Nach jeder abgeschlossenen Aufgabe aktualisieren**, damit nach einer
+Unterbrechung nahtlos weitergearbeitet werden kann.
+
+**Zuletzt abgeschlossen:** 3.0d und 3.0f – Adressen vollständig, Platzhalter-Datenfehler behoben (2026-10-09)
+**Gerade in Arbeit:** –
+**Als Nächstes geplant**, in dieser Reihenfolge:
+
+1. ~~9.1 Dark Mode~~ · ~~13.11 Stadtteil-Beschriftung~~ · ~~13.12 Lizenz-Platzhalter~~
+2. ~~12.2 Tests für die Importkette~~ · ~~3.0e Straßennummern als Namen~~
+3. ~~7.5 Zeitbeschränkungen deuten~~ – 801 Falschangaben entfernt
+4. ~~7.4 Teilen-Funktion~~ · ~~9.2 dunkle Kartenkacheln~~
+5. ~~2d.8 Ungenutzte amtliche Quellen~~ – Ergebnis: tote Links bei GovData, kein Importerfehler
+6. ~~7.7 Zeithinweis in der Liste~~ · ~~12.7 PWA-Grundlagen~~
+7. ~~3.0d Letzte Standorte ohne Straßennamen~~ · ~~3.0f Platzhalter im Straßenfeld~~
+8. 3.5 Dubletten zusammenführen – die Validierung meldet sie, behoben sind sie nicht
+9. 6.13 Navigationsleiste verdeckt ein Fünftel der Karte
+10. 10.5 Haftungshinweis sichtbar formulieren
+
+**Tests:** 100 (zu Beginn dieser Arbeitsreihe: 46)
+
+**Nicht ohne Entscheidung machbar:** alles in Abschnitt 5 und 8 (Datenbank, D-02),
+Abschnitt 11 (Benutzerkonten), 10.2 Impressum und Datenschutz (braucht deine Angaben).
 
 ---
 
@@ -72,7 +100,11 @@ Laufender Stand: **[data/\_import-status.md](data/_import-status.md)** – von d
 - [x] 2d.5 Schutz gegen falsch gedeutete Koordinatensysteme: UTM-Zone aus `srsName`, zusätzlich Abstandsprüfung zum Stadtmittelpunkt
 - [x] 2d.6 Adress-Rückwärtssuche für Quellen ohne Straßennamen
 - [x] 2d.7 **Alle 83 Großstädte importiert** – 13.370 Standorte, 33.209 Stellplätze, davon 16 Städte amtlich
-- [ ] 2d.8 **Fünf Städte mit ungenutzter amtlicher Quelle nachziehen** – dort steht derzeit OpenStreetMap, obwohl es Besseres gäbe: **Bochum** (Portal antwortet 403), **Bielefeld** (CKAN-Ressourcenseiten statt Dateien), **Karlsruhe** (ArcGIS-Pfade liefern 404), **Kiel**, **Krefeld**. Wie groß der Unterschied ist, zeigt Düsseldorf: 171 Standorte aus OSM gegenüber 340 aus der amtlichen Quelle.
+- [x] 2d.8 **Fünf Städte mit ungenutzter amtlicher Quelle untersucht** (2026-10-09). Ergebnis: bei keiner liegt es am Importer.
+  - **Kiel und Krefeld haben überhaupt keine Behindertenparkplatz-Daten.** Ihre Treffer waren „Bewohnerparken Kiel" und „Bewohnerparken Krefeld" – Anwohnerparken, dieselbe Verwechslung wie bei Aachen. Dass der Importer sie ablehnt, ist richtig; OpenStreetMap ist dort die korrekte Quelle.
+  - **Bochum, Bielefeld und Karlsruhe haben echte Datensätze, aber tote Links.** Bochums ArcGIS-Dienst existiert nicht mehr (der Server listet 58 Dienste, keiner davon passt), die Dateien auf `bochum.opendata.ruhr` antworten mit 403 auch mit Referer. Karlsruhes Dienstpfad liefert 404. Bielefelds Portal war nicht erreichbar.
+  - **Die eigentliche Erkenntnis:** GovData verweist auf Dienste, die es nicht mehr gibt. Das trifft die monatliche Aktualitätsprüfung (4.4) – sie muss auch tote Links melden, nicht nur geänderte Datumsangaben.
+- [ ] 2d.8a Bei Bochum, Bielefeld und Karlsruhe die aktuellen Bezugswege suchen – auf den Portalen der Städte statt über GovData. Der Gewinn wäre spürbar: Düsseldorf kam von 171 Standorten aus OSM auf 340 aus der amtlichen Quelle.
 - [ ] 2d.9 **Regensburg** hat weder amtliche Daten noch OSM-Treffer – prüfen, ob die Abfrage oder die Datenlage schuld ist
 - [ ] 2d.10 Auffällig niedrige OSM-Zahlen stichprobenartig prüfen, etwa Wuppertal mit 66 Standorten bei 359.000 Einwohnern
 
@@ -103,8 +135,10 @@ Plätze gibt.
   - [x] 3.0a **Behoben.** Von 61 % ohne Straßennamen auf **1 %** (89 von 13.463). 42 % der Standorte haben jetzt zusätzlich eine Hausnummer. Nürnberg hat statt 15 nun 279 verschiedene Bezeichnungen.
   - [x] 3.0b **Über OpenStreetMap statt über Nominatim gelöst** (`npm run import:streets`): eine Overpass-Abfrage je Stadt für alle benannten Straßen, dann lokal die nächstgelegene zuordnen – über ein Raster, sonst wären es Millionen Abstandsberechnungen. Statt 8.200 Einzelabfragen an einen freien Geocoder sind es rund 140 Abfragen, und der Lauf dauert Minuten statt Stunden. Hausnummern kommen aus den Adressobjekten derselben Abfrage.
   - [x] 3.0c `npm run import:addresses` (Nominatim, eine Anfrage je Standort) bleibt als Rückfallebene für Städte, in denen OpenStreetMap keine Straßen führt
-  - [ ] 3.0d Die letzten 89 Standorte liegen über 150 m von jeder Straße entfernt – meist Parkplatzflächen im Grünen. Einzeln ansehen oder den Radius für diese Fälle erhöhen.
-  - [ ] 3.0e Ein Nebenbefund: Ein Nürnberger Standort heißt jetzt „A 9" – die nächstgelegene Straße war die Autobahn. Für Rastplätze richtig, in der Liste aber irritierend. Autobahnen als Namensgeber ausschließen, wenn eine andere Straße in Reichweite liegt.
+  - [x] 3.0d **Die letzten Lücken geschlossen.** Von 89 verbliebenen Standorten bekamen 84 über die Rückwärtssuche einen Namen – wo keine Straße in Reichweite liegt, jetzt auch der Ortsteil („Parkplatz Silbermannstraße"). Es bleiben **5**, und die tragen aussagekräftige Namen aus OpenStreetMap („IKEA", „Tiefgarage Klinikum", „Wanderparkplatz Tiergarten"); eine Straße wäre dort keine Verbesserung.
+  - [x] 3.0f **Datenfehler behoben: Platzhalter im Straßenfeld.** Bei 36 Standorten stand „Behindertenparkplatz Dresden" als _Straßenname_ – der Platzhalter war durch die Adress-Aufspaltung gelaufen. Dadurch galten sie als versorgt und wurden von jeder Nachbesserung übersprungen. Ursache im Importer behoben, Daten bereinigt, alle 36 haben jetzt eine echte Adresse.
+  - [ ] 3.0g Kosmetik: Gelsenkirchen stellt jedem Eintrag „Behindertenparkplatz" voran, was in einer App voller Behindertenparkplätze überflüssig ist. Betrifft 218 Bezeichnungen, aber nur als Rückfallwert – angezeigt wird die Straße.
+  - [x] 3.0e **Straßennummern als Namen behoben.** Betroffen waren 11 Standorte („A 9", „A 565", „B 10", „B 37", „L 534"). Zwei Änderungen: Autobahnen und Kraftfahrstraßen kommen als Namensgeber nicht mehr in Frage – dort gibt es keine Behindertenstellplätze –, und eine Straße mit richtigem Namen hat Vorrang vor einer nummerierten, auch wenn die etwas näher liegt. Jetzt null Standorte mit Straßennummer.
 
 Bisher prüft der Import nur, ob eine Koordinate überhaupt plausibel ist (liegt sie
 in Deutschland, liegt sie nahe der richtigen Stadt). Das fängt grobe Fehler ab,
@@ -148,6 +182,7 @@ ob sich an der Quelle etwas getan hat.
   - lädt dabei **keine** Parkplatzdaten herunter
   - schreibt `data/_aktualitaet.md`: unverändert / geändert / nicht prüfbar, je Stadt
   - nennt am Ende die fertigen Befehle für die Städte, die neu importiert werden sollten
+  - **auch tote Links melden.** Die Untersuchung zu 2d.8 hat gezeigt, dass GovData auf Dienste verweist, die es nicht mehr gibt – Bochums ArcGIS-Dienst etwa. Ein Datensatz, der nicht mehr abrufbar ist, ist wichtiger zu wissen als einer, der sich geändert hat.
   - Ablauf und Takt stehen in [Datenpflege.md](Datenpflege.md#3-monatlich-auf-aktualität-prüfen)
 - [ ] 4.5 Automatisieren, sobald die App läuft – etwa als monatlicher GitHub-Actions-Lauf, der bei Änderungen einen Pull Request mit den neuen Daten öffnet. So bleibt die Kontrolle beim Menschen.
 - [ ] 4.6 Importdatum je Stadt in der Oberfläche zeigen („Daten vom …"), damit niemand veraltete Angaben für aktuell hält
@@ -199,8 +234,14 @@ ob sich an der Quelle etwas getan hat.
 - [x] 7.1 Detailansicht beim Markerklick, auf dem Smartphone als Bottom-Sheet
 - [x] 7.2 Anzeige: Adresse, Stadtteil, Anzahl Stellplätze, Zeitbeschränkung, Entfernung
 - [x] 7.3 „In Karten-App öffnen" mit Plattformerkennung – Apple Karten auf iOS, sonst Google Maps
-- [ ] 7.4 Teilen-Funktion für einen Parkplatz (Web Share API, Fallback Link kopieren)
-- [ ] 7.5 Hinweis anzeigen, wenn die Zeitbeschränkung gerade **nicht** gilt – „jetzt nicht nutzbar" ist beim Losfahren wichtiger als die Öffnungszeit im Kleingedruckten
+- [x] 7.4 **Teilen-Funktion.** Auf dem Smartphone über das System-Teilen, sonst Link in die Zwischenablage. Geteilt wird ein OpenStreetMap-Link auf die Koordinate – der funktioniert überall und braucht keine App. Nützlicher als es klingt: Wer abgeholt wird oder jemanden begleitet, muss den Treffpunkt mitteilen können.
+- [x] 7.5 **Zeitbeschränkungen gedeutet statt nur angezeigt** (`src/lib/opening-hours.ts`)
+  - **801 Angaben waren gar keine Beschränkung** – „24/7", „von 00:00 Uhr bis 24:00 Uhr", „Mo-Su,PH 00:00-24:00". Als „Nur: 24/7" gelesen wirkten sie wie eine Einschränkung. Sie werden jetzt ausgeblendet; es bleiben 394 echte.
+  - Davon versteht die App 83 % sicher und sagt in der Detailansicht, ob die Beschränkung **gerade gilt** oder **gerade nicht**
+  - Wo die Angabe nicht zweifelsfrei deutbar ist, steht bewusst nichts. Eine falsch verstandene Zeitangabe ist schlimmer als keine: Wer glaubt, der Platz sei frei, und ein Knöllchen bekommt, ist schlechter dran als jemand, der selbst nachsieht.
+  - `npm run report:times` zeigt, welche Formen noch fehlen und wie oft sie vorkommen
+- [ ] 7.6 Die restlichen 17 % der Zeitangaben deuten lernen – meist Sonderfälle wie „Mo-Th 06:00-24:00, Fr-Sa 06:00-02:00" (über Mitternacht) oder „nur an Veranstaltungen". Lohnt erst, wenn die häufigen Formen abgedeckt sind.
+- [ ] 7.7 Den Hinweis auch in der Liste zeigen, nicht nur in der Detailansicht
 
 ---
 
@@ -237,13 +278,15 @@ sie nützt, und die höhere da, wo sie schützt.
 
 ## 9. Darstellung und Bedienung
 
-- [ ] 9.1 **Dark Mode mit Umschalter.** Standardmäßig an, abschaltbar.
-  - Umschalter mit drei Stellungen: dunkel (Vorgabe), hell, Systemeinstellung
-  - Auswahl in `localStorage` merken
-  - Vor dem ersten Rendern setzen, damit es beim Laden nicht kurz hell aufblitzt
-  - Umschalter gut erreichbar unterbringen, nicht in einem versteckten Menü
-  - Derzeit folgt die App nur `prefers-color-scheme` und hat keinen Umschalter
-- [ ] 9.2 Kartenkacheln an den Modus anpassen – eine helle Karte in dunkler Oberfläche blendet nachts
+- [x] 9.1 **Dark Mode mit Umschalter** – dunkel ist Vorgabe, auch wenn das System hell steht
+  - Drei Stellungen: Dunkel (Vorgabe), Hell, System
+  - Auswahl in `localStorage`, überlebt das Neuladen
+  - Ein Skript im `<head>` setzt `data-theme`, bevor die Seite gezeichnet wird – sonst blitzte sie kurz hell auf, was bei einer dunklen Vorgabe am meisten stört
+  - `dark:` in Tailwind hört jetzt auf `data-theme` statt auf die Systemeinstellung
+  - Untergebracht in der Listenansicht unter „Einstellungen" – zwei Tipps entfernt, kein verstecktes Menü
+- [ ] 9.1a Eigene Einstellungsseite, sobald mehr dazukommt (zusammen mit der Karten-App-Wahl aus 11.3). In der Liste ist der Umschalter erreichbar, aber nicht sein endgültiger Platz.
+- [x] 9.2 **Kartenkacheln im Dunkelmodus abgedunkelt.** OpenStreetMap liefert nur helle Kacheln. Statt einen zweiten Anbieter mit eigener Lizenz einzubinden, kehrt ein CSS-Filter die Helligkeit um und dreht den Farbton zurück – Wasser bleibt blau, Grünflächen grün. Die Marker sind ausgenommen, ihre Farben tragen die Bedeutung.
+- [ ] 9.2a Falls die gefilterte Karte auf Dauer nicht überzeugt: echte dunkle Kacheln einbinden (etwa CARTO Dark Matter). Das bringt bessere Lesbarkeit, aber einen weiteren Anbieter, dessen Nutzungsbedingungen und Attribution zu prüfen wären.
 - [x] 9.3 Tastaturbedienung und sichtbarer Fokus
 - [x] 9.4 Screenreader: Marker haben Rolle und Namen, die Liste ist die Textalternative zur Karte
 - [x] 9.5 Große Touch-Ziele (mindestens 44 px)
@@ -291,12 +334,14 @@ sondern Voraussetzung für einen Teil der Kernfunktion.
 ## 12. Qualität und Deployment
 
 - [x] 12.1 Unit-Tests: Parser, Adress-Aufspaltung, Distanzberechnung, Karten-App-Links (42 Tests)
-- [ ] 12.2 Tests für die Importkette: Feldzuordnung, UTM-Umrechnung, GML-Parser, CSV-Leser. Genau dort sind die teuren Fehler passiert, und genau dort gibt es bisher keine Tests.
+- [x] 12.2 **Tests für die Importkette** – 25 neue Tests zu UTM-Umrechnung, Zonenerkennung aus `srsName`, Koordinatenableitung, Feldzuordnung, GML-Parser und CSV-Leser. Alle geprüften Fälle stammen aus echten Quellen, nicht aus Erfundenem; darunter der Dresden-Fehler, der belegt, dass die falsche Zone ein plausibel aussehendes Ergebnis liefert.
 - [ ] 12.3 E2E-Smoke-Test: Karte lädt, Marker klickbar, Liste wechselt, Detailansicht öffnet
 - [ ] 12.4 Lighthouse-Prüfung auf Mobil (Leistung und Barrierefreiheit)
 - [ ] 12.5 Deployment-Pipeline (Vercel), Umgebungsvariablen dokumentieren
 - [ ] 12.6 Fehler-Monitoring und minimales Logging
-- [ ] 12.7 PWA-Grundlagen: Manifest, Icons, „Zum Homescreen hinzufügen"
+- [x] 12.7 **PWA-Grundlagen.** Manifest unter `/manifest.webmanifest`, eigenes Symbol (Kartenmarker mit Rollstuhl) als SVG, daraus erzeugte PNGs in 192 und 512 sowie ein maskable Symbol mit Rand, damit Android es beschneiden kann, ohne das Motiv anzuschneiden. `npm run icons` erzeugt sie neu. Die Platzhalter-Grafiken des Projektgerüsts sind entfernt.
+- [ ] 12.7a Symbol gestalterisch überarbeiten – es ist funktional, aber von mir gezeichnet und kein Ersatz für eine richtige Gestaltung
+- [ ] 12.9 Service Worker für „Zum Homescreen hinzufügen" im vollen Sinn: Ohne ihn startet die App zwar eigenständig, funktioniert aber nicht offline (hängt mit 12.8 zusammen)
 - [ ] 12.8 Offline-Fähigkeit prüfen – im Parkhaus oder Funkloch ist genau dann kein Netz, wenn man die App braucht
 
 ---
@@ -335,8 +380,8 @@ dunklem Modus. **Was funktioniert:**
 **Was dabei auffiel und noch offen ist:**
 
 - [ ] 13.10 Kein Umschalter für den Dark Mode (siehe 9.1) – die App folgt nur der Systemeinstellung
-- [ ] 13.11 Stadtteil steht bei vielen Städten nur als Stadtname, weil die Quelle keinen nennt – in der Detailansicht wirkt „Stadtteil: Hamburg" sinnlos. Besser weglassen, wenn beides gleich ist.
-- [ ] 13.12 Die Quellenangabe in der Detailansicht endet oft auf „(nicht angegeben)" – das ist die fehlende Lizenz (2a.5) und gehört so nicht in die Oberfläche.
+- [x] 13.11 „Stadtteil: Hamburg" behoben – das Feld heißt jetzt „Stadt", wenn die Quelle keinen Stadtteil nennt. Weglassen wäre falsch gewesen: Bei 84 Städten ist die Stadt eine nützliche Angabe, nur die Beschriftung war es nicht.
+- [x] 13.12 „(nicht angegeben)" wird in der Oberfläche nicht mehr angezeigt. Die fehlende Lizenz bleibt ein Problem der Daten (2a.5), ist aber eine Verwaltungsnotiz und gehört in den Importbericht, nicht vor die Nutzer:innen.
 
 ---
 

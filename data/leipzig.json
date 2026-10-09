@@ -191,21 +191,6 @@
       "source": "OpenStreetMap (node/9403717107), ODbL"
     },
     {
-      "id": "leipzig-6aa6924fe5",
-      "city": "leipzig",
-      "label": "Behindertenparkplatz Leipzig",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Leipzig",
-      "spotCount": 1,
-      "lat": 51.3830681,
-      "lng": 12.3776632,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1513918459), ODbL"
-    },
-    {
       "id": "leipzig-c814596d73",
       "city": "leipzig",
       "label": "Benedekring",
@@ -2304,6 +2289,21 @@
       "lng": 12.3723047,
       "geoAccuracy": "house",
       "source": "OpenStreetMap (node/8682474238), ODbL"
+    },
+    {
+      "id": "leipzig-6aa6924fe5",
+      "city": "leipzig",
+      "label": "Oberweg",
+      "street": "Oberweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Leipzig",
+      "spotCount": 1,
+      "lat": 51.3830681,
+      "lng": 12.3776632,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1513918459), ODbL"
     },
     {
       "id": "leipzig-11ccd51e6b",

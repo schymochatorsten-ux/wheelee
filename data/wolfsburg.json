@@ -86,6 +86,21 @@
       "source": "OpenStreetMap (way/1111088872), ODbL"
     },
     {
+      "id": "wolfsburg-1c13582311",
+      "city": "wolfsburg",
+      "label": "Allerpark",
+      "street": "Allerpark",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wolfsburg",
+      "spotCount": 1,
+      "lat": 52.4353983,
+      "lng": 10.8180542,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1111088874), ODbL"
+    },
+    {
       "id": "wolfsburg-98906ae164",
       "city": "wolfsburg",
       "label": "Am Feldscheunenteich 11",
@@ -399,36 +414,6 @@
       "lng": 10.8225593,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1450926857), ODbL"
-    },
-    {
-      "id": "wolfsburg-1c13582311",
-      "city": "wolfsburg",
-      "label": "Behindertenparkplatz Wolfsburg",
-      "street": null,
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Wolfsburg",
-      "spotCount": 1,
-      "lat": 52.4353983,
-      "lng": 10.8180542,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1111088874), ODbL"
-    },
-    {
-      "id": "wolfsburg-1c388ad5e2",
-      "city": "wolfsburg",
-      "label": "Behindertenparkplatz Wolfsburg",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
-      "timeRestriction": null,
-      "district": "Wolfsburg",
-      "spotCount": 25,
-      "lat": 52.3313735,
-      "lng": 10.8441114,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1211790995), ODbL"
     },
     {
       "id": "wolfsburg-44d2b8f767",
@@ -999,6 +984,21 @@
       "lng": 10.8384603,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1526721239), ODbL"
+    },
+    {
+      "id": "wolfsburg-1c388ad5e2",
+      "city": "wolfsburg",
+      "label": "Parkplatz Zufahrt und Kasse",
+      "street": "Parkplatz Zufahrt und Kasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Wolfsburg",
+      "spotCount": 25,
+      "lat": 52.3313735,
+      "lng": 10.8441114,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1211790995), ODbL"
     },
     {
       "id": "wolfsburg-4faf762aac",

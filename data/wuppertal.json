@@ -116,21 +116,6 @@
       "source": "OpenStreetMap (way/121872946), ODbL"
     },
     {
-      "id": "wuppertal-10890838ac",
-      "city": "wuppertal",
-      "label": "Behindertenparkplatz Wuppertal",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Wuppertal",
-      "spotCount": 1,
-      "lat": 51.3097454,
-      "lng": 7.2536249,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/444905275), ODbL"
-    },
-    {
       "id": "wuppertal-6fa82b3de7",
       "city": "wuppertal",
       "label": "Bendahler Straße",
@@ -729,6 +714,21 @@
       "lng": 7.1019616,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/25510454), ODbL"
+    },
+    {
+      "id": "wuppertal-10890838ac",
+      "city": "wuppertal",
+      "label": "Schmiedestraße",
+      "street": "Schmiedestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wuppertal",
+      "spotCount": 1,
+      "lat": 51.3097454,
+      "lng": 7.2536249,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/444905275), ODbL"
     },
     {
       "id": "wuppertal-80fd15b3ce",

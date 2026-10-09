@@ -41,36 +41,6 @@
       "source": "Behindertenparkplätze Ulm – Ulm (nicht angegeben)"
     },
     {
-      "id": "ulm-57adb480d4",
-      "city": "ulm",
-      "label": "B 10",
-      "street": "B 10",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Ulm",
-      "spotCount": 2,
-      "lat": 48.3920664107,
-      "lng": 9.98508900136,
-      "geoAccuracy": "house",
-      "source": "Behindertenparkplätze Ulm – Ulm (nicht angegeben)"
-    },
-    {
-      "id": "ulm-1fd7c0278c",
-      "city": "ulm",
-      "label": "B 10",
-      "street": "B 10",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Ulm",
-      "spotCount": 3,
-      "lat": 48.391729788,
-      "lng": 9.98480200499,
-      "geoAccuracy": "house",
-      "source": "Behindertenparkplätze Ulm – Ulm (nicht angegeben)"
-    },
-    {
       "id": "ulm-f991b9649c",
       "city": "ulm",
       "label": "Bachstraße",
@@ -551,6 +521,21 @@
       "source": "Behindertenparkplätze Ulm – Ulm (nicht angegeben)"
     },
     {
+      "id": "ulm-57adb480d4",
+      "city": "ulm",
+      "label": "Schillerstraße",
+      "street": "Schillerstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ulm",
+      "spotCount": 2,
+      "lat": 48.3920664107,
+      "lng": 9.98508900136,
+      "geoAccuracy": "house",
+      "source": "Behindertenparkplätze Ulm – Ulm (nicht angegeben)"
+    },
+    {
       "id": "ulm-f6e9058652",
       "city": "ulm",
       "label": "Schillerstraße",
@@ -562,6 +547,21 @@
       "spotCount": 2,
       "lat": 48.39254551536,
       "lng": 9.9854591462,
+      "geoAccuracy": "house",
+      "source": "Behindertenparkplätze Ulm – Ulm (nicht angegeben)"
+    },
+    {
+      "id": "ulm-1fd7c0278c",
+      "city": "ulm",
+      "label": "Schillerstraße 1/8",
+      "street": "Schillerstraße",
+      "houseNumber": "1/8",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ulm",
+      "spotCount": 3,
+      "lat": 48.391729788,
+      "lng": 9.98480200499,
       "geoAccuracy": "house",
       "source": "Behindertenparkplätze Ulm – Ulm (nicht angegeben)"
     },

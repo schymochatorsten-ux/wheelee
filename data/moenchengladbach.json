@@ -161,36 +161,6 @@
       "source": "OpenStreetMap (node/11030884594), ODbL"
     },
     {
-      "id": "moenchengladbach-b80551e2b7",
-      "city": "moenchengladbach",
-      "label": "Behindertenparkplatz Mönchengladbach",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Mönchengladbach",
-      "spotCount": 2,
-      "lat": 51.1181476,
-      "lng": 6.4260957,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/35776251), ODbL"
-    },
-    {
-      "id": "moenchengladbach-4cbfd29793",
-      "city": "moenchengladbach",
-      "label": "Behindertenparkplatz Mönchengladbach",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
-      "timeRestriction": null,
-      "district": "Mönchengladbach",
-      "spotCount": 4,
-      "lat": 51.18967,
-      "lng": 6.3609196,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1564105742), ODbL"
-    },
-    {
       "id": "moenchengladbach-873d77a995",
       "city": "moenchengladbach",
       "label": "Beresford Road",
@@ -566,6 +536,21 @@
       "source": "OpenStreetMap (way/42184371), ODbL"
     },
     {
+      "id": "moenchengladbach-4cbfd29793",
+      "city": "moenchengladbach",
+      "label": "Heilstättenweg",
+      "street": "Heilstättenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Mönchengladbach",
+      "spotCount": 4,
+      "lat": 51.18967,
+      "lng": 6.3609196,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1564105742), ODbL"
+    },
+    {
       "id": "moenchengladbach-6c75e65341",
       "city": "moenchengladbach",
       "label": "Helmut-Grashoff-Straße",
@@ -759,6 +744,21 @@
       "lng": 6.4567118,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1056308026), ODbL"
+    },
+    {
+      "id": "moenchengladbach-b80551e2b7",
+      "city": "moenchengladbach",
+      "label": "L 39",
+      "street": "L 39",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mönchengladbach",
+      "spotCount": 2,
+      "lat": 51.1181476,
+      "lng": 6.4260957,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35776251), ODbL"
     },
     {
       "id": "moenchengladbach-109900cf33",

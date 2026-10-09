@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "clean": "tsx scripts/clean.mts",
+    "icons": "tsx scripts/make-icons.mts",
     "lint": "eslint",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
@@ -24,6 +25,7 @@
     "import:city": "tsx scripts/import/import-city.mts",
     "import:index": "tsx scripts/import/generate-index.mts",
     "validate": "tsx scripts/import/validate.mts",
+    "report:times": "tsx scripts/import/report-times.mts",
     "import:addresses": "tsx scripts/import/enrich-addresses.mts",
     "import:streets": "tsx scripts/import/street-names.mts"
   },

@@ -9,6 +9,7 @@ export default defineConfig({
   },
   test: {
     environment: "node",
-    include: ["src/**/*.test.ts", "scripts/**/*.test.ts"],
+    // Die Importskripte liegen als .mts vor, damit tsx sie als ESM lädt.
+    include: ["src/**/*.test.ts", "scripts/**/*.test.{ts,mts}"],
   },
 });

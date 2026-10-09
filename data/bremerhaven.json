@@ -41,6 +41,21 @@
       "source": "OpenStreetMap (way/339143559), ODbL"
     },
     {
+      "id": "bremerhaven-ecd34aa97f",
+      "city": "bremerhaven",
+      "label": "Apelerweg",
+      "street": "Apelerweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bremerhaven",
+      "spotCount": 3,
+      "lat": 53.5378639,
+      "lng": 8.6372482,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/315757545), ODbL"
+    },
+    {
       "id": "bremerhaven-59e588cb3e",
       "city": "bremerhaven",
       "label": "Auerstraße",
@@ -54,21 +69,6 @@
       "lng": 8.6089616,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/44426323), ODbL"
-    },
-    {
-      "id": "bremerhaven-ecd34aa97f",
-      "city": "bremerhaven",
-      "label": "Behindertenparkplatz Bremerhaven",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Bremerhaven",
-      "spotCount": 3,
-      "lat": 53.5378639,
-      "lng": 8.6372482,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/315757545), ODbL"
     },
     {
       "id": "bremerhaven-5b909515bb",

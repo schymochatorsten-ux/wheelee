@@ -191,21 +191,6 @@
       "source": "OpenStreetMap (way/1079742899), ODbL"
     },
     {
-      "id": "bremen-2634863c76",
-      "city": "bremen",
-      "label": "Behindertenparkplatz Bremen",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Bremen",
-      "spotCount": 10,
-      "lat": 53.0497165,
-      "lng": 8.7929731,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/4708029), ODbL"
-    },
-    {
       "id": "bremen-a1aa74fd45",
       "city": "bremen",
       "label": "Beim Sattelhof",
@@ -834,6 +819,21 @@
       "lng": 8.8181144,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/26552717), ODbL"
+    },
+    {
+      "id": "bremen-2634863c76",
+      "city": "bremen",
+      "label": "Hünefeldstraße",
+      "street": "Hünefeldstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bremen",
+      "spotCount": 10,
+      "lat": 53.0497165,
+      "lng": 8.7929731,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/4708029), ODbL"
     },
     {
       "id": "bremen-f7a79b5a60",

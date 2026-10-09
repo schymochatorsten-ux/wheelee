@@ -206,21 +206,6 @@
       "source": "OpenStreetMap (way/1152240353), ODbL"
     },
     {
-      "id": "saarbruecken-b375bcd748",
-      "city": "saarbruecken",
-      "label": "Behindertenparkplatz Saarbrücken",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Saarbrücken",
-      "spotCount": 2,
-      "lat": 49.2131917,
-      "lng": 6.9496709,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1120781937), ODbL"
-    },
-    {
       "id": "saarbruecken-27d130effc",
       "city": "saarbruecken",
       "label": "Bertha-von-Suttner-Straße 2",
@@ -444,6 +429,21 @@
       "lng": 6.9780017,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/124161798), ODbL"
+    },
+    {
+      "id": "saarbruecken-b375bcd748",
+      "city": "saarbruecken",
+      "label": "Deutschmühlental",
+      "street": "Deutschmühlental",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Saarbrücken",
+      "spotCount": 2,
+      "lat": 49.2131917,
+      "lng": 6.9496709,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1120781937), ODbL"
     },
     {
       "id": "saarbruecken-23b51efcd4",

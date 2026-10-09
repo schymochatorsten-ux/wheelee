@@ -116,21 +116,6 @@
       "source": "OpenStreetMap (node/12744341795), ODbL"
     },
     {
-      "id": "kaiserslautern-45c4165a48",
-      "city": "kaiserslautern",
-      "label": "Behindertenparkplatz Kaiserslautern",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Kaiserslautern",
-      "spotCount": 3,
-      "lat": 49.4664114,
-      "lng": 7.6815361,
-      "geoAccuracy": "house",
-      "source": "OpenStreetMap (node/13127647841), ODbL"
-    },
-    {
       "id": "kaiserslautern-169634e3a9",
       "city": "kaiserslautern",
       "label": "Bismarckstraße 1",
@@ -159,6 +144,21 @@
       "lng": 7.7766766,
       "geoAccuracy": "house",
       "source": "OpenStreetMap (node/12718307129), ODbL"
+    },
+    {
+      "id": "kaiserslautern-45c4165a48",
+      "city": "kaiserslautern",
+      "label": "Brüchling",
+      "street": "Brüchling",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kaiserslautern",
+      "spotCount": 3,
+      "lat": 49.4664114,
+      "lng": 7.6815361,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13127647841), ODbL"
     },
     {
       "id": "kaiserslautern-7998081419",

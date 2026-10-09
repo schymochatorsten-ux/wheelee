@@ -220,10 +220,13 @@ function boundingBoxOf(spots: ParkingSpot[]): BoundingBox {
  */
 function streetQuery(box: BoundingBox): string {
   const bbox = `${box.south},${box.west},${box.north},${box.east}`;
+  // Autobahnen und Kraftfahrstraßen sind ausgeschlossen: Dort gibt es keine
+  // Behindertenstellplätze, wohl aber Parkplätze daneben, die sonst „A 9"
+  // oder „A 565" heißen würden.
   return `
 [out:json][timeout:240];
 way["highway"]["name"]
-  ["highway"!~"^(footway|cycleway|path|steps|track|bridleway|construction|proposed|raceway)$"]
+  ["highway"!~"^(footway|cycleway|path|steps|track|bridleway|construction|proposed|raceway|motorway|motorway_link|trunk|trunk_link)$"]
   (${bbox});
 out geom;
 `;
@@ -294,6 +297,12 @@ interface Segment {
   by: number;
 }
 
+/**
+ * Namen, die nur eine Straßennummer sind („B 10", „L 534").
+ * Als Ortsangabe taugen sie wenig – niemand sucht „B 10".
+ */
+export const ONLY_ROAD_NUMBER = /^[ABKLSZ]\s?\d{1,4}$/u;
+
 const cellKey = (lat: number, lng: number) => `${Math.floor(lat / CELL)}:${Math.floor(lng / CELL)}`;
 
 /**
@@ -351,6 +360,7 @@ function nearestStreet(
   const py = project.y(lat);
 
   let best: { name: string; meters: number } | null = null;
+  let bestNamed: { name: string; meters: number } | null = null;
   const baseLat = Math.floor(lat / CELL);
   const baseLng = Math.floor(lng / CELL);
 
@@ -359,12 +369,20 @@ function nearestStreet(
     for (let dLng = -1; dLng <= 1; dLng += 1) {
       for (const segment of grid.get(`${baseLat + dLat}:${baseLng + dLng}`) ?? []) {
         const meters = distanceToSegment(px, py, segment.ax, segment.ay, segment.bx, segment.by);
-        if (!best || meters < best.meters) best = { name: segment.name, meters };
+        const candidate = { name: segment.name, meters };
+
+        if (!best || meters < best.meters) best = candidate;
+        if (!ONLY_ROAD_NUMBER.test(segment.name) && (!bestNamed || meters < bestNamed.meters)) {
+          bestNamed = candidate;
+        }
       }
     }
   }
 
-  return best && best.meters <= MAX_STREET_METERS ? best : null;
+  // Eine Straße mit richtigem Namen hat Vorrang, solange sie in Reichweite
+  // liegt – auch wenn eine nummerierte etwas näher ist.
+  const chosen = bestNamed && bestNamed.meters <= MAX_STREET_METERS ? bestNamed : best;
+  return chosen && chosen.meters <= MAX_STREET_METERS ? chosen : null;
 }
 
 /* ------------------------------------------------------------------ *

@@ -221,21 +221,6 @@
       "source": "OpenStreetMap (way/141607143), ODbL"
     },
     {
-      "id": "muenster-50cf004bec",
-      "city": "muenster",
-      "label": "Behindertenparkplatz Münster",
-      "street": null,
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Münster",
-      "spotCount": 1,
-      "lat": 51.8999278,
-      "lng": 7.6557639,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/980528066), ODbL"
-    },
-    {
       "id": "muenster-2bf730ab77",
       "city": "muenster",
       "label": "Bergiusstraße",
@@ -1734,6 +1719,21 @@
       "lng": 7.7302656,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/168414639), ODbL"
+    },
+    {
+      "id": "muenster-50cf004bec",
+      "city": "muenster",
+      "label": "Nobelstraße",
+      "street": "Nobelstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Münster",
+      "spotCount": 1,
+      "lat": 51.8999278,
+      "lng": 7.6557639,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/980528066), ODbL"
     },
     {
       "id": "muenster-1fea024dd3",

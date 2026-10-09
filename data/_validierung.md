@@ -185,7 +185,7 @@ Bewertung: 🔴 Fehler – muss angesehen werden · 🟡 Verdacht – sollte ang
   - Gustav-Ricker-Straße ↔ Gustav-Ricker-Straße (6 m)
   - Gustav-Ricker-Straße ↔ Gustav-Ricker-Straße (8 m)
   - Gustav-Ricker-Straße ↔ Gustav-Ricker-Straße (2 m)
-- 🔴 **Namen nicht unterscheidbar:** Nur 77 verschiedene Bezeichnungen bei 208 Standorten – das Adressfeld der Quelle wurde vermutlich nicht erkannt.
+- 🔴 **Namen nicht unterscheidbar:** Nur 78 verschiedene Bezeichnungen bei 208 Standorten – das Adressfeld der Quelle wurde vermutlich nicht erkannt.
 - ⬜ **Kein Stadtteil:** Bei allen Standorten steht der Stadtname als Stadtteil – die Quelle nennt keinen.
 
 ### Potsdam
@@ -361,11 +361,11 @@ Bewertung: 🔴 Fehler – muss angesehen werden · 🟡 Verdacht – sollte ang
 93 Standorte, 123 Stellplätze · Quelle: OpenStreetMap-Mitwirkende (ODbL)
 
 - 🟡 **Mögliche Dubletten:** 33 Paare liegen unter 10 m auseinander.
-  - Behindertenparkplatz Kassel ↔ Behindertenparkplatz Kassel (4 m)
-  - Behindertenparkplatz Kassel ↔ Behindertenparkplatz Kassel (7 m)
-  - Behindertenparkplatz Kassel ↔ Behindertenparkplatz Kassel (4 m)
-  - Behindertenparkplatz Kassel ↔ Behindertenparkplatz Kassel (7 m)
-  - Behindertenparkplatz Kassel ↔ Behindertenparkplatz Kassel (4 m)
+  - Heinrich-Hertz-Straße 25 ↔ Heinrich-Hertz-Straße 25 (4 m)
+  - Heinrich-Hertz-Straße 25 ↔ Heinrich-Hertz-Straße 25 (7 m)
+  - Heinrich-Hertz-Straße 25 ↔ Heinrich-Hertz-Straße 25 (4 m)
+  - Heinrich-Hertz-Straße 25 ↔ Heinrich-Hertz-Straße 25 (7 m)
+  - Heinrich-Hertz-Straße 25 ↔ Heinrich-Hertz-Straße 25 (4 m)
 - ⬜ **Kein Stadtteil:** Bei allen Standorten steht der Stadtname als Stadtteil – die Quelle nennt keinen.
 
 ### Oldenburg
@@ -385,8 +385,8 @@ Bewertung: 🔴 Fehler – muss angesehen werden · 🟡 Verdacht – sollte ang
 88 Standorte, 127 Stellplätze · Quelle: OpenStreetMap-Mitwirkende (ODbL)
 
 - 🟡 **Mögliche Dubletten:** 18 Paare liegen unter 10 m auseinander.
-  - Behindertenparkplatz Erfurt ↔ Behindertenparkplatz Erfurt (6 m)
-  - Behindertenparkplatz Erfurt ↔ Behindertenparkplatz Erfurt (6 m)
+  - K 16 ↔ K 16 (6 m)
+  - K 16 ↔ K 16 (6 m)
   - Rudolstädter Straße ↔ Rudolstädter Straße (5 m)
   - Rudolstädter Straße ↔ Rudolstädter Straße (5 m)
   - Rudolstädter Straße ↔ Rudolstädter Straße (5 m)

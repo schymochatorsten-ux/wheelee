@@ -371,21 +371,6 @@
       "source": "OpenStreetMap (node/2335184265), ODbL"
     },
     {
-      "id": "muenchen-b06c538559",
-      "city": "muenchen",
-      "label": "Behindertenparkplatz München",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "München",
-      "spotCount": 1,
-      "lat": 48.2112754,
-      "lng": 11.6153909,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1071699513), ODbL"
-    },
-    {
       "id": "muenchen-425535f9bd",
       "city": "muenchen",
       "label": "Belgradstraße 13",
@@ -459,6 +444,21 @@
       "lng": 11.5420552,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/448885078), ODbL"
+    },
+    {
+      "id": "muenchen-b06c538559",
+      "city": "muenchen",
+      "label": "Betongweg",
+      "street": "Betongweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "München",
+      "spotCount": 1,
+      "lat": 48.2112754,
+      "lng": 11.6153909,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1071699513), ODbL"
     },
     {
       "id": "muenchen-162ec06195",

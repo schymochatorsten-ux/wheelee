@@ -123,6 +123,10 @@ export function MapSection({ spots, cities, defaultCity }: MapSectionProps) {
     }
   }, []);
 
+  // Parkplätze kennen nur den Stadt-Slug; den Namen kennt die Städteliste.
+  const cityNames = useMemo(() => new Map(cities.map((city) => [city.slug, city.name])), [cities]);
+  const cityNameOf = useCallback((slug: string) => cityNames.get(slug) ?? slug, [cityNames]);
+
   const selectedDistance =
     selected && geo.position && hasCoordinates(selected)
       ? distanceMeters(geo.position, { lat: selected.lat, lng: selected.lng })
@@ -211,6 +215,7 @@ export function MapSection({ spots, cities, defaultCity }: MapSectionProps) {
               <SpotDetails
                 spot={selected}
                 distanceMeters={selectedDistance}
+                cityName={cityNameOf(selected.city)}
                 mapsTarget={mapsTarget}
                 onClose={() => setSelected(null)}
               />

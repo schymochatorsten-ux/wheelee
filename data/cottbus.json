@@ -116,21 +116,6 @@
       "source": "OpenStreetMap (way/1500292687), ODbL"
     },
     {
-      "id": "cottbus-391dc185f1",
-      "city": "cottbus",
-      "label": "Behindertenparkplatz Cottbus",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Cottbus",
-      "spotCount": 3,
-      "lat": 51.7370324,
-      "lng": 14.342044,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1265229482), ODbL"
-    },
-    {
       "id": "cottbus-2648d67953",
       "city": "cottbus",
       "label": "Brauhausbergstraße",
@@ -354,6 +339,21 @@
       "lng": 14.347878,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/799140200), ODbL"
+    },
+    {
+      "id": "cottbus-391dc185f1",
+      "city": "cottbus",
+      "label": "Hermann-Löns-Straße",
+      "street": "Hermann-Löns-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Cottbus",
+      "spotCount": 3,
+      "lat": 51.7370324,
+      "lng": 14.342044,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1265229482), ODbL"
     },
     {
       "id": "cottbus-2a31c5cb3f",

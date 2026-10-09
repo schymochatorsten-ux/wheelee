@@ -126,8 +126,15 @@ function toSpots(
       (fields.label ? asText(properties[fields.label]) : null) ??
       [explicitStreet, explicitNumber].filter(Boolean).join(" ");
 
-    const label = rawLabel && rawLabel.length > 0 ? rawLabel : `Behindertenparkplatz ${city.name}`;
-    const parsed = splitAddress(label);
+    const hasRealLabel = Boolean(rawLabel && rawLabel.length > 0);
+    const label = hasRealLabel ? rawLabel! : `Behindertenparkplatz ${city.name}`;
+
+    // Den Platzhalter nicht durch die Adress-Aufspaltung schicken: Sonst
+    // landete „Behindertenparkplatz Dresden" als Straßenname in den Daten –
+    // und der Standort galt fortan als versorgt, obwohl er keine Adresse hat.
+    const parsed = hasRealLabel
+      ? splitAddress(label)
+      : { street: null, houseNumber: null, note: null, timeRestriction: null };
 
     const time = fields.timeRestriction ? asText(properties[fields.timeRestriction]) : null;
 

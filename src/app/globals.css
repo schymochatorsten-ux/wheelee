@@ -1,21 +1,28 @@
 @import "tailwindcss";
 
-:root {
+/**
+ * `dark:` folgt dem Attribut `data-theme` am <html>-Element, nicht der
+ * Systemeinstellung. Nur so lässt sich die Darstellung in der App umschalten;
+ * gesetzt wird das Attribut vom Skript in `src/lib/theme.ts`, noch bevor die
+ * Seite zum ersten Mal gezeichnet wird.
+ */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+:root,
+:root[data-theme="light"] {
   --background: #ffffff;
   --foreground: #171717;
+}
+
+:root[data-theme="dark"] {
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
@@ -40,10 +47,41 @@ body {
   border-radius: 4px;
 }
 
+/*
+ * Kartenkacheln im Dunkelmodus abdunkeln.
+ *
+ * OpenStreetMap liefert nur helle Kacheln; eine strahlend weiße Karte in
+ * dunkler Oberfläche blendet nachts und im Auto. Statt einen zweiten
+ * Kachelanbieter einzubinden – mit eigener Lizenz und Abhängigkeit – kehrt
+ * ein CSS-Filter die Helligkeit um und dreht den Farbton zurück, damit Grün
+ * grün und Wasser blau bleibt.
+ *
+ * Die Marker sind davon ausgenommen: Sie liegen in eigenen Ebenen, deren
+ * Farben die Bedeutung tragen.
+ */
+:root[data-theme="dark"] .leaflet-tile-pane {
+  filter: invert(1) hue-rotate(180deg) brightness(0.92) contrast(0.95);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .leaflet-tile-pane {
+    transition: filter 150ms ease;
+  }
+}
+
 /* Die Attribution muss lesbar bleiben (ODbL). */
 .leaflet-container .leaflet-control-attribution {
   font-size: 11px;
   background: rgba(255, 255, 255, 0.85);
+}
+
+:root[data-theme="dark"] .leaflet-container .leaflet-control-attribution {
+  background: rgba(10, 10, 10, 0.85);
+  color: #d4d4d4;
+}
+
+:root[data-theme="dark"] .leaflet-container .leaflet-control-attribution a {
+  color: #93c5fd;
 }
 
 @media (prefers-reduced-motion: reduce) {

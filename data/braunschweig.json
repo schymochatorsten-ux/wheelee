@@ -221,21 +221,6 @@
       "source": "OpenStreetMap (way/382883135), ODbL"
     },
     {
-      "id": "braunschweig-363e42bf40",
-      "city": "braunschweig",
-      "label": "Behindertenparkplatz Braunschweig",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Braunschweig",
-      "spotCount": 1,
-      "lat": 52.2937393,
-      "lng": 10.4689543,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1194268354), ODbL"
-    },
-    {
       "id": "braunschweig-ef0d7cc0df",
       "city": "braunschweig",
       "label": "Berliner Straße",
@@ -1044,6 +1029,21 @@
       "lng": 10.5361833,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1299342238), ODbL"
+    },
+    {
+      "id": "braunschweig-363e42bf40",
+      "city": "braunschweig",
+      "label": "Rollbahn",
+      "street": "Rollbahn",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Braunschweig",
+      "spotCount": 1,
+      "lat": 52.2937393,
+      "lng": 10.4689543,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1194268354), ODbL"
     },
     {
       "id": "braunschweig-cb9546410a",

@@ -806,6 +806,21 @@
       "source": "OpenStreetMap (way/1155259308), ODbL"
     },
     {
+      "id": "augsburg-4e8f8cef36",
+      "city": "augsburg",
+      "label": "B 17",
+      "street": "B 17",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Augsburg",
+      "spotCount": 8,
+      "lat": 48.4042309,
+      "lng": 10.8721463,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35296777), ODbL"
+    },
+    {
       "id": "augsburg-67ccb6b8e5",
       "city": "augsburg",
       "label": "Bahnhof-Parkhaus Augsburg",
@@ -849,36 +864,6 @@
       "lng": 10.8944066,
       "geoAccuracy": "house",
       "source": "OpenStreetMap (node/1163748632), ODbL"
-    },
-    {
-      "id": "augsburg-4e8f8cef36",
-      "city": "augsburg",
-      "label": "Behindertenparkplatz Augsburg",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Augsburg",
-      "spotCount": 8,
-      "lat": 48.4042309,
-      "lng": 10.8721463,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/35296777), ODbL"
-    },
-    {
-      "id": "augsburg-b9c643ce99",
-      "city": "augsburg",
-      "label": "Behindertenparkplatz Augsburg",
-      "street": null,
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Augsburg",
-      "spotCount": 4,
-      "lat": 48.3206606,
-      "lng": 10.890232,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/99865620), ODbL"
     },
     {
       "id": "augsburg-4404265302",
@@ -5349,6 +5334,21 @@
       "lng": 10.8828163,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/161464446), ODbL"
+    },
+    {
+      "id": "augsburg-b9c643ce99",
+      "city": "augsburg",
+      "label": "Unterer Talweg",
+      "street": "Unterer Talweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Augsburg",
+      "spotCount": 4,
+      "lat": 48.3206606,
+      "lng": 10.890232,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/99865620), ODbL"
     },
     {
       "id": "augsburg-8b602c49e2",

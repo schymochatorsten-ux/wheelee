@@ -4,6 +4,8 @@ import { useEffect, useRef } from "react";
 import type { ParkingSpot } from "@/lib/types";
 import { formatDistance } from "@/lib/geo";
 import { mapsLabel, mapsUrl, type MapsTarget } from "@/lib/navigation";
+import { normalizeTimeRestriction, restrictionState } from "@/lib/opening-hours";
+import { ShareButton } from "./ShareButton";
 
 /**
  * Detailansicht eines Parkplatzes, auf dem Smartphone als Bottom-Sheet.
@@ -16,6 +18,8 @@ interface SpotDetailsProps {
   spot: ParkingSpot;
   /** Entfernung in Metern, falls ein Standort vorliegt. */
   distanceMeters: number | null;
+  /** Name der Stadt, zu der der Parkplatz gehört. */
+  cityName: string;
   mapsTarget: MapsTarget;
   onClose: () => void;
 }
@@ -26,9 +30,45 @@ function addressLine(spot: ParkingSpot): string {
   return street.length > 0 ? street : spot.label;
 }
 
-export function SpotDetails({ spot, distanceMeters, mapsTarget, onClose }: SpotDetailsProps) {
+/**
+ * Beschriftung für das Ortsfeld.
+ *
+ * Nennt die Quelle keinen Stadtteil, setzt der Import den Stadtnamen ein.
+ * „Stadtteil: Hamburg" wirkt dann wie ein Fehler. Die Angabe wegzulassen wäre
+ * aber auch falsch – bei 84 Städten ist die Stadt eine nützliche Information.
+ * Also richtig beschriften statt verstecken.
+ */
+/**
+ * Quellenangabe für die Anzeige aufräumen.
+ *
+ * GovData nennt die Lizenz oft nicht, und der Import schreibt dann
+ * „(nicht angegeben)" in die Quelle. In der Oberfläche ist das eine
+ * Verwaltungsnotiz, die niemandem hilft – sie gehört in den Importbericht,
+ * nicht vor die Nutzer:innen.
+ */
+function sourceText(source: string): string {
+  return source.replace(/\s*\(nicht angegeben\)\s*$/u, "").trim();
+}
+
+function districtLabel(district: string, cityName: string): string {
+  const same = district.toLocaleLowerCase("de-DE") === cityName.toLocaleLowerCase("de-DE");
+  return same ? "Stadt" : "Stadtteil";
+}
+
+export function SpotDetails({
+  spot,
+  distanceMeters,
+  cityName,
+  mapsTarget,
+  onClose,
+}: SpotDetailsProps) {
   const closeButton = useRef<HTMLButtonElement>(null);
   const href = mapsUrl(spot, mapsTarget);
+
+  // „24/7“ und „von 00:00 Uhr bis 24:00 Uhr“ sind keine Beschränkungen –
+  // als „Nur: 24/7“ gelesen wirken sie aber wie eine.
+  const timeRestriction = normalizeTimeRestriction(spot.timeRestriction);
+  const state = restrictionState(spot.timeRestriction);
 
   // Fokus in das Sheet holen, damit Tastatur und Screenreader hier weiterarbeiten.
   useEffect(() => {
@@ -72,18 +112,20 @@ export function SpotDetails({ spot, distanceMeters, mapsTarget, onClose }: SpotD
             <dd>{spot.note}</dd>
           </div>
         )}
-        <div className="flex gap-2">
-          <dt className="text-neutral-500">Stadtteil</dt>
-          <dd>{spot.district}</dd>
-        </div>
+        {spot.district && (
+          <div className="flex gap-2">
+            <dt className="text-neutral-500">{districtLabel(spot.district, cityName)}</dt>
+            <dd>{spot.district}</dd>
+          </div>
+        )}
         <div className="flex gap-2">
           <dt className="text-neutral-500">Stellplätze</dt>
           <dd>{spot.spotCount}</dd>
         </div>
-        {spot.timeRestriction && (
+        {timeRestriction && (
           <div className="flex gap-2">
             <dt className="text-neutral-500">Nur</dt>
-            <dd>{spot.timeRestriction}</dd>
+            <dd>{timeRestriction}</dd>
           </div>
         )}
         <div className="flex gap-2">
@@ -95,6 +137,23 @@ export function SpotDetails({ spot, distanceMeters, mapsTarget, onClose }: SpotD
           </dd>
         </div>
       </dl>
+
+      {/*
+        Ob die Beschränkung gerade greift, ist beim Losfahren wichtiger als
+        die Öffnungszeit im Kleingedruckten. Wo sich die Angabe nicht sicher
+        deuten lässt, steht hier bewusst nichts.
+      */}
+      {state === "gilt-nicht" && (
+        <p className="mt-3 rounded-lg bg-emerald-50 p-2.5 text-sm text-emerald-900 dark:bg-emerald-950 dark:text-emerald-200">
+          Die Beschränkung gilt <strong>gerade nicht</strong> – der Parkplatz ist jetzt frei
+          nutzbar.
+        </p>
+      )}
+      {state === "gilt" && (
+        <p className="mt-3 rounded-lg bg-amber-50 p-2.5 text-sm text-amber-900 dark:bg-amber-950 dark:text-amber-200">
+          Die Beschränkung gilt <strong>gerade</strong>.
+        </p>
+      )}
 
       {spot.geoAccuracy !== "house" && (
         <p className="mt-3 rounded-lg bg-amber-50 p-2.5 text-sm text-amber-900 dark:bg-amber-950 dark:text-amber-200">
@@ -114,10 +173,14 @@ export function SpotDetails({ spot, distanceMeters, mapsTarget, onClose }: SpotD
         </a>
       )}
 
-      {/* Die Bewertungen (Abschnitt 6 der ToDos) brauchen die Datenbank-
+      <div className="mt-2">
+        <ShareButton spot={spot} />
+      </div>
+
+      {/* Die Bewertungen (Abschnitt 8 der ToDos) brauchen die Datenbank-
           Entscheidung D-02 und folgen danach an dieser Stelle. */}
 
-      <p className="mt-4 text-xs text-neutral-500">Quelle: {spot.source}</p>
+      <p className="mt-4 text-xs text-neutral-500">Quelle: {sourceText(spot.source)}</p>
     </aside>
   );
 }

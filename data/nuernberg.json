@@ -11,21 +11,6 @@
   "generatedAt": "2026-10-08",
   "spots": [
     {
-      "id": "nuernberg-2c955f6486",
-      "city": "nuernberg",
-      "label": "A 9",
-      "street": "A 9",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Nürnberg",
-      "spotCount": 1,
-      "lat": 49.4219944,
-      "lng": 11.2066193,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/139031822), ODbL"
-    },
-    {
       "id": "nuernberg-c940ba6509",
       "city": "nuernberg",
       "label": "Aalener Straße",
@@ -1449,6 +1434,21 @@
       "lng": 11.0117022,
       "geoAccuracy": "house",
       "source": "OpenStreetMap (node/11113933543), ODbL"
+    },
+    {
+      "id": "nuernberg-2c955f6486",
+      "city": "nuernberg",
+      "label": "Brunn Ost",
+      "street": "Brunn Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nürnberg",
+      "spotCount": 1,
+      "lat": 49.4219944,
+      "lng": 11.2066193,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/139031822), ODbL"
     },
     {
       "id": "nuernberg-8be2614702",

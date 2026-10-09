@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
+import { DEFAULT_THEME, themeInitScript } from "@/lib/theme";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -11,6 +12,15 @@ export const metadata: Metadata = {
   title: "wheelee – Behindertenparkplätze",
   description:
     "Findet den nächstgelegenen öffentlichen Behindertenparkplatz auf einer Karte – mobil, ohne Anmeldung.",
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.png", type: "image/png", sizes: "32x32" },
+    ],
+    apple: "/icon-192.png",
+  },
+  applicationName: "wheelee",
+  appleWebApp: { capable: true, title: "wheelee", statusBarStyle: "black-translucent" },
 };
 
 export const viewport: Viewport = {
@@ -30,7 +40,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de">
+    // `suppressHydrationWarning`, weil das Skript unten `data-theme` setzt,
+    // bevor React übernimmt – der Unterschied zum Server-HTML ist gewollt.
+    <html lang="de" data-theme={DEFAULT_THEME} suppressHydrationWarning>
+      <head>
+        {/*
+          Muss vor dem ersten Zeichnen laufen, sonst blitzt die Seite kurz in
+          der falschen Helligkeit auf.
+        */}
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <body className={`${geistSans.variable} antialiased`}>{children}</body>
     </html>
   );

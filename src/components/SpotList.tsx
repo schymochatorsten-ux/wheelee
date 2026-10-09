@@ -3,6 +3,8 @@
 import type { ParkingSpot, ParkingSpotWithDistance } from "@/lib/types";
 import { formatDistance } from "@/lib/geo";
 import type { CityInfo } from "@/lib/parking/spots";
+import { normalizeTimeRestriction, restrictionState } from "@/lib/opening-hours";
+import { ThemeToggle } from "./ThemeToggle";
 
 /**
  * Listenansicht der Parkplätze.
@@ -59,8 +61,17 @@ export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect 
                   <span className="block text-sm text-neutral-500">
                     {spot.district} · {spot.spotCount}{" "}
                     {spot.spotCount === 1 ? "Stellplatz" : "Stellplätze"}
-                    {spot.timeRestriction ? ` · ${spot.timeRestriction}` : ""}
+                    {normalizeTimeRestriction(spot.timeRestriction)
+                      ? ` · ${normalizeTimeRestriction(spot.timeRestriction)}`
+                      : ""}
                   </span>
+                  {/* Dass eine Beschränkung gerade greift, entscheidet beim
+                      Losfahren – dafür soll man die Details nicht öffnen müssen. */}
+                  {restrictionState(spot.timeRestriction) === "gilt" && (
+                    <span className="mt-0.5 inline-block rounded bg-amber-100 px-1.5 py-0.5 text-xs font-medium text-amber-900 dark:bg-amber-950 dark:text-amber-200">
+                      Beschränkung gilt jetzt
+                    </span>
+                  )}
                 </span>
                 <span className="shrink-0 text-sm font-medium tabular-nums">
                   {formatDistance(spot.distanceMeters)}
@@ -93,6 +104,16 @@ export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect 
           </ul>
         </section>
       )}
+
+      <section aria-labelledby="settings-heading">
+        <h2 id="settings-heading" className="text-base font-semibold">
+          Einstellungen
+        </h2>
+        <div className="mt-2 flex flex-wrap items-center gap-3">
+          <span className="text-sm text-neutral-600 dark:text-neutral-400">Darstellung</span>
+          <ThemeToggle />
+        </div>
+      </section>
 
       <section aria-labelledby="sources-heading" className="text-sm text-neutral-500">
         <h2 id="sources-heading" className="font-semibold text-neutral-700 dark:text-neutral-300">

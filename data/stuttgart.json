@@ -341,21 +341,6 @@
       "source": "OpenStreetMap (way/8048616), ODbL"
     },
     {
-      "id": "stuttgart-52441f79b1",
-      "city": "stuttgart",
-      "label": "Behindertenparkplatz Stuttgart",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Stuttgart",
-      "spotCount": 4,
-      "lat": 48.8307472,
-      "lng": 9.1434417,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/986188488), ODbL"
-    },
-    {
       "id": "stuttgart-04ebca5665",
       "city": "stuttgart",
       "label": "Benzstraße",
@@ -3384,6 +3369,21 @@
       "lng": 9.2119948,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/165058884), ODbL"
+    },
+    {
+      "id": "stuttgart-52441f79b1",
+      "city": "stuttgart",
+      "label": "Tübinger Weg",
+      "street": "Tübinger Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stuttgart",
+      "spotCount": 4,
+      "lat": 48.8307472,
+      "lng": 9.1434417,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/986188488), ODbL"
     },
     {
       "id": "stuttgart-50bce18ad2",

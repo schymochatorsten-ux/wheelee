@@ -30,7 +30,14 @@ interface SeedFile {
   spots: ParkingSpot[];
 }
 
-type AddressCache = Record<string, { street: string | null; houseNumber: string | null }>;
+interface Address {
+  street: string | null;
+  houseNumber: string | null;
+  /** Ortsteil oder Flurname, wenn es gar keine Straße gibt. */
+  place: string | null;
+}
+
+type AddressCache = Record<string, Address>;
 
 const cachePath = path.join(projectRoot, "data", "_address-cache.json");
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -64,11 +71,30 @@ async function reverseGeocode(lat: number, lng: number) {
   return {
     street: address.road ?? address.pedestrian ?? address.footway ?? address.path ?? null,
     houseNumber: address.house_number ?? null,
+    // Wo keine Straße in der Nähe ist – Parkplätze im Grünen, am Waldrand,
+    // an Seen –, ist der Ortsteil immer noch besser als gar nichts.
+    place:
+      address.neighbourhood ??
+      address.suburb ??
+      address.hamlet ??
+      address.village ??
+      address.quarter ??
+      null,
   };
 }
 
-/** Hat dieser Standort einen brauchbaren Namen? */
-const needsAddress = (spot: ParkingSpot) => !spot.street && spot.lat !== null && spot.lng !== null;
+/**
+ * Hat dieser Standort einen brauchbaren Namen?
+ *
+ * Nicht nur „keine Straße": Standorte, die beim letzten Lauf statt einer
+ * Straße einen Ortsteil bekommen haben, sollen nicht bei jedem Durchgang
+ * erneut abgefragt werden.
+ */
+const needsAddress = (spot: ParkingSpot) =>
+  !spot.street &&
+  spot.lat !== null &&
+  spot.lng !== null &&
+  /^Behindertenparkplatz\b/u.test(spot.label);
 
 async function main() {
   const args = process.argv.slice(2);
@@ -149,6 +175,12 @@ async function main() {
         spot.street = address.street;
         spot.houseNumber = address.houseNumber;
         spot.label = [address.street, address.houseNumber].filter(Boolean).join(" ");
+        changed += 1;
+        resolved += 1;
+      } else if (address.place) {
+        // Keine Straße, aber ein Ortsteil: Der steht nicht als Adresse da,
+        // sondern als Lagebeschreibung – deshalb bleibt `street` leer.
+        spot.label = `Parkplatz ${address.place}`;
         changed += 1;
         resolved += 1;
       }
