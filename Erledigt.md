@@ -10,7 +10,7 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand:** 90 Einträge auf oberster Ebene (89 `[x]` plus 2e.7 als `[~]`, dessen
+**Stand:** 97 Einträge auf oberster Ebene (96 `[x]` plus 2e.7 als `[~]`, dessen
 gebauter Teil hier steht und dessen offener Rest in `ToDos.md` bleibt), zuletzt
 ergänzt 2026-10-10. Gezählt werden die Einträge der obersten Ebene; die
 Unterpunkte darunter sind Begründung, keine eigenen Aufgaben.
@@ -234,8 +234,36 @@ Unterpunkte darunter sind Begründung, keine eigenen Aufgaben.
 
 ---
 
+## 6. Karte und Standort (Fortsetzung 2026-10-10)
+
+Sechs Änderungen aus einer gemeinsamen Beobachtung: Die Leiste über der Karte
+**nannte** einen Parkplatz, zeigte ihn aber nicht. Eine Entfernung in Metern
+beantwortet nicht die Frage, die man vor der Abfahrt hat – „in welche Richtung,
+und was liegt dazwischen?"
+
+- [x] 6.17 **Jeder Eintrag führt auf die Karte.** Der Textblock der Leiste und jede Zeile der aufgeklappten Auswahl sind Knöpfe: Antippen bringt den Parkplatz ins Bild. Bei den Zeilen der Auswahl ist es **beides zugleich** – Ziel setzen und hinspringen. Vorher waren das zwei getrennte Dinge, und man konnte einen Platz auswählen, während die Karte den alten Ausschnitt zeigte; die Auswahl war damit eine Entscheidung ohne Grundlage. Bewusst **ohne** Detailansicht: Die legt sich über genau die Karte, auf die man schauen will – dafür gibt es den Knopf „Details".
+- [x] 6.18 **Rote Luftlinie vom Bezugspunkt zum gewählten Parkplatz.** Bezugspunkt ist das Ziel, wenn eines eingegeben ist, sonst der eigene Standort – dieselbe Regel wie für die Auswahl.
+  - **Gestrichelt, nicht durchgezogen.** Eine durchgezogene Linie auf einer Karte liest sich als Route. Diese ist keine: Die App navigiert nicht, sie übergibt an eine Karten-App. Eine Strecke, die wie ein Fahrweg aussieht, aber keiner ist, wäre eine Zusage, die sie nicht halten kann.
+  - **Zwei Linien übereinander.** Darunter liegt eine breitere weiße. Ohne sie verschwindet Rot auf den roten Dächern und Straßen der OSM-Kacheln – und erst recht bei Sonnenlicht auf dem Display (ToDo 14.4).
+  - Sie liegt **unter** den Markern und ist `interactive={false}`, fängt also keinen Klick ab.
+- [x] 6.19 **Am Ziel gibt es jetzt eine Auswahl, nicht nur einen Vorschlag.** Der Anlass war ein beobachteter Fall: Am Klinikum Frankfurt (Oder) lag genau ein Parkplatz im Umkreis von 500 m. Die Leiste zeigte ihn – und bot nichts weiter an, weil es im Umkreis nichts weiter gab. Wer dort ankommt und den Platz besetzt findet, steht ohne zweite Möglichkeit da.
+  - Jetzt stehen bis zu drei Parkplätze **außerhalb** des Umkreises dahinter, unter einer eigenen Zwischenüberschrift „Darüber hinaus".
+  - **Die Trennung ist der Punkt, nicht die Ergänzung.** Stünden sie gleichwertig in einer Liste, wäre der Umkreis als Aussage wertlos. So bleibt er eine klare Angabe („das ist nah genug"), verschweigt aber nicht mehr, was knapp dahinter liegt.
+- [x] 6.20 **Vorschläge beim Tippen in der Zielsuche**, mit Pfeiltasten und Eingabetaste bedienbar (ARIA-Combobox).
+  - **Warum es trotzdem keine echte Autovervollständigung ist:** Nominatims Nutzungsbedingungen nennen eine Abfrage je Sekunde als Obergrenze und führen Autovervollständigung ausdrücklich als unerwünschte Nutzung auf. Eine Anfrage je Tastendruck wäre nicht Ungeschicklichkeit, sondern ein Verstoß mit Sperre als Folge – und der Dienst wird von Freiwilligen bezahlt, derselbe Grundsatz wie bei Overpass.
+  - **Der Weg stattdessen:** Gesucht wird erst nach 350 ms ohne Tastendruck, also einmal je Wortpause statt je Buchstabe. Jede Antwort bleibt im Browser (`cache` in `DestinationSearch.tsx`), sodass Löschen und Neutippen nichts kostet; der Server legt zusätzlich eine Stunde lang ab. Das fühlt sich an wie Autovervollständigung, ohne sich wie Missbrauch zu verhalten.
+  - Soll es wirklich bei jedem Buchstaben vorschlagen, braucht es einen eigenen Geocoder. Das ist eine Entscheidung mit Kosten, keine Einstellung – deshalb steht es nicht als Schalter da.
+
+---
+
 ## 9. Darstellung und Bedienung
 
+- [x] 9.11 **Reiter „Liste" ausgeblendet** (2026-10-10, auf Wunsch). Die Ansicht selbst bleibt vollständig erhalten – `View` kennt sie, der Zweig rendert sie; sichtbar wird sie durch einen Eintrag in `VISIBLE_VIEWS`. Entfernt wird sie bewusst nicht: Sie ist der Zugang für Screenreader, denn die Karte ist laut ihrer eigenen Beschriftung nur eine Ergänzung.
+  - **Dabei wäre beinahe der Haftungshinweis verschwunden.** Die ausführliche Fassung („Bitte vor der Fahrt lesen") hing ausschließlich oben in der Listenansicht. Laut 10.5 soll sie an zwei Stellen stehen; mit dem Reiter war eine davon weg, und niemandem wäre es aufgefallen. Sie steht jetzt in den Einstellungen – der Ansicht, in der man in Ruhe liest. **Die Lehre:** Eine Ansicht auszublenden heißt zu prüfen, was sonst noch darin wohnte.
+- [x] 9.12 **Kopfzeile schweigt in den Einstellungen** (2026-10-10, auf Wunsch). Die Statuszeile beantwortet „wo ist der nächste Parkplatz" – eine Frage, die sich in den Einstellungen niemand stellt. Wer Darstellung oder Karten-App ändert, braucht keine Bestandszahlen, und die nebenher laufende Standortsuche zu melden lenkt nur ab.
+- [x] 9.13 **Menüs schlanker und ruhiger** (2026-10-10). Einheitliche schwebende Flächen (`rounded-2xl`, weiche Ränder, `backdrop-blur`), Symbole als Inline-SVG statt als Schriftzeichen, Umkreiswahl als Segmentschalter statt als Knopfreihe, Statuszeilen nur wenn sie etwas zu sagen haben.
+  - **Was dabei ausdrücklich nicht kleiner wurde: die Trefferflächen.** `min-h-11` (44 px) bleibt überall. Schlanker heißt hier leichter aussehen, nicht schwerer zu treffen – die App wird einhändig im Sitzen bedient (ToDo 14.5), und genau dort wäre das Einsparen von Fläche der falsche Gewinn.
+  - **Warum die Symbole jetzt SVG sind:** Zeichen wie ◎ und × hängen von der Schriftart des Geräts ab; auf manchen Android-Telefonen fehlen sie und werden als leeres Rechteck gezeichnet. Ein SVG sieht überall gleich aus und skaliert mit `1em` bei 200 % Vergrößerung mit (ToDo 9.8).
 - [x] 9.1 **Dark Mode mit Umschalter** – dunkel ist Vorgabe, auch wenn das System hell steht
   - Drei Stellungen: Dunkel (Vorgabe), Hell, System
   - Auswahl in `localStorage`, überlebt das Neuladen

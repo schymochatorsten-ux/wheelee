@@ -31,10 +31,21 @@ test("fragt keine fremden Dienste und setzt keine Tracker", async ({ page, conte
   await page.goto("/");
   await expect(page.locator(".leaflet-marker-icon").first()).toBeVisible();
 
-  // Durch alle Ansichten, damit auch nachgeladene Teile erfasst werden.
-  await page.getByRole("tab", { name: "Liste" }).click();
+  // Durch alle erreichbaren Ansichten, damit auch nachgeladene Teile erfasst
+  // werden. Der Reiter „Liste" ist seit 2026-10-10 ausgeblendet.
   await page.getByRole("tab", { name: "Einstellungen" }).click();
   await page.getByRole("tab", { name: "Karte" }).click();
+
+  /*
+   * Die Zielsuche gehört hierher, weil sie den einzigen Weg nach außen
+   * enthält: Nominatim. Sie läuft über `/api/geocode`, also über unseren
+   * Server – aus dem Browser darf keine Verbindung zu nominatim.org gehen.
+   * Genau das würde ein direkter Aufruf aus der Komponente auslösen, und es
+   * fiele niemandem auf.
+   */
+  await page.getByRole("button", { name: /Wohin willst du/ }).click();
+  await page.getByRole("combobox").fill("Köln Hauptbahnhof");
+  await expect(page.getByRole("option").first()).toBeVisible();
 
   expect([...fremde]).toEqual([]);
 

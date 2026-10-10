@@ -9,6 +9,7 @@ import {
 } from "@/lib/maps-preference";
 import { mapsShortLabel } from "@/lib/navigation";
 import type { MapsTarget } from "@/lib/navigation";
+import { DataDisclaimer } from "./DataDisclaimer";
 import { FeedbackButton } from "./FeedbackButton";
 import { ThemeToggle } from "./ThemeToggle";
 
@@ -18,6 +19,13 @@ import { ThemeToggle } from "./ThemeToggle";
  * Vorher hing der Dunkelmodus-Umschalter unten in der Listenansicht. Das war
  * erreichbar, aber nicht sein Platz – spätestens mit der Wahl der Karten-App
  * (11.3) sind es zwei Dinge, die nichts mit der Parkplatzliste zu tun haben.
+ *
+ * **Der ausführliche Haftungshinweis steht seit 2026-10-10 hier.** Er hing
+ * ausschließlich oben in der Listenansicht; als die auf Wunsch ausgeblendet
+ * wurde, war er nicht mehr erreichbar. Laut 10.5 soll er bewusst an zwei
+ * Stellen stehen – ausführlich dort, wo man in Ruhe liest, und knapp in der
+ * Detailansicht unter dem Navigationsknopf. Die Einstellungen sind jetzt die
+ * Ansicht, in der man in Ruhe liest.
  */
 
 interface SettingsPanelProps {
@@ -44,6 +52,8 @@ export function SettingsPanel({ detected, onMapsPreferenceChange }: SettingsPane
 
   return (
     <div className="space-y-8">
+      <DataDisclaimer variant="lang" />
+
       <section aria-labelledby="darstellung-heading">
         <h2 id="darstellung-heading" className="text-base font-semibold">
           Darstellung

@@ -23,9 +23,13 @@ test.describe("ohne Netz", () => {
 
     test.skip(!active, "Kein Service Worker aktiv – vermutlich Entwicklungsbetrieb.");
 
-    // Einmal die Liste öffnen, damit die Parkplatzdaten im Speicher landen.
-    await page.getByRole("tab", { name: "Liste" }).click();
+    // Einmal warten, bis die Karte ihre Parkplätze geholt hat – erst dann
+    // liegen sie im Speicher des Service Workers. Vorher ging das über die
+    // Listenansicht; deren Reiter ist seit 2026-10-10 ausgeblendet.
+    await expect(page.locator(".leaflet-marker-icon").first()).toBeVisible();
+    await page.getByRole("tab", { name: "Einstellungen" }).click();
     await expect(page.getByRole("heading", { name: "Bitte vor der Fahrt lesen" })).toBeVisible();
+    await page.getByRole("tab", { name: "Karte" }).click();
 
     await context.setOffline(true);
     await page.reload();

@@ -24,23 +24,46 @@ test.describe("wheelee", () => {
     await expect(page.locator(".leaflet-marker-icon").first()).toBeVisible();
   });
 
-  test("Liste zeigt Parkplätze und den Haftungshinweis", async ({ page }) => {
+  /**
+   * Der Reiter „Liste" ist ausgeblendet (2026-10-10), die Ansicht selbst aber
+   * erhalten. Diese Tests gehen deshalb über die Navigationsleiste – also über
+   * den Weg, den jetzt tatsächlich jede:r nimmt.
+   */
+  test("Haftungshinweis steht in den Einstellungen", async ({ page }) => {
     await page.goto("/");
-    await page.getByRole("tab", { name: "Liste" }).click();
+    await page.getByRole("tab", { name: "Einstellungen" }).click();
 
+    // Er hing vorher nur in der Listenansicht und war mit ihr verschwunden.
     await expect(page.getByRole("heading", { name: "Bitte vor der Fahrt lesen" })).toBeVisible();
-    await expect(page.getByRole("heading", { name: /Parkplätze|Nächste/ }).first()).toBeVisible();
-
-    // Mindestens ein Eintrag mit Entfernungsangabe.
-    await expect(page.getByText(/\d+\s*(m|km)\b/).first()).toBeVisible();
   });
 
-  test("Detailansicht öffnet aus der Liste und schließt mit Escape", async ({ page }) => {
+  test("Kopfzeile schweigt in den Einstellungen", async ({ page }) => {
     await page.goto("/");
-    await page.getByRole("tab", { name: "Liste" }).click();
 
-    const first = page.locator("li button").first();
-    await first.click();
+    /*
+     * Geprüft wird die Statuszeile als Ganzes, nicht ein bestimmter Satz
+     * darin: Sie zeigt je nach Standortzustand Verschiedenes – die
+     * Bestandszahlen („17.864 Parkplätze in 209 Städten"), den nächsten
+     * Parkplatz oder eine Standortmeldung. Auf den Text zu prüfen hieße, den
+     * Test an den Zufall zu hängen, ob der Browser Standortzugriff gewährt.
+     */
+    const statuszeile = page.locator('header p[aria-live="polite"]');
+    await expect(statuszeile).toBeVisible();
+
+    await page.getByRole("tab", { name: "Einstellungen" }).click();
+    await expect(statuszeile).toHaveCount(0);
+
+    // Zurück auf die Karte ist sie wieder da – ausgeblendet, nicht entfernt.
+    await page.getByRole("tab", { name: "Karte" }).click();
+    await expect(statuszeile).toBeVisible();
+  });
+
+  test("Detailansicht öffnet aus der Leiste und schließt mit Escape", async ({ page, context }) => {
+    await context.grantPermissions(["geolocation"]);
+    await context.setGeolocation(KOELN);
+    await page.goto("/");
+
+    await page.getByRole("button", { name: "Details" }).click();
 
     const sheet = page.getByRole("dialog");
     await expect(sheet).toBeVisible();
@@ -65,7 +88,7 @@ test.describe("wheelee", () => {
     await expect(bar).toBeVisible();
 
     // Auswahl aufklappen (ToDo 6.16).
-    await page.getByRole("button", { name: /Weitere Parkplätze in der Nähe/ }).click();
+    await page.getByRole("button", { name: /Weitere in der Nähe/ }).click();
     const options = page.locator("#parkplatz-auswahl li");
     await expect(options.first()).toBeVisible();
 
@@ -73,10 +96,39 @@ test.describe("wheelee", () => {
     await options.nth(1).locator("button").click();
     await expect(page.getByText("Gewähltes Ziel")).toBeVisible();
 
-    // Schließen gibt die Karte frei, holt sich aber zurückholen lassen (6.15).
+    // Schließen gibt die Karte frei, lässt sich aber zurückholen (6.15).
     await page.getByRole("button", { name: /Vorschlag schließen/ }).click();
     await expect(page.getByText("Gewähltes Ziel")).toBeHidden();
-    await expect(page.getByRole("button", { name: /Nächster Parkplatz:/ })).toBeVisible();
+    await expect(page.getByRole("button", { name: /^\d+(,\d+)?\s*(m|km)$/ })).toBeVisible();
+  });
+
+  test("ausgewählter Parkplatz bekommt eine rote Luftlinie", async ({ page, context }) => {
+    await context.grantPermissions(["geolocation"]);
+    await context.setGeolocation(KOELN);
+    await page.goto("/");
+
+    await expect(page.getByText("Nächster Behindertenparkplatz")).toBeVisible();
+
+    // Zwei Linien: weiße Unterlage und rot gestrichelt darüber.
+    const red = page.locator('.leaflet-overlay-pane path[stroke="#dc2626"]');
+    await expect(red).toHaveCount(1);
+    await expect(red).toHaveAttribute("stroke-dasharray", "8 7");
+  });
+
+  test("ein Eintrag der Auswahl bringt den Parkplatz auf die Karte", async ({ page, context }) => {
+    await context.grantPermissions(["geolocation"]);
+    await context.setGeolocation(KOELN);
+    await page.goto("/");
+
+    await page.getByRole("button", { name: /Weitere in der Nähe/ }).click();
+
+    const red = page.locator('.leaflet-overlay-pane path[stroke="#dc2626"]');
+    const before = await red.getAttribute("d");
+
+    // Eine andere Wahl muss die Luftlinie umhängen – sonst wäre die Auswahl
+    // eine Entscheidung ohne sichtbare Folge.
+    await page.locator("#parkplatz-auswahl li").nth(2).locator("button").click();
+    await expect(red).not.toHaveAttribute("d", before ?? "");
   });
 
   test("Einstellungen merken die Karten-App", async ({ page }) => {

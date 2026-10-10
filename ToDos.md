@@ -38,6 +38,13 @@ Unterbrechung nahtlos weitergearbeitet werden kann.
 **Gerade in Arbeit:** – (2e.10 und 2e.11 sind neu aufgenommen, aber noch nicht
 begonnen: ausdrücklich erst nach Freigabe umsetzen)
 
+**Zuletzt abgeschlossen (2026-10-10, zweiter Durchgang):** 6.17–6.20 und
+9.11–9.13 – Sprung auf die Karte aus jedem Eintrag, rote Luftlinie zum
+Bezugspunkt, Auswahl auch am eingegebenen Ziel, Vorschläge beim Tippen,
+Reiter „Liste" ausgeblendet, Kopfzeile in den Einstellungen still, schlankere
+Menüs. Begründungen in [Erledigt.md](Erledigt.md). Neu aufgefallen und offen:
+6.21 und 6.22.
+
 **Aufgeräumt am 2026-10-10:** Die acht `[~]`-Punkte wiederholten ihren fertigen
 Teil als „Fertig: …", obwohl er längst in [Erledigt.md](Erledigt.md) stand –
 dieselbe Sache in zwei Dateien. Jetzt steht hier nur der offene Rest mit einem
@@ -151,12 +158,12 @@ E2E-Smoke-Test mit Playwright.
 7. 12.4 Lighthouse, 12.6 Fehler-Monitoring
 8. 2a.5 die fehlenden Lizenzen der 15 amtlichen Quellen nachschlagen
 
-**Stand:** 57 offen, 6 in Arbeit, 5 brauchen deine Entscheidung, 9 bewusst
+**Stand:** 59 offen, 6 in Arbeit, 5 brauchen deine Entscheidung, 9 bewusst
 zurückgestellt (Finanzierung, Mehrsprachigkeit, Offline-Download). Dazu 20
 offene Unterpunkte innerhalb dieser Posten. **Gezählt wird die oberste Ebene**
 – sonst ergibt jede Sitzung eine andere Zahl.
-90 erledigte Einträge stehen in [Erledigt.md](Erledigt.md).
-**Tests: 161 Unit-Tests + 6 E2E-Tests.**
+97 erledigte Einträge stehen in [Erledigt.md](Erledigt.md).
+**Tests: 173 Unit-Tests + 9 E2E-Tests.**
 
 ---
 
@@ -342,7 +349,9 @@ ob sich an der Quelle etwas getan hat.
 
 ## 6. Karte und Standort
 
-- [ ] 6.16a Die Auswahl aus 6.16 und die Listenansicht zeigen dasselbe in zwei Komponenten. Sinnvoll wäre, beide auf dieselbe Zeilen-Komponente zu stützen statt sie doppelt zu pflegen – aufgefallen beim Bauen von 6.16, aber keine Voraussetzung für irgendetwas.
+- [ ] 6.16a Die Auswahl aus 6.16 und die Listenansicht zeigen dasselbe in zwei Komponenten. Sinnvoll wäre, beide auf dieselbe Zeilen-Komponente zu stützen statt sie doppelt zu pflegen – aufgefallen beim Bauen von 6.16, aber keine Voraussetzung für irgendetwas. **Seit 9.11 weniger dringend** (der Reiter „Liste" ist ausgeblendet), aber dafür heikler: Die beiden Fassungen driften jetzt auseinander, ohne dass es jemand sieht – die Auswahl wurde am 2026-10-10 umgebaut, die Listenansicht nicht.
+- [ ] 6.21 **Die aufgeklappte Auswahl deckt auf dem Telefon fast die ganze Karte zu.** Sie ist auf 60 % der Höhe begrenzt und scrollt, aber bei vielen Treffern im Umkreis (am Hamburger Rathausmarkt sind es 34) sieht man von der Karte kaum noch etwas – während man gerade wissen will, wo die Plätze liegen. Denkbar: die Liste auf die Höhe eines halben Bildschirms setzen und als ziehbares Blatt ausführen, oder bei aufgeklappter Auswahl automatisch so weit herauszoomen, dass alle hervorgehobenen Marker ins Bild passen. Aufgefallen beim Bauen von 6.17.
+- [ ] 6.22 **Luftlinie und Marker sagen nicht, wenn das Ziel außerhalb des Bildes liegt.** Springt man auf einen Parkplatz, zeigt die Linie in Richtung Bezugspunkt – der kann aber weit außerhalb des Ausschnitts liegen, und dann endet die Linie am Bildrand ohne Erklärung. Entweder beim Sprung so zoomen, dass beide Punkte ins Bild passen, oder am Rand anzeigen, wohin die Linie führt.
 
 ---
 

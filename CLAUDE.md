@@ -4,6 +4,17 @@ Diese Datei wird zu Beginn jeder Sitzung gelesen. Sie enthält, was sonst
 verloren geht – Regeln, die sich aus der Arbeit ergeben haben, nicht aus dem
 Code ablesbar sind und sonst in jeder Sitzung neu gelernt werden müssten.
 
+## Im Zweifel fragen
+
+**Immer nachfragen, wenn etwas unklar ist – nicht raten.** Die Begründung
+steht in der [README](README.md#im-zweifel-fragen); sie ist dort ausdrücklich
+festgehalten worden (2026-10-10). Kurz: In diesem Projekt sieht Falsches oft
+richtig aus, und die Daten betreffen Menschen, die auf den Parkplatz
+angewiesen sind.
+
+Praktisch heißt das: erst alles erledigen, was nicht an der Antwort hängt,
+dann gezielt fragen. Nicht alles anhalten, aber auch nicht weiterraten.
+
 ## Aufgabenliste pflegen
 
 **Erledigte Punkte gehören nach [Erledigt.md](Erledigt.md), nicht in

@@ -5,6 +5,33 @@ zeigt, den nächstgelegenen hervorhebt und Rückmeldungen dazu sammelt, ob ein
 Parkplatz noch existiert.
 
 Fachliche Grundlage: [Konzept.md](Konzept.md). Aufgabenstand: [ToDos.md](ToDos.md).
+Arbeitsweise: [CLAUDE.md](CLAUDE.md).
+
+## Im Zweifel fragen
+
+**Wer hier mitarbeitet – Mensch oder Claude – fragt immer nach, wenn etwas
+unklar ist, statt zu raten.** Eine Rückfrage kostet eine Minute. Eine falsche
+Annahme kostet die Arbeit, die darauf aufgebaut wurde, und im schlimmsten Fall
+merkt es niemand.
+
+Das gilt besonders hier, weil dieses Projekt zwei Eigenschaften hat, die
+falsche Annahmen teuer machen:
+
+- **Die Daten betreffen Menschen, die auf den Parkplatz angewiesen sind.** Eine
+  geratene Zuordnung ist keine Ungenauigkeit, sondern eine vergebliche Fahrt –
+  derselbe Grundsatz wie „lieber kein Import als ein falscher" in
+  [Datenpflege.md](Datenpflege.md).
+- **Falsches sieht hier oft richtig aus.** Mehrere Fehler in
+  [Erledigt.md](Erledigt.md) sind genau deshalb entstanden: plausible
+  Koordinaten 450 km daneben, eine leere Antwort als Ergebnis, grün laufende
+  Tests über beschädigten Umlauten.
+
+Lieber einmal zu viel fragen als eine Annahme einbauen, die später jemand
+auseinandernehmen muss. **Unsicherheit ist kein Mangel, den man verbergen
+sollte, sondern eine Information, die dem anderen gehört.** Wenn eine Frage
+die Arbeit aufhält, ist der richtige Weg: alles erledigen, was nicht an der
+Antwort hängt, und die Frage dann gezielt stellen – nicht alles anhalten und
+nicht einfach weiterraten.
 
 ## Stack
 

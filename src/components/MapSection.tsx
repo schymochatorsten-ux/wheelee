@@ -58,6 +58,18 @@ const VIEW_LABELS: Record<View, string> = {
   settings: "Einstellungen",
 };
 
+/**
+ * Welche Ansichten die Leiste oben anbietet.
+ *
+ * **„Liste" ist auf Wunsch vorläufig ausgeblendet** (2026-10-10). Die Ansicht
+ * selbst bleibt vollständig erhalten – `View` kennt sie, der Zweig unten
+ * rendert sie, und `nearby` wird ohnehin für die Auswahl über der Karte
+ * berechnet. Wieder einschalten heißt: `"list"` hier ergänzen. Entfernt wird
+ * sie bewusst nicht, denn sie ist der Zugang für Screenreader (die Karte ist
+ * laut ihrer eigenen Beschriftung nur eine Ergänzung).
+ */
+const VISIBLE_VIEWS: readonly View[] = ["map", "settings"];
+
 /** So viele Parkplätze zeigt die Liste höchstens. */
 const LIST_LIMIT = 100;
 
@@ -67,6 +79,19 @@ const LIST_LIMIT = 100;
  * ist, wenig genug, um die Karte nicht zuzudecken.
  */
 const CANDIDATE_COUNT = 5;
+
+/**
+ * So viele Parkplätze **außerhalb** des gewählten Umkreises kommen bei einem
+ * gesetzten Ziel zusätzlich in die Auswahl.
+ *
+ * Der Grund ist ein beobachteter Fall: Am Klinikum Frankfurt (Oder) lag
+ * genau ein Parkplatz im Umkreis von 500 m – die Leiste zeigte ihn, bot aber
+ * keine Auswahl an, weil es keine Alternative gab. Wer dort ankommt und den
+ * Platz besetzt findet, steht ohne zweite Möglichkeit da. Der Umkreis bleibt
+ * eine klare Aussage („das ist nah genug"), aber er verschweigt nicht mehr,
+ * was knapp dahinter liegt.
+ */
+const BEYOND_RADIUS_COUNT = 3;
 
 /**
  * Untertitel im Kopf. Bei wenigen Städten ihre Namen, sonst die Anzahl –
@@ -159,12 +184,21 @@ export function MapSection({ initialNearby, cities, defaultCity, totalSpots }: M
    * genannt: Ein leerer Vorschlag hilft niemandem, der gleich losfährt, und
    * die Entfernung steht ja daneben.
    */
-  const candidates = useMemo(() => {
-    if (!reference) return [];
-    if (!destination) return nearby.slice(0, CANDIDATE_COUNT);
+  const { candidates, inRadiusCount } = useMemo(() => {
+    if (!reference) return { candidates: [], inRadiusCount: 0 };
+    if (!destination) {
+      return { candidates: nearby.slice(0, CANDIDATE_COUNT), inRadiusCount: 0 };
+    }
 
     const inRadius = nearby.filter((spot) => spot.distanceMeters <= radius);
-    return inRadius.length > 0 ? inRadius.slice(0, LIST_LIMIT) : nearby.slice(0, 1);
+    const beyond = nearby
+      .filter((spot) => spot.distanceMeters > radius)
+      .slice(0, BEYOND_RADIUS_COUNT);
+
+    return {
+      candidates: [...inRadius.slice(0, LIST_LIMIT), ...beyond],
+      inRadiusCount: inRadius.length,
+    };
   }, [reference, nearby, destination, radius]);
 
   /** Ein gewähltes Ziel rückt sofort ins Bild. */
@@ -179,6 +213,16 @@ export function MapSection({ initialNearby, cities, defaultCity, totalSpots }: M
   const [barExpanded, setBarExpanded] = useState(false);
 
   const onTargetChange = useCallback((spot: ParkingSpot) => setBarTargetId(spot.id), []);
+
+  /**
+   * Der Parkplatz, den die Leiste gerade als Ziel führt – dieselbe Rechnung
+   * wie dort, damit Karte, Luftlinie und Navigationsknopf nicht auf
+   * verschiedene Plätze zeigen. Ohne eigene Wahl ist es der nächstgelegene.
+   */
+  const barTarget = useMemo(
+    () => candidates.find((spot) => spot.id === barTargetId) ?? candidates[0] ?? null,
+    [candidates, barTargetId],
+  );
 
   const highlightIds = useMemo(
     () => (barExpanded ? new Set(candidates.map((spot) => spot.id)) : null),
@@ -217,6 +261,21 @@ export function MapSection({ initialNearby, cities, defaultCity, totalSpots }: M
     }
   }, []);
 
+  /**
+   * Karte auf einen Parkplatz bringen, **ohne** die Detailansicht zu öffnen.
+   *
+   * Der Unterschied zu `select` ist der Zweck: Beim Durchsehen der Auswahl
+   * will man wissen, *wo* ein Platz liegt – ob er in der richtigen Richtung
+   * ist, ob eine Hauptstraße dazwischen liegt. Die Detailansicht legt sich
+   * dabei über genau die Karte, auf die man schauen will.
+   */
+  const jumpTo = useCallback((spot: ParkingSpot) => {
+    if (!hasCoordinates(spot)) return;
+    setSelected(null);
+    setView("map");
+    setFocus({ lat: spot.lat, lng: spot.lng, key: `zeigen-${spot.id}-${Date.now()}` });
+  }, []);
+
   // Parkplätze kennen nur den Stadt-Slug; Name und Importdatum kennt die
   // Städteliste.
   const cityBySlug = useMemo(() => new Map(cities.map((city) => [city.slug, city])), [cities]);
@@ -228,6 +287,27 @@ export function MapSection({ initialNearby, cities, defaultCity, totalSpots }: M
   const selectedDistance =
     selected && geo.position && hasCoordinates(selected)
       ? distanceMeters(geo.position, { lat: selected.lat, lng: selected.lng })
+      : null;
+
+  /**
+   * Die rote Luftlinie: vom Bezugspunkt zum gerade gewählten Parkplatz.
+   *
+   * **Was sie beantwortet:** „In welche Richtung, und wie weit wirklich?" Eine
+   * Entfernungsangabe in Metern sagt das nicht – 300 m können um die Ecke oder
+   * auf der anderen Seite einer vierspurigen Straße sein. Die Linie zeigt
+   * beides auf einen Blick, ohne dass man die Marker auf der Karte
+   * zusammensuchen muss.
+   *
+   * Der Bezugspunkt ist das Ziel, wenn eines eingegeben ist, sonst der eigene
+   * Standort – dieselbe Regel wie für die Auswahl selbst. Sie ist bewusst eine
+   * **Luftlinie und keine Route**: Die App navigiert nicht, sie übergibt an
+   * eine Karten-App. Eine gezeichnete Strecke, die wie ein Fahrweg aussieht,
+   * aber keiner ist, wäre eine Zusage, die sie nicht halten kann.
+   */
+  const lineTarget = selected ?? barTarget;
+  const line =
+    reference && lineTarget && hasCoordinates(lineTarget)
+      ? { from: reference, to: { lat: lineTarget.lat, lng: lineTarget.lng } }
       : null;
 
   return (
@@ -257,7 +337,7 @@ export function MapSection({ initialNearby, cities, defaultCity, totalSpots }: M
             aria-label="Ansicht wählen"
             className="flex shrink-0 overflow-hidden rounded-lg border border-neutral-300 text-sm dark:border-neutral-700"
           >
-            {(["map", "list", "settings"] as const).map((option) => (
+            {VISIBLE_VIEWS.map((option) => (
               <button
                 key={option}
                 type="button"
@@ -287,26 +367,36 @@ export function MapSection({ initialNearby, cities, defaultCity, totalSpots }: M
           </div>
         </div>
 
-        <p aria-live="polite" className="mt-1.5 text-sm text-neutral-600 dark:text-neutral-400">
-          {geo.status === "locating" && "Standort wird ermittelt …"}
-          {geo.status === "ready" &&
-            (nearest
-              ? `Nächster Parkplatz: ${nearest.street ?? nearest.label} – ${formatDistance(nearest.distanceMeters)}`
-              : "Kein verorteter Parkplatz in der Nähe.")}
-          {geo.message}
-          {geo.status === "idle" &&
-            `${totalSpots.toLocaleString("de-DE")} Parkplätze in ${cities.length} Städten.`}
-        </p>
-
-        {(geo.status === "denied" || geo.status === "timeout" || geo.status === "unavailable") && (
-          <button
-            type="button"
-            onClick={geo.request}
-            className="mt-2 min-h-11 rounded-lg border border-neutral-300 px-3 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
-          >
-            Standort erneut versuchen
-          </button>
+        {/*
+          In den Einstellungen bleibt diese Zeile weg (auf Wunsch, 2026-10-10).
+          Sie beantwortet „wo ist der nächste Parkplatz" – eine Frage, die sich
+          dort niemand stellt. Wer Darstellung oder Karten-App ändert, braucht
+          keine Bestandszahlen, und die Standortsuche nebenher zu melden lenkt
+          nur ab.
+        */}
+        {view !== "settings" && (
+          <p aria-live="polite" className="mt-1.5 text-sm text-neutral-600 dark:text-neutral-400">
+            {geo.status === "locating" && "Standort wird ermittelt …"}
+            {geo.status === "ready" &&
+              (nearest
+                ? `Nächster Parkplatz: ${nearest.street ?? nearest.label} – ${formatDistance(nearest.distanceMeters)}`
+                : "Kein verorteter Parkplatz in der Nähe.")}
+            {geo.message}
+            {geo.status === "idle" &&
+              `${totalSpots.toLocaleString("de-DE")} Parkplätze in ${cities.length} Städten.`}
+          </p>
         )}
+
+        {view !== "settings" &&
+          (geo.status === "denied" || geo.status === "timeout" || geo.status === "unavailable") && (
+            <button
+              type="button"
+              onClick={geo.request}
+              className="mt-2 min-h-11 rounded-lg border border-neutral-300 px-3 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
+            >
+              Standort erneut versuchen
+            </button>
+          )}
       </header>
 
       <main className="relative min-h-0 flex-1">
@@ -320,6 +410,7 @@ export function MapSection({ initialNearby, cities, defaultCity, totalSpots }: M
               nearestId={barTargetId ?? nearest?.id ?? null}
               highlightIds={highlightIds}
               focus={focus}
+              line={line}
               onSelect={select}
               onBoundsChange={setBounds}
             />
@@ -339,9 +430,11 @@ export function MapSection({ initialNearby, cities, defaultCity, totalSpots }: M
                   hasPosition={reference !== null}
                   onBackToMe={backToMe}
                   onShowDetails={select}
+                  onJumpTo={jumpTo}
                   onTargetChange={onTargetChange}
                   onExpandedChange={setBarExpanded}
                   destinationLabel={destination?.label ?? null}
+                  inRadiusCount={inRadiusCount}
                   radius={radius}
                   onRadiusChange={setRadius}
                 />

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { MapContainer, Marker, TileLayer, useMap } from "react-leaflet";
+import { MapContainer, Marker, Polyline, TileLayer, useMap } from "react-leaflet";
 import type { ParkingSpot } from "@/lib/types";
 import type { LatLng } from "@/lib/geo";
 import { SpotMarkers } from "./SpotMarkers";
@@ -27,6 +27,11 @@ interface ParkingMapProps {
   highlightIds?: ReadonlySet<string> | null;
   /** Parkplatz, auf den die Karte zentrieren soll. */
   focus: { lat: number; lng: number; key: string } | null;
+  /**
+   * Luftlinie vom Bezugspunkt (Standort oder Ziel) zum gewählten Parkplatz.
+   * `null`, solange es keinen Bezugspunkt oder keine Auswahl gibt.
+   */
+  line?: { from: LatLng; to: LatLng } | null;
   onSelect: (spot: ParkingSpot) => void;
   /** Meldet den sichtbaren Ausschnitt, damit nur dessen Parkplätze geladen werden. */
   onBoundsChange?: (bounds: MapBounds) => void;
@@ -92,6 +97,7 @@ export default function ParkingMap({
   nearestId,
   highlightIds = null,
   focus,
+  line = null,
   onSelect,
   onBoundsChange,
 }: ParkingMapProps) {
@@ -109,6 +115,47 @@ export default function ParkingMap({
         maxZoom={19}
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>-Mitwirkende'
       />
+
+      {/*
+        Die Luftlinie liegt **unter** den Markern, damit sie keinen Marker
+        verdeckt und keinen Klick abfängt (`interactive={false}`).
+
+        Gestrichelt, und das ist eine inhaltliche Entscheidung: Eine
+        durchgezogene Linie auf einer Karte liest sich als Route. Diese ist
+        keine – sie zeigt Richtung und Luftlinienentfernung. Die Striche sagen
+        „so weit, in dieser Richtung", nicht „hier fährst du".
+
+        Die zweite, breitere Linie darunter ist eine weiße Fassung derselben
+        Strecke. Ohne sie verschwindet Rot auf den roten Dächern und Straßen
+        der OSM-Kacheln; mit ihr bleibt die Linie auch über dicht bebautem
+        Gebiet erkennbar – und im Sonnenlicht auf dem Display, dem Fall aus
+        ToDo 14.4.
+      */}
+      {line && (
+        <>
+          <Polyline
+            positions={[
+              [line.from.lat, line.from.lng],
+              [line.to.lat, line.to.lng],
+            ]}
+            pathOptions={{ color: "#ffffff", weight: 7, opacity: 0.85 }}
+            interactive={false}
+          />
+          <Polyline
+            positions={[
+              [line.from.lat, line.from.lng],
+              [line.to.lat, line.to.lng],
+            ]}
+            pathOptions={{
+              color: "#dc2626",
+              weight: 3,
+              opacity: 0.95,
+              dashArray: "8 7",
+            }}
+            interactive={false}
+          />
+        </>
+      )}
 
       <SpotMarkers
         spots={spots}
