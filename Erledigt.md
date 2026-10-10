@@ -10,7 +10,10 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand:** 98 Punkte (einschließlich Unterpunkte), zuletzt ergänzt 2026-10-10.
+**Stand:** 90 Einträge auf oberster Ebene (89 `[x]` plus 2e.7 als `[~]`, dessen
+gebauter Teil hier steht und dessen offener Rest in `ToDos.md` bleibt), zuletzt
+ergänzt 2026-10-10. Gezählt werden die Einträge der obersten Ebene; die
+Unterpunkte darunter sind Begründung, keine eigenen Aufgaben.
 
 ---
 
@@ -83,6 +86,7 @@ anders trifft.
   - **Karlsruhe und Baden-Baden wurden bewusst nicht überschrieben.** Der amtliche Datensatz führt für Karlsruhe 224 Standorte, OpenStreetMap aber 330: Die Stadt listet ihre eigenen Stellplätze im Straßenraum, OSM auch die an Kliniken, Märkten und Bahnhöfen. Beides ist richtig; das Überschreiben hätte ein Drittel vernichtet. Dieselbe Lehre wie bei Rostock (3.9b), nur andersherum – nicht die Herkunft entscheidet, sondern was in den Daten steht.
   - **Zwei Fehler beim Bauen gefunden und behoben:** Die Anschrift steht mal im Ortsfeld, mal in der Bemerkung („Ärztehaus" / „Franz-Sigel-Str. 83"); und „Bahnhof" wäre beinahe als Straßenname eingetragen worden, was jede spätere Nachbesserung blockiert hätte – derselbe Mechanismus wie bei 3.0f.
   - Ergebnis: **24 statt 14 Städte aus amtlicher Quelle.**
+  - **Die Annahme über NRW hat sich nicht bestätigt** (erledigter Teil von 3.2, hierher verschoben am 2026-10-10). Erwartet war ein landesweiter NRW-Sammeldatensatz. Auf Open.NRW stehen elf einschlägige Datensätze, aber **alle von einzelnen Städten, die längst erfasst sind**; einen gebündelten gibt es dort nicht. Die beiden „Gebündelte Daten"-Datensätze von MobiData BW betreffen Parkplätze allgemein, nicht Behindertenstellplätze. Das steht hier, damit niemand dieselbe Suche ein zweites Mal führt: **Landesweite Sammeldatensätze sind in NRW und BW nicht die Lücke, die sie zu sein schienen** – der Weg zu den kleinen Gemeinden führt über 2e.7 und 2e.10, nicht über die Landesportale.
 - [x] 2e.1 **Gemeinden mit amtlichen Daten gesucht – über alle Größen hinweg** (2026-10-10, `npm run sources:amtlich`). Bericht: [data/\_amtliche-quellen.md](data/_amtliche-quellen.md). Einschränkung, die man kennen muss: Gesucht wurde mit **strengen** Begriffen – die breiten aus `sources:scan` („Parken", „Parkplätze") würden bei 10.956 Gemeinden zufällig auf falsche Namen passen. Ein Datensatz, der im Titel weder Parken noch Behinderung nennt, bleibt dadurch unentdeckt. Die Annahme war, dass kleine Gemeinden mit guten Daten übergangen werden, weil der Import sich nach der Einwohnerzahl richtet; sie wäre die billigste Ausweitung gewesen. **Das Ergebnis widerlegt sie:** Von 23 einschlägigen GovData-Datensätzen gehören alle 14 zuordenbaren zu bereits erfassten Städten. Unterhalb von 50.000 Einwohnern veröffentlicht dort niemand. Ein negatives Ergebnis, aber ein brauchbares – es lenkt die Arbeit auf 2e.2 und 2e.3, wo tatsächlich etwas zu holen ist.
 - [x] 2e.0 **Abdeckung messbar gemacht** (2026-10-10, `npm run report:abdeckung` → `data/_abdeckung.md`). Gemessen wird **zweifach**, weil beide Zahlen Verschiedenes sagen und keine allein ehrlich ist:
   - **195 von 10.956 Gemeinden = 1,8 %** – die Antwort auf „sind wir fertig".

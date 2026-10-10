@@ -9,6 +9,11 @@ Code ablesbar sind und sonst in jeder Sitzung neu gelernt werden müssten.
 **Erledigte Punkte gehören nach [Erledigt.md](Erledigt.md), nicht in
 [ToDos.md](ToDos.md).** In `ToDos.md` steht nur, was offen ist.
 
+**Das geschieht sofort, als Teil der Aufgabe – nicht am Ende der Sitzung und
+nicht auf Nachfrage.** Eine Aufgabe gilt erst als fertig, wenn sie
+verschoben ist. Wird es aufgeschoben, steht Erledigtes in der offenen Liste,
+und die Liste beantwortet ihre einzige Frage nicht mehr: Was ist noch zu tun?
+
 So geht es:
 
 1. Punkt in `Erledigt.md` eintragen, unter derselben Nummer wie in `ToDos.md`
@@ -16,8 +21,15 @@ So geht es:
    **mit der Begründung, warum es so gelöst wurde.**
 2. Den Punkt in `ToDos.md` löschen.
 3. Ist ein Punkt nur teilweise erledigt, bleibt er in `ToDos.md` auf `[~]`,
-   und nur der fertige Teil wandert hinüber.
+   und nur der fertige Teil wandert hinüber. **In `ToDos.md` bleibt dann
+   kein „Fertig: …" stehen**, sondern höchstens ein Verweis auf
+   `Erledigt.md`. Sonst steht dieselbe Sache in beiden Dateien, und bei einer
+   späteren Änderung wird nur eine davon nachgeführt.
 4. Zählstände oben in beiden Dateien nachführen.
+
+**Vor dem Eintragen prüfen, ob der Punkt schon in `Erledigt.md` steht.** Ein
+doppelter Eintrag ist schlimmer als keiner: Er lässt dieselbe Arbeit zweimal
+getan erscheinen und widerspricht sich, sobald einer der beiden ergänzt wird.
 
 `Erledigt.md` ist kein Änderungsprotokoll, sondern eine
 Begründungssammlung. Mehrere Einträge beschreiben Fehler, die wirklich

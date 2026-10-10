@@ -35,7 +35,16 @@ Unterbrechung nahtlos weitergearbeitet werden kann.
 11.3, 12.3, 12.8, 12.9, 2e.8 sowie Lizenz und Importdatum im Datenmodell
 (Teil von 2a.5/10.3).
 
-**Gerade in Arbeit:** –
+**Gerade in Arbeit:** – (2e.10 und 2e.11 sind neu aufgenommen, aber noch nicht
+begonnen: ausdrücklich erst nach Freigabe umsetzen)
+
+**Aufgeräumt am 2026-10-10:** Die acht `[~]`-Punkte wiederholten ihren fertigen
+Teil als „Fertig: …", obwohl er längst in [Erledigt.md](Erledigt.md) stand –
+dieselbe Sache in zwei Dateien. Jetzt steht hier nur der offene Rest mit einem
+Verweis. 2d.8a und 2d.9 sind dabei von `[~]` auf `[ ]` gewechselt: An ihnen ist
+nichts mehr in Arbeit, es ist nur noch nichts getan. Der NRW-Befund aus 3.2 ist
+nach `Erledigt.md` gewandert – eine ergebnislose Suche ist ein Ergebnis, das vor
+der Wiederholung bewahrt.
 
 **Zuletzt gelernt (2026-10-10):** Der landesweite Import (2e.7) ist gebaut
 und lief, aber die damit erzeugten Daten für 473 Gemeinden wurden **wieder
@@ -45,6 +54,13 @@ Stellplätze. Nach dem Grundsatz des Projekts – „lieber kein Import als ein
 falscher" – ist das kein vertretbarer Bestand. Gefunden hat es nicht das
 Hinsehen, sondern zwei Kennzahlen: die Streuung der Standorte je Gemeinde
 und Stellplätze je Einwohner.
+
+**Zweiter Befund vom 2026-10-10:** Die Arbeitsliste führt 204 Gemeinden, das
+Register 10.956. `_import-status.md` meldet deshalb „Alle Städte
+abgearbeitet" – wahr für die eingestellte Einwohnergrenze, falsch für das
+Endziel. Die übrigen 10.752 stehen nicht auf „offen", **sie kommen in der
+Datei nicht vor.** Die Trennung „geprüft" gegen „nicht geprüft" ist richtig
+gebaut, wird aber auf die falsche Grundmenge angewandt; siehe 2e.10.
 
 ### Was zuletzt geschah
 
@@ -125,17 +141,21 @@ E2E-Smoke-Test mit Playwright.
 **Als Nächstes geplant**, in dieser Reihenfolge:
 
 1. 6.12 fertigstellen: Zielmarker, Umkreis-Auswahl, Browserprüfung, E2E-Test
-2. 2e.4 Gemeinderegister aus VG250-EW – Voraussetzung für jede weitere Stufe
-3. 2e.7 landesweite Overpass-Läufe statt einer Abfrage je Gemeinde
+2. 2e.10 Arbeitsliste auf alle 10.956 Gemeinden stellen – ohne sie ist „die
+   restlichen Gemeinden" keine abarbeitbare Menge, und der Importstand meldet
+   fälschlich „alles abgearbeitet"
+3. 2e.7 Punkt-in-Fläche-Test aus VG250-EW – der Blocker für jede weitere Stufe
 4. 3.1 / 3.3 / 3.4 Kreuzvergleich, Straßenabgleich, Abstand zur Straße
 5. 3.7 bestätigte Standorte in der Detailansicht kennzeichnen
 6. 2d.8a die acht Städte mit ungenutzter amtlicher Quelle einzeln ansehen
 7. 12.4 Lighthouse, 12.6 Fehler-Monitoring
 8. 2a.5 die fehlenden Lizenzen der 15 amtlichen Quellen nachschlagen
 
-**Stand:** 65 offen, 8 in Arbeit, 5 brauchen deine Entscheidung, 9 bewusst
-zurückgestellt (Finanzierung, Mehrsprachigkeit, Offline-Download).
-92 erledigte Punkte stehen in [Erledigt.md](Erledigt.md).
+**Stand:** 57 offen, 6 in Arbeit, 5 brauchen deine Entscheidung, 9 bewusst
+zurückgestellt (Finanzierung, Mehrsprachigkeit, Offline-Download). Dazu 20
+offene Unterpunkte innerhalb dieser Posten. **Gezählt wird die oberste Ebene**
+– sonst ergibt jede Sitzung eine andere Zahl.
+90 erledigte Einträge stehen in [Erledigt.md](Erledigt.md).
 **Tests: 161 Unit-Tests + 6 E2E-Tests.**
 
 ---
@@ -163,8 +183,7 @@ zurückgestellt (Finanzierung, Mehrsprachigkeit, Offline-Download).
 
 ### 2a. Quellenstrategie
 
-- [~] 2a.5 Lizenz je Stadt ins Datenmodell aufnehmen und in der Oberfläche anzeigen.
-  - Fertig: Datenmodell und Anzeige. `license` ist ein eigenes Feld der Seed-Dateien; der Importer schreibt es, für ältere Dateien zerlegt `src/lib/parking/license.ts` die Quellenangabe. Die Listenansicht nennt je Stadt Quelle, Lizenz und Importdatum.
+- [~] 2a.5 Lizenz je Stadt. Datenmodell und Anzeige sind fertig – siehe [Erledigt.md](Erledigt.md). Offen ist nur noch:
   - [ ] **Es fehlen die Lizenzen selbst: 15 der amtlichen Quellen nennen keine** – darunter Hamburg, Köln und Dresden, also die größten Bestände. In der Oberfläche steht jetzt offen „Lizenz nicht angegeben", was ehrlich, aber für eine veröffentlichte App zu wenig ist. Die Lizenz steht meist auf dem Portal der Stadt, nur nicht im GovData-Metadatum; das muss je Stadt nachgeschlagen und in `data/<stadt>.overrides.json` oder einer eigenen Lizenzliste festgehalten werden.
 
 ### 2c. Idstein und Weißenhorn
@@ -176,10 +195,8 @@ zurückgestellt (Finanzierung, Mehrsprachigkeit, Offline-Download).
 
 Laufender Stand: **[data/\_import-status.md](data/_import-status.md)** – von den Skripten selbst geschrieben, nach jeder einzelnen Stadt aktualisiert.
 
-- [~] 2d.8a Bei Bochum, Bielefeld und Karlsruhe die aktuellen Bezugswege suchen – auf den Portalen der Städte statt über GovData. Der Gewinn wäre spürbar: Düsseldorf kam von 171 Standorten aus OSM auf 340 aus der amtlichen Quelle.
-  - Fertig: `npm run sources:check` meldet als „amtliche Quelle ungenutzt", welche Städte aus OpenStreetMap kommen, obwohl ihre amtliche Quelle antwortet. Derzeit acht – man muss sie nicht mehr von Hand suchen.
-  - [ ] Die acht einzeln ansehen. Bei Kiel, Krefeld und Aachen ist die Ablehnung laut 2d.8 richtig (Anwohnerparken); bei Bochum, Bielefeld, Karlsruhe, Norderstedt und Viersen lohnt der Blick auf das Stadtportal.
-- [~] 2d.9 **Regensburg** hat weder amtliche Daten noch OSM-Treffer. Seit 2e.9 ist der Befund wenigstens festgehalten statt ungeklärt: Regensburg steht als „geprüft, nichts gefunden" im Importstand, die Abfrage lief also sauber durch und war leer. Offen bleibt die eigentliche Frage – eine Stadt mit 156.000 Einwohnern ohne einen einzigen erfassten Behindertenparkplatz ist eine Lücke in OpenStreetMap, keine in der Wirklichkeit. Hier lohnt die Anfrage bei der Straßenverkehrsbehörde (Schritt 3 der Quellensuche) und das Nachtragen in OSM (2c.4).
+- [ ] 2d.8a **Die acht Städte mit ungenutzter amtlicher Quelle einzeln ansehen.** `npm run sources:check` findet sie von selbst (siehe [Erledigt.md](Erledigt.md)); zu tun bleibt das Ansehen. Bei Kiel, Krefeld und Aachen ist die Ablehnung laut 2d.8 richtig (Anwohnerparken); bei Bochum, Bielefeld, Karlsruhe, Norderstedt und Viersen lohnt der Blick auf das Stadtportal. Der Gewinn wäre spürbar: Düsseldorf kam von 171 Standorten aus OSM auf 340 aus der amtlichen Quelle.
+- [ ] 2d.9 **Regensburg: 156.000 Einwohner, kein einziger erfasster Behindertenparkplatz.** Dass die Abfrage sauber durchlief und leer war, ist seit 2e.9 festgehalten – das ist eine Lücke in OpenStreetMap, keine in der Wirklichkeit. Hier lohnt die Anfrage bei der Straßenverkehrsbehörde (Schritt 3 der Quellensuche) und das Nachtragen in OSM (2c.4).
 - [ ] 2d.10 Auffällig niedrige OSM-Zahlen stichprobenartig prüfen, etwa Wuppertal mit 66 Standorten bei 359.000 Einwohnern
 
 ### 2e. Ganz Deutschland
@@ -198,23 +215,78 @@ OpenStreetMap. Beides ist frei nutzbar, beides kann der Importer bereits
 lesen. Nicht importierbar sind Daten hinter Lizenzschranken (Parkopedia) oder
 solche, die nur als Bild oder gedruckter Plan vorliegen.
 
-- [~] 2e.5 Stufenweise vorgehen, größte zuerst. **Stufe „ab 50.000" ist abgeschlossen:** 195 Gemeinden laut amtlichem Verzeichnis, alle geprüft. Die Grenze ist jetzt die Konstante `MIN_POPULATION` in `scripts/import/german-cities.mts`.
+- [~] 2e.5 Stufenweise vorgehen, größte zuerst. Die Stufe „ab 50.000" ist abgeschlossen (siehe [Erledigt.md](Erledigt.md)); die Grenze ist die Konstante `MIN_POPULATION` in `scripts/import/german-cities.mts`.
   - [ ] **Nächste Stufe „ab 20.000" = 706 Gemeinden. Einmal versucht und wieder zurückgenommen** (2026-10-10): Die Grenze stand kurzzeitig auf 20.000, und der landesweite Lauf hat 473 Gemeinden geschrieben. Weil die Zuordnung nicht stimmte (siehe 2e.7), sind die Daten wieder entfernt und die Grenze steht wieder auf 50.000. **Die Stufe hängt allein an 2e.7** – das Register (2e.4) und die Zählung (2e.0) sind bereit, und das Umstellen ist eine Zahl.
   - [ ] Danach ab 10.000 (1.598 Gemeinden) und ab 5.000 (2.943).
-- [ ] 2e.6 Restliche Gemeinden aus OpenStreetMap – der Importer kann das bereits, es fehlt nur die Liste
+- [ ] 2e.6 Restliche Gemeinden aus OpenStreetMap – der Importer kann das bereits, es fehlt nur die Liste. **Die Liste ist 2e.10**: Das Register hat alle 10.956 Gemeinden, die Arbeitsliste führt bisher nur 204.
 - [~] 2e.7 **Laufzeit und Last beherrschen – das Werkzeug steht, die Zuordnung taugt noch nicht.**
 
-  `npm run import:osm-state -- <bundesland>` bzw. `--alle` holt mit **zwei Abfragen je Bundesland**, was bisher 10.956 Einzelabfragen gekostet hätte. Der Lauf selbst funktioniert: 12 von 16 Ländern liefen durch, 473 Gemeinden wurden geschrieben.
+  `npm run import:osm-state -- <bundesland>` bzw. `--alle` holt mit **zwei Abfragen je Bundesland**, was bisher 10.956 Einzelabfragen gekostet hätte. Der gebaute Teil steht in [Erledigt.md](Erledigt.md); der Lauf selbst funktioniert, 12 von 16 Ländern liefen durch.
 
-  **Diese Daten sind wieder entfernt worden.** Nicht weil der Lauf scheiterte, sondern weil die Zuordnung der Treffer zu Gemeinden nachweislich falsch ist:
+  **Die damit erzeugten Daten für 473 Gemeinden sind wieder entfernt worden.** Nicht weil der Lauf scheiterte, sondern weil die Zuordnung der Treffer zu Gemeinden nachweislich falsch ist:
 
-  - Fertig: Grenzabfrage, Parkplatzabfrage, lokale Zuordnung (`assign.mts`, fünf Tests), Wiederholung über mehrere Spiegel, Stadtstaaten-Sonderfall, Plausibilitätsprüfung der Grenzzahl, Weitermachen nach einem gescheiterten Land.
   - [ ] **Der verbleibende Fehler ist grundsätzlich.** Ohne die echte Grenzgeometrie entscheidet das umschließende Rechteck und die Entfernung zur Rechteckmitte. In dicht besiedelten Gegenden überlappen die Rechtecke stark, und **die kleinere Gemeinde gewinnt systematisch**: Ihr Mittelpunkt liegt jedem Punkt im Überlappungsbereich näher. Herdecke (22.772 Einwohner) bekam dadurch 109 Standorte bis hinauf nach Witten – 86 Stellplätze je 10.000 Einwohner statt der üblichen 7. **80 von 472 Gemeinden lagen über dem Dreifachen des Medians.**
-  - [ ] **Was es braucht: ein echter Punkt-in-Fläche-Test.** Mögliche Wege: `out geom` für die Grenzen (viele Megabyte je Land, für Bayern womöglich zu viel), die Geometrie aus VG250 des BKG (GeoPackage oder Shapefile, 64–69 MB, braucht einen eigenen Leser), oder Overpass die Zuordnung selbst rechnen lassen. Vor der nächsten Ausbaustufe zu entscheiden.
+  - [ ] **Was es braucht: ein echter Punkt-in-Fläche-Test.** Die Wege sind am 2026-10-10 verglichen worden; **empfohlen ist VG250-EW als Shapefile**, und zwar aus einem Grund, der schwerer wiegt als die Dateigröße: Es ist **dasselbe Produkt, aus dem das Gemeindeverzeichnis schon kommt**.
+
+    | Weg                                | Umfang           | Lizenz       | Was fehlt dafür                             |
+    | ---------------------------------- | ---------------- | ------------ | ------------------------------------------- |
+    | **VG250-EW Shapefile** (empfohlen) | 66 MB            | dl-de/by-2-0 | ein `.shp`/`.dbf`-Leser                     |
+    | VG1000-EW Shapefile                | 9 MB             | dl-de/by-2-0 | derselbe Leser, aber generalisierte Grenzen |
+    | VG250-EW GeoPackage                | 69 MB            | dl-de/by-2-0 | ein SQLite-Leser – deutlich mehr Arbeit     |
+    | Overpass `out geom`                | viele MB je Land | ODbL         | nichts, aber es belastet Overpass erneut    |
+
+    Warum das Shapefile und nicht das GeoPackage, obwohl beide dasselbe enthalten: Ein GeoPackage ist eine SQLite-Datenbank, und die zu lesen heißt, ein Dateiformat mit B-Bäumen und Seitenverwaltung nachzubauen oder eine Abhängigkeit aufzunehmen. Ein Shapefile ist eine Folge von Binärsätzen mit festen Feldlängen – in derselben Größenordnung wie [`xlsx.mts`](scripts/import/xlsx.mts), das aus demselben Grund von Hand geschrieben ist.
+
+    **Die halbe Arbeit ist schon getan**, und das ist der eigentliche Punkt dieser Empfehlung:
+
+    - **Die Quelle läuft bereits.** [`gemeinden.mts`](scripts/import/gemeinden.mts) lädt `vg250-ew_12-31.ee.excel.ebenen.zip` aus demselben Verzeichnis. Die Geometrie-Fassung ist dieselbe Datei in einem anderen Format: `vg250-ew_12-31.utm32s.shape.ebenen.zip`. Gleicher Stand, gleicher AGS, gleiche Einwohnerzahlen – Register und Grenzen können deshalb nicht auseinanderlaufen. Zwei verschiedene Quellen für Namen und Grenzen wären eine Fehlerquelle, die niemand bemerkt.
+    - **Die Lizenz ist geklärt und der Quellenvermerk steht schon im Code** (`BKG_QUELLENVERMERK`). Es kommt keine neue Lizenzfrage hinzu – das war bei der Wahl BKG statt Destatis bereits der Ausschlussgrund.
+    - **ZIP-Leser vorhanden:** [`zip.mts`](scripts/import/zip.mts) (`extractFile`).
+    - **Koordinatenumrechnung vorhanden:** Die Shapes liegen in UTM32; [`geo-source.mts`](scripts/import/geo-source.mts) hat `utmToWgs84` samt Zonenerkennung – geschrieben wegen des Dresden-Fehlers.
+    - Zu bauen bleibt: ein `.shp`-Leser (Satztyp 5, Polygon: Teile und Punkte), ein `.dbf`-Leser für AGS und Namen, und ein Punkt-in-Polygon-Test nach dem Strahlverfahren. **Mehrteilige Gemeinden und Löcher sind dabei keine Theorie:** Ein Shapefile-Polygon besteht aus mehreren Ringen, und deren Umlaufrichtung unterscheidet Außengrenze von Loch. Wer nur den ersten Ring prüft, verliert Exklaven; wer die Richtung ignoriert, ordnet eine umschlossene Gemeinde der umgebenden zu. Beides kommt in Deutschland vor – gemeindefreie Gebiete und vollständig umschlossene Gemeinden sind der Normalfall, nicht die Ausnahme.
+
+    **Was der Test zusätzlich können muss:** Das umschließende Rechteck bleibt als Vorfilter nützlich – 10.956 Polygone für jeden von zehntausenden Punkten durchzurechnen ist unnötig. Es entscheidet dann aber nicht mehr, sondern sortiert nur die Kandidaten vor, und das Polygon entscheidet. Genau so verschwindet der Herdecke-Fehler.
+
+    **Der Prüfstein steht bereit:** 2e.7 ist erst gelöst, wenn ein Probelauf für die 202 schon importierten Gemeinden dieselbe Zuordnung ergibt wie der Einzelimport – und wenn Herdecke wieder bei etwa 7 Stellplätzen je 10.000 Einwohnern liegt statt bei 86. Beide Kennzahlen aus [CLAUDE.md](CLAUDE.md) sind dafür da.
+
+    **VG1000-EW (9 MB) ist die Rückfallebene, nicht die Abkürzung.** Generalisierte Grenzen weichen um einige hundert Meter ab – und Behindertenparkplätze liegen an Straßen, die oft genau die Gemeindegrenze sind. Für eine erste Durchrechnung taugt es, für den Bestand nicht.
+
   - [ ] Zwei weitere Fundstücke aus dem Probelauf, die noch offen sind: „friedberg" und „friedberg-by" erhielten **dieselben** 123 Standorte – die Unterscheidung gleichnamiger Gemeinden greift noch nicht überall. Und Bad Kreuznach meldete landesweit 8 Standorte, einzeln geprüft aber null; auch das deutet auf fehlzugeordnete Nachbarn.
   - [ ] Vier Länder liefen gar nicht durch (Baden-Württemberg, Schleswig-Holstein wegen Überlast; Berlin und Bremen sind Stadtstaaten und werden jetzt übersprungen).
 
 - [ ] 2e.7a Ursprüngliche Überlegung, weiterhin gültig als Rückfallebene: Bei 10.700 Gemeinden ist eine Overpass-Abfrage je Gemeinde nicht vertretbar – das wäre Missbrauch eines Gemeinschaftsdienstes. Bessere Wege: ein landesweiter Overpass-Durchlauf je Bundesland statt je Gemeinde, oder ein eigener Auszug aus einem Planet-Download. Vor dem Massenimport zu entscheiden, nicht danach.
+
+- [ ] 2e.10 **Die Arbeitsliste auf alle 10.956 Gemeinden stellen.**
+
+  Die Trennung „geprüft, nichts gefunden" gegen „noch nicht geprüft" ist gebaut und richtig (2e.9) – **aber sie wird auf die falsche Grundmenge angewandt.** `loadStatus()` in [`status.mts`](scripts/import/status.mts) baut die Liste aus `germanCities`, und das ist das Register **gefiltert auf `MIN_POPULATION`**:
+
+  ```
+  Einträge in data/_import-status.json:    204   (202 fertig, 2 leer, 0 offen)
+  Gemeinden in data/_gemeinden.json:    10.956
+  nirgends erfasst:                     10.752
+  ```
+
+  **Der Importstand meldet deshalb „Alle Städte abgearbeitet".** Das ist für die eingestellte Grenze wahr und für das Endziel des Projekts falsch. Die 10.752 fehlenden Gemeinden stehen nicht auf `offen` – sie kommen in der Datei nicht vor. Eine Gemeinde, die in keiner Liste steht, fehlt niemandem auf; das ist dieselbe Art von Fehler, die bei der handgetippten Städteliste 13 Städte über 50.000 Einwohnern verschwinden ließ, darunter Wilhelmshaven.
+
+  Zu tun:
+
+  - [ ] `loadStatus()` über **alle** Gemeinden des Registers führen, nicht über den gefilterten Auszug. `MIN_POPULATION` steuert dann nur noch die **Reihenfolge der Abarbeitung**, nicht mehr, wer überhaupt gezählt wird. Das ist die eigentliche Umstellung: Die Einwohnergrenze ist eine Aussage über Vorrang, nicht über Zugehörigkeit.
+  - [ ] Damit wird `_import-status.md` zur vollständigen Arbeitsliste – 10.956 Zeilen. Zu groß für eine Datei, die ein Mensch liest: Die Markdown-Fassung sollte zusammenfassen (je Bundesland und je Größenstufe, wie viele geprüft und wie viele offen sind) und die Einzelzeilen nur für die Gemeinden führen, die nicht `offen` sind. Die JSON-Fassung bleibt vollständig – sie wird von Skripten gelesen, nicht von Menschen.
+  - [ ] **Gemeinden ohne eigene Entscheidung kennzeichnen.** Rund 20 % der Gemeinden gehören zu Verbands-, Samt- oder Verwaltungsgemeinschaften. Ihre Straßenverkehrsbehörde sitzt beim Verband, nicht in der Gemeinde – für Schritt 3 der Quellensuche ([Datenpflege.md](Datenpflege.md)) ist der Verband der richtige Adressat. Das ist ein Hinweis in der Liste, keine eigene Logik.
+  - [ ] **Verarbeitungseinheit festlegen und in der Liste führen.** Gemeinde für Gemeinde zu fragen ist der Fehler, den 2e.7 gerade behebt. Sinnvoll sind zwei Ebenen: **Bundesland** (16) als Einheit des Abrufs, **Landkreis** (rund 400) als Einheit der Prüfung – ein Landkreis ist klein genug, dass die Kennzahlen aus [CLAUDE.md](CLAUDE.md) aussagekräftig bleiben, und groß genug, dass die Arbeit nicht in 11.000 Einzelschritte zerfällt. Der AGS trägt den Kreisschlüssel in den Stellen 1–5; es braucht also keine zusätzliche Quelle.
+
+  Das ist **Voraussetzung für 2e.5 und 2e.6**: Ohne vollständige Arbeitsliste ist „die restlichen Gemeinden" keine Menge, die man abarbeiten kann. 2e.6 sagt bisher „es fehlt nur die Liste" – das hier ist die Liste.
+
+- [ ] 2e.11 **Prüfen, ob die Massendaten ganz ohne Overpass zu holen sind.**
+
+  Overpass ist ein **Abfragedienst**, von Freiwilligen bezahlt, und antwortet unter Last mit HTTP 500/504 – oder, schlimmer, mit HTTP 200 und leerer Liste. Beides ist bei diesem Projekt schon eingetreten. Für 10.956 Gemeinden ist er das falsche Werkzeug, auch gebündelt je Bundesland.
+
+  Der dafür vorgesehene Weg sind die **Bundesland-Auszüge von Geofabrik** (`.osm.pbf`, ODbL, täglich aktualisiert, mit stabilem JSON-Index und ausdrücklich für Automatisierung gedacht). Das ist der Unterschied, auf den es hier ankommt: Ein Download-Server ist für Massenbezug da, ein Abfragedienst nicht. Was vorher zu klären ist:
+
+  - [ ] **Der Aufwand ist ehrlich zu benennen:** PBF ist Protocol Buffers mit zlib-komprimierten Blöcken und delta-kodierten Knoten – deutlich mehr als ein Shapefile-Leser. Dagegen steht, dass es die Abhängigkeit von einem Gemeinschaftsdienst vollständig auflöst und der Lauf beliebig wiederholbar wird, ohne jemandem zur Last zu fallen.
+  - [ ] **Erst nach 2e.7 entscheiden, nicht davor.** Solange die Zuordnung nicht stimmt, erzeugt ein schnellerer Bezug nur schneller falsche Daten – genau der Fall, der am 2026-10-10 zum Entfernen von 473 Gemeinden geführt hat.
+  - [ ] **Attribution bleibt ODbL**, also unverändert gegenüber dem heutigen OSM-Bezug. Die Auszüge enthalten keine Benutzernamen und Changeset-IDs; für dieses Projekt ist das kein Verlust, sondern erspart die Frage nach personenbezogenen Daten.
+  - [ ] Zwischenstufe, falls PBF zu viel ist: `npm run import:osm-state` beibehalten, aber mit Pausen und über die 16 Länder verteilt – der Lauf steht ja. Dann bleibt es bei 32 Abfragen für ganz Deutschland statt 10.956, und das ist vertretbar.
 
 ---
 
@@ -237,7 +309,7 @@ aber keine einzelne falsch verorteten Parkplätze. Dafür braucht es einen
 Abgleich mit einer zweiten, unabhängigen Quelle.
 
 - [ ] 3.1 **Kreuzvergleich amtliche Daten gegen OpenStreetMap.** Für jede Stadt beide Quellen holen und Standorte paaren, die weniger als etwa 30 m auseinanderliegen. Daraus drei Gruppen: _bestätigt_ (beide kennen den Platz), _nur amtlich_ (wahrscheinlich in OSM nicht erfasst), _nur OSM_ (möglicherweise neu oder in der amtlichen Liste vergessen). Der Importer holt beide Quellen ohnehin schon – es fehlt nur der Vergleich.
-- [~] 3.2 **Landesweite Sammeldatensätze als dritte Quelle.** Teilweise erledigt: Der Datensatz der TechnologieRegion Karlsruhe ist eingebunden (2e.3). **Die Annahme über NRW hat sich nicht bestätigt** – auf Open.NRW stehen elf einschlägige Datensätze, aber alle von einzelnen Städten, die längst erfasst sind; einen gebündelten NRW-Datensatz gibt es dort nicht. Die beiden „Gebündelte Daten"-Datensätze von MobiData BW betreffen Parkplätze allgemein, nicht Behindertenstellplätze.
+- [~] 3.2 **Landesweite Sammeldatensätze als dritte Quelle.** Karlsruhe ist eingebunden, NRW und BW sind ergebnislos geprüft – beides in [Erledigt.md](Erledigt.md). Offen bleibt:
   - [ ] Zum **Gegenprüfen** (statt zum Lückenschließen) taugt der Karlsruher Datensatz weiterhin: Für Karlsruhe und Baden-Baden liegen jetzt zwei unabhängige Quellen vor. Das ist Material für 3.1.
   - [ ] Weitere Landesportale einzeln ansehen: Open Data Hessen, daten.berlin.de, Geodatenportal Bayern, Transparenzportal Hamburg.
 - [ ] 3.3 **Straßenabgleich.** Für jeden Standort prüfen, ob die Rückwärtssuche bei der Koordinate dieselbe Straße nennt wie die Quelle. Eine Abweichung ist kein Beweis für einen Fehler, aber ein guter Filter: nur die Treffer müssen von Hand angesehen werden. Für Frankfurt gibt es das schon im Importreport; es fehlt für alle anderen Städte.
@@ -323,7 +395,8 @@ sie nützt, und die höhere da, wo sie schützt.
 ## 10. Datenschutz und Recht
 
 - [ ] 10.2 Impressum und Datenschutzerklärung – für eine veröffentlichte Seite in Deutschland Pflicht
-- [~] 10.3 Lizenz- und Attributionshinweise: Die ODbL-Nennung steht jetzt sowohl unter der Karte als auch in der Listenansicht, und jede Stadt nennt ihre Quelle einzeln. Was fehlt, ist die Lizenz der 15 amtlichen Quellen, die keine angeben – das hängt an 2a.5 und ist dort beschrieben.
+- [~] 10.3 Lizenz- und Attributionshinweise. ODbL-Nennung und Quellenangabe je Stadt sind fertig (siehe [Erledigt.md](Erledigt.md)).
+  - [ ] Was fehlt, ist die Lizenz der 15 amtlichen Quellen, die keine angeben – beschrieben unter 2a.5.
 - [ ] 10.4 Keine Tracker, keine Drittanbieter-Cookies; falls Statistik, dann datenschutzfreundlich und mit Einwilligung
 
 ---
