@@ -11,11 +11,15 @@
  * Gemessen wird deshalb **zweifach**, und die beiden Zahlen sagen
  * Verschiedenes:
  *
- * - **Nach Gemeinden**: 195 von 10.956 sind 1,8 %. Das ist die strenge Zahl
+ * - **Nach Gemeinden**: 204 von 10.754 sind 1,9 %. Das ist die strenge Zahl
  *   und die ehrliche Antwort auf „sind wir fertig".
- * - **Nach Einwohnern**: Dieselben 195 Gemeinden sind der Wohnort eines weit
- *   größeren Teils der Bevölkerung. Das ist die Antwort auf „wie vielen
- *   Menschen nützt es schon".
+ * - **Nach Einwohnern**: Dieselben 204 Gemeinden sind der Wohnort eines weit
+ *   größeren Teils der Bevölkerung – rund 42 %. Das ist die Antwort auf „wie
+ *   vielen Menschen nützt es schon".
+ *
+ * Der Nenner sind die Gemeinden **mit Einwohnern**, seit 2e.10 identisch mit
+ * dem in `data/_import-status.md`. Die Begründung steht unten bei der
+ * Filterung.
  *
  * Beide gehören in den Bericht. Nur die erste zu nennen macht die Arbeit
  * kleiner, als sie ist; nur die zweite macht sie größer.
@@ -75,7 +79,20 @@ async function main() {
     );
   }
 
-  const alleEinwohner = register.gemeinden.reduce((sum, g) => sum + g.population, 0);
+  /*
+   * **Der Nenner sind die Gemeinden mit Einwohnern** (seit 2e.10), nicht alle
+   * Einträge des Verzeichnisses. Es führt 204 gemeindefreie Gebiete – Seen,
+   * Wälder und Truppenübungsplätze wie „Ammersee" oder „Abenberger Wald" –,
+   * davon 202 ohne jede Einwohnerzahl. Dort gibt es keinen öffentlichen
+   * Behindertenparkplatz zu erfassen und keine Verwaltung zu fragen; sie
+   * mitzuzählen würde die Abdeckung dauerhaft und grundlos drücken.
+   *
+   * Wichtiger noch: `data/_import-status.md` zählt seit 2e.10 genauso. Zwei
+   * Dokumente mit zwei verschiedenen Gesamtzahlen wären schlimmer als eine
+   * ungenaue Zahl – man glaubt dann keiner von beiden.
+   */
+  const gemeinden = register.gemeinden.filter((g) => g.population > 0);
+  const alleEinwohner = gemeinden.reduce((sum, g) => sum + g.population, 0);
 
   /*
    * Die Einwohnerzahl kommt aus dem Importstand selbst, nicht aus einer
@@ -103,7 +120,7 @@ async function main() {
     string,
     { gesamt: number; geprueft: number; einwohner: number; erfasst: number }
   >();
-  for (const gemeinde of register.gemeinden) {
+  for (const gemeinde of gemeinden) {
     const eintrag = laender.get(gemeinde.state) ?? {
       gesamt: 0,
       geprueft: 0,
@@ -136,7 +153,7 @@ async function main() {
     "",
     "| Maß | Erfasst | Insgesamt | Anteil |",
     "| --- | ---: | ---: | ---: |",
-    `| Gemeinden | ${zahl(geprueft.length)} | ${zahl(register.gemeinden.length)} | ${prozent(geprueft.length, register.gemeinden.length)} |`,
+    `| Gemeinden | ${zahl(geprueft.length)} | ${zahl(gemeinden.length)} | ${prozent(geprueft.length, gemeinden.length)} |`,
     `| Einwohner in erfassten Gemeinden | ${zahl(einwohnerGeprueft)} | ${zahl(alleEinwohner)} | ${prozent(einwohnerGeprueft, alleEinwohner)} |`,
     "",
     `**Die erste Zahl ist die ehrliche Antwort auf „sind wir fertig" – die`,
@@ -148,7 +165,7 @@ async function main() {
     "| --- | ---: |",
     `| geprüft, mit Treffer | ${zahl(mitTreffer.length)} |`,
     `| geprüft, nichts gefunden | ${zahl(ohneTreffer.length)} |`,
-    `| noch nicht geprüft | ${zahl(register.gemeinden.length - geprueft.length - probleme.length)} |`,
+    `| noch nicht geprüft | ${zahl(gemeinden.length - geprueft.length - probleme.length)} |`,
     `| Importversuch fehlgeschlagen | ${zahl(probleme.length)} |`,
     "",
     `Davon aus amtlicher Quelle: **${zahl(amtlich.length)}**, der Rest aus OpenStreetMap.`,
@@ -174,7 +191,7 @@ async function main() {
     "| Grenze | Gemeinden | davon neu | Einwohner gesamt | Anteil |",
     "| ---: | ---: | ---: | ---: | ---: |",
     ...[100_000, 50_000, 20_000, 10_000, 5_000, 0].map((grenze) => {
-      const inStufe = register.gemeinden.filter((g) => g.population >= grenze);
+      const inStufe = gemeinden.filter((g) => g.population >= grenze);
       const einwohner = inStufe.reduce((sum, g) => sum + g.population, 0);
       const neu = inStufe.length - geprueft.length;
       return (
@@ -194,8 +211,8 @@ async function main() {
   await fs.writeFile(path.join(dataDir, "_abdeckung.md"), zeilen.join("\n"), "utf8");
 
   console.log(
-    `Gemeinden: ${zahl(geprueft.length)} von ${zahl(register.gemeinden.length)} ` +
-      `(${prozent(geprueft.length, register.gemeinden.length)})`,
+    `Gemeinden: ${zahl(geprueft.length)} von ${zahl(gemeinden.length)} ` +
+      `(${prozent(geprueft.length, gemeinden.length)})`,
   );
   console.log(
     `Einwohner: ${zahl(einwohnerGeprueft)} von ${zahl(alleEinwohner)} ` +

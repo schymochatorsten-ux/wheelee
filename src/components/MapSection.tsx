@@ -46,8 +46,6 @@ interface MapSectionProps {
   cities: CityInfo[];
   /** Stadt, auf die ohne Nutzerstandort zentriert wird. */
   defaultCity: CityInfo;
-  /** Gesamtzahl der Standorte – nur für die Anzeige im Kopf. */
-  totalSpots: number;
 }
 
 type View = "map" | "list" | "settings";
@@ -104,18 +102,7 @@ const BEYOND_RADIUS_COUNT = 3;
  */
 const EXPANDED_BAR_HEIGHT = 430;
 
-/**
- * Untertitel im Kopf. Bei wenigen Städten ihre Namen, sonst die Anzahl –
- * 84 Namen nebeneinander wären unlesbar.
- */
-function citySubtitle(cities: readonly CityInfo[]): string {
-  const names = cities.map((city) => city.name);
-  if (names.length === 1) return names[0];
-  if (names.length <= 3) return `${names.slice(0, -1).join(", ")} und ${names[names.length - 1]}`;
-  return `${names.length} Städte`;
-}
-
-export function MapSection({ initialNearby, cities, defaultCity, totalSpots }: MapSectionProps) {
+export function MapSection({ initialNearby, cities, defaultCity }: MapSectionProps) {
   const center = defaultCity.center;
   const geo = useGeolocation();
   const [selected, setSelected] = useState<ParkingSpot | null>(null);
@@ -380,11 +367,18 @@ export function MapSection({ initialNearby, cities, defaultCity, totalSpots }: M
           {/* `hyphens-auto` greift, weil <html lang="de"> gesetzt ist:
               „Behindertenparkplätze" passt bei großer Schrift sonst in keine
               Telefonzeile und würde abgeschnitten. */}
+          {/*
+            Nur die Überschrift, keine Bestandszahlen (auf Wunsch,
+            2026-10-11). „209 Städte" darunter und „18.072 Parkplätze in 209
+            Städten" in der Statuszeile beantworteten eine Frage, die niemand
+            stellt, der gerade einen Parkplatz sucht – und sie nahmen auf dem
+            Telefon zwei Zeilen über der Karte ein. Die Zahlen sind nicht
+            verloren: Sie stehen in der Listenansicht unter „Woher die Daten
+            kommen" und in `data/_abdeckung.md`, also dort, wo jemand sie
+            wirklich nachschlägt.
+          */}
           <h1 className="min-w-0 text-lg font-semibold break-words hyphens-auto">
-            Behindertenparkplätze{" "}
-            <span className="block text-sm font-normal text-neutral-500">
-              {citySubtitle(cities)}
-            </span>
+            Behindertenparkplätze
           </h1>
           <div
             role="tablist"
@@ -436,8 +430,6 @@ export function MapSection({ initialNearby, cities, defaultCity, totalSpots }: M
                 ? `Nächster Parkplatz: ${nearest.street ?? nearest.label} – ${formatDistance(nearest.distanceMeters)}`
                 : "Kein verorteter Parkplatz in der Nähe.")}
             {geo.message}
-            {geo.status === "idle" &&
-              `${totalSpots.toLocaleString("de-DE")} Parkplätze in ${cities.length} Städten.`}
           </p>
         )}
 

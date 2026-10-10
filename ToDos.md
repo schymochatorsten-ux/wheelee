@@ -13,10 +13,11 @@ aktuell gehalten werden, steht in [Datenpflege.md](Datenpflege.md).
 der sich aus einer öffentlichen Quelle importieren lässt – siehe
 [Abschnitt 2e](#2e-ganz-deutschland).
 
-**Stand in Zahlen:** 204 von **10.956** Gemeinden geprüft (1,9 %) – das sind
-**41,7 % der Bevölkerung**. In der App: 209 Städte, 18.072 Standorte, davon
-23 Städte aus amtlicher Quelle. Laufender Bericht:
-[data/\_abdeckung.md](data/_abdeckung.md).
+**Stand in Zahlen:** 204 von **10.754** Gemeinden mit Einwohnern geprüft
+(1,9 %) – das sind **41,7 % der Bevölkerung**. In der App: 209 Städte, 18.072
+Standorte, davon 23 Städte aus amtlicher Quelle. Laufende Berichte:
+[data/\_abdeckung.md](data/_abdeckung.md) und
+[data/\_import-status.md](data/_import-status.md).
 
 Karte, Liste, Detailansicht, Zielsuche, Einstellungen und Offline-Betrieb
 laufen. Es fehlen vor allem: Bewertungen (brauchen die Datenbank),
@@ -40,23 +41,17 @@ Netzabfrage, zusammen unter einer Minute:
 
 ```bash
 npm run test && npm run typecheck && npm run lint
-npm run validate -- --offline
+npm run check:slugs
 ```
 
-Erwartet: 193 Unit-Tests grün, `209 Städte geprüft (offline). Mit Befund: 10`.
-Weicht das ab, hat sich seit dem 2026-10-10 etwas geändert – **das klären,
-bevor Neues anfängt.**
+Erwartet: 193 Unit-Tests grün und
+`Verzeichnis: 10.754 Gemeinden · davon an der Reihe: 204 · Seed-Dateien: 209`
+mit „✅ Register und Seed-Dateien stimmen überein". Weicht das ab, hat sich
+seit dem 2026-10-11 etwas geändert – **das klären, bevor Neues anfängt.**
+Besonders ein Slug, der nicht mehr passt: Er verwaist eine Seed-Datei
+lautlos.
 
-**2. Dann der nächste Punkt: 2e.10** (Arbeitsliste auf alle 10.956 Gemeinden).
-Er steht vor 2e.7, obwohl 2e.7 der bekanntere Blocker ist, und zwar aus einem
-Grund: Ohne vollständige Arbeitsliste ist „die restlichen Gemeinden" keine
-Menge, die man abarbeiten kann, und `_import-status.md` meldet weiterhin
-fälschlich „Alle Städte abgearbeitet". Was zu tun ist, steht ausführlich bei
-2e.10 in [Abschnitt 2e](#2e-ganz-deutschland); die kürzeste Fassung:
-`loadStatus()` in `scripts/import/status.mts` über das ganze Register führen
-statt über `germanCities`, das auf `MIN_POPULATION` gefiltert ist.
-
-**3. Danach 2e.7** – der Punkt-in-Fläche-Test aus VG250-EW. Der Weg ist
+**2. Dann 2e.7** – der Punkt-in-Fläche-Test aus VG250-EW. Der Weg ist
 entschieden und begründet (Shapefile, nicht GeoPackage), die halbe Arbeit
 liegt schon vor: ZIP-Leser und UTM32-Umrechnung sind da, es fehlt ein
 `.shp`/`.dbf`-Leser. **Prüfstein:** Die 202 bekannten Gemeinden müssen
@@ -65,21 +60,35 @@ etwa 7 statt 86 Stellplätzen je 10.000 Einwohner liegen.
 
 **Danach in dieser Reihenfolge**, ohne dass etwas davon voneinander abhängt:
 
-4. 3.1 / 3.3 / 3.4 Kreuzvergleich, Straßenabgleich, Abstand zur Straße
-5. 3.7 bestätigte Standorte in der Detailansicht kennzeichnen
-6. 2d.8a die fünf Städte mit ungenutzter amtlicher Quelle einzeln ansehen
-7. 12.4 Lighthouse, 12.6 Fehler-Monitoring
-8. 2a.5 die fehlenden Lizenzen der amtlichen Quellen nachschlagen
+3. 3.1 / 3.3 / 3.4 Kreuzvergleich, Straßenabgleich, Abstand zur Straße
+4. 3.7 bestätigte Standorte in der Detailansicht kennzeichnen
+5. 2d.8a die fünf Städte mit ungenutzter amtlicher Quelle einzeln ansehen
+6. 12.4 Lighthouse, 12.6 Fehler-Monitoring
+7. 2a.5 die fehlenden Lizenzen der amtlichen Quellen nachschlagen
 
 **Nicht anfangen:** Abschnitt 13, 15 und 16 sowie 2e.11 – alle gesperrt bis zu
 einer ausdrücklichen Freigabe.
 
-### Was zuletzt geschah (2026-10-10)
+**Eine Entscheidung liegt bei dir, nicht auf der Liste:** Die Stufe „ab
+50.000" ist vollständig abgearbeitet. Die nächstgrößere offene Gemeinde wäre
+Cuxhaven mit 49.697 Einwohnern; dafür muss `MIN_POPULATION` sinken. Der Weg
+über `import:city` erzeugt **richtige** Daten – der Zuordnungsfehler aus 2e.7
+betrifft nur den landesweiten Lauf. Der einzige Einwand ist die Last auf
+Overpass: ab 40.000 wären es 90 Gemeinden, ab 20.000 bereits 511.
+
+### Was zuletzt geschah (2026-10-10 und 2026-10-11)
 
 Zuerst auf Zuruf an der Oberfläche: **6.17–6.20** (Sprung auf die Karte aus
 jedem Eintrag, rote Luftlinie zum Bezugspunkt, Auswahl auch am eingegebenen
-Ziel, Vorschläge beim Tippen) und **9.11–9.13** (Reiter „Liste" ausgeblendet,
-Kopfzeile in den Einstellungen still, schlankere Menüs).
+Ziel, Vorschläge beim Tippen) und **9.11–9.14** (Reiter „Liste" ausgeblendet,
+Kopfzeile still und ohne Bestandszahlen, schlankere Menüs).
+
+Am 2026-10-11 dann **2e.10**: Die Arbeitsliste führt alle 10.754 Gemeinden mit
+Einwohnern statt nur die 204 oberhalb der Importgrenze. Dabei kamen zwei
+Folgefehler ans Licht (`check:slugs` meldete fünf Fehlalarme,
+`report:abdeckung` rechnete gegen eine andere Gesamtzahl als der Importstand)
+und ein selbst erzeugtes Risiko, das sofort geschlossen wurde: `--rest` sah
+plötzlich 10.550 offene Gemeinden.
 
 Danach nach der Vorgabe „günstigstes zuerst": **10.4**, **7.7**, **6.22**,
 **6.21**, **6.16a**, **2d.10**. Begründungen stehen in
@@ -98,10 +107,10 @@ bevorzugt systematisch kleine Gemeinden neben großen Städten; 80 von 472
 hatten unplausibel viele Stellplätze. Nach dem Grundsatz „lieber kein Import
 als ein falscher" kein vertretbarer Bestand.
 
-**2. Die Arbeitsliste führt 204 Gemeinden, das Register 10.956.** Die übrigen
-10.752 stehen nicht auf „offen" – **sie kommen in der Datei nicht vor.** Die
-Trennung „geprüft" gegen „nicht geprüft" ist richtig gebaut, wird aber auf die
-falsche Grundmenge angewandt. Das ist 2e.10.
+**2. Die Arbeitsliste führte 204 Gemeinden, das Register 10.754** – die
+übrigen standen nicht auf „offen", sie kamen in der Datei nicht vor. **Seit
+2e.10 behoben:** `_import-status.md` meldet jetzt 10.550 offene Gemeinden und
+nennt die nächste, statt „alles abgearbeitet" zu behaupten.
 
 **3. Chemnitz zeigte Wohnmobilstellplätze als Behindertenparkplätze.** 13
 Standorte aus einer amtlichen Quelle namens „Parkplätze Wohnmobil", die der
@@ -160,12 +169,12 @@ schiefging.
 - **Abschnitt 15 (Mehrsprachigkeit)** ist auf deinen Wunsch zurückgestellt – Englisch, Spanisch und Französisch erst nach der deutschen Fassung
 - **Abschnitt 16 (nur nach Freigabe)** – derzeit: Städte zum Mitnehmen herunterladen
 
-**Stand:** 54 offen, 5 in Arbeit, 5 brauchen deine Entscheidung, 9 bewusst
-zurückgestellt (Finanzierung, Mehrsprachigkeit, Offline-Download). Dazu 18
+**Stand:** 53 offen, 6 in Arbeit, 5 brauchen deine Entscheidung, 9 bewusst
+zurückgestellt (Finanzierung, Mehrsprachigkeit, Offline-Download). Dazu 17
 offene Unterpunkte innerhalb dieser Posten. **Gezählt wird die oberste Ebene**
 – sonst ergibt jede Sitzung eine andere Zahl.
-103 erledigte Einträge stehen in [Erledigt.md](Erledigt.md).
-**Tests: 193 Unit-Tests + 12 E2E-Tests.**
+105 erledigte Einträge stehen in [Erledigt.md](Erledigt.md).
+**Tests: 193 Unit-Tests + 15 E2E-Tests.**
 
 ---
 
@@ -226,10 +235,10 @@ solche, die nur als Bild oder gedruckter Plan vorliegen.
 - [~] 2e.5 Stufenweise vorgehen, größte zuerst. Die Stufe „ab 50.000" ist abgeschlossen (siehe [Erledigt.md](Erledigt.md)); die Grenze ist die Konstante `MIN_POPULATION` in `scripts/import/german-cities.mts`.
   - [ ] **Nächste Stufe „ab 20.000" = 706 Gemeinden. Einmal versucht und wieder zurückgenommen** (2026-10-10): Die Grenze stand kurzzeitig auf 20.000, und der landesweite Lauf hat 473 Gemeinden geschrieben. Weil die Zuordnung nicht stimmte (siehe 2e.7), sind die Daten wieder entfernt und die Grenze steht wieder auf 50.000. **Die Stufe hängt allein an 2e.7** – das Register (2e.4) und die Zählung (2e.0) sind bereit, und das Umstellen ist eine Zahl.
   - [ ] Danach ab 10.000 (1.598 Gemeinden) und ab 5.000 (2.943).
-- [ ] 2e.6 Restliche Gemeinden aus OpenStreetMap – der Importer kann das bereits, es fehlt nur die Liste. **Die Liste ist 2e.10**: Das Register hat alle 10.956 Gemeinden, die Arbeitsliste führt bisher nur 204.
+- [ ] 2e.6 Restliche Gemeinden aus OpenStreetMap – der Importer kann das bereits. **Die Liste steht seit 2e.10:** `data/_import-status.md` führt alle 10.754 Gemeinden mit Einwohnern, davon 10.550 als „noch nicht geprüft". Es fehlt jetzt nicht mehr die Liste, sondern ein vertretbarer Weg, sie abzuarbeiten – das ist 2e.7.
 - [~] 2e.7 **Laufzeit und Last beherrschen – das Werkzeug steht, die Zuordnung taugt noch nicht.**
 
-  `npm run import:osm-state -- <bundesland>` bzw. `--alle` holt mit **zwei Abfragen je Bundesland**, was bisher 10.956 Einzelabfragen gekostet hätte. Der gebaute Teil steht in [Erledigt.md](Erledigt.md); der Lauf selbst funktioniert, 12 von 16 Ländern liefen durch.
+  `npm run import:osm-state -- <bundesland>` bzw. `--alle` holt mit **zwei Abfragen je Bundesland**, was bisher 10.754 Einzelabfragen gekostet hätte. Der gebaute Teil steht in [Erledigt.md](Erledigt.md); der Lauf selbst funktioniert, 12 von 16 Ländern liefen durch.
 
   **Die damit erzeugten Daten für 473 Gemeinden sind wieder entfernt worden.** Nicht weil der Lauf scheiterte, sondern weil die Zuordnung der Treffer zu Gemeinden nachweislich falsch ist:
 
@@ -253,7 +262,7 @@ solche, die nur als Bild oder gedruckter Plan vorliegen.
     - **Koordinatenumrechnung vorhanden:** Die Shapes liegen in UTM32; [`geo-source.mts`](scripts/import/geo-source.mts) hat `utmToWgs84` samt Zonenerkennung – geschrieben wegen des Dresden-Fehlers.
     - Zu bauen bleibt: ein `.shp`-Leser (Satztyp 5, Polygon: Teile und Punkte), ein `.dbf`-Leser für AGS und Namen, und ein Punkt-in-Polygon-Test nach dem Strahlverfahren. **Mehrteilige Gemeinden und Löcher sind dabei keine Theorie:** Ein Shapefile-Polygon besteht aus mehreren Ringen, und deren Umlaufrichtung unterscheidet Außengrenze von Loch. Wer nur den ersten Ring prüft, verliert Exklaven; wer die Richtung ignoriert, ordnet eine umschlossene Gemeinde der umgebenden zu. Beides kommt in Deutschland vor – gemeindefreie Gebiete und vollständig umschlossene Gemeinden sind der Normalfall, nicht die Ausnahme.
 
-    **Was der Test zusätzlich können muss:** Das umschließende Rechteck bleibt als Vorfilter nützlich – 10.956 Polygone für jeden von zehntausenden Punkten durchzurechnen ist unnötig. Es entscheidet dann aber nicht mehr, sondern sortiert nur die Kandidaten vor, und das Polygon entscheidet. Genau so verschwindet der Herdecke-Fehler.
+    **Was der Test zusätzlich können muss:** Das umschließende Rechteck bleibt als Vorfilter nützlich – 10.754 Polygone für jeden von zehntausenden Punkten durchzurechnen ist unnötig. Es entscheidet dann aber nicht mehr, sondern sortiert nur die Kandidaten vor, und das Polygon entscheidet. Genau so verschwindet der Herdecke-Fehler.
 
     **Der Prüfstein steht bereit:** 2e.7 ist erst gelöst, wenn ein Probelauf für die 202 schon importierten Gemeinden dieselbe Zuordnung ergibt wie der Einzelimport – und wenn Herdecke wieder bei etwa 7 Stellplätzen je 10.000 Einwohnern liegt statt bei 86. Beide Kennzahlen aus [CLAUDE.md](CLAUDE.md) sind dafür da.
 
@@ -264,37 +273,24 @@ solche, die nur als Bild oder gedruckter Plan vorliegen.
 
 - [ ] 2e.7a Ursprüngliche Überlegung, weiterhin gültig als Rückfallebene: Bei 10.700 Gemeinden ist eine Overpass-Abfrage je Gemeinde nicht vertretbar – das wäre Missbrauch eines Gemeinschaftsdienstes. Bessere Wege: ein landesweiter Overpass-Durchlauf je Bundesland statt je Gemeinde, oder ein eigener Auszug aus einem Planet-Download. Vor dem Massenimport zu entscheiden, nicht danach.
 
-- [ ] 2e.10 **Die Arbeitsliste auf alle 10.956 Gemeinden stellen.**
+- [~] 2e.10 **Die Arbeitsliste führt jetzt alle Gemeinden** – siehe [Erledigt.md](Erledigt.md). Offen bleibt eine Kennzeichnung, für die die Daten fehlen:
 
-  Die Trennung „geprüft, nichts gefunden" gegen „noch nicht geprüft" ist gebaut und richtig (2e.9) – **aber sie wird auf die falsche Grundmenge angewandt.** `loadStatus()` in [`status.mts`](scripts/import/status.mts) baut die Liste aus `germanCities`, und das ist das Register **gefiltert auf `MIN_POPULATION`**:
+  - [ ] **Gemeinden ohne eigene Entscheidung kennzeichnen.** Rund ein Fünftel der Gemeinden gehört zu Verbands-, Samt- oder Verwaltungsgemeinschaften. Ihre Straßenverkehrsbehörde sitzt beim Verband, nicht in der Gemeinde – für Schritt 3 der Quellensuche ([Datenpflege.md](Datenpflege.md)) ist der Verband der richtige Adressat, und eine Anfrage an die Gemeinde läuft ins Leere.
 
-  ```
-  Einträge in data/_import-status.json:    204   (202 fertig, 2 leer, 0 offen)
-  Gemeinden in data/_gemeinden.json:    10.956
-  nirgends erfasst:                     10.752
-  ```
+    **Das Register weiß es derzeit nicht.** `data/_gemeinden.json` kennt im Feld `art` nur drei Werte: `Gemeinde`, `Stadt`, `Gemeindefreies Gebiet`. Die Zugehörigkeit zu einem Verband steht in VG250 auf einer eigenen Verwaltungsebene, die `scripts/import/gemeinden.mts` nicht ausliest – dort werden nur Ebene 6 (Gemeinde) und 2 (Land) verarbeitet.
 
-  **Der Importstand meldet deshalb „Alle Städte abgearbeitet".** Das ist für die eingestellte Grenze wahr und für das Endziel des Projekts falsch. Die 10.752 fehlenden Gemeinden stehen nicht auf `offen` – sie kommen in der Datei nicht vor. Eine Gemeinde, die in keiner Liste steht, fehlt niemandem auf; das ist dieselbe Art von Fehler, die bei der handgetippten Städteliste 13 Städte über 50.000 Einwohnern verschwinden ließ, darunter Wilhelmshaven.
-
-  Zu tun:
-
-  - [ ] `loadStatus()` über **alle** Gemeinden des Registers führen, nicht über den gefilterten Auszug. `MIN_POPULATION` steuert dann nur noch die **Reihenfolge der Abarbeitung**, nicht mehr, wer überhaupt gezählt wird. Das ist die eigentliche Umstellung: Die Einwohnergrenze ist eine Aussage über Vorrang, nicht über Zugehörigkeit.
-  - [ ] Damit wird `_import-status.md` zur vollständigen Arbeitsliste – 10.956 Zeilen. Zu groß für eine Datei, die ein Mensch liest: Die Markdown-Fassung sollte zusammenfassen (je Bundesland und je Größenstufe, wie viele geprüft und wie viele offen sind) und die Einzelzeilen nur für die Gemeinden führen, die nicht `offen` sind. Die JSON-Fassung bleibt vollständig – sie wird von Skripten gelesen, nicht von Menschen.
-  - [ ] **Gemeinden ohne eigene Entscheidung kennzeichnen.** Rund 20 % der Gemeinden gehören zu Verbands-, Samt- oder Verwaltungsgemeinschaften. Ihre Straßenverkehrsbehörde sitzt beim Verband, nicht in der Gemeinde – für Schritt 3 der Quellensuche ([Datenpflege.md](Datenpflege.md)) ist der Verband der richtige Adressat. Das ist ein Hinweis in der Liste, keine eigene Logik.
-  - [ ] **Verarbeitungseinheit festlegen und in der Liste führen.** Gemeinde für Gemeinde zu fragen ist der Fehler, den 2e.7 gerade behebt. Sinnvoll sind zwei Ebenen: **Bundesland** (16) als Einheit des Abrufs, **Landkreis** (rund 400) als Einheit der Prüfung – ein Landkreis ist klein genug, dass die Kennzahlen aus [CLAUDE.md](CLAUDE.md) aussagekräftig bleiben, und groß genug, dass die Arbeit nicht in 11.000 Einzelschritte zerfällt. Der AGS trägt den Kreisschlüssel in den Stellen 1–5; es braucht also keine zusätzliche Quelle.
-
-  Das ist **Voraussetzung für 2e.5 und 2e.6**: Ohne vollständige Arbeitsliste ist „die restlichen Gemeinden" keine Menge, die man abarbeiten kann. 2e.6 sagt bisher „es fehlt nur die Liste" – das hier ist die Liste.
+    Zu tun wäre also zuerst: nachsehen, ob die Ebene im bezogenen Datensatz enthalten ist, und sie gegebenenfalls mit einlesen. **Nicht raten:** Eine Gemeinde fälschlich als verbandsangehörig zu führen, schickt eine Anfrage an die falsche Stelle und die Antwort bleibt aus, ohne dass jemand den Grund erfährt.
 
 - [ ] 2e.11 **Prüfen, ob die Massendaten ganz ohne Overpass zu holen sind.**
 
-  Overpass ist ein **Abfragedienst**, von Freiwilligen bezahlt, und antwortet unter Last mit HTTP 500/504 – oder, schlimmer, mit HTTP 200 und leerer Liste. Beides ist bei diesem Projekt schon eingetreten. Für 10.956 Gemeinden ist er das falsche Werkzeug, auch gebündelt je Bundesland.
+  Overpass ist ein **Abfragedienst**, von Freiwilligen bezahlt, und antwortet unter Last mit HTTP 500/504 – oder, schlimmer, mit HTTP 200 und leerer Liste. Beides ist bei diesem Projekt schon eingetreten. Für 10.754 Gemeinden ist er das falsche Werkzeug, auch gebündelt je Bundesland.
 
   Der dafür vorgesehene Weg sind die **Bundesland-Auszüge von Geofabrik** (`.osm.pbf`, ODbL, täglich aktualisiert, mit stabilem JSON-Index und ausdrücklich für Automatisierung gedacht). Das ist der Unterschied, auf den es hier ankommt: Ein Download-Server ist für Massenbezug da, ein Abfragedienst nicht. Was vorher zu klären ist:
 
   - [ ] **Der Aufwand ist ehrlich zu benennen:** PBF ist Protocol Buffers mit zlib-komprimierten Blöcken und delta-kodierten Knoten – deutlich mehr als ein Shapefile-Leser. Dagegen steht, dass es die Abhängigkeit von einem Gemeinschaftsdienst vollständig auflöst und der Lauf beliebig wiederholbar wird, ohne jemandem zur Last zu fallen.
   - [ ] **Erst nach 2e.7 entscheiden, nicht davor.** Solange die Zuordnung nicht stimmt, erzeugt ein schnellerer Bezug nur schneller falsche Daten – genau der Fall, der am 2026-10-10 zum Entfernen von 473 Gemeinden geführt hat.
   - [ ] **Attribution bleibt ODbL**, also unverändert gegenüber dem heutigen OSM-Bezug. Die Auszüge enthalten keine Benutzernamen und Changeset-IDs; für dieses Projekt ist das kein Verlust, sondern erspart die Frage nach personenbezogenen Daten.
-  - [ ] Zwischenstufe, falls PBF zu viel ist: `npm run import:osm-state` beibehalten, aber mit Pausen und über die 16 Länder verteilt – der Lauf steht ja. Dann bleibt es bei 32 Abfragen für ganz Deutschland statt 10.956, und das ist vertretbar.
+  - [ ] Zwischenstufe, falls PBF zu viel ist: `npm run import:osm-state` beibehalten, aber mit Pausen und über die 16 Länder verteilt – der Lauf steht ja. Dann bleibt es bei 32 Abfragen für ganz Deutschland statt 10.754, und das ist vertretbar.
 
 ---
 
@@ -411,6 +407,8 @@ sie nützt, und die höhere da, wo sie schützt.
 - [ ] 10.2 Impressum und Datenschutzerklärung – für eine veröffentlichte Seite in Deutschland Pflicht
 - [~] 10.3 Lizenz- und Attributionshinweise. ODbL-Nennung und Quellenangabe je Stadt sind fertig (siehe [Erledigt.md](Erledigt.md)).
   - [ ] Was fehlt, ist die Lizenz der 15 amtlichen Quellen, die keine angeben – beschrieben unter 2a.5.
+  - [ ] prüfe welche Datenschutz und Datensicherheits Themen noch offen sind
+  - [ ] Prüfe ob es IT Sicherheits Schwachstellen gibt die geschlossen werden müssen
 
 ---
 

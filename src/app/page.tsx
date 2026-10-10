@@ -1,5 +1,5 @@
 import { MapSection } from "@/components/MapSection";
-import { getAllSpots, getCities, getDefaultCity, nearestSpots } from "@/lib/parking/spots";
+import { getCities, getDefaultCity, nearestSpots } from "@/lib/parking/spots";
 
 /**
  * Startseite: Karte und Liste der Behindertenparkplätze.
@@ -20,7 +20,6 @@ export default function Home() {
       initialNearby={nearestSpots(defaultCity.center, 100)}
       cities={getCities()}
       defaultCity={defaultCity}
-      totalSpots={getAllSpots().length}
     />
   );
 }

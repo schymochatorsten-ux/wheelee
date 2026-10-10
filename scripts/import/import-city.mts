@@ -18,7 +18,7 @@ import { createHash } from "node:crypto";
 import type { ParkingSpot } from "../../src/lib/types.js";
 import { splitAddress } from "../../src/lib/parking/address.js";
 import { projectRoot } from "./config.mjs";
-import { findCity, type GermanCity } from "./german-cities.mjs";
+import { findCity, MIN_POPULATION, type GermanCity } from "./german-cities.mjs";
 import { loadStatus, recordCity } from "./status.mjs";
 import {
   coordinatesOf,
@@ -532,7 +532,28 @@ async function importCity(city: GermanCity): Promise<void> {
 async function main() {
   const args = process.argv.slice(2);
   const status = await loadStatus();
-  const open = status.records.filter((record) => record.status === "offen");
+
+  /*
+   * **Offen heißt hier: offen und an der Reihe.**
+   *
+   * Seit 2e.10 führt der Status alle 10.754 Gemeinden, nicht mehr nur die
+   * oberhalb der Importgrenze – das ist der Zweck jener Änderung. Für
+   * `--rest` und `--next` ist das aber gefährlich: Ohne diese Einschränkung
+   * startete ein einziger Aufruf über zehntausend Overpass-Abfragen, genau
+   * den Missbrauch, den 2e.7a beschreibt.
+   *
+   * Dass es trotzdem nicht passierte, lag bislang nur daran, dass `findCity`
+   * ausschließlich die gefilterte Liste kennt und die übrigen danach aus dem
+   * Ergebnis fielen. Das ist ein Zufall, kein Schutz: Wer `findCity` einmal
+   * auf alle Gemeinden erweitert, löst den Massenlauf aus, ohne es zu
+   * bemerken. Deshalb steht die Bedingung hier ausdrücklich.
+   *
+   * Eine Gemeinde unterhalb der Grenze lässt sich weiterhin **namentlich**
+   * importieren – das ist eine bewusste Einzelentscheidung und keine Lawine.
+   */
+  const open = status.records.filter(
+    (record) => record.status === "offen" && record.population >= MIN_POPULATION,
+  );
 
   const maxIndex = args.indexOf("--max");
   const max =

@@ -132,7 +132,15 @@ interface RegisterFile {
   gemeinden: { ags: string; name: string; state: string; population: number }[];
 }
 
-function load(): GermanCity[] {
+interface RegisterEntry {
+  ags: string;
+  name: string;
+  art?: string;
+  state: string;
+  population: number;
+}
+
+function readRegister(): RegisterEntry[] {
   const file = path.join(projectRoot, "data", "_gemeinden.json");
 
   let register: RegisterFile;
@@ -148,10 +156,34 @@ function load(): GermanCity[] {
     throw error;
   }
 
-  const cities = register.gemeinden
-    .filter(
-      (gemeinde) => gemeinde.population >= MIN_POPULATION || ALWAYS_INCLUDE.has(gemeinde.name),
-    )
+  return register.gemeinden as RegisterEntry[];
+}
+
+/**
+ * Alle Gemeinden mit Einwohnern, größte zuerst (ToDo 2e.10).
+ *
+ * **Warum über alle und nicht über die Importgrenze gefiltert.** Bis hierher
+ * kannte das Projekt nur die 204 Gemeinden oberhalb von `MIN_POPULATION`, und
+ * `data/_import-status.md` meldete deshalb „Alle Städte abgearbeitet" –
+ * zutreffend für die eingestellte Grenze, falsch für das Endziel. Die übrigen
+ * Gemeinden standen nicht auf „offen"; **sie kamen in der Datei gar nicht
+ * vor.** Eine Gemeinde, die in keiner Liste steht, fehlt niemandem auf.
+ *
+ * Die Einwohnergrenze ist eine Aussage über **Vorrang**, nicht über
+ * Zugehörigkeit. Sie bestimmt weiterhin die Reihenfolge; wer dazugehört,
+ * bestimmt das amtliche Verzeichnis.
+ *
+ * **Ohne Einwohner wird nicht aufgenommen.** Das Verzeichnis führt 204
+ * gemeindefreie Gebiete – Seen, Wälder und Truppenübungsplätze wie „Ammersee"
+ * oder „Abenberger Wald". 202 davon haben keine Einwohner. Dort gibt es keinen
+ * öffentlichen Behindertenparkplatz zu erfassen, keine Verwaltung zu fragen,
+ * und die Kennzahl „Stellplätze je Einwohner" wäre eine Division durch null.
+ * Die beiden bewohnten (Lohheide, Osterheide) bleiben drin: Dort leben
+ * Menschen, und das ist der Maßstab – nicht, ob es eine Gemeindeverwaltung
+ * gibt.
+ */
+function toCities(entries: readonly RegisterEntry[]): GermanCity[] {
+  const cities = [...entries]
     .sort((a, b) => b.population - a.population || a.name.localeCompare(b.name, "de-DE"))
     .map((gemeinde, index) => ({
       rank: index + 1,
@@ -194,7 +226,31 @@ function load(): GermanCity[] {
   return cities;
 }
 
-export const germanCities: readonly GermanCity[] = load();
+/**
+ * Alle Gemeinden mit Einwohnern – die vollständige Arbeitsmenge (ToDo 2e.10).
+ *
+ * **Die Slugs werden hier über den ganzen Bestand vergeben, nicht je Auswahl.**
+ * Das ist die eigentliche Bedingung dafür, dass diese Umstellung gefahrlos
+ * ist: Täte man es getrennt, könnte dieselbe Gemeinde in der Importliste
+ * anders heißen als in der Gesamtliste – und ein Slug steckt im Dateinamen
+ * *und* in jeder Parkplatz-ID.
+ */
+export const allMunicipalities: readonly GermanCity[] = toCities(
+  readRegister().filter((gemeinde) => gemeinde.population > 0),
+);
+
+/**
+ * Die Gemeinden, die **jetzt** importiert werden – gefiltert, nicht neu
+ * benannt. Sie tragen dieselben Slugs und Ränge wie in `allMunicipalities`.
+ */
+export const germanCities: readonly GermanCity[] = allMunicipalities.filter(
+  (city) => city.population >= MIN_POPULATION || ALWAYS_INCLUDE.has(city.name),
+);
+
+/** Kreisschlüssel: die ersten fünf Stellen des amtlichen Gemeindeschlüssels. */
+export function kreisOf(city: Pick<GermanCity, "ags">): string {
+  return city.ags.slice(0, 5);
+}
 
 export function findCity(slugOrName: string): GermanCity | undefined {
   const needle = slugOrName.toLocaleLowerCase("de-DE");

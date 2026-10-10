@@ -13,7 +13,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { projectRoot } from "./config.mjs";
-import { germanCities } from "./german-cities.mjs";
+import { allMunicipalities, germanCities } from "./german-cities.mjs";
 
 /** Städte, die absichtlich nicht im Register stehen. */
 const AUSSERHALB = new Set(["idstein", "weissenhorn", "frankfurt-pdf-liste"]);
@@ -48,22 +48,44 @@ async function main() {
     status.records.filter((record) => record.status === "leer").map((record) => record.slug),
   );
 
-  const imRegister = new Set(germanCities.map((city) => city.slug));
+  /*
+   * **Verwaist wird gegen das volle Verzeichnis geprüft, nicht gegen die
+   * Importliste** (seit 2e.10).
+   *
+   * Vorher meldete diese Prüfung fünf angeblich verwaiste Dateien – Emden,
+   * Freising, Goslar, Speyer, Willich. Keine davon war verwaist: Sie liegen
+   * nur knapp unter der Einwohnergrenze und fielen deshalb aus der gefilterten
+   * Liste. Die Meldung musste das umständlich erklären („oder sie liegt knapp
+   * unter der Einwohnergrenze: Dann ist nichts zu tun").
+   *
+   * **Eine Warnung, die man wegerklären muss, wird beim nächsten Mal
+   * überlesen** – und mit ihr die echte. Verwaist heißt jetzt: zu dieser Datei
+   * gibt es im ganzen amtlichen Verzeichnis keine Gemeinde. Das ist ein
+   * Fehler, und nur das.
+   */
+  const imRegister = new Set(allMunicipalities.map((city) => city.slug));
   const verwaist = dateien.filter((name) => !imRegister.has(name) && !AUSSERHALB.has(name));
+
+  /*
+   * Fehlende Dateien dagegen nur für die Gemeinden, die **an der Reihe**
+   * sind. Sonst stünden hier 10.550 Zeilen „noch nicht importiert", und der
+   * vorgeschlagene Befehl wäre ein Overpass-Massenlauf.
+   */
   const ohneDatei = germanCities.filter(
     (city) => !dateien.includes(city.slug) && !geprueftLeer.has(city.slug),
   );
 
-  console.log(`Register: ${germanCities.length} Gemeinden · Seed-Dateien: ${dateien.length}`);
+  console.log(
+    `Verzeichnis: ${allMunicipalities.length.toLocaleString("de-DE")} Gemeinden · ` +
+      `davon an der Reihe: ${germanCities.length} · Seed-Dateien: ${dateien.length}`,
+  );
 
   if (verwaist.length > 0) {
-    console.log(`\n⚠ ${verwaist.length} Seed-Datei(en) ohne Eintrag im Register:`);
+    console.log(`\n⚠ ${verwaist.length} Seed-Datei(en) ohne Gemeinde im amtlichen Verzeichnis:`);
     for (const name of verwaist) console.log(`   ${name}.json`);
     console.log(
-      "   Entweder heißt die Gemeinde im Register anders – dann SLUG_OVERRIDES ergänzen,\n" +
-        "   sonst verwaist die Datei und die Stadt erscheint doppelt oder gar nicht.\n" +
-        "   Oder sie liegt knapp unter der Einwohnergrenze: Dann ist nichts zu tun, die\n" +
-        "   Daten bleiben in der App, nur der Importstand führt sie nicht mehr.",
+      "   Die Gemeinde heißt im Verzeichnis anders – SLUG_OVERRIDES ergänzen.\n" +
+        "   Sonst verwaist die Datei und die Stadt erscheint doppelt oder gar nicht.",
     );
   }
 

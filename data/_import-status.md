@@ -1,16 +1,21 @@
 # Importstand der deutschen Gemeinden
 
-Zuletzt aktualisiert: 2026-10-10T18:24:13.142Z
+Zuletzt aktualisiert: 2026-10-10T22:05:50.650Z
 
 Diese Datei schreiben die Importskripte selbst nach **jeder einzelnen Stadt**.
 Sie ist damit auch nach einem Abbruch mitten im Lauf korrekt.
 
+Geführt werden **alle Gemeinden mit Einwohnern**, nicht nur die oberhalb der
+Importgrenze (ToDo 2e.10). Die Einwohnergrenze bestimmt die Reihenfolge, nicht
+die Zugehörigkeit – sonst meldet diese Datei „alles abgearbeitet", während der
+weitaus größte Teil des Landes nie angesehen wurde.
+
 ## Wo weitermachen
 
-Alle Städte abgearbeitet.
+Innerhalb der eingestellten Grenze von 50.000 Einwohnern ist alles abgearbeitet. Die nächstgrößere offene Gemeinde darunter wäre **Cuxhaven** (49.697 Einwohner). Für sie muss `MIN_POPULATION` in `scripts/import/german-cities.mts` sinken – das ist eine Entscheidung, keine Routine.
 
 ```bash
-# nichts offen
+# innerhalb der Grenze nichts offen
 # oder alle verbleibenden nacheinander:
 npm run import:city -- --rest
 ```
@@ -19,23 +24,66 @@ npm run import:city -- --rest
 
 | Kennzahl | Wert |
 | --- | --- |
-| Gemeinden im Register | 204 |
-| geprüft | 204 (100 %) |
+| Gemeinden im Register | 10.754 |
+| geprüft | 204 (2 %) |
 | davon mit Treffer | 202 |
 | davon geprüft, nichts gefunden | 2 |
-| noch nicht geprüft | 0 |
+| noch nicht geprüft | 10.550 |
 | mit Problem | 0 |
-| importierte Standorte | 17998 |
-| importierte Stellplätze | 30074 |
+| importierte Standorte | 17.998 |
+| importierte Stellplätze | 30.074 |
 
 „Geprüft, nichts gefunden" ist etwas anderes als „noch nicht geprüft": Dort
 lief die Abfrage sauber durch und war leer. Diese Gemeinden werden nicht
 erneut abgefragt – bei tausenden Gemeinden wäre das ein Missbrauch von
 Overpass. Ein erneuter Versuch geht gezielt über den Namen der Gemeinde.
 
-## Städte in Bearbeitungsreihenfolge
+## Fortschritt nach Größenstufe
 
-| | Rang | Stadt | Einwohner | Quelle | Standorte | Stellplätze | Stand |
+Zwei Prozentzahlen, weil sie Verschiedenes sagen: **Gemeinden** beantwortet
+„sind wir fertig", **Einwohner** beantwortet „wie vielen Menschen nützt es
+schon". Beides allein wäre schief.
+
+| Stufe | geprüft | Gemeinden | Einwohner |
+| --- | ---: | ---: | ---: |
+| ab 100.000 | 80 von 80 | 100 % | 100 % |
+| ab 50.000 | 115 von 115 | 100 % | 100 % |
+| ab 20.000 | 9 von 511 | 2 % | 2 % |
+| ab 10.000 | 0 von 892 | 0 % | 0 % |
+| ab 5.000 | 0 von 1.345 | 0 % | 0 % |
+| unter 5.000 | 0 von 7.811 | 0 % | 0 % |
+
+## Fortschritt nach Bundesland
+
+Die Einheit des landesweiten Abrufs (2e.7) – hier wird sichtbar, wo ein Lauf
+etwas gebracht hat und wo nicht.
+
+| Bundesland | geprüft | Gemeinden | Einwohner |
+| --- | ---: | ---: | ---: |
+| Baden-Württemberg | 35 von 1.101 | 3 % | 32 % |
+| Bayern | 17 von 2.056 | 1 % | 27 % |
+| Berlin | 1 von 1 | 100 % | 100 % |
+| Brandenburg | 4 von 413 | 1 % | 16 % |
+| Bremen | 2 von 2 | 100 % | 100 % |
+| Hamburg | 1 von 1 | 100 % | 100 % |
+| Hessen | 12 von 421 | 3 % | 33 % |
+| Mecklenburg-Vorpommern | 5 von 724 | 1 % | 30 % |
+| Niedersachsen | 19 von 941 | 2 % | 28 % |
+| Nordrhein-Westfalen | 77 von 396 | 19 % | 64 % |
+| Rheinland-Pfalz | 11 von 2.301 | 0 % | 25 % |
+| Saarland | 1 von 52 | 2 % | 18 % |
+| Sachsen | 6 von 418 | 1 % | 40 % |
+| Sachsen-Anhalt | 3 von 218 | 1 % | 26 % |
+| Schleswig-Holstein | 6 von 1.104 | 1 % | 26 % |
+| Thüringen | 4 von 605 | 1 % | 23 % |
+
+## Angesehene Gemeinden
+
+204 von 10.754 Gemeinden sind angefasst worden. Nur sie stehen hier einzeln – die übrigen
+sind sämtlich „noch nicht geprüft", und zehntausend gleichlautende Zeilen
+liest niemand.
+
+| | Rang | Gemeinde | Einwohner | Quelle | Standorte | Stellplätze | Stand |
 | --- | ---: | --- | ---: | --- | ---: | ---: | --- |
  | ✅ | 1 | Berlin | 3.685.265 | amtlich (WFS) | 923 | 1560 | fertig | 
  | ✅ | 2 | Hamburg | 1.862.565 | amtlich (WFS) | 936 | 1310 | fertig | 
@@ -232,17 +280,17 @@ Overpass. Ein erneuter Versuch geht gezielt über den Namen der Gemeinde.
  | ✅ | 193 | Bad Oeynhausen | 50.620 | OpenStreetMap | 31 | 38 | fertig | 
  | ✅ | 194 | Heidenheim an der Brenz | 50.618 | OpenStreetMap | 52 | 84 | fertig | 
  | ✅ | 195 | Gronau (Westf.) | 50.547 | OpenStreetMap | 6 | 10 | fertig | 
- | ✅ | 196 | Landau in der Pfalz | 48.209 | amtlich (regional: trk) | 89 | 143 | fertig | 
- | ✅ | 197 | Bruchsal | 47.784 | amtlich (regional: trk) | 36 | 57 | fertig | 
- | ✅ | 198 | Ettlingen | 38.578 | amtlich (regional: trk) | 27 | 54 | fertig | 
- | ✅ | 199 | Bretten | 30.274 | amtlich (regional: trk) | 16 | 27 | fertig | 
- | ✅ | 200 | Gaggenau | 29.529 | amtlich (regional: trk) | 5 | 8 | fertig | 
- | ✅ | 201 | Stutensee | 25.259 | amtlich (regional: trk) | 32 | 49 | fertig | 
- | ✅ | 202 | Waghäusel | 22.466 | amtlich (regional: trk) | 3 | 6 | fertig | 
- | ✅ | 203 | Germersheim | 21.715 | amtlich (regional: trk) | 6 | 14 | fertig | 
- | ✅ | 204 | Rheinstetten | 21.267 | amtlich (regional: trk) | 17 | 100 | fertig | 
+ | ✅ | 209 | Landau in der Pfalz | 48.209 | amtlich (regional: trk) | 89 | 143 | fertig | 
+ | ✅ | 215 | Bruchsal | 47.784 | amtlich (regional: trk) | 36 | 57 | fertig | 
+ | ✅ | 298 | Ettlingen | 38.578 | amtlich (regional: trk) | 27 | 54 | fertig | 
+ | ✅ | 396 | Bretten | 30.274 | amtlich (regional: trk) | 16 | 27 | fertig | 
+ | ✅ | 415 | Gaggenau | 29.529 | amtlich (regional: trk) | 5 | 8 | fertig | 
+ | ✅ | 522 | Stutensee | 25.259 | amtlich (regional: trk) | 32 | 49 | fertig | 
+ | ✅ | 615 | Waghäusel | 22.466 | amtlich (regional: trk) | 3 | 6 | fertig | 
+ | ✅ | 630 | Germersheim | 21.715 | amtlich (regional: trk) | 6 | 14 | fertig | 
+ | ✅ | 652 | Rheinstetten | 21.267 | amtlich (regional: trk) | 17 | 100 | fertig | 
 
-## Genaue Herkunft je Stadt
+## Genaue Herkunft je Gemeinde
 
 - **Berlin** (amtlich (WFS)): `https://gdi.berlin.de/services/wfs/behindertenparkplaetze?request=GetFeature&service=WFS&version=2.0.0&typeNames=behindertenparkplaetze%3Abpark&outputFormat=application%2Fjson&srsName=EPSG%3A4326`
 - **Hamburg** (amtlich (WFS)): `https://geodienste.hamburg.de/wfs_behindertenstellplaetze?service=WFS&version=2.0.0&request=GetFeature&typeNames=de.hh.up%3Abehindertenstellplaetze`
