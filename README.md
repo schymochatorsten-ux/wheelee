@@ -73,6 +73,12 @@ letzten Stand sind.
 ## Pflegebefehle
 
 ```bash
+npm run import:gemeinden  # amtliches Gemeindeverzeichnis holen (jährlich)
+npm run import:regional   # regionale Sammeldatensätze (TechnologieRegion Karlsruhe)
+npm run import:osm-state  # landesweiter OSM-Lauf statt einer Abfrage je Gemeinde
+npm run check:slugs       # passen Register und Seed-Dateien zusammen?
+npm run report:abdeckung  # wie weit ist das Endziel?
+npm run sources:amtlich   # welche Gemeinde hat amtliche Daten, egal wie groß?
 npm run sources:check   # monatlich: hat sich an einer Quelle etwas geändert?
 npm run validate        # Datenprüfung, mit --offline ohne Netzabfragen
 npm run import:streets  # fehlende Straßennamen aus OpenStreetMap nachtragen
@@ -246,6 +252,13 @@ Listenansicht der App sagt das ausdrücklich.
 
 - Parkplatzdaten Frankfurt: Stadt Frankfurt am Main, Open Data (WFS Parken).
 - Parkplatzdaten Idstein und Weißenhorn: © OpenStreetMap-Mitwirkende, ODbL.
+- Parkplatzdaten der TechnologieRegion Karlsruhe (zwölf Gemeinden um
+  Karlsruhe): Stadt Karlsruhe / TechnologieRegion Karlsruhe, CC BY 4.0.
+- Gemeindeverzeichnis (Namen, Schlüssel, Einwohnerzahlen): © BKG
+  (2026) [dl-de/by-2-0](https://www.govdata.de/dl-de/by-2-0), Datenquellen:
+  <https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/datenquellen_vg_nuts.pdf>.
+  Dieser Quellenvermerk ist vorgeschrieben; die Bedingungen liegen dem
+  Download bei.
 - Kartendaten: © OpenStreetMap-Mitwirkende, ODbL. Die Attribution muss in der
   Karte sichtbar bleiben.
 - Geocoding: Nominatim, betrieben von der OpenStreetMap Foundation.

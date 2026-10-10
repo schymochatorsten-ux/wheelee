@@ -4,7 +4,7 @@
     "city": "Berlin",
     "slug": "berlin",
     "state": "Berlin",
-    "population": 3782202,
+    "population": 3685265,
     "official": [
       {
         "title": "Behindertenparkplätze",
@@ -47,7 +47,7 @@
     "city": "Hamburg",
     "slug": "hamburg",
     "state": "Hamburg",
-    "population": 1910160,
+    "population": 1862565,
     "official": [
       {
         "title": "Behindertenstellplätze Hamburg",
@@ -327,7 +327,7 @@
     "city": "München",
     "slug": "muenchen",
     "state": "Bayern",
-    "population": 1510378,
+    "population": 1505005,
     "official": [],
     "plan": "osm"
   },
@@ -336,7 +336,7 @@
     "city": "Köln",
     "slug": "koeln",
     "state": "Nordrhein-Westfalen",
-    "population": 1087353,
+    "population": 1024621,
     "official": [
       {
         "title": "Behindertenparkplätze in Köln",
@@ -391,7 +391,7 @@
     "city": "Frankfurt am Main",
     "slug": "frankfurt",
     "state": "Hessen",
-    "population": 775790,
+    "population": 756021,
     "official": [
       {
         "title": "WFS Parken in der Stadt Frankfurt am Main",
@@ -399,12 +399,12 @@
         "license": "nicht angegeben",
         "resources": [
           {
-            "format": "WFS",
-            "url": "https://geowebdienste.frankfurt.de/Parken?service=WFS&version=1.1.0&request=GetCapabilities"
-          },
-          {
             "format": "GML",
             "url": "https://geodatenkatalog.frankfurt.de/geonetwork/srv/api/records/5f02f6f8-e9f4-431d-a610-d6b6ab24b1f1/formatters/xml"
+          },
+          {
+            "format": "WFS",
+            "url": "https://geowebdienste.frankfurt.de/Parken?service=WFS&version=1.1.0&request=GetCapabilities"
           }
         ]
       }
@@ -413,19 +413,10 @@
   },
   {
     "rank": 6,
-    "city": "Stuttgart",
-    "slug": "stuttgart",
-    "state": "Baden-Württemberg",
-    "population": 633484,
-    "official": [],
-    "plan": "osm"
-  },
-  {
-    "rank": 7,
     "city": "Düsseldorf",
     "slug": "duesseldorf",
     "state": "Nordrhein-Westfalen",
-    "population": 631217,
+    "population": 618685,
     "official": [
       {
         "title": "Allgemeine Behindertenparkplätze in Düsseldorf",
@@ -461,11 +452,20 @@
     "plan": "official"
   },
   {
+    "rank": 7,
+    "city": "Stuttgart",
+    "slug": "stuttgart",
+    "state": "Baden-Württemberg",
+    "population": 612663,
+    "official": [],
+    "plan": "osm"
+  },
+  {
     "rank": 8,
     "city": "Leipzig",
     "slug": "leipzig",
     "state": "Sachsen",
-    "population": 619879,
+    "population": 611850,
     "official": [],
     "plan": "osm"
   },
@@ -474,7 +474,7 @@
     "city": "Dortmund",
     "slug": "dortmund",
     "state": "Nordrhein-Westfalen",
-    "population": 595471,
+    "population": 603462,
     "official": [
       {
         "title": "Behindertenstellplätze",
@@ -516,19 +516,19 @@
   },
   {
     "rank": 10,
-    "city": "Essen",
-    "slug": "essen",
-    "state": "Nordrhein-Westfalen",
-    "population": 586608,
+    "city": "Bremen",
+    "slug": "bremen",
+    "state": "Bremen",
+    "population": 586271,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 11,
-    "city": "Bremen",
-    "slug": "bremen",
-    "state": "Bremen",
-    "population": 577026,
+    "city": "Essen",
+    "slug": "essen",
+    "state": "Nordrhein-Westfalen",
+    "population": 574682,
     "official": [],
     "plan": "osm"
   },
@@ -537,7 +537,7 @@
     "city": "Dresden",
     "slug": "dresden",
     "state": "Sachsen",
-    "population": 566222,
+    "population": 564904,
     "official": [
       {
         "title": "Parken für Menschen mit Behinderungen",
@@ -555,19 +555,19 @@
   },
   {
     "rank": 13,
-    "city": "Hannover",
-    "slug": "hannover",
-    "state": "Niedersachsen",
-    "population": 548186,
+    "city": "Nürnberg",
+    "slug": "nuernberg",
+    "state": "Bayern",
+    "population": 529508,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 14,
-    "city": "Nürnberg",
-    "slug": "nuernberg",
-    "state": "Bayern",
-    "population": 523026,
+    "city": "Hannover",
+    "slug": "hannover",
+    "state": "Niedersachsen",
+    "population": 522131,
     "official": [],
     "plan": "osm"
   },
@@ -576,7 +576,7 @@
     "city": "Duisburg",
     "slug": "duisburg",
     "state": "Nordrhein-Westfalen",
-    "population": 500319,
+    "population": 502270,
     "official": [],
     "plan": "osm"
   },
@@ -585,7 +585,7 @@
     "city": "Bochum",
     "slug": "bochum",
     "state": "Nordrhein-Westfalen",
-    "population": 365587,
+    "population": 358676,
     "official": [
       {
         "title": "Bochum - Behindertenparkplätze",
@@ -618,7 +618,7 @@
     "city": "Wuppertal",
     "slug": "wuppertal",
     "state": "Nordrhein-Westfalen",
-    "population": 358876,
+    "population": 358193,
     "official": [],
     "plan": "osm"
   },
@@ -627,7 +627,7 @@
     "city": "Bielefeld",
     "slug": "bielefeld",
     "state": "Nordrhein-Westfalen",
-    "population": 341755,
+    "population": 331605,
     "official": [
       {
         "title": "Schwerbehindertenparkplätze",
@@ -698,34 +698,25 @@
     "city": "Bonn",
     "slug": "bonn",
     "state": "Nordrhein-Westfalen",
-    "population": 336465,
+    "population": 323336,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 20,
-    "city": "Münster",
-    "slug": "muenster",
-    "state": "Nordrhein-Westfalen",
-    "population": 320979,
+    "city": "Mannheim",
+    "slug": "mannheim",
+    "state": "Baden-Württemberg",
+    "population": 318035,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 21,
-    "city": "Mannheim",
-    "slug": "mannheim",
-    "state": "Baden-Württemberg",
-    "population": 319953,
-    "official": [],
-    "plan": "osm"
-  },
-  {
-    "rank": 22,
     "city": "Karlsruhe",
     "slug": "karlsruhe",
     "state": "Baden-Württemberg",
-    "population": 309999,
+    "population": 309050,
     "official": [
       {
         "title": "Points of Interest - Parken und Autoservices",
@@ -798,11 +789,20 @@
     "plan": "official"
   },
   {
+    "rank": 22,
+    "city": "Münster",
+    "slug": "muenster",
+    "state": "Nordrhein-Westfalen",
+    "population": 308258,
+    "official": [],
+    "plan": "osm"
+  },
+  {
     "rank": 23,
     "city": "Augsburg",
     "slug": "augsburg",
     "state": "Bayern",
-    "population": 302103,
+    "population": 301105,
     "official": [],
     "plan": "osm"
   },
@@ -811,25 +811,16 @@
     "city": "Wiesbaden",
     "slug": "wiesbaden",
     "state": "Hessen",
-    "population": 283083,
+    "population": 288850,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 25,
-    "city": "Mönchengladbach",
-    "slug": "moenchengladbach",
-    "state": "Nordrhein-Westfalen",
-    "population": 262374,
-    "official": [],
-    "plan": "osm"
-  },
-  {
-    "rank": 26,
     "city": "Gelsenkirchen",
     "slug": "gelsenkirchen",
     "state": "Nordrhein-Westfalen",
-    "population": 259105,
+    "population": 267930,
     "official": [
       {
         "title": "Behindertenparkplätze der Stadt Gelsenkirchen",
@@ -846,20 +837,50 @@
     "plan": "official"
   },
   {
-    "rank": 27,
-    "city": "Braunschweig",
-    "slug": "braunschweig",
-    "state": "Niedersachsen",
-    "population": 252811,
+    "rank": 26,
+    "city": "Mönchengladbach",
+    "slug": "moenchengladbach",
+    "state": "Nordrhein-Westfalen",
+    "population": 267213,
     "official": [],
     "plan": "osm"
   },
   {
+    "rank": 27,
+    "city": "Aachen",
+    "slug": "aachen",
+    "state": "Nordrhein-Westfalen",
+    "population": 262670,
+    "official": [
+      {
+        "title": "Bewohnerparkzonen Stadt Aachen",
+        "govdata": "https://www.govdata.de/suche/daten/bewohnerparkzonen-stadt-aachen3fdf7",
+        "license": "nicht angegeben",
+        "resources": [
+          {
+            "format": "WFS",
+            "url": "https://geoserver.aachen.de/opendata/bewohnerparkzonen/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=bewohnerparkzonen:bewohnerparkzonen&maxFeatures=50&outputFormat=SHAPE-ZIP"
+          }
+        ]
+      }
+    ],
+    "plan": "official"
+  },
+  {
     "rank": 28,
+    "city": "Braunschweig",
+    "slug": "braunschweig",
+    "state": "Niedersachsen",
+    "population": 252962,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 29,
     "city": "Kiel",
     "slug": "kiel",
     "state": "Schleswig-Holstein",
-    "population": 250917,
+    "population": 252668,
     "official": [
       {
         "title": "Bewohnerparken Kiel",
@@ -903,11 +924,11 @@
     "plan": "official"
   },
   {
-    "rank": 29,
+    "rank": 30,
     "city": "Chemnitz",
     "slug": "chemnitz",
     "state": "Sachsen",
-    "population": 249237,
+    "population": 245618,
     "official": [
       {
         "title": "Parkplätze Wohnmobil",
@@ -959,50 +980,20 @@
     "plan": "official"
   },
   {
-    "rank": 30,
-    "city": "Aachen",
-    "slug": "aachen",
-    "state": "Nordrhein-Westfalen",
-    "population": 249070,
-    "official": [
-      {
-        "title": "Bewohnerparkzonen Stadt Aachen",
-        "govdata": "https://www.govdata.de/suche/daten/bewohnerparkzonen-stadt-aachen3fdf7",
-        "license": "nicht angegeben",
-        "resources": [
-          {
-            "format": "WFS",
-            "url": "https://geoserver.aachen.de/opendata/bewohnerparkzonen/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=bewohnerparkzonen:bewohnerparkzonen&maxFeatures=50&outputFormat=SHAPE-ZIP"
-          }
-        ]
-      }
-    ],
-    "plan": "official"
-  },
-  {
     "rank": 31,
-    "city": "Halle (Saale)",
-    "slug": "halle",
+    "city": "Magdeburg",
+    "slug": "magdeburg",
     "state": "Sachsen-Anhalt",
-    "population": 242083,
+    "population": 244329,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 32,
-    "city": "Magdeburg",
-    "slug": "magdeburg",
-    "state": "Sachsen-Anhalt",
-    "population": 239364,
-    "official": [],
-    "plan": "osm"
-  },
-  {
-    "rank": 33,
     "city": "Freiburg im Breisgau",
     "slug": "freiburg",
     "state": "Baden-Württemberg",
-    "population": 236140,
+    "population": 237460,
     "official": [
       {
         "title": "Behindertenparkplätze in Freiburg i. Br.",
@@ -1137,11 +1128,11 @@
     "plan": "official"
   },
   {
-    "rank": 34,
+    "rank": 33,
     "city": "Krefeld",
     "slug": "krefeld",
     "state": "Nordrhein-Westfalen",
-    "population": 230103,
+    "population": 231406,
     "official": [
       {
         "title": "Bewohnerparken Krefeld",
@@ -1162,29 +1153,38 @@
     "plan": "official"
   },
   {
+    "rank": 34,
+    "city": "Halle (Saale)",
+    "slug": "halle",
+    "state": "Sachsen-Anhalt",
+    "population": 226767,
+    "official": [],
+    "plan": "osm"
+  },
+  {
     "rank": 35,
     "city": "Mainz",
     "slug": "mainz",
     "state": "Rheinland-Pfalz",
-    "population": 220085,
+    "population": 224684,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 36,
-    "city": "Lübeck",
-    "slug": "luebeck",
-    "state": "Schleswig-Holstein",
-    "population": 218095,
+    "city": "Erfurt",
+    "slug": "erfurt",
+    "state": "Thüringen",
+    "population": 218793,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 37,
-    "city": "Erfurt",
-    "slug": "erfurt",
-    "state": "Thüringen",
-    "population": 214969,
+    "city": "Lübeck",
+    "slug": "luebeck",
+    "state": "Schleswig-Holstein",
+    "population": 216889,
     "official": [],
     "plan": "osm"
   },
@@ -1193,7 +1193,7 @@
     "city": "Oberhausen",
     "slug": "oberhausen",
     "state": "Nordrhein-Westfalen",
-    "population": 210829,
+    "population": 213646,
     "official": [],
     "plan": "osm"
   },
@@ -1202,7 +1202,7 @@
     "city": "Rostock",
     "slug": "rostock",
     "state": "Mecklenburg-Vorpommern",
-    "population": 209920,
+    "population": 205307,
     "official": [
       {
         "title": "Rostocker Heide",
@@ -1395,7 +1395,7 @@
     "city": "Kassel",
     "slug": "kassel",
     "state": "Hessen",
-    "population": 204202,
+    "population": 197230,
     "official": [],
     "plan": "osm"
   },
@@ -1404,7 +1404,7 @@
     "city": "Hagen",
     "slug": "hagen",
     "state": "Nordrhein-Westfalen",
-    "population": 188814,
+    "population": 190384,
     "official": [],
     "plan": "osm"
   },
@@ -1413,7 +1413,7 @@
     "city": "Potsdam",
     "slug": "potsdam",
     "state": "Brandenburg",
-    "population": 187119,
+    "population": 184754,
     "official": [],
     "plan": "osm"
   },
@@ -1422,7 +1422,7 @@
     "city": "Saarbrücken",
     "slug": "saarbruecken",
     "state": "Saarland",
-    "population": 181959,
+    "population": 182971,
     "official": [],
     "plan": "osm"
   },
@@ -1431,25 +1431,25 @@
     "city": "Hamm",
     "slug": "hamm",
     "state": "Nordrhein-Westfalen",
-    "population": 179916,
+    "population": 179968,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 45,
-    "city": "Oldenburg",
-    "slug": "oldenburg",
-    "state": "Niedersachsen",
-    "population": 177055,
+    "city": "Ludwigshafen am Rhein",
+    "slug": "ludwigshafen",
+    "state": "Rheinland-Pfalz",
+    "population": 177222,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 46,
-    "city": "Ludwigshafen am Rhein",
-    "slug": "ludwigshafen",
-    "state": "Rheinland-Pfalz",
-    "population": 173353,
+    "city": "Oldenburg (Oldb)",
+    "slug": "oldenburg",
+    "state": "Niedersachsen",
+    "population": 176614,
     "official": [],
     "plan": "osm"
   },
@@ -1458,34 +1458,70 @@
     "city": "Mülheim an der Ruhr",
     "slug": "muelheim",
     "state": "Nordrhein-Westfalen",
-    "population": 172124,
+    "population": 173050,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 48,
-    "city": "Osnabrück",
-    "slug": "osnabrueck",
-    "state": "Niedersachsen",
-    "population": 168145,
+    "city": "Leverkusen",
+    "slug": "leverkusen",
+    "state": "Nordrhein-Westfalen",
+    "population": 168581,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 49,
-    "city": "Leverkusen",
-    "slug": "leverkusen",
-    "state": "Nordrhein-Westfalen",
-    "population": 167256,
+    "city": "Darmstadt",
+    "slug": "darmstadt",
+    "state": "Hessen",
+    "population": 167029,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 50,
+    "city": "Osnabrück",
+    "slug": "osnabrueck",
+    "state": "Niedersachsen",
+    "population": 166057,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 51,
+    "city": "Solingen",
+    "slug": "solingen",
+    "state": "Nordrhein-Westfalen",
+    "population": 165626,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 52,
+    "city": "Paderborn",
+    "slug": "paderborn",
+    "state": "Nordrhein-Westfalen",
+    "population": 156378,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 53,
+    "city": "Herne",
+    "slug": "herne",
+    "state": "Nordrhein-Westfalen",
+    "population": 155851,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 54,
     "city": "Heidelberg",
     "slug": "heidelberg",
     "state": "Baden-Württemberg",
-    "population": 162273,
+    "population": 155756,
     "official": [
       {
         "title": "Behindertenparkplätze in Heidelberg",
@@ -1502,56 +1538,11 @@
     "plan": "official"
   },
   {
-    "rank": 51,
-    "city": "Darmstadt",
-    "slug": "darmstadt",
-    "state": "Hessen",
-    "population": 162243,
-    "official": [],
-    "plan": "osm"
-  },
-  {
-    "rank": 52,
-    "city": "Solingen",
-    "slug": "solingen",
-    "state": "Nordrhein-Westfalen",
-    "population": 160824,
-    "official": [],
-    "plan": "osm"
-  },
-  {
-    "rank": 53,
-    "city": "Herne",
-    "slug": "herne",
-    "state": "Nordrhein-Westfalen",
-    "population": 156449,
-    "official": [],
-    "plan": "osm"
-  },
-  {
-    "rank": 54,
-    "city": "Regensburg",
-    "slug": "regensburg",
-    "state": "Bayern",
-    "population": 156200,
-    "official": [],
-    "plan": "osm"
-  },
-  {
     "rank": 55,
-    "city": "Paderborn",
-    "slug": "paderborn",
-    "state": "Nordrhein-Westfalen",
-    "population": 155300,
-    "official": [],
-    "plan": "osm"
-  },
-  {
-    "rank": 56,
     "city": "Neuss",
     "slug": "neuss",
     "state": "Nordrhein-Westfalen",
-    "population": 154955,
+    "population": 154317,
     "official": [
       {
         "title": "Stadt Neuss: Behindertenparkplätze",
@@ -1592,38 +1583,74 @@
     "plan": "official"
   },
   {
+    "rank": 56,
+    "city": "Regensburg",
+    "slug": "regensburg",
+    "state": "Bayern",
+    "population": 151389,
+    "official": [],
+    "plan": "osm"
+  },
+  {
     "rank": 57,
     "city": "Ingolstadt",
     "slug": "ingolstadt",
     "state": "Bayern",
-    "population": 143100,
+    "population": 141185,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 58,
-    "city": "Offenbach am Main",
-    "slug": "offenbach",
-    "state": "Hessen",
-    "population": 142000,
+    "city": "Pforzheim",
+    "slug": "pforzheim",
+    "state": "Baden-Württemberg",
+    "population": 134912,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 59,
-    "city": "Fürth",
-    "slug": "fuerth",
+    "city": "Würzburg",
+    "slug": "wuerzburg",
     "state": "Bayern",
-    "population": 131000,
+    "population": 133258,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 60,
+    "city": "Offenbach am Main",
+    "slug": "offenbach",
+    "state": "Hessen",
+    "population": 132746,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 61,
+    "city": "Fürth",
+    "slug": "fuerth",
+    "state": "Bayern",
+    "population": 132036,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 62,
+    "city": "Heilbronn",
+    "slug": "heilbronn",
+    "state": "Baden-Württemberg",
+    "population": 131986,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 63,
     "city": "Ulm",
     "slug": "ulm",
     "state": "Baden-Württemberg",
-    "population": 129000,
+    "population": 129882,
     "official": [
       {
         "title": "Behindertenparkplätze Ulm",
@@ -1640,38 +1667,11 @@
     "plan": "official"
   },
   {
-    "rank": 61,
-    "city": "Heilbronn",
-    "slug": "heilbronn",
-    "state": "Baden-Württemberg",
-    "population": 128600,
-    "official": [],
-    "plan": "osm"
-  },
-  {
-    "rank": 62,
-    "city": "Pforzheim",
-    "slug": "pforzheim",
-    "state": "Baden-Württemberg",
-    "population": 128200,
-    "official": [],
-    "plan": "osm"
-  },
-  {
-    "rank": 63,
+    "rank": 64,
     "city": "Wolfsburg",
     "slug": "wolfsburg",
     "state": "Niedersachsen",
-    "population": 128000,
-    "official": [],
-    "plan": "osm"
-  },
-  {
-    "rank": 64,
-    "city": "Würzburg",
-    "slug": "wuerzburg",
-    "state": "Bayern",
-    "population": 127900,
+    "population": 129560,
     "official": [],
     "plan": "osm"
   },
@@ -1680,7 +1680,7 @@
     "city": "Göttingen",
     "slug": "goettingen",
     "state": "Niedersachsen",
-    "population": 121000,
+    "population": 127259,
     "official": [],
     "plan": "osm"
   },
@@ -1689,16 +1689,25 @@
     "city": "Reutlingen",
     "slug": "reutlingen",
     "state": "Baden-Württemberg",
-    "population": 118000,
+    "population": 118852,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 67,
+    "city": "Bremerhaven",
+    "slug": "bremerhaven",
+    "state": "Bremen",
+    "population": 118610,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 68,
     "city": "Bottrop",
     "slug": "bottrop",
     "state": "Nordrhein-Westfalen",
-    "population": 117400,
+    "population": 118535,
     "official": [
       {
         "title": "Behindertenparkplätze in Bottrop",
@@ -1761,47 +1770,38 @@
     "plan": "official"
   },
   {
-    "rank": 68,
+    "rank": 69,
     "city": "Erlangen",
     "slug": "erlangen",
     "state": "Bayern",
-    "population": 116300,
-    "official": [],
-    "plan": "osm"
-  },
-  {
-    "rank": 69,
-    "city": "Remscheid",
-    "slug": "remscheid",
-    "state": "Nordrhein-Westfalen",
-    "population": 116000,
+    "population": 115928,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 70,
-    "city": "Koblenz",
-    "slug": "koblenz",
-    "state": "Rheinland-Pfalz",
-    "population": 115000,
+    "city": "Recklinghausen",
+    "slug": "recklinghausen",
+    "state": "Nordrhein-Westfalen",
+    "population": 115344,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 71,
-    "city": "Bremerhaven",
-    "slug": "bremerhaven",
-    "state": "Bremen",
-    "population": 113600,
+    "city": "Remscheid",
+    "slug": "remscheid",
+    "state": "Nordrhein-Westfalen",
+    "population": 113828,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 72,
-    "city": "Recklinghausen",
-    "slug": "recklinghausen",
-    "state": "Nordrhein-Westfalen",
-    "population": 112600,
+    "city": "Koblenz",
+    "slug": "koblenz",
+    "state": "Rheinland-Pfalz",
+    "population": 113378,
     "official": [],
     "plan": "osm"
   },
@@ -1810,52 +1810,52 @@
     "city": "Bergisch Gladbach",
     "slug": "bergisch-gladbach",
     "state": "Nordrhein-Westfalen",
-    "population": 112000,
+    "population": 111361,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 74,
-    "city": "Trier",
-    "slug": "trier",
-    "state": "Rheinland-Pfalz",
-    "population": 111500,
+    "city": "Jena",
+    "slug": "jena",
+    "state": "Thüringen",
+    "population": 109725,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 75,
-    "city": "Jena",
-    "slug": "jena",
-    "state": "Thüringen",
-    "population": 111300,
+    "city": "Salzgitter",
+    "slug": "salzgitter",
+    "state": "Niedersachsen",
+    "population": 104970,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 76,
-    "city": "Salzgitter",
-    "slug": "salzgitter",
-    "state": "Niedersachsen",
-    "population": 105500,
+    "city": "Trier",
+    "slug": "trier",
+    "state": "Rheinland-Pfalz",
+    "population": 104342,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 77,
-    "city": "Moers",
-    "slug": "moers",
+    "city": "Siegen",
+    "slug": "siegen",
     "state": "Nordrhein-Westfalen",
-    "population": 104500,
+    "population": 102685,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 78,
-    "city": "Siegen",
-    "slug": "siegen",
+    "city": "Moers",
+    "slug": "moers",
     "state": "Nordrhein-Westfalen",
-    "population": 103000,
+    "population": 101503,
     "official": [],
     "plan": "osm"
   },
@@ -1864,178 +1864,178 @@
     "city": "Gütersloh",
     "slug": "guetersloh",
     "state": "Nordrhein-Westfalen",
-    "population": 102000,
+    "population": 100479,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 80,
-    "city": "Hildesheim",
-    "slug": "hildesheim",
-    "state": "Niedersachsen",
-    "population": 101000,
+    "city": "Kaiserslautern",
+    "slug": "kaiserslautern",
+    "state": "Rheinland-Pfalz",
+    "population": 100426,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 81,
-    "city": "Hanau",
-    "slug": "hanau",
-    "state": "Hessen",
-    "population": 100800,
+    "city": "Hildesheim",
+    "slug": "hildesheim",
+    "state": "Niedersachsen",
+    "population": 98510,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 82,
-    "city": "Kaiserslautern",
-    "slug": "kaiserslautern",
-    "state": "Rheinland-Pfalz",
-    "population": 100600,
+    "city": "Schwerin",
+    "slug": "schwerin",
+    "state": "Mecklenburg-Vorpommern",
+    "population": 98308,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 83,
-    "city": "Cottbus",
-    "slug": "cottbus",
-    "state": "Brandenburg",
-    "population": 98000,
+    "city": "Hanau",
+    "slug": "hanau",
+    "state": "Hessen",
+    "population": 97956,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 84,
-    "city": "Witten",
-    "slug": "witten",
-    "state": "Nordrhein-Westfalen",
-    "population": 96000,
+    "city": "Flensburg",
+    "slug": "flensburg",
+    "state": "Schleswig-Holstein",
+    "population": 96326,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 85,
-    "city": "Schwerin",
-    "slug": "schwerin",
-    "state": "Mecklenburg-Vorpommern",
-    "population": 96000,
+    "city": "Esslingen am Neckar",
+    "slug": "esslingen",
+    "state": "Baden-Württemberg",
+    "population": 96182,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 86,
-    "city": "Ludwigsburg",
-    "slug": "ludwigsburg",
-    "state": "Baden-Württemberg",
-    "population": 94000,
+    "city": "Gera",
+    "slug": "gera",
+    "state": "Thüringen",
+    "population": 95608,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 87,
-    "city": "Esslingen am Neckar",
-    "slug": "esslingen",
-    "state": "Baden-Württemberg",
-    "population": 93500,
+    "city": "Cottbus",
+    "slug": "cottbus",
+    "state": "Brandenburg",
+    "population": 95123,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 88,
-    "city": "Gießen",
-    "slug": "giessen",
-    "state": "Hessen",
-    "population": 92900,
+    "city": "Düren",
+    "slug": "dueren",
+    "state": "Nordrhein-Westfalen",
+    "population": 94568,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 89,
-    "city": "Iserlohn",
-    "slug": "iserlohn",
-    "state": "Nordrhein-Westfalen",
-    "population": 92400,
+    "city": "Ludwigsburg",
+    "slug": "ludwigsburg",
+    "state": "Baden-Württemberg",
+    "population": 92858,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 90,
-    "city": "Düren",
-    "slug": "dueren",
-    "state": "Nordrhein-Westfalen",
-    "population": 92200,
+    "city": "Tübingen",
+    "slug": "tuebingen",
+    "state": "Baden-Württemberg",
+    "population": 92322,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 91,
-    "city": "Flensburg",
-    "slug": "flensburg",
-    "state": "Schleswig-Holstein",
-    "population": 92000,
+    "city": "Iserlohn",
+    "slug": "iserlohn",
+    "state": "Nordrhein-Westfalen",
+    "population": 91811,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 92,
-    "city": "Gera",
-    "slug": "gera",
-    "state": "Thüringen",
-    "population": 91800,
+    "city": "Witten",
+    "slug": "witten",
+    "state": "Nordrhein-Westfalen",
+    "population": 91808,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 93,
-    "city": "Tübingen",
-    "slug": "tuebingen",
+    "city": "Villingen-Schwenningen",
+    "slug": "villingen-schwenningen",
     "state": "Baden-Württemberg",
-    "population": 91000,
+    "population": 89756,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 94,
-    "city": "Zwickau",
-    "slug": "zwickau",
-    "state": "Sachsen",
-    "population": 87200,
+    "city": "Ratingen",
+    "slug": "ratingen",
+    "state": "Nordrhein-Westfalen",
+    "population": 89368,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 95,
-    "city": "Ratingen",
-    "slug": "ratingen",
-    "state": "Nordrhein-Westfalen",
-    "population": 87000,
+    "city": "Gießen",
+    "slug": "giessen",
+    "state": "Hessen",
+    "population": 89179,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 96,
-    "city": "Villingen-Schwenningen",
-    "slug": "villingen-schwenningen",
-    "state": "Baden-Württemberg",
-    "population": 86300,
+    "city": "Zwickau",
+    "slug": "zwickau",
+    "state": "Sachsen",
+    "population": 87410,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 97,
-    "city": "Lünen",
-    "slug": "luenen",
-    "state": "Nordrhein-Westfalen",
-    "population": 86000,
+    "city": "Konstanz",
+    "slug": "konstanz",
+    "state": "Baden-Württemberg",
+    "population": 86919,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 98,
-    "city": "Konstanz",
-    "slug": "konstanz",
-    "state": "Baden-Württemberg",
-    "population": 85000,
+    "city": "Marl",
+    "slug": "marl",
+    "state": "Nordrhein-Westfalen",
+    "population": 86766,
     "official": [],
     "plan": "osm"
   },
@@ -2044,16 +2044,16 @@
     "city": "Worms",
     "slug": "worms",
     "state": "Rheinland-Pfalz",
-    "population": 84000,
+    "population": 86753,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 100,
-    "city": "Marl",
-    "slug": "marl",
+    "city": "Lünen",
+    "slug": "luenen",
     "state": "Nordrhein-Westfalen",
-    "population": 83500,
+    "population": 86163,
     "official": [],
     "plan": "osm"
   },
@@ -2062,34 +2062,16 @@
     "city": "Minden",
     "slug": "minden",
     "state": "Nordrhein-Westfalen",
-    "population": 82000,
+    "population": 84013,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 102,
-    "city": "Velbert",
-    "slug": "velbert",
-    "state": "Nordrhein-Westfalen",
-    "population": 81000,
-    "official": [],
-    "plan": "osm"
-  },
-  {
-    "rank": 103,
-    "city": "Neumünster",
-    "slug": "neumuenster",
-    "state": "Schleswig-Holstein",
-    "population": 80500,
-    "official": [],
-    "plan": "osm"
-  },
-  {
-    "rank": 104,
     "city": "Norderstedt",
     "slug": "norderstedt",
     "state": "Schleswig-Holstein",
-    "population": 80000,
+    "population": 82844,
     "official": [
       {
         "title": "Parkplätze",
@@ -2122,56 +2104,38 @@
     "plan": "official"
   },
   {
+    "rank": 103,
+    "city": "Velbert",
+    "slug": "velbert",
+    "state": "Nordrhein-Westfalen",
+    "population": 82463,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 104,
+    "city": "Delmenhorst",
+    "slug": "delmenhorst",
+    "state": "Niedersachsen",
+    "population": 81406,
+    "official": [],
+    "plan": "osm"
+  },
+  {
     "rank": 105,
-    "city": "Dessau-Roßlau",
-    "slug": "dessau-rosslau",
-    "state": "Sachsen-Anhalt",
-    "population": 78500,
+    "city": "Neumünster",
+    "slug": "neumuenster",
+    "state": "Schleswig-Holstein",
+    "population": 79809,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 106,
-    "city": "Lüneburg",
-    "slug": "lueneburg",
-    "state": "Niedersachsen",
-    "population": 78000,
-    "official": [],
-    "plan": "osm"
-  },
-  {
-    "rank": 107,
-    "city": "Delmenhorst",
-    "slug": "delmenhorst",
-    "state": "Niedersachsen",
-    "population": 77500,
-    "official": [],
-    "plan": "osm"
-  },
-  {
-    "rank": 108,
-    "city": "Bamberg",
-    "slug": "bamberg",
-    "state": "Bayern",
-    "population": 77200,
-    "official": [],
-    "plan": "osm"
-  },
-  {
-    "rank": 109,
-    "city": "Marburg",
-    "slug": "marburg",
-    "state": "Hessen",
-    "population": 77000,
-    "official": [],
-    "plan": "osm"
-  },
-  {
-    "rank": 110,
     "city": "Viersen",
     "slug": "viersen",
     "state": "Nordrhein-Westfalen",
-    "population": 76800,
+    "population": 78373,
     "official": [
       {
         "title": "Wesentliche Parkplätze Radverkehr Kreis Viersen",
@@ -2212,47 +2176,83 @@
     "plan": "official"
   },
   {
-    "rank": 111,
+    "rank": 107,
     "city": "Rheine",
     "slug": "rheine",
     "state": "Nordrhein-Westfalen",
-    "population": 76000,
+    "population": 77209,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 108,
+    "city": "Bamberg",
+    "slug": "bamberg",
+    "state": "Bayern",
+    "population": 77150,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 109,
+    "city": "Troisdorf",
+    "slug": "troisdorf",
+    "state": "Nordrhein-Westfalen",
+    "population": 75901,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 110,
+    "city": "Wilhelmshaven",
+    "slug": "wilhelmshaven",
+    "state": "Niedersachsen",
+    "population": 75745,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 111,
+    "city": "Gladbeck",
+    "slug": "gladbeck",
+    "state": "Nordrhein-Westfalen",
+    "population": 75499,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 112,
-    "city": "Gladbeck",
-    "slug": "gladbeck",
-    "state": "Nordrhein-Westfalen",
-    "population": 75500,
+    "city": "Dessau-Roßlau",
+    "slug": "dessau-rosslau",
+    "state": "Sachsen-Anhalt",
+    "population": 75402,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 113,
-    "city": "Troisdorf",
-    "slug": "troisdorf",
+    "city": "Dorsten",
+    "slug": "dorsten",
     "state": "Nordrhein-Westfalen",
-    "population": 75000,
+    "population": 75277,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 114,
-    "city": "Bayreuth",
-    "slug": "bayreuth",
-    "state": "Bayern",
-    "population": 74800,
+    "city": "Arnsberg",
+    "slug": "arnsberg",
+    "state": "Nordrhein-Westfalen",
+    "population": 74879,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 115,
-    "city": "Dorsten",
-    "slug": "dorsten",
-    "state": "Nordrhein-Westfalen",
-    "population": 74500,
+    "city": "Lüneburg",
+    "slug": "lueneburg",
+    "state": "Niedersachsen",
+    "population": 74785,
     "official": [],
     "plan": "osm"
   },
@@ -2261,88 +2261,88 @@
     "city": "Detmold",
     "slug": "detmold",
     "state": "Nordrhein-Westfalen",
-    "population": 74000,
+    "population": 74278,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 117,
-    "city": "Landshut",
-    "slug": "landshut",
-    "state": "Bayern",
-    "population": 73500,
+    "city": "Brandenburg an der Havel",
+    "slug": "brandenburg-havel",
+    "state": "Brandenburg",
+    "population": 74113,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 118,
-    "city": "Castrop-Rauxel",
-    "slug": "castrop-rauxel",
-    "state": "Nordrhein-Westfalen",
-    "population": 73000,
+    "city": "Marburg",
+    "slug": "marburg",
+    "state": "Hessen",
+    "population": 73544,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 119,
-    "city": "Lüdenscheid",
-    "slug": "luedenscheid",
+    "city": "Castrop-Rauxel",
+    "slug": "castrop-rauxel",
     "state": "Nordrhein-Westfalen",
-    "population": 72500,
+    "population": 73282,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 120,
-    "city": "Arnsberg",
-    "slug": "arnsberg",
+    "city": "Bocholt",
+    "slug": "bocholt",
     "state": "Nordrhein-Westfalen",
-    "population": 72200,
+    "population": 73257,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 121,
-    "city": "Brandenburg an der Havel",
-    "slug": "brandenburg-havel",
-    "state": "Brandenburg",
-    "population": 72000,
+    "city": "Aschaffenburg",
+    "slug": "aschaffenburg",
+    "state": "Bayern",
+    "population": 73091,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 122,
-    "city": "Aschaffenburg",
-    "slug": "aschaffenburg",
+    "city": "Bayreuth",
+    "slug": "bayreuth",
     "state": "Bayern",
-    "population": 71500,
+    "population": 72940,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 123,
-    "city": "Bocholt",
-    "slug": "bocholt",
-    "state": "Nordrhein-Westfalen",
-    "population": 71000,
+    "city": "Landshut",
+    "slug": "landshut",
+    "state": "Bayern",
+    "population": 71863,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 124,
-    "city": "Celle",
-    "slug": "celle",
-    "state": "Niedersachsen",
-    "population": 70000,
+    "city": "Lüdenscheid",
+    "slug": "luedenscheid",
+    "state": "Nordrhein-Westfalen",
+    "population": 71212,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 125,
-    "city": "Fulda",
-    "slug": "fulda",
-    "state": "Hessen",
-    "population": 69000,
+    "city": "Lippstadt",
+    "slug": "lippstadt",
+    "state": "Nordrhein-Westfalen",
+    "population": 68739,
     "official": [],
     "plan": "osm"
   },
@@ -2351,7 +2351,7 @@
     "city": "Kempten (Allgäu)",
     "slug": "kempten",
     "state": "Bayern",
-    "population": 68900,
+    "population": 67645,
     "official": [],
     "plan": "osm"
   },
@@ -2360,61 +2360,61 @@
     "city": "Aalen",
     "slug": "aalen",
     "state": "Baden-Württemberg",
-    "population": 68500,
+    "population": 67621,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 128,
-    "city": "Lippstadt",
-    "slug": "lippstadt",
+    "city": "Herford",
+    "slug": "herford",
     "state": "Nordrhein-Westfalen",
-    "population": 68000,
+    "population": 67503,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 129,
-    "city": "Dinslaken",
-    "slug": "dinslaken",
-    "state": "Nordrhein-Westfalen",
-    "population": 67500,
+    "city": "Neuwied",
+    "slug": "neuwied",
+    "state": "Rheinland-Pfalz",
+    "population": 67083,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 130,
-    "city": "Herford",
-    "slug": "herford",
+    "city": "Dinslaken",
+    "slug": "dinslaken",
     "state": "Nordrhein-Westfalen",
-    "population": 67000,
+    "population": 66993,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 131,
-    "city": "Kerpen",
-    "slug": "kerpen",
-    "state": "Nordrhein-Westfalen",
-    "population": 66500,
+    "city": "Celle",
+    "slug": "celle",
+    "state": "Niedersachsen",
+    "population": 66834,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 132,
-    "city": "Rüsselsheim am Main",
-    "slug": "ruesselsheim",
-    "state": "Hessen",
-    "population": 66000,
+    "city": "Kerpen",
+    "slug": "kerpen",
+    "state": "Nordrhein-Westfalen",
+    "population": 66585,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 133,
-    "city": "Neuwied",
-    "slug": "neuwied",
-    "state": "Rheinland-Pfalz",
-    "population": 65500,
+    "city": "Grevenbroich",
+    "slug": "grevenbroich",
+    "state": "Nordrhein-Westfalen",
+    "population": 65983,
     "official": [],
     "plan": "osm"
   },
@@ -2423,187 +2423,187 @@
     "city": "Weimar",
     "slug": "weimar",
     "state": "Thüringen",
-    "population": 65200,
+    "population": 65954,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 135,
-    "city": "Sindelfingen",
-    "slug": "sindelfingen",
-    "state": "Baden-Württemberg",
-    "population": 65000,
+    "city": "Rüsselsheim am Main",
+    "slug": "ruesselsheim",
+    "state": "Hessen",
+    "population": 65627,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 136,
-    "city": "Rosenheim",
-    "slug": "rosenheim",
-    "state": "Bayern",
-    "population": 64500,
+    "city": "Plauen",
+    "slug": "plauen",
+    "state": "Sachsen",
+    "population": 65599,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 137,
-    "city": "Plauen",
-    "slug": "plauen",
-    "state": "Sachsen",
-    "population": 64000,
+    "city": "Fulda",
+    "slug": "fulda",
+    "state": "Hessen",
+    "population": 65434,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 138,
-    "city": "Grevenbroich",
-    "slug": "grevenbroich",
-    "state": "Nordrhein-Westfalen",
-    "population": 63500,
+    "city": "Rosenheim",
+    "slug": "rosenheim",
+    "state": "Bayern",
+    "population": 65274,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 139,
-    "city": "Neubrandenburg",
-    "slug": "neubrandenburg",
-    "state": "Mecklenburg-Vorpommern",
-    "population": 63000,
+    "city": "Schwäbisch Gmünd",
+    "slug": "schwaebisch-gmuend",
+    "state": "Baden-Württemberg",
+    "population": 64416,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 140,
-    "city": "Friedrichshafen",
-    "slug": "friedrichshafen",
-    "state": "Baden-Württemberg",
-    "population": 62500,
+    "city": "Dormagen",
+    "slug": "dormagen",
+    "state": "Nordrhein-Westfalen",
+    "population": 63799,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 141,
-    "city": "Garbsen",
-    "slug": "garbsen",
-    "state": "Niedersachsen",
-    "population": 62200,
+    "city": "Offenburg",
+    "slug": "offenburg",
+    "state": "Baden-Württemberg",
+    "population": 62993,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 142,
-    "city": "Bergheim",
-    "slug": "bergheim",
-    "state": "Nordrhein-Westfalen",
-    "population": 62000,
+    "city": "Friedrichshafen",
+    "slug": "friedrichshafen",
+    "state": "Baden-Württemberg",
+    "population": 62796,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 143,
-    "city": "Hürth",
-    "slug": "huerth",
-    "state": "Nordrhein-Westfalen",
-    "population": 61500,
+    "city": "Neu-Ulm",
+    "slug": "neu-ulm",
+    "state": "Bayern",
+    "population": 62641,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 144,
-    "city": "Schwäbisch Gmünd",
-    "slug": "schwaebisch-gmuend",
-    "state": "Baden-Württemberg",
-    "population": 61000,
+    "city": "Hürth",
+    "slug": "huerth",
+    "state": "Nordrhein-Westfalen",
+    "population": 62160,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 145,
-    "city": "Offenburg",
-    "slug": "offenburg",
-    "state": "Baden-Württemberg",
-    "population": 60500,
+    "city": "Bergheim",
+    "slug": "bergheim",
+    "state": "Nordrhein-Westfalen",
+    "population": 61611,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 146,
-    "city": "Greifswald",
-    "slug": "greifswald",
-    "state": "Mecklenburg-Vorpommern",
-    "population": 60000,
+    "city": "Sindelfingen",
+    "slug": "sindelfingen",
+    "state": "Baden-Württemberg",
+    "population": 61422,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 147,
-    "city": "Wesel",
-    "slug": "wesel",
+    "city": "Herten",
+    "slug": "herten",
     "state": "Nordrhein-Westfalen",
-    "population": 59800,
+    "population": 60941,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 148,
-    "city": "Göppingen",
-    "slug": "goeppingen",
-    "state": "Baden-Württemberg",
-    "population": 59500,
+    "city": "Wesel",
+    "slug": "wesel",
+    "state": "Nordrhein-Westfalen",
+    "population": 60785,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 149,
-    "city": "Neu-Ulm",
-    "slug": "neu-ulm",
-    "state": "Bayern",
-    "population": 59200,
+    "city": "Neubrandenburg",
+    "slug": "neubrandenburg",
+    "state": "Mecklenburg-Vorpommern",
+    "population": 60344,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 150,
-    "city": "Stralsund",
-    "slug": "stralsund",
-    "state": "Mecklenburg-Vorpommern",
-    "population": 59000,
+    "city": "Euskirchen",
+    "slug": "euskirchen",
+    "state": "Nordrhein-Westfalen",
+    "population": 60021,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 151,
-    "city": "Langenfeld (Rheinland)",
+    "city": "Langenfeld (Rhld.)",
     "slug": "langenfeld",
     "state": "Nordrhein-Westfalen",
-    "population": 58800,
+    "population": 59975,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 152,
-    "city": "Unna",
-    "slug": "unna",
-    "state": "Nordrhein-Westfalen",
-    "population": 58500,
+    "city": "Garbsen",
+    "slug": "garbsen",
+    "state": "Niedersachsen",
+    "population": 59903,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 153,
-    "city": "Lingen (Ems)",
-    "slug": "lingen",
-    "state": "Niedersachsen",
-    "population": 58200,
+    "city": "Göppingen",
+    "slug": "goeppingen",
+    "state": "Baden-Württemberg",
+    "population": 58937,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 154,
-    "city": "Euskirchen",
-    "slug": "euskirchen",
+    "city": "Unna",
+    "slug": "unna",
     "state": "Nordrhein-Westfalen",
-    "population": 58000,
+    "population": 58333,
     "official": [],
     "plan": "osm"
   },
@@ -2612,25 +2612,25 @@
     "city": "Hameln",
     "slug": "hameln",
     "state": "Niedersachsen",
-    "population": 57500,
+    "population": 58244,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 156,
-    "city": "Frankfurt (Oder)",
-    "slug": "frankfurt-oder",
-    "state": "Brandenburg",
-    "population": 57000,
+    "city": "Stolberg (Rhld.)",
+    "slug": "stolberg",
+    "state": "Nordrhein-Westfalen",
+    "population": 57684,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 157,
-    "city": "Görlitz",
-    "slug": "goerlitz",
-    "state": "Sachsen",
-    "population": 56500,
+    "city": "Eschweiler",
+    "slug": "eschweiler",
+    "state": "Nordrhein-Westfalen",
+    "population": 57534,
     "official": [],
     "plan": "osm"
   },
@@ -2639,250 +2639,250 @@
     "city": "Waiblingen",
     "slug": "waiblingen",
     "state": "Baden-Württemberg",
-    "population": 56300,
+    "population": 57313,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 159,
-    "city": "Sankt Augustin",
-    "slug": "sankt-augustin",
-    "state": "Nordrhein-Westfalen",
-    "population": 56200,
+    "city": "Frankfurt (Oder)",
+    "slug": "frankfurt-oder",
+    "state": "Brandenburg",
+    "population": 57107,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 160,
-    "city": "Hilden",
-    "slug": "hilden",
+    "city": "Meerbusch",
+    "slug": "meerbusch",
     "state": "Nordrhein-Westfalen",
-    "population": 56100,
+    "population": 57078,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 161,
-    "city": "Eschweiler",
-    "slug": "eschweiler",
-    "state": "Nordrhein-Westfalen",
-    "population": 56000,
+    "city": "Nordhorn",
+    "slug": "nordhorn",
+    "state": "Niedersachsen",
+    "population": 56973,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 162,
-    "city": "Stolberg (Rhld.)",
-    "slug": "stolberg",
-    "state": "Nordrhein-Westfalen",
-    "population": 55900,
+    "city": "Baden-Baden",
+    "slug": "baden-baden",
+    "state": "Baden-Württemberg",
+    "population": 56881,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 163,
-    "city": "Meerbusch",
-    "slug": "meerbusch",
-    "state": "Nordrhein-Westfalen",
-    "population": 55800,
+    "city": "Bad Homburg v.d.Höhe",
+    "slug": "bad-homburg",
+    "state": "Hessen",
+    "population": 56688,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 164,
-    "city": "Baden-Baden",
-    "slug": "baden-baden",
-    "state": "Baden-Württemberg",
-    "population": 55200,
+    "city": "Sankt Augustin",
+    "slug": "sankt-augustin",
+    "state": "Nordrhein-Westfalen",
+    "population": 56521,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 165,
-    "city": "Bad Homburg vor der Höhe",
-    "slug": "bad-homburg",
-    "state": "Hessen",
-    "population": 55000,
+    "city": "Lingen (Ems)",
+    "slug": "lingen",
+    "state": "Niedersachsen",
+    "population": 56498,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 166,
-    "city": "Langenhagen",
-    "slug": "langenhagen",
-    "state": "Niedersachsen",
-    "population": 54800,
+    "city": "Pulheim",
+    "slug": "pulheim",
+    "state": "Nordrhein-Westfalen",
+    "population": 56150,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 167,
-    "city": "Pulheim",
-    "slug": "pulheim",
-    "state": "Nordrhein-Westfalen",
-    "population": 54600,
+    "city": "Greifswald",
+    "slug": "greifswald",
+    "state": "Mecklenburg-Vorpommern",
+    "population": 56092,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 168,
-    "city": "Wetzlar",
-    "slug": "wetzlar",
-    "state": "Hessen",
-    "population": 54000,
+    "city": "Görlitz",
+    "slug": "goerlitz",
+    "state": "Sachsen",
+    "population": 55186,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 169,
-    "city": "Nordhorn",
-    "slug": "nordhorn",
-    "state": "Niedersachsen",
-    "population": 53900,
+    "city": "Hilden",
+    "slug": "hilden",
+    "state": "Nordrhein-Westfalen",
+    "population": 55157,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 170,
-    "city": "Schweinfurt",
-    "slug": "schweinfurt",
-    "state": "Bayern",
-    "population": 53800,
+    "city": "Wetzlar",
+    "slug": "wetzlar",
+    "state": "Hessen",
+    "population": 54665,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 171,
-    "city": "Hattingen",
-    "slug": "hattingen",
-    "state": "Nordrhein-Westfalen",
-    "population": 53500,
+    "city": "Schweinfurt",
+    "slug": "schweinfurt",
+    "state": "Bayern",
+    "population": 54481,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 172,
-    "city": "Willich",
-    "slug": "willich",
-    "state": "Nordrhein-Westfalen",
-    "population": 52800,
+    "city": "Bad Kreuznach",
+    "slug": "bad-kreuznach",
+    "state": "Rheinland-Pfalz",
+    "population": 54168,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 173,
-    "city": "Ibbenbüren",
-    "slug": "ibbenbueren",
-    "state": "Nordrhein-Westfalen",
-    "population": 52000,
+    "city": "Langenhagen",
+    "slug": "langenhagen",
+    "state": "Niedersachsen",
+    "population": 54142,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 174,
-    "city": "Passau",
-    "slug": "passau",
-    "state": "Bayern",
-    "population": 51900,
+    "city": "Stralsund",
+    "slug": "stralsund",
+    "state": "Mecklenburg-Vorpommern",
+    "population": 54094,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 175,
-    "city": "Wolfenbüttel",
-    "slug": "wolfenbuettel",
-    "state": "Niedersachsen",
-    "population": 51800,
+    "city": "Bad Salzuflen",
+    "slug": "bad-salzuflen",
+    "state": "Nordrhein-Westfalen",
+    "population": 53958,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 176,
-    "city": "Elmshorn",
-    "slug": "elmshorn",
-    "state": "Schleswig-Holstein",
-    "population": 51500,
+    "city": "Hattingen",
+    "slug": "hattingen",
+    "state": "Nordrhein-Westfalen",
+    "population": 53044,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 177,
-    "city": "Speyer",
-    "slug": "speyer",
-    "state": "Rheinland-Pfalz",
-    "population": 51200,
+    "city": "Passau",
+    "slug": "passau",
+    "state": "Bayern",
+    "population": 53039,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 178,
-    "city": "Bad Kreuznach",
-    "slug": "bad-kreuznach",
-    "state": "Rheinland-Pfalz",
-    "population": 51000,
+    "city": "Kleve",
+    "slug": "kleve",
+    "state": "Nordrhein-Westfalen",
+    "population": 53028,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 179,
-    "city": "Ravensburg",
-    "slug": "ravensburg",
-    "state": "Baden-Württemberg",
-    "population": 50900,
+    "city": "Neustadt an der Weinstraße",
+    "slug": "neustadt-weinstrasse",
+    "state": "Rheinland-Pfalz",
+    "population": 52945,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 180,
-    "city": "Böblingen",
-    "slug": "boeblingen",
-    "state": "Baden-Württemberg",
-    "population": 50800,
+    "city": "Ahlen",
+    "slug": "ahlen",
+    "state": "Nordrhein-Westfalen",
+    "population": 52666,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 181,
-    "city": "Gummersbach",
-    "slug": "gummersbach",
-    "state": "Nordrhein-Westfalen",
-    "population": 50700,
+    "city": "Wolfenbüttel",
+    "slug": "wolfenbuettel",
+    "state": "Niedersachsen",
+    "population": 52604,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 182,
-    "city": "Goslar",
-    "slug": "goslar",
-    "state": "Niedersachsen",
-    "population": 50500,
+    "city": "Frechen",
+    "slug": "frechen",
+    "state": "Nordrhein-Westfalen",
+    "population": 52309,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 183,
-    "city": "Rastatt",
-    "slug": "rastatt",
-    "state": "Baden-Württemberg",
-    "population": 50400,
+    "city": "Menden (Sauerland)",
+    "slug": "menden",
+    "state": "Nordrhein-Westfalen",
+    "population": 52255,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 184,
-    "city": "Peine",
-    "slug": "peine",
-    "state": "Niedersachsen",
-    "population": 50300,
+    "city": "Ibbenbüren",
+    "slug": "ibbenbueren",
+    "state": "Nordrhein-Westfalen",
+    "population": 51803,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 185,
-    "city": "Emden",
-    "slug": "emden",
-    "state": "Niedersachsen",
-    "population": 50200,
+    "city": "Böblingen",
+    "slug": "boeblingen",
+    "state": "Baden-Württemberg",
+    "population": 51483,
     "official": [],
     "plan": "osm"
   },
@@ -2891,16 +2891,88 @@
     "city": "Lörrach",
     "slug": "loerrach",
     "state": "Baden-Württemberg",
-    "population": 50100,
+    "population": 51349,
     "official": [],
     "plan": "osm"
   },
   {
     "rank": 187,
-    "city": "Freising",
-    "slug": "freising",
-    "state": "Bayern",
-    "population": 50000,
+    "city": "Elmshorn",
+    "slug": "elmshorn",
+    "state": "Schleswig-Holstein",
+    "population": 51342,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 188,
+    "city": "Gummersbach",
+    "slug": "gummersbach",
+    "state": "Nordrhein-Westfalen",
+    "population": 51290,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 189,
+    "city": "Peine",
+    "slug": "peine",
+    "state": "Niedersachsen",
+    "population": 50987,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 190,
+    "city": "Lahr/Schwarzwald",
+    "slug": "lahr",
+    "state": "Baden-Württemberg",
+    "population": 50775,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 191,
+    "city": "Rastatt",
+    "slug": "rastatt",
+    "state": "Baden-Württemberg",
+    "population": 50741,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 192,
+    "city": "Ravensburg",
+    "slug": "ravensburg",
+    "state": "Baden-Württemberg",
+    "population": 50628,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 193,
+    "city": "Bad Oeynhausen",
+    "slug": "bad-oeynhausen",
+    "state": "Nordrhein-Westfalen",
+    "population": 50620,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 194,
+    "city": "Heidenheim an der Brenz",
+    "slug": "heidenheim",
+    "state": "Baden-Württemberg",
+    "population": 50618,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 195,
+    "city": "Gronau (Westf.)",
+    "slug": "gronau",
+    "state": "Nordrhein-Westfalen",
+    "population": 50547,
     "official": [],
     "plan": "osm"
   }

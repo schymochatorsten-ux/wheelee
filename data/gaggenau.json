@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "gaggenau",
+    "name": "Gaggenau",
+    "center": {
+      "lat": 48.804220041994874,
+      "lng": 8.319875038003914
+    }
+  },
+  "source": "Behindertenparkplätze TechnologieRegion Karlsruhe – Stadt Karlsruhe / TechnologieRegion Karlsruhe (Creative Commons Namensnennung 4.0 (CC BY 4.0))",
+  "license": "Creative Commons Namensnennung 4.0 (CC BY 4.0)",
+  "generatedAt": "2026-10-10",
+  "spots": [
+    {
+      "id": "gaggenau-fa426a09fe",
+      "city": "gaggenau",
+      "label": "Am Bahnhofsplatz 1",
+      "street": "Am Bahnhofsplatz",
+      "houseNumber": "1",
+      "note": "Bahnhof",
+      "timeRestriction": null,
+      "district": "Gaggenau",
+      "spotCount": 2,
+      "lat": 48.8054340899174,
+      "lng": 8.319875038003914,
+      "geoAccuracy": "house",
+      "source": "Behindertenparkplätze TechnologieRegion Karlsruhe (Creative Commons Namensnennung 4.0 (CC BY 4.0))"
+    },
+    {
+      "id": "gaggenau-72b4171eb8",
+      "city": "gaggenau",
+      "label": "August-Schneider-Straße",
+      "street": "August-Schneider-Straße",
+      "houseNumber": null,
+      "note": "Am Rathaus",
+      "timeRestriction": null,
+      "district": "Gaggenau",
+      "spotCount": 3,
+      "lat": 48.80324201436788,
+      "lng": 8.321139041446052,
+      "geoAccuracy": "house",
+      "source": "Behindertenparkplätze TechnologieRegion Karlsruhe (Creative Commons Namensnennung 4.0 (CC BY 4.0))"
+    },
+    {
+      "id": "gaggenau-31ce1285a9",
+      "city": "gaggenau",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Kreuzung Hauptstraße",
+      "timeRestriction": null,
+      "district": "Gaggenau",
+      "spotCount": 1,
+      "lat": 48.80503503405476,
+      "lng": 8.318567984169368,
+      "geoAccuracy": "house",
+      "source": "Behindertenparkplätze TechnologieRegion Karlsruhe (Creative Commons Namensnennung 4.0 (CC BY 4.0))"
+    },
+    {
+      "id": "gaggenau-12aecdc674",
+      "city": "gaggenau",
+      "label": "Hauptstraße 51",
+      "street": "Hauptstraße",
+      "houseNumber": "51",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gaggenau",
+      "spotCount": 1,
+      "lat": 48.804220041994874,
+      "lng": 8.3190960489548,
+      "geoAccuracy": "house",
+      "source": "Behindertenparkplätze TechnologieRegion Karlsruhe (Creative Commons Namensnennung 4.0 (CC BY 4.0))"
+    },
+    {
+      "id": "gaggenau-a3a42803d7",
+      "city": "gaggenau",
+      "label": "Hauptstraße 81",
+      "street": "Hauptstraße",
+      "houseNumber": "81",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gaggenau",
+      "spotCount": 1,
+      "lat": 48.80178107665961,
+      "lng": 8.320785944225895,
+      "geoAccuracy": "house",
+      "source": "Behindertenparkplätze TechnologieRegion Karlsruhe (Creative Commons Namensnennung 4.0 (CC BY 4.0))"
+    }
+  ]
+}

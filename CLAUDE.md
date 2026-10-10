@@ -1,0 +1,80 @@
+# Arbeitsweise in diesem Projekt
+
+Diese Datei wird zu Beginn jeder Sitzung gelesen. Sie enthält, was sonst
+verloren geht – Regeln, die sich aus der Arbeit ergeben haben, nicht aus dem
+Code ablesbar sind und sonst in jeder Sitzung neu gelernt werden müssten.
+
+## Aufgabenliste pflegen
+
+**Erledigte Punkte gehören nach [Erledigt.md](Erledigt.md), nicht in
+[ToDos.md](ToDos.md).** In `ToDos.md` steht nur, was offen ist.
+
+So geht es:
+
+1. Punkt in `Erledigt.md` eintragen, unter derselben Nummer wie in `ToDos.md`
+   und im passenden Abschnitt. Mit Datum und – das ist der eigentliche Zweck –
+   **mit der Begründung, warum es so gelöst wurde.**
+2. Den Punkt in `ToDos.md` löschen.
+3. Ist ein Punkt nur teilweise erledigt, bleibt er in `ToDos.md` auf `[~]`,
+   und nur der fertige Teil wandert hinüber.
+4. Zählstände oben in beiden Dateien nachführen.
+
+`Erledigt.md` ist kein Änderungsprotokoll, sondern eine
+Begründungssammlung. Mehrere Einträge beschreiben Fehler, die wirklich
+passiert sind; sie stehen dort, damit niemand dieselbe Entscheidung noch
+einmal anders trifft.
+
+Nach jeder abgeschlossenen Aufgabe außerdem den **Arbeitsstand** oben in
+`ToDos.md` nachführen – er ist der Einstieg nach einer Unterbrechung.
+
+## Was nicht ohne Freigabe gebaut wird
+
+Abschnitt 13 (Finanzierung), 15 (Mehrsprachigkeit) und 16 (Offline-Download)
+in `ToDos.md`. Auch dann nicht, wenn gerade nichts anderes zu tun ist.
+
+## Dateien nie mit PowerShell umschreiben
+
+`Get-Content | Set-Content` und `-replace` lesen UTF-8 als Windows-1252: Aus
+„Nächster" wird „NÃ¤chster". Das ist hier schon passiert und hat zwei
+Komponenten an 39 bzw. 42 Stellen beschädigt – `typecheck`, `lint` und 148
+Unit-Tests liefen trotzdem grün durch, weil beschädigte Umlaute in
+Zeichenketten syntaktisch gültig sind. Gefunden hat es erst ein E2E-Test.
+
+Für Massenänderungen das Edit-Werkzeug oder ein Node-Skript nehmen.
+Dasselbe gilt für `Out-File -Append -Encoding utf8` (setzt eine BOM mitten in
+die Datei) und für deutsche Anführungszeichen in TypeScript-Zeichenketten:
+`„Text"` beendet die Zeichenkette am ASCII-Anführungszeichen – entweder
+`'…'` als äußere Begrenzung oder `“` schreiben.
+
+## Daten nur aufnehmen, wenn sie belegbar stimmen
+
+Der Grundsatz aus [Datenpflege.md](Datenpflege.md) gilt auch gegen die eigene
+Arbeit: **Lieber kein Import als ein falscher.** Eine Stadt, die fehlt, ist
+ein sichtbarer Mangel. Eine Stadt mit falschen Koordinaten ist eine
+vergebliche Fahrt für jemanden, der auf den Parkplatz angewiesen ist.
+
+Am 2026-10-10 wurden deshalb 473 bereits geschriebene Gemeinden wieder
+entfernt – siehe 2e.7 in `ToDos.md`.
+
+Zwei Kennzahlen finden solche Fehler zuverlässiger als Hinsehen:
+
+- **Streuung je Gemeinde.** Liegen die Parkplätze einer Gemeinde mehr als
+  15 km auseinander, stimmt die Zuordnung nicht.
+- **Stellplätze je 10.000 Einwohner.** Der Median liegt bei rund 7. Das
+  Dreifache davon ist ein Fehler, ein Zwanzigstel auch.
+
+## Entwicklungsserver
+
+`npm run build` **nicht** starten, während `npm run dev` läuft – beide
+schreiben nach `.next`. Danach meldet der Entwicklungsserver Fehler wie
+`ENOENT … _document.js` oder `Cannot find module './897.js'`. Abhilfe:
+Server beenden, `npm run clean`, neu starten.
+
+Nie `Stop-Process node` ohne Filter: Das beendet auch laufende Importe.
+
+## Overpass schonend benutzen
+
+Der Dienst wird von Freiwilligen bezahlt und antwortet unter Last mit
+HTTP 504 oder 500. Zwischen größeren Läufen Pausen lassen, Abfragen bündeln
+statt je Gemeinde zu fragen, und bei leerem Ergebnis misstrauisch sein –
+Überlast kommt dort auch als HTTP 200 mit leerer Liste zurück.

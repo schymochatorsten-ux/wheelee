@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "waghaeusel",
+    "name": "Waghäusel",
+    "center": {
+      "lat": 49.24826307351665,
+      "lng": 8.50882302249715
+    }
+  },
+  "source": "Behindertenparkplätze TechnologieRegion Karlsruhe – Stadt Karlsruhe / TechnologieRegion Karlsruhe (Creative Commons Namensnennung 4.0 (CC BY 4.0))",
+  "license": "Creative Commons Namensnennung 4.0 (CC BY 4.0)",
+  "generatedAt": "2026-10-10",
+  "spots": [
+    {
+      "id": "waghaeusel-17d2d1f5ec",
+      "city": "waghaeusel",
+      "label": "Bahnhof Waghäusel Ost",
+      "street": null,
+      "houseNumber": null,
+      "note": "Bahnhof Waghäusel",
+      "timeRestriction": null,
+      "district": "Waghäusel",
+      "spotCount": 2,
+      "lat": 49.24826307351665,
+      "lng": 8.50882302249715,
+      "geoAccuracy": "house",
+      "source": "Behindertenparkplätze TechnologieRegion Karlsruhe (Creative Commons Namensnennung 4.0 (CC BY 4.0))"
+    },
+    {
+      "id": "waghaeusel-0ce49b2f6d",
+      "city": "waghaeusel",
+      "label": "Bahnhof Waghäusel West",
+      "street": null,
+      "houseNumber": null,
+      "note": "Bahnhof Waghäusel",
+      "timeRestriction": null,
+      "district": "Waghäusel",
+      "spotCount": 2,
+      "lat": 49.24846300483407,
+      "lng": 8.50791598167272,
+      "geoAccuracy": "house",
+      "source": "Behindertenparkplätze TechnologieRegion Karlsruhe (Creative Commons Namensnennung 4.0 (CC BY 4.0))"
+    },
+    {
+      "id": "waghaeusel-bbf4e08e45",
+      "city": "waghaeusel",
+      "label": "Gymnasiumstraße 1",
+      "street": "Gymnasiumstraße",
+      "houseNumber": "1",
+      "note": "Rathaus Waghäusel",
+      "timeRestriction": null,
+      "district": "Waghäusel",
+      "spotCount": 2,
+      "lat": 49.24809000106666,
+      "lng": 8.519463029571353,
+      "geoAccuracy": "house",
+      "source": "Behindertenparkplätze TechnologieRegion Karlsruhe (Creative Commons Namensnennung 4.0 (CC BY 4.0))"
+    }
+  ]
+}

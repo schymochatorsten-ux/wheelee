@@ -4,8 +4,9 @@ import type { ParkingSpot, ParkingSpotWithDistance } from "@/lib/types";
 import { formatDistance } from "@/lib/geo";
 import { spotTitle, stripRedundantPrefix } from "@/lib/parking/display";
 import type { CityInfo } from "@/lib/parking/spots";
-import { normalizeTimeRestriction, restrictionState } from "@/lib/opening-hours";
+import { normalizeTimeRestriction } from "@/lib/opening-hours";
 import { DataDisclaimer, formatDate } from "./DataDisclaimer";
+import { RestrictionBadge } from "./RestrictionBadge";
 
 /**
  * Listenansicht der Parkplätze.
@@ -65,11 +66,7 @@ export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect 
                   </span>
                   {/* Dass eine Beschränkung gerade greift, entscheidet beim
                       Losfahren – dafür soll man die Details nicht öffnen müssen. */}
-                  {restrictionState(spot.timeRestriction) === "gilt" && (
-                    <span className="mt-0.5 inline-block rounded bg-amber-100 px-1.5 py-0.5 text-xs font-medium text-amber-900 dark:bg-amber-950 dark:text-amber-200">
-                      Beschränkung gilt jetzt
-                    </span>
-                  )}
+                  <RestrictionBadge spot={spot} />
                 </span>
                 <span className="shrink-0 text-sm font-medium tabular-nums">
                   {formatDistance(spot.distanceMeters)}
@@ -129,6 +126,34 @@ export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect 
             © OpenStreetMap-Mitwirkende
           </a>
           , Open Database License (ODbL). Die amtlichen Quellen sind je Stadt unten einzeln genannt.
+        </p>
+
+        {/*
+          Gemeindenamen und die Auswahl der Städte stammen aus dem amtlichen
+          Verzeichnis des Bundesamts für Kartographie und Geodäsie. Dessen
+          Lizenz schreibt diesen Vermerk wörtlich vor, einschließlich beider
+          Verweise – das ist keine Höflichkeit, sondern Bedingung.
+        */}
+        <p className="mt-2">
+          Gemeindenamen und -schlüssel: ©{" "}
+          <a
+            href="https://www.bkg.bund.de"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            BKG
+          </a>{" "}
+          (2026){" "}
+          <a
+            href="https://www.govdata.de/dl-de/by-2-0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            dl-de/by-2-0
+          </a>
+          .
         </p>
 
         {crowdsourced.length > 0 && (

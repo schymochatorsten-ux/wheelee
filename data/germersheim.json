@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "germersheim",
+    "name": "Germersheim",
+    "center": {
+      "lat": 49.21701467191702,
+      "lng": 8.372111287991112
+    }
+  },
+  "source": "Behindertenparkplätze TechnologieRegion Karlsruhe – Stadt Karlsruhe / TechnologieRegion Karlsruhe (Creative Commons Namensnennung 4.0 (CC BY 4.0))",
+  "license": "Creative Commons Namensnennung 4.0 (CC BY 4.0)",
+  "generatedAt": "2026-10-10",
+  "spots": [
+    {
+      "id": "germersheim-5e9f393d25",
+      "city": "germersheim",
+      "label": "Königsplatz links",
+      "street": "Königsplatz links",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "2 Std",
+      "district": "Germersheim",
+      "spotCount": 2,
+      "lat": 49.216813466611285,
+      "lng": 8.371793169656053,
+      "geoAccuracy": "house",
+      "source": "Behindertenparkplätze TechnologieRegion Karlsruhe (Creative Commons Namensnennung 4.0 (CC BY 4.0))"
+    },
+    {
+      "id": "germersheim-de536dd50d",
+      "city": "germersheim",
+      "label": "Königsplatz rechts",
+      "street": "Königsplatz rechts",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "2 Std",
+      "district": "Germersheim",
+      "spotCount": 2,
+      "lat": 49.21701467191702,
+      "lng": 8.372111287991112,
+      "geoAccuracy": "house",
+      "source": "Behindertenparkplätze TechnologieRegion Karlsruhe (Creative Commons Namensnennung 4.0 (CC BY 4.0))"
+    },
+    {
+      "id": "germersheim-2671adbb83",
+      "city": "germersheim",
+      "label": "P+R Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Germersheim",
+      "spotCount": 4,
+      "lat": 49.224403550263254,
+      "lng": 8.365671745838034,
+      "geoAccuracy": "house",
+      "source": "Behindertenparkplätze TechnologieRegion Karlsruhe (Creative Commons Namensnennung 4.0 (CC BY 4.0))"
+    },
+    {
+      "id": "germersheim-13ecd2c9ce",
+      "city": "germersheim",
+      "label": "P+R Mitte/ Rhein",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Germersheim",
+      "spotCount": 2,
+      "lat": 49.21941700600112,
+      "lng": 8.379213132838167,
+      "geoAccuracy": "house",
+      "source": "Behindertenparkplätze TechnologieRegion Karlsruhe (Creative Commons Namensnennung 4.0 (CC BY 4.0))"
+    },
+    {
+      "id": "germersheim-1992bfeb75",
+      "city": "germersheim",
+      "label": "P+R Sondernheim",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sondernheim",
+      "spotCount": 2,
+      "lat": 49.19515964392845,
+      "lng": 8.360586750344309,
+      "geoAccuracy": "house",
+      "source": "Behindertenparkplätze TechnologieRegion Karlsruhe (Creative Commons Namensnennung 4.0 (CC BY 4.0))"
+    },
+    {
+      "id": "germersheim-b9b6fc3706",
+      "city": "germersheim",
+      "label": "P+R Süd/ Nolte",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Germersheim",
+      "spotCount": 2,
+      "lat": 49.209063560389374,
+      "lng": 8.373879829262352,
+      "geoAccuracy": "house",
+      "source": "Behindertenparkplätze TechnologieRegion Karlsruhe (Creative Commons Namensnennung 4.0 (CC BY 4.0))"
+    }
+  ]
+}

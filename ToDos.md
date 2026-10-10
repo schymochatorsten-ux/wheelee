@@ -13,11 +13,14 @@ aktuell gehalten werden, steht in [Datenpflege.md](Datenpflege.md).
 der sich aus einer öffentlichen Quelle importieren lässt – siehe
 [Abschnitt 2e](#2e-ganz-deutschland).
 
-**Stand in Zahlen:** 187 von rund 10.700 Gemeinden geprüft (davon 185 mit
-Treffer, 2 geprüft ohne Treffer), 17.206 Standorte. Karte, Liste,
-Detailansicht, Einstellungen und Offline-Betrieb laufen. Es fehlen vor allem:
-Bewertungen (brauchen die Datenbank), Rechtstexte und Deployment – und der
-weitaus größte Teil Deutschlands.
+**Stand in Zahlen:** 204 von **10.956** Gemeinden geprüft (1,9 %) – das sind
+**41,7 % der Bevölkerung**. In der App: 209 Städte, 17.864 Standorte, davon
+24 Städte aus amtlicher Quelle. Laufender Bericht:
+[data/\_abdeckung.md](data/_abdeckung.md).
+
+Karte, Liste, Detailansicht, Zielsuche, Einstellungen und Offline-Betrieb
+laufen. Es fehlen vor allem: Bewertungen (brauchen die Datenbank),
+Rechtstexte und Deployment – und der weitaus größte Teil Deutschlands.
 
 ---
 
@@ -32,16 +35,16 @@ Unterbrechung nahtlos weitergearbeitet werden kann.
 11.3, 12.3, 12.8, 12.9, 2e.8 sowie Lizenz und Importdatum im Datenmodell
 (Teil von 2a.5/10.3).
 
-**Gerade in Arbeit:**
+**Gerade in Arbeit:** –
 
-- **6.12 Zielsuche – gebaut, aber noch nicht im Browser geprüft.**
-  `src/lib/geocode.ts`, `src/app/api/geocode/route.ts` und
-  `src/components/DestinationSearch.tsx` sind fertig und in `MapSection`
-  eingebunden; `typecheck`, `lint`, Unit- und E2E-Tests sind grün.
-  **Es fehlt die Prüfung im Browser** und damit alles, was man erst dabei
-  sieht: ob die Suchleiste am unteren Rand die Legende verdeckt und ob die
-  Trefferliste auf dem Telefon brauchbar ist. Außerdem fehlen der **eigene
-  Zielmarker** (bisher springt die Karte nur hin) und ein E2E-Test.
+**Zuletzt gelernt (2026-10-10):** Der landesweite Import (2e.7) ist gebaut
+und lief, aber die damit erzeugten Daten für 473 Gemeinden wurden **wieder
+entfernt**. Die Zuordnung ohne echte Grenzgeometrie bevorzugt systematisch
+kleine Gemeinden neben großen Städten; 80 von 472 hatten unplausibel viele
+Stellplätze. Nach dem Grundsatz des Projekts – „lieber kein Import als ein
+falscher" – ist das kein vertretbarer Bestand. Gefunden hat es nicht das
+Hinsehen, sondern zwei Kennzahlen: die Streuung der Standorte je Gemeinde
+und Stellplätze je Einwohner.
 
 ### Was zuletzt geschah
 
@@ -117,6 +120,7 @@ E2E-Smoke-Test mit Playwright.
 - **10.2** Impressum und Datenschutzerklärung brauchen deine Angaben
 - **Abschnitt 13 (Finanzierung)** ist gesperrt, bis du ihn freigibst
 - **Abschnitt 15 (Mehrsprachigkeit)** ist auf deinen Wunsch zurückgestellt – Englisch, Spanisch und Französisch erst nach der deutschen Fassung
+- **Abschnitt 16 (nur nach Freigabe)** – derzeit: Städte zum Mitnehmen herunterladen
 
 **Als Nächstes geplant**, in dieser Reihenfolge:
 
@@ -129,8 +133,8 @@ E2E-Smoke-Test mit Playwright.
 7. 12.4 Lighthouse, 12.6 Fehler-Monitoring
 8. 2a.5 die fehlenden Lizenzen der 15 amtlichen Quellen nachschlagen
 
-**Stand:** 68 offen, 8 in Arbeit, 5 brauchen deine Entscheidung, 8 bewusst
-zurückgestellt (Finanzierung, Mehrsprachigkeit).
+**Stand:** 65 offen, 8 in Arbeit, 5 brauchen deine Entscheidung, 9 bewusst
+zurückgestellt (Finanzierung, Mehrsprachigkeit, Offline-Download).
 92 erledigte Punkte stehen in [Erledigt.md](Erledigt.md).
 **Tests: 161 Unit-Tests + 6 E2E-Tests.**
 
@@ -160,7 +164,7 @@ zurückgestellt (Finanzierung, Mehrsprachigkeit).
 ### 2a. Quellenstrategie
 
 - [~] 2a.5 Lizenz je Stadt ins Datenmodell aufnehmen und in der Oberfläche anzeigen.
-  - [x] **Datenmodell und Anzeige stehen** (2026-10-10). `license` ist ein eigenes Feld der Seed-Dateien; der Importer schreibt es, für ältere Dateien zerlegt `src/lib/parking/license.ts` die Quellenangabe. Die Listenansicht nennt je Stadt Quelle, Lizenz und Importdatum.
+  - Fertig: Datenmodell und Anzeige. `license` ist ein eigenes Feld der Seed-Dateien; der Importer schreibt es, für ältere Dateien zerlegt `src/lib/parking/license.ts` die Quellenangabe. Die Listenansicht nennt je Stadt Quelle, Lizenz und Importdatum.
   - [ ] **Es fehlen die Lizenzen selbst: 15 der amtlichen Quellen nennen keine** – darunter Hamburg, Köln und Dresden, also die größten Bestände. In der Oberfläche steht jetzt offen „Lizenz nicht angegeben", was ehrlich, aber für eine veröffentlichte App zu wenig ist. Die Lizenz steht meist auf dem Portal der Stadt, nur nicht im GovData-Metadatum; das muss je Stadt nachgeschlagen und in `data/<stadt>.overrides.json` oder einer eigenen Lizenzliste festgehalten werden.
 
 ### 2c. Idstein und Weißenhorn
@@ -173,7 +177,7 @@ zurückgestellt (Finanzierung, Mehrsprachigkeit).
 Laufender Stand: **[data/\_import-status.md](data/_import-status.md)** – von den Skripten selbst geschrieben, nach jeder einzelnen Stadt aktualisiert.
 
 - [~] 2d.8a Bei Bochum, Bielefeld und Karlsruhe die aktuellen Bezugswege suchen – auf den Portalen der Städte statt über GovData. Der Gewinn wäre spürbar: Düsseldorf kam von 171 Standorten aus OSM auf 340 aus der amtlichen Quelle.
-  - [x] **Automatisch erkennbar gemacht** (2026-10-10): `npm run sources:check` meldet als „amtliche Quelle ungenutzt", welche Städte aus OpenStreetMap kommen, obwohl ihre amtliche Quelle antwortet. Derzeit acht – man muss sie nicht mehr von Hand suchen.
+  - Fertig: `npm run sources:check` meldet als „amtliche Quelle ungenutzt", welche Städte aus OpenStreetMap kommen, obwohl ihre amtliche Quelle antwortet. Derzeit acht – man muss sie nicht mehr von Hand suchen.
   - [ ] Die acht einzeln ansehen. Bei Kiel, Krefeld und Aachen ist die Ablehnung laut 2d.8 richtig (Anwohnerparken); bei Bochum, Bielefeld, Karlsruhe, Norderstedt und Viersen lohnt der Blick auf das Stadtportal.
 - [~] 2d.9 **Regensburg** hat weder amtliche Daten noch OSM-Treffer. Seit 2e.9 ist der Befund wenigstens festgehalten statt ungeklärt: Regensburg steht als „geprüft, nichts gefunden" im Importstand, die Abfrage lief also sauber durch und war leer. Offen bleibt die eigentliche Frage – eine Stadt mit 156.000 Einwohnern ohne einen einzigen erfassten Behindertenparkplatz ist eine Lücke in OpenStreetMap, keine in der Wirklichkeit. Hier lohnt die Anfrage bei der Straßenverkehrsbehörde (Schritt 3 der Quellensuche) und das Nachtragen in OSM (2c.4).
 - [ ] 2d.10 Auffällig niedrige OSM-Zahlen stichprobenartig prüfen, etwa Wuppertal mit 66 Standorten bei 359.000 Einwohnern
@@ -194,24 +198,23 @@ OpenStreetMap. Beides ist frei nutzbar, beides kann der Importer bereits
 lesen. Nicht importierbar sind Daten hinter Lizenzschranken (Parkopedia) oder
 solche, die nur als Bild oder gedruckter Plan vorliegen.
 
-- [~] 2e.0 **Abdeckung messbar machen.** Ohne Maßstab bleibt „alle" eine Absichtserklärung. Nötig ist ein Bericht, der zeigt: wie viele Gemeinden erfasst, wie viele mit amtlicher Quelle, wie viele nur aus OSM, wie viele geprüft ohne Treffer. Erst damit ist erkennbar, ob das Ziel näher rückt.
-  Die Zustände dafür gibt es seit 2e.9 (siehe [Erledigt.md](Erledigt.md)), und `data/_import-status.md` weist sie aus.
-  - [ ] Es fehlt der Bezug auf **alle** rund 10.700 Gemeinden statt nur auf die im Register. Solange das Register handgepflegt ist, misst die Prozentzahl nur den eigenen Arbeitsvorrat, nicht die Abdeckung Deutschlands – ehrlich wird sie erst mit 2e.4.
-- [ ] 2e.1 **Alle Gemeinden mit amtlichen Daten erfassen, unabhängig von der Einwohnerzahl.** Jeden GovData-Datensatz zu Behindertenparkplätzen durchgehen und die zugehörige Gemeinde importieren – das ist die billigste Ausweitung, weil die Daten gut sind und der Importer sie schon lesen kann.
-- [ ] 2e.2 Landesportale einbeziehen, die GovData nicht lückenlos spiegelt: Open.NRW, MobiData BW, Open Data Hessen, daten.berlin.de, Geodatenportal Bayern
-- [ ] 2e.3 **Landesweite Sammeldatensätze auswerten** – „Gebündelte Daten Behindertenparkplätze NRW" (Mobilithek) und die Park-API von MobiData BW decken in einem Zug viele Kommunen ab, auch kleine
-- [ ] 2e.4 **Gemeinderegister aufbauen** statt der handgepflegten Städteliste. **Quelle ist gefunden und geprüft (2026-10-09):**
-  - **Nehmen: BKG, „Verwaltungsgebiete 1:250 000 mit Einwohnerzahlen" (VG250-EW).** Enthält alle Gemeinden mit amtlichem Gemeindeschlüssel, Name, Einwohnerzahl, Fläche und Geometrie. Lizenz **Datenlizenz Deutschland – Namensnennung 2.0 (dl-de/by-2-0)**, also frei nutzbar bei Quellenangabe – die Attribution gehört dann neben die OSM-Angabe in die Oberfläche (10.3).
-  - Fertige Excel-Fassung, rund 7 MB, keine Geometrie nötig:
-    `https://daten.gdz.bkg.bund.de/produkte/vg/vg250-ew_ebenen_1231/aktuell/vg250-ew_12-31.ee.excel.ebenen.zip`
-    Verzeichnis `.../aktuell/` zeigt immer auf den neuesten Stand; daneben liegen Shape- und GeoPackage-Fassungen mit 64–69 MB.
-  - **Nicht nehmen: das Gemeindeverzeichnis (GV100AD) von Destatis.** Inhaltlich dasselbe, aber die Downloadseite nennt **keine Lizenz**. Nach dem Grundsatz „lieber kein Import als ein falscher" ist eine ungeklärte Lizenz ein Ausschlussgrund, solange es eine klar lizenzierte Alternative gibt. Das Format (feste Spaltenbreiten, `GV100AD_TTMMJJ.txt`) wäre außerdem unbequemer als die Excel-Fassung.
-  - Die Gemeindegeometrie brauchen wir nicht aus dieser Quelle: Der OSM-Importer holt die Grenzrelation ohnehin über Nominatim. Aus VG250-EW genügen **Schlüssel, Name, Bundesland, Einwohnerzahl** – also genau die vier Felder, die `german-cities.mts` heute von Hand führt.
-  - Umsetzung: ein Skript `import:gemeinden`, das die ZIP lädt, das Gemeindeblatt liest und das Register erzeugt. `german-cities.mts` wird damit zur erzeugten Datei; der Dateikopf sagt das bereits an.
-- [~] 2e.5 Stufenweise vorgehen, größte zuerst: **Stufe „ab 50.000" ist abgeschlossen** (siehe [Erledigt.md](Erledigt.md)). Es folgen: ab 20.000 (rund 650 Gemeinden), ab 10.000, dann der Rest.
-  - [ ] **Vor Stufe „ab 20.000" zu lösen:** 2e.4 (Register aus VG250-EW) und 2e.7 (landesweite Overpass-Läufe statt einer Abfrage je Gemeinde). Die Datenhaltung (2e.8/5.4) ist seit 2026-10-10 geklärt – die App lädt nur noch den Kartenausschnitt.
+- [~] 2e.5 Stufenweise vorgehen, größte zuerst. **Stufe „ab 50.000" ist abgeschlossen:** 195 Gemeinden laut amtlichem Verzeichnis, alle geprüft. Die Grenze ist jetzt die Konstante `MIN_POPULATION` in `scripts/import/german-cities.mts`.
+  - [ ] **Nächste Stufe „ab 20.000" = 706 Gemeinden. Einmal versucht und wieder zurückgenommen** (2026-10-10): Die Grenze stand kurzzeitig auf 20.000, und der landesweite Lauf hat 473 Gemeinden geschrieben. Weil die Zuordnung nicht stimmte (siehe 2e.7), sind die Daten wieder entfernt und die Grenze steht wieder auf 50.000. **Die Stufe hängt allein an 2e.7** – das Register (2e.4) und die Zählung (2e.0) sind bereit, und das Umstellen ist eine Zahl.
+  - [ ] Danach ab 10.000 (1.598 Gemeinden) und ab 5.000 (2.943).
 - [ ] 2e.6 Restliche Gemeinden aus OpenStreetMap – der Importer kann das bereits, es fehlt nur die Liste
-- [ ] 2e.7 **Laufzeit und Last beherrschen.** Bei 10.700 Gemeinden ist eine Overpass-Abfrage je Gemeinde nicht vertretbar – das wäre Missbrauch eines Gemeinschaftsdienstes. Bessere Wege: ein landesweiter Overpass-Durchlauf je Bundesland statt je Gemeinde, oder ein eigener Auszug aus einem Planet-Download. Vor dem Massenimport zu entscheiden, nicht danach.
+- [~] 2e.7 **Laufzeit und Last beherrschen – das Werkzeug steht, die Zuordnung taugt noch nicht.**
+
+  `npm run import:osm-state -- <bundesland>` bzw. `--alle` holt mit **zwei Abfragen je Bundesland**, was bisher 10.956 Einzelabfragen gekostet hätte. Der Lauf selbst funktioniert: 12 von 16 Ländern liefen durch, 473 Gemeinden wurden geschrieben.
+
+  **Diese Daten sind wieder entfernt worden.** Nicht weil der Lauf scheiterte, sondern weil die Zuordnung der Treffer zu Gemeinden nachweislich falsch ist:
+
+  - Fertig: Grenzabfrage, Parkplatzabfrage, lokale Zuordnung (`assign.mts`, fünf Tests), Wiederholung über mehrere Spiegel, Stadtstaaten-Sonderfall, Plausibilitätsprüfung der Grenzzahl, Weitermachen nach einem gescheiterten Land.
+  - [ ] **Der verbleibende Fehler ist grundsätzlich.** Ohne die echte Grenzgeometrie entscheidet das umschließende Rechteck und die Entfernung zur Rechteckmitte. In dicht besiedelten Gegenden überlappen die Rechtecke stark, und **die kleinere Gemeinde gewinnt systematisch**: Ihr Mittelpunkt liegt jedem Punkt im Überlappungsbereich näher. Herdecke (22.772 Einwohner) bekam dadurch 109 Standorte bis hinauf nach Witten – 86 Stellplätze je 10.000 Einwohner statt der üblichen 7. **80 von 472 Gemeinden lagen über dem Dreifachen des Medians.**
+  - [ ] **Was es braucht: ein echter Punkt-in-Fläche-Test.** Mögliche Wege: `out geom` für die Grenzen (viele Megabyte je Land, für Bayern womöglich zu viel), die Geometrie aus VG250 des BKG (GeoPackage oder Shapefile, 64–69 MB, braucht einen eigenen Leser), oder Overpass die Zuordnung selbst rechnen lassen. Vor der nächsten Ausbaustufe zu entscheiden.
+  - [ ] Zwei weitere Fundstücke aus dem Probelauf, die noch offen sind: „friedberg" und „friedberg-by" erhielten **dieselben** 123 Standorte – die Unterscheidung gleichnamiger Gemeinden greift noch nicht überall. Und Bad Kreuznach meldete landesweit 8 Standorte, einzeln geprüft aber null; auch das deutet auf fehlzugeordnete Nachbarn.
+  - [ ] Vier Länder liefen gar nicht durch (Baden-Württemberg, Schleswig-Holstein wegen Überlast; Berlin und Bremen sind Stadtstaaten und werden jetzt übersprungen).
+
+- [ ] 2e.7a Ursprüngliche Überlegung, weiterhin gültig als Rückfallebene: Bei 10.700 Gemeinden ist eine Overpass-Abfrage je Gemeinde nicht vertretbar – das wäre Missbrauch eines Gemeinschaftsdienstes. Bessere Wege: ein landesweiter Overpass-Durchlauf je Bundesland statt je Gemeinde, oder ein eigener Auszug aus einem Planet-Download. Vor dem Massenimport zu entscheiden, nicht danach.
 
 ---
 
@@ -234,7 +237,9 @@ aber keine einzelne falsch verorteten Parkplätze. Dafür braucht es einen
 Abgleich mit einer zweiten, unabhängigen Quelle.
 
 - [ ] 3.1 **Kreuzvergleich amtliche Daten gegen OpenStreetMap.** Für jede Stadt beide Quellen holen und Standorte paaren, die weniger als etwa 30 m auseinanderliegen. Daraus drei Gruppen: _bestätigt_ (beide kennen den Platz), _nur amtlich_ (wahrscheinlich in OSM nicht erfasst), _nur OSM_ (möglicherweise neu oder in der amtlichen Liste vergessen). Der Importer holt beide Quellen ohnehin schon – es fehlt nur der Vergleich.
-- [ ] 3.2 **Landesweite Sammeldatensätze als dritte Quelle.** Auf der Mobilithek gibt es „Gebündelte Daten Behindertenparkplätze NRW", über MobiData BW eine Park-API für Baden-Württemberg. Beide fassen zusammen, was die Kommunen melden, und eignen sich sowohl zum Gegenprüfen als auch zum Schließen von Lücken – sie decken unter anderem Bochum, Bielefeld, Krefeld und Karlsruhe ab, also vier der fünf Städte aus 2d.8.
+- [~] 3.2 **Landesweite Sammeldatensätze als dritte Quelle.** Teilweise erledigt: Der Datensatz der TechnologieRegion Karlsruhe ist eingebunden (2e.3). **Die Annahme über NRW hat sich nicht bestätigt** – auf Open.NRW stehen elf einschlägige Datensätze, aber alle von einzelnen Städten, die längst erfasst sind; einen gebündelten NRW-Datensatz gibt es dort nicht. Die beiden „Gebündelte Daten"-Datensätze von MobiData BW betreffen Parkplätze allgemein, nicht Behindertenstellplätze.
+  - [ ] Zum **Gegenprüfen** (statt zum Lückenschließen) taugt der Karlsruher Datensatz weiterhin: Für Karlsruhe und Baden-Baden liegen jetzt zwei unabhängige Quellen vor. Das ist Material für 3.1.
+  - [ ] Weitere Landesportale einzeln ansehen: Open Data Hessen, daten.berlin.de, Geodatenportal Bayern, Transparenzportal Hamburg.
 - [ ] 3.3 **Straßenabgleich.** Für jeden Standort prüfen, ob die Rückwärtssuche bei der Koordinate dieselbe Straße nennt wie die Quelle. Eine Abweichung ist kein Beweis für einen Fehler, aber ein guter Filter: nur die Treffer müssen von Hand angesehen werden. Für Frankfurt gibt es das schon im Importreport; es fehlt für alle anderen Städte.
 - [ ] 3.4 **Abstand zur nächsten Straße.** Ein Behindertenparkplatz liegt am Straßenrand. Punkte, die mehr als etwa 25 m von jeder Straße entfernt sind, sind fast immer falsch verortet. Über eine einzige Overpass-Abfrage je Stadt prüfbar.
 - [ ] 3.7 Ergebnis sichtbar machen: Standorte, die von zwei Quellen bestätigt sind, in der Detailansicht als geprüft kennzeichnen. Das ist genau die Information, die Nutzer:innen vor einer vergeblichen Fahrt bewahrt.
@@ -248,7 +253,6 @@ Parkplätze verschwinden und kommen hinzu. Die Daten einmal zu importieren
 genügt nicht – es braucht einen regelmäßigen, möglichst billigen Blick darauf,
 ob sich an der Quelle etwas getan hat.
 
-- [x] 4.2 **Takt festgelegt** – Änderungsprüfung monatlich, Neuimport bei gemeldeter Änderung, Vollimport halbjährlich, OpenStreetMap vierteljährlich. Steht in [Datenpflege.md](Datenpflege.md) und ist in `sources:check` eingebaut (`OSM_INTERVAL_DAYS`, `FULL_REIMPORT_DAYS`).
 - [ ] 4.5 Automatisieren, sobald die App läuft – etwa als monatlicher GitHub-Actions-Lauf, der bei Änderungen einen Pull Request mit den neuen Daten öffnet. So bleibt die Kontrolle beim Menschen.
 
 ---
@@ -266,13 +270,6 @@ ob sich an der Quelle etwas getan hat.
 
 ## 6. Karte und Standort
 
-- [~] 6.12 **Zieladresse eingeben und am Ziel parken.** Grundgerüst steht (siehe Arbeitsstand): Suche über einen eigenen Endpunkt `/api/geocode` (damit Nominatim eine ordentliche Kennung bekommt, was der Browser nicht kann), Trefferliste, zuletzt gesuchte Ziele im Browser-Speicher, und das Ziel ersetzt den eigenen Standort als Bezugspunkt für Liste und Navigationsleiste. **Offen:** eigener Zielmarker auf der Karte, Umkreis-Auswahl (300 m / 500 m / 1 km), Prüfung im Browser, E2E-Test.
-  - [x] Eingabefeld, Suche über Nominatim, Trefferliste, zuletzt gesuchte Ziele
-  - [x] Karte zentriert auf das Ziel; Liste und Navigationsleiste rechnen ab dem Ziel statt ab dem eigenen Standort
-  - [ ] **Zielpunkt eigens markieren**, damit Ziel und Parkplatz unterscheidbar bleiben – bisher springt die Karte nur hin
-  - [ ] **Umkreis-Auswahl** (300 m, 500 m, 1 km) statt fester Anzahl. Die Liste ist die bessere Voreinstellung: Der nächstgelegene Platz kann belegt sein, und wer die Alternativen kennt, fährt nicht zweimal.
-  - [ ] Im Browser prüfen und einen E2E-Test ergänzen
-- [ ] 6.14 Stadtwechsel ohne Standortfreigabe – eine Suche nach Ort oder Adresse fehlt (wird durch 6.12 weitgehend miterledigt)
 - [ ] 6.16a Die Auswahl aus 6.16 und die Listenansicht zeigen dasselbe in zwei Komponenten. Sinnvoll wäre, beide auf dieselbe Zeilen-Komponente zu stützen statt sie doppelt zu pflegen – aufgefallen beim Bauen von 6.16, aber keine Voraussetzung für irgendetwas.
 
 ---
@@ -419,6 +416,24 @@ sprechen.
   - Der Betreff der Fehlermeldung („Wheelee Fehlermeldung") landet in einer echten E-Mail.
 - [-] 15.4 **Die Daten bleiben deutsch, und das ist richtig so.** Straßennamen werden nicht übersetzt – wer „Bahnhofstraße" sucht, muss „Bahnhofstraße" lesen. Zeitangaben stehen teils als deutscher Freitext in den Quellen („werktags 8-18 Uhr"); deren Deutung ist sprachgebunden und müsste je Sprache **ausgegeben**, nicht neu geparst werden. Der Haftungshinweis ist rechtlich bedeutsam und gehört übersetzt, nicht sinngemäß übertragen.
 - [-] 15.5 **Spracherkennung mit Umschalter**, nicht ohne. Die Browsersprache ist ein guter erster Vorschlag, aber wer ein englisches Betriebssystem auf einem deutschen Telefon hat, will die Wahl behalten – in die Einstellungen, neben Darstellung und Karten-App.
+
+---
+
+## 16. Erst nach ausdrücklicher Freigabe
+
+> **Nichts aus diesem Abschnitt wird gebaut, bevor du es Punkt für Punkt
+> freigibst** – auch dann nicht, wenn gerade nichts anderes zu tun ist.
+> Dasselbe gilt für [Abschnitt 13](#13-finanzierung) (Finanzierung) und
+> [Abschnitt 15](#15-mehrsprachigkeit) (Mehrsprachigkeit).
+
+- [-] 16.1 **Städte zum Mitnehmen herunterladen.** Die Grundlage ist seit 12.8/12.9 da: Ein Service Worker hält Seite, zuletzt geladene Parkplätze und Kartenkacheln vor, sodass im Funkloch nicht eine weiße Seite steht. Das reicht aber nur für das, was man vorher ohnehin angesehen hat. Dieser Punkt geht weiter: **eine Stadt bewusst vorab laden**, damit sie unterwegs vollständig verfügbar ist, ohne Netz.
+  - Der Anlass ist derselbe wie bei der ganzen App: Wer auf einen Behindertenparkplatz angewiesen ist, braucht ihn am ehesten dort, wo das Netz am schlechtesten ist – in der Tiefgarage, im Parkhaus, im Funkloch kurz vor dem Ziel.
+  - Zu klären wäre vor dem Bauen:
+    - **Was genau wird geladen?** Die Parkplatzdaten einer Stadt sind klein (Köln rund 200 KB). Die Kartenkacheln sind es nicht: Ein Stadtgebiet in brauchbarer Zoomstufe geht in die Dutzende Megabyte. Ohne Kacheln gibt es eine Liste ohne Karte – das ist weniger, aber vielleicht genug.
+    - **Wie viel Platz darf die App belegen?** Das muss sichtbar sein, und es muss sich löschen lassen. Eine App, die unbemerkt 200 MB belegt, fliegt vom Telefon.
+    - **Kachel-Vorabladen ist gegenüber OpenStreetMap heikel.** Die Nutzungsbedingungen untersagen massenhaftes Herunterladen von Kacheln. Für einen Stadtausschnitt je Nutzer:in bräuchte es entweder eine ausdrückliche Erlaubnis, einen bezahlten Kachelanbieter oder Vektorkacheln aus eigener Quelle. **Das ist die eigentliche Hürde, nicht die Technik.**
+    - **Wie alt dürfen mitgenommene Daten sein?** Ein vor drei Monaten geladener Stand, der sich als aktuell ausgibt, wäre schlimmer als gar keiner. Es bräuchte ein sichtbares Datum und einen Hinweis, wenn es alt wird.
+  - Vorschlag für den Fall einer Freigabe: **in zwei Schritten.** Zuerst nur die Parkplatzdaten je Stadt – klein, rechtlich unbedenklich, sofort nützlich. Die Kacheln erst danach und erst, wenn die Lizenzfrage geklärt ist.
 
 ---
 

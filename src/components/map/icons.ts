@@ -45,6 +45,25 @@ export const nearestIcon = pin("#047857", 38, "wheelee-pin--nearest");
  */
 export const approximateIcon = pin("#dc2626", 28, "wheelee-pin--approximate");
 
+/**
+ * Das eingegebene Reiseziel (ToDo 6.12).
+ *
+ * Bewusst **kein** Parkplatz-Pin: Ziel und Parkplatz müssen auf einen Blick
+ * unterscheidbar sein, sonst fährt jemand zum Ziel statt zum Stellplatz. Ein
+ * Fähnchen statt eines Tropfens, und eine Farbe, die sonst nirgends vorkommt.
+ */
+export const destinationIcon = L.divIcon({
+  className: "wheelee-destination",
+  html: `
+    <svg width="30" height="36" viewBox="0 0 30 36" aria-hidden="true" style="display:block">
+      <path d="M6 36V2" stroke="#1f2937" stroke-width="3" stroke-linecap="round"/>
+      <path d="M7.5 3h16l-4 6 4 6h-16z" fill="#7c3aed" stroke="rgba(0,0,0,.25)"/>
+    </svg>`,
+  iconSize: [30, 36],
+  // Der Fahnenmast steht auf dem Punkt, nicht die Fahne.
+  iconAnchor: [6, 36],
+});
+
 /** Der eigene Standort. */
 export const userIcon = L.divIcon({
   className: "wheelee-user",

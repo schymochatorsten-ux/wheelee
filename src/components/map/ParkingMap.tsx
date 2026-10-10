@@ -5,7 +5,7 @@ import { MapContainer, Marker, TileLayer, useMap } from "react-leaflet";
 import type { ParkingSpot } from "@/lib/types";
 import type { LatLng } from "@/lib/geo";
 import { SpotMarkers } from "./SpotMarkers";
-import { userIcon } from "./icons";
+import { destinationIcon, userIcon } from "./icons";
 import "leaflet/dist/leaflet.css";
 import "leaflet.markercluster/dist/MarkerCluster.css";
 import "leaflet.markercluster/dist/MarkerCluster.Default.css";
@@ -20,6 +20,8 @@ interface ParkingMapProps {
   center: LatLng;
   /** Nutzerstandort, falls erlaubt und ermittelt. */
   userPosition: LatLng | null;
+  /** Eingegebenes Reiseziel, falls eines gewählt wurde (ToDo 6.12). */
+  destination: (LatLng & { label: string }) | null;
   nearestId: string | null;
   /** Gemeinsam hervorgehobene Parkplätze der Auswahl, falls aufgeklappt. */
   highlightIds?: ReadonlySet<string> | null;
@@ -86,6 +88,7 @@ export default function ParkingMap({
   spots,
   center,
   userPosition,
+  destination,
   nearestId,
   highlightIds = null,
   focus,
@@ -119,6 +122,16 @@ export default function ParkingMap({
           position={[userPosition.lat, userPosition.lng]}
           icon={userIcon}
           alt="Dein Standort"
+          interactive={false}
+        />
+      )}
+
+      {destination && (
+        <Marker
+          position={[destination.lat, destination.lng]}
+          icon={destinationIcon}
+          alt={`Ziel: ${destination.label}`}
+          title={`Ziel: ${destination.label}`}
           interactive={false}
         />
       )}

@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import type { ParkingSpotWithDistance } from "@/lib/types";
 import { formatDistance } from "@/lib/geo";
 import { mapsLabel, mapsUrl, type MapsTarget } from "@/lib/navigation";
-import { restrictionState } from "@/lib/opening-hours";
 import { spotTitle } from "@/lib/parking/display";
+import { RestrictionBadge } from "./RestrictionBadge";
 
 /**
  * Leiste über der Karte: der nächstgelegene Parkplatz und ein Knopf, der die
@@ -41,6 +41,18 @@ interface NearestBarProps {
   onExpandedChange: (expanded: boolean) => void;
   /** Liegt überhaupt ein Standort vor? */
   hasPosition: boolean;
+  /** Name des Reiseziels, falls eines gesetzt ist – sonst `null`. */
+  destinationLabel?: string | null;
+  /** Gewählter Umkreis um das Ziel in Metern. */
+  radius?: number;
+  onRadiusChange?: (meters: number) => void;
+}
+
+/** Umkreise, die zur Auswahl stehen (ToDo 6.12). */
+const RADIUS_CHOICES = [300, 500, 1000];
+
+function radiusLabel(meters: number): string {
+  return meters >= 1000 ? `${meters / 1000} km` : `${meters} m`;
 }
 
 /** Zusatzangaben einer Zeile: Stellplätze und eine geltende Beschränkung. */
@@ -59,6 +71,9 @@ export function NearestBar({
   onTargetChange,
   onExpandedChange,
   hasPosition,
+  destinationLabel = null,
+  radius = 500,
+  onRadiusChange,
 }: NearestBarProps) {
   /**
    * Geschlossen und aufgeklappt sind **Sitzungszustand**, bewusst nicht in
@@ -92,7 +107,7 @@ export function NearestBar({
   // meinem Standort", damit nicht zwei Knopfreihen über der Karte stehen.
   if (closed) {
     return (
-      <div className="pointer-events-none absolute inset-x-0 top-0 z-[1000] flex justify-end gap-2 p-3">
+      <div className="flex justify-end gap-2">
         <button
           type="button"
           onClick={() => setClosed(false)}
@@ -116,12 +131,16 @@ export function NearestBar({
   const alternatives = candidates.slice(1);
 
   return (
-    <div className="pointer-events-none absolute inset-x-0 top-0 z-[1000] p-3">
-      <div className="pointer-events-auto rounded-xl bg-white/95 p-3 shadow-lg backdrop-blur dark:bg-neutral-900/95">
+    <div>
+      <div className="pointer-events-auto max-h-[60vh] overflow-y-auto rounded-xl bg-white/95 p-3 shadow-lg backdrop-blur dark:bg-neutral-900/95">
         <div className="flex items-start gap-2">
           <div className="min-w-0 flex-1">
             <p className="text-xs text-neutral-500">
-              {target === nearest ? "Nächster Behindertenparkplatz" : "Gewähltes Ziel"}
+              {destinationLabel
+                ? `Parkplatz bei ${destinationLabel}`
+                : target === nearest
+                  ? "Nächster Behindertenparkplatz"
+                  : "Gewähltes Ziel"}
             </p>
             <p className="truncate font-semibold">{spotTitle(target)}</p>
             <p className="text-sm text-neutral-600 dark:text-neutral-400">{spotMeta(target)}</p>
@@ -165,6 +184,46 @@ export function NearestBar({
           </button>
         </div>
 
+        {/*
+          Umkreis nur bei gesetztem Ziel. Ohne Ziel ist die Frage „was ist am
+          nächsten", mit Ziel „was ist nah genug" – und das entscheidet, wer
+          hinfährt, nicht die App.
+        */}
+        {destinationLabel && onRadiusChange && (
+          <div className="mt-2 flex items-center gap-2">
+            <span id="umkreis-label" className="text-xs text-neutral-500">
+              Umkreis
+            </span>
+            <div
+              role="radiogroup"
+              aria-labelledby="umkreis-label"
+              className="flex overflow-hidden rounded-lg border border-neutral-300 text-sm dark:border-neutral-700"
+            >
+              {RADIUS_CHOICES.map((meters) => (
+                <button
+                  key={meters}
+                  type="button"
+                  role="radio"
+                  aria-checked={radius === meters}
+                  onClick={() => onRadiusChange(meters)}
+                  className={`min-h-11 px-3 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none ${
+                    radius === meters
+                      ? "bg-blue-700 text-white"
+                      : "bg-white text-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
+                  }`}
+                >
+                  {radiusLabel(meters)}
+                </button>
+              ))}
+            </div>
+            <span className="text-xs text-neutral-500">
+              {candidates.length === 1 && candidates[0].distanceMeters > radius
+                ? "nichts im Umkreis – nächster gezeigt"
+                : `${candidates.length} gefunden`}
+            </span>
+          </div>
+        )}
+
         {alternatives.length > 0 && (
           <>
             <button
@@ -199,11 +258,7 @@ export function NearestBar({
                         <span className="block text-xs text-neutral-500">{spotMeta(spot)}</span>
                         {/* Dass eine Beschränkung gerade greift, entscheidet
                             mit darüber, welchen Platz man ansteuert. */}
-                        {restrictionState(spot.timeRestriction) === "gilt" && (
-                          <span className="mt-0.5 inline-block rounded bg-amber-100 px-1.5 py-0.5 text-xs font-medium text-amber-900 dark:bg-amber-950 dark:text-amber-200">
-                            Beschränkung gilt jetzt
-                          </span>
-                        )}
+                        <RestrictionBadge spot={spot} />
                       </span>
                       {spot.id === target.id && (
                         <span aria-hidden="true" className="shrink-0 text-blue-700">

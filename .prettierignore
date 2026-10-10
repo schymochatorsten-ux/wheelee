@@ -4,4 +4,9 @@ out
 build
 package-lock.json
 data/**/*.json
+# Von Skripten erzeugte Berichte – sie werden geschrieben, nicht gepflegt.
+data/*.md
+# Playwright-Artefakte eines Testlaufs
+test-results
+playwright-report
 Parkplätze

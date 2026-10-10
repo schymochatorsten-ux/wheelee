@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "gronau",
+    "name": "Gronau (Westf.)",
+    "center": {
+      "lat": 52.2114557,
+      "lng": 7.0398074
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-10",
+  "spots": [
+    {
+      "id": "gronau-f14e313909",
+      "city": "gronau",
+      "label": "Alfred-Dragstra-Platz",
+      "street": "Alfred-Dragstra-Platz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gronau (Westf.)",
+      "spotCount": 1,
+      "lat": 52.2114557,
+      "lng": 7.027538,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/90626892), ODbL"
+    },
+    {
+      "id": "gronau-c293c5a7e0",
+      "city": "gronau",
+      "label": "Brechter Weg",
+      "street": "Brechter Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Gronau (Westf.)",
+      "spotCount": 3,
+      "lat": 52.2375799,
+      "lng": 7.0805984,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/55260684), ODbL"
+    },
+    {
+      "id": "gronau-f7a0566f23",
+      "city": "gronau",
+      "label": "Kastanienweg",
+      "street": "Kastanienweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Gronau (Westf.)",
+      "spotCount": 1,
+      "lat": 52.2377147,
+      "lng": 7.0763472,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/51899839), ODbL"
+    },
+    {
+      "id": "gronau-e66bbc4424",
+      "city": "gronau",
+      "label": "Möllenweg",
+      "street": "Möllenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Gronau (Westf.)",
+      "spotCount": 1,
+      "lat": 52.2089246,
+      "lng": 7.0199784,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/38424090), ODbL"
+    },
+    {
+      "id": "gronau-90d1999d39",
+      "city": "gronau",
+      "label": "Parkstraße",
+      "street": "Parkstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gronau (Westf.)",
+      "spotCount": 2,
+      "lat": 52.210616,
+      "lng": 7.0224114,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/33821168), ODbL"
+    },
+    {
+      "id": "gronau-65bdeeb5f0",
+      "city": "gronau",
+      "label": "Von-Keppel-Straße 2",
+      "street": "Von-Keppel-Straße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gronau (Westf.)",
+      "spotCount": 2,
+      "lat": 52.1803888,
+      "lng": 7.0398074,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/850416390), ODbL"
+    }
+  ]
+}

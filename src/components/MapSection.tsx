@@ -102,6 +102,13 @@ export function MapSection({ initialNearby, cities, defaultCity, totalSpots }: M
   const [destination, setDestination] = useState<Place | null>(null);
 
   /**
+   * Umkreis um das Ziel (ToDo 6.12). 500 m ist die Voreinstellung: etwa fünf
+   * Gehminuten, und für jemanden mit Gehbehinderung schon eine Entscheidung
+   * wert – weiter ist selten zumutbar, näher oft nicht zu haben.
+   */
+  const [radius, setRadius] = useState(500);
+
+  /**
    * Karten-App: was das Gerät nahelegt und was die Nutzerin gewählt hat.
    * Beides erst nach dem Laden, weil `navigator` und `localStorage` auf dem
    * Server fehlen.
@@ -143,10 +150,22 @@ export function MapSection({ initialNearby, cities, defaultCity, totalSpots }: M
   // Die Auswahl der Leiste: die nächsten Parkplätze zum eigenen Standort.
   // Ohne Standortfreigabe zählt die Liste ab der Stadtmitte, und das wäre
   // kein Vorschlag, sondern Zufall.
-  const candidates = useMemo(
-    () => (reference ? nearby.slice(0, CANDIDATE_COUNT) : []),
-    [reference, nearby],
-  );
+  /**
+   * Was die Leiste anbietet.
+   *
+   * Ohne Ziel die fünf nächstgelegenen. Mit Ziel alles im gewählten Umkreis –
+   * dort ist die Frage nicht „was ist am nächsten", sondern „was ist nah
+   * genug". Liegt im Umkreis nichts, wird trotzdem der nächstgelegene
+   * genannt: Ein leerer Vorschlag hilft niemandem, der gleich losfährt, und
+   * die Entfernung steht ja daneben.
+   */
+  const candidates = useMemo(() => {
+    if (!reference) return [];
+    if (!destination) return nearby.slice(0, CANDIDATE_COUNT);
+
+    const inRadius = nearby.filter((spot) => spot.distanceMeters <= radius);
+    return inRadius.length > 0 ? inRadius.slice(0, LIST_LIMIT) : nearby.slice(0, 1);
+  }, [reference, nearby, destination, radius]);
 
   /** Ein gewähltes Ziel rückt sofort ins Bild. */
   const chooseDestination = useCallback((place: Place) => {
@@ -297,6 +316,7 @@ export function MapSection({ initialNearby, cities, defaultCity, totalSpots }: M
               spots={mapSpots}
               center={center}
               userPosition={geo.position}
+              destination={destination}
               nearestId={barTargetId ?? nearest?.id ?? null}
               highlightIds={highlightIds}
               focus={focus}
@@ -305,27 +325,32 @@ export function MapSection({ initialNearby, cities, defaultCity, totalSpots }: M
             />
             {/* Nur zeigen, solange keine Detailansicht offen ist – sonst
                 stünden zwei Navigationsknöpfe übereinander. */}
-            {/* Die Zielsuche sitzt unter der Leiste, damit sie den
-                Parkplatzvorschlag nicht verdeckt. */}
+            {/*
+              Parkplatzvorschlag und Zielsuche stehen gemeinsam oben in einer
+              Spalte. Unten am Kartenrand ginge nicht: Dort sitzt die
+              OpenStreetMap-Attribution, und die muss sichtbar bleiben – das
+              verlangt die ODbL.
+            */}
             {!selected && (
-              <div className="pointer-events-none absolute inset-x-0 bottom-3 z-[1000] pr-16 pl-3">
+              <div className="pointer-events-none absolute inset-x-0 top-0 z-[1000] flex flex-col gap-2 p-3">
+                <NearestBar
+                  candidates={candidates}
+                  mapsTarget={mapsTarget}
+                  hasPosition={reference !== null}
+                  onBackToMe={backToMe}
+                  onShowDetails={select}
+                  onTargetChange={onTargetChange}
+                  onExpandedChange={setBarExpanded}
+                  destinationLabel={destination?.label ?? null}
+                  radius={radius}
+                  onRadiusChange={setRadius}
+                />
                 <DestinationSearch
                   destination={destination}
                   onChoose={chooseDestination}
                   onClear={() => setDestination(null)}
                 />
               </div>
-            )}
-            {!selected && (
-              <NearestBar
-                candidates={candidates}
-                mapsTarget={mapsTarget}
-                hasPosition={reference !== null}
-                onBackToMe={backToMe}
-                onShowDetails={select}
-                onTargetChange={onTargetChange}
-                onExpandedChange={setBarExpanded}
-              />
             )}
             {/*
               Wenn der Ausschnitt mehr Parkplätze enthält, als geladen werden,
