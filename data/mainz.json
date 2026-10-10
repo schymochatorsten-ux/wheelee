@@ -71,21 +71,6 @@
       "source": "OpenStreetMap (way/1535287603), ODbL"
     },
     {
-      "id": "mainz-ace8ce842a",
-      "city": "mainz",
-      "label": "Albert-Schweitzer-Straße",
-      "street": "Albert-Schweitzer-Straße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Mainz",
-      "spotCount": 1,
-      "lat": 49.992237,
-      "lng": 8.2459057,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1535287604), ODbL"
-    },
-    {
       "id": "mainz-a427607049",
       "city": "mainz",
       "label": "Alfred-Delp-Straße",
@@ -731,21 +716,6 @@
       "source": "OpenStreetMap (way/1542996440), ODbL"
     },
     {
-      "id": "mainz-64ab7358bf",
-      "city": "mainz",
-      "label": "Fischtorplatz 14",
-      "street": "Fischtorplatz",
-      "houseNumber": "14",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Mainz",
-      "spotCount": 1,
-      "lat": 49.9994267,
-      "lng": 8.277203,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1542996441), ODbL"
-    },
-    {
       "id": "mainz-995789b3aa",
       "city": "mainz",
       "label": "Franz-Werfel-Straße 9",
@@ -1344,21 +1314,6 @@
       "lng": 8.2764185,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1526562099), ODbL"
-    },
-    {
-      "id": "mainz-b713c86368",
-      "city": "mainz",
-      "label": "Holzstraße 2",
-      "street": "Holzstraße",
-      "houseNumber": "2",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Mainz",
-      "spotCount": 1,
-      "lat": 49.9961195,
-      "lng": 8.2763929,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1526562100), ODbL"
     },
     {
       "id": "mainz-0efdc1ab75",

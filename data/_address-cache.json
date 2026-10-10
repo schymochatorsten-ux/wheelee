@@ -413,5 +413,165 @@
     "street": "Schmiedestraße",
     "houseNumber": null,
     "place": "Gemarkung Nächstebreck"
+  },
+  "54.20745,12.18509": {
+    "street": "Stellstellenweg",
+    "houseNumber": null
+  },
+  "54.20673,12.15668": {
+    "street": "Strandaufgang 33",
+    "houseNumber": null
+  },
+  "54.19068,12.15840": {
+    "street": "Warnemünder Straße",
+    "houseNumber": null
+  },
+  "54.20592,12.17003": {
+    "street": "Wiesenweg",
+    "houseNumber": null
+  },
+  "54.21655,12.18742": {
+    "street": "Blocksbrückenweg",
+    "houseNumber": null
+  },
+  "54.19269,12.21002": {
+    "street": "Graal-Müritzer Straße",
+    "houseNumber": "33"
+  },
+  "54.20348,12.28976": {
+    "street": "Meyers Hausstellen Weg",
+    "houseNumber": null
+  },
+  "54.18442,12.23733": {
+    "street": "Wiethagen",
+    "houseNumber": null
+  },
+  "54.18196,12.22777": {
+    "street": "Wiethagen",
+    "houseNumber": "4a"
+  },
+  "54.24382,12.21273": {
+    "street": "Wiedortschneise",
+    "houseNumber": null
+  },
+  "54.17189,12.14621": {
+    "street": "Schnatermann",
+    "houseNumber": "1"
+  },
+  "54.19431,12.15692": {
+    "street": "Budentannenweg",
+    "houseNumber": null
+  },
+  "54.17479,12.20047": {
+    "street": "Bauernwiesenschneise",
+    "houseNumber": null
+  },
+  "54.22197,12.22284": {
+    "street": "L 22",
+    "houseNumber": null
+  },
+  "54.19137,12.17884": {
+    "street": "Fesselbrandsweg",
+    "houseNumber": null
+  },
+  "54.19093,12.15586": {
+    "street": "Warnemünder Straße",
+    "houseNumber": null
+  },
+  "54.18450,12.24555": {
+    "street": "Wiethagen",
+    "houseNumber": null
+  },
+  "54.18647,12.20745": {
+    "street": "Graal-Müritzer Straße",
+    "houseNumber": null
+  },
+  "54.19299,12.22305": {
+    "street": "Wiethäger Schneise",
+    "houseNumber": null
+  },
+  "54.23518,12.27633": {
+    "street": "Natheidenschneise",
+    "houseNumber": null
+  },
+  "54.19162,12.16718": {
+    "street": "Katthäger Weg",
+    "houseNumber": null
+  },
+  "54.23957,12.19574": {
+    "street": "Habichthorstschneise",
+    "houseNumber": null
+  },
+  "54.19119,12.22207": {
+    "street": "Hinrichshäger Schneise",
+    "houseNumber": null
+  },
+  "54.19998,12.23809": {
+    "street": null,
+    "houseNumber": null
+  },
+  "54.20721,12.26655": {
+    "street": "Lindenbruchschneise",
+    "houseNumber": null
+  },
+  "54.18483,12.23357": {
+    "street": "Wiethagen",
+    "houseNumber": null
+  },
+  "54.21145,12.20177": {
+    "street": "Rosenortschneise",
+    "houseNumber": null
+  },
+  "54.19914,12.27234": {
+    "street": "Meyershausstellenschneise",
+    "houseNumber": null
+  },
+  "54.16921,12.17094": {
+    "street": "Stuthof",
+    "houseNumber": "8"
+  },
+  "54.20728,12.28545": {
+    "street": "Dankelmannschneise",
+    "houseNumber": null
+  },
+  "54.22740,12.25021": {
+    "street": "Scheidenschneise",
+    "houseNumber": null
+  },
+  "54.23708,12.22213": {
+    "street": "L 22",
+    "houseNumber": null
+  },
+  "54.20367,12.25781": {
+    "street": "Pöstenschneise",
+    "houseNumber": null
+  },
+  "54.17405,12.16762": {
+    "street": "Alte Stutthöfer Schneise",
+    "houseNumber": null
+  },
+  "54.16829,12.18196": {
+    "street": "Backofenschneise",
+    "houseNumber": null
+  },
+  "54.17488,12.16823": {
+    "street": "Alte Stutthöfer Schneise",
+    "houseNumber": null
+  },
+  "54.17661,12.17516": {
+    "street": "Stuthöfer Schneise",
+    "houseNumber": null
+  },
+  "54.19986,12.28187": {
+    "street": "Hundeteichschneise",
+    "houseNumber": null
+  },
+  "54.17445,12.18668": {
+    "street": "Fahrenshauptbergschneise",
+    "houseNumber": null
+  },
+  "54.17385,12.18039": {
+    "street": "Backofenschneise",
+    "houseNumber": null
   }
 }

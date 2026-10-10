@@ -4,7 +4,9 @@ import { useEffect, useRef } from "react";
 import type { ParkingSpot } from "@/lib/types";
 import { formatDistance } from "@/lib/geo";
 import { mapsLabel, mapsUrl, type MapsTarget } from "@/lib/navigation";
-import { normalizeTimeRestriction, restrictionState } from "@/lib/opening-hours";
+import { maxStay, normalizeTimeRestriction, restrictionState } from "@/lib/opening-hours";
+import { spotTitle } from "@/lib/parking/display";
+import { DataDisclaimer } from "./DataDisclaimer";
 import { FeedbackButton } from "./FeedbackButton";
 import { ShareButton } from "./ShareButton";
 
@@ -21,14 +23,10 @@ interface SpotDetailsProps {
   distanceMeters: number | null;
   /** Name der Stadt, zu der der Parkplatz gehört. */
   cityName: string;
+  /** Tag des Imports für diese Stadt (ISO), falls bekannt. */
+  importedAt?: string | null;
   mapsTarget: MapsTarget;
   onClose: () => void;
-}
-
-/** Adresse so zusammensetzen, wie sie in der Quelle gemeint ist. */
-function addressLine(spot: ParkingSpot): string {
-  const street = [spot.street, spot.houseNumber].filter(Boolean).join(" ");
-  return street.length > 0 ? street : spot.label;
 }
 
 /**
@@ -60,6 +58,7 @@ export function SpotDetails({
   spot,
   distanceMeters,
   cityName,
+  importedAt = null,
   mapsTarget,
   onClose,
 }: SpotDetailsProps) {
@@ -69,6 +68,7 @@ export function SpotDetails({
   // „24/7“ und „von 00:00 Uhr bis 24:00 Uhr“ sind keine Beschränkungen –
   // als „Nur: 24/7“ gelesen wirken sie aber wie eine.
   const timeRestriction = normalizeTimeRestriction(spot.timeRestriction);
+  const parkingDuration = maxStay(spot.timeRestriction);
   const state = restrictionState(spot.timeRestriction);
 
   // Fokus in das Sheet holen, damit Tastatur und Screenreader hier weiterarbeiten.
@@ -93,7 +93,7 @@ export function SpotDetails({
     >
       <div className="flex items-start gap-3">
         <h2 id="spot-details-title" className="flex-1 text-lg leading-snug font-semibold">
-          {addressLine(spot)}
+          {spotTitle(spot)}
         </h2>
         <button
           ref={closeButton}
@@ -123,7 +123,20 @@ export function SpotDetails({
           <dt className="text-neutral-500">Stellplätze</dt>
           <dd>{spot.spotCount}</dd>
         </div>
-        {timeRestriction && (
+        {/*
+          Höchstparkdauer und Zeitfenster sind zwei verschiedene Dinge:
+          „2 Stunden" sagt, wie lange man stehen darf, „Mo-Fr 8-18 Uhr", wann
+          die Regel gilt. Unter derselben Beschriftung „Nur" gelesen wären sie
+          verwechselbar – und wer eine Höchstparkdauer für eine Öffnungszeit
+          hält, bekommt ein Knöllchen.
+        */}
+        {parkingDuration && (
+          <div className="flex gap-2">
+            <dt className="text-neutral-500">Höchstparkdauer</dt>
+            <dd>{parkingDuration}</dd>
+          </div>
+        )}
+        {!parkingDuration && timeRestriction && (
           <div className="flex gap-2">
             <dt className="text-neutral-500">Nur</dt>
             <dd>{timeRestriction}</dd>
@@ -184,7 +197,11 @@ export function SpotDetails({
       {/* Die Bewertungen (Abschnitt 8 der ToDos) brauchen die Datenbank-
           Entscheidung D-02 und folgen danach an dieser Stelle. */}
 
-      <p className="mt-4 text-xs text-neutral-500">Quelle: {sourceText(spot.source)}</p>
+      {/* Direkt unter dem Navigationsknopf, nicht am Seitenende: Hier wird
+          entschieden, ob jemand losfährt. */}
+      <DataDisclaimer importedAt={importedAt} />
+
+      <p className="mt-2 text-xs text-neutral-500">Quelle: {sourceText(spot.source)}</p>
     </aside>
   );
 }

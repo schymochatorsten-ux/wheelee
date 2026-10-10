@@ -1796,21 +1796,6 @@
       "source": "OpenStreetMap (way/1323949144), ODbL"
     },
     {
-      "id": "magdeburg-af1b39acf2",
-      "city": "magdeburg",
-      "label": "Heinrich-Heine-Platz",
-      "street": "Heinrich-Heine-Platz",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Magdeburg",
-      "spotCount": 1,
-      "lat": 52.1175741,
-      "lng": 11.6399818,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1323949145), ODbL"
-    },
-    {
       "id": "magdeburg-fcba3cbffd",
       "city": "magdeburg",
       "label": "Heinrich-Heine-Platz",
@@ -1929,21 +1914,6 @@
       "lng": 11.581084,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1279474678), ODbL"
-    },
-    {
-      "id": "magdeburg-8f658164ef",
-      "city": "magdeburg",
-      "label": "Johannes-Schlaf-Straße",
-      "street": "Johannes-Schlaf-Straße",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Magdeburg",
-      "spotCount": 1,
-      "lat": 52.1300643,
-      "lng": 11.5808235,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1279474680), ODbL"
     },
     {
       "id": "magdeburg-37f2a19cb2",
@@ -2591,21 +2561,6 @@
       "source": "OpenStreetMap (way/1265295170), ODbL"
     },
     {
-      "id": "magdeburg-9e0ca4e57b",
-      "city": "magdeburg",
-      "label": "Otto-von-Guericke-Straße",
-      "street": "Otto-von-Guericke-Straße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Magdeburg",
-      "spotCount": 1,
-      "lat": 52.1337366,
-      "lng": 11.633698,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1265295173), ODbL"
-    },
-    {
       "id": "magdeburg-d7bf7a3f50",
       "city": "magdeburg",
       "label": "Otto-von-Guericke-Straße",
@@ -3054,21 +3009,6 @@
       "lng": 11.6689394,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1456112371), ODbL"
-    },
-    {
-      "id": "magdeburg-fae3fb5f19",
-      "city": "magdeburg",
-      "label": "Zur Schleuse",
-      "street": "Zur Schleuse",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Magdeburg",
-      "spotCount": 1,
-      "lat": 52.2237086,
-      "lng": 11.6688968,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1456112372), ODbL"
     },
     {
       "id": "magdeburg-57e41ac13e",

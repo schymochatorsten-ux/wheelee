@@ -5,88 +5,191 @@ import type { SeedFile } from "./spots";
 
 import seed0 from "../../../data/hamburg.json";
 import seed1 from "../../../data/berlin.json";
-import seed2 from "../../../data/nuernberg.json";
-import seed3 from "../../../data/dresden.json";
+import seed2 from "../../../data/dresden.json";
+import seed3 from "../../../data/nuernberg.json";
 import seed4 from "../../../data/frankfurt.json";
 import seed5 from "../../../data/koeln.json";
 import seed6 from "../../../data/goettingen.json";
-import seed7 from "../../../data/bonn.json";
-import seed8 from "../../../data/augsburg.json";
+import seed7 from "../../../data/augsburg.json";
+import seed8 from "../../../data/bonn.json";
 import seed9 from "../../../data/dortmund.json";
 import seed10 from "../../../data/duesseldorf.json";
-import seed11 from "../../../data/freiburg.json";
-import seed12 from "../../../data/karlsruhe.json";
+import seed11 from "../../../data/karlsruhe.json";
+import seed12 from "../../../data/freiburg.json";
 import seed13 from "../../../data/luebeck.json";
 import seed14 from "../../../data/stuttgart.json";
-import seed15 from "../../../data/essen.json";
-import seed16 from "../../../data/leipzig.json";
-import seed17 from "../../../data/witten.json";
-import seed18 from "../../../data/gelsenkirchen.json";
-import seed19 from "../../../data/muenchen.json";
-import seed20 from "../../../data/heidelberg.json";
-import seed21 from "../../../data/magdeburg.json";
-import seed22 from "../../../data/potsdam.json";
+import seed15 from "../../../data/euskirchen.json";
+import seed16 from "../../../data/essen.json";
+import seed17 from "../../../data/leipzig.json";
+import seed18 from "../../../data/witten.json";
+import seed19 from "../../../data/gelsenkirchen.json";
+import seed20 from "../../../data/muenchen.json";
+import seed21 from "../../../data/heidelberg.json";
+import seed22 from "../../../data/magdeburg.json";
 import seed23 from "../../../data/hamm.json";
-import seed24 from "../../../data/solingen.json";
-import seed25 from "../../../data/bergisch-gladbach.json";
-import seed26 from "../../../data/hannover.json";
-import seed27 from "../../../data/mainz.json";
-import seed28 from "../../../data/bochum.json";
-import seed29 from "../../../data/muenster.json";
-import seed30 from "../../../data/saarbruecken.json";
-import seed31 from "../../../data/bottrop.json";
-import seed32 from "../../../data/wuerzburg.json";
-import seed33 from "../../../data/bielefeld.json";
-import seed34 from "../../../data/leverkusen.json";
-import seed35 from "../../../data/duisburg.json";
-import seed36 from "../../../data/bremen.json";
-import seed37 from "../../../data/aachen.json";
-import seed38 from "../../../data/erlangen.json";
-import seed39 from "../../../data/paderborn.json";
-import seed40 from "../../../data/koblenz.json";
-import seed41 from "../../../data/cottbus.json";
-import seed42 from "../../../data/kassel.json";
-import seed43 from "../../../data/moenchengladbach.json";
-import seed44 from "../../../data/oldenburg.json";
-import seed45 from "../../../data/darmstadt.json";
-import seed46 from "../../../data/erfurt.json";
-import seed47 from "../../../data/mannheim.json";
-import seed48 from "../../../data/braunschweig.json";
-import seed49 from "../../../data/kiel.json";
-import seed50 from "../../../data/jena.json";
-import seed51 from "../../../data/wolfsburg.json";
-import seed52 from "../../../data/trier.json";
-import seed53 from "../../../data/oberhausen.json";
-import seed54 from "../../../data/moers.json";
-import seed55 from "../../../data/wuppertal.json";
-import seed56 from "../../../data/hagen.json";
-import seed57 from "../../../data/halle.json";
-import seed58 from "../../../data/kaiserslautern.json";
-import seed59 from "../../../data/recklinghausen.json";
-import seed60 from "../../../data/muelheim.json";
-import seed61 from "../../../data/pforzheim.json";
-import seed62 from "../../../data/wiesbaden.json";
-import seed63 from "../../../data/ulm.json";
-import seed64 from "../../../data/reutlingen.json";
-import seed65 from "../../../data/fuerth.json";
-import seed66 from "../../../data/siegen.json";
-import seed67 from "../../../data/krefeld.json";
-import seed68 from "../../../data/neuss.json";
-import seed69 from "../../../data/hildesheim.json";
-import seed70 from "../../../data/ludwigshafen.json";
-import seed71 from "../../../data/herne.json";
-import seed72 from "../../../data/guetersloh.json";
-import seed73 from "../../../data/ingolstadt.json";
-import seed74 from "../../../data/heilbronn.json";
-import seed75 from "../../../data/bremerhaven.json";
-import seed76 from "../../../data/remscheid.json";
-import seed77 from "../../../data/offenbach.json";
-import seed78 from "../../../data/chemnitz.json";
-import seed79 from "../../../data/osnabrueck.json";
-import seed80 from "../../../data/salzgitter.json";
-import seed81 from "../../../data/idstein.json";
-import seed82 from "../../../data/rostock.json";
-import seed83 from "../../../data/weissenhorn.json";
+import seed24 from "../../../data/potsdam.json";
+import seed25 from "../../../data/solingen.json";
+import seed26 from "../../../data/bergisch-gladbach.json";
+import seed27 from "../../../data/hannover.json";
+import seed28 from "../../../data/mainz.json";
+import seed29 from "../../../data/bochum.json";
+import seed30 from "../../../data/muenster.json";
+import seed31 from "../../../data/saarbruecken.json";
+import seed32 from "../../../data/bottrop.json";
+import seed33 from "../../../data/schweinfurt.json";
+import seed34 from "../../../data/wuerzburg.json";
+import seed35 from "../../../data/bielefeld.json";
+import seed36 from "../../../data/leverkusen.json";
+import seed37 from "../../../data/duisburg.json";
+import seed38 from "../../../data/troisdorf.json";
+import seed39 from "../../../data/bremen.json";
+import seed40 from "../../../data/aachen.json";
+import seed41 from "../../../data/erlangen.json";
+import seed42 from "../../../data/paderborn.json";
+import seed43 from "../../../data/tuebingen.json";
+import seed44 from "../../../data/rostock.json";
+import seed45 from "../../../data/worms.json";
+import seed46 from "../../../data/neumuenster.json";
+import seed47 from "../../../data/koblenz.json";
+import seed48 from "../../../data/cottbus.json";
+import seed49 from "../../../data/hattingen.json";
+import seed50 from "../../../data/kassel.json";
+import seed51 from "../../../data/moenchengladbach.json";
+import seed52 from "../../../data/oldenburg.json";
+import seed53 from "../../../data/erfurt.json";
+import seed54 from "../../../data/darmstadt.json";
+import seed55 from "../../../data/mannheim.json";
+import seed56 from "../../../data/braunschweig.json";
+import seed57 from "../../../data/fulda.json";
+import seed58 from "../../../data/kiel.json";
+import seed59 from "../../../data/jena.json";
+import seed60 from "../../../data/wolfsburg.json";
+import seed61 from "../../../data/trier.json";
+import seed62 from "../../../data/oberhausen.json";
+import seed63 from "../../../data/baden-baden.json";
+import seed64 from "../../../data/friedrichshafen.json";
+import seed65 from "../../../data/sankt-augustin.json";
+import seed66 from "../../../data/wuppertal.json";
+import seed67 from "../../../data/zwickau.json";
+import seed68 from "../../../data/hagen.json";
+import seed69 from "../../../data/moers.json";
+import seed70 from "../../../data/ruesselsheim.json";
+import seed71 from "../../../data/huerth.json";
+import seed72 from "../../../data/bamberg.json";
+import seed73 from "../../../data/halle.json";
+import seed74 from "../../../data/pulheim.json";
+import seed75 from "../../../data/garbsen.json";
+import seed76 from "../../../data/kaiserslautern.json";
+import seed77 from "../../../data/muelheim.json";
+import seed78 from "../../../data/recklinghausen.json";
+import seed79 from "../../../data/eschweiler.json";
+import seed80 from "../../../data/boeblingen.json";
+import seed81 from "../../../data/unna.json";
+import seed82 from "../../../data/viersen.json";
+import seed83 from "../../../data/ludwigsburg.json";
+import seed84 from "../../../data/sindelfingen.json";
+import seed85 from "../../../data/dessau-rosslau.json";
+import seed86 from "../../../data/kerpen.json";
+import seed87 from "../../../data/pforzheim.json";
+import seed88 from "../../../data/wiesbaden.json";
+import seed89 from "../../../data/offenburg.json";
+import seed90 from "../../../data/ulm.json";
+import seed91 from "../../../data/reutlingen.json";
+import seed92 from "../../../data/arnsberg.json";
+import seed93 from "../../../data/emden.json";
+import seed94 from "../../../data/langenhagen.json";
+import seed95 from "../../../data/waiblingen.json";
+import seed96 from "../../../data/konstanz.json";
+import seed97 from "../../../data/luenen.json";
+import seed98 from "../../../data/fuerth.json";
+import seed99 from "../../../data/siegen.json";
+import seed100 from "../../../data/schwaebisch-gmuend.json";
+import seed101 from "../../../data/hanau.json";
+import seed102 from "../../../data/krefeld.json";
+import seed103 from "../../../data/bad-homburg.json";
+import seed104 from "../../../data/freising.json";
+import seed105 from "../../../data/lueneburg.json";
+import seed106 from "../../../data/willich.json";
+import seed107 from "../../../data/neuss.json";
+import seed108 from "../../../data/dorsten.json";
+import seed109 from "../../../data/dueren.json";
+import seed110 from "../../../data/hildesheim.json";
+import seed111 from "../../../data/ludwigshafen.json";
+import seed112 from "../../../data/villingen-schwenningen.json";
+import seed113 from "../../../data/frankfurt-oder.json";
+import seed114 from "../../../data/goeppingen.json";
+import seed115 from "../../../data/herne.json";
+import seed116 from "../../../data/guetersloh.json";
+import seed117 from "../../../data/kempten.json";
+import seed118 from "../../../data/hilden.json";
+import seed119 from "../../../data/ingolstadt.json";
+import seed120 from "../../../data/aschaffenburg.json";
+import seed121 from "../../../data/rosenheim.json";
+import seed122 from "../../../data/giessen.json";
+import seed123 from "../../../data/speyer.json";
+import seed124 from "../../../data/bayreuth.json";
+import seed125 from "../../../data/bergheim.json";
+import seed126 from "../../../data/heilbronn.json";
+import seed127 from "../../../data/langenfeld.json";
+import seed128 from "../../../data/weimar.json";
+import seed129 from "../../../data/bremerhaven.json";
+import seed130 from "../../../data/iserlohn.json";
+import seed131 from "../../../data/marburg.json";
+import seed132 from "../../../data/detmold.json";
+import seed133 from "../../../data/remscheid.json";
+import seed134 from "../../../data/offenbach.json";
+import seed135 from "../../../data/stolberg.json";
+import seed136 from "../../../data/castrop-rauxel.json";
+import seed137 from "../../../data/flensburg.json";
+import seed138 from "../../../data/schwerin.json";
+import seed139 from "../../../data/gera.json";
+import seed140 from "../../../data/goerlitz.json";
+import seed141 from "../../../data/landshut.json";
+import seed142 from "../../../data/rastatt.json";
+import seed143 from "../../../data/ravensburg.json";
+import seed144 from "../../../data/aalen.json";
+import seed145 from "../../../data/esslingen.json";
+import seed146 from "../../../data/velbert.json";
+import seed147 from "../../../data/passau.json";
+import seed148 from "../../../data/stralsund.json";
+import seed149 from "../../../data/wetzlar.json";
+import seed150 from "../../../data/brandenburg-havel.json";
+import seed151 from "../../../data/celle.json";
+import seed152 from "../../../data/loerrach.json";
+import seed153 from "../../../data/neu-ulm.json";
+import seed154 from "../../../data/meerbusch.json";
+import seed155 from "../../../data/neubrandenburg.json";
+import seed156 from "../../../data/goslar.json";
+import seed157 from "../../../data/gummersbach.json";
+import seed158 from "../../../data/luedenscheid.json";
+import seed159 from "../../../data/marl.json";
+import seed160 from "../../../data/peine.json";
+import seed161 from "../../../data/grevenbroich.json";
+import seed162 from "../../../data/herford.json";
+import seed163 from "../../../data/chemnitz.json";
+import seed164 from "../../../data/minden.json";
+import seed165 from "../../../data/norderstedt.json";
+import seed166 from "../../../data/osnabrueck.json";
+import seed167 from "../../../data/plauen.json";
+import seed168 from "../../../data/gladbeck.json";
+import seed169 from "../../../data/ibbenbueren.json";
+import seed170 from "../../../data/ratingen.json";
+import seed171 from "../../../data/bocholt.json";
+import seed172 from "../../../data/hameln.json";
+import seed173 from "../../../data/salzgitter.json";
+import seed174 from "../../../data/wolfenbuettel.json";
+import seed175 from "../../../data/delmenhorst.json";
+import seed176 from "../../../data/elmshorn.json";
+import seed177 from "../../../data/greifswald.json";
+import seed178 from "../../../data/lippstadt.json";
+import seed179 from "../../../data/neuwied.json";
+import seed180 from "../../../data/dinslaken.json";
+import seed181 from "../../../data/idstein.json";
+import seed182 from "../../../data/weissenhorn.json";
+import seed183 from "../../../data/wesel.json";
+import seed184 from "../../../data/rheine.json";
+import seed185 from "../../../data/lingen.json";
+import seed186 from "../../../data/nordhorn.json";
 
 export interface SeedEntry {
   seed: SeedFile;
@@ -96,8 +199,8 @@ export interface SeedEntry {
 export const seeds: SeedEntry[] = [
   { seed: seed0 as SeedFile, coverage: "official" },
   { seed: seed1 as SeedFile, coverage: "official" },
-  { seed: seed2 as SeedFile, coverage: "crowdsourced" },
-  { seed: seed3 as SeedFile, coverage: "official" },
+  { seed: seed2 as SeedFile, coverage: "official" },
+  { seed: seed3 as SeedFile, coverage: "crowdsourced" },
   { seed: seed4 as SeedFile, coverage: "official" },
   { seed: seed5 as SeedFile, coverage: "official" },
   { seed: seed6 as SeedFile, coverage: "crowdsourced" },
@@ -105,17 +208,17 @@ export const seeds: SeedEntry[] = [
   { seed: seed8 as SeedFile, coverage: "crowdsourced" },
   { seed: seed9 as SeedFile, coverage: "official" },
   { seed: seed10 as SeedFile, coverage: "official" },
-  { seed: seed11 as SeedFile, coverage: "official" },
-  { seed: seed12 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed11 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed12 as SeedFile, coverage: "official" },
   { seed: seed13 as SeedFile, coverage: "crowdsourced" },
   { seed: seed14 as SeedFile, coverage: "crowdsourced" },
   { seed: seed15 as SeedFile, coverage: "crowdsourced" },
   { seed: seed16 as SeedFile, coverage: "crowdsourced" },
   { seed: seed17 as SeedFile, coverage: "crowdsourced" },
-  { seed: seed18 as SeedFile, coverage: "official" },
-  { seed: seed19 as SeedFile, coverage: "crowdsourced" },
-  { seed: seed20 as SeedFile, coverage: "official" },
-  { seed: seed21 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed18 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed19 as SeedFile, coverage: "official" },
+  { seed: seed20 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed21 as SeedFile, coverage: "official" },
   { seed: seed22 as SeedFile, coverage: "crowdsourced" },
   { seed: seed23 as SeedFile, coverage: "crowdsourced" },
   { seed: seed24 as SeedFile, coverage: "crowdsourced" },
@@ -125,8 +228,8 @@ export const seeds: SeedEntry[] = [
   { seed: seed28 as SeedFile, coverage: "crowdsourced" },
   { seed: seed29 as SeedFile, coverage: "crowdsourced" },
   { seed: seed30 as SeedFile, coverage: "crowdsourced" },
-  { seed: seed31 as SeedFile, coverage: "official" },
-  { seed: seed32 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed31 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed32 as SeedFile, coverage: "official" },
   { seed: seed33 as SeedFile, coverage: "crowdsourced" },
   { seed: seed34 as SeedFile, coverage: "crowdsourced" },
   { seed: seed35 as SeedFile, coverage: "crowdsourced" },
@@ -157,12 +260,12 @@ export const seeds: SeedEntry[] = [
   { seed: seed60 as SeedFile, coverage: "crowdsourced" },
   { seed: seed61 as SeedFile, coverage: "crowdsourced" },
   { seed: seed62 as SeedFile, coverage: "crowdsourced" },
-  { seed: seed63 as SeedFile, coverage: "official" },
+  { seed: seed63 as SeedFile, coverage: "crowdsourced" },
   { seed: seed64 as SeedFile, coverage: "crowdsourced" },
   { seed: seed65 as SeedFile, coverage: "crowdsourced" },
   { seed: seed66 as SeedFile, coverage: "crowdsourced" },
   { seed: seed67 as SeedFile, coverage: "crowdsourced" },
-  { seed: seed68 as SeedFile, coverage: "official" },
+  { seed: seed68 as SeedFile, coverage: "crowdsourced" },
   { seed: seed69 as SeedFile, coverage: "crowdsourced" },
   { seed: seed70 as SeedFile, coverage: "crowdsourced" },
   { seed: seed71 as SeedFile, coverage: "crowdsourced" },
@@ -172,10 +275,113 @@ export const seeds: SeedEntry[] = [
   { seed: seed75 as SeedFile, coverage: "crowdsourced" },
   { seed: seed76 as SeedFile, coverage: "crowdsourced" },
   { seed: seed77 as SeedFile, coverage: "crowdsourced" },
-  { seed: seed78 as SeedFile, coverage: "official" },
+  { seed: seed78 as SeedFile, coverage: "crowdsourced" },
   { seed: seed79 as SeedFile, coverage: "crowdsourced" },
   { seed: seed80 as SeedFile, coverage: "crowdsourced" },
   { seed: seed81 as SeedFile, coverage: "crowdsourced" },
-  { seed: seed82 as SeedFile, coverage: "official" },
+  { seed: seed82 as SeedFile, coverage: "crowdsourced" },
   { seed: seed83 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed84 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed85 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed86 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed87 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed88 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed89 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed90 as SeedFile, coverage: "official" },
+  { seed: seed91 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed92 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed93 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed94 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed95 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed96 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed97 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed98 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed99 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed100 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed101 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed102 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed103 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed104 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed105 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed106 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed107 as SeedFile, coverage: "official" },
+  { seed: seed108 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed109 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed110 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed111 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed112 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed113 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed114 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed115 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed116 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed117 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed118 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed119 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed120 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed121 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed122 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed123 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed124 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed125 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed126 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed127 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed128 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed129 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed130 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed131 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed132 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed133 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed134 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed135 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed136 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed137 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed138 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed139 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed140 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed141 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed142 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed143 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed144 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed145 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed146 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed147 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed148 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed149 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed150 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed151 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed152 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed153 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed154 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed155 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed156 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed157 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed158 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed159 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed160 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed161 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed162 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed163 as SeedFile, coverage: "official" },
+  { seed: seed164 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed165 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed166 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed167 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed168 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed169 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed170 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed171 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed172 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed173 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed174 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed175 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed176 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed177 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed178 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed179 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed180 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed181 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed182 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed183 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed184 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed185 as SeedFile, coverage: "crowdsourced" },
+  { seed: seed186 as SeedFile, coverage: "crowdsourced" },
 ];

@@ -1271,21 +1271,6 @@
       "source": "OpenStreetMap (way/1010247990), ODbL"
     },
     {
-      "id": "leipzig-c65a4263d7",
-      "city": "leipzig",
-      "label": "Hans-Marchwitza-Straße",
-      "street": "Hans-Marchwitza-Straße",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Leipzig",
-      "spotCount": 3,
-      "lat": 51.2998231,
-      "lng": 12.3998974,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1432337163), ODbL"
-    },
-    {
       "id": "leipzig-4ec3654f83",
       "city": "leipzig",
       "label": "Hans-Marchwitza-Straße",
@@ -1309,7 +1294,7 @@
       "note": null,
       "timeRestriction": "Mo-Fr 06:00-18:00; Sa,Su,PH off",
       "district": "Leipzig",
-      "spotCount": 1,
+      "spotCount": 3,
       "lat": 51.2998229,
       "lng": 12.3998958,
       "geoAccuracy": "street",
@@ -1704,36 +1689,6 @@
       "lng": 12.4052402,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1267989919), ODbL"
-    },
-    {
-      "id": "leipzig-d7777dad64",
-      "city": "leipzig",
-      "label": "Kregelstraße",
-      "street": "Kregelstraße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Leipzig",
-      "spotCount": 1,
-      "lat": 51.3251862,
-      "lng": 12.4054346,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1267989935), ODbL"
-    },
-    {
-      "id": "leipzig-ce8eafbb57",
-      "city": "leipzig",
-      "label": "Kregelstraße",
-      "street": "Kregelstraße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Leipzig",
-      "spotCount": 1,
-      "lat": 51.3252521,
-      "lng": 12.405222,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1267989937), ODbL"
     },
     {
       "id": "leipzig-8bf2155ea8",
@@ -3504,21 +3459,6 @@
       "lng": 12.4628146,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1191441821), ODbL"
-    },
-    {
-      "id": "leipzig-920f91a60e",
-      "city": "leipzig",
-      "label": "Werkstättenstraße",
-      "street": "Werkstättenstraße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Leipzig",
-      "spotCount": 1,
-      "lat": 51.3386072,
-      "lng": 12.4628863,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1191441822), ODbL"
     },
     {
       "id": "leipzig-75caea3a46",

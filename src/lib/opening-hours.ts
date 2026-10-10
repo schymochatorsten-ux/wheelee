@@ -61,11 +61,60 @@ const ALWAYS = [
   /^00:00\s*-\s*24:00$/iu,
 ];
 
-/** Bedeutet die Angabe „keine Beschränkung"? */
+/**
+ * Bedeutet die Angabe „keine Beschränkung"?
+ *
+ * Neben den festen Formen oben erkennt sie auch jede Angabe, deren
+ * **ausgewertete Zeitfenster alle sieben Tage rund um die Uhr abdecken** –
+ * etwa „PH,Mo-Su 00:00-24:00" oder „Mo-Su,PH 00:00+". Diese Formen einzeln
+ * aufzulisten wäre ein Fass ohne Boden; die Quellen schreiben dasselbe auf
+ * ein Dutzend Arten.
+ */
 export function isAlwaysOpen(text: string | null | undefined): boolean {
   if (!text) return false;
   const clean = text.trim();
-  return ALWAYS.some((pattern) => pattern.test(clean));
+  if (ALWAYS.some((pattern) => pattern.test(clean))) return true;
+  return coversWholeWeek(parseWindows(clean));
+}
+
+/** Decken die Fenster alle sieben Tage vollständig ab? */
+function coversWholeWeek(windows: TimeWindow[]): boolean {
+  if (windows.length === 0) return false;
+
+  for (let day = 0; day < 7; day += 1) {
+    const forDay = windows
+      .filter((window) => window.days.includes(day as Weekday))
+      .sort((a, b) => a.from - b.from);
+    if (forDay.length === 0) return false;
+
+    let reached = 0;
+    for (const window of forDay) {
+      if (window.from > reached) return false;
+      reached = Math.max(reached, window.to);
+    }
+    if (reached < 24 * 60) return false;
+  }
+
+  return true;
+}
+
+/**
+ * Höchstparkdauer statt Zeitfenster.
+ *
+ * „2 Stunden" oder „15 min" ist keine Angabe, *wann* der Platz gilt, sondern
+ * *wie lange* man stehen darf. Als „Nur: 2 Stunden" gelesen wirkt es wie eine
+ * Öffnungszeit – zwei verschiedene Dinge, die man nicht verwechseln darf.
+ */
+export function maxStay(text: string | null | undefined): string | null {
+  if (!text) return null;
+  const clean = text.replace(/\s+/gu, " ").trim();
+
+  const match = /^(\d+(?:[.,]\d+)?)\s*(min(?:uten)?|std\.?|stunden?|h)$/iu.exec(clean);
+  if (!match) return null;
+
+  const value = match[1].replace(".", ",");
+  const unit = /^min/iu.test(match[2]) ? "Minuten" : value === "1" ? "Stunde" : "Stunden";
+  return `${value} ${unit}`;
 }
 
 /**
@@ -120,6 +169,42 @@ function parseDays(value: string): Weekday[] | null {
 const DAYS_ONLY = /^[A-Za-zÄÖÜäöü]{2}(\s*[-,]\s*[A-Za-zÄÖÜäöü]{2})*$/u;
 
 /**
+ * Schreibfehler und Eigenheiten der Quellen glätten, bevor geparst wird.
+ *
+ * Alle Fälle stammen aus echten Einträgen: „Mo - Fr, 8 . 18 Uhr" (Punkt statt
+ * Bindestrich), „8- - 18 Uhr" (doppeltes Trennzeichen), „Mo bis Fr" statt
+ * „Mo-Fr". Das sind keine erfundenen Vorsichtsmaßnahmen – es sind die
+ * Angaben, an denen der Parser gescheitert ist.
+ */
+function tidy(text: string): string {
+  return (
+    text
+      .replace(/\s+/gu, " ")
+      // „Mo bis Fr" → „Mo-Fr", aber „8 bis 18" bleibt unangetastet.
+      .replace(/([A-Za-zÄÖÜäöü]{2})\s+bis\s+([A-Za-zÄÖÜäöü]{2})\b/giu, "$1-$2")
+      // „8 . 18 Uhr" → „8 - 18 Uhr": ein Punkt zwischen Leerzeichen ist nie
+      // ein Dezimaltrenner.
+      .replace(/(\d)\s+\.\s+(\d)/gu, "$1-$2")
+      // „8- - 18" → „8-18"
+      .replace(/-\s*-+/gu, "-")
+      // „und" trennt Abschnitte wie das Semikolon.
+      .replace(/\s+und\s+/giu, "; ")
+      .trim()
+  );
+}
+
+/** Feiertagsangaben entfernen – sie sagen nichts über die Uhrzeit. */
+function stripHolidays(days: string): string {
+  return days
+    .replace(/\bph\b/giu, "")
+    .replace(/\bfeiertage?\b/giu, "")
+    .replace(/[,\s]+$/u, "")
+    .replace(/^[,\s]+/u, "")
+    .replace(/,\s*,/gu, ",")
+    .trim();
+}
+
+/**
  * Angabe in Abschnitte zerlegen.
  *
  * Das Semikolon trennt normalerweise Abschnitte („Mo-Fr 6-19; Sa 6-13"),
@@ -152,40 +237,86 @@ function splitSections(text: string): string[] {
  * und die Oberfläche sagt dann nichts über die aktuelle Gültigkeit.
  */
 export function parseTimeWindows(text: string | null | undefined): TimeWindow[] {
-  if (!text || isAlwaysOpen(text)) return [];
+  if (!text) return [];
+  // Eine Angabe, die „immer offen" bedeutet, ist keine Beschränkung – die
+  // Fenster werden dann nicht gebraucht.
+  if (ALWAYS.some((pattern) => pattern.test(text.trim()))) return [];
+  return parseWindows(text);
+}
 
+const ALL_DAYS: Weekday[] = [0, 1, 2, 3, 4, 5, 6];
+
+/** Eine oder mehrere Uhrzeitspannen aus einem Abschnitt lesen. */
+function parseRanges(text: string, days: Weekday[]): TimeWindow[] {
   const windows: TimeWindow[] = [];
-  const ALL_DAYS: Weekday[] = [0, 1, 2, 3, 4, 5, 6];
 
-  for (const part of splitSections(text)) {
-    const clean = part.replace(/\s+/gu, " ").trim();
-    if (clean.length === 0 || /\b(ph|feiertag)\b/iu.test(clean)) continue;
+  // Mehrere Spannen je Abschnitt: „00:00-07:00, 13:00-24:00".
+  for (const piece of text.split(",")) {
+    const clean = piece.trim();
+    if (clean.length === 0) continue;
 
-    // Reine Uhrzeit ohne Wochentage („7 - 19 Uhr", „08:00-21:00") gilt täglich.
-    const timeOnly =
-      /^(\d{1,2}(?:[:.]\d{2})?)\s*(?:-|bis)\s*(\d{1,2}(?:[:.]\d{2})?)\s*(?:uhr|h)?$/iu.exec(clean);
-    if (timeOnly) {
-      const from = parseClock(timeOnly[1]);
-      const to = parseClock(timeOnly[2]);
-      if (from !== null && to !== null && to > from) {
-        windows.push({ days: ALL_DAYS, from, to });
-      }
+    // „00:00+" heißt im OSM-Format: ab dieser Zeit ohne Ende.
+    const open = /^(\d{1,2}(?:[:.]\d{2})?)\s*\+$/u.exec(clean);
+    if (open) {
+      const from = parseClock(open[1]);
+      if (from !== null) windows.push({ days, from, to: 24 * 60 });
       continue;
     }
 
-    // „Mo-Fr 8-18 Uhr", „werktags 8-18 Uhr", „Mo - Fr, 8 - 18 Uhr"
-    const match =
-      /^([A-Za-zÄÖÜäöü]{2}\s*-\s*[A-Za-zÄÖÜäöü]{2}|werktags|wochentags|(?:[A-Za-zÄÖÜäöü]{2}[,\s]*)+?)[,;\s]+(\d{1,2}(?:[:.]\d{2})?)\s*(?:-|bis)\s*(\d{1,2}(?:[:.]\d{2})?)\s*(?:uhr|h)?$/iu.exec(
-        clean,
-      );
+    const range =
+      /^(\d{1,2}(?:[:.]\d{2})?)\s*(?:-|bis)\s*(\d{1,2}(?:[:.]\d{2})?)\s*(?:uhr|h)?$/iu.exec(clean);
+    if (!range) continue;
+
+    const from = parseClock(range[1]);
+    let to = parseClock(range[2]);
+    if (from === null || to === null) continue;
+
+    // „00:00-00:00" meint den ganzen Tag, nicht eine Spanne der Länge null.
+    if (from === 0 && to === 0) to = 24 * 60;
+
+    if (to > from) {
+      windows.push({ days, from, to });
+      continue;
+    }
+
+    /*
+     * Über Mitternacht: „Fr-Sa 06:00-02:00" heißt freitags ab 6 Uhr bis
+     * samstags um 2 Uhr. Als zwei Fenster abgebildet, damit die Prüfung „gilt
+     * das gerade?" ohne Sonderfall auskommt. Der zweite Teil gehört auf den
+     * **Folgetag** – sonst läge er am selben Morgen, also zwölf Stunden
+     * daneben.
+     */
+    if (to < from) {
+      windows.push({ days, from, to: 24 * 60 });
+      windows.push({ days: days.map((day) => ((day + 1) % 7) as Weekday), from: 0, to });
+    }
+  }
+
+  return windows;
+}
+
+/** Die eigentliche Auswertung, ohne die Prüfung auf „immer offen". */
+function parseWindows(text: string): TimeWindow[] {
+  const windows: TimeWindow[] = [];
+
+  for (const part of splitSections(tidy(text))) {
+    const clean = part.trim();
+    if (clean.length === 0) continue;
+
+    // Reine Uhrzeit ohne Wochentage („7 - 19 Uhr", „08:00-21:00") gilt täglich.
+    if (/^[\d\s:.,+-]+(?:uhr|h)?$/iu.test(clean)) {
+      windows.push(...parseRanges(clean, ALL_DAYS));
+      continue;
+    }
+
+    // „Mo-Fr 8-18 Uhr", „Mo, Tu, Th, PH 00:00-24:00", „werktags 8-18 Uhr"
+    const match = /^([^\d]+?)[,;\s]+([\d].*)$/u.exec(clean);
     if (!match) continue;
 
-    const days = parseDays(match[1]);
-    const from = parseClock(match[2]);
-    const to = parseClock(match[3]);
-    if (!days || from === null || to === null || to <= from) continue;
+    const days = parseDays(stripHolidays(match[1]));
+    if (!days || days.length === 0) continue;
 
-    windows.push({ days, from, to });
+    windows.push(...parseRanges(match[2], days));
   }
 
   return windows;

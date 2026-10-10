@@ -27,7 +27,10 @@
     "validate": "tsx scripts/import/validate.mts",
     "report:times": "tsx scripts/import/report-times.mts",
     "import:addresses": "tsx scripts/import/enrich-addresses.mts",
-    "import:streets": "tsx scripts/import/street-names.mts"
+    "import:streets": "tsx scripts/import/street-names.mts",
+    "data:dedupe": "tsx scripts/import/dedupe.mts",
+    "test:e2e": "playwright test",
+    "sources:check": "tsx scripts/import/check-sources.mts"
   },
   "dependencies": {
     "leaflet": "1.9.4",
@@ -39,6 +42,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@playwright/test": "^1.64.0",
     "@tailwindcss/postcss": "^4",
     "@types/leaflet": "^1.9.12",
     "@types/leaflet.markercluster": "^1.5.4",

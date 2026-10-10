@@ -21,9 +21,52 @@ interface ParkingMapProps {
   /** Nutzerstandort, falls erlaubt und ermittelt. */
   userPosition: LatLng | null;
   nearestId: string | null;
+  /** Gemeinsam hervorgehobene Parkplätze der Auswahl, falls aufgeklappt. */
+  highlightIds?: ReadonlySet<string> | null;
   /** Parkplatz, auf den die Karte zentrieren soll. */
   focus: { lat: number; lng: number; key: string } | null;
   onSelect: (spot: ParkingSpot) => void;
+  /** Meldet den sichtbaren Ausschnitt, damit nur dessen Parkplätze geladen werden. */
+  onBoundsChange?: (bounds: MapBounds) => void;
+}
+
+/** Sichtbarer Kartenausschnitt. */
+export interface MapBounds {
+  minLat: number;
+  minLng: number;
+  maxLat: number;
+  maxLng: number;
+}
+
+/**
+ * Meldet den sichtbaren Ausschnitt nach oben, damit nur dessen Parkplätze
+ * geladen werden (ToDo 5.4).
+ *
+ * `moveend` deckt Ziehen und Zoomen ab. Der erste Aufruf kommt beim Einhängen,
+ * denn ohne Bewegung gäbe es sonst nie eine Grenze – und damit keine Marker.
+ */
+function BoundsReporter({ onChange }: { onChange: (bounds: MapBounds) => void }) {
+  const map = useMap();
+
+  useEffect(() => {
+    const report = () => {
+      const bounds = map.getBounds();
+      onChange({
+        minLat: bounds.getSouth(),
+        minLng: bounds.getWest(),
+        maxLat: bounds.getNorth(),
+        maxLng: bounds.getEast(),
+      });
+    };
+
+    report();
+    map.on("moveend", report);
+    return () => {
+      map.off("moveend", report);
+    };
+  }, [map, onChange]);
+
+  return null;
 }
 
 /** Zentriert die Karte, wenn ein neuer Standort oder Parkplatz dazukommt. */
@@ -44,8 +87,10 @@ export default function ParkingMap({
   center,
   userPosition,
   nearestId,
+  highlightIds = null,
   focus,
   onSelect,
+  onBoundsChange,
 }: ParkingMapProps) {
   return (
     <MapContainer
@@ -62,7 +107,12 @@ export default function ParkingMap({
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>-Mitwirkende'
       />
 
-      <SpotMarkers spots={spots} nearestId={nearestId} onSelect={onSelect} />
+      <SpotMarkers
+        spots={spots}
+        nearestId={nearestId}
+        highlightIds={highlightIds}
+        onSelect={onSelect}
+      />
 
       {userPosition && (
         <Marker
@@ -74,6 +124,7 @@ export default function ParkingMap({
       )}
 
       <MapFocus target={focus} />
+      {onBoundsChange && <BoundsReporter onChange={onBoundsChange} />}
     </MapContainer>
   );
 }

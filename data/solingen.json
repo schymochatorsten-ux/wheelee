@@ -341,21 +341,6 @@
       "source": "OpenStreetMap (node/8935145460), ODbL"
     },
     {
-      "id": "solingen-23bc0db95f",
-      "city": "solingen",
-      "label": "Brühler Straße",
-      "street": "Brühler Straße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Solingen",
-      "spotCount": 1,
-      "lat": 51.1649705,
-      "lng": 7.0871227,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/868847597), ODbL"
-    },
-    {
       "id": "solingen-007de2b793",
       "city": "solingen",
       "label": "Brühler Straße",

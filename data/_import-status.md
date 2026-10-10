@@ -1,6 +1,6 @@
-# Importstand der deutschen Großstädte
+# Importstand der deutschen Gemeinden
 
-Zuletzt aktualisiert: 2026-10-09T15:29:16.661Z
+Zuletzt aktualisiert: 2026-10-10T03:54:41.664Z
 
 Diese Datei schreiben die Importskripte selbst nach **jeder einzelnen Stadt**.
 Sie ist damit auch nach einem Abbruch mitten im Lauf korrekt.
@@ -17,206 +17,213 @@ npm run import:city -- --rest
 
 ## Überblick
 
-| Kennzahl | Wert |
-| --- | --- |
-| Städte gesamt | 187 |
-| fertig | 166 |
-| offen | 0 |
-| mit Problem | 21 |
-| importierte Standorte | 16575 |
-| importierte Stellplätze | 27792 |
+| Kennzahl                       | Wert        |
+| ------------------------------ | ----------- |
+| Gemeinden im Register          | 187         |
+| geprüft                        | 187 (100 %) |
+| davon mit Treffer              | 185         |
+| davon geprüft, nichts gefunden | 2           |
+| noch nicht geprüft             | 0           |
+| mit Problem                    | 0           |
+| importierte Standorte          | 17299       |
+| importierte Stellplätze        | 29078       |
+
+„Geprüft, nichts gefunden" ist etwas anderes als „noch nicht geprüft": Dort
+lief die Abfrage sauber durch und war leer. Diese Gemeinden werden nicht
+erneut abgefragt – bei tausenden Gemeinden wäre das ein Missbrauch von
+Overpass. Ein erneuter Versuch geht gezielt über den Namen der Gemeinde.
 
 ## Städte in Bearbeitungsreihenfolge
 
-| | Rang | Stadt | Einwohner | Quelle | Standorte | Stellplätze | Stand |
-| --- | ---: | --- | ---: | --- | ---: | ---: | --- |
- | ✅ | 1 | Berlin | 3.782.202 | amtlich (WFS) | 923 | 1560 | fertig | 
- | ✅ | 2 | Hamburg | 1.910.160 | amtlich (WFS) | 936 | 1310 | fertig | 
- | ✅ | 3 | München | 1.510.378 | OpenStreetMap | 219 | 629 | fertig | 
- | ✅ | 4 | Köln | 1.087.353 | amtlich (WFS) | 445 | 605 | fertig | 
- | ✅ | 5 | Frankfurt am Main | 775.790 | amtlich (WFS) | 458 | 615 | fertig | 
- | ✅ | 6 | Stuttgart | 633.484 | OpenStreetMap | 266 | 646 | fertig | 
- | ✅ | 7 | Düsseldorf | 631.217 | amtlich (JSON) | 340 | 523 | fertig | 
- | ✅ | 8 | Leipzig | 619.879 | OpenStreetMap | 237 | 358 | fertig | 
- | ✅ | 9 | Dortmund | 595.471 | amtlich (GEOJSON) | 368 | 368 | fertig | 
- | ✅ | 10 | Essen | 586.608 | OpenStreetMap | 244 | 549 | fertig | 
- | ✅ | 11 | Bremen | 577.026 | OpenStreetMap | 112 | 187 | fertig | 
- | ✅ | 12 | Dresden | 566.222 | amtlich (WFS) | 481 | 680 | fertig | 
- | ✅ | 13 | Hannover | 548.186 | OpenStreetMap | 173 | 335 | fertig | 
- | ✅ | 14 | Nürnberg | 523.026 | OpenStreetMap | 487 | 640 | fertig | 
- | ✅ | 15 | Duisburg | 500.319 | OpenStreetMap | 116 | 213 | fertig | 
- | ✅ | 16 | Bochum | 365.587 | OpenStreetMap | 165 | 411 | amtliche Quelle nicht nutzbar, OSM verwendet | 
- | ✅ | 17 | Wuppertal | 358.876 | OpenStreetMap | 66 | 136 | fertig | 
- | ✅ | 18 | Bielefeld | 341.755 | OpenStreetMap | 125 | 229 | amtliche Quelle nicht nutzbar, OSM verwendet | 
- | ✅ | 19 | Bonn | 336.465 | OpenStreetMap | 406 | 608 | fertig | 
- | ✅ | 20 | Münster | 320.979 | OpenStreetMap | 165 | 324 | fertig | 
- | ✅ | 21 | Mannheim | 319.953 | OpenStreetMap | 86 | 139 | fertig | 
- | ✅ | 22 | Karlsruhe | 309.999 | OpenStreetMap | 330 | 532 | amtliche Quelle nicht nutzbar, OSM verwendet | 
- | ✅ | 23 | Augsburg | 302.103 | OpenStreetMap | 400 | 639 | fertig | 
- | ✅ | 24 | Wiesbaden | 283.083 | OpenStreetMap | 51 | 181 | fertig | 
- | ✅ | 25 | Mönchengladbach | 262.374 | OpenStreetMap | 93 | 213 | fertig | 
- | ✅ | 26 | Gelsenkirchen | 259.105 | amtlich (JSON) | 219 | 219 | fertig | 
- | ✅ | 27 | Braunschweig | 252.811 | OpenStreetMap | 85 | 226 | fertig | 
- | ✅ | 28 | Kiel | 250.917 | OpenStreetMap | 85 | 241 | amtliche Quelle nicht nutzbar, OSM verwendet | 
- | ✅ | 29 | Chemnitz | 249.237 | amtlich (ARCGIS) | 13 | 56 | fertig | 
- | ✅ | 30 | Aachen | 249.070 | OpenStreetMap | 111 | 191 | amtliche Quelle nicht nutzbar, OSM verwendet | 
- | ✅ | 31 | Halle (Saale) | 242.083 | OpenStreetMap | 62 | 178 | fertig | 
- | ✅ | 32 | Magdeburg | 239.364 | OpenStreetMap | 208 | 345 | fertig | 
- | ✅ | 33 | Freiburg im Breisgau | 236.140 | amtlich (WFS) | 330 | 334 | fertig | 
- | ✅ | 34 | Krefeld | 230.103 | OpenStreetMap | 40 | 71 | amtliche Quelle nicht nutzbar, OSM verwendet | 
- | ✅ | 35 | Mainz | 220.085 | OpenStreetMap | 171 | 295 | fertig | 
- | ✅ | 36 | Lübeck | 218.095 | OpenStreetMap | 281 | 357 | fertig | 
- | ✅ | 37 | Erfurt | 214.969 | OpenStreetMap | 88 | 127 | fertig | 
- | ✅ | 38 | Oberhausen | 210.829 | OpenStreetMap | 78 | 141 | fertig | 
- | ✅ | 39 | Rostock | 209.920 | amtlich (GEOJSON) | 5 | 5 | fertig | 
- | ✅ | 40 | Kassel | 204.202 | OpenStreetMap | 93 | 123 | fertig | 
- | ✅ | 41 | Hagen | 188.814 | OpenStreetMap | 64 | 140 | fertig | 
- | ✅ | 42 | Potsdam | 187.119 | OpenStreetMap | 202 | 399 | fertig | 
- | ✅ | 43 | Saarbrücken | 181.959 | OpenStreetMap | 157 | 346 | fertig | 
- | ✅ | 44 | Hamm | 179.916 | OpenStreetMap | 198 | 300 | fertig | 
- | ✅ | 45 | Oldenburg | 177.055 | OpenStreetMap | 92 | 230 | fertig | 
- | ✅ | 46 | Ludwigshafen am Rhein | 173.353 | OpenStreetMap | 36 | 60 | fertig | 
- | ✅ | 47 | Mülheim an der Ruhr | 172.124 | OpenStreetMap | 56 | 121 | fertig | 
- | ✅ | 48 | Osnabrück | 168.145 | OpenStreetMap | 13 | 29 | fertig | 
- | ✅ | 49 | Leverkusen | 167.256 | OpenStreetMap | 122 | 144 | fertig | 
- | ✅ | 50 | Heidelberg | 162.273 | amtlich (GEOJSON) | 214 | 214 | fertig | 
- | ✅ | 51 | Darmstadt | 162.243 | OpenStreetMap | 90 | 165 | fertig | 
- | ✅ | 52 | Solingen | 160.824 | OpenStreetMap | 196 | 233 | fertig | 
- | ✅ | 53 | Herne | 156.449 | OpenStreetMap | 35 | 64 | fertig | 
- | ✅ | 54 | Regensburg | 156.200 | OpenStreetMap | 0 | 0 | OSM kennt hier keine Behindertenparkplätze | 
- | ✅ | 55 | Paderborn | 155.300 | OpenStreetMap | 107 | 185 | fertig | 
- | ✅ | 56 | Neuss | 154.955 | amtlich (GEOJSON) | 38 | 57 | fertig | 
- | ✅ | 57 | Ingolstadt | 143.100 | OpenStreetMap | 31 | 54 | fertig | 
- | ✅ | 58 | Offenbach am Main | 142.000 | OpenStreetMap | 23 | 38 | fertig | 
- | ✅ | 59 | Fürth | 131.000 | OpenStreetMap | 42 | 84 | fertig | 
- | ✅ | 60 | Ulm | 129.000 | amtlich (GEOJSON) | 48 | 107 | fertig | 
- | ✅ | 61 | Heilbronn | 128.600 | OpenStreetMap | 26 | 49 | fertig | 
- | ✅ | 62 | Pforzheim | 128.200 | OpenStreetMap | 51 | 116 | fertig | 
- | ✅ | 63 | Wolfsburg | 128.000 | OpenStreetMap | 82 | 141 | fertig | 
- | ✅ | 64 | Würzburg | 127.900 | OpenStreetMap | 127 | 196 | fertig | 
- | ✅ | 65 | Göttingen | 121.000 | OpenStreetMap | 424 | 709 | fertig | 
- | ✅ | 66 | Reutlingen | 118.000 | OpenStreetMap | 47 | 61 | fertig | 
- | ✅ | 67 | Bottrop | 117.400 | amtlich (WFS) | 134 | 134 | fertig | 
- | ✅ | 68 | Erlangen | 116.300 | OpenStreetMap | 108 | 230 | fertig | 
- | ✅ | 69 | Remscheid | 116.000 | OpenStreetMap | 24 | 94 | fertig | 
- | ✅ | 70 | Koblenz | 115.000 | OpenStreetMap | 96 | 203 | fertig | 
- | ✅ | 71 | Bremerhaven | 113.600 | OpenStreetMap | 25 | 47 | fertig | 
- | ✅ | 72 | Recklinghausen | 112.600 | OpenStreetMap | 57 | 111 | fertig | 
- | ✅ | 73 | Bergisch Gladbach | 112.000 | OpenStreetMap | 189 | 309 | fertig | 
- | ✅ | 74 | Trier | 111.500 | OpenStreetMap | 79 | 109 | fertig | 
- | ✅ | 75 | Jena | 111.300 | OpenStreetMap | 84 | 119 | fertig | 
- | ✅ | 76 | Salzgitter | 105.500 | OpenStreetMap | 10 | 19 | fertig | 
- | ✅ | 77 | Moers | 104.500 | OpenStreetMap | 66 | 134 | fertig | 
- | ✅ | 78 | Siegen | 103.000 | OpenStreetMap | 42 | 84 | fertig | 
- | ✅ | 79 | Gütersloh | 102.000 | OpenStreetMap | 33 | 70 | fertig | 
- | ✅ | 80 | Hildesheim | 101.000 | OpenStreetMap | 37 | 97 | fertig | 
- | ✅ | 81 | Hanau | 100.800 | OpenStreetMap | 40 | 67 | fertig | 
- | ✅ | 82 | Kaiserslautern | 100.600 | OpenStreetMap | 58 | 137 | fertig | 
- | ✅ | 83 | Cottbus | 98.000 | OpenStreetMap | 95 | 190 | fertig | 
- | ✅ | 84 | Witten | 96.000 | OpenStreetMap | 234 | 353 | fertig | 
- | ✅ | 85 | Schwerin | 96.000 | OpenStreetMap | 22 | 27 | fertig | 
- | ✅ | 86 | Ludwigsburg | 94.000 | OpenStreetMap | 53 | 151 | fertig | 
- | ✅ | 87 | Esslingen am Neckar | 93.500 | OpenStreetMap | 19 | 39 | fertig | 
- | ✅ | 88 | Gießen | 92.900 | OpenStreetMap | 29 | 67 | fertig | 
- | ✅ | 89 | Iserlohn | 92.400 | OpenStreetMap | 25 | 42 | fertig | 
- | ✅ | 90 | Düren | 92.200 | OpenStreetMap | 36 | 55 | fertig | 
- | ✅ | 91 | Flensburg | 92.000 | OpenStreetMap | 23 | 63 | fertig | 
- | ✅ | 92 | Gera | 91.800 | OpenStreetMap | 21 | 82 | fertig | 
- | ✅ | 93 | Tübingen | 91.000 | OpenStreetMap | 105 | 150 | fertig | 
- | ✅ | 94 | Zwickau | 87.200 | OpenStreetMap | 66 | 339 | fertig | 
- | ✅ | 95 | Ratingen | 87.000 | OpenStreetMap | 11 | 23 | fertig | 
- | ✅ | 96 | Villingen-Schwenningen | 86.300 | OpenStreetMap | 36 | 63 | fertig | 
- | ❌ | 97 | Lünen | 86.000 | (OSM geplant) | – | – | Overpass lieferte kein verwertbares Ergebnis: overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; over | 
- | ❌ | 98 | Konstanz | 85.000 | (OSM geplant) | – | – | Overpass lieferte kein verwertbares Ergebnis: overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.private.coffee: HTTP 500 | 
- | ✅ | 99 | Worms | 84.000 | OpenStreetMap | 98 | 137 | fertig | 
- | ✅ | 100 | Marl | 83.500 | OpenStreetMap | 15 | 19 | fertig | 
- | ✅ | 101 | Minden | 82.000 | OpenStreetMap | 13 | 23 | fertig | 
- | ✅ | 102 | Velbert | 81.000 | OpenStreetMap | 19 | 43 | fertig | 
- | ✅ | 103 | Neumünster | 80.500 | OpenStreetMap | 97 | 108 | fertig | 
- | ❌ | 104 | Norderstedt | 80.000 | (amtlich geplant) | – | – | Overpass lieferte kein verwertbares Ergebnis: overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; over | 
- | ✅ | 105 | Dessau-Roßlau | 78.500 | OpenStreetMap | 51 | 72 | fertig | 
- | ✅ | 106 | Lüneburg | 78.000 | OpenStreetMap | 40 | 85 | fertig | 
- | ✅ | 107 | Delmenhorst | 77.500 | OpenStreetMap | 9 | 19 | fertig | 
- | ✅ | 108 | Bamberg | 77.200 | OpenStreetMap | 62 | 144 | fertig | 
- | ✅ | 109 | Marburg | 77.000 | OpenStreetMap | 26 | 50 | fertig | 
- | ✅ | 110 | Viersen | 76.800 | OpenStreetMap | 54 | 84 | amtliche Quelle nicht nutzbar, OSM verwendet | 
- | ✅ | 111 | Rheine | 76.000 | OpenStreetMap | 3 | 5 | fertig | 
- | ✅ | 112 | Gladbeck | 75.500 | OpenStreetMap | 12 | 18 | fertig | 
- | ✅ | 113 | Troisdorf | 75.000 | OpenStreetMap | 119 | 159 | fertig | 
- | ✅ | 114 | Bayreuth | 74.800 | OpenStreetMap | 26 | 77 | fertig | 
- | ✅ | 115 | Dorsten | 74.500 | OpenStreetMap | 38 | 68 | fertig | 
- | ✅ | 116 | Detmold | 74.000 | OpenStreetMap | 24 | 38 | fertig | 
- | ✅ | 117 | Landshut | 73.500 | OpenStreetMap | 20 | 70 | fertig | 
- | ✅ | 118 | Castrop-Rauxel | 73.000 | OpenStreetMap | 22 | 55 | fertig | 
- | ✅ | 119 | Lüdenscheid | 72.500 | OpenStreetMap | 15 | 22 | fertig | 
- | ✅ | 120 | Arnsberg | 72.200 | OpenStreetMap | 45 | 69 | fertig | 
- | ✅ | 121 | Brandenburg an der Havel | 72.000 | OpenStreetMap | 17 | 29 | fertig | 
- | ✅ | 122 | Aschaffenburg | 71.500 | OpenStreetMap | 30 | 46 | fertig | 
- | ✅ | 123 | Bocholt | 71.000 | OpenStreetMap | 10 | 26 | fertig | 
- | ❌ | 124 | Celle | 70.000 | (OSM geplant) | – | – | Overpass lieferte kein verwertbares Ergebnis: overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; over | 
- | ✅ | 125 | Fulda | 69.000 | OpenStreetMap | 85 | 159 | fertig | 
- | ✅ | 126 | Kempten (Allgäu) | 68.900 | OpenStreetMap | 33 | 59 | fertig | 
- | ✅ | 127 | Aalen | 68.500 | OpenStreetMap | 19 | 47 | fertig | 
- | ✅ | 128 | Lippstadt | 68.000 | OpenStreetMap | 9 | 27 | fertig | 
- | ✅ | 129 | Dinslaken | 67.500 | OpenStreetMap | 7 | 11 | fertig | 
- | ✅ | 130 | Herford | 67.000 | OpenStreetMap | 14 | 24 | fertig | 
- | ✅ | 131 | Kerpen | 66.500 | OpenStreetMap | 51 | 57 | fertig | 
- | ❌ | 132 | Rüsselsheim am Main | 66.000 | (OSM geplant) | – | – | Overpass lieferte kein verwertbares Ergebnis: overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 5 | 
- | ✅ | 133 | Neuwied | 65.500 | OpenStreetMap | 8 | 20 | fertig | 
- | ✅ | 134 | Weimar | 65.200 | OpenStreetMap | 26 | 35 | fertig | 
- | ✅ | 135 | Sindelfingen | 65.000 | OpenStreetMap | 52 | 76 | fertig | 
- | ✅ | 136 | Rosenheim | 64.500 | OpenStreetMap | 30 | 75 | fertig | 
- | ✅ | 137 | Plauen | 64.000 | OpenStreetMap | 13 | 34 | fertig | 
- | ❌ | 138 | Grevenbroich | 63.500 | (OSM geplant) | – | – | Overpass lieferte kein verwertbares Ergebnis: overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; over | 
- | ✅ | 139 | Neubrandenburg | 63.000 | OpenStreetMap | 16 | 23 | fertig | 
- | ✅ | 140 | Friedrichshafen | 62.500 | OpenStreetMap | 67 | 105 | fertig | 
- | ❌ | 141 | Garbsen | 62.200 | (OSM geplant) | – | – | Overpass lieferte kein verwertbares Ergebnis: overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.private.coffee: HTTP 500 | 
- | ❌ | 142 | Bergheim | 62.000 | (OSM geplant) | – | – | Overpass lieferte kein verwertbares Ergebnis: overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; over | 
- | ✅ | 143 | Hürth | 61.500 | OpenStreetMap | 63 | 80 | fertig | 
- | ✅ | 144 | Schwäbisch Gmünd | 61.000 | OpenStreetMap | 41 | 69 | fertig | 
- | ✅ | 145 | Offenburg | 60.500 | OpenStreetMap | 50 | 92 | fertig | 
- | ❌ | 146 | Greifswald | 60.000 | (OSM geplant) | – | – | Overpass lieferte kein verwertbares Ergebnis: overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; over | 
- | ✅ | 147 | Wesel | 59.800 | OpenStreetMap | 4 | 20 | fertig | 
- | ✅ | 148 | Göppingen | 59.500 | OpenStreetMap | 35 | 38 | fertig | 
- | ❌ | 149 | Neu-Ulm | 59.200 | (OSM geplant) | – | – | Overpass lieferte kein verwertbares Ergebnis: overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 5 | 
- | ❌ | 150 | Stralsund | 59.000 | (OSM geplant) | – | – | Overpass lieferte kein verwertbares Ergebnis: overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.private.coffee: HTTP 500 | 
- | ✅ | 151 | Langenfeld (Rheinland) | 58.800 | OpenStreetMap | 26 | 60 | fertig | 
- | ✅ | 152 | Unna | 58.500 | OpenStreetMap | 54 | 86 | fertig | 
- | ✅ | 153 | Lingen (Ems) | 58.200 | OpenStreetMap | 2 | 5 | fertig | 
- | ✅ | 154 | Euskirchen | 58.000 | OpenStreetMap | 259 | 374 | fertig | 
- | ✅ | 155 | Hameln | 57.500 | OpenStreetMap | 10 | 19 | fertig | 
- | ✅ | 156 | Frankfurt (Oder) | 57.000 | OpenStreetMap | 35 | 63 | amtliche Quelle nicht nutzbar, OSM verwendet | 
- | ✅ | 157 | Görlitz | 56.500 | OpenStreetMap | 20 | 53 | fertig | 
- | ❌ | 158 | Waiblingen | 56.300 | (OSM geplant) | – | – | Overpass lieferte kein verwertbares Ergebnis: overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; over | 
- | ✅ | 159 | Sankt Augustin | 56.200 | OpenStreetMap | 67 | 109 | fertig | 
- | ✅ | 160 | Hilden | 56.100 | OpenStreetMap | 31 | 38 | fertig | 
- | ❌ | 161 | Eschweiler | 56.000 | (OSM geplant) | – | – | Overpass lieferte kein verwertbares Ergebnis: overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; over | 
- | ✅ | 162 | Stolberg (Rhld.) | 55.900 | OpenStreetMap | 23 | 39 | fertig | 
- | ❌ | 163 | Meerbusch | 55.800 | (OSM geplant) | – | – | Overpass lieferte kein verwertbares Ergebnis: overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 504; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; over | 
- | ✅ | 164 | Baden-Baden | 55.200 | OpenStreetMap | 67 | 112 | fertig | 
- | ✅ | 165 | Bad Homburg vor der Höhe | 55.000 | OpenStreetMap | 39 | 60 | fertig | 
- | ✅ | 166 | Langenhagen | 54.800 | OpenStreetMap | 44 | 81 | fertig | 
- | ✅ | 167 | Pulheim | 54.600 | OpenStreetMap | 61 | 69 | fertig | 
- | ❌ | 168 | Wetzlar | 54.000 | (OSM geplant) | – | – | Overpass lieferte kein verwertbares Ergebnis: overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 5 | 
- | ❌ | 169 | Nordhorn | 53.900 | (OSM geplant) | – | – | Overpass lieferte kein verwertbares Ergebnis: overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; over | 
- | ✅ | 170 | Schweinfurt | 53.800 | OpenStreetMap | 130 | 226 | fertig | 
- | ❌ | 171 | Hattingen | 53.500 | (OSM geplant) | – | – | Overpass lieferte kein verwertbares Ergebnis: overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500 | 
- | ✅ | 172 | Willich | 52.800 | OpenStreetMap | 39 | 58 | fertig | 
- | ❌ | 173 | Ibbenbüren | 52.000 | (OSM geplant) | – | – | Overpass lieferte kein verwertbares Ergebnis: overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 5 | 
- | ✅ | 174 | Passau | 51.900 | OpenStreetMap | 18 | 21 | fertig | 
- | ✅ | 175 | Wolfenbüttel | 51.800 | OpenStreetMap | 10 | 17 | fertig | 
- | ✅ | 176 | Elmshorn | 51.500 | OpenStreetMap | 9 | 21 | fertig | 
- | ✅ | 177 | Speyer | 51.200 | OpenStreetMap | 28 | 53 | fertig | 
- | ❌ | 178 | Bad Kreuznach | 51.000 | (OSM geplant) | – | – | Overpass lieferte kein verwertbares Ergebnis: overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 5 | 
- | ❌ | 179 | Ravensburg | 50.900 | (OSM geplant) | – | – | Overpass lieferte kein verwertbares Ergebnis: overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; over | 
- | ✅ | 180 | Böblingen | 50.800 | OpenStreetMap | 54 | 104 | fertig | 
- | ✅ | 181 | Gummersbach | 50.700 | OpenStreetMap | 15 | 24 | fertig | 
- | ✅ | 182 | Goslar | 50.500 | OpenStreetMap | 15 | 30 | fertig | 
- | ✅ | 183 | Rastatt | 50.400 | OpenStreetMap | 20 | 28 | fertig | 
- | ✅ | 184 | Peine | 50.300 | OpenStreetMap | 15 | 19 | fertig | 
- | ❌ | 185 | Emden | 50.200 | (OSM geplant) | – | – | Overpass lieferte kein verwertbares Ergebnis: overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; overpass.private.coffee: HTTP 500; overpass-api.de: HTTP 504; overpass.kumi.systems: HTTP 500; over | 
- | ✅ | 186 | Lörrach | 50.100 | OpenStreetMap | 17 | 19 | fertig | 
- | ✅ | 187 | Freising | 50.000 | OpenStreetMap | 40 | 98 | fertig | 
+|     | Rang | Stadt                    | Einwohner | Quelle            | Standorte | Stellplätze | Stand                                                                                                       |
+| --- | ---: | ------------------------ | --------: | ----------------- | --------: | ----------: | ----------------------------------------------------------------------------------------------------------- |
+| ✅  |    1 | Berlin                   | 3.782.202 | amtlich (WFS)     |       923 |        1560 | fertig                                                                                                      |
+| ✅  |    2 | Hamburg                  | 1.910.160 | amtlich (WFS)     |       936 |        1310 | fertig                                                                                                      |
+| ✅  |    3 | München                  | 1.510.378 | OpenStreetMap     |       219 |         629 | fertig                                                                                                      |
+| ✅  |    4 | Köln                     | 1.087.353 | amtlich (WFS)     |       445 |         605 | fertig                                                                                                      |
+| ✅  |    5 | Frankfurt am Main        |   775.790 | amtlich (WFS)     |       458 |         615 | fertig                                                                                                      |
+| ✅  |    6 | Stuttgart                |   633.484 | OpenStreetMap     |       266 |         646 | fertig                                                                                                      |
+| ✅  |    7 | Düsseldorf               |   631.217 | amtlich (JSON)    |       340 |         523 | fertig                                                                                                      |
+| ✅  |    8 | Leipzig                  |   619.879 | OpenStreetMap     |       237 |         358 | fertig                                                                                                      |
+| ✅  |    9 | Dortmund                 |   595.471 | amtlich (GEOJSON) |       368 |         368 | fertig                                                                                                      |
+| ✅  |   10 | Essen                    |   586.608 | OpenStreetMap     |       244 |         549 | fertig                                                                                                      |
+| ✅  |   11 | Bremen                   |   577.026 | OpenStreetMap     |       112 |         187 | fertig                                                                                                      |
+| ✅  |   12 | Dresden                  |   566.222 | amtlich (WFS)     |       481 |         680 | fertig                                                                                                      |
+| ✅  |   13 | Hannover                 |   548.186 | OpenStreetMap     |       173 |         335 | fertig                                                                                                      |
+| ✅  |   14 | Nürnberg                 |   523.026 | OpenStreetMap     |       487 |         640 | fertig                                                                                                      |
+| ✅  |   15 | Duisburg                 |   500.319 | OpenStreetMap     |       116 |         213 | fertig                                                                                                      |
+| ✅  |   16 | Bochum                   |   365.587 | OpenStreetMap     |       165 |         411 | amtliche Quelle nicht nutzbar, OSM verwendet                                                                |
+| ✅  |   17 | Wuppertal                |   358.876 | OpenStreetMap     |        66 |         136 | fertig                                                                                                      |
+| ✅  |   18 | Bielefeld                |   341.755 | OpenStreetMap     |       125 |         229 | amtliche Quelle nicht nutzbar, OSM verwendet                                                                |
+| ✅  |   19 | Bonn                     |   336.465 | OpenStreetMap     |       406 |         608 | fertig                                                                                                      |
+| ✅  |   20 | Münster                  |   320.979 | OpenStreetMap     |       165 |         324 | fertig                                                                                                      |
+| ✅  |   21 | Mannheim                 |   319.953 | OpenStreetMap     |        86 |         139 | fertig                                                                                                      |
+| ✅  |   22 | Karlsruhe                |   309.999 | OpenStreetMap     |       330 |         532 | amtliche Quelle nicht nutzbar, OSM verwendet                                                                |
+| ✅  |   23 | Augsburg                 |   302.103 | OpenStreetMap     |       400 |         639 | fertig                                                                                                      |
+| ✅  |   24 | Wiesbaden                |   283.083 | OpenStreetMap     |        51 |         181 | fertig                                                                                                      |
+| ✅  |   25 | Mönchengladbach          |   262.374 | OpenStreetMap     |        93 |         213 | fertig                                                                                                      |
+| ✅  |   26 | Gelsenkirchen            |   259.105 | amtlich (JSON)    |       219 |         219 | fertig                                                                                                      |
+| ✅  |   27 | Braunschweig             |   252.811 | OpenStreetMap     |        85 |         226 | fertig                                                                                                      |
+| ✅  |   28 | Kiel                     |   250.917 | OpenStreetMap     |        85 |         241 | amtliche Quelle nicht nutzbar, OSM verwendet                                                                |
+| ✅  |   29 | Chemnitz                 |   249.237 | amtlich (ARCGIS)  |        13 |          56 | fertig                                                                                                      |
+| ✅  |   30 | Aachen                   |   249.070 | OpenStreetMap     |       111 |         191 | amtliche Quelle nicht nutzbar, OSM verwendet                                                                |
+| ✅  |   31 | Halle (Saale)            |   242.083 | OpenStreetMap     |        62 |         178 | fertig                                                                                                      |
+| ✅  |   32 | Magdeburg                |   239.364 | OpenStreetMap     |       208 |         345 | fertig                                                                                                      |
+| ✅  |   33 | Freiburg im Breisgau     |   236.140 | amtlich (WFS)     |       330 |         334 | fertig                                                                                                      |
+| ✅  |   34 | Krefeld                  |   230.103 | OpenStreetMap     |        40 |          71 | amtliche Quelle nicht nutzbar, OSM verwendet                                                                |
+| ✅  |   35 | Mainz                    |   220.085 | OpenStreetMap     |       171 |         295 | fertig                                                                                                      |
+| ✅  |   36 | Lübeck                   |   218.095 | OpenStreetMap     |       281 |         357 | fertig                                                                                                      |
+| ✅  |   37 | Erfurt                   |   214.969 | OpenStreetMap     |        88 |         127 | fertig                                                                                                      |
+| ✅  |   38 | Oberhausen               |   210.829 | OpenStreetMap     |        78 |         141 | fertig                                                                                                      |
+| ✅  |   39 | Rostock                  |   209.920 | OpenStreetMap     |        99 |         218 | amtliche Quelle „Rostocker Heide" lieferte nur 9 Stellplätze (9 Standorte) – verdächtig leer, OSM verwendet |
+| ✅  |   40 | Kassel                   |   204.202 | OpenStreetMap     |        93 |         123 | fertig                                                                                                      |
+| ✅  |   41 | Hagen                    |   188.814 | OpenStreetMap     |        64 |         140 | fertig                                                                                                      |
+| ✅  |   42 | Potsdam                  |   187.119 | OpenStreetMap     |       202 |         399 | fertig                                                                                                      |
+| ✅  |   43 | Saarbrücken              |   181.959 | OpenStreetMap     |       157 |         346 | fertig                                                                                                      |
+| ✅  |   44 | Hamm                     |   179.916 | OpenStreetMap     |       198 |         300 | fertig                                                                                                      |
+| ✅  |   45 | Oldenburg                |   177.055 | OpenStreetMap     |        92 |         230 | fertig                                                                                                      |
+| ✅  |   46 | Ludwigshafen am Rhein    |   173.353 | OpenStreetMap     |        36 |          60 | fertig                                                                                                      |
+| ✅  |   47 | Mülheim an der Ruhr      |   172.124 | OpenStreetMap     |        56 |         121 | fertig                                                                                                      |
+| ✅  |   48 | Osnabrück                |   168.145 | OpenStreetMap     |        13 |          29 | fertig                                                                                                      |
+| ✅  |   49 | Leverkusen               |   167.256 | OpenStreetMap     |       122 |         144 | fertig                                                                                                      |
+| ✅  |   50 | Heidelberg               |   162.273 | amtlich (GEOJSON) |       214 |         214 | fertig                                                                                                      |
+| ✅  |   51 | Darmstadt                |   162.243 | OpenStreetMap     |        90 |         165 | fertig                                                                                                      |
+| ✅  |   52 | Solingen                 |   160.824 | OpenStreetMap     |       196 |         233 | fertig                                                                                                      |
+| ✅  |   53 | Herne                    |   156.449 | OpenStreetMap     |        35 |          64 | fertig                                                                                                      |
+| ⚪  |   54 | Regensburg               |   156.200 | OpenStreetMap     |         0 |           0 | OSM kennt hier keine Behindertenparkplätze                                                                  |
+| ✅  |   55 | Paderborn                |   155.300 | OpenStreetMap     |       107 |         185 | fertig                                                                                                      |
+| ✅  |   56 | Neuss                    |   154.955 | amtlich (GEOJSON) |        38 |          57 | fertig                                                                                                      |
+| ✅  |   57 | Ingolstadt               |   143.100 | OpenStreetMap     |        31 |          54 | fertig                                                                                                      |
+| ✅  |   58 | Offenbach am Main        |   142.000 | OpenStreetMap     |        23 |          38 | fertig                                                                                                      |
+| ✅  |   59 | Fürth                    |   131.000 | OpenStreetMap     |        42 |          84 | fertig                                                                                                      |
+| ✅  |   60 | Ulm                      |   129.000 | amtlich (GEOJSON) |        48 |         107 | fertig                                                                                                      |
+| ✅  |   61 | Heilbronn                |   128.600 | OpenStreetMap     |        26 |          49 | fertig                                                                                                      |
+| ✅  |   62 | Pforzheim                |   128.200 | OpenStreetMap     |        51 |         116 | fertig                                                                                                      |
+| ✅  |   63 | Wolfsburg                |   128.000 | OpenStreetMap     |        82 |         141 | fertig                                                                                                      |
+| ✅  |   64 | Würzburg                 |   127.900 | OpenStreetMap     |       127 |         196 | fertig                                                                                                      |
+| ✅  |   65 | Göttingen                |   121.000 | OpenStreetMap     |       424 |         709 | fertig                                                                                                      |
+| ✅  |   66 | Reutlingen               |   118.000 | OpenStreetMap     |        47 |          61 | fertig                                                                                                      |
+| ✅  |   67 | Bottrop                  |   117.400 | amtlich (WFS)     |       134 |         134 | fertig                                                                                                      |
+| ✅  |   68 | Erlangen                 |   116.300 | OpenStreetMap     |       108 |         230 | fertig                                                                                                      |
+| ✅  |   69 | Remscheid                |   116.000 | OpenStreetMap     |        24 |          94 | fertig                                                                                                      |
+| ✅  |   70 | Koblenz                  |   115.000 | OpenStreetMap     |        96 |         203 | fertig                                                                                                      |
+| ✅  |   71 | Bremerhaven              |   113.600 | OpenStreetMap     |        25 |          47 | fertig                                                                                                      |
+| ✅  |   72 | Recklinghausen           |   112.600 | OpenStreetMap     |        57 |         111 | fertig                                                                                                      |
+| ✅  |   73 | Bergisch Gladbach        |   112.000 | OpenStreetMap     |       189 |         309 | fertig                                                                                                      |
+| ✅  |   74 | Trier                    |   111.500 | OpenStreetMap     |        79 |         109 | fertig                                                                                                      |
+| ✅  |   75 | Jena                     |   111.300 | OpenStreetMap     |        84 |         119 | fertig                                                                                                      |
+| ✅  |   76 | Salzgitter               |   105.500 | OpenStreetMap     |        10 |          19 | fertig                                                                                                      |
+| ✅  |   77 | Moers                    |   104.500 | OpenStreetMap     |        66 |         134 | fertig                                                                                                      |
+| ✅  |   78 | Siegen                   |   103.000 | OpenStreetMap     |        42 |          84 | fertig                                                                                                      |
+| ✅  |   79 | Gütersloh                |   102.000 | OpenStreetMap     |        33 |          70 | fertig                                                                                                      |
+| ✅  |   80 | Hildesheim               |   101.000 | OpenStreetMap     |        37 |          97 | fertig                                                                                                      |
+| ✅  |   81 | Hanau                    |   100.800 | OpenStreetMap     |        40 |          67 | fertig                                                                                                      |
+| ✅  |   82 | Kaiserslautern           |   100.600 | OpenStreetMap     |        58 |         137 | fertig                                                                                                      |
+| ✅  |   83 | Cottbus                  |    98.000 | OpenStreetMap     |        95 |         190 | fertig                                                                                                      |
+| ✅  |   84 | Witten                   |    96.000 | OpenStreetMap     |       234 |         353 | fertig                                                                                                      |
+| ✅  |   85 | Schwerin                 |    96.000 | OpenStreetMap     |        22 |          27 | fertig                                                                                                      |
+| ✅  |   86 | Ludwigsburg              |    94.000 | OpenStreetMap     |        53 |         151 | fertig                                                                                                      |
+| ✅  |   87 | Esslingen am Neckar      |    93.500 | OpenStreetMap     |        19 |          39 | fertig                                                                                                      |
+| ✅  |   88 | Gießen                   |    92.900 | OpenStreetMap     |        29 |          67 | fertig                                                                                                      |
+| ✅  |   89 | Iserlohn                 |    92.400 | OpenStreetMap     |        25 |          42 | fertig                                                                                                      |
+| ✅  |   90 | Düren                    |    92.200 | OpenStreetMap     |        36 |          55 | fertig                                                                                                      |
+| ✅  |   91 | Flensburg                |    92.000 | OpenStreetMap     |        23 |          63 | fertig                                                                                                      |
+| ✅  |   92 | Gera                     |    91.800 | OpenStreetMap     |        21 |          82 | fertig                                                                                                      |
+| ✅  |   93 | Tübingen                 |    91.000 | OpenStreetMap     |       105 |         150 | fertig                                                                                                      |
+| ✅  |   94 | Zwickau                  |    87.200 | OpenStreetMap     |        66 |         339 | fertig                                                                                                      |
+| ✅  |   95 | Ratingen                 |    87.000 | OpenStreetMap     |        11 |          23 | fertig                                                                                                      |
+| ✅  |   96 | Villingen-Schwenningen   |    86.300 | OpenStreetMap     |        36 |          63 | fertig                                                                                                      |
+| ✅  |   97 | Lünen                    |    86.000 | OpenStreetMap     |        43 |          50 | fertig                                                                                                      |
+| ✅  |   98 | Konstanz                 |    85.000 | OpenStreetMap     |        43 |          75 | fertig                                                                                                      |
+| ✅  |   99 | Worms                    |    84.000 | OpenStreetMap     |        98 |         137 | fertig                                                                                                      |
+| ✅  |  100 | Marl                     |    83.500 | OpenStreetMap     |        15 |          19 | fertig                                                                                                      |
+| ✅  |  101 | Minden                   |    82.000 | OpenStreetMap     |        13 |          23 | fertig                                                                                                      |
+| ✅  |  102 | Velbert                  |    81.000 | OpenStreetMap     |        19 |          43 | fertig                                                                                                      |
+| ✅  |  103 | Neumünster               |    80.500 | OpenStreetMap     |        97 |         108 | fertig                                                                                                      |
+| ✅  |  104 | Norderstedt              |    80.000 | OpenStreetMap     |        13 |          24 | amtliche Quelle nicht nutzbar, OSM verwendet                                                                |
+| ✅  |  105 | Dessau-Roßlau            |    78.500 | OpenStreetMap     |        51 |          72 | fertig                                                                                                      |
+| ✅  |  106 | Lüneburg                 |    78.000 | OpenStreetMap     |        40 |          85 | fertig                                                                                                      |
+| ✅  |  107 | Delmenhorst              |    77.500 | OpenStreetMap     |         9 |          19 | fertig                                                                                                      |
+| ✅  |  108 | Bamberg                  |    77.200 | OpenStreetMap     |        62 |         144 | fertig                                                                                                      |
+| ✅  |  109 | Marburg                  |    77.000 | OpenStreetMap     |        26 |          50 | fertig                                                                                                      |
+| ✅  |  110 | Viersen                  |    76.800 | OpenStreetMap     |        54 |          84 | amtliche Quelle nicht nutzbar, OSM verwendet                                                                |
+| ✅  |  111 | Rheine                   |    76.000 | OpenStreetMap     |         3 |           5 | fertig                                                                                                      |
+| ✅  |  112 | Gladbeck                 |    75.500 | OpenStreetMap     |        12 |          18 | fertig                                                                                                      |
+| ✅  |  113 | Troisdorf                |    75.000 | OpenStreetMap     |       119 |         159 | fertig                                                                                                      |
+| ✅  |  114 | Bayreuth                 |    74.800 | OpenStreetMap     |        26 |          77 | fertig                                                                                                      |
+| ✅  |  115 | Dorsten                  |    74.500 | OpenStreetMap     |        38 |          68 | fertig                                                                                                      |
+| ✅  |  116 | Detmold                  |    74.000 | OpenStreetMap     |        24 |          38 | fertig                                                                                                      |
+| ✅  |  117 | Landshut                 |    73.500 | OpenStreetMap     |        20 |          70 | fertig                                                                                                      |
+| ✅  |  118 | Castrop-Rauxel           |    73.000 | OpenStreetMap     |        22 |          55 | fertig                                                                                                      |
+| ✅  |  119 | Lüdenscheid              |    72.500 | OpenStreetMap     |        15 |          22 | fertig                                                                                                      |
+| ✅  |  120 | Arnsberg                 |    72.200 | OpenStreetMap     |        45 |          69 | fertig                                                                                                      |
+| ✅  |  121 | Brandenburg an der Havel |    72.000 | OpenStreetMap     |        17 |          29 | fertig                                                                                                      |
+| ✅  |  122 | Aschaffenburg            |    71.500 | OpenStreetMap     |        30 |          46 | fertig                                                                                                      |
+| ✅  |  123 | Bocholt                  |    71.000 | OpenStreetMap     |        10 |          26 | fertig                                                                                                      |
+| ✅  |  124 | Celle                    |    70.000 | OpenStreetMap     |        17 |          21 | fertig                                                                                                      |
+| ✅  |  125 | Fulda                    |    69.000 | OpenStreetMap     |        85 |         159 | fertig                                                                                                      |
+| ✅  |  126 | Kempten (Allgäu)         |    68.900 | OpenStreetMap     |        33 |          59 | fertig                                                                                                      |
+| ✅  |  127 | Aalen                    |    68.500 | OpenStreetMap     |        19 |          47 | fertig                                                                                                      |
+| ✅  |  128 | Lippstadt                |    68.000 | OpenStreetMap     |         9 |          27 | fertig                                                                                                      |
+| ✅  |  129 | Dinslaken                |    67.500 | OpenStreetMap     |         7 |          11 | fertig                                                                                                      |
+| ✅  |  130 | Herford                  |    67.000 | OpenStreetMap     |        14 |          24 | fertig                                                                                                      |
+| ✅  |  131 | Kerpen                   |    66.500 | OpenStreetMap     |        51 |          57 | fertig                                                                                                      |
+| ✅  |  132 | Rüsselsheim am Main      |    66.000 | OpenStreetMap     |        66 |         135 | fertig                                                                                                      |
+| ✅  |  133 | Neuwied                  |    65.500 | OpenStreetMap     |         8 |          20 | fertig                                                                                                      |
+| ✅  |  134 | Weimar                   |    65.200 | OpenStreetMap     |        26 |          35 | fertig                                                                                                      |
+| ✅  |  135 | Sindelfingen             |    65.000 | OpenStreetMap     |        52 |          76 | fertig                                                                                                      |
+| ✅  |  136 | Rosenheim                |    64.500 | OpenStreetMap     |        30 |          75 | fertig                                                                                                      |
+| ✅  |  137 | Plauen                   |    64.000 | OpenStreetMap     |        13 |          34 | fertig                                                                                                      |
+| ✅  |  138 | Grevenbroich             |    63.500 | OpenStreetMap     |        14 |          44 | fertig                                                                                                      |
+| ✅  |  139 | Neubrandenburg           |    63.000 | OpenStreetMap     |        16 |          23 | fertig                                                                                                      |
+| ✅  |  140 | Friedrichshafen          |    62.500 | OpenStreetMap     |        67 |         105 | fertig                                                                                                      |
+| ✅  |  141 | Garbsen                  |    62.200 | OpenStreetMap     |        58 |         114 | fertig                                                                                                      |
+| ✅  |  142 | Bergheim                 |    62.000 | OpenStreetMap     |        26 |          45 | fertig                                                                                                      |
+| ✅  |  143 | Hürth                    |    61.500 | OpenStreetMap     |        63 |          80 | fertig                                                                                                      |
+| ✅  |  144 | Schwäbisch Gmünd         |    61.000 | OpenStreetMap     |        41 |          69 | fertig                                                                                                      |
+| ✅  |  145 | Offenburg                |    60.500 | OpenStreetMap     |        50 |          92 | fertig                                                                                                      |
+| ✅  |  146 | Greifswald               |    60.000 | OpenStreetMap     |         9 |          12 | fertig                                                                                                      |
+| ✅  |  147 | Wesel                    |    59.800 | OpenStreetMap     |         4 |          20 | fertig                                                                                                      |
+| ✅  |  148 | Göppingen                |    59.500 | OpenStreetMap     |        35 |          38 | fertig                                                                                                      |
+| ✅  |  149 | Neu-Ulm                  |    59.200 | OpenStreetMap     |        17 |          23 | fertig                                                                                                      |
+| ✅  |  150 | Stralsund                |    59.000 | OpenStreetMap     |        18 |          29 | fertig                                                                                                      |
+| ✅  |  151 | Langenfeld (Rheinland)   |    58.800 | OpenStreetMap     |        26 |          60 | fertig                                                                                                      |
+| ✅  |  152 | Unna                     |    58.500 | OpenStreetMap     |        54 |          86 | fertig                                                                                                      |
+| ✅  |  153 | Lingen (Ems)             |    58.200 | OpenStreetMap     |         2 |           5 | fertig                                                                                                      |
+| ✅  |  154 | Euskirchen               |    58.000 | OpenStreetMap     |       259 |         374 | fertig                                                                                                      |
+| ✅  |  155 | Hameln                   |    57.500 | OpenStreetMap     |        10 |          19 | fertig                                                                                                      |
+| ✅  |  156 | Frankfurt (Oder)         |    57.000 | OpenStreetMap     |        35 |          63 | amtliche Quelle nicht nutzbar, OSM verwendet                                                                |
+| ✅  |  157 | Görlitz                  |    56.500 | OpenStreetMap     |        20 |          53 | fertig                                                                                                      |
+| ✅  |  158 | Waiblingen               |    56.300 | OpenStreetMap     |        44 |          62 | fertig                                                                                                      |
+| ✅  |  159 | Sankt Augustin           |    56.200 | OpenStreetMap     |        67 |         109 | fertig                                                                                                      |
+| ✅  |  160 | Hilden                   |    56.100 | OpenStreetMap     |        31 |          38 | fertig                                                                                                      |
+| ✅  |  161 | Eschweiler               |    56.000 | OpenStreetMap     |        55 |          80 | fertig                                                                                                      |
+| ✅  |  162 | Stolberg (Rhld.)         |    55.900 | OpenStreetMap     |        23 |          39 | fertig                                                                                                      |
+| ✅  |  163 | Meerbusch                |    55.800 | OpenStreetMap     |        16 |          22 | fertig                                                                                                      |
+| ✅  |  164 | Baden-Baden              |    55.200 | OpenStreetMap     |        67 |         112 | fertig                                                                                                      |
+| ✅  |  165 | Bad Homburg vor der Höhe |    55.000 | OpenStreetMap     |        39 |          60 | fertig                                                                                                      |
+| ✅  |  166 | Langenhagen              |    54.800 | OpenStreetMap     |        44 |          81 | fertig                                                                                                      |
+| ✅  |  167 | Pulheim                  |    54.600 | OpenStreetMap     |        61 |          69 | fertig                                                                                                      |
+| ✅  |  168 | Wetzlar                  |    54.000 | OpenStreetMap     |        18 |          30 | fertig                                                                                                      |
+| ✅  |  169 | Nordhorn                 |    53.900 | OpenStreetMap     |         2 |           4 | fertig                                                                                                      |
+| ✅  |  170 | Schweinfurt              |    53.800 | OpenStreetMap     |       130 |         226 | fertig                                                                                                      |
+| ✅  |  171 | Hattingen                |    53.500 | OpenStreetMap     |        94 |         157 | fertig                                                                                                      |
+| ✅  |  172 | Willich                  |    52.800 | OpenStreetMap     |        39 |          58 | fertig                                                                                                      |
+| ✅  |  173 | Ibbenbüren               |    52.000 | OpenStreetMap     |        12 |          17 | fertig                                                                                                      |
+| ✅  |  174 | Passau                   |    51.900 | OpenStreetMap     |        18 |          21 | fertig                                                                                                      |
+| ✅  |  175 | Wolfenbüttel             |    51.800 | OpenStreetMap     |        10 |          17 | fertig                                                                                                      |
+| ✅  |  176 | Elmshorn                 |    51.500 | OpenStreetMap     |         9 |          21 | fertig                                                                                                      |
+| ✅  |  177 | Speyer                   |    51.200 | OpenStreetMap     |        28 |          53 | fertig                                                                                                      |
+| ⚪  |  178 | Bad Kreuznach            |    51.000 | OpenStreetMap     |         0 |           0 | geprüft – OSM kennt hier keine Behindertenparkplätze                                                        |
+| ✅  |  179 | Ravensburg               |    50.900 | OpenStreetMap     |        20 |          57 | fertig                                                                                                      |
+| ✅  |  180 | Böblingen                |    50.800 | OpenStreetMap     |        54 |         104 | fertig                                                                                                      |
+| ✅  |  181 | Gummersbach              |    50.700 | OpenStreetMap     |        15 |          24 | fertig                                                                                                      |
+| ✅  |  182 | Goslar                   |    50.500 | OpenStreetMap     |        15 |          30 | fertig                                                                                                      |
+| ✅  |  183 | Rastatt                  |    50.400 | OpenStreetMap     |        20 |          28 | fertig                                                                                                      |
+| ✅  |  184 | Peine                    |    50.300 | OpenStreetMap     |        15 |          19 | fertig                                                                                                      |
+| ✅  |  185 | Emden                    |    50.200 | OpenStreetMap     |        45 |          72 | fertig                                                                                                      |
+| ✅  |  186 | Lörrach                  |    50.100 | OpenStreetMap     |        17 |          19 | fertig                                                                                                      |
+| ✅  |  187 | Freising                 |    50.000 | OpenStreetMap     |        40 |          98 | fertig                                                                                                      |
 
 ## Genaue Herkunft je Stadt
 
@@ -258,7 +265,7 @@ npm run import:city -- --rest
 - **Lübeck** (OpenStreetMap): `Overpass, OSM relation/27027 (Lübeck, Schleswig-Holstein, Deutschland)`
 - **Erfurt** (OpenStreetMap): `Overpass, OSM relation/62745 (Erfurt, Thüringen, Deutschland)`
 - **Oberhausen** (OpenStreetMap): `Overpass, OSM relation/62734 (Oberhausen, Nordrhein-Westfalen, Deutschland)`
-- **Rostock** (amtlich (GEOJSON)): `https://geo.sv.rostock.de/download/opendata/rostocker_heide/rostocker_heide_aussichtspunkte.json`
+- **Rostock** (OpenStreetMap): `Overpass, OSM relation/62405 (Rostock, Mecklenburg-Vorpommern, Deutschland)`
 - **Kassel** (OpenStreetMap): `Overpass, OSM relation/62598 (Kassel, Hessen, Deutschland)`
 - **Hagen** (OpenStreetMap): `Overpass, OSM relation/1800297 (Hagen, Nordrhein-Westfalen, Deutschland)`
 - **Potsdam** (OpenStreetMap): `Overpass, OSM relation/62369 (Potsdam, Brandenburg, Deutschland)`
@@ -316,11 +323,14 @@ npm run import:city -- --rest
 - **Zwickau** (OpenStreetMap): `Overpass, OSM relation/397076 (Zwickau, Sachsen, Deutschland)`
 - **Ratingen** (OpenStreetMap): `Overpass, OSM relation/56682 (Ratingen, Kreis Mettmann, Nordrhein-Westfalen, Deutschland)`
 - **Villingen-Schwenningen** (OpenStreetMap): `Overpass, OSM relation/1242298 (Villingen-Schwenningen, VVG der Stadt Villingen-Schwenningen, Schwarzwald-Baar-Kreis, Baden-Württemberg, Deutschland)`
+- **Lünen** (OpenStreetMap): `Overpass, OSM relation/158454 (Lünen, Kreis Unna, Nordrhein-Westfalen, Deutschland)`
+- **Konstanz** (OpenStreetMap): `Overpass, OSM relation/2784842 (Konstanz, VVG der Stadt Konstanz, Landkreis Konstanz, Baden-Württemberg, Deutschland)`
 - **Worms** (OpenStreetMap): `Overpass, OSM relation/62453 (Worms, Rheinland-Pfalz, Deutschland)`
 - **Marl** (OpenStreetMap): `Overpass, OSM relation/63460 (Marl, Kreis Recklinghausen, Nordrhein-Westfalen, Deutschland)`
 - **Minden** (OpenStreetMap): `Overpass, OSM relation/139087 (Minden, Kreis Minden-Lübbecke, Nordrhein-Westfalen, Deutschland)`
 - **Velbert** (OpenStreetMap): `Overpass, OSM relation/56679 (Velbert, Kreis Mettmann, Nordrhein-Westfalen, Deutschland)`
 - **Neumünster** (OpenStreetMap): `Overpass, OSM relation/62528 (Neumünster, Schleswig-Holstein, Deutschland)`
+- **Norderstedt** (OpenStreetMap): `Overpass, OSM relation/422634 (Norderstedt, Kreis Segeberg, Schleswig-Holstein, Deutschland)`
 - **Dessau-Roßlau** (OpenStreetMap): `Overpass, OSM relation/62526 (Dessau-Roßlau, Sachsen-Anhalt, Deutschland)`
 - **Lüneburg** (OpenStreetMap): `Overpass, OSM relation/2420744 (Lüneburg, Landkreis Lüneburg, Niedersachsen, Deutschland)`
 - **Delmenhorst** (OpenStreetMap): `Overpass, OSM relation/62414 (Delmenhorst, Dötlingen, Niedersachsen, Deutschland)`
@@ -340,6 +350,7 @@ npm run import:city -- --rest
 - **Brandenburg an der Havel** (OpenStreetMap): `Overpass, OSM relation/62470 (Brandenburg an der Havel, Brandenburg, Deutschland)`
 - **Aschaffenburg** (OpenStreetMap): `Overpass, OSM relation/62532 (Aschaffenburg, Bayern, Deutschland)`
 - **Bocholt** (OpenStreetMap): `Overpass, OSM relation/162715 (Bocholt, Kreis Borken, Nordrhein-Westfalen, Deutschland)`
+- **Celle** (OpenStreetMap): `Overpass, OSM relation/1797918 (Celle, Landkreis Celle, Niedersachsen, Deutschland)`
 - **Fulda** (OpenStreetMap): `Overpass, OSM relation/454863 (Fulda, Landkreis Fulda, Hessen, Deutschland)`
 - **Kempten (Allgäu)** (OpenStreetMap): `Overpass, OSM relation/62701 (Kempten (Allgäu), Bayern, Deutschland)`
 - **Aalen** (OpenStreetMap): `Overpass, OSM relation/915486 (Aalen, VVG der Stadt Aalen, Ostalbkreis, Baden-Württemberg, Deutschland)`
@@ -347,18 +358,25 @@ npm run import:city -- --rest
 - **Dinslaken** (OpenStreetMap): `Overpass, OSM relation/54462 (Dinslaken, Kreis Wesel, Nordrhein-Westfalen, Deutschland)`
 - **Herford** (OpenStreetMap): `Overpass, OSM relation/146654 (Herford, Kreis Herford, Nordrhein-Westfalen, Deutschland)`
 - **Kerpen** (OpenStreetMap): `Overpass, OSM relation/168483 (Kerpen, Rhein-Erft-Kreis, Nordrhein-Westfalen, Deutschland)`
+- **Rüsselsheim am Main** (OpenStreetMap): `Overpass, OSM relation/444912 (Rüsselsheim am Main, Kreis Groß-Gerau, Hessen, 65428, Deutschland)`
 - **Neuwied** (OpenStreetMap): `Overpass, OSM relation/79194 (Neuwied, Landkreis Neuwied, Rheinland-Pfalz, Deutschland)`
 - **Weimar** (OpenStreetMap): `Overpass, OSM relation/62493 (Weimar, Thüringen, Deutschland)`
 - **Sindelfingen** (OpenStreetMap): `Overpass, OSM relation/722092 (Sindelfingen, Landkreis Böblingen, Baden-Württemberg, Deutschland)`
 - **Rosenheim** (OpenStreetMap): `Overpass, OSM relation/2168233 (Rosenheim, Bayern, Deutschland)`
 - **Plauen** (OpenStreetMap): `Overpass, OSM relation/409608 (Plauen, Vogtlandkreis, Sachsen, Deutschland)`
+- **Grevenbroich** (OpenStreetMap): `Overpass, OSM relation/168489 (Grevenbroich, Rhein-Kreis Neuss, Nordrhein-Westfalen, Deutschland)`
 - **Neubrandenburg** (OpenStreetMap): `Overpass, OSM relation/62705 (Neubrandenburg, Mecklenburgische Seenplatte, Mecklenburg-Vorpommern, Deutschland)`
 - **Friedrichshafen** (OpenStreetMap): `Overpass, OSM relation/2783849 (Friedrichshafen, VVG der Stadt Friedrichshafen, Bodenseekreis, Baden-Württemberg, Deutschland)`
+- **Garbsen** (OpenStreetMap): `Overpass, OSM relation/59417 (Garbsen, Region Hannover, Niedersachsen, Deutschland)`
+- **Bergheim** (OpenStreetMap): `Overpass, OSM relation/168469 (Bergheim, Rhein-Erft-Kreis, Nordrhein-Westfalen, Deutschland)`
 - **Hürth** (OpenStreetMap): `Overpass, OSM relation/162473 (Hürth, Rhein-Erft-Kreis, Nordrhein-Westfalen, 50354, Deutschland)`
 - **Schwäbisch Gmünd** (OpenStreetMap): `Overpass, OSM relation/2792080 (Schwäbisch Gmünd, VVG der Stadt Schwäbisch Gmünd, Ostalbkreis, Baden-Württemberg, Deutschland)`
 - **Offenburg** (OpenStreetMap): `Overpass, OSM relation/452988 (Offenburg, VVG der Stadt Offenburg, Ortenaukreis, Baden-Württemberg, Deutschland)`
+- **Greifswald** (OpenStreetMap): `Overpass, OSM relation/62363 (Greifswald, Vorpommern-Greifswald, Mecklenburg-Vorpommern, Deutschland)`
 - **Wesel** (OpenStreetMap): `Overpass, OSM relation/58590 (Wesel, Kreis Wesel, Nordrhein-Westfalen, Deutschland)`
 - **Göppingen** (OpenStreetMap): `Overpass, OSM relation/2792098 (Göppingen, VVG der Stadt Göppingen, Landkreis Göppingen, Baden-Württemberg, Deutschland)`
+- **Neu-Ulm** (OpenStreetMap): `Overpass, OSM relation/941087 (Neu-Ulm, Landkreis Neu-Ulm, Bayern, Deutschland)`
+- **Stralsund** (OpenStreetMap): `Overpass, OSM relation/26225 (Stralsund, Vorpommern-Rügen, Mecklenburg-Vorpommern, Deutschland)`
 - **Langenfeld (Rheinland)** (OpenStreetMap): `Overpass, OSM relation/66578 (Langenfeld (Rheinland), Kreis Mettmann, Nordrhein-Westfalen, 40764, Deutschland)`
 - **Unna** (OpenStreetMap): `Overpass, OSM relation/158445 (Unna, Kreis Unna, Nordrhein-Westfalen, Deutschland)`
 - **Lingen (Ems)** (OpenStreetMap): `Overpass, OSM relation/1075335 (Lingen (Ems), Landkreis Emsland, Niedersachsen, Deutschland)`
@@ -366,23 +384,33 @@ npm run import:city -- --rest
 - **Hameln** (OpenStreetMap): `Overpass, OSM relation/1730383 (Hameln, Landkreis Hameln-Pyrmont, Niedersachsen, Deutschland)`
 - **Frankfurt (Oder)** (OpenStreetMap): `Overpass, OSM relation/62523 (Frankfurt (Oder), Brandenburg, Deutschland)`
 - **Görlitz** (OpenStreetMap): `Overpass, OSM relation/409676 (Görlitz, Sachsen, Deutschland)`
+- **Waiblingen** (OpenStreetMap): `Overpass, OSM relation/401697 (Waiblingen, Rems-Murr-Kreis, Baden-Württemberg, Deutschland)`
 - **Sankt Augustin** (OpenStreetMap): `Overpass, OSM relation/158642 (Sankt Augustin, Rhein-Sieg-Kreis, Nordrhein-Westfalen, 53757, Deutschland)`
 - **Hilden** (OpenStreetMap): `Overpass, OSM relation/66555 (Hilden, Kreis Mettmann, Nordrhein-Westfalen, Deutschland)`
+- **Eschweiler** (OpenStreetMap): `Overpass, OSM relation/157995 (Eschweiler, Städteregion Aachen, Nordrhein-Westfalen, 52249, Deutschland)`
 - **Stolberg (Rhld.)** (OpenStreetMap): `Overpass, OSM relation/157996 (Stolberg, Städteregion Aachen, Nordrhein-Westfalen, Deutschland)`
+- **Meerbusch** (OpenStreetMap): `Overpass, OSM relation/161503 (Meerbusch, Rhein-Kreis Neuss, Nordrhein-Westfalen, Deutschland)`
 - **Baden-Baden** (OpenStreetMap): `Overpass, OSM relation/62340 (Baden-Baden, Baden-Württemberg, Deutschland)`
 - **Bad Homburg vor der Höhe** (OpenStreetMap): `Overpass, OSM relation/338875 (Bad Homburg vor der Höhe, Hochtaunuskreis, Hessen, Deutschland)`
 - **Langenhagen** (OpenStreetMap): `Overpass, OSM relation/59415 (Langenhagen, Region Hannover, Niedersachsen, Deutschland)`
 - **Pulheim** (OpenStreetMap): `Overpass, OSM relation/168464 (Pulheim, Rhein-Erft-Kreis, Nordrhein-Westfalen, 50259, Deutschland)`
+- **Wetzlar** (OpenStreetMap): `Overpass, OSM relation/215978 (Wetzlar, Lahn-Dill-Kreis, Hessen, Deutschland)`
+- **Nordhorn** (OpenStreetMap): `Overpass, OSM relation/1853267 (Nordhorn, Landkreis Grafschaft Bentheim, Niedersachsen, Deutschland)`
 - **Schweinfurt** (OpenStreetMap): `Overpass, OSM relation/62534 (Schweinfurt, Bayern, Deutschland)`
+- **Hattingen** (OpenStreetMap): `Overpass, OSM relation/162828 (Hattingen, Ennepe-Ruhr-Kreis, Nordrhein-Westfalen, Deutschland)`
 - **Willich** (OpenStreetMap): `Overpass, OSM relation/88547 (Willich, Kreis Viersen, Nordrhein-Westfalen, 47877, Deutschland)`
+- **Ibbenbüren** (OpenStreetMap): `Overpass, OSM relation/155641 (Ibbenbüren, Kreis Steinfurt, Nordrhein-Westfalen, Deutschland)`
 - **Passau** (OpenStreetMap): `Overpass, OSM relation/62629 (Passau, Bayern, Deutschland)`
 - **Wolfenbüttel** (OpenStreetMap): `Overpass, OSM relation/1432648 (Wolfenbüttel, Landkreis Wolfenbüttel, Niedersachsen, Deutschland)`
 - **Elmshorn** (OpenStreetMap): `Overpass, OSM relation/443302 (Elmshorn, Kreis Pinneberg, Schleswig-Holstein, Deutschland)`
 - **Speyer** (OpenStreetMap): `Overpass, OSM relation/62352 (Speyer, Rheinland-Pfalz, 67346, Deutschland)`
+- **Bad Kreuznach** (OpenStreetMap): `Overpass, OSM relation/611092 (Bad Kreuznach, Landkreis Bad Kreuznach, Rheinland-Pfalz, Deutschland)`
+- **Ravensburg** (OpenStreetMap): `Overpass, OSM relation/2808301 (Ravensburg, GVV Mittleres Schussental, Landkreis Ravensburg, Baden-Württemberg, Deutschland)`
 - **Böblingen** (OpenStreetMap): `Overpass, OSM relation/722090 (Böblingen, Landkreis Böblingen, Baden-Württemberg, Deutschland)`
 - **Gummersbach** (OpenStreetMap): `Overpass, OSM relation/173858 (Gummersbach, Oberbergischer Kreis, Nordrhein-Westfalen, Deutschland)`
 - **Goslar** (OpenStreetMap): `Overpass, OSM relation/1421453 (Goslar, Landkreis Goslar, Niedersachsen, Deutschland)`
 - **Rastatt** (OpenStreetMap): `Overpass, OSM relation/907178 (Rastatt, VVG der Stadt Rastatt, Landkreis Rastatt, Baden-Württemberg, 76437, Deutschland)`
 - **Peine** (OpenStreetMap): `Overpass, OSM relation/62494 (Landkreis Peine, Niedersachsen, Deutschland)`
+- **Emden** (OpenStreetMap): `Overpass, OSM relation/62562 (Emden, Niedersachsen, Deutschland)`
 - **Lörrach** (OpenStreetMap): `Overpass, OSM relation/2787952 (Lörrach, VVG der Stadt Lörrach, Landkreis Lörrach, Baden-Württemberg, Deutschland)`
 - **Freising** (OpenStreetMap): `Overpass, OSM relation/30005 (Freising, Landkreis Freising, Bayern, Deutschland)`

@@ -1,11 +1,11 @@
-"use client";
+﻿"use client";
 
 import type { ParkingSpot, ParkingSpotWithDistance } from "@/lib/types";
 import { formatDistance } from "@/lib/geo";
+import { spotTitle, stripRedundantPrefix } from "@/lib/parking/display";
 import type { CityInfo } from "@/lib/parking/spots";
 import { normalizeTimeRestriction, restrictionState } from "@/lib/opening-hours";
-import { FeedbackButton } from "./FeedbackButton";
-import { ThemeToggle } from "./ThemeToggle";
+import { DataDisclaimer, formatDate } from "./DataDisclaimer";
 
 /**
  * Listenansicht der Parkplätze.
@@ -27,11 +27,6 @@ interface SpotListProps {
   onSelect: (spot: ParkingSpot) => void;
 }
 
-function spotLine(spot: ParkingSpot): string {
-  const street = [spot.street, spot.houseNumber].filter(Boolean).join(" ");
-  return street.length > 0 ? street : spot.label;
-}
-
 export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect }: SpotListProps) {
   const crowdsourced = cities.filter((city) => city.coverage === "crowdsourced");
   const official = cities.filter((city) => city.coverage === "official");
@@ -39,6 +34,8 @@ export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect 
 
   return (
     <div className="space-y-6">
+      <DataDisclaimer variant="lang" />
+
       <section aria-labelledby="nearby-heading">
         <h2 id="nearby-heading" className="text-base font-semibold">
           {hasUserPosition ? "Parkplätze in der Nähe" : "Nächste Parkplätze"}
@@ -58,7 +55,7 @@ export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect 
                 className="flex min-h-12 w-full items-center gap-3 py-2.5 text-left focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none"
               >
                 <span className="flex-1">
-                  <span className="block font-medium">{spotLine(spot)}</span>
+                  <span className="block font-medium">{spotTitle(spot)}</span>
                   <span className="block text-sm text-neutral-500">
                     {spot.district} · {spot.spotCount}{" "}
                     {spot.spotCount === 1 ? "Stellplatz" : "Stellplätze"}
@@ -95,7 +92,7 @@ export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect 
           <ul className="mt-2 divide-y divide-neutral-200 dark:divide-neutral-800">
             {unlocated.map((spot) => (
               <li key={spot.id} className="py-2.5">
-                <span className="block font-medium">{spot.label}</span>
+                <span className="block font-medium">{stripRedundantPrefix(spot.label)}</span>
                 <span className="block text-sm text-neutral-500">
                   {spot.district} · {spot.spotCount}{" "}
                   {spot.spotCount === 1 ? "Stellplatz" : "Stellplätze"}
@@ -105,24 +102,6 @@ export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect 
           </ul>
         </section>
       )}
-
-      <section aria-labelledby="settings-heading">
-        <h2 id="settings-heading" className="text-base font-semibold">
-          Einstellungen
-        </h2>
-        <div className="mt-2 flex flex-wrap items-center gap-3">
-          <span className="text-sm text-neutral-600 dark:text-neutral-400">Darstellung</span>
-          <ThemeToggle />
-        </div>
-
-        <div className="mt-4">
-          <p className="mb-2 text-sm text-neutral-600 dark:text-neutral-400">
-            Stimmt etwas nicht? Fehlt ein Parkplatz oder gibt es einen nicht mehr? Rückmeldungen
-            sind die einzige Quelle, die solche Änderungen bemerkt.
-          </p>
-          <FeedbackButton />
-        </div>
-      </section>
 
       <section aria-labelledby="sources-heading" className="text-sm text-neutral-500">
         <h2 id="sources-heading" className="font-semibold text-neutral-700 dark:text-neutral-300">
@@ -134,6 +113,22 @@ export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect 
           amtliche Liste bereit ({officialSpaces.toLocaleString("de-DE")} Stellplätze). Für{" "}
           {crowdsourced.length} weitere{crowdsourced.length === 1 ? " Stadt" : " Städte"} gibt es
           keine, dort stammen die Daten aus OpenStreetMap.
+        </p>
+
+        {/* 10.3: Die ODbL verlangt die Namensnennung. Sie steht unter der
+            Karte, aber wer die Liste nutzt, sieht die Karte nicht – also auch
+            hier, und nicht nur im Kleingedruckten. */}
+        <p className="mt-2">
+          Kartendarstellung und die meisten Parkplatzdaten:{" "}
+          <a
+            href="https://www.openstreetmap.org/copyright"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            © OpenStreetMap-Mitwirkende
+          </a>
+          , Open Database License (ODbL). Die amtlichen Quellen sind je Stadt unten einzeln genannt.
         </p>
 
         {crowdsourced.length > 0 && (
@@ -150,13 +145,21 @@ export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect 
           <summary className="cursor-pointer py-2 font-medium text-neutral-700 dark:text-neutral-300">
             Alle {cities.length} Städte mit Quelle
           </summary>
-          <ul className="mt-1 space-y-1">
+          <ul className="mt-1 space-y-2">
             {[...cities]
               .sort((a, b) => a.name.localeCompare(b.name, "de-DE"))
               .map((city) => (
                 <li key={city.slug}>
                   <span className="font-medium">{city.name}</span>: {city.spotCount} Standorte,{" "}
-                  {city.spaceCount} Stellplätze · {city.source}
+                  {city.spaceCount} Stellplätze
+                  <span className="block">
+                    Quelle: {city.attribution}
+                    {/* 2a.5: Eine fehlende Lizenz offen benennen statt sie zu
+                        verschweigen – sie ist ein Mangel der Quelle, und wer
+                        die Daten weiterverwenden will, muss davon wissen. */}
+                    {city.license === null && " · Lizenz nicht angegeben"}
+                  </span>
+                  <span className="block">Daten vom {formatDate(city.importedAt)}</span>
                 </li>
               ))}
           </ul>

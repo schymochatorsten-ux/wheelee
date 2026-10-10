@@ -1406,21 +1406,6 @@
       "source": "OpenStreetMap (way/1524118202), ODbL"
     },
     {
-      "id": "wuerzburg-cbea788320",
-      "city": "wuerzburg",
-      "label": "Salvatorstraße 10",
-      "street": "Salvatorstraße",
-      "houseNumber": "10",
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Würzburg",
-      "spotCount": 1,
-      "lat": 49.7934834,
-      "lng": 9.9529017,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1524118203), ODbL"
-    },
-    {
       "id": "wuerzburg-0799f896b7",
       "city": "wuerzburg",
       "label": "Sanderheinrichsleitenweg",

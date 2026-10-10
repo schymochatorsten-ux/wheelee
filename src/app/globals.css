@@ -31,6 +31,14 @@ body {
   font-family: var(--font-sans), system-ui, sans-serif;
   /* Die Karte übernimmt das Scrollen; der Seitenrahmen bleibt stehen. */
   overscroll-behavior: none;
+  /*
+   * Seitwärts wird nie gescrollt (ToDo 9.8). Die Karte wird gezogen, nicht
+   * gescrollt, und Leaflet setzt Kacheln und Marker bewusst über den Rand
+   * hinaus. Bei 200 % Schriftgröße ließ sich die Seite dadurch um knapp 30 px
+   * verschieben – störend genau dort, wo jemand die Vergrößerung braucht,
+   * weil der Text dann beim Lesen wegrutscht.
+   */
+  overflow-x: hidden;
 }
 
 /* Leaflet bringt eigene Styles mit; hier nur, was die Marker brauchen. */
@@ -67,6 +75,32 @@ body {
   .leaflet-tile-pane {
     transition: filter 150ms ease;
   }
+}
+
+/*
+ * Cluster-Kreise lesbar machen (ToDo 9.7).
+ *
+ * `leaflet.markercluster` bringt hellgrüne, halbdurchsichtige Kreise mit;
+ * zusammen mit der Schriftfarbe der Seite ergab das ein Kontrastverhältnis
+ * von 1,73 : 1 – WCAG AA verlangt 4,5 : 1. Die Zahl im Kreis sagt, wie viele
+ * Parkplätze sich dahinter verbergen; sie war auf hellem Untergrund praktisch
+ * nicht zu lesen, und zwar ausgerechnet bei Sonnenlicht auf dem Display.
+ *
+ * Jetzt dasselbe Blau wie die Marker, deckend, mit weißer Schrift: 6,3 : 1.
+ * Die Größe wächst mit der Anzahl, das bleibt.
+ */
+.leaflet-container .marker-cluster {
+  background: rgba(29, 78, 216, 0.3);
+}
+
+.leaflet-container .marker-cluster div {
+  background: #1d4ed8;
+  color: #fff;
+  font-weight: 600;
+}
+
+.leaflet-container .marker-cluster span {
+  line-height: 30px;
 }
 
 /* Die Attribution muss lesbar bleiben (ODbL). */

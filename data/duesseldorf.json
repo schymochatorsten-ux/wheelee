@@ -1196,21 +1196,6 @@
       "source": "Allgemeine Behindertenparkplätze in Düsseldorf – Düsseldorf (nicht angegeben)"
     },
     {
-      "id": "duesseldorf-ea16d7781f",
-      "city": "duesseldorf",
-      "label": "Club 68",
-      "street": "Club",
-      "houseNumber": "68",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Pempelfort",
-      "spotCount": 2,
-      "lat": 51.23496225694848,
-      "lng": 6.786505001808561,
-      "geoAccuracy": "house",
-      "source": "Allgemeine Behindertenparkplätze in Düsseldorf – Düsseldorf (nicht angegeben)"
-    },
-    {
       "id": "duesseldorf-055d072506",
       "city": "duesseldorf",
       "label": "Club 68",
@@ -1219,7 +1204,7 @@
       "note": null,
       "timeRestriction": null,
       "district": "Pempelfort",
-      "spotCount": 1,
+      "spotCount": 2,
       "lat": 51.23496225694848,
       "lng": 6.786505001808561,
       "geoAccuracy": "house",

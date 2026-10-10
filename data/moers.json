@@ -424,7 +424,7 @@
       "note": null,
       "timeRestriction": null,
       "district": "Moers",
-      "spotCount": 1,
+      "spotCount": 5,
       "lat": 51.4513484,
       "lng": 6.6370104,
       "geoAccuracy": "street",
@@ -504,21 +504,6 @@
       "lng": 6.6369737,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1361218291), ODbL"
-    },
-    {
-      "id": "moers-ba42e1b729",
-      "city": "moers",
-      "label": "Knappschaft-Straße",
-      "street": "Knappschaft-Straße",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
-      "timeRestriction": null,
-      "district": "Moers",
-      "spotCount": 5,
-      "lat": 51.4513522,
-      "lng": 6.6370111,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1361218292), ODbL"
     },
     {
       "id": "moers-288732edf4",
@@ -939,21 +924,6 @@
       "lng": 6.6302315,
       "geoAccuracy": "house",
       "source": "OpenStreetMap (node/12865658693), ODbL"
-    },
-    {
-      "id": "moers-f91007fa22",
-      "city": "moers",
-      "label": "Wielandstraße 43",
-      "street": "Wielandstraße",
-      "houseNumber": "43",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Moers",
-      "spotCount": 1,
-      "lat": 51.4792262,
-      "lng": 6.635491,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1338319138), ODbL"
     },
     {
       "id": "moers-984507da0f",

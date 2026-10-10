@@ -1211,21 +1211,6 @@
       "source": "OpenStreetMap (way/689501427), ODbL"
     },
     {
-      "id": "hamm-e61830290a",
-      "city": "hamm",
-      "label": "Höveler Markt",
-      "street": "Höveler Markt",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Hamm",
-      "spotCount": 1,
-      "lat": 51.6952237,
-      "lng": 7.7595704,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/689501428), ODbL"
-    },
-    {
       "id": "hamm-903cf015d5",
       "city": "hamm",
       "label": "Höveler Markt",

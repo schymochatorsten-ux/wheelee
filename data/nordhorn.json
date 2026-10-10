@@ -1,0 +1,44 @@
+{
+  "city": {
+    "slug": "nordhorn",
+    "name": "Nordhorn",
+    "center": {
+      "lat": 52.4639678,
+      "lng": 7.1597302
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "generatedAt": "2026-10-09",
+  "spots": [
+    {
+      "id": "nordhorn-cd7919f0fd",
+      "city": "nordhorn",
+      "label": "Dr.-Rudolf-Beckmann-Straße",
+      "street": "Dr.-Rudolf-Beckmann-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Nordhorn",
+      "spotCount": 1,
+      "lat": 52.4379367,
+      "lng": 7.06558,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/46269046), ODbL"
+    },
+    {
+      "id": "nordhorn-c005ca0104",
+      "city": "nordhorn",
+      "label": "Flugplatzstraße",
+      "street": "Flugplatzstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nordhorn",
+      "spotCount": 3,
+      "lat": 52.4639678,
+      "lng": 7.1597302,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1241775189), ODbL"
+    }
+  ]
+}

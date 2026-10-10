@@ -1,4 +1,6 @@
-import type { ParkingSpot } from "../types";
+import type { ParkingSpot, ParkingSpotWithDistance } from "../types";
+import { sortByDistance, type LatLng } from "../geo";
+import { attributionOf, licenseOf } from "./license";
 import { seeds } from "./seeds.generated";
 
 /**
@@ -12,6 +14,8 @@ import { seeds } from "./seeds.generated";
 export interface SeedFile {
   city: { slug: string; name: string; center: { lat: number; lng: number } };
   source: string;
+  /** Lizenz der Quelle. Fehlt bei Dateien, die vor 2026-10-10 erzeugt wurden. */
+  license?: string | null;
   generatedAt: string;
   spots: ParkingSpot[];
 }
@@ -23,6 +27,12 @@ export interface CityInfo {
   center: { lat: number; lng: number };
   /** Herkunft der Daten, für Attribution und Einordnung. */
   source: string;
+  /** Titel und Lizenz zusammengesetzt, wie sie in der Attribution steht. */
+  attribution: string;
+  /** Lizenz im Klartext, `null` wenn die Quelle keine nennt. */
+  license: string | null;
+  /** Tag des Imports (ISO), damit niemand veraltete Daten für aktuell hält. */
+  importedAt: string;
   /** Anzahl der Standorte dieser Stadt. */
   spotCount: number;
   /** Summe der Stellplätze, nicht nur der Standorte. */
@@ -38,6 +48,9 @@ export function getCities(): CityInfo[] {
   return seeds.map(({ seed, coverage }) => ({
     ...seed.city,
     source: seed.source,
+    attribution: attributionOf(seed),
+    license: licenseOf(seed),
+    importedAt: seed.generatedAt,
     spotCount: seed.spots.length,
     spaceCount: seed.spots.reduce((sum, spot) => sum + spot.spotCount, 0),
     coverage,
@@ -52,4 +65,66 @@ export function getDefaultCity(): CityInfo {
 /** Alle Parkplätze aller Städte, inklusive der nicht verorteten. */
 export function getAllSpots(): ParkingSpot[] {
   return seeds.flatMap(({ seed }) => seed.spots);
+}
+
+/**
+ * Alle Parkplätze, einmal je Prozess aufgebaut.
+ *
+ * `getAllSpots()` baut bei jedem Aufruf ein neues Array aus 187 Seed-Dateien
+ * zusammen; für eine API, die pro Kartenbewegung antwortet, wäre das Verschwendung.
+ */
+let cached: ParkingSpot[] | null = null;
+
+function allSpots(): ParkingSpot[] {
+  cached ??= getAllSpots();
+  return cached;
+}
+
+export interface Bounds {
+  minLat: number;
+  minLng: number;
+  maxLat: number;
+  maxLng: number;
+}
+
+/**
+ * Parkplätze im Kartenausschnitt (ToDo 5.4).
+ *
+ * Der Grund ist handfest: Alle Standorte in die Seite zu schreiben ergab
+ * **6,3 MB HTML**. Im Mobilfunknetz ist das kein Ladeverhalten, das man
+ * jemandem zumuten kann, der gerade einen Parkplatz sucht – und mit jeder
+ * weiteren Ausbaustufe würde es schlimmer.
+ *
+ * `limit` ist eine Notbremse gegen einen weit herausgezoomten Ausschnitt. Wird
+ * sie erreicht, sagt das Ergebnis es – die Oberfläche kann dann zum
+ * Hineinzoomen auffordern, statt stillschweigend die Hälfte zu verschweigen.
+ */
+export function spotsInBounds(
+  bounds: Bounds,
+  limit = 2_000,
+): { spots: ParkingSpot[]; truncated: boolean; total: number } {
+  const found: ParkingSpot[] = [];
+  let total = 0;
+
+  for (const spot of allSpots()) {
+    if (spot.lat === null || spot.lng === null) continue;
+    if (spot.lat < bounds.minLat || spot.lat > bounds.maxLat) continue;
+    if (spot.lng < bounds.minLng || spot.lng > bounds.maxLng) continue;
+
+    total += 1;
+    if (found.length < limit) found.push(spot);
+  }
+
+  return { spots: found, truncated: total > found.length, total };
+}
+
+/**
+ * Die nächstgelegenen Parkplätze zu einem Punkt.
+ *
+ * Für die Liste und die Navigationsleiste: Beide brauchen die nächsten
+ * Standorte, nicht den Kartenausschnitt – wer am Rand der Karte steht, soll
+ * trotzdem den nächsten Parkplatz genannt bekommen.
+ */
+export function nearestSpots(origin: LatLng, limit = 100): ParkingSpotWithDistance[] {
+  return sortByDistance(allSpots(), origin).slice(0, limit);
 }

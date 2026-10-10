@@ -101,21 +101,6 @@
       "source": "OpenStreetMap (node/12699414930), ODbL"
     },
     {
-      "id": "jena-8074620e96",
-      "city": "jena",
-      "label": "Bibliotheksplatz",
-      "street": "Bibliotheksplatz",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Jena",
-      "spotCount": 1,
-      "lat": 50.9307001,
-      "lng": 11.5873303,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1371238956), ODbL"
-    },
-    {
       "id": "jena-bc13e5f1ab",
       "city": "jena",
       "label": "Bonhoefferstraße",

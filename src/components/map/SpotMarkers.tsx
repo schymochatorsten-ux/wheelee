@@ -19,12 +19,18 @@ import { iconFor } from "./icons";
 
 interface SpotMarkersProps {
   spots: readonly ParkingSpot[];
-  /** ID des nächstgelegenen Parkplatzes, falls bekannt. */
+  /** ID des hervorgehobenen Parkplatzes (nächster oder gewähltes Ziel). */
   nearestId: string | null;
+  /**
+   * Weitere Parkplätze, die gemeinsam hervorgehoben werden – die Auswahl der
+   * Leiste (ToDo 6.16). Damit ist erkennbar, wie die Angebote zueinander
+   * liegen, statt sie nur als Liste zu lesen.
+   */
+  highlightIds?: ReadonlySet<string> | null;
   onSelect: (spot: ParkingSpot) => void;
 }
 
-export function SpotMarkers({ spots, nearestId, onSelect }: SpotMarkersProps) {
+export function SpotMarkers({ spots, nearestId, highlightIds = null, onSelect }: SpotMarkersProps) {
   const map = useMap();
 
   useEffect(() => {
@@ -39,19 +45,23 @@ export function SpotMarkers({ spots, nearestId, onSelect }: SpotMarkersProps) {
     for (const spot of spots) {
       if (!hasCoordinates(spot)) continue;
 
+      const isTarget = spot.id === nearestId;
+      const isCandidate = highlightIds?.has(spot.id) ?? false;
+
       const name = `${spot.label}, ${spot.spotCount} ${
         spot.spotCount === 1 ? "Stellplatz" : "Stellplätze"
-      }${spot.id === nearestId ? ", nächstgelegener Parkplatz" : ""}`;
+      }${isTarget ? ", ausgewähltes Ziel" : isCandidate ? ", zur Auswahl angeboten" : ""}`;
 
       const marker = L.marker([spot.lat, spot.lng], {
         icon: iconFor({
-          isNearest: spot.id === nearestId,
+          isNearest: isTarget,
+          isCandidate,
           isApproximate: spot.geoAccuracy !== "house",
         }),
         title: name,
         keyboard: true,
         riseOnHover: true,
-        zIndexOffset: spot.id === nearestId ? 1000 : 0,
+        zIndexOffset: isTarget ? 1000 : isCandidate ? 500 : 0,
       });
 
       // `alt` wirkt nur bei Bild-Icons. Unsere Marker sind DivIcons, deshalb
@@ -77,7 +87,7 @@ export function SpotMarkers({ spots, nearestId, onSelect }: SpotMarkersProps) {
     return () => {
       map.removeLayer(cluster);
     };
-  }, [map, spots, nearestId, onSelect]);
+  }, [map, spots, nearestId, highlightIds, onSelect]);
 
   return null;
 }

@@ -13,7 +13,7 @@ Fachliche Grundlage: [Konzept.md](Konzept.md). Aufgabenstand: [ToDos.md](ToDos.m
 | Framework   | Next.js 15 (App Router), React 19, TypeScript |
 | Styling     | Tailwind CSS 4                                |
 | Karte       | Leaflet + react-leaflet, OpenStreetMap-Tiles  |
-| Tests       | Vitest                                        |
+| Tests       | Vitest, Playwright (E2E)                      |
 | Datenimport | tsx-Skripte, `pdf-parse`, Nominatim-Geocoding |
 
 ## Entwicklung
@@ -35,6 +35,7 @@ npm run start        # Produktionsbuild ausliefern
 npm run lint         # ESLint
 npm run typecheck    # TypeScript ohne Emit
 npm run test         # Vitest einmalig
+npm run test:e2e     # Playwright-Smoke-Test (startet den Dev-Server selbst)
 npm run format       # Prettier schreibend
 npm run clean        # Build-Zwischenstand löschen
 ```
@@ -48,6 +49,9 @@ npm run clean        # Build-Zwischenstand löschen
 
 ```
 src/app/              Next.js-Routen und Layout
+src/app/api/spots/    Parkplätze nach Kartenausschnitt oder Nähe
+src/app/api/geocode/  Ortssuche für das Reiseziel (Nominatim-Vorschaltung)
+e2e/                  Playwright-Tests
 src/lib/types.ts      Gemeinsame Typen (Parkplatz, Bewertung)
 src/lib/geo.ts        Entfernungsberechnung und -formatierung
 src/lib/parking/      Einlesen und Zerlegen der städtischen Parkplatzlisten
@@ -59,12 +63,30 @@ Parkplätze/           Quelldateien der Städte
 Die Trennung folgt dem Konzept: Kartendarstellung, Parkplatzdaten und
 Bewertungen bleiben voneinander unabhängig.
 
+**Die Seite lädt nur, was sichtbar ist.** Alle 17.206 Standorte ins HTML zu
+schreiben ergab 6,3 MB; jetzt sind es 128 KB, und die Karte holt den
+jeweiligen Ausschnitt über `/api/spots` nach. Ein Service Worker legt Seite,
+zuletzt geladene Parkplätze und Kartenkacheln beiseite, damit im Funkloch
+nicht eine weiße Seite steht – mit sichtbarem Hinweis, dass die Angaben vom
+letzten Stand sind.
+
+## Pflegebefehle
+
+```bash
+npm run sources:check   # monatlich: hat sich an einer Quelle etwas geändert?
+npm run validate        # Datenprüfung, mit --offline ohne Netzabfragen
+npm run import:streets  # fehlende Straßennamen aus OpenStreetMap nachtragen
+npm run data:dedupe     # doppelte Einträge zusammenführen (--dry zum Ansehen)
+npm run report:times    # welche Zeitangaben versteht die App noch nicht?
+```
+
 ## Datenimport
 
-### Die deutschen Großstädte importieren
+### Die deutschen Städte importieren
 
-Der Import läuft Stadt für Stadt, größte zuerst, und schreibt den Stand nach
-**jeder einzelnen Stadt** fort. Ein Abbruch ist dadurch unkritisch.
+Erfasst sind die Städte **ab 50.000 Einwohnern**. Der Import läuft Stadt für
+Stadt, größte zuerst, und schreibt den Stand nach **jeder einzelnen Stadt**
+fort. Ein Abbruch ist dadurch unkritisch.
 
 ```bash
 npm run sources:scan            # einmalig: welche Stadt hat amtliche Daten?
@@ -79,6 +101,25 @@ Datei nennt oben die nächste offene Stadt samt fertigem Befehl, darunter für
 jede Stadt die verwendete Quelle, die genaue Abruf-URL, die Anzahl der
 Standorte und etwaige Probleme. Sie wird von den Skripten selbst geschrieben –
 nicht von Hand bearbeiten.
+
+Die Datei unterscheidet vier Zustände, und zwei davon werden leicht
+verwechselt:
+
+| Zustand                     | Bedeutung                                |
+| --------------------------- | ---------------------------------------- |
+| ✅ fertig                   | importiert, mindestens ein Standort      |
+| ⚪ geprüft, nichts gefunden | Abfrage lief sauber durch und war leer   |
+| ⬜ noch nicht geprüft       | niemand hat je nachgesehen               |
+| ❌ fehlgeschlagen           | Abfrage scheiterte – Grund steht daneben |
+
+`--rest` nimmt **nur** den Zustand „noch nicht geprüft". Eine geprüft-leere
+Stadt wird dadurch nicht bei jedem Durchlauf erneut abgefragt – bei tausenden
+Gemeinden wäre das ein Missbrauch von Overpass. Fehlgeschlagene Städte greift
+`--rest` ebenfalls nicht; die werden namentlich nachgeholt:
+
+```bash
+npm run import:city -- konstanz celle emden
+```
 
 [data/\_quellen-status.md](data/_quellen-status.md) hält fest, welche Stadt
 überhaupt eine amtliche Quelle hat und in welchen Formaten.

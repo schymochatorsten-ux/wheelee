@@ -38,7 +38,7 @@ interface CkanResource {
   name?: string;
 }
 
-interface CkanDataset {
+export interface CkanDataset {
   name: string;
   title: string;
   notes?: string;
@@ -141,18 +141,66 @@ async function search(term: string): Promise<CkanDataset[]> {
   return json.result?.results ?? [];
 }
 
+/** Stadtname ohne unterscheidenden Zusatz: „Frankfurt (Oder)" → „frankfurt". */
+export function cityCore(cityName: string): string {
+  return cityName
+    .replace(/\s*\(.*\)$/u, "")
+    .replace(/\s+(am|an der|im)\s+.*$/iu, "")
+    .toLocaleLowerCase("de-DE");
+}
+
+/**
+ * Stadtnamen, die im Register mehrfach vorkommen – „Frankfurt" steht für
+ * Frankfurt am Main **und** Frankfurt (Oder).
+ *
+ * Bei diesen genügt der Kernname nicht: Frankfurt (Oder) bekam dadurch den
+ * Datensatz von Frankfurt am Main zugewiesen. Gefangen hat das damals nur die
+ * Abstandsprüfung beim Import – ein Glücksfall, denn bei zwei gleichnamigen
+ * Städten nahe beieinander hätte sie nicht angeschlagen.
+ */
+export function ambiguousCores(cities: readonly { name: string }[]): Set<string> {
+  const seenOnce = new Set<string>();
+  const twice = new Set<string>();
+  for (const city of cities) {
+    const core = cityCore(city.name);
+    if (seenOnce.has(core)) twice.add(core);
+    seenOnce.add(core);
+  }
+  return twice;
+}
+
+const letterClass = "a-zäöüßáàéèíìóòúù";
+
+/** Kommt `needle` als eigenes Wort in `haystack` vor? */
+function containsWord(haystack: string, needle: string): boolean {
+  // `\b` reicht nicht, weil Umlaute dort nicht als Wortzeichen gelten –
+  // deshalb explizit auf nicht-buchstabige Nachbarn prüfen. Nötig, weil
+  // „Essen" in „Hessen" steckt und Essen dadurch einmal den Frankfurter
+  // Datensatz bekam.
+  const pattern = new RegExp(
+    `(^|[^${letterClass}])${needle.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&")}([^${letterClass}]|$)`,
+    "u",
+  );
+  return pattern.test(haystack);
+}
+
 /**
  * Passt ein Datensatz zur Stadt?
  *
  * Geprüft werden Titel, Herausgeber und die Ressourcen-URLs. Letztere sind
  * nötig, weil der Stadtname manchmal nur dort steht – Berlins Datensatz trägt
  * als Herausgeber "GDI-DE", liegt aber auf gdi.berlin.de.
+ *
+ * Bei mehrdeutigen Namen muss zusätzlich etwas Unterscheidendes vorkommen:
+ * der Zusatz selbst („Oder", „Main") oder das Bundesland. Sonst gewinnt die
+ * größere Stadt jeden Treffer der kleineren.
  */
-function matches(dataset: CkanDataset, cityName: string): boolean {
-  const core = cityName
-    .replace(/\s*\(.*\)$/u, "")
-    .replace(/\s+(am|an der|im)\s+.*$/iu, "")
-    .toLocaleLowerCase("de-DE");
+export function matchesCity(
+  dataset: CkanDataset,
+  city: { name: string; state: string },
+  ambiguous: ReadonlySet<string>,
+): boolean {
+  const core = cityCore(city.name);
 
   const haystack = [
     dataset.title,
@@ -163,16 +211,22 @@ function matches(dataset: CkanDataset, cityName: string): boolean {
     .join(" ")
     .toLocaleLowerCase("de-DE");
 
-  // Auf Wortgrenzen prüfen, nicht auf Teilstrings: „Essen" steckt in „Hessen",
-  // und Essen bekam dadurch den Frankfurter Datensatz zugewiesen. `\b` reicht
-  // nicht, weil Umlaute dort nicht als Wortzeichen gelten – deshalb explizit
-  // auf nicht-buchstabige Nachbarn prüfen.
-  const letter = "a-zäöüßáàéèíìóòúù";
-  const pattern = new RegExp(
-    `(^|[^${letter}])${core.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&")}([^${letter}]|$)`,
-    "u",
+  if (!containsWord(haystack, core)) return false;
+  if (!ambiguous.has(core)) return true;
+
+  // Der Zusatz, der die Städte unterscheidet: „(Oder)" → „oder",
+  // „am Main" → „main". Das Bundesland zählt ebenso.
+  const qualifier = city.name
+    .toLocaleLowerCase("de-DE")
+    .replace(core, "")
+    .replace(/[()]/gu, " ")
+    .replace(/\b(am|an|der|im)\b/gu, " ")
+    .trim();
+
+  const state = city.state.toLocaleLowerCase("de-DE");
+  return (
+    (qualifier.length > 0 && containsWord(haystack, qualifier)) || containsWord(haystack, state)
   );
-  return pattern.test(haystack);
 }
 
 async function main() {
@@ -186,9 +240,14 @@ async function main() {
     `GovData: ${seen.size} Datensätze gefunden, davon ${datasets.length} tatsächlich zu Behindertenparkplätzen.\n`,
   );
 
+  const ambiguous = ambiguousCores(germanCities);
+  if (ambiguous.size > 0) {
+    console.log(`Mehrdeutige Stadtnamen im Register: ${[...ambiguous].join(", ")}\n`);
+  }
+
   const status: SourceStatus[] = germanCities.map((city) => {
     const official = datasets
-      .filter((dataset) => matches(dataset, city.name))
+      .filter((dataset) => matchesCity(dataset, city, ambiguous))
       .map((dataset) => {
         const resources = (dataset.resources ?? [])
           .filter((resource) => resource.url)
@@ -268,4 +327,8 @@ async function main() {
   console.log("\nGeschrieben: data/_quellen-status.md und data/_quellen-status.json");
 }
 
-await main();
+// Nur ausführen, wenn das Skript selbst aufgerufen wird – die Tests
+// importieren `matchesCity` aus dieser Datei und sollen dabei nichts abrufen.
+if (process.argv[1]?.replace(/\\/gu, "/").endsWith("scan-sources.mts")) {
+  await main();
+}

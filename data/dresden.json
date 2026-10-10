@@ -701,21 +701,6 @@
       "source": "Parken für Menschen mit Behinderungen – Dresden (nicht angegeben)"
     },
     {
-      "id": "dresden-ff2dc698a1",
-      "city": "dresden",
-      "label": "August-Bebel-Straße",
-      "street": "August-Bebel-Straße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": "von 00:00 Uhr bis 24:00 Uhr",
-      "district": "Dresden",
-      "spotCount": 1,
-      "lat": 51.033703286325334,
-      "lng": 13.750261209041582,
-      "geoAccuracy": "house",
-      "source": "Parken für Menschen mit Behinderungen – Dresden (nicht angegeben)"
-    },
-    {
       "id": "dresden-5149a81d04",
       "city": "dresden",
       "label": "August-Bebel-Straße 33",
@@ -3971,21 +3956,6 @@
       "source": "Parken für Menschen mit Behinderungen – Dresden (nicht angegeben)"
     },
     {
-      "id": "dresden-297b66ad69",
-      "city": "dresden",
-      "label": "Loschwitzer Wiesenweg",
-      "street": "Loschwitzer Wiesenweg",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": "von 00:00 Uhr bis 24:00 Uhr",
-      "district": "Dresden",
-      "spotCount": 1,
-      "lat": 51.05290627130409,
-      "lng": 13.814314345525531,
-      "geoAccuracy": "house",
-      "source": "Parken für Menschen mit Behinderungen – Dresden (nicht angegeben)"
-    },
-    {
       "id": "dresden-61cef0de53",
       "city": "dresden",
       "label": "Loschwitzer Wiesenweg",
@@ -5036,21 +5006,6 @@
       "source": "Parken für Menschen mit Behinderungen – Dresden (nicht angegeben)"
     },
     {
-      "id": "dresden-f0d84e4941",
-      "city": "dresden",
-      "label": "Paulstraße",
-      "street": "Paulstraße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Dresden",
-      "spotCount": 1,
-      "lat": 51.07201259907772,
-      "lng": 13.751463189202259,
-      "geoAccuracy": "house",
-      "source": "Parken für Menschen mit Behinderungen – Dresden (nicht angegeben)"
-    },
-    {
       "id": "dresden-bc7ddbdd43",
       "city": "dresden",
       "label": "Permoserstraße 6",
@@ -5917,21 +5872,6 @@
       "spotCount": 1,
       "lat": 51.04215648068776,
       "lng": 13.698954942838611,
-      "geoAccuracy": "house",
-      "source": "Parken für Menschen mit Behinderungen – Dresden (nicht angegeben)"
-    },
-    {
-      "id": "dresden-f02651fe01",
-      "city": "dresden",
-      "label": "Schlesischer Platz",
-      "street": "Schlesischer Platz",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": "von 00:00 Uhr bis 24:00 Uhr",
-      "district": "Dresden",
-      "spotCount": 1,
-      "lat": 51.06551285369198,
-      "lng": 13.741886334181332,
       "geoAccuracy": "house",
       "source": "Parken für Menschen mit Behinderungen – Dresden (nicht angegeben)"
     },

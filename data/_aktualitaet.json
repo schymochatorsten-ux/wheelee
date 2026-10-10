@@ -1,0 +1,10 @@
+{
+  "koeln|https://geoportal.stadt-koeln.de/arcgis/rest/services/basiskarten/stadtplanthemen/MapServer/0?f=json&amp%3Bpretty=true": {
+    "marker": "\"acf87085\"",
+    "seenAt": "2026-10-09T23:44:28.052Z"
+  },
+  "koeln|https://geoportal.stadt-koeln.de/arcgis/rest/services/verkehr/behindertenparkplaetze/MapServer?f=pjson": {
+    "marker": "\"338cd5a8\"",
+    "seenAt": "2026-10-09T23:44:28.166Z"
+  }
+}

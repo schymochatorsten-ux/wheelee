@@ -159,7 +159,20 @@ function toSpots(
   return { spots, skipped, fields };
 }
 
-async function writeSeed(city: GermanCity, spots: ParkingSpot[], source: string) {
+/**
+ * Seed-Datei schreiben.
+ *
+ * `license` steht als eigenes Feld daneben und nicht nur eingebettet in
+ * `source`: Die Oberfläche muss die Lizenz nennen können, und sie aus einem
+ * Freitext zurückzuparsen ist eine Fehlerquelle, die man sich sparen kann,
+ * sobald die Quelle sie ohnehin liefert.
+ */
+async function writeSeed(
+  city: GermanCity,
+  spots: ParkingSpot[],
+  source: string,
+  license: string | null,
+) {
   const file = path.join(projectRoot, "data", `${city.slug}.json`);
   const overrides = await readJson<{ spots?: Record<string, Partial<ParkingSpot>> }>(
     path.join(projectRoot, "data", `${city.slug}.overrides.json`),
@@ -181,6 +194,7 @@ async function writeSeed(city: GermanCity, spots: ParkingSpot[], source: string)
           center: centerOf(merged),
         },
         source,
+        license,
         generatedAt: new Date().toISOString().slice(0, 10),
         spots: merged,
       },
@@ -339,6 +353,30 @@ async function cityCenter(city: GermanCity): Promise<{ lat: number; lng: number 
   }
 }
 
+/**
+ * Stellplätze je 10.000 Einwohner im Mittel über alle erfassten Städte.
+ * Aus `npm run validate` – dient hier nur als Größenordnung.
+ */
+const TYPICAL_PER_TEN_THOUSAND = 8;
+
+/**
+ * Wirkt die amtliche Quelle verdächtig leer? (ToDo 3.9b)
+ *
+ * Rostocks Treffer hieß „Rostocker Heide" und lieferte 5 Stellplätze für
+ * 210.000 Einwohner – 0,2 je 10.000 gegenüber 8 im Mittel. OpenStreetMap
+ * kennt dort 99 Standorte. Der Importer nahm trotzdem die amtliche Quelle,
+ * weil sie amtlich ist, und niemand merkte es.
+ *
+ * „Amtlich vor allem anderen" bleibt richtig – aber nur für Datensätze, die
+ * tatsächlich von Behindertenparkplätzen handeln. Ein Zwanzigstel des
+ * Üblichen ist kein dünn besetzter Datensatz mehr, sondern der falsche.
+ */
+function looksTooSmall(city: GermanCity, spaces: number): boolean {
+  if (city.population < 20_000) return false;
+  const perTenThousand = (spaces / city.population) * 10_000;
+  return perTenThousand < TYPICAL_PER_TEN_THOUSAND / 4;
+}
+
 /** Eine Stadt importieren – amtlich, sonst OpenStreetMap. */
 async function importCity(city: GermanCity): Promise<void> {
   console.log(`\n=== Rang ${city.rank}: ${city.name} (${city.state}) ===`);
@@ -348,6 +386,9 @@ async function importCity(city: GermanCity): Promise<void> {
     [],
   );
   const entry = quellen.find((item) => item.slug === city.slug);
+
+  /** Eine amtliche Quelle, die verdächtig leer war – für den Vermerk. */
+  let suspect: { title: string; spaces: number; locations: number } | null = null;
 
   // 1. Amtliche Geodienste, in der Reihenfolge WFS, dann GeoJSON.
   for (const official of entry?.official ?? []) {
@@ -394,7 +435,28 @@ async function importCity(city: GermanCity): Promise<void> {
           await addAddresses(spots, city.name);
         }
 
-        const written = await writeSeed(city, spots, sourceLabel);
+        /*
+         * Bevor geschrieben wird: Ist der Datensatz überhaupt plausibel?
+         * Eine amtliche Quelle mit einem Zwanzigstel des üblichen Bestands
+         * ist fast immer der falsche Datensatz (ToDo 3.9b). Dann lieber
+         * weitersuchen und notfalls OpenStreetMap nehmen, als stillschweigend
+         * eine fast leere Stadt auszuliefern.
+         */
+        const officialSpaces = spots.reduce((sum, spot) => sum + spot.spotCount, 0);
+        if (looksTooSmall(city, officialSpaces)) {
+          console.log(
+            `  ⚠ Nur ${officialSpaces} Stellplätze für ${city.population.toLocaleString("de-DE")} ` +
+              "Einwohner – verdächtig leer, Quelle wird übersprungen",
+          );
+          suspect = { title: official.title, spaces: officialSpaces, locations: spots.length };
+          continue;
+        }
+
+        // „nicht angegeben" ist keine Lizenz, sondern ihr Fehlen – siehe 2a.5.
+        const license = /^(nicht angegeben|unbekannt)$/iu.test(official.license.trim())
+          ? null
+          : official.license.trim();
+        const written = await writeSeed(city, spots, sourceLabel, license);
         const spaces = written.reduce((sum, spot) => sum + spot.spotCount, 0);
 
         console.log(`  Felder: ${JSON.stringify(fields)}`);
@@ -421,19 +483,26 @@ async function importCity(city: GermanCity): Promise<void> {
     const { spots, query } = await importFromOsm(city);
 
     if (spots.length === 0) {
+      // Geprüft und leer – nicht „fertig". Siehe `ImportState` in status.mts:
+      // Diese Gemeinde ist abgearbeitet und wird nicht erneut abgefragt.
       await recordCity(city.slug, {
-        status: "fertig",
+        status: "leer",
         usedSource: "OpenStreetMap",
         usedUrl: query,
         locations: 0,
         spaces: 0,
-        message: "OSM kennt hier keine Behindertenparkplätze",
+        message: "geprüft – OSM kennt hier keine Behindertenparkplätze",
       });
-      console.log("  ⬜ 0 Standorte – OSM hat für diese Stadt nichts");
+      console.log("  ⚪ 0 Standorte – geprüft, OSM hat für diese Stadt nichts");
       return;
     }
 
-    const written = await writeSeed(city, spots, "OpenStreetMap-Mitwirkende (ODbL)");
+    const written = await writeSeed(
+      city,
+      spots,
+      "OpenStreetMap-Mitwirkende (ODbL)",
+      "Open Database License (ODbL)",
+    );
     const spaces = written.reduce((sum, spot) => sum + spot.spotCount, 0);
     console.log(`  ✅ ${written.length} Standorte, ${spaces} Stellplätze`);
 
@@ -443,7 +512,12 @@ async function importCity(city: GermanCity): Promise<void> {
       usedUrl: query,
       locations: written.length,
       spaces,
-      message: entry?.plan === "official" ? "amtliche Quelle nicht nutzbar, OSM verwendet" : null,
+      message: suspect
+        ? `amtliche Quelle „${suspect.title}" lieferte nur ${suspect.spaces} Stellplätze ` +
+          `(${suspect.locations} Standorte) – verdächtig leer, OSM verwendet`
+        : entry?.plan === "official"
+          ? "amtliche Quelle nicht nutzbar, OSM verwendet"
+          : null,
     });
   } catch (error) {
     const message = (error as Error).message;

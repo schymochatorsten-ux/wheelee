@@ -3116,21 +3116,6 @@
       "source": "OpenStreetMap (relation/7115752), ODbL"
     },
     {
-      "id": "muenchen-ba5561b732",
-      "city": "muenchen",
-      "label": "Werner-Schlierf-Straße 9",
-      "street": "Werner-Schlierf-Straße",
-      "houseNumber": "9",
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
-      "timeRestriction": null,
-      "district": "München",
-      "spotCount": 2,
-      "lat": 48.1101239,
-      "lng": 11.5800268,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/360275462), ODbL"
-    },
-    {
       "id": "muenchen-06c331d1aa",
       "city": "muenchen",
       "label": "Werner-Schlierf-Straße 9",
@@ -3139,7 +3124,7 @@
       "note": "gebührenpflichtig",
       "timeRestriction": null,
       "district": "München",
-      "spotCount": 1,
+      "spotCount": 2,
       "lat": 48.1101121,
       "lng": 11.5800355,
       "geoAccuracy": "street",

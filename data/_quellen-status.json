@@ -2622,24 +2622,8 @@
     "slug": "frankfurt-oder",
     "state": "Brandenburg",
     "population": 57000,
-    "official": [
-      {
-        "title": "WFS Parken in der Stadt Frankfurt am Main",
-        "govdata": "https://www.govdata.de/suche/daten/wfs-parken-in-der-stadt-frankfurt-am-main",
-        "license": "nicht angegeben",
-        "resources": [
-          {
-            "format": "WFS",
-            "url": "https://geowebdienste.frankfurt.de/Parken?service=WFS&version=1.1.0&request=GetCapabilities"
-          },
-          {
-            "format": "GML",
-            "url": "https://geodatenkatalog.frankfurt.de/geonetwork/srv/api/records/5f02f6f8-e9f4-431d-a610-d6b6ab24b1f1/formatters/xml"
-          }
-        ]
-      }
-    ],
-    "plan": "official"
+    "official": [],
+    "plan": "osm"
   },
   {
     "rank": 157,

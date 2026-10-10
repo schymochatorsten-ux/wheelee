@@ -3701,21 +3701,6 @@
       "source": "Behindertenstellplätze Hamburg – Hamburg (nicht angegeben)"
     },
     {
-      "id": "hamburg-fec33369d3",
-      "city": "hamburg",
-      "label": "Eppendorfer Weg 152",
-      "street": "Eppendorfer Weg",
-      "houseNumber": "152",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Hamburg",
-      "spotCount": 1,
-      "lat": 53.57902666618638,
-      "lng": 9.965814006116904,
-      "geoAccuracy": "house",
-      "source": "Behindertenstellplätze Hamburg – Hamburg (nicht angegeben)"
-    },
-    {
       "id": "hamburg-67b2f35036",
       "city": "hamburg",
       "label": "Eppendorfer Weg 152",

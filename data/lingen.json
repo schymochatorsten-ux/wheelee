@@ -13,8 +13,8 @@
     {
       "id": "lingen-97230f5e1d",
       "city": "lingen",
-      "label": "Behindertenparkplatz Lingen (Ems)",
-      "street": null,
+      "label": "Raffineriestraße",
+      "street": "Raffineriestraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -28,9 +28,9 @@
     {
       "id": "lingen-15c3c93da1",
       "city": "lingen",
-      "label": "Behindertenparkplatz Lingen (Ems)",
-      "street": null,
-      "houseNumber": null,
+      "label": "Vogtstraße 21",
+      "street": "Vogtstraße",
+      "houseNumber": "21",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Lingen (Ems)",

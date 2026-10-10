@@ -90,6 +90,15 @@ GeoJSON, JSON, CSV – und erst wenn nichts davon trägt, OpenStreetMap. Er ordn
 die Spalten automatisch zu und schlägt Adressen nach, wenn die Quelle keine
 Straßennamen führt.
 
+Vier Zustände hält er dabei auseinander. Zwei davon werden leicht verwechselt
+und bedeuten Verschiedenes: **„geprüft, nichts gefunden"** (⚪) heißt, die
+Abfrage lief sauber durch und war leer; **„noch nicht geprüft"** (⬜) heißt,
+niemand hat je nachgesehen. Nur Letztere nimmt `--rest`. Eine geprüft-leere
+Gemeinde erneut abzufragen wäre bei tausenden Gemeinden ein Missbrauch von
+Overpass – und dass eine Gemeinde geprüft ist und nichts hat, ist selbst eine
+Information, die in die Abdeckungsrechnung gehört. Fehlgeschlagene Städte (❌)
+greift `--rest` ebenfalls nicht; die werden namentlich nachgeholt.
+
 **Nach jeder einzelnen Stadt** schreibt er `data/_import-status.md` und
 `data/_import-status.json` fort: verwendete Quelle, genaue Abruf-URL, Anzahl
 Standorte und Stellplätze, Probleme. Ein Abbruch ist dadurch folgenlos – die
@@ -114,7 +123,37 @@ Drei Fragen, die hier beantwortet sein müssen:
 - **Passt die Größenordnung zur Stadt?** Eine Großstadt mit zehn Standorten ist
   ein Fehler, keine Datenlage.
 
-### Schritt 5: Einbinden und prüfen
+### Schritt 5: Straßennamen nachtragen – nicht überspringen
+
+```bash
+npm run import:streets        # alle Städte mit offenen Standorten
+npm run import:addresses      # Rückfallebene, wo OSM keine Straßen führt
+```
+
+**Dieser Schritt gehört zum Import, nicht zur Kür.** OpenStreetMap-Objekte
+tragen selten ein `addr:street`; ohne diesen Lauf heißen die Standorte
+„Behindertenparkplatz <Stadt>" und sind in Liste und Detailansicht wertlos.
+Beim Import der Städte ab 50.000 Einwohnern wurde er vergessen – damit lagen
+21 % aller Standorte ohne Straßennamen vor, genau der Mangel, der für die
+ersten 84 Städte schon einmal behoben worden war.
+
+`npm run import:streets` nimmt von selbst nur Städte mit offenen Standorten,
+ist also gefahrlos wiederholbar. Er braucht eine Overpass-Abfrage je Stadt und
+läuft entsprechend lange; einplanen statt abbrechen.
+
+### Schritt 6: Dubletten zusammenführen
+
+```bash
+npm run data:dedupe -- --dry   # erst ansehen
+npm run data:dedupe
+```
+
+Führt nur zusammen, was unter 1,5 m auseinanderliegt **und** gleich heißt –
+also dasselbe Objekt aus zwei Blickwinkeln. Weiter auseinanderliegende
+Einträge bleiben stehen: Eine markierte Bucht ist rund 3,5 m breit, zwei
+Einträge in 4 m Abstand sind zwei echte Plätze.
+
+### Schritt 7: Einbinden und prüfen
 
 ```bash
 npm run import:index    # Seed-Index neu erzeugen
@@ -128,7 +167,7 @@ npm run build
 pflegen wäre eine Fehlerquelle – eine importierte Stadt, die nicht in der App
 auftaucht, fiele kaum auf.
 
-### Schritt 6: Korrekturen
+### Schritt 8: Korrekturen
 
 Manuelle Korrekturen gehören in `data/<stadt>.overrides.json`, Schlüssel ist
 die Parkplatz-ID. Sie gewinnen gegen Importer und Geocoding und überleben jeden

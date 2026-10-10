@@ -454,7 +454,7 @@
       "note": null,
       "timeRestriction": null,
       "district": "Hannover",
-      "spotCount": 1,
+      "spotCount": 2,
       "lat": 52.3646492,
       "lng": 9.8523811,
       "geoAccuracy": "street",
@@ -474,21 +474,6 @@
       "lng": 9.8523481,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1193959134), ODbL"
-    },
-    {
-      "id": "hannover-18c1ba5925",
-      "city": "hannover",
-      "label": "Eisteichweg",
-      "street": "Eisteichweg",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Hannover",
-      "spotCount": 2,
-      "lat": 52.364659,
-      "lng": 9.8523738,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1193959135), ODbL"
     },
     {
       "id": "hannover-cbc71fef73",

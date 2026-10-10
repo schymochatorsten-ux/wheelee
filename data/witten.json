@@ -56,21 +56,6 @@
       "source": "OpenStreetMap (way/273342535), ODbL"
     },
     {
-      "id": "witten-b779db0a3f",
-      "city": "witten",
-      "label": "Alfred-Herrhausen-Straße",
-      "street": "Alfred-Herrhausen-Straße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Witten",
-      "spotCount": 1,
-      "lat": 51.4527876,
-      "lng": 7.3583852,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/417382973), ODbL"
-    },
-    {
       "id": "witten-9145705072",
       "city": "witten",
       "label": "Alfred-Herrhausen-Straße",

@@ -57,8 +57,22 @@ export const userIcon = L.divIcon({
   iconAnchor: [9, 9],
 });
 
+/**
+ * Ein Parkplatz aus der angebotenen Auswahl (ToDo 6.16).
+ *
+ * Dieselbe Signalfarbe wie das Ziel, aber in normaler Größe: Die Auswahl soll
+ * als Gruppe erkennbar sein, ohne dass unklar wird, welcher davon gerade das
+ * Ziel ist.
+ */
+export const candidateIcon = pin("#047857", 28, "wheelee-pin--candidate");
+
 /** Passendes Symbol für einen Parkplatz. */
-export function iconFor(options: { isNearest: boolean; isApproximate: boolean }): L.DivIcon {
+export function iconFor(options: {
+  isNearest: boolean;
+  isCandidate?: boolean;
+  isApproximate: boolean;
+}): L.DivIcon {
   if (options.isNearest) return nearestIcon;
+  if (options.isCandidate) return candidateIcon;
   return options.isApproximate ? approximateIcon : spotIcon;
 }

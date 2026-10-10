@@ -11,21 +11,6 @@
   "generatedAt": "2026-10-08",
   "spots": [
     {
-      "id": "luebeck-aff2d53aef",
-      "city": "luebeck",
-      "label": "Adolfstraße 1",
-      "street": "Adolfstraße",
-      "houseNumber": "1",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Lübeck",
-      "spotCount": 1,
-      "lat": 53.8799732,
-      "lng": 10.6978894,
-      "geoAccuracy": "house",
-      "source": "OpenStreetMap (node/5148904358), ODbL"
-    },
-    {
       "id": "luebeck-16ab60440d",
       "city": "luebeck",
       "label": "Adolfstraße 1",

@@ -161,21 +161,6 @@
       "source": "OpenStreetMap (way/518840420), ODbL"
     },
     {
-      "id": "recklinghausen-30533af423",
-      "city": "recklinghausen",
-      "label": "Erlbruch",
-      "street": "Erlbruch",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Recklinghausen",
-      "spotCount": 3,
-      "lat": 51.6112136,
-      "lng": 7.2002425,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/704337606), ODbL"
-    },
-    {
       "id": "recklinghausen-8a729cb59e",
       "city": "recklinghausen",
       "label": "Erlbruch",
@@ -214,7 +199,7 @@
       "note": null,
       "timeRestriction": null,
       "district": "Recklinghausen",
-      "spotCount": 1,
+      "spotCount": 3,
       "lat": 51.6112114,
       "lng": 7.2002357,
       "geoAccuracy": "street",

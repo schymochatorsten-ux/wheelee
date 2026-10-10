@@ -1391,37 +1391,7 @@
       "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
     },
     {
-      "id": "freiburg-e183b11bb4",
-      "city": "freiburg",
-      "label": "Fehrenbachallee",
-      "street": "Fehrenbachallee",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Stuehlinger",
-      "spotCount": 1,
-      "lat": 48.001657189035896,
-      "lng": 7.832176966430305,
-      "geoAccuracy": "house",
-      "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
-    },
-    {
       "id": "freiburg-70a5fc0ec1",
-      "city": "freiburg",
-      "label": "Fehrenbachallee",
-      "street": "Fehrenbachallee",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Stuehlinger",
-      "spotCount": 1,
-      "lat": 48.0016612947319,
-      "lng": 7.833481245982712,
-      "geoAccuracy": "house",
-      "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
-    },
-    {
-      "id": "freiburg-a733a210af",
       "city": "freiburg",
       "label": "Fehrenbachallee",
       "street": "Fehrenbachallee",
@@ -2172,21 +2142,6 @@
     },
     {
       "id": "freiburg-2ef1dded17",
-      "city": "freiburg",
-      "label": "Hugstetter Straße",
-      "street": "Hugstetter Straße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Stuehlinger",
-      "spotCount": 1,
-      "lat": 48.004922417968345,
-      "lng": 7.84049276761547,
-      "geoAccuracy": "house",
-      "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
-    },
-    {
-      "id": "freiburg-a4a2345cb5",
       "city": "freiburg",
       "label": "Hugstetter Straße",
       "street": "Hugstetter Straße",
@@ -3641,21 +3596,6 @@
       "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
     },
     {
-      "id": "freiburg-94ca5c9aff",
-      "city": "freiburg",
-      "label": "Schauinslandstrasse",
-      "street": "Schauinslandstrasse",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Guenterstal",
-      "spotCount": 1,
-      "lat": 47.90866941962997,
-      "lng": 7.89223978290169,
-      "geoAccuracy": "house",
-      "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
-    },
-    {
       "id": "freiburg-86778bf6b1",
       "city": "freiburg",
       "label": "Schauinslandstrasse",
@@ -4182,21 +4122,6 @@
     },
     {
       "id": "freiburg-3e53898bfb",
-      "city": "freiburg",
-      "label": "Sulzburger Straße",
-      "street": "Sulzburger Straße",
-      "houseNumber": "8",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Weingarten",
-      "spotCount": 1,
-      "lat": 47.99573870739806,
-      "lng": 7.808629170094422,
-      "geoAccuracy": "house",
-      "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
-    },
-    {
-      "id": "freiburg-b4572ca6e8",
       "city": "freiburg",
       "label": "Sulzburger Straße",
       "street": "Sulzburger Straße",

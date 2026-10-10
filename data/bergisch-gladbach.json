@@ -461,21 +461,6 @@
       "source": "OpenStreetMap (way/842745291), ODbL"
     },
     {
-      "id": "bergisch-gladbach-d195ed4e88",
-      "city": "bergisch-gladbach",
-      "label": "Damaschkestraße",
-      "street": "Damaschkestraße",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Bergisch Gladbach",
-      "spotCount": 3,
-      "lat": 50.9848371,
-      "lng": 7.1022675,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1240814401), ODbL"
-    },
-    {
       "id": "bergisch-gladbach-0ed466315c",
       "city": "bergisch-gladbach",
       "label": "Damaschkestraße",
@@ -499,7 +484,7 @@
       "note": null,
       "timeRestriction": null,
       "district": "Bergisch Gladbach",
-      "spotCount": 1,
+      "spotCount": 3,
       "lat": 50.9848372,
       "lng": 7.1022691,
       "geoAccuracy": "street",
@@ -1099,7 +1084,7 @@
       "note": null,
       "timeRestriction": null,
       "district": "Bergisch Gladbach",
-      "spotCount": 1,
+      "spotCount": 2,
       "lat": 50.9630235,
       "lng": 7.1134253,
       "geoAccuracy": "street",
@@ -1119,21 +1104,6 @@
       "lng": 7.1134249,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1228518654), ODbL"
-    },
-    {
-      "id": "bergisch-gladbach-696e96c32a",
-      "city": "bergisch-gladbach",
-      "label": "Junkersgut",
-      "street": "Junkersgut",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Bergisch Gladbach",
-      "spotCount": 2,
-      "lat": 50.9630356,
-      "lng": 7.1134251,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1228518655), ODbL"
     },
     {
       "id": "bergisch-gladbach-39b07d19dc",
@@ -2559,21 +2529,6 @@
       "lng": 7.1167718,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1228522128), ODbL"
-    },
-    {
-      "id": "bergisch-gladbach-e505a02695",
-      "city": "bergisch-gladbach",
-      "label": "Siebenmorgen 22",
-      "street": "Siebenmorgen",
-      "houseNumber": "22",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Bergisch Gladbach",
-      "spotCount": 1,
-      "lat": 50.9567591,
-      "lng": 7.1172427,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1228522137), ODbL"
     },
     {
       "id": "bergisch-gladbach-ae91f046e0",

@@ -13,8 +13,13 @@ import { useState } from "react";
 const ENTRIES = [
   {
     color: "#047857",
-    label: "Nächstgelegener Parkplatz",
-    note: "größer dargestellt",
+    label: "Ziel der Navigationsleiste",
+    note: "größer dargestellt – der nächste oder der selbst gewählte",
+  },
+  {
+    color: "#047857",
+    label: "Weitere angebotene Parkplätze",
+    note: "nur sichtbar, solange die Auswahl aufgeklappt ist",
   },
   {
     color: "#1d4ed8",

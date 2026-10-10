@@ -386,21 +386,6 @@
       "source": "OpenStreetMap (way/1374284431), ODbL"
     },
     {
-      "id": "bonn-8f9d5eb43a",
-      "city": "bonn",
-      "label": "Am Schickshof 6",
-      "street": "Am Schickshof",
-      "houseNumber": "6",
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Bonn",
-      "spotCount": 2,
-      "lat": 50.7145227,
-      "lng": 7.0455918,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1464233221), ODbL"
-    },
-    {
       "id": "bonn-4b8bf203e9",
       "city": "bonn",
       "label": "Am Schickshof 6",
@@ -424,7 +409,7 @@
       "note": null,
       "timeRestriction": null,
       "district": "Bonn",
-      "spotCount": 1,
+      "spotCount": 2,
       "lat": 50.7145232,
       "lng": 7.0455913,
       "geoAccuracy": "street",
@@ -1031,21 +1016,6 @@
       "source": "OpenStreetMap (way/107912632), ODbL"
     },
     {
-      "id": "bonn-d09a666eca",
-      "city": "bonn",
-      "label": "Charles-de-Gaulle-Straße",
-      "street": "Charles-de-Gaulle-Straße",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Bonn",
-      "spotCount": 3,
-      "lat": 50.7158558,
-      "lng": 7.1325044,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/107912633), ODbL"
-    },
-    {
       "id": "bonn-e4f9b53db6",
       "city": "bonn",
       "label": "Charles-de-Gaulle-Straße",
@@ -1069,7 +1039,7 @@
       "note": null,
       "timeRestriction": null,
       "district": "Bonn",
-      "spotCount": 1,
+      "spotCount": 3,
       "lat": 50.715856,
       "lng": 7.1325048,
       "geoAccuracy": "street",
@@ -1419,21 +1389,6 @@
       "lng": 7.0833061,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/884354479), ODbL"
-    },
-    {
-      "id": "bonn-135c10e2da",
-      "city": "bonn",
-      "label": "Endenicher Allee",
-      "street": "Endenicher Allee",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Bonn",
-      "spotCount": 1,
-      "lat": 50.7267474,
-      "lng": 7.0806869,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1355132566), ODbL"
     },
     {
       "id": "bonn-000878ee6b",
@@ -2681,21 +2636,6 @@
       "source": "OpenStreetMap (way/1368393077), ODbL"
     },
     {
-      "id": "bonn-3838b9fec7",
-      "city": "bonn",
-      "label": "Kennedyallee",
-      "street": "Kennedyallee",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Bonn",
-      "spotCount": 1,
-      "lat": 50.7027365,
-      "lng": 7.1615328,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1368393078), ODbL"
-    },
-    {
       "id": "bonn-070b384c2d",
       "city": "bonn",
       "label": "Kennedyallee",
@@ -2906,21 +2846,6 @@
       "source": "OpenStreetMap (way/1560808948), ODbL"
     },
     {
-      "id": "bonn-eedbe751d0",
-      "city": "bonn",
-      "label": "Kölnstraße",
-      "street": "Kölnstraße",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
-      "timeRestriction": null,
-      "district": "Bonn",
-      "spotCount": 3,
-      "lat": 50.7410282,
-      "lng": 7.0989885,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/654771109), ODbL"
-    },
-    {
       "id": "bonn-b8b94b6c21",
       "city": "bonn",
       "label": "Kölnstraße",
@@ -2944,7 +2869,7 @@
       "note": null,
       "timeRestriction": null,
       "district": "Bonn",
-      "spotCount": 1,
+      "spotCount": 3,
       "lat": 50.7410292,
       "lng": 7.0989877,
       "geoAccuracy": "street",
@@ -3559,7 +3484,7 @@
       "note": null,
       "timeRestriction": null,
       "district": "Bonn",
-      "spotCount": 1,
+      "spotCount": 2,
       "lat": 50.7215903,
       "lng": 7.0532654,
       "geoAccuracy": "street",
@@ -3589,7 +3514,7 @@
       "note": null,
       "timeRestriction": null,
       "district": "Bonn",
-      "spotCount": 1,
+      "spotCount": 2,
       "lat": 50.7216605,
       "lng": 7.0533577,
       "geoAccuracy": "street",
@@ -3609,36 +3534,6 @@
       "lng": 7.0533267,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1429228604), ODbL"
-    },
-    {
-      "id": "bonn-fa07d331e1",
-      "city": "bonn",
-      "label": "Maarweg",
-      "street": "Maarweg",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Bonn",
-      "spotCount": 2,
-      "lat": 50.7215985,
-      "lng": 7.05325,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/498276519), ODbL"
-    },
-    {
-      "id": "bonn-c2b085f389",
-      "city": "bonn",
-      "label": "Maarweg",
-      "street": "Maarweg",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Bonn",
-      "spotCount": 2,
-      "lat": 50.721669,
-      "lng": 7.0533422,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/498276521), ODbL"
     },
     {
       "id": "bonn-f851653e1c",
@@ -3729,21 +3624,6 @@
       "lng": 7.1001001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1368684294), ODbL"
-    },
-    {
-      "id": "bonn-28ab5a9245",
-      "city": "bonn",
-      "label": "Maximilianstraße",
-      "street": "Maximilianstraße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Bonn",
-      "spotCount": 1,
-      "lat": 50.7320656,
-      "lng": 7.1000243,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1368684295), ODbL"
     },
     {
       "id": "bonn-e522892405",
@@ -5051,21 +4931,6 @@
       "source": "OpenStreetMap (way/1436885642), ODbL"
     },
     {
-      "id": "bonn-942c5e0011",
-      "city": "bonn",
-      "label": "Sigmund-Freud-Straße",
-      "street": "Sigmund-Freud-Straße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Bonn",
-      "spotCount": 1,
-      "lat": 50.7016149,
-      "lng": 7.1019727,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1436885643), ODbL"
-    },
-    {
       "id": "bonn-1ea9e3c2ac",
       "city": "bonn",
       "label": "Sigmund-Freud-Straße",
@@ -5396,21 +5261,6 @@
       "source": "OpenStreetMap (way/1455974788), ODbL"
     },
     {
-      "id": "bonn-e4bc0cdfc0",
-      "city": "bonn",
-      "label": "Theresienau",
-      "street": "Theresienau",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Bonn",
-      "spotCount": 1,
-      "lat": 50.7068946,
-      "lng": 7.1728607,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1455974789), ODbL"
-    },
-    {
       "id": "bonn-a84aa96a39",
       "city": "bonn",
       "label": "Thomas-Mann-Straße",
@@ -5679,21 +5529,6 @@
       "lng": 7.1059887,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1372393353), ODbL"
-    },
-    {
-      "id": "bonn-ef9648165b",
-      "city": "bonn",
-      "label": "Venusberg-Campus",
-      "street": "Venusberg-Campus",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Bonn",
-      "spotCount": 1,
-      "lat": 50.6992522,
-      "lng": 7.1058239,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1374695758), ODbL"
     },
     {
       "id": "bonn-44bb497aee",

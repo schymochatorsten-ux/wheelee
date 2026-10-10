@@ -1631,21 +1631,6 @@
       "source": "OpenStreetMap (way/1277681114), ODbL"
     },
     {
-      "id": "goettingen-ffa6a57479",
-      "city": "goettingen",
-      "label": "Erwin-Baur-Weg",
-      "street": "Erwin-Baur-Weg",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Göttingen",
-      "spotCount": 1,
-      "lat": 51.5504359,
-      "lng": 9.9416071,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1277681115), ODbL"
-    },
-    {
       "id": "goettingen-9c4baf7c30",
       "city": "goettingen",
       "label": "Erwin-Baur-Weg",
@@ -2876,21 +2861,6 @@
       "source": "OpenStreetMap (relation/16094045), ODbL"
     },
     {
-      "id": "goettingen-7d770abd7e",
-      "city": "goettingen",
-      "label": "Heinrich-Düker-Weg",
-      "street": "Heinrich-Düker-Weg",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Göttingen",
-      "spotCount": 3,
-      "lat": 51.5419215,
-      "lng": 9.939219,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/314261652), ODbL"
-    },
-    {
       "id": "goettingen-b9317aca1f",
       "city": "goettingen",
       "label": "Heinrich-Düker-Weg",
@@ -2974,7 +2944,7 @@
       "note": null,
       "timeRestriction": null,
       "district": "Göttingen",
-      "spotCount": 1,
+      "spotCount": 3,
       "lat": 51.5419215,
       "lng": 9.939219,
       "geoAccuracy": "street",
@@ -4211,21 +4181,6 @@
       "source": "OpenStreetMap (way/1448478743), ODbL"
     },
     {
-      "id": "goettingen-19478a48df",
-      "city": "goettingen",
-      "label": "Kurze Straße",
-      "street": "Kurze Straße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Göttingen",
-      "spotCount": 1,
-      "lat": 51.5306098,
-      "lng": 9.9360793,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1448478744), ODbL"
-    },
-    {
       "id": "goettingen-bbf035be31",
       "city": "goettingen",
       "label": "Kurze Straße",
@@ -4376,21 +4331,6 @@
       "source": "OpenStreetMap (way/469780792), ODbL"
     },
     {
-      "id": "goettingen-987ef0536c",
-      "city": "goettingen",
-      "label": "Maschmühlenweg",
-      "street": "Maschmühlenweg",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Göttingen",
-      "spotCount": 3,
-      "lat": 51.5384205,
-      "lng": 9.9330075,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/45508416), ODbL"
-    },
-    {
       "id": "goettingen-9d49a74032",
       "city": "goettingen",
       "label": "Maschmühlenweg",
@@ -4429,7 +4369,7 @@
       "note": null,
       "timeRestriction": null,
       "district": "Göttingen",
-      "spotCount": 1,
+      "spotCount": 3,
       "lat": 51.5384244,
       "lng": 9.9330122,
       "geoAccuracy": "street",
@@ -5739,21 +5679,6 @@
       "lng": 9.9406334,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1424820114), ODbL"
-    },
-    {
-      "id": "goettingen-94acb3779d",
-      "city": "goettingen",
-      "label": "Theaterplatz",
-      "street": "Theaterplatz",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Göttingen",
-      "spotCount": 1,
-      "lat": 51.536076,
-      "lng": 9.9406545,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1424820115), ODbL"
     },
     {
       "id": "goettingen-9350087aa6",

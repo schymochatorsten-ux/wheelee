@@ -2,18 +2,18 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
-import type { ParkingSpot } from "@/lib/types";
-import {
-  distanceMeters,
-  findNearest,
-  formatDistance,
-  hasCoordinates,
-  sortByDistance,
-} from "@/lib/geo";
+import type { ParkingSpot, ParkingSpotWithDistance } from "@/lib/types";
+import { distanceMeters, formatDistance, hasCoordinates } from "@/lib/geo";
 import { detectMapsTarget, type MapsTarget } from "@/lib/navigation";
+import { readMapsPreference, type MapsPreference } from "@/lib/maps-preference";
 import type { CityInfo } from "@/lib/parking/spots";
+import type { Place } from "@/lib/geocode";
 import { useGeolocation } from "@/hooks/useGeolocation";
+import { DestinationSearch } from "./DestinationSearch";
+import { useNearbySpots, useSpotsInBounds } from "@/hooks/useSpots";
+import type { MapBounds } from "./map/ParkingMap";
 import { MapLegend } from "./MapLegend";
+import { SettingsPanel } from "./SettingsPanel";
 import { NearestBar } from "./NearestBar";
 import { SpotDetails } from "./SpotDetails";
 import { SpotList } from "./SpotList";
@@ -35,16 +35,38 @@ const ParkingMap = dynamic(() => import("./map/ParkingMap"), {
 });
 
 interface MapSectionProps {
-  spots: ParkingSpot[];
+  /**
+   * Die nächstgelegenen Parkplätze zur Stadtmitte, vom Server mitgeliefert.
+   *
+   * Nur so viele, wie die Liste zeigt – alle 17.000 ins HTML zu schreiben
+   * ergab 6,3 MB (ToDo 5.4). Sobald ein Standort vorliegt, ersetzt die App
+   * sie durch die wirklich nächstgelegenen.
+   */
+  initialNearby: ParkingSpotWithDistance[];
   cities: CityInfo[];
   /** Stadt, auf die ohne Nutzerstandort zentriert wird. */
   defaultCity: CityInfo;
+  /** Gesamtzahl der Standorte – nur für die Anzeige im Kopf. */
+  totalSpots: number;
 }
 
-type View = "map" | "list";
+type View = "map" | "list" | "settings";
+
+const VIEW_LABELS: Record<View, string> = {
+  map: "Karte",
+  list: "Liste",
+  settings: "Einstellungen",
+};
 
 /** So viele Parkplätze zeigt die Liste höchstens. */
 const LIST_LIMIT = 100;
+
+/**
+ * So viele Parkplätze bietet die Leiste über der Karte zur Auswahl an
+ * (ToDo 6.16). Fünf ist ein Kompromiss: genug, damit eine Alternative dabei
+ * ist, wenig genug, um die Karte nicht zuzudecken.
+ */
+const CANDIDATE_COUNT = 5;
 
 /**
  * Untertitel im Kopf. Bei wenigen Städten ihre Namen, sonst die Anzahl –
@@ -57,13 +79,43 @@ function citySubtitle(cities: readonly CityInfo[]): string {
   return `${names.length} Städte`;
 }
 
-export function MapSection({ spots, cities, defaultCity }: MapSectionProps) {
+export function MapSection({ initialNearby, cities, defaultCity, totalSpots }: MapSectionProps) {
   const center = defaultCity.center;
   const geo = useGeolocation();
   const [selected, setSelected] = useState<ParkingSpot | null>(null);
   const [view, setView] = useState<View>("map");
-  const [mapsTarget, setMapsTarget] = useState<MapsTarget>("google");
   const [focus, setFocus] = useState<{ lat: number; lng: number; key: string } | null>(null);
+
+  /**
+   * Die Marker der Karte kommen aus dem sichtbaren Ausschnitt, die Liste und
+   * die Navigationsleiste aus der Nähe-Abfrage. Beides lädt der Server
+   * nach – siehe `useSpots`.
+   */
+  const [bounds, setBounds] = useState<MapBounds | null>(null);
+  const { spots: mapSpots, truncated } = useSpotsInBounds(bounds, initialNearby);
+
+  /**
+   * Das Reiseziel (ToDo 6.12). Ist eines gesetzt, bezieht sich alles darauf
+   * statt auf den eigenen Standort: Wer vor der Abfahrt wissen will, wo am
+   * Ziel ein Platz ist, interessiert sich nicht für die Parkplätze zu Hause.
+   */
+  const [destination, setDestination] = useState<Place | null>(null);
+
+  /**
+   * Karten-App: was das Gerät nahelegt und was die Nutzerin gewählt hat.
+   * Beides erst nach dem Laden, weil `navigator` und `localStorage` auf dem
+   * Server fehlen.
+   */
+  const [detected, setDetected] = useState<MapsTarget>("google");
+  const [mapsPreference, setMapsPreference] = useState<MapsPreference>("auto");
+
+  useEffect(() => {
+    setDetected(detectMapsTarget(navigator.userAgent));
+    setMapsPreference(readMapsPreference());
+  }, []);
+
+  // Die Wahl schlägt die Geräteerkennung; „auto" bedeutet weiter raten.
+  const mapsTarget: MapsTarget = mapsPreference === "auto" ? detected : mapsPreference;
 
   // Standort direkt anfragen: Der Nutzen der App hängt daran, und der Browser
   // fragt selbst um Erlaubnis.
@@ -71,24 +123,47 @@ export function MapSection({ spots, cities, defaultCity }: MapSectionProps) {
     geo.request();
   }, [geo.request]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  useEffect(() => {
-    setMapsTarget(detectMapsTarget(navigator.userAgent));
-  }, []);
+  /**
+   * Die nächstgelegenen Parkplätze, vom Server berechnet.
+   *
+   * Ohne Standortfreigabe bleibt es bei den serverseitig vorgerechneten
+   * Einträgen um die Stadtmitte; sobald ein Standort vorliegt, werden sie
+   * ersetzt.
+   */
+  // In einem `useMemo`, damit die Abhängigkeiten stabil bleiben – sonst
+  // liefe die Nähe-Abfrage bei jedem Rendern neu.
+  const reference = useMemo(
+    () => (destination ? { lat: destination.lat, lng: destination.lng } : geo.position),
+    [destination, geo.position],
+  );
+  const nearby = useNearbySpots(reference, initialNearby, LIST_LIMIT);
 
-  const origin = geo.position ?? center;
+  const nearest = reference ? (nearby[0] ?? null) : null;
 
-  const nearest = useMemo(
-    () => (geo.position ? findNearest(spots, geo.position) : null),
-    [spots, geo.position],
+  // Die Auswahl der Leiste: die nächsten Parkplätze zum eigenen Standort.
+  // Ohne Standortfreigabe zählt die Liste ab der Stadtmitte, und das wäre
+  // kein Vorschlag, sondern Zufall.
+  const candidates = useMemo(
+    () => (reference ? nearby.slice(0, CANDIDATE_COUNT) : []),
+    [reference, nearby],
   );
 
-  // Nur die nächsten Parkplätze listen. 13.000 Einträge zu rendern würde das
-  // Gerät blockieren, und weiter entfernte helfen beim Parken ohnehin nicht.
-  const nearby = useMemo(() => sortByDistance(spots, origin).slice(0, LIST_LIMIT), [spots, origin]);
+  /** Ein gewähltes Ziel rückt sofort ins Bild. */
+  const chooseDestination = useCallback((place: Place) => {
+    setDestination(place);
+    setView("map");
+    setFocus({ lat: place.lat, lng: place.lng, key: `ziel-${place.lat}-${place.lng}` });
+  }, []);
 
-  const unlocated = useMemo(
-    () => spots.filter((spot) => !hasCoordinates(spot)).slice(0, LIST_LIMIT),
-    [spots],
+  /** Ziel der Leiste und – wenn aufgeklappt – die angebotenen Alternativen. */
+  const [barTargetId, setBarTargetId] = useState<string | null>(null);
+  const [barExpanded, setBarExpanded] = useState(false);
+
+  const onTargetChange = useCallback((spot: ParkingSpot) => setBarTargetId(spot.id), []);
+
+  const highlightIds = useMemo(
+    () => (barExpanded ? new Set(candidates.map((spot) => spot.id)) : null),
+    [barExpanded, candidates],
   );
 
   /**
@@ -123,9 +198,13 @@ export function MapSection({ spots, cities, defaultCity }: MapSectionProps) {
     }
   }, []);
 
-  // Parkplätze kennen nur den Stadt-Slug; den Namen kennt die Städteliste.
-  const cityNames = useMemo(() => new Map(cities.map((city) => [city.slug, city.name])), [cities]);
-  const cityNameOf = useCallback((slug: string) => cityNames.get(slug) ?? slug, [cityNames]);
+  // Parkplätze kennen nur den Stadt-Slug; Name und Importdatum kennt die
+  // Städteliste.
+  const cityBySlug = useMemo(() => new Map(cities.map((city) => [city.slug, city])), [cities]);
+  const cityNameOf = useCallback(
+    (slug: string) => cityBySlug.get(slug)?.name ?? slug,
+    [cityBySlug],
+  );
 
   const selectedDistance =
     selected && geo.position && hasCoordinates(selected)
@@ -133,10 +212,22 @@ export function MapSection({ spots, cities, defaultCity }: MapSectionProps) {
       : null;
 
   return (
-    <div className="flex h-dvh flex-col">
+    // Die Bildschirmhöhe setzt das Layout; hier nur den Rest ausfüllen.
+    <div className="flex min-h-0 flex-1 flex-col">
       <header className="shrink-0 border-b border-neutral-200 px-4 py-3 dark:border-neutral-800">
-        <div className="flex items-baseline justify-between gap-3">
-          <h1 className="text-lg font-semibold">
+        {/*
+          `flex-wrap`, damit bei großer Schrift die Ansichtswahl in die
+          nächste Zeile rutscht, statt die Seite breiter zu machen: Bei 200 %
+          Schriftgröße brauchen Überschrift und Reiter zusammen mehr Platz,
+          als ein Telefon hat, und die Seite ließ sich seitwärts schieben
+          (ToDo 9.8). `min-w-0` erlaubt der Überschrift zu schrumpfen – ohne
+          das gewinnt sie den Platzstreit und schiebt die Reiter hinaus.
+        */}
+        <div className="flex flex-wrap items-baseline justify-between gap-3">
+          {/* `hyphens-auto` greift, weil <html lang="de"> gesetzt ist:
+              „Behindertenparkplätze" passt bei großer Schrift sonst in keine
+              Telefonzeile und würde abgeschnitten. */}
+          <h1 className="min-w-0 text-lg font-semibold break-words hyphens-auto">
             Behindertenparkplätze{" "}
             <span className="block text-sm font-normal text-neutral-500">
               {citySubtitle(cities)}
@@ -147,7 +238,7 @@ export function MapSection({ spots, cities, defaultCity }: MapSectionProps) {
             aria-label="Ansicht wählen"
             className="flex shrink-0 overflow-hidden rounded-lg border border-neutral-300 text-sm dark:border-neutral-700"
           >
-            {(["map", "list"] as const).map((option) => (
+            {(["map", "list", "settings"] as const).map((option) => (
               <button
                 key={option}
                 type="button"
@@ -160,7 +251,18 @@ export function MapSection({ spots, cities, defaultCity }: MapSectionProps) {
                     : "bg-white text-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
                 }`}
               >
-                {option === "map" ? "Karte" : "Liste"}
+                {/* Auf schmalen Displays ist „Einstellungen" zu lang – dort
+                    das Zahnrad, mit dem Namen für Screenreader. */}
+                {option === "settings" ? (
+                  <>
+                    <span aria-hidden="true" className="sm:hidden">
+                      ⚙
+                    </span>
+                    <span className="max-sm:sr-only">Einstellungen</span>
+                  </>
+                ) : (
+                  VIEW_LABELS[option]
+                )}
               </button>
             ))}
           </div>
@@ -174,7 +276,7 @@ export function MapSection({ spots, cities, defaultCity }: MapSectionProps) {
               : "Kein verorteter Parkplatz in der Nähe.")}
           {geo.message}
           {geo.status === "idle" &&
-            `${spots.length.toLocaleString("de-DE")} Parkplätze in ${cities.length} Städten.`}
+            `${totalSpots.toLocaleString("de-DE")} Parkplätze in ${cities.length} Städten.`}
         </p>
 
         {(geo.status === "denied" || geo.status === "timeout" || geo.status === "unavailable") && (
@@ -192,23 +294,52 @@ export function MapSection({ spots, cities, defaultCity }: MapSectionProps) {
         {view === "map" ? (
           <>
             <ParkingMap
-              spots={spots}
+              spots={mapSpots}
               center={center}
               userPosition={geo.position}
-              nearestId={nearest?.id ?? null}
+              nearestId={barTargetId ?? nearest?.id ?? null}
+              highlightIds={highlightIds}
               focus={focus}
               onSelect={select}
+              onBoundsChange={setBounds}
             />
             {/* Nur zeigen, solange keine Detailansicht offen ist – sonst
                 stünden zwei Navigationsknöpfe übereinander. */}
+            {/* Die Zielsuche sitzt unter der Leiste, damit sie den
+                Parkplatzvorschlag nicht verdeckt. */}
+            {!selected && (
+              <div className="pointer-events-none absolute inset-x-0 bottom-3 z-[1000] pr-16 pl-3">
+                <DestinationSearch
+                  destination={destination}
+                  onChoose={chooseDestination}
+                  onClear={() => setDestination(null)}
+                />
+              </div>
+            )}
             {!selected && (
               <NearestBar
-                nearest={nearest}
+                candidates={candidates}
                 mapsTarget={mapsTarget}
-                hasPosition={geo.position !== null}
+                hasPosition={reference !== null}
                 onBackToMe={backToMe}
                 onShowDetails={select}
+                onTargetChange={onTargetChange}
+                onExpandedChange={setBarExpanded}
               />
+            )}
+            {/*
+              Wenn der Ausschnitt mehr Parkplätze enthält, als geladen werden,
+              muss das dastehen. Eine Karte, die stillschweigend die Hälfte
+              verschweigt, ist schlimmer als eine, die zum Hineinzoomen
+              auffordert – man verlässt sich sonst darauf, dass hier keiner ist.
+            */}
+            {truncated && (
+              <p
+                role="status"
+                className="pointer-events-none absolute inset-x-0 bottom-10 z-[1000] mx-auto w-fit rounded-full bg-amber-100 px-3 py-1.5 text-xs font-medium text-amber-900 shadow dark:bg-amber-950 dark:text-amber-100"
+              >
+                Nicht alle Parkplätze dieses Ausschnitts sind geladen – näher heranzoomen.
+              </p>
             )}
             <MapLegend />
             {selected && (
@@ -216,20 +347,25 @@ export function MapSection({ spots, cities, defaultCity }: MapSectionProps) {
                 spot={selected}
                 distanceMeters={selectedDistance}
                 cityName={cityNameOf(selected.city)}
+                importedAt={cityBySlug.get(selected.city)?.importedAt ?? null}
                 mapsTarget={mapsTarget}
                 onClose={() => setSelected(null)}
               />
             )}
           </>
-        ) : (
+        ) : view === "list" ? (
           <div className="h-full overflow-y-auto px-4 py-4">
             <SpotList
               nearby={nearby}
-              unlocated={unlocated}
+              unlocated={[]}
               hasUserPosition={geo.position !== null}
               cities={cities}
               onSelect={select}
             />
+          </div>
+        ) : (
+          <div className="h-full overflow-y-auto px-4 py-4">
+            <SettingsPanel detected={detected} onMapsPreferenceChange={setMapsPreference} />
           </div>
         )}
       </main>

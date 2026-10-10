@@ -881,21 +881,6 @@
       "source": "OpenStreetMap (way/80062623), ODbL"
     },
     {
-      "id": "muenster-8f64d24824",
-      "city": "muenster",
-      "label": "Glasuritstraße",
-      "street": "Glasuritstraße",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Münster",
-      "spotCount": 3,
-      "lat": 51.898492,
-      "lng": 7.6486119,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/136696348), ODbL"
-    },
-    {
       "id": "muenster-ea6d5aeea2",
       "city": "muenster",
       "label": "Glasuritstraße",
@@ -934,7 +919,7 @@
       "note": null,
       "timeRestriction": null,
       "district": "Münster",
-      "spotCount": 1,
+      "spotCount": 3,
       "lat": 51.8984952,
       "lng": 7.6486199,
       "geoAccuracy": "street",
@@ -2064,21 +2049,6 @@
       "lng": 7.6410308,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/136053639), ODbL"
-    },
-    {
-      "id": "muenster-dcec98be28",
-      "city": "muenster",
-      "label": "Stubengasse",
-      "street": "Stubengasse",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": "Mo-Sa 07:00-24:00; PH,Su 09:00-24:00",
-      "district": "Münster",
-      "spotCount": 4,
-      "lat": 51.9599949,
-      "lng": 7.6296668,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/302632766), ODbL"
     },
     {
       "id": "muenster-00ffbba0bf",

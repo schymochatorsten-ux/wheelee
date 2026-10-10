@@ -356,36 +356,6 @@
       "source": "OpenStreetMap (way/1562179742), ODbL"
     },
     {
-      "id": "potsdam-c16ffd3f05",
-      "city": "potsdam",
-      "label": "An der Pirschheide",
-      "street": "An der Pirschheide",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Potsdam",
-      "spotCount": 1,
-      "lat": 52.3755598,
-      "lng": 13.0139363,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1562179743), ODbL"
-    },
-    {
-      "id": "potsdam-51ffba67ac",
-      "city": "potsdam",
-      "label": "An der Pirschheide",
-      "street": "An der Pirschheide",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Potsdam",
-      "spotCount": 1,
-      "lat": 52.3755395,
-      "lng": 13.01395,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1562179744), ODbL"
-    },
-    {
       "id": "potsdam-4af2053876",
       "city": "potsdam",
       "label": "An der Pirschheide",
@@ -399,21 +369,6 @@
       "lng": 13.0139637,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1562179745), ODbL"
-    },
-    {
-      "id": "potsdam-f201bfc286",
-      "city": "potsdam",
-      "label": "An der Pirschheide",
-      "street": "An der Pirschheide",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Potsdam",
-      "spotCount": 4,
-      "lat": 52.3755496,
-      "lng": 13.0139431,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (relation/21439728), ODbL"
     },
     {
       "id": "potsdam-301ac821b8",
@@ -1014,21 +969,6 @@
       "lng": 13.0855986,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/97424735), ODbL"
-    },
-    {
-      "id": "potsdam-720956d10d",
-      "city": "potsdam",
-      "label": "Friedrich-List-Straße",
-      "street": "Friedrich-List-Straße",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Potsdam",
-      "spotCount": 1,
-      "lat": 52.3927539,
-      "lng": 13.0855986,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (relation/20150391), ODbL"
     },
     {
       "id": "potsdam-046dff5216",
@@ -2724,21 +2664,6 @@
       "lng": 13.1082021,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1427051016), ODbL"
-    },
-    {
-      "id": "potsdam-fb01f9c053",
-      "city": "potsdam",
-      "label": "Weidendamm",
-      "street": "Weidendamm",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Potsdam",
-      "spotCount": 4,
-      "lat": 52.3854956,
-      "lng": 13.1077398,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (relation/19564009), ODbL"
     },
     {
       "id": "potsdam-d618e28726",

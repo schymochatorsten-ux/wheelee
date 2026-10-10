@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import {
   isAlwaysOpen,
+  maxStay,
   normalizeTimeRestriction,
   parseTimeWindows,
   restrictionState,
@@ -85,7 +86,7 @@ describe("parseTimeWindows", () => {
   });
 
   it("versteht das Semikolon zwischen Tagen und Uhrzeit", () => {
-    // „Mo - Fr; 8 - 18 Uhr" meint einen Abschnitt, nicht zwei.
+    // „Mo - Fr; 8 - 18 Uhr“ meint einen Abschnitt, nicht zwei.
     const windows = parseTimeWindows("Mo - Fr; 8 - 18 Uhr");
     expect(windows).toHaveLength(1);
     expect(windows[0].days).toEqual([0, 1, 2, 3, 4]);
@@ -124,5 +125,91 @@ describe("restrictionState", () => {
     // Fehler um genau einen Tag.
     expect(restrictionState("Mo-Sa 08:00-20:00", sonntagVormittag)).toBe("gilt-nicht");
     expect(restrictionState("Mo-Sa 08:00-20:00", montagVormittag)).toBe("gilt");
+  });
+});
+
+/**
+ * Formen, an denen der Parser bisher gescheitert ist (ToDo 7.7).
+ * Alle stammen aus `npm run report:times`, also aus echten Einträgen des
+ * Bestands – keine erfundenen Fälle.
+ */
+describe("bisher nicht gedeutete Formen", () => {
+  describe("Angaben, die in Wahrheit keine Beschränkung sind", () => {
+    const immerOffen = [
+      "PH,Mo-Su 00:00-24:00",
+      "Mo-Su,PH 00:00+",
+      "Mo-Su,PH 00:00-00:00",
+      "Mo-Su 00:00-24:00",
+    ];
+
+    for (const angabe of immerOffen) {
+      it(`erkennt „${angabe}“ als immer offen`, () => {
+        expect(isAlwaysOpen(angabe)).toBe(true);
+        expect(normalizeTimeRestriction(angabe)).toBeNull();
+      });
+    }
+
+    it("hält eine echte Beschränkung nicht für immer offen", () => {
+      expect(isAlwaysOpen("Mo-Fr 08:00-18:00")).toBe(false);
+      expect(isAlwaysOpen("Mo-Sa 00:00-24:00")).toBe(false);
+    });
+  });
+
+  describe("über Mitternacht", () => {
+    it("teilt „07:00-02:00“ in zwei Fenster", () => {
+      const fenster = parseTimeWindows("07:00-02:00");
+      expect(fenster).toHaveLength(2);
+      expect(fenster[0]).toMatchObject({ from: 7 * 60, to: 24 * 60 });
+      expect(fenster[1]).toMatchObject({ from: 0, to: 2 * 60 });
+    });
+
+    it("legt den Teil nach Mitternacht auf den Folgetag", () => {
+      // Freitag 06:00-02:00 heißt: Samstag früh um 1 Uhr gilt es noch.
+      const freitagAbend = new Date("2026-10-09T23:00:00");
+      const samstagNacht = new Date("2026-10-10T01:00:00");
+      const samstagVormittag = new Date("2026-10-10T10:00:00");
+
+      expect(restrictionState("Fr 06:00-02:00", freitagAbend)).toBe("gilt");
+      expect(restrictionState("Fr 06:00-02:00", samstagNacht)).toBe("gilt");
+      expect(restrictionState("Fr 06:00-02:00", samstagVormittag)).toBe("gilt-nicht");
+    });
+  });
+
+  describe("mehrere Spannen und Feiertagsangaben", () => {
+    it("liest zwei Spannen in einem Abschnitt", () => {
+      const fenster = parseTimeWindows("We 00:00-07:00, 13:00-24:00");
+      expect(fenster).toHaveLength(2);
+    });
+
+    it("überspringt die Feiertagsangabe, statt den Abschnitt zu verwerfen", () => {
+      // Vorher verwarf der Parser jeden Abschnitt mit „PH“ komplett – die
+      // Uhrzeit ging dabei verloren.
+      expect(parseTimeWindows("Mo-Fr,PH 08:00-18:00").length).toBeGreaterThan(0);
+    });
+
+    it("versteht „und“ als Abschnittstrenner", () => {
+      const fenster = parseTimeWindows("Mo-Fr 7-12 Uhr und Di 14-18 Uhr");
+      expect(fenster).toHaveLength(2);
+    });
+  });
+
+  describe("Schreibfehler der Quellen", () => {
+    it("verträgt Umschreibungen wie „Mo bis Fr 7 -18 Uhr“", () => {
+      expect(parseTimeWindows("Mo bis Fr 7 -18 Uhr")).toHaveLength(1);
+    });
+  });
+});
+
+describe("maxStay", () => {
+  it("erkennt Höchstparkdauern", () => {
+    expect(maxStay("2 Stunden")).toBe("2 Stunden");
+    expect(maxStay("1 Stunde")).toBe("1 Stunde");
+    expect(maxStay("15 min")).toBe("15 Minuten");
+    expect(maxStay("0,5 Stunden")).toBe("0,5 Stunden");
+  });
+
+  it("verwechselt sie nicht mit Zeitfenstern", () => {
+    expect(maxStay("Mo-Fr 08:00-18:00")).toBeNull();
+    expect(maxStay("24/7")).toBeNull();
   });
 });

@@ -17,10 +17,22 @@ const statusJson = path.join(projectRoot, "data", "_import-status.json");
 const statusMarkdown = path.join(projectRoot, "data", "_import-status.md");
 
 export type ImportState =
-  /** Noch nicht angefasst. */
+  /** Noch nicht angefasst – niemand hat je nachgesehen. */
   | "offen"
-  /** Erfolgreich importiert. */
+  /** Erfolgreich importiert, mindestens ein Standort. */
   | "fertig"
+  /**
+   * Geprüft, aber die Quelle kennt hier keinen einzigen Behindertenparkplatz.
+   *
+   * Das ist ausdrücklich **kein** `offen` und **kein** `fehlgeschlagen`: Die
+   * Abfrage lief sauber durch und hatte ein Ergebnis, es war nur leer. Ohne
+   * eigenen Zustand wäre diese Gemeinde von „noch nicht geprüft" nicht zu
+   * unterscheiden und würde bei jedem Durchlauf erneut abgefragt – bei
+   * tausenden Gemeinden ein Missbrauch von Overpass. Dass eine Gemeinde
+   * geprüft ist und nichts hat, ist zudem selbst eine Information: Sie gehört
+   * in die Abdeckungsrechnung (2e.0), nicht in die Warteschlange.
+   */
+  | "leer"
   /** Versucht, aber fehlgeschlagen – Grund steht in `message`. */
   | "fehlgeschlagen"
   /** Quelle vorhanden, aber nicht automatisch verwertbar – Handarbeit nötig. */
@@ -63,6 +75,20 @@ async function readJson<T>(file: string, fallback: T): Promise<T> {
   }
 }
 
+/**
+ * Zustand eines vorhandenen Eintrags bestimmen.
+ *
+ * Bis zur Einführung von `leer` wurde eine geprüfte Gemeinde ohne Treffer als
+ * `fertig` mit 0 Standorten vermerkt. Das trennt dieser Schritt nachträglich
+ * auf, damit der Altbestand dieselbe Aussage trägt wie neue Läufe – sonst
+ * zählte die Übersicht Gemeinden als erfasst, in denen nichts gefunden wurde.
+ */
+function migrateState(previous: CityImportRecord | undefined): ImportState {
+  if (!previous) return "offen";
+  if (previous.status === "fertig" && (previous.locations ?? 0) === 0) return "leer";
+  return previous.status;
+}
+
 /** Status laden und dabei mit der Städteliste abgleichen. */
 export async function loadStatus(): Promise<ImportStatusFile> {
   const existing = await readJson<ImportStatusFile>(statusJson, {
@@ -88,7 +114,7 @@ export async function loadStatus(): Promise<ImportStatusFile> {
       plan: planBySlug.get(city.slug) ?? "osm",
       usedSource: previous?.usedSource ?? null,
       usedUrl: previous?.usedUrl ?? null,
-      status: previous?.status ?? "offen",
+      status: migrateState(previous),
       locations: previous?.locations ?? null,
       spaces: previous?.spaces ?? null,
       attemptedAt: previous?.attemptedAt ?? null,
@@ -118,6 +144,7 @@ export async function recordCity(
 
 const SYMBOL: Record<ImportState, string> = {
   fertig: "✅",
+  leer: "⚪",
   fehlgeschlagen: "❌",
   handarbeit: "✋",
   offen: "⬜",
@@ -126,6 +153,9 @@ const SYMBOL: Record<ImportState, string> = {
 function renderMarkdown(status: ImportStatusFile): string {
   const done = status.records.filter((record) => record.status === "fertig");
   const open = status.records.filter((record) => record.status === "offen");
+  const empty = status.records.filter((record) => record.status === "leer");
+  // Geprüft heißt: wir haben nachgesehen – unabhängig davon, ob etwas da war.
+  const checked = done.length + empty.length;
   const problems = status.records.filter(
     (record) => record.status === "fehlgeschlagen" || record.status === "handarbeit",
   );
@@ -135,7 +165,7 @@ function renderMarkdown(status: ImportStatusFile): string {
   const totalSpaces = done.reduce((sum, record) => sum + (record.spaces ?? 0), 0);
 
   return [
-    "# Importstand der deutschen Großstädte",
+    "# Importstand der deutschen Gemeinden",
     "",
     `Zuletzt aktualisiert: ${status.updatedAt}`,
     "",
@@ -160,12 +190,19 @@ function renderMarkdown(status: ImportStatusFile): string {
     "",
     "| Kennzahl | Wert |",
     "| --- | --- |",
-    `| Städte gesamt | ${status.records.length} |`,
-    `| fertig | ${done.length} |`,
-    `| offen | ${open.length} |`,
+    `| Gemeinden im Register | ${status.records.length} |`,
+    `| geprüft | ${checked} (${Math.round((checked / status.records.length) * 100)} %) |`,
+    `| davon mit Treffer | ${done.length} |`,
+    `| davon geprüft, nichts gefunden | ${empty.length} |`,
+    `| noch nicht geprüft | ${open.length} |`,
     `| mit Problem | ${problems.length} |`,
     `| importierte Standorte | ${totalLocations} |`,
     `| importierte Stellplätze | ${totalSpaces} |`,
+    "",
+    '„Geprüft, nichts gefunden" ist etwas anderes als „noch nicht geprüft": Dort',
+    "lief die Abfrage sauber durch und war leer. Diese Gemeinden werden nicht",
+    "erneut abgefragt – bei tausenden Gemeinden wäre das ein Missbrauch von",
+    "Overpass. Ein erneuter Versuch geht gezielt über den Namen der Gemeinde.",
     "",
     "## Städte in Bearbeitungsreihenfolge",
     "",

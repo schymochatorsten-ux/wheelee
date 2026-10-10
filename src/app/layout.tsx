@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
+import { ServiceWorker } from "@/components/ServiceWorker";
 import { DEFAULT_THEME, themeInitScript } from "@/lib/theme";
 import "./globals.css";
 
@@ -50,7 +51,15 @@ export default function RootLayout({
         */}
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
-      <body className={`${geistSans.variable} antialiased`}>{children}</body>
+      {/*
+        Der Rahmen hält die Bildschirmhöhe, damit der Offline-Hinweis die
+        Karte zusammenschiebt, statt die Seite länger zu machen – sonst
+        entstünde ausgerechnet im Funkloch ein Scrollbalken über der Karte.
+      */}
+      <body className={`${geistSans.variable} flex h-dvh flex-col antialiased`}>
+        <ServiceWorker />
+        {children}
+      </body>
     </html>
   );
 }

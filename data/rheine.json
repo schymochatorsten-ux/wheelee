@@ -13,9 +13,9 @@
     {
       "id": "rheine-008f3d3c70",
       "city": "rheine",
-      "label": "Behindertenparkplatz Rheine",
-      "street": null,
-      "houseNumber": null,
+      "label": "Marktstraße 7-11",
+      "street": "Marktstraße",
+      "houseNumber": "7-11",
       "note": null,
       "timeRestriction": null,
       "district": "Rheine",
@@ -26,25 +26,10 @@
       "source": "OpenStreetMap (node/13335486092), ODbL"
     },
     {
-      "id": "rheine-36efcd0073",
-      "city": "rheine",
-      "label": "Behindertenparkplatz Rheine",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Rheine",
-      "spotCount": 1,
-      "lat": 52.2862669,
-      "lng": 7.4638906,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/192609437), ODbL"
-    },
-    {
       "id": "rheine-1e9622a122",
       "city": "rheine",
-      "label": "REWE",
-      "street": null,
+      "label": "Osnabrücker Straße",
+      "street": "Osnabrücker Straße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -54,6 +39,21 @@
       "lng": 7.4710719,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/233172893), ODbL"
+    },
+    {
+      "id": "rheine-36efcd0073",
+      "city": "rheine",
+      "label": "Windmühlenstraße 3",
+      "street": "Windmühlenstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rheine",
+      "spotCount": 1,
+      "lat": 52.2862669,
+      "lng": 7.4638906,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/192609437), ODbL"
     }
   ]
 }

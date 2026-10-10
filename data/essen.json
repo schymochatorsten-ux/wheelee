@@ -2111,21 +2111,6 @@
       "source": "OpenStreetMap (way/700671301), ODbL"
     },
     {
-      "id": "essen-99449fb201",
-      "city": "essen",
-      "label": "Limbecker Platz 1a",
-      "street": "Limbecker Platz",
-      "houseNumber": "1a",
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
-      "timeRestriction": "Mo-Sa 09:00-21:30",
-      "district": "Essen",
-      "spotCount": 20,
-      "lat": 51.4583121,
-      "lng": 7.0059769,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/200178281), ODbL"
-    },
-    {
       "id": "essen-005024766d",
       "city": "essen",
       "label": "Limbecker Platz 1a",

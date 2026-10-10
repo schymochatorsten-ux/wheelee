@@ -536,21 +536,6 @@
       "source": "OpenStreetMap (way/1329180570), ODbL"
     },
     {
-      "id": "hildesheim-8539cea981",
-      "city": "hildesheim",
-      "label": "Treibestraße",
-      "street": "Treibestraße",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Hildesheim",
-      "spotCount": 3,
-      "lat": 52.147312,
-      "lng": 9.9458727,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1329180571), ODbL"
-    },
-    {
       "id": "hildesheim-afa68cc0c8",
       "city": "hildesheim",
       "label": "Treibestraße 2",
