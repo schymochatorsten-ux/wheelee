@@ -1,6 +1,6 @@
 # Importstand der deutschen Gemeinden
 
-Zuletzt aktualisiert: 2026-10-10T15:26:58.968Z
+Zuletzt aktualisiert: 2026-10-10T18:24:13.142Z
 
 Diese Datei schreiben die Importskripte selbst nach **jeder einzelnen Stadt**.
 Sie ist damit auch nach einem Abbruch mitten im Lauf korrekt.
@@ -25,8 +25,8 @@ npm run import:city -- --rest
 | davon geprüft, nichts gefunden | 2 |
 | noch nicht geprüft | 0 |
 | mit Problem | 0 |
-| importierte Standorte | 17790 |
-| importierte Stellplätze | 29793 |
+| importierte Standorte | 17998 |
+| importierte Stellplätze | 30074 |
 
 „Geprüft, nichts gefunden" ist etwas anderes als „noch nicht geprüft": Dort
 lief die Abfrage sauber durch und war leer. Diese Gemeinden werden nicht
@@ -66,7 +66,7 @@ Overpass. Ein erneuter Versuch geht gezielt über den Namen der Gemeinde.
  | ✅ | 27 | Aachen | 262.670 | OpenStreetMap | 111 | 191 | amtliche Quelle nicht nutzbar, OSM verwendet | 
  | ✅ | 28 | Braunschweig | 252.962 | OpenStreetMap | 85 | 226 | fertig | 
  | ✅ | 29 | Kiel | 252.668 | OpenStreetMap | 85 | 241 | amtliche Quelle nicht nutzbar, OSM verwendet | 
- | ✅ | 30 | Chemnitz | 245.618 | amtlich (ARCGIS) | 13 | 56 | fertig | 
+ | ✅ | 30 | Chemnitz | 245.618 | OpenStreetMap | 221 | 337 | fertig | 
  | ✅ | 31 | Magdeburg | 244.329 | OpenStreetMap | 208 | 345 | fertig | 
  | ✅ | 32 | Freiburg im Breisgau | 237.460 | amtlich (WFS) | 330 | 334 | fertig | 
  | ✅ | 33 | Krefeld | 231.406 | OpenStreetMap | 40 | 71 | amtliche Quelle nicht nutzbar, OSM verwendet | 
@@ -273,7 +273,7 @@ Overpass. Ein erneuter Versuch geht gezielt über den Namen der Gemeinde.
 - **Aachen** (OpenStreetMap): `Overpass, OSM relation/62564 (Aachen, Städteregion Aachen, Nordrhein-Westfalen, Deutschland)`
 - **Braunschweig** (OpenStreetMap): `Overpass, OSM relation/62531 (Braunschweig, Niedersachsen, Deutschland)`
 - **Kiel** (OpenStreetMap): `Overpass, OSM relation/27021 (Kiel, Altenholz, Schleswig-Holstein, Deutschland)`
-- **Chemnitz** (amtlich (ARCGIS)): `https://services6.arcgis.com/jiszdsDupTUO3fSM/arcgis/rest/services/Parkpl%C3%A4tze_Wohnmobil/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson&returnGeometry=true`
+- **Chemnitz** (OpenStreetMap): `Overpass, OSM relation/62594 (Chemnitz, Lichtenau, Sachsen, Deutschland)`
 - **Magdeburg** (OpenStreetMap): `Overpass, OSM relation/62481 (Magdeburg, Sachsen-Anhalt, Deutschland)`
 - **Freiburg im Breisgau** (amtlich (WFS)): `https://geoportal.freiburg.de/wfs/gut_parken/gut_parken?service=WFS&version=2.0.0&request=GetFeature&typeNames=ms%3Abehindertenparkplatz_detail`
 - **Krefeld** (OpenStreetMap): `Overpass, OSM relation/62748 (Krefeld, Nordrhein-Westfalen, Deutschland)`

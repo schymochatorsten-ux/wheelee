@@ -5,6 +5,7 @@ import {
   normalizeTimeRestriction,
   parseTimeWindows,
   restrictionState,
+  splitSeason,
 } from "./opening-hours";
 
 /** Montag, 10:00 Uhr. */
@@ -211,5 +212,130 @@ describe("maxStay", () => {
   it("verwechselt sie nicht mit Zeitfenstern", () => {
     expect(maxStay("Mo-Fr 08:00-18:00")).toBeNull();
     expect(maxStay("24/7")).toBeNull();
+  });
+});
+
+/**
+ * Die letzten offenen Formen aus `npm run report:times` (ToDo 7.7).
+ *
+ * Jede Zeichenkette hier ist ein **echter Eintrag aus dem Bestand**, keine
+ * ausgedachte Variante. Das ist der Grund, warum diese vier und nicht
+ * irgendwelche anderen gebaut wurden.
+ */
+describe("die letzten Formen aus dem Bestand", () => {
+  it("liest Null statt O im Wochentag: „M0 - Fr 7 -19 Uhr“", () => {
+    const fenster = parseTimeWindows("M0 - Fr 7 -19 Uhr");
+    expect(fenster).toHaveLength(1);
+    expect(fenster[0].days).toEqual([0, 1, 2, 3, 4]);
+    expect(fenster[0].from).toBe(7 * 60);
+  });
+
+  it("wirft HTML aus den Daten weg und trennt daran die Abschnitte", () => {
+    const fenster = parseTimeWindows("<br>Mo-Fr 9:00-20:00<br>Sa 9:00-14:00");
+    expect(fenster).toHaveLength(2);
+    expect(fenster[1].days).toEqual([5]);
+  });
+
+  it("verträgt den Tippfehler „Vvon“", () => {
+    expect(isAlwaysOpen("Vvon 00:00 Uhr bis 24:00 Uhr")).toBe(true);
+  });
+
+  it("liest „bis“ auch zwischen Uhrzeiten: „7 bis 17 Uhr“", () => {
+    const fenster = parseTimeWindows("7 bis 17 Uhr");
+    expect(fenster).toHaveLength(1);
+    // Ohne Wochentage gilt die Angabe täglich.
+    expect(fenster[0].days).toHaveLength(7);
+    expect(fenster[0].to).toBe(17 * 60);
+  });
+
+  it("liest den Gedankenstrich wie einen Bindestrich: „8–18 Uhr“", () => {
+    const fenster = parseTimeWindows("8–18 Uhr");
+    expect(fenster).toHaveLength(1);
+    expect(fenster[0].from).toBe(8 * 60);
+    expect(fenster[0].to).toBe(18 * 60);
+  });
+
+  it("trennt am Schrägstrich: „Mo-Fr 8-18/Sa 9-12“", () => {
+    const fenster = parseTimeWindows("Mo-Fr 8-18/Sa 9-12");
+    expect(fenster).toHaveLength(2);
+    expect(fenster[1].days).toEqual([5]);
+  });
+
+  it("zerschneidet dabei nicht „24/7“", () => {
+    // Die häufigste Angabe im Bestand – sie darf die neue Regel nicht treffen.
+    expect(isAlwaysOpen("24/7")).toBe(true);
+  });
+
+  describe("saisonale Angaben", () => {
+    /** Mittwoch im Juli, 10:00 – innerhalb von Apr-Oct. */
+    const imSommer = new Date("2026-07-15T10:00:00");
+    /** Donnerstag im Januar, 10:00 – außerhalb. */
+    const imWinter = new Date("2026-01-15T10:00:00");
+
+    const saison = "Apr-Oct: Mo-Su 09:00-18:00; PH 09:00-18:00";
+
+    it("trennt den Monatsteil ab", () => {
+      expect(splitSeason(saison)).toMatchObject({ from: 4, to: 10 });
+    });
+
+    it("gilt im Sommer und nicht im Winter", () => {
+      expect(restrictionState(saison, imSommer)).toBe("gilt");
+      expect(restrictionState(saison, imWinter)).toBe("gilt-nicht");
+    });
+
+    it("kommt über den Jahreswechsel: Nov-Mär gilt im Januar", () => {
+      expect(restrictionState("Nov-Mär: Mo-Su 09:00-18:00", imWinter)).toBe("gilt");
+      expect(restrictionState("Nov-Mär: Mo-Su 09:00-18:00", imSommer)).toBe("gilt-nicht");
+    });
+  });
+
+  describe("Ausnahmen mit „off“", () => {
+    /** Freitag, 10:00 – innerhalb der ausgenommenen Zeit. */
+    const freitagVormittag = new Date("2026-10-09T10:00:00");
+    /** Freitag, 20:00 – außerhalb davon. */
+    const freitagAbend = new Date("2026-10-09T20:00:00");
+
+    const mitAusnahme = "open; Fr 06:00-14:00 off";
+
+    it("zieht die Ausnahme von der Grundregel ab", () => {
+      expect(restrictionState(mitAusnahme, freitagVormittag)).toBe("gilt-nicht");
+      expect(restrictionState(mitAusnahme, freitagAbend)).toBe("gilt");
+      expect(restrictionState(mitAusnahme, montagVormittag)).toBe("gilt");
+    });
+
+    it("ist dadurch keine durchgehende Öffnung mehr", () => {
+      // Ohne den Abzug wäre „open" allein „immer offen" – die Ausnahme
+      // verschwiegen, und das wäre die schlimmere Auskunft.
+      expect(isAlwaysOpen(mitAusnahme)).toBe(false);
+      expect(isAlwaysOpen("open")).toBe(true);
+    });
+
+    it("zieht ausgenommene ganze Tage ab: „Mo-Fr 04:00-23:00, Sa-Su off“", () => {
+      const fenster = parseTimeWindows("Mo-Fr 04:00-23:00, Sa-Su off");
+      expect(fenster.every((window) => !window.days.includes(5))).toBe(true);
+      expect(fenster.every((window) => !window.days.includes(6))).toBe(true);
+      expect(fenster.length).toBeGreaterThan(0);
+    });
+
+    it("zieht sie auch dann ab, wenn sie die Regel überschneiden", () => {
+      // Hier sagt die Ausnahme etwas Neues: Ohne Abzug wäre der Samstag
+      // fälschlich dabei.
+      const fenster = parseTimeWindows("Mo-Su 08:00-18:00, Sa off");
+      expect(fenster.every((window) => !window.days.includes(5))).toBe(true);
+      expect(fenster.some((window) => window.days.includes(0))).toBe(true);
+    });
+
+    it("verwirft die Bemerkung hinter „||“", () => {
+      const fenster = parseTimeWindows('06:00-22:00 || "Ausfahrt jederzeit möglich"');
+      expect(fenster).toHaveLength(1);
+      expect(fenster[0].to).toBe(22 * 60);
+    });
+
+    it("behauptet nichts, wenn nur eine Ausnahme ohne Grundregel dasteht", () => {
+      // „PH off" und „Mo-Su,PH off" stehen so im Bestand. Was sie für eine
+      // Beschränkung bedeuten sollen, ist nicht zu entscheiden.
+      expect(restrictionState("PH off", montagVormittag)).toBe("unbekannt");
+      expect(restrictionState("Mo-Su,PH off", montagVormittag)).toBe("unbekannt");
+    });
   });
 });

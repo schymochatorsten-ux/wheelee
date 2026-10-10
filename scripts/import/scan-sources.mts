@@ -75,6 +75,25 @@ const ABOUT_PARKING = /parkpl|parken|stellpl|parkraum|parkfl/iu;
 const ABOUT_DISABILITY = /behinder|rollstuhl|barrierefrei/iu;
 
 /**
+ * Parkdatensätze für **eine andere Zielgruppe**.
+ *
+ * Diese Prüfung fehlte, und sie hat echten Schaden angerichtet: Chemnitz kam
+ * mit 13 Standorten aus dem amtlichen Datensatz **„Parkplätze Wohnmobil"**.
+ * Er handelt von Parken, trägt einen ArcGIS-Dienst und rutschte deshalb durch
+ * die Ausnahme unten durch, die für Frankfurts Sammeldienst gedacht ist. In
+ * der App standen dadurch Wohnmobilstellplätze als Behindertenparkplätze –
+ * und sie sahen beim Draufschauen richtig aus: Straßennamen, plausible
+ * Koordinaten, je drei Stellplätze (ToDo 2d.10, gefunden 2026-10-10).
+ *
+ * Ein Datensatz, der im Titel eine andere Zielgruppe nennt, ist deshalb
+ * **ausgeschlossen, bevor irgendeine Ausnahme greift.** Die Begriffe stammen
+ * aus echten Treffern (Chemnitz: Wohnmobil und Reisebus; Krefeld und Kiel:
+ * Bewohnerparken, siehe 2d.8).
+ */
+const ANOTHER_PURPOSE =
+  /wohnmobil|reisebus|\bbus\b|lkw|lastwagen|fahrrad|rad(?:ab)?stellpl|e-?lade|ladesäul|ladeinfrastruktur|anwohner|bewohner|taxi|motorrad|carsharing/iu;
+
+/**
  * Ein Geodienst darf auch ohne "Behinderten" im Titel durchgelassen werden:
  * Frankfurts Datensatz heißt schlicht "WFS Parken in der Stadt Frankfurt am
  * Main", die Behindertenparkplätze sind eine Ebene darin. Beim Abruf wird
@@ -82,12 +101,22 @@ const ABOUT_DISABILITY = /behinder|rollstuhl|barrierefrei/iu;
  * Importer weiter. Bei fertigen Dateien ist das nicht möglich – dort muss der
  * Bezug zur Behinderung im Titel oder in der URL stehen.
  */
-function isRelevant(dataset: CkanDataset): boolean {
+export function isRelevant(dataset: CkanDataset): boolean {
   const text = [dataset.title, ...(dataset.resources ?? []).map((r) => r.url ?? "")]
     .filter(Boolean)
     .join(" ");
 
   if (!ABOUT_PARKING.test(text)) return false;
+
+  /*
+   * Die Zielgruppe entscheidet vor allem anderen. Nennt der **Titel** eine
+   * andere – Wohnmobile, Reisebusse, Anwohner –, hilft kein Geodienst und
+   * kein Behindertenbezug in irgendeiner URL: Der Datensatz beschreibt dann
+   * etwas anderes. Geprüft wird nur der Titel, nicht die URLs, denn in einer
+   * Portal-URL steht oft der ganze Themenbaum einer Stadt.
+   */
+  if (ANOTHER_PURPOSE.test(dataset.title ?? "")) return false;
+
   if (ABOUT_DISABILITY.test(text)) return true;
 
   return (dataset.resources ?? []).some((resource) =>

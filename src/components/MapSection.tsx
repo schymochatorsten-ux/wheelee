@@ -11,7 +11,7 @@ import type { Place } from "@/lib/geocode";
 import { useGeolocation } from "@/hooks/useGeolocation";
 import { DestinationSearch } from "./DestinationSearch";
 import { useNearbySpots, useSpotsInBounds } from "@/hooks/useSpots";
-import type { MapBounds } from "./map/ParkingMap";
+import type { FocusTarget, MapBounds } from "./map/ParkingMap";
 import { MapLegend } from "./MapLegend";
 import { SettingsPanel } from "./SettingsPanel";
 import { NearestBar } from "./NearestBar";
@@ -94,6 +94,17 @@ const CANDIDATE_COUNT = 5;
 const BEYOND_RADIUS_COUNT = 3;
 
 /**
+ * Wie viel Platz die aufgeklappte Auswahl am oberen Kartenrand einnimmt.
+ *
+ * Eine Schätzung, und absichtlich eine großzügige: Die Leiste ist auf 46 % der
+ * Bildschirmhöhe begrenzt, dazu kommt die Zielzeile darunter. Zu großzügig
+ * geschätzt wird der Kartenausschnitt nur etwas enger als nötig; zu knapp
+ * geschätzt landen die eingepassten Marker unter der Leiste – und das ist der
+ * Fehler, der 6.21 überhaupt ausgelöst hat.
+ */
+const EXPANDED_BAR_HEIGHT = 430;
+
+/**
  * Untertitel im Kopf. Bei wenigen Städten ihre Namen, sonst die Anzahl –
  * 84 Namen nebeneinander wären unlesbar.
  */
@@ -109,7 +120,7 @@ export function MapSection({ initialNearby, cities, defaultCity, totalSpots }: M
   const geo = useGeolocation();
   const [selected, setSelected] = useState<ParkingSpot | null>(null);
   const [view, setView] = useState<View>("map");
-  const [focus, setFocus] = useState<{ lat: number; lng: number; key: string } | null>(null);
+  const [focus, setFocus] = useState<FocusTarget | null>(null);
 
   /**
    * Die Marker der Karte kommen aus dem sichtbaren Ausschnitt, die Liste und
@@ -205,7 +216,7 @@ export function MapSection({ initialNearby, cities, defaultCity, totalSpots }: M
   const chooseDestination = useCallback((place: Place) => {
     setDestination(place);
     setView("map");
-    setFocus({ lat: place.lat, lng: place.lng, key: `ziel-${place.lat}-${place.lng}` });
+    setFocus({ key: `ziel-${place.lat}-${place.lng}`, points: [place] });
   }, []);
 
   /** Ziel der Leiste und – wenn aufgeklappt – die angebotenen Alternativen. */
@@ -230,6 +241,35 @@ export function MapSection({ initialNearby, cities, defaultCity, totalSpots }: M
   );
 
   /**
+   * Beim Aufklappen die ganze Auswahl ins Bild holen (ToDo 6.21).
+   *
+   * Vorher deckte die Liste die Karte zu, und darunter lagen genau die
+   * Parkplätze, über die sie Auskunft gab – man las Namen und Entfernungen,
+   * ohne zu sehen, wo sie liegen. Die Liste ist deshalb niedriger geworden,
+   * und die Karte zeigt jetzt das, was in der Liste steht.
+   *
+   * Nur beim Öffnen, nicht beim Schließen: Wer die Auswahl zuklappt, will
+   * weitersehen, wo er gerade hingeschaut hat, und nicht erneut verschoben
+   * werden.
+   */
+  const onExpandedChange = useCallback(
+    (expanded: boolean) => {
+      setBarExpanded(expanded);
+      if (!expanded) return;
+
+      const located = candidates.filter(hasCoordinates);
+      if (located.length === 0) return;
+
+      setFocus({
+        key: `auswahl-${located.length}-${located[0].id}`,
+        points: reference ? [...located, reference] : located,
+        padTop: EXPANDED_BAR_HEIGHT,
+      });
+    },
+    [candidates, reference],
+  );
+
+  /**
    * Beim ersten Standort auf **den Nutzer** zentrieren, nicht auf den
    * nächstgelegenen Parkplatz.
    *
@@ -243,23 +283,29 @@ export function MapSection({ initialNearby, cities, defaultCity, totalSpots }: M
   useEffect(() => {
     if (geo.status !== "ready" || !geo.position || centeredOnUser.current) return;
     centeredOnUser.current = true;
-    setFocus({ lat: geo.position.lat, lng: geo.position.lng, key: "eigener-standort" });
+    setFocus({ key: "eigener-standort", points: [geo.position] });
   }, [geo.status, geo.position]);
 
   /** Karte zurück auf den eigenen Standort holen. */
   const backToMe = useCallback(() => {
     if (!geo.position) return;
     setView("map");
-    setFocus({ lat: geo.position.lat, lng: geo.position.lng, key: `standort-${Date.now()}` });
+    setFocus({ key: `standort-${Date.now()}`, points: [geo.position] });
   }, [geo.position]);
 
-  const select = useCallback((spot: ParkingSpot) => {
-    setSelected(spot);
-    setView("map");
-    if (hasCoordinates(spot)) {
-      setFocus({ lat: spot.lat, lng: spot.lng, key: `spot-${spot.id}-${Date.now()}` });
-    }
-  }, []);
+  const select = useCallback(
+    (spot: ParkingSpot) => {
+      setSelected(spot);
+      setView("map");
+      if (hasCoordinates(spot)) {
+        setFocus({
+          key: `spot-${spot.id}-${Date.now()}`,
+          points: reference ? [spot, reference] : [spot],
+        });
+      }
+    },
+    [reference],
+  );
 
   /**
    * Karte auf einen Parkplatz bringen, **ohne** die Detailansicht zu öffnen.
@@ -269,12 +315,20 @@ export function MapSection({ initialNearby, cities, defaultCity, totalSpots }: M
    * ist, ob eine Hauptstraße dazwischen liegt. Die Detailansicht legt sich
    * dabei über genau die Karte, auf die man schauen will.
    */
-  const jumpTo = useCallback((spot: ParkingSpot) => {
-    if (!hasCoordinates(spot)) return;
-    setSelected(null);
-    setView("map");
-    setFocus({ lat: spot.lat, lng: spot.lng, key: `zeigen-${spot.id}-${Date.now()}` });
-  }, []);
+  const jumpTo = useCallback(
+    (spot: ParkingSpot) => {
+      if (!hasCoordinates(spot)) return;
+      setSelected(null);
+      setView("map");
+      setFocus({
+        key: `zeigen-${spot.id}-${Date.now()}`,
+        // Der Bezugspunkt soll mit ins Bild, sonst endet die Luftlinie
+        // unerklärt am Rand (ToDo 6.22).
+        points: reference ? [spot, reference] : [spot],
+      });
+    },
+    [reference],
+  );
 
   // Parkplätze kennen nur den Stadt-Slug; Name und Importdatum kennt die
   // Städteliste.
@@ -432,7 +486,7 @@ export function MapSection({ initialNearby, cities, defaultCity, totalSpots }: M
                   onShowDetails={select}
                   onJumpTo={jumpTo}
                   onTargetChange={onTargetChange}
-                  onExpandedChange={setBarExpanded}
+                  onExpandedChange={onExpandedChange}
                   destinationLabel={destination?.label ?? null}
                   inRadiusCount={inRadiusCount}
                   radius={radius}

@@ -5,7 +5,7 @@ import type { ParkingSpotWithDistance } from "@/lib/types";
 import { formatDistance } from "@/lib/geo";
 import { mapsLabel, mapsUrl, type MapsTarget } from "@/lib/navigation";
 import { spotTitle } from "@/lib/parking/display";
-import { RestrictionBadge } from "./RestrictionBadge";
+import { SpotRow } from "./SpotRow";
 
 /**
  * Leiste über der Karte: der nächstgelegene Parkplatz und ein Knopf, der die
@@ -217,7 +217,7 @@ export function NearestBar({
   const grouped = destinationLabel !== null;
 
   return (
-    <div className={`${PANEL} max-h-[60vh] overflow-y-auto p-2.5`}>
+    <div className={`${PANEL} max-h-[46vh] overflow-y-auto p-2.5`}>
       <div className="flex items-start gap-1">
         {/*
           Der ganze Textblock ist der Knopf „auf der Karte zeigen". Das ist die
@@ -337,8 +337,16 @@ export function NearestBar({
             {expanded ? "Auswahl schließen" : `Weitere in der Nähe (${alternatives.length})`}
           </button>
 
+          {/*
+            Eigene Höhe für die Liste statt die der ganzen Leiste (ToDo 6.21).
+            Vorher durfte die Leiste 60 % des Bildschirms einnehmen, und bei
+            34 Treffern im Umkreis – am Hamburger Rathausmarkt ein echter Fall
+            – blieb von der Karte fast nichts übrig. Jetzt scrollt die Liste
+            für sich, Vorschlag und Navigationsknopf bleiben stehen, und
+            darunter ist Karte zu sehen.
+          */}
           {expanded && (
-            <ul id="parkplatz-auswahl" className="mt-1">
+            <ul id="parkplatz-auswahl" className="mt-1 max-h-[22vh] overflow-y-auto">
               {candidates.map((spot, index) => (
                 <li key={spot.id}>
                   {/*
@@ -358,37 +366,25 @@ export function NearestBar({
                     </p>
                   )}
 
-                  <button
-                    type="button"
+                  <SpotRow
+                    spot={spot}
+                    meta={spotMeta(spot)}
+                    selected={spot.id === target.id}
+                    actionHint="als Ziel wählen und auf der Karte zeigen"
                     onClick={() => choose(spot)}
-                    aria-current={spot.id === target.id}
-                    className={`flex min-h-12 w-full items-center gap-2 rounded-xl px-1.5 py-2 text-left text-sm transition-colors hover:bg-neutral-100/70 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:hover:bg-neutral-800/70 ${
-                      spot.id === target.id ? "bg-blue-50/70 dark:bg-blue-950/40" : ""
-                    }`}
-                  >
-                    <span className="min-w-0 flex-1">
+                    trailing={
                       <span
-                        className={`block truncate ${spot.id === target.id ? "font-semibold" : ""}`}
+                        aria-hidden="true"
+                        className={
+                          spot.id === target.id
+                            ? "text-blue-700 dark:text-blue-400"
+                            : "text-neutral-300 dark:text-neutral-600"
+                        }
                       >
-                        {spotTitle(spot)}
+                        <PinIcon />
                       </span>
-                      <span className="block text-xs text-neutral-500">{spotMeta(spot)}</span>
-                      {/* Dass eine Beschränkung gerade greift, entscheidet
-                          mit darüber, welchen Platz man ansteuert. */}
-                      <RestrictionBadge spot={spot} />
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      className={
-                        spot.id === target.id
-                          ? "shrink-0 text-blue-700 dark:text-blue-400"
-                          : "shrink-0 text-neutral-300 dark:text-neutral-600"
-                      }
-                    >
-                      <PinIcon />
-                    </span>
-                    <span className="sr-only">als Ziel wählen und auf der Karte zeigen</span>
-                  </button>
+                    }
+                  />
                 </li>
               ))}
             </ul>

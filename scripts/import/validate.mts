@@ -290,20 +290,50 @@ function checkFields(seed: SeedFile): Finding[] {
  * zeigen eine Lücke in der Datenlage, nicht in der Wirklichkeit. Hamburgs
  * zunächst importierte 10 Standorte für 1,9 Millionen Einwohner wären hier
  * sofort aufgefallen.
+ *
+ * **Drei Stufen statt zwei** (ToDo 2d.10, 2026-10-10). Vorher begann die
+ * Meldung erst bei einem Viertel des Medians – das traf 7 von 205 Städten.
+ * Wuppertal mit 66 Standorten auf 358.000 Einwohner (3,8 je 10.000, also
+ * knapp die Hälfte des Medians) blieb dadurch unsichtbar, obwohl es der Fall
+ * ist, der diesen Punkt überhaupt ausgelöst hat. Die halbe Mediandichte ist
+ * jetzt ein **Hinweis**: nennenswert, aber keine Behauptung.
+ *
+ * Die Stufen sind bewusst verschieden laut. Ein Viertel des Medians zu
+ * unterschreiten ist schwer anders als durch eine Lücke zu erklären; die
+ * Hälfte kann auch eine kompakte Stadt mit wenig Straßenraum sein. Eine
+ * Prüfung, die beides gleich laut meldet, wird abgeschaltet statt gelesen.
  */
 function checkDensity(report: CityReport, median: number): Finding[] {
   if (report.population === null || report.population === 0) return [];
 
   const perTenThousand = (report.spaces / report.population) * 10_000;
-  if (perTenThousand >= median * 0.25) return [];
+  if (perTenThousand >= median * 0.5) return [];
 
+  const level =
+    perTenThousand < median * 0.1
+      ? "fehler"
+      : perTenThousand < median * 0.25
+        ? "verdacht"
+        : "hinweis";
+
+  /*
+   * **Keine Erklärung mitliefern, die nicht belegt ist.** Hier stand
+   * „vermutlich eine lückenhafte Quelle, keine lückenhafte Stadt". Der
+   * Vergleich über den ganzen Bestand stützt das nicht: Städte mit amtlicher
+   * Quelle liegen im Median bei 8,2 Stellplätzen je 10.000 Einwohner, Städte
+   * aus OpenStreetMap bei 7,7 – praktisch gleichauf. OSM ist also nicht
+   * pauschal die dünnere Quelle, und ein niedriger Wert ist zunächst nur
+   * eine Auffälligkeit. Woran es liegt, zeigt erst der Blick auf die Stadt.
+   */
   return [
     {
       check: "Auffällig wenige Stellplätze",
-      level: perTenThousand < median * 0.1 ? "fehler" : "verdacht",
+      level,
       message:
         `${perTenThousand.toFixed(1)} Stellplätze je 10.000 Einwohner, ` +
-        `Mittelwert aller Städte ${median.toFixed(1)}. Vermutlich eine lückenhafte Quelle, keine lückenhafte Stadt.`,
+        `Median aller Städte ${median.toFixed(1)}. ` +
+        "Das kann eine lückenhafte Quelle sein oder eine Stadt mit wenig Straßenraum – " +
+        "nachsehen, nicht annehmen.",
     },
   ];
 }
@@ -371,7 +401,7 @@ async function crossCheckWithOsm(
 
 const LEVEL_SYMBOL = { fehler: "🔴", verdacht: "🟡", hinweis: "⬜" } as const;
 
-function renderReport(reports: CityReport[]): string {
+function renderReport(reports: CityReport[], densityMedian: number): string {
   const withFindings = reports.filter((report) =>
     report.findings.some((finding) => finding.level !== "hinweis"),
   );
@@ -415,6 +445,74 @@ function renderReport(reports: CityReport[]): string {
       }
       lines.push("");
     }
+  }
+
+  /*
+   * Eigener Abschnitt für die dünne Datenlage (ToDo 2d.10).
+   *
+   * Warum nicht einfach als Befund bei der jeweiligen Stadt: Städte, deren
+   * einziger Befund ein Hinweis ist, erscheinen oben gar nicht – `withFindings`
+   * filtert sie heraus. Ein Hinweis allein wäre also folgenlos geblieben, und
+   * das ist schlimmer als keine Prüfung: Er stünde im Code und niemand sähe
+   * ihn je.
+   *
+   * Als eigene Liste erfüllt er seinen Zweck: Er drängt sich nicht zwischen
+   * die echten Verdachtsfälle, ist aber da, wenn jemand die Frage stellt
+   * „wo lohnt sich das Nachsehen?" – und er ist eine **Liste**, keine
+   * einzelne Stadt. Der Punkt begann mit „etwa Wuppertal"; so etwas von Hand
+   * zu sammeln ist die Arbeit, die ein Bericht abnehmen soll.
+   */
+  const thin = reports
+    .filter((report) => report.population && report.population > 0)
+    .map((report) => ({ report, density: (report.spaces / report.population!) * 10_000 }))
+    .filter((entry) => entry.density < densityMedian * 0.5)
+    .sort((a, b) => a.density - b.density);
+
+  if (thin.length > 0) {
+    /*
+     * Die beiden Vergleichswerte werden **gerechnet, nicht hingeschrieben.**
+     * Sie standen hier zuerst als feste Zahlen im Text – in einem erzeugten
+     * Bericht ist das eine Behauptung, die beim nächsten Import still falsch
+     * wird und trotzdem gelesen und geglaubt wird.
+     */
+    const medianOf = (entries: CityReport[]) => {
+      const values = entries
+        .filter((report) => report.population && report.population > 0)
+        .map((report) => (report.spaces / report.population!) * 10_000)
+        .sort((a, b) => a - b);
+      return values.length > 0 ? (values[Math.floor(values.length / 2)] ?? 0) : 0;
+    };
+    const isOsm = (report: CityReport) => /OpenStreetMap/iu.test(report.source);
+    const medianOfficial = medianOf(reports.filter((report) => !isOsm(report)));
+    const medianOsm = medianOf(reports.filter(isOsm));
+
+    lines.push("## Auffällig dünne Datenlage", "");
+    lines.push(
+      `${thin.length} Städte liegen unter der halben Mediandichte ` +
+        `(${densityMedian.toFixed(1)} Stellplätze je 10.000 Einwohner).`,
+      "",
+      "Das ist **kein Fehler, sondern eine Rangliste für das Nachsehen.** Ein",
+      "niedriger Wert kann eine lückenhafte Quelle sein oder eine kompakte Stadt",
+      "mit wenig Straßenraum.",
+      "",
+      "Eine pauschale Erklärung gibt der Bestand nicht her: Städte mit amtlicher " +
+        `Quelle liegen im Median bei ${medianOfficial.toFixed(1)}, Städte aus ` +
+        `OpenStreetMap bei ${medianOsm.toFixed(1)} Stellplätzen je 10.000 Einwohner. ` +
+        "OpenStreetMap ist also nicht grundsätzlich die dünnere Quelle – woran es " +
+        "bei einer einzelnen Stadt liegt, zeigt erst der Blick auf sie.",
+      "",
+      "| Stadt | je 10.000 Einw. | Einwohner | Standorte | Quelle |",
+      "| --- | ---: | ---: | ---: | --- |",
+    );
+
+    for (const { report, density } of thin) {
+      const kind = /OpenStreetMap/iu.test(report.source) ? "OpenStreetMap" : "amtlich";
+      lines.push(
+        `| ${report.name} | ${density.toFixed(1)} | ` +
+          `${report.population!.toLocaleString("de-DE")} | ${report.spots} | ${kind} |`,
+      );
+    }
+    lines.push("");
   }
 
   lines.push("## Alle Städte", "");
@@ -536,7 +634,7 @@ async function main() {
   }
 
   const target = path.join(dataDir, "_validierung.md");
-  await fs.writeFile(target, renderReport(reports), "utf8");
+  await fs.writeFile(target, renderReport(reports, median), "utf8");
   console.log(`\nGeschrieben: ${path.relative(process.cwd(), target)}`);
 }
 

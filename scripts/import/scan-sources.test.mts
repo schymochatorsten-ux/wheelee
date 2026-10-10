@@ -1,5 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { ambiguousCores, cityCore, matchesCity, type CkanDataset } from "./scan-sources.mjs";
+import {
+  ambiguousCores,
+  cityCore,
+  isRelevant,
+  matchesCity,
+  type CkanDataset,
+} from "./scan-sources.mjs";
 
 /**
  * Prüft die Zuordnung Datensatz → Stadt.
@@ -78,5 +84,36 @@ describe("matchesCity", () => {
   it("findet den Stadtnamen auch nur in der Ressourcen-URL", () => {
     const d = dataset("Behindertenstellplätze", "https://gdi.berlin.de/wfs/behindertenparkplaetze");
     expect(matchesCity(d, { name: "Berlin", state: "Berlin" }, ambiguous)).toBe(true);
+  });
+});
+
+describe("isRelevant", () => {
+  /**
+   * Der Anlass ist echt und hat Schaden angerichtet: Chemnitz kam mit 13
+   * Standorten aus „Parkplätze Wohnmobil" – Wohnmobilstellplätze, in der App
+   * als Behindertenparkplätze ausgewiesen (ToDo 2d.10).
+   */
+  it("lehnt Parkdatensätze für eine andere Zielgruppe ab", () => {
+    expect(isRelevant(dataset("Parkplätze Wohnmobil"))).toBe(false);
+    expect(isRelevant(dataset("Parkplätze Reisebus"))).toBe(false);
+    expect(isRelevant(dataset("Bewohnerparken Krefeld"))).toBe(false);
+    expect(isRelevant(dataset("Anwohnerparkzonen"))).toBe(false);
+    expect(isRelevant(dataset("Lademöglichkeiten E-Ladesäulen Parkplätze"))).toBe(false);
+  });
+
+  it("nimmt den eindeutigen Datensatz weiterhin an", () => {
+    expect(isRelevant(dataset("Behindertenstellplätze Hamburg"))).toBe(true);
+    expect(isRelevant(dataset("Schwerbehindertenparkplätze Dresden"))).toBe(true);
+  });
+
+  it("lässt den Sammeldienst durch, aus dem die Ebene geholt wird", () => {
+    // Frankfurts Datensatz heißt nur „WFS Parken…"; die Behindertenparkplätze
+    // sind eine Ebene darin. Diese Ausnahme muss erhalten bleiben.
+    expect(isRelevant(dataset("WFS Parken in der Stadt Frankfurt am Main"))).toBe(true);
+  });
+
+  it("lehnt ab, was gar nicht von Parken handelt", () => {
+    // Für Hamburg schlug die Suche Werkstätten für Menschen mit Behinderung vor.
+    expect(isRelevant(dataset("Werkstätten für Menschen mit Behinderung"))).toBe(false);
   });
 });

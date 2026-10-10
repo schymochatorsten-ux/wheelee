@@ -10,8 +10,8 @@ was ein Mensch ansehen sollte. Vorgehen siehe [Datenpflege.md](../Datenpflege.md
 | Kennzahl | Wert |
 | --- | --- |
 | geprüfte Städte | 209 |
-| Standorte | 17.864 |
-| Stellplätze | 29.983 |
+| Standorte | 18.072 |
+| Stellplätze | 30.264 |
 | Städte mit Fehlern | 3 |
 | Städte mit Verdachtsfällen | 7 |
 
@@ -37,19 +37,19 @@ Bewertung: 🔴 Fehler – muss angesehen werden · 🟡 Verdacht – sollte ang
 
 13 Standorte, 29 Stellplätze · Quelle: OpenStreetMap-Mitwirkende (ODbL)
 
-- 🟡 **Auffällig wenige Stellplätze:** 1.7 Stellplätze je 10.000 Einwohner, Mittelwert aller Städte 8.2. Vermutlich eine lückenhafte Quelle, keine lückenhafte Stadt.
+- 🟡 **Auffällig wenige Stellplätze:** 1.7 Stellplätze je 10.000 Einwohner, Median aller Städte 8.2. Das kann eine lückenhafte Quelle sein oder eine Stadt mit wenig Straßenraum – nachsehen, nicht annehmen.
 
 ### Salzgitter
 
 10 Standorte, 19 Stellplätze · Quelle: OpenStreetMap-Mitwirkende (ODbL)
 
-- 🟡 **Auffällig wenige Stellplätze:** 1.8 Stellplätze je 10.000 Einwohner, Mittelwert aller Städte 8.2. Vermutlich eine lückenhafte Quelle, keine lückenhafte Stadt.
+- 🟡 **Auffällig wenige Stellplätze:** 1.8 Stellplätze je 10.000 Einwohner, Median aller Städte 8.2. Das kann eine lückenhafte Quelle sein oder eine Stadt mit wenig Straßenraum – nachsehen, nicht annehmen.
 
 ### Dinslaken
 
 7 Standorte, 11 Stellplätze · Quelle: OpenStreetMap-Mitwirkende (ODbL)
 
-- 🟡 **Auffällig wenige Stellplätze:** 1.6 Stellplätze je 10.000 Einwohner, Mittelwert aller Städte 8.2. Vermutlich eine lückenhafte Quelle, keine lückenhafte Stadt.
+- 🟡 **Auffällig wenige Stellplätze:** 1.6 Stellplätze je 10.000 Einwohner, Median aller Städte 8.2. Das kann eine lückenhafte Quelle sein oder eine Stadt mit wenig Straßenraum – nachsehen, nicht annehmen.
 
 ### Germersheim
 
@@ -61,31 +61,94 @@ Bewertung: 🔴 Fehler – muss angesehen werden · 🟡 Verdacht – sollte ang
 
 6 Standorte, 10 Stellplätze · Quelle: OpenStreetMap-Mitwirkende (ODbL)
 
-- 🟡 **Auffällig wenige Stellplätze:** 2.0 Stellplätze je 10.000 Einwohner, Mittelwert aller Städte 8.2. Vermutlich eine lückenhafte Quelle, keine lückenhafte Stadt.
+- 🟡 **Auffällig wenige Stellplätze:** 2.0 Stellplätze je 10.000 Einwohner, Median aller Städte 8.2. Das kann eine lückenhafte Quelle sein oder eine Stadt mit wenig Straßenraum – nachsehen, nicht annehmen.
 
 ### Rheine
 
 3 Standorte, 5 Stellplätze · Quelle: OpenStreetMap-Mitwirkende (ODbL)
 
-- 🔴 **Auffällig wenige Stellplätze:** 0.6 Stellplätze je 10.000 Einwohner, Mittelwert aller Städte 8.2. Vermutlich eine lückenhafte Quelle, keine lückenhafte Stadt.
+- 🔴 **Auffällig wenige Stellplätze:** 0.6 Stellplätze je 10.000 Einwohner, Median aller Städte 8.2. Das kann eine lückenhafte Quelle sein oder eine Stadt mit wenig Straßenraum – nachsehen, nicht annehmen.
 
 ### Waghäusel
 
 3 Standorte, 6 Stellplätze · Quelle: Behindertenparkplätze TechnologieRegion Karlsruhe – Stadt Karlsruhe / TechnologieRegion Karlsruhe (Creative Commons Namensnennung 4.0 (CC BY 4.0))
 
 - 🟡 **Ohne Straße:** 2 von 3 Standorten haben keinen Straßennamen.
+- ⬜ **Auffällig wenige Stellplätze:** 2.7 Stellplätze je 10.000 Einwohner, Median aller Städte 8.2. Das kann eine lückenhafte Quelle sein oder eine Stadt mit wenig Straßenraum – nachsehen, nicht annehmen.
 
 ### Lingen (Ems)
 
 2 Standorte, 5 Stellplätze · Quelle: OpenStreetMap-Mitwirkende (ODbL)
 
-- 🟡 **Auffällig wenige Stellplätze:** 0.9 Stellplätze je 10.000 Einwohner, Mittelwert aller Städte 8.2. Vermutlich eine lückenhafte Quelle, keine lückenhafte Stadt.
+- 🟡 **Auffällig wenige Stellplätze:** 0.9 Stellplätze je 10.000 Einwohner, Median aller Städte 8.2. Das kann eine lückenhafte Quelle sein oder eine Stadt mit wenig Straßenraum – nachsehen, nicht annehmen.
 
 ### Nordhorn
 
 2 Standorte, 4 Stellplätze · Quelle: OpenStreetMap-Mitwirkende (ODbL)
 
-- 🔴 **Auffällig wenige Stellplätze:** 0.7 Stellplätze je 10.000 Einwohner, Mittelwert aller Städte 8.2. Vermutlich eine lückenhafte Quelle, keine lückenhafte Stadt.
+- 🔴 **Auffällig wenige Stellplätze:** 0.7 Stellplätze je 10.000 Einwohner, Median aller Städte 8.2. Das kann eine lückenhafte Quelle sein oder eine Stadt mit wenig Straßenraum – nachsehen, nicht annehmen.
+
+## Auffällig dünne Datenlage
+
+49 Städte liegen unter der halben Mediandichte (8.2 Stellplätze je 10.000 Einwohner).
+
+Das ist **kein Fehler, sondern eine Rangliste für das Nachsehen.** Ein
+niedriger Wert kann eine lückenhafte Quelle sein oder eine kompakte Stadt
+mit wenig Straßenraum.
+
+Eine pauschale Erklärung gibt der Bestand nicht her: Städte mit amtlicher Quelle liegen im Median bei 8.4, Städte aus OpenStreetMap bei 7.8 Stellplätzen je 10.000 Einwohner. OpenStreetMap ist also nicht grundsätzlich die dünnere Quelle – woran es bei einer einzelnen Stadt liegt, zeigt erst der Blick auf sie.
+
+| Stadt | je 10.000 Einw. | Einwohner | Standorte | Quelle |
+| --- | ---: | ---: | ---: | --- |
+| Rheine | 0.6 | 77.209 | 3 | OpenStreetMap |
+| Nordhorn | 0.7 | 56.973 | 2 | OpenStreetMap |
+| Lingen (Ems) | 0.9 | 56.498 | 2 | OpenStreetMap |
+| Dinslaken | 1.6 | 66.993 | 7 | OpenStreetMap |
+| Osnabrück | 1.7 | 166.057 | 13 | OpenStreetMap |
+| Salzgitter | 1.8 | 104.970 | 10 | OpenStreetMap |
+| Gronau (Westf.) | 2.0 | 50.547 | 6 | OpenStreetMap |
+| Greifswald | 2.1 | 56.092 | 9 | OpenStreetMap |
+| Marl | 2.2 | 86.766 | 15 | OpenStreetMap |
+| Delmenhorst | 2.3 | 81.406 | 9 | OpenStreetMap |
+| Gladbeck | 2.4 | 75.499 | 12 | OpenStreetMap |
+| Menden (Sauerland) | 2.5 | 52.255 | 12 | OpenStreetMap |
+| Ratingen | 2.6 | 89.368 | 11 | OpenStreetMap |
+| Waghäusel | 2.7 | 22.466 | 3 | amtlich |
+| Gaggenau | 2.7 | 29.529 | 5 | amtlich |
+| Minden | 2.7 | 84.013 | 13 | OpenStreetMap |
+| Schwerin | 2.7 | 98.308 | 22 | OpenStreetMap |
+| Offenbach am Main | 2.9 | 132.746 | 23 | OpenStreetMap |
+| Norderstedt | 2.9 | 82.844 | 13 | OpenStreetMap |
+| Neuwied | 3.0 | 67.083 | 8 | OpenStreetMap |
+| Krefeld | 3.1 | 231.406 | 40 | OpenStreetMap |
+| Ibbenbüren | 3.1 | 51.803 | 11 | OpenStreetMap |
+| Lüdenscheid | 3.1 | 71.212 | 15 | OpenStreetMap |
+| Celle | 3.1 | 66.834 | 17 | OpenStreetMap |
+| Bremen | 3.2 | 586.271 | 112 | OpenStreetMap |
+| Wolfenbüttel | 3.2 | 52.604 | 10 | OpenStreetMap |
+| Hameln | 3.3 | 58.244 | 10 | OpenStreetMap |
+| Wesel | 3.3 | 60.785 | 4 | OpenStreetMap |
+| Ludwigshafen am Rhein | 3.4 | 177.222 | 36 | OpenStreetMap |
+| Bocholt | 3.5 | 73.257 | 10 | OpenStreetMap |
+| Herford | 3.6 | 67.503 | 14 | OpenStreetMap |
+| Neustadt an der Weinstraße | 3.6 | 52.945 | 11 | OpenStreetMap |
+| Neu-Ulm | 3.7 | 62.641 | 17 | OpenStreetMap |
+| Neuss | 3.7 | 154.317 | 38 | amtlich |
+| Lörrach | 3.7 | 51.349 | 17 | OpenStreetMap |
+| Heilbronn | 3.7 | 131.986 | 26 | OpenStreetMap |
+| Peine | 3.7 | 50.987 | 15 | OpenStreetMap |
+| Lahr/Schwarzwald | 3.7 | 50.775 | 10 | OpenStreetMap |
+| Wuppertal | 3.8 | 358.193 | 66 | OpenStreetMap |
+| Neubrandenburg | 3.8 | 60.344 | 16 | OpenStreetMap |
+| Ingolstadt | 3.8 | 141.185 | 31 | OpenStreetMap |
+| Meerbusch | 3.9 | 57.078 | 16 | OpenStreetMap |
+| Brandenburg an der Havel | 3.9 | 74.113 | 17 | OpenStreetMap |
+| Lippstadt | 3.9 | 68.739 | 9 | OpenStreetMap |
+| Passau | 4.0 | 53.039 | 18 | OpenStreetMap |
+| Bremerhaven | 4.0 | 118.610 | 25 | OpenStreetMap |
+| Ahlen | 4.0 | 52.666 | 20 | OpenStreetMap |
+| Esslingen am Neckar | 4.1 | 96.182 | 19 | OpenStreetMap |
+| Bad Salzuflen | 4.1 | 53.958 | 12 | OpenStreetMap |
 
 ## Alle Städte
 
@@ -120,7 +183,7 @@ Bewertung: 🔴 Fehler – muss angesehen werden · 🟡 Verdacht – sollte ang
 | Bruchsal | 36 | 57 | 11.9 | nicht geprüft | – |
 | Castrop-Rauxel | 22 | 55 | 7.5 | nicht geprüft | – |
 | Celle | 17 | 21 | 3.1 | nicht geprüft | – |
-| Chemnitz | 13 | 56 | 2.3 | nicht geprüft | – |
+| Chemnitz | 221 | 337 | 13.7 | nicht geprüft | – |
 | Cottbus | 95 | 190 | 20.0 | nicht geprüft | – |
 | Darmstadt | 87 | 162 | 9.7 | nicht geprüft | – |
 | Delmenhorst | 9 | 19 | 2.3 | nicht geprüft | – |

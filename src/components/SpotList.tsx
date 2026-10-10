@@ -2,11 +2,11 @@
 
 import type { ParkingSpot, ParkingSpotWithDistance } from "@/lib/types";
 import { formatDistance } from "@/lib/geo";
-import { spotTitle, stripRedundantPrefix } from "@/lib/parking/display";
+import { stripRedundantPrefix } from "@/lib/parking/display";
 import type { CityInfo } from "@/lib/parking/spots";
 import { normalizeTimeRestriction } from "@/lib/opening-hours";
 import { DataDisclaimer, formatDate } from "./DataDisclaimer";
-import { RestrictionBadge } from "./RestrictionBadge";
+import { SpotRow } from "./SpotRow";
 
 /**
  * Listenansicht der Parkplätze.
@@ -26,6 +26,24 @@ interface SpotListProps {
   /** Für den Hinweis, wie vollständig die Daten je Stadt sind. */
   cities: readonly CityInfo[];
   onSelect: (spot: ParkingSpot) => void;
+}
+
+/**
+ * Nebenzeile der Liste: Stadtteil, Stellplätze, Beschränkung.
+ *
+ * Sie unterscheidet sich absichtlich von der Nebenzeile der Auswahl über der
+ * Karte: Dort steht die Entfernung an erster Stelle, weil man zwischen nahen
+ * Plätzen wählt. Hier steht sie rechts, und der Platz vorn gehört dem
+ * Stadtteil – er ordnet den Eintrag ein, wenn man die ganze Stadt durchsieht.
+ */
+function listMeta(spot: ParkingSpotWithDistance): string {
+  const parts = [
+    spot.district,
+    `${spot.spotCount} ${spot.spotCount === 1 ? "Stellplatz" : "Stellplätze"}`,
+  ];
+  const restriction = normalizeTimeRestriction(spot.timeRestriction);
+  if (restriction) parts.push(restriction);
+  return parts.join(" · ");
 }
 
 export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect }: SpotListProps) {
@@ -50,28 +68,17 @@ export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect 
         <ul className="mt-2 divide-y divide-neutral-200 dark:divide-neutral-800">
           {nearby.map((spot) => (
             <li key={spot.id}>
-              <button
-                type="button"
+              <SpotRow
+                spot={spot}
+                meta={listMeta(spot)}
+                actionHint="Einzelheiten anzeigen"
                 onClick={() => onSelect(spot)}
-                className="flex min-h-12 w-full items-center gap-3 py-2.5 text-left focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none"
-              >
-                <span className="flex-1">
-                  <span className="block font-medium">{spotTitle(spot)}</span>
-                  <span className="block text-sm text-neutral-500">
-                    {spot.district} · {spot.spotCount}{" "}
-                    {spot.spotCount === 1 ? "Stellplatz" : "Stellplätze"}
-                    {normalizeTimeRestriction(spot.timeRestriction)
-                      ? ` · ${normalizeTimeRestriction(spot.timeRestriction)}`
-                      : ""}
+                trailing={
+                  <span className="text-sm font-medium tabular-nums">
+                    {formatDistance(spot.distanceMeters)}
                   </span>
-                  {/* Dass eine Beschränkung gerade greift, entscheidet beim
-                      Losfahren – dafür soll man die Details nicht öffnen müssen. */}
-                  <RestrictionBadge spot={spot} />
-                </span>
-                <span className="shrink-0 text-sm font-medium tabular-nums">
-                  {formatDistance(spot.distanceMeters)}
-                </span>
-              </button>
+                }
+              />
             </li>
           ))}
         </ul>

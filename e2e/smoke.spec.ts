@@ -131,6 +131,86 @@ test.describe("wheelee", () => {
     await expect(red).not.toHaveAttribute("d", before ?? "");
   });
 
+  test("die aufgeklappte Auswahl lässt Karte übrig und zeigt ihre Parkplätze", async ({
+    page,
+    context,
+  }) => {
+    await context.grantPermissions(["geolocation"]);
+    await context.setGeolocation(KOELN);
+    await page.goto("/");
+
+    await page.getByRole("button", { name: /Weitere in der Nähe/ }).click();
+    await page.waitForTimeout(1500);
+
+    /*
+     * ToDo 6.21: Vorher deckte die Liste die Karte zu, und darunter lagen
+     * genau die Parkplätze, über die sie Auskunft gab. Geprüft wird deshalb
+     * das Ergebnis und nicht eine Höhenangabe: Bleibt ein brauchbarer
+     * Kartenstreifen, und stehen dort auch Marker drin?
+     */
+    const messung = await page.evaluate(() => {
+      const map = document.querySelector(".leaflet-container");
+      const list = document.querySelector("#parkplatz-auswahl");
+      if (!map || !list) return null;
+
+      const panel = list.closest('div[class*="rounded-2xl"]');
+      if (!panel) return null;
+
+      const frame = map.getBoundingClientRect();
+      const bar = panel.getBoundingClientRect();
+      const freeStrip = frame.bottom - bar.bottom;
+
+      const visible = [...document.querySelectorAll(".leaflet-marker-icon")].filter((marker) => {
+        const box = marker.getBoundingClientRect();
+        return box.top >= bar.bottom && box.bottom <= frame.bottom;
+      }).length;
+
+      return { share: bar.height / frame.height, freeStrip, visible };
+    });
+
+    expect(messung).not.toBeNull();
+    // Die Leiste darf nicht mehr als zwei Drittel der Karte einnehmen …
+    expect(messung!.share).toBeLessThan(0.67);
+    // … und im Rest müssen Parkplätze zu sehen sein, sonst nützt er nichts.
+    expect(messung!.freeStrip).toBeGreaterThan(150);
+    expect(messung!.visible).toBeGreaterThan(2);
+  });
+
+  test("beide Enden der Luftlinie bleiben im Bild", async ({ page, context }) => {
+    await context.grantPermissions(["geolocation"]);
+    await context.setGeolocation(KOELN);
+    await page.goto("/");
+
+    await page.getByRole("button", { name: /Weitere in der Nähe/ }).click();
+    await page.locator("#parkplatz-auswahl li").last().locator("button").click();
+
+    // Die Karte fährt – erst danach messen.
+    await page.waitForTimeout(1500);
+
+    /*
+     * ToDo 6.22: Vorher sprang die Karte allein auf den Parkplatz, und die
+     * Luftlinie lief ohne Erklärung aus dem Bild. Geprüft wird deshalb nicht
+     * die Zoomstufe, sondern das, worauf es ankommt: Liegen beide Enden im
+     * sichtbaren Ausschnitt?
+     */
+    const sichtbar = await page.evaluate(() => {
+      const path = document.querySelector('.leaflet-overlay-pane path[stroke="#dc2626"]');
+      const map = document.querySelector(".leaflet-container");
+      if (!path || !map) return null;
+
+      const line = path.getBoundingClientRect();
+      const frame = map.getBoundingClientRect();
+      return (
+        line.left >= frame.left &&
+        line.right <= frame.right &&
+        line.top >= frame.top &&
+        line.bottom <= frame.bottom
+      );
+    });
+
+    expect(sichtbar).toBe(true);
+  });
+
   test("Einstellungen merken die Karten-App", async ({ page }) => {
     await page.goto("/");
     await page.getByRole("tab", { name: "Einstellungen" }).click();

@@ -158,149 +158,6 @@
         ]
       },
       {
-        "title": "Reisebusparkplätze Hamburg",
-        "govdata": "https://www.govdata.de/suche/daten/reisebusparkplatze-hamburgc46d4",
-        "license": "nicht angegeben",
-        "resources": [
-          {
-            "format": "WFS",
-            "url": "https://geodienste.hamburg.de/wfs_reisebusparkplaetze%3fSERVICE%3dWFS%26VERSION%3d1.1.0%26REQUEST%3dDescribeFeatureType%26typename%3dde.hh.up:reisebusparkplaetze"
-          },
-          {
-            "format": "WFS",
-            "url": "https://geodienste.hamburg.de/download%3furl%3dhttps://geodienste.hamburg.de/wfs_reisebusparkplaetze%26f%3dcsv"
-          },
-          {
-            "format": "JSON",
-            "url": "https://daten-hamburg.de/transport_verkehr/reisebusparkplaetze/DATEXII_3_7_Reisebusparkplaetze_Hamburg.json"
-          },
-          {
-            "format": "WFS",
-            "url": "https://geodienste.hamburg.de/download%3furl%3dhttps://geodienste.hamburg.de/wfs_reisebusparkplaetze%26f%3djson"
-          },
-          {
-            "format": "WFS",
-            "url": "https://geodienste.hamburg.de/wfs_reisebusparkplaetze%3fService%3dWFS%26Request%3dGetCapabilities"
-          },
-          {
-            "format": "WFS",
-            "url": "https://geodienste.hamburg.de/wfs_reisebusparkplaetze%3fSERVICE%3dWFS%26VERSION%3d1.1.0%26REQUEST%3dGetFeature%26typename%3dde.hh.up:reisebusparkplaetze"
-          }
-        ]
-      },
-      {
-        "title": "Motorradstellplätze Hamburg",
-        "govdata": "https://www.govdata.de/suche/daten/motorradstellplatze-hamburg",
-        "license": "nicht angegeben",
-        "resources": [
-          {
-            "format": "WFS",
-            "url": "https://geodienste.hamburg.de/wfs_motorradstellplaetze%3fService%3dWFS%26Version%3d1.1.0%26Request%3dGetCapabilities"
-          },
-          {
-            "format": "WFS",
-            "url": "https://geodienste.hamburg.de/wfs_motorradstellplaetze%3fSERVICE%3dWFS%26VERSION%3d2.0.0%26REQUEST%3dGetFeature%26typename%3dde.hh.up:motorradstellplaetze"
-          },
-          {
-            "format": "JSON",
-            "url": "https://daten-hamburg.de/transport_verkehr/motorradstellplaetze/DATEXII_3_7_Motorradstellplaetze_Hamburg.json"
-          },
-          {
-            "format": "WFS",
-            "url": "https://geodienste.hamburg.de/download%3furl%3dhttps://geodienste.hamburg.de/wfs_motorradstellplaetze%26f%3dcsv"
-          },
-          {
-            "format": "WFS",
-            "url": "https://geodienste.hamburg.de/wfs_motorradstellplaetze%3fservice%3dWFS%26request%3dDescribeFeatureType%26version%3d2.0.0%26typename%3dde.hh.up:motorradstellplaetze"
-          },
-          {
-            "format": "WFS",
-            "url": "https://geodienste.hamburg.de/download%3furl%3dhttps://geodienste.hamburg.de/wfs_motorradstellplaetze%26f%3djson"
-          }
-        ]
-      },
-      {
-        "title": "Bewohnerparkgebiete Hamburg",
-        "govdata": "https://www.govdata.de/suche/daten/bewohnerparkgebiete-hamburg00040",
-        "license": "nicht angegeben",
-        "resources": [
-          {
-            "format": "WFS",
-            "url": "https://geodienste.hamburg.de/HH_WFS_bewohnerparkgebiete?SERVICE=WFS&VERSION=1.1.0&REQUEST=GetFeature&typename=de.hh.up:bewohnerparkgebiete"
-          },
-          {
-            "format": "WFS",
-            "url": "https://geodienste.hamburg.de/HH_WFS_bewohnerparkgebiete?service=WFS&request=DescribeFeatureType&version=1.1.0&typename=de.hh.up:bewohnerparkgebiete"
-          },
-          {
-            "format": "WFS",
-            "url": "https://geodienste.hamburg.de/HH_WFS_bewohnerparkgebiete?SERVICE=WFS&REQUEST=GetCapabilities"
-          }
-        ]
-      },
-      {
-        "title": "Reisebusparkplätze Hamburg",
-        "govdata": "https://www.govdata.de/suche/daten/reisebusparkplatze-hamburg35e4d",
-        "license": "nicht angegeben",
-        "resources": [
-          {
-            "format": "WFS",
-            "url": "https://geodienste.hamburg.de/wfs_reisebusparkplaetze?SERVICE=WFS&VERSION=1.1.0&REQUEST=GetFeature&typename=de.hh.up:reisebusparkplaetze"
-          },
-          {
-            "format": "WFS",
-            "url": "https://geodienste.hamburg.de/wfs_reisebusparkplaetze?SERVICE=WFS&VERSION=1.1.0&REQUEST=DescribeFeatureType&typename=de.hh.up:reisebusparkplaetze"
-          },
-          {
-            "format": "WFS",
-            "url": "https://geodienste.hamburg.de/wfs_reisebusparkplaetze?Service=WFS&Request=GetCapabilities"
-          },
-          {
-            "format": "WFS",
-            "url": "https://geodienste.hamburg.de/download?url=https://geodienste.hamburg.de/wfs_reisebusparkplaetze&f=csv"
-          },
-          {
-            "format": "WFS",
-            "url": "https://geodienste.hamburg.de/download?url=https://geodienste.hamburg.de/wfs_reisebusparkplaetze&f=json"
-          },
-          {
-            "format": "JSON",
-            "url": "https://daten-hamburg.de/transport_verkehr/reisebusparkplaetze/DATEXII_3_7_Reisebusparkplaetze_Hamburg.json"
-          }
-        ]
-      },
-      {
-        "title": "Motorradstellplätze Hamburg",
-        "govdata": "https://www.govdata.de/suche/daten/motorradstellplatze-hamburg1bd52",
-        "license": "nicht angegeben",
-        "resources": [
-          {
-            "format": "WFS",
-            "url": "https://geodienste.hamburg.de/wfs_motorradstellplaetze?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typename=de.hh.up:motorradstellplaetze"
-          },
-          {
-            "format": "WFS",
-            "url": "https://geodienste.hamburg.de/wfs_motorradstellplaetze?service=WFS&request=DescribeFeatureType&version=2.0.0&typename=de.hh.up:motorradstellplaetze"
-          },
-          {
-            "format": "WFS",
-            "url": "https://geodienste.hamburg.de/wfs_motorradstellplaetze?Service=WFS&Version=1.1.0&Request=GetCapabilities"
-          },
-          {
-            "format": "WFS",
-            "url": "https://geodienste.hamburg.de/download?url=https://geodienste.hamburg.de/wfs_motorradstellplaetze&f=csv"
-          },
-          {
-            "format": "WFS",
-            "url": "https://geodienste.hamburg.de/download?url=https://geodienste.hamburg.de/wfs_motorradstellplaetze&f=json"
-          },
-          {
-            "format": "JSON",
-            "url": "https://daten-hamburg.de/transport_verkehr/motorradstellplaetze/DATEXII_3_7_Motorradstellplaetze_Hamburg.json"
-          }
-        ]
-      },
-      {
         "title": "Öffentlicher Parkraum Hamburg",
         "govdata": "https://www.govdata.de/suche/daten/offentlicher-parkraum-hamburg01746",
         "license": "nicht angegeben",
@@ -365,21 +222,6 @@
           {
             "format": "WFS",
             "url": "https://geoportal.stadt-koeln.de/arcgis/services/verkehr/behindertenparkplaetze/MapServer/WFSServer?request=GetCapabilities&service=WFS"
-          }
-        ]
-      },
-      {
-        "title": "Bewohnerparkgebiete - Stadt Köln",
-        "govdata": "https://www.govdata.de/suche/daten/bewohnerparkgebiete-stadt-koln",
-        "license": "nicht angegeben",
-        "resources": [
-          {
-            "format": "WFS",
-            "url": "https://geoportal.stadt-koeln.de/wss/service/bewohnerparken_wfs/guest?REQUEST=GetCapabilities&SERVICE=WFS"
-          },
-          {
-            "format": "WFS",
-            "url": "https://geoportal.stadt-koeln.de/wss/service/bewohnerparken_wfs/guest"
           }
         ]
       }
@@ -851,20 +693,8 @@
     "slug": "aachen",
     "state": "Nordrhein-Westfalen",
     "population": 262670,
-    "official": [
-      {
-        "title": "Bewohnerparkzonen Stadt Aachen",
-        "govdata": "https://www.govdata.de/suche/daten/bewohnerparkzonen-stadt-aachen3fdf7",
-        "license": "nicht angegeben",
-        "resources": [
-          {
-            "format": "WFS",
-            "url": "https://geoserver.aachen.de/opendata/bewohnerparkzonen/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=bewohnerparkzonen:bewohnerparkzonen&maxFeatures=50&outputFormat=SHAPE-ZIP"
-          }
-        ]
-      }
-    ],
-    "plan": "official"
+    "official": [],
+    "plan": "osm"
   },
   {
     "rank": 28,
@@ -882,25 +712,6 @@
     "state": "Schleswig-Holstein",
     "population": 252668,
     "official": [
-      {
-        "title": "Bewohnerparken Kiel",
-        "govdata": "https://www.govdata.de/suche/daten/bewohnerparken-kiel",
-        "license": "nicht angegeben",
-        "resources": [
-          {
-            "format": "WFS",
-            "url": "https://ims.kiel.de/geodatenextern/services/Stadtplan/LHKielWmsWfs/MapServer/WFSServer?request=GetFeature&service=WFS&typeName=Bewohnerparken&outputFormat=GML3"
-          },
-          {
-            "format": "WFS",
-            "url": "https://ims.kiel.de/geodatenextern/services/Stadtplan/LHKielWmsWfs/MapServer/WFSServer?request=GetFeature&service=WFS&typeName=Bewohnerparken&outputFormat=geoJSON"
-          },
-          {
-            "format": "WFS",
-            "url": "https://ims.kiel.de/geodatenextern/services/Stadtplan/LHKielWmsWfs/MapServer/WFSServer?request=GetFeature&service=WFS&typeName=Bewohnerparken&outputFormat=CSV"
-          }
-        ]
-      },
       {
         "title": "Parkplätze- und häuser in Kiel",
         "govdata": "https://www.govdata.de/suche/daten/parkplatze-und-hauser-in-kiel",
@@ -929,55 +740,8 @@
     "slug": "chemnitz",
     "state": "Sachsen",
     "population": 245618,
-    "official": [
-      {
-        "title": "Parkplätze Wohnmobil",
-        "govdata": "https://www.govdata.de/suche/daten/parkplatze-wohnmobil",
-        "license": "nicht angegeben",
-        "resources": [
-          {
-            "format": "CSV",
-            "url": "https://portal-chemnitz.opendata.arcgis.com/api/download/v1/items/efbffb13fed349e68413358daf5f742b/csv?layers=0"
-          },
-          {
-            "format": "GEOJSON",
-            "url": "https://portal-chemnitz.opendata.arcgis.com/api/download/v1/items/efbffb13fed349e68413358daf5f742b/geojson?layers=0"
-          },
-          {
-            "format": "ARCGIS",
-            "url": "https://services6.arcgis.com/jiszdsDupTUO3fSM/arcgis/rest/services/Parkpl%C3%A4tze_Wohnmobil/FeatureServer/0"
-          },
-          {
-            "format": "KML",
-            "url": "https://portal-chemnitz.opendata.arcgis.com/api/download/v1/items/efbffb13fed349e68413358daf5f742b/kml?layers=0"
-          }
-        ]
-      },
-      {
-        "title": "Parkplätze Reisebus",
-        "govdata": "https://www.govdata.de/suche/daten/parkplatze-reisebus",
-        "license": "nicht angegeben",
-        "resources": [
-          {
-            "format": "CSV",
-            "url": "https://portal-chemnitz.opendata.arcgis.com/api/download/v1/items/296d8dcef1c744fcb007af436de382d9/csv?layers=0"
-          },
-          {
-            "format": "GEOJSON",
-            "url": "https://portal-chemnitz.opendata.arcgis.com/api/download/v1/items/296d8dcef1c744fcb007af436de382d9/geojson?layers=0"
-          },
-          {
-            "format": "ARCGIS",
-            "url": "https://services6.arcgis.com/jiszdsDupTUO3fSM/arcgis/rest/services/Parkpl%C3%A4tze_Bus_Sicht/FeatureServer/0"
-          },
-          {
-            "format": "KML",
-            "url": "https://portal-chemnitz.opendata.arcgis.com/api/download/v1/items/296d8dcef1c744fcb007af436de382d9/kml?layers=0"
-          }
-        ]
-      }
-    ],
-    "plan": "official"
+    "official": [],
+    "plan": "osm"
   },
   {
     "rank": 31,
@@ -1133,24 +897,8 @@
     "slug": "krefeld",
     "state": "Nordrhein-Westfalen",
     "population": 231406,
-    "official": [
-      {
-        "title": "Bewohnerparken Krefeld",
-        "govdata": "https://www.govdata.de/suche/daten/bewohnerparken-krefeld2e02f",
-        "license": "nicht angegeben",
-        "resources": [
-          {
-            "format": "WFS",
-            "url": "https://geoservices.krzn.de/security-proxy/services/wfs_skre_bewohnerparkzonen?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=gis:skre_antragsbereiche&outputFormat=application/geo%2Bjson"
-          },
-          {
-            "format": "WFS",
-            "url": "https://geoservices.krzn.de/security-proxy/services/wfs_skre_bewohnerparkzonen?Service=WFS&Version=2.0.0&Request=GetCapabilities"
-          }
-        ]
-      }
-    ],
-    "plan": "official"
+    "official": [],
+    "plan": "osm"
   },
   {
     "rank": 34,
@@ -2973,6 +2721,87 @@
     "slug": "gronau",
     "state": "Nordrhein-Westfalen",
     "population": 50547,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 196,
+    "city": "Landau in der Pfalz",
+    "slug": "landau",
+    "state": "Rheinland-Pfalz",
+    "population": 48209,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 197,
+    "city": "Bruchsal",
+    "slug": "bruchsal",
+    "state": "Baden-Württemberg",
+    "population": 47784,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 198,
+    "city": "Ettlingen",
+    "slug": "ettlingen",
+    "state": "Baden-Württemberg",
+    "population": 38578,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 199,
+    "city": "Bretten",
+    "slug": "bretten",
+    "state": "Baden-Württemberg",
+    "population": 30274,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 200,
+    "city": "Gaggenau",
+    "slug": "gaggenau",
+    "state": "Baden-Württemberg",
+    "population": 29529,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 201,
+    "city": "Stutensee",
+    "slug": "stutensee",
+    "state": "Baden-Württemberg",
+    "population": 25259,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 202,
+    "city": "Waghäusel",
+    "slug": "waghaeusel",
+    "state": "Baden-Württemberg",
+    "population": 22466,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 203,
+    "city": "Germersheim",
+    "slug": "germersheim",
+    "state": "Rheinland-Pfalz",
+    "population": 21715,
+    "official": [],
+    "plan": "osm"
+  },
+  {
+    "rank": 204,
+    "city": "Rheinstetten",
+    "slug": "rheinstetten",
+    "state": "Baden-Württemberg",
+    "population": 21267,
     "official": [],
     "plan": "osm"
   }

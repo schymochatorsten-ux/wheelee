@@ -10,7 +10,11 @@
  */
 import fs from "node:fs/promises";
 import path from "node:path";
-import { normalizeTimeRestriction, restrictionState } from "../../src/lib/opening-hours.js";
+import {
+  maxStay,
+  normalizeTimeRestriction,
+  restrictionState,
+} from "../../src/lib/opening-hours.js";
 import { projectRoot } from "./config.mjs";
 
 const skip =
@@ -26,6 +30,7 @@ async function main() {
   let notARestriction = 0;
   let real = 0;
   let understood = 0;
+  let asMaxStay = 0;
   const unparsed = new Map<string, number>();
 
   for (const file of files) {
@@ -44,7 +49,20 @@ async function main() {
       }
 
       real += 1;
-      if (restrictionState(spot.timeRestriction) !== "unbekannt") {
+
+      /*
+       * **Höchstparkdauer zählt als verstanden.** „2 Stunden" hat kein
+       * Zeitfenster und ergibt deshalb `unbekannt` – die App zeigt es aber
+       * korrekt als Höchstparkdauer an (7.5). Nur auf `restrictionState` zu
+       * schauen, hat solche Einträge als Lücke ausgewiesen und die Quote
+       * gedrückt: Es standen acht Angaben auf der Arbeitsliste, die längst
+       * richtig behandelt werden. Ein Bericht, der zu Arbeit auffordert, die
+       * getan ist, ist schlimmer als keiner.
+       */
+      if (maxStay(spot.timeRestriction) !== null) {
+        asMaxStay += 1;
+        understood += 1;
+      } else if (restrictionState(spot.timeRestriction) !== "unbekannt") {
         understood += 1;
       } else {
         unparsed.set(normalized, (unparsed.get(normalized) ?? 0) + 1);
@@ -58,6 +76,7 @@ async function main() {
   console.log(
     `davon sicher deutbar:                 ${understood} (${real > 0 ? Math.round((understood / real) * 100) : 0} %)`,
   );
+  console.log(`davon als Höchstparkdauer:            ${asMaxStay}`);
 
   if (unparsed.size > 0) {
     console.log("\nNicht deutbare Formen, häufigste zuerst:");

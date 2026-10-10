@@ -14,8 +14,8 @@ der sich aus einer öffentlichen Quelle importieren lässt – siehe
 [Abschnitt 2e](#2e-ganz-deutschland).
 
 **Stand in Zahlen:** 204 von **10.956** Gemeinden geprüft (1,9 %) – das sind
-**41,7 % der Bevölkerung**. In der App: 209 Städte, 17.864 Standorte, davon
-24 Städte aus amtlicher Quelle. Laufender Bericht:
+**41,7 % der Bevölkerung**. In der App: 209 Städte, 18.072 Standorte, davon
+23 Städte aus amtlicher Quelle. Laufender Bericht:
 [data/\_abdeckung.md](data/_abdeckung.md).
 
 Karte, Liste, Detailansicht, Zielsuche, Einstellungen und Offline-Betrieb
@@ -30,110 +30,125 @@ Hier steht, woran zuletzt gearbeitet wurde und was als Nächstes dran ist.
 **Nach jeder abgeschlossenen Aufgabe aktualisieren**, damit nach einer
 Unterbrechung nahtlos weitergearbeitet werden kann.
 
-**Zuletzt abgeschlossen:** 2026-10-10 – 2d.11, 3.0g, 3.0h, 3.5, 3.6, 3.9a,
-3.9b, 4.1–4.4, 4.6, 5.4, 5.8, 6.7, 6.13, 6.15, 6.16, 9.1a, 9.7, 9.8, 10.5,
-11.3, 12.3, 12.8, 12.9, 2e.8 sowie Lizenz und Importdatum im Datenmodell
-(Teil von 2a.5/10.3).
+**Gerade in Arbeit:** nichts. Die Arbeit ist an einem sauberen Punkt beendet:
+alle Prüfungen grün, keine halbfertige Änderung im Baum.
 
-**Gerade in Arbeit:** – (2e.10 und 2e.11 sind neu aufgenommen, aber noch nicht
-begonnen: ausdrücklich erst nach Freigabe umsetzen)
+### Hier weitermachen
 
-**Zuletzt abgeschlossen (2026-10-10, zweiter Durchgang):** 6.17–6.20 und
-9.11–9.13 – Sprung auf die Karte aus jedem Eintrag, rote Luftlinie zum
-Bezugspunkt, Auswahl auch am eingegebenen Ziel, Vorschläge beim Tippen,
-Reiter „Liste" ausgeblendet, Kopfzeile in den Einstellungen still, schlankere
-Menüs. Begründungen in [Erledigt.md](Erledigt.md). Neu aufgefallen und offen:
-6.21 und 6.22.
+**1. Zuerst prüfen, ob die Ausgangslage noch stimmt** – zwei Befehle, keine
+Netzabfrage, zusammen unter einer Minute:
 
-**Aufgeräumt am 2026-10-10:** Die acht `[~]`-Punkte wiederholten ihren fertigen
-Teil als „Fertig: …", obwohl er längst in [Erledigt.md](Erledigt.md) stand –
-dieselbe Sache in zwei Dateien. Jetzt steht hier nur der offene Rest mit einem
-Verweis. 2d.8a und 2d.9 sind dabei von `[~]` auf `[ ]` gewechselt: An ihnen ist
-nichts mehr in Arbeit, es ist nur noch nichts getan. Der NRW-Befund aus 3.2 ist
-nach `Erledigt.md` gewandert – eine ergebnislose Suche ist ein Ergebnis, das vor
-der Wiederholung bewahrt.
+```bash
+npm run test && npm run typecheck && npm run lint
+npm run validate -- --offline
+```
 
-**Zuletzt gelernt (2026-10-10):** Der landesweite Import (2e.7) ist gebaut
-und lief, aber die damit erzeugten Daten für 473 Gemeinden wurden **wieder
-entfernt**. Die Zuordnung ohne echte Grenzgeometrie bevorzugt systematisch
-kleine Gemeinden neben großen Städten; 80 von 472 hatten unplausibel viele
-Stellplätze. Nach dem Grundsatz des Projekts – „lieber kein Import als ein
-falscher" – ist das kein vertretbarer Bestand. Gefunden hat es nicht das
-Hinsehen, sondern zwei Kennzahlen: die Streuung der Standorte je Gemeinde
-und Stellplätze je Einwohner.
+Erwartet: 193 Unit-Tests grün, `209 Städte geprüft (offline). Mit Befund: 10`.
+Weicht das ab, hat sich seit dem 2026-10-10 etwas geändert – **das klären,
+bevor Neues anfängt.**
 
-**Zweiter Befund vom 2026-10-10:** Die Arbeitsliste führt 204 Gemeinden, das
-Register 10.956. `_import-status.md` meldet deshalb „Alle Städte
-abgearbeitet" – wahr für die eingestellte Einwohnergrenze, falsch für das
-Endziel. Die übrigen 10.752 stehen nicht auf „offen", **sie kommen in der
-Datei nicht vor.** Die Trennung „geprüft" gegen „nicht geprüft" ist richtig
-gebaut, wird aber auf die falsche Grundmenge angewandt; siehe 2e.10.
+**2. Dann der nächste Punkt: 2e.10** (Arbeitsliste auf alle 10.956 Gemeinden).
+Er steht vor 2e.7, obwohl 2e.7 der bekanntere Blocker ist, und zwar aus einem
+Grund: Ohne vollständige Arbeitsliste ist „die restlichen Gemeinden" keine
+Menge, die man abarbeiten kann, und `_import-status.md` meldet weiterhin
+fälschlich „Alle Städte abgearbeitet". Was zu tun ist, steht ausführlich bei
+2e.10 in [Abschnitt 2e](#2e-ganz-deutschland); die kürzeste Fassung:
+`loadStatus()` in `scripts/import/status.mts` über das ganze Register führen
+statt über `germanCities`, das auf `MIN_POPULATION` gefiltert ist.
 
-### Was zuletzt geschah
+**3. Danach 2e.7** – der Punkt-in-Fläche-Test aus VG250-EW. Der Weg ist
+entschieden und begründet (Shapefile, nicht GeoPackage), die halbe Arbeit
+liegt schon vor: ZIP-Leser und UTM32-Umrechnung sind da, es fehlt ein
+`.shp`/`.dbf`-Leser. **Prüfstein:** Die 202 bekannten Gemeinden müssen
+dieselbe Zuordnung ergeben wie der Einzelimport, und Herdecke muss wieder bei
+etwa 7 statt 86 Stellplätzen je 10.000 Einwohner liegen.
 
-Der Import der Städte ab 50.000 Einwohnern ist abgeschlossen (siehe
-[Erledigt.md](Erledigt.md)). Danach wurde die offene Liste abgearbeitet: die
-Navigationsleiste schließbar gemacht und um eine Auswahl erweitert, der
-Haftungshinweis eingebaut, Lizenz und Importdatum sichtbar gemacht, zwei
-Fehlalarme der Validierung abgestellt, Kontraste und Schriftskalierung
-geprüft und repariert, Einstellungen als eigene Ansicht, und ein
-E2E-Smoke-Test mit Playwright.
+**Danach in dieser Reihenfolge**, ohne dass etwas davon voneinander abhängt:
 
-**Fallstricke, die dabei aufgetreten sind**
+4. 3.1 / 3.3 / 3.4 Kreuzvergleich, Straßenabgleich, Abstand zur Straße
+5. 3.7 bestätigte Standorte in der Detailansicht kennzeichnen
+6. 2d.8a die fünf Städte mit ungenutzter amtlicher Quelle einzeln ansehen
+7. 12.4 Lighthouse, 12.6 Fehler-Monitoring
+8. 2a.5 die fehlenden Lizenzen der amtlichen Quellen nachschlagen
 
-- **Quelldateien nie mit PowerShell umschreiben.** `Get-Content | Set-Content`
-  liest UTF-8 als Windows-1252; aus „Nächster" wird „NÃ¤chster". Zwei
-  Komponenten waren an 39 bzw. 42 Stellen beschädigt, und `typecheck`, `lint`
-  und 148 Unit-Tests liefen trotzdem grün durch – beschädigte Umlaute in
-  Zeichenketten sind syntaktisch gültig. Gefunden hat es erst der neue
-  E2E-Test. Für Massenänderungen das Edit-Werkzeug oder ein Node-Skript
-  nehmen.
-- **Der Import hat einen behobenen Mangel wieder eingeschleppt.** Nach dem
-  Import standen 21 % aller Standorte ohne Straßennamen da, weil
-  `import:streets` nicht Teil der Importanleitung war. Ist jetzt als Schritt 5
-  in [Datenpflege.md](Datenpflege.md) festgeschrieben.
-- **Einzelne Städte dauern sehr lange, ohne hängen zu sein.** Konstanz lief über
-  40 Minuten. Grund ist die Bauart: Jede Overpass-Abfrage trägt
-  `[out:json][timeout:300]`, scheitert sie, wird sie zerlegt und über mehrere
+**Nicht anfangen:** Abschnitt 13, 15 und 16 sowie 2e.11 – alle gesperrt bis zu
+einer ausdrücklichen Freigabe.
+
+### Was zuletzt geschah (2026-10-10)
+
+Zuerst auf Zuruf an der Oberfläche: **6.17–6.20** (Sprung auf die Karte aus
+jedem Eintrag, rote Luftlinie zum Bezugspunkt, Auswahl auch am eingegebenen
+Ziel, Vorschläge beim Tippen) und **9.11–9.13** (Reiter „Liste" ausgeblendet,
+Kopfzeile in den Einstellungen still, schlankere Menüs).
+
+Danach nach der Vorgabe „günstigstes zuerst": **10.4**, **7.7**, **6.22**,
+**6.21**, **6.16a**, **2d.10**. Begründungen stehen in
+[Erledigt.md](Erledigt.md).
+
+Davor, am selben Tag: der Import der Städte ab 50.000 Einwohnern, die
+Zielsuche, der Haftungshinweis, Lizenz und Importdatum, Kontraste und
+Schriftskalierung, Einstellungen als eigene Ansicht und die ersten
+E2E-Tests.
+
+### Drei Befunde, die den Stand erklären
+
+**1. Der landesweite Import (2e.7) lief – und seine Daten wurden verworfen.**
+473 Gemeinden waren geschrieben. Die Zuordnung ohne echte Grenzgeometrie
+bevorzugt systematisch kleine Gemeinden neben großen Städten; 80 von 472
+hatten unplausibel viele Stellplätze. Nach dem Grundsatz „lieber kein Import
+als ein falscher" kein vertretbarer Bestand.
+
+**2. Die Arbeitsliste führt 204 Gemeinden, das Register 10.956.** Die übrigen
+10.752 stehen nicht auf „offen" – **sie kommen in der Datei nicht vor.** Die
+Trennung „geprüft" gegen „nicht geprüft" ist richtig gebaut, wird aber auf die
+falsche Grundmenge angewandt. Das ist 2e.10.
+
+**3. Chemnitz zeigte Wohnmobilstellplätze als Behindertenparkplätze.** 13
+Standorte aus einer amtlichen Quelle namens „Parkplätze Wohnmobil", die der
+Relevanzfilter durchgelassen hatte. Nach dem Neuimport: 221 echte Standorte.
+Filter korrigiert, Tests dazu.
+
+**Was alle drei gemeinsam haben:** Gefunden hat sie nicht das Hinsehen,
+sondern Kennzahlen über den ganzen Bestand – Streuung je Gemeinde und
+Stellplätze je Einwohner. Die beiden stehen aus genau diesem Grund in
+[CLAUDE.md](CLAUDE.md).
+
+### Fallstricke, die hier wirklich aufgetreten sind
+
+Diese Liste wurde am 2026-10-10 entdoppelt – mehrere Einträge standen zweimal
+da, zwei waren überholt. Die laufenden Arbeitsregeln stehen in
+[CLAUDE.md](CLAUDE.md); hier steht, was beim Arbeiten am Datenbestand
+schiefging.
+
+- **Der Import schleppt behobene Mängel wieder ein.** Nach dem Import der
+  Städte ab 50.000 Einwohnern standen 21 % aller Standorte ohne Straßennamen
+  da, weil `import:streets` nicht Teil der Importanleitung war. Ist jetzt als
+  Schritt 5 in [Datenpflege.md](Datenpflege.md) festgeschrieben – **und nach
+  jedem Import wirklich auszuführen**, auch nach einem einzelnen.
+- **Einzelne Städte dauern sehr lange, ohne hängen zu sein.** Konstanz lief
+  über 40 Minuten. Grund ist die Bauart: Jede Overpass-Abfrage trägt
+  `[out:json][timeout:300]`; scheitert sie, wird sie zerlegt und über mehrere
   Spiegel mit Pausen wiederholt. Unter Last summiert sich das. Einen
   clientseitigen Abbruch (`AbortSignal.timeout`) gibt es nicht – wäre eine
   sinnvolle Ergänzung, damit ein Lauf kalkulierbar bleibt.
-- **Overpass verträgt dieses Tempo nicht.** Bei rund 100 Städten am Stück
-  häufen sich HTTP 500/504. Zwischen den Schüben ein paar Minuten Pause
-  einlegen. Spätestens für Stufe 2 ist der Weg über einen landesweiten Lauf
-  nötig (2e.7) – Gemeinde für Gemeinde zu fragen ist bei tausenden Gemeinden
-  nicht vertretbar.
+- **Overpass verträgt kein hohes Tempo.** Bei rund 100 Städten am Stück häufen
+  sich HTTP 500/504. Zwischen den Schüben ein paar Minuten Pause einlegen.
 - **`npm run import:city -- --rest` greift keine fehlgeschlagenen Städte**,
   nur „offene". Nachholen geht namentlich:
   `npm run import:city -- <slug> <slug>`.
-- **`npm run dev` warf einen 500er** (`ENOENT … _document.js`) wegen eines
-  alten `.next`-Stands. `npm run clean` und Neustart beheben es; genau der in
-  der README beschriebene Fall.
-- **Die Startseite ist über 6 MB HTML**, weil alle Standorte in die Seite
-  serialisiert werden. Siehe 5.4 und 2e.8 – aus dem Bedenken ist ein Befund
-  geworden.
-
-- **Einzelne Städte dauern sehr lange, ohne hängen zu sein.** Konstanz lief über
-  40 Minuten. Grund ist die Bauart: Jede Overpass-Abfrage trägt
-  `[out:json][timeout:300]`, scheitert sie, wird sie zerlegt und über mehrere
-  Spiegel mit Pausen wiederholt. Unter Last summiert sich das. Einen
-  clientseitigen Abbruch (`AbortSignal.timeout`) gibt es nicht – wäre eine
-  sinnvolle Ergänzung, damit ein Lauf kalkulierbar bleibt.
-- **Overpass verträgt dieses Tempo nicht.** Bei rund 100 Städten am Stück
-  häufen sich HTTP 500/504. Zwischen den Schüben ein paar Minuten Pause
-  einlegen. Spätestens für Stufe 2 ist der Weg über einen landesweiten Lauf
-  nötig (2e.7) – Gemeinde für Gemeinde zu fragen ist bei tausenden Gemeinden
-  nicht vertretbar.
+- **`npm run sources:scan` ist billiger als es aussieht.** Es fragt GovData
+  **einmal je Suchbegriff**, nicht je Stadt – ein vollständiger Neulauf kostet
+  rund zehn Abfragen. Wenn sich eine Filterregel ändert, ist der saubere
+  Neulauf also der richtige Weg und nicht das Bearbeiten des erzeugten
+  Zwischenstands.
 - **Frankfurt (Oder) bekam den Datensatz von Frankfurt am Main.** Die
   Städtezuordnung in `scan-sources.mts` streicht Klammerzusätze, wodurch beide
   auf „frankfurt" verkürzt werden. Die Abstandsprüfung hat es gefangen, der
   Import fiel auf OSM zurück – siehe 2d.11.
-- **`npm run dev` warf einen 500er** (`ENOENT … _document.js`) wegen eines
-  alten `.next`-Stands. `npm run clean` und Neustart beheben es; genau der in
-  der README beschriebene Fall.
-- **Die Startseite ist jetzt 6,1 MB HTML**, weil alle 16.585 Standorte in die
-  Seite serialisiert werden. Siehe 5.4 und 2e.8 – aus dem Bedenken ist ein
-  Befund geworden.
+- **Ein Schwellenwert, der knapp danebenliegt, ist kein Schutz.**
+  `looksTooSmall` verwirft eine amtliche Quelle unter 2,0 Stellplätzen je
+  10.000 Einwohner. Chemnitz lag bei 2,28 und kam mit Wohnmobilstellplätzen
+  durch (2d.10). Gefangen hat es erst der Vergleich über alle Städte.
 
 **Wartet auf dich:**
 
@@ -145,25 +160,12 @@ E2E-Smoke-Test mit Playwright.
 - **Abschnitt 15 (Mehrsprachigkeit)** ist auf deinen Wunsch zurückgestellt – Englisch, Spanisch und Französisch erst nach der deutschen Fassung
 - **Abschnitt 16 (nur nach Freigabe)** – derzeit: Städte zum Mitnehmen herunterladen
 
-**Als Nächstes geplant**, in dieser Reihenfolge:
-
-1. 6.12 fertigstellen: Zielmarker, Umkreis-Auswahl, Browserprüfung, E2E-Test
-2. 2e.10 Arbeitsliste auf alle 10.956 Gemeinden stellen – ohne sie ist „die
-   restlichen Gemeinden" keine abarbeitbare Menge, und der Importstand meldet
-   fälschlich „alles abgearbeitet"
-3. 2e.7 Punkt-in-Fläche-Test aus VG250-EW – der Blocker für jede weitere Stufe
-4. 3.1 / 3.3 / 3.4 Kreuzvergleich, Straßenabgleich, Abstand zur Straße
-5. 3.7 bestätigte Standorte in der Detailansicht kennzeichnen
-6. 2d.8a die acht Städte mit ungenutzter amtlicher Quelle einzeln ansehen
-7. 12.4 Lighthouse, 12.6 Fehler-Monitoring
-8. 2a.5 die fehlenden Lizenzen der 15 amtlichen Quellen nachschlagen
-
-**Stand:** 59 offen, 6 in Arbeit, 5 brauchen deine Entscheidung, 9 bewusst
-zurückgestellt (Finanzierung, Mehrsprachigkeit, Offline-Download). Dazu 20
+**Stand:** 54 offen, 5 in Arbeit, 5 brauchen deine Entscheidung, 9 bewusst
+zurückgestellt (Finanzierung, Mehrsprachigkeit, Offline-Download). Dazu 18
 offene Unterpunkte innerhalb dieser Posten. **Gezählt wird die oberste Ebene**
 – sonst ergibt jede Sitzung eine andere Zahl.
-97 erledigte Einträge stehen in [Erledigt.md](Erledigt.md).
-**Tests: 173 Unit-Tests + 9 E2E-Tests.**
+103 erledigte Einträge stehen in [Erledigt.md](Erledigt.md).
+**Tests: 193 Unit-Tests + 12 E2E-Tests.**
 
 ---
 
@@ -204,7 +206,6 @@ Laufender Stand: **[data/\_import-status.md](data/_import-status.md)** – von d
 
 - [ ] 2d.8a **Die acht Städte mit ungenutzter amtlicher Quelle einzeln ansehen.** `npm run sources:check` findet sie von selbst (siehe [Erledigt.md](Erledigt.md)); zu tun bleibt das Ansehen. Bei Kiel, Krefeld und Aachen ist die Ablehnung laut 2d.8 richtig (Anwohnerparken); bei Bochum, Bielefeld, Karlsruhe, Norderstedt und Viersen lohnt der Blick auf das Stadtportal. Der Gewinn wäre spürbar: Düsseldorf kam von 171 Standorten aus OSM auf 340 aus der amtlichen Quelle.
 - [ ] 2d.9 **Regensburg: 156.000 Einwohner, kein einziger erfasster Behindertenparkplatz.** Dass die Abfrage sauber durchlief und leer war, ist seit 2e.9 festgehalten – das ist eine Lücke in OpenStreetMap, keine in der Wirklichkeit. Hier lohnt die Anfrage bei der Straßenverkehrsbehörde (Schritt 3 der Quellensuche) und das Nachtragen in OSM (2c.4).
-- [ ] 2d.10 Auffällig niedrige OSM-Zahlen stichprobenartig prüfen, etwa Wuppertal mit 66 Standorten bei 359.000 Einwohnern
 
 ### 2e. Ganz Deutschland
 
@@ -349,17 +350,21 @@ ob sich an der Quelle etwas getan hat.
 
 ## 6. Karte und Standort
 
-- [ ] 6.16a Die Auswahl aus 6.16 und die Listenansicht zeigen dasselbe in zwei Komponenten. Sinnvoll wäre, beide auf dieselbe Zeilen-Komponente zu stützen statt sie doppelt zu pflegen – aufgefallen beim Bauen von 6.16, aber keine Voraussetzung für irgendetwas. **Seit 9.11 weniger dringend** (der Reiter „Liste" ist ausgeblendet), aber dafür heikler: Die beiden Fassungen driften jetzt auseinander, ohne dass es jemand sieht – die Auswahl wurde am 2026-10-10 umgebaut, die Listenansicht nicht.
-- [ ] 6.21 **Die aufgeklappte Auswahl deckt auf dem Telefon fast die ganze Karte zu.** Sie ist auf 60 % der Höhe begrenzt und scrollt, aber bei vielen Treffern im Umkreis (am Hamburger Rathausmarkt sind es 34) sieht man von der Karte kaum noch etwas – während man gerade wissen will, wo die Plätze liegen. Denkbar: die Liste auf die Höhe eines halben Bildschirms setzen und als ziehbares Blatt ausführen, oder bei aufgeklappter Auswahl automatisch so weit herauszoomen, dass alle hervorgehobenen Marker ins Bild passen. Aufgefallen beim Bauen von 6.17.
-- [ ] 6.22 **Luftlinie und Marker sagen nicht, wenn das Ziel außerhalb des Bildes liegt.** Springt man auf einen Parkplatz, zeigt die Linie in Richtung Bezugspunkt – der kann aber weit außerhalb des Ausschnitts liegen, und dann endet die Linie am Bildrand ohne Erklärung. Entweder beim Sprung so zoomen, dass beide Punkte ins Bild passen, oder am Rand anzeigen, wohin die Linie führt.
+**Nichts offen** (Stand 2026-10-10). Karte, Standort, Zielsuche, Umkreis,
+Auswahl über der Karte, Luftlinie und Offline-Betrieb sind gebaut; alles steht
+in [Erledigt.md](Erledigt.md). Der Abschnitt bleibt stehen, weil die
+Nummerierung beider Dateien dieselbe ist – ein fehlender Abschnitt 6 würde beim
+Nachschlagen von „6.17" nur verwirren.
 
 ---
 
 ## 7. Parkplatzdetails und Navigation
 
-- [~] 7.7 Zeitangaben deuten: **von 82 % auf 93 %** gebracht (2026-10-10), siehe [Erledigt.md](Erledigt.md).
-  - [ ] Die verbleibenden 29 Angaben sind **überwiegend gar keine Zeitangaben**: „nur an Veranstaltungen", „Je nach Messe", „matchdays only", „Parkplatz durch Baustelle stark eingeschränkt". Sie werden als Text angezeigt, und mehr lässt sich daraus ehrlich nicht machen. Lohnender wäre, die Quellen zu bitten, so etwas nicht ins Zeitfeld zu schreiben.
-  - [ ] Echte Reste, falls jemand Lust hat: `Apr-Oct: Mo-Su 09:00-18:00` (Jahreszeiten), `open; Fr 06:00-14:00 off` (Ausnahmen), `<br>Mo-Fr 9:00-20:00<br>` (HTML in den Daten), `M0 - Fr` (Null statt O).
+**Nichts offen** (Stand 2026-10-10). Zuletzt wurde 7.7 abgeschlossen: 96 % der
+Zeitangaben werden sicher gedeutet. Die verbliebenen 17 sind überwiegend gar
+keine Zeitangaben („nur an Veranstaltungen", „matchdays only") – daraus lässt
+sich ehrlich nichts machen, und das ist das Ergebnis, nicht eine offene
+Aufgabe.
 
 ---
 
@@ -406,7 +411,6 @@ sie nützt, und die höhere da, wo sie schützt.
 - [ ] 10.2 Impressum und Datenschutzerklärung – für eine veröffentlichte Seite in Deutschland Pflicht
 - [~] 10.3 Lizenz- und Attributionshinweise. ODbL-Nennung und Quellenangabe je Stadt sind fertig (siehe [Erledigt.md](Erledigt.md)).
   - [ ] Was fehlt, ist die Lizenz der 15 amtlichen Quellen, die keine angeben – beschrieben unter 2a.5.
-- [ ] 10.4 Keine Tracker, keine Drittanbieter-Cookies; falls Statistik, dann datenschutzfreundlich und mit Einwilligung
 
 ---
 
@@ -535,7 +539,7 @@ sprechen.
 
 ## Notizen zur Datenlage
 
-- **84 Städte, 13.463 Standorte, 33.209 Stellplätze.** 16 Städte aus amtlicher Quelle (17.966 Stellplätze), der Rest aus OpenStreetMap.
+- **209 Städte, 18.072 Standorte** (Stand 2026-10-10). 23 davon aus amtlicher Quelle, der Rest aus OpenStreetMap. Die laufenden Zahlen stehen in [data/\_validierung.md](data/_validierung.md) und [data/\_abdeckung.md](data/_abdeckung.md) – **dort nachsehen, nicht hier**: Diese Zeile stand monatelang auf „84 Städte, 13.463 Standorte", lange nachdem es dreimal so viele waren.
 - Die beiden Quellenarten sind nicht vergleichbar: amtliche Listen führen einzelne Stellplätze am Straßenrand, OpenStreetMap überwiegend Parkplätze mit ausgewiesenen Behindertenstellplätzen. Die Oberfläche sagt das, und so muss es bleiben.
 - Vier Fehlerklassen sind beim Import aufgetreten und werden jetzt abgefangen; alle vier hätten Daten erzeugt, die beim Draufschauen richtig aussehen:
   - **Falsche UTM-Zone.** Dresdens Dienst liefert Zone 33. Als Zone 32 gedeutet ergaben sich Koordinaten bei 7,7° Ost – mitten in Deutschland, aber 450 km daneben.
