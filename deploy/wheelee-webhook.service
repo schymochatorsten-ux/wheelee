@@ -1,0 +1,34 @@
+[Unit]
+Description=wheelee Push-to-Deploy (GitHub-Webhook)
+After=network-online.target docker.service tailscaled.service
+Wants=network-online.target
+
+[Service]
+# Lauscht ausschließlich auf der Tailscale-Adresse. Auf 0.0.0.0 wäre der
+# Endpunkt aus dem Heimnetz erreichbar – derselbe Grundsatz wie beim
+# Container selbst.
+ExecStart=/usr/bin/webhook \
+  -hooks /etc/wheelee/hooks.json \
+  -ip 100.71.71.105 \
+  -port 3016 \
+  -urlprefix _hook \
+  -hotreload \
+  -verbose
+
+# Der Dienst läuft als der Benutzer, dem /opt/wheelee gehört, und braucht
+# Docker-Rechte für `docker compose`. Beim Einrichten anpassen.
+User=niklas
+Group=docker
+
+Restart=on-failure
+RestartSec=5
+
+# Was der Dienst nicht braucht, bekommt er nicht.
+NoNewPrivileges=true
+PrivateTmp=false
+ProtectSystem=full
+ProtectHome=read-only
+ReadWritePaths=/opt/wheelee /tmp
+
+[Install]
+WantedBy=multi-user.target
