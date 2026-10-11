@@ -44,19 +44,23 @@ npm run test && npm run typecheck && npm run lint
 npm run check:slugs
 ```
 
-Erwartet: 193 Unit-Tests grün und
+Erwartet: 201 Unit-Tests grün und
 `Verzeichnis: 10.754 Gemeinden · davon an der Reihe: 204 · Seed-Dateien: 209`
 mit „✅ Register und Seed-Dateien stimmen überein". Weicht das ab, hat sich
 seit dem 2026-10-11 etwas geändert – **das klären, bevor Neues anfängt.**
 Besonders ein Slug, der nicht mehr passt: Er verwaist eine Seed-Datei
 lautlos.
 
-**2. Dann 2e.7** – der Punkt-in-Fläche-Test aus VG250-EW. Der Weg ist
-entschieden und begründet (Shapefile, nicht GeoPackage), die halbe Arbeit
-liegt schon vor: ZIP-Leser und UTM32-Umrechnung sind da, es fehlt ein
-`.shp`/`.dbf`-Leser. **Prüfstein:** Die 202 bekannten Gemeinden müssen
-dieselbe Zuordnung ergeben wie der Einzelimport, und Herdecke muss wieder bei
-etwa 7 statt 86 Stellplätzen je 10.000 Einwohner liegen.
+**2. Der Punkt-in-Fläche-Test braucht die Grenzdatei** – 66 MB vom BKG, die
+nicht im Repository liegen. Vor dem ersten landesweiten Lauf einmal:
+
+```bash
+npm run import:grenzen
+```
+
+Er lädt sie nach `data/raw/`, baut die Flächen und prüft sich selbst gegen den
+Bestand. Erwartet: `10.956 Flächen für 10.956 Gemeinden` und
+`17.801 von 18.072 Standorten … (98.50 %)`.
 
 **Danach in dieser Reihenfolge**, ohne dass etwas davon voneinander abhängt:
 
@@ -71,10 +75,12 @@ einer ausdrücklichen Freigabe.
 
 **Eine Entscheidung liegt bei dir, nicht auf der Liste:** Die Stufe „ab
 50.000" ist vollständig abgearbeitet. Die nächstgrößere offene Gemeinde wäre
-Cuxhaven mit 49.697 Einwohnern; dafür muss `MIN_POPULATION` sinken. Der Weg
-über `import:city` erzeugt **richtige** Daten – der Zuordnungsfehler aus 2e.7
-betrifft nur den landesweiten Lauf. Der einzige Einwand ist die Last auf
-Overpass: ab 40.000 wären es 90 Gemeinden, ab 20.000 bereits 511.
+Cuxhaven mit 49.697 Einwohnern; dafür muss `MIN_POPULATION` sinken. Seit 2e.7
+erzeugen **beide** Wege richtige Daten – der Einzelimport über `import:city`
+und der landesweite Lauf. Der einzige Einwand ist die Last auf Overpass: ab
+40.000 wären es 90 Gemeinden, ab 20.000 bereits 511. Und der Dienst war am
+2026-10-11 so überlastet, dass von drei Teilabfragen für
+Nordrhein-Westfalen zwei leer zurückkamen.
 
 ### Was zuletzt geschah (2026-10-10 und 2026-10-11)
 
@@ -83,7 +89,16 @@ jedem Eintrag, rote Luftlinie zum Bezugspunkt, Auswahl auch am eingegebenen
 Ziel, Vorschläge beim Tippen) und **9.11–9.14** (Reiter „Liste" ausgeblendet,
 Kopfzeile still und ohne Bestandszahlen, schlankere Menüs).
 
-Am 2026-10-11 dann **2e.10**: Die Arbeitsliste führt alle 10.754 Gemeinden mit
+Am 2026-10-11 dann **2e.7**: Die Zuordnung der landesweiten Treffer zu
+Gemeinden entscheidet jetzt die amtliche Grenzfläche aus VG250-EW statt des
+umschließenden Rechtecks – mit einem eigenen Shapefile-Leser, weil dieselbe
+Auslieferung auch das Gemeindeverzeichnis trägt. 98,5 % des Bestands ordnen
+sich selbst wieder zu, und von den 830 Standorten der Nachbarn Herdeckes
+landet keiner mehr dort. Nebenbei kam heraus, dass ein unvollständiger
+Overpass-Lauf bisher geschrieben hätte: 7 Objekte für ganz
+Nordrhein-Westfalen statt 14.025.
+
+Davor am selben Tag **2e.10**: Die Arbeitsliste führt alle 10.754 Gemeinden mit
 Einwohnern statt nur die 204 oberhalb der Importgrenze. Dabei kamen zwei
 Folgefehler ans Licht (`check:slugs` meldete fünf Fehlalarme,
 `report:abdeckung` rechnete gegen eine andere Gesamtzahl als der Importstand)
@@ -105,7 +120,9 @@ E2E-Tests.
 473 Gemeinden waren geschrieben. Die Zuordnung ohne echte Grenzgeometrie
 bevorzugt systematisch kleine Gemeinden neben großen Städten; 80 von 472
 hatten unplausibel viele Stellplätze. Nach dem Grundsatz „lieber kein Import
-als ein falscher" kein vertretbarer Bestand.
+als ein falscher" kein vertretbarer Bestand. **Seit 2026-10-11 behoben:** Es
+entscheidet die amtliche Fläche, nicht das Rechteck. Was bleibt, ist der
+Bezugsweg – Overpass verträgt die Last nicht (2e.11).
 
 **2. Die Arbeitsliste führte 204 Gemeinden, das Register 10.754** – die
 übrigen standen nicht auf „offen", sie kamen in der Datei nicht vor. **Seit
@@ -169,12 +186,12 @@ schiefging.
 - **Abschnitt 15 (Mehrsprachigkeit)** ist auf deinen Wunsch zurückgestellt – Englisch, Spanisch und Französisch erst nach der deutschen Fassung
 - **Abschnitt 16 (nur nach Freigabe)** – derzeit: Städte zum Mitnehmen herunterladen
 
-**Stand:** 53 offen, 6 in Arbeit, 5 brauchen deine Entscheidung, 9 bewusst
-zurückgestellt (Finanzierung, Mehrsprachigkeit, Offline-Download). Dazu 17
+**Stand:** 52 offen, 5 in Arbeit, 5 brauchen deine Entscheidung, 9 bewusst
+zurückgestellt (Finanzierung, Mehrsprachigkeit, Offline-Download). Dazu 14
 offene Unterpunkte innerhalb dieser Posten. **Gezählt wird die oberste Ebene**
 – sonst ergibt jede Sitzung eine andere Zahl.
-105 erledigte Einträge stehen in [Erledigt.md](Erledigt.md).
-**Tests: 193 Unit-Tests + 15 E2E-Tests.**
+106 erledigte Einträge stehen in [Erledigt.md](Erledigt.md).
+**Tests: 201 Unit-Tests + 15 E2E-Tests.**
 
 ---
 
@@ -233,45 +250,10 @@ lesen. Nicht importierbar sind Daten hinter Lizenzschranken (Parkopedia) oder
 solche, die nur als Bild oder gedruckter Plan vorliegen.
 
 - [~] 2e.5 Stufenweise vorgehen, größte zuerst. Die Stufe „ab 50.000" ist abgeschlossen (siehe [Erledigt.md](Erledigt.md)); die Grenze ist die Konstante `MIN_POPULATION` in `scripts/import/german-cities.mts`.
-  - [ ] **Nächste Stufe „ab 20.000" = 706 Gemeinden. Einmal versucht und wieder zurückgenommen** (2026-10-10): Die Grenze stand kurzzeitig auf 20.000, und der landesweite Lauf hat 473 Gemeinden geschrieben. Weil die Zuordnung nicht stimmte (siehe 2e.7), sind die Daten wieder entfernt und die Grenze steht wieder auf 50.000. **Die Stufe hängt allein an 2e.7** – das Register (2e.4) und die Zählung (2e.0) sind bereit, und das Umstellen ist eine Zahl.
+  - [ ] **Nächste Stufe „ab 20.000" = 706 Gemeinden. Einmal versucht und wieder zurückgenommen** (2026-10-10): Die Grenze stand kurzzeitig auf 20.000, und der landesweite Lauf hat 473 Gemeinden geschrieben. Weil die Zuordnung nicht stimmte, sind die Daten wieder entfernt und die Grenze steht wieder auf 50.000. **Der Grund dafür ist seit 2e.7 behoben** (Punkt-in-Fläche-Test, siehe [Erledigt.md](Erledigt.md)); das Register (2e.4) und die Zählung (2e.0) sind bereit, und das Umstellen ist eine Zahl. Was bleibt, ist die Last auf Overpass – siehe 2e.11.
   - [ ] Danach ab 10.000 (1.598 Gemeinden) und ab 5.000 (2.943).
-- [ ] 2e.6 Restliche Gemeinden aus OpenStreetMap – der Importer kann das bereits. **Die Liste steht seit 2e.10:** `data/_import-status.md` führt alle 10.754 Gemeinden mit Einwohnern, davon 10.550 als „noch nicht geprüft". Es fehlt jetzt nicht mehr die Liste, sondern ein vertretbarer Weg, sie abzuarbeiten – das ist 2e.7.
-- [~] 2e.7 **Laufzeit und Last beherrschen – das Werkzeug steht, die Zuordnung taugt noch nicht.**
-
-  `npm run import:osm-state -- <bundesland>` bzw. `--alle` holt mit **zwei Abfragen je Bundesland**, was bisher 10.754 Einzelabfragen gekostet hätte. Der gebaute Teil steht in [Erledigt.md](Erledigt.md); der Lauf selbst funktioniert, 12 von 16 Ländern liefen durch.
-
-  **Die damit erzeugten Daten für 473 Gemeinden sind wieder entfernt worden.** Nicht weil der Lauf scheiterte, sondern weil die Zuordnung der Treffer zu Gemeinden nachweislich falsch ist:
-
-  - [ ] **Der verbleibende Fehler ist grundsätzlich.** Ohne die echte Grenzgeometrie entscheidet das umschließende Rechteck und die Entfernung zur Rechteckmitte. In dicht besiedelten Gegenden überlappen die Rechtecke stark, und **die kleinere Gemeinde gewinnt systematisch**: Ihr Mittelpunkt liegt jedem Punkt im Überlappungsbereich näher. Herdecke (22.772 Einwohner) bekam dadurch 109 Standorte bis hinauf nach Witten – 86 Stellplätze je 10.000 Einwohner statt der üblichen 7. **80 von 472 Gemeinden lagen über dem Dreifachen des Medians.**
-  - [ ] **Was es braucht: ein echter Punkt-in-Fläche-Test.** Die Wege sind am 2026-10-10 verglichen worden; **empfohlen ist VG250-EW als Shapefile**, und zwar aus einem Grund, der schwerer wiegt als die Dateigröße: Es ist **dasselbe Produkt, aus dem das Gemeindeverzeichnis schon kommt**.
-
-    | Weg                                | Umfang           | Lizenz       | Was fehlt dafür                             |
-    | ---------------------------------- | ---------------- | ------------ | ------------------------------------------- |
-    | **VG250-EW Shapefile** (empfohlen) | 66 MB            | dl-de/by-2-0 | ein `.shp`/`.dbf`-Leser                     |
-    | VG1000-EW Shapefile                | 9 MB             | dl-de/by-2-0 | derselbe Leser, aber generalisierte Grenzen |
-    | VG250-EW GeoPackage                | 69 MB            | dl-de/by-2-0 | ein SQLite-Leser – deutlich mehr Arbeit     |
-    | Overpass `out geom`                | viele MB je Land | ODbL         | nichts, aber es belastet Overpass erneut    |
-
-    Warum das Shapefile und nicht das GeoPackage, obwohl beide dasselbe enthalten: Ein GeoPackage ist eine SQLite-Datenbank, und die zu lesen heißt, ein Dateiformat mit B-Bäumen und Seitenverwaltung nachzubauen oder eine Abhängigkeit aufzunehmen. Ein Shapefile ist eine Folge von Binärsätzen mit festen Feldlängen – in derselben Größenordnung wie [`xlsx.mts`](scripts/import/xlsx.mts), das aus demselben Grund von Hand geschrieben ist.
-
-    **Die halbe Arbeit ist schon getan**, und das ist der eigentliche Punkt dieser Empfehlung:
-
-    - **Die Quelle läuft bereits.** [`gemeinden.mts`](scripts/import/gemeinden.mts) lädt `vg250-ew_12-31.ee.excel.ebenen.zip` aus demselben Verzeichnis. Die Geometrie-Fassung ist dieselbe Datei in einem anderen Format: `vg250-ew_12-31.utm32s.shape.ebenen.zip`. Gleicher Stand, gleicher AGS, gleiche Einwohnerzahlen – Register und Grenzen können deshalb nicht auseinanderlaufen. Zwei verschiedene Quellen für Namen und Grenzen wären eine Fehlerquelle, die niemand bemerkt.
-    - **Die Lizenz ist geklärt und der Quellenvermerk steht schon im Code** (`BKG_QUELLENVERMERK`). Es kommt keine neue Lizenzfrage hinzu – das war bei der Wahl BKG statt Destatis bereits der Ausschlussgrund.
-    - **ZIP-Leser vorhanden:** [`zip.mts`](scripts/import/zip.mts) (`extractFile`).
-    - **Koordinatenumrechnung vorhanden:** Die Shapes liegen in UTM32; [`geo-source.mts`](scripts/import/geo-source.mts) hat `utmToWgs84` samt Zonenerkennung – geschrieben wegen des Dresden-Fehlers.
-    - Zu bauen bleibt: ein `.shp`-Leser (Satztyp 5, Polygon: Teile und Punkte), ein `.dbf`-Leser für AGS und Namen, und ein Punkt-in-Polygon-Test nach dem Strahlverfahren. **Mehrteilige Gemeinden und Löcher sind dabei keine Theorie:** Ein Shapefile-Polygon besteht aus mehreren Ringen, und deren Umlaufrichtung unterscheidet Außengrenze von Loch. Wer nur den ersten Ring prüft, verliert Exklaven; wer die Richtung ignoriert, ordnet eine umschlossene Gemeinde der umgebenden zu. Beides kommt in Deutschland vor – gemeindefreie Gebiete und vollständig umschlossene Gemeinden sind der Normalfall, nicht die Ausnahme.
-
-    **Was der Test zusätzlich können muss:** Das umschließende Rechteck bleibt als Vorfilter nützlich – 10.754 Polygone für jeden von zehntausenden Punkten durchzurechnen ist unnötig. Es entscheidet dann aber nicht mehr, sondern sortiert nur die Kandidaten vor, und das Polygon entscheidet. Genau so verschwindet der Herdecke-Fehler.
-
-    **Der Prüfstein steht bereit:** 2e.7 ist erst gelöst, wenn ein Probelauf für die 202 schon importierten Gemeinden dieselbe Zuordnung ergibt wie der Einzelimport – und wenn Herdecke wieder bei etwa 7 Stellplätzen je 10.000 Einwohnern liegt statt bei 86. Beide Kennzahlen aus [CLAUDE.md](CLAUDE.md) sind dafür da.
-
-    **VG1000-EW (9 MB) ist die Rückfallebene, nicht die Abkürzung.** Generalisierte Grenzen weichen um einige hundert Meter ab – und Behindertenparkplätze liegen an Straßen, die oft genau die Gemeindegrenze sind. Für eine erste Durchrechnung taugt es, für den Bestand nicht.
-
-  - [ ] Zwei weitere Fundstücke aus dem Probelauf, die noch offen sind: „friedberg" und „friedberg-by" erhielten **dieselben** 123 Standorte – die Unterscheidung gleichnamiger Gemeinden greift noch nicht überall. Und Bad Kreuznach meldete landesweit 8 Standorte, einzeln geprüft aber null; auch das deutet auf fehlzugeordnete Nachbarn.
-  - [ ] Vier Länder liefen gar nicht durch (Baden-Württemberg, Schleswig-Holstein wegen Überlast; Berlin und Bremen sind Stadtstaaten und werden jetzt übersprungen).
-
-- [ ] 2e.7a Ursprüngliche Überlegung, weiterhin gültig als Rückfallebene: Bei 10.700 Gemeinden ist eine Overpass-Abfrage je Gemeinde nicht vertretbar – das wäre Missbrauch eines Gemeinschaftsdienstes. Bessere Wege: ein landesweiter Overpass-Durchlauf je Bundesland statt je Gemeinde, oder ein eigener Auszug aus einem Planet-Download. Vor dem Massenimport zu entscheiden, nicht danach.
+- [ ] 2e.6 Restliche Gemeinden aus OpenStreetMap – der Importer kann das bereits. **Die Liste steht seit 2e.10:** `data/_import-status.md` führt alle 10.754 Gemeinden mit Einwohnern, davon 10.550 als „noch nicht geprüft". Es fehlt jetzt nicht mehr die Liste und seit 2e.7 auch nicht mehr die Zuordnung, sondern ein Bezugsweg, der einen Gemeinschaftsdienst nicht überlastet – das ist 2e.11.
+- [ ] 2e.7a Ursprüngliche Überlegung, weiterhin gültig als Rückfallebene: Bei 10.700 Gemeinden ist eine Overpass-Abfrage je Gemeinde nicht vertretbar – das wäre Missbrauch eines Gemeinschaftsdienstes. Der landesweite Durchlauf je Bundesland steht (2e.7); **er ist aber unter Last unzuverlässig.** Am 2026-10-11 lieferten für Nordrhein-Westfalen 2 von 3 Teilabfragen nichts: 7 Objekte statt 14.025. Der Lauf schreibt in diesem Fall nichts mehr, aber vorangekommen ist er auch nicht. Der eigene Auszug aus einem Planet-Download bleibt deshalb auf der Liste (2e.11).
 
 - [~] 2e.10 **Die Arbeitsliste führt jetzt alle Gemeinden** – siehe [Erledigt.md](Erledigt.md). Offen bleibt eine Kennzeichnung, für die die Daten fehlen:
 
@@ -288,7 +270,7 @@ solche, die nur als Bild oder gedruckter Plan vorliegen.
   Der dafür vorgesehene Weg sind die **Bundesland-Auszüge von Geofabrik** (`.osm.pbf`, ODbL, täglich aktualisiert, mit stabilem JSON-Index und ausdrücklich für Automatisierung gedacht). Das ist der Unterschied, auf den es hier ankommt: Ein Download-Server ist für Massenbezug da, ein Abfragedienst nicht. Was vorher zu klären ist:
 
   - [ ] **Der Aufwand ist ehrlich zu benennen:** PBF ist Protocol Buffers mit zlib-komprimierten Blöcken und delta-kodierten Knoten – deutlich mehr als ein Shapefile-Leser. Dagegen steht, dass es die Abhängigkeit von einem Gemeinschaftsdienst vollständig auflöst und der Lauf beliebig wiederholbar wird, ohne jemandem zur Last zu fallen.
-  - [ ] **Erst nach 2e.7 entscheiden, nicht davor.** Solange die Zuordnung nicht stimmt, erzeugt ein schnellerer Bezug nur schneller falsche Daten – genau der Fall, der am 2026-10-10 zum Entfernen von 473 Gemeinden geführt hat.
+  - [x] **Erst nach 2e.7 entscheiden, nicht davor.** Solange die Zuordnung nicht stimmt, erzeugt ein schnellerer Bezug nur schneller falsche Daten – genau der Fall, der am 2026-10-10 zum Entfernen von 473 Gemeinden geführt hat. **Seit dem 2026-10-11 ist diese Bedingung erfüllt:** Die Zuordnung entscheidet die amtliche Grenzfläche, geprüft an 18.072 Standorten. Die Entscheidung über den Bezugsweg steht damit offen – aber nicht mehr blockiert.
   - [ ] **Attribution bleibt ODbL**, also unverändert gegenüber dem heutigen OSM-Bezug. Die Auszüge enthalten keine Benutzernamen und Changeset-IDs; für dieses Projekt ist das kein Verlust, sondern erspart die Frage nach personenbezogenen Daten.
   - [ ] Zwischenstufe, falls PBF zu viel ist: `npm run import:osm-state` beibehalten, aber mit Pausen und über die 16 Länder verteilt – der Lauf steht ja. Dann bleibt es bei 32 Abfragen für ganz Deutschland statt 10.754, und das ist vertretbar.
 

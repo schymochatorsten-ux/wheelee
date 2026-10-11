@@ -84,7 +84,14 @@ Zwei Kennzahlen finden solche Fehler zuverlässiger als Hinsehen:
 - **Streuung je Gemeinde.** Liegen die Parkplätze einer Gemeinde mehr als
   15 km auseinander, stimmt die Zuordnung nicht.
 - **Stellplätze je 10.000 Einwohner.** Der Median liegt bei rund 7. Das
-  Dreifache davon ist ein Fehler, ein Zwanzigstel auch.
+  Dreifache davon ist verdächtig, ein Zwanzigstel auch.
+
+  **Verdächtig heißt nicht falsch.** Im mittleren Ruhrgebiet liegen mehrere
+  Nachbarstädte bei 27 bis 40 – Witten, Hattingen, Herdecke, Bergisch
+  Gladbach –, und für Witten bestätigen zwei unabhängige Importwege dieselbe
+  Zahl. Dort ist OpenStreetMap einfach dichter erfasst. Die Kennzahl findet
+  Zuordnungsfehler, aber sie weiß nicht, wo fleißig kartiert wird: Sie
+  verlangt ein Nachsehen, kein Verwerfen.
 
 ## Entwicklungsserver
 

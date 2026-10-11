@@ -12,17 +12,28 @@
  *
  * Landesweit sind es **16 Abfragen für ganz Deutschland** statt 10.956. Der
  * Preis: Die Antwort sagt nicht, zu welcher Gemeinde ein Parkplatz gehört.
- * Deshalb wird je Bundesland zusätzlich die Liste der Gemeindegrenzen geholt
- * (eine zweite Abfrage) und die Zuordnung lokal gerechnet – siehe
- * `assign.mts`.
+ *
+ * **Die Zuordnung entscheidet die amtliche Grenzfläche** aus VG250-EW –
+ * [`grenzen.mts`](grenzen.mts). Die erste Fassung holte dafür je Bundesland
+ * die Gemeinderechtecke aus OpenStreetMap und nahm darin die nächstgelegene
+ * Mitte. Das ging nachweislich schief: In dicht besiedelten Gegenden
+ * überlappen die Rechtecke, und dabei gewinnt systematisch die kleinere
+ * Gemeinde. Herdecke bekam so 109 Standorte bis hinauf nach Witten, und die
+ * Daten für 473 Gemeinden mussten wieder entfernt werden. Seither entscheidet
+ * ein Punkt-in-Fläche-Test; das Rechteck sortiert nur noch vor.
+ *
+ * Nebeneffekt: Es ist jetzt **eine** Abfrage je Bundesland statt zwei, und
+ * die Zuordnung zum Register läuft über den amtlichen Gemeindeschlüssel statt
+ * über Namen – „Friedberg (Hessen)" und „Friedberg (Bayern)" bekamen zuvor
+ * dieselben 123 Standorte.
  */
 import fs from "node:fs/promises";
 import path from "node:path";
 import { createHash } from "node:crypto";
 import type { ParkingSpot } from "../../src/lib/types.js";
 import { projectRoot } from "./config.mjs";
-import { germanCities, toSlug } from "./german-cities.mjs";
-import { assignToMunicipality, type Municipality } from "./assign.mjs";
+import { allMunicipalities, germanCities, toSlug } from "./german-cities.mjs";
+import { loadGrenzen, type Grenzen } from "./grenzen.mjs";
 import { recordCity } from "./status.mjs";
 
 const USER_AGENT = "wheelee-import/0.1 (Behindertenparkplatz-Karte; Kontakt via Repository)";
@@ -146,62 +157,6 @@ async function overpass(query: string, label: string): Promise<OverpassElement[]
   throw new Error(`${label} fehlgeschlagen: ${problems.join("; ")}`);
 }
 
-/**
- * Alle Gemeindegrenzen eines Bundeslandes – Ausdehnung und Namen, ohne
- * Geometrie.
- *
- * `out bb tags` und **nicht** `out bb center tags`: Overpass liefert von
- * beiden Geometrieangaben nur eine, und zwar die letzte. Die erste Fassung
- * verlangte Rechteck *und* Mitte, bekam nur die Mitte – und verwarf
- * daraufhin alle 52 Gemeinden des Saarlands, ohne dass ein Fehler gemeldet
- * wurde. Die Mitte wird jetzt aus dem Rechteck gerechnet; für die Zuordnung
- * ist das genau genug und spart eine zweite Abfrage.
- */
-async function fetchMunicipalities(iso: string): Promise<Municipality[]> {
-  const query = `
-[out:json][timeout:600];
-area["ISO3166-2"="${iso}"]["admin_level"="4"]->.land;
-rel["admin_level"="8"]["boundary"="administrative"](area.land);
-out bb tags;
-`;
-
-  const elements = await overpass(query, "Gemeindegrenzen");
-  const municipalities: Municipality[] = [];
-
-  for (const element of elements) {
-    const bounds = element.bounds;
-    const name = element.tags?.name;
-    if (!bounds || !name) continue;
-
-    municipalities.push({
-      ags: element.tags?.["de:amtlicher_gemeindeschluessel"] ?? null,
-      name,
-      lat: (bounds.minlat + bounds.maxlat) / 2,
-      lng: (bounds.minlon + bounds.maxlon) / 2,
-      bounds: {
-        minLat: bounds.minlat,
-        minLng: bounds.minlon,
-        maxLat: bounds.maxlat,
-        maxLng: bounds.maxlon,
-      },
-    });
-  }
-
-  /*
-   * Ein Bundesland ohne Gemeindegrenzen gibt es nicht. Kommt nichts zurück,
-   * ist etwas an der Abfrage falsch – dann lieber abbrechen als alle
-   * Parkplätze als „nicht zuordenbar" wegzuwerfen.
-   */
-  if (municipalities.length === 0) {
-    throw new Error(
-      `Keine Gemeindegrenzen für ${iso} – die Antwort enthielt ${elements.length} Objekte, ` +
-        "aber keines mit Rechteck und Namen. Hat sich das Ausgabeformat geändert?",
-    );
-  }
-
-  return municipalities;
-}
-
 function spotQuery(iso: string, filters: readonly string[]): string {
   return `
 [out:json][timeout:900];
@@ -221,10 +176,23 @@ out center tags;
  * kleinere Abfragen sind immer noch unendlich viel besser als eine je
  * Gemeinde. Dass das nötig ist, hat sich beim ersten Probelauf gezeigt;
  * Nordrhein-Westfalen und Bayern sind für eine kombinierte Abfrage zu groß.
+ *
+ * **Ob die Antwort vollständig ist, gehört zum Ergebnis.** Scheitert eine der
+ * Teilabfragen, fehlen Parkplätze – und zwar ohne dass es den Daten ansehen
+ * könnte: Am 2026-10-11 lieferten unter Last 2 von 3 Teilen nichts, und übrig
+ * blieben 7 Objekte für ganz Nordrhein-Westfalen statt 14.025. Geschrieben
+ * hätte dieser Lauf Seed-Dateien mit einem Standort und sie als „fertig"
+ * vermerkt; die Gemeinde wäre damit auf Dauer erledigt gewesen. Deshalb wird
+ * ein unvollständiger Lauf ausgewertet, aber nicht gespeichert.
  */
-async function fetchSpots(iso: string): Promise<OverpassElement[]> {
+async function fetchSpots(
+  iso: string,
+): Promise<{ elements: OverpassElement[]; vollstaendig: boolean }> {
   try {
-    return await overpass(spotQuery(iso, TAG_FILTERS), "Parkplätze");
+    return {
+      elements: await overpass(spotQuery(iso, TAG_FILTERS), "Parkplätze"),
+      vollstaendig: true,
+    };
   } catch (combinedError) {
     console.log("    Kombinierte Abfrage gescheitert, zerlege sie nach Merkmal …");
 
@@ -238,16 +206,24 @@ async function fetchSpots(iso: string): Promise<OverpassElement[]> {
           byId.set(`${element.type}/${element.id}`, element);
         }
       } catch (error) {
-        // Ein leerer Teil ist möglich – nicht jedes Merkmal kommt überall vor.
+        /*
+         * Overpass meldet Überlast auch als leere Antwort mit HTTP 200;
+         * `overpass` wirft deshalb schon bei leerem Ergebnis. Ein
+         * gescheiterter Teil heißt hier also: Dieses Merkmal ist ungeprüft,
+         * nicht „kommt nicht vor".
+         */
         problems.push((error as Error).message);
       }
     }
 
     if (byId.size === 0) throw combinedError;
     if (problems.length > 0) {
-      console.log(`    ⚠ ${problems.length} von ${TAG_FILTERS.length} Teilabfragen ohne Ergebnis`);
+      console.log(
+        `    ⚠ ${problems.length} von ${TAG_FILTERS.length} Teilabfragen ohne Ergebnis – ` +
+          "der Lauf ist unvollständig",
+      );
     }
-    return [...byId.values()];
+    return { elements: [...byId.values()], vollstaendig: problems.length === 0 };
   }
 }
 
@@ -304,37 +280,52 @@ function toSpot(element: OverpassElement, slug: string, cityName: string): Parki
 }
 
 /**
- * Vergleichsschlüssel für Gemeindenamen.
+ * Stellplätze je 10.000 Einwohner melden – die Kennzahl aus
+ * [CLAUDE.md](../../CLAUDE.md), die den Zuordnungsfehler gefunden hat.
  *
- * **Nicht `toSlug` verwenden.** Der streicht Zusätze wie „am Main" oder „im
- * Schönbuch", damit Dateinamen kurz bleiben – als Suchschlüssel ist das
- * verhängnisvoll: „Weil am Rhein" und „Weil im Schönbuch" fielen beide auf
- * „weil" zusammen, und weil nur eine davon im Register steht, galt der
- * Treffer als eindeutig. Ergebnis war eine Datei mit Parkplätzen aus beiden
- * Orten, 157 km auseinander.
- *
- * Hier bleibt jedes Wort erhalten; nur Schreibweise und Zeichensetzung
- * werden vereinheitlicht.
+ * Sie steht hier und nicht erst in `validate.mts`, weil sie **vor** dem
+ * Schreiben gebraucht wird. Herdecke lag bei 86 statt bei 7, und das war
+ * nirgends zu sehen, bis 473 Gemeinden geschrieben waren und wieder entfernt
+ * werden mussten. Ein Probelauf soll die Zahl von selbst zeigen.
  */
-export function nameKey(name: string): string {
-  return name
-    .toLowerCase()
-    .replace(/ä/gu, "ae")
-    .replace(/ö/gu, "oe")
-    .replace(/ü/gu, "ue")
-    .replace(/ß/gu, "ss")
-    .replace(/[^a-z0-9]+/gu, " ")
-    .trim();
-}
+function dichteMelden(
+  byCity: Map<string, ParkingSpot[]>,
+  imRegister: Map<string, { name: string; population: number }>,
+): void {
+  const dichten: { name: string; wert: number; standorte: number }[] = [];
 
-/** Wie viele Gemeinden hat ein Bundesland laut amtlichem Verzeichnis? */
-async function countMunicipalities(stateName: string): Promise<number> {
-  try {
-    const raw = await fs.readFile(path.join(projectRoot, "data", "_gemeinden.json"), "utf8");
-    const register = JSON.parse(raw) as { gemeinden: { state: string }[] };
-    return register.gemeinden.filter((gemeinde) => gemeinde.state === stateName).length;
-  } catch {
-    return 0;
+  for (const [slug, spots] of byCity) {
+    const city = imRegister.get(slug);
+    if (!city || city.population <= 0) continue;
+    const plaetze = spots.reduce((sum, spot) => sum + (spot.spotCount ?? 1), 0);
+    dichten.push({
+      name: city.name,
+      wert: (plaetze / city.population) * 10_000,
+      standorte: spots.length,
+    });
+  }
+
+  if (dichten.length === 0) return;
+
+  const sortiert = [...dichten].sort((a, b) => a.wert - b.wert);
+  const median = sortiert[Math.floor(sortiert.length / 2)].wert;
+  const auffaellig = dichten.filter((eintrag) => eintrag.wert > median * 3);
+
+  console.log(`  Stellplätze je 10.000 Einwohner: Median ${median.toFixed(1)}`);
+
+  if (auffaellig.length === 0) {
+    console.log("  keine Gemeinde über dem Dreifachen des Medians");
+    return;
+  }
+
+  console.log(
+    `  ⚠️ ${auffaellig.length} Gemeinden über dem Dreifachen – ` +
+      "das ist das Muster des Zuordnungsfehlers:",
+  );
+  for (const eintrag of auffaellig.sort((a, b) => b.wert - a.wert).slice(0, 10)) {
+    console.log(
+      `     ${eintrag.name}: ${eintrag.wert.toFixed(1)} (${eintrag.standorte} Standorte)`,
+    );
   }
 }
 
@@ -348,7 +339,12 @@ async function hasSeed(slug: string): Promise<boolean> {
   }
 }
 
-async function importState(stateName: string, dryRun: boolean, overwrite: boolean): Promise<void> {
+async function importState(
+  stateName: string,
+  grenzen: Grenzen,
+  dryRun: boolean,
+  overwrite: boolean,
+): Promise<void> {
   const iso = BUNDESLAENDER[stateName];
   if (!iso) throw new Error(`Unbekanntes Bundesland: ${stateName}`);
 
@@ -359,66 +355,33 @@ async function importState(stateName: string, dryRun: boolean, overwrite: boolea
     return;
   }
 
-  const municipalities = await fetchMunicipalities(iso);
-  console.log(`  ${municipalities.length} Gemeindegrenzen`);
-
-  /*
-   * Plausibilitätsprüfung gegen das amtliche Verzeichnis.
-   *
-   * Findet die Abfrage deutlich weniger Gemeinden als es gibt, deckt sie
-   * das Land nicht ab – und jeder Parkplatz außerhalb der gefundenen
-   * Grenzen landet bei der nächstgelegenen, also irgendwo. Lieber abbrechen
-   * als Daten verteilen, die niemand mehr auseinanderhält.
-   */
-  const erwartet = await countMunicipalities(stateName);
-  if (erwartet > 0 && municipalities.length < erwartet * 0.5) {
-    throw new Error(
-      `Nur ${municipalities.length} Gemeindegrenzen für ${stateName}, erwartet wären rund ` +
-        `${erwartet}. Die Abfrage deckt das Land nicht ab – nichts geschrieben.`,
-    );
-  }
-  await sleep(5_000);
-
-  const elements = await fetchSpots(iso);
+  const { elements, vollstaendig } = await fetchSpots(iso);
   console.log(`  ${elements.length} Objekte`);
 
-  /** Nur Gemeinden, die im Register stehen, bekommen eine Seed-Datei. */
-  const imRegister = new Map(germanCities.map((city) => [city.slug, city]));
+  /** Nur Gemeinden oberhalb der Einwohnergrenze bekommen eine Seed-Datei. */
+  const anDerReihe = new Map(germanCities.map((city) => [city.slug, city]));
 
   /*
-   * Zuordnung OSM-Gemeinde → Registereintrag, **vorrangig über den
-   * amtlichen Gemeindeschlüssel**.
+   * Zuordnung Grenzfläche → Registereintrag über den **amtlichen
+   * Gemeindeschlüssel**, und nur darüber.
    *
-   * Über den Namen allein geht es schief, und zwar sichtbar: „Weil am
-   * Rhein" und „Weil der Stadt" ergeben beide den Slug „weil", „Weingarten
-   * (Baden)" und „Weingarten (Württemberg)" beide „weingarten". Die erste
-   * Fassung dieses Importers hat deren Parkplätze in je eine Datei geworfen
-   * – mit 160 km zwischen den Punkten. Das Register löst gleiche Namen
-   * bereits auf; hier muss nur der richtige Eintrag gefunden werden.
+   * Grenzen und Register kommen aus derselben Auslieferung des BKG; der
+   * Schlüssel passt deshalb immer. Über den Namen ging es schief, und zwar
+   * sichtbar: „Weil am Rhein" und „Weil der Stadt" ergeben beide den Slug
+   * „weil", „Friedberg (Hessen)" und „Friedberg (Bayern)" erhielten
+   * dieselben 123 Standorte – 300 km auseinander.
+   *
+   * Zugeordnet wird gegen **alle** Gemeinden, nicht nur gegen die oberhalb
+   * der Einwohnergrenze. Geschrieben wird nur für die, die an der Reihe sind
+   * – aber die Kennzahl unten soll auch die anderen zeigen. Genau dort saß
+   * der Fehler: Herdecke (22.772 Einwohner) stand nie zur Einfuhr an und
+   * fehlte deshalb in jeder Auswertung, während es die Standorte seiner
+   * Nachbarn sammelte.
    */
-  const byAgs = new Map(germanCities.filter((city) => city.ags).map((city) => [city.ags, city]));
-  const byName = new Map<string, (typeof germanCities)[number][]>();
-  for (const city of germanCities) {
-    const key = nameKey(city.name);
-    const list = byName.get(key);
-    if (list) list.push(city);
-    else byName.set(key, [city]);
-  }
-
-  /** Den Registereintrag zu einer OSM-Gemeinde finden. */
-  const findCityFor = (municipality: Municipality) => {
-    if (municipality.ags) {
-      const treffer = byAgs.get(municipality.ags);
-      if (treffer) return treffer;
-    }
-    const kandidaten = byName.get(nameKey(municipality.name)) ?? [];
-    // Bei mehreren gleichnamigen ohne Schlüssel lieber keine Zuordnung als
-    // die falsche – sonst landen zwei Städte in derselben Datei.
-    return kandidaten.length === 1 ? kandidaten[0] : undefined;
-  };
+  const byAgs = new Map(allMunicipalities.map((city) => [city.ags, city]));
 
   const byCity = new Map<string, ParkingSpot[]>();
-  const counts = { zugeordnet: 0, geraten: 0, ohneRegister: 0, verworfen: 0 };
+  const counts = { zugeordnet: 0, ausserhalb: 0, ohneGemeinde: 0, verworfen: 0 };
 
   for (const element of elements) {
     const lat = element.lat ?? element.center?.lat;
@@ -428,25 +391,28 @@ async function importState(stateName: string, dryRun: boolean, overwrite: boolea
       continue;
     }
 
-    const assignment = assignToMunicipality({ lat, lng }, municipalities);
-    if (!assignment) {
-      counts.verworfen += 1;
-      continue;
-    }
-    const city = findCityFor(assignment.municipality);
-    if (!city) {
-      counts.ohneRegister += 1;
+    /*
+     * Keine Fläche enthält den Punkt: Dann liegt er außerhalb Deutschlands
+     * oder auf einer Brücke über der Grenze. Das ist eine Antwort und wird
+     * so gezählt – geraten wird nicht mehr.
+     */
+    const gemeinde = grenzen.find(lat, lng);
+    if (!gemeinde) {
+      counts.ausserhalb += 1;
       continue;
     }
 
     /*
-     * Erst hier zählen, nicht vorher: Eine unsichere Zuordnung zu einer
-     * Gemeinde, die ohnehin nicht ins Register kommt, ist folgenlos. Die
-     * erste Fassung meldete 1.503 unsichere Treffer für Baden-Württemberg
-     * und erweckte damit den Eindruck eines großen Problems – tatsächlich
-     * landete davon fast nichts in einer Datei.
+     * Keine Gemeinde zu diesem Schlüssel: Das Verzeichnis führt nur
+     * Gemeinden mit Einwohnern, und gemeindefreie Gebiete – Seen, Wälder,
+     * Truppenübungsplätze – haben keine. Dort steht kein öffentlicher
+     * Behindertenparkplatz, den jemand erfassen könnte.
      */
-    if (assignment.confidence === "geraten") counts.geraten += 1;
+    const city = byAgs.get(gemeinde.ags);
+    if (!city) {
+      counts.ohneGemeinde += 1;
+      continue;
+    }
 
     const spot = toSpot(element, city.slug, city.name);
     if (!spot) {
@@ -460,37 +426,66 @@ async function importState(stateName: string, dryRun: boolean, overwrite: boolea
     else byCity.set(city.slug, [spot]);
   }
 
+  const fuerDateien = [...byCity.keys()].filter((slug) => anDerReihe.has(slug)).length;
+
   console.log(
-    `  zugeordnet: ${counts.zugeordnet} in ${byCity.size} Gemeinden · ` +
-      `ohne Registereintrag: ${counts.ohneRegister} · ` +
-      `unsicher zugeordnet: ${counts.geraten} · verworfen: ${counts.verworfen}`,
+    `  zugeordnet: ${counts.zugeordnet} in ${byCity.size} Gemeinden, davon ${fuerDateien} an der ` +
+      `Reihe · gemeindefreies Gebiet: ${counts.ohneGemeinde} · ` +
+      `außerhalb jeder Gemeindefläche: ${counts.ausserhalb} · verworfen: ${counts.verworfen}`,
   );
+
+  dichteMelden(byCity, new Map(allMunicipalities.map((city) => [city.slug, city])));
 
   if (dryRun) {
     console.log("  (Probelauf – nichts geschrieben)");
     return;
   }
 
+  /*
+   * Lieber kein Import als ein falscher: Ein unvollständiger Lauf würde
+   * Gemeinden als „fertig" vermerken, denen Parkplätze fehlen – und sie
+   * damit dauerhaft aus der Arbeitsliste nehmen.
+   */
+  if (!vollstaendig) {
+    throw new Error(
+      "Die Abfrage war unvollständig (gescheiterte Teilabfragen) – nichts geschrieben. " +
+        "Später erneut versuchen, Overpass war überlastet.",
+    );
+  }
+
   let geschrieben = 0;
   let uebersprungenVorhanden = 0;
 
+  let nochNichtAnDerReihe = 0;
+
   for (const [slug, spots] of byCity) {
-    const city = imRegister.get(slug)!;
+    const city = anDerReihe.get(slug);
+
+    /*
+     * Gemeinden unterhalb der Einwohnergrenze werden zugeordnet und
+     * ausgewertet, aber nicht geschrieben. Die Reihenfolge der Einfuhr ist
+     * eine Entscheidung (siehe `MIN_POPULATION`), kein Nebenprodukt eines
+     * landesweiten Laufs.
+     */
+    if (!city) {
+      nochNichtAnDerReihe += 1;
+      continue;
+    }
 
     /*
      * **Vorhandene Daten werden nicht überschrieben**, außer mit
      * `--ueberschreiben`.
      *
-     * Der Grund ist gemessen, nicht vermutet: Für Saarbrücken liefert der
-     * landesweite Lauf 150 Standorte, der Einzelimport 157 – rund 4,5 %
-     * weniger. Der Einzelimport schneidet an der **echten** Gemeindegrenze
-     * (`map_to_area`), der landesweite nur am umschließenden Rechteck mit
-     * nächster Mitte. Grenznahe Parkplätze landen dadurch bei der
-     * Nachbargemeinde.
+     * Gemessen wurde das vor dem Punkt-in-Fläche-Test: Für Saarbrücken
+     * lieferte der landesweite Lauf 150 Standorte, der Einzelimport 157 –
+     * rund 4,5 % weniger, weil der Einzelimport an der echten Gemeindegrenze
+     * schneidet (`map_to_area`) und der landesweite nur am umschließenden
+     * Rechteck. Diesen Grund gibt es nicht mehr; ob der Unterschied bleibt,
+     * ist aber **nicht nachgemessen**.
      *
-     * Daraus folgt die Arbeitsteilung: Der landesweite Lauf ist für
-     * **Breite** da – Gemeinden, zu denen es noch gar nichts gibt. Wo schon
-     * Daten liegen, ist der Einzelimport genauer und bleibt.
+     * Die Regel bleibt deshalb, bis sie es ist. Der landesweite Lauf ist für
+     * **Breite** da – Gemeinden, zu denen es noch gar nichts gibt. Einen
+     * geprüften Bestand ungeprüft zu ersetzen wäre der teurere Fehler.
      */
     if (!overwrite && (await hasSeed(slug))) {
       uebersprungenVorhanden += 1;
@@ -540,6 +535,9 @@ async function importState(stateName: string, dryRun: boolean, overwrite: boolea
       (uebersprungenVorhanden > 0
         ? ` · ${uebersprungenVorhanden} übersprungen, weil schon vorhanden ` +
           "(mit --ueberschreiben erzwingen)"
+        : "") +
+      (nochNichtAnDerReihe > 0
+        ? ` · ${nochNichtAnDerReihe} unter der Einwohnergrenze, nicht geschrieben`
         : ""),
   );
 }
@@ -574,6 +572,17 @@ async function main() {
    */
   const gescheitert: { name: string; grund: string }[] = [];
 
+  /*
+   * Die Grenzen **vor** der ersten Overpass-Abfrage laden. Fehlt die Quelle
+   * oder hat sich ihr Aufbau geändert, soll das auffallen, bevor ein
+   * Gemeinschaftsdienst eine große Abfrage für die Tonne rechnet.
+   */
+  const grenzen = await loadGrenzen();
+  console.log(
+    `${new Set(grenzen.gemeinden.map((gemeinde) => gemeinde.ags)).size.toLocaleString("de-DE")} ` +
+      "Gemeindeflächen aus VG250-EW geladen",
+  );
+
   for (const [index, name] of namen.entries()) {
     if (index > 0) {
       // Pause zwischen Bundesländern: Die Abfragen sind groß, und der Dienst
@@ -583,7 +592,7 @@ async function main() {
     }
 
     try {
-      await importState(name, dryRun, overwrite);
+      await importState(name, grenzen, dryRun, overwrite);
     } catch (error) {
       const grund = (error as Error).message.slice(0, 160);
       console.log(`  ❌ ${name}: ${grund}`);

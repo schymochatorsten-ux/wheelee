@@ -113,6 +113,59 @@ export function utmToWgs84(easting: number, northing: number, zone: number) {
   };
 }
 
+/**
+ * WGS84 nach UTM (ETRS89 / EPSG:25832 und 25833) – die Umkehrung von
+ * `utmToWgs84`.
+ *
+ * Gebraucht für den Punkt-in-Fläche-Test (ToDo 2e.7): Die Gemeindegrenzen aus
+ * VG250 liegen in UTM32, die Parkplätze in WGS84. Umgerechnet wird der
+ * **Punkt**, nicht die Grenze – es sind rund vier Millionen Grenzpunkte und
+ * einige zehntausend Parkplätze, und eine Umrechnung verändert Koordinaten
+ * immer ein wenig. Die Grenze soll bleiben, wie das Bundesamt sie liefert.
+ */
+export function wgs84ToUtm(lat: number, lng: number, zone: number) {
+  const a = 6378137.0;
+  const f = 1 / 298.257222101; // GRS80
+  const k0 = 0.9996;
+  const e2 = f * (2 - f);
+  const ep2 = e2 / (1 - e2);
+
+  const phi = (lat * Math.PI) / 180;
+  const centralMeridian = zone * 6 - 183;
+  const lambda = ((lng - centralMeridian) * Math.PI) / 180;
+
+  const sinPhi = Math.sin(phi);
+  const cosPhi = Math.cos(phi);
+  const t = Math.tan(phi) ** 2;
+  const c = ep2 * cosPhi ** 2;
+  const n = a / Math.sqrt(1 - e2 * sinPhi ** 2);
+  const d = lambda * cosPhi;
+
+  const m =
+    a *
+    ((1 - e2 / 4 - (3 * e2 ** 2) / 64 - (5 * e2 ** 3) / 256) * phi -
+      ((3 * e2) / 8 + (3 * e2 ** 2) / 32 + (45 * e2 ** 3) / 1024) * Math.sin(2 * phi) +
+      ((15 * e2 ** 2) / 256 + (45 * e2 ** 3) / 1024) * Math.sin(4 * phi) -
+      ((35 * e2 ** 3) / 3072) * Math.sin(6 * phi));
+
+  const easting =
+    500000 +
+    k0 *
+      n *
+      (d + ((1 - t + c) * d ** 3) / 6 + ((5 - 18 * t + t ** 2 + 72 * c - 58 * ep2) * d ** 5) / 120);
+
+  const northing =
+    k0 *
+    (m +
+      n *
+        Math.tan(phi) *
+        (d ** 2 / 2 +
+          ((5 - t + 9 * c + 4 * c ** 2) * d ** 4) / 24 +
+          ((61 - 58 * t + t ** 2 + 600 * c - 330 * ep2) * d ** 6) / 720));
+
+  return { easting, northing };
+}
+
 /** Ersten Punkt einer beliebigen Geometrie finden. */
 function firstPosition(coordinates: unknown): [number, number] | null {
   if (!Array.isArray(coordinates)) return null;

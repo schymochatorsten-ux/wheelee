@@ -7,6 +7,7 @@ import {
   parseGml,
   utmToWgs84,
   utmZoneFromSrs,
+  wgs84ToUtm,
   type GeoFeature,
 } from "./geo-source.mjs";
 
@@ -40,6 +41,41 @@ describe("utmToWgs84", () => {
     const falsch = utmToWgs84(411802.901489, 5653855.863525, 32);
     expect(isPlausibleWgs84(falsch.lat, falsch.lng)).toBe(true);
     expect(falsch.lng).toBeLessThan(9);
+  });
+});
+
+describe("wgs84ToUtm", () => {
+  it("trifft die Werte aus dem Hamburger WFS wieder", () => {
+    // Derselbe Punkt wie oben, diesmal von WGS84 aus. Als Ausgangswert dient
+    // das Ergebnis der Rückrechnung, nicht eine auf zwei Stellen gerundete
+    // Angabe – sonst prüft der Test die Rundung und nicht die Projektion.
+    const wgs84 = utmToWgs84(565596.793, 5934808.893, 32);
+    const result = wgs84ToUtm(wgs84.lat, wgs84.lng, 32);
+
+    expect(result.easting).toBeCloseTo(565596.793, 2);
+    expect(result.northing).toBeCloseTo(5934808.893, 2);
+  });
+
+  /*
+   * Der Rundlauf ist der eigentliche Test: Der Punkt-in-Fläche-Test (2e.7)
+   * rechnet jeden Parkplatz nach UTM32, die Gemeindegrenze bleibt amtlich.
+   * Weicht die Umrechnung ab, wandern grenznahe Parkplätze in die
+   * Nachbargemeinde – derselbe Fehler wie zuvor, nur unauffälliger.
+   */
+  it("kommt im Rundlauf auf unter einen Dezimeter zurück", () => {
+    for (const [lat, lng] of [
+      [47.5, 7.6], // Südwestecke, weit vom Mittelmeridian
+      [54.9, 8.4], // Nordfriesland
+      [51.03, 13.74], // Dresden, geographisch Zone 33
+      [48.137, 11.575], // München
+    ]) {
+      const { easting, northing } = wgs84ToUtm(lat, lng, 32);
+      const zurueck = utmToWgs84(easting, northing, 32);
+      // 1e-6 Grad sind rund 10 cm. Weiter reicht die abgeschnittene Reihe am
+      // Rand der Zone nicht – für eine Gemeindegrenze ist das belanglos.
+      expect(zurueck.lat).toBeCloseTo(lat, 6);
+      expect(zurueck.lng).toBeCloseTo(lng, 6);
+    }
   });
 });
 
