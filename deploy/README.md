@@ -66,23 +66,23 @@ sudo chown root:docker /etc/wheelee/hooks.json && sudo chmod 640 /etc/wheelee/ho
 
 Beim bestehenden Proxy Host `wheelee.de` unter **Custom Locations**:
 
-| Feld | Wert |
-| --- | --- |
-| Location | `/_hook` |
-| Scheme | `http` |
+| Feld                | Wert            |
+| ------------------- | --------------- |
+| Location            | `/_hook`        |
+| Scheme              | `http`          |
 | Forward Hostname/IP | `100.71.71.105` |
-| Forward Port | `3016` |
+| Forward Port        | `3016`          |
 
 ## In GitHub
 
 Repo → Settings → Webhooks → Add webhook
 
-| Feld | Wert |
-| --- | --- |
-| Payload URL | `https://wheelee.de/_hook/wheelee-deploy` |
-| Content type | `application/json` |
-| Secret | der Inhalt von `/opt/wheelee/.webhook-secret` |
-| Events | nur `push` |
+| Feld         | Wert                                          |
+| ------------ | --------------------------------------------- |
+| Payload URL  | `https://wheelee.de/_hook/wheelee-deploy`     |
+| Content type | `application/json`                            |
+| Secret       | der Inhalt von `/opt/wheelee/.webhook-secret` |
+| Events       | nur `push`                                    |
 
 ## Mitlesen
 

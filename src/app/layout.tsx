@@ -9,10 +9,24 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
+const BESCHREIBUNG =
+  "Findet den nächstgelegenen öffentlichen Behindertenparkplatz auf einer Karte – mobil, ohne Anmeldung.";
+
 export const metadata: Metadata = {
+  // Seit dem Deployment auf wheelee.de bekannt. Ohne diese Angabe macht
+  // Next aus jedem Vorschaubild einen relativen Pfad, und geteilte Links
+  // zeigen in Messengern nichts an.
+  metadataBase: new URL("https://wheelee.de"),
   title: "wheelee – Behindertenparkplätze",
-  description:
-    "Findet den nächstgelegenen öffentlichen Behindertenparkplatz auf einer Karte – mobil, ohne Anmeldung.",
+  description: BESCHREIBUNG,
+  openGraph: {
+    title: "wheelee – Behindertenparkplätze",
+    description: BESCHREIBUNG,
+    url: "https://wheelee.de",
+    siteName: "wheelee",
+    locale: "de_DE",
+    type: "website",
+  },
   icons: {
     icon: [
       { url: "/icon.svg", type: "image/svg+xml" },

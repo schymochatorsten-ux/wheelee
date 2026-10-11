@@ -2,9 +2,7 @@
   {
     "id": "wheelee-deploy",
     "execute-command": "/bin/bash",
-    "pass-arguments-to-command": [
-      { "source": "string", "name": "/opt/wheelee/deploy/deploy.sh" }
-    ],
+    "pass-arguments-to-command": [{ "source": "string", "name": "/opt/wheelee/deploy/deploy.sh" }],
     "command-working-directory": "/opt/wheelee",
     "response-message": "angenommen",
     "include-command-output-in-response": false,

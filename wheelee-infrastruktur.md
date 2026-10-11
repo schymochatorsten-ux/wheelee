@@ -8,13 +8,13 @@
 
 ## 1. Zwei Maschinen, klare Rollenteilung
 
-| | **Strato-VPS** | **nfnas** (UGREEN DXP2800, Debian 13) |
-|---|---|---|
-| Öffentliche IP | `212.227.160.5` | **keine** – hängt hinter einer FritzBox |
-| Tailscale-IP | `100.95.158.12` (`strato-vps`) | `100.71.71.105` (`nfnas`) |
-| LAN | – | `192.168.178.158` |
-| Rolle | **Eingangstür**: Nginx Proxy Manager (Ports 80/81/443), Let's-Encrypt-Zertifikate, Authelia (SSO), Beszel, nfntfy | **Rechenzentrum**: alle Anwendungen laufen hier, je Tool ein eigenes Compose-Projekt unter `/opt/<tool>` |
-| Ressourcen | knapp (RAM ~330 MB frei) | Intel N100, 32 GB RAM, 3,6 TiB btrfs-RAID1 auf `/srv/pool` |
+|                | **Strato-VPS**                                                                                                    | **nfnas** (UGREEN DXP2800, Debian 13)                                                                    |
+| -------------- | ----------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Öffentliche IP | `212.227.160.5`                                                                                                   | **keine** – hängt hinter einer FritzBox                                                                  |
+| Tailscale-IP   | `100.95.158.12` (`strato-vps`)                                                                                    | `100.71.71.105` (`nfnas`)                                                                                |
+| LAN            | –                                                                                                                 | `192.168.178.158`                                                                                        |
+| Rolle          | **Eingangstür**: Nginx Proxy Manager (Ports 80/81/443), Let's-Encrypt-Zertifikate, Authelia (SSO), Beszel, nfntfy | **Rechenzentrum**: alle Anwendungen laufen hier, je Tool ein eigenes Compose-Projekt unter `/opt/<tool>` |
+| Ressourcen     | knapp (RAM ~330 MB frei)                                                                                          | Intel N100, 32 GB RAM, 3,6 TiB btrfs-RAID1 auf `/srv/pool`                                               |
 
 **Merksatz:** Alles Neue läuft auf dem NAS. Der VPS terminiert nur TLS und
 proxyt weiter. Auf dem VPS wird nichts mehr deployt.
@@ -40,7 +40,7 @@ Router und keinen offenen Port am Heimanschluss** – das ist bewusst so und ble
 1. **Port wird an die Tailscale-Adresse gebunden, nie an `0.0.0.0`:**
    ```yaml
    ports:
-     - "100.71.71.105:3015:3000"   # links Tailscale+Hostport, rechts Containerport
+     - "100.71.71.105:3015:3000" # links Tailscale+Hostport, rechts Containerport
    ```
    Gegenprobe muss **fehlschlagen**: `curl http://192.168.178.158:3015`
    Damit ist die App ausschließlich durch den Tunnel erreichbar – nicht aus dem
@@ -56,14 +56,14 @@ Router und keinen offenen Port am Heimanschluss** – das ist bewusst so und ble
 
 ---
 
-## 4. wheelee.de ist eine *eigene* Domain, nicht `*.nfhub.de`
+## 4. wheelee.de ist eine _eigene_ Domain, nicht `*.nfhub.de`
 
 Das ist der wichtigste Unterschied zu allen bisherigen Tools:
 
 - **Authelia greift nicht.** Die SSO-Regel lautet `*.nfhub.de → one_factor`.
   `wheelee.de` fällt nicht darunter. Wheelee braucht also **seinen eigenen Login**
   (so wie nfcloud, nfmail und nftravel es auch machen) – im NPM bleibt der
-  *Advanced*-Tab leer („öffentlich", Variante 3b in
+  _Advanced_-Tab leer („öffentlich", Variante 3b in
   [../TOOL_HINZUFUEGEN.md](../TOOL_HINZUFUEGEN.md)).
 - **Eigenes Zertifikat.** NPM holt pro Proxy Host ein Let's-Encrypt-Zertifikat;
   für `wheelee.de` **und** `www.wheelee.de` beide Namen in denselben Host eintragen.
@@ -78,13 +78,13 @@ Das ist der wichtigste Unterschied zu allen bisherigen Tools:
 
 ## 5. Wer macht was
 
-| Aufgabe | Wer |
-|---|---|
-| DNS bei Torstens Registrar setzen (`@`, `www` → `212.227.160.5`) | **Torsten** |
-| Proxy Host im NPM (`http://212.227.160.5:81`) anlegen, SSL + Force SSL | **Niklas** (NPM-Zugang ist nicht geteilt) |
-| `/opt/wheelee` anlegen, Repo klonen, `docker compose up -d --build` | **Niklas** am NAS, bis Torsten einen eigenen Zugang hat |
-| Webhook-Endpunkt + Deploy-Skript | gemeinsam, siehe unten |
-| Kachel auf `nfhub.de` (Homepage) | **Niklas**, optional |
+| Aufgabe                                                                | Wer                                                     |
+| ---------------------------------------------------------------------- | ------------------------------------------------------- |
+| DNS bei Torstens Registrar setzen (`@`, `www` → `212.227.160.5`)       | **Torsten**                                             |
+| Proxy Host im NPM (`http://212.227.160.5:81`) anlegen, SSL + Force SSL | **Niklas** (NPM-Zugang ist nicht geteilt)               |
+| `/opt/wheelee` anlegen, Repo klonen, `docker compose up -d --build`    | **Niklas** am NAS, bis Torsten einen eigenen Zugang hat |
+| Webhook-Endpunkt + Deploy-Skript                                       | gemeinsam, siehe unten                                  |
+| Kachel auf `nfhub.de` (Homepage)                                       | **Niklas**, optional                                    |
 
 Torsten hat **keinen** SSH-Zugang zum NAS und **keinen** NPM-Zugang. Wenn er selbst
 deployen soll, ist der Webhook genau der richtige Weg – oder ein eigener
@@ -97,10 +97,11 @@ Benutzer auf dem NAS mit Rechten nur auf `/opt/wheelee`.
 Der GitHub-Webhook kommt **aus dem Internet** und muss daher am VPS landen – das
 NAS ist von außen nicht erreichbar. Zwei brauchbare Varianten:
 
-**A) Webhook-Empfänger auf dem NAS, über NPM veröffentlicht** *(empfohlen)*
+**A) Webhook-Empfänger auf dem NAS, über NPM veröffentlicht** _(empfohlen)_
 `deploy.wheelee.de` oder ein Pfad wie `wheelee.de/_hook` → NPM → `100.71.71.105:3016`
 → kleiner Listener (z. B. `adnanh/webhook`), der bei validierter Signatur
 `git pull && docker compose up -d --build` in `/opt/wheelee` ausführt.
+
 - GitHub-Secret (`X-Hub-Signature-256`) **zwingend** prüfen.
 - Nur `refs/heads/main` akzeptieren.
 - Der Listener braucht Zugriff auf den Docker-Socket oder ruft per SSH-Key ein
@@ -109,6 +110,7 @@ NAS ist von außen nicht erreichbar. Zwei brauchbare Varianten:
 **B) Pull statt Push** – kein offener Endpunkt
 Ein systemd-Timer auf dem NAS prüft minütlich `git ls-remote` auf eine neue
 `main`-Commit-ID und baut nur bei Änderung neu.
+
 - Deutlich kleinere Angriffsfläche, kein Secret, kein Port, keine Subdomain.
 - Verzögerung bis ~1 min. Für unsere Zwecke meist völlig ausreichend.
 
