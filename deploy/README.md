@@ -20,6 +20,12 @@ und einen halb zusammengeführten Baum hinterlassen, der dann gebaut wird. Der
 Server hat keine eigenen Änderungen zu schützen; er soll exakt den Stand von
 `origin/main` zeigen.
 
+**Warum `bash deploy.sh` und nicht das Skript direkt:** Das Repo wird unter
+Windows gepflegt, und dort gibt es kein Ausführbar-Bit. Ein `chmod +x` auf
+dem NAS hält nur bis zum nächsten Pull, der die Datei ersetzt – der zweite
+Deploy scheiterte genau daran mit „permission denied". Der Aufruf über
+`bash` ist unabhängig davon.
+
 Das Secret steht **nicht** im Repo. Die Datei hier ist eine Vorlage; die
 echte Konfiguration liegt unter `/etc/wheelee/hooks.json` – außerhalb des
 Arbeitsbaums, damit kein Deploy sie überschreibt.
@@ -34,7 +40,6 @@ sudo sed "s/__SECRET__/$(sudo cat /opt/wheelee/.webhook-secret)/" \
   /opt/wheelee/deploy/hooks.template.json | sudo tee /etc/wheelee/hooks.json >/dev/null
 sudo chmod 600 /etc/wheelee/hooks.json
 
-chmod +x /opt/wheelee/deploy/deploy.sh
 sudo cp /opt/wheelee/deploy/wheelee-webhook.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable --now wheelee-webhook
