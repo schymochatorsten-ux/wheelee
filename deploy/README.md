@@ -3,7 +3,7 @@
 Ein Push auf `origin/main` löst auf dem NAS einen Neubau aus. Der Weg:
 
 ```
-GitHub → https://wheelee.de/_hook/hooks/wheelee-deploy
+GitHub → https://wheelee.de/_hook/wheelee-deploy
        → VPS: Nginx Proxy Manager (Custom Location /_hook)
        → Tailscale → NAS 100.71.71.105:3016
        → webhook prüft Signatur und Branch
@@ -44,11 +44,18 @@ Prüfen:
 
 ```bash
 systemctl status wheelee-webhook --no-pager
-curl -s -o /dev/null -w '%{http_code}\n' http://100.71.71.105:3016/_hook/hooks/wheelee-deploy
+curl -s -o /dev/null -w '%{http_code}\n' http://100.71.71.105:3016/_hook/wheelee-deploy
 ```
 
 Erwartet: `active (running)` und `200` (ohne gültige Signatur lehnt der
 Dienst die Ausführung ab, antwortet aber).
+
+Die Datei muss für den Dienst lesbar sein – sie gehört `root`, der Dienst
+läuft als `niklas`:
+
+```bash
+sudo chown root:docker /etc/wheelee/hooks.json && sudo chmod 640 /etc/wheelee/hooks.json
+```
 
 ## Im NPM
 
@@ -67,7 +74,7 @@ Repo → Settings → Webhooks → Add webhook
 
 | Feld | Wert |
 | --- | --- |
-| Payload URL | `https://wheelee.de/_hook/hooks/wheelee-deploy` |
+| Payload URL | `https://wheelee.de/_hook/wheelee-deploy` |
 | Content type | `application/json` |
 | Secret | der Inhalt von `/opt/wheelee/.webhook-secret` |
 | Events | nur `push` |
