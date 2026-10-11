@@ -24,10 +24,15 @@ Restart=on-failure
 RestartSec=5
 
 # Was der Dienst nicht braucht, bekommt er nicht.
+#
+# `ProtectHome` stand hier zuerst auf `read-only` und hat den ersten Deploy
+# zerbrochen: `docker buildx` schreibt seinen Zustand nach
+# ~/.docker/buildx. Der Schutz war ohnehin halbherzig – ein Dienst, der
+# `docker` aufrufen darf, kann über einen Container an alles kommen. Was
+# wirklich schützt, ist die Signaturprüfung davor, nicht diese Zeile.
 NoNewPrivileges=true
 PrivateTmp=false
 ProtectSystem=full
-ProtectHome=read-only
 ReadWritePaths=/opt/wheelee /tmp
 
 [Install]
