@@ -1,0 +1,34 @@
+# wheelee auf dem NAS (nfnas).
+#
+# Erreichbar ausschließlich über den Tailscale-Tunnel: Der Port wird an
+# 100.71.71.105 gebunden, nicht an 0.0.0.0. Damit ist die App weder aus dem
+# Heimnetz noch aus dem Internet direkt zu erreichen – den Weg nach außen
+# öffnet allein der Nginx Proxy Manager auf dem VPS.
+#
+#   Gegenprobe, die fehlschlagen MUSS:
+#     curl http://192.168.178.158:3015
+#
+# Kein `networks:`-Block: Das NPM-Netz existiert nur auf dem VPS. Forward-Ziel
+# im NPM ist deshalb 100.71.71.105:3015, nie ein Containername.
+
+services:
+  wheelee:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: wheelee:local
+    container_name: wheelee
+    restart: unless-stopped
+    ports:
+      - "100.71.71.105:3015:3000"
+    environment:
+      - NODE_ENV=production
+      - TZ=Europe/Berlin
+    # Kein Volume: Die Parkplatzdaten sind statisch ins Bundle importiert,
+    # die App schreibt nichts. Ein Deploy ist deshalb immer ein Neubau und
+    # kann nichts verlieren.
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

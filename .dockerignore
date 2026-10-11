@@ -1,0 +1,34 @@
+# Was nicht in den Bauvorgang gehört.
+#
+# Jede Datei hier spart Übertragungszeit beim Bauen – und `node_modules`
+# auszuschließen ist Pflicht: Ein Windows-Baum würde die im Container
+# installierten Pakete überschreiben.
+
+node_modules
+.next
+out
+build
+
+.git
+.github
+
+# Prüf- und Zwischenergebnisse
+coverage
+test-results
+playwright-report
+blob-report
+.playwright
+data/raw
+
+# Umgebung und lokale Einstellungen
+.env*
+.vscode
+.idea
+.DS_Store
+
+# Dokumentation – ändert sich oft, geht den Container nichts an
+*.md
+!README.md
+
+# Quell-PDFs der Importkette (nur für die Skripte, nicht für die App)
+Parkplätze
