@@ -129,7 +129,7 @@ const ICON_BUTTON =
 
 /** Die schwebenden Flächen über der Karte – einheitlich, damit es ruhig wirkt. */
 const PANEL =
-  "pointer-events-auto rounded-2xl border border-black/5 bg-white/90 shadow-lg ring-1 ring-black/5 backdrop-blur-md dark:border-white/10 dark:bg-neutral-900/90 dark:ring-white/10";
+  "pointer-events-auto rounded-xl border border-black/5 bg-white/90 shadow-md ring-1 ring-black/5 backdrop-blur-md dark:border-white/10 dark:bg-neutral-900/90 dark:ring-white/10";
 
 export function NearestBar({
   candidates,
@@ -217,7 +217,11 @@ export function NearestBar({
   const grouped = destinationLabel !== null;
 
   return (
-    <div className={`${PANEL} max-h-[46vh] overflow-y-auto p-2.5`}>
+    // `id`, damit der E2E-Test die Leiste findet, ohne sich an eine
+    // Gestaltungsklasse zu hängen: Er suchte zuvor nach `rounded-2xl` und
+    // schlug fehl, als die Ecken schlanker wurden – ein Fehlalarm über eine
+    // Änderung, die nichts kaputt gemacht hatte.
+    <div id="parkplatz-leiste" className={`${PANEL} max-h-[46vh] overflow-y-auto p-2`}>
       <div className="flex items-start gap-1">
         {/*
           Der ganze Textblock ist der Knopf „auf der Karte zeigen". Das ist die
@@ -231,15 +235,15 @@ export function NearestBar({
           className="-m-1 flex min-w-0 flex-1 items-center gap-2 rounded-xl p-1 text-left transition-colors hover:bg-neutral-100/70 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:hover:bg-neutral-800/70"
         >
           <span className="min-w-0 flex-1">
-            <span className="block text-[11px] font-medium tracking-wide text-neutral-500 uppercase">
+            <span className="block truncate text-[10px] font-medium tracking-wide text-neutral-500 uppercase">
               {destinationLabel
                 ? `Parkplatz bei ${destinationLabel}`
                 : target === nearest
                   ? "Nächster Behindertenparkplatz"
                   : "Gewähltes Ziel"}
             </span>
-            <span className="block truncate font-semibold">{spotTitle(target)}</span>
-            <span className="block text-sm text-neutral-600 dark:text-neutral-400">
+            <span className="block truncate text-sm font-semibold">{spotTitle(target)}</span>
+            <span className="block truncate text-xs text-neutral-600 dark:text-neutral-400">
               {spotMeta(target)}
             </span>
           </span>
@@ -259,13 +263,13 @@ export function NearestBar({
         </button>
       </div>
 
-      <div className="mt-2.5 flex gap-2">
+      <div className="mt-1.5 flex gap-1.5">
         {href && (
           <a
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex min-h-12 flex-1 items-center justify-center rounded-xl bg-blue-700 px-4 text-center font-medium text-white transition-colors hover:bg-blue-800 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 focus-visible:outline-none"
+            className="flex min-h-11 flex-1 items-center justify-center rounded-lg bg-blue-700 px-3 text-center text-sm font-medium text-white transition-colors hover:bg-blue-800 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 focus-visible:outline-none"
           >
             {mapsLabel(mapsTarget).replace("In ", "Navigation: ")}
           </a>
@@ -273,7 +277,7 @@ export function NearestBar({
         <button
           type="button"
           onClick={() => onShowDetails(target)}
-          className="min-h-12 shrink-0 rounded-xl px-3 text-sm font-medium text-neutral-700 transition-colors hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-neutral-300 dark:hover:bg-neutral-800"
+          className="min-h-11 shrink-0 rounded-lg px-2.5 text-sm font-medium text-neutral-700 transition-colors hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-neutral-300 dark:hover:bg-neutral-800"
         >
           Details
         </button>
@@ -332,7 +336,7 @@ export function NearestBar({
             onClick={() => setExpanded((previous) => !previous)}
             aria-expanded={expanded}
             aria-controls="parkplatz-auswahl"
-            className="mt-2 min-h-11 w-full rounded-xl text-sm font-medium text-blue-800 transition-colors hover:bg-blue-50 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300 dark:hover:bg-neutral-800"
+            className="mt-1 min-h-11 w-full rounded-lg text-xs font-medium text-blue-800 transition-colors hover:bg-blue-50 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300 dark:hover:bg-neutral-800"
           >
             {expanded ? "Auswahl schließen" : `Weitere in der Nähe (${alternatives.length})`}
           </button>

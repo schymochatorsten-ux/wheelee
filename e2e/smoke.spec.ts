@@ -153,7 +153,7 @@ test.describe("wheelee", () => {
       const list = document.querySelector("#parkplatz-auswahl");
       if (!map || !list) return null;
 
-      const panel = list.closest('div[class*="rounded-2xl"]');
+      const panel = document.querySelector("#parkplatz-leiste");
       if (!panel) return null;
 
       const frame = map.getBoundingClientRect();

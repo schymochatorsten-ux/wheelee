@@ -68,8 +68,15 @@ function CloseIcon() {
   );
 }
 
+/**
+ * Die schwebenden Flächen über der Karte.
+ *
+ * Bewusst zurückhaltend: dünner Rand, halbdurchsichtig, weicher Schatten.
+ * Alles, was hier kräftiger wird, nimmt der Karte Aufmerksamkeit weg – und
+ * die Karte ist das, was beantwortet, ob ein Parkplatz erreichbar ist.
+ */
 const PANEL =
-  "pointer-events-auto rounded-2xl border border-black/5 bg-white/90 shadow-lg ring-1 ring-black/5 backdrop-blur-md dark:border-white/10 dark:bg-neutral-900/90 dark:ring-white/10";
+  "pointer-events-auto rounded-xl border border-black/5 bg-white/90 shadow-md ring-1 ring-black/5 backdrop-blur-md dark:border-white/10 dark:bg-neutral-900/90 dark:ring-white/10";
 
 const ICON_BUTTON =
   "flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-neutral-500 transition-colors hover:bg-neutral-100 hover:text-neutral-900 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:hover:bg-neutral-800 dark:hover:text-neutral-100";
@@ -176,17 +183,15 @@ export function DestinationSearch({ destination, onChoose, onClear }: Destinatio
 
   if (destination && !open) {
     return (
-      <div className={`${PANEL} flex items-center gap-1 p-1.5 pl-3`}>
-        <span className="min-w-0 flex-1 truncate text-sm">
-          <span className="block text-[11px] font-medium tracking-wide text-neutral-500 uppercase">
-            Ziel
-          </span>
-          <span className="block truncate font-medium">{destination.label}</span>
+      <div className={`${PANEL} flex items-center gap-1 self-start p-1 pl-2.5`}>
+        <span className="min-w-0 flex-1 truncate text-xs">
+          <span className="text-neutral-500">Ziel: </span>
+          <span className="font-medium">{destination.label}</span>
         </span>
         <button
           type="button"
           onClick={() => setOpen(true)}
-          className="min-h-11 shrink-0 rounded-xl px-3 text-sm font-medium text-blue-800 transition-colors hover:bg-blue-50 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300 dark:hover:bg-neutral-800"
+          className="min-h-11 shrink-0 rounded-lg px-2.5 text-xs font-medium text-blue-800 transition-colors hover:bg-blue-50 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300 dark:hover:bg-neutral-800"
         >
           Ändern
         </button>
@@ -198,11 +203,19 @@ export function DestinationSearch({ destination, onChoose, onClear }: Destinatio
   }
 
   if (!open) {
+    /*
+     * Zusammengeklappt nur eine kleine Schaltfläche oben links (auf Wunsch,
+     * 2026-10-11). Vorher lief sie über die volle Breite und nahm damit so
+     * viel Platz ein wie der Parkplatzvorschlag darüber – für eine
+     * Möglichkeit, die die meisten gar nicht brauchen. `self-start` hält sie
+     * schmal, obwohl die Spalte darüber streckt; die Trefferfläche bleibt
+     * mit 44 px Höhe unverändert.
+     */
     return (
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className={`${PANEL} flex min-h-11 w-full items-center gap-2.5 px-3.5 text-left text-sm text-neutral-500 transition-colors hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100`}
+        className={`${PANEL} flex min-h-11 w-auto max-w-full items-center gap-2 self-start px-3 text-left text-xs font-medium text-neutral-600 transition-colors hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100`}
       >
         <SearchIcon />
         Wohin willst du?

@@ -10,7 +10,7 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand:** 106 Einträge auf oberster Ebene (105 `[x]` plus 2e.10 als `[~]`,
+**Stand:** 107 Einträge auf oberster Ebene (106 `[x]` plus 2e.10 als `[~]`,
 dessen gebauter Teil hier steht und dessen offener Rest in `ToDos.md` bleibt),
 zuletzt ergänzt 2026-10-11. Gezählt werden die Einträge der obersten Ebene; die
 Unterpunkte darunter sind Begründung, keine eigenen Aufgaben.
@@ -325,6 +325,14 @@ und was liegt dazwischen?"
 ---
 
 ## 9. Darstellung und Bedienung
+
+- [x] 9.15 **Alles außer Karte und Einstellungen kleiner** (2026-10-11, auf Wunsch). Die Startseite zeigte ihre Hinweise in derselben Schriftgröße wie die Inhalte, für die man sie öffnet. Auf einem Telefon kostete das vor der ersten Geste rund ein Fünftel des Bildschirms – und zwar genau den oberen Teil, in dem die Karte zeigt, wo man selbst steht.
+
+  **Was kleiner wurde:** Überschrift und Reiter (14 px statt 18, schmalere Polsterung), Statuszeile (12 px), der Parkplatzvorschlag samt Auswahlliste, und die Flächen selbst sind ruhiger (`rounded-xl`, `shadow-md` statt `rounded-2xl`, `shadow-lg`). **Was gleich blieb:** die Karte, die Einstellungen – und jede Trefferfläche. Alle Knöpfe behalten 44 px Höhe (ToDo 9.8); schlanker heißt weniger Fläche **um** die Knöpfe, nicht kleinere Knöpfe. Wer die App einhändig im Auto bedient, merkt den Unterschied sofort, und zwar negativ.
+
+  - **„Wohin willst du?" steht jetzt oben links und ist klein** (ausdrücklicher Wunsch). Vorher lief die Zielsuche über die volle Breite und nahm so viel Platz ein wie der Parkplatzvorschlag darüber – für eine Möglichkeit, die die meisten gar nicht brauchen: Wer die App öffnet, sucht meistens hier und jetzt. Sie steht deshalb **über** dem Vorschlag, aber nur so breit wie ihr Text.
+  - **Statuszeile und „Erneut" teilen sich eine Zeile.** Bei abgelehntem Standort – dem Fall, in dem die Karte am meisten zählt, weil es keinen Vorschlag gibt – war die Kopfzeile 125 px hoch; jetzt sind es 104, mit Standort rund 80. Der Knopf heißt sichtbar nur noch „Erneut", weil die Meldung daneben den Grund nennt; vorgelesen bleibt es „Standort erneut versuchen".
+  - **Ein E2E-Test hing an einer Gestaltungsklasse.** Er suchte die Vorschlagsleiste über `div[class*="rounded-2xl"]` und schlug fehl, sobald die Ecken schlanker wurden – ein Fehlalarm über eine Änderung, die nichts kaputt gemacht hatte. Die Leiste hat jetzt eine `id`, und der Test fragt danach. **Ein Test, der an der Optik hängt, prüft die Optik** – gemeint war aber, ob von der Karte genug übrig bleibt.
 
 - [x] 9.14 **Keine Bestandszahlen mehr in der Kopfzeile** (2026-10-11, auf Wunsch). Unter der Überschrift stand „209 Städte", in der Statuszeile „18.072 Parkplätze in 209 Städten". Beides beantwortet eine Frage, die niemand stellt, der gerade einen Parkplatz sucht – und beides nahm auf dem Telefon zwei Zeilen direkt über der Karte ein.
   - **Die Zahlen sind nicht verloren**, nur nicht mehr im Weg: Sie stehen in der Listenansicht unter „Woher die Daten kommen" und in `data/_abdeckung.md`, also dort, wo jemand sie wirklich nachschlägt.

@@ -354,7 +354,12 @@ export function MapSection({ initialNearby, cities, defaultCity }: MapSectionPro
   return (
     // Die Bildschirmhöhe setzt das Layout; hier nur den Rest ausfüllen.
     <div className="flex min-h-0 flex-1 flex-col">
-      <header className="shrink-0 border-b border-neutral-200 px-4 py-3 dark:border-neutral-800">
+      {/*
+        Die Kopfzeile ist so klein wie möglich gehalten (auf Wunsch,
+        2026-10-11). Sie trägt nichts bei, was beim Parkplatzsuchen hilft –
+        jeder Millimeter hier fehlt der Karte, und die Karte ist die App.
+      */}
+      <header className="shrink-0 border-b border-neutral-200 px-3 py-1.5 dark:border-neutral-800">
         {/*
           `flex-wrap`, damit bei großer Schrift die Ansichtswahl in die
           nächste Zeile rutscht, statt die Seite breiter zu machen: Bei 200 %
@@ -363,7 +368,7 @@ export function MapSection({ initialNearby, cities, defaultCity }: MapSectionPro
           (ToDo 9.8). `min-w-0` erlaubt der Überschrift zu schrumpfen – ohne
           das gewinnt sie den Platzstreit und schiebt die Reiter hinaus.
         */}
-        <div className="flex flex-wrap items-baseline justify-between gap-3">
+        <div className="flex flex-wrap items-center justify-between gap-2">
           {/* `hyphens-auto` greift, weil <html lang="de"> gesetzt ist:
               „Behindertenparkplätze" passt bei großer Schrift sonst in keine
               Telefonzeile und würde abgeschnitten. */}
@@ -377,13 +382,13 @@ export function MapSection({ initialNearby, cities, defaultCity }: MapSectionPro
             kommen" und in `data/_abdeckung.md`, also dort, wo jemand sie
             wirklich nachschlägt.
           */}
-          <h1 className="min-w-0 text-lg font-semibold break-words hyphens-auto">
+          <h1 className="min-w-0 text-sm font-semibold break-words hyphens-auto">
             Behindertenparkplätze
           </h1>
           <div
             role="tablist"
             aria-label="Ansicht wählen"
-            className="flex shrink-0 overflow-hidden rounded-lg border border-neutral-300 text-sm dark:border-neutral-700"
+            className="flex shrink-0 overflow-hidden rounded-lg border border-neutral-200 text-xs dark:border-neutral-800"
           >
             {VISIBLE_VIEWS.map((option) => (
               <button
@@ -392,7 +397,10 @@ export function MapSection({ initialNearby, cities, defaultCity }: MapSectionPro
                 role="tab"
                 aria-selected={view === option}
                 onClick={() => setView(option)}
-                className={`min-h-11 px-3 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none ${
+                // `min-h-11` bleibt: 44 px ist die Mindestgröße, die sich
+                // einhändig treffen lässt (ToDo 9.8). Schlanker heißt hier
+                // weniger Fläche drumherum, nicht kleinere Knöpfe.
+                className={`min-h-11 px-2.5 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none ${
                   view === option
                     ? "bg-blue-700 text-white"
                     : "bg-white text-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
@@ -422,27 +430,42 @@ export function MapSection({ initialNearby, cities, defaultCity }: MapSectionPro
           keine Bestandszahlen, und die Standortsuche nebenher zu melden lenkt
           nur ab.
         */}
+        {/*
+          Statuszeile und „erneut versuchen" stehen in **einer** Zeile. Vorher
+          waren es zwei, und bei abgelehntem Standort – dem Fall, in dem die
+          Karte am meisten zählt, weil es keinen Vorschlag gibt – war die
+          Kopfzeile dadurch 125 px hoch statt 80.
+        */}
         {view !== "settings" && (
-          <p aria-live="polite" className="mt-1.5 text-sm text-neutral-600 dark:text-neutral-400">
-            {geo.status === "locating" && "Standort wird ermittelt …"}
-            {geo.status === "ready" &&
-              (nearest
-                ? `Nächster Parkplatz: ${nearest.street ?? nearest.label} – ${formatDistance(nearest.distanceMeters)}`
-                : "Kein verorteter Parkplatz in der Nähe.")}
-            {geo.message}
-          </p>
-        )}
-
-        {view !== "settings" &&
-          (geo.status === "denied" || geo.status === "timeout" || geo.status === "unavailable") && (
-            <button
-              type="button"
-              onClick={geo.request}
-              className="mt-2 min-h-11 rounded-lg border border-neutral-300 px-3 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
+          <div className="mt-0.5 flex items-center gap-2">
+            <p
+              aria-live="polite"
+              className="min-w-0 flex-1 truncate text-xs text-neutral-600 dark:text-neutral-400"
             >
-              Standort erneut versuchen
-            </button>
-          )}
+              {geo.status === "locating" && "Standort wird ermittelt …"}
+              {geo.status === "ready" &&
+                (nearest
+                  ? `Nächster Parkplatz: ${nearest.street ?? nearest.label} – ${formatDistance(nearest.distanceMeters)}`
+                  : "Kein verorteter Parkplatz in der Nähe.")}
+              {geo.message}
+            </p>
+            {(geo.status === "denied" ||
+              geo.status === "timeout" ||
+              geo.status === "unavailable") && (
+              <button
+                type="button"
+                onClick={geo.request}
+                // Sichtbar steht nur „Erneut" – neben der Meldung, die den
+                // Grund nennt, ist das eindeutig. Vorgelesen fehlte der
+                // Zusammenhang, deshalb der vollständige Name.
+                aria-label="Standort erneut versuchen"
+                className="min-h-11 shrink-0 rounded-lg border border-neutral-300 px-2.5 text-xs font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
+              >
+                Erneut
+              </button>
+            )}
+          </div>
+        )}
       </header>
 
       <main className="relative min-h-0 flex-1">
@@ -468,8 +491,19 @@ export function MapSection({ initialNearby, cities, defaultCity }: MapSectionPro
               OpenStreetMap-Attribution, und die muss sichtbar bleiben – das
               verlangt die ODbL.
             */}
+            {/*
+              Zielsuche zuoberst und links (auf Wunsch, 2026-10-11): Sie ist
+              eine Möglichkeit, kein Vorschlag – wer die App öffnet, sucht
+              meistens hier und jetzt. Als kleine Schaltfläche oben links
+              bleibt sie auffindbar, ohne eine volle Zeile Karte zu kosten.
+            */}
             {!selected && (
-              <div className="pointer-events-none absolute inset-x-0 top-0 z-[1000] flex flex-col gap-2 p-3">
+              <div className="pointer-events-none absolute inset-x-0 top-0 z-[1000] flex flex-col items-stretch gap-1.5 p-2">
+                <DestinationSearch
+                  destination={destination}
+                  onChoose={chooseDestination}
+                  onClear={() => setDestination(null)}
+                />
                 <NearestBar
                   candidates={candidates}
                   mapsTarget={mapsTarget}
@@ -483,11 +517,6 @@ export function MapSection({ initialNearby, cities, defaultCity }: MapSectionPro
                   inRadiusCount={inRadiusCount}
                   radius={radius}
                   onRadiusChange={setRadius}
-                />
-                <DestinationSearch
-                  destination={destination}
-                  onChoose={chooseDestination}
-                  onClear={() => setDestination(null)}
                 />
               </div>
             )}

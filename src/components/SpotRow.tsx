@@ -53,15 +53,15 @@ export function SpotRow({
       type="button"
       onClick={onClick}
       aria-current={selected || undefined}
-      className={`flex min-h-12 w-full items-center gap-2 rounded-xl px-1.5 py-2 text-left transition-colors hover:bg-neutral-100/70 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:hover:bg-neutral-800/70 ${
+      className={`flex min-h-11 w-full items-center gap-2 rounded-lg px-1.5 py-1.5 text-left transition-colors hover:bg-neutral-100/70 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:hover:bg-neutral-800/70 ${
         selected ? "bg-blue-50/70 dark:bg-blue-950/40" : ""
       }`}
     >
       <span className="min-w-0 flex-1">
-        <span className={`block truncate ${selected ? "font-semibold" : "font-medium"}`}>
+        <span className={`block truncate text-sm ${selected ? "font-semibold" : "font-medium"}`}>
           {spotTitle(spot)}
         </span>
-        <span className="block text-sm text-neutral-500">{meta}</span>
+        <span className="block truncate text-xs text-neutral-500">{meta}</span>
         {/* Dass eine Beschränkung gerade greift, entscheidet beim Losfahren –
             dafür soll man die Details nicht öffnen müssen. */}
         <RestrictionBadge spot={spot} />

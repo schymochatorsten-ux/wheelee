@@ -89,6 +89,11 @@ jedem Eintrag, rote Luftlinie zum Bezugspunkt, Auswahl auch am eingegebenen
 Ziel, Vorschläge beim Tippen) und **9.11–9.14** (Reiter „Liste" ausgeblendet,
 Kopfzeile still und ohne Bestandszahlen, schlankere Menüs).
 
+Zuletzt am 2026-10-11 auf Zuruf **9.15**: Kopfzeile, Statuszeile,
+Parkplatzvorschlag und Auswahlliste sind kleiner und ruhiger; die Zielsuche
+sitzt als schmale Schaltfläche oben links. Karte, Einstellungen und alle
+44-px-Trefferflächen bleiben unverändert.
+
 Am 2026-10-11 dann **2e.7**: Die Zuordnung der landesweiten Treffer zu
 Gemeinden entscheidet jetzt die amtliche Grenzfläche aus VG250-EW statt des
 umschließenden Rechtecks – mit einem eigenen Shapefile-Leser, weil dieselbe
@@ -190,7 +195,7 @@ schiefging.
 zurückgestellt (Finanzierung, Mehrsprachigkeit, Offline-Download). Dazu 14
 offene Unterpunkte innerhalb dieser Posten. **Gezählt wird die oberste Ebene**
 – sonst ergibt jede Sitzung eine andere Zahl.
-106 erledigte Einträge stehen in [Erledigt.md](Erledigt.md).
+107 erledigte Einträge stehen in [Erledigt.md](Erledigt.md).
 **Tests: 201 Unit-Tests + 15 E2E-Tests.**
 
 ---
