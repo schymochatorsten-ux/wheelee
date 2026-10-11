@@ -20,8 +20,10 @@ Standorte, davon 23 Städte aus amtlicher Quelle. Laufende Berichte:
 [data/\_import-status.md](data/_import-status.md).
 
 Karte, Liste, Detailansicht, Zielsuche, Einstellungen und Offline-Betrieb
-laufen. Es fehlen vor allem: Bewertungen (brauchen die Datenbank),
-Rechtstexte und Deployment – und der weitaus größte Teil Deutschlands.
+laufen, und seit dem 2026-10-11 ist die App unter
+[wheelee.de](https://wheelee.de) erreichbar. Es fehlen vor allem: Bewertungen
+und Rückmeldungen (beide brauchen die Datenbank), Rechtstexte – und der
+weitaus größte Teil Deutschlands.
 
 ---
 
@@ -183,15 +185,15 @@ schiefging.
 
 **Wartet auf dich:**
 
-- **D-06 E-Mail-Adresse für Fehlermeldungen** – **erst ab 13.10.2026 ansprechen**, du legst die Adresse bis dahin an. Der Knopf ist fertig und sagt solange offen, dass die Adresse fehlt. Danach genügt eine Zeile in `src/lib/feedback.ts`.
-- **D-02 Datenbank** (Supabase oder Neon) – blockiert Abschnitt 5 und damit die Bewertungen
+- **D-02 Datenbank** (Supabase oder Neon) – blockiert Abschnitt 5 (Bewertungen) **und seit dem 2026-10-11 auch Abschnitt 17** (Rückmeldungen). Zwei Dinge hängen jetzt an derselben Entscheidung.
+- **17.0 Wer ist Administrator?** Für die Übersichtsseite der Rückmeldungen braucht es eine Anmeldung – und die Frage, wer sie bekommt, kann nur von dir beantwortet werden.
 - **D-03** Missbrauchsschutz · **D-05** Umgang mit ungenauen Positionen
 - **10.2** Impressum und Datenschutzerklärung brauchen deine Angaben
 - **Abschnitt 13 (Finanzierung)** ist gesperrt, bis du ihn freigibst
 - **Abschnitt 15 (Mehrsprachigkeit)** ist auf deinen Wunsch zurückgestellt – Englisch, Spanisch und Französisch erst nach der deutschen Fassung
 - **Abschnitt 16 (nur nach Freigabe)** – derzeit: Städte zum Mitnehmen herunterladen
 
-**Stand:** 52 offen, 5 in Arbeit, 5 brauchen deine Entscheidung, 9 bewusst
+**Stand:** 57 offen, 5 in Arbeit, 5 brauchen deine Entscheidung, 9 bewusst
 zurückgestellt (Finanzierung, Mehrsprachigkeit, Offline-Download). Dazu 14
 offene Unterpunkte innerhalb dieser Posten. **Gezählt wird die oberste Ebene**
 – sonst ergibt jede Sitzung eine andere Zahl.
@@ -205,10 +207,7 @@ offene Unterpunkte innerhalb dieser Posten. **Gezählt wird die oberste Ebene**
 - [!] **D-02 Datenbank konkret wählen** – Supabase oder Neon. Blockiert Abschnitt 3 und damit die Bewertungen; die Seed-Dateien sind von der Wahl unabhängig.
 - [!] **D-03 Missbrauchsschutz für Bewertungen ohne Accounts** – Empfehlung: eine Bewertung pro Parkplatz pro Gerät (LocalStorage) plus IP-Rate-Limit serverseitig.
 - [!] **D-05 Umgang mit Parkplätzen ohne Koordinaten** – Empfehlung: nicht auf den Stadtteil-Mittelpunkt setzen, sondern als „Position ungenau" kennzeichnen und nur in der Liste führen. Derzeit faktisch gelöst, weil alle importierten Standorte Koordinaten haben.
-- [!] **D-06 E-Mail-Adresse für Fehlermeldungen festlegen** – **ab 13.10.2026 nachfragen.** Du legst die Adresse bis dahin selbst an; vorher nicht erinnern. Der Feedback-Knopf ist gebaut, verschickt aber an eine Platzhalteradresse. Zu klären:
-  - Welche Adresse soll es sein? Eine eigene wie `feedback@…` oder eine bestehende?
-  - Sie wird im Quelltext stehen und ist damit öffentlich – auf Spam gefasst sein. Eine eigene Adresse mit Filter ist einer privaten vorzuziehen.
-  - Bis zur Entscheidung steht `FEEDBACK_EMAIL` in `src/lib/feedback.ts` auf einem Platzhalter, den der Knopf sichtbar meldet, statt stillschweigend ins Leere zu schicken.
+- [x] **D-06 E-Mail-Adresse für Fehlermeldungen – entschieden am 2026-10-11: es gibt keine.** Rückmeldungen laufen nicht über E-Mail, sondern in eine eigene Datenbank mit Übersichtsseite für Administratoren. Siehe Abschnitt 17. Die Entscheidung bleibt hier stehen, weil `src/lib/feedback.ts` noch den `mailto:`-Weg enthält und dieser erst mit 17.3 verschwindet.
 
 ---
 
@@ -484,7 +483,7 @@ sprechen.
   - `<html lang="de">` steuert die Silbentrennung (`hyphens-auto`) und die Aussprache im Screenreader. Falsch gesetzt klingt die App für Blinde wie Kauderwelsch.
   - Datums- und Zahlenformate sind an `de-DE` festgenagelt (`toLocaleDateString`, `toLocaleString`), ebenso die Sortierung der Städteliste (`localeCompare`).
   - Die Entfernungsformatierung schreibt „1,5 km" mit Komma – im Englischen ein Punkt.
-  - Der Betreff der Fehlermeldung („Wheelee Fehlermeldung") landet in einer echten E-Mail.
+  - Das Rückmeldeformular (Abschnitt 17) ist Oberfläche wie jede andere – die beiden Auswahlknöpfe „Fehler melden" und „Verbesserungsvorschlag" ebenso. Die **gespeicherten** Meldungen bleiben in der Sprache, in der sie geschrieben wurden; die Übersichtsseite für Administratoren braucht keine Übersetzung.
 - [-] 15.4 **Die Daten bleiben deutsch, und das ist richtig so.** Straßennamen werden nicht übersetzt – wer „Bahnhofstraße" sucht, muss „Bahnhofstraße" lesen. Zeitangaben stehen teils als deutscher Freitext in den Quellen („werktags 8-18 Uhr"); deren Deutung ist sprachgebunden und müsste je Sprache **ausgegeben**, nicht neu geparst werden. Der Haftungshinweis ist rechtlich bedeutsam und gehört übersetzt, nicht sinngemäß übertragen.
 - [-] 15.5 **Spracherkennung mit Umschalter**, nicht ohne. Die Browsersprache ist ein guter erster Vorschlag, aber wer ein englisches Betriebssystem auf einem deutschen Telefon hat, will die Wahl behalten – in die Einstellungen, neben Darstellung und Karten-App.
 
@@ -505,6 +504,87 @@ sprechen.
     - **Kachel-Vorabladen ist gegenüber OpenStreetMap heikel.** Die Nutzungsbedingungen untersagen massenhaftes Herunterladen von Kacheln. Für einen Stadtausschnitt je Nutzer:in bräuchte es entweder eine ausdrückliche Erlaubnis, einen bezahlten Kachelanbieter oder Vektorkacheln aus eigener Quelle. **Das ist die eigentliche Hürde, nicht die Technik.**
     - **Wie alt dürfen mitgenommene Daten sein?** Ein vor drei Monaten geladener Stand, der sich als aktuell ausgibt, wäre schlimmer als gar keiner. Es bräuchte ein sichtbares Datum und einen Hinweis, wenn es alt wird.
   - Vorschlag für den Fall einer Freigabe: **in zwei Schritten.** Zuerst nur die Parkplatzdaten je Stadt – klein, rechtlich unbedenklich, sofort nützlich. Die Kacheln erst danach und erst, wenn die Lizenzfrage geklärt ist.
+
+---
+
+## 17. Rückmeldungen: Fehler melden und Vorschläge
+
+**Entschieden am 2026-10-11:** Rückmeldungen laufen **nicht über E-Mail**.
+Sie werden in einer eigenen Tabelle gespeichert, und Administratoren sehen
+sie auf einer Übersichtsseite in der App.
+
+**Warum nicht per Mail**, obwohl der `mailto:`-Knopf schon gebaut ist:
+
+- Eine Adresse im ausgelieferten Quelltext ist öffentlich und bekommt Spam.
+- `mailto:` setzt ein eingerichtetes Mailprogramm voraus. Auf einem geliehenen
+  oder frisch aufgesetzten Telefon passiert beim Antippen **nichts** – und die
+  Meldung ist verloren, ohne dass es jemand merkt.
+- Meldungen in einem Postfach lassen sich nicht auswerten. „Dieser Parkplatz
+  existiert nicht mehr" ist dreimal gemeldet oder einmal – in einer Tabelle
+  sieht man das, in einem Posteingang nicht.
+- Wer schreibt, gibt dabei seine Absenderadresse preis. Für eine Meldung über
+  einen Parkplatz braucht niemand die Identität des Melders.
+
+- [!] 17.0 **Wer ist Administrator?** Ohne Antwort gibt es keine Übersichtsseite.
+  Zu entscheiden: ein einzelnes Konto oder mehrere; Anmeldung mit Passwort oder
+  über einen bestehenden Dienst. **Empfehlung:** ein einzelnes Administratorkonto,
+  Passwort als Server-Umgebungsvariable (`.env` nur auf dem NAS, nie im Repo).
+  Das ist der kleinste Weg, der ohne Benutzerverwaltung auskommt – Abschnitt 11
+  (Benutzerkonten) ist weder gebaut noch für diese App beschlossen.
+
+- [ ] 17.1 **Tabelle `feedback`.** Hängt an D-02 (Datenbankwahl).
+      Felder: `id`, `kind` (`fehler` / `vorschlag`), `message`, `spot_id` (nullable),
+      `city` (nullable), `url`, `user_agent`, `app_version`, `created_at`,
+      `status` (`neu` / `in_arbeit` / `erledigt` / `verworfen`), `note` (interne
+      Notiz), `device_hash`.
+  - **Was ausdrücklich nicht gespeichert wird:** Standort, Name, E-Mail, IP.
+    Der Standort verlässt das Gerät in dieser App nirgends, und eine
+    Fehlermeldung ist kein Grund, damit anzufangen. `device_hash` ist nur für
+    die Drosselung da und darf keine Person identifizieren.
+  - `spot_id` macht aus der Meldung eine Datenkorrektur: Häufen sich „existiert
+    nicht mehr" zu einem Parkplatz, gehört er geprüft – das verbindet sich mit
+    Abschnitt 3 (Datenvalidierung).
+
+- [ ] 17.2 **`POST /api/feedback`** mit Validierung und Rate-Limit.
+  - Höchstlänge für `message`, Pflichtfeld `kind`, alles andere optional.
+  - Drosselung je Gerät und je IP serverseitig – derselbe Gedanke wie D-03 bei
+    den Bewertungen. Ein offenes Schreib-Endpunkt ohne Bremse ist eine Einladung.
+  - Antwort immer gleich, egal ob gedrosselt oder gespeichert: Wer probiert,
+    soll nicht erfahren, wo die Grenze liegt.
+
+- [ ] 17.3 **Formular in der App statt `mailto:`.**
+  - Auswahl zwischen **„Fehler melden"** und **„Verbesserungsvorschlag"** – zwei
+    Schaltflächen, nicht ein Auswahlmenü: Es sind genau zwei, und sie
+    unterscheiden sich im Ton. Wer einen falschen Parkplatz meldet, ist in Eile;
+    wer einen Vorschlag schreibt, nimmt sich Zeit.
+  - Aus der Detailansicht eines Parkplatzes heraus ist `spot_id` vorbelegt und
+    der Parkplatz sichtbar genannt („Meldung zu: Musterstraße 1").
+  - Nach dem Absenden eine klare Bestätigung **in der App**. Der bisherige Weg
+    endete im Mailprogramm und ließ offen, ob etwas angekommen ist.
+  - Kein Pflichtfeld für Kontaktdaten. Optional eine Rückmeldeadresse anzubieten
+    wäre eine eigene Entscheidung – sie würde personenbezogene Daten einführen,
+    die es heute nicht gibt (Abschnitt 10).
+  - Erst wenn dieser Punkt steht, fliegt `FEEDBACK_EMAIL` aus
+    `src/lib/feedback.ts`. Vorher bleibt der `mailto:`-Knopf – ein kaputter Weg
+    ist besser als gar keiner, solange er sichtbar sagt, dass die Adresse fehlt.
+
+- [ ] 17.4 **Übersichtsseite für Administratoren** unter `/admin/feedback`.
+  - Liste mit Filter nach Art und Status, neueste zuerst; Status ändern und eine
+    interne Notiz hinterlegen.
+  - Bei Meldungen mit `spot_id` ein direkter Sprung auf den Parkplatz in der
+    Karte – sonst sucht man ihn von Hand zusammen.
+  - **Die Seite darf ohne Anmeldung nichts preisgeben**, auch nicht die Anzahl
+    der Meldungen. Geprüft wird serverseitig; eine nur im Browser versteckte
+    Seite ist keine.
+  - `robots.txt` und `noindex` für `/admin`.
+  - **Dazu gehört ein E2E-Test, der ohne Anmeldung aufruft und 401 oder eine
+    Weiterleitung erwartet.** Eine Zugangsprüfung, die niemand prüft, ist beim
+    nächsten Umbau still verschwunden.
+
+- [ ] 17.5 **Aufräumen gehört dazu.** Erledigte und verworfene Meldungen nach
+      einer festgelegten Frist löschen (Vorschlag: 12 Monate). Eine Tabelle, die nur
+      wächst, wird nach einem Jahr nicht mehr gelesen – und personenbezogene
+      Angaben, die niemand mehr braucht, gehören ohnehin gelöscht (Abschnitt 10).
 
 ---
 
