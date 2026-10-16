@@ -15,14 +15,15 @@ dessen gebauter Teil hier steht und dessen offener Rest in `ToDos.md` bleibt),
 zuletzt ergänzt 2026-10-11. Gezählt werden die Einträge der obersten Ebene; die
 Unterpunkte darunter sind Begründung, keine eigenen Aufgaben.
 
-> **Nachzutragen, bewusst offen gelassen:** Die Abschnitte 11
-> (Benutzerkonten) und 17 (Rückmeldungen) sind am 2026-10-11 gebaut worden,
-> stehen hier aber noch nicht – und 17.0 ist entschieden, ohne dass es hier
-> steht. [ToDos.md](ToDos.md) führt all das weiterhin als offen, auch D-02:
-> **Die beiden Dateien widersprechen sich an dieser Stelle.** Das ist kein
-> Versehen, sondern ein abgebrochener Arbeitsschritt; er gehört als Erstes
-> nachgeholt. Was tatsächlich gebaut ist, steht so lange in der
-> [README](README.md#konten-und-rückmeldungen).
+> **Am 2026-10-16 abgeglichen.** Die Abschnitte 11 (Benutzerkonten) und 17
+> (Rückmeldungen) sowie D-02 standen hier vollständig, in
+> [ToDos.md](ToDos.md) aber weiter als offen – die beiden Dateien
+> widersprachen sich. Nachgeführt wurde deshalb `ToDos.md`; hier war nichts zu
+> ergänzen. **Die Lehre, und sie steht nicht umsonst in
+> [CLAUDE.md](CLAUDE.md):** Der Rückschnitt in `ToDos.md` gehört zur Aufgabe,
+> nicht ans Ende der Sitzung. Fünf Tage lang hat die offene Liste Arbeit als
+> ungetan geführt, die längst erledigt war – genau die Frage, die sie als
+> einzige beantworten soll.
 
 ---
 

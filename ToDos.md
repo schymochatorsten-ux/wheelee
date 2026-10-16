@@ -7,7 +7,7 @@ aktuell gehalten werden, steht in [Datenpflege.md](Datenpflege.md).
 
 **Status-Legende:** `[ ]` offen · `[~]` in Arbeit · `[x]` erledigt · `[!]` blockiert / Entscheidung nötig · `[-]` verworfen / später
 
-**Letzte Aktualisierung:** 2026-10-10
+**Letzte Aktualisierung:** 2026-10-16
 
 **Endziel:** jeden öffentlichen Behindertenparkplatz in Deutschland erfassen,
 der sich aus einer öffentlichen Quelle importieren lässt – siehe
@@ -21,9 +21,10 @@ Standorte, davon 23 Städte aus amtlicher Quelle. Laufende Berichte:
 
 Karte, Liste, Detailansicht, Zielsuche, Einstellungen und Offline-Betrieb
 laufen, und seit dem 2026-10-11 ist die App unter
-[wheelee.de](https://wheelee.de) erreichbar. Es fehlen vor allem: Bewertungen
-und Rückmeldungen (beide brauchen die Datenbank), Rechtstexte – und der
-weitaus größte Teil Deutschlands.
+[wheelee.de](https://wheelee.de) erreichbar. Seit demselben Tag gibt es eine
+Datenbank (SQLite), Konten und Rückmeldungen – alles in
+[Erledigt.md](Erledigt.md). Es fehlen vor allem: Bewertungen, Rechtstexte –
+und der weitaus größte Teil Deutschlands.
 
 ---
 
@@ -36,6 +37,14 @@ Unterbrechung nahtlos weitergearbeitet werden kann.
 **Gerade in Arbeit:** nichts. Die Arbeit ist an einem sauberen Punkt beendet:
 alle Prüfungen grün, keine halbfertige Änderung im Baum.
 
+**Zuletzt am 2026-10-16:** Diese Liste war an fünf Stellen überholt – D-02,
+17.0 bis 17.4, 11.1/11.2 und 12.5 standen als offen oder unentschieden da,
+obwohl sie seit dem 2026-10-11 gebaut und in [Erledigt.md](Erledigt.md)
+beschrieben sind; die Stack-Tabelle nannte weiter Postgres und Vercel.
+Nachgeführt sind die Einträge selbst, die Stack-Tabelle und die Zählstände.
+**In `Erledigt.md` wurde nichts ergänzt** – die Begründungen standen dort
+schon vollständig, nur der Rückschnitt hier fehlte.
+
 ### Hier weitermachen
 
 **1. Zuerst prüfen, ob die Ausgangslage noch stimmt** – zwei Befehle, keine
@@ -46,7 +55,7 @@ npm run test && npm run typecheck && npm run lint
 npm run check:slugs
 ```
 
-Erwartet: 201 Unit-Tests grün und
+Erwartet: 254 Unit-Tests grün und
 `Verzeichnis: 10.754 Gemeinden · davon an der Reihe: 204 · Seed-Dateien: 209`
 mit „✅ Register und Seed-Dateien stimmen überein". Weicht das ab, hat sich
 seit dem 2026-10-11 etwas geändert – **das klären, bevor Neues anfängt.**
@@ -185,29 +194,27 @@ schiefging.
 
 **Wartet auf dich:**
 
-- **D-02 Datenbank** (Supabase oder Neon) – blockiert Abschnitt 5 (Bewertungen) **und seit dem 2026-10-11 auch Abschnitt 17** (Rückmeldungen). Zwei Dinge hängen jetzt an derselben Entscheidung.
-- **17.0 Wer ist Administrator?** Für die Übersichtsseite der Rückmeldungen braucht es eine Anmeldung – und die Frage, wer sie bekommt, kann nur von dir beantwortet werden.
 - **D-03** Missbrauchsschutz · **D-05** Umgang mit ungenauen Positionen
 - **10.2** Impressum und Datenschutzerklärung brauchen deine Angaben
 - **Abschnitt 13 (Finanzierung)** ist gesperrt, bis du ihn freigibst
 - **Abschnitt 15 (Mehrsprachigkeit)** ist auf deinen Wunsch zurückgestellt – Englisch, Spanisch und Französisch erst nach der deutschen Fassung
 - **Abschnitt 16 (nur nach Freigabe)** – derzeit: Städte zum Mitnehmen herunterladen
 
-**Stand:** 57 offen, 5 in Arbeit, 5 brauchen deine Entscheidung, 9 bewusst
-zurückgestellt (Finanzierung, Mehrsprachigkeit, Offline-Download). Dazu 14
-offene Unterpunkte innerhalb dieser Posten. **Gezählt wird die oberste Ebene**
-– sonst ergibt jede Sitzung eine andere Zahl.
-107 erledigte Einträge stehen in [Erledigt.md](Erledigt.md).
-**Tests: 201 Unit-Tests + 15 E2E-Tests.**
+**Stand (2026-10-16):** 51 offen, 7 in Arbeit, 3 brauchen deine Entscheidung,
+9 bewusst zurückgestellt (Finanzierung, Mehrsprachigkeit, Offline-Download).
+Dazu 12 offene Unterpunkte innerhalb dieser Posten. **Gezählt wird die oberste
+Ebene** – sonst ergibt jede Sitzung eine andere Zahl.
+109 erledigte Einträge stehen in [Erledigt.md](Erledigt.md).
+**Tests: 254 Unit-Tests + 21 E2E-Tests.**
 
 ---
 
 ## 0. Offene Entscheidungen
 
-- [!] **D-02 Datenbank konkret wählen** – Supabase oder Neon. Blockiert Abschnitt 3 und damit die Bewertungen; die Seed-Dateien sind von der Wahl unabhängig.
 - [!] **D-03 Missbrauchsschutz für Bewertungen ohne Accounts** – Empfehlung: eine Bewertung pro Parkplatz pro Gerät (LocalStorage) plus IP-Rate-Limit serverseitig.
 - [!] **D-05 Umgang mit Parkplätzen ohne Koordinaten** – Empfehlung: nicht auf den Stadtteil-Mittelpunkt setzen, sondern als „Position ungenau" kennzeichnen und nur in der Liste führen. Derzeit faktisch gelöst, weil alle importierten Standorte Koordinaten haben.
-- [x] **D-06 E-Mail-Adresse für Fehlermeldungen – entschieden am 2026-10-11: es gibt keine.** Rückmeldungen laufen nicht über E-Mail, sondern in eine eigene Datenbank mit Übersichtsseite für Administratoren. Siehe Abschnitt 17. Die Entscheidung bleibt hier stehen, weil `src/lib/feedback.ts` noch den `mailto:`-Weg enthält und dieser erst mit 17.3 verschwindet.
+  **Entschieden und hier abgeräumt:** D-01, D-02 (Datenbank: SQLite), D-04 und
+  D-06 stehen mit ihrer Begründung in [Erledigt.md](Erledigt.md).
 
 ---
 
@@ -352,8 +359,11 @@ Aufgabe.
 
 ## 8. Bewertungen
 
-Blockiert durch D-02 (Datenbank). **Noch nichts davon ist gebaut** – bisher
-existiert nur die Festlegung, wie es funktionieren soll.
+**Nicht mehr blockiert:** Die Datenbank steht seit dem 2026-10-11 (D-02,
+SQLite), und mit Abschnitt 11 gibt es auch die Konten, die 8.3 voraussetzt.
+**Gebaut ist von den Bewertungen selbst noch nichts** – bisher existiert nur
+die Festlegung, wie sie funktionieren sollen. Offen bleibt davon unabhängig
+D-03 (Missbrauchsschutz).
 
 ### Regeln (festgelegt 2026-10-09)
 
@@ -407,8 +417,11 @@ spätere Funktionen daran hängen.
 voraussetzen (siehe Abschnitt 8). Sie sind damit kein „vielleicht später" mehr,
 sondern Voraussetzung für einen Teil der Kernfunktion.
 
-- [ ] 11.1 Registrierung und Anmeldung, möglichst ohne Passwort (Magic Link oder Passkey) – jede zusätzliche Hürde trifft genau die Zielgruppe
-- [ ] 11.2 Anmeldung so spät wie möglich verlangen: erst beim Downvote, nicht beim Öffnen der App
+**Gebaut am 2026-10-11:** Registrierung, Anmeldung und Sitzung (11.1) sowie
+die Festlegung, dass die App ohne Konto vollständig benutzbar bleibt (11.2) –
+beides mit Begründung in [Erledigt.md](Erledigt.md).
+
+- [~] 11.1 Anmeldung **ohne Passwort** (Magic Link oder Passkey) bleibt offen. Gebaut ist E-Mail und Passwort (scrypt); ein Magic Link setzt einen Mailversand voraus, über den noch nicht entschieden ist – siehe Abschnitt 7 von [wheelee-infrastruktur.md](wheelee-infrastruktur.md). Dazu gehört auch „Passwort vergessen", das aus demselben Grund fehlt.
 - [ ] 11.3a Die Wahl der Karten-App (erledigt, siehe [Erledigt.md](Erledigt.md)) liegt im Browser-Speicher und gilt damit nur je Gerät. Sobald es Konten gibt, zusätzlich dort ablegen.
 - [ ] 11.4 Eigene Bewertungen einsehen und zurückziehen
 - [ ] 11.5 Gespeicherte Parkplätze (Favoriten) – häufig angefahrene Ziele
@@ -420,7 +433,7 @@ sondern Voraussetzung für einen Teil der Kernfunktion.
 ## 12. Qualität und Deployment
 
 - [ ] 12.4 Lighthouse-Prüfung auf Mobil (Leistung und Barrierefreiheit)
-- [ ] 12.5 Deployment-Pipeline (Vercel), Umgebungsvariablen dokumentieren
+- [~] 12.5 Deployment. Die App läuft seit dem 2026-10-11 im Container auf dem NAS, **nicht auf Vercel** (siehe [wheelee-infrastruktur.md](wheelee-infrastruktur.md)); `Dockerfile`, `docker-compose.yml`, `deploy/env.beispiel` und die Umgebungsvariablen in der [README](README.md#konten-und-rückmeldungen) stehen. Offen ist nur noch der automatische Weg: Webhook oder systemd-Timer – Variante A oder B aus Abschnitt 6 des Briefings ist noch nicht entschieden.
 - [ ] 12.6 Fehler-Monitoring und minimales Logging
 - [ ] 12.7a Symbol gestalterisch überarbeiten – es ist funktional, aber von mir gezeichnet und kein Ersatz für eine richtige Gestaltung
 
@@ -509,77 +522,17 @@ sprechen.
 
 ## 17. Rückmeldungen: Fehler melden und Vorschläge
 
-**Entschieden am 2026-10-11:** Rückmeldungen laufen **nicht über E-Mail**.
-Sie werden in einer eigenen Tabelle gespeichert, und Administratoren sehen
-sie auf einer Übersichtsseite in der App.
+**Gebaut am 2026-10-11, bis auf das Aufräumen.** Rückmeldungen laufen **nicht
+über E-Mail**, sondern in eine eigene Tabelle; Administratoren sehen sie als
+Reiter in der App. Wer Administrator ist, steht in `ADMIN_EMAILS` (17.0).
 
-**Warum nicht per Mail**, obwohl der `mailto:`-Knopf schon gebaut ist:
-
-- Eine Adresse im ausgelieferten Quelltext ist öffentlich und bekommt Spam.
-- `mailto:` setzt ein eingerichtetes Mailprogramm voraus. Auf einem geliehenen
-  oder frisch aufgesetzten Telefon passiert beim Antippen **nichts** – und die
-  Meldung ist verloren, ohne dass es jemand merkt.
-- Meldungen in einem Postfach lassen sich nicht auswerten. „Dieser Parkplatz
-  existiert nicht mehr" ist dreimal gemeldet oder einmal – in einer Tabelle
-  sieht man das, in einem Posteingang nicht.
-- Wer schreibt, gibt dabei seine Absenderadresse preis. Für eine Meldung über
-  einen Parkplatz braucht niemand die Identität des Melders.
-
-- [!] 17.0 **Wer ist Administrator?** Ohne Antwort gibt es keine Übersichtsseite.
-  Zu entscheiden: ein einzelnes Konto oder mehrere; Anmeldung mit Passwort oder
-  über einen bestehenden Dienst. **Empfehlung:** ein einzelnes Administratorkonto,
-  Passwort als Server-Umgebungsvariable (`.env` nur auf dem NAS, nie im Repo).
-  Das ist der kleinste Weg, der ohne Benutzerverwaltung auskommt – Abschnitt 11
-  (Benutzerkonten) ist weder gebaut noch für diese App beschlossen.
-
-- [ ] 17.1 **Tabelle `feedback`.** Hängt an D-02 (Datenbankwahl).
-      Felder: `id`, `kind` (`fehler` / `vorschlag`), `message`, `spot_id` (nullable),
-      `city` (nullable), `url`, `user_agent`, `app_version`, `created_at`,
-      `status` (`neu` / `in_arbeit` / `erledigt` / `verworfen`), `note` (interne
-      Notiz), `device_hash`.
-  - **Was ausdrücklich nicht gespeichert wird:** Standort, Name, E-Mail, IP.
-    Der Standort verlässt das Gerät in dieser App nirgends, und eine
-    Fehlermeldung ist kein Grund, damit anzufangen. `device_hash` ist nur für
-    die Drosselung da und darf keine Person identifizieren.
-  - `spot_id` macht aus der Meldung eine Datenkorrektur: Häufen sich „existiert
-    nicht mehr" zu einem Parkplatz, gehört er geprüft – das verbindet sich mit
-    Abschnitt 3 (Datenvalidierung).
-
-- [ ] 17.2 **`POST /api/feedback`** mit Validierung und Rate-Limit.
-  - Höchstlänge für `message`, Pflichtfeld `kind`, alles andere optional.
-  - Drosselung je Gerät und je IP serverseitig – derselbe Gedanke wie D-03 bei
-    den Bewertungen. Ein offenes Schreib-Endpunkt ohne Bremse ist eine Einladung.
-  - Antwort immer gleich, egal ob gedrosselt oder gespeichert: Wer probiert,
-    soll nicht erfahren, wo die Grenze liegt.
-
-- [ ] 17.3 **Formular in der App statt `mailto:`.**
-  - Auswahl zwischen **„Fehler melden"** und **„Verbesserungsvorschlag"** – zwei
-    Schaltflächen, nicht ein Auswahlmenü: Es sind genau zwei, und sie
-    unterscheiden sich im Ton. Wer einen falschen Parkplatz meldet, ist in Eile;
-    wer einen Vorschlag schreibt, nimmt sich Zeit.
-  - Aus der Detailansicht eines Parkplatzes heraus ist `spot_id` vorbelegt und
-    der Parkplatz sichtbar genannt („Meldung zu: Musterstraße 1").
-  - Nach dem Absenden eine klare Bestätigung **in der App**. Der bisherige Weg
-    endete im Mailprogramm und ließ offen, ob etwas angekommen ist.
-  - Kein Pflichtfeld für Kontaktdaten. Optional eine Rückmeldeadresse anzubieten
-    wäre eine eigene Entscheidung – sie würde personenbezogene Daten einführen,
-    die es heute nicht gibt (Abschnitt 10).
-  - Erst wenn dieser Punkt steht, fliegt `FEEDBACK_EMAIL` aus
-    `src/lib/feedback.ts`. Vorher bleibt der `mailto:`-Knopf – ein kaputter Weg
-    ist besser als gar keiner, solange er sichtbar sagt, dass die Adresse fehlt.
-
-- [ ] 17.4 **Übersichtsseite für Administratoren** unter `/admin/feedback`.
-  - Liste mit Filter nach Art und Status, neueste zuerst; Status ändern und eine
-    interne Notiz hinterlegen.
-  - Bei Meldungen mit `spot_id` ein direkter Sprung auf den Parkplatz in der
-    Karte – sonst sucht man ihn von Hand zusammen.
-  - **Die Seite darf ohne Anmeldung nichts preisgeben**, auch nicht die Anzahl
-    der Meldungen. Geprüft wird serverseitig; eine nur im Browser versteckte
-    Seite ist keine.
-  - `robots.txt` und `noindex` für `/admin`.
-  - **Dazu gehört ein E2E-Test, der ohne Anmeldung aufruft und 401 oder eine
-    Weiterleitung erwartet.** Eine Zugangsprüfung, die niemand prüft, ist beim
-    nächsten Umbau still verschwunden.
+**Erledigt und mit Begründung in [Erledigt.md](Erledigt.md):** 17.0
+(Administrator über die Umgebung), 17.1 (Tabelle `feedback`), 17.2
+(`POST /api/feedback` mit Prüfung und Drosselung), 17.3 (Formular statt
+`mailto:`, damit ist `FEEDBACK_EMAIL` entfallen) und 17.4 (Übersicht für
+Administratoren, serverseitig geprüft, mit E2E-Test auf 401). Dort steht auch,
+warum E-Mail der falsche Weg war und warum die freiwillige Rückmeldeadresse
+die eine bewusste Abweichung von 17.1 ist.
 
 - [ ] 17.5 **Aufräumen gehört dazu.** Erledigte und verworfene Meldungen nach
       einer festgelegten Frist löschen (Vorschlag: 12 Monate). Eine Tabelle, die nur
@@ -588,17 +541,17 @@ sie auf einer Übersichtsseite in der App.
 
 ---
 
-## Bestätigter Stack (D-01, 2026-10-08)
+## Bestätigter Stack (D-01, 2026-10-08; Datenbank und Hosting berichtigt 2026-10-11)
 
 | Bereich     | Technologie                                                 |
 | ----------- | ----------------------------------------------------------- |
 | Framework   | Next.js 15.5 (App Router), React 19.1, TypeScript           |
 | Styling     | Tailwind CSS 4                                              |
 | Karte       | Leaflet 1.9 + react-leaflet 5, `leaflet.markercluster`, OSM |
-| Datenbank   | Postgres (Supabase oder Neon) – noch nicht entschieden      |
+| Datenbank   | SQLite über `node:sqlite` (D-02, 2026-10-11)                |
 | Datenimport | tsx-Skripte: WFS, ArcGIS, GeoJSON, CSV, Overpass, Nominatim |
 | Tests       | Vitest 5                                                    |
-| Hosting     | Vercel                                                      |
+| Hosting     | Docker auf dem eigenen NAS, hinter Tailscale – nicht Vercel |
 
 ---
 
