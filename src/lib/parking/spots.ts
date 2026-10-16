@@ -128,3 +128,20 @@ export function spotsInBounds(
 export function nearestSpots(origin: LatLng, limit = 100): ParkingSpotWithDistance[] {
   return sortByDistance(allSpots(), origin).slice(0, limit);
 }
+
+/**
+ * Ein einzelner Parkplatz über seine ID.
+ *
+ * Gebraucht für die Übersicht der Rückmeldungen (ToDo 17.4): Eine Meldung
+ * trägt die ID des gemeldeten Parkplatzes, und ohne diesen Weg müsste man ihn
+ * von Hand zusammensuchen – genau die Arbeit, die den Unterschied macht, ob
+ * eine Meldung zu einer Korrektur führt oder liegen bleibt.
+ *
+ * Lineare Suche über den Bestand: Das ist derselbe Durchlauf, den
+ * `spotsInBounds` bei jeder Kartenbewegung macht, und er geschieht hier
+ * höchstens beim Anklicken einer Meldung. Eine zusätzliche Map über 18.000
+ * Einträge im Speicher zu halten, wäre für diesen Zweck verschenkt.
+ */
+export function spotById(id: string): ParkingSpot | null {
+  return allSpots().find((spot) => spot.id === id) ?? null;
+}

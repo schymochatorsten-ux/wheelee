@@ -1,11 +1,12 @@
 import { NextResponse } from "next/server";
-import { nearestSpots, spotsInBounds } from "@/lib/parking/spots";
+import { nearestSpots, spotById, spotsInBounds } from "@/lib/parking/spots";
 
 /**
- * Parkplätze nach Kartenausschnitt oder Nähe (ToDo 5.4).
+ * Parkplätze nach Kartenausschnitt, Nähe oder ID (ToDo 5.4).
  *
  *     GET /api/spots?bbox=<minLng>,<minLat>,<maxLng>,<maxLat>&limit=2000
  *     GET /api/spots?lat=50.94&lng=6.96&limit=100
+ *     GET /api/spots?id=koeln-1a2b3c4d5e
  *
  * Vorher trug die Startseite alle Standorte im HTML – **6,3 MB**. Wer
  * unterwegs im Mobilfunknetz einen Parkplatz sucht, wartet darauf nicht; und
@@ -29,6 +30,23 @@ export function GET(request: Request) {
   const limit = limitRaw === null ? undefined : Number.parseInt(limitRaw, 10);
   if (limit !== undefined && (!Number.isFinite(limit) || limit < 1 || limit > 5_000)) {
     return bad("limit muss zwischen 1 und 5000 liegen.");
+  }
+
+  /*
+   * Ein einzelner Parkplatz. Steht vor der Bbox-Auswertung, weil eine Anfrage
+   * mit `id` nichts anderes meinen kann – und weil die Übersicht der
+   * Rückmeldungen damit von einer Meldung direkt auf die Karte springt
+   * (ToDo 17.4).
+   */
+  const id = params.get("id");
+  if (id) {
+    const spot = spotById(id);
+    if (!spot) {
+      // 404 und nicht eine leere Liste: „Diesen Parkplatz gibt es nicht
+      // (mehr)" ist eine Antwort, und die Übersicht soll sie zeigen können.
+      return NextResponse.json({ error: "Unbekannte Parkplatz-ID." }, { status: 404 });
+    }
+    return NextResponse.json({ spot }, { headers: { "Cache-Control": CACHE_CONTROL } });
   }
 
   const bbox = params.get("bbox");

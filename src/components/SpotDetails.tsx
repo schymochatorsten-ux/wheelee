@@ -26,6 +26,8 @@ interface SpotDetailsProps {
   /** Tag des Imports für diese Stadt (ISO), falls bekannt. */
   importedAt?: string | null;
   mapsTarget: MapsTarget;
+  /** Adresse des angemeldeten Kontos – belegt das Rückmeldeformular vor. */
+  accountEmail?: string | null;
   onClose: () => void;
 }
 
@@ -60,6 +62,7 @@ export function SpotDetails({
   cityName,
   importedAt = null,
   mapsTarget,
+  accountEmail = null,
   onClose,
 }: SpotDetailsProps) {
   const closeButton = useRef<HTMLButtonElement>(null);
@@ -190,8 +193,10 @@ export function SpotDetails({
       <div className="mt-2 space-y-2">
         <ShareButton spot={spot} />
         {/* Direkt am Parkplatz melden: Nur hier weiß die Meldung, worum es
-            geht – die ID wandert in die Mail und spart jede Rückfrage. */}
-        <FeedbackButton spot={spot} variant="subtle" />
+            geht – die Parkplatz-ID geht mit und spart jede Rückfrage. Genau
+            diese ID macht aus einer Meldung später eine Datenkorrektur
+            (ToDo 17.1). */}
+        <FeedbackButton spot={spot} accountEmail={accountEmail} variant="subtle" />
       </div>
 
       {/* Die Bewertungen (Abschnitt 8 der ToDos) brauchen die Datenbank-

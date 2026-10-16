@@ -10,10 +10,19 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand:** 107 Einträge auf oberster Ebene (106 `[x]` plus 2e.10 als `[~]`,
+**Stand:** 109 Einträge auf oberster Ebene (108 `[x]` plus 2e.10 als `[~]`,
 dessen gebauter Teil hier steht und dessen offener Rest in `ToDos.md` bleibt),
 zuletzt ergänzt 2026-10-11. Gezählt werden die Einträge der obersten Ebene; die
 Unterpunkte darunter sind Begründung, keine eigenen Aufgaben.
+
+> **Nachzutragen, bewusst offen gelassen:** Die Abschnitte 11
+> (Benutzerkonten) und 17 (Rückmeldungen) sind am 2026-10-11 gebaut worden,
+> stehen hier aber noch nicht – und 17.0 ist entschieden, ohne dass es hier
+> steht. [ToDos.md](ToDos.md) führt all das weiterhin als offen, auch D-02:
+> **Die beiden Dateien widersprechen sich an dieser Stelle.** Das ist kein
+> Versehen, sondern ein abgebrochener Arbeitsschritt; er gehört als Erstes
+> nachgeholt. Was tatsächlich gebaut ist, steht so lange in der
+> [README](README.md#konten-und-rückmeldungen).
 
 ---
 
@@ -21,6 +30,17 @@ Unterpunkte darunter sind Begründung, keine eigenen Aufgaben.
 
 - [x] **D-01 Technologie-Stack bestätigt** (2026-10-08) – Next.js 15, TypeScript, Tailwind 4, Leaflet + OSM, Postgres, Vercel.
 - [x] **D-04 Geocoding-Quelle** – Nominatim, 1 Anfrage/Sekunde, Antworten versioniert zwischengespeichert.
+- [x] **D-02 Datenbank: SQLite in einem Docker-Volume** (entschieden 2026-10-11). Die Frage stand seit dem 2026-10-08 offen und blockierte die Abschnitte 5, 8, 11 und 17.
+
+  **Nicht Supabase und nicht Neon**, obwohl beide in D-01 vorgemerkt waren. Dazwischen hat sich die Lage geändert: Die App läuft seit dem 2026-10-11 nicht auf Vercel, sondern auf dem eigenen NAS hinter einem Tailscale-Tunnel – **ohne Portfreigabe und ohne offenen Port am Heimanschluss** (siehe [wheelee-infrastruktur.md](wheelee-infrastruktur.md)). Eine Cloud-Datenbank hätte genau diese Eigenschaft aufgegeben, und zwar für ein paar tausend Zeilen. Das Infrastruktur-Briefing nennt „SQLite in einem Volume" dort ausdrücklich als Hausmuster.
+
+  - **Ohne neue Abhängigkeit, wie schon bei 2e.4.** `node:sqlite` gehört seit Node 24 zum Standardumfang. `better-sqlite3` wäre eine native Abhängigkeit, für die das Alpine-Abbild erst Compiler und Python nachziehen müsste. Dafür steht das Abbild jetzt auf **Node 24 statt 22** – in Node 22 ist `node:sqlite` nur hinter einer Versuchsflagge zu haben, und eine Datenbank hinter einer Flagge ist keine Grundlage.
+  - **Die Datei liegt nicht in `data/`.** Dort stehen die versionierten Seed-Dateien des Imports; eine Datei, die sich im Betrieb ändert, stünde dort bei jedem Importlauf im Weg und würde im Zweifel mitversioniert. Sie liegt unter `/app/var` im Container (ein benanntes Volume) und unter `.data/` in der Entwicklung.
+  - **Das ändert die Natur eines Deploys, und das muss man wissen.** Bisher war jeder Neubau ein vollständiger Ersatz, der nichts verlieren konnte – die App hat nur gelesen. Jetzt gibt es Daten, die den Neubau überleben müssen. Der entsprechende Satz in `next.config.ts` („kein Volume gebraucht") war ab diesem Tag falsch und ist berichtigt.
+  - **WAL ist nicht Feinschliff, sondern nötig.** Ohne ihn sperrt ein Schreibvorgang die ganze Datei; schon zwei gleichzeitige Anfragen – jemand schickt eine Meldung ab, während die Übersicht lädt – liefen in „database is locked".
+  - **Migrationen über `PRAGMA user_version`**, nicht von Hand gepflegte Tabellen. Von Hand hieße: Das Schema auf dem NAS weicht von dem im Repository ab, und niemand merkt es, bis eine Abfrage auf eine Spalte zugreift, die dort nie angelegt wurde.
+
+- [x] **D-06 E-Mail-Adresse für Fehlermeldungen: es gibt keine** (entschieden 2026-10-11, umgesetzt am selben Tag). Die Entscheidung stand seit dem Morgen fest, blieb aber in `ToDos.md` stehen, weil `src/lib/feedback.ts` noch den `mailto:`-Weg enthielt. **Mit 17.3 ist `FEEDBACK_EMAIL` entfallen**; die Begründung, warum E-Mail der falsche Weg war, steht dort.
 
 ---
 
@@ -373,6 +393,71 @@ und was liegt dazwischen?"
 
 - [x] 10.5 **Haftungshinweis sichtbar formuliert** (2026-10-10, `src/components/DataDisclaimer.tsx`). Zweimal, an den Stellen, wo er zählt: ausführlich oben in der Listenansicht („Bitte vor der Fahrt lesen … vor Ort gilt die Beschilderung"), und knapp in der Detailansicht direkt unter dem Navigationsknopf, zusammen mit dem Stand der Daten. Bewusst nüchtern: Eine Warnung, die wie eine Rechtsfloskel klingt, wird überlesen; eine, die Angst macht, entwertet die App.
 - [x] **Lizenzangabe je Stadt im Datenmodell** (2026-10-10, Teil von 2a.5/10.3). `license` ist ein eigenes Feld statt eingebettet im Freitext; `src/lib/parking/license.ts` zerlegt ältere Angaben und unterscheidet dabei eine fehlende Lizenz von einer Lizenz namens „nicht angegeben". Die Oberfläche benennt die Lücke offen, statt sie zu verschweigen.
+
+---
+
+## 11. Benutzerkonten
+
+- [~] 11.1 **Registrierung und Anmeldung gebaut** (2026-10-11). E-Mail-Adresse und Passwort, Sitzung über ein Cookie. Der Wunsch aus der Aufgabe lautete „möglichst ohne Passwort (Magic Link oder Passkey)" – **das geht derzeit nicht**, und der Grund ist kein technischer: Ein Magic Link setzt einen Mailversand voraus, und über den ist noch nicht entschieden (siehe [wheelee-infrastruktur.md](wheelee-infrastruktur.md), Abschnitt 7). Ein Anmeldeverfahren, dessen einziger Weg eine Mail ist, die nie ankommt, sperrt alle aus – auch den Administrator. Der offene Rest steht in [ToDos.md](ToDos.md).
+
+  - **scrypt aus `node:crypto`, nicht SHA-256 und nicht Argon2.** Ein schneller Hash über ein Passwort ist auf einer Grafikkarte milliardenfach je Sekunde zu raten; die Aufgabe eines Passwort-Hashes ist genau das Gegenteil. Argon2id gilt als die modernere Wahl, ist aber nur als native Abhängigkeit zu haben – dieselbe Abwägung wie bei der Datenbank (D-02).
+  - **Die Kostenparameter stehen im Hash selbst** (`scrypt$N$r$p$salt$hash`). Damit lassen sie sich später erhöhen, **ohne alte Passwörter zu entwerten**. Ohne diese Angabe wäre eine Umstellung nur über „alle müssen ihr Passwort neu setzen" möglich – und das trifft genau die Zielgruppe, der jede zusätzliche Hürde am meisten kostet.
+  - **Bei unbekannter Adresse wird trotzdem ein Hash gerechnet.** Sonst wäre an der Antwortzeit ablesbar, welche Adressen registriert sind: unbekannt sofort, bekannt erst nach den ~100 ms des scrypt-Durchlaufs. Genau so werden Adresslisten auf Treffer abgeklopft.
+  - **In der Datenbank steht nur der SHA-256 des Sitzungstokens**, nicht das Token. Wer die Datei in die Hand bekommt – etwa aus einem Backup –, kann damit keine Sitzung übernehmen. Ein Test hält das fest, denn am Verhalten der App ist es nicht zu sehen.
+  - **Zehn Zeichen Mindestlänge, keine Zeichenklassen-Regeln.** Eine Vorschrift wie „ein Großbuchstabe, eine Zahl, ein Sonderzeichen" erzeugt nachweislich `Passwort1!` und nichts Besseres; die Länge ist der Faktor, der zählt. Nach oben sind 200 Zeichen die Grenze, weil scrypt über die ganze Eingabe rechnet und ein Megabyte-Passwort den Server bei jedem Versuch beschäftigen würde.
+  - **Umlaute werden normalisiert** (`NFKC`). „ü" gibt es in Unicode zweimal – als eigenes Zeichen und als u mit Trema. Wer sein Passwort auf einem anderen Gerät eintippt, bekommt womöglich die andere Schreibweise und käme sonst nicht mehr hinein.
+  - **Dass die Adresse schon vergeben ist, sagt die App offen.** Das verrät, wer hier ein Konto hat – die saubere Alternative („wir haben dir eine Mail geschickt") braucht wieder den Mailversand. Dagegen steht die Drosselung: fünf Registrierungen je Stunde und Herkunft.
+  - **Kein „Passwort vergessen".** Ohne Mailversand gibt es keinen Weg, und ein Knopf, der nichts verschickt, wäre schlimmer als der Satz, der jetzt unter dem Formular steht.
+  - **`ON DELETE CASCADE` für Sitzungen – mit Test.** In SQLite sind Fremdschlüssel standardmäßig **aus**; ohne das `PRAGMA foreign_keys = ON` bliebe nach dem Löschen eines Kontos eine gültige Sitzung zurück. Das ist am Verhalten nicht zu sehen, deshalb steht es als Test da.
+
+- [x] 11.2 **Anmeldung wird so spät wie möglich verlangt – nämlich nie** (2026-10-11). Karte, Standort, Zielsuche, Detailansicht **und das Melden eines Fehlers** funktionieren ohne Konto. Die Anmeldung sitzt unten in den Einstellungen, hinter Darstellung und Karten-App.
+  - **Kein eigener Reiter dafür.** Ein dritter Reiter über der Karte kostet Platz für etwas, das die meisten nie brauchen – genau die Abwägung aus 9.15, wo die Kopfzeile aus demselben Grund kleiner wurde.
+  - **Das Konto ist ein Angebot, keine Bedingung.** Jede zusätzliche Hürde trifft die Zielgruppe, der die App helfen soll. Wer vor einem aufgehobenen Parkplatz steht, soll ihn melden können, ohne sich vorher zu registrieren.
+
+---
+
+## 17. Rückmeldungen: Fehler melden und Vorschläge
+
+- [x] 17.0 **Wer Administrator ist, steht in der Umgebung** (entschieden und gebaut 2026-10-11). `ADMIN_EMAILS` nimmt eine oder mehrere Adressen, durch Komma getrennt; wer sich mit einer davon anmeldet, sieht den Reiter „Rückmeldungen". Die Datei liegt als `/opt/wheelee/.env` **nur auf dem NAS**, Vorlage ist [deploy/env.beispiel](deploy/env.beispiel).
+  - **Keine Rollentabelle in der Datenbank.** Es gibt nichts zu pflegen und kein Fenster, in dem sich jemand selbst zum Administrator erklären könnte.
+  - **Und bewusst kein Rückfall auf „der erste angemeldete Benutzer".** Das ist das übliche Muster und hier falsch: wheelee.de steht offen im Netz, die Registrierung ist für jede:n offen. Wer zuerst da wäre, bekäme alle Meldungen samt der freiwillig angegebenen Adressen zu sehen. **Ist die Variable leer, hat lieber niemand Zugriff.**
+  - **Die Adresse steht nicht im Repository**, auch nicht in der Deploy-Anleitung. Begründung ist die des Abschnitts selbst: Eine Adresse im ausgelieferten Quelltext ist öffentlich und bekommt Spam – genau der Mangel, der den `mailto:`-Weg erledigt hat.
+
+- [x] 17.1 **Tabelle `feedback`** (2026-10-11). Felder wie vorgesehen, dazu `contact_email`.
+
+  **Eine Abweichung von der ursprünglichen Festlegung, und sie ist bewusst:** 17.1 hielt fest, dass **keine** E-Mail-Adresse gespeichert wird. Das ist auf deinen Wunsch geändert – aber nur in eine Richtung: Die Adresse ist **freiwillig**, das Formular sagt offen, wofür sie dient, und sie verschwindet mit der Meldung. Der Grund dafür wiegt schwerer als die Ersparnis: Ohne Rückfragemöglichkeit bleibt „irgendwo stimmt etwas nicht" oft genau das. Alles Übrige steht unverändert: **kein Standort, kein Name, keine IP-Adresse** – und das ist als Test festgehalten, nicht als Vorsatz.
+
+  - `spot_id` macht aus der Meldung eine Datenkorrektur: Häufen sich „existiert nicht mehr" zu einem Parkplatz, gehört er auf die Prüfliste aus Abschnitt 3.
+  - **Vom Gerät wird nur ein gekürzter Hash gespeichert.** Der Browser schickt eine Zufallszahl aus seinem eigenen Speicher; daraus entsteht `device_hash`. Zweck ist allein die Drosselung. Wer die Datenbank liest, kann damit niemanden wiedererkennen, der nicht selbst schreibt – und wer seine Browserdaten löscht, bekommt eine neue. Das ist kein Mangel: Eine Kennung, die das überlebt, wäre ein Wiedererkennungsmerkmal.
+  - **`ON DELETE SET NULL` für das Konto, nicht `CASCADE`.** Eine Meldung beschreibt einen Fehler in den Parkplatzdaten. Dass das Konto dahinter verschwindet, macht den Fehler nicht ungeschehen.
+
+- [x] 17.2 **`POST /api/feedback` mit Prüfung und Drosselung** (2026-10-11).
+  - **Die Prüfung läuft zweimal, aus derselben Datei** (`src/lib/feedback.ts`). Im Browser ist sie eine Höflichkeit – der Hinweis steht sofort am Feld, ohne Wartezeit und ohne Anfrage ins Funkloch. Auf dem Server ist sie die eigentliche Prüfung, denn eine Prüfung im Browser ist keine.
+  - **Die Antwort ist immer dieselbe**, ob gedrosselt oder gespeichert. Wer die Grenze auslotet, soll nicht erfahren, wo sie liegt – und wer aus Versehen zweimal abschickt, bekommt kein beunruhigendes „abgelehnt".
+  - **Gezählt wird im Arbeitsspeicher, nicht in der Datenbank.** Die App läuft als ein Container; eine Tabelle dafür hieße, bei jedem Versuch zu schreiben – also genau das zu tun, was die Drosselung verhindern soll.
+  - **Gleitendes Fenster statt Zähler je Kalenderminute.** Ein Zähler, der zur Minute zurückgesetzt wird, lässt an der Grenze die doppelte Menge durch. Und **abgelehnte Versuche zählen mit**: Sonst käme ein Dauerbeschuss nach Ablauf des Fensters sofort wieder mit voller Menge durch. Beides steht als Test da, mit übergebener Uhrzeit statt Wartezeit – ein Test, der zehn Minuten schläft, wird abgeschaltet.
+  - **Die IP-Adresse wird nur gelesen, nirgends gespeichert.** Hinter dem Nginx Proxy Manager steht sie im ersten Eintrag von `X-Forwarded-For`; die Verbindung selbst käme sonst für alle gleich aus dem Tailscale-Tunnel.
+
+- [x] 17.3 **Formular in der App statt `mailto:`** (2026-10-11). Damit ist `FEEDBACK_EMAIL` entfallen (D-06).
+
+  **Was der alte Weg falsch machte**, vier Dinge, und jedes hätte Meldungen verloren: Eine Adresse im Quelltext ist öffentlich und bekommt Spam. `mailto:` setzt ein eingerichtetes Mailprogramm voraus – auf einem geliehenen oder frisch aufgesetzten Telefon passiert beim Antippen **nichts**, und die Meldung ist weg, ohne dass es jemand merkt. Meldungen in einem Postfach lassen sich nicht auswerten. Und wer schreibt, gibt dabei unfreiwillig seine Absenderadresse preis.
+
+  - **Zwei Schaltflächen, kein Auswahlmenü.** Es sind genau zwei Möglichkeiten, und sie unterscheiden sich im Ton: Wer einen falschen Parkplatz meldet, ist in Eile; wer einen Vorschlag schreibt, nimmt sich Zeit. Ein Menü verlangt erst einen Griff, um zu zeigen, dass es zwei sind.
+  - **Aus der Detailansicht heraus ist der Parkplatz vorbelegt und sichtbar genannt** („Meldung zu: Burchardstraße 24"). Nur dort weiß die Meldung, worum es geht – und genau diese ID macht später die Datenkorrektur möglich.
+  - **Die Bestätigung steht in der App.** Das ist der eigentliche Fortschritt: Der alte Weg endete im Mailprogramm und ließ offen, ob etwas angekommen ist.
+  - **Der Hinweis zur Adresse steht über dem Feld, nicht darunter**, und er ist in der Richtung formuliert, die wahr ist und nicht drängt: nicht „gib deine Adresse an, dann antworten wir", sondern **„nur mit Adresse können wir dir antworten"**. Darunter steht, was mit ihr geschieht. Beide Sätze stehen als Konstanten im Quelltext und sind durch einen Test gesichert – sie enthalten zwei Zusagen, und eine davon beim Umformulieren zu verlieren wäre leicht.
+  - **Die Bestätigung sagt die Wahrheit über die Folgen:** mit Adresse „wir melden uns", ohne Adresse „du hörst nichts von uns – deine Meldung hilft trotzdem". Das Zweite wegzulassen hieße, jemanden auf eine Antwort warten zu lassen, die nie kommt.
+  - **Kein Pflichtfeld für Kontaktdaten**, und der Fehlschlag wird benannt: Bricht die Verbindung weg, steht da „die Meldung ist **nicht** abgeschickt". Der Fall ist hier wahrscheinlicher als sonst – wer vor einem aufgehobenen Parkplatz steht, steht oft im Funkloch.
+
+- [x] 17.4 **Übersichtsseite für Administratoren** (2026-10-11). Liste mit Filter nach Art und Stand, neueste zuerst, Stand ändern, interne Notiz, löschen.
+  - **Als Reiter in der App und nicht als eigene Seite unter `/admin/feedback`**, wie ursprünglich vorgesehen. Der Grund steht in der Aufgabe selbst: Eine Meldung mit Parkplatz soll **direkt auf die Karte springen**. Eine zweite Seite hieße eine zweite Hülle ohne Karte – und dann sucht man den Parkplatz doch wieder von Hand zusammen, also genau die Arbeit, an der eine Korrektur scheitert. Der Reiter erscheint nur für Administratoren; für alle anderen bleibt die Kopfzeile bei zwei Reitern (9.15).
+  - **Dass der Reiter fehlt, ist kein Schutz**, und das ist der Punkt: Geprüft wird serverseitig in `/api/admin/feedback`. Ein angemeldeter Benutzer **ohne** Administratorrecht bekommt ebenfalls 401 und nicht 403 – dass es diese Übersicht gibt, muss er nicht erfahren.
+  - **Ein E2E-Test ruft ohne Anmeldung auf und erwartet 401 – für alle drei Wege**: lesen, ändern, löschen. Ein vergessener davon wäre die Lücke, die niemand sucht. Zusätzlich prüft er, dass die Antwort nicht einmal Zahlen durchsickern lässt. Eine Zugangsprüfung, die niemand prüft, ist beim nächsten Umbau still verschwunden.
+  - **`GET /api/spots?id=…` kam dafür dazu** – ein Teil von 5.5, ohne das dort vorgesehene Bewertungs-Aggregat. Ohne diesen Weg wäre die Parkplatz-ID in der Meldung eine Zeichenkette zum Abtippen.
+  - **Löschen fragt nach.** Eine Meldung ist der einzige Hinweis, den es auf diesen Fehler gibt; ein Fehlgriff auf dem Telefon soll ihn nicht vernichten.
+  - **Stand und Notiz sind getrennt änderbar.** Sonst löschte jeder Klick auf „umgesetzt" die Notiz, in der steht, warum – ein Test hält das fest.
+  - **Nach jeder Änderung wird die Liste neu geholt, statt sie im Browser nachzubessern.** Bei gesetztem Filter wandert der Eintrag sonst womöglich heraus, und eine Zeile, die laut Anzeige „umgesetzt" ist, aber im Filter „neu" noch steht, wäre eine falsche Auskunft über den eigenen Datenstand.
+  - **`robots.txt` schließt `/api/` aus.** Das ist eine Bitte und kein Schutz – es steht da, damit die Adressen nicht über einen Suchindex auffindbar werden, falls doch einmal etwas durchrutscht.
 
 ---
 

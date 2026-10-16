@@ -45,7 +45,11 @@ nicht einfach weiterraten.
 
 ## Entwicklung
 
-Voraussetzung: Node.js 20 oder neuer.
+Voraussetzung: **Node.js 24 oder neuer.** Nicht mehr 20: Seit es Konten und
+Rückmeldungen gibt, braucht die App eine Datenbank, und `node:sqlite` ist erst
+ab Node 24 ohne Versuchsflagge nutzbar. Der Vorteil ist, dass dafür **keine
+Abhängigkeit** hinzukam – dieselbe Abwägung wie beim ZIP- und Excel-Leser des
+Gemeindeimports.
 
 ```bash
 npm install
@@ -76,14 +80,20 @@ npm run clean        # Build-Zwischenstand löschen
 
 ```
 src/app/              Next.js-Routen und Layout
-src/app/api/spots/    Parkplätze nach Kartenausschnitt oder Nähe
+src/app/api/spots/    Parkplätze nach Kartenausschnitt, Nähe oder ID
 src/app/api/geocode/  Ortssuche für das Reiseziel (Nominatim-Vorschaltung)
+src/app/api/auth/     Anmelden, Konto anlegen, abmelden
+src/app/api/feedback/ Rückmeldungen entgegennehmen
+src/app/api/admin/    Übersicht der Rückmeldungen (nur Administrator)
 e2e/                  Playwright-Tests
 src/lib/types.ts      Gemeinsame Typen (Parkplatz, Bewertung)
 src/lib/geo.ts        Entfernungsberechnung und -formatierung
 src/lib/parking/      Einlesen und Zerlegen der städtischen Parkplatzlisten
+src/lib/db/           SQLite: Schema, Konten, Rückmeldungen
+src/lib/auth/         Passwörter, Sitzungen, Administratorprüfung
 scripts/import/       Importkette von der Quelldatei zur Seed-Datei
 data/                 Importergebnisse (versioniert)
+.data/                Datenbank der Entwicklung (nicht versioniert)
 Parkplätze/           Quelldateien der Städte
 ```
 
@@ -290,7 +300,42 @@ Listenansicht der App sagt das ausdrücklich.
   Karte sichtbar bleiben.
 - Geocoding: Nominatim, betrieben von der OpenStreetMap Foundation.
 
+## Konten und Rückmeldungen
+
+Seit dem 2026-10-11 gibt es beides, und damit erstmals Daten, die zur Laufzeit
+entstehen. Sie liegen in **SQLite** – in der Entwicklung unter `.data/`, im
+Container in einem Docker-Volume unter `/app/var`. Entschieden wurde das gegen
+Supabase und Neon, weil die App auf dem eigenen NAS hinter einem
+Tailscale-Tunnel läuft und keine Verbindung nach außen braucht.
+
+| Umgebungsvariable | Wofür                                                                  |
+| ----------------- | ---------------------------------------------------------------------- |
+| `ADMIN_EMAILS`    | Adressen, die die Übersicht der Rückmeldungen sehen dürfen (per Komma) |
+| `WHEELEE_DB_PATH` | Pfad der Datenbankdatei; im Container bereits gesetzt                  |
+
+**Ist `ADMIN_EMAILS` leer, hat niemand Zugriff** – auch nicht der erste
+angemeldete Benutzer. Das ist Absicht: Die Registrierung steht jedem offen, und
+wer zuerst da wäre, bekäme sonst alle Meldungen samt der freiwillig angegebenen
+Adressen zu sehen. Vorlage für die Datei auf dem NAS:
+[deploy/env.beispiel](deploy/env.beispiel).
+
+Was die App **ohne** Konto kann: alles, was mit Parkplätzen zu tun hat – Karte,
+Standort, Zielsuche, Detailansicht und das Melden eines Fehlers. Ein Konto ist
+ein Angebot, keine Bedingung.
+
 ## Datenschutz
 
-Der Standort wird nur im Browser verarbeitet und nicht gespeichert. Bewertungen
-enthalten keine personenbezogenen Daten.
+Der Standort wird nur im Browser verarbeitet und nicht gespeichert – auch nicht
+mit Konto, und auch nicht in einer Rückmeldung.
+
+Gespeichert wird nur, was jemand selbst einträgt:
+
+- **Konto:** E-Mail-Adresse und das Passwort als scrypt-Hash. Die App setzt
+  genau ein Cookie, und erst nach dem Anmelden: das Sitzungstoken. Wer die App
+  nur benutzt, bekommt keines – das prüft ein E2E-Test.
+- **Rückmeldung:** der geschriebene Text, der betroffene Parkplatz und – **nur
+  freiwillig** – eine E-Mail-Adresse für die Antwort. Das Formular sagt offen,
+  dass ohne Adresse keine Antwort möglich ist, und dass die Adresse mit der
+  Meldung gelöscht wird.
+- **Nicht gespeichert:** Standort, Name und IP-Adresse. Die IP wird für die
+  Drosselung gelesen und landet in keiner Tabelle und in keinem Protokoll.

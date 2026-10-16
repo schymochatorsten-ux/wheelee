@@ -8,6 +8,7 @@ import { detectMapsTarget, type MapsTarget } from "@/lib/navigation";
 import { readMapsPreference, type MapsPreference } from "@/lib/maps-preference";
 import type { CityInfo } from "@/lib/parking/spots";
 import type { Place } from "@/lib/geocode";
+import type { PublicUser } from "@/lib/auth/user";
 import { useGeolocation } from "@/hooks/useGeolocation";
 import { DestinationSearch } from "./DestinationSearch";
 import { useNearbySpots, useSpotsInBounds } from "@/hooks/useSpots";
@@ -17,6 +18,7 @@ import { SettingsPanel } from "./SettingsPanel";
 import { NearestBar } from "./NearestBar";
 import { SpotDetails } from "./SpotDetails";
 import { SpotList } from "./SpotList";
+import { FeedbackAdmin } from "./FeedbackAdmin";
 
 /**
  * Hält Karte, Liste und Detailansicht zusammen: Standort anfragen,
@@ -46,14 +48,17 @@ interface MapSectionProps {
   cities: CityInfo[];
   /** Stadt, auf die ohne Nutzerstandort zentriert wird. */
   defaultCity: CityInfo;
+  /** Angemeldetes Konto, vom Server mitgegeben – `null`, wenn keines. */
+  user: PublicUser | null;
 }
 
-type View = "map" | "list" | "settings";
+type View = "map" | "list" | "settings" | "feedback";
 
 const VIEW_LABELS: Record<View, string> = {
   map: "Karte",
   list: "Liste",
   settings: "Einstellungen",
+  feedback: "Rückmeldungen",
 };
 
 /**
@@ -65,8 +70,16 @@ const VIEW_LABELS: Record<View, string> = {
  * berechnet. Wieder einschalten heißt: `"list"` hier ergänzen. Entfernt wird
  * sie bewusst nicht, denn sie ist der Zugang für Screenreader (die Karte ist
  * laut ihrer eigenen Beschriftung nur eine Ergänzung).
+ *
+ * **„Rückmeldungen" kommt nur für den Administrator dazu** (ToDo 17.4). Für
+ * alle anderen bleibt die Kopfzeile bei zwei Reitern – jeder weitere kostet
+ * dort Platz, den die Karte braucht (9.15). Dass der Reiter fehlt, ist
+ * allerdings **kein Schutz**: Die Zugangsprüfung sitzt in
+ * `/api/admin/feedback` und damit auf dem Server.
  */
-const VISIBLE_VIEWS: readonly View[] = ["map", "settings"];
+function visibleViews(isAdmin: boolean): readonly View[] {
+  return isAdmin ? ["map", "settings", "feedback"] : ["map", "settings"];
+}
 
 /** So viele Parkplätze zeigt die Liste höchstens. */
 const LIST_LIMIT = 100;
@@ -102,12 +115,91 @@ const BEYOND_RADIUS_COUNT = 3;
  */
 const EXPANDED_BAR_HEIGHT = 430;
 
-export function MapSection({ initialNearby, cities, defaultCity }: MapSectionProps) {
+/**
+ * Die Symbole der Reiter als Inline-SVG und nicht als Schriftzeichen.
+ *
+ * Derselbe Grund wie in 9.13: Zeichen wie ⚙ hängen von der Schriftart des
+ * Geräts ab, fehlen auf manchen Android-Telefonen und werden dann als leeres
+ * Rechteck gezeichnet. Ein SVG sieht überall gleich aus und wächst mit der
+ * Schriftgröße mit (`1em`), was bei 200 % Vergrößerung zählt.
+ */
+const TAB_ICON = "h-[1.15em] w-[1.15em]";
+
+function GearIcon() {
+  return (
+    <svg
+      className={TAB_ICON}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="12" r="3.2" strokeWidth="2" />
+      <path
+        d="M12 2.5v2.2M12 19.3v2.2M4.2 7.2l1.9 1.1M17.9 15.7l1.9 1.1M4.2 16.8l1.9-1.1M17.9 8.3l1.9-1.1"
+        strokeWidth="2"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
+function InboxIcon() {
+  return (
+    <svg
+      className={TAB_ICON}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      aria-hidden="true"
+    >
+      <path
+        d="M3 13.5V19a1.5 1.5 0 0 0 1.5 1.5h15A1.5 1.5 0 0 0 21 19v-5.5"
+        strokeWidth="2"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M3 13.5 5.8 4.8A1.5 1.5 0 0 1 7.2 3.8h9.6a1.5 1.5 0 0 1 1.4 1L21 13.5h-5l-1.3 2.2h-5.4L8 13.5H3z"
+        strokeWidth="2"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+export function MapSection({
+  initialNearby,
+  cities,
+  defaultCity,
+  user: initialUser,
+}: MapSectionProps) {
   const center = defaultCity.center;
   const geo = useGeolocation();
   const [selected, setSelected] = useState<ParkingSpot | null>(null);
   const [view, setView] = useState<View>("map");
   const [focus, setFocus] = useState<FocusTarget | null>(null);
+
+  /**
+   * Das angemeldete Konto.
+   *
+   * Es kommt vom Server, wird hier aber im Zustand gehalten: An- und Abmelden
+   * sollen sofort wirken, ohne die Seite neu zu laden – sonst würde beim
+   * Abmelden die Karte samt Standortfreigabe neu aufgebaut, und man müsste den
+   * Standort erneut bestätigen.
+   */
+  const [user, setUser] = useState<PublicUser | null>(initialUser);
+  const views = visibleViews(user?.isAdmin === true);
+
+  /**
+   * Nach dem Abmelden darf kein Blick auf die Rückmeldungen übrig bleiben.
+   *
+   * Angezeigt würde ohnehin nichts – die Route antwortet dann mit 401 –, aber
+   * eine Ansicht mit leerer Liste und Fehlermeldung ist eine schlechtere
+   * Antwort als die Karte, zu der man zurückwill.
+   */
+  useEffect(() => {
+    if (view === "feedback" && user?.isAdmin !== true) setView("map");
+  }, [view, user]);
 
   /**
    * Die Marker der Karte kommen aus dem sichtbaren Ausschnitt, die Liste und
@@ -390,7 +482,7 @@ export function MapSection({ initialNearby, cities, defaultCity }: MapSectionPro
             aria-label="Ansicht wählen"
             className="flex shrink-0 overflow-hidden rounded-lg border border-neutral-200 text-xs dark:border-neutral-800"
           >
-            {VISIBLE_VIEWS.map((option) => (
+            {views.map((option) => (
               <button
                 key={option}
                 type="button"
@@ -406,14 +498,15 @@ export function MapSection({ initialNearby, cities, defaultCity }: MapSectionPro
                     : "bg-white text-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
                 }`}
               >
-                {/* Auf schmalen Displays ist „Einstellungen" zu lang – dort
-                    das Zahnrad, mit dem Namen für Screenreader. */}
-                {option === "settings" ? (
+                {/* Auf schmalen Displays sind „Einstellungen" und
+                    „Rückmeldungen" zu lang – dort nur das Symbol, der Name
+                    bleibt für Screenreader stehen. */}
+                {option === "settings" || option === "feedback" ? (
                   <>
                     <span aria-hidden="true" className="sm:hidden">
-                      ⚙
+                      {option === "settings" ? <GearIcon /> : <InboxIcon />}
                     </span>
-                    <span className="max-sm:sr-only">Einstellungen</span>
+                    <span className="max-sm:sr-only">{VIEW_LABELS[option]}</span>
                   </>
                 ) : (
                   VIEW_LABELS[option]
@@ -436,7 +529,7 @@ export function MapSection({ initialNearby, cities, defaultCity }: MapSectionPro
           Karte am meisten zählt, weil es keinen Vorschlag gibt – war die
           Kopfzeile dadurch 125 px hoch statt 80.
         */}
-        {view !== "settings" && (
+        {(view === "map" || view === "list") && (
           <div className="mt-0.5 flex items-center gap-2">
             <p
               aria-live="polite"
@@ -542,6 +635,7 @@ export function MapSection({ initialNearby, cities, defaultCity }: MapSectionPro
                 cityName={cityNameOf(selected.city)}
                 importedAt={cityBySlug.get(selected.city)?.importedAt ?? null}
                 mapsTarget={mapsTarget}
+                accountEmail={user?.email ?? null}
                 onClose={() => setSelected(null)}
               />
             )}
@@ -556,9 +650,21 @@ export function MapSection({ initialNearby, cities, defaultCity }: MapSectionPro
               onSelect={select}
             />
           </div>
+        ) : view === "feedback" ? (
+          <div className="h-full overflow-y-auto px-4 py-4">
+            {/* Ein gemeldeter Parkplatz führt über `select` auf die Karte –
+                dieselbe Bewegung wie aus der Liste, samt Detailansicht und
+                Luftlinie. Die Meldung wird damit sofort nachprüfbar. */}
+            <FeedbackAdmin onShowSpot={select} />
+          </div>
         ) : (
           <div className="h-full overflow-y-auto px-4 py-4">
-            <SettingsPanel detected={detected} onMapsPreferenceChange={setMapsPreference} />
+            <SettingsPanel
+              detected={detected}
+              onMapsPreferenceChange={setMapsPreference}
+              user={user}
+              onUserChange={setUser}
+            />
           </div>
         )}
       </main>

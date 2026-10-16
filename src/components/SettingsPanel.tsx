@@ -9,6 +9,8 @@ import {
 } from "@/lib/maps-preference";
 import { mapsShortLabel } from "@/lib/navigation";
 import type { MapsTarget } from "@/lib/navigation";
+import type { PublicUser } from "@/lib/auth/user";
+import { AccountPanel } from "./AccountPanel";
 import { DataDisclaimer } from "./DataDisclaimer";
 import { FeedbackButton } from "./FeedbackButton";
 import { ThemeToggle } from "./ThemeToggle";
@@ -33,9 +35,18 @@ interface SettingsPanelProps {
   detected: MapsTarget;
   /** Meldet eine geänderte Karten-App nach oben, damit sie sofort gilt. */
   onMapsPreferenceChange: (preference: MapsPreference) => void;
+  /** Angemeldetes Konto, falls eines besteht. */
+  user: PublicUser | null;
+  /** Meldet An- und Abmelden nach oben – davon hängen die Reiter ab. */
+  onUserChange: (user: PublicUser | null) => void;
 }
 
-export function SettingsPanel({ detected, onMapsPreferenceChange }: SettingsPanelProps) {
+export function SettingsPanel({
+  detected,
+  onMapsPreferenceChange,
+  user,
+  onUserChange,
+}: SettingsPanelProps) {
   const [preference, setPreference] = useState<MapsPreference | null>(null);
 
   // Erst nach dem Laden lesen: Auf dem Server gibt es keinen Speicher, und
@@ -97,21 +108,45 @@ export function SettingsPanel({ detected, onMapsPreferenceChange }: SettingsPane
           </div>
         </fieldset>
 
+        {/*
+          Stand bis zum 2026-10-11 auf „Sobald es Benutzerkonten gibt, lässt
+          sie sich geräteübergreifend speichern" – seit es Konten gibt, war
+          das eine Zusage, die die App nicht einlöst. Die Auswahl liegt
+          weiterhin nur im Browser; sie ins Konto zu übernehmen, steht als
+          ToDo 11.3a offen.
+        */}
         <p className="mt-2 text-xs text-neutral-500">
-          Die Auswahl gilt nur auf diesem Gerät. Sobald es Benutzerkonten gibt, lässt sie sich
-          geräteübergreifend speichern.
+          Die Auswahl gilt nur auf diesem Gerät – auch mit Konto.
         </p>
       </section>
 
       <section aria-labelledby="feedback-heading">
         <h2 id="feedback-heading" className="text-base font-semibold">
-          Fehler melden
+          Fehler melden oder Vorschlag schicken
         </h2>
         <p className="mt-1 mb-2 text-sm text-neutral-600 dark:text-neutral-400">
           Stimmt etwas nicht? Fehlt ein Parkplatz oder gibt es einen nicht mehr? Rückmeldungen sind
-          die einzige Quelle, die solche Änderungen bemerkt.
+          die einzige Quelle, die solche Änderungen bemerkt. Wenn du magst, kannst du eine
+          E-Mail-Adresse angeben – dann antworten wir dir.
         </p>
-        <FeedbackButton />
+        <FeedbackButton accountEmail={user?.email ?? null} />
+      </section>
+
+      {/*
+        Das Konto steht **zuletzt**, und das ist Absicht: Es ist das, was die
+        wenigsten brauchen. Darstellung und Karten-App betreffen jede:n, eine
+        Anmeldung niemanden, der nur einen Parkplatz sucht (ToDo 11.2 –
+        „Anmeldung so spät wie möglich verlangen").
+      */}
+      <section aria-labelledby="konto-heading">
+        <h2 id="konto-heading" className="text-base font-semibold">
+          Konto
+        </h2>
+        <p className="mt-1 mb-2 text-sm text-neutral-600 dark:text-neutral-400">
+          Freiwillig. Die App funktioniert ohne Konto vollständig – auch das Melden von Fehlern. Ein
+          Konto merkt sich nur, dass deine Rückmeldungen zusammengehören.
+        </p>
+        <AccountPanel user={user} onUserChange={onUserChange} />
       </section>
     </div>
   );

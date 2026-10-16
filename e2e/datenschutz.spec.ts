@@ -58,7 +58,16 @@ test("fragt keine fremden Dienste und setzt keine Tracker", async ({ page, conte
   const fremdeSchluessel = schluessel.filter((key) => !key.startsWith("wheelee-"));
   expect(fremdeSchluessel).toEqual([]);
 
-  // Cookies: Im Entwicklungsbetrieb setzt Next.js einen für das Nachladen.
+  /*
+   * Cookies: Im Entwicklungsbetrieb setzt Next.js einen für das Nachladen.
+   *
+   * Seit es Konten gibt (2026-10-11), kennt die App genau **ein** eigenes
+   * Cookie: das Sitzungstoken nach dem Anmelden. Dieser Durchlauf meldet sich
+   * nirgends an – es darf hier also keines geben. Das ist der eigentliche
+   * Punkt der Prüfung: Wer die App nur benutzt, bekommt nichts gesetzt, und
+   * ein Cookie, das schon vor der Anmeldung käme, wäre eine Wiedererkennung
+   * ohne Anlass.
+   */
   const cookies = (await context.cookies()).filter(
     (cookie) => !cookie.name.startsWith("__next_hmr"),
   );

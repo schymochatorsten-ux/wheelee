@@ -47,3 +47,8 @@ next-env.d.ts
 # Import-Zwischenergebnisse (Rohtext, Geocoding-Cache-Rohdaten)
 /data/raw/
 
+# Die Datenbank der Entwicklung (Konten, Rückmeldungen). Sie entsteht beim
+# ersten Start und gehört niemandem außer diesem Rechner – im Betrieb liegt
+# sie in einem Docker-Volume, nicht im Arbeitsbaum.
+/.data/
+

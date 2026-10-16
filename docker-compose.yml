@@ -24,11 +24,28 @@ services:
     environment:
       - NODE_ENV=production
       - TZ=Europe/Berlin
-    # Kein Volume: Die Parkplatzdaten sind statisch ins Bundle importiert,
-    # die App schreibt nichts. Ein Deploy ist deshalb immer ein Neubau und
-    # kann nichts verlieren.
+    # ADMIN_EMAILS gehört **nicht** hierher, sondern in `/opt/wheelee/.env`:
+    # Diese Datei liegt im Repository, und eine E-Mail-Adresse darin wäre
+    # öffentlich – genau der Mangel, der den `mailto:`-Weg in Abschnitt 17
+    # erledigt hat. Ohne die Datei startet die App trotzdem; dann hat nur
+    # niemand Zugriff auf die Rückmeldungen (siehe `deploy/env.beispiel`).
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      # Konten und Rückmeldungen (SQLite). **Ein benanntes Volume und kein
+      # Bind-Mount** – so sieht es das Backup-Schema des NAS vor.
+      #
+      # Das ist die Stelle, an der ein Deploy nicht mehr folgenlos ist: Vorher
+      # war jeder Neubau ein vollständiger Ersatz, der nichts verlieren
+      # konnte, weil die App nur gelesen hat. Jetzt gibt es Daten, die den
+      # Neubau überleben müssen.
+      - wheelee-data:/app/var
     logging:
       driver: json-file
       options:
         max-size: "10m"
         max-file: "3"
+
+volumes:
+  wheelee-data:
