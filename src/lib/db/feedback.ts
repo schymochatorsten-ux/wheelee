@@ -1,5 +1,6 @@
 import { createHash } from "node:crypto";
 import { db, now } from "./sqlite";
+import { maybePurge } from "./cleanup";
 import type { FeedbackKind, FeedbackStatus, ValidFeedback } from "../feedback";
 
 /**
@@ -87,6 +88,11 @@ function deviceHash(deviceId: string | null): string | null {
 
 /** Eine Meldung ablegen und ihre Nummer zurückgeben. */
 export function saveFeedback(input: ValidFeedback, accountId: string | null): number {
+  // Beim Schreiben aufräumen (17.5), höchstens einmal am Tag. Eine eingehende
+  // Meldung ist der verlässlichste wiederkehrende Zugriff, den diese App hat –
+  // verlässlicher als ein Blick in die Übersicht.
+  maybePurge();
+
   const result = db()
     .prepare(
       `INSERT INTO feedback
@@ -123,6 +129,11 @@ export interface FeedbackFilter {
  * hilft „von torsten@…" weiter, eine UUID nicht.
  */
 export function listFeedback(filter: FeedbackFilter = {}): FeedbackEntry[] {
+  // Auch hier, damit abgelaufene Einträge dem Administrator nicht noch einmal
+  // vorgelegt werden – er soll nicht über Daten entscheiden, die längst zu
+  // löschen waren.
+  maybePurge();
+
   const where: string[] = [];
   const values: string[] = [];
 

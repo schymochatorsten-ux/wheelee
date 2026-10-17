@@ -85,6 +85,92 @@ test.describe("Zielsuche", () => {
     await expect(page.getByText("Darüber hinaus")).toBeVisible();
   });
 
+  /*
+   * Die Nähe-Sortierung geschieht auf dem Server (`orderByProximity`), und
+   * dessen Unit-Tests prüfen sie. Hier wird die Übergabe geprüft: Kommt der
+   * Bezugspunkt überhaupt in der Anfrage an? Ohne ihn fällt der Server
+   * stillschweigend auf Nominatims Reihenfolge zurück – es gäbe keinen
+   * Fehler, nur wieder eine Liste aus ganz Deutschland.
+   */
+  test("schickt den Standort als Bezugspunkt mit, gerundet", async ({ page }) => {
+    await page.goto("/");
+    await page.getByRole("button", { name: /Wohin willst du/ }).click();
+
+    const anfrage = page.waitForRequest((request) => request.url().includes("/api/geocode"));
+    await page.getByRole("combobox").fill("Uniklinik");
+
+    const params = new URL((await anfrage).url()).searchParams;
+    expect(Number(params.get("lat"))).toBeCloseTo(KOELN.latitude, 1);
+    expect(Number(params.get("lng"))).toBeCloseTo(KOELN.longitude, 1);
+
+    // Gerundet auf zwei Stellen: Der genaue Standort wird für die Sortierung
+    // nicht gebraucht, also verlässt er das Gerät auch nicht.
+    expect(params.get("lat")).not.toContain("50.938000");
+    expect(Number(params.get("lat")) * 100).toBe(Math.round(Number(params.get("lat")) * 100));
+  });
+
+  test("nennt die Entfernung an jedem Vorschlag", async ({ page }) => {
+    await page.goto("/");
+    await page.getByRole("button", { name: /Wohin willst du/ }).click();
+    await page.getByRole("combobox").fill("Uniklinik");
+
+    /*
+     * Zwischen zehn gleichnamigen Straßen ist die Entfernung die Angabe, die
+     * überhaupt erst entscheiden lässt. Das Ziel liegt rund 2,5 km entfernt,
+     * also muss eine Kilometerangabe dastehen.
+     */
+    await expect(page.getByRole("option", { name: new RegExp(ZIEL.label) })).toContainText(/km/);
+  });
+
+  test("Eingabe löschen leert das Feld und lässt die Suche offen", async ({ page }) => {
+    await page.goto("/");
+    await page.getByRole("button", { name: /Wohin willst du/ }).click();
+
+    const feld = page.getByRole("combobox");
+    await feld.fill("Uniklinik");
+    await expect(page.getByRole("option", { name: new RegExp(ZIEL.label) })).toBeVisible();
+
+    await page.getByRole("button", { name: "Eingabe löschen" }).click();
+
+    // Leer, aber offen: Wer neu ansetzt, will nicht erst wieder aufklappen.
+    await expect(feld).toHaveValue("");
+    await expect(feld).toBeVisible();
+    await expect(page.getByRole("option", { name: new RegExp(ZIEL.label) })).toHaveCount(0);
+  });
+
+  test("Enter sucht sofort, ohne auf die Tippause zu warten", async ({ page }) => {
+    await page.goto("/");
+    await page.getByRole("button", { name: /Wohin willst du/ }).click();
+
+    /*
+     * Der Fall war vorher eine Sackgasse: vollständige Adresse getippt, Enter
+     * gedrückt, bevor die 350 ms um waren – und die App tat nichts. Hier wird
+     * deshalb mit `pressSequentially` getippt und sofort Enter gedrückt.
+     */
+    await page.getByRole("combobox").pressSequentially("Uniklinik");
+    await page.getByRole("combobox").press("Enter");
+
+    await expect(page.getByText(`Parkplatz bei ${ZIEL.label}`)).toBeVisible();
+  });
+
+  test("bei nicht erreichbarer Ortssuche steht ein zweiter Versuch bereit", async ({
+    page,
+    context,
+  }) => {
+    // Nominatim antwortet unter Last auch mal nicht. Vorher musste man einen
+    // Buchstaben löschen und neu tippen, um es noch einmal zu versuchen.
+    await context.route("**/api/geocode**", (route) =>
+      route.fulfill({ json: { places: [], error: "Suche gerade nicht erreichbar." } }),
+    );
+
+    await page.goto("/");
+    await page.getByRole("button", { name: /Wohin willst du/ }).click();
+    await page.getByRole("combobox").fill("Uniklinik");
+
+    await expect(page.getByText("Die Ortssuche ist gerade nicht erreichbar.")).toBeVisible();
+    await expect(page.getByRole("button", { name: "Erneut" })).toBeVisible();
+  });
+
   test("Ziel aufheben führt zurück zum eigenen Standort", async ({ page }) => {
     await page.goto("/");
     await page.getByRole("button", { name: /Wohin willst du/ }).click();

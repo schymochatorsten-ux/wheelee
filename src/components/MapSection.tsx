@@ -594,6 +594,11 @@ export function MapSection({
               <div className="pointer-events-none absolute inset-x-0 top-0 z-[1000] flex flex-col items-stretch gap-1.5 p-2">
                 <DestinationSearch
                   destination={destination}
+                  // Derselbe Bezugspunkt wie für die Auswahl: Ziel, wenn eines
+                  // gesetzt ist, sonst der eigene Standort. Die Ortssuche
+                  // ordnet ihre Treffer danach – wer „Bahnhofstraße" tippt,
+                  // meint die in seiner Nähe.
+                  reference={reference}
                   onChoose={chooseDestination}
                   onClear={() => setDestination(null)}
                 />

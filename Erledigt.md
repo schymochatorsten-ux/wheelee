@@ -10,9 +10,9 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand:** 109 Einträge auf oberster Ebene (108 `[x]` plus 2e.10 als `[~]`,
+**Stand:** 112 Einträge auf oberster Ebene (111 `[x]` plus 2e.10 als `[~]`,
 dessen gebauter Teil hier steht und dessen offener Rest in `ToDos.md` bleibt),
-zuletzt ergänzt 2026-10-11. Gezählt werden die Einträge der obersten Ebene; die
+zuletzt ergänzt 2026-10-17. Gezählt werden die Einträge der obersten Ebene; die
 Unterpunkte darunter sind Begründung, keine eigenen Aufgaben.
 
 > **Am 2026-10-16 abgeglichen.** Die Abschnitte 11 (Benutzerkonten) und 17
@@ -342,6 +342,98 @@ und was liegt dazwischen?"
   - **Warum es trotzdem keine echte Autovervollständigung ist:** Nominatims Nutzungsbedingungen nennen eine Abfrage je Sekunde als Obergrenze und führen Autovervollständigung ausdrücklich als unerwünschte Nutzung auf. Eine Anfrage je Tastendruck wäre nicht Ungeschicklichkeit, sondern ein Verstoß mit Sperre als Folge – und der Dienst wird von Freiwilligen bezahlt, derselbe Grundsatz wie bei Overpass.
   - **Der Weg stattdessen:** Gesucht wird erst nach 350 ms ohne Tastendruck, also einmal je Wortpause statt je Buchstabe. Jede Antwort bleibt im Browser (`cache` in `DestinationSearch.tsx`), sodass Löschen und Neutippen nichts kostet; der Server legt zusätzlich eine Stunde lang ab. Das fühlt sich an wie Autovervollständigung, ohne sich wie Missbrauch zu verhalten.
   - Soll es wirklich bei jedem Buchstaben vorschlagen, braucht es einen eigenen Geocoder. Das ist eine Entscheidung mit Kosten, keine Einstellung – deshalb steht es nicht als Schalter da.
+
+---
+
+## 6. Karte und Standort (Fortsetzung 2026-10-16)
+
+- [x] 6.23 **Die Zielsuche ordnet ihre Treffer nach Nähe** (2026-10-16, auf Zuruf: „viel schlechter als Google Maps").
+
+  **Der Befund war handfest und nicht eine Frage des Geschmacks.** `/api/geocode` fragte Nominatim **ohne jeden Ortsbezug**. Nominatim sortiert dann nach `importance`, einer Kennzahl aus Wikipedia-Verweisen und Objektart – eine Antwort auf die Frage „was ist das bekannteste Objekt dieses Namens in Deutschland". Die Frage der Nutzerin ist eine andere. Gemessen am 2026-10-16, Suche nach „Bahnhofstraße":
+
+  | ohne Bezugspunkt (vorher)               | von Köln aus (jetzt)          |
+  | --------------------------------------- | ----------------------------- |
+  | Werben, Burg (Spreewald)                | Sürth, Rodenkirchen, **Köln** |
+  | Altstadt, Mitte, Hannover               | Porz, **Köln**                |
+  | Hänichen, Bannewitz, Sächsische Schweiz | Angermund, **Düsseldorf**     |
+  | Sankt Peter, Walchsing, Aldersbach      | Schöntal, Alt-Wetter, Wetter  |
+  | Kernstadt, Heilbronn                    |                               |
+
+  Es gibt die Bahnhofstraße in über 5.000 deutschen Gemeinden. Die eigene stand nicht in der Liste – nicht weiter unten, sondern gar nicht.
+
+  **Die Regel steht in `lib/geocode.ts` und ist in zwei Stufen geteilt**, weil eine nicht genügt:
+  - **Was im Umkreis von 50 km liegt, kommt zuerst, nach Entfernung sortiert.** Zwischen zwei Bahnhofstraßen in Reichweite entscheidet die Entfernung, nicht die Bekanntheit.
+  - **Alles Weitere behält Nominatims Reihenfolge.** Jenseits davon ist die Entfernung keine Auskunft mehr: Zwischen zwei Treffern in 300 und 400 km entschiede sie nach Zufall, während die Bekanntheit immerhin ein Hinweis darauf ist, was gemeint war. Eine durchgehende Sortierung nach Entfernung hätte ein zweites Problem erzeugt statt das erste zu lösen.
+
+  **Der Bezugspunkt geht als `viewbox` mit, aber ohne `bounded=1`** – das ist kein Detail. `bounded=1` würde alles außerhalb wegwerfen; von Köln aus fände man Hamburg dann nicht mehr, und eine weite Fahrt zu planen ist genau der Fall, für den die Zielsuche gebaut wurde (6.12). Ohne `bounded` gewichtet Nominatim das Fenster nur höher, und die eigentliche Sortierung geschieht hier, wo sie nachvollziehbar und geprüft ist.
+
+  **Der Standort wird auf zwei Dezimalstellen gerundet** (rund ein Kilometer), bevor er die App verlässt. Zwei Gründe, und der zweite wäre sonst übersehen worden: Für die Sortierung ist ein Kilometer genau genug, also wird mehr nicht geschickt (Abschnitt 10) – **und ungerundet wäre der Zwischenspeicher wirkungslos gewesen.** Ein GPS-Standort schwankt bei jedem Messwert in der sechsten Dezimalstelle; jede Messung hätte einen eigenen Schlüssel bekommen, und derselbe Begriff zweimal getippt wären zwei Anfragen an Nominatim. Die Schonung des Dienstes aus 6.20 hätte sich damit still selbst aufgehoben.
+
+  **Dubletten werden zusammengeführt, und die zweite Regel dafür kam erst aus der Probe gegen echte Daten:**
+  - Gleiche Beschriftung unter **150 m** Abstand. Maßgeblich ist die Ausdehnung eines großen Gebäudes, nicht die Messgenauigkeit: OpenStreetMap kennt dasselbe Haus oft als Adresspunkt **und** als Gebäudefläche, und beim Hamburger Rathaus liegen die beiden 98 m auseinander – es stand zweimal in der Liste. Eine zuerst angesetzte Grenze von 30 m („eine Straßenbreite") war am Schreibtisch plausibel und in der Sache zu eng.
+  - Gleiche Beschriftung **und** gleiche Unterzeile, ohne Rücksicht auf den Abstand. Eine Straße ist in OpenStreetMap in Abschnitte geteilt und Nominatim liefert jeden einzeln: Von Köln aus stand dreimal „Bahnhofstraße | Porz, Köln" da – drei Zeilen für dieselbe Straße, auf Kosten der echten Alternativen. Eine **leere** Unterzeile gilt dabei ausdrücklich nicht als Übereinstimmung, sonst bliebe von zehn Treffern ohne Ortsangabe genau einer übrig.
+
+  **Beides zusammen ist der Grund, warum es jetzt acht Vorschläge statt fünf sein dürfen** (geholt werden 15): Vorher blieben nach dem Entdoppeln drei brauchbare Zeilen übrig. Die Last bleibt gleich – es ist weiter **eine** Anfrage, nur mit größerem Ergebnis.
+
+  **Vier Dinge an der Bedienung, jedes davon eine Sackgasse, die wirklich dastand:**
+  - **Enter tat nichts**, solange die 350 ms Tippause noch liefen. Wer eine vollständige Adresse tippt und Enter drückt – der Normalfall – bekam keinen Treffer, keine Meldung, keinen Hinweis. Jetzt sucht Enter sofort und übernimmt den besten Treffer. Dass dabei ungesehen ein Ziel gesetzt wird, ist vertretbar: Es ist derselbe Treffer, den Enter auch bei sichtbarer Liste nimmt, er steht danach mit Namen in der Zielzeile, und ein Fehlgriff kostet einen Druck auf „Ziel aufheben".
+  - **Die Eingabe ließ sich nicht löschen.** Nur über „alles markieren" oder langes Drücken der Rücktaste – einhändig auf dem Telefon kaum zu machen, und genau dann nötig, wenn die Treffer nicht passen. Der ×-Knopf leert das Feld und lässt die Suche offen. Der Knopf zum Zuklappen daneben wurde deshalb zum **Pfeil**: zwei gleich aussehende ×-Knopfe nebeneinander wären nicht auseinanderzuhalten gewesen.
+  - **Bei einem Fehler gab es keinen zweiten Versuch.** Nominatim antwortet unter Last auch mal nicht; man musste einen Buchstaben löschen und neu tippen. Jetzt steht „Erneut" neben der Meldung.
+  - **Zwei Suchen konnten sich überholen.** „Köln" braucht länger als „Kölner Dom", wenn die erste nicht im Zwischenspeicher lag – die späte Antwort überschrieb dann die richtige Liste, und man las Vorschläge zu einem Wort, das nicht mehr im Feld stand. Ein Zähler verwirft überholte Antworten.
+
+  **Die Entfernung steht jetzt an jedem Vorschlag**, aber nur mit Bezugspunkt. Sie ist die Angabe, die zwischen zehn gleichnamigen Straßen überhaupt erst entscheiden lässt – „Bahnhofstraße, 1,2 km" gegen „Bahnhofstraße, 340 km". Ohne Standort und ohne gesetztes Ziel steht dort **nichts**: Eine Entfernung ab der Stadtmitte wäre keine Auskunft, sondern Zufall. Dasselbe gilt für die Sortierung, die dann unverändert die des Dienstes bleibt.
+
+  **Was absichtlich nicht geändert wurde:** die zugeklappte Schaltfläche „Wohin willst du?" (auf Nachfrage bestätigt), die 350 ms Tippause und die Mindestlänge von drei Zeichen. Alle drei stehen aus einem genannten Grund da – Platz für die Karte (9.15) und die Nutzungsbedingungen von Nominatim (6.20) –, und „schneller vorschlagen" hieße einen eigenen Geocoder zu betreiben. Das bleibt eine Entscheidung mit Kosten, keine Einstellung.
+
+  **Ein Fallstrick aus [CLAUDE.md](CLAUDE.md) ist beim Schreiben der Tests sofort zugeschnappt:** `„Deutschland"` in einem Testnamen beendet die Zeichenkette am ASCII-Anführungszeichen. Der Parser hat es gemeldet, die Datei ließ sich nicht laden – anders als bei den beschädigten Umlauten, die seinerzeit grün durchliefen. Behoben mit `'…'` als äußerer Begrenzung.
+
+  Geprüft mit **16 neuen Unit-Tests** (`src/lib/geocode.test.ts`, Reihenfolge und Entdopplung) und **5 neuen E2E-Tests** (Bezugspunkt in der Anfrage und seine Rundung, Entfernung am Vorschlag, Löschen, Enter, „Erneut"). Dazu die Probe gegen echte Nominatim-Daten, aus der die zweite Entdopplungsregel und die 150 m überhaupt erst kamen – **am Schreibtisch wäre beides nicht aufgefallen.**
+
+---
+
+## 17 / 10. Aufräumen und Sicherheit (2026-10-17)
+
+- [x] 17.5 **Erledigte Rückmeldungen laufen nach zwölf Monaten ab** (2026-10-17, `src/lib/db/cleanup.ts`).
+
+  Eine Tabelle, die nur wächst, wird nach einem Jahr nicht mehr gelesen – und personenbezogene Angaben, die niemand mehr braucht, gehören gelöscht. Das ist hier nicht Ordnungsliebe, sondern die Speicherbegrenzung aus Art. 5 Abs. 1 lit. e DSGVO. **Vor allem aber stand im Formular eine Zusage, die niemand einlöste:** `CONTACT_PRIVACY` verspricht, die freiwillige Antwortadresse werde „mit der Meldung gelöscht". Gelöscht wurde bis hierher nichts.
+
+  **Gerechnet wird ab der Erledigung, nicht ab dem Eingang** (`COALESCE(updated_at, created_at)`). Der Unterschied ist kein Detail: Eine Meldung, die dreizehn Monate offen lag und gestern abgeschlossen wurde, verschwände sonst noch am selben Tag – und niemand könnte mehr nachsehen, worauf sich die Korrektur stützte. Ein Test hält genau diesen Fall fest.
+
+  **Offene Meldungen laufen nicht ab, und das ist Absicht.** Eine Meldung, die niemand bearbeitet hat, ist nicht erledigt, sondern liegen geblieben. Sie nach einer Frist zu löschen hieße, einen Hinweis auf einen womöglich falschen Parkplatz zu verlieren, **weil sich niemand darum gekümmert hat** – die Nachlässigkeit würde ihre eigenen Spuren beseitigen. Was daraus folgt, steht als neuer Punkt 17.6 in `ToDos.md`: Die Adresse an einer ewig offenen Meldung bleibt damit ebenso ewig stehen, und das ist die verbliebene Lücke.
+
+  **Zwölf Monate sind nicht gegriffen:** Die Spanne überdeckt einen vollständigen Jahreslauf der Datenpflege – ein halbjährlicher Vollimport und eine halbjährliche Validierung fallen garantiert hinein. Eine Meldung bleibt also mindestens so lange nachlesbar, wie sie für die Prüfung der Daten noch etwas beitragen kann.
+
+  **Dabei kam eine zweite Lücke heraus, die nicht auf der Liste stand:** Abgelaufene Sitzungen verschwanden bisher erst beim nächsten Versuch, sie zu benutzen (`accountForSession`). Wer sich einmal anmeldet und nie wiederkommt, hinterließ damit **dauerhaft** eine Zeile, die sein Konto mit einem Zeitpunkt verknüpft – nutzlos und länger aufbewahrt als nötig. Sie werden jetzt mitgelöscht.
+
+  **Kein Zeitgeber, und das ist eine Abwägung mit benannter Grenze.** Die App ist ein einzelner Container ohne Hintergrundprozess; ein `setInterval` in einem Next-Modul läuft je nach Laufzeitumgebung gar nicht oder mehrfach. Der Lauf hängt sich deshalb an die Zugriffe, die es ohnehin gibt – eine eingehende Meldung, ein Blick in die Übersicht –, höchstens einmal am Tag. Käme über Monate weder das eine noch das andere, liefe er gar nicht. Eine Frist von zwölf Monaten verträgt eine Verzögerung von Tagen, aber das ist eine **Annahme über den Betrieb und keine Zusage der Technik**; sobald es den monatlichen Lauf aus 4.5 gibt, gehört `purgeExpired` dort hinein. Vom Öffnen der Datenbank aus ginge es nicht: `cleanup.ts` benutzt `db()`, ein Aufruf aus `sqlite.ts` wäre ein Importzyklus.
+
+  Geprüft mit **11 Unit-Tests** gegen eine echte Datenbank – die Bedingung steckt in SQL, und dort wäre ein Fehler unsichtbar: Er löschte entweder zu viel oder nie etwas, und beides fiele erst nach Monaten auf.
+
+- [x] 10.3 **Sicherheits-Kopfzeilen** (2026-10-17, `next.config.ts`, Teil der Sicherheitsprüfung aus 10.3).
+
+  **Der Befund zuerst: Die App lieferte keine einzige davon aus.** Keine Inhaltsrichtlinie, kein `nosniff`, kein Schutz gegen fremde Rahmen, keine `Referrer-Policy`, keine `Permissions-Policy`. Für eine Seite, die offen unter wheelee.de steht, Standortzugriff anfragt und eine Anmeldung mit Sitzungscookie führt, ist das kein Schönheitsfehler.
+
+  **Gesetzt werden sie von der Anwendung, nicht vom Nginx Proxy Manager.** Drei Gründe: Sie gehören zur Anwendung und ändern sich mit ihr; im Proxy wären sie für Torsten nicht einsehbar (er hat keinen NPM-Zugang, siehe `wheelee-infrastruktur.md`); und im Entwicklungsbetrieb gäbe es sie dann gar nicht – also genau dort nicht, wo ein Verstoß auffallen müsste.
+
+  Was gesetzt wird und warum, im Einzelnen:
+  - **`frame-ancestors 'none'` und `X-Frame-Options: DENY`.** Bei einer Karten-App ist Clickjacking nicht theoretisch: Wer die Seite unsichtbar über eine andere legt, kann Klicks auf Knöpfe lenken, die Standortfreigabe oder Navigation auslösen.
+  - **`Permissions-Policy`.** Die App braucht genau **eine** Gerätefunktion, den Standort. Kamera, Mikrofon, Zahlung und USB stehen ausdrücklich auf leer, damit ein späterer Einbau nicht stillschweigend Zugriff bekommt.
+  - **`Referrer-Policy: strict-origin-when-cross-origin`.** Beim Sprung in Google Maps soll die Adresse der eigenen Seite nicht mitgehen. Sie enthält keinen Standort – der verlässt das Gerät nirgends –, aber den gewählten Parkplatz, und das ist eine Angabe über eine Behinderung.
+  - **`Strict-Transport-Security`, ein Jahr, aber ohne `includeSubDomains` und ohne `preload`.** Das ist eine Entscheidung und kein Vergessen: Der Webhook aus Abschnitt 6 des Infrastruktur-Briefings soll womöglich unter `deploy.wheelee.de` laufen. `includeSubDomains` legte jeden künftigen Unterbereich für ein Jahr auf HTTPS fest – auch einen ohne Zertifikat, und ohne Weg zurück in einem Browser, der es sich gemerkt hat.
+
+  **Was die Inhaltsrichtlinie nicht leistet, steht ausdrücklich dabei.** Sie führt `'unsafe-inline'` bei den Skripten, weil Next die Hydrationsdaten inline schreibt und das Theme-Skript in `layout.tsx` vor dem ersten Zeichnen laufen muss. Damit ist sie **kein Schutz vor eingeschleustem Code in der eigenen Seite**; dafür bräuchte es eine Nonce je Anfrage und eine Middleware. Was sie leistet: Kein fremder Server darf Skripte liefern – der Weg, über den ein nachlässig eingebundenes Analysewerkzeug oder eine kompromittierte CDN-Adresse in einer kleinen App tatsächlich landet. Es wäre unredlich, sie ohne diesen Hinweis als XSS-Schutz zu führen.
+
+  **Zwei Ausnahmen, beide nötig und beide eng gefasst:**
+  - Im **Entwicklungsbetrieb** kommen `'unsafe-eval'` und `ws:` dazu, sonst startet die App im Browser gar nicht (React Refresh wertet mit `eval` aus, das Nachladen läuft über WebSocket). Sie hängen an `NODE_ENV`; im Produktionsbau sind sie nicht da. Eine Richtlinie, die man zum Entwickeln aufweicht und dann aufgeweicht ausliefert, wäre keine.
+  - Der **Service Worker bekommt keine Inhaltsrichtlinie.** Die CSP eines Worker-Skripts gilt für den Worker selbst, und der holt Kartenkacheln von `tile.openstreetmap.org`. Unter `connect-src 'self'` gäbe es im Funkloch keine Karte mehr, sondern nur eine Liste – die Hälfte dessen, wofür 12.8/12.9 gebaut wurden. Die übrigen Kopfzeilen bekommt er.
+
+  **Ein Irrtum unterwegs, und er gehört hierher, weil er die Art Fehler ist, die diese Datei sammeln soll.** Im eingebetteten Browser scheiterte `register('/sw.js')` mit „An unknown error occurred when fetching the script", und die naheliegende Erklärung war die neue CSP – die Begründung stand schon im Code. Die Gegenprobe **ohne jede Kopfzeile** ergab denselben Fehler: Es ist eine Eigenschaft jener Umgebung. Die Ausnahme für den Service Worker bleibt richtig, aber aus dem anderen Grund (den Kacheln), und die falsche Begründung ist aus dem Code heraus. **Eine plausible Ursache ist keine gemessene.**
+
+  Dabei wurde auch eine **Hintertür wieder entfernt**, die für genau diese Gegenprobe entstanden war: ein `WHEELEE_NO_HEADERS=1`, das alle Kopfzeilen abschaltet. Ein solcher Schalter ist selbst eine Schwachstelle – er stünde in der `.env` auf dem NAS neben Dingen, die man tatsächlich umstellt, und eine versehentlich gesetzte Variable fiele niemandem auf, weil die Seite weiterläuft.
+
+  Festgehalten von **5 E2E-Tests** (`e2e/sicherheit.spec.ts`). Der Grund für Tests ausgerechnet hier: Fehlt eine dieser Zeilen, **geht nichts kaputt.** Die App läuft tadellos weiter, nur der Schutz ist weg – und das sieht niemand.
+
+  **Was die Prüfung sonst ergab, und zwar ohne Befund:** Passwörter liegen als scrypt-Hash mit Parametern im Hash; das Sitzungstoken steht nur als SHA-256 in der Datenbank; `authenticate` rechnet auch bei unbekannter Adresse einen Hash, sodass die Antwortzeit keine Adressen verrät; `timingSafeEqual` beim Vergleich; `httpOnly` und `sameSite: "lax"` am Cookie, womit die schreibenden Endpunkte ohne eigenes Token gegen CSRF geschützt sind; alle Abfragen laufen über vorbereitete Anweisungen, auch die mit zusammengesetztem `WHERE`; jeder `target="_blank"` trägt `rel="noopener noreferrer"`; die einzige zusammengebaute Adresse (`mailto:`) kann wegen `looksLikeEmail` kein `javascript:` werden; die Zugangsprüfung der Übersicht sitzt serverseitig und antwortet auch angemeldeten Nicht-Administratoren mit 401 statt 403. **Diese Aufzählung steht hier, damit die nächste Prüfung nicht bei null anfängt.**
 
 ---
 

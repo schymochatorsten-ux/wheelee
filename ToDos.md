@@ -7,7 +7,7 @@ aktuell gehalten werden, steht in [Datenpflege.md](Datenpflege.md).
 
 **Status-Legende:** `[ ]` offen · `[~]` in Arbeit · `[x]` erledigt · `[!]` blockiert / Entscheidung nötig · `[-]` verworfen / später
 
-**Letzte Aktualisierung:** 2026-10-16
+**Letzte Aktualisierung:** 2026-10-17
 
 **Endziel:** jeden öffentlichen Behindertenparkplatz in Deutschland erfassen,
 der sich aus einer öffentlichen Quelle importieren lässt – siehe
@@ -37,7 +37,25 @@ Unterbrechung nahtlos weitergearbeitet werden kann.
 **Gerade in Arbeit:** nichts. Die Arbeit ist an einem sauberen Punkt beendet:
 alle Prüfungen grün, keine halbfertige Änderung im Baum.
 
-**Zuletzt am 2026-10-16:** Diese Liste war an fünf Stellen überholt – D-02,
+**Zuletzt am 2026-10-17:** Zwei Punkte ohne offene Entscheidung abgearbeitet.
+**17.5 Aufräumen**: Erledigte Rückmeldungen laufen nach zwölf Monaten ab, samt
+der freiwilligen Antwortadresse – das Formular versprach das, niemand löste es
+ein. Abgelaufene Sitzungen gehen mit. **10.3 Sicherheitsprüfung**: Die App
+lieferte **keine einzige** Sicherheits-Kopfzeile aus; CSP, `nosniff`,
+`frame-ancestors`, `Referrer-Policy`, `Permissions-Policy` und HSTS stehen
+jetzt, festgehalten von fünf E2E-Tests. Befund, Begründungen und die Liste der
+geprüften Punkte **ohne** Befund in [Erledigt.md](Erledigt.md); was daraus
+offen bleibt, steht als 10.5 und 17.6 hier.
+
+**Davor am 2026-10-16:** Die **Zielsuche ordnet ihre
+Treffer jetzt nach Nähe** (6.23, auf Zuruf). Sie fragte Nominatim ohne jeden
+Ortsbezug und bekam dessen Sortierung nach Bekanntheit zurück – wer von Köln
+aus „Bahnhofstraße" tippte, sah Treffer aus dem Spreewald, Hannover und
+Heilbronn, aber keinen aus Köln. Dazu Entfernung an jedem Vorschlag,
+Entdopplung, Löschknopf, Enter, „Erneut". Begründung und Messwerte in
+[Erledigt.md](Erledigt.md).
+
+**Davor am 2026-10-16:** Diese Liste war an fünf Stellen überholt – D-02,
 17.0 bis 17.4, 11.1/11.2 und 12.5 standen als offen oder unentschieden da,
 obwohl sie seit dem 2026-10-11 gebaut und in [Erledigt.md](Erledigt.md)
 beschrieben sind; die Stack-Tabelle nannte weiter Postgres und Vercel.
@@ -55,7 +73,7 @@ npm run test && npm run typecheck && npm run lint
 npm run check:slugs
 ```
 
-Erwartet: 254 Unit-Tests grün und
+Erwartet: 281 Unit-Tests grün und
 `Verzeichnis: 10.754 Gemeinden · davon an der Reihe: 204 · Seed-Dateien: 209`
 mit „✅ Register und Seed-Dateien stimmen überein". Weicht das ab, hat sich
 seit dem 2026-10-11 etwas geändert – **das klären, bevor Neues anfängt.**
@@ -200,12 +218,12 @@ schiefging.
 - **Abschnitt 15 (Mehrsprachigkeit)** ist auf deinen Wunsch zurückgestellt – Englisch, Spanisch und Französisch erst nach der deutschen Fassung
 - **Abschnitt 16 (nur nach Freigabe)** – derzeit: Städte zum Mitnehmen herunterladen
 
-**Stand (2026-10-16):** 51 offen, 7 in Arbeit, 3 brauchen deine Entscheidung,
+**Stand (2026-10-17):** 52 offen, 8 in Arbeit, 3 brauchen deine Entscheidung,
 9 bewusst zurückgestellt (Finanzierung, Mehrsprachigkeit, Offline-Download).
 Dazu 12 offene Unterpunkte innerhalb dieser Posten. **Gezählt wird die oberste
 Ebene** – sonst ergibt jede Sitzung eine andere Zahl.
-109 erledigte Einträge stehen in [Erledigt.md](Erledigt.md).
-**Tests: 254 Unit-Tests + 21 E2E-Tests.**
+112 erledigte Einträge stehen in [Erledigt.md](Erledigt.md).
+**Tests: 281 Unit-Tests + 30 E2E-Tests.**
 
 ---
 
@@ -403,8 +421,29 @@ sie nützt, und die höhere da, wo sie schützt.
 - [ ] 10.2 Impressum und Datenschutzerklärung – für eine veröffentlichte Seite in Deutschland Pflicht
 - [~] 10.3 Lizenz- und Attributionshinweise. ODbL-Nennung und Quellenangabe je Stadt sind fertig (siehe [Erledigt.md](Erledigt.md)).
   - [ ] Was fehlt, ist die Lizenz der 15 amtlichen Quellen, die keine angeben – beschrieben unter 2a.5.
-  - [ ] prüfe welche Datenschutz und Datensicherheits Themen noch offen sind
-  - [ ] Prüfe ob es IT Sicherheits Schwachstellen gibt die geschlossen werden müssen
+
+- [~] 10.5 **Datenschutz- und Sicherheitsprüfung.** Am 2026-10-17 durchgeführt;
+  Befund, Behebung und die Liste der geprüften Punkte **ohne** Befund stehen in
+  [Erledigt.md](Erledigt.md). Geschlossen wurden die fehlenden
+  Sicherheits-Kopfzeilen (es gab keine einzige) und die unbegrenzte
+  Aufbewahrung von Rückmeldungen und Sitzungen (17.5). Offen bleibt daraus:
+
+  - [ ] **Die Inhaltsrichtlinie führt `'unsafe-inline'` bei den Skripten** und
+        ist damit kein Schutz vor eingeschleustem Code in der eigenen Seite.
+        Next schreibt die Hydrationsdaten inline, und das Theme-Skript muss vor
+        dem ersten Zeichnen laufen. Der saubere Weg ist eine **Nonce je
+        Anfrage**, erzeugt in einer Middleware und an beide Stellen
+        durchgereicht. Das ist Apparat, den die App bisher nicht hat – deshalb
+        als eigener Punkt und nicht nebenbei.
+  - [ ] **Kein „Passwort ändern" und keine Sitzungsübersicht.** Wer vermutet,
+        dass sein Passwort bekannt ist, kann derzeit nichts tun außer sich
+        abzumelden – und das beendet nur die eine Sitzung. Nötig wäre beides
+        zusammen: Passwort ändern **und** dabei alle übrigen Sitzungen des
+        Kontos verwerfen. Hängt nicht an 11.1 (Magic Link), sondern ist davon
+        unabhängig.
+  - [ ] **Kein Konto-Löschen und keine Auskunft** – das ist 11.7 und steht
+        dort; hier nur als Querverweis, damit die Sicherheitsprüfung nicht
+        vollständig aussieht, solange das fehlt.
 
 ---
 
@@ -534,10 +573,28 @@ Administratoren, serverseitig geprüft, mit E2E-Test auf 401). Dort steht auch,
 warum E-Mail der falsche Weg war und warum die freiwillige Rückmeldeadresse
 die eine bewusste Abweichung von 17.1 ist.
 
-- [ ] 17.5 **Aufräumen gehört dazu.** Erledigte und verworfene Meldungen nach
-      einer festgelegten Frist löschen (Vorschlag: 12 Monate). Eine Tabelle, die nur
-      wächst, wird nach einem Jahr nicht mehr gelesen – und personenbezogene
-      Angaben, die niemand mehr braucht, gehören ohnehin gelöscht (Abschnitt 10).
+**17.5 (Aufräumen nach Frist) ist seit dem 2026-10-17 gebaut** – siehe
+[Erledigt.md](Erledigt.md). Daraus ergab sich ein neuer Punkt:
+
+- [ ] 17.6 **Die Adresse an einer ewig offenen Meldung bleibt ewig stehen.**
+      17.5 löscht nur **erledigte** Meldungen, und das ist richtig so: Eine
+      Meldung, die niemand bearbeitet hat, ist nicht erledigt, sondern liegen
+      geblieben; sie nach einer Frist zu löschen hieße, einen Hinweis auf einen
+      womöglich falschen Parkplatz zu verlieren, weil sich niemand darum
+      gekümmert hat.
+
+      Damit bleibt aber eine freiwillig angegebene Antwortadresse unbegrenzt
+      gespeichert, wenn die Meldung nie bearbeitet wird – und das widerspricht
+      der Zusage im Formular (`CONTACT_PRIVACY`) ebenso wie Abschnitt 10.
+
+      **Nicht einfach dieselbe Frist darüberlegen.** Zu entscheiden wäre, was
+      genau geschieht: nur die **Adresse** entfernen und den Meldungstext
+      stehen lassen (dann bleibt der Hinweis erhalten, die Antwort wird
+      unmöglich), oder offene Meldungen nach längerer Frist auf „verworfen"
+      setzen (dann greift 17.5, aber eine Maschine entscheidet über einen
+      Hinweis). Der erste Weg ist der naheliegende; er braucht aber eine
+      zweite Frist und einen Hinweis in der Übersicht, warum dort plötzlich
+      keine Adresse mehr steht.
 
 ---
 

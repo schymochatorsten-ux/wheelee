@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useId, useRef, useState } from "react";
+import { useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
 import { rememberPlace, readRecent, type Place } from "@/lib/geocode";
+import { distanceMeters, formatDistance, type LatLng } from "@/lib/geo";
 
 /**
  * Ziel eingeben und dort parken (ToDo 6.12).
@@ -26,11 +27,27 @@ import { rememberPlace, readRecent, type Place } from "@/lib/geocode";
  * verhalten. Soll es wirklich bei jedem Buchstaben vorschlagen, braucht es
  * einen eigenen Geocoder – das wäre eine Entscheidung mit Kosten, keine
  * Einstellung.
+ *
+ * **Nach Nähe geordnet** (2026-10-16). Vorher kam die Antwort so, wie Nominatim
+ * sie sortiert: nach `importance`, einer Kennzahl aus Wikipedia-Verweisen. Wer
+ * „Bahnhofstraße" tippte, bekam eine Liste aus ganz Deutschland, und die eigene
+ * stand nicht darunter – es gibt sie in über 5.000 Gemeinden. Der Bezugspunkt
+ * (Standort oder gesetztes Ziel) geht deshalb mit in die Anfrage, und die
+ * Entfernung steht an jedem Vorschlag. Die Regeln dazu stehen in `lib/geocode`.
  */
 
 interface DestinationSearchProps {
   /** Das aktuell gesetzte Ziel, falls eines gewählt wurde. */
   destination: Place | null;
+  /**
+   * Woher aus gesucht wird: eigener Standort oder gesetztes Ziel.
+   *
+   * Nur für die Reihenfolge und die Entfernungsangabe. **Er verlässt das Gerät
+   * trotzdem** – an den eigenen Server, der Nominatim fragt. Deshalb auf etwa
+   * einen Kilometer gerundet (siehe `coarse`): Für die Sortierung genügt das,
+   * und der genaue Standort wird nirgends gebraucht.
+   */
+  reference: LatLng | null;
   onChoose: (place: Place) => void;
   onClear: () => void;
 }
@@ -42,12 +59,30 @@ const MIN_CHARS = 3;
 const IDLE_MS = 350;
 
 /**
- * Antworten dieser Sitzung, nach Suchbegriff.
+ * Antworten dieser Sitzung, nach Suchbegriff **und** Bezugspunkt.
  *
  * Außerhalb der Komponente, damit sie ein Schließen und Öffnen des Feldes
  * überlebt – genau dann tippt man denselben Begriff nämlich erneut.
  */
 const cache = new Map<string, Place[]>();
+
+/**
+ * Den Bezugspunkt auf etwa einen Kilometer runden.
+ *
+ * Zwei Gründe, und der zweite ist der wichtigere:
+ *
+ * - **Datensparsamkeit.** Für die Sortierung ist ein Kilometer genau genug. Der
+ *   genaue Standort wird dafür nicht gebraucht, also wird er nicht geschickt.
+ * - **Sonst wäre der Zwischenspeicher wirkungslos.** Ein GPS-Standort
+ *   schwankt bei jedem Messwert in der sechsten Dezimalstelle. Ungerundet
+ *   hätte jede Messung einen eigenen Schlüssel – derselbe Begriff zweimal
+ *   getippt wäre zwei Anfragen an Nominatim, und dessen Nutzungsbedingungen
+ *   sind genau das, was diese Suche einzuhalten versucht.
+ */
+function coarse(point: LatLng | null): LatLng | null {
+  if (!point) return null;
+  return { lat: Math.round(point.lat * 100) / 100, lng: Math.round(point.lng * 100) / 100 };
+}
 
 const ICON = "h-[1.15em] w-[1.15em]";
 
@@ -69,6 +104,21 @@ function CloseIcon() {
 }
 
 /**
+ * Zuklappen, nicht löschen.
+ *
+ * Zwei gleich aussehende ×-Knöpfe nebeneinander – einer löscht die Eingabe,
+ * einer schließt die Leiste – wären nicht auseinanderzuhalten. Der Pfeil sagt,
+ * was geschieht: Die Leiste geht zu und wird wieder zur Schaltfläche.
+ */
+function ChevronUpIcon() {
+  return (
+    <svg className={ICON} viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+      <path d="M6 14.5l6-6 6 6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+/**
  * Die schwebenden Flächen über der Karte.
  *
  * Bewusst zurückhaltend: dünner Rand, halbdurchsichtig, weicher Schatten.
@@ -81,7 +131,12 @@ const PANEL =
 const ICON_BUTTON =
   "flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-neutral-500 transition-colors hover:bg-neutral-100 hover:text-neutral-900 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:hover:bg-neutral-800 dark:hover:text-neutral-100";
 
-export function DestinationSearch({ destination, onChoose, onClear }: DestinationSearchProps) {
+export function DestinationSearch({
+  destination,
+  reference,
+  onChoose,
+  onClear,
+}: DestinationSearchProps) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<Place[]>([]);
@@ -100,6 +155,88 @@ export function DestinationSearch({ destination, onChoose, onClear }: Destinatio
     if (open) inputRef.current?.focus();
   }, [open]);
 
+  /**
+   * Der Bezugspunkt, gerundet – so geht er in Anfrage und Schlüssel ein.
+   *
+   * Der Umweg über die Zeichenkette ist nötig und nicht Zierde: `coarse` gibt
+   * bei jedem Rendern ein **neues Objekt** zurück, auch bei unverändertem
+   * Standort. Als Abhängigkeit genommen würde damit die Tippverzögerung bei
+   * jedem Rendern neu beginnen – und bei laufender Standortbestimmung rendert
+   * die Seite ständig. Die Suche käme nie los.
+   */
+  const originKey = (() => {
+    const point = coarse(reference);
+    return point ? `${point.lat},${point.lng}` : "";
+  })();
+
+  const origin = useMemo<LatLng | null>(() => {
+    if (!originKey) return null;
+    const [lat, lng] = originKey.split(",").map(Number);
+    return { lat, lng };
+  }, [originKey]);
+
+  /**
+   * Welche Anfrage die neueste ist.
+   *
+   * Zwei Suchen können sich überholen: „Köln" braucht länger als „Kölner Dom",
+   * weil die erste nicht im Zwischenspeicher lag. Ohne diesen Zähler würde die
+   * späte Antwort auf den früheren Begriff die richtige Liste überschreiben –
+   * man liest dann Vorschläge zu einem Wort, das nicht mehr im Feld steht.
+   */
+  const latest = useRef(0);
+
+  const keyFor = useCallback((term: string) => `${term.toLowerCase()}|${originKey}`, [originKey]);
+
+  /**
+   * Sucht und gibt die Treffer zurück.
+   *
+   * Der Rückgabewert ist für Enter da: Dort soll nicht nur gesucht, sondern
+   * auch gleich der erste Treffer übernommen werden – und das geht nur, wenn
+   * der Aufrufer die Antwort in der Hand hat. `null` heißt „kein Ergebnis zum
+   * Übernehmen": Fehler, oder von einer neueren Suche überholt.
+   */
+  const search = useCallback(
+    async (term: string): Promise<Place[] | null> => {
+      const key = keyFor(term);
+      const ticket = (latest.current += 1);
+
+      setStatus("sucht");
+      try {
+        const url = new URL("/api/geocode", window.location.origin);
+        url.searchParams.set("q", term);
+        if (origin) {
+          url.searchParams.set("lat", String(origin.lat));
+          url.searchParams.set("lng", String(origin.lng));
+        }
+
+        const response = await fetch(url);
+        const data = (await response.json()) as { places?: Place[]; error?: string };
+
+        // Eine überholte Antwort wird verworfen, nicht angezeigt.
+        if (ticket !== latest.current) return null;
+
+        if (data.error) {
+          setStatus("fehler");
+          setResults([]);
+          return null;
+        }
+
+        const places = data.places ?? [];
+        cache.set(key, places);
+        setResults(places);
+        setStatus(places.length === 0 ? "leer" : "bereit");
+        setActive(-1);
+        return places;
+      } catch {
+        if (ticket !== latest.current) return null;
+        setStatus("fehler");
+        setResults([]);
+        return null;
+      }
+    },
+    [keyFor, origin],
+  );
+
   useEffect(() => {
     const term = query.trim();
 
@@ -111,37 +248,20 @@ export function DestinationSearch({ destination, onChoose, onClear }: Destinatio
     }
 
     // Schon bekannt: sofort zeigen, ohne den Dienst zu fragen.
-    const known = cache.get(term.toLowerCase());
+    const known = cache.get(keyFor(term));
     if (known) {
+      // Auch hier hochzählen: Eine noch laufende Anfrage zu einem früheren
+      // Begriff darf diese Liste nicht mehr überschreiben.
+      latest.current += 1;
       setResults(known);
       setStatus(known.length === 0 ? "leer" : "bereit");
       setActive(-1);
       return;
     }
 
-    const timer = setTimeout(async () => {
-      setStatus("sucht");
-      try {
-        const response = await fetch(`/api/geocode?q=${encodeURIComponent(term)}`);
-        const data = (await response.json()) as { places?: Place[]; error?: string };
-        if (data.error) {
-          setStatus("fehler");
-          setResults([]);
-          return;
-        }
-        const places = data.places ?? [];
-        cache.set(term.toLowerCase(), places);
-        setResults(places);
-        setStatus(places.length === 0 ? "leer" : "bereit");
-        setActive(-1);
-      } catch {
-        setStatus("fehler");
-        setResults([]);
-      }
-    }, IDLE_MS);
-
+    const timer = setTimeout(() => void search(term), IDLE_MS);
     return () => clearTimeout(timer);
-  }, [query]);
+  }, [query, keyFor, search]);
 
   const choose = (place: Place) => {
     setRecent(rememberPlace(place));
@@ -165,6 +285,32 @@ export function DestinationSearch({ destination, onChoose, onClear }: Destinatio
       setOpen(false);
       return;
     }
+
+    /*
+     * Enter sucht sofort und übernimmt den besten Treffer, wenn noch nichts
+     * dasteht.
+     *
+     * Der Fall ist alltäglich und war vorher eine Sackgasse: Man tippt eine
+     * vollständige Adresse und drückt Enter, bevor die 350 ms Tippause
+     * abgelaufen sind. Die App tat daraufhin **nichts** – kein Treffer, keine
+     * Meldung, kein Hinweis.
+     *
+     * Dass dabei ungesehen ein Ziel gesetzt wird, ist vertretbar: Es ist
+     * derselbe Treffer, den Enter auch bei sichtbarer Liste nimmt, er steht
+     * danach mit Namen in der Zielzeile, und ein Fehlgriff kostet einen
+     * Druck auf „Ziel aufheben". Nichts zu tun war die schlechtere Antwort.
+     */
+    if (event.key === "Enter" && shown.length === 0) {
+      const term = query.trim();
+      if (term.length >= MIN_CHARS && status !== "sucht") {
+        event.preventDefault();
+        void search(term).then((places) => {
+          if (places && places.length > 0) choose(places[0]);
+        });
+      }
+      return;
+    }
+
     if (shown.length === 0) return;
 
     if (event.key === "ArrowDown") {
@@ -247,13 +393,37 @@ export function DestinationSearch({ destination, onChoose, onClear }: Destinatio
           aria-describedby={`${listId}-status`}
           className="min-h-11 min-w-0 flex-1 bg-transparent text-base focus:outline-none"
         />
+        {/*
+          Eingabe löschen, ohne das Feld zu schließen.
+          Vorher ging das nur über „alles markieren" oder langes Drücken der
+          Rücktaste – auf einem Telefon einhändig kaum zu machen, und genau
+          dann nötig, wenn die Treffer nicht passen und man neu ansetzt. Nur
+          sichtbar, wenn etwas dasteht: ein Knopf ohne Wirkung ist schlechter
+          als keiner.
+        */}
+        {query.length > 0 && (
+          <button
+            type="button"
+            onClick={() => {
+              setQuery("");
+              setResults([]);
+              setActive(-1);
+              setStatus("bereit");
+              inputRef.current?.focus();
+            }}
+            aria-label="Eingabe löschen"
+            className={ICON_BUTTON}
+          >
+            <CloseIcon />
+          </button>
+        )}
         <button
           type="button"
           onClick={() => setOpen(false)}
           aria-label="Zielsuche schließen"
-          className={ICON_BUTTON}
+          className={`${ICON_BUTTON} border-l border-neutral-200 dark:border-neutral-700`}
         >
-          <CloseIcon />
+          <ChevronUpIcon />
         </button>
       </div>
 
@@ -262,16 +432,33 @@ export function DestinationSearch({ destination, onChoose, onClear }: Destinatio
         immer sichtbare leere Zeile machte die Leiste ohne Nutzen höher.
       */}
       {(status !== "bereit" || (query.trim().length > 0 && query.trim().length < MIN_CHARS)) && (
-        <p
-          id={`${listId}-status`}
-          aria-live="polite"
-          className="mt-1 px-1 text-xs text-neutral-500"
-        >
-          {status === "sucht" && "Wird gesucht …"}
-          {status === "leer" && "Nichts gefunden. Anders schreiben oder Ort ergänzen."}
-          {status === "fehler" && "Die Ortssuche ist gerade nicht erreichbar."}
-          {status === "bereit" && "Noch ein paar Buchstaben …"}
-        </p>
+        <div className="mt-1 flex items-center gap-2 px-1">
+          <p
+            id={`${listId}-status`}
+            aria-live="polite"
+            className="min-w-0 flex-1 text-xs text-neutral-500"
+          >
+            {status === "sucht" && "Wird gesucht …"}
+            {status === "leer" && "Nichts gefunden. Anders schreiben oder Ort ergänzen."}
+            {status === "fehler" && "Die Ortssuche ist gerade nicht erreichbar."}
+            {status === "bereit" && "Noch ein paar Buchstaben …"}
+          </p>
+          {/*
+            Bei einem Fehler muss ein zweiter Versuch möglich sein, ohne einen
+            Buchstaben zu löschen und neu zu tippen. Nominatim antwortet unter
+            Last auch mal nicht – beim nächsten Versuch meist schon, und das
+            ist dann die ganze Behebung.
+          */}
+          {status === "fehler" && (
+            <button
+              type="button"
+              onClick={() => void search(query.trim())}
+              className="min-h-11 shrink-0 rounded-lg border border-neutral-300 px-2.5 text-xs font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
+            >
+              Erneut
+            </button>
+          )}
+        </div>
       )}
 
       {shown.length > 0 && (
@@ -297,7 +484,22 @@ export function DestinationSearch({ destination, onChoose, onClear }: Destinatio
                       : "hover:bg-neutral-100/70 dark:hover:bg-neutral-800/70"
                   }`}
                 >
-                  <span className="block truncate font-medium">{place.label}</span>
+                  {/*
+                    Beschriftung und Entfernung in einer Zeile. Die Entfernung
+                    ist die Angabe, die zwischen zehn gleichnamigen Straßen
+                    überhaupt erst entscheiden lässt – „Bahnhofstraße, 1,2 km"
+                    gegen „Bahnhofstraße, 340 km". Ohne Bezugspunkt steht dort
+                    nichts: Eine Entfernung ab der Stadtmitte wäre keine
+                    Auskunft, sondern Zufall.
+                  */}
+                  <span className="flex items-baseline gap-2">
+                    <span className="min-w-0 flex-1 truncate font-medium">{place.label}</span>
+                    {origin && (
+                      <span className="shrink-0 text-xs text-neutral-500 tabular-nums">
+                        {formatDistance(distanceMeters(origin, place))}
+                      </span>
+                    )}
+                  </span>
                   {place.detail && (
                     <span className="block truncate text-xs text-neutral-500">{place.detail}</span>
                   )}

@@ -339,3 +339,39 @@ Gespeichert wird nur, was jemand selbst einträgt:
   Meldung gelöscht wird.
 - **Nicht gespeichert:** Standort, Name und IP-Adresse. Die IP wird für die
   Drosselung gelesen und landet in keiner Tabelle und in keinem Protokoll.
+
+### Was von selbst gelöscht wird
+
+Seit dem 2026-10-17 räumt die App auf (`src/lib/db/cleanup.ts`):
+
+| Was                                    | Wann                                            |
+| -------------------------------------- | ----------------------------------------------- |
+| Erledigte und verworfene Rückmeldungen | **12 Monate** nach der Erledigung, samt Adresse |
+| Abgelaufene Sitzungen                  | mit dem Ablauf                                  |
+
+Gerechnet wird ab der **Erledigung**, nicht ab dem Eingang: Eine Meldung, die
+lange offen lag und gestern abgeschlossen wurde, bleibt noch ein Jahr
+nachlesbar. Offene Meldungen laufen **nicht** ab – eine Meldung, die niemand
+bearbeitet hat, ist nicht erledigt, sondern liegen geblieben.
+
+Der Lauf hängt an den Zugriffen, die es ohnehin gibt (eine eingehende Meldung,
+ein Blick in die Übersicht), und läuft höchstens einmal am Tag. Einen
+Hintergrundprozess hat die App nicht.
+
+## Sicherheit
+
+Die App liefert seit dem 2026-10-17 Sicherheits-Kopfzeilen aus; sie stehen in
+[next.config.ts](next.config.ts) und werden von
+[e2e/sicherheit.spec.ts](e2e/sicherheit.spec.ts) festgehalten. Dass sie aus der
+**Anwendung** kommen und nicht aus dem Nginx Proxy Manager, ist Absicht: Im
+Proxy wären sie für den Entwicklungsbetrieb nicht da – also genau dort nicht,
+wo ein Verstoß auffallen müsste.
+
+Die Inhaltsrichtlinie (CSP) erlaubt als fremde Herkunft **nur** die
+Kartenkacheln von OpenStreetMap und verbietet jeden fremden Rahmen
+(`frame-ancestors 'none'`). Sie führt allerdings `'unsafe-inline'` bei den
+Skripten, weil Next die Hydrationsdaten und das Theme-Skript inline in die
+Seite schreibt. **Sie ist damit kein Schutz vor eingeschleustem Code in der
+eigenen Seite** – dafür bräuchte es eine Nonce je Anfrage und eine Middleware.
+Was sie leistet, ist das Blockieren fremder Skriptquellen; was sie nicht
+leistet, steht hier, damit niemand sich auf mehr verlässt.
