@@ -10,10 +10,30 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand:** 112 Einträge auf oberster Ebene (111 `[x]` plus 2e.10 als `[~]`,
-dessen gebauter Teil hier steht und dessen offener Rest in `ToDos.md` bleibt),
-zuletzt ergänzt 2026-10-17. Gezählt werden die Einträge der obersten Ebene; die
-Unterpunkte darunter sind Begründung, keine eigenen Aufgaben.
+**Stand (2026-10-17):** **118 Einträge** auf oberster Ebene – davon 112 mit
+einer ToDo-Nummer und 6 ohne (die Entscheidungen D-01, D-02, D-04, D-06 sowie
+zwei Einträge, die zu keinem nummerierten Punkt gehören). Einer davon ist
+2e.10 als `[~]`: Sein gebauter Teil steht hier, sein offener Rest in
+`ToDos.md`.
+
+Unterpunkte werden **nicht** mitgezählt – sie sind Begründung, keine eigenen
+Aufgaben.
+
+> **Die Zählweise stand bis zum 2026-10-17 nur als „Einträge der obersten
+> Ebene" da, und die Zahl war seither 112.** Das sind die _nummerierten_
+> Einträge; die sechs Entscheidungen fehlten in der Rechnung, ohne dass die
+> Beschreibung das hergab. Beide Zahlen stehen jetzt ausdrücklich da, weil
+> nachgezählt sonst jedes Mal etwas anderes herauskommt – je nachdem, wen man
+> fragt:
+>
+> ```bash
+> node -e "const l=require('fs').readFileSync('Erledigt.md','utf8').split('\n').filter(x=>/^- \[(x|~)\]/.test(x)); console.log('gesamt',l.length,'| mit Nummer',l.filter(x=>/^- \[(x|~)\] [0-9D]/.test(x)).length);"
+> ```
+>
+> **7.7 steht absichtlich zweimal** (zwei Durchgänge, 82 → 93 → 96 %); der
+> zweite Eintrag nennt den ersten. Das ist die Ausnahme von der Regel „ein
+> doppelter Eintrag ist schlimmer als keiner" aus [CLAUDE.md](CLAUDE.md) –
+> erlaubt, weil er die Vorgeschichte benennt statt sie zu wiederholen.
 
 > **Am 2026-10-16 abgeglichen.** Die Abschnitte 11 (Benutzerkonten) und 17
 > (Rückmeldungen) sowie D-02 standen hier vollständig, in

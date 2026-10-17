@@ -50,6 +50,41 @@ einmal anders trifft.
 Nach jeder abgeschlossenen Aufgabe außerdem den **Arbeitsstand** oben in
 `ToDos.md` nachführen – er ist der Einstieg nach einer Unterbrechung.
 
+## Eine plausible Ursache ist keine gemessene
+
+**Wenn etwas kaputtgeht, während du etwas geändert hast, ist deine Änderung
+ein Verdacht und kein Befund.** Die Gegenprobe gehört dazu, bevor die
+Begründung in den Code wandert.
+
+Am 2026-10-17 scheiterte die Anmeldung des Service Workers, kurz nachdem eine
+Inhaltsrichtlinie (CSP) eingeführt worden war. Die Erklärung lag auf der Hand,
+war schon als Kommentar geschrieben – und war falsch: Ohne jede Kopfzeile
+scheiterte sie genauso. Es lag am eingebetteten Browser.
+
+Der Schaden einer solchen Notiz ist größer als der eines Fehlers, denn sie
+sieht aus wie Wissen. Die nächste Person baut darauf auf. Dasselbe Muster
+steckt hinter den Fehlern in [Erledigt.md](Erledigt.md): plausible Koordinaten
+450 km daneben, eine leere Antwort als Ergebnis.
+
+Praktisch: Einmal ohne die Änderung laufen lassen. Kostet eine Minute.
+
+## Zählstände nachzählen, nicht fortschreiben
+
+In `ToDos.md` und `Erledigt.md` stehen Zahlen („51 offen", „118 Einträge").
+**Die werden ermittelt, nicht aus der vorigen Zahl weitergerechnet.** Am
+2026-10-17 stand kurzzeitig „52 offen", weil addiert statt gezählt wurde; in
+`Erledigt.md` war unklar geblieben, ob die sechs Entscheidungen mitzählen.
+Beide Dateien nennen oben den Einzeiler, der die Zahl liefert.
+
+## Reihenfolge: erst Inhalt, dann Datenimport
+
+**Vorgabe vom 2026-10-17.** Kein weiterer Datenimport, solange inhaltliche
+Punkte offen sind – auch nicht nebenbei. Der Import lässt sich beliebig lange
+fortsetzen (10.550 Gemeinden stehen offen) und ist nie „fertig"; die
+inhaltlichen Punkte sind endlich und halten die Veröffentlichung auf. Die
+Reihenfolge im Einzelnen steht unter „Hier weitermachen" in
+[ToDos.md](ToDos.md).
+
 ## Was nicht ohne Freigabe gebaut wird
 
 Abschnitt 13 (Finanzierung), 15 (Mehrsprachigkeit) und 16 (Offline-Download)

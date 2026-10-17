@@ -47,7 +47,7 @@ jetzt, festgehalten von fünf E2E-Tests. Befund, Begründungen und die Liste der
 geprüften Punkte **ohne** Befund in [Erledigt.md](Erledigt.md); was daraus
 offen bleibt, steht als 10.5 und 17.6 hier.
 
-**Davor am 2026-10-16:** Die **Zielsuche ordnet ihre
+**Davor am 2026-10-16, zweiter Durchgang:** Die **Zielsuche ordnet ihre
 Treffer jetzt nach Nähe** (6.23, auf Zuruf). Sie fragte Nominatim ohne jeden
 Ortsbezug und bekam dessen Sortierung nach Bekanntheit zurück – wer von Köln
 aus „Bahnhofstraße" tippte, sah Treffer aus dem Spreewald, Hannover und
@@ -55,7 +55,7 @@ Heilbronn, aber keinen aus Köln. Dazu Entfernung an jedem Vorschlag,
 Entdopplung, Löschknopf, Enter, „Erneut". Begründung und Messwerte in
 [Erledigt.md](Erledigt.md).
 
-**Davor am 2026-10-16:** Diese Liste war an fünf Stellen überholt – D-02,
+**Davor am 2026-10-16, erster Durchgang:** Diese Liste war an fünf Stellen überholt – D-02,
 17.0 bis 17.4, 11.1/11.2 und 12.5 standen als offen oder unentschieden da,
 obwohl sie seit dem 2026-10-11 gebaut und in [Erledigt.md](Erledigt.md)
 beschrieben sind; die Stack-Tabelle nannte weiter Postgres und Vercel.
@@ -76,7 +76,7 @@ npm run check:slugs
 Erwartet: 281 Unit-Tests grün und
 `Verzeichnis: 10.754 Gemeinden · davon an der Reihe: 204 · Seed-Dateien: 209`
 mit „✅ Register und Seed-Dateien stimmen überein". Weicht das ab, hat sich
-seit dem 2026-10-11 etwas geändert – **das klären, bevor Neues anfängt.**
+seit dem 2026-10-17 etwas geändert – **das klären, bevor Neues anfängt.**
 Besonders ein Slug, der nicht mehr passt: Er verwaist eine Seed-Datei
 lautlos.
 
@@ -91,13 +91,35 @@ Er lädt sie nach `data/raw/`, baut die Flächen und prüft sich selbst gegen de
 Bestand. Erwartet: `10.956 Flächen für 10.956 Gemeinden` und
 `17.801 von 18.072 Standorten … (98.50 %)`.
 
-**Danach in dieser Reihenfolge**, ohne dass etwas davon voneinander abhängt:
+### Reihenfolge: erst die inhaltlichen Themen, der Datenimport zuletzt
 
-3. 3.1 / 3.3 / 3.4 Kreuzvergleich, Straßenabgleich, Abstand zur Straße
-4. 3.7 bestätigte Standorte in der Detailansicht kennzeichnen
-5. 2d.8a die fünf Städte mit ungenutzter amtlicher Quelle einzeln ansehen
-6. 12.4 Lighthouse, 12.6 Fehler-Monitoring
-7. 2a.5 die fehlenden Lizenzen der amtlichen Quellen nachschlagen
+> **Vorgabe vom 2026-10-17.** Es wird **kein weiterer Datenimport** angefangen,
+> solange auf dieser Liste noch inhaltliche Punkte offen sind. Erst wenn alle
+> ToDos erledigt sind, geht es mit dem Import weiter.
+
+Das ist eine Umkehrung gegenüber den Sitzungen davor, und der Grund ist
+handfest: Der Import ist der Teil, der sich beliebig lange fortsetzen lässt –
+10.550 Gemeinden stehen offen, und er wird nie „fertig" im Sinne einer
+abgehakten Liste. Die inhaltlichen Punkte sind endlich und blockieren die
+Veröffentlichung: **Bewertungen** (Abschnitt 8) sind laut
+[Konzept.md](Konzept.md) eine Kernfunktion und noch gar nicht gebaut,
+**Impressum und Datenschutzerklärung** (10.2) sind für eine erreichbare
+deutsche Seite Pflicht. Mehr Städte in einer App, die ihre Kernfunktion nicht
+hat, verbessern nichts.
+
+**In dieser Reihenfolge**, ohne dass etwas davon voneinander abhängt:
+
+1. **Abschnitt 8 Bewertungen** – die größte Lücke zum Konzept. Setzt D-03
+   (Missbrauchsschutz) voraus, der auf deine Entscheidung wartet.
+2. 12.6 Fehler-Monitoring, 12.4 Lighthouse
+3. 3.7 bestätigte Standorte in der Detailansicht kennzeichnen
+4. 11.4 / 11.5 eigene Bewertungen einsehen, Favoriten
+5. 10.5 Nonce-CSP und „Passwort ändern", 17.6 Adresse an offenen Meldungen
+6. 10.2 Impressum und Datenschutzerklärung – **braucht deine Angaben**
+
+**Erst wenn das alles steht:** 3.1 / 3.3 / 3.4 (Kreuzvergleich,
+Straßenabgleich, Abstand zur Straße), 2d.8a, 2a.5 und die nächste
+Einwohnerstufe. Alle vier sind Datenarbeit und fallen unter die Vorgabe oben.
 
 **Nicht anfangen:** Abschnitt 13, 15 und 16 sowie 2e.11 – alle gesperrt bis zu
 einer ausdrücklichen Freigabe.
@@ -218,10 +240,20 @@ schiefging.
 - **Abschnitt 15 (Mehrsprachigkeit)** ist auf deinen Wunsch zurückgestellt – Englisch, Spanisch und Französisch erst nach der deutschen Fassung
 - **Abschnitt 16 (nur nach Freigabe)** – derzeit: Städte zum Mitnehmen herunterladen
 
-**Stand (2026-10-17):** 52 offen, 8 in Arbeit, 3 brauchen deine Entscheidung,
+**Stand (2026-10-17):** 51 offen, 8 in Arbeit, 3 brauchen deine Entscheidung,
 9 bewusst zurückgestellt (Finanzierung, Mehrsprachigkeit, Offline-Download).
-Dazu 12 offene Unterpunkte innerhalb dieser Posten. **Gezählt wird die oberste
+Dazu 13 offene Unterpunkte innerhalb dieser Posten. **Gezählt wird die oberste
 Ebene** – sonst ergibt jede Sitzung eine andere Zahl.
+
+> **Nachgezählt, nicht fortgeschrieben** (2026-10-17). Die Zahl stand kurz auf
+> 52, weil sie aus der vorigen weitergerechnet statt neu ermittelt wurde.
+> Ein Zählstand, den man im Kopf addiert, driftet – er lässt sich in einem
+> Durchlauf prüfen:
+>
+> ```bash
+> node -e "const l=require('fs').readFileSync('ToDos.md','utf8').split('\n'); const t=l.filter(x=>/^- \[(.)\]/.test(x)); console.log('gesamt',t.length); for (const m of [' ','~','!','-']) console.log(m, t.filter(x=>x.startsWith('- ['+m+']')).length); console.log('Unterpunkte', l.filter(x=>/^\s+- \[ \]/.test(x)).length);"
+> ```
+
 112 erledigte Einträge stehen in [Erledigt.md](Erledigt.md).
 **Tests: 281 Unit-Tests + 30 E2E-Tests.**
 
@@ -259,7 +291,7 @@ Ebene** – sonst ergibt jede Sitzung eine andere Zahl.
 
 Laufender Stand: **[data/\_import-status.md](data/_import-status.md)** – von den Skripten selbst geschrieben, nach jeder einzelnen Stadt aktualisiert.
 
-- [ ] 2d.8a **Die acht Städte mit ungenutzter amtlicher Quelle einzeln ansehen.** `npm run sources:check` findet sie von selbst (siehe [Erledigt.md](Erledigt.md)); zu tun bleibt das Ansehen. Bei Kiel, Krefeld und Aachen ist die Ablehnung laut 2d.8 richtig (Anwohnerparken); bei Bochum, Bielefeld, Karlsruhe, Norderstedt und Viersen lohnt der Blick auf das Stadtportal. Der Gewinn wäre spürbar: Düsseldorf kam von 171 Standorten aus OSM auf 340 aus der amtlichen Quelle.
+- [ ] 2d.8a **Die acht Städte mit ungenutzter amtlicher Quelle einzeln ansehen – davon lohnen fünf.** (Die Zusammenfassung oben nannte lange „fünf", dieser Eintrag „acht"; beides stimmt und las sich wie ein Widerspruch. Acht Städte haben eine ungenutzte Quelle, bei dreien ist die Ablehnung richtig.) `npm run sources:check` findet sie von selbst (siehe [Erledigt.md](Erledigt.md)); zu tun bleibt das Ansehen. Bei Kiel, Krefeld und Aachen ist die Ablehnung laut 2d.8 richtig (Anwohnerparken); bei Bochum, Bielefeld, Karlsruhe, Norderstedt und Viersen lohnt der Blick auf das Stadtportal. Der Gewinn wäre spürbar: Düsseldorf kam von 171 Standorten aus OSM auf 340 aus der amtlichen Quelle.
 - [ ] 2d.9 **Regensburg: 156.000 Einwohner, kein einziger erfasster Behindertenparkplatz.** Dass die Abfrage sauber durchlief und leer war, ist seit 2e.9 festgehalten – das ist eine Lücke in OpenStreetMap, keine in der Wirklichkeit. Hier lohnt die Anfrage bei der Straßenverkehrsbehörde (Schritt 3 der Quellensuche) und das Nachtragen in OSM (2c.4).
 
 ### 2e. Ganz Deutschland
