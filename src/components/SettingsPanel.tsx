@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import {
   MAPS_CHOICES,
   readMapsPreference,
@@ -148,6 +149,36 @@ export function SettingsPanel({
         </p>
         <AccountPanel user={user} onUserChange={onUserChange} />
       </section>
+
+      {/*
+        Impressum und Datenschutzerklärung (ToDo 10.2).
+
+        **In den Einstellungen und nicht am Kartenrand**, weil die Karte jeden
+        Millimeter braucht (9.15) – und weil hier ohnehin die Ansicht ist, in
+        der man liest statt bedient. Erreichbar müssen sie sein, nicht
+        aufdringlich: Die Pflicht ist „leicht erkennbar und unmittelbar
+        erreichbar", und zwei Antippen von jeder Stelle der App erfüllen das.
+
+        Als normale Links und nicht als Knöpfe: Sie führen auf eine andere
+        Seite, sollen sich in einem neuen Tab öffnen lassen und müssen für
+        Suchmaschinen als Verweise erkennbar sein.
+      */}
+      <footer className="border-t border-neutral-200 pt-4 dark:border-neutral-800">
+        <nav aria-label="Rechtliches" className="flex flex-wrap gap-x-5 gap-y-1 text-sm">
+          <Link
+            href="/impressum"
+            className="inline-flex min-h-11 items-center text-blue-800 hover:underline focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"
+          >
+            Impressum
+          </Link>
+          <Link
+            href="/datenschutz"
+            className="inline-flex min-h-11 items-center text-blue-800 hover:underline focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"
+          >
+            Datenschutzerklärung
+          </Link>
+        </nav>
+      </footer>
     </div>
   );
 }

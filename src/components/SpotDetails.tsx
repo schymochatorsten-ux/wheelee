@@ -8,6 +8,7 @@ import { maxStay, normalizeTimeRestriction, restrictionState } from "@/lib/openi
 import { spotTitle } from "@/lib/parking/display";
 import { DataDisclaimer } from "./DataDisclaimer";
 import { FeedbackButton } from "./FeedbackButton";
+import { RatingButtons } from "./RatingButtons";
 import { ShareButton } from "./ShareButton";
 
 /**
@@ -199,8 +200,15 @@ export function SpotDetails({
         <FeedbackButton spot={spot} accountEmail={accountEmail} variant="subtle" />
       </div>
 
-      {/* Die Bewertungen (Abschnitt 8 der ToDos) brauchen die Datenbank-
-          Entscheidung D-02 und folgen danach an dieser Stelle. */}
+      {/*
+        Die Bewertungen (Abschnitt 8, gebaut 2026-10-19).
+
+        **Unter dem Navigationsknopf und über dem Haftungshinweis.** Die
+        Reihenfolge ist die der Entscheidung: zuerst hinfahren, dann die
+        Frage „gibt es den noch", dann das Kleingedruckte. Wer schon
+        losfährt, soll nicht erst an einer Umfrage vorbei.
+      */}
+      <RatingButtons spotId={spot.id} signedIn={accountEmail !== null} />
 
       {/* Direkt unter dem Navigationsknopf, nicht am Seitenende: Hier wird
           entschieden, ob jemand losfährt. */}

@@ -10,11 +10,17 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (2026-10-17):** **118 Einträge** auf oberster Ebene – davon 112 mit
+**Stand (2026-10-19):** **121 Einträge** auf oberster Ebene – davon 115 mit
 einer ToDo-Nummer und 6 ohne (die Entscheidungen D-01, D-02, D-04, D-06 sowie
 zwei Einträge, die zu keinem nummerierten Punkt gehören). Einer davon ist
 2e.10 als `[~]`: Sein gebauter Teil steht hier, sein offener Rest in
 `ToDos.md`.
+
+> **Die drei neuen Einträge vom 2026-10-19 sind kein gebauter Code**, sondern
+> der Rückschnitt der offenen Liste: zwei verworfene Pläne (Abschnitt 5) und
+> ein Punkt, den die Wirklichkeit beantwortet hat (8.10). Sie stehen hier,
+> weil sonst niemand erführe, **warum** sie aus `ToDos.md` verschwunden sind –
+> und der Nächste sie wieder aufnähme.
 
 Unterpunkte werden **nicht** mitgezählt – sie sind Begründung, keine eigenen
 Aufgaben.
@@ -408,6 +414,93 @@ und was liegt dazwischen?"
   **Ein Fallstrick aus [CLAUDE.md](CLAUDE.md) ist beim Schreiben der Tests sofort zugeschnappt:** `„Deutschland"` in einem Testnamen beendet die Zeichenkette am ASCII-Anführungszeichen. Der Parser hat es gemeldet, die Datei ließ sich nicht laden – anders als bei den beschädigten Umlauten, die seinerzeit grün durchliefen. Behoben mit `'…'` als äußerer Begrenzung.
 
   Geprüft mit **16 neuen Unit-Tests** (`src/lib/geocode.test.ts`, Reihenfolge und Entdopplung) und **5 neuen E2E-Tests** (Bezugspunkt in der Anfrage und seine Rundung, Entfernung am Vorschlag, Löschen, Enter, „Erneut"). Dazu die Probe gegen echte Nominatim-Daten, aus der die zweite Entdopplungsregel und die 150 m überhaupt erst kamen – **am Schreibtisch wäre beides nicht aufgefallen.**
+
+---
+
+## 8. Bewertungen (2026-10-19)
+
+- [x] 8.1–8.7 **Bewertungen gebaut** (2026-10-19). Die Kernfunktion aus [Konzept.md](Konzept.md), die als einzige noch ganz fehlte.
+
+  **Die Regel ist am 2026-10-19 geändert worden, und das gehört an den Anfang**, weil sie in `ToDos.md` seit dem 2026-10-09 anders dastand:
+
+  |                    | vorher (2026-10-09)          | **jetzt (2026-10-19)**         |
+  | ------------------ | ---------------------------- | ------------------------------ |
+  | 👍 Existiert       | ohne Konto                   | **nur mit Konto**              |
+  | 👎 Existiert nicht | nur mit Konto                | nur mit Konto                  |
+  | Sehen              | –                            | **ohne Konto**                 |
+  | Grenze             | 1× pro Parkplatz pro Sitzung | **1× pro Parkplatz pro Konto** |
+
+  Die alte Regel wollte die Hürde dort niedrig halten, wo sie nützt. Der Preis war, dass der Daumen hoch **anonym** blieb und damit nur über eine Gerätekennung zu begrenzen gewesen wäre – also über den Browser-Speicher, den ein privates Fenster aushebelt. **Die neue Regel macht die Zählung erst belastbar:** Zehn Bestätigungen heißen zehn Konten, nicht zehnmal dieselbe Person mit geleertem Browser. Dass die Zählerstände **ohne** Konto sichtbar sind, hält den Verlust klein – die Auskunft, auf die es ankommt, hängt an keiner Anmeldung.
+
+  **Der Schutz steckt im Schema, nicht im Code:** `UNIQUE (spot_id, account_id)` in Migrationsschritt 2. „Höchstens eine Stimme je Konto und Parkplatz" ist damit keine Regel, die ein Server durchsetzen muss, sondern eine Eigenschaft der Tabelle – ein zweiter Schreibweg könnte sie gar nicht verletzen. Ein Test schießt deshalb bewusst mit rohem SQL daneben und erwartet den `UNIQUE`-Fehler; ginge er durch, wäre jede Zählung angreifbar, sobald jemand einen zweiten Weg einbaut.
+
+  **Drei Fälle, eine Bedienung.** Dieselbe Richtung noch einmal nimmt zurück, die andere dreht um, keine setzt neu. Das ist die einzige Variante, die sich erklären lässt: Ein Knopf, der beim zweiten Druck nichts tut, wäre nicht zu verstehen – und das zweite Antippen ist der häufigste Fall überhaupt, lange vor jedem Angriff.
+
+  **Die Stimme lässt sich jederzeit ändern, und das ist kein Schlupfloch.** Ein Parkplatz, den jemand vor einem Jahr bestätigt hat, kann heute aufgehoben sein. Wäre die erste Stimme endgültig, könnte ausgerechnet die Person, die es am besten weiß, die Korrektur nicht melden. Die Grenze bleibt gewahrt: Es wird ersetzt, nicht ergänzt.
+
+  **Gedrosselt wird trotz Anmeldepflicht**, und zwar nach Konto (30 in zehn Minuten) und zusätzlich nach Herkunft (120). Der Grund ist genau der Fall, den das Schema **nicht** abfängt: Zwei Stimmen zum selben Parkplatz sind unmöglich, hundert Stimmen zu hundert Parkplätzen nicht. Die Grenze nach Herkunft ist bewusst weit – hinter einem Carrier-NAT teilen sich viele Geräte eine Adresse, und eine enge Grenze träfe dort die Falschen.
+
+  **Keine Gerätekennung mehr.** Sie war nötig, solange anonym bewertet werden durfte. Mit Anmeldepflicht ist das Konto die Zurechnungseinheit, und eine zweite, schwächere daneben wäre nur eine weitere Spur ohne Nutzen (Abschnitt 10).
+
+  **Zeitpunkte, nicht nur Zahlen** (8.5): „Zuletzt bestätigt am …" steht unter den Knöpfen. Maßgeblich ist `COALESCE(updated_at, created_at)` – wann die Stimme **zuletzt galt**, nicht wann sie abgegeben wurde. Sonst läse sich eine längst umgedrehte Bestätigung wie eine frische.
+
+  **Ohne Konto stehen die Knöpfe trotzdem da, abgeschaltet, mit dem Grund daneben** (8.3). Ein weggelassener Knopf sieht aus wie eine kaputte App – man sucht ihn. Dass er abgeschaltet aussieht, ist dabei Höflichkeit und **kein Schutz**: Die Prüfung sitzt in der Route, und ein E2E-Test ruft sie ohne Anmeldung auf und erwartet 401.
+
+  **Bewertungen ändern nichts an den Daten** (8.6). Kein Parkplatz verschwindet, egal wie oft er gemeldet wird. `spotsReportedGone()` liefert eine Prüfliste für einen Menschen – und zählt Konten, nicht Stimmen.
+
+  **Ein Fehlschlag, der die Tests besser gemacht hat:** Einzeln liefen alle sechs E2E-Tests grün, parallel scheiterten drei. Grund war keine Schwäche im Code, sondern eine Annahme im Test: Acht Arbeiter teilen sich **einen** Entwicklungsserver und damit eine Datenbank, und alle öffnen denselben erstbesten Parkplatz – ihre Stimmen addierten sich. Geprüft wird jetzt die **Änderung** statt fester Zahlen. **Ein Test, der nur allein grün ist, ist schlimmer als keiner:** Er macht die Suite unzuverlässig, und irgendwann sieht niemand mehr hin.
+
+  Die Datenschutzerklärung hat einen eigenen Abschnitt dazu bekommen – gespeichert werden Parkplatz, Richtung, Konto und Zeitpunkt, **kein** Standort und **keine** Gerätekennung; anderen werden nur Summen gezeigt, nie wer wie bewertet hat. Eine Löschfrist gibt es bewusst nicht: Eine Bestätigung, die nach einem Jahr verschwände, ließe den Parkplatz wieder als ungeprüft dastehen.
+
+  Geprüft mit **13 Unit-Tests** (`src/lib/db/ratings.test.ts`, gegen eine echte Datenbank, weil die Regel im Schema steht) und **6 E2E-Tests** (sichtbar ohne Konto, Endpunkt lehnt ohne Konto ab, Zählerstände öffentlich, unbekannte ID als 404, setzen/umdrehen/zurücknehmen, Bestand nach dem Schließen).
+
+---
+
+## 10. Impressum und Datenschutzerklärung (2026-10-19)
+
+- [x] 10.2 **Impressum und Datenschutzerklärung** (2026-10-19, `/impressum` und `/datenschutz`).
+
+  **Der Anlass war kein fehlendes Feature, sondern ein laufendes Risiko.** wheelee.de ist seit dem 2026-10-11 erreichbar – mit offener Registrierung, einem Sitzungscookie und gespeicherten E-Mail-Adressen – und hatte acht Tage lang weder Impressum noch Datenschutzerklärung. Beides ist in Deutschland Pflicht (§ 5 DDG, Art. 13 DSGVO) und abmahnfähig. Auf der Aufgabenliste stand es an sechster Stelle hinter lauter Funktionen; es ist deshalb am 2026-10-19 nach vorn geholt worden.
+
+  **Die Betreiberangaben stehen in der Umgebung, nicht im Quelltext** (`WHEELEE_OPERATOR_NAME`, `_ADDRESS`, `_EMAIL`, dazu freiwillig `_PHONE` und `_VAT_ID`). Das ist dieselbe Entscheidung wie bei `ADMIN_EMAILS`, hier aber zwingender: Ein Impressum verlangt eine **ladungsfähige Anschrift**, bei einem Privatprojekt also die Wohnadresse einer Person. In einer versionierten Datei landete sie in der Git-Historie – dort bleibt sie auch nach dem Löschen, und bei einem öffentlichen Repository liest sie jeder. Auf der Seite selbst steht sie trotzdem, denn genau das verlangt das Gesetz; der Unterschied ist, **woher sie kommt**.
+
+  **Fehlt die Konfiguration, wird nichts erfunden.** Beide Seiten zeigen dann einen Hinweis, welche Variablen fehlen. Die naheliegende Alternative wären Platzhalter gewesen – „Max Mustermann, Musterstraße 1" –, und das ist der schlechtere Weg: Es sieht nach einem erfüllten Impressum aus und wäre keines, und es fiele niemandem auf, am wenigsten dem Betreiber, der die Seite selten selbst aufruft. Ein E2E-Test hält fest, dass dort ein Hinweis steht und kein Name.
+
+  **Beide Seiten sind `force-dynamic`, und das ist kein Beiwerk.** Würden sie beim Bauen erzeugt, trügen sie die Umgebung des **Bauzeitpunkts** – im Container also die aus dem Dockerfile, nicht die aus der `.env`. Das Ergebnis wäre ein Impressum, das nach jedem Neubau leer ist, ohne dass jemand etwas geändert hat.
+
+  **Die Datenschutzerklärung ist aus dem Code belegt, nicht aus einem Generator.** Der Unterschied ist nachprüfbar: Ein Generator hätte Server-Logfiles mit IP-Adresse, Analysedienste und ein Kontaktformular per Mail genannt – alles Dinge, die es hier nicht gibt – und hätte das eine verschwiegen, was es wirklich gibt: **den Abruf der Kartenkacheln.** Der Browser lädt sie direkt von `tile.openstreetmap.org`, und damit erfährt die OpenStreetMap Foundation die IP-Adresse der Nutzerin und den betrachteten Ausschnitt. Das ist der einzige fremde Abruf der App, und er gehört genannt. Jede Aussage der Seite hat eine Fundstelle; der Kopf der Datei führt sie als Tabelle.
+
+  **Zwei Dinge stehen offen dabei, statt verschwiegen zu werden:**
+  - Die Zielsuche schickt den Bezugspunkt an den eigenen Server, auf zwei Nachkommastellen gerundet. Das ist eine Ausnahme von „der Standort verlässt das Gerät nicht" und wird als solche benannt, statt die Zusage pauschal stehen zu lassen.
+  - Konto und Daten lassen sich derzeit **nicht in der App** löschen (11.7). Bis das gebaut ist, steht dort der Weg über eine formlose Nachricht – mit dem Hinweis, dass von Hand gelöscht wird. Eine Datenschutzerklärung, die ein Löschrecht beschreibt, ohne zu sagen, dass die Schaltfläche fehlt, wäre irreführend.
+
+  **Verlinkt sind beide aus den Einstellungen**, nicht vom Kartenrand: Die Karte braucht jeden Millimeter (9.15), und die Einstellungen sind ohnehin die Ansicht, in der man liest statt bedient. Zwei Antippen von jeder Stelle der App erfüllen „leicht erkennbar und unmittelbar erreichbar".
+
+  **Was diese Seiten nicht sind: eine Rechtsberatung.** Sie beschreiben die Verarbeitung wahrheitsgemäß, soweit sie aus dem Code hervorgeht. Ob die Einordnung der Rechtsgrundlagen trägt, gehört einmal von jemandem angesehen, der das darf – das steht so in der Datei und in der README.
+
+  **Ein Befund aus dem Browser, den kein Test gefunden hätte:** Mit gesetzten Angaben lief der Name ohne Punkt in den nächsten Satz – „Erika Mustermann wheelee ist ein unentgeltliches Privatprojekt." Die Tests prüfen gegen leere Konfiguration, und genau dort trat es nicht auf. Behoben, und der Grund steht als Kommentar daneben.
+
+  **Ein Fehlschlag, der keiner war:** Der E2E-Test auf den Link in der Fußzeile lief in die Zeitüberschreitung, weil die Entwicklerleiste von Next.js unten links schwebt und den Klick abfängt. Im Produktionsbau gibt es sie nicht. Sie wird im Test auf `pointer-events: none` gesetzt statt versteckt – erschiene dort einmal die **Fehleranzeige** von Next, bliebe sie sichtbar und landete im Screenshot. Sie ganz auszublenden hieße, Fehler auszublenden.
+
+  Geprüft mit **11 Unit-Tests** (`src/lib/legal/operator.test.ts`, vor allem die Fälle, in denen die Konfiguration unvollständig ist) und **6 E2E-Tests** (Erreichbarkeit aus den Einstellungen, Pflichtabschnitte, die drei Kernaussagen des Datenschutztextes, keine erfundenen Angaben, Rückweg, gegenseitige Verlinkung).
+
+---
+
+## 5 / 8. Datenmodell: was nicht gebaut wurde und warum (2026-10-19)
+
+- [x] 5.1 / 5.3 / 5.7 **Die Parkplatzdaten kommen nicht in die Datenbank** (entschieden durch die Umsetzung, festgehalten 2026-10-19).
+
+  Abschnitt 5 der ToDo-Liste stammte aus der Planung vom 2026-10-08 und sah ein Schema `parking_spot`, eine Tabelle `city` und einen Seed-Lauf aus `data/` vor. **Gebaut wurde das Gegenteil, und zwar mit Absicht:** Die Parkplatzdaten sind versionierte Seed-Dateien, statisch ins Bundle importiert; die Datenbank führt genau drei Tabellen – `account`, `session`, `feedback` –, also nur das, was zur Laufzeit entsteht.
+
+  **Der Grund steht im Code selbst** (`src/lib/parking/spots.ts`): Die Datei ist die einzige Stelle, die weiß, woher die Parkplätze kommen. Daten, die sich nur beim Import ändern, in eine Datenbank zu legen, hieße: eine Migration je Datenänderung, ein Seed-Lauf beim Deploy, und ein Bestand auf dem NAS, der von dem im Repository abweichen kann, ohne dass es jemand sieht. Als Dateien sind sie versioniert, im Pull Request lesbar und mit `npm run check:slugs` prüfbar.
+
+  **Warum das hier steht und nicht einfach gelöscht wurde:** Die drei Punkte standen ein Jahr lang als offene Aufgaben da und sahen aus wie Arbeit, die noch kommt. Wer sie abarbeitet, baut die Architektur um, die bewusst anders gewählt wurde. Ein verworfener Plan gehört benannt, nicht stillschweigend entfernt.
+
+  **Was bleibt:** Sollten die Parkplätze eines Tages doch in die Datenbank wandern – etwa wenn Korrekturen aus Bewertungen direkt greifen sollen –, ist `spots.ts` der einzige Ort, der sich ändert. Das war der Zweck der Trennung und gilt unverändert.
+
+- [x] 5.2 / 5.5 / 5.6 **In Abschnitt 8 eingeschmolzen** (2026-10-19). Schema `rating`, `GET /api/spots/:id` mit Bewertungs-Aggregat und `POST …/ratings` beschrieben dieselbe Arbeit wie 8.2, 8.3 und 8.4 – nur in einer zweiten Liste. Dieselbe Sache an zwei Stellen zu führen ist genau der Fall, vor dem [CLAUDE.md](CLAUDE.md) warnt: Bei der nächsten Änderung wird eine davon nachgeführt. Die technischen Angaben (Spalten, Routen) stehen jetzt bei 8.2–8.4, wo auch die fachlichen Regeln stehen.
+
+- [x] 8.10 **Gegenstandslos geworden** (2026-10-19). Der Punkt stellte eine Wahl: „8.3 setzt Abschnitt 11 voraus – entweder Konten vorziehen oder zunächst nur Upvotes ausliefern." **Die Konten sind am 2026-10-11 gebaut worden**, damit ist die Wahl nicht getroffen, sondern überholt. 8.3 kann direkt gebaut werden. Ein Punkt, der eine beantwortete Frage stellt, kostet bei jedem Durchsehen der Liste Aufmerksamkeit und gibt nichts zurück.
 
 ---
 

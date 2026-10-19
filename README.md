@@ -308,10 +308,15 @@ Container in einem Docker-Volume unter `/app/var`. Entschieden wurde das gegen
 Supabase und Neon, weil die App auf dem eigenen NAS hinter einem
 Tailscale-Tunnel läuft und keine Verbindung nach außen braucht.
 
-| Umgebungsvariable | Wofür                                                                  |
-| ----------------- | ---------------------------------------------------------------------- |
-| `ADMIN_EMAILS`    | Adressen, die die Übersicht der Rückmeldungen sehen dürfen (per Komma) |
-| `WHEELEE_DB_PATH` | Pfad der Datenbankdatei; im Container bereits gesetzt                  |
+| Umgebungsvariable          | Wofür                                                                  |
+| -------------------------- | ---------------------------------------------------------------------- |
+| `ADMIN_EMAILS`             | Adressen, die die Übersicht der Rückmeldungen sehen dürfen (per Komma) |
+| `WHEELEE_DB_PATH`          | Pfad der Datenbankdatei; im Container bereits gesetzt                  |
+| `WHEELEE_OPERATOR_NAME`    | Name im Impressum – **Pflicht**, siehe [Rechtstexte](#rechtstexte)     |
+| `WHEELEE_OPERATOR_ADDRESS` | Anschrift, Zeilen durch `\|` getrennt – **Pflicht**                    |
+| `WHEELEE_OPERATOR_EMAIL`   | Kontaktadresse – **Pflicht**                                           |
+| `WHEELEE_OPERATOR_PHONE`   | Telefonnummer – freiwillig                                             |
+| `WHEELEE_OPERATOR_VAT_ID`  | Umsatzsteuer-ID – nur falls vorhanden                                  |
 
 **Ist `ADMIN_EMAILS` leer, hat niemand Zugriff** – auch nicht der erste
 angemeldete Benutzer. Das ist Absicht: Die Registrierung steht jedem offen, und
@@ -320,8 +325,28 @@ Adressen zu sehen. Vorlage für die Datei auf dem NAS:
 [deploy/env.beispiel](deploy/env.beispiel).
 
 Was die App **ohne** Konto kann: alles, was mit Parkplätzen zu tun hat – Karte,
-Standort, Zielsuche, Detailansicht und das Melden eines Fehlers. Ein Konto ist
-ein Angebot, keine Bedingung.
+Standort, Zielsuche, Detailansicht, das Melden eines Fehlers und das **Ansehen**
+der Bewertungen. Ein Konto ist ein Angebot, keine Bedingung.
+
+## Bewertungen
+
+Zu jedem Parkplatz lässt sich angeben, ob es ihn noch gibt (👍 / 👎).
+
+| Was                | Wer                                 |
+| ------------------ | ----------------------------------- |
+| Zählerstände sehen | **alle**, auch ohne Konto           |
+| Bewerten           | **nur mit Konto**, beide Richtungen |
+| Grenze             | 1× pro Parkplatz pro Konto          |
+
+Dieselbe Richtung noch einmal nimmt die Stimme zurück, die andere dreht sie
+um. **Der Schutz steckt im Schema** (`UNIQUE (spot_id, account_id)`), nicht im
+Browser-Speicher: „Höchstens eine Stimme" ist damit eine Eigenschaft der
+Tabelle und keine Regel, die ein Server durchsetzen muss. Das macht nebenbei
+das versehentliche Doppeltippen folgenlos.
+
+**Bewertungen ändern nichts an den Daten.** Kein Parkplatz verschwindet, egal
+wie oft er gemeldet wird; `spotsReportedGone()` liefert eine Prüfliste für
+einen Menschen.
 
 ## Datenschutz
 
@@ -357,6 +382,32 @@ bearbeitet hat, ist nicht erledigt, sondern liegen geblieben.
 Der Lauf hängt an den Zugriffen, die es ohnehin gibt (eine eingehende Meldung,
 ein Blick in die Übersicht), und läuft höchstens einmal am Tag. Einen
 Hintergrundprozess hat die App nicht.
+
+## Rechtstexte
+
+Impressum und Datenschutzerklärung liegen unter `/impressum` und
+`/datenschutz` und sind aus den Einstellungen verlinkt. Beide sind Pflicht,
+seit die Seite erreichbar ist: § 5 DDG verlangt Name, ladungsfähige Anschrift
+und eine Möglichkeit zur schnellen elektronischen Kontaktaufnahme, Art. 13
+DSGVO die Angaben zur Verarbeitung.
+
+**Die Betreiberangaben stehen in der Umgebung, nicht im Repository.** Bei
+einem Privatprojekt ist die ladungsfähige Anschrift eine Wohnadresse; im
+Repository landete sie in der Git-Historie und bliebe dort auch nach dem
+Löschen. Auf der veröffentlichten Seite steht sie trotzdem – genau das
+verlangt das Gesetz. Die Vorlage für die drei Pflichtvariablen steht in
+[deploy/env.beispiel](deploy/env.beispiel).
+
+**Fehlen sie, erfindet die Seite nichts**, sondern nennt den Mangel. Ein
+Impressum mit Platzhaltern sieht aus, als sei die Pflicht erfüllt – das prüft
+ein E2E-Test.
+
+Die Datenschutzerklärung ist aus dem Code belegt und nicht aus einem
+Generator: Sie nennt die Kartenkacheln von OpenStreetMap als den einen fremden
+Abruf, den die App auslöst, und sie sagt offen, dass sich das Konto derzeit
+noch nicht in der App löschen lässt. **Eine rechtliche Prüfung ersetzt sie
+nicht** – die Einordnung der Rechtsgrundlagen gehört vor der Veröffentlichung
+einmal von jemandem angesehen, der das beurteilen darf.
 
 ## Sicherheit
 

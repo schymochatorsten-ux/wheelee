@@ -7,7 +7,7 @@ aktuell gehalten werden, steht in [Datenpflege.md](Datenpflege.md).
 
 **Status-Legende:** `[ ]` offen · `[~]` in Arbeit · `[x]` erledigt · `[!]` blockiert / Entscheidung nötig · `[-]` verworfen / später
 
-**Letzte Aktualisierung:** 2026-10-17
+**Letzte Aktualisierung:** 2026-10-19
 
 **Endziel:** jeden öffentlichen Behindertenparkplatz in Deutschland erfassen,
 der sich aus einer öffentlichen Quelle importieren lässt – siehe
@@ -37,7 +37,36 @@ Unterbrechung nahtlos weitergearbeitet werden kann.
 **Gerade in Arbeit:** nichts. Die Arbeit ist an einem sauberen Punkt beendet:
 alle Prüfungen grün, keine halbfertige Änderung im Baum.
 
-**Zuletzt am 2026-10-17:** Zwei Punkte ohne offene Entscheidung abgearbeitet.
+**Zuletzt am 2026-10-19, dritter Durchgang: Bewertungen gebaut** (8.1–8.7) –
+die letzte Kernfunktion aus dem Konzept. Auf deine Vorgabe hin gilt eine
+**geänderte Regel**: Sehen darf jede:r, bewerten nur mit Konto in beide
+Richtungen, höchstens einmal je Parkplatz. Der Schutz steckt in
+`UNIQUE (spot_id, account_id)` und nicht im Browser-Speicher; damit ist auch
+**D-03 entschieden**. Offen bleiben 8.8 (Übersicht der gemeldeten Plätze) und
+8.9 (Bewertungen in die Validierung).
+
+**Davor am 2026-10-19: Impressum und
+Datenschutzerklärung gebaut** (10.2) – der erste Punkt der neuen Reihenfolge.
+Die Seite war acht Tage lang ohne beides erreichbar. Die Betreiberangaben
+kommen aus der Umgebung, damit eine private Wohnadresse nicht in die
+Git-Historie gerät; fehlen sie, nennt die Seite den Mangel, statt Platzhalter
+zu zeigen. Die Datenschutzerklärung ist aus dem Code belegt und nennt den
+Abruf der Kartenkacheln als den einen fremden Zugriff – das übersieht jeder
+Generator. **Offen bleibt 10.2a: Ohne deine Angaben auf dem NAS ist nur die
+Technik fertig, nicht die Pflicht.**
+
+**Davor am 2026-10-19:** Die Liste geprüft – sie führte an sieben Stellen
+**keine offenen Aufgaben**: ein abgehakter Unterpunkt in 2e.11; 8.10, dessen
+Frage die Konten seit dem 2026-10-11 beantworten; und Abschnitt 5 vollständig
+(5.1/5.3/5.7 verworfen, weil die Parkplatzdaten bewusst Seed-Dateien bleiben;
+5.2/5.5/5.6 doppelt zu 8.2–8.4). Dazu drei Berichtigungen: **3.0i ist neu** –
+174 statt der hier behaupteten 66 Standorte ohne Straßennamen, Dormagen 82
+von 82; **3.1** ist zur Hälfte gebaut (`crossCheckWithOsm` in `validate.mts`);
+**3.10** zitierte Quoten, die im aktuellen Bericht gar nicht stehen. Die
+Doppelung 2a.5 ↔ 10.3 ist aufgelöst. Begründungen in
+[Erledigt.md](Erledigt.md).
+
+**Davor am 2026-10-17:** Zwei Punkte ohne offene Entscheidung abgearbeitet.
 **17.5 Aufräumen**: Erledigte Rückmeldungen laufen nach zwölf Monaten ab, samt
 der freiwilligen Antwortadresse – das Formular versprach das, niemand löste es
 ein. Abgelaufene Sitzungen gehen mit. **10.3 Sicherheitsprüfung**: Die App
@@ -73,7 +102,7 @@ npm run test && npm run typecheck && npm run lint
 npm run check:slugs
 ```
 
-Erwartet: 281 Unit-Tests grün und
+Erwartet: 305 Unit-Tests grün und
 `Verzeichnis: 10.754 Gemeinden · davon an der Reihe: 204 · Seed-Dateien: 209`
 mit „✅ Register und Seed-Dateien stimmen überein". Weicht das ab, hat sich
 seit dem 2026-10-17 etwas geändert – **das klären, bevor Neues anfängt.**
@@ -91,35 +120,62 @@ Er lädt sie nach `data/raw/`, baut die Flächen und prüft sich selbst gegen de
 Bestand. Erwartet: `10.956 Flächen für 10.956 Gemeinden` und
 `17.801 von 18.072 Standorten … (98.50 %)`.
 
-### Reihenfolge: erst die inhaltlichen Themen, der Datenimport zuletzt
+### Reihenfolge der Abarbeitung
 
-> **Vorgabe vom 2026-10-17.** Es wird **kein weiterer Datenimport** angefangen,
-> solange auf dieser Liste noch inhaltliche Punkte offen sind. Erst wenn alle
-> ToDos erledigt sind, geht es mit dem Import weiter.
+> **Vorgabe vom 2026-10-17, unverändert gültig.** Es wird **kein weiterer
+> Datenimport** angefangen, solange auf dieser Liste inhaltliche Punkte offen
+> sind. Der Import ist der Teil, der sich beliebig lange fortsetzen lässt –
+> 10.550 Gemeinden stehen offen, und er wird nie „fertig" im Sinne einer
+> abgehakten Liste. Mehr Städte in einer App, der etwas Grundsätzliches fehlt,
+> verbessern nichts.
 
-Das ist eine Umkehrung gegenüber den Sitzungen davor, und der Grund ist
-handfest: Der Import ist der Teil, der sich beliebig lange fortsetzen lässt –
-10.550 Gemeinden stehen offen, und er wird nie „fertig" im Sinne einer
-abgehakten Liste. Die inhaltlichen Punkte sind endlich und blockieren die
-Veröffentlichung: **Bewertungen** (Abschnitt 8) sind laut
-[Konzept.md](Konzept.md) eine Kernfunktion und noch gar nicht gebaut,
-**Impressum und Datenschutzerklärung** (10.2) sind für eine erreichbare
-deutsche Seite Pflicht. Mehr Städte in einer App, die ihre Kernfunktion nicht
-hat, verbessern nichts.
+**Diese Liste ist die verbindliche Reihenfolge** (zuletzt geordnet
+2026-10-19). Abgearbeitet wird von oben; ein Punkt wird erst angefangen, wenn
+der darüber abgeschlossen ist. Was fertig ist, steht nicht mehr hier, sondern
+in [Erledigt.md](Erledigt.md) – deshalb stehen oben keine durchgestrichenen
+Zeilen.
 
-**In dieser Reihenfolge**, ohne dass etwas davon voneinander abhängt:
+| #   | Was                                                           | Warum an dieser Stelle                                              |
+| --- | ------------------------------------------------------------- | ------------------------------------------------------------------- |
+| 1   | **8.8 / 8.9** Bewertungen zu Ende führen                      | Das Gebaute wird erst nützlich, wenn jemand die Meldungen sieht     |
+| 2   | **3.0i** 174 Standorte ohne Straßennamen                      | Eine ganze Stadt ist unbrauchbar; vorhandene Daten vervollständigen |
+| 3   | **3.1 / 3.7** Kreuzvergleich zu Ende, bestätigt anzeigen      | Die Angabe, die vor einer vergeblichen Fahrt schützt                |
+| 4   | **12.6 / 12.4** Fehler-Monitoring, Lighthouse                 | Ab hier geht es um den Betrieb, nicht mehr um Funktionen            |
+| 5   | **10.5 / 17.6 / 11.7** Nonce-CSP, Passwort ändern, DSGVO      | Sorgfalt, kein akutes Risiko – das akute war 10.2 und ist erledigt  |
+| 6   | **11.3a / 11.4 / 11.5 / 11.6** Konto-Komfort                  | Niemand ist darauf angewiesen; 11.6 baut auf den Bewertungen auf    |
+| 7   | **9.2a / 9.9 / 12.7a** Darstellung, Hilfsmitteltest           | 9.9 braucht echte Geräte und Hilfsmittel                            |
+| 8   | **1.8 / 4.5 / 12.5** Aufräumen und Automatisierung            | Hängt teils an Entscheidungen (Webhook oder Timer)                  |
+| 9   | **2c.3 / 2c.4 / 2d.9** Anfragen an Städte, OSM ergänzen       | Briefe und Kartierung – läuft nebenher, hält nichts auf             |
+| 10  | **Datenarbeit**: 3.2, 3.3, 3.4, 3.10, 2d.8a, 2a.5/10.3, 2e.\* | Fällt unter die Vorgabe oben – erst wenn 1 bis 9 stehen             |
+| 11  | **14.1–14.9** Abschlusstest                                   | Laut Abschnitt 14 zuletzt, auf echten Geräten und mit Betroffenen   |
 
-1. **Abschnitt 8 Bewertungen** – die größte Lücke zum Konzept. Setzt D-03
-   (Missbrauchsschutz) voraus, der auf deine Entscheidung wartet.
-2. 12.6 Fehler-Monitoring, 12.4 Lighthouse
-3. 3.7 bestätigte Standorte in der Detailansicht kennzeichnen
-4. 11.4 / 11.5 eigene Bewertungen einsehen, Favoriten
-5. 10.5 Nonce-CSP und „Passwort ändern", 17.6 Adresse an offenen Meldungen
-6. 10.2 Impressum und Datenschutzerklärung – **braucht deine Angaben**
+**Wo 3.1 hingehört, war widersprüchlich** und ist am 2026-10-19 geklärt: Der
+offene Teil ist **Code** (drei Gruppen statt einer Zahl, Ergebnis je Standort
+festhalten) und steht deshalb auf Platz 3. Dass der Lauf dafür Overpass
+befragt, macht ihn nicht zum Datenimport – es kommt keine Gemeinde hinzu. Die
+Punkte 3.3, 3.4 und 3.10 sind dagegen echte Läufe über den ganzen Bestand und
+stehen unter Platz 10.
 
-**Erst wenn das alles steht:** 3.1 / 3.3 / 3.4 (Kreuzvergleich,
-Straßenabgleich, Abstand zur Straße), 2d.8a, 2a.5 und die nächste
-Einwohnerstufe. Alle vier sind Datenarbeit und fallen unter die Vorgabe oben.
+**Außer der Reihe, weil es nicht an mir liegt:**
+
+- **10.2a** – deine Angaben für das Impressum. Bis sie in der `.env` auf dem
+  NAS stehen, nennen beide Rechtstexte den Mangel, und **die gesetzliche
+  Pflicht ist nicht erfüllt.** Das ist der einzige Punkt mit laufendem Risiko.
+- **10.2b** – die Rechtstexte einmal fachlich ansehen lassen.
+- **D-05** – Umgang mit ungenauen Positionen; faktisch gelöst, weil alle
+  18.072 Standorte Koordinaten haben.
+- **1.7** – Commits und Branch-Strategie; `git` ist auf diesem Rechner nicht
+  im PATH, daran ändert keine Reihenfolge etwas.
+- **11.1** – Anmeldung ohne Passwort und „Passwort vergessen"; beides setzt
+  einen Mailversand voraus, über den noch nicht entschieden ist.
+- **Abschnitte 13, 15, 16** – gesperrt bis zu deiner Freigabe.
+
+**Diese Aufstellung ist vollständig:** Jeder offene Posten der obersten Ebene
+steht entweder in der Tabelle oder hier darunter. Nachprüfen:
+
+```bash
+node -e "const t=require('fs').readFileSync('ToDos.md','utf8');const s=t.indexOf('### Reihenfolge der Abarbeitung'),e=t.indexOf('### Was zuletzt geschah',s);const g=new Set([...t.slice(s,e).matchAll(/\b([0-9]+[a-z]?\.[0-9]+[a-z]?)\b/g)].map(m=>m[1]));const o=[...t.matchAll(/^- \[([ ~!])\] \*{0,2}([0-9]+[a-z]?\.[0-9]+[a-z]?)/gm)].map(m=>m[2]);const f=o.filter(n=>!g.has(n)&&!n.startsWith('2e.')&&!n.startsWith('14.'));console.log(f.length?'nicht eingeordnet: '+f.join(' '):'alle eingeordnet');"
+```
 
 **Nicht anfangen:** Abschnitt 13, 15 und 16 sowie 2e.11 – alle gesperrt bis zu
 einer ausdrücklichen Freigabe.
@@ -240,10 +296,19 @@ schiefging.
 - **Abschnitt 15 (Mehrsprachigkeit)** ist auf deinen Wunsch zurückgestellt – Englisch, Spanisch und Französisch erst nach der deutschen Fassung
 - **Abschnitt 16 (nur nach Freigabe)** – derzeit: Städte zum Mitnehmen herunterladen
 
-**Stand (2026-10-17):** 51 offen, 8 in Arbeit, 3 brauchen deine Entscheidung,
-9 bewusst zurückgestellt (Finanzierung, Mehrsprachigkeit, Offline-Download).
-Dazu 13 offene Unterpunkte innerhalb dieser Posten. **Gezählt wird die oberste
-Ebene** – sonst ergibt jede Sitzung eine andere Zahl.
+**Stand (2026-10-19, dritter Durchgang):** 37 offen, 9 in Arbeit, 3 brauchen
+deine Angaben oder Entscheidung, 9 bewusst zurückgestellt (Finanzierung,
+Mehrsprachigkeit, Offline-Download). Dazu 14 offene Unterpunkte innerhalb
+dieser Posten. **Gezählt wird die oberste Ebene** – sonst ergibt jede Sitzung
+eine andere Zahl.
+
+> **Von 51 auf 44 durch Aufräumen, nicht durch Arbeit** (2026-10-19). Die
+> Liste führte sieben Posten, die keine offenen Aufgaben waren: die sechs aus
+> Abschnitt 5 (drei verworfen, drei doppelt zu Abschnitt 8) und 8.10, dessen
+> Frage die Konten seit dem 2026-10-11 beantwortet haben. Hinzu kam **ein**
+> echter Punkt, der fehlte: 3.0i, die 174 Standorte ohne Straßennamen.
+> **Eine kleinere Zahl heißt hier also nicht, dass mehr fertig ist** – sie
+> heißt, dass die Liste wieder sagt, was sie sagen soll.
 
 > **Nachgezählt, nicht fortgeschrieben** (2026-10-17). Die Zahl stand kurz auf
 > 52, weil sie aus der vorigen weitergerechnet statt neu ermittelt wurde.
@@ -254,14 +319,19 @@ Ebene** – sonst ergibt jede Sitzung eine andere Zahl.
 > node -e "const l=require('fs').readFileSync('ToDos.md','utf8').split('\n'); const t=l.filter(x=>/^- \[(.)\]/.test(x)); console.log('gesamt',t.length); for (const m of [' ','~','!','-']) console.log(m, t.filter(x=>x.startsWith('- ['+m+']')).length); console.log('Unterpunkte', l.filter(x=>/^\s+- \[ \]/.test(x)).length);"
 > ```
 
-112 erledigte Einträge stehen in [Erledigt.md](Erledigt.md).
-**Tests: 281 Unit-Tests + 30 E2E-Tests.**
+123 erledigte Einträge stehen in [Erledigt.md](Erledigt.md).
+**Tests: 305 Unit-Tests + 42 E2E-Tests.**
 
 ---
 
 ## 0. Offene Entscheidungen
 
-- [!] **D-03 Missbrauchsschutz für Bewertungen ohne Accounts** – Empfehlung: eine Bewertung pro Parkplatz pro Gerät (LocalStorage) plus IP-Rate-Limit serverseitig.
+**D-03 (Missbrauchsschutz) ist am 2026-10-19 entschieden und umgesetzt** –
+siehe [Erledigt.md](Erledigt.md). Die ursprüngliche Empfehlung (Gerätekennung
+im Browser-Speicher plus IP-Grenze) wurde dabei **verworfen**: Beides ist zu
+schwach, um eine Zählung zu tragen. Entschieden wurde Anmeldepflicht plus
+Eindeutigkeit im Schema.
+
 - [!] **D-05 Umgang mit Parkplätzen ohne Koordinaten** – Empfehlung: nicht auf den Stadtteil-Mittelpunkt setzen, sondern als „Position ungenau" kennzeichnen und nur in der Liste führen. Derzeit faktisch gelöst, weil alle importierten Standorte Koordinaten haben.
   **Entschieden und hier abgeräumt:** D-01, D-02 (Datenbank: SQLite), D-04 und
   D-06 stehen mit ihrer Begründung in [Erledigt.md](Erledigt.md).
@@ -330,8 +400,15 @@ solche, die nur als Bild oder gedruckter Plan vorliegen.
 
   Der dafür vorgesehene Weg sind die **Bundesland-Auszüge von Geofabrik** (`.osm.pbf`, ODbL, täglich aktualisiert, mit stabilem JSON-Index und ausdrücklich für Automatisierung gedacht). Das ist der Unterschied, auf den es hier ankommt: Ein Download-Server ist für Massenbezug da, ein Abfragedienst nicht. Was vorher zu klären ist:
 
+  > **Nicht mehr blockiert.** Dieser Punkt durfte lange nicht angefasst werden,
+  > solange die Zuordnung nicht stimmte: Ein schnellerer Bezug hätte nur
+  > schneller falsche Daten erzeugt – genau der Fall, der am 2026-10-10 zum
+  > Entfernen von 473 Gemeinden führte. **Seit dem 2026-10-11 ist die Bedingung
+  > erfüllt** (2e.7: Die Zuordnung entscheidet die amtliche Grenzfläche,
+  > geprüft an 18.072 Standorten). Das ist eine Voraussetzung, keine Aufgabe –
+  > sie stand bis zum 2026-10-19 fälschlich als abgehakter Punkt in dieser
+  > offenen Liste.
   - [ ] **Der Aufwand ist ehrlich zu benennen:** PBF ist Protocol Buffers mit zlib-komprimierten Blöcken und delta-kodierten Knoten – deutlich mehr als ein Shapefile-Leser. Dagegen steht, dass es die Abhängigkeit von einem Gemeinschaftsdienst vollständig auflöst und der Lauf beliebig wiederholbar wird, ohne jemandem zur Last zu fallen.
-  - [x] **Erst nach 2e.7 entscheiden, nicht davor.** Solange die Zuordnung nicht stimmt, erzeugt ein schnellerer Bezug nur schneller falsche Daten – genau der Fall, der am 2026-10-10 zum Entfernen von 473 Gemeinden geführt hat. **Seit dem 2026-10-11 ist diese Bedingung erfüllt:** Die Zuordnung entscheidet die amtliche Grenzfläche, geprüft an 18.072 Standorten. Die Entscheidung über den Bezugsweg steht damit offen – aber nicht mehr blockiert.
   - [ ] **Attribution bleibt ODbL**, also unverändert gegenüber dem heutigen OSM-Bezug. Die Auszüge enthalten keine Benutzernamen und Changeset-IDs; für dieses Projekt ist das kein Verlust, sondern erspart die Frage nach personenbezogenen Daten.
   - [ ] Zwischenstufe, falls PBF zu viel ist: `npm run import:osm-state` beibehalten, aber mit Pausen und über die 16 Länder verteilt – der Lauf steht ja. Dann bleibt es bei 32 Abfragen für ganz Deutschland statt 10.754, und das ist vertretbar.
 
@@ -343,26 +420,48 @@ solche, die nur als Bild oder gedruckter Plan vorliegen.
 
 `npm run validate` hat 84 Städte geprüft. Bericht: [data/\_validierung.md](data/_validierung.md).
 
-Die 3.0-Kette (Straßennamen für 61 % der Standorte nachtragen) ist
-abgeschlossen – siehe [Erledigt.md](Erledigt.md). Sie war aber durch den
-Import der Städte ab 50.000 Einwohnern **wieder aufgerissen**:
-
-Die 3.0-Kette ist jetzt für alle 187 Städte abgeschlossen (3.0h, siehe
-[Erledigt.md](Erledigt.md)): 66 von 17.206 Standorten ohne Straßennamen.
+Die 3.0-Kette (Straßennamen nachtragen) war zweimal abgeschlossen und ist
+zweimal wieder aufgerissen – beim Import der Städte ab 50.000 Einwohnern und
+danach erneut. Der Stand wird deshalb **gezählt, nicht erinnert** (3.0i).
 
 Bisher prüft der Import nur, ob eine Koordinate überhaupt plausibel ist (liegt sie
 in Deutschland, liegt sie nahe der richtigen Stadt). Das fängt grobe Fehler ab,
 aber keine einzelne falsch verorteten Parkplätze. Dafür braucht es einen
 Abgleich mit einer zweiten, unabhängigen Quelle.
 
-- [ ] 3.1 **Kreuzvergleich amtliche Daten gegen OpenStreetMap.** Für jede Stadt beide Quellen holen und Standorte paaren, die weniger als etwa 30 m auseinanderliegen. Daraus drei Gruppen: _bestätigt_ (beide kennen den Platz), _nur amtlich_ (wahrscheinlich in OSM nicht erfasst), _nur OSM_ (möglicherweise neu oder in der amtlichen Liste vergessen). Der Importer holt beide Quellen ohnehin schon – es fehlt nur der Vergleich.
+- [ ] 3.0i **174 Standorte haben keinen Straßennamen, einer ganzen Stadt fehlen alle.** (Aufgenommen 2026-10-19.)
+
+      **Dieser Punkt fehlte, weil eine Zahl stehen blieb.** Hier stand „3.0-Kette abgeschlossen: 66 von 17.206 Standorten ohne Straßennamen" – ein richtiger Satz aus der Zeit mit 17.206 Standorten. Inzwischen sind es 18.072, und nachgezählt im Bestand:
+
+      ```
+      ohne Straßenname: 174 von 18.072 (1,0 %), verteilt auf 33 Städte
+        Dormagen 82/82 · Neumünster 14/97 · Euskirchen 13/258 · Eschweiler 7/55 …
+      ```
+
+      **Dormagen ist der eigentliche Befund:** 82 von 82 Standorten ohne Straße, dazu heißen 75 davon „Behindertenparkplatz Dormagen". Liste und Detailansicht sind für diese Stadt damit wertlos – man sieht 82-mal denselben Namen ohne Adresse. `data/_validierung.md` führt das als 🔴, aber niemand hat es auf diese Liste geholt.
+
+      Zu tun: `npm run import:streets` (nimmt von selbst nur Städte mit offenen Standorten), für Dormagen zusätzlich prüfen, ob das Adressfeld der Quelle erkannt wurde – ein Platzhalter bei 75 von 82 Einträgen deutet auf einen nicht erkannten Spaltennamen, nicht auf fehlende Daten. Danach `npm run import:index` und `npm run validate`.
+
+      **Das zählt als Datenpflege, nicht als neuer Import** (siehe die Vorgabe oben): Es kommt keine Gemeinde hinzu, vorhandene Standorte werden vervollständigt.
+
+      **Die Zahl gehört nicht hierher geschrieben, sondern ermittelt:**
+
+      ```bash
+      node -e "const fs=require('fs');let t=0,n=0;for(const f of fs.readdirSync('data')){if(!f.endsWith('.json')||/^_|\.(overrides|parsed|report|line-fixups)\.|^geocode-cache|^osm-address|^frankfurt-pdf-liste/.test(f))continue;const d=JSON.parse(fs.readFileSync('data/'+f,'utf8'));if(!d.spots)continue;t+=d.spots.length;n+=d.spots.filter(s=>!s.street).length;}console.log(n,'von',t);"
+      ```
+
+- [~] 3.1 **Kreuzvergleich amtliche Daten gegen OpenStreetMap – die Hälfte steht.** `crossCheckWithOsm` in `scripts/import/validate.mts` holt für jede amtliche Stadt die OSM-Standorte, paart sie innerhalb von `CONFIRM_METERS` und schreibt die Quote in den Bericht. Was von der ursprünglichen Beschreibung **fehlt**:
+  - [ ] **Die drei Gruppen statt einer Zahl:** _bestätigt_, _nur amtlich_ (in OSM nicht erfasst), _nur OSM_ (neu oder in der amtlichen Liste vergessen). Derzeit wird nur gezählt, wie viele einen Gegenpart haben – welche es sind, fällt weg.
+  - [ ] **Das Ergebnis je Standort festhalten**, nicht nur je Stadt. Ohne das kann 3.7 die bestätigten Standorte nicht kennzeichnen, und der Lauf müsste für jede Anzeige wiederholt werden.
 - [~] 3.2 **Landesweite Sammeldatensätze als dritte Quelle.** Karlsruhe ist eingebunden, NRW und BW sind ergebnislos geprüft – beides in [Erledigt.md](Erledigt.md). Offen bleibt:
   - [ ] Zum **Gegenprüfen** (statt zum Lückenschließen) taugt der Karlsruher Datensatz weiterhin: Für Karlsruhe und Baden-Baden liegen jetzt zwei unabhängige Quellen vor. Das ist Material für 3.1.
   - [ ] Weitere Landesportale einzeln ansehen: Open Data Hessen, daten.berlin.de, Geodatenportal Bayern, Transparenzportal Hamburg.
 - [ ] 3.3 **Straßenabgleich.** Für jeden Standort prüfen, ob die Rückwärtssuche bei der Koordinate dieselbe Straße nennt wie die Quelle. Eine Abweichung ist kein Beweis für einen Fehler, aber ein guter Filter: nur die Treffer müssen von Hand angesehen werden. Für Frankfurt gibt es das schon im Importreport; es fehlt für alle anderen Städte.
 - [ ] 3.4 **Abstand zur nächsten Straße.** Ein Behindertenparkplatz liegt am Straßenrand. Punkte, die mehr als etwa 25 m von jeder Straße entfernt sind, sind fast immer falsch verortet. Über eine einzige Overpass-Abfrage je Stadt prüfbar.
 - [ ] 3.7 Ergebnis sichtbar machen: Standorte, die von zwei Quellen bestätigt sind, in der Detailansicht als geprüft kennzeichnen. Das ist genau die Information, die Nutzer:innen vor einer vergeblichen Fahrt bewahrt.
-- [ ] 3.10 Bestätigungsquoten nachgehen: Neuss 95 % und Ulm 81 % zeigen, dass ein hoher Wert erreichbar ist. Köln 24 %, Dresden 19 %, Düsseldorf 5 % – dort lohnt die Stichprobe, ob die amtlichen Koordinaten oder die OSM-Daten versetzt sind.
+- [ ] 3.10 **Bestätigungsquoten nachgehen – aber erst wieder welche erzeugen.** Der Punkt nannte bis zum 2026-10-19 feste Zahlen (Neuss 95 %, Ulm 81 %, Köln 24 %, Dresden 19 %, Düsseldorf 5 %) und las sich dadurch wie eine fertige Grundlage. **In `data/_validierung.md` (Stand 2026-10-10) steht keine einzige Bestätigungsquote** – der Abgleich lief beim letzten Lauf nicht durch, weil er Netzzugriff braucht und `crossCheckWithOsm` bei leerer OSM-Antwort bewusst `null` zurückgibt, statt „0 % bestätigt" zu behaupten.
+
+      Die zitierten Zahlen stammen also aus einem früheren Lauf und sind nicht mehr belegt. Zuerst `npm run validate` **mit** Netz laufen lassen, dann die Ausreißer nach unten ansehen: Dort ist entweder die amtliche Koordinate versetzt oder die OSM-Erfassung dünn, und das unterscheidet nur die Stichprobe.
 
 ---
 
@@ -378,12 +477,19 @@ ob sich an der Quelle etwas getan hat.
 
 ## 5. Datenmodell und Backend
 
-- [ ] 5.1 Schema `parking_spot`: id, city, street, house_number, label, district, lat, lng, spot_count, time_restriction, geo_accuracy, source, license, verified, created_at
-- [ ] 5.2 Schema `rating`: id, spot_id, vote (`exists` / `gone`), created_at, device_hash
-- [ ] 5.3 Tabelle `city` mit Quelle, Lizenz, Importdatum und Abdeckungsgrad
-- [ ] 5.5 API: `GET /api/spots/:id` inklusive Bewertungs-Aggregat
-- [ ] 5.6 API: `POST /api/spots/:id/ratings` mit Validierung und Rate-Limit
-- [ ] 5.7 Migrationen und Seed-Lauf aus den Dateien in `data/`
+**Nichts offen** (aufgeräumt 2026-10-19). Der Abschnitt stammte aus der
+Planung vom 2026-10-08 und beschrieb ein Datenmodell, das so **nicht gebaut
+wurde** – teils bewusst anders entschieden, teils doppelt zu Abschnitt 8.
+Begründungen in [Erledigt.md](Erledigt.md):
+
+- **5.1, 5.3, 5.7** (Schema `parking_spot`, Tabelle `city`, Seed-Lauf in die
+  Datenbank) sind **verworfen**: Die Parkplatzdaten bleiben versionierte
+  Seed-Dateien, die Datenbank führt nur, was zur Laufzeit entsteht.
+- **5.2, 5.5, 5.6** (Schema `rating`, Bewertungs-Aggregat, `POST …/ratings`)
+  stehen jetzt bei **8.2–8.4**, wo auch die fachlichen Regeln stehen.
+
+Der Abschnitt bleibt als Überschrift stehen, weil die Nummerierung beider
+Dateien dieselbe ist – wie bei 6 und 7.
 
 ---
 
@@ -409,35 +515,50 @@ Aufgabe.
 
 ## 8. Bewertungen
 
-**Nicht mehr blockiert:** Die Datenbank steht seit dem 2026-10-11 (D-02,
-SQLite), und mit Abschnitt 11 gibt es auch die Konten, die 8.3 voraussetzt.
-**Gebaut ist von den Bewertungen selbst noch nichts** – bisher existiert nur
-die Festlegung, wie sie funktionieren sollen. Offen bleibt davon unabhängig
-D-03 (Missbrauchsschutz).
+**Gebaut am 2026-10-19.** Damit ist die letzte Kernfunktion aus dem Konzept
+da. Auch **D-03 (Missbrauchsschutz) ist damit entschieden**: Der Schutz steckt
+in der Eindeutigkeitsbedingung `UNIQUE (spot_id, account_id)` und in der
+Anmeldepflicht, nicht im Browser-Speicher – die Begründung samt der
+verworfenen Alternativen steht in [Erledigt.md](Erledigt.md).
 
-### Regeln (festgelegt 2026-10-09)
+### Regeln (geändert 2026-10-19)
 
-|                     | 👍 „Existiert"               | 👎 „Existiert nicht mehr"    |
-| ------------------- | ---------------------------- | ---------------------------- |
-| Benutzerkonto nötig | **nein**                     | **ja**                       |
-| Begrenzung          | 1× pro Parkplatz pro Sitzung | 1× pro Parkplatz pro Sitzung |
+|            | 👍 „Existiert"             | 👎 „Existiert nicht mehr"  |
+| ---------- | -------------------------- | -------------------------- |
+| Ansehen    | **ohne Konto**             | **ohne Konto**             |
+| Bewerten   | **nur mit Konto**          | **nur mit Konto**          |
+| Begrenzung | 1× pro Parkplatz pro Konto | 1× pro Parkplatz pro Konto |
 
-Der Gedanke dahinter: Eine Bestätigung kann kaum Schaden anrichten – im
-schlimmsten Fall bleibt ein Parkplatz gelistet, den es noch gibt. Eine Meldung
-„existiert nicht mehr" entwertet dagegen einen Eintrag, auf den sich jemand
-verlässt, und muss deshalb zurechenbar sein. Die niedrige Hürde steht da, wo
-sie nützt, und die höhere da, wo sie schützt.
+**Das ist eine Änderung gegenüber dem 2026-10-09**, wo der Daumen hoch ohne
+Konto möglich sein sollte. Der Grund: Anonym wäre er nur über den
+Browser-Speicher zu begrenzen gewesen, und den hebelt ein privates Fenster
+aus. Mit Anmeldepflicht heißen zehn Bestätigungen zehn Konten – erst damit ist
+die Zählung eine Auskunft. Dass die Zählerstände **ohne** Konto sichtbar sind,
+hält den Verlust klein. Die ausführliche Begründung steht in
+[Erledigt.md](Erledigt.md).
 
-- [ ] 8.1 UI: 👍 „Existiert" / 👎 „Existiert nicht mehr" in der Detailansicht
-- [ ] 8.2 **Upvote ohne Konto**, begrenzt auf einmal pro Parkplatz und Sitzung
-- [ ] 8.3 **Downvote nur mit Benutzerkonto**, ebenfalls einmal pro Parkplatz und Sitzung. Ohne Anmeldung ist die Schaltfläche sichtbar, aber deaktiviert, mit Hinweis warum – nicht einfach weglassen, sonst wirkt die App kaputt.
-- [ ] 8.4 Sitzungsbegrenzung serverseitig durchsetzen, nicht nur im Browser. LocalStorage allein ist kein Schutz, sondern eine Bequemlichkeit.
-- [ ] 8.5 Zählerstände und Zeitpunkte anzeigen („zuletzt bestätigt am …")
-- [ ] 8.6 Keine automatische Änderung der Parkplatzdaten durch Bewertungen (laut Konzept)
-- [ ] 8.7 Optimistisches UI-Update mit Fehlerbehandlung bei Offline
-- [ ] 8.8 Interne Übersicht gemeldeter Parkplätze für das manuelle Review
-- [ ] 8.9 Bewertungen in die Validierung einbeziehen: mehrfach als „existiert nicht mehr" gemeldete Plätze gehören auf die Prüfliste aus Abschnitt 3
-- [ ] 8.10 Abhängigkeit beachten: 8.3 setzt Abschnitt 11 (Benutzerkonten) voraus. Entweder Konten vorziehen oder zunächst nur Upvotes ausliefern.
+**8.1 bis 8.7 sind seit dem 2026-10-19 gebaut** – Knöpfe in der
+Detailansicht, Anmeldepflicht serverseitig geprüft, Eindeutigkeit im Schema,
+Zählerstände mit Zeitpunkten, optimistische Anzeige mit Rücknahme bei
+Fehlern. Begründungen in [Erledigt.md](Erledigt.md). Offen bleibt:
+
+- [ ] 8.8 **Interne Übersicht gemeldeter Parkplätze für das manuelle Review.**
+      Die Abfrage dafür steht schon: `spotsReportedGone()` in
+      `src/lib/db/ratings.ts` liefert die Parkplätze mit mindestens zwei
+      „existiert nicht mehr"-Meldungen, nach Anzahl sortiert. Es fehlt die
+      Ansicht – am ehesten als zweiter Abschnitt im Reiter „Rückmeldungen",
+      der ohnehin nur für Administratoren sichtbar ist. Von dort sollte ein
+      Klick auf die Karte führen, wie bei den Rückmeldungen auch.
+- [ ] 8.9 **Bewertungen in die Validierung einbeziehen:** mehrfach als
+      „existiert nicht mehr" gemeldete Plätze gehören auf die Prüfliste aus
+      Abschnitt 3. Das ist der Punkt, an dem aus Bewertungen Datenpflege wird
+      – `npm run validate` müsste die Datenbank lesen, was es bisher nicht
+      tut.
+
+**8.10 ist entfallen** (2026-10-19): Der Punkt stellte die Wahl „Konten
+vorziehen oder zunächst nur Upvotes ausliefern". Die Konten sind seit dem
+2026-10-11 gebaut – die Frage ist nicht beantwortet worden, sondern überholt.
+Siehe [Erledigt.md](Erledigt.md).
 
 ---
 
@@ -450,9 +571,24 @@ sie nützt, und die höhere da, wo sie schützt.
 
 ## 10. Datenschutz und Recht
 
-- [ ] 10.2 Impressum und Datenschutzerklärung – für eine veröffentlichte Seite in Deutschland Pflicht
-- [~] 10.3 Lizenz- und Attributionshinweise. ODbL-Nennung und Quellenangabe je Stadt sind fertig (siehe [Erledigt.md](Erledigt.md)).
-  - [ ] Was fehlt, ist die Lizenz der 15 amtlichen Quellen, die keine angeben – beschrieben unter 2a.5.
+**10.2 (Impressum und Datenschutzerklärung) ist seit dem 2026-10-19 gebaut** –
+siehe [Erledigt.md](Erledigt.md). Zwei Dinge bleiben, die nicht daran hängen:
+
+- [!] 10.2a **Die Betreiberangaben fehlen noch auf dem Server.** Beide Seiten
+  stehen, zeigen aber einen Hinweis statt deiner Daten, solange
+  `WHEELEE_OPERATOR_NAME`, `WHEELEE_OPERATOR_ADDRESS` und
+  `WHEELEE_OPERATOR_EMAIL` nicht in der `.env` auf dem NAS stehen. Vorlage:
+  [deploy/env.beispiel](deploy/env.beispiel). **Das ist der Punkt, an dem
+  die Pflicht wirklich erfüllt ist** – bis dahin ist nur die Technik
+  fertig. Gebraucht werden Name, ladungsfähige Anschrift und eine
+  Kontaktadresse.
+- [ ] 10.2b **Einmal rechtlich ansehen lassen.** Die Texte beschreiben die
+      Verarbeitung wahrheitsgemäß und aus dem Code belegt. Ob die Einordnung
+      trägt – vor allem die genannten Rechtsgrundlagen und die Einstufung als
+      „geschäftsmäßig" nach § 5 DDG –, kann ich nicht beurteilen, und eine
+      selbstbewusst formulierte Falschauskunft wäre schlechter als eine
+      offene Frage.
+- [~] 10.3 Lizenz- und Attributionshinweise. ODbL-Nennung und Quellenangabe je Stadt sind fertig (siehe [Erledigt.md](Erledigt.md)). Was fehlt, ist die Lizenz der 15 amtlichen Quellen, die keine angeben – **das ist 2a.5 und wird dort geführt**, nicht hier. (Bis zum 2026-10-19 stand es an beiden Stellen als eigener Haken: eine Arbeit, zwei Kästchen, und beim Erledigen wäre nur eines davon nachgeführt worden.)
 
 - [~] 10.5 **Datenschutz- und Sicherheitsprüfung.** Am 2026-10-17 durchgeführt;
   Befund, Behebung und die Liste der geprüften Punkte **ohne** Befund stehen in

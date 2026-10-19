@@ -96,6 +96,31 @@ const MIGRATIONS: readonly string[] = [
   CREATE INDEX feedback_created ON feedback(created_at DESC);
   CREATE INDEX feedback_status ON feedback(status);
   `,
+
+  // 2 – Bewertungen (ToDos 8.1–8.7, Regel festgelegt 2026-10-19).
+  `
+  CREATE TABLE rating (
+    id         INTEGER PRIMARY KEY AUTOINCREMENT,
+    spot_id    TEXT NOT NULL,
+    -- NOT NULL, und das ist die ganze Zugangsregel: Bewerten setzt ein Konto
+    -- voraus, in beide Richtungen. Sehen darf die Zählerstände jede:r.
+    account_id TEXT NOT NULL REFERENCES account(id) ON DELETE CASCADE,
+    vote       TEXT NOT NULL CHECK (vote IN ('exists', 'gone')),
+    created_at TEXT NOT NULL,
+    -- Gesetzt, wenn jemand seine Stimme später umgedreht hat.
+    updated_at TEXT,
+
+    -- **Die eigentliche Schutzmaßnahme.** „Höchstens eine Stimme je Konto und
+    -- Parkplatz" ist damit keine Regel, die der Server durchsetzen muss,
+    -- sondern eine Eigenschaft der Tabelle: Ein zweiter Versuch kann gar
+    -- keine zweite Zeile erzeugen. Das macht nebenbei das versehentliche
+    -- Doppeltippen folgenlos – der häufigste Fall von allen.
+    UNIQUE (spot_id, account_id)
+  );
+
+  -- Die Abfrage lautet immer „alle Stimmen zu diesem Parkplatz".
+  CREATE INDEX rating_spot ON rating(spot_id);
+  `,
 ];
 
 let database: DatabaseSync | null = null;

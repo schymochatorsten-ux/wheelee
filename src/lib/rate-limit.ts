@@ -92,6 +92,27 @@ export const LIMITS = {
   feedback: { max: 5, windowMs: 10 * 60_000 },
   login: { max: 10, windowMs: 10 * 60_000 },
   register: { max: 5, windowMs: 60 * 60_000 },
+
+  /*
+   * Bewertungen (ToDo 8.4). Großzügiger als die übrigen Grenzen, weil hier ein
+   * **normaler** Ablauf mehrere Aufrufe erzeugt: Wer eine Liste von Plätzen
+   * durchgeht, bewertet mehrere hintereinander, und ein versehentliches
+   * Doppeltippen zählt ebenfalls mit. 30 in zehn Minuten erreicht niemand, der
+   * die App benutzt – wohl aber ein Skript.
+   *
+   * **Nach Konto**, denn das ist die Zurechnungseinheit: Zwei Stimmen zum
+   * selben Parkplatz verhindert schon die Tabelle, hundert Stimmen zu hundert
+   * Parkplätzen nicht.
+   */
+  rating: { max: 30, windowMs: 10 * 60_000 },
+
+  /*
+   * Zusätzlich nach Herkunft, und zwar **weiter** gefasst. Hinter einem
+   * Carrier-NAT teilen sich viele Geräte eine Adresse; eine enge Grenze
+   * träfe dort die Falschen. Sie soll nur den Fall abfangen, dass jemand
+   * reihenweise Konten anlegt und über dieselbe Leitung bedient.
+   */
+  ratingPerClient: { max: 120, windowMs: 10 * 60_000 },
 } as const;
 
 /**
