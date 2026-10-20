@@ -10,7 +10,7 @@ Entscheidung oder Angabe von dir · `[-]` gesperrt bis zur Freigabe
 
 **Letzte Aktualisierung:** 2026-10-20
 
-**Stand (nachgezählt 2026-10-20):** 35 offen, 7 teils gebaut, 7 warten auf
+**Stand (nachgezählt 2026-10-20):** 31 offen, 6 teils gebaut, 7 warten auf
 dich, 3 Zeilen gesperrt (darin 9 Punkte aus 13, 15 und 16). Nachzählen statt
 fortschreiben:
 
@@ -36,7 +36,7 @@ npm run test && npm run typecheck && npm run lint
 npm run check:slugs
 ```
 
-Erwartet: 305 Unit-Tests grün ·
+Erwartet: 334 Unit-Tests grün ·
 `Verzeichnis: 10.754 Gemeinden · davon an der Reihe: 204 · Seed-Dateien: 209`
 · „✅ Register und Seed-Dateien stimmen überein".
 
@@ -59,21 +59,20 @@ abgeschlossen ist.
 | #   | Was                                                     | Warum hier                                            |
 | --- | ------------------------------------------------------- | ----------------------------------------------------- |
 | 1   | **12.5a** aktuellen Stand ausliefern                    | Alles seit dem 2026-10-11 Gebaute steht nicht im Netz |
-| 2   | **8.8 / 8.9** Bewertungen zu Ende                       | Nützlich erst, wenn jemand die Meldungen sieht        |
-| 3   | **3.0i** 174 Standorte ohne Straßennamen                | Eine ganze Stadt ist unbrauchbar (Dormagen 82/82)     |
-| 4   | **3.1 / 3.7** Kreuzvergleich, bestätigt anzeigen        | Die Angabe, die vor einer vergeblichen Fahrt schützt  |
-| 5   | **12.6 / 12.4** Monitoring, Lighthouse                  | Ab hier Betrieb statt Funktionen                      |
-| 6   | **10.5 / 17.6 / 11.7** Nonce-CSP, Passwort, DSGVO       | Sorgfalt, kein akutes Risiko                          |
-| 7   | **11.3a / 11.4 / 11.5 / 11.6** Konto-Komfort            | Niemand ist darauf angewiesen                         |
-| 8   | **9.2a / 9.9 / 12.7a** Darstellung, Hilfsmitteltest     | 9.9 braucht echte Geräte                              |
-| 9   | **1.8 / 4.5 / 12.5** Aufräumen, Automatisierung         | Der automatische Deploy, nachdem 12.5a von Hand lief  |
-| 10  | **2c.3 / 2c.4 / 2d.9** Anfragen an Städte, OSM ergänzen | Briefe und Kartierung – läuft nebenher                |
-| 11  | **Datenarbeit** 3.2–3.4, 3.10, 2d.8a, 2a.5, 2e.\*       | Fällt unter die Vorgabe oben                          |
-| 12  | **14.1–14.9** Abschlusstest                             | Zuletzt, auf echten Geräten und mit Betroffenen       |
+| 2   | **12.6 / 12.4** Monitoring, Lighthouse                  | Ab hier Betrieb statt Funktionen                      |
+| 3   | **10.5 / 17.6 / 11.7** Nonce-CSP, Passwort, DSGVO       | Sorgfalt, kein akutes Risiko                          |
+| 4   | **11.3a / 11.4 / 11.5 / 11.6** Konto-Komfort            | Niemand ist darauf angewiesen                         |
+| 5   | **9.2a / 9.9 / 12.7a** Darstellung, Hilfsmitteltest     | 9.9 braucht echte Geräte                              |
+| 6   | **1.8 / 4.5 / 12.5** Aufräumen, Automatisierung         | Der automatische Deploy, nachdem 12.5a von Hand lief  |
+| 7   | **2c.3 / 2c.4 / 2d.9** Anfragen an Städte, OSM ergänzen | Briefe und Kartierung – läuft nebenher                |
+| 8   | **Datenarbeit** 3.2–3.4, 3.10, 2d.8a, 2a.5, 2e.\*       | Fällt unter die Vorgabe oben                          |
+| 9   | **14.1–14.9** Abschlusstest                             | Zuletzt, auf echten Geräten und mit Betroffenen       |
 
-**3.1 steht auf Platz 4, obwohl es Overpass befragt:** Der offene Teil ist
-Code, es kommt keine Gemeinde hinzu. 3.3, 3.4 und 3.10 sind dagegen echte
-Läufe über den ganzen Bestand und stehen unter Platz 11.
+**Am 2026-10-20 abgearbeitet und deshalb hier verschwunden:** Abschnitt 8
+(Bewertungen) vollständig – 8.8 und 8.9 –, dazu 3.0i, 3.1 und 3.7. Alle mit
+Begründung in [Erledigt.md](Erledigt.md). **3.10 ist der Lauf, der aus 3.1/3.7
+Nutzen macht**: Abgeglichen ist bislang eine Stadt, weil Overpass unter Last
+stand.
 
 ---
 
@@ -108,26 +107,16 @@ Läufe über den ganzen Bestand und stehen unter Platz 11.
 
 ## 3. Datenvalidierung
 
-- [ ] 3.0i **174 von 18.072 Standorten ohne Straßennamen** (1,0 %), verteilt auf 33 Städte – nachgezählt am 2026-10-20. **Dormagen ist der Befund: 82 von 82**, und 75 davon heißen „Behindertenparkplatz Dormagen"; Liste und Detailansicht sind für diese Stadt wertlos. Danach Neumünster 14/97, Euskirchen 13/258, Eschweiler 7/55. Zu tun: `npm run import:streets`, für Dormagen zusätzlich prüfen, ob das Adressfeld der Quelle erkannt wurde (ein Platzhalter bei 75 von 82 deutet auf einen nicht erkannten Spaltennamen, nicht auf fehlende Daten), dann `import:index` und `validate`. Zählbefehl in [Erledigt.md](Erledigt.md) bei 3.0i.
-- [~] 3.1 **Kreuzvergleich amtlich gegen OpenStreetMap – die Hälfte steht** (`crossCheckWithOsm` in `validate.mts` paart und schreibt eine Quote). Offen:
-  - [ ] **Drei Gruppen statt einer Zahl:** bestätigt, nur amtlich, nur OSM. Derzeit fällt weg, _welche_ es sind.
-  - [ ] **Ergebnis je Standort festhalten**, nicht nur je Stadt – sonst kann 3.7 nichts kennzeichnen und der Lauf müsste für jede Anzeige wiederholt werden.
 - [~] 3.2 **Landesweite Sammeldatensätze.** Karlsruhe ist eingebunden, NRW und BW sind ergebnislos geprüft. Offen:
   - [ ] Den Karlsruher Datensatz zum **Gegenprüfen** nutzen: für Karlsruhe und Baden-Baden liegen zwei unabhängige Quellen vor – Material für 3.1.
   - [ ] Weitere Landesportale ansehen: Open Data Hessen, daten.berlin.de, Geodatenportal Bayern, Transparenzportal Hamburg.
 - [ ] 3.3 **Straßenabgleich:** nennt die Rückwärtssuche bei der Koordinate dieselbe Straße wie die Quelle? Kein Beweis für einen Fehler, aber ein guter Filter. Für Frankfurt gibt es das schon, für alle anderen nicht.
 - [ ] 3.4 **Abstand zur nächsten Straße.** Ein Behindertenparkplatz liegt am Straßenrand; Punkte über 25 m von jeder Straße sind fast immer falsch verortet. Eine Overpass-Abfrage je Stadt.
-- [ ] 3.7 **Bestätigte Standorte in der Detailansicht kennzeichnen.** Genau die Information, die vor einer vergeblichen Fahrt bewahrt. Setzt 3.1 voraus.
-- [ ] 3.10 **Bestätigungsquoten nachgehen – erst wieder welche erzeugen.** In `data/_validierung.md` steht keine einzige: Der Abgleich braucht Netz, und `crossCheckWithOsm` gibt bei leerer OSM-Antwort `null` zurück statt „0 % bestätigt" zu behaupten. Also `npm run validate` **mit** Netz, dann die Ausreißer nach unten ansehen – dort ist entweder die amtliche Koordinate versetzt oder die OSM-Erfassung dünn, und das unterscheidet nur die Stichprobe.
+- [ ] 3.10 **Den Kreuzvergleich über alle 23 amtlichen Städte laufen lassen.** Code und Anzeige stehen seit 3.1/3.7; abgeglichen ist bislang **eine** Stadt (Germersheim), weil Overpass am 2026-10-20 unter Last stand. Also `npm run validate` **mit** Netz, dann zweierlei ansehen: die Ausreißer nach unten (versetzte amtliche Koordinate oder dünne OSM-Erfassung – das unterscheidet nur die Stichprobe) und die Gruppe **„nur OSM"**, also Stellplätze, die der amtlichen Liste fehlen. Für Germersheim sind das 11 bei 6 amtlichen Standorten.
 
 ## 4. Datenaktualität
 
 - [ ] 4.5 Monatliche Änderungsprüfung automatisieren, sobald die App läuft – GitHub-Actions-Lauf, der bei Änderungen einen Pull Request öffnet. So bleibt die Entscheidung bei einem Menschen. `purgeExpired` (17.5) gehört dann hier hinein.
-
-## 8. Bewertungen
-
-- [ ] 8.8 **Übersicht gemeldeter Parkplätze für das manuelle Review.** Die Abfrage steht: `spotsReportedGone()` in `src/lib/db/ratings.ts` liefert die Plätze mit mindestens zwei „existiert nicht mehr"-Meldungen, nach Anzahl sortiert. Es fehlt die Ansicht – am ehesten als zweiter Abschnitt im Reiter „Rückmeldungen", der ohnehin nur Administratoren sieht, mit einem Klick auf die Karte wie bei den Meldungen.
-- [ ] 8.9 **Bewertungen in die Validierung einbeziehen:** mehrfach als aufgehoben gemeldete Plätze gehören auf die Prüfliste aus Abschnitt 3. `npm run validate` müsste dafür die Datenbank lesen, was es bisher nicht tut.
 
 ## 9. Darstellung und Bedienung
 

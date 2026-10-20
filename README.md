@@ -347,8 +347,35 @@ Tabelle und keine Regel, die ein Server durchsetzen muss. Das macht nebenbei
 das versehentliche Doppeltippen folgenlos.
 
 **Bewertungen ändern nichts an den Daten.** Kein Parkplatz verschwindet, egal
-wie oft er gemeldet wird; `spotsReportedGone()` liefert eine Prüfliste für
-einen Menschen.
+wie oft er gemeldet wird. Stattdessen führen die Meldungen auf zwei Prüflisten
+für einen Menschen:
+
+- **im Reiter „Rückmeldungen"** (nur für Administratoren) als erster
+  Abschnitt – Parkplätze mit mindestens zwei Meldungen aus verschiedenen
+  Konten, mit einem Klick auf die Karte;
+- **in `npm run validate`** als eigener Abschnitt des Berichts und als Befund
+  je Stadt. Der Lauf liest die Datenbank ausdrücklich nur lesend und legt sie
+  nicht an; fehlt sie, steht im Bericht „nicht geprüft" und nicht „nichts
+  gemeldet".
+
+## Von zwei Quellen bestätigt
+
+Wo eine Stadt eine amtliche Liste **und** OpenStreetMap hat, hält
+`npm run validate` beide gegeneinander und schreibt das Ergebnis je Standort
+nach `data/_bestaetigt.json`. Die Detailansicht nennt dann „Von zwei Quellen
+bestätigt" – die Angabe, die vor einer vergeblichen Fahrt schützt.
+
+Drei Gruppen, und sie bedeuten Verschiedenes:
+
+| Gruppe          | Bedeutung                                                             |
+| --------------- | --------------------------------------------------------------------- |
+| **bestätigt**   | beide Quellen kennen den Standort                                     |
+| **nur amtlich** | in OpenStreetMap nicht erfasst – kein Mangel, nur eine Quelle weniger |
+| **nur OSM**     | fehlt in der amtlichen Liste: neu entstanden oder dort vergessen      |
+
+**Steht nichts in der Detailansicht, wurde nicht geprüft** – das ist keine
+Aussage über den Stellplatz. Eine zweite Quelle haben nur die 23 Städte mit
+amtlicher Liste.
 
 ## Datenschutz
 

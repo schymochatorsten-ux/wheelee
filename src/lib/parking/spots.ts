@@ -1,6 +1,7 @@
 import type { ParkingSpot, ParkingSpotWithDistance } from "../types";
 import { sortByDistance, type LatLng } from "../geo";
 import { attributionOf, licenseOf } from "./license";
+import { confirmationOf } from "./confirmation";
 import { seeds } from "./seeds.generated";
 
 /**
@@ -72,11 +73,20 @@ export function getAllSpots(): ParkingSpot[] {
  *
  * `getAllSpots()` baut bei jedem Aufruf ein neues Array aus 187 Seed-Dateien
  * zusammen; für eine API, die pro Kartenbewegung antwortet, wäre das Verschwendung.
+ *
+ * **Hier wird auch das Ergebnis des Kreuzvergleichs angehängt** (ToDo 3.7).
+ * Einmal beim Aufbau und nicht je Anfrage: Es ist ein Nachschlagen in einer
+ * Map, aber bei 18.072 Standorten und einer Antwort je Kartenbewegung zählt
+ * das. Die Seed-Dateien bleiben unberührt – `confirmation` ist kein Datum der
+ * Quelle, sondern das Ergebnis einer Prüfung.
  */
 let cached: ParkingSpot[] | null = null;
 
 function allSpots(): ParkingSpot[] {
-  cached ??= getAllSpots();
+  cached ??= getAllSpots().map((spot) => {
+    const confirmation = confirmationOf(spot.id);
+    return confirmation ? { ...spot, confirmation } : spot;
+  });
   return cached;
 }
 

@@ -19,6 +19,7 @@ import { NearestBar } from "./NearestBar";
 import { SpotDetails } from "./SpotDetails";
 import { SpotList } from "./SpotList";
 import { FeedbackAdmin } from "./FeedbackAdmin";
+import { ReportedSpots } from "./ReportedSpots";
 
 /**
  * Hält Karte, Liste und Detailansicht zusammen: Standort anfragen,
@@ -656,7 +657,27 @@ export function MapSection({
             />
           </div>
         ) : view === "feedback" ? (
-          <div className="h-full overflow-y-auto px-4 py-4">
+          <div className="h-full space-y-8 overflow-y-auto px-4 py-4">
+            {/*
+              Die Prüfliste aus den Bewertungen (8.8) steht im **selben**
+              Reiter und nicht in einem eigenen. Beide Abschnitte beantworten
+              dieselbe Frage – „wo stimmen die Daten nicht?" –, nur aus zwei
+              Quellen: geschriebene Meldungen und Daumen nach unten. Ein
+              zweiter Reiter kostete Platz in der Kopfzeile, den die Karte
+              braucht (9.15), und man müsste zwischen zwei Listen wechseln, um
+              sich ein Bild zu machen.
+
+              **Sie steht oben, und das ist beim Prüfen im Browser
+              entschieden worden:** Darunter lagen zehn Rückmeldungen, und die
+              Prüfliste war erst nach langem Scrollen zu sehen. Das ist genau
+              der Fehler, den dieses Projekt schon zweimal gemacht hat – ein
+              Hinweis, den niemand sieht, ist schlimmer als keine Prüfung
+              (vgl. „Auffällig dünne Datenlage" in 2d.10 und der verschwundene
+              Haftungshinweis in 9.11). Sie ist außerdem die kürzere der
+              beiden: nach oben begrenzt durch die Mindestzahl, im Normalfall
+              drei Zeilen. Die Rückmeldungen wachsen unbegrenzt.
+            */}
+            <ReportedSpots onShowSpot={select} />
             {/* Ein gemeldeter Parkplatz führt über `select` auf die Karte –
                 dieselbe Bewegung wie aus der Liste, samt Detailansicht und
                 Luftlinie. Die Meldung wird damit sofort nachprüfbar. */}

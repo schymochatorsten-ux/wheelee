@@ -15,9 +15,12 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import type { ParkingSpot } from "../../src/lib/types.js";
 import { distanceMeters } from "../../src/lib/geo.js";
+import { isGenericLabel, spotTitle } from "../../src/lib/parking/display.js";
 import { projectRoot } from "./config.mjs";
 import { findCity, germanCities } from "./german-cities.mjs";
 import { importFromOsm } from "./osm-source.mjs";
+import { databaseFile, readGoneReports, type GoneReport } from "./ratings.mjs";
+import { pairSpots, type CrossCheckGroups } from "./crosscheck.mjs";
 
 interface SeedFile {
   city: { slug: string; name: string; center: { lat: number; lng: number } };
@@ -339,6 +342,60 @@ function checkDensity(report: CityReport, median: number): Finding[] {
 }
 
 /* ------------------------------------------------------------------ *
+ * Bewertungen als Prüfhinweis (ToDo 8.9)
+ * ------------------------------------------------------------------ */
+
+/** So viele Meldungen aus verschiedenen Konten bringen einen Platz auf die Liste. */
+const GONE_MINIMUM = 2;
+
+/**
+ * Was die Nutzer:innen gemeldet haben, einem Parkplatz zugeordnet.
+ *
+ * Die Zuordnung läuft über die Parkplatz-ID, und das ist der Grund, warum die
+ * IDs sich aus der Örtlichkeit ableiten und nicht aus der Zeilennummer (2b.1):
+ * Eine Meldung von vor einem Jahr muss nach einem Neuimport denselben
+ * Parkplatz treffen.
+ */
+interface GoneMatch extends GoneReport {
+  /** `null`, wenn der Bestand diese ID nicht mehr kennt. */
+  spot: ParkingSpot | null;
+  /** Stadt-Slug, soweit bekannt. */
+  city: string | null;
+}
+
+/**
+ * Befund für eine Stadt: Welche ihrer Standorte sind gemeldet?
+ *
+ * **Als `verdacht` und nicht als `fehler`.** Zwei Meldungen sind ein Hinweis,
+ * kein Beweis: Vielleicht ist der Platz aufgehoben, vielleicht war das
+ * Halteverbot zugeparkt, vielleicht stand jemand vor der falschen Hausnummer.
+ * Die Bewertungen ändern nichts an den Daten (8.6) – und ein Bericht, der sie
+ * als Fehler ausgibt, würde genau dazu verleiten.
+ */
+function checkReportedGone(slug: string, matches: GoneMatch[]): Finding[] {
+  const own = matches.filter((match) => match.city === slug);
+  if (own.length === 0) return [];
+
+  return [
+    {
+      check: "Als aufgehoben gemeldet",
+      level: "verdacht",
+      message:
+        `${own.length} ${own.length === 1 ? "Standort ist" : "Standorte sind"} von mindestens ` +
+        `${GONE_MINIMUM} Konten als „existiert nicht mehr" gemeldet. Vor Ort prüfen; ` +
+        "die Bewertungen ändern die Daten nicht von selbst.",
+      examples: own
+        .slice(0, 5)
+        .map(
+          (match) =>
+            `${match.spot ? spotTitle(match.spot) : match.spotId} – ` +
+            `${match.goneCount}× aufgehoben, ${match.existsCount}× bestätigt`,
+        ),
+    },
+  ];
+}
+
+/* ------------------------------------------------------------------ *
  * Prüfung mit zweiter Quelle
  * ------------------------------------------------------------------ */
 
@@ -348,10 +405,16 @@ function checkDensity(report: CityReport, median: number): Finding[] {
  * Standorte, die beide Quellen unabhängig kennen, sind die verlässlichsten.
  * Ein fehlender Gegenpart ist kein Fehler – OSM ist unvollständig –, aber die
  * Quote zeigt, wie gut eine Stadt doppelt belegt ist.
+ *
+ * **Seit dem 2026-10-20 liefert der Abgleich drei Gruppen statt einer Zahl**
+ * (ToDo 3.1) und hält das Ergebnis **je Standort** fest. Vorher wurde nur
+ * gezählt, wie viele einen Gegenpart haben; welche es sind, fiel weg. Damit
+ * konnte die Detailansicht nichts kennzeichnen (3.7), und jede Anzeige hätte
+ * den Lauf wiederholen müssen – also eine Overpass-Abfrage je Seitenaufruf.
  */
 async function crossCheckWithOsm(
   seed: SeedFile,
-): Promise<{ finding: Finding; confirmed: number } | null> {
+): Promise<{ finding: Finding; groups: CrossCheckGroups; osmTotal: number } | null> {
   const city = findCity(seed.city.slug);
   if (!city) return null;
 
@@ -369,30 +432,105 @@ async function crossCheckWithOsm(
       spot.lat !== null && spot.lng !== null,
   );
 
-  let confirmed = 0;
-  for (const spot of located) {
-    const match = osmSpots.some(
-      (other) =>
-        other.lat !== null &&
-        other.lng !== null &&
-        distanceMeters({ lat: spot.lat, lng: spot.lng }, { lat: other.lat, lng: other.lng }) <
-          CONFIRM_METERS,
-    );
-    if (match) confirmed += 1;
-  }
+  const groups = pairSpots(
+    located.map((spot) => ({
+      id: spot.id,
+      lat: spot.lat,
+      lng: spot.lng,
+      label: spotTitle(spot),
+    })),
+    osmSpots
+      .filter(
+        (spot): spot is ParkingSpot & { lat: number; lng: number } =>
+          spot.lat !== null && spot.lng !== null,
+      )
+      .map((spot) => ({
+        id: spot.id,
+        lat: spot.lat,
+        lng: spot.lng,
+        /*
+         * **Der Platzhalter darf hier nicht wie ein Name aussehen.** OSM-Objekte
+         * ohne eigenen Namen heißen „Behindertenparkplatz <Stadt>", und
+         * `spotTitle` kürzt das auf den Stadtnamen – in der Liste stand dann
+         * neunmal „Germersheim" untereinander, als wäre das die Bezeichnung
+         * des Stellplatzes. Die Auskunft steckt dort in der Koordinate.
+         */
+        label:
+          !spot.street && isGenericLabel(spot.label, seed.city.name)
+            ? "(ohne Namen in OSM)"
+            : spotTitle(spot),
+      })),
+    CONFIRM_METERS,
+  );
 
-  const share = located.length > 0 ? (confirmed / located.length) * 100 : 0;
+  const share = located.length > 0 ? (groups.confirmed.length / located.length) * 100 : 0;
 
   return {
-    confirmed,
+    groups,
+    osmTotal: osmSpots.length,
     finding: {
       check: "Abgleich mit OpenStreetMap",
-      level: "hinweis",
+      /*
+       * **„Nur OSM" ist der einzige Teil, der ein Verdacht ist.** Dort steht
+       * ein Stellplatz, den die amtliche Liste nicht führt – entweder neu
+       * oder dort vergessen. Eine amtliche Liste gilt als vollständig, und
+       * genau deshalb sucht niemand in ihr nach Fehlendem. Die beiden anderen
+       * Gruppen sind bloße Hinweise: Bestätigung ist eine gute Nachricht, und
+       * „nur amtlich" heißt ungeprüft, nicht falsch.
+       */
+      level: groups.osmOnly.length > located.length * 0.25 ? "verdacht" : "hinweis",
       message:
-        `${confirmed} von ${located.length} Standorten (${share.toFixed(0)} %) kennt auch OpenStreetMap ` +
+        `${groups.confirmed.length} von ${located.length} Standorten (${share.toFixed(0)} %) ` +
+        `kennt auch OpenStreetMap; ${groups.officialOnly.length} nur amtlich, ` +
+        `${groups.osmOnly.length} nur in OpenStreetMap ` +
         `(${osmSpots.length} OSM-Standorte, Toleranz ${CONFIRM_METERS} m).`,
+      examples:
+        groups.osmOnly.length > 0
+          ? groups.osmOnly
+              .slice(0, 5)
+              .map(
+                (spot) =>
+                  `nur OSM: ${spot.label} (${spot.lat.toFixed(5)}, ${spot.lng.toFixed(5)}) – fehlt in der amtlichen Liste?`,
+              )
+          : undefined,
     },
   };
+}
+
+/**
+ * Das Ergebnis je Standort, damit die Oberfläche es lesen kann (ToDo 3.7).
+ *
+ * **Warum eine eigene Datei und nicht ein Feld in der Seed-Datei:** Die
+ * Seed-Dateien erzeugt der Importer; ein Prüfergebnis darin wäre beim nächsten
+ * Import weg, und [Datenpflege.md](../../Datenpflege.md) verbietet aus
+ * demselben Grund das Bearbeiten von Hand. Der Unterstrich im Namen sagt
+ * außerdem, was die Datei ist: Arbeitsstand, von einem Skript geschrieben.
+ *
+ * **Beide Zustände werden geschrieben, nicht nur „bestätigt".** Stünden nur
+ * die bestätigten IDs darin, könnte die Oberfläche „geprüft und nicht
+ * bestätigt" nicht von „noch nie geprüft" unterscheiden – derselbe Fehler,
+ * der im Importstand einmal eine leere Overpass-Antwort als Ergebnis
+ * durchgehen ließ (2e.9), und die Unterscheidung ist hier besonders wichtig:
+ * „nicht bestätigt" an einen Standort zu schreiben, der nie geprüft wurde,
+ * wäre eine Falschaussage über eine Angabe, auf die sich jemand verlässt.
+ */
+interface ConfirmationFile {
+  erzeugtAm: string;
+  toleranzMeter: number;
+  staedte: Record<
+    string,
+    {
+      geprueftAm: string;
+      bestaetigt: number;
+      nurAmtlich: number;
+      nurOsm: number;
+      osmGesamt: number;
+      /** Die Standorte, die OSM kennt, die amtliche Liste aber nicht. */
+      nurOsmStandorte: { label: string; lat: number; lng: number }[];
+    }
+  >;
+  /** Parkplatz-ID → Zustand. Fehlt eine ID, wurde sie nicht geprüft. */
+  standorte: Record<string, "bestaetigt" | "nur_amtlich">;
 }
 
 /* ------------------------------------------------------------------ *
@@ -401,7 +539,173 @@ async function crossCheckWithOsm(
 
 const LEVEL_SYMBOL = { fehler: "🔴", verdacht: "🟡", hinweis: "⬜" } as const;
 
-function renderReport(reports: CityReport[], densityMedian: number): string {
+/**
+ * Der Abschnitt zu den Bewertungen (ToDo 8.9).
+ *
+ * **Als eigener Abschnitt und nicht nur als Befund je Stadt** – aus demselben
+ * Grund wie bei der dünnen Datenlage: Eine Stadt mit einem einzigen gemeldeten
+ * Platz taucht oben womöglich gar nicht auf, und dann stünde die Meldung im
+ * Bericht, ohne gelesen zu werden. Hier ist sie eine Arbeitsliste, von der man
+ * Zeile für Zeile abarbeiten kann.
+ */
+function renderGoneSection(matches: GoneMatch[] | null): string[] {
+  const lines = ["## Als aufgehoben gemeldet", ""];
+
+  /*
+   * **„Nicht geprüft" ist etwas anderes als „nichts gemeldet"**, und das muss
+   * im Bericht stehen. Wer ihn auf seinem Rechner erzeugt, hat die Datenbank
+   * des Betriebs nicht – ein stillschweigend leerer Abschnitt läse sich dort
+   * als „niemand hat etwas gemeldet", und das wäre eine Falschaussage über
+   * Daten, die man gar nicht angesehen hat.
+   */
+  if (matches === null) {
+    lines.push(
+      "**Nicht geprüft:** Es liegt keine Datenbank vor " +
+        `(erwartet unter \`${path.relative(projectRoot, databaseFile())}\`).`,
+      "",
+      "Die Bewertungen entstehen im Betrieb und liegen auf dem NAS. Dieser",
+      "Abschnitt bleibt leer, bis der Bericht dort erzeugt wird oder eine Kopie",
+      'der Datenbank vorliegt – „nichts gemeldet" wäre hier eine Behauptung',
+      "über Daten, die niemand angesehen hat.",
+      "",
+    );
+    return lines;
+  }
+
+  if (matches.length === 0) {
+    lines.push(
+      `Geprüft, nichts gefunden: Kein Parkplatz ist von ${GONE_MINIMUM} oder mehr Konten ` +
+        'als „existiert nicht mehr" gemeldet.',
+      "",
+    );
+    return lines;
+  }
+
+  lines.push(
+    `${matches.length} ${matches.length === 1 ? "Parkplatz ist" : "Parkplätze sind"} von ` +
+      `mindestens ${GONE_MINIMUM} Konten als aufgehoben gemeldet.`,
+    "",
+    "**Die Bewertungen ändern die Daten nicht** (ToDo 8.6) – das ist eine Liste",
+    'zum Nachsehen. Die Spalte „bestätigt" gehört dazu: Drei Meldungen bei null',
+    "Bestätigungen sind eine andere Lage als drei bei zwanzig.",
+    "",
+    "| Parkplatz | Stadt | aufgehoben | bestätigt | zuletzt gemeldet |",
+    "| --- | --- | ---: | ---: | --- |",
+  );
+
+  for (const match of matches) {
+    const name = match.spot ? spotTitle(match.spot) : `${match.spotId} (nicht im Bestand)`;
+    lines.push(
+      `| ${name} | ${match.city ?? "–"} | ${match.goneCount} | ${match.existsCount} | ` +
+        `${match.lastGoneAt?.slice(0, 10) ?? "–"} |`,
+    );
+  }
+
+  /*
+   * Ein gemeldeter Parkplatz, den der Bestand nicht mehr kennt, ist **kein
+   * Fehler, sondern die Bestätigung der Meldung**: Der nächste Import hat ihn
+   * nicht mehr geliefert. Er bleibt deshalb in der Liste stehen, nur eben
+   * benannt – ihn herauszufiltern hieße, die beste Nachricht zu verschweigen,
+   * die diese Liste haben kann.
+   */
+  const verschwunden = matches.filter((match) => match.spot === null).length;
+  if (verschwunden > 0) {
+    lines.push(
+      "",
+      `Bei ${verschwunden} davon kennt der Bestand die ID nicht mehr – diese Meldungen ` +
+        "haben sich mit dem letzten Import bestätigt.",
+    );
+  }
+
+  lines.push("");
+  return lines;
+}
+
+/**
+ * Der Abschnitt zum Kreuzvergleich (ToDo 3.1).
+ *
+ * **Er zeigt den gespeicherten Stand samt Datum, auch im Offline-Lauf.** Das
+ * ist der Unterschied zur Spalte in „Alle Städte", die nur den aktuellen Lauf
+ * kennt: Ein Abgleich vom letzten Monat ist eine Auskunft – „nicht geprüft"
+ * wäre an dieser Stelle falsch, denn geprüft wurde ja.
+ */
+function renderCrossCheckSection(stored: ConfirmationFile): string[] {
+  const slugs = Object.keys(stored.staedte);
+  if (slugs.length === 0) {
+    return [
+      "## Abgleich mit OpenStreetMap",
+      "",
+      "**Noch nicht gelaufen.** `npm run validate` **mit** Netzzugriff holt für",
+      "jede amtliche Stadt die OSM-Standorte und paart sie. Ohne diesen Lauf gibt",
+      "es keine bestätigten Standorte – und `data/_bestaetigt.json`, aus dem die",
+      "Detailansicht die Kennzeichnung liest, bleibt leer.",
+      "",
+    ];
+  }
+
+  const lines = [
+    "## Abgleich mit OpenStreetMap",
+    "",
+    `Stand der Datei \`data/_bestaetigt.json\`: ${stored.erzeugtAm}, Toleranz ${stored.toleranzMeter} m.`,
+    "",
+    "**Drei Gruppen, und sie bedeuten Verschiedenes:**",
+    "",
+    "- **bestätigt** – beide Quellen kennen den Standort. Die verlässlichste Angabe im Bestand.",
+    "- **nur amtlich** – in OpenStreetMap nicht erfasst. Kein Fehler, nur ungeprüft.",
+    "- **nur OSM** – fehlt in der amtlichen Liste. **Das ist die interessante Gruppe:** entweder neu hinzugekommen oder dort vergessen. Eine amtliche Liste gilt als vollständig, und genau deshalb sucht niemand in ihr nach Fehlendem.",
+    "",
+    "| Stadt | bestätigt | nur amtlich | nur OSM | OSM gesamt | geprüft am |",
+    "| --- | ---: | ---: | ---: | ---: | --- |",
+  ];
+
+  for (const slug of slugs.sort((a, b) => a.localeCompare(b, "de-DE"))) {
+    const entry = stored.staedte[slug];
+    lines.push(
+      `| ${slug} | ${entry.bestaetigt} | ${entry.nurAmtlich} | ${entry.nurOsm} | ` +
+        `${entry.osmGesamt} | ${entry.geprueftAm} |`,
+    );
+  }
+
+  const nurOsm = slugs.flatMap((slug) =>
+    stored.staedte[slug].nurOsmStandorte.map((spot) => ({ slug, ...spot })),
+  );
+
+  if (nurOsm.length > 0) {
+    lines.push(
+      "",
+      `### Nur in OpenStreetMap: ${nurOsm.length} Standorte`,
+      "",
+      "Für jeden gilt die Frage: neu entstanden oder in der amtlichen Liste",
+      "vergessen? Das unterscheidet nur der Blick vor Ort oder eine Anfrage bei",
+      "der Stadt – und beides lohnt sich, weil hier ein Stellplatz steht, den die",
+      "App aus der amtlichen Quelle nicht kennt.",
+      "",
+      "| Stadt | Bezeichnung | Lage |",
+      "| --- | --- | --- |",
+    );
+
+    // Nicht alle: Die Liste soll lesbar bleiben. Die vollständige steht in
+    // `_bestaetigt.json`, und darauf verweist die Zeile darunter.
+    for (const spot of nurOsm.slice(0, 40)) {
+      lines.push(
+        `| ${spot.slug} | ${spot.label} | ${spot.lat.toFixed(5)}, ${spot.lng.toFixed(5)} |`,
+      );
+    }
+    if (nurOsm.length > 40) {
+      lines.push("", `Weitere ${nurOsm.length - 40} in \`data/_bestaetigt.json\`.`);
+    }
+  }
+
+  lines.push("");
+  return lines;
+}
+
+function renderReport(
+  reports: CityReport[],
+  densityMedian: number,
+  goneMatches: GoneMatch[] | null,
+  confirmations: ConfirmationFile,
+): string {
   const withFindings = reports.filter((report) =>
     report.findings.some((finding) => finding.level !== "hinweis"),
   );
@@ -515,6 +819,9 @@ function renderReport(reports: CityReport[], densityMedian: number): string {
     lines.push("");
   }
 
+  lines.push(...renderCrossCheckSection(confirmations));
+  lines.push(...renderGoneSection(goneMatches));
+
   lines.push("## Alle Städte", "");
   lines.push("| Stadt | Standorte | Stellplätze | je 10.000 Einw. | von OSM bestätigt | Befunde |");
   lines.push("| --- | ---: | ---: | ---: | ---: | --- |");
@@ -562,9 +869,23 @@ async function main() {
 
   const reports: CityReport[] = [];
 
+  /**
+   * Parkplatz-ID → Standort, über **alle** Seed-Dateien.
+   *
+   * Bewusst auch dann vollständig, wenn nur eine Stadt geprüft wird: Eine
+   * Meldung trägt nur die ID, und ohne den ganzen Bestand wüsste das Skript
+   * nicht, ob eine unbekannte ID zu einer anderen Stadt gehört oder gar nicht
+   * mehr existiert. Das ist der Unterschied zwischen „nicht zuständig" und
+   * „verschwunden", und er steht im Bericht.
+   */
+  const spotIndex = new Map<string, { spot: ParkingSpot; city: string }>();
+
   for (const file of files) {
     const seed = await readJson<SeedFile | null>(path.join(dataDir, file), null);
     if (!seed?.city?.slug || !Array.isArray(seed.spots)) continue;
+
+    for (const spot of seed.spots) spotIndex.set(spot.id, { spot, city: seed.city.slug });
+
     if (wanted.length > 0 && !wanted.includes(seed.city.slug)) continue;
 
     const city = germanCities.find((entry) => entry.slug === seed.city.slug);
@@ -599,17 +920,76 @@ async function main() {
     report.findings.push(...checkDensity(report, median));
   }
 
+  /*
+   * Bewertungen einbeziehen (ToDo 8.9).
+   *
+   * Das ist der Schritt, der aus Bewertungen Datenpflege macht: Bis hierher
+   * lagen die Meldungen in der Datenbank, und wer den Bericht las, erfuhr
+   * nichts davon. Gelesen wird **nur**; `readGoneReports` öffnet die Datei
+   * ausdrücklich read-only und legt sie nicht an.
+   */
+  const rawGone = readGoneReports(GONE_MINIMUM);
+
+  let goneMatches: GoneMatch[] | null = null;
+  if (rawGone !== null) {
+    const all = rawGone.map((report) => {
+      const found = spotIndex.get(report.spotId);
+      return { ...report, spot: found?.spot ?? null, city: found?.city ?? null };
+    });
+
+    /*
+     * Bei gesetztem Städtefilter nur die gewünschten Städte. Eine Meldung zu
+     * einer ID, die der Bestand gar nicht kennt, lässt sich keiner Stadt
+     * zuordnen – sie erscheint deshalb nur im vollständigen Lauf, wo sie auch
+     * jemanden erreicht. Sie in einem gefilterten Bericht aufzuführen hieße,
+     * sie der falschen Stadt anzuhängen.
+     */
+    goneMatches =
+      wanted.length > 0 ? all.filter((match) => wanted.includes(match.city ?? "")) : all;
+
+    for (const report of reports) {
+      report.findings.push(...checkReportedGone(report.slug, goneMatches));
+    }
+
+    console.log(
+      `Bewertungen gelesen: ${goneMatches.length} Parkplätze mit ${GONE_MINIMUM}+ Meldungen.`,
+    );
+  } else {
+    console.log(
+      `Keine Datenbank unter ${path.relative(projectRoot, databaseFile())} – ` +
+        "Bewertungen nicht geprüft (nicht: nichts gemeldet).",
+    );
+  }
+
   console.log(`${reports.length} Städte geprüft (offline).`);
   const problems = reports.filter((report) =>
     report.findings.some((finding) => finding.level !== "hinweis"),
   );
   console.log(`Mit Befund: ${problems.length}`);
 
+  /*
+   * Der vorhandene Stand wird **geladen und ergänzt, nicht ersetzt.** Ein
+   * Lauf für eine einzelne Stadt (`npm run validate -- koeln`) darf das
+   * Ergebnis der übrigen nicht löschen – sonst stünden in der Oberfläche
+   * plötzlich 22 Städte als „nie geprüft" da, weil jemand eine einzelne
+   * nachgesehen hat. Geladen wird auch im Offline-Lauf: Der Bericht soll den
+   * letzten Abgleich samt Datum zeigen und nicht „nicht geprüft" behaupten.
+   */
+  const confirmationPath = path.join(dataDir, "_bestaetigt.json");
+  const stored = await readJson<ConfirmationFile>(confirmationPath, {
+    erzeugtAm: new Date().toISOString().slice(0, 10),
+    toleranzMeter: CONFIRM_METERS,
+    staedte: {},
+    standorte: {},
+  });
+
   // Zweite Quelle nur für amtliche Städte – bei OSM-Städten wäre es ein
   // Abgleich mit sich selbst.
   if (!offline) {
     const official = reports.filter((report) => !/OpenStreetMap/iu.test(report.source));
     console.log(`\nAbgleich mit OpenStreetMap für ${official.length} amtliche Städte …`);
+
+    let changed = false;
 
     for (const report of official) {
       const seed = await readJson<SeedFile | null>(path.join(dataDir, `${report.slug}.json`), null);
@@ -618,9 +998,32 @@ async function main() {
       try {
         const result = await crossCheckWithOsm(seed);
         if (result) {
-          report.confirmedByOsm = result.confirmed;
+          report.confirmedByOsm = result.groups.confirmed.length;
           report.findings.push(result.finding);
           console.log(`  ${report.name}: ${result.finding.message}`);
+
+          // Alte Einträge dieser Stadt verwerfen, damit ein Standort, den es
+          // nicht mehr gibt, nicht als bestätigt stehen bleibt.
+          for (const id of Object.keys(stored.standorte)) {
+            if (id.startsWith(`${report.slug}-`)) delete stored.standorte[id];
+          }
+
+          for (const id of result.groups.confirmed) stored.standorte[id] = "bestaetigt";
+          for (const id of result.groups.officialOnly) stored.standorte[id] = "nur_amtlich";
+
+          stored.staedte[report.slug] = {
+            geprueftAm: new Date().toISOString().slice(0, 10),
+            bestaetigt: result.groups.confirmed.length,
+            nurAmtlich: result.groups.officialOnly.length,
+            nurOsm: result.groups.osmOnly.length,
+            osmGesamt: result.osmTotal,
+            nurOsmStandorte: result.groups.osmOnly.map((spot) => ({
+              label: spot.label,
+              lat: spot.lat,
+              lng: spot.lng,
+            })),
+          };
+          changed = true;
         }
       } catch (error) {
         report.findings.push({
@@ -631,10 +1034,39 @@ async function main() {
         console.log(`  ${report.name}: Abgleich fehlgeschlagen`);
       }
     }
+
+    /*
+     * Nur schreiben, wenn wirklich etwas abgeglichen wurde. Ein Lauf, in dem
+     * jede Abfrage scheitert, soll den vorhandenen Stand nicht mit einem
+     * frischen Datum versehen – das sähe aus wie ein erfolgreicher Lauf.
+     */
+    if (changed) {
+      stored.erzeugtAm = new Date().toISOString().slice(0, 10);
+      stored.toleranzMeter = CONFIRM_METERS;
+      await fs.writeFile(confirmationPath, `${JSON.stringify(stored, null, 2)}\n`, "utf8");
+      console.log(
+        `\nGeschrieben: ${path.relative(process.cwd(), confirmationPath)} ` +
+          `(${Object.keys(stored.standorte).length} Standorte, ${Object.keys(stored.staedte).length} Städte)`,
+      );
+    }
   }
 
   const target = path.join(dataDir, "_validierung.md");
-  await fs.writeFile(target, renderReport(reports, median), "utf8");
+  /*
+   * Die Spalte „von OSM bestätigt" aus dem gespeicherten Stand füllen, wo
+   * dieser Lauf nicht abgeglichen hat. Sonst stünde im Offline-Bericht „nicht
+   * geprüft" an einer Stadt, die geprüft ist – und das ist die eine Aussage,
+   * die dieser Bericht nicht machen darf: Er unterscheidet an jeder anderen
+   * Stelle sorgfältig zwischen „geprüft, nichts gefunden" und „nicht
+   * geprüft". Wann geprüft wurde, nennt der Abschnitt darüber je Stadt.
+   */
+  for (const report of reports) {
+    if (report.confirmedByOsm === null && stored.staedte[report.slug]) {
+      report.confirmedByOsm = stored.staedte[report.slug].bestaetigt;
+    }
+  }
+
+  await fs.writeFile(target, renderReport(reports, median, goneMatches, stored), "utf8");
   console.log(`\nGeschrieben: ${path.relative(process.cwd(), target)}`);
 }
 

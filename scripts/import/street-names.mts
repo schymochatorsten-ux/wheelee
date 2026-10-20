@@ -18,6 +18,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import type { ParkingSpot } from "../../src/lib/types.js";
+import { isGenericLabel } from "../../src/lib/parking/display.js";
 import { projectRoot } from "./config.mjs";
 
 const USER_AGENT = "wheelee-import/0.1 (Behindertenparkplatz-Karte; Kontakt via Repository)";
@@ -350,12 +351,26 @@ function buildStreetIndex(ways: OverpassWay[], project: ReturnType<typeof projec
   return grid;
 }
 
+/**
+ * Die nächstgelegene brauchbare Straße – **auch wenn sie zu weit weg ist.**
+ *
+ * Ob sie nah genug ist, entscheidet der Aufrufer über `inRange`. Der Grund für
+ * diese Trennung ist eine Verwechslung, die am 2026-10-20 Zeit gekostet hat:
+ * Neumünster meldete „0/14 (0 %)", und das sah nach einem Fehlschlag aus –
+ * vier Städte hintereinander, während Overpass mit 502 antwortete. Gemessen
+ * lag es an etwas anderem: **Alle 14 Standorte liegen 151 bis 205 m von der
+ * nächsten Straße entfernt**, die Grenze bei 150 m. Große Parkplätze an
+ * Einkaufszentren, deren Stellplätze weit von der Fahrbahn liegen.
+ *
+ * „0 %" war also ein richtiges Ergebnis und hat sich wie ein Fehler gelesen.
+ * Mit dem Abstand daneben ist es eine Auskunft: „nächste Straße 205 m".
+ */
 function nearestStreet(
   grid: Map<string, Segment[]>,
   lat: number,
   lng: number,
   project: ReturnType<typeof projector>,
-): { name: string; meters: number } | null {
+): { name: string; meters: number; inRange: boolean } | null {
   const px = project.x(lng);
   const py = project.y(lat);
 
@@ -382,16 +397,55 @@ function nearestStreet(
   // Eine Straße mit richtigem Namen hat Vorrang, solange sie in Reichweite
   // liegt – auch wenn eine nummerierte etwas näher ist.
   const chosen = bestNamed && bestNamed.meters <= MAX_STREET_METERS ? bestNamed : best;
-  return chosen && chosen.meters <= MAX_STREET_METERS ? chosen : null;
+  if (!chosen) return null;
+
+  return { ...chosen, inRange: chosen.meters <= MAX_STREET_METERS };
 }
 
 /* ------------------------------------------------------------------ *
  * Ablauf
  * ------------------------------------------------------------------ */
 
+/**
+ * Welche Standorte einer Stadt sind wirklich eine Lücke?
+ *
+ * **Nur die mit einem Platzhalter als Bezeichnung** – „Behindertenparkplatz
+ * <Stadt>", das der OSM-Importer setzt, wenn das Objekt keinen eigenen Namen
+ * trägt. Ein Standort, der „IKEA", „Tiefgarage Klinikum" oder
+ * „Richard-Hecht-Schule" heißt, hat keine Lücke: Die Quelle nennt etwas
+ * Besseres als die nächstgelegene Straße.
+ *
+ * **Diese Unterscheidung fehlte bis zum 2026-10-20, und das war ein
+ * Datenverlust mit Ansage.** Weiter unten wird `label` auf
+ * „Straße Hausnummer" gesetzt – bedingungslos. Ein Lauf über die damals 174
+ * offenen Standorte hätte damit 21 echte Namen durch den Namen einer Straße
+ * innerhalb von 150 m ersetzt, darunter „Richard-Hecht-Schule" (Stutensee) und
+ * „Messe Karlsruhe" (Rheinstetten) – beides aus **amtlichen** Quellen, wo die
+ * Angabe nicht wiederkommt. Dieselbe Gefahr war beim Karlsruher Import schon
+ * einmal knapp abgewendet worden, als „Bahnhof" beinahe als Straßenname
+ * eingetragen wurde (2e.2/2e.3).
+ *
+ * Gefunden hat es kein Test, sondern der Blick auf die Daten, **bevor** der
+ * Lauf sie schreiben durfte: Der Lauf war gestartet und wurde nach dem ersten
+ * Blick auf die sieben amtlichen Städte abgebrochen, bevor er die erste Datei
+ * geschrieben hatte.
+ */
+function openSpotsOf(seed: SeedFile) {
+  const withoutStreet = seed.spots.filter(
+    (spot) => !spot.street && spot.lat !== null && spot.lng !== null,
+  );
+
+  return {
+    open: withoutStreet.filter((spot) => isGenericLabel(spot.label, seed.city.name)),
+    named: withoutStreet.filter((spot) => !isGenericLabel(spot.label, seed.city.name)),
+  };
+}
+
 async function processCity(file: string, seed: SeedFile, dryRun: boolean) {
-  const open = seed.spots.filter((spot) => !spot.street && spot.lat !== null && spot.lng !== null);
-  if (open.length === 0) return { assigned: 0, withNumber: 0, open: 0 };
+  const { open, named } = openSpotsOf(seed);
+  if (open.length === 0) {
+    return { assigned: 0, withNumber: 0, open: 0, named: named.length, closestMissed: null };
+  }
 
   const box = boundingBoxOf(open);
   const project = projector(seed.city.center.lat);
@@ -399,6 +453,30 @@ async function processCity(file: string, seed: SeedFile, dryRun: boolean) {
   const ways = (await fetchStreets(box)).filter(
     (element): element is OverpassWay => element.type === "way",
   );
+
+  /*
+   * **Eine leere Antwort ist kein Ergebnis** (ergänzt 2026-10-20).
+   *
+   * Overpass meldet Überlast teils mit HTTP 200 und leerer Liste – der
+   * Fallstrick, der in `README.md` und `Datenpflege.md` beim Parkplatz-Import
+   * ausdrücklich steht und hier fehlte. Am 2026-10-20 lieferten vier Städte
+   * hintereinander „0/14 (0 %)", während der Dienst nachweislich mit 502 und
+   * 504 antwortete: Der Lauf sah aus wie ein Befund („in dieser Stadt gibt es
+   * nichts zu ergänzen"), war aber ein Fehlschlag.
+   *
+   * Für ein Stadtgebiet mit mindestens einem Parkplatz **kann** es keine
+   * benannte Straße geben – deshalb braucht es hier keine Bestätigung durch
+   * einen zweiten Spiegel wie beim Parkplatz-Import, sondern nur die
+   * Feststellung, dass die Abfrage nichts geliefert hat. So bleibt die Stadt
+   * auf der Liste, statt als erledigt mit 0 % zu gelten.
+   */
+  if (ways.length === 0) {
+    throw new Error(
+      "keine einzige benannte Straße geliefert – für ein Stadtgebiet unmöglich, " +
+        "also Überlast (HTTP 200 mit leerer Liste). Später erneut versuchen.",
+    );
+  }
+
   const grid = buildStreetIndex(ways, project);
 
   await sleep(6000);
@@ -424,10 +502,20 @@ async function processCity(file: string, seed: SeedFile, dryRun: boolean) {
 
   let assigned = 0;
   let withNumber = 0;
+  /** Der kleinste Abstand, der die Grenze **nicht** geschafft hat. */
+  let closestMissed: number | null = null;
 
   for (const spot of open) {
     const street = nearestStreet(grid, spot.lat!, spot.lng!, project);
-    if (!street) continue;
+
+    if (!street || !street.inRange) {
+      // Für die Ausgabe festhalten, wie knapp es war – sonst liest sich
+      // „0 %" wie ein Fehlschlag.
+      if (street && (closestMissed === null || street.meters < closestMissed)) {
+        closestMissed = street.meters;
+      }
+      continue;
+    }
 
     spot.street = street.name;
     assigned += 1;
@@ -456,6 +544,15 @@ async function processCity(file: string, seed: SeedFile, dryRun: boolean) {
       withNumber += 1;
     }
 
+    /*
+     * Die Bezeichnung durch die Adresse ersetzen – **und das ist nur
+     * zulässig, weil `openSpotsOf` hier ausschließlich Platzhalter
+     * durchlässt.** Stünde ein echter Name drin, wäre diese Zeile ein
+     * Datenverlust: In Nürnberg hieß jeder zweite Eintrag wörtlich
+     * „Behindertenparkplatz Nürnberg" (3.0), und genau das soll sie
+     * beseitigen. Für „IKEA" oder „Richard-Hecht-Schule" wäre sie ein
+     * Rückschritt.
+     */
     spot.label = [spot.street, spot.houseNumber].filter(Boolean).join(" ");
   }
 
@@ -468,7 +565,7 @@ async function processCity(file: string, seed: SeedFile, dryRun: boolean) {
     );
   }
 
-  return { assigned, withNumber, open: open.length };
+  return { assigned, withNumber, open: open.length, named: named.length, closestMissed };
 }
 
 async function main() {
@@ -485,21 +582,37 @@ async function main() {
   );
 
   const todo: { file: string; seed: SeedFile; open: number }[] = [];
+  let namedTotal = 0;
+
   for (const file of files) {
     const seed = await readJson<SeedFile | null>(path.join(dataDir, file), null);
     if (!seed?.city?.slug || !Array.isArray(seed.spots)) continue;
     if (wanted.length > 0 && !wanted.includes(seed.city.slug)) continue;
 
-    const open = seed.spots.filter(
-      (spot) => !spot.street && spot.lat !== null && spot.lng !== null,
-    ).length;
-    if (open > 0) todo.push({ file, seed, open });
+    const { open, named } = openSpotsOf(seed);
+    namedTotal += named.length;
+    if (open.length > 0) todo.push({ file, seed, open: open.length });
   }
 
   todo.sort((a, b) => b.open - a.open);
   const totalOpen = todo.reduce((sum, entry) => sum + entry.open, 0);
 
-  console.log(`${todo.length} Städte, zusammen ${totalOpen} Standorte ohne Straßennamen.`);
+  console.log(`${todo.length} Städte, zusammen ${totalOpen} Standorte mit Platzhalter.`);
+
+  /*
+   * Die übergangenen Standorte werden **genannt, nicht verschwiegen.** Sonst
+   * sieht der Lauf hinterher aus, als wäre er unvollständig geblieben – und
+   * jemand setzt die Regel wieder außer Kraft, um „die letzten Lücken" zu
+   * schließen. Sie sind keine Lücken.
+   */
+  if (namedTotal > 0) {
+    console.log(
+      `Übergangen: ${namedTotal} Standorte ohne Straße, die einen eigenen Namen tragen ` +
+        "(IKEA, Tiefgarage Klinikum, Richard-Hecht-Schule …). Dort wäre eine Straße " +
+        "keine Verbesserung, sondern ein Verlust.",
+    );
+  }
+
   if (dryRun) console.log("Probelauf – es wird nichts geschrieben.\n");
 
   let assignedTotal = 0;
@@ -514,7 +627,15 @@ async function main() {
       const share = result.open > 0 ? Math.round((result.assigned / result.open) * 100) : 0;
       console.log(
         `${entry.seed.city.name.padEnd(24)} ${String(result.assigned).padStart(4)}/${String(result.open).padEnd(4)} (${share} %)` +
-          `${result.withNumber > 0 ? `, davon ${result.withNumber} mit Hausnummer` : ""}`,
+          `${result.withNumber > 0 ? `, davon ${result.withNumber} mit Hausnummer` : ""}` +
+          // Warum die Übrigen nichts bekamen – ohne das sieht jedes „0 %"
+          // nach einem Fehler aus.
+          `${
+            result.closestMissed !== null
+              ? `; ${result.open - result.assigned} zu weit von jeder Straße ` +
+                `(nächste ${result.closestMissed.toFixed(0)} m, Grenze ${MAX_STREET_METERS} m)`
+              : ""
+          }`,
       );
     } catch (error) {
       console.log(

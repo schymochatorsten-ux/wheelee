@@ -1,0 +1,78 @@
+{
+  "erzeugtAm": "2026-10-20",
+  "toleranzMeter": 30,
+  "staedte": {
+    "germersheim": {
+      "geprueftAm": "2026-10-20",
+      "bestaetigt": 1,
+      "nurAmtlich": 5,
+      "nurOsm": 11,
+      "osmGesamt": 12,
+      "nurOsmStandorte": [
+        {
+          "label": "(ohne Namen in OSM)",
+          "lat": 49.2186314,
+          "lng": 8.3723427
+        },
+        {
+          "label": "(ohne Namen in OSM)",
+          "lat": 49.2184664,
+          "lng": 8.3726891
+        },
+        {
+          "label": "P6",
+          "lat": 49.219986,
+          "lng": 8.3705607
+        },
+        {
+          "label": "Festung",
+          "lat": 49.2160604,
+          "lng": 8.3784148
+        },
+        {
+          "label": "(ohne Namen in OSM)",
+          "lat": 49.2273895,
+          "lng": 8.3713992
+        },
+        {
+          "label": "(ohne Namen in OSM)",
+          "lat": 49.1946958,
+          "lng": 8.36078
+        },
+        {
+          "label": "(ohne Namen in OSM)",
+          "lat": 49.2194131,
+          "lng": 8.3722576
+        },
+        {
+          "label": "(ohne Namen in OSM)",
+          "lat": 49.2064649,
+          "lng": 8.3510498
+        },
+        {
+          "label": "(ohne Namen in OSM)",
+          "lat": 49.2065658,
+          "lng": 8.3510452
+        },
+        {
+          "label": "(ohne Namen in OSM)",
+          "lat": 49.206689,
+          "lng": 8.3515234
+        },
+        {
+          "label": "(ohne Namen in OSM)",
+          "lat": 49.2138977,
+          "lng": 8.3780879
+        }
+      ]
+    }
+  },
+  "standorte": {
+    "germersheim-13ecd2c9ce": "bestaetigt",
+    "germersheim-5e9f393d25": "nur_amtlich",
+    "germersheim-de536dd50d": "nur_amtlich",
+    "germersheim-2671adbb83": "nur_amtlich",
+    "germersheim-1992bfeb75": "nur_amtlich",
+    "germersheim-b9b6fc3706": "nur_amtlich"
+  }
+}

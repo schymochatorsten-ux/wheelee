@@ -194,23 +194,35 @@ Standorte, die angesehen werden sollten.
 
 **Ohne Netzzugriff**, weil die Daten schon da sind:
 
-| Prüfung                         | Was sie findet                                             |
-| ------------------------------- | ---------------------------------------------------------- |
-| Koordinate in Deutschland       | grob falsche Verortung, falsches Koordinatensystem         |
-| Abstand zum Stadtmittelpunkt    | Verwechslung von Städten, falsche UTM-Zone                 |
-| Dubletten unter 10 m            | derselbe Parkplatz doppelt, etwa aus zwei Quellen          |
-| Stellplätze je 10.000 Einwohner | Städte mit lückenhafter Datenlage                          |
-| Vollständigkeit der Felder      | fehlende Adressen, Platzhalternamen, Stadtteil = Stadtname |
-| Verteilung der Namen            | nicht erkanntes Adressfeld (alle Einträge heißen gleich)   |
+| Prüfung                         | Was sie findet                                               |
+| ------------------------------- | ------------------------------------------------------------ |
+| Koordinate in Deutschland       | grob falsche Verortung, falsches Koordinatensystem           |
+| Abstand zum Stadtmittelpunkt    | Verwechslung von Städten, falsche UTM-Zone                   |
+| Dubletten unter 10 m            | derselbe Parkplatz doppelt, etwa aus zwei Quellen            |
+| Stellplätze je 10.000 Einwohner | Städte mit lückenhafter Datenlage                            |
+| Vollständigkeit der Felder      | fehlende Adressen, Platzhalternamen, Stadtteil = Stadtname   |
+| Verteilung der Namen            | nicht erkanntes Adressfeld (alle Einträge heißen gleich)     |
+| Bewertungen der Nutzer:innen    | Parkplätze, die mehrere Konten als aufgehoben gemeldet haben |
 
 **Mit Netzzugriff**, als zweite Quelle:
 
 | Prüfung                            | Was sie findet                                              |
 | ---------------------------------- | ----------------------------------------------------------- |
-| Amtliche Daten gegen OpenStreetMap | Standorte, die beide Quellen kennen, gelten als bestätigt   |
+| Amtliche Daten gegen OpenStreetMap | **drei Gruppen:** bestätigt, nur amtlich, nur OSM           |
 | Landesweite Sammeldatensätze       | NRW über die Mobilithek, Baden-Württemberg über MobiData BW |
 | Straßenabgleich per Rückwärtssuche | Koordinate liegt in einer anderen Straße als angegeben      |
 | Abstand zur nächsten Straße        | Punkte über 25 m von jeder Straße sind fast immer falsch    |
+
+**Die Bewertungen sind die einzige Quelle, die eine Änderung in der
+Wirklichkeit bemerkt** – ein aufgehobener Parkplatz steht in keiner
+Importdatei. Sie ändern aber nichts von selbst: Der Bericht führt sie als
+eigenen Abschnitt „Als aufgehoben gemeldet" samt der Zahl der Bestätigungen
+daneben, und was damit geschieht, entscheidet ein Mensch.
+
+**Die Datenbank liegt im Betrieb auf dem NAS.** Wer den Bericht auf seinem
+Rechner erzeugt, hat sie nicht – dann steht dort ausdrücklich „nicht geprüft".
+Das ist kein Mangel des Laufs, sondern die ehrliche Auskunft: „nichts
+gemeldet" wäre eine Behauptung über Daten, die niemand angesehen hat.
 
 ### Wie die Befunde zu lesen sind
 
@@ -218,6 +230,18 @@ Ein Befund ist kein Beweis für einen Fehler, sondern eine Liste, die ein Mensch
 ansehen sollte. Bestätigte Standorte sind die verlässlichsten – sie kennen zwei
 unabhängige Quellen. Standorte nur aus einer Quelle sind nicht falsch, nur
 ungeprüft.
+
+**Die dritte Gruppe ist die, auf die es ankommt: „nur OSM".** Dort kennt
+OpenStreetMap einen Stellplatz, den die amtliche Liste nicht führt – entweder
+neu entstanden oder dort vergessen. Eine amtliche Liste gilt als vollständig,
+und genau deshalb sucht niemand in ihr nach Fehlendem; der Bericht führt diese
+Standorte mit Koordinate auf. Was damit geschieht, entscheidet der Blick vor
+Ort oder eine Anfrage bei der Stadt.
+
+Das Ergebnis **je Standort** steht in `data/_bestaetigt.json`, und die
+Detailansicht liest es von dort („Von zwei Quellen bestätigt"). **Eine ID, die
+dort fehlt, heißt „nicht geprüft" – nicht „nicht bestätigt".** Erst 23 der 209
+Städte haben überhaupt eine zweite Quelle.
 
 **Die wirksamste Prüfung ist die billigste:** Stellplätze je Einwohner über
 alle Städte auftragen. Ausreißer nach unten zeigen fast immer eine Lücke in der
@@ -285,6 +309,7 @@ GitHub-Actions-Lauf, der bei Änderungen einen Pull Request mit den neuen Daten
 | `_import-status.md` / `.json`  | Importstand je Stadt                 | nein                   |
 | `_quellen-status.md` / `.json` | welche Stadt hat welche Quelle       | nein                   |
 | `_validierung.md`              | Befunde der Datenprüfung             | nein                   |
+| `_bestaetigt.json`             | Kreuzvergleich je Standort           | nein, aber versioniert |
 | `_aktualitaet.md`              | Ergebnis der monatlichen Prüfung     | nein                   |
 | `_address-cache.json`          | Ergebnisse der Adress-Rückwärtssuche | nein, aber versioniert |
 | `frankfurt.line-fixups.json`   | geprüfte Ausnahmen des PDF-Parsers   | **ja**                 |

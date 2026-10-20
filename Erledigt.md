@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-10-20):** **125 Einträge** auf oberster Ebene –
-davon 118 mit einer ToDo-Nummer und 7 ohne (die Entscheidungen D-01, D-02,
+**Stand (nachgezählt 2026-10-20):** **129 Einträge** auf oberster Ebene –
+davon 122 mit einer ToDo-Nummer und 7 ohne (die Entscheidungen D-01, D-02,
 D-04, D-06 sowie drei Einträge, die zu keinem nummerierten Punkt gehören).
 Einige stehen als `[~]`: Ihr gebauter Teil steht hier, ihr offener Rest in
 `ToDos.md`.
@@ -459,6 +459,128 @@ und was liegt dazwischen?"
   Die Datenschutzerklärung hat einen eigenen Abschnitt dazu bekommen – gespeichert werden Parkplatz, Richtung, Konto und Zeitpunkt, **kein** Standort und **keine** Gerätekennung; anderen werden nur Summen gezeigt, nie wer wie bewertet hat. Eine Löschfrist gibt es bewusst nicht: Eine Bestätigung, die nach einem Jahr verschwände, ließe den Parkplatz wieder als ungeprüft dastehen.
 
   Geprüft mit **13 Unit-Tests** (`src/lib/db/ratings.test.ts`, gegen eine echte Datenbank, weil die Regel im Schema steht) und **6 E2E-Tests** (sichtbar ohne Konto, Endpunkt lehnt ohne Konto ab, Zählerstände öffentlich, unbekannte ID als 404, setzen/umdrehen/zurücknehmen, Bestand nach dem Schließen).
+
+- [x] 8.8 / 8.9 **Aus Bewertungen wird Datenpflege** (2026-10-20). Die Knöpfe standen seit dem 2026-10-19, aber die Meldungen lagen in der Datenbank und erreichten niemanden. **Eine Bewertung, die niemand liest, ist für die Datenpflege wertlos** – das war der fehlende Schritt, nicht ein weiteres Feature.
+
+  **8.8: Die Prüfliste im Reiter „Rückmeldungen"** (`/api/admin/reported`, `src/components/ReportedSpots.tsx`).
+
+  - **Im selben Reiter, nicht in einem eigenen.** Beide Abschnitte beantworten dieselbe Frage – „wo stimmen die Daten nicht?" –, nur aus zwei Quellen: geschriebene Meldungen und Daumen nach unten. Ein dritter Reiter kostete Platz in der Kopfzeile, den die Karte braucht (9.15), und man müsste zwischen zwei Listen wechseln, um sich ein Bild zu machen.
+  - **Sie steht oben, und das wurde erst im Browser entschieden.** Zuerst stand sie unter den Rückmeldungen – und war dort hinter zehn Meldungen nur nach langem Scrollen zu sehen. Das ist genau der Fehler, den dieses Projekt zweimal gemacht hat: der folgenlose Hinweis bei der dünnen Datenlage (2d.10) und der beinahe verschwundene Haftungshinweis (9.11). **Ein Hinweis, den niemand sieht, ist schlimmer als keine Prüfung.** Dazu passt die Reihenfolge auch sachlich: Die Prüfliste ist nach oben begrenzt (Mindestzahl) und im Normalfall drei Zeilen lang, die Rückmeldungen wachsen unbegrenzt.
+  - **Die Bestätigungen stehen neben den Meldungen.** Drei Meldungen bei null Bestätigungen sind eine andere Lage als drei bei zwanzig. Ohne diese Zahl liest sich die Liste als Urteil statt als Hinweis – und die Bewertungen ändern die Daten nach wie vor nicht (8.6).
+  - **Ein gemeldeter Parkplatz, den der Bestand nicht mehr kennt, bleibt in der Liste.** Das ist kein Fehlerfall, sondern die **Bestätigung** der Meldung: Der nächste Import hat ihn nicht mehr geliefert. Ihn herauszufiltern hieße, die beste Nachricht zu verschweigen, die diese Liste haben kann; stattdessen steht sie als Satz daneben.
+  - **Die Mindestzahl ist zwei und wählbar bis eins.** Eine einzelne Meldung kann ein Fehlgriff sein, ein verwechselter Platz oder jemand vor der falschen Hausnummer. Zwei Meldungen sind zwei **Konten** – dank `UNIQUE (spot_id, account_id)` also zwei Menschen –, und das ist der Punkt, an dem Nachsehen lohnt. Die Stufe „1 (alle)" gibt es, um sich trotzdem alles ansehen zu können.
+  - **Dieselbe Zugangsregel wie bei 17.4:** ohne Administratorrecht 401 und nicht 403, geprüft serverseitig. Ein eigener E2E-Test ruft die Route ohne Anmeldung auf – auch mit eigenem `min`-Wert – und prüft, dass nicht einmal ein Zählerstand durchsickert. Dass er dem Test für `/api/admin/feedback` gleicht, ist beabsichtigt: **Eine zweite Zugangsprüfung ist genau der Ort, an dem eine vergessen wird.**
+
+  **8.9: `npm run validate` liest die Bewertungen** (`scripts/import/ratings.mts`, neuer Abschnitt im Bericht).
+
+  - **Eine eigene, ausdrücklich lesende Verbindung – und das ist der Grund, warum die Datei überhaupt existiert.** `src/lib/db/sqlite.ts` legt die Datenbank an, erzeugt das Verzeichnis und führt Migrationen aus. Ein Prüfskript, das von sich sagt „ändert keine Daten", darf das nicht: Es würde auf einem frischen Rechner eine leere Datenbank anlegen, nur weil jemand einen Bericht erzeugt hat. `readGoneReports` öffnet die Datei mit `readOnly` und legt sie nicht an – zwei Tests halten genau das fest.
+  - **„Nicht geprüft" ist nicht „nichts gemeldet", und der Bericht sagt, welches von beidem gilt.** Fehlt die Datei, steht dort ausdrücklich, dass nicht geprüft wurde und wo die Datenbank erwartet wird; sie liegt im Betrieb auf dem NAS, und wer den Bericht auf seinem Rechner erzeugt, hat sie nicht. Ein stillschweigend leerer Abschnitt läse sich als „niemand hat etwas gemeldet" – **eine Behauptung über Daten, die niemand angesehen hat.** Das ist dieselbe Unterscheidung wie `⚪ geprüft, nichts gefunden` gegen `⬜ noch nicht geprüft` im Importstand (2e.9), und sie steht hier aus demselben Grund.
+  - **Eine Datenbank ohne Tabelle `rating` ergibt „nichts gemeldet", nicht „nicht geprüft".** Stammt die Datei aus der Zeit vor Migrationsschritt 2, **kann** es keine Bewertungen geben – dann ist die leere Antwort die wahre Auskunft.
+  - **Befund je Stadt und zusätzlich ein eigener Abschnitt.** Dieselbe Lehre wie bei der dünnen Datenlage: Eine Stadt, deren einziger Befund ein Hinweis ist, erscheint oben gar nicht – die Meldung stünde im Bericht und würde nie gelesen. Als eigener Abschnitt ist sie eine Arbeitsliste, die man Zeile für Zeile abarbeiten kann.
+  - **Als `verdacht`, nicht als `fehler`.** Zwei Meldungen sind ein Hinweis, kein Beweis: Vielleicht ist der Platz aufgehoben, vielleicht war er zugeparkt. Ein Bericht, der das als Fehler ausgibt, verleitet zu genau dem, was 8.6 ausschließt – Daten zu ändern, weil jemand abgestimmt hat.
+  - **Der Bestand wird über alle Seed-Dateien aufgebaut, auch wenn nur eine Stadt geprüft wird.** Eine Meldung trägt nur die ID; ohne den ganzen Bestand wüsste das Skript nicht, ob eine unbekannte ID zu einer anderen Stadt gehört oder gar nicht mehr existiert. Das ist der Unterschied zwischen „nicht zuständig" und „verschwunden". Bei gesetztem Städtefilter bleiben unbekannte IDs deshalb außen vor – sie der falschen Stadt anzuhängen wäre schlimmer, als sie erst im vollständigen Lauf zu zeigen.
+  - **Die Zuordnung läuft über die Parkplatz-ID**, und das ist der Grund, warum die IDs sich aus der Örtlichkeit ableiten und nicht aus der Zeilennummer (2b.1): Eine Meldung von vor einem Jahr muss nach einem Neuimport denselben Parkplatz treffen.
+
+  **Der Fallstrick aus [CLAUDE.md](CLAUDE.md) ist beim Schreiben sofort zugeschnappt:** `„existiert nicht mehr"` in einer mit `"` begrenzten Zeichenkette endet am ASCII-Anführungszeichen – drei Stellen, alle von `tsc` gemeldet und mit `'…'` als äußerer Begrenzung behoben. Anders als bei den beschädigten Umlauten merkt man es also sofort.
+
+  **Zwei Befunde aus dem Browser, die kein Test gefunden hätte** – geprüft wurde mit einem Testkonto gegen den Entwicklungsserver, mit echten Meldungen auf echte Frankfurter IDs:
+  - Die Reihenfolge der beiden Abschnitte (siehe oben) – der wichtigere der beiden.
+  - „Parkplätze mit mindestens **1 Meldungen**" bei der Stufe „1 (alle)". Geprüft wird der Zählerstand, nicht die Grammatik.
+
+  Der Lauf gegen eine Probe-Datenbank hat alle drei Wege des Berichts gezeigt: keine Datenbank („nicht geprüft"), leere Tabelle („geprüft, nichts gefunden") und Meldungen samt einer ID, die der Bestand nicht mehr kennt. **Der versionierte Bericht `data/_validierung.md` wurde dabei nicht verändert** – ein reiner Offline-Lauf hätte die OSM-Abgleiche des letzten Netz-Laufs verloren; er wird beim nächsten vollständigen Lauf (3.10) ordentlich neu erzeugt.
+
+  Geprüft mit **9 Unit-Tests** (`scripts/import/ratings.test.mts`, gegen eine echte Datenbank, weil die Auswertung in SQL steckt und ein Fehler dort unsichtbar wäre) und **1 E2E-Test** für die Zugangsprüfung.
+
+- [x] 3.0i **Straßennamen: Dormagen behoben, und zwei Fehler im Werkzeug gefunden** (2026-10-20). Der Befund lautete „174 von 18.072 Standorten ohne Straßennamen, Dormagen 82 von 82". Behoben ist der eigentliche Fall; **was offen bleibt, ist keine Lücke mehr, sondern eine Entscheidung** – sie steht in [ToDos.md](ToDos.md).
+
+  **Dormagen: 75 von 82 ergänzt, 24 davon mit Hausnummer.** Statt 8 verschiedener Bezeichnungen hat die Stadt jetzt 54, und kein einziger Eintrag heißt mehr „Behindertenparkplatz Dormagen". Liste und Detailansicht sind damit für diese Stadt überhaupt erst brauchbar.
+
+  **Die Vermutung in der Aufgabe war falsch, und das gehört hierher.** Dort stand: „ein Platzhalter bei 75 von 82 Einträgen deutet auf einen nicht erkannten Spaltennamen". Dormagen kommt aber aus **OpenStreetMap**, nicht aus einer amtlichen Quelle – es gibt keine Spalte, die man übersehen könnte. Die Ursache war banal: `import:streets` ist für diese Stadt nie gelaufen. Die Zahl 75 stimmte, die Erklärung nicht. **Eine plausible Ursache ist keine gemessene** ([CLAUDE.md](CLAUDE.md)).
+
+  **Fehler 1: Der Lauf hätte 29 echte Namen zerstört.** `street-names.mts` setzt `label` auf „Straße Hausnummer" – bedingungslos, für jeden Standort, dem es eine Straße zuordnet. Unter den 174 offenen Standorten waren aber 29 mit einem **eigenen** Namen: „IKEA" (Duisburg), „Tiefgarage Klinikum" (Mannheim), „Wanderparkplatz Tiergarten" (Siegen), „Richard-Hecht-Schule" (Stutensee), „Messe Karlsruhe" (Rheinstetten), „P+R Bahnhof" (Germersheim) und weitere – sieben davon aus **amtlichen** Quellen, wo die Angabe nicht wiederkommt. Sie wären durch den Namen einer Straße innerhalb von 150 m ersetzt worden.
+  - **Gefunden hat es nicht ein Test, sondern der Blick auf die Daten, bevor der Lauf schreiben durfte.** Der Lauf war gestartet; beim Durchsehen der sieben amtlichen Städte fiel auf, was dort in `label` steht. Abgebrochen, bevor die erste Datei geschrieben war – nachgewiesen: 174 unverändert, keine Datei angefasst.
+  - **Dieselbe Gefahr war schon einmal knapp abgewendet worden:** Beim Karlsruher Import wäre „Bahnhof" beinahe als Straßenname eingetragen worden (2e.2/2e.3), und 3.0d hielt fest, dass bei aussagekräftigen OSM-Namen „eine Straße keine Verbesserung wäre". Die Regel stand also zweimal in dieser Datei – nur nicht im Code.
+  - **Die Korrektur ist eine eigene Funktion unter Tests:** `isGenericLabel` in `src/lib/parking/display.ts` entscheidet, was ein Platzhalter ist („Behindertenparkplatz <Stadt>", das Präfix allein) und was ein Name. Nur Platzhalter gelten als Lücke; alles andere bleibt unangetastet, und der Lauf **nennt**, wie viele er übergangen hat – sonst setzt der Nächste die Regel außer Kraft, um „die letzten Lücken" zu schließen. Zwölf Tests, jeder Fall aus dem Bestand.
+
+  **Fehler 2: Eine leere Overpass-Antwort galt als Ergebnis.** Vier Städte meldeten hintereinander „0/14 (0 %)", während der Dienst nachweislich mit HTTP 502 und 504 antwortete. Für ein Stadtgebiet mit Parkplätzen kann es keine benannte Straße geben – der Lauf nahm die leere Liste aber als Befund („hier gibt es nichts zu ergänzen"). **Genau der Fallstrick, der in [README](README.md) und [Datenpflege.md](Datenpflege.md) für den Parkplatz-Import ausdrücklich steht und hier fehlte.** Jetzt bricht die Stadt mit einer Meldung ab und bleibt auf der Liste. Er griff sofort: Baden-Baden meldete im nächsten Lauf „keine einzige benannte Straße geliefert" statt „0/5".
+
+  **Und ein Befund, der eine Entscheidung ist, keine Aufgabe.** Nach Dormagen blieben 70 Platzhalter in 19 Städten – alle mit 0 %. Gemessen, unabhängig vom Skript nachgerechnet: **Diese Standorte liegen 150 bis 205 m von der nächsten benannten Straße entfernt**, die Grenze steht auf 150 m (`MAX_STREET_METERS`). Neumünster 151 m, Euskirchen 152 m, Chemnitz 150 m, Marl 183 m.
+  - **Das ist kein Zufall, sondern ein Auswahleffekt:** Der Lauf von 3.0h hat mit derselben Grenze alles erfasst, was näher liegt. Was übrig ist, **muss** jenseits der Grenze liegen – deshalb drängt sich das Minimum knapp darüber.
+  - Es sind überwiegend große Parkplätze an Einkaufszentren, deren Stellplätze weit von der Fahrbahn liegen. Ob „Wasbeker Straße" für einen Stellplatz 205 m abseits eine Hilfe oder eine Irreführung ist, ist eine Abwägung und keine Messung – **und an einem Schwellenwert ohne Beleg zu drehen ist genau der Fehler, der bei Chemnitz schon einmal passiert ist** (2d.10: „eine Schwelle, die um 0,28 danebenliegt, ist kein Schutz"). Die Frage liegt deshalb bei Torsten und steht als Entscheidung in `ToDos.md`.
+  - **Die Ausgabe sagt jetzt, warum 0 % herauskommt** („14 zu weit von jeder Straße, nächste 151 m, Grenze 150 m"). Vorher las sich ein richtiges Ergebnis wie ein Fehlschlag – und hat beim Suchen nach der Ursache echte Zeit gekostet.
+  - **Entschieden am 2026-10-20: Die Grenze bleibt bei 150 m.** Torsten auf Vorlage der drei Möglichkeiten (so lassen / 250 m / 175 m). Damit behalten diese 70 Standorte ihren Platzhalter, und das ist die ehrlichere Angabe: Eine Straße 200 m entfernt ist keine Adresse, sondern eine Richtungsangabe. Ein zweiter gegriffener Schwellenwert („nur bis 175 m") wäre genau die Art Zahl, die später niemand mehr begründen kann. **Damit ist 3.0i abgeschlossen** – die 99 verbliebenen Standorte sind keine offene Aufgabe, sondern ein benannter Rest: 29 mit eigenem Namen, 70 ohne Straße in Reichweite.
+
+  Stand danach: **99 von 18.072 Standorten ohne Straßennamen** (0,5 %), davon 29 mit eigenem Namen (keine Lücke) und 70 jenseits der 150-m-Grenze. Tests: 320 Unit-Tests, 43 E2E-Tests.
+
+  **Was an diesem Lauf offen blieb, der Vollständigkeit halber:** Von den 19 Städten mit Platzhaltern sind 13 gemessen (61 der 70 Standorte); die letzten 6 Städte mit 9 Standorten wurden nicht mehr abgefragt, weil Overpass an diesem Tag unter Last stand und je Stadt rund zehn Minuten mit Wiederholungen brauchte. Der Lauf ist gefahrlos wiederholbar – er nimmt von selbst nur Städte mit Platzhaltern, und bei 0 % schreibt er nichts. Für den Befund ändert es nichts: Das Muster ist über 13 Städte hinweg dasselbe.
+
+- [x] 3.1 **Kreuzvergleich zu Ende geführt: drei Gruppen und ein Ergebnis je Standort** (2026-10-20). Die Hälfte stand seit dem 2026-10-09 – `crossCheckWithOsm` paarte und schrieb eine Quote. Was fehlte, war das, was die Quote nicht sagen kann.
+
+  **Die dritte Gruppe ist der eigentliche Gewinn.** Bisher wurde gezählt, wie viele amtliche Standorte einen OSM-Gegenpart haben. Jetzt gibt es:
+  - **bestätigt** – beide Quellen kennen ihn, die verlässlichste Angabe im Bestand;
+  - **nur amtlich** – in OSM nicht erfasst; kein Fehler, nur ungeprüft;
+  - **nur OSM** – **fehlt in der amtlichen Liste.** Entweder neu entstanden oder dort vergessen. Diese Gruppe fiel vorher komplett weg, und sie ist die interessanteste: Eine amtliche Liste gilt als vollständig, und genau deshalb sucht niemand in ihr nach Fehlendem. Beim Probelauf für Germersheim kennt OpenStreetMap **11 Stellplätze, die die amtliche Liste nicht führt** – bei 6 amtlichen Standorten.
+
+  **Die Paarung ist eins zu eins, und das ist keine Feinheit.** Ohne diese Regel wäre die Quote geschmeichelt: An einem Krankenhaus liegen zwanzig amtliche Stellplätze auf engem Raum, und ein einziger OSM-Parkplatz mit `capacity:disabled=20` hätte sie alle als „von zwei Quellen bestätigt" ausgewiesen. **Dann heißt bestätigt nichts mehr** – und das Wort steht später in der Oberfläche, wo sich jemand darauf verlässt (3.7). Ein Test hält genau diesen Fall fest.
+
+  **Zugeordnet wird nach dem kürzesten Abstand, nicht nach der Reihenfolge der Datei.** Steht ein 28 m entferntes Paar vor einem 3 m entfernten, nähme das falsche den Gegenpart weg und der richtige Standort gälte als unbestätigt. Eine Auskunft, die von der Sortierung der Quelldatei abhängt, ist keine. Auch das steht als Test da.
+
+  **Das Ergebnis je Standort steht in `data/_bestaetigt.json`:**
+  - **Eine eigene Datei, nicht ein Feld in der Seed-Datei.** Seed-Dateien erzeugt der Importer; ein Prüfergebnis darin wäre beim nächsten Lauf weg, und [Datenpflege.md](Datenpflege.md) verbietet aus demselben Grund das Bearbeiten von Hand. Der Unterstrich sagt, was die Datei ist: Arbeitsstand, von einem Skript geschrieben.
+  - **Beide Zustände werden geschrieben, nicht nur „bestätigt".** Stünden nur die bestätigten IDs darin, könnte die Oberfläche „geprüft und nicht bestätigt" nicht von „noch nie geprüft" unterscheiden. Das ist derselbe Fehler, der im Importstand einmal eine leere Overpass-Antwort als Ergebnis durchgehen ließ (2e.9) – hier wiegt er schwerer, weil „nicht bestätigt" an einem nie geprüften Standort eine Falschaussage über eine Angabe wäre, auf die sich jemand verlässt.
+  - **Der Stand wird ergänzt, nicht ersetzt.** `npm run validate -- koeln` darf das Ergebnis der übrigen 22 Städte nicht löschen – sonst stünden sie plötzlich als „nie geprüft" da, weil jemand eine einzelne Stadt nachgesehen hat. Die alten Einträge **der geprüften Stadt** werden dagegen verworfen, damit ein Standort, den es nicht mehr gibt, nicht als bestätigt stehen bleibt.
+  - **Geschrieben wird nur, wenn wirklich abgeglichen wurde.** Ein Lauf, in dem jede Abfrage scheitert, soll den vorhandenen Stand nicht mit einem frischen Datum versehen – das sähe aus wie ein erfolgreicher Lauf.
+
+  **Die Rechnung liegt in einer eigenen Datei** (`scripts/import/crosscheck.mts`) **und nicht in `validate.mts`** – nicht aus Ordnungsliebe: `validate.mts` ruft beim Laden `main()` auf, ein Test davon würde also das ganze Prüfskript starten. Die Paarung ist dadurch mit **8 Unit-Tests** abgedeckt, ohne einen Gemeinschaftsdienst zu befragen.
+
+  **Im Bericht steht der gespeicherte Stand samt Datum, auch im Offline-Lauf.** Ein Abgleich vom letzten Monat ist eine Auskunft; „nicht geprüft" wäre dort falsch, denn geprüft wurde ja. Dasselbe gilt für die Spalte in „Alle Städte", die jetzt aus der Datei gefüllt wird, wenn der aktuelle Lauf nicht abgeglichen hat.
+
+  **Ein Mangel, der erst am Ergebnis auffiel:** Die Liste „nur in OpenStreetMap" zeigte neunmal „Germersheim" untereinander – `spotTitle` kürzt den OSM-Platzhalter „Behindertenparkplatz Germersheim" auf den Stadtnamen, und das liest sich wie die Bezeichnung des Stellplatzes. Dort steht jetzt „(ohne Namen in OSM)", die Auskunft trägt die Koordinate. Gefunden mit `isGenericLabel` aus 3.0i – dieselbe Unterscheidung, zweiter Anwendungsfall am selben Tag.
+
+  **Was offen bleibt und warum es nicht hierher gehört:** Der vollständige Lauf über alle 23 amtlichen Städte ist **3.10** und braucht Netz; am 2026-10-20 stand Overpass unter Last (502/504). Geprüft ist die Kette an Germersheim, Ende zu Ende: Abgleich, Datei, Bericht. Die Anzeige in der Detailansicht ist **3.7**.
+
+- [x] 3.7 **„Von zwei Quellen bestätigt" steht in der Detailansicht** (2026-10-20). Das ist die Angabe, auf die sich jemand verlässt, **bevor** er losfährt – zwei unabhängige Quellen kennen denselben Stellplatz an derselben Stelle.
+
+  **Nur der positive Fall wird angezeigt, und das ist eine Entscheidung.** „Nur eine Quelle" träfe rund vier von fünf geprüften Standorten und wäre dort eine Warnung ohne Anlass: Eine amtliche Liste ist nicht schlechter, weil OpenStreetMap den Platz nicht kennt. Vor allem aber ließe sich „nicht bestätigt" **nicht von „noch nie geprüft" unterscheiden** – erst 23 von 209 Städten haben überhaupt eine zweite Quelle. Ein Hinweis bei allen anderen wäre eine Behauptung über Daten, die niemand angesehen hat. **Das Fehlen dieses Felds ist deshalb keine Aussage**, und genau das hält ein E2E-Test fest: An einem nicht abgeglichenen Standort darf weder „bestätigt" noch „nicht bestätigt" stehen.
+
+  **Der Weg der Angabe in die Oberfläche war die eigentliche Frage.** Die Datei `data/_bestaetigt.json` dem Browser mitzuschicken wäre die naheliegende Lösung – und falsch: Das ist eine Liste mit tausenden IDs, und die 128 KB der Seite sind hart erarbeitet (5.4). Stattdessen hängt `spots.ts` den Zustand beim Aufbau des Bestands an jeden Standort, und er geht mit der ohnehin fälligen Antwort von `/api/spots` mit – ein Feld, meist leer, je Parkplatz.
+  - **Einmal beim Aufbau, nicht je Anfrage:** Es ist nur ein Nachschlagen, aber bei 18.072 Standorten und einer Antwort je Kartenbewegung zählt das.
+  - **`spots.ts` ist die richtige Stelle**, weil es laut eigenem Kommentar „die einzige Stelle ist, die weiß, woher die Parkplätze kommen". Die Seed-Dateien bleiben unberührt: `confirmation` ist kein Datum der Quelle, sondern das Ergebnis einer Prüfung – es steht als **optionales** Feld im Datenmodell, mit genau dieser Begründung daneben.
+
+  **Ein Test, der allein grün war und im vollen Lauf rot** – dieselbe Falle wie bei den Bewertungen (8.1–8.7), und sie hat beim zweiten Mal weniger Zeit gekostet, weil die Lehre schon dastand. Grund war ein Wettlauf: Die Leiste zeigt beim Laden die servergerenderten Standorte um die Stadtmitte und ersetzt sie erst, wenn die Standortfreigabe da ist; der Test klickte auf den Vorschlag von vorher. Jetzt wartet er, bis die Leiste **den gemeinten** Standort nennt, und prüft im Dialog zuerst die Überschrift und dann die Angabe. **Die Gegenprobe gehört dazu:** Ein Test, der nur nach dem grünen Hinweis sucht, wäre auch dann grün, wenn er den falschen Parkplatz offen hat.
+
+  **Die ID steht nicht im Test.** Welche Standorte bestätigt sind, ändert sich mit jedem `npm run validate`; der Test liest sich eine bestätigte ID aus der Datei und holt die Koordinate über die API. Gibt es keine, überspringt er sich selbst – dass niemand abgeglichen hat, ist kein Fehler der Oberfläche.
+
+  Geprüft mit **6 Unit-Tests** (`src/lib/parking/confirmation.test.ts` – sie prüfen die **Regeln**, nicht den Inhalt der Datei: ein Test auf „Germersheim ist bestätigt" wäre beim nächsten Lauf falsch, ohne dass etwas kaputt wäre) und **2 E2E-Tests**. Stand: 334 Unit-Tests, 45 E2E-Tests.
+
+### Ein Fallstrick der Testsuite, über den ich selbst gestolpert bin (2026-10-20)
+
+**Die E2E-Suite lässt sich nicht mehr als zweimal je Stunde vollständig laufen
+lassen** – und der Fehlschlag sieht aus wie ein Fehler in den Bewertungen.
+
+Zwei Tests in `e2e/bewertungen.spec.ts` legen je Lauf **ein neues Konto** an
+(`bewertung-<Zeitstempel>@example.de`). Die Drosselung erlaubt
+`register: { max: 5, windowMs: 60 * 60_000 }` – fünf Registrierungen je Stunde
+und Herkunft. Ab dem dritten Lauf innerhalb einer Stunde scheitert die
+Anmeldung, und was man sieht, ist ein **abgeschalteter Bewertungsknopf**:
+
+```
+locator resolved to <button disabled aria-label="Existiert, 10 Stimmen">
+  - unexpected value "disabled"
+```
+
+Das liest sich wie „die Anmeldepflicht ist kaputt" und ist das Gegenteil: Die
+Drosselung tut genau das, wofür sie gebaut ist. **Der Zähler liegt im
+Arbeitsspeicher** (17.2: „Gezählt wird im Arbeitsspeicher, nicht in der
+Datenbank"), ein Neustart des Entwicklungsservers setzt ihn also zurück – das
+ist die Abhilfe, nicht eine Stunde warten.
+
+Nicht geändert, und zwar bewusst: Die Grenze heraufzusetzen würde einen echten
+Schutz für die Bequemlichkeit beim Testen aufweichen. Die saubere Lösung wäre,
+dass sich die beiden Tests **ein** Konto teilen und es wiederverwenden – das
+ist eine Änderung an fremden Tests und gehört nicht in einen Punkt über die
+Anzeige bestätigter Standorte. Hier steht es, damit der nächste Durchgang nicht
+wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
 
 ---
 

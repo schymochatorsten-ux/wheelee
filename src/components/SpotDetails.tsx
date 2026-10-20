@@ -173,6 +173,30 @@ export function SpotDetails({
         </p>
       )}
 
+      {/*
+        **Von zwei Quellen bestätigt** (ToDo 3.7).
+
+        Das ist die Angabe, die vor einer vergeblichen Fahrt schützt: Zwei
+        unabhängige Quellen – die Liste der Stadtverwaltung und
+        OpenStreetMap – kennen diesen Stellplatz an derselben Stelle.
+
+        **Angezeigt wird nur der positive Fall, und das ist eine
+        Entscheidung.** „Nur eine Quelle" steht an rund vier von fünf
+        Standorten und wäre dort eine Warnung ohne Anlass: Eine amtliche Liste
+        ist nicht schlechter, weil OpenStreetMap den Platz nicht kennt. Vor
+        allem aber ließe sich „nicht bestätigt" nicht von „noch nie geprüft"
+        unterscheiden – erst 23 von 209 Städten haben überhaupt eine zweite
+        Quelle, und ein Hinweis bei allen anderen wäre eine Behauptung über
+        Daten, die niemand angesehen hat. Das Fehlen dieses Felds ist deshalb
+        **keine** Aussage.
+      */}
+      {spot.confirmation === "bestaetigt" && (
+        <p className="mt-3 rounded-lg bg-emerald-50 p-2.5 text-sm text-emerald-900 dark:bg-emerald-950 dark:text-emerald-200">
+          <strong>Von zwei Quellen bestätigt</strong> – die Stadtverwaltung und OpenStreetMap führen
+          diesen Stellplatz an derselben Stelle.
+        </p>
+      )}
+
       {spot.geoAccuracy !== "house" && (
         <p className="mt-3 rounded-lg bg-amber-50 p-2.5 text-sm text-amber-900 dark:bg-amber-950 dark:text-amber-200">
           Die Position ist nur ungefähr bekannt – der Parkplatz liegt in dieser Straße, die genaue

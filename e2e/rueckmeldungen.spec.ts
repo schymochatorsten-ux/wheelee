@@ -40,6 +40,29 @@ test.describe("Übersicht der Rückmeldungen", () => {
     const loeschen = await request.delete("/api/admin/feedback/1");
     expect(loeschen.status()).toBe(401);
   });
+
+  /**
+   * Dieselbe Prüfung für die Prüfliste aus den Bewertungen (ToDo 8.8).
+   *
+   * Sie steht als **eigener** Test da, obwohl er dem obigen gleicht: Die
+   * Route ist neu, und eine zweite Zugangsprüfung ist genau der Ort, an dem
+   * eine vergessen wird. Die Liste ist dabei heikler als sie aussieht – sie
+   * verrät, welche Parkplätze wie oft gemeldet wurden, und das sind Angaben
+   * aus den Bewertungen anderer.
+   */
+  test("die Prüfliste der Bewertungen antwortet ohne Berechtigung mit 401", async ({ request }) => {
+    const lesen = await request.get("/api/admin/reported");
+    expect(lesen.status()).toBe(401);
+
+    // Auch kein Parkplatz und kein Zählerstand darf durchsickern.
+    const text = await lesen.text();
+    expect(text).not.toContain("spots");
+    expect(text).not.toMatch(/goneCount|existsCount/u);
+
+    // Ein eigener `min`-Wert öffnet keinen zweiten Weg hinein.
+    const mitFilter = await request.get("/api/admin/reported?min=1");
+    expect(mitFilter.status()).toBe(401);
+  });
 });
 
 test.describe("Rückmeldung abschicken", () => {
