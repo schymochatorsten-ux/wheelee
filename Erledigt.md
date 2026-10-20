@@ -10,9 +10,10 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-10-20):** **129 Einträge** auf oberster Ebene –
-davon 122 mit einer ToDo-Nummer und 7 ohne (die Entscheidungen D-01, D-02,
-D-04, D-06 sowie drei Einträge, die zu keinem nummerierten Punkt gehören).
+**Stand (nachgezählt 2026-10-20):** **132 Einträge** auf oberster Ebene –
+davon 122, die mit einer ToDo-Nummer **beginnen**, und 10, die das nicht tun
+(die Entscheidungen D-01, D-02, D-04, D-06, D-08 sowie fünf Einträge, die zu
+keinem nummerierten Punkt gehören).
 Einige stehen als `[~]`: Ihr gebauter Teil steht hier, ihr offener Rest in
 `ToDos.md`.
 
@@ -650,7 +651,7 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
 
   Geprüft mit **11 Unit-Tests** gegen eine echte Datenbank – die Bedingung steckt in SQL, und dort wäre ein Fehler unsichtbar: Er löschte entweder zu viel oder nie etwas, und beides fiele erst nach Monaten auf.
 
-- [x] 10.3 **Sicherheits-Kopfzeilen** (2026-10-17, `next.config.ts`, Teil der Sicherheitsprüfung aus 10.3).
+- [x] 10.6 **Sicherheits-Kopfzeilen** (2026-10-17, `next.config.ts`, Teil der Sicherheitsprüfung aus 10.7). **Bis zum 2026-10-20 als „10.3" geführt** – siehe die Berichtigung der Nummern am Ende dieser Datei.
 
   **Der Befund zuerst: Die App lieferte keine einzige davon aus.** Keine Inhaltsrichtlinie, kein `nosniff`, kein Schutz gegen fremde Rahmen, keine `Referrer-Policy`, keine `Permissions-Policy`. Für eine Seite, die offen unter wheelee.de steht, Standortzugriff anfragt und eine Anmeldung mit Sitzungscookie führt, ist das kein Schönheitsfehler.
 
@@ -828,6 +829,52 @@ Was dabei auffiel und behoben wurde:
 
 ---
 
+## D-08 Wie übersetzt wird (2026-10-20)
+
+- [x] **D-08 Übersetzungsweg: Dateien je Sprache, maschinell vorübersetzt, von Menschen geprüft – mit einer Ausnahmeliste, die nie maschinell übersetzt wird.** Entschieden auf die Frage „automatischer Übersetzer oder alles einzeln lokalisieren?" bei der Freigabe von Abschnitt 15.
+
+  **Ein Übersetzer zur Laufzeit ist ausgeschlossen, und zwar aus vier Gründen, von denen jeder einzelne genügt:**
+
+  - **Er würde Nutzerdaten an einen Dritten tragen.** Die App spricht heute mit genau zwei Gegenstellen: dem eigenen Server und `tile.openstreetmap.org`. Das ist als Test festgehalten (10.4, `e2e/datenschutz.spec.ts`), steht in der Datenschutzerklärung und in der Inhaltsrichtlinie (`connect-src 'self'`). Ein Übersetzungsdienst wäre der dritte – und der erste, der Inhalte sieht.
+  - **Er braucht Netz, und die App ist für das Gegenteil gebaut.** Der Service Worker existiert, damit im Parkhaus und im Funkloch nicht eine weiße Seite steht (12.8/12.9). Eine Oberfläche, deren Beschriftungen aus dem Netz kommen, ist dort unbeschriftet.
+  - **Er liefert jedes Mal eine andere Formulierung.** Ein Knopf, der heute „Navigation starten" und morgen „Navigation beginnen" heißt, ist für jemanden, der die App einhändig im Auto bedient, keine Kleinigkeit – und für einen Screenreader-Nutzer, der Beschriftungen auswendig kennt, ein Rückschritt.
+  - **Er kostet je Anfrage.** Bei einem unentgeltlichen Privatprojekt ist das die Art laufende Kosten, die Abschnitt 13 überhaupt erst nötig macht.
+
+  **Gewählt ist deshalb der Weg in der Mitte** – nicht „alles von Hand", nicht „alles automatisch":
+
+  1. **Zuerst die Struktur** (15.2): eine Übersetzungsdatei je Sprache und ein schlanker Zugriff darauf. Ohne sie ist jede Übersetzung eine Suche durch die Komponenten.
+  2. **Dann maschinell vorübersetzen, einmalig und beim Entwickeln** – nicht im Betrieb. Das Ergebnis wird **eingecheckt**, ist damit nachlesbar, im Pull Request prüfbar und ändert sich nicht hinter dem Rücken.
+  3. **Dann prüfen, bevor es ausgeliefert wird.** Eine maschinelle Übersetzung ist ein Vorschlag, keine Fassung.
+
+  **Die Ausnahmeliste – was nie maschinell übersetzt wird:**
+
+  - **Der Haftungshinweis.** Er ist rechtlich bedeutsam und gehört übersetzt, nicht sinngemäß übertragen (so steht es seit dem Anlegen von 15.4 dort). „Vor Ort gilt die Beschilderung" falsch übersetzt ist schlimmer als gar kein Hinweis.
+  - **Impressum und Datenschutzerklärung.** Sie sind nach deutschem Recht geschuldet und beschreiben die Verarbeitung verbindlich; eine schiefe Übersetzung erzeugt Haftung, wo vorher keine war. Empfehlung: deutsche Fassung maßgeblich, Übersetzung nur mit fachlicher Prüfung (10.2b) – und bis dahin ein Hinweis statt einer Behelfsübersetzung.
+  - **Die Daten selbst** (15.4, unverändert): Straßennamen werden nicht übersetzt, und die Zeitangaben sind deutscher Freitext, dessen Deutung sprachgebunden ist. Sie werden **je Sprache ausgegeben**, nicht je Sprache neu geparst – das ist Code (`opening-hours.ts`), keine Übersetzung.
+
+  **Was daran die eigentliche Arbeit ist, und das gehört vorher gesagt:** nicht die Sätze, sondern die Stellen, die nicht nach Text aussehen – `<html lang>` für Silbentrennung und Screenreader-Aussprache, Datums- und Zahlenformate, die Sortierung der Städteliste, „1,5 km" gegen „1.5 km". Das steht als 15.3 und ist der Teil, der beim Übersetzen vergessen wird.
+
+---
+
+## Doppelt belegte Nummern berichtigt (2026-10-20, zweiter Durchgang)
+
+- [x] **Abschnitt 10 trug zwei Nummern doppelt – für verschiedene Sachen.** Gefunden beim Aufräumen, und zwar nicht durch Hinsehen, sondern durch einen Abgleich der beiden Dateien: Welche Nummer steht in `ToDos.md` **und** hier?
+
+  | Nummer   | Bedeutete zuerst                    | Bedeutete zusätzlich                       | Jetzt                                           |
+  | -------- | ----------------------------------- | ------------------------------------------ | ----------------------------------------------- |
+  | **10.3** | Lizenz- und Attributionshinweise    | Sicherheits-Kopfzeilen (gebaut 2026-10-17) | 10.3 bleibt Lizenz, Kopfzeilen → **10.6**       |
+  | **10.5** | Haftungshinweis (gebaut 2026-10-10) | Datenschutz- und Sicherheitsprüfung        | 10.5 bleibt Haftungshinweis, Prüfung → **10.7** |
+
+  **Warum das mehr ist als Ordnungsliebe:** Diese Nummern sind die Verweise, mit denen sich Code, Tests und die beiden Listen aufeinander beziehen – `next.config.ts` sagte „ToDo 10.3", `e2e/sicherheit.spec.ts` ebenfalls, und gemeint war beides Mal etwas anderes als das 10.3 in der offenen Liste. Wer „10.5" nachschlug, fand den Haftungshinweis und hielt die Sicherheitsprüfung für erledigt. **Ein Verweis, der auf zwei Dinge zeigt, ist schlechter als keiner** – aus demselben Grund, aus dem ein doppelter Eintrag schlimmer ist als keiner ([CLAUDE.md](CLAUDE.md)).
+
+  **Die jüngeren Posten haben die neuen Nummern bekommen, nicht die älteren.** Lizenz (10.3) und Haftungshinweis (10.5) stehen in mehr Stellen und stammen aus der ursprünglichen Planung; sie umzubenennen hätte mehr Verweise gebrochen. Geändert sind: `next.config.ts`, `e2e/sicherheit.spec.ts`, die Reihenfolge-Tabelle und der Punkt selbst. **Beide alten Nummern stehen überall als „bis zum 2026-10-20 als 10.x geführt" daneben**, damit eine ältere Notiz oder ein Commit weiterhin auflösbar bleibt.
+
+  **7.7 steht weiterhin zweimal, und das bleibt so** – zwei Durchgänge derselben Arbeit (82 → 93 → 96 %), der zweite nennt den ersten. Das ist die im Kopf dieser Datei genannte Ausnahme und keine Kollision.
+
+- [x] **Eine Entscheidung stand in zwei Kästchen** (2026-10-20, betrifft 2e.5 und D-07). `2e.5` lautete „nächste Größenstufe – hängt an D-07", `D-07` „Importgrenze senken?". Zwei Haken für eine Sache heißt: Beim Erledigen wird einer nachgeführt. Geführt wird es jetzt bei **D-07**, wo die Entscheidungen stehen; die Nummer 2e.5 ist dort in der Überschrift genannt, damit sie nachschlagbar bleibt. Der abgeschlossene Teil – die Stufe „ab 50.000" – steht unverändert als eigener Eintrag weiter oben.
+
+---
+
 ## Rückschnitt der offenen Liste (2026-10-20)
 
 - [x] 10.3 **Lizenz- und Attributionshinweise – hier bleibt nichts offen.** ODbL-Nennung und Quellenangabe je Stadt sind seit dem 2026-10-10 fertig; was fehlte, war die Lizenz der 15 amtlichen Quellen, die keine angeben. **Das ist 2a.5 und wird dort geführt.** Bis zum 2026-10-19 stand es an beiden Stellen als eigenes Kästchen – eine Arbeit, zwei Haken, und beim Erledigen wäre nur einer nachgeführt worden. Seit dem 2026-10-20 steht 10.3 deshalb nicht mehr in der offenen Liste.
@@ -873,7 +920,7 @@ wheelee.de  →  /api/auth/login        404   (Konten)
 ```
 
 Nicht ausgeliefert sind damit: Datenbank, Konten und Rückmeldungen (11.1,
-17.0–17.5), die Zielsuche nach Nähe (6.23), die Sicherheits-Kopfzeilen (10.3),
+17.0–17.5), die Zielsuche nach Nähe (6.23), die Sicherheits-Kopfzeilen (10.6),
 Impressum und Datenschutzerklärung (10.2) und die Bewertungen (8.1–8.7).
 
 **Aufgefallen ist es nicht durch eine Prüfung, sondern weil jemand die Seite
@@ -915,12 +962,19 @@ Imports in [Datenpflege.md](Datenpflege.md).
 
 ---
 
-## Zurückgestellte Vorhaben (13, 15, 16)
+## Erwägungen zu 13, 15 und 16
 
-Diese Abschnitte sind in [ToDos.md](ToDos.md) auf `[-]` gesperrt und werden
-nicht gebaut, bevor Torsten sie Punkt für Punkt freigibt. **Die Erwägungen
-stehen hier und nicht dort**, damit die offene Liste kurz bleibt und sie beim
-Freigeben trotzdem nicht neu zusammengetragen werden müssen.
+> **15 und 16 sind am 2026-10-20 freigegeben** und stehen seitdem als offene
+> Punkte in [ToDos.md](ToDos.md) – mit Platz in der Reihenfolge. **Abschnitt 13
+> (Finanzierung) bleibt gesperrt.** Die Erwägungen unten bleiben stehen: Sie
+> sind jetzt die Grundlage der Umsetzung, nicht mehr die Begründung einer
+> Sperre. Genau dafür standen sie hier – damit beim Freigeben nichts neu
+> zusammengetragen werden muss. Wie übersetzt wird, ist als **D-08** weiter
+> oben entschieden; wie 16 geteilt wurde (Daten jetzt, Kacheln später), steht
+> in `ToDos.md` bei 16.1/16.2.
+
+**Die Erwägungen stehen hier und nicht in der offenen Liste**, damit diese kurz
+bleibt.
 
 ### 13. Finanzierung
 

@@ -1,7 +1,11 @@
 import type { NextConfig } from "next";
 
 /**
- * Sicherheits-Kopfzeilen (ToDo 10.3, ergänzt 2026-10-17).
+ * Sicherheits-Kopfzeilen (ToDo 10.6, ergänzt 2026-10-17).
+ *
+ * **Die Nummer hieß bis zum 2026-10-20 „10.3".** Das war eine Doppelbelegung:
+ * 10.3 ist die Lizenz- und Attributionsfrage. Umbenannt beim Aufräumen der
+ * Aufgabenlisten; siehe den Eintrag dazu in `Erledigt.md`.
  *
  * **Die App lieferte bis hierher keine einzige davon aus.** Für eine Seite,
  * die unter wheelee.de offen im Netz steht, Standortzugriff anfragt und eine

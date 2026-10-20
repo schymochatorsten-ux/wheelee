@@ -101,6 +101,42 @@ Plan, ein überholter Punkt und eine abgeschlossene Messung zu einer noch
 offenen Aufgabe. Sonst nimmt der Nächste die Sache wieder auf, und die
 Streichung sieht aus wie ein Versehen.
 
+### Eine Nummer bedeutet genau eine Sache
+
+**Vorgabe vom 2026-10-20.** Abschnitt 10 trug zwei Nummern doppelt belegt:
+10.3 war die Lizenz- und Attributionsfrage **und** die Sicherheits-Kopfzeilen,
+10.5 der Haftungshinweis **und** die Datenschutz- und Sicherheitsprüfung. Beide
+Male hatte eine spätere Sitzung eine Nummer weiterverwendet, die längst besetzt
+war.
+
+**Das trifft nicht die Ordnung, sondern die Verweise.** Diese Nummern sind das
+einzige Band zwischen Code, Tests und den beiden Listen: `next.config.ts` sagte
+„ToDo 10.3", `e2e/sicherheit.spec.ts` ebenso – und gemeint war beides Mal etwas
+anderes als das 10.3 in der offenen Liste. Wer „10.5" nachschlug, fand den
+Haftungshinweis und hielt die Sicherheitsprüfung für erledigt. **Ein Verweis,
+der auf zwei Dinge zeigt, ist schlechter als keiner** – dieselbe Begründung wie
+beim doppelten Eintrag.
+
+Deshalb:
+
+- **Ein neuer Punkt bekommt die nächste freie Nummer seines Abschnitts** – auch
+  wenn er thematisch zu einem bestehenden passt. Nachsehen, was belegt ist,
+  heißt: in **beiden** Dateien nachsehen, denn Erledigtes behält seine Nummer.
+- **Wer umbenennt, lässt die alte Nummer stehen**, als „bis zum <Datum> als
+  10.x geführt" – in `Erledigt.md` und an jeder Stelle im Code, die darauf
+  verwies. Sonst wird eine ältere Notiz oder ein Commit unauflösbar.
+- **Dieselbe Nummer in beiden Dateien ist nur bei `[~]` richtig:** gebauter
+  Teil hier, offener Rest dort. Zweimal `[x]` zur selben Nummer ist ein Fehler
+  – mit einer Ausnahme, die in `Erledigt.md` benannt ist (7.7, zwei Durchgänge
+  derselben Arbeit).
+
+Die Kollision fand kein Hinsehen, sondern ein Abgleich der beiden Dateien. Er
+kostet eine Sekunde und gehört zum Aufräumen:
+
+```bash
+node -e "const fs=require('fs');const n=z=>{const m=/^- \[[x~ !-]\] \*{0,2}([0-9]+[a-z]?\.[0-9]+[a-z]?|D-[0-9]+)/.exec(z);return m?m[1]:null};const e=fs.readFileSync('Erledigt.md','utf8').split('\n').filter(x=>/^- \[(x|~)\]/.test(x)).map(n).filter(Boolean);const t=fs.readFileSync('ToDos.md','utf8').split('\n').filter(x=>/^- \[(.)\]/.test(x)).map(n).filter(Boolean);console.log('doppelt in Erledigt:',[...new Set(e.filter((x,i)=>e.indexOf(x)!==i))].join(' ')||'keine');console.log('in beiden Dateien:',t.filter(x=>e.includes(x)).join(' ')||'keine');"
+```
+
 ## Eine plausible Ursache ist keine gemessene
 
 **Wenn etwas kaputtgeht, während du etwas geändert hast, ist deine Änderung
@@ -138,8 +174,23 @@ Reihenfolge im Einzelnen steht unter „Hier weitermachen" in
 
 ## Was nicht ohne Freigabe gebaut wird
 
-Abschnitt 13 (Finanzierung), 15 (Mehrsprachigkeit) und 16 (Offline-Download)
-in `ToDos.md`. Auch dann nicht, wenn gerade nichts anderes zu tun ist.
+**Abschnitt 13 (Finanzierung)** in `ToDos.md`. Auch dann nicht, wenn gerade
+nichts anderes zu tun ist.
+
+**15 (Mehrsprachigkeit) und 16 (Vorab-Download) sind am 2026-10-20
+freigegeben** und stehen seitdem in der Reihenfolge. Zwei Vorgaben daraus
+gelten weiter, weil sie keine Sperre sind, sondern eine Festlegung:
+
+- **Englisch und Spanisch zuerst**, danach die häufigsten europäischen
+  Sprachen.
+- **Übersetzt wird nach D-08** (siehe `Erledigt.md`): Dateien je Sprache,
+  maschinell vorübersetzt, von Menschen geprüft – **kein Übersetzer zur
+  Laufzeit**, denn der wäre ein dritter Dienst, der Inhalte sieht, bräuchte
+  Netz und formulierte jedes Mal anders. Haftungshinweis, Impressum,
+  Datenschutzerklärung und die Daten selbst stehen auf der Ausnahmeliste.
+- **Von 16 ist nur 16.1 baubar** (Parkplatzdaten). Das Vorabladen der
+  **Kacheln** (16.2) wartet auf die Lizenzfrage und wird nicht nebenbei
+  angefangen.
 
 ## Dateien nie mit PowerShell umschreiben
 

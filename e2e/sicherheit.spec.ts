@@ -1,7 +1,8 @@
 import { expect, test } from "@playwright/test";
 
 /**
- * Sicherheits-Kopfzeilen (ToDo 10.3).
+ * Sicherheits-Kopfzeilen (ToDo 10.6, bis zum 2026-10-20 als 10.3 geführt –
+ * das war eine Doppelbelegung mit der Lizenz- und Attributionsfrage).
  *
  * **Warum als Test und nicht nur als Konfiguration:** Eine Kopfzeile, die
  * niemand prüft, ist beim nächsten Umbau still verschwunden – genau wie die
