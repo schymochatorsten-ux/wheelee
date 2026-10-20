@@ -18,7 +18,8 @@ ExecStart=/usr/bin/webhook \
 # Der Dienst läuft als der Benutzer, dem /opt/wheelee gehört, und braucht
 # Docker-Rechte für `docker compose`. Beim Einrichten anpassen.
 User=niklas
-Group=docker
+Group=niklas
+SupplementaryGroups=docker
 
 Restart=on-failure
 RestartSec=5
