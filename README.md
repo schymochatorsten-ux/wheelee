@@ -40,8 +40,10 @@ nicht einfach weiterraten.
 | Framework   | Next.js 15 (App Router), React 19, TypeScript |
 | Styling     | Tailwind CSS 4                                |
 | Karte       | Leaflet + react-leaflet, OpenStreetMap-Tiles  |
+| Datenbank   | SQLite über `node:sqlite` (D-02)              |
 | Tests       | Vitest, Playwright (E2E)                      |
 | Datenimport | tsx-Skripte, `pdf-parse`, Nominatim-Geocoding |
+| Hosting     | Docker auf dem eigenen NAS, hinter Tailscale  |
 
 ## Entwicklung
 

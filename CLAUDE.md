@@ -47,8 +47,59 @@ Begründungssammlung. Mehrere Einträge beschreiben Fehler, die wirklich
 passiert sind; sie stehen dort, damit niemand dieselbe Entscheidung noch
 einmal anders trifft.
 
-Nach jeder abgeschlossenen Aufgabe außerdem den **Arbeitsstand** oben in
-`ToDos.md` nachführen – er ist der Einstieg nach einer Unterbrechung.
+### In `ToDos.md` steht nur, was zu tun ist – sonst nichts
+
+**Vorgabe vom 2026-10-20.** Die Datei war auf 845 Zeilen gewachsen, von denen
+nur etwa ein Viertel offene Aufgaben waren. Der Rest war Tagebuch, Rückblick
+auf behobene Zählfehler, leere Abschnittsüberschriften („Nichts offen") und
+Begründungen, die anderswo schon vollständig standen. **Eine Liste, in der man
+den offenen Punkt zwischen Rückblicken suchen muss, beantwortet ihre einzige
+Frage nicht mehr.** Deshalb gilt dauerhaft:
+
+**Was in `ToDos.md` gehört** – und zwar in möglichst wenigen Zeilen je Punkt:
+
+- der offene Punkt selbst: was zu tun ist, der **eine** Satz, warum es wichtig
+  ist, und wo im Code es ansetzt;
+- die Reihenfolge der Abarbeitung;
+- was eine Entscheidung oder eine Angabe von Torsten braucht;
+- die Befehle, mit denen vor dem Anfangen die Ausgangslage geprüft wird.
+
+**Was dort nicht hingehört** (und beim Antreffen sofort verschoben oder
+gestrichen wird):
+
+- **Rückblicke jeder Art** – „Arbeitsstand", „zuletzt geschah", „davor am …".
+  Was fertig ist, steht in `Erledigt.md`; ein zweiter, kürzerer Abriss
+  derselben Sache wird beim nächsten Mal nicht nachgeführt.
+- **Erledigte Teile eines offenen Punktes.** Beim `[~]`-Punkt bleibt nur der
+  offene Rest stehen, mit einem Verweis – kein „Fertig: …".
+- **Abschnitte ohne offenen Punkt.** Eine Überschrift mit „Nichts offen"
+  darunter wird gelöscht; die Nummerierung ist kein Grund, sie zu behalten,
+  denn nachgeschlagen wird in `Erledigt.md`.
+- **Ausgearbeitete Begründungen und Erwägungen**, auch zu noch offener Arbeit.
+  Sie gehören nach `Erledigt.md` (für Befunde und abgeschlossene Überlegungen)
+  oder nach `Datenpflege.md` (für den Weg der Daten). In `ToDos.md` bleibt der
+  Verweis.
+- **Gesperrte Vorhaben in ganzer Länge.** Eine Zeile je Punkt genügt; die
+  Erwägungen stehen unter „Zurückgestellte Vorhaben" in `Erledigt.md`.
+- **Dieselbe Arbeit in zwei Kästchen.** Eine Aufgabe, zwei Haken heißt: beim
+  Erledigen wird nur einer nachgeführt. Ein Punkt wird an **einer** Stelle
+  geführt, die andere verweist (so aufgelöst: 10.3 → 2a.5, 2e.7a → 2e.11).
+- **Zahlen über den Bestand.** Sie veralten still und werden trotzdem
+  geglaubt. Stattdessen auf `data/_abdeckung.md`, `data/_import-status.md` oder
+  `data/_validierung.md` verweisen – oder den Einzeiler nennen, der sie zählt.
+
+**Das geschieht laufend, nicht als Aufräumaktion.** Wer einen Punkt anfasst,
+kürzt ihn dabei auf das, was offen ist. Der Rückschnitt am 2026-10-20 war der
+zweite innerhalb von zwei Tagen – am 2026-10-19 fielen sieben Posten weg, die
+keine offenen Aufgaben waren. **Eine Liste, die zweimal in zwei Tagen
+aufgeräumt werden muss, hat kein Zählproblem, sondern ein Regelproblem;**
+diese Regel ist die Antwort darauf.
+
+**Umgekehrt gilt genauso: `Erledigt.md` darf nichts verlieren.** Was aus
+`ToDos.md` verschwindet, verschwindet nur mit Begründung – auch ein verworfener
+Plan, ein überholter Punkt und eine abgeschlossene Messung zu einer noch
+offenen Aufgabe. Sonst nimmt der Nächste die Sache wieder auf, und die
+Streichung sieht aus wie ein Versehen.
 
 ## Eine plausible Ursache ist keine gemessene
 

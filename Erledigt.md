@@ -10,17 +10,23 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (2026-10-19):** **121 Einträge** auf oberster Ebene – davon 115 mit
-einer ToDo-Nummer und 6 ohne (die Entscheidungen D-01, D-02, D-04, D-06 sowie
-zwei Einträge, die zu keinem nummerierten Punkt gehören). Einer davon ist
-2e.10 als `[~]`: Sein gebauter Teil steht hier, sein offener Rest in
+**Stand (nachgezählt 2026-10-20):** **125 Einträge** auf oberster Ebene –
+davon 118 mit einer ToDo-Nummer und 7 ohne (die Entscheidungen D-01, D-02,
+D-04, D-06 sowie drei Einträge, die zu keinem nummerierten Punkt gehören).
+Einige stehen als `[~]`: Ihr gebauter Teil steht hier, ihr offener Rest in
 `ToDos.md`.
 
-> **Die drei neuen Einträge vom 2026-10-19 sind kein gebauter Code**, sondern
-> der Rückschnitt der offenen Liste: zwei verworfene Pläne (Abschnitt 5) und
-> ein Punkt, den die Wirklichkeit beantwortet hat (8.10). Sie stehen hier,
-> weil sonst niemand erführe, **warum** sie aus `ToDos.md` verschwunden sind –
-> und der Nächste sie wieder aufnähme.
+> **Mehrere Einträge sind kein gebauter Code**, sondern der Rückschnitt der
+> offenen Liste: verworfene Pläne (Abschnitt 5), ein Punkt, den die
+> Wirklichkeit beantwortet hat (8.10), eine Doppelung (10.3) und am 2026-10-20
+> die große Kürzung von `ToDos.md`. Sie stehen hier, weil sonst niemand
+> erführe, **warum** sie dort verschwunden sind – und der Nächste sie wieder
+> aufnähme.
+>
+> **Dazu drei Abschnitte ohne Kästchen**, weil sie Begründung ohne eigene
+> Aufgabe sind: „Fallstricke beim Arbeiten am Datenbestand", „Zurückgestellte
+> Vorhaben (13, 15, 16)" und der Befund zu 12.5a, dessen Messung abgeschlossen
+> ist, während der Punkt selbst offen bleibt.
 
 Unterpunkte werden **nicht** mitgezählt – sie sind Begründung, keine eigenen
 Aufgaben.
@@ -697,3 +703,139 @@ Was dabei auffiel und behoben wurde:
 - [x] 14.10 Dark-Mode-Umschalter ergänzt (siehe 9.1)
 - [x] 14.11 „Stadtteil: Hamburg" behoben – das Feld heißt jetzt „Stadt", wenn die Quelle keinen Stadtteil nennt. Weglassen wäre falsch gewesen: Bei vielen Städten ist die Stadt eine nützliche Angabe, nur die Beschriftung war es nicht.
 - [x] 14.12 „(nicht angegeben)" wird in der Oberfläche nicht mehr angezeigt. Die fehlende Lizenz bleibt ein Problem der Daten (2a.5), ist aber eine Verwaltungsnotiz und gehört in den Importbericht, nicht vor die Nutzer:innen.
+
+---
+
+## Rückschnitt der offenen Liste (2026-10-20)
+
+- [x] 10.3 **Lizenz- und Attributionshinweise – hier bleibt nichts offen.** ODbL-Nennung und Quellenangabe je Stadt sind seit dem 2026-10-10 fertig; was fehlte, war die Lizenz der 15 amtlichen Quellen, die keine angeben. **Das ist 2a.5 und wird dort geführt.** Bis zum 2026-10-19 stand es an beiden Stellen als eigenes Kästchen – eine Arbeit, zwei Haken, und beim Erledigen wäre nur einer nachgeführt worden. Seit dem 2026-10-20 steht 10.3 deshalb nicht mehr in der offenen Liste.
+
+- [x] **Die offene Liste ist auf offene Punkte zurückgeschnitten** (2026-10-20, auf Zuruf: `ToDos.md` soll so kurz und knapp wie möglich sein). Kein gebauter Code, sondern eine Aufräumarbeit an den beiden Dateien – und sie steht hier, weil sonst niemand erführe, **warum** rund drei Viertel des Textes aus `ToDos.md` verschwunden sind, und der Nächste sie wieder aufnähme.
+
+  **Der Befund:** Die Datei hatte 845 Zeilen, von denen nur etwa ein Viertel offene Aufgaben waren. Der Rest war Tagebuch („Arbeitsstand", „Was zuletzt geschah", vier Absätze „Davor am …"), waren Zählstandsnotizen über frühere Zählfehler, Abschnittsüberschriften mit dem Inhalt „Nichts offen" (5, 6, 7), und ausgelagerte Begründungen, die in `Erledigt.md`, `Datenpflege.md` oder `CLAUDE.md` schon vollständig standen. **Eine Liste, in der man den offenen Punkt zwischen Rückblicken suchen muss, beantwortet ihre einzige Frage nicht mehr:** Was ist noch zu tun?
+
+  Was wohin gegangen ist, damit nichts verloren ist:
+
+  - **Das Tagebuch ist weg, nicht umgezogen.** Jeder darin beschriebene Vorgang hat hier einen eigenen Eintrag mit Begründung – das Tagebuch war eine zweite, kürzere Fassung davon. Zwei Fassungen derselben Sache sind genau der Fall, bei dem später nur eine nachgeführt wird. Was von ihm gebraucht wird, ist der Einstieg nach einer Unterbrechung, und den leistet die Reihenfolge-Tabelle besser: Sie sagt, was als Nächstes dran ist, statt was zuletzt war.
+  - **Die Abschnitte 5, 6 und 7 standen als leere Überschriften da**, mit der Begründung, die Nummerierung beider Dateien müsse dieselbe sein. Das trägt nicht: Wer „6.17" nachschlägt, sucht in `Erledigt.md`, und dort stehen die Abschnitte vollständig. Eine Überschrift, unter der „Nichts offen" steht, kostet beim Durchsehen Aufmerksamkeit und gibt nichts zurück.
+  - **Die Fallstricke am Datenbestand** stehen jetzt unten in dieser Datei als eigener Abschnitt – sie sind Erfahrung und Begründung, also genau das, was diese Datei sammelt, und keine Aufgabe.
+  - **Die „drei Befunde, die den Stand erklären"** (verworfener landesweiter Import, Arbeitsliste mit 204 statt 10.754 Gemeinden, Chemnitz mit Wohnmobilstellplätzen) sind hier bei 2e.7, 2e.10 und 2d.10 ausführlicher beschrieben als dort. Ersatzlos gestrichen.
+  - **Die „Notizen zur Datenlage"** – die vier Fehlerklassen beim Import – stehen in [Datenpflege.md](Datenpflege.md) unter „Erfahrungen" und in der [README](README.md). Der Satz, der dort allein stand, ist unten im Fallstrick-Abschnitt erhalten.
+  - **Die Stack-Tabelle (D-01)** stand in `ToDos.md` und in der README, in zwei verschiedenen Fassungen – die eine kannte Datenbank und Hosting, die andere nicht. Die README ist die richtige Stelle (dort sucht man einen Stack) und hat die beiden fehlenden Zeilen bekommen.
+  - **Die Vollständigkeitsprüfung** („jeder offene Posten steht in der Tabelle") ist entfallen. Sie war ein Node-Einzeiler gegen eine Liste von über 800 Zeilen; bei der jetzigen Länge beantwortet das Hinsehen die Frage. Dass Reihenfolge-Tabelle und Abschnitt „Entscheidungen" zusammen alle Posten nennen, ist beim Kürzen Punkt für Punkt geprüft worden.
+  - **2e.7a ist in 2e.11 eingeschmolzen.** Beide sagten dasselbe: Eine Overpass-Abfrage je Gemeinde ist bei 10.754 Gemeinden Missbrauch eines Gemeinschaftsdienstes, und der landesweite Lauf ist unter Last unzuverlässig. 2e.7a war die ältere, 2e.11 die ausgearbeitete Fassung mit dem Lösungsweg.
+  - **Die Attributionsfrage aus 2e.11 ist keine offene Aufgabe und steht nicht mehr dort:** Die Geofabrik-Auszüge stehen unter ODbL, also unverändert gegenüber dem heutigen OSM-Bezug. Sie enthalten keine Benutzernamen und Changeset-IDs – für dieses Projekt kein Verlust, sondern eine Frage nach personenbezogenen Daten weniger.
+  - **Die Zählstandsnotizen** („von 51 auf 44 durch Aufräumen", „nachgezählt, nicht fortgeschrieben") beschrieben zwei frühere Zählfehler. Die Lehre daraus steht als Regel in [CLAUDE.md](CLAUDE.md); der Einzeiler, der die Zahl liefert, steht weiter oben in beiden Dateien. Der Rückblick auf die falschen Zahlen selbst gehört nicht in eine Aufgabenliste.
+
+  **Drei Zahlen wurden beim Kürzen nachgezählt statt übernommen**, und zwei davon waren erklärungsbedürftig:
+
+  - **174 Standorte ohne Straßennamen** (3.0i), 33 Städte, Dormagen 82 von 82 – unverändert gegenüber dem 2026-10-19, jetzt mit den nächstgrößten Fällen daneben (Neumünster 14/97, Euskirchen 13/258, Eschweiler 7/55).
+  - **Die Größenstufen widersprachen sich scheinbar:** An einer Stelle stand „ab 40.000 wären es 90 Gemeinden, ab 20.000 bereits 511", an einer anderen „ab 20.000 = 706". Beides ist richtig – die erste Reihe zählt die **zusätzlichen** Gemeinden, die zweite **alle**. Nachgezählt gegen `data/_gemeinden.json`: ab 50.000 sind es 195, ab 40.000 285, ab 20.000 706, ab 10.000 1.598, ab 5.000 2.943. In der Liste steht jetzt nur noch die eine, unmissverständliche Reihe. **Zwei Zahlenreihen, die dasselbe zu messen scheinen, sind schlimmer als eine ungenaue** – man glaubt dann keiner mehr.
+  - **Die größte offene Gemeinde ist Cuxhaven mit 49.697 Einwohnern**, danach Speyer (49.564) und Leonberg (49.480).
+
+  **Die Vorgehensweise selbst steht jetzt als Regel in [CLAUDE.md](CLAUDE.md)** – mit der Begründung, dass dieser Rückschnitt der zweite innerhalb von zwei Tagen war: Am 2026-10-19 fielen sieben Posten weg, die keine offenen Aufgaben waren. **Eine Liste, die zweimal in zwei Tagen aufgeräumt werden muss, hat kein Zählproblem, sondern ein Regelproblem.**
+
+### Befund zu 12.5a: der ausgelieferte Stand ist älter als der 2026-10-11
+
+Gemessen am 2026-10-19 gegen die laufende Seite. Der Punkt selbst bleibt offen
+und steht in [ToDos.md](ToDos.md); die **Messung** ist abgeschlossen und steht
+deshalb hier.
+
+```
+wheelee.de  →  /api/auth/login        404   (Konten)
+               /api/feedback          404   (Rückmeldungen)
+               /api/spots/x/ratings   404   (Bewertungen)
+               /impressum             404
+               /datenschutz           404
+               keine Sicherheits-Kopfzeilen der App
+```
+
+Nicht ausgeliefert sind damit: Datenbank, Konten und Rückmeldungen (11.1,
+17.0–17.5), die Zielsuche nach Nähe (6.23), die Sicherheits-Kopfzeilen (10.3),
+Impressum und Datenschutzerklärung (10.2) und die Bewertungen (8.1–8.7).
+
+**Aufgefallen ist es nicht durch eine Prüfung, sondern weil jemand die Seite
+benutzen wollte.** In den Einstellungen der laufenden Seite stand noch „Fehler
+melden ist noch nicht eingerichtet … `FEEDBACK_EMAIL`" – ein Text, den der
+Quelltext seit dem 2026-10-11 nicht mehr kennt (17.3). Das ist der eigentliche
+Befund: Acht Tage lang hat niemand gemerkt, dass nichts davon im Netz ist,
+weil es keinen automatischen Weg dorthin gibt (12.5).
+
+### Zählbefehl zu 3.0i
+
+Die Zahl gehört nicht hingeschrieben, sondern ermittelt:
+
+```bash
+node -e "const fs=require('fs');let t=0,n=0;for(const f of fs.readdirSync('data')){if(!f.endsWith('.json')||/^_|\.(overrides|parsed|report|line-fixups)\.|^geocode-cache|^osm-address|^frankfurt-pdf-liste/.test(f))continue;const d=JSON.parse(fs.readFileSync('data/'+f,'utf8'));if(!d.spots)continue;t+=d.spots.length;n+=d.spots.filter(s=>!s.street).length;}console.log(n,'von',t);"
+```
+
+**Warum gezählt und nicht erinnert:** Die 3.0-Kette war zweimal abgeschlossen
+und ist zweimal wieder aufgerissen – beim Import der Städte ab 50.000
+Einwohnern und danach erneut. In der offenen Liste stand bis zum 2026-10-19
+„66 von 17.206", ein richtiger Satz aus der Zeit mit 17.206 Standorten.
+
+---
+
+## Fallstricke beim Arbeiten am Datenbestand
+
+Verschoben aus `ToDos.md` (2026-10-20): Das ist Erfahrung, keine Aufgabe. Die
+laufenden Arbeitsregeln stehen in [CLAUDE.md](CLAUDE.md), der Weg eines
+Imports in [Datenpflege.md](Datenpflege.md).
+
+- **Der Import schleppt behobene Mängel wieder ein.** Nach dem Import der Städte ab 50.000 Einwohnern standen 21 % aller Standorte ohne Straßennamen da, weil `import:streets` nicht Teil der Importanleitung war. Jetzt als Schritt 5 in [Datenpflege.md](Datenpflege.md) festgeschrieben – **und nach jedem Import wirklich auszuführen**, auch nach einem einzelnen.
+- **Einzelne Städte dauern sehr lange, ohne hängen zu sein.** Konstanz lief über 40 Minuten. Grund ist die Bauart: Jede Overpass-Abfrage trägt `[out:json][timeout:300]`; scheitert sie, wird sie zerlegt und über mehrere Spiegel mit Pausen wiederholt. Unter Last summiert sich das. Einen clientseitigen Abbruch (`AbortSignal.timeout`) gibt es nicht – wäre eine sinnvolle Ergänzung, damit ein Lauf kalkulierbar bleibt.
+- **Overpass verträgt kein hohes Tempo.** Bei rund 100 Städten am Stück häufen sich HTTP 500/504. Zwischen den Schüben ein paar Minuten Pause.
+- **`import:city -- --rest` greift keine fehlgeschlagenen Städte**, nur „offene". Nachholen geht namentlich: `npm run import:city -- <slug> <slug>`.
+- **`sources:scan` ist billiger als es aussieht.** Es fragt GovData **einmal je Suchbegriff**, nicht je Stadt – ein vollständiger Neulauf kostet rund zehn Abfragen. Ändert sich eine Filterregel, ist der saubere Neulauf der richtige Weg und nicht das Bearbeiten des erzeugten Zwischenstands.
+- **Frankfurt (Oder) bekam den Datensatz von Frankfurt am Main.** Die Zuordnung in `scan-sources.mts` streicht Klammerzusätze, wodurch beide auf „frankfurt" verkürzt wurden. Die Abstandsprüfung hat es gefangen, der Import fiel auf OSM zurück – behoben in 2d.11.
+- **Ein Schwellenwert, der knapp danebenliegt, ist kein Schutz.** `looksTooSmall` verwirft eine amtliche Quelle unter 2,0 Stellplätzen je 10.000 Einwohner. Chemnitz lag bei 2,28 und kam mit Wohnmobilstellplätzen durch (2d.10). Gefangen hat es erst der Vergleich über alle Städte.
+- **Die beiden Quellenarten sind nicht vergleichbar.** Amtliche Listen führen einzelne Stellplätze am Straßenrand, OpenStreetMap überwiegend Parkplätze mit ausgewiesenen Behindertenstellplätzen. Die Oberfläche sagt das, und so muss es bleiben.
+
+---
+
+## Zurückgestellte Vorhaben (13, 15, 16)
+
+Diese Abschnitte sind in [ToDos.md](ToDos.md) auf `[-]` gesperrt und werden
+nicht gebaut, bevor Torsten sie Punkt für Punkt freigibt. **Die Erwägungen
+stehen hier und nicht dort**, damit die offene Liste kurz bleibt und sie beim
+Freigeben trotzdem nicht neu zusammengetragen werden müssen.
+
+### 13. Finanzierung
+
+- **13.1 Spenden-Knopf.** Zu klären: Anbieter (PayPal, Ko-fi, Stripe, Betterplace), Einmal- oder Dauerspende, und ob eine natürliche Person oder ein Verein empfängt – das hat steuerliche Folgen. Zurückhaltend platzieren: Wer auf einen Behindertenparkplatz angewiesen ist, soll nicht das Gefühl bekommen, für eine Selbstverständlichkeit zu zahlen.
+- **13.2 Werbebanner (AdSense oder vergleichbar).** Technisch einfach, aber: AdSense setzt Tracking-Cookies, verlangt damit ein Einwilligungsbanner und widerspricht 10.4 („keine Tracker") sowie dem Sparsamkeitsgrundsatz des Konzepts. Werbung auf einer Karte, die man einhändig im Auto bedient, kostet Fläche und erzeugt Fehlklicks – genau bei der Zielgruppe, der die App helfen soll. Und bei einer Nischen-App ohne Reichweite steht der Erlös kaum im Verhältnis zum Vertrauensverlust. Weniger teure Alternativen: Spenden allein, Förderung durch Kommunen oder Sozialverbände, oder eine Anzeigenform ohne Tracking (etwa EthicalAds).
+- **13.3** Falls Werbung kommt: Einwilligungsbanner, Impressum und Datenschutzerklärung müssen vorher stehen – ohne sie wäre es rechtswidrig.
+
+### 15. Mehrsprachigkeit
+
+Wer einen Behindertenparkausweis hat, hat ihn EU-weit – der blaue Parkausweis
+gilt in allen Mitgliedstaaten. Jemand, der aus Frankreich oder Spanien
+anreist, steht vor derselben Frage wie alle anderen, nur ohne Deutsch.
+**Zurückgestellt auf Torstens Wunsch, bis die deutsche Fassung steht.**
+
+- **15.1** Englisch, Spanisch, Französisch. Englisch zuerst: Es hilft am breitesten und deckt Sprachen mit ab, für die es keine eigene Fassung gibt.
+- **15.2** Texte aus dem Quelltext lösen. Alle Beschriftungen stehen direkt in den Komponenten – für eine Sprache übersichtlich, für vier unhaltbar. Nötig wäre eine Übersetzungsdatei je Sprache und ein schlanker Zugriff; die App ist klein genug, dass es dafür keine große Bibliothek braucht.
+- **15.3 Was dabei leicht übersehen wird**, weil es nicht nach Text aussieht: `<html lang="de">` steuert Silbentrennung (`hyphens-auto`) und die Aussprache im Screenreader – falsch gesetzt klingt die App für Blinde wie Kauderwelsch. Datums- und Zahlenformate sind an `de-DE` festgenagelt (`toLocaleDateString`, `toLocaleString`), ebenso die Sortierung der Städteliste (`localeCompare`). Die Entfernung schreibt „1,5 km" mit Komma – im Englischen ein Punkt. Das Rückmeldeformular ist Oberfläche wie jede andere; die **gespeicherten** Meldungen bleiben in ihrer Sprache, und die Übersicht für Administratoren braucht keine Übersetzung.
+- **15.4 Die Daten bleiben deutsch, und das ist richtig so.** Straßennamen werden nicht übersetzt – wer „Bahnhofstraße" sucht, muss „Bahnhofstraße" lesen. Zeitangaben stehen teils als deutscher Freitext in den Quellen; deren Deutung ist sprachgebunden und müsste je Sprache **ausgegeben**, nicht neu geparst werden. Der Haftungshinweis ist rechtlich bedeutsam und gehört übersetzt, nicht sinngemäß übertragen.
+- **15.5 Spracherkennung mit Umschalter**, nicht ohne. Die Browsersprache ist ein guter erster Vorschlag, aber wer ein englisches Betriebssystem auf einem deutschen Telefon hat, will die Wahl behalten – in die Einstellungen, neben Darstellung und Karten-App.
+
+### 16. Städte zum Mitnehmen herunterladen
+
+Die Grundlage ist seit 12.8/12.9 da: Ein Service Worker hält Seite, zuletzt
+geladene Parkplätze und Kartenkacheln vor. Das reicht aber nur für das, was
+man vorher ohnehin angesehen hat. **16.1 geht weiter: eine Stadt bewusst
+vorab laden**, damit sie unterwegs vollständig verfügbar ist. Der Anlass ist
+derselbe wie bei der ganzen App – wer auf einen Behindertenparkplatz
+angewiesen ist, braucht ihn am ehesten dort, wo das Netz am schlechtesten ist:
+in der Tiefgarage, im Parkhaus, im Funkloch kurz vor dem Ziel.
+
+Vor dem Bauen zu klären:
+
+- **Was genau wird geladen?** Die Parkplatzdaten einer Stadt sind klein (Köln rund 200 KB). Die Kacheln sind es nicht: ein Stadtgebiet in brauchbarer Zoomstufe geht in die Dutzende Megabyte. Ohne Kacheln gibt es eine Liste ohne Karte – weniger, aber vielleicht genug.
+- **Wie viel Platz darf die App belegen?** Das muss sichtbar sein und sich löschen lassen. Eine App, die unbemerkt 200 MB belegt, fliegt vom Telefon.
+- **Kachel-Vorabladen ist gegenüber OpenStreetMap heikel.** Die Nutzungsbedingungen untersagen massenhaftes Herunterladen. Für einen Stadtausschnitt je Nutzer:in bräuchte es eine ausdrückliche Erlaubnis, einen bezahlten Anbieter oder Vektorkacheln aus eigener Quelle. **Das ist die eigentliche Hürde, nicht die Technik.**
+- **Wie alt dürfen mitgenommene Daten sein?** Ein vor drei Monaten geladener Stand, der sich als aktuell ausgibt, wäre schlimmer als gar keiner. Es bräuchte ein sichtbares Datum und einen Hinweis, wenn es alt wird.
+
+Vorschlag für den Fall einer Freigabe: **in zwei Schritten.** Zuerst nur die
+Parkplatzdaten je Stadt – klein, rechtlich unbedenklich, sofort nützlich. Die
+Kacheln erst danach und erst, wenn die Lizenzfrage geklärt ist.
