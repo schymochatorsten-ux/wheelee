@@ -22,6 +22,7 @@ import { operator } from "@/lib/legal/operator";
  * | Löschfristen                | `lib/db/cleanup.ts`                        |
  * | IP nur für die Drosselung   | `lib/rate-limit.ts`                        |
  * | Kartenkacheln von OSM       | `components/map/ParkingMap.tsx`            |
+ * | was im Protokoll steht      | `lib/log.ts`, `lib/log.test.ts`            |
  *
  * **Was diese Seite nicht ist: eine Rechtsberatung.** Sie beschreibt die
  * Verarbeitung wahrheitsgemäß und vollständig, soweit sie aus dem Code
@@ -42,7 +43,7 @@ export default function Datenschutz() {
   const betreiber = operator();
 
   return (
-    <LegalPage title="Datenschutzerklärung" updated="2026-10-19">
+    <LegalPage title="Datenschutzerklärung" updated="2026-10-21">
       <section>
         <p className="rounded-xl border border-neutral-200 bg-neutral-50 p-3 dark:border-neutral-800 dark:bg-neutral-900">
           <strong>Das Wichtigste zuerst:</strong> Dein Standort verlässt dein Gerät nicht. Er wird
@@ -224,13 +225,22 @@ export default function Datenschutz() {
       </section>
 
       <section>
-        <h2>9. IP-Adresse</h2>
+        <h2>9. IP-Adresse und Serverprotokoll</h2>
         <p>
           Beim Anmelden, Registrieren und Abschicken einer Rückmeldung wird deine IP-Adresse
           gelesen, um zu verhindern, dass jemand Passwörter durchprobiert oder die Datenbank mit
           Meldungen flutet. Sie wird dafür nur im Arbeitsspeicher gezählt und{" "}
           <strong>in keine Tabelle und in kein Protokoll geschrieben.</strong> Nach wenigen Minuten
           ist der Zähler verfallen.
+        </p>
+        <p className="mt-2">
+          Der Server schreibt ein knappes Betriebsprotokoll, damit Störungen überhaupt auffallen.
+          Darin stehen Zeitpunkt, Art der Anfrage, der aufgerufene Pfad, die Antwortnummer, die
+          Dauer und bei einem Absturz dessen Art und Stelle im Programm.{" "}
+          <strong>Nicht darin:</strong> deine IP-Adresse, dein Standort, die Werte deiner Anfrage –
+          also auch nicht der Kartenausschnitt, den du ansiehst –, deine E-Mail-Adresse und der Text
+          deiner Meldungen. Das Protokoll bleibt auf dem Server, geht an keinen anderen Dienst und
+          wird fortlaufend überschrieben (höchstens 30 MB, danach fällt das Älteste weg).
         </p>
       </section>
 

@@ -455,3 +455,23 @@ Seite schreibt. **Sie ist damit kein Schutz vor eingeschleustem Code in der
 eigenen Seite** – dafür bräuchte es eine Nonce je Anfrage und eine Middleware.
 Was sie leistet, ist das Blockieren fremder Skriptquellen; was sie nicht
 leistet, steht hier, damit niemand sich auf mehr verlässt.
+
+## Was im Betrieb protokolliert wird
+
+Eine Zeile je Vorfall, als JSON nach stdout – also in `docker logs wheelee`,
+rotiert bei 10 MB über drei Dateien. Vermerkt wird der Start des Containers
+(die Frage „läuft hier der neue Stand?" hat dieses Projekt acht Tage gekostet),
+jede Antwort ab Status 400, alles über einer Sekunde und jede schreibende
+Anfrage. Die gewöhnliche Kartenabfrage steht **nicht** darin, sonst begräbt sie
+das Übrige.
+
+**Nicht in einer Zeile: IP-Adresse, Standort, Parameterwerte, E-Mail-Adressen,
+Meldungstexte.** Aus `?bbox=6.9,50.9,7.0,51.0` wird `?bbox` – der Name bleibt,
+weil er den Fehler einordnet, der Wert ginge als Ortsangabe durch. Das ist
+keine Gewohnheit, sondern die Zusage der Datenschutzerklärung; gehalten wird
+sie von [src/lib/log.ts](src/lib/log.ts) und den Tests daneben. Ein
+Fehler-Monitoring bei einem fremden Dienst gibt es aus demselben Grund nicht.
+
+```bash
+docker logs wheelee | findstr '"level":"error"'
+```

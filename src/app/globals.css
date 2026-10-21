@@ -88,19 +88,32 @@ body {
  *
  * Jetzt dasselbe Blau wie die Marker, deckend, mit weißer Schrift: 6,3 : 1.
  * Die Größe wächst mit der Anzahl, das bleibt.
+ *
+ * **Seit dem 2026-10-21 eigene Bündel statt der mitgelieferten (ToDo 9.17).**
+ * Die Größe kommt aus `components/map/cluster.ts` und steht als `iconSize` am
+ * Element; hier steht nur, wie es aussieht. Der helle Ring ist kein Schmuck:
+ * Er trennt zwei dicht beieinander liegende Bündel voneinander – genau das,
+ * was die Prüfung bemängelt hatte.
  */
-.leaflet-container .marker-cluster {
-  background: rgba(29, 78, 216, 0.3);
-}
-
-.leaflet-container .marker-cluster div {
+.leaflet-container .wheelee-cluster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
   background: #1d4ed8;
+  box-shadow: 0 0 0 4px rgba(29, 78, 216, 0.3);
   color: #fff;
   font-weight: 600;
+  font-size: 14px;
 }
 
-.leaflet-container .marker-cluster span {
-  line-height: 30px;
+.leaflet-container .wheelee-cluster span {
+  /* Der Treffbereich ist der ganze Kreis, nicht nur die Ziffern. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 /* Die Attribution muss lesbar bleiben (ODbL). */

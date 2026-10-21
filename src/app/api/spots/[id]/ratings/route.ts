@@ -4,6 +4,7 @@ import { spotById } from "@/lib/parking/spots";
 import { userFromRequest } from "@/lib/auth/session";
 import { allow, clientKey, LIMITS } from "@/lib/rate-limit";
 import type { RatingVote } from "@/lib/types";
+import { withLogging } from "@/lib/log";
 
 /**
  * Bewertungen zu einem Parkplatz (ToDos 8.2–8.5).
@@ -35,7 +36,7 @@ function state(spotId: string, accountId: string | null) {
   };
 }
 
-export async function GET(request: Request, context: { params: Promise<{ id: string }> }) {
+async function getHandler(request: Request, context: { params: Promise<{ id: string }> }) {
   const { id } = await context.params;
   if (!spotById(id)) {
     return NextResponse.json({ error: "Unbekannte Parkplatz-ID." }, { status: 404 });
@@ -50,7 +51,7 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
   });
 }
 
-export async function POST(request: Request, context: { params: Promise<{ id: string }> }) {
+async function postHandler(request: Request, context: { params: Promise<{ id: string }> }) {
   const { id } = await context.params;
 
   const user = userFromRequest(request);
@@ -100,3 +101,10 @@ export async function POST(request: Request, context: { params: Promise<{ id: st
     { headers: { "Cache-Control": "no-store" } },
   );
 }
+
+/*
+ * Jede Antwort läuft durch das Protokoll (ToDo 12.6): Status, Dauer und der
+ * Pfad **ohne Parameterwerte**. Siehe `lib/log.ts`.
+ */
+export const GET = withLogging(getHandler);
+export const POST = withLogging(postHandler);

@@ -7,6 +7,7 @@ import "leaflet.markercluster";
 import type { ParkingSpot } from "@/lib/types";
 import { hasCoordinates } from "@/lib/geo";
 import { iconFor } from "./icons";
+import { clusterLabel, clusterSize } from "./cluster";
 
 /**
  * Alle Parkplätze als Cluster-Layer.
@@ -40,6 +41,26 @@ export function SpotMarkers({ spots, nearestId, highlightIds = null, onSelect }:
       // Der hervorgehobene Parkplatz darf nicht in einem Cluster verschwinden.
       disableClusteringAtZoom: 17,
       chunkedLoading: true,
+
+      /*
+       * Eigene Bündel statt der mitgelieferten (ToDo 9.17). Deren 40 px waren
+       * der einzige Mangel, den die Barrierefreiheitsprüfung am 2026-10-21
+       * fand; die Begründung für 48 px und für die Beschriftung steht in
+       * `cluster.ts`.
+       */
+      iconCreateFunction: (cluster) => {
+        const count = cluster.getChildCount();
+        const size = clusterSize(count);
+
+        return L.divIcon({
+          className: "wheelee-cluster",
+          // `aria-label` am Element selbst, nicht an einem Kind: Leaflet macht
+          // aus diesem Html den Inhalt des Markers, und der Screenreader liest
+          // sonst nur die nackte Zahl.
+          html: `<span role="button" aria-label="${clusterLabel(count)}">${count}</span>`,
+          iconSize: L.point(size, size),
+        });
+      },
     });
 
     for (const spot of spots) {

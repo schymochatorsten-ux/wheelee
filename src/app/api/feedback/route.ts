@@ -3,6 +3,7 @@ import { saveFeedback } from "@/lib/db/feedback";
 import { validateFeedback } from "@/lib/feedback";
 import { userFromRequest } from "@/lib/auth/session";
 import { allow, clientKey, LIMITS } from "@/lib/rate-limit";
+import { withLogging } from "@/lib/log";
 
 /**
  * Eine Rückmeldung entgegennehmen (ToDo 17.2).
@@ -16,7 +17,7 @@ import { allow, clientKey, LIMITS } from "@/lib/rate-limit";
  * jemand angemeldet, wird das Konto vermerkt – dann ist die Meldung
  * zurechenbar, ohne dass es jemand sein muss.
  */
-export async function POST(request: Request) {
+async function postHandler(request: Request) {
   let body: Record<string, unknown>;
   try {
     body = (await request.json()) as Record<string, unknown>;
@@ -61,3 +62,9 @@ export async function POST(request: Request) {
 
   return NextResponse.json({ ok: true, willReply: check.value.contactEmail !== null });
 }
+
+/*
+ * Jede Antwort läuft durch das Protokoll (ToDo 12.6): Status, Dauer und der
+ * Pfad **ohne Parameterwerte**. Siehe `lib/log.ts`.
+ */
+export const POST = withLogging(postHandler);

@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { nearestSpots, spotById, spotsInBounds } from "@/lib/parking/spots";
+import { withLogging } from "@/lib/log";
 
 /**
  * Parkplätze nach Kartenausschnitt, Nähe oder ID (ToDo 5.4).
@@ -23,7 +24,7 @@ function bad(message: string) {
   return NextResponse.json({ error: message }, { status: 400 });
 }
 
-export function GET(request: Request) {
+function getHandler(request: Request) {
   const params = new URL(request.url).searchParams;
 
   const limitRaw = params.get("limit");
@@ -77,3 +78,9 @@ export function GET(request: Request) {
     { headers: { "Cache-Control": CACHE_CONTROL } },
   );
 }
+
+/*
+ * Jede Antwort läuft durch das Protokoll (ToDo 12.6): Status, Dauer und der
+ * Pfad **ohne Parameterwerte**. Siehe `lib/log.ts`.
+ */
+export const GET = withLogging(getHandler);

@@ -624,13 +624,20 @@ export function MapSection({
               muss das dastehen. Eine Karte, die stillschweigend die Hälfte
               verschweigt, ist schlimmer als eine, die zum Hineinzoomen
               auffordert – man verlässt sich sonst darauf, dass hier keiner ist.
+
+              **Breite begrenzt und Satz gekürzt (ToDo 9.16, 2026-10-21).**
+              `w-fit` heißt bei einem Satz, der länger ist als der Bildschirm,
+              **volle Breite**: Der Streifen klebte randlos an beiden Seiten
+              und war keine Pille mehr. Jetzt bleibt ein Rand stehen, und
+              „dieses Ausschnitts" ist weg – es stand da, wo ohnehin nur der
+              sichtbare Ausschnitt gemeint sein kann.
             */}
             {truncated && (
               <p
                 role="status"
-                className="pointer-events-none absolute inset-x-0 bottom-10 z-[1000] mx-auto w-fit rounded-full bg-amber-100 px-3 py-1.5 text-xs font-medium text-amber-900 shadow dark:bg-amber-950 dark:text-amber-100"
+                className="pointer-events-none absolute inset-x-0 bottom-10 z-[1000] mx-auto w-fit max-w-[calc(100%-2rem)] rounded-2xl bg-amber-100 px-3 py-1.5 text-center text-xs font-medium text-amber-900 shadow dark:bg-amber-950 dark:text-amber-100"
               >
-                Nicht alle Parkplätze dieses Ausschnitts sind geladen – näher heranzoomen.
+                Nicht alle Parkplätze sind geladen – näher heranzoomen.
               </p>
             )}
             <MapLegend />

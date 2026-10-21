@@ -62,6 +62,11 @@ export default function RootLayout({
         {/*
           Muss vor dem ersten Zeichnen laufen, sonst blitzt die Seite kurz in
           der falschen Helligkeit auf.
+
+          **Der ausdrückliche `<head>` ist nicht die Ursache dafür, dass Titel
+          und Beschreibung im Körper landen** – am 2026-10-21 einmal ohne ihn
+          gebaut und gemessen, es ändert nichts (siehe 12.10). Er bleibt, weil
+          er sagt, wohin dieses Skript gehört.
         */}
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>

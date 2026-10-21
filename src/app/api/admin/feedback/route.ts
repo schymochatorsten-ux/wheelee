@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { feedbackCounts, listFeedback } from "@/lib/db/feedback";
 import { isFeedbackKind, isFeedbackStatus } from "@/lib/feedback";
 import { userFromRequest } from "@/lib/auth/session";
+import { withLogging } from "@/lib/log";
 
 /**
  * Die Rückmeldungen für die Übersicht (ToDo 17.4).
@@ -16,7 +17,7 @@ import { userFromRequest } from "@/lib/auth/session";
  * Auch ein **angemeldeter** Benutzer ohne Administratorrecht bekommt 401 und
  * nicht 403: Dass es diese Übersicht gibt, muss er nicht erfahren.
  */
-export async function GET(request: Request) {
+async function getHandler(request: Request) {
   const user = userFromRequest(request);
   if (!user?.isAdmin) {
     return NextResponse.json({ error: "Nicht angemeldet." }, { status: 401 });
@@ -38,3 +39,9 @@ export async function GET(request: Request) {
     { headers: { "Cache-Control": "no-store" } },
   );
 }
+
+/*
+ * Jede Antwort läuft durch das Protokoll (ToDo 12.6): Status, Dauer und der
+ * Pfad **ohne Parameterwerte**. Siehe `lib/log.ts`.
+ */
+export const GET = withLogging(getHandler);

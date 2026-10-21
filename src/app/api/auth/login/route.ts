@@ -3,6 +3,7 @@ import { authenticate, createSession } from "@/lib/db/accounts";
 import { normalizeEmail } from "@/lib/auth/email";
 import { isAdminEmail, sessionCookie } from "@/lib/auth/session";
 import { allow, clientKey, LIMITS } from "@/lib/rate-limit";
+import { withLogging } from "@/lib/log";
 
 /**
  * Anmelden (ToDo 11.1).
@@ -18,7 +19,7 @@ import { allow, clientKey, LIMITS } from "@/lib/rate-limit";
  * einen anderen Nutzer aussperren; nur nach Adresse ließe sich dieselbe
  * Adresse von vielen Rechnern aus durchprobieren.
  */
-export async function POST(request: Request) {
+async function postHandler(request: Request) {
   let body: { email?: unknown; password?: unknown };
   try {
     body = (await request.json()) as typeof body;
@@ -58,3 +59,9 @@ export async function POST(request: Request) {
   response.cookies.set(sessionCookie(createSession(account.id)));
   return response;
 }
+
+/*
+ * Jede Antwort läuft durch das Protokoll (ToDo 12.6): Status, Dauer und der
+ * Pfad **ohne Parameterwerte**. Siehe `lib/log.ts`.
+ */
+export const POST = withLogging(postHandler);

@@ -5,6 +5,7 @@ import { looksLikeEmail, normalizeEmail } from "@/lib/auth/email";
 import { isAdminEmail, sessionCookie } from "@/lib/auth/session";
 import { allow, clientKey, LIMITS } from "@/lib/rate-limit";
 import { createSession } from "@/lib/db/accounts";
+import { withLogging } from "@/lib/log";
 
 /**
  * Konto anlegen (ToDo 11.1).
@@ -19,7 +20,7 @@ import { createSession } from "@/lib/db/accounts";
  * steht in der Umgebung – nicht in der Datenbank. Niemand kann sich also durch
  * eine fremde Adresse Rechte verschaffen.
  */
-export async function POST(request: Request) {
+async function postHandler(request: Request) {
   if (!allow(`register:${clientKey(request)}`, LIMITS.register)) {
     return NextResponse.json(
       { error: "Zu viele Versuche. Bitte später erneut probieren." },
@@ -74,3 +75,9 @@ export async function POST(request: Request) {
   response.cookies.set(sessionCookie(createSession(account.id)));
   return response;
 }
+
+/*
+ * Jede Antwort läuft durch das Protokoll (ToDo 12.6): Status, Dauer und der
+ * Pfad **ohne Parameterwerte**. Siehe `lib/log.ts`.
+ */
+export const POST = withLogging(postHandler);

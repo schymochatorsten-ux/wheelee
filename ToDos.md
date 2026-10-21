@@ -8,12 +8,14 @@
 **Legende:** `[ ]` offen · `[~]` teils gebaut, Rest hier · `[!]` braucht eine
 Entscheidung oder Angabe von dir · `[-]` gesperrt bis zur Freigabe
 
-**Letzte Aktualisierung:** 2026-10-20
+**Letzte Aktualisierung:** 2026-10-21
 
-**Stand (nachgezählt 2026-10-20):** 37 offen, 5 teils gebaut, 8 warten auf
-dich, 1 gesperrte Zeile (Abschnitt 13, darin drei Punkte). **Der Sprung von 31
-auf 37 ist keine neue Arbeit, sondern die Freigabe von 15 und 16** – sie standen
-vorher als gesperrt. Nachzählen statt fortschreiben:
+**Stand (nachgezählt 2026-10-21):** 35 offen, 5 teils gebaut, 9 warten auf
+dich, 1 gesperrte Zeile (Abschnitt 13, darin drei Punkte). Fertig an diesem
+Tag: 12.6 (Protokoll und Fehlerseiten), 12.4 (Lighthouse) und daraus 9.17
+(Bedienmaß der Punktbündel) und 12.10 (Linkvorschau – nachgemessen, kein
+Mangel). Neu dazu: 9.16, dein gemeldeter Anzeigefehler. Nachzählen statt
+fortschreiben:
 
 ```bash
 node -e "const t=require('fs').readFileSync('ToDos.md','utf8').split('\n').filter(x=>/^- \[(.)\]/.test(x)); console.log('gesamt',t.length); for(const m of [' ','~','!','-']) console.log(m, t.filter(x=>x.startsWith('- ['+m+']')).length);"
@@ -60,7 +62,7 @@ abgeschlossen ist.
 | #   | Was                                                                  | Warum hier                                               |
 | --- | -------------------------------------------------------------------- | -------------------------------------------------------- |
 | 1   | **12.5a** aktuellen Stand ausliefern                                 | Alles seit dem 2026-10-11 Gebaute steht nicht im Netz    |
-| 2   | **12.6 / 12.4** Monitoring, Lighthouse                               | Ab hier Betrieb statt Funktionen                         |
+| 2   | **9.16** Hinweisstreifen am Kartenrand                               | Gemeldet, klein, und der zweite Teil braucht dich        |
 | 3   | **15.2** Texte aus dem Quelltext lösen                               | **Vor** jeder weiteren Oberflächenarbeit – sonst zweimal |
 | 4   | **10.7 / 17.6 / 11.7** Nonce-CSP, Passwort, DSGVO                    | Sorgfalt, kein akutes Risiko                             |
 | 5   | **16.1** Parkplatzdaten einer Stadt vorab laden                      | Klein, rechtlich unbedenklich, sofort nützlich           |
@@ -132,6 +134,7 @@ Lizenzfrage), dazu alles unter „Entscheidungen".
 ## 9. Darstellung und Bedienung
 
 - [ ] 9.2a Falls die gefilterte Karte auf Dauer nicht überzeugt: echte dunkle Kacheln (etwa CARTO Dark Matter). Bessere Lesbarkeit, aber ein weiterer Anbieter, dessen Bedingungen und Attribution zu prüfen wären.
+- [!] 9.16 **Der Hinweis am Kartenrand hilft im Weitwinkel nicht** (gemeldet 2026-10-21). Die Darstellung ist berichtigt (siehe `Erledigt.md`); offen bleibt der Inhalt: Bei kontinentaler Zoomstufe ist „näher heranzoomen" wahr, aber nutzlos – es wären ein Dutzend Stufen, und im Ausschnitt liegt überwiegend Ausland ohne Daten. **Deine Entscheidung:** ab welcher Zoomstufe der Hinweis erscheint – und ob darunter stattdessen ein Satz steht, der sagt, dass erst ab Stadtgröße etwas zu sehen ist.
 - [ ] 9.9 Mit echten Hilfsmitteln testen, nicht nur mit Prüfwerkzeugen: NVDA oder VoiceOver, Tastatur, Vergrößerung.
 
 ## 10. Datenschutz und Recht
@@ -152,8 +155,6 @@ Lizenzfrage), dazu alles unter „Entscheidungen".
 
 - [!] 12.5a **Den aktuellen Stand ausliefern – Platz 1.** Die Seite läuft auf einem Stand von vor dem 2026-10-11: Konten, Rückmeldungen, Bewertungen, Rechtstexte und Sicherheits-Kopfzeilen antworten dort mit 404 (gemessen 2026-10-19, Befund in [Erledigt.md](Erledigt.md)). **Die Rechtspflicht aus 10.2 ist dadurch unerfüllt, obwohl die Seiten gebaut sind.** Zu tun: einmaliger Deploy von Hand – `git pull` und `docker compose up -d --build` in `/opt/wheelee`, danach die drei Variablen aus 10.2a in die `.env`; beim ersten Start legt die Migration die Tabellen an. **Das kann weder ich noch Torsten:** kein SSH-Zugang zum NAS, kein NPM-Zugang. Es braucht Niklas – oder einen eigenen Benutzer auf dem NAS mit Rechten nur auf `/opt/wheelee`.
 - [~] 12.5 **Deploy automatisieren.** `Dockerfile`, `docker-compose.yml` und `deploy/env.beispiel` stehen. Offen ist, wie neue Commits auf das NAS kommen: Webhook oder systemd-Timer, Variante A oder B aus Abschnitt 6 von [wheelee-infrastruktur.md](wheelee-infrastruktur.md). **Dass dieser Punkt offen ist, hat 12.5a verursacht:** Ohne automatischen Weg hängt jeder Deploy daran, dass jemand daran denkt – und acht Tage lang hat niemand daran gedacht.
-- [ ] 12.4 Lighthouse-Prüfung auf Mobil: Leistung und Barrierefreiheit.
-- [ ] 12.6 Fehler-Monitoring und minimales Logging.
 - [ ] 12.7a Symbol gestalterisch überarbeiten – funktional, aber von mir gezeichnet.
 
 ## 15. Mehrsprachigkeit

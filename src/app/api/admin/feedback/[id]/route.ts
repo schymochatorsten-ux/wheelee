@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { deleteFeedback, updateFeedback } from "@/lib/db/feedback";
 import { isFeedbackStatus, type FeedbackStatus } from "@/lib/feedback";
 import { userFromRequest } from "@/lib/auth/session";
+import { withLogging } from "@/lib/log";
 
 /**
  * Eine Rückmeldung ändern oder löschen (ToDo 17.4).
@@ -32,7 +33,7 @@ async function check(
   return { id };
 }
 
-export async function PATCH(request: Request, context: { params: Promise<{ id: string }> }) {
+async function patchHandler(request: Request, context: { params: Promise<{ id: string }> }) {
   const result = await check(request, context);
   if (result instanceof NextResponse) return result;
 
@@ -66,7 +67,7 @@ export async function PATCH(request: Request, context: { params: Promise<{ id: s
   return NextResponse.json({ ok: true }, { headers: { "Cache-Control": "no-store" } });
 }
 
-export async function DELETE(request: Request, context: { params: Promise<{ id: string }> }) {
+async function deleteHandler(request: Request, context: { params: Promise<{ id: string }> }) {
   const result = await check(request, context);
   if (result instanceof NextResponse) return result;
 
@@ -76,3 +77,10 @@ export async function DELETE(request: Request, context: { params: Promise<{ id: 
 
   return NextResponse.json({ ok: true }, { headers: { "Cache-Control": "no-store" } });
 }
+
+/*
+ * Jede Antwort läuft durch das Protokoll (ToDo 12.6): Status, Dauer und der
+ * Pfad **ohne Parameterwerte**. Siehe `lib/log.ts`.
+ */
+export const PATCH = withLogging(patchHandler);
+export const DELETE = withLogging(deleteHandler);

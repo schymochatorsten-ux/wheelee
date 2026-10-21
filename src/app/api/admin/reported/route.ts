@@ -3,6 +3,7 @@ import { ratingSummary, spotsReportedGone } from "@/lib/db/ratings";
 import { spotById } from "@/lib/parking/spots";
 import { userFromRequest } from "@/lib/auth/session";
 import { spotTitle } from "@/lib/parking/display";
+import { withLogging } from "@/lib/log";
 
 /**
  * Parkplätze, die mehrfach als „existiert nicht mehr" gemeldet wurden
@@ -62,7 +63,7 @@ export interface ReportedSpotView {
   } | null;
 }
 
-export async function GET(request: Request) {
+async function getHandler(request: Request) {
   const user = userFromRequest(request);
   if (!user?.isAdmin) {
     return NextResponse.json({ error: "Nicht angemeldet." }, { status: 401 });
@@ -103,3 +104,9 @@ export async function GET(request: Request) {
     { headers: { "Cache-Control": "no-store" } },
   );
 }
+
+/*
+ * Jede Antwort läuft durch das Protokoll (ToDo 12.6): Status, Dauer und der
+ * Pfad **ohne Parameterwerte**. Siehe `lib/log.ts`.
+ */
+export const GET = withLogging(getHandler);

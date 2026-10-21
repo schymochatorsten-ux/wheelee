@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { dedupePlaces, orderByProximity, toPlaces } from "@/lib/geocode";
 import type { LatLng } from "@/lib/geo";
+import { withLogging } from "@/lib/log";
 
 /**
  * Ortssuche, über unseren Server statt direkt aus dem Browser (ToDo 6.12).
@@ -56,7 +57,7 @@ function reference(params: URLSearchParams): LatLng | null {
   return { lat, lng };
 }
 
-export async function GET(request: Request) {
+async function getHandler(request: Request) {
   const params = new URL(request.url).searchParams;
   const query = params.get("q")?.trim() ?? "";
   const origin = reference(params);
@@ -114,3 +115,9 @@ export async function GET(request: Request) {
     return NextResponse.json({ places: [], error: "Suche gerade nicht erreichbar." });
   }
 }
+
+/*
+ * Jede Antwort läuft durch das Protokoll (ToDo 12.6): Status, Dauer und der
+ * Pfad **ohne Parameterwerte**. Siehe `lib/log.ts`.
+ */
+export const GET = withLogging(getHandler);
