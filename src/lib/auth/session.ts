@@ -1,6 +1,7 @@
 import { cookies } from "next/headers";
 import { accountForSession, SESSION_COOKIE, SESSION_MAX_AGE, type Account } from "../db/accounts";
 import { normalizeEmail } from "./email";
+import { isMapsPreference } from "../maps-preference";
 import type { SessionUser } from "./user";
 
 /**
@@ -44,6 +45,9 @@ const toUser = (account: Account): SessionUser => ({
   id: account.id,
   email: account.email,
   isAdmin: isAdminEmail(account.email),
+  // Ein unbekannter Wert in der Spalte wird zu `null` – dasselbe Verhalten wie
+  // bei einem unlesbaren Browser-Speicher (siehe Migration 4).
+  mapsPreference: isMapsPreference(account.mapsPreference) ? account.mapsPreference : null,
 });
 
 /** Das angemeldete Konto, oder `null`. */

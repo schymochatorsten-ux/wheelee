@@ -10,12 +10,15 @@ import { db, now } from "./sqlite";
  * vorgehalten werden, wie der Zweck es verlangt. Bei einer erledigten
  * Parkplatzmeldung ist der Zweck mit der Korrektur erfüllt.
  *
- * Zwei Dinge werden entfernt, und das zweite stand nicht auf der Liste:
+ * Drei Dinge werden entfernt, und das zweite stand nicht auf der Liste:
  *
  * - **Erledigte und verworfene Rückmeldungen** nach zwölf Monaten, samt der
  *   freiwillig angegebenen Antwortadresse. Das Formular sagt zu, dass die
  *   Adresse „mit der Meldung gelöscht" wird (`CONTACT_PRIVACY`) – ohne diesen
  *   Lauf wäre das eine Zusage ohne Ausführung.
+ * - **Die Antwortadresse an offenen Meldungen** nach zwei Jahren (17.6, seit
+ *   dem 2026-10-21). Die Meldung selbst bleibt – siehe
+ *   `CONTACT_RETENTION_DAYS`.
  * - **Abgelaufene Sitzungen.** Bisher verschwand eine Sitzung erst beim
  *   nächsten Versuch, sie zu benutzen (`accountForSession`). Wer sich einmal
  *   anmeldet und nie wieder kommt, hinterließ damit dauerhaft eine Zeile, die
@@ -38,9 +41,36 @@ export const FEEDBACK_RETENTION_DAYS = 365;
 /** Nur erledigte Stände laufen ab. Offene Meldungen bleiben, bis jemand sie bearbeitet. */
 const CLOSED_STATUSES = ["umgesetzt", "verworfen"] as const;
 
+/**
+ * Wie lange die Antwortadresse an einer **offenen** Meldung stehen bleibt
+ * (ToDo 17.6).
+ *
+ * **Das Problem, das diese zweite Frist löst:** 17.5 löscht nur erledigte
+ * Meldungen, und das bleibt richtig – eine unbearbeitete Meldung ist nicht
+ * erledigt, sondern liegen geblieben, und sie nach einer Frist zu löschen
+ * hieße, einen Hinweis zu verlieren, weil sich niemand gekümmert hat. Damit
+ * stand aber eine freiwillig angegebene Adresse unbegrenzt in der Datenbank,
+ * gegen die Zusage im Formular.
+ *
+ * **Entfernt wird deshalb die Adresse, nicht die Meldung.** Der Hinweis
+ * bleibt vollständig nachlesbar und kann weiter zur Korrektur der Daten
+ * beitragen; verloren geht allein die Möglichkeit zu antworten – und die war
+ * nach zwei Jahren ohne Bearbeitung ohnehin keine ernsthafte mehr. Die
+ * Alternative wäre gewesen, offene Meldungen nach einer Frist maschinell auf
+ * „verworfen" zu setzen; dann entschiede ein Zeitablauf über einen Hinweis von
+ * jemandem, der sich die Mühe gemacht hat.
+ *
+ * **Doppelt so lang wie die Frist für erledigte Meldungen**, weil hier nichts
+ * abgeschlossen ist: Zwei Jahre sind lang genug, dass niemand sagen kann, die
+ * Meldung sei übergangen worden, weil die Technik zu schnell war.
+ */
+export const CONTACT_RETENTION_DAYS = 730;
+
 export interface PurgeResult {
   feedback: number;
   sessions: number;
+  /** Offene Meldungen, deren Antwortadresse entfernt wurde. */
+  contacts: number;
 }
 
 /**
@@ -63,9 +93,35 @@ export function purgeExpired(nowMs: number = Date.now()): PurgeResult {
     )
     .run(...CLOSED_STATUSES, cutoff);
 
+  /*
+   * Die Antwortadresse an einer offenen Meldung (17.6).
+   *
+   * Maßgeblich ist hier `created_at` und **nicht** `updated_at`: Eine Notiz
+   * des Administrators ändert `updated_at`, ohne dass die Meldung bearbeitet
+   * wäre – die Frist würde sich dann durch Hinsehen verlängern. Gezählt wird
+   * ab dem Tag, an dem die Adresse angegeben wurde.
+   */
+  const contactCutoff = new Date(
+    nowMs - CONTACT_RETENTION_DAYS * 24 * 60 * 60 * 1000,
+  ).toISOString();
+
+  const contacts = db()
+    .prepare(
+      `UPDATE feedback
+          SET contact_email = NULL, contact_removed_at = ?
+        WHERE contact_email IS NOT NULL
+          AND status NOT IN (${CLOSED_STATUSES.map(() => "?").join(", ")})
+          AND created_at < ?`,
+    )
+    .run(now(), ...CLOSED_STATUSES, contactCutoff);
+
   const sessions = db().prepare("DELETE FROM session WHERE expires_at <= ?").run(now());
 
-  return { feedback: Number(feedback.changes), sessions: Number(sessions.changes) };
+  return {
+    feedback: Number(feedback.changes),
+    contacts: Number(contacts.changes),
+    sessions: Number(sessions.changes),
+  };
 }
 
 /**

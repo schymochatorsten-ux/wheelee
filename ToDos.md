@@ -10,11 +10,11 @@ Entscheidung oder Angabe von dir · `[-]` gesperrt bis zur Freigabe
 
 **Letzte Aktualisierung:** 2026-10-21
 
-**Stand (nachgezählt 2026-10-21):** 35 offen, 5 teils gebaut, 9 warten auf
+**Stand (nachgezählt 2026-10-21):** 33 offen, 5 teils gebaut, 9 warten auf
 dich, 1 gesperrte Zeile (Abschnitt 13, darin drei Punkte). Fertig an diesem
-Tag: 12.6 (Protokoll und Fehlerseiten), 12.4 (Lighthouse) und daraus 9.17
-(Bedienmaß der Punktbündel) und 12.10 (Linkvorschau – nachgemessen, kein
-Mangel). Neu dazu: 9.16, dein gemeldeter Anzeigefehler. Nachzählen statt
+Tag: 12.6 (Protokoll und Fehlerseiten), 12.4 (Lighthouse) mit 9.17 und 12.10
+daraus, 17.6 (Antwortadresse an offenen Meldungen) und 11.3a (Karten-App am
+Konto). Neu dazu: 9.16, dein gemeldeter Anzeigefehler. Nachzählen statt
 fortschreiben:
 
 ```bash
@@ -64,9 +64,9 @@ abgeschlossen ist.
 | 1   | **12.5a** aktuellen Stand ausliefern                                 | Alles seit dem 2026-10-11 Gebaute steht nicht im Netz    |
 | 2   | **9.16** Hinweisstreifen am Kartenrand                               | Gemeldet, klein, und der zweite Teil braucht dich        |
 | 3   | **15.2** Texte aus dem Quelltext lösen                               | **Vor** jeder weiteren Oberflächenarbeit – sonst zweimal |
-| 4   | **10.7 / 17.6 / 11.7** Nonce-CSP, Passwort, DSGVO                    | Sorgfalt, kein akutes Risiko                             |
+| 4   | **10.7 / 11.7** Nonce-CSP, Passwort ändern, DSGVO                    | Sorgfalt, kein akutes Risiko                             |
 | 5   | **16.1** Parkplatzdaten einer Stadt vorab laden                      | Klein, rechtlich unbedenklich, sofort nützlich           |
-| 6   | **11.3a / 11.4 / 11.5 / 11.6** Konto-Komfort                         | Niemand ist darauf angewiesen                            |
+| 6   | **11.4 / 11.5 / 11.6** Konto-Komfort                                 | Niemand ist darauf angewiesen                            |
 | 7   | **9.2a / 9.9 / 12.7a** Darstellung, Hilfsmitteltest                  | 9.9 braucht echte Geräte                                 |
 | 8   | **15.1 / 15.3 / 15.4 / 15.5** Englisch, Spanisch, dann weitere       | Erst wenn die deutschen Texte stehen – sonst zweimal     |
 | 9   | **1.8 / 4.5 / 12.5** Aufräumen, Automatisierung                      | Der automatische Deploy, nachdem 12.5a von Hand lief     |
@@ -103,7 +103,7 @@ Lizenzfrage), dazu alles unter „Entscheidungen".
 
 ## 1. Projekt-Setup
 
-- [ ] 1.8 Audit-Findings: `postcss` (über `next`) und `braces` (über `eslint-config-next`) sind nur per Next-16-Upgrade behebbar – bewusst zurückgestellt.
+- [ ] 1.8 **Audit-Findings: Next 16 ist da, das Upgrade behebt sie** (nachgesehen 2026-10-21). Unverändert zwei Wurzeln: `postcss` über `next` und `braces` über `eslint-config-next`. Hier läuft 15.5.27 mit `postcss 8.4.31`, Next **16.4.2** bringt `8.5.23`; `braces` hängt ohnehin nur am Linter und damit an der Entwicklung, nicht am Ausgelieferten. **Empfehlung: erst nach 12.5a.** Einen Sprung über eine Hauptversion zu machen, während der ausgelieferte Stand ein halbes Jahr alt ist, hieße zwei Fehlerquellen auf einmal – erst soll das Gebaute im Netz stehen, dann wird der Unterbau gehoben.
 
 ## 2. Datenquellen und Import
 
@@ -145,7 +145,6 @@ Lizenzfrage), dazu alles unter „Entscheidungen".
 
 ## 11. Benutzerkonten
 
-- [ ] 11.3a Die Wahl der Karten-App liegt im Browser-Speicher und gilt nur je Gerät; jetzt, da es Konten gibt, zusätzlich dort ablegen.
 - [ ] 11.4 Eigene Bewertungen einsehen und zurückziehen.
 - [ ] 11.5 Gespeicherte Parkplätze (Favoriten) für häufig angefahrene Ziele.
 - [ ] 11.6 Vertrauensstufen: wer wiederholt zutreffend meldet, bekommt mehr Gewicht in der Validierung. Baut auf den Bewertungen auf.
@@ -183,10 +182,6 @@ wartet.**
 
 - [ ] 16.1 **Die Parkplatzdaten einer Stadt vorab laden.** Klein (Köln rund 200 KB), rechtlich unbedenklich, sofort nützlich – ohne Kacheln bleibt eine Liste ohne Karte, das ist weniger, aber vielleicht genug. Dazu gehört zweierlei: **der belegte Platz muss sichtbar sein und sich löschen lassen** (eine App, die unbemerkt 200 MB belegt, fliegt vom Telefon), und **das Alter der mitgenommenen Daten muss dastehen** – ein drei Monate alter Stand, der sich als aktuell ausgibt, wäre schlimmer als keiner.
 - [!] 16.2 **Die Kartenkacheln vorab laden – wartet auf die Lizenzfrage.** Die Nutzungsbedingungen von OpenStreetMap untersagen massenhaftes Herunterladen; ein Stadtgebiet in brauchbarer Zoomstufe geht in die Dutzende Megabyte. Es bräuchte eine ausdrückliche Erlaubnis, einen bezahlten Kachelanbieter oder Vektorkacheln aus eigener Quelle. **Das ist die eigentliche Hürde, nicht die Technik** – und sie liegt nicht bei mir. (Vorher 16.1, geteilt am 2026-10-20.)
-
-## 17. Rückmeldungen
-
-- [ ] 17.6 **Die Adresse an einer ewig offenen Meldung bleibt ewig stehen.** 17.5 löscht nur **erledigte** Meldungen, und das ist richtig: Eine unbearbeitete Meldung ist nicht erledigt, sondern liegen geblieben, und sie nach einer Frist zu löschen hieße, einen Hinweis zu verlieren, weil sich niemand gekümmert hat. Damit bleibt eine freiwillige Antwortadresse unbegrenzt gespeichert – gegen die Zusage in `CONTACT_PRIVACY`. **Nicht einfach dieselbe Frist darüberlegen.** Zu entscheiden: nur die **Adresse** entfernen und den Text stehen lassen (Hinweis bleibt, Antwort wird unmöglich), oder offene Meldungen nach längerer Frist auf „verworfen" setzen (dann greift 17.5, aber eine Maschine entscheidet über einen Hinweis). Der erste Weg ist der naheliegende; er braucht eine zweite Frist und einen Hinweis in der Übersicht, warum dort keine Adresse mehr steht.
 
 ---
 

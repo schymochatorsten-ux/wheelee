@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import {
+  effectiveMapsPreference,
   MAPS_CHOICES,
   readMapsPreference,
   writeMapsPreference,
@@ -52,14 +53,32 @@ export function SettingsPanel({
 
   // Erst nach dem Laden lesen: Auf dem Server gibt es keinen Speicher, und
   // ein abweichender erster Rendergang führte sonst zu einem Hydrationsfehler.
+  // Was am Konto steht, schlägt den Browser (ToDo 11.3a) – die Begründung
+  // steht bei `effectiveMapsPreference`.
   useEffect(() => {
-    setPreference(readMapsPreference());
-  }, []);
+    setPreference(effectiveMapsPreference(user?.mapsPreference, readMapsPreference()));
+  }, [user?.mapsPreference]);
 
   const choose = (next: MapsPreference) => {
     setPreference(next);
     writeMapsPreference(next);
     onMapsPreferenceChange(next);
+
+    /*
+     * Am Konto ablegen, wenn eines da ist (ToDo 11.3a).
+     *
+     * **Ohne auf die Antwort zu warten und ohne Fehlermeldung.** Lokal gilt die
+     * Wahl bereits; schlägt die Anfrage fehl, ist die Folge, dass sie auf einem
+     * anderen Gerät noch nicht gilt – das ist keine Lage, in der man jemanden
+     * mit einer roten Meldung aufhalten sollte, während er einen Parkplatz
+     * sucht. Beim nächsten Umstellen geht sie ohnehin erneut mit.
+     */
+    if (!user) return;
+    void fetch("/api/account/maps", {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ preference: next }),
+    }).catch(() => {});
   };
 
   return (

@@ -1,5 +1,10 @@
 import { describe, expect, it } from "vitest";
-import { isMapsPreference, MAPS_CHOICES, resolveMapsTarget } from "./maps-preference";
+import {
+  effectiveMapsPreference,
+  isMapsPreference,
+  MAPS_CHOICES,
+  resolveMapsTarget,
+} from "./maps-preference";
 
 const IPHONE =
   "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1";
@@ -18,6 +23,24 @@ describe("resolveMapsTarget", () => {
     expect(resolveMapsTarget("google", IPHONE)).toBe("google");
     expect(resolveMapsTarget("waze", ANDROID)).toBe("waze");
     expect(resolveMapsTarget("osm", IPHONE)).toBe("osm");
+  });
+});
+
+describe("effectiveMapsPreference (ToDo 11.3a)", () => {
+  it("lässt das Konto gewinnen – darum geht es bei der geräteübergreifenden Wahl", () => {
+    expect(effectiveMapsPreference("waze", "google")).toBe("waze");
+  });
+
+  it("nimmt den Browser, solange am Konto nichts steht", () => {
+    // Wichtig für den Übergang: Wer vor dem Anlegen eines Kontos schon gewählt
+    // hat, soll seine Wahl nicht durch die Anmeldung verlieren.
+    expect(effectiveMapsPreference(null, "osm")).toBe("osm");
+    expect(effectiveMapsPreference(undefined, "osm")).toBe("osm");
+  });
+
+  it("verwirft einen unbekannten Wert aus der Datenbank", () => {
+    // Etwa eine Karten-App, die es einmal gab und nicht mehr gibt.
+    expect(effectiveMapsPreference("ehemalige-app" as never, "google")).toBe("google");
   });
 });
 

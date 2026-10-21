@@ -5,7 +5,13 @@ import path from "node:path";
 import { closeDb, db } from "./sqlite";
 import { createAccount, createSession } from "./accounts";
 import { listFeedback, saveFeedback, updateFeedback } from "./feedback";
-import { FEEDBACK_RETENTION_DAYS, maybePurge, purgeExpired, resetPurgeThrottle } from "./cleanup";
+import {
+  CONTACT_RETENTION_DAYS,
+  FEEDBACK_RETENTION_DAYS,
+  maybePurge,
+  purgeExpired,
+  resetPurgeThrottle,
+} from "./cleanup";
 import type { ValidFeedback } from "../feedback";
 
 /**
@@ -127,6 +133,64 @@ describe("purgeExpired – Rückmeldungen", () => {
       .prepare("SELECT COUNT(*) AS anzahl FROM feedback WHERE contact_email IS NOT NULL")
       .get() as { anzahl: number };
     expect(Number(rest.anzahl)).toBe(0);
+  });
+});
+
+describe("purgeExpired – Antwortadresse an offenen Meldungen (17.6)", () => {
+  it("entfernt die Adresse nach zwei Jahren, behält aber die Meldung", () => {
+    const id = saveFeedback(meldung({ contactEmail: "jemand@example.de" }), null);
+    datiere(id, vorTagen(CONTACT_RETENTION_DAYS + 5), null);
+
+    expect(purgeExpired().contacts).toBe(1);
+
+    const [eintrag] = listFeedback();
+    // **Das ist der Kern der Entscheidung:** Der Hinweis bleibt vollständig
+    // lesbar, nur antworten kann niemand mehr.
+    expect(eintrag.message).toContain("Bahnhofstraße");
+    expect(eintrag.status).toBe("neu");
+    expect(eintrag.contactEmail).toBeNull();
+    expect(eintrag.contactRemovedAt).not.toBeNull();
+  });
+
+  it("lässt eine Adresse innerhalb der Frist unberührt", () => {
+    const id = saveFeedback(meldung({ contactEmail: "jemand@example.de" }), null);
+    datiere(id, vorTagen(CONTACT_RETENTION_DAYS - 5), null);
+
+    expect(purgeExpired().contacts).toBe(0);
+    expect(listFeedback()[0].contactEmail).toBe("jemand@example.de");
+  });
+
+  it("verlängert die Frist nicht, weil jemand eine Notiz geschrieben hat", () => {
+    // Maßgeblich ist `created_at`. Sonst setzte jeder Blick in die Übersicht
+    // die Frist zurück, und die Adresse stünde genau dort am längsten, wo sich
+    // niemand kümmert.
+    const id = saveFeedback(meldung({ contactEmail: "jemand@example.de" }), null);
+    updateFeedback(id, { note: "angesehen, noch nichts unternommen" });
+    datiere(id, vorTagen(CONTACT_RETENTION_DAYS + 5), vorTagen(1));
+
+    expect(purgeExpired().contacts).toBe(1);
+  });
+
+  it("fasst erledigte Meldungen nicht an – die löscht 17.5 ganz", () => {
+    const id = saveFeedback(meldung({ contactEmail: "jemand@example.de" }), null);
+    updateFeedback(id, { status: "umgesetzt" });
+    // Alt genug für die Adressfrist, aber zu jung für die Löschfrist.
+    datiere(id, vorTagen(CONTACT_RETENTION_DAYS + 5), vorTagen(10));
+
+    const ergebnis = purgeExpired();
+    expect(ergebnis.contacts).toBe(0);
+    expect(ergebnis.feedback).toBe(0);
+    expect(listFeedback()[0].contactEmail).toBe("jemand@example.de");
+  });
+
+  it("merkt sich nichts, wenn nie eine Adresse angegeben war", () => {
+    const id = saveFeedback(meldung(), null);
+    datiere(id, vorTagen(CONTACT_RETENTION_DAYS + 5), null);
+
+    expect(purgeExpired().contacts).toBe(0);
+    // Ohne diese Unterscheidung sähe „nie eine Adresse" aus wie „Adresse
+    // entfernt" – genau der Unterschied, für den es die Spalte gibt.
+    expect(listFeedback()[0].contactRemovedAt).toBeNull();
   });
 });
 

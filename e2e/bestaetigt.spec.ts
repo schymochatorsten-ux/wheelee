@@ -124,10 +124,20 @@ test.describe("Bestätigte Standorte", () => {
 
     await page.goto("/");
     await devLeisteDurchklickbarMachen(page);
+
+    /*
+     * **Erst warten, bis die Leiste steht** (2026-10-21). Der Test lief allein
+     * grün und fiel im vollen Durchlauf gelegentlich um: Die Leiste wird vom
+     * Server gerendert und kurz darauf mit den nachgeladenen Parkplätzen
+     * ersetzt – wer in diesem Moment auf „Details" klickt, trifft einen Knopf,
+     * den es gleich nicht mehr gibt. Dieselbe Ursache wie beim Test darüber.
+     */
+    await expect(page.locator("#parkplatz-leiste")).toBeVisible();
     await page.getByRole("button", { name: "Details" }).first().click();
 
     const dialog = page.getByRole("dialog");
     await expect(dialog).toBeVisible();
+    await expect(dialog.getByRole("heading", { level: 2 })).not.toHaveText("");
     await expect(dialog.getByText(/Von zwei Quellen bestätigt/u)).toHaveCount(0);
     await expect(dialog.getByText(/nicht bestätigt/u)).toHaveCount(0);
   });

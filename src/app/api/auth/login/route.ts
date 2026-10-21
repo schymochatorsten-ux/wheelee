@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { authenticate, createSession } from "@/lib/db/accounts";
 import { normalizeEmail } from "@/lib/auth/email";
 import { isAdminEmail, sessionCookie } from "@/lib/auth/session";
+import { publicUser } from "@/lib/auth/user";
+import { isMapsPreference } from "@/lib/maps-preference";
 import { allow, clientKey, LIMITS } from "@/lib/rate-limit";
 import { withLogging } from "@/lib/log";
 
@@ -54,7 +56,14 @@ async function postHandler(request: Request) {
   }
 
   const response = NextResponse.json({
-    user: { email: account.email, isAdmin: isAdminEmail(account.email) },
+    // Mit der Anmeldung kommt die am Konto gewählte Karten-App zurück
+    // (ToDo 11.3a) – das ist der Weg, auf dem sie ein zweites Gerät erreicht.
+    user: publicUser({
+      id: account.id,
+      email: account.email,
+      isAdmin: isAdminEmail(account.email),
+      mapsPreference: isMapsPreference(account.mapsPreference) ? account.mapsPreference : null,
+    }),
   });
   response.cookies.set(sessionCookie(createSession(account.id)));
   return response;

@@ -11,6 +11,7 @@ import {
   createSession,
   deleteSession,
   findAccountByEmail,
+  setMapsPreference,
 } from "./accounts";
 import {
   deleteFeedback,
@@ -105,6 +106,33 @@ describe("Konten", () => {
     expect(authenticate("torsten@example.de", "ein langes Passwort")).not.toBeNull();
     expect(authenticate("torsten@example.de", "falsches Passwort")).toBeNull();
     expect(authenticate("unbekannt@example.de", "ein langes Passwort")).toBeNull();
+  });
+});
+
+describe("Karten-App am Konto (ToDo 11.3a)", () => {
+  it("ist bei einem neuen Konto leer – dann gilt der Browser", () => {
+    const konto = createAccount("jemand@example.de", "ein gutes langes Passwort");
+    expect(konto?.mapsPreference).toBeNull();
+  });
+
+  it("merkt sich die Wahl und gibt sie beim Anmelden zurück", () => {
+    const konto = createAccount("jemand@example.de", "ein gutes langes Passwort");
+    setMapsPreference(konto!.id, "waze");
+
+    // Beide Wege müssen sie liefern: die Anmeldung und die bestehende Sitzung.
+    expect(authenticate("jemand@example.de", "ein gutes langes Passwort")?.mapsPreference).toBe(
+      "waze",
+    );
+    const token = createSession(konto!.id);
+    expect(accountForSession(token)?.mapsPreference).toBe("waze");
+  });
+
+  it('lässt sich wieder auf „keine Wahl" zurücksetzen', () => {
+    const konto = createAccount("jemand@example.de", "ein gutes langes Passwort");
+    setMapsPreference(konto!.id, "osm");
+    setMapsPreference(konto!.id, null);
+
+    expect(findAccountByEmail("jemand@example.de")?.mapsPreference).toBeNull();
   });
 });
 

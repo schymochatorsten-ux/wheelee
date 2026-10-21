@@ -118,7 +118,7 @@ export const CONTACT_HINT =
 /** Was mit der Adresse geschieht – gehört neben das Feld, nicht ins Impressum. */
 export const CONTACT_PRIVACY =
   "Die Adresse wird nur für die Antwort auf diese Meldung benutzt, nicht weitergegeben " +
-  "und mit der Meldung gelöscht.";
+  "und mit der Meldung gelöscht – spätestens nach zwei Jahren.";
 
 function trimmed(value: unknown, max: number): string | null {
   if (typeof value !== "string") return null;

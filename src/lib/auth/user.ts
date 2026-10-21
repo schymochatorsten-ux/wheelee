@@ -6,11 +6,18 @@
  * sich und gehört nicht in ein Browser-Bundle.
  */
 
+import type { MapsPreference } from "../maps-preference";
+
 export interface SessionUser {
   id: string;
   email: string;
   /** Darf die Übersicht der Rückmeldungen sehen und ändern. */
   isAdmin: boolean;
+  /**
+   * Am Konto gewählte Karten-App (ToDo 11.3a) – `null`, solange nie eine
+   * gewählt wurde. Dann gilt die Wahl im Browser.
+   */
+  mapsPreference: MapsPreference | null;
 }
 
 /**
@@ -20,9 +27,10 @@ export interface SessionUser {
  * gebraucht, und was nicht ausgeliefert wird, kann auch nicht aus Versehen in
  * einer Anfrage landen.
  */
-export type PublicUser = Pick<SessionUser, "email" | "isAdmin">;
+export type PublicUser = Pick<SessionUser, "email" | "isAdmin" | "mapsPreference">;
 
 export const publicUser = (user: SessionUser): PublicUser => ({
   email: user.email,
   isAdmin: user.isAdmin,
+  mapsPreference: user.mapsPreference,
 });

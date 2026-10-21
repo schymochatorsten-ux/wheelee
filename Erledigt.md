@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-10-21):** **137 Einträge** auf oberster Ebene –
-davon 127, die mit einer ToDo-Nummer **beginnen**, und 10, die das nicht tun
+**Stand (nachgezählt 2026-10-21):** **139 Einträge** auf oberster Ebene –
+davon 129, die mit einer ToDo-Nummer **beginnen**, und 10, die das nicht tun
 (die Entscheidungen D-01, D-02, D-04, D-06, D-08 sowie fünf Einträge, die zu
 keinem nummerierten Punkt gehören).
 Einige stehen als `[~]`: Ihr gebauter Teil steht hier, ihr offener Rest in
@@ -583,6 +583,17 @@ ist eine Änderung an fremden Tests und gehört nicht in einen Punkt über die
 Anzeige bestätigter Standorte. Hier steht es, damit der nächste Durchgang nicht
 wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
 
+> **Nachtrag vom 2026-10-21: genau so gemacht, weil es wieder passiert ist.**
+> Der neue Test zu 11.3a legte ein weiteres Konto an, und damit fiel der zweite
+> Durchlauf innerhalb einer Stunde um – diesmal in `bewertungen.spec.ts`, also
+> wieder an einer Stelle, die mit der Änderung nichts zu tun hatte. Beide
+> Dateien legen jetzt **je ein** Konto über die Schnittstelle an (`beforeAll`)
+> und melden sich damit an; die Anmeldung ist mit zehn Versuchen je zehn
+> Minuten weit genug gefasst. Aus vier Registrierungen je Lauf sind zwei
+> geworden, und zwei vollständige Durchläufe gegen denselben
+> Entwicklungsserver sind nachgemessen grün. Die Grenze selbst blieb
+> unverändert.
+
 ---
 
 ## 10. Impressum und Datenschutzerklärung (2026-10-19)
@@ -635,6 +646,11 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
 
 ## 17 / 10. Aufräumen und Sicherheit (2026-10-17)
 
+- [x] 17.6 **Die Antwortadresse an offenen Meldungen läuft nach zwei Jahren ab** (2026-10-21, `cleanup.ts`, Migration 3). Die Lücke, die 17.5 offen ließ: Offene Meldungen laufen bewusst nicht ab – damit stand eine freiwillig angegebene Adresse unbegrenzt in der Datenbank, gegen die Zusage im Formular.
+  - **Entfernt wird die Adresse, nicht die Meldung.** Der zweite erwogene Weg – offene Meldungen nach einer Frist maschinell auf „verworfen" setzen, damit 17.5 greift – ist verworfen: Dann entschiede ein Zeitablauf über einen Hinweis von jemandem, der sich die Mühe gemacht hat. So bleibt der Hinweis vollständig lesbar und kann weiter zur Korrektur beitragen; verloren geht allein die Möglichkeit zu antworten, und die war nach zwei Jahren ohne Bearbeitung ohnehin keine ernsthafte mehr.
+  - **Zwei Jahre, also doppelt so lang wie die Frist für Erledigtes**, weil hier nichts abgeschlossen ist. Niemand soll sagen können, eine Meldung sei übergangen worden, weil die Technik zu schnell war.
+  - **Gerechnet wird ab `created_at`, nicht ab `updated_at`** – anders als bei 17.5, und aus demselben Denken heraus: Eine Notiz des Administrators ändert `updated_at`, ohne dass die Meldung bearbeitet wäre. Sonst verlängerte bloßes Hinsehen die Frist, und die Adresse stünde ausgerechnet dort am längsten, wo sich niemand kümmert. Ein Test hält den Fall fest.
+  - **Eine eigene Spalte `contact_removed_at`**, damit die Übersicht den Unterschied zeigen kann: „nie eine Adresse angegeben" sieht sonst aus wie „Adresse nach der Frist entfernt". Dort steht jetzt ein Satz statt einer Leerstelle. Fünf Tests, dazu die Fristen in Datenschutzerklärung und Formulartext nachgeführt.
 - [x] 17.5 **Erledigte Rückmeldungen laufen nach zwölf Monaten ab** (2026-10-17, `src/lib/db/cleanup.ts`).
 
   Eine Tabelle, die nur wächst, wird nach einem Jahr nicht mehr gelesen – und personenbezogene Angaben, die niemand mehr braucht, gehören gelöscht. Das ist hier nicht Ordnungsliebe, sondern die Speicherbegrenzung aus Art. 5 Abs. 1 lit. e DSGVO. **Vor allem aber stand im Formular eine Zusage, die niemand einlöste:** `CONTACT_PRIVACY` verspricht, die freiwillige Antwortadresse werde „mit der Meldung gelöscht". Gelöscht wurde bis hierher nichts.
@@ -813,6 +829,12 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
   - Angemeldet nur im Produktionsbetrieb; im Entwicklungsbetrieb würde er die eigenen Änderungen zwischenspeichern. Geprüft mit einem eigenen E2E-Test gegen den Produktionsbuild: Nach `setOffline` und Neuladen steht die App samt Hinweis.
 - [x] 12.3 **E2E-Smoke-Test** (2026-10-10, Playwright, `npm run test:e2e`). Fünf Tests im Telefonformat: Karte mit Attribution und Markern, Liste mit Haftungshinweis, Detailansicht mit Fokussprung und Escape, Navigationsleiste mit Auswahl und Schließen, gemerkte Karten-App. Bewusst flach – ein Smoke-Test, der bei jeder Textänderung umfällt, wird abgeschaltet statt repariert.
   - Er hat sich sofort bezahlt gemacht: Er fand eine Beschädigung aller Umlaute in zwei Komponenten, die `typecheck`, `lint` und 148 Unit-Tests anstandslos passiert hatte. Ursache war eine Umschreibung per PowerShell, die UTF-8 als Windows-1252 las.
+- [x] 11.3a **Die Karten-App gilt jetzt geräteübergreifend** (2026-10-21, Migration 4, `api/account/maps`, `maps-preference.ts`). Die Wahl lag nur im Browser; wer die App auf dem Telefon und am Rechner benutzt, stellte sie zweimal ein – und nach einem geleerten Speicher wieder.
+  - **Zusätzlich zum Browser, nicht statt seiner.** Ohne Konto gibt es die Wahl unverändert. Eine Anmeldung zu verlangen, nur um die Karten-App einzustellen, wäre genau die Hürde, die dieses Projekt sonst vermeidet.
+  - **Das Konto gewinnt, sobald dort etwas steht** (`effectiveMapsPreference`). Begründung ist der Zweck der Sache: Auf dem zweiten Gerät ist der Browser-Wert nicht „die andere Entscheidung", sondern gar keine. Steht am Konto nichts, zählt weiter der Browser – so geht die Wahl von vor der Registrierung nicht verloren.
+  - **Die Speicherung läuft ohne Rückmeldung und ohne Warten.** Lokal gilt die Wahl sofort; scheitert die Anfrage, ist die Folge, dass sie auf einem anderen Gerät noch nicht gilt. Das ist keine Lage, in der man jemanden mit einer roten Meldung aufhält, der gerade einen Parkplatz sucht.
+  - **Keine CHECK-Bedingung in der Datenbank**, anders als bei `status` und `vote`: Die Liste der Karten-Apps steht im Code und wächst dort; eine neue App ließe sich sonst bis zur nächsten Migration nicht speichern. Geprüft wird am Endpunkt, ein unbekannter Wert fällt beim Lesen auf „automatisch" zurück – dasselbe Verhalten wie bei einem blockierten Browser-Speicher. Ein E2E-Test weist eine erfundene App zurück.
+  - **Dabei aufgefallen:** Anmeldung und Registrierung bauten ihre Antwort von Hand zusammen (`{ email, isAdmin }`) statt über `publicUser`. Das neue Feld fehlte dort stillschweigend, und TypeScript sagte nichts, weil ein Objektliteral in `NextResponse.json` gegen nichts geprüft wird. Beide gehen jetzt über `publicUser`; gefunden hat es der E2E-Test, nicht der Typprüfer.
 - [x] 11.3 **Bevorzugte Karten-App wählbar** (2026-10-10). Auswahl aus Google Maps, Apple Karten, OpenStreetMap, HERE WeGo, Waze und der Standard-App des Geräts; „Automatisch" bleibt die Vorgabe und rät wie bisher nach Gerät. Gespeichert im Browser – welche Karten-App jemand nutzt, ist nichts, wofür man sich anmelden sollte. Offen bleibt nur die geräteübergreifende Speicherung, die ein Benutzerkonto voraussetzt.
 - [x] 12.4 **Lighthouse auf Mobil gemessen** (2026-10-21, `lighthouse@12` gegen `npm run start`, gedrosseltes Telefonprofil): **Leistung 89, Barrierefreiheit 96, Best Practices 93, SEO 92.** FCP 1,4 s · Speed Index 1,7 s · Blockierzeit 20 ms · Layoutsprung 0,05 – alles im grünen Bereich.
   - **Die einzige schwache Zahl ist LCP mit 3,6 s, und sie ist keine, die sich wegoptimieren lässt:** Das größte Element ist eine **Kartenkachel von OpenStreetMap**. Sie lässt sich nicht vorladen, weil erst im Browser feststeht, wo jemand ist und welche Kachel gebraucht wird. Dieselbe Herkunft haben die Hinweise „Bilder in neuen Formaten" und „zu geringe Auflösung" (167 KB bzw. Retina): osm.org liefert PNG in 256 px, ein anderes Format gäbe es nur bei einem anderen Anbieter – und das ist 9.2a/16.2, nicht hier.

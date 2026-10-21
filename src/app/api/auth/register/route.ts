@@ -3,6 +3,7 @@ import { createAccount } from "@/lib/db/accounts";
 import { passwordProblem } from "@/lib/auth/password";
 import { looksLikeEmail, normalizeEmail } from "@/lib/auth/email";
 import { isAdminEmail, sessionCookie } from "@/lib/auth/session";
+import { publicUser } from "@/lib/auth/user";
 import { allow, clientKey, LIMITS } from "@/lib/rate-limit";
 import { createSession } from "@/lib/db/accounts";
 import { withLogging } from "@/lib/log";
@@ -70,7 +71,14 @@ async function postHandler(request: Request) {
   }
 
   const response = NextResponse.json({
-    user: { email: account.email, isAdmin: isAdminEmail(account.email) },
+    // `mapsPreference` gehört dazu, seit die Karten-App am Konto hängt
+    // (ToDo 11.3a) – bei einem neuen Konto ist sie leer.
+    user: publicUser({
+      id: account.id,
+      email: account.email,
+      isAdmin: isAdminEmail(account.email),
+      mapsPreference: null,
+    }),
   });
   response.cookies.set(sessionCookie(createSession(account.id)));
   return response;

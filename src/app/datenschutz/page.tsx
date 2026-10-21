@@ -180,8 +180,10 @@ export default function Datenschutz() {
         </p>
         <p>
           Gespeichert werden deine E-Mail-Adresse, dein Passwort als <em>scrypt</em>-Hash (niemals
-          im Klartext), der Zeitpunkt der Anmeldung und der letzten Nutzung. Rechtsgrundlage ist
-          Art. 6 Abs. 1 lit. b DSGVO.
+          im Klartext), der Zeitpunkt der Anmeldung und der letzten Nutzung. Dazu, falls du eine
+          wählst, <strong>die bevorzugte Karten-App</strong> – damit sie auch auf einem zweiten
+          Gerät gilt. Ohne Konto bleibt diese Wahl allein im Browser. Rechtsgrundlage ist Art. 6
+          Abs. 1 lit. b DSGVO.
         </p>
       </section>
 
@@ -254,7 +256,10 @@ export default function Datenschutz() {
           <li>
             <strong>Offene Rückmeldungen:</strong> bis sie bearbeitet sind. Eine Meldung, die
             niemand angesehen hat, ist nicht erledigt, sondern liegen geblieben – sie zu löschen
-            hieße, einen Hinweis auf einen falschen Parkplatz zu verlieren.
+            hieße, einen Hinweis auf einen falschen Parkplatz zu verlieren.{" "}
+            <strong>Die Antwortadresse daran wird nach zwei Jahren entfernt</strong>, auch wenn die
+            Meldung noch offen ist: Der Hinweis bleibt dann lesbar, antworten lässt sich darauf
+            nicht mehr.
           </li>
           <li>
             <strong>Bewertungen:</strong> bis du sie zurücknimmst oder dein Konto löschst. Eine

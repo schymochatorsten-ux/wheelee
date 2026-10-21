@@ -24,6 +24,11 @@ export interface FeedbackEntry {
   kind: FeedbackKind;
   message: string;
   contactEmail: string | null;
+  /**
+   * Wann die Antwortadresse nach der Frist entfernt wurde (17.6) – `null`,
+   * wenn nie eine angegeben war oder die Frist noch läuft.
+   */
+  contactRemovedAt: string | null;
   /** Adresse des angemeldeten Kontos, falls die Meldung aus einem kam. */
   accountEmail: string | null;
   spotId: string | null;
@@ -42,6 +47,7 @@ interface FeedbackRow {
   kind: FeedbackKind;
   message: string;
   contact_email: string | null;
+  contact_removed_at: string | null;
   account_email: string | null;
   spot_id: string | null;
   city: string | null;
@@ -59,6 +65,7 @@ const toEntry = (row: FeedbackRow): FeedbackEntry => ({
   kind: row.kind,
   message: row.message,
   contactEmail: row.contact_email,
+  contactRemovedAt: row.contact_removed_at ?? null,
   accountEmail: row.account_email,
   spotId: row.spot_id,
   city: row.city,
@@ -150,7 +157,7 @@ export function listFeedback(filter: FeedbackFilter = {}): FeedbackEntry[] {
     .prepare(
       `SELECT f.id, f.kind, f.message, f.contact_email, a.email AS account_email,
               f.spot_id, f.city, f.url, f.user_agent, f.app_version,
-              f.status, f.note, f.created_at, f.updated_at
+              f.status, f.note, f.created_at, f.updated_at, f.contact_removed_at
          FROM feedback f
          LEFT JOIN account a ON a.id = f.account_id
          ${where.length > 0 ? `WHERE ${where.join(" AND ")}` : ""}

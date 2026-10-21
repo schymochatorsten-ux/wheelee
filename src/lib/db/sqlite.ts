@@ -121,6 +121,28 @@ const MIGRATIONS: readonly string[] = [
   -- Die Abfrage lautet immer „alle Stimmen zu diesem Parkplatz".
   CREATE INDEX rating_spot ON rating(spot_id);
   `,
+
+  // 3 – Wann die Antwortadresse einer offenen Meldung entfernt wurde (ToDo 17.6).
+  `
+  -- **Warum eine eigene Spalte und nicht nur ein leeres Feld:** Ohne sie sähe
+  -- eine Meldung, deren Adresse nach der Frist entfernt wurde, genauso aus wie
+  -- eine, bei der nie jemand eine angegeben hat. Der Unterschied zählt: Im
+  -- ersten Fall wollte jemand eine Antwort und bekommt keine mehr, und die
+  -- Übersicht soll das sagen können, statt es zu verschweigen.
+  ALTER TABLE feedback ADD COLUMN contact_removed_at TEXT;
+  `,
+
+  // 4 – Bevorzugte Karten-App am Konto (ToDo 11.3a).
+  `
+  -- **Ohne Prüfung der erlaubten Werte, anders als bei \`status\` und \`vote\`.**
+  -- Die Liste der Karten-Apps steht im Code (\`navigation.ts\`) und wächst dort;
+  -- eine CHECK-Bedingung hier müsste bei jeder neuen App über eine Migration
+  -- nachgezogen werden, und bis dahin ließe sich die neue App nicht speichern.
+  -- Geprüft wird deshalb am Endpunkt, und ein unbekannter Wert fällt beim Lesen
+  -- auf „automatisch" zurück – das ist genau das Verhalten, das auch für einen
+  -- leeren Browser-Speicher gilt.
+  ALTER TABLE account ADD COLUMN maps_preference TEXT;
+  `,
 ];
 
 let database: DatabaseSync | null = null;

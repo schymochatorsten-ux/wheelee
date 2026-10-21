@@ -71,7 +71,13 @@ export function AccountPanel({ user, onUserChange }: AccountPanelProps) {
 
       setPassword("");
       setEmail("");
-      onUserChange({ email: data.user.email, isAdmin: data.user.isAdmin === true });
+      onUserChange({
+        email: data.user.email,
+        isAdmin: data.user.isAdmin === true,
+        // Die am Konto gewählte Karten-App kommt mit der Anmeldung zurück
+        // (ToDo 11.3a); ohne sie gilt weiter, was im Browser steht.
+        mapsPreference: data.user.mapsPreference ?? null,
+      });
     } catch {
       setError("Keine Verbindung. Bitte später erneut versuchen.");
     } finally {

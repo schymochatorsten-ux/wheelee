@@ -5,7 +5,11 @@ import dynamic from "next/dynamic";
 import type { ParkingSpot, ParkingSpotWithDistance } from "@/lib/types";
 import { distanceMeters, formatDistance, hasCoordinates } from "@/lib/geo";
 import { detectMapsTarget, type MapsTarget } from "@/lib/navigation";
-import { readMapsPreference, type MapsPreference } from "@/lib/maps-preference";
+import {
+  effectiveMapsPreference,
+  readMapsPreference,
+  type MapsPreference,
+} from "@/lib/maps-preference";
 import type { CityInfo } from "@/lib/parking/spots";
 import type { Place } from "@/lib/geocode";
 import type { PublicUser } from "@/lib/auth/user";
@@ -234,8 +238,10 @@ export function MapSection({
 
   useEffect(() => {
     setDetected(detectMapsTarget(navigator.userAgent));
-    setMapsPreference(readMapsPreference());
-  }, []);
+    // Die Wahl am Konto gilt geräteübergreifend und schlägt deshalb den
+    // Browser-Speicher (ToDo 11.3a).
+    setMapsPreference(effectiveMapsPreference(user?.mapsPreference, readMapsPreference()));
+  }, [user?.mapsPreference]);
 
   // Die Wahl schlägt die Geräteerkennung; „auto" bedeutet weiter raten.
   const mapsTarget: MapsTarget = mapsPreference === "auto" ? detected : mapsPreference;

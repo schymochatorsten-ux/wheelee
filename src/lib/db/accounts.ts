@@ -18,11 +18,17 @@ export interface Account {
   id: string;
   email: string;
   createdAt: string;
+  /**
+   * Bevorzugte Karten-App, geräteübergreifend (ToDo 11.3a). `null` heißt: nie
+   * etwas gewählt – dann gilt, was im Browser steht, sonst „automatisch".
+   */
+  mapsPreference: string | null;
 }
 
 interface AccountRow {
   id: string;
   email: string;
+  maps_preference?: string | null;
   password_hash: string;
   created_at: string;
 }
@@ -44,11 +50,25 @@ const toAccount = (row: AccountRow): Account => ({
   id: row.id,
   email: row.email,
   createdAt: row.created_at,
+  mapsPreference: row.maps_preference ?? null,
 });
+
+/**
+ * Die gewählte Karten-App am Konto ablegen (ToDo 11.3a).
+ *
+ * **Zusätzlich zum Browser-Speicher, nicht statt seiner.** Ohne Anmeldung gibt
+ * es weiterhin eine Wahl – sie zu verlangen, nur um eine Karten-App
+ * einzustellen, wäre genau die Hürde, die dieses Projekt sonst vermeidet.
+ */
+export function setMapsPreference(accountId: string, preference: string | null): void {
+  db().prepare("UPDATE account SET maps_preference = ? WHERE id = ?").run(preference, accountId);
+}
 
 export function findAccountByEmail(email: string): Account | null {
   const row = db()
-    .prepare("SELECT id, email, password_hash, created_at FROM account WHERE email = ?")
+    .prepare(
+      "SELECT id, email, password_hash, created_at, maps_preference FROM account WHERE email = ?",
+    )
     .get(normalizeEmail(email)) as AccountRow | undefined;
   return row ? toAccount(row) : null;
 }
@@ -71,6 +91,9 @@ export function createAccount(email: string, password: string): Account | null {
     id: randomUUID(),
     email: normalizeEmail(email),
     createdAt: now(),
+    // Ein neues Konto hat noch keine Wahl getroffen; es gilt, was im Browser
+    // steht (ToDo 11.3a).
+    mapsPreference: null,
   };
 
   try {
@@ -96,7 +119,9 @@ export function createAccount(email: string, password: string): Account | null {
  */
 export function authenticate(email: string, password: string): Account | null {
   const row = db()
-    .prepare("SELECT id, email, password_hash, created_at FROM account WHERE email = ?")
+    .prepare(
+      "SELECT id, email, password_hash, created_at, maps_preference FROM account WHERE email = ?",
+    )
     .get(normalizeEmail(email)) as AccountRow | undefined;
 
   if (!row) {
@@ -154,7 +179,7 @@ export function accountForSession(token: string | undefined): Account | null {
 
   const row = db()
     .prepare(
-      `SELECT a.id, a.email, a.password_hash, a.created_at, s.expires_at
+      `SELECT a.id, a.email, a.password_hash, a.created_at, a.maps_preference, s.expires_at
          FROM session s JOIN account a ON a.id = s.account_id
         WHERE s.token_hash = ?`,
     )

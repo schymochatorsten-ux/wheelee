@@ -49,7 +49,45 @@ async function detailsOeffnen(page: import("@playwright/test").Page) {
   await expect(page.getByRole("dialog")).toBeVisible();
 }
 
+/**
+ * **Ein Konto für die ganze Datei, und das ist eine Lehre aus einem Fehlschlag**
+ * (2026-10-21).
+ *
+ * Vorher legte jeder der beiden Tests sein eigenes Konto über die Oberfläche
+ * an. Die Registrierung ist auf fünf Versuche je Stunde und Herkunft gedrosselt
+ * (`LIMITS.register`) – beim dritten vollständigen Durchlauf innerhalb einer
+ * Stunde scheiterte sie, und **was man sah, war ein abgeschalteter
+ * Bewertungsknopf**: Das liest sich wie „die Anmeldepflicht ist kaputt" und ist
+ * das Gegenteil. Die Grenze heraufzusetzen käme nicht in Frage – ein echter
+ * Schutz für die Bequemlichkeit beim Testen.
+ *
+ * Angelegt wird das Konto deshalb **einmal über die Schnittstelle**; die Tests
+ * melden sich damit über die Oberfläche an. Die Anmeldung ist weiter
+ * gefasst (zehn Versuche je zehn Minuten) und für einen Testlauf kein Thema.
+ */
+const KONTO = {
+  email: `bewertung-${Date.now()}@example.de`,
+  password: "ein gutes langes Passwort",
+};
+
+/** Über die Oberfläche anmelden – wie es ein Mensch täte. */
+async function anmelden(page: import("@playwright/test").Page) {
+  await page.getByRole("tab", { name: "Einstellungen" }).click();
+  await page.getByRole("radio", { name: "Anmelden" }).click();
+  await page.getByLabel("E-Mail-Adresse").fill(KONTO.email);
+  await page.getByLabel("Passwort").fill(KONTO.password);
+  await page.getByRole("button", { name: "Anmelden" }).click();
+  await page.getByRole("tab", { name: "Karte" }).click();
+}
+
 test.describe("Bewertungen", () => {
+  test.beforeAll(async ({ playwright, baseURL }) => {
+    const api = await playwright.request.newContext({ baseURL });
+    const angelegt = await api.post("/api/auth/register", { data: KONTO });
+    expect(angelegt.status()).toBe(200);
+    await api.dispose();
+  });
+
   test.beforeEach(async ({ context }) => {
     await context.grantPermissions(["geolocation"]);
     await context.setGeolocation(KOELN);
@@ -117,17 +155,9 @@ test.describe("Bewertungen", () => {
   });
 
   test("mit Konto lässt sich bewerten, umdrehen und zurücknehmen", async ({ page }) => {
-    const adresse = `bewertung-${Date.now()}@example.de`;
-
     await page.goto("/");
     await devLeisteDurchklickbarMachen(page);
-    await page.getByRole("tab", { name: "Einstellungen" }).click();
-    await page.getByRole("radio", { name: "Konto anlegen" }).click();
-    await page.getByLabel("E-Mail-Adresse").fill(adresse);
-    await page.getByLabel("Passwort").fill("ein gutes langes Passwort");
-    await page.getByRole("button", { name: "Konto anlegen" }).click();
-
-    await page.getByRole("tab", { name: "Karte" }).click();
+    await anmelden(page);
     await page.getByRole("button", { name: "Details" }).first().click();
 
     const bewertung = page.getByRole("dialog").getByRole("region", {
@@ -170,17 +200,9 @@ test.describe("Bewertungen", () => {
      * gezählt, stünde hier wieder der alte Wert – und die eigene Stimme wäre
      * vergessen.
      */
-    const adresse = `bestand-${Date.now()}@example.de`;
-
     await page.goto("/");
     await devLeisteDurchklickbarMachen(page);
-    await page.getByRole("tab", { name: "Einstellungen" }).click();
-    await page.getByRole("radio", { name: "Konto anlegen" }).click();
-    await page.getByLabel("E-Mail-Adresse").fill(adresse);
-    await page.getByLabel("Passwort").fill("ein gutes langes Passwort");
-    await page.getByRole("button", { name: "Konto anlegen" }).click();
-
-    await page.getByRole("tab", { name: "Karte" }).click();
+    await anmelden(page);
     await page.getByRole("button", { name: "Details" }).first().click();
 
     const existiert = page.getByRole("dialog").getByRole("button", { name: /^Existiert,/u });

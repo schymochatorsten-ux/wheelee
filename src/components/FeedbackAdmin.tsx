@@ -30,6 +30,8 @@ interface FeedbackEntryView {
   kind: FeedbackKind;
   message: string;
   contactEmail: string | null;
+  /** Gesetzt, wenn die Antwortadresse nach der Frist entfernt wurde (17.6). */
+  contactRemovedAt?: string | null;
   accountEmail: string | null;
   spotId: string | null;
   city: string | null;
@@ -282,6 +284,21 @@ export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
                     <a href={`mailto:${entry.contactEmail}`} className="underline">
                       {entry.contactEmail}
                     </a>
+                  </dd>
+                </div>
+              )}
+              {/*
+                Stand hier einmal eine Adresse und ist sie nach der Frist
+                entfernt worden, muss das dastehen (ToDo 17.6). Sonst sieht die
+                Meldung aus wie eine ohne Adresse – und der Unterschied ist
+                genau der, auf den es ankommt: Hier wollte jemand eine Antwort.
+              */}
+              {!entry.contactEmail && entry.contactRemovedAt && (
+                <div className="flex gap-2">
+                  <dt>Antwort an</dt>
+                  <dd>
+                    Adresse nach zwei Jahren entfernt ({formatMoment(entry.contactRemovedAt)}) – die
+                    Meldung blieb so lange unbearbeitet.
                   </dd>
                 </div>
               )}
