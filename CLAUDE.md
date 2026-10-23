@@ -239,6 +239,44 @@ Server beenden, `npm run clean`, neu starten.
 
 Nie `Stop-Process node` ohne Filter: Das beendet auch laufende Importe.
 
+## Code sparsam lesen
+
+**Vorgabe vom 2026-10-23.** Nicht ganze Dateien ins Gespräch holen, wenn ein
+Ausschnitt die Frage beantwortet. Das ist keine Sparsamkeit um ihrer selbst
+willen: Was der Kontext an langen Dateien trägt, fehlt am Ende der Sitzung für
+die eigentliche Arbeit, und dann wird zusammengefasst – wobei genau die
+Einzelheiten verloren gehen, auf die es hier ankommt (Koordinaten, Zählstände,
+Begründungen aus `Erledigt.md`).
+
+So wird gelesen:
+
+- **Erst suchen, dann lesen.** Grep nach dem Symbol oder der Zeichenkette, dann
+  gezielt den Treffer mit Umgebung lesen. Eine Datei ganz zu lesen ist richtig,
+  wenn sie geändert werden soll oder kurz ist – nicht, um sich zu orientieren.
+- **Breite Suchen an einen Subagenten** (`Explore`). Er durchsucht viele
+  Dateien und gibt nur den Befund zurück; die Dateiinhalte bleiben bei ihm.
+  Richtig bei „wo wird X überhaupt benutzt", falsch, wenn der Wortlaut gebraucht
+  wird.
+- **Bei den Datendateien unter `data/` nie ganz lesen.** Das sind die größten
+  Dateien im Projekt und sie enthalten Datensätze, keine Logik. Ein
+  Node-Einzeiler, der zählt oder filtert, ersetzt sie.
+- **Keine Datei zweimal.** Steht sie schon im Gespräch, gilt der Stand dort –
+  Edit und Write melden sich, wenn eine Änderung nicht passt. Nach eigenen
+  Änderungen nicht zur Kontrolle nachlesen.
+
+**Wird ein Code-Index eingerichtet** (angesehen am 2026-10-23: `graph-indexer`
+aus dem Anthropic-Verzeichnis, lokaler Index ohne Netz und ohne Modell, damit
+keine Projektdaten nach außen gehen), dann gehen Referenz- und
+Aufruffragen zuerst an ihn, Grep bleibt die Rückfallebene. **Zum 2026-10-23 ist
+keiner installiert**, die Regeln oben gelten also unabhängig davon. Nicht
+installiert wurde „Graphify": ein Fremdpaket außerhalb des Verzeichnisses,
+dessen beworbene Einsparung („70x") aus einem Einzel-Benchmark einer Abfrage
+stammt – die einzige Messung über eine ganze Sitzung liegt bei rund 8 %.
+Nach „eine plausible Ursache ist keine gemessene" ist das keine Grundlage.
+
+**Ob es wirkt, wird gemessen, nicht angenommen:** `/explain-usage` nach
+einigen Sitzungen. Bringt ein Werkzeug nichts, wird es wieder entfernt.
+
 ## Overpass schonend benutzen
 
 Der Dienst wird von Freiwilligen bezahlt und antwortet unter Last mit
