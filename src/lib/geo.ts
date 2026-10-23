@@ -1,3 +1,4 @@
+import { DEFAULT_LOCALE, localeTag, type Locale } from "@/i18n";
 import type { ParkingSpot, ParkingSpotWithDistance } from "./types";
 
 const EARTH_RADIUS_METERS = 6_371_008.8;
@@ -23,17 +24,22 @@ export function distanceMeters(a: LatLng, b: LatLng): number {
 
 /**
  * Entfernung für die Anzeige formatieren: unter 1 km in Metern (auf 10 m
- * gerundet), darüber in Kilometern mit einer Dezimalstelle.
+ * gerundet), darüber in Kilometern mit einer Dezimalstelle in der Schreibweise\n * der Sprache.
  */
-export function formatDistance(meters: number): string {
+export function formatDistance(meters: number, locale: Locale = DEFAULT_LOCALE): string {
   if (!Number.isFinite(meters)) return "–";
   if (meters < 1000) {
     const rounded = meters < 100 ? Math.round(meters) : Math.round(meters / 10) * 10;
     return `${rounded} m`;
   }
   const km = meters / 1000;
-  const formatted = km < 10 ? km.toFixed(1) : Math.round(km).toString();
-  return `${formatted.replace(".", ",")} km`;
+  // Dezimalzeichen je Sprache: „1,5 km" deutsch, „1.5 km" englisch (ToDo 15.3).
+  const digits = km < 10 ? 1 : 0;
+  const formatted = km.toLocaleString(localeTag(locale), {
+    minimumFractionDigits: digits,
+    maximumFractionDigits: digits,
+  });
+  return `${formatted} km`;
 }
 
 /** Hat der Parkplatz eine nutzbare Koordinate? */

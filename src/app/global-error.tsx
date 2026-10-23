@@ -1,5 +1,6 @@
 "use client";
 
+import { t } from "@/i18n";
 import "./globals.css";
 
 /**
@@ -18,17 +19,14 @@ export default function GlobalError({ reset }: { error: Error; reset: () => void
     <html lang="de">
       <body className="flex min-h-dvh items-center justify-center p-6 antialiased">
         <div className="max-w-md text-center">
-          <h1 className="text-xl font-semibold">wheelee ist abgestürzt</h1>
-          <p className="mt-2 text-sm leading-relaxed">
-            Die App ließ sich nicht starten. Das liegt nicht an dir. Wenn es auch nach dem zweiten
-            Versuch bleibt, hilft meist, die Seite neu zu laden.
-          </p>
+          <h1 className="text-xl font-semibold">{t("globalError.title")}</h1>
+          <p className="mt-2 text-sm leading-relaxed">{t("globalError.text")}</p>
           <button
             type="button"
             onClick={reset}
             className="mt-6 min-h-11 rounded-xl bg-blue-700 px-4 font-medium text-white"
           >
-            Noch einmal versuchen
+            {t("error.retry")}
           </button>
         </div>
       </body>

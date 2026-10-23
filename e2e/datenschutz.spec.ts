@@ -61,9 +61,10 @@ test("fragt keine fremden Dienste und setzt keine Tracker", async ({ page, conte
   /*
    * Cookies: Im Entwicklungsbetrieb setzt Next.js einen für das Nachladen.
    *
-   * Seit es Konten gibt (2026-10-11), kennt die App genau **ein** eigenes
-   * Cookie: das Sitzungstoken nach dem Anmelden. Dieser Durchlauf meldet sich
-   * nirgends an – es darf hier also keines geben. Das ist der eigentliche
+   * Die App kennt zwei eigene Cookies, beide erst auf eine Handlung hin: das
+   * Sitzungstoken nach dem Anmelden (seit 2026-10-11) und `wheelee-lang`, sobald
+   * jemand eine Sprache wählt (15.5). Dieser Durchlauf meldet sich nirgends an
+   * und wählt nichts – es darf hier also keines geben. Das ist der eigentliche
    * Punkt der Prüfung: Wer die App nur benutzt, bekommt nichts gesetzt, und
    * ein Cookie, das schon vor der Anmeldung käme, wäre eine Wiedererkennung
    * ohne Anlass.

@@ -3,6 +3,7 @@ import { setMapsPreference } from "@/lib/db/accounts";
 import { userFromRequest } from "@/lib/auth/session";
 import { isMapsPreference } from "@/lib/maps-preference";
 import { withLogging } from "@/lib/log";
+import { t } from "@/i18n";
 
 /**
  * Die bevorzugte Karten-App am Konto ablegen (ToDo 11.3a).
@@ -21,19 +22,19 @@ import { withLogging } from "@/lib/log";
 async function putHandler(request: Request) {
   const user = userFromRequest(request);
   if (!user) {
-    return NextResponse.json({ error: "Nicht angemeldet." }, { status: 401 });
+    return NextResponse.json({ error: t("api.notSignedIn") }, { status: 401 });
   }
 
   let body: Record<string, unknown>;
   try {
     body = (await request.json()) as Record<string, unknown>;
   } catch {
-    return NextResponse.json({ error: "Ungültige Anfrage." }, { status: 400 });
+    return NextResponse.json({ error: t("api.invalidRequest") }, { status: 400 });
   }
 
   const preference = body.preference;
   if (!isMapsPreference(preference)) {
-    return NextResponse.json({ error: "Unbekannte Karten-App." }, { status: 400 });
+    return NextResponse.json({ error: t("api.unknownMapsApp") }, { status: 400 });
   }
 
   setMapsPreference(user.id, preference);

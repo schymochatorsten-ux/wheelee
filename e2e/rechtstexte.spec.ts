@@ -68,9 +68,10 @@ test.describe("Rechtstexte", () => {
     //    genau das übersehen Generatoren.
     await expect(page.getByText(/tile\.openstreetmap\.org/u)).toBeVisible();
 
-    // 3. Dass Konto-Löschen noch fehlt, steht offen dabei statt zu suggerieren,
-    //    es ginge schon.
-    await expect(page.getByText(/nicht in der App selbst löschen/u)).toBeVisible();
+    // 3. Löschen und Auskunft gibt es in der App (seit 11.7); die Erklärung
+    //    darf nicht mehr das Gegenteil behaupten und nennt, was ohne Konto bleibt.
+    await expect(page.getByText(/Mit Konto geht beides in der App selbst/u)).toBeVisible();
+    await expect(page.getByText(/nicht in der App selbst löschen/u)).toHaveCount(0);
   });
 
   test("erfinden keine Betreiberangaben, wenn keine hinterlegt sind", async ({ page }) => {

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useT } from "@/i18n/context";
 import type { ParkingSpot } from "@/lib/types";
 import { FeedbackForm } from "./FeedbackForm";
 
@@ -27,6 +28,7 @@ export function FeedbackButton({
   accountEmail = null,
   variant = "primary",
 }: FeedbackButtonProps) {
+  const t = useT();
   const [open, setOpen] = useState(false);
   const opener = useRef<HTMLButtonElement>(null);
   const dialog = useRef<HTMLDivElement>(null);
@@ -60,7 +62,7 @@ export function FeedbackButton({
   return (
     <>
       <button ref={opener} type="button" onClick={() => setOpen(true)} className={className}>
-        {spot ? "Fehler zu diesem Parkplatz melden" : "Fehler melden oder Vorschlag schicken"}
+        {spot ? t("feedback.reportSpot") : t("feedback.reportOrSuggest")}
       </button>
 
       {open && (
@@ -83,12 +85,12 @@ export function FeedbackButton({
           >
             <div className="flex items-start gap-3">
               <h2 id="feedback-dialog-titel" className="flex-1 text-lg font-semibold">
-                Rückmeldung
+                {t("feedback.title")}
               </h2>
               <button
                 type="button"
                 onClick={close}
-                aria-label="Rückmeldung schließen"
+                aria-label={t("feedback.close")}
                 className="-mt-1 -mr-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-2xl text-neutral-500 hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:hover:bg-neutral-800"
               >
                 ×
@@ -96,8 +98,7 @@ export function FeedbackButton({
             </div>
 
             <p className="mt-1 mb-4 text-sm text-neutral-600 dark:text-neutral-400">
-              Rückmeldungen sind die einzige Quelle, die bemerkt, wenn ein Parkplatz nicht mehr
-              existiert oder an der falschen Stelle liegt.
+              {t("feedback.intro")}
             </p>
 
             <FeedbackForm

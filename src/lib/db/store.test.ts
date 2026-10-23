@@ -11,6 +11,7 @@ import {
   createSession,
   deleteSession,
   findAccountByEmail,
+  setLanguage,
   setMapsPreference,
 } from "./accounts";
 import {
@@ -133,6 +134,29 @@ describe("Karten-App am Konto (ToDo 11.3a)", () => {
     setMapsPreference(konto!.id, null);
 
     expect(findAccountByEmail("jemand@example.de")?.mapsPreference).toBeNull();
+  });
+});
+
+describe("Sprache am Konto (ToDo 15.5)", () => {
+  it("ist bei einem neuen Konto leer – dann gilt Cookie oder Browsersprache", () => {
+    const konto = createAccount("jemand@example.de", "ein gutes langes Passwort");
+    expect(konto?.language).toBeNull();
+  });
+
+  it("merkt sich die Wahl und gibt sie bei Anmeldung und Sitzung zurück", () => {
+    const konto = createAccount("jemand@example.de", "ein gutes langes Passwort");
+    setLanguage(konto!.id, "de");
+
+    expect(authenticate("jemand@example.de", "ein gutes langes Passwort")?.language).toBe("de");
+    expect(accountForSession(createSession(konto!.id))?.language).toBe("de");
+  });
+
+  it("lässt die Karten-App unberührt", () => {
+    const konto = createAccount("jemand@example.de", "ein gutes langes Passwort");
+    setMapsPreference(konto!.id, "waze");
+    setLanguage(konto!.id, "de");
+
+    expect(findAccountByEmail("jemand@example.de")?.mapsPreference).toBe("waze");
   });
 });
 

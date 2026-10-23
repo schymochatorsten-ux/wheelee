@@ -143,6 +143,35 @@ const MIGRATIONS: readonly string[] = [
   -- leeren Browser-Speicher gilt.
   ALTER TABLE account ADD COLUMN maps_preference TEXT;
   `,
+
+  // 5 – Gespeicherte Parkplätze am Konto (ToDo 11.5).
+  `
+  CREATE TABLE favorite (
+    id         INTEGER PRIMARY KEY AUTOINCREMENT,
+    -- Ohne Fremdschlüssel auf den Bestand: Der liegt in Dateien, nicht in der
+    -- Datenbank (wie bei \`rating\`). Ein Platz, der beim Import verschwindet,
+    -- bleibt als Eintrag stehen und die Liste sagt das.
+    spot_id    TEXT NOT NULL,
+    account_id TEXT NOT NULL REFERENCES account(id) ON DELETE CASCADE,
+    created_at TEXT NOT NULL,
+
+    -- Wie bei \`rating\`: Doppeltes Speichern kann keine zweite Zeile erzeugen.
+    UNIQUE (spot_id, account_id)
+  );
+
+  -- Die Abfrage lautet immer „alle Favoriten dieses Kontos"; die
+  -- Eindeutigkeit oben hilft nur bei „Spalte spot_id zuerst".
+  CREATE INDEX favorite_account ON favorite(account_id);
+  `,
+
+  // 6 – Gewählte Sprache am Konto (ToDo 15.5).
+  `
+  -- Wie bei \`maps_preference\` (Migration 4) **ohne Prüfung der erlaubten
+  -- Werte**: Die Liste der Sprachen steht im Code (\`src/i18n/index.ts\`) und
+  -- wächst dort mit jeder Datei. Geprüft wird am Endpunkt; ein unbekannter Wert
+  -- fällt beim Lesen auf „nie gewählt" zurück.
+  ALTER TABLE account ADD COLUMN language TEXT;
+  `,
 ];
 
 let database: DatabaseSync | null = null;

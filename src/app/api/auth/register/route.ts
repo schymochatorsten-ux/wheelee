@@ -7,6 +7,7 @@ import { publicUser } from "@/lib/auth/user";
 import { allow, clientKey, LIMITS } from "@/lib/rate-limit";
 import { createSession } from "@/lib/db/accounts";
 import { withLogging } from "@/lib/log";
+import { t } from "@/i18n";
 
 /**
  * Konto anlegen (ToDo 11.1).
@@ -23,27 +24,21 @@ import { withLogging } from "@/lib/log";
  */
 async function postHandler(request: Request) {
   if (!allow(`register:${clientKey(request)}`, LIMITS.register)) {
-    return NextResponse.json(
-      { error: "Zu viele Versuche. Bitte später erneut probieren." },
-      { status: 429 },
-    );
+    return NextResponse.json({ error: t("api.tooManyAttempts") }, { status: 429 });
   }
 
   let body: { email?: unknown; password?: unknown };
   try {
     body = (await request.json()) as typeof body;
   } catch {
-    return NextResponse.json({ error: "Ungültige Anfrage." }, { status: 400 });
+    return NextResponse.json({ error: t("api.invalidRequest") }, { status: 400 });
   }
 
   const email = typeof body.email === "string" ? normalizeEmail(body.email) : "";
   const password = typeof body.password === "string" ? body.password : "";
 
   if (!looksLikeEmail(email)) {
-    return NextResponse.json(
-      { field: "email", error: "Diese E-Mail-Adresse sieht nicht richtig aus." },
-      { status: 400 },
-    );
+    return NextResponse.json({ field: "email", error: t("account.emailInvalid") }, { status: 400 });
   }
 
   const problem = passwordProblem(password);
@@ -64,7 +59,7 @@ async function postHandler(request: Request) {
     return NextResponse.json(
       {
         field: "email",
-        error: "Für diese Adresse gibt es schon ein Konto. Melde dich damit an.",
+        error: t("api.accountExists"),
       },
       { status: 409 },
     );
@@ -78,6 +73,7 @@ async function postHandler(request: Request) {
       email: account.email,
       isAdmin: isAdminEmail(account.email),
       mapsPreference: null,
+      language: null,
     }),
   });
   response.cookies.set(sessionCookie(createSession(account.id)));

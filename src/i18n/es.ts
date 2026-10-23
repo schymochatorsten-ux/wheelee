@@ -1,0 +1,481 @@
+import type { Messages } from "./index";
+
+/**
+ * Textos en español (ToDo 15.1) – **traducción automática previa**, aún no
+ * revisada por hablantes nativos (D-08, `Erledigt.md`; pendiente como ToDo
+ * 15.6). Mismas claves que `de.ts`; el tipo obliga a que no falte ninguna y
+ * `i18n.test.ts` comprueba que los marcadores coinciden.
+ *
+ * No están aquí: el aviso de responsabilidad, el aviso legal y la política de
+ * privacidad permanecen en alemán (lista de excepciones de D-08), ni tampoco
+ * los nombres de calles ni los datos.
+ *
+ * Las comillas son tipográficas («…», “…”) a propósito: las comillas ASCII
+ * cerrarían la cadena.
+ */
+export const es: Messages = {
+  "theme.group": "Apariencia",
+  "theme.dark": "Oscuro",
+  "theme.light": "Claro",
+  "theme.system": "Sistema",
+
+  "offline.notice": "Sin conexión – se muestran los últimos datos cargados.",
+
+  "restriction.nowApplies": "La restricción se aplica ahora",
+
+  "share.title": "Plaza de aparcamiento para personas con discapacidad {name}",
+  "share.text": "Plaza de aparcamiento para personas con discapacidad: {name}",
+  "share.textCount":
+    "Plaza de aparcamiento para personas con discapacidad: {name} ({count} plazas)",
+  "share.copied": "Enlace copiado",
+  "share.copyFailed": "No se pudo copiar",
+  "share.share": "Compartir plaza",
+  "share.copy": "Copiar enlace",
+
+  "legend.target": "Destino de la barra de navegación",
+  "legend.targetNote": "se muestra más grande: la más cercana o la que elijas",
+  "legend.others": "Otras plazas ofrecidas",
+  "legend.othersNote": "solo visibles mientras la selección está desplegada",
+  "legend.exact": "Plaza, posición exacta",
+  "legend.exactNote": "coordenada de la fuente",
+  "legend.approx": "Plaza, posición aproximada",
+  "legend.approxNote": "está en esta calle, el lugar exacto puede variar",
+  "legend.title": "Qué significan los colores",
+  "legend.clusters":
+    "Los círculos con un número agrupan varias plazas; al acercar el mapa se muestran una a una.",
+  "legend.close": "Cerrar leyenda",
+  "legend.open": "Leyenda de los colores del mapa",
+
+  "list.spacesOne": "{count} plaza",
+  "list.spacesMany": "{count} plazas",
+  "list.nearby": "Aparcamientos cercanos",
+  "list.nearest": "Aparcamientos más cercanos",
+  "list.noLocation":
+    "Sin acceso a tu ubicación, la distancia se cuenta desde el centro de la ciudad.",
+  "list.showDetails": "Mostrar detalles",
+  "list.unlocated": "Sin posición exacta ({count})",
+  "list.unlocatedNote":
+    "Para estas plazas la fuente no indica una dirección que se pueda situar con certeza. Por eso no aparecen en el mapa.",
+  "list.sources": "De dónde proceden los datos",
+  "list.officialOne": "{count} ciudad ofrece una lista oficial ({spaces} plazas).",
+  "list.officialMany": "{count} ciudades ofrecen una lista oficial ({spaces} plazas).",
+  "list.crowdsourcedOne":
+    "Para {count} ciudad más no existe ninguna; allí los datos proceden de OpenStreetMap.",
+  "list.crowdsourcedMany":
+    "Para {count} ciudades más no existe ninguna; allí los datos proceden de OpenStreetMap.",
+  "list.osmCredit":
+    "Representación del mapa y la mayoría de los datos de aparcamiento: {link}, Open Database License (ODbL). Las fuentes oficiales se indican abajo, una por ciudad.",
+  "list.osmLink": "© colaboradores de OpenStreetMap",
+  "list.bkgCredit": "Nombres y claves de municipios: © {bkg} (2026) {license}.",
+  "list.osmNote":
+    "Los datos de OpenStreetMap muestran sobre todo aparcamientos con plazas reservadas, no plazas sueltas junto a la acera, y están incompletos: que falte una entrada no significa que no haya plaza para personas con discapacidad.",
+  "list.allCities": "Las {count} ciudades con su fuente",
+  "list.cityCounts": ": {spots} ubicaciones, {spaces} plazas",
+  "list.source": "Fuente: {source}",
+  "list.licenseMissing": " · licencia no indicada",
+  "list.dataFrom": "Datos del {date}",
+
+  "details.city": "Ciudad",
+  "details.district": "Barrio",
+  "details.close": "Cerrar detalles",
+  "details.note": "Nota",
+  "details.spaces": "Plazas",
+  "details.maxStay": "Estancia máxima",
+  "details.only": "Solo",
+  "details.distance": "Distancia",
+  "details.noLocation": "Ubicación no compartida",
+  "details.restrictionOff":
+    "La restricción {strong}: la plaza se puede usar libremente ahora mismo.",
+  "details.restrictionOffStrong": "no se aplica en este momento",
+  "details.restrictionOn": "La restricción se aplica {strong}.",
+  "details.restrictionOnStrong": "en este momento",
+  "details.confirmed":
+    "{strong}: el ayuntamiento y OpenStreetMap sitúan esta plaza en el mismo lugar.",
+  "details.confirmedStrong": "Confirmada por dos fuentes",
+  "details.approx":
+    "La posición solo se conoce de forma aproximada: la plaza está en esta calle, el lugar exacto puede variar.",
+  "details.source": "Fuente: {source}",
+
+  "maps.auto": "Automático (según el dispositivo)",
+  "maps.google.open": "Abrir en Google Maps",
+  "maps.google.short": "Google Maps",
+  "maps.apple.open": "Abrir en Apple Maps",
+  "maps.apple.short": "Apple Maps",
+  "maps.osm.open": "Abrir en OpenStreetMap",
+  "maps.osm.short": "OpenStreetMap",
+  "maps.here.open": "Abrir en HERE WeGo",
+  "maps.here.short": "HERE WeGo",
+  "maps.waze.open": "Abrir en Waze",
+  "maps.waze.short": "Waze",
+  "maps.geo.open": "Abrir en la aplicación de mapas predeterminada",
+  "maps.geo.short": "App predeterminada",
+  "maps.google.navigate": "Navegación: abrir Google Maps",
+  "maps.apple.navigate": "Navegación: abrir Apple Maps",
+  "maps.osm.navigate": "Navegación: abrir OpenStreetMap",
+  "maps.here.navigate": "Navegación: abrir HERE WeGo",
+  "maps.waze.navigate": "Navegación: abrir Waze",
+  "maps.geo.navigate": "Navegación: abrir la aplicación de mapas predeterminada",
+  "maps.fallback.navigate": "Navegación: abrir aplicación de mapas",
+  "maps.fallback.open": "Abrir en aplicación de mapas",
+  "maps.fallback.short": "App de mapas",
+
+  "settings.appearance": "Apariencia",
+  "settings.appearanceNote":
+    "Oscuro es el ajuste predeterminado: la app se usa a menudo en el coche y de noche.",
+  "settings.language": "Idioma",
+  "settings.languageNote":
+    "Se sugiere primero el idioma de tu navegador. Con una cuenta, tu elección vale en todos tus dispositivos.",
+  "settings.languageChoose": "Elegir idioma",
+  "settings.languageUnreviewed":
+    "Las traducciones son automáticas y aún no las han revisado hablantes nativos.",
+  "settings.mapsApp": "Aplicación de mapas para navegar",
+  "settings.mapsAppNote":
+    "Con qué se abre «Iniciar navegación». Si no eliges, depende del dispositivo; aquí sería {detected}.",
+  "settings.mapsAppChoose": "Elegir aplicación de mapas",
+  "settings.mapsAppDeviceOnly": "La elección solo vale en este dispositivo, incluso con cuenta.",
+  "offline.heading": "Sin conexión: llevar los aparcamientos contigo",
+  "offline.note":
+    "Descarga en este dispositivo los datos de aparcamiento de una ciudad para que estén completos en garajes y zonas sin cobertura. Las imágenes del mapa no se incluyen: sin conexión el mapa queda en gris, pero los marcadores y la lista funcionan.",
+  "offline.cityLabel": "Ciudad",
+  "offline.download": "Descargar",
+  "offline.downloading": "Cargando …",
+  "offline.refresh": "Actualizar",
+  "offline.remove": "Borrar",
+  "offline.removeLabel": "Borrar {name} de este dispositivo",
+  "offline.refreshLabel": "Actualizar {name}",
+  "offline.saved": "{name} ya está guardada en este dispositivo.",
+  "offline.removed": "{name} se ha borrado de este dispositivo.",
+  "offline.failed": "No se pudo cargar. Inténtalo de nuevo cuando tengas conexión.",
+  "offline.unsupported": "Este navegador no puede guardar datos para usar sin conexión.",
+  "offline.none": "Aún no hay ninguna ciudad guardada en este dispositivo.",
+  "offline.listLabel": "Guardadas en este dispositivo",
+  "offline.entry": "{count} ubicaciones, {size} ocupados",
+  "offline.dataDate": "Datos del: {date}",
+  "offline.savedDate": "Descargado el {date}",
+  "offline.staleData":
+    "Los datos tienen más de seis meses. Las plazas pueden haber cambiado: comprueba in situ.",
+  "offline.staleCopy": "La copia tiene más de un mes. Actualízala cuando tengas conexión.",
+  "offline.total": "Espacio ocupado en total: {size}",
+  "settings.feedback": "Notificar un error o enviar una sugerencia",
+  "settings.feedbackNote":
+    "¿Algo no es correcto? ¿Falta una plaza o ya no existe? Los comentarios son la única fuente que detecta estos cambios. Si quieres, puedes indicar una dirección de correo: así podremos responderte.",
+  "settings.account": "Cuenta",
+  "settings.accountNote":
+    "Opcional. La app funciona por completo sin cuenta, también para notificar errores. Una cuenta solo recuerda que tus comentarios van juntos.",
+  "settings.legal": "Información legal",
+  "settings.imprint": "Aviso legal (Impressum)",
+  "settings.privacy": "Política de privacidad",
+
+  "account.emailInvalid": "Esta dirección de correo no parece correcta.",
+  "account.passwordTooShort": "La contraseña debe tener al menos {min} caracteres.",
+  "account.failed": "No ha funcionado. Inténtalo de nuevo más tarde.",
+  "account.offline": "Sin conexión. Inténtalo de nuevo más tarde.",
+  "account.logoutFailed": "No se pudo cerrar la sesión: no hay conexión.",
+  "account.signedInAs": "Sesión iniciada como {email}",
+  "account.admin": "Administrador",
+  "account.storedData":
+    "Tu cuenta solo guarda la dirección de correo y la contraseña cifrada. Tu ubicación sigue sin guardarse, tampoco con cuenta.",
+  "account.logout": "Cerrar sesión",
+  "account.changePassword": "Cambiar contraseña",
+  "account.oldPassword": "Contraseña actual",
+  "account.newPassword": "Contraseña nueva",
+  "account.changePasswordNote":
+    "Se cerrará la sesión en todos los demás dispositivos. Este dispositivo seguirá con la sesión iniciada.",
+  "account.passwordChanged": "Contraseña cambiada. Todas las demás sesiones se han cerrado.",
+  "account.cancel": "Cancelar",
+  "account.export": "Descargar mis datos",
+  "account.exportNote":
+    "Un archivo JSON con todo lo que se guarda de tu cuenta: dirección de correo, fecha de alta, valoraciones, plazas guardadas, tus propios comentarios y la elección de aplicación de mapas e idioma.",
+  "myRatings.open": "Mis valoraciones",
+  "myRatings.close": "Ocultar mis valoraciones",
+  "myRatings.intro":
+    "Los votos que has emitido, el más reciente primero. Retirar el voto lo quita del recuento.",
+  "myRatings.none": "Aún no has valorado ninguna plaza.",
+  "myRatings.loading": "Cargando …",
+  "myRatings.loadFailed": "No se pudieron cargar tus valoraciones.",
+  "myRatings.date": "el {date}",
+  "myRatings.notInStock": "Ya no figura en los datos",
+  "myRatings.notInStockNote": "No estaba en la última importación. Aun así puedes retirar tu voto.",
+  "myRatings.showOnMap": "Mostrar en el mapa",
+  "myRatings.withdraw": "Retirar",
+  "myRatings.withdrawLabel": "Retirar el voto sobre {name}",
+  "myRatings.withdrawFailed": "No se pudo retirar el voto.",
+  "myRatings.showLabel": "Mostrar {name} en el mapa",
+  "favorite.save": "Guardar plaza",
+  "favorite.saved": "Guardada – quitar",
+  "favorite.needAccount": "Para guardar necesitas una cuenta (Ajustes).",
+  "favorite.failed": "No se pudo guardar la plaza.",
+  "favorite.removeFailed": "No se pudo quitar la plaza.",
+  "favorite.offline": "Sin conexión: el cambio no se ha guardado.",
+  "myFavorites.open": "Plazas guardadas",
+  "myFavorites.close": "Ocultar plazas guardadas",
+  "myFavorites.intro":
+    "Las plazas que has guardado, la última guardada primero. La distancia es en línea recta desde tu ubicación.",
+  "myFavorites.none":
+    "Aún no has guardado nada. En la vista de detalle de una plaza encontrarás el botón «Guardar plaza».",
+  "myFavorites.loadFailed": "No se pudieron cargar tus plazas guardadas.",
+  "myFavorites.distance": "a {distance}",
+  "myFavorites.notInStock": "Ya no figura en los datos",
+  "myFavorites.notInStockNote": "No estaba en la última importación. Puedes quitar la entrada.",
+  "myFavorites.showOnMap": "Mostrar en el mapa",
+  "myFavorites.showLabel": "Mostrar {name} en el mapa",
+  "myFavorites.remove": "Quitar",
+  "myFavorites.removeLabel": "Quitar {name} de las plazas guardadas",
+  "account.delete": "Eliminar cuenta",
+  "account.deleteWarning":
+    "Se eliminarán la cuenta, todas las sesiones y tus valoraciones. Tus comentarios se conservan como avisos, pero pierden el vínculo contigo; la dirección de respuesta indicada en ellos se elimina. Esto no se puede deshacer.",
+  "account.deletePassword": "Tu contraseña, para confirmar",
+  "account.deleteConfirm": "Eliminar la cuenta definitivamente",
+  "account.modeGroup": "Iniciar sesión o crear cuenta",
+  "account.login": "Iniciar sesión",
+  "account.register": "Crear cuenta",
+  "account.email": "Dirección de correo",
+  "account.password": "Contraseña",
+  "account.passwordHelp":
+    "Al menos {min} caracteres. La longitud cuenta más que los caracteres especiales: una frase que puedas recordar es mejor que {example}.",
+  "account.forgotNote":
+    "Una contraseña olvidada no se puede restablecer por ahora: todavía no hay envío de correo. Además, no hace falta una cuenta para usar la app.",
+
+  "feedback.reportSpot": "Notificar un error sobre esta plaza",
+  "feedback.reportOrSuggest": "Notificar un error o enviar una sugerencia",
+  "feedback.title": "Comentarios",
+  "feedback.close": "Cerrar comentarios",
+  "feedback.intro":
+    "Los comentarios son la única fuente que detecta cuándo una plaza ya no existe o está en el lugar equivocado.",
+  "feedback.kind.fehler": "Notificar un error",
+  "feedback.kind.vorschlag": "Sugerencia de mejora",
+  "feedback.contactHint":
+    "Solo podemos responderte si indicas una dirección: para preguntas o cuando el error esté corregido. Sin dirección tu aviso también ayuda, pero no sabrás nada de nosotros.",
+  "feedback.contactPrivacy":
+    "La dirección solo se usa para responder a este aviso, no se cede a terceros y se elimina junto con el aviso, como máximo a los dos años.",
+  "feedback.errorKind": "Elige de qué se trata.",
+  "feedback.errorMessageShort": "Describe con unas palabras qué no es correcto.",
+  "feedback.errorMessageLong": "Por favor, acórtalo: como máximo {max} caracteres.",
+  "feedback.errorEmail": "Esta dirección de correo no parece correcta. Si no, deja el campo vacío.",
+  "feedback.offline": "Sin conexión. El aviso no se ha enviado; inténtalo de nuevo más tarde.",
+  "feedback.thanks": "Gracias: el aviso ha llegado.",
+  "feedback.willReply": "Lo revisaremos y te escribiremos por correo si hay algo que decir.",
+  "feedback.noReply":
+    "No has indicado ninguna dirección, así que no recibirás respuesta; tu aviso ayuda igualmente.",
+  "feedback.again": "Notificar algo más",
+  "feedback.done": "Listo",
+  "feedback.whatAbout": "¿De qué se trata?",
+  "feedback.kindGroup": "Tipo de comentario",
+  "feedback.reportAbout": "Aviso sobre:",
+  "feedback.yourSuggestion": "Tu sugerencia",
+  "feedback.whatIsWrong": "¿Qué no es correcto?",
+  "feedback.placeholderSuggestion": "Por ejemplo: sería útil poder elegir un radio de 2 km.",
+  "feedback.placeholderError":
+    "Por ejemplo: la plaza de Bahnhofstraße 4 ya no existe, ahora hay un punto de carga.",
+  "feedback.charsLeft": "Quedan {count} caracteres.",
+  "feedback.optional": "(opcional)",
+  "feedback.emailPlaceholder": "nombre@ejemplo.es",
+  "feedback.fromAccount": "Tomada de tu cuenta.",
+  "feedback.sending": "Enviando …",
+  "feedback.submit": "Enviar",
+  "feedback.cancel": "Cancelar",
+
+  "rating.saveFailed": "No se pudo guardar la valoración.",
+  "rating.offline": "Sin conexión: la valoración no se ha guardado.",
+  "rating.question": "¿Sigue existiendo esta plaza?",
+  "rating.exists": "Existe",
+  "rating.gone": "Ya no existe",
+  "rating.lastConfirmed": "Última confirmación:",
+  "rating.lastGone": "Último aviso de que ya no existe:",
+  "rating.needAccount":
+    "Para valorar necesitas una cuenta, en «Ajustes → Cuenta». Puedes ver los datos también sin ella.",
+  "rating.voted": "Has valorado. Si vuelves a pulsar, se anula; el otro botón lo invierte.",
+  "rating.votes": "{label}, {count} votos",
+
+  "admin.unauthorized": "No has iniciado sesión o no tienes permiso.",
+  "admin.noConnection": "Sin conexión.",
+  "admin.reload": "Recargar",
+  "admin.loading": "Cargando …",
+
+  "reported.loadFailed": "No se pudo cargar la lista de revisión.",
+  "reported.spotGone": "La plaza {id} ya no figura en los datos.",
+  "reported.title": "Avisadas: «ya no existe»",
+  "reported.introOne":
+    "Plazas con al menos {count} aviso de cuentas distintas. Las valoraciones no cambian los datos: es una lista para revisar.",
+  "reported.introMany":
+    "Plazas con al menos {count} avisos de cuentas distintas. Las valoraciones no cambian los datos: es una lista para revisar.",
+  "reported.minimum": "Desde cuántos avisos",
+  "reported.minimumAll": "1 (todas)",
+  "reported.none": "Ninguna plaza tiene tantos avisos. Esa es la buena noticia.",
+  "reported.goneCount": "{count}× ya no existe",
+  "reported.existsCount": "{count}× confirmada",
+  "reported.reasonLabel": "Motivo",
+  "reported.reason.lastThreeGone":
+    "Los tres últimos votos: ya no existe, aunque pesen más confirmaciones antiguas.",
+  "reported.reason.reports": "{count} cuentas la han notificado como inexistente.",
+  "reported.weighted": "Ponderado: {gone} ya no existe · {exists} confirmada",
+  "reported.weightedHint":
+    "Ponderado significa: los votos antiguos cuentan menos (una cuarta parte tras dos años) y las cuentas que a menudo coinciden con las demás, hasta el doble. Solo ordena; no cambia ningún dato.",
+  "reported.notInStock": "Ya no figura en los datos",
+  "reported.place": "Lugar",
+  "reported.spaces": " · {count} plazas",
+  "reported.lastReported": "Último aviso",
+  "reported.lastConfirmed": "Última confirmación",
+  "reported.showOnMap": "Plaza en el mapa",
+  "reported.confirmedGone": "No estaba en la última importación: el aviso queda así confirmado.",
+
+  "feedback.status.neu": "Nuevo",
+  "feedback.status.in_arbeit": "En curso",
+  "feedback.status.umgesetzt": "Resuelto",
+  "feedback.status.verworfen": "Descartado",
+
+  "feedbackAdmin.loadFailed": "No se pudieron cargar los comentarios.",
+  "feedbackAdmin.changeFailed": "No se pudo cambiar.",
+  "feedbackAdmin.noteFailed": "No se pudo guardar la nota.",
+  "feedbackAdmin.confirmDelete": "¿Eliminar definitivamente el aviso n.º {id}?\n\n«{preview}…»",
+  "feedbackAdmin.deleteFailed": "No se pudo eliminar.",
+  "feedbackAdmin.title": "Comentarios",
+  "feedbackAdmin.countsOne": "{total} aviso, de los cuales {neu} nuevos y {done} resueltos.",
+  "feedbackAdmin.countsMany": "{total} avisos, de los cuales {neu} nuevos y {done} resueltos.",
+  "feedbackAdmin.filterKind": "Tipo",
+  "feedbackAdmin.filterStatus": "Estado",
+  "feedbackAdmin.all": "Todos",
+  "feedbackAdmin.empty": "No hay avisos, al menos con este filtro.",
+  "feedbackAdmin.replyTo": "Responder a",
+  "feedbackAdmin.addressRemoved":
+    "Dirección eliminada tras dos años ({date}): el aviso quedó sin tramitar todo ese tiempo.",
+  "feedbackAdmin.account": "Cuenta",
+  "feedbackAdmin.browser": "Navegador",
+  "feedbackAdmin.changed": "Modificado",
+  "feedbackAdmin.markDone": "Marcar como resuelto",
+  "feedbackAdmin.reopen": "Volver a «nuevo»",
+  "feedbackAdmin.discard": "Descartar",
+  "feedbackAdmin.delete": "Eliminar",
+  "feedbackAdmin.addNote": "Añadir nota",
+  "feedbackAdmin.note": "Nota interna",
+  "feedbackAdmin.saveNote": "Guardar nota",
+
+  "search.destination": "Destino:",
+  "search.change": "Cambiar",
+  "search.clearDestination": "Quitar destino",
+  "search.where": "¿A dónde quieres ir?",
+  "search.placeholder": "Dirección o lugar",
+  "search.inputLabel": "Destino: dirección o lugar",
+  "search.clearInput": "Borrar texto",
+  "search.close": "Cerrar la búsqueda de destino",
+  "search.searching": "Buscando …",
+  "search.empty":
+    "No se ha encontrado nada. Prueba a escribirlo de otra forma o añade la localidad.",
+  "search.unavailable": "La búsqueda de lugares no está disponible ahora.",
+  "search.moreLetters": "Unas letras más …",
+  "search.retry": "Reintentar",
+  "search.recent": "Búsquedas recientes",
+  "search.suggestions": "Sugerencias",
+
+  "nearest.spaces": "{count} plazas",
+  "nearest.approx": "posición aproximada",
+  "nearest.backToMe": "Centrar el mapa en mi ubicación",
+  "nearest.spotAt": "Plaza cerca de {place}",
+  "nearest.nearest": "Plaza para personas con discapacidad más cercana",
+  "nearest.chosen": "Destino elegido",
+  "nearest.showOnMap": "Mostrar en el mapa",
+  "nearest.closeSuggestion": "Cerrar la sugerencia y liberar el mapa",
+  "nearest.details": "Detalles",
+  "nearest.radius": "Radio",
+  "nearest.nothingInRadius": "nada dentro del radio",
+  "nearest.inRadius": "{count} dentro del radio",
+  "nearest.closeSelection": "Cerrar la selección",
+  "nearest.more": "Más cerca de ti ({count})",
+  "nearest.withinRadius": "Dentro del radio ({radius})",
+  "nearest.beyond": "Más lejos",
+  "nearest.chooseHint": "elegir como destino y mostrar en el mapa",
+
+  // Kurz, weil der Titel in die Kopfzeile des Telefons passen muss; „plaza PMR“
+  // wäre kürzer, ist aber nur Einheimischen geläufig (15.6: Muttersprachler fragen).
+  "app.title": "Aparcamiento adaptado",
+  "view.map": "Mapa",
+  "view.list": "Lista",
+  "view.settings": "Ajustes",
+  "view.feedback": "Comentarios",
+  "view.choose": "Elegir vista",
+  "map.loading": "Cargando el mapa …",
+  "map.locating": "Buscando tu ubicación …",
+  "map.nearestSpot": "Plaza más cercana: {name} – {distance}",
+  "map.noneNearby": "No hay ninguna plaza localizada cerca.",
+  "map.retryLocation": "Volver a intentar la ubicación",
+  "map.hintCityLevel": "Acerca el mapa al tamaño de una ciudad para ver las plazas.",
+  "map.hintTruncated": "No se han cargado todas las plazas: acerca más el mapa.",
+
+  "geo.denied":
+    "Has rechazado el acceso a la ubicación. El mapa muestra el centro de la ciudad; todas las plazas siguen visibles.",
+  "geo.unavailable":
+    "Tu dispositivo no pudo determinar la ubicación. El mapa muestra el centro de la ciudad; todas las plazas siguen visibles.",
+  "geo.timeout":
+    "Determinar la ubicación ha tardado demasiado. Puedes volver a intentarlo o usar el mapa así.",
+
+  "map.clusterOne": "{count} plaza en esta zona, toca para separarlas",
+  "map.clusterMany": "{count} plazas en esta zona, toca para separarlas",
+  "map.marker": "{label}, {spaces}",
+  "map.markerTarget": "{label}, {spaces}, destino seleccionado",
+  "map.markerCandidate": "{label}, {spaces}, ofrecida como opción",
+  "map.label": "Mapa de plazas de aparcamiento para personas con discapacidad",
+  "map.attribution":
+    '&copy; colaboradores de <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  "map.yourLocation": "Tu ubicación",
+  "map.destination": "Destino: {label}",
+
+  "meta.title": "wheelee – aparcamiento para personas con discapacidad",
+  "meta.description":
+    "Encuentra la plaza pública de aparcamiento para personas con discapacidad más cercana en un mapa: en el móvil y sin registrarte.",
+
+  "error.title": "Algo ha salido mal",
+  "error.text":
+    "La app no pudo construir esta vista. No es culpa tuya. A menudo basta con un segundo intento; los datos de aparcamiento no se ven afectados.",
+  "error.retry": "Intentarlo de nuevo",
+  "error.backToMap": "Volver al mapa",
+  "globalError.title": "wheelee se ha bloqueado",
+  "globalError.text":
+    "La app no pudo iniciarse. No es culpa tuya. Si sigue igual tras un segundo intento, normalmente ayuda recargar la página.",
+
+  "account.passwordTooLong": "La contraseña puede tener como máximo {max} caracteres.",
+  "stay.minutes": "minutos",
+  "stay.hour": "hora",
+  "stay.hours": "horas",
+
+  "legal.updated": "Fecha: {date}",
+  "legal.missingTitle": "Faltan estos datos",
+  "legal.missingText":
+    "Los datos del responsable no están configurados en este servidor. Es un error de configuración, no un descuido en el texto: la página no se inventa nada.",
+  "legal.missingHow":
+    "Hay que definir {name}, {address} y {email}; la plantilla está en {template}.",
+
+  "api.notSignedIn": "No has iniciado sesión.",
+  "api.invalidRequest": "Solicitud no válida.",
+  "api.unknownMapsApp": "Aplicación de mapas desconocida.",
+  "api.unknownLanguage": "Idioma desconocido.",
+  "api.invalidNumber": "Número no válido.",
+  "api.unknownStatus": "Estado desconocido.",
+  "api.notFoundOrNoChange": "No se ha encontrado o no hay nada que cambiar.",
+  "api.notFound": "No se ha encontrado.",
+  "api.tooManyLogins":
+    "Demasiados intentos de inicio de sesión. Inténtalo de nuevo en unos minutos.",
+  "api.credentialsRequired": "Introduce la dirección de correo y la contraseña.",
+  "api.tooManyPasswordChanges":
+    "Demasiados intentos de cambiar la contraseña. Inténtalo de nuevo en unos minutos.",
+  "api.passwordRequired": "Introduce la contraseña.",
+  "api.passwordWrong": "La contraseña no es correcta.",
+  "api.oldPasswordRequired": "Introduce la contraseña actual.",
+  "api.oldPasswordWrong": "La contraseña actual no es correcta.",
+  "api.credentialsWrong": "La dirección de correo o la contraseña no son correctas.",
+  "api.tooManyAttempts": "Demasiados intentos. Inténtalo de nuevo más tarde.",
+  "api.accountExists": "Ya existe una cuenta con esta dirección. Inicia sesión con ella.",
+  "api.searchUnavailable": "La búsqueda no está disponible ahora.",
+  "api.unknownSpot": "ID de plaza desconocido.",
+  "api.unknownCity": "Ciudad desconocida.",
+  "api.ratingNeedsAccount": "Para valorar necesitas una cuenta.",
+  "api.favoriteNeedsAccount": "Para guardar plazas necesitas una cuenta.",
+  "api.tooManyFavorites": "Demasiados cambios en poco tiempo. Espera un momento.",
+  "api.favoritesFull": "Has alcanzado el número máximo de plazas guardadas. Quita primero una.",
+  "api.tooManyRatings": "Demasiadas valoraciones en poco tiempo. Espera un momento.",
+  "api.unknownRating": "Valoración desconocida.",
+
+  "legal.germanOnly":
+    "El aviso legal (Impressum) y la política de privacidad solo existen en alemán, y la versión alemana es la que vale.",
+  "disclaimer.germanOnly":
+    "El aviso de responsabilidad de abajo solo existe en alemán. In situ, valen siempre las señales y la señalización, no la app.",
+};

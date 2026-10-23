@@ -1,5 +1,13 @@
 import { db, now } from "./sqlite";
 import type { RatingSummary, RatingVote } from "../types";
+import {
+  accountFactors,
+  assessSpot,
+  reportReasons,
+  type ReportReason,
+  type SpotAssessment,
+  type VoteRecord,
+} from "../ratings/trust";
 
 /**
  * Bewertungen: „Existiert" und „Existiert nicht mehr" (ToDos 8.1–8.7).
@@ -89,6 +97,44 @@ export function ownVote(spotId: string, accountId: string): OwnVote | null {
   return row ? { vote: row.vote, at: row.at } : null;
 }
 
+/** Eine abgegebene Stimme mit Parkplatz – für die Übersicht im Konto (ToDo 11.4). */
+export interface OwnRating extends OwnVote {
+  spotId: string;
+}
+
+/**
+ * Alle Stimmen **eines** Kontos, die jüngste zuerst.
+ *
+ * Der Parameter ist die Konto-Kennung aus der Sitzung, nie etwas aus der
+ * Anfrage – es gibt keinen Weg, damit fremde Stimmen abzurufen.
+ */
+export function ownRatings(accountId: string): OwnRating[] {
+  const rows = db()
+    .prepare(
+      `SELECT spot_id AS spotId, vote, COALESCE(updated_at, created_at) AS at
+         FROM rating WHERE account_id = ?
+        ORDER BY COALESCE(updated_at, created_at) DESC, spot_id`,
+    )
+    .all(accountId) as unknown as OwnRating[];
+
+  return rows.map((row) => ({ spotId: row.spotId, vote: row.vote, at: row.at }));
+}
+
+/**
+ * Die eigene Stimme zurückziehen, in welche Richtung sie auch ging.
+ *
+ * Anders als `castVote` ohne Umschalten: Wer in der Übersicht „Zurückziehen"
+ * tippt, will die Stimme los sein, nicht die Gegenrichtung abgeben.
+ * Wirkungslos (`false`), wenn es keine gibt – so bleibt ein doppeltes
+ * Antippen folgenlos.
+ */
+export function withdrawVote(spotId: string, accountId: string): boolean {
+  const result = db()
+    .prepare("DELETE FROM rating WHERE spot_id = ? AND account_id = ?")
+    .run(spotId, accountId);
+  return Number(result.changes) > 0;
+}
+
 /**
  * Stimme abgeben, umdrehen oder zurücknehmen.
  *
@@ -141,6 +187,49 @@ export function castVote(spotId: string, accountId: string, vote: RatingVote): V
  * Die Liste ändert **nichts** an den Daten (8.6). Sie sagt einem Menschen,
  * wo er nachsehen sollte.
  */
+/** Ein Parkplatz der Prüfliste, mit gewichteten Summen und Begründung (ToDo 11.6). */
+export interface ReportedSpot extends SpotAssessment {
+  spotId: string;
+  reasons: ReportReason[];
+}
+
+/**
+ * Die Prüfliste mit Vertrauensstufen (11.6).
+ *
+ * **Die Auswahl ist unverändert:** Wer mindestens `minimum` Meldungen hat,
+ * steht drauf – die Gewichtung sortiert und erklärt nur, sie schließt nichts
+ * aus. Alle Stimmen werden einmal gelesen, weil der Konto-Faktor aus der
+ * Übereinstimmung über **alle** Parkplätze entsteht.
+ *
+ * Ändert nichts an den Parkplatzdaten (8.6).
+ */
+export function reportedSpots(minimum = 2, at: Date = new Date()): ReportedSpot[] {
+  const rows = db()
+    .prepare(
+      `SELECT spot_id AS spotId, account_id AS accountId, vote,
+              COALESCE(updated_at, created_at) AS at
+         FROM rating`,
+    )
+    .all() as unknown as VoteRecord[];
+
+  const factors = accountFactors(rows);
+  const bySpot = new Map<string, VoteRecord[]>();
+  for (const row of rows) {
+    const list = bySpot.get(row.spotId);
+    if (list) list.push(row);
+    else bySpot.set(row.spotId, [row]);
+  }
+
+  const result: ReportedSpot[] = [];
+  for (const [spotId, votes] of bySpot) {
+    const assessment = assessSpot(votes, factors, at);
+    if (assessment.goneCount < minimum) continue;
+    result.push({ spotId, ...assessment, reasons: reportReasons(assessment, minimum) });
+  }
+
+  return result.sort((a, b) => b.goneCount - a.goneCount || a.spotId.localeCompare(b.spotId));
+}
+
 export function spotsReportedGone(minimum = 2): { spotId: string; goneCount: number }[] {
   const rows = db()
     .prepare(

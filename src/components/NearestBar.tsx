@@ -3,7 +3,9 @@
 import { useEffect, useState } from "react";
 import type { ParkingSpotWithDistance } from "@/lib/types";
 import { formatDistance } from "@/lib/geo";
-import { mapsLabel, mapsUrl, type MapsTarget } from "@/lib/navigation";
+import { useLocale, useT } from "@/i18n/context";
+import type { Locale, Translate } from "@/i18n";
+import { mapsNavigateLabel, mapsUrl, type MapsTarget } from "@/lib/navigation";
 import { spotTitle } from "@/lib/parking/display";
 import { SpotRow } from "./SpotRow";
 
@@ -68,10 +70,10 @@ function radiusLabel(meters: number): string {
 }
 
 /** Zusatzangaben einer Zeile: Entfernung, Stellplätze, Genauigkeit. */
-function spotMeta(spot: ParkingSpotWithDistance): string {
-  const parts = [formatDistance(spot.distanceMeters)];
-  if (spot.spotCount > 1) parts.push(`${spot.spotCount} Stellplätze`);
-  if (spot.geoAccuracy !== "house") parts.push("Position ungefähr");
+function spotMeta(spot: ParkingSpotWithDistance, t: Translate, locale: Locale): string {
+  const parts = [formatDistance(spot.distanceMeters, locale)];
+  if (spot.spotCount > 1) parts.push(t("nearest.spaces", { count: spot.spotCount }));
+  if (spot.geoAccuracy !== "house") parts.push(t("nearest.approx"));
   return parts.join(" · ");
 }
 
@@ -145,6 +147,8 @@ export function NearestBar({
   inRadiusCount = 0,
   onRadiusChange,
 }: NearestBarProps) {
+  const t = useT();
+  const locale = useLocale();
   /**
    * Geschlossen und aufgeklappt sind **Sitzungszustand**, bewusst nicht in
    * `localStorage`: Beim nächsten Öffnen ist der Vorschlag wieder die
@@ -197,12 +201,12 @@ export function NearestBar({
           <span className="text-blue-700 dark:text-blue-400">
             <PinIcon />
           </span>
-          {formatDistance(nearest!.distanceMeters)}
+          {formatDistance(nearest!.distanceMeters, locale)}
         </button>
         <button
           type="button"
           onClick={onBackToMe}
-          aria-label="Karte auf meinen Standort zentrieren"
+          aria-label={t("nearest.backToMe")}
           className={`${PANEL} ${ICON_BUTTON}`}
         >
           <LocateIcon />
@@ -237,26 +241,26 @@ export function NearestBar({
           <span className="min-w-0 flex-1">
             <span className="block truncate text-[10px] font-medium tracking-wide text-neutral-500 uppercase">
               {destinationLabel
-                ? `Parkplatz bei ${destinationLabel}`
+                ? t("nearest.spotAt", { place: destinationLabel })
                 : target === nearest
-                  ? "Nächster Behindertenparkplatz"
-                  : "Gewähltes Ziel"}
+                  ? t("nearest.nearest")
+                  : t("nearest.chosen")}
             </span>
             <span className="block truncate text-sm font-semibold">{spotTitle(target)}</span>
             <span className="block truncate text-xs text-neutral-600 dark:text-neutral-400">
-              {spotMeta(target)}
+              {spotMeta(target, t, locale)}
             </span>
           </span>
           <span aria-hidden="true" className="shrink-0 text-neutral-400">
             <PinIcon />
           </span>
-          <span className="sr-only">Auf der Karte zeigen</span>
+          <span className="sr-only">{t("nearest.showOnMap")}</span>
         </button>
 
         <button
           type="button"
           onClick={() => setClosed(true)}
-          aria-label="Vorschlag schließen und Karte freigeben"
+          aria-label={t("nearest.closeSuggestion")}
           className={ICON_BUTTON}
         >
           <CloseIcon />
@@ -271,7 +275,7 @@ export function NearestBar({
             rel="noopener noreferrer"
             className="flex min-h-11 flex-1 items-center justify-center rounded-lg bg-blue-700 px-3 text-center text-sm font-medium text-white transition-colors hover:bg-blue-800 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 focus-visible:outline-none"
           >
-            {mapsLabel(mapsTarget).replace("In ", "Navigation: ")}
+            {mapsNavigateLabel(mapsTarget)}
           </a>
         )}
         <button
@@ -279,12 +283,12 @@ export function NearestBar({
           onClick={() => onShowDetails(target)}
           className="min-h-11 shrink-0 rounded-lg px-2.5 text-sm font-medium text-neutral-700 transition-colors hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-neutral-300 dark:hover:bg-neutral-800"
         >
-          Details
+          {t("nearest.details")}
         </button>
         <button
           type="button"
           onClick={onBackToMe}
-          aria-label="Karte auf meinen Standort zentrieren"
+          aria-label={t("nearest.backToMe")}
           className={ICON_BUTTON}
         >
           <LocateIcon />
@@ -299,7 +303,7 @@ export function NearestBar({
       {destinationLabel && onRadiusChange && (
         <div className="mt-2 flex items-center gap-2">
           <span id="umkreis-label" className="text-[11px] text-neutral-500 uppercase">
-            Umkreis
+            {t("nearest.radius")}
           </span>
           <div
             role="radiogroup"
@@ -324,7 +328,9 @@ export function NearestBar({
             ))}
           </div>
           <span className="text-xs text-neutral-500">
-            {inRadiusCount === 0 ? "nichts im Umkreis" : `${inRadiusCount} im Umkreis`}
+            {inRadiusCount === 0
+              ? t("nearest.nothingInRadius")
+              : t("nearest.inRadius", { count: inRadiusCount })}
           </span>
         </div>
       )}
@@ -338,7 +344,9 @@ export function NearestBar({
             aria-controls="parkplatz-auswahl"
             className="mt-1 min-h-11 w-full rounded-lg text-xs font-medium text-blue-800 transition-colors hover:bg-blue-50 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300 dark:hover:bg-neutral-800"
           >
-            {expanded ? "Auswahl schließen" : `Weitere in der Nähe (${alternatives.length})`}
+            {expanded
+              ? t("nearest.closeSelection")
+              : t("nearest.more", { count: alternatives.length })}
           </button>
 
           {/*
@@ -361,20 +369,20 @@ export function NearestBar({
                   */}
                   {grouped && index === 0 && inRadiusCount > 0 && (
                     <p className="px-1 pt-2 pb-1 text-[11px] font-medium tracking-wide text-neutral-500 uppercase">
-                      Im Umkreis ({radiusLabel(radius)})
+                      {t("nearest.withinRadius", { radius: radiusLabel(radius) })}
                     </p>
                   )}
                   {grouped && index === inRadiusCount && (
                     <p className="px-1 pt-3 pb-1 text-[11px] font-medium tracking-wide text-neutral-500 uppercase">
-                      Darüber hinaus
+                      {t("nearest.beyond")}
                     </p>
                   )}
 
                   <SpotRow
                     spot={spot}
-                    meta={spotMeta(spot)}
+                    meta={spotMeta(spot, t, locale)}
                     selected={spot.id === target.id}
-                    actionHint="als Ziel wählen und auf der Karte zeigen"
+                    actionHint={t("nearest.chooseHint")}
                     onClick={() => choose(spot)}
                     trailing={
                       <span

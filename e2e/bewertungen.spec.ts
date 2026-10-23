@@ -200,9 +200,20 @@ test.describe("Bewertungen", () => {
      * gezählt, stünde hier wieder der alte Wert – und die eigene Stimme wäre
      * vergessen.
      */
+    /*
+     * **Erst warten, bis die Liste zum Standort passt** (gemessen 2026-10-23,
+     * als der Test gelegentlich rot wurde). Bis der Standort da ist, zeigt die
+     * Karte „Nächster Parkplatz" einen vorgerenderten Platz (Hamburg); danach
+     * springt sie auf den nächsten bei Köln. Laut Ablaufprotokoll (Trace) des
+     * Fehlschlags wurde die Stimme auf `hamburg-…` abgegeben und die Detailansicht beim
+     * zweiten Öffnen für `koeln-…` geöffnet – die Stimme war nicht verloren,
+     * der Test sah einen anderen Parkplatz.
+     */
+    const nahe = page.waitForResponse((antwort) => /\/api\/spots\?lat=50/u.test(antwort.url()));
     await page.goto("/");
     await devLeisteDurchklickbarMachen(page);
     await anmelden(page);
+    await nahe;
     await page.getByRole("button", { name: "Details" }).first().click();
 
     const existiert = page.getByRole("dialog").getByRole("button", { name: /^Existiert,/u });

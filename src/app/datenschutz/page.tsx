@@ -20,6 +20,7 @@ import { operator } from "@/lib/legal/operator";
  * | Standort bleibt im Browser  | `hooks/useGeolocation.ts`, `e2e/datenschutz` |
  * | gespeicherte Felder         | `lib/db/sqlite.ts` (`MIGRATIONS`)          |
  * | Löschfristen                | `lib/db/cleanup.ts`                        |
+ * | Konto löschen, Auskunft     | `lib/db/accounts.ts` (`deleteAccount`, `exportAccountData`), `e2e/konto-loeschen` |
  * | IP nur für die Drosselung   | `lib/rate-limit.ts`                        |
  * | Kartenkacheln von OSM       | `components/map/ParkingMap.tsx`            |
  * | was im Protokoll steht      | `lib/log.ts`, `lib/log.test.ts`            |
@@ -43,12 +44,12 @@ export default function Datenschutz() {
   const betreiber = operator();
 
   return (
-    <LegalPage title="Datenschutzerklärung" updated="2026-10-21">
+    <LegalPage title="Datenschutzerklärung" updated="2026-10-23">
       <section>
         <p className="rounded-xl border border-neutral-200 bg-neutral-50 p-3 dark:border-neutral-800 dark:bg-neutral-900">
           <strong>Das Wichtigste zuerst:</strong> Dein Standort verlässt dein Gerät nicht. Er wird
           im Browser berechnet, nirgends übertragen und nirgends gespeichert – auch nicht mit Konto
-          und auch nicht in einer Rückmeldung. Ohne Anmeldung setzt die App kein einziges Cookie.
+          und auch nicht in einer Rückmeldung. Ohne Anmeldung und ohne eigene Sprachwahl setzt die App kein einziges Cookie.
         </p>
       </section>
 
@@ -141,6 +142,10 @@ export default function Datenschutz() {
             <code>wheelee-maps-app</code> – welche Karten-App die Navigation öffnet
           </li>
           <li>
+            <code>wheelee-language</code> – in welcher Sprache die Oberfläche erscheint, falls du
+            eine gewählt hast
+          </li>
+          <li>
             <code>wheelee-ziele</code> – die zuletzt gesuchten Ziele, damit wiederkehrende Fahrten
             schneller gehen
           </li>
@@ -150,6 +155,13 @@ export default function Datenschutz() {
           </li>
         </ul>
         <p className="mt-2">
+          Außerdem legt die App im Zwischenspeicher deines Browsers Kopien ab, damit sie ohne Netz
+          nicht leer bleibt: die zuletzt geladene Seite, die zuletzt angesehenen Parkplätze und
+          Kartenbilder – und die Parkplatzdaten der Städte, die du in den Einstellungen unter „Ohne
+          Netz“ ausdrücklich vorab lädst. Das sind allgemeine Daten ohne Bezug zu dir. Dort siehst
+          du, wie viel Platz sie belegen, und kannst sie jederzeit löschen.
+        </p>
+        <p className="mt-2">
           Nichts davon dient der Wiedererkennung über verschiedene Seiten hinweg. Es gibt{" "}
           <strong>keine Analyse-Werkzeuge, keine Werbung und keine Tracker.</strong>
         </p>
@@ -158,16 +170,24 @@ export default function Datenschutz() {
       <section>
         <h2>5. Cookies</h2>
         <p>
-          Die App setzt <strong>genau ein</strong> Cookie, und erst, wenn du dich anmeldest:{" "}
-          <code>wheelee-session</code>. Es enthält ein zufälliges Sitzungstoken, ist für JavaScript
+          Die App setzt <strong>höchstens zwei</strong> Cookies, und beide erst auf deine Handlung
+          hin. <strong>Beim Anmelden:</strong> <code>wheelee-session</code>. Es enthält ein zufälliges Sitzungstoken, ist für JavaScript
           nicht lesbar (<code>HttpOnly</code>), wird bei Aufrufen von fremden Seiten nicht
           mitgeschickt (<code>SameSite=Lax</code>) und läuft nach 30 Tagen ab. Beim Abmelden wird
           die Sitzung auch auf dem Server gelöscht, nicht nur das Cookie entfernt.
         </p>
         <p>
+          <strong>Beim Wählen einer Sprache</strong> in den Einstellungen: <code>wheelee-lang</code>.
+          Es enthält nur den Sprachcode (zum Beispiel <code>de</code>), läuft nach einem Jahr ab und
+          wird gebraucht, weil der Server die Sprache schon beim ersten Aufbau der Seite kennen muss
+          – der lokale Speicher ist für ihn unsichtbar. Es dient nicht der Wiedererkennung. Ohne
+          deine Wahl wird es nicht gesetzt; die Sprache richtet sich dann nach der Spracheinstellung
+          deines Browsers, die dieser bei jedem Seitenaufruf ohnehin mitschickt.
+        </p>
+        <p>
           Wer die App nur benutzt, bekommt kein Cookie. Ein Einwilligungsbanner ist deshalb nicht
-          nötig: Das Sitzungscookie ist für den von dir gewünschten Dienst unbedingt erforderlich (§
-          25 Abs. 2 Nr. 2 TDDDG).
+          nötig: Beide Cookies sind für den von dir gewünschten Dienst unbedingt erforderlich (§ 25
+          Abs. 2 Nr. 2 TDDDG).
         </p>
       </section>
 
@@ -181,14 +201,15 @@ export default function Datenschutz() {
         <p>
           Gespeichert werden deine E-Mail-Adresse, dein Passwort als <em>scrypt</em>-Hash (niemals
           im Klartext), der Zeitpunkt der Anmeldung und der letzten Nutzung. Dazu, falls du eine
-          wählst, <strong>die bevorzugte Karten-App</strong> – damit sie auch auf einem zweiten
-          Gerät gilt. Ohne Konto bleibt diese Wahl allein im Browser. Rechtsgrundlage ist Art. 6
+          wählst, <strong>die bevorzugte Karten-App</strong> und{" "}
+          <strong>die gewählte Sprache</strong> – damit sie auch auf einem zweiten Gerät gelten. Ohne
+          Konto bleiben diese Wahlen allein im Browser. Rechtsgrundlage ist Art. 6
           Abs. 1 lit. b DSGVO.
         </p>
       </section>
 
       <section>
-        <h2>7. Bewertungen</h2>
+        <h2>7. Bewertungen und gespeicherte Parkplätze</h2>
         <p>
           Zu jedem Parkplatz kannst du angeben, ob es ihn noch gibt. Dafür ist ein Konto nötig –
           ohne Anmeldung siehst du die Zählerstände, kannst aber nicht bewerten.
@@ -203,6 +224,17 @@ export default function Datenschutz() {
           Anderen Nutzer:innen werden nur die <strong>Summen</strong> angezeigt, nie, wer wie
           bewertet hat. Löschst du dein Konto, verschwinden deine Bewertungen mit. Rechtsgrundlage
           ist Art. 6 Abs. 1 lit. f DSGVO – das Interesse, falsche Parkplatzangaben zu erkennen.
+          Unter Einstellungen → Konto siehst du alle deine Bewertungen und kannst jede einzelne
+          zurückziehen.
+        </p>
+        <p>
+          <strong>Gespeicherte Parkplätze:</strong> Mit Konto kannst du dir Parkplätze merken, die
+          du häufig ansteuerst. Gespeichert werden der Parkplatz, dein Konto und der Zeitpunkt –
+          kein Standort und keine Gerätekennung. Die Liste sehen nur du und, als Teil der Daten
+          deines Kontos, die Betreiber:innen der Datenbank; sie wird nirgends ausgewertet.
+          Entfernst du einen Parkplatz, wird der Eintrag gelöscht; löschst du dein Konto,
+          verschwindet die ganze Liste mit. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO – die
+          Funktion, die du mit deinem Konto nutzt.
         </p>
       </section>
 
@@ -268,6 +300,10 @@ export default function Datenschutz() {
             stattdessen daneben.
           </li>
           <li>
+            <strong>Gespeicherte Parkplätze:</strong> bis du sie entfernst oder dein Konto
+            löschst.
+          </li>
+          <li>
             <strong>Sitzungen:</strong> mit dem Ablauf, spätestens 30 Tage nach der Anmeldung.
           </li>
           <li>
@@ -288,10 +324,19 @@ export default function Datenschutz() {
           Wende dich dafür formlos an die oben genannte Adresse. Außerdem steht dir ein
           Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde zu (Art. 77 DSGVO).
         </p>
-        <p className="rounded-xl border border-amber-300 bg-amber-50 p-3 text-amber-900 dark:border-amber-900 dark:bg-amber-950 dark:text-amber-100">
-          <strong>Offen und darum hier genannt:</strong> Konto und Daten lassen sich derzeit noch
-          nicht in der App selbst löschen. Bis diese Funktion gebaut ist, genügt eine formlose
-          Nachricht an die oben genannte Adresse; die Löschung erfolgt dann von Hand.
+        <p>
+          <strong>Mit Konto geht beides in der App selbst</strong>, unter Einstellungen → Konto:
+          <em> Meine Daten herunterladen</em> liefert eine JSON-Datei mit E-Mail-Adresse,
+          Anlagedatum, letzter Anmeldung, Bewertungen, gespeicherten Parkplätzen, eigenen
+          Rückmeldungen, der gewählten Karten-App und Sprache (Art. 15 und 20). <em>Konto löschen</em>{" "}
+          entfernt das Konto, alle Sitzungen, deine Bewertungen und gespeicherten Parkplätze sofort und endgültig; dazu wird dein Passwort abgefragt. Deine
+          Rückmeldungen bleiben als Hinweise erhalten, verlieren aber den Bezug zu dir, und eine
+          dort freiwillig angegebene Antwortadresse wird entfernt (Art. 17).
+        </p>
+        <p>
+          Daten, die sich keinem Konto zuordnen lassen – etwa eine Rückmeldung ohne Anmeldung –,
+          kannst du über eine formlose Nachricht an die oben genannte Adresse erfragen oder löschen
+          lassen; dort geschieht das von Hand.
         </p>
       </section>
 

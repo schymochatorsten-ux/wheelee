@@ -6,12 +6,14 @@
  * Wer es anders will, stellt es einmal um.
  */
 
+import type { MessageKey } from "@/i18n";
+
 export type Theme = "dark" | "light" | "system";
 
-export const THEMES: { id: Theme; label: string }[] = [
-  { id: "dark", label: "Dunkel" },
-  { id: "light", label: "Hell" },
-  { id: "system", label: "System" },
+export const THEMES: { id: Theme; label: MessageKey }[] = [
+  { id: "dark", label: "theme.dark" },
+  { id: "light", label: "theme.light" },
+  { id: "system", label: "theme.system" },
 ];
 
 export const STORAGE_KEY = "wheelee-theme";

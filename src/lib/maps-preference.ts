@@ -1,3 +1,4 @@
+import type { MessageKey } from "@/i18n";
 import { detectMapsTarget, MAPS_APPS, type MapsTarget } from "./navigation";
 
 /**
@@ -22,8 +23,8 @@ export const STORAGE_KEY = "wheelee-maps-app";
 export const DEFAULT_PREFERENCE: MapsPreference = "auto";
 
 /** Die Auswahl für die Einstellungen, mit „automatisch" an erster Stelle. */
-export const MAPS_CHOICES: { id: MapsPreference; label: string }[] = [
-  { id: "auto", label: "Automatisch (nach Gerät)" },
+export const MAPS_CHOICES: { id: MapsPreference; label: MessageKey }[] = [
+  { id: "auto", label: "maps.auto" },
   ...MAPS_APPS.map((app) => ({ id: app.id as MapsPreference, label: app.shortLabel })),
 ];
 

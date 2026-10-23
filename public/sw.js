@@ -21,7 +21,14 @@
  */
 
 /** Bei jeder Änderung hochzählen – sonst bleibt der alte Stand liegen. */
-const VERSION = "v1";
+const VERSION = "v2";
+
+/**
+ * Vorab geladene Städte (ToDo 16.1). **Ohne Versionsnummer und von `activate`
+ * ausgenommen**: Die Seite schreibt hinein (`src/lib/offline-cities.ts`, dort
+ * steht derselbe Name); ein neuer Service Worker darf sie nicht leeren.
+ */
+const CITY_CACHE = "wheelee-city";
 
 const SHELL_CACHE = `wheelee-shell-${VERSION}`;
 const DATA_CACHE = `wheelee-data-${VERSION}`;
@@ -45,7 +52,7 @@ self.addEventListener("install", (event) => {
 });
 
 self.addEventListener("activate", (event) => {
-  const keep = new Set([SHELL_CACHE, DATA_CACHE, TILE_CACHE]);
+  const keep = new Set([SHELL_CACHE, DATA_CACHE, TILE_CACHE, CITY_CACHE]);
   event.waitUntil(
     caches
       .keys()
@@ -64,7 +71,7 @@ async function trim(cacheName, max) {
   await Promise.all(keys.slice(0, keys.length - max).map((key) => cache.delete(key)));
 }
 
-async function networkFirst(request, cacheName) {
+async function networkFirst(request, cacheName, fallback) {
   const cache = await caches.open(cacheName);
   try {
     const response = await fetch(request);
@@ -73,8 +80,77 @@ async function networkFirst(request, cacheName) {
   } catch (error) {
     const cached = await cache.match(request);
     if (cached) return cached;
+    const generated = fallback ? await fallback(request) : null;
+    if (generated) return generated;
     throw error;
   }
+}
+
+/** Luftlinie in Metern – dieselbe Formel wie `distanceMeters` in `src/lib/geo.ts`. */
+function distanceMeters(a, b) {
+  const rad = (deg) => (deg * Math.PI) / 180;
+  const h =
+    Math.sin(rad(b.lat - a.lat) / 2) ** 2 +
+    Math.cos(rad(a.lat)) * Math.cos(rad(b.lat)) * Math.sin(rad(b.lng - a.lng) / 2) ** 2;
+  return 2 * 6_371_000 * Math.asin(Math.sqrt(h));
+}
+
+/**
+ * Beantwortet `/api/spots` aus den vorab geladenen Städten (ToDo 16.1), wenn
+ * weder Netz noch eine gleichlautende frühere Antwort da sind – also genau für
+ * den Kartenausschnitt, den man vorher nie angesehen hat.
+ *
+ * Spiegelt `spotsInBounds`, `nearestSpots` und `spotById` aus
+ * `src/lib/parking/spots.ts`. `null`, wenn keine Stadt gespeichert ist: dann
+ * bleibt es beim bisherigen Verhalten.
+ */
+async function answerFromCities(request) {
+  const cache = await caches.open(CITY_CACHE);
+  const entries = await cache.keys();
+  if (entries.length === 0) return null;
+
+  const spots = [];
+  for (const key of entries) {
+    const stored = await cache.match(key);
+    if (stored) spots.push(...(await stored.json()).spots);
+  }
+
+  const params = new URL(request.url).searchParams;
+  const limitRaw = params.get("limit");
+  const limit = limitRaw === null ? undefined : Number.parseInt(limitRaw, 10);
+
+  const id = params.get("id");
+  if (id) {
+    const spot = spots.find((candidate) => candidate.id === id);
+    return spot ? Response.json({ spot }) : null;
+  }
+
+  const bbox = params.get("bbox");
+  if (bbox) {
+    const [minLng, minLat, maxLng, maxLat] = bbox.split(",").map(Number);
+    const inside = spots.filter(
+      (spot) =>
+        spot.lat !== null &&
+        spot.lng !== null &&
+        spot.lat >= minLat &&
+        spot.lat <= maxLat &&
+        spot.lng >= minLng &&
+        spot.lng <= maxLng,
+    );
+    const found = inside.slice(0, limit ?? 2_000);
+    return Response.json({ spots: found, truncated: inside.length > found.length, total: inside.length });
+  }
+
+  const lat = Number(params.get("lat"));
+  const lng = Number(params.get("lng"));
+  if (!Number.isFinite(lat) || !Number.isFinite(lng)) return null;
+
+  const nearest = spots
+    .filter((spot) => spot.lat !== null && spot.lng !== null)
+    .map((spot) => ({ ...spot, distanceMeters: distanceMeters({ lat, lng }, spot) }))
+    .sort((a, b) => a.distanceMeters - b.distanceMeters)
+    .slice(0, limit ?? 100);
+  return Response.json({ spots: nearest, truncated: false, total: nearest.length });
 }
 
 async function cacheFirst(request, cacheName, max) {
@@ -110,7 +186,7 @@ self.addEventListener("fetch", (event) => {
   }
 
   if (url.pathname.startsWith("/api/spots")) {
-    event.respondWith(networkFirst(request, DATA_CACHE));
+    event.respondWith(networkFirst(request, DATA_CACHE, answerFromCities));
     return;
   }
 

@@ -1,6 +1,8 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import { useLocale, useT } from "@/i18n/context";
+import { localeTag, type Locale } from "@/i18n";
 import type { ParkingSpot } from "@/lib/types";
 import {
   FEEDBACK_STATUSES,
@@ -64,10 +66,10 @@ const STATUS_STYLE: Record<FeedbackStatus, string> = {
 };
 
 /** Zeitpunkt für die Anzeige – Datum und Uhrzeit, denn beides zählt hier. */
-function formatMoment(iso: string): string {
+function formatMoment(iso: string, locale: Locale): string {
   const date = new Date(iso);
   if (Number.isNaN(date.getTime())) return iso;
-  return date.toLocaleString("de-DE", {
+  return date.toLocaleString(localeTag(locale), {
     day: "numeric",
     month: "long",
     year: "numeric",
@@ -77,6 +79,8 @@ function formatMoment(iso: string): string {
 }
 
 export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
+  const t = useT();
+  const locale = useLocale();
   const [entries, setEntries] = useState<FeedbackEntryView[]>([]);
   const [counts, setCounts] = useState<Counts | null>(null);
   const [kind, setKind] = useState<FeedbackKind | "alle">("alle");
@@ -94,23 +98,23 @@ export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
 
       const response = await fetch(`/api/admin/feedback?${params.toString()}`);
       if (response.status === 401) {
-        setError("Nicht angemeldet oder keine Berechtigung.");
+        setError(t("admin.unauthorized"));
         setEntries([]);
         return;
       }
       if (!response.ok) {
-        setError("Die Rückmeldungen konnten nicht geladen werden.");
+        setError(t("feedbackAdmin.loadFailed"));
         return;
       }
       const data = (await response.json()) as { entries: FeedbackEntryView[]; counts: Counts };
       setEntries(data.entries);
       setCounts(data.counts);
     } catch {
-      setError("Keine Verbindung.");
+      setError(t("admin.noConnection"));
     } finally {
       setLoading(false);
     }
-  }, [kind, status]);
+  }, [kind, status, t]);
 
   useEffect(() => {
     void load();
@@ -131,7 +135,7 @@ export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
       body: JSON.stringify({ status: next }),
     });
     if (!response.ok) {
-      setError("Ändern hat nicht geklappt.");
+      setError(t("feedbackAdmin.changeFailed"));
       return;
     }
     await load();
@@ -143,7 +147,7 @@ export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ note: note.trim() === "" ? null : note }),
     });
-    if (!response.ok) setError("Die Notiz konnte nicht gespeichert werden.");
+    if (!response.ok) setError(t("feedbackAdmin.noteFailed"));
     else await load();
   };
 
@@ -155,11 +159,13 @@ export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
    */
   const remove = async (entry: FeedbackEntryView) => {
     const vorschau = entry.message.slice(0, 80);
-    if (!window.confirm(`Meldung #${entry.id} endgültig löschen?\n\n„${vorschau}…“`)) return;
+    if (!window.confirm(t("feedbackAdmin.confirmDelete", { id: entry.id, preview: vorschau }))) {
+      return;
+    }
 
     const response = await fetch(`/api/admin/feedback/${entry.id}`, { method: "DELETE" });
     if (!response.ok) {
-      setError("Löschen hat nicht geklappt.");
+      setError(t("feedbackAdmin.deleteFailed"));
       return;
     }
     await load();
@@ -170,24 +176,27 @@ export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
     try {
       const response = await fetch(`/api/spots?id=${encodeURIComponent(spotId)}`);
       if (!response.ok) {
-        setError(`Den Parkplatz ${spotId} gibt es nicht mehr im Bestand.`);
+        setError(t("reported.spotGone", { id: spotId }));
         return;
       }
       const data = (await response.json()) as { spot: ParkingSpot };
       onShowSpot(data.spot);
     } catch {
-      setError("Keine Verbindung.");
+      setError(t("admin.noConnection"));
     }
   };
 
   return (
     <div className="space-y-4">
       <div>
-        <h2 className="text-base font-semibold">Rückmeldungen</h2>
+        <h2 className="text-base font-semibold">{t("feedbackAdmin.title")}</h2>
         <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
           {counts
-            ? `${counts.gesamt} ${counts.gesamt === 1 ? "Meldung" : "Meldungen"}, ` +
-              `davon ${counts.neu} neu und ${counts.umgesetzt} umgesetzt.`
+            ? t(counts.gesamt === 1 ? "feedbackAdmin.countsOne" : "feedbackAdmin.countsMany", {
+                total: counts.gesamt,
+                neu: counts.neu,
+                done: counts.umgesetzt,
+              })
             : "…"}
         </p>
       </div>
@@ -195,7 +204,7 @@ export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
       <div className="flex flex-wrap gap-3">
         <div>
           <label htmlFor="filter-art" className="block text-xs text-neutral-500 uppercase">
-            Art
+            {t("feedbackAdmin.filterKind")}
           </label>
           <select
             id="filter-art"
@@ -203,14 +212,14 @@ export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
             onChange={(event) => setKind(event.target.value as FeedbackKind | "alle")}
             className="mt-1 min-h-11 rounded-lg border border-neutral-300 bg-white px-2 text-sm dark:border-neutral-700 dark:bg-neutral-950"
           >
-            <option value="alle">Alle</option>
-            <option value="fehler">{KIND_LABELS.fehler}</option>
-            <option value="vorschlag">{KIND_LABELS.vorschlag}</option>
+            <option value="alle">{t("feedbackAdmin.all")}</option>
+            <option value="fehler">{t(KIND_LABELS.fehler)}</option>
+            <option value="vorschlag">{t(KIND_LABELS.vorschlag)}</option>
           </select>
         </div>
         <div>
           <label htmlFor="filter-stand" className="block text-xs text-neutral-500 uppercase">
-            Stand
+            {t("feedbackAdmin.filterStatus")}
           </label>
           <select
             id="filter-stand"
@@ -218,10 +227,10 @@ export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
             onChange={(event) => setStatus(event.target.value as FeedbackStatus | "alle")}
             className="mt-1 min-h-11 rounded-lg border border-neutral-300 bg-white px-2 text-sm dark:border-neutral-700 dark:bg-neutral-950"
           >
-            <option value="alle">Alle</option>
+            <option value="alle">{t("feedbackAdmin.all")}</option>
             {FEEDBACK_STATUSES.map((option) => (
               <option key={option} value={option}>
-                {STATUS_LABELS[option]}
+                {t(STATUS_LABELS[option])}
               </option>
             ))}
           </select>
@@ -231,7 +240,7 @@ export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
           onClick={() => void load()}
           className="mt-5 min-h-11 rounded-lg border border-neutral-300 px-3 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
         >
-          Neu laden
+          {t("admin.reload")}
         </button>
       </div>
 
@@ -244,11 +253,11 @@ export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
         </p>
       )}
 
-      {loading && <p className="text-sm text-neutral-500">Wird geladen …</p>}
+      {loading && <p className="text-sm text-neutral-500">{t("admin.loading")}</p>}
 
       {!loading && entries.length === 0 && !error && (
         <p className="rounded-xl border border-neutral-200 p-4 text-sm text-neutral-500 dark:border-neutral-800">
-          Keine Meldungen – mit diesem Filter jedenfalls.
+          {t("feedbackAdmin.empty")}
         </p>
       )}
 
@@ -260,13 +269,13 @@ export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
           >
             <div className="flex flex-wrap items-center gap-2 text-xs">
               <span className="rounded bg-neutral-100 px-1.5 py-0.5 font-medium dark:bg-neutral-800">
-                {KIND_LABELS[entry.kind]}
+                {t(KIND_LABELS[entry.kind])}
               </span>
               <span className={`rounded px-1.5 py-0.5 font-medium ${STATUS_STYLE[entry.status]}`}>
-                {STATUS_LABELS[entry.status]}
+                {t(STATUS_LABELS[entry.status])}
               </span>
               <span className="text-neutral-500">#{entry.id}</span>
-              <span className="text-neutral-500">{formatMoment(entry.createdAt)}</span>
+              <span className="text-neutral-500">{formatMoment(entry.createdAt, locale)}</span>
             </div>
 
             <p className="mt-2 text-sm whitespace-pre-wrap">{entry.message}</p>
@@ -274,7 +283,7 @@ export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
             <dl className="mt-2 space-y-0.5 text-xs text-neutral-500">
               {entry.contactEmail && (
                 <div className="flex gap-2">
-                  <dt>Antwort an</dt>
+                  <dt>{t("feedbackAdmin.replyTo")}</dt>
                   <dd>
                     {/*
                       Ein `mailto:`-Link – hier ist er richtig, anders als im
@@ -295,35 +304,36 @@ export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
               */}
               {!entry.contactEmail && entry.contactRemovedAt && (
                 <div className="flex gap-2">
-                  <dt>Antwort an</dt>
+                  <dt>{t("feedbackAdmin.replyTo")}</dt>
                   <dd>
-                    Adresse nach zwei Jahren entfernt ({formatMoment(entry.contactRemovedAt)}) – die
-                    Meldung blieb so lange unbearbeitet.
+                    {t("feedbackAdmin.addressRemoved", {
+                      date: formatMoment(entry.contactRemovedAt, locale),
+                    })}
                   </dd>
                 </div>
               )}
               {entry.accountEmail && (
                 <div className="flex gap-2">
-                  <dt>Konto</dt>
+                  <dt>{t("feedbackAdmin.account")}</dt>
                   <dd>{entry.accountEmail}</dd>
                 </div>
               )}
               {entry.city && (
                 <div className="flex gap-2">
-                  <dt>Stadt</dt>
+                  <dt>{t("details.city")}</dt>
                   <dd>{entry.city}</dd>
                 </div>
               )}
               {entry.userAgent && (
                 <div className="flex gap-2">
-                  <dt>Browser</dt>
+                  <dt>{t("feedbackAdmin.browser")}</dt>
                   <dd className="truncate">{entry.userAgent}</dd>
                 </div>
               )}
               {entry.updatedAt && (
                 <div className="flex gap-2">
-                  <dt>Geändert</dt>
-                  <dd>{formatDate(entry.updatedAt.slice(0, 10))}</dd>
+                  <dt>{t("feedbackAdmin.changed")}</dt>
+                  <dd>{formatDate(entry.updatedAt.slice(0, 10), locale)}</dd>
                 </div>
               )}
             </dl>
@@ -335,7 +345,7 @@ export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
                   onClick={() => void showSpot(entry.spotId!)}
                   className="min-h-11 rounded-lg border border-neutral-300 px-2.5 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
                 >
-                  Parkplatz auf der Karte
+                  {t("reported.showOnMap")}
                 </button>
               )}
               {entry.status !== "umgesetzt" ? (
@@ -344,7 +354,7 @@ export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
                   onClick={() => void setEntryStatus(entry.id, "umgesetzt")}
                   className="min-h-11 rounded-lg bg-emerald-700 px-2.5 text-sm font-medium text-white focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none"
                 >
-                  Als umgesetzt markieren
+                  {t("feedbackAdmin.markDone")}
                 </button>
               ) : (
                 <button
@@ -352,7 +362,7 @@ export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
                   onClick={() => void setEntryStatus(entry.id, "neu")}
                   className="min-h-11 rounded-lg border border-neutral-300 px-2.5 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
                 >
-                  Wieder auf „neu“
+                  {t("feedbackAdmin.reopen")}
                 </button>
               )}
               {entry.status !== "verworfen" && (
@@ -361,7 +371,7 @@ export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
                   onClick={() => void setEntryStatus(entry.id, "verworfen")}
                   className="min-h-11 rounded-lg border border-neutral-300 px-2.5 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
                 >
-                  Verwerfen
+                  {t("feedbackAdmin.discard")}
                 </button>
               )}
               <button
@@ -369,7 +379,7 @@ export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
                 onClick={() => void remove(entry)}
                 className="min-h-11 rounded-lg px-2.5 text-sm font-medium text-red-700 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-red-400"
               >
-                Löschen
+                {t("feedbackAdmin.delete")}
               </button>
             </div>
 
@@ -402,6 +412,7 @@ function NoteField({
   note: string | null;
   onSave: (note: string) => void;
 }) {
+  const t = useT();
   const [value, setValue] = useState(note ?? "");
   const [open, setOpen] = useState(false);
 
@@ -412,7 +423,7 @@ function NoteField({
         onClick={() => setOpen(true)}
         className="mt-2 min-h-11 text-sm font-medium text-blue-800 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"
       >
-        Notiz hinzufügen
+        {t("feedbackAdmin.addNote")}
       </button>
     );
   }
@@ -420,7 +431,7 @@ function NoteField({
   return (
     <div className="mt-2">
       <label htmlFor={`notiz-${id}`} className="text-xs text-neutral-500 uppercase">
-        Interne Notiz
+        {t("feedbackAdmin.note")}
       </label>
       <textarea
         id={`notiz-${id}`}
@@ -437,7 +448,7 @@ function NoteField({
         }}
         className="mt-1 min-h-11 rounded-lg border border-neutral-300 px-2.5 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
       >
-        Notiz speichern
+        {t("feedbackAdmin.saveNote")}
       </button>
     </div>
   );

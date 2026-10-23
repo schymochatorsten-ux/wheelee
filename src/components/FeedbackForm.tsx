@@ -1,6 +1,8 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { useLocale, useT } from "@/i18n/context";
+import { localeTag } from "@/i18n";
 import type { ParkingSpot } from "@/lib/types";
 import { spotTitle } from "@/lib/parking/display";
 import { deviceId } from "@/lib/device";
@@ -42,6 +44,8 @@ export function FeedbackForm({
   initialKind,
   onDone,
 }: FeedbackFormProps) {
+  const t = useT();
+  const locale = useLocale();
   const [kind, setKind] = useState<FeedbackKind | null>(initialKind ?? null);
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState(accountEmail ?? "");
@@ -65,11 +69,14 @@ export function FeedbackForm({
      * ohne Anfrage ins Funkloch. Verlassen wird sich darauf nicht: Der Server
      * prüft noch einmal, und nur das ist die eigentliche Prüfung.
      */
-    const check = validateFeedback({
-      kind: kind ?? "",
-      message,
-      contactEmail: email.trim() === "" ? null : email,
-    });
+    const check = validateFeedback(
+      {
+        kind: kind ?? "",
+        message,
+        contactEmail: email.trim() === "" ? null : email,
+      },
+      locale,
+    );
     if (!check.ok) {
       setProblem({ field: check.field, error: check.error });
       if (check.field === "contactEmail") emailRef.current?.focus();
@@ -105,7 +112,7 @@ export function FeedbackForm({
       if (!response.ok || !data.ok) {
         setProblem({
           field: data.field ?? "message",
-          error: data.error ?? "Das hat nicht geklappt. Bitte später erneut versuchen.",
+          error: data.error ?? t("account.failed"),
         });
         // Den Fokus dorthin, wo der Mangel sitzt – sonst muss man ihn suchen.
         if (data.field === "contactEmail") emailRef.current?.focus();
@@ -119,7 +126,7 @@ export function FeedbackForm({
         field: "message",
         // Der Fall ist hier wahrscheinlicher als sonst: Wer vor einem
         // aufgehobenen Parkplatz steht, steht oft im Funkloch.
-        error: "Keine Verbindung. Die Meldung ist nicht abgeschickt – bitte später erneut.",
+        error: t("feedback.offline"),
       });
     } finally {
       setSending(false);
@@ -132,12 +139,8 @@ export function FeedbackForm({
         role="status"
         className="rounded-xl bg-emerald-50 p-4 text-sm text-emerald-900 dark:bg-emerald-950 dark:text-emerald-100"
       >
-        <p className="font-semibold">Danke – die Meldung ist angekommen.</p>
-        <p className="mt-1">
-          {sent.willReply
-            ? "Wir sehen sie uns an und melden uns per E-Mail, wenn es etwas zu sagen gibt."
-            : "Du hast keine Adresse angegeben, deshalb bekommst du keine Antwort – deine Meldung hilft trotzdem."}
-        </p>
+        <p className="font-semibold">{t("feedback.thanks")}</p>
+        <p className="mt-1">{sent.willReply ? t("feedback.willReply") : t("feedback.noReply")}</p>
         <div className="mt-3 flex flex-wrap gap-2">
           <button
             type="button"
@@ -148,7 +151,7 @@ export function FeedbackForm({
             }}
             className="min-h-11 rounded-lg border border-emerald-700/40 px-3 font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none"
           >
-            Noch etwas melden
+            {t("feedback.again")}
           </button>
           {onDone && (
             <button
@@ -156,7 +159,7 @@ export function FeedbackForm({
               onClick={onDone}
               className="min-h-11 rounded-lg bg-emerald-700 px-3 font-medium text-white focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none"
             >
-              Fertig
+              {t("feedback.done")}
             </button>
           )}
         </div>
@@ -173,8 +176,8 @@ export function FeedbackForm({
         verlangt erst einen Griff, um das zu zeigen.
       */}
       <fieldset>
-        <legend className="text-sm font-medium">Worum geht es?</legend>
-        <div role="radiogroup" aria-label="Art der Rückmeldung" className="mt-2 flex gap-2">
+        <legend className="text-sm font-medium">{t("feedback.whatAbout")}</legend>
+        <div role="radiogroup" aria-label={t("feedback.kindGroup")} className="mt-2 flex gap-2">
           {(Object.keys(KIND_LABELS) as FeedbackKind[]).map((option) => (
             <button
               key={option}
@@ -191,7 +194,7 @@ export function FeedbackForm({
                   : "border-neutral-300 dark:border-neutral-700"
               }`}
             >
-              {KIND_LABELS[option]}
+              {t(KIND_LABELS[option])}
             </button>
           ))}
         </div>
@@ -206,14 +209,14 @@ export function FeedbackForm({
           nicht noch einmal tippen, und es darf auch nicht falsch sein. */}
       {spot && (
         <p className="rounded-lg bg-neutral-100 px-3 py-2 text-sm dark:bg-neutral-800">
-          <span className="text-neutral-500">Meldung zu: </span>
+          <span className="text-neutral-500">{t("feedback.reportAbout")} </span>
           <span className="font-medium">{spotTitle(spot)}</span>
         </p>
       )}
 
       <div>
         <label htmlFor="feedback-text" className="text-sm font-medium">
-          {kind === "vorschlag" ? "Dein Vorschlag" : "Was stimmt nicht?"}
+          {kind === "vorschlag" ? t("feedback.yourSuggestion") : t("feedback.whatIsWrong")}
         </label>
         <textarea
           id="feedback-text"
@@ -227,8 +230,8 @@ export function FeedbackForm({
           aria-describedby="feedback-text-hilfe"
           placeholder={
             kind === "vorschlag"
-              ? "Zum Beispiel: Die Umkreiswahl hätte gern 2 km."
-              : "Zum Beispiel: Der Parkplatz Bahnhofstraße 4 ist aufgehoben, dort ist jetzt eine Ladesäule."
+              ? t("feedback.placeholderSuggestion")
+              : t("feedback.placeholderError")
           }
           className={`${FIELD} mt-1 min-h-32 resize-y`}
         />
@@ -238,14 +241,17 @@ export function FeedbackForm({
               {problem.error}
             </span>
           ) : (
-            `Noch ${(MESSAGE_MAX - message.length).toLocaleString("de-DE")} Zeichen möglich.`
+            t("feedback.charsLeft", {
+              count: (MESSAGE_MAX - message.length).toLocaleString(localeTag(locale)),
+            })
           )}
         </p>
       </div>
 
       <div>
         <label htmlFor="feedback-email" className="text-sm font-medium">
-          E-Mail-Adresse <span className="font-normal text-neutral-500">(freiwillig)</span>
+          {t("account.email")}{" "}
+          <span className="font-normal text-neutral-500">{t("feedback.optional")}</span>
         </label>
         {/*
           Der Hinweis steht **über** dem Feld, nicht darunter: Er soll die
@@ -256,7 +262,7 @@ export function FeedbackForm({
           id="feedback-email-hilfe"
           className="mt-1 text-xs text-neutral-600 dark:text-neutral-400"
         >
-          {CONTACT_HINT}
+          {t(CONTACT_HINT)}
         </p>
         <input
           id="feedback-email"
@@ -268,7 +274,7 @@ export function FeedbackForm({
           onChange={(event) => setEmail(event.target.value)}
           aria-invalid={problem?.field === "contactEmail" || undefined}
           aria-describedby="feedback-email-hilfe feedback-email-datenschutz"
-          placeholder="name@beispiel.de"
+          placeholder={t("feedback.emailPlaceholder")}
           className={`${FIELD} mt-1.5`}
         />
         <p id="feedback-email-datenschutz" className="mt-1 text-xs text-neutral-500">
@@ -277,11 +283,11 @@ export function FeedbackForm({
               {problem.error}
             </span>
           ) : (
-            CONTACT_PRIVACY
+            t(CONTACT_PRIVACY)
           )}
         </p>
         {accountEmail && email === accountEmail && (
-          <p className="mt-1 text-xs text-neutral-500">Aus deinem Konto übernommen.</p>
+          <p className="mt-1 text-xs text-neutral-500">{t("feedback.fromAccount")}</p>
         )}
       </div>
 
@@ -291,7 +297,7 @@ export function FeedbackForm({
           disabled={sending}
           className="min-h-12 flex-1 rounded-xl bg-blue-700 px-4 font-medium text-white hover:bg-blue-800 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 focus-visible:outline-none disabled:opacity-60"
         >
-          {sending ? "Wird gesendet …" : "Absenden"}
+          {sending ? t("feedback.sending") : t("feedback.submit")}
         </button>
         {onDone && (
           <button
@@ -299,7 +305,7 @@ export function FeedbackForm({
             onClick={onDone}
             className="min-h-12 rounded-xl border border-neutral-300 px-4 font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
           >
-            Abbrechen
+            {t("feedback.cancel")}
           </button>
         )}
       </div>

@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { nearestSpots, spotById, spotsInBounds } from "@/lib/parking/spots";
 import { withLogging } from "@/lib/log";
+import { t } from "@/i18n";
 
 /**
  * Parkplätze nach Kartenausschnitt, Nähe oder ID (ToDo 5.4).
@@ -45,7 +46,7 @@ function getHandler(request: Request) {
     if (!spot) {
       // 404 und nicht eine leere Liste: „Diesen Parkplatz gibt es nicht
       // (mehr)" ist eine Antwort, und die Übersicht soll sie zeigen können.
-      return NextResponse.json({ error: "Unbekannte Parkplatz-ID." }, { status: 404 });
+      return NextResponse.json({ error: t("api.unknownSpot") }, { status: 404 });
     }
     return NextResponse.json({ spot }, { headers: { "Cache-Control": CACHE_CONTROL } });
   }

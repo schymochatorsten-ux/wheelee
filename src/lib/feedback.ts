@@ -1,3 +1,4 @@
+import { DEFAULT_LOCALE, localeTag, t, type Locale, type MessageKey } from "@/i18n";
 import { looksLikeEmail, normalizeEmail } from "./auth/email";
 
 /**
@@ -37,20 +38,20 @@ import { looksLikeEmail, normalizeEmail } from "./auth/email";
 export const FEEDBACK_KINDS = ["fehler", "vorschlag"] as const;
 export type FeedbackKind = (typeof FEEDBACK_KINDS)[number];
 
-export const KIND_LABELS: Record<FeedbackKind, string> = {
-  fehler: "Fehler melden",
-  vorschlag: "Verbesserungsvorschlag",
+export const KIND_LABELS: Record<FeedbackKind, MessageKey> = {
+  fehler: "feedback.kind.fehler",
+  vorschlag: "feedback.kind.vorschlag",
 };
 
 /** Bearbeitungsstand, wie die Übersicht ihn führt. */
 export const FEEDBACK_STATUSES = ["neu", "in_arbeit", "umgesetzt", "verworfen"] as const;
 export type FeedbackStatus = (typeof FEEDBACK_STATUSES)[number];
 
-export const STATUS_LABELS: Record<FeedbackStatus, string> = {
-  neu: "Neu",
-  in_arbeit: "In Arbeit",
-  umgesetzt: "Umgesetzt",
-  verworfen: "Verworfen",
+export const STATUS_LABELS: Record<FeedbackStatus, MessageKey> = {
+  neu: "feedback.status.neu",
+  in_arbeit: "feedback.status.in_arbeit",
+  umgesetzt: "feedback.status.umgesetzt",
+  verworfen: "feedback.status.verworfen",
 };
 
 /**
@@ -111,14 +112,10 @@ export interface ValidFeedback {
  * antworten wir", sondern „ohne Adresse können wir nicht antworten". Das
  * Zweite ist wahr und drängt nicht.
  */
-export const CONTACT_HINT =
-  "Nur mit Adresse können wir dir antworten – bei Rückfragen oder wenn der Fehler behoben ist. " +
-  "Ohne Adresse hilft deine Meldung trotzdem, du hörst dann aber nichts von uns.";
+export const CONTACT_HINT: MessageKey = "feedback.contactHint";
 
 /** Was mit der Adresse geschieht – gehört neben das Feld, nicht ins Impressum. */
-export const CONTACT_PRIVACY =
-  "Die Adresse wird nur für die Antwort auf diese Meldung benutzt, nicht weitergegeben " +
-  "und mit der Meldung gelöscht – spätestens nach zwei Jahren.";
+export const CONTACT_PRIVACY: MessageKey = "feedback.contactPrivacy";
 
 function trimmed(value: unknown, max: number): string | null {
   if (typeof value !== "string") return null;
@@ -147,9 +144,12 @@ export type Validation =
  * ganzen Formular lässt den Nutzer suchen – und wer gerade im Auto sitzt,
  * bricht dann ab.
  */
-export function validateFeedback(input: FeedbackInput): Validation {
+export function validateFeedback(
+  input: FeedbackInput,
+  locale: Locale = DEFAULT_LOCALE,
+): Validation {
   if (!isFeedbackKind(input.kind)) {
-    return { ok: false, field: "kind", error: "Bitte wähle aus, worum es geht." };
+    return { ok: false, field: "kind", error: t("feedback.errorKind", undefined, locale) };
   }
 
   const message = typeof input.message === "string" ? input.message.trim() : "";
@@ -157,14 +157,18 @@ export function validateFeedback(input: FeedbackInput): Validation {
     return {
       ok: false,
       field: "message",
-      error: "Bitte beschreibe mit ein paar Worten, was nicht stimmt.",
+      error: t("feedback.errorMessageShort", undefined, locale),
     };
   }
   if (message.length > MESSAGE_MAX) {
     return {
       ok: false,
       field: "message",
-      error: `Bitte kürzer fassen – höchstens ${MESSAGE_MAX.toLocaleString("de-DE")} Zeichen.`,
+      error: t(
+        "feedback.errorMessageLong",
+        { max: MESSAGE_MAX.toLocaleString(localeTag(locale)) },
+        locale,
+      ),
     };
   }
 
@@ -176,7 +180,7 @@ export function validateFeedback(input: FeedbackInput): Validation {
     return {
       ok: false,
       field: "contactEmail",
-      error: "Diese E-Mail-Adresse sieht nicht richtig aus. Lass das Feld sonst einfach leer.",
+      error: t("feedback.errorEmail", undefined, locale),
     };
   }
 

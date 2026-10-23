@@ -7,6 +7,8 @@
  * Zahlen wären die Alternative, bei der eine davon irgendwann abweicht.
  */
 
+import { t } from "@/i18n";
+
 /** Mindestlänge eines Passworts. */
 export const MIN_PASSWORD_LENGTH = 10;
 
@@ -18,7 +20,7 @@ export const MIN_PASSWORD_LENGTH = 10;
  */
 export function passwordProblem(password: string): string | null {
   if (password.length < MIN_PASSWORD_LENGTH) {
-    return `Das Passwort muss mindestens ${MIN_PASSWORD_LENGTH} Zeichen lang sein.`;
+    return t("account.passwordTooShort", { min: MIN_PASSWORD_LENGTH });
   }
   /*
    * Oben offen zu lassen wäre eine Einladung: scrypt rechnet über die
@@ -26,6 +28,6 @@ export function passwordProblem(password: string): string | null {
    * bei jedem Versuch für Sekunden beschäftigen. 200 Zeichen schränken
    * niemanden ein, der sich einen Satz merkt.
    */
-  if (password.length > 200) return "Das Passwort darf höchstens 200 Zeichen lang sein.";
+  if (password.length > 200) return t("account.passwordTooLong", { max: 200 });
   return null;
 }

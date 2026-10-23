@@ -2,6 +2,10 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useLocale, useT } from "@/i18n/context";
+import { LOCALE_CODES, LOCALES, type Locale } from "@/i18n";
+import { writeLanguagePreference } from "@/i18n/preference";
 import {
   effectiveMapsPreference,
   MAPS_CHOICES,
@@ -12,7 +16,11 @@ import {
 import { mapsShortLabel } from "@/lib/navigation";
 import type { MapsTarget } from "@/lib/navigation";
 import type { PublicUser } from "@/lib/auth/user";
+import type { CityInfo } from "@/lib/parking/spots";
+import type { ParkingSpot } from "@/lib/types";
+import type { LatLng } from "@/lib/geo";
 import { AccountPanel } from "./AccountPanel";
+import { OfflineCities } from "./OfflineCities";
 import { DataDisclaimer } from "./DataDisclaimer";
 import { FeedbackButton } from "./FeedbackButton";
 import { ThemeToggle } from "./ThemeToggle";
@@ -41,15 +49,27 @@ interface SettingsPanelProps {
   user: PublicUser | null;
   /** Meldet An- und Abmelden nach oben – davon hängen die Reiter ab. */
   onUserChange: (user: PublicUser | null) => void;
+  /** Alle Städte – zur Auswahl für das Vorabladen (16.1). */
+  cities: readonly CityInfo[];
+  /** Einen Parkplatz aus den Listen im Konto auf der Karte zeigen. */
+  onShowSpot: (spot: ParkingSpot) => void;
+  /** Eigener Standort, falls bekannt (Entfernung bei gespeicherten Parkplätzen). */
+  position: LatLng | null;
 }
 
 export function SettingsPanel({
   detected,
+  cities,
   onMapsPreferenceChange,
   user,
   onUserChange,
+  onShowSpot,
+  position,
 }: SettingsPanelProps) {
+  const t = useT();
   const [preference, setPreference] = useState<MapsPreference | null>(null);
+  const locale = useLocale();
+  const router = useRouter();
 
   // Erst nach dem Laden lesen: Auf dem Server gibt es keinen Speicher, und
   // ein abweichender erster Rendergang führte sonst zu einem Hydrationsfehler.
@@ -81,33 +101,88 @@ export function SettingsPanel({
     }).catch(() => {});
   };
 
+  /*
+   * Sprache wählen (ToDo 15.5). Browser (Speicher und Cookie) zuerst, dann –
+   * mit Konto – am Konto, und **erst danach neu laden lassen**: Der Server liest
+   * beim Neuholen das Cookie, aber `LanguageSync` stellt bei einem Unterschied
+   * zum Konto wieder zurück. Deshalb wird der Kontowert im Zustand der
+   * Oberfläche nachgeführt, ehe die Seite neu geholt wird. Fehlschlag am Konto
+   * bleibt wie bei der Karten-App still: lokal gilt die Wahl bereits.
+   */
+  const chooseLanguage = async (next: Locale) => {
+    writeLanguagePreference(next);
+    if (user) {
+      onUserChange({ ...user, language: next });
+      await fetch("/api/account/language", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ language: next }),
+      }).catch(() => {});
+    }
+    router.refresh();
+  };
+
   return (
     <div className="space-y-8">
       <DataDisclaimer variant="lang" />
 
       <section aria-labelledby="darstellung-heading">
         <h2 id="darstellung-heading" className="text-base font-semibold">
-          Darstellung
+          {t("settings.appearance")}
         </h2>
         <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
-          Dunkel ist die Vorgabe – die App wird oft im Auto und bei Dunkelheit benutzt.
+          {t("settings.appearanceNote")}
         </p>
         <div className="mt-2">
           <ThemeToggle />
         </div>
       </section>
 
-      <section aria-labelledby="karten-app-heading">
-        <h2 id="karten-app-heading" className="text-base font-semibold">
-          Karten-App für die Navigation
+      <section aria-labelledby="sprache-heading">
+        <h2 id="sprache-heading" className="text-base font-semibold">
+          {t("settings.language")}
         </h2>
         <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
-          Womit {"„Navigation starten“"} geöffnet wird. Ohne eigene Wahl richtet sich das nach dem
-          Gerät – hier wäre das {mapsShortLabel(detected)}.
+          {t("settings.languageNote")}
         </p>
 
         <fieldset className="mt-2">
-          <legend className="sr-only">Karten-App wählen</legend>
+          <legend className="sr-only">{t("settings.languageChoose")}</legend>
+          <div className="flex flex-col gap-1">
+            {LOCALE_CODES.map((code) => (
+              <label
+                key={code}
+                className="flex min-h-11 cursor-pointer items-center gap-3 rounded-lg px-2 focus-within:ring-2 focus-within:ring-blue-600"
+              >
+                <input
+                  type="radio"
+                  name="sprache"
+                  value={code}
+                  checked={locale === code}
+                  onChange={() => void chooseLanguage(code)}
+                  className="h-5 w-5 accent-blue-700"
+                />
+                {/* Der Name steht in der eigenen Sprache und wird nie übersetzt. */}
+                <span lang={code}>{LOCALES[code].name}</span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
+        {LOCALE_CODES.length > 1 && (
+          <p className="mt-2 text-xs text-neutral-500">{t("settings.languageUnreviewed")}</p>
+        )}
+      </section>
+
+      <section aria-labelledby="karten-app-heading">
+        <h2 id="karten-app-heading" className="text-base font-semibold">
+          {t("settings.mapsApp")}
+        </h2>
+        <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
+          {t("settings.mapsAppNote", { detected: mapsShortLabel(detected, locale) })}
+        </p>
+
+        <fieldset className="mt-2">
+          <legend className="sr-only">{t("settings.mapsAppChoose")}</legend>
           <div className="flex flex-col gap-1">
             {MAPS_CHOICES.map((choice) => (
               <label
@@ -122,7 +197,7 @@ export function SettingsPanel({
                   onChange={() => choose(choice.id)}
                   className="h-5 w-5 accent-blue-700"
                 />
-                <span>{choice.label}</span>
+                <span>{t(choice.label)}</span>
               </label>
             ))}
           </div>
@@ -135,19 +210,17 @@ export function SettingsPanel({
           weiterhin nur im Browser; sie ins Konto zu übernehmen, steht als
           ToDo 11.3a offen.
         */}
-        <p className="mt-2 text-xs text-neutral-500">
-          Die Auswahl gilt nur auf diesem Gerät – auch mit Konto.
-        </p>
+        <p className="mt-2 text-xs text-neutral-500">{t("settings.mapsAppDeviceOnly")}</p>
       </section>
+
+      <OfflineCities cities={cities} />
 
       <section aria-labelledby="feedback-heading">
         <h2 id="feedback-heading" className="text-base font-semibold">
-          Fehler melden oder Vorschlag schicken
+          {t("settings.feedback")}
         </h2>
         <p className="mt-1 mb-2 text-sm text-neutral-600 dark:text-neutral-400">
-          Stimmt etwas nicht? Fehlt ein Parkplatz oder gibt es einen nicht mehr? Rückmeldungen sind
-          die einzige Quelle, die solche Änderungen bemerkt. Wenn du magst, kannst du eine
-          E-Mail-Adresse angeben – dann antworten wir dir.
+          {t("settings.feedbackNote")}
         </p>
         <FeedbackButton accountEmail={user?.email ?? null} />
       </section>
@@ -160,13 +233,17 @@ export function SettingsPanel({
       */}
       <section aria-labelledby="konto-heading">
         <h2 id="konto-heading" className="text-base font-semibold">
-          Konto
+          {t("settings.account")}
         </h2>
         <p className="mt-1 mb-2 text-sm text-neutral-600 dark:text-neutral-400">
-          Freiwillig. Die App funktioniert ohne Konto vollständig – auch das Melden von Fehlern. Ein
-          Konto merkt sich nur, dass deine Rückmeldungen zusammengehören.
+          {t("settings.accountNote")}
         </p>
-        <AccountPanel user={user} onUserChange={onUserChange} />
+        <AccountPanel
+          user={user}
+          onUserChange={onUserChange}
+          onShowSpot={onShowSpot}
+          position={position}
+        />
       </section>
 
       {/*
@@ -183,20 +260,25 @@ export function SettingsPanel({
         Suchmaschinen als Verweise erkennbar sein.
       */}
       <footer className="border-t border-neutral-200 pt-4 dark:border-neutral-800">
-        <nav aria-label="Rechtliches" className="flex flex-wrap gap-x-5 gap-y-1 text-sm">
+        <nav aria-label={t("settings.legal")} className="flex flex-wrap gap-x-5 gap-y-1 text-sm">
           <Link
             href="/impressum"
             className="inline-flex min-h-11 items-center text-blue-800 hover:underline focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"
           >
-            Impressum
+            {t("settings.imprint")}
           </Link>
           <Link
             href="/datenschutz"
             className="inline-flex min-h-11 items-center text-blue-800 hover:underline focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"
           >
-            Datenschutzerklärung
+            {t("settings.privacy")}
           </Link>
         </nav>
+        {locale !== "de" && (
+          <p lang={locale} className="mt-1 text-xs text-neutral-500">
+            {t("legal.germanOnly")}
+          </p>
+        )}
       </footer>
     </div>
   );

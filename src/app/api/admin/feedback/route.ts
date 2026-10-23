@@ -3,6 +3,7 @@ import { feedbackCounts, listFeedback } from "@/lib/db/feedback";
 import { isFeedbackKind, isFeedbackStatus } from "@/lib/feedback";
 import { userFromRequest } from "@/lib/auth/session";
 import { withLogging } from "@/lib/log";
+import { t } from "@/i18n";
 
 /**
  * Die Rückmeldungen für die Übersicht (ToDo 17.4).
@@ -20,7 +21,7 @@ import { withLogging } from "@/lib/log";
 async function getHandler(request: Request) {
   const user = userFromRequest(request);
   if (!user?.isAdmin) {
-    return NextResponse.json({ error: "Nicht angemeldet." }, { status: 401 });
+    return NextResponse.json({ error: t("api.notSignedIn") }, { status: 401 });
   }
 
   const params = new URL(request.url).searchParams;

@@ -2,6 +2,7 @@ import { createHash, randomBytes, randomUUID } from "node:crypto";
 import { db, now } from "./sqlite";
 import { hashPassword, verifyPassword } from "../auth/password";
 import { normalizeEmail } from "../auth/email";
+import { listFavorites } from "./favorites";
 
 /**
  * Benutzerkonten und Sitzungen (ToDos 11.1, 11.2).
@@ -23,12 +24,18 @@ export interface Account {
    * etwas gewählt – dann gilt, was im Browser steht, sonst „automatisch".
    */
   mapsPreference: string | null;
+  /**
+   * Gewählte Sprache der Oberfläche, geräteübergreifend (ToDo 15.5). `null`
+   * heißt: nie gewählt – dann gilt Cookie, sonst Browsersprache.
+   */
+  language: string | null;
 }
 
 interface AccountRow {
   id: string;
   email: string;
   maps_preference?: string | null;
+  language?: string | null;
   password_hash: string;
   created_at: string;
 }
@@ -51,6 +58,7 @@ const toAccount = (row: AccountRow): Account => ({
   email: row.email,
   createdAt: row.created_at,
   mapsPreference: row.maps_preference ?? null,
+  language: row.language ?? null,
 });
 
 /**
@@ -64,10 +72,18 @@ export function setMapsPreference(accountId: string, preference: string | null):
   db().prepare("UPDATE account SET maps_preference = ? WHERE id = ?").run(preference, accountId);
 }
 
+/**
+ * Die gewählte Sprache am Konto ablegen (ToDo 15.5) – zusätzlich zum Browser,
+ * wie die Karten-App. Der Wert wird am Endpunkt geprüft, nicht hier.
+ */
+export function setLanguage(accountId: string, language: string | null): void {
+  db().prepare("UPDATE account SET language = ? WHERE id = ?").run(language, accountId);
+}
+
 export function findAccountByEmail(email: string): Account | null {
   const row = db()
     .prepare(
-      "SELECT id, email, password_hash, created_at, maps_preference FROM account WHERE email = ?",
+      "SELECT id, email, password_hash, created_at, maps_preference, language FROM account WHERE email = ?",
     )
     .get(normalizeEmail(email)) as AccountRow | undefined;
   return row ? toAccount(row) : null;
@@ -94,6 +110,7 @@ export function createAccount(email: string, password: string): Account | null {
     // Ein neues Konto hat noch keine Wahl getroffen; es gilt, was im Browser
     // steht (ToDo 11.3a).
     mapsPreference: null,
+    language: null,
   };
 
   try {
@@ -120,7 +137,7 @@ export function createAccount(email: string, password: string): Account | null {
 export function authenticate(email: string, password: string): Account | null {
   const row = db()
     .prepare(
-      "SELECT id, email, password_hash, created_at, maps_preference FROM account WHERE email = ?",
+      "SELECT id, email, password_hash, created_at, maps_preference, language FROM account WHERE email = ?",
     )
     .get(normalizeEmail(email)) as AccountRow | undefined;
 
@@ -179,7 +196,7 @@ export function accountForSession(token: string | undefined): Account | null {
 
   const row = db()
     .prepare(
-      `SELECT a.id, a.email, a.password_hash, a.created_at, a.maps_preference, s.expires_at
+      `SELECT a.id, a.email, a.password_hash, a.created_at, a.maps_preference, a.language, s.expires_at
          FROM session s JOIN account a ON a.id = s.account_id
         WHERE s.token_hash = ?`,
     )
@@ -198,6 +215,198 @@ export function accountForSession(token: string | undefined): Account | null {
 export function deleteSession(token: string | undefined): void {
   if (!token) return;
   db().prepare("DELETE FROM session WHERE token_hash = ?").run(hashToken(token));
+}
+
+/**
+ * Passwort ändern und alle **anderen** Sitzungen des Kontos verwerfen
+ * (ToDo 10.7).
+ *
+ * Beides gehört in eine Transaktion: Wer vermutet, dass sein Passwort bekannt
+ * ist, will nicht, dass die Änderung gelingt und eine fremde Sitzung stehen
+ * bleibt. Die Sitzung, mit der geändert wird, bleibt bestehen – sonst stünde
+ * man nach dem Ändern vor einer Anmeldemaske.
+ *
+ * Gibt `false` zurück, wenn das alte Passwort nicht stimmt. Das alte Passwort
+ * wird verlangt, weil eine gestohlene Sitzung allein nicht genügen soll, um das
+ * Konto dauerhaft zu übernehmen.
+ */
+export function changePassword(
+  accountId: string,
+  oldPassword: string,
+  newPassword: string,
+  currentToken: string | undefined,
+): boolean {
+  const row = db().prepare("SELECT password_hash FROM account WHERE id = ?").get(accountId) as
+    { password_hash: string } | undefined;
+  if (!row || !verifyPassword(oldPassword, row.password_hash)) return false;
+
+  const keep = currentToken ? hashToken(currentToken) : "";
+  const handle = db();
+  handle.exec("BEGIN");
+  try {
+    handle
+      .prepare("UPDATE account SET password_hash = ? WHERE id = ?")
+      .run(hashPassword(newPassword), accountId);
+    handle
+      .prepare("DELETE FROM session WHERE account_id = ? AND token_hash <> ?")
+      .run(accountId, keep);
+    handle.exec("COMMIT");
+  } catch (error) {
+    handle.exec("ROLLBACK");
+    throw error;
+  }
+  return true;
+}
+
+/**
+ * Konto samt Sitzungen und Bewertungen löschen (ToDo 11.7, Art. 17 DSGVO).
+ *
+ * Sitzungen und Bewertungen fallen über `ON DELETE CASCADE` weg. Rückmeldungen
+ * bleiben bestehen – der Hinweis auf einen falschen Parkplatz soll nicht mit
+ * dem Konto verschwinden –, verlieren aber den Bezug zum Konto (`SET NULL`).
+ *
+ * **Die freiwillig angegebene Antwortadresse wird mit entfernt.** Sie ist die
+ * einzige Angabe an einer Rückmeldung, die auf eine Person zeigt, und wer sein
+ * Konto löscht, erwartet nicht, dass sie weiter irgendwo steht. Der Zeitpunkt
+ * kommt in `contact_removed_at`, damit die Übersicht „Adresse entfernt" von
+ * „nie eine angegeben" unterscheiden kann (Migration 3). Der Text der Meldung
+ * bleibt: Er ist der Hinweis selbst.
+ *
+ * Verlangt wird das Passwort (wie beim Ändern): Eine gestohlene Sitzung allein
+ * soll ein Konto nicht unwiderruflich vernichten können. `false`, wenn es nicht
+ * stimmt.
+ */
+export function deleteAccount(accountId: string, password: string): boolean {
+  const handle = db();
+  const row = handle.prepare("SELECT password_hash FROM account WHERE id = ?").get(accountId) as
+    { password_hash: string } | undefined;
+  if (!row || !verifyPassword(password, row.password_hash)) return false;
+
+  handle.exec("BEGIN");
+  try {
+    handle
+      .prepare(
+        `UPDATE feedback SET contact_email = NULL, contact_removed_at = ?
+          WHERE account_id = ? AND contact_email IS NOT NULL`,
+      )
+      .run(now(), accountId);
+    handle.prepare("DELETE FROM account WHERE id = ?").run(accountId);
+    handle.exec("COMMIT");
+  } catch (error) {
+    handle.exec("ROLLBACK");
+    throw error;
+  }
+  return true;
+}
+
+/** Alles, was zu einem Konto gespeichert ist – für die Auskunft (Art. 15, 20 DSGVO). */
+export interface AccountExport {
+  exportedAt: string;
+  account: {
+    email: string;
+    createdAt: string;
+    lastLoginAt: string | null;
+    mapsPreference: string | null;
+    language: string | null;
+  };
+  ratings: { spotId: string; vote: string; createdAt: string; updatedAt: string | null }[];
+  favorites: { spotId: string; createdAt: string }[];
+  feedback: {
+    kind: string;
+    message: string;
+    contactEmail: string | null;
+    spotId: string | null;
+    city: string | null;
+    url: string | null;
+    userAgent: string | null;
+    appVersion: string | null;
+    status: string;
+    createdAt: string;
+  }[];
+}
+
+/**
+ * Die eigenen Daten als Datensatz.
+ *
+ * **Nicht enthalten: Passwort-Hash und Sitzungs-Hashes** (Geheimnisse, keine
+ * Angaben über die Person) und die interne Notiz der Betreiber an einer
+ * Rückmeldung (sie beschreibt die Bearbeitung, nicht dich).
+ */
+export function exportAccountData(accountId: string): AccountExport | null {
+  const handle = db();
+  const account = handle
+    .prepare(
+      "SELECT email, created_at, last_login_at, maps_preference, language FROM account WHERE id = ?",
+    )
+    .get(accountId) as
+    | {
+        email: string;
+        created_at: string;
+        last_login_at: string | null;
+        maps_preference: string | null;
+        language: string | null;
+      }
+    | undefined;
+  if (!account) return null;
+
+  const ratings = handle
+    .prepare(
+      "SELECT spot_id, vote, created_at, updated_at FROM rating WHERE account_id = ? ORDER BY created_at",
+    )
+    .all(accountId) as {
+    spot_id: string;
+    vote: string;
+    created_at: string;
+    updated_at: string | null;
+  }[];
+
+  const feedback = handle
+    .prepare(
+      `SELECT kind, message, contact_email, spot_id, city, url, user_agent, app_version, status, created_at
+         FROM feedback WHERE account_id = ? ORDER BY created_at`,
+    )
+    .all(accountId) as {
+    kind: string;
+    message: string;
+    contact_email: string | null;
+    spot_id: string | null;
+    city: string | null;
+    url: string | null;
+    user_agent: string | null;
+    app_version: string | null;
+    status: string;
+    created_at: string;
+  }[];
+
+  return {
+    exportedAt: now(),
+    account: {
+      email: account.email,
+      createdAt: account.created_at,
+      lastLoginAt: account.last_login_at,
+      mapsPreference: account.maps_preference,
+      language: account.language,
+    },
+    ratings: ratings.map((r) => ({
+      spotId: r.spot_id,
+      vote: r.vote,
+      createdAt: r.created_at,
+      updatedAt: r.updated_at,
+    })),
+    favorites: listFavorites(accountId),
+    feedback: feedback.map((f) => ({
+      kind: f.kind,
+      message: f.message,
+      contactEmail: f.contact_email,
+      spotId: f.spot_id,
+      city: f.city,
+      url: f.url,
+      userAgent: f.user_agent,
+      appVersion: f.app_version,
+      status: f.status,
+      createdAt: f.created_at,
+    })),
+  };
 }
 
 /** Name des Cookies, in dem das Sitzungstoken steht. */

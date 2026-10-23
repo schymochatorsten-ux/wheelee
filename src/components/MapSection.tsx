@@ -2,9 +2,12 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
+import { type MessageKey } from "@/i18n";
+import { useLocale, useT } from "@/i18n/context";
 import type { ParkingSpot, ParkingSpotWithDistance } from "@/lib/types";
 import { distanceMeters, formatDistance, hasCoordinates } from "@/lib/geo";
 import { detectMapsTarget, type MapsTarget } from "@/lib/navigation";
+import { truncationHint } from "@/lib/map-hint";
 import {
   effectiveMapsPreference,
   readMapsPreference,
@@ -17,6 +20,7 @@ import { useGeolocation } from "@/hooks/useGeolocation";
 import { DestinationSearch } from "./DestinationSearch";
 import { useNearbySpots, useSpotsInBounds } from "@/hooks/useSpots";
 import type { FocusTarget, MapBounds } from "./map/ParkingMap";
+import { LanguageSync } from "./LanguageSync";
 import { MapLegend } from "./MapLegend";
 import { SettingsPanel } from "./SettingsPanel";
 import { NearestBar } from "./NearestBar";
@@ -32,13 +36,18 @@ import { ReportedSpots } from "./ReportedSpots";
  * Leaflet greift beim Laden auf `window` zu und darf deshalb nicht auf dem
  * Server gerendert werden.
  */
+function MapLoading() {
+  const t = useT();
+  return (
+    <div className="flex h-full items-center justify-center bg-neutral-100 dark:bg-neutral-900">
+      <p className="text-sm text-neutral-500">{t("map.loading")}</p>
+    </div>
+  );
+}
+
 const ParkingMap = dynamic(() => import("./map/ParkingMap"), {
   ssr: false,
-  loading: () => (
-    <div className="flex h-full items-center justify-center bg-neutral-100 dark:bg-neutral-900">
-      <p className="text-sm text-neutral-500">Karte wird geladen …</p>
-    </div>
-  ),
+  loading: () => <MapLoading />,
 });
 
 interface MapSectionProps {
@@ -59,11 +68,11 @@ interface MapSectionProps {
 
 type View = "map" | "list" | "settings" | "feedback";
 
-const VIEW_LABELS: Record<View, string> = {
-  map: "Karte",
-  list: "Liste",
-  settings: "Einstellungen",
-  feedback: "Rückmeldungen",
+const VIEW_LABELS: Record<View, MessageKey> = {
+  map: "view.map",
+  list: "view.list",
+  settings: "view.settings",
+  feedback: "view.feedback",
 };
 
 /**
@@ -178,6 +187,8 @@ export function MapSection({
   defaultCity,
   user: initialUser,
 }: MapSectionProps) {
+  const t = useT();
+  const locale = useLocale();
   const center = defaultCity.center;
   const geo = useGeolocation();
   const [selected, setSelected] = useState<ParkingSpot | null>(null);
@@ -213,6 +224,10 @@ export function MapSection({
    */
   const [bounds, setBounds] = useState<MapBounds | null>(null);
   const { spots: mapSpots, truncated } = useSpotsInBounds(bounds, initialNearby);
+  // Zu weit herausgezoomt: Die geladenen 2.000 sind eine zufällige Auswahl und
+  // würden an manchen Orten „hier ist nichts" vortäuschen – also gar keine
+  // zeigen (ToDo 9.16).
+  const hint = truncationHint(truncated, bounds?.zoom ?? null);
 
   /**
    * Das Reiseziel (ToDo 6.12). Ist eines gesetzt, bezieht sich alles darauf
@@ -453,6 +468,7 @@ export function MapSection({
   return (
     // Die Bildschirmhöhe setzt das Layout; hier nur den Rest ausfüllen.
     <div className="flex min-h-0 flex-1 flex-col">
+      <LanguageSync accountLanguage={user?.language ?? null} />
       {/*
         Die Kopfzeile ist so klein wie möglich gehalten (auf Wunsch,
         2026-10-11). Sie trägt nichts bei, was beim Parkplatzsuchen hilft –
@@ -482,11 +498,11 @@ export function MapSection({
             wirklich nachschlägt.
           */}
           <h1 className="min-w-0 text-sm font-semibold break-words hyphens-auto">
-            Behindertenparkplätze
+            {t("app.title")}
           </h1>
           <div
             role="tablist"
-            aria-label="Ansicht wählen"
+            aria-label={t("view.choose")}
             className="flex shrink-0 overflow-hidden rounded-lg border border-neutral-200 text-xs dark:border-neutral-800"
           >
             {views.map((option) => (
@@ -513,10 +529,10 @@ export function MapSection({
                     <span aria-hidden="true" className="sm:hidden">
                       {option === "settings" ? <GearIcon /> : <InboxIcon />}
                     </span>
-                    <span className="max-sm:sr-only">{VIEW_LABELS[option]}</span>
+                    <span className="max-sm:sr-only">{t(VIEW_LABELS[option])}</span>
                   </>
                 ) : (
-                  VIEW_LABELS[option]
+                  t(VIEW_LABELS[option])
                 )}
               </button>
             ))}
@@ -542,11 +558,14 @@ export function MapSection({
               aria-live="polite"
               className="min-w-0 flex-1 truncate text-xs text-neutral-600 dark:text-neutral-400"
             >
-              {geo.status === "locating" && "Standort wird ermittelt …"}
+              {geo.status === "locating" && t("map.locating")}
               {geo.status === "ready" &&
                 (nearest
-                  ? `Nächster Parkplatz: ${nearest.street ?? nearest.label} – ${formatDistance(nearest.distanceMeters)}`
-                  : "Kein verorteter Parkplatz in der Nähe.")}
+                  ? t("map.nearestSpot", {
+                      name: nearest.street ?? nearest.label,
+                      distance: formatDistance(nearest.distanceMeters, locale),
+                    })
+                  : t("map.noneNearby"))}
               {geo.message}
             </p>
             {(geo.status === "denied" ||
@@ -558,10 +577,10 @@ export function MapSection({
                 // Sichtbar steht nur „Erneut" – neben der Meldung, die den
                 // Grund nennt, ist das eindeutig. Vorgelesen fehlte der
                 // Zusammenhang, deshalb der vollständige Name.
-                aria-label="Standort erneut versuchen"
+                aria-label={t("map.retryLocation")}
                 className="min-h-11 shrink-0 rounded-lg border border-neutral-300 px-2.5 text-xs font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
               >
-                Erneut
+                {t("search.retry")}
               </button>
             )}
           </div>
@@ -572,7 +591,7 @@ export function MapSection({
         {view === "map" ? (
           <>
             <ParkingMap
-              spots={mapSpots}
+              spots={hint === "city-level" ? [] : mapSpots}
               center={center}
               userPosition={geo.position}
               destination={destination}
@@ -638,12 +657,12 @@ export function MapSection({
               „dieses Ausschnitts" ist weg – es stand da, wo ohnehin nur der
               sichtbare Ausschnitt gemeint sein kann.
             */}
-            {truncated && (
+            {hint !== "none" && (
               <p
                 role="status"
                 className="pointer-events-none absolute inset-x-0 bottom-10 z-[1000] mx-auto w-fit max-w-[calc(100%-2rem)] rounded-2xl bg-amber-100 px-3 py-1.5 text-center text-xs font-medium text-amber-900 shadow dark:bg-amber-950 dark:text-amber-100"
               >
-                Nicht alle Parkplätze sind geladen – näher heranzoomen.
+                {hint === "city-level" ? t("map.hintCityLevel") : t("map.hintTruncated")}
               </p>
             )}
             <MapLegend />
@@ -700,9 +719,12 @@ export function MapSection({
           <div className="h-full overflow-y-auto px-4 py-4">
             <SettingsPanel
               detected={detected}
+              cities={cities}
               onMapsPreferenceChange={setMapsPreference}
               user={user}
               onUserChange={setUser}
+              onShowSpot={select}
+              position={geo.position}
             />
           </div>
         )}

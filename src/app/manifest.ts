@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { t } from "@/i18n";
 
 /**
  * Web-App-Manifest.
@@ -10,10 +11,9 @@ import type { MetadataRoute } from "next";
  */
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "wheelee – Behindertenparkplätze",
+    name: t("meta.title"),
     short_name: "wheelee",
-    description:
-      "Findet den nächstgelegenen öffentlichen Behindertenparkplatz auf einer Karte – mobil, ohne Anmeldung.",
+    description: t("meta.description"),
     start_url: "/",
     display: "standalone",
     // Dunkel ist die Vorgabe der App; der Startbildschirm soll dazu passen.

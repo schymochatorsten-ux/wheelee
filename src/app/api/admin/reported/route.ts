@@ -1,9 +1,11 @@
 import { NextResponse } from "next/server";
-import { ratingSummary, spotsReportedGone } from "@/lib/db/ratings";
+import { ratingSummary, reportedSpots } from "@/lib/db/ratings";
+import { roundWeight, type ReportReason } from "@/lib/ratings/trust";
 import { spotById } from "@/lib/parking/spots";
 import { userFromRequest } from "@/lib/auth/session";
 import { spotTitle } from "@/lib/parking/display";
 import { withLogging } from "@/lib/log";
+import { t } from "@/i18n";
 
 /**
  * Parkplätze, die mehrfach als „existiert nicht mehr" gemeldet wurden
@@ -42,6 +44,14 @@ export interface ReportedSpotView {
   goneCount: number;
   /** Gegengewicht: Wie viele haben ihn bestätigt? */
   existsCount: number;
+  /**
+   * Gewichtete Summen nach Alter und Konto (11.6) – neben, nicht statt der
+   * rohen Zähler. Nur zum Einordnen; ändern nichts an den Daten (8.6).
+   */
+  goneWeight: number;
+  existsWeight: number;
+  /** Warum der Parkplatz auf der Liste steht. */
+  reasons: ReportReason[];
   lastGoneAt: string | null;
   lastExistsAt: string | null;
   /**
@@ -66,7 +76,7 @@ export interface ReportedSpotView {
 async function getHandler(request: Request) {
   const user = userFromRequest(request);
   if (!user?.isAdmin) {
-    return NextResponse.json({ error: "Nicht angemeldet." }, { status: 401 });
+    return NextResponse.json({ error: t("api.notSignedIn") }, { status: 401 });
   }
 
   const raw = new URL(request.url).searchParams.get("min");
@@ -74,14 +84,18 @@ async function getHandler(request: Request) {
   const minimum =
     Number.isInteger(parsed) && parsed >= 1 && parsed <= MAX_MINIMUM ? parsed : DEFAULT_MINIMUM;
 
-  const spots: ReportedSpotView[] = spotsReportedGone(minimum).map(({ spotId, goneCount }) => {
+  const spots: ReportedSpotView[] = reportedSpots(minimum).map((entry) => {
+    const { spotId, goneCount } = entry;
     const summary = ratingSummary(spotId);
     const spot = spotById(spotId);
 
     return {
       spotId,
       goneCount,
-      existsCount: summary.existsCount,
+      existsCount: entry.existsCount,
+      goneWeight: roundWeight(entry.goneWeight),
+      existsWeight: roundWeight(entry.existsWeight),
+      reasons: entry.reasons,
       lastGoneAt: summary.lastGoneAt,
       lastExistsAt: summary.lastExistsAt,
       spot: spot

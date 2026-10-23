@@ -16,6 +16,8 @@
  * Ziel.
  */
 
+import { DEFAULT_LOCALE, t, type Locale } from "@/i18n";
+
 /** Kleinster Durchmesser eines Bündels in Pixeln. */
 export const MIN_CLUSTER_PX = 48;
 
@@ -39,7 +41,6 @@ export function clusterSize(count: number): number {
  * niemandem, dass sich dahinter Parkplätze verbergen und dass ein Antippen sie
  * auseinanderzieht.
  */
-export function clusterLabel(count: number): string {
-  const was = count === 1 ? "Parkplatz" : "Parkplätze";
-  return `${count} ${was} in diesem Bereich, zum Aufteilen antippen`;
+export function clusterLabel(count: number, locale: Locale = DEFAULT_LOCALE): string {
+  return t(count === 1 ? "map.clusterOne" : "map.clusterMany", { count }, locale);
 }

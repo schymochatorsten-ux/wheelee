@@ -25,6 +25,8 @@
  * Status, wie lange, und bei einem Fehler dessen Art und Herkunft im Code.
  */
 
+import { localeFromRequest, runWithLocale } from "./request-locale";
+
 export type LogLevel = "info" | "warn" | "error";
 
 export type LogValue = string | number | boolean | null;
@@ -203,7 +205,10 @@ export function withLogging<A extends unknown[]>(
     const path = safePath(request.url);
 
     try {
-      const response = await handler(request, ...rest);
+      // Sprache der Anfrage für die Fehlermeldungen (siehe `request-locale.ts`).
+      const response = await runWithLocale(localeFromRequest(request), () =>
+        handler(request, ...rest),
+      );
       const ms = Date.now() - started;
       if (worthLogging(request.method, response.status, ms)) {
         logEvent(

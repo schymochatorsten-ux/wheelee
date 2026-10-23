@@ -16,6 +16,14 @@ import { errorFields, logEvent, safePath } from "@/lib/log";
  */
 export function register(): void {
   /*
+   * Seit es eine Middleware gibt (10.7), lädt Next diese Datei auch für die
+   * Edge-Laufzeit, in der es `process.stdout` nicht gibt – der Start brach mit
+   * „Cannot read properties of undefined (reading 'write')" ab und jede Seite
+   * antwortete mit 404. Das Protokoll gehört in die Node-Laufzeit.
+   */
+  if (process.env.NEXT_RUNTIME === "edge") return;
+
+  /*
    * Eine Zeile beim Start, und die ist keine Zierde: Am 2026-10-19 stellte
    * sich heraus, dass auf wheelee.de acht Tage lang ein alter Stand lief
    * (12.5a). Eine Startzeile im `docker logs` beantwortet genau diese Frage –

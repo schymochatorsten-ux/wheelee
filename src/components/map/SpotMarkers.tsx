@@ -6,6 +6,7 @@ import L from "leaflet";
 import "leaflet.markercluster";
 import type { ParkingSpot } from "@/lib/types";
 import { hasCoordinates } from "@/lib/geo";
+import { useLocale, useT } from "@/i18n/context";
 import { iconFor } from "./icons";
 import { clusterLabel, clusterSize } from "./cluster";
 
@@ -32,6 +33,8 @@ interface SpotMarkersProps {
 }
 
 export function SpotMarkers({ spots, nearestId, highlightIds = null, onSelect }: SpotMarkersProps) {
+  const t = useT();
+  const locale = useLocale();
   const map = useMap();
 
   useEffect(() => {
@@ -57,7 +60,7 @@ export function SpotMarkers({ spots, nearestId, highlightIds = null, onSelect }:
           // `aria-label` am Element selbst, nicht an einem Kind: Leaflet macht
           // aus diesem Html den Inhalt des Markers, und der Screenreader liest
           // sonst nur die nackte Zahl.
-          html: `<span role="button" aria-label="${clusterLabel(count)}">${count}</span>`,
+          html: `<span role="button" aria-label="${clusterLabel(count, locale)}">${count}</span>`,
           iconSize: L.point(size, size),
         });
       },
@@ -69,9 +72,14 @@ export function SpotMarkers({ spots, nearestId, highlightIds = null, onSelect }:
       const isTarget = spot.id === nearestId;
       const isCandidate = highlightIds?.has(spot.id) ?? false;
 
-      const name = `${spot.label}, ${spot.spotCount} ${
-        spot.spotCount === 1 ? "Stellplatz" : "Stellplätze"
-      }${isTarget ? ", ausgewähltes Ziel" : isCandidate ? ", zur Auswahl angeboten" : ""}`;
+      const spaces = t(spot.spotCount === 1 ? "list.spacesOne" : "list.spacesMany", {
+        count: spot.spotCount,
+      });
+      const name = isTarget
+        ? t("map.markerTarget", { label: spot.label, spaces })
+        : isCandidate
+          ? t("map.markerCandidate", { label: spot.label, spaces })
+          : t("map.marker", { label: spot.label, spaces });
 
       const marker = L.marker([spot.lat, spot.lng], {
         icon: iconFor({
@@ -108,7 +116,7 @@ export function SpotMarkers({ spots, nearestId, highlightIds = null, onSelect }:
     return () => {
       map.removeLayer(cluster);
     };
-  }, [map, spots, nearestId, highlightIds, onSelect]);
+  }, [map, spots, nearestId, highlightIds, onSelect, t, locale]);
 
   return null;
 }

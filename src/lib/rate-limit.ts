@@ -92,6 +92,8 @@ export const LIMITS = {
   feedback: { max: 5, windowMs: 10 * 60_000 },
   login: { max: 10, windowMs: 10 * 60_000 },
   register: { max: 5, windowMs: 60 * 60_000 },
+  /** Passwort ändern: je Konto, denn das alte Passwort wird hier erneut abgefragt (ToDo 10.7). */
+  passwordChange: { max: 5, windowMs: 10 * 60_000 },
 
   /*
    * Bewertungen (ToDo 8.4). Großzügiger als die übrigen Grenzen, weil hier ein
@@ -113,6 +115,14 @@ export const LIMITS = {
    * reihenweise Konten anlegt und über dieselbe Leitung bedient.
    */
   ratingPerClient: { max: 120, windowMs: 10 * 60_000 },
+
+  /*
+   * Gespeicherte Parkplätze (ToDo 11.5): schreibend wie das Bewerten, aus
+   * demselben Grund nach Konto und zusätzlich weit gefasst nach Herkunft.
+   * Wer eine Liste durchgeht und mehrere Sterne setzt, bleibt weit darunter.
+   */
+  favorite: { max: 60, windowMs: 10 * 60_000 },
+  favoritePerClient: { max: 240, windowMs: 10 * 60_000 },
 } as const;
 
 /**

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useT } from "@/i18n/context";
 import { applyTheme, readTheme, THEMES, type Theme } from "@/lib/theme";
 
 /**
@@ -10,6 +11,7 @@ import { applyTheme, readTheme, THEMES, type Theme } from "@/lib/theme";
  * müsste man morgens und abends von Hand wechseln.
  */
 export function ThemeToggle() {
+  const t = useT();
   const [theme, setTheme] = useState<Theme | null>(null);
 
   // Erst nach dem Laden lesen: Auf dem Server gibt es keinen Speicher, und
@@ -35,7 +37,7 @@ export function ThemeToggle() {
   return (
     <div
       role="radiogroup"
-      aria-label="Darstellung"
+      aria-label={t("theme.group")}
       className="flex shrink-0 overflow-hidden rounded-lg border border-neutral-300 text-sm dark:border-neutral-700"
     >
       {THEMES.map((option) => (
@@ -51,7 +53,7 @@ export function ThemeToggle() {
               : "bg-white text-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
           }`}
         >
-          {option.label}
+          {t(option.label)}
         </button>
       ))}
     </div>

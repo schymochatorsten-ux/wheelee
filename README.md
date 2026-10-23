@@ -93,6 +93,7 @@ src/lib/geo.ts        Entfernungsberechnung und -formatierung
 src/lib/parking/      Einlesen und Zerlegen der städtischen Parkplatzlisten
 src/lib/db/           SQLite: Schema, Konten, Rückmeldungen
 src/lib/auth/         Passwörter, Sitzungen, Administratorprüfung
+src/i18n/             Beschriftungen je Sprache (de, en, es), Sprachwahl, Kontext
 scripts/import/       Importkette von der Quelldatei zur Seed-Datei
 data/                 Importergebnisse (versioniert)
 .data/                Datenbank der Entwicklung (nicht versioniert)
@@ -101,6 +102,19 @@ Parkplätze/           Quelldateien der Städte
 
 Die Trennung folgt dem Konzept: Kartendarstellung, Parkplatzdaten und
 Bewertungen bleiben voneinander unabhängig.
+
+**Sprachen (ToDo 15).** Deutsch, Englisch, Spanisch – je eine Datei in
+`src/i18n/`, **kein Übersetzer zur Laufzeit** (D-08 in `Erledigt.md`). Die
+Sprache kommt aus dem Cookie `wheelee-lang`, sonst vom Konto, sonst aus der
+Browsersprache, sonst Deutsch; sie steht schon im ersten HTML
+(`<html lang>`). Eine weitere Sprache: `src/i18n/<code>.ts` vom Typ `Messages`
+(ein fehlender Schlüssel ist ein Typfehler), Eintrag in `catalogs` und
+`LOCALES` in `src/i18n/index.ts` – `i18n.test.ts` prüft Schlüssel und
+Platzhalter jeder Sprache von selbst. Englisch und Spanisch sind **maschinell
+vorübersetzt und nicht von Muttersprachler:innen geprüft** (ToDo 15.6).
+Haftungshinweis, Impressum und Datenschutzerklärung sowie Straßennamen und
+Quelldaten bleiben deutsch. Die E2E-Tests laufen mit `locale: "de-DE"`, weil
+sie am deutschen Wortlaut hängen.
 
 **Die Seite lädt nur, was sichtbar ist.** Alle 17.206 Standorte ins HTML zu
 schreiben ergab 6,3 MB; jetzt sind es 128 KB, und die Karte holt den
@@ -352,7 +366,12 @@ für einen Menschen:
 
 - **im Reiter „Rückmeldungen"** (nur für Administratoren) als erster
   Abschnitt – Parkplätze mit mindestens zwei Meldungen aus verschiedenen
-  Konten, mit einem Klick auf die Karte;
+  Konten, mit einem Klick auf die Karte. Die Liste sagt, **warum** ein
+  Parkplatz dort steht (etwa „die letzten drei Stimmen: aufgehoben"), und
+  zeigt neben den rohen Zählern **gewichtete Summen**: ältere Stimmen zählen
+  weniger (nach zwei Jahren ein Viertel), Konten, die oft mit den anderen
+  übereinstimmen, bis doppelt (ToDo 11.6, Rechnung in
+  `src/lib/ratings/trust.ts`);
 - **in `npm run validate`** als eigener Abschnitt des Berichts und als Befund
   je Stadt. Der Lauf liest die Datenbank ausdrücklich nur lesend und legt sie
   nicht an; fehlt sie, steht im Bericht „nicht geprüft" und nicht „nichts
@@ -385,8 +404,10 @@ mit Konto, und auch nicht in einer Rückmeldung.
 Gespeichert wird nur, was jemand selbst einträgt:
 
 - **Konto:** E-Mail-Adresse und das Passwort als scrypt-Hash. Die App setzt
-  genau ein Cookie, und erst nach dem Anmelden: das Sitzungstoken. Wer die App
-  nur benutzt, bekommt keines – das prüft ein E2E-Test.
+  höchstens zwei Cookies, beide erst auf eine Handlung hin: das Sitzungstoken
+  nach dem Anmelden und `wheelee-lang` (nur der Sprachcode), sobald jemand eine
+  Sprache wählt. Wer die App nur benutzt, bekommt keines – das prüft ein
+  E2E-Test. Die Sprache steht außerdem am Konto, wie die Karten-App.
 - **Rückmeldung:** der geschriebene Text, der betroffene Parkplatz und – **nur
   freiwillig** – eine E-Mail-Adresse für die Antwort. Das Formular sagt offen,
   dass ohne Adresse keine Antwort möglich ist, und dass die Adresse mit der
@@ -449,12 +470,16 @@ wo ein Verstoß auffallen müsste.
 
 Die Inhaltsrichtlinie (CSP) erlaubt als fremde Herkunft **nur** die
 Kartenkacheln von OpenStreetMap und verbietet jeden fremden Rahmen
-(`frame-ancestors 'none'`). Sie führt allerdings `'unsafe-inline'` bei den
-Skripten, weil Next die Hydrationsdaten und das Theme-Skript inline in die
-Seite schreibt. **Sie ist damit kein Schutz vor eingeschleustem Code in der
-eigenen Seite** – dafür bräuchte es eine Nonce je Anfrage und eine Middleware.
-Was sie leistet, ist das Blockieren fremder Skriptquellen; was sie nicht
-leistet, steht hier, damit niemand sich auf mehr verlässt.
+(`frame-ancestors 'none'`). Skripte laufen nur mit einer **Nonce, die
+`src/middleware.ts` für jede Anfrage neu erzeugt** und an Nexts Hydrationsskripte
+und das Theme-Skript weiterreicht; eingeschleustes Inline-Skript trägt sie nicht
+und wird vom Browser nicht ausgeführt. Folge: Alle Seiten werden je Anfrage
+gerendert, nicht vorab erzeugt. **Was bleibt:** `'unsafe-inline'` gilt weiter
+für **Stile**, weil Leaflet die Position jeder Kachel als `style`-Attribut
+setzt – damit ist Schadcode über Stile (etwa zum Ausspähen von Seiteninhalt)
+nicht ausgeschlossen. Im Entwicklungsbetrieb kommen `'unsafe-eval'` und `ws:`
+hinzu, im Produktionsbau nicht. Der Service Worker (`/sw.js`) bekommt keine
+Richtlinie, weil er Kartenkacheln von OpenStreetMap holen muss.
 
 ## Was im Betrieb protokolliert wird
 

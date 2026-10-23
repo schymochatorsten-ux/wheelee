@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { t } from "@/i18n";
 import {
   isFeedbackKind,
   isFeedbackStatus,
@@ -129,7 +130,7 @@ describe("Hinweis zur E-Mail-Adresse", () => {
      * der Text einmal umgeschrieben, soll auffallen, wenn dabei genau diese
      * Aussage verloren geht.
      */
-    expect(CONTACT_HINT).toMatch(/Nur mit Adresse/u);
-    expect(CONTACT_HINT).toMatch(/Ohne Adresse/u);
+    expect(t(CONTACT_HINT)).toMatch(/Nur mit Adresse/u);
+    expect(t(CONTACT_HINT)).toMatch(/Ohne Adresse/u);
   });
 });

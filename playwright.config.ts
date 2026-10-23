@@ -21,6 +21,10 @@ export default defineConfig({
   reporter: process.env.CI ? "github" : "list",
   use: {
     baseURL: "http://localhost:3000",
+    // Die Tests hängen am deutschen Wortlaut. Ohne Angabe schickte Playwright
+    // `en-US`, und sobald es eine englische Oberfläche gibt (15.1), riete die
+    // App aus der Browsersprache Englisch. Die Sprachwahl hat eigene Tests.
+    locale: "de-DE",
     trace: "retain-on-failure",
   },
   projects: [{ name: "Mobil (Pixel 7)", use: { ...devices["Pixel 7"] } }],

@@ -140,6 +140,20 @@ export function nearestSpots(origin: LatLng, limit = 100): ParkingSpotWithDistan
 }
 
 /**
+ * Alle Parkplätze einer Stadt, für das bewusste Vorabladen (ToDo 16.1).
+ *
+ * Gefiltert wird über die IDs der Seed-Datei und nicht über den Kartenausschnitt:
+ * Ein Rechteck um die Stadtmitte nähme Nachbargemeinden mit und ließe Ränder aus.
+ */
+export function spotsOfCity(slug: string): { city: CityInfo; spots: ParkingSpot[] } | null {
+  const index = seeds.findIndex(({ seed }) => seed.city.slug === slug);
+  if (index === -1) return null;
+
+  const ids = new Set(seeds[index].seed.spots.map((spot) => spot.id));
+  return { city: getCities()[index], spots: allSpots().filter((spot) => ids.has(spot.id)) };
+}
+
+/**
  * Ein einzelner Parkplatz über seine ID.
  *
  * Gebraucht für die Übersicht der Rückmeldungen (ToDo 17.4): Eine Meldung

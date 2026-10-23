@@ -18,93 +18,12 @@ import type { NextConfig } from "next";
  */
 
 /**
- * Was die Seite laden darf.
- *
- * Aufgestellt an dem, was die App **wirklich** braucht; alles andere ist
- * verboten. Der E2E-Test `e2e/datenschutz.spec.ts` prüft dieselbe Zusage von
- * der anderen Seite – er zählt die tatsächlichen Verbindungen. Die beiden
- * dürfen sich nicht widersprechen.
+ * **Die Inhaltsrichtlinie (CSP) steht nicht hier**, sondern in `src/lib/csp.ts`
+ * und wird von `src/middleware.ts` gesetzt: Sie braucht seit 10.7 eine Nonce
+ * je Anfrage, und die kann eine statische Konfiguration nicht liefern. Alles
+ * übrige hier ist für alle Anfragen gleich.
  */
-/**
- * Im Entwicklungsbetrieb braucht Next zwei Dinge mehr – und nur dort.
- *
- * React Refresh wertet Code mit `eval` aus, und das Nachladen geänderter
- * Dateien läuft über eine WebSocket-Verbindung. Ohne diese Ausnahmen
- * **startet die App im Browser gar nicht**, und zwar mit einer
- * Konsolenmeldung, die niemand mit der Konfigurationsdatei in Verbindung
- * bringt.
- *
- * Dass die Ausnahmen an `NODE_ENV` hängen, ist der Punkt: Im Produktionsbau
- * sind sie nicht da. Eine Richtlinie, die man zum Entwickeln aufweicht und
- * dann aufgeweicht ausliefert, wäre keine.
- */
-const ENTWICKLUNG = process.env.NODE_ENV === "development";
-
-const CSP = [
-  // Grundregel: alles vom eigenen Server. Jede Zeile darunter ist eine
-  // begründete Ausnahme davon.
-  "default-src 'self'",
-
-  /*
-   * Kartenkacheln von OpenStreetMap – ohne sie gibt es keine Karte. `data:`
-   * und `blob:` braucht Leaflet für die eigenen Marker-Symbole.
-   */
-  "img-src 'self' data: blob: https://tile.openstreetmap.org",
-
-  /*
-   * `'unsafe-inline'` für Stile ist hier nicht zu vermeiden: Leaflet setzt die
-   * Position jeder Kachel und jedes Markers als `style`-Attribut. Das ist die
-   * Bauart der Bibliothek, keine Nachlässigkeit.
-   */
-  "style-src 'self' 'unsafe-inline'",
-
-  /*
-   * **Hier ist diese Richtlinie schwach, und das gehört gesagt:**
-   * `'unsafe-inline'` steht auch bei den Skripten. Next.js schreibt die Daten
-   * für die Hydration als Inline-Skript in die Seite, und das Theme-Skript in
-   * `layout.tsx` muss vor dem ersten Zeichnen laufen, sonst blitzt die Seite
-   * in der falschen Helligkeit auf.
-   *
-   * Was diese Zeile **trotzdem leistet:** Kein fremder Server darf Skripte
-   * liefern. Ein nachlässig eingebundenes Analysewerkzeug oder eine
-   * kompromittierte CDN-Adresse wäre damit blockiert – der Weg, über den
-   * solche Sachen in einer kleinen App tatsächlich landen.
-   *
-   * Was sie **nicht** leistet: Schutz vor eingeschleustem Code in der eigenen
-   * Seite. Dafür bräuchte es eine Nonce je Anfrage und damit eine Middleware.
-   * Das ist der nächste Schritt, nicht dieser – und es wäre unredlich, die
-   * Richtlinie ohne diesen Hinweis als XSS-Schutz zu führen.
-   */
-  `script-src 'self' 'unsafe-inline'${ENTWICKLUNG ? " 'unsafe-eval'" : ""}`,
-
-  /*
-   * Der Browser spricht **nur** mit dem eigenen Server. Die Ortssuche läuft
-   * über `/api/geocode`; eine direkte Verbindung zu Nominatim aus einer
-   * Komponente heraus wäre genau der Fehler, den `datenschutz.spec.ts` sucht –
-   * hier wird er zusätzlich vom Browser verhindert.
-   */
-  `connect-src 'self'${ENTWICKLUNG ? " ws:" : ""}`,
-
-  // Schriften kommen über `next/font` aus dem eigenen Bundle, nicht von Google.
-  "font-src 'self'",
-
-  /*
-   * **Die Seite darf in keinen fremden Rahmen.** Das ist bei einer Karten-App
-   * nicht theoretisch: Wer sie unsichtbar über eine andere Seite legt, kann
-   * Klicks auf Knöpfe lenken, die Standortfreigabe oder Navigation auslösen.
-   */
-  "frame-ancestors 'none'",
-  "object-src 'none'",
-
-  // Verhindert, dass eingeschleuster Code relative Pfade umbiegt oder ein
-  // Formular auf einen fremden Server schickt.
-  "base-uri 'self'",
-  "form-action 'self'",
-].join("; ");
-
 const SICHERHEITS_HEADER = [
-  { key: "Content-Security-Policy", value: CSP },
-
   /*
    * Ohne das rät der Browser den Inhaltstyp. Eine hochgeladene oder
    * ausgelieferte Datei, die er für HTML hält, wird dann als HTML ausgeführt.
@@ -151,7 +70,8 @@ const SICHERHEITS_HEADER = [
 
 /**
  * Der Service Worker bekommt **keine** Inhaltsrichtlinie – und das ist kein
- * Loch, sondern eine Notwendigkeit.
+ * Loch, sondern eine Notwendigkeit. (Die Middleware schließt `/sw.js` über
+ * ihren `matcher` aus; hier bekommt die Datei nur die übrigen Zeilen.)
  *
  * Die CSP, die mit einem Service-Worker-Skript ausgeliefert wird, gilt für den
  * **Worker selbst**, nicht für die Seite. Und der Worker tut genau das, was
@@ -176,8 +96,6 @@ const SICHERHEITS_HEADER = [
  * überspringt sich in solchen Fällen selbst; geprüft wird der Offline-Betrieb
  * in einem echten Browser gegen `npm run start`.
  */
-const SW_HEADER = SICHERHEITS_HEADER.filter((header) => header.key !== "Content-Security-Policy");
-
 const nextConfig: NextConfig = {
   /**
    * Für den Betrieb im Container: `standalone` legt unter
@@ -204,11 +122,7 @@ const nextConfig: NextConfig = {
    * umstellt, und eine versehentlich gesetzte Variable fällt niemandem auf –
    * die Seite funktioniert ja weiter.
    */
-  headers: () =>
-    Promise.resolve([
-      { source: "/:path((?!sw\\.js$).*)", headers: SICHERHEITS_HEADER },
-      { source: "/sw.js", headers: SW_HEADER },
-    ]),
+  headers: () => Promise.resolve([{ source: "/:path*", headers: SICHERHEITS_HEADER }]),
 };
 
 export default nextConfig;

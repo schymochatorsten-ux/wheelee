@@ -1,11 +1,15 @@
 import { describe, expect, it } from "vitest";
+import { LOCALE_CODES, type Locale } from "@/i18n";
 import {
+  describeRestriction,
+  formatTimeRestriction,
   isAlwaysOpen,
   maxStay,
   normalizeTimeRestriction,
   parseTimeWindows,
   restrictionState,
   splitSeason,
+  understandRestriction,
 } from "./opening-hours";
 
 /** Montag, 10:00 Uhr. */
@@ -338,4 +342,146 @@ describe("die letzten Formen aus dem Bestand", () => {
       expect(restrictionState("Mo-Su,PH off", montagVormittag)).toBe("unbekannt");
     });
   });
+});
+
+/**
+ * Zeitangaben je Sprache (ToDo 15.4).
+ *
+ * Die Angabe wird **ausgegeben, nicht je Sprache neu gedeutet**: Die Tests
+ * prüfen deshalb nicht nur, was in welcher Sprache dasteht, sondern dass das
+ * Verstandene dasselbe ist wie das, woraus „gilt gerade?" gerechnet wird – für
+ * jede Sprache.
+ */
+describe("Zeitangaben je Sprache", () => {
+  /** Echte und nachgebaute Formen aus dem Bestand, die sicher verstanden werden. */
+  const verstanden = [
+    "Mo - Fr 8 - 18 Uhr",
+    "Mo-Fr 06:00-19:00; Sa 06:00-13:00",
+    "werktags 8-18 Uhr",
+    "Apr-Oct: Mo-Su 09:00-18:00",
+    "Fr-Sa 06:00-02:00",
+    "Mo-Fr 00:00-07:00, 13:00-24:00",
+    "7 - 19 Uhr",
+    "Mo, Di, Do 08:00-12:00",
+  ];
+
+  /** Formen, bei denen etwas verloren ginge – dort bleibt der deutsche Text stehen. */
+  const unsicher = [
+    "Mo-Su 08:00-18:00, Sa off",
+    "Mo-Fr 08:00-19:00, PH off",
+    "Mo-Fr 8-18 Uhr, Feiertage ausgenommen",
+    'Mo-Fr 06:00-22:00 || "Ausfahrt jederzeit möglich"',
+    "Mo-Fr 08:00+",
+    "open; Fr 06:00-14:00 off",
+    "nach Vereinbarung",
+  ];
+
+  const montag = (stunde: number, tag = 5) =>
+    new Date(`2026-10-${String(tag).padStart(2, "0")}T${String(stunde).padStart(2, "0")}:00:00`);
+
+  it("lässt Deutsch unverändert – der Quelltext steht so da, wie er in den Daten steht", () => {
+    expect(formatTimeRestriction("Mo - Fr   8 - 18 Uhr", "de")).toBe("Mo - Fr 8 - 18 Uhr");
+    expect(formatTimeRestriction("24/7", "de")).toBeNull();
+  });
+
+  it("schreibt Wochentage und Uhrzeiten in der Sprache", () => {
+    expect(describeRestriction("Mo - Fr 8 - 18 Uhr", "en")).toBe("Mon–Fri 08:00–18:00");
+    expect(describeRestriction("Mo - Fr 8 - 18 Uhr", "es")).toBe("lun–vie 08:00–18:00");
+    expect(describeRestriction("Mo-Fr 06:00-19:00; Sa 06:00-13:00", "en")).toBe(
+      "Mon–Fri 06:00–19:00; Sat 06:00–13:00",
+    );
+    expect(describeRestriction("Mo, Di, Do 08:00-12:00", "en")).toBe("Mon, Tue, Thu 08:00–12:00");
+  });
+
+  it("schreibt Monate bei saisonalen Angaben in der Sprache", () => {
+    expect(describeRestriction("Apr-Oct: Mo-Su 09:00-18:00", "en")).toBe(
+      "Apr–Oct: Mon–Sun 09:00–18:00",
+    );
+    expect(describeRestriction("Apr-Oct: Mo-Su 09:00-18:00", "es")).toBe(
+      "abr–oct: lun–dom 09:00–18:00",
+    );
+  });
+
+  it("zeigt über Mitternacht die Spanne, wie die Quelle sie nennt", () => {
+    expect(describeRestriction("Fr-Sa 06:00-02:00", "en")).toBe("Fri, Sat 06:00–02:00");
+  });
+
+  for (const sprache of LOCALE_CODES as Locale[]) {
+    describe(sprache, () => {
+      it("versteht jede der Formen und gibt sie vollständig aus", () => {
+        for (const text of verstanden) {
+          const ausgabe = formatTimeRestriction(text, sprache);
+          expect(ausgabe, text).not.toBeNull();
+          // Jede Uhrzeit der Quelle steht in der Ausgabe.
+          const verstandene = understandRestriction(text)!;
+          if (sprache !== "de") {
+            for (const { ranges } of verstandene.sections) {
+              for (const { from, to } of ranges) {
+                const uhr = (m: number) =>
+                  `${String(Math.floor(m / 60)).padStart(2, "0")}:${String(m % 60).padStart(2, "0")}`;
+                expect(ausgabe, text).toContain(`${uhr(from)}–${uhr(to)}`);
+              }
+            }
+          }
+        }
+      });
+
+      it("behält bei Unsicherem den deutschen Quelltext, statt etwas wegzulassen", () => {
+        for (const text of unsicher) {
+          expect(describeRestriction(text, sprache), text).toBeNull();
+          expect(formatTimeRestriction(text, sprache), text).toBe(
+            text.replace(/\s+/gu, " ").trim(),
+          );
+        }
+      });
+
+      it("meldet für jeden Zeitpunkt denselben Zustand wie der Quelltext", () => {
+        // Aus dem Verstandenen gerechnet – dasselbe, was die Sprache ausgibt.
+        const zustand = (text: string, jetzt: Date) => {
+          const v = understandRestriction(text)!;
+          if (v.season) {
+            const m = jetzt.getMonth() + 1;
+            const drin =
+              v.season.from <= v.season.to
+                ? m >= v.season.from && m <= v.season.to
+                : m >= v.season.from || m <= v.season.to;
+            if (!drin) return "gilt-nicht";
+          }
+          const tag = (jetzt.getDay() + 6) % 7;
+          const minuten = jetzt.getHours() * 60 + jetzt.getMinutes();
+          const gilt = v.sections.some(({ days, ranges }) =>
+            ranges.some(({ from, to }) =>
+              to > from
+                ? days.includes(tag as never) && minuten >= from && minuten < to
+                : (days.includes(tag as never) && minuten >= from) ||
+                  (days.map((d) => (d + 1) % 7).includes(tag) && minuten < to),
+            ),
+          );
+          return gilt ? "gilt" : "gilt-nicht";
+        };
+
+        for (const text of verstanden) {
+          for (const stunde of [0, 1, 5, 7, 10, 18, 20, 23]) {
+            for (const tag of [5, 6, 9, 10, 11]) {
+              const jetzt = montag(stunde, tag);
+              expect(zustand(text, jetzt), `${text} @ ${jetzt.toISOString()}`).toBe(
+                restrictionState(text, jetzt),
+              );
+            }
+          }
+        }
+      });
+
+      it("schreibt Höchstparkdauern in der Sprache", () => {
+        const erwartet: Record<string, string[]> = {
+          de: ["2 Stunden", "1 Stunde", "15 Minuten", "0,5 Stunden"],
+          en: ["2 hours", "1 hour", "15 minutes", "0.5 hours"],
+          es: ["2 horas", "1 hora", "15 minutos", "0,5 horas"],
+        };
+        expect(
+          ["2 Stunden", "1 Stunde", "15 min", "0,5 Stunden"].map((q) => maxStay(q, sprache)),
+        ).toEqual(erwartet[sprache]);
+      });
+    });
+  }
 });

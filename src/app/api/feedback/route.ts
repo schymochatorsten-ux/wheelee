@@ -4,6 +4,7 @@ import { validateFeedback } from "@/lib/feedback";
 import { userFromRequest } from "@/lib/auth/session";
 import { allow, clientKey, LIMITS } from "@/lib/rate-limit";
 import { withLogging } from "@/lib/log";
+import { t } from "@/i18n";
 
 /**
  * Eine Rückmeldung entgegennehmen (ToDo 17.2).
@@ -22,7 +23,7 @@ async function postHandler(request: Request) {
   try {
     body = (await request.json()) as Record<string, unknown>;
   } catch {
-    return NextResponse.json({ error: "Ungültige Anfrage." }, { status: 400 });
+    return NextResponse.json({ error: t("api.invalidRequest") }, { status: 400 });
   }
 
   const check = validateFeedback({

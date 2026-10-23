@@ -8,14 +8,12 @@
 **Legende:** `[ ]` offen · `[~]` teils gebaut, Rest hier · `[!]` braucht eine
 Entscheidung oder Angabe von dir · `[-]` gesperrt bis zur Freigabe
 
-**Letzte Aktualisierung:** 2026-10-21
+**Letzte Aktualisierung:** 2026-10-23
 
-**Stand (nachgezählt 2026-10-21):** 33 offen, 5 teils gebaut, 9 warten auf
+**Stand (nachgezählt 2026-10-23):** 25 offen, 5 teils gebaut, 9 warten auf
 dich, 1 gesperrte Zeile (Abschnitt 13, darin drei Punkte). Fertig an diesem
-Tag: 12.6 (Protokoll und Fehlerseiten), 12.4 (Lighthouse) mit 9.17 und 12.10
-daraus, 17.6 (Antwortadresse an offenen Meldungen) und 11.3a (Karten-App am
-Konto). Neu dazu: 9.16, dein gemeldeter Anzeigefehler. Nachzählen statt
-fortschreiben:
+Tag: 9.16, 15.2, 15.3, 15.4, 15.5, 11.7, 10.7, 16.1, 11.4, 11.5, 11.6 (alle in Erledigt.md).
+Neu aufgenommen: 10.8 und 10.9. Nachzählen statt fortschreiben:
 
 ```bash
 node -e "const t=require('fs').readFileSync('ToDos.md','utf8').split('\n').filter(x=>/^- \[(.)\]/.test(x)); console.log('gesamt',t.length); for(const m of [' ','~','!','-']) console.log(m, t.filter(x=>x.startsWith('- ['+m+']')).length);"
@@ -39,7 +37,7 @@ npm run test && npm run typecheck && npm run lint
 npm run check:slugs
 ```
 
-Erwartet: 334 Unit-Tests grün ·
+Erwartet: 455 Unit-Tests grün ·
 `Verzeichnis: 10.754 Gemeinden · davon an der Reihe: 204 · Seed-Dateien: 209`
 · „✅ Register und Seed-Dateien stimmen überein".
 
@@ -59,30 +57,27 @@ Punkte sind endlich und halten die Veröffentlichung auf.
 Abgearbeitet wird von oben. Ein Punkt wird erst angefangen, wenn der darüber
 abgeschlossen ist.
 
-| #   | Was                                                                  | Warum hier                                               |
-| --- | -------------------------------------------------------------------- | -------------------------------------------------------- |
-| 1   | **12.5a** aktuellen Stand ausliefern                                 | Alles seit dem 2026-10-11 Gebaute steht nicht im Netz    |
-| 2   | **9.16** Hinweisstreifen am Kartenrand                               | Gemeldet, klein, und der zweite Teil braucht dich        |
-| 3   | **15.2** Texte aus dem Quelltext lösen                               | **Vor** jeder weiteren Oberflächenarbeit – sonst zweimal |
-| 4   | **10.7 / 11.7** Nonce-CSP, Passwort ändern, DSGVO                    | Sorgfalt, kein akutes Risiko                             |
-| 5   | **16.1** Parkplatzdaten einer Stadt vorab laden                      | Klein, rechtlich unbedenklich, sofort nützlich           |
-| 6   | **11.4 / 11.5 / 11.6** Konto-Komfort                                 | Niemand ist darauf angewiesen                            |
-| 7   | **9.2a / 9.9 / 12.7a** Darstellung, Hilfsmitteltest                  | 9.9 braucht echte Geräte                                 |
-| 8   | **15.1 / 15.3 / 15.4 / 15.5** Englisch, Spanisch, dann weitere       | Erst wenn die deutschen Texte stehen – sonst zweimal     |
-| 9   | **1.8 / 4.5 / 12.5** Aufräumen, Automatisierung                      | Der automatische Deploy, nachdem 12.5a von Hand lief     |
-| 10  | **2c.3 / 2c.4 / 2d.9** Anfragen an Städte, OSM ergänzen              | Briefe und Kartierung – läuft nebenher                   |
-| 11  | **Datenarbeit** 3.10, 3.2, 3.3, 3.4, 2d.8a, 2a.5, 2e.6, 2e.10, 2e.11 | Fällt unter die Vorgabe oben                             |
-| 12  | **14.1–14.9** Abschlusstest                                          | Zuletzt, auf echten Geräten, in den Sprachen von 15      |
+| #   | Was                                                                  | Warum hier                                            |
+| --- | -------------------------------------------------------------------- | ----------------------------------------------------- |
+| 1   | **12.5a** aktuellen Stand ausliefern                                 | Alles seit dem 2026-10-11 Gebaute steht nicht im Netz |
+| 2   | **10.8 / 10.9** Datenschutz und IT-Sicherheit der ganzen Seite       | Baubar; ein Fehler hier trifft Menschen, nicht Daten  |
+| 3   | **15.1 / 15.6** Weitere Sprachen; Übersetzungen prüfen lassen        | Erst nach 10.8: die Erklärung gehört in die Sprachfrage |
+| 4   | **9.2a / 9.9 / 12.7a** Darstellung, Hilfsmitteltest                  | 9.9 braucht echte Geräte                              |
+| 5   | **1.8 / 4.5 / 12.5** Aufräumen, Automatisierung                      | Der automatische Deploy, nachdem 12.5a von Hand lief  |
+| 6   | **2c.3 / 2c.4 / 2d.9** Anfragen an Städte, OSM ergänzen              | Briefe und Kartierung – läuft nebenher                |
+| 7   | **Datenarbeit** 3.10, 3.2, 3.3, 3.4, 2d.8a, 2a.5, 2e.6, 2e.10, 2e.11 | Fällt unter die Vorgabe oben                          |
+| 8   | **14.1–14.9** Abschlusstest                                          | Zuletzt, auf echten Geräten, in den Sprachen von 15   |
 
-**Warum Abschnitt 15 an zwei Stellen steht, und das ist der Kern der
-Einordnung:** `15.2` ist eine Umbauarbeit (Beschriftungen aus den Komponenten
-in Dateien) und macht jede spätere Oberflächenänderung billiger – **danach**
-kommen neue Knöpfe gleich in die Übersetzungsdatei. Die Sprachen selbst
-(`15.1`) stehen dagegen hinter den restlichen deutschen Funktionen: Wer vorher
-übersetzt, übersetzt alles noch einmal, was 11.4 bis 11.6 und 9.2a hinzufügen.
+**Neue Knöpfe und Meldungen kommen seit 15.2 gleich in
+`src/i18n/de.ts`, nicht in die Komponente** (Aufbau in
+[Erledigt.md](Erledigt.md) unter 15.2) – und in `en.ts` und `es.ts`: Ein fehlender
+Schlüssel ist ein Typfehler, ein Satz ohne Prüfung durch Muttersprachler steht
+unter 15.6. Die Sprachen selbst (`15.1`) stehen
+hinter den restlichen deutschen Funktionen: Wer vorher übersetzt, übersetzt
+alles noch einmal, was 9.2a hinzufügt.
 
 **3.10 ist der Lauf, der aus dem gebauten Kreuzvergleich Nutzen macht** –
-abgeglichen ist bislang eine Stadt; er steht unter Platz 11, weil er über den
+abgeglichen ist bislang eine Stadt; er steht unter Platz 7, weil er über den
 ganzen Bestand läuft.
 
 **Außer der Reihe, weil es nicht an mir liegt:** 16.2 (Kartenkacheln vorab –
@@ -134,21 +129,12 @@ Lizenzfrage), dazu alles unter „Entscheidungen".
 ## 9. Darstellung und Bedienung
 
 - [ ] 9.2a Falls die gefilterte Karte auf Dauer nicht überzeugt: echte dunkle Kacheln (etwa CARTO Dark Matter). Bessere Lesbarkeit, aber ein weiterer Anbieter, dessen Bedingungen und Attribution zu prüfen wären.
-- [!] 9.16 **Der Hinweis am Kartenrand hilft im Weitwinkel nicht** (gemeldet 2026-10-21). Die Darstellung ist berichtigt (siehe `Erledigt.md`); offen bleibt der Inhalt: Bei kontinentaler Zoomstufe ist „näher heranzoomen" wahr, aber nutzlos – es wären ein Dutzend Stufen, und im Ausschnitt liegt überwiegend Ausland ohne Daten. **Deine Entscheidung:** ab welcher Zoomstufe der Hinweis erscheint – und ob darunter stattdessen ein Satz steht, der sagt, dass erst ab Stadtgröße etwas zu sehen ist.
 - [ ] 9.9 Mit echten Hilfsmitteln testen, nicht nur mit Prüfwerkzeugen: NVDA oder VoiceOver, Tastatur, Vergrößerung.
 
 ## 10. Datenschutz und Recht
 
-- [~] 10.7 **Aus der Sicherheitsprüfung vom 2026-10-17 bleibt offen** (bis zum 2026-10-20 als 10.5 geführt – doppelt belegt mit dem Haftungshinweis):
-  - [ ] **Die CSP führt `'unsafe-inline'` bei den Skripten** und ist damit kein Schutz vor eingeschleustem Code in der eigenen Seite. Next schreibt die Hydrationsdaten inline, und das Theme-Skript muss vor dem ersten Zeichnen laufen. Der saubere Weg ist eine **Nonce je Anfrage** aus einer Middleware, an beide Stellen durchgereicht – Apparat, den die App nicht hat, deshalb ein eigener Punkt.
-  - [ ] **Kein „Passwort ändern" und keine Sitzungsübersicht.** Wer vermutet, dass sein Passwort bekannt ist, kann nur sich abmelden – und das beendet eine Sitzung. Nötig ist beides zusammen: Passwort ändern **und** alle übrigen Sitzungen verwerfen. Hängt nicht an 11.1.
-
-## 11. Benutzerkonten
-
-- [ ] 11.4 Eigene Bewertungen einsehen und zurückziehen.
-- [ ] 11.5 Gespeicherte Parkplätze (Favoriten) für häufig angefahrene Ziele.
-- [ ] 11.6 Vertrauensstufen: wer wiederholt zutreffend meldet, bekommt mehr Gewicht in der Validierung. Baut auf den Bewertungen auf.
-- [ ] 11.7 **Datensparsamkeit, Löschfunktion, Auskunft nach DSGVO.** Konto und Daten lassen sich derzeit nicht in der App löschen; die Datenschutzerklärung sagt das offen und nennt den Weg über eine formlose Nachricht. Solange das fehlt, ist auch die Sicherheitsprüfung (10.7) nicht vollständig.
+- [ ] 10.8 **Datenschutz über die gesamte Seite prüfen** (aufgenommen 2026-10-23). Seit der Erklärung vom 2026-10-19 sind Speicherungen und Abrufe dazugekommen: Sprachwahl (Browser und Konto), Favoriten, Bewertungen und Gewichtung (11.6), Vorab-Laden einer Stadt (16.1), Konto-Export und -Löschung (11.7), Protokoll (12.6). Zu tun: jede Seite, jeden Endpunkt und jeden Browser-Speicher (`localStorage`, Cookies, Service-Worker-Cache) gegen [src/app/datenschutz/page.tsx](src/app/datenschutz/page.tsx) halten und aus dem Code belegen, **was gespeichert, übertragen und wann gelöscht wird**; Abweichungen im Text nachführen, nicht im Code verstecken. Dazu die Frage, in welcher Sprache die Erklärung erscheint (Ausnahmeliste aus D-08, siehe 15.6 und 10.2b). Der Test `e2e/datenschutz.spec.ts` bleibt die Gegenprobe zu den Aussagen.
+- [ ] 10.9 **IT-Sicherheit über die gesamte Seite prüfen** (aufgenommen 2026-10-23). Eine zweite Prüfung nach der vom 2026-10-17 (Ergebnisse stehen in [Erledigt.md](Erledigt.md) unter 10.6/10.7), weil seitdem Konto-Löschung, Passwort ändern, Favoriten, Sprachwahl am Konto, Nonce-CSP und der Offline-Speicher dazugekommen sind. Zu tun: **jede** Route unter `src/app/api/` auf Zugangsprüfung, Drosselung, Eingabeprüfung und Protokollinhalt durchgehen (eine Tabelle in `Erledigt.md`, damit die nächste Prüfung nicht bei null anfängt); Kopfzeilen und Nonce im Produktionsbau messen; `npm audit` (hängt an 1.8); Container (Benutzer, Volume-Rechte), `.env`, Sicherung der SQLite-Datei. **Ergebnis ist eine Befundliste, keine Behauptung „sicher"** – eine unabhängige Prüfung ersetzt es nicht, analog zu 10.2b.
 
 ## 12. Qualität und Deployment
 
@@ -164,12 +150,9 @@ ohne Deutsch. **Wie übersetzt wird, ist als D-08 entschieden** (Dateien je
 Sprache, maschinell vorübersetzt, von Menschen geprüft, mit Ausnahmeliste) –
 Begründung in [Erledigt.md](Erledigt.md), ebenso die übrigen Erwägungen.
 
-- [ ] 15.2 **Zuerst die Struktur: Beschriftungen aus den Komponenten in eine Datei je Sprache**, dazu ein schlanker Zugriff – die App ist klein genug, dass es keine große Bibliothek braucht. Ohne diesen Schritt ist jede Übersetzung eine Suche durch den Quelltext. Steht auf Platz 3, **vor** jeder weiteren Oberflächenarbeit.
-- [ ] 15.1 **Englisch und Spanisch zuerst** (Vorgabe vom 2026-10-20), danach die häufigsten europäischen Sprachen – vorgesehen: Französisch, Italienisch, Polnisch, Niederländisch.
+- [~] 15.1 **Weitere Sprachen.** Englisch und Spanisch stehen (Aufbau und Gründe in [Erledigt.md](Erledigt.md) unter 15.1). Offen: Französisch, Italienisch, Polnisch, Niederländisch – je eine Datei `src/i18n/<code>.ts` plus ein Eintrag in `catalogs` und `LOCALES` (`src/i18n/index.ts`). Polnisch hat drei Zahlformen; `t` kennt nur Einzahl/Mehrzahl und muss dort erweitert werden (siehe 15.2).
   - [ ] **Eine Frage dazu bleibt offen und gehört dir:** Für Menschen, die **in** Deutschland leben und besser eine andere Sprache sprechen, wären Türkisch, Russisch und Arabisch die größeren Gruppen – eine andere Zielgruppe als die EU-Reisenden. Arabisch bringt zusätzlich Rechts-nach-links-Layout mit, und das ist Umbau an jeder Ansicht, nicht eine weitere Datei.
-- [ ] 15.3 **Was dabei übersehen wird, weil es nicht nach Text aussieht:** `<html lang>` steuert Silbentrennung **und** die Aussprache im Screenreader; Datums- und Zahlenformate hängen an `de-DE` (`toLocaleDateString`, `toLocaleString`), ebenso die Sortierung der Städteliste (`localeCompare`); die Entfernung schreibt „1,5 km" mit Komma, englisch mit Punkt. **Das ist der Teil, der beim Übersetzen vergessen wird** – deshalb ein eigener Punkt.
-- [ ] 15.4 **Die Daten bleiben deutsch, und das ist richtig so.** Straßennamen werden nicht übersetzt – wer „Bahnhofstraße" sucht, muss „Bahnhofstraße" lesen. Zeitangaben stehen teils als deutscher Freitext in den Quellen; sie werden **je Sprache ausgegeben, nicht je Sprache neu geparst** (`opening-hours.ts`). Der Haftungshinweis und die Rechtstexte stehen auf der Ausnahmeliste aus D-08: nie maschinell.
-- [ ] 15.5 **Spracherkennung mit Umschalter**, nicht ohne: Die Browsersprache ist ein guter erster Vorschlag, aber wer ein englisches Betriebssystem auf einem deutschen Telefon hat, will die Wahl behalten – in die Einstellungen, neben Darstellung und Karten-App.
+- [!] 15.6 **Übersetzungen prüfen lassen – und zwei Texte freigeben.** Englisch und Spanisch sind maschinell vorübersetzt; die App sagt das unter der Sprachwahl. Gebraucht: je Sprache eine Muttersprachlerin oder ein Muttersprachler, der `src/i18n/<code>.ts` durchsieht (D-08). **Zwei Texte brauchen eine eigene Entscheidung von dir:** `disclaimer.germanOnly` und `legal.germanOnly` – kurze Hinweise in der Sprache der Oberfläche, dass Haftungshinweis, Impressum und Datenschutzerklärung deutsch bleiben und dass vor Ort die Beschilderung gilt. Und die Frage, ob der **Haftungshinweis selbst** eine wörtliche, von einem Menschen freigegebene Fassung je Sprache bekommen soll (er ist sicherheitsrelevant; jetzt steht er nur deutsch da).
 
 ## 16. Eine Stadt vorab herunterladen
 
@@ -180,7 +163,6 @@ Parkhaus, in der Tiefgarage, im Funkloch kurz vor dem Ziel. **Geteilt in zwei
 Punkte, weil der eine gebaut werden kann und der andere auf eine Lizenz
 wartet.**
 
-- [ ] 16.1 **Die Parkplatzdaten einer Stadt vorab laden.** Klein (Köln rund 200 KB), rechtlich unbedenklich, sofort nützlich – ohne Kacheln bleibt eine Liste ohne Karte, das ist weniger, aber vielleicht genug. Dazu gehört zweierlei: **der belegte Platz muss sichtbar sein und sich löschen lassen** (eine App, die unbemerkt 200 MB belegt, fliegt vom Telefon), und **das Alter der mitgenommenen Daten muss dastehen** – ein drei Monate alter Stand, der sich als aktuell ausgibt, wäre schlimmer als keiner.
 - [!] 16.2 **Die Kartenkacheln vorab laden – wartet auf die Lizenzfrage.** Die Nutzungsbedingungen von OpenStreetMap untersagen massenhaftes Herunterladen; ein Stadtgebiet in brauchbarer Zoomstufe geht in die Dutzende Megabyte. Es bräuchte eine ausdrückliche Erlaubnis, einen bezahlten Kachelanbieter oder Vektorkacheln aus eigener Quelle. **Das ist die eigentliche Hürde, nicht die Technik** – und sie liegt nicht bei mir. (Vorher 16.1, geteilt am 2026-10-20.)
 
 ---

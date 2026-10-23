@@ -1,6 +1,7 @@
 import { cookies } from "next/headers";
 import { accountForSession, SESSION_COOKIE, SESSION_MAX_AGE, type Account } from "../db/accounts";
 import { normalizeEmail } from "./email";
+import { isLocale } from "../../i18n";
 import { isMapsPreference } from "../maps-preference";
 import type { SessionUser } from "./user";
 
@@ -48,6 +49,7 @@ const toUser = (account: Account): SessionUser => ({
   // Ein unbekannter Wert in der Spalte wird zu `null` – dasselbe Verhalten wie
   // bei einem unlesbaren Browser-Speicher (siehe Migration 4).
   mapsPreference: isMapsPreference(account.mapsPreference) ? account.mapsPreference : null,
+  language: isLocale(account.language) ? account.language : null,
 });
 
 /** Das angemeldete Konto, oder `null`. */
@@ -66,6 +68,11 @@ export async function currentUser(): Promise<SessionUser | null> {
 export function userFromRequest(request: Request): SessionUser | null {
   const account = accountForSession(readCookie(request, SESSION_COOKIE));
   return account ? toUser(account) : null;
+}
+
+/** Das Sitzungstoken der Anfrage – für Endpunkte, die die eigene Sitzung schonen müssen. */
+export function sessionTokenFromRequest(request: Request): string | undefined {
+  return readCookie(request, SESSION_COOKIE);
 }
 
 function readCookie(request: Request, name: string): string | undefined {

@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
+import { useLocale, useT } from "@/i18n/context";
 import { rememberPlace, readRecent, type Place } from "@/lib/geocode";
 import { distanceMeters, formatDistance, type LatLng } from "@/lib/geo";
 
@@ -137,6 +138,8 @@ export function DestinationSearch({
   onChoose,
   onClear,
 }: DestinationSearchProps) {
+  const t = useT();
+  const locale = useLocale();
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<Place[]>([]);
@@ -331,7 +334,7 @@ export function DestinationSearch({
     return (
       <div className={`${PANEL} flex items-center gap-1 self-start p-1 pl-2.5`}>
         <span className="min-w-0 flex-1 truncate text-xs">
-          <span className="text-neutral-500">Ziel: </span>
+          <span className="text-neutral-500">{t("search.destination")} </span>
           <span className="font-medium">{destination.label}</span>
         </span>
         <button
@@ -339,9 +342,14 @@ export function DestinationSearch({
           onClick={() => setOpen(true)}
           className="min-h-11 shrink-0 rounded-lg px-2.5 text-xs font-medium text-blue-800 transition-colors hover:bg-blue-50 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300 dark:hover:bg-neutral-800"
         >
-          Ändern
+          {t("search.change")}
         </button>
-        <button type="button" onClick={onClear} aria-label="Ziel aufheben" className={ICON_BUTTON}>
+        <button
+          type="button"
+          onClick={onClear}
+          aria-label={t("search.clearDestination")}
+          className={ICON_BUTTON}
+        >
           <CloseIcon />
         </button>
       </div>
@@ -364,7 +372,7 @@ export function DestinationSearch({
         className={`${PANEL} flex min-h-11 w-auto max-w-full items-center gap-2 self-start px-3 text-left text-xs font-medium text-neutral-600 transition-colors hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100`}
       >
         <SearchIcon />
-        Wohin willst du?
+        {t("search.where")}
       </button>
     );
   }
@@ -383,9 +391,9 @@ export function DestinationSearch({
           value={query}
           onChange={(event) => setQuery(event.target.value)}
           onKeyDown={onKeyDown}
-          placeholder="Adresse oder Ort"
+          placeholder={t("search.placeholder")}
           autoComplete="off"
-          aria-label="Ziel: Adresse oder Ort"
+          aria-label={t("search.inputLabel")}
           aria-expanded={shown.length > 0}
           aria-controls={`${listId}-liste`}
           aria-autocomplete="list"
@@ -411,7 +419,7 @@ export function DestinationSearch({
               setStatus("bereit");
               inputRef.current?.focus();
             }}
-            aria-label="Eingabe löschen"
+            aria-label={t("search.clearInput")}
             className={ICON_BUTTON}
           >
             <CloseIcon />
@@ -420,7 +428,7 @@ export function DestinationSearch({
         <button
           type="button"
           onClick={() => setOpen(false)}
-          aria-label="Zielsuche schließen"
+          aria-label={t("search.close")}
           className={`${ICON_BUTTON} border-l border-neutral-200 dark:border-neutral-700`}
         >
           <ChevronUpIcon />
@@ -438,10 +446,10 @@ export function DestinationSearch({
             aria-live="polite"
             className="min-w-0 flex-1 text-xs text-neutral-500"
           >
-            {status === "sucht" && "Wird gesucht …"}
-            {status === "leer" && "Nichts gefunden. Anders schreiben oder Ort ergänzen."}
-            {status === "fehler" && "Die Ortssuche ist gerade nicht erreichbar."}
-            {status === "bereit" && "Noch ein paar Buchstaben …"}
+            {status === "sucht" && t("search.searching")}
+            {status === "leer" && t("search.empty")}
+            {status === "fehler" && t("search.unavailable")}
+            {status === "bereit" && t("search.moreLetters")}
           </p>
           {/*
             Bei einem Fehler muss ein zweiter Versuch möglich sein, ohne einen
@@ -455,7 +463,7 @@ export function DestinationSearch({
               onClick={() => void search(query.trim())}
               className="min-h-11 shrink-0 rounded-lg border border-neutral-300 px-2.5 text-xs font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
             >
-              Erneut
+              {t("search.retry")}
             </button>
           )}
         </div>
@@ -465,10 +473,15 @@ export function DestinationSearch({
         <>
           {results.length === 0 && (
             <p className="px-1 pt-2 pb-0.5 text-[11px] font-medium tracking-wide text-neutral-500 uppercase">
-              Zuletzt gesucht
+              {t("search.recent")}
             </p>
           )}
-          <ul id={`${listId}-liste`} role="listbox" aria-label="Vorschläge" className="mt-1">
+          <ul
+            id={`${listId}-liste`}
+            role="listbox"
+            aria-label={t("search.suggestions")}
+            className="mt-1"
+          >
             {shown.map((place, index) => (
               <li key={`${place.label}-${place.lat}-${place.lng}`}>
                 <button
@@ -496,7 +509,7 @@ export function DestinationSearch({
                     <span className="min-w-0 flex-1 truncate font-medium">{place.label}</span>
                     {origin && (
                       <span className="shrink-0 text-xs text-neutral-500 tabular-nums">
-                        {formatDistance(distanceMeters(origin, place))}
+                        {formatDistance(distanceMeters(origin, place), locale)}
                       </span>
                     )}
                   </span>

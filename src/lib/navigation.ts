@@ -1,3 +1,4 @@
+import { DEFAULT_LOCALE, t, type Locale, type MessageKey } from "@/i18n";
 import type { ParkingSpot } from "./types";
 
 /**
@@ -13,9 +14,11 @@ export type MapsTarget = "google" | "apple" | "osm" | "here" | "waze" | "geo";
 
 interface MapsApp {
   id: MapsTarget;
-  label: string;
+  label: MessageKey;
+  /** Wie `label`, für die Navigationsleiste über der Karte. */
+  navigateLabel: MessageKey;
   /** Kurzname für Einstellungen und Umschalter. */
-  shortLabel: string;
+  shortLabel: MessageKey;
   /** Link zum Ziel; `null`, wenn die App nichts Passendes kann. */
   url: (lat: number, lng: number, label: string) => string;
 }
@@ -23,43 +26,49 @@ interface MapsApp {
 export const MAPS_APPS: readonly MapsApp[] = [
   {
     id: "google",
-    label: "In Google Maps öffnen",
-    shortLabel: "Google Maps",
+    label: "maps.google.open",
+    navigateLabel: "maps.google.navigate",
+    shortLabel: "maps.google.short",
     url: (lat, lng) =>
       `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}&travelmode=driving`,
   },
   {
     id: "apple",
-    label: "In Apple Karten öffnen",
-    shortLabel: "Apple Karten",
+    label: "maps.apple.open",
+    navigateLabel: "maps.apple.navigate",
+    shortLabel: "maps.apple.short",
     url: (lat, lng, label) =>
       `https://maps.apple.com/?daddr=${lat},${lng}&q=${encodeURIComponent(label)}&dirflg=d`,
   },
   {
     id: "osm",
-    label: "In OpenStreetMap öffnen",
-    shortLabel: "OpenStreetMap",
+    label: "maps.osm.open",
+    navigateLabel: "maps.osm.navigate",
+    shortLabel: "maps.osm.short",
     url: (lat, lng) =>
       `https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=;${lat},${lng}`,
   },
   {
     id: "here",
-    label: "In HERE WeGo öffnen",
-    shortLabel: "HERE WeGo",
+    label: "maps.here.open",
+    navigateLabel: "maps.here.navigate",
+    shortLabel: "maps.here.short",
     url: (lat, lng, label) =>
       `https://share.here.com/r/mylocation/${lat},${lng}?m=d&t=${encodeURIComponent(label)}`,
   },
   {
     id: "waze",
-    label: "In Waze öffnen",
-    shortLabel: "Waze",
+    label: "maps.waze.open",
+    navigateLabel: "maps.waze.navigate",
+    shortLabel: "maps.waze.short",
     url: (lat, lng) => `https://waze.com/ul?ll=${lat},${lng}&navigate=yes`,
   },
   {
     id: "geo",
     // Der geo:-Link überlässt dem Betriebssystem die Wahl der App.
-    label: "In der Standard-Karten-App öffnen",
-    shortLabel: "Standard-App",
+    label: "maps.geo.open",
+    navigateLabel: "maps.geo.navigate",
+    shortLabel: "maps.geo.short",
     url: (lat, lng) => `geo:${lat},${lng}?q=${lat},${lng}`,
   },
 ];
@@ -78,13 +87,18 @@ export function detectMapsTarget(userAgent: string): MapsTarget {
 }
 
 /** Beschriftung der Schaltfläche. */
-export function mapsLabel(target: MapsTarget): string {
-  return appById.get(target)?.label ?? "In Karten-App öffnen";
+export function mapsLabel(target: MapsTarget, locale: Locale = DEFAULT_LOCALE): string {
+  return t(appById.get(target)?.label ?? "maps.fallback.open", undefined, locale);
+}
+
+/** Beschriftung des Knopfs in der Navigationsleiste. */
+export function mapsNavigateLabel(target: MapsTarget, locale: Locale = DEFAULT_LOCALE): string {
+  return t(appById.get(target)?.navigateLabel ?? "maps.fallback.navigate", undefined, locale);
 }
 
 /** Kurzname, etwa für eine Auswahlliste. */
-export function mapsShortLabel(target: MapsTarget): string {
-  return appById.get(target)?.shortLabel ?? "Karten-App";
+export function mapsShortLabel(target: MapsTarget, locale: Locale = DEFAULT_LOCALE): string {
+  return t(appById.get(target)?.shortLabel ?? "maps.fallback.short", undefined, locale);
 }
 
 /** Link zum Parkplatz als Navigationsziel. */

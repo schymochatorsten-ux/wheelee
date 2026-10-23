@@ -389,7 +389,9 @@ function checkReportedGone(slug: string, matches: GoneMatch[]): Finding[] {
         .map(
           (match) =>
             `${match.spot ? spotTitle(match.spot) : match.spotId} – ` +
-            `${match.goneCount}× aufgehoben, ${match.existsCount}× bestätigt`,
+            `${match.goneCount}× aufgehoben, ${match.existsCount}× bestätigt ` +
+            `(gewichtet ${match.goneWeight} / ${match.existsWeight})` +
+            (match.reasons.includes("lastThreeGone") ? " – die letzten drei Stimmen: aufgehoben" : ""),
         ),
     },
   ];
@@ -589,14 +591,22 @@ function renderGoneSection(matches: GoneMatch[] | null): string[] {
     'zum Nachsehen. Die Spalte „bestätigt" gehört dazu: Drei Meldungen bei null',
     "Bestätigungen sind eine andere Lage als drei bei zwanzig.",
     "",
-    "| Parkplatz | Stadt | aufgehoben | bestätigt | zuletzt gemeldet |",
-    "| --- | --- | ---: | ---: | --- |",
+    "„Gewichtet“ (ToDo 11.6): ältere Stimmen zählen weniger (nach zwei Jahren ein",
+    "Viertel), Konten, die oft mit den anderen übereinstimmen, bis doppelt. Die",
+    "rohen Zähler bleiben daneben stehen. Das ordnet nur ein – es ändert keine Daten.",
+    "",
+    "| Parkplatz | Stadt | aufgehoben | bestätigt | gewichtet (auf./best.) | Grund | zuletzt gemeldet |",
+    "| --- | --- | ---: | ---: | ---: | --- | --- |",
   );
 
   for (const match of matches) {
     const name = match.spot ? spotTitle(match.spot) : `${match.spotId} (nicht im Bestand)`;
+    const reason = match.reasons.includes("lastThreeGone")
+      ? "die letzten drei Stimmen: aufgehoben"
+      : `${match.goneCount} Meldungen`;
     lines.push(
       `| ${name} | ${match.city ?? "–"} | ${match.goneCount} | ${match.existsCount} | ` +
+        `${match.goneWeight} / ${match.existsWeight} | ${reason} | ` +
         `${match.lastGoneAt?.slice(0, 10) ?? "–"} |`,
     );
   }

@@ -1,6 +1,8 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { type MessageKey } from "@/i18n";
+import { useT } from "@/i18n/context";
 import type { LatLng } from "@/lib/geo";
 
 /**
@@ -33,13 +35,10 @@ export interface GeolocationState {
   message: string | null;
 }
 
-const MESSAGES: Record<Exclude<GeolocationStatus, "idle" | "locating" | "ready">, string> = {
-  denied:
-    "Du hast den Standortzugriff abgelehnt. Die Karte zeigt die Stadtmitte – alle Parkplätze bleiben sichtbar.",
-  unavailable:
-    "Dein Gerät konnte keinen Standort ermitteln. Die Karte zeigt die Stadtmitte – alle Parkplätze bleiben sichtbar.",
-  timeout:
-    "Die Standortbestimmung hat zu lange gedauert. Du kannst es erneut versuchen oder die Karte so nutzen.",
+const MESSAGES: Record<Exclude<GeolocationStatus, "idle" | "locating" | "ready">, MessageKey> = {
+  denied: "geo.denied",
+  unavailable: "geo.unavailable",
+  timeout: "geo.timeout",
 };
 
 const OPTIONS: PositionOptions = {
@@ -61,6 +60,7 @@ export function useGeolocation(): GeolocationState & {
     message: null,
   });
 
+  const t = useT();
   const watchId = useRef<number | null>(null);
 
   const request = useCallback(() => {
@@ -69,7 +69,7 @@ export function useGeolocation(): GeolocationState & {
         status: "unavailable",
         position: null,
         accuracyMeters: null,
-        message: MESSAGES.unavailable,
+        message: t(MESSAGES.unavailable),
       });
       return;
     }
@@ -103,12 +103,12 @@ export function useGeolocation(): GeolocationState & {
           status,
           position: null,
           accuracyMeters: null,
-          message: MESSAGES[status as keyof typeof MESSAGES],
+          message: t(MESSAGES[status as keyof typeof MESSAGES]),
         });
       },
       OPTIONS,
     );
-  }, []);
+  }, [t]);
 
   useEffect(() => {
     return () => {

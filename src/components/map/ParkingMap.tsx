@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { latLngBounds, point } from "leaflet";
 import { MapContainer, Marker, Polyline, TileLayer, useMap } from "react-leaflet";
+import { useT } from "@/i18n/context";
 import type { ParkingSpot } from "@/lib/types";
 import type { LatLng } from "@/lib/geo";
 import { SpotMarkers } from "./SpotMarkers";
@@ -72,6 +73,8 @@ export interface MapBounds {
   minLng: number;
   maxLat: number;
   maxLng: number;
+  /** Zoomstufe des Ausschnitts (ToDo 9.16): bestimmt, welcher Hinweis passt. */
+  zoom: number;
 }
 
 /**
@@ -92,6 +95,7 @@ function BoundsReporter({ onChange }: { onChange: (bounds: MapBounds) => void })
         minLng: bounds.getWest(),
         maxLat: bounds.getNorth(),
         maxLng: bounds.getEast(),
+        zoom: map.getZoom(),
       });
     };
 
@@ -193,6 +197,7 @@ export default function ParkingMap({
   onSelect,
   onBoundsChange,
 }: ParkingMapProps) {
+  const t = useT();
   return (
     <MapContainer
       center={[center.lat, center.lng]}
@@ -200,12 +205,12 @@ export default function ParkingMap({
       zoomControl={false}
       className="h-full w-full"
       // Die Karte ist eine Ergänzung zur Liste; Screenreader nutzen die Liste.
-      aria-label="Karte mit Behindertenparkplätzen"
+      aria-label={t("map.label")}
     >
       <TileLayer
         url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
         maxZoom={19}
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>-Mitwirkende'
+        attribution={t("map.attribution")}
       />
 
       {/*
@@ -260,7 +265,7 @@ export default function ParkingMap({
         <Marker
           position={[userPosition.lat, userPosition.lng]}
           icon={userIcon}
-          alt="Dein Standort"
+          alt={t("map.yourLocation")}
           interactive={false}
         />
       )}
@@ -269,8 +274,8 @@ export default function ParkingMap({
         <Marker
           position={[destination.lat, destination.lng]}
           icon={destinationIcon}
-          alt={`Ziel: ${destination.label}`}
-          title={`Ziel: ${destination.label}`}
+          alt={t("map.destination", { label: destination.label })}
+          title={t("map.destination", { label: destination.label })}
           interactive={false}
         />
       )}

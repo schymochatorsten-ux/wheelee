@@ -1,12 +1,15 @@
-﻿"use client";
+"use client";
 
 import type { ParkingSpot, ParkingSpotWithDistance } from "@/lib/types";
 import { formatDistance } from "@/lib/geo";
 import { stripRedundantPrefix } from "@/lib/parking/display";
 import type { CityInfo } from "@/lib/parking/spots";
-import { normalizeTimeRestriction } from "@/lib/opening-hours";
+import { formatTimeRestriction } from "@/lib/opening-hours";
 import { DataDisclaimer, formatDate } from "./DataDisclaimer";
 import { SpotRow } from "./SpotRow";
+import { useLocale, useT } from "@/i18n/context";
+import { localeTag, type Locale, type Translate } from "@/i18n";
+import { useRich } from "@/i18n/rich";
 
 /**
  * Listenansicht der Parkplätze.
@@ -36,17 +39,21 @@ interface SpotListProps {
  * Plätzen wählt. Hier steht sie rechts, und der Platz vorn gehört dem
  * Stadtteil – er ordnet den Eintrag ein, wenn man die ganze Stadt durchsieht.
  */
-function listMeta(spot: ParkingSpotWithDistance): string {
-  const parts = [
-    spot.district,
-    `${spot.spotCount} ${spot.spotCount === 1 ? "Stellplatz" : "Stellplätze"}`,
-  ];
-  const restriction = normalizeTimeRestriction(spot.timeRestriction);
+function spaceCount(count: number, t: Translate): string {
+  return t(count === 1 ? "list.spacesOne" : "list.spacesMany", { count });
+}
+
+function listMeta(spot: ParkingSpotWithDistance, t: Translate, locale: Locale): string {
+  const parts = [spot.district, spaceCount(spot.spotCount, t)];
+  const restriction = formatTimeRestriction(spot.timeRestriction, locale);
   if (restriction) parts.push(restriction);
   return parts.join(" · ");
 }
 
 export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect }: SpotListProps) {
+  const t = useT();
+  const locale = useLocale();
+  const tr = useRich();
   const crowdsourced = cities.filter((city) => city.coverage === "crowdsourced");
   const official = cities.filter((city) => city.coverage === "official");
   const officialSpaces = official.reduce((sum, city) => sum + city.spaceCount, 0);
@@ -57,12 +64,10 @@ export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect 
 
       <section aria-labelledby="nearby-heading">
         <h2 id="nearby-heading" className="text-base font-semibold">
-          {hasUserPosition ? "Parkplätze in der Nähe" : "Nächste Parkplätze"}
+          {hasUserPosition ? t("list.nearby") : t("list.nearest")}
         </h2>
         {!hasUserPosition && (
-          <p className="mt-1 text-sm text-neutral-500">
-            Ohne Standortfreigabe zählt die Entfernung ab der Stadtmitte.
-          </p>
+          <p className="mt-1 text-sm text-neutral-500">{t("list.noLocation")}</p>
         )}
 
         <ul className="mt-2 divide-y divide-neutral-200 dark:divide-neutral-800">
@@ -70,12 +75,12 @@ export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect 
             <li key={spot.id}>
               <SpotRow
                 spot={spot}
-                meta={listMeta(spot)}
-                actionHint="Einzelheiten anzeigen"
+                meta={listMeta(spot, t, locale)}
+                actionHint={t("list.showDetails")}
                 onClick={() => onSelect(spot)}
                 trailing={
                   <span className="text-sm font-medium tabular-nums">
-                    {formatDistance(spot.distanceMeters)}
+                    {formatDistance(spot.distanceMeters, locale)}
                   </span>
                 }
               />
@@ -87,19 +92,15 @@ export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect 
       {unlocated.length > 0 && (
         <section aria-labelledby="unlocated-heading">
           <h2 id="unlocated-heading" className="text-base font-semibold">
-            Ohne genaue Position ({unlocated.length})
+            {t("list.unlocated", { count: unlocated.length })}
           </h2>
-          <p className="mt-1 text-sm text-neutral-500">
-            Für diese Parkplätze nennt die Quelle keine Adresse, die sich eindeutig verorten lässt.
-            Sie erscheinen deshalb nicht auf der Karte.
-          </p>
+          <p className="mt-1 text-sm text-neutral-500">{t("list.unlocatedNote")}</p>
           <ul className="mt-2 divide-y divide-neutral-200 dark:divide-neutral-800">
             {unlocated.map((spot) => (
               <li key={spot.id} className="py-2.5">
                 <span className="block font-medium">{stripRedundantPrefix(spot.label)}</span>
                 <span className="block text-sm text-neutral-500">
-                  {spot.district} · {spot.spotCount}{" "}
-                  {spot.spotCount === 1 ? "Stellplatz" : "Stellplätze"}
+                  {spot.district} · {spaceCount(spot.spotCount, t)}
                 </span>
               </li>
             ))}
@@ -109,30 +110,35 @@ export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect 
 
       <section aria-labelledby="sources-heading" className="text-sm text-neutral-500">
         <h2 id="sources-heading" className="font-semibold text-neutral-700 dark:text-neutral-300">
-          Woher die Daten kommen
+          {t("list.sources")}
         </h2>
 
         <p className="mt-1">
-          {official.length} {official.length === 1 ? "Stadt stellt" : "Städte stellen"} eine
-          amtliche Liste bereit ({officialSpaces.toLocaleString("de-DE")} Stellplätze). Für{" "}
-          {crowdsourced.length} weitere{crowdsourced.length === 1 ? " Stadt" : " Städte"} gibt es
-          keine, dort stammen die Daten aus OpenStreetMap.
+          {t(official.length === 1 ? "list.officialOne" : "list.officialMany", {
+            count: official.length,
+            spaces: officialSpaces.toLocaleString(localeTag(locale)),
+          })}{" "}
+          {t(crowdsourced.length === 1 ? "list.crowdsourcedOne" : "list.crowdsourcedMany", {
+            count: crowdsourced.length,
+          })}
         </p>
 
         {/* 10.3: Die ODbL verlangt die Namensnennung. Sie steht unter der
             Karte, aber wer die Liste nutzt, sieht die Karte nicht – also auch
             hier, und nicht nur im Kleingedruckten. */}
         <p className="mt-2">
-          Kartendarstellung und die meisten Parkplatzdaten:{" "}
-          <a
-            href="https://www.openstreetmap.org/copyright"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline"
-          >
-            © OpenStreetMap-Mitwirkende
-          </a>
-          , Open Database License (ODbL). Die amtlichen Quellen sind je Stadt unten einzeln genannt.
+          {tr("list.osmCredit", {
+            link: (
+              <a
+                href="https://www.openstreetmap.org/copyright"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                {t("list.osmLink")}
+              </a>
+            ),
+          })}
         </p>
 
         {/*
@@ -142,56 +148,54 @@ export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect 
           Verweise – das ist keine Höflichkeit, sondern Bedingung.
         */}
         <p className="mt-2">
-          Gemeindenamen und -schlüssel: ©{" "}
-          <a
-            href="https://www.bkg.bund.de"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline"
-          >
-            BKG
-          </a>{" "}
-          (2026){" "}
-          <a
-            href="https://www.govdata.de/dl-de/by-2-0"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline"
-          >
-            dl-de/by-2-0
-          </a>
-          .
+          {tr("list.bkgCredit", {
+            bkg: (
+              <a
+                href="https://www.bkg.bund.de"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                BKG
+              </a>
+            ),
+            license: (
+              <a
+                href="https://www.govdata.de/dl-de/by-2-0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                dl-de/by-2-0
+              </a>
+            ),
+          })}
         </p>
 
-        {crowdsourced.length > 0 && (
-          <p className="mt-2">
-            Die OpenStreetMap-Daten zeigen überwiegend Parkplätze mit ausgewiesenen
-            Behindertenstellplätzen statt einzelner Stellplätze am Straßenrand und sind
-            unvollständig – ein fehlender Eintrag heißt dort nicht, dass es keinen
-            Behindertenparkplatz gibt.
-          </p>
-        )}
+        {crowdsourced.length > 0 && <p className="mt-2">{t("list.osmNote")}</p>}
 
         {/* Die vollständige Liste gehört dazu, soll die Seite aber nicht fluten. */}
         <details className="mt-2">
           <summary className="cursor-pointer py-2 font-medium text-neutral-700 dark:text-neutral-300">
-            Alle {cities.length} Städte mit Quelle
+            {t("list.allCities", { count: cities.length })}
           </summary>
           <ul className="mt-1 space-y-2">
             {[...cities]
-              .sort((a, b) => a.name.localeCompare(b.name, "de-DE"))
+              .sort((a, b) => a.name.localeCompare(b.name, localeTag(locale)))
               .map((city) => (
                 <li key={city.slug}>
-                  <span className="font-medium">{city.name}</span>: {city.spotCount} Standorte,{" "}
-                  {city.spaceCount} Stellplätze
+                  <span className="font-medium">{city.name}</span>
+                  {t("list.cityCounts", { spots: city.spotCount, spaces: city.spaceCount })}
                   <span className="block">
-                    Quelle: {city.attribution}
+                    {t("list.source", { source: city.attribution })}
                     {/* 2a.5: Eine fehlende Lizenz offen benennen statt sie zu
                         verschweigen – sie ist ein Mangel der Quelle, und wer
                         die Daten weiterverwenden will, muss davon wissen. */}
-                    {city.license === null && " · Lizenz nicht angegeben"}
+                    {city.license === null && t("list.licenseMissing")}
                   </span>
-                  <span className="block">Daten vom {formatDate(city.importedAt)}</span>
+                  <span className="block">
+                    {t("list.dataFrom", { date: formatDate(city.importedAt, locale) })}
+                  </span>
                 </li>
               ))}
           </ul>

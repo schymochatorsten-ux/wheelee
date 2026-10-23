@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useT } from "@/i18n/context";
+import type { Translate } from "@/i18n";
 import type { ParkingSpot } from "@/lib/types";
 
 /**
@@ -17,21 +19,26 @@ interface ShareButtonProps {
 
 type State = "bereit" | "kopiert" | "fehler";
 
-function shareText(spot: ParkingSpot): { title: string; text: string; url: string } | null {
+function shareText(
+  spot: ParkingSpot,
+  t: Translate,
+): { title: string; text: string; url: string } | null {
   if (spot.lat === null || spot.lng === null) return null;
 
   const name = [spot.street, spot.houseNumber].filter(Boolean).join(" ") || spot.label;
   return {
-    title: `Behindertenparkplatz ${name}`,
+    title: t("share.title", { name }),
     text:
-      `Behindertenparkplatz: ${name}` +
-      (spot.spotCount > 1 ? ` (${spot.spotCount} Stellplätze)` : ""),
+      spot.spotCount > 1
+        ? t("share.textCount", { name, count: spot.spotCount })
+        : t("share.text", { name }),
     // Ein Link auf OpenStreetMap funktioniert überall und braucht keine App.
     url: `https://www.openstreetmap.org/?mlat=${spot.lat}&mlon=${spot.lng}#map=19/${spot.lat}/${spot.lng}`,
   };
 }
 
 export function ShareButton({ spot }: ShareButtonProps) {
+  const t = useT();
   const [state, setState] = useState<State>("bereit");
   const [canShare, setCanShare] = useState(false);
 
@@ -47,7 +54,7 @@ export function ShareButton({ spot }: ShareButtonProps) {
     return () => clearTimeout(timer);
   }, [state]);
 
-  const payload = shareText(spot);
+  const payload = shareText(spot, t);
   if (!payload) return null;
 
   const share = async () => {
@@ -76,9 +83,9 @@ export function ShareButton({ spot }: ShareButtonProps) {
       onClick={share}
       className="min-h-12 w-full rounded-xl border border-neutral-300 px-4 font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
     >
-      {state === "kopiert" && "Link kopiert"}
-      {state === "fehler" && "Kopieren nicht möglich"}
-      {state === "bereit" && (canShare ? "Parkplatz teilen" : "Link kopieren")}
+      {state === "kopiert" && t("share.copied")}
+      {state === "fehler" && t("share.copyFailed")}
+      {state === "bereit" && (canShare ? t("share.share") : t("share.copy"))}
     </button>
   );
 }

@@ -1,0 +1,477 @@
+/**
+ * Deutsche Beschriftungen der Oberfläche (ToDo 15.2) – die Vorlage für alle
+ * weiteren Sprachen. Schlüssel: `<Bereich>.<Stelle>`, flach, damit sich jede
+ * Beschriftung mit einer Suche finden lässt. `{name}` ist ein Platzhalter.
+ *
+ * Nicht hier: Haftungshinweis, Impressum und Datenschutzerklärung (Ausnahme
+ * nach D-08) sowie die Daten selbst.
+ */
+export const de = {
+  "theme.group": "Darstellung",
+  "theme.dark": "Dunkel",
+  "theme.light": "Hell",
+  "theme.system": "System",
+
+  "offline.notice": "Kein Netz – angezeigt wird der zuletzt geladene Stand.",
+
+  "restriction.nowApplies": "Beschränkung gilt jetzt",
+
+  "share.title": "Behindertenparkplatz {name}",
+  "share.text": "Behindertenparkplatz: {name}",
+  "share.textCount": "Behindertenparkplatz: {name} ({count} Stellplätze)",
+  "share.copied": "Link kopiert",
+  "share.copyFailed": "Kopieren nicht möglich",
+  "share.share": "Parkplatz teilen",
+  "share.copy": "Link kopieren",
+
+  "legend.target": "Ziel der Navigationsleiste",
+  "legend.targetNote": "größer dargestellt – der nächste oder der selbst gewählte",
+  "legend.others": "Weitere angebotene Parkplätze",
+  "legend.othersNote": "nur sichtbar, solange die Auswahl aufgeklappt ist",
+  "legend.exact": "Parkplatz, Position genau",
+  "legend.exactNote": "Koordinate aus der Quelle",
+  "legend.approx": "Parkplatz, Position ungefähr",
+  "legend.approxNote": "liegt in dieser Straße, die genaue Stelle kann abweichen",
+  "legend.title": "Was die Farben bedeuten",
+  "legend.clusters":
+    "Kreise mit Zahl fassen mehrere Parkplätze zusammen – hineinzoomen zeigt sie einzeln.",
+  "legend.close": "Legende schließen",
+  "legend.open": "Legende der Kartenfarben",
+
+  "list.spacesOne": "{count} Stellplatz",
+  "list.spacesMany": "{count} Stellplätze",
+  "list.nearby": "Parkplätze in der Nähe",
+  "list.nearest": "Nächste Parkplätze",
+  "list.noLocation": "Ohne Standortfreigabe zählt die Entfernung ab der Stadtmitte.",
+  "list.showDetails": "Einzelheiten anzeigen",
+  "list.unlocated": "Ohne genaue Position ({count})",
+  "list.unlocatedNote":
+    "Für diese Parkplätze nennt die Quelle keine Adresse, die sich eindeutig verorten lässt. Sie erscheinen deshalb nicht auf der Karte.",
+  "list.sources": "Woher die Daten kommen",
+  "list.officialOne": "{count} Stadt stellt eine amtliche Liste bereit ({spaces} Stellplätze).",
+  "list.officialMany": "{count} Städte stellen eine amtliche Liste bereit ({spaces} Stellplätze).",
+  "list.crowdsourcedOne":
+    "Für {count} weitere Stadt gibt es keine, dort stammen die Daten aus OpenStreetMap.",
+  "list.crowdsourcedMany":
+    "Für {count} weitere Städte gibt es keine, dort stammen die Daten aus OpenStreetMap.",
+  "list.osmCredit":
+    "Kartendarstellung und die meisten Parkplatzdaten: {link}, Open Database License (ODbL). Die amtlichen Quellen sind je Stadt unten einzeln genannt.",
+  "list.osmLink": "© OpenStreetMap-Mitwirkende",
+  "list.bkgCredit": "Gemeindenamen und -schlüssel: © {bkg} (2026) {license}.",
+  "list.osmNote":
+    "Die OpenStreetMap-Daten zeigen überwiegend Parkplätze mit ausgewiesenen Behindertenstellplätzen statt einzelner Stellplätze am Straßenrand und sind unvollständig – ein fehlender Eintrag heißt dort nicht, dass es keinen Behindertenparkplatz gibt.",
+  "list.allCities": "Alle {count} Städte mit Quelle",
+  "list.cityCounts": ": {spots} Standorte, {spaces} Stellplätze",
+  "list.source": "Quelle: {source}",
+  "list.licenseMissing": " · Lizenz nicht angegeben",
+  "list.dataFrom": "Daten vom {date}",
+
+  "details.city": "Stadt",
+  "details.district": "Stadtteil",
+  "details.close": "Details schließen",
+  "details.note": "Hinweis",
+  "details.spaces": "Stellplätze",
+  "details.maxStay": "Höchstparkdauer",
+  "details.only": "Nur",
+  "details.distance": "Entfernung",
+  "details.noLocation": "Standort nicht freigegeben",
+  "details.restrictionOff":
+    "Die Beschränkung gilt {strong} – der Parkplatz ist jetzt frei nutzbar.",
+  "details.restrictionOffStrong": "gerade nicht",
+  "details.restrictionOn": "Die Beschränkung gilt {strong}.",
+  "details.restrictionOnStrong": "gerade",
+  "details.confirmed":
+    "{strong} – die Stadtverwaltung und OpenStreetMap führen diesen Stellplatz an derselben Stelle.",
+  "details.confirmedStrong": "Von zwei Quellen bestätigt",
+  "details.approx":
+    "Die Position ist nur ungefähr bekannt – der Parkplatz liegt in dieser Straße, die genaue Stelle kann abweichen.",
+  "details.source": "Quelle: {source}",
+
+  "maps.auto": "Automatisch (nach Gerät)",
+  "maps.google.open": "In Google Maps öffnen",
+  "maps.google.short": "Google Maps",
+  "maps.apple.open": "In Apple Karten öffnen",
+  "maps.apple.short": "Apple Karten",
+  "maps.osm.open": "In OpenStreetMap öffnen",
+  "maps.osm.short": "OpenStreetMap",
+  "maps.here.open": "In HERE WeGo öffnen",
+  "maps.here.short": "HERE WeGo",
+  "maps.waze.open": "In Waze öffnen",
+  "maps.waze.short": "Waze",
+  "maps.geo.open": "In der Standard-Karten-App öffnen",
+  "maps.geo.short": "Standard-App",
+  "maps.google.navigate": "Navigation: Google Maps öffnen",
+  "maps.apple.navigate": "Navigation: Apple Karten öffnen",
+  "maps.osm.navigate": "Navigation: OpenStreetMap öffnen",
+  "maps.here.navigate": "Navigation: HERE WeGo öffnen",
+  "maps.waze.navigate": "Navigation: Waze öffnen",
+  "maps.geo.navigate": "Navigation: der Standard-Karten-App öffnen",
+  "maps.fallback.navigate": "Navigation: Karten-App öffnen",
+  "maps.fallback.open": "In Karten-App öffnen",
+  "maps.fallback.short": "Karten-App",
+
+  "settings.appearance": "Darstellung",
+  "settings.appearanceNote":
+    "Dunkel ist die Vorgabe – die App wird oft im Auto und bei Dunkelheit benutzt.",
+  "settings.language": "Sprache",
+  "settings.languageNote":
+    "Vorgeschlagen wird die Sprache deines Browsers. Mit Konto gilt die Wahl auf allen Geräten.",
+  "settings.languageChoose": "Sprache wählen",
+  "settings.languageUnreviewed":
+    "Die Übersetzungen sind maschinell vorbereitet und noch nicht von Muttersprachler:innen geprüft.",
+  "settings.mapsApp": "Karten-App für die Navigation",
+  "settings.mapsAppNote":
+    "Womit „Navigation starten“ geöffnet wird. Ohne eigene Wahl richtet sich das nach dem Gerät – hier wäre das {detected}.",
+  "settings.mapsAppChoose": "Karten-App wählen",
+  "settings.mapsAppDeviceOnly": "Die Auswahl gilt nur auf diesem Gerät – auch mit Konto.",
+  "offline.heading": "Ohne Netz: Parkplätze mitnehmen",
+  "offline.note":
+    "Lädt die Parkplatzdaten einer Stadt auf dieses Gerät, damit sie auch in Parkhaus und Funkloch vollständig da sind. Die Kartenbilder gehören nicht dazu – ohne Netz bleibt die Karte darunter grau, die Marker und die Liste funktionieren.",
+  "offline.cityLabel": "Stadt",
+  "offline.download": "Vorab laden",
+  "offline.downloading": "Wird geladen …",
+  "offline.refresh": "Aktualisieren",
+  "offline.remove": "Löschen",
+  "offline.removeLabel": "{name} vom Gerät löschen",
+  "offline.refreshLabel": "{name} aktualisieren",
+  "offline.saved": "{name} ist jetzt auf diesem Gerät gespeichert.",
+  "offline.removed": "{name} wurde vom Gerät gelöscht.",
+  "offline.failed": "Das Laden hat nicht geklappt. Bitte bei Netz noch einmal versuchen.",
+  "offline.unsupported": "Dieser Browser kann keine Daten für den Betrieb ohne Netz ablegen.",
+  "offline.none": "Noch keine Stadt auf diesem Gerät gespeichert.",
+  "offline.listLabel": "Auf diesem Gerät gespeichert",
+  "offline.entry": "{count} Standorte, {size} belegt",
+  "offline.dataDate": "Stand der Daten: {date}",
+  "offline.savedDate": "Geladen am {date}",
+  "offline.staleData":
+    "Der Stand ist älter als ein halbes Jahr. Parkplätze können sich geändert haben – bitte vor Ort prüfen.",
+  "offline.staleCopy": "Die Kopie ist über einen Monat alt. Mit Netz bitte aktualisieren.",
+  "offline.total": "Zusammen belegt: {size}",
+  "settings.feedback": "Fehler melden oder Vorschlag schicken",
+  "settings.feedbackNote":
+    "Stimmt etwas nicht? Fehlt ein Parkplatz oder gibt es einen nicht mehr? Rückmeldungen sind die einzige Quelle, die solche Änderungen bemerkt. Wenn du magst, kannst du eine E-Mail-Adresse angeben – dann antworten wir dir.",
+  "settings.account": "Konto",
+  "settings.accountNote":
+    "Freiwillig. Die App funktioniert ohne Konto vollständig – auch das Melden von Fehlern. Ein Konto merkt sich nur, dass deine Rückmeldungen zusammengehören.",
+  "settings.legal": "Rechtliches",
+  "settings.imprint": "Impressum",
+  "settings.privacy": "Datenschutzerklärung",
+
+  "account.emailInvalid": "Diese E-Mail-Adresse sieht nicht richtig aus.",
+  "account.passwordTooShort": "Das Passwort muss mindestens {min} Zeichen lang sein.",
+  "account.failed": "Das hat nicht geklappt. Bitte später erneut versuchen.",
+  "account.offline": "Keine Verbindung. Bitte später erneut versuchen.",
+  "account.logoutFailed": "Abmelden hat nicht geklappt – keine Verbindung.",
+  "account.signedInAs": "Angemeldet als {email}",
+  "account.admin": "Administrator",
+  "account.storedData":
+    "Dein Konto speichert nur die E-Mail-Adresse und das verschlüsselte Passwort. Dein Standort wird weiterhin nicht gespeichert – auch nicht mit Konto.",
+  "account.logout": "Abmelden",
+  "account.changePassword": "Passwort ändern",
+  "account.oldPassword": "Bisheriges Passwort",
+  "account.newPassword": "Neues Passwort",
+  "account.changePasswordNote":
+    "Alle anderen Geräte, auf denen du angemeldet bist, werden dabei abgemeldet. Dieses Gerät bleibt angemeldet.",
+  "account.passwordChanged": "Passwort geändert. Alle anderen Sitzungen sind beendet.",
+  "account.cancel": "Abbrechen",
+  "account.export": "Meine Daten herunterladen",
+  "account.exportNote":
+    "Eine JSON-Datei mit allem, was zu deinem Konto gespeichert ist: E-Mail-Adresse, Anlagedatum, Bewertungen, gespeicherte Parkplätze, eigene Rückmeldungen und Karten-App-Wahl.",
+  "myRatings.open": "Meine Bewertungen",
+  "myRatings.close": "Meine Bewertungen ausblenden",
+  "myRatings.intro":
+    "Deine abgegebenen Stimmen, die jüngste zuerst. Zurückziehen nimmt die Stimme aus der Zählung.",
+  "myRatings.none": "Du hast noch keinen Parkplatz bewertet.",
+  "myRatings.loading": "Wird geladen …",
+  "myRatings.loadFailed": "Deine Bewertungen konnten nicht geladen werden.",
+  "myRatings.date": "am {date}",
+  "myRatings.notInStock": "Nicht mehr im Bestand",
+  "myRatings.notInStockNote":
+    "Beim letzten Import nicht mehr enthalten. Du kannst deine Stimme trotzdem zurückziehen.",
+  "myRatings.showOnMap": "Auf der Karte zeigen",
+  "myRatings.withdraw": "Zurückziehen",
+  "myRatings.withdrawLabel": "Stimme zu {name} zurückziehen",
+  "myRatings.withdrawFailed": "Die Stimme konnte nicht zurückgezogen werden.",
+  "myRatings.showLabel": "{name} auf der Karte zeigen",
+  "favorite.save": "Parkplatz speichern",
+  "favorite.saved": "Gespeichert – entfernen",
+  "favorite.needAccount": "Zum Speichern brauchst du ein Konto (Einstellungen).",
+  "favorite.failed": "Der Parkplatz konnte nicht gespeichert werden.",
+  "favorite.removeFailed": "Der Parkplatz konnte nicht entfernt werden.",
+  "favorite.offline": "Kein Netz – die Änderung wurde nicht gespeichert.",
+  "myFavorites.open": "Gespeicherte Parkplätze",
+  "myFavorites.close": "Gespeicherte Parkplätze ausblenden",
+  "myFavorites.intro":
+    "Parkplätze, die du dir gemerkt hast, der zuletzt gespeicherte zuerst. Die Entfernung ist die Luftlinie von deinem Standort.",
+  "myFavorites.none":
+    "Noch nichts gespeichert. In der Detailansicht eines Parkplatzes findest du den Knopf „Parkplatz speichern“.",
+  "myFavorites.loadFailed": "Deine gespeicherten Parkplätze konnten nicht geladen werden.",
+  "myFavorites.distance": "{distance} entfernt",
+  "myFavorites.notInStock": "Nicht mehr im Bestand",
+  "myFavorites.notInStockNote":
+    "Beim letzten Import nicht mehr enthalten. Du kannst den Eintrag entfernen.",
+  "myFavorites.showOnMap": "Auf der Karte zeigen",
+  "myFavorites.showLabel": "{name} auf der Karte zeigen",
+  "myFavorites.remove": "Entfernen",
+  "myFavorites.removeLabel": "{name} aus den gespeicherten Parkplätzen entfernen",
+  "account.delete": "Konto löschen",
+  "account.deleteWarning":
+    "Das Konto, alle Sitzungen und deine Bewertungen werden gelöscht. Deine Rückmeldungen bleiben als Hinweise erhalten, verlieren aber den Bezug zu dir; eine dort angegebene Antwortadresse wird entfernt. Das lässt sich nicht rückgängig machen.",
+  "account.deletePassword": "Zur Bestätigung dein Passwort",
+  "account.deleteConfirm": "Konto endgültig löschen",
+  "account.modeGroup": "Anmelden oder Konto anlegen",
+  "account.login": "Anmelden",
+  "account.register": "Konto anlegen",
+  "account.email": "E-Mail-Adresse",
+  "account.password": "Passwort",
+  "account.passwordHelp":
+    "Mindestens {min} Zeichen. Länge zählt mehr als Sonderzeichen – ein Satz, den du dir merken kannst, ist besser als {example}.",
+  "account.forgotNote":
+    "Ein vergessenes Passwort lässt sich derzeit nicht selbst zurücksetzen – es gibt noch keinen Mailversand. Ein Konto ist für die Nutzung der App auch nicht nötig.",
+
+  "feedback.reportSpot": "Fehler zu diesem Parkplatz melden",
+  "feedback.reportOrSuggest": "Fehler melden oder Vorschlag schicken",
+  "feedback.title": "Rückmeldung",
+  "feedback.close": "Rückmeldung schließen",
+  "feedback.intro":
+    "Rückmeldungen sind die einzige Quelle, die bemerkt, wenn ein Parkplatz nicht mehr existiert oder an der falschen Stelle liegt.",
+  "feedback.kind.fehler": "Fehler melden",
+  "feedback.kind.vorschlag": "Verbesserungsvorschlag",
+  "feedback.contactHint":
+    "Nur mit Adresse können wir dir antworten – bei Rückfragen oder wenn der Fehler behoben ist. Ohne Adresse hilft deine Meldung trotzdem, du hörst dann aber nichts von uns.",
+  "feedback.contactPrivacy":
+    "Die Adresse wird nur für die Antwort auf diese Meldung benutzt, nicht weitergegeben und mit der Meldung gelöscht – spätestens nach zwei Jahren.",
+  "feedback.errorKind": "Bitte wähle aus, worum es geht.",
+  "feedback.errorMessageShort": "Bitte beschreibe mit ein paar Worten, was nicht stimmt.",
+  "feedback.errorMessageLong": "Bitte kürzer fassen – höchstens {max} Zeichen.",
+  "feedback.errorEmail":
+    "Diese E-Mail-Adresse sieht nicht richtig aus. Lass das Feld sonst einfach leer.",
+  "feedback.offline": "Keine Verbindung. Die Meldung ist nicht abgeschickt – bitte später erneut.",
+  "feedback.thanks": "Danke – die Meldung ist angekommen.",
+  "feedback.willReply":
+    "Wir sehen sie uns an und melden uns per E-Mail, wenn es etwas zu sagen gibt.",
+  "feedback.noReply":
+    "Du hast keine Adresse angegeben, deshalb bekommst du keine Antwort – deine Meldung hilft trotzdem.",
+  "feedback.again": "Noch etwas melden",
+  "feedback.done": "Fertig",
+  "feedback.whatAbout": "Worum geht es?",
+  "feedback.kindGroup": "Art der Rückmeldung",
+  "feedback.reportAbout": "Meldung zu:",
+  "feedback.yourSuggestion": "Dein Vorschlag",
+  "feedback.whatIsWrong": "Was stimmt nicht?",
+  "feedback.placeholderSuggestion": "Zum Beispiel: Die Umkreiswahl hätte gern 2 km.",
+  "feedback.placeholderError":
+    "Zum Beispiel: Der Parkplatz Bahnhofstraße 4 ist aufgehoben, dort ist jetzt eine Ladesäule.",
+  "feedback.charsLeft": "Noch {count} Zeichen möglich.",
+  "feedback.optional": "(freiwillig)",
+  "feedback.emailPlaceholder": "name@beispiel.de",
+  "feedback.fromAccount": "Aus deinem Konto übernommen.",
+  "feedback.sending": "Wird gesendet …",
+  "feedback.submit": "Absenden",
+  "feedback.cancel": "Abbrechen",
+
+  "rating.saveFailed": "Die Bewertung konnte nicht gespeichert werden.",
+  "rating.offline": "Kein Netz – die Bewertung wurde nicht gespeichert.",
+  "rating.question": "Gibt es diesen Parkplatz noch?",
+  "rating.exists": "Existiert",
+  "rating.gone": "Existiert nicht mehr",
+  "rating.lastConfirmed": "Zuletzt bestätigt:",
+  "rating.lastGone": "Zuletzt als aufgehoben gemeldet:",
+  "rating.needAccount":
+    "Zum Bewerten brauchst du ein Konto – unter „Einstellungen → Konto“. Ansehen kannst du die Angaben auch ohne.",
+  "rating.voted":
+    "Du hast bewertet. Noch einmal antippen nimmt es zurück, der andere Knopf dreht es um.",
+  "rating.votes": "{label}, {count} Stimmen",
+
+  "admin.unauthorized": "Nicht angemeldet oder keine Berechtigung.",
+  "admin.noConnection": "Keine Verbindung.",
+  "admin.reload": "Neu laden",
+  "admin.loading": "Wird geladen …",
+
+  "reported.loadFailed": "Die Prüfliste konnte nicht geladen werden.",
+  "reported.spotGone": "Den Parkplatz {id} gibt es nicht mehr im Bestand.",
+  "reported.title": "Gemeldet: „existiert nicht mehr“",
+  "reported.introOne":
+    "Parkplätze mit mindestens {count} Meldung aus verschiedenen Konten. Die Bewertungen ändern die Daten nicht – das ist eine Liste zum Nachsehen.",
+  "reported.introMany":
+    "Parkplätze mit mindestens {count} Meldungen aus verschiedenen Konten. Die Bewertungen ändern die Daten nicht – das ist eine Liste zum Nachsehen.",
+  "reported.minimum": "Ab wie vielen Meldungen",
+  "reported.minimumAll": "1 (alle)",
+  "reported.none": "Kein Parkplatz ist so oft gemeldet. Das ist die gute Nachricht.",
+  "reported.goneCount": "{count}× aufgehoben",
+  "reported.existsCount": "{count}× bestätigt",
+  "reported.reasonLabel": "Grund",
+  "reported.reason.lastThreeGone":
+    "Die letzten drei Stimmen: aufgehoben – auch wenn ältere Bestätigungen überwiegen.",
+  "reported.reason.reports": "{count} Konten haben ihn als aufgehoben gemeldet.",
+  "reported.weighted": "Gewichtet: {gone} aufgehoben · {exists} bestätigt",
+  "reported.weightedHint":
+    "Gewichtet heißt: ältere Stimmen zählen weniger (nach zwei Jahren ein Viertel), Konten, die oft mit den anderen übereinstimmen, bis doppelt. Das ordnet nur ein – es ändert keine Daten.",
+  "reported.notInStock": "Nicht mehr im Bestand",
+  "reported.place": "Ort",
+  "reported.spaces": " · {count} Stellplätze",
+  "reported.lastReported": "Zuletzt gemeldet",
+  "reported.lastConfirmed": "Zuletzt bestätigt",
+  "reported.showOnMap": "Parkplatz auf der Karte",
+  "reported.confirmedGone":
+    "Beim letzten Import nicht mehr enthalten – die Meldung hat sich damit bestätigt.",
+
+  "feedback.status.neu": "Neu",
+  "feedback.status.in_arbeit": "In Arbeit",
+  "feedback.status.umgesetzt": "Umgesetzt",
+  "feedback.status.verworfen": "Verworfen",
+
+  "feedbackAdmin.loadFailed": "Die Rückmeldungen konnten nicht geladen werden.",
+  "feedbackAdmin.changeFailed": "Ändern hat nicht geklappt.",
+  "feedbackAdmin.noteFailed": "Die Notiz konnte nicht gespeichert werden.",
+  "feedbackAdmin.confirmDelete": "Meldung #{id} endgültig löschen?\n\n„{preview}…“",
+  "feedbackAdmin.deleteFailed": "Löschen hat nicht geklappt.",
+  "feedbackAdmin.title": "Rückmeldungen",
+  "feedbackAdmin.countsOne": "{total} Meldung, davon {neu} neu und {done} umgesetzt.",
+  "feedbackAdmin.countsMany": "{total} Meldungen, davon {neu} neu und {done} umgesetzt.",
+  "feedbackAdmin.filterKind": "Art",
+  "feedbackAdmin.filterStatus": "Stand",
+  "feedbackAdmin.all": "Alle",
+  "feedbackAdmin.empty": "Keine Meldungen – mit diesem Filter jedenfalls.",
+  "feedbackAdmin.replyTo": "Antwort an",
+  "feedbackAdmin.addressRemoved":
+    "Adresse nach zwei Jahren entfernt ({date}) – die Meldung blieb so lange unbearbeitet.",
+  "feedbackAdmin.account": "Konto",
+  "feedbackAdmin.browser": "Browser",
+  "feedbackAdmin.changed": "Geändert",
+  "feedbackAdmin.markDone": "Als umgesetzt markieren",
+  "feedbackAdmin.reopen": "Wieder auf „neu“",
+  "feedbackAdmin.discard": "Verwerfen",
+  "feedbackAdmin.delete": "Löschen",
+  "feedbackAdmin.addNote": "Notiz hinzufügen",
+  "feedbackAdmin.note": "Interne Notiz",
+  "feedbackAdmin.saveNote": "Notiz speichern",
+
+  "search.destination": "Ziel:",
+  "search.change": "Ändern",
+  "search.clearDestination": "Ziel aufheben",
+  "search.where": "Wohin willst du?",
+  "search.placeholder": "Adresse oder Ort",
+  "search.inputLabel": "Ziel: Adresse oder Ort",
+  "search.clearInput": "Eingabe löschen",
+  "search.close": "Zielsuche schließen",
+  "search.searching": "Wird gesucht …",
+  "search.empty": "Nichts gefunden. Anders schreiben oder Ort ergänzen.",
+  "search.unavailable": "Die Ortssuche ist gerade nicht erreichbar.",
+  "search.moreLetters": "Noch ein paar Buchstaben …",
+  "search.retry": "Erneut",
+  "search.recent": "Zuletzt gesucht",
+  "search.suggestions": "Vorschläge",
+
+  "nearest.spaces": "{count} Stellplätze",
+  "nearest.approx": "Position ungefähr",
+  "nearest.backToMe": "Karte auf meinen Standort zentrieren",
+  "nearest.spotAt": "Parkplatz bei {place}",
+  "nearest.nearest": "Nächster Behindertenparkplatz",
+  "nearest.chosen": "Gewähltes Ziel",
+  "nearest.showOnMap": "Auf der Karte zeigen",
+  "nearest.closeSuggestion": "Vorschlag schließen und Karte freigeben",
+  "nearest.details": "Details",
+  "nearest.radius": "Umkreis",
+  "nearest.nothingInRadius": "nichts im Umkreis",
+  "nearest.inRadius": "{count} im Umkreis",
+  "nearest.closeSelection": "Auswahl schließen",
+  "nearest.more": "Weitere in der Nähe ({count})",
+  "nearest.withinRadius": "Im Umkreis ({radius})",
+  "nearest.beyond": "Darüber hinaus",
+  "nearest.chooseHint": "als Ziel wählen und auf der Karte zeigen",
+
+  "app.title": "Behindertenparkplätze",
+  "view.map": "Karte",
+  "view.list": "Liste",
+  "view.settings": "Einstellungen",
+  "view.feedback": "Rückmeldungen",
+  "view.choose": "Ansicht wählen",
+  "map.loading": "Karte wird geladen …",
+  "map.locating": "Standort wird ermittelt …",
+  "map.nearestSpot": "Nächster Parkplatz: {name} – {distance}",
+  "map.noneNearby": "Kein verorteter Parkplatz in der Nähe.",
+  "map.retryLocation": "Standort erneut versuchen",
+  "map.hintCityLevel": "Zoome auf Stadtgröße, um Parkplätze zu sehen.",
+  "map.hintTruncated": "Nicht alle Parkplätze sind geladen – näher heranzoomen.",
+
+  "geo.denied":
+    "Du hast den Standortzugriff abgelehnt. Die Karte zeigt die Stadtmitte – alle Parkplätze bleiben sichtbar.",
+  "geo.unavailable":
+    "Dein Gerät konnte keinen Standort ermitteln. Die Karte zeigt die Stadtmitte – alle Parkplätze bleiben sichtbar.",
+  "geo.timeout":
+    "Die Standortbestimmung hat zu lange gedauert. Du kannst es erneut versuchen oder die Karte so nutzen.",
+
+  "map.clusterOne": "{count} Parkplatz in diesem Bereich, zum Aufteilen antippen",
+  "map.clusterMany": "{count} Parkplätze in diesem Bereich, zum Aufteilen antippen",
+  "map.marker": "{label}, {spaces}",
+  "map.markerTarget": "{label}, {spaces}, ausgewähltes Ziel",
+  "map.markerCandidate": "{label}, {spaces}, zur Auswahl angeboten",
+  "map.label": "Karte mit Behindertenparkplätzen",
+  "map.attribution":
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>-Mitwirkende',
+  "map.yourLocation": "Dein Standort",
+  "map.destination": "Ziel: {label}",
+
+  "meta.title": "wheelee – Behindertenparkplätze",
+  "meta.description":
+    "Findet den nächstgelegenen öffentlichen Behindertenparkplatz auf einer Karte – mobil, ohne Anmeldung.",
+
+  "error.title": "Da ist etwas schiefgelaufen",
+  "error.text":
+    "Die App konnte diese Ansicht nicht aufbauen. Das liegt nicht an dir. Oft genügt ein zweiter Versuch – die Parkplatzdaten sind davon nicht betroffen.",
+  "error.retry": "Noch einmal versuchen",
+  "error.backToMap": "Zurück zur Karte",
+  "globalError.title": "wheelee ist abgestürzt",
+  "globalError.text":
+    "Die App ließ sich nicht starten. Das liegt nicht an dir. Wenn es auch nach dem zweiten Versuch bleibt, hilft meist, die Seite neu zu laden.",
+
+  "account.passwordTooLong": "Das Passwort darf höchstens {max} Zeichen lang sein.",
+  "stay.minutes": "Minuten",
+  "stay.hour": "Stunde",
+  "stay.hours": "Stunden",
+
+  "legal.updated": "Stand: {date}",
+  "legal.missingTitle": "Diese Angaben fehlen noch",
+  "legal.missingText":
+    "Die Betreiberangaben sind auf diesem Server nicht hinterlegt. Das ist ein Fehler in der Einrichtung, kein Versehen im Text – die Seite erfindet hier nichts.",
+  "legal.missingHow":
+    "Zu setzen sind {name}, {address} und {email}; die Vorlage dafür steht in {template}.",
+
+  // Nur in anderen Sprachen sichtbar (15.1): Hinweis, dass der Rechtstext
+  // deutsch bleibt. Hier der Sinn, den jede Übersetzung treffen muss.
+  "legal.germanOnly":
+    "Impressum und Datenschutzerklärung gibt es nur auf Deutsch; maßgeblich ist die deutsche Fassung.",
+  "disclaimer.germanOnly":
+    "Der Haftungshinweis steht nur auf Deutsch. Vor Ort gilt immer die Beschilderung, nicht die App.",
+
+  "api.notSignedIn": "Nicht angemeldet.",
+  "api.invalidRequest": "Ungültige Anfrage.",
+  "api.unknownMapsApp": "Unbekannte Karten-App.",
+  "api.unknownLanguage": "Unbekannte Sprache.",
+  "api.invalidNumber": "Ungültige Nummer.",
+  "api.unknownStatus": "Unbekannter Stand.",
+  "api.notFoundOrNoChange": "Nicht gefunden oder nichts zu ändern.",
+  "api.notFound": "Nicht gefunden.",
+  "api.tooManyLogins": "Zu viele Anmeldeversuche. Bitte in einigen Minuten erneut probieren.",
+  "api.credentialsRequired": "Bitte E-Mail-Adresse und Passwort eingeben.",
+  "api.tooManyPasswordChanges":
+    "Zu viele Versuche, das Passwort zu ändern. Bitte in einigen Minuten erneut probieren.",
+  "api.passwordRequired": "Bitte das Passwort angeben.",
+  "api.passwordWrong": "Das Passwort stimmt nicht.",
+  "api.oldPasswordRequired": "Bitte das bisherige Passwort angeben.",
+  "api.oldPasswordWrong": "Das bisherige Passwort stimmt nicht.",
+  "api.credentialsWrong": "E-Mail-Adresse oder Passwort stimmt nicht.",
+  "api.tooManyAttempts": "Zu viele Versuche. Bitte später erneut probieren.",
+  "api.accountExists": "Für diese Adresse gibt es schon ein Konto. Melde dich damit an.",
+  "api.searchUnavailable": "Suche gerade nicht erreichbar.",
+  "api.unknownSpot": "Unbekannte Parkplatz-ID.",
+  "api.unknownCity": "Unbekannte Stadt.",
+  "api.ratingNeedsAccount": "Zum Bewerten brauchst du ein Konto.",
+  "api.favoriteNeedsAccount": "Zum Speichern von Parkplätzen brauchst du ein Konto.",
+  "api.tooManyFavorites": "Zu viele Änderungen in kurzer Zeit. Bitte etwas warten.",
+  "api.favoritesFull":
+    "Du hast die Höchstzahl gespeicherter Parkplätze erreicht. Entferne zuerst einen.",
+  "api.tooManyRatings": "Zu viele Bewertungen in kurzer Zeit. Bitte etwas warten.",
+  "api.unknownRating": "Unbekannte Bewertung.",
+} as const satisfies Record<string, string>;

@@ -58,6 +58,34 @@ test("die gewählte Karten-App kommt mit der Anmeldung zurück", async ({ playwr
   await zweitesGeraet.dispose();
 });
 
+test("die gewählte Sprache kommt mit der Anmeldung zurück (ToDo 15.5)", async ({
+  playwright,
+  baseURL,
+}) => {
+  expect((await konto.put("/api/account/language", { data: { language: "de" } })).status()).toBe(
+    200,
+  );
+
+  const zweitesGeraet = await playwright.request.newContext({ baseURL });
+  const anmeldung = await zweitesGeraet.post("/api/auth/login", {
+    data: { email: adresse, password: PASSWORT },
+  });
+  const daten = (await anmeldung.json()) as { user: { language: string | null } };
+  expect(daten.user.language).toBe("de");
+  await zweitesGeraet.dispose();
+});
+
+test("eine unbekannte Sprache wird abgewiesen, ohne Anmeldung nichts abgelegt", async ({
+  request,
+}) => {
+  expect((await konto.put("/api/account/language", { data: { language: "xx" } })).status()).toBe(
+    400,
+  );
+  expect((await request.put("/api/account/language", { data: { language: "de" } })).status()).toBe(
+    401,
+  );
+});
+
 test("ohne Anmeldung lässt sich nichts am Konto ablegen", async ({ request }) => {
   const antwort = await request.put("/api/account/maps", { data: { preference: "waze" } });
   expect(antwort.status()).toBe(401);

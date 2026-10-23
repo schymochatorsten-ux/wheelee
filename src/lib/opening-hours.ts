@@ -11,6 +11,8 @@
  * nachsieht.
  */
 
+import { DEFAULT_LOCALE, localeTag, t, type Locale } from "@/i18n";
+
 /** Wochentag, 0 = Montag. */
 type Weekday = 0 | 1 | 2 | 3 | 4 | 5 | 6;
 
@@ -166,15 +168,25 @@ function coversWholeWeek(windows: TimeWindow[]): boolean {
  * *wie lange* man stehen darf. Als „Nur: 2 Stunden" gelesen wirkt es wie eine
  * Öffnungszeit – zwei verschiedene Dinge, die man nicht verwechseln darf.
  */
-export function maxStay(text: string | null | undefined): string | null {
+export function maxStay(
+  text: string | null | undefined,
+  locale: Locale = DEFAULT_LOCALE,
+): string | null {
   if (!text) return null;
   const clean = text.replace(/\s+/gu, " ").trim();
 
   const match = /^(\d+(?:[.,]\d+)?)\s*(min(?:uten)?|std\.?|stunden?|h)$/iu.exec(clean);
   if (!match) return null;
 
-  const value = match[1].replace(".", ",");
-  const unit = /^min/iu.test(match[2]) ? "Minuten" : value === "1" ? "Stunde" : "Stunden";
+  // Die Zahl wird je Sprache geschrieben („0,5" gegen „0.5"); gelesen wird sie
+  // unabhängig davon – die Quellen schreiben beides.
+  const number = Number(match[1].replace(",", "."));
+  const value = number.toLocaleString(localeTag(locale), { maximumFractionDigits: 2 });
+  const unit = /^min/iu.test(match[2])
+    ? t("stay.minutes", undefined, locale)
+    : number === 1
+      ? t("stay.hour", undefined, locale)
+      : t("stay.hours", undefined, locale);
   return `${value} ${unit}`;
 }
 
@@ -187,6 +199,142 @@ export function normalizeTimeRestriction(text: string | null | undefined): strin
   const clean = text.replace(/\s+/gu, " ").trim();
   if (clean.length === 0 || isAlwaysOpen(clean)) return null;
   return clean;
+}
+
+/**
+ * Die Zeitangabe für die Anzeige in der Sprache der Oberfläche (ToDo 15.4).
+ *
+ * **Deutsch bleibt der Quelltext**, so wie er in den Daten steht. In einer
+ * anderen Sprache wird die Angabe **ausgegeben, nicht neu gedeutet**: Sie
+ * wird einmal verstanden (`understandRestriction`, dieselben Bausteine wie bei
+ * der Auswertung „gilt gerade?") und dann mit Wochentags- und Monatsnamen der
+ * Sprache geschrieben. Gelingt das nicht **ganz sicher**, bleibt der deutsche
+ * Quelltext stehen – ein deutsches „Mo-Fr 8-18 Uhr" ist in einer englischen
+ * Oberfläche unschön, eine Zeitangabe mit einem stillschweigend verlorenen
+ * Teil wäre falsch.
+ */
+export function formatTimeRestriction(
+  text: string | null | undefined,
+  locale: Locale = DEFAULT_LOCALE,
+): string | null {
+  const normalized = normalizeTimeRestriction(text);
+  if (!normalized || locale === DEFAULT_LOCALE) return normalized;
+  return describeRestriction(normalized, locale) ?? normalized;
+}
+
+/** Eine sicher verstandene Zeitangabe – Grundlage der Ausgabe je Sprache. */
+export interface UnderstoodRestriction {
+  season: { from: number; to: number } | null;
+  sections: { days: Weekday[]; ranges: { from: number; to: number }[] }[];
+}
+
+/**
+ * Eine Zeitangabe **vollständig** verstehen – oder gar nicht.
+ *
+ * Strenger als `parseWindows`, das Unverstandenes überspringt, weil es für die
+ * Frage „gilt gerade?" genügt, dass die verstandenen Fenster stimmen. Für die
+ * Ausgabe darf nichts fehlen: Ein Abschnitt, eine Zeitspanne oder ein
+ * Feiertagszusatz, die verloren gingen, stünden dann fälschlich nicht da.
+ * Deshalb `null` bei allem, was nicht eindeutig ist: Ausnahmen („off"),
+ * „open", Feiertage, Bemerkungen, HTML, offene Enden („08:00+").
+ */
+export function understandRestriction(
+  text: string | null | undefined,
+): UnderstoodRestriction | null {
+  const normalized = normalizeTimeRestriction(text);
+  if (!normalized) return null;
+
+  const season = splitSeason(normalized);
+  const body = season ? season.rest : normalized;
+  if (/\boff\b|\bopen\b|\|\||<|\+/iu.test(body)) return null;
+
+  const sections: UnderstoodRestriction["sections"] = [];
+  for (const part of splitSections(tidy(body))) {
+    const clean = part.trim();
+    if (clean.length === 0) return null;
+
+    let days: Weekday[] | null;
+    let rest: string;
+    if (/^[\d\s:.,+-]+(?:uhr|h)?$/iu.test(clean)) {
+      days = ALL_DAYS;
+      rest = clean;
+    } else {
+      const match = /^([^\d]+?)[,;\s]+([\d].*)$/u.exec(clean);
+      if (!match) return null;
+      // Ohne `stripHolidays`: Ein Feiertagszusatz ließe sich nicht mitschreiben.
+      days = parseDays(match[1]);
+      rest = match[2];
+    }
+    if (!days || days.length === 0) return null;
+
+    const ranges: { from: number; to: number }[] = [];
+    for (const piece of rest.split(",")) {
+      const range =
+        /^(\d{1,2}(?:[:.]\d{2})?)\s*(?:-|bis)\s*(\d{1,2}(?:[:.]\d{2})?)\s*(?:uhr|h)?$/iu.exec(
+          piece.trim(),
+        );
+      if (!range) return null;
+      const from = parseClock(range[1]);
+      let to = parseClock(range[2]);
+      if (from === null || to === null) return null;
+      if (from === 0 && to === 0) to = 24 * 60;
+      ranges.push({ from, to });
+    }
+    sections.push({ days, ranges });
+  }
+
+  if (sections.length === 0) return null;
+  return { season: season ? { from: season.from, to: season.to } : null, sections };
+}
+
+/** „Mon–Fri", „Sat", „Mon, Wed" – Tage in der Reihenfolge der Quelle, Folgen zusammengefasst. */
+function describeDays(days: Weekday[], locale: Locale): string {
+  const format = new Intl.DateTimeFormat(localeTag(locale), { weekday: "short" });
+  // 2024-01-01 war ein Montag.
+  const name = (day: Weekday) => format.format(new Date(2024, 0, 1 + day));
+
+  const runs: Weekday[][] = [];
+  for (const day of days) {
+    const last = runs[runs.length - 1];
+    if (last && (last[last.length - 1] + 1) % 7 === day) last.push(day);
+    else runs.push([day]);
+  }
+  return runs
+    .map((run) =>
+      run.length >= 3 ? `${name(run[0])}–${name(run[run.length - 1])}` : run.map(name).join(", "),
+    )
+    .join(", ");
+}
+
+function describeClock(minutes: number): string {
+  const hours = Math.floor(minutes / 60);
+  const rest = minutes % 60;
+  return `${String(hours).padStart(2, "0")}:${String(rest).padStart(2, "0")}`;
+}
+
+/**
+ * Die Zeitangabe in der Sprache schreiben, oder `null`, wenn sie nicht sicher
+ * zu verstehen ist (dann zeigt die Oberfläche den Quelltext).
+ */
+export function describeRestriction(
+  text: string | null | undefined,
+  locale: Locale,
+): string | null {
+  const understood = understandRestriction(text);
+  if (!understood) return null;
+
+  const sections = understood.sections
+    .map(({ days, ranges }) => {
+      const times = ranges.map((r) => `${describeClock(r.from)}–${describeClock(r.to)}`).join(", ");
+      // Alle sieben Tage ohne Tagesangabe in der Quelle: nur die Zeit.
+      return days === ALL_DAYS ? times : `${describeDays(days, locale)} ${times}`;
+    })
+    .join("; ");
+
+  if (!understood.season) return sections;
+  const month = new Intl.DateTimeFormat(localeTag(locale), { month: "short" });
+  const name = (m: number) => month.format(new Date(2024, m - 1, 15));
+  return `${name(understood.season.from)}–${name(understood.season.to)}: ${sections}`;
 }
 
 /** „8", „8:30", „08:00" → Minuten seit Mitternacht. */

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useT } from "@/i18n/context";
 
 /**
  * Meldet den Service Worker an und sagt, wenn das Netz weg ist.
@@ -14,6 +15,7 @@ import { useEffect, useState } from "react";
  * die eigenen Änderungen zwischenspeichern und das Nachladen verwirren.
  */
 export function ServiceWorker() {
+  const t = useT();
   const [offline, setOffline] = useState(false);
 
   useEffect(() => {
@@ -44,7 +46,7 @@ export function ServiceWorker() {
       role="status"
       className="shrink-0 bg-amber-200 px-4 py-2 text-center text-sm font-medium text-amber-950"
     >
-      Kein Netz – angezeigt wird der zuletzt geladene Stand.
+      {t("offline.notice")}
     </p>
   );
 }

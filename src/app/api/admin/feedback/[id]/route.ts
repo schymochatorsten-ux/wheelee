@@ -3,6 +3,7 @@ import { deleteFeedback, updateFeedback } from "@/lib/db/feedback";
 import { isFeedbackStatus, type FeedbackStatus } from "@/lib/feedback";
 import { userFromRequest } from "@/lib/auth/session";
 import { withLogging } from "@/lib/log";
+import { t } from "@/i18n";
 
 /**
  * Eine Rückmeldung ändern oder löschen (ToDo 17.4).
@@ -21,13 +22,13 @@ async function check(
 ): Promise<{ id: number } | NextResponse> {
   const user = userFromRequest(request);
   if (!user?.isAdmin) {
-    return NextResponse.json({ error: "Nicht angemeldet." }, { status: 401 });
+    return NextResponse.json({ error: t("api.notSignedIn") }, { status: 401 });
   }
 
   const { id: raw } = await context.params;
   const id = Number.parseInt(raw, 10);
   if (!Number.isInteger(id) || id < 1) {
-    return NextResponse.json({ error: "Ungültige Nummer." }, { status: 400 });
+    return NextResponse.json({ error: t("api.invalidNumber") }, { status: 400 });
   }
 
   return { id };
@@ -41,14 +42,14 @@ async function patchHandler(request: Request, context: { params: Promise<{ id: s
   try {
     body = (await request.json()) as typeof body;
   } catch {
-    return NextResponse.json({ error: "Ungültige Anfrage." }, { status: 400 });
+    return NextResponse.json({ error: t("api.invalidRequest") }, { status: 400 });
   }
 
   const changes: { status?: FeedbackStatus; note?: string | null } = {};
 
   if (body.status !== undefined) {
     if (!isFeedbackStatus(body.status)) {
-      return NextResponse.json({ error: "Unbekannter Stand." }, { status: 400 });
+      return NextResponse.json({ error: t("api.unknownStatus") }, { status: 400 });
     }
     changes.status = body.status;
   }
@@ -61,7 +62,7 @@ async function patchHandler(request: Request, context: { params: Promise<{ id: s
   }
 
   if (!updateFeedback(result.id, changes)) {
-    return NextResponse.json({ error: "Nicht gefunden oder nichts zu ändern." }, { status: 404 });
+    return NextResponse.json({ error: t("api.notFoundOrNoChange") }, { status: 404 });
   }
 
   return NextResponse.json({ ok: true }, { headers: { "Cache-Control": "no-store" } });
@@ -72,7 +73,7 @@ async function deleteHandler(request: Request, context: { params: Promise<{ id: 
   if (result instanceof NextResponse) return result;
 
   if (!deleteFeedback(result.id)) {
-    return NextResponse.json({ error: "Nicht gefunden." }, { status: 404 });
+    return NextResponse.json({ error: t("api.notFound") }, { status: 404 });
   }
 
   return NextResponse.json({ ok: true }, { headers: { "Cache-Control": "no-store" } });

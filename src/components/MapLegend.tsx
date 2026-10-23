@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { type MessageKey } from "@/i18n";
+import { useT } from "@/i18n/context";
 
 /**
  * Erklärt die Farben der Kartenmarker.
@@ -10,30 +12,15 @@ import { useState } from "react";
  * Position ist dort nur ungefähr bekannt.
  */
 
-const ENTRIES = [
-  {
-    color: "#047857",
-    label: "Ziel der Navigationsleiste",
-    note: "größer dargestellt – der nächste oder der selbst gewählte",
-  },
-  {
-    color: "#047857",
-    label: "Weitere angebotene Parkplätze",
-    note: "nur sichtbar, solange die Auswahl aufgeklappt ist",
-  },
-  {
-    color: "#1d4ed8",
-    label: "Parkplatz, Position genau",
-    note: "Koordinate aus der Quelle",
-  },
-  {
-    color: "#dc2626",
-    label: "Parkplatz, Position ungefähr",
-    note: "liegt in dieser Straße, die genaue Stelle kann abweichen",
-  },
+const ENTRIES: { color: string; label: MessageKey; note: MessageKey }[] = [
+  { color: "#047857", label: "legend.target", note: "legend.targetNote" },
+  { color: "#047857", label: "legend.others", note: "legend.othersNote" },
+  { color: "#1d4ed8", label: "legend.exact", note: "legend.exactNote" },
+  { color: "#dc2626", label: "legend.approx", note: "legend.approxNote" },
 ];
 
 export function MapLegend() {
+  const t = useT();
   const [open, setOpen] = useState(false);
 
   return (
@@ -43,7 +30,7 @@ export function MapLegend() {
           id="karten-legende"
           className="pointer-events-auto max-w-72 rounded-xl bg-white/95 p-3 text-sm shadow-lg backdrop-blur dark:bg-neutral-900/95"
         >
-          <h2 className="font-semibold">Was die Farben bedeuten</h2>
+          <h2 className="font-semibold">{t("legend.title")}</h2>
           <ul className="mt-2 space-y-2">
             {ENTRIES.map((entry) => (
               <li key={entry.label} className="flex gap-2">
@@ -53,15 +40,13 @@ export function MapLegend() {
                   style={{ background: entry.color }}
                 />
                 <span>
-                  <span className="block">{entry.label}</span>
-                  <span className="block text-xs text-neutral-500">{entry.note}</span>
+                  <span className="block">{t(entry.label)}</span>
+                  <span className="block text-xs text-neutral-500">{t(entry.note)}</span>
                 </span>
               </li>
             ))}
           </ul>
-          <p className="mt-2 text-xs text-neutral-500">
-            Kreise mit Zahl fassen mehrere Parkplätze zusammen – hineinzoomen zeigt sie einzeln.
-          </p>
+          <p className="mt-2 text-xs text-neutral-500">{t("legend.clusters")}</p>
         </div>
       )}
 
@@ -73,7 +58,7 @@ export function MapLegend() {
         className="pointer-events-auto flex h-11 w-11 items-center justify-center rounded-full bg-white/95 text-lg font-semibold shadow-lg backdrop-blur focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-900/95"
       >
         <span aria-hidden="true">?</span>
-        <span className="sr-only">{open ? "Legende schließen" : "Legende der Kartenfarben"}</span>
+        <span className="sr-only">{open ? t("legend.close") : t("legend.open")}</span>
       </button>
     </div>
   );

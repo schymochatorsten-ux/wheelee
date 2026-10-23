@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import { useLocale, useT } from "@/i18n/context";
 import type { RatingSummary, RatingVote } from "@/lib/types";
 import { formatDate } from "./DataDisclaimer";
 
@@ -56,6 +57,8 @@ function ThumbDownIcon() {
 }
 
 export function RatingButtons({ spotId, signedIn }: RatingButtonsProps) {
+  const t = useT();
+  const locale = useLocale();
   const [state, setState] = useState<RatingState | null>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -115,7 +118,7 @@ export function RatingButtons({ spotId, signedIn }: RatingButtonsProps) {
 
         if (!response.ok) {
           setState(vorher);
-          setError(data.error ?? "Die Bewertung konnte nicht gespeichert werden.");
+          setError(data.error ?? t("rating.saveFailed"));
           return;
         }
 
@@ -123,12 +126,12 @@ export function RatingButtons({ spotId, signedIn }: RatingButtonsProps) {
         setState({ summary: data.summary, myVote: data.myVote });
       } catch {
         setState(vorher);
-        setError("Kein Netz – die Bewertung wurde nicht gespeichert.");
+        setError(t("rating.offline"));
       } finally {
         setBusy(false);
       }
     },
-    [signedIn, busy, state, spotId],
+    [signedIn, busy, state, spotId, t],
   );
 
   const summary = state?.summary;
@@ -137,12 +140,12 @@ export function RatingButtons({ spotId, signedIn }: RatingButtonsProps) {
   return (
     <section aria-labelledby={`bewertung-${spotId}`} className="mt-4">
       <h3 id={`bewertung-${spotId}`} className="text-sm font-semibold">
-        Gibt es diesen Parkplatz noch?
+        {t("rating.question")}
       </h3>
 
       <div className="mt-2 flex gap-2">
         <RatingButton
-          label="Existiert"
+          label={t("rating.exists")}
           icon={<ThumbUpIcon />}
           count={summary?.existsCount}
           active={myVote === "exists"}
@@ -151,7 +154,7 @@ export function RatingButtons({ spotId, signedIn }: RatingButtonsProps) {
           onClick={() => void vote("exists")}
         />
         <RatingButton
-          label="Existiert nicht mehr"
+          label={t("rating.gone")}
           icon={<ThumbDownIcon />}
           count={summary?.goneCount}
           active={myVote === "gone"}
@@ -170,31 +173,22 @@ export function RatingButtons({ spotId, signedIn }: RatingButtonsProps) {
         <dl className="mt-2 space-y-0.5 text-xs text-neutral-500">
           {summary.lastExistsAt && (
             <div className="flex gap-1.5">
-              <dt>Zuletzt bestätigt:</dt>
-              <dd>{formatDate(summary.lastExistsAt.slice(0, 10))}</dd>
+              <dt>{t("rating.lastConfirmed")}</dt>
+              <dd>{formatDate(summary.lastExistsAt.slice(0, 10), locale)}</dd>
             </div>
           )}
           {summary.lastGoneAt && (
             <div className="flex gap-1.5">
-              <dt>Zuletzt als aufgehoben gemeldet:</dt>
-              <dd>{formatDate(summary.lastGoneAt.slice(0, 10))}</dd>
+              <dt>{t("rating.lastGone")}</dt>
+              <dd>{formatDate(summary.lastGoneAt.slice(0, 10), locale)}</dd>
             </div>
           )}
         </dl>
       )}
 
-      {!signedIn && (
-        <p className="mt-2 text-xs text-neutral-500">
-          Zum Bewerten brauchst du ein Konto – unter {"„Einstellungen → Konto“"}. Ansehen kannst du
-          die Angaben auch ohne.
-        </p>
-      )}
+      {!signedIn && <p className="mt-2 text-xs text-neutral-500">{t("rating.needAccount")}</p>}
 
-      {signedIn && myVote && (
-        <p className="mt-2 text-xs text-neutral-500">
-          Du hast bewertet. Noch einmal antippen nimmt es zurück, der andere Knopf dreht es um.
-        </p>
-      )}
+      {signedIn && myVote && <p className="mt-2 text-xs text-neutral-500">{t("rating.voted")}</p>}
 
       {error && (
         <p role="alert" className="mt-2 text-xs text-red-700 dark:text-red-400">
@@ -248,6 +242,7 @@ interface RatingButtonProps {
 }
 
 function RatingButton({ label, icon, count, active, disabled, tone, onClick }: RatingButtonProps) {
+  const t = useT();
   const base =
     "flex min-h-12 flex-1 items-center justify-center gap-2 rounded-xl border px-3 text-sm font-medium transition-colors focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none disabled:opacity-55";
 
@@ -265,7 +260,7 @@ function RatingButton({ label, icon, count, active, disabled, tone, onClick }: R
       // `aria-pressed` statt Farbe allein: Dass die eigene Stimme gesetzt ist,
       // muss auch ankommen, wenn man die Farbe nicht sieht (ToDo 9.9).
       aria-pressed={active}
-      aria-label={`${label}${count === undefined ? "" : `, ${count} Stimmen`}`}
+      aria-label={count === undefined ? label : t("rating.votes", { label, count })}
       className={`${base} ${colours}`}
     >
       <span aria-hidden="true">{icon}</span>

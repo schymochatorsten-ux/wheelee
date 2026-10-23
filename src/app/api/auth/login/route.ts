@@ -6,6 +6,7 @@ import { publicUser } from "@/lib/auth/user";
 import { isMapsPreference } from "@/lib/maps-preference";
 import { allow, clientKey, LIMITS } from "@/lib/rate-limit";
 import { withLogging } from "@/lib/log";
+import { isLocale, t } from "@/i18n";
 
 /**
  * Anmelden (ToDo 11.1).
@@ -26,7 +27,7 @@ async function postHandler(request: Request) {
   try {
     body = (await request.json()) as typeof body;
   } catch {
-    return NextResponse.json({ error: "Ungültige Anfrage." }, { status: 400 });
+    return NextResponse.json({ error: t("api.invalidRequest") }, { status: 400 });
   }
 
   const email = typeof body.email === "string" ? normalizeEmail(body.email) : "";
@@ -34,25 +35,16 @@ async function postHandler(request: Request) {
 
   const key = `login:${clientKey(request)}:${email}`;
   if (!allow(key, LIMITS.login)) {
-    return NextResponse.json(
-      { error: "Zu viele Anmeldeversuche. Bitte in einigen Minuten erneut probieren." },
-      { status: 429 },
-    );
+    return NextResponse.json({ error: t("api.tooManyLogins") }, { status: 429 });
   }
 
   if (email.length === 0 || password.length === 0) {
-    return NextResponse.json(
-      { error: "Bitte E-Mail-Adresse und Passwort eingeben." },
-      { status: 400 },
-    );
+    return NextResponse.json({ error: t("api.credentialsRequired") }, { status: 400 });
   }
 
   const account = authenticate(email, password);
   if (!account) {
-    return NextResponse.json(
-      { error: "E-Mail-Adresse oder Passwort stimmt nicht." },
-      { status: 401 },
-    );
+    return NextResponse.json({ error: t("api.credentialsWrong") }, { status: 401 });
   }
 
   const response = NextResponse.json({
@@ -63,6 +55,7 @@ async function postHandler(request: Request) {
       email: account.email,
       isAdmin: isAdminEmail(account.email),
       mapsPreference: isMapsPreference(account.mapsPreference) ? account.mapsPreference : null,
+      language: isLocale(account.language) ? account.language : null,
     }),
   });
   response.cookies.set(sessionCookie(createSession(account.id)));

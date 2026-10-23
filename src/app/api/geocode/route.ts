@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { dedupePlaces, orderByProximity, toPlaces } from "@/lib/geocode";
 import type { LatLng } from "@/lib/geo";
 import { withLogging } from "@/lib/log";
+import { t } from "@/i18n";
 
 /**
  * Ortssuche, über unseren Server statt direkt aus dem Browser (ToDo 6.12).
@@ -100,7 +101,7 @@ async function getHandler(request: Request) {
       signal: AbortSignal.timeout(8_000),
     });
     if (!response.ok) {
-      return NextResponse.json({ places: [], error: "Suche gerade nicht erreichbar." });
+      return NextResponse.json({ places: [], error: t("api.searchUnavailable") });
     }
 
     const places = orderByProximity(dedupePlaces(toPlaces(await response.json())), origin).slice(
@@ -112,7 +113,7 @@ async function getHandler(request: Request) {
   } catch {
     // Zeitüberschreitung oder Netzfehler: ehrlich melden, nicht leer tun –
     // „nichts gefunden" und „konnte nicht suchen" sind verschiedene Dinge.
-    return NextResponse.json({ places: [], error: "Suche gerade nicht erreichbar." });
+    return NextResponse.json({ places: [], error: t("api.searchUnavailable") });
   }
 }
 

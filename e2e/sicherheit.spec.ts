@@ -60,6 +60,51 @@ test.describe("Sicherheits-Kopfzeilen", () => {
     expect(scriptSrc).not.toMatch(/https?:\/\//u);
   });
 
+  test("Skripte laufen nur mit Nonce, und die ist je Anfrage neu (ToDo 10.7)", async ({
+    request,
+  }) => {
+    const erste = await request.get("/");
+    const zweite = await request.get("/");
+    const nonce = (antwort: typeof erste) =>
+      /script-src [^;]*'nonce-([^']+)'/u.exec(
+        antwort.headers()["content-security-policy"] ?? "",
+      )?.[1];
+
+    const a = nonce(erste);
+    const b = nonce(zweite);
+    expect(a).toBeTruthy();
+    expect(b).toBeTruthy();
+    expect(a).not.toBe(b);
+
+    const csp = erste.headers()["content-security-policy"] ?? "";
+    expect(/script-src ([^;]+)/u.exec(csp)?.[1]).not.toContain("'unsafe-inline'");
+
+    // Jedes Skript im ausgelieferten HTML trägt die Nonce dieser Antwort – das
+    // Theme-Skript ebenso wie Nexts Hydrationsdaten.
+    const html = await erste.text();
+    const skripte = [...html.matchAll(/<script\b([^>]*)>/gu)].map((treffer) => treffer[1]);
+    expect(skripte.length).toBeGreaterThan(0);
+    const inline = skripte.filter((attribute) => !/\bsrc=/u.test(attribute));
+    expect(inline.length).toBeGreaterThan(0);
+    for (const attribute of inline) expect(attribute).toContain(`nonce="${a}"`);
+  });
+
+  test("die Seite startet unter der Richtlinie ohne Verstoß", async ({ page }) => {
+    const verstoesse: string[] = [];
+    page.on("console", (nachricht) => {
+      if (/Content Security Policy|Refused to/u.test(nachricht.text())) {
+        verstoesse.push(nachricht.text());
+      }
+    });
+
+    await page.goto("/");
+    // Das Theme-Skript hat vor dem ersten Zeichnen gelaufen, die Hydration auch.
+    await expect(page.locator("html")).toHaveAttribute("data-theme", /.+/u);
+    await expect(page.getByRole("tab").first()).toBeVisible();
+
+    expect(verstoesse).toEqual([]);
+  });
+
   test("der Service Worker bekommt keine Inhaltsrichtlinie, aber die übrigen Zeilen", async ({
     request,
   }) => {

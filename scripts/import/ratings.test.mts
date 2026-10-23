@@ -107,6 +107,22 @@ describe("readGoneReports", () => {
     expect(entry.existsCount).toBe(2);
   });
 
+  it("nennt die letzten drei Stimmen als Grund und gewichtet nach Alter (11.6)", () => {
+    const connection = createDatabase();
+    insert(connection, "a-1", "konto-1", "exists", "2024-10-23T12:00:00.000Z");
+    insert(connection, "a-1", "konto-2", "exists", "2024-10-23T12:00:00.000Z");
+    insert(connection, "a-1", "konto-3", "gone", "2026-10-01T12:00:00.000Z");
+    insert(connection, "a-1", "konto-4", "gone", "2026-10-02T12:00:00.000Z");
+    insert(connection, "a-1", "konto-5", "gone", "2026-10-03T12:00:00.000Z");
+    connection.close();
+
+    const [entry] = readGoneReports(2, file, new Date("2026-10-23T12:00:00.000Z")) ?? [];
+    expect(entry.reasons).toEqual(["lastThreeGone", "reports"]);
+    expect(entry.existsCount).toBe(2);
+    expect(entry.existsWeight).toBeCloseTo(0.5, 1);
+    expect(entry.goneWeight).toBeGreaterThan(2.8);
+  });
+
   it("nennt als Zeitpunkt, wann die Meldung zuletzt galt", () => {
     const connection = createDatabase();
     // Eine umgedrehte Stimme: angelegt im Mai, auf „gone" geändert im Oktober.
