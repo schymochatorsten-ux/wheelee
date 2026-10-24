@@ -128,6 +128,8 @@ letzten Stand sind.
 ```bash
 npm run import:gemeinden  # amtliches Gemeindeverzeichnis holen (jährlich)
 npm run import:regional   # regionale Sammeldatensätze (TechnologieRegion Karlsruhe)
+npm run import:verbaende  # Verband je Gemeinde eintragen (nach import:gemeinden)
+npm run check:regional    # regionale Quelle (TRK) gegen den OSM-Bestand halten, nur Bericht
 npm run import:osm-state  # landesweiter OSM-Lauf statt einer Abfrage je Gemeinde
 npm run check:slugs       # passen Register und Seed-Dateien zusammen?
 npm run report:abdeckung  # wie weit ist das Endziel?
@@ -394,7 +396,10 @@ Drei Gruppen, und sie bedeuten Verschiedenes:
 
 **Steht nichts in der Detailansicht, wurde nicht geprüft** – das ist keine
 Aussage über den Stellplatz. Eine zweite Quelle haben nur die 23 Städte mit
-amtlicher Liste.
+amtlicher Liste – und, seit dem 2026-10-24, in Karlsruhe und Baden-Baden 70
+OSM-Plätze, die die Liste der TechnologieRegion Karlsruhe bestätigt
+(`npm run check:regional`). Dort gibt es nur „bestätigt“, nie das Gegenteil:
+Die Stadt führt nur den Straßenraum.
 
 ## Datenschutz
 

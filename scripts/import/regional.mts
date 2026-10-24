@@ -29,7 +29,7 @@ import { recordCity } from "./status.mjs";
 
 const USER_AGENT = "wheelee-import/0.1 (Behindertenparkplatz-Karte; Kontakt via Repository)";
 
-interface RegionalSource {
+export interface RegionalSource {
   id: string;
   title: string;
   /** Herausgeber, wie er in der Quellenangabe erscheinen soll. */
@@ -158,7 +158,14 @@ function restriction(timeWindow: string | null, maxStay: string | null): string 
   return timeWindow ?? maxStay;
 }
 
-async function importSource(source: RegionalSource, dryRun: boolean): Promise<void> {
+/**
+ * Den Datensatz laden und je Gemeinde zerlegen – ohne etwas zu schreiben.
+ *
+ * Getrennt von `importSource`, damit die Gegenprüfung (ToDo 3.2,
+ * `crosscheck-regional.mts`) dieselben Standorte lesen kann, ohne eine
+ * Seed-Datei anzufassen.
+ */
+export async function loadRegional(source: RegionalSource) {
   console.log(`\n=== ${source.title} ===`);
 
   const response = await fetch(source.url, {
@@ -252,6 +259,12 @@ async function importSource(source: RegionalSource, dryRun: boolean): Promise<vo
     if (eintrag) eintrag.spots.push(spot);
     else bySlug.set(slug, { name: municipality, spots: [spot] });
   }
+
+  return { bySlug, uebersprungen, ohneKoordinate };
+}
+
+async function importSource(source: RegionalSource, dryRun: boolean): Promise<void> {
+  const { bySlug, uebersprungen, ohneKoordinate } = await loadRegional(source);
 
   console.log(
     `  ${bySlug.size} Gemeinden · ${ohneKoordinate} ohne verwertbare Koordinate` +
@@ -362,6 +375,8 @@ async function main() {
   }
 }
 
-if (process.argv[1]?.replace(/\\/gu, "/").endsWith("regional.mts")) {
+// Dateiname exakt, nicht `endsWith`: „crosscheck-regional.mts“ endet auch so und
+// ließ beim Import dieses Moduls den ganzen Import mitlaufen (2026-10-24).
+if (path.basename(process.argv[1] ?? "") === "regional.mts") {
   await main();
 }

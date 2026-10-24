@@ -174,10 +174,12 @@ async function writeSeed(
   license: string | null,
 ) {
   const file = path.join(projectRoot, "data", `${city.slug}.json`);
-  const overrides = await readJson<{ spots?: Record<string, Partial<ParkingSpot>> }>(
-    path.join(projectRoot, "data", `${city.slug}.overrides.json`),
-    {},
-  );
+  const overrides = await readJson<{
+    /** Von Hand am Portal der Stadt belegte Lizenz (ToDo 2a.5); gewinnt gegen die Quelle. */
+    license?: string;
+    spots?: Record<string, Partial<ParkingSpot>>;
+  }>(path.join(projectRoot, "data", `${city.slug}.overrides.json`), {});
+  license = overrides.license?.trim() || license;
 
   const merged = spots
     .map((spot) => ({ ...spot, ...(overrides.spots?.[spot.id] ?? {}) }))

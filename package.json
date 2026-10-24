@@ -33,6 +33,8 @@
     "sources:check": "tsx scripts/import/check-sources.mts",
     "import:gemeinden": "tsx scripts/import/gemeinden.mts",
     "import:grenzen": "tsx scripts/import/grenzen.mts",
+    "import:verbaende": "tsx scripts/import/verbaende.mts",
+    "check:regional": "tsx scripts/import/crosscheck-regional.mts",
     "check:slugs": "tsx scripts/import/check-slugs.mts",
     "import:osm-state": "tsx scripts/import/osm-state.mts",
     "report:abdeckung": "tsx scripts/import/coverage.mts",

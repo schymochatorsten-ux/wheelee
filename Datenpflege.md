@@ -241,7 +241,9 @@ Ort oder eine Anfrage bei der Stadt.
 Das Ergebnis **je Standort** steht in `data/_bestaetigt.json`, und die
 Detailansicht liest es von dort („Von zwei Quellen bestätigt"). **Eine ID, die
 dort fehlt, heißt „nicht geprüft" – nicht „nicht bestätigt".** Erst 23 der 209
-Städte haben überhaupt eine zweite Quelle.
+Städte haben überhaupt eine zweite Quelle; dazu kommen 70 OSM-Plätze in Karlsruhe
+und Baden-Baden, die `npm run check:regional` gegen die regionale Liste
+bestätigt (nur „bestätigt“, nie „nicht bestätigt“, Herkunft unter `regional`).
 
 **Die wirksamste Prüfung ist die billigste:** Stellplätze je Einwohner über
 alle Städte auftragen. Ausreißer nach unten zeigen fast immer eine Lücke in der

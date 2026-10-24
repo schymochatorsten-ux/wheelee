@@ -10,7 +10,7 @@ Entscheidung oder Angabe von dir · `[-]` gesperrt bis zur Freigabe
 
 **Letzte Aktualisierung:** 2026-10-24
 
-**Stand (nachgezählt 2026-10-24):** 25 offen, 5 teils gebaut, 9 warten auf
+**Stand (nachgezählt 2026-10-24):** 24 offen, 1 teils gebaut, 9 warten auf
 dich, 1 gesperrte Zeile (Abschnitt 13, darin drei Punkte). Neu am 2026-10-24:
 10.11–10.15 (10.11, 10.13, 10.14 am selben Tag erledigt) und Abschnitt 18 (18.1–18.3, 18.5, 18.6, D-09 sowie 10.8–10.10 am selben Tag erledigt); **höchste Priorität haben
 Abschnitt 10 (Sicherheit, Datenschutz, Recht) und Abschnitt 18
@@ -65,9 +65,9 @@ abgeschlossen ist.
 | 3   | **12.5a** aktuellen Stand ausliefern                                 | Ohne ihn ist nichts von 1 und 2 im Netz               |
 | 4   | **15.1** Weitere Sprachen – zurückgestellt (2026-10-24)             | Nichts zu tun, bis Torsten es wieder aufnimmt         |
 | 5   | **9.2a / 9.9 / 12.7a** Darstellung, Hilfsmitteltest                  | 9.9 braucht echte Geräte                              |
-| 6   | **1.8 / 4.5 / 12.5** Aufräumen, Automatisierung                      | Der automatische Deploy, nachdem 12.5a von Hand lief  |
-| 7   | **2c.3 / 2c.4 / 2d.9** Anfragen an Städte, OSM ergänzen              | Briefe und Kartierung – läuft nebenher                |
-| 8   | **Datenarbeit** 3.10, 3.2, 3.3, 3.4, 2d.8a, 2a.5, 2e.6, 2e.10, 2e.11 | Fällt unter die Vorgabe oben                          |
+| 6   | **1.8 / 4.5** Aufräumen, Automatisierung                             | Erst, nachdem 12.5a im Netz steht                     |
+| 7   | **2c.4 / 2d.9** Anfrage an Regensburg, OSM ergänzen                  | Brief und Kartierung – läuft nebenher                 |
+| 8   | **Datenarbeit** 3.10, 3.3, 3.4, 2d.8a, 2e.6, 2e.11              | Fällt unter die Vorgabe oben                          |
 | 9   | **14.1–14.9** Abschlusstest                                          | Zuletzt, auf echten Geräten, in den Sprachen von 15   |
 
 **Neue Knöpfe und Meldungen kommen seit 15.2 gleich in
@@ -104,22 +104,16 @@ Lizenzfrage), dazu alles unter „Entscheidungen".
 
 ## 2. Datenquellen und Import
 
-- [~] 2a.5 **Lizenz je Stadt: 13 der 23 amtlichen Quellen nennen keine** (nachgezählt 2026-10-20; hier stand „15") – darunter Hamburg, Köln, Dresden, Berlin, Düsseldorf, also die größten Bestände. In der Oberfläche steht „Lizenz nicht angegeben", was ehrlich, aber für eine veröffentlichte App zu wenig ist. Die Lizenz steht meist auf dem Portal der Stadt, nur nicht im GovData-Metadatum; je Stadt nachschlagen und in `data/<stadt>.overrides.json` festhalten. (Datenmodell und Anzeige sind fertig; **10.3 wird hier geführt**, nicht doppelt.)
-- [ ] 2c.3 Idstein und Weißenhorn: bei den Stadtverwaltungen nach einer amtlichen Liste fragen – die deutlich bessere Quelle.
 - [ ] 2c.4 Fehlende Parkplätze in OpenStreetMap nachtragen; davon profitieren auch alle anderen Nutzungen.
-- [ ] 2d.8a **Acht Städte mit ungenutzter amtlicher Quelle ansehen, fünf lohnen.** `npm run sources:check` findet sie von selbst. Bei Kiel, Krefeld und Aachen ist die Ablehnung richtig (Anwohnerparken); bei Bochum, Bielefeld, Karlsruhe, Norderstedt und Viersen lohnt der Blick aufs Stadtportal. Der Gewinn wäre spürbar: Düsseldorf kam von 171 OSM-Standorten auf 340 amtliche.
+- [ ] 2d.8a **Neun Städte mit ungenutzter amtlicher Quelle ansehen.** **München zuerst:** Datensatz „Behindertenparkplätze“ auf opendata.muenchen.de, dl-by-de 2.0, WFS, täglich aktualisiert; im Bestand stehen 219 Standorte aus OSM (gefunden bei 3.2, Details in [Erledigt.md](Erledigt.md)). Die übrigen acht, fünf davon lohnend: `npm run sources:check` findet sie von selbst. Bei Kiel, Krefeld und Aachen ist die Ablehnung richtig (Anwohnerparken); bei Bochum, Bielefeld, Karlsruhe, Norderstedt und Viersen lohnt der Blick aufs Stadtportal. Der Gewinn wäre spürbar: Düsseldorf kam von 171 OSM-Standorten auf 340 amtliche.
 - [ ] 2d.9 **Regensburg: 156.000 Einwohner, kein einziger erfasster Platz.** Die Abfrage lief sauber durch und war leer – eine Lücke in OpenStreetMap, nicht in der Wirklichkeit. Anfrage bei der Straßenverkehrsbehörde, Nachtragen in OSM.
 - [ ] 2e.6 **Restliche Gemeinden aus OpenStreetMap.** Der Importer kann es, die Liste steht (`data/_import-status.md`: 10.550 „noch nicht geprüft"), die Zuordnung stimmt seit 2e.7. Es fehlt nur noch ein Bezugsweg, der einen Gemeinschaftsdienst nicht überlastet – das ist 2e.11.
-- [~] 2e.10 **Gemeinden ohne eigene Entscheidung kennzeichnen.** Rund ein Fünftel gehört zu Verbands-, Samt- oder Verwaltungsgemeinschaften; deren Straßenverkehrsbehörde sitzt beim Verband, und eine Anfrage an die Gemeinde läuft ins Leere. `data/_gemeinden.json` weiß es nicht – `art` kennt nur `Gemeinde`, `Stadt`, `Gemeindefreies Gebiet`, und `gemeinden.mts` liest nur Ebene 6 und 2 von VG250. Zuerst nachsehen, ob die Ebene im Datensatz enthalten ist. **Nicht raten:** Eine falsch als verbandsangehörig geführte Gemeinde schickt die Anfrage an die falsche Stelle, und die Antwort bleibt aus, ohne dass jemand den Grund erfährt.
 - [ ] 2e.11 **Massendaten ohne Overpass holen.** Overpass ist ein Abfragedienst von Freiwilligen und antwortet unter Last mit 500/504 – oder, schlimmer, mit 200 und leerer Liste; beides ist hier eingetreten (am 2026-10-11 für NRW: 7 Objekte statt 14.025). Für 10.754 Gemeinden das falsche Werkzeug, auch gebündelt je Bundesland. Vorgesehener Weg sind die **Bundesland-Auszüge von Geofabrik** (`.osm.pbf`, ODbL, täglich, für Automatisierung gedacht): ein Download-Server ist für Massenbezug da, ein Abfragedienst nicht.
   - [ ] Aufwand ehrlich benennen: PBF ist Protocol Buffers mit zlib-Blöcken und delta-kodierten Knoten – deutlich mehr als der Shapefile-Leser. Dafür löst es die Abhängigkeit vom Gemeinschaftsdienst vollständig auf.
   - [ ] Zwischenstufe, falls PBF zu viel ist: `npm run import:osm-state` beibehalten, aber mit Pausen über die 16 Länder verteilt – 32 Abfragen für ganz Deutschland statt 10.754, und das ist vertretbar.
 
 ## 3. Datenvalidierung
 
-- [~] 3.2 **Landesweite Sammeldatensätze.** Karlsruhe ist eingebunden, NRW und BW sind ergebnislos geprüft. Offen:
-  - [ ] Den Karlsruher Datensatz zum **Gegenprüfen** nutzen: für Karlsruhe und Baden-Baden liegen zwei unabhängige Quellen vor – Material für 3.1.
-  - [ ] Weitere Landesportale ansehen: Open Data Hessen, daten.berlin.de, Geodatenportal Bayern, Transparenzportal Hamburg.
 - [ ] 3.3 **Straßenabgleich:** nennt die Rückwärtssuche bei der Koordinate dieselbe Straße wie die Quelle? Kein Beweis für einen Fehler, aber ein guter Filter. Für Frankfurt gibt es das schon, für alle anderen nicht.
 - [ ] 3.4 **Abstand zur nächsten Straße.** Ein Behindertenparkplatz liegt am Straßenrand; Punkte über 25 m von jeder Straße sind fast immer falsch verortet. Eine Overpass-Abfrage je Stadt.
 - [ ] 3.10 **Den Kreuzvergleich über alle 23 amtlichen Städte laufen lassen.** Code und Anzeige stehen seit 3.1/3.7; abgeglichen ist bislang **eine** Stadt (Germersheim), weil Overpass am 2026-10-20 unter Last stand. Also `npm run validate` **mit** Netz, dann zweierlei ansehen: die Ausreißer nach unten (versetzte amtliche Koordinate oder dünne OSM-Erfassung – das unterscheidet nur die Stichprobe) und die Gruppe **„nur OSM"**, also Stellplätze, die der amtlichen Liste fehlen. Für Germersheim sind das 11 bei 6 amtlichen Standorten.
@@ -149,7 +143,6 @@ Lizenzfrage), dazu alles unter „Entscheidungen".
 ## 12. Qualität und Deployment
 
 - [!] 12.5a **Den aktuellen Stand ausliefern – Platz 1.** Die Seite läuft auf einem Stand von vor dem 2026-10-11: Konten, Rückmeldungen, Bewertungen, Rechtstexte und Sicherheits-Kopfzeilen antworten dort mit 404 (gemessen 2026-10-19, Befund in [Erledigt.md](Erledigt.md)). **Die Rechtspflicht aus 10.2 ist dadurch unerfüllt, obwohl die Seiten gebaut sind.** Zu tun: einmaliger Deploy von Hand – `git pull` und `docker compose up -d --build` in `/opt/wheelee`, danach die drei Variablen aus 10.2a in die `.env`; beim ersten Start legt die Migration die Tabellen an. **Das kann weder ich noch Torsten:** kein SSH-Zugang zum NAS, kein NPM-Zugang. Es braucht Niklas – oder einen eigenen Benutzer auf dem NAS mit Rechten nur auf `/opt/wheelee`.
-- [~] 12.5 **Deploy automatisieren.** `Dockerfile`, `docker-compose.yml` und `deploy/env.beispiel` stehen. Offen ist, wie neue Commits auf das NAS kommen: Webhook oder systemd-Timer, Variante A oder B aus Abschnitt 6 von [wheelee-infrastruktur.md](wheelee-infrastruktur.md). **Dass dieser Punkt offen ist, hat 12.5a verursacht:** Ohne automatischen Weg hängt jeder Deploy daran, dass jemand daran denkt – und acht Tage lang hat niemand daran gedacht.
 - [ ] 12.7a Symbol gestalterisch überarbeiten – funktional, aber von mir gezeichnet.
 
 ## 15. Mehrsprachigkeit
