@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it } from "vitest";
-import { allow, clientKey, resetLimits } from "./rate-limit";
+import { allow, clientKey, LIMITS, resetLimits, retryAfter } from "./rate-limit";
 
 /**
  * Die Drosselung (ToDos 17.2, D-03).
@@ -69,15 +69,24 @@ describe("allow", () => {
   });
 });
 
+describe("retryAfter", () => {
+  it("nennt die Länge des Fensters in Sekunden", () => {
+    expect(retryAfter(LIMITS.login)).toEqual({ "Retry-After": "600" });
+  });
+});
+
 describe("clientKey", () => {
   const mit = (headers: Record<string, string>) =>
     clientKey(new Request("https://wheelee.de/api/feedback", { headers }));
 
-  it("nimmt den ersten Eintrag aus X-Forwarded-For", () => {
-    // Die Kette wird von jedem Proxy hinten angehängt; vorn steht der echte
-    // Absender. Hinter dem Nginx Proxy Manager ist das die einzige Stelle, an
-    // der er überhaupt steht.
-    expect(mit({ "x-forwarded-for": "203.0.113.7, 100.71.71.105" })).toBe("203.0.113.7");
+  it("nimmt den letzten Eintrag aus X-Forwarded-For", () => {
+    // Den hängt der eigene Proxy an; der erste kann vom Absender stammen und
+    // würde jede Drosselung umgehen lassen (10.9).
+    expect(mit({ "x-forwarded-for": "6.6.6.6, 203.0.113.7" })).toBe("203.0.113.7");
+  });
+
+  it("kennt bei einem einzigen Eintrag nur diesen", () => {
+    expect(mit({ "x-forwarded-for": "203.0.113.7" })).toBe("203.0.113.7");
   });
 
   it("weicht auf X-Real-IP aus", () => {

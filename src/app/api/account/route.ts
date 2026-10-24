@@ -1,9 +1,10 @@
 import { NextResponse } from "next/server";
 import { deleteAccount } from "@/lib/db/accounts";
 import { clearedSessionCookie, userFromRequest } from "@/lib/auth/session";
-import { allow, clientKey, LIMITS } from "@/lib/rate-limit";
+import { allow, clientKey, LIMITS, retryAfter } from "@/lib/rate-limit";
 import { withLogging } from "@/lib/log";
 import { t } from "@/i18n";
+import { readJson } from "@/lib/read-json";
 
 /**
  * Das eigene Konto löschen (ToDo 11.7).
@@ -22,14 +23,14 @@ async function deleteHandler(request: Request) {
 
   let body: { password?: unknown };
   try {
-    body = (await request.json()) as typeof body;
+    body = (await readJson(request)) as typeof body;
   } catch {
     return NextResponse.json({ error: t("api.invalidRequest") }, { status: 400 });
   }
   const password = typeof body.password === "string" ? body.password : "";
 
   if (!allow(`delete:${clientKey(request)}:${user.id}`, LIMITS.passwordChange)) {
-    return NextResponse.json({ error: t("api.tooManyPasswordChanges") }, { status: 429 });
+    return NextResponse.json({ error: t("api.tooManyPasswordChanges") }, { status: 429, headers: retryAfter(LIMITS.passwordChange) });
   }
 
   if (password.length === 0) {

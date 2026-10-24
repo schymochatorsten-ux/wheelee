@@ -14,13 +14,11 @@
  * werden muss nur, was wahr ist – die Daten sind eine Momentaufnahme einer
  * fremden Quelle.
  *
- * **Der Text bleibt in jeder Sprache deutsch** (Ausnahmeliste in D-08, keine
- * maschinelle Übersetzung). In einer anderen Sprache steht darüber ein kurzer
- * Hinweis in der Sprache der Oberfläche, der sagt, dass der Hinweis deutsch
- * ist und dass vor Ort die Beschilderung gilt (`disclaimer.germanOnly`) – das
- * ist die Aussage, auf die es ankommt, und sie darf nicht an der Sprache
- * hängen. **Dieser Hinweis ist ein neuer Text und wartet auf die Freigabe
- * durch einen Menschen** (ToDo 15.6); bis dahin ist er maschinell vorbereitet.
+ * Die Texte stehen in `src/i18n/*.ts` (`disclaimer.*`). Englisch und Spanisch
+ * sind maschinell übersetzt und mehrfach maschinell geprüft, **nicht von
+ * Muttersprachler:innen** (Entscheidung vom 2026-10-24, ToDo 15.6 in
+ * Erledigt.md): Die Aussage, auf die es ankommt – vor Ort gilt die
+ * Beschilderung –, darf nicht an der Sprache hängen.
  */
 
 import { DEFAULT_LOCALE, localeTag, type Locale } from "@/i18n";
@@ -47,22 +45,15 @@ export function formatDate(iso: string, locale: Locale = DEFAULT_LOCALE): string
 export function DataDisclaimer({ importedAt = null, variant = "kurz" }: DataDisclaimerProps) {
   const locale = useLocale();
   const t = useT();
-  const note =
-    locale === DEFAULT_LOCALE ? null : (
-      <p lang={locale} className="mt-1 font-medium">
-        {t("disclaimer.germanOnly")}
-      </p>
-    );
-  const stand = importedAt ? ` Stand der Daten für diese Stadt: ${formatDate(importedAt)}.` : "";
+  const stand = importedAt ? ` ${t("disclaimer.stand", { date: formatDate(importedAt, locale) })}` : "";
 
   if (variant === "kurz") {
     return (
       <div className="mt-3 text-xs text-neutral-500">
-        <p lang="de">
-          Angaben ohne Gewähr: Ein Parkplatz kann aufgehoben, verlegt oder gerade belegt sein.
+        <p lang={locale}>
+          {t("disclaimer.short")}
           {stand}
         </p>
-        {note}
       </div>
     );
   }
@@ -70,22 +61,16 @@ export function DataDisclaimer({ importedAt = null, variant = "kurz" }: DataDisc
   return (
     <section
       aria-labelledby="disclaimer-heading"
+      lang={locale}
       className="rounded-xl border border-amber-300 bg-amber-50 p-3 text-sm text-amber-900 dark:border-amber-900 dark:bg-amber-950 dark:text-amber-100"
     >
-      {note && <div className="mb-2 text-sm">{note}</div>}
-      <h2 id="disclaimer-heading" lang="de" className="font-semibold">
-        Bitte vor der Fahrt lesen
+      <h2 id="disclaimer-heading" className="font-semibold">
+        {t("disclaimer.heading")}
       </h2>
-      <p lang="de" className="mt-1">
-        Die Angaben stammen aus amtlichen Listen und aus OpenStreetMap und können veraltet sein. Ein
-        Parkplatz kann aufgehoben, verlegt oder gerade belegt sein, und eine Zeitbeschränkung kann
-        sich geändert haben. <strong>Verlass dich nicht allein auf diese App</strong> – vor Ort gilt
-        die Beschilderung.
+      <p className="mt-1">
+        {t("disclaimer.body")} <strong>{t("disclaimer.bodyStrong")}</strong> {t("disclaimer.bodyEnd")}
       </p>
-      <p lang="de" className="mt-2">
-        Stimmt etwas nicht, hilft eine Rückmeldung mehr als alles andere: Rückmeldungen sind die
-        einzige Quelle, die solche Änderungen überhaupt bemerkt.
-      </p>
+      <p className="mt-2">{t("disclaimer.feedback")}</p>
     </section>
   );
 }

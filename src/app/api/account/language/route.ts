@@ -3,6 +3,7 @@ import { setLanguage } from "@/lib/db/accounts";
 import { userFromRequest } from "@/lib/auth/session";
 import { withLogging } from "@/lib/log";
 import { isLocale, t } from "@/i18n";
+import { readJson } from "@/lib/read-json";
 
 /**
  * Die gewählte Sprache am Konto ablegen (ToDo 15.5).
@@ -22,7 +23,7 @@ async function putHandler(request: Request) {
 
   let body: Record<string, unknown>;
   try {
-    body = (await request.json()) as Record<string, unknown>;
+    body = (await readJson(request)) as Record<string, unknown>;
   } catch {
     return NextResponse.json({ error: t("api.invalidRequest") }, { status: 400 });
   }

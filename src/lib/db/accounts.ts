@@ -29,13 +29,21 @@ export interface Account {
    * heißt: nie gewählt – dann gilt Cookie, sonst Browsersprache.
    */
   language: string | null;
+  /** Rolle am Konto (ToDo 18.1). `admin` darf die Verwaltung benutzen. */
+  role: Role;
+  /** Gesperrt seit – ein gesperrtes Konto kann sich nicht anmelden und hat keine Sitzung. */
+  disabledAt: string | null;
 }
+
+export type Role = "user" | "admin";
 
 interface AccountRow {
   id: string;
   email: string;
   maps_preference?: string | null;
   language?: string | null;
+  role?: string | null;
+  disabled_at?: string | null;
   password_hash: string;
   created_at: string;
 }
@@ -59,6 +67,8 @@ const toAccount = (row: AccountRow): Account => ({
   createdAt: row.created_at,
   mapsPreference: row.maps_preference ?? null,
   language: row.language ?? null,
+  role: row.role === "admin" ? "admin" : "user",
+  disabledAt: row.disabled_at ?? null,
 });
 
 /**
@@ -83,7 +93,7 @@ export function setLanguage(accountId: string, language: string | null): void {
 export function findAccountByEmail(email: string): Account | null {
   const row = db()
     .prepare(
-      "SELECT id, email, password_hash, created_at, maps_preference, language FROM account WHERE email = ?",
+      "SELECT id, email, password_hash, created_at, maps_preference, language, role, disabled_at FROM account WHERE email = ?",
     )
     .get(normalizeEmail(email)) as AccountRow | undefined;
   return row ? toAccount(row) : null;
@@ -111,6 +121,8 @@ export function createAccount(email: string, password: string): Account | null {
     // steht (ToDo 11.3a).
     mapsPreference: null,
     language: null,
+    role: "user",
+    disabledAt: null,
   };
 
   try {
@@ -137,7 +149,7 @@ export function createAccount(email: string, password: string): Account | null {
 export function authenticate(email: string, password: string): Account | null {
   const row = db()
     .prepare(
-      "SELECT id, email, password_hash, created_at, maps_preference, language FROM account WHERE email = ?",
+      "SELECT id, email, password_hash, created_at, maps_preference, language, role, disabled_at FROM account WHERE email = ?",
     )
     .get(normalizeEmail(email)) as AccountRow | undefined;
 
@@ -147,6 +159,9 @@ export function authenticate(email: string, password: string): Account | null {
   }
 
   if (!verifyPassword(password, row.password_hash)) return null;
+  // Gesperrt: dieselbe Antwort wie bei falschem Passwort, damit aus der
+  // Ablehnung nicht abzulesen ist, dass die Adresse existiert (ToDo 18.1).
+  if (row.disabled_at) return null;
 
   db().prepare("UPDATE account SET last_login_at = ? WHERE id = ?").run(now(), row.id);
   return toAccount(row);
@@ -196,13 +211,17 @@ export function accountForSession(token: string | undefined): Account | null {
 
   const row = db()
     .prepare(
-      `SELECT a.id, a.email, a.password_hash, a.created_at, a.maps_preference, a.language, s.expires_at
+      `SELECT a.id, a.email, a.password_hash, a.created_at, a.maps_preference, a.language, a.role, a.disabled_at, s.expires_at
          FROM session s JOIN account a ON a.id = s.account_id
         WHERE s.token_hash = ?`,
     )
     .get(hashToken(token)) as (AccountRow & { expires_at: string }) | undefined;
 
   if (!row) return null;
+  if (row.disabled_at) {
+    deleteSessionsOf(row.id);
+    return null;
+  }
 
   if (new Date(row.expires_at).getTime() <= Date.now()) {
     deleteSession(token);
@@ -210,6 +229,56 @@ export function accountForSession(token: string | undefined): Account | null {
   }
 
   return toAccount(row);
+}
+
+/** Alle Sitzungen eines Kontos beenden. */
+export function deleteSessionsOf(accountId: string): void {
+  db().prepare("DELETE FROM session WHERE account_id = ?").run(accountId);
+}
+
+/** Konten mit Rolle `admin`, die nicht gesperrt sind. */
+export function activeAdminCount(): number {
+  const row = db()
+    .prepare("SELECT COUNT(*) AS anzahl FROM account WHERE role = 'admin' AND disabled_at IS NULL")
+    .get() as { anzahl: number };
+  return Number(row.anzahl);
+}
+
+function roleRow(accountId: string): { role: string; disabled_at: string | null } | undefined {
+  return db().prepare("SELECT role, disabled_at FROM account WHERE id = ?").get(accountId) as
+    | { role: string; disabled_at: string | null }
+    | undefined;
+}
+
+/**
+ * Rolle ändern (ToDo 18.1). Gibt `false` zurück, wenn das Konto fehlt oder die
+ * Änderung das **letzte aktive Admin-Konto** entzöge – dann stünde niemand mehr
+ * in der Verwaltung, und sie ließe sich nicht mehr erreichen. Geprüft wird hier
+ * und nicht erst in der Oberfläche: Die Oberfläche kann man umgehen.
+ */
+export function setRole(accountId: string, role: Role): boolean {
+  const row = roleRow(accountId);
+  if (!row) return false;
+  if (row.role === "admin" && !row.disabled_at && role !== "admin" && activeAdminCount() <= 1) {
+    return false;
+  }
+  db().prepare("UPDATE account SET role = ? WHERE id = ?").run(role, accountId);
+  return true;
+}
+
+/**
+ * Konto sperren oder entsperren (ToDo 18.1). Sperren beendet alle Sitzungen und
+ * schützt wie `setRole` das letzte aktive Admin-Konto.
+ */
+export function setDisabled(accountId: string, disabled: boolean): boolean {
+  const row = roleRow(accountId);
+  if (!row) return false;
+  if (disabled && row.role === "admin" && !row.disabled_at && activeAdminCount() <= 1) return false;
+  db()
+    .prepare("UPDATE account SET disabled_at = ? WHERE id = ?")
+    .run(disabled ? now() : null, accountId);
+  if (disabled) deleteSessionsOf(accountId);
+  return true;
 }
 
 export function deleteSession(token: string | undefined): void {

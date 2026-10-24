@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { dedupePlaces, orderByProximity, toPlaces } from "@/lib/geocode";
 import type { LatLng } from "@/lib/geo";
 import { withLogging } from "@/lib/log";
+import { allow, clientKey, LIMITS, retryAfter } from "@/lib/rate-limit";
 import { t } from "@/i18n";
 
 /**
@@ -17,7 +18,9 @@ import { t } from "@/i18n";
 const USER_AGENT = "wheelee/0.1 (Behindertenparkplatz-Karte; Kontakt via Repository)";
 
 /** Eine Stunde: Ortsnamen ändern sich nicht, Tippfehler wiederholen sich. */
-const CACHE_CONTROL = "public, max-age=3600, stale-while-revalidate=86400";
+// `private`: Suchtext und Bezugspunkt stehen in der Adresse und sind eine
+// Ortsangabe; kein Proxy dazwischen soll sie behalten (10.9).
+const CACHE_CONTROL = "private, max-age=3600, stale-while-revalidate=86400";
 
 /**
  * So viele Treffer holt der Dienst, bevor entdoppelt und geordnet wird.
@@ -64,8 +67,19 @@ async function getHandler(request: Request) {
   const origin = reference(params);
 
   // Unter drei Zeichen liefert jede Suche nur Rauschen – und belastet den Dienst.
-  if (query.length < 3) {
+  // Nach oben ebenso (ToDo 10.14): Keine Adresse ist über 200 Zeichen lang, und
+  // die Zeichenkette ginge sonst unverkürzt an Nominatim.
+  if (query.length < 3 || query.length > 200) {
     return NextResponse.json({ places: [] }, { headers: { "Cache-Control": CACHE_CONTROL } });
+  }
+
+  // Nur Anfragen, die wirklich an Nominatim gehen, zählen (10.9): Kurze Suchen
+  // oben belasten den Dienst nicht. Erst je Herkunft, dann für alle zusammen.
+  if (
+    !allow(`geocode:${clientKey(request)}`, LIMITS.geocode) ||
+    !allow("geocode:all", LIMITS.geocodeAll)
+  ) {
+    return NextResponse.json({ places: [], error: t("api.searchUnavailable") }, { status: 429, headers: retryAfter(LIMITS.geocode) });
   }
 
   const url = new URL("https://nominatim.openstreetmap.org/search");

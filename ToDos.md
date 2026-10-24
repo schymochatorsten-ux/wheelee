@@ -8,12 +8,13 @@
 **Legende:** `[ ]` offen · `[~]` teils gebaut, Rest hier · `[!]` braucht eine
 Entscheidung oder Angabe von dir · `[-]` gesperrt bis zur Freigabe
 
-**Letzte Aktualisierung:** 2026-10-23
+**Letzte Aktualisierung:** 2026-10-24
 
-**Stand (nachgezählt 2026-10-23):** 25 offen, 5 teils gebaut, 9 warten auf
-dich, 1 gesperrte Zeile (Abschnitt 13, darin drei Punkte). Fertig an diesem
-Tag: 9.16, 15.2, 15.3, 15.4, 15.5, 11.7, 10.7, 16.1, 11.4, 11.5, 11.6 (alle in Erledigt.md).
-Neu aufgenommen: 10.8 und 10.9. Nachzählen statt fortschreiben:
+**Stand (nachgezählt 2026-10-24):** 25 offen, 5 teils gebaut, 9 warten auf
+dich, 1 gesperrte Zeile (Abschnitt 13, darin drei Punkte). Neu am 2026-10-24:
+10.11–10.15 (10.11, 10.13, 10.14 am selben Tag erledigt) und Abschnitt 18 (18.1–18.3, 18.5, 18.6, D-09 sowie 10.8–10.10 am selben Tag erledigt); **höchste Priorität haben
+Abschnitt 10 (Sicherheit, Datenschutz, Recht) und Abschnitt 18
+(Administration).** Nachzählen statt fortschreiben:
 
 ```bash
 node -e "const t=require('fs').readFileSync('ToDos.md','utf8').split('\n').filter(x=>/^- \[(.)\]/.test(x)); console.log('gesamt',t.length); for(const m of [' ','~','!','-']) console.log(m, t.filter(x=>x.startsWith('- ['+m+']')).length);"
@@ -37,7 +38,7 @@ npm run test && npm run typecheck && npm run lint
 npm run check:slugs
 ```
 
-Erwartet: 455 Unit-Tests grün ·
+Erwartet: 475 Unit-Tests grün ·
 `Verzeichnis: 10.754 Gemeinden · davon an der Reihe: 204 · Seed-Dateien: 209`
 · „✅ Register und Seed-Dateien stimmen überein".
 
@@ -59,20 +60,21 @@ abgeschlossen ist.
 
 | #   | Was                                                                  | Warum hier                                            |
 | --- | -------------------------------------------------------------------- | ----------------------------------------------------- |
-| 1   | **12.5a** aktuellen Stand ausliefern                                 | Alles seit dem 2026-10-11 Gebaute steht nicht im Netz |
-| 2   | **10.8 / 10.9** Datenschutz und IT-Sicherheit der ganzen Seite       | Baubar; ein Fehler hier trifft Menschen, nicht Daten  |
-| 3   | **15.1 / 15.6** Weitere Sprachen; Übersetzungen prüfen lassen        | Erst nach 10.8: die Erklärung gehört in die Sprachfrage |
-| 4   | **9.2a / 9.9 / 12.7a** Darstellung, Hilfsmitteltest                  | 9.9 braucht echte Geräte                              |
-| 5   | **1.8 / 4.5 / 12.5** Aufräumen, Automatisierung                      | Der automatische Deploy, nachdem 12.5a von Hand lief  |
-| 6   | **2c.3 / 2c.4 / 2d.9** Anfragen an Städte, OSM ergänzen              | Briefe und Kartierung – läuft nebenher                |
-| 7   | **Datenarbeit** 3.10, 3.2, 3.3, 3.4, 2d.8a, 2a.5, 2e.6, 2e.10, 2e.11 | Fällt unter die Vorgabe oben                          |
-| 8   | **14.1–14.9** Abschlusstest                                          | Zuletzt, auf echten Geräten, in den Sprachen von 15   |
+| 1   | **10.12 / 10.15 / 10.2** Folgen der Sicherheits- und Datenschutzprüfung (10.8–10.10 erledigt 2026-10-24), Cookies, Impressum | **Höchste Priorität (Vorgabe 2026-10-24)** – 10.12 und 10.2 brauchen Torsten |
+| 2   | **18.4** Erste Einladung                                            | **Höchste Priorität (Vorgabe 2026-10-24)** (18.1–18.3, 18.5, 18.6 gebaut) |
+| 3   | **12.5a** aktuellen Stand ausliefern                                 | Ohne ihn ist nichts von 1 und 2 im Netz               |
+| 4   | **15.1** Weitere Sprachen – zurückgestellt (2026-10-24)             | Nichts zu tun, bis Torsten es wieder aufnimmt         |
+| 5   | **9.2a / 9.9 / 12.7a** Darstellung, Hilfsmitteltest                  | 9.9 braucht echte Geräte                              |
+| 6   | **1.8 / 4.5 / 12.5** Aufräumen, Automatisierung                      | Der automatische Deploy, nachdem 12.5a von Hand lief  |
+| 7   | **2c.3 / 2c.4 / 2d.9** Anfragen an Städte, OSM ergänzen              | Briefe und Kartierung – läuft nebenher                |
+| 8   | **Datenarbeit** 3.10, 3.2, 3.3, 3.4, 2d.8a, 2a.5, 2e.6, 2e.10, 2e.11 | Fällt unter die Vorgabe oben                          |
+| 9   | **14.1–14.9** Abschlusstest                                          | Zuletzt, auf echten Geräten, in den Sprachen von 15   |
 
 **Neue Knöpfe und Meldungen kommen seit 15.2 gleich in
 `src/i18n/de.ts`, nicht in die Komponente** (Aufbau in
 [Erledigt.md](Erledigt.md) unter 15.2) – und in `en.ts` und `es.ts`: Ein fehlender
-Schlüssel ist ein Typfehler, ein Satz ohne Prüfung durch Muttersprachler steht
-unter 15.6. Die Sprachen selbst (`15.1`) stehen
+Schlüssel ist ein Typfehler, und neue Sätze gehen wie in 15.6 durch die
+maschinelle Mehrfachprüfung. Die Sprachen selbst (`15.1`) stehen
 hinter den restlichen deutschen Funktionen: Wer vorher übersetzt, übersetzt
 alles noch einmal, was 9.2a hinzufügt.
 
@@ -90,7 +92,7 @@ Lizenzfrage), dazu alles unter „Entscheidungen".
 - [!] **D-05 Parkplätze ohne Koordinaten.** Empfehlung: als „Position ungenau" kennzeichnen und nur in der Liste führen, nicht auf den Stadtteil-Mittelpunkt setzen. Faktisch gelöst – alle 18.072 Standorte haben Koordinaten.
 - [!] **D-07 Importgrenze senken? (= 2e.5)** `MIN_POPULATION` in `scripts/import/german-cities.mts`. Die Stufe „ab 50.000" ist fertig (195 Gemeinden); die nächstgrößere offene wäre Cuxhaven mit 49.697. Nachgezählt am 2026-10-20: ab 40.000 sind es 285 Gemeinden, ab 20.000 706, ab 10.000 1.598, ab 5.000 2.943. Beide Importwege erzeugen seit 2e.7 richtige Daten; der einzige Einwand ist die Last auf Overpass (siehe 2e.11). Ein Versuch wurde am 2026-10-10 zurückgenommen – 473 Gemeinden wieder entfernt, Grund seit 2e.7 behoben.
 - [!] **10.2a Betreiberangaben für das Impressum.** `WHEELEE_OPERATOR_NAME`, `_ADDRESS`, `_EMAIL` in die `.env` auf dem NAS, Vorlage [deploy/env.beispiel](deploy/env.beispiel). Gebraucht werden Name, ladungsfähige Anschrift, Kontaktadresse. **Erst mit 12.5a zusammen ist die Pflicht erfüllt** – einzeln keines von beiden.
-- [!] **10.2b Rechtstexte fachlich ansehen lassen.** Ob die Rechtsgrundlagen und die Einstufung nach § 5 DDG tragen, kann ich nicht beurteilen.
+- [!] **10.2b Rechtstexte fachlich ansehen lassen.** Ob die Rechtsgrundlagen und die Einstufung nach § 5 DDG tragen, kann ich nicht beurteilen. Dazu die Einstufung der Browser-Speicher nach § 25 TDDDG (Fragen in `Erledigt.md`, 10.11).
 - [!] **1.7 Commits und Branch-Strategie** – blockiert: `git` ist auf diesem Rechner nicht im PATH.
 - [!] **11.1 Anmeldung ohne Passwort** (Magic Link oder Passkey) und „Passwort vergessen". Gebaut ist E-Mail und Passwort (scrypt); beides setzt einen Mailversand voraus, über den noch nicht entschieden ist – siehe [wheelee-infrastruktur.md](wheelee-infrastruktur.md) Abschnitt 7.
 
@@ -133,8 +135,16 @@ Lizenzfrage), dazu alles unter „Entscheidungen".
 
 ## 10. Datenschutz und Recht
 
-- [ ] 10.8 **Datenschutz über die gesamte Seite prüfen** (aufgenommen 2026-10-23). Seit der Erklärung vom 2026-10-19 sind Speicherungen und Abrufe dazugekommen: Sprachwahl (Browser und Konto), Favoriten, Bewertungen und Gewichtung (11.6), Vorab-Laden einer Stadt (16.1), Konto-Export und -Löschung (11.7), Protokoll (12.6). Zu tun: jede Seite, jeden Endpunkt und jeden Browser-Speicher (`localStorage`, Cookies, Service-Worker-Cache) gegen [src/app/datenschutz/page.tsx](src/app/datenschutz/page.tsx) halten und aus dem Code belegen, **was gespeichert, übertragen und wann gelöscht wird**; Abweichungen im Text nachführen, nicht im Code verstecken. Dazu die Frage, in welcher Sprache die Erklärung erscheint (Ausnahmeliste aus D-08, siehe 15.6 und 10.2b). Der Test `e2e/datenschutz.spec.ts` bleibt die Gegenprobe zu den Aussagen.
-- [ ] 10.9 **IT-Sicherheit über die gesamte Seite prüfen** (aufgenommen 2026-10-23). Eine zweite Prüfung nach der vom 2026-10-17 (Ergebnisse stehen in [Erledigt.md](Erledigt.md) unter 10.6/10.7), weil seitdem Konto-Löschung, Passwort ändern, Favoriten, Sprachwahl am Konto, Nonce-CSP und der Offline-Speicher dazugekommen sind. Zu tun: **jede** Route unter `src/app/api/` auf Zugangsprüfung, Drosselung, Eingabeprüfung und Protokollinhalt durchgehen (eine Tabelle in `Erledigt.md`, damit die nächste Prüfung nicht bei null anfängt); Kopfzeilen und Nonce im Produktionsbau messen; `npm audit` (hängt an 1.8); Container (Benutzer, Volume-Rechte), `.env`, Sicherung der SQLite-Datei. **Ergebnis ist eine Befundliste, keine Behauptung „sicher"** – eine unabhängige Prüfung ersetzt es nicht, analog zu 10.2b.
+- [!] 10.12 **Weiterleitungsserver und Sicherung klären** (aufgenommen 2026-10-24, aus 10.8/10.9). Braucht Torsten: (1) Führt der Nginx Proxy Manager auf dem Strato-VPS Zugriffsprotokolle mit IP, wie lange, und gibt es einen Auftragsverarbeitungsvertrag mit Strato? (2) Wie lange hält das NAS-Backup die SQLite-Datei – bis dahin steht ein gelöschtes Konto noch in Sicherungen. (3) Ist die Sicherung der laufenden Datei konsistent (WAL)? Ergebnis gehört in Abschnitt 9/10 der Datenschutzerklärung und zu 10.2b.
+- [ ] 10.15 **Konto-Schutz nachziehen – Entscheidung nötig** (aufgenommen 2026-10-24, aus 10.9/10.10). (a) `DELETE /api/account` lässt den **letzten aktiven Admin** sich selbst löschen (`account/route.ts`, `deleteAccount`); sollte wie `setRole` mit 409 verweigern. (b) Einladung ohne Rollenangabe ergibt `admin` (`admin/invitations/route.ts:45`); Vorschlag: `user` als Standard – ändert, was die Verwaltungsoberfläche sendet, daher vorher prüfen. (c) Anmeldedrosselung ist je Herkunft+Adresse; verteiltes Durchprobieren eines Kontos wird nicht gebremst. Eine zusätzliche Grenze je Adresse allein (z. B. 100/h) bremst, sperrt aber auch die Besitzerin aus – **Entscheidung Torsten**.
+
+## 18. Administration und Einladungen
+
+**Höchste Priorität (Vorgabe 2026-10-24).** Heute ist Administrator, wer in `ADMIN_EMAILS` steht (17.0 in `Erledigt.md`); es gibt keine Verwaltung. Jede:r kann sich weiterhin selbst ein normales Konto anlegen (11.1/11.2) – das bleibt unverändert und wird nicht an eine Einladung gebunden.
+
+- [ ] 18.4 **Erste Einladung an Torsten.Schymocha@Gmail.com.** **Erst nach dem Deploy (12.5a) möglich:** Die Einladung entsteht in der Verwaltung der laufenden Seite, nicht lokal. Es wird ein Link erzeugt, den du an die Adresse weitergibst; die App sendet nichts.
+
+---
 
 ## 12. Qualität und Deployment
 
@@ -150,9 +160,7 @@ ohne Deutsch. **Wie übersetzt wird, ist als D-08 entschieden** (Dateien je
 Sprache, maschinell vorübersetzt, von Menschen geprüft, mit Ausnahmeliste) –
 Begründung in [Erledigt.md](Erledigt.md), ebenso die übrigen Erwägungen.
 
-- [~] 15.1 **Weitere Sprachen.** Englisch und Spanisch stehen (Aufbau und Gründe in [Erledigt.md](Erledigt.md) unter 15.1). Offen: Französisch, Italienisch, Polnisch, Niederländisch – je eine Datei `src/i18n/<code>.ts` plus ein Eintrag in `catalogs` und `LOCALES` (`src/i18n/index.ts`). Polnisch hat drei Zahlformen; `t` kennt nur Einzahl/Mehrzahl und muss dort erweitert werden (siehe 15.2).
-  - [ ] **Eine Frage dazu bleibt offen und gehört dir:** Für Menschen, die **in** Deutschland leben und besser eine andere Sprache sprechen, wären Türkisch, Russisch und Arabisch die größeren Gruppen – eine andere Zielgruppe als die EU-Reisenden. Arabisch bringt zusätzlich Rechts-nach-links-Layout mit, und das ist Umbau an jeder Ansicht, nicht eine weitere Datei.
-- [!] 15.6 **Übersetzungen prüfen lassen – und zwei Texte freigeben.** Englisch und Spanisch sind maschinell vorübersetzt; die App sagt das unter der Sprachwahl. Gebraucht: je Sprache eine Muttersprachlerin oder ein Muttersprachler, der `src/i18n/<code>.ts` durchsieht (D-08). **Zwei Texte brauchen eine eigene Entscheidung von dir:** `disclaimer.germanOnly` und `legal.germanOnly` – kurze Hinweise in der Sprache der Oberfläche, dass Haftungshinweis, Impressum und Datenschutzerklärung deutsch bleiben und dass vor Ort die Beschilderung gilt. Und die Frage, ob der **Haftungshinweis selbst** eine wörtliche, von einem Menschen freigegebene Fassung je Sprache bekommen soll (er ist sicherheitsrelevant; jetzt steht er nur deutsch da).
+- [~] 15.1 **Weitere Sprachen – zurückgestellt (Torsten, 2026-10-24: „erstmal nicht").** Französisch, Italienisch, Polnisch, Niederländisch, Türkisch, Russisch, Arabisch; Aufbau und Gründe in [Erledigt.md](Erledigt.md) unter 15.1 und 15.6.
 
 ## 16. Eine Stadt vorab herunterladen
 

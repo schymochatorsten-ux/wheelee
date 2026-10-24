@@ -91,7 +91,19 @@ export default async function RootLayout({
           gebaut und gemessen, es ändert nichts (siehe 12.10). Er bleibt, weil
           er sagt, wohin dieses Skript gehört.
         */}
-        <script nonce={nonce} dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+        {/*
+          `suppressHydrationWarning` am Skript selbst (ToDo 15.8): Der Browser
+          versteckt das `nonce`-Attribut nach dem Parsen („nonce hiding“), im
+          DOM steht dann `nonce=""`, und React meldet im Dev-Server den
+          Unterschied zum Server-HTML. Das Attribut am `html` reicht dafür
+          nicht, es gilt nur für das eigene Element. Die Nonce selbst und die
+          Richtlinie bleiben unverändert.
+        */}
+        <script
+          nonce={nonce}
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{ __html: themeInitScript }}
+        />
       </head>
       {/*
         Der Rahmen hält die Bildschirmhöhe, damit der Offline-Hinweis die

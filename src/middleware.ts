@@ -1,5 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { contentSecurityPolicy } from "@/lib/csp";
+import { judgeWritingRequest } from "@/lib/request-origin";
 
 /**
  * Inhaltsrichtlinie mit Nonce je Anfrage (ToDo 10.7).
@@ -20,6 +21,23 @@ import { contentSecurityPolicy } from "@/lib/csp";
  * vorab erzeugt. Das betrifft hier alle Seiten.
  */
 export function middleware(request: NextRequest) {
+  /*
+   * Schreibende Aufrufe der Schnittstelle (ToDo 10.13). Die Antwort nennt nur
+   * den Grund in einem Wort – keine Hosts, keine Kopfzeilenwerte.
+   */
+  if (request.nextUrl.pathname.startsWith("/api/")) {
+    const verdict = judgeWritingRequest(request.method, request.headers);
+    if (verdict === "foreign-origin") {
+      return NextResponse.json({ error: "forbidden" }, { status: 403 });
+    }
+    if (verdict === "payload-too-large") {
+      return NextResponse.json({ error: "payload_too_large" }, { status: 413 });
+    }
+    if (verdict === "unsupported-media-type") {
+      return NextResponse.json({ error: "unsupported_media_type" }, { status: 415 });
+    }
+  }
+
   const nonce = btoa(crypto.randomUUID());
   const policy = contentSecurityPolicy(nonce, process.env.NODE_ENV === "development");
 

@@ -44,7 +44,7 @@ export default function Datenschutz() {
   const betreiber = operator();
 
   return (
-    <LegalPage title="Datenschutzerklärung" updated="2026-10-23">
+    <LegalPage title="Datenschutzerklärung" updated="2026-10-24">
       <section>
         <p className="rounded-xl border border-neutral-200 bg-neutral-50 p-3 dark:border-neutral-800 dark:bg-neutral-900">
           <strong>Das Wichtigste zuerst:</strong> Dein Standort verlässt dein Gerät nicht. Er wird
@@ -124,7 +124,10 @@ export default function Datenschutz() {
         </p>
         <p>
           Die <em>Ortssuche</em> (Nominatim) fragt dagegen <strong>unser Server</strong> für dich,
-          nicht dein Browser. Deine IP-Adresse erreicht diesen Dienst dadurch nicht.
+          nicht dein Browser. Deine IP-Adresse erreicht diesen Dienst dadurch nicht; dorthin gehen
+          allerdings der <strong>Suchbegriff</strong>, den du eingibst, und der oben genannte
+          gerundete Bezugspunkt. Unser Server schreibt beides weder in die Datenbank noch ins
+          Protokoll.
         </p>
       </section>
 
@@ -132,7 +135,8 @@ export default function Datenschutz() {
         <h2>4. Was im Browser gespeichert wird</h2>
         <p>
           Die folgenden Angaben liegen im lokalen Speicher deines Browsers. Sie werden{" "}
-          <strong>nicht übertragen</strong> und verschwinden, wenn du die Browserdaten löschst:
+          <strong>nicht von selbst übertragen</strong> (zwei Ausnahmen stehen jeweils dabei) und
+          verschwinden, wenn du die Browserdaten löschst:
         </p>
         <ul className="mt-2">
           <li>
@@ -151,7 +155,13 @@ export default function Datenschutz() {
           </li>
           <li>
             <code>wheelee-geraet</code> – eine Zufallszahl ohne Bezug zu dir oder deinem Gerät. Sie
-            dient allein dazu, massenhaft abgeschickte Rückmeldungen zu bremsen.
+            dient allein dazu, massenhaft abgeschickte Rückmeldungen zu bremsen. <strong>Beim
+            Abschicken einer Rückmeldung wird sie mitgesendet</strong> und dort nur als gekürzter
+            Hash bei der Meldung gespeichert (siehe Abschnitt 8).
+          </li>
+          <li>
+            <code>wheelee-language</code> und <code>wheelee-maps-app</code> werden mit deinem Konto
+            abgeglichen, <strong>wenn du angemeldet bist</strong> (siehe Abschnitt 6).
           </li>
         </ul>
         <p className="mt-2">
@@ -177,17 +187,26 @@ export default function Datenschutz() {
           die Sitzung auch auf dem Server gelöscht, nicht nur das Cookie entfernt.
         </p>
         <p>
-          <strong>Beim Wählen einer Sprache</strong> in den Einstellungen: <code>wheelee-lang</code>.
+          <strong>Beim Wählen einer Sprache</strong> in den Einstellungen – oder nach dem Anmelden,
+          wenn an deinem Konto eine früher gewählte Sprache steht, die von der angezeigten
+          abweicht: <code>wheelee-lang</code>.
           Es enthält nur den Sprachcode (zum Beispiel <code>de</code>), läuft nach einem Jahr ab und
           wird gebraucht, weil der Server die Sprache schon beim ersten Aufbau der Seite kennen muss
           – der lokale Speicher ist für ihn unsichtbar. Es dient nicht der Wiedererkennung. Ohne
-          deine Wahl wird es nicht gesetzt; die Sprache richtet sich dann nach der Spracheinstellung
+          eine solche Wahl wird es nicht gesetzt; die Sprache richtet sich dann nach der Spracheinstellung
           deines Browsers, die dieser bei jedem Seitenaufruf ohnehin mitschickt.
         </p>
         <p>
           Wer die App nur benutzt, bekommt kein Cookie. Ein Einwilligungsbanner ist deshalb nicht
           nötig: Beide Cookies sind für den von dir gewünschten Dienst unbedingt erforderlich (§ 25
           Abs. 2 Nr. 2 TDDDG).
+        </p>
+        <p>
+          Dieselbe Vorschrift betrifft auch den lokalen Speicher aus Abschnitt 4. Dort wird{" "}
+          <strong>nichts angelegt, bevor du etwas tust</strong>: Darstellung oder Karten-App
+          wählen, ein Ziel suchen, eine Sprache wählen, eine Rückmeldung abschicken. Die
+          Offline-Kopien im Zwischenspeicher dagegen legt die App beim Aufruf an, damit sie ohne
+          Netz nicht leer bleibt.
         </p>
       </section>
 
@@ -205,6 +224,17 @@ export default function Datenschutz() {
           <strong>die gewählte Sprache</strong> – damit sie auch auf einem zweiten Gerät gelten. Ohne
           Konto bleiben diese Wahlen allein im Browser. Rechtsgrundlage ist Art. 6
           Abs. 1 lit. b DSGVO.
+        </p>
+        <p>
+          <strong>Verwaltung und Einladungen:</strong> Konten mit der Rolle Administrator:in sehen
+          in der Verwaltung die Liste aller Konten (E-Mail-Adresse, Rolle, Anlage, letzte
+          Anmeldung, ob gesperrt) sowie alle Rückmeldungen samt freiwilliger Antwortadresse. Sie
+          können Konten sperren oder löschen und Einladungen erzeugen. Eine Einladung speichert die
+          E-Mail-Adresse der eingeladenen Person, die vorgesehene Rolle, den Ablauf (sieben Tage)
+          und das Einladungstoken nur als Hash. Den Link sieht die einladende Person einmal und
+          gibt ihn selbst weiter; <strong>die App versendet keine E-Mails.</strong> Rechtsgrundlage
+          ist Art. 6 Abs. 1 lit. f DSGVO – der Schutz der Seite davor, dass sich Unbefugte
+          Verwaltungsrechte verschaffen.
         </p>
       </section>
 
@@ -246,6 +276,10 @@ export default function Datenschutz() {
           <li>der betroffene Parkplatz und die Stadt, falls die Meldung von dort ausging,</li>
           <li>die aufgerufene Adresse und die Kennung deines Browsers (für die Fehlersuche),</li>
           <li>
+            ein gekürzter Hash der Zufallszahl <code>wheelee-geraet</code> (siehe Abschnitt 4),
+            damit sich massenhafte Meldungen vom selben Gerät erkennen lassen,
+          </li>
+          <li>
             <strong>freiwillig</strong> eine E-Mail-Adresse für die Antwort – ohne sie ist keine
             Rückfrage möglich, die Meldung hilft aber trotzdem,
           </li>
@@ -276,6 +310,11 @@ export default function Datenschutz() {
           deiner Meldungen. Das Protokoll bleibt auf dem Server, geht an keinen anderen Dienst und
           wird fortlaufend überschrieben (höchstens 30 MB, danach fällt das Älteste weg).
         </p>
+        <p className="mt-2">
+          Das gilt für die App selbst. Zwischen deinem Gerät und der App steht ein
+          Weiterleitungsserver bei der Strato GmbH, der die verschlüsselte Verbindung entgegennimmt
+          und weiterreicht. Technisch bedingt sieht er deine IP-Adresse und den aufgerufenen Pfad.
+        </p>
       </section>
 
       <section>
@@ -305,6 +344,10 @@ export default function Datenschutz() {
           </li>
           <li>
             <strong>Sitzungen:</strong> mit dem Ablauf, spätestens 30 Tage nach der Anmeldung.
+          </li>
+          <li>
+            <strong>Einladungen:</strong> sieben Tage gültig; nach Einlösung, Rückzug oder Ablauf
+            noch 30 Tage in der Verwaltung sichtbar, dann samt E-Mail-Adresse gelöscht.
           </li>
           <li>
             <strong>Konten:</strong> bis zur Löschung durch dich (siehe nächster Abschnitt).

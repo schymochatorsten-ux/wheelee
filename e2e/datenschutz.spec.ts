@@ -74,3 +74,15 @@ test("fragt keine fremden Dienste und setzt keine Tracker", async ({ page, conte
   );
   expect(cookies).toEqual([]);
 });
+
+/*
+ * § 25 TDDDG erfasst nicht nur Cookies, sondern jedes Speichern auf dem Gerät
+ * (ToDo 10.11): Auch der lokale Speicher bleibt leer, bis jemand etwas tut.
+ * Der Service-Worker-Zwischenspeicher gehört nicht dazu – er wird nur im
+ * Produktivbetrieb angemeldet und ist in der Erklärung gesondert beschrieben.
+ */
+test("ohne Handlung legt die App nichts im lokalen Speicher ab", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.getByRole("tab").first()).toBeVisible();
+  expect(await page.evaluate(() => Object.keys(localStorage))).toEqual([]);
+});

@@ -2,10 +2,11 @@ import { NextResponse } from "next/server";
 import { castVote, ownVote, ratingSummary, withdrawVote } from "@/lib/db/ratings";
 import { spotById } from "@/lib/parking/spots";
 import { userFromRequest } from "@/lib/auth/session";
-import { allow, clientKey, LIMITS } from "@/lib/rate-limit";
+import { allow, clientKey, LIMITS, retryAfter } from "@/lib/rate-limit";
 import type { RatingVote } from "@/lib/types";
 import { withLogging } from "@/lib/log";
 import { t } from "@/i18n";
+import { readJson } from "@/lib/read-json";
 
 /**
  * Bewertungen zu einem Parkplatz (ToDos 8.2–8.5).
@@ -68,10 +69,10 @@ async function postHandler(request: Request, context: { params: Promise<{ id: st
    * allein nicht abfängt.
    */
   if (!allow(`rating:${user.id}`, LIMITS.rating)) {
-    return NextResponse.json({ error: t("api.tooManyRatings") }, { status: 429 });
+    return NextResponse.json({ error: t("api.tooManyRatings") }, { status: 429, headers: retryAfter(LIMITS.rating) });
   }
   if (!allow(`rating-ip:${clientKey(request)}`, LIMITS.ratingPerClient)) {
-    return NextResponse.json({ error: t("api.tooManyRatings") }, { status: 429 });
+    return NextResponse.json({ error: t("api.tooManyRatings") }, { status: 429, headers: retryAfter(LIMITS.ratingPerClient) });
   }
 
   if (!spotById(id)) {
@@ -80,7 +81,7 @@ async function postHandler(request: Request, context: { params: Promise<{ id: st
 
   let body: { vote?: unknown };
   try {
-    body = (await request.json()) as typeof body;
+    body = (await readJson(request)) as typeof body;
   } catch {
     return NextResponse.json({ error: t("api.invalidRequest") }, { status: 400 });
   }
@@ -112,10 +113,10 @@ async function deleteHandler(request: Request, context: { params: Promise<{ id: 
   }
 
   if (!allow(`rating:${user.id}`, LIMITS.rating)) {
-    return NextResponse.json({ error: t("api.tooManyRatings") }, { status: 429 });
+    return NextResponse.json({ error: t("api.tooManyRatings") }, { status: 429, headers: retryAfter(LIMITS.rating) });
   }
   if (!allow(`rating-ip:${clientKey(request)}`, LIMITS.ratingPerClient)) {
-    return NextResponse.json({ error: t("api.tooManyRatings") }, { status: 429 });
+    return NextResponse.json({ error: t("api.tooManyRatings") }, { status: 429, headers: retryAfter(LIMITS.ratingPerClient) });
   }
 
   withdrawVote(id, user.id);

@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { deleteSession, SESSION_COOKIE } from "@/lib/db/accounts";
-import { clearedSessionCookie } from "@/lib/auth/session";
+import { clearedSessionCookie, readCookie } from "@/lib/auth/session";
 import { withLogging } from "@/lib/log";
 
 /**
@@ -12,15 +12,10 @@ import { withLogging } from "@/lib/log";
  * benutzen. Abmelden soll heißen, dass diese Sitzung vorbei ist.
  */
 async function postHandler(request: Request) {
-  const cookie = request.headers
-    .get("cookie")
-    ?.split(";")
-    .map((part) => part.trim())
-    .find((part) => part.startsWith(`${SESSION_COOKIE}=`));
+  const token = readCookie(request, SESSION_COOKIE);
+  if (token) deleteSession(token);
 
-  if (cookie) deleteSession(decodeURIComponent(cookie.slice(SESSION_COOKIE.length + 1)));
-
-  const response = NextResponse.json({ ok: true });
+  const response = NextResponse.json({ ok: true }, { headers: { "Cache-Control": "no-store" } });
   response.cookies.set(clearedSessionCookie());
   return response;
 }

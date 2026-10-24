@@ -4,6 +4,7 @@ import { isFeedbackStatus, type FeedbackStatus } from "@/lib/feedback";
 import { userFromRequest } from "@/lib/auth/session";
 import { withLogging } from "@/lib/log";
 import { t } from "@/i18n";
+import { readJson } from "@/lib/read-json";
 
 /**
  * Eine Rückmeldung ändern oder löschen (ToDo 17.4).
@@ -34,13 +35,16 @@ async function check(
   return { id };
 }
 
+/** Obergrenze der Verwaltungsnotiz in Zeichen (ToDo 10.14); eine Rückmeldung selbst hat 2.000. */
+const MAX_NOTE_LENGTH = 2000;
+
 async function patchHandler(request: Request, context: { params: Promise<{ id: string }> }) {
   const result = await check(request, context);
   if (result instanceof NextResponse) return result;
 
   let body: { status?: unknown; note?: unknown };
   try {
-    body = (await request.json()) as typeof body;
+    body = (await readJson(request)) as typeof body;
   } catch {
     return NextResponse.json({ error: t("api.invalidRequest") }, { status: 400 });
   }
@@ -58,6 +62,9 @@ async function patchHandler(request: Request, context: { params: Promise<{ id: s
   // Beides zu unterscheiden ist nötig, damit ein Statuswechsel nicht
   // stillschweigend die Notiz mitnimmt.
   if (body.note !== undefined) {
+    if (typeof body.note === "string" && body.note.length > MAX_NOTE_LENGTH) {
+      return NextResponse.json({ error: t("api.invalidRequest") }, { status: 400 });
+    }
     changes.note = typeof body.note === "string" ? body.note : null;
   }
 

@@ -1,13 +1,14 @@
 import type { Messages } from "./index";
 
 /**
- * English labels (ToDo 15.1) – **machine pre-translation**, not yet reviewed by
- * native speakers (D-08, `Erledigt.md`; open as ToDo 15.6). Same keys as
+ * English labels (ToDo 15.1) – **machine translation**, checked several times by
+ * machine, not by native speakers (D-08 and 15.6 in `Erledigt.md`). Same keys as
  * `de.ts`; the type enforces that none is missing, `i18n.test.ts` checks that
  * placeholders match.
  *
- * Not here: liability notice, imprint and privacy policy stay German (exception
- * list in D-08), and so do street names and the data itself.
+ * Not here: imprint and privacy policy stay German (exception list in D-08),
+ * and so do street names and the data itself. The liability notice is here
+ * (`disclaimer.*`), machine-translated since 2026-10-24.
  *
  * Quotation marks are typographic (“…”) on purpose: ASCII quotes would end the
  * string.
@@ -124,7 +125,7 @@ export const en: Messages = {
     "Your browser’s language is suggested first. With an account, your choice applies on all devices.",
   "settings.languageChoose": "Choose language",
   "settings.languageUnreviewed":
-    "The translations are machine-prepared and have not yet been checked by native speakers.",
+    "The translations were produced by machine and checked several times by machine, not by native speakers. The German version is authoritative; on site, the signs and markings always apply.",
   "settings.mapsApp": "Maps app for navigation",
   "settings.mapsAppNote":
     "What “Start navigation” opens. Without a choice of your own this depends on the device – here that would be {detected}.",
@@ -469,6 +470,63 @@ export const en: Messages = {
 
   "legal.germanOnly":
     "The imprint and the privacy policy are available in German only, and the German text is the binding one.",
-  "disclaimer.germanOnly":
-    "The liability notice below is available in German only. On site, the signs and markings always take precedence over this app.",
+
+  "disclaimer.short":
+    "No guarantee of accuracy: a parking space may have been removed, moved or be occupied right now.",
+  "disclaimer.stand": "Data for this city as of: {date}.",
+  "disclaimer.heading": "Please read before you set off",
+  "disclaimer.body":
+    "The information comes from official lists and from OpenStreetMap and may be out of date. A parking space may have been removed, moved or be occupied right now, and a time restriction may have changed.",
+  "disclaimer.bodyStrong": "Do not rely on this app alone",
+  "disclaimer.bodyEnd": "– on site, the signs and markings apply.",
+  "disclaimer.feedback":
+    "If something is wrong, feedback helps more than anything else: feedback is the only source that notices such changes at all.",
+
+  // Einladung annehmen (ToDo 18.2)
+  "api.invitationInvalid": "The invitation is invalid, expired or already used.",
+  "api.tooManyInvitations": "Too many invitations in a short time. Please try again later.",
+  "invitation.title": "Accept invitation",
+  "invitation.intro": "You have been invited to wheelee. Choose a password to create your account.",
+  "invitation.password": "Password",
+  "invitation.submit": "Create account",
+  "invitation.missing": "This link does not contain an invitation.",
+  "invitation.failed": "That did not work. Please try again.",
+  "invitation.done": "Your account has been created and you are signed in.",
+  "invitation.toApp": "Go to the map",
+
+  // Benutzerverwaltung (ToDo 18.3)
+  "api.adminCannotChange": "That is not possible: at least one active admin account must remain, and you delete your own account in the account settings.",
+  "users.title": "Users and invitations",
+  "users.intro": "Admins manage accounts and invite other admins. The app does not send e-mails: you get a link that you pass on yourself.",
+  "users.inviteEmail": "E-mail address for the invitation",
+  "users.inviteRole": "Role",
+  "users.role.admin": "Admin",
+  "users.role.user": "User",
+  "users.inviteSubmit": "Create invitation link",
+  "users.inviteCreated": "Invitation link for {email}. It is shown only now and is valid for seven days – pass it on yourself.",
+  "users.copy": "Copy link",
+  "users.copied": "Copied",
+  "users.accounts": "Accounts",
+  "users.invitations": "Invitations",
+  "users.you": "you",
+  "users.disabled": "blocked",
+  "users.lastLogin": "Last sign-in: {date}",
+  "users.never": "never signed in",
+  "users.search": "Search accounts (part of the email address)",
+  "users.count": "{shown} of {total} accounts – admins and blocked accounts first",
+  "users.noMatch": "No account matches the search.",
+  "users.more": "Show more accounts",
+  "users.makeAdmin": "Make admin",
+  "users.makeUser": "Remove admin rights",
+  "users.disable": "Block",
+  "users.enable": "Unblock",
+  "users.delete": "Delete",
+  "users.deleteConfirm": "Permanently delete the account {email} with its ratings and favourites?",
+  "users.state.open": "open",
+  "users.state.used": "redeemed",
+  "users.state.expired": "expired",
+  "users.state.revoked": "revoked",
+  "users.expires": "valid until {date}",
+  "users.revoke": "Revoke",
+  "users.failed": "That did not work.",
 };

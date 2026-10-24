@@ -122,6 +122,53 @@ test.describe("Sicherheits-Kopfzeilen", () => {
     expect(header["x-content-type-options"]).toBe("nosniff");
   });
 
+  test("schreibende Aufrufe von fremden Ursprüngen werden abgewiesen (ToDo 10.13)", async ({
+    request,
+  }) => {
+    const fremd = await request.post("/api/auth/logout", {
+      headers: { origin: "https://boese.example", "sec-fetch-site": "cross-site" },
+    });
+    expect(fremd.status()).toBe(403);
+    // Die Antwort verrät nichts über Hosts oder Aufbau.
+    expect(await fremd.json()).toEqual({ error: "forbidden" });
+
+    const nurOrigin = await request.post("/api/auth/logout", {
+      headers: { origin: "https://boese.example" },
+    });
+    expect(nurOrigin.status()).toBe(403);
+
+    const kein_json = await request.post("/api/feedback", {
+      headers: { "content-type": "text/plain" },
+      data: "kein json",
+    });
+    expect(kein_json.status()).toBe(415);
+
+    // Lesen bleibt von fremden Seiten aus möglich, und der eigene Ursprung
+    // wird nicht behindert.
+    const lesen = await request.get("/api/spots?lat=50.94&lng=6.96&limit=1", {
+      headers: { "sec-fetch-site": "cross-site" },
+    });
+    expect(lesen.status()).toBe(200);
+    const eigen = await request.post("/api/auth/logout", {
+      headers: { "sec-fetch-site": "same-origin" },
+    });
+    expect(eigen.status()).not.toBe(403);
+  });
+
+  test("zu große Rümpfe werden abgewiesen, ohne sie zu lesen (ToDo 10.14)", async ({ request }) => {
+    const gross = await request.post("/api/feedback", {
+      headers: { "content-type": "application/json" },
+      data: JSON.stringify({ kind: "bug", message: "x".repeat(5 * 1024 * 1024) }),
+    });
+    expect(gross.status()).toBe(413);
+    expect(await gross.json()).toEqual({ error: "payload_too_large" });
+
+    // Zu lange Suchanfrage geht nicht an den Dienst weiter.
+    const lang = await request.get(`/api/geocode?q=${"a".repeat(300)}`);
+    expect(lang.status()).toBe(200);
+    expect(await lang.json()).toEqual({ places: [] });
+  });
+
   test("auch die Schnittstellen sind abgedeckt", async ({ request }) => {
     // Die Regel gilt für alle Pfade, nicht nur für die Startseite. Eine
     // Antwort der Schnittstelle ohne `nosniff` wäre eine Lücke an der Stelle,

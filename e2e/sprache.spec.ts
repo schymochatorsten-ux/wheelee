@@ -50,7 +50,7 @@ test.describe("Englisch", () => {
     await context.close();
   });
 
-  test("Haftungshinweis bleibt deutsch, davor steht ein Hinweis in der Sprache der Oberfläche", async ({
+  test("Haftungshinweis steht in der Sprache der Oberfläche, nicht mehr deutsch", async ({
     browser,
     baseURL,
   }) => {
@@ -58,8 +58,9 @@ test.describe("Englisch", () => {
     const page = await context.newPage();
     await page.goto("/");
     await page.getByRole("tab", { name: "Settings" }).click();
-    await expect(page.getByText("available in German only. On site, the signs")).toBeVisible();
-    await expect(page.getByText("Bitte vor der Fahrt lesen")).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Please read before you set off" })).toBeVisible();
+    await expect(page.getByText("on site, the signs and markings apply")).toBeVisible();
+    await expect(page.getByText("Bitte vor der Fahrt lesen")).toHaveCount(0);
     await context.close();
   });
 
@@ -125,8 +126,9 @@ test.describe("Spanisch", () => {
     await page.getByRole("tab", { name: "Ajustes" }).click();
     await expect(page.getByRole("heading", { name: "Idioma", level: 2 })).toBeVisible();
     await expect(page.getByRole("radio", { name: "Español" })).toBeChecked();
-    await expect(page.getByText("solo existe en alemán. In situ")).toBeVisible();
-    await expect(page.getByText("Bitte vor der Fahrt lesen")).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Léelo antes de salir" })).toBeVisible();
+    await expect(page.getByText("en el lugar rige la señalización")).toBeVisible();
+    await expect(page.getByText("Bitte vor der Fahrt lesen")).toHaveCount(0);
 
     await page.goto("/impressum");
     await expect(page.getByRole("link", { name: /Volver al mapa/u })).toBeVisible();

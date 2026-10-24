@@ -66,7 +66,11 @@ const CLOSED_STATUSES = ["umgesetzt", "verworfen"] as const;
  */
 export const CONTACT_RETENTION_DAYS = 730;
 
+/** Wie lange eine abgeschlossene Einladung (benutzt, abgelaufen, zurückgezogen) noch steht (ToDo 18.3). */
+export const INVITATION_RETENTION_DAYS = 30;
+
 export interface PurgeResult {
+  invitations: number;
   feedback: number;
   sessions: number;
   /** Offene Meldungen, deren Antwortadresse entfernt wurde. */
@@ -117,7 +121,20 @@ export function purgeExpired(nowMs: number = Date.now()): PurgeResult {
 
   const sessions = db().prepare("DELETE FROM session WHERE expires_at <= ?").run(now());
 
+  /*
+   * Einladungen (18.3): Eine Einladung trägt eine fremde Adresse. Sie wird nach
+   * Ablauf, Einlösung oder Rückzug noch dreißig Tage gezeigt – so lange, dass
+   * die Verwaltung erklärt, was aus ihr wurde – und dann samt Adresse gelöscht.
+   */
+  const invitationCutoff = new Date(
+    nowMs - INVITATION_RETENTION_DAYS * 24 * 60 * 60 * 1000,
+  ).toISOString();
+  const invitations = db()
+    .prepare("DELETE FROM invitation WHERE COALESCE(used_at, revoked_at, expires_at) < ?")
+    .run(invitationCutoff);
+
   return {
+    invitations: Number(invitations.changes),
     feedback: Number(feedback.changes),
     contacts: Number(contacts.changes),
     sessions: Number(sessions.changes),

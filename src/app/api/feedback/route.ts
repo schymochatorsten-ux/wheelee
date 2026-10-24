@@ -5,6 +5,7 @@ import { userFromRequest } from "@/lib/auth/session";
 import { allow, clientKey, LIMITS } from "@/lib/rate-limit";
 import { withLogging } from "@/lib/log";
 import { t } from "@/i18n";
+import { readJson } from "@/lib/read-json";
 
 /**
  * Eine Rückmeldung entgegennehmen (ToDo 17.2).
@@ -21,7 +22,7 @@ import { t } from "@/i18n";
 async function postHandler(request: Request) {
   let body: Record<string, unknown>;
   try {
-    body = (await request.json()) as Record<string, unknown>;
+    body = (await readJson(request)) as Record<string, unknown>;
   } catch {
     return NextResponse.json({ error: t("api.invalidRequest") }, { status: 400 });
   }

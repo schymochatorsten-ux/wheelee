@@ -4,6 +4,7 @@ import { userFromRequest } from "@/lib/auth/session";
 import { isMapsPreference } from "@/lib/maps-preference";
 import { withLogging } from "@/lib/log";
 import { t } from "@/i18n";
+import { readJson } from "@/lib/read-json";
 
 /**
  * Die bevorzugte Karten-App am Konto ablegen (ToDo 11.3a).
@@ -27,7 +28,7 @@ async function putHandler(request: Request) {
 
   let body: Record<string, unknown>;
   try {
-    body = (await request.json()) as Record<string, unknown>;
+    body = (await readJson(request)) as Record<string, unknown>;
   } catch {
     return NextResponse.json({ error: t("api.invalidRequest") }, { status: 400 });
   }

@@ -2,12 +2,13 @@ import { NextResponse } from "next/server";
 import { createAccount } from "@/lib/db/accounts";
 import { passwordProblem } from "@/lib/auth/password";
 import { looksLikeEmail, normalizeEmail } from "@/lib/auth/email";
-import { isAdminEmail, sessionCookie } from "@/lib/auth/session";
+import { isAdminAccount, sessionCookie } from "@/lib/auth/session";
 import { publicUser } from "@/lib/auth/user";
-import { allow, clientKey, LIMITS } from "@/lib/rate-limit";
+import { allow, clientKey, LIMITS, retryAfter } from "@/lib/rate-limit";
 import { createSession } from "@/lib/db/accounts";
 import { withLogging } from "@/lib/log";
 import { t } from "@/i18n";
+import { readJson } from "@/lib/read-json";
 
 /**
  * Konto anlegen (ToDo 11.1).
@@ -24,12 +25,12 @@ import { t } from "@/i18n";
  */
 async function postHandler(request: Request) {
   if (!allow(`register:${clientKey(request)}`, LIMITS.register)) {
-    return NextResponse.json({ error: t("api.tooManyAttempts") }, { status: 429 });
+    return NextResponse.json({ error: t("api.tooManyAttempts") }, { status: 429, headers: retryAfter(LIMITS.register) });
   }
 
   let body: { email?: unknown; password?: unknown };
   try {
-    body = (await request.json()) as typeof body;
+    body = (await readJson(request)) as typeof body;
   } catch {
     return NextResponse.json({ error: t("api.invalidRequest") }, { status: 400 });
   }
@@ -71,11 +72,11 @@ async function postHandler(request: Request) {
     user: publicUser({
       id: account.id,
       email: account.email,
-      isAdmin: isAdminEmail(account.email),
+      isAdmin: isAdminAccount(account),
       mapsPreference: null,
       language: null,
     }),
-  });
+  }, { headers: { "Cache-Control": "no-store" } });
   response.cookies.set(sessionCookie(createSession(account.id)));
   return response;
 }

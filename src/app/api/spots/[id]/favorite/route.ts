@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { addFavorite, isFavorite, removeFavorite } from "@/lib/db/favorites";
 import { spotById } from "@/lib/parking/spots";
 import { userFromRequest } from "@/lib/auth/session";
-import { allow, clientKey, LIMITS } from "@/lib/rate-limit";
+import { allow, clientKey, LIMITS, retryAfter } from "@/lib/rate-limit";
 import { withLogging } from "@/lib/log";
 import { t } from "@/i18n";
 
@@ -32,7 +32,7 @@ function throttled(request: Request, accountId: string) {
     !allow(`favorite:${accountId}`, LIMITS.favorite) ||
     !allow(`favorite-ip:${clientKey(request)}`, LIMITS.favoritePerClient);
   return tooMany
-    ? NextResponse.json({ error: t("api.tooManyFavorites") }, { status: 429 })
+    ? NextResponse.json({ error: t("api.tooManyFavorites") }, { status: 429, headers: retryAfter(LIMITS.favorite) })
     : null;
 }
 

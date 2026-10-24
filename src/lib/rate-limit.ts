@@ -94,6 +94,10 @@ export const LIMITS = {
   register: { max: 5, windowMs: 60 * 60_000 },
   /** Passwort ändern: je Konto, denn das alte Passwort wird hier erneut abgefragt (ToDo 10.7). */
   passwordChange: { max: 5, windowMs: 10 * 60_000 },
+  /** Einladung einlösen: je Herkunft, denn das Token ist das Geheimnis und darf nicht erraten werden (ToDo 18.2). */
+  invitationRedeem: { max: 10, windowMs: 10 * 60_000 },
+  /** Einladungen erzeugen: je Admin-Konto. */
+  invitationCreate: { max: 20, windowMs: 60 * 60_000 },
 
   /*
    * Bewertungen (ToDo 8.4). Großzügiger als die übrigen Grenzen, weil hier ein
@@ -123,15 +127,45 @@ export const LIMITS = {
    */
   favorite: { max: 60, windowMs: 10 * 60_000 },
   favoritePerClient: { max: 240, windowMs: 10 * 60_000 },
+
+  /*
+   * Ortssuche (10.9): Der Endpunkt reicht Anfragen an Nominatim weiter, dessen
+   * Bedingungen höchstens eine Anfrage je Sekunde **für alle zusammen**
+   * erlauben. Ohne Grenze konnte jede:r unangemeldet den Server bei Nominatim
+   * sperren lassen. Je Herkunft großzügig (Vorschläge beim Tippen), insgesamt
+   * knapp unter einer Anfrage je Sekunde.
+   */
+  geocode: { max: 40, windowMs: 60_000 },
+  geocodeAll: { max: 50, windowMs: 60_000 },
 } as const;
+
+/**
+ * `Retry-After` für eine 429-Antwort (ToDo 10.14).
+ *
+ * Es ist die **Länge des Fensters**, also die obere Grenze: Nach dieser Zeit
+ * ist der älteste Versuch sicher abgelaufen. Genauer wäre die Zeit bis zum
+ * ältesten Versuch im Fenster, würde aber verraten, wie viele Versuche schon
+ * gezählt sind – dieselbe Überlegung wie bei den Rückmeldungen (17.2).
+ */
+export function retryAfter(limit: Limit): { "Retry-After": string } {
+  return { "Retry-After": String(Math.ceil(limit.windowMs / 1000)) };
+}
 
 /**
  * Welche Adresse die Anfrage hat.
  *
  * Hinter dem Nginx Proxy Manager steht die echte Adresse in
  * `X-Forwarded-For`; die Verbindung selbst kommt immer aus dem
- * Tailscale-Tunnel und wäre für alle gleich. Genommen wird der **erste**
- * Eintrag, denn die Kette wird von jedem Proxy hinten angehängt.
+ * Tailscale-Tunnel und wäre für alle gleich. Genommen wird der **letzte**
+ * Eintrag – der, den der eigene Proxy angehängt hat. Der erste stammt, wenn
+ * der Proxy anhängt statt zu ersetzen, vom Absender selbst: Ein Angreifer
+ * schickt bei jeder Anfrage eine andere Adresse mit und umgeht damit jede
+ * Drosselung, auch die der Anmeldung (10.9). Ersetzt der Proxy die Kette, gibt
+ * es nur einen Eintrag, und beides ist dasselbe.
+ *
+ * **Nicht belegt:** Ob der Nginx Proxy Manager anhängt oder ersetzt, ist am NAS
+ * nicht zu sehen (kein Zugang). Der letzte Eintrag ist in beiden Fällen
+ * richtig, deshalb wurde er gewählt, statt es zu raten.
  *
  * Die Adresse wird **nur hier benutzt und nirgends gespeichert** – sie steht
  * in keinem Protokoll und in keiner Tabelle (siehe 17.1).
@@ -139,8 +173,8 @@ export const LIMITS = {
 export function clientKey(request: Request): string {
   const forwarded = request.headers.get("x-forwarded-for");
   if (forwarded) {
-    const first = forwarded.split(",")[0]?.trim();
-    if (first) return first;
+    const last = forwarded.split(",").at(-1)?.trim();
+    if (last) return last;
   }
   return request.headers.get("x-real-ip")?.trim() || "unbekannt";
 }

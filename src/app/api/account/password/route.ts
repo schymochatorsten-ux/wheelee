@@ -2,9 +2,10 @@ import { NextResponse } from "next/server";
 import { changePassword } from "@/lib/db/accounts";
 import { sessionTokenFromRequest, userFromRequest } from "@/lib/auth/session";
 import { passwordProblem } from "@/lib/auth/password-rules";
-import { allow, clientKey, LIMITS } from "@/lib/rate-limit";
+import { allow, clientKey, LIMITS, retryAfter } from "@/lib/rate-limit";
 import { withLogging } from "@/lib/log";
 import { t } from "@/i18n";
+import { readJson } from "@/lib/read-json";
 
 /**
  * Passwort ändern und alle übrigen Sitzungen verwerfen (ToDo 10.7).
@@ -23,7 +24,7 @@ async function putHandler(request: Request) {
 
   let body: { oldPassword?: unknown; newPassword?: unknown };
   try {
-    body = (await request.json()) as typeof body;
+    body = (await readJson(request)) as typeof body;
   } catch {
     return NextResponse.json({ error: t("api.invalidRequest") }, { status: 400 });
   }
@@ -32,7 +33,7 @@ async function putHandler(request: Request) {
   const newPassword = typeof body.newPassword === "string" ? body.newPassword : "";
 
   if (!allow(`password:${clientKey(request)}:${user.id}`, LIMITS.passwordChange)) {
-    return NextResponse.json({ error: t("api.tooManyPasswordChanges") }, { status: 429 });
+    return NextResponse.json({ error: t("api.tooManyPasswordChanges") }, { status: 429, headers: retryAfter(LIMITS.passwordChange) });
   }
 
   if (oldPassword.length === 0) {

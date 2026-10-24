@@ -28,6 +28,7 @@ import { SpotDetails } from "./SpotDetails";
 import { SpotList } from "./SpotList";
 import { FeedbackAdmin } from "./FeedbackAdmin";
 import { ReportedSpots } from "./ReportedSpots";
+import { AdminUsers } from "./AdminUsers";
 
 /**
  * Hält Karte, Liste und Detailansicht zusammen: Standort anfragen,
@@ -714,6 +715,7 @@ export function MapSection({
                 dieselbe Bewegung wie aus der Liste, samt Detailansicht und
                 Luftlinie. Die Meldung wird damit sofort nachprüfbar. */}
             <FeedbackAdmin onShowSpot={select} />
+            <AdminUsers />
           </div>
         ) : (
           <div className="h-full overflow-y-auto px-4 py-4">

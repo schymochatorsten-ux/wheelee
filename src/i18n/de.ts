@@ -3,8 +3,9 @@
  * weiteren Sprachen. Schlüssel: `<Bereich>.<Stelle>`, flach, damit sich jede
  * Beschriftung mit einer Suche finden lässt. `{name}` ist ein Platzhalter.
  *
- * Nicht hier: Haftungshinweis, Impressum und Datenschutzerklärung (Ausnahme
- * nach D-08) sowie die Daten selbst.
+ * Nicht hier: Impressum und Datenschutzerklärung (Ausnahme nach D-08) sowie
+ * die Daten selbst. Der Haftungshinweis steht hier (`disclaimer.*`; seit
+ * 2026-10-24 maschinell übersetzt, Erledigt.md 15.6).
  */
 export const de = {
   "theme.group": "Darstellung",
@@ -105,7 +106,7 @@ export const de = {
   "maps.osm.navigate": "Navigation: OpenStreetMap öffnen",
   "maps.here.navigate": "Navigation: HERE WeGo öffnen",
   "maps.waze.navigate": "Navigation: Waze öffnen",
-  "maps.geo.navigate": "Navigation: der Standard-Karten-App öffnen",
+  "maps.geo.navigate": "Navigation: die Standard-Karten-App öffnen",
   "maps.fallback.navigate": "Navigation: Karten-App öffnen",
   "maps.fallback.open": "In Karten-App öffnen",
   "maps.fallback.short": "Karten-App",
@@ -118,7 +119,7 @@ export const de = {
     "Vorgeschlagen wird die Sprache deines Browsers. Mit Konto gilt die Wahl auf allen Geräten.",
   "settings.languageChoose": "Sprache wählen",
   "settings.languageUnreviewed":
-    "Die Übersetzungen sind maschinell vorbereitet und noch nicht von Muttersprachler:innen geprüft.",
+    "Die Übersetzungen sind maschinell erstellt und maschinell mehrfach geprüft, nicht von Muttersprachler:innen. Maßgeblich ist die deutsche Fassung; vor Ort gilt immer die Beschilderung.",
   "settings.mapsApp": "Karten-App für die Navigation",
   "settings.mapsAppNote":
     "Womit „Navigation starten“ geöffnet wird. Ohne eigene Wahl richtet sich das nach dem Gerät – hier wäre das {detected}.",
@@ -176,7 +177,7 @@ export const de = {
   "account.cancel": "Abbrechen",
   "account.export": "Meine Daten herunterladen",
   "account.exportNote":
-    "Eine JSON-Datei mit allem, was zu deinem Konto gespeichert ist: E-Mail-Adresse, Anlagedatum, Bewertungen, gespeicherte Parkplätze, eigene Rückmeldungen und Karten-App-Wahl.",
+    "Eine JSON-Datei mit allem, was zu deinem Konto gespeichert ist: E-Mail-Adresse, Anlagedatum, Bewertungen, gespeicherte Parkplätze, eigene Rückmeldungen sowie Karten-App- und Sprachwahl.",
   "myRatings.open": "Meine Bewertungen",
   "myRatings.close": "Meine Bewertungen ausblenden",
   "myRatings.intro":
@@ -264,7 +265,7 @@ export const de = {
     "Zum Beispiel: Der Parkplatz Bahnhofstraße 4 ist aufgehoben, dort ist jetzt eine Ladesäule.",
   "feedback.charsLeft": "Noch {count} Zeichen möglich.",
   "feedback.optional": "(freiwillig)",
-  "feedback.emailPlaceholder": "name@beispiel.de",
+  "feedback.emailPlaceholder": "name@example.com",
   "feedback.fromAccount": "Aus deinem Konto übernommen.",
   "feedback.sending": "Wird gesendet …",
   "feedback.submit": "Absenden",
@@ -442,8 +443,19 @@ export const de = {
   // deutsch bleibt. Hier der Sinn, den jede Übersetzung treffen muss.
   "legal.germanOnly":
     "Impressum und Datenschutzerklärung gibt es nur auf Deutsch; maßgeblich ist die deutsche Fassung.",
-  "disclaimer.germanOnly":
-    "Der Haftungshinweis steht nur auf Deutsch. Vor Ort gilt immer die Beschilderung, nicht die App.",
+
+  // Haftungshinweis (DataDisclaimer). Sinn, den jede Übersetzung treffen muss:
+  // Die Daten können veraltet sein; vor Ort gilt die Beschilderung, nicht die App.
+  "disclaimer.short":
+    "Angaben ohne Gewähr: Ein Parkplatz kann aufgehoben, verlegt oder gerade belegt sein.",
+  "disclaimer.stand": "Stand der Daten für diese Stadt: {date}.",
+  "disclaimer.heading": "Bitte vor der Fahrt lesen",
+  "disclaimer.body":
+    "Die Angaben stammen aus amtlichen Listen und aus OpenStreetMap und können veraltet sein. Ein Parkplatz kann aufgehoben, verlegt oder gerade belegt sein, und eine Zeitbeschränkung kann sich geändert haben.",
+  "disclaimer.bodyStrong": "Verlass dich nicht allein auf diese App",
+  "disclaimer.bodyEnd": "– vor Ort gilt die Beschilderung.",
+  "disclaimer.feedback":
+    "Stimmt etwas nicht, hilft eine Rückmeldung mehr als alles andere: Rückmeldungen sind die einzige Quelle, die solche Änderungen überhaupt bemerkt.",
 
   "api.notSignedIn": "Nicht angemeldet.",
   "api.invalidRequest": "Ungültige Anfrage.",
@@ -474,4 +486,52 @@ export const de = {
     "Du hast die Höchstzahl gespeicherter Parkplätze erreicht. Entferne zuerst einen.",
   "api.tooManyRatings": "Zu viele Bewertungen in kurzer Zeit. Bitte etwas warten.",
   "api.unknownRating": "Unbekannte Bewertung.",
+
+  // Einladung annehmen (ToDo 18.2)
+  "api.invitationInvalid": "Die Einladung ist ungültig, abgelaufen oder schon benutzt.",
+  "api.tooManyInvitations": "Zu viele Einladungen in kurzer Zeit. Bitte später erneut probieren.",
+  "invitation.title": "Einladung annehmen",
+  "invitation.intro": "Du wurdest zu wheelee eingeladen. Vergib ein Passwort, um dein Konto anzulegen.",
+  "invitation.password": "Passwort",
+  "invitation.submit": "Konto anlegen",
+  "invitation.missing": "Dieser Link enthält keine Einladung.",
+  "invitation.failed": "Das hat nicht geklappt. Bitte erneut versuchen.",
+  "invitation.done": "Dein Konto ist angelegt, du bist angemeldet.",
+  "invitation.toApp": "Zur Karte",
+
+  // Benutzerverwaltung (ToDo 18.3)
+  "api.adminCannotChange": "Das geht nicht: Es muss mindestens ein aktives Admin-Konto bleiben, und das eigene Konto löschst du in den Kontoeinstellungen.",
+  "users.title": "Benutzer und Einladungen",
+  "users.intro": "Admins verwalten Konten und laden andere Admins ein. Die App versendet keine E-Mails: Du bekommst einen Link, den du selbst weitergibst.",
+  "users.inviteEmail": "E-Mail-Adresse der Einladung",
+  "users.inviteRole": "Rolle",
+  "users.role.admin": "Admin",
+  "users.role.user": "Nutzer",
+  "users.inviteSubmit": "Einladungslink erzeugen",
+  "users.inviteCreated": "Einladungslink für {email}. Er wird nur jetzt angezeigt und gilt sieben Tage – gib ihn selbst weiter.",
+  "users.copy": "Link kopieren",
+  "users.copied": "Kopiert",
+  "users.accounts": "Konten",
+  "users.invitations": "Einladungen",
+  "users.you": "du",
+  "users.disabled": "gesperrt",
+  "users.lastLogin": "Zuletzt angemeldet: {date}",
+  "users.never": "noch nie angemeldet",
+  "users.search": "Konten suchen (Teil der E-Mail-Adresse)",
+  "users.count": "{shown} von {total} Konten – Admins und gesperrte zuerst",
+  "users.noMatch": "Kein Konto passt zur Suche.",
+  "users.more": "Weitere Konten anzeigen",
+  "users.makeAdmin": "Zum Admin machen",
+  "users.makeUser": "Admin-Recht entziehen",
+  "users.disable": "Sperren",
+  "users.enable": "Entsperren",
+  "users.delete": "Löschen",
+  "users.deleteConfirm": "Konto {email} samt Bewertungen und Favoriten endgültig löschen?",
+  "users.state.open": "offen",
+  "users.state.used": "eingelöst",
+  "users.state.expired": "abgelaufen",
+  "users.state.revoked": "zurückgezogen",
+  "users.expires": "gültig bis {date}",
+  "users.revoke": "Zurückziehen",
+  "users.failed": "Das hat nicht geklappt.",
 } as const satisfies Record<string, string>;

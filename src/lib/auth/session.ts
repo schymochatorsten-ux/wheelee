@@ -1,5 +1,5 @@
 import { cookies } from "next/headers";
-import { accountForSession, SESSION_COOKIE, SESSION_MAX_AGE, type Account } from "../db/accounts";
+import { accountForSession, activeAdminCount, SESSION_COOKIE, SESSION_MAX_AGE, type Account } from "../db/accounts";
 import { normalizeEmail } from "./email";
 import { isLocale } from "../../i18n";
 import { isMapsPreference } from "../maps-preference";
@@ -42,10 +42,26 @@ export function isAdminEmail(email: string): boolean {
   return adminEmails().includes(normalizeEmail(email));
 }
 
+/**
+ * Ist dieses Konto Administrator? (ToDo 18.1)
+ *
+ * Maßgeblich ist die Rolle am Konto. `ADMIN_EMAILS` gilt nur noch als
+ * **Erstzugang**: solange kein aktives Admin-Konto in der Datenbank steht,
+ * sonst nicht. Sonst könnte jede Adresse in der Umgebungsdatei die Verwaltung
+ * dauerhaft an der Datenbank vorbei offenhalten, und ein Admin, den man dort
+ * sperrt, käme über die Umgebung wieder hinein. Folge, die man kennen muss: Wer
+ * den ersten weiteren Admin ernennt, sollte sich zuvor selbst die Rolle geben.
+ */
+export function isAdminAccount(account: Pick<Account, "email" | "role" | "disabledAt">): boolean {
+  if (account.disabledAt) return false;
+  if (account.role === "admin") return true;
+  return isAdminEmail(account.email) && activeAdminCount() === 0;
+}
+
 const toUser = (account: Account): SessionUser => ({
   id: account.id,
   email: account.email,
-  isAdmin: isAdminEmail(account.email),
+  isAdmin: isAdminAccount(account),
   // Ein unbekannter Wert in der Spalte wird zu `null` – dasselbe Verhalten wie
   // bei einem unlesbaren Browser-Speicher (siehe Migration 4).
   mapsPreference: isMapsPreference(account.mapsPreference) ? account.mapsPreference : null,
@@ -75,7 +91,12 @@ export function sessionTokenFromRequest(request: Request): string | undefined {
   return readCookie(request, SESSION_COOKIE);
 }
 
-function readCookie(request: Request, name: string): string | undefined {
+/**
+ * Ein ungültiger %-Code im Cookie (`%E0%A4%A`) ließ `decodeURIComponent` werfen
+ * und jede Sitzungsroute mit 500 antworten (gemessen im Produktionsbau,
+ * 10.9). Jetzt gilt der Wert als nicht vorhanden – also 401 statt 500.
+ */
+export function readCookie(request: Request, name: string): string | undefined {
   const header = request.headers.get("cookie");
   if (!header) return undefined;
 
@@ -83,7 +104,11 @@ function readCookie(request: Request, name: string): string | undefined {
     const index = part.indexOf("=");
     if (index < 0) continue;
     if (part.slice(0, index).trim() !== name) continue;
-    return decodeURIComponent(part.slice(index + 1).trim());
+    try {
+      return decodeURIComponent(part.slice(index + 1).trim());
+    } catch {
+      return undefined;
+    }
   }
   return undefined;
 }

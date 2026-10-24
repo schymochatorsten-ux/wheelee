@@ -76,7 +76,9 @@ function getHandler(request: Request) {
   const spots = nearestSpots({ lat, lng }, limit ?? 100);
   return NextResponse.json(
     { spots, truncated: false, total: spots.length },
-    { headers: { "Cache-Control": CACHE_CONTROL } },
+    // Der Standort steckt in der Adresse: nur der Browser darf zwischenspeichern,
+    // kein Proxy dazwischen (10.9).
+    { headers: { "Cache-Control": CACHE_CONTROL.replace("public", "private") } },
   );
 }
 

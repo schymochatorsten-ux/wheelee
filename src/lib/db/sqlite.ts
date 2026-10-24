@@ -172,6 +172,34 @@ const MIGRATIONS: readonly string[] = [
   -- fällt beim Lesen auf „nie gewählt" zurück.
   ALTER TABLE account ADD COLUMN language TEXT;
   `,
+
+  // 7 – Rolle und Sperre am Konto (ToDo 18.1).
+  `
+  -- Die Rolle wird in der Tabelle geprüft: Ein falscher Wert soll nicht
+  -- stillschweigend als Administrator oder als Nutzer durchgehen.
+  ALTER TABLE account ADD COLUMN role TEXT NOT NULL DEFAULT 'user' CHECK (role IN ('user', 'admin'));
+  ALTER TABLE account ADD COLUMN disabled_at TEXT;
+  `,
+
+  // 8 – Einladungen (ToDo 18.2).
+  `
+  CREATE TABLE invitation (
+    id         TEXT PRIMARY KEY,
+    -- Nur der SHA-256 des Tokens, wie bei \`session\`: Eine Sicherung der Datei
+    -- genügt nicht, um eine Einladung einzulösen.
+    token_hash TEXT NOT NULL UNIQUE,
+    email      TEXT NOT NULL,
+    role       TEXT NOT NULL CHECK (role IN ('user', 'admin')),
+    -- Wird das einladende Konto gelöscht, bleibt die Einladung als Nachweis.
+    invited_by TEXT REFERENCES account(id) ON DELETE SET NULL,
+    created_at TEXT NOT NULL,
+    expires_at TEXT NOT NULL,
+    used_at    TEXT,
+    revoked_at TEXT
+  );
+
+  CREATE INDEX invitation_email ON invitation(email);
+  `,
 ];
 
 let database: DatabaseSync | null = null;

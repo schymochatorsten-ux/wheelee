@@ -1,12 +1,13 @@
 import { NextResponse } from "next/server";
 import { authenticate, createSession } from "@/lib/db/accounts";
 import { normalizeEmail } from "@/lib/auth/email";
-import { isAdminEmail, sessionCookie } from "@/lib/auth/session";
+import { isAdminAccount, sessionCookie } from "@/lib/auth/session";
 import { publicUser } from "@/lib/auth/user";
 import { isMapsPreference } from "@/lib/maps-preference";
-import { allow, clientKey, LIMITS } from "@/lib/rate-limit";
+import { allow, clientKey, LIMITS, retryAfter } from "@/lib/rate-limit";
 import { withLogging } from "@/lib/log";
 import { isLocale, t } from "@/i18n";
+import { readJson } from "@/lib/read-json";
 
 /**
  * Anmelden (ToDo 11.1).
@@ -25,7 +26,7 @@ import { isLocale, t } from "@/i18n";
 async function postHandler(request: Request) {
   let body: { email?: unknown; password?: unknown };
   try {
-    body = (await request.json()) as typeof body;
+    body = (await readJson(request)) as typeof body;
   } catch {
     return NextResponse.json({ error: t("api.invalidRequest") }, { status: 400 });
   }
@@ -35,7 +36,7 @@ async function postHandler(request: Request) {
 
   const key = `login:${clientKey(request)}:${email}`;
   if (!allow(key, LIMITS.login)) {
-    return NextResponse.json({ error: t("api.tooManyLogins") }, { status: 429 });
+    return NextResponse.json({ error: t("api.tooManyLogins") }, { status: 429, headers: retryAfter(LIMITS.login) });
   }
 
   if (email.length === 0 || password.length === 0) {
@@ -53,11 +54,11 @@ async function postHandler(request: Request) {
     user: publicUser({
       id: account.id,
       email: account.email,
-      isAdmin: isAdminEmail(account.email),
+      isAdmin: isAdminAccount(account),
       mapsPreference: isMapsPreference(account.mapsPreference) ? account.mapsPreference : null,
       language: isLocale(account.language) ? account.language : null,
     }),
-  });
+  }, { headers: { "Cache-Control": "no-store" } });
   response.cookies.set(sessionCookie(createSession(account.id)));
   return response;
 }

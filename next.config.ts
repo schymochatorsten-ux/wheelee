@@ -115,6 +115,9 @@ const nextConfig: NextConfig = {
    * Neubau des Abbilds überlebt (siehe docker-compose.yml).
    */
   output: "standalone",
+  // Keine Kopfzeile „X-Powered-By: Next.js": Sie sagt Angreifern nur, welche
+  // Schwachstellenliste sie durchgehen müssen (10.9).
+  poweredByHeader: false,
   /*
    * Bewusst **ohne Abschaltmöglichkeit über die Umgebung.** Ein Schalter, der
    * alle Sicherheitskopfzeilen entfernt, ist selbst eine Schwachstelle: Er

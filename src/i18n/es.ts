@@ -1,14 +1,15 @@
 import type { Messages } from "./index";
 
 /**
- * Textos en español (ToDo 15.1) – **traducción automática previa**, aún no
- * revisada por hablantes nativos (D-08, `Erledigt.md`; pendiente como ToDo
- * 15.6). Mismas claves que `de.ts`; el tipo obliga a que no falte ninguna y
+ * Textos en español (ToDo 15.1) – **traducción automática**, revisada varias veces
+ * de forma automática, no por hablantes nativos (D-08 y 15.6 en `Erledigt.md`).
+ * Mismas claves que `de.ts`; el tipo obliga a que no falte ninguna y
  * `i18n.test.ts` comprueba que los marcadores coinciden.
  *
- * No están aquí: el aviso de responsabilidad, el aviso legal y la política de
- * privacidad permanecen en alemán (lista de excepciones de D-08), ni tampoco
- * los nombres de calles ni los datos.
+ * No están aquí: el aviso legal y la política de privacidad permanecen en
+ * alemán (lista de excepciones de D-08), ni tampoco los nombres de calles ni
+ * los datos. El aviso de responsabilidad sí está (`disclaimer.*`), traducido
+ * automáticamente desde el 2026-10-24.
  *
  * Las comillas son tipográficas («…», “…”) a propósito: las comillas ASCII
  * cerrarían la cadena.
@@ -68,7 +69,7 @@ export const es: Messages = {
   "list.osmLink": "© colaboradores de OpenStreetMap",
   "list.bkgCredit": "Nombres y claves de municipios: © {bkg} (2026) {license}.",
   "list.osmNote":
-    "Los datos de OpenStreetMap muestran sobre todo aparcamientos con plazas reservadas, no plazas sueltas junto a la acera, y están incompletos: que falte una entrada no significa que no haya plaza para personas con discapacidad.",
+    "Los datos de OpenStreetMap muestran sobre todo aparcamientos con plazas reservadas para personas con discapacidad, no plazas sueltas junto a la acera, y están incompletos: que falte una entrada no significa que no haya plaza para personas con discapacidad.",
   "list.allCities": "Las {count} ciudades con su fuente",
   "list.cityCounts": ": {spots} ubicaciones, {spaces} plazas",
   "list.source": "Fuente: {source}",
@@ -127,7 +128,7 @@ export const es: Messages = {
     "Se sugiere primero el idioma de tu navegador. Con una cuenta, tu elección vale en todos tus dispositivos.",
   "settings.languageChoose": "Elegir idioma",
   "settings.languageUnreviewed":
-    "Las traducciones son automáticas y aún no las han revisado hablantes nativos.",
+    "Las traducciones se han hecho automáticamente y se han revisado varias veces de forma automática, no por hablantes nativos. Prevalece la versión alemana; en el lugar rige siempre la señalización.",
   "settings.mapsApp": "Aplicación de mapas para navegar",
   "settings.mapsAppNote":
     "Con qué se abre «Iniciar navegación». Si no eliges, depende del dispositivo; aquí sería {detected}.",
@@ -153,7 +154,7 @@ export const es: Messages = {
   "offline.dataDate": "Datos del: {date}",
   "offline.savedDate": "Descargado el {date}",
   "offline.staleData":
-    "Los datos tienen más de seis meses. Las plazas pueden haber cambiado: comprueba in situ.",
+    "Los datos tienen más de seis meses. Las plazas pueden haber cambiado: compruébalo en el lugar.",
   "offline.staleCopy": "La copia tiene más de un mes. Actualízala cuando tengas conexión.",
   "offline.total": "Espacio ocupado en total: {size}",
   "settings.feedback": "Notificar un error o enviar una sugerencia",
@@ -269,7 +270,7 @@ export const es: Messages = {
     "Por ejemplo: la plaza de Bahnhofstraße 4 ya no existe, ahora hay un punto de carga.",
   "feedback.charsLeft": "Quedan {count} caracteres.",
   "feedback.optional": "(opcional)",
-  "feedback.emailPlaceholder": "nombre@ejemplo.es",
+  "feedback.emailPlaceholder": "nombre@example.com",
   "feedback.fromAccount": "Tomada de tu cuenta.",
   "feedback.sending": "Enviando …",
   "feedback.submit": "Enviar",
@@ -307,7 +308,7 @@ export const es: Messages = {
   "reported.reasonLabel": "Motivo",
   "reported.reason.lastThreeGone":
     "Los tres últimos votos: ya no existe, aunque pesen más confirmaciones antiguas.",
-  "reported.reason.reports": "{count} cuentas la han notificado como inexistente.",
+  "reported.reason.reports": "{count} cuentas han avisado de que ya no existe.",
   "reported.weighted": "Ponderado: {gone} ya no existe · {exists} confirmada",
   "reported.weightedHint":
     "Ponderado significa: los votos antiguos cuentan menos (una cuarta parte tras dos años) y las cuentas que a menudo coinciden con las demás, hasta el doble. Solo ordena; no cambia ningún dato.",
@@ -321,7 +322,7 @@ export const es: Messages = {
 
   "feedback.status.neu": "Nuevo",
   "feedback.status.in_arbeit": "En curso",
-  "feedback.status.umgesetzt": "Resuelto",
+  "feedback.status.umgesetzt": "Implementado",
   "feedback.status.verworfen": "Descartado",
 
   "feedbackAdmin.loadFailed": "No se pudieron cargar los comentarios.",
@@ -330,8 +331,8 @@ export const es: Messages = {
   "feedbackAdmin.confirmDelete": "¿Eliminar definitivamente el aviso n.º {id}?\n\n«{preview}…»",
   "feedbackAdmin.deleteFailed": "No se pudo eliminar.",
   "feedbackAdmin.title": "Comentarios",
-  "feedbackAdmin.countsOne": "{total} aviso, de los cuales {neu} nuevos y {done} resueltos.",
-  "feedbackAdmin.countsMany": "{total} avisos, de los cuales {neu} nuevos y {done} resueltos.",
+  "feedbackAdmin.countsOne": "{total} aviso; nuevos: {neu}, implementados: {done}.",
+  "feedbackAdmin.countsMany": "{total} avisos, de los cuales {neu} nuevos y {done} implementados.",
   "feedbackAdmin.filterKind": "Tipo",
   "feedbackAdmin.filterStatus": "Estado",
   "feedbackAdmin.all": "Todos",
@@ -342,7 +343,7 @@ export const es: Messages = {
   "feedbackAdmin.account": "Cuenta",
   "feedbackAdmin.browser": "Navegador",
   "feedbackAdmin.changed": "Modificado",
-  "feedbackAdmin.markDone": "Marcar como resuelto",
+  "feedbackAdmin.markDone": "Marcar como implementado",
   "feedbackAdmin.reopen": "Volver a «nuevo»",
   "feedbackAdmin.discard": "Descartar",
   "feedbackAdmin.delete": "Eliminar",
@@ -380,13 +381,13 @@ export const es: Messages = {
   "nearest.nothingInRadius": "nada dentro del radio",
   "nearest.inRadius": "{count} dentro del radio",
   "nearest.closeSelection": "Cerrar la selección",
-  "nearest.more": "Más cerca de ti ({count})",
+  "nearest.more": "Más plazas cercanas ({count})",
   "nearest.withinRadius": "Dentro del radio ({radius})",
   "nearest.beyond": "Más lejos",
   "nearest.chooseHint": "elegir como destino y mostrar en el mapa",
 
   // Kurz, weil der Titel in die Kopfzeile des Telefons passen muss; „plaza PMR“
-  // wäre kürzer, ist aber nur Einheimischen geläufig (15.6: Muttersprachler fragen).
+  // wäre kürzer, ist aber nur Einheimischen geläufig.
   "app.title": "Aparcamiento adaptado",
   "view.map": "Mapa",
   "view.list": "Lista",
@@ -476,6 +477,63 @@ export const es: Messages = {
 
   "legal.germanOnly":
     "El aviso legal (Impressum) y la política de privacidad solo existen en alemán, y la versión alemana es la que vale.",
-  "disclaimer.germanOnly":
-    "El aviso de responsabilidad de abajo solo existe en alemán. In situ, valen siempre las señales y la señalización, no la app.",
+
+  "disclaimer.short":
+    "Sin garantía de exactitud: una plaza de aparcamiento puede haberse suprimido, trasladado o estar ocupada en este momento.",
+  "disclaimer.stand": "Datos de esta ciudad actualizados a: {date}.",
+  "disclaimer.heading": "Léelo antes de salir",
+  "disclaimer.body":
+    "Los datos proceden de listados oficiales y de OpenStreetMap y pueden estar desactualizados. Una plaza de aparcamiento puede haberse suprimido, trasladado o estar ocupada en este momento, y una restricción horaria puede haber cambiado.",
+  "disclaimer.bodyStrong": "No te fíes solo de esta app",
+  "disclaimer.bodyEnd": "– en el lugar rige la señalización.",
+  "disclaimer.feedback":
+    "Si algo no es correcto, un aviso ayuda más que nada: los avisos son la única fuente que llega a detectar estos cambios.",
+
+  // Einladung annehmen (ToDo 18.2)
+  "api.invitationInvalid": "La invitación no es válida, ha caducado o ya se ha usado.",
+  "api.tooManyInvitations": "Demasiadas invitaciones en poco tiempo. Inténtalo más tarde.",
+  "invitation.title": "Aceptar invitación",
+  "invitation.intro": "Te han invitado a wheelee. Elige una contraseña para crear tu cuenta.",
+  "invitation.password": "Contraseña",
+  "invitation.submit": "Crear cuenta",
+  "invitation.missing": "Este enlace no contiene ninguna invitación.",
+  "invitation.failed": "No ha funcionado. Inténtalo de nuevo.",
+  "invitation.done": "Tu cuenta está creada y has iniciado sesión.",
+  "invitation.toApp": "Ir al mapa",
+
+  // Benutzerverwaltung (ToDo 18.3)
+  "api.adminCannotChange": "No es posible: debe quedar al menos una cuenta de administrador activa, y tu propia cuenta se elimina en los ajustes de la cuenta.",
+  "users.title": "Usuarios e invitaciones",
+  "users.intro": "Los administradores gestionan las cuentas e invitan a otros administradores. La app no envía correos: recibes un enlace que compartes tú mismo.",
+  "users.inviteEmail": "Correo electrónico de la invitación",
+  "users.inviteRole": "Rol",
+  "users.role.admin": "Administrador",
+  "users.role.user": "Usuario",
+  "users.inviteSubmit": "Crear enlace de invitación",
+  "users.inviteCreated": "Enlace de invitación para {email}. Solo se muestra ahora y es válido siete días: compártelo tú mismo.",
+  "users.copy": "Copiar enlace",
+  "users.copied": "Copiado",
+  "users.accounts": "Cuentas",
+  "users.invitations": "Invitaciones",
+  "users.you": "tú",
+  "users.disabled": "bloqueada",
+  "users.lastLogin": "Último acceso: {date}",
+  "users.never": "nunca ha iniciado sesión",
+  "users.search": "Buscar cuentas (parte de la dirección de correo)",
+  "users.count": "{shown} de {total} cuentas – primero administradores y bloqueadas",
+  "users.noMatch": "Ninguna cuenta coincide con la búsqueda.",
+  "users.more": "Mostrar más cuentas",
+  "users.makeAdmin": "Hacer administrador",
+  "users.makeUser": "Quitar derechos de administrador",
+  "users.disable": "Bloquear",
+  "users.enable": "Desbloquear",
+  "users.delete": "Eliminar",
+  "users.deleteConfirm": "¿Eliminar definitivamente la cuenta {email} con sus valoraciones y favoritos?",
+  "users.state.open": "abierta",
+  "users.state.used": "canjeada",
+  "users.state.expired": "caducada",
+  "users.state.revoked": "revocada",
+  "users.expires": "válida hasta {date}",
+  "users.revoke": "Revocar",
+  "users.failed": "No ha funcionado.",
 };
