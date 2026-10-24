@@ -49,6 +49,7 @@ describe("matchLocale (Browsersprache als erster Vorschlag)", () => {
   it("nimmt den Sprachteil und ignoriert die Landesform", () => {
     expect(matchLocale("de-AT,en;q=0.5")).toBe("de");
     expect(matchLocale("es-MX,es;q=0.9,en;q=0.8")).toBe("es");
+    expect(matchLocale("fr-CH,fr;q=0.9,en;q=0.8")).toBe("fr");
   });
 
   it("liefert null, wenn keine angebotene Sprache vorkommt", () => {

@@ -56,11 +56,10 @@ Torsten den bis dahin fertigen Stand committet** – erst danach wird begonnen.
 
 | #   | Was                                                              | Warum hier                                         |
 | --- | ---------------------------------------------------------------- | -------------------------------------------------- |
-| 1   | **10.2a** Anschrift für das Impressum                            | Höchste Priorität (Vorgabe 2026-10-24)             |
 | 4   | **11.1 / 11.8** Passwort vergessen, E-Mail ändern                | Braucht SMTP-Zugangsdaten zum Echtbetrieb          |
 | 6   | **9.2a / 12.7a** Dunkle Karte, Symbol                            | Darstellung                                        |
 | 7   | **1.8** Next 16                                                  | Zuletzt vor den Daten; vorher Bescheid (s. o.)     |
-| 8   | **Datenarbeit** 2e.11, dann 2e.6 in Stufen (D-07), 3.10, 3.3, 3.4, 2d.8a, 2c.4 / 2d.9 | Fällt unter die Vorgabe oben |
+| 8   | **Datenarbeit** 2e.11, dann 2e.6 in Stufen (D-07), 3.10, 3.3, 3.4, 2d.8a | Fällt unter die Vorgabe oben |
 
 **Neue Knöpfe und Meldungen kommen seit 15.2 gleich in
 `src/i18n/de.ts`, nicht in die Komponente** (Aufbau in
@@ -73,20 +72,13 @@ abgeglichen ist bislang eine Stadt.
 
 ---
 
-## 0. Entscheidungen und Angaben, die bei dir liegen
-
-- [!] **D-05 Parkplätze ohne Koordinaten.** Empfehlung: als „Position ungenau" kennzeichnen und nur in der Liste führen. Faktisch gelöst – alle 18.072 Standorte haben Koordinaten.
-- [!] **10.2a Anschrift für das Impressum.** Name und E-Mail sind festgelegt (`WHEELEE_OPERATOR_NAME`, `_EMAIL`); die **ladungsfähige Anschrift fehlt bewusst** (Torsten 2026-10-24: „erstmal weglassen"). Ohne sie ist das Impressum nach § 5 DDG unvollständig; die Seite nennt den Mangel (E2E-geprüft). Vorlage: [deploy/env.beispiel](deploy/env.beispiel).
-
 ## 1. Projekt-Setup
 
 - [ ] 1.8 **Next 16.** Behebt die zwei Audit-Wurzeln (`postcss` über `next`, `braces` über `eslint-config-next`); hier läuft 15.5.27. **Erst nachdem Torsten den bis dahin fertigen Stand committet hat** (Reihenfolge, Platz 7). Zu prüfen: `middleware.ts` (CSP-Nonce), Service Worker, `node:sqlite`, Produktionsbau.
 
 ## 2. Datenquellen und Import
 
-- [ ] 2c.4 Fehlende Parkplätze in OpenStreetMap nachtragen; davon profitieren auch alle anderen Nutzungen.
 - [ ] 2d.8a **Neun Städte mit ungenutzter amtlicher Quelle ansehen.** **München zuerst:** Datensatz „Behindertenparkplätze“ auf opendata.muenchen.de, dl-by-de 2.0, WFS, täglich aktualisiert; im Bestand stehen 219 Standorte aus OSM (Details in [Erledigt.md](Erledigt.md), 3.2). Die übrigen acht: `npm run sources:check` findet sie. Bei Kiel, Krefeld und Aachen ist die Ablehnung richtig (Anwohnerparken); bei Bochum, Bielefeld, Karlsruhe, Norderstedt und Viersen lohnt der Blick aufs Stadtportal.
-- [ ] 2d.9 **Regensburg: 156.000 Einwohner, kein einziger erfasster Platz** – eine Lücke in OpenStreetMap. Anfrage bei der Straßenverkehrsbehörde, Nachtragen in OSM.
 - [ ] 2e.6 **Restliche Gemeinden aus OpenStreetMap, in Stufen** (Entscheidung D-07, [Erledigt.md](Erledigt.md)): ab 20.000, dann 10.000, dann 5.000, dann alle; jede Stufe erst nach den Prüfungen (Streuung über 15 km, Dichte über dem Dreifachen des Medians). Voraussetzung ist 2e.11.
 - [ ] 2e.11 **Massendaten ohne Overpass holen.** Vorgesehen sind die **Bundesland-Auszüge von Geofabrik** (`.osm.pbf`, ODbL, täglich). Aufwand: PBF-Leser (Protocol Buffers, zlib-Blöcke, Delta-Kodierung) ohne neue Abhängigkeit, wie `zip.mts` und `xlsx.mts`. Zwischenstufe, falls das zu viel ist: `import:osm-state` mit Pausen über die 16 Länder.
 
@@ -99,7 +91,6 @@ abgeglichen ist bislang eine Stadt.
 ## 9. Darstellung und Bedienung
 
 - [ ] 9.2a Echte dunkle Kacheln, nur wenn ein kostenloser Anbieter dies erlaubt (etwa CARTO Dark Matter); Bedingungen und Attribution online prüfen, kostenpflichtig wird abgelehnt.
-- [ ] 9.9 Test mit NVDA/VoiceOver und Vergrößerung macht Torsten selbst; die ARIA-Struktur der Zielsuche ist angepasst (9.18, [Erledigt.md](Erledigt.md)).
 
 ## 10. Datenschutz und Recht
 
@@ -115,7 +106,7 @@ abgeglichen ist bislang eine Stadt.
 
 ## 15. Mehrsprachigkeit
 
-- [~] 15.1 **Weitere Sprachen – zurückgestellt (Torsten, 2026-10-24: „erstmal nicht").** Französisch, Italienisch, Polnisch, Niederländisch, Türkisch, Russisch, Arabisch; Aufbau und Gründe in [Erledigt.md](Erledigt.md) unter 15.1 und 15.6.
+- [~] 15.1 **Weitere europäische Sprachen** (wieder aufgenommen 2026-10-24, Torsten: nur europäische, Englisch inklusive; Türkisch und Arabisch entfallen). Fertig sind Deutsch, Englisch, Spanisch, Französisch. Eine nach der anderen, jede maschinell vorübersetzt wie in 15.6: Italienisch, Polnisch, Niederländisch, Portugiesisch, Russisch. Je Sprache: `src/i18n/<code>.ts`, Eintrag in `index.ts`, Zeile in `opening-hours.test.ts` (Höchstparkdauer), ein E2E-Test in `sprache.spec.ts`. Die Systemsprache wird bereits als erster Vorschlag ausgewertet (siehe [Erledigt.md](Erledigt.md), 15.5); Aufbau und Gründe unter 15.1 und 15.6.
 
 ---
 

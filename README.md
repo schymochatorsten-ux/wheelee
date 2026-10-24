@@ -94,7 +94,7 @@ src/lib/geo.ts        Entfernungsberechnung und -formatierung
 src/lib/parking/      Einlesen und Zerlegen der städtischen Parkplatzlisten
 src/lib/db/           SQLite: Schema, Konten, Rückmeldungen
 src/lib/auth/         Passwörter, Sitzungen, Administratorprüfung
-src/i18n/             Beschriftungen je Sprache (de, en, es), Sprachwahl, Kontext
+src/i18n/             Beschriftungen je Sprache (de, en, es, fr), Sprachwahl, Kontext
 scripts/import/       Importkette von der Quelldatei zur Seed-Datei
 data/                 Importergebnisse (versioniert)
 .data/                Datenbank der Entwicklung (nicht versioniert)
@@ -104,7 +104,7 @@ Parkplätze/           Quelldateien der Städte
 Die Trennung folgt dem Konzept: Kartendarstellung, Parkplatzdaten und
 Bewertungen bleiben voneinander unabhängig.
 
-**Sprachen (ToDo 15).** Deutsch, Englisch, Spanisch – je eine Datei in
+**Sprachen (ToDo 15).** Deutsch, Englisch, Spanisch, Französisch – je eine Datei in
 `src/i18n/`, **kein Übersetzer zur Laufzeit** (D-08 in `Erledigt.md`). Die
 Sprache kommt aus dem Cookie `wheelee-lang`, sonst vom Konto, sonst aus der
 Browsersprache, sonst Deutsch; sie steht schon im ersten HTML

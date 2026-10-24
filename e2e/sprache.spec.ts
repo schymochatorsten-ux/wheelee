@@ -137,6 +137,28 @@ test.describe("Spanisch", () => {
   });
 });
 
+test.describe("Französisch", () => {
+  test("Browsersprache Französisch: Oberfläche und Haftungshinweis, Rechtstexte deutsch", async ({
+    browser,
+    baseURL,
+  }) => {
+    const context = await browser.newContext({ locale: "fr-FR", baseURL });
+    const page = await context.newPage();
+    await page.goto("/");
+    await expect(page.locator("html")).toHaveAttribute("lang", "fr");
+    await page.getByRole("tab", { name: "Paramètres" }).click();
+    await expect(page.getByRole("heading", { name: "Langue", level: 2 })).toBeVisible();
+    await expect(page.getByRole("radio", { name: "Français" })).toBeChecked();
+    await expect(page.getByRole("heading", { name: "À lire avant de partir" })).toBeVisible();
+    await expect(page.getByText("sur place, c'est la signalisation qui prévaut")).toBeVisible();
+    await expect(page.getByText("Bitte vor der Fahrt lesen")).toHaveCount(0);
+
+    await page.goto("/impressum");
+    await expect(page.getByRole("heading", { name: "Impressum", level: 1 })).toBeVisible();
+    await context.close();
+  });
+});
+
 test.describe("Zeitangaben und Entfernungen (ToDo 15.3, 15.4)", () => {
   /**
    * Aschaffenburg, Parkplatz mit `Mo-Sa 09:00-20:00` in den Daten

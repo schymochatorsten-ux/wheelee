@@ -1,6 +1,7 @@
 import { de } from "./de";
 import { en } from "./en";
 import { es } from "./es";
+import { fr } from "./fr";
 
 /**
  * Zugriff auf die Beschriftungen der Oberfläche (ToDo 15.2).
@@ -23,7 +24,7 @@ import { es } from "./es";
 export type MessageKey = keyof typeof de;
 export type Messages = Record<MessageKey, string>;
 
-const catalogs = { de, en, es } satisfies Record<string, Messages>;
+const catalogs = { de, en, es, fr } satisfies Record<string, Messages>;
 
 export type Locale = keyof typeof catalogs;
 export const DEFAULT_LOCALE: Locale = "de";
@@ -43,6 +44,8 @@ export const LOCALES: Record<Locale, { name: string; tag: string }> = {
   en: { name: "English", tag: "en-GB" },
   // Spanien-Spanisch: Dezimalkomma wie im Deutschen, Datum Tag-Monat-Jahr.
   es: { name: "Español", tag: "es-ES" },
+  // Frankreich-Französisch: Dezimalkomma, Datum Tag-Monat-Jahr, 24-Stunden-Uhr.
+  fr: { name: "Français", tag: "fr-FR" },
 };
 
 export const LOCALE_CODES = Object.keys(LOCALES) as Locale[];
