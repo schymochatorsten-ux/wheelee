@@ -50,7 +50,7 @@ describe("deleteAccount", () => {
     rueckmeldung(konto.id, "antwort@example.de");
     rueckmeldung(null, "fremd@example.de");
 
-    expect(deleteAccount(konto.id, ALT)).toBe(true);
+    expect(deleteAccount(konto.id, ALT)).toBe("deleted");
 
     expect(accountForSession(token)).toBeNull();
     expect(authenticate("a@example.de", ALT)).toBeNull();
@@ -73,7 +73,7 @@ describe("deleteAccount", () => {
 
   it("löscht nichts bei falschem Passwort", () => {
     const konto = createAccount("a@example.de", ALT)!;
-    expect(deleteAccount(konto.id, "falsch falsch falsch")).toBe(false);
+    expect(deleteAccount(konto.id, "falsch falsch falsch")).toBe("wrong-password");
     expect(authenticate("a@example.de", ALT)).not.toBeNull();
   });
 });

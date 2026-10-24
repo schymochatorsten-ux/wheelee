@@ -501,6 +501,7 @@ export const de = {
 
   // Benutzerverwaltung (ToDo 18.3)
   "api.adminCannotChange": "Das geht nicht: Es muss mindestens ein aktives Admin-Konto bleiben, und das eigene Konto löschst du in den Kontoeinstellungen.",
+  "api.lastAdminCannotDelete": "Dein Konto ist das letzte aktive Admin-Konto und lässt sich nicht löschen. Ernenne zuerst jemand anderen zum Admin.",
   "users.title": "Benutzer und Einladungen",
   "users.intro": "Admins verwalten Konten und laden andere Admins ein. Die App versendet keine E-Mails: Du bekommst einen Link, den du selbst weitergibst.",
   "users.inviteEmail": "E-Mail-Adresse der Einladung",

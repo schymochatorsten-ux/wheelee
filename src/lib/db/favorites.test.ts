@@ -105,7 +105,7 @@ describe("Favoriten", () => {
     addFavorite(SPOT, a);
     addFavorite(SPOT, b);
 
-    expect(deleteAccount(a, PASSWORD)).toBe(true);
+    expect(deleteAccount(a, PASSWORD)).toBe("deleted");
 
     const rest = db().prepare("SELECT account_id FROM favorite").all() as { account_id: string }[];
     expect(rest.map((row) => row.account_id)).toEqual([b]);

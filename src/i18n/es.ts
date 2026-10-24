@@ -503,6 +503,7 @@ export const es: Messages = {
 
   // Benutzerverwaltung (ToDo 18.3)
   "api.adminCannotChange": "No es posible: debe quedar al menos una cuenta de administrador activa, y tu propia cuenta se elimina en los ajustes de la cuenta.",
+  "api.lastAdminCannotDelete": "Tu cuenta es la última cuenta de administrador activa y no se puede eliminar. Nombra primero a otra persona como administradora.",
   "users.title": "Usuarios e invitaciones",
   "users.intro": "Los administradores gestionan las cuentas e invitan a otros administradores. La app no envía correos: recibes un enlace que compartes tú mismo.",
   "users.inviteEmail": "Correo electrónico de la invitación",

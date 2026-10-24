@@ -37,8 +37,12 @@ async function deleteHandler(request: Request) {
     return NextResponse.json({ error: t("api.passwordRequired") }, { status: 400 });
   }
 
-  if (!deleteAccount(user.id, password)) {
+  const result = deleteAccount(user.id, password);
+  if (result === "wrong-password") {
     return NextResponse.json({ error: t("api.passwordWrong") }, { status: 403 });
+  }
+  if (result === "last-admin") {
+    return NextResponse.json({ error: t("api.lastAdminCannotDelete") }, { status: 409 });
   }
 
   const response = NextResponse.json({ ok: true }, { headers: { "Cache-Control": "no-store" } });

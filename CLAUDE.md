@@ -189,8 +189,8 @@ gelten weiter, weil sie keine Sperre sind, sondern eine Festlegung:
   Netz und formulierte jedes Mal anders. Haftungshinweis, Impressum,
   Datenschutzerklärung und die Daten selbst stehen auf der Ausnahmeliste.
 - **Von 16 ist 16.1 gebaut** (Parkplatzdaten, 2026-10-23). Das Vorabladen der
-  **Kacheln** (16.2) wartet auf die Lizenzfrage und wird nicht nebenbei
-  angefangen.
+  **Kacheln** (16.2) wurde am 2026-10-24 verworfen (Begründung in
+  `Erledigt.md`) und wird nicht gebaut.
 
 ## Dateien nie mit PowerShell umschreiben
 

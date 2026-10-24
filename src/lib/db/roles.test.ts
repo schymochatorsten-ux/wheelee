@@ -9,6 +9,7 @@ import {
   authenticate,
   createAccount,
   createSession,
+  deleteAccount,
   setDisabled,
   setRole,
 } from "./accounts";
@@ -36,6 +37,38 @@ function konto(email: string) {
   if (!account) throw new Error("Konto nicht angelegt");
   return account;
 }
+
+describe("Konto selbst löschen (ToDo 10.15 a)", () => {
+  it("verweigert dem letzten aktiven Admin das Löschen", () => {
+    const chef = konto("chef@example.org");
+    setRole(chef.id, "admin");
+    expect(deleteAccount(chef.id, PASSWORT)).toBe("last-admin");
+    expect(activeAdminCount()).toBe(1);
+  });
+
+  it("verrät die Rolle nicht, solange das Passwort falsch ist", () => {
+    const chef = konto("chef@example.org");
+    setRole(chef.id, "admin");
+    expect(deleteAccount(chef.id, "falsch falsch falsch")).toBe("wrong-password");
+  });
+
+  it("erlaubt es, sobald ein zweiter aktiver Admin da ist", () => {
+    const chef = konto("chef@example.org");
+    const zweiter = konto("zweiter@example.org");
+    setRole(chef.id, "admin");
+    setRole(zweiter.id, "admin");
+    expect(deleteAccount(chef.id, PASSWORT)).toBe("deleted");
+  });
+
+  it("zählt einen gesperrten Admin nicht als aktiv", () => {
+    const chef = konto("chef@example.org");
+    const gesperrt = konto("gesperrt@example.org");
+    setRole(chef.id, "admin");
+    setRole(gesperrt.id, "admin");
+    setDisabled(gesperrt.id, true);
+    expect(deleteAccount(chef.id, PASSWORT)).toBe("last-admin");
+  });
+});
 
 describe("Rolle", () => {
   it("neue Konten sind normale Nutzer", () => {

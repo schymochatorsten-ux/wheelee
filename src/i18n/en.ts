@@ -496,6 +496,7 @@ export const en: Messages = {
 
   // Benutzerverwaltung (ToDo 18.3)
   "api.adminCannotChange": "That is not possible: at least one active admin account must remain, and you delete your own account in the account settings.",
+  "api.lastAdminCannotDelete": "Your account is the last active admin account and cannot be deleted. Make someone else an admin first.",
   "users.title": "Users and invitations",
   "users.intro": "Admins manage accounts and invite other admins. The app does not send e-mails: you get a link that you pass on yourself.",
   "users.inviteEmail": "E-mail address for the invitation",

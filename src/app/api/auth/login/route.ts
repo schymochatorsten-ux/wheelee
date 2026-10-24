@@ -5,6 +5,7 @@ import { isAdminAccount, sessionCookie } from "@/lib/auth/session";
 import { publicUser } from "@/lib/auth/user";
 import { isMapsPreference } from "@/lib/maps-preference";
 import { allow, clientKey, LIMITS, retryAfter } from "@/lib/rate-limit";
+import { clearLoginFailures, loginPauseSeconds, recordLoginFailure } from "@/lib/login-backoff";
 import { withLogging } from "@/lib/log";
 import { isLocale, t } from "@/i18n";
 import { readJson } from "@/lib/read-json";
@@ -43,10 +44,26 @@ async function postHandler(request: Request) {
     return NextResponse.json({ error: t("api.credentialsRequired") }, { status: 400 });
   }
 
+  /*
+   * Zusätzlich eine Mindestpause je Adresse über alle Herkünfte (ToDo 10.15 c).
+   * Sie gilt für bekannte und unbekannte Adressen gleich; `Retry-After` nennt die
+   * Restzeit der Pause, sonst wüsste der Browser nicht, wann er es wieder
+   * versuchen darf.
+   */
+  const pause = loginPauseSeconds(email);
+  if (pause > 0) {
+    return NextResponse.json(
+      { error: t("api.tooManyLogins") },
+      { status: 429, headers: { "Retry-After": String(pause) } },
+    );
+  }
+
   const account = authenticate(email, password);
   if (!account) {
+    recordLoginFailure(email);
     return NextResponse.json({ error: t("api.credentialsWrong") }, { status: 401 });
   }
+  clearLoginFailures(email);
 
   const response = NextResponse.json({
     // Mit der Anmeldung kommt die am Konto gewählte Karten-App zurück

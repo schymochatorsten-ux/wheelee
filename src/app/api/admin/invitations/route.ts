@@ -10,7 +10,7 @@ import { readJson } from "@/lib/read-json";
 /**
  * Einladung erzeugen (ToDo 18.2) – nur für Administratoren.
  *
- *     POST /api/admin/invitations   { email, role?: "admin" | "user" }
+ *     POST /api/admin/invitations   { email, role?: "admin" | "user" }   (ohne Rolle: "user")
  *
  * Die Antwort enthält das Token **genau einmal**; die App sendet nichts (D-09).
  * Der Link lautet `/einladung#<token>` und wird von der Oberfläche mit der
@@ -43,7 +43,9 @@ async function postHandler(request: Request) {
     return NextResponse.json({ field: "email", error: t("account.emailInvalid") }, { status: 400 });
   }
 
-  const role = body.role === undefined || body.role === "admin" ? "admin" : body.role;
+  // Ohne Angabe wird eine normale Nutzerrolle vergeben (ToDo 10.15): Admin-Recht
+  // soll man ausdrücklich verleihen, nicht durch eine fehlende Angabe.
+  const role = body.role === undefined ? "user" : body.role;
   if (role !== "admin" && role !== "user") {
     return NextResponse.json({ error: t("api.invalidRequest") }, { status: 400 });
   }

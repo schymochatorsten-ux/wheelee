@@ -342,14 +342,24 @@ export function changePassword(
  * bleibt: Er ist der Hinweis selbst.
  *
  * Verlangt wird das Passwort (wie beim Ändern): Eine gestohlene Sitzung allein
- * soll ein Konto nicht unwiderruflich vernichten können. `false`, wenn es nicht
- * stimmt.
+ * soll ein Konto nicht unwiderruflich vernichten können. `"wrong-password"`,
+ * wenn es nicht stimmt.
+ *
+ * **Das letzte aktive Admin-Konto lässt sich auch selbst nicht löschen**
+ * (`"last-admin"`, ToDo 10.15): Sonst stünde niemand mehr in der Verwaltung,
+ * genau wie bei `setRole` und `setDisabled`. Geprüft wird erst nach dem
+ * Passwort – wer es nicht kennt, erfährt nichts über die Rolle des Kontos.
  */
-export function deleteAccount(accountId: string, password: string): boolean {
+export function deleteAccount(
+  accountId: string,
+  password: string,
+): "deleted" | "wrong-password" | "last-admin" {
   const handle = db();
-  const row = handle.prepare("SELECT password_hash FROM account WHERE id = ?").get(accountId) as
-    { password_hash: string } | undefined;
-  if (!row || !verifyPassword(password, row.password_hash)) return false;
+  const row = handle
+    .prepare("SELECT password_hash, role, disabled_at FROM account WHERE id = ?")
+    .get(accountId) as { password_hash: string; role: string; disabled_at: string | null } | undefined;
+  if (!row || !verifyPassword(password, row.password_hash)) return "wrong-password";
+  if (row.role === "admin" && !row.disabled_at && activeAdminCount() <= 1) return "last-admin";
 
   handle.exec("BEGIN");
   try {
@@ -365,7 +375,7 @@ export function deleteAccount(accountId: string, password: string): boolean {
     handle.exec("ROLLBACK");
     throw error;
   }
-  return true;
+  return "deleted";
 }
 
 /** Alles, was zu einem Konto gespeichert ist – für die Auskunft (Art. 15, 20 DSGVO). */

@@ -16,7 +16,7 @@ import {
 
 /**
  * Städte vorab laden (ToDo 16.1) – nur die Parkplatzdaten, keine Kartenkacheln
- * (die warten als 16.2 auf die Lizenzfrage).
+ * (16.2 wurde verworfen, Begründung in `Erledigt.md`).
  */
 
 const formatDate = (iso: string, locale: Locale) =>

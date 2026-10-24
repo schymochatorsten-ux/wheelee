@@ -40,7 +40,7 @@ export function AdminUsers() {
   const [invitations, setInvitations] = useState<InvitationView[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [email, setEmail] = useState("");
-  const [role, setRole] = useState<"admin" | "user">("admin");
+  const [role, setRole] = useState<"admin" | "user">("user");
   const [created, setCreated] = useState<{ email: string; link: string } | null>(null);
   const [copied, setCopied] = useState(false);
 
