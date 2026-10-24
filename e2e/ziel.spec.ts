@@ -150,6 +150,15 @@ test.describe("Zielsuche", () => {
     await page.getByRole("combobox").pressSequentially("Uniklinik");
     await page.getByRole("combobox").press("Enter");
 
+    // Nicht blind setzen (ToDo 9.18 f): Erst steht der Treffer markiert da …
+    await expect(page.getByRole("option", { name: new RegExp(ZIEL.label) })).toHaveAttribute(
+      "aria-selected",
+      "true",
+    );
+    await expect(page.getByText(`Parkplatz bei ${ZIEL.label}`)).toHaveCount(0);
+
+    // … und ein zweites Enter übernimmt ihn.
+    await page.getByRole("combobox").press("Enter");
     await expect(page.getByText(`Parkplatz bei ${ZIEL.label}`)).toBeVisible();
   });
 

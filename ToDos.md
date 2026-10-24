@@ -34,7 +34,7 @@ npm run test && npm run typecheck && npm run lint
 npm run check:slugs
 ```
 
-Erwartet: alle Unit-Tests grün (521 am 2026-10-24) ·
+Erwartet: alle Unit-Tests grün ·
 `Verzeichnis: 10.754 Gemeinden · davon an der Reihe: 204 · Seed-Dateien: 209`
 · „✅ Register und Seed-Dateien stimmen überein".
 
@@ -57,9 +57,7 @@ Torsten den bis dahin fertigen Stand committet** – erst danach wird begonnen.
 | #   | Was                                                              | Warum hier                                         |
 | --- | ---------------------------------------------------------------- | -------------------------------------------------- |
 | 1   | **10.2a** Anschrift für das Impressum                            | Höchste Priorität (Vorgabe 2026-10-24)             |
-| 3   | **9.18** Zielsuche, **9.9** ARIA-Anteil                          | Gewünschte Verbesserung                            |
 | 4   | **11.1 / 11.8** Passwort vergessen, E-Mail ändern                | Braucht SMTP-Zugangsdaten zum Echtbetrieb          |
-| 5   | **12.11–12.15** Testdaten, Prüfungen, Sicherung                  | Qualität                                           |
 | 6   | **9.2a / 12.7a** Dunkle Karte, Symbol                            | Darstellung                                        |
 | 7   | **1.8** Next 16                                                  | Zuletzt vor den Daten; vorher Bescheid (s. o.)     |
 | 8   | **Datenarbeit** 2e.11, dann 2e.6 in Stufen (D-07), 3.10, 3.3, 3.4, 2d.8a, 2c.4 / 2d.9 | Fällt unter die Vorgabe oben |
@@ -102,7 +100,6 @@ abgeglichen ist bislang eine Stadt.
 
 - [ ] 9.2a Echte dunkle Kacheln, nur wenn ein kostenloser Anbieter dies erlaubt (etwa CARTO Dark Matter); Bedingungen und Attribution online prüfen, kostenpflichtig wird abgelehnt.
 - [ ] 9.9 Test mit NVDA/VoiceOver und Vergrößerung macht Torsten selbst; die ARIA-Struktur der Zielsuche ist angepasst (9.18, [Erledigt.md](Erledigt.md)).
-- [~] 9.18 **Zielsuche: Rest.** Gebaut sind (a)–(e), siehe [Erledigt.md](Erledigt.md). Offen: **(f) Enter ohne sichtbare Liste** setzt ungesehen das Ziel (`DestinationSearch.tsx`, `onKeyDown`); mit Vorschau statt blindem Setzen, dazu der E2E-Test „Enter sucht sofort“ anpassen. Ein zweiter Geocoder nur mit ausdrücklicher Zusage.
 
 ## 10. Datenschutz und Recht
 
@@ -115,11 +112,6 @@ abgeglichen ist bislang eine Stadt.
 ## 12. Qualität und Deployment
 
 - [ ] 12.7a Symbol gestalterisch überarbeiten – funktional, aber von mir gezeichnet.
-- [ ] 12.11 **Testdaten aufräumen:** E2E-Specs hinterlassen Konten in `.data/`; am Ende des Laufs entfernen oder je Lauf eine eigene Datei nutzen.
-- [ ] 12.12 **E2E auch gegen den Produktionsbau** (`next start`), damit Service Worker, Kopfzeilen und der übersprungene Offline-Test mitlaufen.
-- [ ] 12.13 **Konsistente Sicherung der SQLite-Datei** (`VACUUM INTO` oder `.backup` statt Kopie der laufenden WAL-Datei), als Befehl und dokumentiert.
-- [ ] 12.14 **Prüfen, ob die `*.test.mts` unter `scripts/import/` in `npm run test` laufen**, sonst aufnehmen.
-- [ ] 12.15 **Die Erwartungszahl der Unit-Tests** in „Vor dem Anfangen" nicht von Hand führen; Prüfung, die sie abgleicht.
 
 ## 15. Mehrsprachigkeit
 

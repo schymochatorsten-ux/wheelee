@@ -387,25 +387,25 @@ export function DestinationSearch({
     }
 
     /*
-     * Enter sucht sofort und übernimmt den besten Treffer, wenn noch nichts
-     * dasteht.
+     * Enter sucht sofort, wenn noch nichts dasteht, und **zeigt** den besten
+     * Treffer, statt ihn zu setzen (ToDo 9.18 f).
      *
      * Der Fall ist alltäglich und war vorher eine Sackgasse: Man tippt eine
      * vollständige Adresse und drückt Enter, bevor die 350 ms Tippause
-     * abgelaufen sind. Die App tat daraufhin **nichts** – kein Treffer, keine
-     * Meldung, kein Hinweis.
-     *
-     * Dass dabei ungesehen ein Ziel gesetzt wird, ist vertretbar: Es ist
-     * derselbe Treffer, den Enter auch bei sichtbarer Liste nimmt, er steht
-     * danach mit Namen in der Zielzeile, und ein Fehlgriff kostet einen
-     * Druck auf „Ziel aufheben". Nichts zu tun war die schlechtere Antwort.
+     * abgelaufen sind. Die App tat daraufhin **nichts**. Danach setzte sie
+     * ungesehen das Ziel – besser, aber blind: Bei „Bahnhofstraße" wäre es
+     * irgendeine gewesen. Jetzt steht die Liste da, der Treffer von Nominatim
+     * ist markiert, und ein zweites Enter übernimmt ihn. Das kostet einen
+     * Tastendruck und lässt die Wahl sehen.
      */
     if (event.key === "Enter" && shown.length === 0) {
-      const term = query.trim();
-      if (term.length >= MIN_CHARS && status !== "sucht") {
+      const typed = query.trim();
+      if (typed.length >= MIN_CHARS && status !== "sucht") {
         event.preventDefault();
-        void search(term).then((places) => {
-          if (places && places.length > 0) choose(places[0]);
+        void search(typed).then((places) => {
+          if (!places || places.length === 0) return;
+          const merged = dedupePlaces([...recentMatches, ...local, ...places]).slice(0, 10);
+          setActive(Math.max(0, merged.findIndex((place) => samePlace(place, places[0]))));
         });
       }
       return;

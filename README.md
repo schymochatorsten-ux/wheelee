@@ -69,6 +69,7 @@ npm run lint         # ESLint
 npm run typecheck    # TypeScript ohne Emit
 npm run test         # Vitest einmalig
 npm run test:e2e     # Playwright-Smoke-Test (startet den Dev-Server selbst)
+npm run test:e2e:prod # dieselben Tests gegen den Produktionsbau (baut und startet selbst; Dev-Server vorher beenden)
 npm run format       # Prettier schreibend
 npm run clean        # Build-Zwischenstand löschen
 ```
@@ -437,6 +438,28 @@ bearbeitet hat, ist nicht erledigt, sondern liegen geblieben.
 Der Lauf hängt an den Zugriffen, die es ohnehin gibt (eine eingehende Meldung,
 ein Blick in die Übersicht), und läuft höchstens einmal am Tag. Einen
 Hintergrundprozess hat die App nicht.
+
+## Sicherung
+
+Die Datenbank läuft im WAL-Modus; ein Teil der jüngsten Schreibvorgänge steht in
+`wheelee.sqlite-wal`. **Wer nur die Hauptdatei kopiert, sichert einen Stand, der
+so nie bestanden hat.** Eine konsistente Kopie bei laufender App liefert
+`VACUUM INTO` (ToDo 12.13, `src/lib/db/backup.ts`, mit Test):
+
+```bash
+npm run db:backup                 # lokal: .data/sicherung/wheelee-<Datum>.sqlite
+```
+
+Im Container gibt es `tsx` nicht; dort derselbe Aufruf als Einzeiler (legt die
+Datei im Volume ab, eine vorhandene wird nicht überschrieben):
+
+```bash
+docker exec wheelee sh -c 'mkdir -p /app/var/sicherung && node -e "const {DatabaseSync}=require(\"node:sqlite\");new DatabaseSync(process.env.WHEELEE_DB_PATH).prepare(\"VACUUM INTO ?\").run(process.argv[1])" /app/var/sicherung/wheelee-$(date +%F).sqlite'
+```
+
+Die Sicherung des NAS sollte `sicherung/` mitnehmen und nicht die laufende Datei.
+Ein gelöschtes Konto steht bis zur Rotation der Sicherungen noch darin; das
+nennt die Datenschutzerklärung.
 
 ## Rechtstexte
 

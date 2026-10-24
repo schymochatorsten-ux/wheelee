@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { herkunft } from "./herkunft";
 
 /**
  * Konto löschen und Auskunft (ToDo 11.7).
@@ -18,7 +19,7 @@ test("Auskunft liefert die eigenen Daten, Löschen beendet das Konto", async ({
 
   expect(
     (
-      await konto.post("/api/auth/register", { data: { email: adresse, password: PASSWORT } })
+      await konto.post("/api/auth/register", { data: { email: adresse, password: PASSWORT }, headers: herkunft() })
     ).status(),
   ).toBe(200);
   await konto.put("/api/account/maps", { data: { preference: "waze" } });

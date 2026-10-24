@@ -30,6 +30,7 @@
     "import:streets": "tsx scripts/import/street-names.mts",
     "data:dedupe": "tsx scripts/import/dedupe.mts",
     "test:e2e": "playwright test",
+    "test:e2e:prod": "playwright test --config playwright.prod.config.ts",
     "sources:check": "tsx scripts/import/check-sources.mts",
     "import:gemeinden": "tsx scripts/import/gemeinden.mts",
     "import:grenzen": "tsx scripts/import/grenzen.mts",
@@ -39,7 +40,8 @@
     "import:osm-state": "tsx scripts/import/osm-state.mts",
     "report:abdeckung": "tsx scripts/import/coverage.mts",
     "sources:amtlich": "tsx scripts/import/find-official.mts",
-    "import:regional": "tsx scripts/import/regional.mts"
+    "import:regional": "tsx scripts/import/regional.mts",
+    "db:backup": "tsx scripts/backup-db.mts"
   },
   "dependencies": {
     "leaflet": "1.9.4",

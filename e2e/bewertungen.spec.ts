@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { herkunft } from "./herkunft";
 
 /**
  * Bewertungen (ToDos 8.1–8.7, Regel festgelegt 2026-10-19).
@@ -83,7 +84,7 @@ async function anmelden(page: import("@playwright/test").Page) {
 test.describe("Bewertungen", () => {
   test.beforeAll(async ({ playwright, baseURL }) => {
     const api = await playwright.request.newContext({ baseURL });
-    const angelegt = await api.post("/api/auth/register", { data: KONTO });
+    const angelegt = await api.post("/api/auth/register", { data: KONTO, headers: herkunft() });
     expect(angelegt.status()).toBe(200);
     await api.dispose();
   });

@@ -18,6 +18,8 @@ export default defineConfig({
   timeout: 60_000,
   expect: { timeout: 15_000 },
   fullyParallel: false,
+  // Testkonten nach dem Lauf entfernen (ToDo 12.11).
+  globalTeardown: "./e2e/global-teardown.ts",
   reporter: process.env.CI ? "github" : "list",
   use: {
     baseURL: "http://localhost:3000",

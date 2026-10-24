@@ -1,6 +1,7 @@
 import { DatabaseSync } from "node:sqlite";
 import path from "node:path";
 import { expect, test, type APIRequestContext, type Page } from "@playwright/test";
+import { herkunft } from "./herkunft";
 
 /**
  * Einladungen und Benutzerverwaltung (ToDos 18.1–18.3, geprüft unter 18.5).
@@ -31,11 +32,6 @@ const PASSWORT = "ein gutes langes Passwort";
 
 const eindeutig = () => `${Date.now()}-${Math.floor(Math.random() * 1e6)}`;
 
-function herkunft(): Record<string, string> {
-  const z = () => 1 + Math.floor(Math.random() * 250);
-  return { "x-forwarded-for": `10.${z()}.${z()}.${z()}` };
-}
-
 function datenbank(): DatabaseSync {
   const datei =
     process.env.WHEELEE_DB_PATH?.trim() || path.join(process.cwd(), ".data", "wheelee.sqlite");
@@ -49,6 +45,7 @@ async function adminAnlegen(api: APIRequestContext): Promise<string> {
   const adresse = `e2e-admin-${eindeutig()}@example.org`;
   const angelegt = await api.post("/api/auth/register", {
     data: { email: adresse, password: PASSWORT },
+    headers: herkunft(),
   });
   expect(angelegt.status()).toBe(200);
 

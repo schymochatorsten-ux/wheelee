@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { herkunft } from "./herkunft";
 
 /**
  * Passwort ändern und übrige Sitzungen verwerfen (ToDo 10.7).
@@ -19,7 +20,7 @@ test("Passwort ändern beendet andere Sitzungen, nicht die eigene", async ({
   const fremd = await playwright.request.newContext({ baseURL });
 
   expect(
-    (await eigen.post("/api/auth/register", { data: { email: adresse, password: ALT } })).status(),
+    (await eigen.post("/api/auth/register", { data: { email: adresse, password: ALT }, headers: herkunft() })).status(),
   ).toBe(200);
   expect(
     (await fremd.post("/api/auth/login", { data: { email: adresse, password: ALT } })).status(),

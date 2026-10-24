@@ -1,4 +1,5 @@
 import { expect, test, type APIRequestContext } from "@playwright/test";
+import { herkunft } from "./herkunft";
 
 /**
  * Die Karten-App am Konto (ToDo 11.3a).
@@ -28,6 +29,7 @@ test.beforeAll(async ({ playwright, baseURL }) => {
 
   const angelegt = await konto.post("/api/auth/register", {
     data: { email: adresse, password: PASSWORT },
+    headers: herkunft(),
   });
   expect(angelegt.status()).toBe(200);
 
