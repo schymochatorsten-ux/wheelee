@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
 import { useLocale, useT } from "@/i18n/context";
-import { rememberPlace, readRecent, type Place } from "@/lib/geocode";
+import { dedupePlaces, forgetPlace, rememberPlace, readRecent, type Place } from "@/lib/geocode";
 import { distanceMeters, formatDistance, type LatLng } from "@/lib/geo";
 
 /**
@@ -66,6 +66,31 @@ const IDLE_MS = 350;
  * überlebt – genau dann tippt man denselben Begriff nämlich erneut.
  */
 const cache = new Map<string, Place[]>();
+
+/** Dasselbe für die Treffer aus den eigenen Daten (ToDo 9.18 a). */
+const localCache = new Map<string, Place[]>();
+
+/** Ab wann die eigenen Daten befragt werden – früher als Nominatim, weil es nichts kostet. */
+const MIN_LOCAL_CHARS = 2;
+
+/** Kurze Pause, damit nicht jeder Buchstabe eine Anfrage an den eigenen Server ist. */
+const LOCAL_IDLE_MS = 120;
+
+/** Die getippten Buchstaben im Treffer hervorheben (ToDo 9.18 e). */
+function Highlight({ text, query }: { text: string; query: string }) {
+  const start = query ? text.toLowerCase().indexOf(query.toLowerCase()) : -1;
+  if (start < 0) return <>{text}</>;
+  const end = start + query.length;
+  return (
+    <>
+      {text.slice(0, start)}
+      <mark className="bg-transparent font-bold text-inherit">{text.slice(start, end)}</mark>
+      {text.slice(end)}
+    </>
+  );
+}
+
+const samePlace = (a: Place, b: Place) => a.label === b.label && Math.abs(a.lat - b.lat) < 1e-6;
 
 /**
  * Den Bezugspunkt auf etwa einen Kilometer runden.
@@ -144,6 +169,7 @@ export function DestinationSearch({
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<Place[]>([]);
   const [recent, setRecent] = useState<Place[]>([]);
+  const [local, setLocal] = useState<Place[]>([]);
   const [status, setStatus] = useState<"bereit" | "sucht" | "leer" | "fehler">("bereit");
   /** Welcher Vorschlag mit den Pfeiltasten angesteuert ist; -1 = keiner. */
   const [active, setActive] = useState(-1);
@@ -266,17 +292,88 @@ export function DestinationSearch({
     return () => clearTimeout(timer);
   }, [query, keyFor, search]);
 
+  /**
+   * Treffer aus den eigenen Daten: Orte und Straßen, in denen es Parkplätze
+   * gibt. Läuft getrennt von der Online-Suche und früher – sie braucht weder
+   * Nominatim noch eine lange Tippause.
+   */
+  useEffect(() => {
+    const term = query.trim();
+    if (term.length < MIN_LOCAL_CHARS) {
+      setLocal([]);
+      return;
+    }
+
+    const key = keyFor(term);
+    const known = localCache.get(key);
+    if (known) {
+      setLocal(known);
+      return;
+    }
+
+    let cancelled = false;
+    const timer = setTimeout(async () => {
+      try {
+        const url = new URL("/api/places", window.location.origin);
+        url.searchParams.set("q", term);
+        if (origin) {
+          url.searchParams.set("lat", String(origin.lat));
+          url.searchParams.set("lng", String(origin.lng));
+        }
+        const response = await fetch(url);
+        const data = (await response.json()) as { places?: Place[] };
+        const places = data.places ?? [];
+        localCache.set(key, places);
+        if (!cancelled) setLocal(places);
+      } catch {
+        // Ohne Netz bleibt es bei den letzten Zielen und der Online-Suche.
+        if (!cancelled) setLocal([]);
+      }
+    }, LOCAL_IDLE_MS);
+
+    return () => {
+      cancelled = true;
+      clearTimeout(timer);
+    };
+  }, [query, keyFor, origin]);
+
   const choose = (place: Place) => {
     setRecent(rememberPlace(place));
     setQuery("");
+    setLocal([]);
     setResults([]);
     setActive(-1);
     setOpen(false);
     onChoose(place);
   };
 
-  /** Was gerade in der Liste steht: Treffer, sonst die letzten Ziele. */
-  const shown = results.length > 0 ? results : query.trim().length === 0 ? recent : [];
+  /**
+   * Was gerade in der Liste steht. Ohne Eingabe die letzten Ziele; mit Eingabe
+   * zuerst die passenden letzten Ziele, dann Treffer aus den eigenen Daten, dann
+   * die der Online-Suche. Die eigenen Daten stehen vor Nominatim, weil sie
+   * schneller da sind und genau die Orte betreffen, an denen es Parkplätze gibt.
+   */
+  const term = query.trim();
+  const recentMatches =
+    term.length === 0
+      ? []
+      : recent.filter((place) => place.label.toLowerCase().includes(term.toLowerCase())).slice(0, 2);
+  const shown =
+    term.length === 0 ? recent : dedupePlaces([...recentMatches, ...local, ...results]).slice(0, 10);
+
+  /** Statuszeile: nur, wenn sie etwas zu sagen hat. */
+  const statusText =
+    status === "sucht"
+      ? t("search.searching")
+      : status === "fehler"
+        ? shown.length > 0
+          ? t("search.unavailableLocal")
+          : t("search.unavailable")
+        : status === "leer" && shown.length === 0
+          ? t("search.empty")
+          : term.length > 0 && term.length < MIN_CHARS
+            ? t("search.moreLetters")
+            : null;
 
   /**
    * Tastaturbedienung wie in einer Ortssuche gewohnt: Pfeile wählen, Eingabe
@@ -439,17 +536,14 @@ export function DestinationSearch({
         Die Statuszeile nimmt nur Platz ein, wenn sie etwas zu sagen hat. Eine
         immer sichtbare leere Zeile machte die Leiste ohne Nutzen höher.
       */}
-      {(status !== "bereit" || (query.trim().length > 0 && query.trim().length < MIN_CHARS)) && (
+      {statusText && (
         <div className="mt-1 flex items-center gap-2 px-1">
           <p
             id={`${listId}-status`}
             aria-live="polite"
             className="min-w-0 flex-1 text-xs text-neutral-500"
           >
-            {status === "sucht" && t("search.searching")}
-            {status === "leer" && t("search.empty")}
-            {status === "fehler" && t("search.unavailable")}
-            {status === "bereit" && t("search.moreLetters")}
+            {statusText}
           </p>
           {/*
             Bei einem Fehler muss ein zweiter Versuch möglich sein, ohne einen
@@ -471,7 +565,7 @@ export function DestinationSearch({
 
       {shown.length > 0 && (
         <>
-          {results.length === 0 && (
+          {term.length === 0 && (
             <p className="px-1 pt-2 pb-0.5 text-[11px] font-medium tracking-wide text-neutral-500 uppercase">
               {t("search.recent")}
             </p>
@@ -483,7 +577,16 @@ export function DestinationSearch({
             className="mt-1"
           >
             {shown.map((place, index) => (
-              <li key={`${place.label}-${place.lat}-${place.lng}`}>
+              /*
+                `role="none"`: Das `li` ist nur Verpackung. Ohne die Angabe steht
+                zwischen `listbox` und `option` ein `listitem`, und die
+                Struktur ist nach WAI-ARIA ungültig (ToDo 9.18 d).
+              */
+              <li
+                key={`${place.label}-${place.lat}-${place.lng}`}
+                role="none"
+                className="flex items-center gap-1"
+              >
                 <button
                   type="button"
                   id={`${listId}-option-${index}`}
@@ -491,7 +594,7 @@ export function DestinationSearch({
                   aria-selected={index === active}
                   onClick={() => choose(place)}
                   onMouseEnter={() => setActive(index)}
-                  className={`min-h-12 w-full rounded-xl px-1.5 py-2 text-left text-sm transition-colors focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none ${
+                  className={`min-h-12 min-w-0 flex-1 rounded-xl px-1.5 py-2 text-left text-sm transition-colors focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none ${
                     index === active
                       ? "bg-blue-50/80 dark:bg-blue-950/40"
                       : "hover:bg-neutral-100/70 dark:hover:bg-neutral-800/70"
@@ -506,7 +609,14 @@ export function DestinationSearch({
                     Auskunft, sondern Zufall.
                   */}
                   <span className="flex items-baseline gap-2">
-                    <span className="min-w-0 flex-1 truncate font-medium">{place.label}</span>
+                    <span className="min-w-0 flex-1 truncate font-medium">
+                      <Highlight text={place.label} query={term} />
+                    </span>
+                    {place.kind && (
+                      <span className="shrink-0 rounded bg-neutral-100 px-1.5 text-[11px] text-neutral-600 dark:bg-neutral-800 dark:text-neutral-400">
+                        {t(`search.kind.${place.kind}`)}
+                      </span>
+                    )}
                     {origin && (
                       <span className="shrink-0 text-xs text-neutral-500 tabular-nums">
                         {formatDistance(distanceMeters(origin, place), locale)}
@@ -517,6 +627,20 @@ export function DestinationSearch({
                     <span className="block truncate text-xs text-neutral-500">{place.detail}</span>
                   )}
                 </button>
+                {/*
+                  Ein letztes Ziel einzeln entfernen (ToDo 9.18 c). Nur dort, wo
+                  der Eintrag aus dem Gedächtnis des Geräts stammt.
+                */}
+                {recent.some((entry) => samePlace(entry, place)) && (
+                  <button
+                    type="button"
+                    onClick={() => setRecent(forgetPlace(place))}
+                    aria-label={`${t("search.forget")}: ${place.label}`}
+                    className={ICON_BUTTON}
+                  >
+                    <CloseIcon />
+                  </button>
+                )}
               </li>
             ))}
           </ul>

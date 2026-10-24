@@ -363,6 +363,10 @@ export const de = {
   "search.retry": "Erneut",
   "search.recent": "Zuletzt gesucht",
   "search.suggestions": "Vorschläge",
+  "search.unavailableLocal": "Die Online-Suche ist gerade nicht erreichbar. Gezeigt werden Treffer aus unseren Daten und deine letzten Ziele.",
+  "search.forget": "Aus den letzten Zielen entfernen",
+  "search.kind.city": "Ort",
+  "search.kind.street": "Straße",
 
   "nearest.spaces": "{count} Stellplätze",
   "nearest.approx": "Position ungefähr",

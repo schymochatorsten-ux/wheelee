@@ -364,6 +364,10 @@ export const en: Messages = {
   "search.retry": "Retry",
   "search.recent": "Recent searches",
   "search.suggestions": "Suggestions",
+  "search.unavailableLocal": "Online search is currently unavailable. Showing matches from our data and your recent destinations.",
+  "search.forget": "Remove from recent destinations",
+  "search.kind.city": "Place",
+  "search.kind.street": "Street",
 
   "nearest.spaces": "{count} spaces",
   "nearest.approx": "approximate position",

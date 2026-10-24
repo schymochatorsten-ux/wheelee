@@ -34,7 +34,7 @@ npm run test && npm run typecheck && npm run lint
 npm run check:slugs
 ```
 
-Erwartet: alle Unit-Tests grün (511 am 2026-10-24) ·
+Erwartet: alle Unit-Tests grün (521 am 2026-10-24) ·
 `Verzeichnis: 10.754 Gemeinden · davon an der Reihe: 204 · Seed-Dateien: 209`
 · „✅ Register und Seed-Dateien stimmen überein".
 
@@ -101,14 +101,8 @@ abgeglichen ist bislang eine Stadt.
 ## 9. Darstellung und Bedienung
 
 - [ ] 9.2a Echte dunkle Kacheln, nur wenn ein kostenloser Anbieter dies erlaubt (etwa CARTO Dark Matter); Bedingungen und Attribution online prüfen, kostenpflichtig wird abgelehnt.
-- [~] 9.9 Test mit NVDA/VoiceOver und Vergrößerung macht Torsten selbst. Offen für Claude: die ARIA-Struktur der Zielsuche (9.18 d).
-- [ ] 9.18 **Zielsuche verbessern** (Wunsch von Torsten; `src/components/DestinationSearch.tsx`, `src/lib/geocode.ts`). Ohne Dienst auf dem NAS; ein zweiter Geocoder nur mit ausdrücklicher Zusage:
-  - [ ] (a) **Eigene Orte zuerst, ohne Netz:** Gemeinden und Straßen aus dem Bestand als sofortige Vorschläge, Nominatim danach. Index klein halten (die Seite hat 128 KB, 5.4).
-  - [ ] (b) **Ohne Netz nicht „nicht erreichbar":** bei Fehler die letzten Ziele und Treffer aus (a) zeigen.
-  - [ ] (c) **Letzte Ziele einzeln entfernbar** und bei Eingabe anbietbar, wenn sie passen.
-  - [ ] (d) **Listbox-Struktur nach WAI-ARIA:** `li` ohne `role="none"` zwischen `ul[role=listbox]` und `button[role=option]`.
-  - [ ] (e) **Treffer erkennbar machen:** Art des Ortes und getippte Buchstaben hervorheben.
-  - [ ] (f) **Enter ohne sichtbare Liste** setzt ungesehen das Ziel; mit Vorschau statt blindem Setzen.
+- [ ] 9.9 Test mit NVDA/VoiceOver und Vergrößerung macht Torsten selbst; die ARIA-Struktur der Zielsuche ist angepasst (9.18, [Erledigt.md](Erledigt.md)).
+- [~] 9.18 **Zielsuche: Rest.** Gebaut sind (a)–(e), siehe [Erledigt.md](Erledigt.md). Offen: **(f) Enter ohne sichtbare Liste** setzt ungesehen das Ziel (`DestinationSearch.tsx`, `onKeyDown`); mit Vorschau statt blindem Setzen, dazu der E2E-Test „Enter sucht sofort“ anpassen. Ein zweiter Geocoder nur mit ausdrücklicher Zusage.
 
 ## 10. Datenschutz und Recht
 

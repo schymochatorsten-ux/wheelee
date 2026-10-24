@@ -367,6 +367,10 @@ export const es: Messages = {
   "search.retry": "Reintentar",
   "search.recent": "Búsquedas recientes",
   "search.suggestions": "Sugerencias",
+  "search.unavailableLocal": "La búsqueda en línea no está disponible ahora. Se muestran coincidencias de nuestros datos y tus destinos recientes.",
+  "search.forget": "Quitar de los destinos recientes",
+  "search.kind.city": "Lugar",
+  "search.kind.street": "Calle",
 
   "nearest.spaces": "{count} plazas",
   "nearest.approx": "posición aproximada",

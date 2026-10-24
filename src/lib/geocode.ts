@@ -8,6 +8,9 @@
 
 import { distanceMeters, type LatLng } from "./geo";
 
+/** Art eines Ortes, soweit sie sich verlässlich bestimmen lässt (ToDo 9.18 e). */
+export type PlaceKind = "city" | "street";
+
 export interface Place {
   /** Anzeigename, gekürzt auf das Wesentliche. */
   label: string;
@@ -15,6 +18,8 @@ export interface Place {
   detail: string;
   lat: number;
   lng: number;
+  /** Fehlt, wenn die Art unklar ist – dann zeigt die Oberfläche nichts an. */
+  kind?: PlaceKind;
 }
 
 interface NominatimResult {
@@ -23,6 +28,16 @@ interface NominatimResult {
   lon?: string;
   name?: string;
   address?: Record<string, string>;
+  addresstype?: string;
+}
+
+const CITY_TYPES = new Set(["city", "town", "village", "hamlet", "municipality", "suburb", "borough"]);
+
+function kindOf(addresstype: string | undefined): PlaceKind | undefined {
+  if (!addresstype) return undefined;
+  if (CITY_TYPES.has(addresstype)) return "city";
+  if (addresstype === "road") return "street";
+  return undefined;
 }
 
 /**
@@ -46,7 +61,8 @@ export function toPlace(result: NominatimResult): Place | null {
   // „Deutschland" am Ende hilft niemandem, der in Deutschland sucht.
   const rest = parts.slice(1).filter((part) => part !== "Deutschland" && part.length > 0);
 
-  return { label, detail: rest.slice(0, 3).join(", "), lat, lng };
+  const kind = kindOf(result.addresstype);
+  return { label, detail: rest.slice(0, 3).join(", "), lat, lng, ...(kind ? { kind } : {}) };
 }
 
 /** Treffer von Nominatim in unsere Form bringen, leere Einträge verwerfen. */
@@ -188,6 +204,23 @@ export function readRecent(): Place[] {
   } catch {
     return [];
   }
+}
+
+/** Ein einzelnes Ziel aus den letzten entfernen (ToDo 9.18 c). */
+export function forgetPlace(place: Place, existing: Place[] = readRecent()): Place[] {
+  const next = existing.filter(
+    (entry) => !(entry.label === place.label && Math.abs(entry.lat - place.lat) < 1e-6),
+  );
+
+  if (typeof window !== "undefined") {
+    try {
+      window.localStorage.setItem(RECENT_KEY, JSON.stringify(next));
+    } catch {
+      // Ohne Speicher gilt die Änderung nur für diese Sitzung.
+    }
+  }
+
+  return next;
 }
 
 /** Ein Ziel vorn einfügen, Dubletten entfernen, Liste kurz halten. */

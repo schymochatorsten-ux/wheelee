@@ -165,10 +165,52 @@ test.describe("Zielsuche", () => {
 
     await page.goto("/");
     await page.getByRole("button", { name: /Wohin willst du/ }).click();
-    await page.getByRole("combobox").fill("Uniklinik");
+    // Ein Begriff, den auch die eigenen Daten nicht kennen (ToDo 9.18).
+    await page.getByRole("combobox").fill("Zzzzzz Qqqqq");
 
     await expect(page.getByText("Die Ortssuche ist gerade nicht erreichbar.")).toBeVisible();
     await expect(page.getByRole("button", { name: "Erneut" })).toBeVisible();
+  });
+
+  test("bei nicht erreichbarer Online-Suche bleiben Treffer aus den eigenen Daten (ToDo 9.18)", async ({
+    page,
+    context,
+  }) => {
+    await context.route("**/api/geocode**", (route) =>
+      route.fulfill({ json: { places: [], error: "Suche gerade nicht erreichbar." } }),
+    );
+
+    await page.goto("/");
+    await page.getByRole("button", { name: /Wohin willst du/ }).click();
+    await page.getByRole("combobox").fill("Frankfurt");
+
+    await expect(page.getByText(/Gezeigt werden Treffer aus unseren Daten/)).toBeVisible();
+    await expect(page.getByRole("option", { name: /^Frankfurt.*Ort/ }).first()).toBeVisible();
+  });
+
+  test("eigene Orte erscheinen sofort, mit Art und hervorgehobenen Buchstaben (ToDo 9.18)", async ({
+    page,
+  }) => {
+    await page.goto("/");
+    await page.getByRole("button", { name: /Wohin willst du/ }).click();
+    await page.getByRole("combobox").fill("Frankfurt");
+
+    const ort = page.getByRole("option", { name: /^Frankfurt.*Ort/ }).first();
+    await expect(ort).toBeVisible();
+    await expect(ort.locator("mark")).toHaveText("Frankfurt");
+  });
+
+  test("ein letztes Ziel lässt sich einzeln entfernen (ToDo 9.18)", async ({ page }) => {
+    await page.goto("/");
+    await page.getByRole("button", { name: /Wohin willst du/ }).click();
+    await page.getByRole("combobox").fill("Uniklinik");
+    await page.getByRole("option", { name: new RegExp(ZIEL.label) }).click();
+
+    await page.getByRole("button", { name: "Ändern" }).click();
+    await expect(page.getByRole("option", { name: new RegExp(ZIEL.label) })).toBeVisible();
+
+    await page.getByRole("button", { name: /Aus den letzten Zielen entfernen/ }).click();
+    await expect(page.getByRole("option", { name: new RegExp(ZIEL.label) })).toHaveCount(0);
   });
 
   test("Ziel aufheben führt zurück zum eigenen Standort", async ({ page }) => {
