@@ -106,7 +106,7 @@ abgeglichen ist bislang eine Stadt.
 
 ## 15. Mehrsprachigkeit
 
-- [~] 15.1 **Weitere europäische Sprachen** (wieder aufgenommen 2026-10-24, Torsten: nur europäische, Englisch inklusive; Türkisch und Arabisch entfallen). Fertig sind Deutsch, Englisch, Spanisch, Französisch. Eine nach der anderen, jede maschinell vorübersetzt wie in 15.6: Italienisch, Polnisch, Niederländisch, Portugiesisch, Russisch. Je Sprache: `src/i18n/<code>.ts`, Eintrag in `index.ts`, Zeile in `opening-hours.test.ts` (Höchstparkdauer), ein E2E-Test in `sprache.spec.ts`. Die Systemsprache wird bereits als erster Vorschlag ausgewertet (siehe [Erledigt.md](Erledigt.md), 15.5); Aufbau und Gründe unter 15.1 und 15.6.
+- [~] 15.1 **Weitere europäische Sprachen** (wieder aufgenommen 2026-10-24, Torsten: nur europäische, Englisch inklusive; Türkisch und Arabisch entfallen). Gebaut sind Deutsch, Englisch, Spanisch, Französisch, Italienisch, Polnisch (Stand in [Erledigt.md](Erledigt.md), 15.1). Eine nach der anderen, jede maschinell vorübersetzt wie in 15.6: Niederländisch, Portugiesisch, Russisch (Russisch hat wie Polnisch drei Zahlwortformen, siehe dort). Für Italienisch und Polnisch fehlt noch die mehrfache maschinelle Prüfung nach 15.6. Je Sprache: `src/i18n/<code>.ts`, Eintrag in `index.ts`, Zeile in `opening-hours.test.ts` (Höchstparkdauer), ein E2E-Test in `sprache.spec.ts`. Die Systemsprache wird bereits als erster Vorschlag ausgewertet (siehe [Erledigt.md](Erledigt.md), 15.5); Aufbau und Gründe unter 15.1 und 15.6.
 
 ---
 

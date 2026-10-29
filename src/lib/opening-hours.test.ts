@@ -478,6 +478,8 @@ describe("Zeitangaben je Sprache", () => {
           en: ["2 hours", "1 hour", "15 minutes", "0.5 hours"],
           es: ["2 horas", "1 hora", "15 minutos", "0,5 horas"],
           fr: ["2 heures", "1 heure", "15 minutes", "0,5 heures"],
+          it: ["2 ore", "1 ora", "15 minuti", "0,5 ore"],
+          pl: ["2 godz.", "1 godz.", "15 min", "0,5 godz."],
         };
         expect(
           ["2 Stunden", "1 Stunde", "15 min", "0,5 Stunden"].map((q) => maxStay(q, sprache)),

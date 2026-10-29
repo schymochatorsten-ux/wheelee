@@ -159,6 +159,50 @@ test.describe("Französisch", () => {
   });
 });
 
+test.describe("Italienisch", () => {
+  test("Browsersprache Italienisch: Oberfläche und Haftungshinweis, Rechtstexte deutsch", async ({
+    browser,
+    baseURL,
+  }) => {
+    const context = await browser.newContext({ locale: "it-IT", baseURL });
+    const page = await context.newPage();
+    await page.goto("/");
+    await expect(page.locator("html")).toHaveAttribute("lang", "it");
+    await page.getByRole("tab", { name: "Impostazioni" }).click();
+    await expect(page.getByRole("heading", { name: "Lingua", level: 2 })).toBeVisible();
+    await expect(page.getByRole("radio", { name: "Italiano" })).toBeChecked();
+    await expect(page.getByRole("heading", { name: "Da leggere prima di partire" })).toBeVisible();
+    await expect(page.getByText("sul posto valgono i cartelli e la segnaletica")).toBeVisible();
+    await expect(page.getByText("Bitte vor der Fahrt lesen")).toHaveCount(0);
+
+    await page.goto("/impressum");
+    await expect(page.getByRole("heading", { name: "Impressum", level: 1 })).toBeVisible();
+    await context.close();
+  });
+});
+
+test.describe("Polnisch", () => {
+  test("Browsersprache Polnisch: Oberfläche und Haftungshinweis, Rechtstexte deutsch", async ({
+    browser,
+    baseURL,
+  }) => {
+    const context = await browser.newContext({ locale: "pl-PL", baseURL });
+    const page = await context.newPage();
+    await page.goto("/");
+    await expect(page.locator("html")).toHaveAttribute("lang", "pl");
+    await page.getByRole("tab", { name: "Ustawienia" }).click();
+    await expect(page.getByRole("heading", { name: "Język", level: 2 })).toBeVisible();
+    await expect(page.getByRole("radio", { name: "Polski" })).toBeChecked();
+    await expect(page.getByRole("heading", { name: "Przeczytaj przed wyjazdem" })).toBeVisible();
+    await expect(page.getByText("na miejscu obowiązują znaki i oznaczenia")).toBeVisible();
+    await expect(page.getByText("Bitte vor der Fahrt lesen")).toHaveCount(0);
+
+    await page.goto("/impressum");
+    await expect(page.getByRole("heading", { name: "Impressum", level: 1 })).toBeVisible();
+    await context.close();
+  });
+});
+
 test.describe("Zeitangaben und Entfernungen (ToDo 15.3, 15.4)", () => {
   /**
    * Aschaffenburg, Parkplatz mit `Mo-Sa 09:00-20:00` in den Daten
