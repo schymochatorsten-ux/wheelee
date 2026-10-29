@@ -752,7 +752,23 @@ export async function fetchGeoJson(url: string): Promise<{ features: GeoFeature[
       { features?: GeoFeature[]; [key: string]: unknown } | Record<string, unknown>[];
 
     if (Array.isArray(json)) return { features: recordsToFeatures(json), url: resolved };
-    if (Array.isArray(json.features)) return { features: json.features, url: resolved };
+    if (Array.isArray(json.features)) {
+      /*
+       * GeoServer nennt das Koordinatensystem im Kopf der Datei
+       * (`"crs": {"properties": {"name": "urn:ogc:def:crs:EPSG::25832"}}`), nicht
+       * an jedem Objekt. Ohne diese Angabe rät `coordinatesOf` die UTM-Zone –
+       * bei München ginge das zufällig gut, bei Dresden (Zone 33) ging es 450 km
+       * daneben (Datenpflege.md). Die Angabe des Dienstes gewinnt.
+       */
+      const crs = (json.crs as { properties?: { name?: unknown } } | undefined)?.properties?.name;
+      const srs = typeof crs === "string" ? crs : null;
+      return {
+        features: srs
+          ? json.features.map((feature) => ({ ...feature, srs: feature.srs ?? srs }))
+          : json.features,
+        url: resolved,
+      };
+    }
 
     // Manche Portale verpacken die Liste in ein Feld.
     const embedded = Object.values(json).find(

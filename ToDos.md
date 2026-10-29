@@ -55,7 +55,7 @@ jede Stufe erst nach den Prüfungen geschrieben wird.
 
 | #   | Was                                                              | Warum hier                                         |
 | --- | ---------------------------------------------------------------- | -------------------------------------------------- |
-| 1   | **10.16** Datenschutzerklärung (Platzhalter), **12.7a** Symbol   | Ohne Daten, ohne Netz                              |
+| 1   | **12.7a** Symbol                                                 | Ohne Daten, ohne Netz                              |
 | 2   | **3.10** auswerten (Lauf liegt vor), **3.4** laufen lassen, **3.3** bauen und laufen lassen | Prüfen vor dem Einspielen |
 | 3   | **2d.8a** München amtlich, danach die übrigen acht Städte        | Ersetzt einen Bestand, deshalb nach den Prüfungen  |
 | 4   | **2e.11** Saarland-Probelauf, dann **2e.6** in Stufen (D-07)     | Mit Streuungs- und Dichteprüfung                   |
@@ -79,25 +79,28 @@ abgeglichen ist bislang eine Stadt.
 
 ## 2. Datenquellen und Import
 
-- [ ] 2d.8a **München auf die amtliche Quelle umstellen** (entschieden, D-11 in [Erledigt.md](Erledigt.md); Befund dort unter 2d.8a: 568 Standorte statt 218). Zu tun: Importer um **handgepflegte Quellen** erweitern (München steht nicht in GovData, `sources:scan` würde einen Eintrag in `_quellen-status.json` überschreiben), WFS-Ebene `mor_wfs:behindertenparkplaetze` einlesen, **EPSG:25832 prüfen** (steht im GeoJSON unter `crs`), Status „Baustelle“ mit Zeitraum und Hinweis anzeigen, Lizenz dl-by-de 2.0 eintragen. **Danach die übrigen acht Städte ansehen:** `npm run sources:check` findet sie. Bei Kiel, Krefeld und Aachen ist die Ablehnung richtig (Anwohnerparken); bei Bochum, Bielefeld, Karlsruhe, Norderstedt und Viersen lohnt der Blick aufs Stadtportal.
+- [~] 2d.8a **Neun Städte mit ungenutzter amtlicher Quelle.** München ist umgestellt (Stand in [Erledigt.md](Erledigt.md), 2d.8a). **Offen: die übrigen acht ansehen:** `npm run sources:check` findet sie. Bei Kiel, Krefeld und Aachen ist die Ablehnung richtig (Anwohnerparken); bei Bochum, Bielefeld, Karlsruhe, Norderstedt und Viersen lohnt der Blick aufs Stadtportal.
 - [ ] 2e.6 **Restliche Gemeinden aus OpenStreetMap, in Stufen** (Entscheidung D-07, [Erledigt.md](Erledigt.md)): ab 20.000, dann 10.000, dann 5.000, dann alle; jede Stufe erst nach den Prüfungen (Streuung über 15 km, Dichte über dem Dreifachen des Medians). Voraussetzung ist 2e.11.
 - [~] 2e.11 **Massendaten ohne Overpass holen.** Der PBF-Leser steht (`scripts/import/pbf.mts`, Stand in [Erledigt.md](Erledigt.md)). Angeschlossen: `npm run import:osm-state -- <land> --pbf <datei> --dry`. **Offen:** einen Auszug laden (`https://download.geofabrik.de/europe/germany/<land>-latest.osm.pbf`, ODbL) und den ersten Probelauf an einem kleinen Land (Saarland) gegen die Overpass-Zahlen halten, nicht gleich NRW. Freigegeben (D-11).
 
 ## 3. Datenvalidierung
 
-- [ ] 3.3 **Straßenabgleich:** nennt die Rückwärtssuche bei der Koordinate dieselbe Straße wie die Quelle? Für Frankfurt gibt es das schon, für alle anderen nicht.
+- [~] 3.3 **Straßenabgleich:** Werkzeug steht (`npm run check:street-names -- <stadt> [--n 60 | --alle]`, Stand in [Erledigt.md](Erledigt.md)). **Offen:** für die amtlichen Städte laufen lassen (Stichprobe je Stadt, eine Anfrage je Sekunde) und die gemeldeten Standorte ansehen.
 - [~] 3.4 **Abstand zur nächsten Straße.** Werkzeug steht (`npm run check:streets -- <stadt>`, Stand in [Erledigt.md](Erledigt.md)). **Offen:** einmal für die 23 amtlichen Städte laufen lassen (eine Overpass-Abfrage je Stadt, mit Pausen, erst nach dem laufenden 3.10) und die gemeldeten Standorte ansehen.
 - [ ] 3.10 **Den Kreuzvergleich über alle 23 amtlichen Städte laufen lassen.** Abgeglichen ist bislang **eine** Stadt (Germersheim). `npm run validate` **mit** Netz; ansehen: Ausreißer nach unten und die Gruppe **„nur OSM"**.
 
 
+
 ## 10. Datenschutz und Recht
 
-- [ ] 10.16 **Datenschutzerklärung um den Mailversand ergänzen** (entschieden: Platzhalter-Abschnitt, D-11). Zu schreiben: Abschnitt zu „Passwort vergessen“ und „E-Mail ändern“ (Zweck, Rechtsgrundlage, Token eine Stunde gültig, danach gelöscht, Mailanbieter sieht die Adresse). Der Anbieter kommt aus einer Variable (`WHEELEE_MAIL_PROVIDER`), **der Abschnitt erscheint nur, wenn der Mailversand eingeschaltet ist**; ohne Angabe steht dort ein sichtbarer Hinweis statt eines erfundenen Namens (wie beim Impressum). Ansatz: `src/app/datenschutz/page.tsx`, Test in `e2e/rechtstexte.spec.ts`. **Nach dem Bau trägt Torsten den Anbieter und den Stand des Auftragsverarbeitungsvertrags in die `.env` ein** (Eintrag in `deploy/env.beispiel`); bis dahin keine SMTP-Variablen setzen.
+Befunde der rechtlichen Durchsicht vom 2026-10-29 stehen in [Erledigt.md](Erledigt.md) („Rechtliche Durchsicht“); der Entwurf des Verarbeitungsverzeichnisses liegt in [Verarbeitungsverzeichnis.md](Verarbeitungsverzeichnis.md). **Beides ersetzt keine Rechtsberatung.**
 
+- [!] 10.17 **Art. 9 DSGVO: Gesundheitsbezug.** Wer Behindertenparkplätze als Favoriten speichert oder bewertet, lässt Rückschlüsse auf die Gesundheit zu, auch wenn die App nie danach fragt. **Braucht eine Antwort von einer juristisch urteilsfähigen Person**, ob das als besondere Kategorie gilt und ob bei der Registrierung eine ausdrückliche Einwilligung nötig ist (Checkbox, Art. 9 Abs. 2 lit. a). Danach ggf. Registrierung und Einladung anpassen, Datenschutzerklärung ergänzen.
+- [!] 10.18 **Gesamtprüfung durch eine rechtskundige Person** vor der Veröffentlichung: Rechtsgrundlagen der Datenschutzerklärung, Verarbeitungsverzeichnis, Einordnung der Offline-Kopien im Browser (§ 25 TDDDG, „unbedingt erforderlich“?), Drittlandhinweis zu den Kartenkacheln. Sie war schon vor diesem Datum vorgesehen (README, „Rechtstexte“).
 
 ## 12. Qualität und Deployment
 
-- [ ] 12.7a Symbol gestalterisch überarbeiten (entschieden: ein Vorschlag, D-11). Quelle ist `scripts/make-icons.mts` (`npm run icons`) und `public/icon.svg`. Vorschlag **zum Ansehen ablegen**, nicht gleich ersetzen; Übernahme erst nach Torstens OK.
+- [!] 12.7a Symbol: **Vorschlag liegt vor** als `public/icon-vorschlag.svg` (Marker mit Zugänglichkeitssymbol aus Strichen; bleibt bei 32 px erkennbar, wo die gefüllte Fassung zusammenläuft). **Braucht von dir:** ansehen und sagen, ob es `public/icon.svg` ersetzen soll. Dann `icon.svg` überschreiben und PNGs neu erzeugen – `scripts/make-icons.mts` braucht `sharp`, das **nicht in `package.json`** steht (vorher klären, ob es als Entwicklungsabhängigkeit aufgenommen wird).
 
 ## 15. Mehrsprachigkeit
 
@@ -109,6 +112,17 @@ abgeglichen ist bislang eine Stadt.
 
 **Nichts hiervon wird gebaut, bevor du es Punkt für Punkt freigibst.** Die Erwägungen stehen in
 [Erledigt.md](Erledigt.md) unter „Erwägungen zu 13, 15 und 16".
+
+**Abschnitt 19 – Erweiterungsvorschläge (Durchsicht vom 2026-10-29).** Jeweils ein Satz, warum es sich lohnen würde:
+
+- [-] 19.1 **Automatische Zugänglichkeitsprüfung** (`@axe-core/playwright` als Entwicklungsabhängigkeit, ein E2E-Test je Ansicht): Die Zielgruppe ist barrierebedürftig, und ein Kontrastfehler fällt sonst erst im Gebrauch auf.
+- [-] 19.2 **Monatlicher Aktualitätslauf auf dem NAS** (systemd-Timer für `sources:check` und `validate`, Ergebnis als Datei): Datenpflege.md verlangt ihn, er läuft bisher nur von Hand.
+- [-] 19.3 **Zeitgesteuerte Sicherung** (`db:backup` als Timer mit Rotation): Das Verfahren steht, der Takt nicht.
+- [-] 19.4 **Öffentliche Abdeckungsseite** („Wie vollständig sind die Daten für meine Stadt?“, aus `_abdeckung.md`): Die App sagt schon, dass OSM-Daten unvollständig sind; mit Zahl je Stadt wird das nachprüfbar.
+- [-] 19.5 **„Nur OSM“ und „aufgehoben gemeldet“ als OSM-Hinweise zurückgeben** (von Hand, über OpenStreetMap-Notizen): Wer hier einen Fehler findet, hilft allen, die dieselbe Karte nutzen.
+- [-] 19.6 **Laufender Betriebsmonitor** (Eintrag in nfuptime, steht in der Checkliste von `wheelee-infrastruktur.md`): Ein Ausfall fiele sonst erst durch Nutzer:innen auf.
+- [-] 19.7 **Hinweis „Daten dieser Stadt sind älter als N Monate“ in der Listenansicht** (nutzt `generatedAt` je Seed): Die Offline-Ansicht warnt schon bei sechs Monaten, die Online-Ansicht nicht.
+- [-] 19.8 **Geteilte Lizenzliste in der App** (alle Quellenvermerke mit Link auf einer Seite statt je Stadt in der Liste): dl-de/by-2.0 verlangt den Vermerk, und er ist heute nur in der Städteliste zu finden.
 
 **Abschnitt 13 – Finanzierung.** Wer trägt die Kosten, und zu welchem Preis?
 

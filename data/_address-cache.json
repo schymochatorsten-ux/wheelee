@@ -573,5 +573,205 @@
   "54.17385,12.18039": {
     "street": "Backofenschneise",
     "houseNumber": null
+  },
+  "48.13026,11.67048": {
+    "street": "Salzmesserstraße",
+    "houseNumber": "56",
+    "place": "15.1"
+  },
+  "48.18161,11.52946": {
+    "street": "Hanauer Straße",
+    "houseNumber": null,
+    "place": "Moosach"
+  },
+  "48.17544,11.56565": {
+    "street": "Schleißheimer Straße",
+    "houseNumber": null,
+    "place": "Schwabing-West"
+  },
+  "48.11572,11.57008": {
+    "street": "Hans-Mielich-Straße",
+    "houseNumber": null,
+    "place": "Giesing"
+  },
+  "48.13675,11.57744": {
+    "street": "Sparkassenstraße",
+    "houseNumber": "1",
+    "place": "Altstadt-Lehel"
+  },
+  "48.12060,11.61769": {
+    "street": "Bad-Schachener-Straße",
+    "houseNumber": null,
+    "place": "Echarding"
+  },
+  "48.11457,11.56820": {
+    "street": "Konradinstraße",
+    "houseNumber": "23",
+    "place": "Giesing"
+  },
+  "48.13148,11.57019": {
+    "street": "Angertorstraße",
+    "houseNumber": "3",
+    "place": "Altstadt-Lehel"
+  },
+  "48.13687,11.50336": {
+    "street": "Hogenbergstraße",
+    "houseNumber": "22",
+    "place": "Laim"
+  },
+  "48.11839,11.58572": {
+    "street": "Sankt-Bonifatius-Straße",
+    "houseNumber": null,
+    "place": "Feldmüllersiedlung"
+  },
+  "48.10118,11.64599": {
+    "street": "Thomas-Dehler-Straße",
+    "houseNumber": null,
+    "place": "Neuperlach"
+  },
+  "48.16119,11.56782": {
+    "street": "Hohenzollernstraße",
+    "houseNumber": null,
+    "place": "Schwabing-West"
+  },
+  "48.12826,11.59662": {
+    "street": "Lothringer Straße",
+    "houseNumber": null,
+    "place": "Haidhausen"
+  },
+  "48.13456,11.56769": {
+    "street": "Herzog-Wilhelm-Straße",
+    "houseNumber": "29",
+    "place": "Altstadt-Lehel"
+  },
+  "48.14558,11.52955": {
+    "street": "Richelstraße",
+    "houseNumber": "11",
+    "place": "Postversuchssiedlung"
+  },
+  "48.14138,11.58557": {
+    "street": "Christophstraße",
+    "houseNumber": "12",
+    "place": "Lehel"
+  },
+  "48.10093,11.61840": {
+    "street": "Hochäckerstraße",
+    "houseNumber": null,
+    "place": "Perlach"
+  },
+  "48.16823,11.57396": {
+    "street": "Belgradstraße",
+    "houseNumber": "72",
+    "place": "Schwabing-West"
+  },
+  "48.13623,11.60841": {
+    "street": "Einsteinstraße",
+    "houseNumber": null,
+    "place": "Haidhausen"
+  },
+  "48.12415,11.58355": {
+    "street": "Am Neudeck",
+    "houseNumber": null,
+    "place": "Nockherberg"
+  },
+  "48.11884,11.53817": {
+    "street": "Meindlstraße",
+    "houseNumber": null,
+    "place": "Sendlinger Berg"
+  },
+  "48.12237,11.59037": {
+    "street": "Welfenstraße",
+    "houseNumber": null,
+    "place": "Au"
+  },
+  "48.13919,11.57097": {
+    "street": "Ettstraße",
+    "houseNumber": "4",
+    "place": "Altstadt-Lehel"
+  },
+  "48.13806,11.53972": {
+    "street": "Westendstraße",
+    "houseNumber": "76",
+    "place": "Schwanthalerhöhe"
+  },
+  "48.14608,11.44426": {
+    "street": "Heimburgstraße",
+    "houseNumber": "2c",
+    "place": "Pasing"
+  },
+  "48.18593,11.54796": {
+    "street": "Moosacher Straße",
+    "houseNumber": null,
+    "place": "Olympisches Dorf"
+  },
+  "48.14239,11.59962": {
+    "street": "Möhlstraße",
+    "houseNumber": "12",
+    "place": "Bogenhausen"
+  },
+  "48.14869,11.44052": {
+    "street": "Friedrichshafener Straße",
+    "houseNumber": "8",
+    "place": "Aubing"
+  },
+  "48.18031,11.51254": {
+    "street": "Dachauer Straße",
+    "houseNumber": "421",
+    "place": "Moosach"
+  },
+  "48.20121,11.57290": {
+    "street": "Rathenaustraße",
+    "houseNumber": "74",
+    "place": "Harthof"
+  },
+  "48.15957,11.53353": {
+    "street": "Frundsbergstraße",
+    "houseNumber": "62",
+    "place": "Neuhausen-Nymphenburg"
+  },
+  "48.13904,11.55296": {
+    "street": "Bayerstraße",
+    "houseNumber": "79",
+    "place": "Ludwigsvorstadt"
+  },
+  "48.17273,11.62757": {
+    "street": "Oberföhringer Straße",
+    "houseNumber": "226",
+    "place": "Sankt Emmeram"
+  },
+  "48.11055,11.57290": {
+    "street": "Harlachinger Straße",
+    "houseNumber": null,
+    "place": "Giesing"
+  },
+  "48.10225,11.64375": {
+    "street": "Charles-de-Gaulle-Straße",
+    "houseNumber": "4",
+    "place": "Neuperlach"
+  },
+  "48.18161,11.60369": {
+    "street": "Garchinger Straße",
+    "houseNumber": "37",
+    "place": "Freimann"
+  },
+  "48.11734,11.52614": {
+    "street": "Partnachstraße",
+    "houseNumber": "7",
+    "place": "Kriegersiedlung"
+  },
+  "48.14200,11.57531": {
+    "street": "Salvatorplatz",
+    "houseNumber": "1",
+    "place": "Altstadt-Lehel"
+  },
+  "48.17601,11.57925": {
+    "street": "Rümannstraße",
+    "houseNumber": "62",
+    "place": "Schwabing-West"
+  },
+  "48.17882,11.56423": {
+    "street": "Riesenfeldstraße",
+    "houseNumber": "18",
+    "place": "Milbertshofen-Am Hart"
   }
 }

@@ -502,7 +502,7 @@ export const it: Messages = {
   "api.adminCannotChange": "Non è possibile: deve rimanere almeno un account amministratore attivo, e il tuo account lo elimini nelle impostazioni dell’account.",
   "api.lastAdminCannotDelete": "Il tuo account è l’ultimo account amministratore attivo e non può essere eliminato. Rendi prima amministratore qualcun altro.",
   "users.title": "Utenti e inviti",
-  "users.intro": "Gli amministratori gestiscono gli account e invitano altri amministratori. L’app non invia e-mail: ottieni un link che inoltri tu stesso.",
+  "users.intro": "Gli amministratori gestiscono gli account e invitano altri amministratori. L’app non invia gli inviti per e-mail: ottieni un link che inoltri tu stesso.",
   "users.inviteEmail": "Indirizzo e-mail per l’invito",
   "users.inviteRole": "Ruolo",
   "users.role.admin": "Amministratore",

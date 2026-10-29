@@ -504,7 +504,7 @@ export const pl: Messages = {
   "api.adminCannotChange": "To niemożliwe: musi pozostać co najmniej jedno aktywne konto administratora, a własne konto usuwasz w ustawieniach konta.",
   "api.lastAdminCannotDelete": "Twoje konto jest ostatnim aktywnym kontem administratora i nie można go usunąć. Najpierw nadaj uprawnienia administratora komuś innemu.",
   "users.title": "Użytkownicy i zaproszenia",
-  "users.intro": "Administratorzy zarządzają kontami i zapraszają innych administratorów. Aplikacja nie wysyła e-maili: otrzymujesz link, który przekazujesz samodzielnie.",
+  "users.intro": "Administratorzy zarządzają kontami i zapraszają innych administratorów. Aplikacja nie wysyła zaproszeń e-mailem: otrzymujesz link, który przekazujesz samodzielnie.",
   "users.inviteEmail": "Adres e-mail do zaproszenia",
   "users.inviteRole": "Rola",
   "users.role.admin": "Administrator",

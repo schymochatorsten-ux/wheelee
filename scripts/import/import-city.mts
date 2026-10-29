@@ -30,6 +30,7 @@ import {
   type GeoFeature,
 } from "./geo-source.mjs";
 import { importFromOsm } from "./osm-source.mjs";
+import { manualSourcesFor, type ManualSource } from "./manual-sources.mjs";
 
 interface SourceEntry {
   title: string;
@@ -104,6 +105,7 @@ function toSpots(
   city: GermanCity,
   features: GeoFeature[],
   sourceLabel: string,
+  hooks?: Pick<ManualSource, "noteOf" | "idOf">,
 ): { spots: ParkingSpot[]; skipped: number; fields: Record<string, string | undefined> } {
   const sample = features.find((feature) => feature.properties) ?? features[0];
   const fields = mapFields(sample?.properties ?? {});
@@ -139,12 +141,14 @@ function toSpots(
     const time = fields.timeRestriction ? asText(properties[fields.timeRestriction]) : null;
 
     spots.push({
-      id: spotId(city.slug, feature, index),
+      id: hooks?.idOf?.(properties)
+        ? `${city.slug}-${createHash("sha256").update(hooks.idOf(properties)!, "utf8").digest("hex").slice(0, 10)}`
+        : spotId(city.slug, feature, index),
       city: city.slug,
       label,
       street: explicitStreet ?? parsed.street,
       houseNumber: explicitNumber ?? parsed.houseNumber,
-      note: parsed.note,
+      note: [hooks?.noteOf?.(properties) ?? null, parsed.note].filter(Boolean).join(" · ") || null,
       timeRestriction: time && !NO_RESTRICTION.test(time) ? time : (parsed.timeRestriction ?? null),
       district: readDistrict(fields.district ? properties[fields.district] : null) ?? city.name,
       spotCount: fields.spotCount ? readCount(properties[fields.spotCount]) : 1,
@@ -393,7 +397,10 @@ async function importCity(city: GermanCity): Promise<void> {
   let suspect: { title: string; spaces: number; locations: number } | null = null;
 
   // 1. Amtliche Geodienste, in der Reihenfolge WFS, dann GeoJSON.
-  for (const official of entry?.official ?? []) {
+  const manual = manualSourcesFor(city.slug);
+  // Handgepflegte Quellen (manual-sources.mts) vor den gefundenen: Sie stehen
+  // dort, weil GovData sie nicht kennt, und sind geprüft.
+  for (const official of [...manual, ...(entry?.official ?? [])]) {
     // Reihenfolge: Geodienste zuerst, dann fertige Dateien.
     const ordered = ["WFS", "ARCGIS", "GEOJSON", "JSON", "CSV"].flatMap((format) =>
       official.resources.filter((resource) => resource.format === format),
@@ -423,7 +430,17 @@ async function importCity(city: GermanCity): Promise<void> {
         }
 
         const sourceLabel = `${official.title} – ${city.name} (${official.license})`;
-        const { spots, skipped, fields } = toSpots(city, result.features, sourceLabel);
+        const { spots, skipped, fields } = toSpots(
+          city,
+          result.features,
+          sourceLabel,
+          "noteOf" in official || "idOf" in official
+            ? {
+                noteOf: (official as ManualSource).noteOf,
+                idOf: (official as ManualSource).idOf,
+              }
+            : undefined,
+        );
 
         if (spots.length === 0) {
           console.log(`  → keine verwertbare Geometrie (${skipped} übersprungen)`);

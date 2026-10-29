@@ -514,7 +514,7 @@ export const fr: Messages = {
     "Votre compte est le dernier compte administrateur actif et ne peut pas être supprimé. Nommez d'abord quelqu'un d'autre administrateur.",
   "users.title": "Utilisateurs et invitations",
   "users.intro":
-    "Les administrateurs gèrent les comptes et invitent d'autres administrateurs. L'application n'envoie pas d'e-mails : vous obtenez un lien que vous transmettez vous-même.",
+    "Les administrateurs gèrent les comptes et invitent d'autres administrateurs. L'application n'envoie pas les invitations par e-mail : vous obtenez un lien que vous transmettez vous-même.",
   "users.inviteEmail": "Adresse e-mail de l'invitation",
   "users.inviteRole": "Rôle",
   "users.role.admin": "Admin",

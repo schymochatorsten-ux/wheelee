@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { LegalPage, MissingOperator } from "@/components/LegalPage";
 import { operator } from "@/lib/legal/operator";
+import { mailConfigured } from "@/lib/mail";
 
 /**
  * Datenschutzerklärung (ToDo 10.2).
@@ -42,9 +43,12 @@ export const dynamic = "force-dynamic";
 
 export default function Datenschutz() {
   const betreiber = operator();
+  // Der Abschnitt zum Mailversand erscheint nur, wenn es ihn gibt (D-10, 10.16).
+  const mailEnabled = mailConfigured();
+  const mailProvider = process.env.WHEELEE_MAIL_PROVIDER?.trim() || null;
 
   return (
-    <LegalPage title="Datenschutzerklärung" updated="2026-10-24">
+    <LegalPage title="Datenschutzerklärung" updated="2026-10-29">
       <section>
         <p className="rounded-xl border border-neutral-200 bg-neutral-50 p-3 dark:border-neutral-800 dark:bg-neutral-900">
           <strong>Das Wichtigste zuerst:</strong> Dein Standort verlässt dein Gerät nicht. Er wird
@@ -232,10 +236,39 @@ export default function Datenschutz() {
           können Konten sperren oder löschen und Einladungen erzeugen. Eine Einladung speichert die
           E-Mail-Adresse der eingeladenen Person, die vorgesehene Rolle, den Ablauf (sieben Tage)
           und das Einladungstoken nur als Hash. Den Link sieht die einladende Person einmal und
-          gibt ihn selbst weiter; <strong>die App versendet keine E-Mails.</strong> Rechtsgrundlage
-          ist Art. 6 Abs. 1 lit. f DSGVO – der Schutz der Seite davor, dass sich Unbefugte
-          Verwaltungsrechte verschaffen.
+          gibt ihn selbst weiter; <strong>Einladungen versendet die App nicht per E-Mail.</strong>{" "}
+          Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO – der Schutz der Seite davor, dass sich
+          Unbefugte Verwaltungsrechte verschaffen.
         </p>
+        {mailEnabled ? (
+          <>
+            <p>
+              <strong>E-Mails der App:</strong> Nur auf deine Anforderung hin verschickt die App
+              eine E-Mail – für „Passwort vergessen“ an die Adresse deines Kontos und für „E-Mail-Adresse
+              ändern“ an die <em>neue</em> Adresse. Die E-Mail enthält einen Link, der eine Stunde
+              gilt und einmal einlösbar ist; in der Datenbank steht nur ein Hash davon (bei einem
+              Adresswechsel zusätzlich die neue Adresse bis zum Ablauf, danach wird sie gelöscht).
+              Es gibt keine Werbe-, Rundschreiben- oder Erinnerungsmails. Rechtsgrundlage ist Art. 6
+              Abs. 1 lit. b DSGVO (Vertragserfüllung: Zugang zum Konto) beziehungsweise bei der
+              neuen Adresse die von dir ausgelöste Anforderung.
+            </p>
+            <p>
+              <strong>Versanddienstleister:</strong>{" "}
+              {mailProvider ? (
+                <>
+                  {mailProvider}. Dieser sieht beim Versand die Empfängeradresse und den Inhalt der
+                  Mail (den Link) und verarbeitet sie in unserem Auftrag nach Art. 28 DSGVO.
+                </>
+              ) : (
+                <strong className="text-red-700 dark:text-red-400">
+                  [Angabe fehlt: Der Betreiber hat den Versanddienstleister (Variable
+                  WHEELEE_MAIL_PROVIDER) nicht eingetragen. Dieser Abschnitt ist erst vollständig,
+                  wenn Name, Sitz und der Stand des Auftragsverarbeitungsvertrags dort stehen.]
+                </strong>
+              )}
+            </p>
+          </>
+        ) : null}
       </section>
 
       <section>
@@ -387,8 +420,15 @@ export default function Datenschutz() {
         <h2>12. Keine Weitergabe, keine automatische Entscheidung</h2>
         <p>
           Deine Daten werden nicht verkauft, nicht für Werbung genutzt und nicht an Dritte
-          weitergegeben. Sie liegen auf einem Server in Deutschland; es findet keine Übermittlung in
-          ein Drittland statt. Eine automatisierte Entscheidungsfindung oder ein Profiling nach Art.
+          weitergegeben{mailEnabled ? " – mit Ausnahme des in Abschnitt 6 genannten Versanddienstleisters für die E-Mails, die du selbst anforderst" : ""}.
+          Die Daten, die die App selbst speichert (Konten, Bewertungen, Rückmeldungen), liegen auf
+          einem Server in Deutschland und werden von uns nicht in ein Drittland übermittelt
+          {mailEnabled ? "; beim Versanddienstleister gilt die Angabe in Abschnitt 6" : ""}.{" "}
+          <strong>Eine Ausnahme liegt außerhalb unseres Servers:</strong> Die Kartenkacheln
+          (Abschnitt 3) lädt dein Browser direkt von der OpenStreetMap Foundation, die ihren Sitz
+          im Vereinigten Königreich hat und für die Auslieferung weitere Dienstleister einsetzen
+          kann, auch außerhalb der EU. Welche, steht in deren Datenschutzerklärung; wir haben darauf
+          keinen Einfluss. Eine automatisierte Entscheidungsfindung oder ein Profiling nach Art.
           22 DSGVO findet nicht statt.
         </p>
       </section>

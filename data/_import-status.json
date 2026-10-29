@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T22:05:50.650Z",
+  "updatedAt": "2026-10-29T20:58:41.471Z",
   "records": [
     {
       "rank": 1,
@@ -41,12 +41,12 @@
       "population": 1505005,
       "ags": "09162000",
       "plan": "osm",
-      "usedSource": "OpenStreetMap",
-      "usedUrl": "Overpass, OSM relation/62428 (München, Bayern, Deutschland)",
+      "usedSource": "amtlich (GEOJSON)",
+      "usedUrl": "https://geoportal.muenchen.de/geoserver/mor_wfs/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=mor_wfs:behindertenparkplaetze&outputFormat=application/json",
       "status": "fertig",
-      "locations": 219,
-      "spaces": 629,
-      "attemptedAt": "2026-10-08T21:25:41.264Z",
+      "locations": 568,
+      "spaces": 958,
+      "attemptedAt": "2026-10-29T20:58:41.471Z",
       "message": null
     },
     {

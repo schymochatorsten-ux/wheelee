@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-10-29):** **193 Einträge** auf oberster Ebene –
-davon 171, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-10-29):** **195 Einträge** auf oberster Ebene –
+davon 173, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 22, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -244,6 +244,10 @@ Aufgaben.
 
 ## 3. Datenvalidierung
 
+- [~] 3.3 **Straßenabgleich für alle Städte gebaut** (2026-10-29, `scripts/import/street-match.mts`, `npm run check:street-names -- <stadt> [--n 60 | --alle]`). Der offene Rest (Läufe über die amtlichen Städte) steht in [ToDos.md](ToDos.md).
+  - **Was es tut:** Rückwärtssuche (Nominatim, eine Anfrage je 1,1 s) bei der Koordinate einer **gleichmäßig gewählten Stichprobe** und Vergleich mit der Straße der Quelle. Nicht zufällig, damit zwei Läufe dasselbe prüfen. Antworten gehen in den gemeinsamen Zwischenspeicher `data/_address-cache.json` (gleicher Schlüssel wie `import:addresses`). Stichprobe statt alles, weil 18.000 Standorte rund fünf Stunden bedeuten.
+  - **`sameStreet` gleicht Schreibweisen aus** (ß/ss, Umlaute, „Str.“/„Straße“, „St.“/„Sankt“, Bindestriche, Groß-/Kleinschreibung), damit sie nicht als Abweichung zählen; verschiedene Straßen bleiben verschieden. 6 Tests.
+  - **Erster echter Lauf an München (40 Standorte, nach dem Umstellen auf die amtliche Quelle): 34 gleich, 6 abweichend, 0 ohne Straße.** Von den sechs waren zwei Schreibweisen („St.“/„Sankt“ – danach in `sameStreet` aufgenommen) und eine mögliche Tippabweichung („Meindstraße“ gegen „Meindlstraße“); drei sind andere Straße an der Koordinate („Birnauer Straße“ gegen „Schleißheimer Straße“, „Fürstenrieder Straße“ gegen „Hogenbergstraße“, „Mariahilfplatz“ gegen „Am Neudeck“) – an Kreuzungen und Plätzen legitim, nicht geprüft. **Das sind Hinweise zum Ansehen, kein Beweis.**
 - [~] 3.4 **Abstand zur nächsten Straße gebaut** (2026-10-29, `scripts/import/street-distance.mts`, Aufruf `npm run check:streets -- frankfurt [--max 40]`). Der offene Rest (Lauf über die amtlichen Städte) steht in [ToDos.md](ToDos.md).
   - **Was es tut:** eine Overpass-Abfrage je Stadt (alle `highway`-Linien im Rechteck um die Standorte plus 0,003° Rand), danach lokal: Abstand jedes Standorts zur nächsten Strecke in einer ebenen Näherung um den Punkt. Gemeldet wird alles über **25 m**, weiteste zuerst. Fuß- und Radwege zählen als Straße, denn ein Platz an einer Fußgängerzone ist kein Fehler.
   - **Ein Befund ist kein Beweis:** Große private Parkplätze und Werksgelände liegen legitim abseits. Der Lauf schreibt nur eine Liste und ändert nichts.
@@ -793,6 +797,12 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
 ---
 
 ## 10. Datenschutz und Recht
+
+- [x] 10.16 **Datenschutzerklärung um den Mailversand ergänzt** (2026-10-29, Entscheidung D-11: Platzhalter-Abschnitt). `src/app/datenschutz/page.tsx`, Stand der Seite 2026-10-29.
+  - **Der Abschnitt erscheint nur bei eingeschaltetem Mailversand** (`mailConfigured()`): Zweck („Passwort vergessen“, „E-Mail ändern“, nur auf Anforderung, keine Werbe- oder Erinnerungsmails), Rechtsgrundlage Art. 6 Abs. 1 lit. b DSGVO, Linkgültigkeit (eine Stunde, Hash in der Datenbank, bei Adresswechsel die neue Adresse bis zum Ablauf), Versanddienstleister nach Art. 28 DSGVO.
+  - **Der Anbieter kommt aus `WHEELEE_MAIL_PROVIDER`.** Fehlt die Variable, steht dort ein roter Hinweis „Angabe fehlt“ statt eines erfundenen Namens – dieselbe Haltung wie beim Impressum. **Torsten trägt Anbieter, Sitz und den Stand des Auftragsverarbeitungsvertrags in die `.env` ein, bevor er die SMTP-Variablen setzt** (Vorlage in `deploy/env.beispiel`).
+  - **Zwei bestehende Sätze waren sonst falsch geworden** und sind angepasst: „die App versendet keine E-Mails“ (jetzt: Einladungen werden nicht per Mail verschickt, auch in der Verwaltung in allen sechs Sprachen) und „keine Weitergabe an Dritte“ in Abschnitt 12 (mit Mailversand: Ausnahme Versanddienstleister, Drittland nur, falls der Anbieter dort sitzt).
+  - **Test** `src/app/datenschutz/page.test.ts` rendert die Seite (React `prerenderToNodeStream`, Sprache per `vi.mock`): ohne Versand kein Dienstleister, mit Versand und Anbieter der Name, mit Versand ohne Anbieter der Hinweis. Dafür steht `oxc.jsx.runtime: "automatic"` in `vitest.config.mts`, weil `tsconfig` auf `jsx: preserve` steht.
 
 - [x] 10.1 Standort wird nur im Browser verarbeitet und nicht gespeichert
 - [x] 10.4 **Keine Tracker, keine Drittanbieter-Cookies** (2026-10-10 geprüft und belegt, `e2e/datenschutz.spec.ts`).
@@ -1447,9 +1457,43 @@ Imports in [Datenpflege.md](Datenpflege.md).
   6. **Datenläufe erlaubt, in Stufen mit Prüfungen** (D-07): Saarland-Probelauf aus dem Geofabrik-Auszug gegen die Overpass-Zahlen, dann 2e.6 ab 20.000 Einwohnern mit Streuungs- (über 15 km) und Dichteprüfung (über dem Dreifachen des Medians); dazu die Läufe zu 3.3 und 3.4. Vorhandene Seed-Dateien werden nicht überschrieben. Das hebt die Vorgabe „erst Inhalt, dann Import“ nach den inhaltlichen Punkten auf, die nicht mehr an der Datenarbeit hängen.
   7. **Weitere Sprachen (15.1) folgen zuletzt**: Niederländisch, Portugiesisch, Russisch, jede erst nach Abschluss der vorherigen.
 
-## 2d.8a München: Befund (2026-10-29)
+## Rechtliche Durchsicht (2026-10-29)
 
-Der Punkt bleibt in `ToDos.md` offen (`[!]`); hierher gehört, was gemessen wurde.
+Auftrag: DSGVO, Datenschutz und rechtliche Themen in EU und Deutschland prüfen; die fehlende Anschrift im Impressum bleibt außer Betracht. Geprüft wurde der Code und die Datenschutzerklärung gegeneinander. **Keine Rechtsberatung**; die Punkte unten sind Befunde einer Durchsicht, keine Rechtsauskunft.
+
+**Behoben:**
+- **Widerspruch in der Datenschutzerklärung (Abschnitt 12):** Sie sagte „es findet keine Übermittlung in ein Drittland statt“, Abschnitt 3 beschreibt aber, dass der Browser Kartenkacheln direkt von der OpenStreetMap Foundation lädt – die sitzt im Vereinigten Königreich und kann für die Auslieferung Dienstleister außerhalb der EU einsetzen. Art. 13 Abs. 1 lit. f verlangt die Angabe. Jetzt trennt der Abschnitt: Daten der App bleiben in Deutschland; die Kacheln sind die ausdrückliche Ausnahme. Ob für das Vereinigte Königreich ein gültiger Angemessenheitsbeschluss besteht, ist **bewusst nicht behauptet**; der Hinweis verweist auf deren Datenschutzerklärung.
+- **Mailversand (11.1/11.8):** Datenschutzerklärung und der Satz „die App versendet keine E-Mails“ (jetzt: keine Einladungen per Mail) angepasst – siehe 10.16.
+- **Verarbeitungsverzeichnis (Art. 30) fehlte:** Entwurf in [Verarbeitungsverzeichnis.md](Verarbeitungsverzeichnis.md), aus dem Code abgeleitet, mit technischen und organisatorischen Maßnahmen, Ablauf bei einer Datenpanne (72 Stunden, Art. 33/34) und Einschätzung zur Folgenabschätzung (Art. 35).
+
+**Offen, braucht eine rechtskundige Person (ToDo 10.17, 10.18):**
+- **Art. 9:** Konto plus gespeicherte oder bewertete Behindertenparkplätze lässt Rückschlüsse auf die Gesundheit zu, auch wenn die App nie danach fragt. Die Rechtsprechung des EuGH zu „Gesundheitsdaten“ ist weit (u. a. Rs. C-184/20, C-252/21 zu mittelbaren Rückschlüssen). Falls das gilt, wäre eine ausdrückliche Einwilligung bei der Registrierung nötig; ohne Konto fällt nichts davon an.
+- **§ 25 TDDDG, Offline-Kopien:** Die Datenschutzerklärung stuft Service Worker und Zwischenspeicher als „unbedingt erforderlich“ ein. Bei Kopien, die ohne Zutun beim Aufruf angelegt werden, ist das vertretbar, aber nicht zweifelsfrei.
+
+**Geprüft und ohne Befund:**
+- **Cookies:** höchstens zwei, beide erst auf Handlung (Anmelden, Sprache wählen), per E2E-Test festgehalten (`e2e/datenschutz.spec.ts`).
+- **Betroffenenrechte:** Auskunft und Übertragbarkeit (`/api/account/export`), Löschung mit Passwort (`deleteAccount`), automatische Fristen (`cleanup.ts`); Rückmeldungen ohne Konto werden von Hand bearbeitet, das steht in der Erklärung.
+- **Standort:** bleibt im Browser; Ausnahme Zielsuche auf zwei Nachkommastellen gerundet, steht in der Erklärung.
+- **Protokoll:** ohne IP, Standort, Parameterwerte, Adressen, Texte (`log.ts`, mit Test).
+- **Lizenzen:** ODbL-Hinweis in der Karte und der Listenansicht, Lizenz je Stadt im Datenmodell, München mit „Datenlizenz Deutschland – Namensnennung – Version 2.0“ (Quellenvermerk steht im Seed und wird in der Liste angezeigt). Für sieben Städte ist die Lizenz weiterhin nicht belegt (siehe 2a.5, bewusste Entscheidung vom 2026-10-24).
+- **Barrierefreiheitsstärkungsgesetz (BFSG):** erfasst Verbraucherdienstleistungen im elektronischen Geschäftsverkehr; eine kostenlose App ohne Vertragsschluss fällt voraussichtlich nicht darunter. Unabhängig davon ist die Zielgruppe barrierebedürftig – siehe Vorschlag „automatische Zugänglichkeitsprüfung“.
+- **Impressum (§ 5 DDG):** aus den Einstellungen in zwei Schritten erreichbar. Die fehlende Anschrift ist nach Vorgabe nicht bewertet.
+- **Hosting und Auftragsverarbeitung:** Betrieb auf dem eigenen NAS, kein Hoster; ein Auftragsverarbeiter entsteht erst mit dem Mailanbieter (10.16).
+
+## 2d.8a München: Befund und Umstellung (2026-10-29)
+
+Der Punkt bleibt in `ToDos.md` offen (`[~]`, die übrigen acht Städte); hierher gehört, was gemessen wurde und was gebaut ist.
+
+**Umgestellt am 2026-10-29 (Entscheidung D-11):** `data/muenchen.json` kommt jetzt aus der amtlichen Quelle, **568 Standorte mit 958 Stellplätzen** (vorher 218 aus OSM). Gebaut dafür:
+- **`scripts/import/manual-sources.mts`:** handgepflegte Quellen, die der Importer **vor** die in GovData gefundenen stellt. Nötig, weil `sources:scan` München nicht kennt und `_quellen-status.json` erzeugt (also überschrieben) wird. Je Quelle optional `noteOf` (Zusatzhinweis je Standort) und `idOf` (stabile Kennung).
+- **Koordinatensystem:** `fetchGeoJson` liest jetzt `crs` aus dem Kopf der Datei (GeoServer schreibt es dorthin, nicht an jedes Objekt) und gibt es an die Features weiter. Vorher wäre die UTM-Zone geraten worden (zuerst 32, dann 33 – bei München zufällig richtig, bei Dresden war es das nicht).
+- **Baustellen:** 26 Standorte tragen den Hinweis „Wegen einer Baustelle vorübergehend geändert (bis TT.MM.JJJJ) – <Text der Stadt>“. Die Formulierung ist bewusst **nicht** „nicht nutzbar“: Der Text der Stadt sagt bei manchen, dass der Platz nur verlegt ist („befindet sich vor Amalienstraße 15“). Das Enddatum kommt in der Quelle mal als `06.04.2027`, mal als `20261211103557`; beides wird zu einem Datum.
+- **IDs aus `parkplatz_id`**, nicht aus der laufenden WFS-Nummer: Die verschiebt sich, sobald ein Eintrag wegfällt, und an der ID hängen Bewertungen. 568 Standorte, 568 verschiedene IDs.
+- **Folge, die man kennen muss:** Die IDs der alten OSM-Standorte sind weg. Bewertungen und gespeicherte Parkplätze auf dem NAS, die an ihnen hängen, erscheinen danach als „nicht mehr in den Daten“ (die Oberfläche kann das, 8.x/11.5). Ob es solche gibt, steht in der Datenbank auf dem NAS und ist von hier **nicht geprüft**.
+- **Geprüft:** Koordinaten zwischen 48,07–48,22 N und 11,41–11,70 O (München), größter Abstand zum Mittelpunkt 13 km, 560 verschiedene Beschriftungen, alle mit Straße, 305 mit Zeitangabe; Lizenz „Datenlizenz Deutschland – Namensnennung – Version 2.0“ im Seed. `import:index` und `check:slugs` sind sauber. 5 Tests für die Quelle.
+- **Nicht geprüft:** der Vergleich mit den 218 alten OSM-Standorten („nur OSM“, was die Stadt nicht führt). Die OSM-Daten liegen als Sicherung unter dem Namen `muenchen.osm.backup.json` im Arbeitsordner dieser Sitzung und gehen mit ihr verloren; neu holen ließen sie sich über den OSM-Weg von `import:city` (Quelle in `manual-sources.mts` vorübergehend entfernen).
+
+**Der Befund davor:**
 
 - **Quelle:** WFS-Ebene `mor_wfs:behindertenparkplaetze` des Geoportals München (`https://geoportal.muenchen.de/geoserver/mor_wfs/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=mor_wfs:behindertenparkplaetze&outputFormat=application/json`), Mobilitätsreferat, Datenlizenz Deutschland Namensnennung 2.0, laut Portal täglich aktualisiert. Koordinatensystem **EPSG:25832** (UTM 32) – der Importer liest die Zone aus `srsName` (2d.5), aber hier steht sie im GeoJSON unter `crs`, **nicht im Aufruf**: vor dem ersten Lauf prüfen, dass er das erkennt (dieselbe Falle wie Dresden, nur andersherum).
 - **Menge:** **568 Standorte mit 958 Stellplätzen** gegen **218 Standorte** aus OpenStreetMap im Bestand. 958 Stellplätze bei 1,5 Mio. Einwohnern sind rund 6,4 je 10.000 – nahe am Median (7), also plausibel.
