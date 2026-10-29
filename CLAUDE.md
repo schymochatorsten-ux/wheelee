@@ -165,12 +165,13 @@ Beide Dateien nennen oben den Einzeiler, der die Zahl liefert.
 
 ## Reihenfolge: erst Inhalt, dann Datenimport
 
-**Vorgabe vom 2026-10-17.** Kein weiterer Datenimport, solange inhaltliche
-Punkte offen sind – auch nicht nebenbei. Der Import lässt sich beliebig lange
-fortsetzen (10.550 Gemeinden stehen offen) und ist nie „fertig"; die
-inhaltlichen Punkte sind endlich und halten die Veröffentlichung auf. Die
-Reihenfolge im Einzelnen steht unter „Hier weitermachen" in
-[ToDos.md](ToDos.md).
+**Vorgabe vom 2026-10-17, am 2026-10-29 von Torsten aufgehoben (D-11 in
+[Erledigt.md](Erledigt.md)).** Datenläufe sind freigegeben, **in Stufen und
+jede erst nach den Prüfungen** (Streuung über 15 km, Dichte über dem Dreifachen
+des Medians); vorhandene Seed-Dateien werden nicht überschrieben. Die
+Reihenfolge im Einzelnen steht unter „Reihenfolge“ in [ToDos.md](ToDos.md).
+Auch ohne die Vorgabe gilt: Ein Import ist nie „fertig“, deshalb zuerst, was
+endlich ist.
 
 ## Was nicht ohne Freigabe gebaut wird
 

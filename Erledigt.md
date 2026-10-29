@@ -10,10 +10,12 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-10-29):** **191 Einträge** auf oberster Ebene –
-davon 170, die mit einer ToDo-Nummer **beginnen**, und 12, die das nicht tun
-(die Entscheidungen D-01, D-02, D-04, D-06, D-08, D-09 sowie sechs Einträge, die zu
-keinem nummerierten Punkt gehören).
+**Stand (nachgezählt 2026-10-29):** **193 Einträge** auf oberster Ebene –
+davon 171, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+Einzeiler unten), und 22, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
+ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
+einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
+Zahlen oben.*
 Einige stehen als `[~]`: Ihr gebauter Teil steht hier, ihr offener Rest in
 `ToDos.md`.
 
@@ -242,6 +244,12 @@ Aufgaben.
 
 ## 3. Datenvalidierung
 
+- [~] 3.4 **Abstand zur nächsten Straße gebaut** (2026-10-29, `scripts/import/street-distance.mts`, Aufruf `npm run check:streets -- frankfurt [--max 40]`). Der offene Rest (Lauf über die amtlichen Städte) steht in [ToDos.md](ToDos.md).
+  - **Was es tut:** eine Overpass-Abfrage je Stadt (alle `highway`-Linien im Rechteck um die Standorte plus 0,003° Rand), danach lokal: Abstand jedes Standorts zur nächsten Strecke in einer ebenen Näherung um den Punkt. Gemeldet wird alles über **25 m**, weiteste zuerst. Fuß- und Radwege zählen als Straße, denn ein Platz an einer Fußgängerzone ist kein Fehler.
+  - **Ein Befund ist kein Beweis:** Große private Parkplätze und Werksgelände liegen legitim abseits. Der Lauf schreibt nur eine Liste und ändert nichts.
+  - **Leere Antwort heißt Fehler:** In einer Stadt gibt es Straßen; eine leere Liste ist Überlast (CLAUDE.md, Overpass). Drei Spiegel, drei Runden.
+  - **Nicht in `validate.mts` eingehängt**, sondern eigenständig: Die Datei hat 42 KB, und der Kreuzvergleich (3.10) lief beim Bauen gerade gegen Overpass. Ein Einhängen wäre ein eigener Schritt, wenn die ersten Läufe zeigen, dass die Schwelle taugt.
+  - **Nur an Zahlen getestet** (8 Tests: senkrechter Abstand, Verlängerung über das Ende, Strecke der Länge null, Reihenfolge). **Nicht gegen echte Straßen gelaufen.**
 - [x] 3.2 **Landesweite Sammeldatensätze: Karlsruhe gegengeprüft, weitere Landesportale angesehen** (2026-10-24; `scripts/import/crosscheck-regional.mts`, `npm run check:regional`, Bericht `data/_gegenpruefung-regional.md`; vorher geführt als `[~]`: Karlsruhe eingebunden, NRW und BW ergebnislos geprüft).
   - **Warum der Abgleich nötig war:** `import:regional` überschreibt eine größere vorhandene Seed-Datei nicht (Karlsruhe 330 aus OSM gegen 224 der TechnologieRegion; Baden-Baden 66 gegen 44). Die amtlichen Daten wurden also geholt und verworfen, obwohl sie die zweite, unabhängige Quelle sind. Das Skript hält beide nebeneinander und ändert außer dem Bericht nichts. Dafür wurde `regional.mts` in `loadRegional` (Laden) und `importSource` (Schreiben) geteilt.
   - **Ergebnis (30 m Toleranz, eins zu eins):** Karlsruhe 66 von 224 amtlichen Standorten bestätigt, 158 nur amtlich, 264 nur OSM. Baden-Baden 4 von 44, 40 nur amtlich, 62 nur OSM.
@@ -1427,6 +1435,17 @@ Imports in [Datenpflege.md](Datenpflege.md).
 - **Die beiden Quellenarten sind nicht vergleichbar.** Amtliche Listen führen einzelne Stellplätze am Straßenrand, OpenStreetMap überwiegend Parkplätze mit ausgewiesenen Behindertenstellplätzen. Die Oberfläche sagt das, und so muss es bleiben.
 
 ---
+
+## Entscheidungen vom 2026-10-29 (Torsten)
+
+- [x] **D-11 Antworten auf die offenen Fragen** (2026-10-29, vor dem Befehl „alles abarbeiten“). Umgesetzt wird erst auf diesen Befehl; hier steht, was gilt und warum:
+  1. **München wird auf die amtliche Quelle umgestellt** (2d.8a): amtlich 568 Standorte statt 218 aus OSM, Befund unten. Der OSM-Bestand wird ersetzt. **Standorte mit Status „Baustelle“ (26) bleiben sichtbar, mit Hinweis „vorübergehend nicht nutzbar“ samt Zeitraum aus den Quelldaten** (`baustelle_beginn`/`baustelle_ende`, Text aus `hinweis`) – ausgeblendet wäre ein Platz, der nach der Baustelle wieder da ist, für niemanden mehr zu finden, und „normal“ führt zur vergeblichen Fahrt. Voraussetzung ist die Erweiterung des Importers um handgepflegte Quellen, die nicht in GovData stehen.
+  2. **Datenschutzerklärung zum Mailversand (10.16): Platzhalter-Abschnitt schreiben, den Anbieter trägt Torsten später ein.** Bis dahin bleiben die Mail-Variablen leer (Funktionen ausgeblendet). Der Anbieter ist eine Angabe, die nur er hat; der Abschnitt soll so geschrieben sein, dass das Eintragen genügt.
+  3. **Dunkle Kacheln (9.2a): verworfen, es bleibt bei der CSS-Lösung.** Begründung im Befund unten (API-Schlüssel mit Konto, zweiter Fremddienst, nur nicht-kommerziell). Wer es wieder aufnimmt, findet dort die Bedingungen.
+  4. **Next 16 (1.8): noch nicht.** Torsten committet erst und sagt Bescheid; bis dahin wird 1.8 übersprungen.
+  5. **Symbol (12.7a): ja, ein Vorschlag.** Er wird zum Ansehen abgelegt, übernommen wird erst nach seinem OK.
+  6. **Datenläufe erlaubt, in Stufen mit Prüfungen** (D-07): Saarland-Probelauf aus dem Geofabrik-Auszug gegen die Overpass-Zahlen, dann 2e.6 ab 20.000 Einwohnern mit Streuungs- (über 15 km) und Dichteprüfung (über dem Dreifachen des Medians); dazu die Läufe zu 3.3 und 3.4. Vorhandene Seed-Dateien werden nicht überschrieben. Das hebt die Vorgabe „erst Inhalt, dann Import“ nach den inhaltlichen Punkten auf, die nicht mehr an der Datenarbeit hängen.
+  7. **Weitere Sprachen (15.1) folgen zuletzt**: Niederländisch, Portugiesisch, Russisch, jede erst nach Abschluss der vorherigen.
 
 ## 2d.8a München: Befund (2026-10-29)
 

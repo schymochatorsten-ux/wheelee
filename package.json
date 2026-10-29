@@ -37,6 +37,7 @@
     "import:verbaende": "tsx scripts/import/verbaende.mts",
     "check:regional": "tsx scripts/import/crosscheck-regional.mts",
     "check:slugs": "tsx scripts/import/check-slugs.mts",
+    "check:streets": "tsx scripts/import/street-distance.mts",
     "import:osm-state": "tsx scripts/import/osm-state.mts",
     "report:abdeckung": "tsx scripts/import/coverage.mts",
     "sources:amtlich": "tsx scripts/import/find-official.mts",

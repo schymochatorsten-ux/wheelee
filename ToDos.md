@@ -46,19 +46,21 @@ vom BKG, die nicht im Repository liegen; erwartet `10.956 Flächen` und
 
 ## Reihenfolge
 
-**Vorgabe vom 2026-10-17, unverändert gültig: kein weiterer Datenimport,
-solange inhaltliche Punkte offen sind** – auch nicht nebenbei. Der Import
-lässt sich beliebig lange fortsetzen und ist nie „fertig"; die inhaltlichen
-Punkte sind endlich und halten die Veröffentlichung auf.
+**Die Vorgabe vom 2026-10-17 („kein Datenimport, solange inhaltliche Punkte
+offen sind“) ist am 2026-10-29 aufgehoben** (D-11): Die inhaltlichen Punkte,
+die offen blieben, hängen nicht mehr an der Datenarbeit. Geblieben ist, dass
+jede Stufe erst nach den Prüfungen geschrieben wird.
 
-Abgearbeitet wird von oben. **Vor Platz 7 (Next 16) sagt Claude Bescheid, damit
-Torsten den bis dahin fertigen Stand committet** – erst danach wird begonnen.
+**Stand 2026-10-29 (D-11 in [Erledigt.md](Erledigt.md)): Torsten hat die Datenläufe in Stufen freigegeben** (Reihenfolge unten). Abgearbeitet wird von oben; 1.8 wartet auf sein Bescheid und wird übersprungen, bis er ihn gibt.
 
 | #   | Was                                                              | Warum hier                                         |
 | --- | ---------------------------------------------------------------- | -------------------------------------------------- |
-| 6   | **9.2a / 12.7a** Dunkle Karte, Symbol                            | Darstellung                                        |
-| 7   | **1.8** Next 16                                                  | Zuletzt vor den Daten; vorher Bescheid (s. o.)     |
-| 8   | **Datenarbeit** 2e.11, dann 2e.6 in Stufen (D-07), 3.10, 3.3, 3.4, 2d.8a | Fällt unter die Vorgabe oben |
+| 1   | **10.16** Datenschutzerklärung (Platzhalter), **12.7a** Symbol   | Ohne Daten, ohne Netz                              |
+| 2   | **3.10** auswerten (Lauf liegt vor), **3.4** laufen lassen, **3.3** bauen und laufen lassen | Prüfen vor dem Einspielen |
+| 3   | **2d.8a** München amtlich, danach die übrigen acht Städte        | Ersetzt einen Bestand, deshalb nach den Prüfungen  |
+| 4   | **2e.11** Saarland-Probelauf, dann **2e.6** in Stufen (D-07)     | Mit Streuungs- und Dichteprüfung                   |
+| 5   | **1.8** Next 16                                                  | Erst nach Torstens Bescheid                        |
+| 6   | **15.1** Niederländisch, Portugiesisch, Russisch                 | Zuletzt, jede erst nach der vorigen                |
 
 **Neue Knöpfe und Meldungen kommen seit 15.2 gleich in
 `src/i18n/de.ts`, nicht in die Komponente** (Aufbau in
@@ -73,32 +75,29 @@ abgeglichen ist bislang eine Stadt.
 
 ## 1. Projekt-Setup
 
-- [ ] 1.8 **Next 16.** Behebt die zwei Audit-Wurzeln (`postcss` über `next`, `braces` über `eslint-config-next`); hier läuft 15.5.27. **Erst nachdem Torsten den bis dahin fertigen Stand committet hat** (Reihenfolge, Platz 7). Zu prüfen: `middleware.ts` (CSP-Nonce), Service Worker, `node:sqlite`, Produktionsbau.
+- [!] 1.8 **Next 16.** Behebt die zwei Audit-Wurzeln (`postcss` über `next`, `braces` über `eslint-config-next`); in `package.json` steht 15.5.28. **Wartet auf Torstens Bescheid, dass der Stand committet ist** (D-11) – bis dahin überspringen. Zu prüfen: `middleware.ts` (CSP-Nonce), Service Worker, `node:sqlite`, Produktionsbau.
 
 ## 2. Datenquellen und Import
 
-- [!] 2d.8a **Neun Städte mit ungenutzter amtlicher Quelle ansehen.** **München angesehen am 2026-10-29, Befund in [Erledigt.md](Erledigt.md) (2d.8a): 568 Standorte / 958 Stellplätze amtlich gegen 218 aus OSM.** **Braucht von dir:** Soll München auf die amtliche Quelle umgestellt werden (ersetzt den OSM-Bestand, 26 Standorte stehen auf „Baustelle")? Dazu müsste der Importer eine Quelle kennen, die nicht in GovData steht (kleine Erweiterung). Die übrigen acht: `npm run sources:check` findet sie. Bei Kiel, Krefeld und Aachen ist die Ablehnung richtig (Anwohnerparken); bei Bochum, Bielefeld, Karlsruhe, Norderstedt und Viersen lohnt der Blick aufs Stadtportal.
+- [ ] 2d.8a **München auf die amtliche Quelle umstellen** (entschieden, D-11 in [Erledigt.md](Erledigt.md); Befund dort unter 2d.8a: 568 Standorte statt 218). Zu tun: Importer um **handgepflegte Quellen** erweitern (München steht nicht in GovData, `sources:scan` würde einen Eintrag in `_quellen-status.json` überschreiben), WFS-Ebene `mor_wfs:behindertenparkplaetze` einlesen, **EPSG:25832 prüfen** (steht im GeoJSON unter `crs`), Status „Baustelle“ mit Zeitraum und Hinweis anzeigen, Lizenz dl-by-de 2.0 eintragen. **Danach die übrigen acht Städte ansehen:** `npm run sources:check` findet sie. Bei Kiel, Krefeld und Aachen ist die Ablehnung richtig (Anwohnerparken); bei Bochum, Bielefeld, Karlsruhe, Norderstedt und Viersen lohnt der Blick aufs Stadtportal.
 - [ ] 2e.6 **Restliche Gemeinden aus OpenStreetMap, in Stufen** (Entscheidung D-07, [Erledigt.md](Erledigt.md)): ab 20.000, dann 10.000, dann 5.000, dann alle; jede Stufe erst nach den Prüfungen (Streuung über 15 km, Dichte über dem Dreifachen des Medians). Voraussetzung ist 2e.11.
-- [~] 2e.11 **Massendaten ohne Overpass holen.** Der PBF-Leser steht (`scripts/import/pbf.mts`, Stand in [Erledigt.md](Erledigt.md)). Angeschlossen: `npm run import:osm-state -- <land> --pbf <datei> --dry`. **Offen:** einen Auszug laden (`https://download.geofabrik.de/europe/germany/<land>-latest.osm.pbf`, ODbL) und den ersten Probelauf an einem kleinen Land (Saarland) gegen die Overpass-Zahlen halten, nicht gleich NRW. Fällt unter die Vorgabe „erst Inhalt, dann Import“ (Reihenfolge).
+- [~] 2e.11 **Massendaten ohne Overpass holen.** Der PBF-Leser steht (`scripts/import/pbf.mts`, Stand in [Erledigt.md](Erledigt.md)). Angeschlossen: `npm run import:osm-state -- <land> --pbf <datei> --dry`. **Offen:** einen Auszug laden (`https://download.geofabrik.de/europe/germany/<land>-latest.osm.pbf`, ODbL) und den ersten Probelauf an einem kleinen Land (Saarland) gegen die Overpass-Zahlen halten, nicht gleich NRW. Freigegeben (D-11).
 
 ## 3. Datenvalidierung
 
 - [ ] 3.3 **Straßenabgleich:** nennt die Rückwärtssuche bei der Koordinate dieselbe Straße wie die Quelle? Für Frankfurt gibt es das schon, für alle anderen nicht.
-- [ ] 3.4 **Abstand zur nächsten Straße.** Punkte über 25 m von jeder Straße sind fast immer falsch verortet. Eine Overpass-Abfrage je Stadt.
+- [~] 3.4 **Abstand zur nächsten Straße.** Werkzeug steht (`npm run check:streets -- <stadt>`, Stand in [Erledigt.md](Erledigt.md)). **Offen:** einmal für die 23 amtlichen Städte laufen lassen (eine Overpass-Abfrage je Stadt, mit Pausen, erst nach dem laufenden 3.10) und die gemeldeten Standorte ansehen.
 - [ ] 3.10 **Den Kreuzvergleich über alle 23 amtlichen Städte laufen lassen.** Abgeglichen ist bislang **eine** Stadt (Germersheim). `npm run validate` **mit** Netz; ansehen: Ausreißer nach unten und die Gruppe **„nur OSM"**.
 
-## 9. Darstellung und Bedienung
-
-- [!] 9.2a Echte dunkle Kacheln. **Geprüft am 2026-10-29, Befund in [Erledigt.md](Erledigt.md) (9.2a):** CARTO Dark Matter ist kostenlos, braucht aber einen API-Schlüssel (Konto bei CARTO). **Braucht von dir:** Schlüssel beantragen und entscheiden, ob das für wheelee gelten darf (nur nicht-kommerziell; 13.2 Werbung wäre kommerziell).
 
 ## 10. Datenschutz und Recht
 
-- [!] 10.16 **Datenschutzerklärung um den Mailversand ergänzen** (nach 11.1/11.8, Stand in [Erledigt.md](Erledigt.md)). Sobald SMTP-Zugangsdaten eingetragen sind, sieht der Mailanbieter die Adressen von „Passwort vergessen“ und „E-Mail ändern“: Anbieter nennen, Zweck, Rechtsgrundlage, Speicherdauer der Tokens (eine Stunde, danach gelöscht). **Braucht von dir:** welcher Anbieter, und ob ein Auftragsverarbeitungsvertrag besteht. Ansatz: `src/app/datenschutz/page.tsx`, Test in `e2e/rechtstexte.spec.ts`. Bis dahin die Mail-Variablen **nicht** in die `.env` auf dem NAS eintragen.
+- [ ] 10.16 **Datenschutzerklärung um den Mailversand ergänzen** (entschieden: Platzhalter-Abschnitt, D-11). Zu schreiben: Abschnitt zu „Passwort vergessen“ und „E-Mail ändern“ (Zweck, Rechtsgrundlage, Token eine Stunde gültig, danach gelöscht, Mailanbieter sieht die Adresse). Der Anbieter kommt aus einer Variable (`WHEELEE_MAIL_PROVIDER`), **der Abschnitt erscheint nur, wenn der Mailversand eingeschaltet ist**; ohne Angabe steht dort ein sichtbarer Hinweis statt eines erfundenen Namens (wie beim Impressum). Ansatz: `src/app/datenschutz/page.tsx`, Test in `e2e/rechtstexte.spec.ts`. **Nach dem Bau trägt Torsten den Anbieter und den Stand des Auftragsverarbeitungsvertrags in die `.env` ein** (Eintrag in `deploy/env.beispiel`); bis dahin keine SMTP-Variablen setzen.
 
 
 ## 12. Qualität und Deployment
 
-- [ ] 12.7a Symbol gestalterisch überarbeiten – funktional, aber von mir gezeichnet.
+- [ ] 12.7a Symbol gestalterisch überarbeiten (entschieden: ein Vorschlag, D-11). Quelle ist `scripts/make-icons.mts` (`npm run icons`) und `public/icon.svg`. Vorschlag **zum Ansehen ablegen**, nicht gleich ersetzen; Übernahme erst nach Torstens OK.
 
 ## 15. Mehrsprachigkeit
 
