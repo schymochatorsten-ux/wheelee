@@ -200,6 +200,26 @@ const MIGRATIONS: readonly string[] = [
 
   CREATE INDEX invitation_email ON invitation(email);
   `,
+
+  // 9 – Einmal-Links per Mail: Passwort zurücksetzen, E-Mail ändern (ToDo 11.1, 11.8).
+  `
+  CREATE TABLE mail_token (
+    id         TEXT PRIMARY KEY,
+    -- Nur der SHA-256, wie bei \`session\` und \`invitation\`: Aus einer Sicherung
+    -- lässt sich kein Link einlösen.
+    token_hash TEXT NOT NULL UNIQUE,
+    account_id TEXT NOT NULL REFERENCES account(id) ON DELETE CASCADE,
+    kind       TEXT NOT NULL CHECK (kind IN ('reset', 'email')),
+    -- Nur bei \`email\`: die Adresse, auf die gewechselt werden soll. Sie steht
+    -- hier und nicht im Link, damit der Link sie nicht verändern kann.
+    new_email  TEXT,
+    created_at TEXT NOT NULL,
+    expires_at TEXT NOT NULL,
+    used_at    TEXT
+  );
+
+  CREATE INDEX mail_token_account ON mail_token(account_id, kind);
+  `,
 ];
 
 let database: DatabaseSync | null = null;

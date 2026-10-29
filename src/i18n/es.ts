@@ -541,4 +541,40 @@ export const es: Messages = {
   "users.expires": "válida hasta {date}",
   "users.revoke": "Revocar",
   "users.failed": "No ha funcionado.",
+
+  // Enlaces por correo: contraseña olvidada, cambiar correo (ToDo 11.1, 11.8)
+  "api.mailLinkInvalid": "El enlace no es válido, ha caducado o ya se ha usado.",
+  "api.emailSame": "Esa ya es la dirección de esta cuenta.",
+  "mail.reset.subject": "wheelee: restablecer la contraseña",
+  "mail.reset.body":
+    "Hola,\n\ncon este enlace puedes establecer una nueva contraseña en wheelee. Es válido durante {minutes} minutos y solo una vez:\n\n{link}\n\nSi no lo has solicitado, ignora este correo: tu contraseña no cambia.\n",
+  "mail.email.subject": "wheelee: confirma tu nueva dirección de correo",
+  "mail.email.body":
+    "Hola,\n\ncon este enlace confirmas esta dirección como el nuevo correo de tu cuenta de wheelee. Es válido durante {minutes} minutos y solo una vez:\n\n{link}\n\nSi no lo has solicitado, ignora este correo: no cambiará nada.\n",
+  "account.forgot": "¿Has olvidado la contraseña?",
+  "account.forgotIntro": "Enviaremos un enlace para restablecerla a la dirección de tu cuenta.",
+  "account.forgotSend": "Enviar enlace",
+  "account.forgotSent":
+    "Si existe una cuenta con esta dirección, hemos enviado un enlace. Es válido durante una hora.",
+  "reset.title": "Establecer una nueva contraseña",
+  "reset.intro": "Elige una nueva contraseña. Después se cerrará la sesión en todas partes y volverás a iniciarla con ella.",
+  "reset.password": "Nueva contraseña",
+  "reset.submit": "Guardar contraseña",
+  "reset.missing": "Este enlace no contiene ningún token.",
+  "reset.failed": "No ha funcionado. Inténtalo de nuevo.",
+  "reset.done": "Tu contraseña ha cambiado. Ya puedes iniciar sesión con ella.",
+  "emailChange.open": "Cambiar la dirección de correo",
+  "emailChange.note":
+    "Enviaremos un enlace a la nueva dirección. Solo se aplica cuando lo abras; hasta entonces sigue la actual.",
+  "emailChange.newEmail": "Nueva dirección de correo",
+  "emailChange.password": "Tu contraseña, para confirmar",
+  "emailChange.submit": "Enviar enlace",
+  "emailChange.sent":
+    "Si la dirección está libre, le hemos enviado un enlace. Hasta que lo abras, sigue la dirección actual.",
+  "confirmEmail.title": "Confirmar la dirección de correo",
+  "confirmEmail.intro": "Con un clic, esta dirección pasa a ser el correo de tu cuenta.",
+  "confirmEmail.submit": "Usar esta dirección",
+  "confirmEmail.done": "Listo: tu cuenta pertenece ahora a {email}.",
+  "confirmEmail.missing": "Este enlace no contiene ningún token.",
+  "confirmEmail.failed": "No ha funcionado. Solicita un enlace nuevo.",
 };

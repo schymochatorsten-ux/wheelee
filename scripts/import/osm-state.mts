@@ -4,6 +4,10 @@
  *     npm run import:osm-state -- saarland
  *     npm run import:osm-state -- --alle
  *     npm run import:osm-state -- saarland --dry
+ *     npm run import:osm-state -- saarland --pbf saarland-latest.osm.pbf --dry
+ *
+ * Mit `--pbf` liest der Lauf einen Auszug von Geofabrik statt Overpass zu
+ * fragen (ToDo 2e.11, Leser: [`pbf.mts`](pbf.mts)); er gilt für genau ein Land.
  *
  * **Warum das sein muss.** Der bisherige Weg stellt eine Overpass-Abfrage je
  * Gemeinde. Für 195 Gemeinden ging das gerade noch – bei zwei Minuten pro
@@ -35,6 +39,7 @@ import { projectRoot } from "./config.mjs";
 import { allMunicipalities, germanCities, toSlug } from "./german-cities.mjs";
 import { loadGrenzen, type Grenzen } from "./grenzen.mjs";
 import { recordCity } from "./status.mjs";
+import { extractDisabledParking } from "./pbf.mjs";
 
 const USER_AGENT = "wheelee-import/0.1 (Behindertenparkplatz-Karte; Kontakt via Repository)";
 
@@ -344,6 +349,7 @@ async function importState(
   grenzen: Grenzen,
   dryRun: boolean,
   overwrite: boolean,
+  pbfFile: string | null = null,
 ): Promise<void> {
   const iso = BUNDESLAENDER[stateName];
   if (!iso) throw new Error(`Unbekanntes Bundesland: ${stateName}`);
@@ -355,8 +361,27 @@ async function importState(
     return;
   }
 
-  const { elements, vollstaendig } = await fetchSpots(iso);
-  console.log(`  ${elements.length} Objekte`);
+  /*
+   * Mit `--pbf` kommen die Objekte aus einem Geofabrik-Auszug statt von
+   * Overpass (ToDo 2e.11): keine Last auf dem Gemeinschaftsdienst, und die Datei
+   * ist vollständig oder sie bricht beim Lesen ab – eine halbe Antwort wie bei
+   * Overpass unter Last gibt es hier nicht. Alles danach (Zuordnung über die
+   * Grenzflächen, Kennzahl, Schreiben) ist derselbe Weg.
+   */
+  let elements: OverpassElement[];
+  let vollstaendig: boolean;
+  if (pbfFile) {
+    const extract = extractDisabledParking(pbfFile);
+    elements = extract.elements;
+    vollstaendig = true;
+    console.log(`  ${elements.length} Objekte aus ${path.basename(pbfFile)}`);
+    if (extract.waysWithoutNodes > 0) {
+      console.log(`  ⚠ ${extract.waysWithoutNodes} Wege ohne Knoten im Auszug (Rand) übersprungen`);
+    }
+  } else {
+    ({ elements, vollstaendig } = await fetchSpots(iso));
+    console.log(`  ${elements.length} Objekte`);
+  }
 
   /** Nur Gemeinden oberhalb der Einwohnergrenze bekommen eine Seed-Datei. */
   const anDerReihe = new Map(germanCities.map((city) => [city.slug, city]));
@@ -520,8 +545,10 @@ async function importState(
      */
     await recordCity(slug, {
       status: "fertig",
-      usedSource: "OpenStreetMap (landesweit)",
-      usedUrl: `Overpass, ${stateName} (${iso})`,
+      usedSource: pbfFile ? "OpenStreetMap (Geofabrik-Auszug)" : "OpenStreetMap (landesweit)",
+      usedUrl: pbfFile
+        ? `Geofabrik, ${stateName} (${path.basename(pbfFile)})`
+        : `Overpass, ${stateName} (${iso})`,
       locations: sorted.length,
       spaces: sorted.reduce((sum, spot) => sum + spot.spotCount, 0),
       message: null,
@@ -546,7 +573,22 @@ async function main() {
   const args = process.argv.slice(2);
   const dryRun = args.includes("--dry");
   const overwrite = args.includes("--ueberschreiben");
-  const wanted = args.filter((argument) => !argument.startsWith("--"));
+
+  // `--pbf <datei>`: statt Overpass einen Geofabrik-Auszug lesen (2e.11).
+  const pbfIndex = args.indexOf("--pbf");
+  const pbfFile = pbfIndex >= 0 ? (args[pbfIndex + 1] ?? null) : null;
+  if (pbfIndex >= 0 && (!pbfFile || pbfFile.startsWith("--"))) {
+    console.log("--pbf braucht eine Datei: npm run import:osm-state -- saarland --pbf saarland-latest.osm.pbf");
+    return;
+  }
+  if (pbfFile && args.includes("--alle")) {
+    console.log("--pbf gilt für genau ein Bundesland (ein Auszug enthält nur eines) – nicht mit --alle.");
+    return;
+  }
+
+  const wanted = args.filter(
+    (argument, index) => !argument.startsWith("--") && !(pbfFile && index === pbfIndex + 1),
+  );
 
   const namen = args.includes("--alle")
     ? Object.keys(BUNDESLAENDER)
@@ -583,6 +625,11 @@ async function main() {
       "Gemeindeflächen aus VG250-EW geladen",
   );
 
+  if (pbfFile && namen.length !== 1) {
+    console.log("--pbf gilt für genau ein Bundesland, genannt wurden " + namen.length + ".");
+    return;
+  }
+
   for (const [index, name] of namen.entries()) {
     if (index > 0) {
       // Pause zwischen Bundesländern: Die Abfragen sind groß, und der Dienst
@@ -592,7 +639,7 @@ async function main() {
     }
 
     try {
-      await importState(name, grenzen, dryRun, overwrite);
+      await importState(name, grenzen, dryRun, overwrite, pbfFile);
     } catch (error) {
       const grund = (error as Error).message.slice(0, 160);
       console.log(`  ❌ ${name}: ${grund}`);

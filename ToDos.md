@@ -56,7 +56,6 @@ Torsten den bis dahin fertigen Stand committet** – erst danach wird begonnen.
 
 | #   | Was                                                              | Warum hier                                         |
 | --- | ---------------------------------------------------------------- | -------------------------------------------------- |
-| 4   | **11.1 / 11.8** Passwort vergessen, E-Mail ändern                | Braucht SMTP-Zugangsdaten zum Echtbetrieb          |
 | 6   | **9.2a / 12.7a** Dunkle Karte, Symbol                            | Darstellung                                        |
 | 7   | **1.8** Next 16                                                  | Zuletzt vor den Daten; vorher Bescheid (s. o.)     |
 | 8   | **Datenarbeit** 2e.11, dann 2e.6 in Stufen (D-07), 3.10, 3.3, 3.4, 2d.8a | Fällt unter die Vorgabe oben |
@@ -78,9 +77,9 @@ abgeglichen ist bislang eine Stadt.
 
 ## 2. Datenquellen und Import
 
-- [ ] 2d.8a **Neun Städte mit ungenutzter amtlicher Quelle ansehen.** **München zuerst:** Datensatz „Behindertenparkplätze“ auf opendata.muenchen.de, dl-by-de 2.0, WFS, täglich aktualisiert; im Bestand stehen 219 Standorte aus OSM (Details in [Erledigt.md](Erledigt.md), 3.2). Die übrigen acht: `npm run sources:check` findet sie. Bei Kiel, Krefeld und Aachen ist die Ablehnung richtig (Anwohnerparken); bei Bochum, Bielefeld, Karlsruhe, Norderstedt und Viersen lohnt der Blick aufs Stadtportal.
+- [!] 2d.8a **Neun Städte mit ungenutzter amtlicher Quelle ansehen.** **München angesehen am 2026-10-29, Befund in [Erledigt.md](Erledigt.md) (2d.8a): 568 Standorte / 958 Stellplätze amtlich gegen 218 aus OSM.** **Braucht von dir:** Soll München auf die amtliche Quelle umgestellt werden (ersetzt den OSM-Bestand, 26 Standorte stehen auf „Baustelle")? Dazu müsste der Importer eine Quelle kennen, die nicht in GovData steht (kleine Erweiterung). Die übrigen acht: `npm run sources:check` findet sie. Bei Kiel, Krefeld und Aachen ist die Ablehnung richtig (Anwohnerparken); bei Bochum, Bielefeld, Karlsruhe, Norderstedt und Viersen lohnt der Blick aufs Stadtportal.
 - [ ] 2e.6 **Restliche Gemeinden aus OpenStreetMap, in Stufen** (Entscheidung D-07, [Erledigt.md](Erledigt.md)): ab 20.000, dann 10.000, dann 5.000, dann alle; jede Stufe erst nach den Prüfungen (Streuung über 15 km, Dichte über dem Dreifachen des Medians). Voraussetzung ist 2e.11.
-- [ ] 2e.11 **Massendaten ohne Overpass holen.** Vorgesehen sind die **Bundesland-Auszüge von Geofabrik** (`.osm.pbf`, ODbL, täglich). Aufwand: PBF-Leser (Protocol Buffers, zlib-Blöcke, Delta-Kodierung) ohne neue Abhängigkeit, wie `zip.mts` und `xlsx.mts`. Zwischenstufe, falls das zu viel ist: `import:osm-state` mit Pausen über die 16 Länder.
+- [~] 2e.11 **Massendaten ohne Overpass holen.** Der PBF-Leser steht (`scripts/import/pbf.mts`, Stand in [Erledigt.md](Erledigt.md)). Angeschlossen: `npm run import:osm-state -- <land> --pbf <datei> --dry`. **Offen:** einen Auszug laden (`https://download.geofabrik.de/europe/germany/<land>-latest.osm.pbf`, ODbL) und den ersten Probelauf an einem kleinen Land (Saarland) gegen die Overpass-Zahlen halten, nicht gleich NRW. Fällt unter die Vorgabe „erst Inhalt, dann Import“ (Reihenfolge).
 
 ## 3. Datenvalidierung
 
@@ -90,15 +89,12 @@ abgeglichen ist bislang eine Stadt.
 
 ## 9. Darstellung und Bedienung
 
-- [ ] 9.2a Echte dunkle Kacheln, nur wenn ein kostenloser Anbieter dies erlaubt (etwa CARTO Dark Matter); Bedingungen und Attribution online prüfen, kostenpflichtig wird abgelehnt.
+- [!] 9.2a Echte dunkle Kacheln. **Geprüft am 2026-10-29, Befund in [Erledigt.md](Erledigt.md) (9.2a):** CARTO Dark Matter ist kostenlos, braucht aber einen API-Schlüssel (Konto bei CARTO). **Braucht von dir:** Schlüssel beantragen und entscheiden, ob das für wheelee gelten darf (nur nicht-kommerziell; 13.2 Werbung wäre kommerziell).
 
 ## 10. Datenschutz und Recht
 
+- [!] 10.16 **Datenschutzerklärung um den Mailversand ergänzen** (nach 11.1/11.8, Stand in [Erledigt.md](Erledigt.md)). Sobald SMTP-Zugangsdaten eingetragen sind, sieht der Mailanbieter die Adressen von „Passwort vergessen“ und „E-Mail ändern“: Anbieter nennen, Zweck, Rechtsgrundlage, Speicherdauer der Tokens (eine Stunde, danach gelöscht). **Braucht von dir:** welcher Anbieter, und ob ein Auftragsverarbeitungsvertrag besteht. Ansatz: `src/app/datenschutz/page.tsx`, Test in `e2e/rechtstexte.spec.ts`. Bis dahin die Mail-Variablen **nicht** in die `.env` auf dem NAS eintragen.
 
-## 11. Benutzerkonten
-
-- [ ] 11.1 **„Passwort vergessen" per Mail** (Entscheidung D-10 in [Erledigt.md](Erledigt.md): SMTP über Umgebungsvariablen, Paket `nodemailer`). Link einmalig, eine Stunde gültig, nur als Hash gespeichert; ohne SMTP-Zugangsdaten sind die Mail-Funktionen ausgeblendet. Magic Link und Passkey entfallen.
-- [ ] 11.8 **E-Mail-Adresse selbst ändern.** Nur mit Passwort, dann Bestätigungsmail an die **neue** Adresse; erst der Klick tauscht sie. Gleicher Mailweg wie 11.1.
 
 ## 12. Qualität und Deployment
 

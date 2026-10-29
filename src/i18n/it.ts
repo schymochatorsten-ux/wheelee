@@ -534,4 +534,40 @@ export const it: Messages = {
   "users.expires": "valido fino al {date}",
   "users.revoke": "Revoca",
   "users.failed": "Non è andata a buon fine.",
+
+  // Link via e-mail: password dimenticata, cambio indirizzo (ToDo 11.1, 11.8)
+  "api.mailLinkInvalid": "Il link non è valido, è scaduto o è già stato usato.",
+  "api.emailSame": "Questo è già l’indirizzo di questo account.",
+  "mail.reset.subject": "wheelee: reimposta la password",
+  "mail.reset.body":
+    "Ciao,\n\ncon questo link puoi impostare una nuova password per wheelee. È valido {minutes} minuti e una sola volta:\n\n{link}\n\nSe non l’hai richiesto, ignora questa e-mail: la tua password resta invariata.\n",
+  "mail.email.subject": "wheelee: conferma il nuovo indirizzo e-mail",
+  "mail.email.body":
+    "Ciao,\n\ncon questo link confermi questo indirizzo come nuovo indirizzo e-mail del tuo account wheelee. È valido {minutes} minuti e una sola volta:\n\n{link}\n\nSe non l’hai richiesto, ignora questa e-mail: non cambierà nulla.\n",
+  "account.forgot": "Password dimenticata?",
+  "account.forgotIntro": "Invieremo un link per reimpostarla all’indirizzo del tuo account.",
+  "account.forgotSend": "Invia il link",
+  "account.forgotSent":
+    "Se esiste un account per questo indirizzo, abbiamo inviato un link. È valido un’ora.",
+  "reset.title": "Imposta una nuova password",
+  "reset.intro": "Scegli una nuova password. Poi verrai disconnesso ovunque e accederai di nuovo con essa.",
+  "reset.password": "Nuova password",
+  "reset.submit": "Salva la password",
+  "reset.missing": "Questo link non contiene alcun token.",
+  "reset.failed": "Non è andata a buon fine. Riprova.",
+  "reset.done": "La tua password è stata cambiata. Ora puoi accedere con essa.",
+  "emailChange.open": "Cambia indirizzo e-mail",
+  "emailChange.note":
+    "Invieremo un link al nuovo indirizzo. Diventa valido solo quando lo apri; fino ad allora resta quello attuale.",
+  "emailChange.newEmail": "Nuovo indirizzo e-mail",
+  "emailChange.password": "La tua password, per confermare",
+  "emailChange.submit": "Invia il link",
+  "emailChange.sent":
+    "Se l’indirizzo è libero,abbiamo inviato un link a quell’indirizzo. Finché non lo apri, resta l’indirizzo attuale.",
+  "confirmEmail.title": "Conferma l’indirizzo e-mail",
+  "confirmEmail.intro": "Con un clic questo indirizzo diventa l’indirizzo e-mail del tuo account.",
+  "confirmEmail.submit": "Usa questo indirizzo",
+  "confirmEmail.done": "Fatto – il tuo account ora appartiene a {email}.",
+  "confirmEmail.missing": "Questo link non contiene alcun token.",
+  "confirmEmail.failed": "Non è andata a buon fine. Richiedi un nuovo link.",
 };

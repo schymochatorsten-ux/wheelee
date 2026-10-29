@@ -536,4 +536,40 @@ export const pl: Messages = {
   "users.expires": "ważne do {date}",
   "users.revoke": "Cofnij",
   "users.failed": "Nie udało się.",
+
+  // Linki w e-mailu: nie pamiętam hasła, zmiana adresu (ToDo 11.1, 11.8)
+  "api.mailLinkInvalid": "Link jest nieprawidłowy, wygasł lub został już wykorzystany.",
+  "api.emailSame": "To już jest adres tego konta.",
+  "mail.reset.subject": "wheelee: zresetuj hasło",
+  "mail.reset.body":
+    "Cześć,\n\ntym linkiem ustawisz nowe hasło w wheelee. Jest ważny przez {minutes} minut i działa tylko raz:\n\n{link}\n\nJeśli to nie Ty o to prosiłeś, zignoruj tę wiadomość – hasło pozostanie bez zmian.\n",
+  "mail.email.subject": "wheelee: potwierdź nowy adres e-mail",
+  "mail.email.body":
+    "Cześć,\n\ntym linkiem potwierdzasz ten adres jako nowy adres e-mail konta w wheelee. Jest ważny przez {minutes} minut i działa tylko raz:\n\n{link}\n\nJeśli to nie Ty o to prosiłeś, zignoruj tę wiadomość – nic się nie zmieni.\n",
+  "account.forgot": "Nie pamiętasz hasła?",
+  "account.forgotIntro": "Wyślemy link do zresetowania na adres Twojego konta.",
+  "account.forgotSend": "Wyślij link",
+  "account.forgotSent":
+    "Jeśli istnieje konto z tym adresem, wysłaliśmy link. Jest ważny przez godzinę.",
+  "reset.title": "Ustaw nowe hasło",
+  "reset.intro": "Wybierz nowe hasło. Potem zostaniesz wylogowany wszędzie i zalogujesz się nim ponownie.",
+  "reset.password": "Nowe hasło",
+  "reset.submit": "Zapisz hasło",
+  "reset.missing": "Ten link nie zawiera tokenu.",
+  "reset.failed": "Nie udało się. Spróbuj ponownie.",
+  "reset.done": "Twoje hasło zostało zmienione. Możesz się teraz nim zalogować.",
+  "emailChange.open": "Zmień adres e-mail",
+  "emailChange.note":
+    "Wyślemy link na nowy adres. Zacznie obowiązywać dopiero po jego otwarciu; do tego czasu obowiązuje dotychczasowy.",
+  "emailChange.newEmail": "Nowy adres e-mail",
+  "emailChange.password": "Twoje hasło, dla potwierdzenia",
+  "emailChange.submit": "Wyślij link",
+  "emailChange.sent":
+    "Jeśli adres jest wolny, wysłaliśmy tam link. Dopóki go nie otworzysz, obowiązuje dotychczasowy adres.",
+  "confirmEmail.title": "Potwierdź adres e-mail",
+  "confirmEmail.intro": "Jednym kliknięciem ten adres stanie się adresem e-mail Twojego konta.",
+  "confirmEmail.submit": "Użyj tego adresu",
+  "confirmEmail.done": "Gotowe – Twoje konto należy teraz do {email}.",
+  "confirmEmail.missing": "Ten link nie zawiera tokenu.",
+  "confirmEmail.failed": "Nie udało się. Poproś o nowy link.",
 };

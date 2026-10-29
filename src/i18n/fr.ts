@@ -548,4 +548,40 @@ export const fr: Messages = {
   "users.expires": "valable jusqu'au {date}",
   "users.revoke": "Retirer",
   "users.failed": "Cela n'a pas fonctionné.",
+
+  // Liens par e-mail : mot de passe oublié, changer d'adresse (ToDo 11.1, 11.8)
+  "api.mailLinkInvalid": "Le lien n'est pas valide, a expiré ou a déjà été utilisé.",
+  "api.emailSame": "C'est déjà l'adresse de ce compte.",
+  "mail.reset.subject": "wheelee : réinitialiser le mot de passe",
+  "mail.reset.body":
+    "Bonjour,\n\nce lien vous permet de définir un nouveau mot de passe sur wheelee. Il est valable {minutes} minutes et une seule fois :\n\n{link}\n\nSi vous ne l'avez pas demandé, ignorez cet e-mail : votre mot de passe reste inchangé.\n",
+  "mail.email.subject": "wheelee : confirmer votre nouvelle adresse e-mail",
+  "mail.email.body":
+    "Bonjour,\n\nce lien confirme cette adresse comme nouvelle adresse e-mail de votre compte wheelee. Il est valable {minutes} minutes et une seule fois :\n\n{link}\n\nSi vous ne l'avez pas demandé, ignorez cet e-mail : rien ne change.\n",
+  "account.forgot": "Mot de passe oublié ?",
+  "account.forgotIntro": "Nous envoyons un lien de réinitialisation à l'adresse de votre compte.",
+  "account.forgotSend": "Envoyer le lien",
+  "account.forgotSent":
+    "S'il existe un compte pour cette adresse, nous avons envoyé un lien. Il est valable une heure.",
+  "reset.title": "Définir un nouveau mot de passe",
+  "reset.intro": "Choisissez un nouveau mot de passe. Vous serez ensuite déconnecté partout et vous vous reconnecterez avec lui.",
+  "reset.password": "Nouveau mot de passe",
+  "reset.submit": "Enregistrer le mot de passe",
+  "reset.missing": "Ce lien ne contient aucun jeton.",
+  "reset.failed": "Cela n'a pas fonctionné. Veuillez réessayer.",
+  "reset.done": "Votre mot de passe a été modifié. Vous pouvez maintenant vous connecter avec lui.",
+  "emailChange.open": "Changer l'adresse e-mail",
+  "emailChange.note":
+    "Nous envoyons un lien à la nouvelle adresse. Elle n'est prise en compte qu'une fois le lien ouvert ; d'ici là, l'actuelle reste valable.",
+  "emailChange.newEmail": "Nouvelle adresse e-mail",
+  "emailChange.password": "Votre mot de passe, pour confirmer",
+  "emailChange.submit": "Envoyer le lien",
+  "emailChange.sent":
+    "Si l'adresse est libre, nous y avons envoyé un lien. Tant que vous ne l'ouvrez pas, l'adresse actuelle reste valable.",
+  "confirmEmail.title": "Confirmer l'adresse e-mail",
+  "confirmEmail.intro": "En un clic, cette adresse devient l'adresse e-mail de votre compte.",
+  "confirmEmail.submit": "Utiliser cette adresse",
+  "confirmEmail.done": "C'est fait : votre compte est désormais associé à {email}.",
+  "confirmEmail.missing": "Ce lien ne contient aucun jeton.",
+  "confirmEmail.failed": "Cela n'a pas fonctionné. Veuillez demander un nouveau lien.",
 };

@@ -337,6 +337,12 @@ Tailscale-Tunnel läuft und keine Verbindung nach außen braucht.
 | `WHEELEE_OPERATOR_PHONE`   | Telefonnummer – freiwillig                                             |
 | `WHEELEE_OPERATOR_VAT_ID`  | Umsatzsteuer-ID – nur falls vorhanden                                  |
 
+Optional (Mailversand für „Passwort vergessen“ und „E-Mail-Adresse ändern“,
+D-10): `SMTP_HOST`, `SMTP_FROM` und `WHEELEE_PUBLIC_URL` zusammen schalten ihn
+ein; dazu `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `SMTP_SECURE`. Ohne sie sind
+beide Funktionen ausgeblendet. Siehe [deploy/env.beispiel](deploy/env.beispiel);
+vor dem Einschalten die Datenschutzerklärung ergänzen (ToDo 10.16).
+
 **Ist `ADMIN_EMAILS` leer, hat niemand Zugriff** – auch nicht der erste
 angemeldete Benutzer. Das ist Absicht: Die Registrierung steht jedem offen, und
 wer zuerst da wäre, bekäme sonst alle Meldungen samt der freiwillig angegebenen

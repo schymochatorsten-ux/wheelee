@@ -133,6 +133,12 @@ export function purgeExpired(nowMs: number = Date.now()): PurgeResult {
     .prepare("DELETE FROM invitation WHERE COALESCE(used_at, revoked_at, expires_at) < ?")
     .run(invitationCutoff);
 
+  /*
+   * Mail-Links (11.1, 11.8): Ein Wechsel-Antrag trägt eine fremde Adresse. Nach
+   * Ablauf (eine Stunde) oder Einlösung gibt es keinen Grund, sie zu behalten.
+   */
+  db().prepare("DELETE FROM mail_token WHERE expires_at <= ? OR used_at IS NOT NULL").run(now());
+
   return {
     invitations: Number(invitations.changes),
     feedback: Number(feedback.changes),

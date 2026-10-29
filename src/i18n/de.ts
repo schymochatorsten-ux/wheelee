@@ -539,4 +539,40 @@ export const de = {
   "users.expires": "gültig bis {date}",
   "users.revoke": "Zurückziehen",
   "users.failed": "Das hat nicht geklappt.",
+
+  // Mail-Links: Passwort vergessen, E-Mail ändern (ToDo 11.1, 11.8)
+  "api.mailLinkInvalid": "Der Link ist ungültig, abgelaufen oder wurde schon benutzt.",
+  "api.emailSame": "Das ist bereits die Adresse dieses Kontos.",
+  "mail.reset.subject": "wheelee: Passwort zurücksetzen",
+  "mail.reset.body":
+    "Hallo,\n\nüber diesen Link kannst du bei wheelee ein neues Passwort setzen. Er gilt {minutes} Minuten und nur einmal:\n\n{link}\n\nWenn du das nicht angefordert hast, ignoriere diese Mail – dein Passwort bleibt unverändert.\n",
+  "mail.email.subject": "wheelee: neue E-Mail-Adresse bestätigen",
+  "mail.email.body":
+    "Hallo,\n\nüber diesen Link bestätigst du bei wheelee diese Adresse als neue E-Mail-Adresse deines Kontos. Er gilt {minutes} Minuten und nur einmal:\n\n{link}\n\nWenn du das nicht angefordert hast, ignoriere diese Mail – es ändert sich nichts.\n",
+  "account.forgot": "Passwort vergessen?",
+  "account.forgotIntro": "Wir schicken einen Link zum Zurücksetzen an die Adresse deines Kontos.",
+  "account.forgotSend": "Link senden",
+  "account.forgotSent":
+    "Falls es zu dieser Adresse ein Konto gibt, haben wir einen Link geschickt. Er gilt eine Stunde.",
+  "reset.title": "Neues Passwort setzen",
+  "reset.intro": "Wähle ein neues Passwort. Danach bist du überall abgemeldet und meldest dich damit neu an.",
+  "reset.password": "Neues Passwort",
+  "reset.submit": "Passwort speichern",
+  "reset.missing": "Dieser Link enthält kein Token.",
+  "reset.failed": "Das hat nicht geklappt. Bitte versuche es noch einmal.",
+  "reset.done": "Dein Passwort ist geändert. Du kannst dich jetzt damit anmelden.",
+  "emailChange.open": "E-Mail-Adresse ändern",
+  "emailChange.note":
+    "Wir schicken einen Link an die neue Adresse. Erst wenn du ihn öffnest, wird sie übernommen; bis dahin gilt die bisherige.",
+  "emailChange.newEmail": "Neue E-Mail-Adresse",
+  "emailChange.password": "Dein Passwort, zur Bestätigung",
+  "emailChange.submit": "Link senden",
+  "emailChange.sent":
+    "Falls die Adresse frei ist, haben wir einen Link dorthin geschickt. Bis du ihn öffnest, gilt die bisherige Adresse.",
+  "confirmEmail.title": "E-Mail-Adresse bestätigen",
+  "confirmEmail.intro": "Mit einem Klick wird diese Adresse zur E-Mail-Adresse deines Kontos.",
+  "confirmEmail.submit": "Adresse übernehmen",
+  "confirmEmail.done": "Fertig – dein Konto gehört jetzt zu {email}.",
+  "confirmEmail.missing": "Dieser Link enthält kein Token.",
+  "confirmEmail.failed": "Das hat nicht geklappt. Bitte fordere einen neuen Link an.",
 } as const satisfies Record<string, string>;

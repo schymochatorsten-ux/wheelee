@@ -98,6 +98,15 @@ export const LIMITS = {
   invitationRedeem: { max: 10, windowMs: 10 * 60_000 },
   /** Einladungen erzeugen: je Admin-Konto. */
   invitationCreate: { max: 20, windowMs: 60 * 60_000 },
+  /**
+   * Mails anfordern (ToDos 11.1, 11.8): je Herkunft **und** je Zieladresse. Die
+   * zweite Grenze schützt das Postfach eines Dritten davor, mit Mails
+   * überschüttet zu werden; die erste die App davor, als Spamschleuder zu dienen.
+   */
+  mailRequest: { max: 10, windowMs: 60 * 60_000 },
+  mailPerAddress: { max: 3, windowMs: 60 * 60_000 },
+  /** Link aus einer Mail einlösen: je Herkunft, das Token ist das Geheimnis. */
+  mailRedeem: { max: 10, windowMs: 10 * 60_000 },
 
   /*
    * Bewertungen (ToDo 8.4). Großzügiger als die übrigen Grenzen, weil hier ein

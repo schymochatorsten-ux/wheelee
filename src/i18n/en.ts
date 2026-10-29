@@ -534,4 +534,40 @@ export const en: Messages = {
   "users.expires": "valid until {date}",
   "users.revoke": "Revoke",
   "users.failed": "That did not work.",
+
+  // Mail links: forgot password, change email (ToDo 11.1, 11.8)
+  "api.mailLinkInvalid": "The link is invalid, expired or has already been used.",
+  "api.emailSame": "That is already the address of this account.",
+  "mail.reset.subject": "wheelee: reset your password",
+  "mail.reset.body":
+    "Hello,\n\nthis link lets you set a new password for wheelee. It is valid for {minutes} minutes and works once:\n\n{link}\n\nIf you did not ask for this, ignore this email – your password stays unchanged.\n",
+  "mail.email.subject": "wheelee: confirm your new email address",
+  "mail.email.body":
+    "Hello,\n\nthis link confirms this address as the new email address of your wheelee account. It is valid for {minutes} minutes and works once:\n\n{link}\n\nIf you did not ask for this, ignore this email – nothing will change.\n",
+  "account.forgot": "Forgot password?",
+  "account.forgotIntro": "We will send a reset link to the address of your account.",
+  "account.forgotSend": "Send link",
+  "account.forgotSent":
+    "If there is an account for this address, we have sent a link. It is valid for one hour.",
+  "reset.title": "Set a new password",
+  "reset.intro": "Choose a new password. You will then be signed out everywhere and sign in again with it.",
+  "reset.password": "New password",
+  "reset.submit": "Save password",
+  "reset.missing": "This link contains no token.",
+  "reset.failed": "That did not work. Please try again.",
+  "reset.done": "Your password has been changed. You can now sign in with it.",
+  "emailChange.open": "Change email address",
+  "emailChange.note":
+    "We will send a link to the new address. It only takes effect once you open it; until then the current one stays.",
+  "emailChange.newEmail": "New email address",
+  "emailChange.password": "Your password, to confirm",
+  "emailChange.submit": "Send link",
+  "emailChange.sent":
+    "If the address is free, we have sent a link to it. Until you open it, your current address stays.",
+  "confirmEmail.title": "Confirm email address",
+  "confirmEmail.intro": "One click makes this address the email address of your account.",
+  "confirmEmail.submit": "Use this address",
+  "confirmEmail.done": "Done – your account now belongs to {email}.",
+  "confirmEmail.missing": "This link contains no token.",
+  "confirmEmail.failed": "That did not work. Please request a new link.",
 };
