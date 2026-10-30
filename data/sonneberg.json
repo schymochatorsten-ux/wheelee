@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "sonneberg",
+    "name": "Sonneberg",
+    "center": {
+      "lat": 50.490701800000004,
+      "lng": 11.2664685
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sonneberg-a2afcb2e54",
+      "city": "sonneberg",
+      "label": "Behindertenparkplatz Sonneberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sonneberg",
+      "spotCount": 2,
+      "lat": 50.490701800000004,
+      "lng": 11.2664685,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/298503685), ODbL"
+    },
+    {
+      "id": "sonneberg-ef822da85e",
+      "city": "sonneberg",
+      "label": "Behindertenparkplatz Sonneberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Sonneberg",
+      "spotCount": 1,
+      "lat": 50.35448495,
+      "lng": 11.18956765,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/204911883), ODbL"
+    }
+  ]
+}

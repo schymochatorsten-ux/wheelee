@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "remseck",
+    "name": "Remseck am Neckar",
+    "center": {
+      "lat": 48.877353400000004,
+      "lng": 9.2540475
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "remseck-af9decb479",
+      "city": "remseck",
+      "label": "Behindertenparkplatz Remseck am Neckar",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Remseck am Neckar",
+      "spotCount": 1,
+      "lat": 48.864168500000005,
+      "lng": 9.2540475,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2161126617), ODbL"
+    },
+    {
+      "id": "remseck-3dc7135042",
+      "city": "remseck",
+      "label": "Behindertenparkplatz Remseck am Neckar",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Remseck am Neckar",
+      "spotCount": 2,
+      "lat": 48.87623775,
+      "lng": 9.281242650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/185492126), ODbL"
+    },
+    {
+      "id": "remseck-2205cce9e4",
+      "city": "remseck",
+      "label": "Behindertenparkplatz Remseck am Neckar",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Remseck am Neckar",
+      "spotCount": 34,
+      "lat": 48.8775084,
+      "lng": 9.22271815,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1229879488), ODbL"
+    },
+    {
+      "id": "remseck-b29a073e95",
+      "city": "remseck",
+      "label": "Behindertenparkplatz Remseck am Neckar",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Remseck am Neckar",
+      "spotCount": 34,
+      "lat": 48.877353400000004,
+      "lng": 9.22265765,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1229879489), ODbL"
+    },
+    {
+      "id": "remseck-e51dda2bcb",
+      "city": "remseck",
+      "label": "Behindertenparkplatz Remseck am Neckar",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Remseck am Neckar",
+      "spotCount": 14,
+      "lat": 48.87763595,
+      "lng": 9.222930000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1229879490), ODbL"
+    },
+    {
+      "id": "remseck-a4d25c5e93",
+      "city": "remseck",
+      "label": "Haus der Bürger",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Remseck am Neckar",
+      "spotCount": 2,
+      "lat": 48.8667068,
+      "lng": 9.2570178,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/624248456), ODbL"
+    }
+  ]
+}

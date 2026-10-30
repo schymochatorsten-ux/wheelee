@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "blieskastel",
+    "name": "Blieskastel",
+    "center": {
+      "lat": 49.173525850000004,
+      "lng": 7.317358350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "blieskastel-198c3e1d49",
+      "city": "blieskastel",
+      "label": "Behindertenparkplatz Blieskastel",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Blieskastel",
+      "spotCount": 2,
+      "lat": 49.173525850000004,
+      "lng": 7.317358350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/764483066), ODbL"
+    }
+  ]
+}

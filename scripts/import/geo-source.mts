@@ -660,11 +660,36 @@ const toNumber = (value: unknown): number =>
   );
 
 /** Datensätze mit Koordinatenspalten in Features übersetzen. */
-function recordsToFeatures(records: Record<string, unknown>[]): GeoFeature[] {
+/** `POINT (x y)` aus einer WKT-Spalte; andere Geometrien werden nicht geraten. */
+export function pointFromWkt(text: unknown): [number, number] | null {
+  if (typeof text !== "string") return null;
+  const match = /^\s*POINT\s*\(\s*(-?[\d.]+)\s+(-?[\d.]+)\s*\)\s*$/iu.exec(text);
+  return match ? [Number(match[1]), Number(match[2])] : null;
+}
+
+function recordsToFeatures(records: Record<string, unknown>[], srs?: string): GeoFeature[] {
   const keys = Object.keys(records[0] ?? {});
   const latKey = keys.find((key) => LAT_KEYS.test(key));
   const lngKey = keys.find((key) => LNG_KEYS.test(key));
-  if (!latKey || !lngKey) return [];
+
+  if (!latKey || !lngKey) {
+    // WFS-CSV (MapServer): eine Spalte „WKT“ mit `POINT (x y)`, Koordinatensystem
+    // wie angefragt (`SRSNAME` in der URL, hier als `srs` mitgegeben).
+    const wktKey = keys.find((key) => /^(wkt|geom|the_geom)$/iu.test(key));
+    if (!wktKey) return [];
+    const found: GeoFeature[] = [];
+    for (const [index, record] of records.entries()) {
+      const point = pointFromWkt(record[wktKey]);
+      if (!point) continue;
+      found.push({
+        id: String(record.id ?? record.ID ?? record.gid ?? index),
+        geometry: { type: "Point", coordinates: point },
+        properties: record,
+        ...(srs ? { srs } : {}),
+      });
+    }
+    return found;
+  }
 
   const features: GeoFeature[] = [];
 
@@ -780,5 +805,7 @@ export async function fetchGeoJson(url: string): Promise<{ features: GeoFeature[
     return { features: [], url: resolved };
   }
 
-  return { features: recordsToFeatures(parseCsv(text)), url: resolved };
+  // Das Koordinatensystem nennt bei WFS-Abrufen die URL selbst (`SRSNAME=EPSG:25832`).
+  const srs = /[?&]srsname=([^&]+)/iu.exec(resolved)?.[1];
+  return { features: recordsToFeatures(parseCsv(text), srs ? decodeURIComponent(srs) : undefined), url: resolved };
 }

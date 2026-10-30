@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "merzig",
+    "name": "Merzig",
+    "center": {
+      "lat": 49.44588470000001,
+      "lng": 6.63511745
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "merzig-7a5a90973b",
+      "city": "merzig",
+      "label": "Behindertenparkplatz Merzig",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Merzig",
+      "spotCount": 1,
+      "lat": 49.44588470000001,
+      "lng": 6.625617250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/329652751), ODbL"
+    },
+    {
+      "id": "merzig-784b57b8a7",
+      "city": "merzig",
+      "label": "Behindertenparkplatz Merzig",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Merzig",
+      "spotCount": 1,
+      "lat": 49.456070249999996,
+      "lng": 6.6312984,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1123366641), ODbL"
+    },
+    {
+      "id": "merzig-7e75540e1a",
+      "city": "merzig",
+      "label": "Behindertenparkplatz Merzig",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Merzig",
+      "spotCount": 1,
+      "lat": 49.44247895,
+      "lng": 6.6351261500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1229458019), ODbL"
+    },
+    {
+      "id": "merzig-8d6dd5ed8e",
+      "city": "merzig",
+      "label": "Behindertenparkplatz Merzig",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Merzig",
+      "spotCount": 1,
+      "lat": 49.4424518,
+      "lng": 6.63511745,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1229458020), ODbL"
+    }
+  ]
+}

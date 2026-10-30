@@ -93,8 +93,12 @@ const BIELEFELD: ManualSource = {
   license: "Creative Commons Namensnennung 4.0 International",
   resources: [
     {
+      // Die Ressourcenseiten des Portals sind Katalogseiten (HTML) und die
+      // WFS-Anfragen über das Portal antworten mit HTTP 500. Der eigentliche
+      // Dienst steht auf der Ressourcenseite als Download-Link (2026-10-30
+      // gefunden): WFS bei bielefeld01.de, CSV mit WKT in EPSG:25832.
       format: "CSV",
-      url: "https://open-data.bielefeld.de/dataset/9d1ac93f-849d-4082-9ed2-663b2abdc3a2/resource/0c4276b3-cbf0-4dde-bdc3-607f3cca7ff9",
+      url: "https://www.bielefeld01.de/md/WFS/schwerbehindertenparkplatze/01?SERVICE=WFS&VERSION=1.1.0&REQUEST=GetFeature&TYPENAME=parken_schwerbehinderte_p&SRSNAME=EPSG:25832&OUTPUTFORMAT=text/csv",
     },
   ],
 };

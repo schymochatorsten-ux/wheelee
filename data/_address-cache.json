@@ -5203,5 +5203,535 @@
     "street": "Worringer Platz",
     "houseNumber": "20",
     "place": "Stadtmitte"
+  },
+  "48.93576,8.95429": {
+    "street": "Alter Postweg",
+    "houseNumber": null,
+    "place": null
+  },
+  "48.94641,8.95907": {
+    "street": "Heinrich-Bürger-Weg",
+    "houseNumber": null,
+    "place": "Kleinglattbach"
+  },
+  "48.93115,8.95554": {
+    "street": "Im Mühlkanal",
+    "houseNumber": "7",
+    "place": null
+  },
+  "48.92907,8.96986": {
+    "street": "An der Schelmenhalde",
+    "houseNumber": null,
+    "place": null
+  },
+  "48.93658,8.95726": {
+    "street": "Marienburger Straße",
+    "houseNumber": null,
+    "place": null
+  },
+  "48.94539,8.95941": {
+    "street": "Neue Bahnhofstraße",
+    "houseNumber": null,
+    "place": "Kleinglattbach"
+  },
+  "48.93653,8.95728": {
+    "street": "Marienburger Straße",
+    "houseNumber": null,
+    "place": null
+  },
+  "48.93231,8.95665": {
+    "street": "Marktplatz",
+    "houseNumber": null,
+    "place": null
+  },
+  "48.91144,8.93976": {
+    "street": "Nussdorfer Straße",
+    "houseNumber": null,
+    "place": "Eichhof"
+  },
+  "48.94540,8.96035": {
+    "street": "Fuchsäcker",
+    "houseNumber": null,
+    "place": "Kleinglattbach"
+  },
+  "48.93758,8.95986": {
+    "street": "Andreaestraße",
+    "houseNumber": null,
+    "place": null
+  },
+  "48.93008,8.95901": {
+    "street": "Gerberstraße",
+    "houseNumber": null,
+    "place": null
+  },
+  "48.18611,11.23675": {
+    "street": "Augsburger Straße",
+    "houseNumber": null,
+    "place": "Neu-Lindach"
+  },
+  "48.17724,11.25099": {
+    "street": "Ludwigstraße",
+    "houseNumber": null,
+    "place": "Fürstenfeld"
+  },
+  "48.17638,11.25078": {
+    "street": "Ludwigstraße",
+    "houseNumber": null,
+    "place": "Fürstenfeld"
+  },
+  "48.16148,11.22490": {
+    "street": "Geschwister-Scholl-Platz",
+    "houseNumber": null,
+    "place": "Siedlung Buchenau"
+  },
+  "48.16599,11.23652": {
+    "street": "Abt-Führer-Straße",
+    "houseNumber": null,
+    "place": "Fürstenfeld"
+  },
+  "48.17526,11.24039": {
+    "street": "Sternstraße",
+    "houseNumber": null,
+    "place": "Neu-Lindach"
+  },
+  "48.17976,11.25323": {
+    "street": "Aumillerstraße",
+    "houseNumber": null,
+    "place": "Fürstenfeld"
+  },
+  "48.17728,11.25061": {
+    "street": "Ludwigstraße",
+    "houseNumber": null,
+    "place": "Fürstenfeld"
+  },
+  "48.17201,11.26022": {
+    "street": "Bahnhofstraße",
+    "houseNumber": null,
+    "place": "Weiherhaus"
+  },
+  "48.17294,11.26689": {
+    "street": "Münchner Straße",
+    "houseNumber": null,
+    "place": "Weiherhaus"
+  },
+  "48.17738,11.25099": {
+    "street": "Ludwigstraße",
+    "houseNumber": null,
+    "place": "Fürstenfeld"
+  },
+  "48.18155,11.24204": {
+    "street": "Theodor-Heuss-Straße",
+    "houseNumber": null,
+    "place": "Neu-Lindach"
+  },
+  "49.67372,12.16468": {
+    "street": "Kurt-Schumacher-Allee",
+    "houseNumber": null,
+    "place": "Stockerhut"
+  },
+  "49.66318,12.15539": {
+    "street": "Untere Bauscherstraße",
+    "houseNumber": null,
+    "place": "Fichtenbühl"
+  },
+  "49.66405,12.14997": {
+    "street": "Nikolaus-Otto-Straße",
+    "houseNumber": null,
+    "place": "Lerchenfeld"
+  },
+  "49.69272,12.15701": {
+    "street": "Conrad-Röntgen-Straße",
+    "houseNumber": null,
+    "place": "Hammerweg"
+  },
+  "49.67795,12.16386": {
+    "street": "Luitpoldstraße",
+    "houseNumber": null,
+    "place": "Stockerhut"
+  },
+  "49.67271,12.15008": {
+    "street": "Frauenrichter Straße",
+    "houseNumber": null,
+    "place": "Stockerhut"
+  },
+  "49.65738,12.14556": {
+    "street": "Regensburger Straße",
+    "houseNumber": null,
+    "place": "Lerchenfeld"
+  },
+  "49.66547,12.15663": {
+    "street": "Obere Bauscherstraße",
+    "houseNumber": null,
+    "place": "Fichtenbühl"
+  },
+  "49.67932,12.16615": {
+    "street": "Söllnerstraße",
+    "houseNumber": null,
+    "place": "Hammerweg"
+  },
+  "49.69561,12.17165": {
+    "street": "Schopenhauerstraße",
+    "houseNumber": null,
+    "place": "Hammerweg"
+  },
+  "49.68675,12.10593": {
+    "street": "Pressather Straße",
+    "houseNumber": "201",
+    "place": "Latsch"
+  },
+  "49.67014,12.15444": {
+    "street": "Bahnhofstraße",
+    "houseNumber": null,
+    "place": "Stockerhut"
+  },
+  "49.29614,10.55919": {
+    "street": "Crailsheimstraße",
+    "houseNumber": null,
+    "place": "Meinhardswinden"
+  },
+  "49.30502,10.57387": {
+    "street": "Residenzstraße",
+    "houseNumber": null,
+    "place": "Kammerforst"
+  },
+  "49.30493,10.57368": {
+    "street": "Residenzstraße",
+    "houseNumber": null,
+    "place": "Kammerforst"
+  },
+  "49.30492,10.57372": {
+    "street": "Residenzstraße",
+    "houseNumber": null,
+    "place": "Kammerforst"
+  },
+  "49.29103,10.54918": {
+    "street": "Knebelstraße",
+    "houseNumber": null,
+    "place": "Meinhardswinden"
+  },
+  "49.29306,10.55523": {
+    "street": "Danziger Straße",
+    "houseNumber": null,
+    "place": "Meinhardswinden"
+  },
+  "49.29936,10.57025": {
+    "street": "Endresstraße",
+    "houseNumber": null,
+    "place": "Kammerforst"
+  },
+  "49.30491,10.57377": {
+    "street": "Residenzstraße",
+    "houseNumber": null,
+    "place": "Kammerforst"
+  },
+  "49.30302,10.57090": {
+    "street": "Martin-Luther-Platz",
+    "houseNumber": null,
+    "place": "Kammerforst"
+  },
+  "49.30505,10.57388": {
+    "street": "Residenzstraße",
+    "houseNumber": null,
+    "place": "Kammerforst"
+  },
+  "49.30731,10.56866": {
+    "street": "Schöneckerstraße",
+    "houseNumber": null,
+    "place": "Neuses"
+  },
+  "49.29965,10.57544": {
+    "street": "Karolinenstraße",
+    "houseNumber": null,
+    "place": "Kammerforst"
+  },
+  "48.65779,9.41696": {
+    "street": "Uracher Straße",
+    "houseNumber": null,
+    "place": "Ötlingen"
+  },
+  "48.64628,9.45013": {
+    "street": "Alleenstraße",
+    "houseNumber": null,
+    "place": null
+  },
+  "48.64703,9.45337": {
+    "street": "Turmstraße",
+    "houseNumber": null,
+    "place": null
+  },
+  "48.65777,9.41693": {
+    "street": "Uracher Straße",
+    "houseNumber": null,
+    "place": "Ötlingen"
+  },
+  "48.65123,9.45519": {
+    "street": "Notzinger Straße",
+    "houseNumber": null,
+    "place": null
+  },
+  "48.64522,9.44168": {
+    "street": "Nürtinger Straße",
+    "houseNumber": null,
+    "place": "Nägelestal"
+  },
+  "48.64384,9.46324": {
+    "street": "Jesinger Straße",
+    "houseNumber": null,
+    "place": "Schafhof"
+  },
+  "48.64203,9.46796": {
+    "street": "Öschweg",
+    "houseNumber": "3",
+    "place": "Schafhof"
+  },
+  "48.64483,9.44349": {
+    "street": "Eugen-Gerstenmaier-Platz",
+    "houseNumber": null,
+    "place": "Nägelestal"
+  },
+  "48.64856,9.44465": {
+    "street": "Steingaustraße",
+    "houseNumber": null,
+    "place": null
+  },
+  "48.64619,9.45217": {
+    "street": "Roßmarkt",
+    "houseNumber": null,
+    "place": null
+  },
+  "48.65707,9.43096": {
+    "street": "Fabrikstraße",
+    "houseNumber": null,
+    "place": "Ötlingen"
+  },
+  "48.87960,9.39255": {
+    "street": "Bahnhofstraße",
+    "houseNumber": "4",
+    "place": "Bahnhofsvorstadt"
+  },
+  "48.87893,9.39213": {
+    "street": "Bahnhofstraße",
+    "houseNumber": "6/3",
+    "place": "Bahnhofsvorstadt"
+  },
+  "48.87897,9.39218": {
+    "street": "Bahnhofstraße",
+    "houseNumber": "6/3",
+    "place": "Bahnhofsvorstadt"
+  },
+  "48.86987,9.40096": {
+    "street": "Albertviller Straße",
+    "houseNumber": "11",
+    "place": "Stöckach"
+  },
+  "48.86987,9.40101": {
+    "street": "Breuningsweiler Straße",
+    "houseNumber": null,
+    "place": "Stöckach"
+  },
+  "48.87052,9.38422": {
+    "street": "Linsenhalde",
+    "houseNumber": null,
+    "place": "Schelmenholz"
+  },
+  "48.87623,9.39619": {
+    "street": "Ringstraße",
+    "houseNumber": null,
+    "place": "Bahnhofsvorstadt"
+  },
+  "48.86643,9.39563": {
+    "street": "Albertviller Straße",
+    "houseNumber": null,
+    "place": "Schelmenholz"
+  },
+  "48.86491,9.43063": {
+    "street": "Hauptstraße",
+    "houseNumber": null,
+    "place": "Neumühle"
+  },
+  "48.86220,9.38960": {
+    "street": "Albertviller Straße",
+    "houseNumber": null,
+    "place": "Schelmenholz"
+  },
+  "48.87895,9.39215": {
+    "street": "Bahnhofstraße",
+    "houseNumber": "6/3",
+    "place": "Bahnhofsvorstadt"
+  },
+  "48.22494,11.33338": {
+    "street": "Geiselbullacher Straße",
+    "houseNumber": null,
+    "place": "Geiselbullach"
+  },
+  "48.20766,11.32750": {
+    "street": "Nöscherplatz",
+    "houseNumber": null,
+    "place": "Olching"
+  },
+  "48.21620,11.34687": {
+    "street": "Feursstraße",
+    "houseNumber": null,
+    "place": "Schwaigfeld"
+  },
+  "48.21270,11.31828": {
+    "street": "Dachauer Straße",
+    "houseNumber": null,
+    "place": "Neu-Esting"
+  },
+  "48.20761,11.36152": {
+    "street": "Fichtenweg",
+    "houseNumber": null,
+    "place": "Olching"
+  },
+  "48.20960,11.33538": {
+    "street": "Bahnhofstraße",
+    "houseNumber": null,
+    "place": "Olching"
+  },
+  "52.02730,8.52608": {
+    "street": "Siechenmarschstraße",
+    "houseNumber": "36",
+    "place": "Mitte"
+  },
+  "51.98562,8.48788": {
+    "street": "Mülheimer Straße",
+    "houseNumber": null,
+    "place": "Brackwede"
+  },
+  "52.05470,8.52548": {
+    "street": "Schuckertstraße",
+    "houseNumber": "7",
+    "place": "Schildesche"
+  },
+  "52.08658,8.52847": {
+    "street": "Naturstadion",
+    "houseNumber": null,
+    "place": "Jöllenbeck"
+  },
+  "52.03989,8.51191": {
+    "street": "Gerhart-Hauptmann-Straße",
+    "houseNumber": "23",
+    "place": "Schildesche"
+  },
+  "52.01637,8.53556": {
+    "street": "Rohrteichstraße",
+    "houseNumber": "22",
+    "place": "Gundlach-Carré"
+  },
+  "51.99171,8.50970": {
+    "street": "Hauptstraße",
+    "houseNumber": "96",
+    "place": "Brackwede"
+  },
+  "52.02637,8.53091": {
+    "street": "Zimmerstraße",
+    "houseNumber": "23",
+    "place": "Bahnhofsviertel"
+  },
+  "52.01756,8.53448": {
+    "street": "Ravensberger Straße",
+    "houseNumber": "10",
+    "place": "Gundlach-Carré"
+  },
+  "52.01619,8.52745": {
+    "street": "Am Sparrenberg",
+    "houseNumber": "14",
+    "place": "Gundlach-Carré"
+  },
+  "52.04880,8.45630": {
+    "street": "Wertherstraße",
+    "houseNumber": null,
+    "place": "Dornberg"
+  },
+  "52.02846,8.53675": {
+    "street": "Henkelstraße",
+    "houseNumber": "5",
+    "place": "Mitte"
+  },
+  "52.01893,8.54140": {
+    "street": "Hermann-Kleinewächter-Straße",
+    "houseNumber": null,
+    "place": "Gundlach-Carré"
+  },
+  "51.94691,8.58743": {
+    "street": "Elbeallee",
+    "houseNumber": null,
+    "place": "Sennestadt"
+  },
+  "52.02835,8.52214": {
+    "street": "Siegfriedplatz",
+    "houseNumber": null,
+    "place": "Mitte"
+  },
+  "52.01668,8.52862": {
+    "street": "Kreuzstraße",
+    "houseNumber": "19a",
+    "place": "Gundlach-Carré"
+  },
+  "52.01952,8.53156": {
+    "street": "Welle",
+    "houseNumber": null,
+    "place": "Altstadt"
+  },
+  "52.02300,8.52246": {
+    "street": "Kiskerstraße",
+    "houseNumber": null,
+    "place": "Mitte"
+  },
+  "52.03542,8.50736": {
+    "street": "Jakob-Kaiser-Straße",
+    "houseNumber": "3",
+    "place": "Schildesche"
+  },
+  "52.01969,8.53726": {
+    "street": "Nikolaus-Dürkopp-Straße",
+    "houseNumber": "11",
+    "place": "Gundlach-Carré"
+  },
+  "51.94713,8.58765": {
+    "street": "Ehrenbergplatz",
+    "houseNumber": null,
+    "place": "Sennestadt"
+  },
+  "51.99094,8.51050": {
+    "street": "Hauptstraße",
+    "houseNumber": "91",
+    "place": "Brackwede"
+  },
+  "51.94801,8.58132": {
+    "street": "Vennhofallee",
+    "houseNumber": null,
+    "place": "Verler Dreieck"
+  },
+  "51.99967,8.57864": {
+    "street": "Detmolder Straße",
+    "houseNumber": "380",
+    "place": "Stieghorst"
+  },
+  "52.00759,8.52070": {
+    "street": "An der Tonkuhle",
+    "houseNumber": "1",
+    "place": "Gadderbaum"
+  },
+  "52.02920,8.53369": {
+    "street": "Bahnhofsplatz",
+    "houseNumber": null,
+    "place": "Bahnhofsviertel"
+  },
+  "52.02945,8.53177": {
+    "street": "Joseph-Massolle-Straße",
+    "houseNumber": null,
+    "place": "Mitte"
+  },
+  "52.02896,8.57253": {
+    "street": "Auf dem Langen Kampe",
+    "houseNumber": "93a",
+    "place": "5. Kanton"
+  },
+  "51.98077,8.49784": {
+    "street": "Duisburger Straße",
+    "houseNumber": null,
+    "place": "Brackwede"
   }
 }

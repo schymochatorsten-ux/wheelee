@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "neunkirchen",
+    "name": "Neunkirchen",
+    "center": {
+      "lat": 49.32722235,
+      "lng": 7.200299650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neunkirchen-05526cc284",
+      "city": "neunkirchen",
+      "label": "Behindertenparkplatz Neunkirchen",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neunkirchen",
+      "spotCount": 4,
+      "lat": 49.32722235,
+      "lng": 7.199761650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/237990525), ODbL"
+    },
+    {
+      "id": "neunkirchen-f6baa4b84a",
+      "city": "neunkirchen",
+      "label": "Behindertenparkplatz Neunkirchen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Neunkirchen",
+      "spotCount": 2,
+      "lat": 49.3181127,
+      "lng": 7.22717645,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/419748126), ODbL"
+    },
+    {
+      "id": "neunkirchen-40b2d72815",
+      "city": "neunkirchen",
+      "label": "Lakai",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "07:00-22:00",
+      "district": "Neunkirchen",
+      "spotCount": 1,
+      "lat": 49.3276496,
+      "lng": 7.200299650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/237018328), ODbL"
+    }
+  ]
+}

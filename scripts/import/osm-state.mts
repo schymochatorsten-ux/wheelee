@@ -355,6 +355,10 @@ function dichteMelden(
     }
   }
 
+  // `--vollstaendig`: die Listen ganz ausgeben, mit Kennung (ToDo 2e.12).
+  const vollstaendig = process.argv.includes("--vollstaendig");
+  const listenLaenge = vollstaendig ? Number.POSITIVE_INFINITY : 8;
+
   // Für die Gemeinden an der Reihe zählt es: Sie würden geschrieben.
   for (const eintrag of dichten) {
     if (anDerReihe.has(eintrag.slug) && eintrag.wert > median * 3) flagged.add(eintrag.slug);
@@ -371,8 +375,8 @@ function dichteMelden(
 
   if (weit.length > 0) {
     console.log(`  ⚠️ ${weit.length} Gemeinden an der Reihe mit Streuung über 15 km (Zuordnung prüfen):`);
-    for (const eintrag of weit.sort((a, b) => b.km - a.km).slice(0, 8)) {
-      console.log(`     ${eintrag.name}: ${eintrag.km.toFixed(1)} km`);
+    for (const eintrag of weit.sort((a, b) => b.km - a.km).slice(0, listenLaenge)) {
+      console.log(`     ${eintrag.name}: ${eintrag.km.toFixed(1)} km${vollstaendig ? ` [${eintrag.slug}]` : ""}`);
     }
   }
   const dicht = dichten
@@ -380,8 +384,10 @@ function dichteMelden(
     .sort((a, b) => b.wert - a.wert);
   if (dicht.length > 0) {
     console.log(`  ⚠️ ${dicht.length} Gemeinden an der Reihe über dem Dreifachen (werden nicht geschrieben):`);
-    for (const e of dicht.slice(0, 8)) {
-      console.log(`     ${e.name}: ${e.wert.toFixed(1)} (${e.standorte} Standorte)`);
+    for (const e of dicht.slice(0, listenLaenge)) {
+      console.log(
+        `     ${e.name}: ${e.wert.toFixed(1)} (${e.standorte} Standorte)${vollstaendig ? ` [${e.slug}]` : ""}`,
+      );
     }
   }
   return flagged;

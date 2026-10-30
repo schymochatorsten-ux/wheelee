@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "voelklingen",
+    "name": "Völklingen",
+    "center": {
+      "lat": 49.25226975,
+      "lng": 6.859588100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "voelklingen-3af63c3572",
+      "city": "voelklingen",
+      "label": "Behindertenparkplatz Völklingen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Völklingen",
+      "spotCount": 3,
+      "lat": 49.25642045000001,
+      "lng": 6.870974500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/48634478), ODbL"
+    },
+    {
+      "id": "voelklingen-3076659271",
+      "city": "voelklingen",
+      "label": "Behindertenparkplatz Völklingen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Völklingen",
+      "spotCount": 5,
+      "lat": 49.2474214,
+      "lng": 6.8469519000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/265713264), ODbL"
+    },
+    {
+      "id": "voelklingen-5ad3c05d5a",
+      "city": "voelklingen",
+      "label": "Behindertenparkplatz Völklingen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Völklingen",
+      "spotCount": 5,
+      "lat": 49.2556515,
+      "lng": 6.868598500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/534120051), ODbL"
+    },
+    {
+      "id": "voelklingen-eb4fc03415",
+      "city": "voelklingen",
+      "label": "Behindertenparkplatz Völklingen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Völklingen",
+      "spotCount": 1,
+      "lat": 49.25115155,
+      "lng": 6.852352600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1111612144), ODbL"
+    },
+    {
+      "id": "voelklingen-0542d21b1d",
+      "city": "voelklingen",
+      "label": "City Tiefgarage",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Völklingen",
+      "spotCount": 1,
+      "lat": 49.250601200000006,
+      "lng": 6.8533235,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/119782219), ODbL"
+    },
+    {
+      "id": "voelklingen-8b82c3e2f4",
+      "city": "voelklingen",
+      "label": "Hindenburgplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Völklingen",
+      "spotCount": 1,
+      "lat": 49.25226975,
+      "lng": 6.859588100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25478921), ODbL"
+    }
+  ]
+}

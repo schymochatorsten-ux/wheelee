@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "neuruppin",
+    "name": "Neuruppin",
+    "center": {
+      "lat": 52.92008305,
+      "lng": 12.801559100000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuruppin-8e3276cc98",
+      "city": "neuruppin",
+      "label": "Behindertenparkplatz Neuruppin",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neuruppin",
+      "spotCount": 1,
+      "lat": 52.8879382,
+      "lng": 12.8023316,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11716759844), ODbL"
+    },
+    {
+      "id": "neuruppin-bd84aa9a4a",
+      "city": "neuruppin",
+      "label": "Behindertenparkplatz Neuruppin",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuruppin",
+      "spotCount": 1,
+      "lat": 52.92008305,
+      "lng": 12.801559100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/270552336), ODbL"
+    },
+    {
+      "id": "neuruppin-51b3669b1c",
+      "city": "neuruppin",
+      "label": "Behindertenparkplatz Neuruppin",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuruppin",
+      "spotCount": 4,
+      "lat": 53.02895025000001,
+      "lng": 12.7675476,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/781488611), ODbL"
+    }
+  ]
+}

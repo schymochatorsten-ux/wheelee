@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "st-ingbert",
+    "name": "St. Ingbert",
+    "center": {
+      "lat": 49.27008565,
+      "lng": 7.111813300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "st-ingbert-326b129704",
+      "city": "st-ingbert",
+      "label": "Behindertenparkplatz St. Ingbert",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "St. Ingbert",
+      "spotCount": 1,
+      "lat": 49.2865191,
+      "lng": 7.131807200000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/619021738), ODbL"
+    },
+    {
+      "id": "st-ingbert-af520a2e73",
+      "city": "st-ingbert",
+      "label": "Behindertenparkplatz St. Ingbert",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "St. Ingbert",
+      "spotCount": 3,
+      "lat": 49.2664659,
+      "lng": 7.141125050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/354582529), ODbL"
+    },
+    {
+      "id": "st-ingbert-75c2a71bea",
+      "city": "st-ingbert",
+      "label": "Behindertenparkplatz St. Ingbert",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "St. Ingbert",
+      "spotCount": 1,
+      "lat": 49.242238150000006,
+      "lng": 7.14236755,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1231928017), ODbL"
+    },
+    {
+      "id": "st-ingbert-39a160f1c6",
+      "city": "st-ingbert",
+      "label": "Behindertenparkplatz St. Ingbert",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "St. Ingbert",
+      "spotCount": 3,
+      "lat": 49.27894915,
+      "lng": 7.111813300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1350742357), ODbL"
+    },
+    {
+      "id": "st-ingbert-e0f61a405a",
+      "city": "st-ingbert",
+      "label": "Behindertenparkplatz St. Ingbert",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "St. Ingbert",
+      "spotCount": 1,
+      "lat": 49.27008565,
+      "lng": 7.105602300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1433818187), ODbL"
+    },
+    {
+      "id": "st-ingbert-2cefcde9b9",
+      "city": "st-ingbert",
+      "label": "Behindertenparkplatz St. Ingbert",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "St. Ingbert",
+      "spotCount": 1,
+      "lat": 49.26984255000001,
+      "lng": 7.105730400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1454471190), ODbL"
+    },
+    {
+      "id": "st-ingbert-c4e537c91c",
+      "city": "st-ingbert",
+      "label": "Willy-Voit-Straße 2",
+      "street": "Willy-Voit-Straße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "St. Ingbert",
+      "spotCount": 5,
+      "lat": 49.275536900000006,
+      "lng": 7.1085253,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/93584911), ODbL"
+    }
+  ]
+}

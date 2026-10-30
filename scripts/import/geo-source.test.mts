@@ -5,6 +5,7 @@ import {
   mapFields,
   parseCsv,
   parseGml,
+  pointFromWkt,
   utmToWgs84,
   utmZoneFromSrs,
   wgs84ToUtm,
@@ -208,6 +209,30 @@ describe("parseGml", () => {
 
   it("verträgt eine leere Sammlung", () => {
     expect(parseGml("<wfs:FeatureCollection></wfs:FeatureCollection>")).toEqual([]);
+  });
+});
+
+describe("pointFromWkt", () => {
+  it("liest einen Punkt aus der WFS-CSV (Bielefeld, EPSG:25832)", () => {
+    expect(pointFromWkt("POINT (467960.721758392 5763515.68933441)")).toEqual([467960.721758392, 5763515.68933441]);
+  });
+
+  it("rät bei anderen Geometrien nichts", () => {
+    expect(pointFromWkt("LINESTRING (1 2, 3 4)")).toBeNull();
+    expect(pointFromWkt("")).toBeNull();
+    expect(pointFromWkt(undefined)).toBeNull();
+  });
+
+  it("ergibt mit der Zone aus der Anfrage einen Ort in Bielefeld", () => {
+    const [x, y] = pointFromWkt("POINT (467960.721758392 5763515.68933441)")!;
+    const found = coordinatesOf({
+      id: "1",
+      geometry: { type: "Point", coordinates: [x, y] },
+      properties: {},
+      srs: "EPSG:25832",
+    });
+    expect(found!.lat).toBeCloseTo(52.021, 2);
+    expect(found!.lng).toBeCloseTo(8.533, 2);
   });
 });
 

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T22:58:09.336Z",
+  "updatedAt": "2026-10-30T07:11:30.208Z",
   "records": [
     {
       "rank": 1,
@@ -281,13 +281,13 @@
       "population": 331605,
       "ags": "05711000",
       "plan": "official",
-      "usedSource": "OpenStreetMap",
-      "usedUrl": "Overpass, OSM relation/62646 (Bielefeld, Nordrhein-Westfalen, Deutschland)",
+      "usedSource": "amtlich (CSV)",
+      "usedUrl": "https://www.bielefeld01.de/md/WFS/schwerbehindertenparkplatze/01?SERVICE=WFS&VERSION=1.1.0&REQUEST=GetFeature&TYPENAME=parken_schwerbehinderte_p&SRSNAME=EPSG:25832&OUTPUTFORMAT=text/csv",
       "status": "fertig",
-      "locations": 125,
-      "spaces": 229,
-      "attemptedAt": "2026-10-29T22:58:09.336Z",
-      "message": "amtliche Quelle nicht nutzbar, OSM verwendet"
+      "locations": 122,
+      "spaces": 199,
+      "attemptedAt": "2026-10-30T07:11:30.208Z",
+      "message": null
     },
     {
       "rank": 19,
@@ -3122,6 +3122,22 @@
       "message": null
     },
     {
+      "rank": 196,
+      "city": "Cuxhaven",
+      "slug": "cuxhaven",
+      "state": "Niedersachsen",
+      "population": 49697,
+      "ags": "03352011",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 77,
+      "spaces": 107,
+      "attemptedAt": "2026-10-30T07:02:03.168Z",
+      "message": null
+    },
+    {
       "rank": 198,
       "city": "Leonberg",
       "slug": "leonberg",
@@ -3151,6 +3167,22 @@
       "locations": 52,
       "spaces": 83,
       "attemptedAt": "2026-10-29T22:50:06.508Z",
+      "message": null
+    },
+    {
+      "rank": 202,
+      "city": "Oranienburg",
+      "slug": "oranienburg",
+      "state": "Brandenburg",
+      "population": 49122,
+      "ags": "12065256",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 12,
+      "spaces": 25,
+      "attemptedAt": "2026-10-30T07:01:10.438Z",
       "message": null
     },
     {
@@ -3266,6 +3298,22 @@
       "message": null
     },
     {
+      "rank": 211,
+      "city": "Hennef (Sieg)",
+      "slug": "hennef",
+      "state": "Nordrhein-Westfalen",
+      "population": 48188,
+      "ags": "05382020",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 91,
+      "spaces": 143,
+      "attemptedAt": "2026-10-30T07:03:00.808Z",
+      "message": null
+    },
+    {
       "rank": 212,
       "city": "Frankenthal (Pfalz)",
       "slug": "frankenthal",
@@ -3343,6 +3391,38 @@
       "locations": 49,
       "spaces": 69,
       "attemptedAt": "2026-10-29T22:50:06.341Z",
+      "message": null
+    },
+    {
+      "rank": 217,
+      "city": "Singen (Hohentwiel)",
+      "slug": "singen",
+      "state": "Baden-Württemberg",
+      "population": 47621,
+      "ags": "08335075",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 62,
+      "spaces": 127,
+      "attemptedAt": "2026-10-30T06:59:59.492Z",
+      "message": null
+    },
+    {
+      "rank": 219,
+      "city": "Neunkirchen",
+      "slug": "neunkirchen",
+      "state": "Saarland",
+      "population": 47344,
+      "ags": "10043114",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Saarland (saarland-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 3,
+      "spaces": 7,
+      "attemptedAt": "2026-10-30T07:03:04.358Z",
       "message": null
     },
     {
@@ -3906,6 +3986,22 @@
       "message": null
     },
     {
+      "rank": 256,
+      "city": "Siegburg",
+      "slug": "siegburg",
+      "state": "Nordrhein-Westfalen",
+      "population": 42445,
+      "ags": "05382060",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 50,
+      "spaces": 81,
+      "attemptedAt": "2026-10-30T07:03:00.783Z",
+      "message": null
+    },
+    {
       "rank": 257,
       "city": "Weiden i.d.OPf.",
       "slug": "weiden-i-d-opf",
@@ -3983,6 +4079,22 @@
       "locations": 9,
       "spaces": 21,
       "attemptedAt": "2026-10-29T22:49:09.734Z",
+      "message": null
+    },
+    {
+      "rank": 262,
+      "city": "Buchholz in der Nordheide",
+      "slug": "buchholz",
+      "state": "Niedersachsen",
+      "population": 41737,
+      "ags": "03353005",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 27,
+      "spaces": 81,
+      "attemptedAt": "2026-10-30T07:02:03.147Z",
       "message": null
     },
     {
@@ -4114,6 +4226,22 @@
       "message": null
     },
     {
+      "rank": 271,
+      "city": "Neumarkt i.d.OPf.",
+      "slug": "neumarkt-i-d-opf",
+      "state": "Bayern",
+      "population": 41103,
+      "ags": "09373147",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Bayern (bayern-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 53,
+      "spaces": 80,
+      "attemptedAt": "2026-10-30T07:00:51.436Z",
+      "message": null
+    },
+    {
       "rank": 272,
       "city": "Coburg",
       "slug": "coburg",
@@ -4127,6 +4255,22 @@
       "locations": 23,
       "spaces": 30,
       "attemptedAt": "2026-10-29T21:56:01.628Z",
+      "message": null
+    },
+    {
+      "rank": 273,
+      "city": "Völklingen",
+      "slug": "voelklingen",
+      "state": "Saarland",
+      "population": 40952,
+      "ags": "10041519",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Saarland (saarland-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 6,
+      "spaces": 16,
+      "attemptedAt": "2026-10-30T07:03:04.335Z",
       "message": null
     },
     {
@@ -4466,6 +4610,22 @@
       "message": null
     },
     {
+      "rank": 295,
+      "city": "Ilmenau",
+      "slug": "ilmenau",
+      "state": "Thüringen",
+      "population": 38834,
+      "ags": "16070029",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Thüringen (thueringen-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 68,
+      "spaces": 91,
+      "attemptedAt": "2026-10-30T07:03:36.272Z",
+      "message": null
+    },
+    {
       "rank": 296,
       "city": "Backnang",
       "slug": "backnang",
@@ -4690,6 +4850,22 @@
       "message": null
     },
     {
+      "rank": 310,
+      "city": "Saarlouis",
+      "slug": "saarlouis",
+      "state": "Saarland",
+      "population": 37667,
+      "ags": "10044115",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Saarland (saarland-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 4,
+      "spaces": 7,
+      "attemptedAt": "2026-10-30T07:03:04.324Z",
+      "message": null
+    },
+    {
       "rank": 311,
       "city": "Bautzen",
       "slug": "bautzen",
@@ -4735,6 +4911,22 @@
       "locations": 7,
       "spaces": 13,
       "attemptedAt": "2026-10-29T22:49:09.887Z",
+      "message": null
+    },
+    {
+      "rank": 314,
+      "city": "Erding",
+      "slug": "erding",
+      "state": "Bayern",
+      "population": 37171,
+      "ags": "09177117",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Bayern (bayern-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 47,
+      "spaces": 114,
+      "attemptedAt": "2026-10-30T07:00:51.425Z",
       "message": null
     },
     {
@@ -4815,6 +5007,22 @@
       "locations": 14,
       "spaces": 19,
       "attemptedAt": "2026-10-29T22:49:09.931Z",
+      "message": null
+    },
+    {
+      "rank": 320,
+      "city": "Bitterfeld-Wolfen",
+      "slug": "bitterfeld-wolfen",
+      "state": "Sachsen-Anhalt",
+      "population": 36592,
+      "ags": "15082015",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 31,
+      "spaces": 114,
+      "attemptedAt": "2026-10-30T07:03:15.951Z",
       "message": null
     },
     {
@@ -4994,6 +5202,22 @@
       "message": null
     },
     {
+      "rank": 332,
+      "city": "St. Ingbert",
+      "slug": "st-ingbert",
+      "state": "Saarland",
+      "population": 35453,
+      "ags": "10045117",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Saarland (saarland-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 7,
+      "spaces": 15,
+      "attemptedAt": "2026-10-30T07:03:04.298Z",
+      "message": null
+    },
+    {
       "rank": 333,
       "city": "Lage",
       "slug": "lage",
@@ -5007,6 +5231,22 @@
       "locations": 8,
       "spaces": 15,
       "attemptedAt": "2026-10-29T22:50:06.839Z",
+      "message": null
+    },
+    {
+      "rank": 334,
+      "city": "Deggendorf",
+      "slug": "deggendorf",
+      "state": "Bayern",
+      "population": 35044,
+      "ags": "09271119",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Bayern (bayern-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 159,
+      "spaces": 229,
+      "attemptedAt": "2026-10-30T07:00:51.379Z",
       "message": null
     },
     {
@@ -5474,6 +5714,22 @@
       "message": null
     },
     {
+      "rank": 364,
+      "city": "Achim",
+      "slug": "achim",
+      "state": "Niedersachsen",
+      "population": 32870,
+      "ags": "03361001",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 18,
+      "spaces": 68,
+      "attemptedAt": "2026-10-30T07:02:03.159Z",
+      "message": null
+    },
+    {
       "rank": 365,
       "city": "Uelzen",
       "slug": "uelzen",
@@ -5503,6 +5759,22 @@
       "locations": 16,
       "spaces": 25,
       "attemptedAt": "2026-10-29T22:51:02.266Z",
+      "message": null
+    },
+    {
+      "rank": 367,
+      "city": "Nienburg (Weser)",
+      "slug": "nienburg",
+      "state": "Niedersachsen",
+      "population": 32608,
+      "ags": "03256022",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 33,
+      "spaces": 70,
+      "attemptedAt": "2026-10-30T07:02:03.136Z",
       "message": null
     },
     {
@@ -5586,6 +5858,22 @@
       "message": null
     },
     {
+      "rank": 373,
+      "city": "Neuruppin",
+      "slug": "neuruppin",
+      "state": "Brandenburg",
+      "population": 31962,
+      "ags": "12068320",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 3,
+      "spaces": 6,
+      "attemptedAt": "2026-10-30T07:01:10.452Z",
+      "message": null
+    },
+    {
       "rank": 374,
       "city": "Naumburg (Saale)",
       "slug": "naumburg",
@@ -5631,6 +5919,22 @@
       "locations": 21,
       "spaces": 46,
       "attemptedAt": "2026-10-29T21:54:44.558Z",
+      "message": null
+    },
+    {
+      "rank": 377,
+      "city": "Merzig",
+      "slug": "merzig",
+      "state": "Saarland",
+      "population": 31697,
+      "ags": "10042113",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Saarland (saarland-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 4,
+      "spaces": 4,
+      "attemptedAt": "2026-10-30T07:03:04.368Z",
       "message": null
     },
     {
@@ -5727,6 +6031,22 @@
       "locations": 10,
       "spaces": 13,
       "attemptedAt": "2026-10-29T22:51:12.487Z",
+      "message": null
+    },
+    {
+      "rank": 384,
+      "city": "Geestland",
+      "slug": "geestland",
+      "state": "Niedersachsen",
+      "population": 31093,
+      "ags": "03352062",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 12,
+      "spaces": 16,
+      "attemptedAt": "2026-10-30T07:02:03.189Z",
       "message": null
     },
     {
@@ -6050,6 +6370,22 @@
       "message": null
     },
     {
+      "rank": 406,
+      "city": "Friedberg",
+      "slug": "friedberg-by",
+      "state": "Bayern",
+      "population": 29953,
+      "ags": "09771130",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Bayern (bayern-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 86,
+      "spaces": 121,
+      "attemptedAt": "2026-10-30T07:00:51.447Z",
+      "message": null
+    },
+    {
       "rank": 407,
       "city": "Schwandorf",
       "slug": "schwandorf",
@@ -6338,6 +6674,22 @@
       "message": null
     },
     {
+      "rank": 425,
+      "city": "Mechernich",
+      "slug": "mechernich",
+      "state": "Nordrhein-Westfalen",
+      "population": 29187,
+      "ags": "05366028",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 83,
+      "spaces": 95,
+      "attemptedAt": "2026-10-30T07:03:00.796Z",
+      "message": null
+    },
+    {
       "rank": 426,
       "city": "Waltrop",
       "slug": "waltrop",
@@ -6431,6 +6783,22 @@
       "locations": 14,
       "spaces": 27,
       "attemptedAt": "2026-10-29T22:50:40.545Z",
+      "message": null
+    },
+    {
+      "rank": 432,
+      "city": "Rödermark",
+      "slug": "roedermark",
+      "state": "Hessen",
+      "population": 28753,
+      "ags": "06438012",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Hessen (hessen-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 32,
+      "spaces": 72,
+      "attemptedAt": "2026-10-30T07:01:31.786Z",
       "message": null
     },
     {
@@ -6591,6 +6959,22 @@
       "locations": 3,
       "spaces": 4,
       "attemptedAt": "2026-10-29T22:51:02.274Z",
+      "message": null
+    },
+    {
+      "rank": 443,
+      "city": "Garmisch-Partenkirchen",
+      "slug": "garmisch-partenkirchen",
+      "state": "Bayern",
+      "population": 28305,
+      "ags": "09180117",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Bayern (bayern-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 29,
+      "spaces": 189,
+      "attemptedAt": "2026-10-30T07:00:51.414Z",
       "message": null
     },
     {
@@ -6770,6 +7154,22 @@
       "message": null
     },
     {
+      "rank": 455,
+      "city": "Königsbrunn",
+      "slug": "koenigsbrunn",
+      "state": "Bayern",
+      "population": 27879,
+      "ags": "09772163",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Bayern (bayern-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 59,
+      "spaces": 90,
+      "attemptedAt": "2026-10-30T07:00:51.391Z",
+      "message": null
+    },
+    {
       "rank": 456,
       "city": "Heppenheim (Bergstraße)",
       "slug": "heppenheim",
@@ -6946,6 +7346,22 @@
       "message": null
     },
     {
+      "rank": 467,
+      "city": "Verden (Aller)",
+      "slug": "verden",
+      "state": "Niedersachsen",
+      "population": 27121,
+      "ags": "03361012",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 23,
+      "spaces": 53,
+      "attemptedAt": "2026-10-30T07:02:03.180Z",
+      "message": null
+    },
+    {
       "rank": 468,
       "city": "Weinstadt",
       "slug": "weinstadt",
@@ -7010,6 +7426,22 @@
       "message": null
     },
     {
+      "rank": 472,
+      "city": "Rheinbach",
+      "slug": "rheinbach",
+      "state": "Nordrhein-Westfalen",
+      "population": 26918,
+      "ags": "05382048",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 47,
+      "spaces": 71,
+      "attemptedAt": "2026-10-30T07:03:00.844Z",
+      "message": null
+    },
+    {
       "rank": 473,
       "city": "Hamminkeln",
       "slug": "hamminkeln",
@@ -7023,6 +7455,22 @@
       "locations": 5,
       "spaces": 14,
       "attemptedAt": "2026-10-29T22:50:07.230Z",
+      "message": null
+    },
+    {
+      "rank": 474,
+      "city": "Leimen",
+      "slug": "leimen",
+      "state": "Baden-Württemberg",
+      "population": 26873,
+      "ags": "08226041",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 26,
+      "spaces": 70,
+      "attemptedAt": "2026-10-30T06:59:59.447Z",
       "message": null
     },
     {
@@ -7074,6 +7522,22 @@
       "message": null
     },
     {
+      "rank": 478,
+      "city": "Achern",
+      "slug": "achern",
+      "state": "Baden-Württemberg",
+      "population": 26733,
+      "ags": "08317001",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 64,
+      "spaces": 91,
+      "attemptedAt": "2026-10-30T06:59:59.459Z",
+      "message": null
+    },
+    {
       "rank": 479,
       "city": "Hennigsdorf",
       "slug": "hennigsdorf",
@@ -7087,6 +7551,22 @@
       "locations": 7,
       "spaces": 9,
       "attemptedAt": "2026-10-29T22:48:08.902Z",
+      "message": null
+    },
+    {
+      "rank": 480,
+      "city": "Overath",
+      "slug": "overath",
+      "state": "Nordrhein-Westfalen",
+      "population": 26663,
+      "ags": "05378024",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 63,
+      "spaces": 92,
+      "attemptedAt": "2026-10-30T07:03:00.831Z",
       "message": null
     },
     {
@@ -7202,6 +7682,22 @@
       "message": null
     },
     {
+      "rank": 488,
+      "city": "Remseck am Neckar",
+      "slug": "remseck",
+      "state": "Baden-Württemberg",
+      "population": 26188,
+      "ags": "08118081",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 6,
+      "spaces": 87,
+      "attemptedAt": "2026-10-30T06:59:59.481Z",
+      "message": null
+    },
+    {
       "rank": 489,
       "city": "Lauf a.d.Pegnitz",
       "slug": "lauf-a-d-pegnitz",
@@ -7215,6 +7711,22 @@
       "locations": 8,
       "spaces": 17,
       "attemptedAt": "2026-10-29T21:56:01.877Z",
+      "message": null
+    },
+    {
+      "rank": 490,
+      "city": "Wetter (Ruhr)",
+      "slug": "wetter",
+      "state": "Nordrhein-Westfalen",
+      "population": 26090,
+      "ags": "05954032",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 44,
+      "spaces": 62,
+      "attemptedAt": "2026-10-30T07:03:00.820Z",
       "message": null
     },
     {
@@ -7458,6 +7970,22 @@
       "message": null
     },
     {
+      "rank": 507,
+      "city": "St. Wendel",
+      "slug": "st-wendel",
+      "state": "Saarland",
+      "population": 25441,
+      "ags": "10046117",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Saarland (saarland-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 8,
+      "spaces": 8,
+      "attemptedAt": "2026-10-30T07:03:04.347Z",
+      "message": null
+    },
+    {
       "rank": 508,
       "city": "Salzkotten",
       "slug": "salzkotten",
@@ -7503,6 +8031,38 @@
       "locations": 5,
       "spaces": 6,
       "attemptedAt": "2026-10-29T22:48:30.527Z",
+      "message": null
+    },
+    {
+      "rank": 511,
+      "city": "Sangerhausen",
+      "slug": "sangerhausen",
+      "state": "Sachsen-Anhalt",
+      "population": 25392,
+      "ags": "15087370",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 8,
+      "spaces": 10,
+      "attemptedAt": "2026-10-30T07:03:15.977Z",
+      "message": null
+    },
+    {
+      "rank": 512,
+      "city": "Groß-Gerau",
+      "slug": "gross-gerau",
+      "state": "Hessen",
+      "population": 25388,
+      "ags": "06433006",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Hessen (hessen-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 59,
+      "spaces": 60,
+      "attemptedAt": "2026-10-30T07:01:31.821Z",
       "message": null
     },
     {
@@ -7871,6 +8431,22 @@
       "locations": 5,
       "spaces": 19,
       "attemptedAt": "2026-10-29T21:54:44.831Z",
+      "message": null
+    },
+    {
+      "rank": 536,
+      "city": "Meckenheim",
+      "slug": "meckenheim",
+      "state": "Nordrhein-Westfalen",
+      "population": 24925,
+      "ags": "05382032",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 43,
+      "spaces": 69,
+      "attemptedAt": "2026-10-30T07:03:00.889Z",
       "message": null
     },
     {
@@ -8290,6 +8866,22 @@
       "message": null
     },
     {
+      "rank": 563,
+      "city": "Alfter",
+      "slug": "alfter",
+      "state": "Nordrhein-Westfalen",
+      "population": 23719,
+      "ags": "05382004",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 51,
+      "spaces": 67,
+      "attemptedAt": "2026-10-30T07:03:00.855Z",
+      "message": null
+    },
+    {
       "rank": 564,
       "city": "Limbach-Oberfrohna",
       "slug": "limbach-oberfrohna",
@@ -8351,6 +8943,22 @@
       "locations": 6,
       "spaces": 8,
       "attemptedAt": "2026-10-29T22:49:09.596Z",
+      "message": null
+    },
+    {
+      "rank": 568,
+      "city": "Kaltenkirchen",
+      "slug": "kaltenkirchen",
+      "state": "Schleswig-Holstein",
+      "population": 23502,
+      "ags": "01060044",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 24,
+      "spaces": 74,
+      "attemptedAt": "2026-10-30T07:03:26.028Z",
       "message": null
     },
     {
@@ -8434,6 +9042,22 @@
       "message": null
     },
     {
+      "rank": 574,
+      "city": "Gelnhausen",
+      "slug": "gelnhausen",
+      "state": "Hessen",
+      "population": 23290,
+      "ags": "06435010",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Hessen (hessen-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 49,
+      "spaces": 83,
+      "attemptedAt": "2026-10-30T07:01:31.809Z",
+      "message": null
+    },
+    {
       "rank": 575,
       "city": "Weilheim i.OB",
       "slug": "weilheim-i-ob",
@@ -8495,6 +9119,22 @@
       "locations": 6,
       "spaces": 9,
       "attemptedAt": "2026-10-29T22:50:52.188Z",
+      "message": null
+    },
+    {
+      "rank": 579,
+      "city": "Metzingen",
+      "slug": "metzingen",
+      "state": "Baden-Württemberg",
+      "population": 23178,
+      "ags": "08415050",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 42,
+      "spaces": 65,
+      "attemptedAt": "2026-10-30T06:59:59.502Z",
       "message": null
     },
     {
@@ -8642,6 +9282,38 @@
       "message": null
     },
     {
+      "rank": 589,
+      "city": "Neusäß",
+      "slug": "neusaess",
+      "state": "Bayern",
+      "population": 22904,
+      "ags": "09772184",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Bayern (bayern-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 46,
+      "spaces": 61,
+      "attemptedAt": "2026-10-30T07:00:51.404Z",
+      "message": null
+    },
+    {
+      "rank": 590,
+      "city": "Korbach",
+      "slug": "korbach",
+      "state": "Hessen",
+      "population": 22901,
+      "ags": "06635015",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Hessen (hessen-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 45,
+      "spaces": 67,
+      "attemptedAt": "2026-10-30T07:01:31.797Z",
+      "message": null
+    },
+    {
       "rank": 591,
       "city": "Rastede",
       "slug": "rastede",
@@ -8687,6 +9359,22 @@
       "locations": 1,
       "spaces": 1,
       "attemptedAt": "2026-10-29T21:56:02.011Z",
+      "message": null
+    },
+    {
+      "rank": 594,
+      "city": "Sonneberg",
+      "slug": "sonneberg",
+      "state": "Thüringen",
+      "population": 22843,
+      "ags": "16072018",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Thüringen (thueringen-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 2,
+      "spaces": 3,
+      "attemptedAt": "2026-10-30T07:03:36.258Z",
       "message": null
     },
     {
@@ -8770,6 +9458,22 @@
       "message": null
     },
     {
+      "rank": 600,
+      "city": "Bad Rappenau",
+      "slug": "bad-rappenau",
+      "state": "Baden-Württemberg",
+      "population": 22703,
+      "ags": "08125006",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 46,
+      "spaces": 86,
+      "attemptedAt": "2026-10-30T06:59:59.471Z",
+      "message": null
+    },
+    {
       "rank": 602,
       "city": "Ditzingen",
       "slug": "ditzingen",
@@ -8847,6 +9551,22 @@
       "locations": 3,
       "spaces": 4,
       "attemptedAt": "2026-10-29T22:48:30.380Z",
+      "message": null
+    },
+    {
+      "rank": 608,
+      "city": "Burg",
+      "slug": "burg",
+      "state": "Sachsen-Anhalt",
+      "population": 22585,
+      "ags": "15086015",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 53,
+      "spaces": 63,
+      "attemptedAt": "2026-10-30T07:03:15.965Z",
       "message": null
     },
     {
@@ -9250,6 +9970,22 @@
       "message": null
     },
     {
+      "rank": 634,
+      "city": "Osterode am Harz",
+      "slug": "osterode",
+      "state": "Niedersachsen",
+      "population": 21598,
+      "ags": "03159026",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 50,
+      "spaces": 66,
+      "attemptedAt": "2026-10-30T07:02:03.124Z",
+      "message": null
+    },
+    {
       "rank": 635,
       "city": "Büren",
       "slug": "bueren",
@@ -9266,6 +10002,22 @@
       "message": null
     },
     {
+      "rank": 636,
+      "city": "Radevormwald",
+      "slug": "radevormwald",
+      "state": "Nordrhein-Westfalen",
+      "population": 21565,
+      "ags": "05374036",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 30,
+      "spaces": 43,
+      "attemptedAt": "2026-10-30T07:03:00.878Z",
+      "message": null
+    },
+    {
       "rank": 637,
       "city": "Eckernförde",
       "slug": "eckernfoerde",
@@ -9279,6 +10031,22 @@
       "locations": 23,
       "spaces": 31,
       "attemptedAt": "2026-10-29T22:51:02.200Z",
+      "message": null
+    },
+    {
+      "rank": 638,
+      "city": "Dillingen/Saar",
+      "slug": "dillingen-saar",
+      "state": "Saarland",
+      "population": 21529,
+      "ags": "10044111",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Saarland (saarland-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 8,
+      "spaces": 13,
+      "attemptedAt": "2026-10-30T07:03:04.312Z",
       "message": null
     },
     {
@@ -9375,6 +10143,22 @@
       "locations": 34,
       "spaces": 41,
       "attemptedAt": "2026-10-29T21:56:01.768Z",
+      "message": null
+    },
+    {
+      "rank": 646,
+      "city": "Zossen",
+      "slug": "zossen",
+      "state": "Brandenburg",
+      "population": 21412,
+      "ags": "12072477",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 134,
+      "spaces": 159,
+      "attemptedAt": "2026-10-30T07:01:10.462Z",
       "message": null
     },
     {
@@ -9714,6 +10498,22 @@
       "message": null
     },
     {
+      "rank": 668,
+      "city": "Senden",
+      "slug": "senden-nw",
+      "state": "Nordrhein-Westfalen",
+      "population": 20844,
+      "ags": "05558044",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 43,
+      "spaces": 60,
+      "attemptedAt": "2026-10-30T07:03:00.866Z",
+      "message": null
+    },
+    {
       "rank": 669,
       "city": "Bad Waldsee",
       "slug": "bad-waldsee",
@@ -9890,6 +10690,22 @@
       "message": null
     },
     {
+      "rank": 681,
+      "city": "Herborn",
+      "slug": "herborn",
+      "state": "Hessen",
+      "population": 20421,
+      "ags": "06532012",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Hessen (hessen-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 30,
+      "spaces": 70,
+      "attemptedAt": "2026-10-30T07:01:31.833Z",
+      "message": null
+    },
+    {
       "rank": 682,
       "city": "Haßloch",
       "slug": "hassloch",
@@ -10047,6 +10863,22 @@
       "locations": 5,
       "spaces": 9,
       "attemptedAt": "2026-10-29T22:48:38.707Z",
+      "message": null
+    },
+    {
+      "rank": 693,
+      "city": "Blieskastel",
+      "slug": "blieskastel",
+      "state": "Saarland",
+      "population": 20197,
+      "ags": "10045112",
+      "plan": "osm",
+      "usedSource": "OpenStreetMap (Geofabrik-Auszug)",
+      "usedUrl": "Geofabrik, Saarland (saarland-latest.osm.pbf)",
+      "status": "fertig",
+      "locations": 1,
+      "spaces": 2,
+      "attemptedAt": "2026-10-30T07:03:04.380Z",
       "message": null
     },
     {
