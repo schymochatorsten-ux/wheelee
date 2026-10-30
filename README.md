@@ -37,7 +37,7 @@ nicht einfach weiterraten.
 
 | Bereich     | Technologie                                   |
 | ----------- | --------------------------------------------- |
-| Framework   | Next.js 15 (App Router), React 19, TypeScript |
+| Framework   | Next.js 16 (App Router), React 19, TypeScript |
 | Styling     | Tailwind CSS 4                                |
 | Karte       | Leaflet + react-leaflet, OpenStreetMap-Tiles  |
 | Datenbank   | SQLite über `node:sqlite` (D-02)              |
@@ -111,18 +111,18 @@ Browsersprache, sonst Deutsch; sie steht schon im ersten HTML
 (`<html lang>`). Eine weitere Sprache: `src/i18n/<code>.ts` vom Typ `Messages`
 (ein fehlender Schlüssel ist ein Typfehler), Eintrag in `catalogs` und
 `LOCALES` in `src/i18n/index.ts` – `i18n.test.ts` prüft Schlüssel und
-Platzhalter jeder Sprache von selbst. Englisch und Spanisch sind **maschinell
-vorübersetzt und nicht von Muttersprachler:innen geprüft** (ToDo 15.6).
+Platzhalter jeder Sprache von selbst. Alle Sprachen außer Deutsch sind
+**maschinell vorübersetzt und nicht von Muttersprachler:innen geprüft**
+(ToDo 15.6; Prüfstand je Sprache in `Erledigt.md`, 15.1).
 Haftungshinweis, Impressum und Datenschutzerklärung sowie Straßennamen und
 Quelldaten bleiben deutsch. Die E2E-Tests laufen mit `locale: "de-DE"`, weil
 sie am deutschen Wortlaut hängen.
 
 **Die Seite lädt nur, was sichtbar ist.** Alle Standorte ins HTML zu
-schreiben ergab 6,3 MB; jetzt sind es rund 300 KB unkomprimiert (gemessen am
-2026-10-30 im Produktionsbau, nach Stufe 1 von 2e.6 mit 648 Gemeinden – vorher
-128 KB; der Zuwachs ist die Städteliste, die je Gemeinde Quelle und Vermerk
-mitträgt), und die Karte holt den
-jeweiligen Ausschnitt über `/api/spots` nach. Ein Service Worker legt Seite,
+schreiben ergab 6,3 MB; jetzt sind es rund 72 KB unkomprimiert (gemessen am
+2026-10-30 im Entwicklungsserver). Die Städteliste mit Quelle und Vermerk je
+Gemeinde steht nicht im HTML, sondern kommt verdichtet über `/api/cities`; die
+Karte holt den jeweiligen Ausschnitt über `/api/spots` nach. Ein Service Worker legt Seite,
 zuletzt geladene Parkplätze und Kartenkacheln beiseite, damit im Funkloch
 nicht eine weiße Seite steht – mit sichtbarem Hinweis, dass die Angaben vom
 letzten Stand sind.
@@ -149,8 +149,13 @@ npm run report:times    # welche Zeitangaben versteht die App noch nicht?
 
 ### Die deutschen Städte importieren
 
-Erfasst sind die Städte **ab 50.000 Einwohnern**. Der Import läuft Stadt für
-Stadt, größte zuerst, und schreibt den Stand nach **jeder einzelnen Stadt**
+Erfasst sind **alle Gemeinden mit Einwohnern** (`MIN_POPULATION = 0` in
+`scripts/import/german-cities.mts`; bis zum 2026-10-29 galt eine Grenze nach
+Einwohnerzahl, siehe D-07 und 2e.6 in `Erledigt.md`). Der landesweite Lauf
+`npm run import:osm-state` (auch mit Geofabrik-Auszügen: `--pbf <Datei>`) nimmt
+die Gemeinden in Stufen auf; **eine Stufe wird erst nach den Prüfungen
+geschrieben** (Streuung über 15 km, Dichte über dem Dreifachen des Medians).
+Der Einzelimport unten läuft Stadt für Stadt, größte zuerst, und schreibt den Stand nach **jeder einzelnen Stadt**
 fort. Ein Abbruch ist dadurch unkritisch.
 
 ```bash
@@ -217,7 +222,8 @@ In dieser Reihenfolge, von der besten zur schlechtesten:
 2. **Amtliche Liste als Datei (CSV, XLSX, PDF).** Vollständig, aber ohne
    Koordinaten – Geocoding nötig. → die Frankfurter PDF-Kette als Vorlage
 3. **OpenStreetMap.** Unvollständig und meist nur Parkplätze statt einzelner
-   Stellplätze, dafür überall verfügbar und frei lizenziert. → `npm run import:osm`
+   Stellplätze, dafür überall verfügbar und frei lizenziert. → `npm run import:osm-state`
+   (landesweit) oder `npm run import:osm` (einzelne Stadt)
 
 Welche Quelle es für eine Stadt gibt, beantwortet:
 
@@ -280,8 +286,9 @@ Wissenswertes dazu:
 
 ### Weitere Städte aus OpenStreetMap
 
-Für Idstein und Weißenhorn gibt es keine offene Liste der Stadtverwaltung.
-Diese Städte kommen deshalb aus OpenStreetMap:
+Wo es keine offene Liste der Stadtverwaltung gibt, kommt eine Stadt aus
+OpenStreetMap – so Idstein und Weißenhorn, und seit 2e.6 über den landesweiten
+Lauf (`npm run import:osm-state`) alle übrigen Gemeinden. Für einzelne Städte:
 
 ```bash
 npm run import:osm                # alle konfigurierten Städte
@@ -305,7 +312,7 @@ Zwei Dinge, die dieser Import anders macht als der Frankfurter:
 Die Datenlage unterscheidet sich grundlegend von einer Verwaltungsliste: OSM
 kennt überwiegend **Parkplätze mit ausgewiesenen Behindertenstellplätzen**, nicht
 einzelne Stellplätze am Straßenrand, und die Abdeckung ist unvollständig. Die
-Listenansicht der App sagt das ausdrücklich.
+App sagt das ausdrücklich (Haftungshinweis; Zahlen je Stadt unter `/abdeckung`).
 
 ## Daten und Lizenzen
 
@@ -321,6 +328,9 @@ Listenansicht der App sagt das ausdrücklich.
 - Kartendaten: © OpenStreetMap-Mitwirkende, ODbL. Die Attribution muss in der
   Karte sichtbar bleiben.
 - Geocoding: Nominatim, betrieben von der OpenStreetMap Foundation.
+
+Alle Quellenvermerke je Stadt stehen gebündelt unter `/quellen` (aus den
+Einstellungen verlinkt, ToDo 19.8).
 
 ## Konten und Rückmeldungen
 
@@ -404,9 +414,13 @@ Drei Gruppen, und sie bedeuten Verschiedenes:
 | **nur amtlich** | in OpenStreetMap nicht erfasst – kein Mangel, nur eine Quelle weniger |
 | **nur OSM**     | fehlt in der amtlichen Liste: neu entstanden oder dort vergessen      |
 
+„Nur OSM“ wird seit 3.11 **zusätzlich zur amtlichen Liste angezeigt**, mit
+gelbem Hinweis „Nur in OpenStreetMap … ungeprüft“ (`confirmation: "nur_osm"`,
+zur Laufzeit aus `_bestaetigt.json` ergänzt, nicht in den Seed-Dateien).
+
 **Steht nichts in der Detailansicht, wurde nicht geprüft** – das ist keine
-Aussage über den Stellplatz. Eine zweite Quelle haben nur die 23 Städte mit
-amtlicher Liste – und, seit dem 2026-10-24, in Karlsruhe und Baden-Baden 70
+Aussage über den Stellplatz. Eine zweite Quelle haben nur die 22 abgeglichenen Städte mit
+amtlicher Liste (`data/_bestaetigt.json`) – und, seit dem 2026-10-24, in Karlsruhe und Baden-Baden 70
 OSM-Plätze, die die Liste der TechnologieRegion Karlsruhe bestätigt
 (`npm run check:regional`). Dort gibt es nur „bestätigt“, nie das Gegenteil:
 Die Stadt führt nur den Straßenraum.
@@ -466,7 +480,9 @@ Datei im Volume ab, eine vorhandene wird nicht überschrieben):
 docker exec wheelee sh -c 'mkdir -p /app/var/sicherung && node -e "const {DatabaseSync}=require(\"node:sqlite\");new DatabaseSync(process.env.WHEELEE_DB_PATH).prepare(\"VACUUM INTO ?\").run(process.argv[1])" /app/var/sicherung/wheelee-$(date +%F).sqlite'
 ```
 
-Die Sicherung des NAS sollte `sicherung/` mitnehmen und nicht die laufende Datei.
+Den Takt (täglich 03:30, die letzten 14 bleiben) liefern die Timer in `deploy/`
+(`wheelee-sicherung.*`, ToDo 19.3; Einrichtung in `deploy/README.md`). Die
+Sicherung des NAS sollte `sicherung/` mitnehmen und nicht die laufende Datei.
 Ein gelöschtes Konto steht bis zur Rotation der Sicherungen noch darin; das
 nennt die Datenschutzerklärung.
 

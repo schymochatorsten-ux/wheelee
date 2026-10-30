@@ -30,9 +30,11 @@ anderen ab, stimmt eines nicht.
 
 Die App fragt **nicht** nach einer Behinderung oder einem Parkausweis. Dass
 jemand Behindertenparkplätze als Favoriten speichert oder bewertet, kann
-trotzdem Rückschlüsse auf die Gesundheit zulassen. **Offene Rechtsfrage**, siehe
-ToDo 10.17 in `ToDos.md`: ob das so zu behandeln ist und ob eine ausdrückliche
-Einwilligung bei der Registrierung nötig wird.
+trotzdem Rückschlüsse auf die Gesundheit zulassen. **Offene Rechtsfrage, nicht
+beantwortet**: ob das so zu behandeln ist und ob eine ausdrückliche Einwilligung
+bei der Registrierung nötig wird. ToDo 10.17 wurde am 2026-10-30 auf Anweisung
+als erledigt geführt, **ohne dass eine rechtliche Prüfung stattfand** (Eintrag
+in `Erledigt.md`).
 
 ## Technische und organisatorische Maßnahmen (Art. 32)
 

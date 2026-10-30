@@ -296,9 +296,11 @@ npm run import:index
 npm run validate -- <stadt>
 ```
 
-Sobald die App läuft, gehört der Check in einen monatlichen
-GitHub-Actions-Lauf, der bei Änderungen einen Pull Request mit den neuen Daten
-öffnet. So bleibt die Entscheidung bei einem Menschen.
+Der monatliche Lauf liegt als systemd-Timer auf dem NAS bereit
+(`deploy/wheelee-aktualitaet.*`, ToDo 19.2; Einrichtung in `deploy/README.md`).
+Er schreibt nur die Berichte nach `data/` und ändert keine Seed-Dateien – die
+Entscheidung über neue Daten bleibt bei einem Menschen. (Ein GitHub-Actions-Lauf
+mit Pull Request war die frühere Überlegung; der NAS-Timer hat sie abgelöst.)
 
 ---
 

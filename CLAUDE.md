@@ -215,7 +215,7 @@ ein sichtbarer Mangel. Eine Stadt mit falschen Koordinaten ist eine
 vergebliche Fahrt für jemanden, der auf den Parkplatz angewiesen ist.
 
 Am 2026-10-10 wurden deshalb 473 bereits geschriebene Gemeinden wieder
-entfernt – siehe 2e.7 in `ToDos.md`.
+entfernt – siehe 2e.7 in `Erledigt.md`.
 
 Zwei Kennzahlen finden solche Fehler zuverlässiger als Hinsehen:
 

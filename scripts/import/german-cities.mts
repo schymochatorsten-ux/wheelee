@@ -35,10 +35,11 @@ export interface GermanCity {
 /**
  * Ab welcher Einwohnerzahl importiert wird.
  *
- * **Das ist der Hebel für die nächste Ausbaustufe** (2e.5): 50.000 ergibt
- * 195 Gemeinden, 20.000 ergibt 706, 10.000 ergibt 1.598. Vor einer Senkung
- * muss 2e.7 gelöst sein – eine Overpass-Abfrage je Gemeinde ist bei
- * tausenden Gemeinden nicht vertretbar.
+ * **Steht seit dem 2026-10-29 auf 0: alle Gemeinden mit Einwohnern.** Die
+ * Grenze war der Hebel für die Ausbaustufen (D-07, 2e.5): 50.000, 20.000,
+ * 10.000, 5.000. Der landesweite Lauf (`osm-state.mts`, 2e.7) hat die
+ * Overpass-Abfrage je Gemeinde abgelöst; eingespielt wird in Stufen, jede erst
+ * nach den Prüfungen (2e.6 in `Erledigt.md`).
  */
 export const MIN_POPULATION = 0;
 
