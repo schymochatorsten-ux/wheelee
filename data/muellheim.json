@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "muellheim",
+    "name": "Müllheim im Markgräflerland",
+    "center": {
+      "lat": 47.8089277,
+      "lng": 7.628237050000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "muellheim-eaabf1883d",
+      "city": "muellheim",
+      "label": "Blankenhornstraße",
+      "street": "Blankenhornstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Müllheim im Markgräflerland",
+      "spotCount": 1,
+      "lat": 47.8089277,
+      "lng": 7.628237050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/672548040), ODbL"
+    }
+  ]
+}

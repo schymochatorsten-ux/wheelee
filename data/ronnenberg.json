@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "ronnenberg",
+    "name": "Ronnenberg",
+    "center": {
+      "lat": 52.3182841,
+      "lng": 9.65847175
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "ronnenberg-1ef7b49c19",
+      "city": "ronnenberg",
+      "label": "Behindertenparkplatz Ronnenberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ronnenberg",
+      "spotCount": 2,
+      "lat": 52.322337250000004,
+      "lng": 9.6514152,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/238749554), ODbL"
+    },
+    {
+      "id": "ronnenberg-5668deae0d",
+      "city": "ronnenberg",
+      "label": "Behindertenparkplatz Ronnenberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ronnenberg",
+      "spotCount": 1,
+      "lat": 52.279050600000005,
+      "lng": 9.6639843,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1144285764), ODbL"
+    },
+    {
+      "id": "ronnenberg-f8a9179560",
+      "city": "ronnenberg",
+      "label": "Behindertenparkplatz Ronnenberg",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ronnenberg",
+      "spotCount": 1,
+      "lat": 52.3182841,
+      "lng": 9.65847175,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1192996921), ODbL"
+    },
+    {
+      "id": "ronnenberg-8392296f3a",
+      "city": "ronnenberg",
+      "label": "Behindertenparkplatz Ronnenberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ronnenberg",
+      "spotCount": 1,
+      "lat": 52.3182872,
+      "lng": 9.658547850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1192996923), ODbL"
+    },
+    {
+      "id": "ronnenberg-3117744890",
+      "city": "ronnenberg",
+      "label": "Behindertenparkplatz Ronnenberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ronnenberg",
+      "spotCount": 2,
+      "lat": 52.33850275,
+      "lng": 9.672060250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1227209019), ODbL"
+    },
+    {
+      "id": "ronnenberg-479fdbd57c",
+      "city": "ronnenberg",
+      "label": "Behindertenparkplatz Ronnenberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ronnenberg",
+      "spotCount": 1,
+      "lat": 52.31495075000001,
+      "lng": 9.655659850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1489207974), ODbL"
+    },
+    {
+      "id": "ronnenberg-95150ca6bf",
+      "city": "ronnenberg",
+      "label": "Park+Ride",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ronnenberg",
+      "spotCount": 1,
+      "lat": 52.2718895,
+      "lng": 9.654117500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/239871859), ODbL"
+    }
+  ]
+}

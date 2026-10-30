@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "zerbst-anhalt",
+    "name": "Zerbst/Anhalt",
+    "center": {
+      "lat": 51.97023595,
+      "lng": 12.087249550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "zerbst-anhalt-6827d8c0cf",
+      "city": "zerbst-anhalt",
+      "label": "Behindertenparkplatz Zerbst/Anhalt",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Zerbst/Anhalt",
+      "spotCount": 1,
+      "lat": 51.97023595,
+      "lng": 12.087249550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1167844962), ODbL"
+    },
+    {
+      "id": "zerbst-anhalt-f0657e8b86",
+      "city": "zerbst-anhalt",
+      "label": "Behindertenparkplatz Zerbst/Anhalt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zerbst/Anhalt",
+      "spotCount": 1,
+      "lat": 51.95443950000001,
+      "lng": 12.087056400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1414948342), ODbL"
+    }
+  ]
+}

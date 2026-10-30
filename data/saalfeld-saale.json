@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "saalfeld-saale",
+    "name": "Saalfeld/Saale",
+    "center": {
+      "lat": 50.6477082,
+      "lng": 11.3686045
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "saalfeld-saale-dca6d48ef6",
+      "city": "saalfeld-saale",
+      "label": "Behindertenparkplatz Saalfeld/Saale",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Saalfeld/Saale",
+      "spotCount": 1,
+      "lat": 50.658585200000005,
+      "lng": 11.346468600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4362053531), ODbL"
+    },
+    {
+      "id": "saalfeld-saale-989e54b3ea",
+      "city": "saalfeld-saale",
+      "label": "Behindertenparkplatz Saalfeld/Saale",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Saalfeld/Saale",
+      "spotCount": 1,
+      "lat": 50.65081525000001,
+      "lng": 11.373899150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/40700693), ODbL"
+    },
+    {
+      "id": "saalfeld-saale-8fc67ed8b5",
+      "city": "saalfeld-saale",
+      "label": "Behindertenparkplatz Saalfeld/Saale",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Saalfeld/Saale",
+      "spotCount": 2,
+      "lat": 50.63522450000001,
+      "lng": 11.34130415,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/199084657), ODbL"
+    },
+    {
+      "id": "saalfeld-saale-4e521089c8",
+      "city": "saalfeld-saale",
+      "label": "Behindertenparkplatz Saalfeld/Saale",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Saalfeld/Saale",
+      "spotCount": 1,
+      "lat": 50.6477082,
+      "lng": 11.36024435,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1531927772), ODbL"
+    },
+    {
+      "id": "saalfeld-saale-d1a18073ef",
+      "city": "saalfeld-saale",
+      "label": "Betriebsparkplatz Hallenbad",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Saalfeld/Saale",
+      "spotCount": 2,
+      "lat": 50.64344375,
+      "lng": 11.36899715,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1030279694), ODbL"
+    },
+    {
+      "id": "saalfeld-saale-383986dc9d",
+      "city": "saalfeld-saale",
+      "label": "Kelzstraße 45",
+      "street": "Kelzstraße",
+      "houseNumber": "45",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Saalfeld/Saale",
+      "spotCount": 1,
+      "lat": 50.642206300000005,
+      "lng": 11.3686045,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1030267553), ODbL"
+    }
+  ]
+}

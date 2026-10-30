@@ -117,8 +117,11 @@ Haftungshinweis, Impressum und Datenschutzerklärung sowie Straßennamen und
 Quelldaten bleiben deutsch. Die E2E-Tests laufen mit `locale: "de-DE"`, weil
 sie am deutschen Wortlaut hängen.
 
-**Die Seite lädt nur, was sichtbar ist.** Alle 17.206 Standorte ins HTML zu
-schreiben ergab 6,3 MB; jetzt sind es 128 KB, und die Karte holt den
+**Die Seite lädt nur, was sichtbar ist.** Alle Standorte ins HTML zu
+schreiben ergab 6,3 MB; jetzt sind es rund 300 KB unkomprimiert (gemessen am
+2026-10-30 im Produktionsbau, nach Stufe 1 von 2e.6 mit 648 Gemeinden – vorher
+128 KB; der Zuwachs ist die Städteliste, die je Gemeinde Quelle und Vermerk
+mitträgt), und die Karte holt den
 jeweiligen Ausschnitt über `/api/spots` nach. Ein Service Worker legt Seite,
 zuletzt geladene Parkplätze und Kartenkacheln beiseite, damit im Funkloch
 nicht eine weiße Seite steht – mit sichtbarem Hinweis, dass die Angaben vom
@@ -505,7 +508,7 @@ wo ein Verstoß auffallen müsste.
 Die Inhaltsrichtlinie (CSP) erlaubt als fremde Herkunft **nur** die
 Kartenkacheln von OpenStreetMap und verbietet jeden fremden Rahmen
 (`frame-ancestors 'none'`). Skripte laufen nur mit einer **Nonce, die
-`src/middleware.ts` für jede Anfrage neu erzeugt** und an Nexts Hydrationsskripte
+`src/proxy.ts` für jede Anfrage neu erzeugt** und an Nexts Hydrationsskripte
 und das Theme-Skript weiterreicht; eingeschleustes Inline-Skript trägt sie nicht
 und wird vom Browser nicht ausgeführt. Folge: Alle Seiten werden je Anfrage
 gerendert, nicht vorab erzeugt. **Was bleibt:** `'unsafe-inline'` gilt weiter

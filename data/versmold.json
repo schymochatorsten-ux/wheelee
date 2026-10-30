@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "versmold",
+    "name": "Versmold",
+    "center": {
+      "lat": 52.0397563,
+      "lng": 8.1531025
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "versmold-781f35879e",
+      "city": "versmold",
+      "label": "Behindertenparkplatz Versmold",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Versmold",
+      "spotCount": 1,
+      "lat": 52.04068275,
+      "lng": 8.1553348,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/904589193), ODbL"
+    },
+    {
+      "id": "versmold-b3a39fbd03",
+      "city": "versmold",
+      "label": "Behindertenparkplatz Versmold",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Versmold",
+      "spotCount": 2,
+      "lat": 52.03352015,
+      "lng": 8.1504358,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1379180060), ODbL"
+    },
+    {
+      "id": "versmold-c4f9421f55",
+      "city": "versmold",
+      "label": "Behindertenparkplatz Versmold",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Versmold",
+      "spotCount": 1,
+      "lat": 52.0397563,
+      "lng": 8.1531025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1379266131), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "kulmbach",
+    "name": "Kulmbach",
+    "center": {
+      "lat": 50.109924850000006,
+      "lng": 11.453220850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "kulmbach-89bf168895",
+      "city": "kulmbach",
+      "label": "Gummistraße",
+      "street": "Gummistraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kulmbach",
+      "spotCount": 2,
+      "lat": 50.1104656,
+      "lng": 11.44744145,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/584703879), ODbL"
+    },
+    {
+      "id": "kulmbach-301ee56faf",
+      "city": "kulmbach",
+      "label": "Heinrich-von-Stephan-Straße",
+      "street": "Heinrich-von-Stephan-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Kulmbach",
+      "spotCount": 2,
+      "lat": 50.109924850000006,
+      "lng": 11.453220850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/194836038), ODbL"
+    },
+    {
+      "id": "kulmbach-c2959b3535",
+      "city": "kulmbach",
+      "label": "Lichtenfelser Straße",
+      "street": "Lichtenfelser Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kulmbach",
+      "spotCount": 1,
+      "lat": 50.104104250000006,
+      "lng": 11.433910100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/286321143), ODbL"
+    },
+    {
+      "id": "kulmbach-f5c1f0b7ab",
+      "city": "kulmbach",
+      "label": "Rot-Kreuz-Platz",
+      "street": "Rot-Kreuz-Platz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kulmbach",
+      "spotCount": 1,
+      "lat": 50.10909895,
+      "lng": 11.453470500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/501431365), ODbL"
+    }
+  ]
+}

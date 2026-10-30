@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "noerdlingen",
+    "name": "Nördlingen",
+    "center": {
+      "lat": 48.85167455,
+      "lng": 10.4904658
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "noerdlingen-07d17d0e87",
+      "city": "noerdlingen",
+      "label": "Am Emmeramsberg 1a",
+      "street": "Am Emmeramsberg",
+      "houseNumber": "1a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nördlingen",
+      "spotCount": 1,
+      "lat": 48.84718475,
+      "lng": 10.48192565,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1332439826), ODbL"
+    },
+    {
+      "id": "noerdlingen-49c1b872ab",
+      "city": "noerdlingen",
+      "label": "Baldinger Straße",
+      "street": "Baldinger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nördlingen",
+      "spotCount": 1,
+      "lat": 48.8540587,
+      "lng": 10.4846559,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1330212668), ODbL"
+    },
+    {
+      "id": "noerdlingen-7561c23127",
+      "city": "noerdlingen",
+      "label": "Bei den Kornschrannen 4",
+      "street": "Bei den Kornschrannen",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nördlingen",
+      "spotCount": 1,
+      "lat": 48.85167455,
+      "lng": 10.4904658,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1329615199), ODbL"
+    },
+    {
+      "id": "noerdlingen-b5c0be2b7a",
+      "city": "noerdlingen",
+      "label": "Innere Einfahrt 1",
+      "street": "Innere Einfahrt",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nördlingen",
+      "spotCount": 1,
+      "lat": 48.85185475,
+      "lng": 10.49201635,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/73985554), ODbL"
+    },
+    {
+      "id": "noerdlingen-e4eca10bff",
+      "city": "noerdlingen",
+      "label": "Ludwig-Thoma-Straße",
+      "street": "Ludwig-Thoma-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nördlingen",
+      "spotCount": 1,
+      "lat": 48.83998625,
+      "lng": 10.4890605,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/468695014), ODbL"
+    },
+    {
+      "id": "noerdlingen-1c1c175a68",
+      "city": "noerdlingen",
+      "label": "Parkhaus am Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Nördlingen",
+      "spotCount": 5,
+      "lat": 48.84996215,
+      "lng": 10.4978169,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/77115760), ODbL"
+    }
+  ]
+}

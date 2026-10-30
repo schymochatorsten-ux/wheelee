@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "lennestadt",
+    "name": "Lennestadt",
+    "center": {
+      "lat": 51.12226995,
+      "lng": 8.0663822
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "lennestadt-cffeddb387",
+      "city": "lennestadt",
+      "label": "Behindertenparkplatz Lennestadt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lennestadt",
+      "spotCount": 2,
+      "lat": 51.122028650000004,
+      "lng": 8.0666464,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/331088821), ODbL"
+    },
+    {
+      "id": "lennestadt-a9e4f28e9f",
+      "city": "lennestadt",
+      "label": "Behindertenparkplatz Lennestadt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lennestadt",
+      "spotCount": 2,
+      "lat": 51.1424765,
+      "lng": 8.0171355,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/839003803), ODbL"
+    },
+    {
+      "id": "lennestadt-a0f491943a",
+      "city": "lennestadt",
+      "label": "Behindertenparkplatz Lennestadt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lennestadt",
+      "spotCount": 4,
+      "lat": 51.1059104,
+      "lng": 8.0831861,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1033250770), ODbL"
+    },
+    {
+      "id": "lennestadt-cf91363288",
+      "city": "lennestadt",
+      "label": "Behindertenparkplatz Lennestadt",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lennestadt",
+      "spotCount": 1,
+      "lat": 51.12226995,
+      "lng": 8.0663822,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1163072616), ODbL"
+    },
+    {
+      "id": "lennestadt-60f846782b",
+      "city": "lennestadt",
+      "label": "Behindertenparkplatz Lennestadt",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lennestadt",
+      "spotCount": 1,
+      "lat": 51.122305100000005,
+      "lng": 8.066345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1163072617), ODbL"
+    }
+  ]
+}

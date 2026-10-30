@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "datteln",
+    "name": "Datteln",
+    "center": {
+      "lat": 51.65201375,
+      "lng": 7.34886605
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "datteln-701b2cfd04",
+      "city": "datteln",
+      "label": "Behindertenparkplatz Datteln",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Datteln",
+      "spotCount": 1,
+      "lat": 51.65065095,
+      "lng": 7.333300550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/387486201), ODbL"
+    },
+    {
+      "id": "datteln-e482433aff",
+      "city": "datteln",
+      "label": "Behindertenparkplatz Datteln",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Datteln",
+      "spotCount": 4,
+      "lat": 51.65651015,
+      "lng": 7.35274065,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/528157179), ODbL"
+    },
+    {
+      "id": "datteln-59b5361268",
+      "city": "datteln",
+      "label": "Behindertenparkplatz Datteln",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Datteln",
+      "spotCount": 2,
+      "lat": 51.65201375,
+      "lng": 7.34886605,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/921225543), ODbL"
+    }
+  ]
+}

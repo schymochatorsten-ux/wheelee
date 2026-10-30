@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "neuburg-a-d-donau",
+    "name": "Neuburg a.d.Donau",
+    "center": {
+      "lat": 48.73613515,
+      "lng": 11.181491050000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "neuburg-a-d-donau-623bdbe9e2",
+      "city": "neuburg-a-d-donau",
+      "label": "Adalbert-Stifter-Straße",
+      "street": "Adalbert-Stifter-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuburg a.d.Donau",
+      "spotCount": 2,
+      "lat": 48.733685900000005,
+      "lng": 11.169963800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1054806057), ODbL"
+    },
+    {
+      "id": "neuburg-a-d-donau-166577dad0",
+      "city": "neuburg-a-d-donau",
+      "label": "Berliner Straße 51",
+      "street": "Berliner Straße",
+      "houseNumber": "51",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuburg a.d.Donau",
+      "spotCount": 2,
+      "lat": 48.73613515,
+      "lng": 11.1975668,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1557712218), ODbL"
+    },
+    {
+      "id": "neuburg-a-d-donau-84e2fa0f4b",
+      "city": "neuburg-a-d-donau",
+      "label": "Hofgarten",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Neuburg a.d.Donau",
+      "spotCount": 1,
+      "lat": 48.73666915,
+      "lng": 11.181491050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/213208655), ODbL"
+    },
+    {
+      "id": "neuburg-a-d-donau-8bd2fd93fd",
+      "city": "neuburg-a-d-donau",
+      "label": "Kreuter Weg",
+      "street": "Kreuter Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuburg a.d.Donau",
+      "spotCount": 2,
+      "lat": 48.7277907,
+      "lng": 11.16980865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1175905779), ODbL"
+    },
+    {
+      "id": "neuburg-a-d-donau-2820118c57",
+      "city": "neuburg-a-d-donau",
+      "label": "Ludwig-Thoma-Platz",
+      "street": "Ludwig-Thoma-Platz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuburg a.d.Donau",
+      "spotCount": 1,
+      "lat": 48.738229950000004,
+      "lng": 11.1903456,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1019759234), ODbL"
+    }
+  ]
+}

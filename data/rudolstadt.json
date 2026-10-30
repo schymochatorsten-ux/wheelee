@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "rudolstadt",
+    "name": "Rudolstadt",
+    "center": {
+      "lat": 50.720978,
+      "lng": 11.31629005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "rudolstadt-78f9631bff",
+      "city": "rudolstadt",
+      "label": "Behindertenparkplatz Rudolstadt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rudolstadt",
+      "spotCount": 2,
+      "lat": 50.723449,
+      "lng": 11.337616800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1819347036), ODbL"
+    },
+    {
+      "id": "rudolstadt-1b105f982c",
+      "city": "rudolstadt",
+      "label": "Behindertenparkplatz Rudolstadt",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rudolstadt",
+      "spotCount": 1,
+      "lat": 50.7234654,
+      "lng": 11.337447500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9850047915), ODbL"
+    },
+    {
+      "id": "rudolstadt-2a74ad6fff",
+      "city": "rudolstadt",
+      "label": "Behindertenparkplatz Rudolstadt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rudolstadt",
+      "spotCount": 5,
+      "lat": 50.706926800000005,
+      "lng": 11.31629005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1188877480), ODbL"
+    },
+    {
+      "id": "rudolstadt-e35e7b43e6",
+      "city": "rudolstadt",
+      "label": "Behindertenparkplatz Rudolstadt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rudolstadt",
+      "spotCount": 2,
+      "lat": 50.70700515,
+      "lng": 11.3158405,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1381432214), ODbL"
+    },
+    {
+      "id": "rudolstadt-3033a27a10",
+      "city": "rudolstadt",
+      "label": "Behindertenparkplatz Rudolstadt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rudolstadt",
+      "spotCount": 8,
+      "lat": 50.720978,
+      "lng": 11.312592050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1383780133), ODbL"
+    }
+  ]
+}

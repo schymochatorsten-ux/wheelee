@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "schwabach",
+    "name": "Schwabach",
+    "center": {
+      "lat": 49.326505850000004,
+      "lng": 11.034987600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "schwabach-847dc23a1c",
+      "city": "schwabach",
+      "label": "Am Falbenholzweg 15",
+      "street": "Am Falbenholzweg",
+      "houseNumber": "15",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwabach",
+      "spotCount": 10,
+      "lat": 49.323005900000005,
+      "lng": 11.0511741,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2384964736), ODbL"
+    },
+    {
+      "id": "schwabach-dee9edf78a",
+      "city": "schwabach",
+      "label": "Bahnhofstraße 45",
+      "street": "Bahnhofstraße",
+      "houseNumber": "45",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwabach",
+      "spotCount": 2,
+      "lat": 49.326505850000004,
+      "lng": 11.034987600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/370151906), ODbL"
+    },
+    {
+      "id": "schwabach-ba012c8517",
+      "city": "schwabach",
+      "label": "Bahnhofstraße 45",
+      "street": "Bahnhofstraße",
+      "houseNumber": "45",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwabach",
+      "spotCount": 4,
+      "lat": 49.326321750000005,
+      "lng": 11.03465915,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/370151919), ODbL"
+    },
+    {
+      "id": "schwabach-b420b1213d",
+      "city": "schwabach",
+      "label": "Katzwanger Straße",
+      "street": "Katzwanger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Schwabach",
+      "spotCount": 2,
+      "lat": 49.338959,
+      "lng": 11.045703000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/38527685), ODbL"
+    },
+    {
+      "id": "schwabach-4d3a26d87a",
+      "city": "schwabach",
+      "label": "Parkplatz Neuapostolische Kirche Schwabach",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwabach",
+      "spotCount": 1,
+      "lat": 49.3310412,
+      "lng": 11.019735800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1929165895), ODbL"
+    }
+  ]
+}

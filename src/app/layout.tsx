@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
 import { headers } from "next/headers";
 import { ServiceWorker } from "@/components/ServiceWorker";
+import { VisitBeacon } from "@/components/VisitBeacon";
 import { LocaleProvider } from "@/i18n/context";
 import { t, localeTag } from "@/i18n";
 import { getLocale } from "@/i18n/server";
@@ -64,7 +65,7 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Die Nonce dieser Anfrage aus `src/middleware.ts` (ToDo 10.7). Ohne sie
+  // Die Nonce dieser Anfrage aus `src/proxy.ts` (ToDo 10.7; bis Next 15 `middleware.ts`). Ohne sie
   // würde die Inhaltsrichtlinie das Theme-Skript blockieren. Die Abfrage macht
   // jede Seite dynamisch – gewollt, eine Nonce lässt sich nicht vorab backen.
   const nonce = (await headers()).get("x-nonce") ?? undefined;
@@ -113,6 +114,7 @@ export default async function RootLayout({
       <body className={`${geistSans.variable} flex h-dvh flex-col antialiased`}>
         <LocaleProvider locale={locale}>
           <ServiceWorker />
+          <VisitBeacon />
           {children}
         </LocaleProvider>
       </body>

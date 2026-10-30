@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useT } from "@/i18n/context";
 
 /**
@@ -17,10 +17,14 @@ export function ConfirmEmailForm() {
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
 
+  // Einmal lesen (Begründung in `InvitationForm`: Strict Mode baut zweimal ein).
+  const fromLink = useRef<string | null>(null);
   useEffect(() => {
-    const value = window.location.hash.replace(/^#/, "");
-    setToken(value);
-    if (value) window.history.replaceState(null, "", window.location.pathname);
+    if (fromLink.current === null) {
+      fromLink.current = window.location.hash.replace(/^#/, "");
+      if (fromLink.current) window.history.replaceState(null, "", window.location.pathname);
+    }
+    setToken(fromLink.current);
   }, []);
 
   async function confirm() {

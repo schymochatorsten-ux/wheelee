@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import { useT } from "@/i18n/context";
 
 /**
@@ -21,10 +21,17 @@ export function InvitationForm() {
   const [busy, setBusy] = useState(false);
   const [done, setDone] = useState(false);
 
+  // Das Fragment wird **einmal** gelesen und danach aus der Adresszeile entfernt.
+  // Der Entwicklungsmodus baut die Komponente zweimal ein (Strict Mode); ein
+  // zweites Lesen fände kein Fragment mehr und zeigte „Link enthält keine
+  // Einladung“. Ein Ref überlebt dieses Aus- und Einbauen.
+  const fromLink = useRef<string | null>(null);
   useEffect(() => {
-    const value = window.location.hash.replace(/^#/, "");
-    setToken(value);
-    if (value) window.history.replaceState(null, "", window.location.pathname);
+    if (fromLink.current === null) {
+      fromLink.current = window.location.hash.replace(/^#/, "");
+      if (fromLink.current) window.history.replaceState(null, "", window.location.pathname);
+    }
+    setToken(fromLink.current);
   }, []);
 
   async function submit(event: FormEvent) {

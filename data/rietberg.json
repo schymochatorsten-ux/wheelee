@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "rietberg",
+    "name": "Rietberg",
+    "center": {
+      "lat": 51.817774850000006,
+      "lng": 8.43085125
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "rietberg-9ed510dc9d",
+      "city": "rietberg",
+      "label": "Behindertenparkplatz Rietberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Rietberg",
+      "spotCount": 1,
+      "lat": 51.817774850000006,
+      "lng": 8.43085125,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/41055563), ODbL"
+    },
+    {
+      "id": "rietberg-82dfc243b3",
+      "city": "rietberg",
+      "label": "Behindertenparkplatz Rietberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Rietberg",
+      "spotCount": 1,
+      "lat": 51.81801440000001,
+      "lng": 8.4438676,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/67200607), ODbL"
+    },
+    {
+      "id": "rietberg-d94cc9298d",
+      "city": "rietberg",
+      "label": "Behindertenparkplatz Rietberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rietberg",
+      "spotCount": 1,
+      "lat": 51.81096515,
+      "lng": 8.412434050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/642965790), ODbL"
+    },
+    {
+      "id": "rietberg-58e36ee660",
+      "city": "rietberg",
+      "label": "Behindertenparkplatz Rietberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rietberg",
+      "spotCount": 1,
+      "lat": 51.81023535,
+      "lng": 8.4125013,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/946102503), ODbL"
+    }
+  ]
+}

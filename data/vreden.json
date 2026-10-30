@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "vreden",
+    "name": "Vreden",
+    "center": {
+      "lat": 52.03593910000001,
+      "lng": 6.824951350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "vreden-e49b39ccb1",
+      "city": "vreden",
+      "label": "Behindertenparkplatz Vreden",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vreden",
+      "spotCount": 3,
+      "lat": 52.05078625,
+      "lng": 6.7037576,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/275832697), ODbL"
+    },
+    {
+      "id": "vreden-051fb96d87",
+      "city": "vreden",
+      "label": "Behindertenparkplatz Vreden",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vreden",
+      "spotCount": 1,
+      "lat": 52.0355002,
+      "lng": 6.82585505,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/856330303), ODbL"
+    },
+    {
+      "id": "vreden-67c01a4a8e",
+      "city": "vreden",
+      "label": "Behindertenparkplatz Vreden",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Vreden",
+      "spotCount": 1,
+      "lat": 52.040907450000006,
+      "lng": 6.8081041,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1054059361), ODbL"
+    },
+    {
+      "id": "vreden-ad250a5091",
+      "city": "vreden",
+      "label": "Behindertenparkplatz Vreden",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Vreden",
+      "spotCount": 1,
+      "lat": 52.040935000000005,
+      "lng": 6.8081265,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1054059362), ODbL"
+    },
+    {
+      "id": "vreden-1107a601cc",
+      "city": "vreden",
+      "label": "Behindertenparkplatz Vreden",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vreden",
+      "spotCount": 4,
+      "lat": 52.0351312,
+      "lng": 6.824951350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1222339019), ODbL"
+    },
+    {
+      "id": "vreden-d32a5a6f71",
+      "city": "vreden",
+      "label": "Behindertenparkplatz Vreden",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Vreden",
+      "spotCount": 1,
+      "lat": 52.035907800000004,
+      "lng": 6.8332736,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1422649828), ODbL"
+    },
+    {
+      "id": "vreden-6f812121cd",
+      "city": "vreden",
+      "label": "Behindertenparkplatz Vreden",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Vreden",
+      "spotCount": 1,
+      "lat": 52.03593910000001,
+      "lng": 6.8332718,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1422649829), ODbL"
+    }
+  ]
+}

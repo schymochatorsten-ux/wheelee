@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "rinteln",
+    "name": "Rinteln",
+    "center": {
+      "lat": 52.21738235000001,
+      "lng": 9.0718943
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "rinteln-3e4fd89682",
+      "city": "rinteln",
+      "label": "Behindertenparkplatz Rinteln",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rinteln",
+      "spotCount": 5,
+      "lat": 52.17970405,
+      "lng": 9.07270145,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1202389541), ODbL"
+    },
+    {
+      "id": "rinteln-c9486aab9f",
+      "city": "rinteln",
+      "label": "Behindertenparkplatz Rinteln",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rinteln",
+      "spotCount": 3,
+      "lat": 52.1798486,
+      "lng": 9.0718943,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1202389563), ODbL"
+    },
+    {
+      "id": "rinteln-316d9ea20e",
+      "city": "rinteln",
+      "label": "Behindertenparkplatz Rinteln",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rinteln",
+      "spotCount": 2,
+      "lat": 52.21738235000001,
+      "lng": 9.054205600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1390522955), ODbL"
+    },
+    {
+      "id": "rinteln-f8826fb617",
+      "city": "rinteln",
+      "label": "Behindertenparkplatz Rinteln",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rinteln",
+      "spotCount": 2,
+      "lat": 52.21906605000001,
+      "lng": 9.055710300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1453406227), ODbL"
+    }
+  ]
+}

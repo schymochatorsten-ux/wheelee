@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "amberg",
+    "name": "Amberg",
+    "center": {
+      "lat": 49.44556540000001,
+      "lng": 11.85461925
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "amberg-9f3c82db47",
+      "city": "amberg",
+      "label": "Bahnhofsparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Amberg",
+      "spotCount": 2,
+      "lat": 49.446878350000006,
+      "lng": 11.8632825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/112219455), ODbL"
+    },
+    {
+      "id": "amberg-18eb4bddb0",
+      "city": "amberg",
+      "label": "Friedhofsparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Amberg",
+      "spotCount": 1,
+      "lat": 49.466277700000006,
+      "lng": 11.8281396,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1084413599), ODbL"
+    },
+    {
+      "id": "amberg-6ab8b56432",
+      "city": "amberg",
+      "label": "Gehbehinderte",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Amberg",
+      "spotCount": 3,
+      "lat": 49.4441391,
+      "lng": 11.84627635,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/56632660), ODbL"
+    },
+    {
+      "id": "amberg-a51d777bfe",
+      "city": "amberg",
+      "label": "Herrnstraße 1",
+      "street": "Herrnstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Amberg",
+      "spotCount": 2,
+      "lat": 49.445761700000006,
+      "lng": 11.858766500000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5926088985), ODbL"
+    },
+    {
+      "id": "amberg-c506671c64",
+      "city": "amberg",
+      "label": "Salzstadelplatz 7",
+      "street": "Salzstadelplatz",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Amberg",
+      "spotCount": 2,
+      "lat": 49.4446261,
+      "lng": 11.858250550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/129838116), ODbL"
+    },
+    {
+      "id": "amberg-0990714b0b",
+      "city": "amberg",
+      "label": "Steinhofgasse",
+      "street": "Steinhofgasse",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Amberg",
+      "spotCount": 1,
+      "lat": 49.44381610000001,
+      "lng": 11.854577200000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12390254835), ODbL"
+    },
+    {
+      "id": "amberg-6f8469972d",
+      "city": "amberg",
+      "label": "Weinstraße",
+      "street": "Weinstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Amberg",
+      "spotCount": 1,
+      "lat": 49.44556540000001,
+      "lng": 11.85461925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1364981573), ODbL"
+    }
+  ]
+}

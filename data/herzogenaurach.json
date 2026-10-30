@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "herzogenaurach",
+    "name": "Herzogenaurach",
+    "center": {
+      "lat": 49.5701352,
+      "lng": 10.883385350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "herzogenaurach-6130a755ff",
+      "city": "herzogenaurach",
+      "label": "Auf der Nutzung 2a",
+      "street": "Auf der Nutzung",
+      "houseNumber": "2a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herzogenaurach",
+      "spotCount": 1,
+      "lat": 49.581715700000004,
+      "lng": 10.90189925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1232548112), ODbL"
+    },
+    {
+      "id": "herzogenaurach-dd0a2b1603",
+      "city": "herzogenaurach",
+      "label": "Kantstraße 17",
+      "street": "Kantstraße",
+      "houseNumber": "17",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herzogenaurach",
+      "spotCount": 1,
+      "lat": 49.574183250000004,
+      "lng": 10.87416525,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1282011260), ODbL"
+    },
+    {
+      "id": "herzogenaurach-3a1a695bb1",
+      "city": "herzogenaurach",
+      "label": "Münchauracher Straße 17",
+      "street": "Münchauracher Straße",
+      "houseNumber": "17",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herzogenaurach",
+      "spotCount": 2,
+      "lat": 49.56382910000001,
+      "lng": 10.912736250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1441694102), ODbL"
+    },
+    {
+      "id": "herzogenaurach-0f6a6ef982",
+      "city": "herzogenaurach",
+      "label": "Münchauracher Straße 20",
+      "street": "Münchauracher Straße",
+      "houseNumber": "20",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herzogenaurach",
+      "spotCount": 2,
+      "lat": 49.564009500000004,
+      "lng": 10.912492100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1441716399), ODbL"
+    },
+    {
+      "id": "herzogenaurach-c0726fc727",
+      "city": "herzogenaurach",
+      "label": "P1 Großparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Herzogenaurach",
+      "spotCount": 1,
+      "lat": 49.5669956,
+      "lng": 10.883385350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/23077144), ODbL"
+    },
+    {
+      "id": "herzogenaurach-9a3df4098c",
+      "city": "herzogenaurach",
+      "label": "P4 Rathaus",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Herzogenaurach",
+      "spotCount": 2,
+      "lat": 49.5701352,
+      "lng": 10.882167950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1231741996), ODbL"
+    },
+    {
+      "id": "herzogenaurach-55c18624e0",
+      "city": "herzogenaurach",
+      "label": "Werner-Heisenberg-Straße 8",
+      "street": "Werner-Heisenberg-Straße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herzogenaurach",
+      "spotCount": 1,
+      "lat": 49.5799478,
+      "lng": 10.881530600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1424964157), ODbL"
+    }
+  ]
+}

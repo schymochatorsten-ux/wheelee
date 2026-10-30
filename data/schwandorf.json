@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "schwandorf",
+    "name": "Schwandorf",
+    "center": {
+      "lat": 49.314840700000005,
+      "lng": 12.1490586
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "schwandorf-cc8d69ee33",
+      "city": "schwandorf",
+      "label": "Am Brunnfeld",
+      "street": "Am Brunnfeld",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schwandorf",
+      "spotCount": 1,
+      "lat": 49.314854800000006,
+      "lng": 12.1490586,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12568557455), ODbL"
+    },
+    {
+      "id": "schwandorf-ef7266a312",
+      "city": "schwandorf",
+      "label": "Am Brunnfeld",
+      "street": "Am Brunnfeld",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schwandorf",
+      "spotCount": 1,
+      "lat": 49.3148124,
+      "lng": 12.1490383,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12568557456), ODbL"
+    },
+    {
+      "id": "schwandorf-2c0984b959",
+      "city": "schwandorf",
+      "label": "Am Brunnfeld",
+      "street": "Am Brunnfeld",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schwandorf",
+      "spotCount": 1,
+      "lat": 49.3147983,
+      "lng": 12.149107800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12568557457), ODbL"
+    },
+    {
+      "id": "schwandorf-2238de8d2c",
+      "city": "schwandorf",
+      "label": "Am Brunnfeld",
+      "street": "Am Brunnfeld",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schwandorf",
+      "spotCount": 1,
+      "lat": 49.314840700000005,
+      "lng": 12.149128000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12568557458), ODbL"
+    },
+    {
+      "id": "schwandorf-e1f006f0ea",
+      "city": "schwandorf",
+      "label": "P+R Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwandorf",
+      "spotCount": 1,
+      "lat": 49.327839100000006,
+      "lng": 12.10180955,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/293459742), ODbL"
+    }
+  ]
+}

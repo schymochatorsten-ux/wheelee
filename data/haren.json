@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "haren",
+    "name": "Haren (Ems)",
+    "center": {
+      "lat": 52.77150795,
+      "lng": 7.16382125
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "haren-f1374aa49b",
+      "city": "haren",
+      "label": "Behindertenparkplatz Haren (Ems)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Haren (Ems)",
+      "spotCount": 1,
+      "lat": 52.8192375,
+      "lng": 7.1376564,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/796325327), ODbL"
+    },
+    {
+      "id": "haren-cbf614e3c2",
+      "city": "haren",
+      "label": "Behindertenparkplatz Haren (Ems)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Haren (Ems)",
+      "spotCount": 1,
+      "lat": 52.77150795,
+      "lng": 7.2739979,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1499100644), ODbL"
+    },
+    {
+      "id": "haren-565923e70f",
+      "city": "haren",
+      "label": "Behindertenparkplatz Haren (Ems)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Haren (Ems)",
+      "spotCount": 1,
+      "lat": 52.755835950000005,
+      "lng": 7.16382125,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1535771338), ODbL"
+    }
+  ]
+}

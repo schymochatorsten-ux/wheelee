@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "waren",
+    "name": "Waren (Müritz)",
+    "center": {
+      "lat": 53.51586655,
+      "lng": 12.681818900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "waren-24d022b304",
+      "city": "waren",
+      "label": "Behindertenparkplatz Waren (Müritz)",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Waren (Müritz)",
+      "spotCount": 1,
+      "lat": 53.514262800000004,
+      "lng": 12.693437800000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11043322157), ODbL"
+    },
+    {
+      "id": "waren-0f9b4e4990",
+      "city": "waren",
+      "label": "Behindertenparkplatz Waren (Müritz)",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Waren (Müritz)",
+      "spotCount": 1,
+      "lat": 53.514247100000006,
+      "lng": 12.693080400000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11043322158), ODbL"
+    },
+    {
+      "id": "waren-a519be90c4",
+      "city": "waren",
+      "label": "Behindertenparkplatz Waren (Müritz)",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Waren (Müritz)",
+      "spotCount": 1,
+      "lat": 53.5184817,
+      "lng": 12.6659997,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14162962595), ODbL"
+    },
+    {
+      "id": "waren-073eec0fa0",
+      "city": "waren",
+      "label": "Behindertenparkplatz Waren (Müritz)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waren (Müritz)",
+      "spotCount": 4,
+      "lat": 53.521284050000006,
+      "lng": 12.681818900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/377384169), ODbL"
+    },
+    {
+      "id": "waren-72778ccd71",
+      "city": "waren",
+      "label": "Müritzeum",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Waren (Müritz)",
+      "spotCount": 2,
+      "lat": 53.51586655,
+      "lng": 12.6804818,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/128746062), ODbL"
+    }
+  ]
+}

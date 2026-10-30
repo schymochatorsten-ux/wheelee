@@ -8,6 +8,11 @@ describe("sameStreet", () => {
     expect(sameStreet("Haupt-Straße", "Hauptstraße")).toBe(true);
     expect(sameStreet("Am Römerkastell", "am romerkastell")).toBe(true);
     expect(sameStreet("St.-Bonifatius-Straße", "Sankt-Bonifatius-Straße")).toBe(true);
+    // Hausnummer im Straßenfeld der Quelle (Gelsenkirchen)
+    expect(sameStreet("Bismarckstraße 313", "Bismarckstraße")).toBe(true);
+    expect(sameStreet("Horster Straße 19a", "Horster Straße")).toBe(true);
+    expect(sameStreet("Hauptstraße 4-6", "Hauptstraße")).toBe(true);
+    expect(sameStreet("Bismarckstraße 313", "Kennedyplatz")).toBe(false);
   });
 
   it("unterscheidet verschiedene Straßen", () => {

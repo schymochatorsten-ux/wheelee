@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "lengerich",
+    "name": "Lengerich",
+    "center": {
+      "lat": 52.181259950000005,
+      "lng": 7.854433800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "lengerich-d487af3349",
+      "city": "lengerich",
+      "label": "Behindertenparkplatz Lengerich",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lengerich",
+      "spotCount": 1,
+      "lat": 52.181259950000005,
+      "lng": 7.854433800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/194353991), ODbL"
+    },
+    {
+      "id": "lengerich-7a4a5e9be1",
+      "city": "lengerich",
+      "label": "Behindertenparkplatz Lengerich",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lengerich",
+      "spotCount": 2,
+      "lat": 52.18189615,
+      "lng": 7.8688360500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1134604478), ODbL"
+    },
+    {
+      "id": "lengerich-9ccc102d6b",
+      "city": "lengerich",
+      "label": "Settel",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Lengerich",
+      "spotCount": 2,
+      "lat": 52.17990415,
+      "lng": 7.78133815,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/616904978), ODbL"
+    }
+  ]
+}

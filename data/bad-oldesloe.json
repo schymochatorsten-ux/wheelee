@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "bad-oldesloe",
+    "name": "Bad Oldesloe",
+    "center": {
+      "lat": 53.8115995,
+      "lng": 10.3673438
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "bad-oldesloe-502c6d39e5",
+      "city": "bad-oldesloe",
+      "label": "Behindertenparkplatz Bad Oldesloe",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Oldesloe",
+      "spotCount": 1,
+      "lat": 53.802361600000005,
+      "lng": 10.3580877,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5158373924), ODbL"
+    },
+    {
+      "id": "bad-oldesloe-b19134fab9",
+      "city": "bad-oldesloe",
+      "label": "Behindertenparkplatz Bad Oldesloe",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Oldesloe",
+      "spotCount": 2,
+      "lat": 53.8123397,
+      "lng": 10.3637148,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/319438457), ODbL"
+    },
+    {
+      "id": "bad-oldesloe-463b2f6dd5",
+      "city": "bad-oldesloe",
+      "label": "Berufliche Schulen des Kreises Stormarn",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Oldesloe",
+      "spotCount": 1,
+      "lat": 53.80878,
+      "lng": 10.3977163,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29345166), ODbL"
+    },
+    {
+      "id": "bad-oldesloe-ab4a60acb7",
+      "city": "bad-oldesloe",
+      "label": "Travebad",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Oldesloe",
+      "spotCount": 1,
+      "lat": 53.8115995,
+      "lng": 10.3673438,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1113355855), ODbL"
+    }
+  ]
+}

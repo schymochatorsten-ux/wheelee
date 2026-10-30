@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "hoexter",
+    "name": "Höxter",
+    "center": {
+      "lat": 51.77503935,
+      "lng": 9.383382650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "hoexter-1bcb162acc",
+      "city": "hoexter",
+      "label": "Behindertenparkplatz Höxter",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Höxter",
+      "spotCount": 1,
+      "lat": 51.7745243,
+      "lng": 9.382915200000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10939630984), ODbL"
+    },
+    {
+      "id": "hoexter-ff559940a7",
+      "city": "hoexter",
+      "label": "Behindertenparkplatz Höxter",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Höxter",
+      "spotCount": 3,
+      "lat": 51.77503935,
+      "lng": 9.383382650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29122102), ODbL"
+    },
+    {
+      "id": "hoexter-36828e8ee4",
+      "city": "hoexter",
+      "label": "Behindertenparkplatz Höxter",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Höxter",
+      "spotCount": 1,
+      "lat": 51.75850595,
+      "lng": 9.3755702,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/253669899), ODbL"
+    },
+    {
+      "id": "hoexter-8874f6b861",
+      "city": "hoexter",
+      "label": "Behindertenparkplatz Höxter",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Höxter",
+      "spotCount": 3,
+      "lat": 51.7754619,
+      "lng": 9.383938800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1147138041), ODbL"
+    },
+    {
+      "id": "hoexter-cf514f9ffc",
+      "city": "hoexter",
+      "label": "Behindertenparkplatz Höxter",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Höxter",
+      "spotCount": 2,
+      "lat": 51.71041185,
+      "lng": 9.30619935,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1214220598), ODbL"
+    },
+    {
+      "id": "hoexter-2b474a874f",
+      "city": "hoexter",
+      "label": "Parkplatz Friedhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Höxter",
+      "spotCount": 1,
+      "lat": 51.8184424,
+      "lng": 9.39880725,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/576457795), ODbL"
+    }
+  ]
+}

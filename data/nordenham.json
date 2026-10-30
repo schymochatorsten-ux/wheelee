@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "nordenham",
+    "name": "Nordenham",
+    "center": {
+      "lat": 53.4834635,
+      "lng": 8.470850850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "nordenham-7828dc0465",
+      "city": "nordenham",
+      "label": "Behindertenparkplatz Nordenham",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nordenham",
+      "spotCount": 2,
+      "lat": 53.477194600000004,
+      "lng": 8.470850850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/221195344), ODbL"
+    },
+    {
+      "id": "nordenham-bf652d52eb",
+      "city": "nordenham",
+      "label": "Komforthotel Nordenham",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nordenham",
+      "spotCount": 1,
+      "lat": 53.4834635,
+      "lng": 8.441164350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/158192937), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "panketal",
+    "name": "Panketal",
+    "center": {
+      "lat": 52.6590368,
+      "lng": 13.533902150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "panketal-d5bfa64aa8",
+      "city": "panketal",
+      "label": "Behindertenparkplatz Panketal",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Panketal",
+      "spotCount": 3,
+      "lat": 52.6590368,
+      "lng": 13.533558200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34394772), ODbL"
+    },
+    {
+      "id": "panketal-1089e37829",
+      "city": "panketal",
+      "label": "Behindertenparkplatz Panketal",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Panketal",
+      "spotCount": 1,
+      "lat": 52.6273338,
+      "lng": 13.544799750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/256451470), ODbL"
+    },
+    {
+      "id": "panketal-9f025c3a7d",
+      "city": "panketal",
+      "label": "Behindertenparkplatz Panketal",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Panketal",
+      "spotCount": 1,
+      "lat": 52.659207450000004,
+      "lng": 13.533902150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1036597849), ODbL"
+    }
+  ]
+}

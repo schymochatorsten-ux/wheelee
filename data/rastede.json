@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "rastede",
+    "name": "Rastede",
+    "center": {
+      "lat": 53.249161150000006,
+      "lng": 8.19864675
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "rastede-3d33054c50",
+      "city": "rastede",
+      "label": "Behindertenparkplatz Rastede",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rastede",
+      "spotCount": 1,
+      "lat": 53.2541789,
+      "lng": 8.19953225,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/267296488), ODbL"
+    },
+    {
+      "id": "rastede-4f915af3aa",
+      "city": "rastede",
+      "label": "Behindertenparkplatz Rastede",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rastede",
+      "spotCount": 1,
+      "lat": 53.20982955,
+      "lng": 8.232706700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1446177554), ODbL"
+    },
+    {
+      "id": "rastede-d38f301cf6",
+      "city": "rastede",
+      "label": "Parkplatz AWO",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rastede",
+      "spotCount": 1,
+      "lat": 53.249824200000006,
+      "lng": 8.207300400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/36838913), ODbL"
+    },
+    {
+      "id": "rastede-8467a57f05",
+      "city": "rastede",
+      "label": "Parkplatz Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rastede",
+      "spotCount": 2,
+      "lat": 53.24362360000001,
+      "lng": 8.191830750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25424466), ODbL"
+    },
+    {
+      "id": "rastede-031bcfb555",
+      "city": "rastede",
+      "label": "Parkplatz Hallenbad Rastede",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rastede",
+      "spotCount": 2,
+      "lat": 53.24204400000001,
+      "lng": 8.195579500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28764280), ODbL"
+    },
+    {
+      "id": "rastede-bf0a11f559",
+      "city": "rastede",
+      "label": "Parkplatz Kögl-Wills-Platz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rastede",
+      "spotCount": 2,
+      "lat": 53.249161150000006,
+      "lng": 8.19864675,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/50389093), ODbL"
+    },
+    {
+      "id": "rastede-4cd21375cb",
+      "city": "rastede",
+      "label": "Parkplatz Marktplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rastede",
+      "spotCount": 2,
+      "lat": 53.25119715,
+      "lng": 8.1943962,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/36838927), ODbL"
+    }
+  ]
+}

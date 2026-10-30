@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "salzkotten",
+    "name": "Salzkotten",
+    "center": {
+      "lat": 51.67569175,
+      "lng": 8.620741200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "salzkotten-663630e73b",
+      "city": "salzkotten",
+      "label": "Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Salzkotten",
+      "spotCount": 2,
+      "lat": 51.712329600000004,
+      "lng": 8.64543325,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/80353642), ODbL"
+    },
+    {
+      "id": "salzkotten-592d45d4e7",
+      "city": "salzkotten",
+      "label": "Behindertenparkplatz Salzkotten",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Salzkotten",
+      "spotCount": 1,
+      "lat": 51.6733586,
+      "lng": 8.6094376,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6485708451), ODbL"
+    },
+    {
+      "id": "salzkotten-a220aa51da",
+      "city": "salzkotten",
+      "label": "Behindertenparkplatz Salzkotten",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Salzkotten",
+      "spotCount": 2,
+      "lat": 51.712088200000004,
+      "lng": 8.6452983,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/80353667), ODbL"
+    },
+    {
+      "id": "salzkotten-3941fc25d9",
+      "city": "salzkotten",
+      "label": "Behindertenparkplatz Salzkotten",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Salzkotten",
+      "spotCount": 1,
+      "lat": 51.67569175,
+      "lng": 8.620741200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/439590264), ODbL"
+    },
+    {
+      "id": "salzkotten-856fa3c855",
+      "city": "salzkotten",
+      "label": "Behindertenparkplatz Salzkotten",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Salzkotten",
+      "spotCount": 1,
+      "lat": 51.6726848,
+      "lng": 8.6008159,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1560547221), ODbL"
+    },
+    {
+      "id": "salzkotten-1cbff104b3",
+      "city": "salzkotten",
+      "label": "Behindertenparkplatz Salzkotten",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Salzkotten",
+      "spotCount": 1,
+      "lat": 51.672751700000006,
+      "lng": 8.5998247,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1567651017), ODbL"
+    }
+  ]
+}

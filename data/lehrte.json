@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "lehrte",
+    "name": "Lehrte",
+    "center": {
+      "lat": 52.3778083,
+      "lng": 9.97600285
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "lehrte-93c030f9bc",
+      "city": "lehrte",
+      "label": "Behindertenparkplatz Lehrte",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lehrte",
+      "spotCount": 2,
+      "lat": 52.3786482,
+      "lng": 9.975938000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/7619852457), ODbL"
+    },
+    {
+      "id": "lehrte-cc7a217f05",
+      "city": "lehrte",
+      "label": "Behindertenparkplatz Lehrte",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lehrte",
+      "spotCount": 10,
+      "lat": 52.3616784,
+      "lng": 9.91447655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/199963610), ODbL"
+    },
+    {
+      "id": "lehrte-198180c233",
+      "city": "lehrte",
+      "label": "Behindertenparkplatz Lehrte",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lehrte",
+      "spotCount": 2,
+      "lat": 52.37626095,
+      "lng": 9.904133900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/697579821), ODbL"
+    },
+    {
+      "id": "lehrte-ae3405cf3c",
+      "city": "lehrte",
+      "label": "Behindertenparkplatz Lehrte",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lehrte",
+      "spotCount": 1,
+      "lat": 52.37294235,
+      "lng": 9.97837865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/815835995), ODbL"
+    },
+    {
+      "id": "lehrte-93674f8a39",
+      "city": "lehrte",
+      "label": "Behindertenparkplatz Lehrte",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lehrte",
+      "spotCount": 1,
+      "lat": 52.3778083,
+      "lng": 9.97600285,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/815875518), ODbL"
+    },
+    {
+      "id": "lehrte-ddca1bccc5",
+      "city": "lehrte",
+      "label": "Behindertenparkplatz Lehrte",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lehrte",
+      "spotCount": 1,
+      "lat": 52.394526150000004,
+      "lng": 10.062488400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/940577408), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "starnberg",
+    "name": "Starnberg",
+    "center": {
+      "lat": 48.00218185,
+      "lng": 11.347822950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "starnberg-d12e33378d",
+      "city": "starnberg",
+      "label": "Bahnhofplatz",
+      "street": "Bahnhofplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Starnberg",
+      "spotCount": 3,
+      "lat": 47.9970067,
+      "lng": 11.345559300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1033826740), ODbL"
+    },
+    {
+      "id": "starnberg-63309f8a54",
+      "city": "starnberg",
+      "label": "Hans-Zellner-Weg 5",
+      "street": "Hans-Zellner-Weg",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Starnberg",
+      "spotCount": 6,
+      "lat": 48.007220200000006,
+      "lng": 11.347822950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/331183748), ODbL"
+    },
+    {
+      "id": "starnberg-5c0c984c57",
+      "city": "starnberg",
+      "label": "Hans-Zellner-Weg 5",
+      "street": "Hans-Zellner-Weg",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Starnberg",
+      "spotCount": 6,
+      "lat": 48.0072735,
+      "lng": 11.34782975,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/331183749), ODbL"
+    },
+    {
+      "id": "starnberg-a776dae4c8",
+      "city": "starnberg",
+      "label": "Moosstraße 5",
+      "street": "Moosstraße",
+      "houseNumber": "5",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Starnberg",
+      "spotCount": 1,
+      "lat": 48.00218185,
+      "lng": 11.350871650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1043771349), ODbL"
+    },
+    {
+      "id": "starnberg-9afcdaca59",
+      "city": "starnberg",
+      "label": "Parkplatz Seebahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Starnberg",
+      "spotCount": 1,
+      "lat": 47.9970708,
+      "lng": 11.346047350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/18640189), ODbL"
+    },
+    {
+      "id": "starnberg-c6767c5988",
+      "city": "starnberg",
+      "label": "Theresienstraße",
+      "street": "Theresienstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Starnberg",
+      "spotCount": 1,
+      "lat": 47.99638455,
+      "lng": 11.341901700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1163072408), ODbL"
+    }
+  ]
+}

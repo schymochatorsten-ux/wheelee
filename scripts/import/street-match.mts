@@ -37,6 +37,9 @@ const NOMINATIM_INTERVAL_MS = 1100;
  */
 export function normalizeStreet(name: string): string {
   return name
+    // Manche Quellen führen die Hausnummer im Straßenfeld („Bismarckstraße 313“,
+    // Gelsenkirchen); die Rückwärtssuche liefert sie getrennt. Beidseitig entfernt.
+    .replace(/\s+\d+\s?[a-z]?(?:\s?[-/]\s?\d+\s?[a-z]?)?\s*$/iu, "")
     .toLowerCase()
     .normalize("NFD")
     .replace(/\p{Diacritic}/gu, "")

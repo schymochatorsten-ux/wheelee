@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "osterholz-scharmbeck",
+    "name": "Osterholz-Scharmbeck",
+    "center": {
+      "lat": 53.22384715,
+      "lng": 8.787356250000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "osterholz-scharmbeck-a0c856dd8d",
+      "city": "osterholz-scharmbeck",
+      "label": "Behindertenparkplatz Osterholz-Scharmbeck",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Osterholz-Scharmbeck",
+      "spotCount": 6,
+      "lat": 53.2301621,
+      "lng": 8.7562095,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1077706533), ODbL"
+    },
+    {
+      "id": "osterholz-scharmbeck-521fe30c48",
+      "city": "osterholz-scharmbeck",
+      "label": "Behindertenparkplatz Osterholz-Scharmbeck",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Osterholz-Scharmbeck",
+      "spotCount": 1,
+      "lat": 53.220748300000004,
+      "lng": 8.797025950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1115459301), ODbL"
+    },
+    {
+      "id": "osterholz-scharmbeck-97b5b938cb",
+      "city": "osterholz-scharmbeck",
+      "label": "Behindertenparkplatz Osterholz-Scharmbeck",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Osterholz-Scharmbeck",
+      "spotCount": 1,
+      "lat": 53.223414700000006,
+      "lng": 8.7838165,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1214818550), ODbL"
+    },
+    {
+      "id": "osterholz-scharmbeck-fe32ae5a88",
+      "city": "osterholz-scharmbeck",
+      "label": "Behindertenparkplatz Osterholz-Scharmbeck",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Osterholz-Scharmbeck",
+      "spotCount": 1,
+      "lat": 53.22384715,
+      "lng": 8.787356250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1534811864), ODbL"
+    }
+  ]
+}

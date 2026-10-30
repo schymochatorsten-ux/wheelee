@@ -1,5 +1,1885 @@
 {
   "license": "Datenlizenz Deutschland – Zero – Version 2.0",
   "licenseSource": "https://ckan.open.nrw/fr/dataset/allgemeine-behindertenparkplatze-in-dusseldorf-d",
-  "licenseCheckedAt": "2026-10-24"
+  "licenseCheckedAt": "2026-10-24",
+  "spots": {
+    "duesseldorf-caf42a33d9": {
+      "label": "Grafenberger Allee",
+      "street": "Grafenberger Allee",
+      "houseNumber": null,
+      "note": "allgemeiner Bedarf"
+    },
+    "duesseldorf-e37f16514d": {
+      "label": "Robert-Hansen-Straße",
+      "street": "Robert-Hansen-Straße",
+      "houseNumber": null,
+      "note": "Altenheim"
+    },
+    "duesseldorf-660834c593": {
+      "label": "Leopoldstraße",
+      "street": "Leopoldstraße",
+      "houseNumber": null,
+      "note": "Altentagespflege"
+    },
+    "duesseldorf-0ea982782f": {
+      "label": "Mühlenstraße",
+      "street": "Mühlenstraße",
+      "houseNumber": null,
+      "note": "Altstadt"
+    },
+    "duesseldorf-f26e0eea94": {
+      "label": "Hohe Straße",
+      "street": "Hohe Straße",
+      "houseNumber": null,
+      "note": "Altstadt"
+    },
+    "duesseldorf-bd48a55155": {
+      "label": "Benrather Straße",
+      "street": "Benrather Straße",
+      "houseNumber": null,
+      "note": "Altstadt"
+    },
+    "duesseldorf-956881ef49": {
+      "label": "Hohe Straße",
+      "street": "Hohe Straße",
+      "houseNumber": null,
+      "note": "Altstadt"
+    },
+    "duesseldorf-358165b506": {
+      "label": "Hasselsstraße",
+      "street": "Hasselsstraße",
+      "houseNumber": null,
+      "note": "Ambulante Pflege"
+    },
+    "duesseldorf-51cf0e85eb": {
+      "label": "Adersstraße",
+      "street": "Adersstraße",
+      "houseNumber": null,
+      "note": "Ambulantes Reha-Zentrum"
+    },
+    "duesseldorf-331ecccb5c": {
+      "label": "Apollo-Platz",
+      "street": "Apollo-Platz",
+      "houseNumber": null,
+      "note": "Apollo-Varieté"
+    },
+    "duesseldorf-1ecf8a2d8f": {
+      "label": "Gumbertstraße",
+      "street": "Gumbertstraße",
+      "houseNumber": null,
+      "note": "Apotheke, Ärzte"
+    },
+    "duesseldorf-140b38b4d3": {
+      "label": "Scheurenstraße",
+      "street": "Scheurenstraße",
+      "houseNumber": null,
+      "note": "ARGE-Anlaufstelle"
+    },
+    "duesseldorf-828e5f9b04": {
+      "label": "Altenbrückstraße",
+      "street": "Altenbrückstraße",
+      "houseNumber": null,
+      "note": "Ärzte, Einkaufszentrum"
+    },
+    "duesseldorf-0c9545d1d0": {
+      "label": "Prinzenallee",
+      "street": "Prinzenallee",
+      "houseNumber": null,
+      "note": "Ärztehaus"
+    },
+    "duesseldorf-2cd922ab9a": {
+      "label": "Kaiserswerther Straße",
+      "street": "Kaiserswerther Straße",
+      "houseNumber": null,
+      "note": "Ärztehaus"
+    },
+    "duesseldorf-6f350aa654": {
+      "label": "Kölner Straße",
+      "street": "Kölner Straße",
+      "houseNumber": null,
+      "note": "Ärztehaus"
+    },
+    "duesseldorf-b9f3efb864": {
+      "label": "Venloer Straße",
+      "street": "Venloer Straße",
+      "houseNumber": null,
+      "note": "Ärztehaus"
+    },
+    "duesseldorf-4c323637b4": {
+      "label": "Graf-Adolf-Straße",
+      "street": "Graf-Adolf-Straße",
+      "houseNumber": null,
+      "note": "Ärztehaus"
+    },
+    "duesseldorf-65c9ed2b55": {
+      "label": "Bagelstraße",
+      "street": "Bagelstraße",
+      "houseNumber": null,
+      "note": "Ärztehaus"
+    },
+    "duesseldorf-baf558900d": {
+      "label": "Emil-Barth-Straße",
+      "street": "Emil-Barth-Straße",
+      "houseNumber": null,
+      "note": "Ärztehaus"
+    },
+    "duesseldorf-bac57372bb": {
+      "label": "Oststraße",
+      "street": "Oststraße",
+      "houseNumber": null,
+      "note": "Ärztehaus"
+    },
+    "duesseldorf-0d41117d8f": {
+      "label": "Münsterstraße",
+      "street": "Münsterstraße",
+      "houseNumber": null,
+      "note": "Ärztehaus"
+    },
+    "duesseldorf-827be47ee3": {
+      "label": "Schiessstraße",
+      "street": "Schiessstraße",
+      "houseNumber": null,
+      "note": "Ärztehaus / Massagepraxis · Massagepraxis"
+    },
+    "duesseldorf-7fb0078cd3": {
+      "label": "Uhlandstraße",
+      "street": "Uhlandstraße",
+      "houseNumber": null,
+      "note": "Ärztehaus, Apotheke"
+    },
+    "duesseldorf-12a185256c": {
+      "label": "Tersteegenstraße",
+      "street": "Tersteegenstraße",
+      "houseNumber": null,
+      "note": "Ärztekammer Nordrhein"
+    },
+    "duesseldorf-743fa13dc0": {
+      "label": "Immermannstraße",
+      "street": "Immermannstraße",
+      "houseNumber": null,
+      "note": "Ärzthaus / Innenstadt · Innenstadt"
+    },
+    "duesseldorf-d242853b2d": {
+      "label": "Luegallee",
+      "street": "Luegallee",
+      "houseNumber": null,
+      "note": "Arztpraxen"
+    },
+    "duesseldorf-c3dc52798b": {
+      "label": "Neustrelitzer Straße",
+      "street": "Neustrelitzer Straße",
+      "houseNumber": null,
+      "note": "Arztpraxen"
+    },
+    "duesseldorf-ef47e4552a": {
+      "label": "Grafenberger Allee",
+      "street": "Grafenberger Allee",
+      "houseNumber": null,
+      "note": "Arztpraxen"
+    },
+    "duesseldorf-43ac2c0b55": {
+      "label": "Rostocker Straße",
+      "street": "Rostocker Straße",
+      "houseNumber": null,
+      "note": "Arztpraxen"
+    },
+    "duesseldorf-3d33e69195": {
+      "label": "Neunzigstraße",
+      "street": "Neunzigstraße",
+      "houseNumber": null,
+      "note": "Arztpraxen / Einkaufsbereich · Einkaufsbereich"
+    },
+    "duesseldorf-2ba12743b2": {
+      "label": "Rheindorfer Weg",
+      "street": "Rheindorfer Weg",
+      "houseNumber": null,
+      "note": "Arztpraxen und Physiotherapie"
+    },
+    "duesseldorf-de1ff6b2f6": {
+      "label": "Luegallee",
+      "street": "Luegallee",
+      "houseNumber": null,
+      "note": "Arztpraxen und Physiotherapie"
+    },
+    "duesseldorf-78129ca771": {
+      "label": "Gerresheimer Landstraße",
+      "street": "Gerresheimer Landstraße",
+      "houseNumber": null,
+      "note": "Arztpraxen, Friedhof"
+    },
+    "duesseldorf-d4a5f9c6e2": {
+      "label": "Gerresheimer Landstraße",
+      "street": "Gerresheimer Landstraße",
+      "houseNumber": null,
+      "note": "Arztpraxen, Friedhof"
+    },
+    "duesseldorf-e3813b35e2": {
+      "label": "Graf-Adolf-Straße",
+      "street": "Graf-Adolf-Straße",
+      "houseNumber": null,
+      "note": "Arztpraxis"
+    },
+    "duesseldorf-56be698721": {
+      "label": "Rather Straße",
+      "street": "Rather Straße",
+      "houseNumber": null,
+      "note": "Arztpraxis"
+    },
+    "duesseldorf-a20886b3aa": {
+      "label": "Herzogstraße",
+      "street": "Herzogstraße",
+      "houseNumber": null,
+      "note": "Arztpraxis"
+    },
+    "duesseldorf-9603ea4cd6": {
+      "label": "Heyestraße",
+      "street": "Heyestraße",
+      "houseNumber": null,
+      "note": "Arztpraxis"
+    },
+    "duesseldorf-788fd24754": {
+      "label": "Hüttenstraße",
+      "street": "Hüttenstraße",
+      "houseNumber": null,
+      "note": "Arztpraxis"
+    },
+    "duesseldorf-d5bacbcea8": {
+      "label": "Klosterstraße",
+      "street": "Klosterstraße",
+      "houseNumber": null,
+      "note": "Arztpraxis"
+    },
+    "duesseldorf-17ba86e413": {
+      "label": "Grafenberger Allee",
+      "street": "Grafenberger Allee",
+      "houseNumber": null,
+      "note": "Arztpraxis"
+    },
+    "duesseldorf-ec63e5824a": {
+      "label": "Luegallee",
+      "street": "Luegallee",
+      "houseNumber": null,
+      "note": "Arztpraxis"
+    },
+    "duesseldorf-9cdd2722d6": {
+      "label": "Paul-Pieper-Straße",
+      "street": "Paul-Pieper-Straße",
+      "houseNumber": null,
+      "note": "Arztpraxis"
+    },
+    "duesseldorf-1336219a68": {
+      "label": "Schirmerstraße",
+      "street": "Schirmerstraße",
+      "houseNumber": null,
+      "note": "Arztpraxis"
+    },
+    "duesseldorf-6bcd16a25d": {
+      "label": "Uhlandstraße",
+      "street": "Uhlandstraße",
+      "houseNumber": null,
+      "note": "Arztpraxis"
+    },
+    "duesseldorf-4da4ce0015": {
+      "label": "Venloer Straße",
+      "street": "Venloer Straße",
+      "houseNumber": null,
+      "note": "Arztpraxis"
+    },
+    "duesseldorf-431683b9c0": {
+      "label": "Vennhauser Allee",
+      "street": "Vennhauser Allee",
+      "houseNumber": null,
+      "note": "Arztpraxis"
+    },
+    "duesseldorf-850ca093f3": {
+      "label": "Völklinger Straße",
+      "street": "Völklinger Straße",
+      "houseNumber": null,
+      "note": "Arztpraxis"
+    },
+    "duesseldorf-a889b5d560": {
+      "label": "Grafenberger Allee",
+      "street": "Grafenberger Allee",
+      "houseNumber": null,
+      "note": "Arztpraxis"
+    },
+    "duesseldorf-d88476b2f9": {
+      "label": "Robert-Hansen-Straße",
+      "street": "Robert-Hansen-Straße",
+      "houseNumber": null,
+      "note": "Arztpraxis"
+    },
+    "duesseldorf-cbde48faba": {
+      "label": "Gerresheimer Straße",
+      "street": "Gerresheimer Straße",
+      "houseNumber": null,
+      "note": "Arztpraxis"
+    },
+    "duesseldorf-f924c79cc9": {
+      "label": "Golzheimer Straße",
+      "street": "Golzheimer Straße",
+      "houseNumber": null,
+      "note": "Arztpraxis"
+    },
+    "duesseldorf-ea318bada5": {
+      "label": "Grafenberger Allee",
+      "street": "Grafenberger Allee",
+      "houseNumber": null,
+      "note": "Arztpraxis"
+    },
+    "duesseldorf-d305970f1c": {
+      "label": "Grafenberger Allee",
+      "street": "Grafenberger Allee",
+      "houseNumber": null,
+      "note": "Arztpraxis"
+    },
+    "duesseldorf-96d140510d": {
+      "label": "Ackerstraße",
+      "street": "Ackerstraße",
+      "houseNumber": null,
+      "note": "Arztpraxis"
+    },
+    "duesseldorf-32d345f898": {
+      "label": "Alte Landstraße",
+      "street": "Alte Landstraße",
+      "houseNumber": null,
+      "note": "Arztpraxis"
+    },
+    "duesseldorf-a257f35e64": {
+      "label": "Elisabethstraße",
+      "street": "Elisabethstraße",
+      "houseNumber": null,
+      "note": "Arztpraxis"
+    },
+    "duesseldorf-81e6696c08": {
+      "label": "Fliednerstraße",
+      "street": "Fliednerstraße",
+      "houseNumber": null,
+      "note": "Arztpraxis"
+    },
+    "duesseldorf-c62b12a511": {
+      "label": "Eisenstraße",
+      "street": "Eisenstraße",
+      "houseNumber": null,
+      "note": "Arztpraxis / allg. Bedarf · allg. Bedarf"
+    },
+    "duesseldorf-115fd8c329": {
+      "label": "Kölner Straße",
+      "street": "Kölner Straße",
+      "houseNumber": null,
+      "note": "Arztpraxis / Innenstadt · Innenstadt"
+    },
+    "duesseldorf-63aa37632a": {
+      "label": "Gerresheimer Straße",
+      "street": "Gerresheimer Straße",
+      "houseNumber": null,
+      "note": "ASG-Bildungsforum"
+    },
+    "duesseldorf-d1b1db0b06": {
+      "label": "Erkrather Straße",
+      "street": "Erkrather Straße",
+      "houseNumber": null,
+      "note": "B8-Center"
+    },
+    "duesseldorf-b79f25574f": {
+      "label": "Heubesstraße",
+      "street": "Heubesstraße",
+      "houseNumber": null,
+      "note": "Bahnhof"
+    },
+    "duesseldorf-6d549a92c1": {
+      "label": "Irmerstraße",
+      "street": "Irmerstraße",
+      "houseNumber": null,
+      "note": "Begegnungsstätte"
+    },
+    "duesseldorf-73f97f7a88": {
+      "label": "Aldekerkstraße",
+      "street": "Aldekerkstraße",
+      "houseNumber": null,
+      "note": "Begegnungsstätte Diakonie"
+    },
+    "duesseldorf-867b5f623f": {
+      "label": "Fleher Straße",
+      "street": "Fleher Straße",
+      "houseNumber": null,
+      "note": "Beratungsstelle"
+    },
+    "duesseldorf-faf4a6ec4b": {
+      "label": "Leichlinger Straße",
+      "street": "Leichlinger Straße",
+      "houseNumber": null,
+      "note": "Betreutes Wohnen"
+    },
+    "duesseldorf-c1898dd30c": {
+      "label": "Vennhauser Allee",
+      "street": "Vennhauser Allee",
+      "houseNumber": null,
+      "note": "Betreutes Wohnen"
+    },
+    "duesseldorf-ad0a0653e5": {
+      "label": "Am Straußenkreuz",
+      "street": "Am Straußenkreuz",
+      "houseNumber": null,
+      "note": "Betreutes Wohnen"
+    },
+    "duesseldorf-9d68bc48d3": {
+      "label": "Degerstraße",
+      "street": "Degerstraße",
+      "houseNumber": null,
+      "note": "Betreutes Wohnen / Arztpraxis · Arztpraxis"
+    },
+    "duesseldorf-58e012a3ad": {
+      "label": "Kalkumer Straße",
+      "street": "Kalkumer Straße",
+      "houseNumber": null,
+      "note": "Bücherei/Zentrum Plus · Zentrum Plus"
+    },
+    "duesseldorf-d818951f13": {
+      "label": "Kölner Landstraße",
+      "street": "Kölner Landstraße",
+      "houseNumber": null,
+      "note": "Bürgerbüro"
+    },
+    "duesseldorf-d9ee9c8fd2": {
+      "label": "Kölner Landstraße",
+      "street": "Kölner Landstraße",
+      "houseNumber": null,
+      "note": "Caritas Beratungsstelle"
+    },
+    "duesseldorf-f5f6ed6f2c": {
+      "label": "Stargarder Straße",
+      "street": "Stargarder Straße",
+      "houseNumber": null,
+      "note": "Claudius-Heim"
+    },
+    "duesseldorf-055d072506": {
+      "label": "Ehrenstraße",
+      "street": "Ehrenstraße",
+      "houseNumber": null,
+      "note": "Club 68"
+    },
+    "duesseldorf-2258cd55d2": {
+      "label": "Lierenfelder Straße",
+      "street": "Lierenfelder Straße",
+      "houseNumber": null,
+      "note": "DAA Nordrhein"
+    },
+    "duesseldorf-fc300423d3": {
+      "label": "Bendemannstraße",
+      "street": "Bendemannstraße",
+      "houseNumber": null,
+      "note": "DDA"
+    },
+    "duesseldorf-e3194ce486": {
+      "label": "Marienstraße",
+      "street": "Marienstraße",
+      "houseNumber": null,
+      "note": "Deutsche Bundesbank"
+    },
+    "duesseldorf-ce85c66b0b": {
+      "label": "Kaiserswerther Markt",
+      "street": "Kaiserswerther Markt",
+      "houseNumber": null,
+      "note": "Diakonie"
+    },
+    "duesseldorf-3ea488bfe4": {
+      "label": "Zeppenheimer Weg",
+      "street": "Zeppenheimer Weg",
+      "houseNumber": null,
+      "note": "Diakonie"
+    },
+    "duesseldorf-f1156f7e9a": {
+      "label": "Zeppenheimer Weg",
+      "street": "Zeppenheimer Weg",
+      "houseNumber": null,
+      "note": "Diakonie"
+    },
+    "duesseldorf-28f36853b2": {
+      "label": "Platz der Diakonie",
+      "street": "Platz der Diakonie",
+      "houseNumber": null,
+      "note": "Diakonie"
+    },
+    "duesseldorf-be73eab71a": {
+      "label": "Calvinstraße",
+      "street": "Calvinstraße",
+      "houseNumber": null,
+      "note": "Diakonie"
+    },
+    "duesseldorf-0bd1b07d54": {
+      "label": "Fliednerstraße",
+      "street": "Fliednerstraße",
+      "houseNumber": null,
+      "note": "Diakonie"
+    },
+    "duesseldorf-0bc8220ec0": {
+      "label": "Fährstraße",
+      "street": "Fährstraße",
+      "houseNumber": null,
+      "note": "Dorfkern"
+    },
+    "duesseldorf-4fcf7f2e11": {
+      "label": "Potsdamer Straße",
+      "street": "Potsdamer Straße",
+      "houseNumber": null,
+      "note": "DRK"
+    },
+    "duesseldorf-8c726ccebc": {
+      "label": "Kölner Landstraße",
+      "street": "Kölner Landstraße",
+      "houseNumber": null,
+      "note": "DRK-Zentrum"
+    },
+    "duesseldorf-4e17387a68": {
+      "label": "Rethelstraße",
+      "street": "Rethelstraße",
+      "houseNumber": null,
+      "note": "Einkaufsbereich"
+    },
+    "duesseldorf-5b2c97a13a": {
+      "label": "Itterstraße",
+      "street": "Itterstraße",
+      "houseNumber": null,
+      "note": "Einkaufsbereich"
+    },
+    "duesseldorf-3fb7c37fd7": {
+      "label": "Gumbertstraße",
+      "street": "Gumbertstraße",
+      "houseNumber": null,
+      "note": "Einkaufsbereich"
+    },
+    "duesseldorf-2a49ee64ca": {
+      "label": "Itterstraße",
+      "street": "Itterstraße",
+      "houseNumber": null,
+      "note": "Einkaufsbereich"
+    },
+    "duesseldorf-529c1b23b1": {
+      "label": "Kaiserswerther Straße",
+      "street": "Kaiserswerther Straße",
+      "houseNumber": null,
+      "note": "Einkaufsbereich"
+    },
+    "duesseldorf-26d5a2469f": {
+      "label": "Schadowstraße",
+      "street": "Schadowstraße",
+      "houseNumber": null,
+      "note": "Einkaufsbereich"
+    },
+    "duesseldorf-573186c56f": {
+      "label": "Liesegangstraße",
+      "street": "Liesegangstraße",
+      "houseNumber": null,
+      "note": "Einkaufsbereich"
+    },
+    "duesseldorf-2dc1b7b452": {
+      "label": "Uerdinger Straße",
+      "street": "Uerdinger Straße",
+      "houseNumber": null,
+      "note": "Einkaufsbereich"
+    },
+    "duesseldorf-fc2449f7e1": {
+      "label": "Vennhauser Allee",
+      "street": "Vennhauser Allee",
+      "houseNumber": null,
+      "note": "Einkaufsbereich"
+    },
+    "duesseldorf-c7989a5b1a": {
+      "label": "Westfalenstraße",
+      "street": "Westfalenstraße",
+      "houseNumber": null,
+      "note": "Einkaufsbereich"
+    },
+    "duesseldorf-16cc6a5fb1": {
+      "label": "Graf-Adolf-Straße",
+      "street": "Graf-Adolf-Straße",
+      "houseNumber": null,
+      "note": "Einkaufsbereich"
+    },
+    "duesseldorf-d148f75976": {
+      "label": "Am Langen Weiher",
+      "street": "Am Langen Weiher",
+      "houseNumber": null,
+      "note": "Einkaufsbereich"
+    },
+    "duesseldorf-31c377cbf9": {
+      "label": "Am Mergelsberg",
+      "street": "Am Mergelsberg",
+      "houseNumber": null,
+      "note": "Einkaufsbereich"
+    },
+    "duesseldorf-2d28ca0ca7": {
+      "label": "Benderstraße",
+      "street": "Benderstraße",
+      "houseNumber": null,
+      "note": "Einkaufsbereich"
+    },
+    "duesseldorf-295770df03": {
+      "label": "Drakestraße",
+      "street": "Drakestraße",
+      "houseNumber": null,
+      "note": "Einkaufsbereich"
+    },
+    "duesseldorf-b916ed4164": {
+      "label": "Erkrather Straße",
+      "street": "Erkrather Straße",
+      "houseNumber": null,
+      "note": "Einkaufsbereich"
+    },
+    "duesseldorf-b8fbfbcfd6": {
+      "label": "Brehmstraße",
+      "street": "Brehmstraße",
+      "houseNumber": null,
+      "note": "Einkaufsbereich / Arztpraxis · Arztpraxis"
+    },
+    "duesseldorf-aa97f999bd": {
+      "label": "Sistenichstraße",
+      "street": "Sistenichstraße",
+      "houseNumber": null,
+      "note": "Einkaufsbereich /Markt · Markt"
+    },
+    "duesseldorf-e081ec41ff": {
+      "label": "Urdenbacher Allee",
+      "street": "Urdenbacher Allee",
+      "houseNumber": null,
+      "note": "Einkaufsbereich Benrath"
+    },
+    "duesseldorf-01c731883c": {
+      "label": "Urdenbacher Allee",
+      "street": "Urdenbacher Allee",
+      "houseNumber": null,
+      "note": "Einkaufsbereich Benrath"
+    },
+    "duesseldorf-ea0a6b2755": {
+      "label": "Peter-Behrens-Straße",
+      "street": "Peter-Behrens-Straße",
+      "houseNumber": null,
+      "note": "Einkaufszentrum"
+    },
+    "duesseldorf-64a7c0b3f4": {
+      "label": "Reinhold-Schneider-Straße",
+      "street": "Reinhold-Schneider-Straße",
+      "houseNumber": null,
+      "note": "Einkaufszentrum"
+    },
+    "duesseldorf-37d9ba061b": {
+      "label": "Hasselsstraße",
+      "street": "Hasselsstraße",
+      "houseNumber": null,
+      "note": "Einkaufszentrum"
+    },
+    "duesseldorf-a89169edac": {
+      "label": "Hatzfeldstraße",
+      "street": "Hatzfeldstraße",
+      "houseNumber": null,
+      "note": "Einkaufszentrum"
+    },
+    "duesseldorf-095b463760": {
+      "label": "Bonner Straße/Henkelstraße",
+      "street": "Bonner Straße/Henkelstraße",
+      "houseNumber": null,
+      "note": "Einkaufszentrum"
+    },
+    "duesseldorf-c1d56e0803": {
+      "label": "Henkelstraße",
+      "street": "Henkelstraße",
+      "houseNumber": null,
+      "note": "Einkaufszentrum"
+    },
+    "duesseldorf-73c3349f88": {
+      "label": "Heyestraße",
+      "street": "Heyestraße",
+      "houseNumber": null,
+      "note": "Einkaufszentrum"
+    },
+    "duesseldorf-aed8a00d9e": {
+      "label": "Hildener Straße",
+      "street": "Hildener Straße",
+      "houseNumber": null,
+      "note": "Einkaufszentrum"
+    },
+    "duesseldorf-2b2fd57490": {
+      "label": "Kaiserswerther Straße",
+      "street": "Kaiserswerther Straße",
+      "houseNumber": null,
+      "note": "Einkaufszentrum"
+    },
+    "duesseldorf-104785cb21": {
+      "label": "Kaiserswerther Straße",
+      "street": "Kaiserswerther Straße",
+      "houseNumber": null,
+      "note": "Einkaufszentrum"
+    },
+    "duesseldorf-aa20af1120": {
+      "label": "Weststraße",
+      "street": "Weststraße",
+      "houseNumber": null,
+      "note": "Einkaufszentrum"
+    },
+    "duesseldorf-f3d8aca2e9": {
+      "label": "Ahnfeldstraße",
+      "street": "Ahnfeldstraße",
+      "houseNumber": null,
+      "note": "Einkaufszentrum"
+    },
+    "duesseldorf-c2d43d3780": {
+      "label": "Alte Landstraße",
+      "street": "Alte Landstraße",
+      "houseNumber": null,
+      "note": "Einkaufszentrum"
+    },
+    "duesseldorf-8165e104f8": {
+      "label": "An Sankt Swidbert",
+      "street": "An Sankt Swidbert",
+      "houseNumber": null,
+      "note": "Einkaufszentrum"
+    },
+    "duesseldorf-4dd42ac5ed": {
+      "label": "Duisburger Straße",
+      "street": "Duisburger Straße",
+      "houseNumber": null,
+      "note": "Einkaufszentrum"
+    },
+    "duesseldorf-41a2954217": {
+      "label": "Fröhlenstraße",
+      "street": "Fröhlenstraße",
+      "houseNumber": null,
+      "note": "Einkaufszentrum"
+    },
+    "duesseldorf-e397fd3a5e": {
+      "label": "Kalkumer Straße",
+      "street": "Kalkumer Straße",
+      "houseNumber": null,
+      "note": "Einkaufszentrum N"
+    },
+    "duesseldorf-2501aaea35": {
+      "label": "Am Pfaffenbusch",
+      "street": "Am Pfaffenbusch",
+      "houseNumber": null,
+      "note": "Einkaufszentrum, Friedhof"
+    },
+    "duesseldorf-43f5b721f9": {
+      "label": "Münsterstraße",
+      "street": "Münsterstraße",
+      "houseNumber": null,
+      "note": "Einrichtung Hilfe für Behinderte"
+    },
+    "duesseldorf-1c8a533954": {
+      "label": "Reisholzer Straße",
+      "street": "Reisholzer Straße",
+      "houseNumber": null,
+      "note": "Ergotherapie"
+    },
+    "duesseldorf-e92e9dd1d9": {
+      "label": "Wacholderstraße",
+      "street": "Wacholderstraße",
+      "houseNumber": null,
+      "note": "Ergotherapie"
+    },
+    "duesseldorf-a227948c22": {
+      "label": "Kreuzburger Weg",
+      "street": "Kreuzburger Weg",
+      "houseNumber": null,
+      "note": "Ergotherapie Praxis"
+    },
+    "duesseldorf-960a090e54": {
+      "label": "Deikerstraße",
+      "street": "Deikerstraße",
+      "houseNumber": null,
+      "note": "Fashion-House"
+    },
+    "duesseldorf-6982fe2593": {
+      "label": "Worringer Straße",
+      "street": "Worringer Straße",
+      "houseNumber": null,
+      "note": "Fernbusbahnhof"
+    },
+    "duesseldorf-5e6d081d5d": {
+      "label": "Graf-Adolf-Straße",
+      "street": "Graf-Adolf-Straße",
+      "houseNumber": null,
+      "note": "Finanzamt D/ME · ME"
+    },
+    "duesseldorf-70e8f6f980": {
+      "label": "Hans-Böckler-Straße",
+      "street": "Hans-Böckler-Straße",
+      "houseNumber": null,
+      "note": "Finanzamt Nord"
+    },
+    "duesseldorf-7f5a69eb10": {
+      "label": "Ahrensplatz",
+      "street": "Ahrensplatz",
+      "houseNumber": null,
+      "note": "Flughafen / Bahnhof · Bahnhof"
+    },
+    "duesseldorf-f5a96ea771": {
+      "label": "Fritz-Erler-Straße",
+      "street": "Fritz-Erler-Straße",
+      "houseNumber": null,
+      "note": "Freizeitstätte"
+    },
+    "duesseldorf-d50afaaa8d": {
+      "label": "Quadenhofstraße",
+      "street": "Quadenhofstraße",
+      "houseNumber": null,
+      "note": "Friedhof"
+    },
+    "duesseldorf-4d4a6505e6": {
+      "label": "Hasselsstraße",
+      "street": "Hasselsstraße",
+      "houseNumber": null,
+      "note": "Friedhof"
+    },
+    "duesseldorf-85a0086658": {
+      "label": "Itterstraße",
+      "street": "Itterstraße",
+      "houseNumber": null,
+      "note": "Friedhof"
+    },
+    "duesseldorf-4a26de8261": {
+      "label": "Schiessstraße",
+      "street": "Schiessstraße",
+      "houseNumber": null,
+      "note": "Friedhof"
+    },
+    "duesseldorf-1ec5d37423": {
+      "label": "Thewissenweg",
+      "street": "Thewissenweg",
+      "houseNumber": null,
+      "note": "Friedhof"
+    },
+    "duesseldorf-e65e576500": {
+      "label": "Neusser Weg",
+      "street": "Neusser Weg",
+      "houseNumber": null,
+      "note": "Friedhof"
+    },
+    "duesseldorf-e0b770bfbe": {
+      "label": "Friedhofstraße",
+      "street": "Friedhofstraße",
+      "houseNumber": null,
+      "note": "Friedhof / Einkaufsbereich · Einkaufsbereich"
+    },
+    "duesseldorf-3b3dc0ac76": {
+      "label": "Zietenstraße",
+      "street": "Zietenstraße",
+      "houseNumber": null,
+      "note": "Gemeinde"
+    },
+    "duesseldorf-bd1a885708": {
+      "label": "Hohenzollernstraße",
+      "street": "Hohenzollernstraße",
+      "houseNumber": null,
+      "note": "Gemeinschaftspraxis"
+    },
+    "duesseldorf-d21ecbbcee": {
+      "label": "Bismarckstraße",
+      "street": "Bismarckstraße",
+      "houseNumber": null,
+      "note": "Gerhart-Hauptmann-Haus"
+    },
+    "duesseldorf-1ad209b5c2": {
+      "label": "Werstener Feld",
+      "street": "Werstener Feld",
+      "houseNumber": null,
+      "note": "Geschäfte"
+    },
+    "duesseldorf-71e77593bb": {
+      "label": "Burggrafenstraße",
+      "street": "Burggrafenstraße",
+      "houseNumber": null,
+      "note": "Gesundheitsamt"
+    },
+    "duesseldorf-0e8a45c780": {
+      "label": "Friedrich-Lau-Straße",
+      "street": "Friedrich-Lau-Straße",
+      "houseNumber": null,
+      "note": "Golzheimer Klinik"
+    },
+    "duesseldorf-825a633792": {
+      "label": "Walther-Hensel-Straße",
+      "street": "Walther-Hensel-Straße",
+      "houseNumber": null,
+      "note": "Grimmke-Haus AWO"
+    },
+    "duesseldorf-bf9cddeb18": {
+      "label": "Worringer Straße",
+      "street": "Worringer Straße",
+      "houseNumber": null,
+      "note": "Hauptbahnhof / Kinocenter · Kinocenter"
+    },
+    "duesseldorf-6d872cb755": {
+      "label": "Bastionstraße",
+      "street": "Bastionstraße",
+      "houseNumber": null,
+      "note": "Haus der Kirche"
+    },
+    "duesseldorf-c4305f85c2": {
+      "label": "Ludwig-Erhard-Allee",
+      "street": "Ludwig-Erhard-Allee",
+      "houseNumber": null,
+      "note": "Hbf"
+    },
+    "duesseldorf-ce104fb33e": {
+      "label": "Volmerswerther Straße",
+      "street": "Volmerswerther Straße",
+      "houseNumber": null,
+      "note": "IHK"
+    },
+    "duesseldorf-bfbab2365e": {
+      "label": "Immermannstraße",
+      "street": "Immermannstraße",
+      "houseNumber": null,
+      "note": "Innenstadt"
+    },
+    "duesseldorf-2d73e86ab6": {
+      "label": "Kasernenstraße",
+      "street": "Kasernenstraße",
+      "houseNumber": null,
+      "note": "Innenstadt"
+    },
+    "duesseldorf-3cb4e4a3c0": {
+      "label": "Kurfürstenstraße",
+      "street": "Kurfürstenstraße",
+      "houseNumber": null,
+      "note": "Innenstadt"
+    },
+    "duesseldorf-86ebed4418": {
+      "label": "Leopoldstraße",
+      "street": "Leopoldstraße",
+      "houseNumber": null,
+      "note": "Innenstadt"
+    },
+    "duesseldorf-145b1f77cf": {
+      "label": "Schwanenmarkt",
+      "street": "Schwanenmarkt",
+      "houseNumber": null,
+      "note": "Innenstadt"
+    },
+    "duesseldorf-cf81b3e3b0": {
+      "label": "Worringer Straße",
+      "street": "Worringer Straße",
+      "houseNumber": null,
+      "note": "Innenstadt"
+    },
+    "duesseldorf-ffbdc16bb9": {
+      "label": "Bongardstraße",
+      "street": "Bongardstraße",
+      "houseNumber": null,
+      "note": "Innenstadt"
+    },
+    "duesseldorf-f34125e3af": {
+      "label": "Steinstraße",
+      "street": "Steinstraße",
+      "houseNumber": null,
+      "note": "Innenstadt / Physiotherapie · Physiotherapie"
+    },
+    "duesseldorf-04c060b870": {
+      "label": "Helmholtzstraße",
+      "street": "Helmholtzstraße",
+      "houseNumber": null,
+      "note": "Innenstadt / St. Antonius · St. Antonius"
+    },
+    "duesseldorf-fbbdb4591e": {
+      "label": "Ackerstraße",
+      "street": "Ackerstraße",
+      "houseNumber": null,
+      "note": "Innenstadt / Worringer Platz · Worringer Platz"
+    },
+    "duesseldorf-248ba0bc36": {
+      "label": "Bahnstraße",
+      "street": "Bahnstraße",
+      "houseNumber": null,
+      "note": "Innenstadt, Kö"
+    },
+    "duesseldorf-97642e3648": {
+      "label": "Heinrich-Heine-Allee",
+      "street": "Heinrich-Heine-Allee",
+      "houseNumber": null,
+      "note": "Innenstadt, vor Parkhaus Kaufhof/Kö · vor Parkhaus Kaufhof / Kö"
+    },
+    "duesseldorf-cdc6dcfd2b": {
+      "label": "Emmastraße",
+      "street": "Emmastraße",
+      "houseNumber": null,
+      "note": "Jugendberufshilfe"
+    },
+    "duesseldorf-40388870ed": {
+      "label": "Jahnstraße",
+      "street": "Jahnstraße",
+      "houseNumber": null,
+      "note": "Kammerspiele"
+    },
+    "duesseldorf-4e2a0d7474": {
+      "label": "Am Turnisch",
+      "street": "Am Turnisch",
+      "houseNumber": null,
+      "note": "Kastanienhöfe"
+    },
+    "duesseldorf-b61d0c48bd": {
+      "label": "Lindenstraße",
+      "street": "Lindenstraße",
+      "houseNumber": null,
+      "note": "Kindertagesstätte"
+    },
+    "duesseldorf-bebae4801a": {
+      "label": "Ahornallee",
+      "street": "Ahornallee",
+      "houseNumber": null,
+      "note": "Kindertagesstätte"
+    },
+    "duesseldorf-86cc2af78e": {
+      "label": "Posener Straße",
+      "street": "Posener Straße",
+      "houseNumber": null,
+      "note": "Kirche"
+    },
+    "duesseldorf-03970dd2aa": {
+      "label": "Im Spich",
+      "street": "Im Spich",
+      "houseNumber": null,
+      "note": "Kirche"
+    },
+    "duesseldorf-0933cab117": {
+      "label": "Jülicher Straße",
+      "street": "Jülicher Straße",
+      "houseNumber": null,
+      "note": "Kirche"
+    },
+    "duesseldorf-35233eb53d": {
+      "label": "Kaiserswerther Straße",
+      "street": "Kaiserswerther Straße",
+      "houseNumber": null,
+      "note": "Kirche"
+    },
+    "duesseldorf-db95b3368c": {
+      "label": "Kopernikusstraße",
+      "street": "Kopernikusstraße",
+      "houseNumber": null,
+      "note": "Kirche"
+    },
+    "duesseldorf-33b94a362b": {
+      "label": "Paul-Bonatz-Straße",
+      "street": "Paul-Bonatz-Straße",
+      "houseNumber": null,
+      "note": "Kirche"
+    },
+    "duesseldorf-c92fd68987": {
+      "label": "Urdenbacher Allee",
+      "street": "Urdenbacher Allee",
+      "houseNumber": null,
+      "note": "Kirche"
+    },
+    "duesseldorf-b56970f80a": {
+      "label": "Gerricusstraße",
+      "street": "Gerricusstraße",
+      "houseNumber": null,
+      "note": "Kirche"
+    },
+    "duesseldorf-46527e1454": {
+      "label": "Burscheider Straße",
+      "street": "Burscheider Straße",
+      "houseNumber": null,
+      "note": "Kirche"
+    },
+    "duesseldorf-1b1e6a2dac": {
+      "label": "Degerstraße",
+      "street": "Degerstraße",
+      "houseNumber": null,
+      "note": "Kirche"
+    },
+    "duesseldorf-cb23f36a33": {
+      "label": "Fruchtstraße",
+      "street": "Fruchtstraße",
+      "houseNumber": null,
+      "note": "Kirche"
+    },
+    "duesseldorf-486e730f7c": {
+      "label": "Friesenstraße",
+      "street": "Friesenstraße",
+      "houseNumber": null,
+      "note": "Kirche St. Antonius"
+    },
+    "duesseldorf-621b9176c3": {
+      "label": "Königsallee",
+      "street": "Königsallee",
+      "houseNumber": null,
+      "note": "Kö / Stadtmitte · Stadtmitte"
+    },
+    "duesseldorf-b4b0c89b5a": {
+      "label": "Königsallee",
+      "street": "Königsallee",
+      "houseNumber": null,
+      "note": "Kö / Stadtmitte · Stadtmitte"
+    },
+    "duesseldorf-31da7725e4": {
+      "label": "Klosterstraße",
+      "street": "Klosterstraße",
+      "houseNumber": null,
+      "note": "Konsulat"
+    },
+    "duesseldorf-7ec0c008e9": {
+      "label": "Kirchfeldstraße",
+      "street": "Kirchfeldstraße",
+      "houseNumber": null,
+      "note": "Krankenhaus"
+    },
+    "duesseldorf-953c465b2a": {
+      "label": "Urdenbacher Allee",
+      "street": "Urdenbacher Allee",
+      "houseNumber": null,
+      "note": "Krankenhaus"
+    },
+    "duesseldorf-4de5ea3f50": {
+      "label": "Rheinallee",
+      "street": "Rheinallee",
+      "houseNumber": null,
+      "note": "Krankenhaus"
+    },
+    "duesseldorf-c59fd93902": {
+      "label": "Amalienstraße",
+      "street": "Amalienstraße",
+      "houseNumber": null,
+      "note": "Krankenhaus"
+    },
+    "duesseldorf-bdbed18203": {
+      "label": "Amalienstraße",
+      "street": "Amalienstraße",
+      "houseNumber": null,
+      "note": "Krankenhaus / Seniorenwohnheim · Seniorenwohnheim"
+    },
+    "duesseldorf-26bbb54399": {
+      "label": "Am Falder",
+      "street": "Am Falder",
+      "houseNumber": null,
+      "note": "Krankenhaus Elbroich"
+    },
+    "duesseldorf-0490467b77": {
+      "label": "Bastionstraße",
+      "street": "Bastionstraße",
+      "houseNumber": null,
+      "note": "Krankenkasse"
+    },
+    "duesseldorf-dde4a7d627": {
+      "label": "Klosterstraße",
+      "street": "Klosterstraße",
+      "houseNumber": null,
+      "note": "Krankenkasse"
+    },
+    "duesseldorf-81de9881db": {
+      "label": "Berliner Allee",
+      "street": "Berliner Allee",
+      "houseNumber": null,
+      "note": "Krankenkasse"
+    },
+    "duesseldorf-fb0d2021dd": {
+      "label": "Bilker Straße",
+      "street": "Bilker Straße",
+      "houseNumber": null,
+      "note": "Kulturinstitute"
+    },
+    "duesseldorf-52923ef89e": {
+      "label": "Grunerstraße",
+      "street": "Grunerstraße",
+      "houseNumber": null,
+      "note": "Lebenshilfe"
+    },
+    "duesseldorf-0de4cedb37": {
+      "label": "Kündgensweg",
+      "street": "Kündgensweg",
+      "houseNumber": null,
+      "note": "Lebenshilfe Kita"
+    },
+    "duesseldorf-1304c3daca": {
+      "label": "Adersstraße",
+      "street": "Adersstraße",
+      "houseNumber": null,
+      "note": "LVA"
+    },
+    "duesseldorf-d21e0b1eeb": {
+      "label": "Kaiser-Friedrich-Ring",
+      "street": "Kaiser-Friedrich-Ring",
+      "houseNumber": null,
+      "note": "Massagepraxis"
+    },
+    "duesseldorf-fa048dc536": {
+      "label": "Koblenzer Straße",
+      "street": "Koblenzer Straße",
+      "houseNumber": null,
+      "note": "Massagepraxis"
+    },
+    "duesseldorf-4742ac907b": {
+      "label": "Niederkasseler Straße",
+      "street": "Niederkasseler Straße",
+      "houseNumber": null,
+      "note": "Massagepraxis"
+    },
+    "duesseldorf-d966839d8d": {
+      "label": "Kölner Landstraße",
+      "street": "Kölner Landstraße",
+      "houseNumber": null,
+      "note": "Matthias-Claudius-Heim"
+    },
+    "duesseldorf-4f26cc8f0b": {
+      "label": "Poststraße",
+      "street": "Poststraße",
+      "houseNumber": null,
+      "note": "Maxkirche / Carlsplatz · Carlsplatz"
+    },
+    "duesseldorf-f10d23184b": {
+      "label": "Hammer Straße",
+      "street": "Hammer Straße",
+      "houseNumber": null,
+      "note": "Medienhafen"
+    },
+    "duesseldorf-a04c5d1145": {
+      "label": "Horionplatz",
+      "street": "Horionplatz",
+      "houseNumber": null,
+      "note": "Ministerien"
+    },
+    "duesseldorf-e394ace08f": {
+      "label": "Fürstenwall",
+      "street": "Fürstenwall",
+      "houseNumber": null,
+      "note": "Ministerium"
+    },
+    "duesseldorf-535a48fd1f": {
+      "label": "Glockenstraße",
+      "street": "Glockenstraße",
+      "houseNumber": null,
+      "note": "Münstercenter"
+    },
+    "duesseldorf-9e5a105058": {
+      "label": "Hermann-Reuter-Straße",
+      "street": "Hermann-Reuter-Straße",
+      "houseNumber": null,
+      "note": "Neubaugebiet"
+    },
+    "duesseldorf-5aa2717f77": {
+      "label": "Am Nordfriedhof",
+      "street": "Am Nordfriedhof",
+      "houseNumber": null,
+      "note": "Nordfriedhof"
+    },
+    "duesseldorf-ed326029ff": {
+      "label": "Kurt-Baurichter-Straße",
+      "street": "Kurt-Baurichter-Straße",
+      "houseNumber": null,
+      "note": "Oberlandesgericht"
+    },
+    "duesseldorf-51ce8db378": {
+      "label": "Münsterstraße",
+      "street": "Münsterstraße",
+      "houseNumber": null,
+      "note": "öffentl. Verwaltung"
+    },
+    "duesseldorf-d75fcbe5d7": {
+      "label": "Ludwig-Zimmermann-Straße",
+      "street": "Ludwig-Zimmermann-Straße",
+      "houseNumber": null,
+      "note": "Opernhaus"
+    },
+    "duesseldorf-1c2574e291": {
+      "label": "Urdenbacher Allee",
+      "street": "Urdenbacher Allee",
+      "houseNumber": null,
+      "note": "Orangerie"
+    },
+    "duesseldorf-bdcdfb6ccb": {
+      "label": "Ackerstraße",
+      "street": "Ackerstraße",
+      "houseNumber": null,
+      "note": "Orthopädie Schuhtechnik"
+    },
+    "duesseldorf-ce7a00d2bc": {
+      "label": "Corneliusstraße",
+      "street": "Corneliusstraße",
+      "houseNumber": null,
+      "note": "Orthopädiegeschäft"
+    },
+    "duesseldorf-7525b9e10b": {
+      "label": "Jülicher Straße",
+      "street": "Jülicher Straße",
+      "houseNumber": null,
+      "note": "Orthopädietechnik"
+    },
+    "duesseldorf-ba44ea0b54": {
+      "label": "Kölner Straße",
+      "street": "Kölner Straße",
+      "houseNumber": null,
+      "note": "Orthopädietechnik"
+    },
+    "duesseldorf-045984fac8": {
+      "label": "Nordstraße",
+      "street": "Nordstraße",
+      "houseNumber": null,
+      "note": "Orthopädietechnik"
+    },
+    "duesseldorf-a069658aea": {
+      "label": "Tannenstraße",
+      "street": "Tannenstraße",
+      "houseNumber": null,
+      "note": "Orthopädietechnik"
+    },
+    "duesseldorf-aed372f312": {
+      "label": "Walther-Rathenau-Straße",
+      "street": "Walther-Rathenau-Straße",
+      "houseNumber": null,
+      "note": "Orthopädietechnik"
+    },
+    "duesseldorf-de0cfd11ac": {
+      "label": "Benderstraße",
+      "street": "Benderstraße",
+      "houseNumber": null,
+      "note": "Orthopädietechnik"
+    },
+    "duesseldorf-bf5ae50569": {
+      "label": "Blücherstraße",
+      "street": "Blücherstraße",
+      "houseNumber": null,
+      "note": "Orthopädietechnik"
+    },
+    "duesseldorf-07bbd5fefc": {
+      "label": "Brunnenstraße",
+      "street": "Brunnenstraße",
+      "houseNumber": null,
+      "note": "Orthopädietechnik"
+    },
+    "duesseldorf-f5487d5807": {
+      "label": "Linienstraße",
+      "street": "Linienstraße",
+      "houseNumber": null,
+      "note": "Pflegedienst"
+    },
+    "duesseldorf-15fdb052e2": {
+      "label": "Mindener Straße",
+      "street": "Mindener Straße",
+      "houseNumber": null,
+      "note": "Physiopraxis"
+    },
+    "duesseldorf-7c5b112095": {
+      "label": "Ickerswarder Straße",
+      "street": "Ickerswarder Straße",
+      "houseNumber": null,
+      "note": "Physiopraxis"
+    },
+    "duesseldorf-b51b1bf786": {
+      "label": "Schumannstraße",
+      "street": "Schumannstraße",
+      "houseNumber": null,
+      "note": "Physiotherapie"
+    },
+    "duesseldorf-b6d657b9d4": {
+      "label": "Duisburger Straße",
+      "street": "Duisburger Straße",
+      "houseNumber": null,
+      "note": "Physiotherapie"
+    },
+    "duesseldorf-4a62a716cc": {
+      "label": "In den Großen Banden",
+      "street": "In den Großen Banden",
+      "houseNumber": null,
+      "note": "Piel's Kull Kleingartenverein"
+    },
+    "duesseldorf-39cd0a72b1": {
+      "label": "Frankfurter Straße",
+      "street": "Frankfurter Straße",
+      "houseNumber": null,
+      "note": "Polizeiwache"
+    },
+    "duesseldorf-2daa942158": {
+      "label": "Bonner Straße",
+      "street": "Bonner Straße",
+      "houseNumber": null,
+      "note": "Post"
+    },
+    "duesseldorf-3c41f490f1": {
+      "label": "Sankt-Göres-Straße",
+      "street": "Sankt-Göres-Straße",
+      "houseNumber": null,
+      "note": "Postfiliale"
+    },
+    "duesseldorf-4a3ea0d218": {
+      "label": "Kalkumer Straße",
+      "street": "Kalkumer Straße",
+      "houseNumber": null,
+      "note": "Postfiliale"
+    },
+    "duesseldorf-f090ba8465": {
+      "label": "Stephanstraße",
+      "street": "Stephanstraße",
+      "houseNumber": null,
+      "note": "Postshop"
+    },
+    "duesseldorf-3c45735696": {
+      "label": "Schäferstraße",
+      "street": "Schäferstraße",
+      "houseNumber": null,
+      "note": "Praxis"
+    },
+    "duesseldorf-348df230c8": {
+      "label": "Sternstraße",
+      "street": "Sternstraße",
+      "houseNumber": null,
+      "note": "Praxis für Ergotherapie"
+    },
+    "duesseldorf-4ca74072bd": {
+      "label": "Harffstraße",
+      "street": "Harffstraße",
+      "houseNumber": null,
+      "note": "Praxis für Physiotherapie"
+    },
+    "duesseldorf-28e0ec8580": {
+      "label": "Herzogstraße",
+      "street": "Herzogstraße",
+      "houseNumber": null,
+      "note": "Praxis für Physiotherapie"
+    },
+    "duesseldorf-3d89e2fdb6": {
+      "label": "Kalkumer Straße",
+      "street": "Kalkumer Straße",
+      "houseNumber": null,
+      "note": "Praxis für Physiotherapie"
+    },
+    "duesseldorf-1122154317": {
+      "label": "Kruppstraße",
+      "street": "Kruppstraße",
+      "houseNumber": null,
+      "note": "Praxis für Physiotherapie"
+    },
+    "duesseldorf-a55a3e3159": {
+      "label": "Gladbacher Straße",
+      "street": "Gladbacher Straße",
+      "houseNumber": null,
+      "note": "Praxis für Physiotherapie"
+    },
+    "duesseldorf-516e57b5d6": {
+      "label": "Bastionstraße",
+      "street": "Bastionstraße",
+      "houseNumber": null,
+      "note": "Praxis für Physiotherapie"
+    },
+    "duesseldorf-102276d7b8": {
+      "label": "Berliner Allee",
+      "street": "Berliner Allee",
+      "houseNumber": null,
+      "note": "Praxis für Physiotherapie"
+    },
+    "duesseldorf-26d5d9e754": {
+      "label": "Bilker Allee",
+      "street": "Bilker Allee",
+      "houseNumber": null,
+      "note": "Praxis für Physiotherapie"
+    },
+    "duesseldorf-97637d810a": {
+      "label": "Bilker Allee",
+      "street": "Bilker Allee",
+      "houseNumber": null,
+      "note": "Praxis für Physiotherapie"
+    },
+    "duesseldorf-6dc232e2e9": {
+      "label": "Burscheider Straße",
+      "street": "Burscheider Straße",
+      "houseNumber": null,
+      "note": "Praxis für Physiotherapie"
+    },
+    "duesseldorf-a28e22409b": {
+      "label": "Düsselstraße",
+      "street": "Düsselstraße",
+      "houseNumber": null,
+      "note": "Praxis für Physiotherapie"
+    },
+    "duesseldorf-6816ce37ea": {
+      "label": "Glockenstraße",
+      "street": "Glockenstraße",
+      "houseNumber": null,
+      "note": "Praxis für Physiotherapie"
+    },
+    "duesseldorf-cbd5490489": {
+      "label": "Volmerswerther Straße",
+      "street": "Volmerswerther Straße",
+      "houseNumber": null,
+      "note": "Praxis für Physiotherapie"
+    },
+    "duesseldorf-99e092c57d": {
+      "label": "Zülpicher Straße",
+      "street": "Zülpicher Straße",
+      "houseNumber": null,
+      "note": "Pressehaus"
+    },
+    "duesseldorf-9248541a17": {
+      "label": "Bismarckstraße",
+      "street": "Bismarckstraße",
+      "houseNumber": null,
+      "note": "Radiologiepraxen / Dialysepraxis · Dialysepraxis"
+    },
+    "duesseldorf-4068ccab2d": {
+      "label": "Benrodestraße",
+      "street": "Benrodestraße",
+      "houseNumber": null,
+      "note": "Rathaus Benrath"
+    },
+    "duesseldorf-1d6faa7fdb": {
+      "label": "Luisenstraße",
+      "street": "Luisenstraße",
+      "houseNumber": null,
+      "note": "REHA-Ambulanz"
+    },
+    "duesseldorf-ca276860c3": {
+      "label": "Hildebrandtstraße",
+      "street": "Hildebrandtstraße",
+      "houseNumber": null,
+      "note": "Reha-Zentrum"
+    },
+    "duesseldorf-4ab66fc5c3": {
+      "label": "Stockumer Höfe",
+      "street": "Stockumer Höfe",
+      "houseNumber": null,
+      "note": "Rheinbad"
+    },
+    "duesseldorf-290e441339": {
+      "label": "Cruthovener Straße",
+      "street": "Cruthovener Straße",
+      "houseNumber": null,
+      "note": "S-Bahnhof / Einkaufsbereich · Einkaufsbereich"
+    },
+    "duesseldorf-01a6284ff3": {
+      "label": "Gumbertstraße",
+      "street": "Gumbertstraße",
+      "houseNumber": null,
+      "note": "S-Bahnhof Eller-Mitte"
+    },
+    "duesseldorf-9243696403": {
+      "label": "Himmelgeister Straße",
+      "street": "Himmelgeister Straße",
+      "houseNumber": null,
+      "note": "Sanitätshaus"
+    },
+    "duesseldorf-0134512cf2": {
+      "label": "Westfalenstraße",
+      "street": "Westfalenstraße",
+      "houseNumber": null,
+      "note": "Sanitätshaus"
+    },
+    "duesseldorf-12fee68a85": {
+      "label": "Sistenichstraße",
+      "street": "Sistenichstraße",
+      "houseNumber": null,
+      "note": "Sanitätshaus"
+    },
+    "duesseldorf-7a8dc55384": {
+      "label": "Friedrichstraße",
+      "street": "Friedrichstraße",
+      "houseNumber": null,
+      "note": "Sanitätshaus"
+    },
+    "duesseldorf-6813a0ff69": {
+      "label": "Blumenstraße",
+      "street": "Blumenstraße",
+      "houseNumber": null,
+      "note": "Schadowarkaden"
+    },
+    "duesseldorf-978bf410c7": {
+      "label": "Bleichstraße",
+      "street": "Bleichstraße",
+      "houseNumber": null,
+      "note": "Schauspielhaus"
+    },
+    "duesseldorf-9ce9188321": {
+      "label": "Goltsteinstraße",
+      "street": "Goltsteinstraße",
+      "houseNumber": null,
+      "note": "Schauspielhaus / Hofgarten · Hofgarten"
+    },
+    "duesseldorf-2452b211fa": {
+      "label": "Cottbusser Straße",
+      "street": "Cottbusser Straße",
+      "houseNumber": null,
+      "note": "Seniorenheim"
+    },
+    "duesseldorf-5a6bb74757": {
+      "label": "Cottbusser Straße",
+      "street": "Cottbusser Straße",
+      "houseNumber": null,
+      "note": "Seniorenheim"
+    },
+    "duesseldorf-cea8fac409": {
+      "label": "Cottbusser Straße",
+      "street": "Cottbusser Straße",
+      "houseNumber": null,
+      "note": "Seniorenheim"
+    },
+    "duesseldorf-2be5c2f75c": {
+      "label": "Im Dahlacker",
+      "street": "Im Dahlacker",
+      "houseNumber": null,
+      "note": "Seniorenwohnheim"
+    },
+    "duesseldorf-db65b1dc89": {
+      "label": "Kirchfeldstraße",
+      "street": "Kirchfeldstraße",
+      "houseNumber": null,
+      "note": "Seniorenwohnheim"
+    },
+    "duesseldorf-bb5612f58d": {
+      "label": "Am Pesch",
+      "street": "Am Pesch",
+      "houseNumber": null,
+      "note": "Seniorenwohnheim / Einkaufsbereich · Einkaufsbereich"
+    },
+    "duesseldorf-2f4ae79764": {
+      "label": "Industriestraße",
+      "street": "Industriestraße",
+      "houseNumber": null,
+      "note": "Seniorenwohnpark"
+    },
+    "duesseldorf-8d6bb8aa31": {
+      "label": "Willi-Becker-Allee",
+      "street": "Willi-Becker-Allee",
+      "houseNumber": null,
+      "note": "Sozialamt / Jugendamt · Jugendamt"
+    },
+    "duesseldorf-2c5b6087f1": {
+      "label": "Willi-Becker-Allee",
+      "street": "Willi-Becker-Allee",
+      "houseNumber": null,
+      "note": "Sozialamt / Jugendamt · Jugendamt"
+    },
+    "duesseldorf-61f8345136": {
+      "label": "Fürstenwall",
+      "street": "Fürstenwall",
+      "houseNumber": null,
+      "note": "Sozialverband"
+    },
+    "duesseldorf-6be82dc743": {
+      "label": "Kölner Straße",
+      "street": "Kölner Straße",
+      "houseNumber": null,
+      "note": "Sozialverband Deutschland e.V."
+    },
+    "duesseldorf-e140b50835": {
+      "label": "Heidelberger Straße",
+      "street": "Heidelberger Straße",
+      "houseNumber": null,
+      "note": "Stadtbad Eller"
+    },
+    "duesseldorf-ef6790e37c": {
+      "label": "Paul-Thomas-Straße",
+      "street": "Paul-Thomas-Straße",
+      "houseNumber": null,
+      "note": "Stadtbad Niederheid"
+    },
+    "duesseldorf-868d85e55a": {
+      "label": "Kaiserswerther Markt",
+      "street": "Kaiserswerther Markt",
+      "houseNumber": null,
+      "note": "Stadtbücherei"
+    },
+    "duesseldorf-e97b25e79e": {
+      "label": "Frankfurter Straße",
+      "street": "Frankfurter Straße",
+      "houseNumber": null,
+      "note": "Stadtbücherei"
+    },
+    "duesseldorf-32630ed783": {
+      "label": "Moskauer Straße",
+      "street": "Moskauer Straße",
+      "houseNumber": null,
+      "note": "Städtische Einrichtung"
+    },
+    "duesseldorf-f1bf5fca2e": {
+      "label": "Friedrich-Ebert-Straße",
+      "street": "Friedrich-Ebert-Straße",
+      "houseNumber": null,
+      "note": "Stadtmitte"
+    },
+    "duesseldorf-c99513ce57": {
+      "label": "Berger Allee",
+      "street": "Berger Allee",
+      "houseNumber": null,
+      "note": "Stadtmuseum"
+    },
+    "duesseldorf-0de936cdf2": {
+      "label": "Nikolaus-Knopp-Platz",
+      "street": "Nikolaus-Knopp-Platz",
+      "houseNumber": null,
+      "note": "Stadtteilzentrum"
+    },
+    "duesseldorf-6f58debd6d": {
+      "label": "Höherweg",
+      "street": "Höherweg",
+      "houseNumber": null,
+      "note": "Stadtwerke"
+    },
+    "duesseldorf-eff0580b97": {
+      "label": "Inselstraße",
+      "street": "Inselstraße",
+      "houseNumber": null,
+      "note": "Standesamt"
+    },
+    "duesseldorf-34a2570357": {
+      "label": "Großer Torfbruch",
+      "street": "Großer Torfbruch",
+      "houseNumber": null,
+      "note": "Strandbad Nord"
+    },
+    "duesseldorf-116a9f5158": {
+      "label": "Am Kleinforst",
+      "street": "Am Kleinforst",
+      "houseNumber": null,
+      "note": "Strandbad Süd"
+    },
+    "duesseldorf-b04b613cb8": {
+      "label": "Fürstenwall",
+      "street": "Fürstenwall",
+      "houseNumber": null,
+      "note": "Studienhaus"
+    },
+    "duesseldorf-8206c4cb71": {
+      "label": "Ziegeleiweg",
+      "street": "Ziegeleiweg",
+      "houseNumber": null,
+      "note": "Südpark"
+    },
+    "duesseldorf-d3e624f3ff": {
+      "label": "Zur alten Kaserne",
+      "street": "Zur alten Kaserne",
+      "houseNumber": null,
+      "note": "Tagespflege"
+    },
+    "duesseldorf-d97040706b": {
+      "label": "Auf'm Hennekamp",
+      "street": "Auf'm Hennekamp",
+      "houseNumber": null,
+      "note": "Technisches Rathaus"
+    },
+    "duesseldorf-fa09c9f4b8": {
+      "label": "Brinckmannstraße",
+      "street": "Brinckmannstraße",
+      "houseNumber": null,
+      "note": "Technisches Rathaus"
+    },
+    "duesseldorf-f750090517": {
+      "label": "Stockumer Kirchstraße",
+      "street": "Stockumer Kirchstraße",
+      "houseNumber": null,
+      "note": "Therapiezentrum \"Die Eule\""
+    },
+    "duesseldorf-4ade541bd0": {
+      "label": "Lorettostraße",
+      "street": "Lorettostraße",
+      "houseNumber": null,
+      "note": "Therapiezentrum / Arztpraxis · Arztpraxis"
+    },
+    "duesseldorf-23cfd974e3": {
+      "label": "Helmut-Hentrich-Platz",
+      "street": "Helmut-Hentrich-Platz",
+      "houseNumber": null,
+      "note": "Tonhalle"
+    },
+    "duesseldorf-4f75939110": {
+      "label": "RheinCargo Steiger 1",
+      "street": "RheinCargo Steiger 1",
+      "houseNumber": null,
+      "note": "Tonhalle / Innenstadt · Innenstadt"
+    },
+    "duesseldorf-f653fc5091": {
+      "label": "Brinckmannstraße",
+      "street": "Brinckmannstraße",
+      "houseNumber": null,
+      "note": "Umweltamt"
+    },
+    "duesseldorf-dfce89332d": {
+      "label": "Universitätsstraße",
+      "street": "Universitätsstraße",
+      "houseNumber": null,
+      "note": "Universität"
+    },
+    "duesseldorf-6cf6d529c0": {
+      "label": "Fürstenwall",
+      "street": "Fürstenwall",
+      "houseNumber": null,
+      "note": "VDK Landes-Vorst."
+    },
+    "duesseldorf-65e9b70c74": {
+      "label": "Gartenstraße",
+      "street": "Gartenstraße",
+      "houseNumber": null,
+      "note": "Versicherung"
+    },
+    "duesseldorf-7254964e2d": {
+      "label": "Hugo-Viehoff-Straße",
+      "street": "Hugo-Viehoff-Straße",
+      "houseNumber": null,
+      "note": "Verwaltungsgebäude"
+    },
+    "duesseldorf-11102a9fd6": {
+      "label": "Mauerstraße",
+      "street": "Mauerstraße",
+      "houseNumber": null,
+      "note": "Verwaltungsgebäude"
+    },
+    "duesseldorf-b0440ed715": {
+      "label": "Venloer Straße",
+      "street": "Venloer Straße",
+      "houseNumber": null,
+      "note": "Verwaltungsgebäude"
+    },
+    "duesseldorf-5f9582d241": {
+      "label": "Erkrather Straße",
+      "street": "Erkrather Straße",
+      "houseNumber": null,
+      "note": "Verwaltungsgebäude"
+    },
+    "duesseldorf-8a30094f8b": {
+      "label": "Burgplatz",
+      "street": "Burgplatz",
+      "houseNumber": null,
+      "note": "Verwaltungsgebäude / Burgplatz · Burgplatz"
+    },
+    "duesseldorf-e93222dcbb": {
+      "label": "Cranachstraße",
+      "street": "Cranachstraße",
+      "houseNumber": null,
+      "note": "Verwaltungsnebenstelle"
+    },
+    "duesseldorf-1d8e84da7b": {
+      "label": "Quirinstraße",
+      "street": "Quirinstraße",
+      "houseNumber": null,
+      "note": "vor der Kirche"
+    },
+    "duesseldorf-c46cadee38": {
+      "label": "Bauenhäuser Weg",
+      "street": "Bauenhäuser Weg",
+      "houseNumber": null,
+      "note": "Waldparkplätze Aaper Wald"
+    },
+    "duesseldorf-8bf0706aeb": {
+      "label": "In den Großen Banden",
+      "street": "In den Großen Banden",
+      "houseNumber": null,
+      "note": "WfaA, Cafe"
+    },
+    "duesseldorf-5aff45c2df": {
+      "label": "Rennbahnstraße",
+      "street": "Rennbahnstraße",
+      "houseNumber": null,
+      "note": "Wildpark"
+    },
+    "duesseldorf-16859d6b79": {
+      "label": "Ricarda-Huch-Straße",
+      "street": "Ricarda-Huch-Straße",
+      "houseNumber": null,
+      "note": "Willi-Fährman-Schule"
+    },
+    "duesseldorf-c0f01e9841": {
+      "label": "Oberbilker Allee",
+      "street": "Oberbilker Allee",
+      "houseNumber": null,
+      "note": "Wohnanlage für Behinderte"
+    }
+  }
 }

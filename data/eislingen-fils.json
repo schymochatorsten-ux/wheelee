@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "eislingen-fils",
+    "name": "Eislingen/Fils",
+    "center": {
+      "lat": 48.696603950000004,
+      "lng": 9.70477665
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "eislingen-fils-bad80d5248",
+      "city": "eislingen-fils",
+      "label": "Filsstraße",
+      "street": "Filsstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eislingen/Fils",
+      "spotCount": 3,
+      "lat": 48.696603950000004,
+      "lng": 9.70361995,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/48215206), ODbL"
+    },
+    {
+      "id": "eislingen-fils-1910c06126",
+      "city": "eislingen-fils",
+      "label": "Filsstraße",
+      "street": "Filsstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Eislingen/Fils",
+      "spotCount": 2,
+      "lat": 48.69624025,
+      "lng": 9.70477665,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1252926340), ODbL"
+    }
+  ]
+}

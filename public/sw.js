@@ -21,7 +21,7 @@
  */
 
 /** Bei jeder Änderung hochzählen – sonst bleibt der alte Stand liegen. */
-const VERSION = "v2";
+const VERSION = "v3";
 
 /**
  * Vorab geladene Städte (ToDo 16.1). **Ohne Versionsnummer und von `activate`
@@ -185,7 +185,8 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  if (url.pathname.startsWith("/api/spots")) {
+  // Die Städteliste (19.9) gehört zu den Daten: im Funkloch die letzte Antwort.
+  if (url.pathname.startsWith("/api/spots") || url.pathname === "/api/cities") {
     event.respondWith(networkFirst(request, DATA_CACHE, answerFromCities));
     return;
   }

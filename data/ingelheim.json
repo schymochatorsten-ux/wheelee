@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ingelheim",
+    "name": "Ingelheim am Rhein",
+    "center": {
+      "lat": 49.993674500000004,
+      "lng": 8.02054025
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "ingelheim-e6a9bbad65",
+      "city": "ingelheim",
+      "label": "Behindertenparkplatz Ingelheim am Rhein",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ingelheim am Rhein",
+      "spotCount": 3,
+      "lat": 49.993674500000004,
+      "lng": 8.02054025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1377381143), ODbL"
+    }
+  ]
+}

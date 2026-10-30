@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "uelzen",
+    "name": "Uelzen",
+    "center": {
+      "lat": 52.96957985,
+      "lng": 10.545356250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "uelzen-9d3d514bc0",
+      "city": "uelzen",
+      "label": "Behindertenparkplatz Uelzen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Uelzen",
+      "spotCount": 2,
+      "lat": 52.92586,
+      "lng": 10.528467500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/46966689), ODbL"
+    },
+    {
+      "id": "uelzen-b532a73cfc",
+      "city": "uelzen",
+      "label": "Behindertenparkplatz Uelzen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Uelzen",
+      "spotCount": 1,
+      "lat": 52.96957985,
+      "lng": 10.555151850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/191289957), ODbL"
+    },
+    {
+      "id": "uelzen-1be2d2d6d7",
+      "city": "uelzen",
+      "label": "Behindertenparkplatz Uelzen",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Uelzen",
+      "spotCount": 1,
+      "lat": 52.9656758,
+      "lng": 10.5566998,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1499467121), ODbL"
+    },
+    {
+      "id": "uelzen-989dd2a83c",
+      "city": "uelzen",
+      "label": "MVZ",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Uelzen",
+      "spotCount": 1,
+      "lat": 52.9713537,
+      "lng": 10.5323995,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1721269109), ODbL"
+    },
+    {
+      "id": "uelzen-9285d0d9fa",
+      "city": "uelzen",
+      "label": "Parkplatz Hammer / Jawoll",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Uelzen",
+      "spotCount": 1,
+      "lat": 52.986828900000006,
+      "lng": 10.545356250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/182194243), ODbL"
+    }
+  ]
+}

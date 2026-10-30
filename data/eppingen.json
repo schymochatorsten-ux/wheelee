@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "eppingen",
+    "name": "Eppingen",
+    "center": {
+      "lat": 49.16850240000001,
+      "lng": 8.936440650000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "eppingen-cb57c71847",
+      "city": "eppingen",
+      "label": "Eisenbahnstraße",
+      "street": "Eisenbahnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Eppingen",
+      "spotCount": 4,
+      "lat": 49.13697375,
+      "lng": 8.91647925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/200703866), ODbL"
+    },
+    {
+      "id": "eppingen-58199e9152",
+      "city": "eppingen",
+      "label": "Eisenbahnstraße",
+      "street": "Eisenbahnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eppingen",
+      "spotCount": 2,
+      "lat": 49.13652565,
+      "lng": 8.9150901,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1416999557), ODbL"
+    },
+    {
+      "id": "eppingen-0fe5558d58",
+      "city": "eppingen",
+      "label": "Hans-Wiessner-Straße",
+      "street": "Hans-Wiessner-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Eppingen",
+      "spotCount": 1,
+      "lat": 49.16853535,
+      "lng": 8.936440650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/228368317), ODbL"
+    },
+    {
+      "id": "eppingen-952726a86b",
+      "city": "eppingen",
+      "label": "Hans-Wiessner-Straße",
+      "street": "Hans-Wiessner-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eppingen",
+      "spotCount": 1,
+      "lat": 49.16850240000001,
+      "lng": 8.9364702,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1410516582), ODbL"
+    }
+  ]
+}

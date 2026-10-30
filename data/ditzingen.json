@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "ditzingen",
+    "name": "Ditzingen",
+    "center": {
+      "lat": 48.837996950000004,
+      "lng": 9.039443850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "ditzingen-7880900336",
+      "city": "ditzingen",
+      "label": "Bahnhof Center",
+      "street": "Stuttgarter Straße",
+      "houseNumber": "43",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Ditzingen",
+      "spotCount": 2,
+      "lat": 48.82380860000001,
+      "lng": 9.063976850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/383245890), ODbL"
+    },
+    {
+      "id": "ditzingen-72a4aa5c6c",
+      "city": "ditzingen",
+      "label": "Dornierstraße",
+      "street": "Dornierstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ditzingen",
+      "spotCount": 1,
+      "lat": 48.82075305000001,
+      "lng": 9.0665756,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/189281718), ODbL"
+    },
+    {
+      "id": "ditzingen-f0027692bb",
+      "city": "ditzingen",
+      "label": "Hindenburgstraße 10",
+      "street": "Hindenburgstraße",
+      "houseNumber": "10",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ditzingen",
+      "spotCount": 1,
+      "lat": 48.853302600000006,
+      "lng": 8.9824996,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13527140565), ODbL"
+    },
+    {
+      "id": "ditzingen-15becc0b75",
+      "city": "ditzingen",
+      "label": "Münchinger Straße 3",
+      "street": "Münchinger Straße",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ditzingen",
+      "spotCount": 1,
+      "lat": 48.827310100000005,
+      "lng": 9.067821200000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12878155095), ODbL"
+    },
+    {
+      "id": "ditzingen-04239aef40",
+      "city": "ditzingen",
+      "label": "Schulstraße 7",
+      "street": "Schulstraße",
+      "houseNumber": "7",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ditzingen",
+      "spotCount": 1,
+      "lat": 48.837996950000004,
+      "lng": 9.039443850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1186836275), ODbL"
+    },
+    {
+      "id": "ditzingen-ef99012094",
+      "city": "ditzingen",
+      "label": "Schwabstraße",
+      "street": "Schwabstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ditzingen",
+      "spotCount": 1,
+      "lat": 48.8397377,
+      "lng": 9.03478565,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1186260111), ODbL"
+    },
+    {
+      "id": "ditzingen-1e6a584fc8",
+      "city": "ditzingen",
+      "label": "Schwabstraße 5",
+      "street": "Schwabstraße",
+      "houseNumber": "5",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ditzingen",
+      "spotCount": 1,
+      "lat": 48.83821895,
+      "lng": 9.0346069,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1185743237), ODbL"
+    }
+  ]
+}

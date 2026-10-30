@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "puchheim",
+    "name": "Puchheim",
+    "center": {
+      "lat": 48.172098150000004,
+      "lng": 11.35381985
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "puchheim-37c69ece5b",
+      "city": "puchheim",
+      "label": "Lochhauser Straße",
+      "street": "Lochhauser Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Puchheim",
+      "spotCount": 1,
+      "lat": 48.172114,
+      "lng": 11.3535751,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1453281059), ODbL"
+    },
+    {
+      "id": "puchheim-8a7d0b91d2",
+      "city": "puchheim",
+      "label": "Lochhauser Straße",
+      "street": "Lochhauser Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Puchheim",
+      "spotCount": 1,
+      "lat": 48.172098150000004,
+      "lng": 11.353626700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1453281060), ODbL"
+    },
+    {
+      "id": "puchheim-40d9fa5b52",
+      "city": "puchheim",
+      "label": "Park and Ride",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Puchheim",
+      "spotCount": 3,
+      "lat": 48.17198570000001,
+      "lng": 11.354468350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/41914327), ODbL"
+    },
+    {
+      "id": "puchheim-d9c089ef18",
+      "city": "puchheim",
+      "label": "Park and Ride",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Puchheim",
+      "spotCount": 3,
+      "lat": 48.171628,
+      "lng": 11.35381985,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/147913860), ODbL"
+    }
+  ]
+}

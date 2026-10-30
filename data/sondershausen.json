@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "sondershausen",
+    "name": "Sondershausen",
+    "center": {
+      "lat": 51.37012505,
+      "lng": 10.8775868
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "sondershausen-001f18ecf7",
+      "city": "sondershausen",
+      "label": "Behindertenparkplatz Sondershausen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sondershausen",
+      "spotCount": 4,
+      "lat": 51.37012505,
+      "lng": 10.8775868,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/204513560), ODbL"
+    },
+    {
+      "id": "sondershausen-df6cb11a9d",
+      "city": "sondershausen",
+      "label": "Behindertenparkplatz Sondershausen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sondershausen",
+      "spotCount": 5,
+      "lat": 51.38415805,
+      "lng": 10.8606251,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1138055365), ODbL"
+    },
+    {
+      "id": "sondershausen-3b14e6eb2e",
+      "city": "sondershausen",
+      "label": "Behindertenparkplatz Sondershausen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sondershausen",
+      "spotCount": 1,
+      "lat": 51.3599151,
+      "lng": 10.892392950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1210866104), ODbL"
+    },
+    {
+      "id": "sondershausen-dac3dd30cd",
+      "city": "sondershausen",
+      "label": "Behindertenparkplatz Sondershausen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sondershausen",
+      "spotCount": 1,
+      "lat": 51.368542950000005,
+      "lng": 10.8727601,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1256688635), ODbL"
+    }
+  ]
+}

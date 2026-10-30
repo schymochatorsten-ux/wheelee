@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "henstedt-ulzburg",
+    "name": "Henstedt-Ulzburg",
+    "center": {
+      "lat": 53.790820800000006,
+      "lng": 9.992046300000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "henstedt-ulzburg-29a69b6d64",
+      "city": "henstedt-ulzburg",
+      "label": "Behindertenparkplatz Henstedt-Ulzburg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Henstedt-Ulzburg",
+      "spotCount": 1,
+      "lat": 53.757977200000006,
+      "lng": 9.9950455,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/78336424), ODbL"
+    },
+    {
+      "id": "henstedt-ulzburg-3f8f6f7f4a",
+      "city": "henstedt-ulzburg",
+      "label": "Behindertenparkplatz Henstedt-Ulzburg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Th 08:00-24:00, Fr,Sa 08:00-01:00; PH,Su 09:00-24:00",
+      "district": "Henstedt-Ulzburg",
+      "spotCount": 1,
+      "lat": 53.80220320000001,
+      "lng": 9.98237345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/965542169), ODbL"
+    },
+    {
+      "id": "henstedt-ulzburg-5e4116261a",
+      "city": "henstedt-ulzburg",
+      "label": "Parkplatz Schulzentrum",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Henstedt-Ulzburg",
+      "spotCount": 2,
+      "lat": 53.790820800000006,
+      "lng": 9.992046300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/55508006), ODbL"
+    }
+  ]
+}

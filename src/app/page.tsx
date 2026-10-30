@@ -1,5 +1,5 @@
 import { MapSection } from "@/components/MapSection";
-import { getCities, getDefaultCity, nearestSpots } from "@/lib/parking/spots";
+import { getDefaultCity, nearestSpots } from "@/lib/parking/spots";
 import { currentUser } from "@/lib/auth/session";
 import { publicUser } from "@/lib/auth/user";
 
@@ -29,7 +29,6 @@ export default async function Home() {
   return (
     <MapSection
       initialNearby={nearestSpots(defaultCity.center, 100)}
-      cities={getCities()}
       defaultCity={defaultCity}
       user={user ? publicUser(user) : null}
     />

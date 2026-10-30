@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "barsinghausen",
+    "name": "Barsinghausen",
+    "center": {
+      "lat": 52.30411995,
+      "lng": 9.4880642
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "barsinghausen-439c416dac",
+      "city": "barsinghausen",
+      "label": "Behindertenparkplatz Barsinghausen",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Barsinghausen",
+      "spotCount": 1,
+      "lat": 52.304420500000006,
+      "lng": 9.488392900000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12505245539), ODbL"
+    },
+    {
+      "id": "barsinghausen-93363bc02c",
+      "city": "barsinghausen",
+      "label": "Behindertenparkplatz Barsinghausen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Barsinghausen",
+      "spotCount": 1,
+      "lat": 52.27833785,
+      "lng": 9.51510025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/425061844), ODbL"
+    },
+    {
+      "id": "barsinghausen-46139cc286",
+      "city": "barsinghausen",
+      "label": "Behindertenparkplatz Barsinghausen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Barsinghausen",
+      "spotCount": 1,
+      "lat": 52.304153250000006,
+      "lng": 9.4887117,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/508801644), ODbL"
+    },
+    {
+      "id": "barsinghausen-d401db59f8",
+      "city": "barsinghausen",
+      "label": "Behindertenparkplatz Barsinghausen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Barsinghausen",
+      "spotCount": 1,
+      "lat": 52.308779650000005,
+      "lng": 9.463530250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/857769389), ODbL"
+    },
+    {
+      "id": "barsinghausen-9e6c510c1f",
+      "city": "barsinghausen",
+      "label": "Behindertenparkplatz Barsinghausen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Barsinghausen",
+      "spotCount": 1,
+      "lat": 52.30411995,
+      "lng": 9.4869889,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1361013118), ODbL"
+    },
+    {
+      "id": "barsinghausen-29663c525f",
+      "city": "barsinghausen",
+      "label": "Behindertenparkplatz Barsinghausen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Barsinghausen",
+      "spotCount": 1,
+      "lat": 52.303718700000005,
+      "lng": 9.4880642,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1361013320), ODbL"
+    },
+    {
+      "id": "barsinghausen-9e50f69576",
+      "city": "barsinghausen",
+      "label": "Citycenter",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Barsinghausen",
+      "spotCount": 1,
+      "lat": 52.302250650000005,
+      "lng": 9.459672900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/282661048), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "buxtehude",
+    "name": "Buxtehude",
+    "center": {
+      "lat": 53.47469525,
+      "lng": 9.69298215
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "buxtehude-24ac7051d3",
+      "city": "buxtehude",
+      "label": "Behindertenparkplatz Buxtehude",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Buxtehude",
+      "spotCount": 4,
+      "lat": 53.47011985,
+      "lng": 9.688418050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/232452301), ODbL"
+    },
+    {
+      "id": "buxtehude-6d665b6a22",
+      "city": "buxtehude",
+      "label": "Behindertenparkplatz Buxtehude",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Buxtehude",
+      "spotCount": 2,
+      "lat": 53.47469525,
+      "lng": 9.693671600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/292023692), ODbL"
+    },
+    {
+      "id": "buxtehude-180d4d6774",
+      "city": "buxtehude",
+      "label": "Behindertenparkplatz Buxtehude",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Buxtehude",
+      "spotCount": 2,
+      "lat": 53.47952500000001,
+      "lng": 9.700138200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/302283056), ODbL"
+    },
+    {
+      "id": "buxtehude-4bde057ea6",
+      "city": "buxtehude",
+      "label": "Behindertenparkplatz Buxtehude",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Buxtehude",
+      "spotCount": 1,
+      "lat": 53.462128050000004,
+      "lng": 9.67477135,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1173380422), ODbL"
+    },
+    {
+      "id": "buxtehude-8c883dd397",
+      "city": "buxtehude",
+      "label": "Behindertenparkplatz Buxtehude",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Buxtehude",
+      "spotCount": 1,
+      "lat": 53.475169750000006,
+      "lng": 9.69298215,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1394192784), ODbL"
+    }
+  ]
+}

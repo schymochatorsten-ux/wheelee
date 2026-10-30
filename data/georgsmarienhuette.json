@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "georgsmarienhuette",
+    "name": "Georgsmarienhütte",
+    "center": {
+      "lat": 52.204369400000004,
+      "lng": 8.109648700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "georgsmarienhuette-65b27986b4",
+      "city": "georgsmarienhuette",
+      "label": "Behindertenparkplatz Georgsmarienhütte",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Georgsmarienhütte",
+      "spotCount": 1,
+      "lat": 52.204369400000004,
+      "lng": 8.109648700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/368222565), ODbL"
+    }
+  ]
+}

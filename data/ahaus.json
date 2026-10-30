@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "ahaus",
+    "name": "Ahaus",
+    "center": {
+      "lat": 52.076134700000004,
+      "lng": 7.00996005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "ahaus-102a5b9723",
+      "city": "ahaus",
+      "label": "Behindertenparkplatz Ahaus",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ahaus",
+      "spotCount": 4,
+      "lat": 52.076134700000004,
+      "lng": 7.002138050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/194640582), ODbL"
+    },
+    {
+      "id": "ahaus-91031ff240",
+      "city": "ahaus",
+      "label": "Behindertenparkplatz Ahaus",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ahaus",
+      "spotCount": 1,
+      "lat": 52.06820105,
+      "lng": 7.00996005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/232923570), ODbL"
+    }
+  ]
+}

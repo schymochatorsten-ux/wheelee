@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "zeitz",
+    "name": "Zeitz",
+    "center": {
+      "lat": 51.049725200000005,
+      "lng": 12.132439950000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "zeitz-fd29086c1b",
+      "city": "zeitz",
+      "label": "Behindertenparkplatz Zeitz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Zeitz",
+      "spotCount": 1,
+      "lat": 51.049725200000005,
+      "lng": 12.132439950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/88442920), ODbL"
+    },
+    {
+      "id": "zeitz-3e5a340343",
+      "city": "zeitz",
+      "label": "Behindertenparkplatz Zeitz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zeitz",
+      "spotCount": 1,
+      "lat": 51.04747145,
+      "lng": 12.124833800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/196904710), ODbL"
+    },
+    {
+      "id": "zeitz-4617162a79",
+      "city": "zeitz",
+      "label": "Behindertenparkplatz Zeitz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zeitz",
+      "spotCount": 1,
+      "lat": 51.0364587,
+      "lng": 12.15919865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/274930404), ODbL"
+    },
+    {
+      "id": "zeitz-63f4cec442",
+      "city": "zeitz",
+      "label": "Behindertenparkplatz Zeitz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zeitz",
+      "spotCount": 2,
+      "lat": 51.05097535,
+      "lng": 12.128060300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/321845645), ODbL"
+    },
+    {
+      "id": "zeitz-bafc443bf2",
+      "city": "zeitz",
+      "label": "Parkplatz am Rathaus",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Zeitz",
+      "spotCount": 1,
+      "lat": 51.04772560000001,
+      "lng": 12.1340474,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/90532129), ODbL"
+    },
+    {
+      "id": "zeitz-c3a3ff41cd",
+      "city": "zeitz",
+      "label": "Parkplatz Klinkerhallen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zeitz",
+      "spotCount": 1,
+      "lat": 51.052632900000006,
+      "lng": 12.1267046,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/196481838), ODbL"
+    },
+    {
+      "id": "zeitz-30942abdf8",
+      "city": "zeitz",
+      "label": "Parkplatz Neumarktstraße",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Zeitz",
+      "spotCount": 1,
+      "lat": 51.0509016,
+      "lng": 12.13696925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/89186822), ODbL"
+    }
+  ]
+}

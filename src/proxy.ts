@@ -19,8 +19,13 @@ import { judgeWritingRequest } from "@/lib/request-origin";
  *
  * Folge: Jede Seite, die die Nonce braucht, wird je Anfrage gerendert und nicht
  * vorab erzeugt. Das betrifft hier alle Seiten.
+ *
+ * **Bis zum 2026-10-30 hieß die Datei `src/middleware.ts`** (ToDo 1.8): Next 16
+ * nennt die Konvention `proxy` und meldet die alte als veraltet. Inhalt und
+ * Verhalten sind unverändert; die Funktion läuft jetzt in der Node-Laufzeit
+ * statt in der Edge-Laufzeit.
  */
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   /*
    * Schreibende Aufrufe der Schnittstelle (ToDo 10.13). Die Antwort nennt nur
    * den Grund in einem Wort – keine Hosts, keine Kopfzeilenwerte.

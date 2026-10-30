@@ -105,6 +105,8 @@ export const LIMITS = {
    */
   mailRequest: { max: 10, windowMs: 60 * 60_000 },
   mailPerAddress: { max: 3, windowMs: 60 * 60_000 },
+  /** Besuch melden (ToDo 20.1): ein Browser schickt einen je Seitenaufruf; wer mehr schickt, zählt nicht mehr mit. */
+  visit: { max: 60, windowMs: 60 * 60_000 },
   /** Link aus einer Mail einlösen: je Herkunft, das Token ist das Geheimnis. */
   mailRedeem: { max: 10, windowMs: 10 * 60_000 },
 

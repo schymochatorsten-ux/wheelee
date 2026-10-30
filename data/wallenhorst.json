@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "wallenhorst",
+    "name": "Wallenhorst",
+    "center": {
+      "lat": 52.34961295000001,
+      "lng": 8.0535276
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "wallenhorst-463f94cad3",
+      "city": "wallenhorst",
+      "label": "Behindertenparkplatz Wallenhorst",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wallenhorst",
+      "spotCount": 3,
+      "lat": 52.334686700000006,
+      "lng": 8.054810100000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1324818875), ODbL"
+    },
+    {
+      "id": "wallenhorst-de0ab72ed2",
+      "city": "wallenhorst",
+      "label": "Behindertenparkplatz Wallenhorst",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wallenhorst",
+      "spotCount": 2,
+      "lat": 52.3360215,
+      "lng": 8.0535276,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5041562234), ODbL"
+    },
+    {
+      "id": "wallenhorst-73ff0b33f1",
+      "city": "wallenhorst",
+      "label": "Behindertenparkplatz Wallenhorst",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wallenhorst",
+      "spotCount": 2,
+      "lat": 52.352037,
+      "lng": 8.017220600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/180399739), ODbL"
+    },
+    {
+      "id": "wallenhorst-d0ef8c5e4f",
+      "city": "wallenhorst",
+      "label": "Behindertenparkplatz Wallenhorst",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wallenhorst",
+      "spotCount": 1,
+      "lat": 52.34961295000001,
+      "lng": 8.01545935,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1243422322), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "ganderkesee",
+    "name": "Ganderkesee",
+    "center": {
+      "lat": 53.03487315,
+      "lng": 8.559017500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "ganderkesee-a740de419a",
+      "city": "ganderkesee",
+      "label": "Behindertenparkplatz Ganderkesee",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ganderkesee",
+      "spotCount": 2,
+      "lat": 53.02850350000001,
+      "lng": 8.559017500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/7006042524), ODbL"
+    },
+    {
+      "id": "ganderkesee-81956986d2",
+      "city": "ganderkesee",
+      "label": "Behindertenparkplatz Ganderkesee",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ganderkesee",
+      "spotCount": 2,
+      "lat": 53.04687005,
+      "lng": 8.54973635,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/459217256), ODbL"
+    },
+    {
+      "id": "ganderkesee-0c41367e02",
+      "city": "ganderkesee",
+      "label": "Behindertenparkplatz Ganderkesee",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ganderkesee",
+      "spotCount": 1,
+      "lat": 53.08454125,
+      "lng": 8.578261350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/660590452), ODbL"
+    },
+    {
+      "id": "ganderkesee-07633bf591",
+      "city": "ganderkesee",
+      "label": "Behindertenparkplatz Ganderkesee",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ganderkesee",
+      "spotCount": 1,
+      "lat": 53.08448055000001,
+      "lng": 8.578144,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/660590453), ODbL"
+    },
+    {
+      "id": "ganderkesee-b10f7e3881",
+      "city": "ganderkesee",
+      "label": "Behindertenparkplatz Ganderkesee",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ganderkesee",
+      "spotCount": 1,
+      "lat": 53.02956245,
+      "lng": 8.559263600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/741757627), ODbL"
+    },
+    {
+      "id": "ganderkesee-6ec06c99a1",
+      "city": "ganderkesee",
+      "label": "Behindertenparkplatz Ganderkesee",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ganderkesee",
+      "spotCount": 3,
+      "lat": 53.031903650000004,
+      "lng": 8.54525905,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1133096365), ODbL"
+    },
+    {
+      "id": "ganderkesee-2ca2244703",
+      "city": "ganderkesee",
+      "label": "Rossmann",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ganderkesee",
+      "spotCount": 2,
+      "lat": 53.03487315,
+      "lng": 8.54715405,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1451369912), ODbL"
+    }
+  ]
+}

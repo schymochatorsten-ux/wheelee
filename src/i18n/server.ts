@@ -25,7 +25,7 @@ import { LANGUAGE_COOKIE } from "./preference";
  * in der richtigen Sprache zeichnet.
  *
  * Nur für Serverseiten und -layouts. Die Abfrage von Cookie und Kopfzeile
- * macht die Seite dynamisch – das ist sie wegen der Nonce (`middleware.ts`)
+ * macht die Seite dynamisch – das ist sie wegen der Nonce (`proxy.ts`)
  * ohnehin.
  */
 export async function getLocale(): Promise<Locale> {

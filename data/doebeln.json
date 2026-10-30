@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "doebeln",
+    "name": "Döbeln",
+    "center": {
+      "lat": 51.15216635,
+      "lng": 13.123110350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "doebeln-a4dffb599d",
+      "city": "doebeln",
+      "label": "Behindertenparkplatz Döbeln",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Döbeln",
+      "spotCount": 1,
+      "lat": 51.15213180000001,
+      "lng": 13.123110350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1540190676), ODbL"
+    },
+    {
+      "id": "doebeln-7584d11e9d",
+      "city": "doebeln",
+      "label": "Behindertenparkplatz Döbeln",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Döbeln",
+      "spotCount": 1,
+      "lat": 51.15216635,
+      "lng": 13.123109550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1540190689), ODbL"
+    }
+  ]
+}

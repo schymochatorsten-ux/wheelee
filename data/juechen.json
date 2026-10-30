@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "juechen",
+    "name": "Jüchen",
+    "center": {
+      "lat": 51.1033358,
+      "lng": 6.53130015
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "juechen-8cfce1802b",
+      "city": "juechen",
+      "label": "Behindertenparkplatz Jüchen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jüchen",
+      "spotCount": 1,
+      "lat": 51.14278085000001,
+      "lng": 6.56247745,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29250647), ODbL"
+    },
+    {
+      "id": "juechen-07699fd9b2",
+      "city": "juechen",
+      "label": "Behindertenparkplatz Jüchen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jüchen",
+      "spotCount": 2,
+      "lat": 51.1029052,
+      "lng": 6.53130015,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/521285770), ODbL"
+    },
+    {
+      "id": "juechen-87ce644098",
+      "city": "juechen",
+      "label": "Behindertenparkplatz Jüchen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jüchen",
+      "spotCount": 1,
+      "lat": 51.1015092,
+      "lng": 6.5027172,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1004929030), ODbL"
+    },
+    {
+      "id": "juechen-4b04f578c6",
+      "city": "juechen",
+      "label": "Besucherparkplatz Schloss Dyck",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jüchen",
+      "spotCount": 1,
+      "lat": 51.14393750000001,
+      "lng": 6.565232450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32203906), ODbL"
+    },
+    {
+      "id": "juechen-56ab1c7791",
+      "city": "juechen",
+      "label": "P&R, Hochneukirch",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jüchen",
+      "spotCount": 2,
+      "lat": 51.1033358,
+      "lng": 6.4655347,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/346629229), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "harsewinkel",
+    "name": "Harsewinkel",
+    "center": {
+      "lat": 51.95974525,
+      "lng": 8.28349195
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "harsewinkel-ef303f18de",
+      "city": "harsewinkel",
+      "label": "Behindertenparkplatz Harsewinkel",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Harsewinkel",
+      "spotCount": 1,
+      "lat": 51.95974525,
+      "lng": 8.22272075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/44203460), ODbL"
+    },
+    {
+      "id": "harsewinkel-5e2e490211",
+      "city": "harsewinkel",
+      "label": "Behindertenparkplatz Harsewinkel",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Harsewinkel",
+      "spotCount": 4,
+      "lat": 51.94611125,
+      "lng": 8.28349195,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1368156752), ODbL"
+    }
+  ]
+}

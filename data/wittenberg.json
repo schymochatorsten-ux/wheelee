@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "wittenberg",
+    "name": "Wittenberg",
+    "center": {
+      "lat": 51.867311650000005,
+      "lng": 12.652677800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "wittenberg-93927060bb",
+      "city": "wittenberg",
+      "label": "Behindertenparkplatz Wittenberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wittenberg",
+      "spotCount": 5,
+      "lat": 51.86436125,
+      "lng": 12.63913895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/182329049), ODbL"
+    },
+    {
+      "id": "wittenberg-6be6f1fd8e",
+      "city": "wittenberg",
+      "label": "Behindertenparkplatz Wittenberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wittenberg",
+      "spotCount": 2,
+      "lat": 51.86758995,
+      "lng": 12.660661650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/223126599), ODbL"
+    },
+    {
+      "id": "wittenberg-33d640edd1",
+      "city": "wittenberg",
+      "label": "Behindertenparkplatz Wittenberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wittenberg",
+      "spotCount": 1,
+      "lat": 51.874420549999996,
+      "lng": 12.652677800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/223183994), ODbL"
+    },
+    {
+      "id": "wittenberg-6f45bdd4ea",
+      "city": "wittenberg",
+      "label": "Behindertenparkplatz Wittenberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wittenberg",
+      "spotCount": 1,
+      "lat": 51.87495135,
+      "lng": 12.6526018,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/223184051), ODbL"
+    },
+    {
+      "id": "wittenberg-dddb16d5aa",
+      "city": "wittenberg",
+      "label": "Behindertenparkplatz Wittenberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wittenberg",
+      "spotCount": 1,
+      "lat": 51.86494845,
+      "lng": 12.63649985,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/823928519), ODbL"
+    },
+    {
+      "id": "wittenberg-46931c6427",
+      "city": "wittenberg",
+      "label": "Behindertenparkplatz Wittenberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wittenberg",
+      "spotCount": 2,
+      "lat": 51.8655589,
+      "lng": 12.653740250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1314200345), ODbL"
+    },
+    {
+      "id": "wittenberg-ef31ebe4c5",
+      "city": "wittenberg",
+      "label": "Behindertenparkplatz Wittenberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wittenberg",
+      "spotCount": 2,
+      "lat": 51.867311650000005,
+      "lng": 12.66174205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1381621404), ODbL"
+    }
+  ]
+}

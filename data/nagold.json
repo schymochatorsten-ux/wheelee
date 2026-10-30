@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "nagold",
+    "name": "Nagold",
+    "center": {
+      "lat": 48.549746600000006,
+      "lng": 8.7273915
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "nagold-d3c9ee72d7",
+      "city": "nagold",
+      "label": "Bahnhof",
+      "street": "Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Nagold",
+      "spotCount": 1,
+      "lat": 48.55634105,
+      "lng": 8.7273915,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1290275211), ODbL"
+    },
+    {
+      "id": "nagold-cdfe4814d9",
+      "city": "nagold",
+      "label": "Innenstadt Ost",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Nagold",
+      "spotCount": 1,
+      "lat": 48.549746600000006,
+      "lng": 8.727062400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/40458345), ODbL"
+    },
+    {
+      "id": "nagold-49e39787f4",
+      "city": "nagold",
+      "label": "Parkhaus Waldach-Passage",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Nagold",
+      "spotCount": 1,
+      "lat": 48.5489405,
+      "lng": 8.722722700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/345329974), ODbL"
+    },
+    {
+      "id": "nagold-eab117b2bf",
+      "city": "nagold",
+      "label": "Parkplatz Sportgelände",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nagold",
+      "spotCount": 2,
+      "lat": 48.514393150000004,
+      "lng": 8.753694450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/223544299), ODbL"
+    }
+  ]
+}

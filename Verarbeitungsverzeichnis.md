@@ -23,6 +23,7 @@ anderen ab, stimmt eines nicht.
 | 6 | Betriebsprotokoll und Drosselung | Fehler finden, Missbrauch bremsen | Besucher:innen | JSON-Zeile je Vorfall **ohne IP, Standort, Parameterwerte, Adressen, Texte**; IP nur im Arbeitsspeicher für die Drosselung | Art. 6 (1) f | Container-Protokoll, rotiert bei 10 MB über 3 Dateien; Arbeitsspeicher nur im Fenster der Drosselung | – |
 | 7 | Verwaltung und Einladungen | Konten verwalten | Admin-Konten, eingeladene Personen | E-Mail-Adresse, Rolle, Token als Hash | Art. 6 (1) f | Einladung 7 Tage gültig, 30 Tage sichtbar, dann gelöscht | – |
 | 8 | Mail-Links (nur bei eingeschaltetem Versand) | „Passwort vergessen“, „E-Mail ändern“ | Kontoinhaber:innen | E-Mail-Adresse (bei Wechsel auch die neue), Token als Hash | Art. 6 (1) b | Token 1 Stunde, danach gelöscht | Mailanbieter (Art. 28, **Vertrag und Anbieter vom Betreiber einzutragen**) |
+| 10 | Besucherzählung (ToDo 20.1) | Nutzung einschätzen | Besucher:innen | IP-Adresse und Browserkennung nur als **Tages-Hash im Arbeitsspeicher** (Salz je Tag, nie gespeichert); in der Datenbank nur Summen je Tag (`visit_day`) | Art. 6 (1) f | Hashes bis Tagesende bzw. Neustart; Summen unbegrenzt (keine Personenbeziehbarkeit) | Administrator:innen sehen die Summen |
 | 9 | Sicherung | Datenverlust vermeiden | Kontoinhaber:innen, Einsender:innen | Kopie der Datenbank (`VACUUM INTO`) | Art. 6 (1) f | bis zur Rotation der Sicherungen auf dem NAS | – |
 
 ## Besondere Kategorien (Art. 9)

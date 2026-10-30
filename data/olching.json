@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "olching",
+    "name": "Olching",
+    "center": {
+      "lat": 48.21040765,
+      "lng": 11.33538115
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "olching-db9d1f6bad",
+      "city": "olching",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Olching",
+      "spotCount": 1,
+      "lat": 48.2096012,
+      "lng": 11.33538115,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35001456), ODbL"
+    },
+    {
+      "id": "olching-50bfaaf4de",
+      "city": "olching",
+      "label": "Feursstraße",
+      "street": "Feursstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Olching",
+      "spotCount": 2,
+      "lat": 48.21619685,
+      "lng": 11.346869700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/403491860), ODbL"
+    },
+    {
+      "id": "olching-97be29a9d0",
+      "city": "olching",
+      "label": "Fichtenweg",
+      "street": "Fichtenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Olching",
+      "spotCount": 1,
+      "lat": 48.20760815,
+      "lng": 11.3615177,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24748997), ODbL"
+    },
+    {
+      "id": "olching-25e3bdd586",
+      "city": "olching",
+      "label": "Geiselbullacher Straße 3",
+      "street": "Geiselbullacher Straße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Olching",
+      "spotCount": 1,
+      "lat": 48.224940450000005,
+      "lng": 11.3333779,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/290064970), ODbL"
+    },
+    {
+      "id": "olching-44211fdaeb",
+      "city": "olching",
+      "label": "Nöscherplatz 6",
+      "street": "Nöscherplatz",
+      "houseNumber": "6",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Olching",
+      "spotCount": 1,
+      "lat": 48.207660350000005,
+      "lng": 11.32749935,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1481996798), ODbL"
+    },
+    {
+      "id": "olching-c159d8cb7e",
+      "city": "olching",
+      "label": "P+R Olching",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Olching",
+      "spotCount": 4,
+      "lat": 48.21040765,
+      "lng": 11.33676585,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34352545), ODbL"
+    },
+    {
+      "id": "olching-522a6cdef8",
+      "city": "olching",
+      "label": "Ringstraße",
+      "street": "Ringstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Olching",
+      "spotCount": 2,
+      "lat": 48.21270440000001,
+      "lng": 11.31827995,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/8116146), ODbL"
+    }
+  ]
+}

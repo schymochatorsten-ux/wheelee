@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "spremberg",
+    "name": "Spremberg",
+    "center": {
+      "lat": 51.6379566,
+      "lng": 14.506177000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "spremberg-34fb64e3a0",
+      "city": "spremberg",
+      "label": "Am Markt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Spremberg",
+      "spotCount": 1,
+      "lat": 51.57148775,
+      "lng": 14.379479400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/122261294), ODbL"
+    },
+    {
+      "id": "spremberg-e013a652b2",
+      "city": "spremberg",
+      "label": "Behindertenparkplatz Spremberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Spremberg",
+      "spotCount": 1,
+      "lat": 51.6379566,
+      "lng": 14.506177000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11145750477), ODbL"
+    }
+  ]
+}

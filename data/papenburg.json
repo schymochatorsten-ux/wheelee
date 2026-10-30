@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "papenburg",
+    "name": "Papenburg",
+    "center": {
+      "lat": 53.07773315,
+      "lng": 7.3968639000000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "papenburg-1b11bc9e6d",
+      "city": "papenburg",
+      "label": "Aldi Nord",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Papenburg",
+      "spotCount": 2,
+      "lat": 53.04872875,
+      "lng": 7.3263541000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/760059919), ODbL"
+    },
+    {
+      "id": "papenburg-995b1b8374",
+      "city": "papenburg",
+      "label": "Behindertenparkplatz Papenburg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Papenburg",
+      "spotCount": 1,
+      "lat": 53.083849050000005,
+      "lng": 7.3837946500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/144194071), ODbL"
+    },
+    {
+      "id": "papenburg-8e41f704b5",
+      "city": "papenburg",
+      "label": "Behindertenparkplatz Papenburg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Papenburg",
+      "spotCount": 1,
+      "lat": 53.0857516,
+      "lng": 7.388429050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/562757540), ODbL"
+    },
+    {
+      "id": "papenburg-3ade001269",
+      "city": "papenburg",
+      "label": "Behindertenparkplatz Papenburg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Papenburg",
+      "spotCount": 2,
+      "lat": 53.0731904,
+      "lng": 7.442432800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1498427319), ODbL"
+    },
+    {
+      "id": "papenburg-44f6dbcf38",
+      "city": "papenburg",
+      "label": "Behindertenparkplatz Papenburg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Papenburg",
+      "spotCount": 2,
+      "lat": 53.07773315,
+      "lng": 7.397561700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1499133299), ODbL"
+    },
+    {
+      "id": "papenburg-484ab38a00",
+      "city": "papenburg",
+      "label": "Behindertenparkplatz Papenburg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Papenburg",
+      "spotCount": 2,
+      "lat": 53.0777676,
+      "lng": 7.3968639000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1499133301), ODbL"
+    },
+    {
+      "id": "papenburg-ffa934d17e",
+      "city": "papenburg",
+      "label": "Behindertenparkplatz Papenburg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Papenburg",
+      "spotCount": 3,
+      "lat": 53.07764735000001,
+      "lng": 7.3973152,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1499133302), ODbL"
+    }
+  ]
+}

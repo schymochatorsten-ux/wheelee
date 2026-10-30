@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "waldkraiburg",
+    "name": "Waldkraiburg",
+    "center": {
+      "lat": 48.203809150000005,
+      "lng": 12.4076928
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "waldkraiburg-ff6bb78fc1",
+      "city": "waldkraiburg",
+      "label": "Graslitzer Straße",
+      "street": "Graslitzer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldkraiburg",
+      "spotCount": 1,
+      "lat": 48.203809150000005,
+      "lng": 12.3956411,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/137261915), ODbL"
+    },
+    {
+      "id": "waldkraiburg-8fac8bbb5d",
+      "city": "waldkraiburg",
+      "label": "P+R Waldkraiburg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Waldkraiburg",
+      "spotCount": 3,
+      "lat": 48.202429550000005,
+      "lng": 12.4076928,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/476289191), ODbL"
+    }
+  ]
+}

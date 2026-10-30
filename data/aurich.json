@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "aurich",
+    "name": "Aurich",
+    "center": {
+      "lat": 53.4967999,
+      "lng": 7.49491315
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "aurich-92734cc238",
+      "city": "aurich",
+      "label": "Friedhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Aurich",
+      "spotCount": 2,
+      "lat": 53.4710199,
+      "lng": 7.479305200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1559199574), ODbL"
+    },
+    {
+      "id": "aurich-aba8426b1f",
+      "city": "aurich",
+      "label": "G25 P1",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aurich",
+      "spotCount": 2,
+      "lat": 53.50401335000001,
+      "lng": 7.4967267,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/290554098), ODbL"
+    },
+    {
+      "id": "aurich-131412ea28",
+      "city": "aurich",
+      "label": "G50 P3",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aurich",
+      "spotCount": 3,
+      "lat": 53.4967999,
+      "lng": 7.49491315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/263998543), ODbL"
+    }
+  ]
+}

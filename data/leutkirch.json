@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "leutkirch",
+    "name": "Leutkirch im Allgäu",
+    "center": {
+      "lat": 47.82132680000001,
+      "lng": 10.024233200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "leutkirch-b985fef56e",
+      "city": "leutkirch",
+      "label": "Blaichstraße",
+      "street": "Blaichstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Leutkirch im Allgäu",
+      "spotCount": 1,
+      "lat": 47.82132680000001,
+      "lng": 10.0253634,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/39340224), ODbL"
+    },
+    {
+      "id": "leutkirch-b56e8ccbd9",
+      "city": "leutkirch",
+      "label": "Center Parcs",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Leutkirch im Allgäu",
+      "spotCount": 10,
+      "lat": 47.7855522,
+      "lng": 10.058391100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/650609847), ODbL"
+    },
+    {
+      "id": "leutkirch-ac47b8d3f2",
+      "city": "leutkirch",
+      "label": "Marktstraße 20",
+      "street": "Marktstraße",
+      "houseNumber": "20",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Leutkirch im Allgäu",
+      "spotCount": 1,
+      "lat": 47.826294700000005,
+      "lng": 10.024233200000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/7279435703), ODbL"
+    },
+    {
+      "id": "leutkirch-271d511c25",
+      "city": "leutkirch",
+      "label": "Oberer Graben",
+      "street": "Oberer Graben",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Leutkirch im Allgäu",
+      "spotCount": 1,
+      "lat": 47.82786660000001,
+      "lng": 10.02407075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/277000476), ODbL"
+    },
+    {
+      "id": "leutkirch-f5965309c6",
+      "city": "leutkirch",
+      "label": "Winterberg",
+      "street": "Winterberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Leutkirch im Allgäu",
+      "spotCount": 1,
+      "lat": 47.800946100000004,
+      "lng": 9.981766100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/323598654), ODbL"
+    }
+  ]
+}

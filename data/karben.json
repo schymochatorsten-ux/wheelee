@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "karben",
+    "name": "Karben",
+    "center": {
+      "lat": 50.2346448,
+      "lng": 8.7843481
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "karben-fa8b72d103",
+      "city": "karben",
+      "label": "Behindertenparkplatz Karben",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Karben",
+      "spotCount": 2,
+      "lat": 50.224102200000004,
+      "lng": 8.7843481,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/9703299), ODbL"
+    },
+    {
+      "id": "karben-cbeb0fc6fe",
+      "city": "karben",
+      "label": "Behindertenparkplatz Karben",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Karben",
+      "spotCount": 1,
+      "lat": 50.2346448,
+      "lng": 8.75537855,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1177701515), ODbL"
+    },
+    {
+      "id": "karben-7e03999274",
+      "city": "karben",
+      "label": "Behindertenparkplatz Karben",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Karben",
+      "spotCount": 1,
+      "lat": 50.256940650000004,
+      "lng": 8.7907145,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1211185873), ODbL"
+    }
+  ]
+}

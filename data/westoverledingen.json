@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "westoverledingen",
+    "name": "Westoverledingen",
+    "center": {
+      "lat": 53.17405775,
+      "lng": 7.4197001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "westoverledingen-87d5a509d8",
+      "city": "westoverledingen",
+      "label": "Freizeitpark am Emsdeich",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Westoverledingen",
+      "spotCount": 2,
+      "lat": 53.17405775,
+      "lng": 7.4197001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/166823038), ODbL"
+    }
+  ]
+}

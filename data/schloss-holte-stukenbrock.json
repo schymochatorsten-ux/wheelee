@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "schloss-holte-stukenbrock",
+    "name": "Schloß Holte-Stukenbrock",
+    "center": {
+      "lat": 51.903954500000005,
+      "lng": 8.636614600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "schloss-holte-stukenbrock-e650b0a305",
+      "city": "schloss-holte-stukenbrock",
+      "label": "Behindertenparkplatz Schloß Holte-Stukenbrock",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schloß Holte-Stukenbrock",
+      "spotCount": 2,
+      "lat": 51.9228858,
+      "lng": 8.618098150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32476233), ODbL"
+    },
+    {
+      "id": "schloss-holte-stukenbrock-2fed04606e",
+      "city": "schloss-holte-stukenbrock",
+      "label": "Behindertenparkplatz Schloß Holte-Stukenbrock",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schloß Holte-Stukenbrock",
+      "spotCount": 1,
+      "lat": 51.901820400000005,
+      "lng": 8.61958665,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/331366230), ODbL"
+    },
+    {
+      "id": "schloss-holte-stukenbrock-24f5973f5e",
+      "city": "schloss-holte-stukenbrock",
+      "label": "Behindertenparkplatz Schloß Holte-Stukenbrock",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schloß Holte-Stukenbrock",
+      "spotCount": 3,
+      "lat": 51.903934400000004,
+      "lng": 8.636614600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1435724426), ODbL"
+    },
+    {
+      "id": "schloss-holte-stukenbrock-f4d3d311c2",
+      "city": "schloss-holte-stukenbrock",
+      "label": "Behindertenparkplatz Schloß Holte-Stukenbrock",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schloß Holte-Stukenbrock",
+      "spotCount": 1,
+      "lat": 51.903954500000005,
+      "lng": 8.6367896,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1435724428), ODbL"
+    },
+    {
+      "id": "schloss-holte-stukenbrock-f696503c1e",
+      "city": "schloss-holte-stukenbrock",
+      "label": "Behindertenparkplatz Schloß Holte-Stukenbrock",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schloß Holte-Stukenbrock",
+      "spotCount": 2,
+      "lat": 51.904356500000006,
+      "lng": 8.6374703,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1435724444), ODbL"
+    }
+  ]
+}

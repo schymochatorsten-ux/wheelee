@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "sehnde",
+    "name": "Sehnde",
+    "center": {
+      "lat": 52.347089100000005,
+      "lng": 9.96728495
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "sehnde-658a95f31b",
+      "city": "sehnde",
+      "label": "Behindertenparkplatz Sehnde",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sehnde",
+      "spotCount": 4,
+      "lat": 52.347089100000005,
+      "lng": 9.958353800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1417608738), ODbL"
+    },
+    {
+      "id": "sehnde-a11cd03450",
+      "city": "sehnde",
+      "label": "Behindertenparkplatz Sehnde",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sehnde",
+      "spotCount": 2,
+      "lat": 52.32445235,
+      "lng": 9.96728495,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1466119823), ODbL"
+    }
+  ]
+}

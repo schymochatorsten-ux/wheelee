@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "stassfurt",
+    "name": "Staßfurt",
+    "center": {
+      "lat": 51.86425915,
+      "lng": 11.58767135
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "stassfurt-0c48022538",
+      "city": "stassfurt",
+      "label": "Behindertenparkplatz Staßfurt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Staßfurt",
+      "spotCount": 1,
+      "lat": 51.85149385,
+      "lng": 11.55970215,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/33885037), ODbL"
+    },
+    {
+      "id": "stassfurt-bba988e3ba",
+      "city": "stassfurt",
+      "label": "Behindertenparkplatz Staßfurt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Staßfurt",
+      "spotCount": 3,
+      "lat": 51.86425915,
+      "lng": 11.565459700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/58523980), ODbL"
+    },
+    {
+      "id": "stassfurt-89885a6483",
+      "city": "stassfurt",
+      "label": "Behindertenparkplatz Staßfurt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Staßfurt",
+      "spotCount": 2,
+      "lat": 51.864163950000005,
+      "lng": 11.563255950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/202126255), ODbL"
+    },
+    {
+      "id": "stassfurt-0ea46400df",
+      "city": "stassfurt",
+      "label": "Behindertenparkplatz Staßfurt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Staßfurt",
+      "spotCount": 1,
+      "lat": 51.89707275000001,
+      "lng": 11.692400350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/449711037), ODbL"
+    },
+    {
+      "id": "stassfurt-0caa3af12e",
+      "city": "stassfurt",
+      "label": "Behindertenparkplatz Staßfurt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Staßfurt",
+      "spotCount": 1,
+      "lat": 51.900957700000006,
+      "lng": 11.63167935,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1298096825), ODbL"
+    },
+    {
+      "id": "stassfurt-0b7be68c6b",
+      "city": "stassfurt",
+      "label": "Behindertenparkplatz Staßfurt",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Staßfurt",
+      "spotCount": 1,
+      "lat": 51.85700105000001,
+      "lng": 11.58767135,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1566806623), ODbL"
+    }
+  ]
+}

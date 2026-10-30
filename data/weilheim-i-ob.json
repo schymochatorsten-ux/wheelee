@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "weilheim-i-ob",
+    "name": "Weilheim i.OB",
+    "center": {
+      "lat": 47.846785100000005,
+      "lng": 11.148679300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "weilheim-i-ob-d8f2736ff6",
+      "city": "weilheim-i-ob",
+      "label": "Am Betberg",
+      "street": "Am Betberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Weilheim i.OB",
+      "spotCount": 2,
+      "lat": 47.840635000000006,
+      "lng": 11.148679300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3479696422), ODbL"
+    },
+    {
+      "id": "weilheim-i-ob-1723cd2b4d",
+      "city": "weilheim-i-ob",
+      "label": "Am Öferl",
+      "street": "Am Öferl",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Weilheim i.OB",
+      "spotCount": 3,
+      "lat": 47.846785100000005,
+      "lng": 11.1431753,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24739688), ODbL"
+    }
+  ]
+}

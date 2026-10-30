@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "sundern",
+    "name": "Sundern (Sauerland)",
+    "center": {
+      "lat": 51.3636539,
+      "lng": 7.9803829
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "sundern-9b2b5ce859",
+      "city": "sundern",
+      "label": "Behindertenparkplatz Sundern (Sauerland)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sundern (Sauerland)",
+      "spotCount": 1,
+      "lat": 51.3636539,
+      "lng": 7.9803829,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/298840147), ODbL"
+    },
+    {
+      "id": "sundern-93b4077f3b",
+      "city": "sundern",
+      "label": "Behindertenparkplatz Sundern (Sauerland)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sundern (Sauerland)",
+      "spotCount": 3,
+      "lat": 51.30930135,
+      "lng": 7.944207100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/355772309), ODbL"
+    }
+  ]
+}

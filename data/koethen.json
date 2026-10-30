@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "koethen",
+    "name": "Köthen (Anhalt)",
+    "center": {
+      "lat": 51.752024750000004,
+      "lng": 11.97712315
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "koethen-d8e6af38e5",
+      "city": "koethen",
+      "label": "Behindertenparkplatz Köthen (Anhalt)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Köthen (Anhalt)",
+      "spotCount": 1,
+      "lat": 51.752024750000004,
+      "lng": 11.97712315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/956941813), ODbL"
+    },
+    {
+      "id": "koethen-a8e4f73f44",
+      "city": "koethen",
+      "label": "Marktplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Köthen (Anhalt)",
+      "spotCount": 2,
+      "lat": 51.75101875,
+      "lng": 11.97350085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/144959976), ODbL"
+    }
+  ]
+}

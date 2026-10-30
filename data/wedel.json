@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "wedel",
+    "name": "Wedel",
+    "center": {
+      "lat": 53.57935425,
+      "lng": 9.7039103
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "wedel-9277899686",
+      "city": "wedel",
+      "label": "Behindertenparkplatz Wedel",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Wedel",
+      "spotCount": 2,
+      "lat": 53.577738200000006,
+      "lng": 9.7062664,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/975856626), ODbL"
+    },
+    {
+      "id": "wedel-3c4cfb6c8d",
+      "city": "wedel",
+      "label": "Behindertenparkplatz Wedel",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wedel",
+      "spotCount": 1,
+      "lat": 53.57935425,
+      "lng": 9.7039103,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1286965406), ODbL"
+    },
+    {
+      "id": "wedel-2c760c8de7",
+      "city": "wedel",
+      "label": "Steinberghalle",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wedel",
+      "spotCount": 1,
+      "lat": 53.58927535,
+      "lng": 9.7000137,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35681113), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "neukirchen-vluyn",
+    "name": "Neukirchen-Vluyn",
+    "center": {
+      "lat": 51.452765400000004,
+      "lng": 6.5554764500000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "neukirchen-vluyn-d095271a7d",
+      "city": "neukirchen-vluyn",
+      "label": "Behindertenparkplatz Neukirchen-Vluyn",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neukirchen-Vluyn",
+      "spotCount": 1,
+      "lat": 51.4665218,
+      "lng": 6.5335410000000005,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/564866453), ODbL"
+    },
+    {
+      "id": "neukirchen-vluyn-f74d26ae13",
+      "city": "neukirchen-vluyn",
+      "label": "Behindertenparkplatz Neukirchen-Vluyn",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neukirchen-Vluyn",
+      "spotCount": 1,
+      "lat": 51.452765400000004,
+      "lng": 6.5811092,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/30025778), ODbL"
+    },
+    {
+      "id": "neukirchen-vluyn-57f7d5f564",
+      "city": "neukirchen-vluyn",
+      "label": "Behindertenparkplatz Neukirchen-Vluyn",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neukirchen-Vluyn",
+      "spotCount": 2,
+      "lat": 51.404419950000005,
+      "lng": 6.5554764500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/589664511), ODbL"
+    }
+  ]
+}

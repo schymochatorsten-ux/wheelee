@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "mosbach",
+    "name": "Mosbach",
+    "center": {
+      "lat": 49.349827950000005,
+      "lng": 9.1122841
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "mosbach-5067706840",
+      "city": "mosbach",
+      "label": "Bahnhofsplatz",
+      "street": "Bahnhofsplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Mosbach",
+      "spotCount": 4,
+      "lat": 49.348887250000004,
+      "lng": 9.1122841,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/755399491), ODbL"
+    },
+    {
+      "id": "mosbach-f4aee40b43",
+      "city": "mosbach",
+      "label": "Hauptstraße 83",
+      "street": "Hauptstraße",
+      "houseNumber": "83",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Mosbach",
+      "spotCount": 1,
+      "lat": 49.355871050000005,
+      "lng": 9.14806655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1471888143), ODbL"
+    },
+    {
+      "id": "mosbach-a66c9220a6",
+      "city": "mosbach",
+      "label": "Oberer Herrenweg",
+      "street": "Oberer Herrenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mosbach",
+      "spotCount": 1,
+      "lat": 49.35308755,
+      "lng": 9.1058324,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/120327615), ODbL"
+    },
+    {
+      "id": "mosbach-d2bf658a9a",
+      "city": "mosbach",
+      "label": "Parkhaus am Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Diedesheim",
+      "spotCount": 6,
+      "lat": 49.3495124,
+      "lng": 9.1118797,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/109403196), ODbL"
+    },
+    {
+      "id": "mosbach-2193e38d26",
+      "city": "mosbach",
+      "label": "Sportplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mosbach",
+      "spotCount": 1,
+      "lat": 49.349827950000005,
+      "lng": 9.174020050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/65479530), ODbL"
+    }
+  ]
+}

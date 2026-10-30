@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "lilienthal",
+    "name": "Lilienthal",
+    "center": {
+      "lat": 53.157788100000005,
+      "lng": 8.9452444
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "lilienthal-3279e5d544",
+      "city": "lilienthal",
+      "label": "Behindertenparkplatz Lilienthal",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lilienthal",
+      "spotCount": 2,
+      "lat": 53.15706745,
+      "lng": 8.89946355,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/963046515), ODbL"
+    },
+    {
+      "id": "lilienthal-019584ce3c",
+      "city": "lilienthal",
+      "label": "Behindertenparkplatz Lilienthal",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lilienthal",
+      "spotCount": 1,
+      "lat": 53.1577587,
+      "lng": 8.9452407,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1453815990), ODbL"
+    },
+    {
+      "id": "lilienthal-0807ad5ab0",
+      "city": "lilienthal",
+      "label": "Behindertenparkplatz Lilienthal",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lilienthal",
+      "spotCount": 1,
+      "lat": 53.157788100000005,
+      "lng": 8.9452444,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1453815991), ODbL"
+    },
+    {
+      "id": "lilienthal-1c7ec79281",
+      "city": "lilienthal",
+      "label": "Behindertenparkplatz Lilienthal",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lilienthal",
+      "spotCount": 1,
+      "lat": 53.15781750000001,
+      "lng": 8.945248,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1453815992), ODbL"
+    },
+    {
+      "id": "lilienthal-39752b7e07",
+      "city": "lilienthal",
+      "label": "Behindertenparkplatz Lilienthal",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lilienthal",
+      "spotCount": 1,
+      "lat": 53.157847000000004,
+      "lng": 8.9452517,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1453815993), ODbL"
+    },
+    {
+      "id": "lilienthal-543200a412",
+      "city": "lilienthal",
+      "label": "Behindertenparkplatz Lilienthal",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lilienthal",
+      "spotCount": 1,
+      "lat": 53.157876400000006,
+      "lng": 8.94525535,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1453815994), ODbL"
+    },
+    {
+      "id": "lilienthal-9cb5db72dc",
+      "city": "lilienthal",
+      "label": "Behindertenparkplatz Lilienthal",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lilienthal",
+      "spotCount": 1,
+      "lat": 53.14779655,
+      "lng": 8.9115795,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1534221366), ODbL"
+    }
+  ]
+}

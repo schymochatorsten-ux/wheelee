@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "schwedt-oder",
+    "name": "Schwedt/Oder",
+    "center": {
+      "lat": 53.0684017,
+      "lng": 14.297508100000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "schwedt-oder-8cf9348c71",
+      "city": "schwedt-oder",
+      "label": "Behindertenparkplatz Schwedt/Oder",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwedt/Oder",
+      "spotCount": 3,
+      "lat": 53.0122651,
+      "lng": 14.222424700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4357999883), ODbL"
+    },
+    {
+      "id": "schwedt-oder-587549ea76",
+      "city": "schwedt-oder",
+      "label": "Behindertenparkplatz Schwedt/Oder",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwedt/Oder",
+      "spotCount": 1,
+      "lat": 53.0684017,
+      "lng": 14.297508100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1421099257), ODbL"
+    }
+  ]
+}

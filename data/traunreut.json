@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "traunreut",
+    "name": "Traunreut",
+    "center": {
+      "lat": 47.96429985,
+      "lng": 12.590049100000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "traunreut-410bd3495f",
+      "city": "traunreut",
+      "label": "Friedhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Traunreut",
+      "spotCount": 1,
+      "lat": 47.966436800000004,
+      "lng": 12.59827155,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/264732570), ODbL"
+    },
+    {
+      "id": "traunreut-23cc952c24",
+      "city": "traunreut",
+      "label": "Martin-Niemöller-Straße",
+      "street": "Martin-Niemöller-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Traunreut",
+      "spotCount": 2,
+      "lat": 47.966078100000004,
+      "lng": 12.5860406,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1865111934), ODbL"
+    },
+    {
+      "id": "traunreut-30c78f0699",
+      "city": "traunreut",
+      "label": "Munastraße",
+      "street": "Munastraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Traunreut",
+      "spotCount": 2,
+      "lat": 47.9638234,
+      "lng": 12.590049100000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9520449206), ODbL"
+    },
+    {
+      "id": "traunreut-4704b6f0a1",
+      "city": "traunreut",
+      "label": "Petrapark",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Traunreut",
+      "spotCount": 1,
+      "lat": 47.96429985,
+      "lng": 12.586378250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/176076791), ODbL"
+    },
+    {
+      "id": "traunreut-8762b4ddda",
+      "city": "traunreut",
+      "label": "Werner-von-Siemens-Straße",
+      "street": "Werner-von-Siemens-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Traunreut",
+      "spotCount": 1,
+      "lat": 47.963938850000005,
+      "lng": 12.6014664,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/175945704), ODbL"
+    }
+  ]
+}

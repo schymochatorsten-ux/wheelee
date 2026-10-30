@@ -537,6 +537,21 @@ export const pl: Messages = {
   "users.revoke": "Cofnij",
   "users.failed": "Nie udało się.",
 
+  // Liczba odwiedzających w panelu administratora (ToDo 20.1)
+  "visits.title": "Odwiedzający",
+  "visits.note":
+    "Liczeni są tylko ludzie, którzy otworzyli stronę – bez wyszukiwarek, usług pomiarowych i podglądów linków. Kto włączył „Do Not Track”, nie jest liczony, więc liczby są dolną granicą. Odwiedzający liczy się raz dziennie, bez ciasteczka i bez zapisanego identyfikatora.",
+  "visits.range": "Okres",
+  "visits.lastDays": "dni: {count}",
+  "visits.today": "Dziś",
+  "visits.inRange": "Odwiedzający, ostatnie dni: {count}",
+  "visits.views": "Odsłony w okresie",
+  "visits.total": "Odwiedzający łącznie",
+  "visits.totalSince": "Odwiedzający łącznie od {date}",
+  "visits.none": "Nie policzono jeszcze żadnych wizyt.",
+  "visits.row": "{visitors} / {views}",
+  "visits.loadFailed": "Nie udało się załadować liczby odwiedzających.",
+
   // Linki w e-mailu: nie pamiętam hasła, zmiana adresu (ToDo 11.1, 11.8)
   "api.mailLinkInvalid": "Link jest nieprawidłowy, wygasł lub został już wykorzystany.",
   "api.emailSame": "To już jest adres tego konta.",

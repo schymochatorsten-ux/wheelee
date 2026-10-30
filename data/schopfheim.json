@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "schopfheim",
+    "name": "Schopfheim",
+    "center": {
+      "lat": 47.64981435,
+      "lng": 7.819832850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "schopfheim-6bc6318f83",
+      "city": "schopfheim",
+      "label": "Am Stadtgraben",
+      "street": "Am Stadtgraben",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schopfheim",
+      "spotCount": 1,
+      "lat": 47.64981435,
+      "lng": 7.8192847500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/42492035), ODbL"
+    },
+    {
+      "id": "schopfheim-d5efd23676",
+      "city": "schopfheim",
+      "label": "Bismarckstraße",
+      "street": "Bismarckstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Schopfheim",
+      "spotCount": 1,
+      "lat": 47.6475401,
+      "lng": 7.819832850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/42492683), ODbL"
+    },
+    {
+      "id": "schopfheim-3f0dc4e432",
+      "city": "schopfheim",
+      "label": "Dr.-Max-Picard-Platz 1",
+      "street": "Dr.-Max-Picard-Platz",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Schopfheim",
+      "spotCount": 1,
+      "lat": 47.649356850000004,
+      "lng": 7.818526500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/42492680), ODbL"
+    },
+    {
+      "id": "schopfheim-2b204d38fa",
+      "city": "schopfheim",
+      "label": "Oberfeldstraße",
+      "street": "Oberfeldstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Schopfheim",
+      "spotCount": 2,
+      "lat": 47.6533281,
+      "lng": 7.8326385,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/101940296), ODbL"
+    },
+    {
+      "id": "schopfheim-e1cc4f6476",
+      "city": "schopfheim",
+      "label": "Oberfeldstraße",
+      "street": "Oberfeldstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Schopfheim",
+      "spotCount": 1,
+      "lat": 47.65291515,
+      "lng": 7.8319413,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1326242934), ODbL"
+    },
+    {
+      "id": "schopfheim-6857191259",
+      "city": "schopfheim",
+      "label": "Park & Ride Schopfheim West",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Schopfheim",
+      "spotCount": 2,
+      "lat": 47.645674750000005,
+      "lng": 7.7996450500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/616643414), ODbL"
+    }
+  ]
+}

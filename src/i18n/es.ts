@@ -542,6 +542,21 @@ export const es: Messages = {
   "users.revoke": "Revocar",
   "users.failed": "No ha funcionado.",
 
+  // Cifras de visitantes en la administración (ToDo 20.1)
+  "visits.title": "Visitantes",
+  "visits.note":
+    "Solo se cuentan personas que abrieron la página: ni buscadores, ni servicios de medición, ni vistas previas de enlaces. Quien tiene activado “No rastrear” no se cuenta, así que las cifras son un mínimo. Un visitante cuenta una vez al día, sin cookie y sin identificador guardado.",
+  "visits.range": "Periodo",
+  "visits.lastDays": "{count} días",
+  "visits.today": "Hoy",
+  "visits.inRange": "Visitantes, últimos {count} días",
+  "visits.views": "Páginas vistas en el periodo",
+  "visits.total": "Visitantes en total",
+  "visits.totalSince": "Visitantes en total desde {date}",
+  "visits.none": "Aún no se ha contado ninguna visita.",
+  "visits.row": "{visitors} / {views}",
+  "visits.loadFailed": "No se pudieron cargar las cifras de visitantes.",
+
   // Enlaces por correo: contraseña olvidada, cambiar correo (ToDo 11.1, 11.8)
   "api.mailLinkInvalid": "El enlace no es válido, ha caducado o ya se ha usado.",
   "api.emailSame": "Esa ya es la dirección de esta cuenta.",

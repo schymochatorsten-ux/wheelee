@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "warendorf",
+    "name": "Warendorf",
+    "center": {
+      "lat": 51.95784745,
+      "lng": 7.971576000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "warendorf-81f43521de",
+      "city": "warendorf",
+      "label": "Behindertenparkplatz Warendorf",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Warendorf",
+      "spotCount": 1,
+      "lat": 51.95428115,
+      "lng": 7.971576000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25883250), ODbL"
+    },
+    {
+      "id": "warendorf-9783058e9b",
+      "city": "warendorf",
+      "label": "Behindertenparkplatz Warendorf",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Warendorf",
+      "spotCount": 2,
+      "lat": 51.95784745,
+      "lng": 8.0091351,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/784052375), ODbL"
+    },
+    {
+      "id": "warendorf-1d5ca02608",
+      "city": "warendorf",
+      "label": "Behindertenparkplatz Warendorf",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Warendorf",
+      "spotCount": 1,
+      "lat": 51.97232045,
+      "lng": 7.9924635,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/912630967), ODbL"
+    },
+    {
+      "id": "warendorf-c8e3f1e2f5",
+      "city": "warendorf",
+      "label": "Behindertenparkplatz Warendorf",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Warendorf",
+      "spotCount": 1,
+      "lat": 51.922708400000005,
+      "lng": 7.96233825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1165613270), ODbL"
+    },
+    {
+      "id": "warendorf-996d515882",
+      "city": "warendorf",
+      "label": "Behindertenparkplatz Warendorf",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Warendorf",
+      "spotCount": 1,
+      "lat": 51.95442165,
+      "lng": 7.9867252,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1182951446), ODbL"
+    },
+    {
+      "id": "warendorf-5b1e035e48",
+      "city": "warendorf",
+      "label": "P+R",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Warendorf",
+      "spotCount": 1,
+      "lat": 51.961456350000006,
+      "lng": 7.894006000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/458812222), ODbL"
+    },
+    {
+      "id": "warendorf-d2d73d5a67",
+      "city": "warendorf",
+      "label": "Parkplatz für Kirchen- und Klosterbesucher",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Warendorf",
+      "spotCount": 1,
+      "lat": 52.0281882,
+      "lng": 7.967217100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/932107362), ODbL"
+    }
+  ]
+}

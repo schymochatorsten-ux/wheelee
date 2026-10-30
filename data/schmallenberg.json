@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schmallenberg",
+    "name": "Schmallenberg",
+    "center": {
+      "lat": 51.19166215,
+      "lng": 8.30562835
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "schmallenberg-62e34ec285",
+      "city": "schmallenberg",
+      "label": "Behindertenparkplatz Schmallenberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schmallenberg",
+      "spotCount": 2,
+      "lat": 51.19166215,
+      "lng": 8.30562835,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1263555720), ODbL"
+    }
+  ]
+}

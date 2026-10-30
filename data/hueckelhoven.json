@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "hueckelhoven",
+    "name": "Hückelhoven",
+    "center": {
+      "lat": 51.008362500000004,
+      "lng": 6.2419215
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "hueckelhoven-a1abc5b688",
+      "city": "hueckelhoven",
+      "label": "Behindertenparkplatz Hückelhoven",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hückelhoven",
+      "spotCount": 3,
+      "lat": 51.008362500000004,
+      "lng": 6.2419215,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/274083812), ODbL"
+    },
+    {
+      "id": "hueckelhoven-b8aeeeffa2",
+      "city": "hueckelhoven",
+      "label": "Behindertenparkplatz Hückelhoven",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hückelhoven",
+      "spotCount": 1,
+      "lat": 51.053005000000006,
+      "lng": 6.216229050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1105496512), ODbL"
+    },
+    {
+      "id": "hueckelhoven-287b4184bb",
+      "city": "hueckelhoven",
+      "label": "Behindertenparkplatz Hückelhoven",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hückelhoven",
+      "spotCount": 1,
+      "lat": 51.0028882,
+      "lng": 6.24204495,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1457165301), ODbL"
+    }
+  ]
+}

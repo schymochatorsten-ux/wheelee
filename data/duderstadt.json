@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "duderstadt",
+    "name": "Duderstadt",
+    "center": {
+      "lat": 51.5292364,
+      "lng": 10.33896545
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "duderstadt-e0a5d63d42",
+      "city": "duderstadt",
+      "label": "Behindertenparkplatz Duderstadt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Duderstadt",
+      "spotCount": 1,
+      "lat": 51.5292364,
+      "lng": 10.33896545,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1221838749), ODbL"
+    }
+  ]
+}

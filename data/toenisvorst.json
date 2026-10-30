@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "toenisvorst",
+    "name": "Tönisvorst",
+    "center": {
+      "lat": 51.32587315000001,
+      "lng": 6.4874161500000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "toenisvorst-a6260e9283",
+      "city": "toenisvorst",
+      "label": "Behindertenparkplatz Tönisvorst",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Tönisvorst",
+      "spotCount": 1,
+      "lat": 51.325892350000004,
+      "lng": 6.48745505,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1239916159), ODbL"
+    },
+    {
+      "id": "toenisvorst-843fbcf5f8",
+      "city": "toenisvorst",
+      "label": "Behindertenparkplatz Tönisvorst",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Tönisvorst",
+      "spotCount": 1,
+      "lat": 51.325834900000004,
+      "lng": 6.487337850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1239916160), ODbL"
+    },
+    {
+      "id": "toenisvorst-9e113c8d2e",
+      "city": "toenisvorst",
+      "label": "Behindertenparkplatz Tönisvorst",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Tönisvorst",
+      "spotCount": 1,
+      "lat": 51.325853900000006,
+      "lng": 6.487376750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1239916161), ODbL"
+    },
+    {
+      "id": "toenisvorst-67cccbad44",
+      "city": "toenisvorst",
+      "label": "Behindertenparkplatz Tönisvorst",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Tönisvorst",
+      "spotCount": 1,
+      "lat": 51.32587315000001,
+      "lng": 6.4874161500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1239916162), ODbL"
+    }
+  ]
+}

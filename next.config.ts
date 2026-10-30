@@ -19,7 +19,7 @@ import type { NextConfig } from "next";
 
 /**
  * **Die Inhaltsrichtlinie (CSP) steht nicht hier**, sondern in `src/lib/csp.ts`
- * und wird von `src/middleware.ts` gesetzt: Sie braucht seit 10.7 eine Nonce
+ * und wird von `src/proxy.ts` gesetzt: Sie braucht seit 10.7 eine Nonce
  * je Anfrage, und die kann eine statische Konfiguration nicht liefern. Alles
  * übrige hier ist für alle Anfragen gleich.
  */

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "oer-erkenschwick",
+    "name": "Oer-Erkenschwick",
+    "center": {
+      "lat": 51.63981750000001,
+      "lng": 7.2621447
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "oer-erkenschwick-09080dc371",
+      "city": "oer-erkenschwick",
+      "label": "Behindertenparkplatz Oer-Erkenschwick",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oer-Erkenschwick",
+      "spotCount": 1,
+      "lat": 51.64250215,
+      "lng": 7.2595844,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/671537552), ODbL"
+    },
+    {
+      "id": "oer-erkenschwick-c37a7bb794",
+      "city": "oer-erkenschwick",
+      "label": "Behindertenparkplatz Oer-Erkenschwick",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oer-Erkenschwick",
+      "spotCount": 1,
+      "lat": 51.63981750000001,
+      "lng": 7.2621447,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1565671956), ODbL"
+    },
+    {
+      "id": "oer-erkenschwick-8c29489bcb",
+      "city": "oer-erkenschwick",
+      "label": "Behindertenparkplatz Oer-Erkenschwick",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oer-Erkenschwick",
+      "spotCount": 2,
+      "lat": 51.63927905,
+      "lng": 7.2766494,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1566824319), ODbL"
+    }
+  ]
+}

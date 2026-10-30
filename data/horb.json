@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "horb",
+    "name": "Horb am Neckar",
+    "center": {
+      "lat": 48.441194800000005,
+      "lng": 8.68947055
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "horb-00f7149e39",
+      "city": "horb",
+      "label": "Bahnhofplatz 8",
+      "street": "Bahnhofplatz",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Horb am Neckar",
+      "spotCount": 1,
+      "lat": 48.4421681,
+      "lng": 8.6891958,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12839262386), ODbL"
+    },
+    {
+      "id": "horb-608ad8d92d",
+      "city": "horb",
+      "label": "Isenburger Straße",
+      "street": "Isenburger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Horb am Neckar",
+      "spotCount": 4,
+      "lat": 48.441194800000005,
+      "lng": 8.689861,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12839261791), ODbL"
+    },
+    {
+      "id": "horb-8357a67bdf",
+      "city": "horb",
+      "label": "Parkhaus Isenburger Straße",
+      "street": "Isenburger Straße",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Horb am Neckar",
+      "spotCount": 4,
+      "lat": 48.44112765,
+      "lng": 8.68947055,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/197334551), ODbL"
+    }
+  ]
+}

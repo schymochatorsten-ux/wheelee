@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "heppenheim",
+    "name": "Heppenheim (Bergstraße)",
+    "center": {
+      "lat": 49.64236985000001,
+      "lng": 8.634060850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "heppenheim-aaca91b160",
+      "city": "heppenheim",
+      "label": "Behindertenparkplatz Heppenheim (Bergstraße)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Heppenheim (Bergstraße)",
+      "spotCount": 1,
+      "lat": 49.64236985000001,
+      "lng": 8.6332779,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27483798), ODbL"
+    },
+    {
+      "id": "heppenheim-3a639df9b0",
+      "city": "heppenheim",
+      "label": "Behindertenparkplatz Heppenheim (Bergstraße)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Heppenheim (Bergstraße)",
+      "spotCount": 2,
+      "lat": 49.6422839,
+      "lng": 8.634100400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27499884), ODbL"
+    },
+    {
+      "id": "heppenheim-873f6e3f8f",
+      "city": "heppenheim",
+      "label": "Behindertenparkplatz Heppenheim (Bergstraße)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Heppenheim (Bergstraße)",
+      "spotCount": 2,
+      "lat": 49.641839250000004,
+      "lng": 8.632663050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/119425793), ODbL"
+    },
+    {
+      "id": "heppenheim-aa5a8dc103",
+      "city": "heppenheim",
+      "label": "Behindertenparkplatz Heppenheim (Bergstraße)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heppenheim (Bergstraße)",
+      "spotCount": 2,
+      "lat": 49.639785200000006,
+      "lng": 8.634617,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/119569216), ODbL"
+    },
+    {
+      "id": "heppenheim-de5fab4061",
+      "city": "heppenheim",
+      "label": "Behindertenparkplatz Heppenheim (Bergstraße)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heppenheim (Bergstraße)",
+      "spotCount": 4,
+      "lat": 49.649917900000005,
+      "lng": 8.634060850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1545634471), ODbL"
+    },
+    {
+      "id": "heppenheim-ab73526f9b",
+      "city": "heppenheim",
+      "label": "Parkplatz Edeka",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heppenheim (Bergstraße)",
+      "spotCount": 2,
+      "lat": 49.6450753,
+      "lng": 8.632892000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32677915), ODbL"
+    }
+  ]
+}

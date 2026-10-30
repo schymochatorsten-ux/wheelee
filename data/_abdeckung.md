@@ -1,6 +1,6 @@
 # Abdeckung
 
-Stand: 2026-10-10
+Stand: 2026-10-29
 
 Erzeugt von `npm run report:abdeckung`. Nicht von Hand bearbeiten.
 
@@ -12,8 +12,8 @@ zweifach, weil beide Zahlen Verschiedenes sagen.
 
 | Maß | Erfasst | Insgesamt | Anteil |
 | --- | ---: | ---: | ---: |
-| Gemeinden | 204 | 10.754 | 1,9 % |
-| Einwohner in erfassten Gemeinden | 34.853.068 | 83.577.140 | 41,7 % |
+| Gemeinden | 641 | 10.754 | 6,0 % |
+| Einwohner in erfassten Gemeinden | 48.015.617 | 83.577.140 | 57,5 % |
 
 **Die erste Zahl ist die ehrliche Antwort auf „sind wir fertig" – die
 zweite auf „wie vielen Menschen nützt es schon".**
@@ -22,13 +22,13 @@ zweite auf „wie vielen Menschen nützt es schon".**
 
 | | Gemeinden |
 | --- | ---: |
-| geprüft, mit Treffer | 202 |
-| geprüft, nichts gefunden | 2 |
-| noch nicht geprüft | 10.550 |
+| geprüft, mit Treffer | 641 |
+| geprüft, nichts gefunden | 0 |
+| noch nicht geprüft | 10.113 |
 | Importversuch fehlgeschlagen | 0 |
 
-Davon aus amtlicher Quelle: **23**, der Rest aus OpenStreetMap.
-Erfasst sind **17.998 Standorte** mit **30.074 Stellplätzen**.
+Davon aus amtlicher Quelle: **24**, der Rest aus OpenStreetMap.
+Erfasst sind **24.061 Standorte** mit **39.773 Stellplätzen**.
 
 ## Nach Bundesland
 
@@ -37,19 +37,19 @@ Erfasst sind **17.998 Standorte** mit **30.074 Stellplätzen**.
 | Berlin | 1 | 1 | 100,0 % | 100,0 % |
 | Hamburg | 1 | 1 | 100,0 % | 100,0 % |
 | Bremen | 2 | 2 | 100,0 % | 100,0 % |
-| Nordrhein-Westfalen | 77 | 396 | 19,4 % | 63,7 % |
-| Sachsen | 6 | 418 | 1,4 % | 40,3 % |
-| Hessen | 12 | 421 | 2,9 % | 32,6 % |
-| Baden-Württemberg | 35 | 1.101 | 3,2 % | 32,2 % |
-| Mecklenburg-Vorpommern | 5 | 724 | 0,7 % | 30,1 % |
-| Niedersachsen | 19 | 941 | 2,0 % | 28,3 % |
-| Bayern | 17 | 2.056 | 0,8 % | 27,2 % |
-| Schleswig-Holstein | 6 | 1.104 | 0,5 % | 26,4 % |
-| Sachsen-Anhalt | 3 | 218 | 1,4 % | 25,6 % |
-| Rheinland-Pfalz | 11 | 2.301 | 0,5 % | 25,4 % |
-| Thüringen | 4 | 605 | 0,7 % | 23,3 % |
+| Nordrhein-Westfalen | 201 | 396 | 50,8 % | 85,1 % |
+| Sachsen | 24 | 418 | 5,7 % | 53,1 % |
+| Hessen | 53 | 421 | 12,6 % | 52,0 % |
+| Niedersachsen | 79 | 941 | 8,4 % | 50,7 % |
+| Sachsen-Anhalt | 21 | 218 | 9,6 % | 50,5 % |
+| Baden-Württemberg | 99 | 1.101 | 9,0 % | 49,6 % |
+| Thüringen | 17 | 605 | 2,8 % | 42,6 % |
+| Schleswig-Holstein | 20 | 1.104 | 1,8 % | 40,1 % |
+| Brandenburg | 24 | 413 | 5,8 % | 39,3 % |
+| Bayern | 68 | 2.056 | 3,3 % | 38,3 % |
+| Mecklenburg-Vorpommern | 9 | 724 | 1,2 % | 37,3 % |
+| Rheinland-Pfalz | 21 | 2.301 | 0,9 % | 33,0 % |
 | Saarland | 1 | 52 | 1,9 % | 18,1 % |
-| Brandenburg | 4 | 413 | 1,0 % | 16,1 % |
 
 ## Was als Nächstes am meisten bringt
 
@@ -60,10 +60,10 @@ Die Stufen beziehen sich auf die Einwohnergrenze in
 | ---: | ---: | ---: | ---: | ---: |
 | ab 100.000 | 80 | 0 | 26.771.320 | 32,0 % |
 | ab 50.000 | 195 | 0 | 34.567.987 | 41,4 % |
-| ab 20.000 | 706 | 502 | 50.043.101 | 59,9 % |
-| ab 10.000 | 1.598 | 1.394 | 62.517.873 | 74,8 % |
-| ab 5.000 | 2.943 | 2.739 | 72.062.426 | 86,2 % |
-| ab 0 | 10.754 | 10.550 | 83.577.140 | 100,0 % |
+| ab 20.000 | 706 | 65 | 50.043.101 | 59,9 % |
+| ab 10.000 | 1.598 | 957 | 62.517.873 | 74,8 % |
+| ab 5.000 | 2.943 | 2.302 | 72.062.426 | 86,2 % |
+| ab 0 | 10.754 | 10.113 | 83.577.140 | 100,0 % |
 
 Die letzte Zeile zeigt, warum die Stufen sinnvoll sind: Die ersten
 Tausend Gemeinden decken den weitaus größten Teil der Bevölkerung ab,

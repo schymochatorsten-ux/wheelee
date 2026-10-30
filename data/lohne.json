@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "lohne",
+    "name": "Lohne (Oldenburg)",
+    "center": {
+      "lat": 52.6653858,
+      "lng": 8.24204205
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "lohne-0a4f3f66b5",
+      "city": "lohne",
+      "label": "Behindertenparkplatz Lohne (Oldenburg)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lohne (Oldenburg)",
+      "spotCount": 1,
+      "lat": 52.66746475000001,
+      "lng": 8.2306819,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24878455), ODbL"
+    },
+    {
+      "id": "lohne-1fc2075ea4",
+      "city": "lohne",
+      "label": "Behindertenparkplatz Lohne (Oldenburg)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lohne (Oldenburg)",
+      "spotCount": 2,
+      "lat": 52.6593201,
+      "lng": 8.252534050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/429261385), ODbL"
+    },
+    {
+      "id": "lohne-bbc1f24403",
+      "city": "lohne",
+      "label": "Franziskus-Parkhaus",
+      "street": "Marienstraße",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Lohne (Oldenburg)",
+      "spotCount": 5,
+      "lat": 52.6653858,
+      "lng": 8.24204205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/985512569), ODbL"
+    },
+    {
+      "id": "lohne-4280eb3d06",
+      "city": "lohne",
+      "label": "Parkhaus an der Vogtstraße",
+      "street": "Vogtstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Lohne (Oldenburg)",
+      "spotCount": 4,
+      "lat": 52.664880800000006,
+      "lng": 8.2363119,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1009818748), ODbL"
+    }
+  ]
+}

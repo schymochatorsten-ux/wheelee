@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bueren",
+    "name": "Büren",
+    "center": {
+      "lat": 51.5538097,
+      "lng": 8.5594718
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "bueren-a0196fc5f0",
+      "city": "bueren",
+      "label": "Behindertenparkplatz Büren",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Büren",
+      "spotCount": 1,
+      "lat": 51.606276900000005,
+      "lng": 8.6523584,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10827752240), ODbL"
+    },
+    {
+      "id": "bueren-42134ad24d",
+      "city": "bueren",
+      "label": "Behindertenparkplatz Büren",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Büren",
+      "spotCount": 1,
+      "lat": 51.5225983,
+      "lng": 8.528779,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/298345569), ODbL"
+    },
+    {
+      "id": "bueren-d8da818f9b",
+      "city": "bueren",
+      "label": "Rathaus",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Büren",
+      "spotCount": 1,
+      "lat": 51.5538097,
+      "lng": 8.5594718,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/486632550), ODbL"
+    }
+  ]
+}

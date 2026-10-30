@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "schoenebeck",
+    "name": "Schönebeck (Elbe)",
+    "center": {
+      "lat": 51.99108525,
+      "lng": 11.69467345
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "schoenebeck-7011792773",
+      "city": "schoenebeck",
+      "label": "Behindertenparkplatz Schönebeck (Elbe)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schönebeck (Elbe)",
+      "spotCount": 1,
+      "lat": 52.017398400000005,
+      "lng": 11.7373717,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27583029), ODbL"
+    },
+    {
+      "id": "schoenebeck-a20ac768d8",
+      "city": "schoenebeck",
+      "label": "Behindertenparkplatz Schönebeck (Elbe)",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schönebeck (Elbe)",
+      "spotCount": 1,
+      "lat": 51.99104475,
+      "lng": 11.6946223,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1221139778), ODbL"
+    },
+    {
+      "id": "schoenebeck-500e0450c1",
+      "city": "schoenebeck",
+      "label": "Behindertenparkplatz Schönebeck (Elbe)",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schönebeck (Elbe)",
+      "spotCount": 1,
+      "lat": 51.99103935000001,
+      "lng": 11.69467345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1221139779), ODbL"
+    },
+    {
+      "id": "schoenebeck-d1e4661e36",
+      "city": "schoenebeck",
+      "label": "Behindertenparkplatz Schönebeck (Elbe)",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schönebeck (Elbe)",
+      "spotCount": 1,
+      "lat": 51.99108525,
+      "lng": 11.694686200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1221139780), ODbL"
+    },
+    {
+      "id": "schoenebeck-8f2504471c",
+      "city": "schoenebeck",
+      "label": "Behindertenparkplatz Schönebeck (Elbe)",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schönebeck (Elbe)",
+      "spotCount": 1,
+      "lat": 51.99109060000001,
+      "lng": 11.69463505,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1221139781), ODbL"
+    },
+    {
+      "id": "schoenebeck-1cfbcd3503",
+      "city": "schoenebeck",
+      "label": "Behindertenparkplatz Schönebeck (Elbe)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schönebeck (Elbe)",
+      "spotCount": 4,
+      "lat": 51.99095365000001,
+      "lng": 11.69451235,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1221139785), ODbL"
+    },
+    {
+      "id": "schoenebeck-7b578b5987",
+      "city": "schoenebeck",
+      "label": "Behindertenparkplatz Schönebeck (Elbe)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schönebeck (Elbe)",
+      "spotCount": 1,
+      "lat": 51.99809075,
+      "lng": 11.723992500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1530891304), ODbL"
+    }
+  ]
+}

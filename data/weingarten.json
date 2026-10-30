@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "weingarten",
+    "name": "Weingarten",
+    "center": {
+      "lat": 47.805169250000006,
+      "lng": 9.621773300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "weingarten-d2aca555d3",
+      "city": "weingarten",
+      "label": "Birkenweg",
+      "street": "Birkenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weingarten",
+      "spotCount": 7,
+      "lat": 47.80004855,
+      "lng": 9.621773300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/127780915), ODbL"
+    },
+    {
+      "id": "weingarten-e34e4f49c3",
+      "city": "weingarten",
+      "label": "Birkenweg",
+      "street": "Birkenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weingarten",
+      "spotCount": 3,
+      "lat": 47.79975805,
+      "lng": 9.621901050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/517364420), ODbL"
+    },
+    {
+      "id": "weingarten-07622cfc77",
+      "city": "weingarten",
+      "label": "Ermlandhof",
+      "street": "Ermlandhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Weingarten",
+      "spotCount": 1,
+      "lat": 47.817168550000005,
+      "lng": 9.616627150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1423878823), ODbL"
+    },
+    {
+      "id": "weingarten-086228e15e",
+      "city": "weingarten",
+      "label": "Friedhofstraße 23",
+      "street": "Friedhofstraße",
+      "houseNumber": "23",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weingarten",
+      "spotCount": 7,
+      "lat": 47.805169250000006,
+      "lng": 9.640228100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1264347075), ODbL"
+    },
+    {
+      "id": "weingarten-9ac5b888db",
+      "city": "weingarten",
+      "label": "P+R",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Weingarten",
+      "spotCount": 1,
+      "lat": 47.8169617,
+      "lng": 9.6165025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/163026769), ODbL"
+    }
+  ]
+}

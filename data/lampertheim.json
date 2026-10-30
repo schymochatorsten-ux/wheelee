@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "lampertheim",
+    "name": "Lampertheim",
+    "center": {
+      "lat": 49.59176415,
+      "lng": 8.455283300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "lampertheim-a6f4f7bf45",
+      "city": "lampertheim",
+      "label": "Domgasse 2",
+      "street": "Domgasse",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lampertheim",
+      "spotCount": 1,
+      "lat": 49.5945593,
+      "lng": 8.467186700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12718371152), ODbL"
+    },
+    {
+      "id": "lampertheim-e61b72fb74",
+      "city": "lampertheim",
+      "label": "Weidweg",
+      "street": "Weidweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lampertheim",
+      "spotCount": 1,
+      "lat": 49.5925354,
+      "lng": 8.4544537,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9846890237), ODbL"
+    },
+    {
+      "id": "lampertheim-6b83760a85",
+      "city": "lampertheim",
+      "label": "Weidweg",
+      "street": "Weidweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lampertheim",
+      "spotCount": 1,
+      "lat": 49.591729900000004,
+      "lng": 8.455283300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1073403997), ODbL"
+    },
+    {
+      "id": "lampertheim-f7ee0a60fb",
+      "city": "lampertheim",
+      "label": "Weidweg",
+      "street": "Weidweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lampertheim",
+      "spotCount": 1,
+      "lat": 49.59175975000001,
+      "lng": 8.4552872,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1073403998), ODbL"
+    },
+    {
+      "id": "lampertheim-0d43e57278",
+      "city": "lampertheim",
+      "label": "Weidweg",
+      "street": "Weidweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lampertheim",
+      "spotCount": 1,
+      "lat": 49.59173465000001,
+      "lng": 8.4552086,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1073404000), ODbL"
+    },
+    {
+      "id": "lampertheim-853fa666fe",
+      "city": "lampertheim",
+      "label": "Weidweg",
+      "street": "Weidweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lampertheim",
+      "spotCount": 1,
+      "lat": 49.59176415,
+      "lng": 8.4552126,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1073404001), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "enger",
+    "name": "Enger",
+    "center": {
+      "lat": 52.137338,
+      "lng": 8.5530711
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "enger-b1203aa069",
+      "city": "enger",
+      "label": "Behindertenparkplatz Enger",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Enger",
+      "spotCount": 2,
+      "lat": 52.137338,
+      "lng": 8.5530711,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/182457048), ODbL"
+    }
+  ]
+}

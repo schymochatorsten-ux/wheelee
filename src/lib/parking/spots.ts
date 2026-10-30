@@ -26,9 +26,12 @@ export interface CityInfo {
   name: string;
   /** Kartenmittelpunkt, wenn kein Nutzerstandort vorliegt. */
   center: { lat: number; lng: number };
-  /** Herkunft der Daten, für Attribution und Einordnung. */
-  source: string;
-  /** Titel und Lizenz zusammengesetzt, wie sie in der Attribution steht. */
+  /**
+   * Titel und Lizenz zusammengesetzt, wie sie in der Attribution steht. Die
+   * rohe Quellenangabe steht bewusst nicht mehr hier: Sie steckt in der
+   * Attribution schon drin und wurde für 648 Städte doppelt ins erste HTML
+   * geschrieben (ToDo 19.9).
+   */
   attribution: string;
   /** Lizenz im Klartext, `null` wenn die Quelle keine nennt. */
   license: string | null;
@@ -48,7 +51,6 @@ export interface CityInfo {
 export function getCities(): CityInfo[] {
   return seeds.map(({ seed, coverage }) => ({
     ...seed.city,
-    source: seed.source,
     attribution: attributionOf(seed),
     license: licenseOf(seed),
     importedAt: seed.generatedAt,

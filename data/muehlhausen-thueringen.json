@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "muehlhausen-thueringen",
+    "name": "Mühlhausen/Thüringen",
+    "center": {
+      "lat": 51.21193465,
+      "lng": 10.47452975
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "muehlhausen-thueringen-47e5d55900",
+      "city": "muehlhausen-thueringen",
+      "label": "Behindertenparkplatz Mühlhausen/Thüringen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Mühlhausen/Thüringen",
+      "spotCount": 1,
+      "lat": 51.2080916,
+      "lng": 10.47452975,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/54051261), ODbL"
+    },
+    {
+      "id": "muehlhausen-thueringen-1111e2a286",
+      "city": "muehlhausen-thueringen",
+      "label": "Behindertenparkplatz Mühlhausen/Thüringen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mühlhausen/Thüringen",
+      "spotCount": 6,
+      "lat": 51.21193465,
+      "lng": 10.462498,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/676893092), ODbL"
+    },
+    {
+      "id": "muehlhausen-thueringen-888dbcc32b",
+      "city": "muehlhausen-thueringen",
+      "label": "Behindertenparkplatz Mühlhausen/Thüringen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mühlhausen/Thüringen",
+      "spotCount": 1,
+      "lat": 51.19994820000001,
+      "lng": 10.4727006,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/908732568), ODbL"
+    },
+    {
+      "id": "muehlhausen-thueringen-1faf8cad91",
+      "city": "muehlhausen-thueringen",
+      "label": "Lehrer",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mühlhausen/Thüringen",
+      "spotCount": 6,
+      "lat": 51.21634015000001,
+      "lng": 10.487665,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/381696552), ODbL"
+    }
+  ]
+}

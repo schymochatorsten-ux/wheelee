@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bad-kissingen",
+    "name": "Bad Kissingen",
+    "center": {
+      "lat": 50.201995600000004,
+      "lng": 10.0784403
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "bad-kissingen-0a79b7f81c",
+      "city": "bad-kissingen",
+      "label": "Von-Hessing-Straße",
+      "street": "Von-Hessing-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Kissingen",
+      "spotCount": 1,
+      "lat": 50.201995600000004,
+      "lng": 10.077037200000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12009787186), ODbL"
+    },
+    {
+      "id": "bad-kissingen-db3a9115a8",
+      "city": "bad-kissingen",
+      "label": "Von-Hessing-Straße 1",
+      "street": "Von-Hessing-Straße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Kissingen",
+      "spotCount": 1,
+      "lat": 50.2002371,
+      "lng": 10.0784403,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12009787187), ODbL"
+    }
+  ]
+}

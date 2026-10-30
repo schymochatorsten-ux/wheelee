@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "neu-wulmstorf",
+    "name": "Neu Wulmstorf",
+    "center": {
+      "lat": 53.4610071,
+      "lng": 9.792690750000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "neu-wulmstorf-b84a100ed5",
+      "city": "neu-wulmstorf",
+      "label": "Behindertenparkplatz Neu Wulmstorf",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neu Wulmstorf",
+      "spotCount": 2,
+      "lat": 53.370703400000004,
+      "lng": 9.8016436,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1835585116), ODbL"
+    },
+    {
+      "id": "neu-wulmstorf-9b7289e3d3",
+      "city": "neu-wulmstorf",
+      "label": "Behindertenparkplatz Neu Wulmstorf",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neu Wulmstorf",
+      "spotCount": 1,
+      "lat": 53.4675954,
+      "lng": 9.792690750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/249607857), ODbL"
+    },
+    {
+      "id": "neu-wulmstorf-9b729f91f8",
+      "city": "neu-wulmstorf",
+      "label": "Behindertenparkplatz Neu Wulmstorf",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neu Wulmstorf",
+      "spotCount": 1,
+      "lat": 53.468026300000005,
+      "lng": 9.79241455,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/818541698), ODbL"
+    },
+    {
+      "id": "neu-wulmstorf-284aabc20b",
+      "city": "neu-wulmstorf",
+      "label": "Behindertenparkplatz Neu Wulmstorf",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neu Wulmstorf",
+      "spotCount": 1,
+      "lat": 53.4610071,
+      "lng": 9.781440250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/954030180), ODbL"
+    },
+    {
+      "id": "neu-wulmstorf-172be08510",
+      "city": "neu-wulmstorf",
+      "label": "Behindertenparkplatz Neu Wulmstorf",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neu Wulmstorf",
+      "spotCount": 1,
+      "lat": 53.46072865000001,
+      "lng": 9.78176395,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/954030182), ODbL"
+    },
+    {
+      "id": "neu-wulmstorf-2df72e738a",
+      "city": "neu-wulmstorf",
+      "label": "Parkplatz McDonalds",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neu Wulmstorf",
+      "spotCount": 2,
+      "lat": 53.3702503,
+      "lng": 9.800706700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1345268615), ODbL"
+    }
+  ]
+}

@@ -80,8 +80,28 @@ const MUENCHEN: ManualSource = {
   },
 };
 
+/**
+ * Bielefeld – „Öffentliche Schwerbehindertenparkplätze in Bielefeld“ auf
+ * open-data.bielefeld.de, CC BY 4.0 (geprüft 2026-10-30 über den Spiegel auf
+ * ckan.open.nrw.de; Stand laut Portal 2026-10-29). Als CSV, GML, Shapefile und
+ * WFS angeboten; `fetchGeoJson` löst die Ressourcenseite des CKAN selbst auf.
+ * GovData führt den Datensatz, der Scan hatte ihn aber bei einem unerreichbaren
+ * Portal verworfen (2d.8) – deshalb hier festgeschrieben.
+ */
+const BIELEFELD: ManualSource = {
+  title: "Öffentliche Schwerbehindertenparkplätze in Bielefeld (Stadt Bielefeld)",
+  license: "Creative Commons Namensnennung 4.0 International",
+  resources: [
+    {
+      format: "CSV",
+      url: "https://open-data.bielefeld.de/dataset/9d1ac93f-849d-4082-9ed2-663b2abdc3a2/resource/0c4276b3-cbf0-4dde-bdc3-607f3cca7ff9",
+    },
+  ],
+};
+
 export const MANUAL_SOURCES: Record<string, ManualSource[]> = {
   muenchen: [MUENCHEN],
+  bielefeld: [BIELEFELD],
 };
 
 export function manualSourcesFor(slug: string): ManualSource[] {

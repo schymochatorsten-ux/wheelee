@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hoerstel",
+    "name": "Hörstel",
+    "center": {
+      "lat": 52.32770885,
+      "lng": 7.6245316
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "hoerstel-623a549526",
+      "city": "hoerstel",
+      "label": "Behindertenparkplatz Hörstel",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hörstel",
+      "spotCount": 1,
+      "lat": 52.2873971,
+      "lng": 7.6245316,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10165924988), ODbL"
+    },
+    {
+      "id": "hoerstel-ca278b2acc",
+      "city": "hoerstel",
+      "label": "Behindertenparkplatz Hörstel",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hörstel",
+      "spotCount": 2,
+      "lat": 52.32770885,
+      "lng": 7.600622700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1059650957), ODbL"
+    }
+  ]
+}

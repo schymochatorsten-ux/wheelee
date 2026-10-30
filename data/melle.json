@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "melle",
+    "name": "Melle",
+    "center": {
+      "lat": 52.19620795,
+      "lng": 8.3848588
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "melle-221eb7721d",
+      "city": "melle",
+      "label": "Behindertenparkplatz Melle",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Melle",
+      "spotCount": 1,
+      "lat": 52.205074100000004,
+      "lng": 8.3246976,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10316976183), ODbL"
+    },
+    {
+      "id": "melle-1783820e77",
+      "city": "melle",
+      "label": "Behindertenparkplatz Melle",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Melle",
+      "spotCount": 2,
+      "lat": 52.196179150000006,
+      "lng": 8.3857101,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/198014232), ODbL"
+    },
+    {
+      "id": "melle-d2db32ebdf",
+      "city": "melle",
+      "label": "Behindertenparkplatz Melle",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Melle",
+      "spotCount": 1,
+      "lat": 52.15848845000001,
+      "lng": 8.267092850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/289681357), ODbL"
+    },
+    {
+      "id": "melle-31068f018a",
+      "city": "melle",
+      "label": "Behindertenparkplatz Melle",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Melle",
+      "spotCount": 3,
+      "lat": 52.19620795,
+      "lng": 8.3848588,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1454683544), ODbL"
+    }
+  ]
+}

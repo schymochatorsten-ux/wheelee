@@ -48,7 +48,7 @@ export default function Datenschutz() {
   const mailProvider = process.env.WHEELEE_MAIL_PROVIDER?.trim() || null;
 
   return (
-    <LegalPage title="Datenschutzerklärung" updated="2026-10-29">
+    <LegalPage title="Datenschutzerklärung" updated="2026-10-30">
       <section>
         <p className="rounded-xl border border-neutral-200 bg-neutral-50 p-3 dark:border-neutral-800 dark:bg-neutral-900">
           <strong>Das Wichtigste zuerst:</strong> Dein Standort verlässt dein Gerät nicht. Er wird
@@ -177,7 +177,8 @@ export default function Datenschutz() {
         </p>
         <p className="mt-2">
           Nichts davon dient der Wiedererkennung über verschiedene Seiten hinweg. Es gibt{" "}
-          <strong>keine Analyse-Werkzeuge, keine Werbung und keine Tracker.</strong>
+          <strong>keine Analyse-Werkzeuge von Dritten, keine Werbung und keine Tracker.</strong>{" "}
+          Eine eigene, anonyme Tageszählung gibt es; sie steht in Abschnitt 9.
         </p>
       </section>
 
@@ -342,6 +343,22 @@ export default function Datenschutz() {
           also auch nicht der Kartenausschnitt, den du ansiehst –, deine E-Mail-Adresse und der Text
           deiner Meldungen. Das Protokoll bleibt auf dem Server, geht an keinen anderen Dienst und
           wird fortlaufend überschrieben (höchstens 30 MB, danach fällt das Älteste weg).
+        </p>
+        <p className="mt-2">
+          <strong>Besucherzählung.</strong> Damit der Betreiber weiß, ob die App benutzt wird,
+          zählt sie, wie viele Menschen sie pro Tag öffnen. Dafür schickt deine Seite nach dem
+          Laden einmal einen leeren Hinweis an unseren Server – ohne Cookie, ohne Eintrag im
+          Browser-Speicher und ohne Inhalt. Der Server bildet aus IP-Adresse und Browserkennung
+          einen Hash, gesalzen mit einem Zufallswert, der <strong>nur im Arbeitsspeicher</strong>{" "}
+          liegt und jeden Tag neu gewürfelt wird, und merkt sich damit bis Mitternacht (Mitteleuropa),
+          ob er dich heute schon gezählt hat. <strong>In die Datenbank kommt nur die Summe je
+          Tag</strong> (Besucher und Seitenaufrufe), keine Adresse, keine Kennung, auch nicht
+          gehasht; ein Neustart des Servers vergisst die Hashes. Zugriffe von Suchmaschinen,
+          Messdiensten, Linkvorschauen und Programmen werden nicht gezählt, ebenso nicht,
+          wenn dein Browser „Do Not Track“ oder „Global Privacy Control“ sendet. Rechtsgrundlage
+          ist Art. 6 Abs. 1 lit. f DSGVO (Interesse, den Betrieb einzuschätzen); durch die
+          sofortige Verdichtung auf Tagessummen ist der Eingriff gering. Die Summen sieht nur der
+          Administrator. Sie lassen sich keiner Person zuordnen.
         </p>
         <p className="mt-2">
           Das gilt für die App selbst. Zwischen deinem Gerät und der App steht ein

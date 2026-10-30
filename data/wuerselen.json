@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "wuerselen",
+    "name": "Würselen",
+    "center": {
+      "lat": 50.827329750000004,
+      "lng": 6.143108250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "wuerselen-42d8a8fc24",
+      "city": "wuerselen",
+      "label": "Behindertenparkplatz Würselen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Würselen",
+      "spotCount": 1,
+      "lat": 50.827329750000004,
+      "lng": 6.129745550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25354317), ODbL"
+    },
+    {
+      "id": "wuerselen-bcf3113430",
+      "city": "wuerselen",
+      "label": "P5",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Würselen",
+      "spotCount": 5,
+      "lat": 50.814128000000004,
+      "lng": 6.143108250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/545441834), ODbL"
+    }
+  ]
+}

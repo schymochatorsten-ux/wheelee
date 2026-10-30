@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "stadtallendorf",
+    "name": "Stadtallendorf",
+    "center": {
+      "lat": 50.8279374,
+      "lng": 9.016340750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "stadtallendorf-5fe86dfa5a",
+      "city": "stadtallendorf",
+      "label": "Behindertenparkplatz Stadtallendorf",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stadtallendorf",
+      "spotCount": 2,
+      "lat": 50.82475265000001,
+      "lng": 9.016340750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/156876601), ODbL"
+    },
+    {
+      "id": "stadtallendorf-ea2e7e5d5b",
+      "city": "stadtallendorf",
+      "label": "Besucher*innen Hallenbad",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Stadtallendorf",
+      "spotCount": 3,
+      "lat": 50.8279374,
+      "lng": 9.01417615,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1035973687), ODbL"
+    }
+  ]
+}

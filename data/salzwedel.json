@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "salzwedel",
+    "name": "Salzwedel",
+    "center": {
+      "lat": 52.855260400000006,
+      "lng": 11.154509700000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "salzwedel-047b7dc4a7",
+      "city": "salzwedel",
+      "label": "Behindertenparkplatz Salzwedel",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Salzwedel",
+      "spotCount": 1,
+      "lat": 52.855152100000005,
+      "lng": 11.155591600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/383988808), ODbL"
+    },
+    {
+      "id": "salzwedel-60ab72dad8",
+      "city": "salzwedel",
+      "label": "Behindertenparkplatz Salzwedel",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Salzwedel",
+      "spotCount": 1,
+      "lat": 52.855260400000006,
+      "lng": 11.154509700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1210945508), ODbL"
+    },
+    {
+      "id": "salzwedel-577aa957f2",
+      "city": "salzwedel",
+      "label": "Behindertenparkplatz Salzwedel",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Salzwedel",
+      "spotCount": 19,
+      "lat": 52.85288955,
+      "lng": 11.1476754,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1430204804), ODbL"
+    },
+    {
+      "id": "salzwedel-49a5d22c50",
+      "city": "salzwedel",
+      "label": "Kaufland",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Salzwedel",
+      "spotCount": 7,
+      "lat": 52.85722015,
+      "lng": 11.15051055,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27607373), ODbL"
+    }
+  ]
+}

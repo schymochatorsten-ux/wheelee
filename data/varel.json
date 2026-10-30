@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "varel",
+    "name": "Varel",
+    "center": {
+      "lat": 53.35921140000001,
+      "lng": 8.07004575
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "varel-ab67bd2d76",
+      "city": "varel",
+      "label": "Behindertenparkplatz Varel",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Varel",
+      "spotCount": 1,
+      "lat": 53.35921140000001,
+      "lng": 8.07004575,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/273206438), ODbL"
+    }
+  ]
+}

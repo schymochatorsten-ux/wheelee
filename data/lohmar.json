@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "lohmar",
+    "name": "Lohmar",
+    "center": {
+      "lat": 50.88378565000001,
+      "lng": 7.249712650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "lohmar-9c262607c4",
+      "city": "lohmar",
+      "label": "Behindertenparkplatz Lohmar",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lohmar",
+      "spotCount": 2,
+      "lat": 50.8912805,
+      "lng": 7.252205,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4329351184), ODbL"
+    },
+    {
+      "id": "lohmar-56265ae6fb",
+      "city": "lohmar",
+      "label": "Behindertenparkplatz Lohmar",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lohmar",
+      "spotCount": 3,
+      "lat": 50.910411450000005,
+      "lng": 7.25204965,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/333437731), ODbL"
+    },
+    {
+      "id": "lohmar-03f06cb069",
+      "city": "lohmar",
+      "label": "Behindertenparkplatz Lohmar",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lohmar",
+      "spotCount": 5,
+      "lat": 50.88378565000001,
+      "lng": 7.25163635,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/768674629), ODbL"
+    },
+    {
+      "id": "lohmar-cc8d02f92f",
+      "city": "lohmar",
+      "label": "Behindertenparkplatz Lohmar",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lohmar",
+      "spotCount": 1,
+      "lat": 50.83984585,
+      "lng": 7.2066813000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1434544413), ODbL"
+    },
+    {
+      "id": "lohmar-97f723fd3a",
+      "city": "lohmar",
+      "label": "Behindertenparkplatz Lohmar",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lohmar",
+      "spotCount": 1,
+      "lat": 50.8398169,
+      "lng": 7.20666495,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1434544414), ODbL"
+    },
+    {
+      "id": "lohmar-75063ce648",
+      "city": "lohmar",
+      "label": "Behindertenparkplatz Lohmar",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lohmar",
+      "spotCount": 1,
+      "lat": 50.83978985,
+      "lng": 7.206649650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1434544415), ODbL"
+    },
+    {
+      "id": "lohmar-ca724ecda7",
+      "city": "lohmar",
+      "label": "Naturschule",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lohmar",
+      "spotCount": 1,
+      "lat": 50.891247400000005,
+      "lng": 7.249712650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/131345000), ODbL"
+    }
+  ]
+}

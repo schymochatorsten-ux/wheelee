@@ -535,6 +535,21 @@ export const en: Messages = {
   "users.revoke": "Revoke",
   "users.failed": "That did not work.",
 
+  // Visitor numbers in the admin area (ToDo 20.1)
+  "visits.title": "Visitors",
+  "visits.note":
+    "Only people who opened the site are counted – no search engines, monitoring services or link previews. Anyone with “Do Not Track” enabled is not counted, so the numbers are a lower bound. A visitor counts once per day, without a cookie and without a stored identifier.",
+  "visits.range": "Period",
+  "visits.lastDays": "{count} days",
+  "visits.today": "Today",
+  "visits.inRange": "Visitors, last {count} days",
+  "visits.views": "Page views in the period",
+  "visits.total": "Visitors in total",
+  "visits.totalSince": "Visitors in total since {date}",
+  "visits.none": "No visits counted yet.",
+  "visits.row": "{visitors} / {views}",
+  "visits.loadFailed": "The visitor numbers could not be loaded.",
+
   // Mail links: forgot password, change email (ToDo 11.1, 11.8)
   "api.mailLinkInvalid": "The link is invalid, expired or has already been used.",
   "api.emailSame": "That is already the address of this account.",

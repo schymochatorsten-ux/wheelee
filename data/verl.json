@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "verl",
+    "name": "Verl",
+    "center": {
+      "lat": 51.87977945,
+      "lng": 8.50914575
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "verl-edde1505f8",
+      "city": "verl",
+      "label": "Behindertenparkplatz Verl",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Verl",
+      "spotCount": 2,
+      "lat": 51.87870865000001,
+      "lng": 8.4916131,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/58420958), ODbL"
+    },
+    {
+      "id": "verl-1298a8b54e",
+      "city": "verl",
+      "label": "Behindertenparkplatz Verl",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Verl",
+      "spotCount": 1,
+      "lat": 51.8771167,
+      "lng": 8.4807138,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/398257840), ODbL"
+    },
+    {
+      "id": "verl-9968c0b73c",
+      "city": "verl",
+      "label": "Behindertenparkplatz Verl",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Verl",
+      "spotCount": 2,
+      "lat": 51.8908852,
+      "lng": 8.4619511,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/689001837), ODbL"
+    },
+    {
+      "id": "verl-6a6f8098f8",
+      "city": "verl",
+      "label": "Behindertenparkplatz Verl",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Verl",
+      "spotCount": 2,
+      "lat": 51.8737733,
+      "lng": 8.5177075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/713482993), ODbL"
+    },
+    {
+      "id": "verl-9f0a0d2e95",
+      "city": "verl",
+      "label": "Behindertenparkplatz Verl",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Verl",
+      "spotCount": 1,
+      "lat": 51.888045000000005,
+      "lng": 8.5260405,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/948654218), ODbL"
+    },
+    {
+      "id": "verl-23343a9d70",
+      "city": "verl",
+      "label": "Behindertenparkplatz Verl",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Verl",
+      "spotCount": 1,
+      "lat": 51.88077125,
+      "lng": 8.509979950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1335044171), ODbL"
+    },
+    {
+      "id": "verl-fc84ed9aca",
+      "city": "verl",
+      "label": "Behindertenparkplatz Verl",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Verl",
+      "spotCount": 1,
+      "lat": 51.87977945,
+      "lng": 8.50914575,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1335606622), ODbL"
+    }
+  ]
+}

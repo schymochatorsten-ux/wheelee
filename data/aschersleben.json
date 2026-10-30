@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "aschersleben",
+    "name": "Aschersleben",
+    "center": {
+      "lat": 51.7573511,
+      "lng": 11.452293500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "aschersleben-03e56b75bb",
+      "city": "aschersleben",
+      "label": "Behindertenparkplatz Aschersleben",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Aschersleben",
+      "spotCount": 1,
+      "lat": 51.7573511,
+      "lng": 11.452293500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12675715759), ODbL"
+    },
+    {
+      "id": "aschersleben-8f58f03ea2",
+      "city": "aschersleben",
+      "label": "Behindertenparkplatz Aschersleben",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Aschersleben",
+      "spotCount": 1,
+      "lat": 51.7573251,
+      "lng": 11.452274200000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12675715760), ODbL"
+    },
+    {
+      "id": "aschersleben-08673e9a56",
+      "city": "aschersleben",
+      "label": "Behindertenparkplatz Aschersleben",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aschersleben",
+      "spotCount": 5,
+      "lat": 51.767456,
+      "lng": 11.483943400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/303845991), ODbL"
+    },
+    {
+      "id": "aschersleben-cc34a66b32",
+      "city": "aschersleben",
+      "label": "Karl-von-Ossietzky-Platz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aschersleben",
+      "spotCount": 2,
+      "lat": 51.757108099999996,
+      "lng": 11.452009100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/199325116), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "hamminkeln",
+    "name": "Hamminkeln",
+    "center": {
+      "lat": 51.735679950000005,
+      "lng": 6.51857925
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "hamminkeln-c03a2563f6",
+      "city": "hamminkeln",
+      "label": "Behindertenparkplatz Hamminkeln",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hamminkeln",
+      "spotCount": 1,
+      "lat": 51.73561695000001,
+      "lng": 6.4995805,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/446176597), ODbL"
+    },
+    {
+      "id": "hamminkeln-91ddeb3859",
+      "city": "hamminkeln",
+      "label": "Behindertenparkplatz Hamminkeln",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hamminkeln",
+      "spotCount": 3,
+      "lat": 51.704859850000005,
+      "lng": 6.64027245,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/627279366), ODbL"
+    },
+    {
+      "id": "hamminkeln-e31b5456cf",
+      "city": "hamminkeln",
+      "label": "Hamminkeln Bahnhof P+R",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hamminkeln",
+      "spotCount": 2,
+      "lat": 51.735679950000005,
+      "lng": 6.601305900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/351176969), ODbL"
+    },
+    {
+      "id": "hamminkeln-cf2b09567a",
+      "city": "hamminkeln",
+      "label": "P+R,Mehrhoog, Ost",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hamminkeln",
+      "spotCount": 6,
+      "lat": 51.7390606,
+      "lng": 6.51857925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/278243237), ODbL"
+    },
+    {
+      "id": "hamminkeln-554fea8e5c",
+      "city": "hamminkeln",
+      "label": "P+R,Mehrhoog, West",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hamminkeln",
+      "spotCount": 2,
+      "lat": 51.738937750000005,
+      "lng": 6.517566,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/236112057), ODbL"
+    }
+  ]
+}

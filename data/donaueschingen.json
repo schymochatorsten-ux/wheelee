@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "donaueschingen",
+    "name": "Donaueschingen",
+    "center": {
+      "lat": 47.947488250000006,
+      "lng": 8.498826450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "donaueschingen-73e249d928",
+      "city": "donaueschingen",
+      "label": "Güterstraße",
+      "street": "Güterstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Donaueschingen",
+      "spotCount": 2,
+      "lat": 47.94747115,
+      "lng": 8.498681600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/195029214), ODbL"
+    },
+    {
+      "id": "donaueschingen-13d3eea2b8",
+      "city": "donaueschingen",
+      "label": "Güterstraße",
+      "street": "Güterstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Donaueschingen",
+      "spotCount": 1,
+      "lat": 47.9474149,
+      "lng": 8.49877935,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1388527328), ODbL"
+    },
+    {
+      "id": "donaueschingen-044839bce7",
+      "city": "donaueschingen",
+      "label": "Güterstraße",
+      "street": "Güterstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Donaueschingen",
+      "spotCount": 1,
+      "lat": 47.947488250000006,
+      "lng": 8.498826450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1388527329), ODbL"
+    },
+    {
+      "id": "donaueschingen-35e218e88a",
+      "city": "donaueschingen",
+      "label": "Josefstraße 37",
+      "street": "Josefstraße",
+      "houseNumber": "37",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Donaueschingen",
+      "spotCount": 1,
+      "lat": 47.947877950000006,
+      "lng": 8.49996025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/962777859), ODbL"
+    }
+  ]
+}

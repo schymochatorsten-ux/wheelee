@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "stuhr",
+    "name": "Stuhr",
+    "center": {
+      "lat": 53.02815890000001,
+      "lng": 8.709177050000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "stuhr-e9bd11e788",
+      "city": "stuhr",
+      "label": "Behindertenparkplatz Stuhr",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stuhr",
+      "spotCount": 1,
+      "lat": 53.033458350000004,
+      "lng": 8.7009364,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/315672783), ODbL"
+    },
+    {
+      "id": "stuhr-087cb51905",
+      "city": "stuhr",
+      "label": "Behindertenparkplatz Stuhr",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stuhr",
+      "spotCount": 1,
+      "lat": 53.02815890000001,
+      "lng": 8.74953975,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/972311949), ODbL"
+    },
+    {
+      "id": "stuhr-12a3628af4",
+      "city": "stuhr",
+      "label": "Gut Varrel",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stuhr",
+      "spotCount": 1,
+      "lat": 53.03125555,
+      "lng": 8.709177050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/39087604), ODbL"
+    },
+    {
+      "id": "stuhr-df2823a945",
+      "city": "stuhr",
+      "label": "KFC Parkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stuhr",
+      "spotCount": 3,
+      "lat": 53.012541850000005,
+      "lng": 8.701560350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/182758611), ODbL"
+    },
+    {
+      "id": "stuhr-96cdc498dc",
+      "city": "stuhr",
+      "label": "Kundenparkplatz Marktkauf",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stuhr",
+      "spotCount": 3,
+      "lat": 53.027056200000004,
+      "lng": 8.8011421,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/871394685), ODbL"
+    },
+    {
+      "id": "stuhr-4a4151776c",
+      "city": "stuhr",
+      "label": "McDonald's Stuhr",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stuhr",
+      "spotCount": 1,
+      "lat": 53.011938,
+      "lng": 8.701918500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/198716151), ODbL"
+    }
+  ]
+}

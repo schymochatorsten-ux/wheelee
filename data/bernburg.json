@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bernburg",
+    "name": "Bernburg (Saale)",
+    "center": {
+      "lat": 51.796099350000006,
+      "lng": 11.74466915
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "bernburg-aa097e7099",
+      "city": "bernburg",
+      "label": "Behindertenparkplatz Bernburg (Saale)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bernburg (Saale)",
+      "spotCount": 13,
+      "lat": 51.80091155000001,
+      "lng": 11.6969436,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1335913221), ODbL"
+    },
+    {
+      "id": "bernburg-930829cc60",
+      "city": "bernburg",
+      "label": "P+R",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bernburg (Saale)",
+      "spotCount": 1,
+      "lat": 51.78109545,
+      "lng": 11.759609750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/996760616), ODbL"
+    },
+    {
+      "id": "bernburg-cb94efd738",
+      "city": "bernburg",
+      "label": "PP Rheineplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bernburg (Saale)",
+      "spotCount": 3,
+      "lat": 51.796099350000006,
+      "lng": 11.74466915,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/235201416), ODbL"
+    }
+  ]
+}

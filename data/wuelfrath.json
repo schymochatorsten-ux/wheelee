@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wuelfrath",
+    "name": "Wülfrath",
+    "center": {
+      "lat": 51.2808757,
+      "lng": 7.0313787
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "wuelfrath-c999696ce5",
+      "city": "wuelfrath",
+      "label": "Behindertenparkplatz Wülfrath",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wülfrath",
+      "spotCount": 1,
+      "lat": 51.2808757,
+      "lng": 7.0313787,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/370332947), ODbL"
+    }
+  ]
+}

@@ -28,6 +28,14 @@ describe("searchLocalPlaces", () => {
     expect(places.some((place) => place.kind === "city" && place.label.startsWith("Frankfurt"))).toBe(true);
   });
 
+  it("zeigt die Stadt vor gleich gut passenden Straßen, auch wenn diese näher liegen", () => {
+    // Köln ist näher an etlichen „Frankfurter Straße“ als an Frankfurt am Main;
+    // trotzdem soll die Stadt unter den fünf Vorschlägen sein.
+    const koeln = { lat: 50.938, lng: 6.9551 };
+    const places = searchLocalPlaces("frankfurt", koeln, 5);
+    expect(places.some((place) => place.kind === "city" && place.label.startsWith("Frankfurt"))).toBe(true);
+  });
+
   it("findet Straßen mit Ortsangabe und gültigen Koordinaten", () => {
     const places = searchLocalPlaces("bahnhofstr", null, 20);
     const streets = places.filter((place) => place.kind === "street");

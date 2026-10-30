@@ -19,6 +19,7 @@ import type { PublicUser } from "@/lib/auth/user";
 import { useGeolocation } from "@/hooks/useGeolocation";
 import { DestinationSearch } from "./DestinationSearch";
 import { useNearbySpots, useSpotsInBounds } from "@/hooks/useSpots";
+import { useCities } from "@/hooks/useCities";
 import type { FocusTarget, MapBounds } from "./map/ParkingMap";
 import { LanguageSync } from "./LanguageSync";
 import { MapLegend } from "./MapLegend";
@@ -29,6 +30,7 @@ import { SpotList } from "./SpotList";
 import { FeedbackAdmin } from "./FeedbackAdmin";
 import { ReportedSpots } from "./ReportedSpots";
 import { AdminUsers } from "./AdminUsers";
+import { AdminVisits } from "./AdminVisits";
 
 /**
  * Hält Karte, Liste und Detailansicht zusammen: Standort anfragen,
@@ -60,7 +62,6 @@ interface MapSectionProps {
    * sie durch die wirklich nächstgelegenen.
    */
   initialNearby: ParkingSpotWithDistance[];
-  cities: CityInfo[];
   /** Stadt, auf die ohne Nutzerstandort zentriert wird. */
   defaultCity: CityInfo;
   /** Angemeldetes Konto, vom Server mitgegeben – `null`, wenn keines. */
@@ -184,11 +185,11 @@ function InboxIcon() {
 
 export function MapSection({
   initialNearby,
-  cities,
   defaultCity,
   user: initialUser,
 }: MapSectionProps) {
   const t = useT();
+  const cities = useCities(defaultCity);
   const locale = useLocale();
   const center = defaultCity.center;
   const geo = useGeolocation();
@@ -716,6 +717,7 @@ export function MapSection({
                 Luftlinie. Die Meldung wird damit sofort nachprüfbar. */}
             <FeedbackAdmin onShowSpot={select} />
             <AdminUsers />
+            <AdminVisits />
           </div>
         ) : (
           <div className="h-full overflow-y-auto px-4 py-4">

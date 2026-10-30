@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "unterschleissheim",
+    "name": "Unterschleißheim",
+    "center": {
+      "lat": 48.27404765,
+      "lng": 11.56912705
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "unterschleissheim-b18e6cec8f",
+      "city": "unterschleissheim",
+      "label": "Im Klosterfeld",
+      "street": "Im Klosterfeld",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Unterschleißheim",
+      "spotCount": 1,
+      "lat": 48.27404765,
+      "lng": 11.5655948,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/455585152), ODbL"
+    },
+    {
+      "id": "unterschleissheim-6b7ec8aae8",
+      "city": "unterschleissheim",
+      "label": "P+R  S-Bahn Lohhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Unterschleißheim",
+      "spotCount": 1,
+      "lat": 48.2883702,
+      "lng": 11.580950350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/673581533), ODbL"
+    },
+    {
+      "id": "unterschleissheim-bb4230ce28",
+      "city": "unterschleissheim",
+      "label": "P+R Unterschleißheim",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Unterschleißheim",
+      "spotCount": 2,
+      "lat": 48.272543600000006,
+      "lng": 11.56912705,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/5079996), ODbL"
+    },
+    {
+      "id": "unterschleissheim-f3bcb65ab8",
+      "city": "unterschleissheim",
+      "label": "P+R Unterschleißheim (S1 - Ostbahnhof)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Unterschleißheim",
+      "spotCount": 1,
+      "lat": 48.273093700000004,
+      "lng": 11.567210000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/92480951), ODbL"
+    },
+    {
+      "id": "unterschleissheim-a63c941a6c",
+      "city": "unterschleissheim",
+      "label": "Südliche Ingolstädter Straße",
+      "street": "Südliche Ingolstädter Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Unterschleißheim",
+      "spotCount": 1,
+      "lat": 48.28775805000001,
+      "lng": 11.580879450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/507950074), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "isernhagen",
+    "name": "Isernhagen",
+    "center": {
+      "lat": 52.42770060000001,
+      "lng": 9.8371414
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "isernhagen-33323a6584",
+      "city": "isernhagen",
+      "label": "Behindertenparkplatz Isernhagen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Isernhagen",
+      "spotCount": 1,
+      "lat": 52.42770060000001,
+      "lng": 9.84480395,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/94566622), ODbL"
+    },
+    {
+      "id": "isernhagen-7913a51f25",
+      "city": "isernhagen",
+      "label": "Behindertenparkplatz Isernhagen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Isernhagen",
+      "spotCount": 2,
+      "lat": 52.424157300000005,
+      "lng": 9.8371414,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/592986335), ODbL"
+    },
+    {
+      "id": "isernhagen-a7e1616a5c",
+      "city": "isernhagen",
+      "label": "Behindertenparkplatz Isernhagen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Isernhagen",
+      "spotCount": 15,
+      "lat": 52.4552106,
+      "lng": 9.798672800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1410532547), ODbL"
+    }
+  ]
+}

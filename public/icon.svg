@@ -1,21 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="wheelee">
   <title>wheelee</title>
+  <!-- Überarbeitet 2026-10-30 (ToDo 12.7a): Kartenmarker mit dem internationalen
+       Zugänglichkeitssymbol aus Strichen statt gefüllter Flächen. Striche mit
+       runden Enden bleiben auch bei 32 px (Favicon) erkennbar; die gefüllte
+       Fassung in icon.svg läuft dort zu einem Fleck zusammen. -->
   <rect width="512" height="512" rx="112" fill="#1d4ed8" />
-  <!-- Kartenmarker als Umriss, darin das Rollstuhlsymbol -->
   <path
-    d="M256 86c-70 0-127 56-127 126 0 86 127 214 127 214s127-128 127-214c0-70-57-126-127-126z"
+    d="M256 70c-77 0-139 61-139 138 0 96 139 234 139 234s139-138 139-234c0-77-62-138-139-138z"
     fill="#ffffff"
   />
-  <g fill="#1d4ed8">
-    <!-- Kopf -->
-    <circle cx="232" cy="150" r="22" />
-    <!-- Rumpf und Arm -->
-    <path d="M214 186h30v52h58a14 14 0 0 1 0 28h-72a16 16 0 0 1-16-16v-64z" />
-    <!-- Rad -->
-    <path
-      d="M250 246a62 62 0 1 0 58 84h-30a34 34 0 1 1-28-54z"
-    />
-    <!-- Fußstütze -->
-    <path d="M300 268l26 56h32l-30-66z" />
+  <g fill="none" stroke="#1d4ed8" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Rumpf, Sitz und Fußstütze -->
+    <path d="M238 168v60h62l24 52" />
+    <!-- Rad: Dreiviertelkreis um den Sitz -->
+    <path d="M214 214a60 60 0 1 0 90 66" />
+    <!-- Arm -->
+    <path d="M238 196h42" />
   </g>
+  <circle cx="238" cy="130" r="21" fill="#1d4ed8" />
 </svg>

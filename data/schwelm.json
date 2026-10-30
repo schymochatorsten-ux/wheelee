@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "schwelm",
+    "name": "Schwelm",
+    "center": {
+      "lat": 51.2903066,
+      "lng": 7.2904271000000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "schwelm-c39cff1a00",
+      "city": "schwelm",
+      "label": "Behindertenparkplatz Schwelm",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwelm",
+      "spotCount": 4,
+      "lat": 51.292303700000005,
+      "lng": 7.2860033500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25074987), ODbL"
+    },
+    {
+      "id": "schwelm-1ce07ef20e",
+      "city": "schwelm",
+      "label": "Behindertenparkplatz Schwelm",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwelm",
+      "spotCount": 1,
+      "lat": 51.29148335000001,
+      "lng": 7.283037050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25075066), ODbL"
+    },
+    {
+      "id": "schwelm-5d8cfae509",
+      "city": "schwelm",
+      "label": "Behindertenparkplatz Schwelm",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwelm",
+      "spotCount": 2,
+      "lat": 51.2903066,
+      "lng": 7.2904271000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/304206189), ODbL"
+    },
+    {
+      "id": "schwelm-84eba10854",
+      "city": "schwelm",
+      "label": "Behindertenparkplatz Schwelm",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwelm",
+      "spotCount": 5,
+      "lat": 51.284150350000004,
+      "lng": 7.2956176500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/485209375), ODbL"
+    },
+    {
+      "id": "schwelm-c80015036e",
+      "city": "schwelm",
+      "label": "Behindertenparkplatz Schwelm",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schwelm",
+      "spotCount": 1,
+      "lat": 51.29418415000001,
+      "lng": 7.311367300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1013523156), ODbL"
+    },
+    {
+      "id": "schwelm-ad931b9a3e",
+      "city": "schwelm",
+      "label": "Behindertenparkplatz Schwelm",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwelm",
+      "spotCount": 1,
+      "lat": 51.2884078,
+      "lng": 7.28378835,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1226333529), ODbL"
+    },
+    {
+      "id": "schwelm-42f7e8c3e0",
+      "city": "schwelm",
+      "label": "P&R, Schwelm, BF (West)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwelm",
+      "spotCount": 5,
+      "lat": 51.29024075,
+      "lng": 7.291054750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/349098746), ODbL"
+    }
+  ]
+}

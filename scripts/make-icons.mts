@@ -41,6 +41,9 @@ async function main() {
       right: padding,
       background: "#1d4ed8",
     })
+    // Die abgerundeten Ecken des Quellsymbols sind durchsichtig und blieben im
+    // Maskable-Symbol als weiße Zacken stehen; Android beschneidet es ohnehin selbst.
+    .flatten({ background: "#1d4ed8" })
     .png()
     .toFile(path.join(projectRoot, "public", "icon-maskable.png"));
   console.log("icon-maskable.png");

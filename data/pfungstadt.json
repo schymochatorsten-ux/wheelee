@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "pfungstadt",
+    "name": "Pfungstadt",
+    "center": {
+      "lat": 49.80341235,
+      "lng": 8.60045045
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "pfungstadt-c7347fb647",
+      "city": "pfungstadt",
+      "label": "Behindertenparkplatz Pfungstadt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pfungstadt",
+      "spotCount": 1,
+      "lat": 49.80341235,
+      "lng": 8.60045045,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/246120955), ODbL"
+    },
+    {
+      "id": "pfungstadt-713f1c5f1c",
+      "city": "pfungstadt",
+      "label": "Behindertenparkplatz Pfungstadt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pfungstadt",
+      "spotCount": 1,
+      "lat": 49.8015668,
+      "lng": 8.6065666,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/389444883), ODbL"
+    },
+    {
+      "id": "pfungstadt-795b53ce7d",
+      "city": "pfungstadt",
+      "label": "Behindertenparkplatz Pfungstadt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pfungstadt",
+      "spotCount": 2,
+      "lat": 49.8092133,
+      "lng": 8.60271415,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1476157442), ODbL"
+    },
+    {
+      "id": "pfungstadt-5660b2db28",
+      "city": "pfungstadt",
+      "label": "Behindertenparkplatz Pfungstadt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pfungstadt",
+      "spotCount": 1,
+      "lat": 49.8032336,
+      "lng": 8.59990985,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1480117200), ODbL"
+    },
+    {
+      "id": "pfungstadt-13d78b5d76",
+      "city": "pfungstadt",
+      "label": "Behindertenparkplatz Pfungstadt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pfungstadt",
+      "spotCount": 1,
+      "lat": 49.803602350000006,
+      "lng": 8.59759625,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1481169558), ODbL"
+    }
+  ]
+}

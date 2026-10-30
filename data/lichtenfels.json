@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "lichtenfels",
+    "name": "Lichtenfels",
+    "center": {
+      "lat": 50.1458079,
+      "lng": 11.05969585
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "lichtenfels-363f1aaea8",
+      "city": "lichtenfels",
+      "label": "Am Main",
+      "street": "Am Main",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lichtenfels",
+      "spotCount": 2,
+      "lat": 50.149958950000006,
+      "lng": 11.056699,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1536501921), ODbL"
+    },
+    {
+      "id": "lichtenfels-338d2b7da7",
+      "city": "lichtenfels",
+      "label": "Lichtenfels Bahnhof",
+      "street": "Lichtenfels Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lichtenfels",
+      "spotCount": 1,
+      "lat": 50.1458079,
+      "lng": 11.05969585,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/319194745), ODbL"
+    },
+    {
+      "id": "lichtenfels-75d1d4b7fa",
+      "city": "lichtenfels",
+      "label": "Robert-Koch-Straße 7",
+      "street": "Robert-Koch-Straße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lichtenfels",
+      "spotCount": 1,
+      "lat": 50.13809445,
+      "lng": 11.073064550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/235048282), ODbL"
+    }
+  ]
+}

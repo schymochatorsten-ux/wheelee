@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "bad-salzungen",
+    "name": "Bad Salzungen",
+    "center": {
+      "lat": 50.81166465,
+      "lng": 10.231765900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "bad-salzungen-82c69815ac",
+      "city": "bad-salzungen",
+      "label": "Behindertenparkplatz Bad Salzungen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Salzungen",
+      "spotCount": 1,
+      "lat": 50.813883600000004,
+      "lng": 10.2332762,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12464879952), ODbL"
+    },
+    {
+      "id": "bad-salzungen-8549080fc4",
+      "city": "bad-salzungen",
+      "label": "Behindertenparkplatz Bad Salzungen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bad Salzungen",
+      "spotCount": 1,
+      "lat": 50.81166465,
+      "lng": 10.231765900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25720277), ODbL"
+    },
+    {
+      "id": "bad-salzungen-f3533730ed",
+      "city": "bad-salzungen",
+      "label": "Behindertenparkplatz Bad Salzungen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Salzungen",
+      "spotCount": 1,
+      "lat": 50.81566955,
+      "lng": 10.2300623,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26608049), ODbL"
+    },
+    {
+      "id": "bad-salzungen-5b2dcab21c",
+      "city": "bad-salzungen",
+      "label": "Behindertenparkplatz Bad Salzungen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Salzungen",
+      "spotCount": 1,
+      "lat": 50.807824800000006,
+      "lng": 10.2442436,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/442536621), ODbL"
+    },
+    {
+      "id": "bad-salzungen-ed7e2d40c8",
+      "city": "bad-salzungen",
+      "label": "Behindertenparkplatz Bad Salzungen",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Salzungen",
+      "spotCount": 1,
+      "lat": 50.81039165,
+      "lng": 10.22170345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1328137599), ODbL"
+    },
+    {
+      "id": "bad-salzungen-e758e0249b",
+      "city": "bad-salzungen",
+      "label": "Behindertenparkplatz Bad Salzungen",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Salzungen",
+      "spotCount": 1,
+      "lat": 50.81039065,
+      "lng": 10.221655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1328137600), ODbL"
+    }
+  ]
+}

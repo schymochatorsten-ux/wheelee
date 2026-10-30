@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "kreuztal",
+    "name": "Kreuztal",
+    "center": {
+      "lat": 50.942968300000004,
+      "lng": 8.008081700000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "kreuztal-1e134c3d7b",
+      "city": "kreuztal",
+      "label": "Behindertenparkplatz Kreuztal",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kreuztal",
+      "spotCount": 1,
+      "lat": 50.960667300000004,
+      "lng": 8.0159258,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9503246797), ODbL"
+    },
+    {
+      "id": "kreuztal-286cffb0b0",
+      "city": "kreuztal",
+      "label": "Behindertenparkplatz Kreuztal",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kreuztal",
+      "spotCount": 1,
+      "lat": 50.93535315,
+      "lng": 8.0039586,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/228938905), ODbL"
+    },
+    {
+      "id": "kreuztal-f339da8634",
+      "city": "kreuztal",
+      "label": "Behindertenparkplatz Kreuztal",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kreuztal",
+      "spotCount": 1,
+      "lat": 50.99598925000001,
+      "lng": 7.9537736,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/298885653), ODbL"
+    },
+    {
+      "id": "kreuztal-070538b5f2",
+      "city": "kreuztal",
+      "label": "Behindertenparkplatz Kreuztal",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kreuztal",
+      "spotCount": 1,
+      "lat": 50.93582295,
+      "lng": 8.004010000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/934866359), ODbL"
+    },
+    {
+      "id": "kreuztal-2205ad4891",
+      "city": "kreuztal",
+      "label": "Behindertenparkplatz Kreuztal",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kreuztal",
+      "spotCount": 3,
+      "lat": 50.942968300000004,
+      "lng": 8.0101764,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1034956955), ODbL"
+    },
+    {
+      "id": "kreuztal-5c77fb3e6c",
+      "city": "kreuztal",
+      "label": "Wanderparkplatz Mattenbach",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kreuztal",
+      "spotCount": 1,
+      "lat": 50.940275150000005,
+      "lng": 8.008081700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/870716639), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "seevetal",
+    "name": "Seevetal",
+    "center": {
+      "lat": 53.346985450000005,
+      "lng": 10.039382450000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "seevetal-71a26fae38",
+      "city": "seevetal",
+      "label": "Behindertenparkplatz Seevetal",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Seevetal",
+      "spotCount": 2,
+      "lat": 53.346985450000005,
+      "lng": 10.039382450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1086883577), ODbL"
+    },
+    {
+      "id": "seevetal-ee110e9ef6",
+      "city": "seevetal",
+      "label": "Behindertenparkplatz Seevetal",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Seevetal",
+      "spotCount": 1,
+      "lat": 53.33185345,
+      "lng": 10.0420417,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1087264145), ODbL"
+    },
+    {
+      "id": "seevetal-06af353081",
+      "city": "seevetal",
+      "label": "Behindertenparkplatz Seevetal",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Seevetal",
+      "spotCount": 1,
+      "lat": 53.331881700000004,
+      "lng": 10.0420072,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1087264146), ODbL"
+    },
+    {
+      "id": "seevetal-a52ab73031",
+      "city": "seevetal",
+      "label": "Behindertenparkplatz Seevetal",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Seevetal",
+      "spotCount": 1,
+      "lat": 53.3470907,
+      "lng": 10.0393729,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1087264147), ODbL"
+    },
+    {
+      "id": "seevetal-e27829cb8f",
+      "city": "seevetal",
+      "label": "Behindertenparkplatz Seevetal",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Seevetal",
+      "spotCount": 1,
+      "lat": 53.34705815,
+      "lng": 10.0393755,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1087264148), ODbL"
+    },
+    {
+      "id": "seevetal-6c0c7e7f80",
+      "city": "seevetal",
+      "label": "Behindertenparkplatz Seevetal",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Seevetal",
+      "spotCount": 1,
+      "lat": 53.3779784,
+      "lng": 9.9601814,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1097920160), ODbL"
+    },
+    {
+      "id": "seevetal-43a625c728",
+      "city": "seevetal",
+      "label": "PKW",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Seevetal",
+      "spotCount": 2,
+      "lat": 53.331967950000006,
+      "lng": 10.0419381,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1086934631), ODbL"
+    }
+  ]
+}

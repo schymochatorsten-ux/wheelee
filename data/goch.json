@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "goch",
+    "name": "Goch",
+    "center": {
+      "lat": 51.6808827,
+      "lng": 6.163631800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "goch-b911c5eb80",
+      "city": "goch",
+      "label": "Behindertenparkplatz Goch",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Goch",
+      "spotCount": 2,
+      "lat": 51.672308400000006,
+      "lng": 6.163631800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1030417129), ODbL"
+    },
+    {
+      "id": "goch-6a5b73620d",
+      "city": "goch",
+      "label": "Netto",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Goch",
+      "spotCount": 1,
+      "lat": 51.718103150000005,
+      "lng": 6.1650105,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1486526454), ODbL"
+    },
+    {
+      "id": "goch-8a13715dc4",
+      "city": "goch",
+      "label": "P&R,Goch, Süd",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Goch",
+      "spotCount": 3,
+      "lat": 51.6808827,
+      "lng": 6.1605601000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/10903382), ODbL"
+    }
+  ]
+}

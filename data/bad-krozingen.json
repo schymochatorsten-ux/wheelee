@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "bad-krozingen",
+    "name": "Bad Krozingen",
+    "center": {
+      "lat": 47.919691150000006,
+      "lng": 7.69722305
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "bad-krozingen-2e686548e0",
+      "city": "bad-krozingen",
+      "label": "Bad Krozingen Busbahnhof",
+      "street": "Bad Krozingen Busbahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Bad Krozingen",
+      "spotCount": 2,
+      "lat": 47.9196814,
+      "lng": 7.6972074500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1418919504), ODbL"
+    },
+    {
+      "id": "bad-krozingen-6da129fa0e",
+      "city": "bad-krozingen",
+      "label": "Bad Krozingen Busbahnhof",
+      "street": "Bad Krozingen Busbahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Krozingen",
+      "spotCount": 1,
+      "lat": 47.919671650000005,
+      "lng": 7.69722305,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1418919505), ODbL"
+    },
+    {
+      "id": "bad-krozingen-4aebccb02e",
+      "city": "bad-krozingen",
+      "label": "Bad Krozingen Busbahnhof",
+      "street": "Bad Krozingen Busbahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Krozingen",
+      "spotCount": 1,
+      "lat": 47.919691150000006,
+      "lng": 7.697191850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1418919506), ODbL"
+    },
+    {
+      "id": "bad-krozingen-d836379188",
+      "city": "bad-krozingen",
+      "label": "Bahnhofstraße 5",
+      "street": "Bahnhofstraße",
+      "houseNumber": "5",
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Bad Krozingen",
+      "spotCount": 1,
+      "lat": 47.91982365,
+      "lng": 7.698280850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1304264060), ODbL"
+    },
+    {
+      "id": "bad-krozingen-d0604185a7",
+      "city": "bad-krozingen",
+      "label": "Bahnhofstraße 5",
+      "street": "Bahnhofstraße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Bad Krozingen",
+      "spotCount": 1,
+      "lat": 47.91986645,
+      "lng": 7.698341350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1304264061), ODbL"
+    }
+  ]
+}

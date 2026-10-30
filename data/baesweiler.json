@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "baesweiler",
+    "name": "Baesweiler",
+    "center": {
+      "lat": 50.9110287,
+      "lng": 6.182776550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "baesweiler-0724cdc0a4",
+      "city": "baesweiler",
+      "label": "Behindertenparkplatz Baesweiler",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Baesweiler",
+      "spotCount": 2,
+      "lat": 50.9025108,
+      "lng": 6.1820719,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/259074376), ODbL"
+    },
+    {
+      "id": "baesweiler-720d3fe7f8",
+      "city": "baesweiler",
+      "label": "Behindertenparkplatz Baesweiler",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Baesweiler",
+      "spotCount": 3,
+      "lat": 50.9110287,
+      "lng": 6.164219200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26572189), ODbL"
+    },
+    {
+      "id": "baesweiler-81e23707e4",
+      "city": "baesweiler",
+      "label": "Behindertenparkplatz Baesweiler",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Baesweiler",
+      "spotCount": 1,
+      "lat": 50.91261155,
+      "lng": 6.1533841,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/500465669), ODbL"
+    },
+    {
+      "id": "baesweiler-9bf02f8478",
+      "city": "baesweiler",
+      "label": "Behindertenparkplatz Baesweiler",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Baesweiler",
+      "spotCount": 1,
+      "lat": 50.923008949999996,
+      "lng": 6.20285425,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/822894239), ODbL"
+    },
+    {
+      "id": "baesweiler-c3b5b6db5b",
+      "city": "baesweiler",
+      "label": "Behindertenparkplatz Baesweiler",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Baesweiler",
+      "spotCount": 2,
+      "lat": 50.908013800000006,
+      "lng": 6.182776550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/823094416), ODbL"
+    },
+    {
+      "id": "baesweiler-981e552cb2",
+      "city": "baesweiler",
+      "label": "Behindertenparkplatz Baesweiler",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Baesweiler",
+      "spotCount": 1,
+      "lat": 50.90959685,
+      "lng": 6.194527000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1433311515), ODbL"
+    }
+  ]
+}

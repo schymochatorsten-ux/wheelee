@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "brilon",
+    "name": "Brilon",
+    "center": {
+      "lat": 51.396090050000005,
+      "lng": 8.57655875
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "brilon-52ae5219db",
+      "city": "brilon",
+      "label": "Behindertenparkplatz Brilon",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Brilon",
+      "spotCount": 1,
+      "lat": 51.38766095,
+      "lng": 8.58174575,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/102211247), ODbL"
+    },
+    {
+      "id": "brilon-65eb946cfe",
+      "city": "brilon",
+      "label": "Behindertenparkplatz Brilon",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brilon",
+      "spotCount": 1,
+      "lat": 51.3991442,
+      "lng": 8.575051250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/147014837), ODbL"
+    },
+    {
+      "id": "brilon-acbd920f92",
+      "city": "brilon",
+      "label": "Behindertenparkplatz Brilon",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Brilon",
+      "spotCount": 1,
+      "lat": 51.396090050000005,
+      "lng": 8.5661396,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/262583211), ODbL"
+    },
+    {
+      "id": "brilon-ccbafd4a57",
+      "city": "brilon",
+      "label": "Behindertenparkplatz Brilon",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brilon",
+      "spotCount": 4,
+      "lat": 51.396774900000004,
+      "lng": 8.57519485,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/329357198), ODbL"
+    },
+    {
+      "id": "brilon-1758ea70ae",
+      "city": "brilon",
+      "label": "Behindertenparkplatz Brilon",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brilon",
+      "spotCount": 1,
+      "lat": 51.39336765,
+      "lng": 8.57655875,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1028784068), ODbL"
+    },
+    {
+      "id": "brilon-53b0e00f6d",
+      "city": "brilon",
+      "label": "Behindertenparkplatz Brilon",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brilon",
+      "spotCount": 3,
+      "lat": 51.3782362,
+      "lng": 8.640369750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1135070174), ODbL"
+    }
+  ]
+}

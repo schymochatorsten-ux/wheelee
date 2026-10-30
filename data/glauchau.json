@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "glauchau",
+    "name": "Glauchau",
+    "center": {
+      "lat": 50.827828350000004,
+      "lng": 12.545531150000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "glauchau-4be82f399f",
+      "city": "glauchau",
+      "label": "Behindertenparkplatz Glauchau",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Glauchau",
+      "spotCount": 1,
+      "lat": 50.826287650000005,
+      "lng": 12.51440945,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/15544851), ODbL"
+    },
+    {
+      "id": "glauchau-4ac74bfa69",
+      "city": "glauchau",
+      "label": "Behindertenparkplatz Glauchau",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Glauchau",
+      "spotCount": 2,
+      "lat": 50.827828350000004,
+      "lng": 12.545531150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1123137412), ODbL"
+    },
+    {
+      "id": "glauchau-d6689c4cb8",
+      "city": "glauchau",
+      "label": "Behindertenparkplatz Glauchau",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Glauchau",
+      "spotCount": 1,
+      "lat": 50.82737745,
+      "lng": 12.54504865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1156803727), ODbL"
+    },
+    {
+      "id": "glauchau-b426466d2e",
+      "city": "glauchau",
+      "label": "Behindertenparkplatz Glauchau",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Glauchau",
+      "spotCount": 1,
+      "lat": 50.82797070000001,
+      "lng": 12.547576800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1314158705), ODbL"
+    }
+  ]
+}

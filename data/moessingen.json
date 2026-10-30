@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "moessingen",
+    "name": "Mössingen",
+    "center": {
+      "lat": 48.4062459,
+      "lng": 9.057523500000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "moessingen-de68bbd096",
+      "city": "moessingen",
+      "label": "Breitestraße",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mössingen",
+      "spotCount": 2,
+      "lat": 48.404596600000005,
+      "lng": 9.0529185,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/537687372), ODbL"
+    },
+    {
+      "id": "moessingen-e0da16e5a1",
+      "city": "moessingen",
+      "label": "Hafnergasse",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mössingen",
+      "spotCount": 1,
+      "lat": 48.4062459,
+      "lng": 9.0593701,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/284370161), ODbL"
+    },
+    {
+      "id": "moessingen-0ca9acd8ba",
+      "city": "moessingen",
+      "label": "Mühlegärtle",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mössingen",
+      "spotCount": 1,
+      "lat": 48.4077357,
+      "lng": 9.059128600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25611133), ODbL"
+    },
+    {
+      "id": "moessingen-29879115ce",
+      "city": "moessingen",
+      "label": "Parkhaus Stadtmitte",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "PH,Mo-Su 06:00-22:00",
+      "district": "Mössingen",
+      "spotCount": 2,
+      "lat": 48.405303950000004,
+      "lng": 9.057523500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/310193358), ODbL"
+    },
+    {
+      "id": "moessingen-0be02ebcb5",
+      "city": "moessingen",
+      "label": "Sulzgasse",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mössingen",
+      "spotCount": 2,
+      "lat": 48.40662465,
+      "lng": 9.05729765,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/305941351), ODbL"
+    }
+  ]
+}

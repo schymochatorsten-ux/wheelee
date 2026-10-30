@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "borna",
+    "name": "Borna",
+    "center": {
+      "lat": 51.12706585,
+      "lng": 12.499835950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "borna-4db585e3c6",
+      "city": "borna",
+      "label": "Behindertenparkplatz Borna",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Borna",
+      "spotCount": 1,
+      "lat": 51.123972900000005,
+      "lng": 12.4925458,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8047493158), ODbL"
+    },
+    {
+      "id": "borna-88c6434e4b",
+      "city": "borna",
+      "label": "Behindertenparkplatz Borna",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Borna",
+      "spotCount": 1,
+      "lat": 51.1271489,
+      "lng": 12.5106727,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8549718557), ODbL"
+    },
+    {
+      "id": "borna-5b60aa032b",
+      "city": "borna",
+      "label": "Behindertenparkplatz Borna",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Borna",
+      "spotCount": 2,
+      "lat": 51.12044385,
+      "lng": 12.4875541,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32881586), ODbL"
+    },
+    {
+      "id": "borna-5778ebbc77",
+      "city": "borna",
+      "label": "Behindertenparkplatz Borna",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Borna",
+      "spotCount": 1,
+      "lat": 51.13413415000001,
+      "lng": 12.50327655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/33876446), ODbL"
+    },
+    {
+      "id": "borna-374a4106aa",
+      "city": "borna",
+      "label": "Behindertenparkplatz Borna",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Borna",
+      "spotCount": 1,
+      "lat": 51.12706585,
+      "lng": 12.504896800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/725379356), ODbL"
+    },
+    {
+      "id": "borna-e86b2617d0",
+      "city": "borna",
+      "label": "Behindertenparkplatz Borna",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Borna",
+      "spotCount": 1,
+      "lat": 51.12881865,
+      "lng": 12.499835950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/928994781), ODbL"
+    },
+    {
+      "id": "borna-f8fb4463ec",
+      "city": "borna",
+      "label": "EDEKA",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Borna",
+      "spotCount": 1,
+      "lat": 51.1255029,
+      "lng": 12.496215750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32869216), ODbL"
+    }
+  ]
+}

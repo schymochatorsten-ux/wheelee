@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "dreieich",
+    "name": "Dreieich",
+    "center": {
+      "lat": 50.0038335,
+      "lng": 8.7034229
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "dreieich-9d5fc8e7c7",
+      "city": "dreieich",
+      "label": "Behindertenparkplatz Dreieich",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dreieich",
+      "spotCount": 1,
+      "lat": 50.0038335,
+      "lng": 8.7050078,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/121527076), ODbL"
+    },
+    {
+      "id": "dreieich-8c8e8df173",
+      "city": "dreieich",
+      "label": "Behindertenparkplatz Dreieich",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dreieich",
+      "spotCount": 6,
+      "lat": 50.005011100000004,
+      "lng": 8.7026246,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/145194436), ODbL"
+    },
+    {
+      "id": "dreieich-d2929d4baf",
+      "city": "dreieich",
+      "label": "Behindertenparkplatz Dreieich",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dreieich",
+      "spotCount": 1,
+      "lat": 50.00350925000001,
+      "lng": 8.703035,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/437871107), ODbL"
+    },
+    {
+      "id": "dreieich-62244910c7",
+      "city": "dreieich",
+      "label": "Behindertenparkplatz Dreieich",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dreieich",
+      "spotCount": 2,
+      "lat": 50.0040989,
+      "lng": 8.7034229,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/437871443), ODbL"
+    },
+    {
+      "id": "dreieich-e1bd35327d",
+      "city": "dreieich",
+      "label": "Behindertenparkplatz Dreieich",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dreieich",
+      "spotCount": 1,
+      "lat": 49.97903445,
+      "lng": 8.74505785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1348258456), ODbL"
+    }
+  ]
+}

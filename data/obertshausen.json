@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "obertshausen",
+    "name": "Obertshausen",
+    "center": {
+      "lat": 50.06680935,
+      "lng": 8.8326615
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "obertshausen-d624896052",
+      "city": "obertshausen",
+      "label": "Behindertenparkplatz Obertshausen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Obertshausen",
+      "spotCount": 1,
+      "lat": 50.06680935,
+      "lng": 8.8326615,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1382824465), ODbL"
+    }
+  ]
+}

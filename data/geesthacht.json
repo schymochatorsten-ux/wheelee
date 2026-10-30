@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "geesthacht",
+    "name": "Geesthacht",
+    "center": {
+      "lat": 53.4279668,
+      "lng": 10.3724643
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "geesthacht-3d7be41daa",
+      "city": "geesthacht",
+      "label": "Behindertenparkplatz Geesthacht",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Geesthacht",
+      "spotCount": 2,
+      "lat": 53.42762905000001,
+      "lng": 10.372190150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/201246754), ODbL"
+    },
+    {
+      "id": "geesthacht-324bc1c47e",
+      "city": "geesthacht",
+      "label": "Behindertenparkplatz Geesthacht",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Geesthacht",
+      "spotCount": 1,
+      "lat": 53.427996400000005,
+      "lng": 10.372483850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1396304261), ODbL"
+    },
+    {
+      "id": "geesthacht-8117d3197f",
+      "city": "geesthacht",
+      "label": "Behindertenparkplatz Geesthacht",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Geesthacht",
+      "spotCount": 1,
+      "lat": 53.4279668,
+      "lng": 10.3724643,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1396304266), ODbL"
+    }
+  ]
+}

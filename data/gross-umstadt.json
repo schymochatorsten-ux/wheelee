@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "gross-umstadt",
+    "name": "Groß-Umstadt",
+    "center": {
+      "lat": 49.86665705,
+      "lng": 8.92929325
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "gross-umstadt-745a963415",
+      "city": "gross-umstadt",
+      "label": "Behindertenparkplatz Groß-Umstadt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Groß-Umstadt",
+      "spotCount": 2,
+      "lat": 49.86665705,
+      "lng": 8.92929325,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/46918772), ODbL"
+    },
+    {
+      "id": "gross-umstadt-89604cb920",
+      "city": "gross-umstadt",
+      "label": "Behindertenparkplatz Groß-Umstadt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Groß-Umstadt",
+      "spotCount": 2,
+      "lat": 49.867933050000005,
+      "lng": 8.937658800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/275308535), ODbL"
+    },
+    {
+      "id": "gross-umstadt-add585aa6d",
+      "city": "gross-umstadt",
+      "label": "Behindertenparkplatz Groß-Umstadt",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Groß-Umstadt",
+      "spotCount": 1,
+      "lat": 49.86358335,
+      "lng": 8.925246900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1556545204), ODbL"
+    },
+    {
+      "id": "gross-umstadt-64d30c1eb1",
+      "city": "gross-umstadt",
+      "label": "Behindertenparkplatz Groß-Umstadt",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Groß-Umstadt",
+      "spotCount": 1,
+      "lat": 49.8636125,
+      "lng": 8.92523015,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1556545205), ODbL"
+    }
+  ]
+}

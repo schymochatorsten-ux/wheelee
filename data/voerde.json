@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "voerde",
+    "name": "Voerde (Niederrhein)",
+    "center": {
+      "lat": 51.598434350000005,
+      "lng": 6.6811255
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "voerde-ad31cb3132",
+      "city": "voerde",
+      "label": "Behindertenparkplatz Voerde (Niederrhein)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Voerde (Niederrhein)",
+      "spotCount": 1,
+      "lat": 51.5967904,
+      "lng": 6.6811255,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/193657153), ODbL"
+    },
+    {
+      "id": "voerde-7b4fd1bff0",
+      "city": "voerde",
+      "label": "Behindertenparkplatz Voerde (Niederrhein)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Voerde (Niederrhein)",
+      "spotCount": 2,
+      "lat": 51.598434350000005,
+      "lng": 6.687029000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/352824452), ODbL"
+    },
+    {
+      "id": "voerde-f5d9401c17",
+      "city": "voerde",
+      "label": "Behindertenparkplatz Voerde (Niederrhein)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Voerde (Niederrhein)",
+      "spotCount": 3,
+      "lat": 51.59637705,
+      "lng": 6.66897635,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1327191092), ODbL"
+    },
+    {
+      "id": "voerde-b9adef45b1",
+      "city": "voerde",
+      "label": "P&R, Friedrichsfeld (Niederrhein)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Voerde (Niederrhein)",
+      "spotCount": 2,
+      "lat": 51.62812100000001,
+      "lng": 6.646257200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/39762168), ODbL"
+    }
+  ]
+}

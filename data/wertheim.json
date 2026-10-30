@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wertheim",
+    "name": "Wertheim",
+    "center": {
+      "lat": 49.76022125,
+      "lng": 9.51935825
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "wertheim-dae08f40b4",
+      "city": "wertheim",
+      "label": "Eichelgasse 48",
+      "street": "Eichelgasse",
+      "houseNumber": "48",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Wertheim",
+      "spotCount": 1,
+      "lat": 49.76022125,
+      "lng": 9.51935825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1526041762), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "rheda-wiedenbrueck",
+    "name": "Rheda-Wiedenbrück",
+    "center": {
+      "lat": 51.85059270000001,
+      "lng": 8.294051500000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "rheda-wiedenbrueck-2fa442cda2",
+      "city": "rheda-wiedenbrueck",
+      "label": "Behindertenparkplatz Rheda-Wiedenbrück",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Rheda-Wiedenbrück",
+      "spotCount": 7,
+      "lat": 51.85666065,
+      "lng": 8.2878453,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25888804), ODbL"
+    },
+    {
+      "id": "rheda-wiedenbrueck-bd91f47c52",
+      "city": "rheda-wiedenbrueck",
+      "label": "Behindertenparkplatz Rheda-Wiedenbrück",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rheda-Wiedenbrück",
+      "spotCount": 1,
+      "lat": 51.823039050000006,
+      "lng": 8.313606100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/150319545), ODbL"
+    },
+    {
+      "id": "rheda-wiedenbrueck-c65457710f",
+      "city": "rheda-wiedenbrueck",
+      "label": "Behindertenparkplatz Rheda-Wiedenbrück",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rheda-Wiedenbrück",
+      "spotCount": 2,
+      "lat": 51.8328915,
+      "lng": 8.32006565,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/383420671), ODbL"
+    },
+    {
+      "id": "rheda-wiedenbrueck-99e63f7560",
+      "city": "rheda-wiedenbrueck",
+      "label": "Behindertenparkplatz Rheda-Wiedenbrück",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rheda-Wiedenbrück",
+      "spotCount": 2,
+      "lat": 51.85059270000001,
+      "lng": 8.309690150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/400662774), ODbL"
+    },
+    {
+      "id": "rheda-wiedenbrueck-510918cd31",
+      "city": "rheda-wiedenbrueck",
+      "label": "Behindertenparkplatz Rheda-Wiedenbrück",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rheda-Wiedenbrück",
+      "spotCount": 2,
+      "lat": 51.8575575,
+      "lng": 8.286046850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/640271384), ODbL"
+    },
+    {
+      "id": "rheda-wiedenbrueck-92381a3ac2",
+      "city": "rheda-wiedenbrueck",
+      "label": "Behindertenparkplatz Rheda-Wiedenbrück",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rheda-Wiedenbrück",
+      "spotCount": 1,
+      "lat": 51.83127520000001,
+      "lng": 8.2192759,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1390410446), ODbL"
+    },
+    {
+      "id": "rheda-wiedenbrueck-2adf319491",
+      "city": "rheda-wiedenbrueck",
+      "label": "Domhof / Zentrum",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Rheda-Wiedenbrück",
+      "spotCount": 3,
+      "lat": 51.85424950000001,
+      "lng": 8.294051500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/216257478), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "rottweil",
+    "name": "Rottweil",
+    "center": {
+      "lat": 48.1587988,
+      "lng": 8.6286643
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "rottweil-d9a62fe03b",
+      "city": "rottweil",
+      "label": "Brugger Straße",
+      "street": "Brugger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rottweil",
+      "spotCount": 1,
+      "lat": 48.15878845,
+      "lng": 8.628547900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1460974896), ODbL"
+    },
+    {
+      "id": "rottweil-c5b16a2c3f",
+      "city": "rottweil",
+      "label": "Brugger Straße",
+      "street": "Brugger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rottweil",
+      "spotCount": 1,
+      "lat": 48.1587988,
+      "lng": 8.6286643,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1460974898), ODbL"
+    },
+    {
+      "id": "rottweil-1e5d94e2bf",
+      "city": "rottweil",
+      "label": "Eisenbahnstraße",
+      "street": "Eisenbahnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rottweil",
+      "spotCount": 1,
+      "lat": 48.1623252,
+      "lng": 8.63573875,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/40437521), ODbL"
+    },
+    {
+      "id": "rottweil-06c756a3ab",
+      "city": "rottweil",
+      "label": "Kapuziner",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rottweil",
+      "spotCount": 3,
+      "lat": 48.166182750000004,
+      "lng": 8.624900750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/137112368), ODbL"
+    },
+    {
+      "id": "rottweil-e12542362e",
+      "city": "rottweil",
+      "label": "Lauffener Straße",
+      "street": "Lauffener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rottweil",
+      "spotCount": 1,
+      "lat": 48.12683,
+      "lng": 8.6707681,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1390971081), ODbL"
+    },
+    {
+      "id": "rottweil-596d95fbee",
+      "city": "rottweil",
+      "label": "Turnhalle Göllsdorf",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rottweil",
+      "spotCount": 2,
+      "lat": 48.16634085,
+      "lng": 8.661676750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/40407674), ODbL"
+    },
+    {
+      "id": "rottweil-c09510ab66",
+      "city": "rottweil",
+      "label": "Züricher Straße",
+      "street": "Züricher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rottweil",
+      "spotCount": 2,
+      "lat": 48.158700350000004,
+      "lng": 8.6078808,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1051376066), ODbL"
+    }
+  ]
+}

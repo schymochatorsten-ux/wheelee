@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "ehingen",
+    "name": "Ehingen (Donau)",
+    "center": {
+      "lat": 48.285775750000006,
+      "lng": 9.72506805
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "ehingen-802fe374ce",
+      "city": "ehingen",
+      "label": "P6 Tränkberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Ehingen (Donau)",
+      "spotCount": 2,
+      "lat": 48.2842132,
+      "lng": 9.7260588,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/715763137), ODbL"
+    },
+    {
+      "id": "ehingen-3327b2931b",
+      "city": "ehingen",
+      "label": "P7 - Viehmarkt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Ehingen (Donau)",
+      "spotCount": 1,
+      "lat": 48.28390385,
+      "lng": 9.7231029,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/182612891), ODbL"
+    },
+    {
+      "id": "ehingen-9e842a8b0e",
+      "city": "ehingen",
+      "label": "Pfisterstraße",
+      "street": "Pfisterstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ehingen (Donau)",
+      "spotCount": 2,
+      "lat": 48.2858485,
+      "lng": 9.72543525,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/775935183), ODbL"
+    },
+    {
+      "id": "ehingen-12df340959",
+      "city": "ehingen",
+      "label": "Pfisterstraße",
+      "street": "Pfisterstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Ehingen (Donau)",
+      "spotCount": 1,
+      "lat": 48.28578625,
+      "lng": 9.72506805,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1392176425), ODbL"
+    },
+    {
+      "id": "ehingen-5fa319a0f9",
+      "city": "ehingen",
+      "label": "Pfisterstraße",
+      "street": "Pfisterstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Ehingen (Donau)",
+      "spotCount": 1,
+      "lat": 48.285775750000006,
+      "lng": 9.72503195,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1392176426), ODbL"
+    }
+  ]
+}

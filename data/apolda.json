@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "apolda",
+    "name": "Apolda",
+    "center": {
+      "lat": 51.0311384,
+      "lng": 11.514590550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "apolda-a6836300a6",
+      "city": "apolda",
+      "label": "Behindertenparkplatz Apolda",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Apolda",
+      "spotCount": 2,
+      "lat": 51.031277700000004,
+      "lng": 11.51252465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/179086373), ODbL"
+    },
+    {
+      "id": "apolda-af9643455a",
+      "city": "apolda",
+      "label": "Behindertenparkplatz Apolda",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Apolda",
+      "spotCount": 2,
+      "lat": 51.02520680000001,
+      "lng": 11.514590550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1287320277), ODbL"
+    },
+    {
+      "id": "apolda-08e39bc971",
+      "city": "apolda",
+      "label": "Hugo-Ruppe-Platz",
+      "street": "Hugo-Ruppe-Platz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Apolda",
+      "spotCount": 5,
+      "lat": 51.0311384,
+      "lng": 11.52475435,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/448969671), ODbL"
+    }
+  ]
+}

@@ -116,6 +116,10 @@ export function searchLocalPlaces(query: string, origin: LatLng | null, limit = 
   found.sort(
     (a, b) =>
       a.rank - b.rank ||
+      // Ein Ort vor einer gleich gut passenden Straße: Wer „Frankfurt“ tippt, meint
+      // meist die Stadt, nicht die nächste „Frankfurter Straße“. Mit wachsendem
+      // Bestand (2e.6) gibt es mehr Straßen dieser Art als Plätze in der Liste.
+      Number(b.entry.place.kind === "city") - Number(a.entry.place.kind === "city") ||
       (origin ? a.meters - b.meters : 0) ||
       b.entry.weight - a.entry.weight ||
       a.entry.place.label.localeCompare(b.entry.place.label, "de"),

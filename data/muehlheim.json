@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "muehlheim",
+    "name": "Mühlheim am Main",
+    "center": {
+      "lat": 50.1234753,
+      "lng": 8.835766150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "muehlheim-339b34fbde",
+      "city": "muehlheim",
+      "label": "Behindertenparkplatz Mühlheim am Main",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mühlheim am Main",
+      "spotCount": 1,
+      "lat": 50.123870200000006,
+      "lng": 8.82990985,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/183478338), ODbL"
+    },
+    {
+      "id": "muehlheim-7bf3dcd55a",
+      "city": "muehlheim",
+      "label": "Behindertenparkplatz Mühlheim am Main",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mühlheim am Main",
+      "spotCount": 1,
+      "lat": 50.10900240000001,
+      "lng": 8.835986850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/301434987), ODbL"
+    },
+    {
+      "id": "muehlheim-6c669abf86",
+      "city": "muehlheim",
+      "label": "Behindertenparkplatz Mühlheim am Main",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mühlheim am Main",
+      "spotCount": 1,
+      "lat": 50.1090909,
+      "lng": 8.835766150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/301434988), ODbL"
+    },
+    {
+      "id": "muehlheim-294b82eb09",
+      "city": "muehlheim",
+      "label": "Behindertenparkplatz Mühlheim am Main",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mühlheim am Main",
+      "spotCount": 2,
+      "lat": 50.122393100000004,
+      "lng": 8.83087415,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1016180151), ODbL"
+    },
+    {
+      "id": "muehlheim-c89d7ce20b",
+      "city": "muehlheim",
+      "label": "Brückenmühl-Parkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mühlheim am Main",
+      "spotCount": 1,
+      "lat": 50.1234753,
+      "lng": 8.833237650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/7686125), ODbL"
+    },
+    {
+      "id": "muehlheim-e4bb3423ca",
+      "city": "muehlheim",
+      "label": "Wohnbau Mühlheim am Main GmbH",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Mühlheim am Main",
+      "spotCount": 1,
+      "lat": 50.124224350000006,
+      "lng": 8.84303195,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/248831264), ODbL"
+    },
+    {
+      "id": "muehlheim-99597cfaa1",
+      "city": "muehlheim",
+      "label": "Wohnbau Mühlheim am Main GmbH",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Mühlheim am Main",
+      "spotCount": 1,
+      "lat": 50.124248,
+      "lng": 8.8427331,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/248831265), ODbL"
+    }
+  ]
+}

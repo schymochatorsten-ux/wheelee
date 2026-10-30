@@ -293,24 +293,47 @@ function toSpot(element: OverpassElement, slug: string, cityName: string): Parki
  * nirgends zu sehen, bis 473 Gemeinden geschrieben waren und wieder entfernt
  * werden mussten. Ein Probelauf soll die Zahl von selbst zeigen.
  */
+/** Ausdehnung der Standorte einer Gemeinde in Kilometern (Diagonale des umschließenden Rechtecks). */
+export function spreadKm(spots: readonly { lat: number | null; lng: number | null }[]): number {
+  const located = spots.filter((s) => s.lat !== null && s.lng !== null);
+  if (located.length < 2) return 0;
+  const lats = located.map((s) => s.lat!);
+  const lngs = located.map((s) => s.lng!);
+  const midLat = (Math.min(...lats) + Math.max(...lats)) / 2;
+  const dy = (Math.max(...lats) - Math.min(...lats)) * 110.54;
+  const dx = (Math.max(...lngs) - Math.min(...lngs)) * 111.32 * Math.cos((midLat * Math.PI) / 180);
+  return Math.hypot(dx, dy);
+}
+
+/**
+ * Die Prüfungen aus CLAUDE.md, vor dem Schreiben: Dichte über dem Dreifachen des
+ * Medians und Streuung über 15 km. **Gibt die Gemeinden an der Reihe zurück,
+ * die eine der beiden Prüfungen nicht bestehen** – sie werden nicht geschrieben,
+ * sondern zum Ansehen aufgeführt (D-07: jede Stufe erst nach den Prüfungen). Ein
+ * Befund ist kein Beweis (Witten, Hattingen: dort ist OSM einfach dichter
+ * erfasst), aber „lieber kein Import als ein falscher“.
+ */
 function dichteMelden(
   byCity: Map<string, ParkingSpot[]>,
   imRegister: Map<string, { name: string; population: number }>,
-): void {
-  const dichten: { name: string; wert: number; standorte: number }[] = [];
+  anDerReihe: ReadonlySet<string> = new Set(),
+): Set<string> {
+  const dichten: { slug: string; name: string; wert: number; standorte: number }[] = [];
+  const flagged = new Set<string>();
 
   for (const [slug, spots] of byCity) {
     const city = imRegister.get(slug);
     if (!city || city.population <= 0) continue;
     const plaetze = spots.reduce((sum, spot) => sum + (spot.spotCount ?? 1), 0);
     dichten.push({
+      slug,
       name: city.name,
       wert: (plaetze / city.population) * 10_000,
       standorte: spots.length,
     });
   }
 
-  if (dichten.length === 0) return;
+  if (dichten.length === 0) return flagged;
 
   const sortiert = [...dichten].sort((a, b) => a.wert - b.wert);
   const median = sortiert[Math.floor(sortiert.length / 2)].wert;
@@ -320,18 +343,48 @@ function dichteMelden(
 
   if (auffaellig.length === 0) {
     console.log("  keine Gemeinde über dem Dreifachen des Medians");
-    return;
+  } else {
+    console.log(
+      `  ⚠️ ${auffaellig.length} Gemeinden über dem Dreifachen (alle Größen; Kleinstgemeinden ` +
+        "mit ein, zwei Standorten rutschen leicht darüber):",
+    );
+    for (const eintrag of auffaellig.sort((a, b) => b.wert - a.wert).slice(0, 5)) {
+      console.log(
+        `     ${eintrag.name}: ${eintrag.wert.toFixed(1)} (${eintrag.standorte} Standorte)`,
+      );
+    }
   }
 
-  console.log(
-    `  ⚠️ ${auffaellig.length} Gemeinden über dem Dreifachen – ` +
-      "das ist das Muster des Zuordnungsfehlers:",
-  );
-  for (const eintrag of auffaellig.sort((a, b) => b.wert - a.wert).slice(0, 10)) {
-    console.log(
-      `     ${eintrag.name}: ${eintrag.wert.toFixed(1)} (${eintrag.standorte} Standorte)`,
-    );
+  // Für die Gemeinden an der Reihe zählt es: Sie würden geschrieben.
+  for (const eintrag of dichten) {
+    if (anDerReihe.has(eintrag.slug) && eintrag.wert > median * 3) flagged.add(eintrag.slug);
   }
+  const weit: { slug: string; name: string; km: number }[] = [];
+  for (const [slug, spots] of byCity) {
+    if (!anDerReihe.has(slug)) continue;
+    const km = spreadKm(spots);
+    if (km > 15) {
+      flagged.add(slug);
+      weit.push({ slug, name: imRegister.get(slug)?.name ?? slug, km });
+    }
+  }
+
+  if (weit.length > 0) {
+    console.log(`  ⚠️ ${weit.length} Gemeinden an der Reihe mit Streuung über 15 km (Zuordnung prüfen):`);
+    for (const eintrag of weit.sort((a, b) => b.km - a.km).slice(0, 8)) {
+      console.log(`     ${eintrag.name}: ${eintrag.km.toFixed(1)} km`);
+    }
+  }
+  const dicht = dichten
+    .filter((e) => anDerReihe.has(e.slug) && e.wert > median * 3)
+    .sort((a, b) => b.wert - a.wert);
+  if (dicht.length > 0) {
+    console.log(`  ⚠️ ${dicht.length} Gemeinden an der Reihe über dem Dreifachen (werden nicht geschrieben):`);
+    for (const e of dicht.slice(0, 8)) {
+      console.log(`     ${e.name}: ${e.wert.toFixed(1)} (${e.standorte} Standorte)`);
+    }
+  }
+  return flagged;
 }
 
 /** Gibt es für diese Gemeinde schon eine Seed-Datei? */
@@ -459,9 +512,25 @@ async function importState(
       `außerhalb jeder Gemeindefläche: ${counts.ausserhalb} · verworfen: ${counts.verworfen}`,
   );
 
-  dichteMelden(byCity, new Map(allMunicipalities.map((city) => [city.slug, city])));
+  const auffaellig = dichteMelden(
+    byCity,
+    new Map(allMunicipalities.map((city) => [city.slug, city])),
+    new Set(anDerReihe.keys()),
+  );
 
   if (dryRun) {
+    // Was ein echter Lauf schreiben würde: an der Reihe, kein Befund, noch keine Datei.
+    let neu = 0;
+    let neuStandorte = 0;
+    for (const [slug, spots] of byCity) {
+      if (!anDerReihe.has(slug) || auffaellig.has(slug)) continue;
+      if (!overwrite && (await hasSeed(slug))) continue;
+      neu += 1;
+      neuStandorte += spots.length;
+    }
+    console.log(
+      `  → ein echter Lauf schriebe ${neu} neue Seed-Dateien mit ${neuStandorte} Standorten`,
+    );
     console.log("  (Probelauf – nichts geschrieben)");
     return;
   }
@@ -482,6 +551,7 @@ async function importState(
   let uebersprungenVorhanden = 0;
 
   let nochNichtAnDerReihe = 0;
+  let nichtGeschriebenAuffaellig = 0;
 
   for (const [slug, spots] of byCity) {
     const city = anDerReihe.get(slug);
@@ -512,6 +582,17 @@ async function importState(
      * **Breite** da – Gemeinden, zu denen es noch gar nichts gibt. Einen
      * geprüften Bestand ungeprüft zu ersetzen wäre der teurere Fehler.
      */
+    /*
+     * Eine Gemeinde, die Dichte oder Streuung nicht besteht, wird **nicht
+     * geschrieben** (D-07, CLAUDE.md: lieber kein Import als ein falscher). Sie
+     * steht oben in der Liste und wird von Hand angesehen; `--trotzdem` nimmt
+     * sie mit.
+     */
+    if (auffaellig.has(slug) && !process.argv.includes("--trotzdem")) {
+      nichtGeschriebenAuffaellig += 1;
+      continue;
+    }
+
     if (!overwrite && (await hasSeed(slug))) {
       uebersprungenVorhanden += 1;
       continue;
@@ -562,6 +643,9 @@ async function importState(
       (uebersprungenVorhanden > 0
         ? ` · ${uebersprungenVorhanden} übersprungen, weil schon vorhanden ` +
           "(mit --ueberschreiben erzwingen)"
+        : "") +
+      (nichtGeschriebenAuffaellig > 0
+        ? ` · ${nichtGeschriebenAuffaellig} wegen Dichte oder Streuung nicht geschrieben (Liste oben, mit --trotzdem erzwingen)`
         : "") +
       (nochNichtAnDerReihe > 0
         ? ` · ${nochNichtAnDerReihe} unter der Einwohnergrenze, nicht geschrieben`

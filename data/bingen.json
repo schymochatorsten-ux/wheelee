@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bingen",
+    "name": "Bingen am Rhein",
+    "center": {
+      "lat": 49.9691414,
+      "lng": 7.8939804
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "bingen-5880ee9209",
+      "city": "bingen",
+      "label": "Behindertenparkplatz Bingen am Rhein",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bingen am Rhein",
+      "spotCount": 1,
+      "lat": 49.9691414,
+      "lng": 7.8939804,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/41989297), ODbL"
+    }
+  ]
+}

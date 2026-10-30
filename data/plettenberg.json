@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "plettenberg",
+    "name": "Plettenberg",
+    "center": {
+      "lat": 51.2312312,
+      "lng": 7.887326700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "plettenberg-d25f9a63cc",
+      "city": "plettenberg",
+      "label": "Behindertenparkplatz Plettenberg",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Plettenberg",
+      "spotCount": 1,
+      "lat": 51.21357020000001,
+      "lng": 7.887326700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4504454943), ODbL"
+    },
+    {
+      "id": "plettenberg-3be11d77fa",
+      "city": "plettenberg",
+      "label": "Behindertenparkplatz Plettenberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Plettenberg",
+      "spotCount": 1,
+      "lat": 51.2312312,
+      "lng": 7.8509478,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32934517), ODbL"
+    }
+  ]
+}

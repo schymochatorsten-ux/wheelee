@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "burgwedel",
+    "name": "Burgwedel",
+    "center": {
+      "lat": 52.505970950000005,
+      "lng": 9.8254369
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "burgwedel-bd46f88447",
+      "city": "burgwedel",
+      "label": "Behindertenparkplatz Burgwedel",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burgwedel",
+      "spotCount": 2,
+      "lat": 52.505619100000004,
+      "lng": 9.85536415,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/23729626), ODbL"
+    },
+    {
+      "id": "burgwedel-70eefa88a6",
+      "city": "burgwedel",
+      "label": "Behindertenparkplatz Burgwedel",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Burgwedel",
+      "spotCount": 1,
+      "lat": 52.503358950000006,
+      "lng": 9.823822700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/201389631), ODbL"
+    },
+    {
+      "id": "burgwedel-66a8b6f77a",
+      "city": "burgwedel",
+      "label": "Behindertenparkplatz Burgwedel",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burgwedel",
+      "spotCount": 2,
+      "lat": 52.505992400000004,
+      "lng": 9.8254369,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1087979022), ODbL"
+    },
+    {
+      "id": "burgwedel-4c90625fce",
+      "city": "burgwedel",
+      "label": "Behindertenparkplatz Burgwedel",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Burgwedel",
+      "spotCount": 1,
+      "lat": 52.505970950000005,
+      "lng": 9.825449800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1087979030), ODbL"
+    },
+    {
+      "id": "burgwedel-733e78287a",
+      "city": "burgwedel",
+      "label": "Behindertenparkplatz Burgwedel",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Burgwedel",
+      "spotCount": 1,
+      "lat": 52.5060124,
+      "lng": 9.825424850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1087979031), ODbL"
+    }
+  ]
+}

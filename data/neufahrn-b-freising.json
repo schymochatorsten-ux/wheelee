@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "neufahrn-b-freising",
+    "name": "Neufahrn b.Freising",
+    "center": {
+      "lat": 48.3162231,
+      "lng": 11.663631950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "neufahrn-b-freising-b1c960acbe",
+      "city": "neufahrn-b-freising",
+      "label": "Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neufahrn b.Freising",
+      "spotCount": 2,
+      "lat": 48.320086950000004,
+      "lng": 11.65908465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26548449), ODbL"
+    },
+    {
+      "id": "neufahrn-b-freising-d0548720aa",
+      "city": "neufahrn-b-freising",
+      "label": "Bahnhofstraße 18b",
+      "street": "Bahnhofstraße",
+      "houseNumber": "18b",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neufahrn b.Freising",
+      "spotCount": 1,
+      "lat": 48.31490735,
+      "lng": 11.663276250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1418706171), ODbL"
+    },
+    {
+      "id": "neufahrn-b-freising-ae8022964b",
+      "city": "neufahrn-b-freising",
+      "label": "Bahnhofstraße 29",
+      "street": "Bahnhofstraße",
+      "houseNumber": "29",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neufahrn b.Freising",
+      "spotCount": 1,
+      "lat": 48.316876900000004,
+      "lng": 11.6621255,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1418706199), ODbL"
+    },
+    {
+      "id": "neufahrn-b-freising-1fd4d792c9",
+      "city": "neufahrn-b-freising",
+      "label": "Bahnhofstraße 3",
+      "street": "Bahnhofstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neufahrn b.Freising",
+      "spotCount": 2,
+      "lat": 48.31328020000001,
+      "lng": 11.663631950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1418706161), ODbL"
+    },
+    {
+      "id": "neufahrn-b-freising-9c77d0f652",
+      "city": "neufahrn-b-freising",
+      "label": "Bahnhofstraße 4",
+      "street": "Bahnhofstraße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neufahrn b.Freising",
+      "spotCount": 2,
+      "lat": 48.31332475000001,
+      "lng": 11.6637315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1418706138), ODbL"
+    },
+    {
+      "id": "neufahrn-b-freising-6a5678602e",
+      "city": "neufahrn-b-freising",
+      "label": "Münchner Straße 19",
+      "street": "Münchner Straße",
+      "houseNumber": "19",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neufahrn b.Freising",
+      "spotCount": 3,
+      "lat": 48.3162231,
+      "lng": 11.69057985,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/60178059), ODbL"
+    }
+  ]
+}

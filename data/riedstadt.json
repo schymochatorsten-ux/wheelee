@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "riedstadt",
+    "name": "Riedstadt",
+    "center": {
+      "lat": 49.838890600000006,
+      "lng": 8.492430800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "riedstadt-7920c92eb0",
+      "city": "riedstadt",
+      "label": "Behindertenparkplatz Riedstadt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Riedstadt",
+      "spotCount": 2,
+      "lat": 49.8137966,
+      "lng": 8.510198,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10648564837), ODbL"
+    },
+    {
+      "id": "riedstadt-0bcec20ccd",
+      "city": "riedstadt",
+      "label": "Behindertenparkplatz Riedstadt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Riedstadt",
+      "spotCount": 1,
+      "lat": 49.838890600000006,
+      "lng": 8.46784855,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1080880219), ODbL"
+    },
+    {
+      "id": "riedstadt-e22ff51a22",
+      "city": "riedstadt",
+      "label": "Behindertenparkplatz Riedstadt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Riedstadt",
+      "spotCount": 1,
+      "lat": 49.83572035,
+      "lng": 8.46819685,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1157736773), ODbL"
+    },
+    {
+      "id": "riedstadt-941ea93ee5",
+      "city": "riedstadt",
+      "label": "Parkplatz am Bahnhof Wolfskehlen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Riedstadt",
+      "spotCount": 1,
+      "lat": 49.85443050000001,
+      "lng": 8.492430800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/659784190), ODbL"
+    }
+  ]
+}

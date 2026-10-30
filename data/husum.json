@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "husum",
+    "name": "Husum",
+    "center": {
+      "lat": 54.47614775,
+      "lng": 9.06155205
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "husum-5af8f59355",
+      "city": "husum",
+      "label": "Behindertenparkplatz Husum",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Husum",
+      "spotCount": 2,
+      "lat": 54.474251200000005,
+      "lng": 9.0438769,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8836350110), ODbL"
+    },
+    {
+      "id": "husum-f905ae1447",
+      "city": "husum",
+      "label": "Behindertenparkplatz Husum",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Husum",
+      "spotCount": 1,
+      "lat": 54.47340225000001,
+      "lng": 9.04880065,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/62352967), ODbL"
+    },
+    {
+      "id": "husum-e69b9ddbae",
+      "city": "husum",
+      "label": "Behindertenparkplatz Husum",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Husum",
+      "spotCount": 2,
+      "lat": 54.49329835,
+      "lng": 9.07065345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/749140067), ODbL"
+    },
+    {
+      "id": "husum-b38214e272",
+      "city": "husum",
+      "label": "Behindertenparkplatz Husum",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Husum",
+      "spotCount": 1,
+      "lat": 54.49333275000001,
+      "lng": 9.0845722,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1014063723), ODbL"
+    },
+    {
+      "id": "husum-450e8e40bc",
+      "city": "husum",
+      "label": "Behindertenparkplatz Husum",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Husum",
+      "spotCount": 3,
+      "lat": 54.475192250000006,
+      "lng": 9.06155205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1126916171), ODbL"
+    },
+    {
+      "id": "husum-cd8fceeaba",
+      "city": "husum",
+      "label": "Behindertenparkplatz Husum",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Husum",
+      "spotCount": 1,
+      "lat": 54.495188850000005,
+      "lng": 9.08431835,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1425101326), ODbL"
+    },
+    {
+      "id": "husum-8593dda034",
+      "city": "husum",
+      "label": "Rote Pforte",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Husum",
+      "spotCount": 2,
+      "lat": 54.47614775,
+      "lng": 9.05292875,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/198802618), ODbL"
+    }
+  ]
+}

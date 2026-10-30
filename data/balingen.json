@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "balingen",
+    "name": "Balingen",
+    "center": {
+      "lat": 48.27327205,
+      "lng": 8.8562854
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "balingen-1ec3381bc0",
+      "city": "balingen",
+      "label": "Am Lindle",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Balingen",
+      "spotCount": 4,
+      "lat": 48.27635525,
+      "lng": 8.8501147,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/168746776), ODbL"
+    },
+    {
+      "id": "balingen-1d7f0b7a17",
+      "city": "balingen",
+      "label": "Buhrenstraße",
+      "street": "Buhrenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Balingen",
+      "spotCount": 2,
+      "lat": 48.24601200000001,
+      "lng": 8.87489165,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/616785043), ODbL"
+    },
+    {
+      "id": "balingen-1ed8c11c89",
+      "city": "balingen",
+      "label": "Parkplatz Hallenbad",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Balingen",
+      "spotCount": 2,
+      "lat": 48.27327205,
+      "lng": 8.8562854,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/175147019), ODbL"
+    },
+    {
+      "id": "balingen-518401aad2",
+      "city": "balingen",
+      "label": "Seniorenheim",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Balingen",
+      "spotCount": 3,
+      "lat": 48.237099,
+      "lng": 8.860774800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1547763464), ODbL"
+    },
+    {
+      "id": "balingen-6aa1a576b7",
+      "city": "balingen",
+      "label": "Wilhelmstraße",
+      "street": "Wilhelmstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Balingen",
+      "spotCount": 1,
+      "lat": 48.27570745,
+      "lng": 8.850108,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1256753745), ODbL"
+    }
+  ]
+}

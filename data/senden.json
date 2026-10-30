@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "senden",
+    "name": "Senden",
+    "center": {
+      "lat": 48.317012950000006,
+      "lng": 10.098232
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "senden-a4d65e8142",
+      "city": "senden",
+      "label": "Parkplatz Bahnhalt Witzighausen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Senden",
+      "spotCount": 1,
+      "lat": 48.317012950000006,
+      "lng": 10.098232,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/359885907), ODbL"
+    },
+    {
+      "id": "senden-c518f2f1db",
+      "city": "senden",
+      "label": "Parkplatz Bahnhof Wullenstetten",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Senden",
+      "spotCount": 1,
+      "lat": 48.3141363,
+      "lng": 10.071465150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/286506783), ODbL"
+    }
+  ]
+}

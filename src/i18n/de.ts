@@ -540,6 +540,21 @@ export const de = {
   "users.revoke": "Zurückziehen",
   "users.failed": "Das hat nicht geklappt.",
 
+  // Besucherzahlen in der Verwaltung (ToDo 20.1)
+  "visits.title": "Besucher",
+  "visits.note":
+    "Gezählt werden nur Menschen, die die Seite geöffnet haben – keine Suchmaschinen, Messdienste oder Linkvorschauen. Wer „Do Not Track“ eingestellt hat, wird nicht gezählt; die Zahlen sind eine Untergrenze. Ein Besucher zählt je Tag einmal, ohne Cookie und ohne gespeicherte Kennung.",
+  "visits.range": "Zeitraum",
+  "visits.lastDays": "{count} Tage",
+  "visits.today": "Heute",
+  "visits.inRange": "Besucher, letzte {count} Tage",
+  "visits.views": "Seitenaufrufe im Zeitraum",
+  "visits.total": "Besucher insgesamt",
+  "visits.totalSince": "Besucher insgesamt seit {date}",
+  "visits.none": "Noch keine Besuche gezählt.",
+  "visits.row": "{visitors} / {views}",
+  "visits.loadFailed": "Die Besucherzahlen konnten nicht geladen werden.",
+
   // Mail-Links: Passwort vergessen, E-Mail ändern (ToDo 11.1, 11.8)
   "api.mailLinkInvalid": "Der Link ist ungültig, abgelaufen oder wurde schon benutzt.",
   "api.emailSame": "Das ist bereits die Adresse dieses Kontos.",

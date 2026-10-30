@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "wandlitz",
+    "name": "Wandlitz",
+    "center": {
+      "lat": 52.71641150000001,
+      "lng": 13.434211450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "wandlitz-ce76c1073d",
+      "city": "wandlitz",
+      "label": "Bahnhofsparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wandlitz",
+      "spotCount": 2,
+      "lat": 52.71641150000001,
+      "lng": 13.434065,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34297688), ODbL"
+    },
+    {
+      "id": "wandlitz-2d5fe6cb79",
+      "city": "wandlitz",
+      "label": "Behindertenparkplatz Wandlitz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wandlitz",
+      "spotCount": 2,
+      "lat": 52.7149292,
+      "lng": 13.434211450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/47927222), ODbL"
+    },
+    {
+      "id": "wandlitz-77756dd499",
+      "city": "wandlitz",
+      "label": "Behindertenparkplatz Wandlitz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wandlitz",
+      "spotCount": 2,
+      "lat": 52.79307115,
+      "lng": 13.54805675,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/946557951), ODbL"
+    }
+  ]
+}

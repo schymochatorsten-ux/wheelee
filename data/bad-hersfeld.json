@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "bad-hersfeld",
+    "name": "Bad Hersfeld",
+    "center": {
+      "lat": 50.8682529,
+      "lng": 9.709328150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "bad-hersfeld-826e3c7111",
+      "city": "bad-hersfeld",
+      "label": "Behindertenparkplatz Bad Hersfeld",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Hersfeld",
+      "spotCount": 2,
+      "lat": 50.8660979,
+      "lng": 9.705482400000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12919390946), ODbL"
+    },
+    {
+      "id": "bad-hersfeld-ebb9616f3b",
+      "city": "bad-hersfeld",
+      "label": "Behindertenparkplatz Bad Hersfeld",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bad Hersfeld",
+      "spotCount": 3,
+      "lat": 50.8685254,
+      "lng": 9.715273250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/971255568), ODbL"
+    },
+    {
+      "id": "bad-hersfeld-8f2ca18bfc",
+      "city": "bad-hersfeld",
+      "label": "Behindertenparkplatz Bad Hersfeld",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Hersfeld",
+      "spotCount": 3,
+      "lat": 50.86774270000001,
+      "lng": 9.710154000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1189585692), ODbL"
+    },
+    {
+      "id": "bad-hersfeld-699c63644d",
+      "city": "bad-hersfeld",
+      "label": "Behindertenparkplatz Bad Hersfeld",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Hersfeld",
+      "spotCount": 3,
+      "lat": 50.86722225,
+      "lng": 9.709328150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1364819744), ODbL"
+    },
+    {
+      "id": "bad-hersfeld-028efb8908",
+      "city": "bad-hersfeld",
+      "label": "Behindertenparkplatz Bad Hersfeld",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Hersfeld",
+      "spotCount": 2,
+      "lat": 50.868973249999996,
+      "lng": 9.70729515,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1393132123), ODbL"
+    },
+    {
+      "id": "bad-hersfeld-2aa8720770",
+      "city": "bad-hersfeld",
+      "label": "Behindertenparkplatz Bad Hersfeld",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bad Hersfeld",
+      "spotCount": 1,
+      "lat": 50.8699135,
+      "lng": 9.7093766,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1424663622), ODbL"
+    },
+    {
+      "id": "bad-hersfeld-02ed593d4f",
+      "city": "bad-hersfeld",
+      "label": "Feuergrube",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bad Hersfeld",
+      "spotCount": 1,
+      "lat": 50.8682529,
+      "lng": 9.7058793,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/104962126), ODbL"
+    }
+  ]
+}

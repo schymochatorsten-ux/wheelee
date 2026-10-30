@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "gauting",
+    "name": "Gauting",
+    "center": {
+      "lat": 48.09225120000001,
+      "lng": 11.4050452
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "gauting-425c0bc1b2",
+      "city": "gauting",
+      "label": "Bahnhofplatz 1",
+      "street": "Bahnhofplatz",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gauting",
+      "spotCount": 2,
+      "lat": 48.07036455000001,
+      "lng": 11.3764966,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/382859017), ODbL"
+    },
+    {
+      "id": "gauting-71fbc32c11",
+      "city": "gauting",
+      "label": "Harmsplatz 2",
+      "street": "Harmsplatz",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gauting",
+      "spotCount": 1,
+      "lat": 48.09225120000001,
+      "lng": 11.4050452,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1028728265), ODbL"
+    }
+  ]
+}

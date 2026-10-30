@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "weyhe",
+    "name": "Weyhe",
+    "center": {
+      "lat": 52.9842968,
+      "lng": 8.8484447
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "weyhe-b6b43eb0bb",
+      "city": "weyhe",
+      "label": "Behindertenparkplatz Weyhe",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weyhe",
+      "spotCount": 4,
+      "lat": 52.9827122,
+      "lng": 8.84937455,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/4108847), ODbL"
+    },
+    {
+      "id": "weyhe-daaeef64c8",
+      "city": "weyhe",
+      "label": "Behindertenparkplatz Weyhe",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weyhe",
+      "spotCount": 4,
+      "lat": 52.9842968,
+      "lng": 8.8484447,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/4483552), ODbL"
+    },
+    {
+      "id": "weyhe-43fc637034",
+      "city": "weyhe",
+      "label": "Behindertenparkplatz Weyhe",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weyhe",
+      "spotCount": 1,
+      "lat": 53.0190616,
+      "lng": 8.871045200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25450817), ODbL"
+    },
+    {
+      "id": "weyhe-49bc678885",
+      "city": "weyhe",
+      "label": "Behindertenparkplatz Weyhe",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weyhe",
+      "spotCount": 1,
+      "lat": 52.98224485,
+      "lng": 8.849196200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/574849141), ODbL"
+    },
+    {
+      "id": "weyhe-e5c6f22188",
+      "city": "weyhe",
+      "label": "Behindertenparkplatz Weyhe",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weyhe",
+      "spotCount": 2,
+      "lat": 52.987848850000006,
+      "lng": 8.81643855,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/588315464), ODbL"
+    },
+    {
+      "id": "weyhe-c972e71ebd",
+      "city": "weyhe",
+      "label": "Behindertenparkplatz Weyhe",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weyhe",
+      "spotCount": 2,
+      "lat": 52.983696800000004,
+      "lng": 8.8352885,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/588384941), ODbL"
+    },
+    {
+      "id": "weyhe-b19b12c0c3",
+      "city": "weyhe",
+      "label": "Behindertenparkplatz Weyhe",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weyhe",
+      "spotCount": 1,
+      "lat": 52.9878231,
+      "lng": 8.81063545,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1290730336), ODbL"
+    }
+  ]
+}

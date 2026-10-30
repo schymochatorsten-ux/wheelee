@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "sonthofen",
+    "name": "Sonthofen",
+    "center": {
+      "lat": 47.5111726,
+      "lng": 10.2811719
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "sonthofen-dbeb4a6c7c",
+      "city": "sonthofen",
+      "label": "Blumenstraße",
+      "street": "Blumenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Sonthofen",
+      "spotCount": 2,
+      "lat": 47.51393325,
+      "lng": 10.27709665,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26448074), ODbL"
+    },
+    {
+      "id": "sonthofen-268b887d0d",
+      "city": "sonthofen",
+      "label": "Immenstädter Straße",
+      "street": "Immenstädter Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Sonthofen",
+      "spotCount": 2,
+      "lat": 47.5111726,
+      "lng": 10.277027200000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8434071753), ODbL"
+    },
+    {
+      "id": "sonthofen-d3f1346a1b",
+      "city": "sonthofen",
+      "label": "Stuibenweg",
+      "street": "Stuibenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sonthofen",
+      "spotCount": 1,
+      "lat": 47.48860535,
+      "lng": 10.281232500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1020875487), ODbL"
+    },
+    {
+      "id": "sonthofen-b43bbc07ee",
+      "city": "sonthofen",
+      "label": "Vordere Burgauffahrt",
+      "street": "Vordere Burgauffahrt",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Sonthofen",
+      "spotCount": 2,
+      "lat": 47.5098307,
+      "lng": 10.2811719,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6490822821), ODbL"
+    }
+  ]
+}

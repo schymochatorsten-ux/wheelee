@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "kelkheim",
+    "name": "Kelkheim (Taunus)",
+    "center": {
+      "lat": 50.1363088,
+      "lng": 8.453079500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "kelkheim-ab8593a03a",
+      "city": "kelkheim",
+      "label": "Behindertenparkplatz Kelkheim (Taunus)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kelkheim (Taunus)",
+      "spotCount": 1,
+      "lat": 50.1221307,
+      "lng": 8.467996600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3151753436), ODbL"
+    },
+    {
+      "id": "kelkheim-e57f714870",
+      "city": "kelkheim",
+      "label": "Behindertenparkplatz Kelkheim (Taunus)",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kelkheim (Taunus)",
+      "spotCount": 1,
+      "lat": 50.1363088,
+      "lng": 8.4520342,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5600779356), ODbL"
+    },
+    {
+      "id": "kelkheim-c258a8cffe",
+      "city": "kelkheim",
+      "label": "Behindertenparkplatz Kelkheim (Taunus)",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kelkheim (Taunus)",
+      "spotCount": 1,
+      "lat": 50.1341909,
+      "lng": 8.453079500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12857265539), ODbL"
+    },
+    {
+      "id": "kelkheim-dc03f104a3",
+      "city": "kelkheim",
+      "label": "Behindertenparkplatz Kelkheim (Taunus)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kelkheim (Taunus)",
+      "spotCount": 1,
+      "lat": 50.136344050000005,
+      "lng": 8.45237275,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/203574839), ODbL"
+    }
+  ]
+}

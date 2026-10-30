@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "westerstede",
+    "name": "Westerstede",
+    "center": {
+      "lat": 53.2575585,
+      "lng": 7.928971450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "westerstede-9c5bc1a4df",
+      "city": "westerstede",
+      "label": "Behindertenparkplatz Westerstede",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Westerstede",
+      "spotCount": 1,
+      "lat": 53.26216755,
+      "lng": 7.9427471,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/688335381), ODbL"
+    },
+    {
+      "id": "westerstede-5d7ffbae8e",
+      "city": "westerstede",
+      "label": "Behindertenparkplatz Westerstede",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Westerstede",
+      "spotCount": 2,
+      "lat": 53.2575585,
+      "lng": 7.928971450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1300092544), ODbL"
+    },
+    {
+      "id": "westerstede-c67613e61a",
+      "city": "westerstede",
+      "label": "Behindertenparkplatz Westerstede",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Westerstede",
+      "spotCount": 3,
+      "lat": 53.25388135,
+      "lng": 7.9179155,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1566718744), ODbL"
+    }
+  ]
+}

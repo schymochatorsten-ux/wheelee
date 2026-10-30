@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hemer",
+    "name": "Hemer",
+    "center": {
+      "lat": 51.39506815,
+      "lng": 7.769226150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "hemer-6967377a6e",
+      "city": "hemer",
+      "label": "Behindertenparkplatz Hemer",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hemer",
+      "spotCount": 1,
+      "lat": 51.3831475,
+      "lng": 7.7683894,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/278121395), ODbL"
+    },
+    {
+      "id": "hemer-3c7f8b9534",
+      "city": "hemer",
+      "label": "Behindertenparkplatz Hemer",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hemer",
+      "spotCount": 1,
+      "lat": 51.39506815,
+      "lng": 7.769226150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1126203518), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "espelkamp",
+    "name": "Espelkamp",
+    "center": {
+      "lat": 52.383494,
+      "lng": 8.64412475
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "espelkamp-34616633e9",
+      "city": "espelkamp",
+      "label": "Behindertenparkplatz Espelkamp",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Espelkamp",
+      "spotCount": 1,
+      "lat": 52.348470250000005,
+      "lng": 8.64412475,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35894628), ODbL"
+    },
+    {
+      "id": "espelkamp-f13e99285e",
+      "city": "espelkamp",
+      "label": "Behindertenparkplatz Espelkamp",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Espelkamp",
+      "spotCount": 5,
+      "lat": 52.383494,
+      "lng": 8.6222362,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/333607838), ODbL"
+    }
+  ]
+}

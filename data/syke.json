@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "syke",
+    "name": "Syke",
+    "center": {
+      "lat": 52.91530035,
+      "lng": 8.810816800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "syke-62b38a50d3",
+      "city": "syke",
+      "label": "Behindertenparkplatz Syke",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Syke",
+      "spotCount": 2,
+      "lat": 52.94018,
+      "lng": 8.8239417,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/143044584), ODbL"
+    },
+    {
+      "id": "syke-c0399410cc",
+      "city": "syke",
+      "label": "Behindertenparkplatz Syke",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Syke",
+      "spotCount": 3,
+      "lat": 52.91530035,
+      "lng": 8.810175300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/143372917), ODbL"
+    },
+    {
+      "id": "syke-479a00c7c7",
+      "city": "syke",
+      "label": "Behindertenparkplatz Syke",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Syke",
+      "spotCount": 1,
+      "lat": 52.91421485000001,
+      "lng": 8.810816800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1340114021), ODbL"
+    },
+    {
+      "id": "syke-d18cea01bf",
+      "city": "syke",
+      "label": "Behindertenparkplatz Syke",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Syke",
+      "spotCount": 1,
+      "lat": 52.9144736,
+      "lng": 8.810697000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1340114022), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "rendsburg",
+    "name": "Rendsburg",
+    "center": {
+      "lat": 54.30241650000001,
+      "lng": 9.66986485
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "rendsburg-c2180a5528",
+      "city": "rendsburg",
+      "label": "Behindertenparkplatz Rendsburg",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rendsburg",
+      "spotCount": 1,
+      "lat": 54.2978171,
+      "lng": 9.663372800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5148911503), ODbL"
+    },
+    {
+      "id": "rendsburg-5447fb34ac",
+      "city": "rendsburg",
+      "label": "Behindertenparkplatz Rendsburg",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rendsburg",
+      "spotCount": 1,
+      "lat": 54.3045793,
+      "lng": 9.6669146,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5606381556), ODbL"
+    },
+    {
+      "id": "rendsburg-8bdd6be756",
+      "city": "rendsburg",
+      "label": "Behindertenparkplatz Rendsburg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rendsburg",
+      "spotCount": 3,
+      "lat": 54.30241650000001,
+      "lng": 9.66986485,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29314389), ODbL"
+    },
+    {
+      "id": "rendsburg-2163c4a251",
+      "city": "rendsburg",
+      "label": "Behindertenparkplatz Rendsburg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rendsburg",
+      "spotCount": 2,
+      "lat": 54.303348650000004,
+      "lng": 9.653774850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/989199433), ODbL"
+    },
+    {
+      "id": "rendsburg-4a7419fb95",
+      "city": "rendsburg",
+      "label": "Behindertenparkplatz Rendsburg",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rendsburg",
+      "spotCount": 1,
+      "lat": 54.292508100000006,
+      "lng": 9.6709571,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1099696539), ODbL"
+    },
+    {
+      "id": "rendsburg-0975a7de70",
+      "city": "rendsburg",
+      "label": "Behindertenparkplatz Rendsburg",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rendsburg",
+      "spotCount": 1,
+      "lat": 54.29251860000001,
+      "lng": 9.6710049,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1099696542), ODbL"
+    }
+  ]
+}

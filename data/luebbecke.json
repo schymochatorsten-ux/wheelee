@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "luebbecke",
+    "name": "Lübbecke",
+    "center": {
+      "lat": 52.30618175000001,
+      "lng": 8.6209564
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "luebbecke-4e07a26363",
+      "city": "luebbecke",
+      "label": "Behindertenparkplatz Lübbecke",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lübbecke",
+      "spotCount": 1,
+      "lat": 52.2963827,
+      "lng": 8.6030421,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/176944070), ODbL"
+    },
+    {
+      "id": "luebbecke-741dce592c",
+      "city": "luebbecke",
+      "label": "Behindertenparkplatz Lübbecke",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lübbecke",
+      "spotCount": 2,
+      "lat": 52.30618175000001,
+      "lng": 8.6209564,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/859715825), ODbL"
+    },
+    {
+      "id": "luebbecke-87d802e1be",
+      "city": "luebbecke",
+      "label": "Behindertenparkplatz Lübbecke",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lübbecke",
+      "spotCount": 2,
+      "lat": 52.31750035,
+      "lng": 8.6221604,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/908491533), ODbL"
+    }
+  ]
+}

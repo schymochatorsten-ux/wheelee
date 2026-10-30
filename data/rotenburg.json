@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "rotenburg",
+    "name": "Rotenburg (Wümme)",
+    "center": {
+      "lat": 53.11564285,
+      "lng": 9.3857873
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "rotenburg-8de11e0688",
+      "city": "rotenburg",
+      "label": "Behindertenparkplatz Rotenburg (Wümme)",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rotenburg (Wümme)",
+      "spotCount": 1,
+      "lat": 53.076462600000006,
+      "lng": 9.354552700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12165263059), ODbL"
+    },
+    {
+      "id": "rotenburg-7c101d8b67",
+      "city": "rotenburg",
+      "label": "Behindertenparkplatz Rotenburg (Wümme)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rotenburg (Wümme)",
+      "spotCount": 1,
+      "lat": 53.076399300000006,
+      "lng": 9.3544074,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/933318592), ODbL"
+    },
+    {
+      "id": "rotenburg-835d310e8d",
+      "city": "rotenburg",
+      "label": "Behindertenparkplatz Rotenburg (Wümme)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rotenburg (Wümme)",
+      "spotCount": 5,
+      "lat": 53.116876100000006,
+      "lng": 9.3857873,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1035988593), ODbL"
+    },
+    {
+      "id": "rotenburg-897982dd59",
+      "city": "rotenburg",
+      "label": "Parkplatz E-Center",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rotenburg (Wümme)",
+      "spotCount": 1,
+      "lat": 53.11564285,
+      "lng": 9.417556900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/280490082), ODbL"
+    }
+  ]
+}

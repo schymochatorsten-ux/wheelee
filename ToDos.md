@@ -51,15 +51,13 @@ offen sind“) ist am 2026-10-29 aufgehoben** (D-11): Die inhaltlichen Punkte,
 die offen blieben, hängen nicht mehr an der Datenarbeit. Geblieben ist, dass
 jede Stufe erst nach den Prüfungen geschrieben wird.
 
-**Stand 2026-10-29 (D-11 in [Erledigt.md](Erledigt.md)): Torsten hat die Datenläufe in Stufen freigegeben** (Reihenfolge unten). Abgearbeitet wird von oben; 1.8 wartet auf sein Bescheid und wird übersprungen, bis er ihn gibt.
+**Stand 2026-10-29 (D-11 in [Erledigt.md](Erledigt.md)): Torsten hat die Datenläufe in Stufen freigegeben** (Reihenfolge unten). Abgearbeitet wird von oben. 1.8 (Next 16) ist am 2026-10-30 erledigt.
 
 | #   | Was                                                              | Warum hier                                         |
 | --- | ---------------------------------------------------------------- | -------------------------------------------------- |
-| 1   | **12.7a** Symbol                                                 | Ohne Daten, ohne Netz                              |
-| 2   | **3.10** auswerten (Lauf liegt vor), **3.4** laufen lassen, **3.3** bauen und laufen lassen | Prüfen vor dem Einspielen |
-| 3   | **2d.8a** München amtlich, danach die übrigen acht Städte        | Ersetzt einen Bestand, deshalb nach den Prüfungen  |
-| 4   | **2e.11** Saarland-Probelauf, dann **2e.6** in Stufen (D-07)     | Mit Streuungs- und Dichteprüfung                   |
-| 5   | **1.8** Next 16                                                  | Erst nach Torstens Bescheid                        |
+| 2   | **3.4** und **3.3** laufen lassen (3.10 ist ausgewertet)        | Prüfen vor dem Einspielen                          |
+| 3   | **2d.8a** die übrigen acht Städte ansehen (München ist umgestellt) | Ersetzt einen Bestand, deshalb nach den Prüfungen |
+| 4   | **2e.6** Stufe 2 und folgende (Stufe 1 ist eingespielt; 19.9 ist erledigt) | Mit Streuungs- und Dichteprüfung               |
 | 6   | **15.1** Niederländisch, Portugiesisch, Russisch                 | Zuletzt, jede erst nach der vorigen                |
 
 **Neue Knöpfe und Meldungen kommen seit 15.2 gleich in
@@ -73,21 +71,19 @@ abgeglichen ist bislang eine Stadt.
 
 ---
 
-## 1. Projekt-Setup
-
-- [!] 1.8 **Next 16.** Behebt die zwei Audit-Wurzeln (`postcss` über `next`, `braces` über `eslint-config-next`); in `package.json` steht 15.5.28. **Wartet auf Torstens Bescheid, dass der Stand committet ist** (D-11) – bis dahin überspringen. Zu prüfen: `middleware.ts` (CSP-Nonce), Service Worker, `node:sqlite`, Produktionsbau.
 
 ## 2. Datenquellen und Import
 
-- [~] 2d.8a **Neun Städte mit ungenutzter amtlicher Quelle.** München ist umgestellt (Stand in [Erledigt.md](Erledigt.md), 2d.8a). **Offen: die übrigen acht ansehen:** `npm run sources:check` findet sie. Bei Kiel, Krefeld und Aachen ist die Ablehnung richtig (Anwohnerparken); bei Bochum, Bielefeld, Karlsruhe, Norderstedt und Viersen lohnt der Blick aufs Stadtportal.
-- [ ] 2e.6 **Restliche Gemeinden aus OpenStreetMap, in Stufen** (Entscheidung D-07, [Erledigt.md](Erledigt.md)): ab 20.000, dann 10.000, dann 5.000, dann alle; jede Stufe erst nach den Prüfungen (Streuung über 15 km, Dichte über dem Dreifachen des Medians). Voraussetzung ist 2e.11.
+- [~] 2d.8a **Städte mit ungenutzter amtlicher Quelle.** München ist umgestellt, die übrigen sind angesehen (Befund in [Erledigt.md](Erledigt.md), 2d.8a). **Offen, wenn die Portale wieder antworten:** **Bielefeld** (Quelle ist in `manual-sources.mts` hinterlegt, das Portal antwortete am 2026-10-30 mit HTTP 500; erneut `npm run import:city -- bielefeld`, Seed vorher sichern) und **Bochum** (CSV auf opendata.ruhr, CC0; Abruf scheiterte mit 502; erst prüfen, ob die CSV Koordinaten enthält).
+- [~] 2e.6 **Restliche Gemeinden aus OpenStreetMap, in Stufen** (D-07). **Stufe 1 (ab 20.000) ist eingespielt** (Stand in [Erledigt.md](Erledigt.md)). **Offen:** Straßennamen nachtragen (`import:streets`, läuft), danach Stufe 2 (ab 10.000: `MIN_POPULATION` auf 10.000, dieselben Läufe mit den vorhandenen Auszügen), 3 (ab 5.000), 4 (alle). Jede erst nach den Prüfungen im Importer.
+- [ ] 2e.12 **105 Gemeinden der Stufe 1 ansehen, die Dichte oder Streuung nicht bestanden haben** (Liste je Land im Protokoll des Laufs: `npm run import:osm-state -- <land> --pbf <datei> --dry`; Auszüge laden wie unter 2e.11). Je Gemeinde entscheiden: Zuordnungsfehler (nicht aufnehmen) oder dichte Kartierung (Witten, Hattingen: aufnehmen mit `--trotzdem`). Mittel: `check:streets` und `check:street-names`.
 - [~] 2e.11 **Massendaten ohne Overpass holen.** Der PBF-Leser steht (`scripts/import/pbf.mts`, Stand in [Erledigt.md](Erledigt.md)). Angeschlossen: `npm run import:osm-state -- <land> --pbf <datei> --dry`. **Offen:** einen Auszug laden (`https://download.geofabrik.de/europe/germany/<land>-latest.osm.pbf`, ODbL) und den ersten Probelauf an einem kleinen Land (Saarland) gegen die Overpass-Zahlen halten, nicht gleich NRW. Freigegeben (D-11).
 
 ## 3. Datenvalidierung
 
-- [~] 3.3 **Straßenabgleich:** Werkzeug steht (`npm run check:street-names -- <stadt> [--n 60 | --alle]`, Stand in [Erledigt.md](Erledigt.md)). **Offen:** für die amtlichen Städte laufen lassen (Stichprobe je Stadt, eine Anfrage je Sekunde) und die gemeldeten Standorte ansehen.
+- [~] 3.3 **Straßenabgleich:** Werkzeug steht (`npm run check:street-names -- <stadt> [--n 60 | --alle]`, Stand in [Erledigt.md](Erledigt.md)). **Gelaufen** für 22 Städte (Befund und Düsseldorf-Korrektur in [Erledigt.md](Erledigt.md), 3.3 und 3.12). **Offen:** Karlsruhe (19 von 30 bestätigt) ansehen und die Stichprobe für die 439 neuen Gemeinden aus 2e.6 (sinnvoll je Land eine Handvoll großer Gemeinden, nicht alle).
 - [~] 3.4 **Abstand zur nächsten Straße.** Werkzeug steht (`npm run check:streets -- <stadt>`, Stand in [Erledigt.md](Erledigt.md)). **Offen:** einmal für die 23 amtlichen Städte laufen lassen (eine Overpass-Abfrage je Stadt, mit Pausen, erst nach dem laufenden 3.10) und die gemeldeten Standorte ansehen.
-- [ ] 3.10 **Den Kreuzvergleich über alle 23 amtlichen Städte laufen lassen.** Abgeglichen ist bislang **eine** Stadt (Germersheim). `npm run validate` **mit** Netz; ansehen: Ausreißer nach unten und die Gruppe **„nur OSM"**.
+- [!] 3.11 **Sollen OSM-Standorte, die die Stadt nicht führt, zusätzlich zur amtlichen Liste angezeigt werden?** Der Kreuzvergleich (3.10, Befund in [Erledigt.md](Erledigt.md)) fand in 22 Städten **1.916 Standorte nur in OSM** (Köln 752, Dresden 225, Dortmund 164, Frankfurt 155, Düsseldorf 152). Oft sind es Parkplätze mit ausgewiesenen Stellplätzen (Kliniken, Märkte), die die Stadt als Straßenraum-Liste nicht führt – beides ist richtig. **Braucht von dir:** zusätzlich zeigen (als „nur OSM“ gekennzeichnet, mit Hinweis), weiter nur amtlich, oder je Stadt entscheiden. Aufwand: mittel (Zusammenführen im Import, Kennzeichnung in der Detailansicht; das Muster „bestätigt“ gibt es schon).
 
 
 
@@ -97,10 +93,6 @@ Befunde der rechtlichen Durchsicht vom 2026-10-29 stehen in [Erledigt.md](Erledi
 
 - [!] 10.17 **Art. 9 DSGVO: Gesundheitsbezug.** Wer Behindertenparkplätze als Favoriten speichert oder bewertet, lässt Rückschlüsse auf die Gesundheit zu, auch wenn die App nie danach fragt. **Braucht eine Antwort von einer juristisch urteilsfähigen Person**, ob das als besondere Kategorie gilt und ob bei der Registrierung eine ausdrückliche Einwilligung nötig ist (Checkbox, Art. 9 Abs. 2 lit. a). Danach ggf. Registrierung und Einladung anpassen, Datenschutzerklärung ergänzen.
 - [!] 10.18 **Gesamtprüfung durch eine rechtskundige Person** vor der Veröffentlichung: Rechtsgrundlagen der Datenschutzerklärung, Verarbeitungsverzeichnis, Einordnung der Offline-Kopien im Browser (§ 25 TDDDG, „unbedingt erforderlich“?), Drittlandhinweis zu den Kartenkacheln. Sie war schon vor diesem Datum vorgesehen (README, „Rechtstexte“).
-
-## 12. Qualität und Deployment
-
-- [!] 12.7a Symbol: **Vorschlag liegt vor** als `public/icon-vorschlag.svg` (Marker mit Zugänglichkeitssymbol aus Strichen; bleibt bei 32 px erkennbar, wo die gefüllte Fassung zusammenläuft). **Braucht von dir:** ansehen und sagen, ob es `public/icon.svg` ersetzen soll. Dann `icon.svg` überschreiben und PNGs neu erzeugen – `scripts/make-icons.mts` braucht `sharp`, das **nicht in `package.json`** steht (vorher klären, ob es als Entwicklungsabhängigkeit aufgenommen wird).
 
 ## 15. Mehrsprachigkeit
 

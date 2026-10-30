@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "dillenburg",
+    "name": "Dillenburg",
+    "center": {
+      "lat": 50.735029250000004,
+      "lng": 8.28985865
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-29",
+  "spots": [
+    {
+      "id": "dillenburg-1097053284",
+      "city": "dillenburg",
+      "label": "Behindertenparkplatz Dillenburg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Dillenburg",
+      "spotCount": 1,
+      "lat": 50.736606050000006,
+      "lng": 8.28842835,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35606718), ODbL"
+    },
+    {
+      "id": "dillenburg-143e74b1aa",
+      "city": "dillenburg",
+      "label": "Behindertenparkplatz Dillenburg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dillenburg",
+      "spotCount": 1,
+      "lat": 50.725067550000006,
+      "lng": 8.2902655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1024957442), ODbL"
+    },
+    {
+      "id": "dillenburg-da89b247c2",
+      "city": "dillenburg",
+      "label": "Behindertenparkplatz Dillenburg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dillenburg",
+      "spotCount": 1,
+      "lat": 50.735029250000004,
+      "lng": 8.293591450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1029054250), ODbL"
+    },
+    {
+      "id": "dillenburg-9115661d9a",
+      "city": "dillenburg",
+      "label": "Behindertenparkplatz Dillenburg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dillenburg",
+      "spotCount": 3,
+      "lat": 50.726198800000006,
+      "lng": 8.292670300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1134941880), ODbL"
+    },
+    {
+      "id": "dillenburg-7390e1a2a5",
+      "city": "dillenburg",
+      "label": "Behindertenparkplatz Dillenburg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dillenburg",
+      "spotCount": 1,
+      "lat": 50.743996800000005,
+      "lng": 8.2838056,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1358992460), ODbL"
+    },
+    {
+      "id": "dillenburg-e6143bac9a",
+      "city": "dillenburg",
+      "label": "Behindertenparkplatz Dillenburg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dillenburg",
+      "spotCount": 1,
+      "lat": 50.769566850000004,
+      "lng": 8.263129500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1384377475), ODbL"
+    },
+    {
+      "id": "dillenburg-af75ad8dc3",
+      "city": "dillenburg",
+      "label": "Behindertenparkplatz Dillenburg",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dillenburg",
+      "spotCount": 1,
+      "lat": 50.727712600000004,
+      "lng": 8.28985865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1387590065), ODbL"
+    }
+  ]
+}

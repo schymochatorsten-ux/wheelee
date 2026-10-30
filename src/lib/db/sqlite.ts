@@ -220,6 +220,19 @@ const MIGRATIONS: readonly string[] = [
 
   CREATE INDEX mail_token_account ON mail_token(account_id, kind);
   `,
+
+  // 10 – Besucherzählung je Tag (ToDo 20.1): nur Zahlen, nichts über Personen.
+  `
+  CREATE TABLE visit_day (
+    -- Kalendertag in Europe/Berlin, "2026-10-29".
+    day      TEXT PRIMARY KEY,
+    -- Verschiedene Besucher an diesem Tag (siehe lib/visits.ts: im Arbeitsspeicher
+    -- unterschieden, hier steht nur die Summe).
+    visitors INTEGER NOT NULL DEFAULT 0,
+    -- Seitenaufrufe von Menschen an diesem Tag.
+    views    INTEGER NOT NULL DEFAULT 0
+  );
+  `,
 ];
 
 let database: DatabaseSync | null = null;
