@@ -70,7 +70,7 @@ maschinelle Mehrfachprüfung.
 
 ## 15. Mehrsprachigkeit
 
-- [~] 15.1 **Dritte Prüfrunde der Übersetzungen** nach 15.6 für Italienisch, Polnisch, Niederländisch, Portugiesisch und Russisch (zwei Runden sind gelaufen, Befund in [Erledigt.md](Erledigt.md), 15.1; offen außerdem das niederländische „plaats“ für Stellplatz, braucht eine Muttersprachler:in). Alle Sprachen sind gebaut; eine weitere Sprache braucht je `src/i18n/<code>.ts`, Eintrag in `index.ts`, Zeile in `opening-hours.test.ts` und einen E2E-Test in `sprache.spec.ts`.
+- [!] 15.1 **Prüfung der Übersetzungen durch Menschen** (D-08) für Italienisch, Polnisch, Niederländisch, Portugiesisch und Russisch; Englisch und Spanisch ebenso. Die drei maschinellen Prüfrunden sind gelaufen (Befund in [Erledigt.md](Erledigt.md), 15.1) und finden nichts mehr. **Braucht Torsten:** je Sprache eine Muttersprachler:in, die `src/i18n/<code>.ts` gegenliest; besonders das niederländische „parkeervak“ für Stellplatz und das portugiesische „comunicação“. Alle Sprachen sind gebaut; eine weitere Sprache braucht je `src/i18n/<code>.ts`, Eintrag in `index.ts`, Zeile in `opening-hours.test.ts` und einen E2E-Test in `sprache.spec.ts`.
 
 ## 19. Betrieb und Pflege
 

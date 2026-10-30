@@ -96,7 +96,7 @@ export const pl: Messages = {
     "{strong} – urząd miasta i OpenStreetMap podają to miejsce w tym samym punkcie.",
   "details.confirmedStrong": "Potwierdzone przez dwa źródła",
   "details.osmOnly":
-    "{strong} – oficjalna lista miasta nie zawiera tego miejsca. Może być nowe lub tam brakować; informacja jest niesprawdzona, sprawdź na miejscu.",
+    "{strong} – oficjalna lista miasta nie zawiera tego miejsca. Może być nowe lub tam brakować; informacja jest niesprawdzona – sprawdź na miejscu.",
   "details.osmOnlyStrong": "Tylko w OpenStreetMap",
   "details.approx":
     "Pozycja jest znana tylko w przybliżeniu – miejsce parkingowe leży przy tej ulicy, dokładny punkt może się różnić.",
@@ -149,8 +149,8 @@ export const pl: Messages = {
   "offline.remove": "Usuń",
   "offline.removeLabel": "Usuń {name} z tego urządzenia",
   "offline.refreshLabel": "Aktualizuj {name}",
-  "offline.saved": "{name} jest teraz zapisane na tym urządzeniu.",
-  "offline.removed": "{name} zostało usunięte z tego urządzenia.",
+  "offline.saved": "Dane miasta {name} zapisano na tym urządzeniu.",
+  "offline.removed": "Dane miasta {name} usunięto z tego urządzenia.",
   "offline.failed": "Ładowanie się nie powiodło. Spróbuj ponownie, gdy będziesz mieć połączenie.",
   "offline.unsupported": "Ta przeglądarka nie może zapisywać danych do użytku offline.",
   "offline.none": "Na tym urządzeniu nie zapisano jeszcze żadnego miasta.",
@@ -167,7 +167,7 @@ export const pl: Messages = {
     "Coś jest nie tak? Brakuje miejsca parkingowego albo go już nie ma? Zgłoszenia to jedyne źródło, które zauważa takie zmiany. Jeśli chcesz, możesz podać adres e-mail – wtedy odpowiemy.",
   "settings.account": "Konto",
   "settings.accountNote":
-    "Opcjonalnie. Aplikacja działa w pełni także bez konta – łącznie ze zgłaszaniem błędów. Konto zapamiętuje jedynie, które zgłoszenia pochodzą od Ciebie.",
+    "Opcjonalnie. Aplikacja działa w pełni także bez konta – łącznie ze zgłaszaniem błędów. Konto zapamiętuje jedynie, że Twoje zgłoszenia są ze sobą powiązane.",
   "settings.legal": "Informacje prawne",
   "settings.imprint": "Impressum (nota prawna)",
   "settings.privacy": "Polityka prywatności",
@@ -552,7 +552,7 @@ export const pl: Messages = {
   "visits.range": "Okres",
   "visits.lastDays": "dni: {count}",
   "visits.today": "Dziś",
-  "visits.inRange": "Odwiedzający w okresie: {count} dni",
+  "visits.inRange": "Odwiedzający, ostatnie {count} dni",
   "visits.views": "Odsłony w okresie",
   "visits.total": "Odwiedzający łącznie",
   "visits.totalSince": "Odwiedzający łącznie od {date}",

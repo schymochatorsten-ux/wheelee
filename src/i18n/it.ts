@@ -94,7 +94,7 @@ export const it: Messages = {
     "{strong} – l’amministrazione comunale e OpenStreetMap indicano questa ubicazione nello stesso punto.",
   "details.confirmedStrong": "Confermato da due fonti",
   "details.osmOnly":
-    "{strong} – l’elenco ufficiale della città non include questa ubicazione. Può essere nuovo o mancare lì; l’informazione non è verificata, controlla sul posto.",
+    "{strong} – l’elenco ufficiale della città non include questa ubicazione. Può essere nuova o mancare lì; l’informazione non è verificata, controlla sul posto.",
   "details.osmOnlyStrong": "Solo in OpenStreetMap",
   "details.approx":
     "La posizione è nota solo approssimativamente – il parcheggio si trova su questa via, il punto esatto può differire.",
@@ -147,15 +147,15 @@ export const it: Messages = {
   "offline.remove": "Elimina",
   "offline.removeLabel": "Elimina {name} da questo dispositivo",
   "offline.refreshLabel": "Aggiorna {name}",
-  "offline.saved": "{name} è ora memorizzata su questo dispositivo.",
-  "offline.removed": "{name} è stata eliminata da questo dispositivo.",
+  "offline.saved": "I dati di {name} sono ora memorizzati su questo dispositivo.",
+  "offline.removed": "I dati di {name} sono stati eliminati da questo dispositivo.",
   "offline.failed": "Il download non è riuscito. Riprova quando hai una connessione.",
   "offline.unsupported": "Questo browser non può memorizzare dati per l’uso offline.",
   "offline.none": "Nessuna città ancora memorizzata su questo dispositivo.",
   "offline.listLabel": "Memorizzate su questo dispositivo",
   "offline.entry": "{count} ubicazioni, {size} occupati",
   "offline.dataDate": "Dati aggiornati al: {date}",
-  "offline.savedDate": "Scaricata il {date}",
+  "offline.savedDate": "Scaricati il {date}",
   "offline.staleData":
     "I dati hanno più di sei mesi. I parcheggi potrebbero essere cambiati – controlla sul posto.",
   "offline.staleCopy": "La copia ha più di un mese. Aggiornala quando sei online.",
@@ -581,7 +581,7 @@ export const it: Messages = {
   "reset.submit": "Salva la password",
   "reset.missing": "Questo link non contiene alcun token.",
   "reset.failed": "Non è andata a buon fine. Riprova.",
-  "reset.done": "La tua password è stata cambiata. Ora puoi accedere con essa.",
+  "reset.done": "La tua password è stata cambiata. Ora puoi accedere con la nuova password.",
   "emailChange.open": "Cambia indirizzo e-mail",
   "emailChange.note":
     "Invieremo un link al nuovo indirizzo. L’indirizzo viene applicato solo quando apri il link; fino ad allora resta quello attuale.",

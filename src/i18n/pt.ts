@@ -258,9 +258,9 @@ export const pt: Messages = {
   "feedback.errorMessageShort": "Descreva em poucas palavras o que não está certo.",
   "feedback.errorMessageLong": "Escreva menos – no máximo {max} caracteres.",
   "feedback.errorEmail":
-    "Este endereço de e-mail parece incorreto. Ou deixe o campo vazio.",
+    "Este endereço de e-mail parece incorreto. Corrija-o ou deixe o campo vazio.",
   "feedback.offline": "Sem ligação. A comunicação não foi enviada – tente novamente mais tarde.",
-  "feedback.thanks": "Obrigado – a comunicação foi recebida.",
+  "feedback.thanks": "Agradecemos – a comunicação foi recebida.",
   "feedback.willReply":
     "Vamos analisá-la e responder por e-mail se houver algo a dizer.",
   "feedback.noReply": "Não foi indicado nenhum endereço, por isso não receberá resposta – a sua comunicação ajuda na mesma.",
@@ -432,7 +432,7 @@ export const pt: Messages = {
 
   "error.title": "Algo correu mal",
   "error.text":
-    "A aplicação não conseguiu construir esta vista. A culpa não é sua. Uma segunda tentativa costuma ajudar – os dados de estacionamento não foram afetados.",
+    "A aplicação não conseguiu apresentar esta vista. A culpa não é sua. Uma segunda tentativa costuma ajudar – os dados de estacionamento não foram afetados.",
   "error.retry": "Tentar novamente",
   "error.backToMap": "Voltar ao mapa",
   "globalError.title": "O wheelee falhou",
@@ -534,7 +534,7 @@ export const pt: Messages = {
   "users.disable": "Bloquear",
   "users.enable": "Desbloquear",
   "users.delete": "Eliminar",
-  "users.deleteConfirm": "Eliminar definitivamente a conta {email}, com as suas avaliações e favoritos?",
+  "users.deleteConfirm": "Eliminar definitivamente a conta {email}, com as respetivas avaliações e favoritos?",
   "users.state.open": "aberto",
   "users.state.used": "utilizado",
   "users.state.expired": "expirado",
@@ -569,7 +569,7 @@ export const pt: Messages = {
     "Olá,\n\ncom esta ligação confirma este endereço como o novo endereço de e-mail da sua conta wheelee. É válida durante {minutes} minutos e só funciona uma vez:\n\n{link}\n\nSe não fez este pedido, ignore esta mensagem – nada muda.\n",
   "mail.verify.subject": "wheelee: confirmar o endereço de e-mail",
   "mail.verify.body":
-    "Olá,\n\ncom esta ligação confirma que este endereço lhe pertence. É válida durante {minutes} minutos e só uma vez:\n\n{link}\n\nSe não se registou, ignore este e-mail – não acontece mais nada.\n",
+    "Olá,\n\ncom esta ligação confirma que este endereço lhe pertence. É válida durante {minutes} minutos e só funciona uma vez:\n\n{link}\n\nSe não se registou, ignore este e-mail – não acontece mais nada.\n",
   "account.forgot": "Esqueceu-se da palavra-passe?",
   "account.forgotIntro": "Enviamos uma ligação de reposição para o endereço da sua conta.",
   "account.forgotSend": "Enviar ligação",
