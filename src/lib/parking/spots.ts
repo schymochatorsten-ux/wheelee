@@ -173,7 +173,14 @@ export function spotsOfCity(slug: string): { city: CityInfo; spots: ParkingSpot[
   if (index === -1) return null;
 
   const ids = new Set(seeds[index].seed.spots.map((spot) => spot.id));
-  return { city: getCities()[index], spots: allSpots().filter((spot) => ids.has(spot.id)) };
+  // Die Standorte „nur OSM“ (3.11) gehören dazu: Offline soll die Karte
+  // dasselbe zeigen wie online. Sie tragen den Stadt-Slug, aber keine Seed-ID.
+  return {
+    city: getCities()[index],
+    spots: allSpots().filter(
+      (spot) => ids.has(spot.id) || (spot.confirmation === "nur_osm" && spot.city === slug),
+    ),
+  };
 }
 
 /**
