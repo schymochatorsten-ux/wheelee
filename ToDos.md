@@ -62,7 +62,7 @@ maschinelle Mehrfachprüfung.
 
 ## 2. Datenquellen und Import
 
-- [~] 2d.8a **Städte mit ungenutzter amtlicher Quelle.** München und Bielefeld sind umgestellt (Befund in [Erledigt.md](Erledigt.md)). **Offen: Bochum.** Der Server antwortet mit 403, der ArcGIS-Dienst ist weg; ich kann die Datei nicht selbst laden. **Braucht Torsten:** die CSV oder das GeoJSON „Bochum – Behindertenparkplätze“ (CC0) von `bochum.opendata.ruhr` im Browser laden und in den Arbeitsordner legen; vorher prüfen, ob sie Koordinaten enthält.
+- [~] 2d.8a **Städte mit ungenutzter amtlicher Quelle.** München und Bielefeld sind umgestellt (Befund in [Erledigt.md](Erledigt.md)). **Offen: Bochum.** Am 2026-10-30 erneut mit einfachem Abruf versucht: Der Datensatz `bochum-behindertenparkplaetze` ist über die CKAN-Schnittstelle von `opendata.ruhr` auffindbar (GeoJSON, CSV, ZIP), der Download antwortet aber weiter mit 403, der ArcGIS-Dienst mit 404; ich lade die Datei nicht selbst. **Braucht Torsten:** die CSV oder das GeoJSON „Bochum – Behindertenparkplätze“ (CC0) von `bochum.opendata.ruhr` im Browser laden und in den Arbeitsordner legen; vorher prüfen, ob sie Koordinaten enthält.
 
 ## 10. Sicherheit und Recht
 
@@ -70,7 +70,7 @@ maschinelle Mehrfachprüfung.
 
 ## 15. Mehrsprachigkeit
 
-- [~] 15.1 **Zweite und dritte Prüfrunde der Übersetzungen** nach 15.6 für Italienisch, Polnisch, Niederländisch, Portugiesisch und Russisch (eine Runde ist gelaufen, Befund in [Erledigt.md](Erledigt.md), 15.1). Alle Sprachen sind gebaut; eine weitere Sprache braucht je `src/i18n/<code>.ts`, Eintrag in `index.ts`, Zeile in `opening-hours.test.ts` und einen E2E-Test in `sprache.spec.ts`.
+- [~] 15.1 **Dritte Prüfrunde der Übersetzungen** nach 15.6 für Italienisch, Polnisch, Niederländisch, Portugiesisch und Russisch (zwei Runden sind gelaufen, Befund in [Erledigt.md](Erledigt.md), 15.1; offen außerdem das niederländische „plaats“ für Stellplatz, braucht eine Muttersprachler:in). Alle Sprachen sind gebaut; eine weitere Sprache braucht je `src/i18n/<code>.ts`, Eintrag in `index.ts`, Zeile in `opening-hours.test.ts` und einen E2E-Test in `sprache.spec.ts`.
 
 ## 19. Betrieb und Pflege
 

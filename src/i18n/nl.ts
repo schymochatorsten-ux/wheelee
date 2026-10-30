@@ -32,12 +32,12 @@ export const nl: Messages = {
   "share.copy": "Link kopiëren",
 
   "legend.target": "Doel van de navigatiebalk",
-  "legend.targetNote": "groter weergegeven – de dichtstbijzijnde of gekozen plek",
+  "legend.targetNote": "groter weergegeven – de dichtstbijzijnde of zelf gekozen parkeerplaats",
   "legend.others": "Andere voorgestelde parkeerplaatsen",
   "legend.othersNote": "alleen zichtbaar bij uitgeklapte keuze",
   "legend.exact": "Parkeerplaats, exacte positie",
   "legend.exactNote": "coördinaten uit de bron",
-  "legend.approx": "Parkeerplaats, ongeveer",
+  "legend.approx": "Parkeerplaats, positie bij benadering",
   "legend.approxNote": "ligt in deze straat, het exacte punt kan afwijken",
   "legend.title": "Wat de kleuren betekenen",
   "legend.clusters":
@@ -100,7 +100,7 @@ export const nl: Messages = {
     "De positie is slechts bij benadering bekend – de parkeerplaats ligt in deze straat, het exacte punt kan afwijken.",
   "details.source": "Bron: {source}",
 
-  "maps.auto": "Automatisch (naar apparaat)",
+  "maps.auto": "Automatisch (afhankelijk van het apparaat)",
   "maps.google.open": "Openen in Google Maps",
   "maps.google.short": "Google Maps",
   "maps.apple.open": "Openen in Apple Kaarten",
@@ -195,7 +195,7 @@ export const nl: Messages = {
   "myRatings.open": "Mijn beoordelingen",
   "myRatings.close": "Mijn beoordelingen verbergen",
   "myRatings.intro":
-    "De stemmen die je hebt uitgebracht, de nieuwste eerst. Intrekken haalt de stem uit de samenvatting.",
+    "De stemmen die je hebt uitgebracht, de nieuwste eerst. Intrekken haalt de stem uit de telling.",
   "myRatings.none": "Je hebt nog geen parkeerplaats beoordeeld.",
   "myRatings.loading": "Laden …",
   "myRatings.loadFailed": "Je beoordelingen konden niet worden geladen.",
@@ -229,7 +229,7 @@ export const nl: Messages = {
   "myFavorites.removeLabel": "{name} uit de opgeslagen parkeerplaatsen verwijderen",
   "account.delete": "Account verwijderen",
   "account.deleteWarning":
-    "Je account, alle sessies en je beoordelingen worden verwijderd. Je meldingen blijven als notities bestaan, maar zijn niet meer aan jou gekoppeld; het daarbij opgegeven antwoordadres wordt verwijderd. Dit kan niet ongedaan worden gemaakt.",
+    "Je account, alle sessies en je beoordelingen worden verwijderd. Je meldingen blijven bestaan, maar zonder koppeling aan jou; het daarbij opgegeven antwoordadres wordt verwijderd. Dit kan niet ongedaan worden gemaakt.",
   "account.deletePassword": "Je wachtwoord, ter bevestiging",
   "account.deleteConfirm": "Account definitief verwijderen",
   "account.modeGroup": "Aanmelden of account aanmaken",
@@ -256,13 +256,13 @@ export const nl: Messages = {
     "Het adres wordt alleen gebruikt om op deze melding te antwoorden, niet doorgegeven en samen met de melding verwijderd – uiterlijk na twee jaar.",
   "feedback.errorKind": "Kies waar het over gaat.",
   "feedback.errorMessageShort": "Beschrijf in een paar woorden wat er niet klopt.",
-  "feedback.errorMessageLong": "Houd het korter – hoogstens {max} tekens.",
+  "feedback.errorMessageLong": "Houd het korter – maximaal {max} tekens.",
   "feedback.errorEmail":
     "Dit e-mailadres ziet er onjuist uit. Laat het veld anders leeg.",
   "feedback.offline": "Geen verbinding. De melding is niet verzonden – probeer het later opnieuw.",
   "feedback.thanks": "Bedankt – de melding is aangekomen.",
   "feedback.willReply":
-    "We bekijken haar en antwoorden per e-mail als er iets te zeggen valt.",
+    "We kijken ernaar en antwoorden per e-mail als er iets te zeggen valt.",
   "feedback.noReply": "Er is geen adres opgegeven, dus je krijgt geen antwoord – je melding helpt toch.",
   "feedback.again": "Iets anders melden",
   "feedback.done": "Klaar",
@@ -291,7 +291,7 @@ export const nl: Messages = {
   "rating.lastGone": "Laatst als opgeheven gemeld:",
   "rating.needAccount":
     "Om te beoordelen heb je een account nodig – onder “Instellingen → Account”. Bekijken kan ook zonder.",
-  "rating.voted": "Stem uitgebracht. Nogmaals tikken trekt haar in, de andere knop draait haar om.",
+  "rating.voted": "Stem uitgebracht. Nogmaals tikken trekt hem in, de andere knop wijzigt hem.",
   "rating.votes": "{label}, {count} stemmen",
 
   "admin.unauthorized": "Niet aangemeld of geen rechten.",
@@ -317,7 +317,7 @@ export const nl: Messages = {
   "reported.reason.reports": "Accounts die een opheffing meldden: {count}.",
   "reported.weighted": "Gewogen: {gone} opgeheven · {exists} bevestigd",
   "reported.weightedHint":
-    "Gewogen betekent: oudere stemmen tellen minder mee (na twee jaar een kwart), accounts die vaak met anderen overeenstemmen tellen tot dubbel. Dit ordent alleen – het wijzigt geen gegevens.",
+    "Gewogen betekent: oudere stemmen tellen minder mee (na twee jaar een kwart), accounts die vaak met anderen overeenstemmen tellen tot twee keer zo zwaar. Dit bepaalt alleen de volgorde – het wijzigt geen gegevens.",
   "reported.notInStock": "Niet meer in de gegevens",
   "reported.place": "Plaats",
   "reported.spaces": " · {count} plaatsen",
@@ -378,7 +378,7 @@ export const nl: Messages = {
   "search.kind.street": "Straat",
 
   "nearest.spaces": "{count} plaatsen",
-  "nearest.approx": "positie ongeveer",
+  "nearest.approx": "positie bij benadering",
   "nearest.backToMe": "Kaart op mijn locatie centreren",
   "nearest.spotAt": "Parkeerplaats bij {place}",
   "nearest.nearest": "Dichtstbijzijnde gehandicaptenparkeerplaats",
@@ -399,18 +399,18 @@ export const nl: Messages = {
   "view.map": "Kaart",
   "view.list": "Lijst",
   "view.settings": "Instellingen",
-  "view.feedback": "Melding",
+  "view.feedback": "Meldingen",
   "view.choose": "Weergave kiezen",
   "map.loading": "Kaart laden …",
   "map.locating": "Je locatie wordt bepaald …",
   "map.nearestSpot": "Dichtstbijzijnde parkeerplaats: {name} – {distance}",
-  "map.noneNearby": "Geen gelokaliseerde parkeerplaats in de buurt.",
+  "map.noneNearby": "Geen parkeerplaats met bekende positie in de buurt.",
   "map.retryLocation": "Locatie opnieuw proberen te bepalen",
   "map.hintCityLevel": "Zoom in tot stadsniveau om parkeerplaatsen te zien.",
   "map.hintTruncated": "Niet alle parkeerplaatsen zijn geladen – zoom verder in.",
 
   "geo.denied":
-    "Toegang tot je locatie is geweigerd. De kaart toont het stadscentrum – alle parkeerplaatsen blijven zichtbaar.",
+    "Je hebt de toegang tot je locatie geweigerd. De kaart toont het stadscentrum – alle parkeerplaatsen blijven zichtbaar.",
   "geo.unavailable":
     "Je apparaat kon de locatie niet bepalen. De kaart toont het stadscentrum – alle parkeerplaatsen blijven zichtbaar.",
   "geo.timeout": "Het bepalen van je locatie duurde te lang. Je kunt het opnieuw proberen of de kaart gebruiken zoals ze is.",
@@ -428,7 +428,7 @@ export const nl: Messages = {
 
   "meta.title": "wheelee – gehandicaptenparkeren",
   "meta.description":
-    "Vindt op de kaart de dichtstbijzijnde openbare gehandicaptenparkeerplaats – op je telefoon, zonder registratie.",
+    "Vind de dichtstbijzijnde openbare gehandicaptenparkeerplaats op de kaart – op je telefoon, zonder registratie.",
 
   "error.title": "Er is iets misgegaan",
   "error.text":
@@ -454,7 +454,7 @@ export const nl: Messages = {
   "api.invalidRequest": "Ongeldig verzoek.",
   "api.unknownMapsApp": "Onbekende kaartenapp.",
   "api.unknownLanguage": "Onbekende taal.",
-  "api.invalidNumber": "Ongeldig getal.",
+  "api.invalidNumber": "Ongeldig nummer.",
   "api.unknownStatus": "Onbekende status.",
   "api.notFoundOrNoChange": "Niet gevonden of niets te wijzigen.",
   "api.notFound": "Niet gevonden.",
@@ -476,7 +476,7 @@ export const nl: Messages = {
   "api.favoriteNeedsAccount": "Om parkeerplaatsen op te slaan is een account nodig.",
   "api.tooManyFavorites": "Te veel wijzigingen in korte tijd. Wacht even.",
   "api.favoritesFull":
-    "Het maximale aantal opgeslagen parkeerplaatsen is bereikt. Verwijder eerst een plaats.",
+    "Het maximale aantal opgeslagen parkeerplaatsen is bereikt. Verwijder er eerst een.",
   "api.tooManyRatings": "Te veel beoordelingen in korte tijd. Wacht even.",
   "api.unknownRating": "Onbekende beoordeling.",
 
@@ -569,7 +569,7 @@ export const nl: Messages = {
     "Hallo,\n\nmet deze link bevestig je dit adres als nieuw e-mailadres van je wheelee-account. Hij is {minutes} minuten geldig en werkt maar één keer:\n\n{link}\n\nAls je dit niet hebt aangevraagd, negeer dan dit bericht – er verandert niets.\n",
   "mail.verify.subject": "wheelee: bevestig je e-mailadres",
   "mail.verify.body":
-    "Hallo,\n\nmet deze link bevestig je dat dit adres van jou is. Hij is {minutes} minuten geldig en kan één keer worden gebruikt:\n\n{link}\n\nAls je je niet hebt geregistreerd, negeer deze mail dan – er gebeurt verder niets.\n",
+    "Hallo,\n\nmet deze link bevestig je bij wheelee dat dit adres van jou is. Hij is {minutes} minuten geldig en werkt maar één keer:\n\n{link}\n\nAls je je niet hebt geregistreerd, negeer dan dit bericht – er gebeurt verder niets.\n",
   "account.forgot": "Wachtwoord vergeten?",
   "account.forgotIntro": "We sturen een herstellink naar het adres van je account.",
   "account.forgotSend": "Link sturen",

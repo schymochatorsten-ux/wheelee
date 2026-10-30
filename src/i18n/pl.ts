@@ -49,8 +49,8 @@ export const pl: Messages = {
 
   "list.spacesOne": "{count} miejsce",
   "list.spacesMany": "miejsc: {count}",
-  "list.nearby": "Parkingi w pobliżu",
-  "list.nearest": "Najbliższe parkingi",
+  "list.nearby": "Miejsca parkingowe w pobliżu",
+  "list.nearest": "Najbliższe miejsca parkingowe",
   "list.noLocation": "Bez dostępu do lokalizacji odległość liczona jest od centrum miasta.",
   "list.showDetails": "Pokaż szczegóły",
   "list.unlocated": "Bez dokładnej pozycji ({count})",
@@ -133,7 +133,7 @@ export const pl: Messages = {
     "Najpierw proponowany jest język Twojej przeglądarki. Z kontem Twój wybór obowiązuje na wszystkich urządzeniach.",
   "settings.languageChoose": "Wybierz język",
   "settings.languageUnreviewed":
-    "Tłumaczenia powstały maszynowo i zostały kilkakrotnie sprawdzone maszynowo, nie przez native speakerów. Obowiązującą wersją jest niemiecka; na miejscu zawsze obowiązują znaki i oznaczenia.",
+    "Tłumaczenia powstały maszynowo i zostały kilkakrotnie sprawdzone maszynowo, nie przez osoby, dla których polski jest językiem ojczystym. Obowiązującą wersją jest niemiecka; na miejscu zawsze obowiązują znaki i oznaczenia.",
   "settings.mapsApp": "Aplikacja map do nawigacji",
   "settings.mapsAppNote":
     "Co otwiera „Rozpocznij nawigację”. Bez własnego wyboru zależy to od urządzenia – tutaj byłoby to: {detected}.",
@@ -141,7 +141,7 @@ export const pl: Messages = {
   "settings.mapsAppDeviceOnly": "Wybór obowiązuje tylko na tym urządzeniu – także z kontem.",
   "offline.heading": "Offline: zabierz dane o parkingach ze sobą",
   "offline.note":
-    "Pobiera dane o parkingach jednego miasta na to urządzenie, by były w pełni dostępne w garażach i miejscach bez zasięgu. Kafelki mapy nie są wliczone – bez połączenia mapa w tle pozostaje szara, ale znaczniki i lista działają.",
+    "Pobiera dane o miejscach parkingowych jednego miasta na to urządzenie, by były w pełni dostępne w parkingach wielopoziomowych i miejscach bez zasięgu. Kafelki mapy nie są wliczone – bez połączenia mapa w tle pozostaje szara, ale znaczniki i lista działają.",
   "offline.cityLabel": "Miasto",
   "offline.download": "Pobierz",
   "offline.downloading": "Ładowanie …",
@@ -161,13 +161,13 @@ export const pl: Messages = {
   "offline.staleData":
     "Dane mają ponad pół roku. Miejsca parkingowe mogły się zmienić – sprawdź na miejscu.",
   "offline.staleCopy": "Kopia ma ponad miesiąc. Zaktualizuj ją, gdy będziesz online.",
-  "offline.total": "Zajęte łącznie: {size}",
+  "offline.total": "Łącznie zajmuje: {size}",
   "settings.feedback": "Zgłoś błąd lub wyślij sugestię",
   "settings.feedbackNote":
     "Coś jest nie tak? Brakuje miejsca parkingowego albo go już nie ma? Zgłoszenia to jedyne źródło, które zauważa takie zmiany. Jeśli chcesz, możesz podać adres e-mail – wtedy odpowiemy.",
   "settings.account": "Konto",
   "settings.accountNote":
-    "Opcjonalnie. Aplikacja działa w pełni także bez konta – łącznie ze zgłaszaniem błędów. Konto tylko zapamiętuje, że Twoje zgłoszenia są ze sobą powiązane.",
+    "Opcjonalnie. Aplikacja działa w pełni także bez konta – łącznie ze zgłaszaniem błędów. Konto zapamiętuje jedynie, które zgłoszenia pochodzą od Ciebie.",
   "settings.legal": "Informacje prawne",
   "settings.imprint": "Impressum (nota prawna)",
   "settings.privacy": "Polityka prywatności",
@@ -232,7 +232,7 @@ export const pl: Messages = {
   "account.delete": "Usuń konto",
   "account.deleteWarning":
     "Konto, wszystkie sesje i Twoje oceny zostaną usunięte. Twoje zgłoszenia pozostaną jako notatki, ale stracą powiązanie z Tobą; podany tam adres do odpowiedzi zostanie usunięty. Nie można tego cofnąć.",
-  "account.deletePassword": "Twoje hasło, dla potwierdzenia",
+  "account.deletePassword": "Twoje hasło (w celu potwierdzenia)",
   "account.deleteConfirm": "Usuń konto na stałe",
   "account.modeGroup": "Zaloguj się lub załóż konto",
   "account.login": "Zaloguj się",
@@ -293,7 +293,7 @@ export const pl: Messages = {
   "rating.lastGone": "Ostatnie zgłoszenie likwidacji:",
   "rating.needAccount":
     "Do oceniania potrzebne jest konto – w „Ustawienia → Konto”. Informacje możesz mimo to przeglądać bez niego.",
-  "rating.voted": "Oddano głos. Ponowne dotknięcie wycofuje go, drugi przycisk go odwraca.",
+  "rating.voted": "Oddano głos. Ponowne dotknięcie wycofuje go, drugi przycisk zmienia go na przeciwny.",
   "rating.votes": "{label}, głosów: {count}",
 
   "admin.unauthorized": "Nie zalogowano lub brak uprawnień.",
@@ -319,7 +319,7 @@ export const pl: Messages = {
   "reported.reason.reports": "Kont, które zgłosiły likwidację: {count}.",
   "reported.weighted": "Ważone: {gone} zlikwidowane · {exists} potwierdzone",
   "reported.weightedHint":
-    "Ważone oznacza: starsze głosy liczą się mniej (po dwóch latach jedna czwarta), konta, które często zgadzają się z innymi, liczą się do dwukrotności. To tylko porządkuje – nie zmienia żadnych danych.",
+    "Ważone oznacza: starsze głosy liczą się mniej (po dwóch latach jedna czwarta), konta, które często zgadzają się z innymi, liczą się nawet podwójnie. To tylko porządkuje – nie zmienia żadnych danych.",
   "reported.notInStock": "Już nie ma w danych",
   "reported.place": "Miejsce",
   "reported.spaces": " · miejsc: {count}",
@@ -339,8 +339,8 @@ export const pl: Messages = {
   "feedbackAdmin.confirmDelete": "Usunąć zgłoszenie nr {id} na stałe?\n\n„{preview}…”",
   "feedbackAdmin.deleteFailed": "Usunięcie się nie powiodło.",
   "feedbackAdmin.title": "Zgłoszenia",
-  "feedbackAdmin.countsOne": "{total} zgłoszenie, w tym {neu} nowych i {done} zrealizowanych.",
-  "feedbackAdmin.countsMany": "Zgłoszeń: {total}, w tym {neu} nowych i {done} zrealizowanych.",
+  "feedbackAdmin.countsOne": "{total} zgłoszenie (nowe: {neu}, zrealizowane: {done}).",
+  "feedbackAdmin.countsMany": "Zgłoszeń: {total} (nowe: {neu}, zrealizowane: {done}).",
   "feedbackAdmin.filterKind": "Rodzaj",
   "feedbackAdmin.filterStatus": "Status",
   "feedbackAdmin.all": "Wszystkie",
@@ -424,7 +424,7 @@ export const pl: Messages = {
   "map.markerCandidate": "{label}, {spaces}, proponowane jako opcja",
   "map.label": "Mapa miejsc parkingowych dla osób z niepełnosprawnościami",
   "map.attribution":
-    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> współtwórcy',
+    '&copy; współtwórcy <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
   "map.yourLocation": "Twoja lokalizacja",
   "map.destination": "Cel: {label}",
 
@@ -518,7 +518,7 @@ export const pl: Messages = {
   "users.role.admin": "Administrator",
   "users.role.user": "Użytkownik",
   "users.inviteSubmit": "Utwórz link z zaproszeniem",
-  "users.inviteCreated": "Link z zaproszeniem dla {email}. Jest pokazywany tylko teraz i ważny siedem dni – przekaż go samodzielnie.",
+  "users.inviteCreated": "Link z zaproszeniem dla {email}. Jest pokazywany tylko teraz i ważny przez siedem dni – przekaż go samodzielnie.",
   "users.copy": "Kopiuj link",
   "users.copied": "Skopiowano",
   "users.accounts": "Konta",
@@ -531,12 +531,12 @@ export const pl: Messages = {
   "users.count": "{shown} z {total} kont – najpierw administratorzy i konta zablokowane",
   "users.noMatch": "Żadne konto nie pasuje do wyszukiwania.",
   "users.more": "Pokaż więcej kont",
-  "users.makeAdmin": "Nadaj uprawnienia administratora",
-  "users.makeUser": "Odbierz uprawnienia administratora",
+  "users.makeAdmin": "Ustaw jako administratora",
+  "users.makeUser": "Odbierz rolę administratora",
   "users.disable": "Zablokuj",
   "users.enable": "Odblokuj",
   "users.delete": "Usuń",
-  "users.deleteConfirm": "Usunąć na stałe konto {email} wraz z jego ocenami i ulubionymi?",
+  "users.deleteConfirm": "Usunąć na stałe konto {email} wraz z jego ocenami i zapisanymi miejscami parkingowymi?",
   "users.state.open": "otwarte",
   "users.state.used": "wykorzystane",
   "users.state.expired": "wygasłe",
@@ -552,7 +552,7 @@ export const pl: Messages = {
   "visits.range": "Okres",
   "visits.lastDays": "dni: {count}",
   "visits.today": "Dziś",
-  "visits.inRange": "Odwiedzający, ostatnie dni: {count}",
+  "visits.inRange": "Odwiedzający w okresie: {count} dni",
   "visits.views": "Odsłony w okresie",
   "visits.total": "Odwiedzający łącznie",
   "visits.totalSince": "Odwiedzający łącznie od {date}",
@@ -565,13 +565,13 @@ export const pl: Messages = {
   "api.emailSame": "To już jest adres tego konta.",
   "mail.reset.subject": "wheelee: zresetuj hasło",
   "mail.reset.body":
-    "Cześć,\n\ntym linkiem ustawisz nowe hasło w wheelee. Jest ważny przez {minutes} minut i działa tylko raz:\n\n{link}\n\nJeśli to nie była Twoja prośba, zignoruj tę wiadomość – hasło pozostanie bez zmian.\n",
+    "Cześć,\n\ntym linkiem ustawisz nowe hasło w wheelee. Link jest ważny przez {minutes} min i można go użyć tylko raz:\n\n{link}\n\nJeśli to nie była Twoja prośba, zignoruj tę wiadomość – hasło pozostanie bez zmian.\n",
   "mail.email.subject": "wheelee: potwierdź nowy adres e-mail",
   "mail.email.body":
-    "Cześć,\n\ntym linkiem potwierdzasz ten adres jako nowy adres e-mail konta w wheelee. Jest ważny przez {minutes} minut i działa tylko raz:\n\n{link}\n\nJeśli to nie była Twoja prośba, zignoruj tę wiadomość – nic się nie zmieni.\n",
+    "Cześć,\n\ntym linkiem potwierdzasz ten adres jako nowy adres e-mail konta w wheelee. Link jest ważny przez {minutes} min i można go użyć tylko raz:\n\n{link}\n\nJeśli to nie była Twoja prośba, zignoruj tę wiadomość – nic się nie zmieni.\n",
   "mail.verify.subject": "wheelee: potwierdź swój adres e-mail",
   "mail.verify.body":
-    "Cześć,\n\nten link potwierdza, że ten adres należy do Ciebie. Jest ważny przez {minutes} minut i tylko jeden raz:\n\n{link}\n\nJeśli to nie Ty zakładasz konto, zignoruj tę wiadomość – nic więcej się nie stanie.\n",
+    "Cześć,\n\ntym linkiem potwierdzasz w wheelee, że ten adres należy do Ciebie. Link jest ważny przez {minutes} min i można go użyć tylko raz:\n\n{link}\n\nJeśli konto nie zostało założone przez Ciebie, zignoruj tę wiadomość – nic więcej się nie stanie.\n",
   "account.forgot": "Nie pamiętasz hasła?",
   "account.forgotIntro": "Wyślemy link do zresetowania na adres Twojego konta.",
   "account.forgotSend": "Wyślij link",
@@ -586,9 +586,9 @@ export const pl: Messages = {
   "reset.done": "Twoje hasło zostało zmienione. Możesz teraz zalogować się nowym hasłem.",
   "emailChange.open": "Zmień adres e-mail",
   "emailChange.note":
-    "Wyślemy link na nowy adres. Zacznie obowiązywać dopiero po jego otwarciu; do tego czasu obowiązuje dotychczasowy.",
+    "Wyślemy link na nowy adres. Nowy adres zacznie obowiązywać dopiero po otwarciu linku; do tego czasu obowiązuje dotychczasowy.",
   "emailChange.newEmail": "Nowy adres e-mail",
-  "emailChange.password": "Twoje hasło, dla potwierdzenia",
+  "emailChange.password": "Twoje hasło (w celu potwierdzenia)",
   "emailChange.submit": "Wyślij link",
   "emailChange.sent":
     "Jeśli adres jest wolny, wysłaliśmy tam link. Dopóki go nie otworzysz, obowiązuje dotychczasowy adres.",

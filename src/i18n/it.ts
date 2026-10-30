@@ -36,7 +36,7 @@ export const it: Messages = {
   "legend.others": "Altri parcheggi proposti",
   "legend.othersNote": "visibili solo quando la selezione è aperta",
   "legend.exact": "Parcheggio, posizione esatta",
-  "legend.exactNote": "coordinata dalla fonte",
+  "legend.exactNote": "coordinate fornite dalla fonte",
   "legend.approx": "Parcheggio, posizione approssimativa",
   "legend.approxNote": "si trova su questa via, il punto esatto può differire",
   "legend.title": "Significato dei colori",
@@ -71,7 +71,7 @@ export const it: Messages = {
   "list.cityFilter": "Cerca una città",
   "list.cityShown": "Mostrate {shown} su {count}: digita un nome per trovarne altre.",
   "list.cityNone": "Nessuna città trovata.",
-  "list.cityCounts": ": {spots} luoghi, {spaces} posti",
+  "list.cityCounts": ": {spots} ubicazioni, {spaces} posti",
   "list.source": "Fonte: {source}",
   "list.licenseMissing": " · licenza non indicata",
   "list.dataFrom": "Dati aggiornati al {date}",
@@ -91,10 +91,10 @@ export const it: Messages = {
   "details.restrictionOn": "La limitazione è in vigore {strong}.",
   "details.restrictionOnStrong": "al momento",
   "details.confirmed":
-    "{strong} – l’amministrazione comunale e OpenStreetMap indicano questo posto nello stesso punto.",
+    "{strong} – l’amministrazione comunale e OpenStreetMap indicano questa ubicazione nello stesso punto.",
   "details.confirmedStrong": "Confermato da due fonti",
   "details.osmOnly":
-    "{strong} – l’elenco ufficiale della città non include questo posto. Può essere nuovo o mancare lì; l’informazione non è verificata, controlla sul posto.",
+    "{strong} – l’elenco ufficiale della città non include questa ubicazione. Può essere nuovo o mancare lì; l’informazione non è verificata, controlla sul posto.",
   "details.osmOnlyStrong": "Solo in OpenStreetMap",
   "details.approx":
     "La posizione è nota solo approssimativamente – il parcheggio si trova su questa via, il punto esatto può differire.",
@@ -142,18 +142,18 @@ export const it: Messages = {
     "Scarica su questo dispositivo i dati dei parcheggi di una città, così sono disponibili per intero nei parcheggi coperti e nelle zone senza copertura. I riquadri della mappa non sono inclusi – senza connessione la mappa di sfondo resta grigia, ma i segnaposto e l’elenco funzionano.",
   "offline.cityLabel": "Città",
   "offline.download": "Scarica",
-  "offline.downloading": "Caricamento …",
+  "offline.downloading": "Download in corso …",
   "offline.refresh": "Aggiorna",
   "offline.remove": "Elimina",
   "offline.removeLabel": "Elimina {name} da questo dispositivo",
   "offline.refreshLabel": "Aggiorna {name}",
   "offline.saved": "{name} è ora memorizzata su questo dispositivo.",
   "offline.removed": "{name} è stata eliminata da questo dispositivo.",
-  "offline.failed": "Il caricamento non è riuscito. Riprova quando hai una connessione.",
+  "offline.failed": "Il download non è riuscito. Riprova quando hai una connessione.",
   "offline.unsupported": "Questo browser non può memorizzare dati per l’uso offline.",
   "offline.none": "Nessuna città ancora memorizzata su questo dispositivo.",
   "offline.listLabel": "Memorizzate su questo dispositivo",
-  "offline.entry": "{count} luoghi, {size} occupati",
+  "offline.entry": "{count} ubicazioni, {size} occupati",
   "offline.dataDate": "Dati aggiornati al: {date}",
   "offline.savedDate": "Scaricata il {date}",
   "offline.staleData":
@@ -240,7 +240,7 @@ export const it: Messages = {
   "account.passwordHelp":
     "Almeno {min} caratteri. La lunghezza conta più dei caratteri speciali – una frase che ricordi è meglio di {example}.",
   "account.forgotNote":
-    "Una password dimenticata al momento non può essere reimpostata da soli – non è ancora previsto l’invio di e-mail. Per usare l’app, comunque, non serve un account.",
+    "Una password dimenticata al momento non può essere reimpostata autonomamente – non è ancora previsto l’invio di e-mail. Per usare l’app, comunque, non serve un account.",
 
   "feedback.reportSpot": "Segnala un errore su questo parcheggio",
   "feedback.reportOrSuggest": "Segnala un errore o invia un suggerimento",
@@ -251,7 +251,7 @@ export const it: Messages = {
   "feedback.kind.fehler": "Segnala un errore",
   "feedback.kind.vorschlag": "Suggerimento di miglioramento",
   "feedback.contactHint":
-    "Possiamo rispondere solo se indichi un indirizzo – per domande o quando l’errore è corretto. Senza indirizzo la tua segnalazione aiuta comunque, ma non riceverai una risposta.",
+    "Possiamo rispondere solo se indichi un indirizzo – per domande o quando l’errore è stato risolto. Senza indirizzo la tua segnalazione aiuta comunque, ma non riceverai una risposta.",
   "feedback.contactPrivacy":
     "L’indirizzo viene usato solo per la risposta a questa segnalazione, non viene ceduto e viene eliminato insieme alla segnalazione – al più tardi dopo due anni.",
   "feedback.errorKind": "Scegli di cosa si tratta.",
@@ -274,7 +274,7 @@ export const it: Messages = {
   "feedback.placeholderSuggestion": "Ad esempio: sarebbe bello avere un raggio di 2 km.",
   "feedback.placeholderError":
     "Ad esempio: il parcheggio in Bahnhofstraße 4 è stato rimosso, ora c’è una colonnina di ricarica.",
-  "feedback.charsLeft": "Restano {count} caratteri.",
+  "feedback.charsLeft": "Caratteri rimasti: {count}.",
   "feedback.optional": "(facoltativo)",
   "feedback.emailPlaceholder": "nome@esempio.it",
   "feedback.fromAccount": "Ripreso dal tuo account.",
@@ -290,7 +290,7 @@ export const it: Messages = {
   "rating.lastConfirmed": "Ultima conferma:",
   "rating.lastGone": "Ultima segnalazione di rimozione:",
   "rating.needAccount":
-    "Per valutare serve un account – in “Impostazioni → Account”. Puoi comunque consultare le informazioni anche senza account.",
+    "Per valutare serve un account – in “Impostazioni → Account”. Le informazioni si possono consultare anche senza account.",
   "rating.voted": "Hai votato. Toccando di nuovo ritiri il voto, l’altro pulsante lo inverte.",
   "rating.votes": "{label}, {count} voti",
 
@@ -343,14 +343,14 @@ export const it: Messages = {
   "feedbackAdmin.filterStatus": "Stato",
   "feedbackAdmin.all": "Tutte",
   "feedbackAdmin.empty": "Nessuna segnalazione – almeno con questo filtro.",
-  "feedbackAdmin.replyTo": "Rispondere a",
+  "feedbackAdmin.replyTo": "Rispondi a",
   "feedbackAdmin.addressRemoved":
     "Indirizzo rimosso dopo due anni ({date}) – la segnalazione è rimasta così a lungo non elaborata.",
   "feedbackAdmin.account": "Account",
   "feedbackAdmin.browser": "Browser",
   "feedbackAdmin.changed": "Modificata",
   "feedbackAdmin.markDone": "Segna come completata",
-  "feedbackAdmin.reopen": "Di nuovo su “nuova”",
+  "feedbackAdmin.reopen": "Riapri",
   "feedbackAdmin.discard": "Scarta",
   "feedbackAdmin.delete": "Elimina",
   "feedbackAdmin.addNote": "Aggiungi nota",
@@ -415,8 +415,8 @@ export const it: Messages = {
     "Il tuo dispositivo non è riuscito a determinare una posizione. La mappa mostra il centro della città – tutti i parcheggi restano visibili.",
   "geo.timeout": "La ricerca della tua posizione ha richiesto troppo tempo. Puoi riprovare o usare la mappa così com’è.",
 
-  "map.clusterOne": "{count} parcheggio in quest’area, tocca per separare",
-  "map.clusterMany": "{count} parcheggi in quest’area, tocca per separare",
+  "map.clusterOne": "{count} parcheggio in quest’area, tocca per espandere",
+  "map.clusterMany": "{count} parcheggi in quest’area, tocca per espandere",
   "map.marker": "{label}, {spaces}",
   "map.markerTarget": "{label}, {spaces}, destinazione selezionata",
   "map.markerCandidate": "{label}, {spaces}, proposto come opzione",
@@ -530,7 +530,7 @@ export const it: Messages = {
   "users.noMatch": "Nessun account corrisponde alla ricerca.",
   "users.more": "Mostra altri account",
   "users.makeAdmin": "Rendi amministratore",
-  "users.makeUser": "Togli i diritti di amministratore",
+  "users.makeUser": "Rimuovi da amministratori",
   "users.disable": "Blocca",
   "users.enable": "Sblocca",
   "users.delete": "Elimina",
@@ -563,20 +563,20 @@ export const it: Messages = {
   "api.emailSame": "Questo è già l’indirizzo di questo account.",
   "mail.reset.subject": "wheelee: reimposta la password",
   "mail.reset.body":
-    "Ciao,\n\ncon questo link puoi impostare una nuova password per wheelee. È valido {minutes} minuti e una sola volta:\n\n{link}\n\nSe non l’hai richiesto, ignora questa e-mail: la tua password resta invariata.\n",
+    "Ciao,\n\ncon questo link puoi impostare una nuova password per wheelee. È valido {minutes} minuti e può essere usato una sola volta:\n\n{link}\n\nSe non l’hai richiesto, ignora questa e-mail: la tua password resta invariata.\n",
   "mail.email.subject": "wheelee: conferma il nuovo indirizzo e-mail",
   "mail.email.body":
-    "Ciao,\n\ncon questo link confermi questo indirizzo come nuovo indirizzo e-mail del tuo account wheelee. È valido {minutes} minuti e una sola volta:\n\n{link}\n\nSe non l’hai richiesto, ignora questa e-mail: non cambierà nulla.\n",
+    "Ciao,\n\ncon questo link confermi questo indirizzo come nuovo indirizzo e-mail del tuo account wheelee. È valido {minutes} minuti e può essere usato una sola volta:\n\n{link}\n\nSe non l’hai richiesto, ignora questa e-mail: non cambierà nulla.\n",
   "mail.verify.subject": "wheelee: conferma il tuo indirizzo e-mail",
   "mail.verify.body":
-    "Ciao,\n\ncon questo link confermi che questo indirizzo è tuo. È valido per {minutes} minuti e una sola volta:\n\n{link}\n\nSe non ti sei registrato, ignora questa e-mail: non succede nient’altro.\n",
+    "Ciao,\n\ncon questo link confermi che questo indirizzo è tuo. È valido {minutes} minuti e può essere usato una sola volta:\n\n{link}\n\nSe non hai creato tu un account, ignora questa e-mail: non succede nient’altro.\n",
   "account.forgot": "Password dimenticata?",
   "account.forgotIntro": "Invieremo un link per reimpostarla all’indirizzo del tuo account.",
   "account.forgotSend": "Invia il link",
   "account.forgotSent":
     "Se esiste un account per questo indirizzo, abbiamo inviato un link. È valido un’ora.",
   "reset.title": "Imposta una nuova password",
-  "reset.intro": "Scegli una nuova password. Poi verrai disconnesso ovunque e accederai di nuovo con essa.",
+  "reset.intro": "Scegli una nuova password. Poi la sessione verrà chiusa su tutti i dispositivi e potrai accedere di nuovo con la nuova password.",
   "reset.password": "Nuova password",
   "reset.submit": "Salva la password",
   "reset.missing": "Questo link non contiene alcun token.",
@@ -584,7 +584,7 @@ export const it: Messages = {
   "reset.done": "La tua password è stata cambiata. Ora puoi accedere con essa.",
   "emailChange.open": "Cambia indirizzo e-mail",
   "emailChange.note":
-    "Invieremo un link al nuovo indirizzo. L’indirizzo viene adottato solo quando apri il link; fino ad allora resta quello attuale.",
+    "Invieremo un link al nuovo indirizzo. L’indirizzo viene applicato solo quando apri il link; fino ad allora resta quello attuale.",
   "emailChange.newEmail": "Nuovo indirizzo e-mail",
   "emailChange.password": "La tua password, per confermare",
   "emailChange.submit": "Invia il link",
@@ -593,7 +593,7 @@ export const it: Messages = {
   "confirmEmail.title": "Conferma l’indirizzo e-mail",
   "confirmEmail.intro": "Con un clic questo indirizzo diventa l’indirizzo e-mail del tuo account.",
   "confirmEmail.submit": "Usa questo indirizzo",
-  "confirmEmail.done": "Fatto – il tuo account ora appartiene a {email}.",
+  "confirmEmail.done": "Fatto – il tuo account ora è associato a {email}.",
   "confirmEmail.missing": "Questo link non contiene alcun token.",
   "confirmEmail.failed": "Non è andata a buon fine. Richiedi un nuovo link.",
 };
