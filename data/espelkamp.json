@@ -14,8 +14,8 @@
     {
       "id": "espelkamp-34616633e9",
       "city": "espelkamp",
-      "label": "Behindertenparkplatz Espelkamp",
-      "street": null,
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -29,8 +29,8 @@
     {
       "id": "espelkamp-f13e99285e",
       "city": "espelkamp",
-      "label": "Behindertenparkplatz Espelkamp",
-      "street": null,
+      "label": "Rahdener Straße",
+      "street": "Rahdener Straße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "lorsch",
+    "name": "Lorsch",
+    "center": {
+      "lat": 49.64399,
+      "lng": 8.55340515
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lorsch-a7b9ec47db",
+      "city": "lorsch",
+      "label": "Lorsch Ost",
+      "street": "Lorsch Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lorsch",
+      "spotCount": 4,
+      "lat": 49.643149900000004,
+      "lng": 8.553542,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/210612564), ODbL"
+    },
+    {
+      "id": "lorsch-655e7f0906",
+      "city": "lorsch",
+      "label": "Lorsch Ost",
+      "street": "Lorsch Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lorsch",
+      "spotCount": 4,
+      "lat": 49.6430652,
+      "lng": 8.55340515,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1231913590), ODbL"
+    },
+    {
+      "id": "lorsch-e4f723c16b",
+      "city": "lorsch",
+      "label": "Lorsch West",
+      "street": "Lorsch West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Lorsch",
+      "spotCount": 4,
+      "lat": 49.64399,
+      "lng": 8.55202335,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/210612570), ODbL"
+    },
+    {
+      "id": "lorsch-52baba4ebd",
+      "city": "lorsch",
+      "label": "Lorsch West",
+      "street": "Lorsch West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Lorsch",
+      "spotCount": 4,
+      "lat": 49.6440848,
+      "lng": 8.5521603,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1231913586), ODbL"
+    }
+  ]
+}

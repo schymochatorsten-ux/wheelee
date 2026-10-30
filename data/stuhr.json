@@ -12,25 +12,10 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "stuhr-e9bd11e788",
-      "city": "stuhr",
-      "label": "Behindertenparkplatz Stuhr",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Stuhr",
-      "spotCount": 1,
-      "lat": 53.033458350000004,
-      "lng": 8.7009364,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/315672783), ODbL"
-    },
-    {
       "id": "stuhr-087cb51905",
       "city": "stuhr",
-      "label": "Behindertenparkplatz Stuhr",
-      "street": null,
+      "label": "Alte Windhorst",
+      "street": "Alte Windhorst",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -100,6 +85,21 @@
       "lng": 8.701918500000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/198716151), ODbL"
+    },
+    {
+      "id": "stuhr-e9bd11e788",
+      "city": "stuhr",
+      "label": "Varreler Landstraße",
+      "street": "Varreler Landstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stuhr",
+      "spotCount": 1,
+      "lat": 53.033458350000004,
+      "lng": 8.7009364,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/315672783), ODbL"
     }
   ]
 }

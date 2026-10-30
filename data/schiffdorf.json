@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "schiffdorf",
+    "name": "Schiffdorf",
+    "center": {
+      "lat": 53.532893200000004,
+      "lng": 8.654280150000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schiffdorf-47c3e1983d",
+      "city": "schiffdorf",
+      "label": "An der Martinskirche",
+      "street": "An der Martinskirche",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schiffdorf",
+      "spotCount": 1,
+      "lat": 53.532893200000004,
+      "lng": 8.654280150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/81637559), ODbL"
+    },
+    {
+      "id": "schiffdorf-4272f9f7d5",
+      "city": "schiffdorf",
+      "label": "Neufelder Weg 4",
+      "street": "Neufelder Weg",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schiffdorf",
+      "spotCount": 1,
+      "lat": 53.582067550000005,
+      "lng": 8.6297976,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/136915553), ODbL"
+    },
+    {
+      "id": "schiffdorf-07af04a623",
+      "city": "schiffdorf",
+      "label": "Schienenweg",
+      "street": "Schienenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schiffdorf",
+      "spotCount": 2,
+      "lat": 53.50692670000001,
+      "lng": 8.85837295,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/302522621), ODbL"
+    }
+  ]
+}

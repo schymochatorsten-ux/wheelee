@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "gladenbach",
+    "name": "Gladenbach",
+    "center": {
+      "lat": 50.770436000000004,
+      "lng": 8.5771184
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gladenbach-7c90b3a69d",
+      "city": "gladenbach",
+      "label": "Ferdinand-Köhler-Straße",
+      "street": "Ferdinand-Köhler-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gladenbach",
+      "spotCount": 1,
+      "lat": 50.770436000000004,
+      "lng": 8.5771184,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/91828449), ODbL"
+    }
+  ]
+}

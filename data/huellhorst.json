@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "huellhorst",
+    "name": "Hüllhorst",
+    "center": {
+      "lat": 52.289379200000006,
+      "lng": 8.64318955
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "huellhorst-ccddeb762c",
+      "city": "huellhorst",
+      "label": "Am Reineberg",
+      "street": "Am Reineberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hüllhorst",
+      "spotCount": 2,
+      "lat": 52.289379200000006,
+      "lng": 8.64318955,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1203052309), ODbL"
+    }
+  ]
+}

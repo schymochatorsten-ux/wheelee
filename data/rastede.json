@@ -12,26 +12,11 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "rastede-3d33054c50",
-      "city": "rastede",
-      "label": "Behindertenparkplatz Rastede",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Rastede",
-      "spotCount": 1,
-      "lat": 53.2541789,
-      "lng": 8.19953225,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/267296488), ODbL"
-    },
-    {
       "id": "rastede-4f915af3aa",
       "city": "rastede",
-      "label": "Behindertenparkplatz Rastede",
-      "street": null,
-      "houseNumber": null,
+      "label": "Müritzstraße 5",
+      "street": "Müritzstraße",
+      "houseNumber": "5",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Rastede",
@@ -115,6 +100,21 @@
       "lng": 8.1943962,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/36838927), ODbL"
+    },
+    {
+      "id": "rastede-3d33054c50",
+      "city": "rastede",
+      "label": "Zur-Windmühlen-Straße",
+      "street": "Zur-Windmühlen-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rastede",
+      "spotCount": 1,
+      "lat": 53.2541789,
+      "lng": 8.19953225,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/267296488), ODbL"
     }
   ]
 }

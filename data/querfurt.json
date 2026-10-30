@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "querfurt",
+    "name": "Querfurt",
+    "center": {
+      "lat": 51.381115400000006,
+      "lng": 11.6014749
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "querfurt-423076a33a",
+      "city": "querfurt",
+      "label": "Behindertenparkplatz Querfurt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Querfurt",
+      "spotCount": 3,
+      "lat": 51.348593050000005,
+      "lng": 11.512886300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/173653816), ODbL"
+    },
+    {
+      "id": "querfurt-a496b9241b",
+      "city": "querfurt",
+      "label": "Burgring",
+      "street": "Burgring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Querfurt",
+      "spotCount": 1,
+      "lat": 51.376108,
+      "lng": 11.59399245,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/416210631), ODbL"
+    },
+    {
+      "id": "querfurt-f41d629e5f",
+      "city": "querfurt",
+      "label": "Dr.-Heinrich-Ernest-Schmid-Straße",
+      "street": "Dr.-Heinrich-Ernest-Schmid-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Querfurt",
+      "spotCount": 1,
+      "lat": 51.37254775,
+      "lng": 11.606200450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/45742515), ODbL"
+    },
+    {
+      "id": "querfurt-c40d835333",
+      "city": "querfurt",
+      "label": "P 5, Philipp-Müller-Schule (Roßplatz)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Querfurt",
+      "spotCount": 2,
+      "lat": 51.3812447,
+      "lng": 11.60157865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/207604289), ODbL"
+    },
+    {
+      "id": "querfurt-5bea0c49d7",
+      "city": "querfurt",
+      "label": "Roßplatz",
+      "street": "Roßplatz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Querfurt",
+      "spotCount": 1,
+      "lat": 51.381128350000004,
+      "lng": 11.6014749,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1534823121), ODbL"
+    },
+    {
+      "id": "querfurt-175c8b9e9e",
+      "city": "querfurt",
+      "label": "Roßplatz",
+      "street": "Roßplatz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Querfurt",
+      "spotCount": 1,
+      "lat": 51.381115400000006,
+      "lng": 11.60142875,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1534823122), ODbL"
+    }
+  ]
+}

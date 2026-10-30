@@ -14,8 +14,8 @@
     {
       "id": "burgdorf-d3cd159001",
       "city": "burgdorf",
-      "label": "Behindertenparkplatz Burgdorf",
-      "street": null,
+      "label": "Am Nassen Berg",
+      "street": "Am Nassen Berg",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -27,10 +27,25 @@
       "source": "OpenStreetMap (way/29123290), ODbL"
     },
     {
+      "id": "burgdorf-918b378577",
+      "city": "burgdorf",
+      "label": "Gartenstraße 23",
+      "street": "Gartenstraße",
+      "houseNumber": "23",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burgdorf",
+      "spotCount": 1,
+      "lat": 52.449749100000005,
+      "lng": 10.011434300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1206580567), ODbL"
+    },
+    {
       "id": "burgdorf-13180971d0",
       "city": "burgdorf",
-      "label": "Behindertenparkplatz Burgdorf",
-      "street": null,
+      "label": "Worthstraße",
+      "street": "Worthstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -40,21 +55,6 @@
       "lng": 10.01693565,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/207314935), ODbL"
-    },
-    {
-      "id": "burgdorf-918b378577",
-      "city": "burgdorf",
-      "label": "Behindertenparkplatz Burgdorf",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Burgdorf",
-      "spotCount": 1,
-      "lat": 52.449749100000005,
-      "lng": 10.011434300000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1206580567), ODbL"
     }
   ]
 }

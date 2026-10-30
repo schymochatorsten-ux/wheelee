@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bissendorf",
+    "name": "Bissendorf",
+    "center": {
+      "lat": 52.2358301,
+      "lng": 8.1703528
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bissendorf-97f6029001",
+      "city": "bissendorf",
+      "label": "Kirchplatz",
+      "street": "Kirchplatz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bissendorf",
+      "spotCount": 1,
+      "lat": 52.2357796,
+      "lng": 8.170200900000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2924774601), ODbL"
+    },
+    {
+      "id": "bissendorf-b31827bf7c",
+      "city": "bissendorf",
+      "label": "Kirchplatz 3",
+      "street": "Kirchplatz",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bissendorf",
+      "spotCount": 1,
+      "lat": 52.2358301,
+      "lng": 8.1703528,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2641192338), ODbL"
+    }
+  ]
+}

@@ -14,8 +14,8 @@
     {
       "id": "sehnde-658a95f31b",
       "city": "sehnde",
-      "label": "Behindertenparkplatz Sehnde",
-      "street": null,
+      "label": "Glückauf-Straße",
+      "street": "Glückauf-Straße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -29,8 +29,8 @@
     {
       "id": "sehnde-a11cd03450",
       "city": "sehnde",
-      "label": "Behindertenparkplatz Sehnde",
-      "street": null,
+      "label": "Raiffeisenstraße",
+      "street": "Raiffeisenstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bexbach",
+    "name": "Bexbach",
+    "center": {
+      "lat": 49.3473144,
+      "lng": 7.259895
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bexbach-03f10c4918",
+      "city": "bexbach",
+      "label": "Güterstraße",
+      "street": "Güterstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bexbach",
+      "spotCount": 1,
+      "lat": 49.3473144,
+      "lng": 7.259895,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12163973711), ODbL"
+    },
+    {
+      "id": "bexbach-da721611fb",
+      "city": "bexbach",
+      "label": "Niederbexbacher Straße",
+      "street": "Niederbexbacher Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bexbach",
+      "spotCount": 5,
+      "lat": 49.34234375,
+      "lng": 7.2618701,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/874155934), ODbL"
+    },
+    {
+      "id": "bexbach-6e56b57962",
+      "city": "bexbach",
+      "label": "Schwalbengasse 1",
+      "street": "Schwalbengasse",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bexbach",
+      "spotCount": 1,
+      "lat": 49.347664800000004,
+      "lng": 7.2573793,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12163973774), ODbL"
+    }
+  ]
+}

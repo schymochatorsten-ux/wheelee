@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "freigericht",
+    "name": "Freigericht",
+    "center": {
+      "lat": 50.14931180000001,
+      "lng": 9.14353525
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "freigericht-c326287ea6",
+      "city": "freigericht",
+      "label": "Azuritweg 1",
+      "street": "Azuritweg",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Freigericht",
+      "spotCount": 1,
+      "lat": 50.14931180000001,
+      "lng": 9.143222600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1300576853), ODbL"
+    },
+    {
+      "id": "freigericht-4d76903e1a",
+      "city": "freigericht",
+      "label": "Azuritweg 2",
+      "street": "Azuritweg",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Freigericht",
+      "spotCount": 1,
+      "lat": 50.14906090000001,
+      "lng": 9.14353525,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1300576850), ODbL"
+    }
+  ]
+}

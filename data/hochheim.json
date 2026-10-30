@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "hochheim",
+    "name": "Hochheim am Main",
+    "center": {
+      "lat": 50.01249035000001,
+      "lng": 8.3535613
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hochheim-00e8c628d8",
+      "city": "hochheim",
+      "label": "Delkenheimer Straße 11",
+      "street": "Delkenheimer Straße",
+      "houseNumber": "11",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hochheim am Main",
+      "spotCount": 1,
+      "lat": 50.012535750000005,
+      "lng": 8.353571500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1315416310), ODbL"
+    },
+    {
+      "id": "hochheim-e4b55ae7bc",
+      "city": "hochheim",
+      "label": "Delkenheimer Straße 9",
+      "street": "Delkenheimer Straße",
+      "houseNumber": "9",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hochheim am Main",
+      "spotCount": 1,
+      "lat": 50.01249035000001,
+      "lng": 8.3535613,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1315416311), ODbL"
+    },
+    {
+      "id": "hochheim-f17147f8a0",
+      "city": "hochheim",
+      "label": "Sandstraße 7",
+      "street": "Sandstraße",
+      "houseNumber": "7",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hochheim am Main",
+      "spotCount": 1,
+      "lat": 50.004519650000006,
+      "lng": 8.35072395,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/546687989), ODbL"
+    },
+    {
+      "id": "hochheim-935356fac2",
+      "city": "hochheim",
+      "label": "Untergasse 16",
+      "street": "Untergasse",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Massenheim",
+      "spotCount": 1,
+      "lat": 50.039373250000004,
+      "lng": 8.384584450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1134492505), ODbL"
+    },
+    {
+      "id": "hochheim-3b37552b00",
+      "city": "hochheim",
+      "label": "Weiherstraße 17",
+      "street": "Weiherstraße",
+      "houseNumber": "17",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hochheim am Main",
+      "spotCount": 1,
+      "lat": 50.0124622,
+      "lng": 8.3516489,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1315048336), ODbL"
+    }
+  ]
+}

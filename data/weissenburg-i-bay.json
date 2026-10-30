@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "weissenburg-i-bay",
+    "name": "Weißenburg i.Bay.",
+    "center": {
+      "lat": 49.0299744,
+      "lng": 10.96975035
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "weissenburg-i-bay-393f608e63",
+      "city": "weissenburg-i-bay",
+      "label": "Augsburger Straße",
+      "street": "Augsburger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Weißenburg i.Bay.",
+      "spotCount": 1,
+      "lat": 49.026398400000005,
+      "lng": 10.968167300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13923232581), ODbL"
+    },
+    {
+      "id": "weissenburg-i-bay-8b2e944afd",
+      "city": "weissenburg-i-bay",
+      "label": "Friedrich-Ebert-Straße 3",
+      "street": "Friedrich-Ebert-Straße",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Weißenburg i.Bay.",
+      "spotCount": 1,
+      "lat": 49.0301661,
+      "lng": 10.9714818,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1101196524), ODbL"
+    },
+    {
+      "id": "weissenburg-i-bay-4f762b3f01",
+      "city": "weissenburg-i-bay",
+      "label": "Gunzenhausener Straße",
+      "street": "Gunzenhausener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weißenburg i.Bay.",
+      "spotCount": 2,
+      "lat": 49.02920925000001,
+      "lng": 10.965735500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/295903219), ODbL"
+    },
+    {
+      "id": "weissenburg-i-bay-172da896b3",
+      "city": "weissenburg-i-bay",
+      "label": "Luitpoldstraße 8",
+      "street": "Luitpoldstraße",
+      "houseNumber": "8",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Weißenburg i.Bay.",
+      "spotCount": 1,
+      "lat": 49.0308682,
+      "lng": 10.972722800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1178169570), ODbL"
+    },
+    {
+      "id": "weissenburg-i-bay-c14782024e",
+      "city": "weissenburg-i-bay",
+      "label": "Parkhaus Doerfler-Villa",
+      "street": "Schulhausstraße",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weißenburg i.Bay.",
+      "spotCount": 2,
+      "lat": 49.032961,
+      "lng": 10.96975035,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27855048), ODbL"
+    },
+    {
+      "id": "weissenburg-i-bay-e2e76161ab",
+      "city": "weissenburg-i-bay",
+      "label": "Saumarkt 11",
+      "street": "Saumarkt",
+      "houseNumber": "11",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Weißenburg i.Bay.",
+      "spotCount": 1,
+      "lat": 49.0285549,
+      "lng": 10.97128875,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1102851255), ODbL"
+    },
+    {
+      "id": "weissenburg-i-bay-f7c187f4c6",
+      "city": "weissenburg-i-bay",
+      "label": "Weißenburg (Bay)",
+      "street": "Weißenburg (Bay)",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weißenburg i.Bay.",
+      "spotCount": 1,
+      "lat": 49.0299744,
+      "lng": 10.965997250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/727319993), ODbL"
+    }
+  ]
+}

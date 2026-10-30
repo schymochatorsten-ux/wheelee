@@ -12,21 +12,6 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "goch-b911c5eb80",
-      "city": "goch",
-      "label": "Behindertenparkplatz Goch",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Goch",
-      "spotCount": 2,
-      "lat": 51.672308400000006,
-      "lng": 6.163631800000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1030417129), ODbL"
-    },
-    {
       "id": "goch-6a5b73620d",
       "city": "goch",
       "label": "Netto",
@@ -55,6 +40,21 @@
       "lng": 6.1605601000000005,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/10903382), ODbL"
+    },
+    {
+      "id": "goch-b911c5eb80",
+      "city": "goch",
+      "label": "Weezer Straße 18",
+      "street": "Weezer Straße",
+      "houseNumber": "18",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Goch",
+      "spotCount": 2,
+      "lat": 51.672308400000006,
+      "lng": 6.163631800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1030417129), ODbL"
     }
   ]
 }

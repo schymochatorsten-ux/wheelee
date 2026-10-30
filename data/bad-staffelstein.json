@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bad-staffelstein",
+    "name": "Bad Staffelstein",
+    "center": {
+      "lat": 50.10795970000001,
+      "lng": 10.99398415
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-staffelstein-f4feb3b59e",
+      "city": "bad-staffelstein",
+      "label": "Am Kurpark",
+      "street": "Am Kurpark",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Staffelstein",
+      "spotCount": 2,
+      "lat": 50.10795970000001,
+      "lng": 10.99398415,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/149418005), ODbL"
+    },
+    {
+      "id": "bad-staffelstein-7d3fb98967",
+      "city": "bad-staffelstein",
+      "label": "Heinrich-Kohles-Platz",
+      "street": "Heinrich-Kohles-Platz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Staffelstein",
+      "spotCount": 1,
+      "lat": 50.10805945,
+      "lng": 10.991152750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/760824223), ODbL"
+    },
+    {
+      "id": "bad-staffelstein-e0c1404934",
+      "city": "bad-staffelstein",
+      "label": "Viktor-von-Scheffel-Straße",
+      "street": "Viktor-von-Scheffel-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Staffelstein",
+      "spotCount": 1,
+      "lat": 50.101728900000005,
+      "lng": 11.0039204,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8780802414), ODbL"
+    }
+  ]
+}

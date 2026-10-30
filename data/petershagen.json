@@ -14,8 +14,8 @@
     {
       "id": "petershagen-ecbea38d1f",
       "city": "petershagen",
-      "label": "Behindertenparkplatz Petershagen",
-      "street": null,
+      "label": "Ringstraße",
+      "street": "Ringstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,

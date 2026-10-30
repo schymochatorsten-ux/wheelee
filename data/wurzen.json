@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "wurzen",
+    "name": "Wurzen",
+    "center": {
+      "lat": 51.365490550000004,
+      "lng": 12.7462631
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wurzen-b10ae5c774",
+      "city": "wurzen",
+      "label": "Alte Bahnhofstraße",
+      "street": "Alte Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wurzen",
+      "spotCount": 2,
+      "lat": 51.34923485,
+      "lng": 12.833036250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/543248269), ODbL"
+    },
+    {
+      "id": "wurzen-16c1b3926a",
+      "city": "wurzen",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wurzen",
+      "spotCount": 3,
+      "lat": 51.365013950000005,
+      "lng": 12.7385961,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/69288682), ODbL"
+    },
+    {
+      "id": "wurzen-8e8652dbad",
+      "city": "wurzen",
+      "label": "Am Gymnasium",
+      "street": "Am Gymnasium",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wurzen",
+      "spotCount": 2,
+      "lat": 51.37610515,
+      "lng": 12.74943415,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/64992095), ODbL"
+    },
+    {
+      "id": "wurzen-90c639d111",
+      "city": "wurzen",
+      "label": "Friedrich-Ludwig-Jahn-Straße",
+      "street": "Friedrich-Ludwig-Jahn-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wurzen",
+      "spotCount": 1,
+      "lat": 51.37091935000001,
+      "lng": 12.7462631,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/67528662), ODbL"
+    },
+    {
+      "id": "wurzen-30acebcc72",
+      "city": "wurzen",
+      "label": "Richard-Klinkhardt-Straße",
+      "street": "Richard-Klinkhardt-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wurzen",
+      "spotCount": 3,
+      "lat": 51.365490550000004,
+      "lng": 12.7406594,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/99873819), ODbL"
+    }
+  ]
+}

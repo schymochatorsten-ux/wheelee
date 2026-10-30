@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "feuchtwangen",
+    "name": "Feuchtwangen",
+    "center": {
+      "lat": 49.17174785,
+      "lng": 10.32735705
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "feuchtwangen-21ed57fb9e",
+      "city": "feuchtwangen",
+      "label": "Freibad",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Feuchtwangen",
+      "spotCount": 2,
+      "lat": 49.16232585,
+      "lng": 10.3248396,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/110955283), ODbL"
+    },
+    {
+      "id": "feuchtwangen-004f0db48c",
+      "city": "feuchtwangen",
+      "label": "Rothenburger Straße",
+      "street": "Rothenburger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Feuchtwangen",
+      "spotCount": 3,
+      "lat": 49.17174785,
+      "lng": 10.32735705,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/797922573), ODbL"
+    }
+  ]
+}

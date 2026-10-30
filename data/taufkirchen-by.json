@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "taufkirchen-by",
+    "name": "Taufkirchen (Vils)",
+    "center": {
+      "lat": 48.3459225,
+      "lng": 12.1383101
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "taufkirchen-by-4826b71003",
+      "city": "taufkirchen-by",
+      "label": "Veldener Straße",
+      "street": "Veldener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Taufkirchen (Vils)",
+      "spotCount": 4,
+      "lat": 48.3459225,
+      "lng": 12.1383101,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9990462905), ODbL"
+    }
+  ]
+}

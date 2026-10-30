@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "sassenberg",
+    "name": "Sassenberg",
+    "center": {
+      "lat": 51.99849385,
+      "lng": 8.052335150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sassenberg-046a252c67",
+      "city": "sassenberg",
+      "label": "Erich-Kästner-Straße 42",
+      "street": "Erich-Kästner-Straße",
+      "houseNumber": "42",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sassenberg",
+      "spotCount": 3,
+      "lat": 51.99849385,
+      "lng": 8.052335150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1328547555), ODbL"
+    },
+    {
+      "id": "sassenberg-d5a98df9fc",
+      "city": "sassenberg",
+      "label": "Schückingstraße",
+      "street": "Schückingstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sassenberg",
+      "spotCount": 2,
+      "lat": 51.9857179,
+      "lng": 8.0406203,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1136736489), ODbL"
+    }
+  ]
+}

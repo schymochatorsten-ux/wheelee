@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "isselburg",
+    "name": "Isselburg",
+    "center": {
+      "lat": 51.832436,
+      "lng": 6.440093450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "isselburg-230bb974d2",
+      "city": "isselburg",
+      "label": "Anholter Schweiz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Isselburg",
+      "spotCount": 1,
+      "lat": 51.832436,
+      "lng": 6.429541050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/183870417), ODbL"
+    },
+    {
+      "id": "isselburg-6f46af3b43",
+      "city": "isselburg",
+      "label": "Getränkemarkt Onstein",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Isselburg",
+      "spotCount": 1,
+      "lat": 51.845016400000006,
+      "lng": 6.42340355,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/258655375), ODbL"
+    },
+    {
+      "id": "isselburg-4321f7afcd",
+      "city": "isselburg",
+      "label": "Högerdeich",
+      "street": "Högerdeich",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Isselburg",
+      "spotCount": 1,
+      "lat": 51.8335032,
+      "lng": 6.4579697000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/189633392), ODbL"
+    },
+    {
+      "id": "isselburg-0e6fbaab75",
+      "city": "isselburg",
+      "label": "Langenhorst",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Isselburg",
+      "spotCount": 1,
+      "lat": 51.819225700000004,
+      "lng": 6.444567800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/183116613), ODbL"
+    },
+    {
+      "id": "isselburg-831c5b9366",
+      "city": "isselburg",
+      "label": "P+R Isselburg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Isselburg",
+      "spotCount": 1,
+      "lat": 51.81576855,
+      "lng": 6.440093450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/185081465), ODbL"
+    }
+  ]
+}

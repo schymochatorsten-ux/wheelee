@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "saarwellingen",
+    "name": "Saarwellingen",
+    "center": {
+      "lat": 49.33481280000001,
+      "lng": 6.853970400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "saarwellingen-bee9edce16",
+      "city": "saarwellingen",
+      "label": "Marktplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Saarwellingen",
+      "spotCount": 1,
+      "lat": 49.33481280000001,
+      "lng": 6.8634598,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/45554031), ODbL"
+    },
+    {
+      "id": "saarwellingen-42ddc33455",
+      "city": "saarwellingen",
+      "label": "Schwalbacher Straße",
+      "street": "Schwalbacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Saarwellingen",
+      "spotCount": 3,
+      "lat": 49.322887900000005,
+      "lng": 6.853970400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/69346917), ODbL"
+    },
+    {
+      "id": "saarwellingen-049d77d85c",
+      "city": "saarwellingen",
+      "label": "Zur Breitwies 2",
+      "street": "Zur Breitwies",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Saarwellingen",
+      "spotCount": 1,
+      "lat": 49.350926,
+      "lng": 6.80618535,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32076224), ODbL"
+    }
+  ]
+}

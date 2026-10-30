@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "stockach",
+    "name": "Stockach",
+    "center": {
+      "lat": 47.8439801,
+      "lng": 8.9990713
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "stockach-b139f9adc0",
+      "city": "stockach",
+      "label": "Behindertenparkplatz Stockach",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stockach",
+      "spotCount": 1,
+      "lat": 47.828988200000005,
+      "lng": 8.9959679,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/708885730), ODbL"
+    },
+    {
+      "id": "stockach-a02f0ac906",
+      "city": "stockach",
+      "label": "Industriestraße",
+      "street": "Industriestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stockach",
+      "spotCount": 4,
+      "lat": 47.8439801,
+      "lng": 8.9990713,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/519773450), ODbL"
+    },
+    {
+      "id": "stockach-644c7f4628",
+      "city": "stockach",
+      "label": "Meßkircher Straße",
+      "street": "Meßkircher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stockach",
+      "spotCount": 2,
+      "lat": 47.8537887,
+      "lng": 9.006011,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/893749641), ODbL"
+    },
+    {
+      "id": "stockach-b7d8b7620c",
+      "city": "stockach",
+      "label": "Meßkircher Straße",
+      "street": "Meßkircher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stockach",
+      "spotCount": 2,
+      "lat": 47.8541924,
+      "lng": 9.00605015,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/893749644), ODbL"
+    },
+    {
+      "id": "stockach-2543343295",
+      "city": "stockach",
+      "label": "Nellenburg Nord",
+      "street": "Nellenburg Nord",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stockach",
+      "spotCount": 2,
+      "lat": 47.832663450000005,
+      "lng": 8.963812650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/912959147), ODbL"
+    }
+  ]
+}

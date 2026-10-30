@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "gescher",
+    "name": "Gescher",
+    "center": {
+      "lat": 51.9013588,
+      "lng": 7.0239153000000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gescher-5b5a009275",
+      "city": "gescher",
+      "label": "Brooksbach",
+      "street": "Brooksbach",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gescher",
+      "spotCount": 3,
+      "lat": 51.9013588,
+      "lng": 7.0239153000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1129392109), ODbL"
+    }
+  ]
+}

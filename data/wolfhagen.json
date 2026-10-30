@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wolfhagen",
+    "name": "Wolfhagen",
+    "center": {
+      "lat": 51.331131600000006,
+      "lng": 9.1784437
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wolfhagen-87d8746e04",
+      "city": "wolfhagen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wolfhagen",
+      "spotCount": 1,
+      "lat": 51.331131600000006,
+      "lng": 9.1784437,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14242339652), ODbL"
+    }
+  ]
+}

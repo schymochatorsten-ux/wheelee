@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "bad-duerrenberg",
+    "name": "Bad Dürrenberg",
+    "center": {
+      "lat": 51.2964514,
+      "lng": 12.0724639
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-duerrenberg-6647415009",
+      "city": "bad-duerrenberg",
+      "label": "An der Autobahn",
+      "street": "An der Autobahn",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Dürrenberg",
+      "spotCount": 1,
+      "lat": 51.291260750000006,
+      "lng": 12.138950900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1480418072), ODbL"
+    },
+    {
+      "id": "bad-duerrenberg-7f044902e6",
+      "city": "bad-duerrenberg",
+      "label": "An der Autobahn 4",
+      "street": "An der Autobahn",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Dürrenberg",
+      "spotCount": 1,
+      "lat": 51.2912529,
+      "lng": 12.1390033,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1480418073), ODbL"
+    },
+    {
+      "id": "bad-duerrenberg-515286a7e2",
+      "city": "bad-duerrenberg",
+      "label": "An der Autobahn 4",
+      "street": "An der Autobahn",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Dürrenberg",
+      "spotCount": 1,
+      "lat": 51.291191250000004,
+      "lng": 12.139383850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1480418074), ODbL"
+    },
+    {
+      "id": "bad-duerrenberg-c7439b9731",
+      "city": "bad-duerrenberg",
+      "label": "Borlachplatz",
+      "street": "Borlachplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bad Dürrenberg",
+      "spotCount": 3,
+      "lat": 51.2964514,
+      "lng": 12.061153050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/242853423), ODbL"
+    },
+    {
+      "id": "bad-duerrenberg-654d92472a",
+      "city": "bad-duerrenberg",
+      "label": "Markt 4",
+      "street": "Markt",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Dürrenberg",
+      "spotCount": 3,
+      "lat": 51.3022615,
+      "lng": 12.0704972,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1548573041), ODbL"
+    },
+    {
+      "id": "bad-duerrenberg-40d0692403",
+      "city": "bad-duerrenberg",
+      "label": "Marktweg 1",
+      "street": "Marktweg",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Dürrenberg",
+      "spotCount": 1,
+      "lat": 51.30243095,
+      "lng": 12.0724639,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1550295239), ODbL"
+    },
+    {
+      "id": "bad-duerrenberg-ae1e3eef03",
+      "city": "bad-duerrenberg",
+      "label": "Soleweg",
+      "street": "Soleweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Dürrenberg",
+      "spotCount": 3,
+      "lat": 51.296539300000006,
+      "lng": 12.068936050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/136977997), ODbL"
+    }
+  ]
+}

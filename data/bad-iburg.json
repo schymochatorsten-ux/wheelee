@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bad-iburg",
+    "name": "Bad Iburg",
+    "center": {
+      "lat": 52.15861905,
+      "lng": 8.047742849999999
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-iburg-e4060063ac",
+      "city": "bad-iburg",
+      "label": "Am Gografenhof 4",
+      "street": "Am Gografenhof",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Iburg",
+      "spotCount": 2,
+      "lat": 52.15861905,
+      "lng": 8.047742849999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/883940651), ODbL"
+    }
+  ]
+}

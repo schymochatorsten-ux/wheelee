@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "finsterwalde",
+    "name": "Finsterwalde",
+    "center": {
+      "lat": 51.6303161,
+      "lng": 13.697556050000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "finsterwalde-bd9a8f1fa4",
+      "city": "finsterwalde",
+      "label": "Brunnenstraße",
+      "street": "Brunnenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Finsterwalde",
+      "spotCount": 2,
+      "lat": 51.6303161,
+      "lng": 13.697556050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/702631874), ODbL"
+    },
+    {
+      "id": "finsterwalde-3c622a8c32",
+      "city": "finsterwalde",
+      "label": "Langer Damm",
+      "street": "Langer Damm",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Finsterwalde",
+      "spotCount": 1,
+      "lat": 51.630059100000004,
+      "lng": 13.712542250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/544499009), ODbL"
+    },
+    {
+      "id": "finsterwalde-7bb38d34e6",
+      "city": "finsterwalde",
+      "label": "Sonnewalder Straße",
+      "street": "Sonnewalder Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Finsterwalde",
+      "spotCount": 1,
+      "lat": 51.6434287,
+      "lng": 13.69672145,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/30098836), ODbL"
+    }
+  ]
+}

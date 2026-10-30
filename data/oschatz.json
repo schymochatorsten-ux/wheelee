@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "oschatz",
+    "name": "Oschatz",
+    "center": {
+      "lat": 51.31133620000001,
+      "lng": 13.11024055
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oschatz-85248dea59",
+      "city": "oschatz",
+      "label": "Bahnhofsplatz",
+      "street": "Bahnhofsplatz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oschatz",
+      "spotCount": 1,
+      "lat": 51.31133620000001,
+      "lng": 13.1055132,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9830672043), ODbL"
+    },
+    {
+      "id": "oschatz-84ade58057",
+      "city": "oschatz",
+      "label": "Schlachthofstraße",
+      "street": "Schlachthofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oschatz",
+      "spotCount": 1,
+      "lat": 51.30306275000001,
+      "lng": 13.11024055,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1313000999), ODbL"
+    }
+  ]
+}

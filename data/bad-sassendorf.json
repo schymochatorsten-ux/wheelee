@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bad-sassendorf",
+    "name": "Bad Sassendorf",
+    "center": {
+      "lat": 51.59071525,
+      "lng": 8.166322950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-sassendorf-dbe47c1deb",
+      "city": "bad-sassendorf",
+      "label": "Am Haullenbach",
+      "street": "Am Haullenbach",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Sassendorf",
+      "spotCount": 7,
+      "lat": 51.584359250000006,
+      "lng": 8.16428375,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/760475994), ODbL"
+    },
+    {
+      "id": "bad-sassendorf-003bcc318b",
+      "city": "bad-sassendorf",
+      "label": "Bettinghauser Straße",
+      "street": "Bettinghauser Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Sassendorf",
+      "spotCount": 3,
+      "lat": 51.632992400000006,
+      "lng": 8.194889700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1530751133), ODbL"
+    },
+    {
+      "id": "bad-sassendorf-9eb6f72e28",
+      "city": "bad-sassendorf",
+      "label": "Gartenstraße",
+      "street": "Gartenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Sassendorf",
+      "spotCount": 1,
+      "lat": 51.59071525,
+      "lng": 8.166322950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1196892661), ODbL"
+    }
+  ]
+}

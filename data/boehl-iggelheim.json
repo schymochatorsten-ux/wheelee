@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "boehl-iggelheim",
+    "name": "Böhl-Iggelheim",
+    "center": {
+      "lat": 49.38606555,
+      "lng": 8.297575850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "boehl-iggelheim-983c73226b",
+      "city": "boehl-iggelheim",
+      "label": "Am Oppelsweg 1a",
+      "street": "Am Oppelsweg",
+      "houseNumber": "1a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Böhl-Iggelheim",
+      "spotCount": 1,
+      "lat": 49.38606555,
+      "lng": 8.297575850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/219530491), ODbL"
+    }
+  ]
+}

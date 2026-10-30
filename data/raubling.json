@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "raubling",
+    "name": "Raubling",
+    "center": {
+      "lat": 47.7910302,
+      "lng": 12.109665800000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "raubling-11cb772dba",
+      "city": "raubling",
+      "label": "Bäcker Schmid",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Raubling",
+      "spotCount": 1,
+      "lat": 47.79181255,
+      "lng": 12.11537855,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/245454419), ODbL"
+    },
+    {
+      "id": "raubling-a37d9a6bb1",
+      "city": "raubling",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Raubling",
+      "spotCount": 3,
+      "lat": 47.788099700000004,
+      "lng": 12.109665800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1025252430), ODbL"
+    },
+    {
+      "id": "raubling-db78fd707c",
+      "city": "raubling",
+      "label": "Behindertenparkplatz Raubling",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Raubling",
+      "spotCount": 8,
+      "lat": 47.78161105,
+      "lng": 12.04662815,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/564840985), ODbL"
+    },
+    {
+      "id": "raubling-5593e061bb",
+      "city": "raubling",
+      "label": "Frischemarkt Prechtl",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Raubling",
+      "spotCount": 1,
+      "lat": 47.7910302,
+      "lng": 12.1139522,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29500352), ODbL"
+    },
+    {
+      "id": "raubling-ce341af0ab",
+      "city": "raubling",
+      "label": "Kirchweg 1",
+      "street": "Kirchweg",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Raubling",
+      "spotCount": 2,
+      "lat": 47.79288795000001,
+      "lng": 12.111130800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1144835553), ODbL"
+    },
+    {
+      "id": "raubling-93c7af3cf5",
+      "city": "raubling",
+      "label": "Moorstation",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Raubling",
+      "spotCount": 4,
+      "lat": 47.791294300000004,
+      "lng": 12.068879250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/127068609), ODbL"
+    },
+    {
+      "id": "raubling-65fcc8a2c4",
+      "city": "raubling",
+      "label": "P+R",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Raubling",
+      "spotCount": 3,
+      "lat": 47.786924850000005,
+      "lng": 12.109261250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/674288624), ODbL"
+    }
+  ]
+}

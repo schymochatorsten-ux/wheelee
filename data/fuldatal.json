@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "fuldatal",
+    "name": "Fuldatal",
+    "center": {
+      "lat": 51.35122030000001,
+      "lng": 9.526367350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "fuldatal-e9faf8d62e",
+      "city": "fuldatal",
+      "label": "Niedervellmarsche Straße",
+      "street": "Niedervellmarsche Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Fuldatal",
+      "spotCount": 1,
+      "lat": 51.350285650000004,
+      "lng": 9.521388850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1458827178), ODbL"
+    },
+    {
+      "id": "fuldatal-af4744744f",
+      "city": "fuldatal",
+      "label": "Niedervellmarsche Straße",
+      "street": "Niedervellmarsche Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Fuldatal",
+      "spotCount": 1,
+      "lat": 51.35032935,
+      "lng": 9.5214016,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1458827179), ODbL"
+    },
+    {
+      "id": "fuldatal-052de4f5b7",
+      "city": "fuldatal",
+      "label": "Veckerhagener Straße 29",
+      "street": "Veckerhagener Straße",
+      "houseNumber": "29",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Fuldatal",
+      "spotCount": 1,
+      "lat": 51.35122030000001,
+      "lng": 9.526367350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1459926517), ODbL"
+    },
+    {
+      "id": "fuldatal-049a866d48",
+      "city": "fuldatal",
+      "label": "Veckerhagener Straße 90",
+      "street": "Veckerhagener Straße",
+      "houseNumber": "90",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Fuldatal",
+      "spotCount": 1,
+      "lat": 51.35290965,
+      "lng": 9.52705605,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1459926516), ODbL"
+    }
+  ]
+}

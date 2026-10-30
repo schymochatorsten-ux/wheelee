@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bergen",
+    "name": "Bergen",
+    "center": {
+      "lat": 52.814336000000004,
+      "lng": 9.956503750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bergen-386e939e47",
+      "city": "bergen",
+      "label": "Harburger Straße",
+      "street": "Harburger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bergen",
+      "spotCount": 1,
+      "lat": 52.814336000000004,
+      "lng": 9.956503750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/40384155), ODbL"
+    }
+  ]
+}

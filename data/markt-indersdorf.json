@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "markt-indersdorf",
+    "name": "Markt Indersdorf",
+    "center": {
+      "lat": 48.3526796,
+      "lng": 11.390012950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "markt-indersdorf-f7c87144cc",
+      "city": "markt-indersdorf",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Markt Indersdorf",
+      "spotCount": 4,
+      "lat": 48.3526796,
+      "lng": 11.37912565,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1033777169), ODbL"
+    },
+    {
+      "id": "markt-indersdorf-9ce88af40b",
+      "city": "markt-indersdorf",
+      "label": "Gartenweg",
+      "street": "Gartenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Markt Indersdorf",
+      "spotCount": 2,
+      "lat": 48.321554500000005,
+      "lng": 11.390012950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/470310714), ODbL"
+    }
+  ]
+}

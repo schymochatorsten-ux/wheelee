@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bruehl-bw",
+    "name": "Brühl",
+    "center": {
+      "lat": 49.3966617,
+      "lng": 8.537047050000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bruehl-bw-a978b9195f",
+      "city": "bruehl-bw",
+      "label": "Mannheimer Straße 19a",
+      "street": "Mannheimer Straße",
+      "houseNumber": "19a",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Brühl",
+      "spotCount": 1,
+      "lat": 49.3966617,
+      "lng": 8.53462405,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1497179774), ODbL"
+    },
+    {
+      "id": "bruehl-bw-73d81f9f15",
+      "city": "bruehl-bw",
+      "label": "Schwetzinger Straße 22",
+      "street": "Schwetzinger Straße",
+      "houseNumber": "22",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Brühl",
+      "spotCount": 1,
+      "lat": 49.395124800000005,
+      "lng": 8.537047050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1466300509), ODbL"
+    }
+  ]
+}

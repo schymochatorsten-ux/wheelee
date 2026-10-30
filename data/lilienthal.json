@@ -12,25 +12,10 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "lilienthal-3279e5d544",
-      "city": "lilienthal",
-      "label": "Behindertenparkplatz Lilienthal",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Lilienthal",
-      "spotCount": 2,
-      "lat": 53.15706745,
-      "lng": 8.89946355,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/963046515), ODbL"
-    },
-    {
       "id": "lilienthal-019584ce3c",
       "city": "lilienthal",
-      "label": "Behindertenparkplatz Lilienthal",
-      "street": null,
+      "label": "Falkenberger Landstraße",
+      "street": "Falkenberger Landstraße",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,
@@ -44,8 +29,8 @@
     {
       "id": "lilienthal-0807ad5ab0",
       "city": "lilienthal",
-      "label": "Behindertenparkplatz Lilienthal",
-      "street": null,
+      "label": "Falkenberger Landstraße",
+      "street": "Falkenberger Landstraße",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,
@@ -59,8 +44,8 @@
     {
       "id": "lilienthal-1c7ec79281",
       "city": "lilienthal",
-      "label": "Behindertenparkplatz Lilienthal",
-      "street": null,
+      "label": "Falkenberger Landstraße",
+      "street": "Falkenberger Landstraße",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,
@@ -74,8 +59,8 @@
     {
       "id": "lilienthal-39752b7e07",
       "city": "lilienthal",
-      "label": "Behindertenparkplatz Lilienthal",
-      "street": null,
+      "label": "Falkenberger Landstraße",
+      "street": "Falkenberger Landstraße",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,
@@ -89,8 +74,8 @@
     {
       "id": "lilienthal-543200a412",
       "city": "lilienthal",
-      "label": "Behindertenparkplatz Lilienthal",
-      "street": null,
+      "label": "Falkenberger Landstraße",
+      "street": "Falkenberger Landstraße",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,
@@ -104,8 +89,8 @@
     {
       "id": "lilienthal-9cb5db72dc",
       "city": "lilienthal",
-      "label": "Behindertenparkplatz Lilienthal",
-      "street": null,
+      "label": "Jan-Reiners-Weg",
+      "street": "Jan-Reiners-Weg",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,
@@ -115,6 +100,21 @@
       "lng": 8.9115795,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1534221366), ODbL"
+    },
+    {
+      "id": "lilienthal-3279e5d544",
+      "city": "lilienthal",
+      "label": "Zur Mittelwiese",
+      "street": "Zur Mittelwiese",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lilienthal",
+      "spotCount": 2,
+      "lat": 53.15706745,
+      "lng": 8.89946355,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/963046515), ODbL"
     }
   ]
 }

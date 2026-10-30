@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "groebenzell",
+    "name": "Gröbenzell",
+    "center": {
+      "lat": 48.196650500000004,
+      "lng": 11.37394205
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "groebenzell-f48ecf6e48",
+      "city": "groebenzell",
+      "label": "Gröbenbachstraße 3",
+      "street": "Gröbenbachstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gröbenzell",
+      "spotCount": 1,
+      "lat": 48.19533460000001,
+      "lng": 11.37394205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/152508223), ODbL"
+    },
+    {
+      "id": "groebenzell-94e7d0b62e",
+      "city": "groebenzell",
+      "label": "Sonnenweg",
+      "street": "Sonnenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gröbenzell",
+      "spotCount": 1,
+      "lat": 48.196650500000004,
+      "lng": 11.371362150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/152508220), ODbL"
+    }
+  ]
+}

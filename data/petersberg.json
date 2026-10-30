@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "petersberg",
+    "name": "Petersberg",
+    "center": {
+      "lat": 50.578119900000004,
+      "lng": 9.74197345
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "petersberg-25e891447f",
+      "city": "petersberg",
+      "label": "Alte Ziegelei",
+      "street": "Alte Ziegelei",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Petersberg",
+      "spotCount": 2,
+      "lat": 50.55428485,
+      "lng": 9.717837450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/349171525), ODbL"
+    },
+    {
+      "id": "petersberg-0c79826d3d",
+      "city": "petersberg",
+      "label": "Philipp-Engel-Straße",
+      "street": "Philipp-Engel-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Petersberg",
+      "spotCount": 5,
+      "lat": 50.578119900000004,
+      "lng": 9.74197345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1423609053), ODbL"
+    }
+  ]
+}

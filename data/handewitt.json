@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "handewitt",
+    "name": "Handewitt",
+    "center": {
+      "lat": 54.7774973,
+      "lng": 9.3366421
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "handewitt-3adfa75e76",
+      "city": "handewitt",
+      "label": "Lecker Chaussee",
+      "street": "Lecker Chaussee",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Handewitt",
+      "spotCount": 1,
+      "lat": 54.777459400000005,
+      "lng": 9.3366668,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12786437007), ODbL"
+    },
+    {
+      "id": "handewitt-3b6f4090ec",
+      "city": "handewitt",
+      "label": "Lecker Chaussee",
+      "street": "Lecker Chaussee",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Handewitt",
+      "spotCount": 1,
+      "lat": 54.7774973,
+      "lng": 9.3366421,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12786437008), ODbL"
+    },
+    {
+      "id": "handewitt-30da5dcb42",
+      "city": "handewitt",
+      "label": "Skandinavien-Damm",
+      "street": "Skandinavien-Damm",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Handewitt",
+      "spotCount": 2,
+      "lat": 54.778547,
+      "lng": 9.33275925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/990860349), ODbL"
+    },
+    {
+      "id": "handewitt-78d831f06b",
+      "city": "handewitt",
+      "label": "Wiesharder Markt",
+      "street": "Wiesharder Markt",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Handewitt",
+      "spotCount": 2,
+      "lat": 54.771939450000005,
+      "lng": 9.32246245,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/199829252), ODbL"
+    }
+  ]
+}

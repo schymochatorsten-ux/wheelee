@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hiddenhausen",
+    "name": "Hiddenhausen",
+    "center": {
+      "lat": 52.161506200000005,
+      "lng": 8.6651311
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hiddenhausen-525ea68823",
+      "city": "hiddenhausen",
+      "label": "Heidestraße 154",
+      "street": "Heidestraße",
+      "houseNumber": "154",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hiddenhausen",
+      "spotCount": 1,
+      "lat": 52.149953800000006,
+      "lng": 8.608041100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1129413976), ODbL"
+    },
+    {
+      "id": "hiddenhausen-4b9d8c6306",
+      "city": "hiddenhausen",
+      "label": "Herforder Straße",
+      "street": "Herforder Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hiddenhausen",
+      "spotCount": 2,
+      "lat": 52.161506200000005,
+      "lng": 8.6651311,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/217792690), ODbL"
+    }
+  ]
+}

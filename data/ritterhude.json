@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "ritterhude",
+    "name": "Ritterhude",
+    "center": {
+      "lat": 53.18297270000001,
+      "lng": 8.749107900000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ritterhude-a8f602a513",
+      "city": "ritterhude",
+      "label": "Goethestraße",
+      "street": "Goethestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ritterhude",
+      "spotCount": 1,
+      "lat": 53.18045725,
+      "lng": 8.751144550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1077449420), ODbL"
+    },
+    {
+      "id": "ritterhude-56de73c24a",
+      "city": "ritterhude",
+      "label": "Jahnstraße 2-4",
+      "street": "Jahnstraße",
+      "houseNumber": "2-4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ritterhude",
+      "spotCount": 1,
+      "lat": 53.18563830000001,
+      "lng": 8.74826315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1095899623), ODbL"
+    },
+    {
+      "id": "ritterhude-57c869485b",
+      "city": "ritterhude",
+      "label": "Riesstraße 28",
+      "street": "Riesstraße",
+      "houseNumber": "28",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ritterhude",
+      "spotCount": 1,
+      "lat": 53.17797035,
+      "lng": 8.749107900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1077535750), ODbL"
+    },
+    {
+      "id": "ritterhude-d7844bb52e",
+      "city": "ritterhude",
+      "label": "Riesstraße 76",
+      "street": "Riesstraße",
+      "houseNumber": "76",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ritterhude",
+      "spotCount": 1,
+      "lat": 53.18297270000001,
+      "lng": 8.756441500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1293816833), ODbL"
+    },
+    {
+      "id": "ritterhude-4233c3ac36",
+      "city": "ritterhude",
+      "label": "Stader Landstraße",
+      "street": "Stader Landstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ritterhude",
+      "spotCount": 1,
+      "lat": 53.1877172,
+      "lng": 8.7464562,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1077803867), ODbL"
+    }
+  ]
+}

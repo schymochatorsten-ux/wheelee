@@ -12,36 +12,6 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "bautzen-7d5a3dbf39",
-      "city": "bautzen",
-      "label": "Behindertenparkplatz Bautzen",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
-      "timeRestriction": null,
-      "district": "Bautzen",
-      "spotCount": 4,
-      "lat": 51.174166500000005,
-      "lng": 14.411018,
-      "geoAccuracy": "house",
-      "source": "OpenStreetMap (node/1337166801), ODbL"
-    },
-    {
-      "id": "bautzen-3900a3feb8",
-      "city": "bautzen",
-      "label": "Behindertenparkplatz Bautzen",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Bautzen",
-      "spotCount": 2,
-      "lat": 51.18085565,
-      "lng": 14.433504650000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/109574035), ODbL"
-    },
-    {
       "id": "bautzen-24e24c443f",
       "city": "bautzen",
       "label": "Behindertenparkplatz Bautzen",
@@ -57,40 +27,25 @@
       "source": "OpenStreetMap (way/401154141), ODbL"
     },
     {
-      "id": "bautzen-eb69c832de",
+      "id": "bautzen-7d5a3dbf39",
       "city": "bautzen",
-      "label": "Behindertenparkplatz Bautzen",
-      "street": null,
+      "label": "Neustädter Straße",
+      "street": "Neustädter Straße",
       "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
       "timeRestriction": null,
       "district": "Bautzen",
-      "spotCount": 3,
-      "lat": 51.19829505,
-      "lng": 14.329300800000002,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1312048235), ODbL"
-    },
-    {
-      "id": "bautzen-e5e9513efb",
-      "city": "bautzen",
-      "label": "Behindertenparkplatz Bautzen",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Bautzen",
-      "spotCount": 3,
-      "lat": 51.19804995,
-      "lng": 14.329402900000002,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1312048236), ODbL"
+      "spotCount": 4,
+      "lat": 51.174166500000005,
+      "lng": 14.411018,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1337166801), ODbL"
     },
     {
       "id": "bautzen-c58723d069",
       "city": "bautzen",
-      "label": "Behindertenparkplatz Bautzen",
-      "street": null,
+      "label": "Oberlausitz Nord",
+      "street": "Oberlausitz Nord",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -104,8 +59,8 @@
     {
       "id": "bautzen-f63e714ccc",
       "city": "bautzen",
-      "label": "Behindertenparkplatz Bautzen",
-      "street": null,
+      "label": "Oberlausitz Nord",
+      "street": "Oberlausitz Nord",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -115,6 +70,36 @@
       "lng": 14.331471500000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1312074153), ODbL"
+    },
+    {
+      "id": "bautzen-eb69c832de",
+      "city": "bautzen",
+      "label": "Oberlausitz Süd",
+      "street": "Oberlausitz Süd",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bautzen",
+      "spotCount": 3,
+      "lat": 51.19829505,
+      "lng": 14.329300800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1312048235), ODbL"
+    },
+    {
+      "id": "bautzen-e5e9513efb",
+      "city": "bautzen",
+      "label": "Oberlausitz Süd",
+      "street": "Oberlausitz Süd",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bautzen",
+      "spotCount": 3,
+      "lat": 51.19804995,
+      "lng": 14.329402900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1312048236), ODbL"
     },
     {
       "id": "bautzen-ead6bf364d",
@@ -130,6 +115,21 @@
       "lng": 14.385353250000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/366674321), ODbL"
+    },
+    {
+      "id": "bautzen-3900a3feb8",
+      "city": "bautzen",
+      "label": "Steinstraße - Kamjentna",
+      "street": "Steinstraße - Kamjentna",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bautzen",
+      "spotCount": 2,
+      "lat": 51.18085565,
+      "lng": 14.433504650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/109574035), ODbL"
     }
   ]
 }

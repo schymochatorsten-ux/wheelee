@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "karlsbad",
+    "name": "Karlsbad",
+    "center": {
+      "lat": 48.94128125,
+      "lng": 8.5054406
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "karlsbad-9806ff9b65",
+      "city": "karlsbad",
+      "label": "Descostraße",
+      "street": "Descostraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Karlsbad",
+      "spotCount": 1,
+      "lat": 48.8844412,
+      "lng": 8.50953295,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/970009781), ODbL"
+    },
+    {
+      "id": "karlsbad-13ab004f04",
+      "city": "karlsbad",
+      "label": "Edeka",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Karlsbad",
+      "spotCount": 3,
+      "lat": 48.920309700000004,
+      "lng": 8.4993709,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/472661598), ODbL"
+    },
+    {
+      "id": "karlsbad-4b9abbeb6c",
+      "city": "karlsbad",
+      "label": "Steinig",
+      "street": "Steinig",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Karlsbad",
+      "spotCount": 1,
+      "lat": 48.941261350000005,
+      "lng": 8.50555755,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1433787571), ODbL"
+    },
+    {
+      "id": "karlsbad-b8c5c79743",
+      "city": "karlsbad",
+      "label": "Steinig",
+      "street": "Steinig",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Karlsbad",
+      "spotCount": 1,
+      "lat": 48.94128125,
+      "lng": 8.505496350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1433787572), ODbL"
+    },
+    {
+      "id": "karlsbad-f62112852a",
+      "city": "karlsbad",
+      "label": "Steinig",
+      "street": "Steinig",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Karlsbad",
+      "spotCount": 1,
+      "lat": 48.94130115,
+      "lng": 8.50543515,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1433787573), ODbL"
+    },
+    {
+      "id": "karlsbad-867f48d484",
+      "city": "karlsbad",
+      "label": "Steinig",
+      "street": "Steinig",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Karlsbad",
+      "spotCount": 1,
+      "lat": 48.941321300000006,
+      "lng": 8.5053742,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1433787574), ODbL"
+    },
+    {
+      "id": "karlsbad-f28d6414a8",
+      "city": "karlsbad",
+      "label": "Steinig",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Karlsbad",
+      "spotCount": 4,
+      "lat": 48.94131715,
+      "lng": 8.5054406,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1433787576), ODbL"
+    }
+  ]
+}

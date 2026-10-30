@@ -14,9 +14,9 @@
     {
       "id": "bad-soden-68f22340ab",
       "city": "bad-soden",
-      "label": "Behindertenparkplatz Bad Soden am Taunus",
-      "street": null,
-      "houseNumber": null,
+      "label": "Am Bahnhof 2",
+      "street": "Am Bahnhof",
+      "houseNumber": "2",
       "note": null,
       "timeRestriction": null,
       "district": "Bad Soden am Taunus",
@@ -27,26 +27,11 @@
       "source": "OpenStreetMap (node/13077942084), ODbL"
     },
     {
-      "id": "bad-soden-cd143ed400",
-      "city": "bad-soden",
-      "label": "Behindertenparkplatz Bad Soden am Taunus",
-      "street": null,
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Bad Soden am Taunus",
-      "spotCount": 1,
-      "lat": 50.141972300000006,
-      "lng": 8.4869319,
-      "geoAccuracy": "house",
-      "source": "OpenStreetMap (node/13987528444), ODbL"
-    },
-    {
       "id": "bad-soden-73aa6b8625",
       "city": "bad-soden",
-      "label": "Behindertenparkplatz Bad Soden am Taunus",
-      "street": null,
-      "houseNumber": null,
+      "label": "Hasselstraße 50-52",
+      "street": "Hasselstraße",
+      "houseNumber": "50-52",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Bad Soden am Taunus",
@@ -57,19 +42,19 @@
       "source": "OpenStreetMap (way/132766532), ODbL"
     },
     {
-      "id": "bad-soden-427022e6a1",
+      "id": "bad-soden-cd143ed400",
       "city": "bad-soden",
-      "label": "Behindertenparkplatz Bad Soden am Taunus",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "label": "Kelkheimer Straße 72",
+      "street": "Kelkheimer Straße",
+      "houseNumber": "72",
+      "note": null,
       "timeRestriction": null,
       "district": "Bad Soden am Taunus",
       "spotCount": 1,
-      "lat": 50.14284690000001,
-      "lng": 8.502094800000002,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1039282151), ODbL"
+      "lat": 50.141972300000006,
+      "lng": 8.4869319,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13987528444), ODbL"
     },
     {
       "id": "bad-soden-d22083a00b",
@@ -85,6 +70,21 @@
       "lng": 8.50000305,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/461215390), ODbL"
+    },
+    {
+      "id": "bad-soden-427022e6a1",
+      "city": "bad-soden",
+      "label": "Wiesenweg 2b",
+      "street": "Wiesenweg",
+      "houseNumber": "2b",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Soden am Taunus",
+      "spotCount": 1,
+      "lat": 50.14284690000001,
+      "lng": 8.502094800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1039282151), ODbL"
     }
   ]
 }

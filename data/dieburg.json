@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "dieburg",
+    "name": "Dieburg",
+    "center": {
+      "lat": 49.89732945,
+      "lng": 8.843072900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dieburg-fee28ed161",
+      "city": "dieburg",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dieburg",
+      "spotCount": 2,
+      "lat": 49.9028007,
+      "lng": 8.8436701,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/369766408), ODbL"
+    },
+    {
+      "id": "dieburg-79054d5966",
+      "city": "dieburg",
+      "label": "Edeka und Friedhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dieburg",
+      "spotCount": 2,
+      "lat": 49.89732945,
+      "lng": 8.8494037,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/149680161), ODbL"
+    },
+    {
+      "id": "dieburg-7d93bf5ed9",
+      "city": "dieburg",
+      "label": "Marienstraße 18",
+      "street": "Marienstraße",
+      "houseNumber": "18",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dieburg",
+      "spotCount": 1,
+      "lat": 49.89962560000001,
+      "lng": 8.843072900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1084320165), ODbL"
+    },
+    {
+      "id": "dieburg-b33f024ae7",
+      "city": "dieburg",
+      "label": "Schwimmbadweg",
+      "street": "Schwimmbadweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dieburg",
+      "spotCount": 1,
+      "lat": 49.890003400000005,
+      "lng": 8.839638800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9027200585), ODbL"
+    },
+    {
+      "id": "dieburg-45916cc512",
+      "city": "dieburg",
+      "label": "Schwimmbadweg",
+      "street": "Schwimmbadweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dieburg",
+      "spotCount": 1,
+      "lat": 49.8900226,
+      "lng": 8.8399821,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9027200595), ODbL"
+    }
+  ]
+}

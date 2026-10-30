@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "merchweiler",
+    "name": "Merchweiler",
+    "center": {
+      "lat": 49.355866750000004,
+      "lng": 7.0613034
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "merchweiler-aea2aaeb10",
+      "city": "merchweiler",
+      "label": "Allenfeldstraße",
+      "street": "Allenfeldstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Merchweiler",
+      "spotCount": 1,
+      "lat": 49.355866750000004,
+      "lng": 7.0613034,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/127060389), ODbL"
+    }
+  ]
+}

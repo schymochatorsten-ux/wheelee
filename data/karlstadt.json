@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "karlstadt",
+    "name": "Karlstadt",
+    "center": {
+      "lat": 49.964781200000004,
+      "lng": 9.767505100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "karlstadt-6875be50e2",
+      "city": "karlstadt",
+      "label": "Bahnhof Nordbrücke",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Karlstadt",
+      "spotCount": 1,
+      "lat": 49.964781200000004,
+      "lng": 9.767505100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/203946735), ODbL"
+    },
+    {
+      "id": "karlstadt-6a51c5e86d",
+      "city": "karlstadt",
+      "label": "Gemündener Straße 16",
+      "street": "Gemündener Straße",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Karlstadt",
+      "spotCount": 1,
+      "lat": 49.9692145,
+      "lng": 9.7670992,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5657019421), ODbL"
+    },
+    {
+      "id": "karlstadt-7e76a4026c",
+      "city": "karlstadt",
+      "label": "Himmelstadter Straße",
+      "street": "Himmelstadter Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Karlstadt",
+      "spotCount": 2,
+      "lat": 49.9452671,
+      "lng": 9.774671000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1528610923), ODbL"
+    },
+    {
+      "id": "karlstadt-d2c2dd42ea",
+      "city": "karlstadt",
+      "label": "Kirchplatz 7",
+      "street": "Kirchplatz",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Karlstadt",
+      "spotCount": 1,
+      "lat": 49.961617350000004,
+      "lng": 9.765410750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/179158620), ODbL"
+    }
+  ]
+}

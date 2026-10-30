@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "cham",
+    "name": "Cham",
+    "center": {
+      "lat": 49.218659900000006,
+      "lng": 12.664780350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "cham-47a5f2cf45",
+      "city": "cham",
+      "label": "Badstraße",
+      "street": "Badstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Cham",
+      "spotCount": 2,
+      "lat": 49.2215365,
+      "lng": 12.67624455,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1487239673), ODbL"
+    },
+    {
+      "id": "cham-132cf60c54",
+      "city": "cham",
+      "label": "Behindertenparkplatz Cham",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Cham",
+      "spotCount": 1,
+      "lat": 49.1957783,
+      "lng": 12.655240550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1259769544), ODbL"
+    },
+    {
+      "id": "cham-f859341736",
+      "city": "cham",
+      "label": "Behindertenparkplatz Cham",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Cham",
+      "spotCount": 1,
+      "lat": 49.19568555000001,
+      "lng": 12.6552343,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1259769545), ODbL"
+    },
+    {
+      "id": "cham-4aa123cd96",
+      "city": "cham",
+      "label": "Floßhafen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Cham",
+      "spotCount": 3,
+      "lat": 49.218659900000006,
+      "lng": 12.668799100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/18186370), ODbL"
+    },
+    {
+      "id": "cham-6c82d8226c",
+      "city": "cham",
+      "label": "Josef-Heilingbrunner-Straße",
+      "street": "Josef-Heilingbrunner-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Cham",
+      "spotCount": 1,
+      "lat": 49.2260171,
+      "lng": 12.655732500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2333696658), ODbL"
+    },
+    {
+      "id": "cham-0e02fb153a",
+      "city": "cham",
+      "label": "Mittelweg",
+      "street": "Mittelweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Cham",
+      "spotCount": 1,
+      "lat": 49.20167275,
+      "lng": 12.664780350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/228981386), ODbL"
+    }
+  ]
+}

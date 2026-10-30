@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "damme",
+    "name": "Damme",
+    "center": {
+      "lat": 52.522572000000004,
+      "lng": 8.19659605
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "damme-1d4f8ed41b",
+      "city": "damme",
+      "label": "Rathaus Parkgelände",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Damme",
+      "spotCount": 1,
+      "lat": 52.522572000000004,
+      "lng": 8.19659605,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/38900256), ODbL"
+    }
+  ]
+}

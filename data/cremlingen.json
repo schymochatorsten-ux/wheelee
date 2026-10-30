@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "cremlingen",
+    "name": "Cremlingen",
+    "center": {
+      "lat": 52.277459750000006,
+      "lng": 10.628763850000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "cremlingen-0cb0d728a5",
+      "city": "cremlingen",
+      "label": "Ahornallee",
+      "street": "Ahornallee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Cremlingen",
+      "spotCount": 1,
+      "lat": 52.277459750000006,
+      "lng": 10.6286089,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/989180844), ODbL"
+    },
+    {
+      "id": "cremlingen-4af1a9b6dd",
+      "city": "cremlingen",
+      "label": "Ahornallee",
+      "street": "Ahornallee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Cremlingen",
+      "spotCount": 1,
+      "lat": 52.277620000000006,
+      "lng": 10.628763850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/989180847), ODbL"
+    },
+    {
+      "id": "cremlingen-fa1e0e3461",
+      "city": "cremlingen",
+      "label": "Ahornallee 10",
+      "street": "Ahornallee",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Cremlingen",
+      "spotCount": 1,
+      "lat": 52.27781230000001,
+      "lng": 10.62876335,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/989180848), ODbL"
+    },
+    {
+      "id": "cremlingen-945cd352da",
+      "city": "cremlingen",
+      "label": "Bauernstraße",
+      "street": "Bauernstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Cremlingen",
+      "spotCount": 2,
+      "lat": 52.2691341,
+      "lng": 10.624438900000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2178166922), ODbL"
+    },
+    {
+      "id": "cremlingen-d49669bef2",
+      "city": "cremlingen",
+      "label": "Freibad Hemkenrode",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Cremlingen",
+      "spotCount": 5,
+      "lat": 52.23072570000001,
+      "lng": 10.702296200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/306789320), ODbL"
+    },
+    {
+      "id": "cremlingen-2dfa0d0c50",
+      "city": "cremlingen",
+      "label": "Im Moorbusche 23",
+      "street": "Im Moorbusche",
+      "houseNumber": "23",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Cremlingen",
+      "spotCount": 1,
+      "lat": 52.252038150000004,
+      "lng": 10.643277950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/727125074), ODbL"
+    }
+  ]
+}

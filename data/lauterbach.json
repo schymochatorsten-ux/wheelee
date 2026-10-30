@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "lauterbach",
+    "name": "Lauterbach (Hessen)",
+    "center": {
+      "lat": 50.6402883,
+      "lng": 9.39829185
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lauterbach-fb58b46496",
+      "city": "lauterbach",
+      "label": "Bahnhofstraße 27",
+      "street": "Bahnhofstraße",
+      "houseNumber": "27",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lauterbach (Hessen)",
+      "spotCount": 1,
+      "lat": 50.63816665,
+      "lng": 9.39829185,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1086659833), ODbL"
+    },
+    {
+      "id": "lauterbach-50f672507b",
+      "city": "lauterbach",
+      "label": "Gartenstraße",
+      "street": "Gartenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lauterbach (Hessen)",
+      "spotCount": 2,
+      "lat": 50.6402883,
+      "lng": 9.396947,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/529220844), ODbL"
+    },
+    {
+      "id": "lauterbach-d03e613736",
+      "city": "lauterbach",
+      "label": "Goldhelg 20",
+      "street": "Goldhelg",
+      "houseNumber": "20",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lauterbach (Hessen)",
+      "spotCount": 4,
+      "lat": 50.640855900000005,
+      "lng": 9.3990913,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/148769966), ODbL"
+    }
+  ]
+}

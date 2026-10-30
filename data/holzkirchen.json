@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "holzkirchen",
+    "name": "Holzkirchen",
+    "center": {
+      "lat": 47.89065385000001,
+      "lng": 11.72095915
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "holzkirchen-64ebdc5c44",
+      "city": "holzkirchen",
+      "label": "Bahnhofplatz 9",
+      "street": "Bahnhofplatz",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Holzkirchen",
+      "spotCount": 3,
+      "lat": 47.88475995,
+      "lng": 11.69637325,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/43618404), ODbL"
+    },
+    {
+      "id": "holzkirchen-1d9b7f0f62",
+      "city": "holzkirchen",
+      "label": "Bergfeldstraße 13",
+      "street": "Bergfeldstraße",
+      "houseNumber": "13",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Holzkirchen",
+      "spotCount": 1,
+      "lat": 47.89065385000001,
+      "lng": 11.7215875,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/674786032), ODbL"
+    },
+    {
+      "id": "holzkirchen-85da2e11c6",
+      "city": "holzkirchen",
+      "label": "Bergfeldstraße 9",
+      "street": "Bergfeldstraße",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Holzkirchen",
+      "spotCount": 1,
+      "lat": 47.891769350000004,
+      "lng": 11.72095915,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/674786019), ODbL"
+    },
+    {
+      "id": "holzkirchen-596e2059fc",
+      "city": "holzkirchen",
+      "label": "Erlkamer Straße",
+      "street": "Erlkamer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Holzkirchen",
+      "spotCount": 1,
+      "lat": 47.88472540000001,
+      "lng": 11.697656000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1105900879), ODbL"
+    },
+    {
+      "id": "holzkirchen-b40a0b13c3",
+      "city": "holzkirchen",
+      "label": "Polizeiparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Holzkirchen",
+      "spotCount": 1,
+      "lat": 47.89294875,
+      "lng": 11.72359225,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/37801578), ODbL"
+    }
+  ]
+}

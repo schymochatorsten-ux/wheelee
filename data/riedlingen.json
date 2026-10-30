@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "riedlingen",
+    "name": "Riedlingen",
+    "center": {
+      "lat": 48.1494623,
+      "lng": 9.484747850000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "riedlingen-bca6787634",
+      "city": "riedlingen",
+      "label": "Steig 1",
+      "street": "Steig 1",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Riedlingen",
+      "spotCount": 2,
+      "lat": 48.14912765,
+      "lng": 9.48441075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/229617708), ODbL"
+    },
+    {
+      "id": "riedlingen-9259be125f",
+      "city": "riedlingen",
+      "label": "Steig 2",
+      "street": "Steig 2",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Riedlingen",
+      "spotCount": 2,
+      "lat": 48.1494623,
+      "lng": 9.484747850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1384293852), ODbL"
+    }
+  ]
+}

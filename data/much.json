@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "much",
+    "name": "Much",
+    "center": {
+      "lat": 50.903663900000005,
+      "lng": 7.41102735
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "much-e26f57fab3",
+      "city": "much",
+      "label": "Dornseifer/Aldi-Parkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Much",
+      "spotCount": 3,
+      "lat": 50.903663900000005,
+      "lng": 7.41102735,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/183365430), ODbL"
+    },
+    {
+      "id": "much-5a01dee867",
+      "city": "much",
+      "label": "Eichenweg",
+      "street": "Eichenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Much",
+      "spotCount": 1,
+      "lat": 50.902299500000005,
+      "lng": 7.400599000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13629375773), ODbL"
+    }
+  ]
+}

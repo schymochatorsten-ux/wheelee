@@ -12,26 +12,11 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "elsdorf-daddcd4c26",
-      "city": "elsdorf",
-      "label": "Behindertenparkplatz Elsdorf",
-      "street": null,
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Elsdorf",
-      "spotCount": 1,
-      "lat": 50.934104500000004,
-      "lng": 6.5686618,
-      "geoAccuracy": "house",
-      "source": "OpenStreetMap (node/10019122559), ODbL"
-    },
-    {
       "id": "elsdorf-03438a840b",
       "city": "elsdorf",
-      "label": "Behindertenparkplatz Elsdorf",
-      "street": null,
-      "houseNumber": null,
+      "label": "An Gut Neuenhof 1a",
+      "street": "An Gut Neuenhof",
+      "houseNumber": "1a",
       "note": null,
       "timeRestriction": null,
       "district": "Elsdorf",
@@ -40,6 +25,21 @@
       "lng": 6.5849183,
       "geoAccuracy": "house",
       "source": "OpenStreetMap (node/10245382661), ODbL"
+    },
+    {
+      "id": "elsdorf-daddcd4c26",
+      "city": "elsdorf",
+      "label": "Zum Ostbahnhof 1",
+      "street": "Zum Ostbahnhof",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Elsdorf",
+      "spotCount": 1,
+      "lat": 50.934104500000004,
+      "lng": 6.5686618,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10019122559), ODbL"
     }
   ]
 }

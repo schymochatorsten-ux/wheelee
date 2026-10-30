@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "kenzingen",
+    "name": "Kenzingen",
+    "center": {
+      "lat": 48.195460000000004,
+      "lng": 7.764811150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kenzingen-3e3d83e17c",
+      "city": "kenzingen",
+      "label": "Eisenbahnstraße",
+      "street": "Eisenbahnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Kenzingen",
+      "spotCount": 1,
+      "lat": 48.195460000000004,
+      "lng": 7.764811150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/316106099), ODbL"
+    },
+    {
+      "id": "kenzingen-c8dbb4876d",
+      "city": "kenzingen",
+      "label": "Eisenbahnstraße 32",
+      "street": "Eisenbahnstraße",
+      "houseNumber": "32",
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Kenzingen",
+      "spotCount": 1,
+      "lat": 48.1942298,
+      "lng": 7.7646286,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1392291142), ODbL"
+    }
+  ]
+}

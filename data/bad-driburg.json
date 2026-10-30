@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bad-driburg",
+    "name": "Bad Driburg",
+    "center": {
+      "lat": 51.7210862,
+      "lng": 9.0116966
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-driburg-3b0d69e1c5",
+      "city": "bad-driburg",
+      "label": "Am Siedlerplatz",
+      "street": "Am Siedlerplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Driburg",
+      "spotCount": 3,
+      "lat": 51.7210862,
+      "lng": 9.0116966,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1016675386), ODbL"
+    },
+    {
+      "id": "bad-driburg-edfc21de47",
+      "city": "bad-driburg",
+      "label": "Dringenberger Straße",
+      "street": "Dringenberger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Driburg",
+      "spotCount": 1,
+      "lat": 51.7200228,
+      "lng": 9.01635405,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1531456026), ODbL"
+    },
+    {
+      "id": "bad-driburg-0335f4f27b",
+      "city": "bad-driburg",
+      "label": "Lange Straße",
+      "street": "Lange Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Driburg",
+      "spotCount": 2,
+      "lat": 51.737129350000004,
+      "lng": 9.01020615,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/88446767), ODbL"
+    }
+  ]
+}

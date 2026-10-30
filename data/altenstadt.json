@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "altenstadt",
+    "name": "Altenstadt",
+    "center": {
+      "lat": 50.2749947,
+      "lng": 8.952007550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "altenstadt-b74164ca5a",
+      "city": "altenstadt",
+      "label": "Am Bornweg 2",
+      "street": "Am Bornweg",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Altenstadt",
+      "spotCount": 2,
+      "lat": 50.27089600000001,
+      "lng": 8.92961125,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/437115395), ODbL"
+    },
+    {
+      "id": "altenstadt-fddc278746",
+      "city": "altenstadt",
+      "label": "Am Sportfeld",
+      "street": "Am Sportfeld",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Altenstadt",
+      "spotCount": 4,
+      "lat": 50.2749947,
+      "lng": 8.952007550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/596623540), ODbL"
+    },
+    {
+      "id": "altenstadt-305aacc03c",
+      "city": "altenstadt",
+      "label": "Eichbaumstraße 2a",
+      "street": "Eichbaumstraße",
+      "houseNumber": "2a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Altenstadt",
+      "spotCount": 1,
+      "lat": 50.26924625000001,
+      "lng": 8.96389005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/860733828), ODbL"
+    },
+    {
+      "id": "altenstadt-83591e62ab",
+      "city": "altenstadt",
+      "label": "Wiesenstraße",
+      "street": "Wiesenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Altenstadt",
+      "spotCount": 2,
+      "lat": 50.283607350000004,
+      "lng": 8.9436607,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/352981761), ODbL"
+    }
+  ]
+}

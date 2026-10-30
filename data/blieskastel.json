@@ -14,8 +14,8 @@
     {
       "id": "blieskastel-198c3e1d49",
       "city": "blieskastel",
-      "label": "Behindertenparkplatz Blieskastel",
-      "street": null,
+      "label": "Hornbacher Straße",
+      "street": "Hornbacher Straße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,

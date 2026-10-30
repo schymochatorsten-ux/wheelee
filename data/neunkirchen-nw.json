@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "neunkirchen-nw",
+    "name": "Neunkirchen",
+    "center": {
+      "lat": 50.7991735,
+      "lng": 8.0237578
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neunkirchen-nw-0f1fd54105",
+      "city": "neunkirchen-nw",
+      "label": "Am Birkenwald",
+      "street": "Am Birkenwald",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neunkirchen",
+      "spotCount": 1,
+      "lat": 50.7991735,
+      "lng": 8.0113882,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/265482523), ODbL"
+    },
+    {
+      "id": "neunkirchen-nw-6bdfb2d150",
+      "city": "neunkirchen-nw",
+      "label": "Vor dem Berge",
+      "street": "Vor dem Berge",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neunkirchen",
+      "spotCount": 3,
+      "lat": 50.7847774,
+      "lng": 8.0237578,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12741021504), ODbL"
+    }
+  ]
+}

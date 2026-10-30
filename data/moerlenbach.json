@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "moerlenbach",
+    "name": "Mörlenbach",
+    "center": {
+      "lat": 49.604828600000005,
+      "lng": 8.748247600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "moerlenbach-450f836236",
+      "city": "moerlenbach",
+      "label": "Groß-Breitenbach",
+      "street": "Groß-Breitenbach",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mörlenbach",
+      "spotCount": 3,
+      "lat": 49.604828600000005,
+      "lng": 8.748247600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/42325002), ODbL"
+    },
+    {
+      "id": "moerlenbach-e8cfd8342f",
+      "city": "moerlenbach",
+      "label": "Hallgartenweg",
+      "street": "Hallgartenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mörlenbach",
+      "spotCount": 2,
+      "lat": 49.59959500000001,
+      "lng": 8.73694445,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26833719), ODbL"
+    }
+  ]
+}

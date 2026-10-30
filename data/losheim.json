@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "losheim",
+    "name": "Losheim am See",
+    "center": {
+      "lat": 49.5203612,
+      "lng": 6.745852900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "losheim-15061ee883",
+      "city": "losheim",
+      "label": "Behindertenparkplatz Losheim am See",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Losheim am See",
+      "spotCount": 2,
+      "lat": 49.5203612,
+      "lng": 6.737718350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/272013967), ODbL"
+    },
+    {
+      "id": "losheim-2df69fb2d5",
+      "city": "losheim",
+      "label": "Kreissparkasse",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Losheim am See",
+      "spotCount": 3,
+      "lat": 49.50827315,
+      "lng": 6.745852900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/103960166), ODbL"
+    }
+  ]
+}

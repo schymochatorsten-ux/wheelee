@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "selfkant",
+    "name": "Selfkant",
+    "center": {
+      "lat": 51.0164984,
+      "lng": 5.899876300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "selfkant-771271293c",
+      "city": "selfkant",
+      "label": "An der Tränke 19",
+      "street": "An der Tränke",
+      "houseNumber": "19",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Selfkant",
+      "spotCount": 2,
+      "lat": 50.9958882,
+      "lng": 5.9208366,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/857135177), ODbL"
+    },
+    {
+      "id": "selfkant-cbeed1ed5b",
+      "city": "selfkant",
+      "label": "In der Fummer",
+      "street": "In der Fummer",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Selfkant",
+      "spotCount": 2,
+      "lat": 51.017093800000005,
+      "lng": 5.89830505,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/410757291), ODbL"
+    },
+    {
+      "id": "selfkant-34601b75b7",
+      "city": "selfkant",
+      "label": "In der Fummer 16",
+      "street": "In der Fummer",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Selfkant",
+      "spotCount": 3,
+      "lat": 51.0164984,
+      "lng": 5.899876300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1320517222), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "oftersheim",
+    "name": "Oftersheim",
+    "center": {
+      "lat": 49.371885500000005,
+      "lng": 8.5805962
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oftersheim-2d441fce45",
+      "city": "oftersheim",
+      "label": "Eichendorffstraße 34",
+      "street": "Eichendorffstraße",
+      "houseNumber": "34",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oftersheim",
+      "spotCount": 2,
+      "lat": 49.3684907,
+      "lng": 8.576985950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1083985123), ODbL"
+    },
+    {
+      "id": "oftersheim-882de39d44",
+      "city": "oftersheim",
+      "label": "Hardtwald West",
+      "street": "Hardtwald West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oftersheim",
+      "spotCount": 9,
+      "lat": 49.350555050000004,
+      "lng": 8.6303677,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1512617159), ODbL"
+    },
+    {
+      "id": "oftersheim-f3c02ae309",
+      "city": "oftersheim",
+      "label": "Mannheimer Straße 127",
+      "street": "Mannheimer Straße",
+      "houseNumber": "127",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Oftersheim",
+      "spotCount": 1,
+      "lat": 49.373703600000006,
+      "lng": 8.5795197,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1415398439), ODbL"
+    },
+    {
+      "id": "oftersheim-98bf02125e",
+      "city": "oftersheim",
+      "label": "Mannheimer Straße 127",
+      "street": "Mannheimer Straße",
+      "houseNumber": "127",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Oftersheim",
+      "spotCount": 1,
+      "lat": 49.37357675,
+      "lng": 8.579509100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1415398448), ODbL"
+    },
+    {
+      "id": "oftersheim-4ec7d09ce6",
+      "city": "oftersheim",
+      "label": "Mannheimer Straße 89",
+      "street": "Mannheimer Straße",
+      "houseNumber": "89",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oftersheim",
+      "spotCount": 1,
+      "lat": 49.371885500000005,
+      "lng": 8.5805962,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2978708343), ODbL"
+    },
+    {
+      "id": "oftersheim-49a505ad42",
+      "city": "oftersheim",
+      "label": "Sofienstraße",
+      "street": "Sofienstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oftersheim",
+      "spotCount": 1,
+      "lat": 49.3703802,
+      "lng": 8.5864884,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/262862745), ODbL"
+    }
+  ]
+}

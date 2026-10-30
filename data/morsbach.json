@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "morsbach",
+    "name": "Morsbach",
+    "center": {
+      "lat": 50.8639449,
+      "lng": 7.723346450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "morsbach-b702b363fc",
+      "city": "morsbach",
+      "label": "Wisseraue 1",
+      "street": "Wisseraue",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Morsbach",
+      "spotCount": 2,
+      "lat": 50.8639449,
+      "lng": 7.723346450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1482343060), ODbL"
+    }
+  ]
+}

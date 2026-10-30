@@ -12,10 +12,25 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
+      "id": "rotenburg-835d310e8d",
+      "city": "rotenburg",
+      "label": "Bremer Straße",
+      "street": "Bremer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rotenburg (Wümme)",
+      "spotCount": 5,
+      "lat": 53.116876100000006,
+      "lng": 9.3857873,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1035988593), ODbL"
+    },
+    {
       "id": "rotenburg-8de11e0688",
       "city": "rotenburg",
-      "label": "Behindertenparkplatz Rotenburg (Wümme)",
-      "street": null,
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,
@@ -29,8 +44,8 @@
     {
       "id": "rotenburg-7c101d8b67",
       "city": "rotenburg",
-      "label": "Behindertenparkplatz Rotenburg (Wümme)",
-      "street": null,
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -40,21 +55,6 @@
       "lng": 9.3544074,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/933318592), ODbL"
-    },
-    {
-      "id": "rotenburg-835d310e8d",
-      "city": "rotenburg",
-      "label": "Behindertenparkplatz Rotenburg (Wümme)",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Rotenburg (Wümme)",
-      "spotCount": 5,
-      "lat": 53.116876100000006,
-      "lng": 9.3857873,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1035988593), ODbL"
     },
     {
       "id": "rotenburg-897982dd59",

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "gernsbach",
+    "name": "Gernsbach",
+    "center": {
+      "lat": 48.76749925,
+      "lng": 8.3364005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gernsbach-c4aa141149",
+      "city": "gernsbach",
+      "label": "Bahnhofsplatz",
+      "street": "Bahnhofsplatz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gernsbach",
+      "spotCount": 2,
+      "lat": 48.768383,
+      "lng": 8.3364005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1413819464), ODbL"
+    },
+    {
+      "id": "gernsbach-fe3f9b95d9",
+      "city": "gernsbach",
+      "label": "Im Wörthgarten",
+      "street": "Im Wörthgarten",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gernsbach",
+      "spotCount": 9,
+      "lat": 48.76749925,
+      "lng": 8.3349403,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1189233309), ODbL"
+    },
+    {
+      "id": "gernsbach-0a8dd14101",
+      "city": "gernsbach",
+      "label": "Markgraf-Berthold-Straße",
+      "street": "Markgraf-Berthold-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Gernsbach",
+      "spotCount": 1,
+      "lat": 48.745756,
+      "lng": 8.34776535,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1073935971), ODbL"
+    },
+    {
+      "id": "gernsbach-970cb22318",
+      "city": "gernsbach",
+      "label": "Markgraf-Berthold-Straße",
+      "street": "Markgraf-Berthold-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gernsbach",
+      "spotCount": 1,
+      "lat": 48.745625950000004,
+      "lng": 8.347689899999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1413778115), ODbL"
+    },
+    {
+      "id": "gernsbach-31b62acc22",
+      "city": "gernsbach",
+      "label": "Tunnel Gernsbach",
+      "street": "Tunnel Gernsbach",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Gernsbach",
+      "spotCount": 2,
+      "lat": 48.7686731,
+      "lng": 8.33637525,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/208493839), ODbL"
+    }
+  ]
+}

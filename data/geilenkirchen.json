@@ -12,6 +12,21 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
+      "id": "geilenkirchen-9122eff0b4",
+      "city": "geilenkirchen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Geilenkirchen",
+      "spotCount": 1,
+      "lat": 50.9607482,
+      "lng": 6.123617950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1361420124), ODbL"
+    },
+    {
       "id": "geilenkirchen-2b184694a4",
       "city": "geilenkirchen",
       "label": "Bauern & Erzählkaffee",
@@ -27,25 +42,10 @@
       "source": "OpenStreetMap (way/89304344), ODbL"
     },
     {
-      "id": "geilenkirchen-0f7bc423ae",
-      "city": "geilenkirchen",
-      "label": "Behindertenparkplatz Geilenkirchen",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Geilenkirchen",
-      "spotCount": 2,
-      "lat": 50.965341200000005,
-      "lng": 6.123303600000001,
-      "geoAccuracy": "house",
-      "source": "OpenStreetMap (node/2410129993), ODbL"
-    },
-    {
       "id": "geilenkirchen-67626abd96",
       "city": "geilenkirchen",
-      "label": "Behindertenparkplatz Geilenkirchen",
-      "street": null,
+      "label": "In der Au",
+      "street": "In der Au",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -57,40 +57,10 @@
       "source": "OpenStreetMap (way/24824126), ODbL"
     },
     {
-      "id": "geilenkirchen-4bed4a28a6",
-      "city": "geilenkirchen",
-      "label": "Behindertenparkplatz Geilenkirchen",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Geilenkirchen",
-      "spotCount": 1,
-      "lat": 50.9648328,
-      "lng": 6.1208346,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/261602885), ODbL"
-    },
-    {
-      "id": "geilenkirchen-78891e5508",
-      "city": "geilenkirchen",
-      "label": "Behindertenparkplatz Geilenkirchen",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Geilenkirchen",
-      "spotCount": 3,
-      "lat": 50.9509053,
-      "lng": 6.16754845,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/316504285), ODbL"
-    },
-    {
       "id": "geilenkirchen-26c6a1ee7d",
       "city": "geilenkirchen",
-      "label": "Behindertenparkplatz Geilenkirchen",
-      "street": null,
+      "label": "Karl-Arnold-Straße",
+      "street": "Karl-Arnold-Straße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -102,19 +72,34 @@
       "source": "OpenStreetMap (way/318984591), ODbL"
     },
     {
-      "id": "geilenkirchen-9122eff0b4",
+      "id": "geilenkirchen-4bed4a28a6",
       "city": "geilenkirchen",
-      "label": "Behindertenparkplatz Geilenkirchen",
-      "street": null,
+      "label": "Markt",
+      "street": "Markt",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Geilenkirchen",
       "spotCount": 1,
-      "lat": 50.9607482,
-      "lng": 6.123617950000001,
+      "lat": 50.9648328,
+      "lng": 6.1208346,
       "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1361420124), ODbL"
+      "source": "OpenStreetMap (way/261602885), ODbL"
+    },
+    {
+      "id": "geilenkirchen-0f7bc423ae",
+      "city": "geilenkirchen",
+      "label": "Martin-Heyden-Straße",
+      "street": "Martin-Heyden-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Geilenkirchen",
+      "spotCount": 2,
+      "lat": 50.965341200000005,
+      "lng": 6.123303600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2410129993), ODbL"
     },
     {
       "id": "geilenkirchen-0fc747b0f9",
@@ -160,6 +145,21 @@
       "lng": 6.123275850000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/40027122), ODbL"
+    },
+    {
+      "id": "geilenkirchen-78891e5508",
+      "city": "geilenkirchen",
+      "label": "Von-Mirbach-Straße",
+      "street": "Von-Mirbach-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Geilenkirchen",
+      "spotCount": 3,
+      "lat": 50.9509053,
+      "lng": 6.16754845,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/316504285), ODbL"
     }
   ]
 }

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "leingarten",
+    "name": "Leingarten",
+    "center": {
+      "lat": 49.144951500000005,
+      "lng": 9.120942450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "leingarten-2ffa5f929d",
+      "city": "leingarten",
+      "label": "Brühlstraße 8",
+      "street": "Brühlstraße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Leingarten",
+      "spotCount": 2,
+      "lat": 49.144951500000005,
+      "lng": 9.121047050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/111444041), ODbL"
+    },
+    {
+      "id": "leingarten-b463772d77",
+      "city": "leingarten",
+      "label": "Leingarten Bahnhof",
+      "street": "Leingarten Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Leingarten",
+      "spotCount": 2,
+      "lat": 49.144952599999996,
+      "lng": 9.120942450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1413195215), ODbL"
+    },
+    {
+      "id": "leingarten-cc99ef05c0",
+      "city": "leingarten",
+      "label": "Platanenweg 113",
+      "street": "Platanenweg",
+      "houseNumber": "113",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Leingarten",
+      "spotCount": 2,
+      "lat": 49.14212620000001,
+      "lng": 9.10277315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1035746989), ODbL"
+    },
+    {
+      "id": "leingarten-4651b7589e",
+      "city": "leingarten",
+      "label": "Schwaigerner Straße",
+      "street": "Schwaigerner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Leingarten",
+      "spotCount": 2,
+      "lat": 49.14367785,
+      "lng": 9.112082950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/97720657), ODbL"
+    }
+  ]
+}

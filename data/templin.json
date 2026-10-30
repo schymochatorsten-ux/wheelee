@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "templin",
+    "name": "Templin",
+    "center": {
+      "lat": 53.116825000000006,
+      "lng": 13.527436550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "templin-c56f6378b7",
+      "city": "templin",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Templin",
+      "spotCount": 3,
+      "lat": 53.116825000000006,
+      "lng": 13.497097,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12051858833), ODbL"
+    },
+    {
+      "id": "templin-7be709fc89",
+      "city": "templin",
+      "label": "Naturtherme Templin",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Templin",
+      "spotCount": 1,
+      "lat": 53.10180630000001,
+      "lng": 13.527436550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/267491919), ODbL"
+    }
+  ]
+}

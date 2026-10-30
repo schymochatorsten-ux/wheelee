@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "sachsenheim",
+    "name": "Sachsenheim",
+    "center": {
+      "lat": 48.9607491,
+      "lng": 9.0660836
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sachsenheim-d2ec903e78",
+      "city": "sachsenheim",
+      "label": "Äußerer Schloßhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sachsenheim",
+      "spotCount": 1,
+      "lat": 48.9600919,
+      "lng": 9.0660836,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/145259972), ODbL"
+    },
+    {
+      "id": "sachsenheim-45dd6b5a66",
+      "city": "sachsenheim",
+      "label": "Brunnenstraße",
+      "street": "Brunnenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sachsenheim",
+      "spotCount": 1,
+      "lat": 48.9607491,
+      "lng": 9.064124500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/145259983), ODbL"
+    },
+    {
+      "id": "sachsenheim-5d7b69c109",
+      "city": "sachsenheim",
+      "label": "Oberriexinger Straße",
+      "street": "Oberriexinger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sachsenheim",
+      "spotCount": 1,
+      "lat": 48.9563319,
+      "lng": 9.063415800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11043637682), ODbL"
+    },
+    {
+      "id": "sachsenheim-225615805e",
+      "city": "sachsenheim",
+      "label": "Porscheplatz",
+      "street": "Porscheplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sachsenheim",
+      "spotCount": 6,
+      "lat": 48.952566000000004,
+      "lng": 9.042300449999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/229330024), ODbL"
+    },
+    {
+      "id": "sachsenheim-6ea7c22bd9",
+      "city": "sachsenheim",
+      "label": "Zwischen den Wegen",
+      "street": "Zwischen den Wegen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sachsenheim",
+      "spotCount": 1,
+      "lat": 48.9737803,
+      "lng": 9.0713187,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9173984675), ODbL"
+    },
+    {
+      "id": "sachsenheim-4b7f2e7967",
+      "city": "sachsenheim",
+      "label": "Zwischen den Wegen",
+      "street": "Zwischen den Wegen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sachsenheim",
+      "spotCount": 1,
+      "lat": 48.9737828,
+      "lng": 9.071359600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9173984676), ODbL"
+    },
+    {
+      "id": "sachsenheim-21cb9df04f",
+      "city": "sachsenheim",
+      "label": "Zwischen den Wegen",
+      "street": "Zwischen den Wegen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sachsenheim",
+      "spotCount": 2,
+      "lat": 48.973871700000004,
+      "lng": 9.07130455,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31144617), ODbL"
+    }
+  ]
+}

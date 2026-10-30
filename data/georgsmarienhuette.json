@@ -14,8 +14,8 @@
     {
       "id": "georgsmarienhuette-65b27986b4",
       "city": "georgsmarienhuette",
-      "label": "Behindertenparkplatz Georgsmarienhütte",
-      "street": null,
+      "label": "Zur Waldbühne",
+      "street": "Zur Waldbühne",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,

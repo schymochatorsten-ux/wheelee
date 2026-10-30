@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "gangelt",
+    "name": "Gangelt",
+    "center": {
+      "lat": 50.993021000000006,
+      "lng": 5.992038300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gangelt-244eb85efe",
+      "city": "gangelt",
+      "label": "Borheggenstraße",
+      "street": "Borheggenstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gangelt",
+      "spotCount": 1,
+      "lat": 50.992154049999996,
+      "lng": 5.992038300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/931086751), ODbL"
+    },
+    {
+      "id": "gangelt-499cb72ec7",
+      "city": "gangelt",
+      "label": "Burgstraße 6",
+      "street": "Burgstraße",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gangelt",
+      "spotCount": 1,
+      "lat": 50.99175340000001,
+      "lng": 5.9974806,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/203705973), ODbL"
+    },
+    {
+      "id": "gangelt-c2f82b3364",
+      "city": "gangelt",
+      "label": "Heinrich-Josef-Otten-Straße",
+      "street": "Heinrich-Josef-Otten-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gangelt",
+      "spotCount": 1,
+      "lat": 50.9936701,
+      "lng": 5.9858333,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1410571154), ODbL"
+    },
+    {
+      "id": "gangelt-cdd40a3562",
+      "city": "gangelt",
+      "label": "Heinrich-Josef-Otten-Straße",
+      "street": "Heinrich-Josef-Otten-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gangelt",
+      "spotCount": 1,
+      "lat": 50.99363915000001,
+      "lng": 5.98584295,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1410571155), ODbL"
+    },
+    {
+      "id": "gangelt-713a94067c",
+      "city": "gangelt",
+      "label": "Sittarder Straße 9",
+      "street": "Sittarder Straße",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gangelt",
+      "spotCount": 1,
+      "lat": 50.993021000000006,
+      "lng": 5.9964411,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1253762281), ODbL"
+    }
+  ]
+}

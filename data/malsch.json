@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "malsch",
+    "name": "Malsch",
+    "center": {
+      "lat": 48.88002335,
+      "lng": 8.33326885
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "malsch-6fe5c42d90",
+      "city": "malsch",
+      "label": "Behindertenparkplatz Malsch",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Malsch",
+      "spotCount": 1,
+      "lat": 48.8755048,
+      "lng": 8.393991750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1049138812), ODbL"
+    },
+    {
+      "id": "malsch-c8929557e7",
+      "city": "malsch",
+      "label": "Friedhofsparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Malsch",
+      "spotCount": 1,
+      "lat": 48.87738745,
+      "lng": 8.33326885,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/127972482), ODbL"
+    },
+    {
+      "id": "malsch-046727e4c4",
+      "city": "malsch",
+      "label": "Hauptstraße 49",
+      "street": "Hauptstraße",
+      "houseNumber": "49",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Malsch",
+      "spotCount": 1,
+      "lat": 48.88002335,
+      "lng": 8.3351491,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/806076378), ODbL"
+    },
+    {
+      "id": "malsch-0bf96f5588",
+      "city": "malsch",
+      "label": "Neudorfstraße",
+      "street": "Neudorfstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Malsch",
+      "spotCount": 1,
+      "lat": 48.883741900000004,
+      "lng": 8.33319035,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/720926806), ODbL"
+    },
+    {
+      "id": "malsch-3a94da2652",
+      "city": "malsch",
+      "label": "Neudorfstraße",
+      "street": "Neudorfstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Malsch",
+      "spotCount": 1,
+      "lat": 48.883723700000004,
+      "lng": 8.333095700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/720926807), ODbL"
+    }
+  ]
+}

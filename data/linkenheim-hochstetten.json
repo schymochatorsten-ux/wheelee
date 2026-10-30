@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "linkenheim-hochstetten",
+    "name": "Linkenheim-Hochstetten",
+    "center": {
+      "lat": 49.1241879,
+      "lng": 8.4086471
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "linkenheim-hochstetten-f86b4ce932",
+      "city": "linkenheim-hochstetten",
+      "label": "Badener Straße",
+      "street": "Badener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Linkenheim-Hochstetten",
+      "spotCount": 1,
+      "lat": 49.131520200000004,
+      "lng": 8.4211718,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1024273688), ODbL"
+    },
+    {
+      "id": "linkenheim-hochstetten-e38400c400",
+      "city": "linkenheim-hochstetten",
+      "label": "Karlsruher Straße",
+      "street": "Karlsruher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Linkenheim-Hochstetten",
+      "spotCount": 3,
+      "lat": 49.125089100000004,
+      "lng": 8.40935235,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/9413636), ODbL"
+    },
+    {
+      "id": "linkenheim-hochstetten-90895ac03e",
+      "city": "linkenheim-hochstetten",
+      "label": "Karlsruher Straße 62",
+      "street": "Karlsruher Straße",
+      "houseNumber": "62",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Linkenheim-Hochstetten",
+      "spotCount": 1,
+      "lat": 49.1241879,
+      "lng": 8.4086471,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/337364465), ODbL"
+    },
+    {
+      "id": "linkenheim-hochstetten-86db250456",
+      "city": "linkenheim-hochstetten",
+      "label": "Rathausstraße",
+      "street": "Rathausstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Linkenheim-Hochstetten",
+      "spotCount": 1,
+      "lat": 49.123656600000004,
+      "lng": 8.40758645,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/192391268), ODbL"
+    },
+    {
+      "id": "linkenheim-hochstetten-c2a59202ff",
+      "city": "linkenheim-hochstetten",
+      "label": "Rathausstraße 3",
+      "street": "Rathausstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Linkenheim-Hochstetten",
+      "spotCount": 3,
+      "lat": 49.1236471,
+      "lng": 8.406722,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/191979093), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "leutenbach",
+    "name": "Leutenbach",
+    "center": {
+      "lat": 48.9026677,
+      "lng": 9.41509735
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "leutenbach-bec01e3d61",
+      "city": "leutenbach",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Leutenbach",
+      "spotCount": 3,
+      "lat": 48.9026677,
+      "lng": 9.41509735,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/51899820), ODbL"
+    },
+    {
+      "id": "leutenbach-5d5f1269b7",
+      "city": "leutenbach",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Leutenbach",
+      "spotCount": 1,
+      "lat": 48.90378735,
+      "lng": 9.415386550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/149174003), ODbL"
+    },
+    {
+      "id": "leutenbach-4dec50490b",
+      "city": "leutenbach",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Leutenbach",
+      "spotCount": 1,
+      "lat": 48.90337855,
+      "lng": 9.415200850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1410899511), ODbL"
+    },
+    {
+      "id": "leutenbach-a2d7318f7f",
+      "city": "leutenbach",
+      "label": "Weinbergstraße",
+      "street": "Weinbergstraße",
+      "houseNumber": null,
+      "note": "gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Leutenbach",
+      "spotCount": 1,
+      "lat": 48.90234565,
+      "lng": 9.41479115,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1254289762), ODbL"
+    },
+    {
+      "id": "leutenbach-afc32faca9",
+      "city": "leutenbach",
+      "label": "Weinbergstraße",
+      "street": "Weinbergstraße",
+      "houseNumber": null,
+      "note": "gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Leutenbach",
+      "spotCount": 1,
+      "lat": 48.9022719,
+      "lng": 9.414737550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1254289763), ODbL"
+    },
+    {
+      "id": "leutenbach-6ea5a2f269",
+      "city": "leutenbach",
+      "label": "Weinbergstraße",
+      "street": "Weinbergstraße",
+      "houseNumber": null,
+      "note": "gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Leutenbach",
+      "spotCount": 1,
+      "lat": 48.902297450000006,
+      "lng": 9.41475595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1254289764), ODbL"
+    }
+  ]
+}

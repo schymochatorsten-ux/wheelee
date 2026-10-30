@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "neustadt-a-d-aisch",
+    "name": "Neustadt a.d.Aisch",
+    "center": {
+      "lat": 49.580374400000004,
+      "lng": 10.606130400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neustadt-a-d-aisch-6a46df963e",
+      "city": "neustadt-a-d-aisch",
+      "label": "Bahnhof",
+      "street": "Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neustadt a.d.Aisch",
+      "spotCount": 1,
+      "lat": 49.57727365,
+      "lng": 10.588220450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/480631827), ODbL"
+    },
+    {
+      "id": "neustadt-a-d-aisch-fa5d55be5d",
+      "city": "neustadt-a-d-aisch",
+      "label": "Bamberger Straße 48",
+      "street": "Bamberger Straße",
+      "houseNumber": "48",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neustadt a.d.Aisch",
+      "spotCount": 1,
+      "lat": 49.58292215,
+      "lng": 10.6140026,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1462685630), ODbL"
+    },
+    {
+      "id": "neustadt-a-d-aisch-f86727ca57",
+      "city": "neustadt-a-d-aisch",
+      "label": "Karl-Eibl-Straße",
+      "street": "Karl-Eibl-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neustadt a.d.Aisch",
+      "spotCount": 1,
+      "lat": 49.577080050000006,
+      "lng": 10.585424500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/303799682), ODbL"
+    },
+    {
+      "id": "neustadt-a-d-aisch-c36ce7a820",
+      "city": "neustadt-a-d-aisch",
+      "label": "P Behinderten",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neustadt a.d.Aisch",
+      "spotCount": 1,
+      "lat": 49.580374400000004,
+      "lng": 10.6078174,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1750434180), ODbL"
+    },
+    {
+      "id": "neustadt-a-d-aisch-9a215e2048",
+      "city": "neustadt-a-d-aisch",
+      "label": "Schnizzersweg",
+      "street": "Schnizzersweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neustadt a.d.Aisch",
+      "spotCount": 1,
+      "lat": 49.582379100000004,
+      "lng": 10.606130400000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5101697022), ODbL"
+    }
+  ]
+}

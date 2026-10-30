@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "blaustein",
+    "name": "Blaustein",
+    "center": {
+      "lat": 48.417480700000006,
+      "lng": 9.9186534
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "blaustein-d5708e9d30",
+      "city": "blaustein",
+      "label": "Boschstraße",
+      "street": "Boschstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Blaustein",
+      "spotCount": 4,
+      "lat": 48.417480700000006,
+      "lng": 9.9168807,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/343215969), ODbL"
+    },
+    {
+      "id": "blaustein-7390a32662",
+      "city": "blaustein",
+      "label": "Ehrensteiner Straße",
+      "street": "Ehrensteiner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Blaustein",
+      "spotCount": 1,
+      "lat": 48.415409100000005,
+      "lng": 9.9186534,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12227697797), ODbL"
+    },
+    {
+      "id": "blaustein-d20618daa8",
+      "city": "blaustein",
+      "label": "Herrlingen Bahnhof, Steig 1",
+      "street": "Herrlingen Bahnhof, Steig 1",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Blaustein",
+      "spotCount": 1,
+      "lat": 48.4187061,
+      "lng": 9.897348050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/475618977), ODbL"
+    },
+    {
+      "id": "blaustein-29701bc1a3",
+      "city": "blaustein",
+      "label": "Max-Hilsenbeck-Straße",
+      "street": "Max-Hilsenbeck-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Blaustein",
+      "spotCount": 1,
+      "lat": 48.41229665,
+      "lng": 9.92113835,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/304034707), ODbL"
+    }
+  ]
+}

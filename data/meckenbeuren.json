@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "meckenbeuren",
+    "name": "Meckenbeuren",
+    "center": {
+      "lat": 47.67286335,
+      "lng": 9.524624
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "meckenbeuren-77c13538ad",
+      "city": "meckenbeuren",
+      "label": "Am Flugplatz",
+      "street": "Am Flugplatz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Meckenbeuren",
+      "spotCount": 1,
+      "lat": 47.67286335,
+      "lng": 9.524624,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1338717688), ODbL"
+    },
+    {
+      "id": "meckenbeuren-a4fadcd824",
+      "city": "meckenbeuren",
+      "label": "Am Flugplatz",
+      "street": "Am Flugplatz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Meckenbeuren",
+      "spotCount": 1,
+      "lat": 47.67284545,
+      "lng": 9.524577950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1338717689), ODbL"
+    },
+    {
+      "id": "meckenbeuren-eef9549769",
+      "city": "meckenbeuren",
+      "label": "Bahnhofplatz 1",
+      "street": "Bahnhofplatz",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Meckenbeuren",
+      "spotCount": 1,
+      "lat": 47.699537150000005,
+      "lng": 9.55878075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1215609073), ODbL"
+    },
+    {
+      "id": "meckenbeuren-8182e683f4",
+      "city": "meckenbeuren",
+      "label": "Bernd-Rosemeyer-Straße 4",
+      "street": "Bernd-Rosemeyer-Straße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Su 05:00-24:00",
+      "district": "Meckenbeuren",
+      "spotCount": 1,
+      "lat": 47.70113785,
+      "lng": 9.55962955,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/680342886), ODbL"
+    },
+    {
+      "id": "meckenbeuren-63296ba20d",
+      "city": "meckenbeuren",
+      "label": "P2 Zubringer/ Abholer / Restaurant",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Meckenbeuren",
+      "spotCount": 2,
+      "lat": 47.67262075000001,
+      "lng": 9.523830700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/147361298), ODbL"
+    }
+  ]
+}

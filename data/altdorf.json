@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "altdorf",
+    "name": "Altdorf",
+    "center": {
+      "lat": 48.5534799,
+      "lng": 12.1099058
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "altdorf-c02bc0dc39",
+      "city": "altdorf",
+      "label": "Böhmerwaldstraße 31A",
+      "street": "Böhmerwaldstraße",
+      "houseNumber": "31A",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Altdorf",
+      "spotCount": 1,
+      "lat": 48.5534799,
+      "lng": 12.1099058,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1250417793), ODbL"
+    },
+    {
+      "id": "altdorf-6007bbd9c0",
+      "city": "altdorf",
+      "label": "Sonnenring",
+      "street": "Sonnenring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Altdorf",
+      "spotCount": 2,
+      "lat": 48.54916355,
+      "lng": 12.101790650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26175463), ODbL"
+    }
+  ]
+}

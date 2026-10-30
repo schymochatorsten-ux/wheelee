@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "geisenheim",
+    "name": "Geisenheim",
+    "center": {
+      "lat": 49.982303300000005,
+      "lng": 7.9666348000000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "geisenheim-3b3081a6e9",
+      "city": "geisenheim",
+      "label": "Bischof-Blum-Platz 7a",
+      "street": "Bischof-Blum-Platz",
+      "houseNumber": "7a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Geisenheim",
+      "spotCount": 1,
+      "lat": 49.98250815,
+      "lng": 7.9666348000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/422945333), ODbL"
+    },
+    {
+      "id": "geisenheim-39eb8e3b26",
+      "city": "geisenheim",
+      "label": "Löserweg",
+      "street": "Löserweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Geisenheim",
+      "spotCount": 2,
+      "lat": 49.9799953,
+      "lng": 7.963697100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/483028869), ODbL"
+    },
+    {
+      "id": "geisenheim-9c5102e6ff",
+      "city": "geisenheim",
+      "label": "P10 (Ursulinenplatz)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Geisenheim",
+      "spotCount": 1,
+      "lat": 49.982303300000005,
+      "lng": 7.9640296,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31004061), ODbL"
+    },
+    {
+      "id": "geisenheim-fe6a3d8ba6",
+      "city": "geisenheim",
+      "label": "Uferstraße",
+      "street": "Uferstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Geisenheim",
+      "spotCount": 2,
+      "lat": 49.9803678,
+      "lng": 7.967311650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/240112568), ODbL"
+    }
+  ]
+}

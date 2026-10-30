@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "stollberg-erzgeb",
+    "name": "Stollberg/Erzgeb.",
+    "center": {
+      "lat": 50.71014235,
+      "lng": 12.7780733
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "stollberg-erzgeb-6a908bb1d1",
+      "city": "stollberg-erzgeb",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stollberg/Erzgeb.",
+      "spotCount": 1,
+      "lat": 50.70953935,
+      "lng": 12.77412885,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/193052684), ODbL"
+    },
+    {
+      "id": "stollberg-erzgeb-f2cc5a2830",
+      "city": "stollberg-erzgeb",
+      "label": "Bahnhofstraße 2",
+      "street": "Bahnhofstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stollberg/Erzgeb.",
+      "spotCount": 3,
+      "lat": 50.7089225,
+      "lng": 12.7736193,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/208428473), ODbL"
+    },
+    {
+      "id": "stollberg-erzgeb-d38544956c",
+      "city": "stollberg-erzgeb",
+      "label": "Lutherstraße",
+      "street": "Lutherstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Stollberg/Erzgeb.",
+      "spotCount": 1,
+      "lat": 50.7101576,
+      "lng": 12.7780733,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1429745581), ODbL"
+    },
+    {
+      "id": "stollberg-erzgeb-31bcffd0f0",
+      "city": "stollberg-erzgeb",
+      "label": "Lutherstraße",
+      "street": "Lutherstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Stollberg/Erzgeb.",
+      "spotCount": 1,
+      "lat": 50.71014235,
+      "lng": 12.7781047,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1429745582), ODbL"
+    },
+    {
+      "id": "stollberg-erzgeb-4a07d4d7a4",
+      "city": "stollberg-erzgeb",
+      "label": "Stollberg, Erzgebirgsklinikum",
+      "street": "Stollberg, Erzgebirgsklinikum",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stollberg/Erzgeb.",
+      "spotCount": 2,
+      "lat": 50.717340300000004,
+      "lng": 12.788661050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/395791834), ODbL"
+    }
+  ]
+}

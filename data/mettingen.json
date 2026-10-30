@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "mettingen",
+    "name": "Mettingen",
+    "center": {
+      "lat": 52.3170451,
+      "lng": 7.78105375
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mettingen-583b02c34e",
+      "city": "mettingen",
+      "label": "Burgstraße",
+      "street": "Burgstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mettingen",
+      "spotCount": 1,
+      "lat": 52.3170451,
+      "lng": 7.78105375,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1548794992), ODbL"
+    }
+  ]
+}

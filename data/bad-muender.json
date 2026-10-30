@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bad-muender",
+    "name": "Bad Münder am Deister",
+    "center": {
+      "lat": 52.194414900000005,
+      "lng": 9.47012875
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-muender-4e647c359a",
+      "city": "bad-muender",
+      "label": "Bahnhofstraße 12",
+      "street": "Bahnhofstraße",
+      "houseNumber": "12",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Münder am Deister",
+      "spotCount": 1,
+      "lat": 52.195117200000006,
+      "lng": 9.465020800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9958769428), ODbL"
+    },
+    {
+      "id": "bad-muender-c632d92c98",
+      "city": "bad-muender",
+      "label": "Friedrich-Ludwig-Jahn-Straße",
+      "street": "Friedrich-Ludwig-Jahn-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Münder am Deister",
+      "spotCount": 1,
+      "lat": 52.193651,
+      "lng": 9.47012875,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1344531346), ODbL"
+    },
+    {
+      "id": "bad-muender-7a807c65f8",
+      "city": "bad-muender",
+      "label": "Parkplatz SIN",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Münder am Deister",
+      "spotCount": 1,
+      "lat": 52.194414900000005,
+      "lng": 9.473783500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1863967013), ODbL"
+    }
+  ]
+}

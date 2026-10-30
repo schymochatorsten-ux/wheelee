@@ -12,36 +12,6 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "hamminkeln-c03a2563f6",
-      "city": "hamminkeln",
-      "label": "Behindertenparkplatz Hamminkeln",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Hamminkeln",
-      "spotCount": 1,
-      "lat": 51.73561695000001,
-      "lng": 6.4995805,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/446176597), ODbL"
-    },
-    {
-      "id": "hamminkeln-91ddeb3859",
-      "city": "hamminkeln",
-      "label": "Behindertenparkplatz Hamminkeln",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Hamminkeln",
-      "spotCount": 3,
-      "lat": 51.704859850000005,
-      "lng": 6.64027245,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/627279366), ODbL"
-    },
-    {
       "id": "hamminkeln-e31b5456cf",
       "city": "hamminkeln",
       "label": "Hamminkeln Bahnhof P+R",
@@ -85,6 +55,36 @@
       "lng": 6.517566,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/236112057), ODbL"
+    },
+    {
+      "id": "hamminkeln-91ddeb3859",
+      "city": "hamminkeln",
+      "label": "Rastplatz Wisplet",
+      "street": "Rastplatz Wisplet",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hamminkeln",
+      "spotCount": 3,
+      "lat": 51.704859850000005,
+      "lng": 6.64027245,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/627279366), ODbL"
+    },
+    {
+      "id": "hamminkeln-c03a2563f6",
+      "city": "hamminkeln",
+      "label": "Rheinstraße 1a",
+      "street": "Rheinstraße",
+      "houseNumber": "1a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hamminkeln",
+      "spotCount": 1,
+      "lat": 51.73561695000001,
+      "lng": 6.4995805,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/446176597), ODbL"
     }
   ]
 }

@@ -12,21 +12,6 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "griesheim-77f0159ab0",
-      "city": "griesheim",
-      "label": "Behindertenparkplatz Griesheim",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Griesheim",
-      "spotCount": 2,
-      "lat": 49.86556540000001,
-      "lng": 8.5709291,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/32637916), ODbL"
-    },
-    {
       "id": "griesheim-5aa3d692dc",
       "city": "griesheim",
       "label": "Sandgasse 2",
@@ -40,6 +25,21 @@
       "lng": 8.55243345,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/28907254), ODbL"
+    },
+    {
+      "id": "griesheim-77f0159ab0",
+      "city": "griesheim",
+      "label": "Theodor-Heuss-Straße",
+      "street": "Theodor-Heuss-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Griesheim",
+      "spotCount": 2,
+      "lat": 49.86556540000001,
+      "lng": 8.5709291,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32637916), ODbL"
     }
   ]
 }

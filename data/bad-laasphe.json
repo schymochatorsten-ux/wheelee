@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bad-laasphe",
+    "name": "Bad Laasphe",
+    "center": {
+      "lat": 50.929843250000005,
+      "lng": 8.40732285
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-laasphe-a5aa96ac61",
+      "city": "bad-laasphe",
+      "label": "Höhenweg 1",
+      "street": "Höhenweg",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Bad Laasphe",
+      "spotCount": 1,
+      "lat": 50.929843250000005,
+      "lng": 8.41032035,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1393046312), ODbL"
+    },
+    {
+      "id": "bad-laasphe-1146d2c3d8",
+      "city": "bad-laasphe",
+      "label": "Königstraße 58",
+      "street": "Königstraße",
+      "houseNumber": "58",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Laasphe",
+      "spotCount": 1,
+      "lat": 50.927770300000006,
+      "lng": 8.40732285,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1483488765), ODbL"
+    },
+    {
+      "id": "bad-laasphe-ce2eb55af0",
+      "city": "bad-laasphe",
+      "label": "Langenbach",
+      "street": "Langenbach",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Laasphe",
+      "spotCount": 1,
+      "lat": 50.95594055000001,
+      "lng": 8.300046000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1413440903), ODbL"
+    }
+  ]
+}

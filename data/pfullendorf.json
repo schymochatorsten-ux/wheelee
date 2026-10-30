@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "pfullendorf",
+    "name": "Pfullendorf",
+    "center": {
+      "lat": 47.9228682,
+      "lng": 9.254292300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pfullendorf-1cf22c3279",
+      "city": "pfullendorf",
+      "label": "Bergwaldstraße",
+      "street": "Bergwaldstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pfullendorf",
+      "spotCount": 1,
+      "lat": 47.9228682,
+      "lng": 9.254292300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1256483454), ODbL"
+    }
+  ]
+}

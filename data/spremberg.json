@@ -29,8 +29,8 @@
     {
       "id": "spremberg-e013a652b2",
       "city": "spremberg",
-      "label": "Behindertenparkplatz Spremberg",
-      "street": null,
+      "label": "Kahseler Weg",
+      "street": "Kahseler Weg",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,

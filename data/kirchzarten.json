@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "kirchzarten",
+    "name": "Kirchzarten",
+    "center": {
+      "lat": 47.9588352,
+      "lng": 7.990715450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kirchzarten-e537289273",
+      "city": "kirchzarten",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Kirchzarten",
+      "spotCount": 1,
+      "lat": 47.96799730000001,
+      "lng": 7.95983495,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1296620019), ODbL"
+    },
+    {
+      "id": "kirchzarten-5cf0ff6b4b",
+      "city": "kirchzarten",
+      "label": "Dietenbacher Straße",
+      "street": "Dietenbacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kirchzarten",
+      "spotCount": 250,
+      "lat": 47.9597991,
+      "lng": 7.94903695,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1138422917), ODbL"
+    },
+    {
+      "id": "kirchzarten-709dc62fe9",
+      "city": "kirchzarten",
+      "label": "Himmelreich",
+      "street": "Himmelreich",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Kirchzarten",
+      "spotCount": 2,
+      "lat": 47.958374150000004,
+      "lng": 7.990715450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/65543600), ODbL"
+    },
+    {
+      "id": "kirchzarten-e6ee64cfa0",
+      "city": "kirchzarten",
+      "label": "Himmelreichstraße",
+      "street": "Himmelreichstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Kirchzarten",
+      "spotCount": 1,
+      "lat": 47.9587933,
+      "lng": 7.991673800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1254443626), ODbL"
+    },
+    {
+      "id": "kirchzarten-21599c75be",
+      "city": "kirchzarten",
+      "label": "Himmelreichstraße",
+      "street": "Himmelreichstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Kirchzarten",
+      "spotCount": 1,
+      "lat": 47.9588352,
+      "lng": 7.9916674500000004,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1254443627), ODbL"
+    },
+    {
+      "id": "kirchzarten-2ad548db36",
+      "city": "kirchzarten",
+      "label": "Parkplatz am Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Kirchzarten",
+      "spotCount": 1,
+      "lat": 47.96811085,
+      "lng": 7.9608111500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/231077562), ODbL"
+    },
+    {
+      "id": "kirchzarten-1dceb88219",
+      "city": "kirchzarten",
+      "label": "Parkplatz Bahnhof Himmelreich",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Kirchzarten",
+      "spotCount": 2,
+      "lat": 47.95822055000001,
+      "lng": 7.9917851,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/198274657), ODbL"
+    }
+  ]
+}

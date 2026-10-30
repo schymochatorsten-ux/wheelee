@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "bad-belzig",
+    "name": "Bad Belzig",
+    "center": {
+      "lat": 52.14445905000001,
+      "lng": 12.590137600000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-belzig-00c82cedac",
+      "city": "bad-belzig",
+      "label": "An der Rummel",
+      "street": "An der Rummel",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Belzig",
+      "spotCount": 2,
+      "lat": 52.14524285,
+      "lng": 12.577736650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1323850789), ODbL"
+    },
+    {
+      "id": "bad-belzig-27b324cf57",
+      "city": "bad-belzig",
+      "label": "Eisenbahnstraße",
+      "street": "Eisenbahnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Belzig",
+      "spotCount": 2,
+      "lat": 52.13585465,
+      "lng": 12.5973485,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/253232970), ODbL"
+    },
+    {
+      "id": "bad-belzig-709fe33ea4",
+      "city": "bad-belzig",
+      "label": "Parkplatz SteinTherme",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Belzig",
+      "spotCount": 8,
+      "lat": 52.1514852,
+      "lng": 12.59736415,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35016109), ODbL"
+    },
+    {
+      "id": "bad-belzig-7bdd361f6b",
+      "city": "bad-belzig",
+      "label": "Weitzgrunder Straße",
+      "street": "Weitzgrunder Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Belzig",
+      "spotCount": 2,
+      "lat": 52.14432405,
+      "lng": 12.59003435,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/374879311), ODbL"
+    },
+    {
+      "id": "bad-belzig-b4c3adb74a",
+      "city": "bad-belzig",
+      "label": "Weitzgrunder Straße 5",
+      "street": "Weitzgrunder Straße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Belzig",
+      "spotCount": 1,
+      "lat": 52.14445905000001,
+      "lng": 12.590137600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/374879312), ODbL"
+    }
+  ]
+}

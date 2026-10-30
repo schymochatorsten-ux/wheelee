@@ -12,25 +12,10 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "hennigsdorf-921b733ca0",
-      "city": "hennigsdorf",
-      "label": "Behindertenparkplatz Hennigsdorf",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Hennigsdorf",
-      "spotCount": 2,
-      "lat": 52.63826085,
-      "lng": 13.206563000000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/9875092), ODbL"
-    },
-    {
       "id": "hennigsdorf-d294f70167",
       "city": "hennigsdorf",
-      "label": "Behindertenparkplatz Hennigsdorf",
-      "street": null,
+      "label": "Am Alten Strom",
+      "street": "Am Alten Strom",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -42,25 +27,10 @@
       "source": "OpenStreetMap (way/186572285), ODbL"
     },
     {
-      "id": "hennigsdorf-07f256fa2a",
-      "city": "hennigsdorf",
-      "label": "Behindertenparkplatz Hennigsdorf",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Hennigsdorf",
-      "spotCount": 1,
-      "lat": 52.637360650000005,
-      "lng": 13.2138606,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/218007198), ODbL"
-    },
-    {
       "id": "hennigsdorf-b2f63f0def",
       "city": "hennigsdorf",
-      "label": "Behindertenparkplatz Hennigsdorf",
-      "street": null,
+      "label": "Am Bahndamm",
+      "street": "Am Bahndamm",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -70,21 +40,6 @@
       "lng": 13.20581095,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/294262958), ODbL"
-    },
-    {
-      "id": "hennigsdorf-a38c441274",
-      "city": "hennigsdorf",
-      "label": "Behindertenparkplatz Hennigsdorf",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Hennigsdorf",
-      "spotCount": 1,
-      "lat": 52.60924545,
-      "lng": 13.2006823,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/459994096), ODbL"
     },
     {
       "id": "hennigsdorf-5958fa9bc5",
@@ -115,6 +70,51 @@
       "lng": 13.2051321,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/639610201), ODbL"
+    },
+    {
+      "id": "hennigsdorf-921b733ca0",
+      "city": "hennigsdorf",
+      "label": "Rathausplatz",
+      "street": "Rathausplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hennigsdorf",
+      "spotCount": 2,
+      "lat": 52.63826085,
+      "lng": 13.206563000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/9875092), ODbL"
+    },
+    {
+      "id": "hennigsdorf-07f256fa2a",
+      "city": "hennigsdorf",
+      "label": "Ruppiner Straße",
+      "street": "Ruppiner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hennigsdorf",
+      "spotCount": 1,
+      "lat": 52.637360650000005,
+      "lng": 13.2138606,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/218007198), ODbL"
+    },
+    {
+      "id": "hennigsdorf-a38c441274",
+      "city": "hennigsdorf",
+      "label": "Zur Baumschule",
+      "street": "Zur Baumschule",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hennigsdorf",
+      "spotCount": 1,
+      "lat": 52.60924545,
+      "lng": 13.2006823,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/459994096), ODbL"
     }
   ]
 }

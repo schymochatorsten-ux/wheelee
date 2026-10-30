@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "lengede",
+    "name": "Lengede",
+    "center": {
+      "lat": 52.20466655,
+      "lng": 10.30757165
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lengede-c2884dcc3b",
+      "city": "lengede",
+      "label": "Taubentalsweg 1",
+      "street": "Taubentalsweg",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lengede",
+      "spotCount": 2,
+      "lat": 52.2045143,
+      "lng": 10.30757165,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/301822369), ODbL"
+    },
+    {
+      "id": "lengede-c0f30d2323",
+      "city": "lengede",
+      "label": "Woltwiescher Weg",
+      "street": "Woltwiescher Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lengede",
+      "spotCount": 1,
+      "lat": 52.20466655,
+      "lng": 10.3059474,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/87808482), ODbL"
+    }
+  ]
+}

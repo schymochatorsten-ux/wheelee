@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "burbach",
+    "name": "Burbach",
+    "center": {
+      "lat": 50.73506810000001,
+      "lng": 8.0751952
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "burbach-46fb3395c2",
+      "city": "burbach",
+      "label": "Eicher Weg 4",
+      "street": "Eicher Weg",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burbach",
+      "spotCount": 2,
+      "lat": 50.74921165000001,
+      "lng": 8.07463925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1557286831), ODbL"
+    },
+    {
+      "id": "burbach-4c5eddcd9e",
+      "city": "burbach",
+      "label": "Flughafenstraße 2c",
+      "street": "Flughafenstraße",
+      "houseNumber": "2c",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burbach",
+      "spotCount": 1,
+      "lat": 50.707183650000005,
+      "lng": 8.0751952,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/73901535), ODbL"
+    },
+    {
+      "id": "burbach-4bdad4ae3d",
+      "city": "burbach",
+      "label": "Zum Großen Stein 18",
+      "street": "Zum Großen Stein",
+      "houseNumber": "18",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burbach",
+      "spotCount": 2,
+      "lat": 50.73506810000001,
+      "lng": 8.136801000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1209066008), ODbL"
+    }
+  ]
+}

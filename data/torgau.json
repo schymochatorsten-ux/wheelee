@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "torgau",
+    "name": "Torgau",
+    "center": {
+      "lat": 51.5608711,
+      "lng": 13.00322135
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "torgau-e3a9708b8c",
+      "city": "torgau",
+      "label": "P1 - Straße der Jugend",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Torgau",
+      "spotCount": 1,
+      "lat": 51.55508985,
+      "lng": 13.001804700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/22795259), ODbL"
+    },
+    {
+      "id": "torgau-bafb7e22c8",
+      "city": "torgau",
+      "label": "P5 - Elbstraße",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Torgau",
+      "spotCount": 1,
+      "lat": 51.56087425,
+      "lng": 13.0067692,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/18276306), ODbL"
+    },
+    {
+      "id": "torgau-8824e4889d",
+      "city": "torgau",
+      "label": "P6 - Rosa-Luxemburg-Platz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Torgau",
+      "spotCount": 1,
+      "lat": 51.5608711,
+      "lng": 13.00322135,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/4487035), ODbL"
+    },
+    {
+      "id": "torgau-1f5a4aa857",
+      "city": "torgau",
+      "label": "Zum Großen Teich",
+      "street": "Zum Großen Teich",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Torgau",
+      "spotCount": 1,
+      "lat": 51.55223705,
+      "lng": 12.974912100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29292738), ODbL"
+    }
+  ]
+}

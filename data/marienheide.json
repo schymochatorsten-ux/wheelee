@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "marienheide",
+    "name": "Marienheide",
+    "center": {
+      "lat": 51.080384050000006,
+      "lng": 7.53583255
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "marienheide-046dac3eeb",
+      "city": "marienheide",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Marienheide",
+      "spotCount": 3,
+      "lat": 51.0805359,
+      "lng": 7.530790100000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10555194910), ODbL"
+    },
+    {
+      "id": "marienheide-fbf72246af",
+      "city": "marienheide",
+      "label": "Eberg",
+      "street": "Eberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Marienheide",
+      "spotCount": 2,
+      "lat": 51.08029735000001,
+      "lng": 7.5555308000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1435276562), ODbL"
+    },
+    {
+      "id": "marienheide-123f1930db",
+      "city": "marienheide",
+      "label": "Gervershagener Straße 25",
+      "street": "Gervershagener Straße",
+      "houseNumber": "25",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Marienheide",
+      "spotCount": 1,
+      "lat": 51.07265095,
+      "lng": 7.57800735,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1553207034), ODbL"
+    },
+    {
+      "id": "marienheide-ebb2edfa73",
+      "city": "marienheide",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Marienheide",
+      "spotCount": 1,
+      "lat": 51.080384050000006,
+      "lng": 7.53583255,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1553577346), ODbL"
+    },
+    {
+      "id": "marienheide-9203fedb81",
+      "city": "marienheide",
+      "label": "Klosterstraße",
+      "street": "Klosterstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Marienheide",
+      "spotCount": 1,
+      "lat": 51.086746500000004,
+      "lng": 7.534067650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1568531455), ODbL"
+    }
+  ]
+}

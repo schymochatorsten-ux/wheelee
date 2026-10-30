@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "niederzier",
+    "name": "Niederzier",
+    "center": {
+      "lat": 50.85215495,
+      "lng": 6.453480750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "niederzier-b21ca00081",
+      "city": "niederzier",
+      "label": "Schwarzer Weg",
+      "street": "Schwarzer Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Niederzier",
+      "spotCount": 1,
+      "lat": 50.85215495,
+      "lng": 6.453480750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1374644943), ODbL"
+    }
+  ]
+}

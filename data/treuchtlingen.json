@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "treuchtlingen",
+    "name": "Treuchtlingen",
+    "center": {
+      "lat": 48.9573769,
+      "lng": 10.908930300000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "treuchtlingen-988dff4cce",
+      "city": "treuchtlingen",
+      "label": "Bahnhofstraße 36",
+      "street": "Bahnhofstraße",
+      "houseNumber": "36",
+      "note": null,
+      "timeRestriction": "24/7; Fr 11:00-19:00 closed \"Wochenmarkt\"",
+      "district": "Treuchtlingen",
+      "spotCount": 1,
+      "lat": 48.9573769,
+      "lng": 10.908930300000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10607159282), ODbL"
+    }
+  ]
+}

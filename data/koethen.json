@@ -14,8 +14,8 @@
     {
       "id": "koethen-d8e6af38e5",
       "city": "koethen",
-      "label": "Behindertenparkplatz Köthen (Anhalt)",
-      "street": null,
+      "label": "Große Badergasse",
+      "street": "Große Badergasse",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
       "timeRestriction": null,

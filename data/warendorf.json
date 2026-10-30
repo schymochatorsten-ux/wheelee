@@ -12,40 +12,25 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "warendorf-81f43521de",
+      "id": "warendorf-996d515882",
       "city": "warendorf",
-      "label": "Behindertenparkplatz Warendorf",
-      "street": null,
+      "label": "Emspromenade",
+      "street": "Emspromenade",
       "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "note": null,
       "timeRestriction": null,
       "district": "Warendorf",
       "spotCount": 1,
-      "lat": 51.95428115,
-      "lng": 7.971576000000001,
+      "lat": 51.95442165,
+      "lng": 7.9867252,
       "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/25883250), ODbL"
-    },
-    {
-      "id": "warendorf-9783058e9b",
-      "city": "warendorf",
-      "label": "Behindertenparkplatz Warendorf",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Warendorf",
-      "spotCount": 2,
-      "lat": 51.95784745,
-      "lng": 8.0091351,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/784052375), ODbL"
+      "source": "OpenStreetMap (way/1182951446), ODbL"
     },
     {
       "id": "warendorf-1d5ca02608",
       "city": "warendorf",
-      "label": "Behindertenparkplatz Warendorf",
-      "street": null,
+      "label": "Freiherr-von-Langen-Straße",
+      "street": "Freiherr-von-Langen-Straße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -57,34 +42,19 @@
       "source": "OpenStreetMap (way/912630967), ODbL"
     },
     {
-      "id": "warendorf-c8e3f1e2f5",
+      "id": "warendorf-81f43521de",
       "city": "warendorf",
-      "label": "Behindertenparkplatz Warendorf",
-      "street": null,
+      "label": "Katzheide",
+      "street": "Katzheide",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Warendorf",
       "spotCount": 1,
-      "lat": 51.922708400000005,
-      "lng": 7.96233825,
+      "lat": 51.95428115,
+      "lng": 7.971576000000001,
       "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1165613270), ODbL"
-    },
-    {
-      "id": "warendorf-996d515882",
-      "city": "warendorf",
-      "label": "Behindertenparkplatz Warendorf",
-      "street": null,
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Warendorf",
-      "spotCount": 1,
-      "lat": 51.95442165,
-      "lng": 7.9867252,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1182951446), ODbL"
+      "source": "OpenStreetMap (way/25883250), ODbL"
     },
     {
       "id": "warendorf-5b1e035e48",
@@ -115,6 +85,36 @@
       "lng": 7.967217100000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/932107362), ODbL"
+    },
+    {
+      "id": "warendorf-9783058e9b",
+      "city": "warendorf",
+      "label": "Sassenberger Straße",
+      "street": "Sassenberger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Warendorf",
+      "spotCount": 2,
+      "lat": 51.95784745,
+      "lng": 8.0091351,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/784052375), ODbL"
+    },
+    {
+      "id": "warendorf-c8e3f1e2f5",
+      "city": "warendorf",
+      "label": "Westernfelder Straße 29",
+      "street": "Westernfelder Straße",
+      "houseNumber": "29",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Warendorf",
+      "spotCount": 1,
+      "lat": 51.922708400000005,
+      "lng": 7.96233825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1165613270), ODbL"
     }
   ]
 }

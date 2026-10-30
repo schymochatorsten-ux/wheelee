@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "kleinmachnow",
+    "name": "Kleinmachnow",
+    "center": {
+      "lat": 52.40370540000001,
+      "lng": 13.2194073
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kleinmachnow-5094b61cad",
+      "city": "kleinmachnow",
+      "label": "Adolf-Grimme-Ring",
+      "street": "Adolf-Grimme-Ring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kleinmachnow",
+      "spotCount": 6,
+      "lat": 52.40370540000001,
+      "lng": 13.2194073,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/69978507), ODbL"
+    },
+    {
+      "id": "kleinmachnow-0066ccb94a",
+      "city": "kleinmachnow",
+      "label": "Adolf-Grimme-Ring",
+      "street": "Adolf-Grimme-Ring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kleinmachnow",
+      "spotCount": 5,
+      "lat": 52.4035717,
+      "lng": 13.221077650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/108310244), ODbL"
+    },
+    {
+      "id": "kleinmachnow-23eec6119c",
+      "city": "kleinmachnow",
+      "label": "Allee am Forsthaus",
+      "street": "Allee am Forsthaus",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kleinmachnow",
+      "spotCount": 1,
+      "lat": 52.3954309,
+      "lng": 13.212299100000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13226689650), ODbL"
+    },
+    {
+      "id": "kleinmachnow-783768ca8a",
+      "city": "kleinmachnow",
+      "label": "Förster-Funke-Allee 103",
+      "street": "Förster-Funke-Allee",
+      "houseNumber": "103",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kleinmachnow",
+      "spotCount": 1,
+      "lat": 52.40481905,
+      "lng": 13.21832925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1418240087), ODbL"
+    },
+    {
+      "id": "kleinmachnow-ce883ceacf",
+      "city": "kleinmachnow",
+      "label": "Rathausmarkt",
+      "street": "Rathausmarkt",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kleinmachnow",
+      "spotCount": 1,
+      "lat": 52.4040249,
+      "lng": 13.2196548,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13141421802), ODbL"
+    },
+    {
+      "id": "kleinmachnow-12f4f328ef",
+      "city": "kleinmachnow",
+      "label": "Ring am Feld 4",
+      "street": "Ring am Feld",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kleinmachnow",
+      "spotCount": 1,
+      "lat": 52.404863750000004,
+      "lng": 13.21848695,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/294142530), ODbL"
+    },
+    {
+      "id": "kleinmachnow-dd1e0d7126",
+      "city": "kleinmachnow",
+      "label": "Schopfheimer Allee",
+      "street": "Schopfheimer Allee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kleinmachnow",
+      "spotCount": 2,
+      "lat": 52.40173075,
+      "lng": 13.221795850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1416145676), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "abensberg",
+    "name": "Abensberg",
+    "center": {
+      "lat": 48.81912765,
+      "lng": 11.84775845
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "abensberg-e5a939f1fe",
+      "city": "abensberg",
+      "label": "Bahnhofstraße 25",
+      "street": "Bahnhofstraße",
+      "houseNumber": "25",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Abensberg",
+      "spotCount": 1,
+      "lat": 48.81912765,
+      "lng": 11.8461812,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1375544655), ODbL"
+    },
+    {
+      "id": "abensberg-6fba11543b",
+      "city": "abensberg",
+      "label": "Mahlergasse",
+      "street": "Mahlergasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Abensberg",
+      "spotCount": 1,
+      "lat": 48.81620275,
+      "lng": 11.84775845,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31622936), ODbL"
+    }
+  ]
+}

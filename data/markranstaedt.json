@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "markranstaedt",
+    "name": "Markranstädt",
+    "center": {
+      "lat": 51.30221935,
+      "lng": 12.22088585
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "markranstaedt-0cdee24583",
+      "city": "markranstaedt",
+      "label": "Karlstraße",
+      "street": "Karlstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Markranstädt",
+      "spotCount": 8,
+      "lat": 51.3064145,
+      "lng": 12.2380417,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/473009163), ODbL"
+    },
+    {
+      "id": "markranstaedt-f7fc3cead2",
+      "city": "markranstaedt",
+      "label": "Schulstraße 7",
+      "street": "Schulstraße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Markranstädt",
+      "spotCount": 1,
+      "lat": 51.30221935,
+      "lng": 12.220505750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/85852464), ODbL"
+    },
+    {
+      "id": "markranstaedt-b840e0bc20",
+      "city": "markranstaedt",
+      "label": "Schulstraße 9",
+      "street": "Schulstraße",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Markranstädt",
+      "spotCount": 1,
+      "lat": 51.30203815,
+      "lng": 12.22088585,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/543582656), ODbL"
+    }
+  ]
+}

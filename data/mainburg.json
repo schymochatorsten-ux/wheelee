@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "mainburg",
+    "name": "Mainburg",
+    "center": {
+      "lat": 48.63985185,
+      "lng": 11.78007505
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mainburg-0692933407",
+      "city": "mainburg",
+      "label": "Walther-Schwarz-Straße",
+      "street": "Walther-Schwarz-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mainburg",
+      "spotCount": 3,
+      "lat": 48.63985185,
+      "lng": 11.78007505,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/228147583), ODbL"
+    }
+  ]
+}

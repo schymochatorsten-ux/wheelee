@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "bad-wildbad",
+    "name": "Bad Wildbad",
+    "center": {
+      "lat": 48.75519675,
+      "lng": 8.551515000000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-wildbad-da7b0416d2",
+      "city": "bad-wildbad",
+      "label": "Auf dem Sommerberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bad Wildbad",
+      "spotCount": 2,
+      "lat": 48.75129750000001,
+      "lng": 8.5371518,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26995670), ODbL"
+    },
+    {
+      "id": "bad-wildbad-2e97dddc3f",
+      "city": "bad-wildbad",
+      "label": "Bahnhofstraße 7",
+      "street": "Bahnhofstraße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Bad Wildbad",
+      "spotCount": 3,
+      "lat": 48.7761616,
+      "lng": 8.5710472,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/210866421), ODbL"
+    },
+    {
+      "id": "bad-wildbad-2d2af0de5b",
+      "city": "bad-wildbad",
+      "label": "Bahnhofstraße 7",
+      "street": "Bahnhofstraße",
+      "houseNumber": "7",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Wildbad",
+      "spotCount": 3,
+      "lat": 48.776237,
+      "lng": 8.57106855,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1388770444), ODbL"
+    },
+    {
+      "id": "bad-wildbad-59e1b5bdcd",
+      "city": "bad-wildbad",
+      "label": "König-Karl-Straße 101",
+      "street": "König-Karl-Straße",
+      "houseNumber": "101",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Bad Wildbad",
+      "spotCount": 1,
+      "lat": 48.75528915,
+      "lng": 8.551515000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1388990770), ODbL"
+    },
+    {
+      "id": "bad-wildbad-e90515f691",
+      "city": "bad-wildbad",
+      "label": "König-Karl-Straße 101/1",
+      "street": "König-Karl-Straße",
+      "houseNumber": "101/1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Wildbad",
+      "spotCount": 1,
+      "lat": 48.75519675,
+      "lng": 8.5515303,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1388990771), ODbL"
+    },
+    {
+      "id": "bad-wildbad-6518533dfe",
+      "city": "bad-wildbad",
+      "label": "Peter-Liebig-Weg",
+      "street": "Peter-Liebig-Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Wildbad",
+      "spotCount": 4,
+      "lat": 48.75036935,
+      "lng": 8.538034750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/344031204), ODbL"
+    },
+    {
+      "id": "bad-wildbad-3ea4e4ce79",
+      "city": "bad-wildbad",
+      "label": "Wilhelmstraße 50",
+      "street": "Wilhelmstraße",
+      "houseNumber": "50",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bad Wildbad",
+      "spotCount": 2,
+      "lat": 48.75269205,
+      "lng": 8.550172400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/88117818), ODbL"
+    }
+  ]
+}

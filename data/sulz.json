@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "sulz",
+    "name": "Sulz am Neckar",
+    "center": {
+      "lat": 48.36622495,
+      "lng": 8.6367355
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sulz-66b8934ef4",
+      "city": "sulz",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sulz am Neckar",
+      "spotCount": 1,
+      "lat": 48.36590150000001,
+      "lng": 8.6367355,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/372528820), ODbL"
+    },
+    {
+      "id": "sulz-aacd8c7345",
+      "city": "sulz",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sulz am Neckar",
+      "spotCount": 3,
+      "lat": 48.36622495,
+      "lng": 8.6365917,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/879564746), ODbL"
+    },
+    {
+      "id": "sulz-0e614d6747",
+      "city": "sulz",
+      "label": "Bahnhofstraße 68",
+      "street": "Bahnhofstraße",
+      "houseNumber": "68",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sulz am Neckar",
+      "spotCount": 1,
+      "lat": 48.3690814,
+      "lng": 8.641465750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/113992287), ODbL"
+    },
+    {
+      "id": "sulz-8a23f4e819",
+      "city": "sulz",
+      "label": "Neckarwiesen",
+      "street": "Neckarwiesen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sulz am Neckar",
+      "spotCount": 1,
+      "lat": 48.367932,
+      "lng": 8.64053135,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/113992289), ODbL"
+    },
+    {
+      "id": "sulz-817f21b732",
+      "city": "sulz",
+      "label": "Stuttgarter Straße",
+      "street": "Stuttgarter Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sulz am Neckar",
+      "spotCount": 1,
+      "lat": 48.36573455,
+      "lng": 8.63429445,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/113992288), ODbL"
+    },
+    {
+      "id": "sulz-f569237186",
+      "city": "sulz",
+      "label": "Zwinger",
+      "street": "Zwinger",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sulz am Neckar",
+      "spotCount": 1,
+      "lat": 48.3630866,
+      "lng": 8.631650050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1155251286), ODbL"
+    }
+  ]
+}

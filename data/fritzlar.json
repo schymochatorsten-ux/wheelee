@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "fritzlar",
+    "name": "Fritzlar",
+    "center": {
+      "lat": 51.13347495000001,
+      "lng": 9.2742921
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "fritzlar-adc457114c",
+      "city": "fritzlar",
+      "label": "Am Grachenturm",
+      "street": "Am Grachenturm",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Fritzlar",
+      "spotCount": 1,
+      "lat": 51.169664350000005,
+      "lng": 9.22808,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/435054493), ODbL"
+    },
+    {
+      "id": "fritzlar-512e1e084c",
+      "city": "fritzlar",
+      "label": "Erfurter Ring",
+      "street": "Erfurter Ring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Fritzlar",
+      "spotCount": 1,
+      "lat": 51.120594700000005,
+      "lng": 9.278341900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/204718843), ODbL"
+    },
+    {
+      "id": "fritzlar-5e69b15cec",
+      "city": "fritzlar",
+      "label": "Kasseler Straße 24",
+      "street": "Kasseler Straße",
+      "houseNumber": "24",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Fritzlar",
+      "spotCount": 4,
+      "lat": 51.13347495000001,
+      "lng": 9.2742921,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1299270861), ODbL"
+    },
+    {
+      "id": "fritzlar-029ca1050b",
+      "city": "fritzlar",
+      "label": "Pipprichsweg",
+      "street": "Pipprichsweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Fritzlar",
+      "spotCount": 1,
+      "lat": 51.12503875,
+      "lng": 9.2666132,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1451324621), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "langenzenn",
+    "name": "Langenzenn",
+    "center": {
+      "lat": 49.5030692,
+      "lng": 10.7825243
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "langenzenn-ecd7663be3",
+      "city": "langenzenn",
+      "label": "Äußere Windsheimer Straße 2a",
+      "street": "Äußere Windsheimer Straße",
+      "houseNumber": "2a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Langenzenn",
+      "spotCount": 1,
+      "lat": 49.49208935,
+      "lng": 10.7565731,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1531863585), ODbL"
+    },
+    {
+      "id": "langenzenn-51b1ec607b",
+      "city": "langenzenn",
+      "label": "Hardgraben",
+      "street": "Hardgraben",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Langenzenn",
+      "spotCount": 1,
+      "lat": 49.5030692,
+      "lng": 10.7825243,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1531871592), ODbL"
+    }
+  ]
+}

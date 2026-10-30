@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "bad-pyrmont",
+    "name": "Bad Pyrmont",
+    "center": {
+      "lat": 51.9899454,
+      "lng": 9.2551625
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-pyrmont-f64a5598b6",
+      "city": "bad-pyrmont",
+      "label": "Altenaustraße 6",
+      "street": "Altenaustraße",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Pyrmont",
+      "spotCount": 2,
+      "lat": 51.984632000000005,
+      "lng": 9.2551625,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6245061886), ODbL"
+    },
+    {
+      "id": "bad-pyrmont-4a08a95069",
+      "city": "bad-pyrmont",
+      "label": "Bathildisstraße",
+      "street": "Bathildisstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bad Pyrmont",
+      "spotCount": 4,
+      "lat": 51.98430905000001,
+      "lng": 9.256998450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/829822949), ODbL"
+    },
+    {
+      "id": "bad-pyrmont-67ee9fbb25",
+      "city": "bad-pyrmont",
+      "label": "Bathildisstraße 3",
+      "street": "Bathildisstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bad Pyrmont",
+      "spotCount": 4,
+      "lat": 51.984400550000004,
+      "lng": 9.25623435,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/829822950), ODbL"
+    },
+    {
+      "id": "bad-pyrmont-37b354d73d",
+      "city": "bad-pyrmont",
+      "label": "Grießemer Straße",
+      "street": "Grießemer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Pyrmont",
+      "spotCount": 2,
+      "lat": 51.98997405,
+      "lng": 9.234571850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31104874), ODbL"
+    },
+    {
+      "id": "bad-pyrmont-54aa33305a",
+      "city": "bad-pyrmont",
+      "label": "Grießemer Straße",
+      "street": "Grießemer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Pyrmont",
+      "spotCount": 1,
+      "lat": 51.9899933,
+      "lng": 9.234418900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/683301808), ODbL"
+    },
+    {
+      "id": "bad-pyrmont-668840bb5e",
+      "city": "bad-pyrmont",
+      "label": "Grießemer Straße",
+      "street": "Grießemer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Pyrmont",
+      "spotCount": 1,
+      "lat": 51.9899454,
+      "lng": 9.2344229,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/683301809), ODbL"
+    }
+  ]
+}

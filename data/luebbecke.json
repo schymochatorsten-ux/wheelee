@@ -12,25 +12,25 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "luebbecke-4e07a26363",
+      "id": "luebbecke-87d802e1be",
       "city": "luebbecke",
-      "label": "Behindertenparkplatz Lübbecke",
-      "street": null,
+      "label": "Jockweg",
+      "street": "Jockweg",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Lübbecke",
-      "spotCount": 1,
-      "lat": 52.2963827,
-      "lng": 8.6030421,
+      "spotCount": 2,
+      "lat": 52.31750035,
+      "lng": 8.6221604,
       "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/176944070), ODbL"
+      "source": "OpenStreetMap (way/908491533), ODbL"
     },
     {
       "id": "luebbecke-741dce592c",
       "city": "luebbecke",
-      "label": "Behindertenparkplatz Lübbecke",
-      "street": null,
+      "label": "Niederwall",
+      "street": "Niederwall",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -42,19 +42,19 @@
       "source": "OpenStreetMap (way/859715825), ODbL"
     },
     {
-      "id": "luebbecke-87d802e1be",
+      "id": "luebbecke-4e07a26363",
       "city": "luebbecke",
-      "label": "Behindertenparkplatz Lübbecke",
-      "street": null,
+      "label": "Virchowstraße",
+      "street": "Virchowstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Lübbecke",
-      "spotCount": 2,
-      "lat": 52.31750035,
-      "lng": 8.6221604,
+      "spotCount": 1,
+      "lat": 52.2963827,
+      "lng": 8.6030421,
       "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/908491533), ODbL"
+      "source": "OpenStreetMap (way/176944070), ODbL"
     }
   ]
 }

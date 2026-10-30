@@ -29,8 +29,8 @@
     {
       "id": "sonneberg-ef822da85e",
       "city": "sonneberg",
-      "label": "Behindertenparkplatz Sonneberg",
-      "street": null,
+      "label": "Köppelsdorfer Straße",
+      "street": "Köppelsdorfer Straße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
       "timeRestriction": null,

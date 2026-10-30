@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "donzdorf",
+    "name": "Donzdorf",
+    "center": {
+      "lat": 48.68494435,
+      "lng": 9.80276545
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "donzdorf-84a7faf213",
+      "city": "donzdorf",
+      "label": "Poststraße",
+      "street": "Poststraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Donzdorf",
+      "spotCount": 1,
+      "lat": 48.68494435,
+      "lng": 9.80276545,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/198308299), ODbL"
+    }
+  ]
+}

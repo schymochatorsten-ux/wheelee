@@ -14,9 +14,9 @@
     {
       "id": "senftenberg-5f7c2fad91",
       "city": "senftenberg",
-      "label": "Behindertenparkplatz Senftenberg",
-      "street": null,
-      "houseNumber": null,
+      "label": "Am See 3",
+      "street": "Am See",
+      "houseNumber": "3",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
       "timeRestriction": null,
       "district": "Senftenberg",
@@ -27,25 +27,10 @@
       "source": "OpenStreetMap (way/82172313), ODbL"
     },
     {
-      "id": "senftenberg-1f118f39d4",
-      "city": "senftenberg",
-      "label": "Behindertenparkplatz Senftenberg",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Senftenberg",
-      "spotCount": 1,
-      "lat": 51.5129597,
-      "lng": 13.986452850000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/199545938), ODbL"
-    },
-    {
       "id": "senftenberg-e5a5b9715c",
       "city": "senftenberg",
-      "label": "Behindertenparkplatz Senftenberg",
-      "street": null,
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -57,25 +42,10 @@
       "source": "OpenStreetMap (way/199806193), ODbL"
     },
     {
-      "id": "senftenberg-4c4c026008",
-      "city": "senftenberg",
-      "label": "Behindertenparkplatz Senftenberg",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
-      "timeRestriction": null,
-      "district": "Senftenberg",
-      "spotCount": 1,
-      "lat": 51.54540355,
-      "lng": 14.055424250000002,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1225036987), ODbL"
-    },
-    {
       "id": "senftenberg-a4477c0cd5",
       "city": "senftenberg",
-      "label": "Behindertenparkplatz Senftenberg",
-      "street": null,
+      "label": "Bergbaustraße",
+      "street": "Bergbaustraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -85,6 +55,36 @@
       "lng": 14.0027081,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1497778114), ODbL"
+    },
+    {
+      "id": "senftenberg-1f118f39d4",
+      "city": "senftenberg",
+      "label": "Briesker Straße",
+      "street": "Briesker Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Senftenberg",
+      "spotCount": 1,
+      "lat": 51.5129597,
+      "lng": 13.986452850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/199545938), ODbL"
+    },
+    {
+      "id": "senftenberg-4c4c026008",
+      "city": "senftenberg",
+      "label": "Eigenheimweg",
+      "street": "Eigenheimweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Senftenberg",
+      "spotCount": 1,
+      "lat": 51.54540355,
+      "lng": 14.055424250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1225036987), ODbL"
     }
   ]
 }

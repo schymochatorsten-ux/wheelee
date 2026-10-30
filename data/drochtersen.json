@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "drochtersen",
+    "name": "Drochtersen",
+    "center": {
+      "lat": 53.75247445,
+      "lng": 9.389614550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "drochtersen-01cf534c10",
+      "city": "drochtersen",
+      "label": "Elbinsel Krautsand",
+      "street": "Elbinsel Krautsand",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Drochtersen",
+      "spotCount": 3,
+      "lat": 53.75247445,
+      "lng": 9.389614550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/853865749), ODbL"
+    }
+  ]
+}

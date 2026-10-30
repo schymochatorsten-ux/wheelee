@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "muensingen",
+    "name": "Münsingen",
+    "center": {
+      "lat": 48.4098661,
+      "lng": 9.5057796
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "muensingen-027caf60ea",
+      "city": "muensingen",
+      "label": "Hauptstraße 102",
+      "street": "Hauptstraße",
+      "houseNumber": "102",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Münsingen",
+      "spotCount": 1,
+      "lat": 48.4098661,
+      "lng": 9.5057796,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11992085563), ODbL"
+    },
+    {
+      "id": "muensingen-d701ebae7a",
+      "city": "muensingen",
+      "label": "Hauptstraße 102",
+      "street": "Hauptstraße",
+      "houseNumber": "102",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Münsingen",
+      "spotCount": 1,
+      "lat": 48.409895000000006,
+      "lng": 9.5057759,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11992100543), ODbL"
+    },
+    {
+      "id": "muensingen-a630ab7efe",
+      "city": "muensingen",
+      "label": "Hauptstraße 102",
+      "street": "Hauptstraße",
+      "houseNumber": "102",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Münsingen",
+      "spotCount": 1,
+      "lat": 48.4098297,
+      "lng": 9.5057836,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11992114165), ODbL"
+    },
+    {
+      "id": "muensingen-60a0d485e0",
+      "city": "muensingen",
+      "label": "Hauptstraße 102",
+      "street": "Hauptstraße",
+      "houseNumber": "102",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Münsingen",
+      "spotCount": 1,
+      "lat": 48.4098478,
+      "lng": 9.505883,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11992120472), ODbL"
+    },
+    {
+      "id": "muensingen-fdaacde616",
+      "city": "muensingen",
+      "label": "Marktplatz 10",
+      "street": "Marktplatz",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Münsingen",
+      "spotCount": 1,
+      "lat": 48.41267225,
+      "lng": 9.49443015,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/491967929), ODbL"
+    }
+  ]
+}

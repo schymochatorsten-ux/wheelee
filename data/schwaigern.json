@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "schwaigern",
+    "name": "Schwaigern",
+    "center": {
+      "lat": 49.138654,
+      "lng": 9.0577881
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schwaigern-3c1aa11f7d",
+      "city": "schwaigern",
+      "label": "Heilbronner Straße 30",
+      "street": "Heilbronner Straße",
+      "houseNumber": "30",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwaigern",
+      "spotCount": 3,
+      "lat": 49.1380465,
+      "lng": 9.06489895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1037244516), ODbL"
+    },
+    {
+      "id": "schwaigern-ae9cbd1605",
+      "city": "schwaigern",
+      "label": "Mozartstraße",
+      "street": "Mozartstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Schwaigern",
+      "spotCount": 2,
+      "lat": 49.13860645,
+      "lng": 9.05771455,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/152971703), ODbL"
+    },
+    {
+      "id": "schwaigern-a9eee18774",
+      "city": "schwaigern",
+      "label": "Mozartstraße",
+      "street": "Mozartstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Schwaigern",
+      "spotCount": 1,
+      "lat": 49.138666150000006,
+      "lng": 9.0577881,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1257614447), ODbL"
+    },
+    {
+      "id": "schwaigern-c722372e64",
+      "city": "schwaigern",
+      "label": "Mozartstraße",
+      "street": "Mozartstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Schwaigern",
+      "spotCount": 1,
+      "lat": 49.138654,
+      "lng": 9.057633150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1257614448), ODbL"
+    }
+  ]
+}

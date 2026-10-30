@@ -12,26 +12,11 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "apolda-a6836300a6",
-      "city": "apolda",
-      "label": "Behindertenparkplatz Apolda",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Apolda",
-      "spotCount": 2,
-      "lat": 51.031277700000004,
-      "lng": 11.51252465,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/179086373), ODbL"
-    },
-    {
       "id": "apolda-af9643455a",
       "city": "apolda",
-      "label": "Behindertenparkplatz Apolda",
-      "street": null,
-      "houseNumber": null,
+      "label": "Darrstraße 2",
+      "street": "Darrstraße",
+      "houseNumber": "2",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Apolda",
@@ -55,6 +40,21 @@
       "lng": 11.52475435,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/448969671), ODbL"
+    },
+    {
+      "id": "apolda-a6836300a6",
+      "city": "apolda",
+      "label": "Leutloffstraße",
+      "street": "Leutloffstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Apolda",
+      "spotCount": 2,
+      "lat": 51.031277700000004,
+      "lng": 11.51252465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/179086373), ODbL"
     }
   ]
 }

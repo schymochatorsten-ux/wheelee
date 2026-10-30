@@ -12,6 +12,21 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
+      "id": "olpe-344c988fe9",
+      "city": "olpe",
+      "label": "Alte Landstraße",
+      "street": "Alte Landstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Olpe",
+      "spotCount": 2,
+      "lat": 51.0185419,
+      "lng": 7.8266653,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1539723027), ODbL"
+    },
+    {
       "id": "olpe-18a1501e93",
       "city": "olpe",
       "label": "Altes Lyzeum - Musikschule",
@@ -25,21 +40,6 @@
       "lng": 7.842301600000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/37135678), ODbL"
-    },
-    {
-      "id": "olpe-0d5f7ab5eb",
-      "city": "olpe",
-      "label": "Behindertenparkplatz Olpe",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Olpe",
-      "spotCount": 2,
-      "lat": 51.01592645,
-      "lng": 7.853057,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/41348929), ODbL"
     },
     {
       "id": "olpe-28d5eaec39",
@@ -57,36 +57,6 @@
       "source": "OpenStreetMap (way/145426876), ODbL"
     },
     {
-      "id": "olpe-4554344942",
-      "city": "olpe",
-      "label": "Behindertenparkplatz Olpe",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Olpe",
-      "spotCount": 6,
-      "lat": 51.0721501,
-      "lng": 7.842022900000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/682346653), ODbL"
-    },
-    {
-      "id": "olpe-344c988fe9",
-      "city": "olpe",
-      "label": "Behindertenparkplatz Olpe",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Olpe",
-      "spotCount": 2,
-      "lat": 51.0185419,
-      "lng": 7.8266653,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1539723027), ODbL"
-    },
-    {
       "id": "olpe-abcce2ff23",
       "city": "olpe",
       "label": "Dornseifer-Parkplatz",
@@ -100,6 +70,21 @@
       "lng": 7.853835950000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/104900126), ODbL"
+    },
+    {
+      "id": "olpe-0d5f7ab5eb",
+      "city": "olpe",
+      "label": "Manfred-Schöne-Straße 27",
+      "street": "Manfred-Schöne-Straße",
+      "houseNumber": "27",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Olpe",
+      "spotCount": 2,
+      "lat": 51.01592645,
+      "lng": 7.853057,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/41348929), ODbL"
     },
     {
       "id": "olpe-f8392c1c71",
@@ -130,6 +115,21 @@
       "lng": 7.851892000000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/105930705), ODbL"
+    },
+    {
+      "id": "olpe-4554344942",
+      "city": "olpe",
+      "label": "Strandweg",
+      "street": "Strandweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Olpe",
+      "spotCount": 6,
+      "lat": 51.0721501,
+      "lng": 7.842022900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/682346653), ODbL"
     }
   ]
 }

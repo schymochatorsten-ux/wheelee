@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "buettelborn",
+    "name": "Büttelborn",
+    "center": {
+      "lat": 49.909190800000005,
+      "lng": 8.498786200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "buettelborn-75e845339b",
+      "city": "buettelborn",
+      "label": "Helvetiastraße 5",
+      "street": "Helvetiastraße",
+      "houseNumber": "5",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Büttelborn",
+      "spotCount": 1,
+      "lat": 49.909190800000005,
+      "lng": 8.498786200000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10110027949), ODbL"
+    }
+  ]
+}

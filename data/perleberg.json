@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "perleberg",
+    "name": "Perleberg",
+    "center": {
+      "lat": 53.07486165,
+      "lng": 11.871283900000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "perleberg-06a1d13101",
+      "city": "perleberg",
+      "label": "P1",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Perleberg",
+      "spotCount": 6,
+      "lat": 53.07486165,
+      "lng": 11.871283900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/332675212), ODbL"
+    },
+    {
+      "id": "perleberg-a4688f15b4",
+      "city": "perleberg",
+      "label": "Wilsnacker Chaussee",
+      "street": "Wilsnacker Chaussee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Perleberg",
+      "spotCount": 1,
+      "lat": 53.05982055,
+      "lng": 11.857639,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/39519713), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "dautphetal",
+    "name": "Dautphetal",
+    "center": {
+      "lat": 50.85870405,
+      "lng": 8.548400149999999
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dautphetal-8e6d35c9bf",
+      "city": "dautphetal",
+      "label": "Am Eckeberg",
+      "street": "Am Eckeberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dautphetal",
+      "spotCount": 2,
+      "lat": 50.850112100000004,
+      "lng": 8.548400149999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1377591805), ODbL"
+    },
+    {
+      "id": "dautphetal-8a4bc5ab82",
+      "city": "dautphetal",
+      "label": "Auf der Höhe",
+      "street": "Auf der Höhe",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dautphetal",
+      "spotCount": 1,
+      "lat": 50.85870405,
+      "lng": 8.548246850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/33677903), ODbL"
+    }
+  ]
+}

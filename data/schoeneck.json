@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "schoeneck",
+    "name": "Schöneck",
+    "center": {
+      "lat": 50.21641205,
+      "lng": 8.83552395
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schoeneck-966ec8b14c",
+      "city": "schoeneck",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Schöneck",
+      "spotCount": 1,
+      "lat": 50.214729000000005,
+      "lng": 8.8434168,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/724701522), ODbL"
+    },
+    {
+      "id": "schoeneck-1dd6963309",
+      "city": "schoeneck",
+      "label": "Bahnhofstraße 3",
+      "street": "Bahnhofstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Schöneck",
+      "spotCount": 1,
+      "lat": 50.21705455,
+      "lng": 8.839061350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/858871194), ODbL"
+    },
+    {
+      "id": "schoeneck-4e3bddbc8e",
+      "city": "schoeneck",
+      "label": "Riedstraße 4",
+      "street": "Riedstraße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Schöneck",
+      "spotCount": 1,
+      "lat": 50.2178697,
+      "lng": 8.833853150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/859386003), ODbL"
+    },
+    {
+      "id": "schoeneck-509243d319",
+      "city": "schoeneck",
+      "label": "Südliche Hauptstraße 19",
+      "street": "Südliche Hauptstraße",
+      "houseNumber": "19",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Schöneck",
+      "spotCount": 1,
+      "lat": 50.21641205,
+      "lng": 8.8329079,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/989382869), ODbL"
+    },
+    {
+      "id": "schoeneck-afa45970cc",
+      "city": "schoeneck",
+      "label": "Wiesenau 5",
+      "street": "Wiesenau",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Schöneck",
+      "spotCount": 2,
+      "lat": 50.21606435,
+      "lng": 8.83552395,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/677696149), ODbL"
+    }
+  ]
+}

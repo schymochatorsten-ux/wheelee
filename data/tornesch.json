@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "tornesch",
+    "name": "Tornesch",
+    "center": {
+      "lat": 53.70098900000001,
+      "lng": 9.724926150000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "tornesch-52bcd6f248",
+      "city": "tornesch",
+      "label": "Bahnhofsplatz",
+      "street": "Bahnhofsplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Tornesch",
+      "spotCount": 4,
+      "lat": 53.696566600000004,
+      "lng": 9.715527,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3664727609), ODbL"
+    },
+    {
+      "id": "tornesch-df78ec8f4d",
+      "city": "tornesch",
+      "label": "Ohlenhoff",
+      "street": "Ohlenhoff",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Tornesch",
+      "spotCount": 2,
+      "lat": 53.70098900000001,
+      "lng": 9.724926150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/92933429), ODbL"
+    }
+  ]
+}

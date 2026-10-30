@@ -14,8 +14,8 @@
     {
       "id": "haren-f1374aa49b",
       "city": "haren",
-      "label": "Behindertenparkplatz Haren (Ems)",
-      "street": null,
+      "label": "Bonifatiusweg",
+      "street": "Bonifatiusweg",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -27,25 +27,10 @@
       "source": "OpenStreetMap (node/796325327), ODbL"
     },
     {
-      "id": "haren-cbf614e3c2",
-      "city": "haren",
-      "label": "Behindertenparkplatz Haren (Ems)",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Haren (Ems)",
-      "spotCount": 1,
-      "lat": 52.77150795,
-      "lng": 7.2739979,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1499100644), ODbL"
-    },
-    {
       "id": "haren-565923e70f",
       "city": "haren",
-      "label": "Behindertenparkplatz Haren (Ems)",
-      "street": null,
+      "label": "Heinrich-Eckstein-Straße",
+      "street": "Heinrich-Eckstein-Straße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -55,6 +40,21 @@
       "lng": 7.16382125,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1535771338), ODbL"
+    },
+    {
+      "id": "haren-cbf614e3c2",
+      "city": "haren",
+      "label": "Hünteler Straße",
+      "street": "Hünteler Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Haren (Ems)",
+      "spotCount": 1,
+      "lat": 52.77150795,
+      "lng": 7.2739979,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1499100644), ODbL"
     }
   ]
 }

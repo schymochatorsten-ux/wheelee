@@ -14,8 +14,8 @@
     {
       "id": "wuelfrath-c999696ce5",
       "city": "wuelfrath",
-      "label": "Behindertenparkplatz Wülfrath",
-      "street": null,
+      "label": "Schwanenstraße",
+      "street": "Schwanenstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,

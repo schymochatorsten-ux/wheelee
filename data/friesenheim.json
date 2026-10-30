@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "friesenheim",
+    "name": "Friesenheim",
+    "center": {
+      "lat": 48.38155325,
+      "lng": 7.8627024500000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "friesenheim-54d561bda5",
+      "city": "friesenheim",
+      "label": "Am Bahnhof 7",
+      "street": "Am Bahnhof",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Friesenheim",
+      "spotCount": 1,
+      "lat": 48.38155325,
+      "lng": 7.8627024500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/431231730), ODbL"
+    }
+  ]
+}

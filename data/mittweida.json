@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "mittweida",
+    "name": "Mittweida",
+    "center": {
+      "lat": 50.987907,
+      "lng": 12.9734619
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mittweida-20896ce264",
+      "city": "mittweida",
+      "label": "Herderstraße",
+      "street": "Herderstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Mittweida",
+      "spotCount": 1,
+      "lat": 50.987907,
+      "lng": 12.9602654,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9452903579), ODbL"
+    },
+    {
+      "id": "mittweida-5756e98794",
+      "city": "mittweida",
+      "label": "Parkplatz Hainichener Straße",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mittweida",
+      "spotCount": 2,
+      "lat": 50.9827061,
+      "lng": 12.983759800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/730130722), ODbL"
+    },
+    {
+      "id": "mittweida-ee61748af1",
+      "city": "mittweida",
+      "label": "Rosa-Luxemburg-Straße 39",
+      "street": "Rosa-Luxemburg-Straße",
+      "houseNumber": "39",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Mittweida",
+      "spotCount": 1,
+      "lat": 50.99119935,
+      "lng": 12.9734619,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1413266701), ODbL"
+    }
+  ]
+}

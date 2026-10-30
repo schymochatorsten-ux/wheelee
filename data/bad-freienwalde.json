@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bad-freienwalde",
+    "name": "Bad Freienwalde (Oder)",
+    "center": {
+      "lat": 52.76848150000001,
+      "lng": 14.083702800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-freienwalde-b685e68055",
+      "city": "bad-freienwalde",
+      "label": "Mühlenstraße",
+      "street": "Mühlenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Freienwalde (Oder)",
+      "spotCount": 2,
+      "lat": 52.76848150000001,
+      "lng": 14.083702800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1021512428), ODbL"
+    }
+  ]
+}

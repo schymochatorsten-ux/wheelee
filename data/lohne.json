@@ -12,25 +12,10 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "lohne-0a4f3f66b5",
-      "city": "lohne",
-      "label": "Behindertenparkplatz Lohne (Oldenburg)",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Lohne (Oldenburg)",
-      "spotCount": 1,
-      "lat": 52.66746475000001,
-      "lng": 8.2306819,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/24878455), ODbL"
-    },
-    {
       "id": "lohne-1fc2075ea4",
       "city": "lohne",
-      "label": "Behindertenparkplatz Lohne (Oldenburg)",
-      "street": null,
+      "label": "Bergweg",
+      "street": "Bergweg",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -55,6 +40,21 @@
       "lng": 8.24204205,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/985512569), ODbL"
+    },
+    {
+      "id": "lohne-0a4f3f66b5",
+      "city": "lohne",
+      "label": "Keetstraße",
+      "street": "Keetstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lohne (Oldenburg)",
+      "spotCount": 1,
+      "lat": 52.66746475000001,
+      "lng": 8.2306819,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24878455), ODbL"
     },
     {
       "id": "lohne-4280eb3d06",

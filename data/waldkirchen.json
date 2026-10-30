@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "waldkirchen",
+    "name": "Waldkirchen",
+    "center": {
+      "lat": 48.7277733,
+      "lng": 13.60777505
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "waldkirchen-816a23ce64",
+      "city": "waldkirchen",
+      "label": "BayWa",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldkirchen",
+      "spotCount": 2,
+      "lat": 48.73918655,
+      "lng": 13.6086569,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/39576658), ODbL"
+    },
+    {
+      "id": "waldkirchen-0a53043e25",
+      "city": "waldkirchen",
+      "label": "Karoli-Badepark",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldkirchen",
+      "spotCount": 3,
+      "lat": 48.720887950000005,
+      "lng": 13.604932900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/39999475), ODbL"
+    },
+    {
+      "id": "waldkirchen-b94452492d",
+      "city": "waldkirchen",
+      "label": "Schulstraße",
+      "street": "Schulstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldkirchen",
+      "spotCount": 10,
+      "lat": 48.7277733,
+      "lng": 13.60777505,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/899973605), ODbL"
+    }
+  ]
+}

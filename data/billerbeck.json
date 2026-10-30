@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "billerbeck",
+    "name": "Billerbeck",
+    "center": {
+      "lat": 51.9767274,
+      "lng": 7.28885915
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "billerbeck-ef6079622a",
+      "city": "billerbeck",
+      "label": "Am Haulingbach",
+      "street": "Am Haulingbach",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Billerbeck",
+      "spotCount": 1,
+      "lat": 51.9767413,
+      "lng": 7.288815850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/310163657), ODbL"
+    },
+    {
+      "id": "billerbeck-fa1a10e61a",
+      "city": "billerbeck",
+      "label": "Lange Straße 31",
+      "street": "Lange Straße",
+      "houseNumber": "31",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Billerbeck",
+      "spotCount": 1,
+      "lat": 51.97639040000001,
+      "lng": 7.2894022000000005,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3164376169), ODbL"
+    },
+    {
+      "id": "billerbeck-ae894d22ca",
+      "city": "billerbeck",
+      "label": "Lilienbeck 2d",
+      "street": "Lilienbeck",
+      "houseNumber": "2d",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Billerbeck",
+      "spotCount": 1,
+      "lat": 51.9767274,
+      "lng": 7.28885915,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1411687607), ODbL"
+    }
+  ]
+}

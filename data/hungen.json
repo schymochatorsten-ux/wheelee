@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "hungen",
+    "name": "Hungen",
+    "center": {
+      "lat": 50.4776821,
+      "lng": 8.9002169
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hungen-baa2e15249",
+      "city": "hungen",
+      "label": "Am Grassee",
+      "street": "Am Grassee",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hungen",
+      "spotCount": 1,
+      "lat": 50.478341900000004,
+      "lng": 8.900157,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1386319127), ODbL"
+    },
+    {
+      "id": "hungen-12c7b2147c",
+      "city": "hungen",
+      "label": "Am Grassee",
+      "street": "Am Grassee",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hungen",
+      "spotCount": 1,
+      "lat": 50.4783547,
+      "lng": 8.9002169,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1386319128), ODbL"
+    },
+    {
+      "id": "hungen-aea15f0c33",
+      "city": "hungen",
+      "label": "Am Grassee",
+      "street": "Am Grassee",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hungen",
+      "spotCount": 1,
+      "lat": 50.4783669,
+      "lng": 8.900277250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1386319129), ODbL"
+    },
+    {
+      "id": "hungen-218774c468",
+      "city": "hungen",
+      "label": "Marktplatz",
+      "street": "Marktplatz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hungen",
+      "spotCount": 1,
+      "lat": 50.47538105,
+      "lng": 8.9009024,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1387097407), ODbL"
+    },
+    {
+      "id": "hungen-abbff98ee7",
+      "city": "hungen",
+      "label": "Raiffeisenstraße",
+      "street": "Raiffeisenstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hungen",
+      "spotCount": 1,
+      "lat": 50.47765460000001,
+      "lng": 8.892904900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1387097427), ODbL"
+    },
+    {
+      "id": "hungen-e69f73f295",
+      "city": "hungen",
+      "label": "Raiffeisenstraße",
+      "street": "Raiffeisenstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hungen",
+      "spotCount": 1,
+      "lat": 50.4776821,
+      "lng": 8.89281845,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1449419436), ODbL"
+    },
+    {
+      "id": "hungen-62f3726262",
+      "city": "hungen",
+      "label": "Untertorstraße 34",
+      "street": "Untertorstraße",
+      "houseNumber": "34",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hungen",
+      "spotCount": 1,
+      "lat": 50.4767755,
+      "lng": 8.9014631,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1386319139), ODbL"
+    }
+  ]
+}

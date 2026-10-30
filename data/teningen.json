@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "teningen",
+    "name": "Teningen",
+    "center": {
+      "lat": 48.129527700000004,
+      "lng": 7.81183755
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "teningen-53e949df56",
+      "city": "teningen",
+      "label": "Edeka Kohler",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Teningen",
+      "spotCount": 6,
+      "lat": 48.130254150000006,
+      "lng": 7.81183755,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/192126776), ODbL"
+    },
+    {
+      "id": "teningen-3d2a256d51",
+      "city": "teningen",
+      "label": "Kirchstraße",
+      "street": "Kirchstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Teningen",
+      "spotCount": 2,
+      "lat": 48.129527700000004,
+      "lng": 7.8066864,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2044842574), ODbL"
+    },
+    {
+      "id": "teningen-a250bfc8b5",
+      "city": "teningen",
+      "label": "Kirchstraße 8",
+      "street": "Kirchstraße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Teningen",
+      "spotCount": 1,
+      "lat": 48.12952270000001,
+      "lng": 7.806026350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/340117631), ODbL"
+    },
+    {
+      "id": "teningen-7a3c76ddef",
+      "city": "teningen",
+      "label": "Schwimmbad Parkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Teningen",
+      "spotCount": 2,
+      "lat": 48.12748305000001,
+      "lng": 7.82038185,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/120838400), ODbL"
+    }
+  ]
+}

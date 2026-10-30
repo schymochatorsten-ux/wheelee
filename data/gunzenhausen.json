@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "gunzenhausen",
+    "name": "Gunzenhausen",
+    "center": {
+      "lat": 49.12029630000001,
+      "lng": 10.75551635
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gunzenhausen-40c1138e04",
+      "city": "gunzenhausen",
+      "label": "Gunzenhausen Bahnhof",
+      "street": "Gunzenhausen Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gunzenhausen",
+      "spotCount": 2,
+      "lat": 49.12029630000001,
+      "lng": 10.75551635,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/237786922), ODbL"
+    },
+    {
+      "id": "gunzenhausen-6b85a49019",
+      "city": "gunzenhausen",
+      "label": "Seestraße",
+      "street": "Seestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gunzenhausen",
+      "spotCount": 1,
+      "lat": 49.124886450000005,
+      "lng": 10.740150250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/988096146), ODbL"
+    },
+    {
+      "id": "gunzenhausen-9de689e218",
+      "city": "gunzenhausen",
+      "label": "Sonnenstraße",
+      "street": "Sonnenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gunzenhausen",
+      "spotCount": 2,
+      "lat": 49.11370625000001,
+      "lng": 10.759231100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/237680872), ODbL"
+    },
+    {
+      "id": "gunzenhausen-dc85c41d97",
+      "city": "gunzenhausen",
+      "label": "Zentrum Nord",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gunzenhausen",
+      "spotCount": 1,
+      "lat": 49.116900150000006,
+      "lng": 10.75113235,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/115449908), ODbL"
+    },
+    {
+      "id": "gunzenhausen-a8c439b376",
+      "city": "gunzenhausen",
+      "label": "Zufuhrstraße",
+      "street": "Zufuhrstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gunzenhausen",
+      "spotCount": 2,
+      "lat": 49.12053815,
+      "lng": 10.757805650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/237785678), ODbL"
+    }
+  ]
+}

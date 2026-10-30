@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "bad-reichenhall",
+    "name": "Bad Reichenhall",
+    "center": {
+      "lat": 47.730444750000004,
+      "lng": 12.88177825
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-reichenhall-0c77beaabc",
+      "city": "bad-reichenhall",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Reichenhall",
+      "spotCount": 1,
+      "lat": 47.73048415000001,
+      "lng": 12.88180285,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1134845077), ODbL"
+    },
+    {
+      "id": "bad-reichenhall-62f805c0f4",
+      "city": "bad-reichenhall",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Reichenhall",
+      "spotCount": 1,
+      "lat": 47.730444750000004,
+      "lng": 12.88177825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1134845078), ODbL"
+    },
+    {
+      "id": "bad-reichenhall-731ff076c5",
+      "city": "bad-reichenhall",
+      "label": "Salzburger Straße",
+      "street": "Salzburger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Reichenhall",
+      "spotCount": 3,
+      "lat": 47.7394582,
+      "lng": 12.896457100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/363576763), ODbL"
+    },
+    {
+      "id": "bad-reichenhall-1f20b77314",
+      "city": "bad-reichenhall",
+      "label": "Thumseestraße",
+      "street": "Thumseestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bad Reichenhall",
+      "spotCount": 1,
+      "lat": 47.7183099,
+      "lng": 12.831037000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/223605933), ODbL"
+    },
+    {
+      "id": "bad-reichenhall-8ef1920fd2",
+      "city": "bad-reichenhall",
+      "label": "Thumseestraße",
+      "street": "Thumseestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Reichenhall",
+      "spotCount": 2,
+      "lat": 47.7205577,
+      "lng": 12.8490984,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1557273600), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "garrel",
+    "name": "Garrel",
+    "center": {
+      "lat": 52.9565774,
+      "lng": 8.025833350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "garrel-fed7c0bf18",
+      "city": "garrel",
+      "label": "Hauptstraße 45",
+      "street": "Hauptstraße",
+      "houseNumber": "45",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Garrel",
+      "spotCount": 1,
+      "lat": 52.9554885,
+      "lng": 8.024438700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/339851114), ODbL"
+    },
+    {
+      "id": "garrel-118ff2f727",
+      "city": "garrel",
+      "label": "Schulstraße",
+      "street": "Schulstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Garrel",
+      "spotCount": 2,
+      "lat": 52.9565774,
+      "lng": 8.025833350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1416096344), ODbL"
+    }
+  ]
+}

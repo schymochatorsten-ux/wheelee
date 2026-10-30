@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "uhingen",
+    "name": "Uhingen",
+    "center": {
+      "lat": 48.71206480000001,
+      "lng": 9.586789800000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "uhingen-19f2a2833e",
+      "city": "uhingen",
+      "label": "Messelbergstraße 11",
+      "street": "Messelbergstraße",
+      "houseNumber": "11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Uhingen",
+      "spotCount": 1,
+      "lat": 48.7004852,
+      "lng": 9.582900300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/177834423), ODbL"
+    },
+    {
+      "id": "uhingen-726f572cd0",
+      "city": "uhingen",
+      "label": "Panoramastraße",
+      "street": "Panoramastraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Uhingen",
+      "spotCount": 1,
+      "lat": 48.713379950000004,
+      "lng": 9.5906771,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1275815233), ODbL"
+    },
+    {
+      "id": "uhingen-0b3a8ba0db",
+      "city": "uhingen",
+      "label": "Sudetenweg",
+      "street": "Sudetenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Uhingen",
+      "spotCount": 3,
+      "lat": 48.71206480000001,
+      "lng": 9.586789800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/763237680), ODbL"
+    },
+    {
+      "id": "uhingen-15bcbbfba3",
+      "city": "uhingen",
+      "label": "Ulmer Straße 13",
+      "street": "Ulmer Straße",
+      "houseNumber": "13",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Uhingen",
+      "spotCount": 1,
+      "lat": 48.70701915000001,
+      "lng": 9.585128350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32128691), ODbL"
+    }
+  ]
+}

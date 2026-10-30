@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "welver",
+    "name": "Welver",
+    "center": {
+      "lat": 51.61593995,
+      "lng": 7.95636465
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "welver-f531b34a41",
+      "city": "welver",
+      "label": "Ostbusch",
+      "street": "Ostbusch",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Welver",
+      "spotCount": 4,
+      "lat": 51.61593995,
+      "lng": 7.95636465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/337164026), ODbL"
+    }
+  ]
+}

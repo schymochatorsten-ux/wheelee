@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "brackenheim",
+    "name": "Brackenheim",
+    "center": {
+      "lat": 49.07532345,
+      "lng": 9.0630609
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "brackenheim-69a768ecf7",
+      "city": "brackenheim",
+      "label": "Am Schulzentrum",
+      "street": "Am Schulzentrum",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brackenheim",
+      "spotCount": 1,
+      "lat": 49.07706275,
+      "lng": 9.0630609,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/128910675), ODbL"
+    },
+    {
+      "id": "brackenheim-d1debe57c3",
+      "city": "brackenheim",
+      "label": "Hermann-Bauer-Straße 9",
+      "street": "Hermann-Bauer-Straße",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brackenheim",
+      "spotCount": 1,
+      "lat": 49.074827750000004,
+      "lng": 9.0644271,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/560519718), ODbL"
+    },
+    {
+      "id": "brackenheim-7f986ba75d",
+      "city": "brackenheim",
+      "label": "Knipfelesweg",
+      "street": "Knipfelesweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Brackenheim",
+      "spotCount": 3,
+      "lat": 49.0742612,
+      "lng": 9.0609154,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/136894073), ODbL"
+    },
+    {
+      "id": "brackenheim-f9b4dd8ddf",
+      "city": "brackenheim",
+      "label": "Maulbronner Straße",
+      "street": "Maulbronner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brackenheim",
+      "spotCount": 1,
+      "lat": 49.07493445,
+      "lng": 9.063406050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/560519713), ODbL"
+    },
+    {
+      "id": "brackenheim-9021d2f9b1",
+      "city": "brackenheim",
+      "label": "Maulbronner Straße 14",
+      "street": "Maulbronner Straße",
+      "houseNumber": "14",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brackenheim",
+      "spotCount": 2,
+      "lat": 49.07532345,
+      "lng": 9.0621869,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/137341066), ODbL"
+    },
+    {
+      "id": "brackenheim-fd5684f0ae",
+      "city": "brackenheim",
+      "label": "Schellinggasse",
+      "street": "Schellinggasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "Mo-Sa 07:30-22:00; PH closed",
+      "district": "Brackenheim",
+      "spotCount": 1,
+      "lat": 49.078682650000005,
+      "lng": 9.0656151,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/198653068), ODbL"
+    },
+    {
+      "id": "brackenheim-91d6636d8f",
+      "city": "brackenheim",
+      "label": "Schulstraße",
+      "street": "Schulstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brackenheim",
+      "spotCount": 1,
+      "lat": 49.08628415,
+      "lng": 9.0168408,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/398062435), ODbL"
+    }
+  ]
+}

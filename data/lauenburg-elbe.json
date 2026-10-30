@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "lauenburg-elbe",
+    "name": "Lauenburg/Elbe",
+    "center": {
+      "lat": 53.37990980000001,
+      "lng": 10.556752750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lauenburg-elbe-958f47665d",
+      "city": "lauenburg-elbe",
+      "label": "Berliner Straße 18",
+      "street": "Berliner Straße",
+      "houseNumber": "18",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lauenburg/Elbe",
+      "spotCount": 2,
+      "lat": 53.374120700000006,
+      "lng": 10.556752750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/975086101), ODbL"
+    },
+    {
+      "id": "lauenburg-elbe-832563ae40",
+      "city": "lauenburg-elbe",
+      "label": "Graf-Bernhard-Ring",
+      "street": "Graf-Bernhard-Ring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lauenburg/Elbe",
+      "spotCount": 1,
+      "lat": 53.37990980000001,
+      "lng": 10.53684105,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1203095177), ODbL"
+    }
+  ]
+}

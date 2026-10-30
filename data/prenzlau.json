@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "prenzlau",
+    "name": "Prenzlau",
+    "center": {
+      "lat": 53.31390605,
+      "lng": 13.865233250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "prenzlau-107533fcff",
+      "city": "prenzlau",
+      "label": "Georg-Dreke-Ring",
+      "street": "Georg-Dreke-Ring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Prenzlau",
+      "spotCount": 1,
+      "lat": 53.31900215,
+      "lng": 13.86907955,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/237766089), ODbL"
+    },
+    {
+      "id": "prenzlau-834b03e9ee",
+      "city": "prenzlau",
+      "label": "Grabowstraße",
+      "street": "Grabowstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Prenzlau",
+      "spotCount": 1,
+      "lat": 53.310083150000004,
+      "lng": 13.865233250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/225881839), ODbL"
+    },
+    {
+      "id": "prenzlau-cbb2a43e46",
+      "city": "prenzlau",
+      "label": "Marienkirchstraße 4",
+      "street": "Marienkirchstraße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Prenzlau",
+      "spotCount": 1,
+      "lat": 53.31390605,
+      "lng": 13.856592500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1351485460), ODbL"
+    },
+    {
+      "id": "prenzlau-6bb32c52fe",
+      "city": "prenzlau",
+      "label": "Prenzlau, ZOB",
+      "street": "Prenzlau, ZOB",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Prenzlau",
+      "spotCount": 1,
+      "lat": 53.3217679,
+      "lng": 13.86607575,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1123901275), ODbL"
+    },
+    {
+      "id": "prenzlau-1faafc8bd4",
+      "city": "prenzlau",
+      "label": "St. Nikolai Kirchplatz 6",
+      "street": "St. Nikolai Kirchplatz",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Prenzlau",
+      "spotCount": 2,
+      "lat": 53.31030750000001,
+      "lng": 13.860155250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/439042891), ODbL"
+    }
+  ]
+}

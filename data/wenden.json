@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "wenden",
+    "name": "Wenden",
+    "center": {
+      "lat": 50.962667950000004,
+      "lng": 7.864712600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wenden-e8f69a1849",
+      "city": "wenden",
+      "label": "Brüner Höhe",
+      "street": "Brüner Höhe",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wenden",
+      "spotCount": 2,
+      "lat": 50.962667950000004,
+      "lng": 7.846208050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1250395853), ODbL"
+    },
+    {
+      "id": "wenden-4c192c1f03",
+      "city": "wenden",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wenden",
+      "spotCount": 2,
+      "lat": 50.97136655,
+      "lng": 7.864712600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1365970248), ODbL"
+    },
+    {
+      "id": "wenden-be583ac7ef",
+      "city": "wenden",
+      "label": "Löffelberg",
+      "street": "Löffelberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wenden",
+      "spotCount": 2,
+      "lat": 50.933180500000006,
+      "lng": 7.88276585,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1250793730), ODbL"
+    }
+  ]
+}

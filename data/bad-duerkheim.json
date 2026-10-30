@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "bad-duerkheim",
+    "name": "Bad Dürkheim",
+    "center": {
+      "lat": 49.466146300000005,
+      "lng": 8.17850115
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-duerkheim-3b1ed147fa",
+      "city": "bad-duerkheim",
+      "label": "Bürgermeister-Doktor-Dahlem-Straße",
+      "street": "Bürgermeister-Doktor-Dahlem-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Dürkheim",
+      "spotCount": 1,
+      "lat": 49.4482073,
+      "lng": 8.14594675,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/849218560), ODbL"
+    },
+    {
+      "id": "bad-duerkheim-262e57489c",
+      "city": "bad-duerkheim",
+      "label": "Dr.-Kaufmann-Straße 1",
+      "street": "Dr.-Kaufmann-Straße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Dürkheim",
+      "spotCount": 1,
+      "lat": 49.466158750000005,
+      "lng": 8.178491600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1382738692), ODbL"
+    },
+    {
+      "id": "bad-duerkheim-279397e89e",
+      "city": "bad-duerkheim",
+      "label": "Dr.-Kaufmann-Straße 1",
+      "street": "Dr.-Kaufmann-Straße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Dürkheim",
+      "spotCount": 3,
+      "lat": 49.466146300000005,
+      "lng": 8.17850115,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1396540441), ODbL"
+    },
+    {
+      "id": "bad-duerkheim-6a22b43d7a",
+      "city": "bad-duerkheim",
+      "label": "Im Rustengut",
+      "street": "Im Rustengut",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Dürkheim",
+      "spotCount": 1,
+      "lat": 49.46271335,
+      "lng": 8.181815499999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/350035147), ODbL"
+    },
+    {
+      "id": "bad-duerkheim-7ef2c42c65",
+      "city": "bad-duerkheim",
+      "label": "Jahnstraße",
+      "street": "Jahnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Dürkheim",
+      "spotCount": 1,
+      "lat": 49.4667106,
+      "lng": 8.1928193,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1559391928), ODbL"
+    },
+    {
+      "id": "bad-duerkheim-5e62f5e284",
+      "city": "bad-duerkheim",
+      "label": "Jahnstraße 30",
+      "street": "Jahnstraße",
+      "houseNumber": "30",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Dürkheim",
+      "spotCount": 1,
+      "lat": 49.46619565,
+      "lng": 8.1913473,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1465059655), ODbL"
+    },
+    {
+      "id": "bad-duerkheim-d58d9142cd",
+      "city": "bad-duerkheim",
+      "label": "Stadtplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bad Dürkheim",
+      "spotCount": 1,
+      "lat": 49.46037845000001,
+      "lng": 8.16738945,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1296363076), ODbL"
+    }
+  ]
+}

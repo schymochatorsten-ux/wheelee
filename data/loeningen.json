@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "loeningen",
+    "name": "Löningen",
+    "center": {
+      "lat": 52.73582280000001,
+      "lng": 7.757162900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "loeningen-6785db695b",
+      "city": "loeningen",
+      "label": "Dorfstraße",
+      "street": "Dorfstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Löningen",
+      "spotCount": 1,
+      "lat": 52.73108400000001,
+      "lng": 7.8585312,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1529468978), ODbL"
+    },
+    {
+      "id": "loeningen-14350be977",
+      "city": "loeningen",
+      "label": "Poststraße",
+      "street": "Poststraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Löningen",
+      "spotCount": 2,
+      "lat": 52.73582280000001,
+      "lng": 7.757162900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/961420992), ODbL"
+    },
+    {
+      "id": "loeningen-58086162ad",
+      "city": "loeningen",
+      "label": "Schützenstraße 7",
+      "street": "Schützenstraße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Löningen",
+      "spotCount": 1,
+      "lat": 52.78857670000001,
+      "lng": 7.7158775,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1147746425), ODbL"
+    }
+  ]
+}

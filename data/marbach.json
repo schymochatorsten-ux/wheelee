@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "marbach",
+    "name": "Marbach am Neckar",
+    "center": {
+      "lat": 48.943971700000006,
+      "lng": 9.26483245
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "marbach-34b859f550",
+      "city": "marbach",
+      "label": "Am alten Markt",
+      "street": "Am alten Markt",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Marbach am Neckar",
+      "spotCount": 2,
+      "lat": 48.943971700000006,
+      "lng": 9.26002745,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/894038321), ODbL"
+    },
+    {
+      "id": "marbach-ac9d6454b9",
+      "city": "marbach",
+      "label": "Bahnhof",
+      "street": "Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Marbach am Neckar",
+      "spotCount": 2,
+      "lat": 48.9435482,
+      "lng": 9.26483245,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1412972427), ODbL"
+    },
+    {
+      "id": "marbach-834881b547",
+      "city": "marbach",
+      "label": "Kirchenweinbergstraße",
+      "street": "Kirchenweinbergstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Marbach am Neckar",
+      "spotCount": 2,
+      "lat": 48.9436844,
+      "lng": 9.263898600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12985104215), ODbL"
+    },
+    {
+      "id": "marbach-a77aac5da8",
+      "city": "marbach",
+      "label": "Kirchenweinbergstraße",
+      "street": "Kirchenweinbergstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Marbach am Neckar",
+      "spotCount": 2,
+      "lat": 48.944030850000004,
+      "lng": 9.265213,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/86845552), ODbL"
+    }
+  ]
+}

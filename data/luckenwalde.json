@@ -12,26 +12,11 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "luckenwalde-8e8e0c7703",
-      "city": "luckenwalde",
-      "label": "Behindertenparkplatz Luckenwalde",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Luckenwalde",
-      "spotCount": 1,
-      "lat": 52.090991200000005,
-      "lng": 13.1504381,
-      "geoAccuracy": "house",
-      "source": "OpenStreetMap (node/409890916), ODbL"
-    },
-    {
       "id": "luckenwalde-356108fa0b",
       "city": "luckenwalde",
-      "label": "Behindertenparkplatz Luckenwalde",
-      "street": null,
-      "houseNumber": null,
+      "label": "Am Nuthefließ 3",
+      "street": "Am Nuthefließ",
+      "houseNumber": "3",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Luckenwalde",
@@ -44,8 +29,8 @@
     {
       "id": "luckenwalde-1a7053c7f8",
       "city": "luckenwalde",
-      "label": "Behindertenparkplatz Luckenwalde",
-      "street": null,
+      "label": "Jüterboger Straße",
+      "street": "Jüterboger Straße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -55,21 +40,6 @@
       "lng": 13.160666800000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/30547237), ODbL"
-    },
-    {
-      "id": "luckenwalde-7f6f2826e5",
-      "city": "luckenwalde",
-      "label": "Behindertenparkplatz Luckenwalde",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Luckenwalde",
-      "spotCount": 1,
-      "lat": 52.081511750000004,
-      "lng": 13.17897675,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/30551087), ODbL"
     },
     {
       "id": "luckenwalde-6807a414d2",
@@ -85,6 +55,36 @@
       "lng": 13.177468000000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/30554588), ODbL"
+    },
+    {
+      "id": "luckenwalde-7f6f2826e5",
+      "city": "luckenwalde",
+      "label": "Neue Parkstraße",
+      "street": "Neue Parkstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Luckenwalde",
+      "spotCount": 1,
+      "lat": 52.081511750000004,
+      "lng": 13.17897675,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/30551087), ODbL"
+    },
+    {
+      "id": "luckenwalde-8e8e0c7703",
+      "city": "luckenwalde",
+      "label": "Weinberge",
+      "street": "Weinberge",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Luckenwalde",
+      "spotCount": 1,
+      "lat": 52.090991200000005,
+      "lng": 13.1504381,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/409890916), ODbL"
     }
   ]
 }

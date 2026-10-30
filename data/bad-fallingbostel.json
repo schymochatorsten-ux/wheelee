@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "bad-fallingbostel",
+    "name": "Bad Fallingbostel",
+    "center": {
+      "lat": 52.8658872,
+      "lng": 9.6955189
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-fallingbostel-977ae92e75",
+      "city": "bad-fallingbostel",
+      "label": "Bockhorner Weg",
+      "street": "Bockhorner Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Fallingbostel",
+      "spotCount": 2,
+      "lat": 52.851641900000004,
+      "lng": 9.69254105,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/474743431), ODbL"
+    },
+    {
+      "id": "bad-fallingbostel-3a2753ed7d",
+      "city": "bad-fallingbostel",
+      "label": "Bockhorner Weg 7",
+      "street": "Bockhorner Weg",
+      "houseNumber": "7",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Fallingbostel",
+      "spotCount": 1,
+      "lat": 52.851787800000004,
+      "lng": 9.69280095,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/994892428), ODbL"
+    },
+    {
+      "id": "bad-fallingbostel-ca8e0b4c22",
+      "city": "bad-fallingbostel",
+      "label": "Bockhorner Weg 7",
+      "street": "Bockhorner Weg",
+      "houseNumber": "7",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Fallingbostel",
+      "spotCount": 1,
+      "lat": 52.8517521,
+      "lng": 9.69279925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/994892429), ODbL"
+    },
+    {
+      "id": "bad-fallingbostel-68b5a2f830",
+      "city": "bad-fallingbostel",
+      "label": "Steinbach",
+      "street": "Steinbach",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Fallingbostel",
+      "spotCount": 2,
+      "lat": 52.884640000000005,
+      "lng": 9.7570367,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1087762829), ODbL"
+    },
+    {
+      "id": "bad-fallingbostel-f038af3f8c",
+      "city": "bad-fallingbostel",
+      "label": "Steinbach",
+      "street": "Steinbach",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Fallingbostel",
+      "spotCount": 1,
+      "lat": 52.8846207,
+      "lng": 9.7570204,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1087762830), ODbL"
+    },
+    {
+      "id": "bad-fallingbostel-d027fadf15",
+      "city": "bad-fallingbostel",
+      "label": "Steinbach",
+      "street": "Steinbach",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Fallingbostel",
+      "spotCount": 1,
+      "lat": 52.884655550000005,
+      "lng": 9.757053,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1087762831), ODbL"
+    },
+    {
+      "id": "bad-fallingbostel-c35e991a4f",
+      "city": "bad-fallingbostel",
+      "label": "Vogteistraße 4",
+      "street": "Vogteistraße",
+      "houseNumber": "4",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Fallingbostel",
+      "spotCount": 1,
+      "lat": 52.8658872,
+      "lng": 9.6955189,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/792872576), ODbL"
+    }
+  ]
+}

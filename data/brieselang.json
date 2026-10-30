@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "brieselang",
+    "name": "Brieselang",
+    "center": {
+      "lat": 52.58312585,
+      "lng": 13.0022177
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "brieselang-bde0725782",
+      "city": "brieselang",
+      "label": "Forstweg 40",
+      "street": "Forstweg",
+      "houseNumber": "40",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brieselang",
+      "spotCount": 2,
+      "lat": 52.5819205,
+      "lng": 12.9969262,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/727068267), ODbL"
+    },
+    {
+      "id": "brieselang-06fed0b3e8",
+      "city": "brieselang",
+      "label": "Platz des Friedens",
+      "street": "Platz des Friedens",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brieselang",
+      "spotCount": 3,
+      "lat": 52.58320965,
+      "lng": 13.0022177,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1381475370), ODbL"
+    },
+    {
+      "id": "brieselang-1cb0e84918",
+      "city": "brieselang",
+      "label": "Platz des Friedens 1",
+      "street": "Platz des Friedens",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Brieselang",
+      "spotCount": 3,
+      "lat": 52.58312585,
+      "lng": 13.002523800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/445948221), ODbL"
+    }
+  ]
+}

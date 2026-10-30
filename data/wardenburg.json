@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wardenburg",
+    "name": "Wardenburg",
+    "center": {
+      "lat": 53.09386155,
+      "lng": 8.190671049999999
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wardenburg-13280f95d7",
+      "city": "wardenburg",
+      "label": "Hundsmühler Landstraße 8",
+      "street": "Hundsmühler Landstraße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wardenburg",
+      "spotCount": 1,
+      "lat": 53.09386155,
+      "lng": 8.190671049999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1093331559), ODbL"
+    }
+  ]
+}

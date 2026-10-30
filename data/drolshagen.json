@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "drolshagen",
+    "name": "Drolshagen",
+    "center": {
+      "lat": 51.03839035,
+      "lng": 7.777133200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "drolshagen-b4cd889f93",
+      "city": "drolshagen",
+      "label": "Marktplatz",
+      "street": "Marktplatz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Drolshagen",
+      "spotCount": 1,
+      "lat": 51.02398045,
+      "lng": 7.777133200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1557266551), ODbL"
+    },
+    {
+      "id": "drolshagen-19132768e0",
+      "city": "drolshagen",
+      "label": "Vorm Bahnhof",
+      "street": "Vorm Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Drolshagen",
+      "spotCount": 1,
+      "lat": 51.03839035,
+      "lng": 7.7509216,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1350315239), ODbL"
+    }
+  ]
+}

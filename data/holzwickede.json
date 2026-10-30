@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "holzwickede",
+    "name": "Holzwickede",
+    "center": {
+      "lat": 51.50621755,
+      "lng": 7.61340775
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "holzwickede-c2f94f6abb",
+      "city": "holzwickede",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Holzwickede",
+      "spotCount": 2,
+      "lat": 51.504847500000004,
+      "lng": 7.6192739000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1572446401), ODbL"
+    },
+    {
+      "id": "holzwickede-2975f8a6ac",
+      "city": "holzwickede",
+      "label": "August-Borsig-Straße 16",
+      "street": "August-Borsig-Straße",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Holzwickede",
+      "spotCount": 1,
+      "lat": 51.506736700000005,
+      "lng": 7.622310350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/37878567), ODbL"
+    },
+    {
+      "id": "holzwickede-5c7dc265f2",
+      "city": "holzwickede",
+      "label": "Flughafenring",
+      "street": "Flughafenring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Holzwickede",
+      "spotCount": 2,
+      "lat": 51.51509555,
+      "lng": 7.61357085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/733943898), ODbL"
+    },
+    {
+      "id": "holzwickede-e485f1ac9c",
+      "city": "holzwickede",
+      "label": "Parkhaus P4",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Holzwickede",
+      "spotCount": 1,
+      "lat": 51.5119005,
+      "lng": 7.6067424,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/41488056), ODbL"
+    },
+    {
+      "id": "holzwickede-0fb70d77e9",
+      "city": "holzwickede",
+      "label": "Rausinger Straße",
+      "street": "Rausinger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Holzwickede",
+      "spotCount": 1,
+      "lat": 51.50621755,
+      "lng": 7.61340775,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/801611814), ODbL"
+    },
+    {
+      "id": "holzwickede-063f1baeff",
+      "city": "holzwickede",
+      "label": "Sommerfliederweg 30",
+      "street": "Sommerfliederweg",
+      "houseNumber": "30",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Holzwickede",
+      "spotCount": 1,
+      "lat": 51.4959551,
+      "lng": 7.608641350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1376414684), ODbL"
+    },
+    {
+      "id": "holzwickede-28b3be3002",
+      "city": "holzwickede",
+      "label": "Sommerfliederweg 32",
+      "street": "Sommerfliederweg",
+      "houseNumber": "32",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Holzwickede",
+      "spotCount": 1,
+      "lat": 51.495972050000006,
+      "lng": 7.60876,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1376414685), ODbL"
+    }
+  ]
+}

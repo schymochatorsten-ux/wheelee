@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "gundelfingen",
+    "name": "Gundelfingen",
+    "center": {
+      "lat": 48.03807435,
+      "lng": 7.868571000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gundelfingen-d15de35855",
+      "city": "gundelfingen",
+      "label": "Kirchenparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gundelfingen",
+      "spotCount": 1,
+      "lat": 48.03807435,
+      "lng": 7.868571000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/140881317), ODbL"
+    }
+  ]
+}

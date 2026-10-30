@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "wald-michelbach",
+    "name": "Wald-Michelbach",
+    "center": {
+      "lat": 49.5692023,
+      "lng": 8.8300503
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wald-michelbach-cb07f50b41",
+      "city": "wald-michelbach",
+      "label": "Am Bahndamm 9",
+      "street": "Am Bahndamm",
+      "houseNumber": "9",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wald-Michelbach",
+      "spotCount": 1,
+      "lat": 49.5692273,
+      "lng": 8.8300503,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10316851380), ODbL"
+    },
+    {
+      "id": "wald-michelbach-ed610f5c97",
+      "city": "wald-michelbach",
+      "label": "Am Bahndamm 9",
+      "street": "Am Bahndamm",
+      "houseNumber": "9",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wald-Michelbach",
+      "spotCount": 1,
+      "lat": 49.5692023,
+      "lng": 8.830019100000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10316851381), ODbL"
+    },
+    {
+      "id": "wald-michelbach-7cf0b7df94",
+      "city": "wald-michelbach",
+      "label": "Behindertenparkplatz Wald-Michelbach",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wald-Michelbach",
+      "spotCount": 2,
+      "lat": 49.5332897,
+      "lng": 8.8643651,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/76697881), ODbL"
+    }
+  ]
+}

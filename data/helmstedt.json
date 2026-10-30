@@ -14,8 +14,8 @@
     {
       "id": "helmstedt-3b02df496c",
       "city": "helmstedt",
-      "label": "Behindertenparkplatz Helmstedt",
-      "street": null,
+      "label": "Poststraße",
+      "street": "Poststraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,

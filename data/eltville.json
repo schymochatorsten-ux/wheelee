@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "eltville",
+    "name": "Eltville am Rhein",
+    "center": {
+      "lat": 50.026053250000004,
+      "lng": 8.11967635
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eltville-4c24506305",
+      "city": "eltville",
+      "label": "Ringstraße 33",
+      "street": "Ringstraße",
+      "houseNumber": "33",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eltville am Rhein",
+      "spotCount": 2,
+      "lat": 50.02316845,
+      "lng": 8.09307235,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1330620823), ODbL"
+    },
+    {
+      "id": "eltville-61f3603fb9",
+      "city": "eltville",
+      "label": "Schlossergasse 1",
+      "street": "Schlossergasse",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eltville am Rhein",
+      "spotCount": 1,
+      "lat": 50.026053250000004,
+      "lng": 8.11967635,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1548948008), ODbL"
+    }
+  ]
+}

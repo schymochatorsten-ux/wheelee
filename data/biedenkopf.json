@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "biedenkopf",
+    "name": "Biedenkopf",
+    "center": {
+      "lat": 50.901042350000004,
+      "lng": 8.536047100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "biedenkopf-0154f7a141",
+      "city": "biedenkopf",
+      "label": "Georg-Kramer-Straße",
+      "street": "Georg-Kramer-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Biedenkopf",
+      "spotCount": 1,
+      "lat": 50.901042350000004,
+      "lng": 8.536047100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/207600786), ODbL"
+    }
+  ]
+}

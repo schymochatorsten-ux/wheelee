@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "salem",
+    "name": "Salem",
+    "center": {
+      "lat": 47.7608532,
+      "lng": 9.297271850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "salem-03f6cd56fe",
+      "city": "salem",
+      "label": "Alte Neufracher Straße",
+      "street": "Alte Neufracher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Salem",
+      "spotCount": 2,
+      "lat": 47.760696450000005,
+      "lng": 9.297511700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/37807872), ODbL"
+    },
+    {
+      "id": "salem-33385520e3",
+      "city": "salem",
+      "label": "Alte Neufracher Straße",
+      "street": "Alte Neufracher Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Salem",
+      "spotCount": 1,
+      "lat": 47.76085295,
+      "lng": 9.297271850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1338467343), ODbL"
+    },
+    {
+      "id": "salem-aa8fae70fc",
+      "city": "salem",
+      "label": "Alte Neufracher Straße",
+      "street": "Alte Neufracher Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Salem",
+      "spotCount": 1,
+      "lat": 47.7608532,
+      "lng": 9.29722345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1338467344), ODbL"
+    },
+    {
+      "id": "salem-f22239ceaa",
+      "city": "salem",
+      "label": "Schlossseeallee",
+      "street": "Schlossseeallee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Salem",
+      "spotCount": 2,
+      "lat": 47.76640605,
+      "lng": 9.289992699999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1349774501), ODbL"
+    }
+  ]
+}

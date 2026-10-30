@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "kuenzelsau",
+    "name": "Künzelsau",
+    "center": {
+      "lat": 49.277187850000004,
+      "lng": 9.683466200000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kuenzelsau-81d22f562b",
+      "city": "kuenzelsau",
+      "label": "Allee 5",
+      "street": "Allee",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Künzelsau",
+      "spotCount": 2,
+      "lat": 49.277187850000004,
+      "lng": 9.6865655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/644881812), ODbL"
+    },
+    {
+      "id": "kuenzelsau-4e22541ff4",
+      "city": "kuenzelsau",
+      "label": "Am Forumsplatz",
+      "street": "Am Forumsplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Künzelsau",
+      "spotCount": 10,
+      "lat": 49.261737000000004,
+      "lng": 9.672247350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/681141021), ODbL"
+    },
+    {
+      "id": "kuenzelsau-e81c5203c9",
+      "city": "kuenzelsau",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Künzelsau",
+      "spotCount": 1,
+      "lat": 49.27935790000001,
+      "lng": 9.683466200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/164409477), ODbL"
+    },
+    {
+      "id": "kuenzelsau-f6bb3a4b66",
+      "city": "kuenzelsau",
+      "label": "Bahnhofstraße 1",
+      "street": "Bahnhofstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Künzelsau",
+      "spotCount": 1,
+      "lat": 49.27893985,
+      "lng": 9.6842082,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/634875715), ODbL"
+    },
+    {
+      "id": "kuenzelsau-0172d09960",
+      "city": "kuenzelsau",
+      "label": "Besucherparkplatz Innovationszentrum",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Künzelsau",
+      "spotCount": 1,
+      "lat": 49.2616662,
+      "lng": 9.681296600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11637359211), ODbL"
+    }
+  ]
+}

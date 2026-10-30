@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "kriftel",
+    "name": "Kriftel",
+    "center": {
+      "lat": 50.084943300000006,
+      "lng": 8.46929905
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kriftel-2e6c037247",
+      "city": "kriftel",
+      "label": "Frankfurter Straße 33-37",
+      "street": "Frankfurter Straße",
+      "houseNumber": "33-37",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kriftel",
+      "spotCount": 1,
+      "lat": 50.084943300000006,
+      "lng": 8.4707878,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1028521601), ODbL"
+    },
+    {
+      "id": "kriftel-fd5ced7885",
+      "city": "kriftel",
+      "label": "Hattersheimer Straße",
+      "street": "Hattersheimer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kriftel",
+      "spotCount": 2,
+      "lat": 50.07779595,
+      "lng": 8.469739700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/64442214), ODbL"
+    },
+    {
+      "id": "kriftel-84a960fb3c",
+      "city": "kriftel",
+      "label": "Katharina-Kemmler-Straße",
+      "street": "Katharina-Kemmler-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kriftel",
+      "spotCount": 1,
+      "lat": 50.089782150000005,
+      "lng": 8.46272635,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1303778879), ODbL"
+    },
+    {
+      "id": "kriftel-651993b92c",
+      "city": "kriftel",
+      "label": "Katharina-Kemmler-Straße",
+      "street": "Katharina-Kemmler-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kriftel",
+      "spotCount": 1,
+      "lat": 50.0897502,
+      "lng": 8.46274215,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1303778880), ODbL"
+    },
+    {
+      "id": "kriftel-ed856f0678",
+      "city": "kriftel",
+      "label": "Lessingstraße",
+      "street": "Lessingstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kriftel",
+      "spotCount": 2,
+      "lat": 50.08324085,
+      "lng": 8.46929905,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/493835739), ODbL"
+    }
+  ]
+}

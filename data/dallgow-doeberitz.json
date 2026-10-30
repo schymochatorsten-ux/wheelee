@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "dallgow-doeberitz",
+    "name": "Dallgow-Döberitz",
+    "center": {
+      "lat": 52.53970665,
+      "lng": 13.08250275
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dallgow-doeberitz-885d00a604",
+      "city": "dallgow-doeberitz",
+      "label": "Bahnhof",
+      "street": "Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dallgow-Döberitz",
+      "spotCount": 2,
+      "lat": 52.543248750000004,
+      "lng": 13.058766600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1102395927), ODbL"
+    },
+    {
+      "id": "dallgow-doeberitz-98dce4d98e",
+      "city": "dallgow-doeberitz",
+      "label": "Bahnhof",
+      "street": "Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dallgow-Döberitz",
+      "spotCount": 1,
+      "lat": 52.543217150000004,
+      "lng": 13.058773,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1435312546), ODbL"
+    },
+    {
+      "id": "dallgow-doeberitz-cb3f29d04d",
+      "city": "dallgow-doeberitz",
+      "label": "Havelpark",
+      "street": "Havelpark",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dallgow-Döberitz",
+      "spotCount": 1,
+      "lat": 52.531530100000005,
+      "lng": 13.08374865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1386662357), ODbL"
+    },
+    {
+      "id": "dallgow-doeberitz-8df1bde2f1",
+      "city": "dallgow-doeberitz",
+      "label": "Havelpark",
+      "street": "Havelpark",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dallgow-Döberitz",
+      "spotCount": 1,
+      "lat": 52.5315007,
+      "lng": 13.08361425,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1386662360), ODbL"
+    },
+    {
+      "id": "dallgow-doeberitz-96ea36df31",
+      "city": "dallgow-doeberitz",
+      "label": "Havelpark",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dallgow-Döberitz",
+      "spotCount": 1,
+      "lat": 52.5321194,
+      "lng": 13.08250275,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/23735802), ODbL"
+    },
+    {
+      "id": "dallgow-doeberitz-5385bff85c",
+      "city": "dallgow-doeberitz",
+      "label": "Parkstraße",
+      "street": "Parkstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dallgow-Döberitz",
+      "spotCount": 1,
+      "lat": 52.53970665,
+      "lng": 13.062538550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1081011006), ODbL"
+    }
+  ]
+}

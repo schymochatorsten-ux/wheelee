@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "oberschleissheim",
+    "name": "Oberschleißheim",
+    "center": {
+      "lat": 48.2543779,
+      "lng": 11.552058350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberschleissheim-defb9e1149",
+      "city": "oberschleissheim",
+      "label": "Am Stutenanger",
+      "street": "Am Stutenanger",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberschleißheim",
+      "spotCount": 1,
+      "lat": 48.25612805,
+      "lng": 11.552058350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/471473231), ODbL"
+    },
+    {
+      "id": "oberschleissheim-b8078f4e12",
+      "city": "oberschleissheim",
+      "label": "Mittenheimer Straße",
+      "street": "Mittenheimer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Oberschleißheim",
+      "spotCount": 2,
+      "lat": 48.257170650000006,
+      "lng": 11.557530700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/204783148), ODbL"
+    },
+    {
+      "id": "oberschleissheim-c49d61c945",
+      "city": "oberschleissheim",
+      "label": "Sankt-Hubertus-Straße",
+      "street": "Sankt-Hubertus-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oberschleißheim",
+      "spotCount": 1,
+      "lat": 48.246223,
+      "lng": 11.546148700000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13141221241), ODbL"
+    },
+    {
+      "id": "oberschleissheim-3e763bd5c5",
+      "city": "oberschleissheim",
+      "label": "Sankt-Hubertus-Straße 12",
+      "street": "Sankt-Hubertus-Straße",
+      "houseNumber": "12",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oberschleißheim",
+      "spotCount": 1,
+      "lat": 48.2465124,
+      "lng": 11.5460832,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13708172729), ODbL"
+    },
+    {
+      "id": "oberschleissheim-636f9420c8",
+      "city": "oberschleissheim",
+      "label": "Theodor-Heuss-Straße",
+      "street": "Theodor-Heuss-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oberschleißheim",
+      "spotCount": 1,
+      "lat": 48.2543779,
+      "lng": 11.554150700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13912207781), ODbL"
+    }
+  ]
+}

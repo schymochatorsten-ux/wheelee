@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "schermbeck",
+    "name": "Schermbeck",
+    "center": {
+      "lat": 51.72704335,
+      "lng": 6.8673547
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schermbeck-f4504f3922",
+      "city": "schermbeck",
+      "label": "Am Rathaus 2",
+      "street": "Am Rathaus",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Schermbeck",
+      "spotCount": 1,
+      "lat": 51.69036915,
+      "lng": 6.8673547,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24780030), ODbL"
+    },
+    {
+      "id": "schermbeck-16ff6c21ba",
+      "city": "schermbeck",
+      "label": "Lühlerheimer Weg",
+      "street": "Lühlerheimer Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schermbeck",
+      "spotCount": 1,
+      "lat": 51.7022575,
+      "lng": 6.7508273,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12980024296), ODbL"
+    },
+    {
+      "id": "schermbeck-f2a37206e9",
+      "city": "schermbeck",
+      "label": "Rhader Weg",
+      "street": "Rhader Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schermbeck",
+      "spotCount": 2,
+      "lat": 51.72704335,
+      "lng": 6.908673500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/351937020), ODbL"
+    },
+    {
+      "id": "schermbeck-104aaf4878",
+      "city": "schermbeck",
+      "label": "Zum Abendhorst",
+      "street": "Zum Abendhorst",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schermbeck",
+      "spotCount": 3,
+      "lat": 51.73670385,
+      "lng": 6.8151441,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/201074041), ODbL"
+    }
+  ]
+}

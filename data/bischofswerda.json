@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "bischofswerda",
+    "name": "Bischofswerda",
+    "center": {
+      "lat": 51.12690005,
+      "lng": 14.186690950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bischofswerda-58e0f3e0d4",
+      "city": "bischofswerda",
+      "label": "Dietrich-Bonhoeffer-Straße",
+      "street": "Dietrich-Bonhoeffer-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bischofswerda",
+      "spotCount": 1,
+      "lat": 51.1202539,
+      "lng": 14.195522050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1367175225), ODbL"
+    },
+    {
+      "id": "bischofswerda-444382c798",
+      "city": "bischofswerda",
+      "label": "Hohe Straße",
+      "street": "Hohe Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bischofswerda",
+      "spotCount": 3,
+      "lat": 51.126334400000005,
+      "lng": 14.186690950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/178067452), ODbL"
+    },
+    {
+      "id": "bischofswerda-9a0a5265bf",
+      "city": "bischofswerda",
+      "label": "Maximilian-Kolbe-Straße",
+      "street": "Maximilian-Kolbe-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bischofswerda",
+      "spotCount": 1,
+      "lat": 51.119766500000004,
+      "lng": 14.195801550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1367175223), ODbL"
+    },
+    {
+      "id": "bischofswerda-bbdea5d953",
+      "city": "bischofswerda",
+      "label": "Neumarkt 2",
+      "street": "Neumarkt",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bischofswerda",
+      "spotCount": 1,
+      "lat": 51.12768835,
+      "lng": 14.177525500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/265057133), ODbL"
+    },
+    {
+      "id": "bischofswerda-458b3421af",
+      "city": "bischofswerda",
+      "label": "Neumarkt 5",
+      "street": "Neumarkt",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bischofswerda",
+      "spotCount": 1,
+      "lat": 51.127568950000004,
+      "lng": 14.17737555,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/265057131), ODbL"
+    },
+    {
+      "id": "bischofswerda-3d34dd0211",
+      "city": "bischofswerda",
+      "label": "Sinzstraße 3",
+      "street": "Sinzstraße",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bischofswerda",
+      "spotCount": 1,
+      "lat": 51.12690005,
+      "lng": 14.176393100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1113148395), ODbL"
+    }
+  ]
+}

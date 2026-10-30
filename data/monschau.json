@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "monschau",
+    "name": "Monschau",
+    "center": {
+      "lat": 50.55476555,
+      "lng": 6.230534500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "monschau-2deac6e03e",
+      "city": "monschau",
+      "label": "Mützenicher Venn",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Monschau",
+      "spotCount": 1,
+      "lat": 50.56462655,
+      "lng": 6.195665400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/144819651), ODbL"
+    },
+    {
+      "id": "monschau-065984532f",
+      "city": "monschau",
+      "label": "Parkhaus Burgau",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Monschau",
+      "spotCount": 1,
+      "lat": 50.552927700000005,
+      "lng": 6.23776335,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/251548117), ODbL"
+    },
+    {
+      "id": "monschau-79a2ae1d89",
+      "city": "monschau",
+      "label": "Schulweg",
+      "street": "Schulweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Monschau",
+      "spotCount": 1,
+      "lat": 50.5201329,
+      "lng": 6.2209117,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3283175081), ODbL"
+    },
+    {
+      "id": "monschau-79a248265d",
+      "city": "monschau",
+      "label": "Wilhelm-Jansen-Straße",
+      "street": "Wilhelm-Jansen-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Monschau",
+      "spotCount": 2,
+      "lat": 50.55476555,
+      "lng": 6.230534500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/641708750), ODbL"
+    }
+  ]
+}

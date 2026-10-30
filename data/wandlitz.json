@@ -29,8 +29,8 @@
     {
       "id": "wandlitz-2d5fe6cb79",
       "city": "wandlitz",
-      "label": "Behindertenparkplatz Wandlitz",
-      "street": null,
+      "label": "Bahnstraße",
+      "street": "Bahnstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -44,8 +44,8 @@
     {
       "id": "wandlitz-77756dd499",
       "city": "wandlitz",
-      "label": "Behindertenparkplatz Wandlitz",
-      "street": null,
+      "label": "Hellerstraße",
+      "street": "Hellerstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,

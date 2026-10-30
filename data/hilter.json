@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "hilter",
+    "name": "Hilter am Teutoburger Wald",
+    "center": {
+      "lat": 52.13519285,
+      "lng": 8.151136000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hilter-628f134738",
+      "city": "hilter",
+      "label": "Bielefelder Straße",
+      "street": "Bielefelder Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hilter am Teutoburger Wald",
+      "spotCount": 1,
+      "lat": 52.133717100000005,
+      "lng": 8.151136000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/44912051), ODbL"
+    },
+    {
+      "id": "hilter-8c0dc58bf6",
+      "city": "hilter",
+      "label": "Bielefelder Straße",
+      "street": "Bielefelder Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hilter am Teutoburger Wald",
+      "spotCount": 1,
+      "lat": 52.134348900000006,
+      "lng": 8.150799750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/44912053), ODbL"
+    },
+    {
+      "id": "hilter-44f1b35318",
+      "city": "hilter",
+      "label": "Park & Ride - Bahnhof Hilter",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hilter am Teutoburger Wald",
+      "spotCount": 1,
+      "lat": 52.13519285,
+      "lng": 8.15266695,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/49261696), ODbL"
+    },
+    {
+      "id": "hilter-55e7cda806",
+      "city": "hilter",
+      "label": "Zum Schoppenbusch",
+      "street": "Zum Schoppenbusch",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hilter am Teutoburger Wald",
+      "spotCount": 1,
+      "lat": 52.14004490000001,
+      "lng": 8.145333650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1012604159), ODbL"
+    }
+  ]
+}

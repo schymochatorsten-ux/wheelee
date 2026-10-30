@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "geisenfeld",
+    "name": "Geisenfeld",
+    "center": {
+      "lat": 48.69208690000001,
+      "lng": 11.6126367
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "geisenfeld-988c7e163f",
+      "city": "geisenfeld",
+      "label": "Geisenfeld, ZOB Nöttinger Straße",
+      "street": "Geisenfeld, ZOB Nöttinger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Geisenfeld",
+      "spotCount": 2,
+      "lat": 48.69208690000001,
+      "lng": 11.6126367,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1260675740), ODbL"
+    }
+  ]
+}

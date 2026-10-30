@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "breisach",
+    "name": "Breisach am Rhein",
+    "center": {
+      "lat": 48.0282026,
+      "lng": 7.590815
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "breisach-f9874e774b",
+      "city": "breisach",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Breisach am Rhein",
+      "spotCount": 1,
+      "lat": 48.02797395,
+      "lng": 7.590815,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1419142576), ODbL"
+    },
+    {
+      "id": "breisach-e207c51715",
+      "city": "breisach",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Breisach am Rhein",
+      "spotCount": 1,
+      "lat": 48.02798855,
+      "lng": 7.5908429,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1419142577), ODbL"
+    },
+    {
+      "id": "breisach-e3b550773b",
+      "city": "breisach",
+      "label": "Bahnhofstraße 4",
+      "street": "Bahnhofstraße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Breisach am Rhein",
+      "spotCount": 1,
+      "lat": 48.02724430000001,
+      "lng": 7.589234,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1419142569), ODbL"
+    },
+    {
+      "id": "breisach-8ab8124730",
+      "city": "breisach",
+      "label": "Kapuzinergasse 26",
+      "street": "Kapuzinergasse",
+      "houseNumber": "26",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Breisach am Rhein",
+      "spotCount": 1,
+      "lat": 48.03227785,
+      "lng": 7.5783147,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/267093611), ODbL"
+    },
+    {
+      "id": "breisach-1eb531551a",
+      "city": "breisach",
+      "label": "Müllheimer Straße 2",
+      "street": "Müllheimer Straße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Breisach am Rhein",
+      "spotCount": 1,
+      "lat": 48.039399800000005,
+      "lng": 7.5813647500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/498661032), ODbL"
+    },
+    {
+      "id": "breisach-cc593ac78c",
+      "city": "breisach",
+      "label": "Parkplatz Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Breisach am Rhein",
+      "spotCount": 2,
+      "lat": 48.0282026,
+      "lng": 7.5913266,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/76256367), ODbL"
+    }
+  ]
+}

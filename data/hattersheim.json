@@ -12,10 +12,25 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
+      "id": "hattersheim-a91aa0dfda",
+      "city": "hattersheim",
+      "label": "Hauptstraße 4",
+      "street": "Hauptstraße",
+      "houseNumber": "4",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hattersheim am Main",
+      "spotCount": 1,
+      "lat": 50.069469500000004,
+      "lng": 8.4881341,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9873414348), ODbL"
+    },
+    {
       "id": "hattersheim-d1db11e005",
       "city": "hattersheim",
-      "label": "Behindertenparkplatz Hattersheim am Main",
-      "street": null,
+      "label": "Mainzer Landstraße",
+      "street": "Mainzer Landstraße",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,
@@ -25,21 +40,6 @@
       "lng": 8.4838751,
       "geoAccuracy": "house",
       "source": "OpenStreetMap (node/9873398280), ODbL"
-    },
-    {
-      "id": "hattersheim-a91aa0dfda",
-      "city": "hattersheim",
-      "label": "Behindertenparkplatz Hattersheim am Main",
-      "street": null,
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Hattersheim am Main",
-      "spotCount": 1,
-      "lat": 50.069469500000004,
-      "lng": 8.4881341,
-      "geoAccuracy": "house",
-      "source": "OpenStreetMap (node/9873414348), ODbL"
     }
   ]
 }

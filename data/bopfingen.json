@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "bopfingen",
+    "name": "Bopfingen",
+    "center": {
+      "lat": 48.8551343,
+      "lng": 10.354030000000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bopfingen-b7baa1db47",
+      "city": "bopfingen",
+      "label": "Bahnhofplatz",
+      "street": "Bahnhofplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Bopfingen",
+      "spotCount": 2,
+      "lat": 48.855055500000006,
+      "lng": 10.3528528,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/387890641), ODbL"
+    },
+    {
+      "id": "bopfingen-66b32eba2f",
+      "city": "bopfingen",
+      "label": "Bahnhofplatz",
+      "street": "Bahnhofplatz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bopfingen",
+      "spotCount": 2,
+      "lat": 48.8551343,
+      "lng": 10.3523985,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1420735223), ODbL"
+    },
+    {
+      "id": "bopfingen-f8c23c2b5f",
+      "city": "bopfingen",
+      "label": "Ipftreff",
+      "street": "Ipftreff",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bopfingen",
+      "spotCount": 5,
+      "lat": 48.85879465000001,
+      "lng": 10.354030000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/824759506), ODbL"
+    },
+    {
+      "id": "bopfingen-2923566942",
+      "city": "bopfingen",
+      "label": "Ostalbstraße",
+      "street": "Ostalbstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bopfingen",
+      "spotCount": 1,
+      "lat": 48.8426776,
+      "lng": 10.395136,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13173673758), ODbL"
+    },
+    {
+      "id": "bopfingen-92244c0d0d",
+      "city": "bopfingen",
+      "label": "Steigweg 19",
+      "street": "Steigweg",
+      "houseNumber": "19",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bopfingen",
+      "spotCount": 3,
+      "lat": 48.853965650000006,
+      "lng": 10.3441768,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1100703890), ODbL"
+    },
+    {
+      "id": "bopfingen-d17b301e9d",
+      "city": "bopfingen",
+      "label": "Wiesmühlstraße",
+      "street": "Wiesmühlstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bopfingen",
+      "spotCount": 1,
+      "lat": 48.856828050000004,
+      "lng": 10.360701250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1015613096), ODbL"
+    }
+  ]
+}

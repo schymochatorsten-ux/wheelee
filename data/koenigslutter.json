@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "koenigslutter",
+    "name": "Königslutter am Elm",
+    "center": {
+      "lat": 52.252205550000006,
+      "lng": 10.816240700000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "koenigslutter-3a9dbe0e85",
+      "city": "koenigslutter",
+      "label": "Amtsgarten",
+      "street": "Amtsgarten",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Königslutter am Elm",
+      "spotCount": 1,
+      "lat": 52.2502295,
+      "lng": 10.8204743,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1475226761), ODbL"
+    },
+    {
+      "id": "koenigslutter-6436a8f4ca",
+      "city": "koenigslutter",
+      "label": "Bahnhofsplatz 1",
+      "street": "Bahnhofsplatz",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Königslutter am Elm",
+      "spotCount": 2,
+      "lat": 52.25694010000001,
+      "lng": 10.8121053,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1157712903), ODbL"
+    },
+    {
+      "id": "koenigslutter-6e5a1d2013",
+      "city": "koenigslutter",
+      "label": "P5",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Königslutter am Elm",
+      "spotCount": 2,
+      "lat": 52.25213765,
+      "lng": 10.816240700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/488061325), ODbL"
+    },
+    {
+      "id": "koenigslutter-d2f511bc1e",
+      "city": "koenigslutter",
+      "label": "P6",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Königslutter am Elm",
+      "spotCount": 2,
+      "lat": 52.252205550000006,
+      "lng": 10.815322850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/485673304), ODbL"
+    }
+  ]
+}

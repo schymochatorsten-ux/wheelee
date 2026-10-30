@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hessisch-oldendorf",
+    "name": "Hessisch Oldendorf",
+    "center": {
+      "lat": 52.1671939,
+      "lng": 9.2497527
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hessisch-oldendorf-5623cd8167",
+      "city": "hessisch-oldendorf",
+      "label": "Rathaus",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hessisch Oldendorf",
+      "spotCount": 1,
+      "lat": 52.1671939,
+      "lng": 9.2497527,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1772393935), ODbL"
+    }
+  ]
+}

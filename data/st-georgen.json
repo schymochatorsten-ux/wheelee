@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "st-georgen",
+    "name": "St. Georgen im Schwarzwald",
+    "center": {
+      "lat": 48.123905750000006,
+      "lng": 8.3414946
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "st-georgen-48a3c871ac",
+      "city": "st-georgen",
+      "label": "Hauptstraße 27",
+      "street": "Hauptstraße",
+      "houseNumber": "27",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "St. Georgen im Schwarzwald",
+      "spotCount": 2,
+      "lat": 48.124722000000006,
+      "lng": 8.32909635,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/912293319), ODbL"
+    },
+    {
+      "id": "st-georgen-aa9cceef92",
+      "city": "st-georgen",
+      "label": "Industriestraße",
+      "street": "Industriestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "St. Georgen im Schwarzwald",
+      "spotCount": 2,
+      "lat": 48.1238872,
+      "lng": 8.3414946,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/429365639), ODbL"
+    },
+    {
+      "id": "st-georgen-841a09c509",
+      "city": "st-georgen",
+      "label": "Industriestraße",
+      "street": "Industriestraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "St. Georgen im Schwarzwald",
+      "spotCount": 1,
+      "lat": 48.123905750000006,
+      "lng": 8.34155195,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1255827625), ODbL"
+    }
+  ]
+}

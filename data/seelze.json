@@ -29,8 +29,8 @@
     {
       "id": "seelze-93e33ea5be",
       "city": "seelze",
-      "label": "Behindertenparkplatz Seelze",
-      "street": null,
+      "label": "Ebertstraße",
+      "street": "Ebertstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -44,8 +44,8 @@
     {
       "id": "seelze-cf99d99b40",
       "city": "seelze",
-      "label": "Behindertenparkplatz Seelze",
-      "street": null,
+      "label": "Heinrich-Beensen-Straße",
+      "street": "Heinrich-Beensen-Straße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -57,26 +57,11 @@
       "source": "OpenStreetMap (way/218419156), ODbL"
     },
     {
-      "id": "seelze-25cac7c0be",
-      "city": "seelze",
-      "label": "Behindertenparkplatz Seelze",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Seelze",
-      "spotCount": 2,
-      "lat": 52.396809450000006,
-      "lng": 9.6405165,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/262032489), ODbL"
-    },
-    {
       "id": "seelze-c6b7e7dba2",
       "city": "seelze",
-      "label": "Behindertenparkplatz Seelze",
-      "street": null,
-      "houseNumber": null,
+      "label": "Kurzer Kamp 1",
+      "street": "Kurzer Kamp",
+      "houseNumber": "1",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Seelze",
@@ -85,6 +70,21 @@
       "lng": 9.6365175,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/945904214), ODbL"
+    },
+    {
+      "id": "seelze-25cac7c0be",
+      "city": "seelze",
+      "label": "Lange-Feld-Straße 20",
+      "street": "Lange-Feld-Straße",
+      "houseNumber": "20",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Seelze",
+      "spotCount": 2,
+      "lat": 52.396809450000006,
+      "lng": 9.6405165,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/262032489), ODbL"
     }
   ]
 }

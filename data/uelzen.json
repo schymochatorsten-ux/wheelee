@@ -12,10 +12,25 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
+      "id": "uelzen-1be2d2d6d7",
+      "city": "uelzen",
+      "label": "Bahnhofstraße 31",
+      "street": "Bahnhofstraße",
+      "houseNumber": "31",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Uelzen",
+      "spotCount": 1,
+      "lat": 52.9656758,
+      "lng": 10.5566998,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1499467121), ODbL"
+    },
+    {
       "id": "uelzen-9d3d514bc0",
       "city": "uelzen",
-      "label": "Behindertenparkplatz Uelzen",
-      "street": null,
+      "label": "Holdenstedter Straße",
+      "street": "Holdenstedter Straße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -25,36 +40,6 @@
       "lng": 10.528467500000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/46966689), ODbL"
-    },
-    {
-      "id": "uelzen-b532a73cfc",
-      "city": "uelzen",
-      "label": "Behindertenparkplatz Uelzen",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Uelzen",
-      "spotCount": 1,
-      "lat": 52.96957985,
-      "lng": 10.555151850000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/191289957), ODbL"
-    },
-    {
-      "id": "uelzen-1be2d2d6d7",
-      "city": "uelzen",
-      "label": "Behindertenparkplatz Uelzen",
-      "street": null,
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Uelzen",
-      "spotCount": 1,
-      "lat": 52.9656758,
-      "lng": 10.5566998,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1499467121), ODbL"
     },
     {
       "id": "uelzen-989dd2a83c",
@@ -85,6 +70,21 @@
       "lng": 10.545356250000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/182194243), ODbL"
+    },
+    {
+      "id": "uelzen-b532a73cfc",
+      "city": "uelzen",
+      "label": "Uelzen, ZOB",
+      "street": "Uelzen, ZOB",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Uelzen",
+      "spotCount": 1,
+      "lat": 52.96957985,
+      "lng": 10.555151850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/191289957), ODbL"
     }
   ]
 }

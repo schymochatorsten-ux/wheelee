@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hasbergen",
+    "name": "Hasbergen",
+    "center": {
+      "lat": 52.2420004,
+      "lng": 7.95352115
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hasbergen-a2fc93cd79",
+      "city": "hasbergen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hasbergen",
+      "spotCount": 1,
+      "lat": 52.2420004,
+      "lng": 7.95352115,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1569975595), ODbL"
+    }
+  ]
+}

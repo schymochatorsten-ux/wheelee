@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ostbevern",
+    "name": "Ostbevern",
+    "center": {
+      "lat": 52.06721505,
+      "lng": 7.805515250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ostbevern-3278978dfe",
+      "city": "ostbevern",
+      "label": "Schlichtenfelde",
+      "street": "Schlichtenfelde",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ostbevern",
+      "spotCount": 2,
+      "lat": 52.06721505,
+      "lng": 7.805515250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/880653422), ODbL"
+    }
+  ]
+}

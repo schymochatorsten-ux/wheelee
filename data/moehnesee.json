@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "moehnesee",
+    "name": "Möhnesee",
+    "center": {
+      "lat": 51.491873749999996,
+      "lng": 8.0613367
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "moehnesee-5f92016836",
+      "city": "moehnesee",
+      "label": "Brüningser Heide",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Möhnesee",
+      "spotCount": 1,
+      "lat": 51.48931195,
+      "lng": 8.0502252,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/280532708), ODbL"
+    },
+    {
+      "id": "moehnesee-c96deff409",
+      "city": "moehnesee",
+      "label": "Möhnestraße",
+      "street": "Möhnestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Möhnesee",
+      "spotCount": 1,
+      "lat": 51.4912198,
+      "lng": 8.0637083,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/74064188), ODbL"
+    },
+    {
+      "id": "moehnesee-e170c14371",
+      "city": "moehnesee",
+      "label": "Möhnestraße",
+      "street": "Möhnestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Möhnesee",
+      "spotCount": 3,
+      "lat": 51.49228295,
+      "lng": 8.06091355,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/74064192), ODbL"
+    },
+    {
+      "id": "moehnesee-1086b3083c",
+      "city": "moehnesee",
+      "label": "Möhnestraße",
+      "street": "Möhnestraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Möhnesee",
+      "spotCount": 1,
+      "lat": 51.491873749999996,
+      "lng": 8.0613367,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1097648201), ODbL"
+    }
+  ]
+}

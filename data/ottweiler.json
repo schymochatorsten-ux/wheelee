@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "ottweiler",
+    "name": "Ottweiler",
+    "center": {
+      "lat": 49.4143816,
+      "lng": 7.167283600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ottweiler-2e194ea40a",
+      "city": "ottweiler",
+      "label": "Bleichstraße",
+      "street": "Bleichstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ottweiler",
+      "spotCount": 3,
+      "lat": 49.40555865,
+      "lng": 7.1598056,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1300344401), ODbL"
+    },
+    {
+      "id": "ottweiler-9f1ebeabc9",
+      "city": "ottweiler",
+      "label": "Gustav-Stresemann-Weg",
+      "street": "Gustav-Stresemann-Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ottweiler",
+      "spotCount": 2,
+      "lat": 49.4143816,
+      "lng": 7.167283600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1409280678), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "winterberg",
+    "name": "Winterberg",
+    "center": {
+      "lat": 51.1990457,
+      "lng": 8.53313615
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "winterberg-fc0ebd816d",
+      "city": "winterberg",
+      "label": "Am Kurpark",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Winterberg",
+      "spotCount": 5,
+      "lat": 51.195694200000005,
+      "lng": 8.53864395,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/165592462), ODbL"
+    },
+    {
+      "id": "winterberg-dea7820944",
+      "city": "winterberg",
+      "label": "Am Sportplatz",
+      "street": "Am Sportplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Winterberg",
+      "spotCount": 2,
+      "lat": 51.24021065,
+      "lng": 8.55994985,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1125804842), ODbL"
+    },
+    {
+      "id": "winterberg-3b2ea5aa1a",
+      "city": "winterberg",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Winterberg",
+      "spotCount": 1,
+      "lat": 51.1990457,
+      "lng": 8.5327643,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/312951834), ODbL"
+    },
+    {
+      "id": "winterberg-2b467f53fd",
+      "city": "winterberg",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Winterberg",
+      "spotCount": 2,
+      "lat": 51.20027210000001,
+      "lng": 8.53313615,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/989022129), ODbL"
+    },
+    {
+      "id": "winterberg-b74473615f",
+      "city": "winterberg",
+      "label": "Dr.-Suren-Straße 10",
+      "street": "Dr.-Suren-Straße",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Winterberg",
+      "spotCount": 1,
+      "lat": 51.18735435000001,
+      "lng": 8.5114177,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1083337786), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "plochingen",
+    "name": "Plochingen",
+    "center": {
+      "lat": 48.713986750000004,
+      "lng": 9.412161650000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "plochingen-df5400e07b",
+      "city": "plochingen",
+      "label": "Eisenbahnstraße",
+      "street": "Eisenbahnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Plochingen",
+      "spotCount": 1,
+      "lat": 48.7132764,
+      "lng": 9.412161650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/424538435), ODbL"
+    },
+    {
+      "id": "plochingen-365393bc32",
+      "city": "plochingen",
+      "label": "Plochingen ZOB",
+      "street": "Plochingen ZOB",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Plochingen",
+      "spotCount": 3,
+      "lat": 48.713986750000004,
+      "lng": 9.4111695,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/116522243), ODbL"
+    }
+  ]
+}

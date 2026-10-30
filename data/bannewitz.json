@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bannewitz",
+    "name": "Bannewitz",
+    "center": {
+      "lat": 51.0017091,
+      "lng": 13.7440855
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bannewitz-48302a3674",
+      "city": "bannewitz",
+      "label": "Am Nöthnitzgrund",
+      "street": "Am Nöthnitzgrund",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bannewitz",
+      "spotCount": 2,
+      "lat": 51.002982700000004,
+      "lng": 13.745357600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/418934970), ODbL"
+    },
+    {
+      "id": "bannewitz-f2dfbd0bbe",
+      "city": "bannewitz",
+      "label": "Am Nöthnitzgrund",
+      "street": "Am Nöthnitzgrund",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bannewitz",
+      "spotCount": 2,
+      "lat": 51.0017091,
+      "lng": 13.7440855,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/418934973), ODbL"
+    },
+    {
+      "id": "bannewitz-94e0805ce6",
+      "city": "bannewitz",
+      "label": "An der Zschauke",
+      "street": "An der Zschauke",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bannewitz",
+      "spotCount": 1,
+      "lat": 50.99962225,
+      "lng": 13.71865595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/418262339), ODbL"
+    }
+  ]
+}

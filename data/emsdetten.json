@@ -12,10 +12,25 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
+      "id": "emsdetten-065f7ddbec",
+      "city": "emsdetten",
+      "label": "Borghorster Straße",
+      "street": "Borghorster Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Emsdetten",
+      "spotCount": 1,
+      "lat": 52.1678355,
+      "lng": 7.50213475,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1174245969), ODbL"
+    },
+    {
       "id": "emsdetten-80d870c8e4",
       "city": "emsdetten",
-      "label": "Behindertenparkplatz Emsdetten",
-      "street": null,
+      "label": "Buckhoffstraße",
+      "street": "Buckhoffstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -29,8 +44,8 @@
     {
       "id": "emsdetten-e9611a8bc1",
       "city": "emsdetten",
-      "label": "Behindertenparkplatz Emsdetten",
-      "street": null,
+      "label": "Hollefeldstraße",
+      "street": "Hollefeldstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -44,8 +59,8 @@
     {
       "id": "emsdetten-21e46034d2",
       "city": "emsdetten",
-      "label": "Behindertenparkplatz Emsdetten",
-      "street": null,
+      "label": "Hollefeldstraße",
+      "street": "Hollefeldstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -55,21 +70,6 @@
       "lng": 7.5634163,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1160534995), ODbL"
-    },
-    {
-      "id": "emsdetten-065f7ddbec",
-      "city": "emsdetten",
-      "label": "Behindertenparkplatz Emsdetten",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Emsdetten",
-      "spotCount": 1,
-      "lat": 52.1678355,
-      "lng": 7.50213475,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1174245969), ODbL"
     },
     {
       "id": "emsdetten-ce2fb9e41f",

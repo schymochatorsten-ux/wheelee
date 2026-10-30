@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "essenbach",
+    "name": "Essenbach",
+    "center": {
+      "lat": 48.6180942,
+      "lng": 12.2926091
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "essenbach-155de29b24",
+      "city": "essenbach",
+      "label": "Mettenbacher Moos",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Essenbach",
+      "spotCount": 3,
+      "lat": 48.6172016,
+      "lng": 12.28502155,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/992670547), ODbL"
+    },
+    {
+      "id": "essenbach-dc55a833e2",
+      "city": "essenbach",
+      "label": "Wattenbacher Au Süd",
+      "street": "Wattenbacher Au Süd",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Essenbach",
+      "spotCount": 1,
+      "lat": 48.6180942,
+      "lng": 12.2926091,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13912365046), ODbL"
+    }
+  ]
+}

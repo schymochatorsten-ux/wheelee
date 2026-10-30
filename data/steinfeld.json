@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "steinfeld",
+    "name": "Steinfeld (Oldenburg)",
+    "center": {
+      "lat": 52.61704660000001,
+      "lng": 8.2131728
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "steinfeld-e81a363ae1",
+      "city": "steinfeld",
+      "label": "Dorfstraße",
+      "street": "Dorfstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Steinfeld (Oldenburg)",
+      "spotCount": 1,
+      "lat": 52.61704660000001,
+      "lng": 8.2131728,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1351856778), ODbL"
+    },
+    {
+      "id": "steinfeld-38a5454c09",
+      "city": "steinfeld",
+      "label": "Industriestraße",
+      "street": "Industriestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Steinfeld (Oldenburg)",
+      "spotCount": 1,
+      "lat": 52.59223,
+      "lng": 8.197798800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/385632251), ODbL"
+    }
+  ]
+}

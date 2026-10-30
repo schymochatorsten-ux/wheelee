@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "neuhausen-auf-den-fildern",
+    "name": "Neuhausen auf den Fildern",
+    "center": {
+      "lat": 48.685112800000006,
+      "lng": 9.2752713
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuhausen-auf-den-fildern-e3573cbee2",
+      "city": "neuhausen-auf-den-fildern",
+      "label": "Albstraße 3",
+      "street": "Albstraße",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neuhausen auf den Fildern",
+      "spotCount": 1,
+      "lat": 48.6871695,
+      "lng": 9.2723756,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10800037775), ODbL"
+    },
+    {
+      "id": "neuhausen-auf-den-fildern-bf6d64a132",
+      "city": "neuhausen-auf-den-fildern",
+      "label": "Friedhofstraße",
+      "street": "Friedhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neuhausen auf den Fildern",
+      "spotCount": 1,
+      "lat": 48.685112800000006,
+      "lng": 9.2752713,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10800041612), ODbL"
+    },
+    {
+      "id": "neuhausen-auf-den-fildern-21ce0388fa",
+      "city": "neuhausen-auf-den-fildern",
+      "label": "Friedhofstraße",
+      "street": "Friedhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neuhausen auf den Fildern",
+      "spotCount": 1,
+      "lat": 48.6851149,
+      "lng": 9.275223800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10800057541), ODbL"
+    },
+    {
+      "id": "neuhausen-auf-den-fildern-46d73fc3b6",
+      "city": "neuhausen-auf-den-fildern",
+      "label": "Kirchplatz",
+      "street": "Kirchplatz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neuhausen auf den Fildern",
+      "spotCount": 1,
+      "lat": 48.682368600000004,
+      "lng": 9.27888485,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1243453817), ODbL"
+    },
+    {
+      "id": "neuhausen-auf-den-fildern-10312294c3",
+      "city": "neuhausen-auf-den-fildern",
+      "label": "Kirchplatz",
+      "street": "Kirchplatz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neuhausen auf den Fildern",
+      "spotCount": 1,
+      "lat": 48.6823543,
+      "lng": 9.278789,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1243453818), ODbL"
+    },
+    {
+      "id": "neuhausen-auf-den-fildern-58c43aa476",
+      "city": "neuhausen-auf-den-fildern",
+      "label": "Scharnhäuser Straße",
+      "street": "Scharnhäuser Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuhausen auf den Fildern",
+      "spotCount": 1,
+      "lat": 48.68445415000001,
+      "lng": 9.273355800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/136794599), ODbL"
+    }
+  ]
+}

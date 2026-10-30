@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "illertissen",
+    "name": "Illertissen",
+    "center": {
+      "lat": 48.2231317,
+      "lng": 10.10243105
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "illertissen-8275f28cc6",
+      "city": "illertissen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Illertissen",
+      "spotCount": 2,
+      "lat": 48.2231413,
+      "lng": 10.1002254,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/444507401), ODbL"
+    },
+    {
+      "id": "illertissen-0b61eb8657",
+      "city": "illertissen",
+      "label": "Hauptstraße 36",
+      "street": "Hauptstraße",
+      "houseNumber": "36",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Illertissen",
+      "spotCount": 1,
+      "lat": 48.2231317,
+      "lng": 10.10243105,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1302208900), ODbL"
+    },
+    {
+      "id": "illertissen-5749335b76",
+      "city": "illertissen",
+      "label": "Ulmer Straße 5",
+      "street": "Ulmer Straße",
+      "houseNumber": "5",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Illertissen",
+      "spotCount": 1,
+      "lat": 48.22312865000001,
+      "lng": 10.10249265,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1302208899), ODbL"
+    }
+  ]
+}

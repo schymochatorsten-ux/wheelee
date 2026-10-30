@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "schwarzenbek",
+    "name": "Schwarzenbek",
+    "center": {
+      "lat": 53.50287490000001,
+      "lng": 10.47890785
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schwarzenbek-96dc83d2e3",
+      "city": "schwarzenbek",
+      "label": "Compestraße",
+      "street": "Compestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwarzenbek",
+      "spotCount": 1,
+      "lat": 53.502850050000006,
+      "lng": 10.47863375,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1349579512), ODbL"
+    },
+    {
+      "id": "schwarzenbek-ea90cd99b4",
+      "city": "schwarzenbek",
+      "label": "Compestraße 4",
+      "street": "Compestraße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwarzenbek",
+      "spotCount": 1,
+      "lat": 53.50287490000001,
+      "lng": 10.47887715,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1349579513), ODbL"
+    },
+    {
+      "id": "schwarzenbek-d73b1d043e",
+      "city": "schwarzenbek",
+      "label": "Compestraße 4",
+      "street": "Compestraße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwarzenbek",
+      "spotCount": 2,
+      "lat": 53.502690300000005,
+      "lng": 10.47890785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1364063612), ODbL"
+    },
+    {
+      "id": "schwarzenbek-8038a5cd14",
+      "city": "schwarzenbek",
+      "label": "Compestraße 8",
+      "street": "Compestraße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwarzenbek",
+      "spotCount": 1,
+      "lat": 53.503456650000004,
+      "lng": 10.479011400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1350449676), ODbL"
+    }
+  ]
+}

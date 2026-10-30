@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "peiting",
+    "name": "Peiting",
+    "center": {
+      "lat": 47.8008061,
+      "lng": 10.9267206
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "peiting-9f3e2a6e9c",
+      "city": "peiting",
+      "label": "Hauptplatz",
+      "street": "Hauptplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Peiting",
+      "spotCount": 1,
+      "lat": 47.796482100000006,
+      "lng": 10.9226769,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/39816305), ODbL"
+    },
+    {
+      "id": "peiting-69375f19f8",
+      "city": "peiting",
+      "label": "Müllerstraße",
+      "street": "Müllerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Peiting",
+      "spotCount": 1,
+      "lat": 47.8008061,
+      "lng": 10.9267206,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1533272770), ODbL"
+    }
+  ]
+}

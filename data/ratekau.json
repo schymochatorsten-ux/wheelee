@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "ratekau",
+    "name": "Ratekau",
+    "center": {
+      "lat": 53.9479483,
+      "lng": 10.7347727
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ratekau-94c2dc393a",
+      "city": "ratekau",
+      "label": "Bäderstraße 24",
+      "street": "Bäderstraße",
+      "houseNumber": "24",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ratekau",
+      "spotCount": 1,
+      "lat": 53.947650900000006,
+      "lng": 10.7347727,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4895534575), ODbL"
+    },
+    {
+      "id": "ratekau-9b18791356",
+      "city": "ratekau",
+      "label": "Berliner Straße",
+      "street": "Berliner Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ratekau",
+      "spotCount": 1,
+      "lat": 53.9233593,
+      "lng": 10.736394750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1102556217), ODbL"
+    },
+    {
+      "id": "ratekau-d2c13d1163",
+      "city": "ratekau",
+      "label": "Fuchsbergstraße 15",
+      "street": "Fuchsbergstraße",
+      "houseNumber": "15",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ratekau",
+      "spotCount": 1,
+      "lat": 53.965738650000006,
+      "lng": 10.82064075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1533349818), ODbL"
+    },
+    {
+      "id": "ratekau-262a4ff86e",
+      "city": "ratekau",
+      "label": "Rosenstraße",
+      "street": "Rosenstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ratekau",
+      "spotCount": 1,
+      "lat": 53.9479483,
+      "lng": 10.733609300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6356751116), ODbL"
+    },
+    {
+      "id": "ratekau-988f3d6464",
+      "city": "ratekau",
+      "label": "Rosenstraße 1",
+      "street": "Rosenstraße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ratekau",
+      "spotCount": 1,
+      "lat": 53.9480371,
+      "lng": 10.733196000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6356751115), ODbL"
+    }
+  ]
+}

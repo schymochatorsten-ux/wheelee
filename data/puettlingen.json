@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "puettlingen",
+    "name": "Püttlingen",
+    "center": {
+      "lat": 49.290112050000005,
+      "lng": 6.8845479
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "puettlingen-11f6e92271",
+      "city": "puettlingen",
+      "label": "Am Marktplatz 12",
+      "street": "Am Marktplatz",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Püttlingen",
+      "spotCount": 1,
+      "lat": 49.288894,
+      "lng": 6.8845479,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/304669043), ODbL"
+    },
+    {
+      "id": "puettlingen-0fc6a72ad2",
+      "city": "puettlingen",
+      "label": "Platz Saint-Michel",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Püttlingen",
+      "spotCount": 2,
+      "lat": 49.290112050000005,
+      "lng": 6.88364,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/607463797), ODbL"
+    }
+  ]
+}

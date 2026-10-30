@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "schwaikheim",
+    "name": "Schwaikheim",
+    "center": {
+      "lat": 48.86887540000001,
+      "lng": 9.356203350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schwaikheim-9e2ec57010",
+      "city": "schwaikheim",
+      "label": "Fritz-Müller-Allee",
+      "street": "Fritz-Müller-Allee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Schwaikheim",
+      "spotCount": 2,
+      "lat": 48.86887540000001,
+      "lng": 9.356203350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/203880305), ODbL"
+    },
+    {
+      "id": "schwaikheim-e5bfad7143",
+      "city": "schwaikheim",
+      "label": "Schwaikheim Bf",
+      "street": "Schwaikheim Bf",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Schwaikheim",
+      "spotCount": 2,
+      "lat": 48.86868075,
+      "lng": 9.355035950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1219050466), ODbL"
+    }
+  ]
+}

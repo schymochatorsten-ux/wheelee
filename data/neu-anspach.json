@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "neu-anspach",
+    "name": "Neu-Anspach",
+    "center": {
+      "lat": 50.3112549,
+      "lng": 8.5218126
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neu-anspach-a8af393ae1",
+      "city": "neu-anspach",
+      "label": "An der Lehmkaut 4",
+      "street": "An der Lehmkaut",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neu-Anspach",
+      "spotCount": 5,
+      "lat": 50.3112549,
+      "lng": 8.5218126,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9901926725), ODbL"
+    }
+  ]
+}

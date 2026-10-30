@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "crimmitschau",
+    "name": "Crimmitschau",
+    "center": {
+      "lat": 50.813613600000004,
+      "lng": 12.387428150000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "crimmitschau-ef05b0fef1",
+      "city": "crimmitschau",
+      "label": "City Parkhaus",
+      "street": "Parkhausstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Crimmitschau",
+      "spotCount": 4,
+      "lat": 50.813613600000004,
+      "lng": 12.38866815,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/54209535), ODbL"
+    },
+    {
+      "id": "crimmitschau-07db129287",
+      "city": "crimmitschau",
+      "label": "Johannisgasse",
+      "street": "Johannisgasse",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Crimmitschau",
+      "spotCount": 1,
+      "lat": 50.816253800000005,
+      "lng": 12.387428150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/931814441), ODbL"
+    },
+    {
+      "id": "crimmitschau-b4d4115f12",
+      "city": "crimmitschau",
+      "label": "Leipziger Straße 90",
+      "street": "Leipziger Straße",
+      "houseNumber": "90",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Crimmitschau",
+      "spotCount": 3,
+      "lat": 50.82323005000001,
+      "lng": 12.3878011,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/598645282), ODbL"
+    },
+    {
+      "id": "crimmitschau-1f0e96aff5",
+      "city": "crimmitschau",
+      "label": "Mannichswalder Straße",
+      "street": "Mannichswalder Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Crimmitschau",
+      "spotCount": 1,
+      "lat": 50.816208,
+      "lng": 12.383354650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/931909675), ODbL"
+    },
+    {
+      "id": "crimmitschau-07813a1034",
+      "city": "crimmitschau",
+      "label": "Pestalozzistraße",
+      "street": "Pestalozzistraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Crimmitschau",
+      "spotCount": 3,
+      "lat": 50.81191665,
+      "lng": 12.386597600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/385260378), ODbL"
+    },
+    {
+      "id": "crimmitschau-449d15a260",
+      "city": "crimmitschau",
+      "label": "Pestalozzistraße 37",
+      "street": "Pestalozzistraße",
+      "houseNumber": "37",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Crimmitschau",
+      "spotCount": 9,
+      "lat": 50.80899505000001,
+      "lng": 12.384671050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1458314603), ODbL"
+    },
+    {
+      "id": "crimmitschau-d08f5a9040",
+      "city": "crimmitschau",
+      "label": "Werdauer Straße 26",
+      "street": "Werdauer Straße",
+      "houseNumber": "26",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Crimmitschau",
+      "spotCount": 2,
+      "lat": 50.8107318,
+      "lng": 12.389399350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1568642433), ODbL"
+    }
+  ]
+}

@@ -14,9 +14,9 @@
     {
       "id": "floersheim-9ad5e199d1",
       "city": "floersheim",
-      "label": "Behindertenparkplatz Flörsheim am Main",
-      "street": null,
-      "houseNumber": null,
+      "label": "Frankfurter Straße 23",
+      "street": "Frankfurter Straße",
+      "houseNumber": "23",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Flörsheim am Main",
@@ -27,26 +27,11 @@
       "source": "OpenStreetMap (way/539914527), ODbL"
     },
     {
-      "id": "floersheim-e873d56aaf",
-      "city": "floersheim",
-      "label": "Behindertenparkplatz Flörsheim am Main",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Flörsheim am Main",
-      "spotCount": 2,
-      "lat": 50.01123535000001,
-      "lng": 8.429793400000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1018237074), ODbL"
-    },
-    {
       "id": "floersheim-d605656e4b",
       "city": "floersheim",
-      "label": "Behindertenparkplatz Flörsheim am Main",
-      "street": null,
-      "houseNumber": null,
+      "label": "Grabenstraße 30",
+      "street": "Grabenstraße",
+      "houseNumber": "30",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Flörsheim am Main",
@@ -57,25 +42,10 @@
       "source": "OpenStreetMap (way/1018237075), ODbL"
     },
     {
-      "id": "floersheim-608bde3e17",
-      "city": "floersheim",
-      "label": "Behindertenparkplatz Flörsheim am Main",
-      "street": null,
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Flörsheim am Main",
-      "spotCount": 1,
-      "lat": 50.0434959,
-      "lng": 8.411299450000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1118812582), ODbL"
-    },
-    {
       "id": "floersheim-7c730f3ca3",
       "city": "floersheim",
-      "label": "Behindertenparkplatz Flörsheim am Main",
-      "street": null,
+      "label": "Johannispfad",
+      "street": "Johannispfad",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,
@@ -87,10 +57,25 @@
       "source": "OpenStreetMap (way/1118812595), ODbL"
     },
     {
+      "id": "floersheim-e873d56aaf",
+      "city": "floersheim",
+      "label": "Konrad-Adenauer-Ufer",
+      "street": "Konrad-Adenauer-Ufer",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Flörsheim am Main",
+      "spotCount": 2,
+      "lat": 50.01123535000001,
+      "lng": 8.429793400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1018237074), ODbL"
+    },
+    {
       "id": "floersheim-7980fb958c",
       "city": "floersheim",
-      "label": "Behindertenparkplatz Flörsheim am Main",
-      "street": null,
+      "label": "Konrad-Adenauer-Ufer",
+      "street": "Konrad-Adenauer-Ufer",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,
@@ -104,8 +89,8 @@
     {
       "id": "floersheim-e83ffe7dd1",
       "city": "floersheim",
-      "label": "Behindertenparkplatz Flörsheim am Main",
-      "street": null,
+      "label": "Konrad-Adenauer-Ufer",
+      "street": "Konrad-Adenauer-Ufer",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,
@@ -115,6 +100,21 @@
       "lng": 8.429316700000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1540246874), ODbL"
+    },
+    {
+      "id": "floersheim-608bde3e17",
+      "city": "floersheim",
+      "label": "Oberbach",
+      "street": "Oberbach",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Flörsheim am Main",
+      "spotCount": 1,
+      "lat": 50.0434959,
+      "lng": 8.411299450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1118812582), ODbL"
     }
   ]
 }

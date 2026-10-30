@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "neuenburg",
+    "name": "Neuenburg am Rhein",
+    "center": {
+      "lat": 47.8143595,
+      "lng": 7.564036300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuenburg-398a607d2e",
+      "city": "neuenburg",
+      "label": "Beim Bahnhof",
+      "street": "Beim Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neuenburg am Rhein",
+      "spotCount": 2,
+      "lat": 47.8112666,
+      "lng": 7.564036300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1418889802), ODbL"
+    },
+    {
+      "id": "neuenburg-78236a4991",
+      "city": "neuenburg",
+      "label": "Friedrich-Hecker-Weg",
+      "street": "Friedrich-Hecker-Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuenburg am Rhein",
+      "spotCount": 3,
+      "lat": 47.8213605,
+      "lng": 7.5674712500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/630382693), ODbL"
+    },
+    {
+      "id": "neuenburg-a6da6280af",
+      "city": "neuenburg",
+      "label": "Salzstraße 2",
+      "street": "Salzstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuenburg am Rhein",
+      "spotCount": 1,
+      "lat": 47.8143595,
+      "lng": 7.5614242,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4597827590), ODbL"
+    }
+  ]
+}

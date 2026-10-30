@@ -12,55 +12,10 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "naumburg-b5b96205d3",
-      "city": "naumburg",
-      "label": "Behindertenparkplatz Naumburg (Saale)",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Naumburg (Saale)",
-      "spotCount": 3,
-      "lat": 51.146995700000005,
-      "lng": 11.825567750000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/118819471), ODbL"
-    },
-    {
-      "id": "naumburg-1e60bc75bc",
-      "city": "naumburg",
-      "label": "Behindertenparkplatz Naumburg (Saale)",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Naumburg (Saale)",
-      "spotCount": 1,
-      "lat": 51.1346283,
-      "lng": 11.7235145,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/119067374), ODbL"
-    },
-    {
-      "id": "naumburg-0a84aca81b",
-      "city": "naumburg",
-      "label": "Behindertenparkplatz Naumburg (Saale)",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Naumburg (Saale)",
-      "spotCount": 3,
-      "lat": 51.149906200000004,
-      "lng": 11.8209376,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/189272519), ODbL"
-    },
-    {
       "id": "naumburg-346f681c4b",
       "city": "naumburg",
-      "label": "Behindertenparkplatz Naumburg (Saale)",
-      "street": null,
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
       "timeRestriction": null,
@@ -70,21 +25,6 @@
       "lng": 11.79972335,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/194069319), ODbL"
-    },
-    {
-      "id": "naumburg-fcb7138ec0",
-      "city": "naumburg",
-      "label": "Behindertenparkplatz Naumburg (Saale)",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Naumburg (Saale)",
-      "spotCount": 3,
-      "lat": 51.1366989,
-      "lng": 11.7223373,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1124219885), ODbL"
     },
     {
       "id": "naumburg-dbfdaa1880",
@@ -102,6 +42,36 @@
       "source": "OpenStreetMap (way/188964937), ODbL"
     },
     {
+      "id": "naumburg-0a84aca81b",
+      "city": "naumburg",
+      "label": "Emil-Kraatz-Straße",
+      "street": "Emil-Kraatz-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Naumburg (Saale)",
+      "spotCount": 3,
+      "lat": 51.149906200000004,
+      "lng": 11.8209376,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/189272519), ODbL"
+    },
+    {
+      "id": "naumburg-1e60bc75bc",
+      "city": "naumburg",
+      "label": "Flemminger Weg",
+      "street": "Flemminger Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Naumburg (Saale)",
+      "spotCount": 1,
+      "lat": 51.1346283,
+      "lng": 11.7235145,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/119067374), ODbL"
+    },
+    {
       "id": "naumburg-84d4aa3bff",
       "city": "naumburg",
       "label": "Rudelsburg Bad kösen",
@@ -115,6 +85,36 @@
       "lng": 11.708255450000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/290355549), ODbL"
+    },
+    {
+      "id": "naumburg-fcb7138ec0",
+      "city": "naumburg",
+      "label": "Rudolf-Breitscheid-Straße 2",
+      "street": "Rudolf-Breitscheid-Straße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Naumburg (Saale)",
+      "spotCount": 3,
+      "lat": 51.1366989,
+      "lng": 11.7223373,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1124219885), ODbL"
+    },
+    {
+      "id": "naumburg-b5b96205d3",
+      "city": "naumburg",
+      "label": "Weißenfelser Straße",
+      "street": "Weißenfelser Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Naumburg (Saale)",
+      "spotCount": 3,
+      "lat": 51.146995700000005,
+      "lng": 11.825567750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/118819471), ODbL"
     }
   ]
 }

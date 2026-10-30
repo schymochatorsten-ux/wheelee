@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "erkner",
+    "name": "Erkner",
+    "center": {
+      "lat": 52.420757800000004,
+      "lng": 13.752758750000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "erkner-9cfea18010",
+      "city": "erkner",
+      "label": "Berliner Straße 4",
+      "street": "Berliner Straße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Erkner",
+      "spotCount": 2,
+      "lat": 52.42771535,
+      "lng": 13.748057600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/915386655), ODbL"
+    },
+    {
+      "id": "erkner-defc71bc4b",
+      "city": "erkner",
+      "label": "Kirchweg",
+      "street": "Kirchweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Sa 07:00-22:00",
+      "district": "Erkner",
+      "spotCount": 3,
+      "lat": 52.420757800000004,
+      "lng": 13.752758750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/202759078), ODbL"
+    },
+    {
+      "id": "erkner-e6ebb84044",
+      "city": "erkner",
+      "label": "Parkplatz E",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Erkner",
+      "spotCount": 24,
+      "lat": 52.3920887,
+      "lng": 13.78836205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1146910113), ODbL"
+    }
+  ]
+}

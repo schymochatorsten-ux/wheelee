@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "suedheide",
+    "name": "Südheide",
+    "center": {
+      "lat": 52.83474435000001,
+      "lng": 10.0886475
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "suedheide-7077fa1391",
+      "city": "suedheide",
+      "label": "Celler Straße",
+      "street": "Celler Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Sa 07:30-21:00",
+      "district": "Südheide",
+      "spotCount": 2,
+      "lat": 52.8291752,
+      "lng": 10.08644005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/38137406), ODbL"
+    },
+    {
+      "id": "suedheide-df17ce5c35",
+      "city": "suedheide",
+      "label": "Junkernstraße",
+      "street": "Junkernstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Südheide",
+      "spotCount": 3,
+      "lat": 52.83474435000001,
+      "lng": 10.08846015,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1528170871), ODbL"
+    },
+    {
+      "id": "suedheide-a23a842621",
+      "city": "suedheide",
+      "label": "Junkernstraße 19",
+      "street": "Junkernstraße",
+      "houseNumber": "19",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Südheide",
+      "spotCount": 1,
+      "lat": 52.835231300000004,
+      "lng": 10.0886475,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1528170870), ODbL"
+    },
+    {
+      "id": "suedheide-9a09fc436a",
+      "city": "suedheide",
+      "label": "Siedenholzbahn",
+      "street": "Siedenholzbahn",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Südheide",
+      "spotCount": 1,
+      "lat": 52.81117085,
+      "lng": 10.25909305,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1073817401), ODbL"
+    }
+  ]
+}

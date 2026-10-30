@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "peissenberg",
+    "name": "Peißenberg",
+    "center": {
+      "lat": 47.7981605,
+      "lng": 11.063100200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "peissenberg-94b41e8dc3",
+      "city": "peissenberg",
+      "label": "Bergwerkstraße",
+      "street": "Bergwerkstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Peißenberg",
+      "spotCount": 3,
+      "lat": 47.7978481,
+      "lng": 11.060660050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/479697490), ODbL"
+    },
+    {
+      "id": "peissenberg-cca8ce36e5",
+      "city": "peissenberg",
+      "label": "Bergwerkstraße 2",
+      "street": "Bergwerkstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Peißenberg",
+      "spotCount": 3,
+      "lat": 47.7981605,
+      "lng": 11.061006,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/179141793), ODbL"
+    },
+    {
+      "id": "peissenberg-7ff44851d6",
+      "city": "peissenberg",
+      "label": "Dehner Parkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Peißenberg",
+      "spotCount": 1,
+      "lat": 47.80630405,
+      "lng": 11.08713915,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/90687774), ODbL"
+    },
+    {
+      "id": "peissenberg-8e71b97b62",
+      "city": "peissenberg",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Peißenberg",
+      "spotCount": 1,
+      "lat": 47.80293545000001,
+      "lng": 11.077349,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/90911242), ODbL"
+    },
+    {
+      "id": "peissenberg-972c2fdab3",
+      "city": "peissenberg",
+      "label": "Kundenparkplatz Kaufland",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Peißenberg",
+      "spotCount": 1,
+      "lat": 47.79360665,
+      "lng": 11.061829550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/326757545), ODbL"
+    },
+    {
+      "id": "peissenberg-a59a487f69",
+      "city": "peissenberg",
+      "label": "Moosleitenparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Peißenberg",
+      "spotCount": 1,
+      "lat": 47.797781650000005,
+      "lng": 11.063100200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/141822235), ODbL"
+    }
+  ]
+}

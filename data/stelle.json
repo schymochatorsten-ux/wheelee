@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "stelle",
+    "name": "Stelle",
+    "center": {
+      "lat": 53.36877045,
+      "lng": 10.147562050000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "stelle-2a7a5961a9",
+      "city": "stelle",
+      "label": "An der Bahn",
+      "street": "An der Bahn",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Stelle",
+      "spotCount": 3,
+      "lat": 53.36847175,
+      "lng": 10.147562050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1365738545), ODbL"
+    },
+    {
+      "id": "stelle-3430874505",
+      "city": "stelle",
+      "label": "Kiefernbruch",
+      "street": "Kiefernbruch",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stelle",
+      "spotCount": 3,
+      "lat": 53.37430545,
+      "lng": 10.1222109,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1247825167), ODbL"
+    },
+    {
+      "id": "stelle-7ef485518c",
+      "city": "stelle",
+      "label": "P+R Ashausen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Stelle",
+      "spotCount": 6,
+      "lat": 53.36877045,
+      "lng": 10.147770650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/352349307), ODbL"
+    }
+  ]
+}

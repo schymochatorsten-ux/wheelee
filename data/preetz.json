@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "preetz",
+    "name": "Preetz",
+    "center": {
+      "lat": 54.24371645,
+      "lng": 10.28057475
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "preetz-f109cc31b1",
+      "city": "preetz",
+      "label": "Kieler Straße",
+      "street": "Kieler Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Preetz",
+      "spotCount": 2,
+      "lat": 54.24371645,
+      "lng": 10.277254600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/48470971), ODbL"
+    },
+    {
+      "id": "preetz-974ed8ab6e",
+      "city": "preetz",
+      "label": "Parkplatz der Sparkasse",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Preetz",
+      "spotCount": 1,
+      "lat": 54.2359979,
+      "lng": 10.28057475,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/48876050), ODbL"
+    }
+  ]
+}

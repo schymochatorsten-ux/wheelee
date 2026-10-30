@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "bad-arolsen",
+    "name": "Bad Arolsen",
+    "center": {
+      "lat": 51.37653935,
+      "lng": 9.059738000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-arolsen-babeeee9f7",
+      "city": "bad-arolsen",
+      "label": "Arobella",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Arolsen",
+      "spotCount": 1,
+      "lat": 51.37653935,
+      "lng": 9.00985865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31622844), ODbL"
+    },
+    {
+      "id": "bad-arolsen-a00a8fd9c6",
+      "city": "bad-arolsen",
+      "label": "Behindertenparkplatz Bad Arolsen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Arolsen",
+      "spotCount": 8,
+      "lat": 51.3729614,
+      "lng": 9.059738000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4453889022), ODbL"
+    },
+    {
+      "id": "bad-arolsen-c9f355a252",
+      "city": "bad-arolsen",
+      "label": "Dachshöhle",
+      "street": "Dachshöhle",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Arolsen",
+      "spotCount": 1,
+      "lat": 51.38396695,
+      "lng": 9.06559685,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1538474996), ODbL"
+    },
+    {
+      "id": "bad-arolsen-8d23ff856b",
+      "city": "bad-arolsen",
+      "label": "Zolderstraße",
+      "street": "Zolderstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Arolsen",
+      "spotCount": 1,
+      "lat": 51.37489910000001,
+      "lng": 9.01791905,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/338304357), ODbL"
+    }
+  ]
+}

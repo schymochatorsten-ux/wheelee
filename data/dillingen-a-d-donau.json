@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "dillingen-a-d-donau",
+    "name": "Dillingen a.d.Donau",
+    "center": {
+      "lat": 48.5807751,
+      "lng": 10.491479300000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dillingen-a-d-donau-5395e40a6d",
+      "city": "dillingen-a-d-donau",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dillingen a.d.Donau",
+      "spotCount": 1,
+      "lat": 48.5807751,
+      "lng": 10.488691750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/441730581), ODbL"
+    },
+    {
+      "id": "dillingen-a-d-donau-98d8ae49ff",
+      "city": "dillingen-a-d-donau",
+      "label": "EDEKA center Parkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dillingen a.d.Donau",
+      "spotCount": 1,
+      "lat": 48.58657815000001,
+      "lng": 10.514196550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/41900267), ODbL"
+    },
+    {
+      "id": "dillingen-a-d-donau-293d5ffc70",
+      "city": "dillingen-a-d-donau",
+      "label": "Krankenhausparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Dillingen a.d.Donau",
+      "spotCount": 1,
+      "lat": 48.574996850000005,
+      "lng": 10.47846975,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/202449358), ODbL"
+    },
+    {
+      "id": "dillingen-a-d-donau-7c06a85dfa",
+      "city": "dillingen-a-d-donau",
+      "label": "P2 Colleg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dillingen a.d.Donau",
+      "spotCount": 1,
+      "lat": 48.575295,
+      "lng": 10.491479300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/38229489), ODbL"
+    }
+  ]
+}

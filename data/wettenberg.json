@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wettenberg",
+    "name": "Wettenberg",
+    "center": {
+      "lat": 50.61430355,
+      "lng": 8.6346862
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wettenberg-5eb13331a5",
+      "city": "wettenberg",
+      "label": "Burgstraße",
+      "street": "Burgstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wettenberg",
+      "spotCount": 1,
+      "lat": 50.61430355,
+      "lng": 8.6346862,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/993859710), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "wallduern",
+    "name": "Walldürn",
+    "center": {
+      "lat": 49.5836044,
+      "lng": 9.3671276
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wallduern-f1a1108f15",
+      "city": "wallduern",
+      "label": "Bettendorfring",
+      "street": "Bettendorfring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Walldürn",
+      "spotCount": 2,
+      "lat": 49.5836044,
+      "lng": 9.37012725,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1149292941), ODbL"
+    },
+    {
+      "id": "wallduern-3138c277ad",
+      "city": "wallduern",
+      "label": "Beuchertsmühle",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Walldürn",
+      "spotCount": 2,
+      "lat": 49.60398120000001,
+      "lng": 9.34048315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/23775477), ODbL"
+    },
+    {
+      "id": "wallduern-69e408bfc6",
+      "city": "wallduern",
+      "label": "Eisenbahnstraße",
+      "street": "Eisenbahnstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Walldürn",
+      "spotCount": 1,
+      "lat": 49.578152900000006,
+      "lng": 9.3671276,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1293273454), ODbL"
+    },
+    {
+      "id": "wallduern-805fb6fc3f",
+      "city": "wallduern",
+      "label": "Eisenbahnstraße",
+      "street": "Eisenbahnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Walldürn",
+      "spotCount": 1,
+      "lat": 49.57810975,
+      "lng": 9.367052300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1293273455), ODbL"
+    }
+  ]
+}

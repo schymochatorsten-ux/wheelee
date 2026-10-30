@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "wittenberge",
+    "name": "Wittenberge",
+    "center": {
+      "lat": 53.00544475,
+      "lng": 11.763492900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wittenberge-84d84a6035",
+      "city": "wittenberge",
+      "label": "Liebigstraße",
+      "street": "Liebigstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wittenberge",
+      "spotCount": 1,
+      "lat": 52.9987872,
+      "lng": 11.763492900000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5860174899), ODbL"
+    },
+    {
+      "id": "wittenberge-ecf478cfc1",
+      "city": "wittenberge",
+      "label": "Perleberger Straße 117",
+      "street": "Perleberger Straße",
+      "houseNumber": "117",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wittenberge",
+      "spotCount": 2,
+      "lat": 53.00544475,
+      "lng": 11.757623250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/135322570), ODbL"
+    }
+  ]
+}

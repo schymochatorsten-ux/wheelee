@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "eching",
+    "name": "Eching",
+    "center": {
+      "lat": 48.307242900000006,
+      "lng": 11.639626400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eching-753d1b4d02",
+      "city": "eching",
+      "label": "Fraunhoferstraße",
+      "street": "Fraunhoferstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eching",
+      "spotCount": 1,
+      "lat": 48.307242900000006,
+      "lng": 11.639626400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1117452721), ODbL"
+    },
+    {
+      "id": "eching-3436471580",
+      "city": "eching",
+      "label": "P&R S-Bahn Eching",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "04:00-03:00",
+      "district": "Eching",
+      "spotCount": 2,
+      "lat": 48.303189950000004,
+      "lng": 11.61654925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/364331872), ODbL"
+    }
+  ]
+}

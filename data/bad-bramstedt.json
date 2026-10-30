@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "bad-bramstedt",
+    "name": "Bad Bramstedt",
+    "center": {
+      "lat": 53.903680800000004,
+      "lng": 9.8934406
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-bramstedt-0e3761f006",
+      "city": "bad-bramstedt",
+      "label": "Birkenweg",
+      "street": "Birkenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Bramstedt",
+      "spotCount": 1,
+      "lat": 53.9035853,
+      "lng": 9.890892650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/241072332), ODbL"
+    },
+    {
+      "id": "bad-bramstedt-e98fc91aea",
+      "city": "bad-bramstedt",
+      "label": "Birkenweg",
+      "street": "Birkenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Bramstedt",
+      "spotCount": 2,
+      "lat": 53.904764300000004,
+      "lng": 9.889199050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1287033779), ODbL"
+    },
+    {
+      "id": "bad-bramstedt-07c133c2a1",
+      "city": "bad-bramstedt",
+      "label": "Oskar-Alexander-Straße",
+      "street": "Oskar-Alexander-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Bramstedt",
+      "spotCount": 1,
+      "lat": 53.9033007,
+      "lng": 9.8940924,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5795001794), ODbL"
+    },
+    {
+      "id": "bad-bramstedt-4c73226a63",
+      "city": "bad-bramstedt",
+      "label": "Oskar-Alexander-Straße",
+      "street": "Oskar-Alexander-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Bramstedt",
+      "spotCount": 1,
+      "lat": 53.9047739,
+      "lng": 9.895205500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5858750397), ODbL"
+    },
+    {
+      "id": "bad-bramstedt-ee753f1e57",
+      "city": "bad-bramstedt",
+      "label": "Oskar-Alexander-Straße 26",
+      "street": "Oskar-Alexander-Straße",
+      "houseNumber": "26",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Bramstedt",
+      "spotCount": 1,
+      "lat": 53.903680800000004,
+      "lng": 9.8934406,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5860151872), ODbL"
+    }
+  ]
+}

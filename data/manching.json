@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "manching",
+    "name": "Manching",
+    "center": {
+      "lat": 48.716536000000005,
+      "lng": 11.478494350000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "manching-63e1aedcb6",
+      "city": "manching",
+      "label": "Gerberstraße",
+      "street": "Gerberstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Manching",
+      "spotCount": 1,
+      "lat": 48.7126955,
+      "lng": 11.47698925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1536121690), ODbL"
+    },
+    {
+      "id": "manching-4ab1579054",
+      "city": "manching",
+      "label": "Mitterstraße",
+      "street": "Mitterstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Manching",
+      "spotCount": 1,
+      "lat": 48.7156657,
+      "lng": 11.478494350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1535825360), ODbL"
+    },
+    {
+      "id": "manching-5ef0111c23",
+      "city": "manching",
+      "label": "Niederfelder Straße 1",
+      "street": "Niederfelder Straße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Manching",
+      "spotCount": 1,
+      "lat": 48.71747955,
+      "lng": 11.4931975,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1489476227), ODbL"
+    },
+    {
+      "id": "manching-69b9bb04d6",
+      "city": "manching",
+      "label": "Parkplatz Realschule",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Manching",
+      "spotCount": 2,
+      "lat": 48.716536000000005,
+      "lng": 11.47066185,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1489577363), ODbL"
+    }
+  ]
+}

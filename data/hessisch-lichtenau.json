@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hessisch-lichtenau",
+    "name": "Hessisch Lichtenau",
+    "center": {
+      "lat": 51.19981155000001,
+      "lng": 9.72755395
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hessisch-lichtenau-6ec8ff4088",
+      "city": "hessisch-lichtenau",
+      "label": "Am Kalkbrunnen",
+      "street": "Am Kalkbrunnen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Hessisch Lichtenau",
+      "spotCount": 2,
+      "lat": 51.19981155000001,
+      "lng": 9.72062785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/363491160), ODbL"
+    },
+    {
+      "id": "hessisch-lichtenau-f01387fe4f",
+      "city": "hessisch-lichtenau",
+      "label": "Ottilienstraße",
+      "street": "Ottilienstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hessisch Lichtenau",
+      "spotCount": 1,
+      "lat": 51.198497450000005,
+      "lng": 9.72755395,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/290166756), ODbL"
+    }
+  ]
+}

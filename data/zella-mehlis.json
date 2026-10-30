@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "zella-mehlis",
+    "name": "Zella-Mehlis",
+    "center": {
+      "lat": 50.6541216,
+      "lng": 10.67378745
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zella-mehlis-28d527323d",
+      "city": "zella-mehlis",
+      "label": "Alte Straße",
+      "street": "Alte Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Zella-Mehlis",
+      "spotCount": 1,
+      "lat": 50.6647157,
+      "lng": 10.67378745,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1457134598), ODbL"
+    },
+    {
+      "id": "zella-mehlis-d2e33695ea",
+      "city": "zella-mehlis",
+      "label": "An der Quelle",
+      "street": "An der Quelle",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zella-Mehlis",
+      "spotCount": 34,
+      "lat": 50.64417485,
+      "lng": 10.683909400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/598443864), ODbL"
+    },
+    {
+      "id": "zella-mehlis-f11adef6e5",
+      "city": "zella-mehlis",
+      "label": "Bäckergasse",
+      "street": "Bäckergasse",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Zella-Mehlis",
+      "spotCount": 1,
+      "lat": 50.643195000000006,
+      "lng": 10.59379215,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1449404953), ODbL"
+    },
+    {
+      "id": "zella-mehlis-66b63f708a",
+      "city": "zella-mehlis",
+      "label": "Hauptstraße 130",
+      "street": "Hauptstraße",
+      "houseNumber": "130",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zella-Mehlis",
+      "spotCount": 1,
+      "lat": 50.65505515,
+      "lng": 10.67125565,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/462173511), ODbL"
+    },
+    {
+      "id": "zella-mehlis-89e45079e8",
+      "city": "zella-mehlis",
+      "label": "Industriestraße",
+      "street": "Industriestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zella-Mehlis",
+      "spotCount": 1,
+      "lat": 50.6439867,
+      "lng": 10.688168350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/129120502), ODbL"
+    },
+    {
+      "id": "zella-mehlis-f6e7013859",
+      "city": "zella-mehlis",
+      "label": "P5",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zella-Mehlis",
+      "spotCount": 2,
+      "lat": 50.6541216,
+      "lng": 10.67226755,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25505122), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "hainburg",
+    "name": "Hainburg",
+    "center": {
+      "lat": 50.0701385,
+      "lng": 8.959570450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hainburg-4cbabe6c92",
+      "city": "hainburg",
+      "label": "Kirchstraße",
+      "street": "Kirchstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hainburg",
+      "spotCount": 1,
+      "lat": 50.077004650000006,
+      "lng": 8.96849725,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/829416060), ODbL"
+    },
+    {
+      "id": "hainburg-6b25f6f669",
+      "city": "hainburg",
+      "label": "Triebweg 12",
+      "street": "Triebweg",
+      "houseNumber": "12",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hainburg",
+      "spotCount": 1,
+      "lat": 50.0701375,
+      "lng": 8.959570450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1374643573), ODbL"
+    },
+    {
+      "id": "hainburg-ad99293dde",
+      "city": "hainburg",
+      "label": "Triebweg 16",
+      "street": "Triebweg",
+      "houseNumber": "16",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hainburg",
+      "spotCount": 1,
+      "lat": 50.0701385,
+      "lng": 8.959526050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1374643574), ODbL"
+    }
+  ]
+}

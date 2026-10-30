@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "alpen",
+    "name": "Alpen",
+    "center": {
+      "lat": 51.583291900000006,
+      "lng": 6.51782515
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "alpen-33f0d61c72",
+      "city": "alpen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Alpen",
+      "spotCount": 1,
+      "lat": 51.583252200000004,
+      "lng": 6.51782515,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1254217362), ODbL"
+    },
+    {
+      "id": "alpen-bc4097f5d1",
+      "city": "alpen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Alpen",
+      "spotCount": 1,
+      "lat": 51.583272050000005,
+      "lng": 6.5178724500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1254217363), ODbL"
+    },
+    {
+      "id": "alpen-e7f6c580f4",
+      "city": "alpen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Alpen",
+      "spotCount": 1,
+      "lat": 51.583291900000006,
+      "lng": 6.5177987,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1254217364), ODbL"
+    },
+    {
+      "id": "alpen-9cf55c33c0",
+      "city": "alpen",
+      "label": "P&R, Alpen, Alpen Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Alpen",
+      "spotCount": 3,
+      "lat": 51.5835213,
+      "lng": 6.517599050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/33082856), ODbL"
+    },
+    {
+      "id": "alpen-ea539aef2e",
+      "city": "alpen",
+      "label": "Weseler Straße",
+      "street": "Weseler Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Alpen",
+      "spotCount": 1,
+      "lat": 51.583964300000005,
+      "lng": 6.5231209,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/396231975), ODbL"
+    }
+  ]
+}

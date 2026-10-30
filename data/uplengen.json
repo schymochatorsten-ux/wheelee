@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "uplengen",
+    "name": "Uplengen",
+    "center": {
+      "lat": 53.2627266,
+      "lng": 7.7554138
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "uplengen-2a925e95ec",
+      "city": "uplengen",
+      "label": "Autohof A28 Apen",
+      "street": "Autohof A28 Apen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Uplengen",
+      "spotCount": 1,
+      "lat": 53.2627036,
+      "lng": 7.7554373000000005,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14057082395), ODbL"
+    },
+    {
+      "id": "uplengen-5516ea431c",
+      "city": "uplengen",
+      "label": "Autohof A28 Apen",
+      "street": "Autohof A28 Apen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Uplengen",
+      "spotCount": 1,
+      "lat": 53.2627266,
+      "lng": 7.7554138,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14057082396), ODbL"
+    },
+    {
+      "id": "uplengen-36447647c2",
+      "city": "uplengen",
+      "label": "Ostertorstraße 58",
+      "street": "Ostertorstraße",
+      "houseNumber": "58",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Uplengen",
+      "spotCount": 1,
+      "lat": 53.3046249,
+      "lng": 7.7462885,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14169206891), ODbL"
+    }
+  ]
+}

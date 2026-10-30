@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "eppstein",
+    "name": "Eppstein",
+    "center": {
+      "lat": 50.1498696,
+      "lng": 8.3500157
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eppstein-b4e3f06b48",
+      "city": "eppstein",
+      "label": "Bahnstraße",
+      "street": "Bahnstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eppstein",
+      "spotCount": 1,
+      "lat": 50.1498696,
+      "lng": 8.3500157,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1382522611), ODbL"
+    }
+  ]
+}

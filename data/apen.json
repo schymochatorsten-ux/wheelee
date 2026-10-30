@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "apen",
+    "name": "Apen",
+    "center": {
+      "lat": 53.22586915,
+      "lng": 7.764884
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "apen-73d5b0caed",
+      "city": "apen",
+      "label": "Bahnhofstraße 2",
+      "street": "Bahnhofstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Apen",
+      "spotCount": 2,
+      "lat": 53.220779750000005,
+      "lng": 7.758643750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/714458289), ODbL"
+    },
+    {
+      "id": "apen-dced70ca5e",
+      "city": "apen",
+      "label": "Hengstforder Allee",
+      "street": "Hengstforder Allee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Apen",
+      "spotCount": 2,
+      "lat": 53.22586915,
+      "lng": 7.764884,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1020504348), ODbL"
+    }
+  ]
+}

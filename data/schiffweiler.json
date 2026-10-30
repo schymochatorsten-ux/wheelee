@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "schiffweiler",
+    "name": "Schiffweiler",
+    "center": {
+      "lat": 49.3519603,
+      "lng": 7.120074600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schiffweiler-488c1d71b2",
+      "city": "schiffweiler",
+      "label": "Alexander-von-Humboldt-Straße",
+      "street": "Alexander-von-Humboldt-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schiffweiler",
+      "spotCount": 1,
+      "lat": 49.3519603,
+      "lng": 7.120074600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1884127666), ODbL"
+    },
+    {
+      "id": "schiffweiler-90d44458dc",
+      "city": "schiffweiler",
+      "label": "Alexander-von-Humboldt-Straße",
+      "street": "Alexander-von-Humboldt-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schiffweiler",
+      "spotCount": 1,
+      "lat": 49.3487973,
+      "lng": 7.11274825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32519218), ODbL"
+    },
+    {
+      "id": "schiffweiler-3a88d83398",
+      "city": "schiffweiler",
+      "label": "Am Itzenplitzer Weiher",
+      "street": "Am Itzenplitzer Weiher",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schiffweiler",
+      "spotCount": 3,
+      "lat": 49.350104,
+      "lng": 7.09652715,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27655108), ODbL"
+    },
+    {
+      "id": "schiffweiler-ddf29894c5",
+      "city": "schiffweiler",
+      "label": "Redener Straße 41",
+      "street": "Redener Straße",
+      "houseNumber": "41",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schiffweiler",
+      "spotCount": 2,
+      "lat": 49.3566153,
+      "lng": 7.1274478000000006,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/354185574), ODbL"
+    }
+  ]
+}

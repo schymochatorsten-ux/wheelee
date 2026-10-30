@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "saterland",
+    "name": "Saterland",
+    "center": {
+      "lat": 53.10331705,
+      "lng": 7.675355
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "saterland-590a6485a7",
+      "city": "saterland",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Saterland",
+      "spotCount": 2,
+      "lat": 53.10318865000001,
+      "lng": 7.675355,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1012428531), ODbL"
+    },
+    {
+      "id": "saterland-8d6e01932b",
+      "city": "saterland",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Saterland",
+      "spotCount": 2,
+      "lat": 53.10331705,
+      "lng": 7.67554005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1012428533), ODbL"
+    },
+    {
+      "id": "saterland-201ee9802f",
+      "city": "saterland",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Saterland",
+      "spotCount": 2,
+      "lat": 53.103453550000005,
+      "lng": 7.6750217,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1012428534), ODbL"
+    },
+    {
+      "id": "saterland-3c4847e98f",
+      "city": "saterland",
+      "label": "Hauptstraße 492",
+      "street": "Hauptstraße",
+      "houseNumber": "492",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Saterland",
+      "spotCount": 2,
+      "lat": 53.1033187,
+      "lng": 7.675080100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1012428532), ODbL"
+    },
+    {
+      "id": "saterland-8b3a6e0053",
+      "city": "saterland",
+      "label": "Moorgutsstraße",
+      "street": "Moorgutsstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Saterland",
+      "spotCount": 12,
+      "lat": 53.084128500000006,
+      "lng": 7.626980700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/409097172), ODbL"
+    },
+    {
+      "id": "saterland-d5b278d9d8",
+      "city": "saterland",
+      "label": "Sagter-Ems-Straße",
+      "street": "Sagter-Ems-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Saterland",
+      "spotCount": 8,
+      "lat": 53.0727646,
+      "lng": 7.7003752,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1436310459), ODbL"
+    }
+  ]
+}

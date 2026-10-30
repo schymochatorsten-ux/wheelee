@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "roedental",
+    "name": "Rödental",
+    "center": {
+      "lat": 50.29665215,
+      "lng": 11.040365099999999
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "roedental-942b40cd8e",
+      "city": "roedental",
+      "label": "Am Melm",
+      "street": "Am Melm",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rödental",
+      "spotCount": 1,
+      "lat": 50.2968138,
+      "lng": 11.040755500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5606848821), ODbL"
+    },
+    {
+      "id": "roedental-f56c444f6e",
+      "city": "roedental",
+      "label": "Am Melm 1c",
+      "street": "Am Melm",
+      "houseNumber": "1c",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rödental",
+      "spotCount": 35,
+      "lat": 50.29665215,
+      "lng": 11.040365099999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/372847919), ODbL"
+    },
+    {
+      "id": "roedental-d0684b68da",
+      "city": "roedental",
+      "label": "Bahnhofsplatz 11",
+      "street": "Bahnhofsplatz",
+      "houseNumber": "11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rödental",
+      "spotCount": 1,
+      "lat": 50.28855755000001,
+      "lng": 11.031360150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/294334165), ODbL"
+    },
+    {
+      "id": "roedental-678454b1b6",
+      "city": "roedental",
+      "label": "Bürgerplatz 8",
+      "street": "Bürgerplatz",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rödental",
+      "spotCount": 2,
+      "lat": 50.2953292,
+      "lng": 11.04237865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/205343482), ODbL"
+    },
+    {
+      "id": "roedental-ee554f183d",
+      "city": "roedental",
+      "label": "Oeslauer Straße",
+      "street": "Oeslauer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rödental",
+      "spotCount": 1,
+      "lat": 50.2898888,
+      "lng": 11.03632205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/477218694), ODbL"
+    },
+    {
+      "id": "roedental-c3cdc8457a",
+      "city": "roedental",
+      "label": "Rosenau",
+      "street": "Rosenau",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Rödental",
+      "spotCount": 2,
+      "lat": 50.2975388,
+      "lng": 11.01909285,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/37391312), ODbL"
+    }
+  ]
+}

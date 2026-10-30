@@ -14,9 +14,9 @@
     {
       "id": "obertshausen-d624896052",
       "city": "obertshausen",
-      "label": "Behindertenparkplatz Obertshausen",
-      "street": null,
-      "houseNumber": null,
+      "label": "Bieberer Straße 131",
+      "street": "Bieberer Straße",
+      "houseNumber": "131",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Obertshausen",

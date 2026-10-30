@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "barssel",
+    "name": "Barßel",
+    "center": {
+      "lat": 53.12374765,
+      "lng": 7.817279150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "barssel-cd79bf4e35",
+      "city": "barssel",
+      "label": "Parkplatz Friedhof Harkebrügge",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Barßel",
+      "spotCount": 1,
+      "lat": 53.12374765,
+      "lng": 7.817279150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/30081510), ODbL"
+    },
+    {
+      "id": "barssel-3451010986",
+      "city": "barssel",
+      "label": "Ramsloher Straße",
+      "street": "Ramsloher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Barßel",
+      "spotCount": 2,
+      "lat": 53.120391600000005,
+      "lng": 7.7479812,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1013485186), ODbL"
+    }
+  ]
+}

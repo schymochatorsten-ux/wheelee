@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "wehr",
+    "name": "Wehr",
+    "center": {
+      "lat": 47.619551400000006,
+      "lng": 7.9104077
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wehr-89d5840f23",
+      "city": "wehr",
+      "label": "Basler Straße 50a",
+      "street": "Basler Straße",
+      "houseNumber": "50a",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wehr",
+      "spotCount": 1,
+      "lat": 47.581942000000005,
+      "lng": 7.9104077,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12839480489), ODbL"
+    },
+    {
+      "id": "wehr-50c81658c8",
+      "city": "wehr",
+      "label": "Öflinger Straße",
+      "street": "Öflinger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wehr",
+      "spotCount": 1,
+      "lat": 47.619551400000006,
+      "lng": 7.905961700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/37719502), ODbL"
+    }
+  ]
+}

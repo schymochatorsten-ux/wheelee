@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "genthin",
+    "name": "Genthin",
+    "center": {
+      "lat": 52.24497025,
+      "lng": 12.2459564
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "genthin-8960fd4fd3",
+      "city": "genthin",
+      "label": "Schopsdorfer Heidestraße",
+      "street": "Schopsdorfer Heidestraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Genthin",
+      "spotCount": 1,
+      "lat": 52.2449764,
+      "lng": 12.2459564,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1200020644), ODbL"
+    },
+    {
+      "id": "genthin-104f329020",
+      "city": "genthin",
+      "label": "Schopsdorfer Heidestraße",
+      "street": "Schopsdorfer Heidestraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Genthin",
+      "spotCount": 1,
+      "lat": 52.24497025,
+      "lng": 12.2460053,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1200020645), ODbL"
+    },
+    {
+      "id": "genthin-06ce3a29a4",
+      "city": "genthin",
+      "label": "Schopsdorfer Heidestraße 10",
+      "street": "Schopsdorfer Heidestraße",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Genthin",
+      "spotCount": 2,
+      "lat": 52.24466205,
+      "lng": 12.245551850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1200020590), ODbL"
+    }
+  ]
+}

@@ -14,8 +14,8 @@
     {
       "id": "ingelheim-e6a9bbad65",
       "city": "ingelheim",
-      "label": "Behindertenparkplatz Ingelheim am Rhein",
-      "street": null,
+      "label": "Rheinstraße",
+      "street": "Rheinstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,

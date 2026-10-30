@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "karlsdorf-neuthard",
+    "name": "Karlsdorf-Neuthard",
+    "center": {
+      "lat": 49.14423635,
+      "lng": 8.5475887
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "karlsdorf-neuthard-611300a9b6",
+      "city": "karlsdorf-neuthard",
+      "label": "Autohof Karlsdorf",
+      "street": "Autohof Karlsdorf",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Karlsdorf-Neuthard",
+      "spotCount": 3,
+      "lat": 49.147843900000005,
+      "lng": 8.55548975,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/43143172), ODbL"
+    },
+    {
+      "id": "karlsdorf-neuthard-9945cd2b2b",
+      "city": "karlsdorf-neuthard",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Karlsdorf-Neuthard",
+      "spotCount": 1,
+      "lat": 49.14420870000001,
+      "lng": 8.5475887,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/530939600), ODbL"
+    },
+    {
+      "id": "karlsdorf-neuthard-93dbcbb3c1",
+      "city": "karlsdorf-neuthard",
+      "label": "Bürgermeister-Huber-Straße",
+      "street": "Bürgermeister-Huber-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Karlsdorf-Neuthard",
+      "spotCount": 1,
+      "lat": 49.14423635,
+      "lng": 8.5474495,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1413261262), ODbL"
+    }
+  ]
+}

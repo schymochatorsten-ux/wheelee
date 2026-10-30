@@ -12,25 +12,10 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "voerde-ad31cb3132",
-      "city": "voerde",
-      "label": "Behindertenparkplatz Voerde (Niederrhein)",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Voerde (Niederrhein)",
-      "spotCount": 1,
-      "lat": 51.5967904,
-      "lng": 6.6811255,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/193657153), ODbL"
-    },
-    {
       "id": "voerde-7b4fd1bff0",
       "city": "voerde",
-      "label": "Behindertenparkplatz Voerde (Niederrhein)",
-      "street": null,
+      "label": "Alnwicker Ring",
+      "street": "Alnwicker Ring",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -44,9 +29,9 @@
     {
       "id": "voerde-f5d9401c17",
       "city": "voerde",
-      "label": "Behindertenparkplatz Voerde (Niederrhein)",
-      "street": null,
-      "houseNumber": null,
+      "label": "Bahnhofstraße 4",
+      "street": "Bahnhofstraße",
+      "houseNumber": "4",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Voerde (Niederrhein)",
@@ -55,6 +40,21 @@
       "lng": 6.66897635,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1327191092), ODbL"
+    },
+    {
+      "id": "voerde-ad31cb3132",
+      "city": "voerde",
+      "label": "Im Osterfeld",
+      "street": "Im Osterfeld",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Voerde (Niederrhein)",
+      "spotCount": 1,
+      "lat": 51.5967904,
+      "lng": 6.6811255,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/193657153), ODbL"
     },
     {
       "id": "voerde-b9adef45b1",

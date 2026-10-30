@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "seeheim-jugenheim",
+    "name": "Seeheim-Jugenheim",
+    "center": {
+      "lat": 49.76632725,
+      "lng": 8.6461688
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "seeheim-jugenheim-0a7d463970",
+      "city": "seeheim-jugenheim",
+      "label": "Friedrich-Ebert-Straße 35",
+      "street": "Friedrich-Ebert-Straße",
+      "houseNumber": "35",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Seeheim-Jugenheim",
+      "spotCount": 1,
+      "lat": 49.77329825,
+      "lng": 8.641187949999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/722309281), ODbL"
+    },
+    {
+      "id": "seeheim-jugenheim-21fc62eb12",
+      "city": "seeheim-jugenheim",
+      "label": "Georg-Kaiser-Platz",
+      "street": "Georg-Kaiser-Platz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Seeheim-Jugenheim",
+      "spotCount": 1,
+      "lat": 49.76632725,
+      "lng": 8.646228350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/722266470), ODbL"
+    },
+    {
+      "id": "seeheim-jugenheim-2b823ee0dd",
+      "city": "seeheim-jugenheim",
+      "label": "Schulstraße 12",
+      "street": "Schulstraße",
+      "houseNumber": "12",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Seeheim-Jugenheim",
+      "spotCount": 1,
+      "lat": 49.76627275,
+      "lng": 8.6461688,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/722266471), ODbL"
+    }
+  ]
+}

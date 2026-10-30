@@ -14,8 +14,8 @@
     {
       "id": "neunkirchen-05526cc284",
       "city": "neunkirchen",
-      "label": "Behindertenparkplatz Neunkirchen",
-      "street": null,
+      "label": "An der Lakaienschäferei",
+      "street": "An der Lakaienschäferei",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,
@@ -29,8 +29,8 @@
     {
       "id": "neunkirchen-f6baa4b84a",
       "city": "neunkirchen",
-      "label": "Behindertenparkplatz Neunkirchen",
-      "street": null,
+      "label": "Klinikweg",
+      "street": "Klinikweg",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
       "timeRestriction": null,

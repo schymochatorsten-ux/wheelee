@@ -14,8 +14,8 @@
     {
       "id": "stadtallendorf-5fe86dfa5a",
       "city": "stadtallendorf",
-      "label": "Behindertenparkplatz Stadtallendorf",
-      "street": null,
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,

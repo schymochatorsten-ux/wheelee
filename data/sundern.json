@@ -14,8 +14,8 @@
     {
       "id": "sundern-9b2b5ce859",
       "city": "sundern",
-      "label": "Behindertenparkplatz Sundern (Sauerland)",
-      "street": null,
+      "label": "Am Lindhövel",
+      "street": "Am Lindhövel",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -29,8 +29,8 @@
     {
       "id": "sundern-93b4077f3b",
       "city": "sundern",
-      "label": "Behindertenparkplatz Sundern (Sauerland)",
-      "street": null,
+      "label": "Seestraße",
+      "street": "Seestraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,

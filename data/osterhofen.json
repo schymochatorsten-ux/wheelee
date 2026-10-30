@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "osterhofen",
+    "name": "Osterhofen",
+    "center": {
+      "lat": 48.701045400000005,
+      "lng": 13.017632550000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "osterhofen-5ce8f41630",
+      "city": "osterhofen",
+      "label": "Altstadt 12",
+      "street": "Altstadt",
+      "houseNumber": "12",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Osterhofen",
+      "spotCount": 1,
+      "lat": 48.701045400000005,
+      "lng": 13.0212687,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13789127589), ODbL"
+    },
+    {
+      "id": "osterhofen-434f2a4357",
+      "city": "osterhofen",
+      "label": "Freibadparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Osterhofen",
+      "spotCount": 1,
+      "lat": 48.7040976,
+      "lng": 13.008713,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/238464679), ODbL"
+    },
+    {
+      "id": "osterhofen-bc67737ea0",
+      "city": "osterhofen",
+      "label": "Ladehofstraße",
+      "street": "Ladehofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Osterhofen",
+      "spotCount": 1,
+      "lat": 48.6954154,
+      "lng": 13.0181821,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14141886694), ODbL"
+    },
+    {
+      "id": "osterhofen-094b94ff07",
+      "city": "osterhofen",
+      "label": "Ladehofstraße",
+      "street": "Ladehofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Osterhofen",
+      "spotCount": 2,
+      "lat": 48.695634600000005,
+      "lng": 13.017632550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/448797152), ODbL"
+    },
+    {
+      "id": "osterhofen-7f7b68a168",
+      "city": "osterhofen",
+      "label": "Wisselsinger Straße",
+      "street": "Wisselsinger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Osterhofen",
+      "spotCount": 1,
+      "lat": 48.704279150000005,
+      "lng": 13.013506150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/238675272), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "olfen",
+    "name": "Olfen",
+    "center": {
+      "lat": 51.72314285,
+      "lng": 7.358698950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "olfen-52f52daa77",
+      "city": "olfen",
+      "label": "Alleeweg",
+      "street": "Alleeweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Olfen",
+      "spotCount": 2,
+      "lat": 51.71622725,
+      "lng": 7.358698950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/56198782), ODbL"
+    },
+    {
+      "id": "olfen-d99eac2bfa",
+      "city": "olfen",
+      "label": "Kökelsum",
+      "street": "Kökelsum",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Olfen",
+      "spotCount": 2,
+      "lat": 51.72327765,
+      "lng": 7.355004150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1092401074), ODbL"
+    },
+    {
+      "id": "olfen-1b5073fcd6",
+      "city": "olfen",
+      "label": "Kökelsum",
+      "street": "Kökelsum",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Olfen",
+      "spotCount": 1,
+      "lat": 51.72314285,
+      "lng": 7.355124850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1279904511), ODbL"
+    },
+    {
+      "id": "olfen-8b1b4eba4b",
+      "city": "olfen",
+      "label": "Kökelsum",
+      "street": "Kökelsum",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Olfen",
+      "spotCount": 1,
+      "lat": 51.72318045,
+      "lng": 7.3551453,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1279904512), ODbL"
+    },
+    {
+      "id": "olfen-4d2e35d09f",
+      "city": "olfen",
+      "label": "Zur Geest 2c",
+      "street": "Zur Geest",
+      "houseNumber": "2c",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Olfen",
+      "spotCount": 1,
+      "lat": 51.70807765000001,
+      "lng": 7.3799289,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/109147668), ODbL"
+    },
+    {
+      "id": "olfen-2043954794",
+      "city": "olfen",
+      "label": "Zur Geest 4",
+      "street": "Zur Geest",
+      "houseNumber": "4",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Olfen",
+      "spotCount": 1,
+      "lat": 51.7082142,
+      "lng": 7.37982355,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1279710165), ODbL"
+    }
+  ]
+}

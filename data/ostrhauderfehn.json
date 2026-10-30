@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "ostrhauderfehn",
+    "name": "Ostrhauderfehn",
+    "center": {
+      "lat": 53.13875105,
+      "lng": 7.6334786
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ostrhauderfehn-0e57de2e9c",
+      "city": "ostrhauderfehn",
+      "label": "1. Südwieke",
+      "street": "1. Südwieke",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ostrhauderfehn",
+      "spotCount": 1,
+      "lat": 53.13875105,
+      "lng": 7.61015665,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1543016468), ODbL"
+    },
+    {
+      "id": "ostrhauderfehn-e848b2cabf",
+      "city": "ostrhauderfehn",
+      "label": "Zum Westkanal",
+      "street": "Zum Westkanal",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ostrhauderfehn",
+      "spotCount": 2,
+      "lat": 53.13804085000001,
+      "lng": 7.6334786,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/171685404), ODbL"
+    }
+  ]
+}

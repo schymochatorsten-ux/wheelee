@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "roedinghausen",
+    "name": "Rödinghausen",
+    "center": {
+      "lat": 52.252891850000005,
+      "lng": 8.4865569
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "roedinghausen-3a621fcc6e",
+      "city": "roedinghausen",
+      "label": "Bruchmühlener Straße",
+      "street": "Bruchmühlener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rödinghausen",
+      "spotCount": 1,
+      "lat": 52.23332705,
+      "lng": 8.4731196,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/215817849), ODbL"
+    },
+    {
+      "id": "roedinghausen-ab8053bf6b",
+      "city": "roedinghausen",
+      "label": "Wehmerhorststraße",
+      "street": "Wehmerhorststraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rödinghausen",
+      "spotCount": 1,
+      "lat": 52.252891850000005,
+      "lng": 8.4865569,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/45083665), ODbL"
+    }
+  ]
+}

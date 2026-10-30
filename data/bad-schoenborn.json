@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bad-schoenborn",
+    "name": "Bad Schönborn",
+    "center": {
+      "lat": 49.219476,
+      "lng": 8.647327
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-schoenborn-0c4cfacd7e",
+      "city": "bad-schoenborn",
+      "label": "Bahnhofstraße 1a",
+      "street": "Bahnhofstraße",
+      "houseNumber": "1a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Bad Schönborn",
+      "spotCount": 3,
+      "lat": 49.219476,
+      "lng": 8.6473692,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/616173768), ODbL"
+    },
+    {
+      "id": "bad-schoenborn-fa0a438757",
+      "city": "bad-schoenborn",
+      "label": "Bahnhofstraße 1a",
+      "street": "Bahnhofstraße",
+      "houseNumber": "1a",
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Bad Schönborn",
+      "spotCount": 3,
+      "lat": 49.2194798,
+      "lng": 8.647327,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/616173770), ODbL"
+    },
+    {
+      "id": "bad-schoenborn-69020acb4e",
+      "city": "bad-schoenborn",
+      "label": "Südring",
+      "street": "Südring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Schönborn",
+      "spotCount": 1,
+      "lat": 49.19747205,
+      "lng": 8.6443405,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/186253723), ODbL"
+    }
+  ]
+}

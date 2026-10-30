@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "kuenzell",
+    "name": "Künzell",
+    "center": {
+      "lat": 50.540295,
+      "lng": 9.7185247
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kuenzell-50eec233a8",
+      "city": "kuenzell",
+      "label": "Birkenhof",
+      "street": "Birkenhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Künzell",
+      "spotCount": 4,
+      "lat": 50.51535555,
+      "lng": 9.768280650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1179916733), ODbL"
+    },
+    {
+      "id": "kuenzell-235051a5f9",
+      "city": "kuenzell",
+      "label": "Friedrich-Dietz-Straße",
+      "street": "Friedrich-Dietz-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Künzell",
+      "spotCount": 2,
+      "lat": 50.540295,
+      "lng": 9.71460105,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/239041599), ODbL"
+    },
+    {
+      "id": "kuenzell-d0c32cdf19",
+      "city": "kuenzell",
+      "label": "Gemeindezentrum Künzell",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Künzell",
+      "spotCount": 3,
+      "lat": 50.54047145,
+      "lng": 9.711527100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/124122298), ODbL"
+    },
+    {
+      "id": "kuenzell-f21a78455c",
+      "city": "kuenzell",
+      "label": "Hahlweg 39",
+      "street": "Hahlweg",
+      "houseNumber": "39",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Künzell",
+      "spotCount": 1,
+      "lat": 50.54009235000001,
+      "lng": 9.712922,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/697648734), ODbL"
+    },
+    {
+      "id": "kuenzell-042c31ca39",
+      "city": "kuenzell",
+      "label": "Künzeller Straße",
+      "street": "Künzeller Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Künzell",
+      "spotCount": 1,
+      "lat": 50.5310622,
+      "lng": 9.7264909,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6566341208), ODbL"
+    },
+    {
+      "id": "kuenzell-2101ce2382",
+      "city": "kuenzell",
+      "label": "Wallweg 24",
+      "street": "Wallweg",
+      "houseNumber": "24",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Künzell",
+      "spotCount": 1,
+      "lat": 50.5456703,
+      "lng": 9.7185247,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1533254267), ODbL"
+    }
+  ]
+}

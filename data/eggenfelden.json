@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "eggenfelden",
+    "name": "Eggenfelden",
+    "center": {
+      "lat": 48.4008351,
+      "lng": 12.771376700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eggenfelden-f3beaf82e6",
+      "city": "eggenfelden",
+      "label": "Am Lichtlberger Wald",
+      "street": "Am Lichtlberger Wald",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eggenfelden",
+      "spotCount": 40,
+      "lat": 48.3944185,
+      "lng": 12.771376700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13790068195), ODbL"
+    },
+    {
+      "id": "eggenfelden-818d98a08b",
+      "city": "eggenfelden",
+      "label": "Busparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eggenfelden",
+      "spotCount": 1,
+      "lat": 48.4008351,
+      "lng": 12.7637815,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2395109953), ODbL"
+    }
+  ]
+}

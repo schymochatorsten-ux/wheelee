@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "landsberg-st",
+    "name": "Landsberg",
+    "center": {
+      "lat": 51.525907700000005,
+      "lng": 12.0915864
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "landsberg-st-e9aa378676",
+      "city": "landsberg-st",
+      "label": "24-TOTAL Autohof Halle-Tornau",
+      "street": "24-TOTAL Autohof Halle-Tornau",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Landsberg",
+      "spotCount": 1,
+      "lat": 51.544930550000004,
+      "lng": 12.014171400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1118059035), ODbL"
+    },
+    {
+      "id": "landsberg-st-bd8fb0d09c",
+      "city": "landsberg-st",
+      "label": "Behindertenparkplatz Landsberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Landsberg",
+      "spotCount": 1,
+      "lat": 51.51090065,
+      "lng": 12.051102700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/140872186), ODbL"
+    },
+    {
+      "id": "landsberg-st-1bee129975",
+      "city": "landsberg-st",
+      "label": "Bergstraße",
+      "street": "Bergstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Landsberg",
+      "spotCount": 1,
+      "lat": 51.525907700000005,
+      "lng": 12.167876150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1206478013), ODbL"
+    },
+    {
+      "id": "landsberg-st-73ebacd2b6",
+      "city": "landsberg-st",
+      "label": "Keramik - Scheune",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Landsberg",
+      "spotCount": 2,
+      "lat": 51.536886700000004,
+      "lng": 12.13787875,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/303453999), ODbL"
+    },
+    {
+      "id": "landsberg-st-acfaf80f6e",
+      "city": "landsberg-st",
+      "label": "Saarbrücker Straße",
+      "street": "Saarbrücker Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Landsberg",
+      "spotCount": 1,
+      "lat": 51.5143756,
+      "lng": 12.053332050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/141038027), ODbL"
+    },
+    {
+      "id": "landsberg-st-47b3ac5ebf",
+      "city": "landsberg-st",
+      "label": "W.-G.-Freund-Straße",
+      "street": "W.-G.-Freund-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Landsberg",
+      "spotCount": 1,
+      "lat": 51.4864344,
+      "lng": 12.0915864,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12292794047), ODbL"
+    }
+  ]
+}

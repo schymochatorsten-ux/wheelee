@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "schoeneiche",
+    "name": "Schöneiche bei Berlin",
+    "center": {
+      "lat": 52.480518100000005,
+      "lng": 13.702326000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schoeneiche-3100fe8555",
+      "city": "schoeneiche",
+      "label": "Dorfaue",
+      "street": "Dorfaue",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schöneiche bei Berlin",
+      "spotCount": 1,
+      "lat": 52.481279,
+      "lng": 13.702326000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1204564707), ODbL"
+    },
+    {
+      "id": "schoeneiche-3b5afa5214",
+      "city": "schoeneiche",
+      "label": "Dorfstraße 40",
+      "street": "Dorfstraße",
+      "houseNumber": "40",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schöneiche bei Berlin",
+      "spotCount": 2,
+      "lat": 52.480518100000005,
+      "lng": 13.69634495,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1297706885), ODbL"
+    },
+    {
+      "id": "schoeneiche-c0654e2d09",
+      "city": "schoeneiche",
+      "label": "Florastraße",
+      "street": "Florastraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schöneiche bei Berlin",
+      "spotCount": 2,
+      "lat": 52.49217315,
+      "lng": 13.699002450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/316881670), ODbL"
+    },
+    {
+      "id": "schoeneiche-3528b1db34",
+      "city": "schoeneiche",
+      "label": "Schillerstraße 2",
+      "street": "Schillerstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schöneiche bei Berlin",
+      "spotCount": 1,
+      "lat": 52.47782275,
+      "lng": 13.70868145,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1395436043), ODbL"
+    },
+    {
+      "id": "schoeneiche-de1b46dcb5",
+      "city": "schoeneiche",
+      "label": "Woltersdorfer Straße",
+      "street": "Woltersdorfer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schöneiche bei Berlin",
+      "spotCount": 1,
+      "lat": 52.47339840000001,
+      "lng": 13.712804600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1317138449), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "bad-langensalza",
+    "name": "Bad Langensalza",
+    "center": {
+      "lat": 51.11092285,
+      "lng": 10.64923735
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-langensalza-fdf59c9e1a",
+      "city": "bad-langensalza",
+      "label": "Böhmenstraße",
+      "street": "Böhmenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Langensalza",
+      "spotCount": 1,
+      "lat": 51.1160222,
+      "lng": 10.644978950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/77045709), ODbL"
+    },
+    {
+      "id": "bad-langensalza-639aa018de",
+      "city": "bad-langensalza",
+      "label": "Käthe-Kollwitz-Straße",
+      "street": "Käthe-Kollwitz-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Langensalza",
+      "spotCount": 2,
+      "lat": 51.1173371,
+      "lng": 10.649837650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/137605768), ODbL"
+    },
+    {
+      "id": "bad-langensalza-ee3a02a603",
+      "city": "bad-langensalza",
+      "label": "Rudolph-Weiss-Straße",
+      "street": "Rudolph-Weiss-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Langensalza",
+      "spotCount": 2,
+      "lat": 51.105735100000004,
+      "lng": 10.64923735,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/443387149), ODbL"
+    },
+    {
+      "id": "bad-langensalza-4252ac1ea6",
+      "city": "bad-langensalza",
+      "label": "Rudolph-Weiss-Straße",
+      "street": "Rudolph-Weiss-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Langensalza",
+      "spotCount": 2,
+      "lat": 51.105695250000004,
+      "lng": 10.6489723,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/443387150), ODbL"
+    },
+    {
+      "id": "bad-langensalza-e8a833ac07",
+      "city": "bad-langensalza",
+      "label": "Vor dem Klagetor 1a",
+      "street": "Vor dem Klagetor",
+      "houseNumber": "1a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Langensalza",
+      "spotCount": 1,
+      "lat": 51.11092285,
+      "lng": 10.6512134,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/315166563), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "nideggen",
+    "name": "Nideggen",
+    "center": {
+      "lat": 50.689929500000005,
+      "lng": 6.479849700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nideggen-7692f0ab18",
+      "city": "nideggen",
+      "label": "Kirchgasse",
+      "street": "Kirchgasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nideggen",
+      "spotCount": 2,
+      "lat": 50.68924525,
+      "lng": 6.479849700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32730424), ODbL"
+    },
+    {
+      "id": "nideggen-632618f9de",
+      "city": "nideggen",
+      "label": "Zerkaller Straße",
+      "street": "Zerkaller Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nideggen",
+      "spotCount": 1,
+      "lat": 50.689929500000005,
+      "lng": 6.465716850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24715793), ODbL"
+    }
+  ]
+}

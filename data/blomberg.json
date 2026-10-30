@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "blomberg",
+    "name": "Blomberg",
+    "center": {
+      "lat": 51.9416286,
+      "lng": 9.0948983
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "blomberg-42128c031d",
+      "city": "blomberg",
+      "label": "Alter Dreschplatz",
+      "street": "Alter Dreschplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Blomberg",
+      "spotCount": 2,
+      "lat": 51.94390115,
+      "lng": 9.097186350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24932217), ODbL"
+    },
+    {
+      "id": "blomberg-2af6cb5e01",
+      "city": "blomberg",
+      "label": "Brinkstraße 22",
+      "street": "Brinkstraße",
+      "houseNumber": "22",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Blomberg",
+      "spotCount": 1,
+      "lat": 51.94150375,
+      "lng": 9.090219150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/240059994), ODbL"
+    },
+    {
+      "id": "blomberg-19cc78c480",
+      "city": "blomberg",
+      "label": "Diekmannstraße",
+      "street": "Diekmannstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Blomberg",
+      "spotCount": 2,
+      "lat": 51.9416286,
+      "lng": 9.0936179,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/481778121), ODbL"
+    },
+    {
+      "id": "blomberg-3c06003c57",
+      "city": "blomberg",
+      "label": "Ostring",
+      "street": "Ostring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Blomberg",
+      "spotCount": 1,
+      "lat": 51.946764800000004,
+      "lng": 9.1035498,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/481558130), ODbL"
+    },
+    {
+      "id": "blomberg-934bdf9e21",
+      "city": "blomberg",
+      "label": "P7 Alte Post",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Blomberg",
+      "spotCount": 1,
+      "lat": 51.9430881,
+      "lng": 9.0948983,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/249203361), ODbL"
+    },
+    {
+      "id": "blomberg-449d445fa8",
+      "city": "blomberg",
+      "label": "Schmuckenberger Weg 4-8",
+      "street": "Schmuckenberger Weg",
+      "houseNumber": "4-8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Blomberg",
+      "spotCount": 1,
+      "lat": 51.93805945,
+      "lng": 9.10065495,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/249298387), ODbL"
+    },
+    {
+      "id": "blomberg-68c745432b",
+      "city": "blomberg",
+      "label": "Wassertwete",
+      "street": "Wassertwete",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Blomberg",
+      "spotCount": 1,
+      "lat": 51.9401087,
+      "lng": 9.0944839,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9267325858), ODbL"
+    }
+  ]
+}

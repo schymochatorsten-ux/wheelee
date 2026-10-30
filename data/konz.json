@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "konz",
+    "name": "Konz",
+    "center": {
+      "lat": 49.6958987,
+      "lng": 6.57493905
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "konz-575a7934b6",
+      "city": "konz",
+      "label": "Am Markt 10",
+      "street": "Am Markt",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Konz",
+      "spotCount": 2,
+      "lat": 49.697832250000005,
+      "lng": 6.57253085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/41875283), ODbL"
+    },
+    {
+      "id": "konz-5cccc0946f",
+      "city": "konz",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Konz",
+      "spotCount": 4,
+      "lat": 49.6958987,
+      "lng": 6.573732700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/458975663), ODbL"
+    },
+    {
+      "id": "konz-c33325870f",
+      "city": "konz",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Konz",
+      "spotCount": 4,
+      "lat": 49.694556350000006,
+      "lng": 6.571518800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/754939577), ODbL"
+    },
+    {
+      "id": "konz-4ad70b366d",
+      "city": "konz",
+      "label": "Brunoplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Konz",
+      "spotCount": 3,
+      "lat": 49.71121645,
+      "lng": 6.592153150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/620121977), ODbL"
+    },
+    {
+      "id": "konz-fe91524e72",
+      "city": "konz",
+      "label": "Hauptstraße 14",
+      "street": "Hauptstraße",
+      "houseNumber": "14",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Konz",
+      "spotCount": 2,
+      "lat": 49.680196200000005,
+      "lng": 6.639942100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1567293079), ODbL"
+    },
+    {
+      "id": "konz-24300f6d1c",
+      "city": "konz",
+      "label": "Parkplatz Güterstraße",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Konz",
+      "spotCount": 2,
+      "lat": 49.6960247,
+      "lng": 6.57493905,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/42149509), ODbL"
+    },
+    {
+      "id": "konz-da66c8b387",
+      "city": "konz",
+      "label": "Parkplatz Schul- und Sportzentrum",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Konz",
+      "spotCount": 2,
+      "lat": 49.694567150000005,
+      "lng": 6.5844597,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/422842095), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "mettlach",
+    "name": "Mettlach",
+    "center": {
+      "lat": 49.50760475,
+      "lng": 6.5393668
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mettlach-1196293ff5",
+      "city": "mettlach",
+      "label": "Rehaklinik Saarschleife",
+      "street": "Rehaklinik Saarschleife",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Mettlach",
+      "spotCount": 1,
+      "lat": 49.50760475,
+      "lng": 6.5393668,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/577304920), ODbL"
+    }
+  ]
+}

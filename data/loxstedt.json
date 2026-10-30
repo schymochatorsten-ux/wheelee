@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "loxstedt",
+    "name": "Loxstedt",
+    "center": {
+      "lat": 53.473800600000004,
+      "lng": 8.652051100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "loxstedt-9c6f0362ae",
+      "city": "loxstedt",
+      "label": "Am Mütschen",
+      "street": "Am Mütschen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Loxstedt",
+      "spotCount": 2,
+      "lat": 53.475048650000005,
+      "lng": 8.6524709,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/330788296), ODbL"
+    },
+    {
+      "id": "loxstedt-895584f67a",
+      "city": "loxstedt",
+      "label": "An der Feuerwache",
+      "street": "An der Feuerwache",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Loxstedt",
+      "spotCount": 2,
+      "lat": 53.44802025,
+      "lng": 8.600275800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1497926483), ODbL"
+    },
+    {
+      "id": "loxstedt-0adf37722c",
+      "city": "loxstedt",
+      "label": "Fährstraße",
+      "street": "Fährstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Loxstedt",
+      "spotCount": 2,
+      "lat": 53.44436245,
+      "lng": 8.498840650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34305648), ODbL"
+    },
+    {
+      "id": "loxstedt-5f9a708669",
+      "city": "loxstedt",
+      "label": "Parkstraße 5",
+      "street": "Parkstraße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Loxstedt",
+      "spotCount": 2,
+      "lat": 53.473800600000004,
+      "lng": 8.652051100000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4045213379), ODbL"
+    }
+  ]
+}

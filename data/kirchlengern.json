@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kirchlengern",
+    "name": "Kirchlengern",
+    "center": {
+      "lat": 52.20576165,
+      "lng": 8.625655100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kirchlengern-3af9a71df2",
+      "city": "kirchlengern",
+      "label": "Spradower Weg",
+      "street": "Spradower Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kirchlengern",
+      "spotCount": 3,
+      "lat": 52.20576165,
+      "lng": 8.625655100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/256585331), ODbL"
+    }
+  ]
+}

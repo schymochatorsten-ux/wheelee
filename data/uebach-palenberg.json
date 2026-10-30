@@ -12,25 +12,10 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "uebach-palenberg-910accd7d8",
-      "city": "uebach-palenberg",
-      "label": "Behindertenparkplatz Übach-Palenberg",
-      "street": null,
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Übach-Palenberg",
-      "spotCount": 1,
-      "lat": 50.9198182,
-      "lng": 6.1183756,
-      "geoAccuracy": "house",
-      "source": "OpenStreetMap (node/11595108980), ODbL"
-    },
-    {
       "id": "uebach-palenberg-47db08a931",
       "city": "uebach-palenberg",
-      "label": "Behindertenparkplatz Übach-Palenberg",
-      "street": null,
+      "label": "Am Wasserturm",
+      "street": "Am Wasserturm",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -44,9 +29,9 @@
     {
       "id": "uebach-palenberg-d5293a14d4",
       "city": "uebach-palenberg",
-      "label": "Behindertenparkplatz Übach-Palenberg",
-      "street": null,
-      "houseNumber": null,
+      "label": "Carlstraße 60",
+      "street": "Carlstraße",
+      "houseNumber": "60",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Übach-Palenberg",
@@ -59,8 +44,8 @@
     {
       "id": "uebach-palenberg-b7d75fc8e7",
       "city": "uebach-palenberg",
-      "label": "Behindertenparkplatz Übach-Palenberg",
-      "street": null,
+      "label": "Merksteiner Straße",
+      "street": "Merksteiner Straße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
       "timeRestriction": null,
@@ -70,6 +55,21 @@
       "lng": 6.101534150000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1304717543), ODbL"
+    },
+    {
+      "id": "uebach-palenberg-910accd7d8",
+      "city": "uebach-palenberg",
+      "label": "Rathausplatz",
+      "street": "Rathausplatz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Übach-Palenberg",
+      "spotCount": 1,
+      "lat": 50.9198182,
+      "lng": 6.1183756,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11595108980), ODbL"
     }
   ]
 }

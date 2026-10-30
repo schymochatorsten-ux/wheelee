@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "ennigerloh",
+    "name": "Ennigerloh",
+    "center": {
+      "lat": 51.833078,
+      "lng": 8.0258652
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ennigerloh-81364e0659",
+      "city": "ennigerloh",
+      "label": "Schulweg",
+      "street": "Schulweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ennigerloh",
+      "spotCount": 2,
+      "lat": 51.833078,
+      "lng": 8.0258652,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1879719770), ODbL"
+    },
+    {
+      "id": "ennigerloh-54b10c5e4e",
+      "city": "ennigerloh",
+      "label": "Westring",
+      "street": "Westring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ennigerloh",
+      "spotCount": 2,
+      "lat": 51.82862085000001,
+      "lng": 8.02363665,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/199822726), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "kirkel",
+    "name": "Kirkel",
+    "center": {
+      "lat": 49.2843178,
+      "lng": 7.236648150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kirkel-002f7991f3",
+      "city": "kirkel",
+      "label": "Unnerweg",
+      "street": "Unnerweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kirkel",
+      "spotCount": 2,
+      "lat": 49.28196,
+      "lng": 7.224968500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/406764281), ODbL"
+    },
+    {
+      "id": "kirkel-f0c276d8a5",
+      "city": "kirkel",
+      "label": "Wielandstraße 12",
+      "street": "Wielandstraße",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kirkel",
+      "spotCount": 4,
+      "lat": 49.2843178,
+      "lng": 7.236648150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1301397231), ODbL"
+    }
+  ]
+}

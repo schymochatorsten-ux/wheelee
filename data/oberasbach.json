@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "oberasbach",
+    "name": "Oberasbach",
+    "center": {
+      "lat": 49.41644960000001,
+      "lng": 10.98631185
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberasbach-ac6438fc4d",
+      "city": "oberasbach",
+      "label": "Am Steinbrüchlein",
+      "street": "Am Steinbrüchlein",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberasbach",
+      "spotCount": 1,
+      "lat": 49.41644960000001,
+      "lng": 10.96318935,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/447646447), ODbL"
+    },
+    {
+      "id": "oberasbach-16a61e5852",
+      "city": "oberasbach",
+      "label": "Park & Ride Unterasbach",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberasbach",
+      "spotCount": 3,
+      "lat": 49.416323850000005,
+      "lng": 10.98631185,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/528222947), ODbL"
+    }
+  ]
+}

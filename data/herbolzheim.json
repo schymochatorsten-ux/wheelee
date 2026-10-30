@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "herbolzheim",
+    "name": "Herbolzheim",
+    "center": {
+      "lat": 48.2233224,
+      "lng": 7.777074300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "herbolzheim-d607b7c850",
+      "city": "herbolzheim",
+      "label": "Carl-Kuenzer-Straße",
+      "street": "Carl-Kuenzer-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Herbolzheim",
+      "spotCount": 1,
+      "lat": 48.220395550000006,
+      "lng": 7.778092900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1326040643), ODbL"
+    },
+    {
+      "id": "herbolzheim-c96ea183fe",
+      "city": "herbolzheim",
+      "label": "Carl-Kuenzer-Straße 7",
+      "street": "Carl-Kuenzer-Straße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herbolzheim",
+      "spotCount": 1,
+      "lat": 48.220314450000004,
+      "lng": 7.777679000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34969455), ODbL"
+    },
+    {
+      "id": "herbolzheim-7c355acd7d",
+      "city": "herbolzheim",
+      "label": "Hauptstraße 39",
+      "street": "Hauptstraße",
+      "houseNumber": "39",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herbolzheim",
+      "spotCount": 1,
+      "lat": 48.2230206,
+      "lng": 7.77755855,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1326040596), ODbL"
+    },
+    {
+      "id": "herbolzheim-7353a650be",
+      "city": "herbolzheim",
+      "label": "P+R Herbolzheim Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Herbolzheim",
+      "spotCount": 1,
+      "lat": 48.2247754,
+      "lng": 7.767398900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31452283), ODbL"
+    },
+    {
+      "id": "herbolzheim-57dd682f1d",
+      "city": "herbolzheim",
+      "label": "P1",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herbolzheim",
+      "spotCount": 1,
+      "lat": 48.223560500000005,
+      "lng": 7.776894500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34793150), ODbL"
+    },
+    {
+      "id": "herbolzheim-b3a1ef7eb7",
+      "city": "herbolzheim",
+      "label": "Rathausgasse 1",
+      "street": "Rathausgasse",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Herbolzheim",
+      "spotCount": 1,
+      "lat": 48.2233224,
+      "lng": 7.777074300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1326040558), ODbL"
+    },
+    {
+      "id": "herbolzheim-0f9251966a",
+      "city": "herbolzheim",
+      "label": "Seeweg",
+      "street": "Seeweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Herbolzheim",
+      "spotCount": 1,
+      "lat": 48.2239237,
+      "lng": 7.767399500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1392538750), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hilpoltstein",
+    "name": "Hilpoltstein",
+    "center": {
+      "lat": 49.1914883,
+      "lng": 11.193525000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hilpoltstein-88cd8663c4",
+      "city": "hilpoltstein",
+      "label": "Johann-Friedrich-Straße 12",
+      "street": "Johann-Friedrich-Straße",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hilpoltstein",
+      "spotCount": 1,
+      "lat": 49.1914883,
+      "lng": 11.193525000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1886884312), ODbL"
+    }
+  ]
+}

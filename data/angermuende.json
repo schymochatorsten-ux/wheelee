@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "angermuende",
+    "name": "Angermünde",
+    "center": {
+      "lat": 53.01807995,
+      "lng": 13.9981503
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "angermuende-f04fa52a03",
+      "city": "angermuende",
+      "label": "Bahnhofsplatz 1",
+      "street": "Bahnhofsplatz",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Angermünde",
+      "spotCount": 1,
+      "lat": 53.01519785000001,
+      "lng": 13.99751285,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/243391060), ODbL"
+    },
+    {
+      "id": "angermuende-94c9e4b01b",
+      "city": "angermuende",
+      "label": "Blumberger Mühle",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Angermünde",
+      "spotCount": 1,
+      "lat": 53.035264600000005,
+      "lng": 13.96647465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/244981261), ODbL"
+    },
+    {
+      "id": "angermuende-d7c599d63c",
+      "city": "angermuende",
+      "label": "Parkplatz Sparkasse",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Angermünde",
+      "spotCount": 1,
+      "lat": 53.01807995,
+      "lng": 14.002478,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/244997928), ODbL"
+    },
+    {
+      "id": "angermuende-f87c4205b0",
+      "city": "angermuende",
+      "label": "VR-Bank",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Angermünde",
+      "spotCount": 1,
+      "lat": 53.0149909,
+      "lng": 13.9981503,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1221508904), ODbL"
+    }
+  ]
+}

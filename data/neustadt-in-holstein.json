@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "neustadt-in-holstein",
+    "name": "Neustadt in Holstein",
+    "center": {
+      "lat": 54.10618255,
+      "lng": 10.83098185
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neustadt-in-holstein-e8052e92d5",
+      "city": "neustadt-in-holstein",
+      "label": "Rettiner Weg 77",
+      "street": "Rettiner Weg",
+      "houseNumber": "77",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neustadt in Holstein",
+      "spotCount": 1,
+      "lat": 54.104652300000005,
+      "lng": 10.8336447,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3852284566), ODbL"
+    },
+    {
+      "id": "neustadt-in-holstein-cb7f673abe",
+      "city": "neustadt-in-holstein",
+      "label": "Rosengarten",
+      "street": "Rosengarten",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neustadt in Holstein",
+      "spotCount": 1,
+      "lat": 54.10618255,
+      "lng": 10.8190509,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/290327878), ODbL"
+    },
+    {
+      "id": "neustadt-in-holstein-a606770f02",
+      "city": "neustadt-in-holstein",
+      "label": "Rosengarten 6",
+      "street": "Rosengarten",
+      "houseNumber": "6",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neustadt in Holstein",
+      "spotCount": 1,
+      "lat": 54.106318300000005,
+      "lng": 10.818773750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1127521583), ODbL"
+    },
+    {
+      "id": "neustadt-in-holstein-dc585fc94f",
+      "city": "neustadt-in-holstein",
+      "label": "Uferweg",
+      "street": "Uferweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neustadt in Holstein",
+      "spotCount": 3,
+      "lat": 54.08873680000001,
+      "lng": 10.83098185,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/293183736), ODbL"
+    }
+  ]
+}

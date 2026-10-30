@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "titisee-neustadt",
+    "name": "Titisee-Neustadt",
+    "center": {
+      "lat": 47.9098722,
+      "lng": 8.210287300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "titisee-neustadt-ff82932f2b",
+      "city": "titisee-neustadt",
+      "label": "Bahnhofstraße 2",
+      "street": "Bahnhofstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Titisee-Neustadt",
+      "spotCount": 1,
+      "lat": 47.91023965000001,
+      "lng": 8.21140015,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/304189562), ODbL"
+    },
+    {
+      "id": "titisee-neustadt-a88fc65f39",
+      "city": "titisee-neustadt",
+      "label": "Bahnhofstraße 2",
+      "street": "Bahnhofstraße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Titisee-Neustadt",
+      "spotCount": 1,
+      "lat": 47.910199150000004,
+      "lng": 8.2114463,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1297342801), ODbL"
+    },
+    {
+      "id": "titisee-neustadt-522c8e6d36",
+      "city": "titisee-neustadt",
+      "label": "P+R-Parkplatz Bahnhof Neustadt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Titisee-Neustadt",
+      "spotCount": 1,
+      "lat": 47.91005135,
+      "lng": 8.210287300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/106447856), ODbL"
+    },
+    {
+      "id": "titisee-neustadt-7966e1ff8f",
+      "city": "titisee-neustadt",
+      "label": "Parkplatz Parkstraße (P3)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Titisee-Neustadt",
+      "spotCount": 3,
+      "lat": 47.903785600000006,
+      "lng": 8.15728035,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/81203127), ODbL"
+    },
+    {
+      "id": "titisee-neustadt-a70bde1018",
+      "city": "titisee-neustadt",
+      "label": "Parkstraße 13",
+      "street": "Parkstraße",
+      "houseNumber": "13",
+      "note": "gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Titisee-Neustadt",
+      "spotCount": 1,
+      "lat": 47.9031526,
+      "lng": 8.1561681,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1460120929), ODbL"
+    },
+    {
+      "id": "titisee-neustadt-4187b0d10a",
+      "city": "titisee-neustadt",
+      "label": "Saiger Straße 2b",
+      "street": "Saiger Straße",
+      "houseNumber": "2b",
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Titisee-Neustadt",
+      "spotCount": 1,
+      "lat": 47.9098722,
+      "lng": 8.2108933,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1297342802), ODbL"
+    },
+    {
+      "id": "titisee-neustadt-a60d441eea",
+      "city": "titisee-neustadt",
+      "label": "Seestraße",
+      "street": "Seestraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Titisee-Neustadt",
+      "spotCount": 1,
+      "lat": 47.902004700000006,
+      "lng": 8.1505013,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4833984246), ODbL"
+    }
+  ]
+}

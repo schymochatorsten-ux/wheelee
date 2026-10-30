@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "bad-ems",
+    "name": "Bad Ems",
+    "center": {
+      "lat": 50.33360685,
+      "lng": 7.714646800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-ems-30b8c8d2de",
+      "city": "bad-ems",
+      "label": "Am Friedhof 1",
+      "street": "Am Friedhof",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Ems",
+      "spotCount": 1,
+      "lat": 50.33942975,
+      "lng": 7.713577900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1540007473), ODbL"
+    },
+    {
+      "id": "bad-ems-4b8dd867a0",
+      "city": "bad-ems",
+      "label": "Bahnhofsplatz 2",
+      "street": "Bahnhofsplatz",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bad Ems",
+      "spotCount": 2,
+      "lat": 50.32780785,
+      "lng": 7.729430000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/728148989), ODbL"
+    },
+    {
+      "id": "bad-ems-e612701367",
+      "city": "bad-ems",
+      "label": "Lahnstraße 3-5",
+      "street": "Lahnstraße",
+      "houseNumber": "3-5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bad Ems",
+      "spotCount": 2,
+      "lat": 50.3299572,
+      "lng": 7.729501750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/490739924), ODbL"
+    },
+    {
+      "id": "bad-ems-6429e76c18",
+      "city": "bad-ems",
+      "label": "Oranienweg",
+      "street": "Oranienweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bad Ems",
+      "spotCount": 2,
+      "lat": 50.33423415,
+      "lng": 7.713819600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/237295379), ODbL"
+    },
+    {
+      "id": "bad-ems-959832147a",
+      "city": "bad-ems",
+      "label": "Wipsch",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bad Ems",
+      "spotCount": 1,
+      "lat": 50.33360685,
+      "lng": 7.71431775,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/231096481), ODbL"
+    },
+    {
+      "id": "bad-ems-ff26d39cbb",
+      "city": "bad-ems",
+      "label": "Wipsch Tiefgarage",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "Mo-Sa 07:00-21:00",
+      "district": "Bad Ems",
+      "spotCount": 8,
+      "lat": 50.3335281,
+      "lng": 7.714646800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/742001992), ODbL"
+    }
+  ]
+}

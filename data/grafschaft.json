@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "grafschaft",
+    "name": "Grafschaft",
+    "center": {
+      "lat": 50.58495005,
+      "lng": 7.028069
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grafschaft-6f49de8375",
+      "city": "grafschaft",
+      "label": "Dürener Straße",
+      "street": "Dürener Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Grafschaft",
+      "spotCount": 1,
+      "lat": 50.5848719,
+      "lng": 7.028069,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1355153001), ODbL"
+    },
+    {
+      "id": "grafschaft-e412fd8cb1",
+      "city": "grafschaft",
+      "label": "Dürener Straße",
+      "street": "Dürener Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Grafschaft",
+      "spotCount": 1,
+      "lat": 50.58495005,
+      "lng": 7.02794025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1355153002), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "loebau",
+    "name": "Löbau",
+    "center": {
+      "lat": 51.09840895000001,
+      "lng": 14.672359400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "loebau-c95d329087",
+      "city": "loebau",
+      "label": "Breitscheidstraße 9",
+      "street": "Breitscheidstraße",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Löbau",
+      "spotCount": 3,
+      "lat": 51.1019834,
+      "lng": 14.672359400000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/652797697), ODbL"
+    },
+    {
+      "id": "loebau-fdd17d7a98",
+      "city": "loebau",
+      "label": "Hartmannstraße",
+      "street": "Hartmannstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Löbau",
+      "spotCount": 1,
+      "lat": 51.09840895000001,
+      "lng": 14.665647,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/121913800), ODbL"
+    },
+    {
+      "id": "loebau-f2de45aa20",
+      "city": "loebau",
+      "label": "Löbauer Berg",
+      "street": "Löbauer Berg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Löbau",
+      "spotCount": 3,
+      "lat": 51.0910312,
+      "lng": 14.692828400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/629371266), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "wennigsen",
+    "name": "Wennigsen (Deister)",
+    "center": {
+      "lat": 52.273261850000004,
+      "lng": 9.572986700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wennigsen-5e71ab1312",
+      "city": "wennigsen",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wennigsen (Deister)",
+      "spotCount": 2,
+      "lat": 52.273365850000005,
+      "lng": 9.57432205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/208236134), ODbL"
+    },
+    {
+      "id": "wennigsen-00f64a4698",
+      "city": "wennigsen",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wennigsen (Deister)",
+      "spotCount": 1,
+      "lat": 52.273261850000004,
+      "lng": 9.57420785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1012584586), ODbL"
+    },
+    {
+      "id": "wennigsen-a807c4c482",
+      "city": "wennigsen",
+      "label": "Hauptstraße 10b",
+      "street": "Hauptstraße",
+      "houseNumber": "10b",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wennigsen (Deister)",
+      "spotCount": 1,
+      "lat": 52.2728492,
+      "lng": 9.5697139,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/227577881), ODbL"
+    },
+    {
+      "id": "wennigsen-d1395d31df",
+      "city": "wennigsen",
+      "label": "Hauptstraße 27",
+      "street": "Hauptstraße",
+      "houseNumber": "27",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wennigsen (Deister)",
+      "spotCount": 1,
+      "lat": 52.272252800000004,
+      "lng": 9.568525700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/525314658), ODbL"
+    },
+    {
+      "id": "wennigsen-18e2559dbf",
+      "city": "wennigsen",
+      "label": "Klosteramthof 7",
+      "street": "Klosteramthof",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wennigsen (Deister)",
+      "spotCount": 1,
+      "lat": 52.273754800000006,
+      "lng": 9.572986700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3761415291), ODbL"
+    }
+  ]
+}

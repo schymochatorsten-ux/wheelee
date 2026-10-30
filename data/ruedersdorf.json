@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "ruedersdorf",
+    "name": "Rüdersdorf bei Berlin",
+    "center": {
+      "lat": 52.47035605000001,
+      "lng": 13.7869395
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ruedersdorf-39ab0e888d",
+      "city": "ruedersdorf",
+      "label": "Hans-Striegelski-Straße",
+      "street": "Hans-Striegelski-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rüdersdorf bei Berlin",
+      "spotCount": 2,
+      "lat": 52.47035605000001,
+      "lng": 13.7869395,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/321907893), ODbL"
+    },
+    {
+      "id": "ruedersdorf-13082672ac",
+      "city": "ruedersdorf",
+      "label": "Waldstraße",
+      "street": "Waldstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rüdersdorf bei Berlin",
+      "spotCount": 5,
+      "lat": 52.454362700000004,
+      "lng": 13.772260450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1116408456), ODbL"
+    }
+  ]
+}

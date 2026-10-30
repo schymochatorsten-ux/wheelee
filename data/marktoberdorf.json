@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "marktoberdorf",
+    "name": "Marktoberdorf",
+    "center": {
+      "lat": 47.7779733,
+      "lng": 10.6165448
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "marktoberdorf-52a43fdf10",
+      "city": "marktoberdorf",
+      "label": "Brückenstraße",
+      "street": "Brückenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Marktoberdorf",
+      "spotCount": 1,
+      "lat": 47.77324775,
+      "lng": 10.6037709,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/60096824), ODbL"
+    },
+    {
+      "id": "marktoberdorf-d64f7b7b50",
+      "city": "marktoberdorf",
+      "label": "Buchelweg",
+      "street": "Buchelweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Marktoberdorf",
+      "spotCount": 3,
+      "lat": 47.775340400000005,
+      "lng": 10.6229261,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1064624999), ODbL"
+    },
+    {
+      "id": "marktoberdorf-1003d76dbe",
+      "city": "marktoberdorf",
+      "label": "Georg-Fischer-Straße 13",
+      "street": "Georg-Fischer-Straße",
+      "houseNumber": "13",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Marktoberdorf",
+      "spotCount": 2,
+      "lat": 47.7779733,
+      "lng": 10.6177933,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/59965085), ODbL"
+    },
+    {
+      "id": "marktoberdorf-f6996ad475",
+      "city": "marktoberdorf",
+      "label": "Jahnstraße",
+      "street": "Jahnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Marktoberdorf",
+      "spotCount": 1,
+      "lat": 47.7773581,
+      "lng": 10.6165448,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31100685), ODbL"
+    },
+    {
+      "id": "marktoberdorf-3ce508531d",
+      "city": "marktoberdorf",
+      "label": "Ruderatshofener Straße",
+      "street": "Ruderatshofener Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Marktoberdorf",
+      "spotCount": 1,
+      "lat": 47.78938170000001,
+      "lng": 10.61566155,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1459313994), ODbL"
+    },
+    {
+      "id": "marktoberdorf-221209fae3",
+      "city": "marktoberdorf",
+      "label": "Waldweg",
+      "street": "Waldweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Marktoberdorf",
+      "spotCount": 1,
+      "lat": 47.78184965,
+      "lng": 10.588535700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1089519241), ODbL"
+    }
+  ]
+}

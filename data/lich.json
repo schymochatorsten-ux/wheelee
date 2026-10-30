@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "lich",
+    "name": "Lich",
+    "center": {
+      "lat": 50.520591950000004,
+      "lng": 8.818336300000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lich-51dcfb18ea",
+      "city": "lich",
+      "label": "Bahnhofstraße 1",
+      "street": "Bahnhofstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lich",
+      "spotCount": 2,
+      "lat": 50.514869950000005,
+      "lng": 8.821801400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1414729524), ODbL"
+    },
+    {
+      "id": "lich-bbadf8a2eb",
+      "city": "lich",
+      "label": "Goethestraße",
+      "street": "Goethestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lich",
+      "spotCount": 2,
+      "lat": 50.525216500000006,
+      "lng": 8.806363300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1618334238), ODbL"
+    },
+    {
+      "id": "lich-42d0f513c3",
+      "city": "lich",
+      "label": "Im Kloster",
+      "street": "Im Kloster",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lich",
+      "spotCount": 3,
+      "lat": 50.49314285,
+      "lng": 8.792559350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/92785334), ODbL"
+    },
+    {
+      "id": "lich-f502e5f939",
+      "city": "lich",
+      "label": "Liebfrauenberg 2",
+      "street": "Liebfrauenberg",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lich",
+      "spotCount": 1,
+      "lat": 50.520591950000004,
+      "lng": 8.818336300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1414449583), ODbL"
+    }
+  ]
+}

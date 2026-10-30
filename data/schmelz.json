@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "schmelz",
+    "name": "Schmelz",
+    "center": {
+      "lat": 49.476530800000006,
+      "lng": 6.895085450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schmelz-598450d0c4",
+      "city": "schmelz",
+      "label": "Friedhofsweg",
+      "street": "Friedhofsweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schmelz",
+      "spotCount": 1,
+      "lat": 49.423582950000004,
+      "lng": 6.838618100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/47977310), ODbL"
+    },
+    {
+      "id": "schmelz-6475187809",
+      "city": "schmelz",
+      "label": "Kirschholzstraße 19",
+      "street": "Kirschholzstraße",
+      "houseNumber": "19",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schmelz",
+      "spotCount": 2,
+      "lat": 49.476530800000006,
+      "lng": 6.895085450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1477885597), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "spaichingen",
+    "name": "Spaichingen",
+    "center": {
+      "lat": 48.0691954,
+      "lng": 8.7406827
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "spaichingen-e42b6465cc",
+      "city": "spaichingen",
+      "label": "Eisenbahnstraße",
+      "street": "Eisenbahnstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Spaichingen",
+      "spotCount": 1,
+      "lat": 48.0691954,
+      "lng": 8.7406827,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1422545281), ODbL"
+    }
+  ]
+}

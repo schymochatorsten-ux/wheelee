@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "messstetten",
+    "name": "Meßstetten",
+    "center": {
+      "lat": 48.205928,
+      "lng": 8.871075000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "messstetten-bdf142f03e",
+      "city": "messstetten",
+      "label": "Im Oberdorf 16",
+      "street": "Im Oberdorf",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Meßstetten",
+      "spotCount": 4,
+      "lat": 48.2050703,
+      "lng": 8.871075000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1329842610), ODbL"
+    },
+    {
+      "id": "messstetten-468f834ac9",
+      "city": "messstetten",
+      "label": "Im Oberdorf 26",
+      "street": "Im Oberdorf",
+      "houseNumber": "26",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Meßstetten",
+      "spotCount": 4,
+      "lat": 48.205928,
+      "lng": 8.869163400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1329027934), ODbL"
+    }
+  ]
+}

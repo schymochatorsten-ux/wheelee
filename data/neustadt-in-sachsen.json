@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "neustadt-in-sachsen",
+    "name": "Neustadt in Sachsen",
+    "center": {
+      "lat": 51.02005335,
+      "lng": 14.208638650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neustadt-in-sachsen-181d71cf80",
+      "city": "neustadt-in-sachsen",
+      "label": "Dammstraße",
+      "street": "Dammstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neustadt in Sachsen",
+      "spotCount": 1,
+      "lat": 51.023279900000006,
+      "lng": 14.234246800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10098683701), ODbL"
+    },
+    {
+      "id": "neustadt-in-sachsen-813e67e25a",
+      "city": "neustadt-in-sachsen",
+      "label": "Götzingerhöhe",
+      "street": "Götzingerhöhe",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neustadt in Sachsen",
+      "spotCount": 1,
+      "lat": 51.0113191,
+      "lng": 14.208638650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/71533167), ODbL"
+    },
+    {
+      "id": "neustadt-in-sachsen-1bf08d638e",
+      "city": "neustadt-in-sachsen",
+      "label": "Parkplatz Waldbad Polenz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neustadt in Sachsen",
+      "spotCount": 1,
+      "lat": 51.02005335,
+      "lng": 14.179782,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/807454844), ODbL"
+    }
+  ]
+}

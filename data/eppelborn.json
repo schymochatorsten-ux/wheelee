@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "eppelborn",
+    "name": "Eppelborn",
+    "center": {
+      "lat": 49.40751765,
+      "lng": 6.96799715
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eppelborn-7c77b8e1da",
+      "city": "eppelborn",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eppelborn",
+      "spotCount": 2,
+      "lat": 49.408743,
+      "lng": 6.96799715,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1182859451), ODbL"
+    },
+    {
+      "id": "eppelborn-8e935f83e8",
+      "city": "eppelborn",
+      "label": "Europaplatz 13",
+      "street": "Europaplatz",
+      "houseNumber": "13",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eppelborn",
+      "spotCount": 1,
+      "lat": 49.40751765,
+      "lng": 6.969342900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/820188868), ODbL"
+    },
+    {
+      "id": "eppelborn-cee0d27777",
+      "city": "eppelborn",
+      "label": "Hellbergstraße 27",
+      "street": "Hellbergstraße",
+      "houseNumber": "27",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eppelborn",
+      "spotCount": 1,
+      "lat": 49.40463245000001,
+      "lng": 6.962978550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1232481976), ODbL"
+    }
+  ]
+}

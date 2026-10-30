@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "wurster-nordseekueste",
+    "name": "Wurster Nordseeküste",
+    "center": {
+      "lat": 53.77839805000001,
+      "lng": 8.61323145
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wurster-nordseekueste-891647183c",
+      "city": "wurster-nordseekueste",
+      "label": "Bahnhofstraße 7",
+      "street": "Bahnhofstraße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Wurster Nordseeküste",
+      "spotCount": 3,
+      "lat": 53.77841790000001,
+      "lng": 8.62139925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/268940854), ODbL"
+    },
+    {
+      "id": "wurster-nordseekueste-3d8a334542",
+      "city": "wurster-nordseekueste",
+      "label": "Elbestraße 1",
+      "street": "Elbestraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wurster Nordseeküste",
+      "spotCount": 1,
+      "lat": 53.77839805000001,
+      "lng": 8.613425750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1233875922), ODbL"
+    },
+    {
+      "id": "wurster-nordseekueste-6990812838",
+      "city": "wurster-nordseekueste",
+      "label": "Elbestraße 1",
+      "street": "Elbestraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wurster Nordseeküste",
+      "spotCount": 2,
+      "lat": 53.778420100000005,
+      "lng": 8.61323145,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1233875923), ODbL"
+    },
+    {
+      "id": "wurster-nordseekueste-86a0eeb967",
+      "city": "wurster-nordseekueste",
+      "label": "Gröpelstraße 2",
+      "street": "Gröpelstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wurster Nordseeküste",
+      "spotCount": 1,
+      "lat": 53.68825425,
+      "lng": 8.566284800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/39270204), ODbL"
+    },
+    {
+      "id": "wurster-nordseekueste-277db67c82",
+      "city": "wurster-nordseekueste",
+      "label": "Valger Landstraße 2",
+      "street": "Valger Landstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wurster Nordseeküste",
+      "spotCount": 2,
+      "lat": 53.69391385,
+      "lng": 8.564773500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/602142756), ODbL"
+    }
+  ]
+}

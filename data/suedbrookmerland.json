@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "suedbrookmerland",
+    "name": "Südbrookmerland",
+    "center": {
+      "lat": 53.483989750000006,
+      "lng": 7.37369665
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "suedbrookmerland-a272b881c0",
+      "city": "suedbrookmerland",
+      "label": "Handelsring",
+      "street": "Handelsring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Südbrookmerland",
+      "spotCount": 1,
+      "lat": 53.483989750000006,
+      "lng": 7.37369665,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/69916297), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "remshalden",
+    "name": "Remshalden",
+    "center": {
+      "lat": 48.810404250000005,
+      "lng": 9.4252959
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "remshalden-28149f49fc",
+      "city": "remshalden",
+      "label": "Badstraße",
+      "street": "Badstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Remshalden",
+      "spotCount": 5,
+      "lat": 48.8061519,
+      "lng": 9.4394497,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/208522883), ODbL"
+    },
+    {
+      "id": "remshalden-f2ca5df309",
+      "city": "remshalden",
+      "label": "Badstraße",
+      "street": "Badstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Remshalden",
+      "spotCount": 1,
+      "lat": 48.8056909,
+      "lng": 9.440320100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/876032813), ODbL"
+    },
+    {
+      "id": "remshalden-9232815276",
+      "city": "remshalden",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Remshalden",
+      "spotCount": 1,
+      "lat": 48.810451,
+      "lng": 9.420732100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1415399952), ODbL"
+    },
+    {
+      "id": "remshalden-5dc7017c33",
+      "city": "remshalden",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Remshalden",
+      "spotCount": 1,
+      "lat": 48.810404250000005,
+      "lng": 9.420655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1415404010), ODbL"
+    },
+    {
+      "id": "remshalden-6c3d3fb807",
+      "city": "remshalden",
+      "label": "Kapellenstraße 4",
+      "street": "Kapellenstraße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Remshalden",
+      "spotCount": 2,
+      "lat": 48.81779485,
+      "lng": 9.4252959,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/477514884), ODbL"
+    }
+  ]
+}

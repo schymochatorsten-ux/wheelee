@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "linnich",
+    "name": "Linnich",
+    "center": {
+      "lat": 50.98045485,
+      "lng": 6.2727195
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "linnich-d1ecd53d35",
+      "city": "linnich",
+      "label": "Erkelenzer Straße",
+      "street": "Erkelenzer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Linnich",
+      "spotCount": 1,
+      "lat": 50.982565,
+      "lng": 6.2759064,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1037306378), ODbL"
+    },
+    {
+      "id": "linnich-3d77ee8cd8",
+      "city": "linnich",
+      "label": "Hubertusstraße",
+      "street": "Hubertusstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Linnich",
+      "spotCount": 1,
+      "lat": 50.98013350000001,
+      "lng": 6.2727195,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1225710673), ODbL"
+    },
+    {
+      "id": "linnich-9912c85268",
+      "city": "linnich",
+      "label": "Rurstraße 48",
+      "street": "Rurstraße",
+      "houseNumber": "48",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Linnich",
+      "spotCount": 1,
+      "lat": 50.98030145,
+      "lng": 6.2726366,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1225710667), ODbL"
+    },
+    {
+      "id": "linnich-263667c4c7",
+      "city": "linnich",
+      "label": "Rurstraße 48a",
+      "street": "Rurstraße",
+      "houseNumber": "48a",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Linnich",
+      "spotCount": 1,
+      "lat": 50.98045485,
+      "lng": 6.27232735,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1225710666), ODbL"
+    }
+  ]
+}

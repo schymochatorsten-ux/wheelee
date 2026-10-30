@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "ruppichteroth",
+    "name": "Ruppichteroth",
+    "center": {
+      "lat": 50.8419285,
+      "lng": 7.479647250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ruppichteroth-117f80651c",
+      "city": "ruppichteroth",
+      "label": "Brölstraße",
+      "street": "Brölstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ruppichteroth",
+      "spotCount": 1,
+      "lat": 50.8444332,
+      "lng": 7.4846727500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1303865602), ODbL"
+    },
+    {
+      "id": "ruppichteroth-540a1a9051",
+      "city": "ruppichteroth",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ruppichteroth",
+      "spotCount": 1,
+      "lat": 50.81659925,
+      "lng": 7.3806957,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1500047991), ODbL"
+    },
+    {
+      "id": "ruppichteroth-2726576f53",
+      "city": "ruppichteroth",
+      "label": "Hauptstraße 4a",
+      "street": "Hauptstraße",
+      "houseNumber": "4a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ruppichteroth",
+      "spotCount": 2,
+      "lat": 50.816547750000005,
+      "lng": 7.3803456,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25864412), ODbL"
+    },
+    {
+      "id": "ruppichteroth-97e1ee4176",
+      "city": "ruppichteroth",
+      "label": "Hauptstraße 4a",
+      "street": "Hauptstraße",
+      "houseNumber": "4a",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ruppichteroth",
+      "spotCount": 1,
+      "lat": 50.81657560000001,
+      "lng": 7.380612750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1500047990), ODbL"
+    },
+    {
+      "id": "ruppichteroth-61555cba6d",
+      "city": "ruppichteroth",
+      "label": "Ruppichteroth Post",
+      "street": "Ruppichteroth Post",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ruppichteroth",
+      "spotCount": 5,
+      "lat": 50.8419285,
+      "lng": 7.479647250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/375032003), ODbL"
+    },
+    {
+      "id": "ruppichteroth-4d45172e59",
+      "city": "ruppichteroth",
+      "label": "Stein",
+      "street": "Stein",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ruppichteroth",
+      "spotCount": 1,
+      "lat": 50.845248950000006,
+      "lng": 7.4891407,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1452812473), ODbL"
+    },
+    {
+      "id": "ruppichteroth-b4b0eb42fd",
+      "city": "ruppichteroth",
+      "label": "Stein",
+      "street": "Stein",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ruppichteroth",
+      "spotCount": 1,
+      "lat": 50.84521995,
+      "lng": 7.489166050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1452812474), ODbL"
+    }
+  ]
+}

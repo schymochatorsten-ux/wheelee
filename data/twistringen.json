@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "twistringen",
+    "name": "Twistringen",
+    "center": {
+      "lat": 52.793154,
+      "lng": 8.6450231
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "twistringen-e6c7820ce3",
+      "city": "twistringen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Twistringen",
+      "spotCount": 4,
+      "lat": 52.793154,
+      "lng": 8.6450231,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/159144296), ODbL"
+    }
+  ]
+}

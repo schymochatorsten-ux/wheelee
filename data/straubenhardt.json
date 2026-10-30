@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "straubenhardt",
+    "name": "Straubenhardt",
+    "center": {
+      "lat": 48.8457529,
+      "lng": 8.5292259
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "straubenhardt-dcf448ad85",
+      "city": "straubenhardt",
+      "label": "Albert-Einstein-Straße",
+      "street": "Albert-Einstein-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Straubenhardt",
+      "spotCount": 1,
+      "lat": 48.8457529,
+      "lng": 8.5241032,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26980885), ODbL"
+    },
+    {
+      "id": "straubenhardt-fa4151940b",
+      "city": "straubenhardt",
+      "label": "Frauenalber Pfad",
+      "street": "Frauenalber Pfad",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Straubenhardt",
+      "spotCount": 2,
+      "lat": 48.845658,
+      "lng": 8.495883150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1313104144), ODbL"
+    },
+    {
+      "id": "straubenhardt-8e2c598397",
+      "city": "straubenhardt",
+      "label": "Herrenalber Straße 18",
+      "street": "Herrenalber Straße",
+      "houseNumber": "18",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Straubenhardt",
+      "spotCount": 1,
+      "lat": 48.8427628,
+      "lng": 8.5292259,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32568365), ODbL"
+    },
+    {
+      "id": "straubenhardt-202d130f6d",
+      "city": "straubenhardt",
+      "label": "Schulhof",
+      "street": "Schulhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Straubenhardt",
+      "spotCount": 1,
+      "lat": 48.84631525,
+      "lng": 8.529878750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28269155), ODbL"
+    }
+  ]
+}

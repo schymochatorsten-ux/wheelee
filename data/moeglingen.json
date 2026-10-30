@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "moeglingen",
+    "name": "Möglingen",
+    "center": {
+      "lat": 48.889803650000005,
+      "lng": 9.13202025
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "moeglingen-b82fc62859",
+      "city": "moeglingen",
+      "label": "Beim Hasenkreuz 3",
+      "street": "Beim Hasenkreuz",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Möglingen",
+      "spotCount": 1,
+      "lat": 48.889803650000005,
+      "lng": 9.117069400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/424480088), ODbL"
+    },
+    {
+      "id": "moeglingen-be2ebe7592",
+      "city": "moeglingen",
+      "label": "Brunnenstraße",
+      "street": "Brunnenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Möglingen",
+      "spotCount": 1,
+      "lat": 48.8880628,
+      "lng": 9.13268665,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/370066851), ODbL"
+    },
+    {
+      "id": "moeglingen-34f4fbc64c",
+      "city": "moeglingen",
+      "label": "Lenauweg 18",
+      "street": "Lenauweg",
+      "houseNumber": "18",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Möglingen",
+      "spotCount": 1,
+      "lat": 48.890682350000006,
+      "lng": 9.13202025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/181132590), ODbL"
+    }
+  ]
+}

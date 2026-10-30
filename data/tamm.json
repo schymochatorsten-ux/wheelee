@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "tamm",
+    "name": "Tamm",
+    "center": {
+      "lat": 48.92186240000001,
+      "lng": 9.12591225
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "tamm-be39cfaad2",
+      "city": "tamm",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Tamm",
+      "spotCount": 1,
+      "lat": 48.92186240000001,
+      "lng": 9.12488405,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/225784449), ODbL"
+    },
+    {
+      "id": "tamm-e32dcab072",
+      "city": "tamm",
+      "label": "Bahnhofstraße 15",
+      "street": "Bahnhofstraße",
+      "houseNumber": "15",
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Tamm",
+      "spotCount": 2,
+      "lat": 48.921406350000005,
+      "lng": 9.12591225,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1281925729), ODbL"
+    },
+    {
+      "id": "tamm-5c74dc61f8",
+      "city": "tamm",
+      "label": "EDEKA Matkovic",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Tamm",
+      "spotCount": 10,
+      "lat": 48.9224395,
+      "lng": 9.123168,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27373801), ODbL"
+    },
+    {
+      "id": "tamm-46a9a821f8",
+      "city": "tamm",
+      "label": "Friedhof Tamm",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Tamm",
+      "spotCount": 3,
+      "lat": 48.92169735,
+      "lng": 9.1130893,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/422999451), ODbL"
+    },
+    {
+      "id": "tamm-c1044a1fa6",
+      "city": "tamm",
+      "label": "Parkplatz am Bahnhof (P+R)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Tamm",
+      "spotCount": 2,
+      "lat": 48.921047550000004,
+      "lng": 9.127356800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/89072677), ODbL"
+    },
+    {
+      "id": "tamm-66b7be5213",
+      "city": "tamm",
+      "label": "Warenwandel & Wertsoffhof Tammerfeld",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Tamm",
+      "spotCount": 1,
+      "lat": 48.9220551,
+      "lng": 9.1458581,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1557279066), ODbL"
+    }
+  ]
+}

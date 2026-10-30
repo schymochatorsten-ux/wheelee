@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "schrobenhausen",
+    "name": "Schrobenhausen",
+    "center": {
+      "lat": 48.5603543,
+      "lng": 11.2640472
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schrobenhausen-2ad9ccbd34",
+      "city": "schrobenhausen",
+      "label": "Am Hofgraben",
+      "street": "Am Hofgraben",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schrobenhausen",
+      "spotCount": 3,
+      "lat": 48.5603543,
+      "lng": 11.2640472,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2649348480), ODbL"
+    },
+    {
+      "id": "schrobenhausen-f880936514",
+      "city": "schrobenhausen",
+      "label": "Georg-Alber-Straße",
+      "street": "Georg-Alber-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Schrobenhausen",
+      "spotCount": 1,
+      "lat": 48.56548595,
+      "lng": 11.259801450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/452270230), ODbL"
+    },
+    {
+      "id": "schrobenhausen-bd21b754b6",
+      "city": "schrobenhausen",
+      "label": "Hallenbad- Parkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schrobenhausen",
+      "spotCount": 1,
+      "lat": 48.5572657,
+      "lng": 11.2699005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/30351396), ODbL"
+    },
+    {
+      "id": "schrobenhausen-f9212e7e44",
+      "city": "schrobenhausen",
+      "label": "Klostergarten",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Schrobenhausen",
+      "spotCount": 1,
+      "lat": 48.558511450000005,
+      "lng": 11.2615715,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35418623), ODbL"
+    },
+    {
+      "id": "schrobenhausen-a90e45d151",
+      "city": "schrobenhausen",
+      "label": "Parkplatz Nord",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schrobenhausen",
+      "spotCount": 1,
+      "lat": 48.5639738,
+      "lng": 11.264827,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/224110015), ODbL"
+    },
+    {
+      "id": "schrobenhausen-7530ec72b6",
+      "city": "schrobenhausen",
+      "label": "Rot-Kreuz-Straße",
+      "street": "Rot-Kreuz-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schrobenhausen",
+      "spotCount": 1,
+      "lat": 48.559270100000006,
+      "lng": 11.263746300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1340875023), ODbL"
+    }
+  ]
+}

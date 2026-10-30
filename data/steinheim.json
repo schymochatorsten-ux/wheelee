@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "steinheim",
+    "name": "Steinheim",
+    "center": {
+      "lat": 51.86814085,
+      "lng": 9.087814250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "steinheim-7c210dcb5a",
+      "city": "steinheim",
+      "label": "Heideweg",
+      "street": "Heideweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Steinheim",
+      "spotCount": 3,
+      "lat": 51.86814085,
+      "lng": 9.087814250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1219383474), ODbL"
+    },
+    {
+      "id": "steinheim-0dd93a0591",
+      "city": "steinheim",
+      "label": "P + R Sandebeck",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Steinheim",
+      "spotCount": 1,
+      "lat": 51.818622850000004,
+      "lng": 8.986613300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/50309718), ODbL"
+    }
+  ]
+}

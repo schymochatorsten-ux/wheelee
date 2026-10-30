@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "preussisch-oldendorf",
+    "name": "Preußisch Oldendorf",
+    "center": {
+      "lat": 52.303952100000004,
+      "lng": 8.53438115
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "preussisch-oldendorf-cdd8ff118b",
+      "city": "preussisch-oldendorf",
+      "label": "Bahnhofstraße 50",
+      "street": "Bahnhofstraße",
+      "houseNumber": "50",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Preußisch Oldendorf",
+      "spotCount": 1,
+      "lat": 52.289232000000005,
+      "lng": 8.54496615,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1228896950), ODbL"
+    },
+    {
+      "id": "preussisch-oldendorf-51ace96714",
+      "city": "preussisch-oldendorf",
+      "label": "Heddinghauser Straße",
+      "street": "Heddinghauser Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Preußisch Oldendorf",
+      "spotCount": 2,
+      "lat": 52.28630885,
+      "lng": 8.53438115,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1190845250), ODbL"
+    },
+    {
+      "id": "preussisch-oldendorf-1fd74ddc81",
+      "city": "preussisch-oldendorf",
+      "label": "Limbergstraße",
+      "street": "Limbergstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Preußisch Oldendorf",
+      "spotCount": 1,
+      "lat": 52.303952100000004,
+      "lng": 8.496902600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1370052090), ODbL"
+    },
+    {
+      "id": "preussisch-oldendorf-aeea5b4a04",
+      "city": "preussisch-oldendorf",
+      "label": "Mindener Straße 17",
+      "street": "Mindener Straße",
+      "houseNumber": "17",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Preußisch Oldendorf",
+      "spotCount": 1,
+      "lat": 52.304031200000004,
+      "lng": 8.4969917,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1370052089), ODbL"
+    }
+  ]
+}

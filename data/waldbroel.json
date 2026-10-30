@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "waldbroel",
+    "name": "Waldbröl",
+    "center": {
+      "lat": 50.87455,
+      "lng": 7.6154626500000004
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "waldbroel-81ac823c22",
+      "city": "waldbroel",
+      "label": "Friedrich-Engelbert-Weg 20",
+      "street": "Friedrich-Engelbert-Weg",
+      "houseNumber": "20",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldbröl",
+      "spotCount": 4,
+      "lat": 50.87263420000001,
+      "lng": 7.6154626500000004,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1505710914), ODbL"
+    },
+    {
+      "id": "waldbroel-9e240dd9c9",
+      "city": "waldbroel",
+      "label": "Kaiserstraße 98b",
+      "street": "Kaiserstraße",
+      "houseNumber": "98b",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldbröl",
+      "spotCount": 1,
+      "lat": 50.8800717,
+      "lng": 7.624857200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/62079012), ODbL"
+    },
+    {
+      "id": "waldbroel-a9c35e1c01",
+      "city": "waldbroel",
+      "label": "Otto-Eichhorn-Straße",
+      "street": "Otto-Eichhorn-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldbröl",
+      "spotCount": 1,
+      "lat": 50.87985345,
+      "lng": 7.6230841,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/116914900), ODbL"
+    },
+    {
+      "id": "waldbroel-bf3b47b375",
+      "city": "waldbroel",
+      "label": "Otto-Eichhorn-Straße",
+      "street": "Otto-Eichhorn-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldbröl",
+      "spotCount": 1,
+      "lat": 50.88007195,
+      "lng": 7.6244250000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/282386273), ODbL"
+    },
+    {
+      "id": "waldbroel-1d898f9f92",
+      "city": "waldbroel",
+      "label": "Raabeweg",
+      "street": "Raabeweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldbröl",
+      "spotCount": 2,
+      "lat": 50.87453345,
+      "lng": 7.607476,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1534700982), ODbL"
+    },
+    {
+      "id": "waldbroel-5afa9aa2f3",
+      "city": "waldbroel",
+      "label": "Raabeweg",
+      "street": "Raabeweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Waldbröl",
+      "spotCount": 1,
+      "lat": 50.8745187,
+      "lng": 7.607480000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1534700983), ODbL"
+    },
+    {
+      "id": "waldbroel-a5c30e7909",
+      "city": "waldbroel",
+      "label": "Raabeweg",
+      "street": "Raabeweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Waldbröl",
+      "spotCount": 1,
+      "lat": 50.87455,
+      "lng": 7.6074715500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1534700984), ODbL"
+    }
+  ]
+}

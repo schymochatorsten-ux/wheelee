@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "wittlich",
+    "name": "Wittlich",
+    "center": {
+      "lat": 49.978737300000006,
+      "lng": 6.92415345
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wittlich-09764512be",
+      "city": "wittlich",
+      "label": "Arnold-Janssen-Straße",
+      "street": "Arnold-Janssen-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wittlich",
+      "spotCount": 2,
+      "lat": 49.980357850000004,
+      "lng": 6.92415345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/961890648), ODbL"
+    },
+    {
+      "id": "wittlich-8a9a5fe93c",
+      "city": "wittlich",
+      "label": "Behindertenparkplatz Wittlich",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wittlich",
+      "spotCount": 2,
+      "lat": 49.97002345,
+      "lng": 6.8623697,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/93130323), ODbL"
+    },
+    {
+      "id": "wittlich-cf9c6a86ea",
+      "city": "wittlich",
+      "label": "Bildungszentrum Eifel-Mosel",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wittlich",
+      "spotCount": 1,
+      "lat": 49.973973050000005,
+      "lng": 6.9342343500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/314218321), ODbL"
+    },
+    {
+      "id": "wittlich-0df5bd7129",
+      "city": "wittlich",
+      "label": "Hauptbahnhof Wittlich",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Wittlich",
+      "spotCount": 6,
+      "lat": 49.972316150000005,
+      "lng": 6.94377315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/60889118), ODbL"
+    },
+    {
+      "id": "wittlich-b5da18e63b",
+      "city": "wittlich",
+      "label": "Koblenzer Straße 93",
+      "street": "Koblenzer Straße",
+      "houseNumber": "93",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wittlich",
+      "spotCount": 1,
+      "lat": 50.00084385,
+      "lng": 6.893574600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/445153304), ODbL"
+    },
+    {
+      "id": "wittlich-6b866c1a40",
+      "city": "wittlich",
+      "label": "Parkplatz Karrstraße",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Wittlich",
+      "spotCount": 2,
+      "lat": 49.984553600000005,
+      "lng": 6.887908100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26116153), ODbL"
+    },
+    {
+      "id": "wittlich-c224029f56",
+      "city": "wittlich",
+      "label": "Weißdornweg 2",
+      "street": "Weißdornweg",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wittlich",
+      "spotCount": 8,
+      "lat": 49.978737300000006,
+      "lng": 6.94214345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1350735048), ODbL"
+    }
+  ]
+}

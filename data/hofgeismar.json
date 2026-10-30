@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "hofgeismar",
+    "name": "Hofgeismar",
+    "center": {
+      "lat": 51.50873835,
+      "lng": 9.402306300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hofgeismar-4af3a348d8",
+      "city": "hofgeismar",
+      "label": "An der Esse",
+      "street": "An der Esse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hofgeismar",
+      "spotCount": 2,
+      "lat": 51.49938935,
+      "lng": 9.39619515,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/153776842), ODbL"
+    },
+    {
+      "id": "hofgeismar-c41ac7f9fb",
+      "city": "hofgeismar",
+      "label": "Behindertenparkplatz Hofgeismar",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hofgeismar",
+      "spotCount": 1,
+      "lat": 51.54584195,
+      "lng": 9.528943250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1558515605), ODbL"
+    },
+    {
+      "id": "hofgeismar-268780bb6a",
+      "city": "hofgeismar",
+      "label": "Schöneberger Straße",
+      "street": "Schöneberger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hofgeismar",
+      "spotCount": 3,
+      "lat": 51.50873835,
+      "lng": 9.402306300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/153568403), ODbL"
+    }
+  ]
+}

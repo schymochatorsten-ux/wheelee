@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "steinheim-bw",
+    "name": "Steinheim an der Murr",
+    "center": {
+      "lat": 48.99033625,
+      "lng": 9.278693200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "steinheim-bw-7ed1b9a685",
+      "city": "steinheim-bw",
+      "label": "Friedhof-Parkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Steinheim an der Murr",
+      "spotCount": 1,
+      "lat": 48.96408675000001,
+      "lng": 9.28415045,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25913159), ODbL"
+    },
+    {
+      "id": "steinheim-bw-1fa89bc2cb",
+      "city": "steinheim-bw",
+      "label": "Kälbling",
+      "street": "Kälbling",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Steinheim an der Murr",
+      "spotCount": 1,
+      "lat": 48.99033625,
+      "lng": 9.23167295,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/207330619), ODbL"
+    },
+    {
+      "id": "steinheim-bw-95e9e91c6b",
+      "city": "steinheim-bw",
+      "label": "Kälbling",
+      "street": "Kälbling",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Steinheim an der Murr",
+      "spotCount": 1,
+      "lat": 48.9922862,
+      "lng": 9.2333429,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/207371442), ODbL"
+    },
+    {
+      "id": "steinheim-bw-50771b0fd1",
+      "city": "steinheim-bw",
+      "label": "Klosterparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Steinheim an der Murr",
+      "spotCount": 2,
+      "lat": 48.96647195,
+      "lng": 9.278693200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/173983540), ODbL"
+    }
+  ]
+}

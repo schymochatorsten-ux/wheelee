@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "gruenwald",
+    "name": "Grünwald",
+    "center": {
+      "lat": 48.040039400000005,
+      "lng": 11.522313450000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gruenwald-18d2f3aeb8",
+      "city": "gruenwald",
+      "label": "Am Wildwechsel 7a",
+      "street": "Am Wildwechsel",
+      "houseNumber": "7a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grünwald",
+      "spotCount": 1,
+      "lat": 48.03124145,
+      "lng": 11.522313450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/177370410), ODbL"
+    },
+    {
+      "id": "gruenwald-e3fcbd2305",
+      "city": "gruenwald",
+      "label": "Emil-Geis-Straße 3",
+      "street": "Emil-Geis-Straße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grünwald",
+      "spotCount": 2,
+      "lat": 48.040039400000005,
+      "lng": 11.52059365,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/256560654), ODbL"
+    },
+    {
+      "id": "gruenwald-5ad9f43344",
+      "city": "gruenwald",
+      "label": "Perlacher Straße 23",
+      "street": "Perlacher Straße",
+      "houseNumber": "23",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Grünwald",
+      "spotCount": 1,
+      "lat": 48.0485834,
+      "lng": 11.540312100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/367885467), ODbL"
+    },
+    {
+      "id": "gruenwald-234a3ca769",
+      "city": "gruenwald",
+      "label": "Südliche Münchner Straße",
+      "street": "Südliche Münchner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grünwald",
+      "spotCount": 1,
+      "lat": 48.04148105,
+      "lng": 11.52501315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/367809714), ODbL"
+    },
+    {
+      "id": "gruenwald-25315bb57a",
+      "city": "gruenwald",
+      "label": "Tölzer Straße",
+      "street": "Tölzer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grünwald",
+      "spotCount": 1,
+      "lat": 48.029792,
+      "lng": 11.520090249999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29320558), ODbL"
+    }
+  ]
+}

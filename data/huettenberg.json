@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "huettenberg",
+    "name": "Hüttenberg",
+    "center": {
+      "lat": 50.513822000000005,
+      "lng": 8.57954065
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "huettenberg-2efb8736fa",
+      "city": "huettenberg",
+      "label": "Dorfstraße 65",
+      "street": "Dorfstraße",
+      "houseNumber": "65",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hüttenberg",
+      "spotCount": 2,
+      "lat": 50.513822000000005,
+      "lng": 8.57954065,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1461835242), ODbL"
+    }
+  ]
+}

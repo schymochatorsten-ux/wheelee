@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "diepholz",
+    "name": "Diepholz",
+    "center": {
+      "lat": 52.61007205,
+      "lng": 8.3819223
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "diepholz-d536aeaaa1",
+      "city": "diepholz",
+      "label": "Nährweg",
+      "street": "Nährweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Diepholz",
+      "spotCount": 2,
+      "lat": 52.6045784,
+      "lng": 8.3819223,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/130172227), ODbL"
+    },
+    {
+      "id": "diepholz-0ef5e799b1",
+      "city": "diepholz",
+      "label": "Schlesierstraße",
+      "street": "Schlesierstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Diepholz",
+      "spotCount": 3,
+      "lat": 52.61007205,
+      "lng": 8.36450295,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/154241966), ODbL"
+    }
+  ]
+}

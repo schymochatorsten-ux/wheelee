@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "greiz",
+    "name": "Greiz",
+    "center": {
+      "lat": 50.655424100000005,
+      "lng": 12.195266750000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "greiz-c2d796bae8",
+      "city": "greiz",
+      "label": "Neustadtring",
+      "street": "Neustadtring",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Greiz",
+      "spotCount": 1,
+      "lat": 50.655424100000005,
+      "lng": 12.1952539,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1078077707), ODbL"
+    },
+    {
+      "id": "greiz-9e7bbdbd09",
+      "city": "greiz",
+      "label": "Neustadtring",
+      "street": "Neustadtring",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Greiz",
+      "spotCount": 1,
+      "lat": 50.65545455,
+      "lng": 12.195266750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1078077708), ODbL"
+    },
+    {
+      "id": "greiz-636d9d87e6",
+      "city": "greiz",
+      "label": "P14 - Parkplatz Vogtlandhalle",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Greiz",
+      "spotCount": 2,
+      "lat": 50.6547123,
+      "lng": 12.19711015,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/216468985), ODbL"
+    },
+    {
+      "id": "greiz-60ad2159d6",
+      "city": "greiz",
+      "label": "P15 - Parkplatz am Kreisverkehr",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Greiz",
+      "spotCount": 2,
+      "lat": 50.65555785,
+      "lng": 12.195244850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/257433219), ODbL"
+    },
+    {
+      "id": "greiz-1fb26f1dff",
+      "city": "greiz",
+      "label": "Poststraße 2",
+      "street": "Poststraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Greiz",
+      "spotCount": 2,
+      "lat": 50.65497605,
+      "lng": 12.19610935,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/257433231), ODbL"
+    }
+  ]
+}

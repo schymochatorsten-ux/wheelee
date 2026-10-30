@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "marktredwitz",
+    "name": "Marktredwitz",
+    "center": {
+      "lat": 50.00845745,
+      "lng": 12.10121295
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "marktredwitz-9c5cef6342",
+      "city": "marktredwitz",
+      "label": "Bahnhofsplatz 5",
+      "street": "Bahnhofsplatz",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Marktredwitz",
+      "spotCount": 2,
+      "lat": 50.0038509,
+      "lng": 12.08205835,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/691035009), ODbL"
+    },
+    {
+      "id": "marktredwitz-3dee583a12",
+      "city": "marktredwitz",
+      "label": "Narzissenstraße",
+      "street": "Narzissenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Marktredwitz",
+      "spotCount": 2,
+      "lat": 50.00845745,
+      "lng": 12.10121295,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/610565599), ODbL"
+    }
+  ]
+}

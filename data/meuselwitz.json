@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "meuselwitz",
+    "name": "Meuselwitz",
+    "center": {
+      "lat": 51.04265000000001,
+      "lng": 12.301570550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "meuselwitz-af57607520",
+      "city": "meuselwitz",
+      "label": "Am Rathaus 12",
+      "street": "Am Rathaus",
+      "houseNumber": "12",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Meuselwitz",
+      "spotCount": 1,
+      "lat": 51.04265,
+      "lng": 12.3010619,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8081837500), ODbL"
+    },
+    {
+      "id": "meuselwitz-efc9a1a66d",
+      "city": "meuselwitz",
+      "label": "Am Rathaus 14",
+      "street": "Am Rathaus",
+      "houseNumber": "14",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Meuselwitz",
+      "spotCount": 1,
+      "lat": 51.04265000000001,
+      "lng": 12.301570550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1054798410), ODbL"
+    }
+  ]
+}

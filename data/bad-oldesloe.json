@@ -12,36 +12,6 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "bad-oldesloe-502c6d39e5",
-      "city": "bad-oldesloe",
-      "label": "Behindertenparkplatz Bad Oldesloe",
-      "street": null,
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Bad Oldesloe",
-      "spotCount": 1,
-      "lat": 53.802361600000005,
-      "lng": 10.3580877,
-      "geoAccuracy": "house",
-      "source": "OpenStreetMap (node/5158373924), ODbL"
-    },
-    {
-      "id": "bad-oldesloe-b19134fab9",
-      "city": "bad-oldesloe",
-      "label": "Behindertenparkplatz Bad Oldesloe",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Bad Oldesloe",
-      "spotCount": 2,
-      "lat": 53.8123397,
-      "lng": 10.3637148,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/319438457), ODbL"
-    },
-    {
       "id": "bad-oldesloe-463b2f6dd5",
       "city": "bad-oldesloe",
       "label": "Berufliche Schulen des Kreises Stormarn",
@@ -55,6 +25,36 @@
       "lng": 10.3977163,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/29345166), ODbL"
+    },
+    {
+      "id": "bad-oldesloe-502c6d39e5",
+      "city": "bad-oldesloe",
+      "label": "Hamburger Straße",
+      "street": "Hamburger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Oldesloe",
+      "spotCount": 1,
+      "lat": 53.802361600000005,
+      "lng": 10.3580877,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5158373924), ODbL"
+    },
+    {
+      "id": "bad-oldesloe-b19134fab9",
+      "city": "bad-oldesloe",
+      "label": "Schützenstraße 55",
+      "street": "Schützenstraße",
+      "houseNumber": "55",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Oldesloe",
+      "spotCount": 2,
+      "lat": 53.8123397,
+      "lng": 10.3637148,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/319438457), ODbL"
     },
     {
       "id": "bad-oldesloe-ab4a60acb7",

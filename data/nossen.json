@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "nossen",
+    "name": "Nossen",
+    "center": {
+      "lat": 51.0605241,
+      "lng": 13.298548150000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nossen-d7a52a2a22",
+      "city": "nossen",
+      "label": "Bahnhof Nossen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Nossen",
+      "spotCount": 1,
+      "lat": 51.0605241,
+      "lng": 13.29325,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/575745288), ODbL"
+    },
+    {
+      "id": "nossen-9aa28c3cfc",
+      "city": "nossen",
+      "label": "Kirschallee",
+      "street": "Kirschallee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nossen",
+      "spotCount": 1,
+      "lat": 51.049625600000006,
+      "lng": 13.2910163,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/45083862), ODbL"
+    },
+    {
+      "id": "nossen-91bed5d873",
+      "city": "nossen",
+      "label": "Markt 19",
+      "street": "Markt",
+      "houseNumber": "19",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Nossen",
+      "spotCount": 2,
+      "lat": 51.057194700000004,
+      "lng": 13.298548150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/617628827), ODbL"
+    },
+    {
+      "id": "nossen-d41d1f0932",
+      "city": "nossen",
+      "label": "Zum Kirschberg",
+      "street": "Zum Kirschberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nossen",
+      "spotCount": 1,
+      "lat": 51.060680500000004,
+      "lng": 13.30527035,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/47625326), ODbL"
+    }
+  ]
+}

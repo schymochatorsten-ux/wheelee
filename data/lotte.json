@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lotte",
+    "name": "Lotte",
+    "center": {
+      "lat": 52.303638400000004,
+      "lng": 7.941032700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lotte-7c0c316881",
+      "city": "lotte",
+      "label": "Eversburger Straße",
+      "street": "Eversburger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lotte",
+      "spotCount": 2,
+      "lat": 52.303638400000004,
+      "lng": 7.941032700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28170719), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "korb",
+    "name": "Korb",
+    "center": {
+      "lat": 48.844488500000004,
+      "lng": 9.35761255
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "korb-f97689cbe7",
+      "city": "korb",
+      "label": "Hettlenweg",
+      "street": "Hettlenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Korb",
+      "spotCount": 1,
+      "lat": 48.844488500000004,
+      "lng": 9.35761255,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/41761362), ODbL"
+    },
+    {
+      "id": "korb-04bc2a4bce",
+      "city": "korb",
+      "label": "Korber Kopf",
+      "street": "Korber Kopf",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Korb",
+      "spotCount": 1,
+      "lat": 48.853177900000006,
+      "lng": 9.351952050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/820112919), ODbL"
+    },
+    {
+      "id": "korb-19aeb249ec",
+      "city": "korb",
+      "label": "Siemensstraße",
+      "street": "Siemensstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Korb",
+      "spotCount": 3,
+      "lat": 48.8365936,
+      "lng": 9.367366700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/169204642), ODbL"
+    }
+  ]
+}

@@ -12,41 +12,11 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "delitzsch-a5342c65b8",
-      "city": "delitzsch",
-      "label": "Behindertenparkplatz Delitzsch",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Delitzsch",
-      "spotCount": 1,
-      "lat": 51.53740855000001,
-      "lng": 12.33359025,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/903767731), ODbL"
-    },
-    {
-      "id": "delitzsch-b5c20ec984",
-      "city": "delitzsch",
-      "label": "Behindertenparkplatz Delitzsch",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
-      "timeRestriction": null,
-      "district": "Delitzsch",
-      "spotCount": 2,
-      "lat": 51.5244924,
-      "lng": 12.340979400000002,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1306448981), ODbL"
-    },
-    {
       "id": "delitzsch-b7be9ff8e9",
       "city": "delitzsch",
-      "label": "Behindertenparkplatz Delitzsch",
-      "street": null,
-      "houseNumber": null,
+      "label": "Gerberplan 12",
+      "street": "Gerberplan",
+      "houseNumber": "12",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Delitzsch",
@@ -55,6 +25,21 @@
       "lng": 12.3362256,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1338748951), ODbL"
+    },
+    {
+      "id": "delitzsch-b5c20ec984",
+      "city": "delitzsch",
+      "label": "Lindenstraße 2",
+      "street": "Lindenstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Delitzsch",
+      "spotCount": 2,
+      "lat": 51.5244924,
+      "lng": 12.340979400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1306448981), ODbL"
     },
     {
       "id": "delitzsch-d8031e306f",
@@ -70,6 +55,21 @@
       "lng": 12.344751250000002,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/251205082), ODbL"
+    },
+    {
+      "id": "delitzsch-a5342c65b8",
+      "city": "delitzsch",
+      "label": "Sachsenstraße",
+      "street": "Sachsenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Delitzsch",
+      "spotCount": 1,
+      "lat": 51.53740855000001,
+      "lng": 12.33359025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/903767731), ODbL"
     }
   ]
 }

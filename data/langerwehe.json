@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "langerwehe",
+    "name": "Langerwehe",
+    "center": {
+      "lat": 50.81771975,
+      "lng": 6.4027548
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "langerwehe-5e174a67b8",
+      "city": "langerwehe",
+      "label": "Am Niederbusch",
+      "street": "Am Niederbusch",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Langerwehe",
+      "spotCount": 5,
+      "lat": 50.799066,
+      "lng": 6.405084050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1337642547), ODbL"
+    },
+    {
+      "id": "langerwehe-bc32590e36",
+      "city": "langerwehe",
+      "label": "Paradiesstraße 17",
+      "street": "Paradiesstraße",
+      "houseNumber": "17",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Langerwehe",
+      "spotCount": 3,
+      "lat": 50.80264205,
+      "lng": 6.4027548,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/41216309), ODbL"
+    },
+    {
+      "id": "langerwehe-81defcf123",
+      "city": "langerwehe",
+      "label": "Park and Ride Langerwehe",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Langerwehe",
+      "spotCount": 1,
+      "lat": 50.81771975,
+      "lng": 6.35012785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32515449), ODbL"
+    },
+    {
+      "id": "langerwehe-455d58af8b",
+      "city": "langerwehe",
+      "label": "Ulhaus",
+      "street": "Ulhaus",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Langerwehe",
+      "spotCount": 9,
+      "lat": 50.81867545,
+      "lng": 6.35266875,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/193285040), ODbL"
+    }
+  ]
+}

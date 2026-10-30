@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "geeste",
+    "name": "Geeste",
+    "center": {
+      "lat": 52.6034493,
+      "lng": 7.31440155
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "geeste-f602d0be88",
+      "city": "geeste",
+      "label": "Bahnhofstraße 56",
+      "street": "Bahnhofstraße",
+      "houseNumber": "56",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Geeste",
+      "spotCount": 1,
+      "lat": 52.6034493,
+      "lng": 7.3124724500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1100635128), ODbL"
+    },
+    {
+      "id": "geeste-f4422d35e0",
+      "city": "geeste",
+      "label": "Gartenstraße 38",
+      "street": "Gartenstraße",
+      "houseNumber": "38",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Geeste",
+      "spotCount": 1,
+      "lat": 52.60216030000001,
+      "lng": 7.31440155,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1161046690), ODbL"
+    }
+  ]
+}

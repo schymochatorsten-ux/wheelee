@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kierspe",
+    "name": "Kierspe",
+    "center": {
+      "lat": 51.11193525,
+      "lng": 7.5029845
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kierspe-f450a10283",
+      "city": "kierspe",
+      "label": "Hauptstraße 11",
+      "street": "Hauptstraße",
+      "houseNumber": "11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kierspe",
+      "spotCount": 1,
+      "lat": 51.11193525,
+      "lng": 7.5029845,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1550182554), ODbL"
+    }
+  ]
+}

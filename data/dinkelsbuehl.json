@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "dinkelsbuehl",
+    "name": "Dinkelsbühl",
+    "center": {
+      "lat": 49.11305,
+      "lng": 10.232859000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dinkelsbuehl-953f57eefe",
+      "city": "dinkelsbuehl",
+      "label": "Mühlbuck",
+      "street": "Mühlbuck",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dinkelsbühl",
+      "spotCount": 1,
+      "lat": 49.11305,
+      "lng": 10.232859000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13039683730), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "schorfheide",
+    "name": "Schorfheide",
+    "center": {
+      "lat": 52.8826509,
+      "lng": 13.70092625
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schorfheide-1161b4a171",
+      "city": "schorfheide",
+      "label": "Buckowsee West",
+      "street": "Buckowsee West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schorfheide",
+      "spotCount": 1,
+      "lat": 52.8826509,
+      "lng": 13.70092625,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/385241227), ODbL"
+    },
+    {
+      "id": "schorfheide-5c35413329",
+      "city": "schorfheide",
+      "label": "Magistrale",
+      "street": "Magistrale",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schorfheide",
+      "spotCount": 1,
+      "lat": 52.849206900000006,
+      "lng": 13.697577950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1297381223), ODbL"
+    }
+  ]
+}

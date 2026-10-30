@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "woerth",
+    "name": "Wörth am Rhein",
+    "center": {
+      "lat": 49.0396207,
+      "lng": 8.2863099
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "woerth-9fc5ac13d0",
+      "city": "woerth",
+      "label": "Hermann-Quack-Straße",
+      "street": "Hermann-Quack-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wörth am Rhein",
+      "spotCount": 2,
+      "lat": 49.03365095000001,
+      "lng": 8.2863099,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/127174922), ODbL"
+    },
+    {
+      "id": "woerth-93df1dd785",
+      "city": "woerth",
+      "label": "Maximilianstraße",
+      "street": "Maximilianstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wörth am Rhein",
+      "spotCount": 1,
+      "lat": 49.0396207,
+      "lng": 8.2952889,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/40103283), ODbL"
+    },
+    {
+      "id": "woerth-680a91520d",
+      "city": "woerth",
+      "label": "Schulstraße 8",
+      "street": "Schulstraße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wörth am Rhein",
+      "spotCount": 2,
+      "lat": 49.031213900000004,
+      "lng": 8.2883447,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/455528309), ODbL"
+    },
+    {
+      "id": "woerth-61f747ab50",
+      "city": "woerth",
+      "label": "Waldstraße",
+      "street": "Waldstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wörth am Rhein",
+      "spotCount": 1,
+      "lat": 49.052437700000006,
+      "lng": 8.085719600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1072771941), ODbL"
+    },
+    {
+      "id": "woerth-450f2457ce",
+      "city": "woerth",
+      "label": "Zeisigweg",
+      "street": "Zeisigweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wörth am Rhein",
+      "spotCount": 3,
+      "lat": 49.04781545,
+      "lng": 8.251104,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1133546235), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "rahden",
+    "name": "Rahden",
+    "center": {
+      "lat": 52.4353039,
+      "lng": 8.6046759
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rahden-38e6373f56",
+      "city": "rahden",
+      "label": "Lemförder Straße",
+      "street": "Lemförder Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rahden",
+      "spotCount": 1,
+      "lat": 52.4353039,
+      "lng": 8.6046759,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/871722876), ODbL"
+    },
+    {
+      "id": "rahden-93300581e9",
+      "city": "rahden",
+      "label": "Lemförder Straße 18",
+      "street": "Lemförder Straße",
+      "houseNumber": "18",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rahden",
+      "spotCount": 1,
+      "lat": 52.4354345,
+      "lng": 8.604377,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/871722874), ODbL"
+    },
+    {
+      "id": "rahden-3ba8b172b8",
+      "city": "rahden",
+      "label": "Weher Straße 4",
+      "street": "Weher Straße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rahden",
+      "spotCount": 3,
+      "lat": 52.43302905,
+      "lng": 8.61715405,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/871703176), ODbL"
+    }
+  ]
+}

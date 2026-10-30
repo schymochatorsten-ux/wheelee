@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "herxheim",
+    "name": "Herxheim bei Landau/Pfalz",
+    "center": {
+      "lat": 49.1469515,
+      "lng": 8.2176735
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "herxheim-386b1f1302",
+      "city": "herxheim",
+      "label": "Südring",
+      "street": "Südring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herxheim bei Landau/Pfalz",
+      "spotCount": 1,
+      "lat": 49.14267695000001,
+      "lng": 8.207271,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/965390357), ODbL"
+    },
+    {
+      "id": "herxheim-1aaaf2774a",
+      "city": "herxheim",
+      "label": "Untere Hauptstraße 103-105",
+      "street": "Untere Hauptstraße",
+      "houseNumber": "103-105",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herxheim bei Landau/Pfalz",
+      "spotCount": 1,
+      "lat": 49.147136800000006,
+      "lng": 8.22068135,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/146336451), ODbL"
+    },
+    {
+      "id": "herxheim-657232c7ae",
+      "city": "herxheim",
+      "label": "Untere Hauptstraße 146",
+      "street": "Untere Hauptstraße",
+      "houseNumber": "146",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Herxheim bei Landau/Pfalz",
+      "spotCount": 1,
+      "lat": 49.1469515,
+      "lng": 8.2176735,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1375378710), ODbL"
+    }
+  ]
+}

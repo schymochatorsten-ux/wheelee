@@ -14,9 +14,9 @@
     {
       "id": "riedstadt-7920c92eb0",
       "city": "riedstadt",
-      "label": "Behindertenparkplatz Riedstadt",
-      "street": null,
-      "houseNumber": null,
+      "label": "Friedrich-Ebert-Straße 69",
+      "street": "Friedrich-Ebert-Straße",
+      "houseNumber": "69",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Riedstadt",
@@ -25,36 +25,6 @@
       "lng": 8.510198,
       "geoAccuracy": "house",
       "source": "OpenStreetMap (node/10648564837), ODbL"
-    },
-    {
-      "id": "riedstadt-0bcec20ccd",
-      "city": "riedstadt",
-      "label": "Behindertenparkplatz Riedstadt",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Riedstadt",
-      "spotCount": 1,
-      "lat": 49.838890600000006,
-      "lng": 8.46784855,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1080880219), ODbL"
-    },
-    {
-      "id": "riedstadt-e22ff51a22",
-      "city": "riedstadt",
-      "label": "Behindertenparkplatz Riedstadt",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Riedstadt",
-      "spotCount": 1,
-      "lat": 49.83572035,
-      "lng": 8.46819685,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1157736773), ODbL"
     },
     {
       "id": "riedstadt-941ea93ee5",
@@ -70,6 +40,36 @@
       "lng": 8.492430800000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/659784190), ODbL"
+    },
+    {
+      "id": "riedstadt-0bcec20ccd",
+      "city": "riedstadt",
+      "label": "Riedstraße 70",
+      "street": "Riedstraße",
+      "houseNumber": "70",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Riedstadt",
+      "spotCount": 1,
+      "lat": 49.838890600000006,
+      "lng": 8.46784855,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1080880219), ODbL"
+    },
+    {
+      "id": "riedstadt-e22ff51a22",
+      "city": "riedstadt",
+      "label": "Wilhelm-Leuschner-Straße 15",
+      "street": "Wilhelm-Leuschner-Straße",
+      "houseNumber": "15",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Riedstadt",
+      "spotCount": 1,
+      "lat": 49.83572035,
+      "lng": 8.46819685,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1157736773), ODbL"
     }
   ]
 }

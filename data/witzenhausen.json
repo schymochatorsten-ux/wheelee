@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "witzenhausen",
+    "name": "Witzenhausen",
+    "center": {
+      "lat": 51.3400613,
+      "lng": 9.861842
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "witzenhausen-8a540f82f4",
+      "city": "witzenhausen",
+      "label": "Bornemannweg 3",
+      "street": "Bornemannweg",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Witzenhausen",
+      "spotCount": 1,
+      "lat": 51.34002960000001,
+      "lng": 9.8618375,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1505987896), ODbL"
+    },
+    {
+      "id": "witzenhausen-d689c7acbe",
+      "city": "witzenhausen",
+      "label": "Bornemannweg 3",
+      "street": "Bornemannweg",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Witzenhausen",
+      "spotCount": 1,
+      "lat": 51.3400613,
+      "lng": 9.861842,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1505987897), ODbL"
+    },
+    {
+      "id": "witzenhausen-7e9ea92209",
+      "city": "witzenhausen",
+      "label": "Bornemannweg 3",
+      "street": "Bornemannweg",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Witzenhausen",
+      "spotCount": 1,
+      "lat": 51.340093,
+      "lng": 9.8618466,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1505987898), ODbL"
+    }
+  ]
+}

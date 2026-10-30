@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hille",
+    "name": "Hille",
+    "center": {
+      "lat": 52.3134522,
+      "lng": 8.834967800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hille-fb664cadbd",
+      "city": "hille",
+      "label": "Im Gewerbepark 1",
+      "street": "Im Gewerbepark",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hille",
+      "spotCount": 1,
+      "lat": 52.3109358,
+      "lng": 8.834967800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8357793339), ODbL"
+    },
+    {
+      "id": "hille-fe232b779f",
+      "city": "hille",
+      "label": "Mindener Straße 447",
+      "street": "Mindener Straße",
+      "houseNumber": "447",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hille",
+      "spotCount": 2,
+      "lat": 52.3134522,
+      "lng": 8.82193975,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1146831192), ODbL"
+    }
+  ]
+}

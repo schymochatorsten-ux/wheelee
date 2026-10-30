@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "aue-bad-schlema",
+    "name": "Aue-Bad Schlema",
+    "center": {
+      "lat": 50.592607,
+      "lng": 12.680360250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "aue-bad-schlema-783a9496a1",
+      "city": "aue-bad-schlema",
+      "label": "Lößnitzer Straße",
+      "street": "Lößnitzer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aue-Bad Schlema",
+      "spotCount": 8,
+      "lat": 50.594725000000004,
+      "lng": 12.701156600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/42793048), ODbL"
+    },
+    {
+      "id": "aue-bad-schlema-f90fda3dbc",
+      "city": "aue-bad-schlema",
+      "label": "Parkhaus Neumarkt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Aue-Bad Schlema",
+      "spotCount": 1,
+      "lat": 50.5868747,
+      "lng": 12.705184500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/525680626), ODbL"
+    },
+    {
+      "id": "aue-bad-schlema-bff082419c",
+      "city": "aue-bad-schlema",
+      "label": "Prof.-Dr.-Dieckmann-Straße",
+      "street": "Prof.-Dr.-Dieckmann-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aue-Bad Schlema",
+      "spotCount": 1,
+      "lat": 50.59307855,
+      "lng": 12.675378600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/868312852), ODbL"
+    },
+    {
+      "id": "aue-bad-schlema-e4a9199f74",
+      "city": "aue-bad-schlema",
+      "label": "Prof.-Dr.-Dieckmann-Straße",
+      "street": "Prof.-Dr.-Dieckmann-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aue-Bad Schlema",
+      "spotCount": 2,
+      "lat": 50.592607,
+      "lng": 12.675561000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/868312854), ODbL"
+    },
+    {
+      "id": "aue-bad-schlema-07e32edebf",
+      "city": "aue-bad-schlema",
+      "label": "Prof.-Dr.-Dieckmann-Straße 15",
+      "street": "Prof.-Dr.-Dieckmann-Straße",
+      "houseNumber": "15",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aue-Bad Schlema",
+      "spotCount": 1,
+      "lat": 50.59242090000001,
+      "lng": 12.67656645,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/881137720), ODbL"
+    },
+    {
+      "id": "aue-bad-schlema-31dda98953",
+      "city": "aue-bad-schlema",
+      "label": "Schneeberger Straße",
+      "street": "Schneeberger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aue-Bad Schlema",
+      "spotCount": 2,
+      "lat": 50.596548,
+      "lng": 12.680360250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/867897511), ODbL"
+    },
+    {
+      "id": "aue-bad-schlema-48cf52fad0",
+      "city": "aue-bad-schlema",
+      "label": "Schulbrücke",
+      "street": "Schulbrücke",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Aue-Bad Schlema",
+      "spotCount": 1,
+      "lat": 50.58784395000001,
+      "lng": 12.702182950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/43215970), ODbL"
+    }
+  ]
+}

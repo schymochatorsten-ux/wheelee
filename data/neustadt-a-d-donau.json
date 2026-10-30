@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "neustadt-a-d-donau",
+    "name": "Neustadt a.d.Donau",
+    "center": {
+      "lat": 48.79813945,
+      "lng": 11.763821700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neustadt-a-d-donau-cbdf501480",
+      "city": "neustadt-a-d-donau",
+      "label": "Behr GmbH & Co KG - Besucher",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neustadt a.d.Donau",
+      "spotCount": 1,
+      "lat": 48.78320145,
+      "lng": 11.767017800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/229599376), ODbL"
+    },
+    {
+      "id": "neustadt-a-d-donau-bee714fcbc",
+      "city": "neustadt-a-d-donau",
+      "label": "Gewerbepark",
+      "street": "Gewerbepark",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neustadt a.d.Donau",
+      "spotCount": 1,
+      "lat": 48.796018800000006,
+      "lng": 11.760287900000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9856198520), ODbL"
+    },
+    {
+      "id": "neustadt-a-d-donau-1ae7ac3d29",
+      "city": "neustadt-a-d-donau",
+      "label": "Goethestraße",
+      "street": "Goethestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neustadt a.d.Donau",
+      "spotCount": 2,
+      "lat": 48.805272900000006,
+      "lng": 11.765459400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/39179191), ODbL"
+    },
+    {
+      "id": "neustadt-a-d-donau-beea18fd40",
+      "city": "neustadt-a-d-donau",
+      "label": "Herzog-Ludwig-Straße 20",
+      "street": "Herzog-Ludwig-Straße",
+      "houseNumber": "20",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neustadt a.d.Donau",
+      "spotCount": 1,
+      "lat": 48.80919475,
+      "lng": 11.763821700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1340873286), ODbL"
+    },
+    {
+      "id": "neustadt-a-d-donau-1b708784f9",
+      "city": "neustadt-a-d-donau",
+      "label": "Raffineriestraße",
+      "street": "Raffineriestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neustadt a.d.Donau",
+      "spotCount": 1,
+      "lat": 48.79813945,
+      "lng": 11.76236135,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/107602694), ODbL"
+    }
+  ]
+}

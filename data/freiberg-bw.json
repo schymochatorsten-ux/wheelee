@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "freiberg-bw",
+    "name": "Freiberg am Neckar",
+    "center": {
+      "lat": 48.9303121,
+      "lng": 9.19792705
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "freiberg-bw-0013ce4ebc",
+      "city": "freiberg-bw",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Freiberg am Neckar",
+      "spotCount": 1,
+      "lat": 48.9302165,
+      "lng": 9.19792705,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1423407338), ODbL"
+    },
+    {
+      "id": "freiberg-bw-a53226c7e4",
+      "city": "freiberg-bw",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Freiberg am Neckar",
+      "spotCount": 1,
+      "lat": 48.9303121,
+      "lng": 9.197883050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1423407339), ODbL"
+    }
+  ]
+}

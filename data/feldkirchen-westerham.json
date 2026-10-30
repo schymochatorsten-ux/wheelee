@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "feldkirchen-westerham",
+    "name": "Feldkirchen-Westerham",
+    "center": {
+      "lat": 47.89487615,
+      "lng": 11.8536383
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "feldkirchen-westerham-6cb1a72d08",
+      "city": "feldkirchen-westerham",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Feldkirchen-Westerham",
+      "spotCount": 1,
+      "lat": 47.904116900000005,
+      "lng": 11.82887,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/379322999), ODbL"
+    },
+    {
+      "id": "feldkirchen-westerham-d67d7bd7c3",
+      "city": "feldkirchen-westerham",
+      "label": "Feldkirchener Straße",
+      "street": "Feldkirchener Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Feldkirchen-Westerham",
+      "spotCount": 1,
+      "lat": 47.89487615,
+      "lng": 11.8536383,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1541271154), ODbL"
+    },
+    {
+      "id": "feldkirchen-westerham-9544ddcda6",
+      "city": "feldkirchen-westerham",
+      "label": "Vagener Straße",
+      "street": "Vagener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Feldkirchen-Westerham",
+      "spotCount": 1,
+      "lat": 47.894827250000006,
+      "lng": 11.8537472,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/934169540), ODbL"
+    }
+  ]
+}

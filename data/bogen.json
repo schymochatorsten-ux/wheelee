@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "bogen",
+    "name": "Bogen",
+    "center": {
+      "lat": 48.9106168,
+      "lng": 12.68672175
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bogen-39b79519c3",
+      "city": "bogen",
+      "label": "Dr.-Martin-Luther-Straße 6",
+      "street": "Dr.-Martin-Luther-Straße",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bogen",
+      "spotCount": 6,
+      "lat": 48.9127446,
+      "lng": 12.68275625,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/177045746), ODbL"
+    },
+    {
+      "id": "bogen-d2dbd742a3",
+      "city": "bogen",
+      "label": "Güterstraße",
+      "street": "Güterstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bogen",
+      "spotCount": 1,
+      "lat": 48.9106168,
+      "lng": 12.686649850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1324618974), ODbL"
+    },
+    {
+      "id": "bogen-020565eb4a",
+      "city": "bogen",
+      "label": "Güterstraße",
+      "street": "Güterstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bogen",
+      "spotCount": 1,
+      "lat": 48.91053155,
+      "lng": 12.68672175,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1324618975), ODbL"
+    },
+    {
+      "id": "bogen-434d756e84",
+      "city": "bogen",
+      "label": "Kotaustraße",
+      "street": "Kotaustraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bogen",
+      "spotCount": 5,
+      "lat": 48.907386550000005,
+      "lng": 12.68829735,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1153613226), ODbL"
+    },
+    {
+      "id": "bogen-b057cd0e9a",
+      "city": "bogen",
+      "label": "Mussinanstraße",
+      "street": "Mussinanstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bogen",
+      "spotCount": 1,
+      "lat": 48.9099729,
+      "lng": 12.697305550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1280829900), ODbL"
+    },
+    {
+      "id": "bogen-1333e48bed",
+      "city": "bogen",
+      "label": "Petersgewanne",
+      "street": "Petersgewanne",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bogen",
+      "spotCount": 1,
+      "lat": 48.91965925,
+      "lng": 12.6707844,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/158932346), ODbL"
+    }
+  ]
+}

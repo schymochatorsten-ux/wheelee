@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "grenzach-wyhlen",
+    "name": "Grenzach-Wyhlen",
+    "center": {
+      "lat": 47.5510022,
+      "lng": 7.660227750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grenzach-wyhlen-ae28379c90",
+      "city": "grenzach-wyhlen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Grenzach-Wyhlen",
+      "spotCount": 3,
+      "lat": 47.54656250000001,
+      "lng": 7.6905438,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1416779438), ODbL"
+    },
+    {
+      "id": "grenzach-wyhlen-6c901d93b1",
+      "city": "grenzach-wyhlen",
+      "label": "Hornacker 7",
+      "street": "Hornacker",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grenzach-Wyhlen",
+      "spotCount": 2,
+      "lat": 47.561905800000005,
+      "lng": 7.639205500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1391123831), ODbL"
+    },
+    {
+      "id": "grenzach-wyhlen-55295ed845",
+      "city": "grenzach-wyhlen",
+      "label": "Scheffelstraße",
+      "street": "Scheffelstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Grenzach-Wyhlen",
+      "spotCount": 1,
+      "lat": 47.5510022,
+      "lng": 7.660227750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1347368336), ODbL"
+    },
+    {
+      "id": "grenzach-wyhlen-40fff5f32f",
+      "city": "grenzach-wyhlen",
+      "label": "Scheffelstraße",
+      "street": "Scheffelstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Grenzach-Wyhlen",
+      "spotCount": 1,
+      "lat": 47.55099370000001,
+      "lng": 7.66030915,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1415416244), ODbL"
+    },
+    {
+      "id": "grenzach-wyhlen-4ba03bbb32",
+      "city": "grenzach-wyhlen",
+      "label": "Scheffelstraße 1",
+      "street": "Scheffelstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Grenzach-Wyhlen",
+      "spotCount": 1,
+      "lat": 47.5510146,
+      "lng": 7.66006365,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1415416246), ODbL"
+    }
+  ]
+}

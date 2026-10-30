@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "halstenbek",
+    "name": "Halstenbek",
+    "center": {
+      "lat": 53.6311283,
+      "lng": 9.84091475
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "halstenbek-59248e645b",
+      "city": "halstenbek",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Halstenbek",
+      "spotCount": 1,
+      "lat": 53.6311283,
+      "lng": 9.83831205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1569164909), ODbL"
+    },
+    {
+      "id": "halstenbek-507476d196",
+      "city": "halstenbek",
+      "label": "P+R",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Halstenbek",
+      "spotCount": 2,
+      "lat": 53.629803700000004,
+      "lng": 9.84091475,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26739661), ODbL"
+    },
+    {
+      "id": "halstenbek-6d64f93060",
+      "city": "halstenbek",
+      "label": "Poststraße 4",
+      "street": "Poststraße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Halstenbek",
+      "spotCount": 1,
+      "lat": 53.63622525000001,
+      "lng": 9.8414769,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26826752), ODbL"
+    }
+  ]
+}

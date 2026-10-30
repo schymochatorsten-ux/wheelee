@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "krummhoern",
+    "name": "Krummhörn",
+    "center": {
+      "lat": 53.501911050000004,
+      "lng": 7.092214
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "krummhoern-4dc5431c46",
+      "city": "krummhoern",
+      "label": "Gesundheitsoase 1",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Krummhörn",
+      "spotCount": 2,
+      "lat": 53.501682650000006,
+      "lng": 7.090649000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/164421870), ODbL"
+    },
+    {
+      "id": "krummhoern-1ee8f5febe",
+      "city": "krummhoern",
+      "label": "Heiselhuser Straße",
+      "street": "Heiselhuser Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Krummhörn",
+      "spotCount": 1,
+      "lat": 53.401511,
+      "lng": 7.049442750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/600382437), ODbL"
+    },
+    {
+      "id": "krummhoern-71197a4f09",
+      "city": "krummhoern",
+      "label": "Zur Hauener Hooge 11",
+      "street": "Zur Hauener Hooge",
+      "houseNumber": "11",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Krummhörn",
+      "spotCount": 1,
+      "lat": 53.502101800000005,
+      "lng": 7.0929040500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1516355435), ODbL"
+    },
+    {
+      "id": "krummhoern-ab9035fb8c",
+      "city": "krummhoern",
+      "label": "Zur Hauener Hooge 13",
+      "street": "Zur Hauener Hooge",
+      "houseNumber": "13",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Krummhörn",
+      "spotCount": 2,
+      "lat": 53.501911050000004,
+      "lng": 7.092214,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/164422047), ODbL"
+    }
+  ]
+}

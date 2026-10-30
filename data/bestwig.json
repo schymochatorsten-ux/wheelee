@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bestwig",
+    "name": "Bestwig",
+    "center": {
+      "lat": 51.36361875,
+      "lng": 8.4060299
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bestwig-3d6537180c",
+      "city": "bestwig",
+      "label": "Bahnhof",
+      "street": "Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bestwig",
+      "spotCount": 1,
+      "lat": 51.3615671,
+      "lng": 8.3972972,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/82635805), ODbL"
+    },
+    {
+      "id": "bestwig-5457a9b80c",
+      "city": "bestwig",
+      "label": "Borghausen",
+      "street": "Borghausen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bestwig",
+      "spotCount": 1,
+      "lat": 51.3646584,
+      "lng": 8.407822150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27546093), ODbL"
+    },
+    {
+      "id": "bestwig-6bec2021f3",
+      "city": "bestwig",
+      "label": "Bundesstraße",
+      "street": "Bundesstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bestwig",
+      "spotCount": 1,
+      "lat": 51.36361875,
+      "lng": 8.4060299,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/995722510), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "kleinblittersdorf",
+    "name": "Kleinblittersdorf",
+    "center": {
+      "lat": 49.11876885,
+      "lng": 7.05991075
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kleinblittersdorf-6386e1ff01",
+      "city": "kleinblittersdorf",
+      "label": "Am Sportplatz",
+      "street": "Am Sportplatz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kleinblittersdorf",
+      "spotCount": 1,
+      "lat": 49.1166198,
+      "lng": 7.050802300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1318155750), ODbL"
+    },
+    {
+      "id": "kleinblittersdorf-44bb7f7bdd",
+      "city": "kleinblittersdorf",
+      "label": "Am Wintringer Hof",
+      "street": "Am Wintringer Hof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kleinblittersdorf",
+      "spotCount": 2,
+      "lat": 49.1742257,
+      "lng": 7.069706250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/820176147), ODbL"
+    },
+    {
+      "id": "kleinblittersdorf-d258fd8c15",
+      "city": "kleinblittersdorf",
+      "label": "Bahnhofstraße 6",
+      "street": "Bahnhofstraße",
+      "houseNumber": "6",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kleinblittersdorf",
+      "spotCount": 1,
+      "lat": 49.11876885,
+      "lng": 7.0496464,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/432559537), ODbL"
+    },
+    {
+      "id": "kleinblittersdorf-6589105e86",
+      "city": "kleinblittersdorf",
+      "label": "Goethestraße",
+      "street": "Goethestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kleinblittersdorf",
+      "spotCount": 2,
+      "lat": 49.118255250000004,
+      "lng": 7.05991075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1264089791), ODbL"
+    }
+  ]
+}

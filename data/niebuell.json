@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "niebuell",
+    "name": "Niebüll",
+    "center": {
+      "lat": 54.78947425,
+      "lng": 8.8299833
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "niebuell-76e4ee5517",
+      "city": "niebuell",
+      "label": "Bahnhofstraße 10",
+      "street": "Bahnhofstraße",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Niebüll",
+      "spotCount": 1,
+      "lat": 54.78947425,
+      "lng": 8.83412015,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/543901416), ODbL"
+    },
+    {
+      "id": "niebuell-752524a3c2",
+      "city": "niebuell",
+      "label": "Osterweg",
+      "street": "Osterweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Niebüll",
+      "spotCount": 1,
+      "lat": 54.78175195,
+      "lng": 8.8251176,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1289722074), ODbL"
+    },
+    {
+      "id": "niebuell-6e2e271f04",
+      "city": "niebuell",
+      "label": "Uhlebüller Straße",
+      "street": "Uhlebüller Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Niebüll",
+      "spotCount": 2,
+      "lat": 54.7939352,
+      "lng": 8.8299833,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9853597704), ODbL"
+    }
+  ]
+}

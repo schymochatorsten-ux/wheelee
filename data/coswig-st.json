@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "coswig-st",
+    "name": "Coswig (Anhalt)",
+    "center": {
+      "lat": 51.88518715000001,
+      "lng": 12.455736000000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "coswig-st-a3aa1534b6",
+      "city": "coswig-st",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Coswig (Anhalt)",
+      "spotCount": 2,
+      "lat": 51.887524750000004,
+      "lng": 12.458656050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/432397739), ODbL"
+    },
+    {
+      "id": "coswig-st-e57677bbe8",
+      "city": "coswig-st",
+      "label": "Kliekener Aue",
+      "street": "Kliekener Aue",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Coswig (Anhalt)",
+      "spotCount": 2,
+      "lat": 51.86727715000001,
+      "lng": 12.372293299999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/289075613), ODbL"
+    },
+    {
+      "id": "coswig-st-74306e2377",
+      "city": "coswig-st",
+      "label": "Rosselquelle",
+      "street": "Rosselquelle",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Coswig (Anhalt)",
+      "spotCount": 2,
+      "lat": 51.970210050000006,
+      "lng": 12.48640825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/289072697), ODbL"
+    },
+    {
+      "id": "coswig-st-9d44c1110f",
+      "city": "coswig-st",
+      "label": "Spiellücke",
+      "street": "Spiellücke",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Coswig (Anhalt)",
+      "spotCount": 1,
+      "lat": 51.885398,
+      "lng": 12.4558253,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32347528), ODbL"
+    },
+    {
+      "id": "coswig-st-db40b8c11c",
+      "city": "coswig-st",
+      "label": "Spiellücke",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Coswig (Anhalt)",
+      "spotCount": 1,
+      "lat": 51.88518715000001,
+      "lng": 12.4554008,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1387015568), ODbL"
+    },
+    {
+      "id": "coswig-st-ee2d70fd52",
+      "city": "coswig-st",
+      "label": "Spiellücke 1",
+      "street": "Spiellücke",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Coswig (Anhalt)",
+      "spotCount": 1,
+      "lat": 51.88495660000001,
+      "lng": 12.455736000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1387015566), ODbL"
+    },
+    {
+      "id": "coswig-st-fb17e52f94",
+      "city": "coswig-st",
+      "label": "Spiellücke 1",
+      "street": "Spiellücke",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Coswig (Anhalt)",
+      "spotCount": 1,
+      "lat": 51.884950700000005,
+      "lng": 12.455550900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1387015567), ODbL"
+    }
+  ]
+}

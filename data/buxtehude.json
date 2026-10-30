@@ -14,8 +14,8 @@
     {
       "id": "buxtehude-24ac7051d3",
       "city": "buxtehude",
-      "label": "Behindertenparkplatz Buxtehude",
-      "street": null,
+      "label": "Am Kleinbahnhof",
+      "street": "Am Kleinbahnhof",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -27,11 +27,41 @@
       "source": "OpenStreetMap (way/232452301), ODbL"
     },
     {
+      "id": "buxtehude-8c883dd397",
+      "city": "buxtehude",
+      "label": "Brüningstraße",
+      "street": "Brüningstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Buxtehude",
+      "spotCount": 1,
+      "lat": 53.475169750000006,
+      "lng": 9.69298215,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1394192784), ODbL"
+    },
+    {
+      "id": "buxtehude-4bde057ea6",
+      "city": "buxtehude",
+      "label": "Drosselgasse",
+      "street": "Drosselgasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Buxtehude",
+      "spotCount": 1,
+      "lat": 53.462128050000004,
+      "lng": 9.67477135,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1173380422), ODbL"
+    },
+    {
       "id": "buxtehude-6d665b6a22",
       "city": "buxtehude",
-      "label": "Behindertenparkplatz Buxtehude",
-      "street": null,
-      "houseNumber": null,
+      "label": "Poststraße 9c",
+      "street": "Poststraße",
+      "houseNumber": "9c",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Buxtehude",
@@ -44,8 +74,8 @@
     {
       "id": "buxtehude-180d4d6774",
       "city": "buxtehude",
-      "label": "Behindertenparkplatz Buxtehude",
-      "street": null,
+      "label": "Schützenhofweg",
+      "street": "Schützenhofweg",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -55,36 +85,6 @@
       "lng": 9.700138200000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/302283056), ODbL"
-    },
-    {
-      "id": "buxtehude-4bde057ea6",
-      "city": "buxtehude",
-      "label": "Behindertenparkplatz Buxtehude",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
-      "timeRestriction": null,
-      "district": "Buxtehude",
-      "spotCount": 1,
-      "lat": 53.462128050000004,
-      "lng": 9.67477135,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1173380422), ODbL"
-    },
-    {
-      "id": "buxtehude-8c883dd397",
-      "city": "buxtehude",
-      "label": "Behindertenparkplatz Buxtehude",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Buxtehude",
-      "spotCount": 1,
-      "lat": 53.475169750000006,
-      "lng": 9.69298215,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1394192784), ODbL"
     }
   ]
 }

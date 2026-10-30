@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "bad-duerrheim",
+    "name": "Bad Dürrheim",
+    "center": {
+      "lat": 48.03003925,
+      "lng": 8.53210465
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-duerrheim-e27d0989d6",
+      "city": "bad-duerrheim",
+      "label": "Carl-Friedrich-Benz-Straße",
+      "street": "Carl-Friedrich-Benz-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Dürrheim",
+      "spotCount": 2,
+      "lat": 48.032564750000006,
+      "lng": 8.531918350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/250289849), ODbL"
+    },
+    {
+      "id": "bad-duerrheim-17c5222fb7",
+      "city": "bad-duerrheim",
+      "label": "Dieselstraße",
+      "street": "Dieselstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Dürrheim",
+      "spotCount": 11,
+      "lat": 48.03003925,
+      "lng": 8.52532195,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/529321482), ODbL"
+    },
+    {
+      "id": "bad-duerrheim-6d2c73b97d",
+      "city": "bad-duerrheim",
+      "label": "Räthisgraben",
+      "street": "Räthisgraben",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Dürrheim",
+      "spotCount": 2,
+      "lat": 47.96529325,
+      "lng": 8.62184525,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/254540571), ODbL"
+    },
+    {
+      "id": "bad-duerrheim-472beb5bae",
+      "city": "bad-duerrheim",
+      "label": "Räthisgraben",
+      "street": "Räthisgraben",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Dürrheim",
+      "spotCount": 2,
+      "lat": 47.964531,
+      "lng": 8.62186355,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/254540573), ODbL"
+    },
+    {
+      "id": "bad-duerrheim-194786dc56",
+      "city": "bad-duerrheim",
+      "label": "Riedstraße 10",
+      "street": "Riedstraße",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Dürrheim",
+      "spotCount": 3,
+      "lat": 48.02128845,
+      "lng": 8.52569225,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/948634859), ODbL"
+    },
+    {
+      "id": "bad-duerrheim-cd3779e472",
+      "city": "bad-duerrheim",
+      "label": "Schwenninger Straße",
+      "street": "Schwenninger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Dürrheim",
+      "spotCount": 5,
+      "lat": 48.03613765,
+      "lng": 8.53210465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/165015900), ODbL"
+    },
+    {
+      "id": "bad-duerrheim-7619968f51",
+      "city": "bad-duerrheim",
+      "label": "Schwenninger Straße 40",
+      "street": "Schwenninger Straße",
+      "houseNumber": "40",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Dürrheim",
+      "spotCount": 1,
+      "lat": 48.0360766,
+      "lng": 8.532138250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1503793511), ODbL"
+    }
+  ]
+}

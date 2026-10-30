@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "zeven",
+    "name": "Zeven",
+    "center": {
+      "lat": 53.28525880000001,
+      "lng": 9.28329715
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zeven-fee2a0e1c6",
+      "city": "zeven",
+      "label": "Scheeßeler Straße",
+      "street": "Scheeßeler Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Zeven",
+      "spotCount": 1,
+      "lat": 53.28525880000001,
+      "lng": 9.28329715,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1214069066), ODbL"
+    }
+  ]
+}

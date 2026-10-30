@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "rangsdorf",
+    "name": "Rangsdorf",
+    "center": {
+      "lat": 52.29546855,
+      "lng": 13.4356425
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rangsdorf-9c832e3d99",
+      "city": "rangsdorf",
+      "label": "Kienitzer Straße",
+      "street": "Kienitzer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rangsdorf",
+      "spotCount": 1,
+      "lat": 52.29546855,
+      "lng": 13.4356425,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/214783360), ODbL"
+    }
+  ]
+}

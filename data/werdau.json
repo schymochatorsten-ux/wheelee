@@ -12,10 +12,25 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
+      "id": "werdau-666abcc9ad",
+      "city": "werdau",
+      "label": "Dorfstraße 84b",
+      "street": "Dorfstraße",
+      "houseNumber": "84b",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Werdau",
+      "spotCount": 1,
+      "lat": 50.761480150000004,
+      "lng": 12.37246245,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/231368005), ODbL"
+    },
+    {
       "id": "werdau-7ff85bd000",
       "city": "werdau",
-      "label": "Behindertenparkplatz Werdau",
-      "street": null,
+      "label": "Gneisenaustraße",
+      "street": "Gneisenaustraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -25,21 +40,6 @@
       "lng": 12.3786661,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/162911115), ODbL"
-    },
-    {
-      "id": "werdau-666abcc9ad",
-      "city": "werdau",
-      "label": "Behindertenparkplatz Werdau",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Werdau",
-      "spotCount": 1,
-      "lat": 50.761480150000004,
-      "lng": 12.37246245,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/231368005), ODbL"
     },
     {
       "id": "werdau-6a3d39f791",

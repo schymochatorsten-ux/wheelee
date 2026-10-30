@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "markt-schwaben",
+    "name": "Markt Schwaben",
+    "center": {
+      "lat": 48.1914805,
+      "lng": 11.86756895
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "markt-schwaben-edafe564b4",
+      "city": "markt-schwaben",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Markt Schwaben",
+      "spotCount": 1,
+      "lat": 48.19309885,
+      "lng": 11.86241055,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/329253136), ODbL"
+    },
+    {
+      "id": "markt-schwaben-6d45746f97",
+      "city": "markt-schwaben",
+      "label": "Bürgermeister-Haller-Weg",
+      "street": "Bürgermeister-Haller-Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Markt Schwaben",
+      "spotCount": 1,
+      "lat": 48.182387250000005,
+      "lng": 11.8743779,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27585579), ODbL"
+    },
+    {
+      "id": "markt-schwaben-4039dbd429",
+      "city": "markt-schwaben",
+      "label": "Herzog-Ludwig-Straße",
+      "street": "Herzog-Ludwig-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Markt Schwaben",
+      "spotCount": 1,
+      "lat": 48.191076100000004,
+      "lng": 11.86756895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1022356952), ODbL"
+    },
+    {
+      "id": "markt-schwaben-9a5ec21fcb",
+      "city": "markt-schwaben",
+      "label": "P+R Münterstraße",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Markt Schwaben",
+      "spotCount": 4,
+      "lat": 48.1927391,
+      "lng": 11.860146100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/43338231), ODbL"
+    },
+    {
+      "id": "markt-schwaben-70302703d9",
+      "city": "markt-schwaben",
+      "label": "Parkplatz am Rathaus Markt Schwaben",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Markt Schwaben",
+      "spotCount": 2,
+      "lat": 48.1914805,
+      "lng": 11.868299400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/71560141), ODbL"
+    }
+  ]
+}

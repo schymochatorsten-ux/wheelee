@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "jever",
+    "name": "Jever",
+    "center": {
+      "lat": 53.571558200000005,
+      "lng": 7.9044551
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "jever-2546d04bee",
+      "city": "jever",
+      "label": "An der alten Bundesstraße",
+      "street": "An der alten Bundesstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jever",
+      "spotCount": 1,
+      "lat": 53.56202845,
+      "lng": 7.9140935,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34156131), ODbL"
+    },
+    {
+      "id": "jever-b8aa6b6ba9",
+      "city": "jever",
+      "label": "Grüner Garten",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Jever",
+      "spotCount": 1,
+      "lat": 53.57485315,
+      "lng": 7.9044551,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/38840211), ODbL"
+    },
+    {
+      "id": "jever-d02abe83cd",
+      "city": "jever",
+      "label": "Kreisverwaltung",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jever",
+      "spotCount": 1,
+      "lat": 53.571558200000005,
+      "lng": 7.899048400000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/237798433), ODbL"
+    },
+    {
+      "id": "jever-254f9f167d",
+      "city": "jever",
+      "label": "Sophienstraße 3",
+      "street": "Sophienstraße",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Jever",
+      "spotCount": 1,
+      "lat": 53.571433600000006,
+      "lng": 7.8996151,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3678608917), ODbL"
+    }
+  ]
+}

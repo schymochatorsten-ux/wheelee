@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "denkendorf",
+    "name": "Denkendorf",
+    "center": {
+      "lat": 48.6940493,
+      "lng": 9.31247025
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "denkendorf-06e34573cc",
+      "city": "denkendorf",
+      "label": "Albrecht-Bengel-Straße 25",
+      "street": "Albrecht-Bengel-Straße",
+      "houseNumber": "25",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Denkendorf",
+      "spotCount": 1,
+      "lat": 48.6999409,
+      "lng": 9.314922800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1051789294), ODbL"
+    },
+    {
+      "id": "denkendorf-fa86a83001",
+      "city": "denkendorf",
+      "label": "Heinrich-Werner-Straße",
+      "street": "Heinrich-Werner-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Denkendorf",
+      "spotCount": 2,
+      "lat": 48.6940493,
+      "lng": 9.3117289,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/930704027), ODbL"
+    },
+    {
+      "id": "denkendorf-9516c4bdf9",
+      "city": "denkendorf",
+      "label": "Heinrich-Werner-Straße",
+      "street": "Heinrich-Werner-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Denkendorf",
+      "spotCount": 1,
+      "lat": 48.69417335,
+      "lng": 9.31247025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1169531678), ODbL"
+    },
+    {
+      "id": "denkendorf-a702a2c21a",
+      "city": "denkendorf",
+      "label": "Klosterhof 7",
+      "street": "Klosterhof",
+      "houseNumber": "7",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Denkendorf",
+      "spotCount": 1,
+      "lat": 48.6918349,
+      "lng": 9.3149473,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1316374016), ODbL"
+    },
+    {
+      "id": "denkendorf-f0835b6253",
+      "city": "denkendorf",
+      "label": "PKW",
+      "street": "PKW",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Denkendorf",
+      "spotCount": 1,
+      "lat": 48.6933028,
+      "lng": 9.30444455,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1147204888), ODbL"
+    }
+  ]
+}

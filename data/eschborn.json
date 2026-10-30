@@ -12,10 +12,25 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
+      "id": "eschborn-68a6411311",
+      "city": "eschborn",
+      "label": "Georg-Büchner-Straße",
+      "street": "Georg-Büchner-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eschborn",
+      "spotCount": 2,
+      "lat": 50.16317455000001,
+      "lng": 8.5435414,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/113554758), ODbL"
+    },
+    {
       "id": "eschborn-01b878e068",
       "city": "eschborn",
-      "label": "Behindertenparkplatz Eschborn",
-      "street": null,
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,
@@ -29,8 +44,8 @@
     {
       "id": "eschborn-f7c72ad576",
       "city": "eschborn",
-      "label": "Behindertenparkplatz Eschborn",
-      "street": null,
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,
@@ -44,8 +59,8 @@
     {
       "id": "eschborn-824d2ee2cb",
       "city": "eschborn",
-      "label": "Behindertenparkplatz Eschborn",
-      "street": null,
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -59,8 +74,8 @@
     {
       "id": "eschborn-6ea93ed6f5",
       "city": "eschborn",
-      "label": "Behindertenparkplatz Eschborn",
-      "street": null,
+      "label": "Ludwig-Erhard-Straße",
+      "street": "Ludwig-Erhard-Straße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -74,8 +89,8 @@
     {
       "id": "eschborn-0f3463c832",
       "city": "eschborn",
-      "label": "Behindertenparkplatz Eschborn",
-      "street": null,
+      "label": "Ludwig-Erhard-Straße",
+      "street": "Ludwig-Erhard-Straße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -89,8 +104,8 @@
     {
       "id": "eschborn-e49955db33",
       "city": "eschborn",
-      "label": "Behindertenparkplatz Eschborn",
-      "street": null,
+      "label": "Rudolf-Diesel-Straße",
+      "street": "Rudolf-Diesel-Straße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -100,21 +115,6 @@
       "lng": 8.54631375,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/7996022), ODbL"
-    },
-    {
-      "id": "eschborn-68a6411311",
-      "city": "eschborn",
-      "label": "Behindertenparkplatz Eschborn",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Eschborn",
-      "spotCount": 2,
-      "lat": 50.16317455000001,
-      "lng": 8.5435414,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/113554758), ODbL"
     }
   ]
 }

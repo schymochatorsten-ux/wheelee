@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "langelsheim",
+    "name": "Langelsheim",
+    "center": {
+      "lat": 51.934166700000006,
+      "lng": 10.346521450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "langelsheim-ded6d51e66",
+      "city": "langelsheim",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Langelsheim",
+      "spotCount": 1,
+      "lat": 51.9302441,
+      "lng": 10.343932950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/184432812), ODbL"
+    },
+    {
+      "id": "langelsheim-de18bbd8db",
+      "city": "langelsheim",
+      "label": "Jerstedter Straße",
+      "street": "Jerstedter Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Langelsheim",
+      "spotCount": 1,
+      "lat": 51.9350826,
+      "lng": 10.345002350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/73041639), ODbL"
+    },
+    {
+      "id": "langelsheim-e0a8b7a37e",
+      "city": "langelsheim",
+      "label": "Lange Straße 62",
+      "street": "Lange Straße",
+      "houseNumber": "62",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Langelsheim",
+      "spotCount": 1,
+      "lat": 51.934166700000006,
+      "lng": 10.346521450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/73041665), ODbL"
+    },
+    {
+      "id": "langelsheim-056b31b349",
+      "city": "langelsheim",
+      "label": "Sophienhütte Nord",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Langelsheim",
+      "spotCount": 1,
+      "lat": 51.9337378,
+      "lng": 10.348563350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/73041661), ODbL"
+    }
+  ]
+}

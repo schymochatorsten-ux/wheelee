@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "ettenheim",
+    "name": "Ettenheim",
+    "center": {
+      "lat": 48.262608650000004,
+      "lng": 7.811330300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ettenheim-10e3894db1",
+      "city": "ettenheim",
+      "label": "Otto-Stoelcker-Straße",
+      "street": "Otto-Stoelcker-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ettenheim",
+      "spotCount": 1,
+      "lat": 48.256174900000005,
+      "lng": 7.8152151000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/369519791), ODbL"
+    },
+    {
+      "id": "ettenheim-8dcefaea27",
+      "city": "ettenheim",
+      "label": "Rheinstraße 6",
+      "street": "Rheinstraße",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ettenheim",
+      "spotCount": 1,
+      "lat": 48.2582311,
+      "lng": 7.811330300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6724540524), ODbL"
+    },
+    {
+      "id": "ettenheim-1d9d128ddb",
+      "city": "ettenheim",
+      "label": "Stückle-Straße 10",
+      "street": "Stückle-Straße",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ettenheim",
+      "spotCount": 1,
+      "lat": 48.26262215,
+      "lng": 7.803344450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1282011003), ODbL"
+    },
+    {
+      "id": "ettenheim-ac8efab589",
+      "city": "ettenheim",
+      "label": "Stückle-Straße 11",
+      "street": "Stückle-Straße",
+      "houseNumber": "11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ettenheim",
+      "spotCount": 1,
+      "lat": 48.262608650000004,
+      "lng": 7.802449150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1427767306), ODbL"
+    }
+  ]
+}

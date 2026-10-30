@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "halver",
+    "name": "Halver",
+    "center": {
+      "lat": 51.1908497,
+      "lng": 7.5654769
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "halver-9943f0e0c5",
+      "city": "halver",
+      "label": "Am Nocken 57",
+      "street": "Am Nocken",
+      "houseNumber": "57",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Halver",
+      "spotCount": 2,
+      "lat": 51.1908497,
+      "lng": 7.5654769,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1305875957), ODbL"
+    }
+  ]
+}

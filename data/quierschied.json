@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "quierschied",
+    "name": "Quierschied",
+    "center": {
+      "lat": 49.329958500000004,
+      "lng": 7.0475926
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "quierschied-0c28c2278c",
+      "city": "quierschied",
+      "label": "Am Schwimmbad 12",
+      "street": "Am Schwimmbad",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Quierschied",
+      "spotCount": 1,
+      "lat": 49.329958500000004,
+      "lng": 7.054784550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/59161504), ODbL"
+    },
+    {
+      "id": "quierschied-c3a5f572f9",
+      "city": "quierschied",
+      "label": "Fischbacher Straße",
+      "street": "Fischbacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Quierschied",
+      "spotCount": 2,
+      "lat": 49.3157514,
+      "lng": 7.0475926,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1535790469), ODbL"
+    },
+    {
+      "id": "quierschied-6486f0a6a3",
+      "city": "quierschied",
+      "label": "Friedhofsparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Quierschied",
+      "spotCount": 1,
+      "lat": 49.32683465000001,
+      "lng": 7.0341036,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/46823766), ODbL"
+    },
+    {
+      "id": "quierschied-cb191abbdc",
+      "city": "quierschied",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Quierschied",
+      "spotCount": 2,
+      "lat": 49.34070435000001,
+      "lng": 7.019985650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/454037893), ODbL"
+    }
+  ]
+}

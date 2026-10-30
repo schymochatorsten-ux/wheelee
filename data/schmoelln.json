@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schmoelln",
+    "name": "Schmölln",
+    "center": {
+      "lat": 50.89313125,
+      "lng": 12.33203945
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schmoelln-8cc1f6c950",
+      "city": "schmoelln",
+      "label": "Kapsgraben 38",
+      "street": "Kapsgraben",
+      "houseNumber": "38",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schmölln",
+      "spotCount": 2,
+      "lat": 50.89313125,
+      "lng": 12.33203945,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1281941738), ODbL"
+    }
+  ]
+}

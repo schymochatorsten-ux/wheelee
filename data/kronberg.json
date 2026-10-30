@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "kronberg",
+    "name": "Kronberg im Taunus",
+    "center": {
+      "lat": 50.178674550000004,
+      "lng": 8.508975600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kronberg-ed4359c5fd",
+      "city": "kronberg",
+      "label": "Campus Kronberg",
+      "street": "Campus Kronberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Kronberg im Taunus",
+      "spotCount": 3,
+      "lat": 50.174101300000004,
+      "lng": 8.5283494,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28284894), ODbL"
+    },
+    {
+      "id": "kronberg-5db7c9f160",
+      "city": "kronberg",
+      "label": "Katharinenstraße 5",
+      "street": "Katharinenstraße",
+      "houseNumber": "5",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kronberg im Taunus",
+      "spotCount": 1,
+      "lat": 50.178433600000005,
+      "lng": 8.508657900000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11168303267), ODbL"
+    },
+    {
+      "id": "kronberg-5e625bad16",
+      "city": "kronberg",
+      "label": "Opel-Zoo P1, P2 + P3",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kronberg im Taunus",
+      "spotCount": 7,
+      "lat": 50.18288065,
+      "lng": 8.483070600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/306434773), ODbL"
+    },
+    {
+      "id": "kronberg-a2ab6bcee0",
+      "city": "kronberg",
+      "label": "Tanzhausstraße 3",
+      "street": "Tanzhausstraße",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kronberg im Taunus",
+      "spotCount": 1,
+      "lat": 50.1800755,
+      "lng": 8.508975600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11168303266), ODbL"
+    },
+    {
+      "id": "kronberg-a806306cc8",
+      "city": "kronberg",
+      "label": "Tiefgarage Berliner Platz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Kronberg im Taunus",
+      "spotCount": 1,
+      "lat": 50.178674550000004,
+      "lng": 8.51142895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/156463856), ODbL"
+    }
+  ]
+}

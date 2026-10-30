@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "barsbuettel",
+    "name": "Barsbüttel",
+    "center": {
+      "lat": 53.5673441,
+      "lng": 10.166652550000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "barsbuettel-1e6d602164",
+      "city": "barsbuettel",
+      "label": "Barsbüttel-Mitte",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Barsbüttel",
+      "spotCount": 1,
+      "lat": 53.5673441,
+      "lng": 10.16397975,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/260322200), ODbL"
+    },
+    {
+      "id": "barsbuettel-17c52c49aa",
+      "city": "barsbuettel",
+      "label": "Waldenburger Weg",
+      "street": "Waldenburger Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Barsbüttel",
+      "spotCount": 2,
+      "lat": 53.56932105,
+      "lng": 10.16815465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/339731307), ODbL"
+    },
+    {
+      "id": "barsbuettel-d4aec6f187",
+      "city": "barsbuettel",
+      "label": "Zum Ehrenhain",
+      "street": "Zum Ehrenhain",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Barsbüttel",
+      "spotCount": 3,
+      "lat": 53.56496735,
+      "lng": 10.166652550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32758235), ODbL"
+    }
+  ]
+}

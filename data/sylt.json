@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "sylt",
+    "name": "Sylt",
+    "center": {
+      "lat": 54.907844350000005,
+      "lng": 8.30127025
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sylt-957ada6a34",
+      "city": "sylt",
+      "label": "Am Tipkenhoog",
+      "street": "Am Tipkenhoog",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sylt",
+      "spotCount": 4,
+      "lat": 54.8923647,
+      "lng": 8.3781006,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28240918), ODbL"
+    },
+    {
+      "id": "sylt-c7bd1d0141",
+      "city": "sylt",
+      "label": "Andreas-Dirks-Straße 14",
+      "street": "Andreas-Dirks-Straße",
+      "houseNumber": "14",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sylt",
+      "spotCount": 1,
+      "lat": 54.907844350000005,
+      "lng": 8.3000827,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/481841740), ODbL"
+    },
+    {
+      "id": "sylt-89feaa409c",
+      "city": "sylt",
+      "label": "Brandenburger Straße",
+      "street": "Brandenburger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Sylt",
+      "spotCount": 1,
+      "lat": 54.91215795,
+      "lng": 8.30265975,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35817415), ODbL"
+    },
+    {
+      "id": "sylt-018dad59f1",
+      "city": "sylt",
+      "label": "Dünenstraße 12",
+      "street": "Dünenstraße",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Sylt",
+      "spotCount": 3,
+      "lat": 54.907284800000006,
+      "lng": 8.2987584,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12230248545), ODbL"
+    },
+    {
+      "id": "sylt-bd03d56c48",
+      "city": "sylt",
+      "label": "Steinmannstraße",
+      "street": "Steinmannstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Sylt",
+      "spotCount": 1,
+      "lat": 54.91097595000001,
+      "lng": 8.30127025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35818859), ODbL"
+    }
+  ]
+}

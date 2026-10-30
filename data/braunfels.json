@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "braunfels",
+    "name": "Braunfels",
+    "center": {
+      "lat": 50.51913950000001,
+      "lng": 8.392811250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "braunfels-e3ce98280a",
+      "city": "braunfels",
+      "label": "Leuner Straße",
+      "street": "Leuner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Braunfels",
+      "spotCount": 1,
+      "lat": 50.51913950000001,
+      "lng": 8.392811250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/817142980), ODbL"
+    }
+  ]
+}

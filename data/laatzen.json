@@ -29,8 +29,8 @@
     {
       "id": "laatzen-d4de694a25",
       "city": "laatzen",
-      "label": "Behindertenparkplatz Laatzen",
-      "street": null,
+      "label": "Braunschweiger Straße",
+      "street": "Braunschweiger Straße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -40,36 +40,6 @@
       "lng": 9.833753050000002,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/44599804), ODbL"
-    },
-    {
-      "id": "laatzen-ce9d04c5d8",
-      "city": "laatzen",
-      "label": "Behindertenparkplatz Laatzen",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Laatzen",
-      "spotCount": 1,
-      "lat": 52.30094935,
-      "lng": 9.8124717,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/53746255), ODbL"
-    },
-    {
-      "id": "laatzen-79f7f3ef1c",
-      "city": "laatzen",
-      "label": "Behindertenparkplatz Laatzen",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Laatzen",
-      "spotCount": 2,
-      "lat": 52.2905943,
-      "lng": 9.81802515,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/226515941), ODbL"
     },
     {
       "id": "laatzen-86e244bc72",
@@ -100,6 +70,21 @@
       "lng": 9.816338550000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/44790933), ODbL"
+    },
+    {
+      "id": "laatzen-79f7f3ef1c",
+      "city": "laatzen",
+      "label": "Pattenser Straße 1",
+      "street": "Pattenser Straße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Laatzen",
+      "spotCount": 2,
+      "lat": 52.2905943,
+      "lng": 9.81802515,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/226515941), ODbL"
     },
     {
       "id": "laatzen-c4451aade9",
@@ -145,6 +130,21 @@
       "lng": 9.799404800000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/23977544), ODbL"
+    },
+    {
+      "id": "laatzen-ce9d04c5d8",
+      "city": "laatzen",
+      "label": "Wülferoder Straße 40",
+      "street": "Wülferoder Straße",
+      "houseNumber": "40",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Laatzen",
+      "spotCount": 1,
+      "lat": 52.30094935,
+      "lng": 9.8124717,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/53746255), ODbL"
     }
   ]
 }

@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "pegnitz",
+    "name": "Pegnitz",
+    "center": {
+      "lat": 49.75365545,
+      "lng": 11.539393700000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pegnitz-40c75d7d24",
+      "city": "pegnitz",
+      "label": "Amag-Hilpert-Straße",
+      "street": "Amag-Hilpert-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pegnitz",
+      "spotCount": 2,
+      "lat": 49.76287260000001,
+      "lng": 11.5506061,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1489347056), ODbL"
+    },
+    {
+      "id": "pegnitz-54c2896617",
+      "city": "pegnitz",
+      "label": "Bayreuther Straße",
+      "street": "Bayreuther Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pegnitz",
+      "spotCount": 2,
+      "lat": 49.759423000000005,
+      "lng": 11.5455184,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/976083175), ODbL"
+    },
+    {
+      "id": "pegnitz-0e39cae3f2",
+      "city": "pegnitz",
+      "label": "Nürnberger Straße",
+      "street": "Nürnberger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Pegnitz",
+      "spotCount": 1,
+      "lat": 49.7489774,
+      "lng": 11.539393700000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/966293593), ODbL"
+    },
+    {
+      "id": "pegnitz-7ec52385b1",
+      "city": "pegnitz",
+      "label": "Nürnberger Straße",
+      "street": "Nürnberger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Pegnitz",
+      "spotCount": 1,
+      "lat": 49.74905690000001,
+      "lng": 11.5389745,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/966293621), ODbL"
+    },
+    {
+      "id": "pegnitz-ca77538df3",
+      "city": "pegnitz",
+      "label": "Pegnitz Bahnhof",
+      "street": "Pegnitz Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Pegnitz",
+      "spotCount": 1,
+      "lat": 49.75889960000001,
+      "lng": 11.548534750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/480198802), ODbL"
+    },
+    {
+      "id": "pegnitz-0dd8ad28bc",
+      "city": "pegnitz",
+      "label": "Rastpark Fränkische Schweiz / Pegnitz Ost",
+      "street": "Rastpark Fränkische Schweiz / Pegnitz Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pegnitz",
+      "spotCount": 5,
+      "lat": 49.7487778,
+      "lng": 11.5135616,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/70101877), ODbL"
+    },
+    {
+      "id": "pegnitz-f05e6bed3c",
+      "city": "pegnitz",
+      "label": "Wiesweiherweg 18",
+      "street": "Wiesweiherweg",
+      "houseNumber": "18",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pegnitz",
+      "spotCount": 1,
+      "lat": 49.75365545,
+      "lng": 11.538541850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/182935578), ODbL"
+    }
+  ]
+}

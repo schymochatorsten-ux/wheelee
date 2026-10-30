@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "moelln",
+    "name": "Mölln",
+    "center": {
+      "lat": 53.62662075,
+      "lng": 10.686509000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "moelln-ee318db917",
+      "city": "moelln",
+      "label": "Adolph-Hoeltich-Weg",
+      "street": "Adolph-Hoeltich-Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mölln",
+      "spotCount": 2,
+      "lat": 53.626084500000005,
+      "lng": 10.686509000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/388244231), ODbL"
+    },
+    {
+      "id": "moelln-f606af6786",
+      "city": "moelln",
+      "label": "Am Kurgarten",
+      "street": "Am Kurgarten",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Mölln",
+      "spotCount": 1,
+      "lat": 53.6258606,
+      "lng": 10.6886591,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/222159001), ODbL"
+    },
+    {
+      "id": "moelln-fdd0321f80",
+      "city": "moelln",
+      "label": "Am ZOB",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mölln",
+      "spotCount": 1,
+      "lat": 53.62662075,
+      "lng": 10.6849275,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/424486777), ODbL"
+    },
+    {
+      "id": "moelln-fc3adb2a9c",
+      "city": "moelln",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mölln",
+      "spotCount": 1,
+      "lat": 53.624009650000005,
+      "lng": 10.68302165,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/734857432), ODbL"
+    },
+    {
+      "id": "moelln-5fe20dba1c",
+      "city": "moelln",
+      "label": "Sportplatz Mölln Nord (P8)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mölln",
+      "spotCount": 1,
+      "lat": 53.63686955,
+      "lng": 10.694085000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/260124177), ODbL"
+    },
+    {
+      "id": "moelln-fbb6703520",
+      "city": "moelln",
+      "label": "Stadtziegelei",
+      "street": "Stadtziegelei",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mölln",
+      "spotCount": 1,
+      "lat": 53.640413900000006,
+      "lng": 10.66532115,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/33753797), ODbL"
+    }
+  ]
+}

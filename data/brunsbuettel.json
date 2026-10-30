@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "brunsbuettel",
+    "name": "Brunsbüttel",
+    "center": {
+      "lat": 53.8962956,
+      "lng": 9.1448707
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "brunsbuettel-39d5cfaec3",
+      "city": "brunsbuettel",
+      "label": "Schleusenstraße 3",
+      "street": "Schleusenstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brunsbüttel",
+      "spotCount": 1,
+      "lat": 53.8962956,
+      "lng": 9.1448707,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/69049149), ODbL"
+    }
+  ]
+}

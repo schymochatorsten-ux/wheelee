@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "nauen",
+    "name": "Nauen",
+    "center": {
+      "lat": 52.60654265000001,
+      "lng": 12.87730985
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nauen-a68885b242",
+      "city": "nauen",
+      "label": "Brandenburger Straße",
+      "street": "Brandenburger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Nauen",
+      "spotCount": 4,
+      "lat": 52.60141205000001,
+      "lng": 12.859919900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1326126409), ODbL"
+    },
+    {
+      "id": "nauen-bbf9083fb6",
+      "city": "nauen",
+      "label": "Hamburger Straße 24",
+      "street": "Hamburger Straße",
+      "houseNumber": "24",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nauen",
+      "spotCount": 1,
+      "lat": 52.60766685,
+      "lng": 12.86933165,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1393995841), ODbL"
+    },
+    {
+      "id": "nauen-2d2b08af4e",
+      "city": "nauen",
+      "label": "Mittelstraße",
+      "street": "Mittelstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nauen",
+      "spotCount": 1,
+      "lat": 52.6059185,
+      "lng": 12.87730985,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/491798745), ODbL"
+    },
+    {
+      "id": "nauen-71acf14633",
+      "city": "nauen",
+      "label": "Torgasse",
+      "street": "Torgasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nauen",
+      "spotCount": 1,
+      "lat": 52.60654265000001,
+      "lng": 12.8808655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/431538834), ODbL"
+    },
+    {
+      "id": "nauen-9301184848",
+      "city": "nauen",
+      "label": "Wallgasse 34",
+      "street": "Wallgasse",
+      "houseNumber": "34",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nauen",
+      "spotCount": 2,
+      "lat": 52.60735995,
+      "lng": 12.8800016,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/167903372), ODbL"
+    }
+  ]
+}

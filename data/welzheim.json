@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "welzheim",
+    "name": "Welzheim",
+    "center": {
+      "lat": 48.8752877,
+      "lng": 9.634772
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "welzheim-57430f5f51",
+      "city": "welzheim",
+      "label": "Wilhelmstraße 2",
+      "street": "Wilhelmstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Welzheim",
+      "spotCount": 1,
+      "lat": 48.8752877,
+      "lng": 9.634772,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9001758221), ODbL"
+    }
+  ]
+}

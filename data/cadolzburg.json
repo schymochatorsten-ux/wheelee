@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "cadolzburg",
+    "name": "Cadolzburg",
+    "center": {
+      "lat": 49.46050340000001,
+      "lng": 10.86407145
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "cadolzburg-178d7c5905",
+      "city": "cadolzburg",
+      "label": "Bahnhofsplatz",
+      "street": "Bahnhofsplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Cadolzburg",
+      "spotCount": 1,
+      "lat": 49.46050340000001,
+      "lng": 10.86407145,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1046965258), ODbL"
+    },
+    {
+      "id": "cadolzburg-244c253141",
+      "city": "cadolzburg",
+      "label": "Burghof 7",
+      "street": "Burghof",
+      "houseNumber": "7",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Cadolzburg",
+      "spotCount": 1,
+      "lat": 49.4589561,
+      "lng": 10.8511602,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11817256310), ODbL"
+    }
+  ]
+}

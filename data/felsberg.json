@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "felsberg",
+    "name": "Felsberg",
+    "center": {
+      "lat": 51.1766164,
+      "lng": 9.47188165
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "felsberg-e80dcb2c13",
+      "city": "felsberg",
+      "label": "Hesslarer Straße",
+      "street": "Hesslarer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Felsberg",
+      "spotCount": 2,
+      "lat": 51.13371495,
+      "lng": 9.44704595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/991716485), ODbL"
+    },
+    {
+      "id": "felsberg-32491b3d30",
+      "city": "felsberg",
+      "label": "Markwald",
+      "street": "Markwald",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Felsberg",
+      "spotCount": 2,
+      "lat": 51.1768,
+      "lng": 9.4720716,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/221257681), ODbL"
+    },
+    {
+      "id": "felsberg-9cc7f224e9",
+      "city": "felsberg",
+      "label": "Markwald",
+      "street": "Markwald",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Felsberg",
+      "spotCount": 1,
+      "lat": 51.17657095,
+      "lng": 9.4718748,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1497039410), ODbL"
+    },
+    {
+      "id": "felsberg-0078615e46",
+      "city": "felsberg",
+      "label": "Markwald",
+      "street": "Markwald",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Felsberg",
+      "spotCount": 1,
+      "lat": 51.1766164,
+      "lng": 9.47188165,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1497039411), ODbL"
+    }
+  ]
+}

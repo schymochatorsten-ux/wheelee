@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "unterfoehring",
+    "name": "Unterföhring",
+    "center": {
+      "lat": 48.190716300000005,
+      "lng": 11.646002500000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "unterfoehring-5eb7210ae4",
+      "city": "unterfoehring",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Unterföhring",
+      "spotCount": 2,
+      "lat": 48.190716300000005,
+      "lng": 11.64691495,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/243043654), ODbL"
+    },
+    {
+      "id": "unterfoehring-47b44d0b23",
+      "city": "unterfoehring",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Unterföhring",
+      "spotCount": 2,
+      "lat": 48.189485950000005,
+      "lng": 11.646002500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1429504986), ODbL"
+    },
+    {
+      "id": "unterfoehring-0953a48fa6",
+      "city": "unterfoehring",
+      "label": "Behindertenparkplatz Unterföhring",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Unterföhring",
+      "spotCount": 2,
+      "lat": 48.2012287,
+      "lng": 11.641647200000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8476588734), ODbL"
+    },
+    {
+      "id": "unterfoehring-afe69b402b",
+      "city": "unterfoehring",
+      "label": "Wilhelm-Kemmelmeyer-Bogen",
+      "street": "Wilhelm-Kemmelmeyer-Bogen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Unterföhring",
+      "spotCount": 5,
+      "lat": 48.18494235,
+      "lng": 11.6385003,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/121302022), ODbL"
+    }
+  ]
+}

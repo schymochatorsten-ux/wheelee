@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "eutin",
+    "name": "Eutin",
+    "center": {
+      "lat": 54.13342815,
+      "lng": 10.610927100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eutin-b20193e6a2",
+      "city": "eutin",
+      "label": "Hospitalstraße",
+      "street": "Hospitalstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Eutin",
+      "spotCount": 2,
+      "lat": 54.13342815,
+      "lng": 10.6041415,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/690723948), ODbL"
+    },
+    {
+      "id": "eutin-2a8f9a32e1",
+      "city": "eutin",
+      "label": "Hospitalstraße",
+      "street": "Hospitalstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eutin",
+      "spotCount": 1,
+      "lat": 54.1336972,
+      "lng": 10.6049841,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1295386829), ODbL"
+    },
+    {
+      "id": "eutin-83358c0305",
+      "city": "eutin",
+      "label": "Hospitalstraße",
+      "street": "Hospitalstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eutin",
+      "spotCount": 1,
+      "lat": 54.1337405,
+      "lng": 10.604940850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1295386830), ODbL"
+    },
+    {
+      "id": "eutin-6803b1c105",
+      "city": "eutin",
+      "label": "Johann-Specht-Straße",
+      "street": "Johann-Specht-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eutin",
+      "spotCount": 1,
+      "lat": 54.1286719,
+      "lng": 10.622341250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1564921056), ODbL"
+    },
+    {
+      "id": "eutin-2d67a4404e",
+      "city": "eutin",
+      "label": "Johann-Specht-Straße",
+      "street": "Johann-Specht-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eutin",
+      "spotCount": 1,
+      "lat": 54.128713000000005,
+      "lng": 10.622366150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1564921057), ODbL"
+    },
+    {
+      "id": "eutin-04e3c428d1",
+      "city": "eutin",
+      "label": "Parkplatz Kreisverwaltung",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eutin",
+      "spotCount": 1,
+      "lat": 54.13239660000001,
+      "lng": 10.618965250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/176364444), ODbL"
+    },
+    {
+      "id": "eutin-62aaee855b",
+      "city": "eutin",
+      "label": "Plöner Straße 42",
+      "street": "Plöner Straße",
+      "houseNumber": "42",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eutin",
+      "spotCount": 2,
+      "lat": 54.137818100000004,
+      "lng": 10.610927100000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2736197649), ODbL"
+    }
+  ]
+}

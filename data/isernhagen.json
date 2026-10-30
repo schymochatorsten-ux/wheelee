@@ -12,10 +12,25 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
+      "id": "isernhagen-a7e1616a5c",
+      "city": "isernhagen",
+      "label": "Am Ortfelde 60",
+      "street": "Am Ortfelde",
+      "houseNumber": "60",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Isernhagen",
+      "spotCount": 15,
+      "lat": 52.4552106,
+      "lng": 9.798672800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1410532547), ODbL"
+    },
+    {
       "id": "isernhagen-33323a6584",
       "city": "isernhagen",
-      "label": "Behindertenparkplatz Isernhagen",
-      "street": null,
+      "label": "Ernst-Grote-Straße",
+      "street": "Ernst-Grote-Straße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -29,8 +44,8 @@
     {
       "id": "isernhagen-7913a51f25",
       "city": "isernhagen",
-      "label": "Behindertenparkplatz Isernhagen",
-      "street": null,
+      "label": "Siemensstraße",
+      "street": "Siemensstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -40,21 +55,6 @@
       "lng": 9.8371414,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/592986335), ODbL"
-    },
-    {
-      "id": "isernhagen-a7e1616a5c",
-      "city": "isernhagen",
-      "label": "Behindertenparkplatz Isernhagen",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Isernhagen",
-      "spotCount": 15,
-      "lat": 52.4552106,
-      "lng": 9.798672800000002,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1410532547), ODbL"
     }
   ]
 }

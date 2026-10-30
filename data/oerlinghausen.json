@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "oerlinghausen",
+    "name": "Oerlinghausen",
+    "center": {
+      "lat": 51.960655450000004,
+      "lng": 8.66342415
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oerlinghausen-618b7faadb",
+      "city": "oerlinghausen",
+      "label": "Hauptstraße 78",
+      "street": "Hauptstraße",
+      "houseNumber": "78",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oerlinghausen",
+      "spotCount": 1,
+      "lat": 51.95781625,
+      "lng": 8.6594107,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1372509597), ODbL"
+    },
+    {
+      "id": "oerlinghausen-60c2ca25cc",
+      "city": "oerlinghausen",
+      "label": "Heinrich-Kindsgrab-Straße 13",
+      "street": "Heinrich-Kindsgrab-Straße",
+      "houseNumber": "13",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oerlinghausen",
+      "spotCount": 1,
+      "lat": 51.94083345,
+      "lng": 8.65815255,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/783150360), ODbL"
+    },
+    {
+      "id": "oerlinghausen-e3303be8ff",
+      "city": "oerlinghausen",
+      "label": "Oetenhauser Straße 5",
+      "street": "Oetenhauser Straße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oerlinghausen",
+      "spotCount": 7,
+      "lat": 51.96212575,
+      "lng": 8.6810251,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1373395836), ODbL"
+    },
+    {
+      "id": "oerlinghausen-1fc3542134",
+      "city": "oerlinghausen",
+      "label": "Postweg",
+      "street": "Postweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oerlinghausen",
+      "spotCount": 1,
+      "lat": 51.960699350000006,
+      "lng": 8.66422055,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1372508635), ODbL"
+    },
+    {
+      "id": "oerlinghausen-3ece2575d9",
+      "city": "oerlinghausen",
+      "label": "Ravensberger Straße 4",
+      "street": "Ravensberger Straße",
+      "houseNumber": "4",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oerlinghausen",
+      "spotCount": 1,
+      "lat": 51.960655450000004,
+      "lng": 8.66342415,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1372508634), ODbL"
+    }
+  ]
+}

@@ -14,8 +14,8 @@
     {
       "id": "zerbst-anhalt-6827d8c0cf",
       "city": "zerbst-anhalt",
-      "label": "Behindertenparkplatz Zerbst/Anhalt",
-      "street": null,
+      "label": "Heide",
+      "street": "Heide",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,
@@ -29,8 +29,8 @@
     {
       "id": "zerbst-anhalt-f0657e8b86",
       "city": "zerbst-anhalt",
-      "label": "Behindertenparkplatz Zerbst/Anhalt",
-      "street": null,
+      "label": "Manfred-Bieler-Straße",
+      "street": "Manfred-Bieler-Straße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,

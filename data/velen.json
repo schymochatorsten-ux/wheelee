@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "velen",
+    "name": "Velen",
+    "center": {
+      "lat": 51.853490050000005,
+      "lng": 6.92227465
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "velen-4e23036404",
+      "city": "velen",
+      "label": "Zum Lünsberg",
+      "street": "Zum Lünsberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Velen",
+      "spotCount": 2,
+      "lat": 51.853490050000005,
+      "lng": 6.92227465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/189482742), ODbL"
+    }
+  ]
+}

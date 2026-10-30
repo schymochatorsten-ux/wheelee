@@ -12,26 +12,11 @@
   "generatedAt": "2026-10-30",
   "spots": [
     {
-      "id": "neuruppin-8e3276cc98",
-      "city": "neuruppin",
-      "label": "Behindertenparkplatz Neuruppin",
-      "street": null,
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Neuruppin",
-      "spotCount": 1,
-      "lat": 52.8879382,
-      "lng": 12.8023316,
-      "geoAccuracy": "house",
-      "source": "OpenStreetMap (node/11716759844), ODbL"
-    },
-    {
       "id": "neuruppin-bd84aa9a4a",
       "city": "neuruppin",
-      "label": "Behindertenparkplatz Neuruppin",
-      "street": null,
-      "houseNumber": null,
+      "label": "Karl-Liebknecht-Straße 33",
+      "street": "Karl-Liebknecht-Straße",
+      "houseNumber": "33",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Neuruppin",
@@ -44,8 +29,8 @@
     {
       "id": "neuruppin-51b3669b1c",
       "city": "neuruppin",
-      "label": "Behindertenparkplatz Neuruppin",
-      "street": null,
+      "label": "Kunsterspring",
+      "street": "Kunsterspring",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -55,6 +40,21 @@
       "lng": 12.7675476,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/781488611), ODbL"
+    },
+    {
+      "id": "neuruppin-8e3276cc98",
+      "city": "neuruppin",
+      "label": "Martin-Ebell-Straße",
+      "street": "Martin-Ebell-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neuruppin",
+      "spotCount": 1,
+      "lat": 52.8879382,
+      "lng": 12.8023316,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11716759844), ODbL"
     }
   ]
 }

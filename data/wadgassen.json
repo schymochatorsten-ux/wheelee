@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wadgassen",
+    "name": "Wadgassen",
+    "center": {
+      "lat": 49.26134815,
+      "lng": 6.8093083
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wadgassen-9d45bb1c84",
+      "city": "wadgassen",
+      "label": "Provinzialstraße 57",
+      "street": "Provinzialstraße",
+      "houseNumber": "57",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wadgassen",
+      "spotCount": 3,
+      "lat": 49.26134815,
+      "lng": 6.8093083,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1331715359), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "trebur",
+    "name": "Trebur",
+    "center": {
+      "lat": 49.9310574,
+      "lng": 8.4077152
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "trebur-2d69bea7fe",
+      "city": "trebur",
+      "label": "Berliner Straße 7",
+      "street": "Berliner Straße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Trebur",
+      "spotCount": 2,
+      "lat": 49.935271400000005,
+      "lng": 8.3758704,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/140120176), ODbL"
+    },
+    {
+      "id": "trebur-bc6fbe197a",
+      "city": "trebur",
+      "label": "Clara-Schumann-Weg",
+      "street": "Clara-Schumann-Weg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Trebur",
+      "spotCount": 1,
+      "lat": 49.9306739,
+      "lng": 8.4077152,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10077518138), ODbL"
+    },
+    {
+      "id": "trebur-48a5a7ff71",
+      "city": "trebur",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Trebur",
+      "spotCount": 3,
+      "lat": 49.924380400000004,
+      "lng": 8.408628700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1305437315), ODbL"
+    },
+    {
+      "id": "trebur-a478cf942b",
+      "city": "trebur",
+      "label": "Marie-Curie-Straße",
+      "street": "Marie-Curie-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Trebur",
+      "spotCount": 1,
+      "lat": 49.931281000000006,
+      "lng": 8.408259600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10077518139), ODbL"
+    },
+    {
+      "id": "trebur-4af053d4a5",
+      "city": "trebur",
+      "label": "Rüsselsheimer Straße",
+      "street": "Rüsselsheimer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Trebur",
+      "spotCount": 1,
+      "lat": 49.9310574,
+      "lng": 8.406780600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10077518137), ODbL"
+    }
+  ]
+}

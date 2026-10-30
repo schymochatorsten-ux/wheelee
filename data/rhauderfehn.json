@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "rhauderfehn",
+    "name": "Rhauderfehn",
+    "center": {
+      "lat": 53.13500985,
+      "lng": 7.5726917
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rhauderfehn-6349260e50",
+      "city": "rhauderfehn",
+      "label": "Hagiusring",
+      "street": "Hagiusring",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rhauderfehn",
+      "spotCount": 1,
+      "lat": 53.13544505,
+      "lng": 7.5726917,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1548296277), ODbL"
+    },
+    {
+      "id": "rhauderfehn-60330d2fb0",
+      "city": "rhauderfehn",
+      "label": "Hagiusring",
+      "street": "Hagiusring",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rhauderfehn",
+      "spotCount": 1,
+      "lat": 53.1343073,
+      "lng": 7.572446500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1548296278), ODbL"
+    },
+    {
+      "id": "rhauderfehn-f11e167ad2",
+      "city": "rhauderfehn",
+      "label": "Hagiusring",
+      "street": "Hagiusring",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rhauderfehn",
+      "spotCount": 1,
+      "lat": 53.1341389,
+      "lng": 7.57119125,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1548296279), ODbL"
+    },
+    {
+      "id": "rhauderfehn-fc11fe4c89",
+      "city": "rhauderfehn",
+      "label": "Hagiusring",
+      "street": "Hagiusring",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rhauderfehn",
+      "spotCount": 1,
+      "lat": 53.13500985,
+      "lng": 7.5728019,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1548296280), ODbL"
+    },
+    {
+      "id": "rhauderfehn-a75d682b17",
+      "city": "rhauderfehn",
+      "label": "Pastor-Nellner-Straße",
+      "street": "Pastor-Nellner-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rhauderfehn",
+      "spotCount": 2,
+      "lat": 53.13648855,
+      "lng": 7.574820650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/450751882), ODbL"
+    }
+  ]
+}

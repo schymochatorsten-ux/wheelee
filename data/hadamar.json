@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hadamar",
+    "name": "Hadamar",
+    "center": {
+      "lat": 50.44862155,
+      "lng": 8.0492892
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hadamar-0517b5a550",
+      "city": "hadamar",
+      "label": "St. Anna Gesundheitszentrum (Besucher)",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hadamar",
+      "spotCount": 1,
+      "lat": 50.44862155,
+      "lng": 8.0492892,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1137024361), ODbL"
+    }
+  ]
+}

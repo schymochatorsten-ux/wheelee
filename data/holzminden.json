@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "holzminden",
+    "name": "Holzminden",
+    "center": {
+      "lat": 51.82061075,
+      "lng": 9.45637295
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "holzminden-808882554b",
+      "city": "holzminden",
+      "label": "Busbahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Holzminden",
+      "spotCount": 1,
+      "lat": 51.82061075,
+      "lng": 9.45362135,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/66277716), ODbL"
+    },
+    {
+      "id": "holzminden-610bf41baa",
+      "city": "holzminden",
+      "label": "Hoher Weg",
+      "street": "Hoher Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Holzminden",
+      "spotCount": 1,
+      "lat": 51.82145125000001,
+      "lng": 9.45637295,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/150561992), ODbL"
+    },
+    {
+      "id": "holzminden-bc19e2e44b",
+      "city": "holzminden",
+      "label": "Wildpark",
+      "street": "Wildpark",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Holzminden",
+      "spotCount": 1,
+      "lat": 51.7441052,
+      "lng": 9.517711400000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12103387264), ODbL"
+    }
+  ]
+}

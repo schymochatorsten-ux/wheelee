@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "emstek",
+    "name": "Emstek",
+    "center": {
+      "lat": 52.81217875,
+      "lng": 8.2156882
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "emstek-9b21cf555b",
+      "city": "emstek",
+      "label": "Hoyer Autohof Cloppenburger Land",
+      "street": "Hoyer Autohof Cloppenburger Land",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Emstek",
+      "spotCount": 2,
+      "lat": 52.81226720000001,
+      "lng": 8.2156075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/560206432), ODbL"
+    },
+    {
+      "id": "emstek-1200d5f9a3",
+      "city": "emstek",
+      "label": "Hoyer Autohof Cloppenburger Land",
+      "street": "Hoyer Autohof Cloppenburger Land",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Emstek",
+      "spotCount": 1,
+      "lat": 52.81217875,
+      "lng": 8.215724699999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1354729444), ODbL"
+    },
+    {
+      "id": "emstek-08e682ee3c",
+      "city": "emstek",
+      "label": "Hoyer Autohof Cloppenburger Land",
+      "street": "Hoyer Autohof Cloppenburger Land",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Emstek",
+      "spotCount": 1,
+      "lat": 52.81217335,
+      "lng": 8.2156882,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1354729445), ODbL"
+    }
+  ]
+}

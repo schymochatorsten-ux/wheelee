@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "mandelbachtal",
+    "name": "Mandelbachtal",
+    "center": {
+      "lat": 49.160143850000004,
+      "lng": 7.1213097
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mandelbachtal-1abbcb9949",
+      "city": "mandelbachtal",
+      "label": "Gräfinthaler Straße",
+      "street": "Gräfinthaler Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mandelbachtal",
+      "spotCount": 1,
+      "lat": 49.160143850000004,
+      "lng": 7.1213097,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/48636522), ODbL"
+    }
+  ]
+}

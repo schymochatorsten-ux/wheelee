@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "langgoens",
+    "name": "Langgöns",
+    "center": {
+      "lat": 50.49571160000001,
+      "lng": 8.6134336
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "langgoens-f5ea5f6c4f",
+      "city": "langgoens",
+      "label": "Dorfstraße 3",
+      "street": "Dorfstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Langgöns",
+      "spotCount": 3,
+      "lat": 50.49571160000001,
+      "lng": 8.6134336,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/287395856), ODbL"
+    }
+  ]
+}

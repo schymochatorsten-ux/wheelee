@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "bad-wuennenberg",
+    "name": "Bad Wünnenberg",
+    "center": {
+      "lat": 51.55451500000001,
+      "lng": 8.7270918
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-wuennenberg-29f6e719df",
+      "city": "bad-wuennenberg",
+      "label": "Adam-Opel-Straße 10",
+      "street": "Adam-Opel-Straße",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Bad Wünnenberg",
+      "spotCount": 4,
+      "lat": 51.57437005,
+      "lng": 8.720443500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1216064805), ODbL"
+    },
+    {
+      "id": "bad-wuennenberg-0ca5ad67e3",
+      "city": "bad-wuennenberg",
+      "label": "Graf-Zeppelin-Straße",
+      "street": "Graf-Zeppelin-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Wünnenberg",
+      "spotCount": 3,
+      "lat": 51.56205735,
+      "lng": 8.7153672,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/480425177), ODbL"
+    },
+    {
+      "id": "bad-wuennenberg-b0535f7d57",
+      "city": "bad-wuennenberg",
+      "label": "Poststraße 15",
+      "street": "Poststraße",
+      "houseNumber": "15",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Wünnenberg",
+      "spotCount": 1,
+      "lat": 51.5163165,
+      "lng": 8.744717900000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6830213509), ODbL"
+    },
+    {
+      "id": "bad-wuennenberg-f686253b88",
+      "city": "bad-wuennenberg",
+      "label": "Rastplatz Sintfeld-Nord",
+      "street": "Rastplatz Sintfeld-Nord",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Wünnenberg",
+      "spotCount": 1,
+      "lat": 51.55451500000001,
+      "lng": 8.7999689,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1121203866), ODbL"
+    },
+    {
+      "id": "bad-wuennenberg-2138623416",
+      "city": "bad-wuennenberg",
+      "label": "Rastplatz Sintfeld-Süd",
+      "street": "Rastplatz Sintfeld-Süd",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Wünnenberg",
+      "spotCount": 1,
+      "lat": 51.55366265000001,
+      "lng": 8.80002565,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1121203877), ODbL"
+    },
+    {
+      "id": "bad-wuennenberg-e8b61a194d",
+      "city": "bad-wuennenberg",
+      "label": "Salzbrunnen",
+      "street": "Salzbrunnen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Wünnenberg",
+      "spotCount": 1,
+      "lat": 51.56795090000001,
+      "lng": 8.7270918,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6825168539), ODbL"
+    },
+    {
+      "id": "bad-wuennenberg-b21edf7725",
+      "city": "bad-wuennenberg",
+      "label": "Zinsdorfer Weg",
+      "street": "Zinsdorfer Weg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Wünnenberg",
+      "spotCount": 2,
+      "lat": 51.523101600000004,
+      "lng": 8.705214,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9492231039), ODbL"
+    }
+  ]
+}

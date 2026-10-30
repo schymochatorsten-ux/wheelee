@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "plankstadt",
+    "name": "Plankstadt",
+    "center": {
+      "lat": 49.39214890000001,
+      "lng": 8.594645100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "plankstadt-65c031fdf7",
+      "city": "plankstadt",
+      "label": "Luisenstraße 1a",
+      "street": "Luisenstraße",
+      "houseNumber": "1a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Plankstadt",
+      "spotCount": 1,
+      "lat": 49.39214890000001,
+      "lng": 8.594645100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/36887399), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "klipphausen",
+    "name": "Klipphausen",
+    "center": {
+      "lat": 51.08140865,
+      "lng": 13.4725733
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "klipphausen-07412312da",
+      "city": "klipphausen",
+      "label": "Gästeparkplatz Meißner Blick",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Klipphausen",
+      "spotCount": 1,
+      "lat": 51.08140865,
+      "lng": 13.447258050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/546084986), ODbL"
+    },
+    {
+      "id": "klipphausen-9d1f953bfd",
+      "city": "klipphausen",
+      "label": "Hortensienweg",
+      "street": "Hortensienweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Klipphausen",
+      "spotCount": 2,
+      "lat": 51.098215800000006,
+      "lng": 13.4725733,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4539361147), ODbL"
+    },
+    {
+      "id": "klipphausen-1883452df9",
+      "city": "klipphausen",
+      "label": "Talstraße 1",
+      "street": "Talstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Klipphausen",
+      "spotCount": 1,
+      "lat": 51.075746800000005,
+      "lng": 13.53111355,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/759006484), ODbL"
+    }
+  ]
+}

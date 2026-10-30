@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "kelheim",
+    "name": "Kelheim",
+    "center": {
+      "lat": 48.918197500000005,
+      "lng": 11.873204600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kelheim-7679496cd5",
+      "city": "kelheim",
+      "label": "Alter Markt 16",
+      "street": "Alter Markt",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kelheim",
+      "spotCount": 1,
+      "lat": 48.91664575,
+      "lng": 11.8720502,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1305336064), ODbL"
+    },
+    {
+      "id": "kelheim-14aee35b36",
+      "city": "kelheim",
+      "label": "Donaustraße 1",
+      "street": "Donaustraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kelheim",
+      "spotCount": 1,
+      "lat": 48.9181728,
+      "lng": 11.872089,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1302148456), ODbL"
+    },
+    {
+      "id": "kelheim-09aa9247f7",
+      "city": "kelheim",
+      "label": "Gundelshausener Straße",
+      "street": "Gundelshausener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kelheim",
+      "spotCount": 1,
+      "lat": 48.9450966,
+      "lng": 12.003340750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/399076024), ODbL"
+    },
+    {
+      "id": "kelheim-4b74049cf2",
+      "city": "kelheim",
+      "label": "Ludwigsplatz 12",
+      "street": "Ludwigsplatz",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kelheim",
+      "spotCount": 1,
+      "lat": 48.918197500000005,
+      "lng": 11.873605350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1302092240), ODbL"
+    },
+    {
+      "id": "kelheim-37b509ffb7",
+      "city": "kelheim",
+      "label": "Ludwigsplatz 12",
+      "street": "Ludwigsplatz",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kelheim",
+      "spotCount": 1,
+      "lat": 48.91816585,
+      "lng": 11.873204600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1302092244), ODbL"
+    },
+    {
+      "id": "kelheim-e14749180a",
+      "city": "kelheim",
+      "label": "Ludwigsplatz 16",
+      "street": "Ludwigsplatz",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kelheim",
+      "spotCount": 1,
+      "lat": 48.918405500000006,
+      "lng": 11.8723594,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1302092242), ODbL"
+    }
+  ]
+}

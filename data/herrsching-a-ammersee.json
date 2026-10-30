@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "herrsching-a-ammersee",
+    "name": "Herrsching a.Ammersee",
+    "center": {
+      "lat": 47.9973918,
+      "lng": 11.1676943
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "herrsching-a-ammersee-21e846d4bf",
+      "city": "herrsching-a-ammersee",
+      "label": "Keramikstraße",
+      "street": "Keramikstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Herrsching a.Ammersee",
+      "spotCount": 2,
+      "lat": 47.9973918,
+      "lng": 11.1676943,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/281842058), ODbL"
+    },
+    {
+      "id": "herrsching-a-ammersee-f6bdd9e006",
+      "city": "herrsching-a-ammersee",
+      "label": "Mühlfeld",
+      "street": "Mühlfeld",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herrsching a.Ammersee",
+      "spotCount": 2,
+      "lat": 47.984916600000005,
+      "lng": 11.16488155,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27075306), ODbL"
+    }
+  ]
+}

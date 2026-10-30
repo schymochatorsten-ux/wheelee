@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "schwalbach-he",
+    "name": "Schwalbach am Taunus",
+    "center": {
+      "lat": 50.1625899,
+      "lng": 8.52037065
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schwalbach-he-a935edf869",
+      "city": "schwalbach-he",
+      "label": "Albert-Richter-Weg",
+      "street": "Albert-Richter-Weg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schwalbach am Taunus",
+      "spotCount": 1,
+      "lat": 50.1537841,
+      "lng": 8.518405000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9572775842), ODbL"
+    },
+    {
+      "id": "schwalbach-he-f0d9aa3415",
+      "city": "schwalbach-he",
+      "label": "Parkplatz Waldfriedhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwalbach am Taunus",
+      "spotCount": 2,
+      "lat": 50.1625899,
+      "lng": 8.52037065,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/290406839), ODbL"
+    }
+  ]
+}

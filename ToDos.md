@@ -55,9 +55,9 @@ jede Stufe erst nach den Prüfungen geschrieben wird.
 
 | #   | Was                                                              | Warum hier                                         |
 | --- | ---------------------------------------------------------------- | -------------------------------------------------- |
-| 2   | **3.4** und **3.3** laufen lassen (3.10 ist ausgewertet)        | Prüfen vor dem Einspielen                          |
-| 3   | **2d.8a** die übrigen acht Städte ansehen (München ist umgestellt) | Ersetzt einen Bestand, deshalb nach den Prüfungen |
-| 4   | **2e.6** Stufe 2 und folgende (Stufe 1 ist eingespielt; 19.9 ist erledigt) | Mit Streuungs- und Dichteprüfung               |
+| 2   | **3.3** nach Stufe 2 wiederholen                                | Prüfen vor dem Einspielen                          |
+| 3   | **2d.8a** Bochum (braucht die Datei von Torsten)                 | Portal sperrt den Abruf                            |
+| 4   | **2e.13**, dann **2e.6** Stufe 2 und folgende                    | Straßen zuerst, sonst fehlt die Prüfung            |
 | 6   | **15.1** Niederländisch, Portugiesisch, Russisch                 | Zuletzt, jede erst nach der vorigen                |
 
 **Neue Knöpfe und Meldungen kommen seit 15.2 gleich in
@@ -74,15 +74,12 @@ abgeglichen ist bislang eine Stadt.
 
 ## 2. Datenquellen und Import
 
-- [~] 2d.8a **Städte mit ungenutzter amtlicher Quelle.** München ist umgestellt, die übrigen sind angesehen (Befund in [Erledigt.md](Erledigt.md), 2d.8a). **Offen, wenn die Portale wieder antworten:** **Bielefeld** (Quelle ist in `manual-sources.mts` hinterlegt, das Portal antwortete am 2026-10-30 mit HTTP 500; erneut `npm run import:city -- bielefeld`, Seed vorher sichern) und **Bochum** (CSV auf opendata.ruhr, CC0; Abruf scheiterte mit 502; erst prüfen, ob die CSV Koordinaten enthält).
-- [~] 2e.6 **Restliche Gemeinden aus OpenStreetMap, in Stufen** (D-07). **Stufe 1 (ab 20.000) ist eingespielt** (Stand in [Erledigt.md](Erledigt.md)). **Offen:** Straßennamen nachtragen (`import:streets`, läuft), danach Stufe 2 (ab 10.000: `MIN_POPULATION` auf 10.000, dieselben Läufe mit den vorhandenen Auszügen), 3 (ab 5.000), 4 (alle). Jede erst nach den Prüfungen im Importer.
-- [ ] 2e.12 **105 Gemeinden der Stufe 1 ansehen, die Dichte oder Streuung nicht bestanden haben** (Liste je Land im Protokoll des Laufs: `npm run import:osm-state -- <land> --pbf <datei> --dry`; Auszüge laden wie unter 2e.11). Je Gemeinde entscheiden: Zuordnungsfehler (nicht aufnehmen) oder dichte Kartierung (Witten, Hattingen: aufnehmen mit `--trotzdem`). Mittel: `check:streets` und `check:street-names`.
-- [~] 2e.11 **Massendaten ohne Overpass holen.** Der PBF-Leser steht (`scripts/import/pbf.mts`, Stand in [Erledigt.md](Erledigt.md)). Angeschlossen: `npm run import:osm-state -- <land> --pbf <datei> --dry`. **Offen:** einen Auszug laden (`https://download.geofabrik.de/europe/germany/<land>-latest.osm.pbf`, ODbL) und den ersten Probelauf an einem kleinen Land (Saarland) gegen die Overpass-Zahlen halten, nicht gleich NRW. Freigegeben (D-11).
+- [~] 2d.8a **Städte mit ungenutzter amtlicher Quelle.** München und Bielefeld sind umgestellt (Befund in [Erledigt.md](Erledigt.md)). **Offen: Bochum.** Der Server antwortet mit 403, der ArcGIS-Dienst ist weg. **Braucht Torsten:** die CSV oder das GeoJSON „Bochum – Behindertenparkplätze“ (CC0) von `bochum.opendata.ruhr` im Browser laden und in den Arbeitsordner legen; vorher prüfen, ob sie Koordinaten enthält.
+- [~] 2e.6 **Restliche Gemeinden aus OpenStreetMap, in Stufen** (D-07). **Stufe 1 (ab 20.000) und 2 (ab 10.000) sind eingespielt** (Stand in [Erledigt.md](Erledigt.md), „2e.6 Stufe 2"). **Offen:** Stufe 3 (ab 5.000: `MIN_POPULATION` auf 5.000) und 4 (alle), derselbe Ablauf mit den vorhandenen Auszügen; bei `--trotzdem` danach `data/zossen.json` löschen. Vor Stufe 3 messen, ob `/api/cities` (423 KB bei 1.494 Städten) noch tragbar ist.
 
 ## 3. Datenvalidierung
 
-- [~] 3.3 **Straßenabgleich:** Werkzeug steht (`npm run check:street-names -- <stadt> [--n 60 | --alle]`, Stand in [Erledigt.md](Erledigt.md)). **Gelaufen** für 22 Städte (Befund und Düsseldorf-Korrektur in [Erledigt.md](Erledigt.md), 3.3 und 3.12). **Offen:** Karlsruhe (19 von 30 bestätigt) ansehen und die Stichprobe für die 439 neuen Gemeinden aus 2e.6 (sinnvoll je Land eine Handvoll großer Gemeinden, nicht alle).
-- [~] 3.4 **Abstand zur nächsten Straße.** Werkzeug steht (`npm run check:streets -- <stadt>`, Stand in [Erledigt.md](Erledigt.md)). **Offen:** einmal für die 23 amtlichen Städte laufen lassen (eine Overpass-Abfrage je Stadt, mit Pausen, erst nach dem laufenden 3.10) und die gemeldeten Standorte ansehen.
+- [~] 3.3 **Straßenabgleich:** Werkzeug steht (`npm run check:street-names -- <stadt> [--n 60 | --alle]`, Stand in [Erledigt.md](Erledigt.md)). **Gelaufen** für 22 Städte, Karlsruhe und eine Stichprobe von 12 neuen Gemeinden (Befund in [Erledigt.md](Erledigt.md), 3.3, 3.12 und 2e.12). Die Stichprobe für die neuen Gemeinden ist mit den 50 aus 2e.12 gelaufen (78 %). **Offen:** nur noch die Wiederholung nach Stufe 2.
 - [!] 3.11 **Sollen OSM-Standorte, die die Stadt nicht führt, zusätzlich zur amtlichen Liste angezeigt werden?** Der Kreuzvergleich (3.10, Befund in [Erledigt.md](Erledigt.md)) fand in 22 Städten **1.916 Standorte nur in OSM** (Köln 752, Dresden 225, Dortmund 164, Frankfurt 155, Düsseldorf 152). Oft sind es Parkplätze mit ausgewiesenen Stellplätzen (Kliniken, Märkte), die die Stadt als Straßenraum-Liste nicht führt – beides ist richtig. **Braucht von dir:** zusätzlich zeigen (als „nur OSM“ gekennzeichnet, mit Hinweis), weiter nur amtlich, oder je Stadt entscheiden. Aufwand: mittel (Zusammenführen im Import, Kennzeichnung in der Detailansicht; das Muster „bestätigt“ gibt es schon).
 
 

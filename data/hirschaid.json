@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "hirschaid",
+    "name": "Hirschaid",
+    "center": {
+      "lat": 49.80530195,
+      "lng": 10.96987905
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hirschaid-f1fc3bc4ec",
+      "city": "hirschaid",
+      "label": "Am Main-Donau-Kanal",
+      "street": "Am Main-Donau-Kanal",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hirschaid",
+      "spotCount": 1,
+      "lat": 49.813458950000005,
+      "lng": 10.985604200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/62277579), ODbL"
+    },
+    {
+      "id": "hirschaid-8868ad3cf1",
+      "city": "hirschaid",
+      "label": "Behindertenparkplatz Hirschaid",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hirschaid",
+      "spotCount": 1,
+      "lat": 49.805253050000005,
+      "lng": 10.969839450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/842255664), ODbL"
+    },
+    {
+      "id": "hirschaid-3c91a41b20",
+      "city": "hirschaid",
+      "label": "Behindertenparkplatz Hirschaid",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hirschaid",
+      "spotCount": 1,
+      "lat": 49.805181250000004,
+      "lng": 10.96987905,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/842255665), ODbL"
+    },
+    {
+      "id": "hirschaid-e6dfe1e602",
+      "city": "hirschaid",
+      "label": "Hofäckerstraße",
+      "street": "Hofäckerstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hirschaid",
+      "spotCount": 1,
+      "lat": 49.805293000000006,
+      "lng": 10.96915315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1113428869), ODbL"
+    },
+    {
+      "id": "hirschaid-ccc39e55f3",
+      "city": "hirschaid",
+      "label": "Hofäckerstraße",
+      "street": "Hofäckerstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hirschaid",
+      "spotCount": 1,
+      "lat": 49.80530195,
+      "lng": 10.969195,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1113428870), ODbL"
+    },
+    {
+      "id": "hirschaid-e5cc566991",
+      "city": "hirschaid",
+      "label": "Wiesenstraße",
+      "street": "Wiesenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hirschaid",
+      "spotCount": 1,
+      "lat": 49.81775760000001,
+      "lng": 10.987061,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/65424029), ODbL"
+    }
+  ]
+}

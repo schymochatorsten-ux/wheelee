@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "eichenzell",
+    "name": "Eichenzell",
+    "center": {
+      "lat": 50.509827,
+      "lng": 9.738675350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eichenzell-2af97ca5e8",
+      "city": "eichenzell",
+      "label": "Gersfelder Straße 8",
+      "street": "Gersfelder Straße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eichenzell",
+      "spotCount": 4,
+      "lat": 50.493363,
+      "lng": 9.6967164,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1190098463), ODbL"
+    },
+    {
+      "id": "eichenzell-a61a6fe27b",
+      "city": "eichenzell",
+      "label": "Pilgerzell",
+      "street": "Pilgerzell",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eichenzell",
+      "spotCount": 4,
+      "lat": 50.509330850000005,
+      "lng": 9.7386452,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1497459521), ODbL"
+    },
+    {
+      "id": "eichenzell-c2f6e3d78c",
+      "city": "eichenzell",
+      "label": "Pilgerzell",
+      "street": "Pilgerzell",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eichenzell",
+      "spotCount": 1,
+      "lat": 50.509827,
+      "lng": 9.738675350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1497459584), ODbL"
+    },
+    {
+      "id": "eichenzell-a3df85114f",
+      "city": "eichenzell",
+      "label": "Pilgerzell",
+      "street": "Pilgerzell",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eichenzell",
+      "spotCount": 1,
+      "lat": 50.50987055,
+      "lng": 9.73869155,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1497459585), ODbL"
+    },
+    {
+      "id": "eichenzell-727ad15a73",
+      "city": "eichenzell",
+      "label": "Pilgerzell",
+      "street": "Pilgerzell",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eichenzell",
+      "spotCount": 1,
+      "lat": 50.5099141,
+      "lng": 9.7387078,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1497459586), ODbL"
+    },
+    {
+      "id": "eichenzell-02dc9eabb0",
+      "city": "eichenzell",
+      "label": "Pilgerzell",
+      "street": "Pilgerzell",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eichenzell",
+      "spotCount": 1,
+      "lat": 50.509792100000006,
+      "lng": 9.73866735,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1497459587), ODbL"
+    }
+  ]
+}

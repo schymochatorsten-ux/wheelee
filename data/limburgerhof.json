@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "limburgerhof",
+    "name": "Limburgerhof",
+    "center": {
+      "lat": 49.42404425,
+      "lng": 8.39389055
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "limburgerhof-ea71e78821",
+      "city": "limburgerhof",
+      "label": "Bahnhofsplatz 1",
+      "street": "Bahnhofsplatz",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Limburgerhof",
+      "spotCount": 2,
+      "lat": 49.42404425,
+      "lng": 8.38993145,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1305165517), ODbL"
+    },
+    {
+      "id": "limburgerhof-18428ef9c2",
+      "city": "limburgerhof",
+      "label": "Chenover Straße",
+      "street": "Chenover Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Limburgerhof",
+      "spotCount": 1,
+      "lat": 49.42347815000001,
+      "lng": 8.39389055,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/149397926), ODbL"
+    },
+    {
+      "id": "limburgerhof-88f28b22ad",
+      "city": "limburgerhof",
+      "label": "Chenover Straße 5",
+      "street": "Chenover Straße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Limburgerhof",
+      "spotCount": 2,
+      "lat": 49.4235613,
+      "lng": 8.394714400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35047577), ODbL"
+    },
+    {
+      "id": "limburgerhof-d3f235e986",
+      "city": "limburgerhof",
+      "label": "Speyerer Straße",
+      "street": "Speyerer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Limburgerhof",
+      "spotCount": 2,
+      "lat": 49.424589600000004,
+      "lng": 8.391453550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/131893514), ODbL"
+    }
+  ]
+}

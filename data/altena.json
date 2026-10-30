@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "altena",
+    "name": "Altena",
+    "center": {
+      "lat": 51.301636800000004,
+      "lng": 7.680993600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "altena-80c047cca6",
+      "city": "altena",
+      "label": "Bachstraße",
+      "street": "Bachstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Altena",
+      "spotCount": 1,
+      "lat": 51.301636800000004,
+      "lng": 7.671800450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/282277285), ODbL"
+    },
+    {
+      "id": "altena-81dc18d98d",
+      "city": "altena",
+      "label": "Werdohler Straße 15",
+      "street": "Werdohler Straße",
+      "houseNumber": "15",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Altena",
+      "spotCount": 1,
+      "lat": 51.289052000000005,
+      "lng": 7.680993600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12296475532), ODbL"
+    }
+  ]
+}

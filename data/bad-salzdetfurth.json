@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "bad-salzdetfurth",
+    "name": "Bad Salzdetfurth",
+    "center": {
+      "lat": 52.08061455000001,
+      "lng": 10.0344041
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-salzdetfurth-b4348b9df3",
+      "city": "bad-salzdetfurth",
+      "label": "Hildesheimer Börde Ost",
+      "street": "Hildesheimer Börde Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Salzdetfurth",
+      "spotCount": 2,
+      "lat": 52.1285583,
+      "lng": 10.049492350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/223717781), ODbL"
+    },
+    {
+      "id": "bad-salzdetfurth-5c04e71f62",
+      "city": "bad-salzdetfurth",
+      "label": "Katzhof 2",
+      "street": "Katzhof",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Salzdetfurth",
+      "spotCount": 1,
+      "lat": 52.08061455000001,
+      "lng": 10.0344041,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1200698776), ODbL"
+    },
+    {
+      "id": "bad-salzdetfurth-457e75a72c",
+      "city": "bad-salzdetfurth",
+      "label": "Marktstraße 48",
+      "street": "Marktstraße",
+      "houseNumber": "48",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Salzdetfurth",
+      "spotCount": 1,
+      "lat": 52.0644662,
+      "lng": 10.00837515,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1037715705), ODbL"
+    },
+    {
+      "id": "bad-salzdetfurth-643efecfe7",
+      "city": "bad-salzdetfurth",
+      "label": "Salzdetfurther Straße",
+      "street": "Salzdetfurther Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Salzdetfurth",
+      "spotCount": 15,
+      "lat": 52.0330477,
+      "lng": 10.0034408,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/731950217), ODbL"
+    }
+  ]
+}

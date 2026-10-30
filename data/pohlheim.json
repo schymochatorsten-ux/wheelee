@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "pohlheim",
+    "name": "Pohlheim",
+    "center": {
+      "lat": 50.5361755,
+      "lng": 8.72667805
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pohlheim-58ae66e839",
+      "city": "pohlheim",
+      "label": "Am Obertor",
+      "street": "Am Obertor",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pohlheim",
+      "spotCount": 1,
+      "lat": 50.507745,
+      "lng": 8.72922035,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1426733403), ODbL"
+    },
+    {
+      "id": "pohlheim-0fb5d053b1",
+      "city": "pohlheim",
+      "label": "Am Schwimmbad",
+      "street": "Am Schwimmbad",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pohlheim",
+      "spotCount": 3,
+      "lat": 50.5442101,
+      "lng": 8.72667805,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/38737700), ODbL"
+    },
+    {
+      "id": "pohlheim-a382651d76",
+      "city": "pohlheim",
+      "label": "Brunnenweg",
+      "street": "Brunnenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pohlheim",
+      "spotCount": 1,
+      "lat": 50.5361755,
+      "lng": 8.71762045,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/350310690), ODbL"
+    }
+  ]
+}

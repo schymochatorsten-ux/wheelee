@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "erbach",
+    "name": "Erbach",
+    "center": {
+      "lat": 48.32629345,
+      "lng": 9.898470150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "erbach-7f5cab360a",
+      "city": "erbach",
+      "label": "Heinrich-Hammer-Straße",
+      "street": "Heinrich-Hammer-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Erbach",
+      "spotCount": 1,
+      "lat": 48.32629345,
+      "lng": 9.898470150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/239313840), ODbL"
+    }
+  ]
+}

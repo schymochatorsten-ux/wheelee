@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "egelsbach",
+    "name": "Egelsbach",
+    "center": {
+      "lat": 49.96600835,
+      "lng": 8.6642452
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "egelsbach-9a4f590e49",
+      "city": "egelsbach",
+      "label": "Freiherr-vom-Stein-Straße 13",
+      "street": "Freiherr-vom-Stein-Straße",
+      "houseNumber": "13",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Egelsbach",
+      "spotCount": 2,
+      "lat": 49.96500625,
+      "lng": 8.6642452,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1535831059), ODbL"
+    },
+    {
+      "id": "egelsbach-b512db6550",
+      "city": "egelsbach",
+      "label": "Kurt-Schumacher-Ring",
+      "street": "Kurt-Schumacher-Ring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Egelsbach",
+      "spotCount": 1,
+      "lat": 49.9609483,
+      "lng": 8.6707087,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/30418211), ODbL"
+    },
+    {
+      "id": "egelsbach-8555279e5d",
+      "city": "egelsbach",
+      "label": "Rheinstraße 72",
+      "street": "Rheinstraße",
+      "houseNumber": "72",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Egelsbach",
+      "spotCount": 1,
+      "lat": 49.96796165000001,
+      "lng": 8.663241550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1338038534), ODbL"
+    },
+    {
+      "id": "egelsbach-04ca97c718",
+      "city": "egelsbach",
+      "label": "Wilhelm-Leuschner-Schule",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Egelsbach",
+      "spotCount": 2,
+      "lat": 49.96600835,
+      "lng": 8.66291035,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/191101643), ODbL"
+    }
+  ]
+}

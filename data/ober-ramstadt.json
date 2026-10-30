@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "ober-ramstadt",
+    "name": "Ober-Ramstadt",
+    "center": {
+      "lat": 49.827761300000006,
+      "lng": 8.74658465
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ober-ramstadt-a6ce4a332e",
+      "city": "ober-ramstadt",
+      "label": "Am Kreuzer",
+      "street": "Am Kreuzer",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ober-Ramstadt",
+      "spotCount": 3,
+      "lat": 49.79430235,
+      "lng": 8.7374297,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/103026515), ODbL"
+    },
+    {
+      "id": "ober-ramstadt-e80025d002",
+      "city": "ober-ramstadt",
+      "label": "Hammergasse 27",
+      "street": "Hammergasse",
+      "houseNumber": "27",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ober-Ramstadt",
+      "spotCount": 2,
+      "lat": 49.827224150000006,
+      "lng": 8.74658465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1161635217), ODbL"
+    },
+    {
+      "id": "ober-ramstadt-6d0595c1ce",
+      "city": "ober-ramstadt",
+      "label": "Hammergasse 7",
+      "street": "Hammergasse",
+      "houseNumber": "7",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ober-Ramstadt",
+      "spotCount": 1,
+      "lat": 49.827761300000006,
+      "lng": 8.746589,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1161635921), ODbL"
+    },
+    {
+      "id": "ober-ramstadt-257eb77499",
+      "city": "ober-ramstadt",
+      "label": "Roßdörfer Straße",
+      "street": "Roßdörfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ober-Ramstadt",
+      "spotCount": 1,
+      "lat": 49.83309175000001,
+      "lng": 8.736515400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/732086496), ODbL"
+    }
+  ]
+}

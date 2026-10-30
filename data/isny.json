@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "isny",
+    "name": "Isny im Allgäu",
+    "center": {
+      "lat": 47.69452985,
+      "lng": 10.04084425
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "isny-f83cbac89a",
+      "city": "isny",
+      "label": "Rainstraße 11",
+      "street": "Rainstraße",
+      "houseNumber": "11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Isny im Allgäu",
+      "spotCount": 1,
+      "lat": 47.692897450000004,
+      "lng": 10.036061,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/386635480), ODbL"
+    },
+    {
+      "id": "isny-2d6263ff6d",
+      "city": "isny",
+      "label": "Untere Stadtmauer",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Isny im Allgäu",
+      "spotCount": 1,
+      "lat": 47.69452985,
+      "lng": 10.04084425,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/310283270), ODbL"
+    }
+  ]
+}

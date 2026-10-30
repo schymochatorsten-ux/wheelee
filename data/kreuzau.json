@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "kreuzau",
+    "name": "Kreuzau",
+    "center": {
+      "lat": 50.74574255,
+      "lng": 6.4866479
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kreuzau-567f3d7ccd",
+      "city": "kreuzau",
+      "label": "Am Wassergarten",
+      "street": "Am Wassergarten",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Sa 06:00-20:00; PH off",
+      "district": "Kreuzau",
+      "spotCount": 2,
+      "lat": 50.74448995,
+      "lng": 6.485655250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/171600076), ODbL"
+    },
+    {
+      "id": "kreuzau-05e673fb71",
+      "city": "kreuzau",
+      "label": "Behindertenparkplatz Kreuzau",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kreuzau",
+      "spotCount": 1,
+      "lat": 50.73902505,
+      "lng": 6.51795505,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31313632), ODbL"
+    },
+    {
+      "id": "kreuzau-bf6d46cc1e",
+      "city": "kreuzau",
+      "label": "Brückenweg",
+      "street": "Brückenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kreuzau",
+      "spotCount": 1,
+      "lat": 50.727179500000005,
+      "lng": 6.46071845,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/329014942), ODbL"
+    },
+    {
+      "id": "kreuzau-9da44d7c3b",
+      "city": "kreuzau",
+      "label": "Flemingstraße",
+      "street": "Flemingstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kreuzau",
+      "spotCount": 2,
+      "lat": 50.7487294,
+      "lng": 6.4899419,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/49215839), ODbL"
+    },
+    {
+      "id": "kreuzau-4c221f9f6a",
+      "city": "kreuzau",
+      "label": "Hauptstraße 12",
+      "street": "Hauptstraße",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Kreuzau",
+      "spotCount": 2,
+      "lat": 50.74880245,
+      "lng": 6.4866479,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/39213200), ODbL"
+    },
+    {
+      "id": "kreuzau-1cd9a48767",
+      "city": "kreuzau",
+      "label": "Rathaus",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kreuzau",
+      "spotCount": 1,
+      "lat": 50.7512703,
+      "lng": 6.486625900000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1521308956), ODbL"
+    },
+    {
+      "id": "kreuzau-91f4675da0",
+      "city": "kreuzau",
+      "label": "Teichstraße",
+      "street": "Teichstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kreuzau",
+      "spotCount": 1,
+      "lat": 50.74574255,
+      "lng": 6.4873998,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/404997283), ODbL"
+    }
+  ]
+}

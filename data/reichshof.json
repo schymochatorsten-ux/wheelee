@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "reichshof",
+    "name": "Reichshof",
+    "center": {
+      "lat": 50.9638141,
+      "lng": 7.7541186
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "reichshof-6be75c81de",
+      "city": "reichshof",
+      "label": "Otto-Hahn-Straße",
+      "street": "Otto-Hahn-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Reichshof",
+      "spotCount": 1,
+      "lat": 50.9638141,
+      "lng": 7.647522400000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9039974017), ODbL"
+    },
+    {
+      "id": "reichshof-88772749ff",
+      "city": "reichshof",
+      "label": "Wildberger Straße 79",
+      "street": "Wildberger Straße",
+      "houseNumber": "79",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Reichshof",
+      "spotCount": 1,
+      "lat": 50.934699450000004,
+      "lng": 7.7541186,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1459792581), ODbL"
+    }
+  ]
+}

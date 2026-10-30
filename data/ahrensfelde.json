@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "ahrensfelde",
+    "name": "Ahrensfelde",
+    "center": {
+      "lat": 52.54848255,
+      "lng": 13.588866750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ahrensfelde-2fbff9a72e",
+      "city": "ahrensfelde",
+      "label": "Teupitzer Straße 46",
+      "street": "Teupitzer Straße",
+      "houseNumber": "46",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ahrensfelde",
+      "spotCount": 1,
+      "lat": 52.5464535,
+      "lng": 13.599822500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1391320866), ODbL"
+    },
+    {
+      "id": "ahrensfelde-c0432fba9a",
+      "city": "ahrensfelde",
+      "label": "Zossener Straße 11",
+      "street": "Zossener Straße",
+      "houseNumber": "11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ahrensfelde",
+      "spotCount": 1,
+      "lat": 52.54848255,
+      "lng": 13.588489150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1088123826), ODbL"
+    },
+    {
+      "id": "ahrensfelde-7b39fc38bd",
+      "city": "ahrensfelde",
+      "label": "Zossener Straße 7",
+      "street": "Zossener Straße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ahrensfelde",
+      "spotCount": 1,
+      "lat": 52.54843460000001,
+      "lng": 13.588866750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1088123829), ODbL"
+    },
+    {
+      "id": "ahrensfelde-67dadbbc3d",
+      "city": "ahrensfelde",
+      "label": "Zossener Straße 7",
+      "street": "Zossener Straße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ahrensfelde",
+      "spotCount": 1,
+      "lat": 52.548525100000006,
+      "lng": 13.58885365,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1417155865), ODbL"
+    }
+  ]
+}

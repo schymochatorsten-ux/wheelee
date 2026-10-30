@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "huenxe",
+    "name": "Hünxe",
+    "center": {
+      "lat": 51.63655545,
+      "lng": 6.747151650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "huenxe-4e0bb52cb3",
+      "city": "huenxe",
+      "label": "Junkers Feld",
+      "street": "Junkers Feld",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hünxe",
+      "spotCount": 2,
+      "lat": 51.64245985,
+      "lng": 6.758574150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/33002347), ODbL"
+    },
+    {
+      "id": "huenxe-6c559b0548",
+      "city": "huenxe",
+      "label": "Rasthof Hünxe Ost",
+      "street": "Rasthof Hünxe Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hünxe",
+      "spotCount": 4,
+      "lat": 51.63655545,
+      "lng": 6.747151650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1332869719), ODbL"
+    },
+    {
+      "id": "huenxe-24a468dca0",
+      "city": "huenxe",
+      "label": "Rasthof Hünxe West",
+      "street": "Rasthof Hünxe West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hünxe",
+      "spotCount": 1,
+      "lat": 51.636073200000006,
+      "lng": 6.74507895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/83030569), ODbL"
+    },
+    {
+      "id": "huenxe-81b7127b88",
+      "city": "huenxe",
+      "label": "Rasthof Hünxe West",
+      "street": "Rasthof Hünxe West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hünxe",
+      "spotCount": 1,
+      "lat": 51.635195100000004,
+      "lng": 6.7454748,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/371470544), ODbL"
+    }
+  ]
+}

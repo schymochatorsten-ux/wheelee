@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "rielasingen-worblingen",
+    "name": "Rielasingen-Worblingen",
+    "center": {
+      "lat": 47.7271351,
+      "lng": 8.85097725
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rielasingen-worblingen-4a1de48d55",
+      "city": "rielasingen-worblingen",
+      "label": "Bohlinger Straße",
+      "street": "Bohlinger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rielasingen-Worblingen",
+      "spotCount": 2,
+      "lat": 47.7271351,
+      "lng": 8.8616984,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/104153486), ODbL"
+    },
+    {
+      "id": "rielasingen-worblingen-2ccbe8230b",
+      "city": "rielasingen-worblingen",
+      "label": "Doktor-Fritz-Guth-Straße",
+      "street": "Doktor-Fritz-Guth-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rielasingen-Worblingen",
+      "spotCount": 4,
+      "lat": 47.72632045,
+      "lng": 8.8399409,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/822997455), ODbL"
+    },
+    {
+      "id": "rielasingen-worblingen-153b0b1153",
+      "city": "rielasingen-worblingen",
+      "label": "Friedhofsbesucher",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rielasingen-Worblingen",
+      "spotCount": 2,
+      "lat": 47.72495775,
+      "lng": 8.85097725,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/110011110), ODbL"
+    },
+    {
+      "id": "rielasingen-worblingen-c9a2dd6ace",
+      "city": "rielasingen-worblingen",
+      "label": "Friedhofstraße",
+      "street": "Friedhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rielasingen-Worblingen",
+      "spotCount": 2,
+      "lat": 47.7388388,
+      "lng": 8.8331012,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/821931327), ODbL"
+    },
+    {
+      "id": "rielasingen-worblingen-b58e39ccd5",
+      "city": "rielasingen-worblingen",
+      "label": "Glockengasse 1",
+      "street": "Glockengasse",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rielasingen-Worblingen",
+      "spotCount": 1,
+      "lat": 47.724592400000006,
+      "lng": 8.862439700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8722975446), ODbL"
+    },
+    {
+      "id": "rielasingen-worblingen-610319fe16",
+      "city": "rielasingen-worblingen",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rielasingen-Worblingen",
+      "spotCount": 1,
+      "lat": 47.734114500000004,
+      "lng": 8.837119399999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/209399788), ODbL"
+    }
+  ]
+}

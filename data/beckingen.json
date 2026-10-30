@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "beckingen",
+    "name": "Beckingen",
+    "center": {
+      "lat": 49.3927097,
+      "lng": 6.70100785
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "beckingen-3429bcfdbd",
+      "city": "beckingen",
+      "label": "Parkstraße 1",
+      "street": "Parkstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Beckingen",
+      "spotCount": 1,
+      "lat": 49.3927097,
+      "lng": 6.70100785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1435511796), ODbL"
+    }
+  ]
+}

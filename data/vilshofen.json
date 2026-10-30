@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "vilshofen",
+    "name": "Vilshofen an der Donau",
+    "center": {
+      "lat": 48.63884345,
+      "lng": 13.17804495
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "vilshofen-dfbeb61716",
+      "city": "vilshofen",
+      "label": "Donaupromenade",
+      "street": "Donaupromenade",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vilshofen an der Donau",
+      "spotCount": 1,
+      "lat": 48.63884345,
+      "lng": 13.17804495,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1318098514), ODbL"
+    },
+    {
+      "id": "vilshofen-5399c31fb5",
+      "city": "vilshofen",
+      "label": "Haarbachweg",
+      "street": "Haarbachweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vilshofen an der Donau",
+      "spotCount": 1,
+      "lat": 48.6607228,
+      "lng": 13.108637900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/334816483), ODbL"
+    },
+    {
+      "id": "vilshofen-2a015841c5",
+      "city": "vilshofen",
+      "label": "Kapuzinerstraße",
+      "street": "Kapuzinerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vilshofen an der Donau",
+      "spotCount": 1,
+      "lat": 48.63494705,
+      "lng": 13.1837497,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/965686969), ODbL"
+    },
+    {
+      "id": "vilshofen-1fa2a31b54",
+      "city": "vilshofen",
+      "label": "Kapuzinerstraße",
+      "street": "Kapuzinerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vilshofen an der Donau",
+      "spotCount": 2,
+      "lat": 48.6389832,
+      "lng": 13.176320100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1015739073), ODbL"
+    },
+    {
+      "id": "vilshofen-c9b7dd8a63",
+      "city": "vilshofen",
+      "label": "Krankenhausstraße",
+      "street": "Krankenhausstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vilshofen an der Donau",
+      "spotCount": 3,
+      "lat": 48.629411250000004,
+      "lng": 13.19010105,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1206109959), ODbL"
+    },
+    {
+      "id": "vilshofen-256e3a4388",
+      "city": "vilshofen",
+      "label": "Schweiklbergstraße",
+      "street": "Schweiklbergstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vilshofen an der Donau",
+      "spotCount": 2,
+      "lat": 48.6296351,
+      "lng": 13.1754851,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1408914668), ODbL"
+    }
+  ]
+}

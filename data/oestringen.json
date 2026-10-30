@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "oestringen",
+    "name": "Östringen",
+    "center": {
+      "lat": 49.179453,
+      "lng": 8.736876650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oestringen-2946796d91",
+      "city": "oestringen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Östringen",
+      "spotCount": 2,
+      "lat": 49.179453,
+      "lng": 8.7448343,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25767594), ODbL"
+    },
+    {
+      "id": "oestringen-baef2739a5",
+      "city": "oestringen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Östringen",
+      "spotCount": 2,
+      "lat": 49.179316650000004,
+      "lng": 8.7452573,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/261144090), ODbL"
+    },
+    {
+      "id": "oestringen-5bedbb0182",
+      "city": "oestringen",
+      "label": "Behindertenparkplatz Östringen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Östringen",
+      "spotCount": 1,
+      "lat": 49.169012900000006,
+      "lng": 8.7364184,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1777430841), ODbL"
+    },
+    {
+      "id": "oestringen-edf14903d5",
+      "city": "oestringen",
+      "label": "Brühlstraße",
+      "street": "Brühlstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Östringen",
+      "spotCount": 1,
+      "lat": 49.18221905,
+      "lng": 8.736763500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1412305262), ODbL"
+    },
+    {
+      "id": "oestringen-840661fa27",
+      "city": "oestringen",
+      "label": "Pendlerparkplatz Odenheim West",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Östringen",
+      "spotCount": 1,
+      "lat": 49.18225,
+      "lng": 8.736876650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/516981348), ODbL"
+    }
+  ]
+}

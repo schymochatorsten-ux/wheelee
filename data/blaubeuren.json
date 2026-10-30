@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "blaubeuren",
+    "name": "Blaubeuren",
+    "center": {
+      "lat": 48.40391135,
+      "lng": 9.7925328
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "blaubeuren-0f37f38dbc",
+      "city": "blaubeuren",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Blaubeuren",
+      "spotCount": 1,
+      "lat": 48.40391135,
+      "lng": 9.7925328,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1420189574), ODbL"
+    },
+    {
+      "id": "blaubeuren-35e4b47565",
+      "city": "blaubeuren",
+      "label": "P+R",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Blaubeuren",
+      "spotCount": 1,
+      "lat": 48.40392795,
+      "lng": 9.793155500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/775935185), ODbL"
+    },
+    {
+      "id": "blaubeuren-5135e23f86",
+      "city": "blaubeuren",
+      "label": "Unter dem Kühnenbuch",
+      "street": "Unter dem Kühnenbuch",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Blaubeuren",
+      "spotCount": 1,
+      "lat": 48.40210555,
+      "lng": 9.79091595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1066483771), ODbL"
+    },
+    {
+      "id": "blaubeuren-64f52d6bd1",
+      "city": "blaubeuren",
+      "label": "Unter dem Kühnenbuch",
+      "street": "Unter dem Kühnenbuch",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Blaubeuren",
+      "spotCount": 1,
+      "lat": 48.402079300000004,
+      "lng": 9.7908665,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1066483772), ODbL"
+    }
+  ]
+}

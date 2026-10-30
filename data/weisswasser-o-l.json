@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "weisswasser-o-l",
+    "name": "Weißwasser/O.L.",
+    "center": {
+      "lat": 51.4986815,
+      "lng": 14.637443400000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "weisswasser-o-l-f77e99a044",
+      "city": "weisswasser-o-l",
+      "label": "George-Beck-Straße",
+      "street": "George-Beck-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weißwasser/O.L.",
+      "spotCount": 1,
+      "lat": 51.4986815,
+      "lng": 14.62155155,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/902060209), ODbL"
+    },
+    {
+      "id": "weisswasser-o-l-b953e0094f",
+      "city": "weisswasser-o-l",
+      "label": "Professor-Wagenfeld-Ring",
+      "street": "Professor-Wagenfeld-Ring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weißwasser/O.L.",
+      "spotCount": 5,
+      "lat": 51.49458415,
+      "lng": 14.637443400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/796586881), ODbL"
+    }
+  ]
+}

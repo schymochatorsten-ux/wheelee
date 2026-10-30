@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "buedelsdorf",
+    "name": "Büdelsdorf",
+    "center": {
+      "lat": 54.316687900000005,
+      "lng": 9.666329750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "buedelsdorf-71b770769a",
+      "city": "buedelsdorf",
+      "label": "Zur Bücherei 3",
+      "street": "Zur Bücherei",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Büdelsdorf",
+      "spotCount": 1,
+      "lat": 54.316649600000005,
+      "lng": 9.666329750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1300053206), ODbL"
+    },
+    {
+      "id": "buedelsdorf-ad62a3513d",
+      "city": "buedelsdorf",
+      "label": "Zur Bücherei 3",
+      "street": "Zur Bücherei",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Büdelsdorf",
+      "spotCount": 1,
+      "lat": 54.316687900000005,
+      "lng": 9.666318350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1300053207), ODbL"
+    }
+  ]
+}

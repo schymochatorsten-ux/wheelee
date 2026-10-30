@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "lollar",
+    "name": "Lollar",
+    "center": {
+      "lat": 50.64892145,
+      "lng": 8.707047500000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lollar-f95cc3b247",
+      "city": "lollar",
+      "label": "Bleichstraße",
+      "street": "Bleichstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lollar",
+      "spotCount": 2,
+      "lat": 50.64818100000001,
+      "lng": 8.7050701,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/55365069), ODbL"
+    },
+    {
+      "id": "lollar-3be4216a41",
+      "city": "lollar",
+      "label": "Marburger Straße",
+      "street": "Marburger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lollar",
+      "spotCount": 1,
+      "lat": 50.653289900000004,
+      "lng": 8.707047500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/93737789), ODbL"
+    },
+    {
+      "id": "lollar-05eb0705f6",
+      "city": "lollar",
+      "label": "Mühlgarten",
+      "street": "Mühlgarten",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lollar",
+      "spotCount": 2,
+      "lat": 50.645687300000006,
+      "lng": 8.70131515,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24150339), ODbL"
+    },
+    {
+      "id": "lollar-5d88a305e4",
+      "city": "lollar",
+      "label": "Parkplatz AWO",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lollar",
+      "spotCount": 1,
+      "lat": 50.64892145,
+      "lng": 8.7142911,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/55932082), ODbL"
+    }
+  ]
+}

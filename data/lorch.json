@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "lorch",
+    "name": "Lorch",
+    "center": {
+      "lat": 48.7979138,
+      "lng": 9.69672985
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lorch-e4dc5f0177",
+      "city": "lorch",
+      "label": "Bahnhof Lorch",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Lorch",
+      "spotCount": 2,
+      "lat": 48.7979138,
+      "lng": 9.697281,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32003476), ODbL"
+    },
+    {
+      "id": "lorch-c934ec12d9",
+      "city": "lorch",
+      "label": "Gmünder Straße",
+      "street": "Gmünder Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Lorch",
+      "spotCount": 2,
+      "lat": 48.79756810000001,
+      "lng": 9.6974344,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/253929309), ODbL"
+    },
+    {
+      "id": "lorch-a8bada7b6f",
+      "city": "lorch",
+      "label": "Poststraße",
+      "street": "Poststraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Lorch",
+      "spotCount": 1,
+      "lat": 48.797679550000005,
+      "lng": 9.69667565,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1238546398), ODbL"
+    },
+    {
+      "id": "lorch-81e12c3579",
+      "city": "lorch",
+      "label": "Poststraße",
+      "street": "Poststraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Lorch",
+      "spotCount": 1,
+      "lat": 48.797671050000005,
+      "lng": 9.69672985,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1238546399), ODbL"
+    },
+    {
+      "id": "lorch-b64ae5add7",
+      "city": "lorch",
+      "label": "Wilhelmstraße",
+      "street": "Wilhelmstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Lorch",
+      "spotCount": 1,
+      "lat": 48.7979666,
+      "lng": 9.69647855,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1238546394), ODbL"
+    },
+    {
+      "id": "lorch-8b9b6f9a4c",
+      "city": "lorch",
+      "label": "Wilhelmstraße",
+      "street": "Wilhelmstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Lorch",
+      "spotCount": 1,
+      "lat": 48.79795990000001,
+      "lng": 9.696525150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1238546395), ODbL"
+    }
+  ]
+}

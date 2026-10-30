@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "teutschenthal",
+    "name": "Teutschenthal",
+    "center": {
+      "lat": 51.44994630000001,
+      "lng": 11.80813795
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "teutschenthal-c74d5fcbad",
+      "city": "teutschenthal",
+      "label": "An der Feuerwache",
+      "street": "An der Feuerwache",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Teutschenthal",
+      "spotCount": 2,
+      "lat": 51.458183950000006,
+      "lng": 11.90585045,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/295453263), ODbL"
+    },
+    {
+      "id": "teutschenthal-b57611d25c",
+      "city": "teutschenthal",
+      "label": "Karl-John-Straße",
+      "street": "Karl-John-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Teutschenthal",
+      "spotCount": 2,
+      "lat": 51.44994630000001,
+      "lng": 11.80813795,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/355196982), ODbL"
+    },
+    {
+      "id": "teutschenthal-289b011fc1",
+      "city": "teutschenthal",
+      "label": "Querfurter Platte Nord",
+      "street": "Querfurter Platte Nord",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Teutschenthal",
+      "spotCount": 2,
+      "lat": 51.401580300000006,
+      "lng": 11.719895350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1193766744), ODbL"
+    }
+  ]
+}

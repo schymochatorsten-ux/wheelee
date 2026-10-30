@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bad-camberg",
+    "name": "Bad Camberg",
+    "center": {
+      "lat": 50.29722855,
+      "lng": 8.26209595
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-camberg-9ef52eb5d5",
+      "city": "bad-camberg",
+      "label": "Am Friedhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Camberg",
+      "spotCount": 2,
+      "lat": 50.283783150000005,
+      "lng": 8.28103075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/294791269), ODbL"
+    },
+    {
+      "id": "bad-camberg-16887f2c69",
+      "city": "bad-camberg",
+      "label": "Bahnhofstraße 24",
+      "street": "Bahnhofstraße",
+      "houseNumber": "24",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Camberg",
+      "spotCount": 1,
+      "lat": 50.29722855,
+      "lng": 8.26209595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1561947170), ODbL"
+    },
+    {
+      "id": "bad-camberg-2c77dc2c93",
+      "city": "bad-camberg",
+      "label": "Rastplatz Bad Camberg Ost",
+      "street": "Rastplatz Bad Camberg Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Camberg",
+      "spotCount": 2,
+      "lat": 50.3013422,
+      "lng": 8.2367384,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4237320580), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "kirchseeon",
+    "name": "Kirchseeon",
+    "center": {
+      "lat": 48.07424585,
+      "lng": 11.8866679
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kirchseeon-68bf9c4c3f",
+      "city": "kirchseeon",
+      "label": "Ostring",
+      "street": "Ostring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kirchseeon",
+      "spotCount": 1,
+      "lat": 48.081274050000005,
+      "lng": 11.8640261,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/840070886), ODbL"
+    },
+    {
+      "id": "kirchseeon-01e548505c",
+      "city": "kirchseeon",
+      "label": "Rathausstraße 1",
+      "street": "Rathausstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kirchseeon",
+      "spotCount": 2,
+      "lat": 48.0742331,
+      "lng": 11.88665965,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1214799694), ODbL"
+    },
+    {
+      "id": "kirchseeon-b24a765603",
+      "city": "kirchseeon",
+      "label": "Rathausstraße 1",
+      "street": "Rathausstraße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kirchseeon",
+      "spotCount": 1,
+      "lat": 48.07424585,
+      "lng": 11.8866679,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1214799695), ODbL"
+    },
+    {
+      "id": "kirchseeon-759b6c364d",
+      "city": "kirchseeon",
+      "label": "Rathausstraße 1",
+      "street": "Rathausstraße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kirchseeon",
+      "spotCount": 1,
+      "lat": 48.07427495,
+      "lng": 11.88668835,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1214799696), ODbL"
+    },
+    {
+      "id": "kirchseeon-8650429300",
+      "city": "kirchseeon",
+      "label": "Wasserburger Straße 1",
+      "street": "Wasserburger Straße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kirchseeon",
+      "spotCount": 2,
+      "lat": 48.071132950000006,
+      "lng": 11.8880593,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1275043992), ODbL"
+    }
+  ]
+}

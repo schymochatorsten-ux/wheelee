@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "lohr-a-main",
+    "name": "Lohr a.Main",
+    "center": {
+      "lat": 49.99358855,
+      "lng": 9.570158200000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lohr-a-main-fc5b6a3c4f",
+      "city": "lohr-a-main",
+      "label": "Ignatius-Taschner-Straße 5",
+      "street": "Ignatius-Taschner-Straße",
+      "houseNumber": "5",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lohr a.Main",
+      "spotCount": 1,
+      "lat": 49.99352315,
+      "lng": 9.570079200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1491519766), ODbL"
+    },
+    {
+      "id": "lohr-a-main-0448d16ee9",
+      "city": "lohr-a-main",
+      "label": "Ignatius-Taschner-Straße 5",
+      "street": "Ignatius-Taschner-Straße",
+      "houseNumber": "5",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lohr a.Main",
+      "spotCount": 1,
+      "lat": 49.99358855,
+      "lng": 9.569973050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1491519767), ODbL"
+    },
+    {
+      "id": "lohr-a-main-a17d33706c",
+      "city": "lohr-a-main",
+      "label": "Jahnstraße",
+      "street": "Jahnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lohr a.Main",
+      "spotCount": 2,
+      "lat": 49.997120800000005,
+      "lng": 9.57827335,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/54519199), ODbL"
+    },
+    {
+      "id": "lohr-a-main-2d0cdef56b",
+      "city": "lohr-a-main",
+      "label": "Parkplatz Am Stadtbahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lohr a.Main",
+      "spotCount": 2,
+      "lat": 49.9933906,
+      "lng": 9.570158200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/39223219), ODbL"
+    },
+    {
+      "id": "lohr-a-main-3f2c5feb16",
+      "city": "lohr-a-main",
+      "label": "Stadthalle / Main-Spessart-Bad",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Lohr a.Main",
+      "spotCount": 9,
+      "lat": 49.99617495,
+      "lng": 9.579255850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/30864449), ODbL"
+    }
+  ]
+}

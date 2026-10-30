@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "mengen",
+    "name": "Mengen",
+    "center": {
+      "lat": 48.052867250000006,
+      "lng": 9.3347558
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mengen-ed0d91b98c",
+      "city": "mengen",
+      "label": "Dammstraße",
+      "street": "Dammstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mengen",
+      "spotCount": 2,
+      "lat": 48.052867250000006,
+      "lng": 9.3347558,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/185658557), ODbL"
+    }
+  ]
+}

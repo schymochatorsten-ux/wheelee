@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "steinen",
+    "name": "Steinen",
+    "center": {
+      "lat": 47.641627,
+      "lng": 7.7407518500000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "steinen-7df2da71ac",
+      "city": "steinen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Steinen",
+      "spotCount": 2,
+      "lat": 47.641459100000006,
+      "lng": 7.7400222,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/620608933), ODbL"
+    },
+    {
+      "id": "steinen-353eac5d83",
+      "city": "steinen",
+      "label": "Bahnhofstraße 4",
+      "street": "Bahnhofstraße",
+      "houseNumber": "4",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Steinen",
+      "spotCount": 2,
+      "lat": 47.641627,
+      "lng": 7.7407518500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1414907568), ODbL"
+    }
+  ]
+}

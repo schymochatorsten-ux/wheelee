@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "oelsnitz-vogtl",
+    "name": "Oelsnitz/Vogtl.",
+    "center": {
+      "lat": 50.427117300000006,
+      "lng": 12.098102700000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oelsnitz-vogtl-e973e361ff",
+      "city": "oelsnitz-vogtl",
+      "label": "Zur Staumauer",
+      "street": "Zur Staumauer",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oelsnitz/Vogtl.",
+      "spotCount": 1,
+      "lat": 50.427117300000006,
+      "lng": 12.098102700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/237779892), ODbL"
+    }
+  ]
+}

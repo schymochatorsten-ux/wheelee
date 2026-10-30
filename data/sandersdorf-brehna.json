@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "sandersdorf-brehna",
+    "name": "Sandersdorf-Brehna",
+    "center": {
+      "lat": 51.63011435,
+      "lng": 12.264565750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sandersdorf-brehna-b13ade5c8d",
+      "city": "sandersdorf-brehna",
+      "label": "PKW",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sandersdorf-Brehna",
+      "spotCount": 2,
+      "lat": 51.63659115,
+      "lng": 12.2002524,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/338091180), ODbL"
+    },
+    {
+      "id": "sandersdorf-brehna-2376c41843",
+      "city": "sandersdorf-brehna",
+      "label": "Straße der Aktivisten",
+      "street": "Straße der Aktivisten",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sandersdorf-Brehna",
+      "spotCount": 2,
+      "lat": 51.629871300000005,
+      "lng": 12.2631479,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31427907), ODbL"
+    },
+    {
+      "id": "sandersdorf-brehna-5e2f5a4955",
+      "city": "sandersdorf-brehna",
+      "label": "Straße der Bauarbeiter 2",
+      "street": "Straße der Bauarbeiter",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sandersdorf-Brehna",
+      "spotCount": 2,
+      "lat": 51.63011435,
+      "lng": 12.264565750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31427910), ODbL"
+    },
+    {
+      "id": "sandersdorf-brehna-c016dd7a58",
+      "city": "sandersdorf-brehna",
+      "label": "Straße der Neuen Zeit",
+      "street": "Straße der Neuen Zeit",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sandersdorf-Brehna",
+      "spotCount": 2,
+      "lat": 51.630046050000004,
+      "lng": 12.265473100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/873073105), ODbL"
+    }
+  ]
+}

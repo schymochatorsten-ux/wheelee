@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "rudersberg",
+    "name": "Rudersberg",
+    "center": {
+      "lat": 48.87314305,
+      "lng": 9.53045435
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rudersberg-a1a47995de",
+      "city": "rudersberg",
+      "label": "Bahnhofplatz 12",
+      "street": "Bahnhofplatz",
+      "houseNumber": "12",
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Rudersberg",
+      "spotCount": 1,
+      "lat": 48.8730346,
+      "lng": 9.52658665,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1551962382), ODbL"
+    },
+    {
+      "id": "rudersberg-f00b358b21",
+      "city": "rudersberg",
+      "label": "Bahnhofplatz 12",
+      "street": "Bahnhofplatz",
+      "houseNumber": "12",
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Rudersberg",
+      "spotCount": 1,
+      "lat": 48.873003000000004,
+      "lng": 9.52658295,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1551962383), ODbL"
+    },
+    {
+      "id": "rudersberg-cf306f0bbf",
+      "city": "rudersberg",
+      "label": "Bahnhofplatz 5",
+      "street": "Bahnhofplatz",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rudersberg",
+      "spotCount": 2,
+      "lat": 48.87314305,
+      "lng": 9.5265977,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/319554880), ODbL"
+    },
+    {
+      "id": "rudersberg-0876dae71c",
+      "city": "rudersberg",
+      "label": "Postplatz",
+      "street": "Postplatz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rudersberg",
+      "spotCount": 2,
+      "lat": 48.8821949,
+      "lng": 9.53045435,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1427276830), ODbL"
+    },
+    {
+      "id": "rudersberg-80f883dd74",
+      "city": "rudersberg",
+      "label": "Welzheimer Straße",
+      "street": "Welzheimer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rudersberg",
+      "spotCount": 1,
+      "lat": 48.887201850000004,
+      "lng": 9.533269400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/583537837), ODbL"
+    },
+    {
+      "id": "rudersberg-07c60d8702",
+      "city": "rudersberg",
+      "label": "Zum Bahnhof",
+      "street": "Zum Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Rudersberg",
+      "spotCount": 2,
+      "lat": 48.8618189,
+      "lng": 9.535861050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/179193251), ODbL"
+    }
+  ]
+}

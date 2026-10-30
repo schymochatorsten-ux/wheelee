@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "ludwigslust",
+    "name": "Ludwigslust",
+    "center": {
+      "lat": 53.330077,
+      "lng": 11.4969157
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ludwigslust-d2fc45f947",
+      "city": "ludwigslust",
+      "label": "An der Bleiche",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ludwigslust",
+      "spotCount": 2,
+      "lat": 53.32557825000001,
+      "lng": 11.492838200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35285064), ODbL"
+    },
+    {
+      "id": "ludwigslust-809da6233a",
+      "city": "ludwigslust",
+      "label": "Friedrich-Naumann-Allee",
+      "street": "Friedrich-Naumann-Allee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ludwigslust",
+      "spotCount": 1,
+      "lat": 53.330077,
+      "lng": 11.4969157,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/932051984), ODbL"
+    },
+    {
+      "id": "ludwigslust-cfb131b00d",
+      "city": "ludwigslust",
+      "label": "Garnisonsstraße",
+      "street": "Garnisonsstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Ludwigslust",
+      "spotCount": 2,
+      "lat": 53.32078605,
+      "lng": 11.501595550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/436665125), ODbL"
+    },
+    {
+      "id": "ludwigslust-b3d649a033",
+      "city": "ludwigslust",
+      "label": "Klenower Straße 59",
+      "street": "Klenower Straße",
+      "houseNumber": "59",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ludwigslust",
+      "spotCount": 1,
+      "lat": 53.33305425,
+      "lng": 11.487175750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1059324004), ODbL"
+    },
+    {
+      "id": "ludwigslust-c91fcea6af",
+      "city": "ludwigslust",
+      "label": "Lindencenter",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ludwigslust",
+      "spotCount": 1,
+      "lat": 53.323712050000005,
+      "lng": 11.5014993,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/173282020), ODbL"
+    },
+    {
+      "id": "ludwigslust-5cd7a44fb9",
+      "city": "ludwigslust",
+      "label": "Rudolf-Tarnow-Straße",
+      "street": "Rudolf-Tarnow-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ludwigslust",
+      "spotCount": 5,
+      "lat": 53.335070900000005,
+      "lng": 11.492223450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/117958460), ODbL"
+    }
+  ]
+}

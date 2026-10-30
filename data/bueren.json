@@ -14,9 +14,9 @@
     {
       "id": "bueren-a0196fc5f0",
       "city": "bueren",
-      "label": "Behindertenparkplatz Büren",
-      "street": null,
-      "houseNumber": null,
+      "label": "Burgwall 8",
+      "street": "Burgwall",
+      "houseNumber": "8",
       "note": null,
       "timeRestriction": null,
       "district": "Büren",
@@ -29,8 +29,8 @@
     {
       "id": "bueren-42134ad24d",
       "city": "bueren",
-      "label": "Behindertenparkplatz Büren",
-      "street": null,
+      "label": "Johannesweg",
+      "street": "Johannesweg",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": "24/7",

@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "bassum",
+    "name": "Bassum",
+    "center": {
+      "lat": 52.8501703,
+      "lng": 8.72902195
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bassum-f043ee784f",
+      "city": "bassum",
+      "label": "Am Kirchhof",
+      "street": "Am Kirchhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bassum",
+      "spotCount": 1,
+      "lat": 52.844577900000004,
+      "lng": 8.724533300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13195881533), ODbL"
+    },
+    {
+      "id": "bassum-f85d1aacb7",
+      "city": "bassum",
+      "label": "Am Petermoor",
+      "street": "Am Petermoor",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bassum",
+      "spotCount": 2,
+      "lat": 52.8557861,
+      "lng": 8.73822825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/982254911), ODbL"
+    },
+    {
+      "id": "bassum-af8913f0c7",
+      "city": "bassum",
+      "label": "Bassumer Straße",
+      "street": "Bassumer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bassum",
+      "spotCount": 2,
+      "lat": 52.8780842,
+      "lng": 8.777005299999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1149607046), ODbL"
+    },
+    {
+      "id": "bassum-e688266d4e",
+      "city": "bassum",
+      "label": "Marie-Hackfeld-Straße",
+      "street": "Marie-Hackfeld-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bassum",
+      "spotCount": 3,
+      "lat": 52.8448648,
+      "lng": 8.72910465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/533233207), ODbL"
+    },
+    {
+      "id": "bassum-4ee17f9b38",
+      "city": "bassum",
+      "label": "Marie-Hackfeld-Straße 8",
+      "street": "Marie-Hackfeld-Straße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bassum",
+      "spotCount": 2,
+      "lat": 52.844642900000004,
+      "lng": 8.72902195,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/533233204), ODbL"
+    },
+    {
+      "id": "bassum-6d0fa2946b",
+      "city": "bassum",
+      "label": "Syker Straße",
+      "street": "Syker Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bassum",
+      "spotCount": 1,
+      "lat": 52.850661,
+      "lng": 8.7288066,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1303189149), ODbL"
+    },
+    {
+      "id": "bassum-5113b8fa21",
+      "city": "bassum",
+      "label": "Syker Straße 5",
+      "street": "Syker Straße",
+      "houseNumber": "5",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bassum",
+      "spotCount": 1,
+      "lat": 52.8501703,
+      "lng": 8.7278308,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1303190288), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "burgstaedt",
+    "name": "Burgstädt",
+    "center": {
+      "lat": 50.91656055,
+      "lng": 12.8127483
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "burgstaedt-34223f9438",
+      "city": "burgstaedt",
+      "label": "Am Stadion",
+      "street": "Am Stadion",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Burgstädt",
+      "spotCount": 1,
+      "lat": 50.919610250000005,
+      "lng": 12.8225643,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1511641662), ODbL"
+    },
+    {
+      "id": "burgstaedt-c44cb52a65",
+      "city": "burgstaedt",
+      "label": "August-Bebel-Straße 7",
+      "street": "August-Bebel-Straße",
+      "houseNumber": "7",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Burgstädt",
+      "spotCount": 1,
+      "lat": 50.919598,
+      "lng": 12.8094923,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9423174502), ODbL"
+    },
+    {
+      "id": "burgstaedt-e666d30190",
+      "city": "burgstaedt",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Burgstädt",
+      "spotCount": 1,
+      "lat": 50.916432900000004,
+      "lng": 12.8126838,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8429253656), ODbL"
+    },
+    {
+      "id": "burgstaedt-fe90778d78",
+      "city": "burgstaedt",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burgstädt",
+      "spotCount": 2,
+      "lat": 50.91656055,
+      "lng": 12.8127483,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/640927692), ODbL"
+    },
+    {
+      "id": "burgstaedt-5be5161513",
+      "city": "burgstaedt",
+      "label": "Mittweidaer Straße",
+      "street": "Mittweidaer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burgstädt",
+      "spotCount": 1,
+      "lat": 50.91632440000001,
+      "lng": 12.8170999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/542927504), ODbL"
+    }
+  ]
+}

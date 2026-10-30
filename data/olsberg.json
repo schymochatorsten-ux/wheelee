@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "olsberg",
+    "name": "Olsberg",
+    "center": {
+      "lat": 51.3613431,
+      "lng": 8.479639250000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "olsberg-3109b1e87c",
+      "city": "olsberg",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Olsberg",
+      "spotCount": 3,
+      "lat": 51.35786245,
+      "lng": 8.476251950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/467776255), ODbL"
+    },
+    {
+      "id": "olsberg-946d56062a",
+      "city": "olsberg",
+      "label": "Stadionstraße",
+      "street": "Stadionstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Olsberg",
+      "spotCount": 2,
+      "lat": 51.3613431,
+      "lng": 8.479639250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/240758069), ODbL"
+    }
+  ]
+}

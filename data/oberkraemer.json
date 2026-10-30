@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "oberkraemer",
+    "name": "Oberkrämer",
+    "center": {
+      "lat": 52.7054442,
+      "lng": 13.06747765
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberkraemer-b4ad371bd6",
+      "city": "oberkraemer",
+      "label": "Bahnhof Vehlefanz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberkrämer",
+      "spotCount": 5,
+      "lat": 52.722352,
+      "lng": 13.114006750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/201762334), ODbL"
+    },
+    {
+      "id": "oberkraemer-0fed1530b1",
+      "city": "oberkraemer",
+      "label": "Krämer Forst",
+      "street": "Krämer Forst",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberkrämer",
+      "spotCount": 2,
+      "lat": 52.703984350000006,
+      "lng": 13.065266450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/915323952), ODbL"
+    },
+    {
+      "id": "oberkraemer-c5f353e810",
+      "city": "oberkraemer",
+      "label": "Ziethener Luch",
+      "street": "Ziethener Luch",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberkrämer",
+      "spotCount": 2,
+      "lat": 52.7054442,
+      "lng": 13.06747765,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/915323941), ODbL"
+    }
+  ]
+}

@@ -12,25 +12,25 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "juelich-88d8a5068f",
+      "id": "juelich-29d1dac171",
       "city": "juelich",
-      "label": "Behindertenparkplatz Jülich",
-      "street": null,
+      "label": "Ellbachstraße",
+      "street": "Ellbachstraße",
       "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Jülich",
       "spotCount": 2,
-      "lat": 50.92068495,
-      "lng": 6.354881050000001,
+      "lat": 50.920933000000005,
+      "lng": 6.35263605,
       "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/8031271), ODbL"
+      "source": "OpenStreetMap (way/1538472617), ODbL"
     },
     {
       "id": "juelich-0620e0e930",
       "city": "juelich",
-      "label": "Behindertenparkplatz Jülich",
-      "street": null,
+      "label": "Helmholtz-Ring",
+      "street": "Helmholtz-Ring",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -42,25 +42,10 @@
       "source": "OpenStreetMap (way/257978568), ODbL"
     },
     {
-      "id": "juelich-15220cec76",
-      "city": "juelich",
-      "label": "Behindertenparkplatz Jülich",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Jülich",
-      "spotCount": 1,
-      "lat": 50.90341535,
-      "lng": 6.4133944000000005,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/497209540), ODbL"
-    },
-    {
       "id": "juelich-3e0bc92ff9",
       "city": "juelich",
-      "label": "Behindertenparkplatz Jülich",
-      "street": null,
+      "label": "Kartäuserstraße",
+      "street": "Kartäuserstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -74,9 +59,9 @@
     {
       "id": "juelich-491a7d281a",
       "city": "juelich",
-      "label": "Behindertenparkplatz Jülich",
-      "street": null,
-      "houseNumber": null,
+      "label": "Kurfürstenstraße 1",
+      "street": "Kurfürstenstraße",
+      "houseNumber": "1",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Jülich",
@@ -87,19 +72,34 @@
       "source": "OpenStreetMap (way/1105753943), ODbL"
     },
     {
-      "id": "juelich-29d1dac171",
+      "id": "juelich-15220cec76",
       "city": "juelich",
-      "label": "Behindertenparkplatz Jülich",
-      "street": null,
+      "label": "Süd-Ring",
+      "street": "Süd-Ring",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Jülich",
-      "spotCount": 2,
-      "lat": 50.920933000000005,
-      "lng": 6.35263605,
+      "spotCount": 1,
+      "lat": 50.90341535,
+      "lng": 6.4133944000000005,
       "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1538472617), ODbL"
+      "source": "OpenStreetMap (way/497209540), ODbL"
+    },
+    {
+      "id": "juelich-88d8a5068f",
+      "city": "juelich",
+      "label": "Turmstraße 5",
+      "street": "Turmstraße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Jülich",
+      "spotCount": 2,
+      "lat": 50.92068495,
+      "lng": 6.354881050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/8031271), ODbL"
     }
   ]
 }

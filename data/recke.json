@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "recke",
+    "name": "Recke",
+    "center": {
+      "lat": 52.3693747,
+      "lng": 7.7182203000000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "recke-40d2ae3914",
+      "city": "recke",
+      "label": "Bad",
+      "street": "Bad",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Recke",
+      "spotCount": 1,
+      "lat": 52.355602600000005,
+      "lng": 7.67631915,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/39963361), ODbL"
+    },
+    {
+      "id": "recke-49825d9e05",
+      "city": "recke",
+      "label": "Markt 2",
+      "street": "Markt",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Recke",
+      "spotCount": 1,
+      "lat": 52.3693747,
+      "lng": 7.7182203000000005,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/495228594), ODbL"
+    }
+  ]
+}

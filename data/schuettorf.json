@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schuettorf",
+    "name": "Schüttorf",
+    "center": {
+      "lat": 52.319280400000004,
+      "lng": 7.22550785
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schuettorf-22320fb47e",
+      "city": "schuettorf",
+      "label": "Steinstraße",
+      "street": "Steinstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Schüttorf",
+      "spotCount": 1,
+      "lat": 52.319280400000004,
+      "lng": 7.22550785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34604072), ODbL"
+    }
+  ]
+}

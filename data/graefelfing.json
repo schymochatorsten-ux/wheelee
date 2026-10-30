@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "graefelfing",
+    "name": "Gräfelfing",
+    "center": {
+      "lat": 48.1153495,
+      "lng": 11.435065000000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "graefelfing-a017f7d808",
+      "city": "graefelfing",
+      "label": "Freihamer Straße",
+      "street": "Freihamer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gräfelfing",
+      "spotCount": 1,
+      "lat": 48.12106825000001,
+      "lng": 11.425544700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/501236095), ODbL"
+    },
+    {
+      "id": "graefelfing-8bc16574e4",
+      "city": "graefelfing",
+      "label": "Schmidbauerstraße",
+      "street": "Schmidbauerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gräfelfing",
+      "spotCount": 1,
+      "lat": 48.1153495,
+      "lng": 11.4351113,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11293305118), ODbL"
+    },
+    {
+      "id": "graefelfing-aba4235bdf",
+      "city": "graefelfing",
+      "label": "Schmidbauerstraße",
+      "street": "Schmidbauerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gräfelfing",
+      "spotCount": 1,
+      "lat": 48.1152322,
+      "lng": 11.435065000000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11293305119), ODbL"
+    }
+  ]
+}

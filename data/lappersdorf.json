@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "lappersdorf",
+    "name": "Lappersdorf",
+    "center": {
+      "lat": 49.05743100000001,
+      "lng": 12.091045150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lappersdorf-4adb97a3ae",
+      "city": "lappersdorf",
+      "label": "Regendorfer Straße",
+      "street": "Regendorfer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lappersdorf",
+      "spotCount": 1,
+      "lat": 49.0571398,
+      "lng": 12.0909546,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9073295874), ODbL"
+    },
+    {
+      "id": "lappersdorf-53dc2d9400",
+      "city": "lappersdorf",
+      "label": "Regendorfer Straße",
+      "street": "Regendorfer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lappersdorf",
+      "spotCount": 1,
+      "lat": 49.05713840000001,
+      "lng": 12.090918100000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9073295875), ODbL"
+    },
+    {
+      "id": "lappersdorf-dab38710db",
+      "city": "lappersdorf",
+      "label": "Regendorfer Straße",
+      "street": "Regendorfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lappersdorf",
+      "spotCount": 2,
+      "lat": 49.05743100000001,
+      "lng": 12.0909078,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1262183421), ODbL"
+    },
+    {
+      "id": "lappersdorf-3a5a8d8b22",
+      "city": "lappersdorf",
+      "label": "Regendorfer Straße",
+      "street": "Regendorfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lappersdorf",
+      "spotCount": 2,
+      "lat": 49.0571617,
+      "lng": 12.091045150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1262183423), ODbL"
+    },
+    {
+      "id": "lappersdorf-39edbd4d12",
+      "city": "lappersdorf",
+      "label": "Regendorfer Straße 3a",
+      "street": "Regendorfer Straße",
+      "houseNumber": "3a",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lappersdorf",
+      "spotCount": 1,
+      "lat": 49.057440400000004,
+      "lng": 12.0911182,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11727452054), ODbL"
+    },
+    {
+      "id": "lappersdorf-ef184ec881",
+      "city": "lappersdorf",
+      "label": "Regendorfer Straße 3a",
+      "street": "Regendorfer Straße",
+      "houseNumber": "3a",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lappersdorf",
+      "spotCount": 1,
+      "lat": 49.057438000000005,
+      "lng": 12.0910816,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11727452055), ODbL"
+    }
+  ]
+}

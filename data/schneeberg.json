@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "schneeberg",
+    "name": "Schneeberg",
+    "center": {
+      "lat": 50.608122050000006,
+      "lng": 12.637515350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schneeberg-8633d160dd",
+      "city": "schneeberg",
+      "label": "Am Filzteich",
+      "street": "Am Filzteich",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schneeberg",
+      "spotCount": 1,
+      "lat": 50.57421875,
+      "lng": 12.611775300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1117628558), ODbL"
+    },
+    {
+      "id": "schneeberg-3f98b402ad",
+      "city": "schneeberg",
+      "label": "Am Filzteich 4b,4c",
+      "street": "Am Filzteich",
+      "houseNumber": "4b,4c",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schneeberg",
+      "spotCount": 3,
+      "lat": 50.57478795,
+      "lng": 12.605377,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1534835611), ODbL"
+    },
+    {
+      "id": "schneeberg-6c68dc9ef3",
+      "city": "schneeberg",
+      "label": "Joseph-Haydn-Straße",
+      "street": "Joseph-Haydn-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schneeberg",
+      "spotCount": 1,
+      "lat": 50.608122050000006,
+      "lng": 12.650162550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/636245992), ODbL"
+    },
+    {
+      "id": "schneeberg-b90ca846c8",
+      "city": "schneeberg",
+      "label": "Keilbergring",
+      "street": "Keilbergring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schneeberg",
+      "spotCount": 1,
+      "lat": 50.60825725,
+      "lng": 12.637515350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34059238), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hassfurt",
+    "name": "Haßfurt",
+    "center": {
+      "lat": 50.0330487,
+      "lng": 10.509830050000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hassfurt-871855e91c",
+      "city": "hassfurt",
+      "label": "Bahnhofstraße 12",
+      "street": "Bahnhofstraße",
+      "houseNumber": "12",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Haßfurt",
+      "spotCount": 1,
+      "lat": 50.0330487,
+      "lng": 10.509830050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1095267543), ODbL"
+    }
+  ]
+}

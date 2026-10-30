@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "betzdorf",
+    "name": "Betzdorf",
+    "center": {
+      "lat": 50.790049450000005,
+      "lng": 7.8723069
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "betzdorf-6e468bfed7",
+      "city": "betzdorf",
+      "label": "Park&Ride",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Betzdorf",
+      "spotCount": 1,
+      "lat": 50.790007900000006,
+      "lng": 7.869427600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/655483811), ODbL"
+    },
+    {
+      "id": "betzdorf-457ea2c074",
+      "city": "betzdorf",
+      "label": "Parkplatz Expert Klein",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Betzdorf",
+      "spotCount": 1,
+      "lat": 50.790049450000005,
+      "lng": 7.8723069,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/142587490), ODbL"
+    }
+  ]
+}

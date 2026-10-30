@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "hemsbach",
+    "name": "Hemsbach",
+    "center": {
+      "lat": 49.5911799,
+      "lng": 8.64809085
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hemsbach-c0be8e2597",
+      "city": "hemsbach",
+      "label": "Königsberger Straße 4",
+      "street": "Königsberger Straße",
+      "houseNumber": "4",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hemsbach",
+      "spotCount": 1,
+      "lat": 49.5910353,
+      "lng": 8.647971850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1306302665), ODbL"
+    },
+    {
+      "id": "hemsbach-986f4febf0",
+      "city": "hemsbach",
+      "label": "Königsberger Straße 45",
+      "street": "Königsberger Straße",
+      "houseNumber": "45",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hemsbach",
+      "spotCount": 1,
+      "lat": 49.5911799,
+      "lng": 8.64220105,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1137861986), ODbL"
+    },
+    {
+      "id": "hemsbach-711e3ec38c",
+      "city": "hemsbach",
+      "label": "Kreisverbindungsstraße",
+      "street": "Kreisverbindungsstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Hemsbach",
+      "spotCount": 1,
+      "lat": 49.591263350000006,
+      "lng": 8.64809085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/441392454), ODbL"
+    },
+    {
+      "id": "hemsbach-29a15d88de",
+      "city": "hemsbach",
+      "label": "Lessingstraße",
+      "street": "Lessingstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hemsbach",
+      "spotCount": 2,
+      "lat": 49.5872589,
+      "lng": 8.6537976,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/165556427), ODbL"
+    }
+  ]
+}

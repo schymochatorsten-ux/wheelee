@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "st-leon-rot",
+    "name": "St. Leon-Rot",
+    "center": {
+      "lat": 49.26896425,
+      "lng": 8.6155775
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "st-leon-rot-a0d7e0b92a",
+      "city": "st-leon-rot",
+      "label": "Bucheneck",
+      "street": "Bucheneck",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "St. Leon-Rot",
+      "spotCount": 2,
+      "lat": 49.27370465,
+      "lng": 8.645533700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/256596350), ODbL"
+    },
+    {
+      "id": "st-leon-rot-0c50b65fdd",
+      "city": "st-leon-rot",
+      "label": "Erholungsanlage St. Leoner See",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "St. Leon-Rot",
+      "spotCount": 1,
+      "lat": 49.28192435,
+      "lng": 8.58463175,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/56957706), ODbL"
+    },
+    {
+      "id": "st-leon-rot-8bb7a461d0",
+      "city": "st-leon-rot",
+      "label": "Franziskusstraße",
+      "street": "Franziskusstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "St. Leon-Rot",
+      "spotCount": 1,
+      "lat": 49.26793245,
+      "lng": 8.6143485,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1353845025), ODbL"
+    },
+    {
+      "id": "st-leon-rot-76f7586e02",
+      "city": "st-leon-rot",
+      "label": "Harres Restaurant",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "St. Leon-Rot",
+      "spotCount": 4,
+      "lat": 49.26629295000001,
+      "lng": 8.61422825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/176981005), ODbL"
+    },
+    {
+      "id": "st-leon-rot-cd3a27dee4",
+      "city": "st-leon-rot",
+      "label": "Haubenlerchenweg",
+      "street": "Haubenlerchenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "St. Leon-Rot",
+      "spotCount": 1,
+      "lat": 49.26896425,
+      "lng": 8.6171939,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1279427058), ODbL"
+    },
+    {
+      "id": "st-leon-rot-ab824452a6",
+      "city": "st-leon-rot",
+      "label": "Im Schiff 3",
+      "street": "Im Schiff",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "St. Leon-Rot",
+      "spotCount": 1,
+      "lat": 49.2680359,
+      "lng": 8.6155775,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/178769297), ODbL"
+    },
+    {
+      "id": "st-leon-rot-f93b430593",
+      "city": "st-leon-rot",
+      "label": "Weißer Stock",
+      "street": "Weißer Stock",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "St. Leon-Rot",
+      "spotCount": 2,
+      "lat": 49.272549950000005,
+      "lng": 8.64781845,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/256596348), ODbL"
+    }
+  ]
+}

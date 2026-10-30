@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "brake",
+    "name": "Brake (Unterweser)",
+    "center": {
+      "lat": 53.32709975,
+      "lng": 8.4811302
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "brake-a5217c7fa1",
+      "city": "brake",
+      "label": "Kirchenstraße 1",
+      "street": "Kirchenstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brake (Unterweser)",
+      "spotCount": 1,
+      "lat": 53.32709975,
+      "lng": 8.4811302,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/226224469), ODbL"
+    }
+  ]
+}

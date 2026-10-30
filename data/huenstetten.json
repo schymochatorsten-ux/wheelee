@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "huenstetten",
+    "name": "Hünstetten",
+    "center": {
+      "lat": 50.2472748,
+      "lng": 8.18739255
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "huenstetten-6eb0a5caec",
+      "city": "huenstetten",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hünstetten",
+      "spotCount": 2,
+      "lat": 50.2448398,
+      "lng": 8.17246475,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25480470), ODbL"
+    },
+    {
+      "id": "huenstetten-eb40ba62f3",
+      "city": "huenstetten",
+      "label": "Limbach Hühnerkirche B417",
+      "street": "Limbach Hühnerkirche B417",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hünstetten",
+      "spotCount": 2,
+      "lat": 50.2472748,
+      "lng": 8.18739255,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/261891684), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "blumberg",
+    "name": "Blumberg",
+    "center": {
+      "lat": 47.837729350000004,
+      "lng": 8.5583027
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "blumberg-093fd6f876",
+      "city": "blumberg",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Blumberg",
+      "spotCount": 1,
+      "lat": 47.837729350000004,
+      "lng": 8.55774705,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/796417982), ODbL"
+    },
+    {
+      "id": "blumberg-4bf3e74e06",
+      "city": "blumberg",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Blumberg",
+      "spotCount": 1,
+      "lat": 47.83771465,
+      "lng": 8.5583027,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1388210210), ODbL"
+    }
+  ]
+}

@@ -14,9 +14,9 @@
     {
       "id": "duderstadt-e0a5d63d42",
       "city": "duderstadt",
-      "label": "Behindertenparkplatz Duderstadt",
-      "street": null,
-      "houseNumber": null,
+      "label": "Fuhrbacher Straße 31-33",
+      "street": "Fuhrbacher Straße",
+      "houseNumber": "31-33",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Duderstadt",

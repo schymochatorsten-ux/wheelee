@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "nidda",
+    "name": "Nidda",
+    "center": {
+      "lat": 50.412917500000006,
+      "lng": 9.005446
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nidda-89b5283c60",
+      "city": "nidda",
+      "label": "Bahnhofstraße 26",
+      "street": "Bahnhofstraße",
+      "houseNumber": "26",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nidda",
+      "spotCount": 1,
+      "lat": 50.412917500000006,
+      "lng": 9.005446,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/286819215), ODbL"
+    },
+    {
+      "id": "nidda-7ecb01d285",
+      "city": "nidda",
+      "label": "Markt 26",
+      "street": "Markt",
+      "houseNumber": "26",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nidda",
+      "spotCount": 1,
+      "lat": 50.412714,
+      "lng": 9.00868765,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/80578328), ODbL"
+    },
+    {
+      "id": "nidda-184bd4e009",
+      "city": "nidda",
+      "label": "Parkplatz Haltestelle Häuserhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nidda",
+      "spotCount": 2,
+      "lat": 50.41926955,
+      "lng": 8.9395466,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/321358255), ODbL"
+    }
+  ]
+}

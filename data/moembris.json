@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "moembris",
+    "name": "Mömbris",
+    "center": {
+      "lat": 50.0577036,
+      "lng": 9.186646150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "moembris-e073ca56dd",
+      "city": "moembris",
+      "label": "Am Heidberg",
+      "street": "Am Heidberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mömbris",
+      "spotCount": 1,
+      "lat": 50.0577036,
+      "lng": 9.186646150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/96332268), ODbL"
+    }
+  ]
+}

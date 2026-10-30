@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "wolgast",
+    "name": "Wolgast",
+    "center": {
+      "lat": 54.05801855,
+      "lng": 13.773452850000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wolgast-9dd88bb6e7",
+      "city": "wolgast",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wolgast",
+      "spotCount": 1,
+      "lat": 54.041397200000006,
+      "lng": 13.7657506,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1303590606), ODbL"
+    },
+    {
+      "id": "wolgast-5b5a422810",
+      "city": "wolgast",
+      "label": "Chausseestraße 1",
+      "street": "Chausseestraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wolgast",
+      "spotCount": 1,
+      "lat": 54.05234,
+      "lng": 13.773647100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25046800), ODbL"
+    },
+    {
+      "id": "wolgast-d329afdae2",
+      "city": "wolgast",
+      "label": "Dreilindengrund",
+      "street": "Dreilindengrund",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wolgast",
+      "spotCount": 1,
+      "lat": 54.05805935,
+      "lng": 13.773452850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1572078157), ODbL"
+    },
+    {
+      "id": "wolgast-eb6394664c",
+      "city": "wolgast",
+      "label": "Dreilindengrund",
+      "street": "Dreilindengrund",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wolgast",
+      "spotCount": 1,
+      "lat": 54.05801855,
+      "lng": 13.77346215,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1572078158), ODbL"
+    },
+    {
+      "id": "wolgast-88874a093a",
+      "city": "wolgast",
+      "label": "Dreilindengrund 1",
+      "street": "Dreilindengrund",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wolgast",
+      "spotCount": 9,
+      "lat": 54.0582991,
+      "lng": 13.773386700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1572078159), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "grevesmuehlen",
+    "name": "Grevesmühlen",
+    "center": {
+      "lat": 53.85789715,
+      "lng": 11.18418825
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grevesmuehlen-0a18f88500",
+      "city": "grevesmuehlen",
+      "label": "Am Bahnhof 1",
+      "street": "Am Bahnhof",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grevesmühlen",
+      "spotCount": 1,
+      "lat": 53.8576144,
+      "lng": 11.18418825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1447338449), ODbL"
+    },
+    {
+      "id": "grevesmuehlen-46b9f96601",
+      "city": "grevesmuehlen",
+      "label": "Am Bahnhof 1",
+      "street": "Am Bahnhof",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Grevesmühlen",
+      "spotCount": 1,
+      "lat": 53.85766445,
+      "lng": 11.184270699999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1556419716), ODbL"
+    },
+    {
+      "id": "grevesmuehlen-6ee3a79753",
+      "city": "grevesmuehlen",
+      "label": "Börzower Weg",
+      "street": "Börzower Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grevesmühlen",
+      "spotCount": 2,
+      "lat": 53.862522600000005,
+      "lng": 11.177235900000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4901246235), ODbL"
+    },
+    {
+      "id": "grevesmuehlen-4f657fe919",
+      "city": "grevesmuehlen",
+      "label": "Gebhardweg",
+      "street": "Gebhardweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grevesmühlen",
+      "spotCount": 2,
+      "lat": 53.85789715,
+      "lng": 11.1855121,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/968127697), ODbL"
+    },
+    {
+      "id": "grevesmuehlen-c01d4aba44",
+      "city": "grevesmuehlen",
+      "label": "Klützer Straße 58",
+      "street": "Klützer Straße",
+      "houseNumber": "58",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grevesmühlen",
+      "spotCount": 2,
+      "lat": 53.8731561,
+      "lng": 11.179484,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/123620047), ODbL"
+    }
+  ]
+}

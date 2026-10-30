@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "bad-woerishofen",
+    "name": "Bad Wörishofen",
+    "center": {
+      "lat": 48.0201052,
+      "lng": 10.599621
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-woerishofen-d8d472c93a",
+      "city": "bad-woerishofen",
+      "label": "Bürgermeister-Ledermann-Straße",
+      "street": "Bürgermeister-Ledermann-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Wörishofen",
+      "spotCount": 1,
+      "lat": 48.005488400000004,
+      "lng": 10.598555300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11584095495), ODbL"
+    },
+    {
+      "id": "bad-woerishofen-a9639317d4",
+      "city": "bad-woerishofen",
+      "label": "Gottlieb-Daimler-Straße",
+      "street": "Gottlieb-Daimler-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Wörishofen",
+      "spotCount": 2,
+      "lat": 48.0201052,
+      "lng": 10.599621,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/568671495), ODbL"
+    },
+    {
+      "id": "bad-woerishofen-9486a6fe16",
+      "city": "bad-woerishofen",
+      "label": "Litauenplatz",
+      "street": "Litauenplatz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Wörishofen",
+      "spotCount": 1,
+      "lat": 48.0069328,
+      "lng": 10.615866200000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13056800877), ODbL"
+    },
+    {
+      "id": "bad-woerishofen-6d8976daf6",
+      "city": "bad-woerishofen",
+      "label": "Zeppelinstraße",
+      "street": "Zeppelinstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Wörishofen",
+      "spotCount": 2,
+      "lat": 48.02247525,
+      "lng": 10.5966778,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/478148393), ODbL"
+    }
+  ]
+}

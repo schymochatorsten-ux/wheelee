@@ -14,8 +14,8 @@
     {
       "id": "geesthacht-3d7be41daa",
       "city": "geesthacht",
-      "label": "Behindertenparkplatz Geesthacht",
-      "street": null,
+      "label": "Werftstraße",
+      "street": "Werftstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -29,8 +29,8 @@
     {
       "id": "geesthacht-324bc1c47e",
       "city": "geesthacht",
-      "label": "Behindertenparkplatz Geesthacht",
-      "street": null,
+      "label": "Werftstraße",
+      "street": "Werftstraße",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,
@@ -44,8 +44,8 @@
     {
       "id": "geesthacht-8117d3197f",
       "city": "geesthacht",
-      "label": "Behindertenparkplatz Geesthacht",
-      "street": null,
+      "label": "Werftstraße",
+      "street": "Werftstraße",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,

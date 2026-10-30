@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "boizenburg-elbe",
+    "name": "Boizenburg/Elbe",
+    "center": {
+      "lat": 53.37762895,
+      "lng": 10.75486225
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "boizenburg-elbe-e802efdd54",
+      "city": "boizenburg-elbe",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Boizenburg/Elbe",
+      "spotCount": 2,
+      "lat": 53.377580650000006,
+      "lng": 10.75486225,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/629124239), ODbL"
+    },
+    {
+      "id": "boizenburg-elbe-9ad2e49df6",
+      "city": "boizenburg-elbe",
+      "label": "Bahnhofstraße 1a",
+      "street": "Bahnhofstraße",
+      "houseNumber": "1a",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Boizenburg/Elbe",
+      "spotCount": 1,
+      "lat": 53.37762895,
+      "lng": 10.754485800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1561335812), ODbL"
+    },
+    {
+      "id": "boizenburg-elbe-2a1da1a68e",
+      "city": "boizenburg-elbe",
+      "label": "Bahnhofstraße 1a",
+      "street": "Bahnhofstraße",
+      "houseNumber": "1a",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Boizenburg/Elbe",
+      "spotCount": 1,
+      "lat": 53.37759615,
+      "lng": 10.75450425,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1561335813), ODbL"
+    },
+    {
+      "id": "boizenburg-elbe-e6c0eeeffa",
+      "city": "boizenburg-elbe",
+      "label": "Ladestraße",
+      "street": "Ladestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Boizenburg/Elbe",
+      "spotCount": 3,
+      "lat": 53.378064550000005,
+      "lng": 10.7550831,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/301098581), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "laichingen",
+    "name": "Laichingen",
+    "center": {
+      "lat": 48.490938400000005,
+      "lng": 9.7092691
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "laichingen-06c5fd4915",
+      "city": "laichingen",
+      "label": "Bei den Sporthallen",
+      "street": "Bei den Sporthallen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Laichingen",
+      "spotCount": 2,
+      "lat": 48.460187850000004,
+      "lng": 9.7092691,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/539194917), ODbL"
+    },
+    {
+      "id": "laichingen-b82772a183",
+      "city": "laichingen",
+      "label": "Geislinger Straße",
+      "street": "Geislinger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Laichingen",
+      "spotCount": 2,
+      "lat": 48.49366735,
+      "lng": 9.71194255,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1184204408), ODbL"
+    },
+    {
+      "id": "laichingen-ffbf4e53a1",
+      "city": "laichingen",
+      "label": "Max-Lechler-Straße",
+      "street": "Max-Lechler-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Laichingen",
+      "spotCount": 2,
+      "lat": 48.490938400000005,
+      "lng": 9.681244600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/375719702), ODbL"
+    }
+  ]
+}

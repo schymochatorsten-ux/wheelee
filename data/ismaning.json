@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "ismaning",
+    "name": "Ismaning",
+    "center": {
+      "lat": 48.2264939,
+      "lng": 11.679760600000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ismaning-296ab22126",
+      "city": "ismaning",
+      "label": "An der Torfbahn",
+      "street": "An der Torfbahn",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ismaning",
+      "spotCount": 2,
+      "lat": 48.22782895,
+      "lng": 11.677177700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/30500241), ODbL"
+    },
+    {
+      "id": "ismaning-8c2d48264c",
+      "city": "ismaning",
+      "label": "Aschheimer Straße",
+      "street": "Aschheimer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ismaning",
+      "spotCount": 10,
+      "lat": 48.225946050000005,
+      "lng": 11.679760600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/39981713), ODbL"
+    },
+    {
+      "id": "ismaning-907ec955e9",
+      "city": "ismaning",
+      "label": "Bahnhofplatz 2",
+      "street": "Bahnhofplatz",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ismaning",
+      "spotCount": 1,
+      "lat": 48.2254214,
+      "lng": 11.6789448,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1829840262), ODbL"
+    },
+    {
+      "id": "ismaning-28748f4467",
+      "city": "ismaning",
+      "label": "Dorfstraße 14",
+      "street": "Dorfstraße",
+      "houseNumber": "14",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ismaning",
+      "spotCount": 6,
+      "lat": 48.22253175,
+      "lng": 11.673578800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1372218660), ODbL"
+    },
+    {
+      "id": "ismaning-bf00fde6bd",
+      "city": "ismaning",
+      "label": "Freisinger Straße",
+      "street": "Freisinger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ismaning",
+      "spotCount": 2,
+      "lat": 48.2407648,
+      "lng": 11.6824895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1431364194), ODbL"
+    },
+    {
+      "id": "ismaning-9a839fb94d",
+      "city": "ismaning",
+      "label": "Freisinger Straße",
+      "street": "Freisinger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ismaning",
+      "spotCount": 2,
+      "lat": 48.240749050000005,
+      "lng": 11.6825755,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1431364195), ODbL"
+    },
+    {
+      "id": "ismaning-31e39b2287",
+      "city": "ismaning",
+      "label": "Geothermie Ismaning",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ismaning",
+      "spotCount": 1,
+      "lat": 48.2264939,
+      "lng": 11.679921100000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1769551284), ODbL"
+    }
+  ]
+}

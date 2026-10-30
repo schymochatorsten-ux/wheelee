@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "eberbach",
+    "name": "Eberbach",
+    "center": {
+      "lat": 49.4649809,
+      "lng": 8.9850712
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eberbach-76a50a2922",
+      "city": "eberbach",
+      "label": "Bahnhofstraße 43",
+      "street": "Bahnhofstraße",
+      "houseNumber": "43",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Eberbach",
+      "spotCount": 1,
+      "lat": 49.4649809,
+      "lng": 8.9842573,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/855869970), ODbL"
+    },
+    {
+      "id": "eberbach-672cf9395f",
+      "city": "eberbach",
+      "label": "Neckarlauer",
+      "street": "Neckarlauer",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eberbach",
+      "spotCount": 1,
+      "lat": 49.46087585000001,
+      "lng": 8.9850712,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/75074646), ODbL"
+    },
+    {
+      "id": "eberbach-f6a38eb2a6",
+      "city": "eberbach",
+      "label": "Neckarlauer",
+      "street": "Neckarlauer",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eberbach",
+      "spotCount": 1,
+      "lat": 49.461741550000006,
+      "lng": 8.98361335,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1525327842), ODbL"
+    },
+    {
+      "id": "eberbach-62c679544c",
+      "city": "eberbach",
+      "label": "Neuer Weg-Nord",
+      "street": "Neuer Weg-Nord",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eberbach",
+      "spotCount": 1,
+      "lat": 49.473380150000004,
+      "lng": 8.9872953,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/113605360), ODbL"
+    }
+  ]
+}

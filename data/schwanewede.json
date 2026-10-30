@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "schwanewede",
+    "name": "Schwanewede",
+    "center": {
+      "lat": 53.22320605,
+      "lng": 8.5954332
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schwanewede-b2fef6aa49",
+      "city": "schwanewede",
+      "label": "Am Markt",
+      "street": "Am Markt",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwanewede",
+      "spotCount": 2,
+      "lat": 53.22482670000001,
+      "lng": 8.5958514,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1077496749), ODbL"
+    },
+    {
+      "id": "schwanewede-26b324412e",
+      "city": "schwanewede",
+      "label": "Am Markt 2A",
+      "street": "Am Markt",
+      "houseNumber": "2A",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwanewede",
+      "spotCount": 1,
+      "lat": 53.2220384,
+      "lng": 8.5954332,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1077767183), ODbL"
+    },
+    {
+      "id": "schwanewede-d35a340d7c",
+      "city": "schwanewede",
+      "label": "Bahnhof Klinikum Bremen-Nord",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwanewede",
+      "spotCount": 2,
+      "lat": 53.185198650000004,
+      "lng": 8.59680245,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27520362), ODbL"
+    },
+    {
+      "id": "schwanewede-ca8939dae6",
+      "city": "schwanewede",
+      "label": "Hospitalstraße 1",
+      "street": "Hospitalstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwanewede",
+      "spotCount": 1,
+      "lat": 53.2250415,
+      "lng": 8.59252215,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1018950291), ODbL"
+    },
+    {
+      "id": "schwanewede-0fd427f79e",
+      "city": "schwanewede",
+      "label": "Marktweide",
+      "street": "Marktweide",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwanewede",
+      "spotCount": 1,
+      "lat": 53.22331015,
+      "lng": 8.5965174,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1077767179), ODbL"
+    },
+    {
+      "id": "schwanewede-1fc2b58e3e",
+      "city": "schwanewede",
+      "label": "Trenthöper Weg",
+      "street": "Trenthöper Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwanewede",
+      "spotCount": 1,
+      "lat": 53.222764350000006,
+      "lng": 8.593635800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1077767191), ODbL"
+    },
+    {
+      "id": "schwanewede-6e2b9f3b9c",
+      "city": "schwanewede",
+      "label": "Zum Marktplatz",
+      "street": "Zum Marktplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwanewede",
+      "spotCount": 1,
+      "lat": 53.22320605,
+      "lng": 8.594493,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/302405477), ODbL"
+    }
+  ]
+}

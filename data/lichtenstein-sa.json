@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "lichtenstein-sa",
+    "name": "Lichtenstein/Sa.",
+    "center": {
+      "lat": 50.75284525,
+      "lng": 12.636271
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lichtenstein-sa-af8d04a8ba",
+      "city": "lichtenstein-sa",
+      "label": "Äußere Zwickauer Straße",
+      "street": "Äußere Zwickauer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lichtenstein/Sa.",
+      "spotCount": 1,
+      "lat": 50.75284525,
+      "lng": 12.6215448,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1481117558), ODbL"
+    },
+    {
+      "id": "lichtenstein-sa-34c7f58a7e",
+      "city": "lichtenstein-sa",
+      "label": "Parkplatz Notaufnahme",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lichtenstein/Sa.",
+      "spotCount": 1,
+      "lat": 50.7484709,
+      "lng": 12.636271,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/356101985), ODbL"
+    }
+  ]
+}

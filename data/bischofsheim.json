@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "bischofsheim",
+    "name": "Bischofsheim",
+    "center": {
+      "lat": 49.9897343,
+      "lng": 8.358421100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bischofsheim-6c02a9e396",
+      "city": "bischofsheim",
+      "label": "Am Flurgraben",
+      "street": "Am Flurgraben",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bischofsheim",
+      "spotCount": 2,
+      "lat": 49.988653150000005,
+      "lng": 8.34974295,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1135187102), ODbL"
+    },
+    {
+      "id": "bischofsheim-d8b95c4145",
+      "city": "bischofsheim",
+      "label": "Bahnhofsplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bischofsheim",
+      "spotCount": 2,
+      "lat": 49.992635050000004,
+      "lng": 8.357537950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/139099816), ODbL"
+    },
+    {
+      "id": "bischofsheim-f5d7f48296",
+      "city": "bischofsheim",
+      "label": "Im Attich 12",
+      "street": "Im Attich",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bischofsheim",
+      "spotCount": 2,
+      "lat": 49.9847277,
+      "lng": 8.3622292,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/564234587), ODbL"
+    },
+    {
+      "id": "bischofsheim-5ba2522a4d",
+      "city": "bischofsheim",
+      "label": "Untergasse 2",
+      "street": "Untergasse",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bischofsheim",
+      "spotCount": 1,
+      "lat": 49.9897343,
+      "lng": 8.358421100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1163079589), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "zetel",
+    "name": "Zetel",
+    "center": {
+      "lat": 53.414318200000004,
+      "lng": 7.973884850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zetel-bd25efb61b",
+      "city": "zetel",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zetel",
+      "spotCount": 1,
+      "lat": 53.414318200000004,
+      "lng": 7.973884850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/65251872), ODbL"
+    },
+    {
+      "id": "zetel-d09152e83f",
+      "city": "zetel",
+      "label": "Lindenstraße",
+      "street": "Lindenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zetel",
+      "spotCount": 1,
+      "lat": 53.389351250000004,
+      "lng": 7.95201835,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31362434), ODbL"
+    },
+    {
+      "id": "zetel-dc923feee0",
+      "city": "zetel",
+      "label": "Südenburg",
+      "street": "Südenburg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zetel",
+      "spotCount": 1,
+      "lat": 53.41797845000001,
+      "lng": 7.9747398,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/65251870), ODbL"
+    }
+  ]
+}

@@ -12,6 +12,21 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
+      "id": "schifferstadt-ca5f12a86d",
+      "city": "schifferstadt",
+      "label": "Am Waldfestplatz",
+      "street": "Am Waldfestplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schifferstadt",
+      "spotCount": 3,
+      "lat": 49.370254349999996,
+      "lng": 8.383097750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/757052548), ODbL"
+    },
+    {
       "id": "schifferstadt-91dff01e5b",
       "city": "schifferstadt",
       "label": "Bahnhofstraße",
@@ -29,9 +44,9 @@
     {
       "id": "schifferstadt-1848cc9bd8",
       "city": "schifferstadt",
-      "label": "Behindertenparkplatz Schifferstadt",
-      "street": null,
-      "houseNumber": null,
+      "label": "Bahnhofstraße 39",
+      "street": "Bahnhofstraße",
+      "houseNumber": "39",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Schifferstadt",
@@ -40,66 +55,6 @@
       "lng": 8.37148445,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/469742044), ODbL"
-    },
-    {
-      "id": "schifferstadt-e41961dc78",
-      "city": "schifferstadt",
-      "label": "Behindertenparkplatz Schifferstadt",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Schifferstadt",
-      "spotCount": 1,
-      "lat": 49.38580005,
-      "lng": 8.3923328,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/506999603), ODbL"
-    },
-    {
-      "id": "schifferstadt-ca5f12a86d",
-      "city": "schifferstadt",
-      "label": "Behindertenparkplatz Schifferstadt",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Schifferstadt",
-      "spotCount": 3,
-      "lat": 49.370254349999996,
-      "lng": 8.383097750000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/757052548), ODbL"
-    },
-    {
-      "id": "schifferstadt-668f98c193",
-      "city": "schifferstadt",
-      "label": "Behindertenparkplatz Schifferstadt",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Schifferstadt",
-      "spotCount": 6,
-      "lat": 49.38374495,
-      "lng": 8.3919666,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1062126845), ODbL"
-    },
-    {
-      "id": "schifferstadt-c7ef1dd6a3",
-      "city": "schifferstadt",
-      "label": "Behindertenparkplatz Schifferstadt",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Schifferstadt",
-      "spotCount": 1,
-      "lat": 49.386663850000005,
-      "lng": 8.373348100000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1101184338), ODbL"
     },
     {
       "id": "schifferstadt-d12adee563",
@@ -115,6 +70,21 @@
       "lng": 8.371244400000002,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1113766116), ODbL"
+    },
+    {
+      "id": "schifferstadt-c7ef1dd6a3",
+      "city": "schifferstadt",
+      "label": "Kleine Kapellenstraße 7",
+      "street": "Kleine Kapellenstraße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schifferstadt",
+      "spotCount": 1,
+      "lat": 49.386663850000005,
+      "lng": 8.373348100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1101184338), ODbL"
     },
     {
       "id": "schifferstadt-1b9244afd7",
@@ -160,6 +130,36 @@
       "lng": 8.390239900000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/489583086), ODbL"
+    },
+    {
+      "id": "schifferstadt-e41961dc78",
+      "city": "schifferstadt",
+      "label": "Waldseer Straße",
+      "street": "Waldseer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schifferstadt",
+      "spotCount": 1,
+      "lat": 49.38580005,
+      "lng": 8.3923328,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/506999603), ODbL"
+    },
+    {
+      "id": "schifferstadt-668f98c193",
+      "city": "schifferstadt",
+      "label": "Waldspitzweg",
+      "street": "Waldspitzweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schifferstadt",
+      "spotCount": 6,
+      "lat": 49.38374495,
+      "lng": 8.3919666,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1062126845), ODbL"
     }
   ]
 }

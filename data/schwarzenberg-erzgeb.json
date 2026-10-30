@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "schwarzenberg-erzgeb",
+    "name": "Schwarzenberg/Erzgeb.",
+    "center": {
+      "lat": 50.54473405,
+      "lng": 12.78915255
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schwarzenberg-erzgeb-1666208278",
+      "city": "schwarzenberg-erzgeb",
+      "label": "Grünhainer Straße",
+      "street": "Grünhainer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwarzenberg/Erzgeb.",
+      "spotCount": 2,
+      "lat": 50.54473405,
+      "lng": 12.78915255,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/526704559), ODbL"
+    },
+    {
+      "id": "schwarzenberg-erzgeb-d1036c82c9",
+      "city": "schwarzenberg-erzgeb",
+      "label": "Hammerparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwarzenberg/Erzgeb.",
+      "spotCount": 2,
+      "lat": 50.5366579,
+      "lng": 12.7866976,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/23876939), ODbL"
+    }
+  ]
+}

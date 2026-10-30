@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "meitingen",
+    "name": "Meitingen",
+    "center": {
+      "lat": 48.5218735,
+      "lng": 10.85773725
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "meitingen-a543f0ee1c",
+      "city": "meitingen",
+      "label": "Ulrichstraße 24",
+      "street": "Ulrichstraße",
+      "houseNumber": "24",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Meitingen",
+      "spotCount": 1,
+      "lat": 48.52184750000001,
+      "lng": 10.857675100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1212968880), ODbL"
+    },
+    {
+      "id": "meitingen-36e40f070a",
+      "city": "meitingen",
+      "label": "Ulrichstraße 24",
+      "street": "Ulrichstraße",
+      "houseNumber": "24",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Meitingen",
+      "spotCount": 1,
+      "lat": 48.5218735,
+      "lng": 10.85773725,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1212968881), ODbL"
+    }
+  ]
+}

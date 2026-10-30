@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "miesbach",
+    "name": "Miesbach",
+    "center": {
+      "lat": 47.788448200000005,
+      "lng": 11.831884
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "miesbach-bd16854f8b",
+      "city": "miesbach",
+      "label": "Habererplatz (P7)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Miesbach",
+      "spotCount": 1,
+      "lat": 47.787845950000005,
+      "lng": 11.83368665,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/15229126), ODbL"
+    },
+    {
+      "id": "miesbach-4b579d7944",
+      "city": "miesbach",
+      "label": "Unterer Marktplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Miesbach",
+      "spotCount": 1,
+      "lat": 47.788448200000005,
+      "lng": 11.831884,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/15228234), ODbL"
+    },
+    {
+      "id": "miesbach-d15ea5c0f9",
+      "city": "miesbach",
+      "label": "Waagstraße",
+      "street": "Waagstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Miesbach",
+      "spotCount": 1,
+      "lat": 47.78893905,
+      "lng": 11.830240750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/111735836), ODbL"
+    },
+    {
+      "id": "miesbach-a1b7c91fa3",
+      "city": "miesbach",
+      "label": "Warmbad",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Miesbach",
+      "spotCount": 1,
+      "lat": 47.78466555,
+      "lng": 11.82756345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/99712589), ODbL"
+    }
+  ]
+}

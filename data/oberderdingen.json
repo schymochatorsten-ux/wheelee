@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "oberderdingen",
+    "name": "Oberderdingen",
+    "center": {
+      "lat": 49.0714354,
+      "lng": 8.801351100000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberderdingen-65ef48cf3c",
+      "city": "oberderdingen",
+      "label": "Behindertenparkplatz Oberderdingen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberderdingen",
+      "spotCount": 1,
+      "lat": 49.045580400000006,
+      "lng": 8.797377650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1251981172), ODbL"
+    },
+    {
+      "id": "oberderdingen-0af8a045e1",
+      "city": "oberderdingen",
+      "label": "Brettener Straße",
+      "street": "Brettener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberderdingen",
+      "spotCount": 1,
+      "lat": 49.061715850000006,
+      "lng": 8.801351100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/39239147), ODbL"
+    },
+    {
+      "id": "oberderdingen-a0f2dd13c9",
+      "city": "oberderdingen",
+      "label": "Oberderdingen-Flehingen",
+      "street": "Oberderdingen-Flehingen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Oberderdingen",
+      "spotCount": 3,
+      "lat": 49.08374305,
+      "lng": 8.7750853,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/399683224), ODbL"
+    },
+    {
+      "id": "oberderdingen-37993a269c",
+      "city": "oberderdingen",
+      "label": "Sulzfelder Straße",
+      "street": "Sulzfelder Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberderdingen",
+      "spotCount": 1,
+      "lat": 49.0714354,
+      "lng": 8.811671400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1137045827), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schkopau",
+    "name": "Schkopau",
+    "center": {
+      "lat": 51.39924175,
+      "lng": 12.04704
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schkopau-4ddf2fb0e7",
+      "city": "schkopau",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schkopau",
+      "spotCount": 2,
+      "lat": 51.39924175,
+      "lng": 12.04704,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/174337122), ODbL"
+    }
+  ]
+}

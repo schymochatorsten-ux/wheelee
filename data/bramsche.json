@@ -14,9 +14,9 @@
     {
       "id": "bramsche-fac0ddfbea",
       "city": "bramsche",
-      "label": "Behindertenparkplatz Bramsche",
-      "street": null,
-      "houseNumber": null,
+      "label": "Raananastraße 6",
+      "street": "Raananastraße",
+      "houseNumber": "6",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Bramsche",

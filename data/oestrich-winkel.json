@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "oestrich-winkel",
+    "name": "Oestrich-Winkel",
+    "center": {
+      "lat": 50.005631300000005,
+      "lng": 8.02968035
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oestrich-winkel-6b80f1e67d",
+      "city": "oestrich-winkel",
+      "label": "Friedensplatz 1",
+      "street": "Friedensplatz",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oestrich-Winkel",
+      "spotCount": 2,
+      "lat": 50.005631300000005,
+      "lng": 8.0285398,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1347291272), ODbL"
+    },
+    {
+      "id": "oestrich-winkel-486574b47a",
+      "city": "oestrich-winkel",
+      "label": "P02 - Gartenstraße/Rheinallee",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oestrich-Winkel",
+      "spotCount": 2,
+      "lat": 50.003602900000004,
+      "lng": 8.02968035,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26271442), ODbL"
+    }
+  ]
+}

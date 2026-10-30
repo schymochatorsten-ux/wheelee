@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "eckental",
+    "name": "Eckental",
+    "center": {
+      "lat": 49.5757904,
+      "lng": 11.20447485
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eckental-8733925c03",
+      "city": "eckental",
+      "label": "Forth Bahnhof",
+      "street": "Forth Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eckental",
+      "spotCount": 1,
+      "lat": 49.59141025000001,
+      "lng": 11.220897700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1475975425), ODbL"
+    },
+    {
+      "id": "eckental-3688c5cd63",
+      "city": "eckental",
+      "label": "Im Zentrum 1",
+      "street": "Im Zentrum",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eckental",
+      "spotCount": 1,
+      "lat": 49.575539850000006,
+      "lng": 11.20447485,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1381129630), ODbL"
+    },
+    {
+      "id": "eckental-657c9be8b7",
+      "city": "eckental",
+      "label": "P+R Parkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eckental",
+      "spotCount": 1,
+      "lat": 49.5757904,
+      "lng": 11.19972795,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25576596), ODbL"
+    }
+  ]
+}

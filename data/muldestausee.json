@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "muldestausee",
+    "name": "Muldestausee",
+    "center": {
+      "lat": 51.6381427,
+      "lng": 12.3559803
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "muldestausee-2093c5b353",
+      "city": "muldestausee",
+      "label": "Berliner Straße",
+      "street": "Berliner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Muldestausee",
+      "spotCount": 3,
+      "lat": 51.6381427,
+      "lng": 12.3559803,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/33433800), ODbL"
+    }
+  ]
+}

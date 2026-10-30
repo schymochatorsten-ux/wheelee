@@ -12,55 +12,10 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "lohmar-9c262607c4",
-      "city": "lohmar",
-      "label": "Behindertenparkplatz Lohmar",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Lohmar",
-      "spotCount": 2,
-      "lat": 50.8912805,
-      "lng": 7.252205,
-      "geoAccuracy": "house",
-      "source": "OpenStreetMap (node/4329351184), ODbL"
-    },
-    {
-      "id": "lohmar-56265ae6fb",
-      "city": "lohmar",
-      "label": "Behindertenparkplatz Lohmar",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Lohmar",
-      "spotCount": 3,
-      "lat": 50.910411450000005,
-      "lng": 7.25204965,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/333437731), ODbL"
-    },
-    {
-      "id": "lohmar-03f06cb069",
-      "city": "lohmar",
-      "label": "Behindertenparkplatz Lohmar",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Lohmar",
-      "spotCount": 5,
-      "lat": 50.88378565000001,
-      "lng": 7.25163635,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/768674629), ODbL"
-    },
-    {
       "id": "lohmar-cc8d02f92f",
       "city": "lohmar",
-      "label": "Behindertenparkplatz Lohmar",
-      "street": null,
+      "label": "Brückenstraße",
+      "street": "Brückenstraße",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,
@@ -74,8 +29,8 @@
     {
       "id": "lohmar-97f723fd3a",
       "city": "lohmar",
-      "label": "Behindertenparkplatz Lohmar",
-      "street": null,
+      "label": "Brückenstraße",
+      "street": "Brückenstraße",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,
@@ -89,8 +44,8 @@
     {
       "id": "lohmar-75063ce648",
       "city": "lohmar",
-      "label": "Behindertenparkplatz Lohmar",
-      "street": null,
+      "label": "Brückenstraße",
+      "street": "Brückenstraße",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,
@@ -100,6 +55,36 @@
       "lng": 7.206649650000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1434544415), ODbL"
+    },
+    {
+      "id": "lohmar-03f06cb069",
+      "city": "lohmar",
+      "label": "Im Aggerhof 25",
+      "street": "Im Aggerhof",
+      "houseNumber": "25",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lohmar",
+      "spotCount": 5,
+      "lat": 50.88378565000001,
+      "lng": 7.25163635,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/768674629), ODbL"
+    },
+    {
+      "id": "lohmar-56265ae6fb",
+      "city": "lohmar",
+      "label": "Jexmühle",
+      "street": "Jexmühle",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lohmar",
+      "spotCount": 3,
+      "lat": 50.910411450000005,
+      "lng": 7.25204965,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/333437731), ODbL"
     },
     {
       "id": "lohmar-ca724ecda7",
@@ -115,6 +100,21 @@
       "lng": 7.249712650000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/131345000), ODbL"
+    },
+    {
+      "id": "lohmar-9c262607c4",
+      "city": "lohmar",
+      "label": "Steinweg",
+      "street": "Steinweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lohmar",
+      "spotCount": 2,
+      "lat": 50.8912805,
+      "lng": 7.252205,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4329351184), ODbL"
     }
   ]
 }

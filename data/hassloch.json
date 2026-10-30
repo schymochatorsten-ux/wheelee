@@ -12,25 +12,10 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "hassloch-efc788ca61",
-      "city": "hassloch",
-      "label": "Behindertenparkplatz Haßloch",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Haßloch",
-      "spotCount": 2,
-      "lat": 49.37228515,
-      "lng": 8.2531441,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/30325162), ODbL"
-    },
-    {
       "id": "hassloch-17ff766c9a",
       "city": "hassloch",
-      "label": "Behindertenparkplatz Haßloch",
-      "street": null,
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -40,6 +25,21 @@
       "lng": 8.25474465,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1447167969), ODbL"
+    },
+    {
+      "id": "hassloch-efc788ca61",
+      "city": "hassloch",
+      "label": "Lehmgrubenweg",
+      "street": "Lehmgrubenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Haßloch",
+      "spotCount": 2,
+      "lat": 49.37228515,
+      "lng": 8.2531441,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/30325162), ODbL"
     },
     {
       "id": "hassloch-0a5ba1f729",

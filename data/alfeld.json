@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "alfeld",
+    "name": "Alfeld (Leine)",
+    "center": {
+      "lat": 51.98175785000001,
+      "lng": 9.8180194
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "alfeld-a011d1965e",
+      "city": "alfeld",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Alfeld (Leine)",
+      "spotCount": 1,
+      "lat": 51.98175785000001,
+      "lng": 9.8180194,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/37864828), ODbL"
+    }
+  ]
+}

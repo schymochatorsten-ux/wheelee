@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "wadern",
+    "name": "Wadern",
+    "center": {
+      "lat": 49.5426884,
+      "lng": 6.8705819
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wadern-66a5a0ffdc",
+      "city": "wadern",
+      "label": "Fischerstraße",
+      "street": "Fischerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wadern",
+      "spotCount": 2,
+      "lat": 49.488712750000005,
+      "lng": 6.8547189500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1370109508), ODbL"
+    },
+    {
+      "id": "wadern-72cf9962e0",
+      "city": "wadern",
+      "label": "Franz-Haas-Straße",
+      "street": "Franz-Haas-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wadern",
+      "spotCount": 3,
+      "lat": 49.5426884,
+      "lng": 6.89210785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/38732785), ODbL"
+    },
+    {
+      "id": "wadern-f3713ddbb7",
+      "city": "wadern",
+      "label": "Hochwaldgymnasium, Schülerparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wadern",
+      "spotCount": 1,
+      "lat": 49.54319735,
+      "lng": 6.9001810500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/327815592), ODbL"
+    },
+    {
+      "id": "wadern-01be6235fe",
+      "city": "wadern",
+      "label": "Saarbrücker Straße 2",
+      "street": "Saarbrücker Straße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wadern",
+      "spotCount": 2,
+      "lat": 49.48757925,
+      "lng": 6.83928615,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/320195461), ODbL"
+    },
+    {
+      "id": "wadern-f14ba2f069",
+      "city": "wadern",
+      "label": "Weiskircher Straße",
+      "street": "Weiskircher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wadern",
+      "spotCount": 1,
+      "lat": 49.49320585,
+      "lng": 6.8361001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1328650714), ODbL"
+    },
+    {
+      "id": "wadern-60986341a6",
+      "city": "wadern",
+      "label": "Zur Alm",
+      "street": "Zur Alm",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wadern",
+      "spotCount": 2,
+      "lat": 49.59224195,
+      "lng": 6.8705819,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/952375239), ODbL"
+    }
+  ]
+}

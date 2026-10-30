@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "roding",
+    "name": "Roding",
+    "center": {
+      "lat": 49.196217000000004,
+      "lng": 12.518051300000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "roding-f0cfaed673",
+      "city": "roding",
+      "label": "Königspergerstraße",
+      "street": "Königspergerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Roding",
+      "spotCount": 3,
+      "lat": 49.196217000000004,
+      "lng": 12.518051300000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11483406456), ODbL"
+    }
+  ]
+}

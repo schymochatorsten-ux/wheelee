@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "gaildorf",
+    "name": "Gaildorf",
+    "center": {
+      "lat": 49.000457100000006,
+      "lng": 9.769558700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gaildorf-b1dd788a5e",
+      "city": "gaildorf",
+      "label": "Bahnhofstraße 123",
+      "street": "Bahnhofstraße",
+      "houseNumber": "123",
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Gaildorf",
+      "spotCount": 1,
+      "lat": 49.00380285,
+      "lng": 9.754155650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1238643950), ODbL"
+    },
+    {
+      "id": "gaildorf-4992f212fc",
+      "city": "gaildorf",
+      "label": "Bahnhofstraße 123",
+      "street": "Bahnhofstraße",
+      "houseNumber": "123",
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Gaildorf",
+      "spotCount": 1,
+      "lat": 49.003775100000006,
+      "lng": 9.754155350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1238643951), ODbL"
+    },
+    {
+      "id": "gaildorf-85dc98e5e0",
+      "city": "gaildorf",
+      "label": "Gartenstraße 38",
+      "street": "Gartenstraße",
+      "houseNumber": "38",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gaildorf",
+      "spotCount": 1,
+      "lat": 48.997287050000004,
+      "lng": 9.7706823,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/334208992), ODbL"
+    },
+    {
+      "id": "gaildorf-72b1d94246",
+      "city": "gaildorf",
+      "label": "Kanzleistraße 1",
+      "street": "Kanzleistraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gaildorf",
+      "spotCount": 1,
+      "lat": 48.999758500000006,
+      "lng": 9.769558700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8601766769), ODbL"
+    },
+    {
+      "id": "gaildorf-409bfb1632",
+      "city": "gaildorf",
+      "label": "Kanzleistraße 10",
+      "street": "Kanzleistraße",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gaildorf",
+      "spotCount": 1,
+      "lat": 48.998968000000005,
+      "lng": 9.76894265,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1342606685), ODbL"
+    },
+    {
+      "id": "gaildorf-90650112c0",
+      "city": "gaildorf",
+      "label": "Schloss-Straße",
+      "street": "Schloss-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gaildorf",
+      "spotCount": 2,
+      "lat": 49.0022005,
+      "lng": 9.771018600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/634003632), ODbL"
+    },
+    {
+      "id": "gaildorf-c86c101780",
+      "city": "gaildorf",
+      "label": "Schloss-Straße 2",
+      "street": "Schloss-Straße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gaildorf",
+      "spotCount": 1,
+      "lat": 49.000457100000006,
+      "lng": 9.770074600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8601811959), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "heidenau",
+    "name": "Heidenau",
+    "center": {
+      "lat": 50.9777222,
+      "lng": 13.874463200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "heidenau-1adc0038b6",
+      "city": "heidenau",
+      "label": "Am Hasensprung",
+      "street": "Am Hasensprung",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Heidenau",
+      "spotCount": 4,
+      "lat": 50.952354050000004,
+      "lng": 13.8895604,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/207772696), ODbL"
+    },
+    {
+      "id": "heidenau-3c6b9119c5",
+      "city": "heidenau",
+      "label": "Dresdner Straße 15",
+      "street": "Dresdner Straße",
+      "houseNumber": "15",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heidenau",
+      "spotCount": 2,
+      "lat": 50.9777222,
+      "lng": 13.8721876,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1504711297), ODbL"
+    },
+    {
+      "id": "heidenau-b90717202b",
+      "city": "heidenau",
+      "label": "Nordstraße 27",
+      "street": "Nordstraße",
+      "houseNumber": "27",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heidenau",
+      "spotCount": 1,
+      "lat": 50.9832945,
+      "lng": 13.869832250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/270428794), ODbL"
+    },
+    {
+      "id": "heidenau-ae8d7548db",
+      "city": "heidenau",
+      "label": "Pirnaer Straße 30",
+      "street": "Pirnaer Straße",
+      "houseNumber": "30",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heidenau",
+      "spotCount": 3,
+      "lat": 50.9725426,
+      "lng": 13.874463200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32736519), ODbL"
+    }
+  ]
+}

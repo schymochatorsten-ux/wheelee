@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "eichenau",
+    "name": "Eichenau",
+    "center": {
+      "lat": 48.16899,
+      "lng": 11.32355725
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eichenau-cab563d6ff",
+      "city": "eichenau",
+      "label": "Fasanstraße 35",
+      "street": "Fasanstraße",
+      "houseNumber": "35",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eichenau",
+      "spotCount": 1,
+      "lat": 48.16899,
+      "lng": 11.3231964,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1553206357), ODbL"
+    },
+    {
+      "id": "eichenau-506c3798f3",
+      "city": "eichenau",
+      "label": "Fasanstraße 35",
+      "street": "Fasanstraße",
+      "houseNumber": "35",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eichenau",
+      "spotCount": 1,
+      "lat": 48.168982150000005,
+      "lng": 11.32312455,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1553206359), ODbL"
+    },
+    {
+      "id": "eichenau-4b2dd01395",
+      "city": "eichenau",
+      "label": "Hauptplatz 7",
+      "street": "Hauptplatz",
+      "houseNumber": "7",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eichenau",
+      "spotCount": 1,
+      "lat": 48.17319995,
+      "lng": 11.323641550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1556529562), ODbL"
+    },
+    {
+      "id": "eichenau-2be00ce82a",
+      "city": "eichenau",
+      "label": "Hauptstraße 72",
+      "street": "Hauptstraße",
+      "houseNumber": "72",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eichenau",
+      "spotCount": 1,
+      "lat": 48.16598380000001,
+      "lng": 11.32355725,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1536140688), ODbL"
+    },
+    {
+      "id": "eichenau-be64140273",
+      "city": "eichenau",
+      "label": "Park+Ride",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "05:00-24:00",
+      "district": "Eichenau",
+      "spotCount": 1,
+      "lat": 48.1799576,
+      "lng": 11.3276979,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/17967482), ODbL"
+    }
+  ]
+}

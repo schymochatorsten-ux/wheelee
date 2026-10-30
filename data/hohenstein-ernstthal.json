@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "hohenstein-ernstthal",
+    "name": "Hohenstein-Ernstthal",
+    "center": {
+      "lat": 50.8014968,
+      "lng": 12.721682000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hohenstein-ernstthal-8675e43dd4",
+      "city": "hohenstein-ernstthal",
+      "label": "Am Sachsenring",
+      "street": "Am Sachsenring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hohenstein-Ernstthal",
+      "spotCount": 5,
+      "lat": 50.804147400000005,
+      "lng": 12.672402400000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/346246080), ODbL"
+    },
+    {
+      "id": "hohenstein-ernstthal-2e54fafc8f",
+      "city": "hohenstein-ernstthal",
+      "label": "Goethestraße",
+      "street": "Goethestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hohenstein-Ernstthal",
+      "spotCount": 1,
+      "lat": 50.8014968,
+      "lng": 12.701413,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31635471), ODbL"
+    },
+    {
+      "id": "hohenstein-ernstthal-ef2bdf7900",
+      "city": "hohenstein-ernstthal",
+      "label": "Immanuel-Kant-Straße",
+      "street": "Immanuel-Kant-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hohenstein-Ernstthal",
+      "spotCount": 2,
+      "lat": 50.7997172,
+      "lng": 12.705106,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31714638), ODbL"
+    },
+    {
+      "id": "hohenstein-ernstthal-4a1978958e",
+      "city": "hohenstein-ernstthal",
+      "label": "Jahnweg",
+      "street": "Jahnweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hohenstein-Ernstthal",
+      "spotCount": 1,
+      "lat": 50.80792720000001,
+      "lng": 12.7558792,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1363394534), ODbL"
+    },
+    {
+      "id": "hohenstein-ernstthal-0ec45a554d",
+      "city": "hohenstein-ernstthal",
+      "label": "Lindenstraße",
+      "street": "Lindenstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hohenstein-Ernstthal",
+      "spotCount": 1,
+      "lat": 50.799277200000006,
+      "lng": 12.721682000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1430233973), ODbL"
+    },
+    {
+      "id": "hohenstein-ernstthal-19a93a0e39",
+      "city": "hohenstein-ernstthal",
+      "label": "Südstraße",
+      "street": "Südstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hohenstein-Ernstthal",
+      "spotCount": 1,
+      "lat": 50.7995308,
+      "lng": 12.725154750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1430537831), ODbL"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { toPlace } from "../geocode";
+import { distanceMeters } from "../geo";
 import { normalizeForSearch, searchLocalPlaces } from "./local-places";
 
 /** Zielsuche aus den eigenen Daten (ToDo 9.18 a), gegen den echten Bestand. */
@@ -59,7 +60,8 @@ describe("searchLocalPlaces", () => {
     const koeln = { lat: 50.938, lng: 6.9551 };
     const places = searchLocalPlaces("bahnhofstr", koeln, 20);
     const first = places.filter((place) => normalizeForSearch(place.label).startsWith("bahnhofstr"));
-    const meters = first.map((place) => Math.hypot(place.lat - koeln.lat, (place.lng - koeln.lng) * 0.64));
+    // Dieselbe Entfernung wie die Suche – eine Flächennäherung kippt bei zwei fast gleich weiten Treffern.
+    const meters = first.map((place) => distanceMeters(koeln, place));
     expect(meters).toEqual([...meters].sort((a, b) => a - b));
   });
 

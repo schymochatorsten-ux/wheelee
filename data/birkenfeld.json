@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "birkenfeld",
+    "name": "Birkenfeld",
+    "center": {
+      "lat": 48.87410595,
+      "lng": 8.6446044
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "birkenfeld-3dcd9498e7",
+      "city": "birkenfeld",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Birkenfeld",
+      "spotCount": 1,
+      "lat": 48.87410595,
+      "lng": 8.644557200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/137699031), ODbL"
+    },
+    {
+      "id": "birkenfeld-b4ecbda080",
+      "city": "birkenfeld",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Birkenfeld",
+      "spotCount": 1,
+      "lat": 48.873987,
+      "lng": 8.6446044,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1392316540), ODbL"
+    }
+  ]
+}

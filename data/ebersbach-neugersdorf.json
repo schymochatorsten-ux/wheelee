@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "ebersbach-neugersdorf",
+    "name": "Ebersbach-Neugersdorf",
+    "center": {
+      "lat": 51.007773900000004,
+      "lng": 14.581551300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ebersbach-neugersdorf-5f0225d99c",
+      "city": "ebersbach-neugersdorf",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ebersbach-Neugersdorf",
+      "spotCount": 3,
+      "lat": 51.007875750000004,
+      "lng": 14.5815607,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/37236391), ODbL"
+    },
+    {
+      "id": "ebersbach-neugersdorf-6143ff97c3",
+      "city": "ebersbach-neugersdorf",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ebersbach-Neugersdorf",
+      "spotCount": 1,
+      "lat": 51.007773900000004,
+      "lng": 14.581551300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/197826540), ODbL"
+    },
+    {
+      "id": "ebersbach-neugersdorf-ad685be78d",
+      "city": "ebersbach-neugersdorf",
+      "label": "Ebersbach Bahnhof Bussteig 4",
+      "street": "Ebersbach Bahnhof Bussteig 4",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ebersbach-Neugersdorf",
+      "spotCount": 2,
+      "lat": 51.00475245,
+      "lng": 14.578469850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25620538), ODbL"
+    }
+  ]
+}

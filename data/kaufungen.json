@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "kaufungen",
+    "name": "Kaufungen",
+    "center": {
+      "lat": 51.2846204,
+      "lng": 9.61931895
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kaufungen-370af57f02",
+      "city": "kaufungen",
+      "label": "Am Haferbach",
+      "street": "Am Haferbach",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kaufungen",
+      "spotCount": 1,
+      "lat": 51.2846204,
+      "lng": 9.603325650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1107611321), ODbL"
+    },
+    {
+      "id": "kaufungen-84deb180a7",
+      "city": "kaufungen",
+      "label": "Friedrich-Ebert-Straße",
+      "street": "Friedrich-Ebert-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kaufungen",
+      "spotCount": 2,
+      "lat": 51.2810241,
+      "lng": 9.61931895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/301337911), ODbL"
+    },
+    {
+      "id": "kaufungen-03c4958faa",
+      "city": "kaufungen",
+      "label": "Sandweg",
+      "street": "Sandweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kaufungen",
+      "spotCount": 2,
+      "lat": 51.28594235,
+      "lng": 9.62990255,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/301120564), ODbL"
+    },
+    {
+      "id": "kaufungen-8447f93075",
+      "city": "kaufungen",
+      "label": "Theodor-Heuss-Straße",
+      "street": "Theodor-Heuss-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kaufungen",
+      "spotCount": 3,
+      "lat": 51.28081900000001,
+      "lng": 9.6181195,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/301329063), ODbL"
+    }
+  ]
+}

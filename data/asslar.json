@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "asslar",
+    "name": "Aßlar",
+    "center": {
+      "lat": 50.589182400000006,
+      "lng": 8.4597344
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "asslar-fbaf44a975",
+      "city": "asslar",
+      "label": "Gartenstraße",
+      "street": "Gartenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aßlar",
+      "spotCount": 1,
+      "lat": 50.589182400000006,
+      "lng": 8.4593034,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/170594166), ODbL"
+    },
+    {
+      "id": "asslar-eed9cf1c86",
+      "city": "asslar",
+      "label": "Gartenstraße",
+      "street": "Gartenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aßlar",
+      "spotCount": 1,
+      "lat": 50.589115400000004,
+      "lng": 8.4597344,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1425572439), ODbL"
+    },
+    {
+      "id": "asslar-1eaf9308b1",
+      "city": "asslar",
+      "label": "Kirchberg",
+      "street": "Kirchberg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Aßlar",
+      "spotCount": 1,
+      "lat": 50.5894211,
+      "lng": 8.46515965,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1408374849), ODbL"
+    },
+    {
+      "id": "asslar-c058c43100",
+      "city": "asslar",
+      "label": "Mühlgrabenstraße",
+      "street": "Mühlgrabenstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Aßlar",
+      "spotCount": 1,
+      "lat": 50.5886586,
+      "lng": 8.45890585,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1408374858), ODbL"
+    }
+  ]
+}

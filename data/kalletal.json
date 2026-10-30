@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "kalletal",
+    "name": "Kalletal",
+    "center": {
+      "lat": 52.107616300000004,
+      "lng": 8.94786395
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kalletal-5ce68e7437",
+      "city": "kalletal",
+      "label": "Im Roten Lith",
+      "street": "Im Roten Lith",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kalletal",
+      "spotCount": 3,
+      "lat": 52.10076935000001,
+      "lng": 8.93216905,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1569521180), ODbL"
+    },
+    {
+      "id": "kalletal-d870c87d1c",
+      "city": "kalletal",
+      "label": "Rathaus",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kalletal",
+      "spotCount": 1,
+      "lat": 52.107616300000004,
+      "lng": 8.94786395,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/222040941), ODbL"
+    }
+  ]
+}

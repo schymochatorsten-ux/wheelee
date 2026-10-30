@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "schwalmstadt",
+    "name": "Schwalmstadt",
+    "center": {
+      "lat": 50.9131402,
+      "lng": 9.1850198
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schwalmstadt-334db90b5c",
+      "city": "schwalmstadt",
+      "label": "Am Berg 8",
+      "street": "Am Berg",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Schwalmstadt",
+      "spotCount": 1,
+      "lat": 50.88096095,
+      "lng": 9.13991565,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/670764459), ODbL"
+    },
+    {
+      "id": "schwalmstadt-1fc43de0db",
+      "city": "schwalmstadt",
+      "label": "An der Feuerwache",
+      "street": "An der Feuerwache",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwalmstadt",
+      "spotCount": 1,
+      "lat": 50.9213352,
+      "lng": 9.228455100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1553832481), ODbL"
+    },
+    {
+      "id": "schwalmstadt-bd7aa63f8f",
+      "city": "schwalmstadt",
+      "label": "Schwalmstadt - Treysa, Bahnhof",
+      "street": "Schwalmstadt - Treysa, Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Schwalmstadt",
+      "spotCount": 3,
+      "lat": 50.911125750000004,
+      "lng": 9.1850198,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/94806137), ODbL"
+    },
+    {
+      "id": "schwalmstadt-31fb0f0acd",
+      "city": "schwalmstadt",
+      "label": "Walkmühlenweg 6",
+      "street": "Walkmühlenweg",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwalmstadt",
+      "spotCount": 1,
+      "lat": 50.9131402,
+      "lng": 9.182396100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/137387290), ODbL"
+    }
+  ]
+}

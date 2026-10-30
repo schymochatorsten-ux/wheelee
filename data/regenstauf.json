@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "regenstauf",
+    "name": "Regenstauf",
+    "center": {
+      "lat": 49.123266650000005,
+      "lng": 12.129360250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "regenstauf-8d4de35bba",
+      "city": "regenstauf",
+      "label": "Am Grasigen Weg 7",
+      "street": "Am Grasigen Weg",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Regenstauf",
+      "spotCount": 2,
+      "lat": 49.1347218,
+      "lng": 12.129360250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/585936380), ODbL"
+    },
+    {
+      "id": "regenstauf-cdb5df83b5",
+      "city": "regenstauf",
+      "label": "Am Spangl",
+      "street": "Am Spangl",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Regenstauf",
+      "spotCount": 2,
+      "lat": 49.1222238,
+      "lng": 12.124786400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29256757), ODbL"
+    },
+    {
+      "id": "regenstauf-0cad06f2b1",
+      "city": "regenstauf",
+      "label": "Hauzensteiner Straße",
+      "street": "Hauzensteiner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Regenstauf",
+      "spotCount": 2,
+      "lat": 49.1188827,
+      "lng": 12.13826655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/89805233), ODbL"
+    },
+    {
+      "id": "regenstauf-f4339b8448",
+      "city": "regenstauf",
+      "label": "Masurenweg",
+      "street": "Masurenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Regenstauf",
+      "spotCount": 1,
+      "lat": 49.123266650000005,
+      "lng": 12.125507800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29256750), ODbL"
+    }
+  ]
+}

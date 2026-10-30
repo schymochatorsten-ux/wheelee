@@ -12,41 +12,11 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "loehne-14a8e7bfb1",
-      "city": "loehne",
-      "label": "Behindertenparkplatz Löhne",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Löhne",
-      "spotCount": 2,
-      "lat": 52.19792435000001,
-      "lng": 8.718739500000002,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/96653319), ODbL"
-    },
-    {
-      "id": "loehne-0fb1fc415e",
-      "city": "loehne",
-      "label": "Behindertenparkplatz Löhne",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Löhne",
-      "spotCount": 2,
-      "lat": 52.19705565,
-      "lng": 8.712370550000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/126384039), ODbL"
-    },
-    {
       "id": "loehne-41202557b4",
       "city": "loehne",
-      "label": "Behindertenparkplatz Löhne",
-      "street": null,
-      "houseNumber": null,
+      "label": "Albert-Schweitzer-Straße 13",
+      "street": "Albert-Schweitzer-Straße",
+      "houseNumber": "13",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Löhne",
@@ -59,8 +29,8 @@
     {
       "id": "loehne-5d212e2099",
       "city": "loehne",
-      "label": "Behindertenparkplatz Löhne",
-      "street": null,
+      "label": "Bünder Straße",
+      "street": "Bünder Straße",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,
@@ -72,10 +42,25 @@
       "source": "OpenStreetMap (way/1318888883), ODbL"
     },
     {
+      "id": "loehne-0fb1fc415e",
+      "city": "loehne",
+      "label": "Bünder Straße 9",
+      "street": "Bünder Straße",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Löhne",
+      "spotCount": 2,
+      "lat": 52.19705565,
+      "lng": 8.712370550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/126384039), ODbL"
+    },
+    {
       "id": "loehne-9954c0c56b",
       "city": "loehne",
-      "label": "Behindertenparkplatz Löhne",
-      "street": null,
+      "label": "Gewerbestraße",
+      "street": "Gewerbestraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -89,8 +74,8 @@
     {
       "id": "loehne-ce7b0d379b",
       "city": "loehne",
-      "label": "Behindertenparkplatz Löhne",
-      "street": null,
+      "label": "Gewerbestraße",
+      "street": "Gewerbestraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -100,6 +85,21 @@
       "lng": 8.7536715,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1505475902), ODbL"
+    },
+    {
+      "id": "loehne-14a8e7bfb1",
+      "city": "loehne",
+      "label": "Oeynhausener Straße",
+      "street": "Oeynhausener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Löhne",
+      "spotCount": 2,
+      "lat": 52.19792435000001,
+      "lng": 8.718739500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/96653319), ODbL"
     }
   ]
 }

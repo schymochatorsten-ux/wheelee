@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "eichstaett",
+    "name": "Eichstätt",
+    "center": {
+      "lat": 48.8936057,
+      "lng": 11.1803022
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eichstaett-671b6793c4",
+      "city": "eichstaett",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eichstätt",
+      "spotCount": 2,
+      "lat": 48.869631500000004,
+      "lng": 11.164476700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/448626521), ODbL"
+    },
+    {
+      "id": "eichstaett-7d24c68aeb",
+      "city": "eichstaett",
+      "label": "Behindertenparkplatz Eichstätt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eichstätt",
+      "spotCount": 1,
+      "lat": 48.8861348,
+      "lng": 11.17912605,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1362621018), ODbL"
+    },
+    {
+      "id": "eichstaett-881a097084",
+      "city": "eichstaett",
+      "label": "Marktplatz 20a",
+      "street": "Marktplatz",
+      "houseNumber": "20a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Eichstätt",
+      "spotCount": 1,
+      "lat": 48.8936057,
+      "lng": 11.1839057,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4511636329), ODbL"
+    },
+    {
+      "id": "eichstaett-82041c1830",
+      "city": "eichstaett",
+      "label": "Wasserwiese",
+      "street": "Wasserwiese",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eichstätt",
+      "spotCount": 4,
+      "lat": 48.8969079,
+      "lng": 11.1803022,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29072884), ODbL"
+    }
+  ]
+}

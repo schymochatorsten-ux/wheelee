@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "niefern-oeschelbronn",
+    "name": "Niefern-Öschelbronn",
+    "center": {
+      "lat": 48.90855555,
+      "lng": 8.7728714
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "niefern-oeschelbronn-fb5e53b040",
+      "city": "niefern-oeschelbronn",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Niefern-Öschelbronn",
+      "spotCount": 2,
+      "lat": 48.91955555,
+      "lng": 8.76811215,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/326058337), ODbL"
+    },
+    {
+      "id": "niefern-oeschelbronn-b2a97b94a0",
+      "city": "niefern-oeschelbronn",
+      "label": "Bahnhofstraße 40",
+      "street": "Bahnhofstraße",
+      "houseNumber": "40",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Niefern-Öschelbronn",
+      "spotCount": 2,
+      "lat": 48.9198436,
+      "lng": 8.76905065,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1420962495), ODbL"
+    },
+    {
+      "id": "niefern-oeschelbronn-3622a6ee78",
+      "city": "niefern-oeschelbronn",
+      "label": "Hauptstraße 328/1",
+      "street": "Hauptstraße",
+      "houseNumber": "328/1",
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Niefern-Öschelbronn",
+      "spotCount": 1,
+      "lat": 48.90595105,
+      "lng": 8.81417925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1312205208), ODbL"
+    },
+    {
+      "id": "niefern-oeschelbronn-6742f0f2cb",
+      "city": "niefern-oeschelbronn",
+      "label": "Hauptstraße 333",
+      "street": "Hauptstraße",
+      "houseNumber": "333",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Niefern-Öschelbronn",
+      "spotCount": 1,
+      "lat": 48.905930600000005,
+      "lng": 8.81399045,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1312205213), ODbL"
+    },
+    {
+      "id": "niefern-oeschelbronn-270ca43488",
+      "city": "niefern-oeschelbronn",
+      "label": "Rasthof Pforzheim",
+      "street": "Rasthof Pforzheim",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Niefern-Öschelbronn",
+      "spotCount": 3,
+      "lat": 48.90855555,
+      "lng": 8.7728714,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/15216155), ODbL"
+    }
+  ]
+}

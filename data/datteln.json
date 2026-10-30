@@ -14,9 +14,9 @@
     {
       "id": "datteln-701b2cfd04",
       "city": "datteln",
-      "label": "Behindertenparkplatz Datteln",
-      "street": null,
-      "houseNumber": null,
+      "label": "Hans-Böckler-Straße 3",
+      "street": "Hans-Böckler-Straße",
+      "houseNumber": "3",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Datteln",
@@ -27,26 +27,11 @@
       "source": "OpenStreetMap (way/387486201), ODbL"
     },
     {
-      "id": "datteln-e482433aff",
-      "city": "datteln",
-      "label": "Behindertenparkplatz Datteln",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Datteln",
-      "spotCount": 4,
-      "lat": 51.65651015,
-      "lng": 7.35274065,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/528157179), ODbL"
-    },
-    {
       "id": "datteln-59b5361268",
       "city": "datteln",
-      "label": "Behindertenparkplatz Datteln",
-      "street": null,
-      "houseNumber": null,
+      "label": "Heibeckstraße 24",
+      "street": "Heibeckstraße",
+      "houseNumber": "24",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Datteln",
@@ -55,6 +40,21 @@
       "lng": 7.34886605,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/921225543), ODbL"
+    },
+    {
+      "id": "datteln-e482433aff",
+      "city": "datteln",
+      "label": "Ostring 2",
+      "street": "Ostring",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Datteln",
+      "spotCount": 4,
+      "lat": 51.65651015,
+      "lng": 7.35274065,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/528157179), ODbL"
     }
   ]
 }

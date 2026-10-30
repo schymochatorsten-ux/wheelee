@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "trossingen",
+    "name": "Trossingen",
+    "center": {
+      "lat": 48.080608700000006,
+      "lng": 8.63044695
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "trossingen-057dc19ad1",
+      "city": "trossingen",
+      "label": "Breitestraße",
+      "street": "Breitestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Trossingen",
+      "spotCount": 2,
+      "lat": 48.072772150000006,
+      "lng": 8.630333,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32640367), ODbL"
+    },
+    {
+      "id": "trossingen-71f6f12b95",
+      "city": "trossingen",
+      "label": "Breitestraße",
+      "street": "Breitestraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Trossingen",
+      "spotCount": 1,
+      "lat": 48.072981850000005,
+      "lng": 8.63037135,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1500627563), ODbL"
+    },
+    {
+      "id": "trossingen-fe30d15918",
+      "city": "trossingen",
+      "label": "Breitestraße",
+      "street": "Breitestraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Trossingen",
+      "spotCount": 1,
+      "lat": 48.07297145,
+      "lng": 8.63044695,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1500627564), ODbL"
+    },
+    {
+      "id": "trossingen-cb96596fba",
+      "city": "trossingen",
+      "label": "Herbert-Walz-Weg",
+      "street": "Herbert-Walz-Weg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Trossingen",
+      "spotCount": 1,
+      "lat": 48.08419120000001,
+      "lng": 8.63355915,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1560542296), ODbL"
+    },
+    {
+      "id": "trossingen-486599c3f3",
+      "city": "trossingen",
+      "label": "Justinus-Kerner-Weg",
+      "street": "Justinus-Kerner-Weg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Trossingen",
+      "spotCount": 1,
+      "lat": 48.083880650000005,
+      "lng": 8.63381985,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1560542297), ODbL"
+    },
+    {
+      "id": "trossingen-b91ac22c9a",
+      "city": "trossingen",
+      "label": "Steppachhalde",
+      "street": "Steppachhalde",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Trossingen",
+      "spotCount": 1,
+      "lat": 48.080608700000006,
+      "lng": 8.617005500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9956349088), ODbL"
+    }
+  ]
+}

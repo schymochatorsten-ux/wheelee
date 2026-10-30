@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "sulzbach-rosenberg",
+    "name": "Sulzbach-Rosenberg",
+    "center": {
+      "lat": 49.50928125,
+      "lng": 11.737072150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sulzbach-rosenberg-862679a5d7",
+      "city": "sulzbach-rosenberg",
+      "label": "Dieselstraße",
+      "street": "Dieselstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sulzbach-Rosenberg",
+      "spotCount": 2,
+      "lat": 49.49703575,
+      "lng": 11.732993950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1341548137), ODbL"
+    },
+    {
+      "id": "sulzbach-rosenberg-64a9bb1a8c",
+      "city": "sulzbach-rosenberg",
+      "label": "Realschule",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sulzbach-Rosenberg",
+      "spotCount": 1,
+      "lat": 49.50928125,
+      "lng": 11.737072150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/42724119), ODbL"
+    }
+  ]
+}

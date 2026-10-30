@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "lichtenau",
+    "name": "Lichtenau",
+    "center": {
+      "lat": 51.61673630000001,
+      "lng": 8.8961749
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lichtenau-fe2ed203df",
+      "city": "lichtenau",
+      "label": "Am Kloster",
+      "street": "Am Kloster",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lichtenau",
+      "spotCount": 4,
+      "lat": 51.5664489,
+      "lng": 8.8400756,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/529796516), ODbL"
+    },
+    {
+      "id": "lichtenau-2cfd4cf2e2",
+      "city": "lichtenau",
+      "label": "Driburger Straße",
+      "street": "Driburger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lichtenau",
+      "spotCount": 2,
+      "lat": 51.61705395,
+      "lng": 8.8961749,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/576910878), ODbL"
+    },
+    {
+      "id": "lichtenau-0cd8f4809f",
+      "city": "lichtenau",
+      "label": "Lange Straße 40",
+      "street": "Lange Straße",
+      "houseNumber": "40",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lichtenau",
+      "spotCount": 1,
+      "lat": 51.61673630000001,
+      "lng": 8.8971468,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9911281816), ODbL"
+    }
+  ]
+}

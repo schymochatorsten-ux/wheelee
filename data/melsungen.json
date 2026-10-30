@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "melsungen",
+    "name": "Melsungen",
+    "center": {
+      "lat": 51.13235865,
+      "lng": 9.54144315
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "melsungen-5deca40502",
+      "city": "melsungen",
+      "label": "Kesselberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Melsungen",
+      "spotCount": 1,
+      "lat": 51.13235865,
+      "lng": 9.538789600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/701955580), ODbL"
+    },
+    {
+      "id": "melsungen-e62d8832f2",
+      "city": "melsungen",
+      "label": "Schlachthofstraße 7",
+      "street": "Schlachthofstraße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Melsungen",
+      "spotCount": 1,
+      "lat": 51.1344786,
+      "lng": 9.54144315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/288923405), ODbL"
+    },
+    {
+      "id": "melsungen-a005e1d9ce",
+      "city": "melsungen",
+      "label": "Zum Pfieffrain",
+      "street": "Zum Pfieffrain",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Melsungen",
+      "spotCount": 2,
+      "lat": 51.124927050000004,
+      "lng": 9.544005049999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/142867678), ODbL"
+    }
+  ]
+}

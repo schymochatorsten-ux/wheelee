@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "schauenburg",
+    "name": "Schauenburg",
+    "center": {
+      "lat": 51.28188465,
+      "lng": 9.3517533
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schauenburg-80609bf629",
+      "city": "schauenburg",
+      "label": "Amters Hof",
+      "street": "Amters Hof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schauenburg",
+      "spotCount": 2,
+      "lat": 51.271372500000005,
+      "lng": 9.3763234,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/42303808), ODbL"
+    },
+    {
+      "id": "schauenburg-9c71e88852",
+      "city": "schauenburg",
+      "label": "Korbacher Straße 300",
+      "street": "Korbacher Straße",
+      "houseNumber": "300",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schauenburg",
+      "spotCount": 2,
+      "lat": 51.2818867,
+      "lng": 9.3516648,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/746092677), ODbL"
+    },
+    {
+      "id": "schauenburg-d3d5edf660",
+      "city": "schauenburg",
+      "label": "Korbacher Straße 300",
+      "street": "Korbacher Straße",
+      "houseNumber": "300",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schauenburg",
+      "spotCount": 1,
+      "lat": 51.28185285000001,
+      "lng": 9.3517533,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1560546249), ODbL"
+    },
+    {
+      "id": "schauenburg-0a91dec654",
+      "city": "schauenburg",
+      "label": "Korbacher Straße 300",
+      "street": "Korbacher Straße",
+      "houseNumber": "300",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schauenburg",
+      "spotCount": 1,
+      "lat": 51.28188465,
+      "lng": 9.3517443,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1560546250), ODbL"
+    }
+  ]
+}

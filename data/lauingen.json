@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "lauingen",
+    "name": "Lauingen (Donau)",
+    "center": {
+      "lat": 48.5699906,
+      "lng": 10.4279259
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lauingen-86b67eaf0e",
+      "city": "lauingen",
+      "label": "Albertusstraße",
+      "street": "Albertusstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Lauingen (Donau)",
+      "spotCount": 1,
+      "lat": 48.5709713,
+      "lng": 10.43070655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/158453716), ODbL"
+    },
+    {
+      "id": "lauingen-305f42606d",
+      "city": "lauingen",
+      "label": "Kastellstraße",
+      "street": "Kastellstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lauingen (Donau)",
+      "spotCount": 1,
+      "lat": 48.56336415,
+      "lng": 10.417212,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1279597479), ODbL"
+    },
+    {
+      "id": "lauingen-097d808ae1",
+      "city": "lauingen",
+      "label": "Kastellstraße",
+      "street": "Kastellstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lauingen (Donau)",
+      "spotCount": 1,
+      "lat": 48.56337285,
+      "lng": 10.41727805,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1279597480), ODbL"
+    },
+    {
+      "id": "lauingen-e325da29e1",
+      "city": "lauingen",
+      "label": "Kastenstraße 5",
+      "street": "Kastenstraße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Lauingen (Donau)",
+      "spotCount": 1,
+      "lat": 48.56950035,
+      "lng": 10.4279259,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/158449065), ODbL"
+    },
+    {
+      "id": "lauingen-edf256ee5e",
+      "city": "lauingen",
+      "label": "Segrépromenade",
+      "street": "Segrépromenade",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Lauingen (Donau)",
+      "spotCount": 1,
+      "lat": 48.5699906,
+      "lng": 10.4340098,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/158515797), ODbL"
+    },
+    {
+      "id": "lauingen-b4eb136a6e",
+      "city": "lauingen",
+      "label": "T-Club",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lauingen (Donau)",
+      "spotCount": 1,
+      "lat": 48.5777701,
+      "lng": 10.421887100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29311182), ODbL"
+    },
+    {
+      "id": "lauingen-c95ee76d16",
+      "city": "lauingen",
+      "label": "Wittelsbacherplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lauingen (Donau)",
+      "spotCount": 1,
+      "lat": 48.5727959,
+      "lng": 10.42865775,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/158453724), ODbL"
+    }
+  ]
+}

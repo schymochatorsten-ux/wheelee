@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "emsbueren",
+    "name": "Emsbüren",
+    "center": {
+      "lat": 52.39173875,
+      "lng": 7.295958850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "emsbueren-ae2555be57",
+      "city": "emsbueren",
+      "label": "In der Maate 2-4",
+      "street": "In der Maate",
+      "houseNumber": "2-4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Emsbüren",
+      "spotCount": 1,
+      "lat": 52.39173875,
+      "lng": 7.295958850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/89821532), ODbL"
+    }
+  ]
+}

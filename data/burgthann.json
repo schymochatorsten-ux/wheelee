@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "burgthann",
+    "name": "Burgthann",
+    "center": {
+      "lat": 49.3483146,
+      "lng": 11.315411000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "burgthann-07c2b8e375",
+      "city": "burgthann",
+      "label": "Bahnweg",
+      "street": "Bahnweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burgthann",
+      "spotCount": 1,
+      "lat": 49.3314029,
+      "lng": 11.3330257,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1714017097), ODbL"
+    },
+    {
+      "id": "burgthann-b486db2504",
+      "city": "burgthann",
+      "label": "Bergstraße 35",
+      "street": "Bergstraße",
+      "houseNumber": "35",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burgthann",
+      "spotCount": 1,
+      "lat": 49.351014400000004,
+      "lng": 11.315411000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1714028242), ODbL"
+    },
+    {
+      "id": "burgthann-c2b65431dd",
+      "city": "burgthann",
+      "label": "Hessenstraße",
+      "street": "Hessenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burgthann",
+      "spotCount": 1,
+      "lat": 49.3318345,
+      "lng": 11.333537,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/58820471), ODbL"
+    },
+    {
+      "id": "burgthann-c5b4b0c519",
+      "city": "burgthann",
+      "label": "Hirschberger Straße",
+      "street": "Hirschberger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burgthann",
+      "spotCount": 2,
+      "lat": 49.3483146,
+      "lng": 11.31003385,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34997555), ODbL"
+    },
+    {
+      "id": "burgthann-d004b84d8a",
+      "city": "burgthann",
+      "label": "Mimberger Straße",
+      "street": "Mimberger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burgthann",
+      "spotCount": 4,
+      "lat": 49.35061015000001,
+      "lng": 11.29419695,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/100803195), ODbL"
+    }
+  ]
+}

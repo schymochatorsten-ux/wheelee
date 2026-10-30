@@ -14,9 +14,9 @@
     {
       "id": "salzwedel-047b7dc4a7",
       "city": "salzwedel",
-      "label": "Behindertenparkplatz Salzwedel",
-      "street": null,
-      "houseNumber": null,
+      "label": "An der Katharinenkirche 2",
+      "street": "An der Katharinenkirche",
+      "houseNumber": "2",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Salzwedel",
@@ -29,9 +29,9 @@
     {
       "id": "salzwedel-60ab72dad8",
       "city": "salzwedel",
-      "label": "Behindertenparkplatz Salzwedel",
-      "street": null,
-      "houseNumber": null,
+      "label": "Hohe Brücke 8-10",
+      "street": "Hohe Brücke",
+      "houseNumber": "8-10",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Salzwedel",
@@ -40,21 +40,6 @@
       "lng": 11.154509700000002,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1210945508), ODbL"
-    },
-    {
-      "id": "salzwedel-577aa957f2",
-      "city": "salzwedel",
-      "label": "Behindertenparkplatz Salzwedel",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Salzwedel",
-      "spotCount": 19,
-      "lat": 52.85288955,
-      "lng": 11.1476754,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1430204804), ODbL"
     },
     {
       "id": "salzwedel-49a5d22c50",
@@ -70,6 +55,21 @@
       "lng": 11.15051055,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/27607373), ODbL"
+    },
+    {
+      "id": "salzwedel-577aa957f2",
+      "city": "salzwedel",
+      "label": "Südbockhorn 16",
+      "street": "Südbockhorn",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Salzwedel",
+      "spotCount": 19,
+      "lat": 52.85288955,
+      "lng": 11.1476754,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1430204804), ODbL"
     }
   ]
 }

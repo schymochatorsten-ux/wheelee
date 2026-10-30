@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "selb",
+    "name": "Selb",
+    "center": {
+      "lat": 50.181002050000004,
+      "lng": 12.123370950000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "selb-b3aea38162",
+      "city": "selb",
+      "label": "Albert-Pausch-Ring 4",
+      "street": "Albert-Pausch-Ring",
+      "houseNumber": "4",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Selb",
+      "spotCount": 1,
+      "lat": 50.1734919,
+      "lng": 12.122931300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11023150998), ODbL"
+    },
+    {
+      "id": "selb-6181ac7024",
+      "city": "selb",
+      "label": "Alte Hofer Straße",
+      "street": "Alte Hofer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Selb",
+      "spotCount": 2,
+      "lat": 50.181002050000004,
+      "lng": 12.123370950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/576988304), ODbL"
+    }
+  ]
+}

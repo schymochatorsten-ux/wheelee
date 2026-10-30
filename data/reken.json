@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "reken",
+    "name": "Reken",
+    "center": {
+      "lat": 51.83181830000001,
+      "lng": 7.0425697000000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "reken-32c105abb0",
+      "city": "reken",
+      "label": "Bleeseke Plass",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Reken",
+      "spotCount": 2,
+      "lat": 51.83181830000001,
+      "lng": 7.0425697000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/82715817), ODbL"
+    },
+    {
+      "id": "reken-d129ef27e8",
+      "city": "reken",
+      "label": "Frankenhof",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Reken",
+      "spotCount": 1,
+      "lat": 51.806628200000006,
+      "lng": 7.02184535,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1418149281), ODbL"
+    },
+    {
+      "id": "reken-d1ed1b6b65",
+      "city": "reken",
+      "label": "Schultenhoff",
+      "street": "Schultenhoff",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Reken",
+      "spotCount": 2,
+      "lat": 51.83235570000001,
+      "lng": 7.0468919,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/38804607), ODbL"
+    }
+  ]
+}

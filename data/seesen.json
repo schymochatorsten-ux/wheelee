@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "seesen",
+    "name": "Seesen",
+    "center": {
+      "lat": 51.92558615,
+      "lng": 10.1432693
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "seesen-bbc1bbf9df",
+      "city": "seesen",
+      "label": "Harz Ost",
+      "street": "Harz Ost",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Seesen",
+      "spotCount": 1,
+      "lat": 51.92558615,
+      "lng": 10.1432693,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1518104562), ODbL"
+    },
+    {
+      "id": "seesen-a1ab236d1c",
+      "city": "seesen",
+      "label": "Harz Ost",
+      "street": "Harz Ost",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Seesen",
+      "spotCount": 1,
+      "lat": 51.92564215,
+      "lng": 10.14318645,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1518104563), ODbL"
+    },
+    {
+      "id": "seesen-a0aa4fce11",
+      "city": "seesen",
+      "label": "St.-Annen-Straße",
+      "street": "St.-Annen-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Seesen",
+      "spotCount": 3,
+      "lat": 51.88785625,
+      "lng": 10.161909399999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1537086696), ODbL"
+    }
+  ]
+}

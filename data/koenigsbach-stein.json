@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "koenigsbach-stein",
+    "name": "Königsbach-Stein",
+    "center": {
+      "lat": 48.962812050000004,
+      "lng": 8.6089685
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "koenigsbach-stein-825ef46fbf",
+      "city": "koenigsbach-stein",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Königsbach-Stein",
+      "spotCount": 1,
+      "lat": 48.962812050000004,
+      "lng": 8.6087944,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35200137), ODbL"
+    },
+    {
+      "id": "koenigsbach-stein-d57dec7445",
+      "city": "koenigsbach-stein",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Königsbach-Stein",
+      "spotCount": 1,
+      "lat": 48.9626789,
+      "lng": 8.6089685,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1394505925), ODbL"
+    }
+  ]
+}

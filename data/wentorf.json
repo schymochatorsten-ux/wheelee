@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "wentorf",
+    "name": "Wentorf bei Hamburg",
+    "center": {
+      "lat": 53.489459800000006,
+      "lng": 10.2536717
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wentorf-55b03cf22f",
+      "city": "wentorf",
+      "label": "Am Casinopark 14",
+      "street": "Am Casinopark",
+      "houseNumber": "14",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wentorf bei Hamburg",
+      "spotCount": 6,
+      "lat": 53.489459800000006,
+      "lng": 10.2536717,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1889746434), ODbL"
+    },
+    {
+      "id": "wentorf-fc569a0c8d",
+      "city": "wentorf",
+      "label": "Auf dem Ralande",
+      "street": "Auf dem Ralande",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wentorf bei Hamburg",
+      "spotCount": 4,
+      "lat": 53.48820005,
+      "lng": 10.27135065,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/177694851), ODbL"
+    },
+    {
+      "id": "wentorf-0d456ce425",
+      "city": "wentorf",
+      "label": "Zollstraße",
+      "street": "Zollstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wentorf bei Hamburg",
+      "spotCount": 3,
+      "lat": 53.4896248,
+      "lng": 10.251685250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/274297815), ODbL"
+    }
+  ]
+}

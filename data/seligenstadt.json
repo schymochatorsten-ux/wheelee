@@ -12,25 +12,10 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "seligenstadt-41cebe9a7c",
-      "city": "seligenstadt",
-      "label": "Behindertenparkplatz Seligenstadt",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Seligenstadt",
-      "spotCount": 3,
-      "lat": 50.0320428,
-      "lng": 8.9466048,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/305096409), ODbL"
-    },
-    {
       "id": "seligenstadt-bb25084fc6",
       "city": "seligenstadt",
-      "label": "Behindertenparkplatz Seligenstadt",
-      "street": null,
+      "label": "Aschaffenburger Straße",
+      "street": "Aschaffenburger Straße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -42,25 +27,10 @@
       "source": "OpenStreetMap (way/1001799998), ODbL"
     },
     {
-      "id": "seligenstadt-9f06644a77",
-      "city": "seligenstadt",
-      "label": "Behindertenparkplatz Seligenstadt",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Seligenstadt",
-      "spotCount": 3,
-      "lat": 50.040395800000006,
-      "lng": 8.96807465,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1088544718), ODbL"
-    },
-    {
       "id": "seligenstadt-c1d135d6ff",
       "city": "seligenstadt",
-      "label": "Behindertenparkplatz Seligenstadt",
-      "street": null,
+      "label": "Aschaffenburger Straße",
+      "street": "Aschaffenburger Straße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -70,6 +40,36 @@
       "lng": 8.9874419,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1459348670), ODbL"
+    },
+    {
+      "id": "seligenstadt-41cebe9a7c",
+      "city": "seligenstadt",
+      "label": "Dudenhöfer Straße",
+      "street": "Dudenhöfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Seligenstadt",
+      "spotCount": 3,
+      "lat": 50.0320428,
+      "lng": 8.9466048,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/305096409), ODbL"
+    },
+    {
+      "id": "seligenstadt-9f06644a77",
+      "city": "seligenstadt",
+      "label": "Eisenbahnstraße 10",
+      "street": "Eisenbahnstraße",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Seligenstadt",
+      "spotCount": 3,
+      "lat": 50.040395800000006,
+      "lng": 8.96807465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1088544718), ODbL"
     }
   ]
 }

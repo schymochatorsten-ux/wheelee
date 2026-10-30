@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "vilsbiburg",
+    "name": "Vilsbiburg",
+    "center": {
+      "lat": 48.452036500000006,
+      "lng": 12.355345500000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "vilsbiburg-592533d16d",
+      "city": "vilsbiburg",
+      "label": "Kirchenweg",
+      "street": "Kirchenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vilsbiburg",
+      "spotCount": 2,
+      "lat": 48.452036500000006,
+      "lng": 12.355345500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/388133167), ODbL"
+    },
+    {
+      "id": "vilsbiburg-10fef3b2af",
+      "city": "vilsbiburg",
+      "label": "P+R Vilsbiburg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vilsbiburg",
+      "spotCount": 4,
+      "lat": 48.44681775000001,
+      "lng": 12.347525450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/340633222), ODbL"
+    }
+  ]
+}

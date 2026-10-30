@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "lippetal",
+    "name": "Lippetal",
+    "center": {
+      "lat": 51.69581455000001,
+      "lng": 7.96668925
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lippetal-bb401e760e",
+      "city": "lippetal",
+      "label": "Dolberger Straße",
+      "street": "Dolberger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lippetal",
+      "spotCount": 1,
+      "lat": 51.695785550000004,
+      "lng": 7.96656675,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1151939535), ODbL"
+    },
+    {
+      "id": "lippetal-9607b80590",
+      "city": "lippetal",
+      "label": "Dolberger Straße",
+      "street": "Dolberger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lippetal",
+      "spotCount": 1,
+      "lat": 51.69581455000001,
+      "lng": 7.96668925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1151939536), ODbL"
+    },
+    {
+      "id": "lippetal-fe6f064d3f",
+      "city": "lippetal",
+      "label": "Geiststraße",
+      "street": "Geiststraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Lippetal",
+      "spotCount": 1,
+      "lat": 51.665303050000006,
+      "lng": 8.04446405,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1105732981), ODbL"
+    },
+    {
+      "id": "lippetal-23973bebd9",
+      "city": "lippetal",
+      "label": "Strängenbach 1",
+      "street": "Strängenbach",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lippetal",
+      "spotCount": 1,
+      "lat": 51.6961476,
+      "lng": 7.9663409000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1151939537), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bohmte",
+    "name": "Bohmte",
+    "center": {
+      "lat": 52.3605534,
+      "lng": 8.30771035
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bohmte-72938ae490",
+      "city": "bohmte",
+      "label": "Bremer Straße 2",
+      "street": "Bremer Straße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bohmte",
+      "spotCount": 1,
+      "lat": 52.3605534,
+      "lng": 8.30771035,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1345657603), ODbL"
+    }
+  ]
+}

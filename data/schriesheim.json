@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "schriesheim",
+    "name": "Schriesheim",
+    "center": {
+      "lat": 49.476432200000005,
+      "lng": 8.66504155
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schriesheim-67be5f2979",
+      "city": "schriesheim",
+      "label": "Friedrichstraße 28-30",
+      "street": "Friedrichstraße",
+      "houseNumber": "28-30",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Schriesheim",
+      "spotCount": 2,
+      "lat": 49.476432200000005,
+      "lng": 8.66289475,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/976872823), ODbL"
+    },
+    {
+      "id": "schriesheim-2fd01dd9de",
+      "city": "schriesheim",
+      "label": "Heidelberger Straße 19",
+      "street": "Heidelberger Straße",
+      "houseNumber": "19",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schriesheim",
+      "spotCount": 1,
+      "lat": 49.4750887,
+      "lng": 8.66504155,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1304661692), ODbL"
+    }
+  ]
+}

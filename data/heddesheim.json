@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "heddesheim",
+    "name": "Heddesheim",
+    "center": {
+      "lat": 49.509561250000004,
+      "lng": 8.633425500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "heddesheim-f8fb75527f",
+      "city": "heddesheim",
+      "label": "Bahnhof Heddesheim-Hirschberg",
+      "street": "Bahnhof Heddesheim-Hirschberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heddesheim",
+      "spotCount": 1,
+      "lat": 49.509561250000004,
+      "lng": 8.633425500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/882244732), ODbL"
+    },
+    {
+      "id": "heddesheim-6823e8c7b3",
+      "city": "heddesheim",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heddesheim",
+      "spotCount": 1,
+      "lat": 49.50474845000001,
+      "lng": 8.59360165,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/48761968), ODbL"
+    }
+  ]
+}

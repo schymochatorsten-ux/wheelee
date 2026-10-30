@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "kirchhain",
+    "name": "Kirchhain",
+    "center": {
+      "lat": 50.8193337,
+      "lng": 8.92265045
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kirchhain-fa9434a606",
+      "city": "kirchhain",
+      "label": "Im Riedeboden",
+      "street": "Im Riedeboden",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kirchhain",
+      "spotCount": 2,
+      "lat": 50.827217000000005,
+      "lng": 8.92852975,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1196872947), ODbL"
+    },
+    {
+      "id": "kirchhain-4e2c355d33",
+      "city": "kirchhain",
+      "label": "Mühlgasse",
+      "street": "Mühlgasse",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kirchhain",
+      "spotCount": 1,
+      "lat": 50.819039450000005,
+      "lng": 8.922016200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1309344290), ODbL"
+    },
+    {
+      "id": "kirchhain-bc5792adfc",
+      "city": "kirchhain",
+      "label": "Mühlgasse",
+      "street": "Mühlgasse",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kirchhain",
+      "spotCount": 1,
+      "lat": 50.819008950000004,
+      "lng": 8.92203445,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1309344291), ODbL"
+    },
+    {
+      "id": "kirchhain-dc51c2b908",
+      "city": "kirchhain",
+      "label": "Mühlgasse",
+      "street": "Mühlgasse",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kirchhain",
+      "spotCount": 1,
+      "lat": 50.8193337,
+      "lng": 8.922692000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1309344316), ODbL"
+    },
+    {
+      "id": "kirchhain-dd575ed794",
+      "city": "kirchhain",
+      "label": "Mühlgasse 19",
+      "street": "Mühlgasse",
+      "houseNumber": "19",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kirchhain",
+      "spotCount": 1,
+      "lat": 50.819371600000004,
+      "lng": 8.92265045,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1309344317), ODbL"
+    }
+  ]
+}

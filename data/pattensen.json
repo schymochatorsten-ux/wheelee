@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "pattensen",
+    "name": "Pattensen",
+    "center": {
+      "lat": 52.2637886,
+      "lng": 9.765861650000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pattensen-a3b707d03f",
+      "city": "pattensen",
+      "label": "Corvinusplatz",
+      "street": "Corvinusplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pattensen",
+      "spotCount": 1,
+      "lat": 52.2637886,
+      "lng": 9.759861149999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1422882441), ODbL"
+    },
+    {
+      "id": "pattensen-1b19e7fa5d",
+      "city": "pattensen",
+      "label": "Koldinger Straße",
+      "street": "Koldinger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pattensen",
+      "spotCount": 1,
+      "lat": 52.2650723,
+      "lng": 9.76877975,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/136433170), ODbL"
+    },
+    {
+      "id": "pattensen-7af4046b49",
+      "city": "pattensen",
+      "label": "Marienbergstraße",
+      "street": "Marienbergstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pattensen",
+      "spotCount": 1,
+      "lat": 52.17467535,
+      "lng": 9.765861650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32743409), ODbL"
+    }
+  ]
+}

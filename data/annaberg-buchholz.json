@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "annaberg-buchholz",
+    "name": "Annaberg-Buchholz",
+    "center": {
+      "lat": 50.594340300000006,
+      "lng": 13.0095582
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "annaberg-buchholz-1bbeac1b69",
+      "city": "annaberg-buchholz",
+      "label": "Adam-Ries-Straße",
+      "street": "Adam-Ries-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Annaberg-Buchholz",
+      "spotCount": 2,
+      "lat": 50.5856682,
+      "lng": 13.01157465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/132931698), ODbL"
+    },
+    {
+      "id": "annaberg-buchholz-1a3d996e97",
+      "city": "annaberg-buchholz",
+      "label": "Bahnhofsplatz",
+      "street": "Bahnhofsplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Annaberg-Buchholz",
+      "spotCount": 1,
+      "lat": 50.578528750000004,
+      "lng": 12.99871775,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1073574269), ODbL"
+    },
+    {
+      "id": "annaberg-buchholz-3956e3c978",
+      "city": "annaberg-buchholz",
+      "label": "Barbara-Uthmann-Ring",
+      "street": "Barbara-Uthmann-Ring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Annaberg-Buchholz",
+      "spotCount": 5,
+      "lat": 50.594340300000006,
+      "lng": 13.0095582,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/85360729), ODbL"
+    },
+    {
+      "id": "annaberg-buchholz-b7d455fa41",
+      "city": "annaberg-buchholz",
+      "label": "Barbara-Uthmann-Ring 157",
+      "street": "Barbara-Uthmann-Ring",
+      "houseNumber": "157",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Annaberg-Buchholz",
+      "spotCount": 1,
+      "lat": 50.59477205,
+      "lng": 13.010218300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/53785556), ODbL"
+    },
+    {
+      "id": "annaberg-buchholz-758b56bdb8",
+      "city": "annaberg-buchholz",
+      "label": "Erzgebirgscenter",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Annaberg-Buchholz",
+      "spotCount": 1,
+      "lat": 50.598206600000005,
+      "lng": 13.0219615,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/122372047), ODbL"
+    },
+    {
+      "id": "annaberg-buchholz-c4b55bf9b7",
+      "city": "annaberg-buchholz",
+      "label": "Parkhaus Altstadt 2",
+      "street": "Scheibnerstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "06:00-22:00",
+      "district": "Annaberg-Buchholz",
+      "spotCount": 4,
+      "lat": 50.5765957,
+      "lng": 13.0014377,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/316674287), ODbL"
+    },
+    {
+      "id": "annaberg-buchholz-39291ff789",
+      "city": "annaberg-buchholz",
+      "label": "Sehmatalstraße 15",
+      "street": "Sehmatalstraße",
+      "houseNumber": "15",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Annaberg-Buchholz",
+      "spotCount": 1,
+      "lat": 50.5987616,
+      "lng": 12.995500750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1106505950), ODbL"
+    }
+  ]
+}

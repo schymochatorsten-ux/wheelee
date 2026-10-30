@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schwalbach",
+    "name": "Schwalbach",
+    "center": {
+      "lat": 49.299230300000005,
+      "lng": 6.8109289
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schwalbach-ed63331676",
+      "city": "schwalbach",
+      "label": "Festplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwalbach",
+      "spotCount": 1,
+      "lat": 49.299230300000005,
+      "lng": 6.8109289,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/33619998), ODbL"
+    }
+  ]
+}

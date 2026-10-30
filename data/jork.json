@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "jork",
+    "name": "Jork",
+    "center": {
+      "lat": 53.513000950000006,
+      "lng": 9.7230483
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "jork-b08aba90ca",
+      "city": "jork",
+      "label": "Hinterstraße",
+      "street": "Hinterstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jork",
+      "spotCount": 2,
+      "lat": 53.513000950000006,
+      "lng": 9.7230483,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1568773521), ODbL"
+    }
+  ]
+}

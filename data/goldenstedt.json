@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "goldenstedt",
+    "name": "Goldenstedt",
+    "center": {
+      "lat": 52.79402925000001,
+      "lng": 8.4477762
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "goldenstedt-056f17319e",
+      "city": "goldenstedt",
+      "label": "Fasanenkamp",
+      "street": "Fasanenkamp",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Goldenstedt",
+      "spotCount": 1,
+      "lat": 52.79402925000001,
+      "lng": 8.4477762,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/36829735), ODbL"
+    },
+    {
+      "id": "goldenstedt-c7ba327ef4",
+      "city": "goldenstedt",
+      "label": "Zur Lieth 9",
+      "street": "Zur Lieth",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Goldenstedt",
+      "spotCount": 2,
+      "lat": 52.7887655,
+      "lng": 8.43296505,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/755666513), ODbL"
+    }
+  ]
+}

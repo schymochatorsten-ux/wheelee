@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wendelstein",
+    "name": "Wendelstein",
+    "center": {
+      "lat": 49.346999350000004,
+      "lng": 11.11403725
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wendelstein-fd91040ba4",
+      "city": "wendelstein",
+      "label": "Am Silberhammer",
+      "street": "Am Silberhammer",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wendelstein",
+      "spotCount": 2,
+      "lat": 49.346999350000004,
+      "lng": 11.11403725,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/893983593), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "weener",
+    "name": "Weener",
+    "center": {
+      "lat": 53.16538785,
+      "lng": 7.3658430500000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "weener-04e8bcb583",
+      "city": "weener",
+      "label": "Campingplatz Weener",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weener",
+      "spotCount": 2,
+      "lat": 53.16538785,
+      "lng": 7.3658430500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32993382), ODbL"
+    },
+    {
+      "id": "weener-8998643019",
+      "city": "weener",
+      "label": "Pestalozzi-Schule",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weener",
+      "spotCount": 1,
+      "lat": 53.1628877,
+      "lng": 7.355594100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/33179126), ODbL"
+    }
+  ]
+}

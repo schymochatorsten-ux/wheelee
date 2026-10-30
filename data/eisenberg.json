@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "eisenberg",
+    "name": "Eisenberg",
+    "center": {
+      "lat": 50.97089080000001,
+      "lng": 11.883757150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eisenberg-67cee99ea0",
+      "city": "eisenberg",
+      "label": "Kuhberg",
+      "street": "Kuhberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eisenberg",
+      "spotCount": 1,
+      "lat": 50.9605681,
+      "lng": 11.850034650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/754261920), ODbL"
+    },
+    {
+      "id": "eisenberg-614a91ae35",
+      "city": "eisenberg",
+      "label": "REWE",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eisenberg",
+      "spotCount": 2,
+      "lat": 50.97089080000001,
+      "lng": 11.883757150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/225890177), ODbL"
+    }
+  ]
+}

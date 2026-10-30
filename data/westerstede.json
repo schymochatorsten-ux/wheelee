@@ -12,25 +12,10 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "westerstede-9c5bc1a4df",
-      "city": "westerstede",
-      "label": "Behindertenparkplatz Westerstede",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Westerstede",
-      "spotCount": 1,
-      "lat": 53.26216755,
-      "lng": 7.9427471,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/688335381), ODbL"
-    },
-    {
       "id": "westerstede-5d7ffbae8e",
       "city": "westerstede",
-      "label": "Behindertenparkplatz Westerstede",
-      "street": null,
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -44,9 +29,9 @@
     {
       "id": "westerstede-c67613e61a",
       "city": "westerstede",
-      "label": "Behindertenparkplatz Westerstede",
-      "street": null,
-      "houseNumber": null,
+      "label": "Kuhlenstraße 51",
+      "street": "Kuhlenstraße",
+      "houseNumber": "51",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Westerstede",
@@ -55,6 +40,21 @@
       "lng": 7.9179155,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1566718744), ODbL"
+    },
+    {
+      "id": "westerstede-9c5bc1a4df",
+      "city": "westerstede",
+      "label": "Langebrügger Straße",
+      "street": "Langebrügger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Westerstede",
+      "spotCount": 1,
+      "lat": 53.26216755,
+      "lng": 7.9427471,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/688335381), ODbL"
     }
   ]
 }

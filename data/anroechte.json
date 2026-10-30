@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "anroechte",
+    "name": "Anröchte",
+    "center": {
+      "lat": 51.564078,
+      "lng": 8.3341627
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "anroechte-df45c46eba",
+      "city": "anroechte",
+      "label": "Hauptstraße 126",
+      "street": "Hauptstraße",
+      "houseNumber": "126",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Anröchte",
+      "spotCount": 5,
+      "lat": 51.55428020000001,
+      "lng": 8.3287201,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1334668021), ODbL"
+    },
+    {
+      "id": "anroechte-a6536ca054",
+      "city": "anroechte",
+      "label": "Siemensstraße",
+      "street": "Siemensstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Anröchte",
+      "spotCount": 2,
+      "lat": 51.564078,
+      "lng": 8.3341627,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/221501139), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "edemissen",
+    "name": "Edemissen",
+    "center": {
+      "lat": 52.3826521,
+      "lng": 10.193307
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "edemissen-8a02b6c2c9",
+      "city": "edemissen",
+      "label": "Edemisser Landstraße",
+      "street": "Edemisser Landstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Edemissen",
+      "spotCount": 1,
+      "lat": 52.382660200000004,
+      "lng": 10.1933565,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12470807770), ODbL"
+    },
+    {
+      "id": "edemissen-4a768a6a7d",
+      "city": "edemissen",
+      "label": "Edemisser Landstraße",
+      "street": "Edemisser Landstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Edemissen",
+      "spotCount": 1,
+      "lat": 52.3826521,
+      "lng": 10.193307,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12470807771), ODbL"
+    },
+    {
+      "id": "edemissen-0d6c0ce458",
+      "city": "edemissen",
+      "label": "Edemisser Landstraße",
+      "street": "Edemisser Landstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Edemissen",
+      "spotCount": 1,
+      "lat": 52.3826429,
+      "lng": 10.1932565,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12470807772), ODbL"
+    }
+  ]
+}

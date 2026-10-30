@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "velten",
+    "name": "Velten",
+    "center": {
+      "lat": 52.68589095,
+      "lng": 13.1836175
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "velten-11ecb57ba5",
+      "city": "velten",
+      "label": "Bahnstraße",
+      "street": "Bahnstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Velten",
+      "spotCount": 3,
+      "lat": 52.68497180000001,
+      "lng": 13.1726945,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13512254981), ODbL"
+    },
+    {
+      "id": "velten-6eb40bf2c1",
+      "city": "velten",
+      "label": "Lindenstraße",
+      "street": "Lindenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Velten",
+      "spotCount": 1,
+      "lat": 52.68589095,
+      "lng": 13.1836175,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24908904), ODbL"
+    }
+  ]
+}

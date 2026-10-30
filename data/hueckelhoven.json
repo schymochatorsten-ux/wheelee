@@ -14,8 +14,8 @@
     {
       "id": "hueckelhoven-a1abc5b688",
       "city": "hueckelhoven",
-      "label": "Behindertenparkplatz Hückelhoven",
-      "street": null,
+      "label": "Fochsensteg",
+      "street": "Fochsensteg",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -27,26 +27,11 @@
       "source": "OpenStreetMap (way/274083812), ODbL"
     },
     {
-      "id": "hueckelhoven-b8aeeeffa2",
-      "city": "hueckelhoven",
-      "label": "Behindertenparkplatz Hückelhoven",
-      "street": null,
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Hückelhoven",
-      "spotCount": 1,
-      "lat": 51.053005000000006,
-      "lng": 6.216229050000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1105496512), ODbL"
-    },
-    {
       "id": "hueckelhoven-287b4184bb",
       "city": "hueckelhoven",
-      "label": "Behindertenparkplatz Hückelhoven",
-      "street": null,
-      "houseNumber": null,
+      "label": "Kirchgrabenstraße 46",
+      "street": "Kirchgrabenstraße",
+      "houseNumber": "46",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Hückelhoven",
@@ -55,6 +40,21 @@
       "lng": 6.24204495,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1457165301), ODbL"
+    },
+    {
+      "id": "hueckelhoven-b8aeeeffa2",
+      "city": "hueckelhoven",
+      "label": "Roermonder Straße 22",
+      "street": "Roermonder Straße",
+      "houseNumber": "22",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hückelhoven",
+      "spotCount": 1,
+      "lat": 51.053005000000006,
+      "lng": 6.216229050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1105496512), ODbL"
     }
   ]
 }

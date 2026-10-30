@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "marsberg",
+    "name": "Marsberg",
+    "center": {
+      "lat": 51.462489100000006,
+      "lng": 8.85532135
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "marsberg-6b5f5a0410",
+      "city": "marsberg",
+      "label": "An den Bleichen",
+      "street": "An den Bleichen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Marsberg",
+      "spotCount": 1,
+      "lat": 51.462489100000006,
+      "lng": 8.850698300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14276880342), ODbL"
+    },
+    {
+      "id": "marsberg-f7cf885ad8",
+      "city": "marsberg",
+      "label": "Hauptstraße 28",
+      "street": "Hauptstraße",
+      "houseNumber": "28",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Marsberg",
+      "spotCount": 1,
+      "lat": 51.46114145,
+      "lng": 8.85532135,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/301330767), ODbL"
+    }
+  ]
+}

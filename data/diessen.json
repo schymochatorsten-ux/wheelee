@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "diessen",
+    "name": "Dießen am Ammersee",
+    "center": {
+      "lat": 47.9481461,
+      "lng": 11.0969759
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "diessen-1a31958d30",
+      "city": "diessen",
+      "label": "Bahnhofplatz 1",
+      "street": "Bahnhofplatz",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dießen am Ammersee",
+      "spotCount": 1,
+      "lat": 47.9822846,
+      "lng": 11.0969759,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1018791968), ODbL"
+    },
+    {
+      "id": "diessen-29774ff494",
+      "city": "diessen",
+      "label": "Fischerei 11",
+      "street": "Fischerei",
+      "houseNumber": "11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Dießen am Ammersee",
+      "spotCount": 1,
+      "lat": 47.9481461,
+      "lng": 11.104834,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5692989889), ODbL"
+    },
+    {
+      "id": "diessen-1c1f3fb4b6",
+      "city": "diessen",
+      "label": "Ziegelstadl 1",
+      "street": "Ziegelstadl",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dießen am Ammersee",
+      "spotCount": 1,
+      "lat": 47.9367579,
+      "lng": 11.090500700000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13296893666), ODbL"
+    }
+  ]
+}

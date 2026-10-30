@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bad-windsheim",
+    "name": "Bad Windsheim",
+    "center": {
+      "lat": 49.51494155,
+      "lng": 10.4185491
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-windsheim-fb634479ea",
+      "city": "bad-windsheim",
+      "label": "Erkenbrechtallee",
+      "street": "Erkenbrechtallee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Windsheim",
+      "spotCount": 2,
+      "lat": 49.51494155,
+      "lng": 10.414199,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/550683973), ODbL"
+    },
+    {
+      "id": "bad-windsheim-bc01a71442",
+      "city": "bad-windsheim",
+      "label": "Klosterplatz 4",
+      "street": "Klosterplatz",
+      "houseNumber": "4",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Windsheim",
+      "spotCount": 2,
+      "lat": 49.50282475,
+      "lng": 10.4185491,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/550820607), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "willstaett",
+    "name": "Willstätt",
+    "center": {
+      "lat": 48.541183700000005,
+      "lng": 7.895023500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "willstaett-fa7707b7aa",
+      "city": "willstaett",
+      "label": "Am Mühlplatz",
+      "street": "Am Mühlplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Willstätt",
+      "spotCount": 1,
+      "lat": 48.540625750000004,
+      "lng": 7.89504195,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1075904791), ODbL"
+    },
+    {
+      "id": "willstaett-3746ee8573",
+      "city": "willstaett",
+      "label": "Am Mühlplatz 1",
+      "street": "Am Mühlplatz",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Willstätt",
+      "spotCount": 1,
+      "lat": 48.54068790000001,
+      "lng": 7.89498935,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1545690452), ODbL"
+    },
+    {
+      "id": "willstaett-66b91db01b",
+      "city": "willstaett",
+      "label": "Hauptstraße 57",
+      "street": "Hauptstraße",
+      "houseNumber": "57",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Willstätt",
+      "spotCount": 1,
+      "lat": 48.541183700000005,
+      "lng": 7.8948055,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1075904790), ODbL"
+    },
+    {
+      "id": "willstaett-7966c83ee2",
+      "city": "willstaett",
+      "label": "Hauptstraße 59",
+      "street": "Hauptstraße",
+      "houseNumber": "59",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Willstätt",
+      "spotCount": 2,
+      "lat": 48.541654550000004,
+      "lng": 7.895023500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1075904789), ODbL"
+    }
+  ]
+}

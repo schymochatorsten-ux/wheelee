@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "pfarrkirchen",
+    "name": "Pfarrkirchen",
+    "center": {
+      "lat": 48.4367347,
+      "lng": 12.935522200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pfarrkirchen-5b31cd3457",
+      "city": "pfarrkirchen",
+      "label": "Am Griesberg",
+      "street": "Am Griesberg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Pfarrkirchen",
+      "spotCount": 1,
+      "lat": 48.4367347,
+      "lng": 12.927047,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/7944467977), ODbL"
+    },
+    {
+      "id": "pfarrkirchen-7051af6a0b",
+      "city": "pfarrkirchen",
+      "label": "Am Griesberg",
+      "street": "Am Griesberg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Pfarrkirchen",
+      "spotCount": 1,
+      "lat": 48.436767350000004,
+      "lng": 12.927398,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1417218487), ODbL"
+    },
+    {
+      "id": "pfarrkirchen-0290f5543a",
+      "city": "pfarrkirchen",
+      "label": "Bahnhofstraße 3",
+      "street": "Bahnhofstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pfarrkirchen",
+      "spotCount": 1,
+      "lat": 48.43147185,
+      "lng": 12.938161050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1444195494), ODbL"
+    },
+    {
+      "id": "pfarrkirchen-241d58d502",
+      "city": "pfarrkirchen",
+      "label": "Eggenfeldener Straße",
+      "street": "Eggenfeldener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pfarrkirchen",
+      "spotCount": 1,
+      "lat": 48.4322801,
+      "lng": 12.935522200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1444195484), ODbL"
+    }
+  ]
+}

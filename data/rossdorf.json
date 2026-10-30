@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "rossdorf",
+    "name": "Roßdorf",
+    "center": {
+      "lat": 49.869127500000005,
+      "lng": 8.7613831
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rossdorf-9bfe6bba62",
+      "city": "rossdorf",
+      "label": "Theodor-Clausen-Straße",
+      "street": "Theodor-Clausen-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Roßdorf",
+      "spotCount": 2,
+      "lat": 49.8688576,
+      "lng": 8.7612986,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/59826397), ODbL"
+    },
+    {
+      "id": "rossdorf-76c45473b6",
+      "city": "rossdorf",
+      "label": "Theodor-Clausen-Straße 54",
+      "street": "Theodor-Clausen-Straße",
+      "houseNumber": "54",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Roßdorf",
+      "spotCount": 1,
+      "lat": 49.869127500000005,
+      "lng": 8.7613831,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9484058402), ODbL"
+    },
+    {
+      "id": "rossdorf-82d6efe590",
+      "city": "rossdorf",
+      "label": "Theodor-Clausen-Straße 54",
+      "street": "Theodor-Clausen-Straße",
+      "houseNumber": "54",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Roßdorf",
+      "spotCount": 1,
+      "lat": 49.869127500000005,
+      "lng": 8.761426700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9484058403), ODbL"
+    },
+    {
+      "id": "rossdorf-69c8c8dd76",
+      "city": "rossdorf",
+      "label": "Wilhelm-Leuschner-Straße 10",
+      "street": "Wilhelm-Leuschner-Straße",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Roßdorf",
+      "spotCount": 1,
+      "lat": 49.8570142,
+      "lng": 8.7563151,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/746411577), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "nordkirchen",
+    "name": "Nordkirchen",
+    "center": {
+      "lat": 51.7324816,
+      "lng": 7.54489475
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nordkirchen-c682aec7cf",
+      "city": "nordkirchen",
+      "label": "An der Mühle 17",
+      "street": "An der Mühle",
+      "houseNumber": "17",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nordkirchen",
+      "spotCount": 2,
+      "lat": 51.738128,
+      "lng": 7.528071200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/574823947), ODbL"
+    },
+    {
+      "id": "nordkirchen-5779c1b063",
+      "city": "nordkirchen",
+      "label": "Oberstraße",
+      "street": "Oberstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nordkirchen",
+      "spotCount": 2,
+      "lat": 51.71337535000001,
+      "lng": 7.5446896,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/133546318), ODbL"
+    },
+    {
+      "id": "nordkirchen-758c9cc49f",
+      "city": "nordkirchen",
+      "label": "Oberstraße 41",
+      "street": "Oberstraße",
+      "houseNumber": "41",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nordkirchen",
+      "spotCount": 1,
+      "lat": 51.71366635,
+      "lng": 7.544852200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1188149786), ODbL"
+    },
+    {
+      "id": "nordkirchen-377221d9fe",
+      "city": "nordkirchen",
+      "label": "Oberstraße 41",
+      "street": "Oberstraße",
+      "houseNumber": "41",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nordkirchen",
+      "spotCount": 1,
+      "lat": 51.713683350000004,
+      "lng": 7.54489475,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1188149787), ODbL"
+    },
+    {
+      "id": "nordkirchen-39358df71f",
+      "city": "nordkirchen",
+      "label": "Schulweg",
+      "street": "Schulweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Nordkirchen",
+      "spotCount": 1,
+      "lat": 51.7324816,
+      "lng": 7.593678650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1079792287), ODbL"
+    },
+    {
+      "id": "nordkirchen-2a81266af5",
+      "city": "nordkirchen",
+      "label": "Schulweg",
+      "street": "Schulweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nordkirchen",
+      "spotCount": 1,
+      "lat": 51.7325457,
+      "lng": 7.59369895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1328207770), ODbL"
+    }
+  ]
+}

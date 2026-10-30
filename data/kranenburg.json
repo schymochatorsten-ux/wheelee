@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kranenburg",
+    "name": "Kranenburg",
+    "center": {
+      "lat": 51.78991895,
+      "lng": 6.01374295
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kranenburg-c0d8fd67bb",
+      "city": "kranenburg",
+      "label": "Einkaufszentrum",
+      "street": "Einkaufszentrum",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kranenburg",
+      "spotCount": 8,
+      "lat": 51.78991895,
+      "lng": 6.01374295,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1004693646), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "lindenberg-i-allgaeu",
+    "name": "Lindenberg i.Allgäu",
+    "center": {
+      "lat": 47.606624000000004,
+      "lng": 9.914496300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lindenberg-i-allgaeu-53baaa5445",
+      "city": "lindenberg-i-allgaeu",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Lindenberg i.Allgäu",
+      "spotCount": 2,
+      "lat": 47.60505675,
+      "lng": 9.890742150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/340286398), ODbL"
+    },
+    {
+      "id": "lindenberg-i-allgaeu-c696881e14",
+      "city": "lindenberg-i-allgaeu",
+      "label": "Manzen",
+      "street": "Manzen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lindenberg i.Allgäu",
+      "spotCount": 1,
+      "lat": 47.606624000000004,
+      "lng": 9.914496300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4961669122), ODbL"
+    }
+  ]
+}

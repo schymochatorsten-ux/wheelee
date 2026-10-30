@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hude",
+    "name": "Hude (Oldb)",
+    "center": {
+      "lat": 53.11984045,
+      "lng": 8.44668265
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hude-a32ec5ff45",
+      "city": "hude",
+      "label": "Linteler Straße",
+      "street": "Linteler Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hude (Oldb)",
+      "spotCount": 1,
+      "lat": 53.11984045,
+      "lng": 8.44668265,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/232644953), ODbL"
+    }
+  ]
+}

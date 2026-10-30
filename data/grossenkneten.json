@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "grossenkneten",
+    "name": "Großenkneten",
+    "center": {
+      "lat": 52.944722150000004,
+      "lng": 8.2451375
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grossenkneten-35bdf40d71",
+      "city": "grossenkneten",
+      "label": "Aldi, Edeka",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großenkneten",
+      "spotCount": 1,
+      "lat": 52.942814950000006,
+      "lng": 8.2451375,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/48601390), ODbL"
+    },
+    {
+      "id": "grossenkneten-46b04a7ad3",
+      "city": "grossenkneten",
+      "label": "Raiffeisenstraße",
+      "street": "Raiffeisenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großenkneten",
+      "spotCount": 3,
+      "lat": 52.944722150000004,
+      "lng": 8.241167950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/201416556), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "dossenheim",
+    "name": "Dossenheim",
+    "center": {
+      "lat": 49.452364,
+      "lng": 8.671660900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dossenheim-1164b071b4",
+      "city": "dossenheim",
+      "label": "Am Kirchberg 3",
+      "street": "Am Kirchberg",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dossenheim",
+      "spotCount": 1,
+      "lat": 49.452364,
+      "lng": 8.678200400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1136120073), ODbL"
+    },
+    {
+      "id": "dossenheim-d0c0163f19",
+      "city": "dossenheim",
+      "label": "Gassenweg",
+      "street": "Gassenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dossenheim",
+      "spotCount": 1,
+      "lat": 49.453452750000004,
+      "lng": 8.67202885,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27869521), ODbL"
+    },
+    {
+      "id": "dossenheim-00e91ec580",
+      "city": "dossenheim",
+      "label": "Gassenweg",
+      "street": "Gassenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dossenheim",
+      "spotCount": 2,
+      "lat": 49.45357125,
+      "lng": 8.671660900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1304665266), ODbL"
+    },
+    {
+      "id": "dossenheim-9c30509fb9",
+      "city": "dossenheim",
+      "label": "Gerhart-Hauptmann-Straße",
+      "street": "Gerhart-Hauptmann-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dossenheim",
+      "spotCount": 2,
+      "lat": 49.44373985,
+      "lng": 8.6715116,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1294928520), ODbL"
+    },
+    {
+      "id": "dossenheim-6b166af112",
+      "city": "dossenheim",
+      "label": "Gewerbestraße",
+      "street": "Gewerbestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dossenheim",
+      "spotCount": 2,
+      "lat": 49.4545899,
+      "lng": 8.66471785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/161446241), ODbL"
+    },
+    {
+      "id": "dossenheim-4784f79a67",
+      "city": "dossenheim",
+      "label": "Im Bangert",
+      "street": "Im Bangert",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dossenheim",
+      "spotCount": 1,
+      "lat": 49.4491844,
+      "lng": 8.6691783,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2965546042), ODbL"
+    },
+    {
+      "id": "dossenheim-3eca2f6863",
+      "city": "dossenheim",
+      "label": "Rathausplatz 10",
+      "street": "Rathausplatz",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dossenheim",
+      "spotCount": 1,
+      "lat": 49.4506548,
+      "lng": 8.671967500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/157583980), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hagen-03352060",
+    "name": "Hagen im Bremischen",
+    "center": {
+      "lat": 53.36588785000001,
+      "lng": 8.68279255
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hagen-03352060-7a171271b2",
+      "city": "hagen-03352060",
+      "label": "An der Weser",
+      "street": "An der Weser",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hagen im Bremischen",
+      "spotCount": 2,
+      "lat": 53.36510460000001,
+      "lng": 8.507803500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/159230708), ODbL"
+    },
+    {
+      "id": "hagen-03352060-32abca78ce",
+      "city": "hagen-03352060",
+      "label": "Im Bocksacker",
+      "street": "Im Bocksacker",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hagen im Bremischen",
+      "spotCount": 1,
+      "lat": 53.36588785000001,
+      "lng": 8.68279255,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1130674706), ODbL"
+    }
+  ]
+}

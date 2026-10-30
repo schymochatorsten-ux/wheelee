@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "kelsterbach",
+    "name": "Kelsterbach",
+    "center": {
+      "lat": 50.05415445,
+      "lng": 8.5277791
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kelsterbach-66f7fd1375",
+      "city": "kelsterbach",
+      "label": "Langer Kornweg",
+      "street": "Langer Kornweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kelsterbach",
+      "spotCount": 2,
+      "lat": 50.05415445,
+      "lng": 8.5169536,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/4733880), ODbL"
+    },
+    {
+      "id": "kelsterbach-d8c86aae54",
+      "city": "kelsterbach",
+      "label": "Langer Kornweg",
+      "street": "Langer Kornweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kelsterbach",
+      "spotCount": 2,
+      "lat": 50.053755550000005,
+      "lng": 8.516235900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/92015451), ODbL"
+    },
+    {
+      "id": "kelsterbach-fc4bde8f70",
+      "city": "kelsterbach",
+      "label": "Mörfelder Straße 22",
+      "street": "Mörfelder Straße",
+      "houseNumber": "22",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kelsterbach",
+      "spotCount": 1,
+      "lat": 50.0614353,
+      "lng": 8.531913,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/932764284), ODbL"
+    },
+    {
+      "id": "kelsterbach-507ea3c850",
+      "city": "kelsterbach",
+      "label": "Platzhirsch Parkhaus",
+      "street": "Am Südpark",
+      "houseNumber": "7-11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Kelsterbach",
+      "spotCount": 1,
+      "lat": 50.05187765000001,
+      "lng": 8.5290003,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/150738867), ODbL"
+    },
+    {
+      "id": "kelsterbach-9d612395cd",
+      "city": "kelsterbach",
+      "label": "Rüsselsheimer Straße 27",
+      "street": "Rüsselsheimer Straße",
+      "houseNumber": "27",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kelsterbach",
+      "spotCount": 2,
+      "lat": 50.06209200000001,
+      "lng": 8.5277791,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/436076823), ODbL"
+    }
+  ]
+}

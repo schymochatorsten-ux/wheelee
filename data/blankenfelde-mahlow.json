@@ -12,10 +12,40 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
+      "id": "blankenfelde-mahlow-de5a111395",
+      "city": "blankenfelde-mahlow",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Blankenfelde-Mahlow",
+      "spotCount": 2,
+      "lat": 52.360452,
+      "lng": 13.409268650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1371157683), ODbL"
+    },
+    {
+      "id": "blankenfelde-mahlow-232a19590f",
+      "city": "blankenfelde-mahlow",
+      "label": "Berliner Damm 171a-b",
+      "street": "Berliner Damm",
+      "houseNumber": "171a-b",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Blankenfelde-Mahlow",
+      "spotCount": 1,
+      "lat": 52.35364485,
+      "lng": 13.40694,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1185206690), ODbL"
+    },
+    {
       "id": "blankenfelde-mahlow-5647469024",
       "city": "blankenfelde-mahlow",
-      "label": "Behindertenparkplatz Blankenfelde-Mahlow",
-      "street": null,
+      "label": "Brandenburger Platz",
+      "street": "Brandenburger Platz",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -29,8 +59,8 @@
     {
       "id": "blankenfelde-mahlow-36eca946fe",
       "city": "blankenfelde-mahlow",
-      "label": "Behindertenparkplatz Blankenfelde-Mahlow",
-      "street": null,
+      "label": "Mahlower Straße",
+      "street": "Mahlower Straße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -40,51 +70,6 @@
       "lng": 13.4062442,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/992636313), ODbL"
-    },
-    {
-      "id": "blankenfelde-mahlow-232a19590f",
-      "city": "blankenfelde-mahlow",
-      "label": "Behindertenparkplatz Blankenfelde-Mahlow",
-      "street": null,
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Blankenfelde-Mahlow",
-      "spotCount": 1,
-      "lat": 52.35364485,
-      "lng": 13.40694,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1185206690), ODbL"
-    },
-    {
-      "id": "blankenfelde-mahlow-c6e8735a8e",
-      "city": "blankenfelde-mahlow",
-      "label": "Behindertenparkplatz Blankenfelde-Mahlow",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Blankenfelde-Mahlow",
-      "spotCount": 1,
-      "lat": 52.324625,
-      "lng": 13.399657050000002,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1360366923), ODbL"
-    },
-    {
-      "id": "blankenfelde-mahlow-de5a111395",
-      "city": "blankenfelde-mahlow",
-      "label": "Behindertenparkplatz Blankenfelde-Mahlow",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Blankenfelde-Mahlow",
-      "spotCount": 2,
-      "lat": 52.360452,
-      "lng": 13.409268650000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1371157683), ODbL"
     },
     {
       "id": "blankenfelde-mahlow-6c1b535495",
@@ -100,6 +85,21 @@
       "lng": 13.40702485,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/207737379), ODbL"
+    },
+    {
+      "id": "blankenfelde-mahlow-c6e8735a8e",
+      "city": "blankenfelde-mahlow",
+      "label": "Rembrandtstraße",
+      "street": "Rembrandtstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Blankenfelde-Mahlow",
+      "spotCount": 1,
+      "lat": 52.324625,
+      "lng": 13.399657050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1360366923), ODbL"
     }
   ]
 }

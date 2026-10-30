@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "solms",
+    "name": "Solms",
+    "center": {
+      "lat": 50.554275350000005,
+      "lng": 8.412765100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "solms-b5d107cdd2",
+      "city": "solms",
+      "label": "Mittelbiel 2",
+      "street": "Mittelbiel",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Solms",
+      "spotCount": 1,
+      "lat": 50.554275350000005,
+      "lng": 8.412765100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1488977047), ODbL"
+    }
+  ]
+}

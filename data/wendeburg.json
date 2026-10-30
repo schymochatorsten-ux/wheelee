@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wendeburg",
+    "name": "Wendeburg",
+    "center": {
+      "lat": 52.360894200000004,
+      "lng": 10.3695618
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wendeburg-2e9e89b1b8",
+      "city": "wendeburg",
+      "label": "Dorfstraße 35",
+      "street": "Dorfstraße",
+      "houseNumber": "35",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wendeburg",
+      "spotCount": 1,
+      "lat": 52.360894200000004,
+      "lng": 10.3695618,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1321833130), ODbL"
+    }
+  ]
+}

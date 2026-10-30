@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "diez",
+    "name": "Diez",
+    "center": {
+      "lat": 50.37012095,
+      "lng": 8.0363859
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "diez-bbb860f3ec",
+      "city": "diez",
+      "label": "Emmerichstraße 6",
+      "street": "Emmerichstraße",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Diez",
+      "spotCount": 1,
+      "lat": 50.37011005000001,
+      "lng": 8.00677795,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1476004475), ODbL"
+    },
+    {
+      "id": "diez-36113f2cfc",
+      "city": "diez",
+      "label": "Zuckmayerstraße 28",
+      "street": "Zuckmayerstraße",
+      "houseNumber": "28",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Diez",
+      "spotCount": 8,
+      "lat": 50.37012095,
+      "lng": 8.0363859,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1446552506), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "wolfratshausen",
+    "name": "Wolfratshausen",
+    "center": {
+      "lat": 47.91486345,
+      "lng": 11.42607635
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wolfratshausen-cf38611d86",
+      "city": "wolfratshausen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Wolfratshausen",
+      "spotCount": 1,
+      "lat": 47.91486345,
+      "lng": 11.419172,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/536397662), ODbL"
+    },
+    {
+      "id": "wolfratshausen-4771f5715f",
+      "city": "wolfratshausen",
+      "label": "Königsdorfer Straße",
+      "street": "Königsdorfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wolfratshausen",
+      "spotCount": 1,
+      "lat": 47.9076947,
+      "lng": 11.428229700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/196328596), ODbL"
+    },
+    {
+      "id": "wolfratshausen-dc4726caf1",
+      "city": "wolfratshausen",
+      "label": "Ludwig-Thoma-Straße",
+      "street": "Ludwig-Thoma-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wolfratshausen",
+      "spotCount": 1,
+      "lat": 47.915160050000004,
+      "lng": 11.42443265,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/240500181), ODbL"
+    },
+    {
+      "id": "wolfratshausen-3980d08cf0",
+      "city": "wolfratshausen",
+      "label": "Sauerlacher Straße",
+      "street": "Sauerlacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Wolfratshausen",
+      "spotCount": 2,
+      "lat": 47.91351205000001,
+      "lng": 11.42607635,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/189619342), ODbL"
+    }
+  ]
+}

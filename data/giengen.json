@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "giengen",
+    "name": "Giengen an der Brenz",
+    "center": {
+      "lat": 48.62027210000001,
+      "lng": 10.23300545
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "giengen-abbe6c514c",
+      "city": "giengen",
+      "label": "Goethestraße",
+      "street": "Goethestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Giengen an der Brenz",
+      "spotCount": 4,
+      "lat": 48.6219076,
+      "lng": 10.240850000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/251255435), ODbL"
+    },
+    {
+      "id": "giengen-730eee1e80",
+      "city": "giengen",
+      "label": "Robert-Bosch-Straße",
+      "street": "Robert-Bosch-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Giengen an der Brenz",
+      "spotCount": 8,
+      "lat": 48.6200309,
+      "lng": 10.23300545,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1410898655), ODbL"
+    },
+    {
+      "id": "giengen-5a512e3c85",
+      "city": "giengen",
+      "label": "Robert-Bosch-Straße",
+      "street": "Robert-Bosch-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Giengen an der Brenz",
+      "spotCount": 6,
+      "lat": 48.62027210000001,
+      "lng": 10.231773350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1410898656), ODbL"
+    },
+    {
+      "id": "giengen-8cb60fe770",
+      "city": "giengen",
+      "label": "Robert-Bosch-Straße 4",
+      "street": "Robert-Bosch-Straße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Giengen an der Brenz",
+      "spotCount": 4,
+      "lat": 48.620233400000004,
+      "lng": 10.23223005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1410898658), ODbL"
+    }
+  ]
+}

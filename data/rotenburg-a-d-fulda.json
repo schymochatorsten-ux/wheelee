@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "rotenburg-a-d-fulda",
+    "name": "Rotenburg a.d.Fulda",
+    "center": {
+      "lat": 50.996307900000005,
+      "lng": 9.735520950000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rotenburg-a-d-fulda-3227aadea6",
+      "city": "rotenburg-a-d-fulda",
+      "label": "Am Rainchen",
+      "street": "Am Rainchen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Rotenburg a.d.Fulda",
+      "spotCount": 1,
+      "lat": 50.996307900000005,
+      "lng": 9.72565775,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/37696707), ODbL"
+    },
+    {
+      "id": "rotenburg-a-d-fulda-6222a45750",
+      "city": "rotenburg-a-d-fulda",
+      "label": "Breitinger Kirchweg 7",
+      "street": "Breitinger Kirchweg",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rotenburg a.d.Fulda",
+      "spotCount": 2,
+      "lat": 50.9937367,
+      "lng": 9.735520950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/870949471), ODbL"
+    },
+    {
+      "id": "rotenburg-a-d-fulda-b148a51e6a",
+      "city": "rotenburg-a-d-fulda",
+      "label": "Heinz-Meise-Straße",
+      "street": "Heinz-Meise-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rotenburg a.d.Fulda",
+      "spotCount": 2,
+      "lat": 51.00488295,
+      "lng": 9.73949705,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1346921639), ODbL"
+    }
+  ]
+}

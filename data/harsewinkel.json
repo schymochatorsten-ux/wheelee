@@ -14,9 +14,9 @@
     {
       "id": "harsewinkel-ef303f18de",
       "city": "harsewinkel",
-      "label": "Behindertenparkplatz Harsewinkel",
-      "street": null,
-      "houseNumber": null,
+      "label": "August-Claas-Straße 14a",
+      "street": "August-Claas-Straße",
+      "houseNumber": "14a",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Harsewinkel",
@@ -29,8 +29,8 @@
     {
       "id": "harsewinkel-5e2e490211",
       "city": "harsewinkel",
-      "label": "Behindertenparkplatz Harsewinkel",
-      "street": null,
+      "label": "Klosterstraße",
+      "street": "Klosterstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,

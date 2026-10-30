@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "ratzeburg",
+    "name": "Ratzeburg",
+    "center": {
+      "lat": 53.68937125,
+      "lng": 10.7794818
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ratzeburg-d5eb486280",
+      "city": "ratzeburg",
+      "label": "Röpersberg",
+      "street": "Röpersberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ratzeburg",
+      "spotCount": 2,
+      "lat": 53.68937125,
+      "lng": 10.7794818,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/60265055), ODbL"
+    },
+    {
+      "id": "ratzeburg-bbf11b3e6a",
+      "city": "ratzeburg",
+      "label": "Röpersberg",
+      "street": "Röpersberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ratzeburg",
+      "spotCount": 2,
+      "lat": 53.6830348,
+      "lng": 10.76881775,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/292185079), ODbL"
+    },
+    {
+      "id": "ratzeburg-ba6cb0025f",
+      "city": "ratzeburg",
+      "label": "Schweriner Straße",
+      "street": "Schweriner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ratzeburg",
+      "spotCount": 2,
+      "lat": 53.691178400000005,
+      "lng": 10.801348950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1382498987), ODbL"
+    }
+  ]
+}

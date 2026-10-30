@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "buchloe",
+    "name": "Buchloe",
+    "center": {
+      "lat": 48.04036240000001,
+      "lng": 10.7192908
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "buchloe-9b402aabce",
+      "city": "buchloe",
+      "label": "Justus-von-Liebig-Straße",
+      "street": "Justus-von-Liebig-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Buchloe",
+      "spotCount": 1,
+      "lat": 48.04036260000001,
+      "lng": 10.7192382,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1210972120), ODbL"
+    },
+    {
+      "id": "buchloe-f78a2b3934",
+      "city": "buchloe",
+      "label": "Justus-von-Liebig-Straße",
+      "street": "Justus-von-Liebig-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Buchloe",
+      "spotCount": 1,
+      "lat": 48.0403628,
+      "lng": 10.71918565,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1210972122), ODbL"
+    },
+    {
+      "id": "buchloe-342fd7f733",
+      "city": "buchloe",
+      "label": "Justus-von-Liebig-Straße 5",
+      "street": "Justus-von-Liebig-Straße",
+      "houseNumber": "5",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Buchloe",
+      "spotCount": 1,
+      "lat": 48.04036190000001,
+      "lng": 10.719396150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1210972118), ODbL"
+    },
+    {
+      "id": "buchloe-057fa4ebda",
+      "city": "buchloe",
+      "label": "Justus-von-Liebig-Straße 5",
+      "street": "Justus-von-Liebig-Straße",
+      "houseNumber": "5",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Buchloe",
+      "spotCount": 1,
+      "lat": 48.040362200000004,
+      "lng": 10.71934345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1210972119), ODbL"
+    },
+    {
+      "id": "buchloe-3622c8bfeb",
+      "city": "buchloe",
+      "label": "Justus-von-Liebig-Straße 5",
+      "street": "Justus-von-Liebig-Straße",
+      "houseNumber": "5",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Buchloe",
+      "spotCount": 1,
+      "lat": 48.04036240000001,
+      "lng": 10.7192908,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1210972121), ODbL"
+    }
+  ]
+}

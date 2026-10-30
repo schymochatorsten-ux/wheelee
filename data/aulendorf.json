@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "aulendorf",
+    "name": "Aulendorf",
+    "center": {
+      "lat": 47.95315620000001,
+      "lng": 9.64351395
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "aulendorf-d31a4ae6ba",
+      "city": "aulendorf",
+      "label": "Poststraße",
+      "street": "Poststraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Aulendorf",
+      "spotCount": 2,
+      "lat": 47.95315620000001,
+      "lng": 9.64351395,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/151648254), ODbL"
+    },
+    {
+      "id": "aulendorf-71afb74f28",
+      "city": "aulendorf",
+      "label": "Poststraße",
+      "street": "Poststraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Aulendorf",
+      "spotCount": 1,
+      "lat": 47.95299295000001,
+      "lng": 9.643456,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1390754973), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "steinbach",
+    "name": "Steinbach (Taunus)",
+    "center": {
+      "lat": 50.16601475,
+      "lng": 8.576680750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "steinbach-fd119f3ecb",
+      "city": "steinbach",
+      "label": "Untergasse",
+      "street": "Untergasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Steinbach (Taunus)",
+      "spotCount": 2,
+      "lat": 50.16601475,
+      "lng": 8.576680750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1099428688), ODbL"
+    },
+    {
+      "id": "steinbach-8b97115871",
+      "city": "steinbach",
+      "label": "Untergasse",
+      "street": "Untergasse",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Steinbach (Taunus)",
+      "spotCount": 1,
+      "lat": 50.1660241,
+      "lng": 8.576691700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1099428689), ODbL"
+    },
+    {
+      "id": "steinbach-185adbe621",
+      "city": "steinbach",
+      "label": "Untergasse",
+      "street": "Untergasse",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Steinbach (Taunus)",
+      "spotCount": 1,
+      "lat": 50.1660042,
+      "lng": 8.576668699999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1099428690), ODbL"
+    }
+  ]
+}

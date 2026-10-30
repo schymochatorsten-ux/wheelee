@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "kalkar",
+    "name": "Kalkar",
+    "center": {
+      "lat": 51.78655725,
+      "lng": 6.39608155
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kalkar-2923a56f18",
+      "city": "kalkar",
+      "label": "Griether Markt 8",
+      "street": "Griether Markt",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kalkar",
+      "spotCount": 2,
+      "lat": 51.78655725,
+      "lng": 6.3163825000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/53866789), ODbL"
+    },
+    {
+      "id": "kalkar-8b10e2e214",
+      "city": "kalkar",
+      "label": "Reeserschanz",
+      "street": "Reeserschanz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Kalkar",
+      "spotCount": 1,
+      "lat": 51.75133865000001,
+      "lng": 6.39608155,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/445982386), ODbL"
+    }
+  ]
+}

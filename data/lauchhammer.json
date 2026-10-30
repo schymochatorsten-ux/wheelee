@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "lauchhammer",
+    "name": "Lauchhammer",
+    "center": {
+      "lat": 51.4704569,
+      "lng": 13.73952285
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lauchhammer-d43cf92692",
+      "city": "lauchhammer",
+      "label": "Berliner Straße 18",
+      "street": "Berliner Straße",
+      "houseNumber": "18",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lauchhammer",
+      "spotCount": 2,
+      "lat": 51.469525700000005,
+      "lng": 13.73952285,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/952972812), ODbL"
+    },
+    {
+      "id": "lauchhammer-c128906bdd",
+      "city": "lauchhammer",
+      "label": "Berliner Straße 19",
+      "street": "Berliner Straße",
+      "houseNumber": "19",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lauchhammer",
+      "spotCount": 1,
+      "lat": 51.4704569,
+      "lng": 13.738761550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/952972792), ODbL"
+    },
+    {
+      "id": "lauchhammer-ba380bbe13",
+      "city": "lauchhammer",
+      "label": "Weinbergstraße",
+      "street": "Weinbergstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lauchhammer",
+      "spotCount": 1,
+      "lat": 51.5010642,
+      "lng": 13.754095000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/46482889), ODbL"
+    }
+  ]
+}

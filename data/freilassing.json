@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "freilassing",
+    "name": "Freilassing",
+    "center": {
+      "lat": 47.83619195,
+      "lng": 12.9789449
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "freilassing-b0ce93692e",
+      "city": "freilassing",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Freilassing",
+      "spotCount": 1,
+      "lat": 47.83619195,
+      "lng": 12.978390050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1148718065), ODbL"
+    },
+    {
+      "id": "freilassing-2daa1eec75",
+      "city": "freilassing",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Freilassing",
+      "spotCount": 1,
+      "lat": 47.83609250000001,
+      "lng": 12.9789449,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1148718071), ODbL"
+    },
+    {
+      "id": "freilassing-2b85af49d1",
+      "city": "freilassing",
+      "label": "Laufener Straße",
+      "street": "Laufener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Freilassing",
+      "spotCount": 2,
+      "lat": 47.850504900000004,
+      "lng": 12.986500150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/236982899), ODbL"
+    }
+  ]
+}

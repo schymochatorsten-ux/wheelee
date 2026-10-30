@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "schenefeld",
+    "name": "Schenefeld",
+    "center": {
+      "lat": 53.60035045000001,
+      "lng": 9.843130850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schenefeld-edec7083ce",
+      "city": "schenefeld",
+      "label": "Blankeneser Chaussee",
+      "street": "Blankeneser Chaussee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schenefeld",
+      "spotCount": 1,
+      "lat": 53.5969125,
+      "lng": 9.821962300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3440849067), ODbL"
+    },
+    {
+      "id": "schenefeld-3d50d3a9f3",
+      "city": "schenefeld",
+      "label": "Hauptstraße 33-37",
+      "street": "Hauptstraße",
+      "houseNumber": "33-37",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schenefeld",
+      "spotCount": 1,
+      "lat": 53.60035045000001,
+      "lng": 9.8249528,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25659722), ODbL"
+    },
+    {
+      "id": "schenefeld-b55492ddbd",
+      "city": "schenefeld",
+      "label": "Lornsenstraße 86",
+      "street": "Lornsenstraße",
+      "houseNumber": "86",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schenefeld",
+      "spotCount": 1,
+      "lat": 53.605297300000004,
+      "lng": 9.843130850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34915844), ODbL"
+    },
+    {
+      "id": "schenefeld-bad12b0d62",
+      "city": "schenefeld",
+      "label": "Schenefelder Platz",
+      "street": "Schenefelder Platz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schenefeld",
+      "spotCount": 1,
+      "lat": 53.5984378,
+      "lng": 9.849457000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/104477346), ODbL"
+    }
+  ]
+}

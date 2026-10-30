@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "korntal-muenchingen",
+    "name": "Korntal-Münchingen",
+    "center": {
+      "lat": 48.8532132,
+      "lng": 9.0994142
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "korntal-muenchingen-f2a9f8f6ec",
+      "city": "korntal-muenchingen",
+      "label": "Johannes-Daur-Straße 11",
+      "street": "Johannes-Daur-Straße",
+      "houseNumber": "11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Korntal-Münchingen",
+      "spotCount": 1,
+      "lat": 48.82989205,
+      "lng": 9.12197955,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1076291981), ODbL"
+    },
+    {
+      "id": "korntal-muenchingen-a4a71daa3b",
+      "city": "korntal-muenchingen",
+      "label": "Parkplatz Tennisclub",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Korntal-Münchingen",
+      "spotCount": 2,
+      "lat": 48.853507400000005,
+      "lng": 9.0994142,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/385295331), ODbL"
+    },
+    {
+      "id": "korntal-muenchingen-c09ecb097d",
+      "city": "korntal-muenchingen",
+      "label": "Stammheimer Straße 16",
+      "street": "Stammheimer Straße",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Korntal-Münchingen",
+      "spotCount": 1,
+      "lat": 48.848667400000004,
+      "lng": 9.13026275,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1286674527), ODbL"
+    },
+    {
+      "id": "korntal-muenchingen-510c181f56",
+      "city": "korntal-muenchingen",
+      "label": "Stuttgarter Straße 30",
+      "street": "Stuttgarter Straße",
+      "houseNumber": "30",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Korntal-Münchingen",
+      "spotCount": 1,
+      "lat": 48.854107600000006,
+      "lng": 9.0921064,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1087484228), ODbL"
+    },
+    {
+      "id": "korntal-muenchingen-5f5f3345a3",
+      "city": "korntal-muenchingen",
+      "label": "südl. Rathausplatz",
+      "street": "südl. Rathausplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Korntal-Münchingen",
+      "spotCount": 1,
+      "lat": 48.8532132,
+      "lng": 9.08954525,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/238591406), ODbL"
+    }
+  ]
+}

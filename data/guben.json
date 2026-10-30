@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "guben",
+    "name": "Guben",
+    "center": {
+      "lat": 51.950848500000006,
+      "lng": 14.715064750000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "guben-fbde67b5b8",
+      "city": "guben",
+      "label": "Berliner Straße 12",
+      "street": "Berliner Straße",
+      "houseNumber": "12",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Guben",
+      "spotCount": 1,
+      "lat": 51.95296055,
+      "lng": 14.713863550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1388016847), ODbL"
+    },
+    {
+      "id": "guben-4218c46725",
+      "city": "guben",
+      "label": "Berliner Straße 12",
+      "street": "Berliner Straße",
+      "houseNumber": "12",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Guben",
+      "spotCount": 1,
+      "lat": 51.9529905,
+      "lng": 14.713825400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1388016848), ODbL"
+    },
+    {
+      "id": "guben-5cbe9d3ab9",
+      "city": "guben",
+      "label": "Dr.-Ayrer-Straße",
+      "street": "Dr.-Ayrer-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Guben",
+      "spotCount": 1,
+      "lat": 51.94544255,
+      "lng": 14.71559405,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/46155426), ODbL"
+    },
+    {
+      "id": "guben-527d0d5279",
+      "city": "guben",
+      "label": "Lohmühlenweg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Guben",
+      "spotCount": 1,
+      "lat": 51.950848500000006,
+      "lng": 14.718853850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/105134678), ODbL"
+    },
+    {
+      "id": "guben-b6b709fb7d",
+      "city": "guben",
+      "label": "Wilkestraße",
+      "street": "Wilkestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Guben",
+      "spotCount": 1,
+      "lat": 51.944578250000006,
+      "lng": 14.715064750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/46155448), ODbL"
+    },
+    {
+      "id": "guben-5585eae1c6",
+      "city": "guben",
+      "label": "Wilkestraße 26",
+      "street": "Wilkestraße",
+      "houseNumber": "26",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Guben",
+      "spotCount": 1,
+      "lat": 51.9450233,
+      "lng": 14.713188050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/46155357), ODbL"
+    }
+  ]
+}

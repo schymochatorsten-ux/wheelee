@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "ginsheim-gustavsburg",
+    "name": "Ginsheim-Gustavsburg",
+    "center": {
+      "lat": 49.9945269,
+      "lng": 8.3137552
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ginsheim-gustavsburg-199233df0c",
+      "city": "ginsheim-gustavsburg",
+      "label": "Darmstädter Landstraße 66-68",
+      "street": "Darmstädter Landstraße",
+      "houseNumber": "66-68",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ginsheim-Gustavsburg",
+      "spotCount": 1,
+      "lat": 49.9967282,
+      "lng": 8.322403300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11513477878), ODbL"
+    },
+    {
+      "id": "ginsheim-gustavsburg-03d9502f69",
+      "city": "ginsheim-gustavsburg",
+      "label": "Dr.-Herrmann-Straße 23",
+      "street": "Dr.-Herrmann-Straße",
+      "houseNumber": "23",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ginsheim-Gustavsburg",
+      "spotCount": 2,
+      "lat": 49.9945183,
+      "lng": 8.31359625,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1164679826), ODbL"
+    },
+    {
+      "id": "ginsheim-gustavsburg-88252fdb66",
+      "city": "ginsheim-gustavsburg",
+      "label": "Dr.-Herrmann-Straße 23",
+      "street": "Dr.-Herrmann-Straße",
+      "houseNumber": "23",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ginsheim-Gustavsburg",
+      "spotCount": 1,
+      "lat": 49.9945269,
+      "lng": 8.3137552,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1318317529), ODbL"
+    },
+    {
+      "id": "ginsheim-gustavsburg-2a78a68216",
+      "city": "ginsheim-gustavsburg",
+      "label": "Dr.-Herrmann-Straße 23",
+      "street": "Dr.-Herrmann-Straße",
+      "houseNumber": "23",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ginsheim-Gustavsburg",
+      "spotCount": 1,
+      "lat": 49.99452430000001,
+      "lng": 8.3137076,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1318317530), ODbL"
+    },
+    {
+      "id": "ginsheim-gustavsburg-73956b6ea4",
+      "city": "ginsheim-gustavsburg",
+      "label": "Dr.-Herrmann-Straße 32",
+      "street": "Dr.-Herrmann-Straße",
+      "houseNumber": "32",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ginsheim-Gustavsburg",
+      "spotCount": 1,
+      "lat": 49.994675,
+      "lng": 8.31589355,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1360720348), ODbL"
+    }
+  ]
+}

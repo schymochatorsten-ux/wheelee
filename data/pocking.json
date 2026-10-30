@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "pocking",
+    "name": "Pocking",
+    "center": {
+      "lat": 48.400254100000005,
+      "lng": 13.3170906
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pocking-7ddd3259fd",
+      "city": "pocking",
+      "label": "Indlinger Straße",
+      "street": "Indlinger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pocking",
+      "spotCount": 2,
+      "lat": 48.400254100000005,
+      "lng": 13.3170906,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/566754078), ODbL"
+    }
+  ]
+}

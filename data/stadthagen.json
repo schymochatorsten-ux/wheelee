@@ -14,8 +14,8 @@
     {
       "id": "stadthagen-66e590c092",
       "city": "stadthagen",
-      "label": "Behindertenparkplatz Stadthagen",
-      "street": null,
+      "label": "Am Krankenhaus",
+      "street": "Am Krankenhaus",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
       "timeRestriction": null,
@@ -27,26 +27,11 @@
       "source": "OpenStreetMap (way/221184408), ODbL"
     },
     {
-      "id": "stadthagen-f24f358c0d",
-      "city": "stadthagen",
-      "label": "Behindertenparkplatz Stadthagen",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Stadthagen",
-      "spotCount": 2,
-      "lat": 52.319873650000005,
-      "lng": 9.215694150000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1154001562), ODbL"
-    },
-    {
       "id": "stadthagen-405865105a",
       "city": "stadthagen",
-      "label": "Behindertenparkplatz Stadthagen",
-      "street": null,
-      "houseNumber": null,
+      "label": "Bahnhofstraße 11",
+      "street": "Bahnhofstraße",
+      "houseNumber": "11",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Stadthagen",
@@ -55,6 +40,21 @@
       "lng": 9.20024865,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1491066830), ODbL"
+    },
+    {
+      "id": "stadthagen-f24f358c0d",
+      "city": "stadthagen",
+      "label": "Ostring 6A",
+      "street": "Ostring",
+      "houseNumber": "6A",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stadthagen",
+      "spotCount": 2,
+      "lat": 52.319873650000005,
+      "lng": 9.215694150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1154001562), ODbL"
     }
   ]
 }

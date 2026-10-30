@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "rothenburg-ob-der-tauber",
+    "name": "Rothenburg ob der Tauber",
+    "center": {
+      "lat": 49.379351650000004,
+      "lng": 10.184632400000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rothenburg-ob-der-tauber-4296cb2778",
+      "city": "rothenburg-ob-der-tauber",
+      "label": "Erlbacher Straße",
+      "street": "Erlbacher Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rothenburg ob der Tauber",
+      "spotCount": 1,
+      "lat": 49.36681145,
+      "lng": 10.2062468,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1315489596), ODbL"
+    },
+    {
+      "id": "rothenburg-ob-der-tauber-16e029b087",
+      "city": "rothenburg-ob-der-tauber",
+      "label": "Kapellenplatz 11",
+      "street": "Kapellenplatz",
+      "houseNumber": "11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Rothenburg ob der Tauber",
+      "spotCount": 2,
+      "lat": 49.37769535,
+      "lng": 10.18001725,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/143914867), ODbL"
+    },
+    {
+      "id": "rothenburg-ob-der-tauber-56c381ab4b",
+      "city": "rothenburg-ob-der-tauber",
+      "label": "Mannstraße",
+      "street": "Mannstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rothenburg ob der Tauber",
+      "spotCount": 1,
+      "lat": 49.379461150000004,
+      "lng": 10.186769550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1311311601), ODbL"
+    },
+    {
+      "id": "rothenburg-ob-der-tauber-b237b11380",
+      "city": "rothenburg-ob-der-tauber",
+      "label": "Mannstraße 1",
+      "street": "Mannstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rothenburg ob der Tauber",
+      "spotCount": 1,
+      "lat": 49.379351650000004,
+      "lng": 10.18642465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/231235016), ODbL"
+    },
+    {
+      "id": "rothenburg-ob-der-tauber-622d66d789",
+      "city": "rothenburg-ob-der-tauber",
+      "label": "P4",
+      "street": "Galgentor",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Rothenburg ob der Tauber",
+      "spotCount": 3,
+      "lat": 49.378749,
+      "lng": 10.184632400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25069544), ODbL"
+    },
+    {
+      "id": "rothenburg-ob-der-tauber-6f4b5a4173",
+      "city": "rothenburg-ob-der-tauber",
+      "label": "P5",
+      "street": "Bezoldweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Rothenburg ob der Tauber",
+      "spotCount": 3,
+      "lat": 49.3803507,
+      "lng": 10.178483200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24673262), ODbL"
+    },
+    {
+      "id": "rothenburg-ob-der-tauber-2beb3415ec",
+      "city": "rothenburg-ob-der-tauber",
+      "label": "Schrannenparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Rothenburg ob der Tauber",
+      "spotCount": 3,
+      "lat": 49.3796421,
+      "lng": 10.179354700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24991199), ODbL"
+    }
+  ]
+}

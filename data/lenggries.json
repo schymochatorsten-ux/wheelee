@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "lenggries",
+    "name": "Lenggries",
+    "center": {
+      "lat": 47.683048750000005,
+      "lng": 11.576414800000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lenggries-22781f00c8",
+      "city": "lenggries",
+      "label": "Adolf-Kolping-Straße",
+      "street": "Adolf-Kolping-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lenggries",
+      "spotCount": 1,
+      "lat": 47.683048750000005,
+      "lng": 11.576414800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/502960294), ODbL"
+    },
+    {
+      "id": "lenggries-9ff6a9729b",
+      "city": "lenggries",
+      "label": "Lenggries, Bahnhof",
+      "street": "Lenggries, Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lenggries",
+      "spotCount": 2,
+      "lat": 47.6803335,
+      "lng": 11.5737716,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1030026475), ODbL"
+    }
+  ]
+}

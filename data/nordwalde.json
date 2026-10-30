@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "nordwalde",
+    "name": "Nordwalde",
+    "center": {
+      "lat": 52.076622750000006,
+      "lng": 7.4624319
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nordwalde-464828a9d9",
+      "city": "nordwalde",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nordwalde",
+      "spotCount": 2,
+      "lat": 52.076622750000006,
+      "lng": 7.4624319,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31826755), ODbL"
+    }
+  ]
+}

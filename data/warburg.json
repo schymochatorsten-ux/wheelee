@@ -14,8 +14,8 @@
     {
       "id": "warburg-bf88fa7f50",
       "city": "warburg",
-      "label": "Behindertenparkplatz Warburg",
-      "street": null,
+      "label": "Scherfeder Straße",
+      "street": "Scherfeder Straße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,

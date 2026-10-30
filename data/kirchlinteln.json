@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "kirchlinteln",
+    "name": "Kirchlinteln",
+    "center": {
+      "lat": 52.940938700000004,
+      "lng": 9.32471625
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kirchlinteln-b15c4cc60d",
+      "city": "kirchlinteln",
+      "label": "Rathausparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kirchlinteln",
+      "spotCount": 1,
+      "lat": 52.94041465000001,
+      "lng": 9.32471625,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1210153586), ODbL"
+    },
+    {
+      "id": "kirchlinteln-54b5423652",
+      "city": "kirchlinteln",
+      "label": "Wehrstraße",
+      "street": "Wehrstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kirchlinteln",
+      "spotCount": 2,
+      "lat": 52.940938700000004,
+      "lng": 9.320147900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1148055131), ODbL"
+    }
+  ]
+}

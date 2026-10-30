@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "marienberg",
+    "name": "Marienberg",
+    "center": {
+      "lat": 50.64668210000001,
+      "lng": 13.15391705
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "marienberg-c786cf7e75",
+      "city": "marienberg",
+      "label": "Am Mühlberg 34",
+      "street": "Am Mühlberg",
+      "houseNumber": "34",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Marienberg",
+      "spotCount": 1,
+      "lat": 50.64668210000001,
+      "lng": 13.15391705,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1300300921), ODbL"
+    }
+  ]
+}

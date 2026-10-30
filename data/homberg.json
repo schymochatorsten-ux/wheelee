@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "homberg",
+    "name": "Homberg (Efze)",
+    "center": {
+      "lat": 51.034242750000004,
+      "lng": 9.407265200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "homberg-234f37e9c7",
+      "city": "homberg",
+      "label": "Bergstraße",
+      "street": "Bergstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Homberg (Efze)",
+      "spotCount": 1,
+      "lat": 51.034242750000004,
+      "lng": 9.407265200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/230738385), ODbL"
+    },
+    {
+      "id": "homberg-da922d5cc2",
+      "city": "homberg",
+      "label": "Entengasse 7",
+      "street": "Entengasse",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Homberg (Efze)",
+      "spotCount": 1,
+      "lat": 51.03315765000001,
+      "lng": 9.40444475,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1430389658), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "burgau",
+    "name": "Burgau",
+    "center": {
+      "lat": 48.433238800000005,
+      "lng": 10.406453500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "burgau-ab9f7fedae",
+      "city": "burgau",
+      "label": "Kapuzinerstraße 9",
+      "street": "Kapuzinerstraße",
+      "houseNumber": "9",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Burgau",
+      "spotCount": 1,
+      "lat": 48.433238800000005,
+      "lng": 10.406453500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11640808882), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "neuenkirchen",
+    "name": "Neuenkirchen",
+    "center": {
+      "lat": 52.244777600000006,
+      "lng": 7.371489050000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuenkirchen-e571dd9b32",
+      "city": "neuenkirchen",
+      "label": "Marktstraße",
+      "street": "Marktstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neuenkirchen",
+      "spotCount": 1,
+      "lat": 52.244777600000006,
+      "lng": 7.371489050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1532856081), ODbL"
+    }
+  ]
+}

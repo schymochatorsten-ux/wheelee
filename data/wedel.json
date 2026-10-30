@@ -12,26 +12,11 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "wedel-9277899686",
-      "city": "wedel",
-      "label": "Behindertenparkplatz Wedel",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
-      "timeRestriction": null,
-      "district": "Wedel",
-      "spotCount": 2,
-      "lat": 53.577738200000006,
-      "lng": 9.7062664,
-      "geoAccuracy": "house",
-      "source": "OpenStreetMap (node/975856626), ODbL"
-    },
-    {
       "id": "wedel-3c4cfb6c8d",
       "city": "wedel",
-      "label": "Behindertenparkplatz Wedel",
-      "street": null,
-      "houseNumber": null,
+      "label": "Bahnhofstraße 17",
+      "street": "Bahnhofstraße",
+      "houseNumber": "17",
       "note": null,
       "timeRestriction": null,
       "district": "Wedel",
@@ -40,6 +25,21 @@
       "lng": 9.7039103,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1286965406), ODbL"
+    },
+    {
+      "id": "wedel-9277899686",
+      "city": "wedel",
+      "label": "Feldstraße 5",
+      "street": "Feldstraße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Wedel",
+      "spotCount": 2,
+      "lat": 53.577738200000006,
+      "lng": 9.7062664,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/975856626), ODbL"
     },
     {
       "id": "wedel-2c760c8de7",

@@ -14,9 +14,9 @@
     {
       "id": "varel-ab67bd2d76",
       "city": "varel",
-      "label": "Behindertenparkplatz Varel",
-      "street": null,
-      "houseNumber": null,
+      "label": "Altjührdener Straße 47",
+      "street": "Altjührdener Straße",
+      "houseNumber": "47",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Varel",

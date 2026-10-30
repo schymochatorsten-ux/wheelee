@@ -12,11 +12,26 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
+      "id": "hoyerswerda-80d5f96d11",
+      "city": "hoyerswerda",
+      "label": "Am Bahnhofsvorplatz",
+      "street": "Am Bahnhofsvorplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hoyerswerda",
+      "spotCount": 2,
+      "lat": 51.43330155,
+      "lng": 14.230936100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/127383710), ODbL"
+    },
+    {
       "id": "hoyerswerda-c0ca93196e",
       "city": "hoyerswerda",
-      "label": "Behindertenparkplatz Hoyerswerda",
-      "street": null,
-      "houseNumber": null,
+      "label": "Am Waldfriedhof 1",
+      "street": "Am Waldfriedhof",
+      "houseNumber": "1",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Hoyerswerda",
@@ -25,6 +40,21 @@
       "lng": 14.2823892,
       "geoAccuracy": "house",
       "source": "OpenStreetMap (node/11459710822), ODbL"
+    },
+    {
+      "id": "hoyerswerda-7235fc206b",
+      "city": "hoyerswerda",
+      "label": "Bautzener Allee",
+      "street": "Bautzener Allee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Hoyerswerda",
+      "spotCount": 3,
+      "lat": 51.439435350000004,
+      "lng": 14.261921300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/149014659), ODbL"
     },
     {
       "id": "hoyerswerda-1f0c959014",
@@ -42,55 +72,10 @@
       "source": "OpenStreetMap (way/53681862), ODbL"
     },
     {
-      "id": "hoyerswerda-c71e7275d7",
-      "city": "hoyerswerda",
-      "label": "Behindertenparkplatz Hoyerswerda",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Hoyerswerda",
-      "spotCount": 6,
-      "lat": 51.44302935,
-      "lng": 14.2738276,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/56031742), ODbL"
-    },
-    {
-      "id": "hoyerswerda-80d5f96d11",
-      "city": "hoyerswerda",
-      "label": "Behindertenparkplatz Hoyerswerda",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Hoyerswerda",
-      "spotCount": 2,
-      "lat": 51.43330155,
-      "lng": 14.230936100000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/127383710), ODbL"
-    },
-    {
-      "id": "hoyerswerda-7235fc206b",
-      "city": "hoyerswerda",
-      "label": "Behindertenparkplatz Hoyerswerda",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": "24/7",
-      "district": "Hoyerswerda",
-      "spotCount": 3,
-      "lat": 51.439435350000004,
-      "lng": 14.261921300000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/149014659), ODbL"
-    },
-    {
       "id": "hoyerswerda-69227d9f18",
       "city": "hoyerswerda",
-      "label": "Behindertenparkplatz Hoyerswerda",
-      "street": null,
+      "label": "Grünewaldring",
+      "street": "Grünewaldring",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -100,21 +85,6 @@
       "lng": 14.2598126,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/676295215), ODbL"
-    },
-    {
-      "id": "hoyerswerda-2e07236469",
-      "city": "hoyerswerda",
-      "label": "Behindertenparkplatz Hoyerswerda",
-      "street": null,
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Hoyerswerda",
-      "spotCount": 1,
-      "lat": 51.439419650000005,
-      "lng": 14.247948000000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1106749082), ODbL"
     },
     {
       "id": "hoyerswerda-eec17d552c",
@@ -132,6 +102,21 @@
       "source": "OpenStreetMap (node/347682533), ODbL"
     },
     {
+      "id": "hoyerswerda-c71e7275d7",
+      "city": "hoyerswerda",
+      "label": "Maria-Grollmuß-Straße",
+      "street": "Maria-Grollmuß-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hoyerswerda",
+      "spotCount": 6,
+      "lat": 51.44302935,
+      "lng": 14.2738276,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/56031742), ODbL"
+    },
+    {
       "id": "hoyerswerda-9b1eee759b",
       "city": "hoyerswerda",
       "label": "Schwarzer Markt",
@@ -145,6 +130,21 @@
       "lng": 14.244772950000002,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/584113934), ODbL"
+    },
+    {
+      "id": "hoyerswerda-2e07236469",
+      "city": "hoyerswerda",
+      "label": "Teschenstraße",
+      "street": "Teschenstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hoyerswerda",
+      "spotCount": 1,
+      "lat": 51.439419650000005,
+      "lng": 14.247948000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1106749082), ODbL"
     }
   ]
 }

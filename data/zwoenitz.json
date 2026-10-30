@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "zwoenitz",
+    "name": "Zwönitz",
+    "center": {
+      "lat": 50.63062085,
+      "lng": 12.8124687
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zwoenitz-b78455790e",
+      "city": "zwoenitz",
+      "label": "Erhardtgasse",
+      "street": "Erhardtgasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zwönitz",
+      "spotCount": 2,
+      "lat": 50.63062085,
+      "lng": 12.806836500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/605824354), ODbL"
+    },
+    {
+      "id": "zwoenitz-076ad98325",
+      "city": "zwoenitz",
+      "label": "Heinrich-Heine-Straße",
+      "street": "Heinrich-Heine-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zwönitz",
+      "spotCount": 2,
+      "lat": 50.627701650000006,
+      "lng": 12.814080200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/692832209), ODbL"
+    },
+    {
+      "id": "zwoenitz-ca3be88bdb",
+      "city": "zwoenitz",
+      "label": "Lange Gasse",
+      "street": "Lange Gasse",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Zwönitz",
+      "spotCount": 1,
+      "lat": 50.63048285000001,
+      "lng": 12.8124687,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1379888975), ODbL"
+    },
+    {
+      "id": "zwoenitz-2f66d66f66",
+      "city": "zwoenitz",
+      "label": "Parkplatz am Kaufland",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zwönitz",
+      "spotCount": 5,
+      "lat": 50.63590125,
+      "lng": 12.794643,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/51580969), ODbL"
+    },
+    {
+      "id": "zwoenitz-9305905d7f",
+      "city": "zwoenitz",
+      "label": "Wehrgasse",
+      "street": "Wehrgasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zwönitz",
+      "spotCount": 3,
+      "lat": 50.64191255,
+      "lng": 12.8188107,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/109229643), ODbL"
+    }
+  ]
+}

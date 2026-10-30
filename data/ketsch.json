@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "ketsch",
+    "name": "Ketsch",
+    "center": {
+      "lat": 49.36707265,
+      "lng": 8.530677100000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ketsch-95b6ef745c",
+      "city": "ketsch",
+      "label": "Bahnhofsanlage",
+      "street": "Bahnhofsanlage",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ketsch",
+      "spotCount": 1,
+      "lat": 49.36911715000001,
+      "lng": 8.530677100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1223212644), ODbL"
+    },
+    {
+      "id": "ketsch-716de91bb1",
+      "city": "ketsch",
+      "label": "Dossenheimer Straße",
+      "street": "Dossenheimer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ketsch",
+      "spotCount": 2,
+      "lat": 49.36991760000001,
+      "lng": 8.531181700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1343492903), ODbL"
+    },
+    {
+      "id": "ketsch-53da15e7c0",
+      "city": "ketsch",
+      "label": "Goethestraße 12",
+      "street": "Goethestraße",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ketsch",
+      "spotCount": 2,
+      "lat": 49.367007150000006,
+      "lng": 8.532526100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1390916318), ODbL"
+    },
+    {
+      "id": "ketsch-ddb6c782c0",
+      "city": "ketsch",
+      "label": "Goethestraße 13",
+      "street": "Goethestraße",
+      "houseNumber": "13",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ketsch",
+      "spotCount": 2,
+      "lat": 49.366920500000006,
+      "lng": 8.5326342,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1390916310), ODbL"
+    },
+    {
+      "id": "ketsch-1511421bea",
+      "city": "ketsch",
+      "label": "Hockenheimer Straße",
+      "street": "Hockenheimer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ketsch",
+      "spotCount": 1,
+      "lat": 49.36707265,
+      "lng": 8.5242999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/314478569), ODbL"
+    },
+    {
+      "id": "ketsch-05c3f9873a",
+      "city": "ketsch",
+      "label": "Schillerstraße",
+      "street": "Schillerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ketsch",
+      "spotCount": 3,
+      "lat": 49.36726715,
+      "lng": 8.52892435,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1332839846), ODbL"
+    },
+    {
+      "id": "ketsch-5d9b01ae28",
+      "city": "ketsch",
+      "label": "Speyerer Straße",
+      "street": "Speyerer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ketsch",
+      "spotCount": 1,
+      "lat": 49.3646631,
+      "lng": 8.519782300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1532061022), ODbL"
+    }
+  ]
+}

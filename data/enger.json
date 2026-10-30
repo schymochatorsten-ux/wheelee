@@ -14,8 +14,8 @@
     {
       "id": "enger-b1203aa069",
       "city": "enger",
-      "label": "Behindertenparkplatz Enger",
-      "street": null,
+      "label": "Ringstraße",
+      "street": "Ringstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,

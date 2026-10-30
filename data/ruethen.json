@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "ruethen",
+    "name": "Rüthen",
+    "center": {
+      "lat": 51.49454060000001,
+      "lng": 8.43184715
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ruethen-a699baefe2",
+      "city": "ruethen",
+      "label": "Königstraße",
+      "street": "Königstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rüthen",
+      "spotCount": 1,
+      "lat": 51.49035930000001,
+      "lng": 8.43189645,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1278767659), ODbL"
+    },
+    {
+      "id": "ruethen-93ac812180",
+      "city": "ruethen",
+      "label": "Sauerdrift",
+      "street": "Sauerdrift",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rüthen",
+      "spotCount": 1,
+      "lat": 51.49454060000001,
+      "lng": 8.430482300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1354167823), ODbL"
+    },
+    {
+      "id": "ruethen-3db9b4b528",
+      "city": "ruethen",
+      "label": "Sauerdrift",
+      "street": "Sauerdrift",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rüthen",
+      "spotCount": 1,
+      "lat": 51.4945503,
+      "lng": 8.430529400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1354167824), ODbL"
+    },
+    {
+      "id": "ruethen-a7a78b8d8b",
+      "city": "ruethen",
+      "label": "Volksbank",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Rüthen",
+      "spotCount": 1,
+      "lat": 51.49040155,
+      "lng": 8.43184715,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1278767664), ODbL"
+    }
+  ]
+}

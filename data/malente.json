@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "malente",
+    "name": "Malente",
+    "center": {
+      "lat": 54.1622943,
+      "lng": 10.579582300000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "malente-14f46cc575",
+      "city": "malente",
+      "label": "Rothensande",
+      "street": "Rothensande",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Malente",
+      "spotCount": 4,
+      "lat": 54.16199735000001,
+      "lng": 10.5804609,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/415900465), ODbL"
+    },
+    {
+      "id": "malente-e484988415",
+      "city": "malente",
+      "label": "Rothensande",
+      "street": "Rothensande",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Malente",
+      "spotCount": 4,
+      "lat": 54.16296195,
+      "lng": 10.5776842,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1427898483), ODbL"
+    },
+    {
+      "id": "malente-dce4b2d8dd",
+      "city": "malente",
+      "label": "Rothensande",
+      "street": "Rothensande",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Malente",
+      "spotCount": 1,
+      "lat": 54.1622943,
+      "lng": 10.579582300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1427899607), ODbL"
+    }
+  ]
+}

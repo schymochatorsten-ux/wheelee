@@ -12,25 +12,10 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "henstedt-ulzburg-29a69b6d64",
-      "city": "henstedt-ulzburg",
-      "label": "Behindertenparkplatz Henstedt-Ulzburg",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Henstedt-Ulzburg",
-      "spotCount": 1,
-      "lat": 53.757977200000006,
-      "lng": 9.9950455,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/78336424), ODbL"
-    },
-    {
       "id": "henstedt-ulzburg-3f8f6f7f4a",
       "city": "henstedt-ulzburg",
-      "label": "Behindertenparkplatz Henstedt-Ulzburg",
-      "street": null,
+      "label": "McDrive",
+      "street": "McDrive",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": "Mo-Th 08:00-24:00, Fr,Sa 08:00-01:00; PH,Su 09:00-24:00",
@@ -55,6 +40,21 @@
       "lng": 9.992046300000002,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/55508006), ODbL"
+    },
+    {
+      "id": "henstedt-ulzburg-29a69b6d64",
+      "city": "henstedt-ulzburg",
+      "label": "Theodor-Storm-Straße",
+      "street": "Theodor-Storm-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Henstedt-Ulzburg",
+      "spotCount": 1,
+      "lat": 53.757977200000006,
+      "lng": 9.9950455,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/78336424), ODbL"
     }
   ]
 }

@@ -12,10 +12,25 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
+      "id": "glauchau-b426466d2e",
+      "city": "glauchau",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Glauchau",
+      "spotCount": 1,
+      "lat": 50.82797070000001,
+      "lng": 12.547576800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1314158705), ODbL"
+    },
+    {
       "id": "glauchau-4be82f399f",
       "city": "glauchau",
-      "label": "Behindertenparkplatz Glauchau",
-      "street": null,
+      "label": "An der Sachsenlandhalle",
+      "street": "An der Sachsenlandhalle",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -29,8 +44,8 @@
     {
       "id": "glauchau-4ac74bfa69",
       "city": "glauchau",
-      "label": "Behindertenparkplatz Glauchau",
-      "street": null,
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -44,8 +59,8 @@
     {
       "id": "glauchau-d6689c4cb8",
       "city": "glauchau",
-      "label": "Behindertenparkplatz Glauchau",
-      "street": null,
+      "label": "Gabelsbergerstraße",
+      "street": "Gabelsbergerstraße",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -55,21 +70,6 @@
       "lng": 12.54504865,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1156803727), ODbL"
-    },
-    {
-      "id": "glauchau-b426466d2e",
-      "city": "glauchau",
-      "label": "Behindertenparkplatz Glauchau",
-      "street": null,
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Glauchau",
-      "spotCount": 1,
-      "lat": 50.82797070000001,
-      "lng": 12.547576800000002,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1314158705), ODbL"
     }
   ]
 }

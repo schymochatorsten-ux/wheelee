@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "grossefehn",
+    "name": "Großefehn",
+    "center": {
+      "lat": 53.401651150000006,
+      "lng": 7.604643600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grossefehn-49614865df",
+      "city": "grossefehn",
+      "label": "Kanalstraße Süd 67",
+      "street": "Kanalstraße Süd",
+      "houseNumber": "67",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großefehn",
+      "spotCount": 1,
+      "lat": 53.401651150000006,
+      "lng": 7.604643600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1549613012), ODbL"
+    }
+  ]
+}

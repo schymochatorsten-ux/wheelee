@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "kronshagen",
+    "name": "Kronshagen",
+    "center": {
+      "lat": 54.33712030000001,
+      "lng": 10.077279050000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kronshagen-d504896589",
+      "city": "kronshagen",
+      "label": "Kieler Straße 114",
+      "street": "Kieler Straße",
+      "houseNumber": "114",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kronshagen",
+      "spotCount": 1,
+      "lat": 54.33242510000001,
+      "lng": 10.077857900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35399759), ODbL"
+    },
+    {
+      "id": "kronshagen-9cefe2f986",
+      "city": "kronshagen",
+      "label": "Suchsdorfer Weg",
+      "street": "Suchsdorfer Weg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kronshagen",
+      "spotCount": 1,
+      "lat": 54.33713435,
+      "lng": 10.077279050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/737860098), ODbL"
+    },
+    {
+      "id": "kronshagen-c4c245730f",
+      "city": "kronshagen",
+      "label": "Suchsdorfer Weg",
+      "street": "Suchsdorfer Weg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kronshagen",
+      "spotCount": 1,
+      "lat": 54.33712030000001,
+      "lng": 10.0772264,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/737860099), ODbL"
+    }
+  ]
+}

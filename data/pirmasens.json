@@ -12,26 +12,26 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "pirmasens-f425f2563a",
+      "id": "pirmasens-c4754f26dc",
       "city": "pirmasens",
-      "label": "Behindertenparkplatz Pirmasens",
-      "street": null,
+      "label": "Richard-Strauß-Weg",
+      "street": "Richard-Strauß-Weg",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Pirmasens",
       "spotCount": 1,
-      "lat": 49.2031434,
-      "lng": 7.6000399000000005,
-      "geoAccuracy": "house",
-      "source": "OpenStreetMap (node/6490372822), ODbL"
+      "lat": 49.19023370000001,
+      "lng": 7.60801785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1235575515), ODbL"
     },
     {
       "id": "pirmasens-9f957eb9ed",
       "city": "pirmasens",
-      "label": "Behindertenparkplatz Pirmasens",
-      "street": null,
-      "houseNumber": null,
+      "label": "Römerstraße 5",
+      "street": "Römerstraße",
+      "houseNumber": "5",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": "24/7",
       "district": "Pirmasens",
@@ -42,19 +42,19 @@
       "source": "OpenStreetMap (way/117934960), ODbL"
     },
     {
-      "id": "pirmasens-c4754f26dc",
+      "id": "pirmasens-f425f2563a",
       "city": "pirmasens",
-      "label": "Behindertenparkplatz Pirmasens",
-      "street": null,
-      "houseNumber": null,
+      "label": "Schützenstraße 16",
+      "street": "Schützenstraße",
+      "houseNumber": "16",
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
       "district": "Pirmasens",
       "spotCount": 1,
-      "lat": 49.19023370000001,
-      "lng": 7.60801785,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1235575515), ODbL"
+      "lat": 49.2031434,
+      "lng": 7.6000399000000005,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6490372822), ODbL"
     }
   ]
 }

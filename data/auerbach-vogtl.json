@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "auerbach-vogtl",
+    "name": "Auerbach/Vogtl.",
+    "center": {
+      "lat": 50.509247800000004,
+      "lng": 12.451006900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "auerbach-vogtl-8e9f264fa3",
+      "city": "auerbach-vogtl",
+      "label": "Breitscheidstraße 13",
+      "street": "Breitscheidstraße",
+      "houseNumber": "13",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Auerbach/Vogtl.",
+      "spotCount": 2,
+      "lat": 50.50623195,
+      "lng": 12.40032965,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/809265473), ODbL"
+    },
+    {
+      "id": "auerbach-vogtl-45dd674f1b",
+      "city": "auerbach-vogtl",
+      "label": "Parkplatz \"Schöne Aussicht\"",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Auerbach/Vogtl.",
+      "spotCount": 2,
+      "lat": 50.509247800000004,
+      "lng": 12.451006900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/771066810), ODbL"
+    }
+  ]
+}

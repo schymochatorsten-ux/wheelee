@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "muehltal",
+    "name": "Mühltal",
+    "center": {
+      "lat": 49.8245045,
+      "lng": 8.696331500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "muehltal-1fad6f51a4",
+      "city": "muehltal",
+      "label": "Bachgasse 5",
+      "street": "Bachgasse",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mühltal",
+      "spotCount": 2,
+      "lat": 49.8245045,
+      "lng": 8.70052505,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/73203701), ODbL"
+    },
+    {
+      "id": "muehltal-379e11dbd5",
+      "city": "muehltal",
+      "label": "Fliednerplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mühltal",
+      "spotCount": 1,
+      "lat": 49.82459075,
+      "lng": 8.696331500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/107192664), ODbL"
+    },
+    {
+      "id": "muehltal-9676465ab4",
+      "city": "muehltal",
+      "label": "Rheinstraße",
+      "street": "Rheinstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mühltal",
+      "spotCount": 1,
+      "lat": 49.8197567,
+      "lng": 8.68390385,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1314270817), ODbL"
+    }
+  ]
+}

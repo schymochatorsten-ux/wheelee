@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "kirchheim-b-muenchen",
+    "name": "Kirchheim b.München",
+    "center": {
+      "lat": 48.159094950000004,
+      "lng": 11.76015225
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kirchheim-b-muenchen-dd0d3516a7",
+      "city": "kirchheim-b-muenchen",
+      "label": "Fraunhoferstraße 1",
+      "street": "Fraunhoferstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kirchheim b.München",
+      "spotCount": 3,
+      "lat": 48.176473550000004,
+      "lng": 11.763676750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/945849150), ODbL"
+    },
+    {
+      "id": "kirchheim-b-muenchen-8becaba210",
+      "city": "kirchheim-b-muenchen",
+      "label": "Parsdorfer Weg",
+      "street": "Parsdorfer Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kirchheim b.München",
+      "spotCount": 1,
+      "lat": 48.1582091,
+      "lng": 11.75940645,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26006664), ODbL"
+    },
+    {
+      "id": "kirchheim-b-muenchen-4a857798eb",
+      "city": "kirchheim-b-muenchen",
+      "label": "Poinger Straße",
+      "street": "Poinger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kirchheim b.München",
+      "spotCount": 2,
+      "lat": 48.159094950000004,
+      "lng": 11.76015225,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/194831724), ODbL"
+    }
+  ]
+}

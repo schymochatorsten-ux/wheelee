@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "schmalkalden",
+    "name": "Schmalkalden",
+    "center": {
+      "lat": 50.7185162,
+      "lng": 10.442116550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schmalkalden-9e010cce3f",
+      "city": "schmalkalden",
+      "label": "Eichelbach",
+      "street": "Eichelbach",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schmalkalden",
+      "spotCount": 1,
+      "lat": 50.72260765,
+      "lng": 10.442116550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/55128911), ODbL"
+    },
+    {
+      "id": "schmalkalden-3ab64fc18d",
+      "city": "schmalkalden",
+      "label": "Fuchsenkothe",
+      "street": "Fuchsenkothe",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schmalkalden",
+      "spotCount": 4,
+      "lat": 50.71813035,
+      "lng": 10.430762300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/999009891), ODbL"
+    },
+    {
+      "id": "schmalkalden-db669fd35d",
+      "city": "schmalkalden",
+      "label": "Hedwigsweg",
+      "street": "Hedwigsweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schmalkalden",
+      "spotCount": 1,
+      "lat": 50.7212437,
+      "lng": 10.458143,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1447969226), ODbL"
+    },
+    {
+      "id": "schmalkalden-e30c9dac6c",
+      "city": "schmalkalden",
+      "label": "Kasseler Straße",
+      "street": "Kasseler Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schmalkalden",
+      "spotCount": 6,
+      "lat": 50.7179065,
+      "lng": 10.4294999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/614536486), ODbL"
+    },
+    {
+      "id": "schmalkalden-b0445c28dc",
+      "city": "schmalkalden",
+      "label": "Lohweg",
+      "street": "Lohweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schmalkalden",
+      "spotCount": 1,
+      "lat": 50.717340300000004,
+      "lng": 10.4627078,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1837465984), ODbL"
+    },
+    {
+      "id": "schmalkalden-4a36bf95d1",
+      "city": "schmalkalden",
+      "label": "Nougat-Allee",
+      "street": "Nougat-Allee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schmalkalden",
+      "spotCount": 1,
+      "lat": 50.7185162,
+      "lng": 10.4372553,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/187995649), ODbL"
+    }
+  ]
+}

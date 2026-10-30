@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "stahnsdorf",
+    "name": "Stahnsdorf",
+    "center": {
+      "lat": 52.3895416,
+      "lng": 13.23232355
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "stahnsdorf-9f0bdf7a01",
+      "city": "stahnsdorf",
+      "label": "Mühlenstraße",
+      "street": "Mühlenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stahnsdorf",
+      "spotCount": 5,
+      "lat": 52.3895416,
+      "lng": 13.223033050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/981913636), ODbL"
+    },
+    {
+      "id": "stahnsdorf-4294c362c5",
+      "city": "stahnsdorf",
+      "label": "Quermathe",
+      "street": "Quermathe",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stahnsdorf",
+      "spotCount": 1,
+      "lat": 52.386875350000004,
+      "lng": 13.23232355,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1165452865), ODbL"
+    }
+  ]
+}

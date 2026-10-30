@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "gerstetten",
+    "name": "Gerstetten",
+    "center": {
+      "lat": 48.595901100000006,
+      "lng": 10.124642600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gerstetten-359a1e219f",
+      "city": "gerstetten",
+      "label": "Daimlerstraße",
+      "street": "Daimlerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gerstetten",
+      "spotCount": 1,
+      "lat": 48.627675550000006,
+      "lng": 10.00929685,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34719280), ODbL"
+    },
+    {
+      "id": "gerstetten-42c9b881d8",
+      "city": "gerstetten",
+      "label": "Elsternweg",
+      "street": "Elsternweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gerstetten",
+      "spotCount": 1,
+      "lat": 48.60031355,
+      "lng": 10.0718727,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1361478136), ODbL"
+    },
+    {
+      "id": "gerstetten-d39b7aa05d",
+      "city": "gerstetten",
+      "label": "Karlstraße 67",
+      "street": "Karlstraße",
+      "houseNumber": "67",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gerstetten",
+      "spotCount": 1,
+      "lat": 48.6247856,
+      "lng": 10.0288312,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24799389), ODbL"
+    },
+    {
+      "id": "gerstetten-155b79828a",
+      "city": "gerstetten",
+      "label": "Querstraße",
+      "street": "Querstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gerstetten",
+      "spotCount": 2,
+      "lat": 48.595901100000006,
+      "lng": 10.124642600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1295807217), ODbL"
+    },
+    {
+      "id": "gerstetten-e93d70dbd0",
+      "city": "gerstetten",
+      "label": "Querstraße",
+      "street": "Querstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gerstetten",
+      "spotCount": 1,
+      "lat": 48.5958833,
+      "lng": 10.12475825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1295807218), ODbL"
+    },
+    {
+      "id": "gerstetten-c2f97d4fef",
+      "city": "gerstetten",
+      "label": "Querstraße",
+      "street": "Querstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gerstetten",
+      "spotCount": 1,
+      "lat": 48.5958907,
+      "lng": 10.12471065,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1295807219), ODbL"
+    },
+    {
+      "id": "gerstetten-b569676e55",
+      "city": "gerstetten",
+      "label": "Querstraße",
+      "street": "Querstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gerstetten",
+      "spotCount": 2,
+      "lat": 48.59583620000001,
+      "lng": 10.12528275,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1295807232), ODbL"
+    }
+  ]
+}

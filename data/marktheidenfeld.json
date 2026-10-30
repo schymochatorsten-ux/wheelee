@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "marktheidenfeld",
+    "name": "Marktheidenfeld",
+    "center": {
+      "lat": 49.8450057,
+      "lng": 9.6017864
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "marktheidenfeld-2a065d66d5",
+      "city": "marktheidenfeld",
+      "label": "Bronnbacher Platz",
+      "street": "Bronnbacher Platz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Marktheidenfeld",
+      "spotCount": 1,
+      "lat": 49.8450057,
+      "lng": 9.6017864,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5918611686), ODbL"
+    },
+    {
+      "id": "marktheidenfeld-277a8c8761",
+      "city": "marktheidenfeld",
+      "label": "Brückenstraße 1",
+      "street": "Brückenstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Marktheidenfeld",
+      "spotCount": 2,
+      "lat": 49.84640005,
+      "lng": 9.6006729,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1552390252), ODbL"
+    },
+    {
+      "id": "marktheidenfeld-a93b8bdb5e",
+      "city": "marktheidenfeld",
+      "label": "Kohlsberg",
+      "street": "Kohlsberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Marktheidenfeld",
+      "spotCount": 3,
+      "lat": 49.837905400000004,
+      "lng": 9.51566835,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/554035841), ODbL"
+    },
+    {
+      "id": "marktheidenfeld-c2954327f9",
+      "city": "marktheidenfeld",
+      "label": "Mitteltorstraße 30",
+      "street": "Mitteltorstraße",
+      "houseNumber": "30",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Marktheidenfeld",
+      "spotCount": 1,
+      "lat": 49.843461000000005,
+      "lng": 9.6023431,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5656941921), ODbL"
+    }
+  ]
+}

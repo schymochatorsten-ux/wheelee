@@ -12,25 +12,10 @@
   "generatedAt": "2026-10-29",
   "spots": [
     {
-      "id": "schoenebeck-7011792773",
-      "city": "schoenebeck",
-      "label": "Behindertenparkplatz Schönebeck (Elbe)",
-      "street": null,
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Schönebeck (Elbe)",
-      "spotCount": 1,
-      "lat": 52.017398400000005,
-      "lng": 11.7373717,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/27583029), ODbL"
-    },
-    {
       "id": "schoenebeck-a20ac768d8",
       "city": "schoenebeck",
-      "label": "Behindertenparkplatz Schönebeck (Elbe)",
-      "street": null,
+      "label": "Bierer Berg",
+      "street": "Bierer Berg",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,
@@ -44,8 +29,8 @@
     {
       "id": "schoenebeck-500e0450c1",
       "city": "schoenebeck",
-      "label": "Behindertenparkplatz Schönebeck (Elbe)",
-      "street": null,
+      "label": "Bierer Berg",
+      "street": "Bierer Berg",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,
@@ -59,8 +44,8 @@
     {
       "id": "schoenebeck-d1e4661e36",
       "city": "schoenebeck",
-      "label": "Behindertenparkplatz Schönebeck (Elbe)",
-      "street": null,
+      "label": "Bierer Berg",
+      "street": "Bierer Berg",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,
@@ -74,8 +59,8 @@
     {
       "id": "schoenebeck-8f2504471c",
       "city": "schoenebeck",
-      "label": "Behindertenparkplatz Schönebeck (Elbe)",
-      "street": null,
+      "label": "Bierer Berg",
+      "street": "Bierer Berg",
       "houseNumber": null,
       "note": null,
       "timeRestriction": null,
@@ -89,8 +74,8 @@
     {
       "id": "schoenebeck-1cfbcd3503",
       "city": "schoenebeck",
-      "label": "Behindertenparkplatz Schönebeck (Elbe)",
-      "street": null,
+      "label": "Bierer Berg",
+      "street": "Bierer Berg",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -104,8 +89,8 @@
     {
       "id": "schoenebeck-7b578b5987",
       "city": "schoenebeck",
-      "label": "Behindertenparkplatz Schönebeck (Elbe)",
-      "street": null,
+      "label": "Kunstanger",
+      "street": "Kunstanger",
       "houseNumber": null,
       "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
       "timeRestriction": null,
@@ -115,6 +100,21 @@
       "lng": 11.723992500000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1530891304), ODbL"
+    },
+    {
+      "id": "schoenebeck-7011792773",
+      "city": "schoenebeck",
+      "label": "Söker Straße",
+      "street": "Söker Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schönebeck (Elbe)",
+      "spotCount": 1,
+      "lat": 52.017398400000005,
+      "lng": 11.7373717,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27583029), ODbL"
     }
   ]
 }

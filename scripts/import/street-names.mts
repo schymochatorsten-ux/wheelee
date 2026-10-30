@@ -20,6 +20,7 @@ import path from "node:path";
 import type { ParkingSpot } from "../../src/lib/types.js";
 import { isGenericLabel } from "../../src/lib/parking/display.js";
 import { projectRoot } from "./config.mjs";
+import { extractStreets, type PbfStreets } from "./street-pbf.mjs";
 
 const USER_AGENT = "wheelee-import/0.1 (Behindertenparkplatz-Karte; Kontakt via Repository)";
 
@@ -47,6 +48,10 @@ const MAX_HOUSENUMBER_METERS = 25;
 const CELL = 0.002;
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
+/** Mit `--pbf <Datei>`: Straßen aus einem Geofabrik-Auszug statt von Overpass (ToDo 2e.13). */
+let pbfStreets: PbfStreets | null = null;
+const OUTSIDE_EXTRACT = "außerhalb des Auszugs";
 
 interface SeedFile {
   city: { slug: string; name: string; center: { lat: number; lng: number } };
@@ -450,9 +455,14 @@ async function processCity(file: string, seed: SeedFile, dryRun: boolean) {
   const box = boundingBoxOf(open);
   const project = projector(seed.city.center.lat);
 
-  const ways = (await fetchStreets(box)).filter(
-    (element): element is OverpassWay => element.type === "way",
-  );
+  const ways: OverpassWay[] = pbfStreets
+    ? pbfStreets
+        .waysIn(box)
+        .map((way) => ({ type: "way" as const, id: way.id, tags: { name: way.name }, geometry: way.geometry }))
+    : (await fetchStreets(box)).filter((element): element is OverpassWay => element.type === "way");
+
+  // Mit Auszug heißt „keine Straße“: Die Stadt liegt in einem anderen Land.
+  if (pbfStreets && ways.length === 0) throw new Error(OUTSIDE_EXTRACT);
 
   /*
    * **Eine leere Antwort ist kein Ergebnis** (ergänzt 2026-10-20).
@@ -479,14 +489,23 @@ async function processCity(file: string, seed: SeedFile, dryRun: boolean) {
 
   const grid = buildStreetIndex(ways, project);
 
-  await sleep(6000);
-
   // Adresspunkte sind klein und liefern die Hausnummer dazu.
   let addressNodes: OverpassNode[] = [];
-  try {
-    addressNodes = (await fetchOverpass(addressQuery(box))) as OverpassNode[];
-  } catch {
-    // Ohne Hausnummern ist das Ergebnis immer noch brauchbar.
+  if (pbfStreets) {
+    addressNodes = pbfStreets.addressesIn(box).map((a) => ({
+      type: "node" as const,
+      id: 0,
+      lat: a.lat,
+      lon: a.lon,
+      tags: { "addr:street": a.street, "addr:housenumber": a.number },
+    }));
+  } else {
+    await sleep(6000);
+    try {
+      addressNodes = (await fetchOverpass(addressQuery(box))) as OverpassNode[];
+    } catch {
+      // Ohne Hausnummern ist das Ergebnis immer noch brauchbar.
+    }
   }
 
   const addressGrid = new Map<string, { lat: number; lng: number; node: OverpassNode }[]>();
@@ -571,7 +590,21 @@ async function processCity(file: string, seed: SeedFile, dryRun: boolean) {
 async function main() {
   const args = process.argv.slice(2);
   const dryRun = args.includes("--dry");
-  const wanted = args.filter((argument) => !argument.startsWith("--"));
+  const pbfIndex = args.indexOf("--pbf");
+  const pbfFile = pbfIndex >= 0 ? args[pbfIndex + 1] : undefined;
+  const wanted = args.filter(
+    (argument, index) => !argument.startsWith("--") && !(pbfIndex >= 0 && index === pbfIndex + 1),
+  );
+
+  if (pbfIndex >= 0) {
+    if (!pbfFile) {
+      console.log("--pbf braucht eine Datei: npm run import:streets -- --pbf bayern-latest.osm.pbf");
+      return;
+    }
+    console.log(`Lese Straßen aus ${path.basename(pbfFile)} …`);
+    pbfStreets = extractStreets(pbfFile);
+    console.log(`  ${pbfStreets.counts.ways} benannte Straßen, ${pbfStreets.counts.addresses} Adresspunkte`);
+  }
 
   const dataDir = path.join(projectRoot, "data");
   const skip =
@@ -638,13 +671,14 @@ async function main() {
           }`,
       );
     } catch (error) {
+      if ((error as Error).message === OUTSIDE_EXTRACT) continue;
       console.log(
         `${entry.seed.city.name.padEnd(24)} Fehler: ${(error as Error).message.slice(0, 90)}`,
       );
     }
 
-    // Dem Dienst zwischen den Städten Luft lassen.
-    await sleep(8000);
+    // Dem Dienst zwischen den Städten Luft lassen (nicht nötig, wenn nichts abgefragt wird).
+    if (!pbfStreets) await sleep(8000);
   }
 
   console.log(
