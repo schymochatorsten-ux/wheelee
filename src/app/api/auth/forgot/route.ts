@@ -48,20 +48,18 @@ async function postHandler(request: Request) {
   if (allowedForAddress) {
     const issued = createResetToken(email);
     if (issued) {
-      try {
-        await sendMail({
-          to: issued.email,
-          subject: t("mail.reset.subject"),
-          text: t("mail.reset.body", {
-            link: `${publicUrl()}/passwort-zuruecksetzen#${issued.token}`,
-            minutes: MAIL_TOKEN_MINUTES,
-          }),
-        });
-      } catch {
-        // Ein Versandfehler darf nicht an der Antwort erkennbar sein. Im
-        // Protokoll steht er über den Zugriffs-Wrapper nicht; der Mensch
-        // fordert bei Ausbleiben der Mail einfach noch einmal an.
-      }
+      // **Nicht abwarten** (ToDo 10.19): Der Versand dauert Sekunden, und nur bei
+      // einem vorhandenen Konto – die Antwortzeit verriet sonst, wer eines hat.
+      // Ein Versandfehler darf ebenfalls nicht an der Antwort erkennbar sein;
+      // der Mensch fordert bei Ausbleiben der Mail einfach noch einmal an.
+      void sendMail({
+        to: issued.email,
+        subject: t("mail.reset.subject"),
+        text: t("mail.reset.body", {
+          link: `${publicUrl()}/passwort-zuruecksetzen#${issued.token}`,
+          minutes: MAIL_TOKEN_MINUTES,
+        }),
+      }).catch(() => {});
     }
   }
 

@@ -567,6 +567,9 @@ export const nl: Messages = {
   "mail.email.subject": "wheelee: nieuw e-mailadres bevestigen",
   "mail.email.body":
     "Hallo,\n\nmet deze link bevestig je dit adres als nieuw e-mailadres van je wheelee-account. Hij is {minutes} minuten geldig en werkt maar één keer:\n\n{link}\n\nAls je dit niet hebt aangevraagd, negeer dan dit bericht – er verandert niets.\n",
+  "mail.verify.subject": "wheelee: bevestig je e-mailadres",
+  "mail.verify.body":
+    "Hallo,\n\nmet deze link bevestig je dat dit adres van jou is. Hij is {minutes} minuten geldig en kan één keer worden gebruikt:\n\n{link}\n\nAls je je niet hebt geregistreerd, negeer deze mail dan – er gebeurt verder niets.\n",
   "account.forgot": "Wachtwoord vergeten?",
   "account.forgotIntro": "We sturen een herstellink naar het adres van je account.",
   "account.forgotSend": "Link sturen",

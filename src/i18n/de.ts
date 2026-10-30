@@ -572,6 +572,9 @@ export const de = {
   "mail.email.subject": "wheelee: neue E-Mail-Adresse bestätigen",
   "mail.email.body":
     "Hallo,\n\nüber diesen Link bestätigst du bei wheelee diese Adresse als neue E-Mail-Adresse deines Kontos. Er gilt {minutes} Minuten und nur einmal:\n\n{link}\n\nWenn du das nicht angefordert hast, ignoriere diese Mail – es ändert sich nichts.\n",
+  "mail.verify.subject": "wheelee: E-Mail-Adresse bestätigen",
+  "mail.verify.body":
+    "Hallo,\n\nüber diesen Link bestätigst du bei wheelee, dass diese Adresse dir gehört. Er gilt {minutes} Minuten und nur einmal:\n\n{link}\n\nWenn du dich nicht registriert hast, ignoriere diese Mail – es passiert nichts weiter.\n",
   "account.forgot": "Passwort vergessen?",
   "account.forgotIntro": "Wir schicken einen Link zum Zurücksetzen an die Adresse deines Kontos.",
   "account.forgotSend": "Link senden",

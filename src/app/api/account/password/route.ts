@@ -2,7 +2,8 @@ import { NextResponse } from "next/server";
 import { changePassword } from "@/lib/db/accounts";
 import { sessionTokenFromRequest, userFromRequest } from "@/lib/auth/session";
 import { passwordProblem } from "@/lib/auth/password-rules";
-import { allow, clientKey, LIMITS, retryAfter } from "@/lib/rate-limit";
+import { allow, LIMITS, retryAfter } from "@/lib/rate-limit";
+import { loginPauseSeconds, recordLoginFailure } from "@/lib/login-backoff";
 import { withLogging } from "@/lib/log";
 import { t } from "@/i18n";
 import { readJson } from "@/lib/read-json";
@@ -32,7 +33,10 @@ async function putHandler(request: Request) {
   const oldPassword = typeof body.oldPassword === "string" ? body.oldPassword : "";
   const newPassword = typeof body.newPassword === "string" ? body.newPassword : "";
 
-  if (!allow(`password:${clientKey(request)}:${user.id}`, LIMITS.passwordChange)) {
+  // Je Konto, nicht je Herkunft und Konto (ToDo 10.19): Mit einer gestohlenen
+  // Sitzung und wechselnden Adressen ließe sich das alte Passwort sonst
+  // beliebig oft raten. Fehlversuche zählen außerdem für die Anmeldepause.
+  if (!allow(`password:${user.id}`, LIMITS.passwordChange) || loginPauseSeconds(user.email) > 0) {
     return NextResponse.json({ error: t("api.tooManyPasswordChanges") }, { status: 429, headers: retryAfter(LIMITS.passwordChange) });
   }
 
@@ -44,6 +48,7 @@ async function putHandler(request: Request) {
   if (problem) return NextResponse.json({ error: problem }, { status: 400 });
 
   if (!changePassword(user.id, oldPassword, newPassword, sessionTokenFromRequest(request))) {
+    recordLoginFailure(user.email);
     return NextResponse.json({ error: t("api.oldPasswordWrong") }, { status: 403 });
   }
 

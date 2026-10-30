@@ -6,6 +6,8 @@ import { isAdminAccount, sessionCookie } from "@/lib/auth/session";
 import { publicUser } from "@/lib/auth/user";
 import { allow, clientKey, LIMITS, retryAfter } from "@/lib/rate-limit";
 import { createSession } from "@/lib/db/accounts";
+import { createVerificationToken, MAIL_TOKEN_MINUTES } from "@/lib/db/mail-tokens";
+import { mailConfigured, publicUrl, sendMail } from "@/lib/mail";
 import { withLogging } from "@/lib/log";
 import { t } from "@/i18n";
 import { readJson } from "@/lib/read-json";
@@ -19,9 +21,10 @@ import { readJson } from "@/lib/read-json";
  * funktioniert, die nie ankommt, ist schlechter als keines.
  *
  * Die Folge ist bekannt und hier vertretbar: Adressen sind unbestätigt. Das
- * Konto berechtigt zu nichts außer der eigenen Meldung, und der Administrator
- * steht in der Umgebung – nicht in der Datenbank. Niemand kann sich also durch
- * eine fremde Adresse Rechte verschaffen.
+ * Konto berechtigt zu nichts außer der eigenen Meldung. Admin wird man nur über
+ * die Rolle in der Datenbank; eine Adresse aus `ADMIN_EMAILS` hebt nur Konten,
+ * die **vor** dem Start schon bestanden (`bootstrapAdmins`, ToDo 10.19). Eine
+ * hier neu registrierte Adresse bekommt nie Rechte.
  */
 async function postHandler(request: Request) {
   if (!allow(`register:${clientKey(request)}`, LIMITS.register)) {
@@ -64,6 +67,20 @@ async function postHandler(request: Request) {
       },
       { status: 409 },
     );
+  }
+
+  // Mit eingerichtetem Mailversand wird die Adresse bestätigt (ToDo 10.21). Das
+  // Konto funktioniert sofort weiter; die Bestätigung entscheidet, ob die
+  // Adresse Admin werden kann. Im Hintergrund, die Antwort wartet nicht.
+  if (mailConfigured() && allow(`mail-to:${email}`, LIMITS.mailPerAddress)) {
+    void sendMail({
+      to: account.email,
+      subject: t("mail.verify.subject"),
+      text: t("mail.verify.body", {
+        link: `${publicUrl()}/email-bestaetigen#${createVerificationToken(account.id, account.email)}`,
+        minutes: MAIL_TOKEN_MINUTES,
+      }),
+    }).catch(() => {});
   }
 
   const response = NextResponse.json({

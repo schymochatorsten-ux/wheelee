@@ -12,6 +12,9 @@ import { t } from "@/i18n";
 /** Mindestlänge eines Passworts. */
 export const MIN_PASSWORD_LENGTH = 10;
 
+/** Obergrenze (siehe unten); auch die Anmeldung lehnt Längeres ohne Rechnen ab. */
+export const MAX_PASSWORD_LENGTH = 200;
+
 /**
  * Warum zehn Zeichen und keine Zeichenklassen-Regeln: Eine Vorschrift wie
  * „ein Großbuchstabe, eine Zahl, ein Sonderzeichen" erzeugt nachweislich
@@ -28,6 +31,6 @@ export function passwordProblem(password: string): string | null {
    * bei jedem Versuch für Sekunden beschäftigen. 200 Zeichen schränken
    * niemanden ein, der sich einen Satz merkt.
    */
-  if (password.length > 200) return t("account.passwordTooLong", { max: 200 });
+  if (password.length > MAX_PASSWORD_LENGTH) return t("account.passwordTooLong", { max: MAX_PASSWORD_LENGTH });
   return null;
 }

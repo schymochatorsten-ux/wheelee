@@ -567,6 +567,9 @@ export const pt: Messages = {
   "mail.email.subject": "wheelee: confirmar novo endereço de e-mail",
   "mail.email.body":
     "Olá,\n\ncom esta ligação confirma este endereço como o novo endereço de e-mail da sua conta wheelee. É válida durante {minutes} minutos e só funciona uma vez:\n\n{link}\n\nSe não foi você a pedi-lo, ignore esta mensagem – nada muda.\n",
+  "mail.verify.subject": "wheelee: confirme o seu endereço de e-mail",
+  "mail.verify.body":
+    "Olá,\n\ncom esta ligação confirma que este endereço lhe pertence. É válida durante {minutes} minutos e só uma vez:\n\n{link}\n\nSe não se registou, ignore este e-mail – não acontece mais nada.\n",
   "account.forgot": "Esqueceu-se da palavra-passe?",
   "account.forgotIntro": "Enviamos uma ligação de reposição para o endereço da sua conta.",
   "account.forgotSend": "Enviar ligação",

@@ -91,6 +91,12 @@ export function resetLimits(): void {
 export const LIMITS = {
   feedback: { max: 5, windowMs: 10 * 60_000 },
   login: { max: 10, windowMs: 10 * 60_000 },
+  /**
+   * Anmelden, je Herkunft **ohne** Adresse (ToDo 10.19). Weit gefasst, weil sich
+   * hinter einer Adresse viele Menschen verbergen können (Büro, Mobilfunk); sie
+   * soll nur das Durchprobieren erfundener Adressen bremsen.
+   */
+  loginPerClient: { max: 40, windowMs: 10 * 60_000 },
   register: { max: 5, windowMs: 60 * 60_000 },
   /** Passwort ändern: je Konto, denn das alte Passwort wird hier erneut abgefragt (ToDo 10.7). */
   passwordChange: { max: 5, windowMs: 10 * 60_000 },

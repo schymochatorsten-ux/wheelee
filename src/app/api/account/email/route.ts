@@ -4,6 +4,7 @@ import { userFromRequest } from "@/lib/auth/session";
 import { looksLikeEmail, normalizeEmail } from "@/lib/auth/email";
 import { mailConfigured, publicUrl, sendMail } from "@/lib/mail";
 import { allow, clientKey, LIMITS, retryAfter } from "@/lib/rate-limit";
+import { recordLoginFailure } from "@/lib/login-backoff";
 import { withLogging } from "@/lib/log";
 import { t } from "@/i18n";
 import { readJson } from "@/lib/read-json";
@@ -48,6 +49,7 @@ async function postHandler(request: Request) {
 
   const result = requestEmailChange(user.id, password, newEmail);
   if (result.status === "wrong-password") {
+    recordLoginFailure(user.email);
     return NextResponse.json({ error: t("api.passwordWrong") }, { status: 403 });
   }
   if (result.status === "same") {
@@ -57,18 +59,18 @@ async function postHandler(request: Request) {
   // Je Zieladresse gedrosselt: Das Postfach eines Dritten soll nicht mit Mails
   // überschüttet werden, nur weil jemand es als „neue Adresse" einträgt.
   if (result.status === "ok" && allow(`mail-to:${newEmail}`, LIMITS.mailPerAddress)) {
-    try {
-      await sendMail({
-        to: newEmail,
-        subject: t("mail.email.subject"),
-        text: t("mail.email.body", {
-          link: `${publicUrl()}/email-bestaetigen#${result.token}`,
-          minutes: MAIL_TOKEN_MINUTES,
-        }),
-      });
-    } catch {
-      return NextResponse.json({ error: t("account.failed") }, { status: 502 });
-    }
+    // Nicht abwarten (ToDo 10.19): Sonst verriete die Antwortzeit, ob die neue
+    // Adresse schon vergeben ist (dann geht keine Mail hinaus). Ein
+    // Versandfehler ist deshalb auch nicht mehr zu melden; bleibt die Mail
+    // aus, wird der Wechsel erneut beantragt.
+    void sendMail({
+      to: newEmail,
+      subject: t("mail.email.subject"),
+      text: t("mail.email.body", {
+        link: `${publicUrl()}/email-bestaetigen#${result.token}`,
+        minutes: MAIL_TOKEN_MINUTES,
+      }),
+    }).catch(() => {});
   }
 
   return NextResponse.json({ ok: true }, { headers: { "Cache-Control": "no-store" } });

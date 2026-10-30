@@ -1,6 +1,5 @@
 import { cookies } from "next/headers";
-import { accountForSession, activeAdminCount, SESSION_COOKIE, SESSION_MAX_AGE, type Account } from "../db/accounts";
-import { normalizeEmail } from "./email";
+import { accountForSession, SESSION_COOKIE, SESSION_MAX_AGE, type Account } from "../db/accounts";
 import { isLocale } from "../../i18n";
 import { isMapsPreference } from "../maps-preference";
 import type { SessionUser } from "./user";
@@ -16,46 +15,20 @@ import type { SessionUser } from "./user";
 
 export type { SessionUser, PublicUser } from "./user";
 
-/**
- * Wer Administrator ist, steht in der Umgebung – nicht in der Datenbank und
- * nicht im Quelltext (ToDo 17.0, entschieden 2026-10-11).
- *
- * `ADMIN_EMAILS` nimmt eine oder mehrere Adressen, durch Komma getrennt. Das
- * ist der kleinste Weg, der ohne Benutzerverwaltung auskommt: Es gibt keine
- * Rollentabelle, die gepflegt werden müsste, und kein Fenster, in dem sich
- * jemand selbst zum Administrator erklären könnte.
- *
- * **Bewusst kein Rückfall auf „der erste angemeldete Benutzer".** Das ist das
- * übliche Muster, und es ist hier falsch: wheelee.de steht offen im Netz, und
- * die Registrierung ist für jede:n offen. Wer zuerst da ist, bekäme die
- * Übersicht aller Rückmeldungen samt der freiwillig angegebenen
- * E-Mail-Adressen. Ist die Variable leer, hat lieber **niemand** Zugriff.
- */
-export function adminEmails(): string[] {
-  return (process.env.ADMIN_EMAILS ?? "")
-    .split(",")
-    .map((entry) => normalizeEmail(entry))
-    .filter((entry) => entry.length > 0);
-}
-
-export function isAdminEmail(email: string): boolean {
-  return adminEmails().includes(normalizeEmail(email));
-}
+export { adminEmails, isAdminEmail } from "./admin-emails";
 
 /**
- * Ist dieses Konto Administrator? (ToDo 18.1)
+ * Ist dieses Konto Administrator? (ToDos 18.1, 10.19)
  *
- * Maßgeblich ist die Rolle am Konto. `ADMIN_EMAILS` gilt nur noch als
- * **Erstzugang**: solange kein aktives Admin-Konto in der Datenbank steht,
- * sonst nicht. Sonst könnte jede Adresse in der Umgebungsdatei die Verwaltung
- * dauerhaft an der Datenbank vorbei offenhalten, und ein Admin, den man dort
- * sperrt, käme über die Umgebung wieder hinein. Folge, die man kennen muss: Wer
- * den ersten weiteren Admin ernennt, sollte sich zuvor selbst die Rolle geben.
+ * **Allein die Rolle am Konto zählt.** `ADMIN_EMAILS` wirkt nur noch als
+ * einmalige Hochstufung vorhandener Konten (siehe `bootstrapAdmins`). Vorher
+ * wurde die Adresse bei jeder Anfrage verglichen, solange kein Admin in der
+ * Datenbank stand: Wer eine dieser Adressen zuerst registrierte, wurde Admin
+ * (die Adresse wird nicht bestätigt), und der eigentliche Besitzer verlor sein
+ * Recht, sobald ein zweiter Admin existierte.
  */
-export function isAdminAccount(account: Pick<Account, "email" | "role" | "disabledAt">): boolean {
-  if (account.disabledAt) return false;
-  if (account.role === "admin") return true;
-  return isAdminEmail(account.email) && activeAdminCount() === 0;
+export function isAdminAccount(account: Pick<Account, "role" | "disabledAt">): boolean {
+  return !account.disabledAt && account.role === "admin";
 }
 
 const toUser = (account: Account): SessionUser => ({

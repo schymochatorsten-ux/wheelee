@@ -50,5 +50,12 @@ export async function readJson(request: Request, maxBytes: number = MAX_JSON_BYT
     bytes.set(chunk, offset);
     offset += chunk.byteLength;
   }
-  return JSON.parse(new TextDecoder().decode(bytes));
+  const parsed: unknown = JSON.parse(new TextDecoder().decode(bytes));
+  // Alle Routen lesen Felder aus einem Objekt; `null`, eine Zahl oder eine
+  // Liste ließen sie mit einem 500 scheitern (ToDo 10.19). Als ungültiges JSON
+  // behandeln, damit jede Route ihre 400-Antwort nimmt.
+  if (typeof parsed !== "object" || parsed === null || Array.isArray(parsed)) {
+    throw new SyntaxError("Kein Objekt");
+  }
+  return parsed;
 }

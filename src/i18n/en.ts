@@ -567,6 +567,9 @@ export const en: Messages = {
   "mail.email.subject": "wheelee: confirm your new email address",
   "mail.email.body":
     "Hello,\n\nthis link confirms this address as the new email address of your wheelee account. It is valid for {minutes} minutes and works once:\n\n{link}\n\nIf you did not ask for this, ignore this email – nothing will change.\n",
+  "mail.verify.subject": "wheelee: confirm your email address",
+  "mail.verify.body":
+    "Hello,\n\nuse this link to confirm that this address belongs to you. It is valid for {minutes} minutes and can be used once:\n\n{link}\n\nIf you did not sign up, ignore this mail – nothing else happens.\n",
   "account.forgot": "Forgot password?",
   "account.forgotIntro": "We will send a reset link to the address of your account.",
   "account.forgotSend": "Send link",

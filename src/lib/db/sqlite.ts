@@ -233,6 +233,15 @@ const MIGRATIONS: readonly string[] = [
     views    INTEGER NOT NULL DEFAULT 0
   );
   `,
+
+  // 11 – Bestätigte E-Mail-Adresse (ToDo 10.21).
+  `
+  -- Wann der Besitz der Adresse per Mail-Link nachgewiesen wurde. Konten, die vor
+  -- dieser Spalte bestanden, gelten als bestätigt: Es gab nichts zu bestätigen, und
+  -- ihnen nachträglich Rechte zu nehmen, träfe vor allem den Besitzer.
+  ALTER TABLE account ADD COLUMN email_verified_at TEXT;
+  UPDATE account SET email_verified_at = created_at;
+  `,
 ];
 
 let database: DatabaseSync | null = null;

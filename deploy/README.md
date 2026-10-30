@@ -43,6 +43,11 @@ chmod 600 /opt/wheelee/.env
 docker compose up -d --build
 ```
 
+**Reihenfolge bei `ADMIN_EMAILS`:** Zuerst mit dieser Adresse ein Konto registrieren,
+dann die Adresse eintragen und den Container neu starten. Beim ersten Zugriff wird
+das vorhandene Konto zum Admin in der Datenbank; danach zählt nur noch die Rolle
+(ToDo 10.19). Eine Adresse, die erst nach dem Start registriert wird, bekommt nichts.
+
 Danach **in der App ein Konto mit genau dieser Adresse anlegen** (Einstellungen
 → Konto). Die Adresse allein genügt nicht – sie sagt nur, wer Administrator
 sein darf; das Konto dazu entsteht wie jedes andere.

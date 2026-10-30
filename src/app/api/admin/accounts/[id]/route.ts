@@ -15,8 +15,8 @@ import { readJson } from "@/lib/read-json";
  * Das **letzte aktive Admin-Konto** lässt sich weder herabstufen noch sperren
  * noch löschen (409); geprüft wird in der Datenbankschicht. Das eigene Konto
  * löscht man hier nicht, sondern über die Kontoeinstellungen mit Passwort.
- * Sich selbst die Rolle `admin` zu geben ist erlaubt: Wer über `ADMIN_EMAILS`
- * hereinkommt, hat sonst keinen Weg, selbst in der Datenbank Admin zu werden.
+ * Admin ist man nur durch die Rolle in der Datenbank (ToDo 10.19); `ADMIN_EMAILS`
+ * hebt beim ersten Zugriff vorhandene Konten einmalig dorthin.
  *
  * Rolle und Sperre wirken sofort, denn `isAdmin` wird je Anfrage aus der
  * Datenbank gelesen. Das Protokoll hält Pfad (mit Konto-ID) und Status fest,

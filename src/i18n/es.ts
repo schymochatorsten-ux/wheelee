@@ -574,6 +574,9 @@ export const es: Messages = {
   "mail.email.subject": "wheelee: confirma tu nueva dirección de correo",
   "mail.email.body":
     "Hola,\n\ncon este enlace confirmas esta dirección como el nuevo correo de tu cuenta de wheelee. Es válido durante {minutes} minutos y solo una vez:\n\n{link}\n\nSi no lo has solicitado, ignora este correo: no cambiará nada.\n",
+  "mail.verify.subject": "wheelee: confirma tu dirección de correo",
+  "mail.verify.body":
+    "Hola,\n\ncon este enlace confirmas que esta dirección es tuya. Es válido durante {minutes} minutos y solo una vez:\n\n{link}\n\nSi no te has registrado, ignora este correo: no ocurre nada más.\n",
   "account.forgot": "¿Has olvidado la contraseña?",
   "account.forgotIntro": "Enviaremos un enlace para restablecerla a la dirección de tu cuenta.",
   "account.forgotSend": "Enviar enlace",

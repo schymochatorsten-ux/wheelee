@@ -342,7 +342,7 @@ Tailscale-Tunnel läuft und keine Verbindung nach außen braucht.
 
 | Umgebungsvariable          | Wofür                                                                  |
 | -------------------------- | ---------------------------------------------------------------------- |
-| `ADMIN_EMAILS`             | Adressen, die die Übersicht der Rückmeldungen sehen dürfen (per Komma) |
+| `ADMIN_EMAILS`             | Erstzugang: Konten mit diesen Adressen (per Komma) werden beim Start einmalig zu Admins in der Datenbank |
 | `WHEELEE_DB_PATH`          | Pfad der Datenbankdatei; im Container bereits gesetzt                  |
 | `WHEELEE_OPERATOR_NAME`    | Name im Impressum – **Pflicht**, siehe [Rechtstexte](#rechtstexte)     |
 | `WHEELEE_OPERATOR_ADDRESS` | Anschrift, Zeilen durch `\|` getrennt – **Pflicht**                    |
@@ -356,10 +356,14 @@ ein; dazu `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `SMTP_SECURE`. Ohne sie sind
 beide Funktionen ausgeblendet. Siehe [deploy/env.beispiel](deploy/env.beispiel);
 vor dem Einschalten die Datenschutzerklärung ergänzen (ToDo 10.16).
 
-**Ist `ADMIN_EMAILS` leer, hat niemand Zugriff** – auch nicht der erste
-angemeldete Benutzer. Das ist Absicht: Die Registrierung steht jedem offen, und
-wer zuerst da wäre, bekäme sonst alle Meldungen samt der freiwillig angegebenen
-Adressen zu sehen. Vorlage für die Datei auf dem NAS:
+**Admin ist man nur durch die Rolle in der Datenbank** (ToDo 10.19). `ADMIN_EMAILS`
+ist der Erstzugang: Beim ersten Zugriff nach dem Start werden die *bereits
+vorhandenen* Konten mit diesen Adressen zu Admins – und nur, solange noch kein
+aktives Admin-Konto besteht. Danach zählt die Variable nicht mehr. **Reihenfolge:
+erst registrieren, dann `ADMIN_EMAILS` setzen und den Container neu starten.**
+Eine Adresse, die erst nach dem Start registriert wird, bekommt nie Rechte.
+Ist die Variable leer, hat niemand Zugriff – auch nicht der erste angemeldete
+Benutzer. Vorlage für die Datei auf dem NAS:
 [deploy/env.beispiel](deploy/env.beispiel).
 
 Was die App **ohne** Konto kann: alles, was mit Parkplätzen zu tun hat – Karte,

@@ -63,7 +63,9 @@ describe("loginPauseSeconds", () => {
   it("begrenzt die Zahl der verfolgten Adressen", () => {
     for (let i = 0; i < BACKOFF.maxTracked + 5; i += 1) recordLoginFailure(`x${i}@example.org`, 0);
     fail("spaet@example.org", BACKOFF.freeFailures + 1, 0);
-    // Eine neue Adresse jenseits der Grenze wird nicht mehr verfolgt.
-    expect(loginPauseSeconds("spaet@example.org", 0)).toBe(0);
+    // Eine neue Adresse verdrängt den ältesten Eintrag, statt ignoriert zu werden
+    // (ToDo 10.19) – sonst ließe sich die Pause durch Auffüllen abschalten.
+    expect(loginPauseSeconds("spaet@example.org", 0)).toBe(30);
+    expect(loginPauseSeconds("x0@example.org", 0)).toBe(0);
   });
 });

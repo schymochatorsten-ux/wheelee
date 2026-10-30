@@ -72,7 +72,14 @@ export function loginPauseSeconds(address: string, nowMs: number = Date.now()): 
 /** Einen Fehlversuch für diese Adresse verbuchen. */
 export function recordLoginFailure(address: string, nowMs: number = Date.now()): void {
   const hits = recent(address, nowMs);
-  if (hits.length === 0 && failures.size >= BACKOFF.maxTracked) return;
+  if (hits.length === 0 && failures.size >= BACKOFF.maxTracked) {
+    // Den ältesten Eintrag verdrängen statt neue Adressen zu ignorieren: Sonst
+    // schaltet, wer die Tabelle mit erfundenen Adressen füllt, die Pause für
+    // alle weiteren aus (ToDo 10.19).
+    const oldest = failures.keys().next().value;
+    if (oldest !== undefined) failures.delete(oldest);
+  }
+  failures.delete(address);
   hits.push(nowMs);
   failures.set(address, hits);
 }

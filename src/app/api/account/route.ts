@@ -1,7 +1,8 @@
 import { NextResponse } from "next/server";
 import { deleteAccount } from "@/lib/db/accounts";
 import { clearedSessionCookie, userFromRequest } from "@/lib/auth/session";
-import { allow, clientKey, LIMITS, retryAfter } from "@/lib/rate-limit";
+import { allow, LIMITS, retryAfter } from "@/lib/rate-limit";
+import { loginPauseSeconds, recordLoginFailure } from "@/lib/login-backoff";
 import { withLogging } from "@/lib/log";
 import { t } from "@/i18n";
 import { readJson } from "@/lib/read-json";
@@ -29,7 +30,8 @@ async function deleteHandler(request: Request) {
   }
   const password = typeof body.password === "string" ? body.password : "";
 
-  if (!allow(`delete:${clientKey(request)}:${user.id}`, LIMITS.passwordChange)) {
+  // Je Konto, Fehlversuche zählen für die Anmeldepause (siehe PUT /api/account/password).
+  if (!allow(`delete:${user.id}`, LIMITS.passwordChange) || loginPauseSeconds(user.email) > 0) {
     return NextResponse.json({ error: t("api.tooManyPasswordChanges") }, { status: 429, headers: retryAfter(LIMITS.passwordChange) });
   }
 
@@ -39,6 +41,7 @@ async function deleteHandler(request: Request) {
 
   const result = deleteAccount(user.id, password);
   if (result === "wrong-password") {
+    recordLoginFailure(user.email);
     return NextResponse.json({ error: t("api.passwordWrong") }, { status: 403 });
   }
   if (result === "last-admin") {

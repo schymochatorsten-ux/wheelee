@@ -22,7 +22,7 @@ anderen ab, stimmt eines nicht.
 | 5 | Rückmeldungen | Fehler und Vorschläge | Einsender:innen | Text, Parkplatz, freiwillig Antwortadresse, Browserkennung, gekürzter Hash einer Zufallszahl | Art. 6 (1) f; Adresse: Art. 6 (1) a (freiwillig) | erledigt: 12 Monate nach Erledigung; offen: bis Bearbeitung, Adresse höchstens 2 Jahre | Administrator:innen |
 | 6 | Betriebsprotokoll und Drosselung | Fehler finden, Missbrauch bremsen | Besucher:innen | JSON-Zeile je Vorfall **ohne IP, Standort, Parameterwerte, Adressen, Texte**; IP nur im Arbeitsspeicher für die Drosselung | Art. 6 (1) f | Container-Protokoll, rotiert bei 10 MB über 3 Dateien; Arbeitsspeicher nur im Fenster der Drosselung | – |
 | 7 | Verwaltung und Einladungen | Konten verwalten | Admin-Konten, eingeladene Personen | E-Mail-Adresse, Rolle, Token als Hash | Art. 6 (1) f | Einladung 7 Tage gültig, 30 Tage sichtbar, dann gelöscht | – |
-| 8 | Mail-Links (nur bei eingeschaltetem Versand) | „Passwort vergessen“, „E-Mail ändern“ | Kontoinhaber:innen | E-Mail-Adresse (bei Wechsel auch die neue), Token als Hash | Art. 6 (1) b | Token 1 Stunde, danach gelöscht | Mailanbieter (Art. 28, **Vertrag und Anbieter vom Betreiber einzutragen**) |
+| 8 | Mail-Links (nur bei eingeschaltetem Versand) | Adresse bestätigen (nach der Registrierung), „Passwort vergessen“, „E-Mail ändern“ | Kontoinhaber:innen | E-Mail-Adresse (bei Wechsel auch die neue), Token als Hash | Art. 6 (1) b | Token 1 Stunde, danach gelöscht | Mailanbieter (Art. 28, **Vertrag und Anbieter vom Betreiber einzutragen**) |
 | 10 | Besucherzählung (ToDo 20.1) | Nutzung einschätzen | Besucher:innen | IP-Adresse und Browserkennung nur als **Tages-Hash im Arbeitsspeicher** (Salz je Tag, nie gespeichert); in der Datenbank nur Summen je Tag (`visit_day`) | Art. 6 (1) f | Hashes bis Tagesende bzw. Neustart; Summen unbegrenzt (keine Personenbeziehbarkeit) | Administrator:innen sehen die Summen |
 | 9 | Sicherung | Datenverlust vermeiden | Kontoinhaber:innen, Einsender:innen | Kopie der Datenbank (`VACUUM INTO`) | Art. 6 (1) f | bis zur Rotation der Sicherungen auf dem NAS | – |
 
@@ -38,8 +38,8 @@ in `Erledigt.md`).
 
 ## Technische und organisatorische Maßnahmen (Art. 32)
 
-- **Zugriff:** Verwaltung nur mit Administratorrolle; ohne `ADMIN_EMAILS` hat niemand Zugriff auf Rückmeldungen. Das letzte aktive Admin-Konto lässt sich nicht entziehen oder löschen.
-- **Passwörter:** scrypt, Kosten im Hash; Mindestlänge und Obergrenze (`password-rules.ts`); Anmeldedrosselung mit Wartezeit nach Fehlversuchen.
+- **Zugriff:** Verwaltung nur mit Administratorrolle in der Datenbank; `ADMIN_EMAILS` hebt beim Start einmalig vorhandene Konten dorthin (ToDo 10.19). Ohne Admin-Konto hat niemand Zugriff auf Rückmeldungen. Das letzte aktive Admin-Konto lässt sich nicht entziehen oder löschen.
+- **Passwörter:** scrypt, Kosten im Hash; Mindestlänge und Obergrenze (`password-rules.ts`); Anmeldedrosselung je Herkunft und je Herkunft+Adresse sowie Wartezeit nach Fehlversuchen je Adresse (auch bei falschem Passwort in „Passwort ändern“/„Konto löschen“); scrypt bei der Anmeldung asynchron, höchstens zwei gleichzeitig. Offene Mail-Links verfallen bei Passwort- und Adresswechsel; beim Löschen eines Kontos entfallen auch dessen Einladungszeilen.
 - **Sitzungen und Links:** 256-Bit-Zufall, in der Datenbank nur der SHA-256; Sitzungen 30 Tage, Mail-Links 1 Stunde, einmal einlösbar; Cookie `HttpOnly`, `SameSite=Lax`, `Secure` in Produktion.
 - **Transport:** TLS am vorgeschalteten Proxy; die App selbst ist nur über Tailscale erreichbar, kein offener Port am Heimanschluss.
 - **Browserschutz:** CSP mit Nonce je Anfrage, Sicherheits-Kopfzeilen (`next.config.ts`, `e2e/sicherheit.spec.ts`); Prüfung von Herkunft und Inhaltstyp bei schreibenden Anfragen.

@@ -74,6 +74,18 @@ function claim(token: string, kind: Kind): { accountId: string; newEmail: string
 }
 
 /**
+ * Alle noch offenen Links dieses Kontos entwerten (ToDo 10.19). Nach einem
+ * Passwort- oder Adresswechsel soll kein früher verschickter Link mehr
+ * funktionieren – ein Reset-Link in einem fremden Postfach etwa. Der gerade
+ * eingelöste ist schon verbraucht.
+ */
+function voidOpenTokens(accountId: string): void {
+  db()
+    .prepare("UPDATE mail_token SET used_at = ? WHERE account_id = ? AND used_at IS NULL")
+    .run(now(), accountId);
+}
+
+/**
  * Link zum Zurücksetzen für diese Adresse. `null`, wenn es kein (nutzbares)
  * Konto gibt – **der Aufrufer antwortet trotzdem gleich**, sonst ließe sich
  * ablesen, welche Adressen registriert sind. Gesperrte Konten bekommen keinen.
@@ -105,12 +117,22 @@ export function resetPassword(token: string, newPassword: string): boolean {
       .prepare("UPDATE account SET password_hash = ? WHERE id = ?")
       .run(hashPassword(newPassword), claimed.accountId);
     handle.prepare("DELETE FROM session WHERE account_id = ?").run(claimed.accountId);
+    voidOpenTokens(claimed.accountId);
     handle.exec("COMMIT");
     return true;
   } catch (error) {
     handle.exec("ROLLBACK");
     throw error;
   }
+}
+
+/**
+ * Link zum Bestätigen der eigenen Adresse nach der Registrierung (ToDo 10.21).
+ * Technisch ein Adresswechsel auf die eigene Adresse – derselbe Link, dieselbe
+ * Seite, dieselbe Einlösung.
+ */
+export function createVerificationToken(accountId: string, email: string): string {
+  return issue(accountId, "email", normalizeEmail(email));
 }
 
 export type EmailChangeRequest =
@@ -159,14 +181,18 @@ export function confirmEmailChange(token: string): string | null {
       return null;
     }
     try {
+      // Ein bestätigter Wechsel bestätigt zugleich die Adresse (ToDo 10.21). Dasselbe
+      // Mittel dient der Bestätigung bei der Registrierung: dort ist die neue
+      // Adresse die eigene.
       handle
-        .prepare("UPDATE account SET email = ? WHERE id = ?")
-        .run(claimed.newEmail, claimed.accountId);
+        .prepare("UPDATE account SET email = ?, email_verified_at = COALESCE(email_verified_at, ?) WHERE id = ?")
+        .run(claimed.newEmail, now(), claimed.accountId);
     } catch (error) {
       handle.exec("ROLLBACK");
       if (String((error as Error).message).includes("UNIQUE")) return null;
       throw error;
     }
+    voidOpenTokens(claimed.accountId);
     handle.exec("COMMIT");
     return claimed.newEmail;
   } catch (error) {

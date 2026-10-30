@@ -1,7 +1,8 @@
 import { createHash, randomBytes, randomUUID } from "node:crypto";
 import { db, now } from "./sqlite";
-import { hashPassword, verifyPassword } from "../auth/password";
+import { hashPassword, verifyPassword, verifyPasswordAsync } from "../auth/password";
 import { normalizeEmail } from "../auth/email";
+import { adminEmails } from "../auth/admin-emails";
 import { listFavorites } from "./favorites";
 
 /**
@@ -113,6 +114,7 @@ export function accountCount(): number {
  * beide durch die Prüfung und erst an der Datenbank auseinander.
  */
 export function createAccount(email: string, password: string): Account | null {
+  bootstrapAdmins();
   const account: Account = {
     id: randomUUID(),
     email: normalizeEmail(email),
@@ -147,11 +149,8 @@ export function createAccount(email: string, password: string): Account | null {
  * werden Adresslisten auf Treffer abgeklopft.
  */
 export function authenticate(email: string, password: string): Account | null {
-  const row = db()
-    .prepare(
-      "SELECT id, email, password_hash, created_at, maps_preference, language, role, disabled_at FROM account WHERE email = ?",
-    )
-    .get(normalizeEmail(email)) as AccountRow | undefined;
+  bootstrapAdmins();
+  const row = accountRowByEmail(email);
 
   if (!row) {
     verifyPassword(password, DUMMY_HASH);
@@ -161,10 +160,67 @@ export function authenticate(email: string, password: string): Account | null {
   if (!verifyPassword(password, row.password_hash)) return null;
   // Gesperrt: dieselbe Antwort wie bei falschem Passwort, damit aus der
   // Ablehnung nicht abzulesen ist, dass die Adresse existiert (ToDo 18.1).
-  if (row.disabled_at) return null;
+  return signedIn(row);
+}
 
+/**
+ * Wie `authenticate`, aber die Berechnung blockiert den Prozess nicht und läuft
+ * höchstens zweimal gleichzeitig (ToDo 10.19). Die Anmeldung ist der einzige
+ * Weg, den Unbekannte beliebig oft aufrufen können; die übrigen prüfen ein
+ * Passwort erst hinter einer gültigen Sitzung.
+ */
+export async function authenticateAsync(email: string, password: string): Promise<Account | null> {
+  bootstrapAdmins();
+  const row = accountRowByEmail(email);
+
+  if (!row) {
+    await verifyPasswordAsync(password, DUMMY_HASH);
+    return null;
+  }
+
+  if (!(await verifyPasswordAsync(password, row.password_hash))) return null;
+  return signedIn(row);
+}
+
+function accountRowByEmail(email: string): AccountRow | undefined {
+  return db()
+    .prepare(
+      "SELECT id, email, password_hash, created_at, maps_preference, language, role, disabled_at FROM account WHERE email = ?",
+    )
+    .get(normalizeEmail(email)) as AccountRow | undefined;
+}
+
+function signedIn(row: AccountRow): Account | null {
+  if (row.disabled_at) return null;
   db().prepare("UPDATE account SET last_login_at = ? WHERE id = ?").run(now(), row.id);
   return toAccount(row);
+}
+
+/**
+ * Die Adressen aus `ADMIN_EMAILS` zu Admins in der Datenbank machen
+ * (ToDo 10.19) – **einmal je Datenbank, nur für bereits vorhandene Konten und
+ * nur, solange kein aktives Admin-Konto besteht.**
+ *
+ * Läuft vor jedem Anlegen eines Kontos und vor Anmeldung und
+ * Sitzungsprüfung. Die Reihenfolge ist der Schutz: Eine Adresse, die erst nach
+ * diesem Lauf registriert wird, bekommt nichts. Wer `ADMIN_EMAILS` neu setzt,
+ * registriert sich also zuerst und startet danach den Container neu.
+ */
+const bootstrapped = new WeakSet<object>();
+
+function bootstrapAdmins(): void {
+  const handle = db();
+  if (bootstrapped.has(handle)) return;
+  bootstrapped.add(handle);
+
+  const addresses = adminEmails();
+  if (addresses.length === 0 || activeAdminCount() > 0) return;
+  // Nur bestätigte Adressen (ToDo 10.21): Wer die Adresse nur eingetippt hat,
+  // ohne dass sie per Mail bestätigt wurde, wird nicht Admin.
+  const promote = handle.prepare(
+    "UPDATE account SET role = 'admin' WHERE email = ? AND disabled_at IS NULL AND email_verified_at IS NOT NULL",
+  );
+  for (const address of addresses) promote.run(address);
 }
 
 /**
@@ -208,6 +264,7 @@ export function hashToken(token: string): string {
  */
 export function accountForSession(token: string | undefined): Account | null {
   if (!token) return null;
+  bootstrapAdmins();
 
   const row = db()
     .prepare(
@@ -319,6 +376,11 @@ export function changePassword(
     handle
       .prepare("DELETE FROM session WHERE account_id = ? AND token_hash <> ?")
       .run(accountId, keep);
+    // Offene Links aus Mails (Zurücksetzen, Adresswechsel) gelten nach einem
+    // Passwortwechsel nicht mehr (ToDo 10.19).
+    handle
+      .prepare("UPDATE mail_token SET used_at = ? WHERE account_id = ? AND used_at IS NULL")
+      .run(now(), accountId);
     handle.exec("COMMIT");
   } catch (error) {
     handle.exec("ROLLBACK");
@@ -369,6 +431,13 @@ export function deleteAccount(
           WHERE account_id = ? AND contact_email IS NOT NULL`,
       )
       .run(now(), accountId);
+    // Die Adresse steht sonst weiter in den Einladungen (und in der Admin-Liste),
+    // obwohl das Konto weg ist (ToDo 10.19). Zeilen, die für eine Einladung
+    // dieser Adresse stehen, gehen mit; sie wären ohnehin nicht mehr einlösbar.
+    const address = (handle.prepare("SELECT email FROM account WHERE id = ?").get(accountId) as
+      | { email: string }
+      | undefined)?.email;
+    if (address) handle.prepare("DELETE FROM invitation WHERE email = ?").run(address);
     handle.prepare("DELETE FROM account WHERE id = ?").run(accountId);
     handle.exec("COMMIT");
   } catch (error) {

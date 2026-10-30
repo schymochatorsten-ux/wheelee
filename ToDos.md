@@ -64,6 +64,10 @@ maschinelle Mehrfachprüfung.
 
 - [~] 2d.8a **Städte mit ungenutzter amtlicher Quelle.** München und Bielefeld sind umgestellt (Befund in [Erledigt.md](Erledigt.md)). **Offen: Bochum.** Der Server antwortet mit 403, der ArcGIS-Dienst ist weg; ich kann die Datei nicht selbst laden. **Braucht Torsten:** die CSV oder das GeoJSON „Bochum – Behindertenparkplätze“ (CC0) von `bochum.opendata.ruhr` im Browser laden und in den Arbeitsordner legen; vorher prüfen, ob sie Koordinaten enthält.
 
+## 10. Sicherheit und Recht
+
+- [!] 10.20 **Admin-Konto auf dem NAS prüfen und die neue Reihenfolge einhalten** (zu 10.19, [Erledigt.md](Erledigt.md)). **Braucht Torsten:** Nach dem Einspielen den Container neu starten und prüfen, dass das eigene Konto `role = 'admin'` trägt (`docker exec wheelee node -e "const {DatabaseSync}=require('node:sqlite');console.log(new DatabaseSync(process.env.WHEELEE_DB_PATH).prepare('SELECT email,role FROM account').all())"`). Stehen Adressen in `ADMIN_EMAILS`, zu denen es *kein eigenes* Konto gibt, die Adresse entfernen.
+
 ## 15. Mehrsprachigkeit
 
 - [~] 15.1 **Zweite und dritte Prüfrunde der Übersetzungen** nach 15.6 für Italienisch, Polnisch, Niederländisch, Portugiesisch und Russisch (eine Runde ist gelaufen, Befund in [Erledigt.md](Erledigt.md), 15.1). Alle Sprachen sind gebaut; eine weitere Sprache braucht je `src/i18n/<code>.ts`, Eintrag in `index.ts`, Zeile in `opening-hours.test.ts` und einen E2E-Test in `sprache.spec.ts`.

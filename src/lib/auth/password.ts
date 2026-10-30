@@ -1,4 +1,4 @@
-import { randomBytes, scryptSync, timingSafeEqual } from "node:crypto";
+import { randomBytes, scrypt, scryptSync, timingSafeEqual } from "node:crypto";
 
 /**
  * Passwörter prüfen und speichern.
@@ -78,36 +78,72 @@ export function hashPassword(password: string): string {
  * Serverfehler beantworten statt mit „stimmt nicht".
  */
 export function verifyPassword(password: string, stored: string): boolean {
-  const parts = stored.split("$");
-  if (parts.length !== 6 || parts[0] !== "scrypt") return false;
-
-  const [, rawN, rawR, rawP, rawSalt, rawHash] = parts;
-  const cost = { N: Number(rawN), r: Number(rawR), p: Number(rawP) };
-  if (!Number.isInteger(cost.N) || !Number.isInteger(cost.r) || !Number.isInteger(cost.p)) {
-    return false;
-  }
-
-  let expected: Buffer;
-  let salt: Buffer;
-  try {
-    expected = Buffer.from(rawHash, "base64");
-    salt = Buffer.from(rawSalt, "base64");
-    if (expected.length === 0 || salt.length === 0) return false;
-  } catch {
-    return false;
-  }
+  const parsed = parseHash(stored);
+  if (!parsed) return false;
 
   let actual: Buffer;
   try {
-    actual = scryptSync(password.normalize("NFKC"), salt, expected.length, {
-      ...cost,
-      maxmem: 128 * cost.N * cost.r * 2,
-    });
+    actual = scryptSync(password.normalize("NFKC"), parsed.salt, parsed.expected.length, parsed.options);
   } catch {
     // Unsinnige Parameter in der Datei: nicht anmelden, aber auch nicht
     // abstürzen.
     return false;
   }
 
-  return actual.length === expected.length && timingSafeEqual(actual, expected);
+  return actual.length === parsed.expected.length && timingSafeEqual(actual, parsed.expected);
+}
+
+function parseHash(stored: string) {
+  const parts = stored.split("$");
+  if (parts.length !== 6 || parts[0] !== "scrypt") return null;
+
+  const [, rawN, rawR, rawP, rawSalt, rawHash] = parts;
+  const cost = { N: Number(rawN), r: Number(rawR), p: Number(rawP) };
+  if (!Number.isInteger(cost.N) || !Number.isInteger(cost.r) || !Number.isInteger(cost.p)) {
+    return null;
+  }
+
+  const expected = Buffer.from(rawHash, "base64");
+  const salt = Buffer.from(rawSalt, "base64");
+  if (expected.length === 0 || salt.length === 0) return null;
+
+  return { expected, salt, options: { ...cost, maxmem: 128 * cost.N * cost.r * 2 } };
+}
+
+/**
+ * So viele scrypt-Berechnungen laufen höchstens gleichzeitig (ToDo 10.19).
+ *
+ * `scryptSync` hält den ganzen Prozess an: Eine Flut von Anmeldeversuchen mit
+ * erfundenen Adressen (je rund 100 ms und 64 MB) legte sonst Karte und Liste
+ * lahm. Asynchron läuft die Berechnung im Thread-Pool, und die Warteschlange
+ * hält den Speicher in Grenzen.
+ */
+const MAX_PARALLEL = 2;
+let running = 0;
+const waiting: (() => void)[] = [];
+
+async function slot<T>(work: () => Promise<T>): Promise<T> {
+  if (running >= MAX_PARALLEL) await new Promise<void>((resolve) => waiting.push(resolve));
+  running += 1;
+  try {
+    return await work();
+  } finally {
+    running -= 1;
+    waiting.shift()?.();
+  }
+}
+
+/** Wie `verifyPassword`, aber ohne den Prozess anzuhalten – für die Anmeldung. */
+export function verifyPasswordAsync(password: string, stored: string): Promise<boolean> {
+  const parsed = parseHash(stored);
+  if (!parsed) return Promise.resolve(false);
+
+  return slot(
+    () =>
+      new Promise<boolean>((resolve) => {
+        scrypt(password.normalize("NFKC"), parsed.salt, parsed.expected.length, parsed.options, (error, actual) => {
+          resolve(!error && actual.length === parsed.expected.length && timingSafeEqual(actual, parsed.expected));
+        });
+      }),
+  );
 }

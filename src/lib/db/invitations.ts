@@ -128,9 +128,10 @@ export function redeemInvitation(token: string, password: string): Redeemed {
     try {
       handle
         .prepare(
-          "INSERT INTO account (id, email, password_hash, created_at, role) VALUES (?, ?, ?, ?, ?)",
+          "INSERT INTO account (id, email, password_hash, created_at, role, email_verified_at) VALUES (?, ?, ?, ?, ?, ?)",
         )
-        .run(account.id, account.email, hashPassword(password), account.createdAt, role);
+        // Die Einladung ging an diese Adresse, der Link war der Nachweis: bestätigt (ToDo 10.21).
+        .run(account.id, account.email, hashPassword(password), account.createdAt, role, account.createdAt);
     } catch (error) {
       handle.exec("ROLLBACK");
       if (String((error as Error).message).includes("UNIQUE")) return { error: "exists" };
