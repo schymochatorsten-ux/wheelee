@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "rammelsbach",
+    "name": "Rammelsbach",
+    "center": {
+      "lat": 49.5432747,
+      "lng": 7.440554500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rammelsbach-9d51778100",
+      "city": "rammelsbach",
+      "label": "Netto",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rammelsbach",
+      "spotCount": 1,
+      "lat": 49.5432747,
+      "lng": 7.440554500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29213711), ODbL"
+    }
+  ]
+}

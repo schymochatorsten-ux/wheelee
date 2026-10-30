@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "rosengarten-bw",
+    "name": "Rosengarten",
+    "center": {
+      "lat": 49.0676239,
+      "lng": 9.72787145
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rosengarten-bw-01f0bdb369",
+      "city": "rosengarten-bw",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rosengarten",
+      "spotCount": 1,
+      "lat": 49.06480105,
+      "lng": 9.72787145,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/586362041), ODbL"
+    },
+    {
+      "id": "rosengarten-bw-7ef53a5aac",
+      "city": "rosengarten-bw",
+      "label": "Hauptstraße 39",
+      "street": "Hauptstraße",
+      "houseNumber": "39",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rosengarten",
+      "spotCount": 1,
+      "lat": 49.0676239,
+      "lng": 9.72613985,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1350736974), ODbL"
+    },
+    {
+      "id": "rosengarten-bw-2140dd8dbe",
+      "city": "rosengarten-bw",
+      "label": "Karl-Kurz-Straße",
+      "street": "Karl-Kurz-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rosengarten",
+      "spotCount": 1,
+      "lat": 49.07331085,
+      "lng": 9.7256999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/254796379), ODbL"
+    },
+    {
+      "id": "rosengarten-bw-70d4a7236f",
+      "city": "rosengarten-bw",
+      "label": "Karl-Kurz-Straße",
+      "street": "Karl-Kurz-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rosengarten",
+      "spotCount": 1,
+      "lat": 49.073217400000004,
+      "lng": 9.725741450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1425376315), ODbL"
+    },
+    {
+      "id": "rosengarten-bw-fcd37250f5",
+      "city": "rosengarten-bw",
+      "label": "Pfarrgasse",
+      "street": "Pfarrgasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rosengarten",
+      "spotCount": 1,
+      "lat": 49.0561757,
+      "lng": 9.73388855,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/335392636), ODbL"
+    },
+    {
+      "id": "rosengarten-bw-bc9ba1d6d3",
+      "city": "rosengarten-bw",
+      "label": "Ströbel Markt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rosengarten",
+      "spotCount": 2,
+      "lat": 49.05494780000001,
+      "lng": 9.73437955,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/582051846), ODbL"
+    }
+  ]
+}

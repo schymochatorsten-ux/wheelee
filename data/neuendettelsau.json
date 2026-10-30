@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "neuendettelsau",
+    "name": "Neuendettelsau",
+    "center": {
+      "lat": 49.301660500000004,
+      "lng": 10.794507300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuendettelsau-fb88b7f354",
+      "city": "neuendettelsau",
+      "label": "Pendlerparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuendettelsau",
+      "spotCount": 2,
+      "lat": 49.301660500000004,
+      "lng": 10.794507300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/365705798), ODbL"
+    },
+    {
+      "id": "neuendettelsau-dd8779eb0b",
+      "city": "neuendettelsau",
+      "label": "Wilhelm-Löhe-Straße 21",
+      "street": "Wilhelm-Löhe-Straße",
+      "houseNumber": "21",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuendettelsau",
+      "spotCount": 2,
+      "lat": 49.2887842,
+      "lng": 10.7830671,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/430052518), ODbL"
+    }
+  ]
+}

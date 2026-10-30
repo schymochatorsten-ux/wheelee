@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lalendorf",
+    "name": "Lalendorf",
+    "center": {
+      "lat": 53.75520565000001,
+      "lng": 12.387161550000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lalendorf-3aeaa0643d",
+      "city": "lalendorf",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lalendorf",
+      "spotCount": 1,
+      "lat": 53.75520565000001,
+      "lng": 12.387161550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/111406117), ODbL"
+    }
+  ]
+}

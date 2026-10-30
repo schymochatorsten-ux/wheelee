@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "roederaue",
+    "name": "Röderaue",
+    "center": {
+      "lat": 51.389570600000006,
+      "lng": 13.483512150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "roederaue-77964e9509",
+      "city": "roederaue",
+      "label": "Bahnhofstraße 10",
+      "street": "Bahnhofstraße",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Röderaue",
+      "spotCount": 1,
+      "lat": 51.389570600000006,
+      "lng": 13.483512150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/411124339), ODbL"
+    }
+  ]
+}

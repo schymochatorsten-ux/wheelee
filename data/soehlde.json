@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "soehlde",
+    "name": "Söhlde",
+    "center": {
+      "lat": 52.184816350000006,
+      "lng": 10.22191025
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "soehlde-688481c7a6",
+      "city": "soehlde",
+      "label": "An den Tennisplätzen",
+      "street": "An den Tennisplätzen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Söhlde",
+      "spotCount": 2,
+      "lat": 52.184816350000006,
+      "lng": 10.22191025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/60170885), ODbL"
+    }
+  ]
+}

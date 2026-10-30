@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "moringen",
+    "name": "Moringen",
+    "center": {
+      "lat": 51.69331755,
+      "lng": 9.86923135
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "moringen-50ec6bda5c",
+      "city": "moringen",
+      "label": "Fühlingsweg",
+      "street": "Fühlingsweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Moringen",
+      "spotCount": 1,
+      "lat": 51.69331755,
+      "lng": 9.86923135,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1465587336), ODbL"
+    },
+    {
+      "id": "moringen-cdd68cab44",
+      "city": "moringen",
+      "label": "Fühlingsweg 4",
+      "street": "Fühlingsweg",
+      "houseNumber": "4",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Moringen",
+      "spotCount": 1,
+      "lat": 51.69331755,
+      "lng": 9.869158500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1465587335), ODbL"
+    }
+  ]
+}

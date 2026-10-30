@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "buchholz-rp",
+    "name": "Buchholz (Westerwald)",
+    "center": {
+      "lat": 50.6896506,
+      "lng": 7.3966383
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "buchholz-rp-c28b0e7784",
+      "city": "buchholz-rp",
+      "label": "Hauptstraße 54",
+      "street": "Hauptstraße",
+      "houseNumber": "54",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Buchholz (Westerwald)",
+      "spotCount": 1,
+      "lat": 50.6890531,
+      "lng": 7.396074700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1320371226), ODbL"
+    },
+    {
+      "id": "buchholz-rp-6bc0f85475",
+      "city": "buchholz-rp",
+      "label": "Kirchstraße 1",
+      "street": "Kirchstraße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Buchholz (Westerwald)",
+      "spotCount": 1,
+      "lat": 50.6896506,
+      "lng": 7.3966383,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12218561735), ODbL"
+    },
+    {
+      "id": "buchholz-rp-3dcc5cc2e8",
+      "city": "buchholz-rp",
+      "label": "Kirchstraße 1",
+      "street": "Kirchstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Buchholz (Westerwald)",
+      "spotCount": 1,
+      "lat": 50.68971555,
+      "lng": 7.396666400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1144384109), ODbL"
+    }
+  ]
+}

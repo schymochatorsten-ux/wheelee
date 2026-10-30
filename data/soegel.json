@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "soegel",
+    "name": "Sögel",
+    "center": {
+      "lat": 52.8368337,
+      "lng": 7.5365666000000004
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "soegel-9fc8281462",
+      "city": "soegel",
+      "label": "Schloß Clemenswerth Parkplatz P1",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Sögel",
+      "spotCount": 2,
+      "lat": 52.8368337,
+      "lng": 7.5365666000000004,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/36721157), ODbL"
+    }
+  ]
+}

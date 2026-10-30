@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lossburg",
+    "name": "Loßburg",
+    "center": {
+      "lat": 48.413929700000004,
+      "lng": 8.450597550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lossburg-8ef3bd7589",
+      "city": "lossburg",
+      "label": "Hauptstraße 44",
+      "street": "Hauptstraße",
+      "houseNumber": "44",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Loßburg",
+      "spotCount": 2,
+      "lat": 48.413929700000004,
+      "lng": 8.450597550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/335245325), ODbL"
+    }
+  ]
+}

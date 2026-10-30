@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "roggenburg",
+    "name": "Roggenburg",
+    "center": {
+      "lat": 48.27637625,
+      "lng": 10.2292498
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "roggenburg-7d78d2a513",
+      "city": "roggenburg",
+      "label": "Kloster Roggenburg, P1",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Roggenburg",
+      "spotCount": 3,
+      "lat": 48.27637625,
+      "lng": 10.229191450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/33526147), ODbL"
+    },
+    {
+      "id": "roggenburg-ee2af920c4",
+      "city": "roggenburg",
+      "label": "Klosterstraße",
+      "street": "Klosterstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Roggenburg",
+      "spotCount": 1,
+      "lat": 48.2763283,
+      "lng": 10.2292498,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6227018332), ODbL"
+    }
+  ]
+}

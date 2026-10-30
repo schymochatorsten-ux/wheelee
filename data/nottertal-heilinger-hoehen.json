@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "nottertal-heilinger-hoehen",
+    "name": "Nottertal-Heilinger Höhen",
+    "center": {
+      "lat": 51.24177075,
+      "lng": 10.665106000000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nottertal-heilinger-hoehen-63b0dc5c2f",
+      "city": "nottertal-heilinger-hoehen",
+      "label": "Weinberg",
+      "street": "Weinberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nottertal-Heilinger Höhen",
+      "spotCount": 1,
+      "lat": 51.24177075,
+      "lng": 10.665106000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29243960), ODbL"
+    }
+  ]
+}

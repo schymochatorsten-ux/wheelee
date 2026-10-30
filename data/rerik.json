@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "rerik",
+    "name": "Rerik",
+    "center": {
+      "lat": 54.10665945,
+      "lng": 11.620511400000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rerik-63c3298e7c",
+      "city": "rerik",
+      "label": "Am Parkplatz 10",
+      "street": "Am Parkplatz",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rerik",
+      "spotCount": 2,
+      "lat": 54.106730850000005,
+      "lng": 11.620511400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/43121217), ODbL"
+    },
+    {
+      "id": "rerik-d90b5868d4",
+      "city": "rerik",
+      "label": "Kröpeliner Straße",
+      "street": "Kröpeliner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rerik",
+      "spotCount": 2,
+      "lat": 54.10665945,
+      "lng": 11.621107250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/977797162), ODbL"
+    },
+    {
+      "id": "rerik-fd4e9bb699",
+      "city": "rerik",
+      "label": "Kröpeliner Straße 2",
+      "street": "Kröpeliner Straße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rerik",
+      "spotCount": 2,
+      "lat": 54.1065454,
+      "lng": 11.6186295,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/226316211), ODbL"
+    }
+  ]
+}

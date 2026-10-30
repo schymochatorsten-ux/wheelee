@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "insul",
+    "name": "Insul",
+    "center": {
+      "lat": 50.438909300000006,
+      "lng": 6.914723400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "insul-831b50c71e",
+      "city": "insul",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Insul",
+      "spotCount": 1,
+      "lat": 50.438909300000006,
+      "lng": 6.914723400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/947200695), ODbL"
+    }
+  ]
+}

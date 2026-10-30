@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "schuelldorf",
+    "name": "Schülldorf",
+    "center": {
+      "lat": 54.283280850000004,
+      "lng": 9.771809150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schuelldorf-b7582477c2",
+      "city": "schuelldorf",
+      "label": "Dorfstraße",
+      "street": "Dorfstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Schülldorf",
+      "spotCount": 2,
+      "lat": 54.299071850000004,
+      "lng": 9.747853250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/760530254), ODbL"
+    },
+    {
+      "id": "schuelldorf-59c8121952",
+      "city": "schuelldorf",
+      "label": "Ohe Ost",
+      "street": "Ohe Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schülldorf",
+      "spotCount": 2,
+      "lat": 54.283280850000004,
+      "lng": 9.771809150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/536481557), ODbL"
+    },
+    {
+      "id": "schuelldorf-86ce31ed5d",
+      "city": "schuelldorf",
+      "label": "Ohe Ost",
+      "street": "Ohe Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schülldorf",
+      "spotCount": 2,
+      "lat": 54.28288365,
+      "lng": 9.772131850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/536481558), ODbL"
+    }
+  ]
+}

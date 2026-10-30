@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "presseck",
+    "name": "Presseck",
+    "center": {
+      "lat": 50.210975600000005,
+      "lng": 11.4879137
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "presseck-4ba87c33aa",
+      "city": "presseck",
+      "label": "Behindertenparkplatz Presseck",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Presseck",
+      "spotCount": 2,
+      "lat": 50.210975600000005,
+      "lng": 11.4879137,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1525996766), ODbL"
+    }
+  ]
+}

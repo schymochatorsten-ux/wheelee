@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "toeging-a-inn",
+    "name": "Töging a.Inn",
+    "center": {
+      "lat": 48.2586632,
+      "lng": 12.595015400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "toeging-a-inn-7dc8f07080",
+      "city": "toeging-a-inn",
+      "label": "Bahnhofsplatz",
+      "street": "Bahnhofsplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Töging a.Inn",
+      "spotCount": 2,
+      "lat": 48.2586632,
+      "lng": 12.595015400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/455688136), ODbL"
+    }
+  ]
+}

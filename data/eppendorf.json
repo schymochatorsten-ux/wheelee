@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "eppendorf",
+    "name": "Eppendorf",
+    "center": {
+      "lat": 50.800150900000006,
+      "lng": 13.2292238
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eppendorf-7d6e18b524",
+      "city": "eppendorf",
+      "label": "Mühlweg",
+      "street": "Mühlweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eppendorf",
+      "spotCount": 1,
+      "lat": 50.800150900000006,
+      "lng": 13.2292238,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1108124374), ODbL"
+    }
+  ]
+}

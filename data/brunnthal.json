@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "brunnthal",
+    "name": "Brunnthal",
+    "center": {
+      "lat": 48.0389478,
+      "lng": 11.684491450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "brunnthal-11ae23b942",
+      "city": "brunnthal",
+      "label": "Hofoldinger Straße 1",
+      "street": "Hofoldinger Straße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brunnthal",
+      "spotCount": 1,
+      "lat": 48.006168450000004,
+      "lng": 11.684630600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/988889044), ODbL"
+    },
+    {
+      "id": "brunnthal-00b61a64f1",
+      "city": "brunnthal",
+      "label": "Keplerstraße",
+      "street": "Keplerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brunnthal",
+      "spotCount": 1,
+      "lat": 48.03960095,
+      "lng": 11.661774650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/252890598), ODbL"
+    },
+    {
+      "id": "brunnthal-a92854b9d3",
+      "city": "brunnthal",
+      "label": "Kirchstockacher Straße 1",
+      "street": "Kirchstockacher Straße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brunnthal",
+      "spotCount": 1,
+      "lat": 48.0074386,
+      "lng": 11.684491450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34244537), ODbL"
+    },
+    {
+      "id": "brunnthal-efd009b3b7",
+      "city": "brunnthal",
+      "label": "Münchner Straße 9",
+      "street": "Münchner Straße",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brunnthal",
+      "spotCount": 1,
+      "lat": 48.007290350000005,
+      "lng": 11.685347150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/358618309), ODbL"
+    },
+    {
+      "id": "brunnthal-c10b98ac1e",
+      "city": "brunnthal",
+      "label": "Zusestraße",
+      "street": "Zusestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brunnthal",
+      "spotCount": 1,
+      "lat": 48.0389478,
+      "lng": 11.65926705,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28723280), ODbL"
+    },
+    {
+      "id": "brunnthal-dabca6437f",
+      "city": "brunnthal",
+      "label": "Zusestraße 5",
+      "street": "Zusestraße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brunnthal",
+      "spotCount": 1,
+      "lat": 48.040684500000005,
+      "lng": 11.662035600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/61313759), ODbL"
+    }
+  ]
+}

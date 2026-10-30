@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "grafenau-bw",
+    "name": "Grafenau",
+    "center": {
+      "lat": 48.71440115,
+      "lng": 8.90656605
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grafenau-bw-abe069839d",
+      "city": "grafenau-bw",
+      "label": "Dätzinger Straße 53",
+      "street": "Dätzinger Straße",
+      "houseNumber": "53",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grafenau",
+      "spotCount": 1,
+      "lat": 48.7139112,
+      "lng": 8.90656605,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/303343105), ODbL"
+    },
+    {
+      "id": "grafenau-bw-3843836411",
+      "city": "grafenau-bw",
+      "label": "Döffinger Straße 30",
+      "street": "Döffinger Straße",
+      "houseNumber": "30",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grafenau",
+      "spotCount": 1,
+      "lat": 48.71664975,
+      "lng": 8.8926987,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/254959630), ODbL"
+    },
+    {
+      "id": "grafenau-bw-24bb999a90",
+      "city": "grafenau-bw",
+      "label": "Neckenmarkter Weg",
+      "street": "Neckenmarkter Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grafenau",
+      "spotCount": 2,
+      "lat": 48.71553085000001,
+      "lng": 8.8966359,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/23937576), ODbL"
+    },
+    {
+      "id": "grafenau-bw-86f10a614a",
+      "city": "grafenau-bw",
+      "label": "Sonnenbergstraße",
+      "street": "Sonnenbergstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grafenau",
+      "spotCount": 1,
+      "lat": 48.71678195,
+      "lng": 8.8934411,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/23977985), ODbL"
+    },
+    {
+      "id": "grafenau-bw-14d3149912",
+      "city": "grafenau-bw",
+      "label": "Zum Ulrichstein",
+      "street": "Zum Ulrichstein",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grafenau",
+      "spotCount": 1,
+      "lat": 48.713791900000004,
+      "lng": 8.907585000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/303343106), ODbL"
+    },
+    {
+      "id": "grafenau-bw-3601fea22e",
+      "city": "grafenau-bw",
+      "label": "Zum Ulrichstein 3",
+      "street": "Zum Ulrichstein",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grafenau",
+      "spotCount": 1,
+      "lat": 48.714315,
+      "lng": 8.908055050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1109071455), ODbL"
+    },
+    {
+      "id": "grafenau-bw-317c6a3174",
+      "city": "grafenau-bw",
+      "label": "Zum Ulrichstein 3",
+      "street": "Zum Ulrichstein",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grafenau",
+      "spotCount": 1,
+      "lat": 48.71440115,
+      "lng": 8.9081644,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1109071456), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "vierkirchen-sn",
+    "name": "Vierkirchen",
+    "center": {
+      "lat": 51.20685505,
+      "lng": 14.68516335
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "vierkirchen-sn-4aadc788f0",
+      "city": "vierkirchen-sn",
+      "label": "Am Wacheberg",
+      "street": "Am Wacheberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vierkirchen",
+      "spotCount": 2,
+      "lat": 51.207429250000004,
+      "lng": 14.683649850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/238829686), ODbL"
+    },
+    {
+      "id": "vierkirchen-sn-3afa597a21",
+      "city": "vierkirchen-sn",
+      "label": "Am Wacheberg",
+      "street": "Am Wacheberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vierkirchen",
+      "spotCount": 2,
+      "lat": 51.20684370000001,
+      "lng": 14.684830350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/238829687), ODbL"
+    },
+    {
+      "id": "vierkirchen-sn-1e99a86e49",
+      "city": "vierkirchen-sn",
+      "label": "Am Wacheberg",
+      "street": "Am Wacheberg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Vierkirchen",
+      "spotCount": 1,
+      "lat": 51.20685505,
+      "lng": 14.685099400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1372499091), ODbL"
+    },
+    {
+      "id": "vierkirchen-sn-b17c497927",
+      "city": "vierkirchen-sn",
+      "label": "Am Wacheberg",
+      "street": "Am Wacheberg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Vierkirchen",
+      "spotCount": 1,
+      "lat": 51.206869100000006,
+      "lng": 14.68516335,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1372499092), ODbL"
+    },
+    {
+      "id": "vierkirchen-sn-942864621c",
+      "city": "vierkirchen-sn",
+      "label": "Behindertenparkplatz Vierkirchen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vierkirchen",
+      "spotCount": 2,
+      "lat": 51.20272775,
+      "lng": 14.7611833,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/487059480), ODbL"
+    },
+    {
+      "id": "vierkirchen-sn-e6e854088c",
+      "city": "vierkirchen-sn",
+      "label": "Buchholz 96",
+      "street": "Buchholz",
+      "houseNumber": "96",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vierkirchen",
+      "spotCount": 1,
+      "lat": 51.19954455,
+      "lng": 14.68983975,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1105227661), ODbL"
+    }
+  ]
+}

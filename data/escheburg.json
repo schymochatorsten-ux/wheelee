@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "escheburg",
+    "name": "Escheburg",
+    "center": {
+      "lat": 53.46481055,
+      "lng": 10.31446215
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "escheburg-03aae03e5d",
+      "city": "escheburg",
+      "label": "Stubbenberg",
+      "street": "Stubbenberg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Escheburg",
+      "spotCount": 1,
+      "lat": 53.46481055,
+      "lng": 10.31446215,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1320734978), ODbL"
+    }
+  ]
+}

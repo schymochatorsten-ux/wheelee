@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "altlandsberg",
+    "name": "Altlandsberg",
+    "center": {
+      "lat": 52.56451920000001,
+      "lng": 13.7255075
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "altlandsberg-018f069e8b",
+      "city": "altlandsberg",
+      "label": "Am Röthsee 58",
+      "street": "Am Röthsee",
+      "houseNumber": "58",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Altlandsberg",
+      "spotCount": 1,
+      "lat": 52.5496087,
+      "lng": 13.709646500000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9941946328), ODbL"
+    },
+    {
+      "id": "altlandsberg-a1df3ac250",
+      "city": "altlandsberg",
+      "label": "Am Wallgraben 1",
+      "street": "Am Wallgraben",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Altlandsberg",
+      "spotCount": 1,
+      "lat": 52.5620766,
+      "lng": 13.723698850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1082727212), ODbL"
+    },
+    {
+      "id": "altlandsberg-e440057b53",
+      "city": "altlandsberg",
+      "label": "Krummenseestraße",
+      "street": "Krummenseestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Altlandsberg",
+      "spotCount": 2,
+      "lat": 52.568263400000006,
+      "lng": 13.7255075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1082120112), ODbL"
+    },
+    {
+      "id": "altlandsberg-5c57108fc6",
+      "city": "altlandsberg",
+      "label": "Parkplatz Kulturmanufaktur",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Altlandsberg",
+      "spotCount": 1,
+      "lat": 52.56451920000001,
+      "lng": 13.73046295,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1294774188), ODbL"
+    }
+  ]
+}

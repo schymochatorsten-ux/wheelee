@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "seckach",
+    "name": "Seckach",
+    "center": {
+      "lat": 49.44236105,
+      "lng": 9.2881075
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "seckach-7c9a1fb551",
+      "city": "seckach",
+      "label": "Bildweg",
+      "street": "Bildweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Seckach",
+      "spotCount": 1,
+      "lat": 49.44236105,
+      "lng": 9.2881075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1391912119), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "binzen",
+    "name": "Binzen",
+    "center": {
+      "lat": 47.625312400000006,
+      "lng": 7.6046915
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "binzen-cf4306fad6",
+      "city": "binzen",
+      "label": "Pasteurallee",
+      "street": "Pasteurallee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Binzen",
+      "spotCount": 3,
+      "lat": 47.625312400000006,
+      "lng": 7.6046915,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11514311627), ODbL"
+    }
+  ]
+}

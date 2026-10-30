@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "kraiburg-a-inn",
+    "name": "Kraiburg a.Inn",
+    "center": {
+      "lat": 48.1909616,
+      "lng": 12.437804450000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kraiburg-a-inn-962cbb4dbe",
+      "city": "kraiburg-a-inn",
+      "label": "Max-Schwaiger-Straße 12",
+      "street": "Max-Schwaiger-Straße",
+      "houseNumber": "12",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kraiburg a.Inn",
+      "spotCount": 1,
+      "lat": 48.185583750000006,
+      "lng": 12.42821515,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1559830570), ODbL"
+    },
+    {
+      "id": "kraiburg-a-inn-46ec536bc2",
+      "city": "kraiburg-a-inn",
+      "label": "Untersbergstraße",
+      "street": "Untersbergstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kraiburg a.Inn",
+      "spotCount": 2,
+      "lat": 48.1909616,
+      "lng": 12.437804450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1032085070), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "starzach",
+    "name": "Starzach",
+    "center": {
+      "lat": 48.4463212,
+      "lng": 8.7831133
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "starzach-6d1df5bda0",
+      "city": "starzach",
+      "label": "Am Bahnhof 6",
+      "street": "Am Bahnhof",
+      "houseNumber": "6",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Starzach",
+      "spotCount": 1,
+      "lat": 48.4463212,
+      "lng": 8.7831133,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12925886005), ODbL"
+    },
+    {
+      "id": "starzach-7d6b06985b",
+      "city": "starzach",
+      "label": "Am Bahnhof 6",
+      "street": "Am Bahnhof",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Starzach",
+      "spotCount": 1,
+      "lat": 48.44633225,
+      "lng": 8.78298945,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/179243568), ODbL"
+    },
+    {
+      "id": "starzach-0816180511",
+      "city": "starzach",
+      "label": "Rathausgasse",
+      "street": "Rathausgasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Starzach",
+      "spotCount": 1,
+      "lat": 48.43187830000001,
+      "lng": 8.8138294,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/953533376), ODbL"
+    }
+  ]
+}

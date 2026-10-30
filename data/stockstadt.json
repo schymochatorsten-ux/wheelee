@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "stockstadt",
+    "name": "Stockstadt am Rhein",
+    "center": {
+      "lat": 49.8130101,
+      "lng": 8.478765000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "stockstadt-a6b2ebf8f6",
+      "city": "stockstadt",
+      "label": "Friedrich-Ludwig-Jahn-Straße",
+      "street": "Friedrich-Ludwig-Jahn-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stockstadt am Rhein",
+      "spotCount": 1,
+      "lat": 49.8130101,
+      "lng": 8.478765000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/72921978), ODbL"
+    }
+  ]
+}

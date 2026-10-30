@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "steinbach-hallenberg",
+    "name": "Steinbach-Hallenberg",
+    "center": {
+      "lat": 50.716208800000004,
+      "lng": 10.610111450000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "steinbach-hallenberg-be6bf9f470",
+      "city": "steinbach-hallenberg",
+      "label": "Brunnenstraße",
+      "street": "Brunnenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Steinbach-Hallenberg",
+      "spotCount": 1,
+      "lat": 50.699513350000004,
+      "lng": 10.57303005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/90477868), ODbL"
+    },
+    {
+      "id": "steinbach-hallenberg-adaedd18e8",
+      "city": "steinbach-hallenberg",
+      "label": "Oberschönauer Hauptstraße 62",
+      "street": "Oberschönauer Hauptstraße",
+      "houseNumber": "62",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Steinbach-Hallenberg",
+      "spotCount": 1,
+      "lat": 50.716208800000004,
+      "lng": 10.610111450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/90844049), ODbL"
+    }
+  ]
+}

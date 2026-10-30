@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "baar-ebenhausen",
+    "name": "Baar-Ebenhausen",
+    "center": {
+      "lat": 48.6794652,
+      "lng": 11.464563400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "baar-ebenhausen-1becaf49b0",
+      "city": "baar-ebenhausen",
+      "label": "Baarer Weiher-Ost",
+      "street": "Baarer Weiher-Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Baar-Ebenhausen",
+      "spotCount": 2,
+      "lat": 48.680972450000006,
+      "lng": 11.502482400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/666379419), ODbL"
+    },
+    {
+      "id": "baar-ebenhausen-a9bd14b17e",
+      "city": "baar-ebenhausen",
+      "label": "Baarer Weiher-West",
+      "street": "Baarer Weiher-West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Baar-Ebenhausen",
+      "spotCount": 2,
+      "lat": 48.6812257,
+      "lng": 11.499956400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/666379420), ODbL"
+    },
+    {
+      "id": "baar-ebenhausen-d0b29290cb",
+      "city": "baar-ebenhausen",
+      "label": "Kolpingstraße",
+      "street": "Kolpingstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Baar-Ebenhausen",
+      "spotCount": 2,
+      "lat": 48.6738924,
+      "lng": 11.4606849,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/161602444), ODbL"
+    },
+    {
+      "id": "baar-ebenhausen-ad6f10f68f",
+      "city": "baar-ebenhausen",
+      "label": "Kolpingstraße",
+      "street": "Kolpingstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Baar-Ebenhausen",
+      "spotCount": 3,
+      "lat": 48.67364175,
+      "lng": 11.459689350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/478220796), ODbL"
+    },
+    {
+      "id": "baar-ebenhausen-5c316d4741",
+      "city": "baar-ebenhausen",
+      "label": "Münchener Straße",
+      "street": "Münchener Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Baar-Ebenhausen",
+      "spotCount": 1,
+      "lat": 48.6781795,
+      "lng": 11.464563400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1175747703), ODbL"
+    },
+    {
+      "id": "baar-ebenhausen-bff7956ae5",
+      "city": "baar-ebenhausen",
+      "label": "Tannenweg",
+      "street": "Tannenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Baar-Ebenhausen",
+      "spotCount": 2,
+      "lat": 48.6794652,
+      "lng": 11.4626755,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1180537366), ODbL"
+    }
+  ]
+}

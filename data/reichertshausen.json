@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "reichertshausen",
+    "name": "Reichertshausen",
+    "center": {
+      "lat": 48.471085450000004,
+      "lng": 11.50978705
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "reichertshausen-3fa41836b4",
+      "city": "reichertshausen",
+      "label": "Park and Ride Reichertshausen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Reichertshausen",
+      "spotCount": 1,
+      "lat": 48.4696924,
+      "lng": 11.5097247,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/17404281), ODbL"
+    },
+    {
+      "id": "reichertshausen-76117cb4ef",
+      "city": "reichertshausen",
+      "label": "Pfaffenhofener Straße",
+      "street": "Pfaffenhofener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Reichertshausen",
+      "spotCount": 1,
+      "lat": 48.4716096,
+      "lng": 11.509790050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/17404279), ODbL"
+    },
+    {
+      "id": "reichertshausen-3e16d1e290",
+      "city": "reichertshausen",
+      "label": "Pfaffenhofener Straße 18",
+      "street": "Pfaffenhofener Straße",
+      "houseNumber": "18",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Reichertshausen",
+      "spotCount": 3,
+      "lat": 48.471085450000004,
+      "lng": 11.50978705,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1037994749), ODbL"
+    }
+  ]
+}

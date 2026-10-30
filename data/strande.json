@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "strande",
+    "name": "Strande",
+    "center": {
+      "lat": 54.439524250000005,
+      "lng": 10.17610825
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "strande-1328b97a90",
+      "city": "strande",
+      "label": "Bülker Weg",
+      "street": "Bülker Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Strande",
+      "spotCount": 1,
+      "lat": 54.45406535000001,
+      "lng": 10.196687650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/781567548), ODbL"
+    },
+    {
+      "id": "strande-5ea8d18bc3",
+      "city": "strande",
+      "label": "Bülker Weg 2",
+      "street": "Bülker Weg",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Strande",
+      "spotCount": 2,
+      "lat": 54.439524250000005,
+      "lng": 10.17610825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1036095301), ODbL"
+    },
+    {
+      "id": "strande-cec69b6e23",
+      "city": "strande",
+      "label": "Rudolf-Kinau-Weg",
+      "street": "Rudolf-Kinau-Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Strande",
+      "spotCount": 2,
+      "lat": 54.43740435000001,
+      "lng": 10.17222405,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/679416816), ODbL"
+    }
+  ]
+}

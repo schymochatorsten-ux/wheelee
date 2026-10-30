@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ahorn-bw",
+    "name": "Ahorn",
+    "center": {
+      "lat": 49.469639,
+      "lng": 9.5543498
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ahorn-bw-1542079eff",
+      "city": "ahorn-bw",
+      "label": "P+M AS Boxberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ahorn",
+      "spotCount": 2,
+      "lat": 49.469639,
+      "lng": 9.5543498,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/329801481), ODbL"
+    }
+  ]
+}

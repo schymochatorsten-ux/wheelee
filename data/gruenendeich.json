@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "gruenendeich",
+    "name": "Grünendeich",
+    "center": {
+      "lat": 53.57224045,
+      "lng": 9.63300065
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gruenendeich-cbbb368bcb",
+      "city": "gruenendeich",
+      "label": "Elbdeich",
+      "street": "Elbdeich",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Grünendeich",
+      "spotCount": 3,
+      "lat": 53.57224045,
+      "lng": 9.63300065,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1312829452), ODbL"
+    }
+  ]
+}

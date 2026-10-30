@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "limeshain",
+    "name": "Limeshain",
+    "center": {
+      "lat": 50.262576100000004,
+      "lng": 8.9868694
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "limeshain-b371a2a836",
+      "city": "limeshain",
+      "label": "Am Lindheimer Weg 4",
+      "street": "Am Lindheimer Weg",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Limeshain",
+      "spotCount": 4,
+      "lat": 50.27209595000001,
+      "lng": 8.993584649999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/436764060), ODbL"
+    },
+    {
+      "id": "limeshain-51f2a4ebcb",
+      "city": "limeshain",
+      "label": "Am Zentrum",
+      "street": "Am Zentrum",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Limeshain",
+      "spotCount": 1,
+      "lat": 50.26102755000001,
+      "lng": 8.9868694,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/414600870), ODbL"
+    },
+    {
+      "id": "limeshain-acaaab903a",
+      "city": "limeshain",
+      "label": "Glauburgstraße",
+      "street": "Glauburgstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Limeshain",
+      "spotCount": 1,
+      "lat": 50.274307750000006,
+      "lng": 8.997252150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/530244039), ODbL"
+    },
+    {
+      "id": "limeshain-c910a06bd5",
+      "city": "limeshain",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Limeshain",
+      "spotCount": 1,
+      "lat": 50.26180775,
+      "lng": 8.9707577,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/524318437), ODbL"
+    },
+    {
+      "id": "limeshain-4b6adcae78",
+      "city": "limeshain",
+      "label": "Ostheimer Straße",
+      "street": "Ostheimer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Limeshain",
+      "spotCount": 1,
+      "lat": 50.25756865,
+      "lng": 8.9679668,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/237788138), ODbL"
+    },
+    {
+      "id": "limeshain-5180e5bd7b",
+      "city": "limeshain",
+      "label": "Weingartenstraße 34",
+      "street": "Weingartenstraße",
+      "houseNumber": "34",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Limeshain",
+      "spotCount": 1,
+      "lat": 50.262576100000004,
+      "lng": 8.970568700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/410249865), ODbL"
+    }
+  ]
+}

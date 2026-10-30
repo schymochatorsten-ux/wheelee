@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "vogtei",
+    "name": "Vogtei",
+    "center": {
+      "lat": 51.163325650000004,
+      "lng": 10.4471882
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "vogtei-0ffc35b81b",
+      "city": "vogtei",
+      "label": "Straße zum Mittelpunkt Deutschlands",
+      "street": "Straße zum Mittelpunkt Deutschlands",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vogtei",
+      "spotCount": 1,
+      "lat": 51.163325650000004,
+      "lng": 10.4471882,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/54541727), ODbL"
+    }
+  ]
+}

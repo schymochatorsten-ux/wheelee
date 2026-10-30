@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "seegebiet-mansfelder-land",
+    "name": "Seegebiet Mansfelder Land",
+    "center": {
+      "lat": 51.47993305,
+      "lng": 11.74179535
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "seegebiet-mansfelder-land-c5782c9830",
+      "city": "seegebiet-mansfelder-land",
+      "label": "Am Kernersee",
+      "street": "Am Kernersee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Seegebiet Mansfelder Land",
+      "spotCount": 2,
+      "lat": 51.47993305,
+      "lng": 11.74179535,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/462928461), ODbL"
+    }
+  ]
+}

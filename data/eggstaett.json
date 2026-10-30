@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "eggstaett",
+    "name": "Eggstätt",
+    "center": {
+      "lat": 47.929411900000005,
+      "lng": 12.380191400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eggstaett-5d3a1bba71",
+      "city": "eggstaett",
+      "label": "Lehrer-Hager-Straße",
+      "street": "Lehrer-Hager-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Eggstätt",
+      "spotCount": 2,
+      "lat": 47.929411900000005,
+      "lng": 12.3740873,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/118512720), ODbL"
+    },
+    {
+      "id": "eggstaett-b2c16a28ca",
+      "city": "eggstaett",
+      "label": "Parkplatz Edeka Summerer",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eggstätt",
+      "spotCount": 1,
+      "lat": 47.920147300000004,
+      "lng": 12.380191400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/119214707), ODbL"
+    }
+  ]
+}

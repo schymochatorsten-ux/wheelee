@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "rossleben-wiehe",
+    "name": "Roßleben-Wiehe",
+    "center": {
+      "lat": 51.306394850000004,
+      "lng": 11.459623050000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rossleben-wiehe-95a9d9ee06",
+      "city": "rossleben-wiehe",
+      "label": "Hasenwinkel",
+      "street": "Hasenwinkel",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Roßleben-Wiehe",
+      "spotCount": 2,
+      "lat": 51.306394850000004,
+      "lng": 11.4577389,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/313166968), ODbL"
+    },
+    {
+      "id": "rossleben-wiehe-e9be71088a",
+      "city": "rossleben-wiehe",
+      "label": "Hasenwinkel 1",
+      "street": "Hasenwinkel",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Roßleben-Wiehe",
+      "spotCount": 1,
+      "lat": 51.306254450000004,
+      "lng": 11.459623050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/175274255), ODbL"
+    }
+  ]
+}

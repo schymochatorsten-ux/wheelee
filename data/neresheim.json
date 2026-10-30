@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "neresheim",
+    "name": "Neresheim",
+    "center": {
+      "lat": 48.75086885,
+      "lng": 10.33998545
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neresheim-7fec12739b",
+      "city": "neresheim",
+      "label": "Dischinger Straße",
+      "street": "Dischinger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neresheim",
+      "spotCount": 1,
+      "lat": 48.75071925,
+      "lng": 10.340046950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1126723813), ODbL"
+    },
+    {
+      "id": "neresheim-fdb40dc11d",
+      "city": "neresheim",
+      "label": "Dischinger Straße",
+      "street": "Dischinger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neresheim",
+      "spotCount": 1,
+      "lat": 48.75074585,
+      "lng": 10.34001695,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1294792307), ODbL"
+    },
+    {
+      "id": "neresheim-bcef3e27e9",
+      "city": "neresheim",
+      "label": "Dischinger Straße",
+      "street": "Dischinger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neresheim",
+      "spotCount": 1,
+      "lat": 48.7507734,
+      "lng": 10.33998545,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1294792308), ODbL"
+    },
+    {
+      "id": "neresheim-1cc1603daa",
+      "city": "neresheim",
+      "label": "Dischinger Straße 15",
+      "street": "Dischinger Straße",
+      "houseNumber": "15",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neresheim",
+      "spotCount": 3,
+      "lat": 48.75086885,
+      "lng": 10.339875500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1294792306), ODbL"
+    },
+    {
+      "id": "neresheim-1420e8423b",
+      "city": "neresheim",
+      "label": "Heidenheimer Straße 8",
+      "street": "Heidenheimer Straße",
+      "houseNumber": "8",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neresheim",
+      "spotCount": 1,
+      "lat": 48.75485725,
+      "lng": 10.3306786,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1294792323), ODbL"
+    },
+    {
+      "id": "neresheim-663bee53d9",
+      "city": "neresheim",
+      "label": "Heidenheimer Straße 8",
+      "street": "Heidenheimer Straße",
+      "houseNumber": "8",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neresheim",
+      "spotCount": 1,
+      "lat": 48.75482855,
+      "lng": 10.330790100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1294792324), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "langballig",
+    "name": "Langballig",
+    "center": {
+      "lat": 54.82177780000001,
+      "lng": 9.655548150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "langballig-87d6584152",
+      "city": "langballig",
+      "label": "Strandweg",
+      "street": "Strandweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Langballig",
+      "spotCount": 4,
+      "lat": 54.82177780000001,
+      "lng": 9.655548150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/147197251), ODbL"
+    }
+  ]
+}

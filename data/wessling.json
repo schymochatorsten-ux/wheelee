@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "wessling",
+    "name": "Weßling",
+    "center": {
+      "lat": 48.0867363,
+      "lng": 11.281902950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wessling-cbcef657b9",
+      "city": "wessling",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Weßling",
+      "spotCount": 1,
+      "lat": 48.07692610000001,
+      "lng": 11.2502057,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/331036403), ODbL"
+    },
+    {
+      "id": "wessling-be966e174b",
+      "city": "wessling",
+      "label": "Behindertenparkplatz Weßling",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weßling",
+      "spotCount": 8,
+      "lat": 48.08719395,
+      "lng": 11.255704900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1259667083), ODbL"
+    },
+    {
+      "id": "wessling-634efa8fef",
+      "city": "wessling",
+      "label": "Claude-Dornier-Straße",
+      "street": "Claude-Dornier-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weßling",
+      "spotCount": 1,
+      "lat": 48.08684975,
+      "lng": 11.281902950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1221574482), ODbL"
+    },
+    {
+      "id": "wessling-2448947061",
+      "city": "wessling",
+      "label": "Claude-Dornier-Straße",
+      "street": "Claude-Dornier-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weßling",
+      "spotCount": 2,
+      "lat": 48.086540600000006,
+      "lng": 11.28294485,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1226966060), ODbL"
+    },
+    {
+      "id": "wessling-8950247e4d",
+      "city": "wessling",
+      "label": "Claude-Dornier-Straße",
+      "street": "Claude-Dornier-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weßling",
+      "spotCount": 2,
+      "lat": 48.0867363,
+      "lng": 11.2832108,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1226966061), ODbL"
+    },
+    {
+      "id": "wessling-3eb53de164",
+      "city": "wessling",
+      "label": "Münchener Straße",
+      "street": "Münchener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weßling",
+      "spotCount": 1,
+      "lat": 48.08428765000001,
+      "lng": 11.2767314,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1227677778), ODbL"
+    }
+  ]
+}

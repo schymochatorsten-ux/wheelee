@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "leutersdorf",
+    "name": "Leutersdorf",
+    "center": {
+      "lat": 50.952351900000004,
+      "lng": 14.640094500000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "leutersdorf-66a55e47b8",
+      "city": "leutersdorf",
+      "label": "Aloys-Scholze-Straße",
+      "street": "Aloys-Scholze-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Leutersdorf",
+      "spotCount": 7,
+      "lat": 50.952351900000004,
+      "lng": 14.640094500000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13048177500), ODbL"
+    }
+  ]
+}

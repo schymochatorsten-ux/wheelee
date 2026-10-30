@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "marlow",
+    "name": "Marlow",
+    "center": {
+      "lat": 54.146378350000006,
+      "lng": 12.56834515
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "marlow-54c03a05b5",
+      "city": "marlow",
+      "label": "Parkplatz Vogelpark",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Marlow",
+      "spotCount": 6,
+      "lat": 54.146378350000006,
+      "lng": 12.56834515,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/66461734), ODbL"
+    }
+  ]
+}

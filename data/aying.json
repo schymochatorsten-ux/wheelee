@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "aying",
+    "name": "Aying",
+    "center": {
+      "lat": 47.96810500000001,
+      "lng": 11.7786528
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "aying-8b426d0513",
+      "city": "aying",
+      "label": "Biechlweg",
+      "street": "Biechlweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aying",
+      "spotCount": 2,
+      "lat": 47.993571900000006,
+      "lng": 11.73655725,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1046527436), ODbL"
+    },
+    {
+      "id": "aying-3d4549fd05",
+      "city": "aying",
+      "label": "Kirchgasse",
+      "street": "Kirchgasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aying",
+      "spotCount": 1,
+      "lat": 47.970021800000005,
+      "lng": 11.7786528,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1074913143), ODbL"
+    },
+    {
+      "id": "aying-7505718eaa",
+      "city": "aying",
+      "label": "P+R",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aying",
+      "spotCount": 3,
+      "lat": 47.96810500000001,
+      "lng": 11.770737700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24167124), ODbL"
+    },
+    {
+      "id": "aying-1ccc311f02",
+      "city": "aying",
+      "label": "Römerstraße",
+      "street": "Römerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aying",
+      "spotCount": 2,
+      "lat": 47.94631510000001,
+      "lng": 11.79582375,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/295277119), ODbL"
+    },
+    {
+      "id": "aying-a1a5e911eb",
+      "city": "aying",
+      "label": "Römerstraße",
+      "street": "Römerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aying",
+      "spotCount": 1,
+      "lat": 47.94780455,
+      "lng": 11.791350150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/698112445), ODbL"
+    },
+    {
+      "id": "aying-300ff950a7",
+      "city": "aying",
+      "label": "Straßlandweg",
+      "street": "Straßlandweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aying",
+      "spotCount": 4,
+      "lat": 47.96951885,
+      "lng": 11.7682474,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25769804), ODbL"
+    },
+    {
+      "id": "aying-123783d3a5",
+      "city": "aying",
+      "label": "Untere Bahnhofstraße",
+      "street": "Untere Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aying",
+      "spotCount": 1,
+      "lat": 47.94584855000001,
+      "lng": 11.781649250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26681781), ODbL"
+    }
+  ]
+}

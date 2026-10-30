@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "huelben",
+    "name": "Hülben",
+    "center": {
+      "lat": 48.5267906,
+      "lng": 9.413986300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "huelben-a9b8cefbb0",
+      "city": "huelben",
+      "label": "Kaltentalstraße 50",
+      "street": "Kaltentalstraße",
+      "houseNumber": "50",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hülben",
+      "spotCount": 2,
+      "lat": 48.5267906,
+      "lng": 9.413986300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/285211942), ODbL"
+    }
+  ]
+}

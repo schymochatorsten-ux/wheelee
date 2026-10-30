@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lauterecken",
+    "name": "Lauterecken",
+    "center": {
+      "lat": 49.6536233,
+      "lng": 7.5902219
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lauterecken-72e8cbd402",
+      "city": "lauterecken",
+      "label": "Saarbrücker Straße",
+      "street": "Saarbrücker Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lauterecken",
+      "spotCount": 1,
+      "lat": 49.6536233,
+      "lng": 7.5902219,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12033884385), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "salching",
+    "name": "Salching",
+    "center": {
+      "lat": 48.812222350000006,
+      "lng": 12.57034415
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "salching-57efd8711d",
+      "city": "salching",
+      "label": "Dorfstraße",
+      "street": "Dorfstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Salching",
+      "spotCount": 1,
+      "lat": 48.801123700000005,
+      "lng": 12.5875619,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1498831221), ODbL"
+    },
+    {
+      "id": "salching-af97959e29",
+      "city": "salching",
+      "label": "Schulstraße",
+      "street": "Schulstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Salching",
+      "spotCount": 1,
+      "lat": 48.812222350000006,
+      "lng": 12.57034415,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/606133952), ODbL"
+    },
+    {
+      "id": "salching-fefa8f934c",
+      "city": "salching",
+      "label": "Schulstraße",
+      "street": "Schulstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Salching",
+      "spotCount": 1,
+      "lat": 48.812227400000005,
+      "lng": 12.5701952,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1263302102), ODbL"
+    }
+  ]
+}

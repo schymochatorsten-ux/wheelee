@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "mutlangen",
+    "name": "Mutlangen",
+    "center": {
+      "lat": 48.8237121,
+      "lng": 9.797785600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mutlangen-4fa92f6733",
+      "city": "mutlangen",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mutlangen",
+      "spotCount": 1,
+      "lat": 48.823059900000004,
+      "lng": 9.797785600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1421915654), ODbL"
+    },
+    {
+      "id": "mutlangen-7991f74673",
+      "city": "mutlangen",
+      "label": "Johannesstraße 3",
+      "street": "Johannesstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mutlangen",
+      "spotCount": 1,
+      "lat": 48.8237121,
+      "lng": 9.79812205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1360100488), ODbL"
+    },
+    {
+      "id": "mutlangen-fcf2fb9f0b",
+      "city": "mutlangen",
+      "label": "Liegendzufahrt Stauferklinikum Mutlangen",
+      "street": "Liegendzufahrt Stauferklinikum Mutlangen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Mutlangen",
+      "spotCount": 2,
+      "lat": 48.81944715,
+      "lng": 9.786536400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1120876404), ODbL"
+    },
+    {
+      "id": "mutlangen-8c434c9f23",
+      "city": "mutlangen",
+      "label": "Spraitbacher Straße",
+      "street": "Spraitbacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mutlangen",
+      "spotCount": 2,
+      "lat": 48.82989070000001,
+      "lng": 9.794268200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/198712143), ODbL"
+    }
+  ]
+}

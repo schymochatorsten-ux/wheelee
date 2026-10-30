@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "dierdorf",
+    "name": "Dierdorf",
+    "center": {
+      "lat": 50.54497905,
+      "lng": 7.665890350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dierdorf-f4f7747dac",
+      "city": "dierdorf",
+      "label": "Gymnasialstraße",
+      "street": "Gymnasialstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dierdorf",
+      "spotCount": 1,
+      "lat": 50.54497905,
+      "lng": 7.665890350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/839678520), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "espenau",
+    "name": "Espenau",
+    "center": {
+      "lat": 51.38565375,
+      "lng": 9.4385393
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "espenau-c7677af176",
+      "city": "espenau",
+      "label": "Weimarer Weg",
+      "street": "Weimarer Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Espenau",
+      "spotCount": 2,
+      "lat": 51.384515050000005,
+      "lng": 9.4385393,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32735195), ODbL"
+    },
+    {
+      "id": "espenau-62766566a4",
+      "city": "espenau",
+      "label": "Wilhelmsthaler Straße",
+      "street": "Wilhelmsthaler Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Espenau",
+      "spotCount": 2,
+      "lat": 51.38565375,
+      "lng": 9.437954300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32735193), ODbL"
+    }
+  ]
+}

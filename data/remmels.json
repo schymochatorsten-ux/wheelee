@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "remmels",
+    "name": "Remmels",
+    "center": {
+      "lat": 54.11364015,
+      "lng": 9.644573950000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "remmels-29d2e05e93",
+      "city": "remmels",
+      "label": "Aublick 14",
+      "street": "Aublick",
+      "houseNumber": "14",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Remmels",
+      "spotCount": 6,
+      "lat": 54.11364015,
+      "lng": 9.644573950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1071360069), ODbL"
+    }
+  ]
+}

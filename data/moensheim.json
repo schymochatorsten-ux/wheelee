@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "moensheim",
+    "name": "Mönsheim",
+    "center": {
+      "lat": 48.859933250000005,
+      "lng": 8.868442550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "moensheim-08a0ece282",
+      "city": "moensheim",
+      "label": "Leonberger Straße 65",
+      "street": "Leonberger Straße",
+      "houseNumber": "65",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mönsheim",
+      "spotCount": 2,
+      "lat": 48.859933250000005,
+      "lng": 8.868442550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/912456493), ODbL"
+    }
+  ]
+}

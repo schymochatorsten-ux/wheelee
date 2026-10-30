@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "jatznick",
+    "name": "Jatznick",
+    "center": {
+      "lat": 53.60241165000001,
+      "lng": 13.937189800000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "jatznick-17e26ee13b",
+      "city": "jatznick",
+      "label": "Rothemühler Chaussee",
+      "street": "Rothemühler Chaussee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jatznick",
+      "spotCount": 1,
+      "lat": 53.60241165000001,
+      "lng": 13.937189800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1353167008), ODbL"
+    }
+  ]
+}

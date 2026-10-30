@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "neufra",
+    "name": "Neufra",
+    "center": {
+      "lat": 48.24610905,
+      "lng": 9.1861402
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neufra-7f62a11f1e",
+      "city": "neufra",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Neufra",
+      "spotCount": 1,
+      "lat": 48.24610905,
+      "lng": 9.1860002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/38969409), ODbL"
+    },
+    {
+      "id": "neufra-08b506d9fe",
+      "city": "neufra",
+      "label": "Bahnhofstraße 12",
+      "street": "Bahnhofstraße",
+      "houseNumber": "12",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neufra",
+      "spotCount": 1,
+      "lat": 48.24606025,
+      "lng": 9.1861402,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1383976564), ODbL"
+    }
+  ]
+}

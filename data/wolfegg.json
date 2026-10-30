@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wolfegg",
+    "name": "Wolfegg",
+    "center": {
+      "lat": 47.819065800000004,
+      "lng": 9.79447845
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wolfegg-0e20e8a619",
+      "city": "wolfegg",
+      "label": "Rötenbacher Straße 13",
+      "street": "Rötenbacher Straße",
+      "houseNumber": "13",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wolfegg",
+      "spotCount": 1,
+      "lat": 47.819065800000004,
+      "lng": 9.79447845,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1421503528), ODbL"
+    }
+  ]
+}

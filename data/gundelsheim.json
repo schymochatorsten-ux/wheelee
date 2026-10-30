@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "gundelsheim",
+    "name": "Gundelsheim",
+    "center": {
+      "lat": 49.282320350000006,
+      "lng": 9.1585362
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gundelsheim-d94e790c0f",
+      "city": "gundelsheim",
+      "label": "Eisenbahnstraße",
+      "street": "Eisenbahnstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gundelsheim",
+      "spotCount": 3,
+      "lat": 49.282320350000006,
+      "lng": 9.1583687,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1331894429), ODbL"
+    },
+    {
+      "id": "gundelsheim-22427467be",
+      "city": "gundelsheim",
+      "label": "Eisenbahnstraße 23",
+      "street": "Eisenbahnstraße",
+      "houseNumber": "23",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Gundelsheim",
+      "spotCount": 3,
+      "lat": 49.2820148,
+      "lng": 9.1585362,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/482729375), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "dobitschen",
+    "name": "Dobitschen",
+    "center": {
+      "lat": 50.95537970000001,
+      "lng": 12.280175550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dobitschen-f942e3599d",
+      "city": "dobitschen",
+      "label": "Am Wasserschloss 8",
+      "street": "Am Wasserschloss",
+      "houseNumber": "8",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dobitschen",
+      "spotCount": 1,
+      "lat": 50.95537970000001,
+      "lng": 12.280175550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1467543991), ODbL"
+    }
+  ]
+}

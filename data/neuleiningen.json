@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "neuleiningen",
+    "name": "Neuleiningen",
+    "center": {
+      "lat": 49.54263865,
+      "lng": 8.14050935
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuleiningen-b4e2faad77",
+      "city": "neuleiningen",
+      "label": "Burgparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuleiningen",
+      "spotCount": 1,
+      "lat": 49.54263865,
+      "lng": 8.14050935,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/86123027), ODbL"
+    }
+  ]
+}

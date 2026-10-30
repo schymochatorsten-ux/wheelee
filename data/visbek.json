@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "visbek",
+    "name": "Visbek",
+    "center": {
+      "lat": 52.859913000000006,
+      "lng": 8.3040378
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "visbek-21f5ff80e4",
+      "city": "visbek",
+      "label": "Siedenbögen",
+      "street": "Siedenbögen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Visbek",
+      "spotCount": 2,
+      "lat": 52.859913000000006,
+      "lng": 8.3040378,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/239910789), ODbL"
+    }
+  ]
+}

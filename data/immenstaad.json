@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "immenstaad",
+    "name": "Immenstaad am Bodensee",
+    "center": {
+      "lat": 47.661346200000004,
+      "lng": 9.3560987
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "immenstaad-99a9621e35",
+      "city": "immenstaad",
+      "label": "Kupferbergstraße",
+      "street": "Kupferbergstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Immenstaad am Bodensee",
+      "spotCount": 8,
+      "lat": 47.671395350000004,
+      "lng": 9.350387900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1396204775), ODbL"
+    },
+    {
+      "id": "immenstaad-a3a02e7020",
+      "city": "immenstaad",
+      "label": "Seestraße West",
+      "street": "Seestraße West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Immenstaad am Bodensee",
+      "spotCount": 5,
+      "lat": 47.661345000000004,
+      "lng": 9.3560987,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25543885), ODbL"
+    },
+    {
+      "id": "immenstaad-7bb38f62c1",
+      "city": "immenstaad",
+      "label": "Seestraße West",
+      "street": "Seestraße West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Immenstaad am Bodensee",
+      "spotCount": 1,
+      "lat": 47.66123815,
+      "lng": 9.355916450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1352930664), ODbL"
+    },
+    {
+      "id": "immenstaad-f0aa7014ce",
+      "city": "immenstaad",
+      "label": "Seestraße West",
+      "street": "Seestraße West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Immenstaad am Bodensee",
+      "spotCount": 1,
+      "lat": 47.66122415,
+      "lng": 9.35586785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1352930665), ODbL"
+    },
+    {
+      "id": "immenstaad-da4e49679c",
+      "city": "immenstaad",
+      "label": "Seestraße West",
+      "street": "Seestraße West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Immenstaad am Bodensee",
+      "spotCount": 1,
+      "lat": 47.661346200000004,
+      "lng": 9.35633265,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1352956722), ODbL"
+    },
+    {
+      "id": "immenstaad-f773447a27",
+      "city": "immenstaad",
+      "label": "Seestraße West",
+      "street": "Seestraße West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Immenstaad am Bodensee",
+      "spotCount": 1,
+      "lat": 47.6613567,
+      "lng": 9.3563725,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1352956735), ODbL"
+    },
+    {
+      "id": "immenstaad-ddd6dc3345",
+      "city": "immenstaad",
+      "label": "Seestraße West",
+      "street": "Seestraße West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Immenstaad am Bodensee",
+      "spotCount": 1,
+      "lat": 47.66139805,
+      "lng": 9.356348650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1352956736), ODbL"
+    }
+  ]
+}

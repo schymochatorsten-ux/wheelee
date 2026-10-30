@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "poecking",
+    "name": "Pöcking",
+    "center": {
+      "lat": 47.962551250000004,
+      "lng": 11.306924850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "poecking-928be5b87f",
+      "city": "poecking",
+      "label": "Königinstraße",
+      "street": "Königinstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pöcking",
+      "spotCount": 4,
+      "lat": 47.94906145,
+      "lng": 11.306924850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/889320739), ODbL"
+    },
+    {
+      "id": "poecking-d4b4b52069",
+      "city": "poecking",
+      "label": "Paradiesparkplatz",
+      "street": "Paradiesparkplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pöcking",
+      "spotCount": 2,
+      "lat": 47.96634605,
+      "lng": 11.32146655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1081886933), ODbL"
+    },
+    {
+      "id": "poecking-83c5628037",
+      "city": "poecking",
+      "label": "Schafflergraben",
+      "street": "Schafflergraben",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pöcking",
+      "spotCount": 1,
+      "lat": 47.962551250000004,
+      "lng": 11.306718100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/495223196), ODbL"
+    }
+  ]
+}

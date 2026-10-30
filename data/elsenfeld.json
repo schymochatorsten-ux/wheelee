@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "elsenfeld",
+    "name": "Elsenfeld",
+    "center": {
+      "lat": 49.84171055,
+      "lng": 9.1608065
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "elsenfeld-a4065073ed",
+      "city": "elsenfeld",
+      "label": "Bahnhofstraße 25",
+      "street": "Bahnhofstraße",
+      "houseNumber": "25",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elsenfeld",
+      "spotCount": 1,
+      "lat": 49.84171055,
+      "lng": 9.1551592,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24564458), ODbL"
+    },
+    {
+      "id": "elsenfeld-6b0e50ae9e",
+      "city": "elsenfeld",
+      "label": "Dammsfeldstraße",
+      "street": "Dammsfeldstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Elsenfeld",
+      "spotCount": 1,
+      "lat": 49.8346491,
+      "lng": 9.1652243,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1009052894), ODbL"
+    },
+    {
+      "id": "elsenfeld-41aa1d2d1c",
+      "city": "elsenfeld",
+      "label": "Knabenweg",
+      "street": "Knabenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elsenfeld",
+      "spotCount": 1,
+      "lat": 49.84718285,
+      "lng": 9.1608065,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32145291), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "nussdorf-a-inn",
+    "name": "Nußdorf a.Inn",
+    "center": {
+      "lat": 47.7347276,
+      "lng": 12.1579816
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nussdorf-a-inn-1d1a684ddf",
+      "city": "nussdorf-a-inn",
+      "label": "Schwimmbad",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nußdorf a.Inn",
+      "spotCount": 1,
+      "lat": 47.7347276,
+      "lng": 12.1579816,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/317412304), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schoepstal",
+    "name": "Schöpstal",
+    "center": {
+      "lat": 51.184552700000005,
+      "lng": 14.9607694
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schoepstal-e76210ec60",
+      "city": "schoepstal",
+      "label": "Gottlieb-Daimler-Straße",
+      "street": "Gottlieb-Daimler-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schöpstal",
+      "spotCount": 1,
+      "lat": 51.184552700000005,
+      "lng": 14.9607694,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1116783684), ODbL"
+    }
+  ]
+}

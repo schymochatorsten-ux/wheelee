@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "boettingen",
+    "name": "Böttingen",
+    "center": {
+      "lat": 48.09952235,
+      "lng": 8.8039617
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "boettingen-14bf1084a0",
+      "city": "boettingen",
+      "label": "Hauptstraße 36",
+      "street": "Hauptstraße",
+      "houseNumber": "36",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Böttingen",
+      "spotCount": 6,
+      "lat": 48.09952235,
+      "lng": 8.8039617,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/913802883), ODbL"
+    }
+  ]
+}

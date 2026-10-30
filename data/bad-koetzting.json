@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bad-koetzting",
+    "name": "Bad Kötzting",
+    "center": {
+      "lat": 49.1754684,
+      "lng": 12.8612113
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-koetzting-a10a223cd8",
+      "city": "bad-koetzting",
+      "label": "Bahnhofstraße 19",
+      "street": "Bahnhofstraße",
+      "houseNumber": "19",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Kötzting",
+      "spotCount": 3,
+      "lat": 49.17318615000001,
+      "lng": 12.85247515,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/447366311), ODbL"
+    },
+    {
+      "id": "bad-koetzting-b26c6c4e00",
+      "city": "bad-koetzting",
+      "label": "Lamer Straße",
+      "street": "Lamer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Kötzting",
+      "spotCount": 4,
+      "lat": 49.1754684,
+      "lng": 12.8612113,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/90709416), ODbL"
+    }
+  ]
+}

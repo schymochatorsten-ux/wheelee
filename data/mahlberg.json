@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "mahlberg",
+    "name": "Mahlberg",
+    "center": {
+      "lat": 48.2738162,
+      "lng": 7.789825250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mahlberg-fe2eae9079",
+      "city": "mahlberg",
+      "label": "Alte Landstraße",
+      "street": "Alte Landstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mahlberg",
+      "spotCount": 1,
+      "lat": 48.27312690000001,
+      "lng": 7.789353650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/204133296), ODbL"
+    },
+    {
+      "id": "mahlberg-b420553bc5",
+      "city": "mahlberg",
+      "label": "Alte Landstraße",
+      "street": "Alte Landstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Mahlberg",
+      "spotCount": 2,
+      "lat": 48.2738162,
+      "lng": 7.789825250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1411472292), ODbL"
+    },
+    {
+      "id": "mahlberg-75067e86a5",
+      "city": "mahlberg",
+      "label": "Alte Landstraße 3",
+      "street": "Alte Landstraße",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Mahlberg",
+      "spotCount": 1,
+      "lat": 48.273311400000004,
+      "lng": 7.789418900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1411473466), ODbL"
+    },
+    {
+      "id": "mahlberg-3dbafafc38",
+      "city": "mahlberg",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mahlberg",
+      "spotCount": 2,
+      "lat": 48.2742039,
+      "lng": 7.7900203,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/48624926), ODbL"
+    },
+    {
+      "id": "mahlberg-e772f0fe82",
+      "city": "mahlberg",
+      "label": "Bahnhofstraße 46",
+      "street": "Bahnhofstraße",
+      "houseNumber": "46",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Mahlberg",
+      "spotCount": 3,
+      "lat": 48.27434665,
+      "lng": 7.790572000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1396514422), ODbL"
+    }
+  ]
+}

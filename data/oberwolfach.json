@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "oberwolfach",
+    "name": "Oberwolfach",
+    "center": {
+      "lat": 48.345945400000005,
+      "lng": 8.2364452
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberwolfach-2ae8f4b72d",
+      "city": "oberwolfach",
+      "label": "Behindertenparkplatz Oberwolfach",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberwolfach",
+      "spotCount": 1,
+      "lat": 48.345945400000005,
+      "lng": 8.2364452,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/963180596), ODbL"
+    }
+  ]
+}

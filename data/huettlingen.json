@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "huettlingen",
+    "name": "Hüttlingen",
+    "center": {
+      "lat": 48.893392950000006,
+      "lng": 10.098649400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "huettlingen-61eac6918c",
+      "city": "huettlingen",
+      "label": "Im Sonnendorf",
+      "street": "Im Sonnendorf",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hüttlingen",
+      "spotCount": 2,
+      "lat": 48.893392950000006,
+      "lng": 10.090308100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/266369170), ODbL"
+    },
+    {
+      "id": "huettlingen-e365293310",
+      "city": "huettlingen",
+      "label": "Parkplatz Edeka",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hüttlingen",
+      "spotCount": 1,
+      "lat": 48.888725400000006,
+      "lng": 10.0988336,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/522518749), ODbL"
+    },
+    {
+      "id": "huettlingen-03b06ad02f",
+      "city": "huettlingen",
+      "label": "Sulzdorfer Straße",
+      "street": "Sulzdorfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hüttlingen",
+      "spotCount": 1,
+      "lat": 48.89542335,
+      "lng": 10.098649400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/42713483), ODbL"
+    }
+  ]
+}

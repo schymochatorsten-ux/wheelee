@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "niederwiesa",
+    "name": "Niederwiesa",
+    "center": {
+      "lat": 50.88385,
+      "lng": 13.017851150000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "niederwiesa-e3911e7f37",
+      "city": "niederwiesa",
+      "label": "P4",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Niederwiesa",
+      "spotCount": 1,
+      "lat": 50.88385,
+      "lng": 13.0083704,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/336993599), ODbL"
+    },
+    {
+      "id": "niederwiesa-fd4fa07260",
+      "city": "niederwiesa",
+      "label": "Talstraße",
+      "street": "Talstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Niederwiesa",
+      "spotCount": 1,
+      "lat": 50.863834350000005,
+      "lng": 13.017851150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/310804710), ODbL"
+    }
+  ]
+}

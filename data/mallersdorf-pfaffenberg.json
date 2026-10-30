@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "mallersdorf-pfaffenberg",
+    "name": "Mallersdorf-Pfaffenberg",
+    "center": {
+      "lat": 48.76252035,
+      "lng": 12.237384550000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mallersdorf-pfaffenberg-68b4e49705",
+      "city": "mallersdorf-pfaffenberg",
+      "label": "Westen",
+      "street": "Westen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mallersdorf-Pfaffenberg",
+      "spotCount": 1,
+      "lat": 48.76252035,
+      "lng": 12.237384550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/448108294), ODbL"
+    }
+  ]
+}

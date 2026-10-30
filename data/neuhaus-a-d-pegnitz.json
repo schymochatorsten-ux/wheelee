@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "neuhaus-a-d-pegnitz",
+    "name": "Neuhaus a.d.Pegnitz",
+    "center": {
+      "lat": 49.628595000000004,
+      "lng": 11.55230495
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuhaus-a-d-pegnitz-5909ce6406",
+      "city": "neuhaus-a-d-pegnitz",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuhaus a.d.Pegnitz",
+      "spotCount": 1,
+      "lat": 49.628595000000004,
+      "lng": 11.55230495,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/43199964), ODbL"
+    },
+    {
+      "id": "neuhaus-a-d-pegnitz-37107dcbbd",
+      "city": "neuhaus-a-d-pegnitz",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuhaus a.d.Pegnitz",
+      "spotCount": 1,
+      "lat": 49.62618495,
+      "lng": 11.55093385,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/411156209), ODbL"
+    }
+  ]
+}

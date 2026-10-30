@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "schwebheim",
+    "name": "Schwebheim",
+    "center": {
+      "lat": 49.9985236,
+      "lng": 10.250544300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schwebheim-c8b52a7b19",
+      "city": "schwebheim",
+      "label": "Gochsheimer Weg",
+      "street": "Gochsheimer Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwebheim",
+      "spotCount": 2,
+      "lat": 49.9952107,
+      "lng": 10.246990700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/92339582), ODbL"
+    },
+    {
+      "id": "schwebheim-ee40626bbf",
+      "city": "schwebheim",
+      "label": "Hermann-Löns-Straße",
+      "street": "Hermann-Löns-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Schwebheim",
+      "spotCount": 2,
+      "lat": 49.99943295,
+      "lng": 10.2481693,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/931122890), ODbL"
+    },
+    {
+      "id": "schwebheim-49914214db",
+      "city": "schwebheim",
+      "label": "Pfefferminzweg 2",
+      "street": "Pfefferminzweg",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Schwebheim",
+      "spotCount": 2,
+      "lat": 49.988393450000004,
+      "lng": 10.250544300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/928362894), ODbL"
+    },
+    {
+      "id": "schwebheim-29efb00d09",
+      "city": "schwebheim",
+      "label": "Schulstraße",
+      "street": "Schulstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwebheim",
+      "spotCount": 1,
+      "lat": 49.9985236,
+      "lng": 10.25057825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/93133527), ODbL"
+    }
+  ]
+}

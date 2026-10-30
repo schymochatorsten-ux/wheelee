@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "fichtenberg",
+    "name": "Fichtenberg",
+    "center": {
+      "lat": 48.987753,
+      "lng": 9.701137450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "fichtenberg-682d9af63b",
+      "city": "fichtenberg",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Fichtenberg",
+      "spotCount": 1,
+      "lat": 48.987753,
+      "lng": 9.701137450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1251615054), ODbL"
+    },
+    {
+      "id": "fichtenberg-d33d1b6f1e",
+      "city": "fichtenberg",
+      "label": "Bahnhofstraße 33",
+      "street": "Bahnhofstraße",
+      "houseNumber": "33",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Fichtenberg",
+      "spotCount": 1,
+      "lat": 48.98767255,
+      "lng": 9.70081135,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/52189448), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "borstel-hohenraden",
+    "name": "Borstel-Hohenraden",
+    "center": {
+      "lat": 53.6918651,
+      "lng": 9.81009885
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "borstel-hohenraden-a130037931",
+      "city": "borstel-hohenraden",
+      "label": "Grotenkamp 4",
+      "street": "Grotenkamp",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Borstel-Hohenraden",
+      "spotCount": 4,
+      "lat": 53.6918651,
+      "lng": 9.81009885,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/946168812), ODbL"
+    }
+  ]
+}

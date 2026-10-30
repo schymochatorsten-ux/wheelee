@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "reipoltskirchen",
+    "name": "Reipoltskirchen",
+    "center": {
+      "lat": 49.634894200000005,
+      "lng": 7.6631659
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "reipoltskirchen-b966536af0",
+      "city": "reipoltskirchen",
+      "label": "Mühlstraße",
+      "street": "Mühlstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Reipoltskirchen",
+      "spotCount": 1,
+      "lat": 49.634894200000005,
+      "lng": 7.6631659,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13063711771), ODbL"
+    }
+  ]
+}

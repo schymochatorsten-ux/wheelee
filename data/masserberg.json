@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "masserberg",
+    "name": "Masserberg",
+    "center": {
+      "lat": 50.5020047,
+      "lng": 10.9436009
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "masserberg-904e596c87",
+      "city": "masserberg",
+      "label": "August-Bebel-Straße",
+      "street": "August-Bebel-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Masserberg",
+      "spotCount": 1,
+      "lat": 50.5020047,
+      "lng": 10.9436009,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12250750475), ODbL"
+    }
+  ]
+}

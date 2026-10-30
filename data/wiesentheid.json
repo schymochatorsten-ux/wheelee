@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wiesentheid",
+    "name": "Wiesentheid",
+    "center": {
+      "lat": 49.78566765000001,
+      "lng": 10.341200100000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wiesentheid-6ea7bef58c",
+      "city": "wiesentheid",
+      "label": "Rüdenhausener Straße",
+      "street": "Rüdenhausener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wiesentheid",
+      "spotCount": 1,
+      "lat": 49.78566765000001,
+      "lng": 10.341200100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/307629673), ODbL"
+    }
+  ]
+}

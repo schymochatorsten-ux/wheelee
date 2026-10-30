@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bardowick",
+    "name": "Bardowick",
+    "center": {
+      "lat": 53.30097785,
+      "lng": 10.390312400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bardowick-f4f1367471",
+      "city": "bardowick",
+      "label": "Hamburger Landstraße",
+      "street": "Hamburger Landstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bardowick",
+      "spotCount": 2,
+      "lat": 53.285263650000005,
+      "lng": 10.39376685,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/98000093), ODbL"
+    },
+    {
+      "id": "bardowick-bb551d73bf",
+      "city": "bardowick",
+      "label": "Kuhstraße",
+      "street": "Kuhstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bardowick",
+      "spotCount": 3,
+      "lat": 53.30097785,
+      "lng": 10.38987505,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1111056887), ODbL"
+    },
+    {
+      "id": "bardowick-b0062cd591",
+      "city": "bardowick",
+      "label": "Kuhstraße 1",
+      "street": "Kuhstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bardowick",
+      "spotCount": 1,
+      "lat": 53.301023400000005,
+      "lng": 10.390312400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1111056885), ODbL"
+    }
+  ]
+}

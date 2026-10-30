@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "handeloh",
+    "name": "Handeloh",
+    "center": {
+      "lat": 53.269280200000004,
+      "lng": 9.8538949
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "handeloh-92381fe821",
+      "city": "handeloh",
+      "label": "Am Büsenbach",
+      "street": "Am Büsenbach",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Handeloh",
+      "spotCount": 1,
+      "lat": 53.269280200000004,
+      "lng": 9.8538949,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1547048899), ODbL"
+    }
+  ]
+}

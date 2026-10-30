@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hohenkirchen",
+    "name": "Hohenkirchen",
+    "center": {
+      "lat": 53.94097545,
+      "lng": 11.31702065
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hohenkirchen-f3112803bd",
+      "city": "hohenkirchen",
+      "label": "Campingplatz",
+      "street": "Campingplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Hohenkirchen",
+      "spotCount": 2,
+      "lat": 53.94097545,
+      "lng": 11.31702065,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/33591973), ODbL"
+    }
+  ]
+}

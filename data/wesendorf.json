@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wesendorf",
+    "name": "Wesendorf",
+    "center": {
+      "lat": 52.59294335,
+      "lng": 10.537876800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wesendorf-cae6aa60a6",
+      "city": "wesendorf",
+      "label": "Wittinger Straße",
+      "street": "Wittinger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wesendorf",
+      "spotCount": 1,
+      "lat": 52.59294335,
+      "lng": 10.537876800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/210545229), ODbL"
+    }
+  ]
+}

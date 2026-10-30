@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wallersdorf",
+    "name": "Wallersdorf",
+    "center": {
+      "lat": 48.7411781,
+      "lng": 12.74506625
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wallersdorf-4616ef5899",
+      "city": "wallersdorf",
+      "label": "Lagerhausstraße",
+      "street": "Lagerhausstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wallersdorf",
+      "spotCount": 1,
+      "lat": 48.7411781,
+      "lng": 12.74506625,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/476282769), ODbL"
+    }
+  ]
+}

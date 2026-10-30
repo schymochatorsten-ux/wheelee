@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "gosen-neu-zittau",
+    "name": "Gosen-Neu Zittau",
+    "center": {
+      "lat": 52.39447055000001,
+      "lng": 13.712344750000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gosen-neu-zittau-ba68def8d2",
+      "city": "gosen-neu-zittau",
+      "label": "Köpenicker Straße",
+      "street": "Köpenicker Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gosen-Neu Zittau",
+      "spotCount": 2,
+      "lat": 52.39447055000001,
+      "lng": 13.712344750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/435760681), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "owen",
+    "name": "Owen",
+    "center": {
+      "lat": 48.585843700000005,
+      "lng": 9.452416600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "owen-b47eef00d1",
+      "city": "owen",
+      "label": "Gartenstraße 16",
+      "street": "Gartenstraße",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Owen",
+      "spotCount": 1,
+      "lat": 48.585843700000005,
+      "lng": 9.452416600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12386876702), ODbL"
+    }
+  ]
+}

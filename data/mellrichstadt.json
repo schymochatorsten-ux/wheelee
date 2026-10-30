@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "mellrichstadt",
+    "name": "Mellrichstadt",
+    "center": {
+      "lat": 50.425850450000006,
+      "lng": 10.318747700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mellrichstadt-2c38e4b6cc",
+      "city": "mellrichstadt",
+      "label": "Dreifachturnhalle",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mellrichstadt",
+      "spotCount": 1,
+      "lat": 50.429689100000004,
+      "lng": 10.318747700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/507136742), ODbL"
+    },
+    {
+      "id": "mellrichstadt-fd1530b6fd",
+      "city": "mellrichstadt",
+      "label": "Parkplatz Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mellrichstadt",
+      "spotCount": 2,
+      "lat": 50.425850450000006,
+      "lng": 10.307427,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/180782282), ODbL"
+    },
+    {
+      "id": "mellrichstadt-b1d23f2a32",
+      "city": "mellrichstadt",
+      "label": "Raststätte Mellrichstädter Höhe Ost",
+      "street": "Raststätte Mellrichstädter Höhe Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mellrichstadt",
+      "spotCount": 2,
+      "lat": 50.4213335,
+      "lng": 10.350281,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/270090236), ODbL"
+    }
+  ]
+}

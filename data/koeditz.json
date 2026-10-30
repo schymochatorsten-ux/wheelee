@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "koeditz",
+    "name": "Köditz",
+    "center": {
+      "lat": 50.3716223,
+      "lng": 11.83733085
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "koeditz-9614f32506",
+      "city": "koeditz",
+      "label": "Hirschberger Straße",
+      "street": "Hirschberger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Köditz",
+      "spotCount": 1,
+      "lat": 50.3716223,
+      "lng": 11.83733085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/943981934), ODbL"
+    }
+  ]
+}

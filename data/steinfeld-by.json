@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "steinfeld-by",
+    "name": "Steinfeld",
+    "center": {
+      "lat": 49.957694350000004,
+      "lng": 9.6655297
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "steinfeld-by-c70712af9d",
+      "city": "steinfeld-by",
+      "label": "In der Strüth",
+      "street": "In der Strüth",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Steinfeld",
+      "spotCount": 1,
+      "lat": 49.957540200000004,
+      "lng": 9.6655297,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1050794372), ODbL"
+    },
+    {
+      "id": "steinfeld-by-efcf4ef87e",
+      "city": "steinfeld-by",
+      "label": "In der Strüth 2",
+      "street": "In der Strüth",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Steinfeld",
+      "spotCount": 3,
+      "lat": 49.957694350000004,
+      "lng": 9.665297900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1050768164), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "inzell",
+    "name": "Inzell",
+    "center": {
+      "lat": 47.7661687,
+      "lng": 12.751417550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "inzell-9f723d32aa",
+      "city": "inzell",
+      "label": "Fritz-Gastager-Straße 15",
+      "street": "Fritz-Gastager-Straße",
+      "houseNumber": "15",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Inzell",
+      "spotCount": 8,
+      "lat": 47.76136050000001,
+      "lng": 12.7485374,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/830321575), ODbL"
+    },
+    {
+      "id": "inzell-7b06d92123",
+      "city": "inzell",
+      "label": "P 3",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Inzell",
+      "spotCount": 1,
+      "lat": 47.7661687,
+      "lng": 12.751417550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29897920), ODbL"
+    }
+  ]
+}

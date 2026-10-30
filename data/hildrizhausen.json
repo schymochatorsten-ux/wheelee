@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hildrizhausen",
+    "name": "Hildrizhausen",
+    "center": {
+      "lat": 48.624994,
+      "lng": 8.9776767
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hildrizhausen-96b3617b06",
+      "city": "hildrizhausen",
+      "label": "Im Sommerfeld 2",
+      "street": "Im Sommerfeld",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hildrizhausen",
+      "spotCount": 2,
+      "lat": 48.621983,
+      "lng": 8.9726765,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1188806519), ODbL"
+    },
+    {
+      "id": "hildrizhausen-22cc87e8c5",
+      "city": "hildrizhausen",
+      "label": "Parkplatz Schönbuchstraße",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hildrizhausen",
+      "spotCount": 1,
+      "lat": 48.624994,
+      "lng": 8.9776767,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/626158250), ODbL"
+    }
+  ]
+}

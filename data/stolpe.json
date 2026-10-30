@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "stolpe",
+    "name": "Stolpe",
+    "center": {
+      "lat": 54.139618350000006,
+      "lng": 10.21133265
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "stolpe-bf2e08b573",
+      "city": "stolpe",
+      "label": "Depenauer Moor",
+      "street": "Depenauer Moor",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stolpe",
+      "spotCount": 2,
+      "lat": 54.139618350000006,
+      "lng": 10.2112341,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/495051725), ODbL"
+    },
+    {
+      "id": "stolpe-492b301ed5",
+      "city": "stolpe",
+      "label": "Depenauer Moor",
+      "street": "Depenauer Moor",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Stolpe",
+      "spotCount": 1,
+      "lat": 54.13955395000001,
+      "lng": 10.21133265,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1169785169), ODbL"
+    }
+  ]
+}

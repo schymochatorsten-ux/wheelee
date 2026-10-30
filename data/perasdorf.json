@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "perasdorf",
+    "name": "Perasdorf",
+    "center": {
+      "lat": 48.966351800000005,
+      "lng": 12.83565655
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "perasdorf-3d36d9e587",
+      "city": "perasdorf",
+      "label": "Behindertenparkplatz Perasdorf",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Perasdorf",
+      "spotCount": 2,
+      "lat": 48.966351800000005,
+      "lng": 12.83565655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/132513929), ODbL"
+    }
+  ]
+}

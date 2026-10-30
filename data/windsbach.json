@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "windsbach",
+    "name": "Windsbach",
+    "center": {
+      "lat": 49.24713105,
+      "lng": 10.8296901
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "windsbach-b64ee96cbc",
+      "city": "windsbach",
+      "label": "Am Stadtgraben",
+      "street": "Am Stadtgraben",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Windsbach",
+      "spotCount": 2,
+      "lat": 49.24713105,
+      "lng": 10.8296901,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/448040628), ODbL"
+    }
+  ]
+}

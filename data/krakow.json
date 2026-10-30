@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "krakow",
+    "name": "Krakow am See",
+    "center": {
+      "lat": 53.6584979,
+      "lng": 12.2747031
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "krakow-6f6851362a",
+      "city": "krakow",
+      "label": "Güstrower Chaussee",
+      "street": "Güstrower Chaussee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Krakow am See",
+      "spotCount": 1,
+      "lat": 53.65225755,
+      "lng": 12.2667946,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26819655), ODbL"
+    },
+    {
+      "id": "krakow-14b8a2ccb5",
+      "city": "krakow",
+      "label": "Jörnbergweg 23",
+      "street": "Jörnbergweg",
+      "houseNumber": "23",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Krakow am See",
+      "spotCount": 3,
+      "lat": 53.6584979,
+      "lng": 12.2747031,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9461421037), ODbL"
+    }
+  ]
+}

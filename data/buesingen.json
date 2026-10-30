@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "buesingen",
+    "name": "Büsingen am Hochrhein",
+    "center": {
+      "lat": 47.696763250000004,
+      "lng": 8.69688725
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "buesingen-50a7240e6a",
+      "city": "buesingen",
+      "label": "Am Äckerle",
+      "street": "Am Äckerle",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Büsingen am Hochrhein",
+      "spotCount": 1,
+      "lat": 47.696763250000004,
+      "lng": 8.68729905,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34070375), ODbL"
+    },
+    {
+      "id": "buesingen-881b1cf7f7",
+      "city": "buesingen",
+      "label": "Strandbad",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Büsingen am Hochrhein",
+      "spotCount": 1,
+      "lat": 47.6951505,
+      "lng": 8.69688725,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34070374), ODbL"
+    }
+  ]
+}

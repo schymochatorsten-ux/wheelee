@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ebstorf",
+    "name": "Ebstorf",
+    "center": {
+      "lat": 53.0340314,
+      "lng": 10.411511650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ebstorf-928ef189e2",
+      "city": "ebstorf",
+      "label": "waldemar",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ebstorf",
+      "spotCount": 1,
+      "lat": 53.0340314,
+      "lng": 10.411511650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/228994507), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "brahlstorf",
+    "name": "Brahlstorf",
+    "center": {
+      "lat": 53.3639271,
+      "lng": 10.952815650000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "brahlstorf-8b88c7550f",
+      "city": "brahlstorf",
+      "label": "Ladestraße",
+      "street": "Ladestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brahlstorf",
+      "spotCount": 2,
+      "lat": 53.3639271,
+      "lng": 10.952815650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/236471971), ODbL"
+    }
+  ]
+}

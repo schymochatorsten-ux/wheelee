@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "uffenheim",
+    "name": "Uffenheim",
+    "center": {
+      "lat": 49.5441103,
+      "lng": 10.231623500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "uffenheim-f55aa6ecb8",
+      "city": "uffenheim",
+      "label": "Am Buchholz",
+      "street": "Am Buchholz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Uffenheim",
+      "spotCount": 3,
+      "lat": 49.50920375,
+      "lng": 10.195794900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1370500205), ODbL"
+    },
+    {
+      "id": "uffenheim-fb6470b024",
+      "city": "uffenheim",
+      "label": "Freibadparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Uffenheim",
+      "spotCount": 1,
+      "lat": 49.5441103,
+      "lng": 10.2245273,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/368012789), ODbL"
+    },
+    {
+      "id": "uffenheim-411296f554",
+      "city": "uffenheim",
+      "label": "Karl-Arnold-Straße 7",
+      "street": "Karl-Arnold-Straße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Uffenheim",
+      "spotCount": 2,
+      "lat": 49.5450869,
+      "lng": 10.231623500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/430242532), ODbL"
+    },
+    {
+      "id": "uffenheim-299bdc4894",
+      "city": "uffenheim",
+      "label": "Uffenheim Bahnhof",
+      "street": "Uffenheim Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Uffenheim",
+      "spotCount": 2,
+      "lat": 49.5512615,
+      "lng": 10.24230515,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/455459480), ODbL"
+    },
+    {
+      "id": "uffenheim-548a64e432",
+      "city": "uffenheim",
+      "label": "Welbhauser Straße",
+      "street": "Welbhauser Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Uffenheim",
+      "spotCount": 2,
+      "lat": 49.540739200000004,
+      "lng": 10.242392800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/360492237), ODbL"
+    }
+  ]
+}

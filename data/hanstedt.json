@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "hanstedt",
+    "name": "Hanstedt",
+    "center": {
+      "lat": 53.26272455,
+      "lng": 10.017077400000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hanstedt-e80fe0ec91",
+      "city": "hanstedt",
+      "label": "Altes Sägewerk",
+      "street": "Altes Sägewerk",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hanstedt",
+      "spotCount": 2,
+      "lat": 53.2628395,
+      "lng": 10.01020285,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/613349823), ODbL"
+    },
+    {
+      "id": "hanstedt-fbdee5db17",
+      "city": "hanstedt",
+      "label": "An den Wiesen",
+      "street": "An den Wiesen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hanstedt",
+      "spotCount": 1,
+      "lat": 53.26272455,
+      "lng": 10.00961795,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1206437807), ODbL"
+    },
+    {
+      "id": "hanstedt-dd8db226b9",
+      "city": "hanstedt",
+      "label": "Wildpark",
+      "street": "Wildpark",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hanstedt",
+      "spotCount": 1,
+      "lat": 53.23682215,
+      "lng": 10.05292205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/828485095), ODbL"
+    },
+    {
+      "id": "hanstedt-82cb594e50",
+      "city": "hanstedt",
+      "label": "Winsener Straße",
+      "street": "Winsener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hanstedt",
+      "spotCount": 2,
+      "lat": 53.25773905,
+      "lng": 10.017077400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/613349821), ODbL"
+    }
+  ]
+}

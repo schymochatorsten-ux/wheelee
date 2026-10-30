@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "medebach",
+    "name": "Medebach",
+    "center": {
+      "lat": 51.2089167,
+      "lng": 8.6922712
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "medebach-ffc8f81436",
+      "city": "medebach",
+      "label": "Schulstraße",
+      "street": "Schulstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Medebach",
+      "spotCount": 2,
+      "lat": 51.1971472,
+      "lng": 8.7063757,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/925500921), ODbL"
+    },
+    {
+      "id": "medebach-70ce6e6e23",
+      "city": "medebach",
+      "label": "Sonnenallee 307",
+      "street": "Sonnenallee",
+      "houseNumber": "307",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Medebach",
+      "spotCount": 3,
+      "lat": 51.2089167,
+      "lng": 8.6922712,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/281177222), ODbL"
+    },
+    {
+      "id": "medebach-ba1710e783",
+      "city": "medebach",
+      "label": "Sonnenallee 318",
+      "street": "Sonnenallee",
+      "houseNumber": "318",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Medebach",
+      "spotCount": 2,
+      "lat": 51.20918065000001,
+      "lng": 8.691880350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/281177221), ODbL"
+    }
+  ]
+}

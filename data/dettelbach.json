@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "dettelbach",
+    "name": "Dettelbach",
+    "center": {
+      "lat": 49.801690300000004,
+      "lng": 10.1604817
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dettelbach-72e583388e",
+      "city": "dettelbach",
+      "label": "Dettelbach Bahnhof",
+      "street": "Dettelbach Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dettelbach",
+      "spotCount": 4,
+      "lat": 49.7880606,
+      "lng": 10.09091025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/334139899), ODbL"
+    },
+    {
+      "id": "dettelbach-9bd084f79c",
+      "city": "dettelbach",
+      "label": "Häfner Markt 4",
+      "street": "Häfner Markt",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dettelbach",
+      "spotCount": 1,
+      "lat": 49.801690300000004,
+      "lng": 10.1604817,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1457866678), ODbL"
+    }
+  ]
+}

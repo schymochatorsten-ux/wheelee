@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "boebingen",
+    "name": "Böbingen an der Rems",
+    "center": {
+      "lat": 48.822318800000005,
+      "lng": 9.91333275
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "boebingen-11186a9460",
+      "city": "boebingen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Böbingen an der Rems",
+      "spotCount": 3,
+      "lat": 48.82227305000001,
+      "lng": 9.913776550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/244628962), ODbL"
+    },
+    {
+      "id": "boebingen-cb4c9580d7",
+      "city": "boebingen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Böbingen an der Rems",
+      "spotCount": 1,
+      "lat": 48.8223198,
+      "lng": 9.913382250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1251649136), ODbL"
+    },
+    {
+      "id": "boebingen-4df28a3ea9",
+      "city": "boebingen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Böbingen an der Rems",
+      "spotCount": 1,
+      "lat": 48.822319300000004,
+      "lng": 9.91333275,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1251649137), ODbL"
+    },
+    {
+      "id": "boebingen-1549cf66a6",
+      "city": "boebingen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Böbingen an der Rems",
+      "spotCount": 1,
+      "lat": 48.822318800000005,
+      "lng": 9.913283250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1251649138), ODbL"
+    },
+    {
+      "id": "boebingen-47e2114a14",
+      "city": "boebingen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Böbingen an der Rems",
+      "spotCount": 1,
+      "lat": 48.82218275,
+      "lng": 9.9132362,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1386295841), ODbL"
+    }
+  ]
+}

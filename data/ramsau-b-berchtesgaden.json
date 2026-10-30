@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ramsau-b-berchtesgaden",
+    "name": "Ramsau b.Berchtesgaden",
+    "center": {
+      "lat": 47.607834000000004,
+      "lng": 12.8979402
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ramsau-b-berchtesgaden-8e45f28e2f",
+      "city": "ramsau-b-berchtesgaden",
+      "label": "Im Tal 64",
+      "street": "Im Tal",
+      "houseNumber": "64",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ramsau b.Berchtesgaden",
+      "spotCount": 3,
+      "lat": 47.607834000000004,
+      "lng": 12.8979402,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1061681191), ODbL"
+    }
+  ]
+}

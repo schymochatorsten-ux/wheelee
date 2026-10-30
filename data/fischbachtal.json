@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "fischbachtal",
+    "name": "Fischbachtal",
+    "center": {
+      "lat": 49.7700495,
+      "lng": 8.81393375
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "fischbachtal-bdc5ad6f85",
+      "city": "fischbachtal",
+      "label": "Darmstädter Straße 48",
+      "street": "Darmstädter Straße",
+      "houseNumber": "48",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Fischbachtal",
+      "spotCount": 1,
+      "lat": 49.773080650000004,
+      "lng": 8.81631885,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/135266508), ODbL"
+    },
+    {
+      "id": "fischbachtal-3991f656f7",
+      "city": "fischbachtal",
+      "label": "Darmstädter Straße 7",
+      "street": "Darmstädter Straße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Fischbachtal",
+      "spotCount": 1,
+      "lat": 49.7700495,
+      "lng": 8.81393375,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/631358999), ODbL"
+    },
+    {
+      "id": "fischbachtal-3754fc95fe",
+      "city": "fischbachtal",
+      "label": "Friedhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Fischbachtal",
+      "spotCount": 1,
+      "lat": 49.768117600000004,
+      "lng": 8.808584100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/631359000), ODbL"
+    }
+  ]
+}

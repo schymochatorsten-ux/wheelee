@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "altbach",
+    "name": "Altbach",
+    "center": {
+      "lat": 48.72079935000001,
+      "lng": 9.382194
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "altbach-af9be6e1ac",
+      "city": "altbach",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Altbach",
+      "spotCount": 1,
+      "lat": 48.72090195,
+      "lng": 9.38241675,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1251979555), ODbL"
+    },
+    {
+      "id": "altbach-aa768b7574",
+      "city": "altbach",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Altbach",
+      "spotCount": 1,
+      "lat": 48.7209366,
+      "lng": 9.382177000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1251979556), ODbL"
+    },
+    {
+      "id": "altbach-773dc98a7c",
+      "city": "altbach",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Altbach",
+      "spotCount": 1,
+      "lat": 48.72071580000001,
+      "lng": 9.382194,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1251979558), ODbL"
+    },
+    {
+      "id": "altbach-5edf8eea28",
+      "city": "altbach",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Altbach",
+      "spotCount": 1,
+      "lat": 48.72072955,
+      "lng": 9.382161100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1251979559), ODbL"
+    },
+    {
+      "id": "altbach-dbf7043325",
+      "city": "altbach",
+      "label": "Parkplatz Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Altbach",
+      "spotCount": 2,
+      "lat": 48.72079935000001,
+      "lng": 9.3821685,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/560389123), ODbL"
+    },
+    {
+      "id": "altbach-6f523f156a",
+      "city": "altbach",
+      "label": "Parkplatz Sporthalle/Gemeindehalle",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Altbach",
+      "spotCount": 1,
+      "lat": 48.72029190000001,
+      "lng": 9.3863281,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/48923408), ODbL"
+    }
+  ]
+}

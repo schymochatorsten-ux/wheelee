@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "eitelborn",
+    "name": "Eitelborn",
+    "center": {
+      "lat": 50.377406050000005,
+      "lng": 7.714511150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eitelborn-e6bfad0a99",
+      "city": "eitelborn",
+      "label": "Lärchenweg 1",
+      "street": "Lärchenweg",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eitelborn",
+      "spotCount": 1,
+      "lat": 50.377406050000005,
+      "lng": 7.714511150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/248108599), ODbL"
+    },
+    {
+      "id": "eitelborn-84a07aa794",
+      "city": "eitelborn",
+      "label": "Lärchenweg 3",
+      "street": "Lärchenweg",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eitelborn",
+      "spotCount": 1,
+      "lat": 50.37737535,
+      "lng": 7.7143742500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1025722758), ODbL"
+    }
+  ]
+}

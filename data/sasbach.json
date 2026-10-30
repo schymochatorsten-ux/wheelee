@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "sasbach",
+    "name": "Sasbach",
+    "center": {
+      "lat": 48.637118900000004,
+      "lng": 8.0915824
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sasbach-c0d456e15c",
+      "city": "sasbach",
+      "label": "Erlenbadstraße 69a",
+      "street": "Erlenbadstraße",
+      "houseNumber": "69a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sasbach",
+      "spotCount": 2,
+      "lat": 48.636352,
+      "lng": 8.1123004,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11749760291), ODbL"
+    },
+    {
+      "id": "sasbach-384a935b92",
+      "city": "sasbach",
+      "label": "Hauptstraße 7b",
+      "street": "Hauptstraße",
+      "houseNumber": "7b",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sasbach",
+      "spotCount": 2,
+      "lat": 48.63723265,
+      "lng": 8.0914248,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/671510801), ODbL"
+    },
+    {
+      "id": "sasbach-7b577af647",
+      "city": "sasbach",
+      "label": "Hauptstraße 7b",
+      "street": "Hauptstraße",
+      "houseNumber": "7b",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sasbach",
+      "spotCount": 1,
+      "lat": 48.637118900000004,
+      "lng": 8.0915824,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1088233294), ODbL"
+    },
+    {
+      "id": "sasbach-98e68d3de4",
+      "city": "sasbach",
+      "label": "Hauptstraße 7b",
+      "street": "Hauptstraße",
+      "houseNumber": "7b",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sasbach",
+      "spotCount": 1,
+      "lat": 48.637090650000005,
+      "lng": 8.091561550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1088233295), ODbL"
+    }
+  ]
+}

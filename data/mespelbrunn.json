@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "mespelbrunn",
+    "name": "Mespelbrunn",
+    "center": {
+      "lat": 49.922510900000006,
+      "lng": 9.2924021
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mespelbrunn-1ee8bc4428",
+      "city": "mespelbrunn",
+      "label": "Behindertenparkplatz Mespelbrunn",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mespelbrunn",
+      "spotCount": 2,
+      "lat": 49.922510900000006,
+      "lng": 9.2924021,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5494451171), ODbL"
+    },
+    {
+      "id": "mespelbrunn-882ce1ab0c",
+      "city": "mespelbrunn",
+      "label": "Behindertenparkplatz Mespelbrunn",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mespelbrunn",
+      "spotCount": 2,
+      "lat": 49.9222788,
+      "lng": 9.292208500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5494451173), ODbL"
+    }
+  ]
+}

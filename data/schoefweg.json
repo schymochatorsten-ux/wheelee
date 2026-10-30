@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schoefweg",
+    "name": "Schöfweg",
+    "center": {
+      "lat": 48.83754735,
+      "lng": 13.2307801
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schoefweg-786e77baae",
+      "city": "schoefweg",
+      "label": "Rachelstraße 1",
+      "street": "Rachelstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schöfweg",
+      "spotCount": 1,
+      "lat": 48.83754735,
+      "lng": 13.2307801,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/946549924), ODbL"
+    }
+  ]
+}

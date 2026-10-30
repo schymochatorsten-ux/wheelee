@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "elsterwerda",
+    "name": "Elsterwerda",
+    "center": {
+      "lat": 51.4606898,
+      "lng": 13.51769445
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "elsterwerda-599ae7dfff",
+      "city": "elsterwerda",
+      "label": "Ladestraße",
+      "street": "Ladestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elsterwerda",
+      "spotCount": 6,
+      "lat": 51.4718669,
+      "lng": 13.51769445,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/740131172), ODbL"
+    },
+    {
+      "id": "elsterwerda-7a1313cdd8",
+      "city": "elsterwerda",
+      "label": "Ladestraße",
+      "street": "Ladestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elsterwerda",
+      "spotCount": 4,
+      "lat": 51.47183305,
+      "lng": 13.517992250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/740131173), ODbL"
+    },
+    {
+      "id": "elsterwerda-5519e81a0f",
+      "city": "elsterwerda",
+      "label": "Packhofstraße 2",
+      "street": "Packhofstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elsterwerda",
+      "spotCount": 1,
+      "lat": 51.459165350000006,
+      "lng": 13.517990500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28468183), ODbL"
+    },
+    {
+      "id": "elsterwerda-b19b19911b",
+      "city": "elsterwerda",
+      "label": "Straße an der Eisenbahn",
+      "street": "Straße an der Eisenbahn",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elsterwerda",
+      "spotCount": 2,
+      "lat": 51.4606898,
+      "lng": 13.517554700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/145071070), ODbL"
+    },
+    {
+      "id": "elsterwerda-359f86afaa",
+      "city": "elsterwerda",
+      "label": "Weststraße",
+      "street": "Weststraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elsterwerda",
+      "spotCount": 2,
+      "lat": 51.45902935000001,
+      "lng": 13.516914800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/145071084), ODbL"
+    }
+  ]
+}

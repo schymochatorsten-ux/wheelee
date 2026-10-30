@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "kirchardt",
+    "name": "Kirchardt",
+    "center": {
+      "lat": 49.2223077,
+      "lng": 8.988374400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kirchardt-4579afc3cb",
+      "city": "kirchardt",
+      "label": "Bauernwald Nord",
+      "street": "Bauernwald Nord",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kirchardt",
+      "spotCount": 2,
+      "lat": 49.2223077,
+      "lng": 8.97550965,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/306451998), ODbL"
+    },
+    {
+      "id": "kirchardt-fe0921a2cd",
+      "city": "kirchardt",
+      "label": "Goethestraße",
+      "street": "Goethestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kirchardt",
+      "spotCount": 1,
+      "lat": 49.204285600000006,
+      "lng": 8.988374400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/173731093), ODbL"
+    }
+  ]
+}

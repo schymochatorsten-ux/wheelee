@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "oberharz",
+    "name": "Oberharz am Brocken",
+    "center": {
+      "lat": 51.7699224,
+      "lng": 10.7920357
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberharz-48da284264",
+      "city": "oberharz",
+      "label": "Anglerparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberharz am Brocken",
+      "spotCount": 2,
+      "lat": 51.7003794,
+      "lng": 10.831851,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5032619927), ODbL"
+    },
+    {
+      "id": "oberharz-c9799fec9f",
+      "city": "oberharz",
+      "label": "Behindertenparkplatz Oberharz am Brocken",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberharz am Brocken",
+      "spotCount": 2,
+      "lat": 51.79087775000001,
+      "lng": 10.8183015,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1211657582), ODbL"
+    },
+    {
+      "id": "oberharz-83a57b2cef",
+      "city": "oberharz",
+      "label": "Brockenstraße",
+      "street": "Brockenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberharz am Brocken",
+      "spotCount": 1,
+      "lat": 51.7724719,
+      "lng": 10.7901883,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/202176666), ODbL"
+    },
+    {
+      "id": "oberharz-341667804c",
+      "city": "oberharz",
+      "label": "Königshütter Straße",
+      "street": "Königshütter Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberharz am Brocken",
+      "spotCount": 1,
+      "lat": 51.7681054,
+      "lng": 10.787772700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/45579842), ODbL"
+    },
+    {
+      "id": "oberharz-c9f36f90b1",
+      "city": "oberharz",
+      "label": "Steinweg",
+      "street": "Steinweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberharz am Brocken",
+      "spotCount": 1,
+      "lat": 51.7700809,
+      "lng": 10.797938250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/369087993), ODbL"
+    },
+    {
+      "id": "oberharz-506f353f31",
+      "city": "oberharz",
+      "label": "Teichdamm 1",
+      "street": "Teichdamm",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberharz am Brocken",
+      "spotCount": 1,
+      "lat": 51.66756765000001,
+      "lng": 10.7180154,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/197582213), ODbL"
+    },
+    {
+      "id": "oberharz-cc8d845e4d",
+      "city": "oberharz",
+      "label": "Werner-Seelenbinder-Straße",
+      "street": "Werner-Seelenbinder-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Oberharz am Brocken",
+      "spotCount": 1,
+      "lat": 51.7699224,
+      "lng": 10.7920357,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/202155563), ODbL"
+    }
+  ]
+}

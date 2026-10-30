@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "vetschau-spreewald",
+    "name": "Vetschau/Spreewald",
+    "center": {
+      "lat": 51.7848776,
+      "lng": 14.076458950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "vetschau-spreewald-5f688ac3f7",
+      "city": "vetschau-spreewald",
+      "label": "Bedburger Straße",
+      "street": "Bedburger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vetschau/Spreewald",
+      "spotCount": 1,
+      "lat": 51.7848776,
+      "lng": 14.0739074,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/38923917), ODbL"
+    },
+    {
+      "id": "vetschau-spreewald-d596796832",
+      "city": "vetschau-spreewald",
+      "label": "Radduscher Bahnhofstraße",
+      "street": "Radduscher Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vetschau/Spreewald",
+      "spotCount": 1,
+      "lat": 51.81589905,
+      "lng": 14.031897700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1376989068), ODbL"
+    },
+    {
+      "id": "vetschau-spreewald-bf0265031a",
+      "city": "vetschau-spreewald",
+      "label": "Reptener Chaussee",
+      "street": "Reptener Chaussee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vetschau/Spreewald",
+      "spotCount": 1,
+      "lat": 51.78083575,
+      "lng": 14.0739859,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/38921814), ODbL"
+    },
+    {
+      "id": "vetschau-spreewald-1dbe6159da",
+      "city": "vetschau-spreewald",
+      "label": "Suschower Hauptstraße 34a",
+      "street": "Suschower Hauptstraße",
+      "houseNumber": "34a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vetschau/Spreewald",
+      "spotCount": 1,
+      "lat": 51.798906900000006,
+      "lng": 14.09022045,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1269010727), ODbL"
+    },
+    {
+      "id": "vetschau-spreewald-0daeb0fe3a",
+      "city": "vetschau-spreewald",
+      "label": "Wilhelm-Pieck-Straße",
+      "street": "Wilhelm-Pieck-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vetschau/Spreewald",
+      "spotCount": 1,
+      "lat": 51.782928350000006,
+      "lng": 14.076458950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/133404744), ODbL"
+    },
+    {
+      "id": "vetschau-spreewald-89cbad0442",
+      "city": "vetschau-spreewald",
+      "label": "Wilhelm-Pieck-Straße",
+      "street": "Wilhelm-Pieck-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vetschau/Spreewald",
+      "spotCount": 2,
+      "lat": 51.78463105,
+      "lng": 14.08560085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1443867106), ODbL"
+    }
+  ]
+}

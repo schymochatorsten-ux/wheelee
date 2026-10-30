@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "todtnau",
+    "name": "Todtnau",
+    "center": {
+      "lat": 47.8423047,
+      "lng": 7.933186500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "todtnau-75e0ba4a28",
+      "city": "todtnau",
+      "label": "Langenbachstraße",
+      "street": "Langenbachstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Todtnau",
+      "spotCount": 1,
+      "lat": 47.8423047,
+      "lng": 7.933186500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1172363859), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "huy",
+    "name": "Huy",
+    "center": {
+      "lat": 51.95966195,
+      "lng": 11.001031950000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "huy-2abf0b39f3",
+      "city": "huy",
+      "label": "Deutsche Halbe 173",
+      "street": "Deutsche Halbe",
+      "houseNumber": "173",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Huy",
+      "spotCount": 1,
+      "lat": 51.9757549,
+      "lng": 10.9798158,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1056443772), ODbL"
+    },
+    {
+      "id": "huy-b59544f4bc",
+      "city": "huy",
+      "label": "Zur Huysburg",
+      "street": "Zur Huysburg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Huy",
+      "spotCount": 1,
+      "lat": 51.959497750000004,
+      "lng": 11.001031950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/783292786), ODbL"
+    },
+    {
+      "id": "huy-0a99f3075d",
+      "city": "huy",
+      "label": "Zur Huysburg",
+      "street": "Zur Huysburg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Huy",
+      "spotCount": 2,
+      "lat": 51.95966195,
+      "lng": 11.00105095,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1180028584), ODbL"
+    }
+  ]
+}

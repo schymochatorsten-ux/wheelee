@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "husby",
+    "name": "Husby",
+    "center": {
+      "lat": 54.7665662,
+      "lng": 9.574686100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "husby-e9cdb0e42c",
+      "city": "husby",
+      "label": "Flensburger Straße",
+      "street": "Flensburger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Husby",
+      "spotCount": 3,
+      "lat": 54.7665662,
+      "lng": 9.570703250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/223962968), ODbL"
+    },
+    {
+      "id": "husby-04f3df308f",
+      "city": "husby",
+      "label": "Husbyfelder Straße",
+      "street": "Husbyfelder Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Husby",
+      "spotCount": 2,
+      "lat": 54.764374000000004,
+      "lng": 9.574686100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/61677759), ODbL"
+    }
+  ]
+}

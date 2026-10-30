@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "ober-olm",
+    "name": "Ober-Olm",
+    "center": {
+      "lat": 49.94367235,
+      "lng": 8.19147075
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ober-olm-c4d3b26f3f",
+      "city": "ober-olm",
+      "label": "Jägerpfad",
+      "street": "Jägerpfad",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Sa 08:00-20:00; PH closed",
+      "district": "Ober-Olm",
+      "spotCount": 2,
+      "lat": 49.94367235,
+      "lng": 8.191312550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/37932053), ODbL"
+    },
+    {
+      "id": "ober-olm-625f239105",
+      "city": "ober-olm",
+      "label": "Jägerpfad",
+      "street": "Jägerpfad",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Sa 08:00-22:00; PH closed",
+      "district": "Ober-Olm",
+      "spotCount": 3,
+      "lat": 49.943126050000004,
+      "lng": 8.19147075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/37932054), ODbL"
+    }
+  ]
+}

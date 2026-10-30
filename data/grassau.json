@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "grassau",
+    "name": "Grassau",
+    "center": {
+      "lat": 47.77953465,
+      "lng": 12.453760800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grassau-bfedf6cefd",
+      "city": "grassau",
+      "label": "Bahnhofstraße 19",
+      "street": "Bahnhofstraße",
+      "houseNumber": "19",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grassau",
+      "spotCount": 1,
+      "lat": 47.7788913,
+      "lng": 12.453760800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/163562899), ODbL"
+    },
+    {
+      "id": "grassau-db17fc4a9c",
+      "city": "grassau",
+      "label": "Marktstraße",
+      "street": "Marktstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grassau",
+      "spotCount": 1,
+      "lat": 47.77953465,
+      "lng": 12.452234100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/40353343), ODbL"
+    }
+  ]
+}

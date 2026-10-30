@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "euerdorf",
+    "name": "Euerdorf",
+    "center": {
+      "lat": 50.14890865,
+      "lng": 10.0198699
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "euerdorf-8be03dd1bb",
+      "city": "euerdorf",
+      "label": "Auraer Straße",
+      "street": "Auraer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Euerdorf",
+      "spotCount": 2,
+      "lat": 50.149483200000006,
+      "lng": 10.0177957,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/280463950), ODbL"
+    },
+    {
+      "id": "euerdorf-9885dc43de",
+      "city": "euerdorf",
+      "label": "Auraer Straße",
+      "street": "Auraer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Euerdorf",
+      "spotCount": 1,
+      "lat": 50.149575000000006,
+      "lng": 10.01772475,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1411607970), ODbL"
+    },
+    {
+      "id": "euerdorf-cbe358aae5",
+      "city": "euerdorf",
+      "label": "Auraer Straße",
+      "street": "Auraer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Euerdorf",
+      "spotCount": 1,
+      "lat": 50.14959855000001,
+      "lng": 10.017693600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1411607971), ODbL"
+    },
+    {
+      "id": "euerdorf-6591805084",
+      "city": "euerdorf",
+      "label": "Hammelburger Straße 24",
+      "street": "Hammelburger Straße",
+      "houseNumber": "24",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Euerdorf",
+      "spotCount": 1,
+      "lat": 50.14814375,
+      "lng": 10.0198699,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1411607959), ODbL"
+    },
+    {
+      "id": "euerdorf-85f5e4f57e",
+      "city": "euerdorf",
+      "label": "Hammelburger Straße 8",
+      "street": "Hammelburger Straße",
+      "houseNumber": "8",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Euerdorf",
+      "spotCount": 1,
+      "lat": 50.14888185,
+      "lng": 10.022407350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1411607997), ODbL"
+    },
+    {
+      "id": "euerdorf-c3ab65fa2d",
+      "city": "euerdorf",
+      "label": "Hammelburger Straße 8",
+      "street": "Hammelburger Straße",
+      "houseNumber": "8",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Euerdorf",
+      "spotCount": 1,
+      "lat": 50.14890865,
+      "lng": 10.02239735,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1411607999), ODbL"
+    },
+    {
+      "id": "euerdorf-968df4326c",
+      "city": "euerdorf",
+      "label": "Hammelburger Straße 8",
+      "street": "Hammelburger Straße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Euerdorf",
+      "spotCount": 2,
+      "lat": 50.148889350000005,
+      "lng": 10.022447150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1411608004), ODbL"
+    }
+  ]
+}

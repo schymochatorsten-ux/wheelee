@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "scheidegg",
+    "name": "Scheidegg",
+    "center": {
+      "lat": 47.56332005,
+      "lng": 9.8273582
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "scheidegg-8136acafb1",
+      "city": "scheidegg",
+      "label": "Behindertenparkplatz Scheidegg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Scheidegg",
+      "spotCount": 6,
+      "lat": 47.56332005,
+      "lng": 9.8273582,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/631637800), ODbL"
+    }
+  ]
+}

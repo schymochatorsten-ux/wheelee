@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "koenigsbronn",
+    "name": "Königsbronn",
+    "center": {
+      "lat": 48.73746615,
+      "lng": 10.1313046
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "koenigsbronn-d92112d9cc",
+      "city": "koenigsbronn",
+      "label": "Herwartstraße 7",
+      "street": "Herwartstraße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Königsbronn",
+      "spotCount": 1,
+      "lat": 48.73746615,
+      "lng": 10.1137284,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/336508679), ODbL"
+    },
+    {
+      "id": "koenigsbronn-a3fb231de8",
+      "city": "koenigsbronn",
+      "label": "Untere Hartstraße",
+      "street": "Untere Hartstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Königsbronn",
+      "spotCount": 2,
+      "lat": 48.731894600000004,
+      "lng": 10.1313046,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13785555015), ODbL"
+    }
+  ]
+}

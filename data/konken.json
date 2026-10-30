@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "konken",
+    "name": "Konken",
+    "center": {
+      "lat": 49.5083898,
+      "lng": 7.3536741
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "konken-d29d2c71a5",
+      "city": "konken",
+      "label": "Hauptstraße 35",
+      "street": "Hauptstraße",
+      "houseNumber": "35",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Konken",
+      "spotCount": 1,
+      "lat": 49.5083898,
+      "lng": 7.3536741,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12149812510), ODbL"
+    },
+    {
+      "id": "konken-51388b40b8",
+      "city": "konken",
+      "label": "Hauptstraße 35",
+      "street": "Hauptstraße",
+      "houseNumber": "35",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Konken",
+      "spotCount": 1,
+      "lat": 49.5082675,
+      "lng": 7.3536892,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/692423402), ODbL"
+    },
+    {
+      "id": "konken-77ca0a4a2b",
+      "city": "konken",
+      "label": "Hohlstraße 15",
+      "street": "Hohlstraße",
+      "houseNumber": "15",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Konken",
+      "spotCount": 1,
+      "lat": 49.5100295,
+      "lng": 7.3499096,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13131131426), ODbL"
+    }
+  ]
+}

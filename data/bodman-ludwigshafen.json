@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "bodman-ludwigshafen",
+    "name": "Bodman-Ludwigshafen",
+    "center": {
+      "lat": 47.814903,
+      "lng": 9.052597650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bodman-ludwigshafen-ab313033e0",
+      "city": "bodman-ludwigshafen",
+      "label": "Im Gries",
+      "street": "Im Gries",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bodman-Ludwigshafen",
+      "spotCount": 2,
+      "lat": 47.792750850000004,
+      "lng": 9.048785500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1307774786), ODbL"
+    },
+    {
+      "id": "bodman-ludwigshafen-6a17a0a7d2",
+      "city": "bodman-ludwigshafen",
+      "label": "Parkplatz Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Bodman-Ludwigshafen",
+      "spotCount": 3,
+      "lat": 47.8158538,
+      "lng": 9.052597650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/925349281), ODbL"
+    },
+    {
+      "id": "bodman-ludwigshafen-fbc8d7f49b",
+      "city": "bodman-ludwigshafen",
+      "label": "Parkplatz Hafen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Bodman-Ludwigshafen",
+      "spotCount": 3,
+      "lat": 47.800551750000004,
+      "lng": 9.03769505,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/286810396), ODbL"
+    },
+    {
+      "id": "bodman-ludwigshafen-99313b0981",
+      "city": "bodman-ludwigshafen",
+      "label": "Parkplatz Kapelle",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Bodman-Ludwigshafen",
+      "spotCount": 4,
+      "lat": 47.80262395,
+      "lng": 9.0267672,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/438512958), ODbL"
+    },
+    {
+      "id": "bodman-ludwigshafen-8f5808ae9d",
+      "city": "bodman-ludwigshafen",
+      "label": "Parkplatz Park am See",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bodman-Ludwigshafen",
+      "spotCount": 2,
+      "lat": 47.8160114,
+      "lng": 9.059624300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/710716324), ODbL"
+    },
+    {
+      "id": "bodman-ludwigshafen-cd924aa58f",
+      "city": "bodman-ludwigshafen",
+      "label": "Parkplatz Strandbad",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bodman-Ludwigshafen",
+      "spotCount": 4,
+      "lat": 47.814903,
+      "lng": 9.06330295,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/710716322), ODbL"
+    }
+  ]
+}

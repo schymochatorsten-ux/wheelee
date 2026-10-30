@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "reuth-b-erbendorf",
+    "name": "Reuth b.Erbendorf",
+    "center": {
+      "lat": 49.83967390000001,
+      "lng": 12.118263650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "reuth-b-erbendorf-de06425ade",
+      "city": "reuth-b-erbendorf",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Reuth b.Erbendorf",
+      "spotCount": 1,
+      "lat": 49.83967390000001,
+      "lng": 12.118263650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/823582272), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "sulzfeld-a-main",
+    "name": "Sulzfeld a.Main",
+    "center": {
+      "lat": 49.7044768,
+      "lng": 10.1047056
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sulzfeld-a-main-16370e32c6",
+      "city": "sulzfeld-a-main",
+      "label": "Wolfsgraben West",
+      "street": "Wolfsgraben West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sulzfeld a.Main",
+      "spotCount": 3,
+      "lat": 49.7044768,
+      "lng": 10.1047056,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/484709495), ODbL"
+    }
+  ]
+}

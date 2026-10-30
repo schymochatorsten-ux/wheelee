@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "doerentrup",
+    "name": "Dörentrup",
+    "center": {
+      "lat": 52.006444900000005,
+      "lng": 9.0652829
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "doerentrup-2a9a787cc5",
+      "city": "doerentrup",
+      "label": "Katzhagen 2",
+      "street": "Katzhagen",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dörentrup",
+      "spotCount": 1,
+      "lat": 52.006444900000005,
+      "lng": 9.0652829,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/759454681), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bad-salzschlirf",
+    "name": "Bad Salzschlirf",
+    "center": {
+      "lat": 50.624415,
+      "lng": 9.505099000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-salzschlirf-6c0c753d33",
+      "city": "bad-salzschlirf",
+      "label": "Lindenstraße 7",
+      "street": "Lindenstraße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bad Salzschlirf",
+      "spotCount": 1,
+      "lat": 50.624415,
+      "lng": 9.505099000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/661274347), ODbL"
+    }
+  ]
+}

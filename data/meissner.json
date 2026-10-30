@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "meissner",
+    "name": "Meißner",
+    "center": {
+      "lat": 51.195379450000004,
+      "lng": 9.909210850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "meissner-6fb8563005",
+      "city": "meissner",
+      "label": "Neuer Weg",
+      "street": "Neuer Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Meißner",
+      "spotCount": 3,
+      "lat": 51.195379450000004,
+      "lng": 9.909210850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/429915913), ODbL"
+    }
+  ]
+}

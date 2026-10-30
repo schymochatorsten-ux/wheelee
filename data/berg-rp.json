@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "berg-rp",
+    "name": "Berg (Pfalz)",
+    "center": {
+      "lat": 48.980842300000006,
+      "lng": 8.2124998
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "berg-rp-02791b405e",
+      "city": "berg-rp",
+      "label": "Ludwigstraße",
+      "street": "Ludwigstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Berg (Pfalz)",
+      "spotCount": 1,
+      "lat": 48.980842300000006,
+      "lng": 8.2124998,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/891493036), ODbL"
+    }
+  ]
+}

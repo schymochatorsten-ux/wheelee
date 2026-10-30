@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ranstadt",
+    "name": "Ranstadt",
+    "center": {
+      "lat": 50.35884765,
+      "lng": 8.986703250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ranstadt-47edd18869",
+      "city": "ranstadt",
+      "label": "Hintergasse 59",
+      "street": "Hintergasse",
+      "houseNumber": "59",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Ranstadt",
+      "spotCount": 1,
+      "lat": 50.35884765,
+      "lng": 8.986703250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1568743686), ODbL"
+    }
+  ]
+}

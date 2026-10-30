@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hornbach",
+    "name": "Hornbach",
+    "center": {
+      "lat": 49.1879993,
+      "lng": 7.371840400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hornbach-1687692434",
+      "city": "hornbach",
+      "label": "Zweibrücker Straße 3",
+      "street": "Zweibrücker Straße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hornbach",
+      "spotCount": 1,
+      "lat": 49.1879993,
+      "lng": 7.371840400000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12146933035), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schwarzatal",
+    "name": "Schwarzatal",
+    "center": {
+      "lat": 50.5918319,
+      "lng": 11.1330354
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schwarzatal-d0b27d9735",
+      "city": "schwarzatal",
+      "label": "Obere Bergbahnstraße",
+      "street": "Obere Bergbahnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwarzatal",
+      "spotCount": 1,
+      "lat": 50.5918319,
+      "lng": 11.1330354,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/138278257), ODbL"
+    }
+  ]
+}

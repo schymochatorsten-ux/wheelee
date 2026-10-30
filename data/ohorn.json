@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "ohorn",
+    "name": "Ohorn",
+    "center": {
+      "lat": 51.169700750000004,
+      "lng": 14.063673600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ohorn-9b7f68afb7",
+      "city": "ohorn",
+      "label": "Rödertal",
+      "street": "Rödertal",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ohorn",
+      "spotCount": 3,
+      "lat": 51.16784525,
+      "lng": 14.061001700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/45341116), ODbL"
+    },
+    {
+      "id": "ohorn-61c98d060a",
+      "city": "ohorn",
+      "label": "Rödertal",
+      "street": "Rödertal",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ohorn",
+      "spotCount": 3,
+      "lat": 51.169700750000004,
+      "lng": 14.063673600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/265927880), ODbL"
+    }
+  ]
+}

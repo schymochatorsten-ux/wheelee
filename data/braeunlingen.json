@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "braeunlingen",
+    "name": "Bräunlingen",
+    "center": {
+      "lat": 47.92976285,
+      "lng": 8.372356200000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "braeunlingen-4900bd81df",
+      "city": "braeunlingen",
+      "label": "Behindertenparkplatz Bräunlingen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bräunlingen",
+      "spotCount": 1,
+      "lat": 47.9248989,
+      "lng": 8.372356200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/889050563), ODbL"
+    },
+    {
+      "id": "braeunlingen-48cc34939a",
+      "city": "braeunlingen",
+      "label": "Seestraße",
+      "street": "Seestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bräunlingen",
+      "spotCount": 1,
+      "lat": 47.92976285,
+      "lng": 8.36417965,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/272903793), ODbL"
+    },
+    {
+      "id": "braeunlingen-83558b98d2",
+      "city": "braeunlingen",
+      "label": "Zähringerstraße 16",
+      "street": "Zähringerstraße",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bräunlingen",
+      "spotCount": 1,
+      "lat": 47.93013705,
+      "lng": 8.44757395,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/807885205), ODbL"
+    }
+  ]
+}

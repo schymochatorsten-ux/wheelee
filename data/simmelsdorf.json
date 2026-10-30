@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "simmelsdorf",
+    "name": "Simmelsdorf",
+    "center": {
+      "lat": 49.603774650000005,
+      "lng": 11.34069285
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "simmelsdorf-34fa98d17d",
+      "city": "simmelsdorf",
+      "label": "Kirschgartenstraße",
+      "street": "Kirschgartenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Simmelsdorf",
+      "spotCount": 1,
+      "lat": 49.603774650000005,
+      "lng": 11.34069285,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25363357), ODbL"
+    },
+    {
+      "id": "simmelsdorf-c4bf15f777",
+      "city": "simmelsdorf",
+      "label": "Nürnberger Straße 16",
+      "street": "Nürnberger Straße",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Simmelsdorf",
+      "spotCount": 1,
+      "lat": 49.595093600000006,
+      "lng": 11.336317900000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/667511838), ODbL"
+    }
+  ]
+}

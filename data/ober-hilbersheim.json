@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ober-hilbersheim",
+    "name": "Ober-Hilbersheim",
+    "center": {
+      "lat": 49.899360400000006,
+      "lng": 8.02669225
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ober-hilbersheim-5a646c3d85",
+      "city": "ober-hilbersheim",
+      "label": "Friedhofsweg 2",
+      "street": "Friedhofsweg",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ober-Hilbersheim",
+      "spotCount": 7,
+      "lat": 49.899360400000006,
+      "lng": 8.02669225,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1547461545), ODbL"
+    }
+  ]
+}

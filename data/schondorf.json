@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schondorf",
+    "name": "Schondorf am Ammersee",
+    "center": {
+      "lat": 48.06722070000001,
+      "lng": 11.09485515
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schondorf-d59e88c079",
+      "city": "schondorf",
+      "label": "Aumühle",
+      "street": "Aumühle",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schondorf am Ammersee",
+      "spotCount": 1,
+      "lat": 48.06722070000001,
+      "lng": 11.09485515,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/713495339), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "dettenheim",
+    "name": "Dettenheim",
+    "center": {
+      "lat": 49.163168850000005,
+      "lng": 8.421041350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dettenheim-cf22a90399",
+      "city": "dettenheim",
+      "label": "Goethestraße",
+      "street": "Goethestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dettenheim",
+      "spotCount": 2,
+      "lat": 49.163168850000005,
+      "lng": 8.421041350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28417614), ODbL"
+    },
+    {
+      "id": "dettenheim-aee25d5fa2",
+      "city": "dettenheim",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dettenheim",
+      "spotCount": 1,
+      "lat": 49.163102,
+      "lng": 8.41462885,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1172507905), ODbL"
+    }
+  ]
+}

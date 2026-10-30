@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "breitenguessbach",
+    "name": "Breitengüßbach",
+    "center": {
+      "lat": 49.9789699,
+      "lng": 10.8966531
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "breitenguessbach-2ffc99ffbc",
+      "city": "breitenguessbach",
+      "label": "Dorfplatz",
+      "street": "Dorfplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Breitengüßbach",
+      "spotCount": 2,
+      "lat": 49.9789699,
+      "lng": 10.8966531,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9563545002), ODbL"
+    },
+    {
+      "id": "breitenguessbach-ec172decd0",
+      "city": "breitenguessbach",
+      "label": "Gewerbepark",
+      "street": "Gewerbepark",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Breitengüßbach",
+      "spotCount": 1,
+      "lat": 49.97427065000001,
+      "lng": 10.8748102,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/326297471), ODbL"
+    }
+  ]
+}

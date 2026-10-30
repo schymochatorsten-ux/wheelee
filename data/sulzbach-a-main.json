@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "sulzbach-a-main",
+    "name": "Sulzbach a.Main",
+    "center": {
+      "lat": 49.92546225,
+      "lng": 9.2154983
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sulzbach-a-main-d4bdbaabd3",
+      "city": "sulzbach-a-main",
+      "label": "Sodentalstraße",
+      "street": "Sodentalstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sulzbach a.Main",
+      "spotCount": 1,
+      "lat": 49.92481955,
+      "lng": 9.2143739,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/339959271), ODbL"
+    },
+    {
+      "id": "sulzbach-a-main-ff92359fb6",
+      "city": "sulzbach-a-main",
+      "label": "Sodentalstraße 122",
+      "street": "Sodentalstraße",
+      "houseNumber": "122",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sulzbach a.Main",
+      "spotCount": 2,
+      "lat": 49.92546225,
+      "lng": 9.2154983,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/356832011), ODbL"
+    }
+  ]
+}

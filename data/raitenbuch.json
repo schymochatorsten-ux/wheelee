@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "raitenbuch",
+    "name": "Raitenbuch",
+    "center": {
+      "lat": 48.978867,
+      "lng": 11.073514900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "raitenbuch-4822d22a21",
+      "city": "raitenbuch",
+      "label": "Behindertenparkplatz Raitenbuch",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Raitenbuch",
+      "spotCount": 2,
+      "lat": 48.978867,
+      "lng": 11.073514900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1115709361), ODbL"
+    }
+  ]
+}

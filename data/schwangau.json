@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schwangau",
+    "name": "Schwangau",
+    "center": {
+      "lat": 47.57440285,
+      "lng": 10.734799200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schwangau-e3d47d4d7d",
+      "city": "schwangau",
+      "label": "Gipsmühlweg 5",
+      "street": "Gipsmühlweg",
+      "houseNumber": "5",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schwangau",
+      "spotCount": 7,
+      "lat": 47.57440285,
+      "lng": 10.734799200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1041213419), ODbL"
+    }
+  ]
+}

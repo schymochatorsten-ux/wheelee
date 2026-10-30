@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "neckargerach",
+    "name": "Neckargerach",
+    "center": {
+      "lat": 49.400553200000004,
+      "lng": 9.0744392
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neckargerach-f671650396",
+      "city": "neckargerach",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Neckargerach",
+      "spotCount": 2,
+      "lat": 49.39821535,
+      "lng": 9.0744878,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/884269010), ODbL"
+    },
+    {
+      "id": "neckargerach-892be0d2ee",
+      "city": "neckargerach",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Neckargerach",
+      "spotCount": 1,
+      "lat": 49.398329700000005,
+      "lng": 9.0744392,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1293500693), ODbL"
+    },
+    {
+      "id": "neckargerach-534c02766f",
+      "city": "neckargerach",
+      "label": "Hauptstraße 4",
+      "street": "Hauptstraße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neckargerach",
+      "spotCount": 2,
+      "lat": 49.40057345,
+      "lng": 9.0676705,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1059600839), ODbL"
+    },
+    {
+      "id": "neckargerach-26e39d316f",
+      "city": "neckargerach",
+      "label": "Hauptstraße 4",
+      "street": "Hauptstraße",
+      "houseNumber": "4",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neckargerach",
+      "spotCount": 1,
+      "lat": 49.400553200000004,
+      "lng": 9.068020950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1525625815), ODbL"
+    }
+  ]
+}

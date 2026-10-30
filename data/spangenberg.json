@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "spangenberg",
+    "name": "Spangenberg",
+    "center": {
+      "lat": 51.118600900000004,
+      "lng": 9.666417150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "spangenberg-d9a7947654",
+      "city": "spangenberg",
+      "label": "Frühmessergasse 9",
+      "street": "Frühmessergasse",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Spangenberg",
+      "spotCount": 3,
+      "lat": 51.118600900000004,
+      "lng": 9.666417150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/335375347), ODbL"
+    }
+  ]
+}

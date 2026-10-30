@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "dannenberg",
+    "name": "Dannenberg (Elbe)",
+    "center": {
+      "lat": 53.08595940000001,
+      "lng": 11.06977865
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dannenberg-a9dc6366b5",
+      "city": "dannenberg",
+      "label": "Hauptstraße 20a",
+      "street": "Hauptstraße",
+      "houseNumber": "20a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dannenberg (Elbe)",
+      "spotCount": 1,
+      "lat": 53.08595940000001,
+      "lng": 11.06977865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/90023547), ODbL"
+    }
+  ]
+}

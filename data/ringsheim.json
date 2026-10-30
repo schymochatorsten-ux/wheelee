@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "ringsheim",
+    "name": "Ringsheim",
+    "center": {
+      "lat": 48.24851865000001,
+      "lng": 7.7724210000000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ringsheim-710f5c2795",
+      "city": "ringsheim",
+      "label": "Im Stühlinger",
+      "street": "Im Stühlinger",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ringsheim",
+      "spotCount": 2,
+      "lat": 48.24821415,
+      "lng": 7.772146150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/332724330), ODbL"
+    },
+    {
+      "id": "ringsheim-e8d03853ed",
+      "city": "ringsheim",
+      "label": "Im Stühlinger",
+      "street": "Im Stühlinger",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ringsheim",
+      "spotCount": 1,
+      "lat": 48.24851865000001,
+      "lng": 7.7724210000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1410912741), ODbL"
+    },
+    {
+      "id": "ringsheim-12866e77f4",
+      "city": "ringsheim",
+      "label": "Im Stühlinger",
+      "street": "Im Stühlinger",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ringsheim",
+      "spotCount": 1,
+      "lat": 48.24803865,
+      "lng": 7.772155700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1411195747), ODbL"
+    },
+    {
+      "id": "ringsheim-1a7f03432f",
+      "city": "ringsheim",
+      "label": "Mahlberger Straße 8",
+      "street": "Mahlberger Straße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ringsheim",
+      "spotCount": 3,
+      "lat": 48.249454,
+      "lng": 7.7695262000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/531352444), ODbL"
+    },
+    {
+      "id": "ringsheim-02e4ef8d2a",
+      "city": "ringsheim",
+      "label": "Rathausstraße 10",
+      "street": "Rathausstraße",
+      "houseNumber": "10",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ringsheim",
+      "spotCount": 1,
+      "lat": 48.24616210000001,
+      "lng": 7.7783753,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9165767755), ODbL"
+    },
+    {
+      "id": "ringsheim-6c70a65f3f",
+      "city": "ringsheim",
+      "label": "Ruster Straße",
+      "street": "Ruster Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ringsheim",
+      "spotCount": 1,
+      "lat": 48.24878685,
+      "lng": 7.772689700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/332724335), ODbL"
+    }
+  ]
+}

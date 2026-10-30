@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "haina",
+    "name": "Haina (Kloster)",
+    "center": {
+      "lat": 51.06538175,
+      "lng": 8.979537950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "haina-14be5a52f7",
+      "city": "haina",
+      "label": "Frankenberger Straße 1",
+      "street": "Frankenberger Straße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Haina (Kloster)",
+      "spotCount": 1,
+      "lat": 51.02682660000001,
+      "lng": 8.97172775,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1481790280), ODbL"
+    },
+    {
+      "id": "haina-eb97b169de",
+      "city": "haina",
+      "label": "Raiffeisenstraße 1",
+      "street": "Raiffeisenstraße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Haina (Kloster)",
+      "spotCount": 1,
+      "lat": 51.06538175,
+      "lng": 8.979537950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1507887214), ODbL"
+    }
+  ]
+}

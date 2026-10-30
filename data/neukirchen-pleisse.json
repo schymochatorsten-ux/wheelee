@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "neukirchen-pleisse",
+    "name": "Neukirchen/Pleiße",
+    "center": {
+      "lat": 50.79057485,
+      "lng": 12.378155
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neukirchen-pleisse-f8d00cf9a1",
+      "city": "neukirchen-pleisse",
+      "label": "Pleißenweg 16",
+      "street": "Pleißenweg",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neukirchen/Pleiße",
+      "spotCount": 1,
+      "lat": 50.79057485,
+      "lng": 12.378155,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1363341268), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kreischa",
+    "name": "Kreischa",
+    "center": {
+      "lat": 50.9470426,
+      "lng": 13.76734015
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kreischa-6875f089be",
+      "city": "kreischa",
+      "label": "An der Wolfsschlucht 2",
+      "street": "An der Wolfsschlucht",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kreischa",
+      "spotCount": 3,
+      "lat": 50.9470426,
+      "lng": 13.76734015,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/652036287), ODbL"
+    }
+  ]
+}

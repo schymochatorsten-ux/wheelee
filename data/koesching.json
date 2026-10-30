@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "koesching",
+    "name": "Kösching",
+    "center": {
+      "lat": 48.8075132,
+      "lng": 11.480772950000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "koesching-50570fdc16",
+      "city": "koesching",
+      "label": "Ingolstädter Straße",
+      "street": "Ingolstädter Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kösching",
+      "spotCount": 2,
+      "lat": 48.8075132,
+      "lng": 11.480772950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/30068443), ODbL"
+    }
+  ]
+}

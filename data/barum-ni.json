@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "barum-ni",
+    "name": "Barum",
+    "center": {
+      "lat": 53.0466635,
+      "lng": 10.5377474
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "barum-ni-d6873e75cd",
+      "city": "barum-ni",
+      "label": "Uelzener Chaussee",
+      "street": "Uelzener Chaussee",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Barum",
+      "spotCount": 1,
+      "lat": 53.0466635,
+      "lng": 10.5377474,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14107581410), ODbL"
+    },
+    {
+      "id": "barum-ni-8eaf5e45dc",
+      "city": "barum-ni",
+      "label": "Uelzener Chaussee",
+      "street": "Uelzener Chaussee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Barum",
+      "spotCount": 3,
+      "lat": 53.04645015,
+      "lng": 10.5375352,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/306451452), ODbL"
+    }
+  ]
+}

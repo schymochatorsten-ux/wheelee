@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "dietingen",
+    "name": "Dietingen",
+    "center": {
+      "lat": 48.20605435,
+      "lng": 8.6262936
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dietingen-b294fee34c",
+      "city": "dietingen",
+      "label": "Rasthof Neckarburg-Ost",
+      "street": "Rasthof Neckarburg-Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dietingen",
+      "spotCount": 3,
+      "lat": 48.20605435,
+      "lng": 8.6262936,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/302926466), ODbL"
+    }
+  ]
+}

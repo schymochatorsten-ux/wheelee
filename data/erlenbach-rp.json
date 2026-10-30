@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "erlenbach-rp",
+    "name": "Erlenbach bei Kandel",
+    "center": {
+      "lat": 49.1118656,
+      "lng": 8.18760205
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "erlenbach-rp-d26b3d9fa1",
+      "city": "erlenbach-rp",
+      "label": "Im Storchennest 24",
+      "street": "Im Storchennest",
+      "houseNumber": "24",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Erlenbach bei Kandel",
+      "spotCount": 2,
+      "lat": 49.1118656,
+      "lng": 8.18760205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29250412), ODbL"
+    }
+  ]
+}

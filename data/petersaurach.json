@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "petersaurach",
+    "name": "Petersaurach",
+    "center": {
+      "lat": 49.318110450000006,
+      "lng": 10.73940935
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "petersaurach-3aaff61ba9",
+      "city": "petersaurach",
+      "label": "Lohfeldweg",
+      "street": "Lohfeldweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Petersaurach",
+      "spotCount": 1,
+      "lat": 49.318110450000006,
+      "lng": 10.73940935,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/306458080), ODbL"
+    }
+  ]
+}

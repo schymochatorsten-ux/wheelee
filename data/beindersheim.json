@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "beindersheim",
+    "name": "Beindersheim",
+    "center": {
+      "lat": 49.556513,
+      "lng": 8.328993500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "beindersheim-f5faa6d2a7",
+      "city": "beindersheim",
+      "label": "Frankenthaler Straße",
+      "street": "Frankenthaler Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Beindersheim",
+      "spotCount": 1,
+      "lat": 49.556511650000004,
+      "lng": 8.32904105,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1063174137), ODbL"
+    },
+    {
+      "id": "beindersheim-96227c3ac9",
+      "city": "beindersheim",
+      "label": "Frankenthaler Straße",
+      "street": "Frankenthaler Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Beindersheim",
+      "spotCount": 1,
+      "lat": 49.556513,
+      "lng": 8.328993500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1063174138), ODbL"
+    },
+    {
+      "id": "beindersheim-2e69985592",
+      "city": "beindersheim",
+      "label": "Frankenthaler Straße",
+      "street": "Frankenthaler Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Beindersheim",
+      "spotCount": 1,
+      "lat": 49.556514400000005,
+      "lng": 8.328945950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1063174139), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "schondra",
+    "name": "Schondra",
+    "center": {
+      "lat": 50.267579250000004,
+      "lng": 9.88238325
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schondra-79565c3f50",
+      "city": "schondra",
+      "label": "Rhön Ost",
+      "street": "Rhön Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schondra",
+      "spotCount": 4,
+      "lat": 50.267579250000004,
+      "lng": 9.88238325,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/367972269), ODbL"
+    },
+    {
+      "id": "schondra-97ad5d5e1b",
+      "city": "schondra",
+      "label": "Rhön West",
+      "street": "Rhön West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schondra",
+      "spotCount": 2,
+      "lat": 50.263289650000004,
+      "lng": 9.88112675,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/205526367), ODbL"
+    }
+  ]
+}

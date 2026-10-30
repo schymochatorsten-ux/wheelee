@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "gutach",
+    "name": "Gutach im Breisgau",
+    "center": {
+      "lat": 48.123316700000004,
+      "lng": 8.00427285
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gutach-e2cf70bb29",
+      "city": "gutach",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gutach im Breisgau",
+      "spotCount": 2,
+      "lat": 48.123512850000004,
+      "lng": 8.00465085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1392061091), ODbL"
+    },
+    {
+      "id": "gutach-440f5904ed",
+      "city": "gutach",
+      "label": "Golfstraße",
+      "street": "Golfstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Gutach im Breisgau",
+      "spotCount": 1,
+      "lat": 48.1133864,
+      "lng": 7.98889005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1418892293), ODbL"
+    },
+    {
+      "id": "gutach-19eb46f4ea",
+      "city": "gutach",
+      "label": "Golfstraße",
+      "street": "Golfstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gutach im Breisgau",
+      "spotCount": 1,
+      "lat": 48.1133706,
+      "lng": 7.988862000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1418892294), ODbL"
+    },
+    {
+      "id": "gutach-5bdd0d6b0d",
+      "city": "gutach",
+      "label": "Parkplatz Bleibach Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Gutach im Breisgau",
+      "spotCount": 2,
+      "lat": 48.123316700000004,
+      "lng": 8.00427285,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/229581308), ODbL"
+    }
+  ]
+}

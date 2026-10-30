@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "jonsdorf",
+    "name": "Jonsdorf",
+    "center": {
+      "lat": 50.85932795000001,
+      "lng": 14.706398150000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "jonsdorf-04ba2cc471",
+      "city": "jonsdorf",
+      "label": "Am Jonsberg",
+      "street": "Am Jonsberg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Jonsdorf",
+      "spotCount": 1,
+      "lat": 50.85345170000001,
+      "lng": 14.706398150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1378971082), ODbL"
+    },
+    {
+      "id": "jonsdorf-ec8abb4553",
+      "city": "jonsdorf",
+      "label": "Parkplatz Gondelfahrt/Waldbühne",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Jonsdorf",
+      "spotCount": 1,
+      "lat": 50.85034255000001,
+      "lng": 14.69136785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/41291711), ODbL"
+    },
+    {
+      "id": "jonsdorf-785993412b",
+      "city": "jonsdorf",
+      "label": "Steinbüschelweg",
+      "street": "Steinbüschelweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jonsdorf",
+      "spotCount": 1,
+      "lat": 50.86016945,
+      "lng": 14.71365875,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/60677910), ODbL"
+    },
+    {
+      "id": "jonsdorf-98be959f51",
+      "city": "jonsdorf",
+      "label": "Strümpfeweg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Jonsdorf",
+      "spotCount": 1,
+      "lat": 50.85932795000001,
+      "lng": 14.693334250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/60266385), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kloetze",
+    "name": "Klötze",
+    "center": {
+      "lat": 52.62913535,
+      "lng": 11.18477855
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kloetze-7d214d168c",
+      "city": "kloetze",
+      "label": "Schützenstraße",
+      "street": "Schützenstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Klötze",
+      "spotCount": 1,
+      "lat": 52.62913535,
+      "lng": 11.18477855,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1505615065), ODbL"
+    }
+  ]
+}

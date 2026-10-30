@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "schoengeising",
+    "name": "Schöngeising",
+    "center": {
+      "lat": 48.147259500000004,
+      "lng": 11.206603000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schoengeising-8985d19f9e",
+      "city": "schoengeising",
+      "label": "Nord",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schöngeising",
+      "spotCount": 1,
+      "lat": 48.147259500000004,
+      "lng": 11.190380350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/364407993), ODbL"
+    },
+    {
+      "id": "schoengeising-6f8a21b858",
+      "city": "schoengeising",
+      "label": "Scherrerstraße 2",
+      "street": "Scherrerstraße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schöngeising",
+      "spotCount": 1,
+      "lat": 48.138864500000004,
+      "lng": 11.206603000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1486695838), ODbL"
+    }
+  ]
+}

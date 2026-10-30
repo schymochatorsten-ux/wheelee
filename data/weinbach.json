@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "weinbach",
+    "name": "Weinbach",
+    "center": {
+      "lat": 50.43826250000001,
+      "lng": 8.292056250000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "weinbach-0864f52547",
+      "city": "weinbach",
+      "label": "Elkerhäuser Straße 17",
+      "street": "Elkerhäuser Straße",
+      "houseNumber": "17",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weinbach",
+      "spotCount": 1,
+      "lat": 50.43826250000001,
+      "lng": 8.292056250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1541290999), ODbL"
+    }
+  ]
+}

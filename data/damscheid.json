@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "damscheid",
+    "name": "Damscheid",
+    "center": {
+      "lat": 50.102399350000006,
+      "lng": 7.6811977
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "damscheid-0db1704c13",
+      "city": "damscheid",
+      "label": "St.-Johann-Straße 11",
+      "street": "St.-Johann-Straße",
+      "houseNumber": "11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Damscheid",
+      "spotCount": 2,
+      "lat": 50.102399350000006,
+      "lng": 7.6811977,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1037492497), ODbL"
+    }
+  ]
+}

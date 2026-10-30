@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "elstra",
+    "name": "Elstra",
+    "center": {
+      "lat": 51.22314815,
+      "lng": 14.130051550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "elstra-415616fffc",
+      "city": "elstra",
+      "label": "Lindenstraße 6",
+      "street": "Lindenstraße",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elstra",
+      "spotCount": 1,
+      "lat": 51.20997665,
+      "lng": 14.10481655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/402012937), ODbL"
+    },
+    {
+      "id": "elstra-3620667105",
+      "city": "elstra",
+      "label": "Stadtring",
+      "street": "Stadtring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elstra",
+      "spotCount": 1,
+      "lat": 51.22314815,
+      "lng": 14.130051550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/788593873), ODbL"
+    },
+    {
+      "id": "elstra-a4194073be",
+      "city": "elstra",
+      "label": "Stadtring 2",
+      "street": "Stadtring",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elstra",
+      "spotCount": 2,
+      "lat": 51.22373255,
+      "lng": 14.131367650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/86249234), ODbL"
+    },
+    {
+      "id": "elstra-000b858d92",
+      "city": "elstra",
+      "label": "Stadtring 2",
+      "street": "Stadtring",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Elstra",
+      "spotCount": 1,
+      "lat": 51.223866050000005,
+      "lng": 14.13123915,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1474107211), ODbL"
+    },
+    {
+      "id": "elstra-e6718ffebc",
+      "city": "elstra",
+      "label": "Stadtring 2",
+      "street": "Stadtring",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Elstra",
+      "spotCount": 1,
+      "lat": 51.22385460000001,
+      "lng": 14.131199300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1474107212), ODbL"
+    },
+    {
+      "id": "elstra-44c169b8b0",
+      "city": "elstra",
+      "label": "Talpenberger Straße",
+      "street": "Talpenberger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elstra",
+      "spotCount": 2,
+      "lat": 51.2205353,
+      "lng": 14.12467995,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1034790683), ODbL"
+    },
+    {
+      "id": "elstra-acfb42060d",
+      "city": "elstra",
+      "label": "Talpenberger Straße",
+      "street": "Talpenberger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Elstra",
+      "spotCount": 1,
+      "lat": 51.2206514,
+      "lng": 14.12505215,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1459650805), ODbL"
+    }
+  ]
+}

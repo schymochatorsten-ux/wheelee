@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "kalbach",
+    "name": "Kalbach",
+    "center": {
+      "lat": 50.4183287,
+      "lng": 9.7342826
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kalbach-ced6921199",
+      "city": "kalbach",
+      "label": "Tank- und Rastanlage Uttrichshausen West",
+      "street": "Tank- und Rastanlage Uttrichshausen West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kalbach",
+      "spotCount": 1,
+      "lat": 50.4182855,
+      "lng": 9.7342607,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1500095639), ODbL"
+    },
+    {
+      "id": "kalbach-6cdac95ed9",
+      "city": "kalbach",
+      "label": "Tank- und Rastanlage Uttrichshausen West",
+      "street": "Tank- und Rastanlage Uttrichshausen West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kalbach",
+      "spotCount": 1,
+      "lat": 50.4183287,
+      "lng": 9.7342826,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1500095640), ODbL"
+    }
+  ]
+}

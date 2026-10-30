@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "holtsee",
+    "name": "Holtsee",
+    "center": {
+      "lat": 54.4045117,
+      "lng": 9.8583389
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "holtsee-ad50c5f51f",
+      "city": "holtsee",
+      "label": "Wolfskoppel 3b",
+      "street": "Wolfskoppel",
+      "houseNumber": "3b",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Holtsee",
+      "spotCount": 4,
+      "lat": 54.4045117,
+      "lng": 9.8583389,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/863364736), ODbL"
+    }
+  ]
+}

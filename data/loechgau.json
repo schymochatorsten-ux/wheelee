@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "loechgau",
+    "name": "Löchgau",
+    "center": {
+      "lat": 49.004843900000004,
+      "lng": 9.104409
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "loechgau-b7269518f0",
+      "city": "loechgau",
+      "label": "Erligheimer Straße 29",
+      "street": "Erligheimer Straße",
+      "houseNumber": "29",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Löchgau",
+      "spotCount": 1,
+      "lat": 49.004843900000004,
+      "lng": 9.104409,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11641380489), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "birkenfeld-rp",
+    "name": "Birkenfeld",
+    "center": {
+      "lat": 49.651710400000006,
+      "lng": 7.1740844500000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "birkenfeld-rp-547aff4013",
+      "city": "birkenfeld-rp",
+      "label": "Am Zimmerbach 14",
+      "street": "Am Zimmerbach",
+      "houseNumber": "14",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Birkenfeld",
+      "spotCount": 1,
+      "lat": 49.64650545000001,
+      "lng": 7.164935700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1209173071), ODbL"
+    },
+    {
+      "id": "birkenfeld-rp-73dc5994ad",
+      "city": "birkenfeld-rp",
+      "label": "Wasserschiederstraße",
+      "street": "Wasserschiederstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Birkenfeld",
+      "spotCount": 1,
+      "lat": 49.651710400000006,
+      "lng": 7.1740844500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/214655162), ODbL"
+    }
+  ]
+}

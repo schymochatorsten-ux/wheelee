@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "st-peter",
+    "name": "St. Peter",
+    "center": {
+      "lat": 48.0196038,
+      "lng": 8.03499325
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "st-peter-cd732b1ebf",
+      "city": "st-peter",
+      "label": "Glottertalstraße",
+      "street": "Glottertalstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "St. Peter",
+      "spotCount": 2,
+      "lat": 48.0196038,
+      "lng": 8.03499325,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/537746246), ODbL"
+    }
+  ]
+}

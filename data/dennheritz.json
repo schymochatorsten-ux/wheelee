@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "dennheritz",
+    "name": "Dennheritz",
+    "center": {
+      "lat": 50.81815685000001,
+      "lng": 12.4633955
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dennheritz-49659aba1f",
+      "city": "dennheritz",
+      "label": "Meeraner Straße",
+      "street": "Meeraner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dennheritz",
+      "spotCount": 1,
+      "lat": 50.81815685000001,
+      "lng": 12.4632318,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1433163896), ODbL"
+    },
+    {
+      "id": "dennheritz-4bb4ebc421",
+      "city": "dennheritz",
+      "label": "Meeraner Straße",
+      "street": "Meeraner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dennheritz",
+      "spotCount": 1,
+      "lat": 50.818083200000004,
+      "lng": 12.4633955,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1433163897), ODbL"
+    }
+  ]
+}

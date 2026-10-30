@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hagelstadt",
+    "name": "Hagelstadt",
+    "center": {
+      "lat": 48.89572615,
+      "lng": 12.2146313
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hagelstadt-fd02ba1ad0",
+      "city": "hagelstadt",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hagelstadt",
+      "spotCount": 1,
+      "lat": 48.89572615,
+      "lng": 12.2146313,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/473143744), ODbL"
+    }
+  ]
+}

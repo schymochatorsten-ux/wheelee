@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "schwaig-b-nuernberg",
+    "name": "Schwaig b.Nürnberg",
+    "center": {
+      "lat": 49.47196580000001,
+      "lng": 11.197300000000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schwaig-b-nuernberg-51ec882b3b",
+      "city": "schwaig-b-nuernberg",
+      "label": "Altdorfer Straße",
+      "street": "Altdorfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwaig b.Nürnberg",
+      "spotCount": 9,
+      "lat": 49.47196580000001,
+      "lng": 11.204794150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/96072251), ODbL"
+    },
+    {
+      "id": "schwaig-b-nuernberg-6ecebf0dd2",
+      "city": "schwaig-b-nuernberg",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwaig b.Nürnberg",
+      "spotCount": 1,
+      "lat": 49.4715925,
+      "lng": 11.20015105,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/452441461), ODbL"
+    },
+    {
+      "id": "schwaig-b-nuernberg-f298bd2d10",
+      "city": "schwaig-b-nuernberg",
+      "label": "Am Kohlschlag",
+      "street": "Am Kohlschlag",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwaig b.Nürnberg",
+      "spotCount": 2,
+      "lat": 49.481414300000004,
+      "lng": 11.197300000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/192756740), ODbL"
+    },
+    {
+      "id": "schwaig-b-nuernberg-489f243646",
+      "city": "schwaig-b-nuernberg",
+      "label": "park+ride",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwaig b.Nürnberg",
+      "spotCount": 3,
+      "lat": 49.47237455,
+      "lng": 11.2030794,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/50807276), ODbL"
+    },
+    {
+      "id": "schwaig-b-nuernberg-cfecce1a0f",
+      "city": "schwaig-b-nuernberg",
+      "label": "Parkstraße 3",
+      "street": "Parkstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwaig b.Nürnberg",
+      "spotCount": 1,
+      "lat": 49.473413300000004,
+      "lng": 11.19703,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1744333723), ODbL"
+    },
+    {
+      "id": "schwaig-b-nuernberg-d931ecc7d1",
+      "city": "schwaig-b-nuernberg",
+      "label": "Tulpenweg 19",
+      "street": "Tulpenweg",
+      "houseNumber": "19",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwaig b.Nürnberg",
+      "spotCount": 2,
+      "lat": 49.467290000000006,
+      "lng": 11.194375700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1174140252), ODbL"
+    },
+    {
+      "id": "schwaig-b-nuernberg-94223f01ba",
+      "city": "schwaig-b-nuernberg",
+      "label": "Wieseneckstraße 26",
+      "street": "Wieseneckstraße",
+      "houseNumber": "26",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwaig b.Nürnberg",
+      "spotCount": 1,
+      "lat": 49.4702288,
+      "lng": 11.188103300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/657312742), ODbL"
+    }
+  ]
+}

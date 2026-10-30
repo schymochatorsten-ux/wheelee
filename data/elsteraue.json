@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "elsteraue",
+    "name": "Elsteraue",
+    "center": {
+      "lat": 51.07193455,
+      "lng": 12.193948850000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "elsteraue-7b6d73313c",
+      "city": "elsteraue",
+      "label": "Doktor-von-Linde-Straße",
+      "street": "Doktor-von-Linde-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elsteraue",
+      "spotCount": 2,
+      "lat": 51.07193455,
+      "lng": 12.193948850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/536068193), ODbL"
+    }
+  ]
+}

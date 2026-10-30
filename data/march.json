@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "march",
+    "name": "March",
+    "center": {
+      "lat": 48.04803995,
+      "lng": 7.78527985
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "march-d67fb14643",
+      "city": "march",
+      "label": "Hugstetten ZOB",
+      "street": "Hugstetten ZOB",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "March",
+      "spotCount": 2,
+      "lat": 48.04803995,
+      "lng": 7.78483505,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1386542015), ODbL"
+    },
+    {
+      "id": "march-a3f1acf14c",
+      "city": "march",
+      "label": "Parkplatz Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "March",
+      "spotCount": 2,
+      "lat": 48.04778415,
+      "lng": 7.78527985,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/30278237), ODbL"
+    }
+  ]
+}

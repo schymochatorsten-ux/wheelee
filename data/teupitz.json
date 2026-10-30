@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "teupitz",
+    "name": "Teupitz",
+    "center": {
+      "lat": 52.13231585,
+      "lng": 13.608322750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "teupitz-bd8e1d77a9",
+      "city": "teupitz",
+      "label": "Am Sportplatz",
+      "street": "Am Sportplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Teupitz",
+      "spotCount": 1,
+      "lat": 52.1319443,
+      "lng": 13.6157666,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/932951313), ODbL"
+    },
+    {
+      "id": "teupitz-c056e00ebe",
+      "city": "teupitz",
+      "label": "Gutzmannstraße",
+      "street": "Gutzmannstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Teupitz",
+      "spotCount": 1,
+      "lat": 52.13231585,
+      "lng": 13.6083216,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1524765664), ODbL"
+    },
+    {
+      "id": "teupitz-59c91bd625",
+      "city": "teupitz",
+      "label": "Gutzmannstraße",
+      "street": "Gutzmannstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Teupitz",
+      "spotCount": 1,
+      "lat": 52.1323458,
+      "lng": 13.608322750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1524765665), ODbL"
+    }
+  ]
+}

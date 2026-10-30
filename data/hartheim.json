@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hartheim",
+    "name": "Hartheim am Rhein",
+    "center": {
+      "lat": 47.90917915,
+      "lng": 7.59274465
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hartheim-90b9b12883",
+      "city": "hartheim",
+      "label": "Rasthof",
+      "street": "Rasthof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hartheim am Rhein",
+      "spotCount": 6,
+      "lat": 47.90917915,
+      "lng": 7.59274465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/177726173), ODbL"
+    },
+    {
+      "id": "hartheim-153bb72874",
+      "city": "hartheim",
+      "label": "Rasthof",
+      "street": "Rasthof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hartheim am Rhein",
+      "spotCount": 6,
+      "lat": 47.90876335,
+      "lng": 7.59242345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1088016361), ODbL"
+    }
+  ]
+}

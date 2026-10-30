@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "fehrbellin",
+    "name": "Fehrbellin",
+    "center": {
+      "lat": 52.7550116,
+      "lng": 12.855543800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "fehrbellin-70983c122e",
+      "city": "fehrbellin",
+      "label": "Linumer Bruch-Süd",
+      "street": "Linumer Bruch-Süd",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Fehrbellin",
+      "spotCount": 5,
+      "lat": 52.7528506,
+      "lng": 12.855543800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1443861049), ODbL"
+    },
+    {
+      "id": "fehrbellin-dfd3ded48f",
+      "city": "fehrbellin",
+      "label": "McDrive",
+      "street": "McDrive",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Fehrbellin",
+      "spotCount": 3,
+      "lat": 52.7550116,
+      "lng": 12.852454000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/397239672), ODbL"
+    }
+  ]
+}

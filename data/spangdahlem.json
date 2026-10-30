@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "spangdahlem",
+    "name": "Spangdahlem",
+    "center": {
+      "lat": 49.99863190000001,
+      "lng": 6.699141600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "spangdahlem-7d658a94f4",
+      "city": "spangdahlem",
+      "label": "Morning Circle",
+      "street": "Morning Circle",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Spangdahlem",
+      "spotCount": 6,
+      "lat": 49.99863190000001,
+      "lng": 6.699141600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/516180358), ODbL"
+    }
+  ]
+}

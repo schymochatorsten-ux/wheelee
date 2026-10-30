@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "frauenneuharting",
+    "name": "Frauenneuharting",
+    "center": {
+      "lat": 48.037477700000004,
+      "lng": 12.04603625
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "frauenneuharting-9cb9416505",
+      "city": "frauenneuharting",
+      "label": "Dorfstraße",
+      "street": "Dorfstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Frauenneuharting",
+      "spotCount": 1,
+      "lat": 48.037477700000004,
+      "lng": 12.04603625,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/978103593), ODbL"
+    }
+  ]
+}

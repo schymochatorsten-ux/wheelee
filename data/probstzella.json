@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "probstzella",
+    "name": "Probstzella",
+    "center": {
+      "lat": 50.52888985,
+      "lng": 11.382814150000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "probstzella-d47d94c396",
+      "city": "probstzella",
+      "label": "Probstzella Bahnhof",
+      "street": "Probstzella Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Probstzella",
+      "spotCount": 3,
+      "lat": 50.52888985,
+      "lng": 11.382814150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/364021530), ODbL"
+    }
+  ]
+}

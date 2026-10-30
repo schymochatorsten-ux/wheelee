@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "zwenkau",
+    "name": "Zwenkau",
+    "center": {
+      "lat": 51.25092995,
+      "lng": 12.3339469
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zwenkau-e475725ac9",
+      "city": "zwenkau",
+      "label": "Erweiterungsfläche bei Großveranstaltungen",
+      "street": "Erweiterungsfläche bei Großveranstaltungen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Zwenkau",
+      "spotCount": 4,
+      "lat": 51.25092995,
+      "lng": 12.315628150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/235051567), ODbL"
+    },
+    {
+      "id": "zwenkau-704132cc85",
+      "city": "zwenkau",
+      "label": "KAP",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zwenkau",
+      "spotCount": 1,
+      "lat": 51.23160835,
+      "lng": 12.3339469,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/845507942), ODbL"
+    }
+  ]
+}

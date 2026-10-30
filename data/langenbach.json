@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "langenbach",
+    "name": "Langenbach",
+    "center": {
+      "lat": 48.4391832,
+      "lng": 11.85430835
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "langenbach-c735e18f69",
+      "city": "langenbach",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Langenbach",
+      "spotCount": 1,
+      "lat": 48.4391832,
+      "lng": 11.85430835,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/367997826), ODbL"
+    }
+  ]
+}

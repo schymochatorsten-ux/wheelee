@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "gross-nemerow",
+    "name": "Groß Nemerow",
+    "center": {
+      "lat": 53.4748967,
+      "lng": 13.1970901
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gross-nemerow-aeec807731",
+      "city": "gross-nemerow",
+      "label": "Bornmühle",
+      "street": "Bornmühle",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Groß Nemerow",
+      "spotCount": 1,
+      "lat": 53.4748967,
+      "lng": 13.1970747,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10209481410), ODbL"
+    },
+    {
+      "id": "gross-nemerow-2a3e3a1bce",
+      "city": "gross-nemerow",
+      "label": "Bornmühle",
+      "street": "Bornmühle",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Groß Nemerow",
+      "spotCount": 1,
+      "lat": 53.4748705,
+      "lng": 13.1970901,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10209481411), ODbL"
+    }
+  ]
+}

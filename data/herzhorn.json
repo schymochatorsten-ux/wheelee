@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "herzhorn",
+    "name": "Herzhorn",
+    "center": {
+      "lat": 53.7862894,
+      "lng": 9.485516400000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "herzhorn-2e3f13e778",
+      "city": "herzhorn",
+      "label": "Am Markt",
+      "street": "Am Markt",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herzhorn",
+      "spotCount": 1,
+      "lat": 53.7862894,
+      "lng": 9.485516400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/865169292), ODbL"
+    }
+  ]
+}

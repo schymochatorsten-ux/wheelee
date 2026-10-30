@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "kirchheim",
+    "name": "Kirchheim am Neckar",
+    "center": {
+      "lat": 49.034513200000006,
+      "lng": 9.1473188
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kirchheim-b27f37c281",
+      "city": "kirchheim",
+      "label": "Besigheimer Straße",
+      "street": "Besigheimer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kirchheim am Neckar",
+      "spotCount": 1,
+      "lat": 49.034546600000006,
+      "lng": 9.1473116,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11641352965), ODbL"
+    },
+    {
+      "id": "kirchheim-83fdd3ef12",
+      "city": "kirchheim",
+      "label": "Christofstraße",
+      "street": "Christofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kirchheim am Neckar",
+      "spotCount": 3,
+      "lat": 49.034524850000004,
+      "lng": 9.1477799,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/124743978), ODbL"
+    },
+    {
+      "id": "kirchheim-843a67e29c",
+      "city": "kirchheim",
+      "label": "Max-Eyth-Straße 6",
+      "street": "Max-Eyth-Straße",
+      "houseNumber": "6",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kirchheim am Neckar",
+      "spotCount": 1,
+      "lat": 49.034513200000006,
+      "lng": 9.147315500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11641352966), ODbL"
+    },
+    {
+      "id": "kirchheim-2acea7aaf9",
+      "city": "kirchheim",
+      "label": "Max-Eyth-Straße 6",
+      "street": "Max-Eyth-Straße",
+      "houseNumber": "6",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kirchheim am Neckar",
+      "spotCount": 1,
+      "lat": 49.0344824,
+      "lng": 9.1473188,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11641352967), ODbL"
+    },
+    {
+      "id": "kirchheim-d8b3ef4bc5",
+      "city": "kirchheim",
+      "label": "Max-Eyth-Straße 6",
+      "street": "Max-Eyth-Straße",
+      "houseNumber": "6",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kirchheim am Neckar",
+      "spotCount": 1,
+      "lat": 49.0344508,
+      "lng": 9.1473253,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11641352968), ODbL"
+    }
+  ]
+}

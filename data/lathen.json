@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "lathen",
+    "name": "Lathen",
+    "center": {
+      "lat": 52.86171645,
+      "lng": 7.32011315
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lathen-7aaf76eae7",
+      "city": "lathen",
+      "label": "Eschring",
+      "street": "Eschring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lathen",
+      "spotCount": 1,
+      "lat": 52.85987780000001,
+      "lng": 7.319061400000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1150609363), ODbL"
+    },
+    {
+      "id": "lathen-53a4e1744c",
+      "city": "lathen",
+      "label": "Stotkamp",
+      "street": "Stotkamp",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lathen",
+      "spotCount": 2,
+      "lat": 52.86171645,
+      "lng": 7.32011315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1034562076), ODbL"
+    }
+  ]
+}

@@ -62,6 +62,9 @@ export const de = {
   "list.osmNote":
     "Die OpenStreetMap-Daten zeigen überwiegend Parkplätze mit ausgewiesenen Behindertenstellplätzen statt einzelner Stellplätze am Straßenrand und sind unvollständig – ein fehlender Eintrag heißt dort nicht, dass es keinen Behindertenparkplatz gibt.",
   "list.allCities": "Alle {count} Städte mit Quelle",
+  "list.cityFilter": "Stadt suchen",
+  "list.cityShown": "{shown} von {count} angezeigt – Suchbegriff eingeben, um weitere zu finden.",
+  "list.cityNone": "Keine Stadt gefunden.",
   "list.cityCounts": ": {spots} Standorte, {spaces} Stellplätze",
   "list.source": "Quelle: {source}",
   "list.licenseMissing": " · Lizenz nicht angegeben",
@@ -84,6 +87,9 @@ export const de = {
   "details.confirmed":
     "{strong} – die Stadtverwaltung und OpenStreetMap führen diesen Stellplatz an derselben Stelle.",
   "details.confirmedStrong": "Von zwei Quellen bestätigt",
+  "details.osmOnly":
+    "{strong} – die amtliche Liste der Stadt führt diesen Standort nicht. Er kann neu sein oder dort fehlen; die Angabe ist ungeprüft, bitte vor Ort nachsehen.",
+  "details.osmOnlyStrong": "Nur in OpenStreetMap",
   "details.approx":
     "Die Position ist nur ungefähr bekannt – der Parkplatz liegt in dieser Straße, die genaue Stelle kann abweichen.",
   "details.source": "Quelle: {source}",
@@ -157,6 +163,8 @@ export const de = {
   "settings.legal": "Rechtliches",
   "settings.imprint": "Impressum",
   "settings.privacy": "Datenschutzerklärung",
+  "settings.sources": "Quellen und Lizenzen",
+  "settings.coverage": "Datenabdeckung",
 
   "account.emailInvalid": "Diese E-Mail-Adresse sieht nicht richtig aus.",
   "account.passwordTooShort": "Das Passwort muss mindestens {min} Zeichen lang sein.",

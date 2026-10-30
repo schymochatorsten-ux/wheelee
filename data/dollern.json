@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "dollern",
+    "name": "Dollern",
+    "center": {
+      "lat": 53.54122825,
+      "lng": 9.54300025
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dollern-7587ea777e",
+      "city": "dollern",
+      "label": "Hagener Weg",
+      "street": "Hagener Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dollern",
+      "spotCount": 2,
+      "lat": 53.54122825,
+      "lng": 9.54300025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/668703154), ODbL"
+    }
+  ]
+}

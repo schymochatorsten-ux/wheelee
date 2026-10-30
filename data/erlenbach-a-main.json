@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "erlenbach-a-main",
+    "name": "Erlenbach a.Main",
+    "center": {
+      "lat": 49.817045750000005,
+      "lng": 9.1642935
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "erlenbach-a-main-2a184d5bae",
+      "city": "erlenbach-a-main",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Erlenbach a.Main",
+      "spotCount": 1,
+      "lat": 49.8046248,
+      "lng": 9.155102500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/36974837), ODbL"
+    },
+    {
+      "id": "erlenbach-a-main-24ee5e5ba1",
+      "city": "erlenbach-a-main",
+      "label": "Behindertenparkplatz Erlenbach a.Main",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Erlenbach a.Main",
+      "spotCount": 1,
+      "lat": 49.817045750000005,
+      "lng": 9.1642935,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1338239152), ODbL"
+    }
+  ]
+}

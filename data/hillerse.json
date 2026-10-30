@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hillerse",
+    "name": "Hillerse",
+    "center": {
+      "lat": 52.4169861,
+      "lng": 10.41094685
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hillerse-23711ce7ca",
+      "city": "hillerse",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hillerse",
+      "spotCount": 1,
+      "lat": 52.4169861,
+      "lng": 10.41094685,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/200889598), ODbL"
+    }
+  ]
+}

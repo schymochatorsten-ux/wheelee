@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "altenkirchen",
+    "name": "Altenkirchen (Westerwald)",
+    "center": {
+      "lat": 50.68565125000001,
+      "lng": 7.638333800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "altenkirchen-ca2561b70e",
+      "city": "altenkirchen",
+      "label": "Konrad-Adenauer-Platz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Altenkirchen (Westerwald)",
+      "spotCount": 1,
+      "lat": 50.6845878,
+      "lng": 7.6379523,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/225050075), ODbL"
+    },
+    {
+      "id": "altenkirchen-bf4f894a11",
+      "city": "altenkirchen",
+      "label": "Parkplatz Postinnenhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Altenkirchen (Westerwald)",
+      "spotCount": 1,
+      "lat": 50.68565125000001,
+      "lng": 7.638333800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/605079860), ODbL"
+    },
+    {
+      "id": "altenkirchen-7b086b8915",
+      "city": "altenkirchen",
+      "label": "Verbandsgemeindeverwaltung / Rathaus",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Altenkirchen (Westerwald)",
+      "spotCount": 1,
+      "lat": 50.68952470000001,
+      "lng": 7.649485100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/48659385), ODbL"
+    }
+  ]
+}

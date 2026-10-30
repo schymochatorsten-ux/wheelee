@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "brest",
+    "name": "Brest",
+    "center": {
+      "lat": 53.46064125,
+      "lng": 9.3830548
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "brest-2f1bc9a220",
+      "city": "brest",
+      "label": "Bahnhof Brest-Aspe",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brest",
+      "spotCount": 1,
+      "lat": 53.46064125,
+      "lng": 9.3830548,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/439988293), ODbL"
+    }
+  ]
+}

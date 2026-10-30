@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "hebertshausen",
+    "name": "Hebertshausen",
+    "center": {
+      "lat": 48.29024665,
+      "lng": 11.455232050000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hebertshausen-ffb7f069a3",
+      "city": "hebertshausen",
+      "label": "Hebertshausen (S)",
+      "street": "Hebertshausen (S)",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Hebertshausen",
+      "spotCount": 2,
+      "lat": 48.29103595,
+      "lng": 11.4550683,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28310413), ODbL"
+    },
+    {
+      "id": "hebertshausen-62c959960b",
+      "city": "hebertshausen",
+      "label": "Hebertshausen (S)",
+      "street": "Hebertshausen (S)",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hebertshausen",
+      "spotCount": 1,
+      "lat": 48.2904798,
+      "lng": 11.455307600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1461914661), ODbL"
+    },
+    {
+      "id": "hebertshausen-83c52b1c44",
+      "city": "hebertshausen",
+      "label": "Walpertshofen",
+      "street": "Walpertshofen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Hebertshausen",
+      "spotCount": 2,
+      "lat": 48.2901076,
+      "lng": 11.45497855,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/224989712), ODbL"
+    },
+    {
+      "id": "hebertshausen-a763cc0934",
+      "city": "hebertshausen",
+      "label": "Walpertshofen",
+      "street": "Walpertshofen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hebertshausen",
+      "spotCount": 1,
+      "lat": 48.2901916,
+      "lng": 11.455342900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1461914659), ODbL"
+    },
+    {
+      "id": "hebertshausen-6c0ccab1b8",
+      "city": "hebertshausen",
+      "label": "Walpertshofen",
+      "street": "Walpertshofen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hebertshausen",
+      "spotCount": 1,
+      "lat": 48.29024665,
+      "lng": 11.455232050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1461914660), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "dettingen",
+    "name": "Dettingen an der Erms",
+    "center": {
+      "lat": 48.52813265,
+      "lng": 9.34438055
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dettingen-115487dc1f",
+      "city": "dettingen",
+      "label": "Bahnhofplatz",
+      "street": "Bahnhofplatz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dettingen an der Erms",
+      "spotCount": 1,
+      "lat": 48.52812285,
+      "lng": 9.34438055,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1393877974), ODbL"
+    },
+    {
+      "id": "dettingen-3be99a8f0c",
+      "city": "dettingen",
+      "label": "Bahnhofplatz 1",
+      "street": "Bahnhofplatz",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dettingen an der Erms",
+      "spotCount": 1,
+      "lat": 48.528142450000004,
+      "lng": 9.3442875,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1393877975), ODbL"
+    },
+    {
+      "id": "dettingen-1492025ab3",
+      "city": "dettingen",
+      "label": "Bahnhofplatz 1",
+      "street": "Bahnhofplatz",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Dettingen an der Erms",
+      "spotCount": 1,
+      "lat": 48.52813265,
+      "lng": 9.344334,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1393877976), ODbL"
+    },
+    {
+      "id": "dettingen-4634bf5e24",
+      "city": "dettingen",
+      "label": "Hülbener Straße",
+      "street": "Hülbener Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dettingen an der Erms",
+      "spotCount": 1,
+      "lat": 48.5241582,
+      "lng": 9.3550283,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1381824068), ODbL"
+    }
+  ]
+}

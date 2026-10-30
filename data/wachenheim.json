@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "wachenheim",
+    "name": "Wachenheim an der Weinstraße",
+    "center": {
+      "lat": 49.44192695,
+      "lng": 8.1828331
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wachenheim-c425645ba4",
+      "city": "wachenheim",
+      "label": "Friedelsheimer Straße",
+      "street": "Friedelsheimer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wachenheim an der Weinstraße",
+      "spotCount": 1,
+      "lat": 49.44192770000001,
+      "lng": 8.18279785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1389657933), ODbL"
+    },
+    {
+      "id": "wachenheim-53f5cc8e9b",
+      "city": "wachenheim",
+      "label": "Friedelsheimer Straße",
+      "street": "Friedelsheimer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wachenheim an der Weinstraße",
+      "spotCount": 1,
+      "lat": 49.44192695,
+      "lng": 8.1828331,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1389657934), ODbL"
+    },
+    {
+      "id": "wachenheim-a6bec39d3f",
+      "city": "wachenheim",
+      "label": "Schwetzinger Straße",
+      "street": "Schwetzinger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wachenheim an der Weinstraße",
+      "spotCount": 2,
+      "lat": 49.43946955,
+      "lng": 8.19082805,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1296098115), ODbL"
+    }
+  ]
+}

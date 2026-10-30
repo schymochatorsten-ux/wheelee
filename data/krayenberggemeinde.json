@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "krayenberggemeinde",
+    "name": "Krayenberggemeinde",
+    "center": {
+      "lat": 50.834025800000006,
+      "lng": 10.089621900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "krayenberggemeinde-d5ce31e14b",
+      "city": "krayenberggemeinde",
+      "label": "Über der Sporthalle",
+      "street": "Über der Sporthalle",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Krayenberggemeinde",
+      "spotCount": 1,
+      "lat": 50.834025800000006,
+      "lng": 10.089621900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1451671377), ODbL"
+    }
+  ]
+}

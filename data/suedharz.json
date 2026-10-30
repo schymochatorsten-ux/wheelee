@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "suedharz",
+    "name": "Südharz",
+    "center": {
+      "lat": 51.5716273,
+      "lng": 11.044426050000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "suedharz-280445f4d6",
+      "city": "suedharz",
+      "label": "Alte Auerbergstraße",
+      "street": "Alte Auerbergstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Südharz",
+      "spotCount": 4,
+      "lat": 51.58815655000001,
+      "lng": 11.011841450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1212029193), ODbL"
+    },
+    {
+      "id": "suedharz-5b480575b0",
+      "city": "suedharz",
+      "label": "Goldene Aue",
+      "street": "Goldene Aue",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Südharz",
+      "spotCount": 2,
+      "lat": 51.46681430000001,
+      "lng": 11.045063500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1194283146), ODbL"
+    },
+    {
+      "id": "suedharz-ee5dc768b5",
+      "city": "suedharz",
+      "label": "Goldene Aue",
+      "street": "Goldene Aue",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Südharz",
+      "spotCount": 2,
+      "lat": 51.46855905,
+      "lng": 11.044426050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1194289094), ODbL"
+    },
+    {
+      "id": "suedharz-e8768902b0",
+      "city": "suedharz",
+      "label": "Hainröder Hauptstraße 45",
+      "street": "Hainröder Hauptstraße",
+      "houseNumber": "45",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Südharz",
+      "spotCount": 1,
+      "lat": 51.50058560000001,
+      "lng": 11.1681611,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1455125891), ODbL"
+    },
+    {
+      "id": "suedharz-4d26b24e11",
+      "city": "suedharz",
+      "label": "Niedergasse 34",
+      "street": "Niedergasse",
+      "houseNumber": "34",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Südharz",
+      "spotCount": 1,
+      "lat": 51.5716273,
+      "lng": 10.956309450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1385727642), ODbL"
+    },
+    {
+      "id": "suedharz-7724a06833",
+      "city": "suedharz",
+      "label": "Rittergasse 42",
+      "street": "Rittergasse",
+      "houseNumber": "42",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Südharz",
+      "spotCount": 1,
+      "lat": 51.5746928,
+      "lng": 10.9518748,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/738006949), ODbL"
+    }
+  ]
+}

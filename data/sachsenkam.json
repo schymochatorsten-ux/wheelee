@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "sachsenkam",
+    "name": "Sachsenkam",
+    "center": {
+      "lat": 47.8219273,
+      "lng": 11.6246793
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sachsenkam-e63d974362",
+      "city": "sachsenkam",
+      "label": "Am Kirchsee",
+      "street": "Am Kirchsee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Sachsenkam",
+      "spotCount": 3,
+      "lat": 47.8219273,
+      "lng": 11.6246793,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28019439), ODbL"
+    }
+  ]
+}

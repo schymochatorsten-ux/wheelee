@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kanzem",
+    "name": "Kanzem",
+    "center": {
+      "lat": 49.668294200000005,
+      "lng": 6.578266150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kanzem-89779a0940",
+      "city": "kanzem",
+      "label": "Kirchstraße 15a",
+      "street": "Kirchstraße",
+      "houseNumber": "15a",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kanzem",
+      "spotCount": 1,
+      "lat": 49.668294200000005,
+      "lng": 6.578266150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1469834204), ODbL"
+    }
+  ]
+}

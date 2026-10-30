@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "eutingen",
+    "name": "Eutingen im Gäu",
+    "center": {
+      "lat": 48.479323400000006,
+      "lng": 8.7818741
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eutingen-7065e99a6f",
+      "city": "eutingen",
+      "label": "Neckarblick",
+      "street": "Neckarblick",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eutingen im Gäu",
+      "spotCount": 2,
+      "lat": 48.45667295,
+      "lng": 8.774863250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/254502686), ODbL"
+    },
+    {
+      "id": "eutingen-2054093e51",
+      "city": "eutingen",
+      "label": "P&R Eutingen Nord",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eutingen im Gäu",
+      "spotCount": 2,
+      "lat": 48.48458515,
+      "lng": 8.753651150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/846901486), ODbL"
+    },
+    {
+      "id": "eutingen-e2285c4b3b",
+      "city": "eutingen",
+      "label": "Weitinger Straße",
+      "street": "Weitinger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eutingen im Gäu",
+      "spotCount": 2,
+      "lat": 48.479323400000006,
+      "lng": 8.7822671,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12925326574), ODbL"
+    },
+    {
+      "id": "eutingen-045889f8e1",
+      "city": "eutingen",
+      "label": "Weitinger Straße",
+      "street": "Weitinger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Eutingen im Gäu",
+      "spotCount": 2,
+      "lat": 48.4792684,
+      "lng": 8.7818741,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/696072733), ODbL"
+    }
+  ]
+}

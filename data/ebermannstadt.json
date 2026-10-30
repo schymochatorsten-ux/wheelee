@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ebermannstadt",
+    "name": "Ebermannstadt",
+    "center": {
+      "lat": 49.7785658,
+      "lng": 11.18627175
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ebermannstadt-d905c5e597",
+      "city": "ebermannstadt",
+      "label": "Franz-Dörrzapf-Straße",
+      "street": "Franz-Dörrzapf-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ebermannstadt",
+      "spotCount": 1,
+      "lat": 49.7785658,
+      "lng": 11.18627175,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28407183), ODbL"
+    }
+  ]
+}

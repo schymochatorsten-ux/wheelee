@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wermsdorf",
+    "name": "Wermsdorf",
+    "center": {
+      "lat": 51.275433500000005,
+      "lng": 12.938463100000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wermsdorf-8f120eda36",
+      "city": "wermsdorf",
+      "label": "An der Hubertusburg",
+      "street": "An der Hubertusburg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wermsdorf",
+      "spotCount": 1,
+      "lat": 51.275433500000005,
+      "lng": 12.938463100000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/668326169), ODbL"
+    }
+  ]
+}

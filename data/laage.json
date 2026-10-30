@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "laage",
+    "name": "Laage",
+    "center": {
+      "lat": 53.92207425000001,
+      "lng": 12.352225350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "laage-87fa029f21",
+      "city": "laage",
+      "label": "Weidenweg",
+      "street": "Weidenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Laage",
+      "spotCount": 2,
+      "lat": 53.92207425000001,
+      "lng": 12.352225350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/33179396), ODbL"
+    }
+  ]
+}

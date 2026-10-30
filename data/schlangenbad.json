@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "schlangenbad",
+    "name": "Schlangenbad",
+    "center": {
+      "lat": 50.0939022,
+      "lng": 8.10069275
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schlangenbad-58d077070e",
+      "city": "schlangenbad",
+      "label": "Bärstadter Straße",
+      "street": "Bärstadter Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schlangenbad",
+      "spotCount": 1,
+      "lat": 50.1089989,
+      "lng": 8.096450500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/856824183), ODbL"
+    },
+    {
+      "id": "schlangenbad-51b27ae1d6",
+      "city": "schlangenbad",
+      "label": "Rheingauer Straße",
+      "street": "Rheingauer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schlangenbad",
+      "spotCount": 2,
+      "lat": 50.0939022,
+      "lng": 8.100269,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1461080617), ODbL"
+    },
+    {
+      "id": "schlangenbad-97e59476d9",
+      "city": "schlangenbad",
+      "label": "Rheingauer Straße 23",
+      "street": "Rheingauer Straße",
+      "houseNumber": "23",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schlangenbad",
+      "spotCount": 1,
+      "lat": 50.093150200000004,
+      "lng": 8.1016441,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1985461744), ODbL"
+    },
+    {
+      "id": "schlangenbad-2cfcc579f3",
+      "city": "schlangenbad",
+      "label": "Rheingauer Straße 33",
+      "street": "Rheingauer Straße",
+      "houseNumber": "33",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schlangenbad",
+      "spotCount": 2,
+      "lat": 50.0932255,
+      "lng": 8.10069275,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/187937873), ODbL"
+    },
+    {
+      "id": "schlangenbad-019704ceaa",
+      "city": "schlangenbad",
+      "label": "Schwalbacher Straße",
+      "street": "Schwalbacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schlangenbad",
+      "spotCount": 1,
+      "lat": 50.10333035000001,
+      "lng": 8.103126150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/71884430), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "weissenthurm",
+    "name": "Weißenthurm",
+    "center": {
+      "lat": 50.414623750000004,
+      "lng": 7.4593609
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "weissenthurm-c636d73f32",
+      "city": "weissenthurm",
+      "label": "Hauptstraße 105",
+      "street": "Hauptstraße",
+      "houseNumber": "105",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weißenthurm",
+      "spotCount": 2,
+      "lat": 50.414623750000004,
+      "lng": 7.4593609,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/358053765), ODbL"
+    }
+  ]
+}

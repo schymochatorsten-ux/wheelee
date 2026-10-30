@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "reckendorf",
+    "name": "Reckendorf",
+    "center": {
+      "lat": 50.0191529,
+      "lng": 10.83362905
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "reckendorf-b9557536c3",
+      "city": "reckendorf",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Reckendorf",
+      "spotCount": 1,
+      "lat": 50.0191529,
+      "lng": 10.83362905,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/135958327), ODbL"
+    }
+  ]
+}

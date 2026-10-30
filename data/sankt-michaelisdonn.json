@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "sankt-michaelisdonn",
+    "name": "Sankt Michaelisdonn",
+    "center": {
+      "lat": 53.9886726,
+      "lng": 9.115551700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sankt-michaelisdonn-ab0b2c591f",
+      "city": "sankt-michaelisdonn",
+      "label": "Am Rathaus 8",
+      "street": "Am Rathaus",
+      "houseNumber": "8",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sankt Michaelisdonn",
+      "spotCount": 1,
+      "lat": 53.9886726,
+      "lng": 9.1157073,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6794806575), ODbL"
+    },
+    {
+      "id": "sankt-michaelisdonn-cc94a4417f",
+      "city": "sankt-michaelisdonn",
+      "label": "Am Rathaus 8",
+      "street": "Am Rathaus",
+      "houseNumber": "8",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sankt Michaelisdonn",
+      "spotCount": 1,
+      "lat": 53.9883509,
+      "lng": 9.115551700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6794806576), ODbL"
+    },
+    {
+      "id": "sankt-michaelisdonn-f2b7235e20",
+      "city": "sankt-michaelisdonn",
+      "label": "Bahnhofstraße 26",
+      "street": "Bahnhofstraße",
+      "houseNumber": "26",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sankt Michaelisdonn",
+      "spotCount": 1,
+      "lat": 53.9899275,
+      "lng": 9.1168566,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6794806573), ODbL"
+    },
+    {
+      "id": "sankt-michaelisdonn-3ecd66a05f",
+      "city": "sankt-michaelisdonn",
+      "label": "Johannßenstraße",
+      "street": "Johannßenstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sankt Michaelisdonn",
+      "spotCount": 2,
+      "lat": 53.988779900000004,
+      "lng": 9.1116384,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6341091947), ODbL"
+    },
+    {
+      "id": "sankt-michaelisdonn-c9e28e7c8c",
+      "city": "sankt-michaelisdonn",
+      "label": "Johannßenstraße 2",
+      "street": "Johannßenstraße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sankt Michaelisdonn",
+      "spotCount": 1,
+      "lat": 53.987728000000004,
+      "lng": 9.114562000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6794806574), ODbL"
+    }
+  ]
+}

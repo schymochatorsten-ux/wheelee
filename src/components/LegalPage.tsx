@@ -55,7 +55,7 @@ export async function LegalPage({ title, updated, children }: LegalPageProps) {
         <h1 lang="de" className="mt-3 text-2xl font-semibold hyphens-auto">
           {title}
         </h1>
-        <p className="mt-1 text-sm text-neutral-500">{t("legal.updated", { date })}</p>
+        <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">{t("legal.updated", { date })}</p>
         {locale !== DEFAULT_LOCALE && (
           <p
             lang={locale}

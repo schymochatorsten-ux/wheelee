@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "waldenburg",
+    "name": "Waldenburg",
+    "center": {
+      "lat": 50.89659255000001,
+      "lng": 12.628289800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "waldenburg-fcadecf3ac",
+      "city": "waldenburg",
+      "label": "Bachstraße",
+      "street": "Bachstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldenburg",
+      "spotCount": 40,
+      "lat": 50.89659255000001,
+      "lng": 12.628289800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1112188587), ODbL"
+    }
+  ]
+}

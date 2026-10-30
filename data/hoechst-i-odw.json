@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "hoechst-i-odw",
+    "name": "Höchst i.Odw.",
+    "center": {
+      "lat": 49.80068265,
+      "lng": 9.0015032
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hoechst-i-odw-badb87e929",
+      "city": "hoechst-i-odw",
+      "label": "Aldi",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Höchst i.Odw.",
+      "spotCount": 2,
+      "lat": 49.80170695,
+      "lng": 9.00230045,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/120123212), ODbL"
+    },
+    {
+      "id": "hoechst-i-odw-636e92f910",
+      "city": "hoechst-i-odw",
+      "label": "dm Lidl Easy Apotheke",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Höchst i.Odw.",
+      "spotCount": 4,
+      "lat": 49.80068265,
+      "lng": 9.0015032,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/286818258), ODbL"
+    },
+    {
+      "id": "hoechst-i-odw-a6c884e276",
+      "city": "hoechst-i-odw",
+      "label": "Pestalozzistraße",
+      "street": "Pestalozzistraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Höchst i.Odw.",
+      "spotCount": 2,
+      "lat": 49.79404375,
+      "lng": 8.99406375,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/267657570), ODbL"
+    }
+  ]
+}

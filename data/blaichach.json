@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "blaichach",
+    "name": "Blaichach",
+    "center": {
+      "lat": 47.5436045,
+      "lng": 10.257414500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "blaichach-cf62a4e250",
+      "city": "blaichach",
+      "label": "Ettensberger Straße 5",
+      "street": "Ettensberger Straße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Blaichach",
+      "spotCount": 1,
+      "lat": 47.5436045,
+      "lng": 10.257414500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1073798121), ODbL"
+    }
+  ]
+}

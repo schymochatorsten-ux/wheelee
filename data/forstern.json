@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "forstern",
+    "name": "Forstern",
+    "center": {
+      "lat": 48.19069005,
+      "lng": 11.976640750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "forstern-a36c8e8cc2",
+      "city": "forstern",
+      "label": "Franz-Jaksch-Weg 1",
+      "street": "Franz-Jaksch-Weg",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Forstern",
+      "spotCount": 1,
+      "lat": 48.183693500000004,
+      "lng": 11.976640750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32459878), ODbL"
+    },
+    {
+      "id": "forstern-4ffafe4195",
+      "city": "forstern",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Forstern",
+      "spotCount": 1,
+      "lat": 48.19069005,
+      "lng": 11.97063005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/656816806), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "gluecksburg",
+    "name": "Glücksburg (Ostsee)",
+    "center": {
+      "lat": 54.835335750000006,
+      "lng": 9.5444254
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gluecksburg-b4cfc39fa3",
+      "city": "gluecksburg",
+      "label": "Alter Markt",
+      "street": "Alter Markt",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Glücksburg (Ostsee)",
+      "spotCount": 1,
+      "lat": 54.835335750000006,
+      "lng": 9.545994,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1387793964), ODbL"
+    },
+    {
+      "id": "gluecksburg-df9422fc30",
+      "city": "gluecksburg",
+      "label": "Sandwigstraße 1",
+      "street": "Sandwigstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Glücksburg (Ostsee)",
+      "spotCount": 1,
+      "lat": 54.84102180000001,
+      "lng": 9.534194,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1414924160), ODbL"
+    },
+    {
+      "id": "gluecksburg-96d71d2a8a",
+      "city": "gluecksburg",
+      "label": "Schloßhof",
+      "street": "Schloßhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Glücksburg (Ostsee)",
+      "spotCount": 2,
+      "lat": 54.832494800000006,
+      "lng": 9.5444254,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3400339646), ODbL"
+    }
+  ]
+}

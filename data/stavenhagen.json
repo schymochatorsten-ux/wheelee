@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "stavenhagen",
+    "name": "Stavenhagen",
+    "center": {
+      "lat": 53.69718945,
+      "lng": 12.909936600000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "stavenhagen-ec6e9f5691",
+      "city": "stavenhagen",
+      "label": "August-Seidel-Straße",
+      "street": "August-Seidel-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stavenhagen",
+      "spotCount": 1,
+      "lat": 53.69688330000001,
+      "lng": 12.9002017,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/128876129), ODbL"
+    },
+    {
+      "id": "stavenhagen-30a0f21506",
+      "city": "stavenhagen",
+      "label": "Gülzower Damm 3a",
+      "street": "Gülzower Damm",
+      "houseNumber": "3a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stavenhagen",
+      "spotCount": 1,
+      "lat": 53.69718945,
+      "lng": 12.903030950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/128993193), ODbL"
+    },
+    {
+      "id": "stavenhagen-b5f238bb41",
+      "city": "stavenhagen",
+      "label": "Schloß",
+      "street": "Schloß",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stavenhagen",
+      "spotCount": 1,
+      "lat": 53.694930400000004,
+      "lng": 12.909936600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1344819992), ODbL"
+    },
+    {
+      "id": "stavenhagen-5b01f0d7fc",
+      "city": "stavenhagen",
+      "label": "Schultetusstraße",
+      "street": "Schultetusstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stavenhagen",
+      "spotCount": 1,
+      "lat": 53.70101135,
+      "lng": 12.910180850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/128993207), ODbL"
+    }
+  ]
+}

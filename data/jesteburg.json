@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "jesteburg",
+    "name": "Jesteburg",
+    "center": {
+      "lat": 53.3064436,
+      "lng": 9.94483125
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "jesteburg-89eff08c14",
+      "city": "jesteburg",
+      "label": "Allerbeekskehre",
+      "street": "Allerbeekskehre",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Jesteburg",
+      "spotCount": 1,
+      "lat": 53.3064358,
+      "lng": 9.94478085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1559193141), ODbL"
+    },
+    {
+      "id": "jesteburg-cfd044b389",
+      "city": "jesteburg",
+      "label": "Allerbeekskehre",
+      "street": "Allerbeekskehre",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Jesteburg",
+      "spotCount": 1,
+      "lat": 53.3064436,
+      "lng": 9.94483125,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1559193142), ODbL"
+    }
+  ]
+}

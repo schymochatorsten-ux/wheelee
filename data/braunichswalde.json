@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "braunichswalde",
+    "name": "Braunichswalde",
+    "center": {
+      "lat": 50.79995575,
+      "lng": 12.222436250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "braunichswalde-b78a017c7e",
+      "city": "braunichswalde",
+      "label": "Hauptstraße 35",
+      "street": "Hauptstraße",
+      "houseNumber": "35",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Braunichswalde",
+      "spotCount": 1,
+      "lat": 50.79995575,
+      "lng": 12.222436250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/152162175), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "buechen",
+    "name": "Büchen",
+    "center": {
+      "lat": 53.47655425000001,
+      "lng": 10.6226046
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "buechen-75138afdc6",
+      "city": "buechen",
+      "label": "Gudower Straße 1",
+      "street": "Gudower Straße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Büchen",
+      "spotCount": 1,
+      "lat": 53.48049735000001,
+      "lng": 10.63832795,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1062848644), ODbL"
+    },
+    {
+      "id": "buechen-7267363f77",
+      "city": "buechen",
+      "label": "Ladestraße",
+      "street": "Ladestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Büchen",
+      "spotCount": 3,
+      "lat": 53.47655425000001,
+      "lng": 10.6221386,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/583006357), ODbL"
+    },
+    {
+      "id": "buechen-7c069bbe93",
+      "city": "buechen",
+      "label": "Ladestraße",
+      "street": "Ladestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Büchen",
+      "spotCount": 3,
+      "lat": 53.474821750000004,
+      "lng": 10.6251115,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/675854614), ODbL"
+    },
+    {
+      "id": "buechen-e530f08a69",
+      "city": "buechen",
+      "label": "Lauenburger Straße",
+      "street": "Lauenburger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Büchen",
+      "spotCount": 1,
+      "lat": 53.4746083,
+      "lng": 10.6226046,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8657283529), ODbL"
+    },
+    {
+      "id": "buechen-49452ba1aa",
+      "city": "buechen",
+      "label": "Möllner Straße",
+      "street": "Möllner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Büchen",
+      "spotCount": 3,
+      "lat": 53.49018135,
+      "lng": 10.61398505,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/87370139), ODbL"
+    },
+    {
+      "id": "buechen-8cc9f13762",
+      "city": "buechen",
+      "label": "P+R Lauenburger Straße",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Büchen",
+      "spotCount": 1,
+      "lat": 53.4743283,
+      "lng": 10.622724999999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/507973158), ODbL"
+    },
+    {
+      "id": "buechen-2191a84fe4",
+      "city": "buechen",
+      "label": "Zwischen den Brücken 1",
+      "street": "Zwischen den Brücken",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Büchen",
+      "spotCount": 2,
+      "lat": 53.4795317,
+      "lng": 10.617371850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1058188943), ODbL"
+    }
+  ]
+}

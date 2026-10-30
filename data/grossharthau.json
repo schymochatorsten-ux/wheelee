@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "grossharthau",
+    "name": "Großharthau",
+    "center": {
+      "lat": 51.10639945,
+      "lng": 14.1026913
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grossharthau-227c5f3f3b",
+      "city": "grossharthau",
+      "label": "Zur Wesenitzaue 1",
+      "street": "Zur Wesenitzaue",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großharthau",
+      "spotCount": 2,
+      "lat": 51.10639945,
+      "lng": 14.1026913,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/702870271), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "ingersheim",
+    "name": "Ingersheim",
+    "center": {
+      "lat": 48.961153550000006,
+      "lng": 9.1840796
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ingersheim-291f467894",
+      "city": "ingersheim",
+      "label": "Aßmus",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ingersheim",
+      "spotCount": 2,
+      "lat": 48.957754800000004,
+      "lng": 9.17541145,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/246235885), ODbL"
+    },
+    {
+      "id": "ingersheim-b9527b90f8",
+      "city": "ingersheim",
+      "label": "Freiberger Straße 26",
+      "street": "Freiberger Straße",
+      "houseNumber": "26",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ingersheim",
+      "spotCount": 1,
+      "lat": 48.958706250000006,
+      "lng": 9.172326950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1361447186), ODbL"
+    },
+    {
+      "id": "ingersheim-38ac49a3f9",
+      "city": "ingersheim",
+      "label": "Goethestraße 1",
+      "street": "Goethestraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ingersheim",
+      "spotCount": 8,
+      "lat": 48.961153550000006,
+      "lng": 9.1840796,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/775699606), ODbL"
+    },
+    {
+      "id": "ingersheim-9dde363723",
+      "city": "ingersheim",
+      "label": "Talstraße",
+      "street": "Talstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ingersheim",
+      "spotCount": 1,
+      "lat": 48.96118495,
+      "lng": 9.1882672,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1479620636), ODbL"
+    },
+    {
+      "id": "ingersheim-3fccc3940c",
+      "city": "ingersheim",
+      "label": "Talstraße",
+      "street": "Talstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ingersheim",
+      "spotCount": 1,
+      "lat": 48.96120175,
+      "lng": 9.1882275,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1479620637), ODbL"
+    },
+    {
+      "id": "ingersheim-7060d6887e",
+      "city": "ingersheim",
+      "label": "Tiefengasse 9",
+      "street": "Tiefengasse",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ingersheim",
+      "spotCount": 11,
+      "lat": 48.960688700000006,
+      "lng": 9.1839481,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1033782210), ODbL"
+    }
+  ]
+}

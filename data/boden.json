@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "boden",
+    "name": "Boden",
+    "center": {
+      "lat": 50.471918200000005,
+      "lng": 7.85891595
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "boden-369bb6473a",
+      "city": "boden",
+      "label": "Parkplatz Ahrbachhalle Boden",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Boden",
+      "spotCount": 1,
+      "lat": 50.471918200000005,
+      "lng": 7.85891595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/151896633), ODbL"
+    }
+  ]
+}

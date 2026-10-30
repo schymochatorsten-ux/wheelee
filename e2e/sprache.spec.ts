@@ -203,6 +203,72 @@ test.describe("Polnisch", () => {
   });
 });
 
+test.describe("Niederländisch", () => {
+  test("Browsersprache Niederländisch: Oberfläche und Haftungshinweis, Rechtstexte deutsch", async ({
+    browser,
+    baseURL,
+  }) => {
+    const context = await browser.newContext({ locale: "nl-NL", baseURL });
+    const page = await context.newPage();
+    await page.goto("/");
+    await expect(page.locator("html")).toHaveAttribute("lang", "nl");
+    await page.getByRole("tab", { name: "Instellingen" }).click();
+    await expect(page.getByRole("heading", { name: "Taal", level: 2 })).toBeVisible();
+    await expect(page.getByRole("radio", { name: "Nederlands" })).toBeChecked();
+    await expect(page.getByRole("heading", { name: "Lezen voor je vertrekt" })).toBeVisible();
+    await expect(page.getByText("ter plaatse gelden de borden en markeringen")).toBeVisible();
+    await expect(page.getByText("Bitte vor der Fahrt lesen")).toHaveCount(0);
+
+    await page.goto("/impressum");
+    await expect(page.getByRole("heading", { name: "Impressum", level: 1 })).toBeVisible();
+    await context.close();
+  });
+});
+
+test.describe("Portugiesisch", () => {
+  test("Browsersprache Portugiesisch: Oberfläche und Haftungshinweis, Rechtstexte deutsch", async ({
+    browser,
+    baseURL,
+  }) => {
+    const context = await browser.newContext({ locale: "pt-PT", baseURL });
+    const page = await context.newPage();
+    await page.goto("/");
+    await expect(page.locator("html")).toHaveAttribute("lang", "pt");
+    await page.getByRole("tab", { name: "Definições" }).click();
+    await expect(page.getByRole("heading", { name: "Idioma", level: 2 })).toBeVisible();
+    await expect(page.getByRole("radio", { name: "Português" })).toBeChecked();
+    await expect(page.getByRole("heading", { name: "Ler antes de partir" })).toBeVisible();
+    await expect(page.getByText("no local, vale a sinalização")).toBeVisible();
+    await expect(page.getByText("Bitte vor der Fahrt lesen")).toHaveCount(0);
+
+    await page.goto("/impressum");
+    await expect(page.getByRole("heading", { name: "Impressum", level: 1 })).toBeVisible();
+    await context.close();
+  });
+});
+
+test.describe("Russisch", () => {
+  test("Browsersprache Russisch: Oberfläche und Haftungshinweis, Rechtstexte deutsch", async ({
+    browser,
+    baseURL,
+  }) => {
+    const context = await browser.newContext({ locale: "ru-RU", baseURL });
+    const page = await context.newPage();
+    await page.goto("/");
+    await expect(page.locator("html")).toHaveAttribute("lang", "ru");
+    await page.getByRole("tab", { name: "Настройки" }).click();
+    await expect(page.getByRole("heading", { name: "Язык", level: 2 })).toBeVisible();
+    await expect(page.getByRole("radio", { name: "Русский" })).toBeChecked();
+    await expect(page.getByRole("heading", { name: "Прочтите перед поездкой" })).toBeVisible();
+    await expect(page.getByText("на месте действуют знаки и разметка")).toBeVisible();
+    await expect(page.getByText("Bitte vor der Fahrt lesen")).toHaveCount(0);
+
+    await page.goto("/impressum");
+    await expect(page.getByRole("heading", { name: "Impressum", level: 1 })).toBeVisible();
+    await context.close();
+  });
+});
+
 test.describe("Zeitangaben und Entfernungen (ToDo 15.3, 15.4)", () => {
   /**
    * Aschaffenburg, Parkplatz mit `Mo-Sa 09:00-20:00` in den Daten

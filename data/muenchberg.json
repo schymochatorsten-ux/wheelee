@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "muenchberg",
+    "name": "Münchberg",
+    "center": {
+      "lat": 50.19577675000001,
+      "lng": 11.79246305
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "muenchberg-60e19f22d7",
+      "city": "muenchberg",
+      "label": "Dr.-Martin-Luther-Straße",
+      "street": "Dr.-Martin-Luther-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Münchberg",
+      "spotCount": 1,
+      "lat": 50.19577675000001,
+      "lng": 11.79246305,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1294654655), ODbL"
+    },
+    {
+      "id": "muenchberg-6520a43ee1",
+      "city": "muenchberg",
+      "label": "Pocksparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Münchberg",
+      "spotCount": 1,
+      "lat": 50.1905902,
+      "lng": 11.788526400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32955196), ODbL"
+    }
+  ]
+}

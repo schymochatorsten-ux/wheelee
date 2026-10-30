@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "burrweiler",
+    "name": "Burrweiler",
+    "center": {
+      "lat": 49.2476006,
+      "lng": 8.07650275
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "burrweiler-51d0885830",
+      "city": "burrweiler",
+      "label": "Schloßgasse",
+      "street": "Schloßgasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burrweiler",
+      "spotCount": 1,
+      "lat": 49.2476006,
+      "lng": 8.07650275,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/136162490), ODbL"
+    }
+  ]
+}

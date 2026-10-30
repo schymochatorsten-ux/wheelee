@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "poehl",
+    "name": "Pöhl",
+    "center": {
+      "lat": 50.5451609,
+      "lng": 12.181290800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "poehl-81ea85b737",
+      "city": "poehl",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pöhl",
+      "spotCount": 2,
+      "lat": 50.57099665,
+      "lng": 12.234479150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1156263734), ODbL"
+    },
+    {
+      "id": "poehl-d58eba8f69",
+      "city": "poehl",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pöhl",
+      "spotCount": 8,
+      "lat": 50.54484095,
+      "lng": 12.181290800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1193909986), ODbL"
+    },
+    {
+      "id": "poehl-6da32b4365",
+      "city": "poehl",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pöhl",
+      "spotCount": 6,
+      "lat": 50.5451609,
+      "lng": 12.180859000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1193909987), ODbL"
+    }
+  ]
+}

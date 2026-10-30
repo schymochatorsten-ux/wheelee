@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "veitshoechheim",
+    "name": "Veitshöchheim",
+    "center": {
+      "lat": 49.8307401,
+      "lng": 9.883393250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "veitshoechheim-f99afecb07",
+      "city": "veitshoechheim",
+      "label": "Am Geisberg",
+      "street": "Am Geisberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Veitshöchheim",
+      "spotCount": 5,
+      "lat": 49.828917700000005,
+      "lng": 9.894939650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31100086), ODbL"
+    },
+    {
+      "id": "veitshoechheim-03fb307332",
+      "city": "veitshoechheim",
+      "label": "Bahnhofstraße 11a",
+      "street": "Bahnhofstraße",
+      "houseNumber": "11a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Veitshöchheim",
+      "spotCount": 1,
+      "lat": 49.832261200000005,
+      "lng": 9.8756256,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/683733542), ODbL"
+    },
+    {
+      "id": "veitshoechheim-3dec25ea55",
+      "city": "veitshoechheim",
+      "label": "Benzstraße",
+      "street": "Benzstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Veitshöchheim",
+      "spotCount": 1,
+      "lat": 49.83176025,
+      "lng": 9.897987050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/758427426), ODbL"
+    },
+    {
+      "id": "veitshoechheim-5357481205",
+      "city": "veitshoechheim",
+      "label": "Bilhildisstraße",
+      "street": "Bilhildisstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Fr 09:00-18:00; Sa 09:00-13:00",
+      "district": "Veitshöchheim",
+      "spotCount": 2,
+      "lat": 49.8326106,
+      "lng": 9.8747576,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28923371), ODbL"
+    },
+    {
+      "id": "veitshoechheim-070efb2f07",
+      "city": "veitshoechheim",
+      "label": "Echterstraße",
+      "street": "Echterstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Veitshöchheim",
+      "spotCount": 2,
+      "lat": 49.8301089,
+      "lng": 9.87617265,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/118712303), ODbL"
+    },
+    {
+      "id": "veitshoechheim-13183d732e",
+      "city": "veitshoechheim",
+      "label": "Geisbergbad",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Veitshöchheim",
+      "spotCount": 4,
+      "lat": 49.82690635,
+      "lng": 9.889647400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31099789), ODbL"
+    },
+    {
+      "id": "veitshoechheim-85c0f83e1e",
+      "city": "veitshoechheim",
+      "label": "Günterslebener Straße",
+      "street": "Günterslebener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Veitshöchheim",
+      "spotCount": 1,
+      "lat": 49.8307401,
+      "lng": 9.883393250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/398705964), ODbL"
+    }
+  ]
+}

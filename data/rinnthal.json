@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "rinnthal",
+    "name": "Rinnthal",
+    "center": {
+      "lat": 49.2174544,
+      "lng": 7.926907700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rinnthal-36eb51b45f",
+      "city": "rinnthal",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rinnthal",
+      "spotCount": 1,
+      "lat": 49.2174544,
+      "lng": 7.926491650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/193058606), ODbL"
+    },
+    {
+      "id": "rinnthal-eefa4a551a",
+      "city": "rinnthal",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rinnthal",
+      "spotCount": 1,
+      "lat": 49.21738395,
+      "lng": 7.926907700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/332563599), ODbL"
+    }
+  ]
+}

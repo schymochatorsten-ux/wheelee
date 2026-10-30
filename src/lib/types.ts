@@ -22,8 +22,10 @@ export type GeoAccuracy =
  * `nur_amtlich` heißt: geprüft, aber in OpenStreetMap nicht erfasst – kein
  * Mangel am Standort, nur eine Quelle weniger. **Fehlt die Angabe ganz, wurde
  * nicht geprüft**, und das ist etwas anderes als `nur_amtlich`.
+ * `nur_osm` (ToDo 3.11) heißt: Der Standort kommt nur aus OpenStreetMap, die
+ * amtliche Liste der Stadt führt ihn nicht – angezeigt mit Hinweis.
  */
-export type ConfirmationState = "bestaetigt" | "nur_amtlich";
+export type ConfirmationState = "bestaetigt" | "nur_amtlich" | "nur_osm";
 
 /** Ein Stellplatz-Standort aus einer städtischen Liste. */
 export interface ParkingSpot {

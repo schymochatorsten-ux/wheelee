@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "herrieden",
+    "name": "Herrieden",
+    "center": {
+      "lat": 49.2324338,
+      "lng": 10.4979777
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "herrieden-37c952281f",
+      "city": "herrieden",
+      "label": "Behindertenparkplatz Herrieden",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Herrieden",
+      "spotCount": 1,
+      "lat": 49.206332100000004,
+      "lng": 10.428505900000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8415525615), ODbL"
+    },
+    {
+      "id": "herrieden-e897356eef",
+      "city": "herrieden",
+      "label": "Deocarplatz",
+      "street": "Deocarplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herrieden",
+      "spotCount": 1,
+      "lat": 49.2324338,
+      "lng": 10.4985409,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/7017851347), ODbL"
+    },
+    {
+      "id": "herrieden-1d825f2ff9",
+      "city": "herrieden",
+      "label": "Marktplatz 14",
+      "street": "Marktplatz",
+      "houseNumber": "14",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herrieden",
+      "spotCount": 1,
+      "lat": 49.23300040000001,
+      "lng": 10.4979777,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/234714129), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "poppenhausen",
+    "name": "Poppenhausen",
+    "center": {
+      "lat": 50.10044825000001,
+      "lng": 10.16189645
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "poppenhausen-6303de2ee8",
+      "city": "poppenhausen",
+      "label": "Behindertenparkplatz Poppenhausen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Poppenhausen",
+      "spotCount": 4,
+      "lat": 50.091325600000005,
+      "lng": 10.160301950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/320118134), ODbL"
+    },
+    {
+      "id": "poppenhausen-09001f5f86",
+      "city": "poppenhausen",
+      "label": "Maibacher Höhe Ost",
+      "street": "Maibacher Höhe Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Poppenhausen",
+      "spotCount": 2,
+      "lat": 50.10044825000001,
+      "lng": 10.16356125,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/153042156), ODbL"
+    },
+    {
+      "id": "poppenhausen-5fe0a93fe7",
+      "city": "poppenhausen",
+      "label": "Maibacher Höhe West",
+      "street": "Maibacher Höhe West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Poppenhausen",
+      "spotCount": 2,
+      "lat": 50.101940250000006,
+      "lng": 10.16189645,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/94329705), ODbL"
+    }
+  ]
+}

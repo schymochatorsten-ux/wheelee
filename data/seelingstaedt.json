@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "seelingstaedt",
+    "name": "Seelingstädt",
+    "center": {
+      "lat": 50.79025275000001,
+      "lng": 12.245504050000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "seelingstaedt-e331e21c9c",
+      "city": "seelingstaedt",
+      "label": "Werdauer Straße",
+      "street": "Werdauer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Seelingstädt",
+      "spotCount": 1,
+      "lat": 50.7901547,
+      "lng": 12.245466400000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/7703666685), ODbL"
+    },
+    {
+      "id": "seelingstaedt-a8489647c1",
+      "city": "seelingstaedt",
+      "label": "Werdauer Straße",
+      "street": "Werdauer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Seelingstädt",
+      "spotCount": 2,
+      "lat": 50.79025275000001,
+      "lng": 12.245504050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/152477520), ODbL"
+    }
+  ]
+}

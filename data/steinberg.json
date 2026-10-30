@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "steinberg",
+    "name": "Steinberg",
+    "center": {
+      "lat": 50.538405850000004,
+      "lng": 12.5024323
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "steinberg-94b63ab70f",
+      "city": "steinberg",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Steinberg",
+      "spotCount": 2,
+      "lat": 50.5367713,
+      "lng": 12.5024323,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/794210394), ODbL"
+    },
+    {
+      "id": "steinberg-8cd03394ee",
+      "city": "steinberg",
+      "label": "Am Bahnhof 3",
+      "street": "Am Bahnhof",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Steinberg",
+      "spotCount": 1,
+      "lat": 50.538405850000004,
+      "lng": 12.50161825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/818512502), ODbL"
+    }
+  ]
+}

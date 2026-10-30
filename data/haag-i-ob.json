@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "haag-i-ob",
+    "name": "Haag i.OB",
+    "center": {
+      "lat": 48.174678150000005,
+      "lng": 12.180963550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "haag-i-ob-fba78924be",
+      "city": "haag-i-ob",
+      "label": "Dorfplatz 1",
+      "street": "Dorfplatz",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Haag i.OB",
+      "spotCount": 1,
+      "lat": 48.174678150000005,
+      "lng": 12.134836100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1263309391), ODbL"
+    },
+    {
+      "id": "haag-i-ob-c837c7bdd7",
+      "city": "haag-i-ob",
+      "label": "Maria-Ward-Straße",
+      "street": "Maria-Ward-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Haag i.OB",
+      "spotCount": 1,
+      "lat": 48.15906525,
+      "lng": 12.180963550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32879116), ODbL"
+    }
+  ]
+}

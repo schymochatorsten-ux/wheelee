@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lohnsfeld",
+    "name": "Lohnsfeld",
+    "center": {
+      "lat": 49.556017000000004,
+      "lng": 7.8694872
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lohnsfeld-dcf0b818d5",
+      "city": "lohnsfeld",
+      "label": "Mitfahrerparkplatz Winnweiler",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Lohnsfeld",
+      "spotCount": 2,
+      "lat": 49.556017000000004,
+      "lng": 7.8694872,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/82880711), ODbL"
+    }
+  ]
+}

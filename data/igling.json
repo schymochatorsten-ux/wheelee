@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "igling",
+    "name": "Igling",
+    "center": {
+      "lat": 48.074608950000005,
+      "lng": 10.813008100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "igling-3d4fff7f06",
+      "city": "igling",
+      "label": "Donnersbergstraße 1",
+      "street": "Donnersbergstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Igling",
+      "spotCount": 1,
+      "lat": 48.07302265,
+      "lng": 10.8129785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1280927163), ODbL"
+    },
+    {
+      "id": "igling-e5e53c3fee",
+      "city": "igling",
+      "label": "Donnersbergstraße 1",
+      "street": "Donnersbergstraße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Igling",
+      "spotCount": 1,
+      "lat": 48.0729781,
+      "lng": 10.813008100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1280927164), ODbL"
+    },
+    {
+      "id": "igling-9faa681521",
+      "city": "igling",
+      "label": "Schulstraße",
+      "street": "Schulstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Igling",
+      "spotCount": 1,
+      "lat": 48.074608950000005,
+      "lng": 10.81148065,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1312394430), ODbL"
+    },
+    {
+      "id": "igling-b2ced8727f",
+      "city": "igling",
+      "label": "Unteriglinger Straße 79",
+      "street": "Unteriglinger Straße",
+      "houseNumber": "79",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Igling",
+      "spotCount": 1,
+      "lat": 48.08267695000001,
+      "lng": 10.8154045,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1312163642), ODbL"
+    }
+  ]
+}

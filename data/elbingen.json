@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "elbingen",
+    "name": "Elbingen",
+    "center": {
+      "lat": 50.52636935,
+      "lng": 7.9130769
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "elbingen-0c2e95ef7a",
+      "city": "elbingen",
+      "label": "Alte Gasse",
+      "street": "Alte Gasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elbingen",
+      "spotCount": 2,
+      "lat": 50.5300888,
+      "lng": 7.9130769,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1015453878), ODbL"
+    },
+    {
+      "id": "elbingen-485ea2cd1d",
+      "city": "elbingen",
+      "label": "Brückenstraße",
+      "street": "Brückenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elbingen",
+      "spotCount": 1,
+      "lat": 50.526110700000004,
+      "lng": 7.920907700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1015456918), ODbL"
+    },
+    {
+      "id": "elbingen-cc9e951c04",
+      "city": "elbingen",
+      "label": "Friedhof Elbingen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elbingen",
+      "spotCount": 1,
+      "lat": 50.52636935,
+      "lng": 7.90674645,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1165578696), ODbL"
+    }
+  ]
+}

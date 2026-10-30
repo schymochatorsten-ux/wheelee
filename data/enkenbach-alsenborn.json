@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "enkenbach-alsenborn",
+    "name": "Enkenbach-Alsenborn",
+    "center": {
+      "lat": 49.5118748,
+      "lng": 7.9363238
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "enkenbach-alsenborn-2c6be0032c",
+      "city": "enkenbach-alsenborn",
+      "label": "Behindertenparkplatz Enkenbach-Alsenborn",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Enkenbach-Alsenborn",
+      "spotCount": 2,
+      "lat": 49.5118748,
+      "lng": 7.9363238,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1203297672), ODbL"
+    },
+    {
+      "id": "enkenbach-alsenborn-70cb2da3c3",
+      "city": "enkenbach-alsenborn",
+      "label": "Rosenhofstraße 52",
+      "street": "Rosenhofstraße",
+      "houseNumber": "52",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Enkenbach-Alsenborn",
+      "spotCount": 2,
+      "lat": 49.49039955000001,
+      "lng": 7.908096800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/978251022), ODbL"
+    }
+  ]
+}

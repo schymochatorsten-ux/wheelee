@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "ebsdorfergrund",
+    "name": "Ebsdorfergrund",
+    "center": {
+      "lat": 50.7410319,
+      "lng": 8.84284745
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ebsdorfergrund-0e6bf352ac",
+      "city": "ebsdorfergrund",
+      "label": "Bortshäuser Straße 16A",
+      "street": "Bortshäuser Straße",
+      "houseNumber": "16A",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ebsdorfergrund",
+      "spotCount": 1,
+      "lat": 50.734574,
+      "lng": 8.8115009,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/836815479), ODbL"
+    },
+    {
+      "id": "ebsdorfergrund-fd71a40e51",
+      "city": "ebsdorfergrund",
+      "label": "Schwimmbadweg 15",
+      "street": "Schwimmbadweg",
+      "houseNumber": "15",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ebsdorfergrund",
+      "spotCount": 1,
+      "lat": 50.7410319,
+      "lng": 8.84284745,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1357775680), ODbL"
+    }
+  ]
+}

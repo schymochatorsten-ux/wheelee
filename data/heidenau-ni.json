@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "heidenau-ni",
+    "name": "Heidenau",
+    "center": {
+      "lat": 53.314435800000005,
+      "lng": 9.6594832
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "heidenau-ni-b60068e2be",
+      "city": "heidenau-ni",
+      "label": "Tostedter Straße 2",
+      "street": "Tostedter Straße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heidenau",
+      "spotCount": 1,
+      "lat": 53.314435800000005,
+      "lng": 9.6594832,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/565738382), ODbL"
+    }
+  ]
+}

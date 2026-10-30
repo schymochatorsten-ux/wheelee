@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "feldafing",
+    "name": "Feldafing",
+    "center": {
+      "lat": 47.94622015,
+      "lng": 11.29068265
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "feldafing-5cd4d4c3a9",
+      "city": "feldafing",
+      "label": "Bahnhofsplatz",
+      "street": "Bahnhofsplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Feldafing",
+      "spotCount": 1,
+      "lat": 47.94622015,
+      "lng": 11.290416050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1153506412), ODbL"
+    },
+    {
+      "id": "feldafing-3295050ea9",
+      "city": "feldafing",
+      "label": "Hans-Albers-Straße",
+      "street": "Hans-Albers-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Feldafing",
+      "spotCount": 2,
+      "lat": 47.919872100000006,
+      "lng": 11.29068265,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1237365615), ODbL"
+    },
+    {
+      "id": "feldafing-74592ec718",
+      "city": "feldafing",
+      "label": "Königinstraße",
+      "street": "Königinstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Feldafing",
+      "spotCount": 1,
+      "lat": 47.9486355,
+      "lng": 11.306703950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1085746455), ODbL"
+    },
+    {
+      "id": "feldafing-fffcfacc16",
+      "city": "feldafing",
+      "label": "P&R Feldafing",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Feldafing",
+      "spotCount": 2,
+      "lat": 47.94688285,
+      "lng": 11.28994015,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27570994), ODbL"
+    },
+    {
+      "id": "feldafing-c8d6109055",
+      "city": "feldafing",
+      "label": "Tutzinger Straße",
+      "street": "Tutzinger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Feldafing",
+      "spotCount": 1,
+      "lat": 47.9365238,
+      "lng": 11.2966048,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29340600), ODbL"
+    }
+  ]
+}

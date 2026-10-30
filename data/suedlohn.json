@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "suedlohn",
+    "name": "Südlohn",
+    "center": {
+      "lat": 51.95009950000001,
+      "lng": 6.8702919
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "suedlohn-5216f560c3",
+      "city": "suedlohn",
+      "label": "Am großen Busch",
+      "street": "Am großen Busch",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Südlohn",
+      "spotCount": 1,
+      "lat": 51.95009950000001,
+      "lng": 6.8702919,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1109977624), ODbL"
+    },
+    {
+      "id": "suedlohn-1080f66629",
+      "city": "suedlohn",
+      "label": "Rathausplatz",
+      "street": "Rathausplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Südlohn",
+      "spotCount": 1,
+      "lat": 51.93418865,
+      "lng": 6.808922600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1110712303), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ornbau",
+    "name": "Ornbau",
+    "center": {
+      "lat": 49.16978965,
+      "lng": 10.657240550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ornbau-08a51bc69e",
+      "city": "ornbau",
+      "label": "Am Anger",
+      "street": "Am Anger",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Ornbau",
+      "spotCount": 1,
+      "lat": 49.16978965,
+      "lng": 10.657240550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/973058126), ODbL"
+    }
+  ]
+}

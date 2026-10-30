@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "beckedorf",
+    "name": "Beckedorf",
+    "center": {
+      "lat": 52.343129700000006,
+      "lng": 9.312782250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "beckedorf-a80bdde624",
+      "city": "beckedorf",
+      "label": "Westerntor 1",
+      "street": "Westerntor",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Beckedorf",
+      "spotCount": 1,
+      "lat": 52.343129700000006,
+      "lng": 9.312782250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1070715275), ODbL"
+    }
+  ]
+}

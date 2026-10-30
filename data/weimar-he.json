@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "weimar-he",
+    "name": "Weimar (Lahn)",
+    "center": {
+      "lat": 50.760368050000004,
+      "lng": 8.73858435
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "weimar-he-471c6beecf",
+      "city": "weimar-he",
+      "label": "Am Weimarer See",
+      "street": "Am Weimarer See",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weimar (Lahn)",
+      "spotCount": 4,
+      "lat": 50.760368050000004,
+      "lng": 8.73858435,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/495962070), ODbL"
+    },
+    {
+      "id": "weimar-he-3f567c52ff",
+      "city": "weimar-he",
+      "label": "Baumgarten",
+      "street": "Baumgarten",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weimar (Lahn)",
+      "spotCount": 2,
+      "lat": 50.76003005,
+      "lng": 8.72971385,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/243181956), ODbL"
+    }
+  ]
+}

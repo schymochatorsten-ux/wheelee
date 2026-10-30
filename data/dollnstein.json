@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "dollnstein",
+    "name": "Dollnstein",
+    "center": {
+      "lat": 48.871744750000005,
+      "lng": 11.094791500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dollnstein-674ad96001",
+      "city": "dollnstein",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dollnstein",
+      "spotCount": 1,
+      "lat": 48.871744750000005,
+      "lng": 11.0788898,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/225085726), ODbL"
+    },
+    {
+      "id": "dollnstein-3c06ba3885",
+      "city": "dollnstein",
+      "label": "Behindertenparkplatz Dollnstein",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dollnstein",
+      "spotCount": 3,
+      "lat": 48.867098000000006,
+      "lng": 11.094791500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13639538509), ODbL"
+    }
+  ]
+}

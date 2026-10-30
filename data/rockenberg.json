@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "rockenberg",
+    "name": "Rockenberg",
+    "center": {
+      "lat": 50.417300250000004,
+      "lng": 8.74158035
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rockenberg-0e2b68d405",
+      "city": "rockenberg",
+      "label": "Honiggasse 4",
+      "street": "Honiggasse",
+      "houseNumber": "4",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rockenberg",
+      "spotCount": 1,
+      "lat": 50.417300250000004,
+      "lng": 8.74158035,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1414489050), ODbL"
+    }
+  ]
+}

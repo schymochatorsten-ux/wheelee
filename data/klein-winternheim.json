@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "klein-winternheim",
+    "name": "Klein-Winternheim",
+    "center": {
+      "lat": 49.941716750000005,
+      "lng": 8.21536745
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "klein-winternheim-6c73a3293c",
+      "city": "klein-winternheim",
+      "label": "Am Bandweidenweg 14a",
+      "street": "Am Bandweidenweg",
+      "houseNumber": "14a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Klein-Winternheim",
+      "spotCount": 4,
+      "lat": 49.9418245,
+      "lng": 8.215217500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/62211950), ODbL"
+    },
+    {
+      "id": "klein-winternheim-e5147e5a6b",
+      "city": "klein-winternheim",
+      "label": "Am Bandweidenweg 14a",
+      "street": "Am Bandweidenweg",
+      "houseNumber": "14a",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Klein-Winternheim",
+      "spotCount": 1,
+      "lat": 49.9417514,
+      "lng": 8.21536745,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1448577260), ODbL"
+    },
+    {
+      "id": "klein-winternheim-26372ffa19",
+      "city": "klein-winternheim",
+      "label": "Am Bandweidenweg 14a",
+      "street": "Am Bandweidenweg",
+      "houseNumber": "14a",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Klein-Winternheim",
+      "spotCount": 1,
+      "lat": 49.941716750000005,
+      "lng": 8.215374400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1448577261), ODbL"
+    },
+    {
+      "id": "klein-winternheim-11c7fdb37f",
+      "city": "klein-winternheim",
+      "label": "Am Bandweidenweg 14a",
+      "street": "Am Bandweidenweg",
+      "houseNumber": "14a",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Klein-Winternheim",
+      "spotCount": 1,
+      "lat": 49.941682150000005,
+      "lng": 8.215381400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1448577262), ODbL"
+    },
+    {
+      "id": "klein-winternheim-a9c0ff9b49",
+      "city": "klein-winternheim",
+      "label": "Andreasplatz",
+      "street": "Andreasplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Klein-Winternheim",
+      "spotCount": 2,
+      "lat": 49.94017720000001,
+      "lng": 8.212164000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/943871729), ODbL"
+    }
+  ]
+}

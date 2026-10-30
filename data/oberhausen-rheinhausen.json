@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "oberhausen-rheinhausen",
+    "name": "Oberhausen-Rheinhausen",
+    "center": {
+      "lat": 49.2829093,
+      "lng": 8.47353725
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberhausen-rheinhausen-03a4d8ffe7",
+      "city": "oberhausen-rheinhausen",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Su,PH 06:00-24:00",
+      "district": "Oberhausen-Rheinhausen",
+      "spotCount": 4,
+      "lat": 49.282640050000005,
+      "lng": 8.4737111,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32295748), ODbL"
+    },
+    {
+      "id": "oberhausen-rheinhausen-0e37553afa",
+      "city": "oberhausen-rheinhausen",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oberhausen-Rheinhausen",
+      "spotCount": 1,
+      "lat": 49.2829043,
+      "lng": 8.47343515,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/267967175), ODbL"
+    },
+    {
+      "id": "oberhausen-rheinhausen-022a09dd90",
+      "city": "oberhausen-rheinhausen",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oberhausen-Rheinhausen",
+      "spotCount": 1,
+      "lat": 49.28291420000001,
+      "lng": 8.47353725,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/267967251), ODbL"
+    },
+    {
+      "id": "oberhausen-rheinhausen-258dd8cc4f",
+      "city": "oberhausen-rheinhausen",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oberhausen-Rheinhausen",
+      "spotCount": 1,
+      "lat": 49.2829093,
+      "lng": 8.47348625,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/267967285), ODbL"
+    },
+    {
+      "id": "oberhausen-rheinhausen-a154a8d08a",
+      "city": "oberhausen-rheinhausen",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oberhausen-Rheinhausen",
+      "spotCount": 1,
+      "lat": 49.282919150000005,
+      "lng": 8.47358835,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/267967347), ODbL"
+    }
+  ]
+}

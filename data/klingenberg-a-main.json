@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "klingenberg-a-main",
+    "name": "Klingenberg a.Main",
+    "center": {
+      "lat": 49.78142315,
+      "lng": 9.17614755
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "klingenberg-a-main-747e93ad24",
+      "city": "klingenberg-a-main",
+      "label": "Trennfurter Straße",
+      "street": "Trennfurter Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Klingenberg a.Main",
+      "spotCount": 1,
+      "lat": 49.781461050000004,
+      "lng": 9.17614755,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/842751313), ODbL"
+    },
+    {
+      "id": "klingenberg-a-main-1059ab18b0",
+      "city": "klingenberg-a-main",
+      "label": "Trennfurter Straße",
+      "street": "Trennfurter Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Klingenberg a.Main",
+      "spotCount": 1,
+      "lat": 49.78137315,
+      "lng": 9.176203350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/842751314), ODbL"
+    },
+    {
+      "id": "klingenberg-a-main-f1808d08af",
+      "city": "klingenberg-a-main",
+      "label": "Trennfurter Straße",
+      "street": "Trennfurter Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Klingenberg a.Main",
+      "spotCount": 1,
+      "lat": 49.78142315,
+      "lng": 9.17601045,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/842751315), ODbL"
+    },
+    {
+      "id": "klingenberg-a-main-807924f1ad",
+      "city": "klingenberg-a-main",
+      "label": "Trennfurter Straße",
+      "street": "Trennfurter Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Klingenberg a.Main",
+      "spotCount": 1,
+      "lat": 49.78133925,
+      "lng": 9.17605975,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/842751316), ODbL"
+    }
+  ]
+}

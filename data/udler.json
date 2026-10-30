@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "udler",
+    "name": "Udler",
+    "center": {
+      "lat": 50.14032275,
+      "lng": 6.870055300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "udler-ac3c886661",
+      "city": "udler",
+      "label": "Rastplatz Udler",
+      "street": "Rastplatz Udler",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Udler",
+      "spotCount": 1,
+      "lat": 50.14032275,
+      "lng": 6.870055300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/666493505), ODbL"
+    }
+  ]
+}

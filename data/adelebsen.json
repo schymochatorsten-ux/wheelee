@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "adelebsen",
+    "name": "Adelebsen",
+    "center": {
+      "lat": 51.579855,
+      "lng": 9.7556919
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "adelebsen-276acdbcaf",
+      "city": "adelebsen",
+      "label": "Angerstraße 2",
+      "street": "Angerstraße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Adelebsen",
+      "spotCount": 1,
+      "lat": 51.581576150000004,
+      "lng": 9.7556919,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1337270482), ODbL"
+    },
+    {
+      "id": "adelebsen-7285b0ba1f",
+      "city": "adelebsen",
+      "label": "Ladestraße",
+      "street": "Ladestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Adelebsen",
+      "spotCount": 1,
+      "lat": 51.57799475,
+      "lng": 9.75980825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1024015928), ODbL"
+    },
+    {
+      "id": "adelebsen-295214b765",
+      "city": "adelebsen",
+      "label": "Lange Straße 43",
+      "street": "Lange Straße",
+      "houseNumber": "43",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Adelebsen",
+      "spotCount": 1,
+      "lat": 51.579855,
+      "lng": 9.75563635,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1375079778), ODbL"
+    }
+  ]
+}

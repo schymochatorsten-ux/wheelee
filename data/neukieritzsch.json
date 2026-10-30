@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "neukieritzsch",
+    "name": "Neukieritzsch",
+    "center": {
+      "lat": 51.16852110000001,
+      "lng": 12.43441365
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neukieritzsch-9d024fa410",
+      "city": "neukieritzsch",
+      "label": "In den Sandgärten",
+      "street": "In den Sandgärten",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neukieritzsch",
+      "spotCount": 1,
+      "lat": 51.1683176,
+      "lng": 12.43305235,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1473211543), ODbL"
+    },
+    {
+      "id": "neukieritzsch-f7bd813f26",
+      "city": "neukieritzsch",
+      "label": "Lobstädter Straße 12",
+      "street": "Lobstädter Straße",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neukieritzsch",
+      "spotCount": 1,
+      "lat": 51.1531433,
+      "lng": 12.453813150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/844854061), ODbL"
+    },
+    {
+      "id": "neukieritzsch-6a505ef769",
+      "city": "neukieritzsch",
+      "label": "Zöpener Seewiesen",
+      "street": "Zöpener Seewiesen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neukieritzsch",
+      "spotCount": 2,
+      "lat": 51.1700515,
+      "lng": 12.433919750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1047666404), ODbL"
+    },
+    {
+      "id": "neukieritzsch-d1e06d90b7",
+      "city": "neukieritzsch",
+      "label": "Zur Alten Lore 3",
+      "street": "Zur Alten Lore",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neukieritzsch",
+      "spotCount": 1,
+      "lat": 51.16852110000001,
+      "lng": 12.43441365,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1473211544), ODbL"
+    }
+  ]
+}

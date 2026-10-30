@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wallenborn",
+    "name": "Wallenborn",
+    "center": {
+      "lat": 50.1534458,
+      "lng": 6.719618850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wallenborn-a2ac2abf6d",
+      "city": "wallenborn",
+      "label": "Neue Straße",
+      "street": "Neue Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wallenborn",
+      "spotCount": 5,
+      "lat": 50.1534458,
+      "lng": 6.719618850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/662957596), ODbL"
+    }
+  ]
+}

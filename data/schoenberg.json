@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "schoenberg",
+    "name": "Schönberg (Holstein)",
+    "center": {
+      "lat": 54.4254906,
+      "lng": 10.4111968
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schoenberg-4cea61227d",
+      "city": "schoenberg",
+      "label": "An der Kuhbrücksau",
+      "street": "An der Kuhbrücksau",
+      "houseNumber": null,
+      "note": "gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Schönberg (Holstein)",
+      "spotCount": 1,
+      "lat": 54.4254906,
+      "lng": 10.374970600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13071420733), ODbL"
+    },
+    {
+      "id": "schoenberg-791e768c97",
+      "city": "schoenberg",
+      "label": "P 2",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Schönberg (Holstein)",
+      "spotCount": 2,
+      "lat": 54.4109155,
+      "lng": 10.4111968,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34993338), ODbL"
+    }
+  ]
+}

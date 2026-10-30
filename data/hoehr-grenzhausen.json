@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hoehr-grenzhausen",
+    "name": "Höhr-Grenzhausen",
+    "center": {
+      "lat": 50.436701250000006,
+      "lng": 7.668384700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hoehr-grenzhausen-59d6d7dc9b",
+      "city": "hoehr-grenzhausen",
+      "label": "Hermannstraße",
+      "street": "Hermannstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Höhr-Grenzhausen",
+      "spotCount": 2,
+      "lat": 50.43558835,
+      "lng": 7.6562302,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/533730796), ODbL"
+    },
+    {
+      "id": "hoehr-grenzhausen-65a614351c",
+      "city": "hoehr-grenzhausen",
+      "label": "Rathausstraße 42",
+      "street": "Rathausstraße",
+      "houseNumber": "42",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Höhr-Grenzhausen",
+      "spotCount": 3,
+      "lat": 50.436701250000006,
+      "lng": 7.668384700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1042589983), ODbL"
+    }
+  ]
+}

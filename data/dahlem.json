@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "dahlem",
+    "name": "Dahlem",
+    "center": {
+      "lat": 50.38951045,
+      "lng": 6.567863900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dahlem-f243d48de2",
+      "city": "dahlem",
+      "label": "Behindertenparkplatz Dahlem",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dahlem",
+      "spotCount": 1,
+      "lat": 50.3710636,
+      "lng": 6.53455995,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1201538362), ODbL"
+    },
+    {
+      "id": "dahlem-aa3b98ff80",
+      "city": "dahlem",
+      "label": "Wanderparkplatz Wasserdell (Moorpfad)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dahlem",
+      "spotCount": 1,
+      "lat": 50.38951045,
+      "lng": 6.567863900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/788369468), ODbL"
+    }
+  ]
+}

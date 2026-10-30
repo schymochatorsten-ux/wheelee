@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "ohlstadt",
+    "name": "Ohlstadt",
+    "center": {
+      "lat": 47.6586438,
+      "lng": 11.2369117
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ohlstadt-9f87416be7",
+      "city": "ohlstadt",
+      "label": "Loisachstraße",
+      "street": "Loisachstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ohlstadt",
+      "spotCount": 1,
+      "lat": 47.633841000000004,
+      "lng": 11.21807175,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1022905432), ODbL"
+    },
+    {
+      "id": "ohlstadt-04acd72b04",
+      "city": "ohlstadt",
+      "label": "Mühlweiher",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ohlstadt",
+      "spotCount": 1,
+      "lat": 47.658662500000005,
+      "lng": 11.2369117,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3336641828), ODbL"
+    },
+    {
+      "id": "ohlstadt-97efd0d33c",
+      "city": "ohlstadt",
+      "label": "Ostermoos",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ohlstadt",
+      "spotCount": 1,
+      "lat": 47.6586438,
+      "lng": 11.23802,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3733245089), ODbL"
+    },
+    {
+      "id": "ohlstadt-063de343e6",
+      "city": "ohlstadt",
+      "label": "Parkplatz Hotel Alpenblick",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ohlstadt",
+      "spotCount": 2,
+      "lat": 47.631780400000004,
+      "lng": 11.23458435,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/54484601), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "forbach",
+    "name": "Forbach",
+    "center": {
+      "lat": 48.7026274,
+      "lng": 8.361059350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "forbach-22bc50a571",
+      "city": "forbach",
+      "label": "Bahnhofstraße 1",
+      "street": "Bahnhofstraße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Forbach",
+      "spotCount": 1,
+      "lat": 48.7026274,
+      "lng": 8.35553125,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1413197863), ODbL"
+    },
+    {
+      "id": "forbach-8facc42d2a",
+      "city": "forbach",
+      "label": "Bahnhofstraße 3",
+      "street": "Bahnhofstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Forbach",
+      "spotCount": 1,
+      "lat": 48.70265260000001,
+      "lng": 8.355612650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/524766400), ODbL"
+    },
+    {
+      "id": "forbach-36321d3705",
+      "city": "forbach",
+      "label": "Murgtalstraße",
+      "street": "Murgtalstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Forbach",
+      "spotCount": 1,
+      "lat": 48.68150970000001,
+      "lng": 8.361077700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/329930594), ODbL"
+    },
+    {
+      "id": "forbach-aef24bb09f",
+      "city": "forbach",
+      "label": "Murgtalstraße",
+      "street": "Murgtalstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Forbach",
+      "spotCount": 1,
+      "lat": 48.6813063,
+      "lng": 8.361059350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1257596661), ODbL"
+    }
+  ]
+}

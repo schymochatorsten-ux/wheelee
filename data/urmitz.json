@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "urmitz",
+    "name": "Urmitz",
+    "center": {
+      "lat": 50.4156965,
+      "lng": 7.5257404
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "urmitz-af72a326c2",
+      "city": "urmitz",
+      "label": "Josef-Höfer-Straße 7",
+      "street": "Josef-Höfer-Straße",
+      "houseNumber": "7",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Urmitz",
+      "spotCount": 1,
+      "lat": 50.4129262,
+      "lng": 7.5257404,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8983355212), ODbL"
+    },
+    {
+      "id": "urmitz-4ea933ebae",
+      "city": "urmitz",
+      "label": "Rheinbrücke Bahnhof",
+      "street": "Rheinbrücke Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Urmitz",
+      "spotCount": 1,
+      "lat": 50.417675300000006,
+      "lng": 7.528917300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8983357747), ODbL"
+    },
+    {
+      "id": "urmitz-9858b98890",
+      "city": "urmitz",
+      "label": "Sankt-Nikolaus-Straße",
+      "street": "Sankt-Nikolaus-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Urmitz",
+      "spotCount": 1,
+      "lat": 50.4156965,
+      "lng": 7.5180999,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8974231675), ODbL"
+    }
+  ]
+}

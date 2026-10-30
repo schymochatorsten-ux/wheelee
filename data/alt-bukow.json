@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "alt-bukow",
+    "name": "Alt Bukow",
+    "center": {
+      "lat": 53.99396315,
+      "lng": 11.6377423
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "alt-bukow-ac73816e0e",
+      "city": "alt-bukow",
+      "label": "Am Waldrand",
+      "street": "Am Waldrand",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Alt Bukow",
+      "spotCount": 1,
+      "lat": 53.99396315,
+      "lng": 11.6377423,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/38563620), ODbL"
+    }
+  ]
+}

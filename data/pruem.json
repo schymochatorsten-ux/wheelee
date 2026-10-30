@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "pruem",
+    "name": "Prüm",
+    "center": {
+      "lat": 50.20771585,
+      "lng": 6.4241237
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pruem-72a389a4fe",
+      "city": "pruem",
+      "label": "Auf der Tafel",
+      "street": "Auf der Tafel",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Prüm",
+      "spotCount": 2,
+      "lat": 50.2126983,
+      "lng": 6.41130855,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/417039230), ODbL"
+    },
+    {
+      "id": "pruem-b6b9bce00d",
+      "city": "pruem",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Prüm",
+      "spotCount": 4,
+      "lat": 50.20194565,
+      "lng": 6.417694750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/341012228), ODbL"
+    },
+    {
+      "id": "pruem-851cc77dbd",
+      "city": "pruem",
+      "label": "Behindertenparkplatz Prüm",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Prüm",
+      "spotCount": 2,
+      "lat": 50.21877515,
+      "lng": 6.438852450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/302467518), ODbL"
+    },
+    {
+      "id": "pruem-7deb26a134",
+      "city": "pruem",
+      "label": "Fuhrweg",
+      "street": "Fuhrweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Prüm",
+      "spotCount": 1,
+      "lat": 50.206817650000005,
+      "lng": 6.4241237,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/42441067), ODbL"
+    },
+    {
+      "id": "pruem-2cd070163a",
+      "city": "pruem",
+      "label": "Hahnplatz 24",
+      "street": "Hahnplatz",
+      "houseNumber": "24",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Prüm",
+      "spotCount": 1,
+      "lat": 50.207149,
+      "lng": 6.42503445,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1433571633), ODbL"
+    },
+    {
+      "id": "pruem-5b2dae898f",
+      "city": "pruem",
+      "label": "Pfannstraße 2",
+      "street": "Pfannstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Prüm",
+      "spotCount": 1,
+      "lat": 50.20771585,
+      "lng": 6.42259595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/408302883), ODbL"
+    }
+  ]
+}

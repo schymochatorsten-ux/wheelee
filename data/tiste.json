@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "tiste",
+    "name": "Tiste",
+    "center": {
+      "lat": 53.299722300000006,
+      "lng": 9.534256500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "tiste-ab9b744421",
+      "city": "tiste",
+      "label": "Ostetal",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Tiste",
+      "spotCount": 2,
+      "lat": 53.299722300000006,
+      "lng": 9.532553700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2015851525), ODbL"
+    },
+    {
+      "id": "tiste-adede21a34",
+      "city": "tiste",
+      "label": "Ostetal",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Tiste",
+      "spotCount": 2,
+      "lat": 53.2993521,
+      "lng": 9.534256500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2015897216), ODbL"
+    }
+  ]
+}

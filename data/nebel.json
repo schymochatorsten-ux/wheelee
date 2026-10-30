@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "nebel",
+    "name": "Nebel",
+    "center": {
+      "lat": 54.65274215,
+      "lng": 8.355194400000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nebel-05d016951d",
+      "city": "nebel",
+      "label": "Uasterstigh",
+      "street": "Uasterstigh",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nebel",
+      "spotCount": 2,
+      "lat": 54.65274215,
+      "lng": 8.355194400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1413865688), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "guckheim",
+    "name": "Guckheim",
+    "center": {
+      "lat": 50.52960635,
+      "lng": 7.9471124500000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "guckheim-097cb75630",
+      "city": "guckheim",
+      "label": "Kirche",
+      "street": "Kirchstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Guckheim",
+      "spotCount": 1,
+      "lat": 50.52960635,
+      "lng": 7.9471124500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/315673157), ODbL"
+    }
+  ]
+}

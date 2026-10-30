@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "saarburg",
+    "name": "Saarburg",
+    "center": {
+      "lat": 49.60849255,
+      "lng": 6.548257550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "saarburg-4e2ff4e786",
+      "city": "saarburg",
+      "label": "Boemundhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Saarburg",
+      "spotCount": 1,
+      "lat": 49.60849255,
+      "lng": 6.5511307500000004,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/42133821), ODbL"
+    },
+    {
+      "id": "saarburg-5771b0315c",
+      "city": "saarburg",
+      "label": "Graf-Siegfried-Straße 43",
+      "street": "Graf-Siegfried-Straße",
+      "houseNumber": "43",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Saarburg",
+      "spotCount": 2,
+      "lat": 49.608356650000005,
+      "lng": 6.547579150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/196281791), ODbL"
+    },
+    {
+      "id": "saarburg-f0620a7925",
+      "city": "saarburg",
+      "label": "Heckingstraße",
+      "street": "Heckingstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Saarburg",
+      "spotCount": 1,
+      "lat": 49.60723385,
+      "lng": 6.5466467,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/436777780), ODbL"
+    },
+    {
+      "id": "saarburg-b9724053ba",
+      "city": "saarburg",
+      "label": "Parkdeck am Rathaus",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Saarburg",
+      "spotCount": 2,
+      "lat": 49.6079214,
+      "lng": 6.548257550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/194174994), ODbL"
+    },
+    {
+      "id": "saarburg-1e6915c45d",
+      "city": "saarburg",
+      "label": "Rieslingstraße",
+      "street": "Rieslingstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Saarburg",
+      "spotCount": 1,
+      "lat": 49.6197079,
+      "lng": 6.5429998000000005,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/7850779484), ODbL"
+    },
+    {
+      "id": "saarburg-32fc5c2444",
+      "city": "saarburg",
+      "label": "Schloßberg",
+      "street": "Schloßberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Saarburg",
+      "spotCount": 1,
+      "lat": 49.6087737,
+      "lng": 6.551517050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/42759587), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "baabe",
+    "name": "Baabe",
+    "center": {
+      "lat": 54.3605772,
+      "lng": 13.7154487
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "baabe-90d211cce3",
+      "city": "baabe",
+      "label": "Am Kurpark 9",
+      "street": "Am Kurpark",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Baabe",
+      "spotCount": 3,
+      "lat": 54.3611937,
+      "lng": 13.7154487,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/218331411), ODbL"
+    },
+    {
+      "id": "baabe-4d6fe93771",
+      "city": "baabe",
+      "label": "Dünenweg",
+      "street": "Dünenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Baabe",
+      "spotCount": 1,
+      "lat": 54.3605772,
+      "lng": 13.716296800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29014511), ODbL"
+    },
+    {
+      "id": "baabe-665c3549b1",
+      "city": "baabe",
+      "label": "Ostseehotel Baabe auf Rügen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Baabe",
+      "spotCount": 2,
+      "lat": 54.36035255,
+      "lng": 13.7037373,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/618600795), ODbL"
+    }
+  ]
+}

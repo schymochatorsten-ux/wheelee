@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kalefeld",
+    "name": "Kalefeld",
+    "center": {
+      "lat": 51.83157155000001,
+      "lng": 10.11110945
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kalefeld-095a01767a",
+      "city": "kalefeld",
+      "label": "Am Harzhorn",
+      "street": "Am Harzhorn",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kalefeld",
+      "spotCount": 2,
+      "lat": 51.83157155000001,
+      "lng": 10.11110945,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1314674419), ODbL"
+    }
+  ]
+}

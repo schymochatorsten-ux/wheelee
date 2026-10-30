@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "wernberg-koeblitz",
+    "name": "Wernberg-Köblitz",
+    "center": {
+      "lat": 49.543397750000004,
+      "lng": 12.15762655
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wernberg-koeblitz-95c67ed9cc",
+      "city": "wernberg-koeblitz",
+      "label": "Kettnitzmühler Straße",
+      "street": "Kettnitzmühler Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Wernberg-Köblitz",
+      "spotCount": 3,
+      "lat": 49.5342825,
+      "lng": 12.1331038,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/233419304), ODbL"
+    },
+    {
+      "id": "wernberg-koeblitz-fd7f3a8b72",
+      "city": "wernberg-koeblitz",
+      "label": "Postleite",
+      "street": "Postleite",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wernberg-Köblitz",
+      "spotCount": 2,
+      "lat": 49.543397750000004,
+      "lng": 12.15762655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/535289919), ODbL"
+    }
+  ]
+}

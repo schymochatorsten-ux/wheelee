@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "muggensturm",
+    "name": "Muggensturm",
+    "center": {
+      "lat": 48.87954665000001,
+      "lng": 8.287214
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "muggensturm-773ec430d6",
+      "city": "muggensturm",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Muggensturm",
+      "spotCount": 1,
+      "lat": 48.86767195,
+      "lng": 8.2784175,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/251909971), ODbL"
+    },
+    {
+      "id": "muggensturm-6e7f44bf4f",
+      "city": "muggensturm",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Muggensturm",
+      "spotCount": 1,
+      "lat": 48.867850350000005,
+      "lng": 8.278271850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/251909972), ODbL"
+    },
+    {
+      "id": "muggensturm-f9cf445d49",
+      "city": "muggensturm",
+      "label": "Veritasstraße",
+      "street": "Veritasstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Muggensturm",
+      "spotCount": 4,
+      "lat": 48.87969015,
+      "lng": 8.287214,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34240803), ODbL"
+    },
+    {
+      "id": "muggensturm-074c8abf3b",
+      "city": "muggensturm",
+      "label": "Veritasstraße",
+      "street": "Veritasstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Muggensturm",
+      "spotCount": 2,
+      "lat": 48.879557000000005,
+      "lng": 8.287222200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1414039958), ODbL"
+    },
+    {
+      "id": "muggensturm-8e05b66e0e",
+      "city": "muggensturm",
+      "label": "Veritasstraße",
+      "street": "Veritasstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Muggensturm",
+      "spotCount": 2,
+      "lat": 48.87954665000001,
+      "lng": 8.2869729,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1414039959), ODbL"
+    },
+    {
+      "id": "muggensturm-4968c5d432",
+      "city": "muggensturm",
+      "label": "Wilhelmstraße",
+      "street": "Wilhelmstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Muggensturm",
+      "spotCount": 2,
+      "lat": 48.87299445000001,
+      "lng": 8.28857425,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/252805861), ODbL"
+    }
+  ]
+}

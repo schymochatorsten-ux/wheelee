@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "angelbachtal",
+    "name": "Angelbachtal",
+    "center": {
+      "lat": 49.22819535000001,
+      "lng": 8.779473600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "angelbachtal-4099a2bbc2",
+      "city": "angelbachtal",
+      "label": "Friedrichstraße",
+      "street": "Friedrichstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Angelbachtal",
+      "spotCount": 1,
+      "lat": 49.22819535000001,
+      "lng": 8.779473600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1512296189), ODbL"
+    }
+  ]
+}

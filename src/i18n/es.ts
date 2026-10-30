@@ -71,6 +71,9 @@ export const es: Messages = {
   "list.osmNote":
     "Los datos de OpenStreetMap muestran sobre todo aparcamientos con plazas reservadas para personas con discapacidad, no plazas sueltas junto a la acera, y están incompletos: que falte una entrada no significa que no haya plaza para personas con discapacidad.",
   "list.allCities": "Las {count} ciudades con su fuente",
+  "list.cityFilter": "Buscar una ciudad",
+  "list.cityShown": "Se muestran {shown} de {count}: escribe un nombre para encontrar más.",
+  "list.cityNone": "No se ha encontrado ninguna ciudad.",
   "list.cityCounts": ": {spots} ubicaciones, {spaces} plazas",
   "list.source": "Fuente: {source}",
   "list.licenseMissing": " · licencia no indicada",
@@ -93,6 +96,9 @@ export const es: Messages = {
   "details.confirmed":
     "{strong}: el ayuntamiento y OpenStreetMap sitúan esta plaza en el mismo lugar.",
   "details.confirmedStrong": "Confirmada por dos fuentes",
+  "details.osmOnly":
+    "{strong} – la lista oficial de la ciudad no incluye este lugar. Puede ser nuevo o faltar allí; el dato no está verificado, compruébalo in situ.",
+  "details.osmOnlyStrong": "Solo en OpenStreetMap",
   "details.approx":
     "La posición solo se conoce de forma aproximada: la plaza está en esta calle, el lugar exacto puede variar.",
   "details.source": "Fuente: {source}",
@@ -166,6 +172,8 @@ export const es: Messages = {
   "settings.legal": "Información legal",
   "settings.imprint": "Aviso legal (Impressum)",
   "settings.privacy": "Política de privacidad",
+  "settings.sources": "Fuentes y licencias",
+  "settings.coverage": "Cobertura de datos",
 
   "account.emailInvalid": "Esta dirección de correo no parece correcta.",
   "account.passwordTooShort": "La contraseña debe tener al menos {min} caracteres.",

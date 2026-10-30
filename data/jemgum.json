@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "jemgum",
+    "name": "Jemgum",
+    "center": {
+      "lat": 53.265238100000005,
+      "lng": 7.387915850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "jemgum-ae717b23ad",
+      "city": "jemgum",
+      "label": "Jemgumkloster",
+      "street": "Jemgumkloster",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Jemgum",
+      "spotCount": 1,
+      "lat": 53.25170585000001,
+      "lng": 7.388583650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1537109849), ODbL"
+    },
+    {
+      "id": "jemgum-ba7d01647d",
+      "city": "jemgum",
+      "label": "Molkereistraße",
+      "street": "Molkereistraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Jemgum",
+      "spotCount": 1,
+      "lat": 53.31412160000001,
+      "lng": 7.284912050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1558103824), ODbL"
+    },
+    {
+      "id": "jemgum-d9ade79b4c",
+      "city": "jemgum",
+      "label": "Rathaus Jemgum",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jemgum",
+      "spotCount": 1,
+      "lat": 53.26300805,
+      "lng": 7.38381075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/54533667), ODbL"
+    },
+    {
+      "id": "jemgum-d6d7a178ca",
+      "city": "jemgum",
+      "label": "Seniorenwohnanlage",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jemgum",
+      "spotCount": 2,
+      "lat": 53.265238100000005,
+      "lng": 7.387915850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1367990491), ODbL"
+    }
+  ]
+}

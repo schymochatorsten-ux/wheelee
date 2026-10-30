@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "doemitz",
+    "name": "Dömitz",
+    "center": {
+      "lat": 53.1399244,
+      "lng": 11.279195650000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "doemitz-2b363a5967",
+      "city": "doemitz",
+      "label": "Am Bahndamm",
+      "street": "Am Bahndamm",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dömitz",
+      "spotCount": 1,
+      "lat": 53.1347195,
+      "lng": 11.279195650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/109813378), ODbL"
+    },
+    {
+      "id": "doemitz-6920189e96",
+      "city": "doemitz",
+      "label": "Am Floßgraben",
+      "street": "Am Floßgraben",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dömitz",
+      "spotCount": 1,
+      "lat": 53.1399244,
+      "lng": 11.2644633,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/109585088), ODbL"
+    }
+  ]
+}

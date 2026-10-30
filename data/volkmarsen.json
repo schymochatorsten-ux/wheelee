@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "volkmarsen",
+    "name": "Volkmarsen",
+    "center": {
+      "lat": 51.4150051,
+      "lng": 9.1209651
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "volkmarsen-8c6224a9db",
+      "city": "volkmarsen",
+      "label": "Warburger Straße",
+      "street": "Warburger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Volkmarsen",
+      "spotCount": 1,
+      "lat": 51.4150051,
+      "lng": 9.1209651,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1329675067), ODbL"
+    }
+  ]
+}

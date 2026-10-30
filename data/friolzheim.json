@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "friolzheim",
+    "name": "Friolzheim",
+    "center": {
+      "lat": 48.834905500000005,
+      "lng": 8.83919095
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "friolzheim-8d542ab826",
+      "city": "friolzheim",
+      "label": "Brühlstraße 3",
+      "street": "Brühlstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Friolzheim",
+      "spotCount": 6,
+      "lat": 48.834905500000005,
+      "lng": 8.834877800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1087484015), ODbL"
+    },
+    {
+      "id": "friolzheim-c86f82e15b",
+      "city": "friolzheim",
+      "label": "Schulstraße",
+      "street": "Schulstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Friolzheim",
+      "spotCount": 1,
+      "lat": 48.8343731,
+      "lng": 8.83919095,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/573636590), ODbL"
+    }
+  ]
+}

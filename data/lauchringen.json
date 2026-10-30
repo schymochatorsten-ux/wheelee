@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "lauchringen",
+    "name": "Lauchringen",
+    "center": {
+      "lat": 47.630387000000006,
+      "lng": 8.30725395
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lauchringen-b8ef1c8db7",
+      "city": "lauchringen",
+      "label": "Friedhofstraße",
+      "street": "Friedhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lauchringen",
+      "spotCount": 1,
+      "lat": 47.632851900000006,
+      "lng": 8.3073572,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12833138761), ODbL"
+    },
+    {
+      "id": "lauchringen-d956d6277b",
+      "city": "lauchringen",
+      "label": "Friedhofstraße",
+      "street": "Friedhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Lauchringen",
+      "spotCount": 1,
+      "lat": 47.63276225,
+      "lng": 8.30725395,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/474021238), ODbL"
+    },
+    {
+      "id": "lauchringen-4cb5a7d95f",
+      "city": "lauchringen",
+      "label": "Jahnstraße 1",
+      "street": "Jahnstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lauchringen",
+      "spotCount": 2,
+      "lat": 47.6291395,
+      "lng": 8.304380250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1453209674), ODbL"
+    },
+    {
+      "id": "lauchringen-5ab993d324",
+      "city": "lauchringen",
+      "label": "Parkplatz bei kath. Kirche Herz-Jesu",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lauchringen",
+      "spotCount": 1,
+      "lat": 47.630201400000004,
+      "lng": 8.304352100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/157769324), ODbL"
+    },
+    {
+      "id": "lauchringen-c2e9dddf5c",
+      "city": "lauchringen",
+      "label": "Riedstraße",
+      "street": "Riedstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lauchringen",
+      "spotCount": 2,
+      "lat": 47.630387000000006,
+      "lng": 8.316020000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/158236404), ODbL"
+    }
+  ]
+}

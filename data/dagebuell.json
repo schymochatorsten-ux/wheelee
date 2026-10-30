@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "dagebuell",
+    "name": "Dagebüll",
+    "center": {
+      "lat": 54.730302200000004,
+      "lng": 8.68914245
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dagebuell-edf44c82ed",
+      "city": "dagebuell",
+      "label": "Behindertenparkplatz Dagebüll",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Dagebüll",
+      "spotCount": 2,
+      "lat": 54.73047505,
+      "lng": 8.688334950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/186181065), ODbL"
+    },
+    {
+      "id": "dagebuell-5076793a9b",
+      "city": "dagebuell",
+      "label": "Behindertenparkplatz Dagebüll",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dagebüll",
+      "spotCount": 1,
+      "lat": 54.730302200000004,
+      "lng": 8.68914245,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1177613407), ODbL"
+    },
+    {
+      "id": "dagebuell-7fb4d8864c",
+      "city": "dagebuell",
+      "label": "Behindertenparkplatz Dagebüll",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dagebüll",
+      "spotCount": 1,
+      "lat": 54.730312700000006,
+      "lng": 8.689088250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1177613408), ODbL"
+    },
+    {
+      "id": "dagebuell-cc8b4161d0",
+      "city": "dagebuell",
+      "label": "Nordseestraße 12",
+      "street": "Nordseestraße",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dagebüll",
+      "spotCount": 1,
+      "lat": 54.72961655,
+      "lng": 8.6964669,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1202062772), ODbL"
+    },
+    {
+      "id": "dagebuell-3d0d0095bb",
+      "city": "dagebuell",
+      "label": "Pegelweg",
+      "street": "Pegelweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dagebüll",
+      "spotCount": 2,
+      "lat": 54.7300156,
+      "lng": 8.6976828,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1202917588), ODbL"
+    }
+  ]
+}

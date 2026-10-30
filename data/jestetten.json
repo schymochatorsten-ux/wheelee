@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "jestetten",
+    "name": "Jestetten",
+    "center": {
+      "lat": 47.65418625,
+      "lng": 8.572946000000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "jestetten-925d398339",
+      "city": "jestetten",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Jestetten",
+      "spotCount": 2,
+      "lat": 47.65418625,
+      "lng": 8.572298450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1256416789), ODbL"
+    },
+    {
+      "id": "jestetten-e5dfbaa783",
+      "city": "jestetten",
+      "label": "Eisenbahnstraße",
+      "street": "Eisenbahnstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Jestetten",
+      "spotCount": 1,
+      "lat": 47.65438160000001,
+      "lng": 8.572946000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1256416788), ODbL"
+    },
+    {
+      "id": "jestetten-999d0e41cb",
+      "city": "jestetten",
+      "label": "Kirchstraße",
+      "street": "Kirchstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jestetten",
+      "spotCount": 1,
+      "lat": 47.6498515,
+      "lng": 8.56872775,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/590804126), ODbL"
+    },
+    {
+      "id": "jestetten-f05c57a70a",
+      "city": "jestetten",
+      "label": "Saarstraße",
+      "street": "Saarstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jestetten",
+      "spotCount": 2,
+      "lat": 47.65359465,
+      "lng": 8.57494585,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/88335567), ODbL"
+    }
+  ]
+}

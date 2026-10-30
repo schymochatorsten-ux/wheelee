@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "heikendorf",
+    "name": "Heikendorf",
+    "center": {
+      "lat": 54.371117250000005,
+      "lng": 10.2031439
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "heikendorf-d062a5603b",
+      "city": "heikendorf",
+      "label": "Buurvagt",
+      "street": "Buurvagt",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heikendorf",
+      "spotCount": 2,
+      "lat": 54.3690865,
+      "lng": 10.2031439,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/109992501), ODbL"
+    },
+    {
+      "id": "heikendorf-9b21051651",
+      "city": "heikendorf",
+      "label": "Neuheikendorfer Weg 12",
+      "street": "Neuheikendorfer Weg",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heikendorf",
+      "spotCount": 1,
+      "lat": 54.371117250000005,
+      "lng": 10.2093922,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/975945520), ODbL"
+    },
+    {
+      "id": "heikendorf-77f4a97461",
+      "city": "heikendorf",
+      "label": "Strandweg",
+      "street": "Strandweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Heikendorf",
+      "spotCount": 1,
+      "lat": 54.375105950000005,
+      "lng": 10.1970971,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/109993226), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bessenbach",
+    "name": "Bessenbach",
+    "center": {
+      "lat": 49.951787700000004,
+      "lng": 9.2496708
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bessenbach-0ec778a025",
+      "city": "bessenbach",
+      "label": "Pfarrer-Hans-Winkler-Platz",
+      "street": "Pfarrer-Hans-Winkler-Platz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bessenbach",
+      "spotCount": 2,
+      "lat": 49.951787700000004,
+      "lng": 9.2496708,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/475117557), ODbL"
+    }
+  ]
+}

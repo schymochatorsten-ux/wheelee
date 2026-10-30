@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "iggensbach",
+    "name": "Iggensbach",
+    "center": {
+      "lat": 48.73251435,
+      "lng": 13.1443352
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "iggensbach-c164ba5fe4",
+      "city": "iggensbach",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Iggensbach",
+      "spotCount": 2,
+      "lat": 48.73251435,
+      "lng": 13.1443352,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1365793257), ODbL"
+    }
+  ]
+}

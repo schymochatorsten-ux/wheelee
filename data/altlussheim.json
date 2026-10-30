@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "altlussheim",
+    "name": "Altlußheim",
+    "center": {
+      "lat": 49.29537735,
+      "lng": 8.509346200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "altlussheim-55a6463f72",
+      "city": "altlussheim",
+      "label": "Badenwerkstraße",
+      "street": "Badenwerkstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Th 08:00-20:00; Fr-Sa 08:00-21:00; Su,PH off",
+      "district": "Altlußheim",
+      "spotCount": 2,
+      "lat": 49.29537735,
+      "lng": 8.5111218,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/133855987), ODbL"
+    },
+    {
+      "id": "altlussheim-956f960f8f",
+      "city": "altlussheim",
+      "label": "Benzstraße",
+      "street": "Benzstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Altlußheim",
+      "spotCount": 1,
+      "lat": 49.2948713,
+      "lng": 8.5092532,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1334545502), ODbL"
+    },
+    {
+      "id": "altlussheim-603b57cc7c",
+      "city": "altlussheim",
+      "label": "Benzstraße",
+      "street": "Benzstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Altlußheim",
+      "spotCount": 1,
+      "lat": 49.2948858,
+      "lng": 8.5092146,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1334545503), ODbL"
+    },
+    {
+      "id": "altlussheim-12b5ed8da5",
+      "city": "altlussheim",
+      "label": "Benzstraße",
+      "street": "Benzstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Altlußheim",
+      "spotCount": 2,
+      "lat": 49.29477200000001,
+      "lng": 8.509346200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1334545504), ODbL"
+    },
+    {
+      "id": "altlussheim-e1f6f66ccb",
+      "city": "altlussheim",
+      "label": "Lanzstraße 2",
+      "street": "Lanzstraße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Altlußheim",
+      "spotCount": 1,
+      "lat": 49.2955293,
+      "lng": 8.5109033,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/267967120), ODbL"
+    },
+    {
+      "id": "altlussheim-504d2f2063",
+      "city": "altlussheim",
+      "label": "Schulstraße 4",
+      "street": "Schulstraße",
+      "houseNumber": "4",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Altlußheim",
+      "spotCount": 1,
+      "lat": 49.300209,
+      "lng": 8.498276800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12291499148), ODbL"
+    }
+  ]
+}

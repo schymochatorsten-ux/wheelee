@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "neuhofen",
+    "name": "Neuhofen",
+    "center": {
+      "lat": 49.4213663,
+      "lng": 8.4279145
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuhofen-069ee005ea",
+      "city": "neuhofen",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuhofen",
+      "spotCount": 2,
+      "lat": 49.42156575,
+      "lng": 8.42910105,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1544986390), ODbL"
+    },
+    {
+      "id": "neuhofen-0253d60d64",
+      "city": "neuhofen",
+      "label": "Hauptstraße 15",
+      "street": "Hauptstraße",
+      "houseNumber": "15",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuhofen",
+      "spotCount": 1,
+      "lat": 49.42200020000001,
+      "lng": 8.4279145,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13987401750), ODbL"
+    },
+    {
+      "id": "neuhofen-65acb0c916",
+      "city": "neuhofen",
+      "label": "Industriestraße",
+      "street": "Industriestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuhofen",
+      "spotCount": 2,
+      "lat": 49.41630475,
+      "lng": 8.41820905,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/92905629), ODbL"
+    },
+    {
+      "id": "neuhofen-134e215666",
+      "city": "neuhofen",
+      "label": "Industriestraße",
+      "street": "Industriestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuhofen",
+      "spotCount": 3,
+      "lat": 49.4174962,
+      "lng": 8.416202250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/92905652), ODbL"
+    },
+    {
+      "id": "neuhofen-57d9ee356d",
+      "city": "neuhofen",
+      "label": "Jahnstraße",
+      "street": "Jahnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuhofen",
+      "spotCount": 1,
+      "lat": 49.4213663,
+      "lng": 8.423909400000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3145066629), ODbL"
+    },
+    {
+      "id": "neuhofen-5587b213fc",
+      "city": "neuhofen",
+      "label": "Kirchgässl 4",
+      "street": "Kirchgässl",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuhofen",
+      "spotCount": 1,
+      "lat": 49.423546,
+      "lng": 8.4287439,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1537407826), ODbL"
+    },
+    {
+      "id": "neuhofen-ca4038f972",
+      "city": "neuhofen",
+      "label": "Schlicht",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Neuhofen",
+      "spotCount": 4,
+      "lat": 49.4164926,
+      "lng": 8.4495376,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1160321756), ODbL"
+    }
+  ]
+}

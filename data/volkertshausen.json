@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "volkertshausen",
+    "name": "Volkertshausen",
+    "center": {
+      "lat": 47.8179059,
+      "lng": 8.866984550000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "volkertshausen-61f0571f4b",
+      "city": "volkertshausen",
+      "label": "Bärenloh",
+      "street": "Bärenloh",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Volkertshausen",
+      "spotCount": 2,
+      "lat": 47.81704640000001,
+      "lng": 8.86523695,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/529551201), ODbL"
+    },
+    {
+      "id": "volkertshausen-01c60208b6",
+      "city": "volkertshausen",
+      "label": "Bärenloh",
+      "street": "Bärenloh",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Volkertshausen",
+      "spotCount": 4,
+      "lat": 47.8179059,
+      "lng": 8.86594245,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/530660433), ODbL"
+    },
+    {
+      "id": "volkertshausen-44474603c1",
+      "city": "volkertshausen",
+      "label": "Bärenloh 11",
+      "street": "Bärenloh",
+      "houseNumber": "11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Volkertshausen",
+      "spotCount": 2,
+      "lat": 47.817117350000004,
+      "lng": 8.866984550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1050078927), ODbL"
+    },
+    {
+      "id": "volkertshausen-c9e031ea71",
+      "city": "volkertshausen",
+      "label": "Bärenloh 2",
+      "street": "Bärenloh",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Volkertshausen",
+      "spotCount": 5,
+      "lat": 47.81764525,
+      "lng": 8.865029250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1050078942), ODbL"
+    },
+    {
+      "id": "volkertshausen-6870b79236",
+      "city": "volkertshausen",
+      "label": "Hegaustraße",
+      "street": "Hegaustraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Volkertshausen",
+      "spotCount": 7,
+      "lat": 47.820188650000006,
+      "lng": 8.868165150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1050078960), ODbL"
+    },
+    {
+      "id": "volkertshausen-da00ac00be",
+      "city": "volkertshausen",
+      "label": "Öhmdweg 11",
+      "street": "Öhmdweg",
+      "houseNumber": "11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Volkertshausen",
+      "spotCount": 5,
+      "lat": 47.8257983,
+      "lng": 8.8686425,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9650132195), ODbL"
+    }
+  ]
+}

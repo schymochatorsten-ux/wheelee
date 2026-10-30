@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "malchow",
+    "name": "Malchow",
+    "center": {
+      "lat": 53.48197805000001,
+      "lng": 12.42412385
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "malchow-c3e726c7c8",
+      "city": "malchow",
+      "label": "Am Bahnhof Malchow",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Malchow",
+      "spotCount": 2,
+      "lat": 53.482035950000004,
+      "lng": 12.424407200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/238565767), ODbL"
+    },
+    {
+      "id": "malchow-c002a65a3f",
+      "city": "malchow",
+      "label": "Inselstadt Malchow",
+      "street": "Inselstadt Malchow",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Malchow",
+      "spotCount": 1,
+      "lat": 53.48193245,
+      "lng": 12.42412385,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1464323246), ODbL"
+    },
+    {
+      "id": "malchow-fd5b96d1c1",
+      "city": "malchow",
+      "label": "Inselstadt Malchow",
+      "street": "Inselstadt Malchow",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Malchow",
+      "spotCount": 1,
+      "lat": 53.48197805000001,
+      "lng": 12.424093350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1464323247), ODbL"
+    },
+    {
+      "id": "malchow-66e8cf759d",
+      "city": "malchow",
+      "label": "Rostocker Straße 7a",
+      "street": "Rostocker Straße",
+      "houseNumber": "7a",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Malchow",
+      "spotCount": 1,
+      "lat": 53.480832050000004,
+      "lng": 12.4238696,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1348386428), ODbL"
+    }
+  ]
+}

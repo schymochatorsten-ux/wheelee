@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "oettingen-i-bay",
+    "name": "Oettingen i.Bay.",
+    "center": {
+      "lat": 48.95420705000001,
+      "lng": 10.604542649999999
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oettingen-i-bay-c20f1f980b",
+      "city": "oettingen-i-bay",
+      "label": "Schloßstraße 2",
+      "street": "Schloßstraße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oettingen i.Bay.",
+      "spotCount": 1,
+      "lat": 48.95420705000001,
+      "lng": 10.604542649999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1369577705), ODbL"
+    },
+    {
+      "id": "oettingen-i-bay-98c47051d3",
+      "city": "oettingen-i-bay",
+      "label": "Schloßstraße 2",
+      "street": "Schloßstraße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oettingen i.Bay.",
+      "spotCount": 1,
+      "lat": 48.95417930000001,
+      "lng": 10.604529,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1369577706), ODbL"
+    }
+  ]
+}

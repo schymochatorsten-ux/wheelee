@@ -12163,5 +12163,760 @@
     "street": "Weseler Straße",
     "houseNumber": null,
     "place": "Issum"
+  },
+  "49.95135,12.24317": {
+    "street": "Kirchplatz",
+    "houseNumber": null,
+    "place": "Anger"
+  },
+  "49.95121,12.24273": {
+    "street": "Kirchplatz",
+    "houseNumber": null,
+    "place": "Anger"
+  },
+  "51.37474,14.07662": {
+    "street": "Rathausallee",
+    "houseNumber": null,
+    "place": null
+  },
+  "49.77857,11.18627": {
+    "street": "Franz-Dörrzapf-Straße",
+    "houseNumber": null,
+    "place": "Breitenbach"
+  },
+  "51.74965,13.96270": {
+    "street": "Am Friedhof",
+    "houseNumber": null,
+    "place": "Calau"
+  },
+  "51.03364,13.29831": {
+    "street": "An der Autobahn",
+    "houseNumber": null,
+    "place": "Siebenlehn"
+  },
+  "51.03391,13.29868": {
+    "street": "An der Autobahn",
+    "houseNumber": null,
+    "place": "Siebenlehn"
+  },
+  "51.03391,13.29873": {
+    "street": "An der Autobahn",
+    "houseNumber": null,
+    "place": "Siebenlehn"
+  },
+  "51.02973,13.30805": {
+    "street": "Markt",
+    "houseNumber": null,
+    "place": "Breitenbach"
+  },
+  "51.03391,13.29863": {
+    "street": "An der Autobahn",
+    "houseNumber": null,
+    "place": "Siebenlehn"
+  },
+  "51.02981,13.30805": {
+    "street": "Markt",
+    "houseNumber": null,
+    "place": "Breitenbach"
+  },
+  "49.16165,8.56747": {
+    "street": "A 5",
+    "houseNumber": null,
+    "place": "Forst"
+  },
+  "49.15304,8.58705": {
+    "street": "Langestraße",
+    "houseNumber": null,
+    "place": "Forst"
+  },
+  "49.16180,8.57017": {
+    "street": "A 5",
+    "houseNumber": null,
+    "place": "Forst"
+  },
+  "49.16166,8.56746": {
+    "street": "A 5",
+    "houseNumber": null,
+    "place": "Forst"
+  },
+  "51.78293,14.07646": {
+    "street": "Wilhelm-Pieck-Straße",
+    "houseNumber": null,
+    "place": "Schönebegk"
+  },
+  "51.79891,14.09022": {
+    "street": "Suschower Hauptstraße",
+    "houseNumber": null,
+    "place": "Suschow"
+  },
+  "51.78488,14.07391": {
+    "street": "Bedburger Straße",
+    "houseNumber": null,
+    "place": "Schönebegk"
+  },
+  "51.78463,14.08560": {
+    "street": "Wilhelm-Pieck-Straße",
+    "houseNumber": null,
+    "place": "Märkischheide"
+  },
+  "51.78084,14.07399": {
+    "street": "Reptener Chaussee",
+    "houseNumber": null,
+    "place": "Schönebegk"
+  },
+  "51.81590,14.03190": {
+    "street": "Radduscher Bahnhofstraße",
+    "houseNumber": null,
+    "place": "Raddusch"
+  },
+  "51.46999,9.01832": {
+    "street": "Holpergrund",
+    "houseNumber": null,
+    "place": "Rhoden"
+  },
+  "51.49024,9.00843": {
+    "street": "L 3081",
+    "houseNumber": null,
+    "place": "Rhoden"
+  },
+  "50.14254,10.52836": {
+    "street": "Karlsbader Straße",
+    "houseNumber": null,
+    "place": null
+  },
+  "50.10746,10.51469": {
+    "street": "Schloßweg",
+    "houseNumber": null,
+    "place": "Rügheim"
+  },
+  "50.12941,10.51844": {
+    "street": "Hans-Elbe-Straße",
+    "houseNumber": null,
+    "place": null
+  },
+  "54.40116,10.12723": {
+    "street": "Lindenallee",
+    "houseNumber": null,
+    "place": "Klausdorf"
+  },
+  "50.21937,11.07503": {
+    "street": "Frohnlacher Straße",
+    "houseNumber": null,
+    "place": "Frohnlach"
+  },
+  "48.89273,8.57694": {
+    "street": "Industriestraße",
+    "houseNumber": "2",
+    "place": "Niebelsbach"
+  },
+  "49.61935,12.34841": {
+    "street": "Waidhauser Straße",
+    "houseNumber": null,
+    "place": "Galgenberg"
+  },
+  "49.61931,12.34819": {
+    "street": "Fliederstraße",
+    "houseNumber": null,
+    "place": "Fiedlbühl"
+  },
+  "50.58278,10.93540": {
+    "street": "Ehringshäuser Straße",
+    "houseNumber": null,
+    "place": "Neustadt am Rennsteig"
+  },
+  "52.20036,9.91873": {
+    "street": "Hannoversche Straße",
+    "houseNumber": "82",
+    "place": "Hasede"
+  },
+  "52.19627,9.89565": {
+    "street": "Enge Straße",
+    "houseNumber": null,
+    "place": "Giesen"
+  },
+  "51.01576,10.68393": {
+    "street": "Hochheimer Straße",
+    "houseNumber": null,
+    "place": "Westhausen"
+  },
+  "50.46951,10.45241": {
+    "street": "A 71",
+    "houseNumber": null,
+    "place": "Bibra"
+  },
+  "50.47165,10.45417": {
+    "street": "A 71",
+    "houseNumber": null,
+    "place": "Bibra"
+  },
+  "50.46954,10.45241": {
+    "street": "A 71",
+    "houseNumber": null,
+    "place": "Bibra"
+  },
+  "50.47169,10.45415": {
+    "street": "A 71",
+    "houseNumber": null,
+    "place": "Bibra"
+  },
+  "52.93541,8.37944": {
+    "street": "Dorfring",
+    "houseNumber": null,
+    "place": "Trahe"
+  },
+  "52.97355,8.39774": {
+    "street": "Geveshauser Weg",
+    "houseNumber": null,
+    "place": "Neerstedt"
+  },
+  "52.27055,14.07098": {
+    "street": "Bahnhofstraße",
+    "houseNumber": null,
+    "place": "Pieskow"
+  },
+  "52.09696,10.14441": {
+    "street": "Bahnhofstraße",
+    "houseNumber": null,
+    "place": "Grasdorf"
+  },
+  "49.40348,10.68678": {
+    "street": "Pestalozzistraße",
+    "houseNumber": null,
+    "place": null
+  },
+  "49.39992,10.69087": {
+    "street": "Marktplatz",
+    "houseNumber": null,
+    "place": null
+  },
+  "48.93765,9.50163": {
+    "street": "Holzbachweg",
+    "houseNumber": null,
+    "place": "Holzbachäcker"
+  },
+  "48.93225,9.52634": {
+    "street": "Ammerweg",
+    "houseNumber": null,
+    "place": "Dinkeläcker"
+  },
+  "48.77809,8.08823": {
+    "street": "Vorfahrtsbereich",
+    "houseNumber": null,
+    "place": "Söllingen"
+  },
+  "48.74849,8.03827": {
+    "street": "Lindengarten",
+    "houseNumber": null,
+    "place": "Schwarzach"
+  },
+  "48.74881,8.03827": {
+    "street": "Lindengarten",
+    "houseNumber": null,
+    "place": "Schwarzach"
+  },
+  "48.77849,8.08860": {
+    "street": "Vorfahrtsbereich",
+    "houseNumber": null,
+    "place": "Söllingen"
+  },
+  "48.77835,8.08847": {
+    "street": "Vorfahrtsbereich",
+    "houseNumber": null,
+    "place": "Söllingen"
+  },
+  "48.77838,8.08850": {
+    "street": "Vorfahrtsbereich",
+    "houseNumber": null,
+    "place": "Söllingen"
+  },
+  "48.77852,8.08863": {
+    "street": "Vorfahrtsbereich",
+    "houseNumber": null,
+    "place": "Söllingen"
+  },
+  "48.74872,8.03825": {
+    "street": "Withig",
+    "houseNumber": "4",
+    "place": "Schwarzach"
+  },
+  "50.39354,7.38511": {
+    "street": "Rathausstraße",
+    "houseNumber": null,
+    "place": "Plaidt"
+  },
+  "48.42402,10.93250": {
+    "street": "Flughafenstraße",
+    "houseNumber": null,
+    "place": "Mühlhausen"
+  },
+  "54.08643,9.64989": {
+    "street": "Itzehoer Straße",
+    "houseNumber": null,
+    "place": "Glüsing"
+  },
+  "54.09003,9.64965": {
+    "street": "Am Markt",
+    "houseNumber": null,
+    "place": null
+  },
+  "50.66669,7.42634": {
+    "street": "Marktstraße",
+    "houseNumber": null,
+    "place": "Hussen"
+  },
+  "54.37511,10.19710": {
+    "street": "Strandweg",
+    "houseNumber": null,
+    "place": null
+  },
+  "54.37112,10.20939": {
+    "street": "Schoolstieg",
+    "houseNumber": null,
+    "place": null
+  },
+  "54.36909,10.20314": {
+    "street": "Teichtor",
+    "houseNumber": null,
+    "place": null
+  },
+  "48.55547,9.37463": {
+    "street": "Auf der Mauer",
+    "houseNumber": null,
+    "place": null
+  },
+  "48.55544,9.37633": {
+    "street": "Oberer Graben",
+    "houseNumber": null,
+    "place": null
+  },
+  "48.55717,9.38213": {
+    "street": "Breitensteinstraße",
+    "houseNumber": null,
+    "place": null
+  },
+  "51.28673,14.81950": {
+    "street": "Kollmer Straße",
+    "houseNumber": null,
+    "place": null
+  },
+  "50.25217,8.31266": {
+    "street": "Im Brühl",
+    "houseNumber": null,
+    "place": "Esch"
+  },
+  "50.27539,8.35265": {
+    "street": "Industriestraße",
+    "houseNumber": null,
+    "place": "Tenne"
+  },
+  "49.61076,11.26814": {
+    "street": "Schäferhütte",
+    "houseNumber": null,
+    "place": "Kirchrüsselbach"
+  },
+  "50.16465,9.09455": {
+    "street": "Rathausstraße",
+    "houseNumber": null,
+    "place": "Neuenhaßlau"
+  },
+  "50.17918,9.11017": {
+    "street": "K 903",
+    "houseNumber": null,
+    "place": "Niedermittlau - Bahnhofsiedlung"
+  },
+  "50.17937,9.11069": {
+    "street": "K 903",
+    "houseNumber": null,
+    "place": "Niedermittlau - Bahnhofsiedlung"
+  },
+  "53.15844,8.61102": {
+    "street": "An der Kirche",
+    "houseNumber": null,
+    "place": "Eschhofsiedlung"
+  },
+  "53.15668,8.61726": {
+    "street": "Deichstraße",
+    "houseNumber": null,
+    "place": "Eschhofsiedlung"
+  },
+  "54.40507,10.22097": {
+    "street": "Probsteier Platz",
+    "houseNumber": null,
+    "place": null
+  },
+  "54.40517,10.22163": {
+    "street": "Probsteier Platz",
+    "houseNumber": null,
+    "place": null
+  },
+  "54.40540,10.22036": {
+    "street": "Probsteier Platz",
+    "houseNumber": null,
+    "place": null
+  },
+  "54.40628,10.22301": {
+    "street": "Wiesenweg",
+    "houseNumber": null,
+    "place": null
+  },
+  "54.41040,10.23132": {
+    "street": "Gorch-Fock-Ring",
+    "houseNumber": null,
+    "place": null
+  },
+  "51.36190,12.52771": {
+    "street": "Sommerfelder Straße",
+    "houseNumber": null,
+    "place": "Panitzsch"
+  },
+  "49.89204,9.03475": {
+    "street": "Hans-Dörr-Straße",
+    "houseNumber": null,
+    "place": "Mosbach"
+  },
+  "49.05648,9.24490": {
+    "street": "Nordstraße",
+    "houseNumber": null,
+    "place": "Wüstenhausen"
+  },
+  "49.05393,9.28705": {
+    "street": "Ochsenweg",
+    "houseNumber": null,
+    "place": "Auenstein"
+  },
+  "53.31082,10.28869": {
+    "street": "Achtern Hoff",
+    "houseNumber": null,
+    "place": "Radbruch"
+  },
+  "50.69919,13.05804": {
+    "street": "Hopfgartener Straße",
+    "houseNumber": null,
+    "place": "Scharfenstein"
+  },
+  "48.83220,8.27772": {
+    "street": "Murgdamm",
+    "houseNumber": null,
+    "place": "Oberndorf"
+  },
+  "48.83208,8.27798": {
+    "street": "Murgdamm",
+    "houseNumber": null,
+    "place": "Oberndorf"
+  },
+  "47.77709,11.13993": {
+    "street": "Weilheimer Straße",
+    "houseNumber": null,
+    "place": "Rameck"
+  },
+  "47.77761,11.14358": {
+    "street": "Seeleite",
+    "houseNumber": null,
+    "place": "Rameck"
+  },
+  "51.09473,14.30833": {
+    "street": "Friedhofsweg",
+    "houseNumber": null,
+    "place": "Neukirch/Lausitz"
+  },
+  "48.73081,13.52350": {
+    "street": "Bruckfeld",
+    "houseNumber": null,
+    "place": "Pötzerreut"
+  },
+  "48.29986,9.98853": {
+    "street": "Schulweg",
+    "houseNumber": null,
+    "place": "Hinter den Tannen"
+  },
+  "48.29931,9.98238": {
+    "street": "Uhlandstraße",
+    "houseNumber": null,
+    "place": "Hinter den Tannen"
+  },
+  "49.94281,7.40646": {
+    "street": "Marktplatz",
+    "houseNumber": null,
+    "place": "Denzen"
+  },
+  "49.94637,7.40555": {
+    "street": "Schulstraße",
+    "houseNumber": null,
+    "place": "Denzen"
+  },
+  "51.08787,12.32379": {
+    "street": "Breitenhainer Weg",
+    "houseNumber": null,
+    "place": "Breitenhain"
+  },
+  "51.08786,12.32385": {
+    "street": "Breitenhainer Weg",
+    "houseNumber": null,
+    "place": "Breitenhain"
+  },
+  "54.14826,9.28366": {
+    "street": "Kapellenplatz",
+    "houseNumber": null,
+    "place": null
+  },
+  "54.14010,9.28530": {
+    "street": "Karkloh",
+    "houseNumber": null,
+    "place": "Schlaa"
+  },
+  "54.14593,9.29237": {
+    "street": "Am Bahnhof",
+    "houseNumber": null,
+    "place": null
+  },
+  "54.14816,9.28332": {
+    "street": "Kapellenplatz",
+    "houseNumber": null,
+    "place": null
+  },
+  "54.14625,9.28298": {
+    "street": "Süderstraße",
+    "houseNumber": null,
+    "place": null
+  },
+  "49.29935,8.13248": {
+    "street": "An der Südumgehung",
+    "houseNumber": null,
+    "place": "Maikammer"
+  },
+  "49.30496,8.13734": {
+    "street": "Oberer Schnetzweg",
+    "houseNumber": null,
+    "place": "Maikammer"
+  },
+  "49.30112,8.13705": {
+    "street": "An der Steinmühle",
+    "houseNumber": null,
+    "place": "Maikammer"
+  },
+  "49.30460,8.12915": {
+    "street": "Sankt-Martiner-Straße",
+    "houseNumber": null,
+    "place": "Maikammer"
+  },
+  "49.30476,8.13242": {
+    "street": "Schulstraße",
+    "houseNumber": null,
+    "place": "Maikammer"
+  },
+  "49.30472,8.12909": {
+    "street": "Sankt-Martiner-Straße",
+    "houseNumber": null,
+    "place": "Maikammer"
+  },
+  "49.30591,8.12993": {
+    "street": "Friedhofstraße",
+    "houseNumber": null,
+    "place": "Maikammer"
+  },
+  "53.54123,9.54300": {
+    "street": "Hagener Weg",
+    "houseNumber": "2",
+    "place": "Dollern"
+  },
+  "50.93626,12.88377": {
+    "street": "Am Anger",
+    "houseNumber": null,
+    "place": "Claußnitz"
+  },
+  "50.92634,12.85283": {
+    "street": "Alte Mühle",
+    "houseNumber": null,
+    "place": "Markersdorf"
+  },
+  "50.95145,12.85437": {
+    "street": "Industriestraße",
+    "houseNumber": "1",
+    "place": "Diethensdorf"
+  },
+  "48.76106,9.68357": {
+    "street": "Im Beergarten",
+    "houseNumber": null,
+    "place": "Wäschenbeuren"
+  },
+  "51.49475,9.60139": {
+    "street": "Amtsstraße",
+    "houseNumber": null,
+    "place": "Veckerhagen"
+  },
+  "50.70065,12.94050": {
+    "street": "Willy-Poller-Straße",
+    "houseNumber": "4",
+    "place": "Gelenau/Erzgebirge"
+  },
+  "50.38924,7.16376": {
+    "street": "Seeblick",
+    "houseNumber": null,
+    "place": "Rieden"
+  },
+  "47.82516,12.59187": {
+    "street": "TS 3",
+    "houseNumber": null,
+    "place": "Irlach"
+  },
+  "49.71411,9.27127": {
+    "street": "Streckfuß",
+    "houseNumber": null,
+    "place": "Bürgstadt"
+  },
+  "49.21968,7.70098": {
+    "street": "Hanauer Straße",
+    "houseNumber": null,
+    "place": "Münchweiler an der Rodalb"
+  },
+  "48.83781,13.15178": {
+    "street": "Gewerbedorf",
+    "houseNumber": null,
+    "place": "Rohrstetten"
+  },
+  "48.83780,13.15180": {
+    "street": "Gewerbedorf",
+    "houseNumber": null,
+    "place": "Rohrstetten"
+  },
+  "50.01915,10.83363": {
+    "street": "Bahnhofstraße",
+    "houseNumber": null,
+    "place": "Laimbach"
+  },
+  "53.54498,13.17113": {
+    "street": "Schulstraße",
+    "houseNumber": null,
+    "place": "Wulkenzin"
+  },
+  "49.60089,11.12010": {
+    "street": "Bierleinswiesen",
+    "houseNumber": null,
+    "place": "Dormitz"
+  },
+  "49.60092,11.12012": {
+    "street": "Bierleinswiesen",
+    "houseNumber": null,
+    "place": "Dormitz"
+  },
+  "48.42836,8.20147": {
+    "street": "Bahnhofstraße",
+    "houseNumber": null,
+    "place": "Freiersbach"
+  },
+  "48.42845,8.20193": {
+    "street": "Bahnhofstraße",
+    "houseNumber": null,
+    "place": "Freiersbach"
+  },
+  "48.52337,9.46299": {
+    "street": "Hofener Weg",
+    "houseNumber": null,
+    "place": "Grabenstetten"
+  },
+  "49.86769,8.17637": {
+    "street": "Osterstraße",
+    "houseNumber": null,
+    "place": "Udenheim"
+  },
+  "50.56472,11.44850": {
+    "street": "Bahnhofstraße",
+    "houseNumber": null,
+    "place": "Leutenberg"
+  },
+  "54.82178,9.65555": {
+    "street": "Strandweg",
+    "houseNumber": null,
+    "place": "Langballigau"
+  },
+  "50.46725,11.16011": {
+    "street": "Bahnhofstraße",
+    "houseNumber": "96",
+    "place": "Ernstthal"
+  },
+  "50.49611,11.16452": {
+    "street": "Glaswerkstraße",
+    "houseNumber": null,
+    "place": "Ernstthal"
+  },
+  "50.49532,11.16553": {
+    "street": "Glaswerkstraße",
+    "houseNumber": null,
+    "place": "Ernstthal"
+  },
+  "48.19069,11.97063": {
+    "street": "Gewerbebogen",
+    "houseNumber": null,
+    "place": "Tading"
+  },
+  "48.18369,11.97664": {
+    "street": "Franz-Jaksch-Weg",
+    "houseNumber": null,
+    "place": "Tading"
+  },
+  "53.66367,9.90446": {
+    "street": "Ellerbeker Straße",
+    "houseNumber": null,
+    "place": "Bönningstedt"
+  },
+  "53.66341,9.90346": {
+    "street": "Ellerbeker Straße",
+    "houseNumber": null,
+    "place": "Bönningstedt"
+  },
+  "53.66846,9.94038": {
+    "street": "A 7",
+    "houseNumber": null,
+    "place": "Bönningstedt"
+  },
+  "53.66850,9.94035": {
+    "street": "A 7",
+    "houseNumber": null,
+    "place": "Bönningstedt"
+  },
+  "53.66848,9.94036": {
+    "street": "A 7",
+    "houseNumber": null,
+    "place": "Bönningstedt"
+  },
+  "53.66327,9.90268": {
+    "street": "Ellerbeker Straße",
+    "houseNumber": null,
+    "place": "Bönningstedt"
+  },
+  "53.66322,9.90243": {
+    "street": "Ellerbeker Straße",
+    "houseNumber": null,
+    "place": "Bönningstedt"
+  },
+  "53.66746,9.90338": {
+    "street": "Kieler Straße",
+    "houseNumber": null,
+    "place": "Winzeldorf"
+  },
+  "53.66384,9.91003": {
+    "street": "Bönningstedt",
+    "houseNumber": null,
+    "place": "Ganovenviertel"
+  },
+  "48.00706,10.96723": {
+    "street": "Pfarrer-Jaumann-Straße",
+    "houseNumber": null,
+    "place": "Hofstetten"
+  },
+  "48.89471,12.97290": {
+    "street": "Prangerweg",
+    "houseNumber": null,
+    "place": "Hundsruck"
+  },
+  "48.89401,12.97365": {
+    "street": "Kirchenstraße",
+    "houseNumber": null,
+    "place": "Widstatt"
+  },
+  "48.89055,12.97257": {
+    "street": "Alte Straße",
+    "houseNumber": null,
+    "place": "Petraching"
   }
 }

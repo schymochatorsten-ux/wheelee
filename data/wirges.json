@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "wirges",
+    "name": "Wirges",
+    "center": {
+      "lat": 50.473139,
+      "lng": 7.7979099000000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wirges-dfdd69b504",
+      "city": "wirges",
+      "label": "Auf der Klaus",
+      "street": "Auf der Klaus",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wirges",
+      "spotCount": 2,
+      "lat": 50.47702485000001,
+      "lng": 7.78820945,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/33945248), ODbL"
+    },
+    {
+      "id": "wirges-a04c1b0c29",
+      "city": "wirges",
+      "label": "Auf der Klaus",
+      "street": "Auf der Klaus",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wirges",
+      "spotCount": 2,
+      "lat": 50.477547,
+      "lng": 7.788893750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/33945255), ODbL"
+    },
+    {
+      "id": "wirges-28cb89ca32",
+      "city": "wirges",
+      "label": "Bahnhofstraße 10",
+      "street": "Bahnhofstraße",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wirges",
+      "spotCount": 1,
+      "lat": 50.4724085,
+      "lng": 7.7979099000000005,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/914269845), ODbL"
+    },
+    {
+      "id": "wirges-20a7c3ea92",
+      "city": "wirges",
+      "label": "Bahnhofstraße 2",
+      "street": "Bahnhofstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wirges",
+      "spotCount": 1,
+      "lat": 50.47299835,
+      "lng": 7.79948085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/76702892), ODbL"
+    },
+    {
+      "id": "wirges-0052cd018d",
+      "city": "wirges",
+      "label": "Kirchstraße 4 A",
+      "street": "Kirchstraße",
+      "houseNumber": "4 A",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wirges",
+      "spotCount": 2,
+      "lat": 50.473139,
+      "lng": 7.8012671000000005,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/297768010), ODbL"
+    },
+    {
+      "id": "wirges-690ddc7bee",
+      "city": "wirges",
+      "label": "Montchaninplatz",
+      "street": "Montchaninplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wirges",
+      "spotCount": 4,
+      "lat": 50.4687682,
+      "lng": 7.79781075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27043081), ODbL"
+    }
+  ]
+}

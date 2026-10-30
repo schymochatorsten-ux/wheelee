@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "berghuelen",
+    "name": "Berghülen",
+    "center": {
+      "lat": 48.46436985,
+      "lng": 9.76080515
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "berghuelen-bed8efdd24",
+      "city": "berghuelen",
+      "label": "Meergäßle 2",
+      "street": "Meergäßle",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Berghülen",
+      "spotCount": 1,
+      "lat": 48.46436985,
+      "lng": 9.76080515,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1548071674), ODbL"
+    }
+  ]
+}

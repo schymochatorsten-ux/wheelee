@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "aidenbach",
+    "name": "Aidenbach",
+    "center": {
+      "lat": 48.56909675,
+      "lng": 13.08345495
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "aidenbach-be5b27c65f",
+      "city": "aidenbach",
+      "label": "Haidenburger Straße",
+      "street": "Haidenburger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aidenbach",
+      "spotCount": 2,
+      "lat": 48.56909675,
+      "lng": 13.08322235,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/662923094), ODbL"
+    },
+    {
+      "id": "aidenbach-c6e131cb0a",
+      "city": "aidenbach",
+      "label": "Hubertusweg",
+      "street": "Hubertusweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aidenbach",
+      "spotCount": 2,
+      "lat": 48.5699516,
+      "lng": 13.08345495,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/490440445), ODbL"
+    },
+    {
+      "id": "aidenbach-f1357b5db0",
+      "city": "aidenbach",
+      "label": "Unterer Markt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aidenbach",
+      "spotCount": 1,
+      "lat": 48.5684186,
+      "lng": 13.0844146,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1087919980), ODbL"
+    }
+  ]
+}

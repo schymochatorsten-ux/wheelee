@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "tegernheim",
+    "name": "Tegernheim",
+    "center": {
+      "lat": 49.027411300000004,
+      "lng": 12.167132350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "tegernheim-82a7df99e9",
+      "city": "tegernheim",
+      "label": "Am Hohen Sand",
+      "street": "Am Hohen Sand",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Tegernheim",
+      "spotCount": 2,
+      "lat": 49.027411300000004,
+      "lng": 12.167132350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/43942069), ODbL"
+    }
+  ]
+}

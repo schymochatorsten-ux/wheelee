@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "hofheim-i-ufr",
+    "name": "Hofheim i.UFr.",
+    "center": {
+      "lat": 50.129412650000006,
+      "lng": 10.51844495
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hofheim-i-ufr-5251b83a8d",
+      "city": "hofheim-i-ufr",
+      "label": "Hans-Elbe-Straße 3",
+      "street": "Hans-Elbe-Straße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hofheim i.UFr.",
+      "spotCount": 1,
+      "lat": 50.129412650000006,
+      "lng": 10.51844495,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/183558634), ODbL"
+    },
+    {
+      "id": "hofheim-i-ufr-1bdaddaf49",
+      "city": "hofheim-i-ufr",
+      "label": "Karlsbader Straße",
+      "street": "Karlsbader Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hofheim i.UFr.",
+      "spotCount": 1,
+      "lat": 50.14253720000001,
+      "lng": 10.52836005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/267592466), ODbL"
+    },
+    {
+      "id": "hofheim-i-ufr-47372281ea",
+      "city": "hofheim-i-ufr",
+      "label": "Schloßweg 1",
+      "street": "Schloßweg",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hofheim i.UFr.",
+      "spotCount": 1,
+      "lat": 50.10745895000001,
+      "lng": 10.51468805,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1456775698), ODbL"
+    }
+  ]
+}

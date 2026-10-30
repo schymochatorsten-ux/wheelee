@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "nortorf",
+    "name": "Nortorf",
+    "center": {
+      "lat": 54.168696600000004,
+      "lng": 9.854861000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nortorf-beb2ae34cd",
+      "city": "nortorf",
+      "label": "Heinkenborsteler Weg 19b",
+      "street": "Heinkenborsteler Weg",
+      "houseNumber": "19b",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nortorf",
+      "spotCount": 10,
+      "lat": 54.163967650000004,
+      "lng": 9.8452213,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1467146076), ODbL"
+    },
+    {
+      "id": "nortorf-6f94d7eac0",
+      "city": "nortorf",
+      "label": "Niedernstraße 4",
+      "street": "Niedernstraße",
+      "houseNumber": "4",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nortorf",
+      "spotCount": 1,
+      "lat": 54.1699604,
+      "lng": 9.854861000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5520906426), ODbL"
+    },
+    {
+      "id": "nortorf-03b07a0028",
+      "city": "nortorf",
+      "label": "Poststraße",
+      "street": "Poststraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nortorf",
+      "spotCount": 1,
+      "lat": 54.168696600000004,
+      "lng": 9.855047800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5520346441), ODbL"
+    }
+  ]
+}

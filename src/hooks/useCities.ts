@@ -10,6 +10,22 @@ import type { CityInfo } from "@/lib/parking/spots";
  * Startseite liefert sie mit, damit der erste Eindruck nicht auf eine zweite
  * Anfrage wartet. Die Antwort wird je Seitenaufruf nur einmal geholt.
  */
+/** Form der Antwort von `/api/cities` (siehe dort). */
+interface CitiesResponse {
+  sources: { attribution: string; license: string | null }[];
+  cities: {
+    slug: string;
+    name: string;
+    lat: number;
+    lng: number;
+    src: number;
+    importedAt: string;
+    spotCount: number;
+    spaceCount: number;
+    coverage: CityInfo["coverage"];
+  }[];
+}
+
 let loaded: CityInfo[] | null = null;
 let pending: Promise<CityInfo[]> | null = null;
 
@@ -17,11 +33,22 @@ function load(): Promise<CityInfo[]> {
   pending ??= fetch("/api/cities")
     .then((response) => {
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      return response.json() as Promise<{ cities: CityInfo[] }>;
+      return response.json() as Promise<CitiesResponse>;
     })
-    .then(({ cities }) => {
-      loaded = cities;
-      return cities;
+    .then(({ sources, cities }) => {
+      // Die verdichtete Antwort (2e.14) wieder in die gewohnte Form bringen.
+      loaded = cities.map((city) => ({
+        slug: city.slug,
+        name: city.name,
+        center: { lat: city.lat, lng: city.lng },
+        attribution: sources[city.src].attribution,
+        license: sources[city.src].license,
+        importedAt: city.importedAt,
+        spotCount: city.spotCount,
+        spaceCount: city.spaceCount,
+        coverage: city.coverage,
+      }));
+      return loaded;
     })
     .catch((error) => {
       // Beim nächsten Einhängen erneut versuchen, nicht dauerhaft aufgeben.

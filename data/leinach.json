@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "leinach",
+    "name": "Leinach",
+    "center": {
+      "lat": 49.864164099999996,
+      "lng": 9.801141600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "leinach-afc7676193",
+      "city": "leinach",
+      "label": "Rathausstraße 26",
+      "street": "Rathausstraße",
+      "houseNumber": "26",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Leinach",
+      "spotCount": 1,
+      "lat": 49.864164099999996,
+      "lng": 9.801141600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1226215548), ODbL"
+    }
+  ]
+}

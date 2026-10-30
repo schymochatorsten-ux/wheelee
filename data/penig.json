@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "penig",
+    "name": "Penig",
+    "center": {
+      "lat": 50.9334087,
+      "lng": 12.7060899
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "penig-4286373c32",
+      "city": "penig",
+      "label": "Markt 14",
+      "street": "Markt",
+      "houseNumber": "14",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Penig",
+      "spotCount": 1,
+      "lat": 50.9335128,
+      "lng": 12.7060899,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9064615019), ODbL"
+    },
+    {
+      "id": "penig-6ebfd26df9",
+      "city": "penig",
+      "label": "Markt 2",
+      "street": "Markt",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Penig",
+      "spotCount": 1,
+      "lat": 50.9334087,
+      "lng": 12.705771700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9064615018), ODbL"
+    },
+    {
+      "id": "penig-80b07c50b7",
+      "city": "penig",
+      "label": "Zur Höllmühle",
+      "street": "Zur Höllmühle",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Penig",
+      "spotCount": 1,
+      "lat": 50.92508685,
+      "lng": 12.7464916,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/253580935), ODbL"
+    }
+  ]
+}

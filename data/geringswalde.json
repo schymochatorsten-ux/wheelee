@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "geringswalde",
+    "name": "Geringswalde",
+    "center": {
+      "lat": 51.0720606,
+      "lng": 12.8979405
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "geringswalde-124905caaf",
+      "city": "geringswalde",
+      "label": "Rochlitzer Straße",
+      "street": "Rochlitzer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Geringswalde",
+      "spotCount": 1,
+      "lat": 51.0720606,
+      "lng": 12.8979405,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32697690), ODbL"
+    }
+  ]
+}

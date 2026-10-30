@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "moenchhagen",
+    "name": "Mönchhagen",
+    "center": {
+      "lat": 54.153122100000004,
+      "lng": 12.23081985
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "moenchhagen-2a005a4aac",
+      "city": "moenchhagen",
+      "label": "An der Postsäule",
+      "street": "An der Postsäule",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mönchhagen",
+      "spotCount": 3,
+      "lat": 54.153122100000004,
+      "lng": 12.23081985,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1107927042), ODbL"
+    }
+  ]
+}

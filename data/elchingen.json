@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "elchingen",
+    "name": "Elchingen",
+    "center": {
+      "lat": 48.45718415,
+      "lng": 10.03288185
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "elchingen-61f0a0ff87",
+      "city": "elchingen",
+      "label": "Rasthof Seligweiler",
+      "street": "Rasthof Seligweiler",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elchingen",
+      "spotCount": 2,
+      "lat": 48.45718415,
+      "lng": 10.03288185,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/205210183), ODbL"
+    }
+  ]
+}

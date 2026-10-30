@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "born-a-darss",
+    "name": "Born a.Darß",
+    "center": {
+      "lat": 54.4519201,
+      "lng": 12.55490395
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "born-a-darss-2d2cbe1620",
+      "city": "born-a-darss",
+      "label": "Bernsteinweg",
+      "street": "Bernsteinweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Born a.Darß",
+      "spotCount": 3,
+      "lat": 54.4519201,
+      "lng": 12.55490395,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1237861392), ODbL"
+    }
+  ]
+}

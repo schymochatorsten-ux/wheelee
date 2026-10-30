@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bruck-i-d-opf",
+    "name": "Bruck i.d.OPf.",
+    "center": {
+      "lat": 49.25238215,
+      "lng": 12.305694850000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bruck-i-d-opf-64af335fd7",
+      "city": "bruck-i-d-opf",
+      "label": "Bodenwöhrer Straße 14",
+      "street": "Bodenwöhrer Straße",
+      "houseNumber": "14",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bruck i.d.OPf.",
+      "spotCount": 1,
+      "lat": 49.25238215,
+      "lng": 12.305694850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/895264440), ODbL"
+    }
+  ]
+}

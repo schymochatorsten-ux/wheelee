@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "niederalteich",
+    "name": "Niederalteich",
+    "center": {
+      "lat": 48.7647226,
+      "lng": 13.025440150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "niederalteich-23e32c5177",
+      "city": "niederalteich",
+      "label": "Gundelauer Straße 7",
+      "street": "Gundelauer Straße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Niederalteich",
+      "spotCount": 10,
+      "lat": 48.7647226,
+      "lng": 13.025440150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1328329086), ODbL"
+    }
+  ]
+}

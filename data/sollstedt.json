@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "sollstedt",
+    "name": "Sollstedt",
+    "center": {
+      "lat": 51.4132274,
+      "lng": 10.53282695
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sollstedt-e597075a1a",
+      "city": "sollstedt",
+      "label": "Friedegasse",
+      "street": "Friedegasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sollstedt",
+      "spotCount": 2,
+      "lat": 51.4132274,
+      "lng": 10.53282695,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/242375315), ODbL"
+    }
+  ]
+}

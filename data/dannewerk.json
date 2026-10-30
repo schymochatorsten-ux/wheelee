@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "dannewerk",
+    "name": "Dannewerk",
+    "center": {
+      "lat": 54.480534600000006,
+      "lng": 9.4919689
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dannewerk-045fe28ffd",
+      "city": "dannewerk",
+      "label": "Am Wall",
+      "street": "Am Wall",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dannewerk",
+      "spotCount": 1,
+      "lat": 54.480534600000006,
+      "lng": 9.4919689,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14200648416), ODbL"
+    }
+  ]
+}

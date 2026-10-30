@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "feldberger-seenlandschaft",
+    "name": "Feldberger Seenlandschaft",
+    "center": {
+      "lat": 53.30313795000001,
+      "lng": 13.4439934
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "feldberger-seenlandschaft-675a2b2be0",
+      "city": "feldberger-seenlandschaft",
+      "label": "Carwitzer Straße 86",
+      "street": "Carwitzer Straße",
+      "houseNumber": "86",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Feldberger Seenlandschaft",
+      "spotCount": 1,
+      "lat": 53.30313795000001,
+      "lng": 13.4439934,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/250777731), ODbL"
+    }
+  ]
+}

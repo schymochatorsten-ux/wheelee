@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "drebach",
+    "name": "Drebach",
+    "center": {
+      "lat": 50.69918615,
+      "lng": 13.058038400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "drebach-e0c179f0ae",
+      "city": "drebach",
+      "label": "Hopfgartener Straße",
+      "street": "Hopfgartener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Drebach",
+      "spotCount": 4,
+      "lat": 50.69918615,
+      "lng": 13.058038400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/871650417), ODbL"
+    }
+  ]
+}

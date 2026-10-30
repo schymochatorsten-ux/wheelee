@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "weissenohe",
+    "name": "Weißenohe",
+    "center": {
+      "lat": 49.62937945,
+      "lng": 11.2538904
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "weissenohe-582437e915",
+      "city": "weissenohe",
+      "label": "Park-and-Ride",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weißenohe",
+      "spotCount": 1,
+      "lat": 49.62937945,
+      "lng": 11.249796200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/454251015), ODbL"
+    },
+    {
+      "id": "weissenohe-39aa7360e2",
+      "city": "weissenohe",
+      "label": "Wanderparkplatz Ost",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weißenohe",
+      "spotCount": 1,
+      "lat": 49.6284848,
+      "lng": 11.2538904,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/633729229), ODbL"
+    }
+  ]
+}

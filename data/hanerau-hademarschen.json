@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hanerau-hademarschen",
+    "name": "Hanerau-Hademarschen",
+    "center": {
+      "lat": 54.1272667,
+      "lng": 9.412991600000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hanerau-hademarschen-ed52c5f266",
+      "city": "hanerau-hademarschen",
+      "label": "Klostergang",
+      "street": "Klostergang",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hanerau-Hademarschen",
+      "spotCount": 1,
+      "lat": 54.1272667,
+      "lng": 9.4125507,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4908923423), ODbL"
+    },
+    {
+      "id": "hanerau-hademarschen-901c9d3257",
+      "city": "hanerau-hademarschen",
+      "label": "Propst-Treplin-Weg",
+      "street": "Propst-Treplin-Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hanerau-Hademarschen",
+      "spotCount": 1,
+      "lat": 54.125142800000006,
+      "lng": 9.412991600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1352015132), ODbL"
+    }
+  ]
+}

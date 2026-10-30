@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bockhorst",
+    "name": "Bockhorst",
+    "center": {
+      "lat": 53.036299650000004,
+      "lng": 7.574101400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bockhorst-2dfd01e154",
+      "city": "bockhorst",
+      "label": "Hauptstraße 20",
+      "street": "Hauptstraße",
+      "houseNumber": "20",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bockhorst",
+      "spotCount": 3,
+      "lat": 53.036299650000004,
+      "lng": 7.574101400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1530909945), ODbL"
+    }
+  ]
+}

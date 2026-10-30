@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "grossheubach",
+    "name": "Großheubach",
+    "center": {
+      "lat": 49.7294916,
+      "lng": 9.227676200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grossheubach-6e78f0c53a",
+      "city": "grossheubach",
+      "label": "Bachgasse",
+      "street": "Bachgasse",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Großheubach",
+      "spotCount": 1,
+      "lat": 49.72997805,
+      "lng": 9.227676200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1205881892), ODbL"
+    },
+    {
+      "id": "grossheubach-50d6ea672b",
+      "city": "grossheubach",
+      "label": "Friedensstraße",
+      "street": "Friedensstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Großheubach",
+      "spotCount": 1,
+      "lat": 49.7294916,
+      "lng": 9.228336200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1205881894), ODbL"
+    },
+    {
+      "id": "grossheubach-44e32f4fe4",
+      "city": "grossheubach",
+      "label": "Friedhofstraße 17",
+      "street": "Friedhofstraße",
+      "houseNumber": "17",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großheubach",
+      "spotCount": 2,
+      "lat": 49.728179850000004,
+      "lng": 9.217247650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/930770551), ODbL"
+    },
+    {
+      "id": "grossheubach-fad1c082a0",
+      "city": "grossheubach",
+      "label": "Hauptstraße 9",
+      "street": "Hauptstraße",
+      "houseNumber": "9",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Großheubach",
+      "spotCount": 1,
+      "lat": 49.72763925,
+      "lng": 9.221382850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/89210393), ODbL"
+    },
+    {
+      "id": "grossheubach-032d01adb3",
+      "city": "grossheubach",
+      "label": "Klotzenhof",
+      "street": "Klotzenhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großheubach",
+      "spotCount": 1,
+      "lat": 49.742921800000005,
+      "lng": 9.248141,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/511564120), ODbL"
+    },
+    {
+      "id": "grossheubach-8285517c10",
+      "city": "grossheubach",
+      "label": "Marktplatz",
+      "street": "Marktplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großheubach",
+      "spotCount": 2,
+      "lat": 49.7262238,
+      "lng": 9.222072500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/89210392), ODbL"
+    }
+  ]
+}

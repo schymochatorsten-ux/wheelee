@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "gochsheim",
+    "name": "Gochsheim",
+    "center": {
+      "lat": 50.024031550000004,
+      "lng": 10.28995965
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gochsheim-f097b4a464",
+      "city": "gochsheim",
+      "label": "Frankenstraße",
+      "street": "Frankenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gochsheim",
+      "spotCount": 4,
+      "lat": 50.024031550000004,
+      "lng": 10.28995965,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/51556387), ODbL"
+    },
+    {
+      "id": "gochsheim-0427e1dec8",
+      "city": "gochsheim",
+      "label": "Friedhofstraße",
+      "street": "Friedhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gochsheim",
+      "spotCount": 2,
+      "lat": 50.021980400000004,
+      "lng": 10.2869717,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/336588886), ODbL"
+    }
+  ]
+}

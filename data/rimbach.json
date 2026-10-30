@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "rimbach",
+    "name": "Rimbach",
+    "center": {
+      "lat": 49.6202294,
+      "lng": 8.7583253
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rimbach-aa88b71fb6",
+      "city": "rimbach",
+      "label": "Am Mühlbächl",
+      "street": "Am Mühlbächl",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rimbach",
+      "spotCount": 1,
+      "lat": 49.62703175,
+      "lng": 8.757260900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/139751348), ODbL"
+    },
+    {
+      "id": "rimbach-73e5c3f95c",
+      "city": "rimbach",
+      "label": "Friedrich-Ebert-Straße",
+      "street": "Friedrich-Ebert-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rimbach",
+      "spotCount": 1,
+      "lat": 49.626546850000004,
+      "lng": 8.75668785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/136124947), ODbL"
+    },
+    {
+      "id": "rimbach-5f51eb702b",
+      "city": "rimbach",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rimbach",
+      "spotCount": 2,
+      "lat": 49.601177400000005,
+      "lng": 8.770432,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31877475), ODbL"
+    },
+    {
+      "id": "rimbach-60613f7582",
+      "city": "rimbach",
+      "label": "Im Kreuzwinkel",
+      "street": "Im Kreuzwinkel",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rimbach",
+      "spotCount": 1,
+      "lat": 49.617907450000004,
+      "lng": 8.7583253,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/97243146), ODbL"
+    },
+    {
+      "id": "rimbach-dc924ed6c5",
+      "city": "rimbach",
+      "label": "Kleiststraße 11",
+      "street": "Kleiststraße",
+      "houseNumber": "11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rimbach",
+      "spotCount": 3,
+      "lat": 49.61886425,
+      "lng": 8.7558829,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/120042789), ODbL"
+    },
+    {
+      "id": "rimbach-8bdd47b718",
+      "city": "rimbach",
+      "label": "Rathausstraße 5",
+      "street": "Rathausstraße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rimbach",
+      "spotCount": 2,
+      "lat": 49.6237695,
+      "lng": 8.759372800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/122941362), ODbL"
+    },
+    {
+      "id": "rimbach-67ac26d752",
+      "city": "rimbach",
+      "label": "Schloßstraße 36",
+      "street": "Schloßstraße",
+      "houseNumber": "36",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rimbach",
+      "spotCount": 1,
+      "lat": 49.6202294,
+      "lng": 8.758817100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/120969687), ODbL"
+    }
+  ]
+}

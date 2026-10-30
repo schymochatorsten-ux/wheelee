@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "sand-a-main",
+    "name": "Sand a.Main",
+    "center": {
+      "lat": 49.9889752,
+      "lng": 10.58416805
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sand-a-main-cf8646e58c",
+      "city": "sand-a-main",
+      "label": "Am Sportfeld 10",
+      "street": "Am Sportfeld",
+      "houseNumber": "10",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sand a.Main",
+      "spotCount": 1,
+      "lat": 49.98904155,
+      "lng": 10.58416755,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1016383928), ODbL"
+    },
+    {
+      "id": "sand-a-main-8a334a2eac",
+      "city": "sand-a-main",
+      "label": "Am Sportfeld 10",
+      "street": "Am Sportfeld",
+      "houseNumber": "10",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sand a.Main",
+      "spotCount": 1,
+      "lat": 49.98900805000001,
+      "lng": 10.58416785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1016383929), ODbL"
+    },
+    {
+      "id": "sand-a-main-4a4119452b",
+      "city": "sand-a-main",
+      "label": "Am Sportfeld 10",
+      "street": "Am Sportfeld",
+      "houseNumber": "10",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sand a.Main",
+      "spotCount": 1,
+      "lat": 49.9889733,
+      "lng": 10.58416805,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1016383930), ODbL"
+    },
+    {
+      "id": "sand-a-main-d8a6df080c",
+      "city": "sand-a-main",
+      "label": "Am Sportfeld 10",
+      "street": "Am Sportfeld",
+      "houseNumber": "10",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sand a.Main",
+      "spotCount": 1,
+      "lat": 49.98893840000001,
+      "lng": 10.584168250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1016383931), ODbL"
+    },
+    {
+      "id": "sand-a-main-4ec200e62c",
+      "city": "sand-a-main",
+      "label": "Parkplatz Sportgelände",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sand a.Main",
+      "spotCount": 4,
+      "lat": 49.9889752,
+      "lng": 10.5845078,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/283182758), ODbL"
+    }
+  ]
+}

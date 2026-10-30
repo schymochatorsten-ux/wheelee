@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "friedrichroda",
+    "name": "Friedrichroda",
+    "center": {
+      "lat": 50.857672900000004,
+      "lng": 10.568583400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "friedrichroda-d2c7443373",
+      "city": "friedrichroda",
+      "label": "Hauptstraße 59",
+      "street": "Hauptstraße",
+      "houseNumber": "59",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Friedrichroda",
+      "spotCount": 2,
+      "lat": 50.857220350000006,
+      "lng": 10.568583400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/929226409), ODbL"
+    },
+    {
+      "id": "friedrichroda-815489a9fc",
+      "city": "friedrichroda",
+      "label": "Marktstraße 18",
+      "street": "Marktstraße",
+      "houseNumber": "18",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Friedrichroda",
+      "spotCount": 1,
+      "lat": 50.857672900000004,
+      "lng": 10.5658432,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/931161943), ODbL"
+    }
+  ]
+}

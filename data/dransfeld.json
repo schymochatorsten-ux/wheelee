@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "dransfeld",
+    "name": "Dransfeld",
+    "center": {
+      "lat": 51.503471450000006,
+      "lng": 9.764434000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dransfeld-7ef2d8eb08",
+      "city": "dransfeld",
+      "label": "Bahnhofstraße 6",
+      "street": "Bahnhofstraße",
+      "houseNumber": "6",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dransfeld",
+      "spotCount": 1,
+      "lat": 51.503814150000004,
+      "lng": 9.759949,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1469326423), ODbL"
+    },
+    {
+      "id": "dransfeld-f0bbd67538",
+      "city": "dransfeld",
+      "label": "Gerlandstraße 21",
+      "street": "Gerlandstraße",
+      "houseNumber": "21",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dransfeld",
+      "spotCount": 1,
+      "lat": 51.50260525,
+      "lng": 9.760810750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1277908545), ODbL"
+    },
+    {
+      "id": "dransfeld-9b7306cb54",
+      "city": "dransfeld",
+      "label": "Wolfshof",
+      "street": "Wolfshof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dransfeld",
+      "spotCount": 1,
+      "lat": 51.5033596,
+      "lng": 9.764434000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1241150059), ODbL"
+    },
+    {
+      "id": "dransfeld-2cc8f0f572",
+      "city": "dransfeld",
+      "label": "Wolfshof",
+      "street": "Wolfshof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dransfeld",
+      "spotCount": 1,
+      "lat": 51.503471450000006,
+      "lng": 9.76459945,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1241150099), ODbL"
+    }
+  ]
+}

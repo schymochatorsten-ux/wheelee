@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "eurasburg",
+    "name": "Eurasburg",
+    "center": {
+      "lat": 47.82894125,
+      "lng": 11.411389500000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eurasburg-12054ba144",
+      "city": "eurasburg",
+      "label": "Klosterstraße 6",
+      "street": "Klosterstraße",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eurasburg",
+      "spotCount": 2,
+      "lat": 47.82894125,
+      "lng": 11.411389500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1037800541), ODbL"
+    }
+  ]
+}

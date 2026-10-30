@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "landstuhl",
+    "name": "Landstuhl",
+    "center": {
+      "lat": 49.41201765,
+      "lng": 7.5695195
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "landstuhl-439d4d1d8b",
+      "city": "landstuhl",
+      "label": "Alter Markt",
+      "street": "Alter Markt",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Landstuhl",
+      "spotCount": 1,
+      "lat": 49.410644100000006,
+      "lng": 7.569579200000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11956218072), ODbL"
+    },
+    {
+      "id": "landstuhl-7111f0bc6f",
+      "city": "landstuhl",
+      "label": "Alter Markt",
+      "street": "Alter Markt",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Landstuhl",
+      "spotCount": 1,
+      "lat": 49.410431200000005,
+      "lng": 7.569307,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11956218073), ODbL"
+    },
+    {
+      "id": "landstuhl-e6789ea148",
+      "city": "landstuhl",
+      "label": "Alter Markt",
+      "street": "Alter Markt",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Landstuhl",
+      "spotCount": 1,
+      "lat": 49.410369,
+      "lng": 7.5695195,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11956218074), ODbL"
+    },
+    {
+      "id": "landstuhl-ee0c230d08",
+      "city": "landstuhl",
+      "label": "Am Rathaus 2",
+      "street": "Am Rathaus",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Landstuhl",
+      "spotCount": 1,
+      "lat": 49.41222045000001,
+      "lng": 7.5711920500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/259243992), ODbL"
+    },
+    {
+      "id": "landstuhl-6b13e6062f",
+      "city": "landstuhl",
+      "label": "Königstraße",
+      "street": "Königstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Landstuhl",
+      "spotCount": 2,
+      "lat": 49.41201765,
+      "lng": 7.5670555,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/42792097), ODbL"
+    },
+    {
+      "id": "landstuhl-0f742a0a77",
+      "city": "landstuhl",
+      "label": "Poststraße",
+      "street": "Poststraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Landstuhl",
+      "spotCount": 1,
+      "lat": 49.4120666,
+      "lng": 7.568505200000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11956218080), ODbL"
+    }
+  ]
+}

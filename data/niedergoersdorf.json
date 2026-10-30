@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "niedergoersdorf",
+    "name": "Niedergörsdorf",
+    "center": {
+      "lat": 52.01588815,
+      "lng": 12.991764250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "niedergoersdorf-3b83d81ea8",
+      "city": "niedergoersdorf",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Niedergörsdorf",
+      "spotCount": 1,
+      "lat": 52.01588815,
+      "lng": 12.991764250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/30506075), ODbL"
+    },
+    {
+      "id": "niedergoersdorf-a08975a229",
+      "city": "niedergoersdorf",
+      "label": "Dorfstraße",
+      "street": "Dorfstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Niedergörsdorf",
+      "spotCount": 1,
+      "lat": 51.9771652,
+      "lng": 12.981667700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4163275310), ODbL"
+    }
+  ]
+}

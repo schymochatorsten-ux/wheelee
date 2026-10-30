@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "raschau-markersbach",
+    "name": "Raschau-Markersbach",
+    "center": {
+      "lat": 50.52682455,
+      "lng": 12.8252576
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "raschau-markersbach-e5c440cd95",
+      "city": "raschau-markersbach",
+      "label": "Straße des Friedens",
+      "street": "Straße des Friedens",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Raschau-Markersbach",
+      "spotCount": 1,
+      "lat": 50.52682455,
+      "lng": 12.824769550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/997379745), ODbL"
+    },
+    {
+      "id": "raschau-markersbach-886c9ecf57",
+      "city": "raschau-markersbach",
+      "label": "Straße des Friedens 16a",
+      "street": "Straße des Friedens",
+      "houseNumber": "16a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Raschau-Markersbach",
+      "spotCount": 3,
+      "lat": 50.5256701,
+      "lng": 12.8252576,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/141249048), ODbL"
+    }
+  ]
+}

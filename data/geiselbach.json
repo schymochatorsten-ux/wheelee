@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "geiselbach",
+    "name": "Geiselbach",
+    "center": {
+      "lat": 50.12207380000001,
+      "lng": 9.19935835
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "geiselbach-6fcf189928",
+      "city": "geiselbach",
+      "label": "Kirchstraße 4",
+      "street": "Kirchstraße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Geiselbach",
+      "spotCount": 1,
+      "lat": 50.12207380000001,
+      "lng": 9.19935835,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/261537437), ODbL"
+    }
+  ]
+}

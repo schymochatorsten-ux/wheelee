@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "altenstadt-by",
+    "name": "Altenstadt",
+    "center": {
+      "lat": 48.161665400000004,
+      "lng": 10.110122350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "altenstadt-by-9f489a8028",
+      "city": "altenstadt-by",
+      "label": "Bahnhofstraße 6",
+      "street": "Bahnhofstraße",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Altenstadt",
+      "spotCount": 2,
+      "lat": 48.161665400000004,
+      "lng": 10.110122350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/321374491), ODbL"
+    }
+  ]
+}

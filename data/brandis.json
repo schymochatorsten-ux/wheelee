@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "brandis",
+    "name": "Brandis",
+    "center": {
+      "lat": 51.32263695,
+      "lng": 12.57319245
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "brandis-46140e22c4",
+      "city": "brandis",
+      "label": "Beucha, Bahnhof Steig B",
+      "street": "Beucha, Bahnhof Steig B",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brandis",
+      "spotCount": 2,
+      "lat": 51.32263695,
+      "lng": 12.57319245,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/473380639), ODbL"
+    }
+  ]
+}

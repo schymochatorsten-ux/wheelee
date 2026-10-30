@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "zwiefalten",
+    "name": "Zwiefalten",
+    "center": {
+      "lat": 48.2310997,
+      "lng": 9.4608255
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zwiefalten-0b378f31c0",
+      "city": "zwiefalten",
+      "label": "Hauptstraße 24",
+      "street": "Hauptstraße",
+      "houseNumber": "24",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Zwiefalten",
+      "spotCount": 1,
+      "lat": 48.2310997,
+      "lng": 9.4608255,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11481109020), ODbL"
+    }
+  ]
+}

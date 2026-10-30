@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "zusmarshausen",
+    "name": "Zusmarshausen",
+    "center": {
+      "lat": 48.41252675,
+      "lng": 10.648452850000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zusmarshausen-4ac61b0527",
+      "city": "zusmarshausen",
+      "label": "Streitheimer Forst Nord",
+      "street": "Streitheimer Forst Nord",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Zusmarshausen",
+      "spotCount": 1,
+      "lat": 48.41252675,
+      "lng": 10.648452850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1360373029), ODbL"
+    },
+    {
+      "id": "zusmarshausen-2d236fa10e",
+      "city": "zusmarshausen",
+      "label": "Streitheimer Forst Nord",
+      "street": "Streitheimer Forst Nord",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Zusmarshausen",
+      "spotCount": 1,
+      "lat": 48.4125372,
+      "lng": 10.64852595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1360373030), ODbL"
+    },
+    {
+      "id": "zusmarshausen-4030425c51",
+      "city": "zusmarshausen",
+      "label": "Streitheimer Forst Süd",
+      "street": "Streitheimer Forst Süd",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Zusmarshausen",
+      "spotCount": 1,
+      "lat": 48.40939605,
+      "lng": 10.639931,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1360399022), ODbL"
+    },
+    {
+      "id": "zusmarshausen-41f039a05a",
+      "city": "zusmarshausen",
+      "label": "Streitheimer Forst Süd",
+      "street": "Streitheimer Forst Süd",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Zusmarshausen",
+      "spotCount": 1,
+      "lat": 48.4094073,
+      "lng": 10.640007800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1360399023), ODbL"
+    }
+  ]
+}

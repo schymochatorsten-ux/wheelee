@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "eching-09181115",
+    "name": "Eching am Ammersee",
+    "center": {
+      "lat": 48.0780601,
+      "lng": 11.1161475
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eching-09181115-6e07e725a9",
+      "city": "eching-09181115",
+      "label": "Kaaganger Straße",
+      "street": "Kaaganger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eching am Ammersee",
+      "spotCount": 1,
+      "lat": 48.07032395,
+      "lng": 11.1102187,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/83429138), ODbL"
+    },
+    {
+      "id": "eching-09181115-aa6b100345",
+      "city": "eching-09181115",
+      "label": "Stegener Straße",
+      "street": "Stegener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eching am Ammersee",
+      "spotCount": 1,
+      "lat": 48.0808131,
+      "lng": 11.1230375,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25961424), ODbL"
+    },
+    {
+      "id": "eching-09181115-da28bd4c6b",
+      "city": "eching-09181115",
+      "label": "Zur Amper",
+      "street": "Zur Amper",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eching am Ammersee",
+      "spotCount": 2,
+      "lat": 48.0780601,
+      "lng": 11.1161475,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/297518518), ODbL"
+    }
+  ]
+}

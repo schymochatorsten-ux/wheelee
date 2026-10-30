@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "burgsponheim",
+    "name": "Burgsponheim",
+    "center": {
+      "lat": 49.83295205,
+      "lng": 7.71469875
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "burgsponheim-fd35852726",
+      "city": "burgsponheim",
+      "label": "Brunnenstraße 2",
+      "street": "Brunnenstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burgsponheim",
+      "spotCount": 1,
+      "lat": 49.83295205,
+      "lng": 7.71469875,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1077999912), ODbL"
+    }
+  ]
+}

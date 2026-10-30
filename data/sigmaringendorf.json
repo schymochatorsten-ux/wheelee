@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "sigmaringendorf",
+    "name": "Sigmaringendorf",
+    "center": {
+      "lat": 48.075851300000004,
+      "lng": 9.268736
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sigmaringendorf-c3043f2ef8",
+      "city": "sigmaringendorf",
+      "label": "In der Au",
+      "street": "In der Au",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sigmaringendorf",
+      "spotCount": 1,
+      "lat": 48.075851300000004,
+      "lng": 9.268736,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1375372774), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "albertshofen",
+    "name": "Albertshofen",
+    "center": {
+      "lat": 49.7673508,
+      "lng": 10.17112365
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "albertshofen-312e654349",
+      "city": "albertshofen",
+      "label": "Gartenlandhalle",
+      "street": "Gartenlandhalle",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Albertshofen",
+      "spotCount": 2,
+      "lat": 49.7673508,
+      "lng": 10.17112365,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/726847767), ODbL"
+    }
+  ]
+}

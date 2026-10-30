@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "klingenberg",
+    "name": "Klingenberg",
+    "center": {
+      "lat": 50.907875700000005,
+      "lng": 13.5350702
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "klingenberg-da9e9d6d4b",
+      "city": "klingenberg",
+      "label": "Talsperre Klingenberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Klingenberg",
+      "spotCount": 2,
+      "lat": 50.907875700000005,
+      "lng": 13.5350702,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/353688612), ODbL"
+    }
+  ]
+}

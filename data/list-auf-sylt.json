@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "list-auf-sylt",
+    "name": "List auf Sylt",
+    "center": {
+      "lat": 55.03676230000001,
+      "lng": 8.430877850000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "list-auf-sylt-681c2e9986",
+      "city": "list-auf-sylt",
+      "label": "Behindertenparkplatz List auf Sylt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "List auf Sylt",
+      "spotCount": 7,
+      "lat": 55.03676230000001,
+      "lng": 8.3859226,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/358669428), ODbL"
+    },
+    {
+      "id": "list-auf-sylt-abfa0a9adb",
+      "city": "list-auf-sylt",
+      "label": "Hafenstraße",
+      "street": "Hafenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "List auf Sylt",
+      "spotCount": 2,
+      "lat": 55.0161055,
+      "lng": 8.430877850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/508000197), ODbL"
+    }
+  ]
+}

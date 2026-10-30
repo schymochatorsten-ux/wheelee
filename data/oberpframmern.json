@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "oberpframmern",
+    "name": "Oberpframmern",
+    "center": {
+      "lat": 48.02368990000001,
+      "lng": 11.808479250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberpframmern-93136c09c5",
+      "city": "oberpframmern",
+      "label": "Münchener Straße 30",
+      "street": "Münchener Straße",
+      "houseNumber": "30",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberpframmern",
+      "spotCount": 1,
+      "lat": 48.02368990000001,
+      "lng": 11.808479250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/329473167), ODbL"
+    },
+    {
+      "id": "oberpframmern-c0afb00eb4",
+      "city": "oberpframmern",
+      "label": "Münchener Straße 32",
+      "street": "Münchener Straße",
+      "houseNumber": "32",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberpframmern",
+      "spotCount": 3,
+      "lat": 48.0240943,
+      "lng": 11.808296050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/329473164), ODbL"
+    },
+    {
+      "id": "oberpframmern-1d3fa8c9ea",
+      "city": "oberpframmern",
+      "label": "Soiherweg",
+      "street": "Soiherweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberpframmern",
+      "spotCount": 1,
+      "lat": 48.020754000000004,
+      "lng": 11.8189192,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1128417845), ODbL"
+    }
+  ]
+}

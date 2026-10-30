@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "stuehlingen",
+    "name": "Stühlingen",
+    "center": {
+      "lat": 47.745634700000004,
+      "lng": 8.4478457
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "stuehlingen-3dfc6bfd20",
+      "city": "stuehlingen",
+      "label": "Hauptstraße 10",
+      "street": "Hauptstraße",
+      "houseNumber": "10",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Stühlingen",
+      "spotCount": 1,
+      "lat": 47.745634700000004,
+      "lng": 8.4478457,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1105915932), ODbL"
+    },
+    {
+      "id": "stuehlingen-81a0993d1f",
+      "city": "stuehlingen",
+      "label": "Hauptstraße 16",
+      "street": "Hauptstraße",
+      "houseNumber": "16",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Stühlingen",
+      "spotCount": 1,
+      "lat": 47.74548455,
+      "lng": 8.445797500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1105915921), ODbL"
+    }
+  ]
+}

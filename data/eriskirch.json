@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "eriskirch",
+    "name": "Eriskirch",
+    "center": {
+      "lat": 47.6326102,
+      "lng": 9.525122500000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eriskirch-850e012f97",
+      "city": "eriskirch",
+      "label": "Seestraße",
+      "street": "Seestraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eriskirch",
+      "spotCount": 1,
+      "lat": 47.63257575,
+      "lng": 9.525122500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1454679127), ODbL"
+    },
+    {
+      "id": "eriskirch-0205db6d72",
+      "city": "eriskirch",
+      "label": "Seestraße",
+      "street": "Seestraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eriskirch",
+      "spotCount": 1,
+      "lat": 47.6326102,
+      "lng": 9.525079600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1454679128), ODbL"
+    }
+  ]
+}

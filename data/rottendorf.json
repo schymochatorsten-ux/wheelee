@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "rottendorf",
+    "name": "Rottendorf",
+    "center": {
+      "lat": 49.79219775,
+      "lng": 10.02844825
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rottendorf-c3775adce5",
+      "city": "rottendorf",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rottendorf",
+      "spotCount": 3,
+      "lat": 49.79118080000001,
+      "lng": 10.028753300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/48295878), ODbL"
+    },
+    {
+      "id": "rottendorf-15dcc9ae34",
+      "city": "rottendorf",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rottendorf",
+      "spotCount": 1,
+      "lat": 49.79416495,
+      "lng": 10.02844825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/914672660), ODbL"
+    },
+    {
+      "id": "rottendorf-eba31ee8f0",
+      "city": "rottendorf",
+      "label": "Hauptstraße 14",
+      "street": "Hauptstraße",
+      "houseNumber": "14",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rottendorf",
+      "spotCount": 1,
+      "lat": 49.79219775,
+      "lng": 10.0269001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/252171332), ODbL"
+    }
+  ]
+}

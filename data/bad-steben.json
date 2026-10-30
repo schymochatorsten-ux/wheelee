@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bad-steben",
+    "name": "Bad Steben",
+    "center": {
+      "lat": 50.365017900000005,
+      "lng": 11.64647365
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-steben-8ee38e99f2",
+      "city": "bad-steben",
+      "label": "Höller Straße",
+      "street": "Höller Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Steben",
+      "spotCount": 1,
+      "lat": 50.365017900000005,
+      "lng": 11.646345100000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10178255148), ODbL"
+    },
+    {
+      "id": "bad-steben-b58e5bfc38",
+      "city": "bad-steben",
+      "label": "Höller Straße",
+      "street": "Höller Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Steben",
+      "spotCount": 1,
+      "lat": 50.364800300000006,
+      "lng": 11.64647365,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/569394033), ODbL"
+    }
+  ]
+}

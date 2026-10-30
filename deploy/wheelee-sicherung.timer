@@ -1,0 +1,11 @@
+[Unit]
+Description=wheelee Datenbanksicherung täglich (ToDo 19.3)
+
+[Timer]
+OnCalendar=*-*-* 03:30:00
+# Lief der NAS zur Zeit nicht, wird beim nächsten Start nachgeholt.
+Persistent=true
+RandomizedDelaySec=10min
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "spraitbach",
+    "name": "Spraitbach",
+    "center": {
+      "lat": 48.875144950000006,
+      "lng": 9.761346500000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "spraitbach-37f709d8d7",
+      "city": "spraitbach",
+      "label": "Mutlanger Straße",
+      "street": "Mutlanger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Spraitbach",
+      "spotCount": 2,
+      "lat": 48.875144950000006,
+      "lng": 9.761346500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/587921457), ODbL"
+    }
+  ]
+}

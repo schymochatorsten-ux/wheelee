@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "fischbach-rp",
+    "name": "Fischbach",
+    "center": {
+      "lat": 49.75433305,
+      "lng": 7.38231895
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "fischbach-rp-102f3baca7",
+      "city": "fischbach-rp",
+      "label": "Behindertenparkplatz Fischbach",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Fischbach",
+      "spotCount": 1,
+      "lat": 49.75433305,
+      "lng": 7.38231895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/816072506), ODbL"
+    }
+  ]
+}

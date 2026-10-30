@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schornsheim",
+    "name": "Schornsheim",
+    "center": {
+      "lat": 49.84416765,
+      "lng": 8.174504350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schornsheim-f0e92b588a",
+      "city": "schornsheim",
+      "label": "Friedrich-Ebert-Straße",
+      "street": "Friedrich-Ebert-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schornsheim",
+      "spotCount": 1,
+      "lat": 49.84416765,
+      "lng": 8.174504350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1524819198), ODbL"
+    }
+  ]
+}

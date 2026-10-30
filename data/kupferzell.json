@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "kupferzell",
+    "name": "Kupferzell",
+    "center": {
+      "lat": 49.205355600000004,
+      "lng": 9.6808422
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kupferzell-ba86b0cf64",
+      "city": "kupferzell",
+      "label": "Günther-Ziehl-Straße",
+      "street": "Günther-Ziehl-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kupferzell",
+      "spotCount": 2,
+      "lat": 49.20523475,
+      "lng": 9.6808422,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1051580750), ODbL"
+    },
+    {
+      "id": "kupferzell-e771f9cb8a",
+      "city": "kupferzell",
+      "label": "Parkallee",
+      "street": "Parkallee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kupferzell",
+      "spotCount": 2,
+      "lat": 49.205383000000005,
+      "lng": 9.68161805,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1427073496), ODbL"
+    },
+    {
+      "id": "kupferzell-d74016cc4f",
+      "city": "kupferzell",
+      "label": "Parkallee",
+      "street": "Parkallee",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kupferzell",
+      "spotCount": 1,
+      "lat": 49.205355600000004,
+      "lng": 9.6807643,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1427073499), ODbL"
+    },
+    {
+      "id": "kupferzell-9eeda9f1ea",
+      "city": "kupferzell",
+      "label": "Parkallee",
+      "street": "Parkallee",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kupferzell",
+      "spotCount": 1,
+      "lat": 49.205324450000006,
+      "lng": 9.680770850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1427073500), ODbL"
+    }
+  ]
+}

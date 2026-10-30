@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "burgkunstadt",
+    "name": "Burgkunstadt",
+    "center": {
+      "lat": 50.135418650000005,
+      "lng": 11.243435300000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "burgkunstadt-7b75420e0e",
+      "city": "burgkunstadt",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burgkunstadt",
+      "spotCount": 2,
+      "lat": 50.135418650000005,
+      "lng": 11.243435300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/531391018), ODbL"
+    }
+  ]
+}

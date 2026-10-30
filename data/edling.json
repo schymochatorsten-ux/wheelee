@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "edling",
+    "name": "Edling",
+    "center": {
+      "lat": 48.058349250000006,
+      "lng": 12.163156400000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "edling-91e280d7f9",
+      "city": "edling",
+      "label": "P&R Edling",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Edling",
+      "spotCount": 1,
+      "lat": 48.058349250000006,
+      "lng": 12.163156400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/335771624), ODbL"
+    }
+  ]
+}

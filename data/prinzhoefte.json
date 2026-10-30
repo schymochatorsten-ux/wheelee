@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "prinzhoefte",
+    "name": "Prinzhöfte",
+    "center": {
+      "lat": 52.94745685,
+      "lng": 8.535818
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "prinzhoefte-bb2cb7579e",
+      "city": "prinzhoefte",
+      "label": "Delmetal Süd",
+      "street": "Delmetal Süd",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Prinzhöfte",
+      "spotCount": 2,
+      "lat": 52.94745685,
+      "lng": 8.535818,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1008849713), ODbL"
+    }
+  ]
+}

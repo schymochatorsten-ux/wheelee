@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "eisingen",
+    "name": "Eisingen",
+    "center": {
+      "lat": 48.94642505,
+      "lng": 8.6684341
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eisingen-dbf1e8e666",
+      "city": "eisingen",
+      "label": "Pforzheimer Straße 11",
+      "street": "Pforzheimer Straße",
+      "houseNumber": "11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eisingen",
+      "spotCount": 2,
+      "lat": 48.94642505,
+      "lng": 8.667964950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1312969308), ODbL"
+    },
+    {
+      "id": "eisingen-0d8f5657bc",
+      "city": "eisingen",
+      "label": "Weberstraße 1",
+      "street": "Weberstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eisingen",
+      "spotCount": 1,
+      "lat": 48.945925200000005,
+      "lng": 8.6684341,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1233778122), ODbL"
+    }
+  ]
+}

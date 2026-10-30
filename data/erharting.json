@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "erharting",
+    "name": "Erharting",
+    "center": {
+      "lat": 48.2728345,
+      "lng": 12.552662000000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "erharting-350138644e",
+      "city": "erharting",
+      "label": "Gewerbepark Ost 1",
+      "street": "Gewerbepark Ost",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Erharting",
+      "spotCount": 1,
+      "lat": 48.2728345,
+      "lng": 12.552662000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1544878489), ODbL"
+    }
+  ]
+}

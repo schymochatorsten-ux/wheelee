@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bad-sulza",
+    "name": "Bad Sulza",
+    "center": {
+      "lat": 51.091747100000006,
+      "lng": 11.627245600000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-sulza-828bfbb929",
+      "city": "bad-sulza",
+      "label": "Auf dem Walzel",
+      "street": "Auf dem Walzel",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Sulza",
+      "spotCount": 1,
+      "lat": 51.091747100000006,
+      "lng": 11.627245600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/202968235), ODbL"
+    }
+  ]
+}

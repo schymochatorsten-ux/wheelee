@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "cleebronn",
+    "name": "Cleebronn",
+    "center": {
+      "lat": 49.0382952,
+      "lng": 9.04552705
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "cleebronn-1a01efce38",
+      "city": "cleebronn",
+      "label": "Behindertenparkplatz Cleebronn",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Cleebronn",
+      "spotCount": 2,
+      "lat": 49.0382952,
+      "lng": 9.04552705,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/419088695), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "bad-gottleuba-berggiesshuebel",
+    "name": "Bad Gottleuba-Berggießhübel",
+    "center": {
+      "lat": 50.86894285,
+      "lng": 13.943290000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-gottleuba-berggiesshuebel-3e5a642cf7",
+      "city": "bad-gottleuba-berggiesshuebel",
+      "label": "Am Heidenholz / Breitenau",
+      "street": "Am Heidenholz / Breitenau",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Gottleuba-Berggießhübel",
+      "spotCount": 2,
+      "lat": 50.82163965000001,
+      "lng": 13.886325,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/543159854), ODbL"
+    },
+    {
+      "id": "bad-gottleuba-berggiesshuebel-5a122d85ba",
+      "city": "bad-gottleuba-berggiesshuebel",
+      "label": "Am Heidenholz / Breitenau",
+      "street": "Am Heidenholz / Breitenau",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Gottleuba-Berggießhübel",
+      "spotCount": 2,
+      "lat": 50.8218213,
+      "lng": 13.88887725,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/543167339), ODbL"
+    },
+    {
+      "id": "bad-gottleuba-berggiesshuebel-6b3038f56d",
+      "city": "bad-gottleuba-berggiesshuebel",
+      "label": "Giesensteiner Straße",
+      "street": "Giesensteiner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Gottleuba-Berggießhübel",
+      "spotCount": 2,
+      "lat": 50.86894285,
+      "lng": 13.943290000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/246663050), ODbL"
+    },
+    {
+      "id": "bad-gottleuba-berggiesshuebel-c9026fc491",
+      "city": "bad-gottleuba-berggiesshuebel",
+      "label": "Sebastian-Kneipp-Straße 9",
+      "street": "Sebastian-Kneipp-Straße",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Fr 09:00-18:00",
+      "district": "Bad Gottleuba-Berggießhübel",
+      "spotCount": 2,
+      "lat": 50.873857050000005,
+      "lng": 13.946000650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1314359944), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "spreenhagen",
+    "name": "Spreenhagen",
+    "center": {
+      "lat": 52.31226755,
+      "lng": 13.95272635
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "spreenhagen-a0bff548a1",
+      "city": "spreenhagen",
+      "label": "Briesenluch",
+      "street": "Briesenluch",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Spreenhagen",
+      "spotCount": 1,
+      "lat": 52.31226755,
+      "lng": 13.9521694,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/65260803), ODbL"
+    },
+    {
+      "id": "spreenhagen-8b4b6fb184",
+      "city": "spreenhagen",
+      "label": "Lebbiner Heide",
+      "street": "Lebbiner Heide",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Spreenhagen",
+      "spotCount": 1,
+      "lat": 52.31066255,
+      "lng": 13.95272635,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/65260801), ODbL"
+    }
+  ]
+}

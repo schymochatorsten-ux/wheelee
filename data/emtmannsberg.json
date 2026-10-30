@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "emtmannsberg",
+    "name": "Emtmannsberg",
+    "center": {
+      "lat": 49.8925363,
+      "lng": 11.64603155
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "emtmannsberg-605dc673df",
+      "city": "emtmannsberg",
+      "label": "Schloßhof 10",
+      "street": "Schloßhof",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Emtmannsberg",
+      "spotCount": 2,
+      "lat": 49.8925363,
+      "lng": 11.64603155,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1190383068), ODbL"
+    }
+  ]
+}

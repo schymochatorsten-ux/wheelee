@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "altdorf-rp",
+    "name": "Altdorf",
+    "center": {
+      "lat": 49.28448875,
+      "lng": 8.220477800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "altdorf-rp-cc4165d902",
+      "city": "altdorf-rp",
+      "label": "Schulstraße",
+      "street": "Schulstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Altdorf",
+      "spotCount": 1,
+      "lat": 49.28448875,
+      "lng": 8.220477800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/190541309), ODbL"
+    }
+  ]
+}

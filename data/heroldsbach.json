@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "heroldsbach",
+    "name": "Heroldsbach",
+    "center": {
+      "lat": 49.6925978,
+      "lng": 11.000362500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "heroldsbach-865e52c26f",
+      "city": "heroldsbach",
+      "label": "Hauptstraße 7",
+      "street": "Hauptstraße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heroldsbach",
+      "spotCount": 1,
+      "lat": 49.692333600000005,
+      "lng": 11.000362500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3918564857), ODbL"
+    },
+    {
+      "id": "heroldsbach-90e6f6adaf",
+      "city": "heroldsbach",
+      "label": "Pfarrer-Dr.-Marquardt-Platz 1",
+      "street": "Pfarrer-Dr.-Marquardt-Platz",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Heroldsbach",
+      "spotCount": 1,
+      "lat": 49.6925978,
+      "lng": 10.9984249,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6022753686), ODbL"
+    }
+  ]
+}

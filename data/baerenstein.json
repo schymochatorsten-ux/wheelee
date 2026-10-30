@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "baerenstein",
+    "name": "Bärenstein",
+    "center": {
+      "lat": 50.5024652,
+      "lng": 13.027461650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "baerenstein-652182c005",
+      "city": "baerenstein",
+      "label": "Annaberger Straße",
+      "street": "Annaberger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bärenstein",
+      "spotCount": 2,
+      "lat": 50.5024652,
+      "lng": 13.027461650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/44210778), ODbL"
+    }
+  ]
+}

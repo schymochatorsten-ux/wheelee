@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "nellingen",
+    "name": "Nellingen",
+    "center": {
+      "lat": 48.5450608,
+      "lng": 9.787569600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nellingen-1a402b2f79",
+      "city": "nellingen",
+      "label": "Beim Sportzentrum",
+      "street": "Beim Sportzentrum",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nellingen",
+      "spotCount": 1,
+      "lat": 48.542281100000004,
+      "lng": 9.7839009,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/544338134), ODbL"
+    },
+    {
+      "id": "nellingen-26f059ef82",
+      "city": "nellingen",
+      "label": "Römerstraße 37",
+      "street": "Römerstraße",
+      "houseNumber": "37",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nellingen",
+      "spotCount": 1,
+      "lat": 48.5450608,
+      "lng": 9.787569600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1389391480), ODbL"
+    }
+  ]
+}

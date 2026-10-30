@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "thaining",
+    "name": "Thaining",
+    "center": {
+      "lat": 47.9772744,
+      "lng": 10.953889150000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "thaining-421b82ef07",
+      "city": "thaining",
+      "label": "Kapellenweg",
+      "street": "Kapellenweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Thaining",
+      "spotCount": 1,
+      "lat": 47.9772861,
+      "lng": 10.953934850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1326294127), ODbL"
+    },
+    {
+      "id": "thaining-8898807f6a",
+      "city": "thaining",
+      "label": "Kapellenweg",
+      "street": "Kapellenweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Thaining",
+      "spotCount": 1,
+      "lat": 47.9772744,
+      "lng": 10.953889150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1326294128), ODbL"
+    },
+    {
+      "id": "thaining-de0e038ac7",
+      "city": "thaining",
+      "label": "Kapellenweg",
+      "street": "Kapellenweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Thaining",
+      "spotCount": 1,
+      "lat": 47.97726415,
+      "lng": 10.9538376,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1326294129), ODbL"
+    }
+  ]
+}

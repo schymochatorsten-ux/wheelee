@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "roehrnbach",
+    "name": "Röhrnbach",
+    "center": {
+      "lat": 48.73080985,
+      "lng": 13.52349545
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "roehrnbach-bb8f0a9f4d",
+      "city": "roehrnbach",
+      "label": "Bruckfeld",
+      "street": "Bruckfeld",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Röhrnbach",
+      "spotCount": 1,
+      "lat": 48.73080985,
+      "lng": 13.52349545,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1328609715), ODbL"
+    }
+  ]
+}

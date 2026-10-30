@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ellerstadt",
+    "name": "Ellerstadt",
+    "center": {
+      "lat": 49.4637991,
+      "lng": 8.263839
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ellerstadt-84ae69e2d9",
+      "city": "ellerstadt",
+      "label": "Bahnstraße 82",
+      "street": "Bahnstraße",
+      "houseNumber": "82",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ellerstadt",
+      "spotCount": 1,
+      "lat": 49.4637991,
+      "lng": 8.263839,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1432321169), ODbL"
+    }
+  ]
+}

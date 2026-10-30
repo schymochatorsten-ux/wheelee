@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "loissin",
+    "name": "Loissin",
+    "center": {
+      "lat": 54.1161971,
+      "lng": 13.478630850000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "loissin-60da78050a",
+      "city": "loissin",
+      "label": "Strandweg 23",
+      "street": "Strandweg",
+      "houseNumber": "23",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Loissin",
+      "spotCount": 6,
+      "lat": 54.1161971,
+      "lng": 13.478630850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/684365695), ODbL"
+    }
+  ]
+}

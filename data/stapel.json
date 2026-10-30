@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "stapel",
+    "name": "Stapel",
+    "center": {
+      "lat": 54.360673750000004,
+      "lng": 9.239209
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "stapel-bd2b103382",
+      "city": "stapel",
+      "label": "Netto Marken-Discount",
+      "street": "Netto Marken-Discount",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stapel",
+      "spotCount": 2,
+      "lat": 54.360673750000004,
+      "lng": 9.239209,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1548875069), ODbL"
+    }
+  ]
+}

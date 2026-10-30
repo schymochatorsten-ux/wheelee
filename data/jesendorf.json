@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "jesendorf",
+    "name": "Jesendorf",
+    "center": {
+      "lat": 53.7926308,
+      "lng": 11.609233200000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "jesendorf-ebdcc86287",
+      "city": "jesendorf",
+      "label": "Pröbbower See Ost",
+      "street": "Pröbbower See Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jesendorf",
+      "spotCount": 2,
+      "lat": 53.7902414,
+      "lng": 11.609233200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/169465732), ODbL"
+    },
+    {
+      "id": "jesendorf-a7925a1d4e",
+      "city": "jesendorf",
+      "label": "Pröbbower See West",
+      "street": "Pröbbower See West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jesendorf",
+      "spotCount": 2,
+      "lat": 53.7926308,
+      "lng": 11.6052543,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/169465733), ODbL"
+    }
+  ]
+}

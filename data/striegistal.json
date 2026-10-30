@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "striegistal",
+    "name": "Striegistal",
+    "center": {
+      "lat": 51.005990000000004,
+      "lng": 13.160199400000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "striegistal-62a4171de2",
+      "city": "striegistal",
+      "label": "Talstraße",
+      "street": "Talstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Striegistal",
+      "spotCount": 1,
+      "lat": 51.005990000000004,
+      "lng": 13.1600921,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2463152828), ODbL"
+    },
+    {
+      "id": "striegistal-da68b9f111",
+      "city": "striegistal",
+      "label": "Talstraße",
+      "street": "Talstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Striegistal",
+      "spotCount": 1,
+      "lat": 51.0060609,
+      "lng": 13.160199400000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2463152829), ODbL"
+    },
+    {
+      "id": "striegistal-1c66157f1d",
+      "city": "striegistal",
+      "label": "Talstraße",
+      "street": "Talstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Striegistal",
+      "spotCount": 2,
+      "lat": 51.00588115000001,
+      "lng": 13.1602142,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/55940312), ODbL"
+    }
+  ]
+}

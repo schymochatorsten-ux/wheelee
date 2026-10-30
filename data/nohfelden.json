@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "nohfelden",
+    "name": "Nohfelden",
+    "center": {
+      "lat": 49.561779300000005,
+      "lng": 7.0596655
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nohfelden-9a33a4ac45",
+      "city": "nohfelden",
+      "label": "Parkplatz am Freizeitraum - P6",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nohfelden",
+      "spotCount": 1,
+      "lat": 49.561779300000005,
+      "lng": 7.0596655,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1065417966), ODbL"
+    }
+  ]
+}

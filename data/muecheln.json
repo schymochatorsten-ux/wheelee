@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "muecheln",
+    "name": "Mücheln (Geiseltal)",
+    "center": {
+      "lat": 51.301974,
+      "lng": 11.80421635
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "muecheln-b8993b0dd9",
+      "city": "muecheln",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Mücheln (Geiseltal)",
+      "spotCount": 1,
+      "lat": 51.3079089,
+      "lng": 11.8046167,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13287666388), ODbL"
+    },
+    {
+      "id": "muecheln-8d3c5ee5b3",
+      "city": "muecheln",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mücheln (Geiseltal)",
+      "spotCount": 1,
+      "lat": 51.307961250000005,
+      "lng": 11.804733250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/258688252), ODbL"
+    },
+    {
+      "id": "muecheln-e60dd74a9b",
+      "city": "muecheln",
+      "label": "Brauhausstraße 11",
+      "street": "Brauhausstraße",
+      "houseNumber": "11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mücheln (Geiseltal)",
+      "spotCount": 3,
+      "lat": 51.301944950000006,
+      "lng": 11.80298745,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1160910404), ODbL"
+    },
+    {
+      "id": "muecheln-cd9843f361",
+      "city": "muecheln",
+      "label": "Markt 1",
+      "street": "Markt",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mücheln (Geiseltal)",
+      "spotCount": 2,
+      "lat": 51.30176590000001,
+      "lng": 11.8040006,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1432798129), ODbL"
+    },
+    {
+      "id": "muecheln-f1d19d11d5",
+      "city": "muecheln",
+      "label": "Marktplatz",
+      "street": "Marktplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mücheln (Geiseltal)",
+      "spotCount": 1,
+      "lat": 51.301974,
+      "lng": 11.80421635,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1164140883), ODbL"
+    }
+  ]
+}

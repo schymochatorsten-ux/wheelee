@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "farchant",
+    "name": "Farchant",
+    "center": {
+      "lat": 47.529890200000004,
+      "lng": 11.114351599999999
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "farchant-e37d04692b",
+      "city": "farchant",
+      "label": "Bahnhofstraße 5",
+      "street": "Bahnhofstraße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Farchant",
+      "spotCount": 5,
+      "lat": 47.52983865,
+      "lng": 11.1141267,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1560430670), ODbL"
+    },
+    {
+      "id": "farchant-aa1a8358bb",
+      "city": "farchant",
+      "label": "Bahnhofstraße 7",
+      "street": "Bahnhofstraße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Farchant",
+      "spotCount": 3,
+      "lat": 47.529890200000004,
+      "lng": 11.114351599999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1560430621), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bad-schussenried",
+    "name": "Bad Schussenried",
+    "center": {
+      "lat": 47.99383505,
+      "lng": 9.666903950000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-schussenried-dee5d76cdf",
+      "city": "bad-schussenried",
+      "label": "Friedrich-Jahn-Straße",
+      "street": "Friedrich-Jahn-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Schussenried",
+      "spotCount": 1,
+      "lat": 48.0042898,
+      "lng": 9.652795350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/693874734), ODbL"
+    },
+    {
+      "id": "bad-schussenried-3b32ad288a",
+      "city": "bad-schussenried",
+      "label": "Parkplatz Museumsdorf",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Schussenried",
+      "spotCount": 8,
+      "lat": 47.98917055,
+      "lng": 9.675589500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1203477995), ODbL"
+    },
+    {
+      "id": "bad-schussenried-dd004cf7c4",
+      "city": "bad-schussenried",
+      "label": "Waldseer Straße",
+      "street": "Waldseer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Bad Schussenried",
+      "spotCount": 1,
+      "lat": 47.99383505,
+      "lng": 9.666903950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/956292973), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "luegde",
+    "name": "Lügde",
+    "center": {
+      "lat": 51.96721715,
+      "lng": 9.25485415
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "luegde-154e7bf8e0",
+      "city": "luegde",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Lügde",
+      "spotCount": 3,
+      "lat": 51.958814200000006,
+      "lng": 9.2503715,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1572447761), ODbL"
+    },
+    {
+      "id": "luegde-a4500d7cb4",
+      "city": "luegde",
+      "label": "Dieselstraße",
+      "street": "Dieselstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lügde",
+      "spotCount": 2,
+      "lat": 51.96721715,
+      "lng": 9.25485415,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/285846091), ODbL"
+    }
+  ]
+}

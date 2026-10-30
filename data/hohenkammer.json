@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hohenkammer",
+    "name": "Hohenkammer",
+    "center": {
+      "lat": 48.4247984,
+      "lng": 11.5191511
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hohenkammer-11d54c60bb",
+      "city": "hohenkammer",
+      "label": "Schloßstraße",
+      "street": "Schloßstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hohenkammer",
+      "spotCount": 1,
+      "lat": 48.4247984,
+      "lng": 11.5191511,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9100062941), ODbL"
+    }
+  ]
+}

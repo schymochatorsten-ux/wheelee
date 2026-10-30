@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "zirkow",
+    "name": "Zirkow",
+    "center": {
+      "lat": 54.377048550000005,
+      "lng": 13.58438285
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zirkow-1ef267d9b5",
+      "city": "zirkow",
+      "label": "Serams",
+      "street": "Serams",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zirkow",
+      "spotCount": 1,
+      "lat": 54.377048550000005,
+      "lng": 13.58438285,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/418253378), ODbL"
+    }
+  ]
+}

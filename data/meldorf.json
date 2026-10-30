@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "meldorf",
+    "name": "Meldorf",
+    "center": {
+      "lat": 54.0907756,
+      "lng": 9.07169545
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "meldorf-e88f9158ec",
+      "city": "meldorf",
+      "label": "Eescher Weg 64",
+      "street": "Eescher Weg",
+      "houseNumber": "64",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Meldorf",
+      "spotCount": 1,
+      "lat": 54.091679,
+      "lng": 9.095024350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/72609055), ODbL"
+    },
+    {
+      "id": "meldorf-4bc1e424e9",
+      "city": "meldorf",
+      "label": "Nordermarkt",
+      "street": "Nordermarkt",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Meldorf",
+      "spotCount": 2,
+      "lat": 54.0907756,
+      "lng": 9.07169545,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/52419625), ODbL"
+    },
+    {
+      "id": "meldorf-92c0a2a684",
+      "city": "meldorf",
+      "label": "Südermarkt 8",
+      "street": "Südermarkt",
+      "houseNumber": "8",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Meldorf",
+      "spotCount": 1,
+      "lat": 54.0899663,
+      "lng": 9.0714891,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14089237123), ODbL"
+    }
+  ]
+}

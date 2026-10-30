@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "gaiberg",
+    "name": "Gaiberg",
+    "center": {
+      "lat": 49.3643232,
+      "lng": 8.750269750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gaiberg-f38d29cc51",
+      "city": "gaiberg",
+      "label": "In den Krautäckern 17",
+      "street": "In den Krautäckern",
+      "houseNumber": "17",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gaiberg",
+      "spotCount": 3,
+      "lat": 49.3643232,
+      "lng": 8.750269750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/181217160), ODbL"
+    },
+    {
+      "id": "gaiberg-9f8726ed15",
+      "city": "gaiberg",
+      "label": "In den Krautäckern 17",
+      "street": "In den Krautäckern",
+      "houseNumber": "17",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gaiberg",
+      "spotCount": 3,
+      "lat": 49.364313700000004,
+      "lng": 8.750163950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/181217161), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "burkau",
+    "name": "Burkau",
+    "center": {
+      "lat": 51.18065705000001,
+      "lng": 14.167891700000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "burkau-4e75de7596",
+      "city": "burkau",
+      "label": "Behindertenparkplatz Burkau",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Burkau",
+      "spotCount": 1,
+      "lat": 51.1796008,
+      "lng": 14.1391027,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/185494170), ODbL"
+    },
+    {
+      "id": "burkau-84d2334d66",
+      "city": "burkau",
+      "label": "Säuritzer Straße West 3",
+      "street": "Säuritzer Straße West",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burkau",
+      "spotCount": 4,
+      "lat": 51.18065705000001,
+      "lng": 14.167891700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/631277328), ODbL"
+    }
+  ]
+}

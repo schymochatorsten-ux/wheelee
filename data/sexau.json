@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "sexau",
+    "name": "Sexau",
+    "center": {
+      "lat": 48.1023589,
+      "lng": 7.906911350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sexau-208cc46e7b",
+      "city": "sexau",
+      "label": "Am Franzenacker",
+      "street": "Am Franzenacker",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sexau",
+      "spotCount": 6,
+      "lat": 48.0997488,
+      "lng": 7.90720075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1209835687), ODbL"
+    },
+    {
+      "id": "sexau-f5fddad1a2",
+      "city": "sexau",
+      "label": "Dorfstraße 61",
+      "street": "Dorfstraße",
+      "houseNumber": "61",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sexau",
+      "spotCount": 1,
+      "lat": 48.103103850000004,
+      "lng": 7.906911350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1204485407), ODbL"
+    },
+    {
+      "id": "sexau-1dcb7695cf",
+      "city": "sexau",
+      "label": "Ernst-Bühler-Weg",
+      "street": "Ernst-Bühler-Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sexau",
+      "spotCount": 1,
+      "lat": 48.1038217,
+      "lng": 7.9056023500000006,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/46484916), ODbL"
+    },
+    {
+      "id": "sexau-3ee807d29c",
+      "city": "sexau",
+      "label": "Friedhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sexau",
+      "spotCount": 1,
+      "lat": 48.10129305,
+      "lng": 7.909401150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27416239), ODbL"
+    },
+    {
+      "id": "sexau-96387e05f7",
+      "city": "sexau",
+      "label": "Moosweg",
+      "street": "Moosweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sexau",
+      "spotCount": 1,
+      "lat": 48.09279645000001,
+      "lng": 7.903966950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1125707533), ODbL"
+    },
+    {
+      "id": "sexau-7ec0230d3d",
+      "city": "sexau",
+      "label": "Wassergäßle",
+      "street": "Wassergäßle",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sexau",
+      "spotCount": 2,
+      "lat": 48.1023589,
+      "lng": 7.906068250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/46407140), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ramstein-miesenbach",
+    "name": "Ramstein-Miesenbach",
+    "center": {
+      "lat": 49.458064050000004,
+      "lng": 7.5672806
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ramstein-miesenbach-80628b5f1b",
+      "city": "ramstein-miesenbach",
+      "label": "Seewoog",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ramstein-Miesenbach",
+      "spotCount": 1,
+      "lat": 49.458064050000004,
+      "lng": 7.5672806,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1277657902), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "donaustauf",
+    "name": "Donaustauf",
+    "center": {
+      "lat": 49.031879800000006,
+      "lng": 12.2225686
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "donaustauf-07ec80950b",
+      "city": "donaustauf",
+      "label": "Walhallastraße 48",
+      "street": "Walhallastraße",
+      "houseNumber": "48",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Donaustauf",
+      "spotCount": 1,
+      "lat": 49.031879800000006,
+      "lng": 12.2225686,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4307622890), ODbL"
+    }
+  ]
+}

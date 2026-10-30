@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "feldkirchen",
+    "name": "Feldkirchen",
+    "center": {
+      "lat": 48.14491575,
+      "lng": 11.72919285
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "feldkirchen-c376cd19ef",
+      "city": "feldkirchen",
+      "label": "Eschenweg 41",
+      "street": "Eschenweg",
+      "houseNumber": "41",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Feldkirchen",
+      "spotCount": 3,
+      "lat": 48.14491575,
+      "lng": 11.7303209,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/342285376), ODbL"
+    },
+    {
+      "id": "feldkirchen-e49ea56e14",
+      "city": "feldkirchen",
+      "label": "Olympiastraße",
+      "street": "Olympiastraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Feldkirchen",
+      "spotCount": 1,
+      "lat": 48.144729100000006,
+      "lng": 11.7207318,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/160778294), ODbL"
+    },
+    {
+      "id": "feldkirchen-3e544878c2",
+      "city": "feldkirchen",
+      "label": "Raiffeisenstraße",
+      "street": "Raiffeisenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Feldkirchen",
+      "spotCount": 2,
+      "lat": 48.150867850000004,
+      "lng": 11.72919285,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/77798953), ODbL"
+    }
+  ]
+}

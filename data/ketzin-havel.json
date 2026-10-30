@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ketzin-havel",
+    "name": "Ketzin/Havel",
+    "center": {
+      "lat": 52.4788074,
+      "lng": 12.8441813
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ketzin-havel-c4d595b115",
+      "city": "ketzin-havel",
+      "label": "Rathausstraße 2",
+      "street": "Rathausstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ketzin/Havel",
+      "spotCount": 1,
+      "lat": 52.4788074,
+      "lng": 12.8441813,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/672729813), ODbL"
+    }
+  ]
+}

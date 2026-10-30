@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "schwendi",
+    "name": "Schwendi",
+    "center": {
+      "lat": 48.177647400000005,
+      "lng": 9.974921100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schwendi-7fd6b6d30c",
+      "city": "schwendi",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwendi",
+      "spotCount": 1,
+      "lat": 48.177647400000005,
+      "lng": 9.974921100000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/353925444), ODbL"
+    },
+    {
+      "id": "schwendi-940d64cb8a",
+      "city": "schwendi",
+      "label": "Max-Weishaupt-Straße",
+      "street": "Max-Weishaupt-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwendi",
+      "spotCount": 1,
+      "lat": 48.17343905,
+      "lng": 9.967193950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/434043121), ODbL"
+    }
+  ]
+}

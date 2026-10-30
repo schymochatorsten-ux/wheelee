@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bad-hindelang",
+    "name": "Bad Hindelang",
+    "center": {
+      "lat": 47.5065679,
+      "lng": 10.3716232
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-hindelang-a31f9c1476",
+      "city": "bad-hindelang",
+      "label": "Am Bauernmarkt 1",
+      "street": "Am Bauernmarkt",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Hindelang",
+      "spotCount": 1,
+      "lat": 47.5048429,
+      "lng": 10.370098850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/8050771), ODbL"
+    },
+    {
+      "id": "bad-hindelang-831375d99b",
+      "city": "bad-hindelang",
+      "label": "Schloßplatz",
+      "street": "Schloßplatz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Hindelang",
+      "spotCount": 1,
+      "lat": 47.5065679,
+      "lng": 10.3716232,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12433963190), ODbL"
+    }
+  ]
+}

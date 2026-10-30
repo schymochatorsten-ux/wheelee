@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "steinberg-sh",
+    "name": "Steinberg",
+    "center": {
+      "lat": 54.785328250000006,
+      "lng": 9.77927275
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "steinberg-sh-0fece4f1da",
+      "city": "steinberg-sh",
+      "label": "Mittweg",
+      "street": "Mittweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Steinberg",
+      "spotCount": 4,
+      "lat": 54.785328250000006,
+      "lng": 9.77927275,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1085307811), ODbL"
+    }
+  ]
+}

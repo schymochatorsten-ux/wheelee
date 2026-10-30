@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "parthenstein",
+    "name": "Parthenstein",
+    "center": {
+      "lat": 51.2775028,
+      "lng": 12.6437228
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "parthenstein-ad7f726db1",
+      "city": "parthenstein",
+      "label": "Staudnitzstraße 16a",
+      "street": "Staudnitzstraße",
+      "houseNumber": "16a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Parthenstein",
+      "spotCount": 1,
+      "lat": 51.2775028,
+      "lng": 12.6437228,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/778636274), ODbL"
+    }
+  ]
+}

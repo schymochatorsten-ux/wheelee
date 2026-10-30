@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "udenheim",
+    "name": "Udenheim",
+    "center": {
+      "lat": 49.867693900000006,
+      "lng": 8.1763728
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "udenheim-6b49e308d6",
+      "city": "udenheim",
+      "label": "Osterstraße 39",
+      "street": "Osterstraße",
+      "houseNumber": "39",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Udenheim",
+      "spotCount": 2,
+      "lat": 49.867693900000006,
+      "lng": 8.1763728,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1320034647), ODbL"
+    }
+  ]
+}

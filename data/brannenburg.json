@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "brannenburg",
+    "name": "Brannenburg",
+    "center": {
+      "lat": 47.7351977,
+      "lng": 12.106061100000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "brannenburg-7c409ae1e2",
+      "city": "brannenburg",
+      "label": "Kirchenstraße",
+      "street": "Kirchenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brannenburg",
+      "spotCount": 2,
+      "lat": 47.734134850000004,
+      "lng": 12.1034185,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1157220595), ODbL"
+    },
+    {
+      "id": "brannenburg-15ed083098",
+      "city": "brannenburg",
+      "label": "Prechtl",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brannenburg",
+      "spotCount": 1,
+      "lat": 47.73578185,
+      "lng": 12.11215885,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34692962), ODbL"
+    },
+    {
+      "id": "brannenburg-ae53366832",
+      "city": "brannenburg",
+      "label": "Schulweg",
+      "street": "Schulweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brannenburg",
+      "spotCount": 1,
+      "lat": 47.7351977,
+      "lng": 12.106061100000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11041710095), ODbL"
+    }
+  ]
+}

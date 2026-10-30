@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "grettstadt",
+    "name": "Grettstadt",
+    "center": {
+      "lat": 49.9802267,
+      "lng": 10.314866649999999
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grettstadt-b74c700b6f",
+      "city": "grettstadt",
+      "label": "Gerolzhöfer Straße",
+      "street": "Gerolzhöfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grettstadt",
+      "spotCount": 2,
+      "lat": 49.9802267,
+      "lng": 10.314866649999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/120899509), ODbL"
+    }
+  ]
+}

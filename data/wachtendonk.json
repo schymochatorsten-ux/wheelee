@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "wachtendonk",
+    "name": "Wachtendonk",
+    "center": {
+      "lat": 51.408538500000006,
+      "lng": 6.33337805
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wachtendonk-08247ee735",
+      "city": "wachtendonk",
+      "label": "Achter de Stadt",
+      "street": "Achter de Stadt",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wachtendonk",
+      "spotCount": 1,
+      "lat": 51.408533850000005,
+      "lng": 6.333160900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1536139885), ODbL"
+    },
+    {
+      "id": "wachtendonk-b90732eb28",
+      "city": "wachtendonk",
+      "label": "Achter de Stadt",
+      "street": "Achter de Stadt",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wachtendonk",
+      "spotCount": 1,
+      "lat": 51.408538500000006,
+      "lng": 6.33326875,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1536139886), ODbL"
+    },
+    {
+      "id": "wachtendonk-a0d2d0c725",
+      "city": "wachtendonk",
+      "label": "Achter de Stadt",
+      "street": "Achter de Stadt",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wachtendonk",
+      "spotCount": 1,
+      "lat": 51.40854265,
+      "lng": 6.33337805,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1536139887), ODbL"
+    },
+    {
+      "id": "wachtendonk-3b14b27de6",
+      "city": "wachtendonk",
+      "label": "Feldstraße 26",
+      "street": "Feldstraße",
+      "houseNumber": "26",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wachtendonk",
+      "spotCount": 1,
+      "lat": 51.4074071,
+      "lng": 6.33563015,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1101287258), ODbL"
+    },
+    {
+      "id": "wachtendonk-8889413b0b",
+      "city": "wachtendonk",
+      "label": "Friedensplatz 11",
+      "street": "Friedensplatz",
+      "houseNumber": "11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wachtendonk",
+      "spotCount": 1,
+      "lat": 51.4087012,
+      "lng": 6.3372564,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6410273352), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "starkenberg",
+    "name": "Starkenberg",
+    "center": {
+      "lat": 50.984672450000005,
+      "lng": 12.30969795
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "starkenberg-a57f6d8483",
+      "city": "starkenberg",
+      "label": "Borngasse 5",
+      "street": "Borngasse",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Starkenberg",
+      "spotCount": 1,
+      "lat": 50.984672450000005,
+      "lng": 12.30969795,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/92060187), ODbL"
+    }
+  ]
+}

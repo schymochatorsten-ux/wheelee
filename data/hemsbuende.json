@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hemsbuende",
+    "name": "Hemsbünde",
+    "center": {
+      "lat": 53.09701255,
+      "lng": 9.4800924
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hemsbuende-e58acbfcdd",
+      "city": "hemsbuende",
+      "label": "Soltauer Straße",
+      "street": "Soltauer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hemsbünde",
+      "spotCount": 1,
+      "lat": 53.09701255,
+      "lng": 9.4800924,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1531493862), ODbL"
+    }
+  ]
+}

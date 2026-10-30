@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ottensoos",
+    "name": "Ottensoos",
+    "center": {
+      "lat": 49.5100283,
+      "lng": 11.340682300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ottensoos-8a101bdaf2",
+      "city": "ottensoos",
+      "label": "Dorfplatz 3",
+      "street": "Dorfplatz",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ottensoos",
+      "spotCount": 1,
+      "lat": 49.5100283,
+      "lng": 11.340682300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9583801384), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bredstedt",
+    "name": "Bredstedt",
+    "center": {
+      "lat": 54.61759000000001,
+      "lng": 8.962416350000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bredstedt-6c95f9bacf",
+      "city": "bredstedt",
+      "label": "B.-Preisner-Platz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bredstedt",
+      "spotCount": 2,
+      "lat": 54.61759000000001,
+      "lng": 8.962416350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/378034775), ODbL"
+    }
+  ]
+}

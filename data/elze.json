@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "elze",
+    "name": "Elze",
+    "center": {
+      "lat": 52.120141700000005,
+      "lng": 9.738177
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "elze-067247c031",
+      "city": "elze",
+      "label": "Hauptstraße 61",
+      "street": "Hauptstraße",
+      "houseNumber": "61",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Elze",
+      "spotCount": 1,
+      "lat": 52.11885410000001,
+      "lng": 9.7361859,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/722216729), ODbL"
+    },
+    {
+      "id": "elze-70027bf742",
+      "city": "elze",
+      "label": "Osterstraße 1",
+      "street": "Osterstraße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Elze",
+      "spotCount": 1,
+      "lat": 52.120141700000005,
+      "lng": 9.738177,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1218803708), ODbL"
+    }
+  ]
+}

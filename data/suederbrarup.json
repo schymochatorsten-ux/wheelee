@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "suederbrarup",
+    "name": "Süderbrarup",
+    "center": {
+      "lat": 54.63651935,
+      "lng": 9.7716659
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "suederbrarup-3c11585f00",
+      "city": "suederbrarup",
+      "label": "Bahnhofstraße 15",
+      "street": "Bahnhofstraße",
+      "houseNumber": "15",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Süderbrarup",
+      "spotCount": 2,
+      "lat": 54.63651935,
+      "lng": 9.7716659,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1410013350), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "georgenthal",
+    "name": "Georgenthal",
+    "center": {
+      "lat": 50.829168100000004,
+      "lng": 10.6582088
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "georgenthal-fa62d2a1af",
+      "city": "georgenthal",
+      "label": "Johannisstraße",
+      "street": "Johannisstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Georgenthal",
+      "spotCount": 1,
+      "lat": 50.829077000000005,
+      "lng": 10.656386900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/710695891), ODbL"
+    },
+    {
+      "id": "georgenthal-9e0ed69f5a",
+      "city": "georgenthal",
+      "label": "Schloßplatz",
+      "street": "Schloßplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Georgenthal",
+      "spotCount": 1,
+      "lat": 50.829168100000004,
+      "lng": 10.6582088,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/590697311), ODbL"
+    }
+  ]
+}

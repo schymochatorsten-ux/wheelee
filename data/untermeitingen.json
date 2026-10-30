@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "untermeitingen",
+    "name": "Untermeitingen",
+    "center": {
+      "lat": 48.1600764,
+      "lng": 10.81917085
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "untermeitingen-ef2f0e84b8",
+      "city": "untermeitingen",
+      "label": "Donauring",
+      "street": "Donauring",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Untermeitingen",
+      "spotCount": 1,
+      "lat": 48.159537,
+      "lng": 10.8197872,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1269867682), ODbL"
+    },
+    {
+      "id": "untermeitingen-2e02a89d56",
+      "city": "untermeitingen",
+      "label": "Donauring",
+      "street": "Donauring",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Untermeitingen",
+      "spotCount": 1,
+      "lat": 48.15950535,
+      "lng": 10.819779800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1269867683), ODbL"
+    },
+    {
+      "id": "untermeitingen-1596511bad",
+      "city": "untermeitingen",
+      "label": "Lechfelder Straße",
+      "street": "Lechfelder Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Untermeitingen",
+      "spotCount": 1,
+      "lat": 48.1600764,
+      "lng": 10.81807725,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1312424491), ODbL"
+    },
+    {
+      "id": "untermeitingen-1b7c461ef2",
+      "city": "untermeitingen",
+      "label": "Lechring",
+      "street": "Lechring",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Untermeitingen",
+      "spotCount": 1,
+      "lat": 48.161121550000004,
+      "lng": 10.81917085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1304296661), ODbL"
+    },
+    {
+      "id": "untermeitingen-340f085e1d",
+      "city": "untermeitingen",
+      "label": "Pfarrer-Bißle-Weg",
+      "street": "Pfarrer-Bißle-Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Untermeitingen",
+      "spotCount": 1,
+      "lat": 48.16352245,
+      "lng": 10.8051478,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/86023133), ODbL"
+    }
+  ]
+}

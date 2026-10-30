@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "oldenswort",
+    "name": "Oldenswort",
+    "center": {
+      "lat": 54.32018645,
+      "lng": 8.954412900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oldenswort-da6d780fac",
+      "city": "oldenswort",
+      "label": "Dithmarscher Straße",
+      "street": "Dithmarscher Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oldenswort",
+      "spotCount": 1,
+      "lat": 54.3200269,
+      "lng": 8.954412900000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11773200019), ODbL"
+    },
+    {
+      "id": "oldenswort-8c247296b8",
+      "city": "oldenswort",
+      "label": "Kirchenweg",
+      "street": "Kirchenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oldenswort",
+      "spotCount": 1,
+      "lat": 54.37255510000001,
+      "lng": 8.9399646,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1492521102), ODbL"
+    },
+    {
+      "id": "oldenswort-384c026ee5",
+      "city": "oldenswort",
+      "label": "Multimar Wattforum",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oldenswort",
+      "spotCount": 2,
+      "lat": 54.32018645,
+      "lng": 8.9545788,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/234992417), ODbL"
+    }
+  ]
+}

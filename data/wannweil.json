@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "wannweil",
+    "name": "Wannweil",
+    "center": {
+      "lat": 48.512411400000005,
+      "lng": 9.1509981
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wannweil-3b43a109ba",
+      "city": "wannweil",
+      "label": "Eisenbahnstraße 34",
+      "street": "Eisenbahnstraße",
+      "houseNumber": "34",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wannweil",
+      "spotCount": 1,
+      "lat": 48.512411400000005,
+      "lng": 9.1509981,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1394425586), ODbL"
+    },
+    {
+      "id": "wannweil-a03ff5b3f4",
+      "city": "wannweil",
+      "label": "Eisenbahnstraße 34",
+      "street": "Eisenbahnstraße",
+      "houseNumber": "34",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Wannweil",
+      "spotCount": 1,
+      "lat": 48.51231295000001,
+      "lng": 9.1510803,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1394425587), ODbL"
+    },
+    {
+      "id": "wannweil-c6f3a707e0",
+      "city": "wannweil",
+      "label": "Lindenstraße",
+      "street": "Lindenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wannweil",
+      "spotCount": 3,
+      "lat": 48.516819350000006,
+      "lng": 9.144463900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1158896491), ODbL"
+    }
+  ]
+}

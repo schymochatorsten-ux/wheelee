@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bad-hoenningen",
+    "name": "Bad Hönningen",
+    "center": {
+      "lat": 50.51586245,
+      "lng": 7.30647875
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-hoenningen-5fc46f53f1",
+      "city": "bad-hoenningen",
+      "label": "Marktstraße 6",
+      "street": "Marktstraße",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Hönningen",
+      "spotCount": 2,
+      "lat": 50.51586245,
+      "lng": 7.30647875,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1432730293), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "stolpe-mv",
+    "name": "Stolpe",
+    "center": {
+      "lat": 53.36785085,
+      "lng": 11.73120025
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "stolpe-mv-18918c14eb",
+      "city": "stolpe-mv",
+      "label": "RTK Nord",
+      "street": "RTK Nord",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stolpe",
+      "spotCount": 1,
+      "lat": 53.36785085,
+      "lng": 11.73120025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/454817518), ODbL"
+    }
+  ]
+}

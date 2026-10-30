@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "simmozheim",
+    "name": "Simmozheim",
+    "center": {
+      "lat": 48.75214255,
+      "lng": 8.81134685
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "simmozheim-856ef22c4f",
+      "city": "simmozheim",
+      "label": "Friedhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Simmozheim",
+      "spotCount": 1,
+      "lat": 48.75314995000001,
+      "lng": 8.811725800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/191817836), ODbL"
+    },
+    {
+      "id": "simmozheim-06c7975f7f",
+      "city": "simmozheim",
+      "label": "Hauffstraße 10/1",
+      "street": "Hauffstraße",
+      "houseNumber": "10/1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Simmozheim",
+      "spotCount": 2,
+      "lat": 48.75283685000001,
+      "lng": 8.810809800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/193187601), ODbL"
+    },
+    {
+      "id": "simmozheim-c5a617fb18",
+      "city": "simmozheim",
+      "label": "Im Mönchgraben",
+      "street": "Im Mönchgraben",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Simmozheim",
+      "spotCount": 2,
+      "lat": 48.7458154,
+      "lng": 8.80660485,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/96470103), ODbL"
+    },
+    {
+      "id": "simmozheim-208e868b73",
+      "city": "simmozheim",
+      "label": "Ostelsheimer Straße",
+      "street": "Ostelsheimer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Simmozheim",
+      "spotCount": 3,
+      "lat": 48.748096700000005,
+      "lng": 8.8166647,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1179555065), ODbL"
+    },
+    {
+      "id": "simmozheim-1d5ebb60a0",
+      "city": "simmozheim",
+      "label": "Schillerstraße 2/1",
+      "street": "Schillerstraße",
+      "houseNumber": "2/1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Simmozheim",
+      "spotCount": 1,
+      "lat": 48.75214255,
+      "lng": 8.81134685,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1000059729), ODbL"
+    }
+  ]
+}

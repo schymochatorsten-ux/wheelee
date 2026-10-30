@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "ammersbek",
+    "name": "Ammersbek",
+    "center": {
+      "lat": 53.678093200000006,
+      "lng": 10.14664815
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ammersbek-318c4bbc33",
+      "city": "ammersbek",
+      "label": "Ferdinand-Harten-Straße",
+      "street": "Ferdinand-Harten-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ammersbek",
+      "spotCount": 3,
+      "lat": 53.679005700000005,
+      "lng": 10.14495415,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/197247492), ODbL"
+    },
+    {
+      "id": "ammersbek-3222cae3f6",
+      "city": "ammersbek",
+      "label": "Georg-Sasse-Straße",
+      "street": "Georg-Sasse-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ammersbek",
+      "spotCount": 3,
+      "lat": 53.67736235,
+      "lng": 10.149005200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/42348819), ODbL"
+    },
+    {
+      "id": "ammersbek-dd495514bb",
+      "city": "ammersbek",
+      "label": "Hamburger Straße 105",
+      "street": "Hamburger Straße",
+      "houseNumber": "105",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ammersbek",
+      "spotCount": 1,
+      "lat": 53.678093200000006,
+      "lng": 10.14664815,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34006828), ODbL"
+    }
+  ]
+}

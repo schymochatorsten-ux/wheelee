@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "steisslingen",
+    "name": "Steißlingen",
+    "center": {
+      "lat": 47.80153370000001,
+      "lng": 8.922772850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "steisslingen-678fb2cb06",
+      "city": "steisslingen",
+      "label": "Friedhofstraße 23",
+      "street": "Friedhofstraße",
+      "houseNumber": "23",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Steißlingen",
+      "spotCount": 1,
+      "lat": 47.803670800000006,
+      "lng": 8.922772850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/672677190), ODbL"
+    },
+    {
+      "id": "steisslingen-7309b6bbb3",
+      "city": "steisslingen",
+      "label": "Gartenstraße",
+      "street": "Gartenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Steißlingen",
+      "spotCount": 1,
+      "lat": 47.8003835,
+      "lng": 8.92511635,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/747924161), ODbL"
+    },
+    {
+      "id": "steisslingen-4308b60087",
+      "city": "steisslingen",
+      "label": "Kirchstraße",
+      "street": "Kirchstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Steißlingen",
+      "spotCount": 3,
+      "lat": 47.799516,
+      "lng": 8.926145600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/697022473), ODbL"
+    },
+    {
+      "id": "steisslingen-6a683e76c8",
+      "city": "steisslingen",
+      "label": "Orsinger Straße",
+      "street": "Orsinger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Steißlingen",
+      "spotCount": 1,
+      "lat": 47.803949800000005,
+      "lng": 8.9220081,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/672677186), ODbL"
+    },
+    {
+      "id": "steisslingen-b6b60fa862",
+      "city": "steisslingen",
+      "label": "Parkplatz Seeblickhalle",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Steißlingen",
+      "spotCount": 2,
+      "lat": 47.80153370000001,
+      "lng": 8.915035000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/363347754), ODbL"
+    }
+  ]
+}

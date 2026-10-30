@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bodelwitz",
+    "name": "Bodelwitz",
+    "center": {
+      "lat": 50.688323450000006,
+      "lng": 11.62167265
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bodelwitz-5e0cd5d6db",
+      "city": "bodelwitz",
+      "label": "Pößnecker Straße 17",
+      "street": "Pößnecker Straße",
+      "houseNumber": "17",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bodelwitz",
+      "spotCount": 1,
+      "lat": 50.688323450000006,
+      "lng": 11.62167265,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/211045179), ODbL"
+    }
+  ]
+}

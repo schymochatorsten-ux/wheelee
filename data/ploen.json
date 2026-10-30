@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "ploen",
+    "name": "Plön",
+    "center": {
+      "lat": 54.15923995,
+      "lng": 10.41859775
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ploen-048c16d336",
+      "city": "ploen",
+      "label": "Behindertenparkplatz Plön",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Plön",
+      "spotCount": 5,
+      "lat": 54.15089105,
+      "lng": 10.40878725,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/980846000), ODbL"
+    },
+    {
+      "id": "ploen-42a1248b61",
+      "city": "ploen",
+      "label": "Plauer Weg 25",
+      "street": "Plauer Weg",
+      "houseNumber": "25",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Plön",
+      "spotCount": 4,
+      "lat": 54.165380750000004,
+      "lng": 10.41859775,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/243379976), ODbL"
+    },
+    {
+      "id": "ploen-0f827672ae",
+      "city": "ploen",
+      "label": "Prinzeninsel",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Plön",
+      "spotCount": 1,
+      "lat": 54.149463850000004,
+      "lng": 10.40169105,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/119602356), ODbL"
+    },
+    {
+      "id": "ploen-7dfc4abc30",
+      "city": "ploen",
+      "label": "Straße am ZOB",
+      "street": "Straße am ZOB",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Plön",
+      "spotCount": 1,
+      "lat": 54.15923995,
+      "lng": 10.42151205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/40843875), ODbL"
+    },
+    {
+      "id": "ploen-5ef360ab01",
+      "city": "ploen",
+      "label": "Straße am ZOB",
+      "street": "Straße am ZOB",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Plön",
+      "spotCount": 1,
+      "lat": 54.1593822,
+      "lng": 10.42188865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1028964085), ODbL"
+    }
+  ]
+}

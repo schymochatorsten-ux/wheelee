@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "elzach",
+    "name": "Elzach",
+    "center": {
+      "lat": 48.1751424,
+      "lng": 8.07290595
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "elzach-253394b240",
+      "city": "elzach",
+      "label": "Erich-Bayer-Straße",
+      "street": "Erich-Bayer-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elzach",
+      "spotCount": 2,
+      "lat": 48.175239600000005,
+      "lng": 8.0749587,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/702227116), ODbL"
+    },
+    {
+      "id": "elzach-1f90561fea",
+      "city": "elzach",
+      "label": "Nikolausplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elzach",
+      "spotCount": 1,
+      "lat": 48.17400785,
+      "lng": 8.070961650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/142207895), ODbL"
+    },
+    {
+      "id": "elzach-a783989066",
+      "city": "elzach",
+      "label": "Parken an der Elz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elzach",
+      "spotCount": 4,
+      "lat": 48.17308835,
+      "lng": 8.07290595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/142902902), ODbL"
+    },
+    {
+      "id": "elzach-9d87e755ee",
+      "city": "elzach",
+      "label": "Rathausgasse",
+      "street": "Rathausgasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elzach",
+      "spotCount": 1,
+      "lat": 48.1751424,
+      "lng": 8.07245865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/534741436), ODbL"
+    }
+  ]
+}

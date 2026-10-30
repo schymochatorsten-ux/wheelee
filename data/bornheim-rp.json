@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bornheim-rp",
+    "name": "Bornheim",
+    "center": {
+      "lat": 49.220856850000004,
+      "lng": 8.17213705
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bornheim-rp-5e3f929a6e",
+      "city": "bornheim-rp",
+      "label": "Hornbachstraße",
+      "street": "Hornbachstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bornheim",
+      "spotCount": 1,
+      "lat": 49.21511275,
+      "lng": 8.17213705,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/48087613), ODbL"
+    },
+    {
+      "id": "bornheim-rp-3d2a2fe640",
+      "city": "bornheim-rp",
+      "label": "In den Weppen 1",
+      "street": "In den Weppen",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bornheim",
+      "spotCount": 1,
+      "lat": 49.220856850000004,
+      "lng": 8.1676619,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/779695209), ODbL"
+    }
+  ]
+}

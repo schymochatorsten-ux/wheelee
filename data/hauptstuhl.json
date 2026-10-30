@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hauptstuhl",
+    "name": "Hauptstuhl",
+    "center": {
+      "lat": 49.40175550000001,
+      "lng": 7.490973
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hauptstuhl-b41fc47ff2",
+      "city": "hauptstuhl",
+      "label": "Bahnhofstraße 15a",
+      "street": "Bahnhofstraße",
+      "houseNumber": "15a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hauptstuhl",
+      "spotCount": 3,
+      "lat": 49.40175550000001,
+      "lng": 7.490973,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/251204762), ODbL"
+    }
+  ]
+}

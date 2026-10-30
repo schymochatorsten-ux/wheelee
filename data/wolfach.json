@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "wolfach",
+    "name": "Wolfach",
+    "center": {
+      "lat": 48.2974212,
+      "lng": 8.2215332
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wolfach-78d6b56977",
+      "city": "wolfach",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wolfach",
+      "spotCount": 1,
+      "lat": 48.29471745,
+      "lng": 8.2215332,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/300528537), ODbL"
+    },
+    {
+      "id": "wolfach-4db817f613",
+      "city": "wolfach",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Wolfach",
+      "spotCount": 1,
+      "lat": 48.29504045,
+      "lng": 8.221469,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1254400914), ODbL"
+    },
+    {
+      "id": "wolfach-665453aede",
+      "city": "wolfach",
+      "label": "Bergstraße",
+      "street": "Bergstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wolfach",
+      "spotCount": 1,
+      "lat": 48.2974212,
+      "lng": 8.221677,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2419284456), ODbL"
+    },
+    {
+      "id": "wolfach-04e7ee5778",
+      "city": "wolfach",
+      "label": "Vorstadtstraße",
+      "street": "Vorstadtstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wolfach",
+      "spotCount": 1,
+      "lat": 48.3014031,
+      "lng": 8.2214966,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2419251373), ODbL"
+    },
+    {
+      "id": "wolfach-516ed4c9d8",
+      "city": "wolfach",
+      "label": "Wäschergäßle",
+      "street": "Wäschergäßle",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wolfach",
+      "spotCount": 1,
+      "lat": 48.298539100000006,
+      "lng": 8.2231571,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2419241906), ODbL"
+    }
+  ]
+}

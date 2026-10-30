@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "menslage",
+    "name": "Menslage",
+    "center": {
+      "lat": 52.6806457,
+      "lng": 7.81616865
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "menslage-66a9370317",
+      "city": "menslage",
+      "label": "Am Telgenbusch 1",
+      "street": "Am Telgenbusch",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Menslage",
+      "spotCount": 2,
+      "lat": 52.6806457,
+      "lng": 7.81616865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/813252889), ODbL"
+    }
+  ]
+}

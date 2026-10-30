@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "weissbach",
+    "name": "Weißbach",
+    "center": {
+      "lat": 49.30107135,
+      "lng": 9.59384945
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "weissbach-bbe4d37ac1",
+      "city": "weissbach",
+      "label": "Lindenstraße",
+      "street": "Lindenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weißbach",
+      "spotCount": 1,
+      "lat": 49.30107135,
+      "lng": 9.59384945,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/667963009), ODbL"
+    }
+  ]
+}

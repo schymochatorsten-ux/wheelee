@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hessdorf",
+    "name": "Heßdorf",
+    "center": {
+      "lat": 49.636398650000004,
+      "lng": 10.905503200000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hessdorf-694d619f88",
+      "city": "hessdorf",
+      "label": "Hannberger Straße 5",
+      "street": "Hannberger Straße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heßdorf",
+      "spotCount": 1,
+      "lat": 49.6288149,
+      "lng": 10.905503200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1446712074), ODbL"
+    },
+    {
+      "id": "hessdorf-a6c08d889e",
+      "city": "hessdorf",
+      "label": "Kirchenplatz",
+      "street": "Kirchenplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heßdorf",
+      "spotCount": 6,
+      "lat": 49.636398650000004,
+      "lng": 10.9025467,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1066906832), ODbL"
+    }
+  ]
+}

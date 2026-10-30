@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "gaienhofen",
+    "name": "Gaienhofen",
+    "center": {
+      "lat": 47.715175200000004,
+      "lng": 8.963920900000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gaienhofen-da751e10e9",
+      "city": "gaienhofen",
+      "label": "Strandbadstraße",
+      "street": "Strandbadstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "08:00-20:00",
+      "district": "Gaienhofen",
+      "spotCount": 2,
+      "lat": 47.7144512,
+      "lng": 8.963920900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27339109), ODbL"
+    },
+    {
+      "id": "gaienhofen-3050c2235a",
+      "city": "gaienhofen",
+      "label": "Strandbadstraße",
+      "street": "Strandbadstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gaienhofen",
+      "spotCount": 1,
+      "lat": 47.715175200000004,
+      "lng": 8.9636444,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/229862140), ODbL"
+    }
+  ]
+}

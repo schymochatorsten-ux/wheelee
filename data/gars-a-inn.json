@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "gars-a-inn",
+    "name": "Gars a.Inn",
+    "center": {
+      "lat": 48.15304175,
+      "lng": 12.276458050000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gars-a-inn-37fba4f14e",
+      "city": "gars-a-inn",
+      "label": "Augustinerstraße",
+      "street": "Augustinerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gars a.Inn",
+      "spotCount": 2,
+      "lat": 48.15301170000001,
+      "lng": 12.2760155,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1167106863), ODbL"
+    },
+    {
+      "id": "gars-a-inn-b9e8504585",
+      "city": "gars-a-inn",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gars a.Inn",
+      "spotCount": 1,
+      "lat": 48.14731075,
+      "lng": 12.299012950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/474584576), ODbL"
+    },
+    {
+      "id": "gars-a-inn-2c22f4860a",
+      "city": "gars-a-inn",
+      "label": "Hauptstraße 3",
+      "street": "Hauptstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gars a.Inn",
+      "spotCount": 1,
+      "lat": 48.15304175,
+      "lng": 12.276458050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1564848699), ODbL"
+    },
+    {
+      "id": "gars-a-inn-462d17984f",
+      "city": "gars-a-inn",
+      "label": "Tassilostraße",
+      "street": "Tassilostraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gars a.Inn",
+      "spotCount": 1,
+      "lat": 48.15777945000001,
+      "lng": 12.27625175,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/93658253), ODbL"
+    }
+  ]
+}

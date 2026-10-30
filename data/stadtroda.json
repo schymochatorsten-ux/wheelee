@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "stadtroda",
+    "name": "Stadtroda",
+    "center": {
+      "lat": 50.8743628,
+      "lng": 11.711530450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "stadtroda-93ae4c09b8",
+      "city": "stadtroda",
+      "label": "Amtsplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Stadtroda",
+      "spotCount": 1,
+      "lat": 50.857861850000006,
+      "lng": 11.7271009,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/149994644), ODbL"
+    },
+    {
+      "id": "stadtroda-3a80d4d604",
+      "city": "stadtroda",
+      "label": "Eigenheimweg 34",
+      "street": "Eigenheimweg",
+      "houseNumber": "34",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stadtroda",
+      "spotCount": 1,
+      "lat": 50.86088565,
+      "lng": 11.7285909,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/392943755), ODbL"
+    },
+    {
+      "id": "stadtroda-a87888c0c0",
+      "city": "stadtroda",
+      "label": "Rodablick",
+      "street": "Rodablick",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stadtroda",
+      "spotCount": 3,
+      "lat": 50.8743628,
+      "lng": 11.711530450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/751898215), ODbL"
+    },
+    {
+      "id": "stadtroda-5b72dbf4c2",
+      "city": "stadtroda",
+      "label": "Rodablick",
+      "street": "Rodablick",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Stadtroda",
+      "spotCount": 1,
+      "lat": 50.874377,
+      "lng": 11.711367450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/753638728), ODbL"
+    },
+    {
+      "id": "stadtroda-f48ccca82d",
+      "city": "stadtroda",
+      "label": "Rodablick",
+      "street": "Rodablick",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Stadtroda",
+      "spotCount": 1,
+      "lat": 50.87438225,
+      "lng": 11.711289350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/753638729), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "engstingen",
+    "name": "Engstingen",
+    "center": {
+      "lat": 48.3875127,
+      "lng": 9.285001950000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "engstingen-a08331ef27",
+      "city": "engstingen",
+      "label": "Grieserstraße 4",
+      "street": "Grieserstraße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Engstingen",
+      "spotCount": 2,
+      "lat": 48.387066700000005,
+      "lng": 9.285001950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1524189775), ODbL"
+    },
+    {
+      "id": "engstingen-e4b710758d",
+      "city": "engstingen",
+      "label": "Honauer Straße 5",
+      "street": "Honauer Straße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Engstingen",
+      "spotCount": 1,
+      "lat": 48.3875127,
+      "lng": 9.28493375,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31452571), ODbL"
+    }
+  ]
+}

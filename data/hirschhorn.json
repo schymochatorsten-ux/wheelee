@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "hirschhorn",
+    "name": "Hirschhorn (Neckar)",
+    "center": {
+      "lat": 49.441519150000005,
+      "lng": 8.895784650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hirschhorn-80339fdae2",
+      "city": "hirschhorn",
+      "label": "Am alten Stellwerk",
+      "street": "Am alten Stellwerk",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hirschhorn (Neckar)",
+      "spotCount": 1,
+      "lat": 49.44194205,
+      "lng": 8.895784650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1341536161), ODbL"
+    },
+    {
+      "id": "hirschhorn-6a23af2be2",
+      "city": "hirschhorn",
+      "label": "Am alten Stellwerk",
+      "street": "Am alten Stellwerk",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hirschhorn (Neckar)",
+      "spotCount": 1,
+      "lat": 49.441112700000005,
+      "lng": 8.8957193,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1341555620), ODbL"
+    },
+    {
+      "id": "hirschhorn-7d1b9beab4",
+      "city": "hirschhorn",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hirschhorn (Neckar)",
+      "spotCount": 1,
+      "lat": 49.44150715000001,
+      "lng": 8.896072400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1341536162), ODbL"
+    },
+    {
+      "id": "hirschhorn-c4b1356b63",
+      "city": "hirschhorn",
+      "label": "Michelberg",
+      "street": "Michelberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hirschhorn (Neckar)",
+      "spotCount": 1,
+      "lat": 49.441519150000005,
+      "lng": 8.89547445,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1341555619), ODbL"
+    }
+  ]
+}

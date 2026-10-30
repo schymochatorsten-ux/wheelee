@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "lambrechtshagen",
+    "name": "Lambrechtshagen",
+    "center": {
+      "lat": 54.10136155000001,
+      "lng": 12.01521245
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lambrechtshagen-ab2a07bd5f",
+      "city": "lambrechtshagen",
+      "label": "Allershäger Straße",
+      "street": "Allershäger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lambrechtshagen",
+      "spotCount": 1,
+      "lat": 54.10136155000001,
+      "lng": 12.01515685,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/38235718), ODbL"
+    },
+    {
+      "id": "lambrechtshagen-b6b4921ccb",
+      "city": "lambrechtshagen",
+      "label": "Allershäger Straße",
+      "street": "Allershäger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lambrechtshagen",
+      "spotCount": 1,
+      "lat": 54.10115175,
+      "lng": 12.01521245,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/38235719), ODbL"
+    }
+  ]
+}

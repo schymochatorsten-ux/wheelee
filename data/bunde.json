@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "bunde",
+    "name": "Bunde",
+    "center": {
+      "lat": 53.183769250000005,
+      "lng": 7.26388315
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bunde-fa14fa355b",
+      "city": "bunde",
+      "label": "In't Börgerland",
+      "street": "In't Börgerland",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bunde",
+      "spotCount": 1,
+      "lat": 53.183846700000004,
+      "lng": 7.264012900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1572042007), ODbL"
+    },
+    {
+      "id": "bunde-36095b2682",
+      "city": "bunde",
+      "label": "Rheiderlandstraße",
+      "street": "Rheiderlandstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bunde",
+      "spotCount": 3,
+      "lat": 53.183455800000004,
+      "lng": 7.26388315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/178860385), ODbL"
+    },
+    {
+      "id": "bunde-664cfa5c86",
+      "city": "bunde",
+      "label": "Rheiderlandstraße",
+      "street": "Rheiderlandstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bunde",
+      "spotCount": 1,
+      "lat": 53.18374955,
+      "lng": 7.26382335,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1572042000), ODbL"
+    },
+    {
+      "id": "bunde-9f32472824",
+      "city": "bunde",
+      "label": "Rheiderlandstraße",
+      "street": "Rheiderlandstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bunde",
+      "spotCount": 1,
+      "lat": 53.183769250000005,
+      "lng": 7.26386175,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1572042001), ODbL"
+    },
+    {
+      "id": "bunde-d908c3dfb9",
+      "city": "bunde",
+      "label": "Steinhausstraße",
+      "street": "Steinhausstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bunde",
+      "spotCount": 1,
+      "lat": 53.2006862,
+      "lng": 7.284504900000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14091530493), ODbL"
+    }
+  ]
+}

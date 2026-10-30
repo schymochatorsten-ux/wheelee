@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "westerstetten",
+    "name": "Westerstetten",
+    "center": {
+      "lat": 48.520513650000005,
+      "lng": 9.949451100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "westerstetten-b397115bc9",
+      "city": "westerstetten",
+      "label": "Hinterer-Berg-Weg 5",
+      "street": "Hinterer-Berg-Weg",
+      "houseNumber": "5",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Westerstetten",
+      "spotCount": 1,
+      "lat": 48.520513650000005,
+      "lng": 9.949451100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1419939134), ODbL"
+    },
+    {
+      "id": "westerstetten-1bf75659e6",
+      "city": "westerstetten",
+      "label": "Hinterer-Berg-Weg 5",
+      "street": "Hinterer-Berg-Weg",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Westerstetten",
+      "spotCount": 1,
+      "lat": 48.520513650000005,
+      "lng": 9.949451100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1419939136), ODbL"
+    }
+  ]
+}

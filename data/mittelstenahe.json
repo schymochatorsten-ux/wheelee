@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "mittelstenahe",
+    "name": "Mittelstenahe",
+    "center": {
+      "lat": 53.666568250000005,
+      "lng": 9.051127700000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mittelstenahe-c9603da68d",
+      "city": "mittelstenahe",
+      "label": "Osterende",
+      "street": "Osterende",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mittelstenahe",
+      "spotCount": 1,
+      "lat": 53.6658681,
+      "lng": 9.050570350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1004977719), ODbL"
+    },
+    {
+      "id": "mittelstenahe-6d12cacfd3",
+      "city": "mittelstenahe",
+      "label": "Osterende",
+      "street": "Osterende",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mittelstenahe",
+      "spotCount": 1,
+      "lat": 53.666568250000005,
+      "lng": 9.051127700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1004977723), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "babensham",
+    "name": "Babensham",
+    "center": {
+      "lat": 48.082021850000004,
+      "lng": 12.270159600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "babensham-b003459d07",
+      "city": "babensham",
+      "label": "Raiffeisenstraße 3",
+      "street": "Raiffeisenstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Babensham",
+      "spotCount": 1,
+      "lat": 48.082021850000004,
+      "lng": 12.270159600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1468509832), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "seifhennersdorf",
+    "name": "Seifhennersdorf",
+    "center": {
+      "lat": 50.93513515000001,
+      "lng": 14.608436400000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "seifhennersdorf-26e3831e15",
+      "city": "seifhennersdorf",
+      "label": "Neugersdorfer Straße",
+      "street": "Neugersdorfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Seifhennersdorf",
+      "spotCount": 1,
+      "lat": 50.94172880000001,
+      "lng": 14.6034936,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/354001308), ODbL"
+    },
+    {
+      "id": "seifhennersdorf-13381bdb1d",
+      "city": "seifhennersdorf",
+      "label": "Nordstraße 21a",
+      "street": "Nordstraße",
+      "houseNumber": "21a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Seifhennersdorf",
+      "spotCount": 2,
+      "lat": 50.93513515000001,
+      "lng": 14.608436400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26975942), ODbL"
+    },
+    {
+      "id": "seifhennersdorf-e1049b5efd",
+      "city": "seifhennersdorf",
+      "label": "Rathausplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Seifhennersdorf",
+      "spotCount": 2,
+      "lat": 50.9347396,
+      "lng": 14.60994745,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26975937), ODbL"
+    }
+  ]
+}

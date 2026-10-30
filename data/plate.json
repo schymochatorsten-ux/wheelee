@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "plate",
+    "name": "Plate",
+    "center": {
+      "lat": 53.5381524,
+      "lng": 11.46945595
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "plate-e5fb5a9bc4",
+      "city": "plate",
+      "label": "Plater Berg Ost",
+      "street": "Plater Berg Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Plate",
+      "spotCount": 3,
+      "lat": 53.53403455,
+      "lng": 11.46945595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/135769295), ODbL"
+    },
+    {
+      "id": "plate-72d8c5dd54",
+      "city": "plate",
+      "label": "Plater Berg West",
+      "street": "Plater Berg West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Plate",
+      "spotCount": 3,
+      "lat": 53.5381524,
+      "lng": 11.468621850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/135769288), ODbL"
+    }
+  ]
+}

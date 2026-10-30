@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "buetzow",
+    "name": "Bützow",
+    "center": {
+      "lat": 53.84799115,
+      "lng": 11.987404450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "buetzow-c1d4c59979",
+      "city": "buetzow",
+      "label": "Am Hafen",
+      "street": "Am Hafen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bützow",
+      "spotCount": 1,
+      "lat": 53.84799115,
+      "lng": 11.987404450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35268842), ODbL"
+    },
+    {
+      "id": "buetzow-7a6de18018",
+      "city": "buetzow",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bützow",
+      "spotCount": 1,
+      "lat": 53.836075650000005,
+      "lng": 11.9960472,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/42668780), ODbL"
+    },
+    {
+      "id": "buetzow-12c16ec152",
+      "city": "buetzow",
+      "label": "Pferdemarkt 2",
+      "street": "Pferdemarkt",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bützow",
+      "spotCount": 1,
+      "lat": 53.8496358,
+      "lng": 11.9861015,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28170280), ODbL"
+    }
+  ]
+}

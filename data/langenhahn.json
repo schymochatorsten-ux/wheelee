@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "langenhahn",
+    "name": "Langenhahn",
+    "center": {
+      "lat": 50.58565395,
+      "lng": 7.9181685
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "langenhahn-8fb4769161",
+      "city": "langenhahn",
+      "label": "Koblenzer Straße",
+      "street": "Koblenzer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Langenhahn",
+      "spotCount": 1,
+      "lat": 50.58565395,
+      "lng": 7.9181685,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/577670957), ODbL"
+    }
+  ]
+}

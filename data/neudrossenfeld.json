@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "neudrossenfeld",
+    "name": "Neudrossenfeld",
+    "center": {
+      "lat": 50.0157771,
+      "lng": 11.504100000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neudrossenfeld-1961ec0084",
+      "city": "neudrossenfeld",
+      "label": "Marktplatz 2c",
+      "street": "Marktplatz",
+      "houseNumber": "2c",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neudrossenfeld",
+      "spotCount": 1,
+      "lat": 50.0157771,
+      "lng": 11.504100000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12248578103), ODbL"
+    }
+  ]
+}

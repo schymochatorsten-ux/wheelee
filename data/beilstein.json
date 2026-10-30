@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "beilstein",
+    "name": "Beilstein",
+    "center": {
+      "lat": 49.044486500000005,
+      "lng": 9.30773215
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "beilstein-6098d89816",
+      "city": "beilstein",
+      "label": "Albert-Einstein-Straße",
+      "street": "Albert-Einstein-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Beilstein",
+      "spotCount": 1,
+      "lat": 49.044486500000005,
+      "lng": 9.30773215,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35306500), ODbL"
+    }
+  ]
+}

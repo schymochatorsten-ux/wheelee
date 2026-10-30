@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "stolpen",
+    "name": "Stolpen",
+    "center": {
+      "lat": 51.049447750000006,
+      "lng": 14.087693100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "stolpen-63fed74eb5",
+      "city": "stolpen",
+      "label": "Bergstraße 7",
+      "street": "Bergstraße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stolpen",
+      "spotCount": 1,
+      "lat": 51.0425711,
+      "lng": 14.117463950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1453147935), ODbL"
+    },
+    {
+      "id": "stolpen-b9f6af6162",
+      "city": "stolpen",
+      "label": "Birkenweg",
+      "street": "Birkenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stolpen",
+      "spotCount": 2,
+      "lat": 51.048906650000006,
+      "lng": 14.087693100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1455965036), ODbL"
+    },
+    {
+      "id": "stolpen-3c8307ae77",
+      "city": "stolpen",
+      "label": "Markt 10",
+      "street": "Markt",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stolpen",
+      "spotCount": 4,
+      "lat": 51.049447750000006,
+      "lng": 14.082698150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/496295655), ODbL"
+    },
+    {
+      "id": "stolpen-e32fd54d01",
+      "city": "stolpen",
+      "label": "Neustädter Straße",
+      "street": "Neustädter Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stolpen",
+      "spotCount": 3,
+      "lat": 51.04999595,
+      "lng": 14.079638300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/562016145), ODbL"
+    },
+    {
+      "id": "stolpen-1948aae80d",
+      "city": "stolpen",
+      "label": "Schützenhausstraße",
+      "street": "Schützenhausstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stolpen",
+      "spotCount": 4,
+      "lat": 51.0505278,
+      "lng": 14.08894085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/61584853), ODbL"
+    },
+    {
+      "id": "stolpen-1ea01e20f7",
+      "city": "stolpen",
+      "label": "Unterm Schloß",
+      "street": "Unterm Schloß",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stolpen",
+      "spotCount": 1,
+      "lat": 51.048262,
+      "lng": 14.0827082,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12416024408), ODbL"
+    }
+  ]
+}

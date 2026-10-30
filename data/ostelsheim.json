@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "ostelsheim",
+    "name": "Ostelsheim",
+    "center": {
+      "lat": 48.7271396,
+      "lng": 8.85508535
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ostelsheim-1030ff3231",
+      "city": "ostelsheim",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ostelsheim",
+      "spotCount": 3,
+      "lat": 48.72845770000001,
+      "lng": 8.85508535,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1432645347), ODbL"
+    },
+    {
+      "id": "ostelsheim-199497f5dd",
+      "city": "ostelsheim",
+      "label": "Jahnstraße",
+      "street": "Jahnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ostelsheim",
+      "spotCount": 1,
+      "lat": 48.72691665000001,
+      "lng": 8.847823900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/407460806), ODbL"
+    },
+    {
+      "id": "ostelsheim-020ad562c5",
+      "city": "ostelsheim",
+      "label": "Stuttgarter Straße",
+      "street": "Stuttgarter Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ostelsheim",
+      "spotCount": 2,
+      "lat": 48.7271396,
+      "lng": 8.855762350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1328866157), ODbL"
+    },
+    {
+      "id": "ostelsheim-cc0099eee9",
+      "city": "ostelsheim",
+      "label": "Talstraße 30",
+      "street": "Talstraße",
+      "houseNumber": "30",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ostelsheim",
+      "spotCount": 1,
+      "lat": 48.72446955,
+      "lng": 8.854428,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/54049433), ODbL"
+    }
+  ]
+}

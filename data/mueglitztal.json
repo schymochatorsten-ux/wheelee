@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "mueglitztal",
+    "name": "Müglitztal",
+    "center": {
+      "lat": 50.932401500000005,
+      "lng": 13.86175175
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mueglitztal-5c169d5c9c",
+      "city": "mueglitztal",
+      "label": "Altenberger Straße",
+      "street": "Altenberger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Müglitztal",
+      "spotCount": 1,
+      "lat": 50.932401500000005,
+      "lng": 13.86175175,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/183009768), ODbL"
+    },
+    {
+      "id": "mueglitztal-db3654abd6",
+      "city": "mueglitztal",
+      "label": "Siegfried Schwede Weg",
+      "street": "Siegfried Schwede Weg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Müglitztal",
+      "spotCount": 1,
+      "lat": 50.9304405,
+      "lng": 13.796720500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1275946637), ODbL"
+    }
+  ]
+}

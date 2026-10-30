@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "adorf-vogtl",
+    "name": "Adorf/Vogtl.",
+    "center": {
+      "lat": 50.323803,
+      "lng": 12.26147815
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "adorf-vogtl-aab2dd10a9",
+      "city": "adorf-vogtl",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Adorf/Vogtl.",
+      "spotCount": 1,
+      "lat": 50.323803,
+      "lng": 12.26147815,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1131762786), ODbL"
+    }
+  ]
+}

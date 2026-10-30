@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "eschelbronn",
+    "name": "Eschelbronn",
+    "center": {
+      "lat": 49.3198905,
+      "lng": 8.8686273
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eschelbronn-245fc755a3",
+      "city": "eschelbronn",
+      "label": "Lerchenweg",
+      "street": "Lerchenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eschelbronn",
+      "spotCount": 1,
+      "lat": 49.3167835,
+      "lng": 8.8686273,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/7623138661), ODbL"
+    },
+    {
+      "id": "eschelbronn-cfd7d4653b",
+      "city": "eschelbronn",
+      "label": "Oberstraße 1",
+      "street": "Oberstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eschelbronn",
+      "spotCount": 1,
+      "lat": 49.3198905,
+      "lng": 8.8670401,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6414989581), ODbL"
+    }
+  ]
+}

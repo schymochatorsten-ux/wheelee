@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "furth",
+    "name": "Furth im Wald",
+    "center": {
+      "lat": 49.30488845000001,
+      "lng": 12.8483438
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "furth-92f31ed128",
+      "city": "furth",
+      "label": "Eichertweg",
+      "street": "Eichertweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Furth im Wald",
+      "spotCount": 1,
+      "lat": 49.3156781,
+      "lng": 12.823350650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/118163984), ODbL"
+    },
+    {
+      "id": "furth-e2d3ac3966",
+      "city": "furth",
+      "label": "Eschlkamer Straße",
+      "street": "Eschlkamer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Furth im Wald",
+      "spotCount": 2,
+      "lat": 49.3048606,
+      "lng": 12.85090065,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/178639465), ODbL"
+    },
+    {
+      "id": "furth-ce0f97d799",
+      "city": "furth",
+      "label": "Eschlkamer Straße",
+      "street": "Eschlkamer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Furth im Wald",
+      "spotCount": 3,
+      "lat": 49.30488845000001,
+      "lng": 12.8483438,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1572139132), ODbL"
+    },
+    {
+      "id": "furth-d25a959800",
+      "city": "furth",
+      "label": "Eschlkamer Straße 10a",
+      "street": "Eschlkamer Straße",
+      "houseNumber": "10a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Furth im Wald",
+      "spotCount": 3,
+      "lat": 49.3047247,
+      "lng": 12.848202700000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14322562075), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "colmberg",
+    "name": "Colmberg",
+    "center": {
+      "lat": 49.36046535,
+      "lng": 10.408070850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "colmberg-d7948eee0b",
+      "city": "colmberg",
+      "label": "Burgstraße",
+      "street": "Burgstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Colmberg",
+      "spotCount": 1,
+      "lat": 49.36046535,
+      "lng": 10.408070850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/612179253), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hofstetten",
+    "name": "Hofstetten",
+    "center": {
+      "lat": 48.0070616,
+      "lng": 10.967228200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hofstetten-8c4f9f3ded",
+      "city": "hofstetten",
+      "label": "Pfarrer-Jaumann-Straße",
+      "street": "Pfarrer-Jaumann-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hofstetten",
+      "spotCount": 1,
+      "lat": 48.0070616,
+      "lng": 10.967228200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1147336288), ODbL"
+    }
+  ]
+}

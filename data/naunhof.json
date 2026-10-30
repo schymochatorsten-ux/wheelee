@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "naunhof",
+    "name": "Naunhof",
+    "center": {
+      "lat": 51.2745638,
+      "lng": 12.5876488
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "naunhof-f40b510ab2",
+      "city": "naunhof",
+      "label": "Wiesenstraße",
+      "street": "Wiesenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Naunhof",
+      "spotCount": 2,
+      "lat": 51.273146950000005,
+      "lng": 12.5876488,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25953758), ODbL"
+    },
+    {
+      "id": "naunhof-be5f900a42",
+      "city": "naunhof",
+      "label": "Wiesenstraße 36",
+      "street": "Wiesenstraße",
+      "houseNumber": "36",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Naunhof",
+      "spotCount": 1,
+      "lat": 51.2745638,
+      "lng": 12.5869283,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1346194124), ODbL"
+    }
+  ]
+}

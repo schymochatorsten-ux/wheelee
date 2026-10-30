@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wolkenstein",
+    "name": "Wolkenstein",
+    "center": {
+      "lat": 50.66296175,
+      "lng": 13.08128995
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wolkenstein-5f5ff250ac",
+      "city": "wolkenstein",
+      "label": "Hüttenmühlenstraße",
+      "street": "Hüttenmühlenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wolkenstein",
+      "spotCount": 6,
+      "lat": 50.66296175,
+      "lng": 13.08128995,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/398054531), ODbL"
+    }
+  ]
+}

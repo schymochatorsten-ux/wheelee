@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hoersel",
+    "name": "Hörsel",
+    "center": {
+      "lat": 50.912864750000004,
+      "lng": 10.58710785
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hoersel-d89dae61f7",
+      "city": "hoersel",
+      "label": "Raststätte Hörselgau",
+      "street": "Raststätte Hörselgau",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hörsel",
+      "spotCount": 3,
+      "lat": 50.912864750000004,
+      "lng": 10.586846900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/607259941), ODbL"
+    },
+    {
+      "id": "hoersel-4e9e76e9aa",
+      "city": "hoersel",
+      "label": "Raststätte Hörselgau",
+      "street": "Raststätte Hörselgau",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hörsel",
+      "spotCount": 3,
+      "lat": 50.91271125,
+      "lng": 10.58710785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/607259942), ODbL"
+    }
+  ]
+}

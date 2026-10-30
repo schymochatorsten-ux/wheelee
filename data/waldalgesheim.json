@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "waldalgesheim",
+    "name": "Waldalgesheim",
+    "center": {
+      "lat": 49.95161705,
+      "lng": 7.82888625
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "waldalgesheim-83330b3be5",
+      "city": "waldalgesheim",
+      "label": "Waldstraße",
+      "street": "Waldstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldalgesheim",
+      "spotCount": 1,
+      "lat": 49.95161705,
+      "lng": 7.82888625,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1491022481), ODbL"
+    }
+  ]
+}

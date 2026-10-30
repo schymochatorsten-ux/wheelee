@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "zapfendorf",
+    "name": "Zapfendorf",
+    "center": {
+      "lat": 50.018125850000004,
+      "lng": 10.930109250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zapfendorf-176ad2e21f",
+      "city": "zapfendorf",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zapfendorf",
+      "spotCount": 1,
+      "lat": 50.018125850000004,
+      "lng": 10.930109250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1010697656), ODbL"
+    }
+  ]
+}

@@ -22,6 +22,8 @@ test("Stadt vorab laden, Größe und Alter sehen, wieder löschen", async ({ pag
   await page.getByRole("tab", { name: "Einstellungen" }).click();
   await expect(page.getByText("Noch keine Stadt auf diesem Gerät gespeichert.")).toBeVisible();
 
+  // Die Auswahl zeigt nicht alle Städte auf einmal (2e.14): erst eingrenzen.
+  await page.getByRole("searchbox", { name: "Stadt suchen" }).fill("Köln");
   await page.getByTestId("offline-city").selectOption("koeln");
   await page.getByRole("button", { name: "Vorab laden" }).click();
 
@@ -49,6 +51,8 @@ test("ohne Netz kommen auch ungesehene Ausschnitte aus den geladenen Daten", asy
   test.skip(!active, "Kein Service Worker aktiv – vermutlich Entwicklungsbetrieb.");
 
   await openOfflineSection(page);
+  // Die Auswahl zeigt nicht alle Städte auf einmal (2e.14): erst eingrenzen.
+  await page.getByRole("searchbox", { name: "Stadt suchen" }).fill("Köln");
   await page.getByTestId("offline-city").selectOption("koeln");
   await page.getByRole("button", { name: "Vorab laden" }).click();
   await expect(page.getByTestId("offline-koeln")).toBeVisible();

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "roebel-mueritz",
+    "name": "Röbel/Müritz",
+    "center": {
+      "lat": 53.37425675,
+      "lng": 12.61020365
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "roebel-mueritz-fc450f44a8",
+      "city": "roebel-mueritz",
+      "label": "Bahnhofstraße 6",
+      "street": "Bahnhofstraße",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Röbel/Müritz",
+      "spotCount": 4,
+      "lat": 53.37425675,
+      "lng": 12.59083045,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/384609417), ODbL"
+    },
+    {
+      "id": "roebel-mueritz-9d6b9a0802",
+      "city": "roebel-mueritz",
+      "label": "Ringstraße",
+      "street": "Ringstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Röbel/Müritz",
+      "spotCount": 1,
+      "lat": 53.372421200000005,
+      "lng": 12.61020365,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/175150660), ODbL"
+    }
+  ]
+}

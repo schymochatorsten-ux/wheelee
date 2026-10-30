@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "grabfeld",
+    "name": "Grabfeld",
+    "center": {
+      "lat": 50.47164705,
+      "lng": 10.4541537
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grabfeld-374a1301c9",
+      "city": "grabfeld",
+      "label": "Thüringer Tor",
+      "street": "Thüringer Tor",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Grabfeld",
+      "spotCount": 1,
+      "lat": 50.47164705,
+      "lng": 10.4541668,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/755869716), ODbL"
+    },
+    {
+      "id": "grabfeld-ed359ae41f",
+      "city": "grabfeld",
+      "label": "Thüringer Tor",
+      "street": "Thüringer Tor",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Grabfeld",
+      "spotCount": 1,
+      "lat": 50.4716882,
+      "lng": 10.4541537,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/755869717), ODbL"
+    },
+    {
+      "id": "grabfeld-04e3915e0f",
+      "city": "grabfeld",
+      "label": "Thüringer Tor",
+      "street": "Thüringer Tor",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Grabfeld",
+      "spotCount": 1,
+      "lat": 50.469506100000004,
+      "lng": 10.4524123,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/755871689), ODbL"
+    },
+    {
+      "id": "grabfeld-ea39b5e99d",
+      "city": "grabfeld",
+      "label": "Thüringer Tor",
+      "street": "Thüringer Tor",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Grabfeld",
+      "spotCount": 1,
+      "lat": 50.4695424,
+      "lng": 10.452406750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/755871690), ODbL"
+    }
+  ]
+}

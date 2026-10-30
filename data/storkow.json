@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "storkow",
+    "name": "Storkow (Mark)",
+    "center": {
+      "lat": 52.25102805,
+      "lng": 13.92952425
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "storkow-4ed6bb96b1",
+      "city": "storkow",
+      "label": "Behindertenparkplatz Storkow (Mark)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Storkow (Mark)",
+      "spotCount": 2,
+      "lat": 52.2683442,
+      "lng": 13.9585203,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12193040896), ODbL"
+    },
+    {
+      "id": "storkow-e9a26f1c36",
+      "city": "storkow",
+      "label": "Goethestraße",
+      "street": "Goethestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Storkow (Mark)",
+      "spotCount": 1,
+      "lat": 52.250470500000006,
+      "lng": 13.92952425,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/307101810), ODbL"
+    },
+    {
+      "id": "storkow-04305afbcd",
+      "city": "storkow",
+      "label": "Groß Schauener Straße",
+      "street": "Groß Schauener Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Storkow (Mark)",
+      "spotCount": 1,
+      "lat": 52.236765600000005,
+      "lng": 13.8860354,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14078711393), ODbL"
+    },
+    {
+      "id": "storkow-045473ca86",
+      "city": "storkow",
+      "label": "Schillerstraße",
+      "street": "Schillerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Storkow (Mark)",
+      "spotCount": 1,
+      "lat": 52.25102805,
+      "lng": 13.928082550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/548121435), ODbL"
+    },
+    {
+      "id": "storkow-86dc10c34b",
+      "city": "storkow",
+      "label": "Wolfswinkel",
+      "street": "Wolfswinkel",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Storkow (Mark)",
+      "spotCount": 2,
+      "lat": 52.25965135,
+      "lng": 13.961479800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/438774505), ODbL"
+    }
+  ]
+}

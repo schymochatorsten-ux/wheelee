@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hankensbuettel",
+    "name": "Hankensbüttel",
+    "center": {
+      "lat": 52.7314834,
+      "lng": 10.62046195
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hankensbuettel-855f2d95fc",
+      "city": "hankensbuettel",
+      "label": "Karl-Söhle-Weg",
+      "street": "Karl-Söhle-Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hankensbüttel",
+      "spotCount": 2,
+      "lat": 52.7314834,
+      "lng": 10.60296815,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/663179927), ODbL"
+    },
+    {
+      "id": "hankensbuettel-b5b9d415c9",
+      "city": "hankensbuettel",
+      "label": "Klosterstraße 3",
+      "street": "Klosterstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hankensbüttel",
+      "spotCount": 1,
+      "lat": 52.72616000000001,
+      "lng": 10.62046195,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/671991006), ODbL"
+    }
+  ]
+}

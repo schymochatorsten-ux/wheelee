@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "rimsting",
+    "name": "Rimsting",
+    "center": {
+      "lat": 47.877726450000004,
+      "lng": 12.337253
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rimsting-60ef79ab32",
+      "city": "rimsting",
+      "label": "Priener Straße",
+      "street": "Priener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rimsting",
+      "spotCount": 1,
+      "lat": 47.877726450000004,
+      "lng": 12.337253,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/779063098), ODbL"
+    }
+  ]
+}

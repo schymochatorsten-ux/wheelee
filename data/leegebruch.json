@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "leegebruch",
+    "name": "Leegebruch",
+    "center": {
+      "lat": 52.7255606,
+      "lng": 13.193426
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "leegebruch-c1cb5d35dc",
+      "city": "leegebruch",
+      "label": "Birkenallee 1",
+      "street": "Birkenallee",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Leegebruch",
+      "spotCount": 4,
+      "lat": 52.7255606,
+      "lng": 13.193426,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1144104956), ODbL"
+    }
+  ]
+}

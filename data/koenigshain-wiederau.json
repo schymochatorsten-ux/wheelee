@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "koenigshain-wiederau",
+    "name": "Königshain-Wiederau",
+    "center": {
+      "lat": 50.9761767,
+      "lng": 12.8393896
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "koenigshain-wiederau-ffb5c2aeee",
+      "city": "koenigshain-wiederau",
+      "label": "Gewerbegebiet",
+      "street": "Gewerbegebiet",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Königshain-Wiederau",
+      "spotCount": 1,
+      "lat": 50.976241550000005,
+      "lng": 12.8393896,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/880080216), ODbL"
+    },
+    {
+      "id": "koenigshain-wiederau-4f1d7e1033",
+      "city": "koenigshain-wiederau",
+      "label": "Gewerbegebiet 2",
+      "street": "Gewerbegebiet",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Königshain-Wiederau",
+      "spotCount": 1,
+      "lat": 50.9761767,
+      "lng": 12.8394875,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/880080217), ODbL"
+    },
+    {
+      "id": "koenigshain-wiederau-26238aa92a",
+      "city": "koenigshain-wiederau",
+      "label": "Gewerbegebiet 3",
+      "street": "Gewerbegebiet",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Königshain-Wiederau",
+      "spotCount": 1,
+      "lat": 50.97611985,
+      "lng": 12.839342850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/331973489), ODbL"
+    }
+  ]
+}

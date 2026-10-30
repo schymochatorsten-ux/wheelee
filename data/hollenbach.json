@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hollenbach",
+    "name": "Hollenbach",
+    "center": {
+      "lat": 48.4873337,
+      "lng": 11.095179100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hollenbach-37760a5707",
+      "city": "hollenbach",
+      "label": "Bachfeldstraße",
+      "street": "Bachfeldstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hollenbach",
+      "spotCount": 2,
+      "lat": 48.4873337,
+      "lng": 11.095179100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/838835650), ODbL"
+    }
+  ]
+}

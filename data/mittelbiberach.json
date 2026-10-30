@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "mittelbiberach",
+    "name": "Mittelbiberach",
+    "center": {
+      "lat": 48.08788165,
+      "lng": 9.747595
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mittelbiberach-d408c5ced5",
+      "city": "mittelbiberach",
+      "label": "Waldhofer Straße",
+      "street": "Waldhofer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Mittelbiberach",
+      "spotCount": 1,
+      "lat": 48.08788165,
+      "lng": 9.747595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1463243814), ODbL"
+    }
+  ]
+}

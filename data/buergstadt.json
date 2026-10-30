@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "buergstadt",
+    "name": "Bürgstadt",
+    "center": {
+      "lat": 49.714106900000004,
+      "lng": 9.271268000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "buergstadt-0a1025366f",
+      "city": "buergstadt",
+      "label": "Schwimmbad",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Bürgstadt",
+      "spotCount": 2,
+      "lat": 49.707153600000005,
+      "lng": 9.2600087,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/85577852), ODbL"
+    },
+    {
+      "id": "buergstadt-575377ad92",
+      "city": "buergstadt",
+      "label": "Streckfuß 21",
+      "street": "Streckfuß",
+      "houseNumber": "21",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bürgstadt",
+      "spotCount": 1,
+      "lat": 49.714106900000004,
+      "lng": 9.271268000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/7097998175), ODbL"
+    }
+  ]
+}

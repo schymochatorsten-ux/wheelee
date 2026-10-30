@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "nattheim",
+    "name": "Nattheim",
+    "center": {
+      "lat": 48.70331375000001,
+      "lng": 10.234551
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nattheim-1d1e1bc756",
+      "city": "nattheim",
+      "label": "Carl-Zeiss-Weg",
+      "street": "Carl-Zeiss-Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nattheim",
+      "spotCount": 1,
+      "lat": 48.70331375000001,
+      "lng": 10.234551,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/50222317), ODbL"
+    }
+  ]
+}

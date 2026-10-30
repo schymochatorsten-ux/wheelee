@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ludwigsstadt",
+    "name": "Ludwigsstadt",
+    "center": {
+      "lat": 50.48434375,
+      "lng": 11.387414800000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ludwigsstadt-2f9215a59b",
+      "city": "ludwigsstadt",
+      "label": "Rosengasse",
+      "street": "Rosengasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ludwigsstadt",
+      "spotCount": 1,
+      "lat": 50.48434375,
+      "lng": 11.387414800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/265387309), ODbL"
+    }
+  ]
+}

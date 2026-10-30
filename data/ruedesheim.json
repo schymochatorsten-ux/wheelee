@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "ruedesheim",
+    "name": "Rüdesheim am Rhein",
+    "center": {
+      "lat": 49.9813295,
+      "lng": 7.92669315
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ruedesheim-b5a79d0c86",
+      "city": "ruedesheim",
+      "label": "Kirchstraße 12",
+      "street": "Kirchstraße",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rüdesheim am Rhein",
+      "spotCount": 9,
+      "lat": 49.979623350000004,
+      "lng": 7.92669315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1518097905), ODbL"
+    },
+    {
+      "id": "ruedesheim-2b0bde3f3d",
+      "city": "ruedesheim",
+      "label": "P2-An der Ringmauer/Seilbahn",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Rüdesheim am Rhein",
+      "spotCount": 3,
+      "lat": 49.9813295,
+      "lng": 7.923599750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27804756), ODbL"
+    }
+  ]
+}

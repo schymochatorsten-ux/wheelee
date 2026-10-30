@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "koenigheim",
+    "name": "Königheim",
+    "center": {
+      "lat": 49.6200376,
+      "lng": 9.612932500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "koenigheim-8f40cb99db",
+      "city": "koenigheim",
+      "label": "Breitenflur",
+      "street": "Breitenflur",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Königheim",
+      "spotCount": 1,
+      "lat": 49.6200376,
+      "lng": 9.612932500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1076931742), ODbL"
+    }
+  ]
+}

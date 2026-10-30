@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "undenheim",
+    "name": "Undenheim",
+    "center": {
+      "lat": 49.8414178,
+      "lng": 8.239942
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "undenheim-d19107a635",
+      "city": "undenheim",
+      "label": "Staatsrat-Schwamb-Straße",
+      "street": "Staatsrat-Schwamb-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Undenheim",
+      "spotCount": 1,
+      "lat": 49.8414178,
+      "lng": 8.239925200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1434950931), ODbL"
+    },
+    {
+      "id": "undenheim-26bbaf5fd9",
+      "city": "undenheim",
+      "label": "Staatsrat-Schwamb-Straße",
+      "street": "Staatsrat-Schwamb-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Undenheim",
+      "spotCount": 1,
+      "lat": 49.8413735,
+      "lng": 8.239942,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1434950932), ODbL"
+    }
+  ]
+}

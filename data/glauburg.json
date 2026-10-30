@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "glauburg",
+    "name": "Glauburg",
+    "center": {
+      "lat": 50.3231996,
+      "lng": 9.01654135
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "glauburg-90a0c3cc63",
+      "city": "glauburg",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Glauburg",
+      "spotCount": 2,
+      "lat": 50.3231996,
+      "lng": 9.01654135,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/807104654), ODbL"
+    }
+  ]
+}

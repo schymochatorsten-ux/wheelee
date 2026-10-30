@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "wutha-farnroda",
+    "name": "Wutha-Farnroda",
+    "center": {
+      "lat": 50.9561743,
+      "lng": 10.390829700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wutha-farnroda-a03f7e5ef9",
+      "city": "wutha-farnroda",
+      "label": "Am Grasrain",
+      "street": "Am Grasrain",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wutha-Farnroda",
+      "spotCount": 1,
+      "lat": 50.94007980000001,
+      "lng": 10.3426805,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/49615831), ODbL"
+    },
+    {
+      "id": "wutha-farnroda-05d014d3b1",
+      "city": "wutha-farnroda",
+      "label": "Mosbacher Straße",
+      "street": "Mosbacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wutha-Farnroda",
+      "spotCount": 2,
+      "lat": 50.9561743,
+      "lng": 10.3905274,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/786158171), ODbL"
+    },
+    {
+      "id": "wutha-farnroda-b9fb6d0aa6",
+      "city": "wutha-farnroda",
+      "label": "Röberstraße",
+      "street": "Röberstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wutha-Farnroda",
+      "spotCount": 2,
+      "lat": 50.95630800000001,
+      "lng": 10.3908007,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/786158166), ODbL"
+    },
+    {
+      "id": "wutha-farnroda-e7980c7923",
+      "city": "wutha-farnroda",
+      "label": "Röberstraße",
+      "street": "Röberstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wutha-Farnroda",
+      "spotCount": 2,
+      "lat": 50.956151150000004,
+      "lng": 10.390876350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/786158167), ODbL"
+    },
+    {
+      "id": "wutha-farnroda-1bd2652888",
+      "city": "wutha-farnroda",
+      "label": "Röberstraße",
+      "street": "Röberstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wutha-Farnroda",
+      "spotCount": 2,
+      "lat": 50.9560522,
+      "lng": 10.390829700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/786158168), ODbL"
+    },
+    {
+      "id": "wutha-farnroda-78565be630",
+      "city": "wutha-farnroda",
+      "label": "Röberstraße",
+      "street": "Röberstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wutha-Farnroda",
+      "spotCount": 2,
+      "lat": 50.95621435,
+      "lng": 10.39084895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/786158169), ODbL"
+    }
+  ]
+}

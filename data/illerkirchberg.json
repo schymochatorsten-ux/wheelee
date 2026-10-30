@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "illerkirchberg",
+    "name": "Illerkirchberg",
+    "center": {
+      "lat": 48.339040000000004,
+      "lng": 10.00797
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "illerkirchberg-cfc6610864",
+      "city": "illerkirchberg",
+      "label": "Kirchweg 2",
+      "street": "Kirchweg",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Illerkirchberg",
+      "spotCount": 1,
+      "lat": 48.339040000000004,
+      "lng": 10.007276300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8476121826), ODbL"
+    },
+    {
+      "id": "illerkirchberg-0fe6e106ad",
+      "city": "illerkirchberg",
+      "label": "Kirchweg 3",
+      "street": "Kirchweg",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Illerkirchberg",
+      "spotCount": 1,
+      "lat": 48.338914800000005,
+      "lng": 10.00797,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8487038594), ODbL"
+    }
+  ]
+}

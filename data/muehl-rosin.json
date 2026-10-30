@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "muehl-rosin",
+    "name": "Mühl Rosin",
+    "center": {
+      "lat": 53.7518092,
+      "lng": 12.1761037
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "muehl-rosin-4330e0e152",
+      "city": "muehl-rosin",
+      "label": "Zum Gutshof",
+      "street": "Zum Gutshof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mühl Rosin",
+      "spotCount": 1,
+      "lat": 53.7518092,
+      "lng": 12.1761037,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/376083619), ODbL"
+    }
+  ]
+}

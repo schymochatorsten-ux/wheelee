@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "schulzendorf",
+    "name": "Schulzendorf",
+    "center": {
+      "lat": 52.359362700000005,
+      "lng": 13.592513700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schulzendorf-1b23487258",
+      "city": "schulzendorf",
+      "label": "August-Bebel-Straße 70",
+      "street": "August-Bebel-Straße",
+      "houseNumber": "70",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schulzendorf",
+      "spotCount": 1,
+      "lat": 52.367697650000004,
+      "lng": 13.593883850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1021641202), ODbL"
+    },
+    {
+      "id": "schulzendorf-aeafd86c4e",
+      "city": "schulzendorf",
+      "label": "Dorfstraße",
+      "street": "Dorfstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schulzendorf",
+      "spotCount": 1,
+      "lat": 52.359362700000005,
+      "lng": 13.57248735,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1034974411), ODbL"
+    },
+    {
+      "id": "schulzendorf-5c6a7ab82c",
+      "city": "schulzendorf",
+      "label": "Ernst-Thälmann-Straße",
+      "street": "Ernst-Thälmann-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schulzendorf",
+      "spotCount": 1,
+      "lat": 52.36406525000001,
+      "lng": 13.59374995,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/52910524), ODbL"
+    },
+    {
+      "id": "schulzendorf-3d09f8b626",
+      "city": "schulzendorf",
+      "label": "Miersdorfer Straße",
+      "street": "Miersdorfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schulzendorf",
+      "spotCount": 1,
+      "lat": 52.3541659,
+      "lng": 13.5772431,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/279393529), ODbL"
+    },
+    {
+      "id": "schulzendorf-fa7350d3cb",
+      "city": "schulzendorf",
+      "label": "Walther-Rathenau-Straße",
+      "street": "Walther-Rathenau-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schulzendorf",
+      "spotCount": 1,
+      "lat": 52.35873225,
+      "lng": 13.592513700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1021823112), ODbL"
+    }
+  ]
+}

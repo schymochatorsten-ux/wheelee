@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "doetlingen",
+    "name": "Dötlingen",
+    "center": {
+      "lat": 52.9735516,
+      "lng": 8.397739600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "doetlingen-cd3aba296e",
+      "city": "doetlingen",
+      "label": "Dorfring 8",
+      "street": "Dorfring",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dötlingen",
+      "spotCount": 1,
+      "lat": 52.935409850000006,
+      "lng": 8.379442449999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1076235894), ODbL"
+    },
+    {
+      "id": "doetlingen-ee9abb9a12",
+      "city": "doetlingen",
+      "label": "Geveshauser Weg",
+      "street": "Geveshauser Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dötlingen",
+      "spotCount": 1,
+      "lat": 52.9735516,
+      "lng": 8.397739600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13204273106), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "landesbergen",
+    "name": "Landesbergen",
+    "center": {
+      "lat": 52.551207000000005,
+      "lng": 9.2169735
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "landesbergen-d9927268d8",
+      "city": "landesbergen",
+      "label": "Brokeloher Hauptstraße",
+      "street": "Brokeloher Hauptstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Landesbergen",
+      "spotCount": 1,
+      "lat": 52.551207000000005,
+      "lng": 9.2169735,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/7773363658), ODbL"
+    }
+  ]
+}

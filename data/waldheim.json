@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "waldheim",
+    "name": "Waldheim",
+    "center": {
+      "lat": 51.0756442,
+      "lng": 13.00828995
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "waldheim-b397f4bb5f",
+      "city": "waldheim",
+      "label": "Bahnhofparkplatz",
+      "street": "Bahnhofparkplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldheim",
+      "spotCount": 1,
+      "lat": 51.0747085,
+      "lng": 13.0137365,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1819149716), ODbL"
+    },
+    {
+      "id": "waldheim-16e5b00cec",
+      "city": "waldheim",
+      "label": "Waldheim, Hauptstraße",
+      "street": "Waldheim, Hauptstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Waldheim",
+      "spotCount": 1,
+      "lat": 51.0756442,
+      "lng": 13.00828995,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1259642317), ODbL"
+    },
+    {
+      "id": "waldheim-1378571922",
+      "city": "waldheim",
+      "label": "Waldheim, Hauptstraße",
+      "street": "Waldheim, Hauptstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Waldheim",
+      "spotCount": 1,
+      "lat": 51.07565635,
+      "lng": 13.00824405,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1259642318), ODbL"
+    }
+  ]
+}

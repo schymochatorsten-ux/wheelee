@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "modautal",
+    "name": "Modautal",
+    "center": {
+      "lat": 49.76938285,
+      "lng": 8.774099150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "modautal-a3f1b0e6a7",
+      "city": "modautal",
+      "label": "Darmstädter Straße",
+      "street": "Darmstädter Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Modautal",
+      "spotCount": 1,
+      "lat": 49.7695744,
+      "lng": 8.737074150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1339878633), ODbL"
+    },
+    {
+      "id": "modautal-26b3811f78",
+      "city": "modautal",
+      "label": "Darmstädter Straße",
+      "street": "Darmstädter Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Modautal",
+      "spotCount": 1,
+      "lat": 49.76938285,
+      "lng": 8.7373238,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1339878634), ODbL"
+    },
+    {
+      "id": "modautal-3c04d5cef0",
+      "city": "modautal",
+      "label": "Neunkirchen",
+      "street": "Neunkirchen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Modautal",
+      "spotCount": 1,
+      "lat": 49.73264725,
+      "lng": 8.774099150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1323202392), ODbL"
+    },
+    {
+      "id": "modautal-9242676b20",
+      "city": "modautal",
+      "label": "Neunkirchen",
+      "street": "Neunkirchen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Modautal",
+      "spotCount": 1,
+      "lat": 49.73263895000001,
+      "lng": 8.77417225,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1323202406), ODbL"
+    }
+  ]
+}

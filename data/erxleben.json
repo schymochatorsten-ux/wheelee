@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "erxleben",
+    "name": "Erxleben",
+    "center": {
+      "lat": 52.1982487,
+      "lng": 11.24615935
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "erxleben-57dcc11836",
+      "city": "erxleben",
+      "label": "Lorkberg Süd",
+      "street": "Lorkberg Süd",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Erxleben",
+      "spotCount": 2,
+      "lat": 52.19847875000001,
+      "lng": 11.246218250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/42750037), ODbL"
+    },
+    {
+      "id": "erxleben-ab3ba23202",
+      "city": "erxleben",
+      "label": "Lorkberg Süd",
+      "street": "Lorkberg Süd",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Erxleben",
+      "spotCount": 1,
+      "lat": 52.198239150000006,
+      "lng": 11.24615935,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1060877305), ODbL"
+    },
+    {
+      "id": "erxleben-8b56368282",
+      "city": "erxleben",
+      "label": "Lorkberg Süd",
+      "street": "Lorkberg Süd",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Erxleben",
+      "spotCount": 1,
+      "lat": 52.1982487,
+      "lng": 11.2460868,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1060877306), ODbL"
+    }
+  ]
+}

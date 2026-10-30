@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "uttenreuth",
+    "name": "Uttenreuth",
+    "center": {
+      "lat": 49.59803875,
+      "lng": 11.06506075
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "uttenreuth-3c29f17df1",
+      "city": "uttenreuth",
+      "label": "Danziger Straße 15",
+      "street": "Danziger Straße",
+      "houseNumber": "15",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Uttenreuth",
+      "spotCount": 1,
+      "lat": 49.59803875,
+      "lng": 11.06506075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/893939236), ODbL"
+    }
+  ]
+}

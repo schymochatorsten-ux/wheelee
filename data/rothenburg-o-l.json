@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "rothenburg-o-l",
+    "name": "Rothenburg/O.L.",
+    "center": {
+      "lat": 51.32889045,
+      "lng": 14.96682045
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rothenburg-o-l-272bb5ec04",
+      "city": "rothenburg-o-l",
+      "label": "Martin-Ulbrich-Straße",
+      "street": "Martin-Ulbrich-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rothenburg/O.L.",
+      "spotCount": 5,
+      "lat": 51.32889045,
+      "lng": 14.9662492,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1383523156), ODbL"
+    },
+    {
+      "id": "rothenburg-o-l-337332c431",
+      "city": "rothenburg-o-l",
+      "label": "Martin-Ulbrich-Straße",
+      "street": "Martin-Ulbrich-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rothenburg/O.L.",
+      "spotCount": 5,
+      "lat": 51.328886250000004,
+      "lng": 14.96682045,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1384013095), ODbL"
+    },
+    {
+      "id": "rothenburg-o-l-abd3f6aab1",
+      "city": "rothenburg-o-l",
+      "label": "Schlossplatz",
+      "street": "Schlossplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rothenburg/O.L.",
+      "spotCount": 2,
+      "lat": 51.335659400000004,
+      "lng": 14.970844800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/179719393), ODbL"
+    },
+    {
+      "id": "rothenburg-o-l-9dfc4f47b9",
+      "city": "rothenburg-o-l",
+      "label": "Südstraße",
+      "street": "Südstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rothenburg/O.L.",
+      "spotCount": 1,
+      "lat": 51.3277825,
+      "lng": 14.96400565,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1383278600), ODbL"
+    }
+  ]
+}

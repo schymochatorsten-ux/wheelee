@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "schiltach",
+    "name": "Schiltach",
+    "center": {
+      "lat": 48.289839300000004,
+      "lng": 8.3416397
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schiltach-f278ecff20",
+      "city": "schiltach",
+      "label": "Bachstraße 3",
+      "street": "Bachstraße",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Schiltach",
+      "spotCount": 1,
+      "lat": 48.28981065000001,
+      "lng": 8.3416397,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1444866936), ODbL"
+    },
+    {
+      "id": "schiltach-53dc9f4a4e",
+      "city": "schiltach",
+      "label": "Bachstraße 3",
+      "street": "Bachstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schiltach",
+      "spotCount": 1,
+      "lat": 48.289839300000004,
+      "lng": 8.34164895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1444866937), ODbL"
+    },
+    {
+      "id": "schiltach-d102f7cace",
+      "city": "schiltach",
+      "label": "Bahnhofstraße 1",
+      "street": "Bahnhofstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schiltach",
+      "spotCount": 1,
+      "lat": 48.2909648,
+      "lng": 8.334786350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1391914485), ODbL"
+    }
+  ]
+}

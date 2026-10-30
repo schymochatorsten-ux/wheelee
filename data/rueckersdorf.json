@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "rueckersdorf",
+    "name": "Rückersdorf",
+    "center": {
+      "lat": 49.49479255,
+      "lng": 11.2406643
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rueckersdorf-7112975242",
+      "city": "rueckersdorf",
+      "label": "Entenseestraße",
+      "street": "Entenseestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rückersdorf",
+      "spotCount": 8,
+      "lat": 49.49479255,
+      "lng": 11.22695535,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/932866999), ODbL"
+    },
+    {
+      "id": "rueckersdorf-d084043afd",
+      "city": "rueckersdorf",
+      "label": "Hauptstraße 27",
+      "street": "Hauptstraße",
+      "houseNumber": "27",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rückersdorf",
+      "spotCount": 1,
+      "lat": 49.4930631,
+      "lng": 11.2406643,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2364470885), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "unterbreizbach",
+    "name": "Unterbreizbach",
+    "center": {
+      "lat": 50.78807705,
+      "lng": 10.000774150000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "unterbreizbach-f857385122",
+      "city": "unterbreizbach",
+      "label": "Deicherodaer Straße",
+      "street": "Deicherodaer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Unterbreizbach",
+      "spotCount": 1,
+      "lat": 50.78807705,
+      "lng": 10.000774150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1466104786), ODbL"
+    },
+    {
+      "id": "unterbreizbach-fea9dfba6d",
+      "city": "unterbreizbach",
+      "label": "Deicherodaer Straße",
+      "street": "Deicherodaer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Unterbreizbach",
+      "spotCount": 1,
+      "lat": 50.7880745,
+      "lng": 10.0008248,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1466104787), ODbL"
+    },
+    {
+      "id": "unterbreizbach-823cd79562",
+      "city": "unterbreizbach",
+      "label": "Frankfurter Straße 25",
+      "street": "Frankfurter Straße",
+      "houseNumber": "25",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Unterbreizbach",
+      "spotCount": 1,
+      "lat": 50.79527455,
+      "lng": 9.99903315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1466781573), ODbL"
+    }
+  ]
+}

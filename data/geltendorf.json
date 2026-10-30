@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "geltendorf",
+    "name": "Geltendorf",
+    "center": {
+      "lat": 48.10643375000001,
+      "lng": 11.0349203
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "geltendorf-14a83f0d4e",
+      "city": "geltendorf",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Geltendorf",
+      "spotCount": 1,
+      "lat": 48.107113850000005,
+      "lng": 11.0346123,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34393331), ODbL"
+    },
+    {
+      "id": "geltendorf-754b05774d",
+      "city": "geltendorf",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Geltendorf",
+      "spotCount": 3,
+      "lat": 48.10643375000001,
+      "lng": 11.0349203,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/71321136), ODbL"
+    },
+    {
+      "id": "geltendorf-5924de1993",
+      "city": "geltendorf",
+      "label": "Am Bahnhof 25",
+      "street": "Am Bahnhof",
+      "houseNumber": "25",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Geltendorf",
+      "spotCount": 3,
+      "lat": 48.1063382,
+      "lng": 11.03810485,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/330884654), ODbL"
+    },
+    {
+      "id": "geltendorf-9830c27234",
+      "city": "geltendorf",
+      "label": "Bahnhof Geltendorf",
+      "street": "Bahnhof Geltendorf",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Geltendorf",
+      "spotCount": 1,
+      "lat": 48.105754450000006,
+      "lng": 11.0340804,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/30812983), ODbL"
+    }
+  ]
+}

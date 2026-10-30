@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "offenberg",
+    "name": "Offenberg",
+    "center": {
+      "lat": 48.879727450000004,
+      "lng": 12.843225400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "offenberg-1c0e10b1d1",
+      "city": "offenberg",
+      "label": "Hauptstraße 25",
+      "street": "Hauptstraße",
+      "houseNumber": "25",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Offenberg",
+      "spotCount": 1,
+      "lat": 48.879727450000004,
+      "lng": 12.842936850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1188309784), ODbL"
+    },
+    {
+      "id": "offenberg-af97f2a1f6",
+      "city": "offenberg",
+      "label": "Hauptstraße 36",
+      "street": "Hauptstraße",
+      "houseNumber": "36",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Offenberg",
+      "spotCount": 1,
+      "lat": 48.88034485,
+      "lng": 12.843225400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1214514550), ODbL"
+    },
+    {
+      "id": "offenberg-9d7f97283e",
+      "city": "offenberg",
+      "label": "Rastplatz Kronawitt",
+      "street": "Rastplatz Kronawitt",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Offenberg",
+      "spotCount": 2,
+      "lat": 48.859257150000005,
+      "lng": 12.856729000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/180688586), ODbL"
+    }
+  ]
+}

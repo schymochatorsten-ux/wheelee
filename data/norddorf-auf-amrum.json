@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "norddorf-auf-amrum",
+    "name": "Norddorf auf Amrum",
+    "center": {
+      "lat": 54.6799454,
+      "lng": 8.333447900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "norddorf-auf-amrum-76d0318e38",
+      "city": "norddorf-auf-amrum",
+      "label": "Halemwai",
+      "street": "Halemwai",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Norddorf auf Amrum",
+      "spotCount": 1,
+      "lat": 54.678056600000005,
+      "lng": 8.3305254,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/5940808), ODbL"
+    },
+    {
+      "id": "norddorf-auf-amrum-9a0c444a55",
+      "city": "norddorf-auf-amrum",
+      "label": "Ual Saarepswai",
+      "street": "Ual Saarepswai",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Norddorf auf Amrum",
+      "spotCount": 1,
+      "lat": 54.6799454,
+      "lng": 8.333447900000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12805671941), ODbL"
+    }
+  ]
+}

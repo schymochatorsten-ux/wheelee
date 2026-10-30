@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "aindling",
+    "name": "Aindling",
+    "center": {
+      "lat": 48.51201575,
+      "lng": 10.9657212
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "aindling-a5b0aa5602",
+      "city": "aindling",
+      "label": "Gaulzhofener Straße",
+      "street": "Gaulzhofener Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Aindling",
+      "spotCount": 1,
+      "lat": 48.512412499999996,
+      "lng": 10.96656235,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1273797111), ODbL"
+    },
+    {
+      "id": "aindling-02c9cc1e0b",
+      "city": "aindling",
+      "label": "Gaulzhofener Straße",
+      "street": "Gaulzhofener Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Aindling",
+      "spotCount": 1,
+      "lat": 48.5124115,
+      "lng": 10.9665204,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1273797112), ODbL"
+    },
+    {
+      "id": "aindling-aa7d7e7ef8",
+      "city": "aindling",
+      "label": "Peter-Sengl-Straße 36",
+      "street": "Peter-Sengl-Straße",
+      "houseNumber": "36",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Aindling",
+      "spotCount": 1,
+      "lat": 48.5119564,
+      "lng": 10.9657212,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1216764842), ODbL"
+    },
+    {
+      "id": "aindling-9b5c5cf0fd",
+      "city": "aindling",
+      "label": "Peter-Sengl-Straße 36",
+      "street": "Peter-Sengl-Straße",
+      "houseNumber": "36",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Aindling",
+      "spotCount": 1,
+      "lat": 48.51201575,
+      "lng": 10.965715750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1216764843), ODbL"
+    },
+    {
+      "id": "aindling-fbaac84606",
+      "city": "aindling",
+      "label": "Peter-Sengl-Straße 36",
+      "street": "Peter-Sengl-Straße",
+      "houseNumber": "36",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Aindling",
+      "spotCount": 1,
+      "lat": 48.5119861,
+      "lng": 10.965718500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1216764844), ODbL"
+    }
+  ]
+}

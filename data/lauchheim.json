@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "lauchheim",
+    "name": "Lauchheim",
+    "center": {
+      "lat": 48.86924835000001,
+      "lng": 10.236389650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lauchheim-df85f1d324",
+      "city": "lauchheim",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Lauchheim",
+      "spotCount": 3,
+      "lat": 48.869108000000004,
+      "lng": 10.2362668,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/307495031), ODbL"
+    },
+    {
+      "id": "lauchheim-fde2321ce9",
+      "city": "lauchheim",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lauchheim",
+      "spotCount": 1,
+      "lat": 48.86924835000001,
+      "lng": 10.236389650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1387642270), ODbL"
+    }
+  ]
+}

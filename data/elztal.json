@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "elztal",
+    "name": "Elztal",
+    "center": {
+      "lat": 49.38771335,
+      "lng": 9.1877134
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "elztal-53d2a3b5d0",
+      "city": "elztal",
+      "label": "Rechter Weiler 56",
+      "street": "Rechter Weiler",
+      "houseNumber": "56",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elztal",
+      "spotCount": 1,
+      "lat": 49.38771335,
+      "lng": 9.1877134,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1427475961), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "woerth-a-main",
+    "name": "Wörth a.Main",
+    "center": {
+      "lat": 49.79825625000001,
+      "lng": 9.159306050000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "woerth-a-main-4a42a58d94",
+      "city": "woerth-a-main",
+      "label": "Altstadt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wörth a.Main",
+      "spotCount": 2,
+      "lat": 49.79825625000001,
+      "lng": 9.155860350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/217685388), ODbL"
+    },
+    {
+      "id": "woerth-a-main-6e4a0feb61",
+      "city": "woerth-a-main",
+      "label": "Landstraße",
+      "street": "Landstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wörth a.Main",
+      "spotCount": 2,
+      "lat": 49.79984125,
+      "lng": 9.15004335,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/610507115), ODbL"
+    },
+    {
+      "id": "woerth-a-main-3bc2b83fdc",
+      "city": "woerth-a-main",
+      "label": "Oberes Tor",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wörth a.Main",
+      "spotCount": 1,
+      "lat": 49.79610945,
+      "lng": 9.160106500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/775805214), ODbL"
+    },
+    {
+      "id": "woerth-a-main-c019e3c09a",
+      "city": "woerth-a-main",
+      "label": "Rathausstraße 76",
+      "street": "Rathausstraße",
+      "houseNumber": "76",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wörth a.Main",
+      "spotCount": 1,
+      "lat": 49.79693055,
+      "lng": 9.159306050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/775805212), ODbL"
+    }
+  ]
+}

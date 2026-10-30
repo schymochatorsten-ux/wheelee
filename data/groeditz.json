@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "groeditz",
+    "name": "Gröditz",
+    "center": {
+      "lat": 51.41129085,
+      "lng": 13.439805800000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "groeditz-791937ccc1",
+      "city": "groeditz",
+      "label": "Poststraße",
+      "street": "Poststraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gröditz",
+      "spotCount": 1,
+      "lat": 51.41129085,
+      "lng": 13.439805800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/318221478), ODbL"
+    }
+  ]
+}

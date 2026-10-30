@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "molfsee",
+    "name": "Molfsee",
+    "center": {
+      "lat": 54.27510185,
+      "lng": 10.076246150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "molfsee-93423b3932",
+      "city": "molfsee",
+      "label": "Freilichtmuseum Molfsee",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Molfsee",
+      "spotCount": 1,
+      "lat": 54.27510185,
+      "lng": 10.076246150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/77194273), ODbL"
+    }
+  ]
+}

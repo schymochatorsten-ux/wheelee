@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "hoya",
+    "name": "Hoya",
+    "center": {
+      "lat": 52.80651865,
+      "lng": 9.14696505
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hoya-c5afad8615",
+      "city": "hoya",
+      "label": "Maschsiedlung",
+      "street": "Maschsiedlung",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hoya",
+      "spotCount": 2,
+      "lat": 52.80835975000001,
+      "lng": 9.1511536,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1223070518), ODbL"
+    },
+    {
+      "id": "hoya-6f6926cba6",
+      "city": "hoya",
+      "label": "Schloßplatz 2",
+      "street": "Schloßplatz",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hoya",
+      "spotCount": 1,
+      "lat": 52.80651865,
+      "lng": 9.14670455,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/225021690), ODbL"
+    },
+    {
+      "id": "hoya-ebe7f52fba",
+      "city": "hoya",
+      "label": "Schloßstraße",
+      "street": "Schloßstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hoya",
+      "spotCount": 2,
+      "lat": 52.8060011,
+      "lng": 9.14696505,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1445472791), ODbL"
+    },
+    {
+      "id": "hoya-8588817b6e",
+      "city": "hoya",
+      "label": "Thies und Co GmbH",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hoya",
+      "spotCount": 1,
+      "lat": 52.80139785,
+      "lng": 9.133326700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/892488410), ODbL"
+    }
+  ]
+}

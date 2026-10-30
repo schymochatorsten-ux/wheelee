@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "gimbsheim",
+    "name": "Gimbsheim",
+    "center": {
+      "lat": 49.769945750000005,
+      "lng": 8.3509808
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gimbsheim-19b33250d7",
+      "city": "gimbsheim",
+      "label": "Parkplatz \"Edeka\"",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gimbsheim",
+      "spotCount": 1,
+      "lat": 49.769945750000005,
+      "lng": 8.3509808,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27916615), ODbL"
+    }
+  ]
+}

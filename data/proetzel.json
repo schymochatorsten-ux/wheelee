@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "proetzel",
+    "name": "Prötzel",
+    "center": {
+      "lat": 52.629844500000004,
+      "lng": 14.0118089
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "proetzel-f31467eb4b",
+      "city": "proetzel",
+      "label": "Dorfstraße",
+      "street": "Dorfstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Prötzel",
+      "spotCount": 3,
+      "lat": 52.629844500000004,
+      "lng": 14.0118089,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12886342349), ODbL"
+    }
+  ]
+}

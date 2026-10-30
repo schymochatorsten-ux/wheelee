@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "thiersheim",
+    "name": "Thiersheim",
+    "center": {
+      "lat": 50.07568485,
+      "lng": 12.12752565
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "thiersheim-a00f9cb44e",
+      "city": "thiersheim",
+      "label": "Feuerwehrhaus",
+      "street": "Feuerwehrhaus",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Thiersheim",
+      "spotCount": 1,
+      "lat": 50.07568485,
+      "lng": 12.12752565,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1443570887), ODbL"
+    },
+    {
+      "id": "thiersheim-747fb70cad",
+      "city": "thiersheim",
+      "label": "Feuerwehrhaus",
+      "street": "Feuerwehrhaus",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Thiersheim",
+      "spotCount": 1,
+      "lat": 50.0756425,
+      "lng": 12.12737925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1443570888), ODbL"
+    }
+  ]
+}

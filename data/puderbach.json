@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "puderbach",
+    "name": "Puderbach",
+    "center": {
+      "lat": 50.598278300000004,
+      "lng": 7.61097925
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "puderbach-192d51e01d",
+      "city": "puderbach",
+      "label": "Mittelstraße 5",
+      "street": "Mittelstraße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Puderbach",
+      "spotCount": 1,
+      "lat": 50.598278300000004,
+      "lng": 7.61097925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1040493345), ODbL"
+    }
+  ]
+}

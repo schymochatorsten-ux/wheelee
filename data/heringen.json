@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "heringen",
+    "name": "Heringen (Werra)",
+    "center": {
+      "lat": 50.88273865000001,
+      "lng": 10.00932395
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "heringen-f00add03c8",
+      "city": "heringen",
+      "label": "Am Vachaer Berg 8",
+      "street": "Am Vachaer Berg",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heringen (Werra)",
+      "spotCount": 2,
+      "lat": 50.88273025000001,
+      "lng": 10.00932395,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1373206738), ODbL"
+    },
+    {
+      "id": "heringen-2c3c1ecef7",
+      "city": "heringen",
+      "label": "Am Vachaer Berg 8",
+      "street": "Am Vachaer Berg",
+      "houseNumber": "8",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Heringen (Werra)",
+      "spotCount": 1,
+      "lat": 50.88273865000001,
+      "lng": 10.00931005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1373206739), ODbL"
+    }
+  ]
+}

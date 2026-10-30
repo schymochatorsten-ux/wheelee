@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "neuensalz",
+    "name": "Neuensalz",
+    "center": {
+      "lat": 50.50703645,
+      "lng": 12.216768850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuensalz-1ef33f0cd4",
+      "city": "neuensalz",
+      "label": "Rastplatz Neuensalz",
+      "street": "Rastplatz Neuensalz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuensalz",
+      "spotCount": 2,
+      "lat": 50.507033050000004,
+      "lng": 12.216768850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/123224468), ODbL"
+    },
+    {
+      "id": "neuensalz-6f09d4a6d0",
+      "city": "neuensalz",
+      "label": "Rastplatz Neuensalz",
+      "street": "Rastplatz Neuensalz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neuensalz",
+      "spotCount": 1,
+      "lat": 50.50703645,
+      "lng": 12.21666535,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1441723990), ODbL"
+    }
+  ]
+}

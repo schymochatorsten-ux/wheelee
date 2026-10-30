@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "hilzingen",
+    "name": "Hilzingen",
+    "center": {
+      "lat": 47.763288450000005,
+      "lng": 8.77645725
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hilzingen-afca96bc25",
+      "city": "hilzingen",
+      "label": "Roseneggstraße",
+      "street": "Roseneggstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hilzingen",
+      "spotCount": 2,
+      "lat": 47.762839150000005,
+      "lng": 8.790181950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/821931313), ODbL"
+    },
+    {
+      "id": "hilzingen-d8c3bfbf2e",
+      "city": "hilzingen",
+      "label": "Sportgelände",
+      "street": "Sportgelände",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hilzingen",
+      "spotCount": 3,
+      "lat": 47.763288450000005,
+      "lng": 8.7762995,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/537527909), ODbL"
+    },
+    {
+      "id": "hilzingen-b157ad63ba",
+      "city": "hilzingen",
+      "label": "Sportgelände",
+      "street": "Sportgelände",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hilzingen",
+      "spotCount": 3,
+      "lat": 47.76372995,
+      "lng": 8.77645725,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/974415363), ODbL"
+    }
+  ]
+}

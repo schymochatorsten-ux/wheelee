@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "zaberfeld",
+    "name": "Zaberfeld",
+    "center": {
+      "lat": 49.05944000000001,
+      "lng": 8.923477900000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zaberfeld-072daa5040",
+      "city": "zaberfeld",
+      "label": "Leonbronner Straße",
+      "street": "Leonbronner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zaberfeld",
+      "spotCount": 2,
+      "lat": 49.05944000000001,
+      "lng": 8.923766950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/957629856), ODbL"
+    },
+    {
+      "id": "zaberfeld-bbf8103b4d",
+      "city": "zaberfeld",
+      "label": "Leonbronner Straße",
+      "street": "Leonbronner Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Zaberfeld",
+      "spotCount": 1,
+      "lat": 49.059460800000004,
+      "lng": 8.923477900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1310946573), ODbL"
+    },
+    {
+      "id": "zaberfeld-8e4a6a6f76",
+      "city": "zaberfeld",
+      "label": "Leonbronner Straße 36",
+      "street": "Leonbronner Straße",
+      "houseNumber": "36",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Zaberfeld",
+      "spotCount": 1,
+      "lat": 49.05945005000001,
+      "lng": 8.9234334,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1310946574), ODbL"
+    },
+    {
+      "id": "zaberfeld-6c029b605f",
+      "city": "zaberfeld",
+      "label": "Naturparkzentrum Stromberg-Heuchelberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Zaberfeld",
+      "spotCount": 2,
+      "lat": 49.05852685000001,
+      "lng": 8.9123459,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1019194207), ODbL"
+    },
+    {
+      "id": "zaberfeld-303854c9d7",
+      "city": "zaberfeld",
+      "label": "Schillerstraße 32",
+      "street": "Schillerstraße",
+      "houseNumber": "32",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zaberfeld",
+      "spotCount": 1,
+      "lat": 49.05727925,
+      "lng": 8.92390215,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/440044534), ODbL"
+    },
+    {
+      "id": "zaberfeld-a7d5093046",
+      "city": "zaberfeld",
+      "label": "Schulstraße",
+      "street": "Schulstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zaberfeld",
+      "spotCount": 1,
+      "lat": 49.072896300000004,
+      "lng": 8.9414598,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/108727491), ODbL"
+    },
+    {
+      "id": "zaberfeld-d46565aaf9",
+      "city": "zaberfeld",
+      "label": "Seestraße",
+      "street": "Seestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zaberfeld",
+      "spotCount": 2,
+      "lat": 49.05614320000001,
+      "lng": 8.9168688,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1076428830), ODbL"
+    }
+  ]
+}

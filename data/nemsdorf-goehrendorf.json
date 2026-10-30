@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "nemsdorf-goehrendorf",
+    "name": "Nemsdorf-Göhrendorf",
+    "center": {
+      "lat": 51.357865000000004,
+      "lng": 11.6611512
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nemsdorf-goehrendorf-f4ac814e58",
+      "city": "nemsdorf-goehrendorf",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nemsdorf-Göhrendorf",
+      "spotCount": 1,
+      "lat": 51.357865000000004,
+      "lng": 11.6611512,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3199897292), ODbL"
+    }
+  ]
+}

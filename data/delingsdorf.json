@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "delingsdorf",
+    "name": "Delingsdorf",
+    "center": {
+      "lat": 53.70033585,
+      "lng": 10.24769705
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "delingsdorf-0841c40dfe",
+      "city": "delingsdorf",
+      "label": "Op de Barg 2",
+      "street": "Op de Barg",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Delingsdorf",
+      "spotCount": 1,
+      "lat": 53.70033585,
+      "lng": 10.24769705,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/72448263), ODbL"
+    }
+  ]
+}

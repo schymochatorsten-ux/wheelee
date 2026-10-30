@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "niddatal",
+    "name": "Niddatal",
+    "center": {
+      "lat": 50.28869710000001,
+      "lng": 8.809138149999999
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "niddatal-e6ff397f71",
+      "city": "niddatal",
+      "label": "Am Krautgarten 18",
+      "street": "Am Krautgarten",
+      "houseNumber": "18",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Niddatal",
+      "spotCount": 1,
+      "lat": 50.27728085,
+      "lng": 8.79846535,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1328759697), ODbL"
+    },
+    {
+      "id": "niddatal-3a032ccc27",
+      "city": "niddatal",
+      "label": "Assenheimer Straße 47",
+      "street": "Assenheimer Straße",
+      "houseNumber": "47",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Niddatal",
+      "spotCount": 2,
+      "lat": 50.28869710000001,
+      "lng": 8.8424951,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/926282877), ODbL"
+    },
+    {
+      "id": "niddatal-697e81e59d",
+      "city": "niddatal",
+      "label": "Wingertstraße 22",
+      "street": "Wingertstraße",
+      "houseNumber": "22",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Niddatal",
+      "spotCount": 1,
+      "lat": 50.300800100000004,
+      "lng": 8.809138149999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1494516008), ODbL"
+    }
+  ]
+}

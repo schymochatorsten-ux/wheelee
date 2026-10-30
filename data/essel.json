@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "essel",
+    "name": "Essel",
+    "center": {
+      "lat": 52.7330034,
+      "lng": 9.6946464
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "essel-419879ac0a",
+      "city": "essel",
+      "label": "Esseler Damm 1",
+      "street": "Esseler Damm",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Essel",
+      "spotCount": 1,
+      "lat": 52.7330034,
+      "lng": 9.6946464,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12442307148), ODbL"
+    },
+    {
+      "id": "essel-70edff2688",
+      "city": "essel",
+      "label": "PKW",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Essel",
+      "spotCount": 1,
+      "lat": 52.695504850000006,
+      "lng": 9.68804375,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/201438704), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "bergkirchen",
+    "name": "Bergkirchen",
+    "center": {
+      "lat": 48.25684145,
+      "lng": 11.301036700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bergkirchen-e95e98ce41",
+      "city": "bergkirchen",
+      "label": "Fuchsberg-West",
+      "street": "Fuchsberg-West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bergkirchen",
+      "spotCount": 1,
+      "lat": 48.25684145,
+      "lng": 11.3008062,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1365740608), ODbL"
+    },
+    {
+      "id": "bergkirchen-22bb6c55a5",
+      "city": "bergkirchen",
+      "label": "Fuchsberg-West",
+      "street": "Fuchsberg-West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bergkirchen",
+      "spotCount": 1,
+      "lat": 48.256871450000006,
+      "lng": 11.30076605,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1365740609), ODbL"
+    },
+    {
+      "id": "bergkirchen-3c580db385",
+      "city": "bergkirchen",
+      "label": "Fuchsberg-West",
+      "street": "Fuchsberg-West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bergkirchen",
+      "spotCount": 1,
+      "lat": 48.2566782,
+      "lng": 11.301036700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1365740610), ODbL"
+    },
+    {
+      "id": "bergkirchen-6c1e640dcd",
+      "city": "bergkirchen",
+      "label": "Fuchsberg-West",
+      "street": "Fuchsberg-West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bergkirchen",
+      "spotCount": 1,
+      "lat": 48.2567079,
+      "lng": 11.300995400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1365740611), ODbL"
+    },
+    {
+      "id": "bergkirchen-d93f4891d9",
+      "city": "bergkirchen",
+      "label": "Johann-Michael-Fischer-Straße",
+      "street": "Johann-Michael-Fischer-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bergkirchen",
+      "spotCount": 2,
+      "lat": 48.25642255,
+      "lng": 11.362861650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1420718253), ODbL"
+    },
+    {
+      "id": "bergkirchen-4dd578f434",
+      "city": "bergkirchen",
+      "label": "Römerstraße",
+      "street": "Römerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bergkirchen",
+      "spotCount": 1,
+      "lat": 48.2584135,
+      "lng": 11.366213950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/955799407), ODbL"
+    }
+  ]
+}

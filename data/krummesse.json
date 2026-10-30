@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "krummesse",
+    "name": "Krummesse",
+    "center": {
+      "lat": 53.7818156,
+      "lng": 10.642121600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "krummesse-6159b40a82",
+      "city": "krummesse",
+      "label": "Stecknitzweg",
+      "street": "Stecknitzweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Krummesse",
+      "spotCount": 1,
+      "lat": 53.7817474,
+      "lng": 10.6415758,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8287421314), ODbL"
+    },
+    {
+      "id": "krummesse-211c2603a5",
+      "city": "krummesse",
+      "label": "Stecknitzweg",
+      "street": "Stecknitzweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Krummesse",
+      "spotCount": 1,
+      "lat": 53.7818156,
+      "lng": 10.642121600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8287421315), ODbL"
+    }
+  ]
+}

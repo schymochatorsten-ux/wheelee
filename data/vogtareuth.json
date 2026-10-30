@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "vogtareuth",
+    "name": "Vogtareuth",
+    "center": {
+      "lat": 47.942680450000005,
+      "lng": 12.1820447
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "vogtareuth-c692619fc5",
+      "city": "vogtareuth",
+      "label": "Am Ertlfeld",
+      "street": "Am Ertlfeld",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vogtareuth",
+      "spotCount": 2,
+      "lat": 47.942680450000005,
+      "lng": 12.1820447,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/453827145), ODbL"
+    }
+  ]
+}

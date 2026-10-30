@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "seefeld",
+    "name": "Seefeld",
+    "center": {
+      "lat": 48.0384663,
+      "lng": 11.1982222
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "seefeld-9e082db1f0",
+      "city": "seefeld",
+      "label": "Am Oberfeld",
+      "street": "Am Oberfeld",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Seefeld",
+      "spotCount": 6,
+      "lat": 48.0384663,
+      "lng": 11.185887000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10068991585), ODbL"
+    },
+    {
+      "id": "seefeld-da2773054f",
+      "city": "seefeld",
+      "label": "Parkplatz S-Bhf Seefeld Hechendorf",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Seefeld",
+      "spotCount": 2,
+      "lat": 48.04122120000001,
+      "lng": 11.1982222,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/153463775), ODbL"
+    },
+    {
+      "id": "seefeld-ce563f88cf",
+      "city": "seefeld",
+      "label": "Schloßhof",
+      "street": "Schloßhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Seefeld",
+      "spotCount": 3,
+      "lat": 48.03131805,
+      "lng": 11.205133750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/337276765), ODbL"
+    }
+  ]
+}

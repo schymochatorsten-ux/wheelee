@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "randersacker",
+    "name": "Randersacker",
+    "center": {
+      "lat": 49.758814900000004,
+      "lng": 9.9801129
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "randersacker-35675e8b1e",
+      "city": "randersacker",
+      "label": "Würzburger Straße 10",
+      "street": "Würzburger Straße",
+      "houseNumber": "10",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Randersacker",
+      "spotCount": 1,
+      "lat": 49.758814900000004,
+      "lng": 9.9801129,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3756619099), ODbL"
+    }
+  ]
+}

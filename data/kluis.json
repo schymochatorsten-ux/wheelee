@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kluis",
+    "name": "Kluis",
+    "center": {
+      "lat": 54.455400700000006,
+      "lng": 13.3100822
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kluis-0dee3d1e12",
+      "city": "kluis",
+      "label": "Pansevitz",
+      "street": "Pansevitz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kluis",
+      "spotCount": 1,
+      "lat": 54.455400700000006,
+      "lng": 13.3100822,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/746261686), ODbL"
+    }
+  ]
+}

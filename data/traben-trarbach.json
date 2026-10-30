@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "traben-trarbach",
+    "name": "Traben-Trarbach",
+    "center": {
+      "lat": 49.950941150000006,
+      "lng": 7.1172187000000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "traben-trarbach-08e94a21fa",
+      "city": "traben-trarbach",
+      "label": "Am Bahnhof 2",
+      "street": "Am Bahnhof",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Traben-Trarbach",
+      "spotCount": 2,
+      "lat": 49.950941150000006,
+      "lng": 7.1172187000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1308333628), ODbL"
+    },
+    {
+      "id": "traben-trarbach-f7792425c1",
+      "city": "traben-trarbach",
+      "label": "Behindertenparkplätze Moseltherme",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Traben-Trarbach",
+      "spotCount": 5,
+      "lat": 49.93231230000001,
+      "lng": 7.111199600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2326302107), ODbL"
+    },
+    {
+      "id": "traben-trarbach-b276a16389",
+      "city": "traben-trarbach",
+      "label": "Bismarckstraße 7",
+      "street": "Bismarckstraße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7; Th 07:00-13:00 off",
+      "district": "Traben-Trarbach",
+      "spotCount": 1,
+      "lat": 49.9513776,
+      "lng": 7.1192256,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/220229312), ODbL"
+    },
+    {
+      "id": "traben-trarbach-f06edf44e8",
+      "city": "traben-trarbach",
+      "label": "Enkircher Straße",
+      "street": "Enkircher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Traben-Trarbach",
+      "spotCount": 1,
+      "lat": 49.94921285,
+      "lng": 7.111919500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1428824734), ODbL"
+    },
+    {
+      "id": "traben-trarbach-9755ff9392",
+      "city": "traben-trarbach",
+      "label": "Mühlenweg",
+      "street": "Mühlenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Traben-Trarbach",
+      "spotCount": 1,
+      "lat": 49.94862605,
+      "lng": 7.113726600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1255046329), ODbL"
+    },
+    {
+      "id": "traben-trarbach-e0526b45df",
+      "city": "traben-trarbach",
+      "label": "Neue Straße 1",
+      "street": "Neue Straße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Traben-Trarbach",
+      "spotCount": 2,
+      "lat": 49.95725955,
+      "lng": 7.124390250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1297741662), ODbL"
+    }
+  ]
+}

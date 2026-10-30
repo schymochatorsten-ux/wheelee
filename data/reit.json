@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "reit",
+    "name": "Reit im Winkl",
+    "center": {
+      "lat": 47.6773967,
+      "lng": 12.470081
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "reit-d4d17cff52",
+      "city": "reit",
+      "label": "Rathausparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Reit im Winkl",
+      "spotCount": 1,
+      "lat": 47.6773967,
+      "lng": 12.470081,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1211226998), ODbL"
+    }
+  ]
+}

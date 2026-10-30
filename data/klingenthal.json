@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "klingenthal",
+    "name": "Klingenthal",
+    "center": {
+      "lat": 50.3730224,
+      "lng": 12.47290925
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "klingenthal-5993acb845",
+      "city": "klingenthal",
+      "label": "Alter Staffelweg",
+      "street": "Alter Staffelweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Klingenthal",
+      "spotCount": 2,
+      "lat": 50.3730224,
+      "lng": 12.47290925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/74032703), ODbL"
+    },
+    {
+      "id": "klingenthal-b712b63d3f",
+      "city": "klingenthal",
+      "label": "Auerbacher Straße 85",
+      "street": "Auerbacher Straße",
+      "houseNumber": "85",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Klingenthal",
+      "spotCount": 2,
+      "lat": 50.364965850000004,
+      "lng": 12.46846945,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/78172790), ODbL"
+    }
+  ]
+}

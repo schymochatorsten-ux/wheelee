@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "bodenrode-westhausen",
+    "name": "Bodenrode-Westhausen",
+    "center": {
+      "lat": 51.4081748,
+      "lng": 10.180742850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bodenrode-westhausen-da8a633b39",
+      "city": "bodenrode-westhausen",
+      "label": "Leinetal",
+      "street": "Leinetal",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bodenrode-Westhausen",
+      "spotCount": 1,
+      "lat": 51.4081748,
+      "lng": 10.180742850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/388934111), ODbL"
+    },
+    {
+      "id": "bodenrode-westhausen-9bac4c8aec",
+      "city": "bodenrode-westhausen",
+      "label": "Leinetal",
+      "street": "Leinetal",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bodenrode-Westhausen",
+      "spotCount": 1,
+      "lat": 51.408094600000005,
+      "lng": 10.18095585,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/754610490), ODbL"
+    },
+    {
+      "id": "bodenrode-westhausen-38e42dff1f",
+      "city": "bodenrode-westhausen",
+      "label": "Leinetal",
+      "street": "Leinetal",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bodenrode-Westhausen",
+      "spotCount": 1,
+      "lat": 51.40810865,
+      "lng": 10.1808674,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/754610491), ODbL"
+    },
+    {
+      "id": "bodenrode-westhausen-c2b1f0ce82",
+      "city": "bodenrode-westhausen",
+      "label": "Leinetal",
+      "street": "Leinetal",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bodenrode-Westhausen",
+      "spotCount": 1,
+      "lat": 51.4081226,
+      "lng": 10.18077895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/754610492), ODbL"
+    },
+    {
+      "id": "bodenrode-westhausen-69d2ac7988",
+      "city": "bodenrode-westhausen",
+      "label": "Leinetal",
+      "street": "Leinetal",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bodenrode-Westhausen",
+      "spotCount": 1,
+      "lat": 51.410159050000004,
+      "lng": 10.1755402,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/754618204), ODbL"
+    },
+    {
+      "id": "bodenrode-westhausen-3eb818698c",
+      "city": "bodenrode-westhausen",
+      "label": "Leinetal",
+      "street": "Leinetal",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bodenrode-Westhausen",
+      "spotCount": 1,
+      "lat": 51.410156,
+      "lng": 10.17559585,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/754618205), ODbL"
+    },
+    {
+      "id": "bodenrode-westhausen-a7d7f17053",
+      "city": "bodenrode-westhausen",
+      "label": "Leinetal",
+      "street": "Leinetal",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bodenrode-Westhausen",
+      "spotCount": 1,
+      "lat": 51.4101512,
+      "lng": 10.175662500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/754618206), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "oberboihingen",
+    "name": "Oberboihingen",
+    "center": {
+      "lat": 48.64874230000001,
+      "lng": 9.365783700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberboihingen-dea9b4a9ff",
+      "city": "oberboihingen",
+      "label": "Bachstraße 4",
+      "street": "Bachstraße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Oberboihingen",
+      "spotCount": 2,
+      "lat": 48.64879135,
+      "lng": 9.36552885,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/457008250), ODbL"
+    },
+    {
+      "id": "oberboihingen-30c6310aa6",
+      "city": "oberboihingen",
+      "label": "Bachstraße 4",
+      "street": "Bachstraße",
+      "houseNumber": "4",
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Oberboihingen",
+      "spotCount": 1,
+      "lat": 48.64874230000001,
+      "lng": 9.365783700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1368071915), ODbL"
+    },
+    {
+      "id": "oberboihingen-82ce96cb69",
+      "city": "oberboihingen",
+      "label": "Nürtinger Straße 9/1",
+      "street": "Nürtinger Straße",
+      "houseNumber": "9/1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oberboihingen",
+      "spotCount": 1,
+      "lat": 48.648228100000004,
+      "lng": 9.366508600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11301558309), ODbL"
+    }
+  ]
+}

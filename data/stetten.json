@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "stetten",
+    "name": "Stetten am kalten Markt",
+    "center": {
+      "lat": 48.127443650000004,
+      "lng": 9.0779741
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "stetten-373000ab5c",
+      "city": "stetten",
+      "label": "Albstraße",
+      "street": "Albstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Stetten am kalten Markt",
+      "spotCount": 1,
+      "lat": 48.122269450000005,
+      "lng": 9.074702850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1395177955), ODbL"
+    },
+    {
+      "id": "stetten-81b2d19592",
+      "city": "stetten",
+      "label": "Albstraße",
+      "street": "Albstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Stetten am kalten Markt",
+      "spotCount": 1,
+      "lat": 48.12223900000001,
+      "lng": 9.0746865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1395177956), ODbL"
+    },
+    {
+      "id": "stetten-8a3461caa4",
+      "city": "stetten",
+      "label": "Frohnstetter Straße",
+      "street": "Frohnstetter Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Stetten am kalten Markt",
+      "spotCount": 1,
+      "lat": 48.12744895,
+      "lng": 9.07803955,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1455015151), ODbL"
+    },
+    {
+      "id": "stetten-97a18104c6",
+      "city": "stetten",
+      "label": "Frohnstetter Straße",
+      "street": "Frohnstetter Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Stetten am kalten Markt",
+      "spotCount": 1,
+      "lat": 48.127443650000004,
+      "lng": 9.0779741,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1455015155), ODbL"
+    }
+  ]
+}

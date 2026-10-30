@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "neuenstein-he",
+    "name": "Neuenstein",
+    "center": {
+      "lat": 50.9393419,
+      "lng": 9.54062
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuenstein-he-e58f6260f8",
+      "city": "neuenstein-he",
+      "label": "Am Pommer",
+      "street": "Am Pommer",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuenstein",
+      "spotCount": 2,
+      "lat": 50.9397247,
+      "lng": 9.5406419,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1497153646), ODbL"
+    },
+    {
+      "id": "neuenstein-he-e2a31bc716",
+      "city": "neuenstein-he",
+      "label": "Am Pommer",
+      "street": "Am Pommer",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neuenstein",
+      "spotCount": 1,
+      "lat": 50.93929955,
+      "lng": 9.54062,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1497153691), ODbL"
+    },
+    {
+      "id": "neuenstein-he-229b5ae4c0",
+      "city": "neuenstein-he",
+      "label": "Am Pommer",
+      "street": "Am Pommer",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neuenstein",
+      "spotCount": 1,
+      "lat": 50.9393419,
+      "lng": 9.540602,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1497153692), ODbL"
+    }
+  ]
+}

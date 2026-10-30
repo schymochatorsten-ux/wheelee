@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "schladen-werla",
+    "name": "Schladen-Werla",
+    "center": {
+      "lat": 52.0384971,
+      "lng": 10.55047205
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schladen-werla-35e7431b4f",
+      "city": "schladen-werla",
+      "label": "Behindertenparkplatz Schladen-Werla",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schladen-Werla",
+      "spotCount": 2,
+      "lat": 52.0384971,
+      "lng": 10.54075095,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/910124747), ODbL"
+    },
+    {
+      "id": "schladen-werla-1fc6d6870d",
+      "city": "schladen-werla",
+      "label": "Hermann-Müller-Straße",
+      "street": "Hermann-Müller-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schladen-Werla",
+      "spotCount": 1,
+      "lat": 52.02215255,
+      "lng": 10.55047205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/56324445), ODbL"
+    }
+  ]
+}

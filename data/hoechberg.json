@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hoechberg",
+    "name": "Höchberg",
+    "center": {
+      "lat": 49.7874041,
+      "lng": 9.8821768
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hoechberg-97e154d87c",
+      "city": "hoechberg",
+      "label": "Parkhaus Mainlandzentrum",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Höchberg",
+      "spotCount": 2,
+      "lat": 49.7874041,
+      "lng": 9.8821768,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10570387140), ODbL"
+    },
+    {
+      "id": "hoechberg-0f4a6d524d",
+      "city": "hoechberg",
+      "label": "Schulgasse",
+      "street": "Schulgasse",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Höchberg",
+      "spotCount": 1,
+      "lat": 49.7802646,
+      "lng": 9.875542600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8482007162), ODbL"
+    }
+  ]
+}

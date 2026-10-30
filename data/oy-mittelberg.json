@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "oy-mittelberg",
+    "name": "Oy-Mittelberg",
+    "center": {
+      "lat": 47.663730150000006,
+      "lng": 10.457491050000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oy-mittelberg-f4f923d447",
+      "city": "oy-mittelberg",
+      "label": "Bahnhofstraße 14",
+      "street": "Bahnhofstraße",
+      "houseNumber": "14",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oy-Mittelberg",
+      "spotCount": 1,
+      "lat": 47.64659965,
+      "lng": 10.457491050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/246765592), ODbL"
+    },
+    {
+      "id": "oy-mittelberg-b9981db7af",
+      "city": "oy-mittelberg",
+      "label": "Rottachtal-West",
+      "street": "Rottachtal-West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oy-Mittelberg",
+      "spotCount": 2,
+      "lat": 47.663730150000006,
+      "lng": 10.4169564,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/363641898), ODbL"
+    }
+  ]
+}

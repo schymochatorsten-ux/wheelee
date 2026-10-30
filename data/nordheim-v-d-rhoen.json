@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "nordheim-v-d-rhoen",
+    "name": "Nordheim v.d.Rhön",
+    "center": {
+      "lat": 50.482485350000005,
+      "lng": 10.180147250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nordheim-v-d-rhoen-a78f8db242",
+      "city": "nordheim-v-d-rhoen",
+      "label": "Torwiesen",
+      "street": "Torwiesen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nordheim v.d.Rhön",
+      "spotCount": 1,
+      "lat": 50.482452550000005,
+      "lng": 10.1799925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1090212176), ODbL"
+    },
+    {
+      "id": "nordheim-v-d-rhoen-0a2a3d47f2",
+      "city": "nordheim-v-d-rhoen",
+      "label": "Torwiesen",
+      "street": "Torwiesen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nordheim v.d.Rhön",
+      "spotCount": 1,
+      "lat": 50.4824469,
+      "lng": 10.179941600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1090212177), ODbL"
+    },
+    {
+      "id": "nordheim-v-d-rhoen-71c85591b1",
+      "city": "nordheim-v-d-rhoen",
+      "label": "Torwiesen",
+      "street": "Torwiesen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nordheim v.d.Rhön",
+      "spotCount": 1,
+      "lat": 50.482518500000005,
+      "lng": 10.180207250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1090212216), ODbL"
+    },
+    {
+      "id": "nordheim-v-d-rhoen-6383959220",
+      "city": "nordheim-v-d-rhoen",
+      "label": "Torwiesen",
+      "street": "Torwiesen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nordheim v.d.Rhön",
+      "spotCount": 1,
+      "lat": 50.482485350000005,
+      "lng": 10.180217,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1090212217), ODbL"
+    },
+    {
+      "id": "nordheim-v-d-rhoen-674a4a6731",
+      "city": "nordheim-v-d-rhoen",
+      "label": "Torwiesen",
+      "street": "Torwiesen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nordheim v.d.Rhön",
+      "spotCount": 1,
+      "lat": 50.482477,
+      "lng": 10.180147250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1090212218), ODbL"
+    },
+    {
+      "id": "nordheim-v-d-rhoen-c617d8549e",
+      "city": "nordheim-v-d-rhoen",
+      "label": "Torwiesen",
+      "street": "Torwiesen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nordheim v.d.Rhön",
+      "spotCount": 1,
+      "lat": 50.4825102,
+      "lng": 10.1801375,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1090212219), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "ulmen",
+    "name": "Ulmen",
+    "center": {
+      "lat": 50.21494095,
+      "lng": 6.9786272
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ulmen-39cdab9452",
+      "city": "ulmen",
+      "label": "Ladestraße",
+      "street": "Ladestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ulmen",
+      "spotCount": 1,
+      "lat": 50.21494095,
+      "lng": 6.974970900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/564071849), ODbL"
+    },
+    {
+      "id": "ulmen-b609a0511b",
+      "city": "ulmen",
+      "label": "Winkelstraße 6",
+      "street": "Winkelstraße",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ulmen",
+      "spotCount": 1,
+      "lat": 50.209607250000005,
+      "lng": 6.9786272,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/123334088), ODbL"
+    }
+  ]
+}

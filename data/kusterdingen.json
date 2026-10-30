@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "kusterdingen",
+    "name": "Kusterdingen",
+    "center": {
+      "lat": 48.52178545,
+      "lng": 9.120925150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kusterdingen-a283be53ea",
+      "city": "kusterdingen",
+      "label": "Gerhard-Kindler-Straße 6",
+      "street": "Gerhard-Kindler-Straße",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kusterdingen",
+      "spotCount": 1,
+      "lat": 48.4957112,
+      "lng": 9.136325750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/949388850), ODbL"
+    },
+    {
+      "id": "kusterdingen-00881a4451",
+      "city": "kusterdingen",
+      "label": "Kirchentellinsfurter Straße 4",
+      "street": "Kirchentellinsfurter Straße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kusterdingen",
+      "spotCount": 4,
+      "lat": 48.52178545,
+      "lng": 9.1203651,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1549828462), ODbL"
+    },
+    {
+      "id": "kusterdingen-4e76550118",
+      "city": "kusterdingen",
+      "label": "Parkplatz Rathaus",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kusterdingen",
+      "spotCount": 1,
+      "lat": 48.52253365,
+      "lng": 9.120925150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32598464), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "jerichow",
+    "name": "Jerichow",
+    "center": {
+      "lat": 52.5027752,
+      "lng": 12.01718435
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "jerichow-7567df5578",
+      "city": "jerichow",
+      "label": "Volksgut",
+      "street": "Volksgut",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Jerichow",
+      "spotCount": 1,
+      "lat": 52.50275210000001,
+      "lng": 12.01727995,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1217205466), ODbL"
+    },
+    {
+      "id": "jerichow-538f62031b",
+      "city": "jerichow",
+      "label": "Volksgut",
+      "street": "Volksgut",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Jerichow",
+      "spotCount": 1,
+      "lat": 52.502763650000006,
+      "lng": 12.017232150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1217205467), ODbL"
+    },
+    {
+      "id": "jerichow-3c10fc819c",
+      "city": "jerichow",
+      "label": "Volksgut",
+      "street": "Volksgut",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Jerichow",
+      "spotCount": 1,
+      "lat": 52.5027752,
+      "lng": 12.01718435,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1217205468), ODbL"
+    },
+    {
+      "id": "jerichow-bb2d1d6fcc",
+      "city": "jerichow",
+      "label": "Volksgut",
+      "street": "Volksgut",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Jerichow",
+      "spotCount": 1,
+      "lat": 52.502786750000006,
+      "lng": 12.01713655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1217205469), ODbL"
+    },
+    {
+      "id": "jerichow-f7523070a9",
+      "city": "jerichow",
+      "label": "Volksgut",
+      "street": "Volksgut",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Jerichow",
+      "spotCount": 1,
+      "lat": 52.502798350000006,
+      "lng": 12.01708875,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1217205470), ODbL"
+    }
+  ]
+}

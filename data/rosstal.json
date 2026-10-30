@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "rosstal",
+    "name": "Roßtal",
+    "center": {
+      "lat": 49.3948839,
+      "lng": 10.8907325
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rosstal-672482da0a",
+      "city": "rosstal",
+      "label": "Friedrichstraße 27",
+      "street": "Friedrichstraße",
+      "houseNumber": "27",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Roßtal",
+      "spotCount": 2,
+      "lat": 49.3948839,
+      "lng": 10.8907325,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/142690576), ODbL"
+    },
+    {
+      "id": "rosstal-cc7a96881f",
+      "city": "rosstal",
+      "label": "Müncherlbacher Straße",
+      "street": "Müncherlbacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Roßtal",
+      "spotCount": 1,
+      "lat": 49.3751001,
+      "lng": 10.8439157,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/142027269), ODbL"
+    }
+  ]
+}

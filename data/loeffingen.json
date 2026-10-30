@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "loeffingen",
+    "name": "Löffingen",
+    "center": {
+      "lat": 47.883818250000004,
+      "lng": 8.3421775
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "loeffingen-a29b6cc9c3",
+      "city": "loeffingen",
+      "label": "Bahnhofstraße 1",
+      "street": "Bahnhofstraße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Löffingen",
+      "spotCount": 1,
+      "lat": 47.883818250000004,
+      "lng": 8.3421775,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1388169157), ODbL"
+    },
+    {
+      "id": "loeffingen-ab01161293",
+      "city": "loeffingen",
+      "label": "Parkplatz Bahnhof Löffingen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Löffingen",
+      "spotCount": 1,
+      "lat": 47.8839047,
+      "lng": 8.3421167,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/428966632), ODbL"
+    },
+    {
+      "id": "loeffingen-5db0ebd6f0",
+      "city": "loeffingen",
+      "label": "Ringstraße 10",
+      "street": "Ringstraße",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Löffingen",
+      "spotCount": 1,
+      "lat": 47.883045,
+      "lng": 8.3433499,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/418385326), ODbL"
+    }
+  ]
+}

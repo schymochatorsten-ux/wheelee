@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "schoeffengrund",
+    "name": "Schöffengrund",
+    "center": {
+      "lat": 50.5146761,
+      "lng": 8.471223300000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schoeffengrund-06ff4a4343",
+      "city": "schoeffengrund",
+      "label": "Eibenweg",
+      "street": "Eibenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schöffengrund",
+      "spotCount": 2,
+      "lat": 50.5146761,
+      "lng": 8.4548419,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/851870846), ODbL"
+    },
+    {
+      "id": "schoeffengrund-e614a1e0b2",
+      "city": "schoeffengrund",
+      "label": "Steuterweg",
+      "street": "Steuterweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schöffengrund",
+      "spotCount": 1,
+      "lat": 50.49517730000001,
+      "lng": 8.471223300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1474843873), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "winhoering",
+    "name": "Winhöring",
+    "center": {
+      "lat": 48.26112245,
+      "lng": 12.690655450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "winhoering-ab292de9dd",
+      "city": "winhoering",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Winhöring",
+      "spotCount": 2,
+      "lat": 48.26112245,
+      "lng": 12.690655450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/455037714), ODbL"
+    }
+  ]
+}

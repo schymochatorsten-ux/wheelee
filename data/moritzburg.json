@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "moritzburg",
+    "name": "Moritzburg",
+    "center": {
+      "lat": 51.1650021,
+      "lng": 13.679265500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "moritzburg-dac7787070",
+      "city": "moritzburg",
+      "label": "Meißner Straße",
+      "street": "Meißner Straße",
+      "houseNumber": null,
+      "note": "gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Moritzburg",
+      "spotCount": 1,
+      "lat": 51.1650021,
+      "lng": 13.679265500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2596520669), ODbL"
+    },
+    {
+      "id": "moritzburg-3820a5e92c",
+      "city": "moritzburg",
+      "label": "Schlossparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Moritzburg",
+      "spotCount": 1,
+      "lat": 51.16446555,
+      "lng": 13.678977100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/253771911), ODbL"
+    }
+  ]
+}

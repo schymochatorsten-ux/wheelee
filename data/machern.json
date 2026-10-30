@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "machern",
+    "name": "Machern",
+    "center": {
+      "lat": 51.360286300000006,
+      "lng": 12.643532
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "machern-4212b87654",
+      "city": "machern",
+      "label": "Schloßblick",
+      "street": "Schloßblick",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Machern",
+      "spotCount": 1,
+      "lat": 51.354519350000004,
+      "lng": 12.643532,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/885210963), ODbL"
+    },
+    {
+      "id": "machern-938d0f797c",
+      "city": "machern",
+      "label": "Schloßplatz 9",
+      "street": "Schloßplatz",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Machern",
+      "spotCount": 1,
+      "lat": 51.360286300000006,
+      "lng": 12.629695700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2117360715), ODbL"
+    }
+  ]
+}

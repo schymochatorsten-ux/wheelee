@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "duengenheim",
+    "name": "Düngenheim",
+    "center": {
+      "lat": 50.26420885,
+      "lng": 7.153678900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "duengenheim-4e857df307",
+      "city": "duengenheim",
+      "label": "St.-Martin-Straße",
+      "street": "St.-Martin-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Düngenheim",
+      "spotCount": 1,
+      "lat": 50.26420885,
+      "lng": 7.153678900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/961250222), ODbL"
+    }
+  ]
+}

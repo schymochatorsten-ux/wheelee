@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "angelburg",
+    "name": "Angelburg",
+    "center": {
+      "lat": 50.824740950000006,
+      "lng": 8.4477033
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "angelburg-3dc23fa2ef",
+      "city": "angelburg",
+      "label": "Hauptstraße 33",
+      "street": "Hauptstraße",
+      "houseNumber": "33",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Angelburg",
+      "spotCount": 1,
+      "lat": 50.824740950000006,
+      "lng": 8.4477033,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1386662687), ODbL"
+    },
+    {
+      "id": "angelburg-9388e2e339",
+      "city": "angelburg",
+      "label": "Hauptstraße 33",
+      "street": "Hauptstraße",
+      "houseNumber": "33",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Angelburg",
+      "spotCount": 1,
+      "lat": 50.824740950000006,
+      "lng": 8.4477033,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1386662688), ODbL"
+    }
+  ]
+}

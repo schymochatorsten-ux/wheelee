@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "namborn",
+    "name": "Namborn",
+    "center": {
+      "lat": 49.51292960000001,
+      "lng": 7.1947402
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "namborn-dd49f8c4cb",
+      "city": "namborn",
+      "label": "Sonnenhof",
+      "street": "Sonnenhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Namborn",
+      "spotCount": 1,
+      "lat": 49.51292960000001,
+      "lng": 7.1947402,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1274662719), ODbL"
+    }
+  ]
+}

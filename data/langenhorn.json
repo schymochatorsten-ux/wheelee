@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "langenhorn",
+    "name": "Langenhorn",
+    "center": {
+      "lat": 54.685843600000005,
+      "lng": 8.9466073
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "langenhorn-9d963ea580",
+      "city": "langenhorn",
+      "label": "Bahnweg",
+      "street": "Bahnweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Langenhorn",
+      "spotCount": 1,
+      "lat": 54.6858878,
+      "lng": 8.9465901,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14162594891), ODbL"
+    },
+    {
+      "id": "langenhorn-7e8a45b7a6",
+      "city": "langenhorn",
+      "label": "Bahnweg",
+      "street": "Bahnweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Langenhorn",
+      "spotCount": 1,
+      "lat": 54.685843600000005,
+      "lng": 8.9466073,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14162594892), ODbL"
+    },
+    {
+      "id": "langenhorn-8fc60df2ec",
+      "city": "langenhorn",
+      "label": "Guste Jensen Weg",
+      "street": "Guste Jensen Weg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Langenhorn",
+      "spotCount": 1,
+      "lat": 54.68102710000001,
+      "lng": 8.95794415,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1521351943), ODbL"
+    },
+    {
+      "id": "langenhorn-86ed3489c1",
+      "city": "langenhorn",
+      "label": "Schoolstraat",
+      "street": "Schoolstraat",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Langenhorn",
+      "spotCount": 1,
+      "lat": 54.67918755,
+      "lng": 8.9329944,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1454619542), ODbL"
+    }
+  ]
+}

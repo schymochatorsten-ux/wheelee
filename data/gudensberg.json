@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "gudensberg",
+    "name": "Gudensberg",
+    "center": {
+      "lat": 51.17828435,
+      "lng": 9.36814265
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gudensberg-cdcfb96930",
+      "city": "gudensberg",
+      "label": "Fritzlarer Straße",
+      "street": "Fritzlarer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gudensberg",
+      "spotCount": 3,
+      "lat": 51.176378150000005,
+      "lng": 9.357306300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1239452997), ODbL"
+    },
+    {
+      "id": "gudensberg-14d5fe7b78",
+      "city": "gudensberg",
+      "label": "Kasseler Straße 9",
+      "street": "Kasseler Straße",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gudensberg",
+      "spotCount": 1,
+      "lat": 51.17828435,
+      "lng": 9.36814265,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/340619435), ODbL"
+    }
+  ]
+}

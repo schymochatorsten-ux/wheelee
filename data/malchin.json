@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "malchin",
+    "name": "Malchin",
+    "center": {
+      "lat": 53.742998650000004,
+      "lng": 12.760638700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "malchin-8261f4167f",
+      "city": "malchin",
+      "label": "Bahnhof",
+      "street": "Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Malchin",
+      "spotCount": 1,
+      "lat": 53.7423635,
+      "lng": 12.760638700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/388519819), ODbL"
+    },
+    {
+      "id": "malchin-7dd21a2e09",
+      "city": "malchin",
+      "label": "Bahnhof 6",
+      "street": "Bahnhof",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Malchin",
+      "spotCount": 1,
+      "lat": 53.742998650000004,
+      "lng": 12.761522550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/974337036), ODbL"
+    },
+    {
+      "id": "malchin-3242ca1ae9",
+      "city": "malchin",
+      "label": "Schloßstraße 6",
+      "street": "Schloßstraße",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Malchin",
+      "spotCount": 1,
+      "lat": 53.75222425,
+      "lng": 12.6988442,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/997954373), ODbL"
+    }
+  ]
+}

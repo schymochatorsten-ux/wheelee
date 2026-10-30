@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "offenau",
+    "name": "Offenau",
+    "center": {
+      "lat": 49.24506855,
+      "lng": 9.16542815
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "offenau-c39320bf63",
+      "city": "offenau",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Offenau",
+      "spotCount": 2,
+      "lat": 49.24473615,
+      "lng": 9.16542815,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/323276600), ODbL"
+    },
+    {
+      "id": "offenau-5c9c8998ea",
+      "city": "offenau",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Offenau",
+      "spotCount": 2,
+      "lat": 49.24506855,
+      "lng": 9.1653262,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1412126870), ODbL"
+    }
+  ]
+}

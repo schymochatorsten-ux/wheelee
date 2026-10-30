@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schlitz",
+    "name": "Schlitz",
+    "center": {
+      "lat": 50.631991600000006,
+      "lng": 9.584256450000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schlitz-fa95bae697",
+      "city": "schlitz",
+      "label": "Fuldaer Straße 29",
+      "street": "Fuldaer Straße",
+      "houseNumber": "29",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schlitz",
+      "spotCount": 1,
+      "lat": 50.631991600000006,
+      "lng": 9.584256450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/166516125), ODbL"
+    }
+  ]
+}

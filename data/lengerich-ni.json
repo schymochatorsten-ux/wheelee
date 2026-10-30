@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "lengerich-ni",
+    "name": "Lengerich",
+    "center": {
+      "lat": 52.55225165,
+      "lng": 7.532448850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lengerich-ni-8e3ae78ed9",
+      "city": "lengerich-ni",
+      "label": "Lütemannskamp 1",
+      "street": "Lütemannskamp",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lengerich",
+      "spotCount": 1,
+      "lat": 52.5517607,
+      "lng": 7.532448850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1075739021), ODbL"
+    },
+    {
+      "id": "lengerich-ni-ee1446ed72",
+      "city": "lengerich-ni",
+      "label": "Mittelstraße",
+      "street": "Mittelstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lengerich",
+      "spotCount": 2,
+      "lat": 52.55225165,
+      "lng": 7.532113750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/834652986), ODbL"
+    }
+  ]
+}

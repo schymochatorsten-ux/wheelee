@@ -70,6 +70,9 @@ export const fr: Messages = {
   "list.osmNote":
     "Les données OpenStreetMap montrent surtout des parkings avec des places PMR signalées plutôt que des places isolées au bord de la rue, et elles sont incomplètes – une entrée manquante ne signifie pas qu'il n'y a pas de place PMR.",
   "list.allCities": "Les {count} villes avec leur source",
+  "list.cityFilter": "Rechercher une ville",
+  "list.cityShown": "{shown} sur {count} affichées : saisissez un nom pour en trouver d'autres.",
+  "list.cityNone": "Aucune ville trouvée.",
   "list.cityCounts": " : {spots} emplacements, {spaces} places",
   "list.source": "Source : {source}",
   "list.licenseMissing": " · licence non indiquée",
@@ -92,6 +95,9 @@ export const fr: Messages = {
   "details.confirmed":
     "{strong} – l'administration de la ville et OpenStreetMap indiquent cette place au même endroit.",
   "details.confirmedStrong": "Confirmé par deux sources",
+  "details.osmOnly":
+    "{strong} – la liste officielle de la ville ne comporte pas cet emplacement. Il peut être nouveau ou y manquer ; l’information n’est pas vérifiée, vérifiez sur place.",
+  "details.osmOnlyStrong": "Uniquement dans OpenStreetMap",
   "details.approx":
     "La position n'est connue qu'approximativement – la place se trouve dans cette rue, l'emplacement exact peut différer.",
   "details.source": "Source : {source}",
@@ -165,6 +171,8 @@ export const fr: Messages = {
   "settings.legal": "Mentions légales",
   "settings.imprint": "Mentions légales (Impressum)",
   "settings.privacy": "Politique de confidentialité",
+  "settings.sources": "Sources et licences",
+  "settings.coverage": "Couverture des données",
 
   "account.emailInvalid": "Cette adresse e-mail ne semble pas correcte.",
   "account.passwordTooShort": "Le mot de passe doit comporter au moins {min} caractères.",

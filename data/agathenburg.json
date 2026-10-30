@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "agathenburg",
+    "name": "Agathenburg",
+    "center": {
+      "lat": 53.561630050000005,
+      "lng": 9.5338512
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "agathenburg-14bf3c8720",
+      "city": "agathenburg",
+      "label": "Am Teich",
+      "street": "Am Teich",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Agathenburg",
+      "spotCount": 1,
+      "lat": 53.561630050000005,
+      "lng": 9.5338512,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1488640082), ODbL"
+    },
+    {
+      "id": "agathenburg-5da5b03197",
+      "city": "agathenburg",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Agathenburg",
+      "spotCount": 2,
+      "lat": 53.5603842,
+      "lng": 9.531945,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3574263861), ODbL"
+    }
+  ]
+}

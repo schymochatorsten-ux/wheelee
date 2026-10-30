@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "kirrweiler",
+    "name": "Kirrweiler (Pfalz)",
+    "center": {
+      "lat": 49.30411265,
+      "lng": 8.16626665
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kirrweiler-c6fb7c6ee9",
+      "city": "kirrweiler",
+      "label": "Friedhofstraße",
+      "street": "Friedhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kirrweiler (Pfalz)",
+      "spotCount": 2,
+      "lat": 49.30411265,
+      "lng": 8.16626665,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/952490195), ODbL"
+    },
+    {
+      "id": "kirrweiler-1d4ca120a1",
+      "city": "kirrweiler",
+      "label": "Neugasse 17",
+      "street": "Neugasse",
+      "houseNumber": "17",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kirrweiler (Pfalz)",
+      "spotCount": 1,
+      "lat": 49.3015607,
+      "lng": 8.1647641,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/950093111), ODbL"
+    }
+  ]
+}

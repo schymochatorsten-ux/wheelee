@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bad-bodenteich",
+    "name": "Bad Bodenteich",
+    "center": {
+      "lat": 52.82424400000001,
+      "lng": 10.6821978
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-bodenteich-b42f8b7c30",
+      "city": "bad-bodenteich",
+      "label": "Lüdersche Straße",
+      "street": "Lüdersche Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Bodenteich",
+      "spotCount": 1,
+      "lat": 52.82424400000001,
+      "lng": 10.6821978,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/839922258), ODbL"
+    }
+  ]
+}

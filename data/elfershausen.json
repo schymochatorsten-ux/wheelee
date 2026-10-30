@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "elfershausen",
+    "name": "Elfershausen",
+    "center": {
+      "lat": 50.1467746,
+      "lng": 9.96445025
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "elfershausen-78f5135596",
+      "city": "elfershausen",
+      "label": "Behindertenparkplatz Elfershausen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elfershausen",
+      "spotCount": 3,
+      "lat": 50.12651395,
+      "lng": 9.96445025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/398611571), ODbL"
+    },
+    {
+      "id": "elfershausen-79e1538d02",
+      "city": "elfershausen",
+      "label": "Rosenhügel",
+      "street": "Rosenhügel",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elfershausen",
+      "spotCount": 1,
+      "lat": 50.1467746,
+      "lng": 9.9626907,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1348431600), ODbL"
+    }
+  ]
+}

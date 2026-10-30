@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bickenbach",
+    "name": "Bickenbach",
+    "center": {
+      "lat": 49.7601284,
+      "lng": 8.612914400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bickenbach-c22de24123",
+      "city": "bickenbach",
+      "label": "Hartenauer Straße",
+      "street": "Hartenauer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Bickenbach",
+      "spotCount": 3,
+      "lat": 49.7601284,
+      "lng": 8.6039522,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26366841), ODbL"
+    },
+    {
+      "id": "bickenbach-80e8bde2a4",
+      "city": "bickenbach",
+      "label": "Pfungstädter Straße",
+      "street": "Pfungstädter Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bickenbach",
+      "spotCount": 2,
+      "lat": 49.75984805,
+      "lng": 8.612914400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26366654), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "auenwald",
+    "name": "Auenwald",
+    "center": {
+      "lat": 48.93764635000001,
+      "lng": 9.5263352
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "auenwald-a738faa399",
+      "city": "auenwald",
+      "label": "Ammerweg",
+      "street": "Ammerweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Auenwald",
+      "spotCount": 3,
+      "lat": 48.93224535,
+      "lng": 9.5263352,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1563338625), ODbL"
+    },
+    {
+      "id": "auenwald-68a0f399af",
+      "city": "auenwald",
+      "label": "Holzbachweg",
+      "street": "Holzbachweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Auenwald",
+      "spotCount": 1,
+      "lat": 48.93764635000001,
+      "lng": 9.50162605,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1348318210), ODbL"
+    }
+  ]
+}

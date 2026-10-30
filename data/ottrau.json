@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "ottrau",
+    "name": "Ottrau",
+    "center": {
+      "lat": 50.80547730000001,
+      "lng": 9.3856741
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ottrau-35f94dfdb1",
+      "city": "ottrau",
+      "label": "Berfaer Straße",
+      "street": "Berfaer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ottrau",
+      "spotCount": 1,
+      "lat": 50.80351970000001,
+      "lng": 9.384714,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/316599222), ODbL"
+    },
+    {
+      "id": "ottrau-d1c1a95b2f",
+      "city": "ottrau",
+      "label": "Neukirchener Straße 1",
+      "street": "Neukirchener Straße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ottrau",
+      "spotCount": 1,
+      "lat": 50.80547730000001,
+      "lng": 9.3856741,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/316662827), ODbL"
+    }
+  ]
+}

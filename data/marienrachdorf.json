@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "marienrachdorf",
+    "name": "Marienrachdorf",
+    "center": {
+      "lat": 50.5461168,
+      "lng": 7.720773500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "marienrachdorf-c7af5a8243",
+      "city": "marienrachdorf",
+      "label": "Behindertenparkplatz Marienrachdorf",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Marienrachdorf",
+      "spotCount": 1,
+      "lat": 50.5461168,
+      "lng": 7.720773500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1437485140), ODbL"
+    }
+  ]
+}

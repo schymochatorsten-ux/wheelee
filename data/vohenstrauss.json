@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "vohenstrauss",
+    "name": "Vohenstrauß",
+    "center": {
+      "lat": 49.61934855,
+      "lng": 12.3484111
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "vohenstrauss-451700b14b",
+      "city": "vohenstrauss",
+      "label": "Fliederstraße",
+      "street": "Fliederstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vohenstrauß",
+      "spotCount": 2,
+      "lat": 49.61934855,
+      "lng": 12.3484111,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/463099378), ODbL"
+    },
+    {
+      "id": "vohenstrauss-aa30a4f8f8",
+      "city": "vohenstrauss",
+      "label": "Fliederstraße",
+      "street": "Fliederstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vohenstrauß",
+      "spotCount": 2,
+      "lat": 49.6193078,
+      "lng": 12.348187600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1554265652), ODbL"
+    }
+  ]
+}

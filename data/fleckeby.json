@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "fleckeby",
+    "name": "Fleckeby",
+    "center": {
+      "lat": 54.48374270000001,
+      "lng": 9.70422575
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "fleckeby-26891bc4ef",
+      "city": "fleckeby",
+      "label": "Am Holm",
+      "street": "Am Holm",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Fleckeby",
+      "spotCount": 1,
+      "lat": 54.48374270000001,
+      "lng": 9.70422575,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/153839985), ODbL"
+    },
+    {
+      "id": "fleckeby-c41ed2a13a",
+      "city": "fleckeby",
+      "label": "Schustergang",
+      "street": "Schustergang",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Fleckeby",
+      "spotCount": 1,
+      "lat": 54.48208805,
+      "lng": 9.698690500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/153840006), ODbL"
+    }
+  ]
+}

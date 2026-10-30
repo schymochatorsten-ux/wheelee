@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bernhardswald",
+    "name": "Bernhardswald",
+    "center": {
+      "lat": 49.13945265,
+      "lng": 12.27978895
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bernhardswald-c4be3ba350",
+      "city": "bernhardswald",
+      "label": "Lampertiweg",
+      "street": "Lampertiweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bernhardswald",
+      "spotCount": 1,
+      "lat": 49.13945265,
+      "lng": 12.27978895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/218591323), ODbL"
+    }
+  ]
+}

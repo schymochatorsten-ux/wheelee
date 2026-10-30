@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "toenning",
+    "name": "Tönning",
+    "center": {
+      "lat": 54.31683335,
+      "lng": 8.9407201
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "toenning-220b9209b5",
+      "city": "toenning",
+      "label": "Am Markt",
+      "street": "Am Markt",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Tönning",
+      "spotCount": 2,
+      "lat": 54.3157214,
+      "lng": 8.9407201,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/452951323), ODbL"
+    },
+    {
+      "id": "toenning-6c7dff315f",
+      "city": "toenning",
+      "label": "Johann-Adolf-Straße",
+      "street": "Johann-Adolf-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Tönning",
+      "spotCount": 1,
+      "lat": 54.31683335,
+      "lng": 8.94063565,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1487818723), ODbL"
+    }
+  ]
+}

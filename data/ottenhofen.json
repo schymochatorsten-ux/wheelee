@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ottenhofen",
+    "name": "Ottenhofen",
+    "center": {
+      "lat": 48.2180577,
+      "lng": 11.879551750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ottenhofen-79e3ec4d9b",
+      "city": "ottenhofen",
+      "label": "Raiffeisenstraße",
+      "street": "Raiffeisenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ottenhofen",
+      "spotCount": 1,
+      "lat": 48.2180577,
+      "lng": 11.879551750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/241226200), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "colditz",
+    "name": "Colditz",
+    "center": {
+      "lat": 51.13092075,
+      "lng": 12.80765795
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "colditz-272e5f4795",
+      "city": "colditz",
+      "label": "Fürstenweg",
+      "street": "Fürstenweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Colditz",
+      "spotCount": 1,
+      "lat": 51.13021895,
+      "lng": 12.8075299,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1098585168), ODbL"
+    },
+    {
+      "id": "colditz-4989576ce2",
+      "city": "colditz",
+      "label": "Fürstenweg",
+      "street": "Fürstenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Colditz",
+      "spotCount": 2,
+      "lat": 51.13092075,
+      "lng": 12.80765795,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1367161122), ODbL"
+    }
+  ]
+}

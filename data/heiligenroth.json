@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "heiligenroth",
+    "name": "Heiligenroth",
+    "center": {
+      "lat": 50.452149850000005,
+      "lng": 7.8532759500000004
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "heiligenroth-f8a4fe6afb",
+      "city": "heiligenroth",
+      "label": "Industriestraße 11",
+      "street": "Industriestraße",
+      "houseNumber": "11",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Heiligenroth",
+      "spotCount": 1,
+      "lat": 50.45047395,
+      "lng": 7.8532759500000004,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1002727512), ODbL"
+    },
+    {
+      "id": "heiligenroth-5890a6d955",
+      "city": "heiligenroth",
+      "label": "P+M Heiligenroth",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heiligenroth",
+      "spotCount": 3,
+      "lat": 50.452149850000005,
+      "lng": 7.84995655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/118429490), ODbL"
+    },
+    {
+      "id": "heiligenroth-682a768b61",
+      "city": "heiligenroth",
+      "label": "Raststätte Heiligenroth (A3) - PKW",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heiligenroth",
+      "spotCount": 6,
+      "lat": 50.45450985000001,
+      "lng": 7.873703150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/286118029), ODbL"
+    },
+    {
+      "id": "heiligenroth-ef2e1ebda3",
+      "city": "heiligenroth",
+      "label": "Raststätte Montabaur Ost (PKW)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heiligenroth",
+      "spotCount": 3,
+      "lat": 50.447620400000005,
+      "lng": 7.8504471,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/806437095), ODbL"
+    }
+  ]
+}

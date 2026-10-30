@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "herdorf",
+    "name": "Herdorf",
+    "center": {
+      "lat": 50.78092785,
+      "lng": 7.958358850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "herdorf-b5c6765892",
+      "city": "herdorf",
+      "label": "Schneiderstraße",
+      "street": "Schneiderstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herdorf",
+      "spotCount": 3,
+      "lat": 50.78092785,
+      "lng": 7.958358850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/668039846), ODbL"
+    }
+  ]
+}

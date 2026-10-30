@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "pfatter",
+    "name": "Pfatter",
+    "center": {
+      "lat": 48.960027950000004,
+      "lng": 12.39280325
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pfatter-370141d1bd",
+      "city": "pfatter",
+      "label": "Straubinger Straße 30",
+      "street": "Straubinger Straße",
+      "houseNumber": "30",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pfatter",
+      "spotCount": 1,
+      "lat": 48.960027950000004,
+      "lng": 12.39280325,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/177129763), ODbL"
+    }
+  ]
+}

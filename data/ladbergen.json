@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "ladbergen",
+    "name": "Ladbergen",
+    "center": {
+      "lat": 52.14654085000001,
+      "lng": 7.73592085
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ladbergen-94dbfbb674",
+      "city": "ladbergen",
+      "label": "Espenhof 1",
+      "street": "Espenhof",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ladbergen",
+      "spotCount": 2,
+      "lat": 52.14654085000001,
+      "lng": 7.73592085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1093903553), ODbL"
+    },
+    {
+      "id": "ladbergen-89937715bc",
+      "city": "ladbergen",
+      "label": "Grevener Straße",
+      "street": "Grevener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ladbergen",
+      "spotCount": 1,
+      "lat": 52.135432650000006,
+      "lng": 7.735704400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/275280538), ODbL"
+    }
+  ]
+}

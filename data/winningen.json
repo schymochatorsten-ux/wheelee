@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "winningen",
+    "name": "Winningen",
+    "center": {
+      "lat": 50.3172007,
+      "lng": 7.514134200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "winningen-f6601605ee",
+      "city": "winningen",
+      "label": "Aussichtspunkt Moseltal West",
+      "street": "Aussichtspunkt Moseltal West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Winningen",
+      "spotCount": 3,
+      "lat": 50.3172007,
+      "lng": 7.4969403,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/437273933), ODbL"
+    },
+    {
+      "id": "winningen-69fd9bd1be",
+      "city": "winningen",
+      "label": "Wanderparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Winningen",
+      "spotCount": 1,
+      "lat": 50.314158250000006,
+      "lng": 7.514134200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1488503538), ODbL"
+    }
+  ]
+}

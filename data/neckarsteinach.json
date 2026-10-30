@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "neckarsteinach",
+    "name": "Neckarsteinach",
+    "center": {
+      "lat": 49.404046650000005,
+      "lng": 8.84239795
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neckarsteinach-ce21de04e4",
+      "city": "neckarsteinach",
+      "label": "Friedrich-Ebert-Straße",
+      "street": "Friedrich-Ebert-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neckarsteinach",
+      "spotCount": 2,
+      "lat": 49.404046650000005,
+      "lng": 8.84239795,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/509036969), ODbL"
+    }
+  ]
+}

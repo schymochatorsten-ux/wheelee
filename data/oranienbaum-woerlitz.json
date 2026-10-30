@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "oranienbaum-woerlitz",
+    "name": "Oranienbaum-Wörlitz",
+    "center": {
+      "lat": 51.802825150000004,
+      "lng": 12.406893700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oranienbaum-woerlitz-ebc97b762c",
+      "city": "oranienbaum-woerlitz",
+      "label": "Schloßstraße",
+      "street": "Schloßstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oranienbaum-Wörlitz",
+      "spotCount": 2,
+      "lat": 51.803066400000006,
+      "lng": 12.4071765,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/721308424), ODbL"
+    },
+    {
+      "id": "oranienbaum-woerlitz-744b2ebddc",
+      "city": "oranienbaum-woerlitz",
+      "label": "Schloßstraße",
+      "street": "Schloßstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oranienbaum-Wörlitz",
+      "spotCount": 1,
+      "lat": 51.802825150000004,
+      "lng": 12.40686285,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1351884906), ODbL"
+    },
+    {
+      "id": "oranienbaum-woerlitz-6d4c356182",
+      "city": "oranienbaum-woerlitz",
+      "label": "Schloßstraße",
+      "street": "Schloßstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oranienbaum-Wörlitz",
+      "spotCount": 1,
+      "lat": 51.80280020000001,
+      "lng": 12.406893700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1351884907), ODbL"
+    }
+  ]
+}

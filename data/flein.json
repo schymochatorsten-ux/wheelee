@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "flein",
+    "name": "Flein",
+    "center": {
+      "lat": 49.10644755,
+      "lng": 9.20908695
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "flein-1bd617b02a",
+      "city": "flein",
+      "label": "Kelteräcker",
+      "street": "Kelteräcker",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Flein",
+      "spotCount": 2,
+      "lat": 49.1020357,
+      "lng": 9.21863345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/223119468), ODbL"
+    },
+    {
+      "id": "flein-acb8966e2c",
+      "city": "flein",
+      "label": "Talheimer Straße",
+      "street": "Talheimer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Flein",
+      "spotCount": 1,
+      "lat": 49.10644755,
+      "lng": 9.209059550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/227949777), ODbL"
+    },
+    {
+      "id": "flein-8ff7556e0a",
+      "city": "flein",
+      "label": "Talheimer Straße",
+      "street": "Talheimer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Flein",
+      "spotCount": 1,
+      "lat": 49.10646365,
+      "lng": 9.20908695,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/227949791), ODbL"
+    }
+  ]
+}

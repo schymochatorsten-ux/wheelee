@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wiltingen",
+    "name": "Wiltingen",
+    "center": {
+      "lat": 49.6611283,
+      "lng": 6.5902805
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wiltingen-83481f6269",
+      "city": "wiltingen",
+      "label": "Klosterbergstraße 106",
+      "street": "Klosterbergstraße",
+      "houseNumber": "106",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wiltingen",
+      "spotCount": 2,
+      "lat": 49.6611283,
+      "lng": 6.5902805,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/7919712885), ODbL"
+    }
+  ]
+}

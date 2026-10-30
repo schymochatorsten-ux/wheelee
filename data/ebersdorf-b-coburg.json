@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ebersdorf-b-coburg",
+    "name": "Ebersdorf b.Coburg",
+    "center": {
+      "lat": 50.219370250000004,
+      "lng": 11.0750289
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ebersdorf-b-coburg-76e22dc39a",
+      "city": "ebersdorf-b-coburg",
+      "label": "Frohnlacher Straße",
+      "street": "Frohnlacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ebersdorf b.Coburg",
+      "spotCount": 1,
+      "lat": 50.219370250000004,
+      "lng": 11.0750289,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/557361050), ODbL"
+    }
+  ]
+}

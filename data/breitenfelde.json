@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "breitenfelde",
+    "name": "Breitenfelde",
+    "center": {
+      "lat": 53.608644600000005,
+      "lng": 10.63388405
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "breitenfelde-5017768b3c",
+      "city": "breitenfelde",
+      "label": "Borstorfer Straße",
+      "street": "Borstorfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Breitenfelde",
+      "spotCount": 1,
+      "lat": 53.606093200000004,
+      "lng": 10.6281701,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13936400864), ODbL"
+    },
+    {
+      "id": "breitenfelde-2f014041fe",
+      "city": "breitenfelde",
+      "label": "Kranichweg",
+      "street": "Kranichweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Breitenfelde",
+      "spotCount": 2,
+      "lat": 53.608644600000005,
+      "lng": 10.63388405,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/378571766), ODbL"
+    }
+  ]
+}

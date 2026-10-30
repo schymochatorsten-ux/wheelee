@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "unterwoessen",
+    "name": "Unterwössen",
+    "center": {
+      "lat": 47.725965200000005,
+      "lng": 12.467393650000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "unterwoessen-7003a7ae7c",
+      "city": "unterwoessen",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Unterwössen",
+      "spotCount": 1,
+      "lat": 47.725965200000005,
+      "lng": 12.467393650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/16581598), ODbL"
+    }
+  ]
+}

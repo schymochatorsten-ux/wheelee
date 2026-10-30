@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "stadland",
+    "name": "Stadland",
+    "center": {
+      "lat": 53.45686845,
+      "lng": 8.346923199999999
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "stadland-3a0d68090a",
+      "city": "stadland",
+      "label": "Hauptstraße 2",
+      "street": "Hauptstraße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Stadland",
+      "spotCount": 1,
+      "lat": 53.45686845,
+      "lng": 8.346923199999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1547250671), ODbL"
+    }
+  ]
+}

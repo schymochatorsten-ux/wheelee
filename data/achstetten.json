@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "achstetten",
+    "name": "Achstetten",
+    "center": {
+      "lat": 48.26121855,
+      "lng": 9.89840775
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "achstetten-3e52fa7e79",
+      "city": "achstetten",
+      "label": "Kindergartenweg 11",
+      "street": "Kindergartenweg",
+      "houseNumber": "11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Achstetten",
+      "spotCount": 1,
+      "lat": 48.26121855,
+      "lng": 9.89840775,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/61880952), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "kleinwallstadt",
+    "name": "Kleinwallstadt",
+    "center": {
+      "lat": 49.87132145,
+      "lng": 9.173015500000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kleinwallstadt-cc446316f0",
+      "city": "kleinwallstadt",
+      "label": "An der Ortsmauer",
+      "street": "An der Ortsmauer",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kleinwallstadt",
+      "spotCount": 1,
+      "lat": 49.87132145,
+      "lng": 9.166071550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/943984046), ODbL"
+    },
+    {
+      "id": "kleinwallstadt-916aad063a",
+      "city": "kleinwallstadt",
+      "label": "Talstraße 58",
+      "street": "Talstraße",
+      "houseNumber": "58",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kleinwallstadt",
+      "spotCount": 1,
+      "lat": 49.85935785,
+      "lng": 9.20129825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/411616854), ODbL"
+    },
+    {
+      "id": "kleinwallstadt-e13366ba75",
+      "city": "kleinwallstadt",
+      "label": "Weibersweg 22",
+      "street": "Weibersweg",
+      "houseNumber": "22",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kleinwallstadt",
+      "spotCount": 2,
+      "lat": 49.8730228,
+      "lng": 9.173015500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1009558652), ODbL"
+    }
+  ]
+}

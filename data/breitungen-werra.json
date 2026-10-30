@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "breitungen-werra",
+    "name": "Breitungen/Werra",
+    "center": {
+      "lat": 50.7607189,
+      "lng": 10.347356600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "breitungen-werra-d19c367c72",
+      "city": "breitungen-werra",
+      "label": "Schlüsselloch",
+      "street": "Schlüsselloch",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Breitungen/Werra",
+      "spotCount": 1,
+      "lat": 50.7607189,
+      "lng": 10.347356600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1158127920), ODbL"
+    }
+  ]
+}

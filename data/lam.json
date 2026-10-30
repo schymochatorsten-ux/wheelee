@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lam",
+    "name": "Lam",
+    "center": {
+      "lat": 49.216830300000005,
+      "lng": 13.06567785
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lam-aaceab9a8e",
+      "city": "lam",
+      "label": "Behindertenparkplatz Lam",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lam",
+      "spotCount": 1,
+      "lat": 49.216830300000005,
+      "lng": 13.06567785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/377285596), ODbL"
+    }
+  ]
+}

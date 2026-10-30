@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wiesau",
+    "name": "Wiesau",
+    "center": {
+      "lat": 49.904887450000004,
+      "lng": 12.1846535
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wiesau-e7dcc13be3",
+      "city": "wiesau",
+      "label": "Egerstraße",
+      "street": "Egerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wiesau",
+      "spotCount": 7,
+      "lat": 49.904887450000004,
+      "lng": 12.1846535,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/801793901), ODbL"
+    }
+  ]
+}

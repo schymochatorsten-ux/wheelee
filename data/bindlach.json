@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bindlach",
+    "name": "Bindlach",
+    "center": {
+      "lat": 49.995686400000004,
+      "lng": 11.628393650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bindlach-07d06923dd",
+      "city": "bindlach",
+      "label": "Schneebergstraße 23",
+      "street": "Schneebergstraße",
+      "houseNumber": "23",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bindlach",
+      "spotCount": 1,
+      "lat": 49.995686400000004,
+      "lng": 11.628393650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1266738576), ODbL"
+    }
+  ]
+}

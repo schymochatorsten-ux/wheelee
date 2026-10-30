@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "pfaffing",
+    "name": "Pfaffing",
+    "center": {
+      "lat": 48.081774100000004,
+      "lng": 12.09197365
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pfaffing-c60c63d64b",
+      "city": "pfaffing",
+      "label": "P&R Forsting",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pfaffing",
+      "spotCount": 2,
+      "lat": 48.081774100000004,
+      "lng": 12.09197365,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/335825832), ODbL"
+    }
+  ]
+}

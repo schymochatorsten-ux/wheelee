@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bergrheinfeld",
+    "name": "Bergrheinfeld",
+    "center": {
+      "lat": 50.011122150000006,
+      "lng": 10.181955850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bergrheinfeld-277d76e144",
+      "city": "bergrheinfeld",
+      "label": "Oberer Sonnenweg",
+      "street": "Oberer Sonnenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bergrheinfeld",
+      "spotCount": 2,
+      "lat": 50.011122150000006,
+      "lng": 10.181955850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/373804855), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "reinfeld",
+    "name": "Reinfeld (Holstein)",
+    "center": {
+      "lat": 53.8219131,
+      "lng": 10.5010969
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "reinfeld-914a2ae047",
+      "city": "reinfeld",
+      "label": "Bäckerei Junge",
+      "street": "Im Weddern",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Reinfeld (Holstein)",
+      "spotCount": 2,
+      "lat": 53.82295125,
+      "lng": 10.50348125,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/958579343), ODbL"
+    },
+    {
+      "id": "reinfeld-9079651e9e",
+      "city": "reinfeld",
+      "label": "Barnitzer Straße 1-7",
+      "street": "Barnitzer Straße",
+      "houseNumber": "1-7",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Reinfeld (Holstein)",
+      "spotCount": 1,
+      "lat": 53.8219131,
+      "lng": 10.501516200000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4906048992), ODbL"
+    },
+    {
+      "id": "reinfeld-e62d0ee399",
+      "city": "reinfeld",
+      "label": "Barnitzer Straße 1-7",
+      "street": "Barnitzer Straße",
+      "houseNumber": "1-7",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Reinfeld (Holstein)",
+      "spotCount": 1,
+      "lat": 53.8219858,
+      "lng": 10.5009633,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4906048993), ODbL"
+    },
+    {
+      "id": "reinfeld-dcd763bc4b",
+      "city": "reinfeld",
+      "label": "Barnitzer Straße 1-7",
+      "street": "Barnitzer Straße",
+      "houseNumber": "1-7",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Reinfeld (Holstein)",
+      "spotCount": 1,
+      "lat": 53.8217627,
+      "lng": 10.5010969,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4906048994), ODbL"
+    },
+    {
+      "id": "reinfeld-db0cc430c1",
+      "city": "reinfeld",
+      "label": "Trave",
+      "street": "Trave",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Reinfeld (Holstein)",
+      "spotCount": 1,
+      "lat": 53.8187617,
+      "lng": 10.4793244,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/531380003), ODbL"
+    }
+  ]
+}

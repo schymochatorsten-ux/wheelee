@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "pfronten",
+    "name": "Pfronten",
+    "center": {
+      "lat": 47.5854099,
+      "lng": 10.562107300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pfronten-fbcdcce124",
+      "city": "pfronten",
+      "label": "Meilingen Alpenbad P1",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "Mo-Su 06:00-24:00",
+      "district": "Pfronten",
+      "spotCount": 3,
+      "lat": 47.58180875000001,
+      "lng": 10.570451250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/194967391), ODbL"
+    },
+    {
+      "id": "pfronten-d8e21f1ae2",
+      "city": "pfronten",
+      "label": "Rehbichler Weg",
+      "street": "Rehbichler Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pfronten",
+      "spotCount": 1,
+      "lat": 47.598248850000004,
+      "lng": 10.556697750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1217129683), ODbL"
+    },
+    {
+      "id": "pfronten-38e2b37b62",
+      "city": "pfronten",
+      "label": "Ried Bahnhof P1",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Pfronten",
+      "spotCount": 5,
+      "lat": 47.5854099,
+      "lng": 10.560277500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/853992646), ODbL"
+    },
+    {
+      "id": "pfronten-5c4b9fd34a",
+      "city": "pfronten",
+      "label": "Schweinegger Weg",
+      "street": "Schweinegger Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pfronten",
+      "spotCount": 2,
+      "lat": 47.605963200000005,
+      "lng": 10.562107300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9063960539), ODbL"
+    },
+    {
+      "id": "pfronten-1d5285d2aa",
+      "city": "pfronten",
+      "label": "Steinrumpelweg",
+      "street": "Steinrumpelweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pfronten",
+      "spotCount": 1,
+      "lat": 47.5843644,
+      "lng": 10.5675907,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31050820), ODbL"
+    }
+  ]
+}

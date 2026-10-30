@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "freihung",
+    "name": "Freihung",
+    "center": {
+      "lat": 49.62647615,
+      "lng": 11.9121076
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "freihung-39f9dca416",
+      "city": "freihung",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Freihung",
+      "spotCount": 1,
+      "lat": 49.62647615,
+      "lng": 11.90408895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/319694095), ODbL"
+    },
+    {
+      "id": "freihung-7085545181",
+      "city": "freihung",
+      "label": "Am Harranger 1",
+      "street": "Am Harranger",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Freihung",
+      "spotCount": 1,
+      "lat": 49.620125400000006,
+      "lng": 11.9121076,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12529932802), ODbL"
+    }
+  ]
+}

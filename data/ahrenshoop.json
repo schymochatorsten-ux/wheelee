@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ahrenshoop",
+    "name": "Ahrenshoop",
+    "center": {
+      "lat": 54.38922910000001,
+      "lng": 12.43565865
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ahrenshoop-ca4fc27e22",
+      "city": "ahrenshoop",
+      "label": "Dorfstraße",
+      "street": "Dorfstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ahrenshoop",
+      "spotCount": 1,
+      "lat": 54.38922910000001,
+      "lng": 12.43565865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1099899662), ODbL"
+    }
+  ]
+}

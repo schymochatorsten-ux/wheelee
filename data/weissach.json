@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "weissach",
+    "name": "Weissach",
+    "center": {
+      "lat": 48.837225000000004,
+      "lng": 8.91402405
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "weissach-0f8608bd45",
+      "city": "weissach",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Weissach",
+      "spotCount": 1,
+      "lat": 48.8467359,
+      "lng": 8.92912415,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/901642426), ODbL"
+    },
+    {
+      "id": "weissach-3dec771666",
+      "city": "weissach",
+      "label": "Mühlweg",
+      "street": "Mühlweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weissach",
+      "spotCount": 3,
+      "lat": 48.837195900000005,
+      "lng": 8.91402015,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/52924843), ODbL"
+    },
+    {
+      "id": "weissach-48ba60aa1d",
+      "city": "weissach",
+      "label": "Mühlweg",
+      "street": "Mühlweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Weissach",
+      "spotCount": 1,
+      "lat": 48.837225000000004,
+      "lng": 8.914074150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1230712378), ODbL"
+    },
+    {
+      "id": "weissach-ada2b72258",
+      "city": "weissach",
+      "label": "Mühlweg",
+      "street": "Mühlweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Weissach",
+      "spotCount": 1,
+      "lat": 48.83740465,
+      "lng": 8.91402405,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1230712421), ODbL"
+    },
+    {
+      "id": "weissach-50dbef5c33",
+      "city": "weissach",
+      "label": "Weissacher Straße 34",
+      "street": "Weissacher Straße",
+      "houseNumber": "34",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Weissach",
+      "spotCount": 1,
+      "lat": 48.836855,
+      "lng": 8.91376845,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1230712337), ODbL"
+    }
+  ]
+}

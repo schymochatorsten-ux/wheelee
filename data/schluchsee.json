@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "schluchsee",
+    "name": "Schluchsee",
+    "center": {
+      "lat": 47.8186041,
+      "lng": 8.177015
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schluchsee-f7fb5af63d",
+      "city": "schluchsee",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Schluchsee",
+      "spotCount": 1,
+      "lat": 47.816884900000005,
+      "lng": 8.177380500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1388193221), ODbL"
+    },
+    {
+      "id": "schluchsee-e39d32f609",
+      "city": "schluchsee",
+      "label": "Fischbacher Straße 7",
+      "street": "Fischbacher Straße",
+      "houseNumber": "7",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schluchsee",
+      "spotCount": 1,
+      "lat": 47.8186041,
+      "lng": 8.177015,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1425592131), ODbL"
+    },
+    {
+      "id": "schluchsee-54527afc9c",
+      "city": "schluchsee",
+      "label": "Fischbacher Straße 7",
+      "street": "Fischbacher Straße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schluchsee",
+      "spotCount": 1,
+      "lat": 47.8186041,
+      "lng": 8.177015,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1425592132), ODbL"
+    }
+  ]
+}

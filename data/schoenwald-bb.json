@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "schoenwald-bb",
+    "name": "Schönwald",
+    "center": {
+      "lat": 51.9944555,
+      "lng": 13.726537650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schoenwald-bb-68f45cefd2",
+      "city": "schoenwald-bb",
+      "label": "Am Bugkgraben",
+      "street": "Am Bugkgraben",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schönwald",
+      "spotCount": 2,
+      "lat": 51.9944555,
+      "lng": 13.724304250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/284970037), ODbL"
+    },
+    {
+      "id": "schoenwald-bb-d23d7fb926",
+      "city": "schoenwald-bb",
+      "label": "Krausnicker Berge",
+      "street": "Krausnicker Berge",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schönwald",
+      "spotCount": 2,
+      "lat": 51.994360150000006,
+      "lng": 13.726537650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/968819590), ODbL"
+    }
+  ]
+}

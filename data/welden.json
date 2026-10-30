@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "welden",
+    "name": "Welden",
+    "center": {
+      "lat": 48.449647000000006,
+      "lng": 10.662194900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "welden-20bae44837",
+      "city": "welden",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Welden",
+      "spotCount": 1,
+      "lat": 48.449647000000006,
+      "lng": 10.662194900000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12892748548), ODbL"
+    }
+  ]
+}

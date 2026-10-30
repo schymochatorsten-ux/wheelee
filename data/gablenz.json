@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "gablenz",
+    "name": "Gablenz",
+    "center": {
+      "lat": 51.53764580000001,
+      "lng": 14.63665065
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gablenz-3fc7e1e645",
+      "city": "gablenz",
+      "label": "Parkplatz Rhododendronpark Kromlau",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Gablenz",
+      "spotCount": 2,
+      "lat": 51.53764580000001,
+      "lng": 14.63665065,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/221515057), ODbL"
+    }
+  ]
+}

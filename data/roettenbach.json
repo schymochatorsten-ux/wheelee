@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "roettenbach",
+    "name": "Röttenbach",
+    "center": {
+      "lat": 49.668148800000004,
+      "lng": 10.926718750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "roettenbach-a0bda48b2c",
+      "city": "roettenbach",
+      "label": "Lohmühlweg",
+      "street": "Lohmühlweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Röttenbach",
+      "spotCount": 1,
+      "lat": 49.659738250000004,
+      "lng": 10.922188250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1172741691), ODbL"
+    },
+    {
+      "id": "roettenbach-cab0d873b7",
+      "city": "roettenbach",
+      "label": "Pfarrstraße",
+      "street": "Pfarrstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Röttenbach",
+      "spotCount": 1,
+      "lat": 49.67145260000001,
+      "lng": 10.92856375,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/55822387), ODbL"
+    },
+    {
+      "id": "roettenbach-ec90419ff5",
+      "city": "roettenbach",
+      "label": "Ringstraße",
+      "street": "Ringstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Röttenbach",
+      "spotCount": 1,
+      "lat": 49.668148800000004,
+      "lng": 10.926718750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/53513390), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "erolzheim",
+    "name": "Erolzheim",
+    "center": {
+      "lat": 48.09010355,
+      "lng": 10.072286550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "erolzheim-7b09b45860",
+      "city": "erolzheim",
+      "label": "Marktplatz 11",
+      "street": "Marktplatz",
+      "houseNumber": "11",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Erolzheim",
+      "spotCount": 1,
+      "lat": 48.09010355,
+      "lng": 10.072286550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1311779066), ODbL"
+    }
+  ]
+}

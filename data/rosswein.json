@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "rosswein",
+    "name": "Roßwein",
+    "center": {
+      "lat": 51.06558745,
+      "lng": 13.18442185
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rosswein-a5b59de4ff",
+      "city": "rosswein",
+      "label": "Markt 15",
+      "street": "Markt",
+      "houseNumber": "15",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Roßwein",
+      "spotCount": 1,
+      "lat": 51.064986250000004,
+      "lng": 13.18442185,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/765835737), ODbL"
+    },
+    {
+      "id": "rosswein-2af3c2701d",
+      "city": "rosswein",
+      "label": "Obere Weinbergstraße 7b",
+      "street": "Obere Weinbergstraße",
+      "houseNumber": "7b",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Roßwein",
+      "spotCount": 1,
+      "lat": 51.06558745,
+      "lng": 13.179221900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/52069885), ODbL"
+    }
+  ]
+}

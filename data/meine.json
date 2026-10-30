@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "meine",
+    "name": "Meine",
+    "center": {
+      "lat": 52.38134075000001,
+      "lng": 10.539790150000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "meine-0a60bfe739",
+      "city": "meine",
+      "label": "Am Kiebitzmoor",
+      "street": "Am Kiebitzmoor",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Meine",
+      "spotCount": 2,
+      "lat": 52.3870582,
+      "lng": 10.545539250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/425628936), ODbL"
+    },
+    {
+      "id": "meine-cfed97c682",
+      "city": "meine",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Meine",
+      "spotCount": 2,
+      "lat": 52.38307090000001,
+      "lng": 10.535108600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/192661931), ODbL"
+    },
+    {
+      "id": "meine-e0cea52c5b",
+      "city": "meine",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Meine",
+      "spotCount": 1,
+      "lat": 52.38054065,
+      "lng": 10.536761900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/41908577), ODbL"
+    },
+    {
+      "id": "meine-50dc723b07",
+      "city": "meine",
+      "label": "Hauptstraße 26",
+      "street": "Hauptstraße",
+      "houseNumber": "26",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Meine",
+      "spotCount": 1,
+      "lat": 52.38055125,
+      "lng": 10.539790150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/42564259), ODbL"
+    },
+    {
+      "id": "meine-2790ff0ace",
+      "city": "meine",
+      "label": "Mittelstraße 1",
+      "street": "Mittelstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Meine",
+      "spotCount": 1,
+      "lat": 52.38134075000001,
+      "lng": 10.541622100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/42878774), ODbL"
+    }
+  ]
+}

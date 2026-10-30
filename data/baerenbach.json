@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "baerenbach",
+    "name": "Bärenbach",
+    "center": {
+      "lat": 49.747892400000005,
+      "lng": 7.4377718
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "baerenbach-40174a9d62",
+      "city": "baerenbach",
+      "label": "Am Sportplatz",
+      "street": "Am Sportplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bärenbach",
+      "spotCount": 3,
+      "lat": 49.747892400000005,
+      "lng": 7.437617,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/469366318), ODbL"
+    },
+    {
+      "id": "baerenbach-c7dd511927",
+      "city": "baerenbach",
+      "label": "Am Sportplatz 6",
+      "street": "Am Sportplatz",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bärenbach",
+      "spotCount": 2,
+      "lat": 49.7477773,
+      "lng": 7.4377718,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/469366319), ODbL"
+    }
+  ]
+}

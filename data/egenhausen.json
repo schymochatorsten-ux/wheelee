@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "egenhausen",
+    "name": "Egenhausen",
+    "center": {
+      "lat": 48.57816820000001,
+      "lng": 8.59583365
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "egenhausen-c1b372e6c3",
+      "city": "egenhausen",
+      "label": "Carl-von-Luz-Straße 4",
+      "street": "Carl-von-Luz-Straße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Egenhausen",
+      "spotCount": 1,
+      "lat": 48.57816820000001,
+      "lng": 8.59583365,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1007652108), ODbL"
+    }
+  ]
+}

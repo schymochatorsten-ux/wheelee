@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kruft",
+    "name": "Kruft",
+    "center": {
+      "lat": 50.38720605,
+      "lng": 7.336574950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kruft-d9e0f958e3",
+      "city": "kruft",
+      "label": "Kruppstraße 13",
+      "street": "Kruppstraße",
+      "houseNumber": "13",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kruft",
+      "spotCount": 1,
+      "lat": 50.38720605,
+      "lng": 7.336574950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1304550798), ODbL"
+    }
+  ]
+}

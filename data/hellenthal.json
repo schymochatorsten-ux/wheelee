@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hellenthal",
+    "name": "Hellenthal",
+    "center": {
+      "lat": 50.49093035,
+      "lng": 6.466083650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hellenthal-036b02631c",
+      "city": "hellenthal",
+      "label": "In der Freiheit",
+      "street": "In der Freiheit",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hellenthal",
+      "spotCount": 1,
+      "lat": 50.47776635,
+      "lng": 6.466083650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1211352084), ODbL"
+    },
+    {
+      "id": "hellenthal-45d7f26904",
+      "city": "hellenthal",
+      "label": "Kölner Straße 11",
+      "street": "Kölner Straße",
+      "houseNumber": "11",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hellenthal",
+      "spotCount": 1,
+      "lat": 50.49093035,
+      "lng": 6.4363185000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1494424700), ODbL"
+    }
+  ]
+}

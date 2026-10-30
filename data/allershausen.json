@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "allershausen",
+    "name": "Allershausen",
+    "center": {
+      "lat": 48.43127565,
+      "lng": 11.59860355
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "allershausen-b73505afb3",
+      "city": "allershausen",
+      "label": "Ludwig-Thoma-Straße",
+      "street": "Ludwig-Thoma-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Allershausen",
+      "spotCount": 1,
+      "lat": 48.43127565,
+      "lng": 11.59860355,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/199085911), ODbL"
+    }
+  ]
+}

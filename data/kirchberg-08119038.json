@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "kirchberg-08119038",
+    "name": "Kirchberg an der Murr",
+    "center": {
+      "lat": 48.93917395,
+      "lng": 9.329682850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kirchberg-08119038-4df9efbde8",
+      "city": "kirchberg-08119038",
+      "label": "Affalterbacher Straße",
+      "street": "Affalterbacher Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kirchberg an der Murr",
+      "spotCount": 1,
+      "lat": 48.93917395,
+      "lng": 9.329605200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1414637331), ODbL"
+    },
+    {
+      "id": "kirchberg-08119038-2eace52e33",
+      "city": "kirchberg-08119038",
+      "label": "Affalterbacher Straße",
+      "street": "Affalterbacher Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kirchberg an der Murr",
+      "spotCount": 1,
+      "lat": 48.93923635,
+      "lng": 9.329682850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1414637332), ODbL"
+    },
+    {
+      "id": "kirchberg-08119038-32dadef36e",
+      "city": "kirchberg-08119038",
+      "label": "P+R Kirchberg (Murr) Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Kirchberg an der Murr",
+      "spotCount": 2,
+      "lat": 48.939108600000004,
+      "lng": 9.330001600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/507385006), ODbL"
+    }
+  ]
+}

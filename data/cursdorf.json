@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "cursdorf",
+    "name": "Cursdorf",
+    "center": {
+      "lat": 50.5719301,
+      "lng": 11.127275800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "cursdorf-7f65fed910",
+      "city": "cursdorf",
+      "label": "Ortsstraße 23",
+      "street": "Ortsstraße",
+      "houseNumber": "23",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Cursdorf",
+      "spotCount": 1,
+      "lat": 50.571781900000005,
+      "lng": 11.127246300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10003925499), ODbL"
+    },
+    {
+      "id": "cursdorf-431afd5f37",
+      "city": "cursdorf",
+      "label": "Ortsstraße 23",
+      "street": "Ortsstraße",
+      "houseNumber": "23",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Cursdorf",
+      "spotCount": 1,
+      "lat": 50.5719301,
+      "lng": 11.127275800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10003925500), ODbL"
+    }
+  ]
+}

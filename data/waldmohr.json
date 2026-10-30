@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "waldmohr",
+    "name": "Waldmohr",
+    "center": {
+      "lat": 49.387888000000004,
+      "lng": 7.33423015
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "waldmohr-a94fc2ed2d",
+      "city": "waldmohr",
+      "label": "Badstraße",
+      "street": "Badstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Waldmohr",
+      "spotCount": 1,
+      "lat": 49.39038515,
+      "lng": 7.338998350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1462098843), ODbL"
+    },
+    {
+      "id": "waldmohr-76fdcaf53e",
+      "city": "waldmohr",
+      "label": "Penny",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldmohr",
+      "spotCount": 1,
+      "lat": 49.38018410000001,
+      "lng": 7.32996475,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31769778), ODbL"
+    },
+    {
+      "id": "waldmohr-6415e1d695",
+      "city": "waldmohr",
+      "label": "Weiherstraße 2",
+      "street": "Weiherstraße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Waldmohr",
+      "spotCount": 1,
+      "lat": 49.387888000000004,
+      "lng": 7.333546200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1473694456), ODbL"
+    },
+    {
+      "id": "waldmohr-b7a4acce2e",
+      "city": "waldmohr",
+      "label": "Weiherstraße 6",
+      "street": "Weiherstraße",
+      "houseNumber": "6",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Waldmohr",
+      "spotCount": 1,
+      "lat": 49.38776335,
+      "lng": 7.33423015,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1473694459), ODbL"
+    }
+  ]
+}

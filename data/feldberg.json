@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "feldberg",
+    "name": "Feldberg (Schwarzwald)",
+    "center": {
+      "lat": 47.86867275,
+      "lng": 8.096123
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "feldberg-2bb936eb65",
+      "city": "feldberg",
+      "label": "Feldbergstraße",
+      "street": "Feldbergstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Feldberg (Schwarzwald)",
+      "spotCount": 1,
+      "lat": 47.86867275,
+      "lng": 8.096123,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1075855747), ODbL"
+    },
+    {
+      "id": "feldberg-8cb88e9312",
+      "city": "feldberg",
+      "label": "Franz-Klarmeyer-Weg",
+      "street": "Franz-Klarmeyer-Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Feldberg (Schwarzwald)",
+      "spotCount": 1,
+      "lat": 47.8604167,
+      "lng": 8.034741050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1027400154), ODbL"
+    },
+    {
+      "id": "feldberg-6dc1c7e8aa",
+      "city": "feldberg",
+      "label": "Parkplatz Lidl",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Feldberg (Schwarzwald)",
+      "spotCount": 2,
+      "lat": 47.86883795,
+      "lng": 8.09660835,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/178047042), ODbL"
+    }
+  ]
+}

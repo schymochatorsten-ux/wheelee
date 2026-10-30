@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "schoellkrippen",
+    "name": "Schöllkrippen",
+    "center": {
+      "lat": 50.0846071,
+      "lng": 9.245773
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schoellkrippen-cd7c333757",
+      "city": "schoellkrippen",
+      "label": "Aschaffenburger Straße",
+      "street": "Aschaffenburger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schöllkrippen",
+      "spotCount": 2,
+      "lat": 50.081388600000004,
+      "lng": 9.245353099999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/281218419), ODbL"
+    },
+    {
+      "id": "schoellkrippen-fc300b70b7",
+      "city": "schoellkrippen",
+      "label": "Aschaffenburger Straße",
+      "street": "Aschaffenburger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schöllkrippen",
+      "spotCount": 2,
+      "lat": 50.0846071,
+      "lng": 9.245773,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/281224399), ODbL"
+    },
+    {
+      "id": "schoellkrippen-7cd3837729",
+      "city": "schoellkrippen",
+      "label": "Obere Schulstraße",
+      "street": "Obere Schulstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schöllkrippen",
+      "spotCount": 3,
+      "lat": 50.08524150000001,
+      "lng": 9.2545099,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/23267877), ODbL"
+    }
+  ]
+}

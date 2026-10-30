@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "ahnatal",
+    "name": "Ahnatal",
+    "center": {
+      "lat": 51.36631920000001,
+      "lng": 9.4331417
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ahnatal-e58a1ce23e",
+      "city": "ahnatal",
+      "label": "Casselbreite",
+      "street": "Casselbreite",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ahnatal",
+      "spotCount": 2,
+      "lat": 51.3626985,
+      "lng": 9.4331417,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/549891810), ODbL"
+    },
+    {
+      "id": "ahnatal-9ae2fdcd3c",
+      "city": "ahnatal",
+      "label": "Dorfplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ahnatal",
+      "spotCount": 1,
+      "lat": 51.36631920000001,
+      "lng": 9.42846755,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/37766080), ODbL"
+    }
+  ]
+}

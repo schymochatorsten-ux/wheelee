@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "weil-bw",
+    "name": "Weil im Schönbuch",
+    "center": {
+      "lat": 48.621569,
+      "lng": 9.06157585
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "weil-bw-8db618afe6",
+      "city": "weil-bw",
+      "label": "Arthur-Hecker-Straße",
+      "street": "Arthur-Hecker-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weil im Schönbuch",
+      "spotCount": 7,
+      "lat": 48.6178544,
+      "lng": 9.0306612,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1483441410), ODbL"
+    },
+    {
+      "id": "weil-bw-fca7ea8bd3",
+      "city": "weil-bw",
+      "label": "Dettenhäuser Straße",
+      "street": "Dettenhäuser Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weil im Schönbuch",
+      "spotCount": 20,
+      "lat": 48.621569,
+      "lng": 9.0689914,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8639700308), ODbL"
+    },
+    {
+      "id": "weil-bw-4760edd6b9",
+      "city": "weil-bw",
+      "label": "Fuchsweg",
+      "street": "Fuchsweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weil im Schönbuch",
+      "spotCount": 5,
+      "lat": 48.621889900000006,
+      "lng": 9.0702064,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8639700307), ODbL"
+    },
+    {
+      "id": "weil-bw-74eb24f05a",
+      "city": "weil-bw",
+      "label": "Lachentalstraße",
+      "street": "Lachentalstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weil im Schönbuch",
+      "spotCount": 1,
+      "lat": 48.6211679,
+      "lng": 9.0417247,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/47809193), ODbL"
+    },
+    {
+      "id": "weil-bw-31c782a514",
+      "city": "weil-bw",
+      "label": "Metzgerstraße 4",
+      "street": "Metzgerstraße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weil im Schönbuch",
+      "spotCount": 3,
+      "lat": 48.6218219,
+      "lng": 9.06157585,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1352650483), ODbL"
+    },
+    {
+      "id": "weil-bw-0904200ae2",
+      "city": "weil-bw",
+      "label": "Parkplatz kath. Kirche",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weil im Schönbuch",
+      "spotCount": 1,
+      "lat": 48.6211357,
+      "lng": 9.0469317,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/54843811), ODbL"
+    }
+  ]
+}

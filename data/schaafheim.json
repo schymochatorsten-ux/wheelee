@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schaafheim",
+    "name": "Schaafheim",
+    "center": {
+      "lat": 49.89204405,
+      "lng": 9.03474825
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schaafheim-c821841d58",
+      "city": "schaafheim",
+      "label": "Wenigumstädter Straße",
+      "street": "Wenigumstädter Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schaafheim",
+      "spotCount": 2,
+      "lat": 49.89204405,
+      "lng": 9.03474825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/585331620), ODbL"
+    }
+  ]
+}

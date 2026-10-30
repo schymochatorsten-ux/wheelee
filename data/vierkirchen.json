@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "vierkirchen",
+    "name": "Vierkirchen",
+    "center": {
+      "lat": 48.3608594,
+      "lng": 11.45024965
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "vierkirchen-c6af113295",
+      "city": "vierkirchen",
+      "label": "Frühlingstraße",
+      "street": "Frühlingstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vierkirchen",
+      "spotCount": 1,
+      "lat": 48.3607789,
+      "lng": 11.450344600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10857614305), ODbL"
+    },
+    {
+      "id": "vierkirchen-a8297fe682",
+      "city": "vierkirchen",
+      "label": "Frühlingstraße",
+      "street": "Frühlingstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Vierkirchen",
+      "spotCount": 1,
+      "lat": 48.3608594,
+      "lng": 11.45024965,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1205987358), ODbL"
+    },
+    {
+      "id": "vierkirchen-f247b4cc3e",
+      "city": "vierkirchen",
+      "label": "P+R",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vierkirchen",
+      "spotCount": 1,
+      "lat": 48.361817450000004,
+      "lng": 11.44505375,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/95110995), ODbL"
+    }
+  ]
+}

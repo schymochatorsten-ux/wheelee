@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "sohland-a-d-spree",
+    "name": "Sohland a.d.Spree",
+    "center": {
+      "lat": 51.0539999,
+      "lng": 14.431129250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sohland-a-d-spree-bd4426354a",
+      "city": "sohland-a-d-spree",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sohland a.d.Spree",
+      "spotCount": 2,
+      "lat": 51.05396695,
+      "lng": 14.431129250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/51454947), ODbL"
+    },
+    {
+      "id": "sohland-a-d-spree-9b22d35c4f",
+      "city": "sohland-a-d-spree",
+      "label": "Poststraße 1",
+      "street": "Poststraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sohland a.d.Spree",
+      "spotCount": 1,
+      "lat": 51.0539999,
+      "lng": 14.382652750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/810496626), ODbL"
+    }
+  ]
+}

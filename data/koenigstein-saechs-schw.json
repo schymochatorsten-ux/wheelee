@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "koenigstein-saechs-schw",
+    "name": "Königstein/Sächs.Schw.",
+    "center": {
+      "lat": 50.918905900000006,
+      "lng": 14.06815895
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "koenigstein-saechs-schw-70f101054f",
+      "city": "koenigstein-saechs-schw",
+      "label": "Behinderten-Parkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Königstein/Sächs.Schw.",
+      "spotCount": 1,
+      "lat": 50.918905900000006,
+      "lng": 14.0546702,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/429889767), ODbL"
+    },
+    {
+      "id": "koenigstein-saechs-schw-195774a99d",
+      "city": "koenigstein-saechs-schw",
+      "label": "Dresdner Straße",
+      "street": "Dresdner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Königstein/Sächs.Schw.",
+      "spotCount": 2,
+      "lat": 50.91979365,
+      "lng": 14.068280050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/453107648), ODbL"
+    },
+    {
+      "id": "koenigstein-saechs-schw-0a0c8b8993",
+      "city": "koenigstein-saechs-schw",
+      "label": "Dresdner Straße 6B",
+      "street": "Dresdner Straße",
+      "houseNumber": "6B",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Königstein/Sächs.Schw.",
+      "spotCount": 1,
+      "lat": 50.91961585,
+      "lng": 14.06815895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/453362887), ODbL"
+    },
+    {
+      "id": "koenigstein-saechs-schw-9ff1130fc5",
+      "city": "koenigstein-saechs-schw",
+      "label": "Königsteiner Straße 51",
+      "street": "Königsteiner Straße",
+      "houseNumber": "51",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Königstein/Sächs.Schw.",
+      "spotCount": 3,
+      "lat": 50.9178287,
+      "lng": 14.026678500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/501031681), ODbL"
+    },
+    {
+      "id": "koenigstein-saechs-schw-415374380b",
+      "city": "koenigstein-saechs-schw",
+      "label": "Parkplatz an der Säule",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Königstein/Sächs.Schw.",
+      "spotCount": 1,
+      "lat": 50.89609835,
+      "lng": 14.095294800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/652844812), ODbL"
+    }
+  ]
+}

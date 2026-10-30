@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "colbitz",
+    "name": "Colbitz",
+    "center": {
+      "lat": 52.3162722,
+      "lng": 11.608866200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "colbitz-490cb98eef",
+      "city": "colbitz",
+      "label": "Jungfernstieg",
+      "street": "Jungfernstieg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Colbitz",
+      "spotCount": 1,
+      "lat": 52.316241500000004,
+      "lng": 11.608866200000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11190404308), ODbL"
+    },
+    {
+      "id": "colbitz-b56e18eeef",
+      "city": "colbitz",
+      "label": "Wolmirstedter Straße 5",
+      "street": "Wolmirstedter Straße",
+      "houseNumber": "5",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Colbitz",
+      "spotCount": 1,
+      "lat": 52.3162722,
+      "lng": 11.608861600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11190427044), ODbL"
+    }
+  ]
+}

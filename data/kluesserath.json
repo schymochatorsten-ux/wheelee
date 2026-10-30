@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kluesserath",
+    "name": "Klüsserath",
+    "center": {
+      "lat": 49.84295395000001,
+      "lng": 6.84996535
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kluesserath-444d8487a2",
+      "city": "kluesserath",
+      "label": "Dammstraße 6",
+      "street": "Dammstraße",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Klüsserath",
+      "spotCount": 1,
+      "lat": 49.84295395000001,
+      "lng": 6.84996535,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1085288379), ODbL"
+    }
+  ]
+}

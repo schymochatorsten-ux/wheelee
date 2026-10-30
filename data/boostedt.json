@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "boostedt",
+    "name": "Boostedt",
+    "center": {
+      "lat": 54.007929000000004,
+      "lng": 10.027739650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "boostedt-c7f13f84bf",
+      "city": "boostedt",
+      "label": "Dorfring 47",
+      "street": "Dorfring",
+      "houseNumber": "47",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Boostedt",
+      "spotCount": 3,
+      "lat": 54.007929000000004,
+      "lng": 10.027739650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1564725611), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bisingen",
+    "name": "Bisingen",
+    "center": {
+      "lat": 48.3101812,
+      "lng": 8.9179826
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bisingen-be9fe0efd4",
+      "city": "bisingen",
+      "label": "Kirchgasse 14",
+      "street": "Kirchgasse",
+      "houseNumber": "14",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bisingen",
+      "spotCount": 1,
+      "lat": 48.3095865,
+      "lng": 8.9179826,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13302301699), ODbL"
+    },
+    {
+      "id": "bisingen-8a5877f7e3",
+      "city": "bisingen",
+      "label": "Klingenbachstraße 5",
+      "street": "Klingenbachstraße",
+      "houseNumber": "5",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bisingen",
+      "spotCount": 1,
+      "lat": 48.3101812,
+      "lng": 8.917753000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13342387483), ODbL"
+    }
+  ]
+}

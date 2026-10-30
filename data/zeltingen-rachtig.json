@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "zeltingen-rachtig",
+    "name": "Zeltingen-Rachtig",
+    "center": {
+      "lat": 49.96197775,
+      "lng": 7.0158997
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zeltingen-rachtig-6db388ffad",
+      "city": "zeltingen-rachtig",
+      "label": "Moselblick",
+      "street": "Moselblick",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zeltingen-Rachtig",
+      "spotCount": 3,
+      "lat": 49.96197775,
+      "lng": 7.0158980500000006,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1301373720), ODbL"
+    },
+    {
+      "id": "zeltingen-rachtig-b7c149d410",
+      "city": "zeltingen-rachtig",
+      "label": "Moselblick",
+      "street": "Moselblick",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Zeltingen-Rachtig",
+      "spotCount": 1,
+      "lat": 49.96201765,
+      "lng": 7.015892050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1395181608), ODbL"
+    },
+    {
+      "id": "zeltingen-rachtig-f08e882ddc",
+      "city": "zeltingen-rachtig",
+      "label": "Moselblick",
+      "street": "Moselblick",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Zeltingen-Rachtig",
+      "spotCount": 1,
+      "lat": 49.96197735,
+      "lng": 7.0158997,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1395181609), ODbL"
+    },
+    {
+      "id": "zeltingen-rachtig-0097e24412",
+      "city": "zeltingen-rachtig",
+      "label": "Moselblick",
+      "street": "Moselblick",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Zeltingen-Rachtig",
+      "spotCount": 1,
+      "lat": 49.96193635,
+      "lng": 7.01590805,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1395181610), ODbL"
+    }
+  ]
+}

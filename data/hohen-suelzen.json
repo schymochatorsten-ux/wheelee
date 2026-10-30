@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hohen-suelzen",
+    "name": "Hohen-Sülzen",
+    "center": {
+      "lat": 49.62159545,
+      "lng": 8.2142631
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hohen-suelzen-c54c6684c0",
+      "city": "hohen-suelzen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hohen-Sülzen",
+      "spotCount": 1,
+      "lat": 49.62159545,
+      "lng": 8.2142631,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1077667721), ODbL"
+    }
+  ]
+}

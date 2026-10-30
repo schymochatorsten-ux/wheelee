@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "rheinbreitbach",
+    "name": "Rheinbreitbach",
+    "center": {
+      "lat": 50.62610360000001,
+      "lng": 7.22372865
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rheinbreitbach-7353390d71",
+      "city": "rheinbreitbach",
+      "label": "Im Rosenfeld",
+      "street": "Im Rosenfeld",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rheinbreitbach",
+      "spotCount": 1,
+      "lat": 50.62610360000001,
+      "lng": 7.22372865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1491670590), ODbL"
+    }
+  ]
+}

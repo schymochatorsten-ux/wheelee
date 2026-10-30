@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "etzenricht",
+    "name": "Etzenricht",
+    "center": {
+      "lat": 49.623159900000005,
+      "lng": 12.094872650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "etzenricht-58c5214ab4",
+      "city": "etzenricht",
+      "label": "Wildenauer Straße",
+      "street": "Wildenauer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Sa 07:00-20:00",
+      "district": "Etzenricht",
+      "spotCount": 2,
+      "lat": 49.623159900000005,
+      "lng": 12.094872650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/485931904), ODbL"
+    }
+  ]
+}

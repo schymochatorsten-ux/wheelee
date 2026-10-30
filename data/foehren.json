@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "foehren",
+    "name": "Föhren",
+    "center": {
+      "lat": 49.85864405,
+      "lng": 6.764934950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "foehren-fa8c8db741",
+      "city": "foehren",
+      "label": "Hauptstraße 16",
+      "street": "Hauptstraße",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Föhren",
+      "spotCount": 1,
+      "lat": 49.857759400000006,
+      "lng": 6.76310915,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/158568321), ODbL"
+    },
+    {
+      "id": "foehren-1b028bb071",
+      "city": "foehren",
+      "label": "Im Maar 3",
+      "street": "Im Maar",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Föhren",
+      "spotCount": 1,
+      "lat": 49.85864405,
+      "lng": 6.764934950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/466644758), ODbL"
+    }
+  ]
+}

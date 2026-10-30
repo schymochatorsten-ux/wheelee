@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "pelm",
+    "name": "Pelm",
+    "center": {
+      "lat": 50.228045050000006,
+      "lng": 6.67853715
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pelm-a78926f93f",
+      "city": "pelm",
+      "label": "Lokschuppen Gerolstein",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pelm",
+      "spotCount": 1,
+      "lat": 50.228045050000006,
+      "lng": 6.67853715,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/196094554), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hahn-rp",
+    "name": "Hahn am See",
+    "center": {
+      "lat": 50.5237069,
+      "lng": 7.888066800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hahn-rp-bb8008ad2c",
+      "city": "hahn-rp",
+      "label": "Bachwiese 16",
+      "street": "Bachwiese",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hahn am See",
+      "spotCount": 1,
+      "lat": 50.5237069,
+      "lng": 7.888066800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1038466324), ODbL"
+    }
+  ]
+}

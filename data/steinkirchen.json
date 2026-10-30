@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "steinkirchen",
+    "name": "Steinkirchen",
+    "center": {
+      "lat": 53.56952325,
+      "lng": 9.604340350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "steinkirchen-9f57576ac9",
+      "city": "steinkirchen",
+      "label": "Striep",
+      "street": "Striep",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Steinkirchen",
+      "spotCount": 1,
+      "lat": 53.56952325,
+      "lng": 9.604340350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32862891), ODbL"
+    }
+  ]
+}

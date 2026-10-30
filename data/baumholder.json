@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "baumholder",
+    "name": "Baumholder",
+    "center": {
+      "lat": 49.62149575000001,
+      "lng": 7.335359500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "baumholder-30d6a03f34",
+      "city": "baumholder",
+      "label": "Krankenhausweg",
+      "street": "Krankenhausweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Baumholder",
+      "spotCount": 4,
+      "lat": 49.62149575000001,
+      "lng": 7.335359500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/747438811), ODbL"
+    }
+  ]
+}

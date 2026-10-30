@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "neuenkirchen-mv",
+    "name": "Neuenkirchen",
+    "center": {
+      "lat": 54.1205416,
+      "lng": 13.3592188
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuenkirchen-mv-a61de28680",
+      "city": "neuenkirchen-mv",
+      "label": "Dorfstraße",
+      "street": "Dorfstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neuenkirchen",
+      "spotCount": 1,
+      "lat": 54.1205416,
+      "lng": 13.3592188,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12145891407), ODbL"
+    },
+    {
+      "id": "neuenkirchen-mv-f324c779bc",
+      "city": "neuenkirchen-mv",
+      "label": "Dorfstraße",
+      "street": "Dorfstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neuenkirchen",
+      "spotCount": 1,
+      "lat": 54.120509600000005,
+      "lng": 13.359209100000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12145901710), ODbL"
+    }
+  ]
+}

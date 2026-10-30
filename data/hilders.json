@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hilders",
+    "name": "Hilders",
+    "center": {
+      "lat": 50.568964750000006,
+      "lng": 9.99319445
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hilders-c71eccaffd",
+      "city": "hilders",
+      "label": "Behinderten Parkplatz Praxis",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hilders",
+      "spotCount": 1,
+      "lat": 50.5439116,
+      "lng": 9.989787600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2284485837), ODbL"
+    },
+    {
+      "id": "hilders-cfe2bc2a8e",
+      "city": "hilders",
+      "label": "Heideweg",
+      "street": "Heideweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hilders",
+      "spotCount": 2,
+      "lat": 50.568964750000006,
+      "lng": 9.99319445,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/344264261), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "oberthulba",
+    "name": "Oberthulba",
+    "center": {
+      "lat": 50.2051072,
+      "lng": 9.96173635
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberthulba-12321141d6",
+      "city": "oberthulba",
+      "label": "Am Marktplatz 9",
+      "street": "Am Marktplatz",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberthulba",
+      "spotCount": 1,
+      "lat": 50.198530250000005,
+      "lng": 9.96173635,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/754938179), ODbL"
+    },
+    {
+      "id": "oberthulba-b6d9c63c00",
+      "city": "oberthulba",
+      "label": "Waldstraße",
+      "street": "Waldstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberthulba",
+      "spotCount": 10,
+      "lat": 50.2051072,
+      "lng": 9.956162800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/197247877), ODbL"
+    }
+  ]
+}

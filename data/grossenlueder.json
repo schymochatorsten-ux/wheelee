@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "grossenlueder",
+    "name": "Großenlüder",
+    "center": {
+      "lat": 50.59098585,
+      "lng": 9.5054408
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grossenlueder-56f1a48f8c",
+      "city": "grossenlueder",
+      "label": "Georg-Otterbein-Straße 1",
+      "street": "Georg-Otterbein-Straße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großenlüder",
+      "spotCount": 2,
+      "lat": 50.59098585,
+      "lng": 9.5044976,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/146060865), ODbL"
+    },
+    {
+      "id": "grossenlueder-5a7161e0f6",
+      "city": "grossenlueder",
+      "label": "Kirchweg 1",
+      "street": "Kirchweg",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großenlüder",
+      "spotCount": 1,
+      "lat": 50.590013850000005,
+      "lng": 9.5054408,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/146060863), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "trittenheim",
+    "name": "Trittenheim",
+    "center": {
+      "lat": 49.8233845,
+      "lng": 6.900451
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "trittenheim-c6dddf7c7a",
+      "city": "trittenheim",
+      "label": "Moselweinstraße 50",
+      "street": "Moselweinstraße",
+      "houseNumber": "50",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Trittenheim",
+      "spotCount": 1,
+      "lat": 49.8233845,
+      "lng": 6.900451,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/618275449), ODbL"
+    },
+    {
+      "id": "trittenheim-6d5ed47e0e",
+      "city": "trittenheim",
+      "label": "Moselweinstraße 50",
+      "street": "Moselweinstraße",
+      "houseNumber": "50",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Trittenheim",
+      "spotCount": 1,
+      "lat": 49.82333555,
+      "lng": 6.90037895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1124640574), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bruecken",
+    "name": "Brücken (Pfalz)",
+    "center": {
+      "lat": 49.43278295,
+      "lng": 7.360009450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bruecken-43963886be",
+      "city": "bruecken",
+      "label": "Hauptstraße 61",
+      "street": "Hauptstraße",
+      "houseNumber": "61",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Brücken (Pfalz)",
+      "spotCount": 1,
+      "lat": 49.43278295,
+      "lng": 7.360009450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1487707180), ODbL"
+    }
+  ]
+}

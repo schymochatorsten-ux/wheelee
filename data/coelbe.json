@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "coelbe",
+    "name": "Cölbe",
+    "center": {
+      "lat": 50.85368255,
+      "lng": 8.81752235
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "coelbe-b27eda8476",
+      "city": "coelbe",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Cölbe",
+      "spotCount": 1,
+      "lat": 50.85368255,
+      "lng": 8.81752235,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1336836469), ODbL"
+    },
+    {
+      "id": "coelbe-82d257e798",
+      "city": "coelbe",
+      "label": "Industriestraße",
+      "street": "Industriestraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Cölbe",
+      "spotCount": 1,
+      "lat": 50.84983745,
+      "lng": 8.77350945,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1204267487), ODbL"
+    }
+  ]
+}

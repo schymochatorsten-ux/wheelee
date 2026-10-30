@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "sontheim",
+    "name": "Sontheim an der Brenz",
+    "center": {
+      "lat": 48.55902085,
+      "lng": 10.289219200000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sontheim-ce2507a643",
+      "city": "sontheim",
+      "label": "Brenzer Straße",
+      "street": "Brenzer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sontheim an der Brenz",
+      "spotCount": 1,
+      "lat": 48.5589171,
+      "lng": 10.2895552,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/419199461), ODbL"
+    },
+    {
+      "id": "sontheim-8b213262fc",
+      "city": "sontheim",
+      "label": "Brenzer Straße 31",
+      "street": "Brenzer Straße",
+      "houseNumber": "31",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sontheim an der Brenz",
+      "spotCount": 1,
+      "lat": 48.5592102,
+      "lng": 10.289219200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/419199460), ODbL"
+    },
+    {
+      "id": "sontheim-b50549a8fa",
+      "city": "sontheim",
+      "label": "Brenzer Straße 31",
+      "street": "Brenzer Straße",
+      "houseNumber": "31",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sontheim an der Brenz",
+      "spotCount": 2,
+      "lat": 48.55902085,
+      "lng": 10.289086900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/419199472), ODbL"
+    }
+  ]
+}

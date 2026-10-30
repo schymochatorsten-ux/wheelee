@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "chamerau",
+    "name": "Chamerau",
+    "center": {
+      "lat": 49.1968066,
+      "lng": 12.745624800000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "chamerau-06133c0433",
+      "city": "chamerau",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Chamerau",
+      "spotCount": 1,
+      "lat": 49.1968066,
+      "lng": 12.745624800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/447369916), ODbL"
+    }
+  ]
+}

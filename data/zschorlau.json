@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "zschorlau",
+    "name": "Zschorlau",
+    "center": {
+      "lat": 50.5670253,
+      "lng": 12.6447944
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zschorlau-abed030e87",
+      "city": "zschorlau",
+      "label": "Am Lerchenberg",
+      "street": "Am Lerchenberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zschorlau",
+      "spotCount": 1,
+      "lat": 50.5670253,
+      "lng": 12.6447944,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/234772391), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "crossen",
+    "name": "Crossen an der Elster",
+    "center": {
+      "lat": 50.972673300000004,
+      "lng": 11.981428800000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "crossen-bbb34e017b",
+      "city": "crossen",
+      "label": "Bahnhofstraße 10b",
+      "street": "Bahnhofstraße",
+      "houseNumber": "10b",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Crossen an der Elster",
+      "spotCount": 1,
+      "lat": 50.972673300000004,
+      "lng": 11.981428800000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12887302686), ODbL"
+    }
+  ]
+}

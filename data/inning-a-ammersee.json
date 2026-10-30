@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "inning-a-ammersee",
+    "name": "Inning a.Ammersee",
+    "center": {
+      "lat": 48.08557785,
+      "lng": 11.15108855
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "inning-a-ammersee-9748058e5b",
+      "city": "inning-a-ammersee",
+      "label": "Pendlerparkplatz Inning",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Inning a.Ammersee",
+      "spotCount": 2,
+      "lat": 48.08557785,
+      "lng": 11.15108855,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/849344077), ODbL"
+    },
+    {
+      "id": "inning-a-ammersee-44aaa3ee99",
+      "city": "inning-a-ammersee",
+      "label": "Stegen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Inning a.Ammersee",
+      "spotCount": 3,
+      "lat": 48.077979400000004,
+      "lng": 11.131607,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24471569), ODbL"
+    }
+  ]
+}

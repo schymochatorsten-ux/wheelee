@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "grossenbrode",
+    "name": "Großenbrode",
+    "center": {
+      "lat": 54.372997600000005,
+      "lng": 11.0855929
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grossenbrode-8e7cfab192",
+      "city": "grossenbrode",
+      "label": "Rathaus",
+      "street": "Rathaus",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großenbrode",
+      "spotCount": 1,
+      "lat": 54.372997600000005,
+      "lng": 11.0855929,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13063391176), ODbL"
+    }
+  ]
+}

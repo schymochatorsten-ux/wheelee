@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "gechingen",
+    "name": "Gechingen",
+    "center": {
+      "lat": 48.69309455,
+      "lng": 8.8274558
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gechingen-dd85193bbf",
+      "city": "gechingen",
+      "label": "Talstraße",
+      "street": "Talstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gechingen",
+      "spotCount": 1,
+      "lat": 48.69309455,
+      "lng": 8.8274558,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/931770908), ODbL"
+    }
+  ]
+}

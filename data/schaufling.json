@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "schaufling",
+    "name": "Schaufling",
+    "center": {
+      "lat": 48.844867050000005,
+      "lng": 13.0642528
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schaufling-faa83ea0b8",
+      "city": "schaufling",
+      "label": "Ruselhochstraß",
+      "street": "Ruselhochstraß",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schaufling",
+      "spotCount": 1,
+      "lat": 48.8764276,
+      "lng": 13.064186450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/996661107), ODbL"
+    },
+    {
+      "id": "schaufling-e677e2d679",
+      "city": "schaufling",
+      "label": "Zum Feldbüchel",
+      "street": "Zum Feldbüchel",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schaufling",
+      "spotCount": 1,
+      "lat": 48.844867050000005,
+      "lng": 13.0642528,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/295756739), ODbL"
+    },
+    {
+      "id": "schaufling-3a8ed2d373",
+      "city": "schaufling",
+      "label": "Zum Feldbüchel",
+      "street": "Zum Feldbüchel",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schaufling",
+      "spotCount": 1,
+      "lat": 48.8448648,
+      "lng": 13.06435055,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1351626071), ODbL"
+    }
+  ]
+}

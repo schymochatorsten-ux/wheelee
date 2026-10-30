@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "brand-erbisdorf",
+    "name": "Brand-Erbisdorf",
+    "center": {
+      "lat": 50.868881650000006,
+      "lng": 13.32318725
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "brand-erbisdorf-a31e7af9ab",
+      "city": "brand-erbisdorf",
+      "label": "Albertstraße 4",
+      "street": "Albertstraße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brand-Erbisdorf",
+      "spotCount": 2,
+      "lat": 50.86924090000001,
+      "lng": 13.3226068,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32252277), ODbL"
+    },
+    {
+      "id": "brand-erbisdorf-8b1017f038",
+      "city": "brand-erbisdorf",
+      "label": "Am Rosenhof 44",
+      "street": "Am Rosenhof",
+      "houseNumber": "44",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brand-Erbisdorf",
+      "spotCount": 2,
+      "lat": 50.86576205,
+      "lng": 13.30690595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32797410), ODbL"
+    },
+    {
+      "id": "brand-erbisdorf-807e822852",
+      "city": "brand-erbisdorf",
+      "label": "Berthelsdorfer Straße",
+      "street": "Berthelsdorfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brand-Erbisdorf",
+      "spotCount": 3,
+      "lat": 50.8678078,
+      "lng": 13.3314062,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27284384), ODbL"
+    },
+    {
+      "id": "brand-erbisdorf-03989abec0",
+      "city": "brand-erbisdorf",
+      "label": "Dammstraße",
+      "street": "Dammstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brand-Erbisdorf",
+      "spotCount": 2,
+      "lat": 50.8644618,
+      "lng": 13.3229686,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27297687), ODbL"
+    },
+    {
+      "id": "brand-erbisdorf-e6992632d8",
+      "city": "brand-erbisdorf",
+      "label": "Goethestraße",
+      "street": "Goethestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brand-Erbisdorf",
+      "spotCount": 1,
+      "lat": 50.868881650000006,
+      "lng": 13.32318725,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35935009), ODbL"
+    },
+    {
+      "id": "brand-erbisdorf-3986075840",
+      "city": "brand-erbisdorf",
+      "label": "Marktgäßchen 3",
+      "street": "Marktgäßchen",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brand-Erbisdorf",
+      "spotCount": 2,
+      "lat": 50.870696,
+      "lng": 13.323189950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/382931067), ODbL"
+    },
+    {
+      "id": "brand-erbisdorf-aecc78ca1a",
+      "city": "brand-erbisdorf",
+      "label": "Zuger Straße",
+      "street": "Zuger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brand-Erbisdorf",
+      "spotCount": 2,
+      "lat": 50.86993940000001,
+      "lng": 13.325083800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/636622424), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "loitz",
+    "name": "Loitz",
+    "center": {
+      "lat": 53.97034240000001,
+      "lng": 13.129767900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "loitz-4707a82ede",
+      "city": "loitz",
+      "label": "Breite Straße 142",
+      "street": "Breite Straße",
+      "houseNumber": "142",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Loitz",
+      "spotCount": 1,
+      "lat": 53.97034240000001,
+      "lng": 13.129767900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/262096420), ODbL"
+    }
+  ]
+}

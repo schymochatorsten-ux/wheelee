@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "eurasburg-by",
+    "name": "Eurasburg",
+    "center": {
+      "lat": 48.3424689,
+      "lng": 11.1490732
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eurasburg-by-bea2fc2f35",
+      "city": "eurasburg-by",
+      "label": "Adelzhauser Berg-Süd",
+      "street": "Adelzhauser Berg-Süd",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eurasburg",
+      "spotCount": 1,
+      "lat": 48.34243805,
+      "lng": 11.149121400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1560874454), ODbL"
+    },
+    {
+      "id": "eurasburg-by-d63d94dcd4",
+      "city": "eurasburg-by",
+      "label": "Adelzhauser Berg-Süd",
+      "street": "Adelzhauser Berg-Süd",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eurasburg",
+      "spotCount": 1,
+      "lat": 48.3424689,
+      "lng": 11.1490732,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1560874455), ODbL"
+    },
+    {
+      "id": "eurasburg-by-ab5e86229b",
+      "city": "eurasburg-by",
+      "label": "Adelzhauser Berg-Süd",
+      "street": "Adelzhauser Berg-Süd",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eurasburg",
+      "spotCount": 1,
+      "lat": 48.342497200000004,
+      "lng": 11.149014900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1560874456), ODbL"
+    }
+  ]
+}

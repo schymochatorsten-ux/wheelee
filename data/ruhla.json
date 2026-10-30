@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ruhla",
+    "name": "Ruhla",
+    "center": {
+      "lat": 50.92120990000001,
+      "lng": 10.396496500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ruhla-514f75facb",
+      "city": "ruhla",
+      "label": "Am Ebertsberg 1",
+      "street": "Am Ebertsberg",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Sa 07:00-21:00",
+      "district": "Ruhla",
+      "spotCount": 1,
+      "lat": 50.92120990000001,
+      "lng": 10.396496500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/97678041), ODbL"
+    }
+  ]
+}

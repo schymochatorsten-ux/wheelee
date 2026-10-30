@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "pulsnitz",
+    "name": "Pulsnitz",
+    "center": {
+      "lat": 51.187853600000004,
+      "lng": 14.012638500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pulsnitz-134c61bebc",
+      "city": "pulsnitz",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pulsnitz",
+      "spotCount": 1,
+      "lat": 51.187853600000004,
+      "lng": 14.014172550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/503443552), ODbL"
+    },
+    {
+      "id": "pulsnitz-332d0291aa",
+      "city": "pulsnitz",
+      "label": "Goethestraße 19",
+      "street": "Goethestraße",
+      "houseNumber": "19",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pulsnitz",
+      "spotCount": 2,
+      "lat": 51.182404850000005,
+      "lng": 14.012638500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/387816243), ODbL"
+    },
+    {
+      "id": "pulsnitz-bb04bb6f8b",
+      "city": "pulsnitz",
+      "label": "Herrenhausplatz 1",
+      "street": "Herrenhausplatz",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pulsnitz",
+      "spotCount": 1,
+      "lat": 51.18138450000001,
+      "lng": 14.011308,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/387670076), ODbL"
+    },
+    {
+      "id": "pulsnitz-02f62b6991",
+      "city": "pulsnitz",
+      "label": "Kirchplatz 2",
+      "street": "Kirchplatz",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pulsnitz",
+      "spotCount": 1,
+      "lat": 51.182121900000006,
+      "lng": 14.0117995,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9169997742), ODbL"
+    },
+    {
+      "id": "pulsnitz-29df813776",
+      "city": "pulsnitz",
+      "label": "Kurzzeitparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pulsnitz",
+      "spotCount": 1,
+      "lat": 51.18930485,
+      "lng": 14.02640425,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/991531632), ODbL"
+    },
+    {
+      "id": "pulsnitz-3c05691d1d",
+      "city": "pulsnitz",
+      "label": "Pulsnitztalstraße",
+      "street": "Pulsnitztalstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pulsnitz",
+      "spotCount": 1,
+      "lat": 51.21798265,
+      "lng": 13.9923328,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/192117725), ODbL"
+    }
+  ]
+}

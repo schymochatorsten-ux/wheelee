@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "winkelbach",
+    "name": "Winkelbach",
+    "center": {
+      "lat": 50.644140500000006,
+      "lng": 7.737582850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "winkelbach-6af9d77ddd",
+      "city": "winkelbach",
+      "label": "Krambergsmühle",
+      "street": "Krambergsmühle",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Winkelbach",
+      "spotCount": 1,
+      "lat": 50.644140500000006,
+      "lng": 7.737582850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/71401207), ODbL"
+    }
+  ]
+}

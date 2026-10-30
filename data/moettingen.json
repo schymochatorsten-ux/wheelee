@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "moettingen",
+    "name": "Möttingen",
+    "center": {
+      "lat": 48.806378300000006,
+      "lng": 10.59812145
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "moettingen-8d8fd542b8",
+      "city": "moettingen",
+      "label": "P&R",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Möttingen",
+      "spotCount": 1,
+      "lat": 48.806378300000006,
+      "lng": 10.59812145,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/114935446), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "kirchheim-rp",
+    "name": "Kirchheim an der Weinstraße",
+    "center": {
+      "lat": 49.554934,
+      "lng": 8.181767950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kirchheim-rp-456eadc025",
+      "city": "kirchheim-rp",
+      "label": "Daimlerstraße 22",
+      "street": "Daimlerstraße",
+      "houseNumber": "22",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kirchheim an der Weinstraße",
+      "spotCount": 1,
+      "lat": 49.554934,
+      "lng": 8.181767950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1225431432), ODbL"
+    },
+    {
+      "id": "kirchheim-rp-b78ca2d86f",
+      "city": "kirchheim-rp",
+      "label": "Daimlerstraße 22",
+      "street": "Daimlerstraße",
+      "houseNumber": "22",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kirchheim an der Weinstraße",
+      "spotCount": 1,
+      "lat": 49.55496480000001,
+      "lng": 8.18175845,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1225431433), ODbL"
+    },
+    {
+      "id": "kirchheim-rp-ef0a0f50bc",
+      "city": "kirchheim-rp",
+      "label": "MAXI Autohof Kirchheim",
+      "street": "MAXI Autohof Kirchheim",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kirchheim an der Weinstraße",
+      "spotCount": 1,
+      "lat": 49.55443265,
+      "lng": 8.18476495,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1225612124), ODbL"
+    }
+  ]
+}

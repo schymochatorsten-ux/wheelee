@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "pluederhausen",
+    "name": "Plüderhausen",
+    "center": {
+      "lat": 48.78516795,
+      "lng": 9.61587255
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pluederhausen-a7c7842e8b",
+      "city": "pluederhausen",
+      "label": "Wilhelm-Bahmüller-Straße",
+      "street": "Wilhelm-Bahmüller-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Plüderhausen",
+      "spotCount": 1,
+      "lat": 48.785179850000006,
+      "lng": 9.615792250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1361530543), ODbL"
+    },
+    {
+      "id": "pluederhausen-7c022c158b",
+      "city": "pluederhausen",
+      "label": "Wilhelm-Bahmüller-Straße",
+      "street": "Wilhelm-Bahmüller-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Plüderhausen",
+      "spotCount": 1,
+      "lat": 48.78516795,
+      "lng": 9.61587255,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1361530544), ODbL"
+    },
+    {
+      "id": "pluederhausen-8453508e4c",
+      "city": "pluederhausen",
+      "label": "Wilhelm-Bahmüller-Straße",
+      "street": "Wilhelm-Bahmüller-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Plüderhausen",
+      "spotCount": 1,
+      "lat": 48.78515055,
+      "lng": 9.615971550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1361530545), ODbL"
+    }
+  ]
+}

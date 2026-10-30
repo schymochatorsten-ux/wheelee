@@ -1,6 +1,6 @@
 # Importstand der deutschen Gemeinden
 
-Zuletzt aktualisiert: 2026-10-30T08:34:08.844Z
+Zuletzt aktualisiert: 2026-10-30T10:08:33.419Z
 
 Diese Datei schreiben die Importskripte selbst nach **jeder einzelnen Stadt**.
 Sie ist damit auch nach einem Abbruch mitten im Lauf korrekt.
@@ -25,13 +25,13 @@ npm run import:city -- --rest
 | Kennzahl | Wert |
 | --- | --- |
 | Gemeinden im Register | 10.754 |
-| geprüft | 1.488 (14 %) |
-| davon mit Treffer | 1.488 |
+| geprüft | 3.758 (35 %) |
+| davon mit Treffer | 3.758 |
 | davon geprüft, nichts gefunden | 0 |
-| noch nicht geprüft | 9.266 |
+| noch nicht geprüft | 6.996 |
 | mit Problem | 0 |
-| importierte Standorte | 32.109 |
-| importierte Stellplätze | 53.514 |
+| importierte Standorte | 38.414 |
+| importierte Stellplätze | 64.341 |
 
 „Geprüft, nichts gefunden" ist etwas anderes als „noch nicht geprüft": Dort
 lief die Abfrage sauber durch und war leer. Diese Gemeinden werden nicht
@@ -50,8 +50,8 @@ schon". Beides allein wäre schief.
 | ab 50.000 | 115 von 115 | 100 % | 100 % |
 | ab 20.000 | 498 von 511 | 97 % | 97 % |
 | ab 10.000 | 795 von 892 | 89 % | 90 % |
-| ab 5.000 | 0 von 1.345 | 0 % | 0 % |
-| unter 5.000 | 0 von 7.811 | 0 % | 0 % |
+| ab 5.000 | 941 von 1.345 | 70 % | 71 % |
+| unter 5.000 | 1.329 von 7.811 | 17 % | 30 % |
 
 ## Fortschritt nach Bundesland
 
@@ -60,26 +60,26 @@ etwas gebracht hat und wo nicht.
 
 | Bundesland | geprüft | Gemeinden | Einwohner |
 | --- | ---: | ---: | ---: |
-| Baden-Württemberg | 250 von 1.101 | 23 % | 69 % |
-| Bayern | 214 von 2.056 | 10 % | 55 % |
+| Baden-Württemberg | 655 von 1.101 | 59 % | 87 % |
+| Bayern | 782 von 2.056 | 38 % | 74 % |
 | Berlin | 1 von 1 | 100 % | 100 % |
-| Brandenburg | 68 von 413 | 16 % | 66 % |
+| Brandenburg | 146 von 413 | 35 % | 81 % |
 | Bremen | 2 von 2 | 100 % | 100 % |
 | Hamburg | 1 von 1 | 100 % | 100 % |
-| Hessen | 157 von 421 | 37 % | 76 % |
-| Mecklenburg-Vorpommern | 19 von 724 | 3 % | 45 % |
-| Niedersachsen | 180 von 941 | 19 % | 70 % |
-| Nordrhein-Westfalen | 326 von 396 | 82 % | 96 % |
-| Rheinland-Pfalz | 45 von 2.301 | 2 % | 41 % |
-| Saarland | 31 von 52 | 60 % | 77 % |
-| Sachsen | 63 von 418 | 15 % | 67 % |
-| Sachsen-Anhalt | 49 von 218 | 22 % | 70 % |
-| Schleswig-Holstein | 50 von 1.104 | 5 % | 55 % |
-| Thüringen | 32 von 605 | 5 % | 55 % |
+| Hessen | 302 von 421 | 72 % | 90 % |
+| Mecklenburg-Vorpommern | 142 von 724 | 20 % | 67 % |
+| Niedersachsen | 376 von 941 | 40 % | 82 % |
+| Nordrhein-Westfalen | 359 von 396 | 91 % | 97 % |
+| Rheinland-Pfalz | 325 von 2.301 | 14 % | 63 % |
+| Saarland | 37 von 52 | 71 % | 82 % |
+| Sachsen | 215 von 418 | 51 % | 85 % |
+| Sachsen-Anhalt | 94 von 218 | 43 % | 84 % |
+| Schleswig-Holstein | 180 von 1.104 | 16 % | 70 % |
+| Thüringen | 141 von 605 | 23 % | 76 % |
 
 ## Angesehene Gemeinden
 
-1.488 von 10.754 Gemeinden sind angefasst worden. Nur sie stehen hier einzeln – die übrigen
+3.758 von 10.754 Gemeinden sind angefasst worden. Nur sie stehen hier einzeln – die übrigen
 sind sämtlich „noch nicht geprüft", und zehntausend gleichlautende Zeilen
 liest niemand.
 
@@ -1573,6 +1573,2276 @@ liest niemand.
  | ✅ | 1596 | Nordwalde | 10.024 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
  | ✅ | 1597 | Querfurt | 10.007 | OpenStreetMap (Geofabrik-Auszug) | 6 | 9 | fertig | 
  | ✅ | 1598 | Blumberg | 10.003 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 1599 | Dettingen an der Erms | 9.993 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 1600 | Ammersbek | 9.991 | OpenStreetMap (Geofabrik-Auszug) | 3 | 7 | fertig | 
+ | ✅ | 1601 | Ohrdruf | 9.991 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 1602 | Wildberg | 9.977 | OpenStreetMap (Geofabrik-Auszug) | 2 | 14 | fertig | 
+ | ✅ | 1603 | Weil im Schönbuch | 9.970 | OpenStreetMap (Geofabrik-Auszug) | 6 | 37 | fertig | 
+ | ✅ | 1604 | Münchberg | 9.969 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 1605 | Kaufering | 9.957 | OpenStreetMap (Geofabrik-Auszug) | 16 | 20 | fertig | 
+ | ✅ | 1606 | Olbernhau | 9.953 | OpenStreetMap (Geofabrik-Auszug) | 13 | 14 | fertig | 
+ | ✅ | 1607 | Nohfelden | 9.949 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1608 | Rehburg-Loccum | 9.942 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 1609 | Bad Orb | 9.934 | OpenStreetMap (Geofabrik-Auszug) | 9 | 17 | fertig | 
+ | ✅ | 1610 | Tutzing | 9.926 | OpenStreetMap (Geofabrik-Auszug) | 8 | 11 | fertig | 
+ | ✅ | 1611 | Gudensberg | 9.925 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 1613 | Neuried | 9.919 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 1614 | Ottendorf-Okrilla | 9.909 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 1615 | Walzbachtal | 9.904 | OpenStreetMap (Geofabrik-Auszug) | 7 | 9 | fertig | 
+ | ✅ | 1618 | Biebertal | 9.893 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1621 | Rüdesheim am Rhein | 9.879 | OpenStreetMap (Geofabrik-Auszug) | 2 | 12 | fertig | 
+ | ✅ | 1622 | Elchingen | 9.869 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1623 | Altenholz | 9.865 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1624 | Niddatal | 9.861 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 1625 | Südlohn | 9.861 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 1626 | Goldbach | 9.857 | OpenStreetMap (Geofabrik-Auszug) | 9 | 9 | fertig | 
+ | ✅ | 1628 | Emmerthal | 9.834 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 1631 | Nersingen | 9.827 | OpenStreetMap (Geofabrik-Auszug) | 1 | 12 | fertig | 
+ | ✅ | 1632 | Ilsfeld | 9.826 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 1633 | Pliezhausen | 9.821 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1634 | Hünfelden | 9.818 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1636 | Eschenburg | 9.795 | OpenStreetMap (Geofabrik-Auszug) | 4 | 5 | fertig | 
+ | ✅ | 1637 | Kösching | 9.788 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1639 | Everswinkel | 9.772 | OpenStreetMap (Geofabrik-Auszug) | 17 | 25 | fertig | 
+ | ✅ | 1640 | Plüderhausen | 9.766 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 1641 | Höchst i.Odw. | 9.744 | OpenStreetMap (Geofabrik-Auszug) | 3 | 8 | fertig | 
+ | ✅ | 1642 | Visbek | 9.735 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1644 | Erlenbach a.Main | 9.717 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 1646 | Bad Frankenhausen/Kyffhäuser | 9.715 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1647 | Oldenburg in Holstein | 9.711 | OpenStreetMap (Geofabrik-Auszug) | 32 | 52 | fertig | 
+ | ✅ | 1648 | Nieder-Olm | 9.703 | OpenStreetMap (Geofabrik-Auszug) | 7 | 9 | fertig | 
+ | ✅ | 1649 | Trebbin | 9.700 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 1650 | Klötze | 9.699 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1651 | Laubach | 9.699 | OpenStreetMap (Geofabrik-Auszug) | 13 | 29 | fertig | 
+ | ✅ | 1652 | Heilsbronn | 9.692 | OpenStreetMap (Geofabrik-Auszug) | 11 | 16 | fertig | 
+ | ✅ | 1653 | Linsengericht | 9.679 | OpenStreetMap (Geofabrik-Auszug) | 13 | 40 | fertig | 
+ | ✅ | 1654 | Veitshöchheim | 9.671 | OpenStreetMap (Geofabrik-Auszug) | 7 | 16 | fertig | 
+ | ✅ | 1656 | Roßtal | 9.663 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 1657 | Brandis | 9.654 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1658 | Osthofen | 9.650 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 1659 | Hirschberg an der Bergstraße | 9.647 | OpenStreetMap (Geofabrik-Auszug) | 4 | 5 | fertig | 
+ | ✅ | 1660 | Schotten | 9.641 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1662 | Altlandsberg | 9.630 | OpenStreetMap (Geofabrik-Auszug) | 4 | 5 | fertig | 
+ | ✅ | 1663 | Bad Breisig | 9.623 | OpenStreetMap (Geofabrik-Auszug) | 12 | 14 | fertig | 
+ | ✅ | 1664 | Aichtal | 9.599 | OpenStreetMap (Geofabrik-Auszug) | 8 | 8 | fertig | 
+ | ✅ | 1665 | Demmin | 9.583 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 1666 | Birkenau | 9.565 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1667 | Oberhausen-Rheinhausen | 9.565 | OpenStreetMap (Geofabrik-Auszug) | 5 | 8 | fertig | 
+ | ✅ | 1668 | Höchberg | 9.564 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 1669 | Schulzendorf | 9.562 | OpenStreetMap (Geofabrik-Auszug) | 5 | 5 | fertig | 
+ | ✅ | 1670 | Wettin-Löbejün | 9.554 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1671 | Oberharz am Brocken | 9.547 | OpenStreetMap (Geofabrik-Auszug) | 7 | 9 | fertig | 
+ | ✅ | 1672 | Runkel | 9.543 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 1673 | Kißlegg | 9.530 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1674 | Magstadt | 9.513 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1676 | Bisingen | 9.506 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 1677 | Perl | 9.503 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1678 | Töging a.Inn | 9.496 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1679 | Wertingen | 9.486 | OpenStreetMap (Geofabrik-Auszug) | 3 | 6 | fertig | 
+ | ✅ | 1680 | Heiligenhafen | 9.484 | OpenStreetMap (Geofabrik-Auszug) | 4 | 8 | fertig | 
+ | ✅ | 1683 | Großhansdorf | 9.469 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 1685 | Bockenem | 9.465 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 1686 | Visselhövede | 9.458 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1687 | Zorneding | 9.452 | OpenStreetMap (Geofabrik-Auszug) | 16 | 24 | fertig | 
+ | ✅ | 1689 | Oberzent | 9.429 | OpenStreetMap (Geofabrik-Auszug) | 2 | 11 | fertig | 
+ | ✅ | 1690 | Sebnitz | 9.421 | OpenStreetMap (Geofabrik-Auszug) | 11 | 17 | fertig | 
+ | ✅ | 1691 | Wilkau-Haßlau | 9.418 | OpenStreetMap (Geofabrik-Auszug) | 10 | 14 | fertig | 
+ | ✅ | 1692 | Wölfersheim | 9.417 | OpenStreetMap (Geofabrik-Auszug) | 10 | 10 | fertig | 
+ | ✅ | 1693 | Höhr-Grenzhausen | 9.415 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 1694 | Ilsenburg (Harz) | 9.414 | OpenStreetMap (Geofabrik-Auszug) | 7 | 11 | fertig | 
+ | ✅ | 1696 | Ehringshausen | 9.399 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1697 | Werneuchen | 9.397 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 1699 | Giesen | 9.382 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 1700 | Nuthetal | 9.376 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 1702 | Osterburg (Altmark) | 9.371 | OpenStreetMap (Geofabrik-Auszug) | 17 | 17 | fertig | 
+ | ✅ | 1704 | Ochsenhausen | 9.358 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 1705 | Essen (Oldenburg) | 9.356 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1706 | Miltenberg | 9.351 | OpenStreetMap (Geofabrik-Auszug) | 6 | 8 | fertig | 
+ | ✅ | 1707 | Großbeeren | 9.344 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 1708 | Kandel | 9.337 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 1709 | Laufenburg (Baden) | 9.335 | OpenStreetMap (Geofabrik-Auszug) | 32 | 41 | fertig | 
+ | ✅ | 1711 | Worpswede | 9.328 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1712 | Wallerfangen | 9.324 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1713 | Schmitten im Taunus | 9.323 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1715 | March | 9.309 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 1717 | Zwenkau | 9.305 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 1719 | Bad Liebenzell | 9.301 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 1720 | Oberstdorf | 9.279 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 1721 | Ehningen | 9.277 | OpenStreetMap (Geofabrik-Auszug) | 7 | 11 | fertig | 
+ | ✅ | 1722 | Urbach | 9.277 | OpenStreetMap (Geofabrik-Auszug) | 4 | 7 | fertig | 
+ | ✅ | 1723 | Alsbach-Hähnlein | 9.273 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 1724 | Schlitz | 9.271 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1725 | Wehrheim | 9.271 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 1726 | Mücke | 9.267 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 1728 | Kolkwitz | 9.265 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 1733 | Salzhemmendorf | 9.233 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 1734 | Lügde | 9.232 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 1735 | Elsenfeld | 9.225 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 1736 | Kemberg | 9.217 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1738 | Hohenmölsen | 9.211 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 1739 | Ebsdorfergrund | 9.207 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 1740 | Ilvesheim | 9.207 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 1741 | Luckau | 9.203 | OpenStreetMap (Geofabrik-Auszug) | 6 | 12 | fertig | 
+ | ✅ | 1742 | Frickenhausen | 9.201 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 1743 | Hilzingen | 9.196 | OpenStreetMap (Geofabrik-Auszug) | 3 | 8 | fertig | 
+ | ✅ | 1744 | Hürtgenwald | 9.196 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 1745 | Storkow (Mark) | 9.196 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 1747 | Gäufelden | 9.181 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 1749 | Lüchow (Wendland) | 9.170 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 1751 | Altenbeken | 9.161 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 1752 | Bleckede | 9.154 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1754 | Aschheim | 9.149 | OpenStreetMap (Geofabrik-Auszug) | 4 | 16 | fertig | 
+ | ✅ | 1755 | Wangerland | 9.149 | OpenStreetMap (Geofabrik-Auszug) | 10 | 12 | fertig | 
+ | ✅ | 1757 | Nittenau | 9.145 | OpenStreetMap (Geofabrik-Auszug) | 7 | 14 | fertig | 
+ | ✅ | 1758 | Dassel | 9.142 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 1759 | Barleben | 9.137 | OpenStreetMap (Geofabrik-Auszug) | 20 | 31 | fertig | 
+ | ✅ | 1761 | Steinbach-Hallenberg | 9.130 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 1763 | Adelsdorf | 9.126 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 1764 | Schaafheim | 9.113 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1765 | Reinfeld (Holstein) | 9.107 | OpenStreetMap (Geofabrik-Auszug) | 5 | 6 | fertig | 
+ | ✅ | 1766 | Tecklenburg | 9.098 | OpenStreetMap (Geofabrik-Auszug) | 13 | 15 | fertig | 
+ | ✅ | 1767 | Florstadt | 9.097 | OpenStreetMap (Geofabrik-Auszug) | 7 | 7 | fertig | 
+ | ✅ | 1768 | Dielheim | 9.094 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 1769 | Gomaringen | 9.080 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 1770 | Biblis | 9.076 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 1771 | Fehrbellin | 9.076 | OpenStreetMap (Geofabrik-Auszug) | 2 | 8 | fertig | 
+ | ✅ | 1773 | Vallendar | 9.062 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1774 | Zwiesel | 9.059 | OpenStreetMap (Geofabrik-Auszug) | 8 | 10 | fertig | 
+ | ✅ | 1775 | Titz | 9.052 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1776 | Rehau | 9.045 | OpenStreetMap (Geofabrik-Auszug) | 3 | 6 | fertig | 
+ | ✅ | 1777 | Bad Schussenried | 9.044 | OpenStreetMap (Geofabrik-Auszug) | 3 | 10 | fertig | 
+ | ✅ | 1778 | Mendig | 9.034 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 1779 | Hohenbrunn | 9.032 | OpenStreetMap (Geofabrik-Auszug) | 5 | 5 | fertig | 
+ | ✅ | 1780 | Weißenthurm | 9.020 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1781 | Kusterdingen | 9.016 | OpenStreetMap (Geofabrik-Auszug) | 3 | 6 | fertig | 
+ | ✅ | 1784 | Neuötting | 8.991 | OpenStreetMap (Geofabrik-Auszug) | 5 | 5 | fertig | 
+ | ✅ | 1785 | Waldheim | 8.989 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 1787 | Bad Gandersheim | 8.983 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 1788 | Grünheide (Mark) | 8.978 | OpenStreetMap (Geofabrik-Auszug) | 9 | 36 | fertig | 
+ | ✅ | 1789 | Bruchhausen-Vilsen | 8.970 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 1790 | Wunsiedel | 8.970 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1792 | Niesky | 8.956 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1793 | Bad Griesbach i.Rottal | 8.952 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1794 | Nittendorf | 8.920 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1795 | Obernkirchen | 8.912 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1796 | Nettersheim | 8.902 | OpenStreetMap (Geofabrik-Auszug) | 4 | 10 | fertig | 
+ | ✅ | 1798 | Torgelow | 8.899 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1800 | Bad Laer | 8.895 | OpenStreetMap (Geofabrik-Auszug) | 2 | 8 | fertig | 
+ | ✅ | 1801 | Sassnitz | 8.893 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 1803 | Liederbach am Taunus | 8.887 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 1804 | Gerstungen | 8.884 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1805 | Bad Lauchstädt | 8.883 | OpenStreetMap (Geofabrik-Auszug) | 2 | 6 | fertig | 
+ | ✅ | 1806 | Elze | 8.880 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 1808 | Wetter (Hessen) | 8.867 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1809 | Kabelsketal | 8.859 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 1811 | Neuenkirchen-Vörden | 8.858 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 1812 | Bockhorn | 8.851 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 1813 | Borgholzhausen | 8.847 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 1815 | Sulzbach (Taunus) | 8.846 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 1816 | Plön | 8.844 | OpenStreetMap (Geofabrik-Auszug) | 5 | 12 | fertig | 
+ | ✅ | 1819 | Südharz | 8.829 | OpenStreetMap (Geofabrik-Auszug) | 6 | 11 | fertig | 
+ | ✅ | 1820 | Breckerfeld | 8.816 | OpenStreetMap (Geofabrik-Auszug) | 6 | 6 | fertig | 
+ | ✅ | 1821 | Kappeln | 8.812 | OpenStreetMap (Geofabrik-Auszug) | 6 | 15 | fertig | 
+ | ✅ | 1823 | Brand-Erbisdorf | 8.797 | OpenStreetMap (Geofabrik-Auszug) | 7 | 14 | fertig | 
+ | ✅ | 1824 | Neuried | 8.795 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1825 | Roetgen | 8.786 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 1826 | Hallstadt | 8.781 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 1827 | Obertraubling | 8.779 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1828 | Naunhof | 8.776 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 1829 | Heek | 8.773 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1830 | Ueckermünde | 8.768 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 1831 | Schwaig b.Nürnberg | 8.761 | OpenStreetMap (Geofabrik-Auszug) | 7 | 19 | fertig | 
+ | ✅ | 1832 | Zschopau | 8.760 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 1835 | Waldenbuch | 8.750 | OpenStreetMap (Geofabrik-Auszug) | 7 | 11 | fertig | 
+ | ✅ | 1837 | Rimbach | 8.738 | OpenStreetMap (Geofabrik-Auszug) | 7 | 11 | fertig | 
+ | ✅ | 1838 | Langweid a.Lech | 8.737 | OpenStreetMap (Geofabrik-Auszug) | 9 | 9 | fertig | 
+ | ✅ | 1839 | Dörverden | 8.735 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 1840 | Herzberg (Elster) | 8.732 | OpenStreetMap (Geofabrik-Auszug) | 4 | 7 | fertig | 
+ | ✅ | 1841 | Kressbronn am Bodensee | 8.727 | OpenStreetMap (Geofabrik-Auszug) | 5 | 5 | fertig | 
+ | ✅ | 1842 | Bad Bergzabern | 8.724 | OpenStreetMap (Geofabrik-Auszug) | 16 | 19 | fertig | 
+ | ✅ | 1844 | Eslohe (Sauerland) | 8.717 | OpenStreetMap (Geofabrik-Auszug) | 10 | 11 | fertig | 
+ | ✅ | 1845 | Großenlüder | 8.714 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 1846 | Kandern | 8.710 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1847 | Hemmoor | 8.709 | OpenStreetMap (Geofabrik-Auszug) | 6 | 9 | fertig | 
+ | ✅ | 1848 | Bellheim | 8.706 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 1851 | Keltern | 8.693 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1853 | Efringen-Kirchen | 8.683 | OpenStreetMap (Geofabrik-Auszug) | 8 | 12 | fertig | 
+ | ✅ | 1854 | Möckmühl | 8.680 | OpenStreetMap (Geofabrik-Auszug) | 5 | 8 | fertig | 
+ | ✅ | 1855 | Sinntal | 8.680 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1856 | Wissen | 8.679 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1857 | Meßkirch | 8.676 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 1858 | Rauenberg | 8.675 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1859 | Weilmünster | 8.674 | OpenStreetMap (Geofabrik-Auszug) | 4 | 5 | fertig | 
+ | ✅ | 1860 | Untergruppenbach | 8.670 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 1861 | Gleichen | 8.663 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 1862 | Furth im Wald | 8.659 | OpenStreetMap (Geofabrik-Auszug) | 4 | 9 | fertig | 
+ | ✅ | 1865 | Sande | 8.619 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 1866 | Pullach i.Isartal | 8.601 | OpenStreetMap (Geofabrik-Auszug) | 7 | 8 | fertig | 
+ | ✅ | 1867 | Sülzetal | 8.577 | OpenStreetMap (Geofabrik-Auszug) | 23 | 31 | fertig | 
+ | ✅ | 1868 | Obernburg a.Main | 8.575 | OpenStreetMap (Geofabrik-Auszug) | 8 | 13 | fertig | 
+ | ✅ | 1869 | Schladen-Werla | 8.566 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 1870 | Fürstenzell | 8.565 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 1871 | Schnaittach | 8.561 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 1873 | Allersberg | 8.550 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 1875 | Wörrstadt | 8.515 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 1877 | Volkach | 8.512 | OpenStreetMap (Geofabrik-Auszug) | 4 | 5 | fertig | 
+ | ✅ | 1878 | Biederitz | 8.508 | OpenStreetMap (Geofabrik-Auszug) | 18 | 30 | fertig | 
+ | ✅ | 1880 | Dornburg | 8.506 | OpenStreetMap (Geofabrik-Auszug) | 1 | 8 | fertig | 
+ | ✅ | 1881 | Geratal | 8.504 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 1882 | Schleiz | 8.501 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 1883 | Dietmannsried | 8.498 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1885 | Garching a.d.Alz | 8.491 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1888 | Nonnweiler | 8.484 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1890 | Fuldabrück | 8.474 | OpenStreetMap (Geofabrik-Auszug) | 13 | 14 | fertig | 
+ | ✅ | 1891 | Seegebiet Mansfelder Land | 8.474 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1892 | Rülzheim | 8.472 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 1893 | Neuhaus am Rennweg | 8.468 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 1894 | Staufen im Breisgau | 8.459 | OpenStreetMap (Geofabrik-Auszug) | 12 | 17 | fertig | 
+ | ✅ | 1895 | Kahl a.Main | 8.457 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 1896 | Doberlug-Kirchhain | 8.438 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 1897 | Blankenheim | 8.434 | OpenStreetMap (Geofabrik-Auszug) | 14 | 28 | fertig | 
+ | ✅ | 1898 | Ortenberg | 8.423 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 1899 | Ballenstedt | 8.422 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 1900 | Furtwangen im Schwarzwald | 8.420 | OpenStreetMap (Geofabrik-Auszug) | 16 | 18 | fertig | 
+ | ✅ | 1902 | Schierling | 8.395 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1903 | Möser | 8.386 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 1904 | Woltersdorf | 8.386 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 1905 | Bad Rothenfelde | 8.385 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1906 | Heikendorf | 8.372 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 1907 | Reichenbach an der Fils | 8.362 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 1908 | Viechtach | 8.361 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 1909 | Kleinostheim | 8.360 | OpenStreetMap (Geofabrik-Auszug) | 14 | 23 | fertig | 
+ | ✅ | 1910 | Großräschen | 8.355 | OpenStreetMap (Geofabrik-Auszug) | 3 | 6 | fertig | 
+ | ✅ | 1911 | Friedland | 8.332 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1912 | Landstuhl | 8.332 | OpenStreetMap (Geofabrik-Auszug) | 6 | 7 | fertig | 
+ | ✅ | 1913 | Niederwerrn | 8.331 | OpenStreetMap (Geofabrik-Auszug) | 14 | 18 | fertig | 
+ | ✅ | 1914 | Timmendorfer Strand | 8.320 | OpenStreetMap (Geofabrik-Auszug) | 14 | 21 | fertig | 
+ | ✅ | 1916 | Siegsdorf | 8.314 | OpenStreetMap (Geofabrik-Auszug) | 4 | 11 | fertig | 
+ | ✅ | 1917 | Stadtilm | 8.312 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 1918 | Langenberg | 8.311 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1920 | Herrieden | 8.295 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 1922 | Staufenberg | 8.291 | OpenStreetMap (Geofabrik-Auszug) | 4 | 9 | fertig | 
+ | ✅ | 1923 | Meine | 8.286 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 1926 | Heroldsberg | 8.281 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 1927 | Willebadessen | 8.281 | OpenStreetMap (Geofabrik-Auszug) | 3 | 7 | fertig | 
+ | ✅ | 1929 | Unterwellenborn | 8.261 | OpenStreetMap (Geofabrik-Auszug) | 2 | 10 | fertig | 
+ | ✅ | 1930 | Hainichen | 8.255 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 1931 | Colditz | 8.249 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 1933 | Lützen | 8.242 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 1934 | Schwarzenbruck | 8.241 | OpenStreetMap (Geofabrik-Auszug) | 8 | 18 | fertig | 
+ | ✅ | 1935 | Biebergemünd | 8.240 | OpenStreetMap (Geofabrik-Auszug) | 10 | 12 | fertig | 
+ | ✅ | 1936 | Borsdorf | 8.229 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1937 | Kuppenheim | 8.224 | OpenStreetMap (Geofabrik-Auszug) | 17 | 23 | fertig | 
+ | ✅ | 1938 | Bersenbrück | 8.221 | OpenStreetMap (Geofabrik-Auszug) | 1 | 6 | fertig | 
+ | ✅ | 1939 | Moritzburg | 8.217 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 1940 | Wachtendonk | 8.217 | OpenStreetMap (Geofabrik-Auszug) | 5 | 5 | fertig | 
+ | ✅ | 1941 | Hermsdorf | 8.210 | OpenStreetMap (Geofabrik-Auszug) | 5 | 15 | fertig | 
+ | ✅ | 1942 | Uhldingen-Mühlhofen | 8.210 | OpenStreetMap (Geofabrik-Auszug) | 6 | 11 | fertig | 
+ | ✅ | 1943 | Grafenau | 8.203 | OpenStreetMap (Geofabrik-Auszug) | 19 | 27 | fertig | 
+ | ✅ | 1944 | Bad Feilnbach | 8.198 | OpenStreetMap (Geofabrik-Auszug) | 8 | 10 | fertig | 
+ | ✅ | 1945 | Simmern/Hunsrück | 8.195 | OpenStreetMap (Geofabrik-Auszug) | 12 | 14 | fertig | 
+ | ✅ | 1946 | Dornstetten | 8.194 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 1948 | Hohberg | 8.186 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1950 | Mücheln (Geiseltal) | 8.185 | OpenStreetMap (Geofabrik-Auszug) | 5 | 8 | fertig | 
+ | ✅ | 1952 | Lahnau | 8.181 | OpenStreetMap (Geofabrik-Auszug) | 6 | 9 | fertig | 
+ | ✅ | 1953 | Lauter-Bernsbach | 8.179 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1954 | Aspach | 8.178 | OpenStreetMap (Geofabrik-Auszug) | 5 | 5 | fertig | 
+ | ✅ | 1955 | Hausham | 8.177 | OpenStreetMap (Geofabrik-Auszug) | 6 | 17 | fertig | 
+ | ✅ | 1958 | Neuenbürg | 8.162 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 1960 | Bad Sooden-Allendorf | 8.141 | OpenStreetMap (Geofabrik-Auszug) | 1 | 10 | fertig | 
+ | ✅ | 1961 | Neuendettelsau | 8.138 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 1962 | Lauchringen | 8.137 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 1963 | Zell am Harmersbach | 8.129 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1965 | Helmbrechts | 8.125 | OpenStreetMap (Geofabrik-Auszug) | 4 | 8 | fertig | 
+ | ✅ | 1966 | Bönnigheim | 8.123 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 1967 | Bad Endorf | 8.117 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 1970 | Schieder-Schwalenberg | 8.098 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 1975 | Kühlungsborn | 8.088 | OpenStreetMap (Geofabrik-Auszug) | 12 | 32 | fertig | 
+ | ✅ | 1977 | Elz | 8.083 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 1978 | Forst | 8.083 | OpenStreetMap (Geofabrik-Auszug) | 4 | 18 | fertig | 
+ | ✅ | 1979 | Nierstein | 8.078 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1980 | Sauerlach | 8.063 | OpenStreetMap (Geofabrik-Auszug) | 4 | 5 | fertig | 
+ | ✅ | 1981 | Hüfingen | 8.060 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 1982 | Teublitz | 8.060 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 1983 | Penig | 8.059 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 1984 | Premnitz | 8.057 | OpenStreetMap (Geofabrik-Auszug) | 5 | 5 | fertig | 
+ | ✅ | 1985 | Neunkirchen a.Brand | 8.056 | OpenStreetMap (Geofabrik-Auszug) | 30 | 50 | fertig | 
+ | ✅ | 1988 | Bad Lausick | 8.043 | OpenStreetMap (Geofabrik-Auszug) | 11 | 12 | fertig | 
+ | ✅ | 1989 | Salach | 8.042 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 1990 | Amt Wachsenburg | 8.041 | OpenStreetMap (Geofabrik-Auszug) | 5 | 12 | fertig | 
+ | ✅ | 1991 | Meinersen | 8.038 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 1994 | Haibach | 8.019 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 1995 | Jettingen | 8.012 | OpenStreetMap (Geofabrik-Auszug) | 7 | 9 | fertig | 
+ | ✅ | 1998 | Bad Sulza | 8.001 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 1999 | Beeskow | 7.998 | OpenStreetMap (Geofabrik-Auszug) | 5 | 5 | fertig | 
+ | ✅ | 2000 | Oranienbaum-Wörlitz | 7.998 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2001 | Bad Füssing | 7.981 | OpenStreetMap (Geofabrik-Auszug) | 3 | 11 | fertig | 
+ | ✅ | 2002 | Lenningen | 7.974 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 2003 | Dannenberg (Elbe) | 7.966 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2005 | Neresheim | 7.954 | OpenStreetMap (Geofabrik-Auszug) | 6 | 8 | fertig | 
+ | ✅ | 2006 | Salzbergen | 7.949 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2009 | Nessetal | 7.938 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2010 | Birkenwerder | 7.935 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2011 | Bad Endbach | 7.933 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2013 | Loßburg | 7.919 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2014 | Postbauer-Heng | 7.912 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 2015 | Medebach | 7.906 | OpenStreetMap (Geofabrik-Auszug) | 3 | 7 | fertig | 
+ | ✅ | 2016 | Weikersheim | 7.902 | OpenStreetMap (Geofabrik-Auszug) | 3 | 7 | fertig | 
+ | ✅ | 2017 | Hemmingen | 7.901 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 2018 | Saulheim | 7.893 | OpenStreetMap (Geofabrik-Auszug) | 5 | 8 | fertig | 
+ | ✅ | 2019 | Baiersdorf | 7.890 | OpenStreetMap (Geofabrik-Auszug) | 13 | 14 | fertig | 
+ | ✅ | 2020 | Althengstett | 7.886 | OpenStreetMap (Geofabrik-Auszug) | 12 | 38 | fertig | 
+ | ✅ | 2022 | Drei Gleichen | 7.882 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2023 | Könnern | 7.875 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2025 | Aldingen | 7.858 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2026 | Bordesholm | 7.855 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2027 | Krailling | 7.847 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2030 | Hellenthal | 7.834 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2032 | Georgenthal | 7.824 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2033 | Altomünster | 7.818 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2034 | Parsberg | 7.818 | OpenStreetMap (Geofabrik-Auszug) | 3 | 6 | fertig | 
+ | ✅ | 2035 | Barby | 7.813 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2036 | Ehrenkirchen | 7.813 | OpenStreetMap (Geofabrik-Auszug) | 3 | 7 | fertig | 
+ | ✅ | 2037 | Hengersberg | 7.810 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2038 | Asbach | 7.807 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2039 | Erzhausen | 7.794 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2040 | Illingen | 7.791 | OpenStreetMap (Geofabrik-Auszug) | 6 | 8 | fertig | 
+ | ✅ | 2041 | Untermeitingen | 7.789 | OpenStreetMap (Geofabrik-Auszug) | 5 | 5 | fertig | 
+ | ✅ | 2042 | Gundelfingen a.d.Donau | 7.783 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2043 | Feldkirchen | 7.780 | OpenStreetMap (Geofabrik-Auszug) | 3 | 6 | fertig | 
+ | ✅ | 2044 | Heuchelheim a.d.Lahn | 7.773 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2045 | Elsteraue | 7.765 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2046 | Bühlertal | 7.764 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2047 | Jesteburg | 7.758 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2048 | Oberkochen | 7.746 | OpenStreetMap (Geofabrik-Auszug) | 4 | 7 | fertig | 
+ | ✅ | 2049 | Bützow | 7.745 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2050 | Weissach | 7.745 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 2051 | Bad Grund (Harz) | 7.738 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 2053 | Nörten-Hardenberg | 7.719 | OpenStreetMap (Geofabrik-Auszug) | 9 | 24 | fertig | 
+ | ✅ | 2055 | Sögel | 7.718 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2057 | Grasberg | 7.714 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 2058 | Bad Düben | 7.713 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2059 | Teuchern | 7.712 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 2060 | Lastrup | 7.700 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2061 | Rheinsberg | 7.699 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2062 | Berchtesgaden | 7.697 | OpenStreetMap (Geofabrik-Auszug) | 15 | 29 | fertig | 
+ | ✅ | 2063 | Küps | 7.697 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2064 | Bad Herrenalb | 7.694 | OpenStreetMap (Geofabrik-Auszug) | 6 | 7 | fertig | 
+ | ✅ | 2065 | Löffingen | 7.692 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2066 | Emlichheim | 7.691 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2067 | Pfronten | 7.687 | OpenStreetMap (Geofabrik-Auszug) | 5 | 12 | fertig | 
+ | ✅ | 2068 | Bad Wimpfen | 7.686 | OpenStreetMap (Geofabrik-Auszug) | 6 | 8 | fertig | 
+ | ✅ | 2069 | Kirchberg | 7.678 | OpenStreetMap (Geofabrik-Auszug) | 9 | 10 | fertig | 
+ | ✅ | 2070 | Elsterwerda | 7.663 | OpenStreetMap (Geofabrik-Auszug) | 5 | 15 | fertig | 
+ | ✅ | 2071 | Bad Liebenstein | 7.662 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2072 | Bismark (Altmark) | 7.660 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2073 | Algermissen | 7.658 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 2075 | Oberstaufen | 7.654 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2078 | Schweich | 7.643 | OpenStreetMap (Geofabrik-Auszug) | 9 | 16 | fertig | 
+ | ✅ | 2080 | Ramstein-Miesenbach | 7.636 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2081 | Vetschau/Spreewald | 7.635 | OpenStreetMap (Geofabrik-Auszug) | 6 | 7 | fertig | 
+ | ✅ | 2082 | Bergkirchen | 7.630 | OpenStreetMap (Geofabrik-Auszug) | 6 | 7 | fertig | 
+ | ✅ | 2083 | Schonungen | 7.628 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2084 | Seefeld | 7.628 | OpenStreetMap (Geofabrik-Auszug) | 3 | 11 | fertig | 
+ | ✅ | 2085 | Calau | 7.626 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2086 | Inden | 7.624 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 2087 | Schömberg | 7.620 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 2088 | Radeburg | 7.615 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 2089 | Daun | 7.608 | OpenStreetMap (Geofabrik-Auszug) | 2 | 6 | fertig | 
+ | ✅ | 2092 | Rimpar | 7.587 | OpenStreetMap (Geofabrik-Auszug) | 5 | 6 | fertig | 
+ | ✅ | 2093 | Holdorf | 7.586 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2094 | Renchen | 7.582 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2095 | Münnerstadt | 7.577 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2096 | Großmehring | 7.576 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 2097 | Vohenstrauß | 7.576 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2098 | Weissach im Tal | 7.576 | OpenStreetMap (Geofabrik-Auszug) | 3 | 7 | fertig | 
+ | ✅ | 2099 | Oederan | 7.569 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2100 | Barth | 7.568 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 2102 | Stadland | 7.561 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2104 | Seeland | 7.553 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2105 | Gettorf | 7.540 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 2106 | Treuenbrietzen | 7.539 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2107 | Oberstenfeld | 7.537 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2108 | Allstedt | 7.535 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2110 | Dörentrup | 7.528 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2111 | Horstmar | 7.528 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2112 | Jockgrim | 7.528 | OpenStreetMap (Geofabrik-Auszug) | 8 | 9 | fertig | 
+ | ✅ | 2113 | Langenargen | 7.525 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2114 | Dittelbrunn | 7.519 | OpenStreetMap (Geofabrik-Auszug) | 6 | 11 | fertig | 
+ | ✅ | 2116 | Elzach | 7.515 | OpenStreetMap (Geofabrik-Auszug) | 4 | 8 | fertig | 
+ | ✅ | 2117 | Otterndorf | 7.515 | OpenStreetMap (Geofabrik-Auszug) | 14 | 24 | fertig | 
+ | ✅ | 2118 | Ahnatal | 7.513 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2122 | Saarburg | 7.504 | OpenStreetMap (Geofabrik-Auszug) | 6 | 8 | fertig | 
+ | ✅ | 2124 | Bad Kötzting | 7.494 | OpenStreetMap (Geofabrik-Auszug) | 2 | 7 | fertig | 
+ | ✅ | 2125 | Dannstadt-Schauernheim | 7.487 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 2126 | Flintbek | 7.486 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2127 | Söhlde | 7.486 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2128 | Naila | 7.482 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2129 | Lugau/Erzgeb. | 7.481 | OpenStreetMap (Geofabrik-Auszug) | 17 | 17 | fertig | 
+ | ✅ | 2131 | Sontra | 7.466 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2132 | Bunde | 7.463 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 2133 | Altenberg | 7.462 | OpenStreetMap (Geofabrik-Auszug) | 5 | 9 | fertig | 
+ | ✅ | 2135 | Gundelsheim | 7.449 | OpenStreetMap (Geofabrik-Auszug) | 2 | 6 | fertig | 
+ | ✅ | 2136 | Klettgau | 7.445 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2138 | Heidenrod | 7.437 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2139 | Leipheim | 7.434 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2140 | Flein | 7.432 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2141 | Schellerten | 7.428 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2142 | Sulzbach a.Main | 7.423 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2143 | Türkheim | 7.410 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2144 | Heidesee | 7.407 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2145 | Bad Berka | 7.389 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2147 | Großkarolinenfeld | 7.387 | OpenStreetMap (Geofabrik-Auszug) | 6 | 9 | fertig | 
+ | ✅ | 2149 | Hasselroth | 7.386 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 2150 | Baienfurt | 7.382 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2151 | Edermünde | 7.371 | OpenStreetMap (Geofabrik-Auszug) | 8 | 9 | fertig | 
+ | ✅ | 2152 | Belgern-Schildau | 7.363 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2153 | Burkardroth | 7.361 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2154 | Allensbach | 7.353 | OpenStreetMap (Geofabrik-Auszug) | 8 | 10 | fertig | 
+ | ✅ | 2155 | Friedrichroda | 7.352 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2156 | Pleinfeld | 7.350 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 2157 | Laufen | 7.336 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2158 | Sinzing | 7.332 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2159 | Ortenburg | 7.330 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2160 | Schwülper | 7.328 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2161 | Mittenwald | 7.323 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2163 | Pfaffenhofen a.d.Roth | 7.311 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 2164 | Harzgerode | 7.309 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2165 | Harztor | 7.306 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2166 | Klingenthal | 7.289 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2167 | Pfalzgrafenweiler | 7.286 | OpenStreetMap (Geofabrik-Auszug) | 6 | 8 | fertig | 
+ | ✅ | 2170 | Zwingenberg | 7.283 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2175 | Wabern | 7.262 | OpenStreetMap (Geofabrik-Auszug) | 4 | 7 | fertig | 
+ | ✅ | 2176 | Alfdorf | 7.260 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2177 | Hardegsen | 7.250 | OpenStreetMap (Geofabrik-Auszug) | 8 | 10 | fertig | 
+ | ✅ | 2178 | Pulsnitz | 7.246 | OpenStreetMap (Geofabrik-Auszug) | 6 | 7 | fertig | 
+ | ✅ | 2179 | Wallersdorf | 7.246 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2180 | Weimar (Lahn) | 7.240 | OpenStreetMap (Geofabrik-Auszug) | 2 | 6 | fertig | 
+ | ✅ | 2181 | Enkenbach-Alsenborn | 7.236 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2182 | Ampfing | 7.234 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2183 | Am Mellensee | 7.224 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2186 | Bad Sachsa | 7.193 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2189 | Haslach im Kinzigtal | 7.190 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 2190 | Nortorf | 7.190 | OpenStreetMap (Geofabrik-Auszug) | 3 | 12 | fertig | 
+ | ✅ | 2192 | Schwanstetten | 7.167 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2193 | Meldorf | 7.166 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2194 | Neulußheim | 7.162 | OpenStreetMap (Geofabrik-Auszug) | 4 | 5 | fertig | 
+ | ✅ | 2195 | Annweiler am Trifels | 7.160 | OpenStreetMap (Geofabrik-Auszug) | 3 | 13 | fertig | 
+ | ✅ | 2197 | Bindlach | 7.156 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2198 | Greding | 7.154 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2201 | Burgebrach | 7.149 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2202 | Roßwein | 7.149 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2203 | Neukieritzsch | 7.147 | OpenStreetMap (Geofabrik-Auszug) | 4 | 5 | fertig | 
+ | ✅ | 2204 | Scheßlitz | 7.129 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2209 | Schwendi | 7.098 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2210 | Namborn | 7.096 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2211 | Stolzenau | 7.079 | OpenStreetMap (Geofabrik-Auszug) | 8 | 11 | fertig | 
+ | ✅ | 2212 | Freyung | 7.078 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2213 | Immenhausen | 7.078 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2214 | Maxdorf | 7.075 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 2215 | Tuntenhausen | 7.074 | OpenStreetMap (Geofabrik-Auszug) | 7 | 9 | fertig | 
+ | ✅ | 2216 | Oppenheim | 7.071 | OpenStreetMap (Geofabrik-Auszug) | 15 | 17 | fertig | 
+ | ✅ | 2217 | Waldstetten | 7.067 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2218 | Ostrach | 7.066 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2219 | Birkenfeld | 7.062 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2220 | Roßleben-Wiehe | 7.062 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2221 | Markneukirchen | 7.061 | OpenStreetMap (Geofabrik-Auszug) | 5 | 9 | fertig | 
+ | ✅ | 2222 | Bischofswiesen | 7.055 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2224 | Berne | 7.053 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2225 | Schöppingen | 7.033 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2226 | Königsbronn | 7.028 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2227 | Sonnenbühl | 7.022 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 2228 | Pöttmes | 7.012 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2229 | Am Ettersberg | 7.010 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2230 | Reinsdorf | 7.009 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2231 | Waging a.See | 7.007 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2232 | Reppenstedt | 7.005 | OpenStreetMap (Geofabrik-Auszug) | 10 | 23 | fertig | 
+ | ✅ | 2233 | Lemwerder | 6.999 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2234 | Esens | 6.998 | OpenStreetMap (Geofabrik-Auszug) | 11 | 12 | fertig | 
+ | ✅ | 2235 | Jettingen-Scheppach | 6.996 | OpenStreetMap (Geofabrik-Auszug) | 7 | 14 | fertig | 
+ | ✅ | 2238 | Lautertal (Odenwald) | 6.991 | OpenStreetMap (Geofabrik-Auszug) | 2 | 8 | fertig | 
+ | ✅ | 2239 | Ilshofen | 6.990 | OpenStreetMap (Geofabrik-Auszug) | 5 | 8 | fertig | 
+ | ✅ | 2240 | Königsee | 6.979 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2242 | Homberg (Ohm) | 6.973 | OpenStreetMap (Geofabrik-Auszug) | 7 | 12 | fertig | 
+ | ✅ | 2243 | Geiselhöring | 6.964 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2244 | Nobitz | 6.962 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2245 | Reichelsheim (Wetterau) | 6.961 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2248 | Neuhofen | 6.946 | OpenStreetMap (Geofabrik-Auszug) | 7 | 14 | fertig | 
+ | ✅ | 2250 | Eiterfeld | 6.940 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2251 | Schallstadt | 6.937 | OpenStreetMap (Geofabrik-Auszug) | 4 | 7 | fertig | 
+ | ✅ | 2254 | Durach | 6.918 | OpenStreetMap (Geofabrik-Auszug) | 3 | 16 | fertig | 
+ | ✅ | 2255 | Lichtenau | 6.912 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2256 | Lambsheim | 6.911 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 2257 | Grassau | 6.910 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2258 | Lengenfeld | 6.910 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2259 | Georgensgmünd | 6.907 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2260 | Ladbergen | 6.906 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2261 | Saerbeck | 6.906 | OpenStreetMap (Geofabrik-Auszug) | 12 | 22 | fertig | 
+ | ✅ | 2262 | Waldeck | 6.905 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2263 | Höchstädt a.d.Donau | 6.902 | OpenStreetMap (Geofabrik-Auszug) | 7 | 22 | fertig | 
+ | ✅ | 2264 | Murg | 6.900 | OpenStreetMap (Geofabrik-Auszug) | 13 | 17 | fertig | 
+ | ✅ | 2266 | Edenkoben | 6.896 | OpenStreetMap (Geofabrik-Auszug) | 15 | 16 | fertig | 
+ | ✅ | 2268 | Dermbach | 6.889 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2270 | Bakum | 6.872 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2271 | Geithain | 6.870 | OpenStreetMap (Geofabrik-Auszug) | 15 | 18 | fertig | 
+ | ✅ | 2272 | Dettelbach | 6.866 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 2273 | Berglen | 6.860 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2275 | Bernau a.Chiemsee | 6.855 | OpenStreetMap (Geofabrik-Auszug) | 5 | 5 | fertig | 
+ | ✅ | 2276 | Neukirchen/Erzgeb. | 6.845 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 2277 | Putzbrunn | 6.845 | OpenStreetMap (Geofabrik-Auszug) | 12 | 20 | fertig | 
+ | ✅ | 2278 | Dietenheim | 6.843 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2279 | Auenwald | 6.833 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2280 | Müncheberg | 6.831 | OpenStreetMap (Geofabrik-Auszug) | 6 | 11 | fertig | 
+ | ✅ | 2282 | Horneburg | 6.823 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 2284 | Grömitz | 6.812 | OpenStreetMap (Geofabrik-Auszug) | 19 | 49 | fertig | 
+ | ✅ | 2285 | Bonndorf im Schwarzwald | 6.802 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2286 | Hardheim | 6.802 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 2287 | Eberdingen | 6.800 | OpenStreetMap (Geofabrik-Auszug) | 16 | 20 | fertig | 
+ | ✅ | 2288 | Dinkelscherben | 6.797 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2289 | Eibenstock | 6.795 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2290 | Schönkirchen | 6.794 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2291 | Erndtebrück | 6.792 | OpenStreetMap (Geofabrik-Auszug) | 3 | 6 | fertig | 
+ | ✅ | 2292 | Böhlen | 6.787 | OpenStreetMap (Geofabrik-Auszug) | 3 | 6 | fertig | 
+ | ✅ | 2293 | Mutlangen | 6.786 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 2294 | Stadtroda | 6.785 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 2295 | Dettenheim | 6.782 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2300 | Lathen | 6.767 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2301 | Malchin | 6.767 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2302 | Altenkirchen (Westerwald) | 6.758 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2304 | Gröditz | 6.752 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2307 | Büchen | 6.733 | OpenStreetMap (Geofabrik-Auszug) | 7 | 14 | fertig | 
+ | ✅ | 2308 | Leegebruch | 6.732 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 2309 | Bernkastel-Kues | 6.727 | OpenStreetMap (Geofabrik-Auszug) | 4 | 7 | fertig | 
+ | ✅ | 2311 | Niedere Börde | 6.726 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2314 | Mallersdorf-Pfaffenberg | 6.722 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2321 | Ebermannstadt | 6.688 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2323 | Ketzin/Havel | 6.684 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2324 | Hermeskeil | 6.677 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 2325 | Polch | 6.675 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2327 | Heringen (Werra) | 6.669 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2328 | Kupferzell | 6.665 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 2329 | Brannenburg | 6.658 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2330 | Zusmarshausen | 6.655 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 2332 | Tiefenbach | 6.650 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2333 | Osterburken | 6.639 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 2335 | Neuenstein | 6.618 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 2336 | Schelklingen | 6.616 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2337 | Gau-Algesheim | 6.606 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2338 | Bardowick | 6.604 | OpenStreetMap (Geofabrik-Auszug) | 3 | 6 | fertig | 
+ | ✅ | 2339 | Mitterteich | 6.604 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2342 | Weisendorf | 6.597 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2343 | Wöllstadt | 6.593 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2344 | Schliersee | 6.591 | OpenStreetMap (Geofabrik-Auszug) | 4 | 8 | fertig | 
+ | ✅ | 2345 | Schöffengrund | 6.590 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2346 | Klingenberg | 6.588 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2347 | Immendingen | 6.585 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2348 | Grasbrunn | 6.581 | OpenStreetMap (Geofabrik-Auszug) | 8 | 14 | fertig | 
+ | ✅ | 2350 | Grafenau | 6.578 | OpenStreetMap (Geofabrik-Auszug) | 7 | 8 | fertig | 
+ | ✅ | 2351 | Huy | 6.578 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2352 | Murr | 6.578 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2353 | Pegau | 6.578 | OpenStreetMap (Geofabrik-Auszug) | 2 | 6 | fertig | 
+ | ✅ | 2354 | Heitersheim | 6.577 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2355 | Laudenbach | 6.573 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2356 | Bispingen | 6.572 | OpenStreetMap (Geofabrik-Auszug) | 14 | 25 | fertig | 
+ | ✅ | 2357 | Jerichow | 6.571 | OpenStreetMap (Geofabrik-Auszug) | 5 | 5 | fertig | 
+ | ✅ | 2359 | Neustadt-Glewe | 6.566 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2361 | Bad Sobernheim | 6.564 | OpenStreetMap (Geofabrik-Auszug) | 14 | 24 | fertig | 
+ | ✅ | 2362 | Fockbek | 6.561 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2363 | Holle | 6.561 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2364 | Greifenstein | 6.560 | OpenStreetMap (Geofabrik-Auszug) | 1 | 5 | fertig | 
+ | ✅ | 2365 | Nattheim | 6.555 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2366 | Machern | 6.548 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2367 | Blankenhain | 6.543 | OpenStreetMap (Geofabrik-Auszug) | 1 | 12 | fertig | 
+ | ✅ | 2369 | Moringen | 6.540 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2370 | Metelen | 6.539 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2371 | Volkmarsen | 6.535 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2373 | Salzweg | 6.533 | OpenStreetMap (Geofabrik-Auszug) | 5 | 5 | fertig | 
+ | ✅ | 2374 | Sanitz | 6.533 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2375 | Haag i.OB | 6.532 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2377 | Rheinmünster | 6.527 | OpenStreetMap (Geofabrik-Auszug) | 8 | 12 | fertig | 
+ | ✅ | 2378 | Neustadt (Wied) | 6.526 | OpenStreetMap (Geofabrik-Auszug) | 3 | 9 | fertig | 
+ | ✅ | 2379 | Hage | 6.520 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2380 | Biebesheim am Rhein | 6.515 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2381 | Kiefersfelden | 6.513 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2382 | Herdorf | 6.508 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 2383 | Hartha | 6.503 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2385 | Gerbrunn | 6.493 | OpenStreetMap (Geofabrik-Auszug) | 6 | 7 | fertig | 
+ | ✅ | 2386 | Cölbe | 6.491 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2388 | Sinn | 6.485 | OpenStreetMap (Geofabrik-Auszug) | 7 | 20 | fertig | 
+ | ✅ | 2390 | Sottrum | 6.479 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2391 | Kalbach | 6.477 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2394 | Bad Brückenau | 6.470 | OpenStreetMap (Geofabrik-Auszug) | 5 | 11 | fertig | 
+ | ✅ | 2395 | Buttstädt | 6.470 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2396 | Bietigheim | 6.468 | OpenStreetMap (Geofabrik-Auszug) | 8 | 19 | fertig | 
+ | ✅ | 2398 | Burgkunstadt | 6.463 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2399 | Artern | 6.462 | OpenStreetMap (Geofabrik-Auszug) | 4 | 5 | fertig | 
+ | ✅ | 2400 | Maulbronn | 6.452 | OpenStreetMap (Geofabrik-Auszug) | 5 | 8 | fertig | 
+ | ✅ | 2401 | Rheurdt | 6.450 | OpenStreetMap (Geofabrik-Auszug) | 5 | 8 | fertig | 
+ | ✅ | 2402 | Röhrmoos | 6.449 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2404 | Immenstaad am Bodensee | 6.448 | OpenStreetMap (Geofabrik-Auszug) | 7 | 18 | fertig | 
+ | ✅ | 2409 | Uffenheim | 6.431 | OpenStreetMap (Geofabrik-Auszug) | 5 | 10 | fertig | 
+ | ✅ | 2410 | Eppertshausen | 6.429 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2413 | Eggolsheim | 6.414 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2414 | Glashütte | 6.414 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 2415 | Wassertrüdingen | 6.414 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 2416 | Beilstein | 6.412 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2417 | Mainleus | 6.410 | OpenStreetMap (Geofabrik-Auszug) | 2 | 6 | fertig | 
+ | ✅ | 2418 | Thannhausen | 6.406 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2421 | Burghaun | 6.404 | OpenStreetMap (Geofabrik-Auszug) | 11 | 18 | fertig | 
+ | ✅ | 2422 | Güglingen | 6.394 | OpenStreetMap (Geofabrik-Auszug) | 4 | 7 | fertig | 
+ | ✅ | 2424 | Zellingen | 6.390 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2426 | Römhild | 6.383 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2427 | Vilseck | 6.382 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2429 | Unstrut-Hainich | 6.378 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2434 | Bad Hönningen | 6.355 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2435 | Hanstedt | 6.354 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 2436 | Petershausen | 6.353 | OpenStreetMap (Geofabrik-Auszug) | 4 | 28 | fertig | 
+ | ✅ | 2437 | Ottersweier | 6.350 | OpenStreetMap (Geofabrik-Auszug) | 10 | 11 | fertig | 
+ | ✅ | 2438 | Waldachtal | 6.346 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2439 | Eichwalde | 6.341 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 2440 | Bad Saarow | 6.340 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 2442 | Hachenburg | 6.336 | OpenStreetMap (Geofabrik-Auszug) | 9 | 14 | fertig | 
+ | ✅ | 2443 | Satow | 6.336 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2444 | Neumarkt-Sankt Veit | 6.334 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2445 | Hutthurm | 6.332 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2451 | Benningen am Neckar | 6.323 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2452 | Otzberg | 6.322 | OpenStreetMap (Geofabrik-Auszug) | 5 | 6 | fertig | 
+ | ✅ | 2453 | Brechen | 6.321 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2454 | Altlußheim | 6.317 | OpenStreetMap (Geofabrik-Auszug) | 6 | 8 | fertig | 
+ | ✅ | 2455 | Sohland a.d.Spree | 6.317 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2456 | Veitsbronn | 6.312 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2457 | Schwabhausen | 6.311 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 2459 | Ihringen | 6.308 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2460 | Glücksburg (Ostsee) | 6.306 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2466 | Rodenberg | 6.287 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2467 | Kämpfelbach | 6.283 | OpenStreetMap (Geofabrik-Auszug) | 4 | 5 | fertig | 
+ | ✅ | 2468 | Bammental | 6.278 | OpenStreetMap (Geofabrik-Auszug) | 6 | 6 | fertig | 
+ | ✅ | 2472 | Wutha-Farnroda | 6.268 | OpenStreetMap (Geofabrik-Auszug) | 6 | 11 | fertig | 
+ | ✅ | 2473 | Linz am Rhein | 6.265 | OpenStreetMap (Geofabrik-Auszug) | 13 | 14 | fertig | 
+ | ✅ | 2474 | Trochtelfingen | 6.264 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2475 | Laage | 6.253 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2476 | Oberding | 6.251 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2478 | Havelberg | 6.246 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2479 | Bernsdorf | 6.242 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2480 | Vogtsburg im Kaiserstuhl | 6.234 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2482 | Gersheim | 6.232 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2483 | Bondorf | 6.230 | OpenStreetMap (Geofabrik-Auszug) | 3 | 10 | fertig | 
+ | ✅ | 2485 | Ingersheim | 6.223 | OpenStreetMap (Geofabrik-Auszug) | 6 | 24 | fertig | 
+ | ✅ | 2487 | Dornhan | 6.219 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2489 | Aarbergen | 6.210 | OpenStreetMap (Geofabrik-Auszug) | 4 | 12 | fertig | 
+ | ✅ | 2490 | Deißlingen | 6.208 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 2491 | Erdweg | 6.206 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 2492 | Schönberg (Holstein) | 6.206 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2493 | Zell im Wiesental | 6.204 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2495 | Schliengen | 6.200 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2496 | Wolfschlugen | 6.199 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2497 | Dierdorf | 6.192 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2498 | Edertal | 6.181 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2499 | Adelebsen | 6.180 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2500 | Bad Rodach | 6.179 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 2501 | Ilmtal-Weinstraße | 6.169 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2503 | Nachrodt-Wiblingwerde | 6.159 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2504 | Dötlingen | 6.155 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2505 | Gammertingen | 6.155 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2506 | Dußlingen | 6.153 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 2507 | Niedergörsdorf | 6.147 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2508 | Dettingen unter Teck | 6.138 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2510 | Uder | 6.134 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2514 | Eutingen im Gäu | 6.120 | OpenStreetMap (Geofabrik-Auszug) | 4 | 8 | fertig | 
+ | ✅ | 2515 | Ebersdorf b.Coburg | 6.119 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2517 | Alpirsbach | 6.114 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2518 | Windsbach | 6.114 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2519 | Klingenberg a.Main | 6.112 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 2520 | Neuffen | 6.104 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 2521 | Muggensturm | 6.103 | OpenStreetMap (Geofabrik-Auszug) | 6 | 12 | fertig | 
+ | ✅ | 2522 | Bad Marienberg (Westerwald) | 6.096 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2524 | Gochsheim | 6.093 | OpenStreetMap (Geofabrik-Auszug) | 2 | 6 | fertig | 
+ | ✅ | 2526 | Riedenburg | 6.090 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2530 | Nieheim | 6.081 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2532 | Falkenberg/Elster | 6.070 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2535 | Billigheim | 6.063 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2536 | Hüttlingen | 6.060 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2537 | Lachendorf | 6.059 | OpenStreetMap (Geofabrik-Auszug) | 1 | 7 | fertig | 
+ | ✅ | 2538 | Neustadt a.d.Waldnaab | 6.057 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2540 | Dudenhofen | 6.054 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2541 | Altbach | 6.047 | OpenStreetMap (Geofabrik-Auszug) | 6 | 7 | fertig | 
+ | ✅ | 2545 | Bickenbach | 6.031 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 2546 | Isenbüttel | 6.031 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2547 | Dohna | 6.030 | OpenStreetMap (Geofabrik-Auszug) | 1 | 5 | fertig | 
+ | ✅ | 2549 | Nesse-Apfelstädt | 6.021 | OpenStreetMap (Geofabrik-Auszug) | 6 | 12 | fertig | 
+ | ✅ | 2550 | Waldsee | 6.016 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2551 | Kirchheim am Neckar | 6.004 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 2552 | Plaidt | 6.003 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2554 | Westerburg | 6.002 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2561 | Allershausen | 5.980 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2562 | Hörselberg-Hainich | 5.979 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 2564 | Rohrbach | 5.970 | OpenStreetMap (Geofabrik-Auszug) | 3 | 7 | fertig | 
+ | ✅ | 2567 | Schlangenbad | 5.967 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 2569 | Spangenberg | 5.967 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 2570 | Butjadingen | 5.966 | OpenStreetMap (Geofabrik-Auszug) | 7 | 20 | fertig | 
+ | ✅ | 2572 | Malchow | 5.961 | OpenStreetMap (Geofabrik-Auszug) | 4 | 5 | fertig | 
+ | ✅ | 2573 | Königsfeld im Schwarzwald | 5.960 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2574 | Plau am See | 5.960 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2576 | Meersburg | 5.956 | OpenStreetMap (Geofabrik-Auszug) | 8 | 15 | fertig | 
+ | ✅ | 2577 | Thalheim/Erzgeb. | 5.956 | OpenStreetMap (Geofabrik-Auszug) | 10 | 15 | fertig | 
+ | ✅ | 2578 | Stockstadt am Rhein | 5.945 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2579 | Kirchardt | 5.939 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2580 | Burkhardtsdorf | 5.936 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2581 | Langquaid | 5.936 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2582 | Schlüsselfeld | 5.932 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2583 | Hohenlockstedt | 5.918 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2585 | Uelsen | 5.909 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2586 | Hebertshausen | 5.894 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 2587 | Mudersbach | 5.894 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2588 | Lübz | 5.892 | OpenStreetMap (Geofabrik-Auszug) | 28 | 33 | fertig | 
+ | ✅ | 2590 | Faßberg | 5.890 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2591 | Tarp | 5.890 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 2592 | Großbreitenbach | 5.884 | OpenStreetMap (Geofabrik-Auszug) | 2 | 7 | fertig | 
+ | ✅ | 2593 | An der Schmücke | 5.881 | OpenStreetMap (Geofabrik-Auszug) | 4 | 5 | fertig | 
+ | ✅ | 2597 | Boostedt | 5.868 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 2603 | Emskirchen | 5.854 | OpenStreetMap (Geofabrik-Auszug) | 18 | 22 | fertig | 
+ | ✅ | 2607 | Waldbrunn (Westerwald) | 5.847 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2609 | Jade | 5.843 | OpenStreetMap (Geofabrik-Auszug) | 3 | 6 | fertig | 
+ | ✅ | 2611 | Schäftlarn | 5.840 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2613 | Dasing | 5.838 | OpenStreetMap (Geofabrik-Auszug) | 6 | 7 | fertig | 
+ | ✅ | 2614 | Beselich | 5.835 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2617 | Tittmoning | 5.826 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2619 | Geltendorf | 5.817 | OpenStreetMap (Geofabrik-Auszug) | 4 | 8 | fertig | 
+ | ✅ | 2620 | Elztal | 5.814 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2621 | Gmund a.Tegernsee | 5.813 | OpenStreetMap (Geofabrik-Auszug) | 7 | 11 | fertig | 
+ | ✅ | 2622 | Nufringen | 5.806 | OpenStreetMap (Geofabrik-Auszug) | 6 | 10 | fertig | 
+ | ✅ | 2623 | Bodelshausen | 5.805 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2625 | Waibstadt | 5.794 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 2626 | Bredstedt | 5.790 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2627 | Heringsdorf | 5.790 | OpenStreetMap (Geofabrik-Auszug) | 6 | 13 | fertig | 
+ | ✅ | 2629 | Bräunlingen | 5.784 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2631 | Löchgau | 5.778 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2634 | Dietenhofen | 5.771 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2635 | Sontheim an der Brenz | 5.771 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2638 | Schwarmstedt | 5.759 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2641 | Nottertal-Heilinger Höhen | 5.750 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2642 | Fürstenberg/Havel | 5.741 | OpenStreetMap (Geofabrik-Auszug) | 4 | 8 | fertig | 
+ | ✅ | 2643 | Kalefeld | 5.732 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2644 | Hirschau | 5.726 | OpenStreetMap (Geofabrik-Auszug) | 5 | 5 | fertig | 
+ | ✅ | 2648 | Neubulach | 5.713 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2649 | Ober-Mörlen | 5.706 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 2651 | Bruckberg | 5.700 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 2652 | Herrnhut | 5.695 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 2653 | Wirges | 5.694 | OpenStreetMap (Geofabrik-Auszug) | 6 | 12 | fertig | 
+ | ✅ | 2655 | Böhmenkirch | 5.684 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2656 | Willingen (Upland) | 5.672 | OpenStreetMap (Geofabrik-Auszug) | 9 | 15 | fertig | 
+ | ✅ | 2658 | Odelzhausen | 5.671 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2660 | Münzenberg | 5.663 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2663 | Oberboihingen | 5.644 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2665 | Tacherting | 5.643 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2668 | Kleinwallstadt | 5.632 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2671 | Giebelstadt | 5.617 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2672 | Weischlitz | 5.617 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2674 | Ebensfeld | 5.614 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2675 | Mengerskirchen | 5.612 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2677 | Beratzhausen | 5.594 | OpenStreetMap (Geofabrik-Auszug) | 5 | 6 | fertig | 
+ | ✅ | 2678 | Gemmingen | 5.593 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2679 | Pöcking | 5.589 | OpenStreetMap (Geofabrik-Auszug) | 3 | 7 | fertig | 
+ | ✅ | 2681 | Merzhausen | 5.584 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2682 | Aying | 5.581 | OpenStreetMap (Geofabrik-Auszug) | 7 | 14 | fertig | 
+ | ✅ | 2683 | Hambrücken | 5.581 | OpenStreetMap (Geofabrik-Auszug) | 2 | 7 | fertig | 
+ | ✅ | 2685 | Affing | 5.575 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2686 | Dietramszell | 5.572 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2688 | Wolfach | 5.571 | OpenStreetMap (Geofabrik-Auszug) | 5 | 5 | fertig | 
+ | ✅ | 2689 | Großpösna | 5.570 | OpenStreetMap (Geofabrik-Auszug) | 40 | 43 | fertig | 
+ | ✅ | 2690 | Leutershausen | 5.570 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2692 | Tegernheim | 5.570 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2697 | Limeshain | 5.563 | OpenStreetMap (Geofabrik-Auszug) | 6 | 9 | fertig | 
+ | ✅ | 2698 | Fischbachau | 5.562 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2699 | Kaltennordheim | 5.562 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2702 | Schönenberg-Kübelberg | 5.557 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2706 | Rochlitz | 5.549 | OpenStreetMap (Geofabrik-Auszug) | 20 | 29 | fertig | 
+ | ✅ | 2707 | Wesendorf | 5.549 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2709 | Laboe | 5.546 | OpenStreetMap (Geofabrik-Auszug) | 5 | 15 | fertig | 
+ | ✅ | 2714 | Dettenhausen | 5.543 | OpenStreetMap (Geofabrik-Auszug) | 5 | 5 | fertig | 
+ | ✅ | 2715 | Seelow | 5.541 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2716 | Zeil a.Main | 5.540 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2717 | Wartenberg | 5.539 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2719 | Rot am See | 5.531 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2720 | Heimsheim | 5.530 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2721 | Mellrichstadt | 5.530 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 2722 | Baltmannsweiler | 5.525 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2723 | Bad Lobenstein | 5.523 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2724 | Küssaberg | 5.520 | OpenStreetMap (Geofabrik-Auszug) | 4 | 9 | fertig | 
+ | ✅ | 2725 | Weßling | 5.519 | OpenStreetMap (Geofabrik-Auszug) | 6 | 15 | fertig | 
+ | ✅ | 2726 | Blaichach | 5.518 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2727 | Igersheim | 5.517 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2729 | Büchenbach | 5.514 | OpenStreetMap (Geofabrik-Auszug) | 3 | 31 | fertig | 
+ | ✅ | 2730 | Mügeln | 5.505 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2733 | Ingelfingen | 5.501 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2734 | Wernberg-Köblitz | 5.494 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 2735 | Kirchentellinsfurt | 5.492 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2736 | Rechberghausen | 5.491 | OpenStreetMap (Geofabrik-Auszug) | 12 | 14 | fertig | 
+ | ✅ | 2737 | Baar-Ebenhausen | 5.488 | OpenStreetMap (Geofabrik-Auszug) | 6 | 12 | fertig | 
+ | ✅ | 2739 | Aschau i.Chiemgau | 5.471 | OpenStreetMap (Geofabrik-Auszug) | 8 | 12 | fertig | 
+ | ✅ | 2741 | Lamspringe | 5.460 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2742 | Vöhl | 5.460 | OpenStreetMap (Geofabrik-Auszug) | 9 | 11 | fertig | 
+ | ✅ | 2743 | Walddorfhäslach | 5.457 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 2744 | Ahlerstedt | 5.456 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2745 | Drebkau | 5.455 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2747 | Brunnthal | 5.451 | OpenStreetMap (Geofabrik-Auszug) | 6 | 6 | fertig | 
+ | ✅ | 2750 | Sersheim | 5.448 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 2751 | Eschede | 5.443 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2753 | Rottach-Egern | 5.441 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2756 | Stolpen | 5.436 | OpenStreetMap (Geofabrik-Auszug) | 6 | 15 | fertig | 
+ | ✅ | 2757 | Frankenblick | 5.434 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 2758 | Hohenwestedt | 5.428 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2759 | Triftern | 5.428 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2760 | Bessenbach | 5.425 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2761 | Grabfeld | 5.425 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 2765 | Ovelgönne | 5.421 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2766 | Sulzbach an der Murr | 5.421 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 2767 | Traben-Trarbach | 5.421 | OpenStreetMap (Geofabrik-Auszug) | 6 | 12 | fertig | 
+ | ✅ | 2769 | Altenstadt | 5.416 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2772 | Dörpen | 5.405 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2773 | Forchtenberg | 5.405 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2774 | Rehfelde | 5.403 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2775 | Rottendorf | 5.398 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 2778 | Ertingen | 5.381 | OpenStreetMap (Geofabrik-Auszug) | 2 | 9 | fertig | 
+ | ✅ | 2781 | Ludwigsau | 5.375 | OpenStreetMap (Geofabrik-Auszug) | 1 | 20 | fertig | 
+ | ✅ | 2782 | Rockenhausen | 5.371 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2783 | Bad Gottleuba-Berggießhübel | 5.367 | OpenStreetMap (Geofabrik-Auszug) | 4 | 8 | fertig | 
+ | ✅ | 2784 | Bernhardswald | 5.366 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2785 | Neuenkirchen | 5.365 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2786 | Wackersdorf | 5.364 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2787 | Külsheim | 5.360 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2788 | Grebenstein | 5.358 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 2789 | Nackenheim | 5.358 | OpenStreetMap (Geofabrik-Auszug) | 6 | 6 | fertig | 
+ | ✅ | 2793 | Sasbach | 5.357 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 2796 | Gersfeld (Rhön) | 5.352 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2797 | Wannweil | 5.352 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 2798 | Stühlingen | 5.351 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2800 | Guxhagen | 5.347 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2801 | Norderney | 5.343 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2804 | Kirchdorf a.Inn | 5.341 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2806 | Ranstadt | 5.340 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2807 | Nünchritz | 5.339 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2808 | Kusel | 5.332 | OpenStreetMap (Geofabrik-Auszug) | 37 | 38 | fertig | 
+ | ✅ | 2810 | Wörthsee | 5.330 | OpenStreetMap (Geofabrik-Auszug) | 3 | 6 | fertig | 
+ | ✅ | 2811 | Dietzhölztal | 5.328 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2814 | Uhlstädt-Kirchhasel | 5.320 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2815 | Schechen | 5.316 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2816 | Schönau a.Königssee | 5.315 | OpenStreetMap (Geofabrik-Auszug) | 5 | 10 | fertig | 
+ | ✅ | 2817 | Tiefenbronn | 5.315 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2818 | Zarrentin am Schaalsee | 5.312 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2822 | Rosengarten | 5.309 | OpenStreetMap (Geofabrik-Auszug) | 6 | 7 | fertig | 
+ | ✅ | 2825 | Angelbachtal | 5.299 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2826 | Meckesheim | 5.298 | OpenStreetMap (Geofabrik-Auszug) | 8 | 13 | fertig | 
+ | ✅ | 2827 | Neuberg | 5.296 | OpenStreetMap (Geofabrik-Auszug) | 5 | 9 | fertig | 
+ | ✅ | 2828 | Seubersdorf i.d.OPf. | 5.295 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2829 | Jestetten | 5.290 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 2830 | Laaber | 5.290 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2833 | Calberlah | 5.288 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2834 | Ebstorf | 5.288 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2835 | Waldems | 5.288 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2837 | Prüm | 5.284 | OpenStreetMap (Geofabrik-Auszug) | 6 | 11 | fertig | 
+ | ✅ | 2838 | Bergrheinfeld | 5.276 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2841 | Schöppenstedt | 5.265 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 2845 | Jahnsdorf/Erzgeb. | 5.262 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2846 | Erdmannhausen | 5.261 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2847 | Süderbrarup | 5.255 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2848 | Ühlingen-Birkendorf | 5.255 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2849 | Mahlberg | 5.254 | OpenStreetMap (Geofabrik-Auszug) | 5 | 9 | fertig | 
+ | ✅ | 2850 | Mühlhausen | 5.251 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2852 | Pommelsbrunn | 5.242 | OpenStreetMap (Geofabrik-Auszug) | 5 | 14 | fertig | 
+ | ✅ | 2853 | Ellrich | 5.239 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2855 | Hemhofen | 5.220 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2856 | Iffezheim | 5.219 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 2857 | Großschirma | 5.217 | OpenStreetMap (Geofabrik-Auszug) | 6 | 8 | fertig | 
+ | ✅ | 2859 | Adelsheim | 5.207 | OpenStreetMap (Geofabrik-Auszug) | 5 | 6 | fertig | 
+ | ✅ | 2861 | Lenzkirch | 5.201 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2862 | Oettingen i.Bay. | 5.196 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2864 | Wörth a.d.Donau | 5.196 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 2865 | Pottenstein | 5.190 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2866 | Reichenau | 5.189 | OpenStreetMap (Geofabrik-Auszug) | 9 | 11 | fertig | 
+ | ✅ | 2867 | Reichertshausen | 5.188 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 2868 | Diemelstadt | 5.186 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2871 | Himmelpforten | 5.172 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2872 | Burg Stargard | 5.171 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2873 | Lonsee | 5.170 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2874 | Tharandt | 5.170 | OpenStreetMap (Geofabrik-Auszug) | 4 | 8 | fertig | 
+ | ✅ | 2877 | Steyerberg | 5.159 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2879 | Erlenbach | 5.155 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 2880 | Karlskron | 5.150 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 2881 | Wermsdorf | 5.148 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2882 | Kitzscher | 5.140 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2884 | Bad Bellingen | 5.134 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 2885 | Steißlingen | 5.133 | OpenStreetMap (Geofabrik-Auszug) | 5 | 8 | fertig | 
+ | ✅ | 2886 | Oberammergau | 5.132 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2887 | Sulzfeld | 5.131 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 2888 | Ruhla | 5.126 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2889 | Hofheim i.UFr. | 5.125 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2890 | Waldmohr | 5.124 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 2891 | Achstetten | 5.116 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2892 | Bad Boll | 5.116 | OpenStreetMap (Geofabrik-Auszug) | 2 | 6 | fertig | 
+ | ✅ | 2893 | Großschönau | 5.114 | OpenStreetMap (Geofabrik-Auszug) | 7 | 18 | fertig | 
+ | ✅ | 2894 | Ötigheim | 5.110 | OpenStreetMap (Geofabrik-Auszug) | 12 | 39 | fertig | 
+ | ✅ | 2895 | Büsum | 5.105 | OpenStreetMap (Geofabrik-Auszug) | 4 | 10 | fertig | 
+ | ✅ | 2896 | Sundhagen | 5.096 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 2898 | Neuhausen | 5.095 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 2900 | Modautal | 5.090 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 2901 | Gadebusch | 5.087 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2902 | Glonn | 5.085 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 2903 | Heiningen | 5.077 | OpenStreetMap (Geofabrik-Auszug) | 1 | 5 | fertig | 
+ | ✅ | 2904 | Laufach | 5.075 | OpenStreetMap (Geofabrik-Auszug) | 8 | 14 | fertig | 
+ | ✅ | 2906 | Trappenkamp | 5.073 | OpenStreetMap (Geofabrik-Auszug) | 7 | 7 | fertig | 
+ | ✅ | 2907 | Espenau | 5.069 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2908 | Deggingen | 5.066 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2909 | Lensahn | 5.066 | OpenStreetMap (Geofabrik-Auszug) | 13 | 16 | fertig | 
+ | ✅ | 2910 | Mammendorf | 5.066 | OpenStreetMap (Geofabrik-Auszug) | 8 | 10 | fertig | 
+ | ✅ | 2911 | Wiggensbach | 5.065 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2913 | Igensdorf | 5.063 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2916 | Bad Hindelang | 5.058 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2917 | Driedorf | 5.056 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2920 | Oerlenbach | 5.051 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2921 | Unkel | 5.051 | OpenStreetMap (Geofabrik-Auszug) | 8 | 9 | fertig | 
+ | ✅ | 2922 | Heroldsbach | 5.050 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2923 | Binz | 5.049 | OpenStreetMap (Geofabrik-Auszug) | 5 | 33 | fertig | 
+ | ✅ | 2925 | Engstingen | 5.041 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 2926 | Marxzell | 5.040 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 2929 | Illerkirchberg | 5.036 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2931 | Weitramsdorf | 5.029 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2933 | Krauchenwies | 5.023 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2935 | Zschorlau | 5.018 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2936 | Lichtenau | 5.015 | OpenStreetMap (Geofabrik-Auszug) | 19 | 25 | fertig | 
+ | ✅ | 2937 | Großheubach | 5.013 | OpenStreetMap (Geofabrik-Auszug) | 6 | 8 | fertig | 
+ | ✅ | 2938 | Übersee | 5.013 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2940 | Windorf | 5.005 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2943 | Petersaurach | 5.000 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2944 | Halsbrücke | 4.999 | OpenStreetMap (Geofabrik-Auszug) | 6 | 9 | fertig | 
+ | ✅ | 2945 | Hügelsheim | 4.999 | OpenStreetMap (Geofabrik-Auszug) | 8 | 12 | fertig | 
+ | ✅ | 2946 | Rheinzabern | 4.998 | OpenStreetMap (Geofabrik-Auszug) | 8 | 9 | fertig | 
+ | ✅ | 2947 | Altentreptow | 4.992 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 2949 | Fronreute | 4.983 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2950 | Emmelshausen | 4.980 | OpenStreetMap (Geofabrik-Auszug) | 8 | 10 | fertig | 
+ | ✅ | 2951 | Windischeschenbach | 4.980 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 2952 | Lohsa | 4.978 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2954 | Schwaan | 4.976 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2955 | Abstatt | 4.975 | OpenStreetMap (Geofabrik-Auszug) | 6 | 12 | fertig | 
+ | ✅ | 2958 | Molfsee | 4.972 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2962 | Arnsdorf | 4.960 | OpenStreetMap (Geofabrik-Auszug) | 4 | 11 | fertig | 
+ | ✅ | 2963 | Todtnau | 4.960 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2966 | Oberthulba | 4.948 | OpenStreetMap (Geofabrik-Auszug) | 2 | 11 | fertig | 
+ | ✅ | 2967 | Cochem | 4.946 | OpenStreetMap (Geofabrik-Auszug) | 10 | 14 | fertig | 
+ | ✅ | 2971 | Naumburg | 4.935 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 2976 | Waldbüttelbrunn | 4.926 | OpenStreetMap (Geofabrik-Auszug) | 6 | 7 | fertig | 
+ | ✅ | 2978 | Zapfendorf | 4.922 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 2979 | Niederstotzingen | 4.916 | OpenStreetMap (Geofabrik-Auszug) | 6 | 9 | fertig | 
+ | ✅ | 2983 | Niederstetten | 4.906 | OpenStreetMap (Geofabrik-Auszug) | 6 | 9 | fertig | 
+ | ✅ | 2984 | Oberviechtach | 4.905 | OpenStreetMap (Geofabrik-Auszug) | 2 | 7 | fertig | 
+ | ✅ | 2987 | Kröpelin | 4.899 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 2988 | Lenting | 4.895 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 2990 | Vacha | 4.891 | OpenStreetMap (Geofabrik-Auszug) | 1 | 15 | fertig | 
+ | ✅ | 2992 | Hartheim am Rhein | 4.887 | OpenStreetMap (Geofabrik-Auszug) | 2 | 12 | fertig | 
+ | ✅ | 2999 | Wiesentheid | 4.875 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3001 | Winhöring | 4.871 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3005 | Rust | 4.865 | OpenStreetMap (Geofabrik-Auszug) | 6 | 10 | fertig | 
+ | ✅ | 3007 | Stetten am kalten Markt | 4.859 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 3008 | Lauchheim | 4.857 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 3009 | Emmingen-Liptingen | 4.856 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3010 | Stavenhagen | 4.855 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 3011 | Brachttal | 4.844 | OpenStreetMap (Geofabrik-Auszug) | 10 | 61 | fertig | 
+ | ✅ | 3012 | Drebach | 4.844 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 3013 | Hammersbach | 4.843 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3014 | Stadecken-Elsheim | 4.842 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3018 | Braunlage | 4.839 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 3019 | Bodman-Ludwigshafen | 4.838 | OpenStreetMap (Geofabrik-Auszug) | 6 | 18 | fertig | 
+ | ✅ | 3020 | Eriskirch | 4.834 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3022 | Aglasterhausen | 4.825 | OpenStreetMap (Geofabrik-Auszug) | 5 | 8 | fertig | 
+ | ✅ | 3023 | Inning a.Ammersee | 4.822 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 3027 | Alheim | 4.819 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3028 | Krayenberggemeinde | 4.818 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3029 | Malschwitz | 4.818 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 3032 | Neuhausen/Spree | 4.814 | OpenStreetMap (Geofabrik-Auszug) | 9 | 16 | fertig | 
+ | ✅ | 3034 | Tönning | 4.814 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 3036 | Eggesin | 4.812 | OpenStreetMap (Geofabrik-Auszug) | 5 | 5 | fertig | 
+ | ✅ | 3037 | Kruft | 4.800 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3039 | Seddiner See | 4.794 | OpenStreetMap (Geofabrik-Auszug) | 4 | 8 | fertig | 
+ | ✅ | 3042 | Uttenreuth | 4.790 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3046 | Chieming | 4.778 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3051 | Wörth a.Main | 4.769 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 3052 | Iphofen | 4.768 | OpenStreetMap (Geofabrik-Auszug) | 7 | 7 | fertig | 
+ | ✅ | 3058 | Asbach-Bäumenheim | 4.750 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 3059 | Vellberg | 4.747 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3060 | Gablingen | 4.746 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 3061 | Uchte | 4.745 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3062 | Rückersdorf | 4.744 | OpenStreetMap (Geofabrik-Auszug) | 2 | 9 | fertig | 
+ | ✅ | 3063 | Mietingen | 4.743 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3064 | Neukirch/Lausitz | 4.742 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3066 | Herbertingen | 4.738 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 3067 | Lommatzsch | 4.737 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 3069 | Maselheim | 4.736 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3070 | Bad Bocklet | 4.734 | OpenStreetMap (Geofabrik-Auszug) | 6 | 13 | fertig | 
+ | ✅ | 3072 | Hilders | 4.733 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 3073 | Raschau-Markersbach | 4.730 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 3075 | Hochspeyer | 4.721 | OpenStreetMap (Geofabrik-Auszug) | 4 | 7 | fertig | 
+ | ✅ | 3078 | Hesel | 4.714 | OpenStreetMap (Geofabrik-Auszug) | 6 | 6 | fertig | 
+ | ✅ | 3081 | Niederwiesa | 4.712 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3082 | Geisa | 4.708 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 3083 | Inzell | 4.704 | OpenStreetMap (Geofabrik-Auszug) | 2 | 9 | fertig | 
+ | ✅ | 3084 | Börnsen | 4.702 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3085 | Jahnatal | 4.702 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3086 | Wildeck | 4.701 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 3087 | Thum | 4.695 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3088 | Bellenberg | 4.694 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 3089 | Aindling | 4.691 | OpenStreetMap (Geofabrik-Auszug) | 5 | 5 | fertig | 
+ | ✅ | 3090 | Buchholz (Westerwald) | 4.688 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 3091 | Altenstadt a.d.Waldnaab | 4.687 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3092 | Heideck | 4.684 | OpenStreetMap (Geofabrik-Auszug) | 2 | 20 | fertig | 
+ | ✅ | 3093 | Röbel/Müritz | 4.684 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 3094 | Otterfing | 4.682 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3095 | Duingen | 4.680 | OpenStreetMap (Geofabrik-Auszug) | 12 | 43 | fertig | 
+ | ✅ | 3096 | Burgheim | 4.678 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 3099 | Waldbrunn | 4.670 | OpenStreetMap (Geofabrik-Auszug) | 1 | 6 | fertig | 
+ | ✅ | 3102 | Königsbrück | 4.665 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 3104 | Neunkirchen a.Sand | 4.662 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 3106 | Vierkirchen | 4.654 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 3109 | Eisingen | 4.648 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 3111 | Leidersbach | 4.642 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3112 | Wilthen | 4.642 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3114 | Hörsel | 4.636 | OpenStreetMap (Geofabrik-Auszug) | 2 | 6 | fertig | 
+ | ✅ | 3115 | Lähden | 4.631 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 3117 | Kreischa | 4.629 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 3119 | Röttenbach | 4.625 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 3120 | Müllrose | 4.622 | OpenStreetMap (Geofabrik-Auszug) | 6 | 15 | fertig | 
+ | ✅ | 3123 | Bad Bodenteich | 4.609 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3126 | Gutach im Breisgau | 4.599 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 3128 | Marklohe | 4.594 | OpenStreetMap (Geofabrik-Auszug) | 14 | 18 | fertig | 
+ | ✅ | 3130 | Bergen | 4.592 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3133 | Nastätten | 4.588 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 3135 | Scheinfeld | 4.583 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3137 | Eberhardzell | 4.580 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3140 | Reichenbach/O.L. | 4.574 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3141 | Striegistal | 4.570 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 3143 | Hitzacker (Elbe) | 4.566 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3144 | Oy-Mittelberg | 4.564 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 3145 | Forbach | 4.562 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 3147 | Krautheim | 4.561 | OpenStreetMap (Geofabrik-Auszug) | 1 | 11 | fertig | 
+ | ✅ | 3149 | Bönningstedt | 4.559 | OpenStreetMap (Geofabrik-Auszug) | 9 | 10 | fertig | 
+ | ✅ | 3153 | Bubenreuth | 4.547 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3154 | Aßling | 4.545 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3156 | Böbingen an der Rems | 4.539 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 3159 | Altdorf | 4.529 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 3164 | Limbach | 4.513 | OpenStreetMap (Geofabrik-Auszug) | 1 | 15 | fertig | 
+ | ✅ | 3165 | Freden (Leine) | 4.508 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3168 | Ober-Olm | 4.497 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 3174 | Heimbach | 4.487 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 3175 | Marlow | 4.487 | OpenStreetMap (Geofabrik-Auszug) | 1 | 6 | fertig | 
+ | ✅ | 3176 | Breitengüßbach | 4.481 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 3181 | Rhede (Ems) | 4.465 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 3182 | Rennerod | 4.464 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 3183 | Rauschenberg | 4.463 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 3184 | Vöhringen | 4.462 | OpenStreetMap (Geofabrik-Auszug) | 4 | 8 | fertig | 
+ | ✅ | 3185 | Rheinbreitbach | 4.460 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3187 | Ummendorf | 4.456 | OpenStreetMap (Geofabrik-Auszug) | 8 | 9 | fertig | 
+ | ✅ | 3188 | Creglingen | 4.453 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3189 | Adorf/Vogtl. | 4.451 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3190 | Gerabronn | 4.451 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3192 | Buggingen | 4.449 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3195 | Knüllwald | 4.443 | OpenStreetMap (Geofabrik-Auszug) | 15 | 24 | fertig | 
+ | ✅ | 3198 | Putbus | 4.441 | OpenStreetMap (Geofabrik-Auszug) | 5 | 9 | fertig | 
+ | ✅ | 3199 | Grebenhain | 4.436 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3200 | Oppenweiler | 4.435 | OpenStreetMap (Geofabrik-Auszug) | 11 | 20 | fertig | 
+ | ✅ | 3201 | Freyburg (Unstrut) | 4.433 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3203 | Mittelbiberach | 4.433 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3204 | Scheidegg | 4.432 | OpenStreetMap (Geofabrik-Auszug) | 1 | 6 | fertig | 
+ | ✅ | 3209 | Maikammer | 4.426 | OpenStreetMap (Geofabrik-Auszug) | 7 | 8 | fertig | 
+ | ✅ | 3210 | Wachenheim an der Weinstraße | 4.421 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 3211 | Dahlem | 4.416 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3212 | Liebenwalde | 4.413 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 3213 | Stegen | 4.413 | OpenStreetMap (Geofabrik-Auszug) | 7 | 7 | fertig | 
+ | ✅ | 3214 | Hartenstein | 4.411 | OpenStreetMap (Geofabrik-Auszug) | 4 | 5 | fertig | 
+ | ✅ | 3215 | Wörth | 4.409 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 3216 | Albershausen | 4.408 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3220 | Breitungen/Werra | 4.394 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3221 | Kirchberg i.Wald | 4.392 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3222 | Nehren | 4.390 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3224 | Güntersleben | 4.382 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3225 | Hartmannsdorf | 4.382 | OpenStreetMap (Geofabrik-Auszug) | 11 | 11 | fertig | 
+ | ✅ | 3226 | Augustusburg | 4.379 | OpenStreetMap (Geofabrik-Auszug) | 3 | 10 | fertig | 
+ | ✅ | 3227 | Suderburg | 4.379 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3231 | Münsing | 4.373 | OpenStreetMap (Geofabrik-Auszug) | 5 | 6 | fertig | 
+ | ✅ | 3232 | Starzach | 4.373 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 3234 | Poppenhausen | 4.371 | OpenStreetMap (Geofabrik-Auszug) | 3 | 8 | fertig | 
+ | ✅ | 3237 | Untereisesheim | 4.367 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3240 | Zell a.Main | 4.360 | OpenStreetMap (Geofabrik-Auszug) | 8 | 11 | fertig | 
+ | ✅ | 3241 | Rabenau | 4.359 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3242 | Donaustauf | 4.357 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3243 | Langenlonsheim | 4.357 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3245 | Hankensbüttel | 4.354 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 3246 | Heiligengrabe | 4.352 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3247 | Dornum | 4.351 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 3249 | Contwig | 4.348 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3251 | Surwold | 4.346 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3252 | Ehrenfriedersdorf | 4.343 | OpenStreetMap (Geofabrik-Auszug) | 5 | 8 | fertig | 
+ | ✅ | 3253 | Eurasburg | 4.343 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3255 | Feldafing | 4.337 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 3257 | Offingen | 4.336 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3261 | Grabenstätt | 4.324 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3262 | Röhrnbach | 4.323 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3265 | Mögglingen | 4.317 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 3266 | Feldberger Seenlandschaft | 4.315 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3271 | Edling | 4.307 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3272 | Kranzberg | 4.304 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 3273 | Schnaittenbach | 4.304 | OpenStreetMap (Geofabrik-Auszug) | 3 | 6 | fertig | 
+ | ✅ | 3275 | Wilster | 4.302 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3276 | Peitz | 4.301 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 3277 | Gößweinstein | 4.298 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3278 | Badbergen | 4.297 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3279 | Dahn | 4.297 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 3280 | Rheinböllen | 4.296 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3282 | Reinhardshagen | 4.291 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3283 | Dransfeld | 4.290 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 3284 | Triefenstein | 4.289 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3285 | Metten | 4.288 | OpenStreetMap (Geofabrik-Auszug) | 2 | 101 | fertig | 
+ | ✅ | 3287 | Olbersdorf | 4.281 | OpenStreetMap (Geofabrik-Auszug) | 3 | 11 | fertig | 
+ | ✅ | 3289 | Strasburg (Uckermark) | 4.278 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3293 | Empfingen | 4.269 | OpenStreetMap (Geofabrik-Auszug) | 2 | 7 | fertig | 
+ | ✅ | 3296 | Baumholder | 4.265 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 3297 | Neufahrn i.NB | 4.263 | OpenStreetMap (Geofabrik-Auszug) | 2 | 14 | fertig | 
+ | ✅ | 3301 | Eching | 4.254 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3302 | Grettstadt | 4.251 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3306 | Neureichenau | 4.238 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3308 | Wachau | 4.233 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3309 | Waldfischbach-Burgalben | 4.232 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3311 | Schwarzenbach a.Wald | 4.231 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 3312 | Aichhalden | 4.225 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 3315 | Neuzelle | 4.223 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 3316 | Bodenwöhr | 4.221 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 3319 | Twistetal | 4.219 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3321 | Pressath | 4.217 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3323 | Nienstädt | 4.216 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3324 | Messel | 4.215 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3325 | Niederdorfelden | 4.215 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3327 | Sennfeld | 4.212 | OpenStreetMap (Geofabrik-Auszug) | 8 | 10 | fertig | 
+ | ✅ | 3328 | Amstetten | 4.208 | OpenStreetMap (Geofabrik-Auszug) | 7 | 8 | fertig | 
+ | ✅ | 3331 | Dietingen | 4.204 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 3337 | Neckarbischofsheim | 4.195 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3338 | Bürgstadt | 4.193 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 3339 | Lauenau | 4.191 | OpenStreetMap (Geofabrik-Auszug) | 4 | 5 | fertig | 
+ | ✅ | 3340 | Kirchberg (Hunsrück) | 4.189 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3341 | Loitz | 4.189 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3342 | Elmenhorst/Lichtenhagen | 4.186 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 3344 | Niedernhall | 4.185 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3347 | Winkelhaid | 4.184 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3348 | Wiesenburg/Mark | 4.182 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3349 | Vogtei | 4.180 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3350 | Burg (Spreewald) | 4.179 | OpenStreetMap (Geofabrik-Auszug) | 7 | 9 | fertig | 
+ | ✅ | 3353 | Weinbach | 4.176 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3354 | Wietzendorf | 4.176 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3355 | Lindhorst | 4.175 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3357 | Rockenberg | 4.173 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3358 | Gondelsheim | 4.172 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3361 | Baruth/Mark | 4.168 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3362 | Eging a.See | 4.168 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3363 | Bruck i.d.OPf. | 4.167 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3366 | Bermatingen | 4.160 | OpenStreetMap (Geofabrik-Auszug) | 8 | 12 | fertig | 
+ | ✅ | 3367 | Gräfenberg | 4.160 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3369 | Zaberfeld | 4.156 | OpenStreetMap (Geofabrik-Auszug) | 7 | 10 | fertig | 
+ | ✅ | 3377 | Reichenberg | 4.148 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3380 | Dahlen | 4.144 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3381 | Kirchberg an der Murr | 4.144 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 3383 | Stammham | 4.142 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3385 | Altenmarkt a.d.Alz | 4.141 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3386 | Graal-Müritz | 4.141 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 3387 | Selbitz | 4.141 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3388 | Tessin | 4.139 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3389 | Schöllkrippen | 4.136 | OpenStreetMap (Geofabrik-Auszug) | 3 | 7 | fertig | 
+ | ✅ | 3391 | Niederfischbach | 4.129 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 3395 | Wyk auf Föhr | 4.113 | OpenStreetMap (Geofabrik-Auszug) | 4 | 8 | fertig | 
+ | ✅ | 3396 | Buchenberg | 4.110 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3397 | Baunach | 4.109 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 3398 | Fronhausen | 4.108 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3401 | Pfaffing | 4.104 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3402 | Schwebheim | 4.103 | OpenStreetMap (Geofabrik-Auszug) | 4 | 7 | fertig | 
+ | ✅ | 3406 | Kochel a.See | 4.095 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 3412 | Escheburg | 4.075 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3413 | Mauer | 4.073 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 3415 | Langenbach | 4.068 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3417 | Geringswalde | 4.066 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3420 | Friolzheim | 4.062 | OpenStreetMap (Geofabrik-Auszug) | 2 | 7 | fertig | 
+ | ✅ | 3421 | Sörup | 4.060 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 3422 | Neckarwestheim | 4.059 | OpenStreetMap (Geofabrik-Auszug) | 5 | 6 | fertig | 
+ | ✅ | 3424 | Mühlhausen-Ehingen | 4.054 | OpenStreetMap (Geofabrik-Auszug) | 9 | 14 | fertig | 
+ | ✅ | 3428 | Walkenried | 4.053 | OpenStreetMap (Geofabrik-Auszug) | 2 | 15 | fertig | 
+ | ✅ | 3430 | Lichtenfels | 4.051 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3435 | Rothenburg/O.L. | 4.047 | OpenStreetMap (Geofabrik-Auszug) | 4 | 13 | fertig | 
+ | ✅ | 3437 | Gelenau/Erzgeb. | 4.039 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3438 | Graben | 4.038 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 3445 | Gars a.Inn | 4.021 | OpenStreetMap (Geofabrik-Auszug) | 4 | 5 | fertig | 
+ | ✅ | 3446 | Kraiburg a.Inn | 4.021 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 3450 | Kreßberg | 4.008 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3451 | Otterbach | 4.008 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3453 | Ellhofen | 3.998 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 3454 | Gau-Odernheim | 3.995 | OpenStreetMap (Geofabrik-Auszug) | 5 | 6 | fertig | 
+ | ✅ | 3455 | Lambrecht (Pfalz) | 3.995 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3457 | Hasloh | 3.990 | OpenStreetMap (Geofabrik-Auszug) | 3 | 8 | fertig | 
+ | ✅ | 3459 | Mertingen | 3.980 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 3460 | Seckach | 3.978 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3463 | Waldalgesheim | 3.975 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3464 | Bad Tabarz | 3.973 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3465 | Hattorf am Harz | 3.972 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3468 | Kritzmow | 3.964 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3470 | Sprendlingen | 3.959 | OpenStreetMap (Geofabrik-Auszug) | 7 | 9 | fertig | 
+ | ✅ | 3475 | Bad Zwesten | 3.941 | OpenStreetMap (Geofabrik-Auszug) | 6 | 8 | fertig | 
+ | ✅ | 3476 | Guntersblum | 3.941 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 3479 | Waldenburg | 3.941 | OpenStreetMap (Geofabrik-Auszug) | 1 | 40 | fertig | 
+ | ✅ | 3481 | Hütschenhausen | 3.937 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3482 | Schefflenz | 3.933 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3484 | Rosenbach/Vogtl. | 3.927 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 3485 | Philippsthal (Werra) | 3.926 | OpenStreetMap (Geofabrik-Auszug) | 4 | 15 | fertig | 
+ | ✅ | 3486 | Neukloster | 3.925 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3487 | Schönberg | 3.925 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3488 | Dassow | 3.922 | OpenStreetMap (Geofabrik-Auszug) | 3 | 8 | fertig | 
+ | ✅ | 3490 | Cadenberge | 3.917 | OpenStreetMap (Geofabrik-Auszug) | 6 | 6 | fertig | 
+ | ✅ | 3491 | Wiesau | 3.916 | OpenStreetMap (Geofabrik-Auszug) | 1 | 7 | fertig | 
+ | ✅ | 3492 | Eschau | 3.915 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3496 | Süderholz | 3.911 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3497 | Amorbach | 3.907 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 3499 | Marschacht | 3.895 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3500 | Wäschenbeuren | 3.895 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 3504 | Gensingen | 3.889 | OpenStreetMap (Geofabrik-Auszug) | 15 | 17 | fertig | 
+ | ✅ | 3505 | Helmstadt-Bargen | 3.887 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3506 | Grafrath | 3.885 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 3509 | Lunzenau | 3.880 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 3510 | Kiedrich | 3.873 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3513 | Hoya | 3.862 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 3515 | Wolfegg | 3.861 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3516 | Germaringen | 3.860 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 3519 | Hamm (Sieg) | 3.851 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 3521 | Welden | 3.849 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3524 | Pressig | 3.843 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3525 | Neckartailfingen | 3.841 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3528 | Billigheim-Ingenheim | 3.833 | OpenStreetMap (Geofabrik-Auszug) | 1 | 8 | fertig | 
+ | ✅ | 3530 | Andechs | 3.830 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3532 | Neckarsteinach | 3.828 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3533 | Allendorf (Lumda) | 3.824 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 3536 | Wasserburg (Bodensee) | 3.823 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3537 | Eigeltingen | 3.821 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3540 | St. Blasien | 3.818 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 3542 | Loiching | 3.814 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3543 | Marklkofen | 3.813 | OpenStreetMap (Geofabrik-Auszug) | 1 | 15 | fertig | 
+ | ✅ | 3546 | Kyffhäuserland | 3.810 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3549 | Heßdorf | 3.808 | OpenStreetMap (Geofabrik-Auszug) | 2 | 7 | fertig | 
+ | ✅ | 3550 | Regis-Breitingen | 3.803 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3554 | Schonach im Schwarzwald | 3.800 | OpenStreetMap (Geofabrik-Auszug) | 2 | 6 | fertig | 
+ | ✅ | 3555 | Biberach | 3.799 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3556 | Groß Grönau | 3.795 | OpenStreetMap (Geofabrik-Auszug) | 4 | 7 | fertig | 
+ | ✅ | 3557 | Aukrug | 3.794 | OpenStreetMap (Geofabrik-Auszug) | 4 | 7 | fertig | 
+ | ✅ | 3562 | Göllheim | 3.789 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3563 | Nesselwang | 3.789 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3566 | Eppendorf | 3.787 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3568 | Eichstetten am Kaiserstuhl | 3.780 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3569 | Lorch | 3.780 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 3572 | Schondorf am Ammersee | 3.776 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3573 | Rimsting | 3.775 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3574 | Neudrossenfeld | 3.774 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3575 | Hollenstedt | 3.771 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3577 | Warngau | 3.768 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3579 | Döhlau | 3.767 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3580 | Zinnowitz | 3.765 | OpenStreetMap (Geofabrik-Auszug) | 7 | 12 | fertig | 
+ | ✅ | 3581 | Rickenbach | 3.764 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3583 | Wolkenstein | 3.762 | OpenStreetMap (Geofabrik-Auszug) | 1 | 6 | fertig | 
+ | ✅ | 3584 | Neukirchen/Pleiße | 3.761 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3586 | Wahrenholz | 3.760 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3592 | Trebsen/Mulde | 3.744 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 3594 | Albersdorf | 3.742 | OpenStreetMap (Geofabrik-Auszug) | 5 | 5 | fertig | 
+ | ✅ | 3596 | Bergtheim | 3.740 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3599 | Letschin | 3.735 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3600 | Sigmaringendorf | 3.735 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3602 | Ruhland | 3.728 | OpenStreetMap (Geofabrik-Auszug) | 11 | 11 | fertig | 
+ | ✅ | 3604 | Sankt Peter-Ording | 3.724 | OpenStreetMap (Geofabrik-Auszug) | 7 | 10 | fertig | 
+ | ✅ | 3606 | Michelfeld | 3.720 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3608 | Buttenheim | 3.719 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 3610 | Vettelschoß | 3.718 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 3611 | Icking | 3.715 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3612 | Bevern | 3.714 | OpenStreetMap (Geofabrik-Auszug) | 4 | 5 | fertig | 
+ | ✅ | 3614 | Markersdorf | 3.709 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 3615 | Bad Kleinen | 3.704 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3621 | Hausen | 3.698 | OpenStreetMap (Geofabrik-Auszug) | 8 | 8 | fertig | 
+ | ✅ | 3622 | Malsfeld | 3.698 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 3623 | Liebenau | 3.695 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3631 | Forstern | 3.683 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3633 | Burgstetten | 3.681 | OpenStreetMap (Geofabrik-Auszug) | 5 | 12 | fertig | 
+ | ✅ | 3634 | Speicher | 3.681 | OpenStreetMap (Geofabrik-Auszug) | 8 | 38 | fertig | 
+ | ✅ | 3635 | Benediktbeuern | 3.679 | OpenStreetMap (Geofabrik-Auszug) | 2 | 6 | fertig | 
+ | ✅ | 3638 | Wallhausen | 3.671 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3639 | Hechthausen | 3.669 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 3645 | Pürgen | 3.659 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 3647 | Langenenslingen | 3.649 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 3649 | Kraftsdorf | 3.646 | OpenStreetMap (Geofabrik-Auszug) | 5 | 8 | fertig | 
+ | ✅ | 3652 | Bodenmais | 3.641 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 3661 | Unterwössen | 3.633 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3664 | Bad Salzschlirf | 3.629 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3666 | Deidesheim | 3.623 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 3667 | Kirchheim | 3.623 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3668 | Gechingen | 3.621 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3669 | Türkenfeld | 3.619 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 3672 | Freudenberg | 3.615 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 3677 | Kleinheubach | 3.607 | OpenStreetMap (Geofabrik-Auszug) | 4 | 5 | fertig | 
+ | ✅ | 3679 | Triptis | 3.606 | OpenStreetMap (Geofabrik-Auszug) | 6 | 7 | fertig | 
+ | ✅ | 3681 | Klein-Winternheim | 3.600 | OpenStreetMap (Geofabrik-Auszug) | 5 | 9 | fertig | 
+ | ✅ | 3684 | Eystrup | 3.597 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3686 | Beuren | 3.591 | OpenStreetMap (Geofabrik-Auszug) | 8 | 9 | fertig | 
+ | ✅ | 3687 | Amtsberg | 3.590 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3688 | Orsingen-Nenzingen | 3.588 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 3689 | Bentwisch | 3.582 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 3690 | Hildrizhausen | 3.581 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 3693 | Bad Muskau | 3.577 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3695 | Farchant | 3.571 | OpenStreetMap (Geofabrik-Auszug) | 2 | 8 | fertig | 
+ | ✅ | 3696 | Sexau | 3.568 | OpenStreetMap (Geofabrik-Auszug) | 6 | 12 | fertig | 
+ | ✅ | 3699 | Tegernsee | 3.567 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 3701 | Grainau | 3.564 | OpenStreetMap (Geofabrik-Auszug) | 4 | 24 | fertig | 
+ | ✅ | 3702 | Aiterhofen | 3.563 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 3708 | Sailauf | 3.555 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3709 | Marktrodach | 3.554 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3711 | Bad Elster | 3.552 | OpenStreetMap (Geofabrik-Auszug) | 1 | 24 | fertig | 
+ | ✅ | 3712 | Dörfles-Esbach | 3.549 | OpenStreetMap (Geofabrik-Auszug) | 4 | 7 | fertig | 
+ | ✅ | 3714 | Zornheim | 3.549 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3715 | Happurg | 3.547 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3717 | Parthenstein | 3.545 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3720 | Hauenstein | 3.541 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3721 | Seifhennersdorf | 3.536 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 3724 | Ronneburg | 3.532 | OpenStreetMap (Geofabrik-Auszug) | 4 | 9 | fertig | 
+ | ✅ | 3727 | Schiltach | 3.517 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 3731 | Stromberg | 3.514 | OpenStreetMap (Geofabrik-Auszug) | 3 | 7 | fertig | 
+ | ✅ | 3733 | Burgbernheim | 3.512 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3736 | Jemgum | 3.506 | OpenStreetMap (Geofabrik-Auszug) | 4 | 5 | fertig | 
+ | ✅ | 3740 | Lalendorf | 3.493 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3744 | Schwindegg | 3.490 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3745 | Straßkirchen | 3.489 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 3746 | Sankt Michaelisdonn | 3.487 | OpenStreetMap (Geofabrik-Auszug) | 5 | 6 | fertig | 
+ | ✅ | 3747 | Heimenkirch | 3.484 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3749 | Ölbronn-Dürrn | 3.483 | OpenStreetMap (Geofabrik-Auszug) | 6 | 12 | fertig | 
+ | ✅ | 3750 | Hirschhorn (Neckar) | 3.482 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 3751 | Sasbach am Kaiserstuhl | 3.481 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3753 | Malsch | 3.478 | OpenStreetMap (Geofabrik-Auszug) | 8 | 13 | fertig | 
+ | ✅ | 3756 | Neustadt (Dosse) | 3.469 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 3758 | Malterdingen | 3.467 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 3760 | Lucka | 3.457 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3763 | Beindersheim | 3.451 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 3765 | Lauben | 3.448 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3769 | Berge | 3.436 | OpenStreetMap (Geofabrik-Auszug) | 3 | 36 | fertig | 
+ | ✅ | 3770 | Grafenrheinfeld | 3.435 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 3772 | Ulmen | 3.432 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3782 | Moos | 3.417 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 3783 | Owen | 3.417 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3784 | Spreenhagen | 3.417 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3786 | Gößnitz | 3.413 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3789 | Angelburg | 3.410 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3795 | Bad Klosterlausnitz | 3.399 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3807 | Valley | 3.385 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3811 | Baierbrunn | 3.376 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3812 | Kranichfeld | 3.376 | OpenStreetMap (Geofabrik-Auszug) | 3 | 7 | fertig | 
+ | ✅ | 3813 | Bad Karlshafen | 3.373 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 3815 | Urmitz | 3.373 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 3818 | Ohlsbach | 3.368 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3821 | Langenhorn | 3.363 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 3823 | Hoppstädten-Weiersbach | 3.362 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3824 | Illerrieden | 3.361 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3825 | Erolzheim | 3.360 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3826 | Poppenricht | 3.360 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3831 | Volkertshausen | 3.354 | OpenStreetMap (Geofabrik-Auszug) | 6 | 25 | fertig | 
+ | ✅ | 3832 | Randersacker | 3.353 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3834 | Bad Schandau | 3.346 | OpenStreetMap (Geofabrik-Auszug) | 14 | 20 | fertig | 
+ | ✅ | 3841 | Hohenlinden | 3.339 | OpenStreetMap (Geofabrik-Auszug) | 1 | 6 | fertig | 
+ | ✅ | 3846 | Spraitbach | 3.335 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3847 | Gaienhofen | 3.334 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 3848 | Offenberg | 3.334 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 3849 | Wilhelmsfeld | 3.332 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3850 | Bischofsmais | 3.331 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 3851 | Colbitz | 3.331 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3852 | Leutersdorf | 3.330 | OpenStreetMap (Geofabrik-Auszug) | 1 | 7 | fertig | 
+ | ✅ | 3854 | Michelbach an der Bilz | 3.325 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3855 | Auma-Weidatal | 3.324 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 3856 | Krakow am See | 3.324 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 3857 | Ohlstadt | 3.323 | OpenStreetMap (Geofabrik-Auszug) | 4 | 5 | fertig | 
+ | ✅ | 3859 | Schwarzatal | 3.319 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3863 | Walheim | 3.316 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3868 | Mühlberg/Elbe | 3.309 | OpenStreetMap (Geofabrik-Auszug) | 4 | 7 | fertig | 
+ | ✅ | 3875 | Bempflingen | 3.301 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 3879 | Tuningen | 3.292 | OpenStreetMap (Geofabrik-Auszug) | 1 | 5 | fertig | 
+ | ✅ | 3882 | Marzling | 3.287 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3884 | Plate | 3.283 | OpenStreetMap (Geofabrik-Auszug) | 2 | 6 | fertig | 
+ | ✅ | 3886 | Staig | 3.281 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 3890 | Scharnebeck | 3.279 | OpenStreetMap (Geofabrik-Auszug) | 5 | 12 | fertig | 
+ | ✅ | 3892 | Leinach | 3.277 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3893 | Berkheim | 3.275 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3894 | Deckenpfronn | 3.274 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3895 | Kirchenthumbach | 3.274 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3896 | Saalburg-Ebersdorf | 3.271 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3897 | Neuler | 3.270 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3898 | Tüßling | 3.270 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 3902 | Schwegenheim | 3.267 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3903 | Waldburg | 3.267 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 3907 | Schwangau | 3.263 | OpenStreetMap (Geofabrik-Auszug) | 1 | 7 | fertig | 
+ | ✅ | 3908 | Burgbrohl | 3.262 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3909 | Elchesheim-Illingen | 3.262 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3911 | Unterbreizbach | 3.261 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 3915 | Haina (Kloster) | 3.256 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3916 | Kaisersesch | 3.256 | OpenStreetMap (Geofabrik-Auszug) | 9 | 13 | fertig | 
+ | ✅ | 3918 | Geyer | 3.255 | OpenStreetMap (Geofabrik-Auszug) | 4 | 13 | fertig | 
+ | ✅ | 3919 | Warin | 3.255 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 3923 | Lorup | 3.247 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3925 | Münchhausen | 3.243 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3927 | Bad Steben | 3.240 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3928 | Hunderdorf | 3.238 | OpenStreetMap (Geofabrik-Auszug) | 1 | 7 | fertig | 
+ | ✅ | 3930 | Bodnegg | 3.235 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3935 | Harthausen | 3.230 | OpenStreetMap (Geofabrik-Auszug) | 2 | 27 | fertig | 
+ | ✅ | 3937 | Simmelsdorf | 3.229 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3938 | Gosen-Neu Zittau | 3.226 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3939 | Irschenberg | 3.226 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3941 | Bad Teinach-Zavelstein | 3.220 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3943 | Obermichelbach | 3.217 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3944 | Wörth a.d.Isar | 3.214 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3946 | Hillesheim | 3.207 | OpenStreetMap (Geofabrik-Auszug) | 2 | 6 | fertig | 
+ | ✅ | 3950 | Bischoffen | 3.196 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 3952 | Vörstetten | 3.196 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3953 | Stephansposching | 3.189 | OpenStreetMap (Geofabrik-Auszug) | 6 | 6 | fertig | 
+ | ✅ | 3954 | Glattbach | 3.186 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3957 | Dorf Mecklenburg | 3.183 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3959 | Wangen | 3.183 | OpenStreetMap (Geofabrik-Auszug) | 7 | 7 | fertig | 
+ | ✅ | 3970 | Alteglofsheim | 3.171 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3971 | Hammah | 3.171 | OpenStreetMap (Geofabrik-Auszug) | 2 | 6 | fertig | 
+ | ✅ | 3976 | Buckenhof | 3.161 | OpenStreetMap (Geofabrik-Auszug) | 7 | 10 | fertig | 
+ | ✅ | 3982 | Fischen i.Allgäu | 3.156 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 3984 | Eicklingen | 3.151 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3985 | Seeshaupt | 3.151 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3986 | Hohnstein | 3.150 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 3989 | Birkenheide | 3.146 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 3994 | Hülben | 3.135 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 3995 | Lauscha | 3.133 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 4004 | Hirrlingen | 3.123 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 4005 | Babensham | 3.122 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4006 | Kirchenlamitz | 3.122 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4010 | Pfatter | 3.119 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4011 | Cleebronn | 3.118 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4014 | Gimbsheim | 3.113 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4015 | Margetshöchheim | 3.113 | OpenStreetMap (Geofabrik-Auszug) | 7 | 11 | fertig | 
+ | ✅ | 4023 | Mommenheim | 3.106 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4036 | Hodenhagen | 3.099 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 4040 | Priestewitz | 3.094 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4046 | Klein Offenseth-Sparrieshoop | 3.088 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4047 | Maroldsweisach | 3.088 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4048 | Radibor | 3.084 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4053 | St. Egidien | 3.077 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 4060 | Vogtareuth | 3.072 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4064 | Großenaspe | 3.068 | OpenStreetMap (Geofabrik-Auszug) | 8 | 10 | fertig | 
+ | ✅ | 4066 | Ludwigsstadt | 3.068 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4070 | Seeg | 3.061 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4071 | Sand a.Main | 3.060 | OpenStreetMap (Geofabrik-Auszug) | 5 | 8 | fertig | 
+ | ✅ | 4073 | Burgberg i.Allgäu | 3.057 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4075 | Hettenleidelheim | 3.056 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 4079 | Kammerstein | 3.050 | OpenStreetMap (Geofabrik-Auszug) | 3 | 9 | fertig | 
+ | ✅ | 4081 | Föhren | 3.048 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4083 | Werther | 3.047 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4084 | Gailingen am Hochrhein | 3.044 | OpenStreetMap (Geofabrik-Auszug) | 4 | 8 | fertig | 
+ | ✅ | 4085 | Königheim | 3.043 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4087 | Pampow | 3.040 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4088 | Hanerau-Hademarschen | 3.037 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4089 | Jesewitz | 3.036 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4090 | Klütz | 3.036 | OpenStreetMap (Geofabrik-Auszug) | 8 | 19 | fertig | 
+ | ✅ | 4092 | Hohenroda | 3.033 | OpenStreetMap (Geofabrik-Auszug) | 7 | 10 | fertig | 
+ | ✅ | 4097 | Aitrach | 3.028 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 4101 | Glauburg | 3.018 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4102 | Hahnstätten | 3.018 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 4103 | Herschbach | 3.018 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4104 | Neuental | 3.018 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4108 | Bayerisch Gmain | 3.014 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4110 | Schafflund | 3.014 | OpenStreetMap (Geofabrik-Auszug) | 5 | 6 | fertig | 
+ | ✅ | 4112 | Klosterlechfeld | 3.008 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4114 | Aidenbach | 3.005 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 4115 | Bischweier | 3.003 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4116 | Braubach | 3.002 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 4117 | Rengsdorf | 3.001 | OpenStreetMap (Geofabrik-Auszug) | 4 | 11 | fertig | 
+ | ✅ | 4119 | Eitensheim | 2.999 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4123 | Kalchreuth | 2.994 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4124 | Lohmen | 2.994 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4125 | Frasdorf | 2.993 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4127 | Wesenberg | 2.992 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4129 | Münster-Sarmsheim | 2.989 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4131 | Binzen | 2.988 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 4133 | Waldenburg | 2.986 | OpenStreetMap (Geofabrik-Auszug) | 4 | 9 | fertig | 
+ | ✅ | 4138 | Dirmstein | 2.982 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4139 | Kobern-Gondorf | 2.982 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 4140 | Neuenstein | 2.981 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 4152 | Bodolz | 2.962 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4155 | Memmingerberg | 2.957 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 4158 | Horgau | 2.953 | OpenStreetMap (Geofabrik-Auszug) | 4 | 7 | fertig | 
+ | ✅ | 4160 | Großharthau | 2.952 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4163 | Berglern | 2.945 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4172 | Nebra (Unstrut) | 2.937 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4175 | Adenau | 2.935 | OpenStreetMap (Geofabrik-Auszug) | 15 | 30 | fertig | 
+ | ✅ | 4179 | Heroldstatt | 2.931 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4180 | Sigmarszell | 2.931 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4186 | Schwarzach | 2.925 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4187 | Mönsheim | 2.924 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4189 | Lindow (Mark) | 2.921 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4194 | Meißner | 2.915 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 4195 | Beetzendorf | 2.913 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4200 | Undenheim | 2.906 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4201 | Claußnitz | 2.905 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 4204 | Euerbach | 2.899 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4207 | Kenn | 2.897 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4208 | Fichtenberg | 2.895 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4209 | Lambrechtshagen | 2.894 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4213 | Schopfloch | 2.890 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4217 | Huglfing | 2.882 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 4219 | Hatzenbühl | 2.881 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4220 | Kirchweidach | 2.881 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4223 | Weißenstadt | 2.880 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4225 | Dollnstein | 2.878 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 4227 | Wildflecken | 2.876 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4230 | Aichstetten | 2.874 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 4232 | Heidgraben | 2.872 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4233 | Wischhafen | 2.869 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4235 | Dömitz | 2.864 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4237 | Zemmer | 2.864 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4239 | Lengerich | 2.862 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 4240 | Hemmingstedt | 2.860 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4245 | Sulzemoos | 2.859 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4247 | Blender | 2.850 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4249 | Sollstedt | 2.849 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4250 | Offenau | 2.848 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 4251 | Simmozheim | 2.848 | OpenStreetMap (Geofabrik-Auszug) | 5 | 9 | fertig | 
+ | ✅ | 4254 | Eggstätt | 2.846 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 4263 | Ringgau | 2.830 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4264 | Elfershausen | 2.827 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 4269 | Zingst | 2.823 | OpenStreetMap (Geofabrik-Auszug) | 13 | 16 | fertig | 
+ | ✅ | 4272 | Marktleuthen | 2.820 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 4273 | Schenefeld | 2.820 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 4279 | Marktl | 2.812 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4281 | Kallmünz | 2.810 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 4283 | Roxheim | 2.807 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4295 | Detern | 2.789 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4298 | Embsen | 2.787 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 4301 | Haste | 2.785 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4302 | Käbschütztal | 2.783 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4303 | Frankenau | 2.782 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 4305 | Reinsberg | 2.777 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 4306 | Landesbergen | 2.774 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4311 | Tonna | 2.769 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4320 | Lehrensteinsfeld | 2.758 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 4322 | Rieseby | 2.755 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 4323 | Altenglan | 2.754 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4326 | Bretzenheim | 2.752 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4330 | Wertach | 2.749 | OpenStreetMap (Geofabrik-Auszug) | 3 | 6 | fertig | 
+ | ✅ | 4335 | Iffeldorf | 2.743 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 4336 | Lengdorf | 2.742 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4337 | Salching | 2.742 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 4339 | Münchweiler an der Rodalb | 2.739 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4340 | Sontheim | 2.739 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4342 | Weyhausen | 2.735 | OpenStreetMap (Geofabrik-Auszug) | 5 | 6 | fertig | 
+ | ✅ | 4345 | Eschelbronn | 2.733 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4350 | Niederzissen | 2.729 | OpenStreetMap (Geofabrik-Auszug) | 7 | 20 | fertig | 
+ | ✅ | 4353 | St. Peter | 2.727 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4354 | Kutzenhausen | 2.726 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4361 | Thaleischweiler-Fröschen | 2.718 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4368 | Fischbachtal | 2.707 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 4369 | Grafling | 2.707 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 4379 | Hohenkammer | 2.697 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4385 | Rositz | 2.686 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4386 | Waigolshausen | 2.686 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4388 | Möttingen | 2.683 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4391 | Roggenburg | 2.679 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 4394 | Neuhaus a.d.Pegnitz | 2.676 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4397 | Probstzella | 2.672 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 4400 | Friedewald | 2.668 | OpenStreetMap (Geofabrik-Auszug) | 4 | 5 | fertig | 
+ | ✅ | 4404 | Erxleben | 2.664 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 4405 | Themar | 2.664 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4416 | Elstra | 2.651 | OpenStreetMap (Geofabrik-Auszug) | 7 | 9 | fertig | 
+ | ✅ | 4417 | Thüngersheim | 2.649 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 4419 | Oberelsbach | 2.647 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4422 | Ringsheim | 2.645 | OpenStreetMap (Geofabrik-Auszug) | 6 | 9 | fertig | 
+ | ✅ | 4423 | Großweitzschen | 2.643 | OpenStreetMap (Geofabrik-Auszug) | 10 | 10 | fertig | 
+ | ✅ | 4432 | Steinberg | 2.633 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 4433 | Grafenberg | 2.632 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4434 | Kist | 2.632 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 4436 | Prittriching | 2.630 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4440 | Hanhofen | 2.624 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4446 | Herleshausen | 2.620 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 4448 | Kefenrod | 2.616 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 4452 | Adelsried | 2.610 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 4456 | Nordendorf | 2.599 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 4460 | Burkau | 2.595 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 4461 | Dieblich | 2.595 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 4462 | Pfaffenhofen | 2.593 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4465 | Lam | 2.586 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4466 | Bad Peterstal-Griesbach | 2.583 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4467 | Leimersheim | 2.583 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 4472 | Lentföhrden | 2.579 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 4473 | Schluchsee | 2.577 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 4474 | Rosenberg | 2.575 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 4475 | Wohltorf | 2.575 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4482 | Schönwald im Schwarzwald | 2.566 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4488 | Nußdorf a.Inn | 2.562 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4489 | Sulzbach-Laufen | 2.560 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4495 | Erpel | 2.554 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 4497 | Brohl-Lützing | 2.553 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4498 | Hetzerath | 2.553 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4501 | Kinding | 2.549 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 4502 | Ostelsheim | 2.549 | OpenStreetMap (Geofabrik-Auszug) | 4 | 7 | fertig | 
+ | ✅ | 4503 | Eime | 2.548 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4505 | Helmstadt | 2.547 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 4507 | Freihung | 2.545 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4513 | Puderbach | 2.542 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4514 | Berghaupten | 2.539 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 4515 | Salmtal | 2.539 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 4516 | Wiesenttal | 2.539 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4517 | Sasbachwalden | 2.538 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4518 | Wasbek | 2.536 | OpenStreetMap (Geofabrik-Auszug) | 1 | 6 | fertig | 
+ | ✅ | 4522 | Dernbach (Westerwald) | 2.533 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4525 | Igling | 2.531 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 4527 | Schwörstadt | 2.531 | OpenStreetMap (Geofabrik-Auszug) | 11 | 20 | fertig | 
+ | ✅ | 4528 | Eimeldingen | 2.529 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 4529 | Gägelow | 2.529 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 4532 | Schleusegrund | 2.528 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 4534 | Oberwolfach | 2.527 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4536 | Heede | 2.526 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4537 | Lauenbrück | 2.526 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4539 | Geldersheim | 2.524 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 4540 | Wustrow (Wendland) | 2.524 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4546 | Hausen b.Würzburg | 2.520 | OpenStreetMap (Geofabrik-Auszug) | 4 | 9 | fertig | 
+ | ✅ | 4547 | Ehrenberg (Rhön) | 2.519 | OpenStreetMap (Geofabrik-Auszug) | 3 | 9 | fertig | 
+ | ✅ | 4548 | Rötgesbüttel | 2.519 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4553 | Bad Wilsnack | 2.512 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4554 | Sellin | 2.511 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4555 | Hinterzarten | 2.510 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 4557 | Insel Poel | 2.507 | OpenStreetMap (Geofabrik-Auszug) | 2 | 12 | fertig | 
+ | ✅ | 4561 | Halbe | 2.504 | OpenStreetMap (Geofabrik-Auszug) | 31 | 60 | fertig | 
+ | ✅ | 4566 | Hessigheim | 2.502 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4568 | Mönchberg | 2.500 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4570 | Chamerau | 2.498 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4571 | Bad Eilsen | 2.494 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4574 | Hillerse | 2.489 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4579 | Edesheim | 2.486 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 4580 | Eitelborn | 2.486 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4585 | Hollenbach | 2.484 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4587 | Eichenbühl | 2.481 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4588 | Gaiberg | 2.480 | OpenStreetMap (Geofabrik-Auszug) | 2 | 6 | fertig | 
+ | ✅ | 4589 | Beimerstetten | 2.479 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4590 | Königshain-Wiederau | 2.479 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 4595 | Straßberg | 2.474 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4597 | Braunsbach | 2.472 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 4602 | Oberpframmern | 2.467 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 4607 | Papendorf | 2.464 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 4610 | Ellerstadt | 2.459 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4611 | Golßen | 2.458 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4614 | Weitersburg | 2.457 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4615 | Friedrichskoog | 2.456 | OpenStreetMap (Geofabrik-Auszug) | 4 | 5 | fertig | 
+ | ✅ | 4620 | Gyhum | 2.451 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4622 | Epfenbach | 2.448 | OpenStreetMap (Geofabrik-Auszug) | 1 | 8 | fertig | 
+ | ✅ | 4623 | Hergatz | 2.448 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4626 | Elmstein | 2.446 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4631 | Ohorn | 2.443 | OpenStreetMap (Geofabrik-Auszug) | 2 | 6 | fertig | 
+ | ✅ | 4633 | Muhr a.See | 2.441 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 4636 | Barendorf | 2.436 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4640 | Borstel-Hohenraden | 2.432 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 4644 | Boltenhagen | 2.430 | OpenStreetMap (Geofabrik-Auszug) | 7 | 12 | fertig | 
+ | ✅ | 4649 | Weiding | 2.424 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4650 | Seehausen a.Staffelsee | 2.422 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4652 | Bernried am Starnberger See | 2.420 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 4659 | Röderaue | 2.413 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4671 | Wees | 2.400 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 4672 | Weisenbach | 2.400 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 4674 | Handeloh | 2.399 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4679 | Winningen | 2.390 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 4681 | Ziesar | 2.389 | OpenStreetMap (Geofabrik-Auszug) | 1 | 5 | fertig | 
+ | ✅ | 4682 | Hürup | 2.388 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4683 | Kummerfeld | 2.386 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4686 | Hochdorf | 2.383 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4692 | Wegeleben | 2.378 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4693 | Aach | 2.377 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4697 | Hausen im Wiesental | 2.371 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4699 | Pöhl | 2.367 | OpenStreetMap (Geofabrik-Auszug) | 3 | 16 | fertig | 
+ | ✅ | 4700 | Bockenheim an der Weinstraße | 2.366 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4705 | Wolpertshausen | 2.365 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 4714 | Breklum | 2.357 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 4717 | Viöl | 2.356 | OpenStreetMap (Geofabrik-Auszug) | 6 | 7 | fertig | 
+ | ✅ | 4718 | Lobbach | 2.353 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4726 | Husby | 2.345 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 4729 | Wallhausen | 2.344 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 4732 | Mehring | 2.341 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4734 | Neuenkirchen | 2.340 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4736 | Köditz | 2.339 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4749 | Gartz (Oder) | 2.328 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4752 | Nordstrand | 2.326 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 4757 | Monsheim | 2.322 | OpenStreetMap (Geofabrik-Auszug) | 12 | 14 | fertig | 
+ | ✅ | 4760 | Menslage | 2.318 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4764 | Arrach | 2.314 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4765 | Lottstetten | 2.313 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4766 | Gelting | 2.311 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4768 | Heidenau | 2.310 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4770 | Süderlügum | 2.308 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 4772 | Kirchgellersen | 2.306 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4773 | Neumagen-Dhron | 2.306 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4774 | Zwiefalten | 2.305 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4777 | Dobel | 2.297 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4785 | Schöpstal | 2.288 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4788 | Egmating | 2.286 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4789 | Taura | 2.285 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4794 | Brieskow-Finkenheerd | 2.282 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4798 | Gutach (Schwarzwaldbahn) | 2.279 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 4807 | Ronshausen | 2.271 | OpenStreetMap (Geofabrik-Auszug) | 8 | 12 | fertig | 
+ | ✅ | 4812 | Neckargerach | 2.266 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 4813 | Rehden | 2.266 | OpenStreetMap (Geofabrik-Auszug) | 4 | 10 | fertig | 
+ | ✅ | 4814 | Remlingen-Semmenstedt | 2.266 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4819 | Lindberg | 2.259 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4820 | Suhlendorf | 2.256 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4824 | Dogern | 2.254 | OpenStreetMap (Geofabrik-Auszug) | 6 | 6 | fertig | 
+ | ✅ | 4827 | Dollern | 2.251 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4829 | Gruibingen | 2.249 | OpenStreetMap (Geofabrik-Auszug) | 2 | 7 | fertig | 
+ | ✅ | 4834 | Hohnhorst | 2.246 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4836 | Erfde | 2.243 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4837 | Radbruch | 2.243 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 4853 | Mainbernheim | 2.230 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4854 | Elxleben | 2.229 | OpenStreetMap (Geofabrik-Auszug) | 6 | 6 | fertig | 
+ | ✅ | 4869 | Ahorn | 2.209 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4872 | Chorin | 2.208 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 4879 | Ottrau | 2.207 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4880 | Iggensbach | 2.206 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4884 | Dienheim | 2.204 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 4885 | Großenbrode | 2.202 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4887 | Bilshausen | 2.201 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4888 | Borkheide | 2.201 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4892 | Grosselfingen | 2.198 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4893 | Kaltenengers | 2.198 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4895 | Ducherow | 2.197 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4900 | Insheim | 2.193 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4901 | Mespelbrunn | 2.193 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 4905 | Wangels | 2.190 | OpenStreetMap (Geofabrik-Auszug) | 2 | 10 | fertig | 
+ | ✅ | 4908 | Delingsdorf | 2.186 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4926 | Garz/Rügen | 2.170 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4931 | Rerik | 2.166 | OpenStreetMap (Geofabrik-Auszug) | 3 | 6 | fertig | 
+ | ✅ | 4936 | Reit im Winkl | 2.161 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4945 | Reichartshausen | 2.154 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4946 | Bärenstein | 2.152 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4948 | Königstein/Sächs.Schw. | 2.151 | OpenStreetMap (Geofabrik-Auszug) | 5 | 8 | fertig | 
+ | ✅ | 4949 | Kröv | 2.150 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4952 | Jatznick | 2.148 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4953 | Cavertitz | 2.147 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4955 | Albertshofen | 2.142 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4958 | Heimbuchenthal | 2.140 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 4963 | Balzheim | 2.137 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4965 | Breitenfelde | 2.136 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 4967 | Colmberg | 2.134 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4974 | Frittlingen | 2.127 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4977 | Zeltingen-Rachtig | 2.125 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 4983 | Treis-Karden | 2.120 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 4984 | Illschwang | 2.114 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 4987 | Westerstetten | 2.111 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 4991 | Egloffstein | 2.108 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 5002 | Egenhausen | 2.099 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5004 | Merklingen | 2.098 | OpenStreetMap (Geofabrik-Auszug) | 16 | 29 | fertig | 
+ | ✅ | 5005 | Sipplingen | 2.098 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 5009 | Melsdorf | 2.096 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5010 | Felde | 2.095 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5017 | Steinfeld | 2.088 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 5019 | Brücken (Pfalz) | 2.086 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5025 | Bernsdorf | 2.083 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5028 | Geiselbach | 2.080 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5032 | Hüffenhardt | 2.077 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 5034 | Klostermansfeld | 2.073 | OpenStreetMap (Geofabrik-Auszug) | 1 | 50 | fertig | 
+ | ✅ | 5035 | Jembke | 2.072 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5037 | Kirrweiler (Pfalz) | 2.070 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 5040 | Eresing | 2.066 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5044 | Meyenburg | 2.061 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5045 | Weißbach | 2.060 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5046 | Zandt | 2.057 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5052 | Weilbach | 2.054 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5056 | Berghülen | 2.051 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5062 | Nellingen | 2.047 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 5069 | Neuensalz | 2.041 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 5070 | Bordelum | 2.040 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 5078 | Fleckeby | 2.034 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 5084 | Obergriesbach | 2.030 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 5085 | Neuhäusel | 2.029 | OpenStreetMap (Geofabrik-Auszug) | 7 | 11 | fertig | 
+ | ✅ | 5095 | Hagelstadt | 2.020 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5099 | Waffenbrunn | 2.019 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5103 | Busdorf | 2.015 | OpenStreetMap (Geofabrik-Auszug) | 3 | 21 | fertig | 
+ | ✅ | 5114 | Rieschweiler-Mühlbach | 2.003 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5123 | Ortrand | 1.996 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5127 | Masserberg | 1.993 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5130 | Erkenbrechtsweiler | 1.992 | OpenStreetMap (Geofabrik-Auszug) | 1 | 6 | fertig | 
+ | ✅ | 5131 | Lautenbach | 1.991 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 5134 | Lauterecken | 1.990 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5137 | Rümmingen | 1.989 | OpenStreetMap (Geofabrik-Auszug) | 1 | 5 | fertig | 
+ | ✅ | 5142 | Krün | 1.985 | OpenStreetMap (Geofabrik-Auszug) | 2 | 7 | fertig | 
+ | ✅ | 5143 | Oderberg | 1.981 | OpenStreetMap (Geofabrik-Auszug) | 11 | 15 | fertig | 
+ | ✅ | 5158 | Berg | 1.970 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5160 | Berg (Pfalz) | 1.969 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5164 | Rechtsupweg | 1.964 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5167 | Reckendorf | 1.962 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5172 | Feldberg (Schwarzwald) | 1.956 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 5173 | Kriebstein | 1.956 | OpenStreetMap (Geofabrik-Auszug) | 3 | 6 | fertig | 
+ | ✅ | 5178 | Röthenbach (Allgäu) | 1.955 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 5181 | Ottenhofen | 1.953 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5182 | Stapel | 1.952 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5187 | Ebergötzen | 1.949 | OpenStreetMap (Geofabrik-Auszug) | 8 | 9 | fertig | 
+ | ✅ | 5188 | Neusorg | 1.949 | OpenStreetMap (Geofabrik-Auszug) | 3 | 6 | fertig | 
+ | ✅ | 5192 | Wirsberg | 1.945 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5195 | Schöngeising | 1.943 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 5197 | Dormitz | 1.942 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 5199 | Ehingen | 1.940 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5204 | Dammbach | 1.938 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5206 | Todtmoos | 1.938 | OpenStreetMap (Geofabrik-Auszug) | 2 | 6 | fertig | 
+ | ✅ | 5215 | Ottensoos | 1.931 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5216 | Schmalfeld | 1.931 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5218 | Oberwiesenthal | 1.929 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 5219 | Immenreuth | 1.928 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5224 | Vrees | 1.926 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5228 | Rullstorf | 1.920 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 5229 | Leutenberg | 1.919 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5248 | Teupitz | 1.902 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 5249 | Müglitztal | 1.900 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 5250 | Neufra | 1.899 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 5268 | Ringelai | 1.890 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5271 | Glaubitz | 1.886 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5272 | Meudt | 1.885 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5289 | Kirchheim an der Weinstraße | 1.871 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 5290 | Tiefenbach | 1.871 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 5293 | Kelberg | 1.869 | OpenStreetMap (Geofabrik-Auszug) | 7 | 14 | fertig | 
+ | ✅ | 5296 | Rieneck | 1.868 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5312 | Hamberge | 1.854 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5314 | Gebhardshain | 1.852 | OpenStreetMap (Geofabrik-Auszug) | 4 | 5 | fertig | 
+ | ✅ | 5317 | Hofstetten | 1.850 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5324 | Steinfeld | 1.844 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 5327 | Ebrach | 1.843 | OpenStreetMap (Geofabrik-Auszug) | 2 | 16 | fertig | 
+ | ✅ | 5333 | Rechlin | 1.841 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 5336 | Hausen (Wied) | 1.840 | OpenStreetMap (Geofabrik-Auszug) | 1 | 5 | fertig | 
+ | ✅ | 5338 | Neukirchen | 1.839 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5340 | Eurasburg | 1.838 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 5344 | Wasbüttel | 1.836 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5346 | Wolfstein | 1.835 | OpenStreetMap (Geofabrik-Auszug) | 1 | 80 | fertig | 
+ | ✅ | 5357 | Sankt Englmar | 1.827 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 5365 | Droyßig | 1.820 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5369 | Wörnitz | 1.819 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5370 | Brunnen | 1.818 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5372 | Arzberg | 1.815 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5380 | Drakenburg | 1.812 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5388 | Bernau im Schwarzwald | 1.806 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5393 | Nortmoor | 1.805 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 5400 | Grünendeich | 1.798 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 5402 | Fichtelberg | 1.795 | OpenStreetMap (Geofabrik-Auszug) | 5 | 14 | fertig | 
+ | ✅ | 5409 | Erlenmoos | 1.790 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5413 | Wittighausen | 1.789 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5414 | Wulften am Harz | 1.789 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5415 | Freudenburg | 1.788 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5419 | Jünkerath | 1.784 | OpenStreetMap (Geofabrik-Auszug) | 4 | 9 | fertig | 
+ | ✅ | 5421 | Scheden | 1.783 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5423 | Widdern | 1.782 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 5427 | Oberottmarshausen | 1.773 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 5429 | Eydelstedt | 1.771 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5440 | Borgstedt | 1.767 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 5444 | Niederalteich | 1.762 | OpenStreetMap (Geofabrik-Auszug) | 1 | 10 | fertig | 
+ | ✅ | 5454 | Nonnenhorn | 1.756 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5455 | Obermeitingen | 1.756 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5465 | Weibersbrunn | 1.752 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5468 | Röllbach | 1.751 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 5470 | Untersteinach | 1.751 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 5477 | Harbke | 1.748 | OpenStreetMap (Geofabrik-Auszug) | 5 | 8 | fertig | 
+ | ✅ | 5478 | Jagsthausen | 1.747 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 5491 | Steinkirchen | 1.741 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5498 | Beesten | 1.736 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 5505 | Kalkhorst | 1.732 | OpenStreetMap (Geofabrik-Auszug) | 2 | 8 | fertig | 
+ | ✅ | 5518 | Grabenstetten | 1.726 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5521 | Walchum | 1.726 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 5523 | Wiemersdorf | 1.724 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 5526 | Osten | 1.723 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 5528 | Thiersheim | 1.723 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 5532 | Wechselburg | 1.722 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5540 | Ornbau | 1.720 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5550 | Dorfprozelten | 1.710 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5564 | Rhumspringe | 1.703 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 5570 | Irrel | 1.698 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 5571 | Postau | 1.695 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5574 | Starkenberg | 1.692 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5581 | Ramsau b.Berchtesgaden | 1.683 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 5584 | Presseck | 1.681 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5587 | Ranis | 1.680 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5592 | Sankt Martin | 1.679 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5598 | Breitenbach a.Herzberg | 1.675 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 5599 | Langenleuba-Niederhain | 1.675 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5616 | Wain | 1.661 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5633 | Lalling | 1.651 | OpenStreetMap (Geofabrik-Auszug) | 6 | 8 | fertig | 
+ | ✅ | 5645 | Siegelsbach | 1.643 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 5646 | Weidenthal | 1.643 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 5670 | Kollmar | 1.625 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5675 | Wallhausen | 1.623 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5676 | Börgerende-Rethwisch | 1.621 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 5677 | Eching am Ammersee | 1.620 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 5678 | Höfen an der Enz | 1.620 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 5686 | Krummesse | 1.613 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 5687 | Schondra | 1.613 | OpenStreetMap (Geofabrik-Auszug) | 2 | 6 | fertig | 
+ | ✅ | 5692 | Bayrischzell | 1.607 | OpenStreetMap (Geofabrik-Auszug) | 3 | 7 | fertig | 
+ | ✅ | 5696 | Vierkirchen | 1.607 | OpenStreetMap (Geofabrik-Auszug) | 6 | 9 | fertig | 
+ | ✅ | 5699 | Altenahr | 1.605 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 5708 | Schornsheim | 1.600 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5711 | Himmelstadt | 1.598 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5720 | Oberhof | 1.592 | OpenStreetMap (Geofabrik-Auszug) | 3 | 10 | fertig | 
+ | ✅ | 5723 | Oberuckersee | 1.589 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 5732 | Grünenbach | 1.581 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 5733 | Gommersheim | 1.580 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5742 | Kaiserpfalz | 1.572 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5746 | Rammingen | 1.569 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 5747 | Rasdorf | 1.569 | OpenStreetMap (Geofabrik-Auszug) | 8 | 11 | fertig | 
+ | ✅ | 5749 | Crossen an der Elster | 1.568 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5754 | Langballig | 1.566 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 5768 | Saal a.d.Saale | 1.559 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5776 | Wallmerod | 1.551 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 5777 | Gablenz | 1.550 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5778 | Damp | 1.549 | OpenStreetMap (Geofabrik-Auszug) | 3 | 6 | fertig | 
+ | ✅ | 5786 | Stadtkyll | 1.546 | OpenStreetMap (Geofabrik-Auszug) | 2 | 7 | fertig | 
+ | ✅ | 5790 | Etzenricht | 1.544 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5791 | Frauenneuharting | 1.543 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5792 | Grafenwiesen | 1.543 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5794 | List auf Sylt | 1.540 | OpenStreetMap (Geofabrik-Auszug) | 2 | 9 | fertig | 
+ | ✅ | 5795 | Schellhorn | 1.539 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5799 | Gundersheim | 1.537 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5805 | Bornheim | 1.533 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 5811 | Koserow | 1.530 | OpenStreetMap (Geofabrik-Auszug) | 9 | 16 | fertig | 
+ | ✅ | 5816 | Ellerhoop | 1.526 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5820 | Hüttisheim | 1.524 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5824 | Wulkenzin | 1.523 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5830 | Rosenthal-Bielatal | 1.521 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5834 | Sukow | 1.517 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5842 | Zerf | 1.515 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5866 | Heiligenstedten | 1.500 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5870 | Mellingen | 1.498 | OpenStreetMap (Geofabrik-Auszug) | 12 | 12 | fertig | 
+ | ✅ | 5874 | Flossenbürg | 1.496 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5877 | Dierhagen | 1.495 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5884 | Oberostendorf | 1.490 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5892 | Schaufling | 1.487 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 5894 | Euerdorf | 1.484 | OpenStreetMap (Geofabrik-Auszug) | 7 | 9 | fertig | 
+ | ✅ | 5910 | Velgast | 1.476 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5912 | Rammelsbach | 1.475 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5928 | Siehdichum | 1.467 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5935 | Sierksdorf | 1.462 | OpenStreetMap (Geofabrik-Auszug) | 3 | 11 | fertig | 
+ | ✅ | 5936 | Heiligenroth | 1.461 | OpenStreetMap (Geofabrik-Auszug) | 4 | 13 | fertig | 
+ | ✅ | 5947 | Breitbrunn a.Chiemsee | 1.453 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5953 | Staudernheim | 1.451 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5956 | Schönecken | 1.450 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 5970 | Strande | 1.443 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 5973 | Kleinsendelbach | 1.441 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5975 | Büsingen am Hochrhein | 1.440 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 5978 | Böttingen | 1.438 | OpenStreetMap (Geofabrik-Auszug) | 1 | 6 | fertig | 
+ | ✅ | 5991 | Manderscheid | 1.434 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5996 | Suthfeld | 1.428 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 5997 | Ziltendorf | 1.428 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 6003 | Oberschwarzach | 1.423 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6004 | Beckedorf | 1.422 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6006 | Winterhausen | 1.422 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 6011 | Wollbach | 1.420 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6019 | Bad Neualbenreuth | 1.412 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 6021 | Jonsdorf | 1.411 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 6022 | Bollingstedt | 1.410 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 6023 | Seebach | 1.410 | OpenStreetMap (Geofabrik-Auszug) | 1 | 5 | fertig | 
+ | ✅ | 6028 | Ponitz | 1.407 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6034 | Hagnau am Bodensee | 1.402 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 6047 | Schwenningen | 1.399 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6070 | Etzelwang | 1.387 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6071 | Hornbach | 1.387 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6098 | Agathenburg | 1.371 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 6102 | Gillenfeld | 1.370 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 6106 | Langenhahn | 1.369 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6126 | Hornstorf | 1.359 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6130 | Marktschorgast | 1.357 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6136 | Trabitz | 1.356 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6137 | Wiltingen | 1.356 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 6152 | Riol | 1.348 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6155 | Dürrholz | 1.347 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6168 | Udenheim | 1.338 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 6175 | Sachsenkam | 1.333 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 6183 | Mogendorf | 1.329 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6185 | Biendorf | 1.328 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6196 | Binau | 1.323 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 6202 | Rammenau | 1.321 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 6203 | Göhren | 1.320 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 6207 | Balgheim | 1.317 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 6217 | Bartenshagen-Parkentin | 1.310 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6230 | Ebernhahn | 1.303 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6233 | Düngenheim | 1.302 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6241 | Schöfweg | 1.297 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6254 | Mönchhagen | 1.290 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 6255 | Schafstedt | 1.290 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6276 | Oybin | 1.281 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 6283 | Bad Bayersoien | 1.278 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6287 | Holtsee | 1.276 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 6304 | Waake | 1.271 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 6305 | Oldenswort | 1.270 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 6307 | Prerow | 1.269 | OpenStreetMap (Geofabrik-Auszug) | 4 | 10 | fertig | 
+ | ✅ | 6312 | Dennheritz | 1.266 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 6316 | Lembruch | 1.265 | OpenStreetMap (Geofabrik-Auszug) | 4 | 4 | fertig | 
+ | ✅ | 6317 | Longuich | 1.265 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 6319 | Rammingen | 1.264 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 6320 | Aufseß | 1.263 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 6322 | Stolpe | 1.263 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 6338 | Züssow | 1.255 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 6360 | Stadelhofen | 1.247 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 6368 | Sulzfeld a.Main | 1.242 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 6371 | Gingst | 1.241 | OpenStreetMap (Geofabrik-Auszug) | 1 | 12 | fertig | 
+ | ✅ | 6374 | Enzklösterle | 1.240 | OpenStreetMap (Geofabrik-Auszug) | 1 | 6 | fertig | 
+ | ✅ | 6378 | Leupoldsgrün | 1.238 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 6380 | Müssen | 1.237 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 6381 | Todendorf | 1.237 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 6392 | Lieser | 1.231 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6396 | Herforst | 1.228 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6400 | Schönwald | 1.226 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 6403 | Wiesenau | 1.225 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6416 | Raitenbuch | 1.219 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 6425 | Essel | 1.213 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 6441 | Rieden | 1.207 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 6453 | Hauptstuhl | 1.199 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 6466 | Freisbach | 1.193 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6470 | Berlingerode | 1.192 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 6484 | Pellworm | 1.185 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 6489 | Münchweiler an der Alsenz | 1.183 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6495 | Plötzkau | 1.180 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6517 | Weißenohe | 1.170 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 6532 | Hunding | 1.162 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 6547 | Neukirchen | 1.156 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6551 | Wust-Fischbeck | 1.154 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 6561 | Eppelsheim | 1.147 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 6562 | Seelingstädt | 1.147 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 6563 | Hemsbünde | 1.145 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6578 | Glan-Münchweiler | 1.141 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6599 | Wustrow | 1.134 | OpenStreetMap (Geofabrik-Auszug) | 5 | 11 | fertig | 
+ | ✅ | 6606 | Prosselsheim | 1.130 | OpenStreetMap (Geofabrik-Auszug) | 2 | 50 | fertig | 
+ | ✅ | 6614 | Dannewerk | 1.126 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6615 | Herzhorn | 1.126 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6620 | Groß Sarau | 1.125 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 6621 | Mühl Rosin | 1.125 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6626 | Stechlin | 1.123 | OpenStreetMap (Geofabrik-Auszug) | 1 | 6 | fertig | 
+ | ✅ | 6634 | Garlstorf | 1.120 | OpenStreetMap (Geofabrik-Auszug) | 4 | 6 | fertig | 
+ | ✅ | 6640 | Longkamp | 1.118 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 6648 | Guderhandviertel | 1.116 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6670 | Eisenberg | 1.103 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6672 | Glött | 1.103 | OpenStreetMap (Geofabrik-Auszug) | 1 | 14 | fertig | 
+ | ✅ | 6673 | Polle | 1.103 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6677 | Nahrendorf | 1.101 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6681 | Klüsserath | 1.100 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6683 | Groß Nemerow | 1.099 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 6685 | Thaining | 1.098 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 6687 | Bastorf | 1.096 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 6694 | Prötzel | 1.093 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 6710 | Altenkrempe | 1.089 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 6718 | Nister | 1.084 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6719 | Reuth b.Erbendorf | 1.084 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6727 | Lürschau | 1.080 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 6739 | Trittenheim | 1.075 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 6741 | Mesekenhagen | 1.074 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6748 | Mühlhausen im Täle | 1.072 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 6771 | Bimöhlen | 1.061 | OpenStreetMap (Geofabrik-Auszug) | 6 | 10 | fertig | 
+ | ✅ | 6774 | Unterroth | 1.061 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 6786 | Gielow | 1.056 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 6787 | Malberg | 1.056 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6788 | Bettingen | 1.055 | OpenStreetMap (Geofabrik-Auszug) | 2 | 7 | fertig | 
+ | ✅ | 6807 | Schinkel | 1.051 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6811 | Weinsheim | 1.050 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 6822 | Nordheim v.d.Rhön | 1.046 | OpenStreetMap (Geofabrik-Auszug) | 6 | 6 | fertig | 
+ | ✅ | 6831 | Gutenberg | 1.043 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 6835 | Marienrachdorf | 1.041 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6838 | Hirschfeld | 1.040 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 6850 | Bodenrode-Westhausen | 1.036 | OpenStreetMap (Geofabrik-Auszug) | 7 | 7 | fertig | 
+ | ✅ | 6869 | Frankenheim/Rhön | 1.029 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6871 | Hohenkirchen | 1.029 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 6872 | Gattendorf | 1.028 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6877 | Ückeritz | 1.026 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6879 | Arenshausen | 1.025 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 6897 | Bad Bertrich | 1.020 | OpenStreetMap (Geofabrik-Auszug) | 1 | 5 | fertig | 
+ | ✅ | 6916 | Bockhorst | 1.015 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 6923 | Born a.Darß | 1.013 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 6926 | Pösing | 1.012 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6937 | Schönbach | 1.009 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 6946 | Erharting | 1.005 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6951 | Brokdorf | 1.000 | OpenStreetMap (Geofabrik-Auszug) | 1 | 5 | fertig | 
+ | ✅ | 6953 | Emtmannsberg | 998 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 6955 | Guckheim | 997 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 6977 | Kapellen-Drusweiler | 988 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7001 | Martinsheim | 979 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 7008 | Glowe | 977 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 7009 | Ober-Hilbersheim | 977 | OpenStreetMap (Geofabrik-Auszug) | 1 | 7 | fertig | 
+ | ✅ | 7021 | Riethnordhausen | 971 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 7024 | Wilgartswiesen | 970 | OpenStreetMap (Geofabrik-Auszug) | 3 | 7 | fertig | 
+ | ✅ | 7037 | Bayerisch Eisenstein | 965 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7049 | Altdorf | 962 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7051 | Greimerath | 962 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 7063 | Wiek | 961 | OpenStreetMap (Geofabrik-Auszug) | 1 | 5 | fertig | 
+ | ✅ | 7067 | Harsdorf | 959 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7068 | Mauchenheim | 959 | OpenStreetMap (Geofabrik-Auszug) | 1 | 5 | fertig | 
+ | ✅ | 7069 | Müschenbach | 959 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7071 | Baabe | 957 | OpenStreetMap (Geofabrik-Auszug) | 3 | 6 | fertig | 
+ | ✅ | 7097 | Neuharlingersiel | 949 | OpenStreetMap (Geofabrik-Auszug) | 4 | 5 | fertig | 
+ | ✅ | 7120 | Lohnsfeld | 941 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 7149 | Hasselberg | 932 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 7151 | Großbardorf | 931 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7159 | Pelm | 929 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7172 | Gerolfingen | 925 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7177 | Vierhöfen | 924 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7191 | Tiste | 918 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 7194 | Fischbach | 917 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7196 | Wahlrod | 917 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7202 | Dagebüll | 914 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 7203 | Nebel | 914 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 7208 | Spangdahlem | 913 | OpenStreetMap (Geofabrik-Auszug) | 1 | 6 | fertig | 
+ | ✅ | 7212 | Tautenhain | 910 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 7213 | Hörden am Harz | 909 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 7226 | Mühlenfließ | 905 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 7264 | Zempin | 889 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 7280 | Waldlaubersheim | 884 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7284 | Rathmannsdorf | 882 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 7289 | Lichterfeld-Schacksdorf | 880 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 7292 | Dittweiler | 879 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7333 | Eldetal | 869 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 7368 | Göhren-Lebbin | 857 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 7379 | Gebenbach | 852 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 7380 | Noer | 852 | OpenStreetMap (Geofabrik-Auszug) | 3 | 5 | fertig | 
+ | ✅ | 7406 | Abtswind | 843 | OpenStreetMap (Geofabrik-Auszug) | 1 | 5 | fertig | 
+ | ✅ | 7407 | Deutschneudorf | 843 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7409 | Winterspelt | 842 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7428 | Pleisweiler-Oberhofen | 836 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 7432 | Steinberg | 835 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 7464 | Konken | 825 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 7467 | Hörnum (Sylt) | 824 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 7488 | Brinkum | 819 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7504 | Lohmen | 814 | OpenStreetMap (Geofabrik-Auszug) | 5 | 7 | fertig | 
+ | ✅ | 7508 | Rabenstein/Fläming | 813 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 7535 | Nemsdorf-Göhrendorf | 807 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7542 | Wollin | 805 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 7545 | Stemmen | 804 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 7580 | Loissin | 793 | OpenStreetMap (Geofabrik-Auszug) | 1 | 6 | fertig | 
+ | ✅ | 7585 | Neuleiningen | 792 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7595 | Burrweiler | 790 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7630 | Mündersbach | 781 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7634 | Brest | 779 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7675 | Kempfeld | 766 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 7681 | Barum | 764 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 7682 | Schülldorf | 764 | OpenStreetMap (Geofabrik-Auszug) | 3 | 6 | fertig | 
+ | ✅ | 7700 | Trassenheide | 760 | OpenStreetMap (Geofabrik-Auszug) | 3 | 6 | fertig | 
+ | ✅ | 7730 | Gallmersgarten | 751 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 7744 | Hohenfelde | 746 | OpenStreetMap (Geofabrik-Auszug) | 2 | 6 | fertig | 
+ | ✅ | 7779 | Vogelsang | 738 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7800 | Wittdün auf Amrum | 734 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 7801 | Erlenbach bei Kandel | 733 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 7804 | Hohen-Sülzen | 733 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7805 | Hohenstadt | 733 | OpenStreetMap (Geofabrik-Auszug) | 1 | 8 | fertig | 
+ | ✅ | 7816 | Pruchten | 730 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7822 | Milda | 728 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 7835 | Dörrebach | 724 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7837 | Rüdenau | 724 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7860 | Königsfeld | 717 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7868 | Greimersburg | 712 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7873 | Dillstädt | 711 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 7887 | Lohheide | 708 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7924 | Rehlingen | 695 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 7963 | Alken | 681 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7964 | Ettal | 681 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 7973 | Brahlstorf | 679 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 7975 | Langenfeld | 678 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 7977 | Rinnthal | 678 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 7980 | Haschbach am Remigiusberg | 677 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 8000 | Reinsdorf | 672 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 8020 | Boden | 668 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 8035 | Damscheid | 663 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 8080 | Zirkow | 652 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 8084 | Zettlitz | 651 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 8090 | Stein-Bockenheim | 650 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 8119 | Tonndorf | 641 | OpenStreetMap (Geofabrik-Auszug) | 1 | 5 | fertig | 
+ | ✅ | 8128 | Zotzenheim | 639 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 8169 | Kargow | 628 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 8177 | Ziegenrück | 626 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 8184 | Kanzem | 624 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 8187 | Ahrenshoop | 622 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 8197 | Prinzhöfte | 621 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 8211 | Philippsreut | 618 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 8238 | Braunichswalde | 611 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 8261 | Schuld | 606 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 8277 | Auw bei Prüm | 601 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 8291 | Kirchgandern | 596 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 8297 | Niedergebra | 595 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 8302 | Holzbach | 594 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 8316 | Cursdorf | 590 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 8318 | Matzenbach | 589 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 8346 | Siemz-Niendorf | 581 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 8351 | Mittelstenahe | 580 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 8354 | Welgesheim | 580 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 8371 | Dätgen | 575 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 8383 | Korswandt | 573 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 8399 | Dornheim | 568 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 8422 | Bodelwitz | 561 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 8424 | Glees | 561 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 8429 | Neunkirchen | 560 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 8443 | Dümpelfeld | 557 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 8456 | Dörth | 554 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 8458 | Hainspitz | 554 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 8481 | Kratzeburg | 548 | OpenStreetMap (Geofabrik-Auszug) | 1 | 6 | fertig | 
+ | ✅ | 8553 | Laasdorf | 532 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 8555 | Alleshausen | 531 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 8556 | Bandenitz | 531 | OpenStreetMap (Geofabrik-Auszug) | 1 | 5 | fertig | 
+ | ✅ | 8564 | Ermershausen | 528 | OpenStreetMap (Geofabrik-Auszug) | 1 | 10 | fertig | 
+ | ✅ | 8574 | Norddorf auf Amrum | 526 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 8576 | Perasdorf | 526 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 8581 | Jesendorf | 524 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 8592 | Hohen Wangelin | 522 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 8625 | Schwarzburg | 515 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 8633 | Alt Bukow | 512 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 8642 | Dobbin-Linstow | 510 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 8645 | Parsteinsee | 510 | OpenStreetMap (Geofabrik-Auszug) | 1 | 6 | fertig | 
+ | ✅ | 8694 | Remmels | 496 | OpenStreetMap (Geofabrik-Auszug) | 1 | 6 | fertig | 
+ | ✅ | 8706 | Kampen (Sylt) | 492 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 8714 | Bärenbach | 490 | OpenStreetMap (Geofabrik-Auszug) | 2 | 5 | fertig | 
+ | ✅ | 8762 | Gondenbrett | 479 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 8772 | Insul | 477 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 8785 | Oberweid | 475 | OpenStreetMap (Geofabrik-Auszug) | 2 | 2 | fertig | 
+ | ✅ | 8804 | Hüffler | 471 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 8921 | Einhaus | 444 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 8923 | Hohenzieritz | 444 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 9044 | Schleifreisen | 420 | OpenStreetMap (Geofabrik-Auszug) | 3 | 3 | fertig | 
+ | ✅ | 9067 | Kapellendorf | 415 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 9084 | Dobitschen | 411 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 9104 | Schaprode | 407 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 9106 | Altwarp | 406 | OpenStreetMap (Geofabrik-Auszug) | 1 | 5 | fertig | 
+ | ✅ | 9124 | Osterrade | 403 | OpenStreetMap (Geofabrik-Auszug) | 3 | 6 | fertig | 
+ | ✅ | 9134 | Wallenborn | 401 | OpenStreetMap (Geofabrik-Auszug) | 1 | 5 | fertig | 
+ | ✅ | 9148 | Hahn am See | 397 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 9177 | Barweiler | 389 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 9180 | Härtlingen | 389 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 9227 | Blankenberg | 379 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 9228 | Kluis | 379 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 9249 | Hohenfelden | 374 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 9257 | Vogelsang-Warsin | 373 | OpenStreetMap (Geofabrik-Auszug) | 2 | 7 | fertig | 
+ | ✅ | 9353 | Reitzenhain | 352 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 9362 | Elbingen | 349 | OpenStreetMap (Geofabrik-Auszug) | 3 | 4 | fertig | 
+ | ✅ | 9406 | Neddemin | 340 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 9408 | Ettinghausen | 339 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 9424 | Eisenschmitt | 336 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 9433 | Ockholm | 335 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 9435 | Stolpe | 335 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 9450 | Rathen | 332 | OpenStreetMap (Geofabrik-Auszug) | 2 | 3 | fertig | 
+ | ✅ | 9451 | Reipoltskirchen | 332 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 9567 | Görkwitz | 305 | OpenStreetMap (Geofabrik-Auszug) | 6 | 6 | fertig | 
+ | ✅ | 9679 | Rothemühl | 283 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 9684 | Hemmelzen | 282 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 9690 | Udler | 282 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 9703 | Grinau | 278 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 9758 | Oldenbüttel | 266 | OpenStreetMap (Geofabrik-Auszug) | 2 | 4 | fertig | 
+ | ✅ | 9800 | Kronsgaard | 257 | OpenStreetMap (Geofabrik-Auszug) | 1 | 3 | fertig | 
+ | ✅ | 9922 | Winkelbach | 233 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 9952 | Lietzow | 228 | OpenStreetMap (Geofabrik-Auszug) | 1 | 6 | fertig | 
+ | ✅ | 9993 | Grödersby | 219 | OpenStreetMap (Geofabrik-Auszug) | 1 | 4 | fertig | 
+ | ✅ | 10006 | Burgsponheim | 217 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 10015 | Mähren | 216 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 10050 | Osterheide | 209 | OpenStreetMap (Geofabrik-Auszug) | 1 | 5 | fertig | 
+ | ✅ | 10154 | Putgarten | 186 | OpenStreetMap (Geofabrik-Auszug) | 1 | 6 | fertig | 
+ | ✅ | 10271 | Grammow | 164 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 10304 | Hohenwarte | 158 | OpenStreetMap (Geofabrik-Auszug) | 1 | 1 | fertig | 
+ | ✅ | 10374 | Sosberg | 145 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
+ | ✅ | 10518 | Kudensee | 109 | OpenStreetMap (Geofabrik-Auszug) | 1 | 2 | fertig | 
 
 ## Genaue Herkunft je Gemeinde
 
@@ -3064,3 +5334,2273 @@ liest niemand.
 - **Nordwalde** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
 - **Querfurt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
 - **Blumberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Dettingen an der Erms** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Ammersbek** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Ohrdruf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Wildberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Weil im Schönbuch** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Münchberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Kaufering** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Olbernhau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Nohfelden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Saarland (saarland-latest.osm.pbf)`
+- **Rehburg-Loccum** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Bad Orb** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Tutzing** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Gudensberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Neuried** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Ottendorf-Okrilla** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Walzbachtal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Biebertal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Rüdesheim am Rhein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Elchingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Altenholz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Niddatal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Südlohn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Goldbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Emmerthal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Nersingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Ilsfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Pliezhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Hünfelden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Eschenburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Kösching** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Everswinkel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Plüderhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Höchst i.Odw.** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Visbek** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Erlenbach a.Main** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Bad Frankenhausen/Kyffhäuser** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Oldenburg in Holstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Nieder-Olm** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Trebbin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Klötze** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Laubach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Heilsbronn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Linsengericht** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Veitshöchheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Roßtal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Brandis** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Osthofen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Hirschberg an der Bergstraße** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Schotten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Altlandsberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Bad Breisig** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Aichtal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Demmin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Birkenau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Oberhausen-Rheinhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Höchberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schulzendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Wettin-Löbejün** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Oberharz am Brocken** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Runkel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Kißlegg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Magstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bisingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Perl** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Saarland (saarland-latest.osm.pbf)`
+- **Töging a.Inn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wertingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Heiligenhafen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Großhansdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Bockenem** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Visselhövede** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Zorneding** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Oberzent** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Sebnitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Wilkau-Haßlau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Wölfersheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Höhr-Grenzhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Ilsenburg (Harz)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Ehringshausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Werneuchen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Giesen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Nuthetal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Osterburg (Altmark)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Ochsenhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Essen (Oldenburg)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Miltenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Großbeeren** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Kandel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Laufenburg (Baden)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Worpswede** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Wallerfangen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Saarland (saarland-latest.osm.pbf)`
+- **Schmitten im Taunus** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **March** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Zwenkau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Bad Liebenzell** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Oberstdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Ehningen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Urbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Alsbach-Hähnlein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Schlitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Wehrheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Mücke** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Kolkwitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Salzhemmendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Lügde** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Elsenfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Kemberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Hohenmölsen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Ebsdorfergrund** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Ilvesheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Luckau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Frickenhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Hilzingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Hürtgenwald** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Storkow (Mark)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Gäufelden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Lüchow (Wendland)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Altenbeken** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Bleckede** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Aschheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wangerland** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Nittenau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Dassel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Barleben** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Steinbach-Hallenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Adelsdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schaafheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Reinfeld (Holstein)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Tecklenburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Florstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Dielheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Gomaringen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Biblis** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Fehrbellin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Vallendar** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Zwiesel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Titz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Rehau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Bad Schussenried** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Mendig** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Hohenbrunn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Weißenthurm** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Kusterdingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Neuötting** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Waldheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Bad Gandersheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Grünheide (Mark)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Bruchhausen-Vilsen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Wunsiedel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Niesky** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Bad Griesbach i.Rottal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Nittendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Obernkirchen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Nettersheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Torgelow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Bad Laer** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Sassnitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Liederbach am Taunus** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Gerstungen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Bad Lauchstädt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Elze** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Wetter (Hessen)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Kabelsketal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Neuenkirchen-Vörden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Bockhorn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Borgholzhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Sulzbach (Taunus)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Plön** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Südharz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Breckerfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Kappeln** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Brand-Erbisdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Neuried** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Roetgen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Hallstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Obertraubling** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Naunhof** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Heek** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Ueckermünde** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Schwaig b.Nürnberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Zschopau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Waldenbuch** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Rimbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Langweid a.Lech** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Dörverden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Herzberg (Elster)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Kressbronn am Bodensee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bad Bergzabern** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Eslohe (Sauerland)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Großenlüder** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Kandern** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Hemmoor** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Bellheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Keltern** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Efringen-Kirchen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Möckmühl** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Sinntal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Wissen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Meßkirch** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Rauenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Weilmünster** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Untergruppenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Gleichen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Furth im Wald** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Sande** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Pullach i.Isartal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Sülzetal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Obernburg a.Main** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schladen-Werla** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Fürstenzell** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schnaittach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Allersberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wörrstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Volkach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Biederitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Dornburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Geratal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Schleiz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Dietmannsried** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Garching a.d.Alz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Nonnweiler** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Saarland (saarland-latest.osm.pbf)`
+- **Fuldabrück** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Seegebiet Mansfelder Land** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Rülzheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Neuhaus am Rennweg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Staufen im Breisgau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Kahl a.Main** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Doberlug-Kirchhain** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Blankenheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Ortenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Ballenstedt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Furtwangen im Schwarzwald** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Schierling** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Möser** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Woltersdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Bad Rothenfelde** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Heikendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Reichenbach an der Fils** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Viechtach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Kleinostheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Großräschen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Friedland** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Landstuhl** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Niederwerrn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Timmendorfer Strand** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Siegsdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Stadtilm** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Langenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Herrieden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Staufenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Meine** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Heroldsberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Willebadessen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Unterwellenborn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Hainichen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Colditz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Lützen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Schwarzenbruck** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Biebergemünd** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Borsdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Kuppenheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bersenbrück** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Moritzburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Wachtendonk** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Hermsdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Uhldingen-Mühlhofen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Grafenau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Bad Feilnbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Simmern/Hunsrück** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Dornstetten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Hohberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Mücheln (Geiseltal)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Lahnau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Lauter-Bernsbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Aspach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Hausham** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Neuenbürg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bad Sooden-Allendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Neuendettelsau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Lauchringen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Zell am Harmersbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Helmbrechts** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Bönnigheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bad Endorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schieder-Schwalenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Kühlungsborn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Elz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Forst** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Nierstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Sauerlach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Hüfingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Teublitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Penig** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Premnitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Neunkirchen a.Brand** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Bad Lausick** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Salach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Amt Wachsenburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Meinersen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Haibach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Jettingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bad Sulza** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Beeskow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Oranienbaum-Wörlitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Bad Füssing** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Lenningen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Dannenberg (Elbe)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Neresheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Salzbergen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Nessetal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Birkenwerder** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Bad Endbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Loßburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Postbauer-Heng** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Medebach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Weikersheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Hemmingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Saulheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Baiersdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Althengstett** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Drei Gleichen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Könnern** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Aldingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bordesholm** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Krailling** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Hellenthal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Georgenthal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Altomünster** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Parsberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Barby** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Ehrenkirchen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Hengersberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Asbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Erzhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Illingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Untermeitingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Gundelfingen a.d.Donau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Feldkirchen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Heuchelheim a.d.Lahn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Elsteraue** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Bühlertal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Jesteburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Oberkochen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bützow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Weissach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bad Grund (Harz)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Nörten-Hardenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Sögel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Grasberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Bad Düben** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Teuchern** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Lastrup** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Rheinsberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Berchtesgaden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Küps** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Bad Herrenalb** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Löffingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Emlichheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Pfronten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Bad Wimpfen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Kirchberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Elsterwerda** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Bad Liebenstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Bismark (Altmark)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Algermissen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Oberstaufen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schweich** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Ramstein-Miesenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Vetschau/Spreewald** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Bergkirchen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schonungen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Seefeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Calau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Inden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Schömberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Radeburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Daun** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Rimpar** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Holdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Renchen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Münnerstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Großmehring** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Vohenstrauß** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Weissach im Tal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Oederan** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Barth** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Stadland** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Seeland** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Gettorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Treuenbrietzen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Oberstenfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Allstedt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Dörentrup** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Horstmar** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Jockgrim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Langenargen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Dittelbrunn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Elzach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Otterndorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Ahnatal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Saarburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Bad Kötzting** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Dannstadt-Schauernheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Flintbek** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Söhlde** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Naila** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Lugau/Erzgeb.** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Sontra** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Bunde** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Altenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Gundelsheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Klettgau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Heidenrod** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Leipheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Flein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Schellerten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Sulzbach a.Main** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Türkheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Heidesee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Bad Berka** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Großkarolinenfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Hasselroth** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Baienfurt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Edermünde** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Belgern-Schildau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Burkardroth** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Allensbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Friedrichroda** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Pleinfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Laufen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Sinzing** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Ortenburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schwülper** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Mittenwald** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Pfaffenhofen a.d.Roth** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Harzgerode** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Harztor** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Klingenthal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Pfalzgrafenweiler** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Zwingenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Wabern** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Alfdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Hardegsen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Pulsnitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Wallersdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Weimar (Lahn)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Enkenbach-Alsenborn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Ampfing** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Am Mellensee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Bad Sachsa** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Haslach im Kinzigtal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Nortorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Schwanstetten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Meldorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Neulußheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Annweiler am Trifels** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Bindlach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Greding** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Burgebrach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Roßwein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Neukieritzsch** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Scheßlitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schwendi** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Namborn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Saarland (saarland-latest.osm.pbf)`
+- **Stolzenau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Freyung** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Immenhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Maxdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Tuntenhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Oppenheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Waldstetten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Ostrach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Birkenfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Roßleben-Wiehe** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Markneukirchen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Bischofswiesen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Berne** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Schöppingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Königsbronn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Sonnenbühl** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Pöttmes** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Am Ettersberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Reinsdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Waging a.See** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Reppenstedt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Lemwerder** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Esens** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Jettingen-Scheppach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Lautertal (Odenwald)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Ilshofen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Königsee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Homberg (Ohm)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Geiselhöring** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Nobitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Reichelsheim (Wetterau)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Neuhofen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Eiterfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Schallstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Durach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Lichtenau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Lambsheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Grassau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Lengenfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Georgensgmünd** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Ladbergen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Saerbeck** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Waldeck** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Höchstädt a.d.Donau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Murg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Edenkoben** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Dermbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Bakum** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Geithain** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Dettelbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Berglen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bernau a.Chiemsee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Neukirchen/Erzgeb.** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Putzbrunn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Dietenheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Auenwald** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Müncheberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Horneburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Grömitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Bonndorf im Schwarzwald** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Hardheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Eberdingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Dinkelscherben** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Eibenstock** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Schönkirchen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Erndtebrück** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Böhlen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Mutlangen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Stadtroda** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Dettenheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Lathen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Malchin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Altenkirchen (Westerwald)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Gröditz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Büchen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Leegebruch** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Bernkastel-Kues** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Niedere Börde** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Mallersdorf-Pfaffenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Ebermannstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Ketzin/Havel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Hermeskeil** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Polch** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Heringen (Werra)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Kupferzell** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Brannenburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Zusmarshausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Tiefenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Osterburken** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Neuenstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Schelklingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Gau-Algesheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Bardowick** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Mitterteich** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Weisendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wöllstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Schliersee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schöffengrund** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Klingenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Immendingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Grasbrunn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Grafenau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Huy** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Murr** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Pegau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Heitersheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Laudenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bispingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Jerichow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Neustadt-Glewe** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Bad Sobernheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Fockbek** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Holle** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Greifenstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Nattheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Machern** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Blankenhain** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Moringen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Metelen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Volkmarsen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Salzweg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Sanitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Haag i.OB** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Rheinmünster** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Neustadt (Wied)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Hage** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Biebesheim am Rhein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Kiefersfelden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Herdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Hartha** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Gerbrunn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Cölbe** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Sinn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Sottrum** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Kalbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Bad Brückenau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Buttstädt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Bietigheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Burgkunstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Artern** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Maulbronn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Rheurdt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Röhrmoos** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Immenstaad am Bodensee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Uffenheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Eppertshausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Eggolsheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Glashütte** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Wassertrüdingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Beilstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Mainleus** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Thannhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Burghaun** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Güglingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Zellingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Römhild** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Vilseck** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Unstrut-Hainich** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Bad Hönningen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Hanstedt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Petershausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Ottersweier** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Waldachtal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Eichwalde** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Bad Saarow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Hachenburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Satow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Neumarkt-Sankt Veit** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Hutthurm** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Benningen am Neckar** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Otzberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Brechen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Altlußheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Sohland a.d.Spree** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Veitsbronn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schwabhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Ihringen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Glücksburg (Ostsee)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Rodenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Kämpfelbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bammental** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Wutha-Farnroda** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Linz am Rhein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Trochtelfingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Laage** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Oberding** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Havelberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Bernsdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Vogtsburg im Kaiserstuhl** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Gersheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Saarland (saarland-latest.osm.pbf)`
+- **Bondorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Ingersheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Dornhan** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Aarbergen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Deißlingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Erdweg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schönberg (Holstein)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Zell im Wiesental** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Schliengen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Wolfschlugen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Dierdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Edertal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Adelebsen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Bad Rodach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Ilmtal-Weinstraße** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Nachrodt-Wiblingwerde** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Dötlingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Gammertingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Dußlingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Niedergörsdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Dettingen unter Teck** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Uder** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Eutingen im Gäu** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Ebersdorf b.Coburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Alpirsbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Windsbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Klingenberg a.Main** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Neuffen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Muggensturm** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bad Marienberg (Westerwald)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Gochsheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Riedenburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Nieheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Falkenberg/Elster** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Billigheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Hüttlingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Lachendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Neustadt a.d.Waldnaab** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Dudenhofen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Altbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bickenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Isenbüttel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Dohna** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Nesse-Apfelstädt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Waldsee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Kirchheim am Neckar** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Plaidt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Westerburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Allershausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Hörselberg-Hainich** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Rohrbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schlangenbad** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Spangenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Butjadingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Malchow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Königsfeld im Schwarzwald** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Plau am See** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Meersburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Thalheim/Erzgeb.** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Stockstadt am Rhein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Kirchardt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Burkhardtsdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Langquaid** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schlüsselfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Hohenlockstedt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Uelsen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Hebertshausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Mudersbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Lübz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Faßberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Tarp** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Großbreitenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **An der Schmücke** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Boostedt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Emskirchen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Waldbrunn (Westerwald)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Jade** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Schäftlarn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Dasing** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Beselich** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Tittmoning** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Geltendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Elztal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Gmund a.Tegernsee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Nufringen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bodelshausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Waibstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bredstedt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Heringsdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Bräunlingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Löchgau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Dietenhofen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Sontheim an der Brenz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Schwarmstedt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Nottertal-Heilinger Höhen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Fürstenberg/Havel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Kalefeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Hirschau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Neubulach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Ober-Mörlen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Bruckberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Herrnhut** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Wirges** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Böhmenkirch** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Willingen (Upland)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Odelzhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Münzenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Oberboihingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Tacherting** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Kleinwallstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Giebelstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Weischlitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Ebensfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Mengerskirchen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Beratzhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Gemmingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Pöcking** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Merzhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Aying** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Hambrücken** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Affing** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Dietramszell** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wolfach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Großpösna** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Leutershausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Tegernheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Limeshain** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Fischbachau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Kaltennordheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Schönenberg-Kübelberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Rochlitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Wesendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Laboe** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Dettenhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Seelow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Zeil a.Main** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wartenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Rot am See** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Heimsheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Mellrichstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Baltmannsweiler** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bad Lobenstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Küssaberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Weßling** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Blaichach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Igersheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Büchenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Mügeln** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Ingelfingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Wernberg-Köblitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Kirchentellinsfurt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Rechberghausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Baar-Ebenhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Aschau i.Chiemgau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Lamspringe** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Vöhl** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Walddorfhäslach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Ahlerstedt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Drebkau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Brunnthal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Sersheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Eschede** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Rottach-Egern** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Stolpen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Frankenblick** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Hohenwestedt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Triftern** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Bessenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Grabfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Ovelgönne** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Sulzbach an der Murr** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Traben-Trarbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Altenstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Dörpen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Forchtenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Rehfelde** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Rottendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Ertingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Ludwigsau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Rockenhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Bad Gottleuba-Berggießhübel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Bernhardswald** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Neuenkirchen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Wackersdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Külsheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Grebenstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Nackenheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Sasbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Gersfeld (Rhön)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Wannweil** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Stühlingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Guxhagen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Norderney** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Kirchdorf a.Inn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Ranstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Nünchritz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Kusel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Wörthsee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Dietzhölztal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Uhlstädt-Kirchhasel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Schechen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schönau a.Königssee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Tiefenbronn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Zarrentin am Schaalsee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Rosengarten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Angelbachtal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Meckesheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Neuberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Seubersdorf i.d.OPf.** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Jestetten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Laaber** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Calberlah** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Ebstorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Waldems** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Prüm** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Bergrheinfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schöppenstedt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Jahnsdorf/Erzgeb.** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Erdmannhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Süderbrarup** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Ühlingen-Birkendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Mahlberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Mühlhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Pommelsbrunn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Ellrich** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Hemhofen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Iffezheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Großschirma** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Adelsheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Lenzkirch** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Oettingen i.Bay.** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wörth a.d.Donau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Pottenstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Reichenau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Reichertshausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Diemelstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Himmelpforten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Burg Stargard** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Lonsee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Tharandt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Steyerberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Erlenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Karlskron** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wermsdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Kitzscher** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Bad Bellingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Steißlingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Oberammergau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Sulzfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Ruhla** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Hofheim i.UFr.** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Waldmohr** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Achstetten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bad Boll** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Großschönau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Ötigheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Büsum** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Sundhagen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Neuhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Modautal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Gadebusch** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Glonn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Heiningen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Laufach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Trappenkamp** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Espenau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Deggingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Lensahn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Mammendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wiggensbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Igensdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Bad Hindelang** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Driedorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Oerlenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Unkel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Heroldsbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Binz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Engstingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Marxzell** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Illerkirchberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Weitramsdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Krauchenwies** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Zschorlau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Lichtenau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Großheubach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Übersee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Windorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Petersaurach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Halsbrücke** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Hügelsheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Rheinzabern** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Altentreptow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Fronreute** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Emmelshausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Windischeschenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Lohsa** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Schwaan** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Abstatt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Molfsee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Arnsdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Todtnau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Oberthulba** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Cochem** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Naumburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Waldbüttelbrunn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Zapfendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Niederstotzingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Niederstetten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Oberviechtach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Kröpelin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Lenting** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Vacha** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Hartheim am Rhein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Wiesentheid** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Winhöring** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Rust** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Stetten am kalten Markt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Lauchheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Emmingen-Liptingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Stavenhagen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Brachttal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Drebach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Hammersbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Stadecken-Elsheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Braunlage** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Bodman-Ludwigshafen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Eriskirch** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Aglasterhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Inning a.Ammersee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Alheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Krayenberggemeinde** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Malschwitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Neuhausen/Spree** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Tönning** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Eggesin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Kruft** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Seddiner See** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Uttenreuth** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Chieming** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wörth a.Main** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Iphofen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Asbach-Bäumenheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Vellberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Gablingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Uchte** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Rückersdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Mietingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Neukirch/Lausitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Herbertingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Lommatzsch** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Maselheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bad Bocklet** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Hilders** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Raschau-Markersbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Hochspeyer** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Hesel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Niederwiesa** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Geisa** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Inzell** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Börnsen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Jahnatal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Wildeck** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Thum** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Bellenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Aindling** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Buchholz (Westerwald)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Altenstadt a.d.Waldnaab** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Heideck** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Röbel/Müritz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Otterfing** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Duingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Burgheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Waldbrunn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Königsbrück** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Neunkirchen a.Sand** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Vierkirchen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Eisingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Leidersbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wilthen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Hörsel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Lähden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Kreischa** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Röttenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Müllrose** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Bad Bodenteich** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Gutach im Breisgau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Marklohe** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Bergen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Nastätten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Scheinfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Eberhardzell** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Reichenbach/O.L.** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Striegistal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Hitzacker (Elbe)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Oy-Mittelberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Forbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Krautheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bönningstedt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Bubenreuth** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Aßling** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Böbingen an der Rems** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Altdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Limbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Freden (Leine)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Ober-Olm** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Heimbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Marlow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Breitengüßbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Rhede (Ems)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Rennerod** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Rauschenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Vöhringen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Rheinbreitbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Nordrhein-Westfalen (nordrhein-westfalen-latest.osm.pbf)`
+- **Ummendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Creglingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Adorf/Vogtl.** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Gerabronn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Buggingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Knüllwald** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Putbus** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Grebenhain** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Oppenweiler** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Freyburg (Unstrut)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Mittelbiberach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Scheidegg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Maikammer** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Wachenheim an der Weinstraße** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Dahlem** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Liebenwalde** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Stegen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Hartenstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Wörth** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Albershausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Breitungen/Werra** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Kirchberg i.Wald** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Nehren** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Güntersleben** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Hartmannsdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Augustusburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Suderburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Münsing** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Starzach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Poppenhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Untereisesheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Zell a.Main** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Rabenau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Donaustauf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Langenlonsheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Hankensbüttel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Heiligengrabe** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Dornum** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Contwig** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Surwold** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Ehrenfriedersdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Eurasburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Feldafing** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Offingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Grabenstätt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Röhrnbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Mögglingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Feldberger Seenlandschaft** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Edling** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Kranzberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schnaittenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wilster** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Peitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Gößweinstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Badbergen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Dahn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Rheinböllen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Reinhardshagen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Dransfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Triefenstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Metten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Olbersdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Strasburg (Uckermark)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Empfingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Baumholder** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Neufahrn i.NB** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Eching** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Grettstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Neureichenau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wachau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Waldfischbach-Burgalben** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Schwarzenbach a.Wald** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Aichhalden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Neuzelle** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Bodenwöhr** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Twistetal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Pressath** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Nienstädt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Messel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Niederdorfelden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Sennfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Amstetten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Dietingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Neckarbischofsheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bürgstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Lauenau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Kirchberg (Hunsrück)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Loitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Elmenhorst/Lichtenhagen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Niedernhall** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Winkelhaid** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wiesenburg/Mark** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Vogtei** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Burg (Spreewald)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Weinbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Wietzendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Lindhorst** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Rockenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Gondelsheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Baruth/Mark** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Eging a.See** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Bruck i.d.OPf.** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Bermatingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Gräfenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Zaberfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Reichenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Dahlen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Kirchberg an der Murr** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Stammham** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Altenmarkt a.d.Alz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Graal-Müritz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Selbitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Tessin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Schöllkrippen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Niederfischbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Wyk auf Föhr** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Buchenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Baunach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Fronhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Pfaffing** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schwebheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Kochel a.See** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Escheburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Mauer** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Langenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Geringswalde** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Friolzheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Sörup** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Neckarwestheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Mühlhausen-Ehingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Walkenried** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Lichtenfels** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Rothenburg/O.L.** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Gelenau/Erzgeb.** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Graben** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Gars a.Inn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Kraiburg a.Inn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Kreßberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Otterbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Ellhofen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Gau-Odernheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Lambrecht (Pfalz)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Hasloh** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Mertingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Seckach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Waldalgesheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Bad Tabarz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Hattorf am Harz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Kritzmow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Sprendlingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Bad Zwesten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Guntersblum** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Waldenburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Hütschenhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Schefflenz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Rosenbach/Vogtl.** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Philippsthal (Werra)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Neukloster** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Schönberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Dassow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Cadenberge** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Wiesau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Eschau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Süderholz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Amorbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Marschacht** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Wäschenbeuren** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Gensingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Helmstadt-Bargen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Grafrath** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Lunzenau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Kiedrich** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Hoya** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Wolfegg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Germaringen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Hamm (Sieg)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Welden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Pressig** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Neckartailfingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Billigheim-Ingenheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Andechs** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Neckarsteinach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Allendorf (Lumda)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Wasserburg (Bodensee)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Eigeltingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **St. Blasien** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Loiching** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Marklkofen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Kyffhäuserland** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Heßdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Regis-Breitingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Schonach im Schwarzwald** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Biberach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Groß Grönau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Aukrug** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Göllheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Nesselwang** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Eppendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Eichstetten am Kaiserstuhl** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Lorch** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Schondorf am Ammersee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Rimsting** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Neudrossenfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Hollenstedt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Warngau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Döhlau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Zinnowitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Rickenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Wolkenstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Neukirchen/Pleiße** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Wahrenholz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Trebsen/Mulde** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Albersdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Bergtheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Letschin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Sigmaringendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Ruhland** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Sankt Peter-Ording** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Michelfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Buttenheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Vettelschoß** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Icking** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Bevern** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Markersdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Bad Kleinen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Hausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Malsfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Liebenau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Forstern** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Burgstetten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Speicher** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Benediktbeuern** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wallhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Hechthausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Pürgen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Langenenslingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Kraftsdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Bodenmais** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Unterwössen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Bad Salzschlirf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Deidesheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Kirchheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Gechingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Türkenfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Freudenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Kleinheubach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Triptis** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Klein-Winternheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Eystrup** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Beuren** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Amtsberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Orsingen-Nenzingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bentwisch** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Hildrizhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bad Muskau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Farchant** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Sexau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Tegernsee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Grainau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Aiterhofen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Sailauf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Marktrodach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Bad Elster** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Dörfles-Esbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Zornheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Happurg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Parthenstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Hauenstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Seifhennersdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Ronneburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Schiltach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Stromberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Burgbernheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Jemgum** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Lalendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Schwindegg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Straßkirchen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Sankt Michaelisdonn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Heimenkirch** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Ölbronn-Dürrn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Hirschhorn (Neckar)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Sasbach am Kaiserstuhl** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Malsch** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Neustadt (Dosse)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Malterdingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Lucka** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Beindersheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Lauben** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Berge** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Grafenrheinfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Ulmen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Moos** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Owen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Spreenhagen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Gößnitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Angelburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Bad Klosterlausnitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Valley** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Baierbrunn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Kranichfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Bad Karlshafen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Urmitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Ohlsbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Langenhorn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Hoppstädten-Weiersbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Illerrieden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Erolzheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Poppenricht** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Volkertshausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Randersacker** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Bad Schandau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Hohenlinden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Spraitbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Gaienhofen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Offenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wilhelmsfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bischofsmais** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Colbitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Leutersdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Michelbach an der Bilz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Auma-Weidatal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Krakow am See** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Ohlstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schwarzatal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Walheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Mühlberg/Elbe** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Bempflingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Tuningen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Marzling** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Plate** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Staig** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Scharnebeck** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Leinach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Berkheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Deckenpfronn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Kirchenthumbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Saalburg-Ebersdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Neuler** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Tüßling** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schwegenheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Waldburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Schwangau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Burgbrohl** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Elchesheim-Illingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Unterbreizbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Haina (Kloster)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Kaisersesch** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Geyer** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Warin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Lorup** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Münchhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Bad Steben** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Hunderdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Bodnegg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Harthausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Simmelsdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Gosen-Neu Zittau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Irschenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Bad Teinach-Zavelstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Obermichelbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wörth a.d.Isar** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Hillesheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Bischoffen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Vörstetten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Stephansposching** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Glattbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Dorf Mecklenburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Wangen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Alteglofsheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Hammah** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Buckenhof** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Fischen i.Allgäu** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Eicklingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Seeshaupt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Hohnstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Birkenheide** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Hülben** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Lauscha** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Hirrlingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Babensham** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Kirchenlamitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Pfatter** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Cleebronn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Gimbsheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Margetshöchheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Mommenheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Hodenhagen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Priestewitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Klein Offenseth-Sparrieshoop** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Maroldsweisach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Radibor** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **St. Egidien** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Vogtareuth** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Großenaspe** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Ludwigsstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Seeg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Sand a.Main** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Burgberg i.Allgäu** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Hettenleidelheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Kammerstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Föhren** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Werther** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Gailingen am Hochrhein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Königheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Pampow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Hanerau-Hademarschen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Jesewitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Klütz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Hohenroda** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Aitrach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Glauburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Hahnstätten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Herschbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Neuental** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Bayerisch Gmain** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schafflund** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Klosterlechfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Aidenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Bischweier** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Braubach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Rengsdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Eitensheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Kalchreuth** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Lohmen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Frasdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wesenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Münster-Sarmsheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Binzen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Waldenburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Dirmstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Kobern-Gondorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Neuenstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Bodolz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Memmingerberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Horgau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Großharthau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Berglern** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Nebra (Unstrut)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Adenau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Heroldstatt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Sigmarszell** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schwarzach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Mönsheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Lindow (Mark)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Meißner** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Beetzendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Undenheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Claußnitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Euerbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Kenn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Fichtenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Lambrechtshagen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Schopfloch** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Huglfing** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Hatzenbühl** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Kirchweidach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Weißenstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Dollnstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wildflecken** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Aichstetten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Heidgraben** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Wischhafen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Dömitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Zemmer** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Lengerich** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Hemmingstedt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Sulzemoos** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Blender** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Sollstedt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Offenau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Simmozheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Eggstätt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Ringgau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Elfershausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Zingst** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Marktleuthen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schenefeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Marktl** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Kallmünz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Roxheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Detern** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Embsen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Haste** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Käbschütztal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Frankenau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Reinsberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Landesbergen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Tonna** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Lehrensteinsfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Rieseby** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Altenglan** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Bretzenheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Wertach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Iffeldorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Lengdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Salching** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Münchweiler an der Rodalb** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Sontheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Weyhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Eschelbronn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Niederzissen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **St. Peter** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Kutzenhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Thaleischweiler-Fröschen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Fischbachtal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Grafling** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Hohenkammer** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Rositz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Waigolshausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Möttingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Roggenburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Neuhaus a.d.Pegnitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Probstzella** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Friedewald** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Erxleben** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Themar** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Elstra** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Thüngersheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Oberelsbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Ringsheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Großweitzschen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Steinberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Grafenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Kist** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Prittriching** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Hanhofen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Herleshausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Kefenrod** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Adelsried** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Nordendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Burkau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Dieblich** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Pfaffenhofen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Lam** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Bad Peterstal-Griesbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Leimersheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Lentföhrden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Schluchsee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Rosenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Wohltorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Schönwald im Schwarzwald** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Nußdorf a.Inn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Sulzbach-Laufen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Erpel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Brohl-Lützing** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Hetzerath** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Kinding** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Ostelsheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Eime** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Helmstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Freihung** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Puderbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Berghaupten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Salmtal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Wiesenttal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Sasbachwalden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Wasbek** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Dernbach (Westerwald)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Igling** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schwörstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Eimeldingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Gägelow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Schleusegrund** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Oberwolfach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Heede** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Lauenbrück** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Geldersheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wustrow (Wendland)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Hausen b.Würzburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Ehrenberg (Rhön)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Rötgesbüttel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Bad Wilsnack** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Sellin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Hinterzarten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Insel Poel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Halbe** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Hessigheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Mönchberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Chamerau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Bad Eilsen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Hillerse** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Edesheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Eitelborn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Hollenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Eichenbühl** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Gaiberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Beimerstetten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Königshain-Wiederau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Straßberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Braunsbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Oberpframmern** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Papendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Ellerstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Golßen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Weitersburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Friedrichskoog** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Gyhum** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Epfenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Hergatz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Elmstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Ohorn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Muhr a.See** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Barendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Borstel-Hohenraden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Boltenhagen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Weiding** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Seehausen a.Staffelsee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Bernried am Starnberger See** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Röderaue** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Wees** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Weisenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Handeloh** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Winningen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Ziesar** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Hürup** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Kummerfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Hochdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Wegeleben** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Aach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Hausen im Wiesental** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Pöhl** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Bockenheim an der Weinstraße** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Wolpertshausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Breklum** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Viöl** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Lobbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Husby** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Wallhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Mehring** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Neuenkirchen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Köditz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Gartz (Oder)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Nordstrand** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Monsheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Menslage** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Arrach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Lottstetten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Gelting** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Heidenau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Süderlügum** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Kirchgellersen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Neumagen-Dhron** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Zwiefalten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Dobel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Schöpstal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Egmating** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Taura** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Brieskow-Finkenheerd** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Gutach (Schwarzwaldbahn)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Ronshausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Neckargerach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Rehden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Remlingen-Semmenstedt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Lindberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Suhlendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Dogern** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Dollern** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Gruibingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Hohnhorst** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Erfde** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Radbruch** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Mainbernheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Elxleben** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Ahorn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Chorin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Ottrau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Iggensbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Dienheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Großenbrode** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Bilshausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Borkheide** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Grosselfingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Kaltenengers** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Ducherow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Insheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Mespelbrunn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wangels** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Delingsdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Garz/Rügen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Rerik** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Reit im Winkl** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Reichartshausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bärenstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Königstein/Sächs.Schw.** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Kröv** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Jatznick** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Cavertitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Albertshofen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Heimbuchenthal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Balzheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Breitenfelde** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Colmberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Frittlingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Zeltingen-Rachtig** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Treis-Karden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Illschwang** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Westerstetten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Egloffstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Egenhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Merklingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Sipplingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Melsdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Felde** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Steinfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Brücken (Pfalz)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Bernsdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Geiselbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Hüffenhardt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Klostermansfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Jembke** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Kirrweiler (Pfalz)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Eresing** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Meyenburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Weißbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Zandt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Weilbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Berghülen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Nellingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Neuensalz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Bordelum** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Fleckeby** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Obergriesbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Neuhäusel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Hagelstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Waffenbrunn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Busdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Rieschweiler-Mühlbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Ortrand** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Masserberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Erkenbrechtsweiler** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Lautenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Lauterecken** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Rümmingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Krün** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Oderberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Berg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Berg (Pfalz)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Rechtsupweg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Reckendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Feldberg (Schwarzwald)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Kriebstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Röthenbach (Allgäu)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Ottenhofen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Stapel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Ebergötzen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Neusorg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wirsberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schöngeising** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Dormitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Ehingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Dammbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Todtmoos** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Ottensoos** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schmalfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Oberwiesenthal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Immenreuth** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Vrees** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Rullstorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Leutenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Teupitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Müglitztal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Neufra** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Ringelai** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Glaubitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Meudt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Kirchheim an der Weinstraße** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Tiefenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Kelberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Rieneck** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Hamberge** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Gebhardshain** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Hofstetten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Steinfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Ebrach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Rechlin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Hausen (Wied)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Neukirchen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Eurasburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wasbüttel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Wolfstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Sankt Englmar** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Droyßig** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Wörnitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Brunnen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Arzberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Drakenburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Bernau im Schwarzwald** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Nortmoor** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Grünendeich** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Fichtelberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Erlenmoos** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Wittighausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Wulften am Harz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Freudenburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Jünkerath** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Scheden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Widdern** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Oberottmarshausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Eydelstedt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Borgstedt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Niederalteich** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Nonnenhorn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Obermeitingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Weibersbrunn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Röllbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Untersteinach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Harbke** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Jagsthausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Steinkirchen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Beesten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Kalkhorst** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Grabenstetten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Walchum** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Wiemersdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Osten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Thiersheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wechselburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Ornbau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Dorfprozelten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Rhumspringe** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Irrel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Postau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Starkenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Ramsau b.Berchtesgaden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Presseck** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Ranis** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Sankt Martin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Breitenbach a.Herzberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Langenleuba-Niederhain** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Wain** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Lalling** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Siegelsbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Weidenthal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Kollmar** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Wallhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Börgerende-Rethwisch** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Eching am Ammersee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Höfen an der Enz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Krummesse** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Schondra** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Bayrischzell** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Vierkirchen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Altenahr** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Schornsheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Himmelstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Oberhof** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Oberuckersee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Grünenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Gommersheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Kaiserpfalz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Rammingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Rasdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Hessen (hessen-latest.osm.pbf)`
+- **Crossen an der Elster** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Langballig** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Saal a.d.Saale** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wallmerod** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Gablenz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Damp** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Stadtkyll** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Etzenricht** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Frauenneuharting** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Grafenwiesen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **List auf Sylt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Schellhorn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Gundersheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Bornheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Koserow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Ellerhoop** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Hüttisheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Wulkenzin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Rosenthal-Bielatal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Sukow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Zerf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Heiligenstedten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Mellingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Flossenbürg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Dierhagen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Oberostendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schaufling** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Euerdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Velgast** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Rammelsbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Siehdichum** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Sierksdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Heiligenroth** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Breitbrunn a.Chiemsee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Staudernheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Schönecken** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Strande** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Kleinsendelbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Büsingen am Hochrhein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Böttingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Manderscheid** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Suthfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Ziltendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Oberschwarzach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Beckedorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Winterhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wollbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Bad Neualbenreuth** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Jonsdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Bollingstedt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Seebach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Ponitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Hagnau am Bodensee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Schwenningen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Etzelwang** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Hornbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Agathenburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Gillenfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Langenhahn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Hornstorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Marktschorgast** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Trabitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Wiltingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Riol** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Dürrholz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Udenheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Sachsenkam** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Mogendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Biendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Binau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Rammenau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Göhren** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Balgheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bartenshagen-Parkentin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Ebernhahn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Düngenheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Schöfweg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Mönchhagen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Schafstedt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Oybin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Bad Bayersoien** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Holtsee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Waake** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Oldenswort** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Prerow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Dennheritz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Lembruch** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Longuich** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Rammingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Aufseß** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Stolpe** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Züssow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Stadelhofen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Sulzfeld a.Main** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Gingst** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Enzklösterle** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Leupoldsgrün** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Müssen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Todendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Lieser** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Herforst** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Schönwald** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Wiesenau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Raitenbuch** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Essel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Rieden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Hauptstuhl** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Freisbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Berlingerode** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Pellworm** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Münchweiler an der Alsenz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Plötzkau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Weißenohe** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Hunding** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Neukirchen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Wust-Fischbeck** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Eppelsheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Seelingstädt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Hemsbünde** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Glan-Münchweiler** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Wustrow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Prosselsheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Dannewerk** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Herzhorn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Groß Sarau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Mühl Rosin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Stechlin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Garlstorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Longkamp** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Guderhandviertel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Eisenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Glött** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Polle** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Nahrendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Klüsserath** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Groß Nemerow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Thaining** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Bastorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Prötzel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Altenkrempe** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Nister** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Reuth b.Erbendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Lürschau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Trittenheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Mesekenhagen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Mühlhausen im Täle** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bimöhlen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Unterroth** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Gielow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Malberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Bettingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Schinkel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Weinsheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Nordheim v.d.Rhön** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Gutenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Marienrachdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Hirschfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Bodenrode-Westhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Frankenheim/Rhön** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Hohenkirchen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Gattendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Ückeritz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Arenshausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Bad Bertrich** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Bockhorst** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Born a.Darß** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Pösing** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Schönbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Erharting** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Brokdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Emtmannsberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Guckheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Kapellen-Drusweiler** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Martinsheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Glowe** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Ober-Hilbersheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Riethnordhausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Wilgartswiesen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Bayerisch Eisenstein** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Altdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Greimerath** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Wiek** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Harsdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Mauchenheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Müschenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Baabe** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Neuharlingersiel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Lohnsfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Hasselberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Großbardorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Pelm** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Gerolfingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Vierhöfen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Tiste** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Fischbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Wahlrod** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Dagebüll** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Nebel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Spangdahlem** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Tautenhain** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Hörden am Harz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Mühlenfließ** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Zempin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Waldlaubersheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Rathmannsdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Lichterfeld-Schacksdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Dittweiler** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Eldetal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Göhren-Lebbin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Gebenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Noer** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Abtswind** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Deutschneudorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Winterspelt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Pleisweiler-Oberhofen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Steinberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Konken** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Hörnum (Sylt)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Brinkum** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Lohmen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Rabenstein/Fläming** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Nemsdorf-Göhrendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen-Anhalt (sachsen-anhalt-latest.osm.pbf)`
+- **Wollin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Stemmen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Loissin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Neuleiningen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Burrweiler** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Mündersbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Brest** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Kempfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Barum** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Schülldorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Trassenheide** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Gallmersgarten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Hohenfelde** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Vogelsang** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Wittdün auf Amrum** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Erlenbach bei Kandel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Hohen-Sülzen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Hohenstadt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Pruchten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Milda** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Dörrebach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Rüdenau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Königsfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Greimersburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Dillstädt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Lohheide** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Rehlingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Alken** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Ettal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Brahlstorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Langenfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Rinnthal** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Haschbach am Remigiusberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Reinsdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Boden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Damscheid** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Zirkow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Zettlitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Stein-Bockenheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Tonndorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Zotzenheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Kargow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Ziegenrück** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Kanzem** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Ahrenshoop** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Prinzhöfte** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Philippsreut** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Braunichswalde** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Schuld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Auw bei Prüm** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Kirchgandern** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Niedergebra** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Holzbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Cursdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Matzenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Siemz-Niendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Mittelstenahe** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Welgesheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Dätgen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Korswandt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Dornheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Bodelwitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Glees** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Neunkirchen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Dümpelfeld** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Dörth** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Hainspitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Kratzeburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Laasdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Alleshausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Baden-Württemberg (baden-wuerttemberg-latest.osm.pbf)`
+- **Bandenitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Ermershausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Norddorf auf Amrum** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Perasdorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Bayern (bayern-latest.osm.pbf)`
+- **Jesendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Hohen Wangelin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Schwarzburg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Alt Bukow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Dobbin-Linstow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Parsteinsee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Brandenburg (brandenburg-latest.osm.pbf)`
+- **Remmels** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Kampen (Sylt)** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Bärenbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Gondenbrett** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Insul** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Oberweid** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Hüffler** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Einhaus** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Hohenzieritz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Schleifreisen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Kapellendorf** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Dobitschen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Schaprode** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Altwarp** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Osterrade** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Wallenborn** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Hahn am See** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Barweiler** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Härtlingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Blankenberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Kluis** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Hohenfelden** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Vogelsang-Warsin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Reitzenhain** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Elbingen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Neddemin** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Ettinghausen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Eisenschmitt** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Ockholm** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Stolpe** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Rathen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Sachsen (sachsen-latest.osm.pbf)`
+- **Reipoltskirchen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Görkwitz** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Rothemühl** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Hemmelzen** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Udler** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Grinau** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Oldenbüttel** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Kronsgaard** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Winkelbach** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Lietzow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Grödersby** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`
+- **Burgsponheim** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Mähren** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Osterheide** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Niedersachsen (niedersachsen-latest.osm.pbf)`
+- **Putgarten** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Grammow** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Mecklenburg-Vorpommern (mecklenburg-vorpommern-latest.osm.pbf)`
+- **Hohenwarte** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Thüringen (thueringen-latest.osm.pbf)`
+- **Sosberg** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Rheinland-Pfalz (rheinland-pfalz-latest.osm.pbf)`
+- **Kudensee** (OpenStreetMap (Geofabrik-Auszug)): `Geofabrik, Schleswig-Holstein (schleswig-holstein-latest.osm.pbf)`

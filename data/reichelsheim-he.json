@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "reichelsheim-he",
+    "name": "Reichelsheim (Wetterau)",
+    "center": {
+      "lat": 50.3645864,
+      "lng": 8.9237222
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "reichelsheim-he-250b9aedb7",
+      "city": "reichelsheim-he",
+      "label": "Sommerbachstraße",
+      "street": "Sommerbachstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Reichelsheim (Wetterau)",
+      "spotCount": 2,
+      "lat": 50.3626124,
+      "lng": 8.8418743,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/987616394), ODbL"
+    },
+    {
+      "id": "reichelsheim-he-ce9e1859dd",
+      "city": "reichelsheim-he",
+      "label": "Vogelsbergstraße",
+      "street": "Vogelsbergstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Reichelsheim (Wetterau)",
+      "spotCount": 1,
+      "lat": 50.3645864,
+      "lng": 8.9237222,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1210763711), ODbL"
+    }
+  ]
+}

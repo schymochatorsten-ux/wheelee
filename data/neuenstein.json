@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "neuenstein",
+    "name": "Neuenstein",
+    "center": {
+      "lat": 49.206101100000005,
+      "lng": 9.58555535
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuenstein-17288b3547",
+      "city": "neuenstein",
+      "label": "Haller Straße",
+      "street": "Haller Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Neuenstein",
+      "spotCount": 1,
+      "lat": 49.206101100000005,
+      "lng": 9.58555535,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/350462333), ODbL"
+    },
+    {
+      "id": "neuenstein-ed749be7ce",
+      "city": "neuenstein",
+      "label": "Haller Straße",
+      "street": "Haller Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neuenstein",
+      "spotCount": 1,
+      "lat": 49.20612345000001,
+      "lng": 9.5853546,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1254205714), ODbL"
+    },
+    {
+      "id": "neuenstein-87dd3edcc2",
+      "city": "neuenstein",
+      "label": "Raststätte Hohenlohe Süd",
+      "street": "Raststätte Hohenlohe Süd",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuenstein",
+      "spotCount": 3,
+      "lat": 49.205691300000005,
+      "lng": 9.6391132,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/622478723), ODbL"
+    }
+  ]
+}

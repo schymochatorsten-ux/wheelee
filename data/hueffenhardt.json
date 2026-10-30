@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hueffenhardt",
+    "name": "Hüffenhardt",
+    "center": {
+      "lat": 49.2899363,
+      "lng": 9.0890783
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hueffenhardt-061fa071ff",
+      "city": "hueffenhardt",
+      "label": "Mühlbacher Straße",
+      "street": "Mühlbacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hüffenhardt",
+      "spotCount": 3,
+      "lat": 49.2899363,
+      "lng": 9.0890783,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/333896583), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "georgensgmuend",
+    "name": "Georgensgmünd",
+    "center": {
+      "lat": 49.1831536,
+      "lng": 11.0155286
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "georgensgmuend-56abbcbf69",
+      "city": "georgensgmuend",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Georgensgmünd",
+      "spotCount": 1,
+      "lat": 49.1831536,
+      "lng": 11.0155286,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28563468), ODbL"
+    },
+    {
+      "id": "georgensgmuend-2a2a6cda0e",
+      "city": "georgensgmuend",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Georgensgmünd",
+      "spotCount": 2,
+      "lat": 49.18051485,
+      "lng": 11.013276650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28602107), ODbL"
+    }
+  ]
+}

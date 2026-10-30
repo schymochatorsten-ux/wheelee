@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "beesten",
+    "name": "Beesten",
+    "center": {
+      "lat": 52.436265350000006,
+      "lng": 7.49786335
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "beesten-e747ddf586",
+      "city": "beesten",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Beesten",
+      "spotCount": 3,
+      "lat": 52.436265350000006,
+      "lng": 7.49786335,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1364871669), ODbL"
+    }
+  ]
+}

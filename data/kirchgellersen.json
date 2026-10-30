@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kirchgellersen",
+    "name": "Kirchgellersen",
+    "center": {
+      "lat": 53.23523085000001,
+      "lng": 10.295381
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kirchgellersen-4a801d160f",
+      "city": "kirchgellersen",
+      "label": "Kindergartenweg",
+      "street": "Kindergartenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kirchgellersen",
+      "spotCount": 1,
+      "lat": 53.23523085000001,
+      "lng": 10.295381,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/257453987), ODbL"
+    }
+  ]
+}

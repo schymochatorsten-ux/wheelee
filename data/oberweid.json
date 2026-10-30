@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "oberweid",
+    "name": "Oberweid",
+    "center": {
+      "lat": 50.595698250000005,
+      "lng": 10.0631812
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberweid-10f6290cb2",
+      "city": "oberweid",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberweid",
+      "spotCount": 1,
+      "lat": 50.59562695,
+      "lng": 10.0631812,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/675709936), ODbL"
+    },
+    {
+      "id": "oberweid-b3460e0c03",
+      "city": "oberweid",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oberweid",
+      "spotCount": 1,
+      "lat": 50.595698250000005,
+      "lng": 10.06316795,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1391320015), ODbL"
+    }
+  ]
+}

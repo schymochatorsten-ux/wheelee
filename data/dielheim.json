@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "dielheim",
+    "name": "Dielheim",
+    "center": {
+      "lat": 49.28305875,
+      "lng": 8.7314839
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dielheim-0bc3809dc8",
+      "city": "dielheim",
+      "label": "Friedhofsparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Dielheim",
+      "spotCount": 1,
+      "lat": 49.28213960000001,
+      "lng": 8.730605200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/306218877), ODbL"
+    },
+    {
+      "id": "dielheim-99c091a1ad",
+      "city": "dielheim",
+      "label": "Friedhofsparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Dielheim",
+      "spotCount": 1,
+      "lat": 49.28305875,
+      "lng": 8.7314839,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/416953674), ODbL"
+    }
+  ]
+}

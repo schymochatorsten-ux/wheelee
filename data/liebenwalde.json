@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "liebenwalde",
+    "name": "Liebenwalde",
+    "center": {
+      "lat": 52.86594890000001,
+      "lng": 13.397617100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "liebenwalde-36b59ee392",
+      "city": "liebenwalde",
+      "label": "Am Finowkanal",
+      "street": "Am Finowkanal",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Liebenwalde",
+      "spotCount": 1,
+      "lat": 52.86594890000001,
+      "lng": 13.397617100000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11177359292), ODbL"
+    },
+    {
+      "id": "liebenwalde-fc82586f0a",
+      "city": "liebenwalde",
+      "label": "Am Finowkanal",
+      "street": "Am Finowkanal",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Liebenwalde",
+      "spotCount": 2,
+      "lat": 52.8658377,
+      "lng": 13.396859450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/317069983), ODbL"
+    },
+    {
+      "id": "liebenwalde-a5b2351e47",
+      "city": "liebenwalde",
+      "label": "Am Finowkanal",
+      "street": "Am Finowkanal",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Liebenwalde",
+      "spotCount": 1,
+      "lat": 52.86605685000001,
+      "lng": 13.39807175,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1206226683), ODbL"
+    }
+  ]
+}

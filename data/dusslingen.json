@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "dusslingen",
+    "name": "Dußlingen",
+    "center": {
+      "lat": 48.4524934,
+      "lng": 9.05735915
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dusslingen-cc72b8135e",
+      "city": "dusslingen",
+      "label": "Bahnhofstraße 14",
+      "street": "Bahnhofstraße",
+      "houseNumber": "14",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dußlingen",
+      "spotCount": 1,
+      "lat": 48.4524934,
+      "lng": 9.057970300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1390031183), ODbL"
+    },
+    {
+      "id": "dusslingen-4c7693335b",
+      "city": "dusslingen",
+      "label": "Bahnhofstraße 15",
+      "street": "Bahnhofstraße",
+      "houseNumber": "15",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dußlingen",
+      "spotCount": 1,
+      "lat": 48.453107200000005,
+      "lng": 9.05735915,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1414046426), ODbL"
+    },
+    {
+      "id": "dusslingen-1bc2daab71",
+      "city": "dusslingen",
+      "label": "Hindenburgplatz",
+      "street": "Hindenburgplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dußlingen",
+      "spotCount": 1,
+      "lat": 48.451959,
+      "lng": 9.0552734,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/988379764), ODbL"
+    },
+    {
+      "id": "dusslingen-b417c80f4c",
+      "city": "dusslingen",
+      "label": "Hindenburgplatz",
+      "street": "Hindenburgplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dußlingen",
+      "spotCount": 1,
+      "lat": 48.452146600000006,
+      "lng": 9.05515315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/988379765), ODbL"
+    }
+  ]
+}

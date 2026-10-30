@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "balgheim",
+    "name": "Balgheim",
+    "center": {
+      "lat": 48.0656958,
+      "lng": 8.7605178
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "balgheim-1c05da342e",
+      "city": "balgheim",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Balgheim",
+      "spotCount": 1,
+      "lat": 48.065685800000004,
+      "lng": 8.76048905,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1409264225), ODbL"
+    },
+    {
+      "id": "balgheim-028d3bca16",
+      "city": "balgheim",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Balgheim",
+      "spotCount": 1,
+      "lat": 48.0656958,
+      "lng": 8.7605178,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1409264226), ODbL"
+    }
+  ]
+}

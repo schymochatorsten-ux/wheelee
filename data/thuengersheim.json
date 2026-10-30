@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "thuengersheim",
+    "name": "Thüngersheim",
+    "center": {
+      "lat": 49.87895210000001,
+      "lng": 9.84333345
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "thuengersheim-49ef73328e",
+      "city": "thuengersheim",
+      "label": "Am Straßacker",
+      "street": "Am Straßacker",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Thüngersheim",
+      "spotCount": 3,
+      "lat": 49.87406645,
+      "lng": 9.84333345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1191588301), ODbL"
+    },
+    {
+      "id": "thuengersheim-d443e81f58",
+      "city": "thuengersheim",
+      "label": "Unterer Graben",
+      "street": "Unterer Graben",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Thüngersheim",
+      "spotCount": 1,
+      "lat": 49.87895210000001,
+      "lng": 9.839767550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/482009069), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bartenshagen-parkentin",
+    "name": "Bartenshagen-Parkentin",
+    "center": {
+      "lat": 54.08121585000001,
+      "lng": 11.977820600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bartenshagen-parkentin-57e35376ef",
+      "city": "bartenshagen-parkentin",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bartenshagen-Parkentin",
+      "spotCount": 1,
+      "lat": 54.08121585000001,
+      "lng": 11.977820600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31091113), ODbL"
+    }
+  ]
+}

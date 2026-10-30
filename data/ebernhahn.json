@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ebernhahn",
+    "name": "Ebernhahn",
+    "center": {
+      "lat": 50.46875755000001,
+      "lng": 7.77359135
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ebernhahn-98572432bc",
+      "city": "ebernhahn",
+      "label": "Rosenheckhalle",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ebernhahn",
+      "spotCount": 1,
+      "lat": 50.46875755000001,
+      "lng": 7.77359135,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/158522023), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "koenigsee",
+    "name": "Königsee",
+    "center": {
+      "lat": 50.702213900000004,
+      "lng": 11.103816000000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "koenigsee-9a5d22260a",
+      "city": "koenigsee",
+      "label": "Paulinzella",
+      "street": "Paulinzella",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Königsee",
+      "spotCount": 1,
+      "lat": 50.702213900000004,
+      "lng": 11.103816000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/334288364), ODbL"
+    }
+  ]
+}

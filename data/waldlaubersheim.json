@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "waldlaubersheim",
+    "name": "Waldlaubersheim",
+    "center": {
+      "lat": 49.92439725,
+      "lng": 7.82576605
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "waldlaubersheim-eee0e34da4",
+      "city": "waldlaubersheim",
+      "label": "Autohof Waldlaubersheim",
+      "street": "Autohof Waldlaubersheim",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldlaubersheim",
+      "spotCount": 1,
+      "lat": 49.92439725,
+      "lng": 7.82576605,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/439383538), ODbL"
+    }
+  ]
+}

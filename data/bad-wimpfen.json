@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "bad-wimpfen",
+    "name": "Bad Wimpfen",
+    "center": {
+      "lat": 49.22844275,
+      "lng": 9.16046315
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-wimpfen-86c11a9e54",
+      "city": "bad-wimpfen",
+      "label": "Erhard-Schnepf-Straße 23",
+      "street": "Erhard-Schnepf-Straße",
+      "houseNumber": "23",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Wimpfen",
+      "spotCount": 1,
+      "lat": 49.22150955000001,
+      "lng": 9.154527600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1056632581), ODbL"
+    },
+    {
+      "id": "bad-wimpfen-ea29b28ba9",
+      "city": "bad-wimpfen",
+      "label": "Erhard-Schnepf-Straße 27",
+      "street": "Erhard-Schnepf-Straße",
+      "houseNumber": "27",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Wimpfen",
+      "spotCount": 1,
+      "lat": 49.2216657,
+      "lng": 9.153823850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1056632583), ODbL"
+    },
+    {
+      "id": "bad-wimpfen-eee53befe3",
+      "city": "bad-wimpfen",
+      "label": "Erhard-Schnepf-Straße 45",
+      "street": "Erhard-Schnepf-Straße",
+      "houseNumber": "45",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Wimpfen",
+      "spotCount": 1,
+      "lat": 49.2217613,
+      "lng": 9.153117400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1056632585), ODbL"
+    },
+    {
+      "id": "bad-wimpfen-21289ae9d2",
+      "city": "bad-wimpfen",
+      "label": "Eulenberger Hof",
+      "street": "Eulenberger Hof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Wimpfen",
+      "spotCount": 3,
+      "lat": 49.2295367,
+      "lng": 9.1673324,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1411765813), ODbL"
+    },
+    {
+      "id": "bad-wimpfen-fdefdaa1d8",
+      "city": "bad-wimpfen",
+      "label": "Marktplatz 4",
+      "street": "Marktplatz",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Wimpfen",
+      "spotCount": 1,
+      "lat": 49.230197700000005,
+      "lng": 9.1621503,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1212795300), ODbL"
+    },
+    {
+      "id": "bad-wimpfen-65f8f0dae2",
+      "city": "bad-wimpfen",
+      "label": "Schulstraße 24",
+      "street": "Schulstraße",
+      "houseNumber": "24",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Wimpfen",
+      "spotCount": 1,
+      "lat": 49.22844275,
+      "lng": 9.16046315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/251022326), ODbL"
+    }
+  ]
+}

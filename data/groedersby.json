@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "groedersby",
+    "name": "Grödersby",
+    "center": {
+      "lat": 54.631254150000004,
+      "lng": 9.92994865
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "groedersby-55808cd6f9",
+      "city": "groedersby",
+      "label": "Neuer Damm",
+      "street": "Neuer Damm",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Grödersby",
+      "spotCount": 4,
+      "lat": 54.631254150000004,
+      "lng": 9.92994865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25409993), ODbL"
+    }
+  ]
+}

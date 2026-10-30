@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "stephansposching",
+    "name": "Stephansposching",
+    "center": {
+      "lat": 48.803646300000004,
+      "lng": 12.85130735
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "stephansposching-51f7ae6401",
+      "city": "stephansposching",
+      "label": "Heckenweg",
+      "street": "Heckenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stephansposching",
+      "spotCount": 1,
+      "lat": 48.803763800000006,
+      "lng": 12.85114755,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1564866240), ODbL"
+    },
+    {
+      "id": "stephansposching-502438fe48",
+      "city": "stephansposching",
+      "label": "Heckenweg",
+      "street": "Heckenweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Stephansposching",
+      "spotCount": 1,
+      "lat": 48.803783700000004,
+      "lng": 12.851131200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1564866241), ODbL"
+    },
+    {
+      "id": "stephansposching-6a02d3c4ab",
+      "city": "stephansposching",
+      "label": "Heckenweg",
+      "street": "Heckenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stephansposching",
+      "spotCount": 1,
+      "lat": 48.8034244,
+      "lng": 12.8514105,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1564866243), ODbL"
+    },
+    {
+      "id": "stephansposching-5a758ec1d8",
+      "city": "stephansposching",
+      "label": "Heckenweg",
+      "street": "Heckenweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Stephansposching",
+      "spotCount": 1,
+      "lat": 48.80339790000001,
+      "lng": 12.8514336,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1564866244), ODbL"
+    },
+    {
+      "id": "stephansposching-cdbfaf7be4",
+      "city": "stephansposching",
+      "label": "Heckenweg",
+      "street": "Heckenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stephansposching",
+      "spotCount": 1,
+      "lat": 48.803646300000004,
+      "lng": 12.851236450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1564866249), ODbL"
+    },
+    {
+      "id": "stephansposching-162f34dedd",
+      "city": "stephansposching",
+      "label": "Heckenweg",
+      "street": "Heckenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stephansposching",
+      "spotCount": 1,
+      "lat": 48.8035505,
+      "lng": 12.85130735,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1564866250), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "vogtsburg",
+    "name": "Vogtsburg im Kaiserstuhl",
+    "center": {
+      "lat": 48.088989600000005,
+      "lng": 7.6204409
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "vogtsburg-3de039597f",
+      "city": "vogtsburg",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Vogtsburg im Kaiserstuhl",
+      "spotCount": 1,
+      "lat": 48.088989600000005,
+      "lng": 7.620538450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1390314025), ODbL"
+    },
+    {
+      "id": "vogtsburg-a4150adf29",
+      "city": "vogtsburg",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Vogtsburg im Kaiserstuhl",
+      "spotCount": 1,
+      "lat": 48.0888562,
+      "lng": 7.6204409,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1390314026), ODbL"
+    },
+    {
+      "id": "vogtsburg-c57805468e",
+      "city": "vogtsburg",
+      "label": "Mittelstadt 18",
+      "street": "Mittelstadt",
+      "houseNumber": "18",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vogtsburg im Kaiserstuhl",
+      "spotCount": 1,
+      "lat": 48.1008932,
+      "lng": 7.5980677000000005,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3917433735), ODbL"
+    }
+  ]
+}

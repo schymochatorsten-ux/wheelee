@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "flintbek",
+    "name": "Flintbek",
+    "center": {
+      "lat": 54.24209115000001,
+      "lng": 10.0624049
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "flintbek-068c96d03e",
+      "city": "flintbek",
+      "label": "Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Flintbek",
+      "spotCount": 3,
+      "lat": 54.24209115000001,
+      "lng": 10.06198765,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31428801), ODbL"
+    },
+    {
+      "id": "flintbek-8faa4a9c9b",
+      "city": "flintbek",
+      "label": "Müllershörn 2a",
+      "street": "Müllershörn",
+      "houseNumber": "2a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Flintbek",
+      "spotCount": 1,
+      "lat": 54.24085085,
+      "lng": 10.0624049,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/118827398), ODbL"
+    }
+  ]
+}

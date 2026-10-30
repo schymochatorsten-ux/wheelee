@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "postbauer-heng",
+    "name": "Postbauer-Heng",
+    "center": {
+      "lat": 49.309359300000004,
+      "lng": 11.358695700000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "postbauer-heng-2dc5bd3f1a",
+      "city": "postbauer-heng",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Postbauer-Heng",
+      "spotCount": 3,
+      "lat": 49.30770665,
+      "lng": 11.358695700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/479239212), ODbL"
+    },
+    {
+      "id": "postbauer-heng-4d0e6a13da",
+      "city": "postbauer-heng",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Postbauer-Heng",
+      "spotCount": 2,
+      "lat": 49.309359300000004,
+      "lng": 11.3586609,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/479239213), ODbL"
+    }
+  ]
+}

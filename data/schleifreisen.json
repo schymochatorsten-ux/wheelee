@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "schleifreisen",
+    "name": "Schleifreisen",
+    "center": {
+      "lat": 50.87472940000001,
+      "lng": 11.84896385
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schleifreisen-52693362f0",
+      "city": "schleifreisen",
+      "label": "Rasthof & Motel Hermsdorfer Kreuz",
+      "street": "Rasthof & Motel Hermsdorfer Kreuz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schleifreisen",
+      "spotCount": 1,
+      "lat": 50.874772500000006,
+      "lng": 11.84894745,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/754259938), ODbL"
+    },
+    {
+      "id": "schleifreisen-0dcea327dd",
+      "city": "schleifreisen",
+      "label": "Rasthof & Motel Hermsdorfer Kreuz",
+      "street": "Rasthof & Motel Hermsdorfer Kreuz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schleifreisen",
+      "spotCount": 1,
+      "lat": 50.87472940000001,
+      "lng": 11.84896385,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/754259939), ODbL"
+    },
+    {
+      "id": "schleifreisen-34e61eb828",
+      "city": "schleifreisen",
+      "label": "Rasthof & Motel Hermsdorfer Kreuz",
+      "street": "Rasthof & Motel Hermsdorfer Kreuz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schleifreisen",
+      "spotCount": 1,
+      "lat": 50.874686350000005,
+      "lng": 11.848980300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/754259940), ODbL"
+    }
+  ]
+}

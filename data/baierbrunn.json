@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "baierbrunn",
+    "name": "Baierbrunn",
+    "center": {
+      "lat": 48.031900050000004,
+      "lng": 11.497738400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "baierbrunn-e38e60bbd2",
+      "city": "baierbrunn",
+      "label": "Forststraße",
+      "street": "Forststraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Baierbrunn",
+      "spotCount": 1,
+      "lat": 48.031900050000004,
+      "lng": 11.497738400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/171387309), ODbL"
+    }
+  ]
+}

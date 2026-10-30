@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "kummerfeld",
+    "name": "Kummerfeld",
+    "center": {
+      "lat": 53.68790785,
+      "lng": 9.791383
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kummerfeld-cafb81924a",
+      "city": "kummerfeld",
+      "label": "Bilsbekbogen",
+      "street": "Bilsbekbogen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kummerfeld",
+      "spotCount": 1,
+      "lat": 53.68714365,
+      "lng": 9.7780625,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/302546347), ODbL"
+    },
+    {
+      "id": "kummerfeld-877208b672",
+      "city": "kummerfeld",
+      "label": "Bundesstraße",
+      "street": "Bundesstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kummerfeld",
+      "spotCount": 1,
+      "lat": 53.68790785,
+      "lng": 9.791383,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1262628297), ODbL"
+    }
+  ]
+}

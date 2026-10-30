@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "burkardroth",
+    "name": "Burkardroth",
+    "center": {
+      "lat": 50.2598586,
+      "lng": 9.990412500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "burkardroth-d8588a6cb3",
+      "city": "burkardroth",
+      "label": "Behindertenparkplatz Burkardroth",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burkardroth",
+      "spotCount": 2,
+      "lat": 50.249001850000006,
+      "lng": 9.980594700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/779365861), ODbL"
+    },
+    {
+      "id": "burkardroth-060b1e938e",
+      "city": "burkardroth",
+      "label": "Strenge Tür",
+      "street": "Strenge Tür",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burkardroth",
+      "spotCount": 1,
+      "lat": 50.2765864,
+      "lng": 9.990412500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/752659216), ODbL"
+    },
+    {
+      "id": "burkardroth-fc0594a56a",
+      "city": "burkardroth",
+      "label": "Zum Mühlengrund",
+      "street": "Zum Mühlengrund",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Burkardroth",
+      "spotCount": 1,
+      "lat": 50.2598586,
+      "lng": 9.99758735,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/371272865), ODbL"
+    }
+  ]
+}

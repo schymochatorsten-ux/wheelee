@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "gaeufelden",
+    "name": "Gäufelden",
+    "center": {
+      "lat": 48.56002530000001,
+      "lng": 8.85000245
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gaeufelden-998e36b8e1",
+      "city": "gaeufelden",
+      "label": "Bahnhofstraße 12",
+      "street": "Bahnhofstraße",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gäufelden",
+      "spotCount": 1,
+      "lat": 48.5600212,
+      "lng": 8.85000245,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25673610), ODbL"
+    },
+    {
+      "id": "gaeufelden-dd4184cc31",
+      "city": "gaeufelden",
+      "label": "Bahnhofstraße 12",
+      "street": "Bahnhofstraße",
+      "houseNumber": "12",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gäufelden",
+      "spotCount": 1,
+      "lat": 48.56002530000001,
+      "lng": 8.849843100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1385800075), ODbL"
+    },
+    {
+      "id": "gaeufelden-7377262399",
+      "city": "gaeufelden",
+      "label": "Herrenberger Straße 55",
+      "street": "Herrenberger Straße",
+      "houseNumber": "55",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gäufelden",
+      "spotCount": 2,
+      "lat": 48.567764100000005,
+      "lng": 8.8508075,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/323308342), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "muehlberg-elbe",
+    "name": "Mühlberg/Elbe",
+    "center": {
+      "lat": 51.4372417,
+      "lng": 13.2236837
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "muehlberg-elbe-6d2d8a0b8e",
+      "city": "muehlberg-elbe",
+      "label": "Am Alten Gut",
+      "street": "Am Alten Gut",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Fr 07:00-21:00; PH off",
+      "district": "Mühlberg/Elbe",
+      "spotCount": 1,
+      "lat": 51.43367755,
+      "lng": 13.2236837,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1116761751), ODbL"
+    },
+    {
+      "id": "muehlberg-elbe-bd8d70369e",
+      "city": "muehlberg-elbe",
+      "label": "Am Alten Gut",
+      "street": "Am Alten Gut",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Fr 07:00-21:00; PH off",
+      "district": "Mühlberg/Elbe",
+      "spotCount": 1,
+      "lat": 51.43360715,
+      "lng": 13.22392,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1116761752), ODbL"
+    },
+    {
+      "id": "muehlberg-elbe-0b05979c63",
+      "city": "muehlberg-elbe",
+      "label": "Liebenwerdaer Straße",
+      "street": "Liebenwerdaer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Sa 07:00-21:00; PH off",
+      "district": "Mühlberg/Elbe",
+      "spotCount": 4,
+      "lat": 51.43780165,
+      "lng": 13.221680200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/194524095), ODbL"
+    },
+    {
+      "id": "muehlberg-elbe-561835c2e9",
+      "city": "muehlberg-elbe",
+      "label": "Straße der Jugend",
+      "street": "Straße der Jugend",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Mühlberg/Elbe",
+      "spotCount": 1,
+      "lat": 51.4372417,
+      "lng": 13.214839950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1011247495), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "neuenbuerg",
+    "name": "Neuenbürg",
+    "center": {
+      "lat": 48.848840100000004,
+      "lng": 8.599959550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuenbuerg-00779ba95b",
+      "city": "neuenbuerg",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Neuenbürg",
+      "spotCount": 1,
+      "lat": 48.848840100000004,
+      "lng": 8.599798100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1393799597), ODbL"
+    },
+    {
+      "id": "neuenbuerg-aaa32f6c65",
+      "city": "neuenbuerg",
+      "label": "Bahnhofstraße 123",
+      "street": "Bahnhofstraße",
+      "houseNumber": "123",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neuenbürg",
+      "spotCount": 1,
+      "lat": 48.84883775,
+      "lng": 8.599959550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1393799614), ODbL"
+    }
+  ]
+}

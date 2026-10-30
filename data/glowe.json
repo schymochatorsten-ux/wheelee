@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "glowe",
+    "name": "Glowe",
+    "center": {
+      "lat": 54.568205000000006,
+      "lng": 13.4587017
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "glowe-adcfcd107c",
+      "city": "glowe",
+      "label": "Am Kurpark 43",
+      "street": "Am Kurpark",
+      "houseNumber": "43",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Glowe",
+      "spotCount": 1,
+      "lat": 54.5716265,
+      "lng": 13.475617000000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13167256046), ODbL"
+    },
+    {
+      "id": "glowe-8d1d3aea4c",
+      "city": "glowe",
+      "label": "Waldsiedlung 7",
+      "street": "Waldsiedlung",
+      "houseNumber": "7",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Glowe",
+      "spotCount": 1,
+      "lat": 54.568205000000006,
+      "lng": 13.4587017,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13167256064), ODbL"
+    },
+    {
+      "id": "glowe-0fc8a8a58d",
+      "city": "glowe",
+      "label": "Wittower Heide 48",
+      "street": "Wittower Heide",
+      "houseNumber": "48",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Glowe",
+      "spotCount": 1,
+      "lat": 54.56739935,
+      "lng": 13.452481900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1558161309), ODbL"
+    }
+  ]
+}

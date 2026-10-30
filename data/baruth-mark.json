@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "baruth-mark",
+    "name": "Baruth/Mark",
+    "center": {
+      "lat": 52.0431756,
+      "lng": 13.504940900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "baruth-mark-077abd4696",
+      "city": "baruth-mark",
+      "label": "Geschwister-Scholl-Straße",
+      "street": "Geschwister-Scholl-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Baruth/Mark",
+      "spotCount": 1,
+      "lat": 52.0431756,
+      "lng": 13.504940900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/113954148), ODbL"
+    }
+  ]
+}

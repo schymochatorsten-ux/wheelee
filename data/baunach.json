@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "baunach",
+    "name": "Baunach",
+    "center": {
+      "lat": 49.98855555,
+      "lng": 10.854551950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "baunach-33a5ee1765",
+      "city": "baunach",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Baunach",
+      "spotCount": 2,
+      "lat": 49.98855555,
+      "lng": 10.854551950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/101413896), ODbL"
+    },
+    {
+      "id": "baunach-a1799bb56b",
+      "city": "baunach",
+      "label": "Überkumstraße 36",
+      "street": "Überkumstraße",
+      "houseNumber": "36",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Baunach",
+      "spotCount": 1,
+      "lat": 49.98788425000001,
+      "lng": 10.8509632,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/50381436), ODbL"
+    }
+  ]
+}

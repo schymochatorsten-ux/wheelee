@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "altomuenster",
+    "name": "Altomünster",
+    "center": {
+      "lat": 48.38518615,
+      "lng": 11.25523935
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "altomuenster-e83fe1a574",
+      "city": "altomuenster",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Altomünster",
+      "spotCount": 2,
+      "lat": 48.38518615,
+      "lng": 11.25523935,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/538557879), ODbL"
+    }
+  ]
+}

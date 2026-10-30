@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "unterwellenborn",
+    "name": "Unterwellenborn",
+    "center": {
+      "lat": 50.65186370000001,
+      "lng": 11.4880049
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "unterwellenborn-383b027481",
+      "city": "unterwellenborn",
+      "label": "Friedrich-Ebert-Straße",
+      "street": "Friedrich-Ebert-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Unterwellenborn",
+      "spotCount": 2,
+      "lat": 50.65186370000001,
+      "lng": 11.4880049,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1319352273), ODbL"
+    },
+    {
+      "id": "unterwellenborn-b1c1f2ac46",
+      "city": "unterwellenborn",
+      "label": "Weg der Einheit",
+      "street": "Weg der Einheit",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Unterwellenborn",
+      "spotCount": 8,
+      "lat": 50.635662700000005,
+      "lng": 11.47730005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1353707502), ODbL"
+    }
+  ]
+}

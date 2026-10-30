@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "schonungen",
+    "name": "Schonungen",
+    "center": {
+      "lat": 50.12272345,
+      "lng": 10.38696155
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schonungen-79907da15d",
+      "city": "schonungen",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schonungen",
+      "spotCount": 2,
+      "lat": 50.043563500000005,
+      "lng": 10.31152805,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/20569750), ODbL"
+    },
+    {
+      "id": "schonungen-dbbdb5ef81",
+      "city": "schonungen",
+      "label": "Humprechtshäusener Straße",
+      "street": "Humprechtshäusener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schonungen",
+      "spotCount": 2,
+      "lat": 50.12272345,
+      "lng": 10.38696155,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1218123542), ODbL"
+    }
+  ]
+}

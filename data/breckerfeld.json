@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "breckerfeld",
+    "name": "Breckerfeld",
+    "center": {
+      "lat": 51.2603189,
+      "lng": 7.4688619
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "breckerfeld-6e788bd3c7",
+      "city": "breckerfeld",
+      "label": "Frankfurter Straße 72",
+      "street": "Frankfurter Straße",
+      "houseNumber": "72",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Breckerfeld",
+      "spotCount": 1,
+      "lat": 51.2603189,
+      "lng": 7.466122400000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/663785458), ODbL"
+    },
+    {
+      "id": "breckerfeld-fb2c44f19b",
+      "city": "breckerfeld",
+      "label": "Glörtalsperre",
+      "street": "Glörtalsperre",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Breckerfeld",
+      "spotCount": 1,
+      "lat": 51.2434717,
+      "lng": 7.498706200000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8598653031), ODbL"
+    },
+    {
+      "id": "breckerfeld-937c081a4c",
+      "city": "breckerfeld",
+      "label": "Neue Straße 3",
+      "street": "Neue Straße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Breckerfeld",
+      "spotCount": 1,
+      "lat": 51.2615071,
+      "lng": 7.4655358000000005,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/663344199), ODbL"
+    },
+    {
+      "id": "breckerfeld-c696712d14",
+      "city": "breckerfeld",
+      "label": "Ostring 8",
+      "street": "Ostring",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Breckerfeld",
+      "spotCount": 1,
+      "lat": 51.260107600000005,
+      "lng": 7.4688619,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/663729936), ODbL"
+    },
+    {
+      "id": "breckerfeld-f1dfd9d35d",
+      "city": "breckerfeld",
+      "label": "Pastor-Hellweg-Straße",
+      "street": "Pastor-Hellweg-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Breckerfeld",
+      "spotCount": 1,
+      "lat": 51.2610048,
+      "lng": 7.471356200000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/663729951), ODbL"
+    },
+    {
+      "id": "breckerfeld-0cd516b132",
+      "city": "breckerfeld",
+      "label": "Westring",
+      "street": "Westring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Breckerfeld",
+      "spotCount": 1,
+      "lat": 51.2588531,
+      "lng": 7.4679308,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/663729902), ODbL"
+    }
+  ]
+}

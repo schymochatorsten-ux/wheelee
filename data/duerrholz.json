@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "duerrholz",
+    "name": "Dürrholz",
+    "center": {
+      "lat": 50.58895315000001,
+      "lng": 7.5848464
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "duerrholz-8875a92ed0",
+      "city": "duerrholz",
+      "label": "Poststraße 11",
+      "street": "Poststraße",
+      "houseNumber": "11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dürrholz",
+      "spotCount": 1,
+      "lat": 50.58895315000001,
+      "lng": 7.5848464,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1282439535), ODbL"
+    }
+  ]
+}

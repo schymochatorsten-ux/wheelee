@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "elmenhorst-lichtenhagen",
+    "name": "Elmenhorst/Lichtenhagen",
+    "center": {
+      "lat": 54.1735166,
+      "lng": 11.999122750000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "elmenhorst-lichtenhagen-41ec422b31",
+      "city": "elmenhorst-lichtenhagen",
+      "label": "Behindertenparkplatz Elmenhorst/Lichtenhagen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elmenhorst/Lichtenhagen",
+      "spotCount": 2,
+      "lat": 54.17343355,
+      "lng": 11.999114650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/422831565), ODbL"
+    },
+    {
+      "id": "elmenhorst-lichtenhagen-935f6c362e",
+      "city": "elmenhorst-lichtenhagen",
+      "label": "Behindertenparkplatz Elmenhorst/Lichtenhagen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elmenhorst/Lichtenhagen",
+      "spotCount": 1,
+      "lat": 54.1735166,
+      "lng": 11.999122750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/422831567), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ermershausen",
+    "name": "Ermershausen",
+    "center": {
+      "lat": 50.207469700000004,
+      "lng": 10.626292500000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ermershausen-f5be4f717c",
+      "city": "ermershausen",
+      "label": "Ringstraße 7",
+      "street": "Ringstraße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ermershausen",
+      "spotCount": 10,
+      "lat": 50.207469700000004,
+      "lng": 10.626292500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1422983285), ODbL"
+    }
+  ]
+}

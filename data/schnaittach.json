@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "schnaittach",
+    "name": "Schnaittach",
+    "center": {
+      "lat": 49.5592734,
+      "lng": 11.3392139
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schnaittach-1c6e69ca9b",
+      "city": "schnaittach",
+      "label": "Am Erlanger",
+      "street": "Am Erlanger",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schnaittach",
+      "spotCount": 1,
+      "lat": 49.5533098,
+      "lng": 11.338444,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1745597387), ODbL"
+    },
+    {
+      "id": "schnaittach-a42402df22",
+      "city": "schnaittach",
+      "label": "Grabenstraße 7",
+      "street": "Grabenstraße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schnaittach",
+      "spotCount": 1,
+      "lat": 49.5592734,
+      "lng": 11.3392139,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1745597402), ODbL"
+    },
+    {
+      "id": "schnaittach-4c7538d362",
+      "city": "schnaittach",
+      "label": "Marktplatz 7",
+      "street": "Marktplatz",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schnaittach",
+      "spotCount": 1,
+      "lat": 49.5596684,
+      "lng": 11.340339,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1745597396), ODbL"
+    },
+    {
+      "id": "schnaittach-a030f7d3ae",
+      "city": "schnaittach",
+      "label": "Rastanlage Wolfshöhe Ost",
+      "street": "Rastanlage Wolfshöhe Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Su 00:00-12:00",
+      "district": "Schnaittach",
+      "spotCount": 3,
+      "lat": 49.5501768,
+      "lng": 11.3233759,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12734703142), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "salzweg",
+    "name": "Salzweg",
+    "center": {
+      "lat": 48.62177915,
+      "lng": 13.476588500000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "salzweg-881ed14b07",
+      "city": "salzweg",
+      "label": "Behindertenparkplatz Salzweg",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Salzweg",
+      "spotCount": 1,
+      "lat": 48.621438350000005,
+      "lng": 13.476546500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1373461921), ODbL"
+    },
+    {
+      "id": "salzweg-14e18a2323",
+      "city": "salzweg",
+      "label": "Behindertenparkplatz Salzweg",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Salzweg",
+      "spotCount": 1,
+      "lat": 48.621427100000005,
+      "lng": 13.476588500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1373461922), ODbL"
+    },
+    {
+      "id": "salzweg-e042bc9190",
+      "city": "salzweg",
+      "label": "Behindertenparkplatz Salzweg",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Salzweg",
+      "spotCount": 1,
+      "lat": 48.62177915,
+      "lng": 13.476402700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1373461927), ODbL"
+    },
+    {
+      "id": "salzweg-e3e7e135b6",
+      "city": "salzweg",
+      "label": "Behindertenparkplatz Salzweg",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Salzweg",
+      "spotCount": 1,
+      "lat": 48.621791400000006,
+      "lng": 13.4770239,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1373461929), ODbL"
+    },
+    {
+      "id": "salzweg-6d7e423ba7",
+      "city": "salzweg",
+      "label": "Behindertenparkplatz Salzweg",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Salzweg",
+      "spotCount": 1,
+      "lat": 48.621803400000005,
+      "lng": 13.4769808,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1373461930), ODbL"
+    }
+  ]
+}

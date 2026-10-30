@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "baienfurt",
+    "name": "Baienfurt",
+    "center": {
+      "lat": 47.8247343,
+      "lng": 9.6442379
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "baienfurt-50a3639b5c",
+      "city": "baienfurt",
+      "label": "Parkplatz am Friedhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Baienfurt",
+      "spotCount": 2,
+      "lat": 47.8247343,
+      "lng": 9.6442379,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/292951247), ODbL"
+    }
+  ]
+}

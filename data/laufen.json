@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "laufen",
+    "name": "Laufen",
+    "center": {
+      "lat": 47.9381214,
+      "lng": 12.9358859
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "laufen-42ec97ea8b",
+      "city": "laufen",
+      "label": "Freilassinger Straße",
+      "street": "Freilassinger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Laufen",
+      "spotCount": 2,
+      "lat": 47.9381214,
+      "lng": 12.9358859,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12150005228), ODbL"
+    },
+    {
+      "id": "laufen-06b9b601ac",
+      "city": "laufen",
+      "label": "Parkplatz Friedhof",
+      "street": "Parkplatz Friedhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Laufen",
+      "spotCount": 2,
+      "lat": 47.9268615,
+      "lng": 12.926858900000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1452887155), ODbL"
+    }
+  ]
+}

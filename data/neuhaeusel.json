@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "neuhaeusel",
+    "name": "Neuhäusel",
+    "center": {
+      "lat": 50.38163815,
+      "lng": 7.70819055
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuhaeusel-9fa0cf0cf1",
+      "city": "neuhaeusel",
+      "label": "Am Rabenberg 2",
+      "street": "Am Rabenberg",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuhäusel",
+      "spotCount": 1,
+      "lat": 50.38016985,
+      "lng": 7.705425900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1329130351), ODbL"
+    },
+    {
+      "id": "neuhaeusel-7786f76911",
+      "city": "neuhaeusel",
+      "label": "Am Rabenberg 29",
+      "street": "Am Rabenberg",
+      "houseNumber": "29",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuhäusel",
+      "spotCount": 1,
+      "lat": 50.38002265,
+      "lng": 7.70819055,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1476739775), ODbL"
+    },
+    {
+      "id": "neuhaeusel-e2155f40b0",
+      "city": "neuhaeusel",
+      "label": "Am Rabenberg 48",
+      "street": "Am Rabenberg",
+      "houseNumber": "48",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuhäusel",
+      "spotCount": 1,
+      "lat": 50.38087885,
+      "lng": 7.706558150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1329130350), ODbL"
+    },
+    {
+      "id": "neuhaeusel-c2c9e6aab8",
+      "city": "neuhaeusel",
+      "label": "Friedhofsparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuhäusel",
+      "spotCount": 1,
+      "lat": 50.389173,
+      "lng": 7.710153150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1330012050), ODbL"
+    },
+    {
+      "id": "neuhaeusel-e454ce0798",
+      "city": "neuhaeusel",
+      "label": "Gartenstraße",
+      "street": "Gartenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuhäusel",
+      "spotCount": 1,
+      "lat": 50.3846676,
+      "lng": 7.7087463000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1114430874), ODbL"
+    },
+    {
+      "id": "neuhaeusel-f8852392f1",
+      "city": "neuhaeusel",
+      "label": "Parkplatz Penny / Café Geisen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuhäusel",
+      "spotCount": 3,
+      "lat": 50.38163815,
+      "lng": 7.704792100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1329926801), ODbL"
+    },
+    {
+      "id": "neuhaeusel-60d278d14a",
+      "city": "neuhaeusel",
+      "label": "Sauvigny-les-Bois-Platz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuhäusel",
+      "spotCount": 3,
+      "lat": 50.38487965,
+      "lng": 7.70986695,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/46440348), ODbL"
+    }
+  ]
+}

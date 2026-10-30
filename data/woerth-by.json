@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "woerth-by",
+    "name": "Wörth",
+    "center": {
+      "lat": 48.243648750000006,
+      "lng": 11.93694875
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "woerth-by-2d8af54c7f",
+      "city": "woerth-by",
+      "label": "Bahnhofstraße 23",
+      "street": "Bahnhofstraße",
+      "houseNumber": "23",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wörth",
+      "spotCount": 1,
+      "lat": 48.243648750000006,
+      "lng": 11.9433527,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26261647), ODbL"
+    },
+    {
+      "id": "woerth-by-df6dc12049",
+      "city": "woerth-by",
+      "label": "Hörlkofener Straße",
+      "street": "Hörlkofener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wörth",
+      "spotCount": 1,
+      "lat": 48.244055350000004,
+      "lng": 11.884714850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/23905221), ODbL"
+    },
+    {
+      "id": "woerth-by-43594b2a27",
+      "city": "woerth-by",
+      "label": "Kapellenweg",
+      "street": "Kapellenweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wörth",
+      "spotCount": 1,
+      "lat": 48.2431541,
+      "lng": 11.93694875,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1431812968), ODbL"
+    }
+  ]
+}

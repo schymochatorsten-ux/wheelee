@@ -63,6 +63,27 @@ Zwei Punkte, die sich leicht übersehen lassen:
 docker compose exec wheelee ls -l /app/var
 ```
 
+## Zeitgesteuerte Läufe (ToDo 19.2, 19.3)
+
+Zwei Timer liegen bereit, **sind aber nur Dateien, bis du sie auf dem NAS
+einschaltest** – sie wurden nicht auf dem NAS ausprobiert. Beim Einrichten
+`User=`/`Group=` in den `.service`-Dateien anpassen (wie beim Webhook).
+
+- `wheelee-sicherung` – täglich 03:30, `VACUUM INTO` im Container, die letzten
+  14 Sicherungen bleiben (`WHEELEE_SICHERUNGEN` ändert die Zahl).
+- `wheelee-aktualitaet` – am Monatsersten, `sources:check` und `validate` in
+  einem Wegwerf-Container; Ergebnis in `data/_aktualitaet.md` und
+  `data/_validierung.md`. Ändert keine Seed-Dateien.
+
+```bash
+sudo chmod +x /opt/wheelee/deploy/*.sh
+sudo cp /opt/wheelee/deploy/wheelee-{sicherung,aktualitaet}.{service,timer} /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable --now wheelee-sicherung.timer wheelee-aktualitaet.timer
+systemctl list-timers 'wheelee-*'
+sudo systemctl start wheelee-sicherung.service   # einmal von Hand zur Probe
+```
+
 ## Einrichten
 
 ```bash

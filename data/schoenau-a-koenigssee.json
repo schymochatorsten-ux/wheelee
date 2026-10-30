@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "schoenau-a-koenigssee",
+    "name": "Schönau a.Königssee",
+    "center": {
+      "lat": 47.6053578,
+      "lng": 12.9855044
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schoenau-a-koenigssee-aab4864352",
+      "city": "schoenau-a-koenigssee",
+      "label": "Kurzzeitparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Schönau a.Königssee",
+      "spotCount": 3,
+      "lat": 47.6022833,
+      "lng": 12.978624150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/852196094), ODbL"
+    },
+    {
+      "id": "schoenau-a-koenigssee-07def2d37c",
+      "city": "schoenau-a-koenigssee",
+      "label": "Parkplatz Bergfriedhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schönau a.Königssee",
+      "spotCount": 1,
+      "lat": 47.62225945,
+      "lng": 12.99737395,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/291030555), ODbL"
+    },
+    {
+      "id": "schoenau-a-koenigssee-32de0a0160",
+      "city": "schoenau-a-koenigssee",
+      "label": "Rathausplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schönau a.Königssee",
+      "spotCount": 3,
+      "lat": 47.6055915,
+      "lng": 12.9855044,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/166805616), ODbL"
+    },
+    {
+      "id": "schoenau-a-koenigssee-467eb38f8f",
+      "city": "schoenau-a-koenigssee",
+      "label": "Schornstraße",
+      "street": "Schornstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schönau a.Königssee",
+      "spotCount": 2,
+      "lat": 47.6005831,
+      "lng": 12.9849548,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/467447809), ODbL"
+    },
+    {
+      "id": "schoenau-a-koenigssee-d6aa7ce2ed",
+      "city": "schoenau-a-koenigssee",
+      "label": "Untersteiner Straße 33",
+      "street": "Untersteiner Straße",
+      "houseNumber": "33",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schönau a.Königssee",
+      "spotCount": 1,
+      "lat": 47.6053578,
+      "lng": 12.9861953,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/860568704), ODbL"
+    }
+  ]
+}

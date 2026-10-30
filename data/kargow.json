@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kargow",
+    "name": "Kargow",
+    "center": {
+      "lat": 53.483203100000004,
+      "lng": 12.762863300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kargow-231e5ff07d",
+      "city": "kargow",
+      "label": "Am Park",
+      "street": "Am Park",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kargow",
+      "spotCount": 2,
+      "lat": 53.483203100000004,
+      "lng": 12.762863300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/817267690), ODbL"
+    }
+  ]
+}

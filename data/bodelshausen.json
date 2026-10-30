@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bodelshausen",
+    "name": "Bodelshausen",
+    "center": {
+      "lat": 48.38355605,
+      "lng": 8.990813800000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bodelshausen-9c1d08d6f7",
+      "city": "bodelshausen",
+      "label": "Bodelshausen Bahnhof",
+      "street": "Bodelshausen Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Bodelshausen",
+      "spotCount": 1,
+      "lat": 48.38355605,
+      "lng": 8.990813800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1125828722), ODbL"
+    }
+  ]
+}

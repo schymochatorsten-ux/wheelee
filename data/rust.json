@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "rust",
+    "name": "Rust",
+    "center": {
+      "lat": 48.26951195,
+      "lng": 7.7222382000000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rust-7b49bdfde5",
+      "city": "rust",
+      "label": "Europa-Park Reserviertes Parken",
+      "street": "Europa-Park-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rust",
+      "spotCount": 2,
+      "lat": 48.26955035,
+      "lng": 7.721336000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/33829073), ODbL"
+    },
+    {
+      "id": "rust-4c4f1e1a2a",
+      "city": "rust",
+      "label": "Europa-Park-Straße",
+      "street": "Europa-Park-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rust",
+      "spotCount": 1,
+      "lat": 48.2602843,
+      "lng": 7.7222382000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1498907771), ODbL"
+    },
+    {
+      "id": "rust-d5df75fd0f",
+      "city": "rust",
+      "label": "Franz-Sales-Straße",
+      "street": "Franz-Sales-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rust",
+      "spotCount": 3,
+      "lat": 48.25917545,
+      "lng": 7.729418300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1214015346), ODbL"
+    },
+    {
+      "id": "rust-8ab33fd207",
+      "city": "rust",
+      "label": "Rheingießenhalle",
+      "street": "Rheingießenhalle",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rust",
+      "spotCount": 2,
+      "lat": 48.26497635,
+      "lng": 7.73353715,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1514813296), ODbL"
+    },
+    {
+      "id": "rust-eaca94fc42",
+      "city": "rust",
+      "label": "Rheinweg",
+      "street": "Rheinweg",
+      "houseNumber": null,
+      "note": "gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Rust",
+      "spotCount": 1,
+      "lat": 48.26951195,
+      "lng": 7.72080815,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/976705241), ODbL"
+    },
+    {
+      "id": "rust-b18dcdd164",
+      "city": "rust",
+      "label": "Rheinweg",
+      "street": "Rheinweg",
+      "houseNumber": null,
+      "note": "gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Rust",
+      "spotCount": 1,
+      "lat": 48.269552450000006,
+      "lng": 7.7208365500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/976705242), ODbL"
+    }
+  ]
+}

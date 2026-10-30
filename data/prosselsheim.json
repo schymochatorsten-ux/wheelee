@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "prosselsheim",
+    "name": "Prosselsheim",
+    "center": {
+      "lat": 49.85427335,
+      "lng": 10.10290315
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "prosselsheim-734b25632d",
+      "city": "prosselsheim",
+      "label": "Bahnhof",
+      "street": "Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Prosselsheim",
+      "spotCount": 48,
+      "lat": 49.85427335,
+      "lng": 10.10290315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/457219605), ODbL"
+    },
+    {
+      "id": "prosselsheim-5325c9304e",
+      "city": "prosselsheim",
+      "label": "Bahnhof",
+      "street": "Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Prosselsheim",
+      "spotCount": 2,
+      "lat": 49.85410025,
+      "lng": 10.10283865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/567060992), ODbL"
+    }
+  ]
+}

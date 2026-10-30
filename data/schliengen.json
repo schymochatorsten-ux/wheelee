@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schliengen",
+    "name": "Schliengen",
+    "center": {
+      "lat": 47.75685850000001,
+      "lng": 7.575675500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schliengen-f9ce716713",
+      "city": "schliengen",
+      "label": "Nidauer Platz",
+      "street": "Nidauer Platz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schliengen",
+      "spotCount": 1,
+      "lat": 47.75685850000001,
+      "lng": 7.575675500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/40282682), ODbL"
+    }
+  ]
+}

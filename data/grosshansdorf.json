@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "grosshansdorf",
+    "name": "Großhansdorf",
+    "center": {
+      "lat": 53.652840250000004,
+      "lng": 10.28238155
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grosshansdorf-8b783cc9e7",
+      "city": "grosshansdorf",
+      "label": "Ahrensfelder Weg 5",
+      "street": "Ahrensfelder Weg",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großhansdorf",
+      "spotCount": 2,
+      "lat": 53.6530891,
+      "lng": 10.261747000000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/419020608), ODbL"
+    },
+    {
+      "id": "grosshansdorf-d1ca4bbde8",
+      "city": "grosshansdorf",
+      "label": "Barkholt 61",
+      "street": "Barkholt",
+      "houseNumber": "61",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großhansdorf",
+      "spotCount": 1,
+      "lat": 53.652838,
+      "lng": 10.281058950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/44145777), ODbL"
+    },
+    {
+      "id": "grosshansdorf-625309d753",
+      "city": "grosshansdorf",
+      "label": "Jacobsrade",
+      "street": "Jacobsrade",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großhansdorf",
+      "spotCount": 1,
+      "lat": 53.643406500000005,
+      "lng": 10.28282805,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/125406123), ODbL"
+    },
+    {
+      "id": "grosshansdorf-18687da45c",
+      "city": "grosshansdorf",
+      "label": "Marktplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großhansdorf",
+      "spotCount": 1,
+      "lat": 53.6626699,
+      "lng": 10.28613795,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/36946644), ODbL"
+    },
+    {
+      "id": "grosshansdorf-81beba4161",
+      "city": "grosshansdorf",
+      "label": "Wöhrendamm",
+      "street": "Wöhrendamm",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großhansdorf",
+      "spotCount": 2,
+      "lat": 53.652840250000004,
+      "lng": 10.28238155,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/44145339), ODbL"
+    }
+  ]
+}

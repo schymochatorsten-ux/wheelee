@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bakum",
+    "name": "Bakum",
+    "center": {
+      "lat": 52.743257650000004,
+      "lng": 8.193839050000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bakum-06884c6ecf",
+      "city": "bakum",
+      "label": "Bakumer Wiesen West",
+      "street": "Bakumer Wiesen West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bakum",
+      "spotCount": 2,
+      "lat": 52.7142459,
+      "lng": 8.171581,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/256055893), ODbL"
+    },
+    {
+      "id": "bakum-250a89dd55",
+      "city": "bakum",
+      "label": "Schulstraße",
+      "street": "Schulstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bakum",
+      "spotCount": 1,
+      "lat": 52.74390665,
+      "lng": 8.194615800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1352097542), ODbL"
+    },
+    {
+      "id": "bakum-10cf0fd097",
+      "city": "bakum",
+      "label": "Schulstraße",
+      "street": "Schulstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bakum",
+      "spotCount": 1,
+      "lat": 52.743257650000004,
+      "lng": 8.193839050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1499254878), ODbL"
+    }
+  ]
+}

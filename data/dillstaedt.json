@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "dillstaedt",
+    "name": "Dillstädt",
+    "center": {
+      "lat": 50.599977800000005,
+      "lng": 10.53278605
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dillstaedt-604927d2ec",
+      "city": "dillstaedt",
+      "label": "Dolmar",
+      "street": "Dolmar",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dillstädt",
+      "spotCount": 1,
+      "lat": 50.599977800000005,
+      "lng": 10.532532100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/459079738), ODbL"
+    },
+    {
+      "id": "dillstaedt-a6fcadab3a",
+      "city": "dillstaedt",
+      "label": "Dolmar",
+      "street": "Dolmar",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dillstädt",
+      "spotCount": 1,
+      "lat": 50.60013165,
+      "lng": 10.53278605,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/754325658), ODbL"
+    },
+    {
+      "id": "dillstaedt-15ca64bd0b",
+      "city": "dillstaedt",
+      "label": "Dolmar",
+      "street": "Dolmar",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dillstädt",
+      "spotCount": 1,
+      "lat": 50.599911150000004,
+      "lng": 10.534267,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/755232172), ODbL"
+    }
+  ]
+}

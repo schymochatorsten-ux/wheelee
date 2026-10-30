@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "wolfschlugen",
+    "name": "Wolfschlugen",
+    "center": {
+      "lat": 48.64938885,
+      "lng": 9.30058415
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wolfschlugen-491ba7837e",
+      "city": "wolfschlugen",
+      "label": "Nürtinger Straße",
+      "street": "Nürtinger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wolfschlugen",
+      "spotCount": 1,
+      "lat": 48.6485713,
+      "lng": 9.30058415,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1070020969), ODbL"
+    },
+    {
+      "id": "wolfschlugen-da033da01e",
+      "city": "wolfschlugen",
+      "label": "Nürtinger Straße",
+      "street": "Nürtinger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wolfschlugen",
+      "spotCount": 3,
+      "lat": 48.64938885,
+      "lng": 9.2995938,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1243453938), ODbL"
+    }
+  ]
+}

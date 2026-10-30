@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "heiningen",
+    "name": "Heiningen",
+    "center": {
+      "lat": 48.65785935,
+      "lng": 9.652210100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "heiningen-a6c44b3b56",
+      "city": "heiningen",
+      "label": "Eschenbacher Straße 3",
+      "street": "Eschenbacher Straße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heiningen",
+      "spotCount": 5,
+      "lat": 48.65785935,
+      "lng": 9.652210100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1346238343), ODbL"
+    }
+  ]
+}

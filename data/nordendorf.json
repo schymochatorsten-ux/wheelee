@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "nordendorf",
+    "name": "Nordendorf",
+    "center": {
+      "lat": 48.590996450000006,
+      "lng": 10.833498800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nordendorf-34974d7577",
+      "city": "nordendorf",
+      "label": "P+R Ost",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nordendorf",
+      "spotCount": 1,
+      "lat": 48.59337465,
+      "lng": 10.83789905,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/52249256), ODbL"
+    },
+    {
+      "id": "nordendorf-b7362c90e4",
+      "city": "nordendorf",
+      "label": "Schäfflerstraße 27",
+      "street": "Schäfflerstraße",
+      "houseNumber": "27",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nordendorf",
+      "spotCount": 1,
+      "lat": 48.590996450000006,
+      "lng": 10.83348705,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1225285105), ODbL"
+    },
+    {
+      "id": "nordendorf-70845846f3",
+      "city": "nordendorf",
+      "label": "Schäfflerstraße 27",
+      "street": "Schäfflerstraße",
+      "houseNumber": "27",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nordendorf",
+      "spotCount": 1,
+      "lat": 48.590968350000004,
+      "lng": 10.833498800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1225285106), ODbL"
+    }
+  ]
+}

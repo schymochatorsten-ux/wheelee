@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hohenlinden",
+    "name": "Hohenlinden",
+    "center": {
+      "lat": 48.158302000000006,
+      "lng": 11.990846900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hohenlinden-c8e3d200d0",
+      "city": "hohenlinden",
+      "label": "Hupfauer Anger 6",
+      "street": "Hupfauer Anger",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hohenlinden",
+      "spotCount": 6,
+      "lat": 48.158302000000006,
+      "lng": 11.990846900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/854497643), ODbL"
+    }
+  ]
+}

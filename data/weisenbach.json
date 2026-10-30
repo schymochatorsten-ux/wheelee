@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "weisenbach",
+    "name": "Weisenbach",
+    "center": {
+      "lat": 48.72675890000001,
+      "lng": 8.3550666
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "weisenbach-0b97368810",
+      "city": "weisenbach",
+      "label": "Am Zimmerplatz 2",
+      "street": "Am Zimmerplatz",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weisenbach",
+      "spotCount": 1,
+      "lat": 48.72522545,
+      "lng": 8.354670500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/675874589), ODbL"
+    },
+    {
+      "id": "weisenbach-079ccae68e",
+      "city": "weisenbach",
+      "label": "Eisenbahnstraße",
+      "street": "Eisenbahnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Weisenbach",
+      "spotCount": 2,
+      "lat": 48.72675890000001,
+      "lng": 8.3550666,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1411821195), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "veitsbronn",
+    "name": "Veitsbronn",
+    "center": {
+      "lat": 49.5061446,
+      "lng": 10.8755952
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "veitsbronn-a42359d652",
+      "city": "veitsbronn",
+      "label": "P&R-Parkplatz Siegelsdorf",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Veitsbronn",
+      "spotCount": 1,
+      "lat": 49.5061446,
+      "lng": 10.8755952,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/335103582), ODbL"
+    }
+  ]
+}

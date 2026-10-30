@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "liederbach",
+    "name": "Liederbach am Taunus",
+    "center": {
+      "lat": 50.120563700000005,
+      "lng": 8.4914099
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "liederbach-61b4fb70e4",
+      "city": "liederbach",
+      "label": "An der Linde 1",
+      "street": "An der Linde",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Liederbach am Taunus",
+      "spotCount": 1,
+      "lat": 50.120563700000005,
+      "lng": 8.4914099,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/240859534), ODbL"
+    },
+    {
+      "id": "liederbach-2b43363a94",
+      "city": "liederbach",
+      "label": "Auf den Gänsewiesen 8",
+      "street": "Auf den Gänsewiesen",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Liederbach am Taunus",
+      "spotCount": 1,
+      "lat": 50.11955125,
+      "lng": 8.500712750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1551434469), ODbL"
+    },
+    {
+      "id": "liederbach-34ef494583",
+      "city": "liederbach",
+      "label": "Villebon-Platz",
+      "street": "Villebon-Platz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Liederbach am Taunus",
+      "spotCount": 1,
+      "lat": 50.12107065,
+      "lng": 8.49106515,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/205627273), ODbL"
+    },
+    {
+      "id": "liederbach-af3bf0348c",
+      "city": "liederbach",
+      "label": "Wachenheimer Straße",
+      "street": "Wachenheimer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Liederbach am Taunus",
+      "spotCount": 2,
+      "lat": 50.12488985,
+      "lng": 8.4886487,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/238133226), ODbL"
+    },
+    {
+      "id": "liederbach-70c032c5cf",
+      "city": "liederbach",
+      "label": "Zeilsheimer Weg",
+      "street": "Zeilsheimer Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Liederbach am Taunus",
+      "spotCount": 2,
+      "lat": 50.11639495,
+      "lng": 8.49552515,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/239002956), ODbL"
+    }
+  ]
+}

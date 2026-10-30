@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "rothemuehl",
+    "name": "Rothemühl",
+    "center": {
+      "lat": 53.59549535,
+      "lng": 13.819881100000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rothemuehl-1bd9530f0b",
+      "city": "rothemuehl",
+      "label": "Dorfstraße",
+      "street": "Dorfstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rothemühl",
+      "spotCount": 1,
+      "lat": 53.59549535,
+      "lng": 13.819881100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/479745469), ODbL"
+    }
+  ]
+}

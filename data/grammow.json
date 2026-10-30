@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "grammow",
+    "name": "Grammow",
+    "center": {
+      "lat": 54.05434305,
+      "lng": 12.62833015
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grammow-b73c1ec29d",
+      "city": "grammow",
+      "label": "Raststätte Lindholz",
+      "street": "Raststätte Lindholz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grammow",
+      "spotCount": 1,
+      "lat": 54.05434305,
+      "lng": 12.62833015,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1172810017), ODbL"
+    }
+  ]
+}

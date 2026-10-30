@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "neusorg",
+    "name": "Neusorg",
+    "center": {
+      "lat": 49.935023550000004,
+      "lng": 11.96956835
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neusorg-d8bba41424",
+      "city": "neusorg",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neusorg",
+      "spotCount": 1,
+      "lat": 49.93405355,
+      "lng": 11.971456750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/455087194), ODbL"
+    },
+    {
+      "id": "neusorg-7de9e40d9f",
+      "city": "neusorg",
+      "label": "Friedenstraße",
+      "street": "Friedenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neusorg",
+      "spotCount": 3,
+      "lat": 49.935023550000004,
+      "lng": 11.964061300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/429756317), ODbL"
+    },
+    {
+      "id": "neusorg-5f551a5843",
+      "city": "neusorg",
+      "label": "Jahnstraße",
+      "street": "Jahnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neusorg",
+      "spotCount": 2,
+      "lat": 49.935558650000004,
+      "lng": 11.96956835,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/430375815), ODbL"
+    }
+  ]
+}

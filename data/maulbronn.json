@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "maulbronn",
+    "name": "Maulbronn",
+    "center": {
+      "lat": 49.0000828,
+      "lng": 8.809785250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "maulbronn-f6e6b679e4",
+      "city": "maulbronn",
+      "label": "Friedhofweg",
+      "street": "Friedhofweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Maulbronn",
+      "spotCount": 2,
+      "lat": 49.00027,
+      "lng": 8.809785250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/199304633), ODbL"
+    },
+    {
+      "id": "maulbronn-ee1dadc8ea",
+      "city": "maulbronn",
+      "label": "Hechtsee",
+      "street": "Hechtsee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Maulbronn",
+      "spotCount": 2,
+      "lat": 48.99620725,
+      "lng": 8.7965436,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/917535031), ODbL"
+    },
+    {
+      "id": "maulbronn-d7e5fc42d0",
+      "city": "maulbronn",
+      "label": "Kloster Maulbronn",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Maulbronn",
+      "spotCount": 2,
+      "lat": 49.0005972,
+      "lng": 8.8109704,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/199304634), ODbL"
+    },
+    {
+      "id": "maulbronn-7e2944f976",
+      "city": "maulbronn",
+      "label": "Klosterstraße",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Maulbronn",
+      "spotCount": 1,
+      "lat": 49.0000828,
+      "lng": 8.8102074,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/199304627), ODbL"
+    },
+    {
+      "id": "maulbronn-e66dbe8e02",
+      "city": "maulbronn",
+      "label": "Maulbronn West",
+      "street": "Maulbronn West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Maulbronn",
+      "spotCount": 1,
+      "lat": 48.9836251,
+      "lng": 8.7818948,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/502772516), ODbL"
+    }
+  ]
+}

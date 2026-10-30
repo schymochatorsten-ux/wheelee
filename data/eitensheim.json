@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "eitensheim",
+    "name": "Eitensheim",
+    "center": {
+      "lat": 48.81590385,
+      "lng": 11.31877485
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eitensheim-960fbee52a",
+      "city": "eitensheim",
+      "label": "Sägewerkstraße",
+      "street": "Sägewerkstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eitensheim",
+      "spotCount": 1,
+      "lat": 48.81590385,
+      "lng": 11.31877485,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/263135084), ODbL"
+    }
+  ]
+}

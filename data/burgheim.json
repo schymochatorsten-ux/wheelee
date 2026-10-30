@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "burgheim",
+    "name": "Burgheim",
+    "center": {
+      "lat": 48.70812895,
+      "lng": 11.0109071
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "burgheim-d2e9fbed1d",
+      "city": "burgheim",
+      "label": "Bertoldsheimer Straße",
+      "street": "Bertoldsheimer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Burgheim",
+      "spotCount": 1,
+      "lat": 48.70815445,
+      "lng": 11.01087895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1496156915), ODbL"
+    },
+    {
+      "id": "burgheim-6920b3a09d",
+      "city": "burgheim",
+      "label": "Bertoldsheimer Straße",
+      "street": "Bertoldsheimer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Burgheim",
+      "spotCount": 1,
+      "lat": 48.70812895,
+      "lng": 11.0109071,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1496156916), ODbL"
+    },
+    {
+      "id": "burgheim-fad219a1b0",
+      "city": "burgheim",
+      "label": "Bertoldsheimer Straße",
+      "street": "Bertoldsheimer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Burgheim",
+      "spotCount": 1,
+      "lat": 48.70810325,
+      "lng": 11.010935250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1496156917), ODbL"
+    }
+  ]
+}

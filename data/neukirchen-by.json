@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "neukirchen-by",
+    "name": "Neukirchen",
+    "center": {
+      "lat": 48.97545,
+      "lng": 12.773569300000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neukirchen-by-71b4d1403c",
+      "city": "neukirchen-by",
+      "label": "Behindertenparkplatz Neukirchen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neukirchen",
+      "spotCount": 1,
+      "lat": 48.97545,
+      "lng": 12.773569300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1296733397), ODbL"
+    }
+  ]
+}

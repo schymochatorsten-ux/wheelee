@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "frickenhausen",
+    "name": "Frickenhausen",
+    "center": {
+      "lat": 48.59328615,
+      "lng": 9.359607400000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "frickenhausen-04363ae056",
+      "city": "frickenhausen",
+      "label": "Hauptstraße 17/1",
+      "street": "Hauptstraße",
+      "houseNumber": "17/1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Frickenhausen",
+      "spotCount": 1,
+      "lat": 48.59394505,
+      "lng": 9.359607400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1136516542), ODbL"
+    },
+    {
+      "id": "frickenhausen-7438a5cc5d",
+      "city": "frickenhausen",
+      "label": "Hölzlachstraße",
+      "street": "Hölzlachstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Frickenhausen",
+      "spotCount": 1,
+      "lat": 48.58798635000001,
+      "lng": 9.35769675,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/285184512), ODbL"
+    },
+    {
+      "id": "frickenhausen-1e6fbd6500",
+      "city": "frickenhausen",
+      "label": "In den Gernäckern 16",
+      "street": "In den Gernäckern",
+      "houseNumber": "16",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Frickenhausen",
+      "spotCount": 1,
+      "lat": 48.5849884,
+      "lng": 9.366658600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12760517120), ODbL"
+    },
+    {
+      "id": "frickenhausen-402890d677",
+      "city": "frickenhausen",
+      "label": "Untere Straße 11/1",
+      "street": "Untere Straße",
+      "houseNumber": "11/1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Frickenhausen",
+      "spotCount": 1,
+      "lat": 48.59328615,
+      "lng": 9.358914250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1571734045), ODbL"
+    }
+  ]
+}

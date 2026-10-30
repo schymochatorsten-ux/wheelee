@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "goehren",
+    "name": "Göhren",
+    "center": {
+      "lat": 54.3345095,
+      "lng": 13.735553500000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "goehren-3ac6a476ca",
+      "city": "goehren",
+      "label": "Thiessower Straße",
+      "street": "Thiessower Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Göhren",
+      "spotCount": 3,
+      "lat": 54.3345095,
+      "lng": 13.735553500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/190634248), ODbL"
+    }
+  ]
+}

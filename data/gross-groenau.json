@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "gross-groenau",
+    "name": "Groß Grönau",
+    "center": {
+      "lat": 53.81327765,
+      "lng": 10.7391894
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gross-groenau-41e34b4a84",
+      "city": "gross-groenau",
+      "label": "Grönauer Heide",
+      "street": "Grönauer Heide",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Groß Grönau",
+      "spotCount": 1,
+      "lat": 53.81327765,
+      "lng": 10.73873095,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/802130077), ODbL"
+    },
+    {
+      "id": "gross-groenau-0fde2708dd",
+      "city": "gross-groenau",
+      "label": "Heuterdamm",
+      "street": "Heuterdamm",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Groß Grönau",
+      "spotCount": 1,
+      "lat": 53.8130304,
+      "lng": 10.7393932,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5319965578), ODbL"
+    },
+    {
+      "id": "gross-groenau-694e304da4",
+      "city": "gross-groenau",
+      "label": "Heuterdamm",
+      "street": "Heuterdamm",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Groß Grönau",
+      "spotCount": 1,
+      "lat": 53.8128498,
+      "lng": 10.7391894,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5319965579), ODbL"
+    },
+    {
+      "id": "gross-groenau-9f144edbaf",
+      "city": "gross-groenau",
+      "label": "Mecklenburger Straße",
+      "street": "Mecklenburger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Groß Grönau",
+      "spotCount": 4,
+      "lat": 53.821996,
+      "lng": 10.72802545,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1135720216), ODbL"
+    }
+  ]
+}

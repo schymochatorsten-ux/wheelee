@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "poppenricht",
+    "name": "Poppenricht",
+    "center": {
+      "lat": 49.4758523,
+      "lng": 11.803767350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "poppenricht-6edce78042",
+      "city": "poppenricht",
+      "label": "Rathausplatz 1",
+      "street": "Rathausplatz",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Poppenricht",
+      "spotCount": 1,
+      "lat": 49.4758523,
+      "lng": 11.803767350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1317550812), ODbL"
+    }
+  ]
+}

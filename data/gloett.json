@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "gloett",
+    "name": "Glött",
+    "center": {
+      "lat": 48.500972850000004,
+      "lng": 10.483646400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gloett-59ec824d47",
+      "city": "gloett",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Glött",
+      "spotCount": 14,
+      "lat": 48.500972850000004,
+      "lng": 10.483646400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1550556934), ODbL"
+    }
+  ]
+}

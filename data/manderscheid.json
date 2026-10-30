@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "manderscheid",
+    "name": "Manderscheid",
+    "center": {
+      "lat": 50.09171785,
+      "lng": 6.814076850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "manderscheid-70e900d8d9",
+      "city": "manderscheid",
+      "label": "Burgenblick",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Manderscheid",
+      "spotCount": 1,
+      "lat": 50.09171785,
+      "lng": 6.814076850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/224532629), ODbL"
+    }
+  ]
+}

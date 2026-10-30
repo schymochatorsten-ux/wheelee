@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "lembruch",
+    "name": "Lembruch",
+    "center": {
+      "lat": 52.516816950000006,
+      "lng": 8.3665633
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lembruch-81a11a9d05",
+      "city": "lembruch",
+      "label": "An der Winsch",
+      "street": "An der Winsch",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lembruch",
+      "spotCount": 1,
+      "lat": 52.51682665,
+      "lng": 8.36655685,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1116994175), ODbL"
+    },
+    {
+      "id": "lembruch-9b1398375a",
+      "city": "lembruch",
+      "label": "An der Winsch",
+      "street": "An der Winsch",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lembruch",
+      "spotCount": 1,
+      "lat": 52.516816950000006,
+      "lng": 8.366509700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1116994176), ODbL"
+    },
+    {
+      "id": "lembruch-3d12e11f9a",
+      "city": "lembruch",
+      "label": "An der Winsch",
+      "street": "An der Winsch",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lembruch",
+      "spotCount": 1,
+      "lat": 52.516729950000006,
+      "lng": 8.36661045,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1116994177), ODbL"
+    },
+    {
+      "id": "lembruch-81a55a6fa6",
+      "city": "lembruch",
+      "label": "An der Winsch",
+      "street": "An der Winsch",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lembruch",
+      "spotCount": 1,
+      "lat": 52.5167203,
+      "lng": 8.3665633,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1116994178), ODbL"
+    }
+  ]
+}

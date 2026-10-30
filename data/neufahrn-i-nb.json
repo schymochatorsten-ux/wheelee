@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "neufahrn-i-nb",
+    "name": "Neufahrn i.NB",
+    "center": {
+      "lat": 48.73167065,
+      "lng": 12.1900486
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neufahrn-i-nb-1623202264",
+      "city": "neufahrn-i-nb",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neufahrn i.NB",
+      "spotCount": 8,
+      "lat": 48.73167065,
+      "lng": 12.190036150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/120719385), ODbL"
+    },
+    {
+      "id": "neufahrn-i-nb-8d6e42555e",
+      "city": "neufahrn-i-nb",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neufahrn i.NB",
+      "spotCount": 6,
+      "lat": 48.73081595,
+      "lng": 12.1900486,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/455667878), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "aufsess",
+    "name": "Aufseß",
+    "center": {
+      "lat": 49.881653850000006,
+      "lng": 11.2283091
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "aufsess-17d69d406e",
+      "city": "aufsess",
+      "label": "Unterer Schloßberg",
+      "street": "Unterer Schloßberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aufseß",
+      "spotCount": 2,
+      "lat": 49.881653850000006,
+      "lng": 11.2283091,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/978816630), ODbL"
+    }
+  ]
+}

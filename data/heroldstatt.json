@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "heroldstatt",
+    "name": "Heroldstatt",
+    "center": {
+      "lat": 48.441948100000005,
+      "lng": 9.659599400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "heroldstatt-28d1b86e49",
+      "city": "heroldstatt",
+      "label": "Am Berg",
+      "street": "Am Berg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Heroldstatt",
+      "spotCount": 1,
+      "lat": 48.441948100000005,
+      "lng": 9.659599400000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11993571021), ODbL"
+    }
+  ]
+}

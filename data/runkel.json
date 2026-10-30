@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "runkel",
+    "name": "Runkel",
+    "center": {
+      "lat": 50.406163150000005,
+      "lng": 8.165593000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "runkel-61dd057d5d",
+      "city": "runkel",
+      "label": "Am Sportplatz",
+      "street": "Am Sportplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Runkel",
+      "spotCount": 1,
+      "lat": 50.406163150000005,
+      "lng": 8.165593000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1430822560), ODbL"
+    },
+    {
+      "id": "runkel-1f785568f3",
+      "city": "runkel",
+      "label": "Steedener Straße",
+      "street": "Steedener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Runkel",
+      "spotCount": 2,
+      "lat": 50.40523830000001,
+      "lng": 8.149678100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/663510632), ODbL"
+    }
+  ]
+}

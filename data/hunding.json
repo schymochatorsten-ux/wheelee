@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hunding",
+    "name": "Hunding",
+    "center": {
+      "lat": 48.837811450000004,
+      "lng": 13.1518038
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hunding-6888de8154",
+      "city": "hunding",
+      "label": "Gewerbedorf 2",
+      "street": "Gewerbedorf",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hunding",
+      "spotCount": 1,
+      "lat": 48.837811450000004,
+      "lng": 13.151778700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1370074546), ODbL"
+    },
+    {
+      "id": "hunding-d8d1d5f2af",
+      "city": "hunding",
+      "label": "Gewerbedorf 2",
+      "street": "Gewerbedorf",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hunding",
+      "spotCount": 1,
+      "lat": 48.837799350000004,
+      "lng": 13.1518038,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1370074547), ODbL"
+    }
+  ]
+}

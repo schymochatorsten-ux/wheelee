@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "niesky",
+    "name": "Niesky",
+    "center": {
+      "lat": 51.28673235000001,
+      "lng": 14.8194956
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "niesky-9eb6ce0922",
+      "city": "niesky",
+      "label": "Görlitzer Straße",
+      "street": "Görlitzer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Niesky",
+      "spotCount": 1,
+      "lat": 51.28673235000001,
+      "lng": 14.8194956,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/71207483), ODbL"
+    }
+  ]
+}

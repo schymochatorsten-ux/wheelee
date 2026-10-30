@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "eggesin",
+    "name": "Eggesin",
+    "center": {
+      "lat": 53.680425400000004,
+      "lng": 14.079030150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eggesin-91e752160e",
+      "city": "eggesin",
+      "label": "Am Markt",
+      "street": "Am Markt",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eggesin",
+      "spotCount": 1,
+      "lat": 53.680425400000004,
+      "lng": 14.077002550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/74548474), ODbL"
+    },
+    {
+      "id": "eggesin-1de90a6687",
+      "city": "eggesin",
+      "label": "Am Markt 3",
+      "street": "Am Markt",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eggesin",
+      "spotCount": 1,
+      "lat": 53.681383700000005,
+      "lng": 14.0768318,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/74548469), ODbL"
+    },
+    {
+      "id": "eggesin-6da456d586",
+      "city": "eggesin",
+      "label": "Stettiner Landstraße",
+      "street": "Stettiner Landstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eggesin",
+      "spotCount": 1,
+      "lat": 53.676496400000005,
+      "lng": 14.09532115,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/78172757), ODbL"
+    },
+    {
+      "id": "eggesin-e069824b16",
+      "city": "eggesin",
+      "label": "Stettiner Straße 3",
+      "street": "Stettiner Straße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Eggesin",
+      "spotCount": 1,
+      "lat": 53.681760600000004,
+      "lng": 14.079030150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/78147539), ODbL"
+    },
+    {
+      "id": "eggesin-8605e6beee",
+      "city": "eggesin",
+      "label": "Waldstraße",
+      "street": "Waldstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eggesin",
+      "spotCount": 1,
+      "lat": 53.676860850000004,
+      "lng": 14.08601595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/78148524), ODbL"
+    }
+  ]
+}

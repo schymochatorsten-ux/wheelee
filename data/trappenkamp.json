@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "trappenkamp",
+    "name": "Trappenkamp",
+    "center": {
+      "lat": 54.043407,
+      "lng": 10.21446825
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "trappenkamp-9fd99ba83f",
+      "city": "trappenkamp",
+      "label": "Ricklinger Straße",
+      "street": "Ricklinger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Trappenkamp",
+      "spotCount": 1,
+      "lat": 54.043496000000005,
+      "lng": 10.21446825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/319729439), ODbL"
+    },
+    {
+      "id": "trappenkamp-8a035a9e12",
+      "city": "trappenkamp",
+      "label": "Ricklinger Straße",
+      "street": "Ricklinger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Trappenkamp",
+      "spotCount": 1,
+      "lat": 54.0434032,
+      "lng": 10.2145834,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1102325041), ODbL"
+    },
+    {
+      "id": "trappenkamp-7f881b7ad5",
+      "city": "trappenkamp",
+      "label": "Ricklinger Straße",
+      "street": "Ricklinger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Trappenkamp",
+      "spotCount": 1,
+      "lat": 54.0434183,
+      "lng": 10.214629200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1102325042), ODbL"
+    },
+    {
+      "id": "trappenkamp-e1f1f32bf4",
+      "city": "trappenkamp",
+      "label": "Ricklinger Straße",
+      "street": "Ricklinger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Trappenkamp",
+      "spotCount": 1,
+      "lat": 54.043433500000006,
+      "lng": 10.214675,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1102325043), ODbL"
+    },
+    {
+      "id": "trappenkamp-89615c3b10",
+      "city": "trappenkamp",
+      "label": "Ricklinger Straße",
+      "street": "Ricklinger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Trappenkamp",
+      "spotCount": 1,
+      "lat": 54.043352350000006,
+      "lng": 10.214363850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1102325123), ODbL"
+    },
+    {
+      "id": "trappenkamp-59a95de895",
+      "city": "trappenkamp",
+      "label": "Ricklinger Straße",
+      "street": "Ricklinger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Trappenkamp",
+      "spotCount": 1,
+      "lat": 54.0433797,
+      "lng": 10.21433785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1102325124), ODbL"
+    },
+    {
+      "id": "trappenkamp-8c659b3bd9",
+      "city": "trappenkamp",
+      "label": "Ricklinger Straße",
+      "street": "Ricklinger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Trappenkamp",
+      "spotCount": 1,
+      "lat": 54.043407,
+      "lng": 10.2143119,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1102325125), ODbL"
+    }
+  ]
+}

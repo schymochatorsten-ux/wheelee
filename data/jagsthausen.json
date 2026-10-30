@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "jagsthausen",
+    "name": "Jagsthausen",
+    "center": {
+      "lat": 49.30870135000001,
+      "lng": 9.47042965
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "jagsthausen-1a81d8ddae",
+      "city": "jagsthausen",
+      "label": "Grundschule Am Römerbad",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Jagsthausen",
+      "spotCount": 1,
+      "lat": 49.30870135000001,
+      "lng": 9.47042965,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/45736394), ODbL"
+    },
+    {
+      "id": "jagsthausen-63f8e28df7",
+      "city": "jagsthausen",
+      "label": "In den Steinäckern 1",
+      "street": "In den Steinäckern",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jagsthausen",
+      "spotCount": 1,
+      "lat": 49.3082433,
+      "lng": 9.4674262,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4721788109), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "glonn",
+    "name": "Glonn",
+    "center": {
+      "lat": 47.987832850000004,
+      "lng": 11.86601315
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "glonn-7e7b4178d0",
+      "city": "glonn",
+      "label": "Dorffestplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Glonn",
+      "spotCount": 2,
+      "lat": 47.9857229,
+      "lng": 11.864650950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25834935), ODbL"
+    },
+    {
+      "id": "glonn-7788b15427",
+      "city": "glonn",
+      "label": "Marktplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Glonn",
+      "spotCount": 1,
+      "lat": 47.987972850000006,
+      "lng": 11.86575745,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/298127238), ODbL"
+    },
+    {
+      "id": "glonn-7067cbb78d",
+      "city": "glonn",
+      "label": "Marktplatz 1",
+      "street": "Marktplatz",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Glonn",
+      "spotCount": 1,
+      "lat": 47.987832850000004,
+      "lng": 11.86601315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/553424197), ODbL"
+    },
+    {
+      "id": "glonn-eb6172ce9e",
+      "city": "glonn",
+      "label": "Wolfgang-Wagner-Straße 15",
+      "street": "Wolfgang-Wagner-Straße",
+      "houseNumber": "15",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Glonn",
+      "spotCount": 2,
+      "lat": 47.9875727,
+      "lng": 11.8681617,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5128040023), ODbL"
+    }
+  ]
+}

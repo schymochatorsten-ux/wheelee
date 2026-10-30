@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "drei-gleichen",
+    "name": "Drei Gleichen",
+    "center": {
+      "lat": 50.877709800000005,
+      "lng": 10.80957025
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "drei-gleichen-2bd2949884",
+      "city": "drei-gleichen",
+      "label": "Drei Gleichen",
+      "street": "Drei Gleichen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Drei Gleichen",
+      "spotCount": 1,
+      "lat": 50.87771115,
+      "lng": 10.809532,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/753666854), ODbL"
+    },
+    {
+      "id": "drei-gleichen-c590773d66",
+      "city": "drei-gleichen",
+      "label": "Drei Gleichen",
+      "street": "Drei Gleichen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Drei Gleichen",
+      "spotCount": 1,
+      "lat": 50.87770810000001,
+      "lng": 10.809607800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/753666855), ODbL"
+    },
+    {
+      "id": "drei-gleichen-2f51916ef4",
+      "city": "drei-gleichen",
+      "label": "Drei Gleichen",
+      "street": "Drei Gleichen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Drei Gleichen",
+      "spotCount": 1,
+      "lat": 50.877709800000005,
+      "lng": 10.80957025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/753666856), ODbL"
+    }
+  ]
+}

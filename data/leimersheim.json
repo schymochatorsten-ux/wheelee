@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "leimersheim",
+    "name": "Leimersheim",
+    "center": {
+      "lat": 49.132306400000004,
+      "lng": 8.34312585
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "leimersheim-f036790448",
+      "city": "leimersheim",
+      "label": "Obere Hauptstraße 3",
+      "street": "Obere Hauptstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Leimersheim",
+      "spotCount": 2,
+      "lat": 49.12433295,
+      "lng": 8.34312585,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1460336846), ODbL"
+    },
+    {
+      "id": "leimersheim-7966a4c51f",
+      "city": "leimersheim",
+      "label": "Parkplatz Rheinaue (PKW)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Leimersheim",
+      "spotCount": 3,
+      "lat": 49.132306400000004,
+      "lng": 8.307002050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/204808443), ODbL"
+    }
+  ]
+}

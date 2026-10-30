@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "kobern-gondorf",
+    "name": "Kobern-Gondorf",
+    "center": {
+      "lat": 50.307571450000005,
+      "lng": 7.459726850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kobern-gondorf-d7cd5d652c",
+      "city": "kobern-gondorf",
+      "label": "Bergstraße 2",
+      "street": "Bergstraße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kobern-Gondorf",
+      "spotCount": 1,
+      "lat": 50.30757055,
+      "lng": 7.459772350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1557938989), ODbL"
+    },
+    {
+      "id": "kobern-gondorf-7a1de2f00e",
+      "city": "kobern-gondorf",
+      "label": "Bergstraße 2",
+      "street": "Bergstraße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kobern-Gondorf",
+      "spotCount": 1,
+      "lat": 50.307571450000005,
+      "lng": 7.459726850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1557938990), ODbL"
+    },
+    {
+      "id": "kobern-gondorf-58b1867c9a",
+      "city": "kobern-gondorf",
+      "label": "Bergstraße 2",
+      "street": "Bergstraße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kobern-Gondorf",
+      "spotCount": 1,
+      "lat": 50.3075721,
+      "lng": 7.459684750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1557938991), ODbL"
+    }
+  ]
+}

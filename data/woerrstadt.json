@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "woerrstadt",
+    "name": "Wörrstadt",
+    "center": {
+      "lat": 49.84085695,
+      "lng": 8.1144095
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "woerrstadt-87302001d0",
+      "city": "woerrstadt",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wörrstadt",
+      "spotCount": 2,
+      "lat": 49.84583875,
+      "lng": 8.11385825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/391300741), ODbL"
+    },
+    {
+      "id": "woerrstadt-e90e1a8b7c",
+      "city": "woerrstadt",
+      "label": "Friedrich-Ebert-Straße 47",
+      "street": "Friedrich-Ebert-Straße",
+      "houseNumber": "47",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wörrstadt",
+      "spotCount": 1,
+      "lat": 49.84085695,
+      "lng": 8.1144095,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1436202699), ODbL"
+    },
+    {
+      "id": "woerrstadt-4ec741dedc",
+      "city": "woerrstadt",
+      "label": "Neunröhrenplatz 1",
+      "street": "Neunröhrenplatz",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wörrstadt",
+      "spotCount": 1,
+      "lat": 49.838008650000006,
+      "lng": 8.11649085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1436244023), ODbL"
+    }
+  ]
+}

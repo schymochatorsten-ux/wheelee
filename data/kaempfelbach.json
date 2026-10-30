@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "kaempfelbach",
+    "name": "Kämpfelbach",
+    "center": {
+      "lat": 48.9486745,
+      "lng": 8.62687155
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kaempfelbach-c1b54eb6de",
+      "city": "kaempfelbach",
+      "label": "Benzstraße 2",
+      "street": "Benzstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kämpfelbach",
+      "spotCount": 2,
+      "lat": 48.94185,
+      "lng": 8.62687155,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/923861188), ODbL"
+    },
+    {
+      "id": "kaempfelbach-3e8480110a",
+      "city": "kaempfelbach",
+      "label": "Brückenstraße 4",
+      "street": "Brückenstraße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kämpfelbach",
+      "spotCount": 1,
+      "lat": 48.933088600000005,
+      "lng": 8.634382800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/32442776), ODbL"
+    },
+    {
+      "id": "kaempfelbach-1a59696490",
+      "city": "kaempfelbach",
+      "label": "Ebbstraße",
+      "street": "Ebbstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Kämpfelbach",
+      "spotCount": 1,
+      "lat": 48.94878965,
+      "lng": 8.62021125,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1053605551), ODbL"
+    },
+    {
+      "id": "kaempfelbach-99c8bda6b4",
+      "city": "kaempfelbach",
+      "label": "Ebbstraße",
+      "street": "Ebbstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Kämpfelbach",
+      "spotCount": 1,
+      "lat": 48.9486745,
+      "lng": 8.6203073,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1254930065), ODbL"
+    }
+  ]
+}

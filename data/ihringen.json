@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "ihringen",
+    "name": "Ihringen",
+    "center": {
+      "lat": 48.04064455,
+      "lng": 7.64982655
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ihringen-9c922fb478",
+      "city": "ihringen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ihringen",
+      "spotCount": 1,
+      "lat": 48.04064455,
+      "lng": 7.64982655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1386119377), ODbL"
+    },
+    {
+      "id": "ihringen-411c72b525",
+      "city": "ihringen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ihringen",
+      "spotCount": 1,
+      "lat": 48.0406374,
+      "lng": 7.649781450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1386119378), ODbL"
+    },
+    {
+      "id": "ihringen-4c36cb50c3",
+      "city": "ihringen",
+      "label": "Parkplatz am Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Ihringen",
+      "spotCount": 2,
+      "lat": 48.0407121,
+      "lng": 7.650297350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/342556628), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kratzeburg",
+    "name": "Kratzeburg",
+    "center": {
+      "lat": 53.44380915000001,
+      "lng": 12.941003850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kratzeburg-0c012eaae9",
+      "city": "kratzeburg",
+      "label": "Dambeck",
+      "street": "Dambeck",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kratzeburg",
+      "spotCount": 6,
+      "lat": 53.44380915000001,
+      "lng": 12.941003850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1508807942), ODbL"
+    }
+  ]
+}

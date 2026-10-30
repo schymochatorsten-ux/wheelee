@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "hermsdorf",
+    "name": "Hermsdorf",
+    "center": {
+      "lat": 50.9005425,
+      "lng": 11.85330875
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hermsdorf-3faed324da",
+      "city": "hermsdorf",
+      "label": "Erich-Weinert-Straße",
+      "street": "Erich-Weinert-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hermsdorf",
+      "spotCount": 2,
+      "lat": 50.905978000000005,
+      "lng": 11.8540506,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1531870900), ODbL"
+    },
+    {
+      "id": "hermsdorf-f7e60e870b",
+      "city": "hermsdorf",
+      "label": "Globus Parkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hermsdorf",
+      "spotCount": 10,
+      "lat": 50.88643535,
+      "lng": 11.8490116,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/145682401), ODbL"
+    },
+    {
+      "id": "hermsdorf-30f563c74e",
+      "city": "hermsdorf",
+      "label": "Keramikerstraße",
+      "street": "Keramikerstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hermsdorf",
+      "spotCount": 1,
+      "lat": 50.90047885,
+      "lng": 11.85330875,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1547991679), ODbL"
+    },
+    {
+      "id": "hermsdorf-d0b1f68657",
+      "city": "hermsdorf",
+      "label": "Keramikerstraße",
+      "street": "Keramikerstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hermsdorf",
+      "spotCount": 1,
+      "lat": 50.9005425,
+      "lng": 11.853236200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1547991680), ODbL"
+    },
+    {
+      "id": "hermsdorf-330c7b3db4",
+      "city": "hermsdorf",
+      "label": "Lidl",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hermsdorf",
+      "spotCount": 1,
+      "lat": 50.90583600000001,
+      "lng": 11.858313800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/78715870), ODbL"
+    }
+  ]
+}

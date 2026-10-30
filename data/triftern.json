@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "triftern",
+    "name": "Triftern",
+    "center": {
+      "lat": 48.395896,
+      "lng": 13.013337
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "triftern-fe523f24db",
+      "city": "triftern",
+      "label": "Magistratsstraße",
+      "street": "Magistratsstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Triftern",
+      "spotCount": 1,
+      "lat": 48.395867300000006,
+      "lng": 13.013252300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13964455017), ODbL"
+    },
+    {
+      "id": "triftern-e6a22e67a4",
+      "city": "triftern",
+      "label": "Magistratsstraße",
+      "street": "Magistratsstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Triftern",
+      "spotCount": 1,
+      "lat": 48.395896,
+      "lng": 13.013337,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13964455021), ODbL"
+    },
+    {
+      "id": "triftern-988467b044",
+      "city": "triftern",
+      "label": "Magistratsstraße",
+      "street": "Magistratsstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Triftern",
+      "spotCount": 1,
+      "lat": 48.3960183,
+      "lng": 13.013401700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13964455025), ODbL"
+    }
+  ]
+}

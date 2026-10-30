@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "zempin",
+    "name": "Zempin",
+    "center": {
+      "lat": 54.07061830000001,
+      "lng": 13.95868235
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zempin-35d3c18334",
+      "city": "zempin",
+      "label": "Kieferngrund",
+      "street": "Kieferngrund",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zempin",
+      "spotCount": 2,
+      "lat": 54.07061830000001,
+      "lng": 13.95452685,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/707479067), ODbL"
+    },
+    {
+      "id": "zempin-36570bc4bd",
+      "city": "zempin",
+      "label": "Parkplatz am Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zempin",
+      "spotCount": 1,
+      "lat": 54.0662686,
+      "lng": 13.95868235,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1343521509), ODbL"
+    }
+  ]
+}

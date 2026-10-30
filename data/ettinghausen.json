@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ettinghausen",
+    "name": "Ettinghausen",
+    "center": {
+      "lat": 50.5153823,
+      "lng": 7.87367315
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ettinghausen-c42239f014",
+      "city": "ettinghausen",
+      "label": "Kapellenstraße",
+      "street": "Kapellenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ettinghausen",
+      "spotCount": 1,
+      "lat": 50.5153823,
+      "lng": 7.87367315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/86218699), ODbL"
+    }
+  ]
+}

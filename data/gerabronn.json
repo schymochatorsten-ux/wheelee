@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "gerabronn",
+    "name": "Gerabronn",
+    "center": {
+      "lat": 49.24983675,
+      "lng": 9.92768245
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gerabronn-5cc82c4028",
+      "city": "gerabronn",
+      "label": "P1 Schulzentrum",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gerabronn",
+      "spotCount": 1,
+      "lat": 49.24983675,
+      "lng": 9.92768245,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/146589813), ODbL"
+    }
+  ]
+}

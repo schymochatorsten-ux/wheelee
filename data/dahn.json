@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "dahn",
+    "name": "Dahn",
+    "center": {
+      "lat": 49.14334045,
+      "lng": 7.79932575
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dahn-468b157f9b",
+      "city": "dahn",
+      "label": "Eybergstraße",
+      "street": "Eybergstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dahn",
+      "spotCount": 4,
+      "lat": 49.14334045,
+      "lng": 7.770387550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1019952245), ODbL"
+    },
+    {
+      "id": "dahn-3aeff92f11",
+      "city": "dahn",
+      "label": "Industriestraße",
+      "street": "Industriestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dahn",
+      "spotCount": 1,
+      "lat": 49.139019000000005,
+      "lng": 7.79932575,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/445531028), ODbL"
+    }
+  ]
+}

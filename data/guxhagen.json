@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "guxhagen",
+    "name": "Guxhagen",
+    "center": {
+      "lat": 51.2045435,
+      "lng": 9.482272100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "guxhagen-54bba7684f",
+      "city": "guxhagen",
+      "label": "Dörnhagener Straße 2",
+      "street": "Dörnhagener Straße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Guxhagen",
+      "spotCount": 1,
+      "lat": 51.2045435,
+      "lng": 9.482272100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1454373765), ODbL"
+    },
+    {
+      "id": "guxhagen-0ec0d299a0",
+      "city": "guxhagen",
+      "label": "Robert-Bosch-Straße",
+      "street": "Robert-Bosch-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Guxhagen",
+      "spotCount": 2,
+      "lat": 51.2005295,
+      "lng": 9.47016975,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1472226001), ODbL"
+    }
+  ]
+}

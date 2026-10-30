@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "eichwalde",
+    "name": "Eichwalde",
+    "center": {
+      "lat": 52.3728241,
+      "lng": 13.617320200000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eichwalde-715a81e110",
+      "city": "eichwalde",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eichwalde",
+      "spotCount": 1,
+      "lat": 52.3733939,
+      "lng": 13.616445250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/535156223), ODbL"
+    },
+    {
+      "id": "eichwalde-5651ec6bae",
+      "city": "eichwalde",
+      "label": "Bahnhofstraße 4",
+      "street": "Bahnhofstraße",
+      "houseNumber": "4",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eichwalde",
+      "spotCount": 1,
+      "lat": 52.3728241,
+      "lng": 13.616969500000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9359051553), ODbL"
+    },
+    {
+      "id": "eichwalde-b9f697ba1b",
+      "city": "eichwalde",
+      "label": "Grünauer Straße 47",
+      "street": "Grünauer Straße",
+      "houseNumber": "47",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eichwalde",
+      "spotCount": 1,
+      "lat": 52.37268385,
+      "lng": 13.62122535,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1014651578), ODbL"
+    },
+    {
+      "id": "eichwalde-319c59cfcc",
+      "city": "eichwalde",
+      "label": "Max-Liebermann-Straße",
+      "street": "Max-Liebermann-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eichwalde",
+      "spotCount": 1,
+      "lat": 52.36551355,
+      "lng": 13.617320200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1009038816), ODbL"
+    },
+    {
+      "id": "eichwalde-952d487637",
+      "city": "eichwalde",
+      "label": "Stubenrauchstraße",
+      "street": "Stubenrauchstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eichwalde",
+      "spotCount": 3,
+      "lat": 52.37622005,
+      "lng": 13.6210208,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1014506768), ODbL"
+    }
+  ]
+}

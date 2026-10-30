@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wahlrod",
+    "name": "Wahlrod",
+    "center": {
+      "lat": 50.6569093,
+      "lng": 7.734396
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wahlrod-5fb66f8c7b",
+      "city": "wahlrod",
+      "label": "Hammermühle",
+      "street": "Hammermühle",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wahlrod",
+      "spotCount": 1,
+      "lat": 50.6569093,
+      "lng": 7.734396,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/71902030), ODbL"
+    }
+  ]
+}

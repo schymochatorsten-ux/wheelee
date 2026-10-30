@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "oberuckersee",
+    "name": "Oberuckersee",
+    "center": {
+      "lat": 53.1841062,
+      "lng": 13.877057100000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberuckersee-6d670be28d",
+      "city": "oberuckersee",
+      "label": "Lindenallee",
+      "street": "Lindenallee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberuckersee",
+      "spotCount": 1,
+      "lat": 53.1841062,
+      "lng": 13.877057100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1173150616), ODbL"
+    },
+    {
+      "id": "oberuckersee-741de63ffe",
+      "city": "oberuckersee",
+      "label": "Lindenallee",
+      "street": "Lindenallee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberuckersee",
+      "spotCount": 1,
+      "lat": 53.18396150000001,
+      "lng": 13.8770056,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1182979373), ODbL"
+    }
+  ]
+}

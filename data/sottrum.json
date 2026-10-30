@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "sottrum",
+    "name": "Sottrum",
+    "center": {
+      "lat": 53.0881443,
+      "lng": 9.17735245
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sottrum-652ca600ce",
+      "city": "sottrum",
+      "label": "Grundbergsee Süd",
+      "street": "Grundbergsee Süd",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sottrum",
+      "spotCount": 1,
+      "lat": 53.08819625000001,
+      "lng": 9.17747315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1097918855), ODbL"
+    },
+    {
+      "id": "sottrum-0e83c0e8b4",
+      "city": "sottrum",
+      "label": "Grundbergsee Süd",
+      "street": "Grundbergsee Süd",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sottrum",
+      "spotCount": 1,
+      "lat": 53.0881443,
+      "lng": 9.17735245,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1097918856), ODbL"
+    },
+    {
+      "id": "sottrum-f3bda5dd7a",
+      "city": "sottrum",
+      "label": "Grundbergsee Süd",
+      "street": "Grundbergsee Süd",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sottrum",
+      "spotCount": 1,
+      "lat": 53.087913150000006,
+      "lng": 9.176582,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1097918857), ODbL"
+    }
+  ]
+}

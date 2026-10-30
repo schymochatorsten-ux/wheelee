@@ -173,7 +173,26 @@ test.describe("wheelee", () => {
     expect(messung!.share).toBeLessThan(0.67);
     // … und im Rest müssen Parkplätze zu sehen sein, sonst nützt er nichts.
     expect(messung!.freeStrip).toBeGreaterThan(150);
-    expect(messung!.visible).toBeGreaterThan(2);
+    // Die Marker kommen aus `/api/spots` und brauchen bei größerem Bestand etwas
+    // länger; eine feste Wartezeit allein machte den Test zeitabhängig. Deshalb
+    // wird bis zum Ergebnis neu gezählt.
+    await expect
+      .poll(
+        () =>
+          page.evaluate(() => {
+            const map = document.querySelector(".leaflet-container");
+            const panel = document.querySelector("#parkplatz-leiste");
+            if (!map || !panel) return 0;
+            const frame = map.getBoundingClientRect();
+            const bar = panel.getBoundingClientRect();
+            return [...document.querySelectorAll(".leaflet-marker-icon")].filter((marker) => {
+              const box = marker.getBoundingClientRect();
+              return box.top >= bar.bottom && box.bottom <= frame.bottom;
+            }).length;
+          }),
+        { timeout: 10_000 },
+      )
+      .toBeGreaterThan(2);
   });
 
   test("beide Enden der Luftlinie bleiben im Bild", async ({ page, context }) => {

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "epfenbach",
+    "name": "Epfenbach",
+    "center": {
+      "lat": 49.3492875,
+      "lng": 8.9098605
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "epfenbach-873477acaa",
+      "city": "epfenbach",
+      "label": "Erholungsanlage \"Kraichgaublick\"",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Epfenbach",
+      "spotCount": 8,
+      "lat": 49.3492875,
+      "lng": 8.9098605,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/954413167), ODbL"
+    }
+  ]
+}

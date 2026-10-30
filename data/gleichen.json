@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "gleichen",
+    "name": "Gleichen",
+    "center": {
+      "lat": 51.48289605000001,
+      "lng": 10.01030075
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gleichen-1123ae56fb",
+      "city": "gleichen",
+      "label": "Am Rischenplatz 1",
+      "street": "Am Rischenplatz",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gleichen",
+      "spotCount": 1,
+      "lat": 51.47263445,
+      "lng": 9.975703150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/655988634), ODbL"
+    },
+    {
+      "id": "gleichen-805bebcd72",
+      "city": "gleichen",
+      "label": "Gartestraße 2",
+      "street": "Gartestraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gleichen",
+      "spotCount": 1,
+      "lat": 51.481791900000005,
+      "lng": 10.09686265,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1057001028), ODbL"
+    },
+    {
+      "id": "gleichen-7fd611ff0e",
+      "city": "gleichen",
+      "label": "Reinhäuser Straße",
+      "street": "Reinhäuser Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gleichen",
+      "spotCount": 1,
+      "lat": 51.48289605000001,
+      "lng": 9.976718900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1551470191), ODbL"
+    },
+    {
+      "id": "gleichen-e8d8c166bc",
+      "city": "gleichen",
+      "label": "Steinslieth",
+      "street": "Steinslieth",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gleichen",
+      "spotCount": 3,
+      "lat": 51.49311540000001,
+      "lng": 10.01030075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/587752182), ODbL"
+    }
+  ]
+}

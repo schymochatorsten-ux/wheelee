@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hattorf",
+    "name": "Hattorf am Harz",
+    "center": {
+      "lat": 51.644443100000004,
+      "lng": 10.240483350000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hattorf-b110fb5824",
+      "city": "hattorf",
+      "label": "Otto-Escher-Straße",
+      "street": "Otto-Escher-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hattorf am Harz",
+      "spotCount": 1,
+      "lat": 51.644443100000004,
+      "lng": 10.240483350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1223218869), ODbL"
+    }
+  ]
+}

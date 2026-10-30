@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "altenmarkt-a-d-alz",
+    "name": "Altenmarkt a.d.Alz",
+    "center": {
+      "lat": 47.99890090000001,
+      "lng": 12.53225995
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "altenmarkt-a-d-alz-3f6d1ff389",
+      "city": "altenmarkt-a-d-alz",
+      "label": "Baumburg",
+      "street": "Baumburg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Altenmarkt a.d.Alz",
+      "spotCount": 1,
+      "lat": 47.9984726,
+      "lng": 12.53225995,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1089908335), ODbL"
+    },
+    {
+      "id": "altenmarkt-a-d-alz-15d652f8dc",
+      "city": "altenmarkt-a-d-alz",
+      "label": "Laufenauer Straße",
+      "street": "Laufenauer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Altenmarkt a.d.Alz",
+      "spotCount": 1,
+      "lat": 47.99890090000001,
+      "lng": 12.527747150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/255833479), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bersenbrueck",
+    "name": "Bersenbrück",
+    "center": {
+      "lat": 52.55560695,
+      "lng": 7.935298600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bersenbrueck-f0c7736cdc",
+      "city": "bersenbrueck",
+      "label": "Robert-Bosch-Straße",
+      "street": "Robert-Bosch-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bersenbrück",
+      "spotCount": 6,
+      "lat": 52.55560695,
+      "lng": 7.935298600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1080041967), ODbL"
+    }
+  ]
+}

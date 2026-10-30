@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "zell",
+    "name": "Zell am Harmersbach",
+    "center": {
+      "lat": 48.35142255,
+      "lng": 8.08148855
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zell-f55b4f3e70",
+      "city": "zell",
+      "label": "Hauptstraße 169",
+      "street": "Hauptstraße",
+      "houseNumber": "169",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Zell am Harmersbach",
+      "spotCount": 1,
+      "lat": 48.35142255,
+      "lng": 8.08148855,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1206385934), ODbL"
+    }
+  ]
+}

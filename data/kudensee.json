@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kudensee",
+    "name": "Kudensee",
+    "center": {
+      "lat": 53.93332525,
+      "lng": 9.209711949999999
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kudensee-3d27692629",
+      "city": "kudensee",
+      "label": "An Kanol",
+      "street": "An Kanol",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kudensee",
+      "spotCount": 2,
+      "lat": 53.93332525,
+      "lng": 9.209711949999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/306492714), ODbL"
+    }
+  ]
+}

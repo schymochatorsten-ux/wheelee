@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "schwarzburg",
+    "name": "Schwarzburg",
+    "center": {
+      "lat": 50.64221450000001,
+      "lng": 11.1953399
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schwarzburg-195fa4c365",
+      "city": "schwarzburg",
+      "label": "Schloßstraße",
+      "street": "Schloßstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwarzburg",
+      "spotCount": 4,
+      "lat": 50.64221450000001,
+      "lng": 11.191817799999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/290825733), ODbL"
+    },
+    {
+      "id": "schwarzburg-dfdba92af7",
+      "city": "schwarzburg",
+      "label": "Straße der Jugend 4",
+      "street": "Straße der Jugend",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwarzburg",
+      "spotCount": 1,
+      "lat": 50.641723,
+      "lng": 11.1953399,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1310823460), ODbL"
+    }
+  ]
+}

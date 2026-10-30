@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "suderburg",
+    "name": "Suderburg",
+    "center": {
+      "lat": 52.8711835,
+      "lng": 10.4297467
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "suderburg-c2345df614",
+      "city": "suderburg",
+      "label": "Behindertenparkplatz Suderburg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Suderburg",
+      "spotCount": 2,
+      "lat": 52.8711835,
+      "lng": 10.4297467,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1112742772), ODbL"
+    }
+  ]
+}

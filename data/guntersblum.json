@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "guntersblum",
+    "name": "Guntersblum",
+    "center": {
+      "lat": 49.80106365,
+      "lng": 8.3453198
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "guntersblum-816d450ceb",
+      "city": "guntersblum",
+      "label": "Brunhildstraße 13",
+      "street": "Brunhildstraße",
+      "houseNumber": "13",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Guntersblum",
+      "spotCount": 1,
+      "lat": 49.792314250000004,
+      "lng": 8.3428282,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1212450238), ODbL"
+    },
+    {
+      "id": "guntersblum-c0c33a6af0",
+      "city": "guntersblum",
+      "label": "Brunhildstraße 13",
+      "street": "Brunhildstraße",
+      "houseNumber": "13",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Guntersblum",
+      "spotCount": 1,
+      "lat": 49.792318,
+      "lng": 8.3427756,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1212450239), ODbL"
+    },
+    {
+      "id": "guntersblum-6445c06440",
+      "city": "guntersblum",
+      "label": "Kurzer Flurweg",
+      "street": "Kurzer Flurweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Guntersblum",
+      "spotCount": 1,
+      "lat": 49.80106615,
+      "lng": 8.3453673,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1212470740), ODbL"
+    },
+    {
+      "id": "guntersblum-a2b42ec0f0",
+      "city": "guntersblum",
+      "label": "Kurzer Flurweg",
+      "street": "Kurzer Flurweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Guntersblum",
+      "spotCount": 1,
+      "lat": 49.80106365,
+      "lng": 8.3453198,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1212470741), ODbL"
+    }
+  ]
+}

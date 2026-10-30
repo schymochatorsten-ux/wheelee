@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "kleinheubach",
+    "name": "Kleinheubach",
+    "center": {
+      "lat": 49.7150538,
+      "lng": 9.216934
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kleinheubach-569ba452c8",
+      "city": "kleinheubach",
+      "label": "Friedhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kleinheubach",
+      "spotCount": 2,
+      "lat": 49.719322600000005,
+      "lng": 9.2093018,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/948408503), ODbL"
+    },
+    {
+      "id": "kleinheubach-a57f406127",
+      "city": "kleinheubach",
+      "label": "Im Mittelgewann",
+      "street": "Im Mittelgewann",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kleinheubach",
+      "spotCount": 1,
+      "lat": 49.714960700000006,
+      "lng": 9.2169969,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11200087065), ODbL"
+    },
+    {
+      "id": "kleinheubach-f2caee2397",
+      "city": "kleinheubach",
+      "label": "Pfarrer-Frömel-Ring",
+      "street": "Pfarrer-Frömel-Ring",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kleinheubach",
+      "spotCount": 1,
+      "lat": 49.71500270000001,
+      "lng": 9.216934,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11208865557), ODbL"
+    },
+    {
+      "id": "kleinheubach-88740dfd01",
+      "city": "kleinheubach",
+      "label": "Pfarrer-Frömel-Ring 45",
+      "street": "Pfarrer-Frömel-Ring",
+      "houseNumber": "45",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kleinheubach",
+      "spotCount": 1,
+      "lat": 49.7150538,
+      "lng": 9.2158476,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11203317185), ODbL"
+    }
+  ]
+}

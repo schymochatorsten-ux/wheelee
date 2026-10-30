@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "guderhandviertel",
+    "name": "Guderhandviertel",
+    "center": {
+      "lat": 53.5272971,
+      "lng": 9.60514315
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "guderhandviertel-d44cd073a8",
+      "city": "guderhandviertel",
+      "label": "Dorfstraße 59",
+      "street": "Dorfstraße",
+      "houseNumber": "59",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "sunrise-sunset",
+      "district": "Guderhandviertel",
+      "spotCount": 1,
+      "lat": 53.5272971,
+      "lng": 9.60514315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/291788616), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "gerbrunn",
+    "name": "Gerbrunn",
+    "center": {
+      "lat": 49.7788879,
+      "lng": 9.983531450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gerbrunn-c06e4490f2",
+      "city": "gerbrunn",
+      "label": "Allesgrundweg 3",
+      "street": "Allesgrundweg",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gerbrunn",
+      "spotCount": 1,
+      "lat": 49.777420600000006,
+      "lng": 9.9818928,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/7938601936), ODbL"
+    },
+    {
+      "id": "gerbrunn-b35ee622d5",
+      "city": "gerbrunn",
+      "label": "Gieshügeler Straße",
+      "street": "Gieshügeler Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gerbrunn",
+      "spotCount": 1,
+      "lat": 49.777461200000005,
+      "lng": 9.9886423,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1068337444), ODbL"
+    },
+    {
+      "id": "gerbrunn-140340efe0",
+      "city": "gerbrunn",
+      "label": "Gieshügeler Straße 2",
+      "street": "Gieshügeler Straße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gerbrunn",
+      "spotCount": 1,
+      "lat": 49.7773641,
+      "lng": 9.988435800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1504685259), ODbL"
+    },
+    {
+      "id": "gerbrunn-ab733fedec",
+      "city": "gerbrunn",
+      "label": "Hauptstraße 30",
+      "street": "Hauptstraße",
+      "houseNumber": "30",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gerbrunn",
+      "spotCount": 1,
+      "lat": 49.7788879,
+      "lng": 9.982737700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1267578565), ODbL"
+    },
+    {
+      "id": "gerbrunn-44f09dc827",
+      "city": "gerbrunn",
+      "label": "Helläcker 1",
+      "street": "Helläcker",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gerbrunn",
+      "spotCount": 2,
+      "lat": 49.780914800000005,
+      "lng": 9.976889200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/330373678), ODbL"
+    },
+    {
+      "id": "gerbrunn-8d4e11b945",
+      "city": "gerbrunn",
+      "label": "Kopernikusstraße 4a",
+      "street": "Kopernikusstraße",
+      "houseNumber": "4a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gerbrunn",
+      "spotCount": 1,
+      "lat": 49.77930915,
+      "lng": 9.983531450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1413083720), ODbL"
+    }
+  ]
+}

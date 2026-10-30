@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "muehlenfliess",
+    "name": "Mühlenfließ",
+    "center": {
+      "lat": 52.131876150000004,
+      "lng": 12.750491150000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "muehlenfliess-c3e7a58ba0",
+      "city": "muehlenfliess",
+      "label": "Fläming West",
+      "street": "Fläming West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mühlenfließ",
+      "spotCount": 3,
+      "lat": 52.131876150000004,
+      "lng": 12.750491150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/288973382), ODbL"
+    }
+  ]
+}

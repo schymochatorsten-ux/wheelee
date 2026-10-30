@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "wilgartswiesen",
+    "name": "Wilgartswiesen",
+    "center": {
+      "lat": 49.2093708,
+      "lng": 7.85247105
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wilgartswiesen-7cd727c7d1",
+      "city": "wilgartswiesen",
+      "label": "Bahnhofstraße 8",
+      "street": "Bahnhofstraße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wilgartswiesen",
+      "spotCount": 3,
+      "lat": 49.2093708,
+      "lng": 7.882724100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/209836980), ODbL"
+    },
+    {
+      "id": "wilgartswiesen-0fe0ed0e51",
+      "city": "wilgartswiesen",
+      "label": "Behindertenparkplatz Wilgartswiesen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wilgartswiesen",
+      "spotCount": 2,
+      "lat": 49.24321305,
+      "lng": 7.82782615,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/975290974), ODbL"
+    },
+    {
+      "id": "wilgartswiesen-57462a5100",
+      "city": "wilgartswiesen",
+      "label": "Behindertenparkplatz Wilgartswiesen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wilgartswiesen",
+      "spotCount": 2,
+      "lat": 49.202583000000004,
+      "lng": 7.85247105,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1484225189), ODbL"
+    }
+  ]
+}

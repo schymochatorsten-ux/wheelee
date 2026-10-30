@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "eisenberg-by",
+    "name": "Eisenberg",
+    "center": {
+      "lat": 47.6091694,
+      "lng": 10.59626265
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eisenberg-by-e9ea69ed2b",
+      "city": "eisenberg-by",
+      "label": "Behindertenparkplatz Eisenberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "Mo-Su,PH 06:00-22:00",
+      "district": "Eisenberg",
+      "spotCount": 1,
+      "lat": 47.6091694,
+      "lng": 10.59626265,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/440505144), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "strasburg",
+    "name": "Strasburg (Uckermark)",
+    "center": {
+      "lat": 53.507297200000004,
+      "lng": 13.745050800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "strasburg-9e9cdfdc8e",
+      "city": "strasburg",
+      "label": "Altstädter Straße",
+      "street": "Altstädter Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Strasburg (Uckermark)",
+      "spotCount": 1,
+      "lat": 53.507297200000004,
+      "lng": 13.745050800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1214333485), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "stromberg",
+    "name": "Stromberg",
+    "center": {
+      "lat": 49.96337990000001,
+      "lng": 7.7659585
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "stromberg-6860ec12ac",
+      "city": "stromberg",
+      "label": "Hunsrück West",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Stromberg",
+      "spotCount": 2,
+      "lat": 49.96337990000001,
+      "lng": 7.7659585,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/48811082), ODbL"
+    },
+    {
+      "id": "stromberg-b47876bd7e",
+      "city": "stromberg",
+      "label": "LKW",
+      "street": "LKW",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stromberg",
+      "spotCount": 2,
+      "lat": 49.964473250000005,
+      "lng": 7.7654209000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1331389484), ODbL"
+    },
+    {
+      "id": "stromberg-7649db19d0",
+      "city": "stromberg",
+      "label": "Neupfälzer Straße",
+      "street": "Neupfälzer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stromberg",
+      "spotCount": 3,
+      "lat": 49.94149095,
+      "lng": 7.76772005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/117670379), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "ehrenfriedersdorf",
+    "name": "Ehrenfriedersdorf",
+    "center": {
+      "lat": 50.647557750000004,
+      "lng": 12.95668625
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ehrenfriedersdorf-c618d4d7c0",
+      "city": "ehrenfriedersdorf",
+      "label": "Greifensteinstraße 44",
+      "street": "Greifensteinstraße",
+      "houseNumber": "44",
+      "note": "gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Ehrenfriedersdorf",
+      "spotCount": 3,
+      "lat": 50.649316600000006,
+      "lng": 12.9290299,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/729356886), ODbL"
+    },
+    {
+      "id": "ehrenfriedersdorf-0809f6786b",
+      "city": "ehrenfriedersdorf",
+      "label": "Neumarkt 10",
+      "street": "Neumarkt",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ehrenfriedersdorf",
+      "spotCount": 2,
+      "lat": 50.644409950000004,
+      "lng": 12.967592750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/309703776), ODbL"
+    },
+    {
+      "id": "ehrenfriedersdorf-f0e2ecfc5d",
+      "city": "ehrenfriedersdorf",
+      "label": "Parkplatz an den Greifensteinen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Ehrenfriedersdorf",
+      "spotCount": 1,
+      "lat": 50.64978775,
+      "lng": 12.92845525,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/49220420), ODbL"
+    },
+    {
+      "id": "ehrenfriedersdorf-2119afcbeb",
+      "city": "ehrenfriedersdorf",
+      "label": "Steinbüschelstraße",
+      "street": "Steinbüschelstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ehrenfriedersdorf",
+      "spotCount": 1,
+      "lat": 50.646798200000006,
+      "lng": 12.96924485,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/513976469), ODbL"
+    },
+    {
+      "id": "ehrenfriedersdorf-8d50fc6180",
+      "city": "ehrenfriedersdorf",
+      "label": "Wanderparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ehrenfriedersdorf",
+      "spotCount": 1,
+      "lat": 50.647557750000004,
+      "lng": 12.95668625,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1084079686), ODbL"
+    }
+  ]
+}

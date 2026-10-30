@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "einhaus",
+    "name": "Einhaus",
+    "center": {
+      "lat": 53.713597500000006,
+      "lng": 10.7276482
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "einhaus-39629ee82a",
+      "city": "einhaus",
+      "label": "Hauptstraße 28",
+      "street": "Hauptstraße",
+      "houseNumber": "28",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Einhaus",
+      "spotCount": 1,
+      "lat": 53.713597500000006,
+      "lng": 10.7276482,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8930702654), ODbL"
+    }
+  ]
+}

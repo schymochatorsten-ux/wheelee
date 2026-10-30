@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "barendorf",
+    "name": "Barendorf",
+    "center": {
+      "lat": 53.2295072,
+      "lng": 10.51506735
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "barendorf-d164f4513c",
+      "city": "barendorf",
+      "label": "Lüneburger Straße",
+      "street": "Lüneburger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Barendorf",
+      "spotCount": 1,
+      "lat": 53.2295072,
+      "lng": 10.51506735,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/134659872), ODbL"
+    }
+  ]
+}

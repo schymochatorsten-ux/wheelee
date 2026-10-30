@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "waldenburg-bw",
+    "name": "Waldenburg",
+    "center": {
+      "lat": 49.2026589,
+      "lng": 9.65893775
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "waldenburg-bw-25d94d5ab6",
+      "city": "waldenburg-bw",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Waldenburg",
+      "spotCount": 1,
+      "lat": 49.20265345,
+      "lng": 9.65893775,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1254198262), ODbL"
+    },
+    {
+      "id": "waldenburg-bw-e8def0811b",
+      "city": "waldenburg-bw",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Waldenburg",
+      "spotCount": 1,
+      "lat": 49.20266475,
+      "lng": 9.6588943,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1254198263), ODbL"
+    },
+    {
+      "id": "waldenburg-bw-aac36e1c43",
+      "city": "waldenburg-bw",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Waldenburg",
+      "spotCount": 2,
+      "lat": 49.2026589,
+      "lng": 9.6589167,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1410016252), ODbL"
+    },
+    {
+      "id": "waldenburg-bw-d605d23dbb",
+      "city": "waldenburg-bw",
+      "label": "Max-Eyth-Straße",
+      "street": "Max-Eyth-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldenburg",
+      "spotCount": 5,
+      "lat": 49.1990598,
+      "lng": 9.66055905,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/367165179), ODbL"
+    }
+  ]
+}

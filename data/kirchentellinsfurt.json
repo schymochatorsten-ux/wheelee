@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "kirchentellinsfurt",
+    "name": "Kirchentellinsfurt",
+    "center": {
+      "lat": 48.531397500000004,
+      "lng": 9.148846500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kirchentellinsfurt-0e4c5c2bc6",
+      "city": "kirchentellinsfurt",
+      "label": "Faulbaum",
+      "street": "Faulbaum",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kirchentellinsfurt",
+      "spotCount": 1,
+      "lat": 48.531253400000004,
+      "lng": 9.1602557,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14049438887), ODbL"
+    },
+    {
+      "id": "kirchentellinsfurt-b4ed609e0b",
+      "city": "kirchentellinsfurt",
+      "label": "Rathausplatz 2",
+      "street": "Rathausplatz",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kirchentellinsfurt",
+      "spotCount": 1,
+      "lat": 48.531397500000004,
+      "lng": 9.1481895,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11260059538), ODbL"
+    },
+    {
+      "id": "kirchentellinsfurt-bd915b534c",
+      "city": "kirchentellinsfurt",
+      "label": "Schulstraße",
+      "street": "Schulstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kirchentellinsfurt",
+      "spotCount": 1,
+      "lat": 48.5318946,
+      "lng": 9.148846500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11260072207), ODbL"
+    }
+  ]
+}

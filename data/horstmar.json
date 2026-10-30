@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "horstmar",
+    "name": "Horstmar",
+    "center": {
+      "lat": 52.0800989,
+      "lng": 7.3016497000000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "horstmar-5712678412",
+      "city": "horstmar",
+      "label": "Kirchplatz 9",
+      "street": "Kirchplatz",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Horstmar",
+      "spotCount": 1,
+      "lat": 52.0800989,
+      "lng": 7.3016497000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1421306670), ODbL"
+    }
+  ]
+}

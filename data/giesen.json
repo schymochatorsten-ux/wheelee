@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "giesen",
+    "name": "Giesen",
+    "center": {
+      "lat": 52.2003599,
+      "lng": 9.91872655
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "giesen-d3ca25d328",
+      "city": "giesen",
+      "label": "Hannoversche Straße",
+      "street": "Hannoversche Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Giesen",
+      "spotCount": 2,
+      "lat": 52.2003599,
+      "lng": 9.91872655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34143656), ODbL"
+    },
+    {
+      "id": "giesen-d7bd11a3d8",
+      "city": "giesen",
+      "label": "Rathausstraße",
+      "street": "Rathausstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Giesen",
+      "spotCount": 2,
+      "lat": 52.196267600000006,
+      "lng": 9.895646750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/43112651), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "visselhoevede",
+    "name": "Visselhövede",
+    "center": {
+      "lat": 52.98967090000001,
+      "lng": 9.5883722
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "visselhoevede-d1d5c732a2",
+      "city": "visselhoevede",
+      "label": "Soltauer Straße",
+      "street": "Soltauer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Visselhövede",
+      "spotCount": 1,
+      "lat": 52.98967090000001,
+      "lng": 9.5883722,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26496658), ODbL"
+    }
+  ]
+}

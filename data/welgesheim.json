@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "welgesheim",
+    "name": "Welgesheim",
+    "center": {
+      "lat": 49.87958450000001,
+      "lng": 7.95576535
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "welgesheim-e8f9aadee0",
+      "city": "welgesheim",
+      "label": "Außerhalb",
+      "street": "Außerhalb",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Welgesheim",
+      "spotCount": 1,
+      "lat": 49.8795212,
+      "lng": 7.95576535,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1084494886), ODbL"
+    },
+    {
+      "id": "welgesheim-eee0304471",
+      "city": "welgesheim",
+      "label": "Außerhalb",
+      "street": "Außerhalb",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Welgesheim",
+      "spotCount": 1,
+      "lat": 49.87958450000001,
+      "lng": 7.95567705,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1084494887), ODbL"
+    }
+  ]
+}

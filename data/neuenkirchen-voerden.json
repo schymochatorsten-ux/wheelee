@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "neuenkirchen-voerden",
+    "name": "Neuenkirchen-Vörden",
+    "center": {
+      "lat": 52.51263205000001,
+      "lng": 8.068217400000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuenkirchen-voerden-565004df70",
+      "city": "neuenkirchen-voerden",
+      "label": "Am Schulplatz",
+      "street": "Am Schulplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuenkirchen-Vörden",
+      "spotCount": 1,
+      "lat": 52.51263205000001,
+      "lng": 8.06739125,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1123766063), ODbL"
+    },
+    {
+      "id": "neuenkirchen-voerden-74ad7c79e8",
+      "city": "neuenkirchen-voerden",
+      "label": "Hakenstraße 2",
+      "street": "Hakenstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuenkirchen-Vörden",
+      "spotCount": 1,
+      "lat": 52.508188350000005,
+      "lng": 8.068217400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/66632860), ODbL"
+    }
+  ]
+}

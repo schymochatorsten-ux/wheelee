@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wettin-loebejuen",
+    "name": "Wettin-Löbejün",
+    "center": {
+      "lat": 51.53537935,
+      "lng": 11.8800861
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wettin-loebejuen-3f34964316",
+      "city": "wettin-loebejuen",
+      "label": "Saaleuferstraße",
+      "street": "Saaleuferstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wettin-Löbejün",
+      "spotCount": 1,
+      "lat": 51.53537935,
+      "lng": 11.8800861,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/928827859), ODbL"
+    }
+  ]
+}

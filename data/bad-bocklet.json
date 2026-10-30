@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "bad-bocklet",
+    "name": "Bad Bocklet",
+    "center": {
+      "lat": 50.2653529,
+      "lng": 10.075212
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-bocklet-d349330f0b",
+      "city": "bad-bocklet",
+      "label": "Aschacher Straße",
+      "street": "Aschacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Bocklet",
+      "spotCount": 1,
+      "lat": 50.2663748,
+      "lng": 10.07561345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/688561814), ODbL"
+    },
+    {
+      "id": "bad-bocklet-19e07a0bbd",
+      "city": "bad-bocklet",
+      "label": "Aschacher Straße",
+      "street": "Aschacher Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Bocklet",
+      "spotCount": 1,
+      "lat": 50.26514245,
+      "lng": 10.07521305,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/959784759), ODbL"
+    },
+    {
+      "id": "bad-bocklet-f2fae9dce2",
+      "city": "bad-bocklet",
+      "label": "Aschacher Straße",
+      "street": "Aschacher Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Bocklet",
+      "spotCount": 1,
+      "lat": 50.265035700000006,
+      "lng": 10.075212,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/959784760), ODbL"
+    },
+    {
+      "id": "bad-bocklet-b9301cd9ae",
+      "city": "bad-bocklet",
+      "label": "Behindertenparkplatz Bad Bocklet",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Bocklet",
+      "spotCount": 1,
+      "lat": 50.2688641,
+      "lng": 10.047166,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11045311697), ODbL"
+    },
+    {
+      "id": "bad-bocklet-4684b70f3f",
+      "city": "bad-bocklet",
+      "label": "Kurpark",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Bocklet",
+      "spotCount": 5,
+      "lat": 50.2653529,
+      "lng": 10.0746319,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/111266228), ODbL"
+    },
+    {
+      "id": "bad-bocklet-545a5a1f1e",
+      "city": "bad-bocklet",
+      "label": "Schloßstraße 24",
+      "street": "Schloßstraße",
+      "houseNumber": "24",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Bocklet",
+      "spotCount": 4,
+      "lat": 50.254666400000005,
+      "lng": 10.0618193,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1178153605), ODbL"
+    }
+  ]
+}

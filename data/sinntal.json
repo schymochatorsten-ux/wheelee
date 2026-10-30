@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "sinntal",
+    "name": "Sinntal",
+    "center": {
+      "lat": 50.33320195,
+      "lng": 9.7090084
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sinntal-3f358fd18a",
+      "city": "sinntal",
+      "label": "Sinntalstraße 19",
+      "street": "Sinntalstraße",
+      "houseNumber": "19",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sinntal",
+      "spotCount": 2,
+      "lat": 50.33320195,
+      "lng": 9.7090084,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1208449057), ODbL"
+    }
+  ]
+}

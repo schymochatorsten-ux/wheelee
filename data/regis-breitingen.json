@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "regis-breitingen",
+    "name": "Regis-Breitingen",
+    "center": {
+      "lat": 51.09059430000001,
+      "lng": 12.434288900000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "regis-breitingen-852033f888",
+      "city": "regis-breitingen",
+      "label": "Am Stadion",
+      "street": "Am Stadion",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Regis-Breitingen",
+      "spotCount": 1,
+      "lat": 51.09059430000001,
+      "lng": 12.434288900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1320329957), ODbL"
+    }
+  ]
+}

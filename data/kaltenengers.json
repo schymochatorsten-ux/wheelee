@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kaltenengers",
+    "name": "Kaltenengers",
+    "center": {
+      "lat": 50.39529675,
+      "lng": 7.53494435
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kaltenengers-f97615ed67",
+      "city": "kaltenengers",
+      "label": "Industriestraße",
+      "street": "Industriestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kaltenengers",
+      "spotCount": 1,
+      "lat": 50.39529675,
+      "lng": 7.53494435,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/340302408), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "doerth",
+    "name": "Dörth",
+    "center": {
+      "lat": 50.159450250000006,
+      "lng": 7.588222700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "doerth-6d4bcc8c5f",
+      "city": "doerth",
+      "label": "Trinkbornstraße",
+      "street": "Trinkbornstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dörth",
+      "spotCount": 4,
+      "lat": 50.159450250000006,
+      "lng": 7.587058150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1323890766), ODbL"
+    },
+    {
+      "id": "doerth-bef1a783cf",
+      "city": "doerth",
+      "label": "Trinkbornstraße 11d",
+      "street": "Trinkbornstraße",
+      "houseNumber": "11d",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dörth",
+      "spotCount": 1,
+      "lat": 50.1594434,
+      "lng": 7.588222700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1134609711), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bandenitz",
+    "name": "Bandenitz",
+    "center": {
+      "lat": 53.488166500000005,
+      "lng": 11.273406300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bandenitz-24e483af23",
+      "city": "bandenitz",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bandenitz",
+      "spotCount": 5,
+      "lat": 53.488166500000005,
+      "lng": 11.273406300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/302750824), ODbL"
+    }
+  ]
+}

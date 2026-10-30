@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "oberhof",
+    "name": "Oberhof",
+    "center": {
+      "lat": 50.70636210000001,
+      "lng": 10.69517115
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberhof-a21764b66e",
+      "city": "oberhof",
+      "label": "AWO SANO Ferienzentrum Oberhof/ Rennsteig",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberhof",
+      "spotCount": 4,
+      "lat": 50.6965273,
+      "lng": 10.7229349,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1340022881), ODbL"
+    },
+    {
+      "id": "oberhof-8de39ed336",
+      "city": "oberhof",
+      "label": "Straße des Sports",
+      "street": "Straße des Sports",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberhof",
+      "spotCount": 1,
+      "lat": 50.707235950000005,
+      "lng": 10.69517115,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/675707702), ODbL"
+    },
+    {
+      "id": "oberhof-6094f8219c",
+      "city": "oberhof",
+      "label": "Tambacher Straße",
+      "street": "Tambacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberhof",
+      "spotCount": 5,
+      "lat": 50.70636210000001,
+      "lng": 10.694878800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/675702769), ODbL"
+    }
+  ]
+}

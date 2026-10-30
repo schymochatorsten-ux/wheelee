@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "tegernsee",
+    "name": "Tegernsee",
+    "center": {
+      "lat": 47.71141895,
+      "lng": 11.754615900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "tegernsee-efe4da452f",
+      "city": "tegernsee",
+      "label": "Hauptstraße 22",
+      "street": "Hauptstraße",
+      "houseNumber": "22",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Tegernsee",
+      "spotCount": 1,
+      "lat": 47.71141895,
+      "lng": 11.75298055,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/139450585), ODbL"
+    },
+    {
+      "id": "tegernsee-2676c17c1a",
+      "city": "tegernsee",
+      "label": "P3",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Tegernsee",
+      "spotCount": 2,
+      "lat": 47.70894315,
+      "lng": 11.754615900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/36935329), ODbL"
+    },
+    {
+      "id": "tegernsee-4b41bd1b64",
+      "city": "tegernsee",
+      "label": "Tegernsee, Bahnhof",
+      "street": "Tegernsee, Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Tegernsee",
+      "spotCount": 1,
+      "lat": 47.7136804,
+      "lng": 11.757551150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/997978074), ODbL"
+    }
+  ]
+}

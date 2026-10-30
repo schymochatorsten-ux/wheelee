@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "horneburg",
+    "name": "Horneburg",
+    "center": {
+      "lat": 53.50766405,
+      "lng": 9.583963950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "horneburg-5a90119eb9",
+      "city": "horneburg",
+      "label": "Am Poggenpohl",
+      "street": "Am Poggenpohl",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Horneburg",
+      "spotCount": 1,
+      "lat": 53.50393725000001,
+      "lng": 9.59068895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/508495255), ODbL"
+    },
+    {
+      "id": "horneburg-c3c0982f06",
+      "city": "horneburg",
+      "label": "Auedamm",
+      "street": "Auedamm",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Horneburg",
+      "spotCount": 3,
+      "lat": 53.5073903,
+      "lng": 9.583963950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/296646126), ODbL"
+    },
+    {
+      "id": "horneburg-1534f307aa",
+      "city": "horneburg",
+      "label": "Burggraben",
+      "street": "Burggraben",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Horneburg",
+      "spotCount": 1,
+      "lat": 53.50830305000001,
+      "lng": 9.58265455,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/229141626), ODbL"
+    },
+    {
+      "id": "horneburg-d8daaf8f1a",
+      "city": "horneburg",
+      "label": "Burggraben",
+      "street": "Burggraben",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Horneburg",
+      "spotCount": 1,
+      "lat": 53.50766405,
+      "lng": 9.5835146,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1286823042), ODbL"
+    }
+  ]
+}

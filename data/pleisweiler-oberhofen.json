@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "pleisweiler-oberhofen",
+    "name": "Pleisweiler-Oberhofen",
+    "center": {
+      "lat": 49.10817605,
+      "lng": 8.01224685
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pleisweiler-oberhofen-9194c2b603",
+      "city": "pleisweiler-oberhofen",
+      "label": "Im Weidfeld 10A",
+      "street": "Im Weidfeld",
+      "houseNumber": "10A",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pleisweiler-Oberhofen",
+      "spotCount": 1,
+      "lat": 49.10817605,
+      "lng": 8.01156555,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/108199798), ODbL"
+    },
+    {
+      "id": "pleisweiler-oberhofen-9523a2dfa2",
+      "city": "pleisweiler-oberhofen",
+      "label": "Landauer Straße",
+      "street": "Landauer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pleisweiler-Oberhofen",
+      "spotCount": 1,
+      "lat": 49.10648210000001,
+      "lng": 8.01224685,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/102659666), ODbL"
+    }
+  ]
+}

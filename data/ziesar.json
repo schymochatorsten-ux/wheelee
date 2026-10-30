@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ziesar",
+    "name": "Ziesar",
+    "center": {
+      "lat": 52.2668127,
+      "lng": 12.2786252
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ziesar-9e27073a9a",
+      "city": "ziesar",
+      "label": "Schopsdorfer Chaussee",
+      "street": "Schopsdorfer Chaussee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ziesar",
+      "spotCount": 5,
+      "lat": 52.2668127,
+      "lng": 12.2786252,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1474339737), ODbL"
+    }
+  ]
+}

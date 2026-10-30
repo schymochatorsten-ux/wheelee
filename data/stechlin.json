@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "stechlin",
+    "name": "Stechlin",
+    "center": {
+      "lat": 53.14659085,
+      "lng": 13.046748000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "stechlin-70d622a8aa",
+      "city": "stechlin",
+      "label": "Am Vogelsang",
+      "street": "Am Vogelsang",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stechlin",
+      "spotCount": 6,
+      "lat": 53.14659085,
+      "lng": 13.046748000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1095062412), ODbL"
+    }
+  ]
+}

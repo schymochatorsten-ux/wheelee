@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "geldersheim",
+    "name": "Geldersheim",
+    "center": {
+      "lat": 50.061949750000004,
+      "lng": 10.14575815
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "geldersheim-0f1a510e01",
+      "city": "geldersheim",
+      "label": "Oberwerrner Weg",
+      "street": "Oberwerrner Weg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Geldersheim",
+      "spotCount": 1,
+      "lat": 50.061949750000004,
+      "lng": 10.14575815,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1410533559), ODbL"
+    },
+    {
+      "id": "geldersheim-73b526bfbd",
+      "city": "geldersheim",
+      "label": "Oberwerrner Weg",
+      "street": "Oberwerrner Weg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Geldersheim",
+      "spotCount": 1,
+      "lat": 50.06191855,
+      "lng": 10.1457455,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1410533560), ODbL"
+    },
+    {
+      "id": "geldersheim-8b772a8ba0",
+      "city": "geldersheim",
+      "label": "Oberwerrner Weg",
+      "street": "Oberwerrner Weg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Geldersheim",
+      "spotCount": 1,
+      "lat": 50.061887350000006,
+      "lng": 10.1457329,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1410533561), ODbL"
+    },
+    {
+      "id": "geldersheim-db178f36f7",
+      "city": "geldersheim",
+      "label": "Oberwerrner Weg",
+      "street": "Oberwerrner Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Geldersheim",
+      "spotCount": 3,
+      "lat": 50.062137400000005,
+      "lng": 10.145785400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1410533571), ODbL"
+    }
+  ]
+}

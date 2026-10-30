@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "kochel-a-see",
+    "name": "Kochel a.See",
+    "center": {
+      "lat": 47.657369700000004,
+      "lng": 11.356008450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kochel-a-see-dd71d4c540",
+      "city": "kochel-a-see",
+      "label": "Seeweg",
+      "street": "Seeweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kochel a.See",
+      "spotCount": 2,
+      "lat": 47.6559724,
+      "lng": 11.354602850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/839247149), ODbL"
+    },
+    {
+      "id": "kochel-a-see-310ffe5c1b",
+      "city": "kochel-a-see",
+      "label": "Trimini Straße",
+      "street": "Trimini Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kochel a.See",
+      "spotCount": 1,
+      "lat": 47.657369700000004,
+      "lng": 11.356008450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27821104), ODbL"
+    }
+  ]
+}

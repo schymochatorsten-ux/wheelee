@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "friedewald",
+    "name": "Friedewald",
+    "center": {
+      "lat": 50.8538629,
+      "lng": 9.85269135
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "friedewald-eb87542f8b",
+      "city": "friedewald",
+      "label": "Am Schützenhaus",
+      "street": "Am Schützenhaus",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Friedewald",
+      "spotCount": 2,
+      "lat": 50.8538629,
+      "lng": 9.8525268,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/916703419), ODbL"
+    },
+    {
+      "id": "friedewald-eebf389e27",
+      "city": "friedewald",
+      "label": "Am Schützenhaus",
+      "street": "Am Schützenhaus",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Friedewald",
+      "spotCount": 1,
+      "lat": 50.8538214,
+      "lng": 9.85269135,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1430339610), ODbL"
+    },
+    {
+      "id": "friedewald-1951d1e1b8",
+      "city": "friedewald",
+      "label": "Am Schützenhaus",
+      "street": "Am Schützenhaus",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Friedewald",
+      "spotCount": 1,
+      "lat": 50.8538013,
+      "lng": 9.85265085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1430339611), ODbL"
+    },
+    {
+      "id": "friedewald-6d39f42afd",
+      "city": "friedewald",
+      "label": "Parkplatz Seniorenzentrum",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Friedewald",
+      "spotCount": 1,
+      "lat": 50.8813631,
+      "lng": 9.857135600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1418453291), ODbL"
+    }
+  ]
+}

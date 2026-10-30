@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "harbke",
+    "name": "Harbke",
+    "center": {
+      "lat": 52.214720150000005,
+      "lng": 11.080048650000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "harbke-3a9613f06e",
+      "city": "harbke",
+      "label": "Raststätte Marienborn",
+      "street": "Raststätte Marienborn",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Harbke",
+      "spotCount": 1,
+      "lat": 52.214724350000004,
+      "lng": 11.079912750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/925258855), ODbL"
+    },
+    {
+      "id": "harbke-c550bdee2f",
+      "city": "harbke",
+      "label": "Raststätte Marienborn",
+      "street": "Raststätte Marienborn",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Harbke",
+      "spotCount": 1,
+      "lat": 52.214712150000004,
+      "lng": 11.08012055,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1008992448), ODbL"
+    },
+    {
+      "id": "harbke-45ce884c75",
+      "city": "harbke",
+      "label": "Raststätte Marienborn",
+      "street": "Raststätte Marienborn",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Harbke",
+      "spotCount": 1,
+      "lat": 52.214716200000005,
+      "lng": 11.080048650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1008992449), ODbL"
+    },
+    {
+      "id": "harbke-33536a6efc",
+      "city": "harbke",
+      "label": "Raststätte Marienborn",
+      "street": "Raststätte Marienborn",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Harbke",
+      "spotCount": 1,
+      "lat": 52.214720150000005,
+      "lng": 11.07998215,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1008992450), ODbL"
+    },
+    {
+      "id": "harbke-7ec033bc91",
+      "city": "harbke",
+      "label": "Raststätte Marienborn",
+      "street": "Raststätte Marienborn",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Harbke",
+      "spotCount": 4,
+      "lat": 52.21540555,
+      "lng": 11.081102000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1008992727), ODbL"
+    }
+  ]
+}

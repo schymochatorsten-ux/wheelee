@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "ehrenkirchen",
+    "name": "Ehrenkirchen",
+    "center": {
+      "lat": 47.93918395,
+      "lng": 7.725528000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ehrenkirchen-84f544782e",
+      "city": "ehrenkirchen",
+      "label": "Friedhofstraße",
+      "street": "Friedhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ehrenkirchen",
+      "spotCount": 3,
+      "lat": 47.93918395,
+      "lng": 7.725528000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1389987444), ODbL"
+    },
+    {
+      "id": "ehrenkirchen-d02ba91455",
+      "city": "ehrenkirchen",
+      "label": "P+R Kirchhofen Raiffeisenplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ehrenkirchen",
+      "spotCount": 1,
+      "lat": 47.92131495,
+      "lng": 7.73906455,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/384953436), ODbL"
+    },
+    {
+      "id": "ehrenkirchen-13c03293a8",
+      "city": "ehrenkirchen",
+      "label": "P+R Norsingen Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Ehrenkirchen",
+      "spotCount": 3,
+      "lat": 47.93932,
+      "lng": 7.7253944500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/143978510), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "cadenberge",
+    "name": "Cadenberge",
+    "center": {
+      "lat": 53.771584250000004,
+      "lng": 9.0589934
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "cadenberge-4077cd48be",
+      "city": "cadenberge",
+      "label": "Am Markt 1",
+      "street": "Am Markt",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Cadenberge",
+      "spotCount": 1,
+      "lat": 53.771245900000004,
+      "lng": 9.05904905,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1231070248), ODbL"
+    },
+    {
+      "id": "cadenberge-acc75063ba",
+      "city": "cadenberge",
+      "label": "Am Markt 1",
+      "street": "Am Markt",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Cadenberge",
+      "spotCount": 1,
+      "lat": 53.7712299,
+      "lng": 9.05885435,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1231070251), ODbL"
+    },
+    {
+      "id": "cadenberge-efd1c2d033",
+      "city": "cadenberge",
+      "label": "Am Markt 2",
+      "street": "Am Markt",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Cadenberge",
+      "spotCount": 1,
+      "lat": 53.77157085,
+      "lng": 9.059086400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1231070250), ODbL"
+    },
+    {
+      "id": "cadenberge-f7a698ac41",
+      "city": "cadenberge",
+      "label": "Am Markt 3",
+      "street": "Am Markt",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Cadenberge",
+      "spotCount": 1,
+      "lat": 53.771897700000004,
+      "lng": 9.0589934,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1231070249), ODbL"
+    },
+    {
+      "id": "cadenberge-851b09ba23",
+      "city": "cadenberge",
+      "label": "Am Markt 5",
+      "street": "Am Markt",
+      "houseNumber": "5",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Cadenberge",
+      "spotCount": 1,
+      "lat": 53.771584250000004,
+      "lng": 9.05862755,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1231070252), ODbL"
+    },
+    {
+      "id": "cadenberge-a4c6749b9e",
+      "city": "cadenberge",
+      "label": "Am Markt 5",
+      "street": "Am Markt",
+      "houseNumber": "5",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Cadenberge",
+      "spotCount": 1,
+      "lat": 53.7716354,
+      "lng": 9.058610100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1231070253), ODbL"
+    }
+  ]
+}

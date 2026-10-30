@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kalchreuth",
+    "name": "Kalchreuth",
+    "center": {
+      "lat": 49.558491700000005,
+      "lng": 11.13978975
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kalchreuth-e6da457e68",
+      "city": "kalchreuth",
+      "label": "Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kalchreuth",
+      "spotCount": 1,
+      "lat": 49.558491700000005,
+      "lng": 11.13978975,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1205574997), ODbL"
+    }
+  ]
+}

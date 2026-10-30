@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "dermbach",
+    "name": "Dermbach",
+    "center": {
+      "lat": 50.7813421,
+      "lng": 10.1306904
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dermbach-879af5dac6",
+      "city": "dermbach",
+      "label": "Alte Braugasse 2",
+      "street": "Alte Braugasse",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dermbach",
+      "spotCount": 1,
+      "lat": 50.7813421,
+      "lng": 10.1306904,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4360030024), ODbL"
+    }
+  ]
+}

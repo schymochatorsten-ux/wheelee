@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "pommelsbrunn",
+    "name": "Pommelsbrunn",
+    "center": {
+      "lat": 49.503689,
+      "lng": 11.512614200000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pommelsbrunn-2666794cad",
+      "city": "pommelsbrunn",
+      "label": "Bahnhof Pommelsbrunn",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pommelsbrunn",
+      "spotCount": 2,
+      "lat": 49.5011871,
+      "lng": 11.512614200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/202322905), ODbL"
+    },
+    {
+      "id": "pommelsbrunn-9707497ad9",
+      "city": "pommelsbrunn",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pommelsbrunn",
+      "spotCount": 3,
+      "lat": 49.49925895,
+      "lng": 11.555930700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/44202831), ODbL"
+    },
+    {
+      "id": "pommelsbrunn-014932c054",
+      "city": "pommelsbrunn",
+      "label": "Behindertenparkplatz Pommelsbrunn",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pommelsbrunn",
+      "spotCount": 1,
+      "lat": 49.5079908,
+      "lng": 11.4934486,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/471209240), ODbL"
+    },
+    {
+      "id": "pommelsbrunn-edb0408c76",
+      "city": "pommelsbrunn",
+      "label": "Happurger Straße",
+      "street": "Happurger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pommelsbrunn",
+      "spotCount": 7,
+      "lat": 49.506156600000004,
+      "lng": 11.48276055,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32317522), ODbL"
+    },
+    {
+      "id": "pommelsbrunn-49c7ac0558",
+      "city": "pommelsbrunn",
+      "label": "Heuchlinger Straße",
+      "street": "Heuchlinger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pommelsbrunn",
+      "spotCount": 1,
+      "lat": 49.503689,
+      "lng": 11.5133072,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1716359275), ODbL"
+    }
+  ]
+}

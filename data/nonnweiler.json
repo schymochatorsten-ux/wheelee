@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "nonnweiler",
+    "name": "Nonnweiler",
+    "center": {
+      "lat": 49.61658605,
+      "lng": 6.997492600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nonnweiler-66a6e8aaf2",
+      "city": "nonnweiler",
+      "label": "Ringwallstraße",
+      "street": "Ringwallstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nonnweiler",
+      "spotCount": 1,
+      "lat": 49.61658605,
+      "lng": 6.997492600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/819498769), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "grossmehring",
+    "name": "Großmehring",
+    "center": {
+      "lat": 48.7783334,
+      "lng": 11.499736550000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grossmehring-c08bdb5513",
+      "city": "grossmehring",
+      "label": "Junkers-Ring 19",
+      "street": "Junkers-Ring",
+      "houseNumber": "19",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großmehring",
+      "spotCount": 4,
+      "lat": 48.7783334,
+      "lng": 11.499736550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1429960855), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "salach",
+    "name": "Salach",
+    "center": {
+      "lat": 48.6938107,
+      "lng": 9.7299382
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "salach-ee908d1974",
+      "city": "salach",
+      "label": "Austraße",
+      "street": "Austraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Salach",
+      "spotCount": 4,
+      "lat": 48.68909000000001,
+      "lng": 9.7299382,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/61589034), ODbL"
+    },
+    {
+      "id": "salach-fe0db79383",
+      "city": "salach",
+      "label": "Eislinger Straße",
+      "street": "Eislinger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Salach",
+      "spotCount": 1,
+      "lat": 48.6938107,
+      "lng": 9.72926295,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1419620805), ODbL"
+    }
+  ]
+}

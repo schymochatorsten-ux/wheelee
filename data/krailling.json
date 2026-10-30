@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "krailling",
+    "name": "Krailling",
+    "center": {
+      "lat": 48.10352880000001,
+      "lng": 11.410174150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "krailling-8a16444227",
+      "city": "krailling",
+      "label": "Sportplatz 1",
+      "street": "Sportplatz",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Krailling",
+      "spotCount": 1,
+      "lat": 48.1034861,
+      "lng": 11.41013985,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1028728671), ODbL"
+    },
+    {
+      "id": "krailling-890fd04e8b",
+      "city": "krailling",
+      "label": "Sportplatz 1",
+      "street": "Sportplatz",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Krailling",
+      "spotCount": 1,
+      "lat": 48.10352880000001,
+      "lng": 11.410174150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1517732400), ODbL"
+    }
+  ]
+}

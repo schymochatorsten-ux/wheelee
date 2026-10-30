@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "lichterfeld-schacksdorf",
+    "name": "Lichterfeld-Schacksdorf",
+    "center": {
+      "lat": 51.58877820000001,
+      "lng": 13.780750650000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lichterfeld-schacksdorf-6262fcfc6b",
+      "city": "lichterfeld-schacksdorf",
+      "label": "Bergheider Straße",
+      "street": "Bergheider Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lichterfeld-Schacksdorf",
+      "spotCount": 1,
+      "lat": 51.58877820000001,
+      "lng": 13.780750650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1385323587), ODbL"
+    },
+    {
+      "id": "lichterfeld-schacksdorf-51118b24fd",
+      "city": "lichterfeld-schacksdorf",
+      "label": "Bergheider Straße 4",
+      "street": "Bergheider Straße",
+      "houseNumber": "4",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lichterfeld-Schacksdorf",
+      "spotCount": 1,
+      "lat": 51.588776,
+      "lng": 13.7806927,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1385323586), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "nierstein",
+    "name": "Nierstein",
+    "center": {
+      "lat": 49.87232325,
+      "lng": 8.342776650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nierstein-4548634c8d",
+      "city": "nierstein",
+      "label": "Mainzer Straße",
+      "street": "Mainzer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nierstein",
+      "spotCount": 1,
+      "lat": 49.87232325,
+      "lng": 8.342776650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1316241536), ODbL"
+    }
+  ]
+}

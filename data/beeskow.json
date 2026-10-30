@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "beeskow",
+    "name": "Beeskow",
+    "center": {
+      "lat": 52.1774406,
+      "lng": 14.249687050000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "beeskow-4753f82de8",
+      "city": "beeskow",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Beeskow",
+      "spotCount": 1,
+      "lat": 52.17747125,
+      "lng": 14.24983275,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1380856617), ODbL"
+    },
+    {
+      "id": "beeskow-502e5fb2c3",
+      "city": "beeskow",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Beeskow",
+      "spotCount": 1,
+      "lat": 52.1774406,
+      "lng": 14.249840550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1380856618), ODbL"
+    },
+    {
+      "id": "beeskow-3b41a5e8fd",
+      "city": "beeskow",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Beeskow",
+      "spotCount": 1,
+      "lat": 52.177424550000005,
+      "lng": 14.249687050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1380856619), ODbL"
+    },
+    {
+      "id": "beeskow-4fe8a6902a",
+      "city": "beeskow",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Beeskow",
+      "spotCount": 1,
+      "lat": 52.17745525,
+      "lng": 14.24967925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1380856620), ODbL"
+    },
+    {
+      "id": "beeskow-2eda6108be",
+      "city": "beeskow",
+      "label": "Bertholdplatz",
+      "street": "Bertholdplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Beeskow",
+      "spotCount": 1,
+      "lat": 52.16522745,
+      "lng": 14.239274400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/197189617), ODbL"
+    }
+  ]
+}

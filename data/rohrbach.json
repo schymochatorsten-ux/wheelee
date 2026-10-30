@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "rohrbach",
+    "name": "Rohrbach",
+    "center": {
+      "lat": 48.6068188,
+      "lng": 11.57283555
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rohrbach-29ebd952d1",
+      "city": "rohrbach",
+      "label": "Im Gabis",
+      "street": "Im Gabis",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rohrbach",
+      "spotCount": 4,
+      "lat": 48.60626835,
+      "lng": 11.57283555,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/477890260), ODbL"
+    },
+    {
+      "id": "rohrbach-02c00790a6",
+      "city": "rohrbach",
+      "label": "Ladehofstraße",
+      "street": "Ladehofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rohrbach",
+      "spotCount": 1,
+      "lat": 48.6068188,
+      "lng": 11.574022200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25763185), ODbL"
+    },
+    {
+      "id": "rohrbach-1eecc6f90a",
+      "city": "rohrbach",
+      "label": "Rohrbach-Ottersried",
+      "street": "Rohrbach-Ottersried",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rohrbach",
+      "spotCount": 2,
+      "lat": 48.611988249999996,
+      "lng": 11.5423695,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/985218530), ODbL"
+    }
+  ]
+}

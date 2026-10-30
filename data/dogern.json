@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "dogern",
+    "name": "Dogern",
+    "center": {
+      "lat": 47.61370755,
+      "lng": 8.1846343
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dogern-e1967a33a6",
+      "city": "dogern",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dogern",
+      "spotCount": 1,
+      "lat": 47.608575800000004,
+      "lng": 8.1669027,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12813724158), ODbL"
+    },
+    {
+      "id": "dogern-54e93788a4",
+      "city": "dogern",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Dogern",
+      "spotCount": 1,
+      "lat": 47.608653600000004,
+      "lng": 8.167069399999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1383964117), ODbL"
+    },
+    {
+      "id": "dogern-ddef90575d",
+      "city": "dogern",
+      "label": "Bahnhofstraße 3a",
+      "street": "Bahnhofstraße",
+      "houseNumber": "3a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Dogern",
+      "spotCount": 1,
+      "lat": 47.60916005,
+      "lng": 8.168041200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/551981718), ODbL"
+    },
+    {
+      "id": "dogern-ca3f69506c",
+      "city": "dogern",
+      "label": "Schnötstraße 1",
+      "street": "Schnötstraße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dogern",
+      "spotCount": 1,
+      "lat": 47.6138624,
+      "lng": 8.1846343,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1270599302), ODbL"
+    },
+    {
+      "id": "dogern-764c045168",
+      "city": "dogern",
+      "label": "Schnötstraße 1",
+      "street": "Schnötstraße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dogern",
+      "spotCount": 1,
+      "lat": 47.61370755,
+      "lng": 8.18482165,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1270599408), ODbL"
+    },
+    {
+      "id": "dogern-0ff8ed3273",
+      "city": "dogern",
+      "label": "Schnötstraße 1",
+      "street": "Schnötstraße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dogern",
+      "spotCount": 1,
+      "lat": 47.61374215,
+      "lng": 8.184779500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1270599409), ODbL"
+    }
+  ]
+}

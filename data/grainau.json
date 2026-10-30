@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "grainau",
+    "name": "Grainau",
+    "center": {
+      "lat": 47.4572488,
+      "lng": 10.99332015
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grainau-c42205854f",
+      "city": "grainau",
+      "label": "An der Zugspitze 6",
+      "street": "An der Zugspitze",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grainau",
+      "spotCount": 14,
+      "lat": 47.4793541,
+      "lng": 11.055358700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1391096042), ODbL"
+    },
+    {
+      "id": "grainau-6c693e7e74",
+      "city": "grainau",
+      "label": "Eibseestraße",
+      "street": "Eibseestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "05:00-22:00",
+      "district": "Grainau",
+      "spotCount": 3,
+      "lat": 47.4572488,
+      "lng": 10.9917522,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10069882278), ODbL"
+    },
+    {
+      "id": "grainau-625bb75145",
+      "city": "grainau",
+      "label": "Seefeldweg",
+      "street": "Seefeldweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Grainau",
+      "spotCount": 2,
+      "lat": 47.45604540000001,
+      "lng": 10.99332015,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1528797459), ODbL"
+    },
+    {
+      "id": "grainau-224605e705",
+      "city": "grainau",
+      "label": "Seefeldweg",
+      "street": "Seefeldweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Grainau",
+      "spotCount": 5,
+      "lat": 47.4563017,
+      "lng": 10.99270915,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1528797468), ODbL"
+    }
+  ]
+}

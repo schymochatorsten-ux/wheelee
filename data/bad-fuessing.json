@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bad-fuessing",
+    "name": "Bad Füssing",
+    "center": {
+      "lat": 48.350385550000006,
+      "lng": 13.32134585
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-fuessing-7cf7c5e8f3",
+      "city": "bad-fuessing",
+      "label": "Paracelsusstraße",
+      "street": "Paracelsusstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Füssing",
+      "spotCount": 9,
+      "lat": 48.350385550000006,
+      "lng": 13.32137235,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1218778787), ODbL"
+    },
+    {
+      "id": "bad-fuessing-4fbe671103",
+      "city": "bad-fuessing",
+      "label": "Paracelsusstraße",
+      "street": "Paracelsusstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Füssing",
+      "spotCount": 1,
+      "lat": 48.3503307,
+      "lng": 13.321279950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1220544258), ODbL"
+    },
+    {
+      "id": "bad-fuessing-8d1fb6f28a",
+      "city": "bad-fuessing",
+      "label": "Paracelsusstraße",
+      "street": "Paracelsusstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Füssing",
+      "spotCount": 1,
+      "lat": 48.35042775000001,
+      "lng": 13.32134585,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1222978735), ODbL"
+    }
+  ]
+}

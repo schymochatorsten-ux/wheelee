@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "woellstadt",
+    "name": "Wöllstadt",
+    "center": {
+      "lat": 50.28559625,
+      "lng": 8.76476805
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "woellstadt-0afbaf392f",
+      "city": "woellstadt",
+      "label": "Rewe",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wöllstadt",
+      "spotCount": 1,
+      "lat": 50.28559625,
+      "lng": 8.76476805,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/473437351), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "nastaetten",
+    "name": "Nastätten",
+    "center": {
+      "lat": 50.199226800000005,
+      "lng": 7.850107550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nastaetten-917374ef64",
+      "city": "nastaetten",
+      "label": "Kindchesgarten",
+      "street": "Kindchesgarten",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nastätten",
+      "spotCount": 1,
+      "lat": 50.1992571,
+      "lng": 7.85012055,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1491572686), ODbL"
+    },
+    {
+      "id": "nastaetten-aff79b2614",
+      "city": "nastaetten",
+      "label": "Marktplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nastätten",
+      "spotCount": 1,
+      "lat": 50.199901000000004,
+      "lng": 7.8542285000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/373366552), ODbL"
+    },
+    {
+      "id": "nastaetten-bb2c4da47e",
+      "city": "nastaetten",
+      "label": "Rheinstraße",
+      "street": "Rheinstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nastätten",
+      "spotCount": 3,
+      "lat": 50.197351950000005,
+      "lng": 7.8439403500000004,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1358683792), ODbL"
+    },
+    {
+      "id": "nastaetten-4fecab52f2",
+      "city": "nastaetten",
+      "label": "Rheinstraße",
+      "street": "Rheinstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nastätten",
+      "spotCount": 1,
+      "lat": 50.199226800000005,
+      "lng": 7.850107550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1491572685), ODbL"
+    },
+    {
+      "id": "nastaetten-c7946a3915",
+      "city": "nastaetten",
+      "label": "Rheinstraße",
+      "street": "Rheinstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nastätten",
+      "spotCount": 1,
+      "lat": 50.199057800000006,
+      "lng": 7.8500356,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1491572689), ODbL"
+    }
+  ]
+}

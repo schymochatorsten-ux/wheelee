@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "eschenburg",
+    "name": "Eschenburg",
+    "center": {
+      "lat": 50.81521275,
+      "lng": 8.35004035
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eschenburg-372d083bb7",
+      "city": "eschenburg",
+      "label": "Am Honigbaum 28",
+      "street": "Am Honigbaum",
+      "houseNumber": "28",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eschenburg",
+      "spotCount": 2,
+      "lat": 50.81521275,
+      "lng": 8.35004035,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1347941323), ODbL"
+    },
+    {
+      "id": "eschenburg-8780d15882",
+      "city": "eschenburg",
+      "label": "Biedenkopfer Straße 52",
+      "street": "Biedenkopfer Straße",
+      "houseNumber": "52",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eschenburg",
+      "spotCount": 1,
+      "lat": 50.82178230000001,
+      "lng": 8.380653500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1490996958), ODbL"
+    },
+    {
+      "id": "eschenburg-4b53196da7",
+      "city": "eschenburg",
+      "label": "Forsthausstraße 22",
+      "street": "Forsthausstraße",
+      "houseNumber": "22",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eschenburg",
+      "spotCount": 1,
+      "lat": 50.792053550000006,
+      "lng": 8.324761800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1388739230), ODbL"
+    },
+    {
+      "id": "eschenburg-7a87425e8d",
+      "city": "eschenburg",
+      "label": "Rathausstraße 6",
+      "street": "Rathausstraße",
+      "houseNumber": "6",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eschenburg",
+      "spotCount": 1,
+      "lat": 50.7907711,
+      "lng": 8.3246625,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1533348962), ODbL"
+    }
+  ]
+}

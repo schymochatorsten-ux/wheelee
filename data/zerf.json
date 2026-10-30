@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "zerf",
+    "name": "Zerf",
+    "center": {
+      "lat": 49.600675,
+      "lng": 6.686792700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zerf-d61c9176b3",
+      "city": "zerf",
+      "label": "Am Marktplatz 2",
+      "street": "Am Marktplatz",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zerf",
+      "spotCount": 2,
+      "lat": 49.600675,
+      "lng": 6.686792700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1554599451), ODbL"
+    }
+  ]
+}

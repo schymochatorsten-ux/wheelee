@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "nonnenhorn",
+    "name": "Nonnenhorn",
+    "center": {
+      "lat": 47.574886750000005,
+      "lng": 9.61247255
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nonnenhorn-d43a6c384c",
+      "city": "nonnenhorn",
+      "label": "Park ´n Ride Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nonnenhorn",
+      "spotCount": 1,
+      "lat": 47.574886750000005,
+      "lng": 9.61247255,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/155950093), ODbL"
+    }
+  ]
+}

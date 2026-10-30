@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bischoffen",
+    "name": "Bischoffen",
+    "center": {
+      "lat": 50.7023626,
+      "lng": 8.479477500000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bischoffen-cf5cb55d0e",
+      "city": "bischoffen",
+      "label": "Am Markt 3",
+      "street": "Am Markt",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bischoffen",
+      "spotCount": 1,
+      "lat": 50.7023626,
+      "lng": 8.479477500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1420042772), ODbL"
+    },
+    {
+      "id": "bischoffen-13bc2bc254",
+      "city": "bischoffen",
+      "label": "Am See 14",
+      "street": "Am See",
+      "houseNumber": "14",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bischoffen",
+      "spotCount": 1,
+      "lat": 50.70185500000001,
+      "lng": 8.47427755,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/564909899), ODbL"
+    }
+  ]
+}

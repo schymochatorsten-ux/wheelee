@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "gersfeld",
+    "name": "Gersfeld (Rhön)",
+    "center": {
+      "lat": 50.452588250000005,
+      "lng": 9.932263050000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gersfeld-a5d75a8994",
+      "city": "gersfeld",
+      "label": "Berliner Straße",
+      "street": "Berliner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gersfeld (Rhön)",
+      "spotCount": 1,
+      "lat": 50.452588250000005,
+      "lng": 9.90497585,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/137079056), ODbL"
+    },
+    {
+      "id": "gersfeld-823673d2ba",
+      "city": "gersfeld",
+      "label": "Wasserkuppe",
+      "street": "Wasserkuppe",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gersfeld (Rhön)",
+      "spotCount": 1,
+      "lat": 50.4983048,
+      "lng": 9.9469942,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9770439715), ODbL"
+    },
+    {
+      "id": "gersfeld-b62694d6d0",
+      "city": "gersfeld",
+      "label": "Wildpark Gersfeld",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gersfeld (Rhön)",
+      "spotCount": 2,
+      "lat": 50.44210385,
+      "lng": 9.932263050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/53826759), ODbL"
+    }
+  ]
+}

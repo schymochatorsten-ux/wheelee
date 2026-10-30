@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "cavertitz",
+    "name": "Cavertitz",
+    "center": {
+      "lat": 51.3789225,
+      "lng": 13.03791095
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "cavertitz-95a04586dd",
+      "city": "cavertitz",
+      "label": "August-Bebel-Straße",
+      "street": "August-Bebel-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Cavertitz",
+      "spotCount": 1,
+      "lat": 51.3789225,
+      "lng": 13.03791095,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/40392260), ODbL"
+    }
+  ]
+}

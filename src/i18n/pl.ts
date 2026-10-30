@@ -50,7 +50,7 @@ export const pl: Messages = {
   "list.spacesOne": "{count} miejsce",
   "list.spacesMany": "miejsc: {count}",
   "list.nearby": "Parkingi w pobliżu",
-  "list.nearest": "Najbliższy parking",
+  "list.nearest": "Najbliższe parkingi",
   "list.noLocation": "Bez dostępu do lokalizacji odległość liczona jest od centrum miasta.",
   "list.showDetails": "Pokaż szczegóły",
   "list.unlocated": "Bez dokładnej pozycji ({count})",
@@ -70,6 +70,9 @@ export const pl: Messages = {
   "list.osmNote":
     "Dane z OpenStreetMap pokazują głównie parkingi z wyznaczonymi miejscami dla osób z niepełnosprawnościami, a nie pojedyncze miejsca przy krawężniku, i są niekompletne – brak wpisu nie oznacza, że nie ma tam miejsc dla osób z niepełnosprawnościami.",
   "list.allCities": "Wszystkie miasta ({count}) ze źródłem",
+  "list.cityFilter": "Szukaj miasta",
+  "list.cityShown": "Pokazano {shown} z {count} – wpisz nazwę, aby znaleźć więcej.",
+  "list.cityNone": "Nie znaleziono miasta.",
   "list.cityCounts": ": lokalizacji: {spots}, miejsc: {spaces}",
   "list.source": "Źródło: {source}",
   "list.licenseMissing": " · licencja nie podana",
@@ -92,6 +95,9 @@ export const pl: Messages = {
   "details.confirmed":
     "{strong} – urząd miasta i OpenStreetMap podają to miejsce w tym samym punkcie.",
   "details.confirmedStrong": "Potwierdzone przez dwa źródła",
+  "details.osmOnly":
+    "{strong} – oficjalna lista miasta nie zawiera tego miejsca. Może być nowe lub tam brakować; informacja jest niesprawdzona, sprawdź na miejscu.",
+  "details.osmOnlyStrong": "Tylko w OpenStreetMap",
   "details.approx":
     "Pozycja jest znana tylko w przybliżeniu – miejsce parkingowe leży przy tej ulicy, dokładny punkt może się różnić.",
   "details.source": "Źródło: {source}",
@@ -121,7 +127,7 @@ export const pl: Messages = {
 
   "settings.appearance": "Wygląd",
   "settings.appearanceNote":
-    "Ustawieniem domyślnym jest ciemny – aplikacji często używa się w samochodzie i po ciemku.",
+    "Domyślnie ustawiony jest ciemny motyw – aplikacji często używa się w samochodzie i po ciemku.",
   "settings.language": "Język",
   "settings.languageNote":
     "Najpierw proponowany jest język Twojej przeglądarki. Z kontem Twój wybór obowiązuje na wszystkich urządzeniach.",
@@ -149,7 +155,7 @@ export const pl: Messages = {
   "offline.unsupported": "Ta przeglądarka nie może zapisywać danych do użytku offline.",
   "offline.none": "Na tym urządzeniu nie zapisano jeszcze żadnego miasta.",
   "offline.listLabel": "Zapisane na tym urządzeniu",
-  "offline.entry": "lokalizacji: {count}, zajęte: {size}",
+  "offline.entry": "lokalizacji: {count}, zajmuje {size}",
   "offline.dataDate": "Stan danych: {date}",
   "offline.savedDate": "Pobrano {date}",
   "offline.staleData":
@@ -161,10 +167,12 @@ export const pl: Messages = {
     "Coś jest nie tak? Brakuje miejsca parkingowego albo go już nie ma? Zgłoszenia to jedyne źródło, które zauważa takie zmiany. Jeśli chcesz, możesz podać adres e-mail – wtedy odpowiemy.",
   "settings.account": "Konto",
   "settings.accountNote":
-    "Opcjonalnie. Aplikacja działa w pełni także bez konta – łącznie ze zgłaszaniem błędów. Konto tylko zapamiętuje, że Twoje zgłoszenia należą do siebie.",
+    "Opcjonalnie. Aplikacja działa w pełni także bez konta – łącznie ze zgłaszaniem błędów. Konto tylko zapamiętuje, że Twoje zgłoszenia są ze sobą powiązane.",
   "settings.legal": "Informacje prawne",
   "settings.imprint": "Impressum (nota prawna)",
   "settings.privacy": "Polityka prywatności",
+  "settings.sources": "Źródła i licencje",
+  "settings.coverage": "Pokrycie danych",
 
   "account.emailInvalid": "Ten adres e-mail wygląda niepoprawnie.",
   "account.passwordTooShort": "Hasło musi mieć co najmniej {min} znaków.",
@@ -180,7 +188,7 @@ export const pl: Messages = {
   "account.oldPassword": "Obecne hasło",
   "account.newPassword": "Nowe hasło",
   "account.changePasswordNote":
-    "Wszystkie inne urządzenia, na których jesteś zalogowany, zostaną wylogowane. To urządzenie pozostaje zalogowane.",
+    "Wszystkie inne urządzenia, na których trwa sesja, zostaną wylogowane. To urządzenie pozostaje zalogowane.",
   "account.passwordChanged": "Hasło zmienione. Wszystkie inne sesje zostały zakończone.",
   "account.cancel": "Anuluj",
   "account.export": "Pobierz moje dane",
@@ -265,7 +273,7 @@ export const pl: Messages = {
   "feedback.reportAbout": "Zgłoszenie dotyczy:",
   "feedback.yourSuggestion": "Twoja sugestia",
   "feedback.whatIsWrong": "Co jest nie tak?",
-  "feedback.placeholderSuggestion": "Na przykład: dobrze byłoby mieć promień 2 km.",
+  "feedback.placeholderSuggestion": "Na przykład: w wyborze promienia przydałaby się opcja 2 km.",
   "feedback.placeholderError":
     "Na przykład: miejsce parkingowe przy Bahnhofstraße 4 zlikwidowano, jest tam teraz stacja ładowania.",
   "feedback.charsLeft": "Pozostało znaków: {count}.",
@@ -288,7 +296,7 @@ export const pl: Messages = {
   "rating.voted": "Oddano głos. Ponowne dotknięcie wycofuje go, drugi przycisk go odwraca.",
   "rating.votes": "{label}, głosów: {count}",
 
-  "admin.unauthorized": "Niezalogowano lub brak uprawnień.",
+  "admin.unauthorized": "Nie zalogowano lub brak uprawnień.",
   "admin.noConnection": "Brak połączenia.",
   "admin.reload": "Załaduj ponownie",
   "admin.loading": "Ładowanie …",
@@ -321,7 +329,7 @@ export const pl: Messages = {
   "reported.confirmedGone": "Nie ma w ostatnim imporcie – zgłoszenie zostało więc potwierdzone.",
 
   "feedback.status.neu": "Nowe",
-  "feedback.status.in_arbeit": "W trakcie",
+  "feedback.status.in_arbeit": "W opracowaniu",
   "feedback.status.umgesetzt": "Zrealizowane",
   "feedback.status.verworfen": "Odrzucone",
 
@@ -393,7 +401,7 @@ export const pl: Messages = {
   "view.map": "Mapa",
   "view.list": "Lista",
   "view.settings": "Ustawienia",
-  "view.feedback": "Zgłoszenie",
+  "view.feedback": "Zgłoszenia",
   "view.choose": "Wybierz widok",
   "map.loading": "Ładowanie mapy …",
   "map.locating": "Ustalanie Twojej lokalizacji …",
@@ -444,7 +452,7 @@ export const pl: Messages = {
     "Dane operatora nie są ustawione na tym serwerze. To błąd konfiguracji, nie przeoczenie w tekście – strona niczego tu nie zmyśla.",
   "legal.missingHow": "Do ustawienia są {name}, {address} i {email}; szablon znajduje się w {template}.",
 
-  "api.notSignedIn": "Niezalogowano.",
+  "api.notSignedIn": "Nie zalogowano.",
   "api.invalidRequest": "Nieprawidłowe żądanie.",
   "api.unknownMapsApp": "Nieznana aplikacja map.",
   "api.unknownLanguage": "Nieznany język.",
@@ -497,7 +505,7 @@ export const pl: Messages = {
   "invitation.submit": "Załóż konto",
   "invitation.missing": "Ten link nie zawiera zaproszenia.",
   "invitation.failed": "Nie udało się. Spróbuj ponownie.",
-  "invitation.done": "Twoje konto zostało założone i jesteś zalogowany.",
+  "invitation.done": "Twoje konto zostało założone i zalogowano Cię.",
   "invitation.toApp": "Przejdź do mapy",
 
   // Benutzerverwaltung (ToDo 18.3)
@@ -518,7 +526,7 @@ export const pl: Messages = {
   "users.you": "Ty",
   "users.disabled": "zablokowane",
   "users.lastLogin": "Ostatnie logowanie: {date}",
-  "users.never": "nigdy się nie logowano",
+  "users.never": "brak logowań",
   "users.search": "Szukaj kont (fragment adresu e-mail)",
   "users.count": "{shown} z {total} kont – najpierw administratorzy i konta zablokowane",
   "users.noMatch": "Żadne konto nie pasuje do wyszukiwania.",
@@ -557,22 +565,22 @@ export const pl: Messages = {
   "api.emailSame": "To już jest adres tego konta.",
   "mail.reset.subject": "wheelee: zresetuj hasło",
   "mail.reset.body":
-    "Cześć,\n\ntym linkiem ustawisz nowe hasło w wheelee. Jest ważny przez {minutes} minut i działa tylko raz:\n\n{link}\n\nJeśli to nie Ty o to prosiłeś, zignoruj tę wiadomość – hasło pozostanie bez zmian.\n",
+    "Cześć,\n\ntym linkiem ustawisz nowe hasło w wheelee. Jest ważny przez {minutes} minut i działa tylko raz:\n\n{link}\n\nJeśli to nie była Twoja prośba, zignoruj tę wiadomość – hasło pozostanie bez zmian.\n",
   "mail.email.subject": "wheelee: potwierdź nowy adres e-mail",
   "mail.email.body":
-    "Cześć,\n\ntym linkiem potwierdzasz ten adres jako nowy adres e-mail konta w wheelee. Jest ważny przez {minutes} minut i działa tylko raz:\n\n{link}\n\nJeśli to nie Ty o to prosiłeś, zignoruj tę wiadomość – nic się nie zmieni.\n",
+    "Cześć,\n\ntym linkiem potwierdzasz ten adres jako nowy adres e-mail konta w wheelee. Jest ważny przez {minutes} minut i działa tylko raz:\n\n{link}\n\nJeśli to nie była Twoja prośba, zignoruj tę wiadomość – nic się nie zmieni.\n",
   "account.forgot": "Nie pamiętasz hasła?",
   "account.forgotIntro": "Wyślemy link do zresetowania na adres Twojego konta.",
   "account.forgotSend": "Wyślij link",
   "account.forgotSent":
     "Jeśli istnieje konto z tym adresem, wysłaliśmy link. Jest ważny przez godzinę.",
   "reset.title": "Ustaw nowe hasło",
-  "reset.intro": "Wybierz nowe hasło. Potem zostaniesz wylogowany wszędzie i zalogujesz się nim ponownie.",
+  "reset.intro": "Wybierz nowe hasło. Potem nastąpi wylogowanie ze wszystkich urządzeń i zalogujesz się nim ponownie.",
   "reset.password": "Nowe hasło",
   "reset.submit": "Zapisz hasło",
   "reset.missing": "Ten link nie zawiera tokenu.",
   "reset.failed": "Nie udało się. Spróbuj ponownie.",
-  "reset.done": "Twoje hasło zostało zmienione. Możesz się teraz nim zalogować.",
+  "reset.done": "Twoje hasło zostało zmienione. Możesz teraz zalogować się nowym hasłem.",
   "emailChange.open": "Zmień adres e-mail",
   "emailChange.note":
     "Wyślemy link na nowy adres. Zacznie obowiązywać dopiero po jego otwarciu; do tego czasu obowiązuje dotychczasowy.",
@@ -584,7 +592,7 @@ export const pl: Messages = {
   "confirmEmail.title": "Potwierdź adres e-mail",
   "confirmEmail.intro": "Jednym kliknięciem ten adres stanie się adresem e-mail Twojego konta.",
   "confirmEmail.submit": "Użyj tego adresu",
-  "confirmEmail.done": "Gotowe – Twoje konto należy teraz do {email}.",
+  "confirmEmail.done": "Gotowe – Twoje konto jest teraz powiązane z {email}.",
   "confirmEmail.missing": "Ten link nie zawiera tokenu.",
   "confirmEmail.failed": "Nie udało się. Poproś o nowy link.",
 };

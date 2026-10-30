@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "forst-bw",
+    "name": "Forst",
+    "center": {
+      "lat": 49.1616561,
+      "lng": 8.5701708
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "forst-bw-b7d0efe49d",
+      "city": "forst-bw",
+      "label": "Bruchsal Ost",
+      "street": "Bruchsal Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Forst",
+      "spotCount": 5,
+      "lat": 49.16179805,
+      "lng": 8.5701708,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/350475258), ODbL"
+    },
+    {
+      "id": "forst-bw-e693461d87",
+      "city": "forst-bw",
+      "label": "Bruchsal West",
+      "street": "Bruchsal West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Forst",
+      "spotCount": 6,
+      "lat": 49.1616561,
+      "lng": 8.5674591,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5621804679), ODbL"
+    },
+    {
+      "id": "forst-bw-ac4cbbd52b",
+      "city": "forst-bw",
+      "label": "Bruchsal West",
+      "street": "Bruchsal West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Forst",
+      "spotCount": 6,
+      "lat": 49.1616487,
+      "lng": 8.5674693,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/350475250), ODbL"
+    },
+    {
+      "id": "forst-bw-ad4592d21e",
+      "city": "forst-bw",
+      "label": "Langestraße",
+      "street": "Langestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Forst",
+      "spotCount": 1,
+      "lat": 49.15304210000001,
+      "lng": 8.5870501,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1083190116), ODbL"
+    }
+  ]
+}

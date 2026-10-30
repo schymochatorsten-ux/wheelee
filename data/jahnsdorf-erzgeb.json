@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "jahnsdorf-erzgeb",
+    "name": "Jahnsdorf/Erzgeb.",
+    "center": {
+      "lat": 50.75550055,
+      "lng": 12.860047250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "jahnsdorf-erzgeb-80b2a887b5",
+      "city": "jahnsdorf-erzgeb",
+      "label": "Straße der Jugend",
+      "street": "Straße der Jugend",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jahnsdorf/Erzgeb.",
+      "spotCount": 2,
+      "lat": 50.75550055,
+      "lng": 12.860047250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/40631977), ODbL"
+    }
+  ]
+}

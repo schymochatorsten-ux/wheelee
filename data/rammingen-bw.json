@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "rammingen-bw",
+    "name": "Rammingen",
+    "center": {
+      "lat": 48.51242020000001,
+      "lng": 10.19050005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rammingen-bw-5a0398fc41",
+      "city": "rammingen-bw",
+      "label": "Bahnhof",
+      "street": "Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Rammingen",
+      "spotCount": 1,
+      "lat": 48.51242020000001,
+      "lng": 10.19050005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/380060003), ODbL"
+    },
+    {
+      "id": "rammingen-bw-15bdace723",
+      "city": "rammingen-bw",
+      "label": "Bahnhof",
+      "street": "Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rammingen",
+      "spotCount": 1,
+      "lat": 48.512358750000004,
+      "lng": 10.190495250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1387042111), ODbL"
+    }
+  ]
+}

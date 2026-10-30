@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "adelsried",
+    "name": "Adelsried",
+    "center": {
+      "lat": 48.41548825000001,
+      "lng": 10.724104950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "adelsried-795c1703ef",
+      "city": "adelsried",
+      "label": "Behindertenparkplatz Adelsried",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Adelsried",
+      "spotCount": 4,
+      "lat": 48.41548825000001,
+      "lng": 10.724104950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/304768085), ODbL"
+    }
+  ]
+}

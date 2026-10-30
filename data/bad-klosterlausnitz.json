@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bad-klosterlausnitz",
+    "name": "Bad Klosterlausnitz",
+    "center": {
+      "lat": 50.91918985,
+      "lng": 11.864354600000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-klosterlausnitz-d7430b42c6",
+      "city": "bad-klosterlausnitz",
+      "label": "Hermann-Sachse-Straße 29",
+      "street": "Hermann-Sachse-Straße",
+      "houseNumber": "29",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Klosterlausnitz",
+      "spotCount": 1,
+      "lat": 50.91918985,
+      "lng": 11.864354600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1198115901), ODbL"
+    },
+    {
+      "id": "bad-klosterlausnitz-7570dd83c2",
+      "city": "bad-klosterlausnitz",
+      "label": "Hermann-Sachse-Straße 44",
+      "street": "Hermann-Sachse-Straße",
+      "houseNumber": "44",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Klosterlausnitz",
+      "spotCount": 1,
+      "lat": 50.91793800000001,
+      "lng": 11.86154085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/400017925), ODbL"
+    }
+  ]
+}

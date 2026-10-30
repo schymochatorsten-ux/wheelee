@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "korswandt",
+    "name": "Korswandt",
+    "center": {
+      "lat": 53.9177995,
+      "lng": 14.164851350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "korswandt-e4762a89ad",
+      "city": "korswandt",
+      "label": "Bergstraße",
+      "street": "Bergstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Korswandt",
+      "spotCount": 1,
+      "lat": 53.9177995,
+      "lng": 14.164851350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/179242023), ODbL"
+    }
+  ]
+}

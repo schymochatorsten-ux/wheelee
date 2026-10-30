@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "damp",
+    "name": "Damp",
+    "center": {
+      "lat": 54.584027000000006,
+      "lng": 10.02234885
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "damp-3573132107",
+      "city": "damp",
+      "label": "Hanseaticring",
+      "street": "Hanseaticring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Damp",
+      "spotCount": 1,
+      "lat": 54.5842747,
+      "lng": 10.02234885,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/99082742), ODbL"
+    },
+    {
+      "id": "damp-35e1383820",
+      "city": "damp",
+      "label": "Hanseaticring",
+      "street": "Hanseaticring",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Damp",
+      "spotCount": 1,
+      "lat": 54.584027000000006,
+      "lng": 10.02184405,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1093063061), ODbL"
+    },
+    {
+      "id": "damp-a4bd57a1df",
+      "city": "damp",
+      "label": "Zur Niebymole",
+      "street": "Zur Niebymole",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Damp",
+      "spotCount": 4,
+      "lat": 54.58127415,
+      "lng": 10.025365200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34486178), ODbL"
+    }
+  ]
+}

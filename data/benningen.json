@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "benningen",
+    "name": "Benningen am Neckar",
+    "center": {
+      "lat": 48.9445545,
+      "lng": 9.244339700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "benningen-88aaa8b0b0",
+      "city": "benningen",
+      "label": "Studionstraße",
+      "street": "Studionstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Benningen am Neckar",
+      "spotCount": 1,
+      "lat": 48.9445545,
+      "lng": 9.24366165,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1288264695), ODbL"
+    },
+    {
+      "id": "benningen-fe92adb6b4",
+      "city": "benningen",
+      "label": "Studionstraße",
+      "street": "Studionstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Benningen am Neckar",
+      "spotCount": 1,
+      "lat": 48.94453265,
+      "lng": 9.244339700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1288264696), ODbL"
+    }
+  ]
+}

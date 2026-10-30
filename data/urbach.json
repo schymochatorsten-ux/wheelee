@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "urbach",
+    "name": "Urbach",
+    "center": {
+      "lat": 48.810198850000006,
+      "lng": 9.575458100000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "urbach-4515f90ba0",
+      "city": "urbach",
+      "label": "Freibadparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Urbach",
+      "spotCount": 1,
+      "lat": 48.8244155,
+      "lng": 9.575458100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/76072050), ODbL"
+    },
+    {
+      "id": "urbach-8adb6224be",
+      "city": "urbach",
+      "label": "Mühlwiesen",
+      "street": "Mühlwiesen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Urbach",
+      "spotCount": 2,
+      "lat": 48.810198850000006,
+      "lng": 9.5698999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/988313025), ODbL"
+    },
+    {
+      "id": "urbach-c942440e20",
+      "city": "urbach",
+      "label": "Seestraße",
+      "street": "Seestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Urbach",
+      "spotCount": 2,
+      "lat": 48.805076299999996,
+      "lng": 9.575730450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/23056560), ODbL"
+    },
+    {
+      "id": "urbach-43724be4e7",
+      "city": "urbach",
+      "label": "Seestraße",
+      "street": "Seestraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Urbach",
+      "spotCount": 2,
+      "lat": 48.80504155,
+      "lng": 9.5754199,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1411248278), ODbL"
+    }
+  ]
+}

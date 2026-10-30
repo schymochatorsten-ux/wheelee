@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "schnaittenbach",
+    "name": "Schnaittenbach",
+    "center": {
+      "lat": 49.55007165000001,
+      "lng": 12.00764345
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schnaittenbach-e7d4437b8b",
+      "city": "schnaittenbach",
+      "label": "Bischof-Rosner-Platz 1",
+      "street": "Bischof-Rosner-Platz",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schnaittenbach",
+      "spotCount": 2,
+      "lat": 49.545793450000005,
+      "lng": 12.00070865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/51259117), ODbL"
+    },
+    {
+      "id": "schnaittenbach-0309f06c8b",
+      "city": "schnaittenbach",
+      "label": "Jahnstraße",
+      "street": "Jahnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schnaittenbach",
+      "spotCount": 2,
+      "lat": 49.55569985,
+      "lng": 12.00764345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/52285325), ODbL"
+    },
+    {
+      "id": "schnaittenbach-2928f370f3",
+      "city": "schnaittenbach",
+      "label": "Wernberger Straße",
+      "street": "Wernberger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schnaittenbach",
+      "spotCount": 2,
+      "lat": 49.55007165000001,
+      "lng": 12.010917200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/49426804), ODbL"
+    }
+  ]
+}

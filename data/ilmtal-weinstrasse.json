@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ilmtal-weinstrasse",
+    "name": "Ilmtal-Weinstraße",
+    "center": {
+      "lat": 51.00469515,
+      "lng": 11.369305050000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ilmtal-weinstrasse-4e90b96042",
+      "city": "ilmtal-weinstrasse",
+      "label": "Dorfstraße",
+      "street": "Dorfstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ilmtal-Weinstraße",
+      "spotCount": 1,
+      "lat": 51.00469515,
+      "lng": 11.369305050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/78841245), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bellenberg",
+    "name": "Bellenberg",
+    "center": {
+      "lat": 48.2563449,
+      "lng": 10.090625900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bellenberg-bc7d637c35",
+      "city": "bellenberg",
+      "label": "Bahnhofstraße 17",
+      "street": "Bahnhofstraße",
+      "houseNumber": "17",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bellenberg",
+      "spotCount": 1,
+      "lat": 48.25464290000001,
+      "lng": 10.08834985,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/318689223), ODbL"
+    },
+    {
+      "id": "bellenberg-567f0a7ac8",
+      "city": "bellenberg",
+      "label": "Bauerngasse",
+      "street": "Bauerngasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bellenberg",
+      "spotCount": 3,
+      "lat": 48.256901750000004,
+      "lng": 10.0939074,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/946908866), ODbL"
+    },
+    {
+      "id": "bellenberg-8353729a13",
+      "city": "bellenberg",
+      "label": "Schulstraße",
+      "street": "Schulstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bellenberg",
+      "spotCount": 1,
+      "lat": 48.2563449,
+      "lng": 10.090625900000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11710539263), ODbL"
+    }
+  ]
+}

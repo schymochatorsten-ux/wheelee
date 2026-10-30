@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "biberach-bw",
+    "name": "Biberach",
+    "center": {
+      "lat": 48.3441409,
+      "lng": 8.0287568
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "biberach-bw-4f341d6404",
+      "city": "biberach-bw",
+      "label": "Brucherstraße",
+      "street": "Brucherstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Biberach",
+      "spotCount": 2,
+      "lat": 48.3441409,
+      "lng": 8.0287568,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/388491945), ODbL"
+    }
+  ]
+}

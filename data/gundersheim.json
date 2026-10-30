@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "gundersheim",
+    "name": "Gundersheim",
+    "center": {
+      "lat": 49.6976383,
+      "lng": 8.20284015
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gundersheim-c2d736adf6",
+      "city": "gundersheim",
+      "label": "Neuweg",
+      "street": "Neuweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gundersheim",
+      "spotCount": 1,
+      "lat": 49.6976383,
+      "lng": 8.20284015,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1063509042), ODbL"
+    }
+  ]
+}

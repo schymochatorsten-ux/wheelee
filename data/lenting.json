@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "lenting",
+    "name": "Lenting",
+    "center": {
+      "lat": 48.81388625,
+      "lng": 11.46084845
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lenting-88a6e3403f",
+      "city": "lenting",
+      "label": "Nürnberger Straße",
+      "street": "Nürnberger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Lenting",
+      "spotCount": 3,
+      "lat": 48.81388625,
+      "lng": 11.46084845,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/232365779), ODbL"
+    },
+    {
+      "id": "lenting-2ad5703922",
+      "city": "lenting",
+      "label": "Veilchenstraße",
+      "street": "Veilchenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lenting",
+      "spotCount": 1,
+      "lat": 48.80627105000001,
+      "lng": 11.452459000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/65491947), ODbL"
+    }
+  ]
+}

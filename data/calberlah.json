@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "calberlah",
+    "name": "Calberlah",
+    "center": {
+      "lat": 52.42736825,
+      "lng": 10.624232200000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "calberlah-10d4699eda",
+      "city": "calberlah",
+      "label": "Dahlienweg",
+      "street": "Dahlienweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Calberlah",
+      "spotCount": 1,
+      "lat": 52.42736825,
+      "lng": 10.624232200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/180101995), ODbL"
+    },
+    {
+      "id": "calberlah-13d7c18492",
+      "city": "calberlah",
+      "label": "Windmühlenweg 2",
+      "street": "Windmühlenweg",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Calberlah",
+      "spotCount": 2,
+      "lat": 52.417928700000004,
+      "lng": 10.62415145,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/117778269), ODbL"
+    }
+  ]
+}

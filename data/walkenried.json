@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "walkenried",
+    "name": "Walkenried",
+    "center": {
+      "lat": 51.616680900000006,
+      "lng": 10.62240065
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "walkenried-6d56b69c31",
+      "city": "walkenried",
+      "label": "Steinweg 4a",
+      "street": "Steinweg",
+      "houseNumber": "4a",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Walkenried",
+      "spotCount": 1,
+      "lat": 51.5828264,
+      "lng": 10.6186808,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1460594653), ODbL"
+    },
+    {
+      "id": "walkenried-d505157ae7",
+      "city": "walkenried",
+      "label": "Waldsaumweg",
+      "street": "Waldsaumweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Walkenried",
+      "spotCount": 14,
+      "lat": 51.616680900000006,
+      "lng": 10.62240065,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1195870874), ODbL"
+    }
+  ]
+}

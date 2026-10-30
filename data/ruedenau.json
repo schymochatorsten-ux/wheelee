@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ruedenau",
+    "name": "Rüdenau",
+    "center": {
+      "lat": 49.7124338,
+      "lng": 9.18101575
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ruedenau-d6c432ec70",
+      "city": "ruedenau",
+      "label": "Rathausstraße",
+      "street": "Rathausstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rüdenau",
+      "spotCount": 1,
+      "lat": 49.7124338,
+      "lng": 9.18101575,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/945138861), ODbL"
+    }
+  ]
+}

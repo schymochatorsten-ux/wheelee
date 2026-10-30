@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "olbersdorf",
+    "name": "Olbersdorf",
+    "center": {
+      "lat": 50.8698397,
+      "lng": 14.7566685
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "olbersdorf-eda2275059",
+      "city": "olbersdorf",
+      "label": "Artur-Neumann-Straße",
+      "street": "Artur-Neumann-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Olbersdorf",
+      "spotCount": 2,
+      "lat": 50.8683502,
+      "lng": 14.7566685,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24021308), ODbL"
+    },
+    {
+      "id": "olbersdorf-5db2793290",
+      "city": "olbersdorf",
+      "label": "Bertsdorfer Straße",
+      "street": "Bertsdorfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Olbersdorf",
+      "spotCount": 4,
+      "lat": 50.8698397,
+      "lng": 14.747186000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24006040), ODbL"
+    },
+    {
+      "id": "olbersdorf-0a4152dab1",
+      "city": "olbersdorf",
+      "label": "Südstraße",
+      "street": "Südstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Olbersdorf",
+      "spotCount": 5,
+      "lat": 50.8940053,
+      "lng": 14.782562300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/496422231), ODbL"
+    }
+  ]
+}

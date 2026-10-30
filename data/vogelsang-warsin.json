@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "vogelsang-warsin",
+    "name": "Vogelsang-Warsin",
+    "center": {
+      "lat": 53.729979900000004,
+      "lng": 14.179146500000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "vogelsang-warsin-a2322447e8",
+      "city": "vogelsang-warsin",
+      "label": "Sanddüne 1",
+      "street": "Sanddüne",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vogelsang-Warsin",
+      "spotCount": 6,
+      "lat": 53.729979900000004,
+      "lng": 14.179117900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1054071010), ODbL"
+    },
+    {
+      "id": "vogelsang-warsin-935c1e2421",
+      "city": "vogelsang-warsin",
+      "label": "Sanddüne 2",
+      "street": "Sanddüne",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vogelsang-Warsin",
+      "spotCount": 1,
+      "lat": 53.72982195,
+      "lng": 14.179146500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1054071011), ODbL"
+    }
+  ]
+}

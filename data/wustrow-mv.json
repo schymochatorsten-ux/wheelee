@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "wustrow-mv",
+    "name": "Wustrow",
+    "center": {
+      "lat": 54.347353950000006,
+      "lng": 12.397098800000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wustrow-mv-4b058d9f5e",
+      "city": "wustrow-mv",
+      "label": "Barnstorf",
+      "street": "Barnstorf",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wustrow",
+      "spotCount": 2,
+      "lat": 54.33666100000001,
+      "lng": 12.41051255,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/497139679), ODbL"
+    },
+    {
+      "id": "wustrow-mv-2b3869139d",
+      "city": "wustrow-mv",
+      "label": "Karl-Marx-Straße 18b",
+      "street": "Karl-Marx-Straße",
+      "houseNumber": "18b",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wustrow",
+      "spotCount": 4,
+      "lat": 54.347353950000006,
+      "lng": 12.397363350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/240714825), ODbL"
+    },
+    {
+      "id": "wustrow-mv-8c3ad947c0",
+      "city": "wustrow-mv",
+      "label": "Parkstraße 1",
+      "street": "Parkstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wustrow",
+      "spotCount": 1,
+      "lat": 54.34619995,
+      "lng": 12.397098800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/289879089), ODbL"
+    },
+    {
+      "id": "wustrow-mv-b443fdf473",
+      "city": "wustrow-mv",
+      "label": "Strandstraße 58",
+      "street": "Strandstraße",
+      "houseNumber": "58",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wustrow",
+      "spotCount": 2,
+      "lat": 54.3515517,
+      "lng": 12.387427,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10087658844), ODbL"
+    },
+    {
+      "id": "wustrow-mv-b2871759d2",
+      "city": "wustrow-mv",
+      "label": "Zur Glippe",
+      "street": "Zur Glippe",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wustrow",
+      "spotCount": 2,
+      "lat": 54.35178235000001,
+      "lng": 12.387800600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1175167449), ODbL"
+    }
+  ]
+}

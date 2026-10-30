@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "mertingen",
+    "name": "Mertingen",
+    "center": {
+      "lat": 48.65612455,
+      "lng": 10.81713775
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mertingen-731566fe23",
+      "city": "mertingen",
+      "label": "Bäumenheimer Straße",
+      "street": "Bäumenheimer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Mertingen",
+      "spotCount": 1,
+      "lat": 48.65580735,
+      "lng": 10.816461100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1004787794), ODbL"
+    },
+    {
+      "id": "mertingen-e733e59f98",
+      "city": "mertingen",
+      "label": "Gewerbepark Ost",
+      "street": "Gewerbepark Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mertingen",
+      "spotCount": 3,
+      "lat": 48.660858700000006,
+      "lng": 10.82552805,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/257988246), ODbL"
+    },
+    {
+      "id": "mertingen-08bbf4a572",
+      "city": "mertingen",
+      "label": "Im Schmutterfeld",
+      "street": "Im Schmutterfeld",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Mertingen",
+      "spotCount": 1,
+      "lat": 48.65612455,
+      "lng": 10.81713775,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1004787793), ODbL"
+    }
+  ]
+}

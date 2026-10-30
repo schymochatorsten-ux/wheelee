@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "pressath",
+    "name": "Pressath",
+    "center": {
+      "lat": 49.765618800000006,
+      "lng": 11.93966205
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pressath-3e85e5e494",
+      "city": "pressath",
+      "label": "Reichweinstraße 2",
+      "street": "Reichweinstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pressath",
+      "spotCount": 1,
+      "lat": 49.765109700000004,
+      "lng": 11.93966205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1115971829), ODbL"
+    },
+    {
+      "id": "pressath-4cec4ea6e8",
+      "city": "pressath",
+      "label": "Weidener Straße",
+      "street": "Weidener Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Pressath",
+      "spotCount": 1,
+      "lat": 49.765618800000006,
+      "lng": 11.9381258,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13720623772), ODbL"
+    }
+  ]
+}

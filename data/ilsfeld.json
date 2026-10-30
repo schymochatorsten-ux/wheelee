@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "ilsfeld",
+    "name": "Ilsfeld",
+    "center": {
+      "lat": 49.0564802,
+      "lng": 9.287052200000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ilsfeld-84e98e55cf",
+      "city": "ilsfeld",
+      "label": "Am Ochsenweg",
+      "street": "Am Ochsenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ilsfeld",
+      "spotCount": 2,
+      "lat": 49.05392905000001,
+      "lng": 9.287052200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/36803071), ODbL"
+    },
+    {
+      "id": "ilsfeld-46e420eade",
+      "city": "ilsfeld",
+      "label": "Nordstraße 8",
+      "street": "Nordstraße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ilsfeld",
+      "spotCount": 1,
+      "lat": 49.0564802,
+      "lng": 9.244901,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1138149891), ODbL"
+    }
+  ]
+}

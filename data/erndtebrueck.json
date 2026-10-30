@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "erndtebrueck",
+    "name": "Erndtebrück",
+    "center": {
+      "lat": 50.99159945,
+      "lng": 8.3135586
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "erndtebrueck-f7975e9164",
+      "city": "erndtebrueck",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Erndtebrück",
+      "spotCount": 1,
+      "lat": 50.9911766,
+      "lng": 8.255671750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/185252996), ODbL"
+    },
+    {
+      "id": "erndtebrueck-bd9d79e486",
+      "city": "erndtebrueck",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Erndtebrück",
+      "spotCount": 3,
+      "lat": 50.992070000000005,
+      "lng": 8.3136871,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1297775964), ODbL"
+    },
+    {
+      "id": "erndtebrueck-47ba8fb688",
+      "city": "erndtebrueck",
+      "label": "Hauptstraße 30",
+      "street": "Hauptstraße",
+      "houseNumber": "30",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Erndtebrück",
+      "spotCount": 2,
+      "lat": 50.99159945,
+      "lng": 8.3135586,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1299598383), ODbL"
+    }
+  ]
+}

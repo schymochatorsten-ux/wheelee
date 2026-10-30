@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "sailauf",
+    "name": "Sailauf",
+    "center": {
+      "lat": 50.0243303,
+      "lng": 9.25382265
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sailauf-caa8817f3a",
+      "city": "sailauf",
+      "label": "Kirchberg",
+      "street": "Kirchberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sailauf",
+      "spotCount": 1,
+      "lat": 50.0243303,
+      "lng": 9.25382265,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1436759472), ODbL"
+    }
+  ]
+}

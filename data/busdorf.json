@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "busdorf",
+    "name": "Busdorf",
+    "center": {
+      "lat": 54.490408900000006,
+      "lng": 9.550952
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "busdorf-f0b1d1cd77",
+      "city": "busdorf",
+      "label": "Alte Landstraße 2",
+      "street": "Alte Landstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Busdorf",
+      "spotCount": 1,
+      "lat": 54.490408900000006,
+      "lng": 9.550952,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2139218910), ODbL"
+    },
+    {
+      "id": "busdorf-e239357657",
+      "city": "busdorf",
+      "label": "Panellenweg",
+      "street": "Panellenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Busdorf",
+      "spotCount": 2,
+      "lat": 54.486262950000004,
+      "lng": 9.5502768,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1499914888), ODbL"
+    },
+    {
+      "id": "busdorf-b0796a7ba9",
+      "city": "busdorf",
+      "label": "Zum Nordtor",
+      "street": "Zum Nordtor",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Busdorf",
+      "spotCount": 18,
+      "lat": 54.493621700000006,
+      "lng": 9.562360300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/203918939), ODbL"
+    }
+  ]
+}

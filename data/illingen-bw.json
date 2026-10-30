@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "illingen-bw",
+    "name": "Illingen",
+    "center": {
+      "lat": 48.95595745,
+      "lng": 8.92182785
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "illingen-bw-6db36c20b4",
+      "city": "illingen-bw",
+      "label": "Luigstraße",
+      "street": "Luigstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Illingen",
+      "spotCount": 1,
+      "lat": 48.9563538,
+      "lng": 8.9221756,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/229855369), ODbL"
+    },
+    {
+      "id": "illingen-bw-0af415ae8d",
+      "city": "illingen-bw",
+      "label": "Luigstraße 2/1",
+      "street": "Luigstraße",
+      "houseNumber": "2/1",
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Illingen",
+      "spotCount": 1,
+      "lat": 48.95587115000001,
+      "lng": 8.9203918,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1308614627), ODbL"
+    },
+    {
+      "id": "illingen-bw-032357e0d4",
+      "city": "illingen-bw",
+      "label": "Parken Netto",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Illingen",
+      "spotCount": 2,
+      "lat": 48.95590765,
+      "lng": 8.9222927,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/320589704), ODbL"
+    },
+    {
+      "id": "illingen-bw-ba19692144",
+      "city": "illingen-bw",
+      "label": "Rathaus",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Illingen",
+      "spotCount": 2,
+      "lat": 48.95595745,
+      "lng": 8.920452000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/41568450), ODbL"
+    },
+    {
+      "id": "illingen-bw-4c99cf467d",
+      "city": "illingen-bw",
+      "label": "Schillerstraße",
+      "street": "Schillerstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Illingen",
+      "spotCount": 1,
+      "lat": 48.95624265000001,
+      "lng": 8.91909515,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1308614625), ODbL"
+    },
+    {
+      "id": "illingen-bw-078a91d7e6",
+      "city": "illingen-bw",
+      "label": "Wiesenweg",
+      "street": "Wiesenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Illingen",
+      "spotCount": 1,
+      "lat": 48.954999900000004,
+      "lng": 8.92182785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1228909427), ODbL"
+    }
+  ]
+}

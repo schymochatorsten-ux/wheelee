@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "neustadt-glewe",
+    "name": "Neustadt-Glewe",
+    "center": {
+      "lat": 53.383523000000004,
+      "lng": 11.52766075
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neustadt-glewe-0f1fc9834d",
+      "city": "neustadt-glewe",
+      "label": "Ludwigsluster Kanal Ost",
+      "street": "Ludwigsluster Kanal Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neustadt-Glewe",
+      "spotCount": 2,
+      "lat": 53.383523000000004,
+      "lng": 11.52766075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/435972047), ODbL"
+    },
+    {
+      "id": "neustadt-glewe-2fc88edd72",
+      "city": "neustadt-glewe",
+      "label": "Ludwigsluster Kanal West",
+      "street": "Ludwigsluster Kanal West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neustadt-Glewe",
+      "spotCount": 2,
+      "lat": 53.38264,
+      "lng": 11.5235898,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/435972048), ODbL"
+    }
+  ]
+}

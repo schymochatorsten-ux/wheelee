@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "grafenberg",
+    "name": "Grafenberg",
+    "center": {
+      "lat": 48.5623647,
+      "lng": 9.30025065
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grafenberg-8972bde70c",
+      "city": "grafenberg",
+      "label": "Florianstraße 49",
+      "street": "Florianstraße",
+      "houseNumber": "49",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grafenberg",
+      "spotCount": 2,
+      "lat": 48.5623647,
+      "lng": 9.30025065,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1348381297), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "muegeln",
+    "name": "Mügeln",
+    "center": {
+      "lat": 51.23684095,
+      "lng": 13.060591800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "muegeln-1aca6ccc42",
+      "city": "muegeln",
+      "label": "Altmarkt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mügeln",
+      "spotCount": 1,
+      "lat": 51.23684095,
+      "lng": 13.04847595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1176861893), ODbL"
+    },
+    {
+      "id": "muegeln-2418b13e06",
+      "city": "muegeln",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Mügeln",
+      "spotCount": 3,
+      "lat": 51.23680035,
+      "lng": 13.060591800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/727233457), ODbL"
+    }
+  ]
+}

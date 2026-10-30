@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "marxzell",
+    "name": "Marxzell",
+    "center": {
+      "lat": 48.85667050000001,
+      "lng": 8.46484815
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "marxzell-c619aafe0e",
+      "city": "marxzell",
+      "label": "Pforzheimer Straße",
+      "street": "Pforzheimer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Marxzell",
+      "spotCount": 3,
+      "lat": 48.85667050000001,
+      "lng": 8.46484815,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/943986321), ODbL"
+    }
+  ]
+}

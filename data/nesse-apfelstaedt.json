@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "nesse-apfelstaedt",
+    "name": "Nesse-Apfelstädt",
+    "center": {
+      "lat": 50.913842800000005,
+      "lng": 10.9130866
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nesse-apfelstaedt-799c0e27a3",
+      "city": "nesse-apfelstaedt",
+      "label": "Bahnhof Neudietendorf",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Nesse-Apfelstädt",
+      "spotCount": 3,
+      "lat": 50.91376805,
+      "lng": 10.910282950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/305174611), ODbL"
+    },
+    {
+      "id": "nesse-apfelstaedt-6223590e86",
+      "city": "nesse-apfelstaedt",
+      "label": "Bergstraße 11",
+      "street": "Bergstraße",
+      "houseNumber": "11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nesse-Apfelstädt",
+      "spotCount": 1,
+      "lat": 50.9168511,
+      "lng": 10.9130866,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/318228053), ODbL"
+    },
+    {
+      "id": "nesse-apfelstaedt-3fe18ebce0",
+      "city": "nesse-apfelstaedt",
+      "label": "Gartenstraße",
+      "street": "Gartenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Sa 06:00-20:00",
+      "district": "Nesse-Apfelstädt",
+      "spotCount": 4,
+      "lat": 50.913842800000005,
+      "lng": 10.91448565,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/289184053), ODbL"
+    },
+    {
+      "id": "nesse-apfelstaedt-8e44b5dd9e",
+      "city": "nesse-apfelstaedt",
+      "label": "Gartenstraße",
+      "street": "Gartenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nesse-Apfelstädt",
+      "spotCount": 1,
+      "lat": 50.914574050000006,
+      "lng": 10.9146484,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/289184533), ODbL"
+    },
+    {
+      "id": "nesse-apfelstaedt-b99ecd09af",
+      "city": "nesse-apfelstaedt",
+      "label": "Straße des Friedens",
+      "street": "Straße des Friedens",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nesse-Apfelstädt",
+      "spotCount": 2,
+      "lat": 50.9092363,
+      "lng": 10.9082209,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/229916487), ODbL"
+    },
+    {
+      "id": "nesse-apfelstaedt-ac4ceff21a",
+      "city": "nesse-apfelstaedt",
+      "label": "Zinzendorfplatz 4",
+      "street": "Zinzendorfplatz",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nesse-Apfelstädt",
+      "spotCount": 1,
+      "lat": 50.91212575,
+      "lng": 10.91236425,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/314899276), ODbL"
+    }
+  ]
+}

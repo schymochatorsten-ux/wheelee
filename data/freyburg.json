@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "freyburg",
+    "name": "Freyburg (Unstrut)",
+    "center": {
+      "lat": 51.22055365,
+      "lng": 11.769138
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "freyburg-88da493d5e",
+      "city": "freyburg",
+      "label": "Hotel Parkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Freyburg (Unstrut)",
+      "spotCount": 1,
+      "lat": 51.212254,
+      "lng": 11.769138,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1179818301), ODbL"
+    },
+    {
+      "id": "freyburg-338398624c",
+      "city": "freyburg",
+      "label": "Nordstraße 1c",
+      "street": "Nordstraße",
+      "houseNumber": "1c",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Freyburg (Unstrut)",
+      "spotCount": 1,
+      "lat": 51.22055365,
+      "lng": 11.766980100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/545256638), ODbL"
+    }
+  ]
+}

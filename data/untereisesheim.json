@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "untereisesheim",
+    "name": "Untereisesheim",
+    "center": {
+      "lat": 49.20992530000001,
+      "lng": 9.2038373
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "untereisesheim-c37db3e01b",
+      "city": "untereisesheim",
+      "label": "Neckarstraße",
+      "street": "Neckarstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Untereisesheim",
+      "spotCount": 1,
+      "lat": 49.20992530000001,
+      "lng": 9.2038373,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/93919167), ODbL"
+    }
+  ]
+}

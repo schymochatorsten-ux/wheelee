@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hohenlockstedt",
+    "name": "Hohenlockstedt",
+    "center": {
+      "lat": 53.96175135,
+      "lng": 9.61679385
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hohenlockstedt-8ab8a614d4",
+      "city": "hohenlockstedt",
+      "label": "Wilhelmstraße",
+      "street": "Wilhelmstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hohenlockstedt",
+      "spotCount": 2,
+      "lat": 53.96175135,
+      "lng": 9.61679385,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/556355349), ODbL"
+    }
+  ]
+}

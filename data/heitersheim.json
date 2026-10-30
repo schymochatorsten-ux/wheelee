@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "heitersheim",
+    "name": "Heitersheim",
+    "center": {
+      "lat": 47.88103275,
+      "lng": 7.6467084
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "heitersheim-df753f581c",
+      "city": "heitersheim",
+      "label": "Merveldtstraße",
+      "street": "Merveldtstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Heitersheim",
+      "spotCount": 1,
+      "lat": 47.88103275,
+      "lng": 7.6466888,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1421767021), ODbL"
+    },
+    {
+      "id": "heitersheim-b0a511d8d9",
+      "city": "heitersheim",
+      "label": "Merveldtstraße",
+      "street": "Merveldtstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Heitersheim",
+      "spotCount": 1,
+      "lat": 47.8810974,
+      "lng": 7.6467084,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1421767022), ODbL"
+    },
+    {
+      "id": "heitersheim-a4ba08ed3d",
+      "city": "heitersheim",
+      "label": "Merveldtstraße",
+      "street": "Merveldtstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Heitersheim",
+      "spotCount": 1,
+      "lat": 47.8806558,
+      "lng": 7.646912500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1421767023), ODbL"
+    }
+  ]
+}

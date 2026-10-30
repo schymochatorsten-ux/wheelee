@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "letschin",
+    "name": "Letschin",
+    "center": {
+      "lat": 52.64633125,
+      "lng": 14.354184100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "letschin-f9fc91ff37",
+      "city": "letschin",
+      "label": "Wriezener Straße",
+      "street": "Wriezener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Letschin",
+      "spotCount": 1,
+      "lat": 52.64633125,
+      "lng": 14.354184100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/229449875), ODbL"
+    }
+  ]
+}

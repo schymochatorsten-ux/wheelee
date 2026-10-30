@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wulkenzin",
+    "name": "Wulkenzin",
+    "center": {
+      "lat": 53.5449816,
+      "lng": 13.1711281
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wulkenzin-05662ca835",
+      "city": "wulkenzin",
+      "label": "Schulstraße 2",
+      "street": "Schulstraße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wulkenzin",
+      "spotCount": 1,
+      "lat": 53.5449816,
+      "lng": 13.1711281,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8910474889), ODbL"
+    }
+  ]
+}

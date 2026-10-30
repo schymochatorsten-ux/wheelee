@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "ueckermuende",
+    "name": "Ueckermünde",
+    "center": {
+      "lat": 53.7361597,
+      "lng": 14.0515884
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ueckermuende-58d1cffd9c",
+      "city": "ueckermuende",
+      "label": "Neues Bollwerk",
+      "street": "Neues Bollwerk",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ueckermünde",
+      "spotCount": 1,
+      "lat": 53.7361597,
+      "lng": 14.051371300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12987665623), ODbL"
+    },
+    {
+      "id": "ueckermuende-915a838699",
+      "city": "ueckermuende",
+      "label": "Neues Bollwerk",
+      "street": "Neues Bollwerk",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ueckermünde",
+      "spotCount": 2,
+      "lat": 53.735985850000006,
+      "lng": 14.0515884,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/67186857), ODbL"
+    },
+    {
+      "id": "ueckermuende-19e3e014f7",
+      "city": "ueckermuende",
+      "label": "Strandweg",
+      "street": "Strandweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ueckermünde",
+      "spotCount": 2,
+      "lat": 53.7364748,
+      "lng": 14.1243351,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/219403076), ODbL"
+    }
+  ]
+}

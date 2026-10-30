@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "gingst",
+    "name": "Gingst",
+    "center": {
+      "lat": 54.4576544,
+      "lng": 13.245219000000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gingst-4773506f42",
+      "city": "gingst",
+      "label": "Rügenpark",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gingst",
+      "spotCount": 12,
+      "lat": 54.4576544,
+      "lng": 13.245219000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31065999), ODbL"
+    }
+  ]
+}

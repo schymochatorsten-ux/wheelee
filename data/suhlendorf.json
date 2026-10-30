@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "suhlendorf",
+    "name": "Suhlendorf",
+    "center": {
+      "lat": 52.92459945,
+      "lng": 10.7543205
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "suhlendorf-2fc66af3e2",
+      "city": "suhlendorf",
+      "label": "Mühlenweg",
+      "street": "Mühlenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Suhlendorf",
+      "spotCount": 2,
+      "lat": 52.92459945,
+      "lng": 10.7543205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/685266052), ODbL"
+    }
+  ]
+}

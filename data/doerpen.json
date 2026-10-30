@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "doerpen",
+    "name": "Dörpen",
+    "center": {
+      "lat": 52.967593150000006,
+      "lng": 7.33475505
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "doerpen-c5f70c6684",
+      "city": "doerpen",
+      "label": "An der Düne",
+      "street": "An der Düne",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dörpen",
+      "spotCount": 1,
+      "lat": 52.967593150000006,
+      "lng": 7.3324619,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/40263796), ODbL"
+    },
+    {
+      "id": "doerpen-0e0d751e68",
+      "city": "doerpen",
+      "label": "Besucherparkplatz Nordland Papier",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dörpen",
+      "spotCount": 1,
+      "lat": 52.980540950000005,
+      "lng": 7.361836,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/543564935), ODbL"
+    },
+    {
+      "id": "doerpen-0da1b54eab",
+      "city": "doerpen",
+      "label": "Lidl",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dörpen",
+      "spotCount": 1,
+      "lat": 52.9671493,
+      "lng": 7.33475505,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1541138858), ODbL"
+    }
+  ]
+}

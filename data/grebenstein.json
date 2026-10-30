@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "grebenstein",
+    "name": "Grebenstein",
+    "center": {
+      "lat": 51.447571550000006,
+      "lng": 9.4174354
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grebenstein-c3631b23c0",
+      "city": "grebenstein",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grebenstein",
+      "spotCount": 4,
+      "lat": 51.447571550000006,
+      "lng": 9.4174354,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/107540515), ODbL"
+    }
+  ]
+}

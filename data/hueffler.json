@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hueffler",
+    "name": "Hüffler",
+    "center": {
+      "lat": 49.50083695,
+      "lng": 7.3903948
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hueffler-bfbdc44caf",
+      "city": "hueffler",
+      "label": "Kirchenstraße 30",
+      "street": "Kirchenstraße",
+      "houseNumber": "30",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hüffler",
+      "spotCount": 1,
+      "lat": 49.492452,
+      "lng": 7.3903948,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11704107693), ODbL"
+    },
+    {
+      "id": "hueffler-52d3ba0dc4",
+      "city": "hueffler",
+      "label": "Sportplatz",
+      "street": "Sportplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hüffler",
+      "spotCount": 2,
+      "lat": 49.50083695,
+      "lng": 7.3830193500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1303407619), ODbL"
+    }
+  ]
+}

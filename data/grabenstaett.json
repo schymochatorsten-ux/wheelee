@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "grabenstaett",
+    "name": "Grabenstätt",
+    "center": {
+      "lat": 47.8284429,
+      "lng": 12.52167205
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grabenstaett-0793ce8896",
+      "city": "grabenstaett",
+      "label": "Oberwinkl 3",
+      "street": "Oberwinkl",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grabenstätt",
+      "spotCount": 1,
+      "lat": 47.8284429,
+      "lng": 12.52167205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/125020500), ODbL"
+    }
+  ]
+}

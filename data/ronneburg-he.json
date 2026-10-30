@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "ronneburg-he",
+    "name": "Ronneburg",
+    "center": {
+      "lat": 50.22958455,
+      "lng": 9.0647894
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ronneburg-he-6186d837fc",
+      "city": "ronneburg-he",
+      "label": "Auf dem weißen Berg",
+      "street": "Auf dem weißen Berg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Ronneburg",
+      "spotCount": 2,
+      "lat": 50.22881005000001,
+      "lng": 9.0647894,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/40152374), ODbL"
+    },
+    {
+      "id": "ronneburg-he-009f5022a5",
+      "city": "ronneburg-he",
+      "label": "Auf dem weißen Berg",
+      "street": "Auf dem weißen Berg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Ronneburg",
+      "spotCount": 2,
+      "lat": 50.22958455,
+      "lng": 9.066483600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/677160311), ODbL"
+    },
+    {
+      "id": "ronneburg-he-60582d1832",
+      "city": "ronneburg-he",
+      "label": "Diebacher Straße 30",
+      "street": "Diebacher Straße",
+      "houseNumber": "30",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Ronneburg",
+      "spotCount": 1,
+      "lat": 50.23471955000001,
+      "lng": 9.052705750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/623400700), ODbL"
+    },
+    {
+      "id": "ronneburg-he-9bc95ee69e",
+      "city": "ronneburg-he",
+      "label": "Tannenweg",
+      "street": "Tannenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Ronneburg",
+      "spotCount": 4,
+      "lat": 50.2191458,
+      "lng": 9.042208550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/572091170), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "moos",
+    "name": "Moos",
+    "center": {
+      "lat": 47.7164342,
+      "lng": 8.958763450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "moos-9ff5763507",
+      "city": "moos",
+      "label": "Haldenweg 1",
+      "street": "Haldenweg",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Moos",
+      "spotCount": 1,
+      "lat": 47.7108245,
+      "lng": 8.95438365,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1023986674), ODbL"
+    },
+    {
+      "id": "moos-b296faf291",
+      "city": "moos",
+      "label": "Kurzgasse",
+      "street": "Kurzgasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Moos",
+      "spotCount": 1,
+      "lat": 47.7164342,
+      "lng": 8.960506250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/229862145), ODbL"
+    },
+    {
+      "id": "moos-080165c335",
+      "city": "moos",
+      "label": "Unter Eichen 2",
+      "street": "Unter Eichen",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Iznang",
+      "spotCount": 2,
+      "lat": 47.71755685,
+      "lng": 8.958763450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/229862136), ODbL"
+    }
+  ]
+}

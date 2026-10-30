@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "eresing",
+    "name": "Eresing",
+    "center": {
+      "lat": 48.087097500000006,
+      "lng": 11.024982900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eresing-2ed812ac8c",
+      "city": "eresing",
+      "label": "Pflaumdorfer Straße 4",
+      "street": "Pflaumdorfer Straße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eresing",
+      "spotCount": 2,
+      "lat": 48.087097500000006,
+      "lng": 11.024982900000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/7820988602), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "schwuelper",
+    "name": "Schwülper",
+    "center": {
+      "lat": 52.335323700000004,
+      "lng": 10.450682500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schwuelper-a9f0ef0035",
+      "city": "schwuelper",
+      "label": "An der Aue 4",
+      "street": "An der Aue",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwülper",
+      "spotCount": 1,
+      "lat": 52.335323700000004,
+      "lng": 10.438316700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/7021876935), ODbL"
+    },
+    {
+      "id": "schwuelper-c4ed77fc05",
+      "city": "schwuelper",
+      "label": "Spargelweg 2",
+      "street": "Spargelweg",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwülper",
+      "spotCount": 1,
+      "lat": 52.332904850000006,
+      "lng": 10.450682500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/753209964), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "hartha",
+    "name": "Hartha",
+    "center": {
+      "lat": 51.09630715,
+      "lng": 12.97203785
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hartha-1d0a64e873",
+      "city": "hartha",
+      "label": "Annenstraße 27",
+      "street": "Annenstraße",
+      "houseNumber": "27",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hartha",
+      "spotCount": 1,
+      "lat": 51.09630605,
+      "lng": 12.971989050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1545009066), ODbL"
+    },
+    {
+      "id": "hartha-849f2d8eaf",
+      "city": "hartha",
+      "label": "Annenstraße 27",
+      "street": "Annenstraße",
+      "houseNumber": "27",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hartha",
+      "spotCount": 1,
+      "lat": 51.09630715,
+      "lng": 12.97203785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1545009067), ODbL"
+    },
+    {
+      "id": "hartha-920d922a46",
+      "city": "hartha",
+      "label": "Goethestraße 9",
+      "street": "Goethestraße",
+      "houseNumber": "9",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hartha",
+      "spotCount": 1,
+      "lat": 51.09648545,
+      "lng": 12.97260735,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1545009068), ODbL"
+    }
+  ]
+}

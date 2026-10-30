@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "affing",
+    "name": "Affing",
+    "center": {
+      "lat": 48.42401515,
+      "lng": 10.9324951
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "affing-1091559410",
+      "city": "affing",
+      "label": "Flughafenstraße 1",
+      "street": "Flughafenstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Affing",
+      "spotCount": 2,
+      "lat": 48.42401515,
+      "lng": 10.9324951,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1308998741), ODbL"
+    }
+  ]
+}

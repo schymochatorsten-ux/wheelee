@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "malschwitz",
+    "name": "Malschwitz",
+    "center": {
+      "lat": 51.2112325,
+      "lng": 14.557180250000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "malschwitz-7ce944c560",
+      "city": "malschwitz",
+      "label": "Löbauer Wasser",
+      "street": "Löbauer Wasser",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Malschwitz",
+      "spotCount": 2,
+      "lat": 51.2112325,
+      "lng": 14.554983450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/48566308), ODbL"
+    },
+    {
+      "id": "malschwitz-2e556fdc37",
+      "city": "malschwitz",
+      "label": "Löbauer Wasser",
+      "street": "Löbauer Wasser",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Malschwitz",
+      "spotCount": 2,
+      "lat": 51.2106124,
+      "lng": 14.557180250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/48566309), ODbL"
+    },
+    {
+      "id": "malschwitz-a973a63d9f",
+      "city": "malschwitz",
+      "label": "Warthaer Dorfstraße",
+      "street": "Warthaer Dorfstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Malschwitz",
+      "spotCount": 1,
+      "lat": 51.27337475,
+      "lng": 14.579112300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/686724551), ODbL"
+    }
+  ]
+}

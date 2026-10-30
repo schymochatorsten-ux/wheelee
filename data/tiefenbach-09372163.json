@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "tiefenbach-09372163",
+    "name": "Tiefenbach",
+    "center": {
+      "lat": 49.4379981,
+      "lng": 12.586274500000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "tiefenbach-09372163-bcf481acf9",
+      "city": "tiefenbach-09372163",
+      "label": "Stein 40",
+      "street": "Stein",
+      "houseNumber": "40",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Tiefenbach",
+      "spotCount": 3,
+      "lat": 49.40292645,
+      "lng": 12.586274500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1175749134), ODbL"
+    },
+    {
+      "id": "tiefenbach-09372163-3328661e5d",
+      "city": "tiefenbach-09372163",
+      "label": "Waldbadstraße 2",
+      "street": "Waldbadstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Tiefenbach",
+      "spotCount": 1,
+      "lat": 49.4379981,
+      "lng": 12.583059350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1565232217), ODbL"
+    }
+  ]
+}

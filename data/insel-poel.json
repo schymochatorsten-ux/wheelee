@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "insel-poel",
+    "name": "Insel Poel",
+    "center": {
+      "lat": 54.0227882,
+      "lng": 11.482958
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "insel-poel-1c38c88cc7",
+      "city": "insel-poel",
+      "label": "Am Gutshof",
+      "street": "Am Gutshof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Insel Poel",
+      "spotCount": 10,
+      "lat": 54.0113014,
+      "lng": 11.439599300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/575248836), ODbL"
+    },
+    {
+      "id": "insel-poel-ed89e47b6f",
+      "city": "insel-poel",
+      "label": "Behindertenparkplatz Insel Poel",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Insel Poel",
+      "spotCount": 2,
+      "lat": 54.0227882,
+      "lng": 11.482958,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4339712510), ODbL"
+    }
+  ]
+}

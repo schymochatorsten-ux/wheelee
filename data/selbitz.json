@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "selbitz",
+    "name": "Selbitz",
+    "center": {
+      "lat": 50.3163944,
+      "lng": 11.7485643
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "selbitz-fb965c7682",
+      "city": "selbitz",
+      "label": "Feldstraße",
+      "street": "Feldstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Selbitz",
+      "spotCount": 1,
+      "lat": 50.3163944,
+      "lng": 11.7485643,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4533587051), ODbL"
+    }
+  ]
+}

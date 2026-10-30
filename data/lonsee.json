@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lonsee",
+    "name": "Lonsee",
+    "center": {
+      "lat": 48.51841640000001,
+      "lng": 9.908149000000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lonsee-ffece78cc7",
+      "city": "lonsee",
+      "label": "Erlenweg",
+      "street": "Erlenweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lonsee",
+      "spotCount": 1,
+      "lat": 48.51841640000001,
+      "lng": 9.908149000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1389866528), ODbL"
+    }
+  ]
+}

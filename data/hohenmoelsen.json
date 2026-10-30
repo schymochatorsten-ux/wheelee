@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hohenmoelsen",
+    "name": "Hohenmölsen",
+    "center": {
+      "lat": 51.16356570000001,
+      "lng": 12.0942062
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hohenmoelsen-37451789ba",
+      "city": "hohenmoelsen",
+      "label": "Karl-Liebknecht-Ring",
+      "street": "Karl-Liebknecht-Ring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hohenmölsen",
+      "spotCount": 1,
+      "lat": 51.1594862,
+      "lng": 12.092070500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1457803688), ODbL"
+    },
+    {
+      "id": "hohenmoelsen-852f60f4f8",
+      "city": "hohenmoelsen",
+      "label": "Wilhelm-Külz-Straße 8",
+      "street": "Wilhelm-Külz-Straße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hohenmölsen",
+      "spotCount": 2,
+      "lat": 51.16356570000001,
+      "lng": 12.0942062,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/129782889), ODbL"
+    }
+  ]
+}

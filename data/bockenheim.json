@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bockenheim",
+    "name": "Bockenheim an der Weinstraße",
+    "center": {
+      "lat": 49.60958430000001,
+      "lng": 8.18132085
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bockenheim-e826e57918",
+      "city": "bockenheim",
+      "label": "Weinstraße 91b",
+      "street": "Weinstraße",
+      "houseNumber": "91b",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bockenheim an der Weinstraße",
+      "spotCount": 1,
+      "lat": 49.60958430000001,
+      "lng": 8.18132085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/846865348), ODbL"
+    }
+  ]
+}

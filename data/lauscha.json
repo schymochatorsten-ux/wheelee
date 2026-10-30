@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "lauscha",
+    "name": "Lauscha",
+    "center": {
+      "lat": 50.4953239,
+      "lng": 11.1645239
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lauscha-10dfad3dce",
+      "city": "lauscha",
+      "label": "Alte Chaussee",
+      "street": "Alte Chaussee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lauscha",
+      "spotCount": 2,
+      "lat": 50.467254350000005,
+      "lng": 11.160105950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/301768055), ODbL"
+    },
+    {
+      "id": "lauscha-8f7814869a",
+      "city": "lauscha",
+      "label": "Glaswerkstraße",
+      "street": "Glaswerkstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lauscha",
+      "spotCount": 1,
+      "lat": 50.49611135000001,
+      "lng": 11.1645239,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/305378219), ODbL"
+    },
+    {
+      "id": "lauscha-b56a8dcd68",
+      "city": "lauscha",
+      "label": "Glaswerkstraße",
+      "street": "Glaswerkstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lauscha",
+      "spotCount": 2,
+      "lat": 50.4953239,
+      "lng": 11.165534350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/305383781), ODbL"
+    }
+  ]
+}

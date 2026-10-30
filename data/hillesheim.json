@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hillesheim",
+    "name": "Hillesheim",
+    "center": {
+      "lat": 50.29715160000001,
+      "lng": 6.67357365
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hillesheim-e8dc14d308",
+      "city": "hillesheim",
+      "label": "Alter Bahnhof",
+      "street": "Alter Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hillesheim",
+      "spotCount": 3,
+      "lat": 50.281828000000004,
+      "lng": 6.6382083000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/970514609), ODbL"
+    },
+    {
+      "id": "hillesheim-f49a5d83b4",
+      "city": "hillesheim",
+      "label": "Kölner Straße",
+      "street": "Kölner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Sa 08:00-20:00",
+      "district": "Hillesheim",
+      "spotCount": 3,
+      "lat": 50.29715160000001,
+      "lng": 6.67357365,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/37071756), ODbL"
+    }
+  ]
+}

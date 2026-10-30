@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "woerth-a-d-donau",
+    "name": "Wörth a.d.Donau",
+    "center": {
+      "lat": 48.9992281,
+      "lng": 12.399284100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "woerth-a-d-donau-be0d497c72",
+      "city": "woerth-a-d-donau",
+      "label": "Krankenhausstraße",
+      "street": "Krankenhausstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wörth a.d.Donau",
+      "spotCount": 1,
+      "lat": 48.9992281,
+      "lng": 12.399284100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1216397078), ODbL"
+    },
+    {
+      "id": "woerth-a-d-donau-21cc29c57d",
+      "city": "woerth-a-d-donau",
+      "label": "Krankenhausstraße",
+      "street": "Krankenhausstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wörth a.d.Donau",
+      "spotCount": 2,
+      "lat": 48.99933335,
+      "lng": 12.39926325,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1216397080), ODbL"
+    },
+    {
+      "id": "woerth-a-d-donau-dc18bebf03",
+      "city": "woerth-a-d-donau",
+      "label": "Krankenhausstraße",
+      "street": "Krankenhausstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wörth a.d.Donau",
+      "spotCount": 1,
+      "lat": 48.99919920000001,
+      "lng": 12.39929235,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1216639231), ODbL"
+    }
+  ]
+}

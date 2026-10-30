@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "neddemin",
+    "name": "Neddemin",
+    "center": {
+      "lat": 53.65065545,
+      "lng": 13.278448650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neddemin-26c7cacb70",
+      "city": "neddemin",
+      "label": "Hauptstraße 33",
+      "street": "Hauptstraße",
+      "houseNumber": "33",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neddemin",
+      "spotCount": 1,
+      "lat": 53.65065545,
+      "lng": 13.278448650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1375037544), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "neustadt-rp",
+    "name": "Neustadt (Wied)",
+    "center": {
+      "lat": 50.59911155,
+      "lng": 7.433546850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neustadt-rp-6e8ca7ac19",
+      "city": "neustadt-rp",
+      "label": "Fernthal West",
+      "street": "Fernthal West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neustadt (Wied)",
+      "spotCount": 7,
+      "lat": 50.598562300000005,
+      "lng": 7.43533395,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/110564190), ODbL"
+    },
+    {
+      "id": "neustadt-rp-9661d49348",
+      "city": "neustadt-rp",
+      "label": "Fernthal West",
+      "street": "Fernthal West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neustadt (Wied)",
+      "spotCount": 1,
+      "lat": 50.59911155,
+      "lng": 7.433546850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1348074170), ODbL"
+    },
+    {
+      "id": "neustadt-rp-049c54071c",
+      "city": "neustadt-rp",
+      "label": "Fernthal West",
+      "street": "Fernthal West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neustadt (Wied)",
+      "spotCount": 1,
+      "lat": 50.5991377,
+      "lng": 7.43350225,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1348074171), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "erlenbach",
+    "name": "Erlenbach",
+    "center": {
+      "lat": 49.168754650000004,
+      "lng": 9.25875345
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "erlenbach-b6bd93b602",
+      "city": "erlenbach",
+      "label": "Sulmtal Nord",
+      "street": "Sulmtal Nord",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Erlenbach",
+      "spotCount": 1,
+      "lat": 49.168754650000004,
+      "lng": 9.25881115,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1533093201), ODbL"
+    },
+    {
+      "id": "erlenbach-65cc7b5766",
+      "city": "erlenbach",
+      "label": "Sulmtal Nord",
+      "street": "Sulmtal Nord",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Erlenbach",
+      "spotCount": 1,
+      "lat": 49.1687733,
+      "lng": 9.25875345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1533093202), ODbL"
+    },
+    {
+      "id": "erlenbach-30980e5c84",
+      "city": "erlenbach",
+      "label": "Sulmtal-Süd",
+      "street": "Sulmtal-Süd",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Erlenbach",
+      "spotCount": 1,
+      "lat": 49.16844760000001,
+      "lng": 9.253656600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1533093203), ODbL"
+    },
+    {
+      "id": "erlenbach-a43953ede6",
+      "city": "erlenbach",
+      "label": "Sulmtal-Süd",
+      "street": "Sulmtal-Süd",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Erlenbach",
+      "spotCount": 1,
+      "lat": 49.1684697,
+      "lng": 9.2535998,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1533093204), ODbL"
+    }
+  ]
+}

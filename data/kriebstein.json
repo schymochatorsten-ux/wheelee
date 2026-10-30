@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "kriebstein",
+    "name": "Kriebstein",
+    "center": {
+      "lat": 51.042748800000005,
+      "lng": 13.018479200000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kriebstein-305941bb69",
+      "city": "kriebstein",
+      "label": "Kriebsteiner Straße",
+      "street": "Kriebsteiner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Kriebstein",
+      "spotCount": 2,
+      "lat": 51.042748800000005,
+      "lng": 13.0179291,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/8091701), ODbL"
+    },
+    {
+      "id": "kriebstein-e736361836",
+      "city": "kriebstein",
+      "label": "Kriebsteiner Straße",
+      "street": "Kriebsteiner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Kriebstein",
+      "spotCount": 2,
+      "lat": 51.0425092,
+      "lng": 13.018479200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1546658178), ODbL"
+    },
+    {
+      "id": "kriebstein-8f2a488147",
+      "city": "kriebstein",
+      "label": "Turnerstraße",
+      "street": "Turnerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Kriebstein",
+      "spotCount": 2,
+      "lat": 51.0493292,
+      "lng": 13.018894000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/645924334), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bentwisch",
+    "name": "Bentwisch",
+    "center": {
+      "lat": 54.114851050000006,
+      "lng": 12.193618950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bentwisch-a16f3682d8",
+      "city": "bentwisch",
+      "label": "Hansestraße",
+      "street": "Hansestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bentwisch",
+      "spotCount": 1,
+      "lat": 54.11562120000001,
+      "lng": 12.193020350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32461280), ODbL"
+    },
+    {
+      "id": "bentwisch-4bce515efd",
+      "city": "bentwisch",
+      "label": "Hansestraße",
+      "street": "Hansestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bentwisch",
+      "spotCount": 1,
+      "lat": 54.114851050000006,
+      "lng": 12.193618950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32461281), ODbL"
+    },
+    {
+      "id": "bentwisch-d04cd2a0be",
+      "city": "bentwisch",
+      "label": "Hansestraße 50",
+      "street": "Hansestraße",
+      "houseNumber": "50",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bentwisch",
+      "spotCount": 1,
+      "lat": 54.114730200000004,
+      "lng": 12.19424755,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/499107985), ODbL"
+    }
+  ]
+}

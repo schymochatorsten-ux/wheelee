@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "detern",
+    "name": "Detern",
+    "center": {
+      "lat": 53.211277800000005,
+      "lng": 7.6724269000000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "detern-8d02907730",
+      "city": "detern",
+      "label": "Barger Straße",
+      "street": "Barger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Detern",
+      "spotCount": 1,
+      "lat": 53.1877641,
+      "lng": 7.6724269000000005,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1850508826), ODbL"
+    },
+    {
+      "id": "detern-71e1b3835a",
+      "city": "detern",
+      "label": "Jümmersee Parkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Detern",
+      "spotCount": 1,
+      "lat": 53.211277800000005,
+      "lng": 7.63950855,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/71838186), ODbL"
+    }
+  ]
+}

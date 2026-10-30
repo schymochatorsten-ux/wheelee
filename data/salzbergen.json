@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "salzbergen",
+    "name": "Salzbergen",
+    "center": {
+      "lat": 52.33350300000001,
+      "lng": 7.381647350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "salzbergen-46c564e776",
+      "city": "salzbergen",
+      "label": "Espel",
+      "street": "Espel",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Salzbergen",
+      "spotCount": 1,
+      "lat": 52.33350300000001,
+      "lng": 7.381647350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/890150127), ODbL"
+    }
+  ]
+}

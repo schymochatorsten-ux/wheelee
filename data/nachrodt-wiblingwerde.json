@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "nachrodt-wiblingwerde",
+    "name": "Nachrodt-Wiblingwerde",
+    "center": {
+      "lat": 51.33827255,
+      "lng": 7.6531775500000006
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nachrodt-wiblingwerde-25bb8ad58b",
+      "city": "nachrodt-wiblingwerde",
+      "label": "Altenaer Straße 49-51",
+      "street": "Altenaer Straße",
+      "houseNumber": "49-51",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nachrodt-Wiblingwerde",
+      "spotCount": 1,
+      "lat": 51.331708400000004,
+      "lng": 7.6531775500000006,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1147938455), ODbL"
+    },
+    {
+      "id": "nachrodt-wiblingwerde-c393931387",
+      "city": "nachrodt-wiblingwerde",
+      "label": "Schulstraße 3",
+      "street": "Schulstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nachrodt-Wiblingwerde",
+      "spotCount": 1,
+      "lat": 51.33827255,
+      "lng": 7.63588075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/588942383), ODbL"
+    }
+  ]
+}

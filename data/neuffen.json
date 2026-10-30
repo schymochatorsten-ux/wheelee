@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "neuffen",
+    "name": "Neuffen",
+    "center": {
+      "lat": 48.555474700000005,
+      "lng": 9.37641005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuffen-a8376713c6",
+      "city": "neuffen",
+      "label": "Breitensteinstraße",
+      "street": "Breitensteinstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neuffen",
+      "spotCount": 1,
+      "lat": 48.5571696,
+      "lng": 9.38213085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1307287376), ODbL"
+    },
+    {
+      "id": "neuffen-53f3dfd5ff",
+      "city": "neuffen",
+      "label": "Hauptstraße 3",
+      "street": "Hauptstraße",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neuffen",
+      "spotCount": 1,
+      "lat": 48.555474700000005,
+      "lng": 9.37462575,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/781905064), ODbL"
+    },
+    {
+      "id": "neuffen-4d5e0b5e6f",
+      "city": "neuffen",
+      "label": "Kelterplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuffen",
+      "spotCount": 1,
+      "lat": 48.5550154,
+      "lng": 9.37641005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1379276773), ODbL"
+    },
+    {
+      "id": "neuffen-6ab945eff9",
+      "city": "neuffen",
+      "label": "Oberer Graben",
+      "street": "Oberer Graben",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neuffen",
+      "spotCount": 1,
+      "lat": 48.55544195,
+      "lng": 9.376327700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1378980049), ODbL"
+    }
+  ]
+}

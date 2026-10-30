@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "iffeldorf",
+    "name": "Iffeldorf",
+    "center": {
+      "lat": 47.77225545,
+      "lng": 11.315443600000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "iffeldorf-06b9619876",
+      "city": "iffeldorf",
+      "label": "Fischersteig",
+      "street": "Fischersteig",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Iffeldorf",
+      "spotCount": 1,
+      "lat": 47.771965800000004,
+      "lng": 11.314975400000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14227205445), ODbL"
+    },
+    {
+      "id": "iffeldorf-73d3defdad",
+      "city": "iffeldorf",
+      "label": "Parkplatz Jägergasse",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Iffeldorf",
+      "spotCount": 2,
+      "lat": 47.77225545,
+      "lng": 11.315443600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/43866618), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "putbus",
+    "name": "Putbus",
+    "center": {
+      "lat": 54.349277900000004,
+      "lng": 13.480357900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "putbus-e7c7d4b274",
+      "city": "putbus",
+      "label": "Am Mühlenberg",
+      "street": "Am Mühlenberg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Putbus",
+      "spotCount": 1,
+      "lat": 54.352318200000006,
+      "lng": 13.464660700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11182492898), ODbL"
+    },
+    {
+      "id": "putbus-20b4dac6fe",
+      "city": "putbus",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Putbus",
+      "spotCount": 1,
+      "lat": 54.35661830000001,
+      "lng": 13.480357900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1154712183), ODbL"
+    },
+    {
+      "id": "putbus-6af8d3d067",
+      "city": "putbus",
+      "label": "Behindertenparkplatz Putbus",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Putbus",
+      "spotCount": 3,
+      "lat": 54.349277900000004,
+      "lng": 13.471987200000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2924780077), ODbL"
+    },
+    {
+      "id": "putbus-2014f0b55b",
+      "city": "putbus",
+      "label": "Hafenstraße",
+      "street": "Hafenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Putbus",
+      "spotCount": 2,
+      "lat": 54.341791750000006,
+      "lng": 13.499582450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/30125988), ODbL"
+    },
+    {
+      "id": "putbus-472ecc5c81",
+      "city": "putbus",
+      "label": "Hafenstraße",
+      "street": "Hafenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Putbus",
+      "spotCount": 2,
+      "lat": 54.342549700000006,
+      "lng": 13.500244850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/238872516), ODbL"
+    }
+  ]
+}

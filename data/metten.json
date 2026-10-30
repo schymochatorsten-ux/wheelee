@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "metten",
+    "name": "Metten",
+    "center": {
+      "lat": 48.858098700000006,
+      "lng": 12.913130500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "metten-2d6b8151ca",
+      "city": "metten",
+      "label": "Neuhausener Straße",
+      "street": "Neuhausener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Metten",
+      "spotCount": 96,
+      "lat": 48.856831,
+      "lng": 12.913130500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/227105302), ODbL"
+    },
+    {
+      "id": "metten-8a6ae3c128",
+      "city": "metten",
+      "label": "Neuhausener Straße",
+      "street": "Neuhausener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Metten",
+      "spotCount": 5,
+      "lat": 48.858098700000006,
+      "lng": 12.908011900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/820818747), ODbL"
+    }
+  ]
+}

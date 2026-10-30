@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "triptis",
+    "name": "Triptis",
+    "center": {
+      "lat": 50.758365850000004,
+      "lng": 11.871610400000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "triptis-ebb2f83a62",
+      "city": "triptis",
+      "label": "Mittelring 1",
+      "street": "Mittelring",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Triptis",
+      "spotCount": 1,
+      "lat": 50.73529855,
+      "lng": 11.86394215,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1495678110), ODbL"
+    },
+    {
+      "id": "triptis-8b60e877ef",
+      "city": "triptis",
+      "label": "Rodaborn",
+      "street": "Rodaborn",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Triptis",
+      "spotCount": 1,
+      "lat": 50.758499400000005,
+      "lng": 11.8737827,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/754271678), ODbL"
+    },
+    {
+      "id": "triptis-2863dec917",
+      "city": "triptis",
+      "label": "Rodaborn",
+      "street": "Rodaborn",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Triptis",
+      "spotCount": 1,
+      "lat": 50.75853235,
+      "lng": 11.87382615,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/754271679), ODbL"
+    },
+    {
+      "id": "triptis-6bd370f9dc",
+      "city": "triptis",
+      "label": "Rodaborn",
+      "street": "Rodaborn",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Triptis",
+      "spotCount": 1,
+      "lat": 50.758365850000004,
+      "lng": 11.871610400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/754274046), ODbL"
+    },
+    {
+      "id": "triptis-d1c1183bb2",
+      "city": "triptis",
+      "label": "Rodaborn",
+      "street": "Rodaborn",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Triptis",
+      "spotCount": 1,
+      "lat": 50.758325150000005,
+      "lng": 11.87155895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/754274047), ODbL"
+    },
+    {
+      "id": "triptis-5a9dbdb3df",
+      "city": "triptis",
+      "label": "Triptis, Markt",
+      "street": "Triptis, Markt",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Triptis",
+      "spotCount": 2,
+      "lat": 50.73535565,
+      "lng": 11.863839,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1335604741), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "velgast",
+    "name": "Velgast",
+    "center": {
+      "lat": 54.277141150000006,
+      "lng": 12.80255545
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "velgast-a605b1f489",
+      "city": "velgast",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Velgast",
+      "spotCount": 1,
+      "lat": 54.277141150000006,
+      "lng": 12.80255545,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1151029250), ODbL"
+    }
+  ]
+}

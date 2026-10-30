@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "marklkofen",
+    "name": "Marklkofen",
+    "center": {
+      "lat": 48.558695400000005,
+      "lng": 12.548306500000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "marklkofen-cae4dc1d21",
+      "city": "marklkofen",
+      "label": "Parkplatz Tennis",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Marklkofen",
+      "spotCount": 15,
+      "lat": 48.558695400000005,
+      "lng": 12.548306500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1136701587), ODbL"
+    }
+  ]
+}

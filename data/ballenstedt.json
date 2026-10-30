@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "ballenstedt",
+    "name": "Ballenstedt",
+    "center": {
+      "lat": 51.720764700000004,
+      "lng": 11.241741400000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ballenstedt-51368813c6",
+      "city": "ballenstedt",
+      "label": "Badstuben",
+      "street": "Badstuben",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ballenstedt",
+      "spotCount": 1,
+      "lat": 51.720764700000004,
+      "lng": 11.241741400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1274193436), ODbL"
+    },
+    {
+      "id": "ballenstedt-ba790f309f",
+      "city": "ballenstedt",
+      "label": "Wasserstraße 8",
+      "street": "Wasserstraße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ballenstedt",
+      "spotCount": 2,
+      "lat": 51.720437950000004,
+      "lng": 11.238441000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/184574092), ODbL"
+    }
+  ]
+}

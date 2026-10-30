@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hohen-wangelin",
+    "name": "Hohen Wangelin",
+    "center": {
+      "lat": 53.609726050000006,
+      "lng": 12.42195665
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hohen-wangelin-335d85582f",
+      "city": "hohen-wangelin",
+      "label": "Hans-Beimler-Straße",
+      "street": "Hans-Beimler-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hohen Wangelin",
+      "spotCount": 2,
+      "lat": 53.609726050000006,
+      "lng": 12.42195665,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/36947681), ODbL"
+    }
+  ]
+}

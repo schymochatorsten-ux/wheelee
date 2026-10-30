@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "hoefen",
+    "name": "Höfen an der Enz",
+    "center": {
+      "lat": 48.8057609,
+      "lng": 8.582612600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hoefen-abed291115",
+      "city": "hoefen",
+      "label": "In den Lauppenwiesen",
+      "street": "In den Lauppenwiesen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Höfen an der Enz",
+      "spotCount": 1,
+      "lat": 48.8057609,
+      "lng": 8.582612600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1543339086), ODbL"
+    },
+    {
+      "id": "hoefen-cedee37523",
+      "city": "hoefen",
+      "label": "In den Lauppenwiesen",
+      "street": "In den Lauppenwiesen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Höfen an der Enz",
+      "spotCount": 1,
+      "lat": 48.80579445,
+      "lng": 8.58262,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1543339087), ODbL"
+    },
+    {
+      "id": "hoefen-237399cbae",
+      "city": "hoefen",
+      "label": "Johannes-Bodamer-Straße",
+      "street": "Johannes-Bodamer-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Höfen an der Enz",
+      "spotCount": 1,
+      "lat": 48.798481450000004,
+      "lng": 8.5813253,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/145804687), ODbL"
+    },
+    {
+      "id": "hoefen-0b910dfe11",
+      "city": "hoefen",
+      "label": "Johannes-Bodamer-Straße",
+      "street": "Johannes-Bodamer-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Höfen an der Enz",
+      "spotCount": 1,
+      "lat": 48.7987224,
+      "lng": 8.581314800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1254930063), ODbL"
+    }
+  ]
+}

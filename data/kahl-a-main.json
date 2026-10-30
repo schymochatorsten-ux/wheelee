@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "kahl-a-main",
+    "name": "Kahl a.Main",
+    "center": {
+      "lat": 50.077133,
+      "lng": 9.008814350000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kahl-a-main-96e809a1ab",
+      "city": "kahl-a-main",
+      "label": "Bahnhofsplatz 5",
+      "street": "Bahnhofsplatz",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kahl a.Main",
+      "spotCount": 3,
+      "lat": 50.077133,
+      "lng": 9.00388365,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/44956651), ODbL"
+    },
+    {
+      "id": "kahl-a-main-60f81c89c6",
+      "city": "kahl-a-main",
+      "label": "Pfarrer-Lippert-Platz",
+      "street": "Pfarrer-Lippert-Platz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kahl a.Main",
+      "spotCount": 1,
+      "lat": 50.068117650000005,
+      "lng": 9.008814350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/481336145), ODbL"
+    }
+  ]
+}

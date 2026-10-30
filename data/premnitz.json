@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "premnitz",
+    "name": "Premnitz",
+    "center": {
+      "lat": 52.535930300000004,
+      "lng": 12.332899300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "premnitz-3a1ab3fb9f",
+      "city": "premnitz",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Premnitz",
+      "spotCount": 1,
+      "lat": 52.5359728,
+      "lng": 12.332971,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13269923929), ODbL"
+    },
+    {
+      "id": "premnitz-87595868c4",
+      "city": "premnitz",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Premnitz",
+      "spotCount": 1,
+      "lat": 52.53601040000001,
+      "lng": 12.332891100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/98211921), ODbL"
+    },
+    {
+      "id": "premnitz-740da16fd8",
+      "city": "premnitz",
+      "label": "Bahnhofstraße 28",
+      "street": "Bahnhofstraße",
+      "houseNumber": "28",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Premnitz",
+      "spotCount": 1,
+      "lat": 52.535930300000004,
+      "lng": 12.3327429,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/307059011), ODbL"
+    },
+    {
+      "id": "premnitz-004867fcb8",
+      "city": "premnitz",
+      "label": "Bahnhofstraße 30",
+      "street": "Bahnhofstraße",
+      "houseNumber": "30",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Premnitz",
+      "spotCount": 1,
+      "lat": 52.535856300000006,
+      "lng": 12.332899300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13269923930), ODbL"
+    },
+    {
+      "id": "premnitz-616d10f34d",
+      "city": "premnitz",
+      "label": "Schillerstraße",
+      "street": "Schillerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Premnitz",
+      "spotCount": 1,
+      "lat": 52.5286057,
+      "lng": 12.338205000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/334146592), ODbL"
+    }
+  ]
+}

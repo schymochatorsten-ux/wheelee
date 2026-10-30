@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "rockenhausen",
+    "name": "Rockenhausen",
+    "center": {
+      "lat": 49.6313923,
+      "lng": 7.817932150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rockenhausen-8ef52a4d8b",
+      "city": "rockenhausen",
+      "label": "Am Reinhardsberg",
+      "street": "Am Reinhardsberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rockenhausen",
+      "spotCount": 2,
+      "lat": 49.6313923,
+      "lng": 7.816159600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/451882059), ODbL"
+    },
+    {
+      "id": "rockenhausen-a12eb5862e",
+      "city": "rockenhausen",
+      "label": "Bezirksamtsstraße 7",
+      "street": "Bezirksamtsstraße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rockenhausen",
+      "spotCount": 1,
+      "lat": 49.6296672,
+      "lng": 7.817932150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1463528908), ODbL"
+    }
+  ]
+}

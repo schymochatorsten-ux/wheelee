@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "waldems",
+    "name": "Waldems",
+    "center": {
+      "lat": 50.275393750000006,
+      "lng": 8.352647650000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "waldems-0077905b64",
+      "city": "waldems",
+      "label": "Im Brühl",
+      "street": "Im Brühl",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldems",
+      "spotCount": 2,
+      "lat": 50.25216815,
+      "lng": 8.312661250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1102860209), ODbL"
+    },
+    {
+      "id": "waldems-18f2915428",
+      "city": "waldems",
+      "label": "Industriestraße 1",
+      "street": "Industriestraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldems",
+      "spotCount": 1,
+      "lat": 50.275393750000006,
+      "lng": 8.352647650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1316675475), ODbL"
+    }
+  ]
+}

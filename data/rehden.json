@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "rehden",
+    "name": "Rehden",
+    "center": {
+      "lat": 52.61486275,
+      "lng": 8.4824059
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rehden-617199a226",
+      "city": "rehden",
+      "label": "An der Hege",
+      "street": "An der Hege",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rehden",
+      "spotCount": 2,
+      "lat": 52.61454105,
+      "lng": 8.482699,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1066810199), ODbL"
+    },
+    {
+      "id": "rehden-31e754b461",
+      "city": "rehden",
+      "label": "Dickeler Straße",
+      "street": "Dickeler Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rehden",
+      "spotCount": 3,
+      "lat": 52.61164275,
+      "lng": 8.481576050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/87607347), ODbL"
+    },
+    {
+      "id": "rehden-e57f043a47",
+      "city": "rehden",
+      "label": "Dickeler Straße",
+      "street": "Dickeler Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rehden",
+      "spotCount": 3,
+      "lat": 52.61486275,
+      "lng": 8.4820749,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1066810198), ODbL"
+    },
+    {
+      "id": "rehden-80f8df0931",
+      "city": "rehden",
+      "label": "Waldsportstätten",
+      "street": "Waldsportstätten",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rehden",
+      "spotCount": 2,
+      "lat": 52.61550475,
+      "lng": 8.4824059,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/171106374), ODbL"
+    }
+  ]
+}

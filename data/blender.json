@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "blender",
+    "name": "Blender",
+    "center": {
+      "lat": 52.927202750000006,
+      "lng": 9.135088450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "blender-7422e73f49",
+      "city": "blender",
+      "label": "Kirchweg 2",
+      "street": "Kirchweg",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Blender",
+      "spotCount": 1,
+      "lat": 52.927202750000006,
+      "lng": 9.135088450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1204680588), ODbL"
+    }
+  ]
+}

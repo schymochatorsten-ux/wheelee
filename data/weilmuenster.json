@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "weilmuenster",
+    "name": "Weilmünster",
+    "center": {
+      "lat": 50.45145720000001,
+      "lng": 8.37634255
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "weilmuenster-6cb9acc336",
+      "city": "weilmuenster",
+      "label": "Bahnhofstraße 1",
+      "street": "Bahnhofstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weilmünster",
+      "spotCount": 2,
+      "lat": 50.45157805,
+      "lng": 8.3525463,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1090202900), ODbL"
+    },
+    {
+      "id": "weilmuenster-6c61e29f55",
+      "city": "weilmuenster",
+      "label": "Bahnhofstraße 3",
+      "street": "Bahnhofstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weilmünster",
+      "spotCount": 1,
+      "lat": 50.45145720000001,
+      "lng": 8.352344500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1090203115), ODbL"
+    },
+    {
+      "id": "weilmuenster-f1b2fdeeed",
+      "city": "weilmuenster",
+      "label": "Bruchwiesenstraße",
+      "street": "Bruchwiesenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weilmünster",
+      "spotCount": 1,
+      "lat": 50.4332026,
+      "lng": 8.37635345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/50164328), ODbL"
+    },
+    {
+      "id": "weilmuenster-03f541461f",
+      "city": "weilmuenster",
+      "label": "Weilstraße",
+      "street": "Weilstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weilmünster",
+      "spotCount": 1,
+      "lat": 50.432263850000005,
+      "lng": 8.37634255,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/50164326), ODbL"
+    }
+  ]
+}

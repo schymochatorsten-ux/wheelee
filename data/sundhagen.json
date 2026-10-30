@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "sundhagen",
+    "name": "Sundhagen",
+    "center": {
+      "lat": 54.22939805,
+      "lng": 13.2827026
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sundhagen-b18c043e51",
+      "city": "sundhagen",
+      "label": "Landwerthof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sundhagen",
+      "spotCount": 3,
+      "lat": 54.22939805,
+      "lng": 13.2827026,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28585494), ODbL"
+    }
+  ]
+}

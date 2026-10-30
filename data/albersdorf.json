@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "albersdorf",
+    "name": "Albersdorf",
+    "center": {
+      "lat": 54.146252200000006,
+      "lng": 9.2836629
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "albersdorf-8c76b19be7",
+      "city": "albersdorf",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Albersdorf",
+      "spotCount": 1,
+      "lat": 54.1459278,
+      "lng": 9.2923684,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1096156307), ODbL"
+    },
+    {
+      "id": "albersdorf-e17e84dbe3",
+      "city": "albersdorf",
+      "label": "Erholungsstraße",
+      "street": "Erholungsstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Albersdorf",
+      "spotCount": 1,
+      "lat": 54.146252200000006,
+      "lng": 9.28298,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10079983460), ODbL"
+    },
+    {
+      "id": "albersdorf-4318deaf7d",
+      "city": "albersdorf",
+      "label": "Karkloh",
+      "street": "Karkloh",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Albersdorf",
+      "spotCount": 1,
+      "lat": 54.140098550000005,
+      "lng": 9.285303350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1101890820), ODbL"
+    },
+    {
+      "id": "albersdorf-0081e84e79",
+      "city": "albersdorf",
+      "label": "Norderstraße",
+      "street": "Norderstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Albersdorf",
+      "spotCount": 1,
+      "lat": 54.1482644,
+      "lng": 9.2836629,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1101891007), ODbL"
+    },
+    {
+      "id": "albersdorf-c75e1c40e4",
+      "city": "albersdorf",
+      "label": "Norderstraße 11",
+      "street": "Norderstraße",
+      "houseNumber": "11",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Albersdorf",
+      "spotCount": 1,
+      "lat": 54.148158,
+      "lng": 9.28332025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1101891006), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kollmar",
+    "name": "Kollmar",
+    "center": {
+      "lat": 53.725826350000006,
+      "lng": 9.488972350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kollmar-5f8989e2f0",
+      "city": "kollmar",
+      "label": "Neuer Weg",
+      "street": "Neuer Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Kollmar",
+      "spotCount": 1,
+      "lat": 53.725826350000006,
+      "lng": 9.488972350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1202755496), ODbL"
+    }
+  ]
+}

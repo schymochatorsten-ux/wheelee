@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "bad-herrenalb",
+    "name": "Bad Herrenalb",
+    "center": {
+      "lat": 48.799105100000006,
+      "lng": 8.43746445
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-herrenalb-2a812c760e",
+      "city": "bad-herrenalb",
+      "label": "An der Alb",
+      "street": "An der Alb",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Herrenalb",
+      "spotCount": 1,
+      "lat": 48.79690995,
+      "lng": 8.43555865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1122143487), ODbL"
+    },
+    {
+      "id": "bad-herrenalb-84fe511976",
+      "city": "bad-herrenalb",
+      "label": "An der Alb",
+      "street": "An der Alb",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Herrenalb",
+      "spotCount": 1,
+      "lat": 48.79690575000001,
+      "lng": 8.4356051,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1122143488), ODbL"
+    },
+    {
+      "id": "bad-herrenalb-7d250350ee",
+      "city": "bad-herrenalb",
+      "label": "An der Alb",
+      "street": "An der Alb",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Herrenalb",
+      "spotCount": 1,
+      "lat": 48.7969016,
+      "lng": 8.4356516,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1122143489), ODbL"
+    },
+    {
+      "id": "bad-herrenalb-6e3265bf2e",
+      "city": "bad-herrenalb",
+      "label": "Bahnhofstraße 12",
+      "street": "Bahnhofstraße",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Herrenalb",
+      "spotCount": 1,
+      "lat": 48.801988650000006,
+      "lng": 8.43992575,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1069972631), ODbL"
+    },
+    {
+      "id": "bad-herrenalb-a99acadbec",
+      "city": "bad-herrenalb",
+      "label": "Dobler Straße 37/1",
+      "street": "Dobler Straße",
+      "houseNumber": "37/1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Herrenalb",
+      "spotCount": 1,
+      "lat": 48.8002422,
+      "lng": 8.44261225,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1362946222), ODbL"
+    },
+    {
+      "id": "bad-herrenalb-ad098344f0",
+      "city": "bad-herrenalb",
+      "label": "Kurpromenade",
+      "street": "Kurpromenade",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bad Herrenalb",
+      "spotCount": 2,
+      "lat": 48.799105100000006,
+      "lng": 8.43746445,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/504534581), ODbL"
+    }
+  ]
+}

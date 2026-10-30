@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "neunkirchen-a-sand",
+    "name": "Neunkirchen a.Sand",
+    "center": {
+      "lat": 49.523207600000006,
+      "lng": 11.321025550000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neunkirchen-a-sand-7fda6c2fd8",
+      "city": "neunkirchen-a-sand",
+      "label": "Bahnhofsplatz 3",
+      "street": "Bahnhofsplatz",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neunkirchen a.Sand",
+      "spotCount": 3,
+      "lat": 49.52044635,
+      "lng": 11.321025550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/547940008), ODbL"
+    },
+    {
+      "id": "neunkirchen-a-sand-f331fa86f8",
+      "city": "neunkirchen-a-sand",
+      "label": "Frühmeßholzstraße 1",
+      "street": "Frühmeßholzstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neunkirchen a.Sand",
+      "spotCount": 1,
+      "lat": 49.523207600000006,
+      "lng": 11.3181001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1451039316), ODbL"
+    }
+  ]
+}

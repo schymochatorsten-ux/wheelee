@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "odelzhausen",
+    "name": "Odelzhausen",
+    "center": {
+      "lat": 48.30823065,
+      "lng": 11.2023701
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "odelzhausen-55cb38779e",
+      "city": "odelzhausen",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Odelzhausen",
+      "spotCount": 1,
+      "lat": 48.30823065,
+      "lng": 11.2023701,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1191259000), ODbL"
+    },
+    {
+      "id": "odelzhausen-31caabdd1e",
+      "city": "odelzhausen",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Odelzhausen",
+      "spotCount": 1,
+      "lat": 48.308212350000005,
+      "lng": 11.2022825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1191259001), ODbL"
+    }
+  ]
+}

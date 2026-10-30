@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wustrow",
+    "name": "Wustrow (Wendland)",
+    "center": {
+      "lat": 52.924568750000006,
+      "lng": 11.12078715
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wustrow-dc89e87d96",
+      "city": "wustrow",
+      "label": "An der Kirche",
+      "street": "An der Kirche",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wustrow (Wendland)",
+      "spotCount": 1,
+      "lat": 52.924568750000006,
+      "lng": 11.12078715,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/709236781), ODbL"
+    }
+  ]
+}

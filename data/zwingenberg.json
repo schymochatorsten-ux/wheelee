@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "zwingenberg",
+    "name": "Zwingenberg",
+    "center": {
+      "lat": 49.7242016,
+      "lng": 8.60942035
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zwingenberg-2d070c2623",
+      "city": "zwingenberg",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zwingenberg",
+      "spotCount": 2,
+      "lat": 49.7249375,
+      "lng": 8.609371150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/978168136), ODbL"
+    },
+    {
+      "id": "zwingenberg-3385e419f9",
+      "city": "zwingenberg",
+      "label": "Gartenfeld",
+      "street": "Gartenfeld",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Zwingenberg",
+      "spotCount": 1,
+      "lat": 49.724070100000006,
+      "lng": 8.60942035,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1316880459), ODbL"
+    },
+    {
+      "id": "zwingenberg-8d4fb095ed",
+      "city": "zwingenberg",
+      "label": "Löwenplatz 6",
+      "street": "Löwenplatz",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zwingenberg",
+      "spotCount": 1,
+      "lat": 49.7242016,
+      "lng": 8.612658600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/409354966), ODbL"
+    }
+  ]
+}

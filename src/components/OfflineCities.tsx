@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useLocale, useT } from "@/i18n/context";
 import { localeTag, type Locale } from "@/i18n";
 import type { CityInfo } from "@/lib/parking/spots";
@@ -25,12 +25,16 @@ const formatDate = (iso: string, locale: Locale) =>
 const buttonClass =
   "inline-flex min-h-11 items-center rounded-lg border border-neutral-300 px-4 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none disabled:opacity-50 dark:border-neutral-700";
 
+/** So viele Städte bietet die Auswahl auf einmal an. */
+const OPTION_LIMIT = 200;
+
 export function OfflineCities({ cities }: { cities: readonly CityInfo[] }) {
   const t = useT();
   const locale = useLocale();
   const [saved, setSaved] = useState<OfflineCitySummary[]>([]);
   const [supported, setSupported] = useState(true);
   const [choice, setChoice] = useState(cities[0]?.slug ?? "");
+  const [filter, setFilter] = useState("");
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
 
@@ -69,7 +73,24 @@ export function OfflineCities({ cities }: { cities: readonly CityInfo[] }) {
   };
 
   const total = saved.reduce((sum, entry) => sum + entry.bytes, 0);
-  const sorted = [...cities].sort((a, b) => a.name.localeCompare(b.name, localeTag(locale)));
+  const sorted = useMemo(
+    () => [...cities].sort((a, b) => a.name.localeCompare(b.name, localeTag(locale))),
+    [cities, locale],
+  );
+  /*
+   * Bei tausenden Städten (ToDo 2e.14) ist eine Auswahlliste ohne Suche nicht
+   * zu bedienen und kostet beim Aufbau. Das Suchfeld engt ein; die gewählte
+   * Stadt bleibt immer in der Liste, sonst spränge die Auswahl beim Tippen.
+   */
+  const needle = filter.trim().toLocaleLowerCase(localeTag(locale));
+  const options = useMemo(() => {
+    const hits = needle
+      ? sorted.filter((city) => city.name.toLocaleLowerCase(localeTag(locale)).includes(needle))
+      : sorted;
+    const limited = hits.slice(0, OPTION_LIMIT);
+    const chosen = sorted.find((city) => city.slug === choice);
+    return chosen && !limited.includes(chosen) ? [chosen, ...limited] : limited;
+  }, [sorted, needle, choice, locale]);
 
   return (
     <section aria-labelledby="offline-heading">
@@ -83,6 +104,17 @@ export function OfflineCities({ cities }: { cities: readonly CityInfo[] }) {
       ) : (
         <>
           <div className="mt-2 flex flex-wrap items-end gap-2">
+            {cities.length > 30 && (
+              <label className="flex flex-col gap-1 text-sm">
+                {t("list.cityFilter")}
+                <input
+                  type="search"
+                  value={filter}
+                  onChange={(event) => setFilter(event.target.value)}
+                  className="min-h-11 rounded-lg border border-neutral-300 bg-transparent px-2 dark:border-neutral-700"
+                />
+              </label>
+            )}
             <label className="flex flex-col gap-1 text-sm">
               {t("offline.cityLabel")}
               <select
@@ -91,7 +123,7 @@ export function OfflineCities({ cities }: { cities: readonly CityInfo[] }) {
                 onChange={(event) => setChoice(event.target.value)}
                 className="min-h-11 rounded-lg border border-neutral-300 bg-transparent px-2 dark:border-neutral-700"
               >
-                {sorted.map((city) => (
+                {options.map((city) => (
                   <option key={city.slug} value={city.slug} className="text-black">
                     {city.name}
                   </option>

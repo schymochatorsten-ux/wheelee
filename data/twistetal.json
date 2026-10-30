@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "twistetal",
+    "name": "Twistetal",
+    "center": {
+      "lat": 51.31291635000001,
+      "lng": 8.9101082
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "twistetal-871270f6be",
+      "city": "twistetal",
+      "label": "Hinter den Höfen 10",
+      "street": "Hinter den Höfen",
+      "houseNumber": "10",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Twistetal",
+      "spotCount": 1,
+      "lat": 51.31291635000001,
+      "lng": 8.9101082,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1122403744), ODbL"
+    }
+  ]
+}

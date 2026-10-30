@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "dettingen-unter-teck",
+    "name": "Dettingen unter Teck",
+    "center": {
+      "lat": 48.609938050000004,
+      "lng": 9.444186850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dettingen-unter-teck-760cdb90ed",
+      "city": "dettingen-unter-teck",
+      "label": "Nachtobel",
+      "street": "Nachtobel",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dettingen unter Teck",
+      "spotCount": 2,
+      "lat": 48.609938050000004,
+      "lng": 9.444186850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24676865), ODbL"
+    }
+  ]
+}

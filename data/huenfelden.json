@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "huenfelden",
+    "name": "Hünfelden",
+    "center": {
+      "lat": 50.3244668,
+      "lng": 8.17257955
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "huenfelden-d357a3e7da",
+      "city": "huenfelden",
+      "label": "Elisabeth-Koch-Straße",
+      "street": "Elisabeth-Koch-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hünfelden",
+      "spotCount": 1,
+      "lat": 50.3244668,
+      "lng": 8.17257955,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1001173924), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schotten",
+    "name": "Schotten",
+    "center": {
+      "lat": 50.50466970000001,
+      "lng": 9.126655800000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schotten-7bb4d8ed86",
+      "city": "schotten",
+      "label": "Am Vulkaneum",
+      "street": "Am Vulkaneum",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schotten",
+      "spotCount": 1,
+      "lat": 50.50466970000001,
+      "lng": 9.126655800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/140680401), ODbL"
+    }
+  ]
+}

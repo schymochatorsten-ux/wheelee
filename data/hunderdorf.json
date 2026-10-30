@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hunderdorf",
+    "name": "Hunderdorf",
+    "center": {
+      "lat": 48.930981700000004,
+      "lng": 12.7053397
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hunderdorf-35202f90a5",
+      "city": "hunderdorf",
+      "label": "Bayerischer Wald Süd",
+      "street": "Bayerischer Wald Süd",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hunderdorf",
+      "spotCount": 7,
+      "lat": 48.930981700000004,
+      "lng": 12.7053397,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1317875254), ODbL"
+    }
+  ]
+}

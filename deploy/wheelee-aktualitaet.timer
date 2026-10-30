@@ -1,0 +1,12 @@
+[Unit]
+Description=wheelee Aktualitätslauf monatlich (ToDo 19.2)
+
+[Timer]
+OnCalendar=*-*-01 04:30:00
+Persistent=true
+# Overpass und die Portale gehören Freiwilligen (CLAUDE.md): nicht alle zur
+# selben Minute.
+RandomizedDelaySec=1h
+
+[Install]
+WantedBy=timers.target

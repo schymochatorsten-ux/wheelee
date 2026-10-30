@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "gutach-bw",
+    "name": "Gutach (Schwarzwaldbahn)",
+    "center": {
+      "lat": 48.271038600000004,
+      "lng": 8.20143045
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gutach-bw-3af53f2409",
+      "city": "gutach-bw",
+      "label": "Vor Singersbach",
+      "street": "Vor Singersbach",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Gutach (Schwarzwaldbahn)",
+      "spotCount": 2,
+      "lat": 48.26967640000001,
+      "lng": 8.20143045,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/160493057), ODbL"
+    },
+    {
+      "id": "gutach-bw-b75357f95f",
+      "city": "gutach-bw",
+      "label": "Wählerbrücke",
+      "street": "Wählerbrücke",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gutach (Schwarzwaldbahn)",
+      "spotCount": 1,
+      "lat": 48.271038600000004,
+      "lng": 8.20034975,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/446476765), ODbL"
+    }
+  ]
+}

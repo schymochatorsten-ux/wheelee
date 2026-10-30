@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "eschede",
+    "name": "Eschede",
+    "center": {
+      "lat": 52.732171050000005,
+      "lng": 10.2309867
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eschede-1057c5c968",
+      "city": "eschede",
+      "label": "Celler Straße",
+      "street": "Celler Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eschede",
+      "spotCount": 2,
+      "lat": 52.72780420000001,
+      "lng": 10.22733835,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/144916860), ODbL"
+    },
+    {
+      "id": "eschede-ff79fc76bd",
+      "city": "eschede",
+      "label": "Celler Straße 8",
+      "street": "Celler Straße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eschede",
+      "spotCount": 1,
+      "lat": 52.732171050000005,
+      "lng": 10.2339152,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/318129479), ODbL"
+    },
+    {
+      "id": "eschede-0cd7eb3b8d",
+      "city": "eschede",
+      "label": "Rebberlaher Straße 3a",
+      "street": "Rebberlaher Straße",
+      "houseNumber": "3a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Eschede",
+      "spotCount": 1,
+      "lat": 52.73371625,
+      "lng": 10.2309867,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/981956426), ODbL"
+    }
+  ]
+}

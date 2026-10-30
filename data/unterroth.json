@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "unterroth",
+    "name": "Unterroth",
+    "center": {
+      "lat": 48.19322265,
+      "lng": 10.167749400000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "unterroth-2980025eba",
+      "city": "unterroth",
+      "label": "Bergenstetter Weg",
+      "street": "Bergenstetter Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Unterroth",
+      "spotCount": 3,
+      "lat": 48.19322265,
+      "lng": 10.167749400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/416220316), ODbL"
+    }
+  ]
+}

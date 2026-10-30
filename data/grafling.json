@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "grafling",
+    "name": "Grafling",
+    "center": {
+      "lat": 48.8940105,
+      "lng": 12.97290365
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grafling-f74d4e35f1",
+      "city": "grafling",
+      "label": "Alte Straße",
+      "street": "Alte Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grafling",
+      "spotCount": 2,
+      "lat": 48.8905499,
+      "lng": 12.972571550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/901700700), ODbL"
+    },
+    {
+      "id": "grafling-91c000294d",
+      "city": "grafling",
+      "label": "Kirchenstraße 3",
+      "street": "Kirchenstraße",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Grafling",
+      "spotCount": 1,
+      "lat": 48.8940105,
+      "lng": 12.9736524,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10781979033), ODbL"
+    },
+    {
+      "id": "grafling-7d5baed78e",
+      "city": "grafling",
+      "label": "Prangerweg 13",
+      "street": "Prangerweg",
+      "houseNumber": "13",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grafling",
+      "spotCount": 1,
+      "lat": 48.8947142,
+      "lng": 12.97290365,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1126199370), ODbL"
+    }
+  ]
+}

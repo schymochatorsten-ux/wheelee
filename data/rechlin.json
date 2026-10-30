@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "rechlin",
+    "name": "Rechlin",
+    "center": {
+      "lat": 53.3716054,
+      "lng": 12.777050500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rechlin-db4dc6d6fd",
+      "city": "rechlin",
+      "label": "Alte Fahrt",
+      "street": "Alte Fahrt",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rechlin",
+      "spotCount": 1,
+      "lat": 53.3716054,
+      "lng": 12.777050500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/626026957), ODbL"
+    },
+    {
+      "id": "rechlin-1fe5090d40",
+      "city": "rechlin",
+      "label": "Am Hafendorf",
+      "street": "Am Hafendorf",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rechlin",
+      "spotCount": 2,
+      "lat": 53.3573938,
+      "lng": 12.730305450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/826300986), ODbL"
+    }
+  ]
+}

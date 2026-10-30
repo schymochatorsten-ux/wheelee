@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "dornheim",
+    "name": "Dornheim",
+    "center": {
+      "lat": 50.8378606,
+      "lng": 11.011368000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dornheim-1b85b66219",
+      "city": "dornheim",
+      "label": "Dornheimer Rieth",
+      "street": "Dornheimer Rieth",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dornheim",
+      "spotCount": 1,
+      "lat": 50.8364754,
+      "lng": 11.011368000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/755873926), ODbL"
+    },
+    {
+      "id": "dornheim-359e2b6e47",
+      "city": "dornheim",
+      "label": "Dornheimer Rieth",
+      "street": "Dornheimer Rieth",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dornheim",
+      "spotCount": 1,
+      "lat": 50.8378606,
+      "lng": 11.010186000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/755876003), ODbL"
+    }
+  ]
+}

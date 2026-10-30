@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "woerth-a-d-isar",
+    "name": "Wörth a.d.Isar",
+    "center": {
+      "lat": 48.623842100000005,
+      "lng": 12.332485600000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "woerth-a-d-isar-2a54647eee",
+      "city": "woerth-a-d-isar",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wörth a.d.Isar",
+      "spotCount": 2,
+      "lat": 48.623842100000005,
+      "lng": 12.332485600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/51175014), ODbL"
+    }
+  ]
+}

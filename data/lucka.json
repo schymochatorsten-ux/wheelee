@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "lucka",
+    "name": "Lucka",
+    "center": {
+      "lat": 51.0878705,
+      "lng": 12.323852700000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lucka-63eb7d9128",
+      "city": "lucka",
+      "label": "Breitenhainer Weg 10",
+      "street": "Breitenhainer Weg",
+      "houseNumber": "10",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lucka",
+      "spotCount": 1,
+      "lat": 51.0878705,
+      "lng": 12.3237944,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8047538388), ODbL"
+    },
+    {
+      "id": "lucka-be57153c6a",
+      "city": "lucka",
+      "label": "Breitenhainer Weg 10",
+      "street": "Breitenhainer Weg",
+      "houseNumber": "10",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lucka",
+      "spotCount": 1,
+      "lat": 51.0878646,
+      "lng": 12.323852700000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8047538389), ODbL"
+    }
+  ]
+}

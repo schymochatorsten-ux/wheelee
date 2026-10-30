@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "oberstdorf",
+    "name": "Oberstdorf",
+    "center": {
+      "lat": 47.4074737,
+      "lng": 10.27637305
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberstdorf-acf5c4a711",
+      "city": "oberstdorf",
+      "label": "Freiherr-von-Brutscherstraße",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Oberstdorf",
+      "spotCount": 1,
+      "lat": 47.4074737,
+      "lng": 10.275620750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/83801291), ODbL"
+    },
+    {
+      "id": "oberstdorf-c3d5f62326",
+      "city": "oberstdorf",
+      "label": "P3",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Oberstdorf",
+      "spotCount": 1,
+      "lat": 47.411648150000005,
+      "lng": 10.27637305,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/269303345), ODbL"
+    },
+    {
+      "id": "oberstdorf-c12f762824",
+      "city": "oberstdorf",
+      "label": "Sachsenweg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Oberstdorf",
+      "spotCount": 1,
+      "lat": 47.40541125,
+      "lng": 10.27921615,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/268600669), ODbL"
+    }
+  ]
+}

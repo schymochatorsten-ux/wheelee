@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "naumburg-he",
+    "name": "Naumburg",
+    "center": {
+      "lat": 51.18325490000001,
+      "lng": 9.20771895
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "naumburg-he-a20c28ec05",
+      "city": "naumburg-he",
+      "label": "Zur Steinkaute 3",
+      "street": "Zur Steinkaute",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Naumburg",
+      "spotCount": 2,
+      "lat": 51.18325490000001,
+      "lng": 9.20771895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1173532326), ODbL"
+    }
+  ]
+}

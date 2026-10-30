@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "immendingen",
+    "name": "Immendingen",
+    "center": {
+      "lat": 47.94212975000001,
+      "lng": 8.73027545
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "immendingen-31c3409672",
+      "city": "immendingen",
+      "label": "Bachzimmerer Straße",
+      "street": "Bachzimmerer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Immendingen",
+      "spotCount": 2,
+      "lat": 47.94212975000001,
+      "lng": 8.73027545,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1396231754), ODbL"
+    }
+  ]
+}

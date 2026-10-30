@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "marktleuthen",
+    "name": "Marktleuthen",
+    "center": {
+      "lat": 50.13076950000001,
+      "lng": 12.0010925
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "marktleuthen-2faf39d43a",
+      "city": "marktleuthen",
+      "label": "Pestilenzsteig",
+      "street": "Pestilenzsteig",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Marktleuthen",
+      "spotCount": 1,
+      "lat": 50.12936125,
+      "lng": 11.9954873,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/514450370), ODbL"
+    },
+    {
+      "id": "marktleuthen-25555547a4",
+      "city": "marktleuthen",
+      "label": "Selber Straße",
+      "street": "Selber Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Marktleuthen",
+      "spotCount": 1,
+      "lat": 50.13080780000001,
+      "lng": 12.001115,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11028380576), ODbL"
+    },
+    {
+      "id": "marktleuthen-ee5f6f5315",
+      "city": "marktleuthen",
+      "label": "Selber Straße",
+      "street": "Selber Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Marktleuthen",
+      "spotCount": 1,
+      "lat": 50.13076950000001,
+      "lng": 12.0010925,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11028420476), ODbL"
+    }
+  ]
+}

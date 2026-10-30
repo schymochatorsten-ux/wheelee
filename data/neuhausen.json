@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "neuhausen",
+    "name": "Neuhausen",
+    "center": {
+      "lat": 48.7956061,
+      "lng": 8.7682681
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuhausen-5a6862b9ad",
+      "city": "neuhausen",
+      "label": "Im Monbachtal 3",
+      "street": "Im Monbachtal",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neuhausen",
+      "spotCount": 1,
+      "lat": 48.7991857,
+      "lng": 8.7302256,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10844980354), ODbL"
+    },
+    {
+      "id": "neuhausen-5ae70a8f8e",
+      "city": "neuhausen",
+      "label": "Pforzheimer Straße",
+      "street": "Pforzheimer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuhausen",
+      "spotCount": 1,
+      "lat": 48.7956061,
+      "lng": 8.7682681,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/91899851), ODbL"
+    },
+    {
+      "id": "neuhausen-ef25fdd3f9",
+      "city": "neuhausen",
+      "label": "Pforzheimer Straße 22",
+      "street": "Pforzheimer Straße",
+      "houseNumber": "22",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neuhausen",
+      "spotCount": 1,
+      "lat": 48.79280465,
+      "lng": 8.7787705,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/813812593), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "berghaupten",
+    "name": "Berghaupten",
+    "center": {
+      "lat": 48.404824250000004,
+      "lng": 8.00132465
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "berghaupten-3cc7acff6a",
+      "city": "berghaupten",
+      "label": "Kinzigstraße",
+      "street": "Kinzigstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Berghaupten",
+      "spotCount": 2,
+      "lat": 48.40474035,
+      "lng": 8.00138905,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/155456315), ODbL"
+    },
+    {
+      "id": "berghaupten-cd9d196b8d",
+      "city": "berghaupten",
+      "label": "Kinzigstraße 11",
+      "street": "Kinzigstraße",
+      "houseNumber": "11",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Berghaupten",
+      "spotCount": 1,
+      "lat": 48.404830000000004,
+      "lng": 8.001275750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1241364926), ODbL"
+    },
+    {
+      "id": "berghaupten-242c3f5257",
+      "city": "berghaupten",
+      "label": "Kinzigstraße 11",
+      "street": "Kinzigstraße",
+      "houseNumber": "11",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Berghaupten",
+      "spotCount": 1,
+      "lat": 48.404824250000004,
+      "lng": 8.00132465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1241364927), ODbL"
+    }
+  ]
+}

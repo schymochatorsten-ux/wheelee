@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "harztor",
+    "name": "Harztor",
+    "center": {
+      "lat": 51.565206950000004,
+      "lng": 10.8346722
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "harztor-ab42a06ad4",
+      "city": "harztor",
+      "label": "Burgstraße 37",
+      "street": "Burgstraße",
+      "houseNumber": "37",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Harztor",
+      "spotCount": 2,
+      "lat": 51.565206950000004,
+      "lng": 10.8346722,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/30183318), ODbL"
+    },
+    {
+      "id": "harztor-39cfd41bb3",
+      "city": "harztor",
+      "label": "Nordhäuser Straße",
+      "street": "Nordhäuser Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Sa 08:00-20:00",
+      "district": "Harztor",
+      "spotCount": 1,
+      "lat": 51.54216675000001,
+      "lng": 10.769336350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27139557), ODbL"
+    }
+  ]
+}

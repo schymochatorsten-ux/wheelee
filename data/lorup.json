@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lorup",
+    "name": "Lorup",
+    "center": {
+      "lat": 52.9223927,
+      "lng": 7.640610000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lorup-17441c70d5",
+      "city": "lorup",
+      "label": "An der Turnhalle",
+      "street": "An der Turnhalle",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lorup",
+      "spotCount": 2,
+      "lat": 52.9223927,
+      "lng": 7.640610000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8978076939), ODbL"
+    }
+  ]
+}

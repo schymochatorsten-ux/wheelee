@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bollingstedt",
+    "name": "Bollingstedt",
+    "center": {
+      "lat": 54.6168215,
+      "lng": 9.44204595
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bollingstedt-e9e0332bcd",
+      "city": "bollingstedt",
+      "label": "Jalmer Moor",
+      "street": "Jalmer Moor",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bollingstedt",
+      "spotCount": 2,
+      "lat": 54.6168215,
+      "lng": 9.44204595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/536471848), ODbL"
+    }
+  ]
+}

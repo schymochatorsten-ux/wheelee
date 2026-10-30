@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "parsteinsee",
+    "name": "Parsteinsee",
+    "center": {
+      "lat": 52.922251900000006,
+      "lng": 14.027296450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "parsteinsee-5bbc3d4d9e",
+      "city": "parsteinsee",
+      "label": "Am Parsteinsee",
+      "street": "Am Parsteinsee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Parsteinsee",
+      "spotCount": 6,
+      "lat": 52.922251900000006,
+      "lng": 14.027296450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1356957792), ODbL"
+    }
+  ]
+}

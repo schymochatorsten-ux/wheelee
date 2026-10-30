@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "dorf-mecklenburg",
+    "name": "Dorf Mecklenburg",
+    "center": {
+      "lat": 53.874043300000004,
+      "lng": 11.4467545
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dorf-mecklenburg-f8d60da7ad",
+      "city": "dorf-mecklenburg",
+      "label": "Am kleinen Stadtfeld 6",
+      "street": "Am kleinen Stadtfeld",
+      "houseNumber": "6",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dorf Mecklenburg",
+      "spotCount": 1,
+      "lat": 53.874043300000004,
+      "lng": 11.4467545,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1334502183), ODbL"
+    }
+  ]
+}

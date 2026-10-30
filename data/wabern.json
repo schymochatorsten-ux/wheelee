@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "wabern",
+    "name": "Wabern",
+    "center": {
+      "lat": 51.10272015,
+      "lng": 9.357803950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wabern-0fade60ba3",
+      "city": "wabern",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Wabern",
+      "spotCount": 1,
+      "lat": 51.10403480000001,
+      "lng": 9.358504550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/388700492), ODbL"
+    },
+    {
+      "id": "wabern-6e8c8c96b8",
+      "city": "wabern",
+      "label": "Homberger Straße",
+      "street": "Homberger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wabern",
+      "spotCount": 2,
+      "lat": 51.10226875000001,
+      "lng": 9.357803950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1302225339), ODbL"
+    },
+    {
+      "id": "wabern-b074cda9fe",
+      "city": "wabern",
+      "label": "Schmiedeweg",
+      "street": "Schmiedeweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wabern",
+      "spotCount": 2,
+      "lat": 51.10272015,
+      "lng": 9.34744745,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/204144381), ODbL"
+    },
+    {
+      "id": "wabern-c57aeeb764",
+      "city": "wabern",
+      "label": "Wimmer",
+      "street": "Wimmer",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wabern",
+      "spotCount": 2,
+      "lat": 51.10261905,
+      "lng": 9.3478994,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/724370584), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "teuchern",
+    "name": "Teuchern",
+    "center": {
+      "lat": 51.1199232,
+      "lng": 12.0214926
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "teuchern-56b3e8dee6",
+      "city": "teuchern",
+      "label": "Markt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Teuchern",
+      "spotCount": 1,
+      "lat": 51.1199232,
+      "lng": 12.0214926,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2211739303), ODbL"
+    },
+    {
+      "id": "teuchern-d7637bd623",
+      "city": "teuchern",
+      "label": "Platz an der Mühlstraße",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Teuchern",
+      "spotCount": 1,
+      "lat": 51.12127595,
+      "lng": 12.0250752,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/288273039), ODbL"
+    },
+    {
+      "id": "teuchern-1603fbf525",
+      "city": "teuchern",
+      "label": "Raststätte Osterfeld West",
+      "street": "Raststätte Osterfeld West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Teuchern",
+      "spotCount": 1,
+      "lat": 51.10541295,
+      "lng": 11.954781350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1158312430), ODbL"
+    },
+    {
+      "id": "teuchern-5c164dbde2",
+      "city": "teuchern",
+      "label": "Raststätte Osterfeld West",
+      "street": "Raststätte Osterfeld West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Teuchern",
+      "spotCount": 1,
+      "lat": 51.1052198,
+      "lng": 11.954778600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1158312431), ODbL"
+    }
+  ]
+}

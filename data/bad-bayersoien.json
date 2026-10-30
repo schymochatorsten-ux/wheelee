@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bad-bayersoien",
+    "name": "Bad Bayersoien",
+    "center": {
+      "lat": 47.6947198,
+      "lng": 11.007776150000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-bayersoien-2cc2c1b02f",
+      "city": "bad-bayersoien",
+      "label": "Behindertenparkplatz Bad Bayersoien",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "08:00-18:00",
+      "district": "Bad Bayersoien",
+      "spotCount": 1,
+      "lat": 47.6947198,
+      "lng": 11.007776150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/279699910), ODbL"
+    }
+  ]
+}

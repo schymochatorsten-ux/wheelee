@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hemmingstedt",
+    "name": "Hemmingstedt",
+    "center": {
+      "lat": 54.1549569,
+      "lng": 9.0909528
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hemmingstedt-5cafe28c42",
+      "city": "hemmingstedt",
+      "label": "Neue Anlage",
+      "street": "Neue Anlage",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hemmingstedt",
+      "spotCount": 2,
+      "lat": 54.1549569,
+      "lng": 9.0909528,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/169955677), ODbL"
+    }
+  ]
+}

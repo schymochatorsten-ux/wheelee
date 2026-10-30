@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "geisa",
+    "name": "Geisa",
+    "center": {
+      "lat": 50.719549150000006,
+      "lng": 9.9288557
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "geisa-647aca1509",
+      "city": "geisa",
+      "label": "Platz der Deutschen Einheit",
+      "street": "Platz der Deutschen Einheit",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Geisa",
+      "spotCount": 3,
+      "lat": 50.719549150000006,
+      "lng": 9.9288557,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/135262919), ODbL"
+    },
+    {
+      "id": "geisa-3c3dcc7420",
+      "city": "geisa",
+      "label": "Platz der Deutschen Einheit",
+      "street": "Platz der Deutschen Einheit",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Geisa",
+      "spotCount": 1,
+      "lat": 50.719396200000006,
+      "lng": 9.928562150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1454537313), ODbL"
+    }
+  ]
+}

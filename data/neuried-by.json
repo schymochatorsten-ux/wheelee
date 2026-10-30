@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "neuried-by",
+    "name": "Neuried",
+    "center": {
+      "lat": 48.09368955000001,
+      "lng": 11.4648523
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuried-by-1c161a996b",
+      "city": "neuried-by",
+      "label": "Planegger Straße 2",
+      "street": "Planegger Straße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuried",
+      "spotCount": 1,
+      "lat": 48.09368955000001,
+      "lng": 11.4648523,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/189301389), ODbL"
+    }
+  ]
+}

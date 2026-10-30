@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schmitten",
+    "name": "Schmitten im Taunus",
+    "center": {
+      "lat": 50.232674550000006,
+      "lng": 8.458445750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schmitten-4c8176fdfe",
+      "city": "schmitten",
+      "label": "Großer Feldberg",
+      "street": "Großer Feldberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Schmitten im Taunus",
+      "spotCount": 2,
+      "lat": 50.232674550000006,
+      "lng": 8.458445750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/226916048), ODbL"
+    }
+  ]
+}

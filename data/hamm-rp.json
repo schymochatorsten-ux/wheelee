@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hamm-rp",
+    "name": "Hamm (Sieg)",
+    "center": {
+      "lat": 50.76223,
+      "lng": 7.684085550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hamm-rp-e7be65356c",
+      "city": "hamm-rp",
+      "label": "Lindenallee",
+      "street": "Lindenallee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hamm (Sieg)",
+      "spotCount": 3,
+      "lat": 50.76223,
+      "lng": 7.684085550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/41338792), ODbL"
+    }
+  ]
+}

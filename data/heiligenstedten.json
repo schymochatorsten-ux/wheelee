@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "heiligenstedten",
+    "name": "Heiligenstedten",
+    "center": {
+      "lat": 53.93469305000001,
+      "lng": 9.47106325
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "heiligenstedten-678c87f3f7",
+      "city": "heiligenstedten",
+      "label": "Juliankadamm",
+      "street": "Juliankadamm",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heiligenstedten",
+      "spotCount": 1,
+      "lat": 53.93469305000001,
+      "lng": 9.47106325,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35884058), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "muecke",
+    "name": "Mücke",
+    "center": {
+      "lat": 50.637274850000004,
+      "lng": 9.03007515
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "muecke-74534248a4",
+      "city": "muecke",
+      "label": "Langhans",
+      "street": "Langhans",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Mücke",
+      "spotCount": 1,
+      "lat": 50.637274850000004,
+      "lng": 9.03007515,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1297317073), ODbL"
+    },
+    {
+      "id": "muecke-e9a87795bd",
+      "city": "muecke",
+      "label": "Sydfalster Ring",
+      "street": "Sydfalster Ring",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Mücke",
+      "spotCount": 1,
+      "lat": 50.63710565,
+      "lng": 9.02987255,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1297317081), ODbL"
+    }
+  ]
+}

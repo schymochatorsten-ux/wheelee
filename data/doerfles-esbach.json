@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "doerfles-esbach",
+    "name": "Dörfles-Esbach",
+    "center": {
+      "lat": 50.2857709,
+      "lng": 10.9995636
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "doerfles-esbach-f377b0f2db",
+      "city": "doerfles-esbach",
+      "label": "Coburger Straße 2",
+      "street": "Coburger Straße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dörfles-Esbach",
+      "spotCount": 1,
+      "lat": 50.2789669,
+      "lng": 10.988924500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4839809335), ODbL"
+    },
+    {
+      "id": "doerfles-esbach-746c24c4ba",
+      "city": "doerfles-esbach",
+      "label": "Jenaer Straße 16",
+      "street": "Jenaer Straße",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dörfles-Esbach",
+      "spotCount": 3,
+      "lat": 50.2859232,
+      "lng": 10.9995636,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/180312621), ODbL"
+    },
+    {
+      "id": "doerfles-esbach-dc9c992187",
+      "city": "doerfles-esbach",
+      "label": "Rückertstraße 2",
+      "street": "Rückertstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dörfles-Esbach",
+      "spotCount": 1,
+      "lat": 50.283957550000004,
+      "lng": 10.992202850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/254578586), ODbL"
+    },
+    {
+      "id": "doerfles-esbach-6fdca52159",
+      "city": "doerfles-esbach",
+      "label": "Ziegelei 5",
+      "street": "Ziegelei",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dörfles-Esbach",
+      "spotCount": 2,
+      "lat": 50.2857709,
+      "lng": 11.00261205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/163028389), ODbL"
+    }
+  ]
+}

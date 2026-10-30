@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "rickenbach",
+    "name": "Rickenbach",
+    "center": {
+      "lat": 47.62036175,
+      "lng": 7.98117025
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rickenbach-9b2da620a9",
+      "city": "rickenbach",
+      "label": "Hauptstraße 9",
+      "street": "Hauptstraße",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rickenbach",
+      "spotCount": 2,
+      "lat": 47.62036175,
+      "lng": 7.98117025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1126559799), ODbL"
+    }
+  ]
+}

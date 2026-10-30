@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "freudenberg-bw",
+    "name": "Freudenberg",
+    "center": {
+      "lat": 49.76175465,
+      "lng": 9.32312095
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "freudenberg-bw-fd963ee4a1",
+      "city": "freudenberg-bw",
+      "label": "Mühlgrundweg",
+      "street": "Mühlgrundweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Freudenberg",
+      "spotCount": 2,
+      "lat": 49.76175465,
+      "lng": 9.3185268,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/941363262), ODbL"
+    },
+    {
+      "id": "freudenberg-bw-34ca33a515",
+      "city": "freudenberg-bw",
+      "label": "Wiesenweg",
+      "street": "Wiesenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Freudenberg",
+      "spotCount": 3,
+      "lat": 49.7519002,
+      "lng": 9.32312095,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1442776854), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ranis",
+    "name": "Ranis",
+    "center": {
+      "lat": 50.6629367,
+      "lng": 11.565354800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ranis-9d3dc5b5a1",
+      "city": "ranis",
+      "label": "Burgstraße",
+      "street": "Burgstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ranis",
+      "spotCount": 1,
+      "lat": 50.6629367,
+      "lng": 11.565354800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/823489119), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "berne",
+    "name": "Berne",
+    "center": {
+      "lat": 53.18399835,
+      "lng": 8.481280850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "berne-64a59f1ad3",
+      "city": "berne",
+      "label": "Lange Straße",
+      "street": "Lange Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Berne",
+      "spotCount": 1,
+      "lat": 53.18399835,
+      "lng": 8.478902900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/194779848), ODbL"
+    },
+    {
+      "id": "berne-121be45471",
+      "city": "berne",
+      "label": "Lange Straße 54",
+      "street": "Lange Straße",
+      "houseNumber": "54",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Berne",
+      "spotCount": 1,
+      "lat": 53.18321765,
+      "lng": 8.481280850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/194904562), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "oberwiesenthal",
+    "name": "Oberwiesenthal",
+    "center": {
+      "lat": 50.42243105,
+      "lng": 12.970722050000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberwiesenthal-d82734b002",
+      "city": "oberwiesenthal",
+      "label": "Hüttenbachstraße",
+      "street": "Hüttenbachstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberwiesenthal",
+      "spotCount": 3,
+      "lat": 50.42243105,
+      "lng": 12.970722050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/308299689), ODbL"
+    }
+  ]
+}

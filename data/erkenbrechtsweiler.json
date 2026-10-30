@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "erkenbrechtsweiler",
+    "name": "Erkenbrechtsweiler",
+    "center": {
+      "lat": 48.537367950000004,
+      "lng": 9.416129600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "erkenbrechtsweiler-23b143bf73",
+      "city": "erkenbrechtsweiler",
+      "label": "Behindertenparkplatz Erkenbrechtsweiler",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Erkenbrechtsweiler",
+      "spotCount": 6,
+      "lat": 48.537367950000004,
+      "lng": 9.416129600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1297714705), ODbL"
+    }
+  ]
+}

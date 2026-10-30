@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "orsingen-nenzingen",
+    "name": "Orsingen-Nenzingen",
+    "center": {
+      "lat": 47.82978385,
+      "lng": 8.95735205
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "orsingen-nenzingen-bb3b404533",
+      "city": "orsingen-nenzingen",
+      "label": "Behindertenparkplatz Orsingen-Nenzingen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Orsingen-Nenzingen",
+      "spotCount": 3,
+      "lat": 47.82978385,
+      "lng": 8.95735205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/912959162), ODbL"
+    }
+  ]
+}

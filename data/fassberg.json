@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "fassberg",
+    "name": "Faßberg",
+    "center": {
+      "lat": 52.87693765,
+      "lng": 10.122119300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "fassberg-46b5b3ec85",
+      "city": "fassberg",
+      "label": "Parkplatz Mühle",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Faßberg",
+      "spotCount": 2,
+      "lat": 52.876704450000005,
+      "lng": 10.122119300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/134204776), ODbL"
+    },
+    {
+      "id": "fassberg-e161191bd1",
+      "city": "fassberg",
+      "label": "Waldweg",
+      "street": "Waldweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Faßberg",
+      "spotCount": 1,
+      "lat": 52.903321000000005,
+      "lng": 10.178755200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/837466981), ODbL"
+    },
+    {
+      "id": "fassberg-a9a3760933",
+      "city": "fassberg",
+      "label": "Wietzendorfer Weg",
+      "street": "Wietzendorfer Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Faßberg",
+      "spotCount": 1,
+      "lat": 52.87693765,
+      "lng": 10.100814150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1033005765), ODbL"
+    }
+  ]
+}

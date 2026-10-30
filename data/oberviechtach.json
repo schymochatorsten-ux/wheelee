@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "oberviechtach",
+    "name": "Oberviechtach",
+    "center": {
+      "lat": 49.4601697,
+      "lng": 12.420363550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberviechtach-6e0ec52fef",
+      "city": "oberviechtach",
+      "label": "Bahnhofstraße 2",
+      "street": "Bahnhofstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberviechtach",
+      "spotCount": 3,
+      "lat": 49.4601697,
+      "lng": 12.418402,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4912099546), ODbL"
+    },
+    {
+      "id": "oberviechtach-9b7d6699d0",
+      "city": "oberviechtach",
+      "label": "Hütgraben 6",
+      "street": "Hütgraben",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberviechtach",
+      "spotCount": 4,
+      "lat": 49.45882255000001,
+      "lng": 12.420363550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1126183978), ODbL"
+    }
+  ]
+}

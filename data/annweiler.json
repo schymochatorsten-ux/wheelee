@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "annweiler",
+    "name": "Annweiler am Trifels",
+    "center": {
+      "lat": 49.203885400000004,
+      "lng": 7.9646832000000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "annweiler-d915c3cc64",
+      "city": "annweiler",
+      "label": "Landauer Straße 37",
+      "street": "Landauer Straße",
+      "houseNumber": "37",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Annweiler am Trifels",
+      "spotCount": 10,
+      "lat": 49.20556685,
+      "lng": 7.972297450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26431478), ODbL"
+    },
+    {
+      "id": "annweiler-92ad1bed9c",
+      "city": "annweiler",
+      "label": "Meßplatz 1",
+      "street": "Meßplatz",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Annweiler am Trifels",
+      "spotCount": 1,
+      "lat": 49.203885400000004,
+      "lng": 7.9646832000000005,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6570909677), ODbL"
+    },
+    {
+      "id": "annweiler-0586645f28",
+      "city": "annweiler",
+      "label": "Meßplatz 16",
+      "street": "Meßplatz",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Annweiler am Trifels",
+      "spotCount": 2,
+      "lat": 49.20326825000001,
+      "lng": 7.963968400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/91598564), ODbL"
+    }
+  ]
+}

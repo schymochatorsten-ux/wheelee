@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "burgebrach",
+    "name": "Burgebrach",
+    "center": {
+      "lat": 49.8288735,
+      "lng": 10.74212705
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "burgebrach-52e2ee5de2",
+      "city": "burgebrach",
+      "label": "Kirchplatz",
+      "street": "Kirchplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burgebrach",
+      "spotCount": 2,
+      "lat": 49.8288735,
+      "lng": 10.74048555,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1528066194), ODbL"
+    },
+    {
+      "id": "burgebrach-9957b54cf7",
+      "city": "burgebrach",
+      "label": "Lagerhausstraße",
+      "street": "Lagerhausstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burgebrach",
+      "spotCount": 1,
+      "lat": 49.82545145,
+      "lng": 10.74212705,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1371979566), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "obertraubling",
+    "name": "Obertraubling",
+    "center": {
+      "lat": 48.9674764,
+      "lng": 12.17104025
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "obertraubling-b045dc48da",
+      "city": "obertraubling",
+      "label": "P+R Obertraubling",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Obertraubling",
+      "spotCount": 2,
+      "lat": 48.9674764,
+      "lng": 12.17104025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1543151671), ODbL"
+    }
+  ]
+}

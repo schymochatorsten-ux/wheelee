@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kist",
+    "name": "Kist",
+    "center": {
+      "lat": 49.73867535000001,
+      "lng": 9.8408345
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kist-4c8500848c",
+      "city": "kist",
+      "label": "Sonnleite 6",
+      "street": "Sonnleite",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kist",
+      "spotCount": 4,
+      "lat": 49.73867535000001,
+      "lng": 9.8408345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/549409407), ODbL"
+    }
+  ]
+}

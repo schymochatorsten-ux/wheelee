@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "heringsdorf",
+    "name": "Heringsdorf",
+    "center": {
+      "lat": 53.94881545,
+      "lng": 14.181850800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "heringsdorf-2f9f8b069b",
+      "city": "heringsdorf",
+      "label": "Ahlbecker Chaussee",
+      "street": "Ahlbecker Chaussee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heringsdorf",
+      "spotCount": 1,
+      "lat": 53.96454440000001,
+      "lng": 14.13013145,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/177576556), ODbL"
+    },
+    {
+      "id": "heringsdorf-0411c69a84",
+      "city": "heringsdorf",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Heringsdorf",
+      "spotCount": 4,
+      "lat": 53.9490459,
+      "lng": 14.169152100000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11470093806), ODbL"
+    },
+    {
+      "id": "heringsdorf-4e848b2fc3",
+      "city": "heringsdorf",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Heringsdorf",
+      "spotCount": 5,
+      "lat": 53.94881545,
+      "lng": 14.169751350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/179414789), ODbL"
+    },
+    {
+      "id": "heringsdorf-1026cf6980",
+      "city": "heringsdorf",
+      "label": "Kaiserstraße 26",
+      "street": "Kaiserstraße",
+      "houseNumber": "26",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heringsdorf",
+      "spotCount": 1,
+      "lat": 53.94365345,
+      "lng": 14.1823542,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1541348853), ODbL"
+    },
+    {
+      "id": "heringsdorf-a9a8f86036",
+      "city": "heringsdorf",
+      "label": "Kaiserstraße 28",
+      "street": "Kaiserstraße",
+      "houseNumber": "28",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heringsdorf",
+      "spotCount": 1,
+      "lat": 53.94392305000001,
+      "lng": 14.181850800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1541348852), ODbL"
+    },
+    {
+      "id": "heringsdorf-6a4e22a6a1",
+      "city": "heringsdorf",
+      "label": "Swinemünder Chaussee 1",
+      "street": "Swinemünder Chaussee",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heringsdorf",
+      "spotCount": 1,
+      "lat": 53.9333814,
+      "lng": 14.193438400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/114022043), ODbL"
+    }
+  ]
+}

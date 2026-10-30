@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bad-lauchstaedt",
+    "name": "Bad Lauchstädt",
+    "center": {
+      "lat": 51.383065800000004,
+      "lng": 11.87829785
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-lauchstaedt-792311839f",
+      "city": "bad-lauchstaedt",
+      "label": "Haaner Weg 26",
+      "street": "Haaner Weg",
+      "houseNumber": "26",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Lauchstädt",
+      "spotCount": 3,
+      "lat": 51.383061850000004,
+      "lng": 11.8781678,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1548574869), ODbL"
+    },
+    {
+      "id": "bad-lauchstaedt-afd1a9911c",
+      "city": "bad-lauchstaedt",
+      "label": "Haaner Weg 26",
+      "street": "Haaner Weg",
+      "houseNumber": "26",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Lauchstädt",
+      "spotCount": 3,
+      "lat": 51.383065800000004,
+      "lng": 11.87829785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1548574870), ODbL"
+    }
+  ]
+}

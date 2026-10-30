@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "altenbeken",
+    "name": "Altenbeken",
+    "center": {
+      "lat": 51.75533935,
+      "lng": 8.9529305
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "altenbeken-9b93cae037",
+      "city": "altenbeken",
+      "label": "Eggering 5a",
+      "street": "Eggering",
+      "houseNumber": "5a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Altenbeken",
+      "spotCount": 1,
+      "lat": 51.761739750000004,
+      "lng": 8.958127450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/406083563), ODbL"
+    },
+    {
+      "id": "altenbeken-c3ce91d370",
+      "city": "altenbeken",
+      "label": "Hüttenstraße",
+      "street": "Hüttenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Altenbeken",
+      "spotCount": 1,
+      "lat": 51.75533935,
+      "lng": 8.9529305,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/561232320), ODbL"
+    },
+    {
+      "id": "altenbeken-d0cc1ee769",
+      "city": "altenbeken",
+      "label": "Orthagen",
+      "street": "Orthagen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Altenbeken",
+      "spotCount": 1,
+      "lat": 51.7431369,
+      "lng": 8.9492455,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/162803298), ODbL"
+    }
+  ]
+}

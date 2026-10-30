@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "grossbeeren",
+    "name": "Großbeeren",
+    "center": {
+      "lat": 52.339106550000004,
+      "lng": 13.353212950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grossbeeren-42010b02b3",
+      "city": "grossbeeren",
+      "label": "Kirchplatz",
+      "street": "Kirchplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großbeeren",
+      "spotCount": 3,
+      "lat": 52.339106550000004,
+      "lng": 13.353212950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/937017403), ODbL"
+    },
+    {
+      "id": "grossbeeren-7906fe24ea",
+      "city": "grossbeeren",
+      "label": "Kirchplatz 6",
+      "street": "Kirchplatz",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großbeeren",
+      "spotCount": 2,
+      "lat": 52.339057350000004,
+      "lng": 13.352874000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1064260695), ODbL"
+    }
+  ]
+}

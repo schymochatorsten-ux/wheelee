@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "willebadessen",
+    "name": "Willebadessen",
+    "center": {
+      "lat": 51.624731800000006,
+      "lng": 9.023179250000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "willebadessen-5d1543bcb3",
+      "city": "willebadessen",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Willebadessen",
+      "spotCount": 1,
+      "lat": 51.62183265,
+      "lng": 9.010976800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/932028174), ODbL"
+    },
+    {
+      "id": "willebadessen-32c1002558",
+      "city": "willebadessen",
+      "label": "Am Sportplatz",
+      "street": "Am Sportplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Willebadessen",
+      "spotCount": 1,
+      "lat": 51.624731800000006,
+      "lng": 9.023179250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/154937214), ODbL"
+    },
+    {
+      "id": "willebadessen-e6db47da32",
+      "city": "willebadessen",
+      "label": "Gänsebruch 12",
+      "street": "Gänsebruch",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Willebadessen",
+      "spotCount": 5,
+      "lat": 51.62693350000001,
+      "lng": 9.030049300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/164033926), ODbL"
+    }
+  ]
+}

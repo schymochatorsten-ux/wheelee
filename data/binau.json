@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "binau",
+    "name": "Binau",
+    "center": {
+      "lat": 49.37280285000001,
+      "lng": 9.083030650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "binau-34400b1bbe",
+      "city": "binau",
+      "label": "Burg-Dauchstein-Straße 15",
+      "street": "Burg-Dauchstein-Straße",
+      "houseNumber": "15",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Binau",
+      "spotCount": 1,
+      "lat": 49.37280285000001,
+      "lng": 9.0829518,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/398863933), ODbL"
+    },
+    {
+      "id": "binau-753c47571b",
+      "city": "binau",
+      "label": "Burg-Dauchstein-Straße 15",
+      "street": "Burg-Dauchstein-Straße",
+      "houseNumber": "15",
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Binau",
+      "spotCount": 1,
+      "lat": 49.37276955,
+      "lng": 9.083030650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1254881114), ODbL"
+    }
+  ]
+}

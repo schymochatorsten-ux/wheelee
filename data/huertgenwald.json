@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "huertgenwald",
+    "name": "Hürtgenwald",
+    "center": {
+      "lat": 50.68544680000001,
+      "lng": 6.3742199
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "huertgenwald-c5fb82c398",
+      "city": "huertgenwald",
+      "label": "Dürener Straße 44",
+      "street": "Dürener Straße",
+      "houseNumber": "44",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Hürtgenwald",
+      "spotCount": 1,
+      "lat": 50.749154250000004,
+      "lng": 6.4205559,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24973627), ODbL"
+    },
+    {
+      "id": "huertgenwald-138975a81b",
+      "city": "huertgenwald",
+      "label": "Im Unterdorf",
+      "street": "Im Unterdorf",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hürtgenwald",
+      "spotCount": 2,
+      "lat": 50.68544680000001,
+      "lng": 6.3742199,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/406462771), ODbL"
+    },
+    {
+      "id": "huertgenwald-b08ee1582d",
+      "city": "huertgenwald",
+      "label": "Landhotel Kallbach",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hürtgenwald",
+      "spotCount": 1,
+      "lat": 50.66739795,
+      "lng": 6.354898100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/118076571), ODbL"
+    },
+    {
+      "id": "huertgenwald-9d3c3b9a33",
+      "city": "huertgenwald",
+      "label": "Nideggener Straße",
+      "street": "Nideggener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hürtgenwald",
+      "spotCount": 2,
+      "lat": 50.719139750000004,
+      "lng": 6.39337465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/776337958), ODbL"
+    },
+    {
+      "id": "huertgenwald-e091623bd6",
+      "city": "huertgenwald",
+      "label": "Parkplatz Todtenbruch",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Hürtgenwald",
+      "spotCount": 1,
+      "lat": 50.67491630000001,
+      "lng": 6.3164816,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/443463121), ODbL"
+    }
+  ]
+}

@@ -207,6 +207,12 @@ export function SpotDetails({
         </p>
       )}
 
+      {spot.confirmation === "nur_osm" && (
+        <p className="mt-3 rounded-lg bg-amber-50 p-2.5 text-sm text-amber-900 dark:bg-amber-950 dark:text-amber-200">
+          {tr("details.osmOnly", { strong: <strong>{t("details.osmOnlyStrong")}</strong> })}
+        </p>
+      )}
+
       {spot.geoAccuracy !== "house" && (
         <p className="mt-3 rounded-lg bg-amber-50 p-2.5 text-sm text-amber-900 dark:bg-amber-950 dark:text-amber-200">
           {t("details.approx")}

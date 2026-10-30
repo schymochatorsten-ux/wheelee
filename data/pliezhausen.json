@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "pliezhausen",
+    "name": "Pliezhausen",
+    "center": {
+      "lat": 48.564949600000006,
+      "lng": 9.195789099999999
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pliezhausen-77abc59490",
+      "city": "pliezhausen",
+      "label": "Pliezhäuser Straße",
+      "street": "Pliezhäuser Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pliezhausen",
+      "spotCount": 1,
+      "lat": 48.564949600000006,
+      "lng": 9.195789099999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1160741219), ODbL"
+    }
+  ]
+}

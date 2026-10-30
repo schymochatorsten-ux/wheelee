@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "marktschorgast",
+    "name": "Marktschorgast",
+    "center": {
+      "lat": 50.09110750000001,
+      "lng": 11.653871200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "marktschorgast-e450e5deb3",
+      "city": "marktschorgast",
+      "label": "Bahnhofstraße 25",
+      "street": "Bahnhofstraße",
+      "houseNumber": "25",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Marktschorgast",
+      "spotCount": 1,
+      "lat": 50.09110750000001,
+      "lng": 11.653871200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/315714137), ODbL"
+    }
+  ]
+}

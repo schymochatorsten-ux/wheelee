@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "algermissen",
+    "name": "Algermissen",
+    "center": {
+      "lat": 52.25221305,
+      "lng": 9.966052450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "algermissen-88bd0b0da4",
+      "city": "algermissen",
+      "label": "Bahnhofsplatz 4",
+      "street": "Bahnhofsplatz",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Algermissen",
+      "spotCount": 1,
+      "lat": 52.25221305,
+      "lng": 9.966052450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1451129973), ODbL"
+    },
+    {
+      "id": "algermissen-2ea0c04123",
+      "city": "algermissen",
+      "label": "Im Sauermorgen 8",
+      "street": "Im Sauermorgen",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Algermissen",
+      "spotCount": 3,
+      "lat": 52.245863,
+      "lng": 9.9629272,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1130568863), ODbL"
+    },
+    {
+      "id": "algermissen-a0269f9c74",
+      "city": "algermissen",
+      "label": "Marktstraße",
+      "street": "Marktstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Algermissen",
+      "spotCount": 1,
+      "lat": 52.252990200000006,
+      "lng": 9.969628700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1285593360), ODbL"
+    }
+  ]
+}

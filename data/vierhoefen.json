@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "vierhoefen",
+    "name": "Vierhöfen",
+    "center": {
+      "lat": 53.28094635,
+      "lng": 10.2476661
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "vierhoefen-3e3bf03ab4",
+      "city": "vierhoefen",
+      "label": "Radbrucher Weg",
+      "street": "Radbrucher Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vierhöfen",
+      "spotCount": 1,
+      "lat": 53.28094635,
+      "lng": 10.2476661,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1386078581), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "schwegenheim",
+    "name": "Schwegenheim",
+    "center": {
+      "lat": 49.27133165000001,
+      "lng": 8.328991649999999
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schwegenheim-0fdb6c4aea",
+      "city": "schwegenheim",
+      "label": "Am Bahndamm",
+      "street": "Am Bahndamm",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwegenheim",
+      "spotCount": 1,
+      "lat": 49.27133165000001,
+      "lng": 8.3275088,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1009652610), ODbL"
+    },
+    {
+      "id": "schwegenheim-03da59b600",
+      "city": "schwegenheim",
+      "label": "Am Jahnplatz",
+      "street": "Am Jahnplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwegenheim",
+      "spotCount": 1,
+      "lat": 49.269658500000006,
+      "lng": 8.328991649999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1009393098), ODbL"
+    }
+  ]
+}

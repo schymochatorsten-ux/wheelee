@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "halsbruecke",
+    "name": "Halsbrücke",
+    "center": {
+      "lat": 50.962062350000004,
+      "lng": 13.3962116
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "halsbruecke-f03846243a",
+      "city": "halsbruecke",
+      "label": "Am Bergschlößchen",
+      "street": "Am Bergschlößchen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Halsbrücke",
+      "spotCount": 3,
+      "lat": 50.972312200000005,
+      "lng": 13.46093285,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/816570124), ODbL"
+    },
+    {
+      "id": "halsbruecke-c7b79d75f8",
+      "city": "halsbruecke",
+      "label": "Am Ernst-Thälmann-Heim 4",
+      "street": "Am Ernst-Thälmann-Heim",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Halsbrücke",
+      "spotCount": 2,
+      "lat": 50.954783500000005,
+      "lng": 13.352975,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1537594719), ODbL"
+    },
+    {
+      "id": "halsbruecke-d7f4dedb4b",
+      "city": "halsbruecke",
+      "label": "Erbgerichtsweg",
+      "street": "Erbgerichtsweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Halsbrücke",
+      "spotCount": 1,
+      "lat": 50.951938600000005,
+      "lng": 13.3962116,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/282292842), ODbL"
+    },
+    {
+      "id": "halsbruecke-64904a6b4d",
+      "city": "halsbruecke",
+      "label": "Friedrich-Engels-Straße 7",
+      "street": "Friedrich-Engels-Straße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Halsbrücke",
+      "spotCount": 1,
+      "lat": 50.95299785,
+      "lng": 13.3513487,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/414246013), ODbL"
+    },
+    {
+      "id": "halsbruecke-41cdf3fb81",
+      "city": "halsbruecke",
+      "label": "Halsbrücker Straße",
+      "street": "Halsbrücker Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Halsbrücke",
+      "spotCount": 1,
+      "lat": 50.9855608,
+      "lng": 13.37186165,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/221221878), ODbL"
+    },
+    {
+      "id": "halsbruecke-9332d63a87",
+      "city": "halsbruecke",
+      "label": "Obere Dorfstraße 1",
+      "street": "Obere Dorfstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Halsbrücke",
+      "spotCount": 1,
+      "lat": 50.962062350000004,
+      "lng": 13.42405085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1028670688), ODbL"
+    }
+  ]
+}

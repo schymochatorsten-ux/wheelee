@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "bernkastel-kues",
+    "name": "Bernkastel-Kues",
+    "center": {
+      "lat": 49.9141928,
+      "lng": 7.06696345
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bernkastel-kues-9f822a2c36",
+      "city": "bernkastel-kues",
+      "label": "Cusanusstraße",
+      "street": "Cusanusstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bernkastel-Kues",
+      "spotCount": 3,
+      "lat": 49.9190916,
+      "lng": 7.06696345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/741105487), ODbL"
+    },
+    {
+      "id": "bernkastel-kues-f257aea461",
+      "city": "bernkastel-kues",
+      "label": "Friedrichstraße",
+      "street": "Friedrichstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bernkastel-Kues",
+      "spotCount": 2,
+      "lat": 49.9141928,
+      "lng": 7.067316,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/134369716), ODbL"
+    },
+    {
+      "id": "bernkastel-kues-4ea0250177",
+      "city": "bernkastel-kues",
+      "label": "Nikolausufer",
+      "street": "Nikolausufer",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bernkastel-Kues",
+      "spotCount": 1,
+      "lat": 49.9095543,
+      "lng": 7.063333650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1182679076), ODbL"
+    },
+    {
+      "id": "bernkastel-kues-96f14500f3",
+      "city": "bernkastel-kues",
+      "label": "Nikolausufer",
+      "street": "Nikolausufer",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bernkastel-Kues",
+      "spotCount": 1,
+      "lat": 49.90957025,
+      "lng": 7.0632033000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1422678392), ODbL"
+    }
+  ]
+}

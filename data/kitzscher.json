@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "kitzscher",
+    "name": "Kitzscher",
+    "center": {
+      "lat": 51.1667532,
+      "lng": 12.54508565
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kitzscher-173b086b95",
+      "city": "kitzscher",
+      "label": "Meisenweg",
+      "street": "Meisenweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kitzscher",
+      "spotCount": 1,
+      "lat": 51.1667532,
+      "lng": 12.5447667,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1340696525), ODbL"
+    },
+    {
+      "id": "kitzscher-0b0e74d833",
+      "city": "kitzscher",
+      "label": "Meisenweg",
+      "street": "Meisenweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kitzscher",
+      "spotCount": 1,
+      "lat": 51.16602005,
+      "lng": 12.54508565,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1340696536), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "margetshoechheim",
+    "name": "Margetshöchheim",
+    "center": {
+      "lat": 49.83872075000001,
+      "lng": 9.86527885
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "margetshoechheim-2fb76ba768",
+      "city": "margetshoechheim",
+      "label": "Erlabrunner Straße",
+      "street": "Erlabrunner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Margetshöchheim",
+      "spotCount": 2,
+      "lat": 49.8404183,
+      "lng": 9.861617800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/292844940), ODbL"
+    },
+    {
+      "id": "margetshoechheim-50b9cc37ee",
+      "city": "margetshoechheim",
+      "label": "Erlabrunner Straße",
+      "street": "Erlabrunner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Margetshöchheim",
+      "spotCount": 1,
+      "lat": 49.8411138,
+      "lng": 9.860885000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/655313693), ODbL"
+    },
+    {
+      "id": "margetshoechheim-04e9385abc",
+      "city": "margetshoechheim",
+      "label": "Erlabrunner Straße",
+      "street": "Erlabrunner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Margetshöchheim",
+      "spotCount": 2,
+      "lat": 49.84145790000001,
+      "lng": 9.861709050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/22951365), ODbL"
+    },
+    {
+      "id": "margetshoechheim-a51fbf262a",
+      "city": "margetshoechheim",
+      "label": "Ludwigstraße 19",
+      "street": "Ludwigstraße",
+      "houseNumber": "19",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Margetshöchheim",
+      "spotCount": 1,
+      "lat": 49.83872075000001,
+      "lng": 9.86527885,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/969275395), ODbL"
+    },
+    {
+      "id": "margetshoechheim-e79c707a93",
+      "city": "margetshoechheim",
+      "label": "Mainstraße",
+      "street": "Mainstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Margetshöchheim",
+      "spotCount": 1,
+      "lat": 49.83614235,
+      "lng": 9.8667064,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/87650975), ODbL"
+    },
+    {
+      "id": "margetshoechheim-9a75589862",
+      "city": "margetshoechheim",
+      "label": "Wiesenweg",
+      "street": "Wiesenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Margetshöchheim",
+      "spotCount": 3,
+      "lat": 49.827437350000004,
+      "lng": 9.86593245,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/724161282), ODbL"
+    },
+    {
+      "id": "margetshoechheim-68b49c7891",
+      "city": "margetshoechheim",
+      "label": "Zeller Straße 2",
+      "street": "Zeller Straße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Margetshöchheim",
+      "spotCount": 1,
+      "lat": 49.8270831,
+      "lng": 9.86621925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1390701032), ODbL"
+    }
+  ]
+}

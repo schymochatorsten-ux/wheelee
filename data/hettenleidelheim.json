@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hettenleidelheim",
+    "name": "Hettenleidelheim",
+    "center": {
+      "lat": 49.5354247,
+      "lng": 8.0721764
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hettenleidelheim-ddacbf84e1",
+      "city": "hettenleidelheim",
+      "label": "Oberhaide",
+      "street": "Oberhaide",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hettenleidelheim",
+      "spotCount": 1,
+      "lat": 49.5337909,
+      "lng": 8.0721764,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/415905716), ODbL"
+    },
+    {
+      "id": "hettenleidelheim-28309ad2fe",
+      "city": "hettenleidelheim",
+      "label": "Parkplatz Sparkasse",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hettenleidelheim",
+      "spotCount": 2,
+      "lat": 49.5354247,
+      "lng": 8.071142700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/415905682), ODbL"
+    }
+  ]
+}

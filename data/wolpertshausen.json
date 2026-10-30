@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "wolpertshausen",
+    "name": "Wolpertshausen",
+    "center": {
+      "lat": 49.169816,
+      "lng": 9.859844500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wolpertshausen-108095c803",
+      "city": "wolpertshausen",
+      "label": "Birkichstraße",
+      "street": "Birkichstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wolpertshausen",
+      "spotCount": 3,
+      "lat": 49.169816,
+      "lng": 9.859844500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/77416730), ODbL"
+    },
+    {
+      "id": "wolpertshausen-86722723db",
+      "city": "wolpertshausen",
+      "label": "Birkichstraße 10",
+      "street": "Birkichstraße",
+      "houseNumber": "10",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wolpertshausen",
+      "spotCount": 1,
+      "lat": 49.16971100000001,
+      "lng": 9.8595126,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10777953300), ODbL"
+    }
+  ]
+}

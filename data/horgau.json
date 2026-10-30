@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "horgau",
+    "name": "Horgau",
+    "center": {
+      "lat": 48.393919100000005,
+      "lng": 10.68521955
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "horgau-1108905465",
+      "city": "horgau",
+      "label": "Brachflecken",
+      "street": "Brachflecken",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Horgau",
+      "spotCount": 2,
+      "lat": 48.3938269,
+      "lng": 10.6854755,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4598595948), ODbL"
+    },
+    {
+      "id": "horgau-76c8c9031a",
+      "city": "horgau",
+      "label": "Martinsplatz",
+      "street": "Martinsplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Horgau",
+      "spotCount": 2,
+      "lat": 48.393919100000005,
+      "lng": 10.684594200000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3569830651), ODbL"
+    },
+    {
+      "id": "horgau-73007550c4",
+      "city": "horgau",
+      "label": "Martinsplatz",
+      "street": "Martinsplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Horgau",
+      "spotCount": 2,
+      "lat": 48.39384665,
+      "lng": 10.68521955,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/464787412), ODbL"
+    },
+    {
+      "id": "horgau-7e2fa2c592",
+      "city": "horgau",
+      "label": "Martinsplatz 8",
+      "street": "Martinsplatz",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Horgau",
+      "spotCount": 1,
+      "lat": 48.3946108,
+      "lng": 10.6849246,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3569830653), ODbL"
+    }
+  ]
+}

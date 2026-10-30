@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "gablingen",
+    "name": "Gablingen",
+    "center": {
+      "lat": 48.456839,
+      "lng": 10.85393315
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gablingen-19b9816ead",
+      "city": "gablingen",
+      "label": "Am Fliegerhorst",
+      "street": "Am Fliegerhorst",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gablingen",
+      "spotCount": 1,
+      "lat": 48.45677615,
+      "lng": 10.853916950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1150776116), ODbL"
+    },
+    {
+      "id": "gablingen-01f806672e",
+      "city": "gablingen",
+      "label": "Am Fliegerhorst",
+      "street": "Am Fliegerhorst",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gablingen",
+      "spotCount": 1,
+      "lat": 48.45680775,
+      "lng": 10.85392505,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1150776117), ODbL"
+    },
+    {
+      "id": "gablingen-ecfe5be307",
+      "city": "gablingen",
+      "label": "Am Fliegerhorst",
+      "street": "Am Fliegerhorst",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gablingen",
+      "spotCount": 1,
+      "lat": 48.456839,
+      "lng": 10.85393315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1150776118), ODbL"
+    },
+    {
+      "id": "gablingen-b2d98ffb05",
+      "city": "gablingen",
+      "label": "Am Fliegerhorst",
+      "street": "Am Fliegerhorst",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gablingen",
+      "spotCount": 1,
+      "lat": 48.456870300000006,
+      "lng": 10.85394125,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1150776119), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "droyssig",
+    "name": "Droyßig",
+    "center": {
+      "lat": 51.042289200000006,
+      "lng": 12.0295497
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "droyssig-908e82695d",
+      "city": "droyssig",
+      "label": "Markt 6b",
+      "street": "Markt",
+      "houseNumber": "6b",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Droyßig",
+      "spotCount": 1,
+      "lat": 51.042289200000006,
+      "lng": 12.0295497,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11850455120), ODbL"
+    }
+  ]
+}

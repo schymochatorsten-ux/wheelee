@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "obermeitingen",
+    "name": "Obermeitingen",
+    "center": {
+      "lat": 48.14187565,
+      "lng": 10.831868700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "obermeitingen-61c78a2b34",
+      "city": "obermeitingen",
+      "label": "Lechfeld",
+      "street": "Lechfeld",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Obermeitingen",
+      "spotCount": 2,
+      "lat": 48.14187565,
+      "lng": 10.831868700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/81468455), ODbL"
+    }
+  ]
+}

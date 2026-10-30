@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "neuler",
+    "name": "Neuler",
+    "center": {
+      "lat": 48.9313884,
+      "lng": 10.0693454
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuler-0bb2163c0e",
+      "city": "neuler",
+      "label": "Ellwanger Straße",
+      "street": "Ellwanger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuler",
+      "spotCount": 2,
+      "lat": 48.9313884,
+      "lng": 10.0693454,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1382615954), ODbL"
+    }
+  ]
+}

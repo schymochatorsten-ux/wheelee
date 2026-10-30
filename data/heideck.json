@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "heideck",
+    "name": "Heideck",
+    "center": {
+      "lat": 49.1324801,
+      "lng": 11.1287941
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "heideck-5ae983d216",
+      "city": "heideck",
+      "label": "Schloßberg",
+      "street": "Schloßberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heideck",
+      "spotCount": 10,
+      "lat": 49.110594400000004,
+      "lng": 11.102858050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1213928654), ODbL"
+    },
+    {
+      "id": "heideck-80d40825ce",
+      "city": "heideck",
+      "label": "Südlicher Stadtgraben",
+      "street": "Südlicher Stadtgraben",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heideck",
+      "spotCount": 10,
+      "lat": 49.1324801,
+      "lng": 11.1287941,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1597754557), ODbL"
+    }
+  ]
+}

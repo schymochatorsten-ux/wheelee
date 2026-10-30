@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "eiterfeld",
+    "name": "Eiterfeld",
+    "center": {
+      "lat": 50.7809128,
+      "lng": 9.7972438
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eiterfeld-e5d9342ecc",
+      "city": "eiterfeld",
+      "label": "Hermann-Lietz-Straße 10",
+      "street": "Hermann-Lietz-Straße",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eiterfeld",
+      "spotCount": 2,
+      "lat": 50.7809128,
+      "lng": 9.7654665,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1322612108), ODbL"
+    },
+    {
+      "id": "eiterfeld-0f9201115a",
+      "city": "eiterfeld",
+      "label": "Schulstraße",
+      "street": "Schulstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eiterfeld",
+      "spotCount": 2,
+      "lat": 50.76236655,
+      "lng": 9.7972438,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1353399686), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schellhorn",
+    "name": "Schellhorn",
+    "center": {
+      "lat": 54.229342200000005,
+      "lng": 10.295114650000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schellhorn-346e868d7f",
+      "city": "schellhorn",
+      "label": "Wehrbergallee",
+      "street": "Wehrbergallee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schellhorn",
+      "spotCount": 2,
+      "lat": 54.229342200000005,
+      "lng": 10.295114650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/265216554), ODbL"
+    }
+  ]
+}

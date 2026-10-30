@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "lengenfeld",
+    "name": "Lengenfeld",
+    "center": {
+      "lat": 50.60642815,
+      "lng": 12.38602865
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lengenfeld-27deb68788",
+      "city": "lengenfeld",
+      "label": "Rodewischer Straße",
+      "street": "Rodewischer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lengenfeld",
+      "spotCount": 1,
+      "lat": 50.5664359,
+      "lng": 12.395979100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1109703597), ODbL"
+    },
+    {
+      "id": "lengenfeld-1dd30f7097",
+      "city": "lengenfeld",
+      "label": "Waldkirchen",
+      "street": "Waldkirchen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lengenfeld",
+      "spotCount": 1,
+      "lat": 50.607955100000005,
+      "lng": 12.38602865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1441723769), ODbL"
+    },
+    {
+      "id": "lengenfeld-8f55cc1e7b",
+      "city": "lengenfeld",
+      "label": "Waldkirchen",
+      "street": "Waldkirchen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lengenfeld",
+      "spotCount": 1,
+      "lat": 50.60642815,
+      "lng": 12.3859241,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1441723770), ODbL"
+    }
+  ]
+}

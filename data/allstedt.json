@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "allstedt",
+    "name": "Allstedt",
+    "center": {
+      "lat": 51.40421365,
+      "lng": 11.387795050000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "allstedt-e26eb8d5c5",
+      "city": "allstedt",
+      "label": "Breite Straße 10",
+      "street": "Breite Straße",
+      "houseNumber": "10",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Allstedt",
+      "spotCount": 1,
+      "lat": 51.40421365,
+      "lng": 11.387795050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1512628882), ODbL"
+    },
+    {
+      "id": "allstedt-5278473bc4",
+      "city": "allstedt",
+      "label": "Erdmannstraße",
+      "street": "Erdmannstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Allstedt",
+      "spotCount": 1,
+      "lat": 51.40160315,
+      "lng": 11.387220750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1512942262), ODbL"
+    },
+    {
+      "id": "allstedt-789c21660a",
+      "city": "allstedt",
+      "label": "Schloßstraße",
+      "street": "Schloßstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Allstedt",
+      "spotCount": 1,
+      "lat": 51.40452955000001,
+      "lng": 11.3936504,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1512628907), ODbL"
+    }
+  ]
+}

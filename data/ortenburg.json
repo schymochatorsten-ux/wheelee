@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ortenburg",
+    "name": "Ortenburg",
+    "center": {
+      "lat": 48.5414993,
+      "lng": 13.220449900000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ortenburg-d037931ef6",
+      "city": "ortenburg",
+      "label": "Griesbacher Straße",
+      "street": "Griesbacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ortenburg",
+      "spotCount": 1,
+      "lat": 48.5414993,
+      "lng": 13.220449900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/33191653), ODbL"
+    }
+  ]
+}

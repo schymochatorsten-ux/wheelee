@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "germaringen",
+    "name": "Germaringen",
+    "center": {
+      "lat": 47.92773385,
+      "lng": 10.672022000000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "germaringen-fe41b986f2",
+      "city": "germaringen",
+      "label": "Pfarrgasse 3",
+      "street": "Pfarrgasse",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Germaringen",
+      "spotCount": 1,
+      "lat": 47.9224923,
+      "lng": 10.6749498,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2624005558), ODbL"
+    },
+    {
+      "id": "germaringen-09c494c5a5",
+      "city": "germaringen",
+      "label": "Zufahrt FW Obergermaringen",
+      "street": "Zufahrt FW Obergermaringen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Germaringen",
+      "spotCount": 1,
+      "lat": 47.927749500000004,
+      "lng": 10.671939,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8261513305), ODbL"
+    },
+    {
+      "id": "germaringen-b1767e4e50",
+      "city": "germaringen",
+      "label": "Zufahrt FW Obergermaringen",
+      "street": "Zufahrt FW Obergermaringen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Germaringen",
+      "spotCount": 1,
+      "lat": 47.9277281,
+      "lng": 10.6720184,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11883065984), ODbL"
+    },
+    {
+      "id": "germaringen-43789c1f43",
+      "city": "germaringen",
+      "label": "Zufahrt FW Obergermaringen",
+      "street": "Zufahrt FW Obergermaringen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Germaringen",
+      "spotCount": 1,
+      "lat": 47.92773385,
+      "lng": 10.672022000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/888605384), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "siegelsbach",
+    "name": "Siegelsbach",
+    "center": {
+      "lat": 49.270338200000005,
+      "lng": 9.0865594
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "siegelsbach-f12a8fb73c",
+      "city": "siegelsbach",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Siegelsbach",
+      "spotCount": 2,
+      "lat": 49.264985100000004,
+      "lng": 9.088467900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/385708794), ODbL"
+    },
+    {
+      "id": "siegelsbach-5d28aaa60a",
+      "city": "siegelsbach",
+      "label": "Ringstraße 39",
+      "street": "Ringstraße",
+      "houseNumber": "39",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Siegelsbach",
+      "spotCount": 1,
+      "lat": 49.270338200000005,
+      "lng": 9.08126915,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/203135759), ODbL"
+    },
+    {
+      "id": "siegelsbach-8b00d952cb",
+      "city": "siegelsbach",
+      "label": "Wagenbacher Straße",
+      "street": "Wagenbacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Siegelsbach",
+      "spotCount": 1,
+      "lat": 49.272014500000004,
+      "lng": 9.0865594,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/143865535), ODbL"
+    }
+  ]
+}

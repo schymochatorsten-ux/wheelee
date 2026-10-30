@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "hasloh",
+    "name": "Hasloh",
+    "center": {
+      "lat": 53.69638605,
+      "lng": 9.918806850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hasloh-8df1e46e2a",
+      "city": "hasloh",
+      "label": "Kronkamp 7",
+      "street": "Kronkamp",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hasloh",
+      "spotCount": 6,
+      "lat": 53.69199760000001,
+      "lng": 9.914932,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/926026057), ODbL"
+    },
+    {
+      "id": "hasloh-ced195461c",
+      "city": "hasloh",
+      "label": "Ladestraße",
+      "street": "Ladestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hasloh",
+      "spotCount": 1,
+      "lat": 53.69700900000001,
+      "lng": 9.918806850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1287074712), ODbL"
+    },
+    {
+      "id": "hasloh-878f23d9c0",
+      "city": "hasloh",
+      "label": "Ladestraße 15",
+      "street": "Ladestraße",
+      "houseNumber": "15",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hasloh",
+      "spotCount": 1,
+      "lat": 53.69638605,
+      "lng": 9.91902555,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1287074715), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "muenchweiler-rp",
+    "name": "Münchweiler an der Alsenz",
+    "center": {
+      "lat": 49.551006300000005,
+      "lng": 7.88789665
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "muenchweiler-rp-bc382fb5fc",
+      "city": "muenchweiler-rp",
+      "label": "Bahnpfad",
+      "street": "Bahnpfad",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Münchweiler an der Alsenz",
+      "spotCount": 1,
+      "lat": 49.551006300000005,
+      "lng": 7.88789665,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/362088925), ODbL"
+    }
+  ]
+}

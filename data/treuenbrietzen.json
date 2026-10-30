@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "treuenbrietzen",
+    "name": "Treuenbrietzen",
+    "center": {
+      "lat": 52.01239025,
+      "lng": 12.82041955
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "treuenbrietzen-79e0cbc681",
+      "city": "treuenbrietzen",
+      "label": "NEF Besucherparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Treuenbrietzen",
+      "spotCount": 2,
+      "lat": 52.01239025,
+      "lng": 12.82041955,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/903318922), ODbL"
+    }
+  ]
+}

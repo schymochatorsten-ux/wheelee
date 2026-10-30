@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "dernbach",
+    "name": "Dernbach (Westerwald)",
+    "center": {
+      "lat": 50.45436215000001,
+      "lng": 7.7881707
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dernbach-41cf7d0faf",
+      "city": "dernbach",
+      "label": "Festplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dernbach (Westerwald)",
+      "spotCount": 1,
+      "lat": 50.45436215000001,
+      "lng": 7.7881707,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/845091945), ODbL"
+    }
+  ]
+}

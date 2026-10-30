@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "herleshausen",
+    "name": "Herleshausen",
+    "center": {
+      "lat": 51.0067674,
+      "lng": 10.18100995
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "herleshausen-bf9e5bba7f",
+      "city": "herleshausen",
+      "label": "Raststätte Werratal Süd",
+      "street": "Raststätte Werratal Süd",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Herleshausen",
+      "spotCount": 1,
+      "lat": 51.006853650000004,
+      "lng": 10.1814225,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1488125497), ODbL"
+    },
+    {
+      "id": "herleshausen-a8872a160c",
+      "city": "herleshausen",
+      "label": "Raststätte Werratal Süd",
+      "street": "Raststätte Werratal Süd",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Herleshausen",
+      "spotCount": 1,
+      "lat": 51.0067674,
+      "lng": 10.18100995,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1488370178), ODbL"
+    },
+    {
+      "id": "herleshausen-0763c4a70f",
+      "city": "herleshausen",
+      "label": "Raststätte Werratal Süd",
+      "street": "Raststätte Werratal Süd",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Herleshausen",
+      "spotCount": 1,
+      "lat": 51.00668515,
+      "lng": 10.18090695,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1488370180), ODbL"
+    }
+  ]
+}

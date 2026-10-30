@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "zschopau",
+    "name": "Zschopau",
+    "center": {
+      "lat": 50.74754265,
+      "lng": 13.080240400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zschopau-9d2346424f",
+      "city": "zschopau",
+      "label": "Lange Straße 18",
+      "street": "Lange Straße",
+      "houseNumber": "18",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Zschopau",
+      "spotCount": 1,
+      "lat": 50.74754265,
+      "lng": 13.069956600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1462957981), ODbL"
+    },
+    {
+      "id": "zschopau-fcd7c58892",
+      "city": "zschopau",
+      "label": "Rudolf-Breitscheid-Straße",
+      "street": "Rudolf-Breitscheid-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zschopau",
+      "spotCount": 3,
+      "lat": 50.7464004,
+      "lng": 13.080240400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/235842132), ODbL"
+    }
+  ]
+}

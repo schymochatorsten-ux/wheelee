@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bad-muskau",
+    "name": "Bad Muskau",
+    "center": {
+      "lat": 51.544339050000005,
+      "lng": 14.72821715
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-muskau-f33b6cd22b",
+      "city": "bad-muskau",
+      "label": "Behindertenparkplatz Bad Muskau",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bad Muskau",
+      "spotCount": 1,
+      "lat": 51.544339050000005,
+      "lng": 14.72821715,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/144386659), ODbL"
+    }
+  ]
+}

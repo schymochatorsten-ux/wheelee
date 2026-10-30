@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wassertruedingen",
+    "name": "Wassertrüdingen",
+    "center": {
+      "lat": 49.043709250000006,
+      "lng": 10.6068177
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wassertruedingen-0d76275b10",
+      "city": "wassertruedingen",
+      "label": "Bahnhofsplatz",
+      "street": "Bahnhofsplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wassertrüdingen",
+      "spotCount": 4,
+      "lat": 49.043709250000006,
+      "lng": 10.6068177,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1342718660), ODbL"
+    }
+  ]
+}

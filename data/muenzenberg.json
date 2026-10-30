@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "muenzenberg",
+    "name": "Münzenberg",
+    "center": {
+      "lat": 50.458116450000006,
+      "lng": 8.737488
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "muenzenberg-1100469a03",
+      "city": "muenzenberg",
+      "label": "Am Römerhof",
+      "street": "Am Römerhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Münzenberg",
+      "spotCount": 1,
+      "lat": 50.458116450000006,
+      "lng": 8.7374735,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1563630558), ODbL"
+    },
+    {
+      "id": "muenzenberg-8e5a11161b",
+      "city": "muenzenberg",
+      "label": "Am Römerhof",
+      "street": "Am Römerhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Münzenberg",
+      "spotCount": 1,
+      "lat": 50.45809560000001,
+      "lng": 8.737488,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1563630559), ODbL"
+    }
+  ]
+}

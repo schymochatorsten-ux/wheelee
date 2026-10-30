@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "roxheim",
+    "name": "Roxheim",
+    "center": {
+      "lat": 49.867778900000005,
+      "lng": 7.81944025
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "roxheim-aadc1d9b7a",
+      "city": "roxheim",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Roxheim",
+      "spotCount": 1,
+      "lat": 49.867778900000005,
+      "lng": 7.81944025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/766526497), ODbL"
+    }
+  ]
+}

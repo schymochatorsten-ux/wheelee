@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "barweiler",
+    "name": "Barweiler",
+    "center": {
+      "lat": 50.35783405,
+      "lng": 6.8649231
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "barweiler-65ad2c3861",
+      "city": "barweiler",
+      "label": "Hauptstraße 22",
+      "street": "Hauptstraße",
+      "houseNumber": "22",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Barweiler",
+      "spotCount": 2,
+      "lat": 50.35783405,
+      "lng": 6.8649231,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1052761066), ODbL"
+    }
+  ]
+}

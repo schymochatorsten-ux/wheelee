@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "bammental",
+    "name": "Bammental",
+    "center": {
+      "lat": 49.35709195,
+      "lng": 8.7799725
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bammental-387628f07c",
+      "city": "bammental",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Bammental",
+      "spotCount": 1,
+      "lat": 49.35993445,
+      "lng": 8.7841053,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/61000914), ODbL"
+    },
+    {
+      "id": "bammental-961da1f130",
+      "city": "bammental",
+      "label": "Bahnhofstraße 7",
+      "street": "Bahnhofstraße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bammental",
+      "spotCount": 1,
+      "lat": 49.3604575,
+      "lng": 8.784369100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/158974163), ODbL"
+    },
+    {
+      "id": "bammental-74d3a3ad7c",
+      "city": "bammental",
+      "label": "Hauptstraße 31",
+      "street": "Hauptstraße",
+      "houseNumber": "31",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bammental",
+      "spotCount": 1,
+      "lat": 49.35709195,
+      "lng": 8.77938365,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/156449634), ODbL"
+    },
+    {
+      "id": "bammental-e9f2028510",
+      "city": "bammental",
+      "label": "Industriestraße",
+      "street": "Industriestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Bammental",
+      "spotCount": 1,
+      "lat": 49.3549582,
+      "lng": 8.7799063,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/164124919), ODbL"
+    },
+    {
+      "id": "bammental-aa2034c0b5",
+      "city": "bammental",
+      "label": "Industriestraße",
+      "street": "Industriestraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bammental",
+      "spotCount": 1,
+      "lat": 49.3550709,
+      "lng": 8.7799725,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1420923794), ODbL"
+    },
+    {
+      "id": "bammental-312368e93a",
+      "city": "bammental",
+      "label": "Schwimmbadstraße 22",
+      "street": "Schwimmbadstraße",
+      "houseNumber": "22",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bammental",
+      "spotCount": 1,
+      "lat": 49.35278615,
+      "lng": 8.768632100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1493538489), ODbL"
+    }
+  ]
+}

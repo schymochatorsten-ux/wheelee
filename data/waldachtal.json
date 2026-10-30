@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "waldachtal",
+    "name": "Waldachtal",
+    "center": {
+      "lat": 48.48574810000001,
+      "lng": 8.56585845
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "waldachtal-a575962233",
+      "city": "waldachtal",
+      "label": "ZOB Waldachtal Lützenhardt",
+      "street": "ZOB Waldachtal Lützenhardt",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Waldachtal",
+      "spotCount": 1,
+      "lat": 48.48574810000001,
+      "lng": 8.56585845,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/226958920), ODbL"
+    }
+  ]
+}

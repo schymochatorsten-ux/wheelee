@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "gmund-a-tegernsee",
+    "name": "Gmund a.Tegernsee",
+    "center": {
+      "lat": 47.75996070000001,
+      "lng": 11.735808900000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gmund-a-tegernsee-6347434f46",
+      "city": "gmund-a-tegernsee",
+      "label": "Bernöckersiedlung",
+      "street": "Bernöckersiedlung",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gmund a.Tegernsee",
+      "spotCount": 1,
+      "lat": 47.75307415,
+      "lng": 11.7280193,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1219312753), ODbL"
+    },
+    {
+      "id": "gmund-a-tegernsee-41be3aa925",
+      "city": "gmund-a-tegernsee",
+      "label": "Ludwig-Erhard-Platz",
+      "street": "Ludwig-Erhard-Platz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gmund a.Tegernsee",
+      "spotCount": 1,
+      "lat": 47.75039805,
+      "lng": 11.737199450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1547139350), ODbL"
+    },
+    {
+      "id": "gmund-a-tegernsee-65fd27e898",
+      "city": "gmund-a-tegernsee",
+      "label": "Miesbacher Straße 3a",
+      "street": "Miesbacher Straße",
+      "houseNumber": "3a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gmund a.Tegernsee",
+      "spotCount": 3,
+      "lat": 47.75996070000001,
+      "lng": 11.73574515,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34601452), ODbL"
+    },
+    {
+      "id": "gmund-a-tegernsee-361e273a1f",
+      "city": "gmund-a-tegernsee",
+      "label": "Miesbacher Straße 3a",
+      "street": "Miesbacher Straße",
+      "houseNumber": "3a",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gmund a.Tegernsee",
+      "spotCount": 1,
+      "lat": 47.76003,
+      "lng": 11.735899750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1553121468), ODbL"
+    },
+    {
+      "id": "gmund-a-tegernsee-a7c21fe2f0",
+      "city": "gmund-a-tegernsee",
+      "label": "Miesbacher Straße 3a",
+      "street": "Miesbacher Straße",
+      "houseNumber": "3a",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gmund a.Tegernsee",
+      "spotCount": 1,
+      "lat": 47.7600166,
+      "lng": 11.735808900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1553121469), ODbL"
+    },
+    {
+      "id": "gmund-a-tegernsee-945b093d5a",
+      "city": "gmund-a-tegernsee",
+      "label": "Miesbacher Straße 3a",
+      "street": "Miesbacher Straße",
+      "houseNumber": "3a",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gmund a.Tegernsee",
+      "spotCount": 1,
+      "lat": 47.760023200000006,
+      "lng": 11.735853650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1553121470), ODbL"
+    },
+    {
+      "id": "gmund-a-tegernsee-59bda9880b",
+      "city": "gmund-a-tegernsee",
+      "label": "Tölzer Straße",
+      "street": "Tölzer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gmund a.Tegernsee",
+      "spotCount": 3,
+      "lat": 47.753147350000006,
+      "lng": 11.727464100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/656197250), ODbL"
+    }
+  ]
+}

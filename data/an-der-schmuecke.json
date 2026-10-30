@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "an-der-schmuecke",
+    "name": "An der Schmücke",
+    "center": {
+      "lat": 51.3017041,
+      "lng": 11.21847025
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "an-der-schmuecke-6d998857f9",
+      "city": "an-der-schmuecke",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "An der Schmücke",
+      "spotCount": 1,
+      "lat": 51.3017041,
+      "lng": 11.2178742,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1428523125), ODbL"
+    },
+    {
+      "id": "an-der-schmuecke-7a74d495cf",
+      "city": "an-der-schmuecke",
+      "label": "Hauptstraße 55",
+      "street": "Hauptstraße",
+      "houseNumber": "55",
+      "note": null,
+      "timeRestriction": null,
+      "district": "An der Schmücke",
+      "spotCount": 1,
+      "lat": 51.30167745,
+      "lng": 11.21847025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1428523123), ODbL"
+    },
+    {
+      "id": "an-der-schmuecke-f68b8f96af",
+      "city": "an-der-schmuecke",
+      "label": "Sachsenburger Straße",
+      "street": "Sachsenburger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "An der Schmücke",
+      "spotCount": 2,
+      "lat": 51.2915314,
+      "lng": 11.165362000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/191974212), ODbL"
+    },
+    {
+      "id": "an-der-schmuecke-e67bfc2e73",
+      "city": "an-der-schmuecke",
+      "label": "Thomas-Müntzer-Straße",
+      "street": "Thomas-Müntzer-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "An der Schmücke",
+      "spotCount": 1,
+      "lat": 51.3034078,
+      "lng": 11.22413765,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1428523112), ODbL"
+    }
+  ]
+}

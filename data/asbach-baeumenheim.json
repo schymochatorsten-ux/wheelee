@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "asbach-baeumenheim",
+    "name": "Asbach-Bäumenheim",
+    "center": {
+      "lat": 48.68015245000001,
+      "lng": 10.821485850000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "asbach-baeumenheim-db578b1ddf",
+      "city": "asbach-baeumenheim",
+      "label": "Bürgermeister-Müller-Straße 2a",
+      "street": "Bürgermeister-Müller-Straße",
+      "houseNumber": "2a",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Asbach-Bäumenheim",
+      "spotCount": 1,
+      "lat": 48.673386550000004,
+      "lng": 10.823587550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1085790054), ODbL"
+    },
+    {
+      "id": "asbach-baeumenheim-b00c8c3f18",
+      "city": "asbach-baeumenheim",
+      "label": "Kirche",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Asbach-Bäumenheim",
+      "spotCount": 2,
+      "lat": 48.68015245000001,
+      "lng": 10.821485850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25011367), ODbL"
+    },
+    {
+      "id": "asbach-baeumenheim-28fb3aed4d",
+      "city": "asbach-baeumenheim",
+      "label": "Rathausplatz",
+      "street": "Rathausplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Asbach-Bäumenheim",
+      "spotCount": 1,
+      "lat": 48.68180275,
+      "lng": 10.81487835,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24976890), ODbL"
+    }
+  ]
+}

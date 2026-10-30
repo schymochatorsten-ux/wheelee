@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "luckau",
+    "name": "Luckau",
+    "center": {
+      "lat": 51.8535632,
+      "lng": 13.728437500000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "luckau-a190688e09",
+      "city": "luckau",
+      "label": "An der Schanze 29",
+      "street": "An der Schanze",
+      "houseNumber": "29",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Luckau",
+      "spotCount": 1,
+      "lat": 51.85560205,
+      "lng": 13.698447300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1391768081), ODbL"
+    },
+    {
+      "id": "luckau-9bae1bdc5e",
+      "city": "luckau",
+      "label": "An der Schanze 33",
+      "street": "An der Schanze",
+      "houseNumber": "33",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Luckau",
+      "spotCount": 1,
+      "lat": 51.85547285,
+      "lng": 13.698281700000003,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1391768080), ODbL"
+    },
+    {
+      "id": "luckau-a495fd6cd8",
+      "city": "luckau",
+      "label": "Behindertenparkplatz Luckau",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Luckau",
+      "spotCount": 2,
+      "lat": 51.78927805000001,
+      "lng": 13.772367150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/817872537), ODbL"
+    },
+    {
+      "id": "luckau-58fbcfeaaf",
+      "city": "luckau",
+      "label": "Lübbenauer Straße",
+      "street": "Lübbenauer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Luckau",
+      "spotCount": 3,
+      "lat": 51.8535632,
+      "lng": 13.7285854,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1546116265), ODbL"
+    },
+    {
+      "id": "luckau-cb120ea84b",
+      "city": "luckau",
+      "label": "Lübbenauer Straße",
+      "street": "Lübbenauer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Luckau",
+      "spotCount": 3,
+      "lat": 51.853540550000005,
+      "lng": 13.728437500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1546116266), ODbL"
+    },
+    {
+      "id": "luckau-5d955be2f8",
+      "city": "luckau",
+      "label": "Lübbener Straße",
+      "street": "Lübbener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Luckau",
+      "spotCount": 2,
+      "lat": 51.85333,
+      "lng": 13.727089500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1546116260), ODbL"
+    }
+  ]
+}

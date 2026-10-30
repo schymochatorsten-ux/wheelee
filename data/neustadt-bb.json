@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "neustadt-bb",
+    "name": "Neustadt (Dosse)",
+    "center": {
+      "lat": 52.8529813,
+      "lng": 12.4498459
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neustadt-bb-506a9cad84",
+      "city": "neustadt-bb",
+      "label": "Bahnhofstraße 6",
+      "street": "Bahnhofstraße",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neustadt (Dosse)",
+      "spotCount": 2,
+      "lat": 52.852013400000004,
+      "lng": 12.4498459,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/891186645), ODbL"
+    },
+    {
+      "id": "neustadt-bb-a8f14aa952",
+      "city": "neustadt-bb",
+      "label": "Poststraße 3",
+      "street": "Poststraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neustadt (Dosse)",
+      "spotCount": 2,
+      "lat": 52.8529813,
+      "lng": 12.44587125,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27453394), ODbL"
+    }
+  ]
+}

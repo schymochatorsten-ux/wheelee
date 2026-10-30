@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ingelfingen",
+    "name": "Ingelfingen",
+    "center": {
+      "lat": 49.3001803,
+      "lng": 9.64894005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ingelfingen-ae45740a79",
+      "city": "ingelfingen",
+      "label": "Jahnstraße 9",
+      "street": "Jahnstraße",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ingelfingen",
+      "spotCount": 1,
+      "lat": 49.3001803,
+      "lng": 9.64894005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1062316004), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "havelberg",
+    "name": "Havelberg",
+    "center": {
+      "lat": 52.827315250000005,
+      "lng": 12.07749075
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "havelberg-36b2ab9a73",
+      "city": "havelberg",
+      "label": "Platz des Friedens",
+      "street": "Platz des Friedens",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Havelberg",
+      "spotCount": 2,
+      "lat": 52.827315250000005,
+      "lng": 12.07749075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/276121424), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "laboe",
+    "name": "Laboe",
+    "center": {
+      "lat": 54.405401600000005,
+      "lng": 10.221631550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "laboe-e5643e5cf6",
+      "city": "laboe",
+      "label": "Gorch-Fock-Ring",
+      "street": "Gorch-Fock-Ring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Laboe",
+      "spotCount": 10,
+      "lat": 54.41040095,
+      "lng": 10.2313236,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/11886685), ODbL"
+    },
+    {
+      "id": "laboe-4338879bcd",
+      "city": "laboe",
+      "label": "Probsteier Platz 1",
+      "street": "Probsteier Platz",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Laboe",
+      "spotCount": 1,
+      "lat": 54.405401600000005,
+      "lng": 10.2203575,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/74543908), ODbL"
+    },
+    {
+      "id": "laboe-41e7a15f33",
+      "city": "laboe",
+      "label": "Probsteier Platz 1a",
+      "street": "Probsteier Platz",
+      "houseNumber": "1a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Laboe",
+      "spotCount": 1,
+      "lat": 54.4051704,
+      "lng": 10.221631550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/72272391), ODbL"
+    },
+    {
+      "id": "laboe-1009699aa4",
+      "city": "laboe",
+      "label": "Probsteier Platz 2",
+      "street": "Probsteier Platz",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Laboe",
+      "spotCount": 1,
+      "lat": 54.40507345,
+      "lng": 10.220973350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/74543912), ODbL"
+    },
+    {
+      "id": "laboe-6ab943d9c6",
+      "city": "laboe",
+      "label": "Wiesenweg",
+      "street": "Wiesenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Laboe",
+      "spotCount": 2,
+      "lat": 54.40627715000001,
+      "lng": 10.223010900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/173349431), ODbL"
+    }
+  ]
+}

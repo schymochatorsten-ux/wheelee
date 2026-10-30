@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "markneukirchen",
+    "name": "Markneukirchen",
+    "center": {
+      "lat": 50.31080725,
+      "lng": 12.328456500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "markneukirchen-a2f2ebda41",
+      "city": "markneukirchen",
+      "label": "Behindertenparkplatz Markneukirchen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Markneukirchen",
+      "spotCount": 3,
+      "lat": 50.324277200000004,
+      "lng": 12.325995,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6031460620), ODbL"
+    },
+    {
+      "id": "markneukirchen-948e447b91",
+      "city": "markneukirchen",
+      "label": "Bienengarten 3",
+      "street": "Bienengarten",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Markneukirchen",
+      "spotCount": 1,
+      "lat": 50.3095483,
+      "lng": 12.328456500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1227122693), ODbL"
+    },
+    {
+      "id": "markneukirchen-4107fcf627",
+      "city": "markneukirchen",
+      "label": "Breite Straße",
+      "street": "Breite Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Markneukirchen",
+      "spotCount": 2,
+      "lat": 50.31080725,
+      "lng": 12.331441300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/190939463), ODbL"
+    },
+    {
+      "id": "markneukirchen-359bd16fb3",
+      "city": "markneukirchen",
+      "label": "Clara-Wieck-Ring",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Markneukirchen",
+      "spotCount": 1,
+      "lat": 50.312456350000005,
+      "lng": 12.317704200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/316131867), ODbL"
+    },
+    {
+      "id": "markneukirchen-1ad61f72ae",
+      "city": "markneukirchen",
+      "label": "Schönlinder Straße 12b",
+      "street": "Schönlinder Straße",
+      "houseNumber": "12b",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Markneukirchen",
+      "spotCount": 2,
+      "lat": 50.2733966,
+      "lng": 12.3290896,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1381325657), ODbL"
+    }
+  ]
+}

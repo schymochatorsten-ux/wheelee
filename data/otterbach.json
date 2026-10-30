@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "otterbach",
+    "name": "Otterbach",
+    "center": {
+      "lat": 49.484352900000005,
+      "lng": 7.7288847
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "otterbach-a61ae431cd",
+      "city": "otterbach",
+      "label": "Lauterstraße",
+      "street": "Lauterstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Otterbach",
+      "spotCount": 1,
+      "lat": 49.484352900000005,
+      "lng": 7.7288847,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/289323815), ODbL"
+    }
+  ]
+}

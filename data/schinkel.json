@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schinkel",
+    "name": "Schinkel",
+    "center": {
+      "lat": 54.3576356,
+      "lng": 9.9486644
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schinkel-0406c61995",
+      "city": "schinkel",
+      "label": "Hauptstraße 47",
+      "street": "Hauptstraße",
+      "houseNumber": "47",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schinkel",
+      "spotCount": 1,
+      "lat": 54.3576356,
+      "lng": 9.9486644,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12122493206), ODbL"
+    }
+  ]
+}

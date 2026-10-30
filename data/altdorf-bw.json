@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "altdorf-bw",
+    "name": "Altdorf",
+    "center": {
+      "lat": 48.6335876,
+      "lng": 8.9985081
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "altdorf-bw-ab98363839",
+      "city": "altdorf-bw",
+      "label": "Alemannenstraße 1",
+      "street": "Alemannenstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Altdorf",
+      "spotCount": 2,
+      "lat": 48.6335876,
+      "lng": 8.9985081,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/5117565), ODbL"
+    },
+    {
+      "id": "altdorf-bw-875e3ae677",
+      "city": "altdorf-bw",
+      "label": "Holzgerlinger Straße 18",
+      "street": "Holzgerlinger Straße",
+      "houseNumber": "18",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Altdorf",
+      "spotCount": 1,
+      "lat": 48.630342150000004,
+      "lng": 8.9950659,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25772080), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "elxleben",
+    "name": "Elxleben",
+    "center": {
+      "lat": 51.0442137,
+      "lng": 10.942995
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "elxleben-b9e89135f4",
+      "city": "elxleben",
+      "label": "Vor dem Dorfe",
+      "street": "Vor dem Dorfe",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Elxleben",
+      "spotCount": 1,
+      "lat": 51.0442137,
+      "lng": 10.941692,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1184142253), ODbL"
+    },
+    {
+      "id": "elxleben-44049ec14b",
+      "city": "elxleben",
+      "label": "Vor dem Dorfe",
+      "street": "Vor dem Dorfe",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Elxleben",
+      "spotCount": 1,
+      "lat": 51.0440052,
+      "lng": 10.941667550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1184142254), ODbL"
+    },
+    {
+      "id": "elxleben-da59c227c6",
+      "city": "elxleben",
+      "label": "Vor dem Dorfe",
+      "street": "Vor dem Dorfe",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Elxleben",
+      "spotCount": 1,
+      "lat": 51.04436435000001,
+      "lng": 10.9428907,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1184142257), ODbL"
+    },
+    {
+      "id": "elxleben-9902802c0b",
+      "city": "elxleben",
+      "label": "Vor dem Dorfe 1",
+      "street": "Vor dem Dorfe",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Elxleben",
+      "spotCount": 1,
+      "lat": 51.044105900000005,
+      "lng": 10.943155350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1184142255), ODbL"
+    },
+    {
+      "id": "elxleben-207b1d2fc3",
+      "city": "elxleben",
+      "label": "Vor dem Dorfe 1",
+      "street": "Vor dem Dorfe",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Elxleben",
+      "spotCount": 1,
+      "lat": 51.044108800000004,
+      "lng": 10.94305155,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1184142256), ODbL"
+    },
+    {
+      "id": "elxleben-dddaa87b1b",
+      "city": "elxleben",
+      "label": "Vor dem Dorfe 1",
+      "street": "Vor dem Dorfe",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Elxleben",
+      "spotCount": 1,
+      "lat": 51.0443148,
+      "lng": 10.942995,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1184142258), ODbL"
+    }
+  ]
+}

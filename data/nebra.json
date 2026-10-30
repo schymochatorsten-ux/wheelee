@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "nebra",
+    "name": "Nebra (Unstrut)",
+    "center": {
+      "lat": 51.2715248,
+      "lng": 11.531139000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nebra-e3f6b2b078",
+      "city": "nebra",
+      "label": "Behindertenparkplatz Nebra (Unstrut)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nebra (Unstrut)",
+      "spotCount": 2,
+      "lat": 51.2715248,
+      "lng": 11.531139000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12832511442), ODbL"
+    }
+  ]
+}

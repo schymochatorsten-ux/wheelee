@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "illerrieden",
+    "name": "Illerrieden",
+    "center": {
+      "lat": 48.26986740000001,
+      "lng": 10.0545206
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "illerrieden-fe54ac6425",
+      "city": "illerrieden",
+      "label": "Gartenstraße 58",
+      "street": "Gartenstraße",
+      "houseNumber": "58",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Illerrieden",
+      "spotCount": 1,
+      "lat": 48.26986740000001,
+      "lng": 10.0545206,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/99554470), ODbL"
+    }
+  ]
+}

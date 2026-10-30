@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "heuchelheim-a-d-lahn",
+    "name": "Heuchelheim a.d.Lahn",
+    "center": {
+      "lat": 50.5840941,
+      "lng": 8.63082595
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "heuchelheim-a-d-lahn-3b62fa0f1c",
+      "city": "heuchelheim-a-d-lahn",
+      "label": "Brauhausstraße 26",
+      "street": "Brauhausstraße",
+      "houseNumber": "26",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Heuchelheim a.d.Lahn",
+      "spotCount": 1,
+      "lat": 50.5840941,
+      "lng": 8.63082595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1386123297), ODbL"
+    }
+  ]
+}

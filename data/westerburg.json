@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "westerburg",
+    "name": "Westerburg",
+    "center": {
+      "lat": 50.574295500000005,
+      "lng": 7.971006000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "westerburg-9883276536",
+      "city": "westerburg",
+      "label": "Marienweg",
+      "street": "Marienweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Westerburg",
+      "spotCount": 1,
+      "lat": 50.574295500000005,
+      "lng": 7.971006000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11775320354), ODbL"
+    }
+  ]
+}

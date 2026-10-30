@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "leupoldsgruen",
+    "name": "Leupoldsgrün",
+    "center": {
+      "lat": 50.30439165,
+      "lng": 11.806063950000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "leupoldsgruen-897c3bc40f",
+      "city": "leupoldsgruen",
+      "label": "Lipperts",
+      "street": "Lipperts",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Leupoldsgrün",
+      "spotCount": 3,
+      "lat": 50.30439165,
+      "lng": 11.806063950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1161543324), ODbL"
+    }
+  ]
+}

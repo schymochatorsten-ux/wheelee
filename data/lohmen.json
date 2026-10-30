@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "lohmen",
+    "name": "Lohmen",
+    "center": {
+      "lat": 50.989615150000006,
+      "lng": 14.0670462
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lohmen-027e1e5a18",
+      "city": "lohmen",
+      "label": "Basteistraße",
+      "street": "Basteistraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lohmen",
+      "spotCount": 1,
+      "lat": 50.9648624,
+      "lng": 14.0670462,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/302090964), ODbL"
+    },
+    {
+      "id": "lohmen-7650a83ba7",
+      "city": "lohmen",
+      "label": "Dorfstraße",
+      "street": "Dorfstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lohmen",
+      "spotCount": 1,
+      "lat": 50.989615150000006,
+      "lng": 13.99404615,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/336275612), ODbL"
+    }
+  ]
+}

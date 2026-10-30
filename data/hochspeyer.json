@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "hochspeyer",
+    "name": "Hochspeyer",
+    "center": {
+      "lat": 49.4428587,
+      "lng": 7.8960302
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hochspeyer-1c34f90b52",
+      "city": "hochspeyer",
+      "label": "Am Weiherberg 7",
+      "street": "Am Weiherberg",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hochspeyer",
+      "spotCount": 1,
+      "lat": 49.44064875,
+      "lng": 7.892307550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/263081712), ODbL"
+    },
+    {
+      "id": "hochspeyer-da6906ce47",
+      "city": "hochspeyer",
+      "label": "Hauptstraße 105",
+      "street": "Hauptstraße",
+      "houseNumber": "105",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hochspeyer",
+      "spotCount": 2,
+      "lat": 49.443415300000005,
+      "lng": 7.894770100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/160609645), ODbL"
+    },
+    {
+      "id": "hochspeyer-31f96f3d54",
+      "city": "hochspeyer",
+      "label": "Hochspeyer, Kreissparkasse",
+      "street": "Hochspeyer, Kreissparkasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hochspeyer",
+      "spotCount": 2,
+      "lat": 49.44231430000001,
+      "lng": 7.8960302,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/205123760), ODbL"
+    },
+    {
+      "id": "hochspeyer-c46ef24b16",
+      "city": "hochspeyer",
+      "label": "Wiesenstraße 1",
+      "street": "Wiesenstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hochspeyer",
+      "spotCount": 2,
+      "lat": 49.4428587,
+      "lng": 7.8964421,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1037499908), ODbL"
+    }
+  ]
+}

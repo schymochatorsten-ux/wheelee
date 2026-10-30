@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "neunkirchen-rp",
+    "name": "Neunkirchen",
+    "center": {
+      "lat": 50.54412705,
+      "lng": 8.1002878
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neunkirchen-rp-64140b8d61",
+      "city": "neunkirchen-rp",
+      "label": "Friedhofsweg",
+      "street": "Friedhofsweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neunkirchen",
+      "spotCount": 1,
+      "lat": 50.54412705,
+      "lng": 8.1002878,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/55575687), ODbL"
+    }
+  ]
+}

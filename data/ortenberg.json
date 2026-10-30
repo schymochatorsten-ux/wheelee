@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "ortenberg",
+    "name": "Ortenberg",
+    "center": {
+      "lat": 50.355522300000004,
+      "lng": 9.054744450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ortenberg-8fe6ac0255",
+      "city": "ortenberg",
+      "label": "In den St. Wendelsgärten",
+      "street": "In den St. Wendelsgärten",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ortenberg",
+      "spotCount": 1,
+      "lat": 50.35411655,
+      "lng": 9.050909650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/775651463), ODbL"
+    },
+    {
+      "id": "ortenberg-610eb82462",
+      "city": "ortenberg",
+      "label": "Marktplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ortenberg",
+      "spotCount": 2,
+      "lat": 50.355522300000004,
+      "lng": 9.054744450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25275370), ODbL"
+    }
+  ]
+}

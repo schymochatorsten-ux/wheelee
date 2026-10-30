@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "markersdorf",
+    "name": "Markersdorf",
+    "center": {
+      "lat": 51.1442679,
+      "lng": 14.88113405
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "markersdorf-366b3d526f",
+      "city": "markersdorf",
+      "label": "Am Schöps 68",
+      "street": "Am Schöps",
+      "houseNumber": "68",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Markersdorf",
+      "spotCount": 1,
+      "lat": 51.1442679,
+      "lng": 14.879351150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1430238430), ODbL"
+    },
+    {
+      "id": "markersdorf-ee577f4ab9",
+      "city": "markersdorf",
+      "label": "Kirchstraße",
+      "street": "Kirchstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Markersdorf",
+      "spotCount": 3,
+      "lat": 51.14191575,
+      "lng": 14.88113405,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1313310026), ODbL"
+    }
+  ]
+}

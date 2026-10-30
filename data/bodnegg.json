@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bodnegg",
+    "name": "Bodnegg",
+    "center": {
+      "lat": 47.7315028,
+      "lng": 9.698984750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bodnegg-a2e1f2a72c",
+      "city": "bodnegg",
+      "label": "Eichelstraße",
+      "street": "Eichelstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bodnegg",
+      "spotCount": 2,
+      "lat": 47.7315028,
+      "lng": 9.698984750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/874015727), ODbL"
+    }
+  ]
+}

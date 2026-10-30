@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hutthurm",
+    "name": "Hutthurm",
+    "center": {
+      "lat": 48.67110185,
+      "lng": 13.4714603
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hutthurm-c295cfcfcc",
+      "city": "hutthurm",
+      "label": "Rathausplatz 3b",
+      "street": "Rathausplatz",
+      "houseNumber": "3b",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hutthurm",
+      "spotCount": 2,
+      "lat": 48.67110185,
+      "lng": 13.4714603,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/379541523), ODbL"
+    }
+  ]
+}

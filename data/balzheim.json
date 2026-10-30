@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "balzheim",
+    "name": "Balzheim",
+    "center": {
+      "lat": 48.180212600000004,
+      "lng": 10.0767099
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "balzheim-5268bffebe",
+      "city": "balzheim",
+      "label": "Am Dorfplatz 8",
+      "street": "Am Dorfplatz",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Balzheim",
+      "spotCount": 1,
+      "lat": 48.180212600000004,
+      "lng": 10.0767099,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1387621263), ODbL"
+    }
+  ]
+}

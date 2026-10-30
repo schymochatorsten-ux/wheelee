@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "steyerberg",
+    "name": "Steyerberg",
+    "center": {
+      "lat": 52.567753,
+      "lng": 9.0268718
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "steyerberg-8a8ee44c4a",
+      "city": "steyerberg",
+      "label": "Auf dem Lichtenberge",
+      "street": "Auf dem Lichtenberge",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Steyerberg",
+      "spotCount": 1,
+      "lat": 52.56334700000001,
+      "lng": 9.01572535,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1510555080), ODbL"
+    },
+    {
+      "id": "steyerberg-15cdcfd984",
+      "city": "steyerberg",
+      "label": "Kirchstraße",
+      "street": "Kirchstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Steyerberg",
+      "spotCount": 1,
+      "lat": 52.5678471,
+      "lng": 9.0269694,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13578273206), ODbL"
+    },
+    {
+      "id": "steyerberg-3b8468478d",
+      "city": "steyerberg",
+      "label": "Kirchstraße",
+      "street": "Kirchstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Steyerberg",
+      "spotCount": 1,
+      "lat": 52.567753,
+      "lng": 9.0268718,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13578273207), ODbL"
+    }
+  ]
+}

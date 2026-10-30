@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "gemmingen",
+    "name": "Gemmingen",
+    "center": {
+      "lat": 49.15158790000001,
+      "lng": 8.98430805
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gemmingen-6616a59d88",
+      "city": "gemmingen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Gemmingen",
+      "spotCount": 2,
+      "lat": 49.15163255,
+      "lng": 8.98399675,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/378232231), ODbL"
+    },
+    {
+      "id": "gemmingen-a03af16e27",
+      "city": "gemmingen",
+      "label": "Bahnhofstraße 50",
+      "street": "Bahnhofstraße",
+      "houseNumber": "50",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gemmingen",
+      "spotCount": 1,
+      "lat": 49.15158790000001,
+      "lng": 8.984324749999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1411474043), ODbL"
+    },
+    {
+      "id": "gemmingen-60cb427b33",
+      "city": "gemmingen",
+      "label": "Bahnhofstraße 50",
+      "street": "Bahnhofstraße",
+      "houseNumber": "50",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gemmingen",
+      "spotCount": 1,
+      "lat": 49.151558800000004,
+      "lng": 8.98430805,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1411474044), ODbL"
+    }
+  ]
+}

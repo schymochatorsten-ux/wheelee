@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "burgbernheim",
+    "name": "Burgbernheim",
+    "center": {
+      "lat": 49.4581802,
+      "lng": 10.320106000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "burgbernheim-4306ce149b",
+      "city": "burgbernheim",
+      "label": "Am Unteren Bahnhof",
+      "street": "Am Unteren Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burgbernheim",
+      "spotCount": 1,
+      "lat": 49.4542215,
+      "lng": 10.320106000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/447376420), ODbL"
+    },
+    {
+      "id": "burgbernheim-913de85142",
+      "city": "burgbernheim",
+      "label": "Rothenburger Straße",
+      "street": "Rothenburger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burgbernheim",
+      "spotCount": 1,
+      "lat": 49.4581802,
+      "lng": 10.3085295,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/835365543), ODbL"
+    }
+  ]
+}

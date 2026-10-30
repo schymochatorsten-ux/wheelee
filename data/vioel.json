@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "vioel",
+    "name": "Viöl",
+    "center": {
+      "lat": 54.570108700000006,
+      "lng": 9.17209475
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "vioel-eae7d90be4",
+      "city": "vioel",
+      "label": "Westerende",
+      "street": "Westerende",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Viöl",
+      "spotCount": 1,
+      "lat": 54.56851485000001,
+      "lng": 9.18190395,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/198145492), ODbL"
+    },
+    {
+      "id": "vioel-182cc0e903",
+      "city": "vioel",
+      "label": "Westerende 41",
+      "street": "Westerende",
+      "houseNumber": "41",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Viöl",
+      "spotCount": 1,
+      "lat": 54.569223550000004,
+      "lng": 9.1742085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/449405069), ODbL"
+    },
+    {
+      "id": "vioel-72d277cd58",
+      "city": "vioel",
+      "label": "Westermarkt",
+      "street": "Westermarkt",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Viöl",
+      "spotCount": 2,
+      "lat": 54.57036720000001,
+      "lng": 9.17207255,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/198410253), ODbL"
+    },
+    {
+      "id": "vioel-d2de8e8385",
+      "city": "vioel",
+      "label": "Westermarkt",
+      "street": "Westermarkt",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Viöl",
+      "spotCount": 1,
+      "lat": 54.570108700000006,
+      "lng": 9.1720446,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1569197266), ODbL"
+    },
+    {
+      "id": "vioel-643d2bf60a",
+      "city": "vioel",
+      "label": "Westermarkt",
+      "street": "Westermarkt",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Viöl",
+      "spotCount": 1,
+      "lat": 54.57010890000001,
+      "lng": 9.171968150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1569197267), ODbL"
+    },
+    {
+      "id": "vioel-a49c23b11e",
+      "city": "vioel",
+      "label": "Westermarkt 3",
+      "street": "Westermarkt",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Viöl",
+      "spotCount": 1,
+      "lat": 54.569770850000005,
+      "lng": 9.17209475,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/198414944), ODbL"
+    }
+  ]
+}

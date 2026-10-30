@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "schleusegrund",
+    "name": "Schleusegrund",
+    "center": {
+      "lat": 50.5228367,
+      "lng": 10.879244550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schleusegrund-f64ca97e5a",
+      "city": "schleusegrund",
+      "label": "Gabeler Straße 1a",
+      "street": "Gabeler Straße",
+      "houseNumber": "1a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schleusegrund",
+      "spotCount": 2,
+      "lat": 50.52311275,
+      "lng": 10.877938450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/270640608), ODbL"
+    },
+    {
+      "id": "schleusegrund-c7770545f0",
+      "city": "schleusegrund",
+      "label": "Neustädter Straße 12",
+      "street": "Neustädter Straße",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schleusegrund",
+      "spotCount": 2,
+      "lat": 50.5223917,
+      "lng": 10.879244550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1553786772), ODbL"
+    },
+    {
+      "id": "schleusegrund-c782895ab3",
+      "city": "schleusegrund",
+      "label": "Neustädter Straße 26",
+      "street": "Neustädter Straße",
+      "houseNumber": "26",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schleusegrund",
+      "spotCount": 1,
+      "lat": 50.5228367,
+      "lng": 10.881776250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/288004032), ODbL"
+    }
+  ]
+}

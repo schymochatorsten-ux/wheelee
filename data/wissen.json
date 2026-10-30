@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wissen",
+    "name": "Wissen",
+    "center": {
+      "lat": 50.78263015,
+      "lng": 7.7297703
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wissen-8d7ce98410",
+      "city": "wissen",
+      "label": "Aldi-Parkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wissen",
+      "spotCount": 1,
+      "lat": 50.78263015,
+      "lng": 7.7297703,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/70831518), ODbL"
+    }
+  ]
+}

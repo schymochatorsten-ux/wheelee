@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "beselich",
+    "name": "Beselich",
+    "center": {
+      "lat": 50.469059400000006,
+      "lng": 8.13738365
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "beselich-d3bca0e5ee",
+      "city": "beselich",
+      "label": "Autohof Beselich Nord",
+      "street": "Autohof Beselich Nord",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Beselich",
+      "spotCount": 2,
+      "lat": 50.469059400000006,
+      "lng": 8.13738365,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/350652298), ODbL"
+    },
+    {
+      "id": "beselich-33b1d8a8e1",
+      "city": "beselich",
+      "label": "Parkplatz Edeka",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Beselich",
+      "spotCount": 1,
+      "lat": 50.462960450000004,
+      "lng": 8.130885800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/142894800), ODbL"
+    }
+  ]
+}

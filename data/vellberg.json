@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "vellberg",
+    "name": "Vellberg",
+    "center": {
+      "lat": 49.0872657,
+      "lng": 9.881724850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "vellberg-abc14cd188",
+      "city": "vellberg",
+      "label": "Im Städtle 24",
+      "street": "Im Städtle",
+      "houseNumber": "24",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Vellberg",
+      "spotCount": 1,
+      "lat": 49.0872657,
+      "lng": 9.881724850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1557490800), ODbL"
+    }
+  ]
+}

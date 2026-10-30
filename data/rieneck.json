@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "rieneck",
+    "name": "Rieneck",
+    "center": {
+      "lat": 50.095370900000006,
+      "lng": 9.65183665
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rieneck-bccc3922c8",
+      "city": "rieneck",
+      "label": "Schellhofstraße",
+      "street": "Schellhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rieneck",
+      "spotCount": 2,
+      "lat": 50.095370900000006,
+      "lng": 9.65183665,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/822811701), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wetter-he",
+    "name": "Wetter (Hessen)",
+    "center": {
+      "lat": 50.902054500000006,
+      "lng": 8.7386351
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wetter-he-ce2c959e34",
+      "city": "wetter-he",
+      "label": "Schoeller-Electronics GmbH",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wetter (Hessen)",
+      "spotCount": 1,
+      "lat": 50.902054500000006,
+      "lng": 8.7386351,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1424242691), ODbL"
+    }
+  ]
+}

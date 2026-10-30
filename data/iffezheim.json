@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "iffezheim",
+    "name": "Iffezheim",
+    "center": {
+      "lat": 48.8195132,
+      "lng": 8.151666
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "iffezheim-1673dcd59e",
+      "city": "iffezheim",
+      "label": "Gebrüder-Grimm-Straße 2",
+      "street": "Gebrüder-Grimm-Straße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Iffezheim",
+      "spotCount": 1,
+      "lat": 48.819495800000006,
+      "lng": 8.151705750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1080987784), ODbL"
+    },
+    {
+      "id": "iffezheim-962c263ecf",
+      "city": "iffezheim",
+      "label": "Gebrüder-Grimm-Straße 2",
+      "street": "Gebrüder-Grimm-Straße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Iffezheim",
+      "spotCount": 1,
+      "lat": 48.8195132,
+      "lng": 8.151666,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1080987785), ODbL"
+    },
+    {
+      "id": "iffezheim-0d99d07b76",
+      "city": "iffezheim",
+      "label": "Gebrüder-Grimm-Straße 2",
+      "street": "Gebrüder-Grimm-Straße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Iffezheim",
+      "spotCount": 1,
+      "lat": 48.819530650000004,
+      "lng": 8.15162625,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1080987786), ODbL"
+    },
+    {
+      "id": "iffezheim-0ee28196d7",
+      "city": "iffezheim",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Iffezheim",
+      "spotCount": 3,
+      "lat": 48.819330550000004,
+      "lng": 8.151666950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/333039225), ODbL"
+    },
+    {
+      "id": "iffezheim-16b458e11f",
+      "city": "iffezheim",
+      "label": "Hügelsheimer Straße 5",
+      "street": "Hügelsheimer Straße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Iffezheim",
+      "spotCount": 1,
+      "lat": 48.822145500000005,
+      "lng": 8.14048245,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/71188510), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "sauerlach",
+    "name": "Sauerlach",
+    "center": {
+      "lat": 47.97229325000001,
+      "lng": 11.65550695
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sauerlach-81a851a798",
+      "city": "sauerlach",
+      "label": "Andreasstraße",
+      "street": "Andreasstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sauerlach",
+      "spotCount": 1,
+      "lat": 47.9694687,
+      "lng": 11.651882700000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/757296198), ODbL"
+    },
+    {
+      "id": "sauerlach-e53e5c54f6",
+      "city": "sauerlach",
+      "label": "Münchener Straße",
+      "street": "Münchener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sauerlach",
+      "spotCount": 1,
+      "lat": 47.9730684,
+      "lng": 11.65403805,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/375952733), ODbL"
+    },
+    {
+      "id": "sauerlach-80b9c7d50f",
+      "city": "sauerlach",
+      "label": "Rudolf-Diesel-Ring",
+      "street": "Rudolf-Diesel-Ring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sauerlach",
+      "spotCount": 2,
+      "lat": 47.970720150000005,
+      "lng": 11.663723350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1329011831), ODbL"
+    },
+    {
+      "id": "sauerlach-167d827b69",
+      "city": "sauerlach",
+      "label": "Taubenberger Hof 4",
+      "street": "Taubenberger Hof",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sauerlach",
+      "spotCount": 1,
+      "lat": 47.97229325000001,
+      "lng": 11.65550695,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1369797951), ODbL"
+    }
+  ]
+}

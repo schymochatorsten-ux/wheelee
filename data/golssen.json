@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "golssen",
+    "name": "Golßen",
+    "center": {
+      "lat": 51.971617050000006,
+      "lng": 13.601417650000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "golssen-1424b763b2",
+      "city": "golssen",
+      "label": "Stadtwall",
+      "street": "Stadtwall",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Golßen",
+      "spotCount": 1,
+      "lat": 51.971617050000006,
+      "lng": 13.601417650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35265801), ODbL"
+    }
+  ]
+}

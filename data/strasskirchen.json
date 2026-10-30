@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "strasskirchen",
+    "name": "Straßkirchen",
+    "center": {
+      "lat": 48.827262600000005,
+      "lng": 12.729561450000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "strasskirchen-e10bfb185b",
+      "city": "strasskirchen",
+      "label": "Ohmstraße 5",
+      "street": "Ohmstraße",
+      "houseNumber": "5",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Straßkirchen",
+      "spotCount": 1,
+      "lat": 48.827249900000005,
+      "lng": 12.729561450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1241122490), ODbL"
+    },
+    {
+      "id": "strasskirchen-817c0e356c",
+      "city": "strasskirchen",
+      "label": "Ohmstraße 5",
+      "street": "Ohmstraße",
+      "houseNumber": "5",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Straßkirchen",
+      "spotCount": 1,
+      "lat": 48.827262600000005,
+      "lng": 12.729529750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1241122491), ODbL"
+    },
+    {
+      "id": "strasskirchen-24a2603304",
+      "city": "strasskirchen",
+      "label": "Ohmstraße 5",
+      "street": "Ohmstraße",
+      "houseNumber": "5",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Straßkirchen",
+      "spotCount": 1,
+      "lat": 48.8272746,
+      "lng": 12.7294961,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1241122492), ODbL"
+    },
+    {
+      "id": "strasskirchen-6faddcb8ef",
+      "city": "strasskirchen",
+      "label": "Passauer Straße",
+      "street": "Passauer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Straßkirchen",
+      "spotCount": 3,
+      "lat": 48.8272209,
+      "lng": 12.73004745,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/926823361), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "erlenmoos",
+    "name": "Erlenmoos",
+    "center": {
+      "lat": 48.0637576,
+      "lng": 9.97450765
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "erlenmoos-ad2e28f172",
+      "city": "erlenmoos",
+      "label": "Biberacher Straße",
+      "street": "Biberacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Erlenmoos",
+      "spotCount": 1,
+      "lat": 48.0637576,
+      "lng": 9.97450765,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1462583340), ODbL"
+    }
+  ]
+}

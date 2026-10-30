@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "plaidt",
+    "name": "Plaidt",
+    "center": {
+      "lat": 50.3935374,
+      "lng": 7.38511005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "plaidt-6868c3b78e",
+      "city": "plaidt",
+      "label": "Rathausstraße",
+      "street": "Rathausstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Plaidt",
+      "spotCount": 1,
+      "lat": 50.3935374,
+      "lng": 7.38511005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1501680822), ODbL"
+    }
+  ]
+}

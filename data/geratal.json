@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "geratal",
+    "name": "Geratal",
+    "center": {
+      "lat": 50.74935240000001,
+      "lng": 10.811978750000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "geratal-101de38698",
+      "city": "geratal",
+      "label": "An der Keramik",
+      "street": "An der Keramik",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Geratal",
+      "spotCount": 2,
+      "lat": 50.74743505000001,
+      "lng": 10.8112981,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/113506732), ODbL"
+    },
+    {
+      "id": "geratal-dac0e82317",
+      "city": "geratal",
+      "label": "Hintergasse 14",
+      "street": "Hintergasse",
+      "houseNumber": "14",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Geratal",
+      "spotCount": 1,
+      "lat": 50.74935240000001,
+      "lng": 10.811978750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1456249496), ODbL"
+    }
+  ]
+}

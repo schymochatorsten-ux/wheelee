@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "muenchweiler",
+    "name": "Münchweiler an der Rodalb",
+    "center": {
+      "lat": 49.2196811,
+      "lng": 7.70098205
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "muenchweiler-f7fdbe791b",
+      "city": "muenchweiler",
+      "label": "Hanauer Straße",
+      "street": "Hanauer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Münchweiler an der Rodalb",
+      "spotCount": 2,
+      "lat": 49.2196811,
+      "lng": 7.70098205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/82462294), ODbL"
+    }
+  ]
+}

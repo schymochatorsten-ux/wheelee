@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "suthfeld",
+    "name": "Suthfeld",
+    "center": {
+      "lat": 52.35713725000001,
+      "lng": 9.3824389
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "suthfeld-28f625637e",
+      "city": "suthfeld",
+      "label": "Zum Schevenkamp",
+      "street": "Zum Schevenkamp",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Suthfeld",
+      "spotCount": 1,
+      "lat": 52.35713725000001,
+      "lng": 9.3824389,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1446584415), ODbL"
+    }
+  ]
+}

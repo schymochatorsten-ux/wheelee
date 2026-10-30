@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "fischen-i-allgaeu",
+    "name": "Fischen i.Allgäu",
+    "center": {
+      "lat": 47.456153900000004,
+      "lng": 10.27046705
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "fischen-i-allgaeu-0750385e4c",
+      "city": "fischen-i-allgaeu",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Fischen i.Allgäu",
+      "spotCount": 2,
+      "lat": 47.456153900000004,
+      "lng": 10.2703216,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1027363304), ODbL"
+    },
+    {
+      "id": "fischen-i-allgaeu-70a0f799c1",
+      "city": "fischen-i-allgaeu",
+      "label": "P+R Parkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Fischen i.Allgäu",
+      "spotCount": 2,
+      "lat": 47.4558883,
+      "lng": 10.27046705,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/47795626), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "drebkau",
+    "name": "Drebkau",
+    "center": {
+      "lat": 51.6258617,
+      "lng": 14.22055395
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "drebkau-4bdfcc6543",
+      "city": "drebkau",
+      "label": "Steinitzer Dorfstraße",
+      "street": "Steinitzer Dorfstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Drebkau",
+      "spotCount": 1,
+      "lat": 51.6258617,
+      "lng": 14.215135800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/184614737), ODbL"
+    },
+    {
+      "id": "drebkau-8fae2e9173",
+      "city": "drebkau",
+      "label": "Tagebaurandstraße",
+      "street": "Tagebaurandstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Drebkau",
+      "spotCount": 2,
+      "lat": 51.62094330000001,
+      "lng": 14.22055395,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/174749525), ODbL"
+    }
+  ]
+}

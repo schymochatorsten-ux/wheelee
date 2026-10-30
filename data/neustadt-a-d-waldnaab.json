@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "neustadt-a-d-waldnaab",
+    "name": "Neustadt a.d.Waldnaab",
+    "center": {
+      "lat": 49.739854550000004,
+      "lng": 12.180583600000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neustadt-a-d-waldnaab-47ab2c4877",
+      "city": "neustadt-a-d-waldnaab",
+      "label": "Galgengasse",
+      "street": "Galgengasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neustadt a.d.Waldnaab",
+      "spotCount": 2,
+      "lat": 49.739854550000004,
+      "lng": 12.180583600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1562511326), ODbL"
+    },
+    {
+      "id": "neustadt-a-d-waldnaab-7800b1534a",
+      "city": "neustadt-a-d-waldnaab",
+      "label": "Georgstraße",
+      "street": "Georgstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neustadt a.d.Waldnaab",
+      "spotCount": 1,
+      "lat": 49.7266959,
+      "lng": 12.168529900000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14222322005), ODbL"
+    }
+  ]
+}

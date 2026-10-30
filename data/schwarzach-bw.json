@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schwarzach-bw",
+    "name": "Schwarzach",
+    "center": {
+      "lat": 49.37383440000001,
+      "lng": 8.98097995
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schwarzach-bw-f964ecb307",
+      "city": "schwarzach-bw",
+      "label": "In den Gärten",
+      "street": "In den Gärten",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwarzach",
+      "spotCount": 1,
+      "lat": 49.37383440000001,
+      "lng": 8.98097995,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1482005048), ODbL"
+    }
+  ]
+}

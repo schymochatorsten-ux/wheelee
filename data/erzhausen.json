@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "erzhausen",
+    "name": "Erzhausen",
+    "center": {
+      "lat": 49.94895595,
+      "lng": 8.645046950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "erzhausen-328ce4bd3f",
+      "city": "erzhausen",
+      "label": "Am Birkenwald",
+      "street": "Am Birkenwald",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Erzhausen",
+      "spotCount": 1,
+      "lat": 49.947535650000006,
+      "lng": 8.645046950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/984674280), ODbL"
+    },
+    {
+      "id": "erzhausen-80088b2d01",
+      "city": "erzhausen",
+      "label": "Kiefernweg",
+      "street": "Kiefernweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Erzhausen",
+      "spotCount": 1,
+      "lat": 49.94895595,
+      "lng": 8.64232345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/535660534), ODbL"
+    }
+  ]
+}

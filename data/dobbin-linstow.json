@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "dobbin-linstow",
+    "name": "Dobbin-Linstow",
+    "center": {
+      "lat": 53.60974590000001,
+      "lng": 12.38419655
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dobbin-linstow-058bd7873b",
+      "city": "dobbin-linstow",
+      "label": "Krakower Chaussee 24a",
+      "street": "Krakower Chaussee",
+      "houseNumber": "24a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dobbin-Linstow",
+      "spotCount": 1,
+      "lat": 53.60974590000001,
+      "lng": 12.38419655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/112239999), ODbL"
+    }
+  ]
+}

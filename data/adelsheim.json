@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "adelsheim",
+    "name": "Adelsheim",
+    "center": {
+      "lat": 49.402745,
+      "lng": 9.39408955
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "adelsheim-f792c68033",
+      "city": "adelsheim",
+      "label": "Badstraße",
+      "street": "Badstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Adelsheim",
+      "spotCount": 1,
+      "lat": 49.4031404,
+      "lng": 9.394702800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1395715663), ODbL"
+    },
+    {
+      "id": "adelsheim-98e84ffebc",
+      "city": "adelsheim",
+      "label": "Bahnallee",
+      "street": "Bahnallee",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Adelsheim",
+      "spotCount": 1,
+      "lat": 49.4024197,
+      "lng": 9.39408955,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1317573057), ODbL"
+    },
+    {
+      "id": "adelsheim-d10e3ceb56",
+      "city": "adelsheim",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Adelsheim",
+      "spotCount": 1,
+      "lat": 49.37894625,
+      "lng": 9.38135575,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1316927103), ODbL"
+    },
+    {
+      "id": "adelsheim-384a42ad48",
+      "city": "adelsheim",
+      "label": "Marktstraße 15",
+      "street": "Marktstraße",
+      "houseNumber": "15",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Adelsheim",
+      "spotCount": 2,
+      "lat": 49.40367485,
+      "lng": 9.390437900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/275632295), ODbL"
+    },
+    {
+      "id": "adelsheim-ed65742227",
+      "city": "adelsheim",
+      "label": "Panoramaweg",
+      "street": "Panoramaweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Adelsheim",
+      "spotCount": 1,
+      "lat": 49.402745,
+      "lng": 9.39504735,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1317573058), ODbL"
+    }
+  ]
+}

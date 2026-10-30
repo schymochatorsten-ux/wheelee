@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "gielow",
+    "name": "Gielow",
+    "center": {
+      "lat": 53.69828555000001,
+      "lng": 12.7455504
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gielow-f64689a005",
+      "city": "gielow",
+      "label": "Am Bornbruch 6",
+      "street": "Am Bornbruch",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gielow",
+      "spotCount": 2,
+      "lat": 53.69828555000001,
+      "lng": 12.7455504,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/388319745), ODbL"
+    }
+  ]
+}

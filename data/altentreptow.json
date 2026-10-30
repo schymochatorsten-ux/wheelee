@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "altentreptow",
+    "name": "Altentreptow",
+    "center": {
+      "lat": 53.692375600000005,
+      "lng": 13.260299700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "altentreptow-6eeffe8520",
+      "city": "altentreptow",
+      "label": "Fritz-Peters-Straße 63",
+      "street": "Fritz-Peters-Straße",
+      "houseNumber": "63",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Altentreptow",
+      "spotCount": 3,
+      "lat": 53.692375600000005,
+      "lng": 13.260299700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1513633278), ODbL"
+    }
+  ]
+}

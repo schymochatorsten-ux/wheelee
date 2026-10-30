@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kirchberg-i-wald",
+    "name": "Kirchberg i.Wald",
+    "center": {
+      "lat": 48.89925205,
+      "lng": 13.1820755
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kirchberg-i-wald-0a4390e1d3",
+      "city": "kirchberg-i-wald",
+      "label": "Ferdinand-Neumaier-Straße 9",
+      "street": "Ferdinand-Neumaier-Straße",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kirchberg i.Wald",
+      "spotCount": 1,
+      "lat": 48.89925205,
+      "lng": 13.1820755,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1499077263), ODbL"
+    }
+  ]
+}

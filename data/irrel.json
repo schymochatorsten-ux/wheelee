@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "irrel",
+    "name": "Irrel",
+    "center": {
+      "lat": 49.84740895,
+      "lng": 6.45785605
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "irrel-5f4ca9113b",
+      "city": "irrel",
+      "label": "Am Döllenberg",
+      "street": "Am Döllenberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Irrel",
+      "spotCount": 1,
+      "lat": 49.847237750000005,
+      "lng": 6.45785605,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/416885092), ODbL"
+    },
+    {
+      "id": "irrel-b53a638df1",
+      "city": "irrel",
+      "label": "Am Spitulersberg",
+      "street": "Am Spitulersberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Irrel",
+      "spotCount": 1,
+      "lat": 49.84740895,
+      "lng": 6.4552401,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1472722254), ODbL"
+    }
+  ]
+}

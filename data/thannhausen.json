@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "thannhausen",
+    "name": "Thannhausen",
+    "center": {
+      "lat": 48.283864650000005,
+      "lng": 10.459911850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "thannhausen-e0cd4306f8",
+      "city": "thannhausen",
+      "label": "Bürgermeister-Raab-Straße",
+      "street": "Bürgermeister-Raab-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Thannhausen",
+      "spotCount": 1,
+      "lat": 48.283858300000006,
+      "lng": 10.4598668,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1305189036), ODbL"
+    },
+    {
+      "id": "thannhausen-40e6080b69",
+      "city": "thannhausen",
+      "label": "Bürgermeister-Raab-Straße 31",
+      "street": "Bürgermeister-Raab-Straße",
+      "houseNumber": "31",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Thannhausen",
+      "spotCount": 1,
+      "lat": 48.283864650000005,
+      "lng": 10.459911850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1305189037), ODbL"
+    },
+    {
+      "id": "thannhausen-bea825d9a3",
+      "city": "thannhausen",
+      "label": "Bürgermeister-Raab-Straße 31",
+      "street": "Bürgermeister-Raab-Straße",
+      "houseNumber": "31",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Thannhausen",
+      "spotCount": 1,
+      "lat": 48.28387065,
+      "lng": 10.45995615,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1305189038), ODbL"
+    }
+  ]
+}

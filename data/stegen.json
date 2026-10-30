@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "stegen",
+    "name": "Stegen",
+    "center": {
+      "lat": 47.9816286,
+      "lng": 7.9630692000000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "stegen-d700e4c2e7",
+      "city": "stegen",
+      "label": "Weilerstraße",
+      "street": "Weilerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stegen",
+      "spotCount": 1,
+      "lat": 47.981600900000004,
+      "lng": 7.962827450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1421178752), ODbL"
+    },
+    {
+      "id": "stegen-0c4eb88f5c",
+      "city": "stegen",
+      "label": "Weilerstraße",
+      "street": "Weilerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stegen",
+      "spotCount": 1,
+      "lat": 47.98161085,
+      "lng": 7.9629044,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1421178753), ODbL"
+    },
+    {
+      "id": "stegen-3632a3981c",
+      "city": "stegen",
+      "label": "Weilerstraße 1",
+      "street": "Weilerstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stegen",
+      "spotCount": 1,
+      "lat": 47.9817776,
+      "lng": 7.963150500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1101464917), ODbL"
+    },
+    {
+      "id": "stegen-5fd77b5636",
+      "city": "stegen",
+      "label": "Weilerstraße 2",
+      "street": "Weilerstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stegen",
+      "spotCount": 1,
+      "lat": 47.98162095000001,
+      "lng": 7.962988950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1421178754), ODbL"
+    },
+    {
+      "id": "stegen-1b9db69846",
+      "city": "stegen",
+      "label": "Weilerstraße 2",
+      "street": "Weilerstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stegen",
+      "spotCount": 1,
+      "lat": 47.9816286,
+      "lng": 7.9630692000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1421178755), ODbL"
+    },
+    {
+      "id": "stegen-d3af3488fb",
+      "city": "stegen",
+      "label": "Weilerstraße 2",
+      "street": "Weilerstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stegen",
+      "spotCount": 1,
+      "lat": 47.981637750000004,
+      "lng": 7.96315165,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1421178756), ODbL"
+    },
+    {
+      "id": "stegen-209141f286",
+      "city": "stegen",
+      "label": "Weilerstraße 2",
+      "street": "Weilerstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stegen",
+      "spotCount": 1,
+      "lat": 47.981648750000005,
+      "lng": 7.963228300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1421178757), ODbL"
+    }
+  ]
+}

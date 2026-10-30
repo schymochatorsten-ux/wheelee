@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "dahlen",
+    "name": "Dahlen",
+    "center": {
+      "lat": 51.3658969,
+      "lng": 12.9973669
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dahlen-6c80c4f9f9",
+      "city": "dahlen",
+      "label": "Gartenstraße",
+      "street": "Gartenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dahlen",
+      "spotCount": 1,
+      "lat": 51.36363025,
+      "lng": 12.9973669,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/696009045), ODbL"
+    },
+    {
+      "id": "dahlen-6806bdccea",
+      "city": "dahlen",
+      "label": "Wurzener Straße",
+      "street": "Wurzener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dahlen",
+      "spotCount": 1,
+      "lat": 51.3658969,
+      "lng": 12.994666700000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/560059840), ODbL"
+    }
+  ]
+}

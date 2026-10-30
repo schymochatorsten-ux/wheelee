@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "uchte",
+    "name": "Uchte",
+    "center": {
+      "lat": 52.4991726,
+      "lng": 8.903523700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "uchte-8cfef7976d",
+      "city": "uchte",
+      "label": "WEZ",
+      "street": "WEZ",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Uchte",
+      "spotCount": 1,
+      "lat": 52.4991726,
+      "lng": 8.903523700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/388034213), ODbL"
+    }
+  ]
+}

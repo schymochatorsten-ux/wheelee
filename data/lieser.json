@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lieser",
+    "name": "Lieser",
+    "center": {
+      "lat": 49.92100725,
+      "lng": 7.02108915
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lieser-ea6f52de02",
+      "city": "lieser",
+      "label": "Weidenbornstraße 7",
+      "street": "Weidenbornstraße",
+      "houseNumber": "7",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lieser",
+      "spotCount": 1,
+      "lat": 49.92100725,
+      "lng": 7.02108915,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1266018724), ODbL"
+    }
+  ]
+}

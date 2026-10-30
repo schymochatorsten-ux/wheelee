@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "huettisheim",
+    "name": "Hüttisheim",
+    "center": {
+      "lat": 48.27992535,
+      "lng": 9.94296115
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "huettisheim-006cbf56e4",
+      "city": "huettisheim",
+      "label": "Kirchweg",
+      "street": "Kirchweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hüttisheim",
+      "spotCount": 1,
+      "lat": 48.27992535,
+      "lng": 9.94296115,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/186388658), ODbL"
+    }
+  ]
+}

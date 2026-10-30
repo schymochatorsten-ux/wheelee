@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wollbach",
+    "name": "Wollbach",
+    "center": {
+      "lat": 50.3655187,
+      "lng": 10.2250113
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wollbach-eeccf072f6",
+      "city": "wollbach",
+      "label": "Kirchstraße 2",
+      "street": "Kirchstraße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wollbach",
+      "spotCount": 1,
+      "lat": 50.3655187,
+      "lng": 10.2250113,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13510026511), ODbL"
+    }
+  ]
+}

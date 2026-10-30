@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "oberzent",
+    "name": "Oberzent",
+    "center": {
+      "lat": 49.559791600000004,
+      "lng": 8.980109800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberzent-cc2d4ebf2c",
+      "city": "oberzent",
+      "label": "Beerfelder Straße",
+      "street": "Beerfelder Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberzent",
+      "spotCount": 5,
+      "lat": 49.548729900000005,
+      "lng": 8.929973700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1426080070), ODbL"
+    },
+    {
+      "id": "oberzent-8f5fa9ebfb",
+      "city": "oberzent",
+      "label": "Dieselstraße 10",
+      "street": "Dieselstraße",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberzent",
+      "spotCount": 6,
+      "lat": 49.559791600000004,
+      "lng": 8.980109800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1564527076), ODbL"
+    }
+  ]
+}

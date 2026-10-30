@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "weinsheim-rp",
+    "name": "Weinsheim",
+    "center": {
+      "lat": 50.227548600000006,
+      "lng": 6.48123455
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "weinsheim-rp-37a46d9b51",
+      "city": "weinsheim-rp",
+      "label": "Industriestraße",
+      "street": "Industriestraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Weinsheim",
+      "spotCount": 1,
+      "lat": 50.227548600000006,
+      "lng": 6.48123455,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1094981996), ODbL"
+    },
+    {
+      "id": "weinsheim-rp-a1f84db760",
+      "city": "weinsheim-rp",
+      "label": "Industriestraße",
+      "street": "Industriestraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Weinsheim",
+      "spotCount": 1,
+      "lat": 50.2275671,
+      "lng": 6.4812754,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1094981997), ODbL"
+    },
+    {
+      "id": "weinsheim-rp-0ab0141c0e",
+      "city": "weinsheim-rp",
+      "label": "Industriestraße",
+      "street": "Industriestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weinsheim",
+      "spotCount": 2,
+      "lat": 50.22753835,
+      "lng": 6.48121055,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1094981999), ODbL"
+    }
+  ]
+}

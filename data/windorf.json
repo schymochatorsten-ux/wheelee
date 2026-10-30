@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "windorf",
+    "name": "Windorf",
+    "center": {
+      "lat": 48.62337290000001,
+      "lng": 13.222339000000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "windorf-a27dafc08a",
+      "city": "windorf",
+      "label": "Uferstraße",
+      "street": "Uferstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Windorf",
+      "spotCount": 1,
+      "lat": 48.62337290000001,
+      "lng": 13.222339000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/702096775), ODbL"
+    }
+  ]
+}

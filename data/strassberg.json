@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "strassberg",
+    "name": "Straßberg",
+    "center": {
+      "lat": 48.17864285,
+      "lng": 9.08793365
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "strassberg-fa494191a9",
+      "city": "strassberg",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Straßberg",
+      "spotCount": 1,
+      "lat": 48.178519550000004,
+      "lng": 9.08793365,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1387001471), ODbL"
+    },
+    {
+      "id": "strassberg-5f9c8e13d0",
+      "city": "strassberg",
+      "label": "Bahnhofstraße 23",
+      "street": "Bahnhofstraße",
+      "houseNumber": "23",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Straßberg",
+      "spotCount": 1,
+      "lat": 48.17864285,
+      "lng": 9.0879209,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1387001470), ODbL"
+    }
+  ]
+}

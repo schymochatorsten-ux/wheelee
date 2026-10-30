@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "dornum",
+    "name": "Dornum",
+    "center": {
+      "lat": 53.64921030000001,
+      "lng": 7.42492165
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dornum-622170e922",
+      "city": "dornum",
+      "label": "ALDI Nord Dornum",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dornum",
+      "spotCount": 1,
+      "lat": 53.64904215000001,
+      "lng": 7.42492165,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/765879239), ODbL"
+    },
+    {
+      "id": "dornum-0642f33816",
+      "city": "dornum",
+      "label": "Netto Marken-Discount Dornum",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dornum",
+      "spotCount": 1,
+      "lat": 53.64921030000001,
+      "lng": 7.423856300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/321081870), ODbL"
+    },
+    {
+      "id": "dornum-64e8f07e99",
+      "city": "dornum",
+      "label": "P2",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Dornum",
+      "spotCount": 1,
+      "lat": 53.646261900000006,
+      "lng": 7.4268012,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/61421610), ODbL"
+    },
+    {
+      "id": "dornum-0bc1bd78b9",
+      "city": "dornum",
+      "label": "Strandstraße",
+      "street": "Strandstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Dornum",
+      "spotCount": 2,
+      "lat": 53.68561390000001,
+      "lng": 7.3594615,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1568051512), ODbL"
+    },
+    {
+      "id": "dornum-155d62b4a1",
+      "city": "dornum",
+      "label": "Up Börs",
+      "street": "Up Börs",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dornum",
+      "spotCount": 2,
+      "lat": 53.6743845,
+      "lng": 7.4748319500000004,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/289894625), ODbL"
+    }
+  ]
+}

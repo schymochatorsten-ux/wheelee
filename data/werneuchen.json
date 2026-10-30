@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "werneuchen",
+    "name": "Werneuchen",
+    "center": {
+      "lat": 52.630799800000005,
+      "lng": 13.730735300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "werneuchen-0ce395e17f",
+      "city": "werneuchen",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Werneuchen",
+      "spotCount": 1,
+      "lat": 52.637089450000005,
+      "lng": 13.73691805,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1296554136), ODbL"
+    },
+    {
+      "id": "werneuchen-4e2e3024e3",
+      "city": "werneuchen",
+      "label": "Am Schloß",
+      "street": "Am Schloß",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Werneuchen",
+      "spotCount": 1,
+      "lat": 52.630799800000005,
+      "lng": 13.730735300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1086710371), ODbL"
+    },
+    {
+      "id": "werneuchen-32b03f149e",
+      "city": "werneuchen",
+      "label": "Bahnhofstraße 14",
+      "street": "Bahnhofstraße",
+      "houseNumber": "14",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Werneuchen",
+      "spotCount": 1,
+      "lat": 52.6185986,
+      "lng": 13.676018250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1086655004), ODbL"
+    }
+  ]
+}

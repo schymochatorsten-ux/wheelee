@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "bad-grund",
+    "name": "Bad Grund (Harz)",
+    "center": {
+      "lat": 51.817260850000004,
+      "lng": 10.25309325
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-grund-ed8ee385cf",
+      "city": "bad-grund",
+      "label": "An der Tropfsteinhöhle",
+      "street": "An der Tropfsteinhöhle",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Grund (Harz)",
+      "spotCount": 1,
+      "lat": 51.817260850000004,
+      "lng": 10.2530452,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1464472732), ODbL"
+    },
+    {
+      "id": "bad-grund-a51a686c0f",
+      "city": "bad-grund",
+      "label": "An der Tropfsteinhöhle",
+      "street": "An der Tropfsteinhöhle",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Grund (Harz)",
+      "spotCount": 1,
+      "lat": 51.8172501,
+      "lng": 10.25309325,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1464472733), ODbL"
+    },
+    {
+      "id": "bad-grund-0f86ac5903",
+      "city": "bad-grund",
+      "label": "Höhlenerlebniszentrum",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Grund (Harz)",
+      "spotCount": 2,
+      "lat": 51.81732695000001,
+      "lng": 10.253204150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/52712797), ODbL"
+    },
+    {
+      "id": "bad-grund-dcd9ed979c",
+      "city": "bad-grund",
+      "label": "Schurfbergstraße",
+      "street": "Schurfbergstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Grund (Harz)",
+      "spotCount": 2,
+      "lat": 51.81026835,
+      "lng": 10.241267800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/446801992), ODbL"
+    }
+  ]
+}

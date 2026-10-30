@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "lorch-he",
+    "name": "Lorch",
+    "center": {
+      "lat": 50.04712740000001,
+      "lng": 7.80539525
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lorch-he-a85327d257",
+      "city": "lorch-he",
+      "label": "Friedhofsweg",
+      "street": "Friedhofsweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lorch",
+      "spotCount": 1,
+      "lat": 50.11331855,
+      "lng": 7.906205300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/132906630), ODbL"
+    },
+    {
+      "id": "lorch-he-7cc0e6a6eb",
+      "city": "lorch-he",
+      "label": "Kolpingstraße 5",
+      "street": "Kolpingstraße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lorch",
+      "spotCount": 1,
+      "lat": 50.04684315,
+      "lng": 7.8051178,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/201722320), ODbL"
+    },
+    {
+      "id": "lorch-he-435000338a",
+      "city": "lorch-he",
+      "label": "Museumsplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lorch",
+      "spotCount": 1,
+      "lat": 50.044269150000005,
+      "lng": 7.80412975,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/89278382), ODbL"
+    },
+    {
+      "id": "lorch-he-5f429f64e3",
+      "city": "lorch-he",
+      "label": "Schwalbacher Straße",
+      "street": "Schwalbacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lorch",
+      "spotCount": 3,
+      "lat": 50.05305045,
+      "lng": 7.810646800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/89186699), ODbL"
+    },
+    {
+      "id": "lorch-he-42476cadc6",
+      "city": "lorch-he",
+      "label": "Schwalbacher Straße 41a",
+      "street": "Schwalbacher Straße",
+      "houseNumber": "41a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lorch",
+      "spotCount": 1,
+      "lat": 50.04712740000001,
+      "lng": 7.80539525,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/231415150), ODbL"
+    }
+  ]
+}

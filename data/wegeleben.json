@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wegeleben",
+    "name": "Wegeleben",
+    "center": {
+      "lat": 51.884570800000006,
+      "lng": 11.1733732
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wegeleben-2f82c8021c",
+      "city": "wegeleben",
+      "label": "Markt 18",
+      "street": "Markt",
+      "houseNumber": "18",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wegeleben",
+      "spotCount": 1,
+      "lat": 51.884570800000006,
+      "lng": 11.1733732,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/240537961), ODbL"
+    }
+  ]
+}

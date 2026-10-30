@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "schafflund",
+    "name": "Schafflund",
+    "center": {
+      "lat": 54.7621577,
+      "lng": 9.170150000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schafflund-29bc15bb9c",
+      "city": "schafflund",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schafflund",
+      "spotCount": 1,
+      "lat": 54.7621577,
+      "lng": 9.1701552,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1220348348), ODbL"
+    },
+    {
+      "id": "schafflund-df9c519381",
+      "city": "schafflund",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schafflund",
+      "spotCount": 1,
+      "lat": 54.762109300000006,
+      "lng": 9.170150000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1220348349), ODbL"
+    },
+    {
+      "id": "schafflund-a2cfef6488",
+      "city": "schafflund",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schafflund",
+      "spotCount": 1,
+      "lat": 54.7623102,
+      "lng": 9.1695252,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1220348354), ODbL"
+    },
+    {
+      "id": "schafflund-1d0762ed4d",
+      "city": "schafflund",
+      "label": "Hauptstraße 96",
+      "street": "Hauptstraße",
+      "houseNumber": "96",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schafflund",
+      "spotCount": 1,
+      "lat": 54.762353850000004,
+      "lng": 9.169527050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1220348353), ODbL"
+    },
+    {
+      "id": "schafflund-96ca9b81e4",
+      "city": "schafflund",
+      "label": "Mühlendamm",
+      "street": "Mühlendamm",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schafflund",
+      "spotCount": 2,
+      "lat": 54.7588202,
+      "lng": 9.1897314,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1339189593), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bad-saarow",
+    "name": "Bad Saarow",
+    "center": {
+      "lat": 52.2705525,
+      "lng": 14.070980000000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-saarow-ed21ba1bc5",
+      "city": "bad-saarow",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Saarow",
+      "spotCount": 3,
+      "lat": 52.2705525,
+      "lng": 14.070980000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1126506726), ODbL"
+    }
+  ]
+}

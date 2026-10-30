@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "reichenbach-bw",
+    "name": "Reichenbach an der Fils",
+    "center": {
+      "lat": 48.70826875,
+      "lng": 9.463463700000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "reichenbach-bw-121d2ff749",
+      "city": "reichenbach-bw",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Reichenbach an der Fils",
+      "spotCount": 1,
+      "lat": 48.70826875,
+      "lng": 9.463720000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/247289079), ODbL"
+    },
+    {
+      "id": "reichenbach-bw-a27f5203a2",
+      "city": "reichenbach-bw",
+      "label": "Bahnhofstraße 11",
+      "street": "Bahnhofstraße",
+      "houseNumber": "11",
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Reichenbach an der Fils",
+      "spotCount": 1,
+      "lat": 48.708266050000006,
+      "lng": 9.463463700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1408784112), ODbL"
+    },
+    {
+      "id": "reichenbach-bw-ddc046b1ed",
+      "city": "reichenbach-bw",
+      "label": "Bahnhofstraße 3",
+      "street": "Bahnhofstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Reichenbach an der Fils",
+      "spotCount": 1,
+      "lat": 48.7089834,
+      "lng": 9.462848900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/249592607), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "gartz",
+    "name": "Gartz (Oder)",
+    "center": {
+      "lat": 53.211524,
+      "lng": 14.378798800000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gartz-dac58e45ad",
+      "city": "gartz",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gartz (Oder)",
+      "spotCount": 1,
+      "lat": 53.20995550000001,
+      "lng": 14.378798800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/178319083), ODbL"
+    },
+    {
+      "id": "gartz-3e23ddabfd",
+      "city": "gartz",
+      "label": "Kastanienallee",
+      "street": "Kastanienallee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gartz (Oder)",
+      "spotCount": 1,
+      "lat": 53.211524,
+      "lng": 14.3729118,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1554351230), ODbL"
+    }
+  ]
+}

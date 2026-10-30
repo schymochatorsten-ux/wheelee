@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "sankt-martin",
+    "name": "Sankt Martin",
+    "center": {
+      "lat": 49.30306585,
+      "lng": 8.10067965
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sankt-martin-3b3b13342a",
+      "city": "sankt-martin",
+      "label": "Oberst-Barret-Straße",
+      "street": "Oberst-Barret-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sankt Martin",
+      "spotCount": 1,
+      "lat": 49.30306585,
+      "lng": 8.10067965,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/43081913), ODbL"
+    }
+  ]
+}

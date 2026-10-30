@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "tessin",
+    "name": "Tessin",
+    "center": {
+      "lat": 54.03044095,
+      "lng": 12.443221600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "tessin-dfe0600ade",
+      "city": "tessin",
+      "label": "Am Recknitzpark 29",
+      "street": "Am Recknitzpark",
+      "houseNumber": "29",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Tessin",
+      "spotCount": 1,
+      "lat": 54.03044095,
+      "lng": 12.443221600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1254296750), ODbL"
+    }
+  ]
+}

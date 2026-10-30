@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "hardheim",
+    "name": "Hardheim",
+    "center": {
+      "lat": 49.610502800000006,
+      "lng": 9.473948100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hardheim-658f57a7c2",
+      "city": "hardheim",
+      "label": "Bürgermeister-Henn-Straße",
+      "street": "Bürgermeister-Henn-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Fr 07:00-19:00",
+      "district": "Hardheim",
+      "spotCount": 1,
+      "lat": 49.610502800000006,
+      "lng": 9.472517250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/198899776), ODbL"
+    },
+    {
+      "id": "hardheim-07c87a53b2",
+      "city": "hardheim",
+      "label": "Bürgermeister-Henn-Straße",
+      "street": "Bürgermeister-Henn-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hardheim",
+      "spotCount": 1,
+      "lat": 49.61097225,
+      "lng": 9.475391,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/777498043), ODbL"
+    },
+    {
+      "id": "hardheim-7c2eb01f59",
+      "city": "hardheim",
+      "label": "Burggasse 2",
+      "street": "Burggasse",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hardheim",
+      "spotCount": 1,
+      "lat": 49.60878905,
+      "lng": 9.47365405,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/777498019), ODbL"
+    },
+    {
+      "id": "hardheim-aaca4b0490",
+      "city": "hardheim",
+      "label": "Schloßplatz",
+      "street": "Schloßplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hardheim",
+      "spotCount": 1,
+      "lat": 49.6090273,
+      "lng": 9.473948100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/777498021), ODbL"
+    }
+  ]
+}

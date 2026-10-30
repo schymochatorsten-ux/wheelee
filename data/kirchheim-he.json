@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "kirchheim-he",
+    "name": "Kirchheim",
+    "center": {
+      "lat": 50.831362,
+      "lng": 9.57843525
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kirchheim-he-7e13482408",
+      "city": "kirchheim-he",
+      "label": "Schwimmbadstraße 12",
+      "street": "Schwimmbadstraße",
+      "houseNumber": "12",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kirchheim",
+      "spotCount": 1,
+      "lat": 50.83133840000001,
+      "lng": 9.57843525,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1417233735), ODbL"
+    },
+    {
+      "id": "kirchheim-he-ce95d86e68",
+      "city": "kirchheim-he",
+      "label": "Schwimmbadstraße 12",
+      "street": "Schwimmbadstraße",
+      "houseNumber": "12",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kirchheim",
+      "spotCount": 1,
+      "lat": 50.831362,
+      "lng": 9.57839925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1417233736), ODbL"
+    }
+  ]
+}

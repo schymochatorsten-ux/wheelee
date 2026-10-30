@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "sigmarszell",
+    "name": "Sigmarszell",
+    "center": {
+      "lat": 47.58901135000001,
+      "lng": 9.746498200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sigmarszell-2c17a02b61",
+      "city": "sigmarszell",
+      "label": "In den Osterwiesen",
+      "street": "In den Osterwiesen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sigmarszell",
+      "spotCount": 1,
+      "lat": 47.58901135000001,
+      "lng": 9.746498200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/158375334), ODbL"
+    }
+  ]
+}

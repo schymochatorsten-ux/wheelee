@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "gruenenbach",
+    "name": "Grünenbach",
+    "center": {
+      "lat": 47.625893000000005,
+      "lng": 9.98263505
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gruenenbach-3d8bd89623",
+      "city": "gruenenbach",
+      "label": "In der Schneit",
+      "street": "In der Schneit",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grünenbach",
+      "spotCount": 4,
+      "lat": 47.625893000000005,
+      "lng": 9.98263505,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1206422123), ODbL"
+    }
+  ]
+}

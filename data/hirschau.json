@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "hirschau",
+    "name": "Hirschau",
+    "center": {
+      "lat": 49.54459465,
+      "lng": 11.944519500000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hirschau-7f5dfc3d92",
+      "city": "hirschau",
+      "label": "Bischof-Bösl-Platz",
+      "street": "Bischof-Bösl-Platz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Hirschau",
+      "spotCount": 1,
+      "lat": 49.544814650000006,
+      "lng": 11.9439498,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/388865428), ODbL"
+    },
+    {
+      "id": "hirschau-e62e66848e",
+      "city": "hirschau",
+      "label": "Bischof-Bösl-Platz",
+      "street": "Bischof-Bösl-Platz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Hirschau",
+      "spotCount": 1,
+      "lat": 49.544470200000006,
+      "lng": 11.944080800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/388865429), ODbL"
+    },
+    {
+      "id": "hirschau-0f3818affa",
+      "city": "hirschau",
+      "label": "Hauptstraße 14",
+      "street": "Hauptstraße",
+      "houseNumber": "14",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Hirschau",
+      "spotCount": 1,
+      "lat": 49.54457705,
+      "lng": 11.94876505,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/387920729), ODbL"
+    },
+    {
+      "id": "hirschau-59374b54f9",
+      "city": "hirschau",
+      "label": "Hauptstraße 80",
+      "street": "Hauptstraße",
+      "houseNumber": "80",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Hirschau",
+      "spotCount": 1,
+      "lat": 49.5448236,
+      "lng": 11.944519500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/144605527), ODbL"
+    },
+    {
+      "id": "hirschau-a816d3d07c",
+      "city": "hirschau",
+      "label": "Rathausplatz 1",
+      "street": "Rathausplatz",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Hirschau",
+      "spotCount": 1,
+      "lat": 49.54459465,
+      "lng": 11.945487550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/388553295), ODbL"
+    }
+  ]
+}

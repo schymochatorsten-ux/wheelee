@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hechthausen",
+    "name": "Hechthausen",
+    "center": {
+      "lat": 53.640666350000004,
+      "lng": 9.242420300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hechthausen-b9f31e2b72",
+      "city": "hechthausen",
+      "label": "Wischer Straße",
+      "street": "Wischer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hechthausen",
+      "spotCount": 3,
+      "lat": 53.640666350000004,
+      "lng": 9.242420300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1258704694), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "klettgau",
+    "name": "Klettgau",
+    "center": {
+      "lat": 47.65997705,
+      "lng": 8.4301368
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "klettgau-2e6f8aba89",
+      "city": "klettgau",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Klettgau",
+      "spotCount": 2,
+      "lat": 47.65959190000001,
+      "lng": 8.4296965,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/192159036), ODbL"
+    },
+    {
+      "id": "klettgau-7a88b67b6f",
+      "city": "klettgau",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Klettgau",
+      "spotCount": 1,
+      "lat": 47.65997705,
+      "lng": 8.430163700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1392131566), ODbL"
+    },
+    {
+      "id": "klettgau-ffb7e93b3c",
+      "city": "klettgau",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Klettgau",
+      "spotCount": 1,
+      "lat": 47.660010650000004,
+      "lng": 8.4301368,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1392131567), ODbL"
+    }
+  ]
+}

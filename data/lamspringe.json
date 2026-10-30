@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lamspringe",
+    "name": "Lamspringe",
+    "center": {
+      "lat": 51.964040000000004,
+      "lng": 10.014255200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lamspringe-7b6bc278d5",
+      "city": "lamspringe",
+      "label": "Hauptstraße 84",
+      "street": "Hauptstraße",
+      "houseNumber": "84",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lamspringe",
+      "spotCount": 1,
+      "lat": 51.964040000000004,
+      "lng": 10.014255200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1567994792), ODbL"
+    }
+  ]
+}

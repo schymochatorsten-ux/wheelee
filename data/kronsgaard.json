@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kronsgaard",
+    "name": "Kronsgaard",
+    "center": {
+      "lat": 54.738960950000006,
+      "lng": 9.97811605
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kronsgaard-26f00c5065",
+      "city": "kronsgaard",
+      "label": "Seeblick",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Kronsgaard",
+      "spotCount": 3,
+      "lat": 54.738960950000006,
+      "lng": 9.97811605,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/233354122), ODbL"
+    }
+  ]
+}

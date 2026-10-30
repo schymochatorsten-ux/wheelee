@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "rehlingen",
+    "name": "Rehlingen",
+    "center": {
+      "lat": 53.09048125,
+      "lng": 10.2064813
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rehlingen-729c408422",
+      "city": "rehlingen",
+      "label": "Bockum",
+      "street": "Bockum",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rehlingen",
+      "spotCount": 2,
+      "lat": 53.09048125,
+      "lng": 10.2064813,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1418050009), ODbL"
+    }
+  ]
+}

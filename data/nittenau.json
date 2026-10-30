@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "nittenau",
+    "name": "Nittenau",
+    "center": {
+      "lat": 49.19774840000001,
+      "lng": 12.272055400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nittenau-6db1d0cb2e",
+      "city": "nittenau",
+      "label": "Bodensteiner Straße 15",
+      "street": "Bodensteiner Straße",
+      "houseNumber": "15",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nittenau",
+      "spotCount": 1,
+      "lat": 49.195802400000005,
+      "lng": 12.2759733,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1272604452), ODbL"
+    },
+    {
+      "id": "nittenau-786ab519a8",
+      "city": "nittenau",
+      "label": "Brucker Straße 22",
+      "street": "Brucker Straße",
+      "houseNumber": "22",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nittenau",
+      "spotCount": 1,
+      "lat": 49.20340515000001,
+      "lng": 12.2818343,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/159334842), ODbL"
+    },
+    {
+      "id": "nittenau-f10d251efe",
+      "city": "nittenau",
+      "label": "Kirchplatz",
+      "street": "Kirchplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nittenau",
+      "spotCount": 2,
+      "lat": 49.19774840000001,
+      "lng": 12.272055400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1268469464), ODbL"
+    },
+    {
+      "id": "nittenau-43437616c8",
+      "city": "nittenau",
+      "label": "Lärchenweg",
+      "street": "Lärchenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nittenau",
+      "spotCount": 2,
+      "lat": 49.20216845,
+      "lng": 12.272128350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1266930546), ODbL"
+    },
+    {
+      "id": "nittenau-342225c2f4",
+      "city": "nittenau",
+      "label": "Lärchenweg 13",
+      "street": "Lärchenweg",
+      "houseNumber": "13",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nittenau",
+      "spotCount": 2,
+      "lat": 49.20259595,
+      "lng": 12.271362150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1266930543), ODbL"
+    },
+    {
+      "id": "nittenau-d52d0bc8bf",
+      "city": "nittenau",
+      "label": "Reha-Zentrum",
+      "street": "Reha-Zentrum",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nittenau",
+      "spotCount": 3,
+      "lat": 49.1927808,
+      "lng": 12.2661934,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1314941165), ODbL"
+    },
+    {
+      "id": "nittenau-90cc31539a",
+      "city": "nittenau",
+      "label": "Reha-Zentrum",
+      "street": "Reha-Zentrum",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nittenau",
+      "spotCount": 3,
+      "lat": 49.192628600000006,
+      "lng": 12.2672326,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1314941166), ODbL"
+    }
+  ]
+}

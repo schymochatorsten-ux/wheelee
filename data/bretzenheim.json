@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bretzenheim",
+    "name": "Bretzenheim",
+    "center": {
+      "lat": 49.87429605,
+      "lng": 7.8888251
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bretzenheim-6894087e04",
+      "city": "bretzenheim",
+      "label": "Elsa-Brandström-Straße",
+      "street": "Elsa-Brandström-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bretzenheim",
+      "spotCount": 1,
+      "lat": 49.87429605,
+      "lng": 7.8888251,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1430359176), ODbL"
+    },
+    {
+      "id": "bretzenheim-bf6ae97855",
+      "city": "bretzenheim",
+      "label": "Elsa-Brandström-Straße",
+      "street": "Elsa-Brandström-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bretzenheim",
+      "spotCount": 1,
+      "lat": 49.87424825000001,
+      "lng": 7.88876325,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1430359177), ODbL"
+    }
+  ]
+}

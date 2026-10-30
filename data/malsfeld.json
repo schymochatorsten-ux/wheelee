@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "malsfeld",
+    "name": "Malsfeld",
+    "center": {
+      "lat": 51.0827971,
+      "lng": 9.5533725
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "malsfeld-f2133c94c8",
+      "city": "malsfeld",
+      "label": "An der Sporthalle",
+      "street": "An der Sporthalle",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Malsfeld",
+      "spotCount": 2,
+      "lat": 51.0779431,
+      "lng": 9.47637855,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/201464225), ODbL"
+    },
+    {
+      "id": "malsfeld-e63bee2cc2",
+      "city": "malsfeld",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Malsfeld",
+      "spotCount": 1,
+      "lat": 51.0827971,
+      "lng": 9.5533725,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12859483639), ODbL"
+    },
+    {
+      "id": "malsfeld-c2b37976e5",
+      "city": "malsfeld",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Malsfeld",
+      "spotCount": 1,
+      "lat": 51.08310435,
+      "lng": 9.553375500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/398337161), ODbL"
+    }
+  ]
+}

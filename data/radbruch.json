@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "radbruch",
+    "name": "Radbruch",
+    "center": {
+      "lat": 53.316713500000006,
+      "lng": 10.291894200000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "radbruch-93f2a0b68e",
+      "city": "radbruch",
+      "label": "Achtern Hoff 12",
+      "street": "Achtern Hoff",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Radbruch",
+      "spotCount": 1,
+      "lat": 53.310816700000004,
+      "lng": 10.288691750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34849091), ODbL"
+    },
+    {
+      "id": "radbruch-20f9665710",
+      "city": "radbruch",
+      "label": "P&R Radbruch",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Radbruch",
+      "spotCount": 2,
+      "lat": 53.316713500000006,
+      "lng": 10.291894200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/456393639), ODbL"
+    }
+  ]
+}

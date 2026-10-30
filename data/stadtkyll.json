@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "stadtkyll",
+    "name": "Stadtkyll",
+    "center": {
+      "lat": 50.352807600000006,
+      "lng": 6.5390405000000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "stadtkyll-df368daf0f",
+      "city": "stadtkyll",
+      "label": "Kurallee",
+      "street": "Kurallee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stadtkyll",
+      "spotCount": 4,
+      "lat": 50.352807600000006,
+      "lng": 6.5281076,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1072753288), ODbL"
+    },
+    {
+      "id": "stadtkyll-b81327e329",
+      "city": "stadtkyll",
+      "label": "Wirftstraße",
+      "street": "Wirftstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stadtkyll",
+      "spotCount": 3,
+      "lat": 50.3394623,
+      "lng": 6.5390405000000005,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6183258586), ODbL"
+    }
+  ]
+}

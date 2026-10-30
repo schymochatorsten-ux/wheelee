@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "brechen",
+    "name": "Brechen",
+    "center": {
+      "lat": 50.36671855,
+      "lng": 8.1610591
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "brechen-14aa4edb4e",
+      "city": "brechen",
+      "label": "Am Gerstenstück",
+      "street": "Am Gerstenstück",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Brechen",
+      "spotCount": 1,
+      "lat": 50.36671855,
+      "lng": 8.1610591,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1564739950), ODbL"
+    }
+  ]
+}

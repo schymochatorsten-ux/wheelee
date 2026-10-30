@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "dittweiler",
+    "name": "Dittweiler",
+    "center": {
+      "lat": 49.42646525,
+      "lng": 7.337581650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dittweiler-1c969a617c",
+      "city": "dittweiler",
+      "label": "Schmittweilerstraße",
+      "street": "Schmittweilerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dittweiler",
+      "spotCount": 1,
+      "lat": 49.42646525,
+      "lng": 7.337581650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/977538123), ODbL"
+    }
+  ]
+}

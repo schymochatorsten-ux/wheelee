@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "petershausen",
+    "name": "Petershausen",
+    "center": {
+      "lat": 48.411992000000005,
+      "lng": 11.469017149999999
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "petershausen-b3553230a3",
+      "city": "petershausen",
+      "label": "Bgm.-Rädler-Straße",
+      "street": "Bgm.-Rädler-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Petershausen",
+      "spotCount": 1,
+      "lat": 48.40847855,
+      "lng": 11.4711034,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1414044283), ODbL"
+    },
+    {
+      "id": "petershausen-ae5a2d0982",
+      "city": "petershausen",
+      "label": "P+R",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Petershausen",
+      "spotCount": 8,
+      "lat": 48.411992000000005,
+      "lng": 11.46878045,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/69022587), ODbL"
+    },
+    {
+      "id": "petershausen-dcfc015595",
+      "city": "petershausen",
+      "label": "P+R",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Petershausen",
+      "spotCount": 18,
+      "lat": 48.412323050000005,
+      "lng": 11.468024400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/179163886), ODbL"
+    },
+    {
+      "id": "petershausen-efd7faa39d",
+      "city": "petershausen",
+      "label": "Pertrichplatz",
+      "street": "Pertrichplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Petershausen",
+      "spotCount": 1,
+      "lat": 48.40934225,
+      "lng": 11.469017149999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1563193092), ODbL"
+    }
+  ]
+}

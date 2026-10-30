@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "saalburg-ebersdorf",
+    "name": "Saalburg-Ebersdorf",
+    "center": {
+      "lat": 50.500354300000005,
+      "lng": 11.729090900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "saalburg-ebersdorf-a54cd4471a",
+      "city": "saalburg-ebersdorf",
+      "label": "Markt 58",
+      "street": "Markt",
+      "houseNumber": "58",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Saalburg-Ebersdorf",
+      "spotCount": 1,
+      "lat": 50.4999703,
+      "lng": 11.729090900000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/632492966), ODbL"
+    },
+    {
+      "id": "saalburg-ebersdorf-c0799b8f24",
+      "city": "saalburg-ebersdorf",
+      "label": "Tummelgasse",
+      "street": "Tummelgasse",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Saalburg-Ebersdorf",
+      "spotCount": 1,
+      "lat": 50.500354300000005,
+      "lng": 11.728884950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1471468771), ODbL"
+    }
+  ]
+}

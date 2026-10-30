@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ruemmingen",
+    "name": "Rümmingen",
+    "center": {
+      "lat": 47.6400872,
+      "lng": 7.6457232500000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ruemmingen-fb101fb02a",
+      "city": "ruemmingen",
+      "label": "Am Blauenblick 6",
+      "street": "Am Blauenblick",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rümmingen",
+      "spotCount": 5,
+      "lat": 47.6400872,
+      "lng": 7.6457232500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1514850893), ODbL"
+    }
+  ]
+}

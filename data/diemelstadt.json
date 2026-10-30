@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "diemelstadt",
+    "name": "Diemelstadt",
+    "center": {
+      "lat": 51.49024385,
+      "lng": 9.01832025
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "diemelstadt-380f7489ce",
+      "city": "diemelstadt",
+      "label": "Holpergrund 21",
+      "street": "Holpergrund",
+      "houseNumber": "21",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Diemelstadt",
+      "spotCount": 1,
+      "lat": 51.469993550000005,
+      "lng": 9.01832025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/818880338), ODbL"
+    },
+    {
+      "id": "diemelstadt-75d9f268b8",
+      "city": "diemelstadt",
+      "label": "SVG Autohof Diemelstadt",
+      "street": "SVG Autohof Diemelstadt",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Diemelstadt",
+      "spotCount": 3,
+      "lat": 51.49024385,
+      "lng": 9.008428550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/371465088), ODbL"
+    }
+  ]
+}

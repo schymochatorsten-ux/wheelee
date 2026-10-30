@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "sankt-englmar",
+    "name": "Sankt Englmar",
+    "center": {
+      "lat": 49.009645250000005,
+      "lng": 12.797791700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sankt-englmar-df189fead9",
+      "city": "sankt-englmar",
+      "label": "Behindertenparkplatz Sankt Englmar",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sankt Englmar",
+      "spotCount": 4,
+      "lat": 49.009645250000005,
+      "lng": 12.797791700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1180962918), ODbL"
+    }
+  ]
+}

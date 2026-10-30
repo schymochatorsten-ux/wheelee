@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "eydelstedt",
+    "name": "Eydelstedt",
+    "center": {
+      "lat": 52.7070707,
+      "lng": 8.509118
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eydelstedt-a58962bde7",
+      "city": "eydelstedt",
+      "label": "An der Bahn",
+      "street": "An der Bahn",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eydelstedt",
+      "spotCount": 2,
+      "lat": 52.7070707,
+      "lng": 8.509118,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/157549278), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "seeland",
+    "name": "Seeland",
+    "center": {
+      "lat": 51.827782400000004,
+      "lng": 11.291863900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "seeland-51c54e02f5",
+      "city": "seeland",
+      "label": "Am Schwabeplan 10",
+      "street": "Am Schwabeplan",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Seeland",
+      "spotCount": 1,
+      "lat": 51.821477,
+      "lng": 11.2788702,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/169633657), ODbL"
+    },
+    {
+      "id": "seeland-6e76d9acb0",
+      "city": "seeland",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Seeland",
+      "spotCount": 1,
+      "lat": 51.827782400000004,
+      "lng": 11.291863900000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13313833557), ODbL"
+    }
+  ]
+}

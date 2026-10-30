@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "heidgraben",
+    "name": "Heidgraben",
+    "center": {
+      "lat": 53.70657025,
+      "lng": 9.6843219
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "heidgraben-a0960ec3fc",
+      "city": "heidgraben",
+      "label": "Bürgermeister-Tesch-Straße 1-3",
+      "street": "Bürgermeister-Tesch-Straße",
+      "houseNumber": "1-3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heidgraben",
+      "spotCount": 2,
+      "lat": 53.70657025,
+      "lng": 9.6843219,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/362236586), ODbL"
+    }
+  ]
+}

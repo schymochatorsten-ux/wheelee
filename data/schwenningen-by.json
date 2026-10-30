@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schwenningen-by",
+    "name": "Schwenningen",
+    "center": {
+      "lat": 48.6564281,
+      "lng": 10.643203750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schwenningen-by-6d36d3500c",
+      "city": "schwenningen-by",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwenningen",
+      "spotCount": 1,
+      "lat": 48.6564281,
+      "lng": 10.643203750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/458031413), ODbL"
+    }
+  ]
+}

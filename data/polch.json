@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "polch",
+    "name": "Polch",
+    "center": {
+      "lat": 50.3046399,
+      "lng": 7.322481850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "polch-26cd98ebc8",
+      "city": "polch",
+      "label": "August-Horch-Straße 4",
+      "street": "August-Horch-Straße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Polch",
+      "spotCount": 2,
+      "lat": 50.3046399,
+      "lng": 7.322481850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26395444), ODbL"
+    }
+  ]
+}

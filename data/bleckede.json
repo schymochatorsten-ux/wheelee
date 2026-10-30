@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bleckede",
+    "name": "Bleckede",
+    "center": {
+      "lat": 53.296271450000006,
+      "lng": 10.72674145
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bleckede-1b32771119",
+      "city": "bleckede",
+      "label": "Schloßstraße",
+      "street": "Schloßstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bleckede",
+      "spotCount": 2,
+      "lat": 53.296271450000006,
+      "lng": 10.72674145,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/334681330), ODbL"
+    }
+  ]
+}

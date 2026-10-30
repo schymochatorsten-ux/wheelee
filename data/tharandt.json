@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "tharandt",
+    "name": "Tharandt",
+    "center": {
+      "lat": 50.98342945,
+      "lng": 13.5814622
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "tharandt-1cce6db97b",
+      "city": "tharandt",
+      "label": "Am Markt",
+      "street": "Am Markt",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Tharandt",
+      "spotCount": 2,
+      "lat": 50.98342945,
+      "lng": 13.58136635,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32999262), ODbL"
+    },
+    {
+      "id": "tharandt-ae198aa1f7",
+      "city": "tharandt",
+      "label": "Dresdner Straße",
+      "street": "Dresdner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Tharandt",
+      "spotCount": 4,
+      "lat": 50.9828805,
+      "lng": 13.5896588,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14226457083), ODbL"
+    },
+    {
+      "id": "tharandt-9a48770304",
+      "city": "tharandt",
+      "label": "Grumbacher Straße 1",
+      "street": "Grumbacher Straße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Tharandt",
+      "spotCount": 1,
+      "lat": 51.002567150000004,
+      "lng": 13.531486350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/131295632), ODbL"
+    },
+    {
+      "id": "tharandt-9f81017c09",
+      "city": "tharandt",
+      "label": "Pienner Straße 23",
+      "street": "Pienner Straße",
+      "houseNumber": "23",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Tharandt",
+      "spotCount": 1,
+      "lat": 50.97876240000001,
+      "lng": 13.5814622,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/196262201), ODbL"
+    }
+  ]
+}

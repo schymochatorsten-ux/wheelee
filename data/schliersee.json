@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "schliersee",
+    "name": "Schliersee",
+    "center": {
+      "lat": 47.7351546,
+      "lng": 11.87839345
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schliersee-c6c1f3cd51",
+      "city": "schliersee",
+      "label": "Aurachstraße 5",
+      "street": "Aurachstraße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schliersee",
+      "spotCount": 3,
+      "lat": 47.6918429,
+      "lng": 11.888671900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/988933022), ODbL"
+    },
+    {
+      "id": "schliersee-4b6a278d4e",
+      "city": "schliersee",
+      "label": "Bahnhofstraße 8",
+      "street": "Bahnhofstraße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schliersee",
+      "spotCount": 2,
+      "lat": 47.7355059,
+      "lng": 11.8613643,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2762015002), ODbL"
+    },
+    {
+      "id": "schliersee-62fabfdf84",
+      "city": "schliersee",
+      "label": "Grünseestraße",
+      "street": "Grünseestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schliersee",
+      "spotCount": 1,
+      "lat": 47.7015347,
+      "lng": 11.87839345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1557536949), ODbL"
+    },
+    {
+      "id": "schliersee-e61996bbc4",
+      "city": "schliersee",
+      "label": "Werner-Bochmann-Straße",
+      "street": "Werner-Bochmann-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schliersee",
+      "spotCount": 2,
+      "lat": 47.7351546,
+      "lng": 11.860340350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/455501579), ODbL"
+    }
+  ]
+}

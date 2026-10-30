@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "gau-algesheim",
+    "name": "Gau-Algesheim",
+    "center": {
+      "lat": 49.954122,
+      "lng": 8.0166178
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gau-algesheim-138f42b6f0",
+      "city": "gau-algesheim",
+      "label": "Wüstenrotstraße",
+      "street": "Wüstenrotstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Gau-Algesheim",
+      "spotCount": 1,
+      "lat": 49.954122,
+      "lng": 8.0166178,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/951950584), ODbL"
+    }
+  ]
+}

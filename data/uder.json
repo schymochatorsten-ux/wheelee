@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "uder",
+    "name": "Uder",
+    "center": {
+      "lat": 51.31276045,
+      "lng": 10.0986958
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "uder-f01023c067",
+      "city": "uder",
+      "label": "Am Lengenberg 41",
+      "street": "Am Lengenberg",
+      "houseNumber": "41",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Uder",
+      "spotCount": 1,
+      "lat": 51.31276045,
+      "lng": 10.0986958,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1082910038), ODbL"
+    }
+  ]
+}

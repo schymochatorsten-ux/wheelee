@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "osthofen",
+    "name": "Osthofen",
+    "center": {
+      "lat": 49.70106315,
+      "lng": 8.32548695
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "osthofen-41f9c9616b",
+      "city": "osthofen",
+      "label": "Behindertenparkplatz Osthofen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Osthofen",
+      "spotCount": 2,
+      "lat": 49.70106315,
+      "lng": 8.316385799999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1200483191), ODbL"
+    },
+    {
+      "id": "osthofen-218ade1c29",
+      "city": "osthofen",
+      "label": "Wonnegaustraße",
+      "street": "Wonnegaustraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Osthofen",
+      "spotCount": 1,
+      "lat": 49.700495000000004,
+      "lng": 8.333818050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/23639984), ODbL"
+    },
+    {
+      "id": "osthofen-76e2869007",
+      "city": "osthofen",
+      "label": "Ziegelhüttenweg",
+      "street": "Ziegelhüttenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Osthofen",
+      "spotCount": 1,
+      "lat": 49.70829065,
+      "lng": 8.32548695,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/47293579), ODbL"
+    }
+  ]
+}

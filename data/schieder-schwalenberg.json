@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "schieder-schwalenberg",
+    "name": "Schieder-Schwalenberg",
+    "center": {
+      "lat": 51.922141100000005,
+      "lng": 9.1540689
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schieder-schwalenberg-e1ea62b9af",
+      "city": "schieder-schwalenberg",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schieder-Schwalenberg",
+      "spotCount": 2,
+      "lat": 51.922141100000005,
+      "lng": 9.15174685,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/322064520), ODbL"
+    },
+    {
+      "id": "schieder-schwalenberg-cbd86df9f3",
+      "city": "schieder-schwalenberg",
+      "label": "Burgweg",
+      "street": "Burgweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schieder-Schwalenberg",
+      "spotCount": 1,
+      "lat": 51.913383100000004,
+      "lng": 9.1540689,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/310852573), ODbL"
+    }
+  ]
+}

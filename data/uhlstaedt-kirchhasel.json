@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "uhlstaedt-kirchhasel",
+    "name": "Uhlstädt-Kirchhasel",
+    "center": {
+      "lat": 50.775691050000006,
+      "lng": 11.3573624
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "uhlstaedt-kirchhasel-bff6d0fd75",
+      "city": "uhlstaedt-kirchhasel",
+      "label": "Neusitzer Straße",
+      "street": "Neusitzer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Uhlstädt-Kirchhasel",
+      "spotCount": 1,
+      "lat": 50.775691050000006,
+      "lng": 11.3573624,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1318343544), ODbL"
+    }
+  ]
+}

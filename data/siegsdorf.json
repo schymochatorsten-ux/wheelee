@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "siegsdorf",
+    "name": "Siegsdorf",
+    "center": {
+      "lat": 47.822225,
+      "lng": 12.6458977
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "siegsdorf-48805628c6",
+      "city": "siegsdorf",
+      "label": "Auenstraße 2",
+      "street": "Auenstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Siegsdorf",
+      "spotCount": 2,
+      "lat": 47.822225,
+      "lng": 12.642974800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3815773985), ODbL"
+    },
+    {
+      "id": "siegsdorf-fe16eb15f7",
+      "city": "siegsdorf",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Siegsdorf",
+      "spotCount": 3,
+      "lat": 47.82209675,
+      "lng": 12.645237600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/997566904), ODbL"
+    },
+    {
+      "id": "siegsdorf-2b33c3ffa8",
+      "city": "siegsdorf",
+      "label": "Sonnenstraße",
+      "street": "Sonnenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Siegsdorf",
+      "spotCount": 1,
+      "lat": 47.8229546,
+      "lng": 12.6458977,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3800569368), ODbL"
+    },
+    {
+      "id": "siegsdorf-5f07ddc07e",
+      "city": "siegsdorf",
+      "label": "Wanderparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Siegsdorf",
+      "spotCount": 5,
+      "lat": 47.8078883,
+      "lng": 12.66016255,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1529639763), ODbL"
+    }
+  ]
+}

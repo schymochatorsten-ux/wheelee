@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "schelklingen",
+    "name": "Schelklingen",
+    "center": {
+      "lat": 48.37268515000001,
+      "lng": 9.7339768
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schelklingen-d5dcd0b021",
+      "city": "schelklingen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schelklingen",
+      "spotCount": 2,
+      "lat": 48.3720515,
+      "lng": 9.73519315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1382991777), ODbL"
+    },
+    {
+      "id": "schelklingen-4ed5a35d36",
+      "city": "schelklingen",
+      "label": "P1 Biosphäreninformationszentrum",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schelklingen",
+      "spotCount": 1,
+      "lat": 48.37268515000001,
+      "lng": 9.6381567,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1314141624), ODbL"
+    },
+    {
+      "id": "schelklingen-54c035b7f4",
+      "city": "schelklingen",
+      "label": "Schulstraße",
+      "street": "Schulstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schelklingen",
+      "spotCount": 1,
+      "lat": 48.37557050000001,
+      "lng": 9.7339768,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/71403880), ODbL"
+    }
+  ]
+}

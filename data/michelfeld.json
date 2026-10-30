@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "michelfeld",
+    "name": "Michelfeld",
+    "center": {
+      "lat": 49.1014471,
+      "lng": 9.694536800000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "michelfeld-80fe8ac867",
+      "city": "michelfeld",
+      "label": "Daimlerstraße",
+      "street": "Daimlerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Michelfeld",
+      "spotCount": 2,
+      "lat": 49.1014471,
+      "lng": 9.694536800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/274401469), ODbL"
+    }
+  ]
+}

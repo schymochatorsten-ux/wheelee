@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "juenkerath",
+    "name": "Jünkerath",
+    "center": {
+      "lat": 50.34541685000001,
+      "lng": 6.581360350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "juenkerath-6a64142b74",
+      "city": "juenkerath",
+      "label": "Auf dem Wehrt",
+      "street": "Auf dem Wehrt",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Jünkerath",
+      "spotCount": 1,
+      "lat": 50.3495514,
+      "lng": 6.5669565,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1075209885), ODbL"
+    },
+    {
+      "id": "juenkerath-55726e3ac7",
+      "city": "juenkerath",
+      "label": "Gewerkschaftsstraße",
+      "street": "Gewerkschaftsstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Jünkerath",
+      "spotCount": 3,
+      "lat": 50.34503585,
+      "lng": 6.5814657500000004,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1024646345), ODbL"
+    },
+    {
+      "id": "juenkerath-6d22665255",
+      "city": "juenkerath",
+      "label": "Jünkerath, Bahnhof",
+      "street": "Jünkerath, Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jünkerath",
+      "spotCount": 2,
+      "lat": 50.34414935,
+      "lng": 6.581360350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1024646337), ODbL"
+    },
+    {
+      "id": "juenkerath-327254f92f",
+      "city": "juenkerath",
+      "label": "Kölner Straße 22",
+      "street": "Kölner Straße",
+      "houseNumber": "22",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jünkerath",
+      "spotCount": 3,
+      "lat": 50.34541685000001,
+      "lng": 6.576307100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1075047908), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "maselheim",
+    "name": "Maselheim",
+    "center": {
+      "lat": 48.1365288,
+      "lng": 9.881531550000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "maselheim-0ac5a728dd",
+      "city": "maselheim",
+      "label": "Kronenstraße",
+      "street": "Kronenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Maselheim",
+      "spotCount": 2,
+      "lat": 48.1365288,
+      "lng": 9.881531550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/127342300), ODbL"
+    }
+  ]
+}

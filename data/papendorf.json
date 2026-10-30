@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "papendorf",
+    "name": "Papendorf",
+    "center": {
+      "lat": 54.04584915,
+      "lng": 12.136655400000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "papendorf-3f17c577f5",
+      "city": "papendorf",
+      "label": "Alte Ziegelei",
+      "street": "Alte Ziegelei",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Papendorf",
+      "spotCount": 2,
+      "lat": 54.03395225,
+      "lng": 12.136655400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1263760306), ODbL"
+    },
+    {
+      "id": "papendorf-14eb410454",
+      "city": "papendorf",
+      "label": "Sandkrug 4b",
+      "street": "Sandkrug",
+      "houseNumber": "4b",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Papendorf",
+      "spotCount": 2,
+      "lat": 54.04584915,
+      "lng": 12.115224900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/815688410), ODbL"
+    }
+  ]
+}

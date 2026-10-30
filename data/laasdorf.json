@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "laasdorf",
+    "name": "Laasdorf",
+    "center": {
+      "lat": 50.87800045,
+      "lng": 11.665868750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "laasdorf-a646ac8661",
+      "city": "laasdorf",
+      "label": "Rodablick",
+      "street": "Rodablick",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Laasdorf",
+      "spotCount": 1,
+      "lat": 50.87800045,
+      "lng": 11.665868750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/751898219), ODbL"
+    }
+  ]
+}

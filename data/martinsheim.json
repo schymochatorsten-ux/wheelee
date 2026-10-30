@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "martinsheim",
+    "name": "Martinsheim",
+    "center": {
+      "lat": 49.62585935,
+      "lng": 10.1768909
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "martinsheim-5c0319bd02",
+      "city": "martinsheim",
+      "label": "PKW",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Martinsheim",
+      "spotCount": 2,
+      "lat": 49.62585935,
+      "lng": 10.1768909,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/290060854), ODbL"
+    }
+  ]
+}

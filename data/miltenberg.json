@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "miltenberg",
+    "name": "Miltenberg",
+    "center": {
+      "lat": 49.7051487,
+      "lng": 9.25198575
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "miltenberg-631cfa4615",
+      "city": "miltenberg",
+      "label": "Bischoffstraße 60",
+      "street": "Bischoffstraße",
+      "houseNumber": "60",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Miltenberg",
+      "spotCount": 1,
+      "lat": 49.7051487,
+      "lng": 9.246728749999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1558365360), ODbL"
+    },
+    {
+      "id": "miltenberg-4d7539c901",
+      "city": "miltenberg",
+      "label": "Bischoffstraße 60",
+      "street": "Bischoffstraße",
+      "houseNumber": "60",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Miltenberg",
+      "spotCount": 1,
+      "lat": 49.7051802,
+      "lng": 9.24671975,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1558365361), ODbL"
+    },
+    {
+      "id": "miltenberg-02e0c47c40",
+      "city": "miltenberg",
+      "label": "Brückenrampe",
+      "street": "Brückenrampe",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Miltenberg",
+      "spotCount": 2,
+      "lat": 49.7017249,
+      "lng": 9.2555168,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/7112859119), ODbL"
+    },
+    {
+      "id": "miltenberg-1787e6c198",
+      "city": "miltenberg",
+      "label": "Brückenstraße",
+      "street": "Brückenstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Miltenberg",
+      "spotCount": 1,
+      "lat": 49.705668800000005,
+      "lng": 9.24730205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1558365419), ODbL"
+    },
+    {
+      "id": "miltenberg-b2c3e1976e",
+      "city": "miltenberg",
+      "label": "Landratsamt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Miltenberg",
+      "spotCount": 1,
+      "lat": 49.7043468,
+      "lng": 9.25198575,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/595882217), ODbL"
+    },
+    {
+      "id": "miltenberg-2647997ebb",
+      "city": "miltenberg",
+      "label": "Steingaesserstraße 4",
+      "street": "Steingaesserstraße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Miltenberg",
+      "spotCount": 2,
+      "lat": 49.7038666,
+      "lng": 9.25309115,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/604040776), ODbL"
+    }
+  ]
+}

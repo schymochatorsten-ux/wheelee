@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "kressbronn",
+    "name": "Kressbronn am Bodensee",
+    "center": {
+      "lat": 47.59163825,
+      "lng": 9.598960850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kressbronn-6cd954380f",
+      "city": "kressbronn",
+      "label": "Landesteg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Kressbronn am Bodensee",
+      "spotCount": 1,
+      "lat": 47.5873149,
+      "lng": 9.600536850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/839411570), ODbL"
+    },
+    {
+      "id": "kressbronn-de61c863da",
+      "city": "kressbronn",
+      "label": "Landesteg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Kressbronn am Bodensee",
+      "spotCount": 1,
+      "lat": 47.58735235,
+      "lng": 9.60049695,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/839411571), ODbL"
+    },
+    {
+      "id": "kressbronn-dcabba690c",
+      "city": "kressbronn",
+      "label": "Maicher Straße",
+      "street": "Maicher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kressbronn am Bodensee",
+      "spotCount": 1,
+      "lat": 47.59163825,
+      "lng": 9.595479050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1421745933), ODbL"
+    },
+    {
+      "id": "kressbronn-c9f7d326cf",
+      "city": "kressbronn",
+      "label": "Nonnenbacher Weg 33",
+      "street": "Nonnenbacher Weg",
+      "houseNumber": "33",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Kressbronn am Bodensee",
+      "spotCount": 1,
+      "lat": 47.594620400000004,
+      "lng": 9.5989471,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/971890765), ODbL"
+    },
+    {
+      "id": "kressbronn-3ea42cf39f",
+      "city": "kressbronn",
+      "label": "Nonnenbacher Weg 33",
+      "street": "Nonnenbacher Weg",
+      "houseNumber": "33",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kressbronn am Bodensee",
+      "spotCount": 1,
+      "lat": 47.59461145,
+      "lng": 9.598960850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1420928346), ODbL"
+    }
+  ]
+}

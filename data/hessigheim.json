@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hessigheim",
+    "name": "Hessigheim",
+    "center": {
+      "lat": 48.997970900000006,
+      "lng": 9.1894627
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hessigheim-259ce562dc",
+      "city": "hessigheim",
+      "label": "Behinderten-Parkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hessigheim",
+      "spotCount": 1,
+      "lat": 48.997970900000006,
+      "lng": 9.1894627,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10748227495), ODbL"
+    }
+  ]
+}

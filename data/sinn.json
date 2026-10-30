@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "sinn",
+    "name": "Sinn",
+    "center": {
+      "lat": 50.65356920000001,
+      "lng": 8.3242261
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sinn-b97982e8b7",
+      "city": "sinn",
+      "label": "Am Waldesrand",
+      "street": "Am Waldesrand",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sinn",
+      "spotCount": 1,
+      "lat": 50.635511400000006,
+      "lng": 8.3157732,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1360874686), ODbL"
+    },
+    {
+      "id": "sinn-b8de3be29f",
+      "city": "sinn",
+      "label": "Am Waldesrand",
+      "street": "Am Waldesrand",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sinn",
+      "spotCount": 1,
+      "lat": 50.635417000000004,
+      "lng": 8.315827,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1360874688), ODbL"
+    },
+    {
+      "id": "sinn-e1efedeb8c",
+      "city": "sinn",
+      "label": "Friedensstraße",
+      "street": "Friedensstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sinn",
+      "spotCount": 1,
+      "lat": 50.65356920000001,
+      "lng": 8.33446085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1426718380), ODbL"
+    },
+    {
+      "id": "sinn-b5d59aec26",
+      "city": "sinn",
+      "label": "Herborner Straße",
+      "street": "Herborner Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sinn",
+      "spotCount": 1,
+      "lat": 50.657802600000004,
+      "lng": 8.324596549999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/752963527), ODbL"
+    },
+    {
+      "id": "sinn-386155d175",
+      "city": "sinn",
+      "label": "Herborner Straße",
+      "street": "Herborner Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sinn",
+      "spotCount": 1,
+      "lat": 50.65795235,
+      "lng": 8.32467295,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1569835872), ODbL"
+    },
+    {
+      "id": "sinn-4f110515e7",
+      "city": "sinn",
+      "label": "Kellersweg",
+      "street": "Kellersweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sinn",
+      "spotCount": 14,
+      "lat": 50.6451443,
+      "lng": 8.31233515,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/904817983), ODbL"
+    },
+    {
+      "id": "sinn-5cacd98686",
+      "city": "sinn",
+      "label": "Zur Ruppertsmühle",
+      "street": "Zur Ruppertsmühle",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sinn",
+      "spotCount": 1,
+      "lat": 50.65804305,
+      "lng": 8.3242261,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1572168019), ODbL"
+    }
+  ]
+}

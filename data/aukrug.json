@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "aukrug",
+    "name": "Aukrug",
+    "center": {
+      "lat": 54.08239495,
+      "lng": 9.78719645
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "aukrug-e7532c2724",
+      "city": "aukrug",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aukrug",
+      "spotCount": 1,
+      "lat": 54.08239495,
+      "lng": 9.78719645,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/33044538), ODbL"
+    },
+    {
+      "id": "aukrug-7b60d343be",
+      "city": "aukrug",
+      "label": "Itzehoer Straße",
+      "street": "Itzehoer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Aukrug",
+      "spotCount": 1,
+      "lat": 54.08271275,
+      "lng": 9.781421950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1093600897), ODbL"
+    },
+    {
+      "id": "aukrug-d21f232f9f",
+      "city": "aukrug",
+      "label": "Rüm 27",
+      "street": "Rüm",
+      "houseNumber": "27",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aukrug",
+      "spotCount": 3,
+      "lat": 54.08152925,
+      "lng": 9.80054005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/990278642), ODbL"
+    },
+    {
+      "id": "aukrug-3ac0ebf3a9",
+      "city": "aukrug",
+      "label": "Ziegeleiweg 15",
+      "street": "Ziegeleiweg",
+      "houseNumber": "15",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aukrug",
+      "spotCount": 2,
+      "lat": 54.07975210000001,
+      "lng": 9.7809562,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/919869586), ODbL"
+    }
+  ]
+}

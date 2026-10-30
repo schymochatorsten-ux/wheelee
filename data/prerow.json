@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "prerow",
+    "name": "Prerow",
+    "center": {
+      "lat": 54.4451436,
+      "lng": 12.57799485
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "prerow-663724962d",
+      "city": "prerow",
+      "label": "Bernsteinweg",
+      "street": "Bernsteinweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Prerow",
+      "spotCount": 2,
+      "lat": 54.4486913,
+      "lng": 12.555772300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/7208576062), ODbL"
+    },
+    {
+      "id": "prerow-c67260542d",
+      "city": "prerow",
+      "label": "Buchenstraße",
+      "street": "Buchenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Prerow",
+      "spotCount": 2,
+      "lat": 54.4451436,
+      "lng": 12.54853855,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1458110307), ODbL"
+    },
+    {
+      "id": "prerow-2c759529e4",
+      "city": "prerow",
+      "label": "Krabbenort",
+      "street": "Krabbenort",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Prerow",
+      "spotCount": 5,
+      "lat": 54.44471,
+      "lng": 12.5841911,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/7834731752), ODbL"
+    },
+    {
+      "id": "prerow-46a67b5bae",
+      "city": "prerow",
+      "label": "Strandstraße 24",
+      "street": "Strandstraße",
+      "houseNumber": "24",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Prerow",
+      "spotCount": 1,
+      "lat": 54.4438869,
+      "lng": 12.57799485,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/174954611), ODbL"
+    }
+  ]
+}

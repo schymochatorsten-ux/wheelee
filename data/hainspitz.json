@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hainspitz",
+    "name": "Hainspitz",
+    "center": {
+      "lat": 50.958121750000004,
+      "lng": 11.84642035
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hainspitz-3787a665ef",
+      "city": "hainspitz",
+      "label": "Kuhberg",
+      "street": "Kuhberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hainspitz",
+      "spotCount": 1,
+      "lat": 50.958121750000004,
+      "lng": 11.84642035,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/754261923), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "contwig",
+    "name": "Contwig",
+    "center": {
+      "lat": 49.23939025,
+      "lng": 7.4565902500000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "contwig-42040d3a30",
+      "city": "contwig",
+      "label": "Am Höfchen",
+      "street": "Am Höfchen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Contwig",
+      "spotCount": 2,
+      "lat": 49.23939025,
+      "lng": 7.4565902500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1454160182), ODbL"
+    }
+  ]
+}

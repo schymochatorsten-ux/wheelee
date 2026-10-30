@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "waldsee",
+    "name": "Waldsee",
+    "center": {
+      "lat": 49.3933978,
+      "lng": 8.43742855
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "waldsee-cae594a7a6",
+      "city": "waldsee",
+      "label": "Schifferstadter Straße 2",
+      "street": "Schifferstadter Straße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldsee",
+      "spotCount": 1,
+      "lat": 49.3933978,
+      "lng": 8.43742855,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/479899868), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lottstetten",
+    "name": "Lottstetten",
+    "center": {
+      "lat": 47.62589580000001,
+      "lng": 8.56720595
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lottstetten-ed50f82e3f",
+      "city": "lottstetten",
+      "label": "Bahnhofstraße 7",
+      "street": "Bahnhofstraße",
+      "houseNumber": "7",
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Lottstetten",
+      "spotCount": 1,
+      "lat": 47.62589580000001,
+      "lng": 8.56720595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1256411068), ODbL"
+    }
+  ]
+}

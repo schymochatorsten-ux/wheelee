@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "niederstetten",
+    "name": "Niederstetten",
+    "center": {
+      "lat": 49.403570900000005,
+      "lng": 9.91561655
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "niederstetten-4f90dc6bf1",
+      "city": "niederstetten",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Niederstetten",
+      "spotCount": 2,
+      "lat": 49.403570900000005,
+      "lng": 9.9155357,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/395653584), ODbL"
+    },
+    {
+      "id": "niederstetten-37bca95a49",
+      "city": "niederstetten",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Niederstetten",
+      "spotCount": 1,
+      "lat": 49.403995900000005,
+      "lng": 9.914976900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1293424266), ODbL"
+    },
+    {
+      "id": "niederstetten-95b3f4ac30",
+      "city": "niederstetten",
+      "label": "Bahnhofstraße 50",
+      "street": "Bahnhofstraße",
+      "houseNumber": "50",
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Niederstetten",
+      "spotCount": 2,
+      "lat": 49.40346515,
+      "lng": 9.91561655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1293435149), ODbL"
+    },
+    {
+      "id": "niederstetten-bbca082a7b",
+      "city": "niederstetten",
+      "label": "Niederstetten Bahnhof",
+      "street": "Niederstetten Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Niederstetten",
+      "spotCount": 1,
+      "lat": 49.40397370000001,
+      "lng": 9.914990750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1408774782), ODbL"
+    },
+    {
+      "id": "niederstetten-11245c4d7e",
+      "city": "niederstetten",
+      "label": "Oberstetter Straße",
+      "street": "Oberstetter Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Niederstetten",
+      "spotCount": 2,
+      "lat": 49.402335900000004,
+      "lng": 9.920414100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32729620), ODbL"
+    },
+    {
+      "id": "niederstetten-1efb724053",
+      "city": "niederstetten",
+      "label": "UFZ Niederstetten",
+      "street": "UFZ Niederstetten",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Niederstetten",
+      "spotCount": 1,
+      "lat": 49.397108450000005,
+      "lng": 9.918587500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1393590005), ODbL"
+    }
+  ]
+}

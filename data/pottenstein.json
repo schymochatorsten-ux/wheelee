@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "pottenstein",
+    "name": "Pottenstein",
+    "center": {
+      "lat": 49.785454800000004,
+      "lng": 11.4133806
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pottenstein-285cdfe5d1",
+      "city": "pottenstein",
+      "label": "Am Museum",
+      "street": "Am Museum",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pottenstein",
+      "spotCount": 1,
+      "lat": 49.785454800000004,
+      "lng": 11.3606905,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/7063641071), ODbL"
+    },
+    {
+      "id": "pottenstein-10993d55cc",
+      "city": "pottenstein",
+      "label": "Fronfeste 4",
+      "street": "Fronfeste",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pottenstein",
+      "spotCount": 1,
+      "lat": 49.7718636,
+      "lng": 11.4133806,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/949758667), ODbL"
+    }
+  ]
+}

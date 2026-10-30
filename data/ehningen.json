@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "ehningen",
+    "name": "Ehningen",
+    "center": {
+      "lat": 48.6609088,
+      "lng": 8.942791450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ehningen-279d21b6db",
+      "city": "ehningen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ehningen",
+      "spotCount": 2,
+      "lat": 48.6609088,
+      "lng": 8.9405724,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/160942427), ODbL"
+    },
+    {
+      "id": "ehningen-64d0637e91",
+      "city": "ehningen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Ehningen",
+      "spotCount": 1,
+      "lat": 48.6615369,
+      "lng": 8.9431259,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1385725899), ODbL"
+    },
+    {
+      "id": "ehningen-2ae8a1ce76",
+      "city": "ehningen",
+      "label": "Hildrizhauser Straße",
+      "street": "Hildrizhauser Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ehningen",
+      "spotCount": 1,
+      "lat": 48.653495250000006,
+      "lng": 8.9443913,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/23935846), ODbL"
+    },
+    {
+      "id": "ehningen-237cb5fa9b",
+      "city": "ehningen",
+      "label": "Marktplatz",
+      "street": "Marktplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ehningen",
+      "spotCount": 1,
+      "lat": 48.659038300000006,
+      "lng": 8.9414689,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/23965887), ODbL"
+    },
+    {
+      "id": "ehningen-c95411c040",
+      "city": "ehningen",
+      "label": "P1 - Bahnhof, Bahnhofstraße",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ehningen",
+      "spotCount": 4,
+      "lat": 48.661727600000006,
+      "lng": 8.942791450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/792435613), ODbL"
+    },
+    {
+      "id": "ehningen-ee6836b393",
+      "city": "ehningen",
+      "label": "Schulstraße 3",
+      "street": "Schulstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ehningen",
+      "spotCount": 1,
+      "lat": 48.65884940000001,
+      "lng": 8.94172705,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/23965823), ODbL"
+    },
+    {
+      "id": "ehningen-90588e55b5",
+      "city": "ehningen",
+      "label": "Wilhelmstraße 2",
+      "street": "Wilhelmstraße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ehningen",
+      "spotCount": 1,
+      "lat": 48.6615544,
+      "lng": 8.9431869,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12829773482), ODbL"
+    }
+  ]
+}

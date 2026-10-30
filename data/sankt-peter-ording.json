@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "sankt-peter-ording",
+    "name": "Sankt Peter-Ording",
+    "center": {
+      "lat": 54.31742095,
+      "lng": 8.607588100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sankt-peter-ording-31ed2ebf0a",
+      "city": "sankt-peter-ording",
+      "label": "Bad/Parkhaus",
+      "street": "Bad/Parkhaus",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Sankt Peter-Ording",
+      "spotCount": 1,
+      "lat": 54.31742095,
+      "lng": 8.6077029,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/169782462), ODbL"
+    },
+    {
+      "id": "sankt-peter-ording-369402c14b",
+      "city": "sankt-peter-ording",
+      "label": "Bad/Parkhaus",
+      "street": "Bad/Parkhaus",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Sankt Peter-Ording",
+      "spotCount": 1,
+      "lat": 54.31732395,
+      "lng": 8.608384150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/388398735), ODbL"
+    },
+    {
+      "id": "sankt-peter-ording-ad4ad2ccce",
+      "city": "sankt-peter-ording",
+      "label": "Grudeweg",
+      "street": "Grudeweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Sankt Peter-Ording",
+      "spotCount": 2,
+      "lat": 54.341658800000005,
+      "lng": 8.624919550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/369386161), ODbL"
+    },
+    {
+      "id": "sankt-peter-ording-1708110368",
+      "city": "sankt-peter-ording",
+      "label": "Hotel Haus Windschur",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Sankt Peter-Ording",
+      "spotCount": 1,
+      "lat": 54.32503665,
+      "lng": 8.60633675,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1305077071), ODbL"
+    },
+    {
+      "id": "sankt-peter-ording-ecfc52f614",
+      "city": "sankt-peter-ording",
+      "label": "Maleens Knoll",
+      "street": "Maleens Knoll",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Sankt Peter-Ording",
+      "spotCount": 3,
+      "lat": 54.3152649,
+      "lng": 8.6061408,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3718666025), ODbL"
+    },
+    {
+      "id": "sankt-peter-ording-fbaa1ce53a",
+      "city": "sankt-peter-ording",
+      "label": "Möwensteg",
+      "street": "Möwensteg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Sankt Peter-Ording",
+      "spotCount": 1,
+      "lat": 54.315451350000004,
+      "lng": 8.607588100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/532001573), ODbL"
+    },
+    {
+      "id": "sankt-peter-ording-4818e3e4e0",
+      "city": "sankt-peter-ording",
+      "label": "Strandweg 15",
+      "street": "Strandweg",
+      "houseNumber": "15",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sankt Peter-Ording",
+      "spotCount": 1,
+      "lat": 54.3259648,
+      "lng": 8.6049659,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13628722673), ODbL"
+    }
+  ]
+}

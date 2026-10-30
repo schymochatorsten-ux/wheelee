@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "helmbrechts",
+    "name": "Helmbrechts",
+    "center": {
+      "lat": 50.239231100000005,
+      "lng": 11.7191787
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "helmbrechts-c02a63d5bf",
+      "city": "helmbrechts",
+      "label": "Am Steinhäusergarten 2",
+      "street": "Am Steinhäusergarten",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Helmbrechts",
+      "spotCount": 1,
+      "lat": 50.239467850000004,
+      "lng": 11.71605105,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1124018729), ODbL"
+    },
+    {
+      "id": "helmbrechts-43b5bbdb62",
+      "city": "helmbrechts",
+      "label": "Brauersparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Helmbrechts",
+      "spotCount": 3,
+      "lat": 50.23677595,
+      "lng": 11.715234,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/301132237), ODbL"
+    },
+    {
+      "id": "helmbrechts-45bea40269",
+      "city": "helmbrechts",
+      "label": "Moltkestraße",
+      "street": "Moltkestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Helmbrechts",
+      "spotCount": 2,
+      "lat": 50.234949,
+      "lng": 11.7215865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/135543316), ODbL"
+    },
+    {
+      "id": "helmbrechts-556afd5a3c",
+      "city": "helmbrechts",
+      "label": "Schlachthofstraße",
+      "street": "Schlachthofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Helmbrechts",
+      "spotCount": 2,
+      "lat": 50.239231100000005,
+      "lng": 11.7191787,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/472809482), ODbL"
+    }
+  ]
+}

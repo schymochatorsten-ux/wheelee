@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "alfdorf",
+    "name": "Alfdorf",
+    "center": {
+      "lat": 48.842807050000005,
+      "lng": 9.721224900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "alfdorf-55c811e5e3",
+      "city": "alfdorf",
+      "label": "Strutweg 44",
+      "street": "Strutweg",
+      "houseNumber": "44",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Alfdorf",
+      "spotCount": 1,
+      "lat": 48.838874600000004,
+      "lng": 9.68835645,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/319559217), ODbL"
+    },
+    {
+      "id": "alfdorf-36131a0b40",
+      "city": "alfdorf",
+      "label": "Untere Schloßstraße 39",
+      "street": "Untere Schloßstraße",
+      "houseNumber": "39",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Alfdorf",
+      "spotCount": 1,
+      "lat": 48.842807050000005,
+      "lng": 9.721224900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1360319921), ODbL"
+    }
+  ]
+}

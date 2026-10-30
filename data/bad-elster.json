@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bad-elster",
+    "name": "Bad Elster",
+    "center": {
+      "lat": 50.286099750000005,
+      "lng": 12.238054250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-elster-8343482c50",
+      "city": "bad-elster",
+      "label": "Vogtland-Klinik Behindertenparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Elster",
+      "spotCount": 24,
+      "lat": 50.286099750000005,
+      "lng": 12.238054250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/97368116), ODbL"
+    }
+  ]
+}

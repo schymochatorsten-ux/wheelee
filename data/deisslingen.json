@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "deisslingen",
+    "name": "Deißlingen",
+    "center": {
+      "lat": 48.11787475,
+      "lng": 8.60785795
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "deisslingen-b16577d72d",
+      "city": "deisslingen",
+      "label": "In der Ortsmitte 12",
+      "street": "In der Ortsmitte",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Deißlingen",
+      "spotCount": 3,
+      "lat": 48.11214265,
+      "lng": 8.605231100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1427969580), ODbL"
+    },
+    {
+      "id": "deisslingen-d35207cb69",
+      "city": "deisslingen",
+      "label": "In Fürsten 6",
+      "street": "In Fürsten",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Deißlingen",
+      "spotCount": 2,
+      "lat": 48.11787475,
+      "lng": 8.60785795,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/233404342), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "sulzfeld",
+    "name": "Sulzfeld",
+    "center": {
+      "lat": 49.108249,
+      "lng": 8.85194465
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sulzfeld-6761d0f708",
+      "city": "sulzfeld",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Sulzfeld",
+      "spotCount": 2,
+      "lat": 49.108323350000006,
+      "lng": 8.851414400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/23025336), ODbL"
+    },
+    {
+      "id": "sulzfeld-1dd44c76cd",
+      "city": "sulzfeld",
+      "label": "Bahnhofstraße 2",
+      "street": "Bahnhofstraße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sulzfeld",
+      "spotCount": 2,
+      "lat": 49.108249,
+      "lng": 8.85185225,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1415678714), ODbL"
+    },
+    {
+      "id": "sulzfeld-3b75535b1d",
+      "city": "sulzfeld",
+      "label": "Carl-Benz-Straße 2",
+      "street": "Carl-Benz-Straße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sulzfeld",
+      "spotCount": 1,
+      "lat": 49.09611635,
+      "lng": 8.85194465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1434166749), ODbL"
+    },
+    {
+      "id": "sulzfeld-4156e55e44",
+      "city": "sulzfeld",
+      "label": "Carl-Benz-Straße 2",
+      "street": "Carl-Benz-Straße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sulzfeld",
+      "spotCount": 1,
+      "lat": 49.0960948,
+      "lng": 8.851969500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1434166750), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "uhldingen-muehlhofen",
+    "name": "Uhldingen-Mühlhofen",
+    "center": {
+      "lat": 47.7291487,
+      "lng": 9.247548550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "uhldingen-muehlhofen-ef007427d8",
+      "city": "uhldingen-muehlhofen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Uhldingen-Mühlhofen",
+      "spotCount": 2,
+      "lat": 47.736920500000004,
+      "lng": 9.247548550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/308734137), ODbL"
+    },
+    {
+      "id": "uhldingen-muehlhofen-dfa2d4f66a",
+      "city": "uhldingen-muehlhofen",
+      "label": "Bahnhofstraße 17b",
+      "street": "Bahnhofstraße",
+      "houseNumber": "17b",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Uhldingen-Mühlhofen",
+      "spotCount": 1,
+      "lat": 47.73608105000001,
+      "lng": 9.25144595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1343864112), ODbL"
+    },
+    {
+      "id": "uhldingen-muehlhofen-fbb85f5af1",
+      "city": "uhldingen-muehlhofen",
+      "label": "Fischergasse 1",
+      "street": "Fischergasse",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Uhldingen-Mühlhofen",
+      "spotCount": 1,
+      "lat": 47.72258155,
+      "lng": 9.229809300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1292895210), ODbL"
+    },
+    {
+      "id": "uhldingen-muehlhofen-cd536604da",
+      "city": "uhldingen-muehlhofen",
+      "label": "Gebhardsweiler 1",
+      "street": "Gebhardsweiler",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Uhldingen-Mühlhofen",
+      "spotCount": 1,
+      "lat": 47.7291487,
+      "lng": 9.2565524,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9896948592), ODbL"
+    },
+    {
+      "id": "uhldingen-muehlhofen-9ba0a33dbf",
+      "city": "uhldingen-muehlhofen",
+      "label": "Raststätte Wölfele",
+      "street": "Raststätte Wölfele",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Uhldingen-Mühlhofen",
+      "spotCount": 2,
+      "lat": 47.71925795,
+      "lng": 9.24568365,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1169189687), ODbL"
+    },
+    {
+      "id": "uhldingen-muehlhofen-acc6131a4b",
+      "city": "uhldingen-muehlhofen",
+      "label": "Seefelder Straße 34",
+      "street": "Seefelder Straße",
+      "houseNumber": "34",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Uhldingen-Mühlhofen",
+      "spotCount": 4,
+      "lat": 47.7255265,
+      "lng": 9.22931995,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/725089025), ODbL"
+    }
+  ]
+}

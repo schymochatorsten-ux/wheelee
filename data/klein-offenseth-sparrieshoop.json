@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "klein-offenseth-sparrieshoop",
+    "name": "Klein Offenseth-Sparrieshoop",
+    "center": {
+      "lat": 53.7939002,
+      "lng": 9.691088950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "klein-offenseth-sparrieshoop-ea83bcb931",
+      "city": "klein-offenseth-sparrieshoop",
+      "label": "Rosenstraße",
+      "street": "Rosenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Klein Offenseth-Sparrieshoop",
+      "spotCount": 2,
+      "lat": 53.7939002,
+      "lng": 9.691088950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/570782132), ODbL"
+    }
+  ]
+}

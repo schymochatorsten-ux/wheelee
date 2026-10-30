@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "murr",
+    "name": "Murr",
+    "center": {
+      "lat": 48.9567684,
+      "lng": 9.24470145
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "murr-ee9d855421",
+      "city": "murr",
+      "label": "Robert-Bosch-Straße 1",
+      "street": "Robert-Bosch-Straße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Murr",
+      "spotCount": 1,
+      "lat": 48.9567684,
+      "lng": 9.24470145,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1005064557), ODbL"
+    },
+    {
+      "id": "murr-7d2215888d",
+      "city": "murr",
+      "label": "Robert-Bosch-Straße 2",
+      "street": "Robert-Bosch-Straße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Murr",
+      "spotCount": 1,
+      "lat": 48.95659775,
+      "lng": 9.2438865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1109962890), ODbL"
+    }
+  ]
+}

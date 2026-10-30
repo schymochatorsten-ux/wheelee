@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "friedland",
+    "name": "Friedland",
+    "center": {
+      "lat": 51.4209438,
+      "lng": 9.899228350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "friedland-da7e02eed8",
+      "city": "friedland",
+      "label": "Behindertenparkplatz Friedland",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Friedland",
+      "spotCount": 2,
+      "lat": 51.4209438,
+      "lng": 9.899228350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/321114115), ODbL"
+    }
+  ]
+}

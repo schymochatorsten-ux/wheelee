@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "hainichen",
+    "name": "Hainichen",
+    "center": {
+      "lat": 50.969239550000005,
+      "lng": 13.1287359
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hainichen-f8e18f2bde",
+      "city": "hainichen",
+      "label": "Neumarkt 4",
+      "street": "Neumarkt",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hainichen",
+      "spotCount": 1,
+      "lat": 50.9723454,
+      "lng": 13.125001100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/234543892), ODbL"
+    },
+    {
+      "id": "hainichen-87e16f790c",
+      "city": "hainichen",
+      "label": "Oederaner Straße",
+      "street": "Oederaner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hainichen",
+      "spotCount": 1,
+      "lat": 50.9661406,
+      "lng": 13.13093465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/173950783), ODbL"
+    },
+    {
+      "id": "hainichen-549265514c",
+      "city": "hainichen",
+      "label": "Oederaner Straße",
+      "street": "Oederaner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hainichen",
+      "spotCount": 1,
+      "lat": 50.969239550000005,
+      "lng": 13.1287359,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/313709519), ODbL"
+    }
+  ]
+}

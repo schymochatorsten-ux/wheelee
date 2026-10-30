@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "glattbach",
+    "name": "Glattbach",
+    "center": {
+      "lat": 50.002655950000005,
+      "lng": 9.151094500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "glattbach-2da238ee9c",
+      "city": "glattbach",
+      "label": "Hauptstraße 54",
+      "street": "Hauptstraße",
+      "houseNumber": "54",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Glattbach",
+      "spotCount": 2,
+      "lat": 50.002655950000005,
+      "lng": 9.151094500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1159749735), ODbL"
+    }
+  ]
+}

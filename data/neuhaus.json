@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "neuhaus",
+    "name": "Neuhaus am Rennweg",
+    "center": {
+      "lat": 50.521346,
+      "lng": 11.22335325
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuhaus-c76284db65",
+      "city": "neuhaus",
+      "label": "Piesauer Straße",
+      "street": "Piesauer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuhaus am Rennweg",
+      "spotCount": 1,
+      "lat": 50.521346,
+      "lng": 11.22335325,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/312907658), ODbL"
+    },
+    {
+      "id": "neuhaus-0c2d570cc5",
+      "city": "neuhaus",
+      "label": "Sonneberger Straße 2",
+      "street": "Sonneberger Straße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuhaus am Rennweg",
+      "spotCount": 1,
+      "lat": 50.509405650000005,
+      "lng": 11.138566050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/111972519), ODbL"
+    }
+  ]
+}

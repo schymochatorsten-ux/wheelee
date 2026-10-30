@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wasbuettel",
+    "name": "Wasbüttel",
+    "center": {
+      "lat": 52.41559805,
+      "lng": 10.590991200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wasbuettel-27d329ff34",
+      "city": "wasbuettel",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wasbüttel",
+      "spotCount": 1,
+      "lat": 52.41559805,
+      "lng": 10.590991200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1566861344), ODbL"
+    }
+  ]
+}

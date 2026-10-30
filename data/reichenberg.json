@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "reichenberg",
+    "name": "Reichenberg",
+    "center": {
+      "lat": 49.731119250000006,
+      "lng": 9.9125895
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "reichenberg-43a6f453ec",
+      "city": "reichenberg",
+      "label": "Am Höchberg",
+      "street": "Am Höchberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Reichenberg",
+      "spotCount": 1,
+      "lat": 49.731119250000006,
+      "lng": 9.9125895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/478805218), ODbL"
+    },
+    {
+      "id": "reichenberg-00cc37c36e",
+      "city": "reichenberg",
+      "label": "Am Höchberg 19",
+      "street": "Am Höchberg",
+      "houseNumber": "19",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Reichenberg",
+      "spotCount": 1,
+      "lat": 49.731111750000004,
+      "lng": 9.9124223,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/478805217), ODbL"
+    }
+  ]
+}

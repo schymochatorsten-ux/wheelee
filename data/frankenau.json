@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "frankenau",
+    "name": "Frankenau",
+    "center": {
+      "lat": 51.105998150000005,
+      "lng": 8.9481246
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "frankenau-32c09f0055",
+      "city": "frankenau",
+      "label": "P 10 Nationalpark-Eingang „Euler“",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Frankenau",
+      "spotCount": 1,
+      "lat": 51.105998150000005,
+      "lng": 8.9481246,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29131210), ODbL"
+    },
+    {
+      "id": "frankenau-c595d4438f",
+      "city": "frankenau",
+      "label": "Wildunger Straße",
+      "street": "Wildunger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Frankenau",
+      "spotCount": 4,
+      "lat": 51.0891881,
+      "lng": 8.935551150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1441492930), ODbL"
+    }
+  ]
+}

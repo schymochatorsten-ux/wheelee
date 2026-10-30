@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "puergen",
+    "name": "Pürgen",
+    "center": {
+      "lat": 48.00029595,
+      "lng": 10.906716600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "puergen-00404b9f8f",
+      "city": "puergen",
+      "label": "Sportplatzstraße",
+      "street": "Sportplatzstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pürgen",
+      "spotCount": 3,
+      "lat": 48.00029595,
+      "lng": 10.906716600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/131227240), ODbL"
+    }
+  ]
+}

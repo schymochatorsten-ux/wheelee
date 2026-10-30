@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "geiselhoering",
+    "name": "Geiselhöring",
+    "center": {
+      "lat": 48.82275645,
+      "lng": 12.392674150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "geiselhoering-e8cc7c89c5",
+      "city": "geiselhoering",
+      "label": "Alfred-Heindl-Straße",
+      "street": "Alfred-Heindl-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Geiselhöring",
+      "spotCount": 1,
+      "lat": 48.82275645,
+      "lng": 12.392674150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/322910553), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "bernau-a-chiemsee",
+    "name": "Bernau a.Chiemsee",
+    "center": {
+      "lat": 47.81875635,
+      "lng": 12.38065125
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bernau-a-chiemsee-ff4d0644b2",
+      "city": "bernau-a-chiemsee",
+      "label": "Alte Seestraße 5",
+      "street": "Alte Seestraße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bernau a.Chiemsee",
+      "spotCount": 1,
+      "lat": 47.81893430000001,
+      "lng": 12.3803988,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/56468053), ODbL"
+    },
+    {
+      "id": "bernau-a-chiemsee-9a203a9b48",
+      "city": "bernau-a-chiemsee",
+      "label": "Alte Seestraße 8",
+      "street": "Alte Seestraße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bernau a.Chiemsee",
+      "spotCount": 1,
+      "lat": 47.81875635,
+      "lng": 12.38065125,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/56468059), ODbL"
+    },
+    {
+      "id": "bernau-a-chiemsee-900d9b4e1a",
+      "city": "bernau-a-chiemsee",
+      "label": "Baumannstraße 1",
+      "street": "Baumannstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bernau a.Chiemsee",
+      "spotCount": 1,
+      "lat": 47.81709895,
+      "lng": 12.380347700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/469353476), ODbL"
+    },
+    {
+      "id": "bernau-a-chiemsee-34cdd530ba",
+      "city": "bernau-a-chiemsee",
+      "label": "Medical Park",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bernau a.Chiemsee",
+      "spotCount": 1,
+      "lat": 47.82855395,
+      "lng": 12.381975650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/161209722), ODbL"
+    },
+    {
+      "id": "bernau-a-chiemsee-acbdffbdb8",
+      "city": "bernau-a-chiemsee",
+      "label": "Parkplatz Bahnhof Bernau Ost",
+      "street": "Parkplatz Bahnhof Bernau Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bernau a.Chiemsee",
+      "spotCount": 1,
+      "lat": 47.816104100000004,
+      "lng": 12.38135955,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/56138242), ODbL"
+    }
+  ]
+}

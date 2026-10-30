@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "brinkum",
+    "name": "Brinkum",
+    "center": {
+      "lat": 53.259000500000006,
+      "lng": 7.5780485
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "brinkum-4be34eb9de",
+      "city": "brinkum",
+      "label": "Rastplatz Nortmoor (Filsum) Süd",
+      "street": "Rastplatz Nortmoor (Filsum) Süd",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Brinkum",
+      "spotCount": 1,
+      "lat": 53.259000500000006,
+      "lng": 7.5780485,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14000729475), ODbL"
+    }
+  ]
+}

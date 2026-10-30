@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "daun",
+    "name": "Daun",
+    "center": {
+      "lat": 50.19924745,
+      "lng": 6.8378397
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "daun-a5db5f1236",
+      "city": "daun",
+      "label": "Schwimmbad",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Daun",
+      "spotCount": 4,
+      "lat": 50.178565500000005,
+      "lng": 6.8378397,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/30742790), ODbL"
+    },
+    {
+      "id": "daun-06548e9e8f",
+      "city": "daun",
+      "label": "Trierer Straße",
+      "street": "Trierer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Daun",
+      "spotCount": 2,
+      "lat": 50.19924745,
+      "lng": 6.82475635,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/624480534), ODbL"
+    }
+  ]
+}

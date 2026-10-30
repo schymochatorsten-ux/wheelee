@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "neukirch-lausitz",
+    "name": "Neukirch/Lausitz",
+    "center": {
+      "lat": 51.0947339,
+      "lng": 14.308332100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neukirch-lausitz-6cc5757217",
+      "city": "neukirch-lausitz",
+      "label": "Friedhofsweg",
+      "street": "Friedhofsweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neukirch/Lausitz",
+      "spotCount": 1,
+      "lat": 51.0947339,
+      "lng": 14.308332100000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3001785416), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "allendorf-he",
+    "name": "Allendorf (Lumda)",
+    "center": {
+      "lat": 50.67729425,
+      "lng": 8.824387600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "allendorf-he-3cdcba7a48",
+      "city": "allendorf-he",
+      "label": "Edeka",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Allendorf (Lumda)",
+      "spotCount": 1,
+      "lat": 50.67501675,
+      "lng": 8.811318800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/58116747), ODbL"
+    },
+    {
+      "id": "allendorf-he-9ed9367af0",
+      "city": "allendorf-he",
+      "label": "Friedhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Allendorf (Lumda)",
+      "spotCount": 1,
+      "lat": 50.6798912,
+      "lng": 8.8269388,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1119276502), ODbL"
+    },
+    {
+      "id": "allendorf-he-7846714847",
+      "city": "allendorf-he",
+      "label": "Volksbank",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Allendorf (Lumda)",
+      "spotCount": 1,
+      "lat": 50.67729425,
+      "lng": 8.824387600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/95417085), ODbL"
+    }
+  ]
+}

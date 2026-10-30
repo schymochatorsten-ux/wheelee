@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bodolz",
+    "name": "Bodolz",
+    "center": {
+      "lat": 47.57215055,
+      "lng": 9.66284525
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bodolz-13707b3973",
+      "city": "bodolz",
+      "label": "Rathausstraße 20",
+      "street": "Rathausstraße",
+      "houseNumber": "20",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bodolz",
+      "spotCount": 1,
+      "lat": 47.57215055,
+      "lng": 9.66284525,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/398358691), ODbL"
+    }
+  ]
+}

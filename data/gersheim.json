@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "gersheim",
+    "name": "Gersheim",
+    "center": {
+      "lat": 49.14909565000001,
+      "lng": 7.209791750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gersheim-6cc07073ac",
+      "city": "gersheim",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gersheim",
+      "spotCount": 1,
+      "lat": 49.14909565000001,
+      "lng": 7.209791750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1206963620), ODbL"
+    },
+    {
+      "id": "gersheim-cbf17d7991",
+      "city": "gersheim",
+      "label": "Keltenstraße",
+      "street": "Keltenstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gersheim",
+      "spotCount": 1,
+      "lat": 49.13515875,
+      "lng": 7.1826838,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1475344832), ODbL"
+    }
+  ]
+}

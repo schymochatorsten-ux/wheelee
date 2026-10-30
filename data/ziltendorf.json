@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "ziltendorf",
+    "name": "Ziltendorf",
+    "center": {
+      "lat": 52.239761300000005,
+      "lng": 14.698546
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ziltendorf-2e8239273b",
+      "city": "ziltendorf",
+      "label": "An der B 112",
+      "street": "An der B 112",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ziltendorf",
+      "spotCount": 1,
+      "lat": 52.2090496,
+      "lng": 14.61837375,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/41242760), ODbL"
+    },
+    {
+      "id": "ziltendorf-172d4a0261",
+      "city": "ziltendorf",
+      "label": "Bus",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ziltendorf",
+      "spotCount": 1,
+      "lat": 52.239761300000005,
+      "lng": 14.698856300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/661027485), ODbL"
+    },
+    {
+      "id": "ziltendorf-6684bbbcb6",
+      "city": "ziltendorf",
+      "label": "PKW",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ziltendorf",
+      "spotCount": 1,
+      "lat": 52.239843900000004,
+      "lng": 14.698546,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/317735271), ODbL"
+    }
+  ]
+}

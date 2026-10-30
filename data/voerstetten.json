@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "voerstetten",
+    "name": "Vörstetten",
+    "center": {
+      "lat": 48.064596650000006,
+      "lng": 7.8492310000000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "voerstetten-e53c9b5acc",
+      "city": "voerstetten",
+      "label": "Marchstraße 1",
+      "street": "Marchstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vörstetten",
+      "spotCount": 1,
+      "lat": 48.064596650000006,
+      "lng": 7.8492310000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1462946638), ODbL"
+    }
+  ]
+}

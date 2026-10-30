@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wittighausen",
+    "name": "Wittighausen",
+    "center": {
+      "lat": 49.63417700000001,
+      "lng": 9.8543849
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wittighausen-4216332b46",
+      "city": "wittighausen",
+      "label": "Kirchheimer Straße",
+      "street": "Kirchheimer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wittighausen",
+      "spotCount": 1,
+      "lat": 49.63417700000001,
+      "lng": 9.8543849,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/21106514), ODbL"
+    }
+  ]
+}

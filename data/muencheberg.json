@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "muencheberg",
+    "name": "Müncheberg",
+    "center": {
+      "lat": 52.5314622,
+      "lng": 14.2190515
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "muencheberg-794b301a54",
+      "city": "muencheberg",
+      "label": "Am Gewerbering",
+      "street": "Am Gewerbering",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Müncheberg",
+      "spotCount": 5,
+      "lat": 52.510040700000005,
+      "lng": 14.14559495,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/83196397), ODbL"
+    },
+    {
+      "id": "muencheberg-4fcbe22717",
+      "city": "muencheberg",
+      "label": "Am Gewerbering",
+      "street": "Am Gewerbering",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Müncheberg",
+      "spotCount": 1,
+      "lat": 52.510328050000005,
+      "lng": 14.146137250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/109431333), ODbL"
+    },
+    {
+      "id": "muencheberg-d6813fa0d6",
+      "city": "muencheberg",
+      "label": "Parkweg",
+      "street": "Parkweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Müncheberg",
+      "spotCount": 2,
+      "lat": 52.530892800000004,
+      "lng": 14.2200734,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8741476017), ODbL"
+    },
+    {
+      "id": "muencheberg-d5f6b79677",
+      "city": "muencheberg",
+      "label": "Platz der Jugend",
+      "street": "Platz der Jugend",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Müncheberg",
+      "spotCount": 1,
+      "lat": 52.5321634,
+      "lng": 14.2192933,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8741459536), ODbL"
+    },
+    {
+      "id": "muencheberg-3c63eb5c82",
+      "city": "muencheberg",
+      "label": "Platz der Jugend",
+      "street": "Platz der Jugend",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Müncheberg",
+      "spotCount": 1,
+      "lat": 52.531490000000005,
+      "lng": 14.2180215,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8741467654), ODbL"
+    },
+    {
+      "id": "muencheberg-2e6d1b8219",
+      "city": "muencheberg",
+      "label": "Platz der Jugend 11",
+      "street": "Platz der Jugend",
+      "houseNumber": "11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Müncheberg",
+      "spotCount": 1,
+      "lat": 52.5314622,
+      "lng": 14.2190515,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8741476346), ODbL"
+    }
+  ]
+}

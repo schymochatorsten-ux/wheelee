@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "seeshaupt",
+    "name": "Seeshaupt",
+    "center": {
+      "lat": 47.8228944,
+      "lng": 11.28758475
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "seeshaupt-2db9ade87b",
+      "city": "seeshaupt",
+      "label": "Bahnhofplatz 1",
+      "street": "Bahnhofplatz",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Seeshaupt",
+      "spotCount": 1,
+      "lat": 47.8228944,
+      "lng": 11.28758475,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/714451109), ODbL"
+    }
+  ]
+}

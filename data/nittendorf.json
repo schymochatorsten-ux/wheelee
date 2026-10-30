@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "nittendorf",
+    "name": "Nittendorf",
+    "center": {
+      "lat": 49.03090765,
+      "lng": 11.9766457
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nittendorf-5e61e375fb",
+      "city": "nittendorf",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nittendorf",
+      "spotCount": 1,
+      "lat": 49.03090765,
+      "lng": 11.9766457,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1022431781), ODbL"
+    }
+  ]
+}

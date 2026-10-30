@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "neumagen-dhron",
+    "name": "Neumagen-Dhron",
+    "center": {
+      "lat": 49.85109955,
+      "lng": 6.89430125
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neumagen-dhron-5abb5dedb3",
+      "city": "neumagen-dhron",
+      "label": "Römerstraße 139",
+      "street": "Römerstraße",
+      "houseNumber": "139",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neumagen-Dhron",
+      "spotCount": 1,
+      "lat": 49.85109955,
+      "lng": 6.89430125,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1448444963), ODbL"
+    }
+  ]
+}

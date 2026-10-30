@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "zemmer",
+    "name": "Zemmer",
+    "center": {
+      "lat": 49.8758687,
+      "lng": 6.664912
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zemmer-8df0a18df3",
+      "city": "zemmer",
+      "label": "Bahnhof Daufenbach",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Zemmer",
+      "spotCount": 1,
+      "lat": 49.8758687,
+      "lng": 6.6406039,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/242988622), ODbL"
+    },
+    {
+      "id": "zemmer-cd6e807275",
+      "city": "zemmer",
+      "label": "Glockenstraße 6",
+      "street": "Glockenstraße",
+      "houseNumber": "6",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Zemmer",
+      "spotCount": 1,
+      "lat": 49.867481600000005,
+      "lng": 6.664912,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1230057292), ODbL"
+    }
+  ]
+}

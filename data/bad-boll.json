@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bad-boll",
+    "name": "Bad Boll",
+    "center": {
+      "lat": 48.639549300000006,
+      "lng": 9.610078600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-boll-9bad55e945",
+      "city": "bad-boll",
+      "label": "Am Kurpark",
+      "street": "Am Kurpark",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Boll",
+      "spotCount": 5,
+      "lat": 48.6394518,
+      "lng": 9.598334600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11202457168), ODbL"
+    },
+    {
+      "id": "bad-boll-808e9cebc6",
+      "city": "bad-boll",
+      "label": "Wiesengrund",
+      "street": "Wiesengrund",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Boll",
+      "spotCount": 1,
+      "lat": 48.639549300000006,
+      "lng": 9.610078600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11202457167), ODbL"
+    }
+  ]
+}

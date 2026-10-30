@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "buchenberg",
+    "name": "Buchenberg",
+    "center": {
+      "lat": 47.69659420000001,
+      "lng": 10.2396531
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "buchenberg-f711deb9cd",
+      "city": "buchenberg",
+      "label": "Emma-Hefele-Weg",
+      "street": "Emma-Hefele-Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Buchenberg",
+      "spotCount": 1,
+      "lat": 47.69659420000001,
+      "lng": 10.2396531,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/159916000), ODbL"
+    }
+  ]
+}

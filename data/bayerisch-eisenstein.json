@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bayerisch-eisenstein",
+    "name": "Bayerisch Eisenstein",
+    "center": {
+      "lat": 49.098822850000005,
+      "lng": 13.15993865
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bayerisch-eisenstein-40c876940f",
+      "city": "bayerisch-eisenstein",
+      "label": "Am Grossen Arbersee",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bayerisch Eisenstein",
+      "spotCount": 1,
+      "lat": 49.098822850000005,
+      "lng": 13.15993865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/36999988), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "titz",
+    "name": "Titz",
+    "center": {
+      "lat": 50.959312000000004,
+      "lng": 6.4688748
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "titz-30f1d0606b",
+      "city": "titz",
+      "label": "Kroschstraße 33",
+      "street": "Kroschstraße",
+      "houseNumber": "33",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Titz",
+      "spotCount": 2,
+      "lat": 50.959312000000004,
+      "lng": 6.4688748,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1073934598), ODbL"
+    }
+  ]
+}

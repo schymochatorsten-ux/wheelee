@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "winkelhaid",
+    "name": "Winkelhaid",
+    "center": {
+      "lat": 49.39271995,
+      "lng": 11.30111155
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "winkelhaid-e40d8042fd",
+      "city": "winkelhaid",
+      "label": "Bahnhof Winkelhaid",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Winkelhaid",
+      "spotCount": 1,
+      "lat": 49.392619350000004,
+      "lng": 11.300516100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/71155093), ODbL"
+    },
+    {
+      "id": "winkelhaid-829ce1d38a",
+      "city": "winkelhaid",
+      "label": "Bahnhof Winkelhaid",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Winkelhaid",
+      "spotCount": 1,
+      "lat": 49.39271995,
+      "lng": 11.30111155,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/71155125), ODbL"
+    }
+  ]
+}

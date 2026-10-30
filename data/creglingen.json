@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "creglingen",
+    "name": "Creglingen",
+    "center": {
+      "lat": 49.469283100000006,
+      "lng": 10.031521300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "creglingen-f6a24dc630",
+      "city": "creglingen",
+      "label": "Neue Straße 14",
+      "street": "Neue Straße",
+      "houseNumber": "14",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Creglingen",
+      "spotCount": 1,
+      "lat": 49.469283100000006,
+      "lng": 10.031521300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/369866144), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "tonndorf",
+    "name": "Tonndorf",
+    "center": {
+      "lat": 50.878851600000004,
+      "lng": 11.185832600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "tonndorf-e6dd15858a",
+      "city": "tonndorf",
+      "label": "Avenida-Therme",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Tonndorf",
+      "spotCount": 5,
+      "lat": 50.878851600000004,
+      "lng": 11.185832600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28181015), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "sprendlingen",
+    "name": "Sprendlingen",
+    "center": {
+      "lat": 49.86505725000001,
+      "lng": 7.992198800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sprendlingen-95b334781d",
+      "city": "sprendlingen",
+      "label": "Integrierte Gesamtschule Gerhard Ertl",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Sprendlingen",
+      "spotCount": 2,
+      "lat": 49.865274500000005,
+      "lng": 7.992166000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/824523502), ODbL"
+    },
+    {
+      "id": "sprendlingen-806b84293c",
+      "city": "sprendlingen",
+      "label": "Marktplatz 8",
+      "street": "Marktplatz",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sprendlingen",
+      "spotCount": 1,
+      "lat": 49.8607571,
+      "lng": 7.9861624,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5782119897), ODbL"
+    },
+    {
+      "id": "sprendlingen-ebf0a3c411",
+      "city": "sprendlingen",
+      "label": "Ober-Hilbersheimer Straße",
+      "street": "Ober-Hilbersheimer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sprendlingen",
+      "spotCount": 1,
+      "lat": 49.86503475000001,
+      "lng": 7.9922772,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1454253518), ODbL"
+    },
+    {
+      "id": "sprendlingen-31f0e74621",
+      "city": "sprendlingen",
+      "label": "Ober-Hilbersheimer Straße",
+      "street": "Ober-Hilbersheimer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sprendlingen",
+      "spotCount": 1,
+      "lat": 49.8650675,
+      "lng": 7.992295550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1454253519), ODbL"
+    },
+    {
+      "id": "sprendlingen-1f4b6aa43f",
+      "city": "sprendlingen",
+      "label": "Ober-Hilbersheimer Straße",
+      "street": "Ober-Hilbersheimer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sprendlingen",
+      "spotCount": 1,
+      "lat": 49.86505725000001,
+      "lng": 7.9921804000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1454253520), ODbL"
+    },
+    {
+      "id": "sprendlingen-f9c484877b",
+      "city": "sprendlingen",
+      "label": "Ober-Hilbersheimer Straße",
+      "street": "Ober-Hilbersheimer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sprendlingen",
+      "spotCount": 1,
+      "lat": 49.865090050000006,
+      "lng": 7.992198800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1454253521), ODbL"
+    },
+    {
+      "id": "sprendlingen-8ee379407b",
+      "city": "sprendlingen",
+      "label": "Stettiner Straße",
+      "street": "Stettiner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sprendlingen",
+      "spotCount": 2,
+      "lat": 49.86088,
+      "lng": 7.9947625,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5787496621), ODbL"
+    }
+  ]
+}

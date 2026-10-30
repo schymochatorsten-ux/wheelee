@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "koenigsfeld-rp",
+    "name": "Königsfeld",
+    "center": {
+      "lat": 50.4980095,
+      "lng": 7.1775099
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "koenigsfeld-rp-d94b754b61",
+      "city": "koenigsfeld-rp",
+      "label": "Hauptstraße 31",
+      "street": "Hauptstraße",
+      "houseNumber": "31",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Königsfeld",
+      "spotCount": 1,
+      "lat": 50.4980095,
+      "lng": 7.1775099,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/871128190), ODbL"
+    }
+  ]
+}

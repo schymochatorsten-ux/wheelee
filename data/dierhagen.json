@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "dierhagen",
+    "name": "Dierhagen",
+    "center": {
+      "lat": 54.2907042,
+      "lng": 12.3394724
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dierhagen-ddc3a26369",
+      "city": "dierhagen",
+      "label": "Ernst-Moritz-Arndt-Straße",
+      "street": "Ernst-Moritz-Arndt-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dierhagen",
+      "spotCount": 1,
+      "lat": 54.2907042,
+      "lng": 12.3394724,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12870135079), ODbL"
+    }
+  ]
+}

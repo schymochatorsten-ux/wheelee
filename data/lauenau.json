@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "lauenau",
+    "name": "Lauenau",
+    "center": {
+      "lat": 52.27829645,
+      "lng": 9.35206165
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lauenau-952429db19",
+      "city": "lauenau",
+      "label": "Coppenbrügger Landstraße",
+      "street": "Coppenbrügger Landstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lauenau",
+      "spotCount": 2,
+      "lat": 52.267787150000004,
+      "lng": 9.369868400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/372554389), ODbL"
+    },
+    {
+      "id": "lauenau-7ddecc7b2a",
+      "city": "lauenau",
+      "label": "Daimlerstraße",
+      "street": "Daimlerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lauenau",
+      "spotCount": 1,
+      "lat": 52.2742645,
+      "lng": 9.348083550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/368313084), ODbL"
+    },
+    {
+      "id": "lauenau-58911bfe71",
+      "city": "lauenau",
+      "label": "Hanomagstraße",
+      "street": "Hanomagstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lauenau",
+      "spotCount": 1,
+      "lat": 52.27829645,
+      "lng": 9.35206165,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/381145238), ODbL"
+    },
+    {
+      "id": "lauenau-79a1679b57",
+      "city": "lauenau",
+      "label": "Hanomagstraße",
+      "street": "Hanomagstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lauenau",
+      "spotCount": 1,
+      "lat": 52.27831915,
+      "lng": 9.352021350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/381145239), ODbL"
+    }
+  ]
+}

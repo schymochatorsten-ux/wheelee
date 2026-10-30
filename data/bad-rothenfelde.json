@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bad-rothenfelde",
+    "name": "Bad Rothenfelde",
+    "center": {
+      "lat": 52.11394915,
+      "lng": 8.16431395
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-rothenfelde-37d4f800ca",
+      "city": "bad-rothenfelde",
+      "label": "Amselweg 8",
+      "street": "Amselweg",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Rothenfelde",
+      "spotCount": 1,
+      "lat": 52.11394915,
+      "lng": 8.16431395,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1361913233), ODbL"
+    }
+  ]
+}

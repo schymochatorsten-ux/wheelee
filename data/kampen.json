@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "kampen",
+    "name": "Kampen (Sylt)",
+    "center": {
+      "lat": 54.962189300000006,
+      "lng": 8.3525861
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kampen-c4993fd968",
+      "city": "kampen",
+      "label": "Kupferkanne",
+      "street": "Kupferkanne",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kampen (Sylt)",
+      "spotCount": 3,
+      "lat": 54.9534096,
+      "lng": 8.3525861,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6563209133), ODbL"
+    },
+    {
+      "id": "kampen-79ce487622",
+      "city": "kampen",
+      "label": "Riperstieg",
+      "street": "Riperstieg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kampen (Sylt)",
+      "spotCount": 1,
+      "lat": 54.962189300000006,
+      "lng": 8.3325862,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12230236473), ODbL"
+    }
+  ]
+}

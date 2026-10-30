@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bettingen",
+    "name": "Bettingen",
+    "center": {
+      "lat": 49.941975600000006,
+      "lng": 6.4013725500000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bettingen-8e4de8953b",
+      "city": "bettingen",
+      "label": "Maximinstraße 2",
+      "street": "Maximinstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bettingen",
+      "spotCount": 6,
+      "lat": 49.941975600000006,
+      "lng": 6.4013725500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1561935841), ODbL"
+    },
+    {
+      "id": "bettingen-884075071e",
+      "city": "bettingen",
+      "label": "Maximinstraße 8",
+      "street": "Maximinstraße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bettingen",
+      "spotCount": 1,
+      "lat": 49.94149835,
+      "lng": 6.40061105,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1561935839), ODbL"
+    }
+  ]
+}

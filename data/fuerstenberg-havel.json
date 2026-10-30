@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "fuerstenberg-havel",
+    "name": "Fürstenberg/Havel",
+    "center": {
+      "lat": 53.18743915,
+      "lng": 13.16125985
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "fuerstenberg-havel-f393bd0196",
+      "city": "fuerstenberg-havel",
+      "label": "Kirchweg",
+      "street": "Kirchweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Fürstenberg/Havel",
+      "spotCount": 2,
+      "lat": 53.1773931,
+      "lng": 13.2295022,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/436545461), ODbL"
+    },
+    {
+      "id": "fuerstenberg-havel-97dc9f9f8f",
+      "city": "fuerstenberg-havel",
+      "label": "Markt 1a",
+      "street": "Markt",
+      "houseNumber": "1a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Fürstenberg/Havel",
+      "spotCount": 2,
+      "lat": 53.18563280000001,
+      "lng": 13.144993800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/607070541), ODbL"
+    },
+    {
+      "id": "fuerstenberg-havel-2d657f52fe",
+      "city": "fuerstenberg-havel",
+      "label": "Park and Ride",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Fürstenberg/Havel",
+      "spotCount": 3,
+      "lat": 53.18743915,
+      "lng": 13.140315750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/263318854), ODbL"
+    },
+    {
+      "id": "fuerstenberg-havel-ee6305d6b8",
+      "city": "fuerstenberg-havel",
+      "label": "Straße der Nationen",
+      "street": "Straße der Nationen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Fürstenberg/Havel",
+      "spotCount": 1,
+      "lat": 53.1907964,
+      "lng": 13.16125985,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1509627781), ODbL"
+    }
+  ]
+}

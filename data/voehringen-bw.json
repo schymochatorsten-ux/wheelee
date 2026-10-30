@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "voehringen-bw",
+    "name": "Vöhringen",
+    "center": {
+      "lat": 48.3287361,
+      "lng": 8.663505149999999
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "voehringen-bw-aef471c9f1",
+      "city": "voehringen-bw",
+      "label": "Gartenstraße",
+      "street": "Gartenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vöhringen",
+      "spotCount": 2,
+      "lat": 48.3287361,
+      "lng": 8.66520305,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1002635585), ODbL"
+    },
+    {
+      "id": "voehringen-bw-aeae16fb8c",
+      "city": "voehringen-bw",
+      "label": "Hasenrain",
+      "street": "Hasenrain",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vöhringen",
+      "spotCount": 2,
+      "lat": 48.32473125,
+      "lng": 8.64647395,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/992461507), ODbL"
+    },
+    {
+      "id": "voehringen-bw-a5fc859693",
+      "city": "voehringen-bw",
+      "label": "Hasenrain",
+      "street": "Hasenrain",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vöhringen",
+      "spotCount": 2,
+      "lat": 48.32424900000001,
+      "lng": 8.6483737,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/992461510), ODbL"
+    },
+    {
+      "id": "voehringen-bw-fb6d03102f",
+      "city": "voehringen-bw",
+      "label": "Rosenfelder Straße 1",
+      "street": "Rosenfelder Straße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vöhringen",
+      "spotCount": 2,
+      "lat": 48.33452915,
+      "lng": 8.663505149999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1327231701), ODbL"
+    }
+  ]
+}

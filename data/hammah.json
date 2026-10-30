@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hammah",
+    "name": "Hammah",
+    "center": {
+      "lat": 53.61829285,
+      "lng": 9.366571350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hammah-fbe717156b",
+      "city": "hammah",
+      "label": "Am Güterbahnhof",
+      "street": "Am Güterbahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hammah",
+      "spotCount": 1,
+      "lat": 53.6132889,
+      "lng": 9.363944400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/685066355), ODbL"
+    },
+    {
+      "id": "hammah-8e13b3c497",
+      "city": "hammah",
+      "label": "EDEKA Kundenparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hammah",
+      "spotCount": 5,
+      "lat": 53.61829285,
+      "lng": 9.366571350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1154032251), ODbL"
+    }
+  ]
+}

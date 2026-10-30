@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "niederdorfelden",
+    "name": "Niederdorfelden",
+    "center": {
+      "lat": 50.1912212,
+      "lng": 8.806787250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "niederdorfelden-7b2c4f0573",
+      "city": "niederdorfelden",
+      "label": "Auf dem Hainspiel",
+      "street": "Auf dem Hainspiel",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Niederdorfelden",
+      "spotCount": 1,
+      "lat": 50.1912212,
+      "lng": 8.806787250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/413100728), ODbL"
+    }
+  ]
+}

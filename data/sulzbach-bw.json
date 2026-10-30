@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "sulzbach-bw",
+    "name": "Sulzbach an der Murr",
+    "center": {
+      "lat": 49.002063850000006,
+      "lng": 9.499878800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sulzbach-bw-b3e33a68a3",
+      "city": "sulzbach-bw",
+      "label": "Fischbachweg 6",
+      "street": "Fischbachweg",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sulzbach an der Murr",
+      "spotCount": 1,
+      "lat": 49.00306655,
+      "lng": 9.501193650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1052313057), ODbL"
+    },
+    {
+      "id": "sulzbach-bw-3e8786aef3",
+      "city": "sulzbach-bw",
+      "label": "Fischbachweg 9",
+      "street": "Fischbachweg",
+      "houseNumber": "9",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sulzbach an der Murr",
+      "spotCount": 1,
+      "lat": 49.002909200000005,
+      "lng": 9.501294900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1498078182), ODbL"
+    },
+    {
+      "id": "sulzbach-bw-2dbf313612",
+      "city": "sulzbach-bw",
+      "label": "Jahnstraße",
+      "street": "Jahnstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sulzbach an der Murr",
+      "spotCount": 1,
+      "lat": 49.002063850000006,
+      "lng": 9.4963689,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1421270847), ODbL"
+    },
+    {
+      "id": "sulzbach-bw-0e67e58d46",
+      "city": "sulzbach-bw",
+      "label": "Talstraße",
+      "street": "Talstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Sulzbach an der Murr",
+      "spotCount": 2,
+      "lat": 48.9995685,
+      "lng": 9.4994262,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/5087637), ODbL"
+    },
+    {
+      "id": "sulzbach-bw-87cfe0fb23",
+      "city": "sulzbach-bw",
+      "label": "Talstraße",
+      "street": "Talstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sulzbach an der Murr",
+      "spotCount": 2,
+      "lat": 48.99963125,
+      "lng": 9.499878800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1419996334), ODbL"
+    }
+  ]
+}

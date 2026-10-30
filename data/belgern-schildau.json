@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "belgern-schildau",
+    "name": "Belgern-Schildau",
+    "center": {
+      "lat": 51.48325745,
+      "lng": 13.123217750000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "belgern-schildau-48fda2b114",
+      "city": "belgern-schildau",
+      "label": "Marktstraße",
+      "street": "Marktstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Belgern-Schildau",
+      "spotCount": 1,
+      "lat": 51.48325745,
+      "lng": 13.123217750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/998508684), ODbL"
+    }
+  ]
+}

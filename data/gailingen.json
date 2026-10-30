@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "gailingen",
+    "name": "Gailingen am Hochrhein",
+    "center": {
+      "lat": 47.6976079,
+      "lng": 8.7466325
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gailingen-dd7d789b55",
+      "city": "gailingen",
+      "label": "Aldi Parkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gailingen am Hochrhein",
+      "spotCount": 1,
+      "lat": 47.6971702,
+      "lng": 8.74502725,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/145124554), ODbL"
+    },
+    {
+      "id": "gailingen-89aee98750",
+      "city": "gailingen",
+      "label": "Besucherparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Gailingen am Hochrhein",
+      "spotCount": 5,
+      "lat": 47.7032181,
+      "lng": 8.75189095,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1190658297), ODbL"
+    },
+    {
+      "id": "gailingen-c790bbd994",
+      "city": "gailingen",
+      "label": "DM-Drogerie Markt Parkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gailingen am Hochrhein",
+      "spotCount": 1,
+      "lat": 47.6976079,
+      "lng": 8.7466325,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1879150290), ODbL"
+    },
+    {
+      "id": "gailingen-d1db9880c4",
+      "city": "gailingen",
+      "label": "Lidl Parkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gailingen am Hochrhein",
+      "spotCount": 1,
+      "lat": 47.6973733,
+      "lng": 8.7459834,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1879150306), ODbL"
+    }
+  ]
+}

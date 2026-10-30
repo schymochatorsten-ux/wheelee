@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "waldenbuch",
+    "name": "Waldenbuch",
+    "center": {
+      "lat": 48.63858065,
+      "lng": 9.12875335
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "waldenbuch-eac0017bb5",
+      "city": "waldenbuch",
+      "label": "Alfred-Ritter-Straße",
+      "street": "Alfred-Ritter-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldenbuch",
+      "spotCount": 1,
+      "lat": 48.638637200000005,
+      "lng": 9.12129185,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/163403766), ODbL"
+    },
+    {
+      "id": "waldenbuch-efb8b217f5",
+      "city": "waldenbuch",
+      "label": "Alfred-Ritter-Straße",
+      "street": "Alfred-Ritter-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldenbuch",
+      "spotCount": 1,
+      "lat": 48.63858065,
+      "lng": 9.1236311,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/329121146), ODbL"
+    },
+    {
+      "id": "waldenbuch-582bc07794",
+      "city": "waldenbuch",
+      "label": "Alfred-Ritter-Straße",
+      "street": "Alfred-Ritter-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldenbuch",
+      "spotCount": 2,
+      "lat": 48.63925255,
+      "lng": 9.122365,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/329121161), ODbL"
+    },
+    {
+      "id": "waldenbuch-6ef70abe32",
+      "city": "waldenbuch",
+      "label": "Kirchgasse",
+      "street": "Kirchgasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldenbuch",
+      "spotCount": 1,
+      "lat": 48.6373717,
+      "lng": 9.1312618,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/264768095), ODbL"
+    },
+    {
+      "id": "waldenbuch-5a0ff0676f",
+      "city": "waldenbuch",
+      "label": "Liebenaustraße 31",
+      "street": "Liebenaustraße",
+      "houseNumber": "31",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldenbuch",
+      "spotCount": 1,
+      "lat": 48.640320100000004,
+      "lng": 9.13937305,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/971387279), ODbL"
+    },
+    {
+      "id": "waldenbuch-0caf972027",
+      "city": "waldenbuch",
+      "label": "Stuttgarter Straße",
+      "street": "Stuttgarter Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldenbuch",
+      "spotCount": 3,
+      "lat": 48.63783515,
+      "lng": 9.12875335,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/937829613), ODbL"
+    },
+    {
+      "id": "waldenbuch-354fd14376",
+      "city": "waldenbuch",
+      "label": "Tübinger Straße",
+      "street": "Tübinger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Waldenbuch",
+      "spotCount": 2,
+      "lat": 48.6371465,
+      "lng": 9.1288754,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/816865953), ODbL"
+    }
+  ]
+}

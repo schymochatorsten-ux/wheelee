@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "memmingerberg",
+    "name": "Memmingerberg",
+    "center": {
+      "lat": 47.98978770000001,
+      "lng": 10.232457400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "memmingerberg-15bda17459",
+      "city": "memmingerberg",
+      "label": "Am Flughafen",
+      "street": "Am Flughafen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Memmingerberg",
+      "spotCount": 1,
+      "lat": 47.9897737,
+      "lng": 10.23234055,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1455426483), ODbL"
+    },
+    {
+      "id": "memmingerberg-34b97b1b9c",
+      "city": "memmingerberg",
+      "label": "Am Flughafen",
+      "street": "Am Flughafen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Memmingerberg",
+      "spotCount": 1,
+      "lat": 47.98979235,
+      "lng": 10.23249595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1455426484), ODbL"
+    },
+    {
+      "id": "memmingerberg-f0f75f0072",
+      "city": "memmingerberg",
+      "label": "Kiss & Fly",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Memmingerberg",
+      "spotCount": 2,
+      "lat": 47.98978770000001,
+      "lng": 10.232457400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1090286585), ODbL"
+    }
+  ]
+}

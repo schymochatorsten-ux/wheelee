@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "brieskow-finkenheerd",
+    "name": "Brieskow-Finkenheerd",
+    "center": {
+      "lat": 52.255590600000005,
+      "lng": 14.572905850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "brieskow-finkenheerd-d05d776fd6",
+      "city": "brieskow-finkenheerd",
+      "label": "Parkplatz Sparkasse",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brieskow-Finkenheerd",
+      "spotCount": 1,
+      "lat": 52.255590600000005,
+      "lng": 14.572905850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/46951491), ODbL"
+    },
+    {
+      "id": "brieskow-finkenheerd-a1bd9496c1",
+      "city": "brieskow-finkenheerd",
+      "label": "Platz der Freiheit 14",
+      "street": "Platz der Freiheit",
+      "houseNumber": "14",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Brieskow-Finkenheerd",
+      "spotCount": 1,
+      "lat": 52.2535273,
+      "lng": 14.57187685,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/41242752), ODbL"
+    }
+  ]
+}

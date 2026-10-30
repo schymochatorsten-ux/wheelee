@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "otzberg",
+    "name": "Otzberg",
+    "center": {
+      "lat": 49.82203805,
+      "lng": 8.9030166
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "otzberg-ad9f241f44",
+      "city": "otzberg",
+      "label": "Bahnhofstraße 15",
+      "street": "Bahnhofstraße",
+      "houseNumber": "15",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Otzberg",
+      "spotCount": 2,
+      "lat": 49.83925235,
+      "lng": 8.9030166,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/197825258), ODbL"
+    },
+    {
+      "id": "otzberg-6ef5587398",
+      "city": "otzberg",
+      "label": "Burgweg 30a",
+      "street": "Burgweg",
+      "houseNumber": "30a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Otzberg",
+      "spotCount": 1,
+      "lat": 49.8197106,
+      "lng": 8.913144200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1134032445), ODbL"
+    },
+    {
+      "id": "otzberg-55b412b7ab",
+      "city": "otzberg",
+      "label": "Lengfelder Straße",
+      "street": "Lengfelder Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Otzberg",
+      "spotCount": 1,
+      "lat": 49.82203805,
+      "lng": 8.89245745,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1148671346), ODbL"
+    },
+    {
+      "id": "otzberg-c9bc0bcaaa",
+      "city": "otzberg",
+      "label": "Odenwaldstraße 5",
+      "street": "Odenwaldstraße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Otzberg",
+      "spotCount": 1,
+      "lat": 49.82064235,
+      "lng": 8.913283100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1124453184), ODbL"
+    },
+    {
+      "id": "otzberg-d280931c58",
+      "city": "otzberg",
+      "label": "Otzbergstraße 11",
+      "street": "Otzbergstraße",
+      "houseNumber": "11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Otzberg",
+      "spotCount": 1,
+      "lat": 49.83234865,
+      "lng": 8.901899750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1127934127), ODbL"
+    }
+  ]
+}

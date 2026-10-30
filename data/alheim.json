@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "alheim",
+    "name": "Alheim",
+    "center": {
+      "lat": 51.0497923,
+      "lng": 9.6603709
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "alheim-767a852f4f",
+      "city": "alheim",
+      "label": "Nürnberger Straße",
+      "street": "Nürnberger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Alheim",
+      "spotCount": 1,
+      "lat": 51.0497923,
+      "lng": 9.6603709,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/355039369), ODbL"
+    }
+  ]
+}

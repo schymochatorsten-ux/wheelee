@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "hohenbrunn",
+    "name": "Hohenbrunn",
+    "center": {
+      "lat": 48.05543535,
+      "lng": 11.67264105
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hohenbrunn-f6dba46bc8",
+      "city": "hohenbrunn",
+      "label": "Eduard-Spranger-Straße 13",
+      "street": "Eduard-Spranger-Straße",
+      "houseNumber": "13",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hohenbrunn",
+      "spotCount": 1,
+      "lat": 48.06128135,
+      "lng": 11.6835885,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/764572296), ODbL"
+    },
+    {
+      "id": "hohenbrunn-d2192d1acc",
+      "city": "hohenbrunn",
+      "label": "Georg-Kerschensteiner-Straße 5",
+      "street": "Georg-Kerschensteiner-Straße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hohenbrunn",
+      "spotCount": 1,
+      "lat": 48.061403350000006,
+      "lng": 11.68319335,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/221382133), ODbL"
+    },
+    {
+      "id": "hohenbrunn-8a365d02f4",
+      "city": "hohenbrunn",
+      "label": "Robert-Bosch-Straße 8",
+      "street": "Robert-Bosch-Straße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hohenbrunn",
+      "spotCount": 1,
+      "lat": 48.0528865,
+      "lng": 11.6719466,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1259635095), ODbL"
+    },
+    {
+      "id": "hohenbrunn-7d3cf766c6",
+      "city": "hohenbrunn",
+      "label": "Rudolf-Diesel-Straße",
+      "street": "Rudolf-Diesel-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hohenbrunn",
+      "spotCount": 1,
+      "lat": 48.0549204,
+      "lng": 11.670185,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/421110335), ODbL"
+    },
+    {
+      "id": "hohenbrunn-f5e080388a",
+      "city": "hohenbrunn",
+      "label": "Rudolf-Diesel-Straße 17",
+      "street": "Rudolf-Diesel-Straße",
+      "houseNumber": "17",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hohenbrunn",
+      "spotCount": 1,
+      "lat": 48.05543535,
+      "lng": 11.67264105,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1301055859), ODbL"
+    }
+  ]
+}

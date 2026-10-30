@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ploetzkau",
+    "name": "Plötzkau",
+    "center": {
+      "lat": 51.742790600000006,
+      "lng": 11.690542200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ploetzkau-7413286bd0",
+      "city": "ploetzkau",
+      "label": "Am Schloßpark",
+      "street": "Am Schloßpark",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Plötzkau",
+      "spotCount": 1,
+      "lat": 51.742790600000006,
+      "lng": 11.690542200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1337981575), ODbL"
+    }
+  ]
+}

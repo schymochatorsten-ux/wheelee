@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "peitz",
+    "name": "Peitz",
+    "center": {
+      "lat": 51.854773550000004,
+      "lng": 14.410734900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "peitz-2a30524619",
+      "city": "peitz",
+      "label": "Cottbuser Straße",
+      "street": "Cottbuser Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Peitz",
+      "spotCount": 3,
+      "lat": 51.854773550000004,
+      "lng": 14.410734900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1050646483), ODbL"
+    },
+    {
+      "id": "peitz-3851b74c48",
+      "city": "peitz",
+      "label": "Siedlungsstraße",
+      "street": "Siedlungsstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Peitz",
+      "spotCount": 2,
+      "lat": 51.8520058,
+      "lng": 14.409183650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1239900411), ODbL"
+    }
+  ]
+}

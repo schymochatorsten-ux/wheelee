@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "kelberg",
+    "name": "Kelberg",
+    "center": {
+      "lat": 50.28212805,
+      "lng": 6.914052850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kelberg-9e4f4dcc14",
+      "city": "kelberg",
+      "label": "Bonner Straße 35",
+      "street": "Bonner Straße",
+      "houseNumber": "35",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kelberg",
+      "spotCount": 7,
+      "lat": 50.28931555,
+      "lng": 6.9189621,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1082148751), ODbL"
+    },
+    {
+      "id": "kelberg-8a33dcee1c",
+      "city": "kelberg",
+      "label": "Mayener Straße",
+      "street": "Mayener Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kelberg",
+      "spotCount": 1,
+      "lat": 50.285999700000005,
+      "lng": 6.918374600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9888107919), ODbL"
+    },
+    {
+      "id": "kelberg-b11d933630",
+      "city": "kelberg",
+      "label": "Rowastraße",
+      "street": "Rowastraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kelberg",
+      "spotCount": 1,
+      "lat": 50.2821081,
+      "lng": 6.914010350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1021288792), ODbL"
+    },
+    {
+      "id": "kelberg-4bbabb10c1",
+      "city": "kelberg",
+      "label": "Rowastraße",
+      "street": "Rowastraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kelberg",
+      "spotCount": 2,
+      "lat": 50.2821738,
+      "lng": 6.91437335,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1021288799), ODbL"
+    },
+    {
+      "id": "kelberg-cadbf0b114",
+      "city": "kelberg",
+      "label": "Rowastraße",
+      "street": "Rowastraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kelberg",
+      "spotCount": 1,
+      "lat": 50.28203005,
+      "lng": 6.91376125,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1021288899), ODbL"
+    },
+    {
+      "id": "kelberg-724ca28db9",
+      "city": "kelberg",
+      "label": "Rowastraße",
+      "street": "Rowastraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kelberg",
+      "spotCount": 1,
+      "lat": 50.282006700000004,
+      "lng": 6.913851500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1021288946), ODbL"
+    },
+    {
+      "id": "kelberg-67001ff9ba",
+      "city": "kelberg",
+      "label": "Rowastraße",
+      "street": "Rowastraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kelberg",
+      "spotCount": 1,
+      "lat": 50.28212805,
+      "lng": 6.914052850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1021288949), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "philippsthal",
+    "name": "Philippsthal (Werra)",
+    "center": {
+      "lat": 50.852826900000004,
+      "lng": 9.994710900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "philippsthal-9e128d2fa8",
+      "city": "philippsthal",
+      "label": "Am Rain 34",
+      "street": "Am Rain",
+      "houseNumber": "34",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Philippsthal (Werra)",
+      "spotCount": 4,
+      "lat": 50.8540266,
+      "lng": 9.9606937,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1469836941), ODbL"
+    },
+    {
+      "id": "philippsthal-1735de626e",
+      "city": "philippsthal",
+      "label": "Am Stemmgarten 10",
+      "street": "Am Stemmgarten",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Philippsthal (Werra)",
+      "spotCount": 1,
+      "lat": 50.852826900000004,
+      "lng": 9.954596550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/127165194), ODbL"
+    },
+    {
+      "id": "philippsthal-615741a411",
+      "city": "philippsthal",
+      "label": "Laraustraße",
+      "street": "Laraustraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Philippsthal (Werra)",
+      "spotCount": 9,
+      "lat": 50.83558655,
+      "lng": 9.994710900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1410721266), ODbL"
+    },
+    {
+      "id": "philippsthal-77794ab4ed",
+      "city": "philippsthal",
+      "label": "Weidenhain",
+      "street": "Weidenhain",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Philippsthal (Werra)",
+      "spotCount": 1,
+      "lat": 50.83328925,
+      "lng": 10.0198905,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1384446117), ODbL"
+    }
+  ]
+}

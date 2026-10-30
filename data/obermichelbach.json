@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "obermichelbach",
+    "name": "Obermichelbach",
+    "center": {
+      "lat": 49.531573300000005,
+      "lng": 10.909710650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "obermichelbach-0ae2796982",
+      "city": "obermichelbach",
+      "label": "Parkplatz am Dorfgemeinschaftshaus",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Obermichelbach",
+      "spotCount": 1,
+      "lat": 49.531573300000005,
+      "lng": 10.909710650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/234003517), ODbL"
+    }
+  ]
+}

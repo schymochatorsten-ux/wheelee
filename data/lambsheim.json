@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lambsheim",
+    "name": "Lambsheim",
+    "center": {
+      "lat": 49.51847050000001,
+      "lng": 8.303465250000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lambsheim-7ddda6d35f",
+      "city": "lambsheim",
+      "label": "Nachtweide",
+      "street": "Nachtweide",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Lambsheim",
+      "spotCount": 4,
+      "lat": 49.51847050000001,
+      "lng": 8.303465250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/57678702), ODbL"
+    }
+  ]
+}

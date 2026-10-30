@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lobbach",
+    "name": "Lobbach",
+    "center": {
+      "lat": 49.350564750000004,
+      "lng": 8.86695105
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lobbach-d0c8e71abc",
+      "city": "lobbach",
+      "label": "Klosterstraße",
+      "street": "Klosterstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Lobbach",
+      "spotCount": 2,
+      "lat": 49.350564750000004,
+      "lng": 8.86695105,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/437565458), ODbL"
+    }
+  ]
+}

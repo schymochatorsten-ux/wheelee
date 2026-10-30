@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "reinsberg",
+    "name": "Reinsberg",
+    "center": {
+      "lat": 51.008902500000005,
+      "lng": 13.355392550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "reinsberg-827f986af4",
+      "city": "reinsberg",
+      "label": "Kirchgasse 2",
+      "street": "Kirchgasse",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Reinsberg",
+      "spotCount": 1,
+      "lat": 51.007180500000004,
+      "lng": 13.355392550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/361578949), ODbL"
+    },
+    {
+      "id": "reinsberg-5b8dd37c97",
+      "city": "reinsberg",
+      "label": "Pfarrberg 1",
+      "street": "Pfarrberg",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Reinsberg",
+      "spotCount": 3,
+      "lat": 51.008902500000005,
+      "lng": 13.34064815,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1017620609), ODbL"
+    }
+  ]
+}

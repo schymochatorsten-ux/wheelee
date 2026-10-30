@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "pfaffenhofen-a-d-roth",
+    "name": "Pfaffenhofen a.d.Roth",
+    "center": {
+      "lat": 48.35194585000001,
+      "lng": 10.176266100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pfaffenhofen-a-d-roth-46fb0ddb05",
+      "city": "pfaffenhofen-a-d-roth",
+      "label": "Marienfriedstraße",
+      "street": "Marienfriedstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pfaffenhofen a.d.Roth",
+      "spotCount": 3,
+      "lat": 48.35194585000001,
+      "lng": 10.176266100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1427324507), ODbL"
+    }
+  ]
+}

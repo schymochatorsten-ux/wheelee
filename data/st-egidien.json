@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "st-egidien",
+    "name": "St. Egidien",
+    "center": {
+      "lat": 50.77299205,
+      "lng": 12.624299650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "st-egidien-b6285162c7",
+      "city": "st-egidien",
+      "label": "Platanenstraße",
+      "street": "Platanenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "St. Egidien",
+      "spotCount": 3,
+      "lat": 50.77299205,
+      "lng": 12.624299650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24061200), ODbL"
+    }
+  ]
+}

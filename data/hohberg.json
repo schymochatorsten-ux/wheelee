@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hohberg",
+    "name": "Hohberg",
+    "center": {
+      "lat": 48.4132994,
+      "lng": 7.8961752
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hohberg-bc111d829b",
+      "city": "hohberg",
+      "label": "Hauptstraße 63",
+      "street": "Hauptstraße",
+      "houseNumber": "63",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hohberg",
+      "spotCount": 2,
+      "lat": 48.4132994,
+      "lng": 7.8961752,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6624703568), ODbL"
+    }
+  ]
+}

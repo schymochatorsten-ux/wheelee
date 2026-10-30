@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "aiterhofen",
+    "name": "Aiterhofen",
+    "center": {
+      "lat": 48.844248300000004,
+      "lng": 12.625159750000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "aiterhofen-4b90df4306",
+      "city": "aiterhofen",
+      "label": "Keltenstraße 1",
+      "street": "Keltenstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aiterhofen",
+      "spotCount": 3,
+      "lat": 48.844248300000004,
+      "lng": 12.625159750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35318867), ODbL"
+    }
+  ]
+}

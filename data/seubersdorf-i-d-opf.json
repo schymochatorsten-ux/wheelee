@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "seubersdorf-i-d-opf",
+    "name": "Seubersdorf i.d.OPf.",
+    "center": {
+      "lat": 49.1911573,
+      "lng": 11.59348365
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "seubersdorf-i-d-opf-3e697776f3",
+      "city": "seubersdorf-i-d-opf",
+      "label": "Zum Bahnhof",
+      "street": "Zum Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Seubersdorf i.d.OPf.",
+      "spotCount": 1,
+      "lat": 49.1911525,
+      "lng": 11.59348365,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1017857238), ODbL"
+    },
+    {
+      "id": "seubersdorf-i-d-opf-cfe6303571",
+      "city": "seubersdorf-i-d-opf",
+      "label": "Zum Bahnhof",
+      "street": "Zum Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Seubersdorf i.d.OPf.",
+      "spotCount": 1,
+      "lat": 49.1911573,
+      "lng": 11.5925768,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1017857239), ODbL"
+    }
+  ]
+}

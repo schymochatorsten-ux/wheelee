@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "haste",
+    "name": "Haste",
+    "center": {
+      "lat": 52.38248915,
+      "lng": 9.39360615
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "haste-03ab504552",
+      "city": "haste",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Haste",
+      "spotCount": 2,
+      "lat": 52.38248915,
+      "lng": 9.39360615,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/885622358), ODbL"
+    }
+  ]
+}

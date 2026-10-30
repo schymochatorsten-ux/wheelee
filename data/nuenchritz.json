@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "nuenchritz",
+    "name": "Nünchritz",
+    "center": {
+      "lat": 51.30307955000001,
+      "lng": 13.3962599
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nuenchritz-b24a9c1d9e",
+      "city": "nuenchritz",
+      "label": "Großenhainer Straße",
+      "street": "Großenhainer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nünchritz",
+      "spotCount": 2,
+      "lat": 51.297517500000005,
+      "lng": 13.3962599,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/89133629), ODbL"
+    },
+    {
+      "id": "nuenchritz-01595cbbbe",
+      "city": "nuenchritz",
+      "label": "Nordstraße",
+      "street": "Nordstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nünchritz",
+      "spotCount": 1,
+      "lat": 51.30307955000001,
+      "lng": 13.385337100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1393126676), ODbL"
+    }
+  ]
+}

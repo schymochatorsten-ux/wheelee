@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "satow",
+    "name": "Satow",
+    "center": {
+      "lat": 53.99339985,
+      "lng": 11.944751850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "satow-890e1d27f4",
+      "city": "satow",
+      "label": "Quellental",
+      "street": "Quellental",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Satow",
+      "spotCount": 1,
+      "lat": 53.99339985,
+      "lng": 11.944751850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1099712028), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "breklum",
+    "name": "Breklum",
+    "center": {
+      "lat": 54.6017603,
+      "lng": 8.98364805
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "breklum-8898d833ab",
+      "city": "breklum",
+      "label": "Maadeweg",
+      "street": "Maadeweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Breklum",
+      "spotCount": 2,
+      "lat": 54.60377145,
+      "lng": 8.9839831,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/380158473), ODbL"
+    },
+    {
+      "id": "breklum-4d51857324",
+      "city": "breklum",
+      "label": "Süderweg",
+      "street": "Süderweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Breklum",
+      "spotCount": 1,
+      "lat": 54.6017603,
+      "lng": 8.983490100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/680215027), ODbL"
+    },
+    {
+      "id": "breklum-4c6e4b5c5a",
+      "city": "breklum",
+      "label": "Süderweg",
+      "street": "Süderweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Breklum",
+      "spotCount": 1,
+      "lat": 54.60163955,
+      "lng": 8.98364805,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/680215028), ODbL"
+    }
+  ]
+}

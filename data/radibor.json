@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "radibor",
+    "name": "Radibor",
+    "center": {
+      "lat": 51.245068700000004,
+      "lng": 14.401373800000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "radibor-b1b4b2d1e4",
+      "city": "radibor",
+      "label": "Caminaer Straße - Kamjenjanska",
+      "street": "Caminaer Straße - Kamjenjanska",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Radibor",
+      "spotCount": 1,
+      "lat": 51.245068700000004,
+      "lng": 14.401373800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1173016931), ODbL"
+    }
+  ]
+}

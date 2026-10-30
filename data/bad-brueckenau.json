@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "bad-brueckenau",
+    "name": "Bad Brückenau",
+    "center": {
+      "lat": 50.30866305000001,
+      "lng": 9.7859257
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-brueckenau-5a330a99de",
+      "city": "bad-brueckenau",
+      "label": "Alter Rathausplatz",
+      "street": "Alter Rathausplatz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Brückenau",
+      "spotCount": 1,
+      "lat": 50.30899190000001,
+      "lng": 9.7875709,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1518110128), ODbL"
+    },
+    {
+      "id": "bad-brueckenau-55c4f314c4",
+      "city": "bad-brueckenau",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Brückenau",
+      "spotCount": 1,
+      "lat": 50.30747885,
+      "lng": 9.784855750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1518174411), ODbL"
+    },
+    {
+      "id": "bad-brueckenau-e173276d39",
+      "city": "bad-brueckenau",
+      "label": "Im Siebener Park",
+      "street": "Im Siebener Park",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Brückenau",
+      "spotCount": 1,
+      "lat": 50.311054600000006,
+      "lng": 9.793758700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1961754038), ODbL"
+    },
+    {
+      "id": "bad-brueckenau-d00189eacf",
+      "city": "bad-brueckenau",
+      "label": "P9",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Brückenau",
+      "spotCount": 2,
+      "lat": 50.30866305000001,
+      "lng": 9.7859257,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/290067885), ODbL"
+    },
+    {
+      "id": "bad-brueckenau-e1f1ff21f0",
+      "city": "bad-brueckenau",
+      "label": "Wernarzer Straße",
+      "street": "Wernarzer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Brückenau",
+      "spotCount": 6,
+      "lat": 50.30178550000001,
+      "lng": 9.748731850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/320040206), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "tautenhain",
+    "name": "Tautenhain",
+    "center": {
+      "lat": 50.951236550000004,
+      "lng": 11.911069950000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "tautenhain-ef19226136",
+      "city": "tautenhain",
+      "label": "Mühltal",
+      "street": "Mühltal",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Tautenhain",
+      "spotCount": 4,
+      "lat": 50.951236550000004,
+      "lng": 11.911069950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1289340746), ODbL"
+    }
+  ]
+}

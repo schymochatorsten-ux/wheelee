@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "wyk-auf-foehr",
+    "name": "Wyk auf Föhr",
+    "center": {
+      "lat": 54.69181175,
+      "lng": 8.57322335
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wyk-auf-foehr-6541df921a",
+      "city": "wyk-auf-foehr",
+      "label": "Am Fähranleger",
+      "street": "Am Fähranleger",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wyk auf Föhr",
+      "spotCount": 2,
+      "lat": 54.69181175,
+      "lng": 8.57346605,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/205733682), ODbL"
+    },
+    {
+      "id": "wyk-auf-foehr-2595c6afbb",
+      "city": "wyk-auf-foehr",
+      "label": "Am Fähranleger",
+      "street": "Am Fähranleger",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wyk auf Föhr",
+      "spotCount": 1,
+      "lat": 54.69159545000001,
+      "lng": 8.57318315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1177650314), ODbL"
+    },
+    {
+      "id": "wyk-auf-foehr-86d1561e12",
+      "city": "wyk-auf-foehr",
+      "label": "Am Fähranleger",
+      "street": "Am Fähranleger",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wyk auf Föhr",
+      "spotCount": 1,
+      "lat": 54.69162285,
+      "lng": 8.57322335,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1177650315), ODbL"
+    },
+    {
+      "id": "wyk-auf-foehr-e5862e245d",
+      "city": "wyk-auf-foehr",
+      "label": "Großparkplatz Heymannsplatz",
+      "street": "Heymannsweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wyk auf Föhr",
+      "spotCount": 4,
+      "lat": 54.6922608,
+      "lng": 8.567446100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26115871), ODbL"
+    }
+  ]
+}

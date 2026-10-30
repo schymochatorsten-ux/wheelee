@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "zeil-a-main",
+    "name": "Zeil a.Main",
+    "center": {
+      "lat": 50.01291895,
+      "lng": 10.593664650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zeil-a-main-be34bd14cc",
+      "city": "zeil-a-main",
+      "label": "Krumer Straße 4",
+      "street": "Krumer Straße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zeil a.Main",
+      "spotCount": 1,
+      "lat": 50.01291895,
+      "lng": 10.593664650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/971676582), ODbL"
+    }
+  ]
+}

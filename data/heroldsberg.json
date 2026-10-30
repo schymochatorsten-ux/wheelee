@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "heroldsberg",
+    "name": "Heroldsberg",
+    "center": {
+      "lat": 49.5289042,
+      "lng": 11.150837200000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "heroldsberg-f629c74f9b",
+      "city": "heroldsberg",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heroldsberg",
+      "spotCount": 1,
+      "lat": 49.5289042,
+      "lng": 11.1501482,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/670089214), ODbL"
+    },
+    {
+      "id": "heroldsberg-740c517972",
+      "city": "heroldsberg",
+      "label": "Lange Gasse 1",
+      "street": "Lange Gasse",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heroldsberg",
+      "spotCount": 3,
+      "lat": 49.536782650000006,
+      "lng": 11.157433900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/297281715), ODbL"
+    },
+    {
+      "id": "heroldsberg-daf637647d",
+      "city": "heroldsberg",
+      "label": "Parkplatz EDEKA",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heroldsberg",
+      "spotCount": 1,
+      "lat": 49.52779650000001,
+      "lng": 11.150837200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/320162126), ODbL"
+    }
+  ]
+}

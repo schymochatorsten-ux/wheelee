@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "wackersdorf",
+    "name": "Wackersdorf",
+    "center": {
+      "lat": 49.31447420000001,
+      "lng": 12.150498200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wackersdorf-06f8b90d67",
+      "city": "wackersdorf",
+      "label": "Am Brunnfeld",
+      "street": "Am Brunnfeld",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wackersdorf",
+      "spotCount": 1,
+      "lat": 49.31447420000001,
+      "lng": 12.150452600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12568557444), ODbL"
+    },
+    {
+      "id": "wackersdorf-51778250eb",
+      "city": "wackersdorf",
+      "label": "Am Brunnfeld",
+      "street": "Am Brunnfeld",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wackersdorf",
+      "spotCount": 1,
+      "lat": 49.314462000000006,
+      "lng": 12.150498200000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12568557445), ODbL"
+    }
+  ]
+}

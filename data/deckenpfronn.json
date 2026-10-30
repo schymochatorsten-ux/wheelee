@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "deckenpfronn",
+    "name": "Deckenpfronn",
+    "center": {
+      "lat": 48.6574432,
+      "lng": 8.8220255
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "deckenpfronn-39cf5adbfd",
+      "city": "deckenpfronn",
+      "label": "Ahornweg",
+      "street": "Ahornweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Deckenpfronn",
+      "spotCount": 2,
+      "lat": 48.6574432,
+      "lng": 8.8220255,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1196881828), ODbL"
+    }
+  ]
+}

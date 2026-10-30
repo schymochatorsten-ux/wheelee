@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "viechtach",
+    "name": "Viechtach",
+    "center": {
+      "lat": 49.08031940000001,
+      "lng": 12.8863044
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "viechtach-31e2f6adfa",
+      "city": "viechtach",
+      "label": "Stadtplatz 1",
+      "street": "Stadtplatz",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Viechtach",
+      "spotCount": 1,
+      "lat": 49.08031940000001,
+      "lng": 12.88596685,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1330350204), ODbL"
+    },
+    {
+      "id": "viechtach-c18753d5e8",
+      "city": "viechtach",
+      "label": "Stadtplatz 3",
+      "street": "Stadtplatz",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Viechtach",
+      "spotCount": 1,
+      "lat": 49.08022855,
+      "lng": 12.8863044,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/365974013), ODbL"
+    }
+  ]
+}

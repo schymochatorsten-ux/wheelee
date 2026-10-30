@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "erdmannhausen",
+    "name": "Erdmannhausen",
+    "center": {
+      "lat": 48.94838060000001,
+      "lng": 9.2984953
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "erdmannhausen-8ed575111a",
+      "city": "erdmannhausen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Erdmannhausen",
+      "spotCount": 2,
+      "lat": 48.9484296,
+      "lng": 9.29815765,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/364773299), ODbL"
+    },
+    {
+      "id": "erdmannhausen-04da798132",
+      "city": "erdmannhausen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Erdmannhausen",
+      "spotCount": 1,
+      "lat": 48.94838060000001,
+      "lng": 9.2984953,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1415669772), ODbL"
+    },
+    {
+      "id": "erdmannhausen-cbe502e4c6",
+      "city": "erdmannhausen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Erdmannhausen",
+      "spotCount": 1,
+      "lat": 48.94837030000001,
+      "lng": 9.2985297,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1415669773), ODbL"
+    }
+  ]
+}

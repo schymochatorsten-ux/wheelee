@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bastorf",
+    "name": "Bastorf",
+    "center": {
+      "lat": 54.1321336,
+      "lng": 11.6939677
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bastorf-b8f93b996e",
+      "city": "bastorf",
+      "label": "Zum Leuchtturm",
+      "street": "Zum Leuchtturm",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bastorf",
+      "spotCount": 3,
+      "lat": 54.1321336,
+      "lng": 11.6939677,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/286882053), ODbL"
+    }
+  ]
+}

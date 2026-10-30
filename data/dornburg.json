@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "dornburg",
+    "name": "Dornburg",
+    "center": {
+      "lat": 50.5285577,
+      "lng": 8.0188998
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dornburg-c1c9bf9c76",
+      "city": "dornburg",
+      "label": "Hauptstraße 8",
+      "street": "Hauptstraße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dornburg",
+      "spotCount": 8,
+      "lat": 50.5285577,
+      "lng": 8.0188998,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1314491485), ODbL"
+    }
+  ]
+}

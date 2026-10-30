@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "rehfelde",
+    "name": "Rehfelde",
+    "center": {
+      "lat": 52.53100735000001,
+      "lng": 13.926450500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rehfelde-32a51c7514",
+      "city": "rehfelde",
+      "label": "Bahnhofstraße 37",
+      "street": "Bahnhofstraße",
+      "houseNumber": "37",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rehfelde",
+      "spotCount": 2,
+      "lat": 52.53061045,
+      "lng": 13.926450500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1186450782), ODbL"
+    },
+    {
+      "id": "rehfelde-85ac80ec86",
+      "city": "rehfelde",
+      "label": "Elsholzstraße 10",
+      "street": "Elsholzstraße",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rehfelde",
+      "spotCount": 2,
+      "lat": 52.53100735000001,
+      "lng": 13.924584900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1116404475), ODbL"
+    }
+  ]
+}

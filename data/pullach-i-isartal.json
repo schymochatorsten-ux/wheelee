@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "pullach-i-isartal",
+    "name": "Pullach i.Isartal",
+    "center": {
+      "lat": 48.057759600000004,
+      "lng": 11.521511100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pullach-i-isartal-fd1f39b73a",
+      "city": "pullach-i-isartal",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pullach i.Isartal",
+      "spotCount": 1,
+      "lat": 48.059168400000004,
+      "lng": 11.522237950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/244159564), ODbL"
+    },
+    {
+      "id": "pullach-i-isartal-7f44f05600",
+      "city": "pullach-i-isartal",
+      "label": "Gartenstraße 2",
+      "street": "Gartenstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pullach i.Isartal",
+      "spotCount": 1,
+      "lat": 48.057759600000004,
+      "lng": 11.521511100000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9989941889), ODbL"
+    },
+    {
+      "id": "pullach-i-isartal-8977db55a0",
+      "city": "pullach-i-isartal",
+      "label": "Johann-Bader-Straße 21",
+      "street": "Johann-Bader-Straße",
+      "houseNumber": "21",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pullach i.Isartal",
+      "spotCount": 1,
+      "lat": 48.0544713,
+      "lng": 11.5202247,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9989925887), ODbL"
+    },
+    {
+      "id": "pullach-i-isartal-9267e340f7",
+      "city": "pullach-i-isartal",
+      "label": "Münchener Straße",
+      "street": "Münchener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pullach i.Isartal",
+      "spotCount": 2,
+      "lat": 48.06386235,
+      "lng": 11.52050385,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/160781810), ODbL"
+    },
+    {
+      "id": "pullach-i-isartal-0ef324d1a3",
+      "city": "pullach-i-isartal",
+      "label": "P+R",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pullach i.Isartal",
+      "spotCount": 1,
+      "lat": 48.0426341,
+      "lng": 11.509385300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/80717068), ODbL"
+    },
+    {
+      "id": "pullach-i-isartal-320307d0d9",
+      "city": "pullach-i-isartal",
+      "label": "Parkplatz Freizeitbad",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pullach i.Isartal",
+      "spotCount": 1,
+      "lat": 48.065726100000006,
+      "lng": 11.52593825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/150839261), ODbL"
+    },
+    {
+      "id": "pullach-i-isartal-4b9336f58f",
+      "city": "pullach-i-isartal",
+      "label": "Schwanthalerstraße",
+      "street": "Schwanthalerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pullach i.Isartal",
+      "spotCount": 1,
+      "lat": 48.0568284,
+      "lng": 11.52316085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/166691659), ODbL"
+    }
+  ]
+}

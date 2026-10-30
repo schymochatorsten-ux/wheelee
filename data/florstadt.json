@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "florstadt",
+    "name": "Florstadt",
+    "center": {
+      "lat": 50.31978805,
+      "lng": 8.9132466
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "florstadt-582a0b0b90",
+      "city": "florstadt",
+      "label": "Am Zwirrleinsberg 3",
+      "street": "Am Zwirrleinsberg",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Florstadt",
+      "spotCount": 1,
+      "lat": 50.31128545,
+      "lng": 8.920749050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/831661823), ODbL"
+    },
+    {
+      "id": "florstadt-9ff692c961",
+      "city": "florstadt",
+      "label": "Anton-Lux-Ring",
+      "street": "Anton-Lux-Ring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Florstadt",
+      "spotCount": 1,
+      "lat": 50.322747850000006,
+      "lng": 8.86908305,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/376142493), ODbL"
+    },
+    {
+      "id": "florstadt-a87c253d78",
+      "city": "florstadt",
+      "label": "Hainbachstraße 8",
+      "street": "Hainbachstraße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Florstadt",
+      "spotCount": 1,
+      "lat": 50.311553,
+      "lng": 8.9152178,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1100631183), ODbL"
+    },
+    {
+      "id": "florstadt-7f25839cca",
+      "city": "florstadt",
+      "label": "Messeplatz 2",
+      "street": "Messeplatz",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Florstadt",
+      "spotCount": 1,
+      "lat": 50.31978805,
+      "lng": 8.85991615,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1431994310), ODbL"
+    },
+    {
+      "id": "florstadt-bf833aef32",
+      "city": "florstadt",
+      "label": "Mittelgasse 10",
+      "street": "Mittelgasse",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Florstadt",
+      "spotCount": 1,
+      "lat": 50.3270366,
+      "lng": 8.8737651,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1415713213), ODbL"
+    },
+    {
+      "id": "florstadt-ebca41198a",
+      "city": "florstadt",
+      "label": "Mockstädter Straße 5a",
+      "street": "Mockstädter Straße",
+      "houseNumber": "5a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Florstadt",
+      "spotCount": 1,
+      "lat": 50.3298842,
+      "lng": 8.9132466,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1166048633), ODbL"
+    },
+    {
+      "id": "florstadt-829fe79734",
+      "city": "florstadt",
+      "label": "Schloßstraße",
+      "street": "Schloßstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Florstadt",
+      "spotCount": 1,
+      "lat": 50.31045865,
+      "lng": 8.9207663,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/831661817), ODbL"
+    }
+  ]
+}

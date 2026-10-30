@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hanhofen",
+    "name": "Hanhofen",
+    "center": {
+      "lat": 49.316070100000005,
+      "lng": 8.3431507
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hanhofen-0ec83d70cc",
+      "city": "hanhofen",
+      "label": "Raiffeisenstraße",
+      "street": "Raiffeisenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hanhofen",
+      "spotCount": 1,
+      "lat": 49.316070100000005,
+      "lng": 8.3431507,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1189222005), ODbL"
+    }
+  ]
+}

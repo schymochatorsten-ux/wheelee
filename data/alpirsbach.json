@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "alpirsbach",
+    "name": "Alpirsbach",
+    "center": {
+      "lat": 48.346641000000005,
+      "lng": 8.40358135
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "alpirsbach-887f7d57b8",
+      "city": "alpirsbach",
+      "label": "Schillerstraße",
+      "street": "Schillerstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Alpirsbach",
+      "spotCount": 1,
+      "lat": 48.346641000000005,
+      "lng": 8.40358135,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1557279829), ODbL"
+    }
+  ]
+}

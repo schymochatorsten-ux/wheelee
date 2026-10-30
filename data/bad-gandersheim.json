@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bad-gandersheim",
+    "name": "Bad Gandersheim",
+    "center": {
+      "lat": 51.8984074,
+      "lng": 10.035769550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-gandersheim-9ac2de4435",
+      "city": "bad-gandersheim",
+      "label": "Behindertenparkplatz Bad Gandersheim",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Gandersheim",
+      "spotCount": 3,
+      "lat": 51.8984074,
+      "lng": 10.035769550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1556724054), ODbL"
+    },
+    {
+      "id": "bad-gandersheim-40757e292a",
+      "city": "bad-gandersheim",
+      "label": "Petristraße",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Gandersheim",
+      "spotCount": 2,
+      "lat": 51.86930580000001,
+      "lng": 10.032125200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32047918), ODbL"
+    }
+  ]
+}

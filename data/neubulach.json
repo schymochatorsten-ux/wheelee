@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "neubulach",
+    "name": "Neubulach",
+    "center": {
+      "lat": 48.6662071,
+      "lng": 8.6852688
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neubulach-026057600f",
+      "city": "neubulach",
+      "label": "Auf der Strazel",
+      "street": "Auf der Strazel",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Sa 08:00-21:00, Su 08:00-11:00, PH off",
+      "district": "Neubulach",
+      "spotCount": 1,
+      "lat": 48.6662071,
+      "lng": 8.6852688,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/296311141), ODbL"
+    }
+  ]
+}

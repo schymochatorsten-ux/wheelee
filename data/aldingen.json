@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "aldingen",
+    "name": "Aldingen",
+    "center": {
+      "lat": 48.09354355000001,
+      "lng": 8.70086505
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "aldingen-f52686c4fa",
+      "city": "aldingen",
+      "label": "Eugen-Bolz-Straße",
+      "street": "Eugen-Bolz-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aldingen",
+      "spotCount": 1,
+      "lat": 48.09354355000001,
+      "lng": 8.70086505,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1464414581), ODbL"
+    }
+  ]
+}

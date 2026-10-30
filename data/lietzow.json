@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lietzow",
+    "name": "Lietzow",
+    "center": {
+      "lat": 54.48131120000001,
+      "lng": 13.5106964
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lietzow-8f41dd2b6c",
+      "city": "lietzow",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lietzow",
+      "spotCount": 6,
+      "lat": 54.48131120000001,
+      "lng": 13.5106964,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/609052888), ODbL"
+    }
+  ]
+}

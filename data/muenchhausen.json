@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "muenchhausen",
+    "name": "Münchhausen",
+    "center": {
+      "lat": 50.96187640000001,
+      "lng": 8.71802555
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "muenchhausen-38c46e2195",
+      "city": "muenchhausen",
+      "label": "Parkplatz barrierefreier Zugang Rathaus",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Münchhausen",
+      "spotCount": 2,
+      "lat": 50.96187640000001,
+      "lng": 8.71802555,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/961267256), ODbL"
+    }
+  ]
+}

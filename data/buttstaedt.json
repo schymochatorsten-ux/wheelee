@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "buttstaedt",
+    "name": "Buttstädt",
+    "center": {
+      "lat": 51.1442336,
+      "lng": 11.3332721
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "buttstaedt-a25a051ac9",
+      "city": "buttstaedt",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Buttstädt",
+      "spotCount": 1,
+      "lat": 51.1442336,
+      "lng": 11.3332721,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/459155380), ODbL"
+    }
+  ]
+}

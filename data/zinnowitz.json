@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "zinnowitz",
+    "name": "Zinnowitz",
+    "center": {
+      "lat": 54.079676500000005,
+      "lng": 13.9117
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zinnowitz-b162203d14",
+      "city": "zinnowitz",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zinnowitz",
+      "spotCount": 2,
+      "lat": 54.076133600000006,
+      "lng": 13.903227750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1396275159), ODbL"
+    },
+    {
+      "id": "zinnowitz-b18c0ce04a",
+      "city": "zinnowitz",
+      "label": "Dannweg",
+      "street": "Dannweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Zinnowitz",
+      "spotCount": 1,
+      "lat": 54.080434600000004,
+      "lng": 13.908562750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/417685065), ODbL"
+    },
+    {
+      "id": "zinnowitz-c7d0ddbf10",
+      "city": "zinnowitz",
+      "label": "Dannweg",
+      "street": "Dannweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Zinnowitz",
+      "spotCount": 1,
+      "lat": 54.079676500000005,
+      "lng": 13.9117,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1133770096), ODbL"
+    },
+    {
+      "id": "zinnowitz-33324b84f4",
+      "city": "zinnowitz",
+      "label": "Dr.-Wachsmann-Straße",
+      "street": "Dr.-Wachsmann-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zinnowitz",
+      "spotCount": 1,
+      "lat": 54.07991185,
+      "lng": 13.906586,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/417683236), ODbL"
+    },
+    {
+      "id": "zinnowitz-3352820dcc",
+      "city": "zinnowitz",
+      "label": "Hafenstraße",
+      "street": "Hafenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zinnowitz",
+      "spotCount": 3,
+      "lat": 54.063768350000004,
+      "lng": 13.9168323,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/868370842), ODbL"
+    },
+    {
+      "id": "zinnowitz-ea1c9a7567",
+      "city": "zinnowitz",
+      "label": "Neue Strandstraße",
+      "street": "Neue Strandstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zinnowitz",
+      "spotCount": 1,
+      "lat": 54.080391850000005,
+      "lng": 13.915062200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1477882147), ODbL"
+    },
+    {
+      "id": "zinnowitz-f779094116",
+      "city": "zinnowitz",
+      "label": "P5 Dünenstraße (Ost)",
+      "street": "Dünenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Zinnowitz",
+      "spotCount": 3,
+      "lat": 54.0786725,
+      "lng": 13.91999375,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/126563197), ODbL"
+    }
+  ]
+}

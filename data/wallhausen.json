@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "wallhausen",
+    "name": "Wallhausen",
+    "center": {
+      "lat": 49.20927445,
+      "lng": 10.063194900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wallhausen-11adfc20d9",
+      "city": "wallhausen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wallhausen",
+      "spotCount": 1,
+      "lat": 49.20927445,
+      "lng": 10.063081450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1395673968), ODbL"
+    },
+    {
+      "id": "wallhausen-978dca90f5",
+      "city": "wallhausen",
+      "label": "Bahnhofstraße 4",
+      "street": "Bahnhofstraße",
+      "houseNumber": "4",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wallhausen",
+      "spotCount": 1,
+      "lat": 49.2092468,
+      "lng": 10.063194900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1395673967), ODbL"
+    }
+  ]
+}

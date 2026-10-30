@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "amt-wachsenburg",
+    "name": "Amt Wachsenburg",
+    "center": {
+      "lat": 50.8776448,
+      "lng": 10.9675157
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "amt-wachsenburg-701d6f8059",
+      "city": "amt-wachsenburg",
+      "label": "Am Ichtershäuser Wege",
+      "street": "Am Ichtershäuser Wege",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Amt Wachsenburg",
+      "spotCount": 7,
+      "lat": 50.86089820000001,
+      "lng": 10.939468900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1458045714), ODbL"
+    },
+    {
+      "id": "amt-wachsenburg-795f6dba8e",
+      "city": "amt-wachsenburg",
+      "label": "Die Bachstraße",
+      "street": "Die Bachstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Amt Wachsenburg",
+      "spotCount": 1,
+      "lat": 50.864015200000004,
+      "lng": 10.89489795,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/232436737), ODbL"
+    },
+    {
+      "id": "amt-wachsenburg-8d78fbcc93",
+      "city": "amt-wachsenburg",
+      "label": "Erfurter Straße 42",
+      "street": "Erfurter Straße",
+      "houseNumber": "42",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Amt Wachsenburg",
+      "spotCount": 1,
+      "lat": 50.8776448,
+      "lng": 10.9723222,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/614236304), ODbL"
+    },
+    {
+      "id": "amt-wachsenburg-8a882775df",
+      "city": "amt-wachsenburg",
+      "label": "Wachsenburgstraße",
+      "street": "Wachsenburgstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Amt Wachsenburg",
+      "spotCount": 1,
+      "lat": 50.878864650000004,
+      "lng": 10.9675157,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/33536881), ODbL"
+    },
+    {
+      "id": "amt-wachsenburg-7a42544c18",
+      "city": "amt-wachsenburg",
+      "label": "Willroder Forst",
+      "street": "Willroder Forst",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Amt Wachsenburg",
+      "spotCount": 2,
+      "lat": 50.91116275,
+      "lng": 11.07239645,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/372306544), ODbL"
+    }
+  ]
+}

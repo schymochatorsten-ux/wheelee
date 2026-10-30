@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bad-bellingen",
+    "name": "Bad Bellingen",
+    "center": {
+      "lat": 47.707579300000006,
+      "lng": 7.5256015000000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-bellingen-cccb4518a6",
+      "city": "bad-bellingen",
+      "label": "Rastplatz Fischergrund",
+      "street": "Rastplatz Fischergrund",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Bellingen",
+      "spotCount": 1,
+      "lat": 47.707579300000006,
+      "lng": 7.5254946,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13163035291), ODbL"
+    },
+    {
+      "id": "bad-bellingen-7446e8fd20",
+      "city": "bad-bellingen",
+      "label": "Rastplatz Rheinaue",
+      "street": "Rastplatz Rheinaue",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Bellingen",
+      "spotCount": 1,
+      "lat": 47.7068175,
+      "lng": 7.5256015000000005,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13163040417), ODbL"
+    },
+    {
+      "id": "bad-bellingen-24f08cf312",
+      "city": "bad-bellingen",
+      "label": "Raststätte Bad Bellingen",
+      "street": "Raststätte Bad Bellingen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Bellingen",
+      "spotCount": 3,
+      "lat": 47.7368484,
+      "lng": 7.551335450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/635959593), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lentfoehrden",
+    "name": "Lentföhrden",
+    "center": {
+      "lat": 53.87916475,
+      "lng": 9.886864150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lentfoehrden-ee0b53fbc7",
+      "city": "lentfoehrden",
+      "label": "Kieler Straße",
+      "street": "Kieler Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lentföhrden",
+      "spotCount": 4,
+      "lat": 53.87916475,
+      "lng": 9.886864150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1045104876), ODbL"
+    }
+  ]
+}

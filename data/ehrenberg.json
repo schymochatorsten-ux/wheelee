@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "ehrenberg",
+    "name": "Ehrenberg (Rhön)",
+    "center": {
+      "lat": 50.524667300000004,
+      "lng": 10.014858450000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ehrenberg-856870637c",
+      "city": "ehrenberg",
+      "label": "Eisenacher Straße",
+      "street": "Eisenacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ehrenberg (Rhön)",
+      "spotCount": 4,
+      "lat": 50.524667300000004,
+      "lng": 10.01609985,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/858224490), ODbL"
+    },
+    {
+      "id": "ehrenberg-298c25a86d",
+      "city": "ehrenberg",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ehrenberg (Rhön)",
+      "spotCount": 3,
+      "lat": 50.5447665,
+      "lng": 10.014858450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1568935459), ODbL"
+    },
+    {
+      "id": "ehrenberg-c6d0a220cc",
+      "city": "ehrenberg",
+      "label": "Parkplatz Tegut und Schwimmbad",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ehrenberg (Rhön)",
+      "spotCount": 2,
+      "lat": 50.50109155,
+      "lng": 10.0005509,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/87508796), ODbL"
+    }
+  ]
+}

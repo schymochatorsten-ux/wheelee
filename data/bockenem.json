@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bockenem",
+    "name": "Bockenem",
+    "center": {
+      "lat": 52.04633080000001,
+      "lng": 10.1329794
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bockenem-a731f1b9da",
+      "city": "bockenem",
+      "label": "Am Alten Friedhof",
+      "street": "Am Alten Friedhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bockenem",
+      "spotCount": 3,
+      "lat": 52.010427050000004,
+      "lng": 10.1329794,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/732138764), ODbL"
+    },
+    {
+      "id": "bockenem-1a366c7851",
+      "city": "bockenem",
+      "label": "Behindertenparkplatz Bockenem",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bockenem",
+      "spotCount": 2,
+      "lat": 52.04633080000001,
+      "lng": 10.084749650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1315978435), ODbL"
+    }
+  ]
+}

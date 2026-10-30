@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "rabenau-sn",
+    "name": "Rabenau",
+    "center": {
+      "lat": 50.95751155000001,
+      "lng": 13.66064455
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rabenau-sn-974d5c306e",
+      "city": "rabenau-sn",
+      "label": "Hauptstraße 117",
+      "street": "Hauptstraße",
+      "houseNumber": "117",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rabenau",
+      "spotCount": 2,
+      "lat": 50.95751155000001,
+      "lng": 13.66064455,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/464915036), ODbL"
+    }
+  ]
+}

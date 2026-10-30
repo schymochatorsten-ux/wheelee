@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "thum",
+    "name": "Thum",
+    "center": {
+      "lat": 50.670714700000005,
+      "lng": 12.9539127
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "thum-ad81c9adc7",
+      "city": "thum",
+      "label": "Rathausplatz 4",
+      "street": "Rathausplatz",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Thum",
+      "spotCount": 1,
+      "lat": 50.670714700000005,
+      "lng": 12.9539127,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1529713235), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "muhr-a-see",
+    "name": "Muhr a.See",
+    "center": {
+      "lat": 49.14535480000001,
+      "lng": 10.7261887
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "muhr-a-see-577916e401",
+      "city": "muhr-a-see",
+      "label": "Behindertenparkplatz Muhr a.See",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Muhr a.See",
+      "spotCount": 1,
+      "lat": 49.1452103,
+      "lng": 10.7261887,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13991005362), ODbL"
+    },
+    {
+      "id": "muhr-a-see-e3fdfcf539",
+      "city": "muhr-a-see",
+      "label": "Behindertenparkplatz Muhr a.See",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Muhr a.See",
+      "spotCount": 3,
+      "lat": 49.14535480000001,
+      "lng": 10.726671150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25350374), ODbL"
+    },
+    {
+      "id": "muhr-a-see-b14daad6cb",
+      "city": "muhr-a-see",
+      "label": "Schloßstraße 1",
+      "street": "Schloßstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Muhr a.See",
+      "spotCount": 1,
+      "lat": 49.1548042,
+      "lng": 10.7090093,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/837662116), ODbL"
+    }
+  ]
+}

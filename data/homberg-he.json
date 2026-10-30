@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "homberg-he",
+    "name": "Homberg (Ohm)",
+    "center": {
+      "lat": 50.722300950000005,
+      "lng": 9.00505925
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "homberg-he-7e87bdde10",
+      "city": "homberg-he",
+      "label": "Diebachsgraben",
+      "street": "Diebachsgraben",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Homberg (Ohm)",
+      "spotCount": 2,
+      "lat": 50.749155900000005,
+      "lng": 9.033194,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1534267097), ODbL"
+    },
+    {
+      "id": "homberg-he-54a4050e30",
+      "city": "homberg-he",
+      "label": "Diebachsgraben",
+      "street": "Diebachsgraben",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Homberg (Ohm)",
+      "spotCount": 2,
+      "lat": 50.74752935,
+      "lng": 9.032097750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1534267101), ODbL"
+    },
+    {
+      "id": "homberg-he-97dbc21e71",
+      "city": "homberg-he",
+      "label": "Dr.-Rudolf-Kellermann-Straße",
+      "street": "Dr.-Rudolf-Kellermann-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Homberg (Ohm)",
+      "spotCount": 4,
+      "lat": 50.722297000000005,
+      "lng": 9.00497105,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1560465342), ODbL"
+    },
+    {
+      "id": "homberg-he-95847110b9",
+      "city": "homberg-he",
+      "label": "Walter-Seitz-Platz",
+      "street": "Walter-Seitz-Platz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Homberg (Ohm)",
+      "spotCount": 1,
+      "lat": 50.7258287,
+      "lng": 8.994566800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/714432192), ODbL"
+    },
+    {
+      "id": "homberg-he-6845505471",
+      "city": "homberg-he",
+      "label": "Werkumfahrung",
+      "street": "Werkumfahrung",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Homberg (Ohm)",
+      "spotCount": 1,
+      "lat": 50.72226260000001,
+      "lng": 9.00507265,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1560465346), ODbL"
+    },
+    {
+      "id": "homberg-he-a28f1ea6ad",
+      "city": "homberg-he",
+      "label": "Werkumfahrung",
+      "street": "Werkumfahrung",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Homberg (Ohm)",
+      "spotCount": 1,
+      "lat": 50.722281450000004,
+      "lng": 9.00505925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1560465347), ODbL"
+    },
+    {
+      "id": "homberg-he-7cd0096ad1",
+      "city": "homberg-he",
+      "label": "Werkumfahrung",
+      "street": "Werkumfahrung",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Homberg (Ohm)",
+      "spotCount": 1,
+      "lat": 50.722300950000005,
+      "lng": 9.00504505,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1560465348), ODbL"
+    }
+  ]
+}

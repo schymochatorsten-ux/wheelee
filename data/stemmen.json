@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "stemmen",
+    "name": "Stemmen",
+    "center": {
+      "lat": 53.2220511,
+      "lng": 9.55346995
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "stemmen-38666ef5ef",
+      "city": "stemmen",
+      "label": "Flaßworth",
+      "street": "Flaßworth",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Stemmen",
+      "spotCount": 1,
+      "lat": 53.2218534,
+      "lng": 9.55346995,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1223377647), ODbL"
+    },
+    {
+      "id": "stemmen-941103744b",
+      "city": "stemmen",
+      "label": "Große Straße 12",
+      "street": "Große Straße",
+      "houseNumber": "12",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Stemmen",
+      "spotCount": 1,
+      "lat": 53.2220511,
+      "lng": 9.552907650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1223377646), ODbL"
+    }
+  ]
+}

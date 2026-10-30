@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ducherow",
+    "name": "Ducherow",
+    "center": {
+      "lat": 53.7629857,
+      "lng": 13.79852245
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ducherow-723632cf22",
+      "city": "ducherow",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ducherow",
+      "spotCount": 1,
+      "lat": 53.7629857,
+      "lng": 13.79852245,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/974211119), ODbL"
+    }
+  ]
+}

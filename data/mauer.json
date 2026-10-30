@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "mauer",
+    "name": "Mauer",
+    "center": {
+      "lat": 49.34231175000001,
+      "lng": 8.7955498
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mauer-b6be6ea6a4",
+      "city": "mauer",
+      "label": "Bahnhof",
+      "street": "Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Mauer",
+      "spotCount": 1,
+      "lat": 49.335933,
+      "lng": 8.7955498,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1293390642), ODbL"
+    },
+    {
+      "id": "mauer-5663850891",
+      "city": "mauer",
+      "label": "Bammentaler Straße",
+      "street": "Bammentaler Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mauer",
+      "spotCount": 2,
+      "lat": 49.346760950000004,
+      "lng": 8.793060350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/585720314), ODbL"
+    },
+    {
+      "id": "mauer-98ae4c26ad",
+      "city": "mauer",
+      "label": "Mauer (b Heidelberg)",
+      "street": "Mauer (b Heidelberg)",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Mauer",
+      "spotCount": 2,
+      "lat": 49.335978600000004,
+      "lng": 8.79543625,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/188150867), ODbL"
+    },
+    {
+      "id": "mauer-2899d00f6e",
+      "city": "mauer",
+      "label": "Von-Zyllnhardt-Straße 16",
+      "street": "Von-Zyllnhardt-Straße",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mauer",
+      "spotCount": 1,
+      "lat": 49.34231175000001,
+      "lng": 8.80181325,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/331153845), ODbL"
+    },
+    {
+      "id": "mauer-6163889408",
+      "city": "mauer",
+      "label": "Von-Zyllnhardt-Straße 30",
+      "street": "Von-Zyllnhardt-Straße",
+      "houseNumber": "30",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mauer",
+      "spotCount": 1,
+      "lat": 49.34244995,
+      "lng": 8.8033861,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/320014853), ODbL"
+    }
+  ]
+}

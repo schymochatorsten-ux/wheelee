@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "noer",
+    "name": "Noer",
+    "center": {
+      "lat": 54.468444850000004,
+      "lng": 10.00490235
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "noer-040537a716",
+      "city": "noer",
+      "label": "Haffkamp 22",
+      "street": "Haffkamp",
+      "houseNumber": "22",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Noer",
+      "spotCount": 2,
+      "lat": 54.468444850000004,
+      "lng": 10.005122550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/257268733), ODbL"
+    },
+    {
+      "id": "noer-71f1e30d61",
+      "city": "noer",
+      "label": "Haffkamp 22",
+      "street": "Haffkamp",
+      "houseNumber": "22",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Noer",
+      "spotCount": 1,
+      "lat": 54.46845585,
+      "lng": 10.00490235,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1509477763), ODbL"
+    },
+    {
+      "id": "noer-21d3362eeb",
+      "city": "noer",
+      "label": "Strandweg",
+      "street": "Strandweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Noer",
+      "spotCount": 2,
+      "lat": 54.463348550000006,
+      "lng": 9.94741875,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/90241566), ODbL"
+    }
+  ]
+}

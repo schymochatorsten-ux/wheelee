@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "saulheim",
+    "name": "Saulheim",
+    "center": {
+      "lat": 49.875297200000006,
+      "lng": 8.1547084
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "saulheim-b0c775d191",
+      "city": "saulheim",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Saulheim",
+      "spotCount": 2,
+      "lat": 49.87440385000001,
+      "lng": 8.1547084,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/37609634), ODbL"
+    },
+    {
+      "id": "saulheim-4bd5fad954",
+      "city": "saulheim",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Saulheim",
+      "spotCount": 1,
+      "lat": 49.87412105,
+      "lng": 8.1543299,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1456210285), ODbL"
+    },
+    {
+      "id": "saulheim-5ae0e2d9d2",
+      "city": "saulheim",
+      "label": "Marie-Curie-Ring 9",
+      "street": "Marie-Curie-Ring",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Saulheim",
+      "spotCount": 1,
+      "lat": 49.87639295,
+      "lng": 8.166625750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/33836876), ODbL"
+    },
+    {
+      "id": "saulheim-62a181f2f5",
+      "city": "saulheim",
+      "label": "REWE",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Saulheim",
+      "spotCount": 3,
+      "lat": 49.87589965000001,
+      "lng": 8.163979750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/59190638), ODbL"
+    },
+    {
+      "id": "saulheim-3cb19ac867",
+      "city": "saulheim",
+      "label": "Weedengasse 18",
+      "street": "Weedengasse",
+      "houseNumber": "18",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Saulheim",
+      "spotCount": 1,
+      "lat": 49.875297200000006,
+      "lng": 8.150663900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/101534594), ODbL"
+    }
+  ]
+}

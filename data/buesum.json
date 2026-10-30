@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "buesum",
+    "name": "Büsum",
+    "center": {
+      "lat": 54.132009950000004,
+      "lng": 8.860446300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "buesum-22f18f59bd",
+      "city": "buesum",
+      "label": "Bäckergang",
+      "street": "Bäckergang",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Büsum",
+      "spotCount": 3,
+      "lat": 54.129119,
+      "lng": 8.860446300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12518471364), ODbL"
+    },
+    {
+      "id": "buesum-68e191efe2",
+      "city": "buesum",
+      "label": "Büsum ZOB",
+      "street": "Büsum ZOB",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Büsum",
+      "spotCount": 2,
+      "lat": 54.1337903,
+      "lng": 8.86680695,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/974088923), ODbL"
+    },
+    {
+      "id": "buesum-07d8edaf94",
+      "city": "buesum",
+      "label": "Feuerwehrhauptmann-Lindemann-Platz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Büsum",
+      "spotCount": 1,
+      "lat": 54.132009950000004,
+      "lng": 8.8550828,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/30403720), ODbL"
+    },
+    {
+      "id": "buesum-a5ccdd4669",
+      "city": "buesum",
+      "label": "Hohenzollernstraße",
+      "street": "Hohenzollernstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Büsum",
+      "spotCount": 4,
+      "lat": 54.12937995,
+      "lng": 8.854498800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/142136487), ODbL"
+    }
+  ]
+}

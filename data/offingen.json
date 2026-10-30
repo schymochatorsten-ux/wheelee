@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "offingen",
+    "name": "Offingen",
+    "center": {
+      "lat": 48.48173235,
+      "lng": 10.376593249999999
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "offingen-0340dbd8a9",
+      "city": "offingen",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Offingen",
+      "spotCount": 1,
+      "lat": 48.48173235,
+      "lng": 10.376593249999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1041126393), ODbL"
+    },
+    {
+      "id": "offingen-7c4047890b",
+      "city": "offingen",
+      "label": "Anton-Günther-Straße 5",
+      "street": "Anton-Günther-Straße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Offingen",
+      "spotCount": 1,
+      "lat": 48.48122265000001,
+      "lng": 10.376506000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/391081825), ODbL"
+    }
+  ]
+}

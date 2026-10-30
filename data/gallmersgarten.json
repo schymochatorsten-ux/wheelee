@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "gallmersgarten",
+    "name": "Gallmersgarten",
+    "center": {
+      "lat": 49.45242995,
+      "lng": 10.274035750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gallmersgarten-deb81f362a",
+      "city": "gallmersgarten",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gallmersgarten",
+      "spotCount": 2,
+      "lat": 49.45242995,
+      "lng": 10.274035750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/47043892), ODbL"
+    }
+  ]
+}

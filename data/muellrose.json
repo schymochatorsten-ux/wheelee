@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "muellrose",
+    "name": "Müllrose",
+    "center": {
+      "lat": 52.24596135,
+      "lng": 14.41497035
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "muellrose-7b81e1dd4f",
+      "city": "muellrose",
+      "label": "Alte Poststraße 1",
+      "street": "Alte Poststraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Müllrose",
+      "spotCount": 4,
+      "lat": 52.2417456,
+      "lng": 14.4114021,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13991050367), ODbL"
+    },
+    {
+      "id": "muellrose-209a45ecfb",
+      "city": "muellrose",
+      "label": "Beeskower Straße",
+      "street": "Beeskower Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Müllrose",
+      "spotCount": 4,
+      "lat": 52.24185765,
+      "lng": 14.412211250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35467372), ODbL"
+    },
+    {
+      "id": "muellrose-46a48169b3",
+      "city": "muellrose",
+      "label": "Frankfurter Straße 34",
+      "street": "Frankfurter Straße",
+      "houseNumber": "34",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Müllrose",
+      "spotCount": 4,
+      "lat": 52.256990800000004,
+      "lng": 14.426360500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1012043669), ODbL"
+    },
+    {
+      "id": "muellrose-048cf82357",
+      "city": "muellrose",
+      "label": "Kirchstraße",
+      "street": "Kirchstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Müllrose",
+      "spotCount": 1,
+      "lat": 52.24642535,
+      "lng": 14.41332595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1350817613), ODbL"
+    },
+    {
+      "id": "muellrose-0885a97c48",
+      "city": "muellrose",
+      "label": "Markt 13",
+      "street": "Markt",
+      "houseNumber": "13",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Müllrose",
+      "spotCount": 1,
+      "lat": 52.24596135,
+      "lng": 14.41497035,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1351425632), ODbL"
+    },
+    {
+      "id": "muellrose-e45b2fa421",
+      "city": "muellrose",
+      "label": "Wildwinkel",
+      "street": "Wildwinkel",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Müllrose",
+      "spotCount": 1,
+      "lat": 52.2425134,
+      "lng": 14.432749950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1012540156), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "bevern",
+    "name": "Bevern",
+    "center": {
+      "lat": 51.8572429,
+      "lng": 9.493001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bevern-a9ab71305e",
+      "city": "bevern",
+      "label": "Forster Straße",
+      "street": "Forster Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bevern",
+      "spotCount": 1,
+      "lat": 51.8572429,
+      "lng": 9.492935800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11824566321), ODbL"
+    },
+    {
+      "id": "bevern-75b6bf654c",
+      "city": "bevern",
+      "label": "Forster Straße",
+      "street": "Forster Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bevern",
+      "spotCount": 1,
+      "lat": 51.857234600000005,
+      "lng": 9.4929766,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11824566322), ODbL"
+    },
+    {
+      "id": "bevern-25ed84e212",
+      "city": "bevern",
+      "label": "Forster Straße",
+      "street": "Forster Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bevern",
+      "spotCount": 1,
+      "lat": 51.857221100000004,
+      "lng": 9.4930255,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11824566323), ODbL"
+    },
+    {
+      "id": "bevern-faac57a4ee",
+      "city": "bevern",
+      "label": "REWE",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bevern",
+      "spotCount": 2,
+      "lat": 51.85736505,
+      "lng": 9.493001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1089393556), ODbL"
+    }
+  ]
+}

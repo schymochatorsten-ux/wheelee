@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ueckeritz",
+    "name": "Ückeritz",
+    "center": {
+      "lat": 53.982529050000004,
+      "lng": 14.076804000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ueckeritz-1e9d0840f1",
+      "city": "ueckeritz",
+      "label": "Behindertenparkplatz Ückeritz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ückeritz",
+      "spotCount": 1,
+      "lat": 53.982529050000004,
+      "lng": 14.076804000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/983222533), ODbL"
+    }
+  ]
+}

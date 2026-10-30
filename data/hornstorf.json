@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hornstorf",
+    "name": "Hornstorf",
+    "center": {
+      "lat": 53.89158210000001,
+      "lng": 11.53094115
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hornstorf-a6c70ef36e",
+      "city": "hornstorf",
+      "label": "Karpendiek 3",
+      "street": "Karpendiek",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hornstorf",
+      "spotCount": 1,
+      "lat": 53.89158210000001,
+      "lng": 11.53094115,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/56016896), ODbL"
+    }
+  ]
+}

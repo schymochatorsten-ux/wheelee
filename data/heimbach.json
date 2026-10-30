@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "heimbach",
+    "name": "Heimbach",
+    "center": {
+      "lat": 50.64029000000001,
+      "lng": 6.44400915
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "heimbach-f2ee856e43",
+      "city": "heimbach",
+      "label": "An der Laag",
+      "street": "An der Laag",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heimbach",
+      "spotCount": 1,
+      "lat": 50.636693050000005,
+      "lng": 6.4731384,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/133750878), ODbL"
+    },
+    {
+      "id": "heimbach-b89d9cc0f6",
+      "city": "heimbach",
+      "label": "Schwammenauelrurtalsperre",
+      "street": "Schwammenauelrurtalsperre",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Heimbach",
+      "spotCount": 1,
+      "lat": 50.64030615,
+      "lng": 6.44400915,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35416630), ODbL"
+    },
+    {
+      "id": "heimbach-c8fbb64801",
+      "city": "heimbach",
+      "label": "Schwammenauelrurtalsperre",
+      "street": "Schwammenauelrurtalsperre",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Heimbach",
+      "spotCount": 1,
+      "lat": 50.64029000000001,
+      "lng": 6.442611250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35416631), ODbL"
+    }
+  ]
+}

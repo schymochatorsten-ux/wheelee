@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "butjadingen",
+    "name": "Butjadingen",
+    "center": {
+      "lat": 53.581328500000005,
+      "lng": 8.2519547
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "butjadingen-4f4737e496",
+      "city": "butjadingen",
+      "label": "Am Deich",
+      "street": "Am Deich",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Butjadingen",
+      "spotCount": 2,
+      "lat": 53.5815191,
+      "lng": 8.3740945,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/219018467), ODbL"
+    },
+    {
+      "id": "butjadingen-a2d6567a1e",
+      "city": "butjadingen",
+      "label": "Eckwarder Ahndeich",
+      "street": "Eckwarder Ahndeich",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Butjadingen",
+      "spotCount": 8,
+      "lat": 53.52123945,
+      "lng": 8.2411006,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1495931913), ODbL"
+    },
+    {
+      "id": "butjadingen-77f93d1189",
+      "city": "butjadingen",
+      "label": "Feldhauser Deich",
+      "street": "Feldhauser Deich",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Butjadingen",
+      "spotCount": 2,
+      "lat": 53.60884455,
+      "lng": 8.3199665,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1317113965), ODbL"
+    },
+    {
+      "id": "butjadingen-22dd50f177",
+      "city": "butjadingen",
+      "label": "Helgolandstraße",
+      "street": "Helgolandstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Butjadingen",
+      "spotCount": 2,
+      "lat": 53.575686450000006,
+      "lng": 8.2519547,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/346369783), ODbL"
+    },
+    {
+      "id": "butjadingen-64d84895c7",
+      "city": "butjadingen",
+      "label": "Lagune",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Butjadingen",
+      "spotCount": 3,
+      "lat": 53.585678300000005,
+      "lng": 8.367005200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/54650013), ODbL"
+    },
+    {
+      "id": "butjadingen-b8b003fb6b",
+      "city": "butjadingen",
+      "label": "Tossenser Deich",
+      "street": "Tossenser Deich",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Butjadingen",
+      "spotCount": 1,
+      "lat": 53.581328500000005,
+      "lng": 8.24496135,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1471824027), ODbL"
+    },
+    {
+      "id": "butjadingen-5366a48879",
+      "city": "butjadingen",
+      "label": "Zum Leuchtfeuer",
+      "street": "Zum Leuchtfeuer",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Butjadingen",
+      "spotCount": 2,
+      "lat": 53.5213636,
+      "lng": 8.23304375,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/810574431), ODbL"
+    }
+  ]
+}

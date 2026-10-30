@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "rhumspringe",
+    "name": "Rhumspringe",
+    "center": {
+      "lat": 51.58399105000001,
+      "lng": 10.2980061
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rhumspringe-5533661ca2",
+      "city": "rhumspringe",
+      "label": "Dechant-Hartmann-Straße 19",
+      "street": "Dechant-Hartmann-Straße",
+      "houseNumber": "19",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rhumspringe",
+      "spotCount": 1,
+      "lat": 51.5837844,
+      "lng": 10.297615100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1221407509), ODbL"
+    },
+    {
+      "id": "rhumspringe-553286d1eb",
+      "city": "rhumspringe",
+      "label": "Dechant-Hartmann-Straße 21",
+      "street": "Dechant-Hartmann-Straße",
+      "houseNumber": "21",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rhumspringe",
+      "spotCount": 1,
+      "lat": 51.58399105000001,
+      "lng": 10.2980061,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1221512042), ODbL"
+    }
+  ]
+}

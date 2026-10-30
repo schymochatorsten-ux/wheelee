@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kapellendorf",
+    "name": "Kapellendorf",
+    "center": {
+      "lat": 50.9745265,
+      "lng": 11.466058850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kapellendorf-56c3fb3a96",
+      "city": "kapellendorf",
+      "label": "Frankendorfer Straße",
+      "street": "Frankendorfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kapellendorf",
+      "spotCount": 1,
+      "lat": 50.9745265,
+      "lng": 11.466058850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/321325850), ODbL"
+    }
+  ]
+}

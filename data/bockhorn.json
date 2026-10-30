@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bockhorn",
+    "name": "Bockhorn",
+    "center": {
+      "lat": 53.38730205,
+      "lng": 8.01737945
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bockhorn-cefe3e02ad",
+      "city": "bockhorn",
+      "label": "Am Geeschendamm 4",
+      "street": "Am Geeschendamm",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bockhorn",
+      "spotCount": 1,
+      "lat": 53.3862623,
+      "lng": 8.010353250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/804739825), ODbL"
+    },
+    {
+      "id": "bockhorn-5fd441749e",
+      "city": "bockhorn",
+      "label": "Kurze Straße",
+      "street": "Kurze Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bockhorn",
+      "spotCount": 2,
+      "lat": 53.392859650000005,
+      "lng": 8.02147995,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/722454148), ODbL"
+    },
+    {
+      "id": "bockhorn-491617dfa5",
+      "city": "bockhorn",
+      "label": "Parkplatz Wohnwelt von Harten",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bockhorn",
+      "spotCount": 1,
+      "lat": 53.38730205,
+      "lng": 8.01737945,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/40822167), ODbL"
+    }
+  ]
+}

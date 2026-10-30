@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "erpel",
+    "name": "Erpel",
+    "center": {
+      "lat": 50.5831031,
+      "lng": 7.239352200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "erpel-3c5e2cffab",
+      "city": "erpel",
+      "label": "Erpeler-Ley-Straße",
+      "street": "Erpeler-Ley-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Erpel",
+      "spotCount": 1,
+      "lat": 50.5831031,
+      "lng": 7.239352200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/135083429), ODbL"
+    },
+    {
+      "id": "erpel-d84850d1a4",
+      "city": "erpel",
+      "label": "Kölner Straße 16",
+      "street": "Kölner Straße",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Erpel",
+      "spotCount": 1,
+      "lat": 50.582656650000004,
+      "lng": 7.2377351,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1569459032), ODbL"
+    },
+    {
+      "id": "erpel-d566d26a92",
+      "city": "erpel",
+      "label": "Leyweg",
+      "street": "Leyweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Erpel",
+      "spotCount": 2,
+      "lat": 50.5927464,
+      "lng": 7.244774750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1115995391), ODbL"
+    }
+  ]
+}

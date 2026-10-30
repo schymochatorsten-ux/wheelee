@@ -48,7 +48,7 @@ export const it: Messages = {
   "list.spacesOne": "{count} posto",
   "list.spacesMany": "{count} posti",
   "list.nearby": "Parcheggi nelle vicinanze",
-  "list.nearest": "Parcheggio più vicino",
+  "list.nearest": "Parcheggi più vicini",
   "list.noLocation": "Senza accesso alla posizione, la distanza è misurata dal centro della città.",
   "list.showDetails": "Mostra i dettagli",
   "list.unlocated": "Senza posizione esatta ({count})",
@@ -68,6 +68,9 @@ export const it: Messages = {
   "list.osmNote":
     "I dati di OpenStreetMap mostrano per lo più parcheggi con posti riservati ai disabili e non singoli posti sul bordo della strada, e sono incompleti – se lì manca una voce, non significa che non ci siano parcheggi per disabili.",
   "list.allCities": "Tutte le {count} città con la fonte",
+  "list.cityFilter": "Cerca una città",
+  "list.cityShown": "Mostrate {shown} su {count}: digita un nome per trovarne altre.",
+  "list.cityNone": "Nessuna città trovata.",
   "list.cityCounts": ": {spots} luoghi, {spaces} posti",
   "list.source": "Fonte: {source}",
   "list.licenseMissing": " · licenza non indicata",
@@ -83,13 +86,16 @@ export const it: Messages = {
   "details.distance": "Distanza",
   "details.noLocation": "Posizione non condivisa",
   "details.restrictionOff":
-    "La limitazione {strong} – il parcheggio può essere usato liberamente in questo momento.",
+    "La limitazione {strong} – il parcheggio può essere usato liberamente.",
   "details.restrictionOffStrong": "non è in vigore al momento",
   "details.restrictionOn": "La limitazione è in vigore {strong}.",
   "details.restrictionOnStrong": "al momento",
   "details.confirmed":
     "{strong} – l’amministrazione comunale e OpenStreetMap indicano questo posto nello stesso punto.",
   "details.confirmedStrong": "Confermato da due fonti",
+  "details.osmOnly":
+    "{strong} – l’elenco ufficiale della città non include questo posto. Può essere nuovo o mancare lì; l’informazione non è verificata, controlla sul posto.",
+  "details.osmOnlyStrong": "Solo in OpenStreetMap",
   "details.approx":
     "La posizione è nota solo approssimativamente – il parcheggio si trova su questa via, il punto esatto può differire.",
   "details.source": "Fonte: {source}",
@@ -163,6 +169,8 @@ export const it: Messages = {
   "settings.legal": "Note legali",
   "settings.imprint": "Impressum (note legali)",
   "settings.privacy": "Informativa sulla privacy",
+  "settings.sources": "Fonti e licenze",
+  "settings.coverage": "Copertura dei dati",
 
   "account.emailInvalid": "Questo indirizzo e-mail non sembra corretto.",
   "account.passwordTooShort": "La password deve avere almeno {min} caratteri.",
@@ -172,7 +180,7 @@ export const it: Messages = {
   "account.signedInAs": "Accesso effettuato come {email}",
   "account.admin": "Amministratore",
   "account.storedData":
-    "Il tuo account memorizza solo l’indirizzo e-mail e la password cifrata. La tua posizione non viene comunque memorizzata – nemmeno con un account.",
+    "Il tuo account memorizza solo l’indirizzo e-mail e la password cifrata. La tua posizione continua a non essere memorizzata – nemmeno con un account.",
   "account.logout": "Esci",
   "account.changePassword": "Cambia password",
   "account.oldPassword": "Password attuale",
@@ -282,7 +290,7 @@ export const it: Messages = {
   "rating.lastConfirmed": "Ultima conferma:",
   "rating.lastGone": "Ultima segnalazione di rimozione:",
   "rating.needAccount":
-    "Per valutare serve un account – in “Impostazioni → Account”. Le informazioni puoi comunque consultarle senza.",
+    "Per valutare serve un account – in “Impostazioni → Account”. Puoi comunque consultare le informazioni anche senza account.",
   "rating.voted": "Hai votato. Toccando di nuovo ritiri il voto, l’altro pulsante lo inverte.",
   "rating.votes": "{label}, {count} voti",
 
@@ -298,7 +306,7 @@ export const it: Messages = {
     "Parcheggi con almeno {count} segnalazione da account diversi. Le valutazioni non modificano i dati – è un elenco da controllare.",
   "reported.introMany":
     "Parcheggi con almeno {count} segnalazioni da account diversi. Le valutazioni non modificano i dati – è un elenco da controllare.",
-  "reported.minimum": "Da quante segnalazioni",
+  "reported.minimum": "A partire da quante segnalazioni",
   "reported.minimumAll": "1 (tutti)",
   "reported.none": "Nessun parcheggio è stato segnalato così spesso. È una buona notizia.",
   "reported.goneCount": "{count}× rimosso",
@@ -391,7 +399,7 @@ export const it: Messages = {
   "view.map": "Mappa",
   "view.list": "Elenco",
   "view.settings": "Impostazioni",
-  "view.feedback": "Segnalazione",
+  "view.feedback": "Segnalazioni",
   "view.choose": "Scegli la vista",
   "map.loading": "Caricamento della mappa …",
   "map.locating": "Ricerca della tua posizione …",
@@ -427,7 +435,7 @@ export const it: Messages = {
     "L’app non è riuscita a costruire questa vista. Non è colpa tua. Spesso basta un secondo tentativo – i dati dei parcheggi non sono interessati.",
   "error.retry": "Riprova",
   "error.backToMap": "Torna alla mappa",
-  "globalError.title": "wheelee ha avuto un arresto",
+  "globalError.title": "wheelee si è bloccata",
   "globalError.text":
     "L’app non è riuscita ad avviarsi. Non è colpa tua. Se il problema persiste dopo un secondo tentativo, di solito aiuta ricaricare la pagina.",
 
@@ -440,7 +448,7 @@ export const it: Messages = {
   "legal.missingTitle": "Questi dati mancano ancora",
   "legal.missingText":
     "I dati del gestore non sono impostati su questo server. È un errore di configurazione, non una svista nel testo – la pagina qui non inventa nulla.",
-  "legal.missingHow": "Da impostare sono {name}, {address} ed {email}; il modello si trova in {template}.",
+  "legal.missingHow": "Da impostare sono {name}, {address} e {email}; il modello si trova in {template}.",
 
   "api.notSignedIn": "Accesso non effettuato.",
   "api.invalidRequest": "Richiesta non valida.",
@@ -490,7 +498,7 @@ export const it: Messages = {
   "api.invitationInvalid": "L’invito non è valido, è scaduto o è già stato usato.",
   "api.tooManyInvitations": "Troppi inviti in poco tempo. Riprova più tardi.",
   "invitation.title": "Accetta l’invito",
-  "invitation.intro": "Sei stato invitato su wheelee. Scegli una password per creare il tuo account.",
+  "invitation.intro": "Ti hanno invitato su wheelee. Scegli una password per creare il tuo account.",
   "invitation.password": "Password",
   "invitation.submit": "Crea account",
   "invitation.missing": "Questo link non contiene un invito.",
@@ -516,7 +524,7 @@ export const it: Messages = {
   "users.you": "tu",
   "users.disabled": "bloccato",
   "users.lastLogin": "Ultimo accesso: {date}",
-  "users.never": "mai acceduto",
+  "users.never": "nessun accesso finora",
   "users.search": "Cerca account (parte dell’indirizzo e-mail)",
   "users.count": "{shown} di {total} account – prima amministratori e account bloccati",
   "users.noMatch": "Nessun account corrisponde alla ricerca.",
@@ -526,7 +534,7 @@ export const it: Messages = {
   "users.disable": "Blocca",
   "users.enable": "Sblocca",
   "users.delete": "Elimina",
-  "users.deleteConfirm": "Eliminare definitivamente l’account {email} con le sue valutazioni e i suoi preferiti?",
+  "users.deleteConfirm": "Eliminare definitivamente l’account {email} con le sue valutazioni e i suoi parcheggi salvati?",
   "users.state.open": "aperto",
   "users.state.used": "utilizzato",
   "users.state.expired": "scaduto",
@@ -573,12 +581,12 @@ export const it: Messages = {
   "reset.done": "La tua password è stata cambiata. Ora puoi accedere con essa.",
   "emailChange.open": "Cambia indirizzo e-mail",
   "emailChange.note":
-    "Invieremo un link al nuovo indirizzo. Diventa valido solo quando lo apri; fino ad allora resta quello attuale.",
+    "Invieremo un link al nuovo indirizzo. L’indirizzo viene adottato solo quando apri il link; fino ad allora resta quello attuale.",
   "emailChange.newEmail": "Nuovo indirizzo e-mail",
   "emailChange.password": "La tua password, per confermare",
   "emailChange.submit": "Invia il link",
   "emailChange.sent":
-    "Se l’indirizzo è libero,abbiamo inviato un link a quell’indirizzo. Finché non lo apri, resta l’indirizzo attuale.",
+    "Se l’indirizzo è libero, abbiamo inviato un link a quell’indirizzo. Finché non lo apri, resta l’indirizzo attuale.",
   "confirmEmail.title": "Conferma l’indirizzo e-mail",
   "confirmEmail.intro": "Con un clic questo indirizzo diventa l’indirizzo e-mail del tuo account.",
   "confirmEmail.submit": "Usa questo indirizzo",

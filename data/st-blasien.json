@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "st-blasien",
+    "name": "St. Blasien",
+    "center": {
+      "lat": 47.832974750000005,
+      "lng": 8.12900825
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "st-blasien-570193f967",
+      "city": "st-blasien",
+      "label": "Fürstabt-Gerbert-Straße 16",
+      "street": "Fürstabt-Gerbert-Straße",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "St. Blasien",
+      "spotCount": 3,
+      "lat": 47.760219400000004,
+      "lng": 8.130438600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/936827114), ODbL"
+    },
+    {
+      "id": "st-blasien-682b3bbd1d",
+      "city": "st-blasien",
+      "label": "Hauptstraße 7",
+      "street": "Hauptstraße",
+      "houseNumber": "7",
+      "note": null,
+      "timeRestriction": null,
+      "district": "St. Blasien",
+      "spotCount": 1,
+      "lat": 47.761656300000006,
+      "lng": 8.12900825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1510521111), ODbL"
+    },
+    {
+      "id": "st-blasien-e66466754f",
+      "city": "st-blasien",
+      "label": "Hinterdorfstraße",
+      "street": "Hinterdorfstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "St. Blasien",
+      "spotCount": 1,
+      "lat": 47.832974750000005,
+      "lng": 8.06643935,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1567258012), ODbL"
+    },
+    {
+      "id": "st-blasien-f2be0eac98",
+      "city": "st-blasien",
+      "label": "Wanderparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "St. Blasien",
+      "spotCount": 1,
+      "lat": 47.83912545,
+      "lng": 8.061536100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/277858123), ODbL"
+    }
+  ]
+}

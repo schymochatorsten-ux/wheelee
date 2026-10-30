@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "nienstaedt",
+    "name": "Nienstädt",
+    "center": {
+      "lat": 52.287028600000006,
+      "lng": 9.1858232
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nienstaedt-67acb863d2",
+      "city": "nienstaedt",
+      "label": "Schützenstraße",
+      "street": "Schützenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nienstädt",
+      "spotCount": 1,
+      "lat": 52.287028600000006,
+      "lng": 9.1858232,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1803288713), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "boergerende-rethwisch",
+    "name": "Börgerende-Rethwisch",
+    "center": {
+      "lat": 54.1498154,
+      "lng": 11.884011600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "boergerende-rethwisch-b019e6146b",
+      "city": "boergerende-rethwisch",
+      "label": "Deichstraße",
+      "street": "Deichstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Börgerende-Rethwisch",
+      "spotCount": 1,
+      "lat": 54.146933950000005,
+      "lng": 11.86763075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/37762973), ODbL"
+    },
+    {
+      "id": "boergerende-rethwisch-65624bdad5",
+      "city": "boergerende-rethwisch",
+      "label": "Deichstraße",
+      "street": "Deichstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Börgerende-Rethwisch",
+      "spotCount": 1,
+      "lat": 54.14856710000001,
+      "lng": 11.878142250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/39516040), ODbL"
+    },
+    {
+      "id": "boergerende-rethwisch-695d663ea9",
+      "city": "boergerende-rethwisch",
+      "label": "Deichstraße",
+      "street": "Deichstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Börgerende-Rethwisch",
+      "spotCount": 1,
+      "lat": 54.1498154,
+      "lng": 11.884011600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/124546275), ODbL"
+    },
+    {
+      "id": "boergerende-rethwisch-3c1658e3d9",
+      "city": "boergerende-rethwisch",
+      "label": "Deichstraße",
+      "street": "Deichstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Börgerende-Rethwisch",
+      "spotCount": 2,
+      "lat": 54.15269620000001,
+      "lng": 11.8989702,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1493141049), ODbL"
+    },
+    {
+      "id": "boergerende-rethwisch-e9846b27ff",
+      "city": "boergerende-rethwisch",
+      "label": "Deichstraße",
+      "street": "Deichstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Börgerende-Rethwisch",
+      "spotCount": 2,
+      "lat": 54.1525486,
+      "lng": 11.8983795,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1493141050), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "biendorf",
+    "name": "Biendorf",
+    "center": {
+      "lat": 54.076015250000005,
+      "lng": 11.7018594
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "biendorf-33e84f15dc",
+      "city": "biendorf",
+      "label": "Feldstraße",
+      "street": "Feldstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Biendorf",
+      "spotCount": 1,
+      "lat": 54.076015250000005,
+      "lng": 11.7018594,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1434312180), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hohenfelden",
+    "name": "Hohenfelden",
+    "center": {
+      "lat": 50.8788448,
+      "lng": 11.159948400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hohenfelden-b09800df56",
+      "city": "hohenfelden",
+      "label": "Im Dorfe 45",
+      "street": "Im Dorfe",
+      "houseNumber": "45",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hohenfelden",
+      "spotCount": 1,
+      "lat": 50.8788448,
+      "lng": 11.159948400000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12658495128), ODbL"
+    }
+  ]
+}

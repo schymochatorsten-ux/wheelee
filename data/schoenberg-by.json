@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schoenberg-by",
+    "name": "Schönberg",
+    "center": {
+      "lat": 48.838825500000006,
+      "lng": 13.3404015
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schoenberg-by-4545ac55e0",
+      "city": "schoenberg-by",
+      "label": "Unterer Marktplatz 9",
+      "street": "Unterer Marktplatz",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Schönberg",
+      "spotCount": 1,
+      "lat": 48.838825500000006,
+      "lng": 13.3404015,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/416877927), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schoenenberg-kuebelberg",
+    "name": "Schönenberg-Kübelberg",
+    "center": {
+      "lat": 49.4105625,
+      "lng": 7.375723000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schoenenberg-kuebelberg-762be6ad2b",
+      "city": "schoenenberg-kuebelberg",
+      "label": "An der Mühle",
+      "street": "An der Mühle",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schönenberg-Kübelberg",
+      "spotCount": 1,
+      "lat": 49.4105625,
+      "lng": 7.375723000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1494018952), ODbL"
+    }
+  ]
+}

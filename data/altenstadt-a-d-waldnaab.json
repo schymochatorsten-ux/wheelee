@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "altenstadt-a-d-waldnaab",
+    "name": "Altenstadt a.d.Waldnaab",
+    "center": {
+      "lat": 49.7145037,
+      "lng": 12.15646045
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "altenstadt-a-d-waldnaab-7b4dcd950c",
+      "city": "altenstadt-a-d-waldnaab",
+      "label": "Egerländerstraße",
+      "street": "Egerländerstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Altenstadt a.d.Waldnaab",
+      "spotCount": 1,
+      "lat": 49.7145037,
+      "lng": 12.15646045,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/661839711), ODbL"
+    },
+    {
+      "id": "altenstadt-a-d-waldnaab-7c807f6e05",
+      "city": "altenstadt-a-d-waldnaab",
+      "label": "Egerländerstraße",
+      "street": "Egerländerstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Altenstadt a.d.Waldnaab",
+      "spotCount": 1,
+      "lat": 49.71447275,
+      "lng": 12.15645205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/661839713), ODbL"
+    }
+  ]
+}

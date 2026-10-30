@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lunzenau",
+    "name": "Lunzenau",
+    "center": {
+      "lat": 50.94497625,
+      "lng": 12.7666514
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lunzenau-32ad835909",
+      "city": "lunzenau",
+      "label": "Schloßstraße",
+      "street": "Schloßstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Lunzenau",
+      "spotCount": 3,
+      "lat": 50.94497625,
+      "lng": 12.7666514,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/4550411), ODbL"
+    }
+  ]
+}

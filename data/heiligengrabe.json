@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "heiligengrabe",
+    "name": "Heiligengrabe",
+    "center": {
+      "lat": 53.1511757,
+      "lng": 12.393811500000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "heiligengrabe-c7e7f46a26",
+      "city": "heiligengrabe",
+      "label": "Liebenthaler Bahnhof",
+      "street": "Liebenthaler Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Heiligengrabe",
+      "spotCount": 1,
+      "lat": 53.1511757,
+      "lng": 12.393811500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1008055051), ODbL"
+    }
+  ]
+}

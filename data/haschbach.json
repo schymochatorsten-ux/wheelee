@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "haschbach",
+    "name": "Haschbach am Remigiusberg",
+    "center": {
+      "lat": 49.5215125,
+      "lng": 7.439183700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "haschbach-a7d559dd64",
+      "city": "haschbach",
+      "label": "Remigiusberg 'Wohnplatz'",
+      "street": "Remigiusberg 'Wohnplatz'",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Haschbach am Remigiusberg",
+      "spotCount": 1,
+      "lat": 49.5215125,
+      "lng": 7.439027100000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12115584865), ODbL"
+    },
+    {
+      "id": "haschbach-cf578cdd81",
+      "city": "haschbach",
+      "label": "Remigiusberg 'Wohnplatz'",
+      "street": "Remigiusberg 'Wohnplatz'",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Haschbach am Remigiusberg",
+      "spotCount": 1,
+      "lat": 49.521397650000004,
+      "lng": 7.439183700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/226523498), ODbL"
+    }
+  ]
+}

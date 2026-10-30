@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "lohmen-mv",
+    "name": "Lohmen",
+    "center": {
+      "lat": 53.68337940000001,
+      "lng": 12.0734203
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lohmen-mv-a1a447c26d",
+      "city": "lohmen-mv",
+      "label": "Garder Straße",
+      "street": "Garder Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lohmen",
+      "spotCount": 3,
+      "lat": 53.6830456,
+      "lng": 12.072335800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8808794645), ODbL"
+    },
+    {
+      "id": "lohmen-mv-a6b61c69a6",
+      "city": "lohmen-mv",
+      "label": "Patientenparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lohmen",
+      "spotCount": 1,
+      "lat": 53.683829700000004,
+      "lng": 12.073140350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/46767564), ODbL"
+    },
+    {
+      "id": "lohmen-mv-60780c36fe",
+      "city": "lohmen-mv",
+      "label": "Personalparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lohmen",
+      "spotCount": 1,
+      "lat": 53.68337940000001,
+      "lng": 12.074209,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/46767560), ODbL"
+    },
+    {
+      "id": "lohmen-mv-8aeb3820ab",
+      "city": "lohmen-mv",
+      "label": "Personalparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lohmen",
+      "spotCount": 1,
+      "lat": 53.68341145000001,
+      "lng": 12.0734203,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1252998367), ODbL"
+    },
+    {
+      "id": "lohmen-mv-54afdccaae",
+      "city": "lohmen-mv",
+      "label": "Personalparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lohmen",
+      "spotCount": 1,
+      "lat": 53.682947350000006,
+      "lng": 12.0737068,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1252998368), ODbL"
+    }
+  ]
+}

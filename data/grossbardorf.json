@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "grossbardorf",
+    "name": "Großbardorf",
+    "center": {
+      "lat": 50.264997650000005,
+      "lng": 10.37086095
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grossbardorf-24047b2f6e",
+      "city": "grossbardorf",
+      "label": "Unterhofer Straße",
+      "street": "Unterhofer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Großbardorf",
+      "spotCount": 1,
+      "lat": 50.264997650000005,
+      "lng": 10.37086095,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/206616099), ODbL"
+    }
+  ]
+}

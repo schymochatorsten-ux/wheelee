@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "kallmuenz",
+    "name": "Kallmünz",
+    "center": {
+      "lat": 49.16401375000001,
+      "lng": 11.962313550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kallmuenz-00c2bee4c6",
+      "city": "kallmuenz",
+      "label": "Am Sebastiberg",
+      "street": "Am Sebastiberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kallmünz",
+      "spotCount": 1,
+      "lat": 49.16401375000001,
+      "lng": 11.962313550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/746394862), ODbL"
+    },
+    {
+      "id": "kallmuenz-a30877094f",
+      "city": "kallmuenz",
+      "label": "Im Vilsfeld",
+      "street": "Im Vilsfeld",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kallmünz",
+      "spotCount": 2,
+      "lat": 49.1623819,
+      "lng": 11.946411950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/712544477), ODbL"
+    }
+  ]
+}

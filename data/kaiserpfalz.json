@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kaiserpfalz",
+    "name": "Kaiserpfalz",
+    "center": {
+      "lat": 51.2658983,
+      "lng": 11.496258700000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kaiserpfalz-a5222f81fd",
+      "city": "kaiserpfalz",
+      "label": "Thomas-Müntzer-Straße",
+      "street": "Thomas-Müntzer-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Kaiserpfalz",
+      "spotCount": 2,
+      "lat": 51.2658983,
+      "lng": 11.496258700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/174756653), ODbL"
+    }
+  ]
+}

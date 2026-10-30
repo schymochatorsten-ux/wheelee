@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "eggolsheim",
+    "name": "Eggolsheim",
+    "center": {
+      "lat": 49.748768150000004,
+      "lng": 11.07670705
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eggolsheim-07d7acd1f7",
+      "city": "eggolsheim",
+      "label": "Oertelbergstraße 4",
+      "street": "Oertelbergstraße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eggolsheim",
+      "spotCount": 2,
+      "lat": 49.748768150000004,
+      "lng": 11.07670705,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/792558737), ODbL"
+    }
+  ]
+}

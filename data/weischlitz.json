@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "weischlitz",
+    "name": "Weischlitz",
+    "center": {
+      "lat": 50.4467495,
+      "lng": 12.0607185
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "weischlitz-9272f1622d",
+      "city": "weischlitz",
+      "label": "Großzöbern Süd",
+      "street": "Großzöbern Süd",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weischlitz",
+      "spotCount": 2,
+      "lat": 50.410003950000004,
+      "lng": 12.039028900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/49222554), ODbL"
+    },
+    {
+      "id": "weischlitz-8ea4654979",
+      "city": "weischlitz",
+      "label": "Zum Bahnhof",
+      "street": "Zum Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weischlitz",
+      "spotCount": 2,
+      "lat": 50.4467495,
+      "lng": 12.0607185,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/164289907), ODbL"
+    }
+  ]
+}

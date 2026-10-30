@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "heede",
+    "name": "Heede",
+    "center": {
+      "lat": 52.9872159,
+      "lng": 7.277752400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "heede-9ed8616e03",
+      "city": "heede",
+      "label": "Störtebeker Straße",
+      "street": "Störtebeker Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heede",
+      "spotCount": 1,
+      "lat": 52.9872159,
+      "lng": 7.277752400000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11494462856), ODbL"
+    }
+  ]
+}

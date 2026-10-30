@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "altwarp",
+    "name": "Altwarp",
+    "center": {
+      "lat": 53.73803465,
+      "lng": 14.271028950000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "altwarp-8547a1b1d7",
+      "city": "altwarp",
+      "label": "Hafengasse",
+      "street": "Hafengasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Altwarp",
+      "spotCount": 5,
+      "lat": 53.73803465,
+      "lng": 14.271028950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/38250699), ODbL"
+    }
+  ]
+}

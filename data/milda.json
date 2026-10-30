@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "milda",
+    "name": "Milda",
+    "center": {
+      "lat": 50.85551755,
+      "lng": 11.46045105
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "milda-b66ad0c4a6",
+      "city": "milda",
+      "label": "Dorfstraße 78",
+      "street": "Dorfstraße",
+      "houseNumber": "78",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Milda",
+      "spotCount": 2,
+      "lat": 50.85551755,
+      "lng": 11.46045105,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/922440673), ODbL"
+    }
+  ]
+}

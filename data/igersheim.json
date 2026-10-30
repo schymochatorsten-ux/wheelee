@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "igersheim",
+    "name": "Igersheim",
+    "center": {
+      "lat": 49.493728000000004,
+      "lng": 9.8206795
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "igersheim-ec82377aac",
+      "city": "igersheim",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Igersheim",
+      "spotCount": 1,
+      "lat": 49.493728000000004,
+      "lng": 9.812264250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1290792198), ODbL"
+    },
+    {
+      "id": "igersheim-7380ea5ea8",
+      "city": "igersheim",
+      "label": "Roggenbergstraße",
+      "street": "Roggenbergstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Igersheim",
+      "spotCount": 2,
+      "lat": 49.48622085,
+      "lng": 9.8206795,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27179905), ODbL"
+    },
+    {
+      "id": "igersheim-75fa0f6530",
+      "city": "igersheim",
+      "label": "Wander-Parkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Igersheim",
+      "spotCount": 1,
+      "lat": 49.495897500000005,
+      "lng": 9.8303664,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/369026785), ODbL"
+    }
+  ]
+}

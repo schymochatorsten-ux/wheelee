@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "hemmoor",
+    "name": "Hemmoor",
+    "center": {
+      "lat": 53.68696665,
+      "lng": 9.1655786
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hemmoor-d20dfea8bd",
+      "city": "hemmoor",
+      "label": "Fährstraße",
+      "street": "Fährstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hemmoor",
+      "spotCount": 1,
+      "lat": 53.6935635,
+      "lng": 9.1824025,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10977233031), ODbL"
+    },
+    {
+      "id": "hemmoor-467d642a0d",
+      "city": "hemmoor",
+      "label": "Kastanienweg",
+      "street": "Kastanienweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hemmoor",
+      "spotCount": 1,
+      "lat": 53.6845276,
+      "lng": 9.14368825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/951982864), ODbL"
+    },
+    {
+      "id": "hemmoor-0db8812f1e",
+      "city": "hemmoor",
+      "label": "Lamstedter Straße",
+      "street": "Lamstedter Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hemmoor",
+      "spotCount": 3,
+      "lat": 53.68696665,
+      "lng": 9.1609953,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/160949556), ODbL"
+    },
+    {
+      "id": "hemmoor-cd224a6833",
+      "city": "hemmoor",
+      "label": "Lamstedter Straße",
+      "street": "Lamstedter Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hemmoor",
+      "spotCount": 1,
+      "lat": 53.684843150000006,
+      "lng": 9.1585557,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/161603629), ODbL"
+    },
+    {
+      "id": "hemmoor-f21154f887",
+      "city": "hemmoor",
+      "label": "Otto-Peschel-Straße",
+      "street": "Otto-Peschel-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hemmoor",
+      "spotCount": 1,
+      "lat": 53.68381705,
+      "lng": 9.1655786,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/189924362), ODbL"
+    },
+    {
+      "id": "hemmoor-c3c025c460",
+      "city": "hemmoor",
+      "label": "Stader Straße",
+      "street": "Stader Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hemmoor",
+      "spotCount": 2,
+      "lat": 53.6890226,
+      "lng": 9.170623250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/160143401), ODbL"
+    }
+  ]
+}

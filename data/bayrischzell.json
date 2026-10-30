@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bayrischzell",
+    "name": "Bayrischzell",
+    "center": {
+      "lat": 47.67540700000001,
+      "lng": 12.014148400000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bayrischzell-58474c04e2",
+      "city": "bayrischzell",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bayrischzell",
+      "spotCount": 3,
+      "lat": 47.67540700000001,
+      "lng": 12.011022,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/451407897), ODbL"
+    },
+    {
+      "id": "bayrischzell-8489cf17bc",
+      "city": "bayrischzell",
+      "label": "Kirchplatz",
+      "street": "Kirchplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bayrischzell",
+      "spotCount": 1,
+      "lat": 47.673493300000004,
+      "lng": 12.014148400000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/347370250), ODbL"
+    },
+    {
+      "id": "bayrischzell-0a7838e14e",
+      "city": "bayrischzell",
+      "label": "Michael-Meindl-Straße 15a",
+      "street": "Michael-Meindl-Straße",
+      "houseNumber": "15a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bayrischzell",
+      "spotCount": 3,
+      "lat": 47.676713150000005,
+      "lng": 12.014167700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1283361346), ODbL"
+    }
+  ]
+}

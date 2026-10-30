@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "gammertingen",
+    "name": "Gammertingen",
+    "center": {
+      "lat": 48.250133250000005,
+      "lng": 9.2251407
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gammertingen-b012518a32",
+      "city": "gammertingen",
+      "label": "Behindertenparkplatz Gammertingen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gammertingen",
+      "spotCount": 1,
+      "lat": 48.239398,
+      "lng": 9.2251407,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/263226048), ODbL"
+    },
+    {
+      "id": "gammertingen-46e33c4b97",
+      "city": "gammertingen",
+      "label": "Sigmaringer Straße 13",
+      "street": "Sigmaringer Straße",
+      "houseNumber": "13",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gammertingen",
+      "spotCount": 1,
+      "lat": 48.250133250000005,
+      "lng": 9.216713300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24676367), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "daetgen",
+    "name": "Dätgen",
+    "center": {
+      "lat": 54.180820100000005,
+      "lng": 9.944529900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "daetgen-dd55a984fa",
+      "city": "daetgen",
+      "label": "Grotwisch 4",
+      "street": "Grotwisch",
+      "houseNumber": "4",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dätgen",
+      "spotCount": 1,
+      "lat": 54.180820100000005,
+      "lng": 9.944529900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1568605482), ODbL"
+    }
+  ]
+}

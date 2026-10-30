@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "rhede-ni",
+    "name": "Rhede (Ems)",
+    "center": {
+      "lat": 53.086618800000004,
+      "lng": 7.2419359000000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rhede-ni-df4896b68b",
+      "city": "rhede-ni",
+      "label": "Dorfstraße 42",
+      "street": "Dorfstraße",
+      "houseNumber": "42",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rhede (Ems)",
+      "spotCount": 1,
+      "lat": 53.100224850000004,
+      "lng": 7.28040925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1475988703), ODbL"
+    },
+    {
+      "id": "rhede-ni-1e3568a635",
+      "city": "rhede-ni",
+      "label": "Olle Rheen Ost",
+      "street": "Olle Rheen Ost",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rhede (Ems)",
+      "spotCount": 1,
+      "lat": 53.086618800000004,
+      "lng": 7.2419359000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1546100520), ODbL"
+    },
+    {
+      "id": "rhede-ni-b6f2920e25",
+      "city": "rhede-ni",
+      "label": "Olle Rheen West",
+      "street": "Olle Rheen West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rhede (Ems)",
+      "spotCount": 1,
+      "lat": 53.08610105,
+      "lng": 7.239334700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1424653852), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "kuessaberg",
+    "name": "Küssaberg",
+    "center": {
+      "lat": 47.61258925,
+      "lng": 8.29478975
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kuessaberg-3a1e9d7ca2",
+      "city": "kuessaberg",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Küssaberg",
+      "spotCount": 1,
+      "lat": 47.6128736,
+      "lng": 8.29478975,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/672449792), ODbL"
+    },
+    {
+      "id": "kuessaberg-9681ea9b2f",
+      "city": "kuessaberg",
+      "label": "Holunderweg 9a",
+      "street": "Holunderweg",
+      "houseNumber": "9a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Küssaberg",
+      "spotCount": 3,
+      "lat": 47.61225230000001,
+      "lng": 8.2914034,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1251778447), ODbL"
+    },
+    {
+      "id": "kuessaberg-41714f9ed8",
+      "city": "kuessaberg",
+      "label": "Soolweg",
+      "street": "Soolweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Küssaberg",
+      "spotCount": 4,
+      "lat": 47.61258925,
+      "lng": 8.2938138,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/838449557), ODbL"
+    },
+    {
+      "id": "kuessaberg-444be03764",
+      "city": "kuessaberg",
+      "label": "Zwischen den Rainen",
+      "street": "Zwischen den Rainen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Küssaberg",
+      "spotCount": 1,
+      "lat": 47.59095310000001,
+      "lng": 8.307862700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/41186530), ODbL"
+    }
+  ]
+}

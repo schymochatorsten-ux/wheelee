@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "weissach-bw",
+    "name": "Weissach im Tal",
+    "center": {
+      "lat": 48.9282892,
+      "lng": 9.4787554
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "weissach-bw-caa69a0ddf",
+      "city": "weissach-bw",
+      "label": "Lindenplatz 3",
+      "street": "Lindenplatz",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weissach im Tal",
+      "spotCount": 1,
+      "lat": 48.929627800000006,
+      "lng": 9.477667750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/55682060), ODbL"
+    },
+    {
+      "id": "weissach-bw-434ae3a2a8",
+      "city": "weissach-bw",
+      "label": "Parkplatz Ortsmitte",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weissach im Tal",
+      "spotCount": 3,
+      "lat": 48.9282892,
+      "lng": 9.4787554,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/305810112), ODbL"
+    },
+    {
+      "id": "weissach-bw-96f4231d8a",
+      "city": "weissach-bw",
+      "label": "Welzheimer Straße",
+      "street": "Welzheimer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weissach im Tal",
+      "spotCount": 3,
+      "lat": 48.9239911,
+      "lng": 9.48243295,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/169524888), ODbL"
+    }
+  ]
+}

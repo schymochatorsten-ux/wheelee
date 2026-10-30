@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "kirchberg-rp",
+    "name": "Kirchberg (Hunsrück)",
+    "center": {
+      "lat": 49.9463748,
+      "lng": 7.40646
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kirchberg-rp-83b4785533",
+      "city": "kirchberg-rp",
+      "label": "Rathausgasse",
+      "street": "Rathausgasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kirchberg (Hunsrück)",
+      "spotCount": 1,
+      "lat": 49.9428075,
+      "lng": 7.40646,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/305532926), ODbL"
+    },
+    {
+      "id": "kirchberg-rp-f4290d3d4a",
+      "city": "kirchberg-rp",
+      "label": "Schulstraße 11",
+      "street": "Schulstraße",
+      "houseNumber": "11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kirchberg (Hunsrück)",
+      "spotCount": 1,
+      "lat": 49.9463748,
+      "lng": 7.405553150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1547442733), ODbL"
+    }
+  ]
+}

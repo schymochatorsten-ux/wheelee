@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "buttenheim",
+    "name": "Buttenheim",
+    "center": {
+      "lat": 49.829445400000004,
+      "lng": 11.0537901
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "buttenheim-47766e4adb",
+      "city": "buttenheim",
+      "label": "Behindertenparkplatz Buttenheim",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Buttenheim",
+      "spotCount": 3,
+      "lat": 49.829445400000004,
+      "lng": 11.0537901,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11632331074), ODbL"
+    }
+  ]
+}

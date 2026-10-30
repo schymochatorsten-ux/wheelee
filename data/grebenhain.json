@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "grebenhain",
+    "name": "Grebenhain",
+    "center": {
+      "lat": 50.4728394,
+      "lng": 9.314777450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grebenhain-fd354a3f8a",
+      "city": "grebenhain",
+      "label": "Fuldaer Straße",
+      "street": "Fuldaer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grebenhain",
+      "spotCount": 1,
+      "lat": 50.4728394,
+      "lng": 9.314777450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/854883748), ODbL"
+    }
+  ]
+}

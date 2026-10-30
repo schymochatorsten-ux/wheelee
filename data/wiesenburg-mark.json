@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wiesenburg-mark",
+    "name": "Wiesenburg/Mark",
+    "center": {
+      "lat": 52.08883695,
+      "lng": 12.445383800000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wiesenburg-mark-05d2e77259",
+      "city": "wiesenburg-mark",
+      "label": "Bahnhofsallee",
+      "street": "Bahnhofsallee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wiesenburg/Mark",
+      "spotCount": 1,
+      "lat": 52.08883695,
+      "lng": 12.445383800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1533518990), ODbL"
+    }
+  ]
+}

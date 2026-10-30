@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "huerup",
+    "name": "Hürup",
+    "center": {
+      "lat": 54.7488839,
+      "lng": 9.5284604
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "huerup-96e47da023",
+      "city": "huerup",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hürup",
+      "spotCount": 1,
+      "lat": 54.7488839,
+      "lng": 9.5284604,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/56249882), ODbL"
+    }
+  ]
+}

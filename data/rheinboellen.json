@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "rheinboellen",
+    "name": "Rheinböllen",
+    "center": {
+      "lat": 50.00804955,
+      "lng": 7.665997300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rheinboellen-1d0a6da0f2",
+      "city": "rheinboellen",
+      "label": "Goethestraße",
+      "street": "Goethestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rheinböllen",
+      "spotCount": 1,
+      "lat": 50.00804955,
+      "lng": 7.665997300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/332702156), ODbL"
+    }
+  ]
+}

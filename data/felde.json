@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "felde",
+    "name": "Felde",
+    "center": {
+      "lat": 54.304331000000005,
+      "lng": 9.936689300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "felde-90cc18a2f7",
+      "city": "felde",
+      "label": "Am Dorfplatz",
+      "street": "Am Dorfplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Felde",
+      "spotCount": 2,
+      "lat": 54.304331000000005,
+      "lng": 9.936689300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/236656691), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "dietenheim",
+    "name": "Dietenheim",
+    "center": {
+      "lat": 48.24295785,
+      "lng": 10.068890600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dietenheim-aa81a3dd98",
+      "city": "dietenheim",
+      "label": "Krumme Gasse 6",
+      "street": "Krumme Gasse",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dietenheim",
+      "spotCount": 1,
+      "lat": 48.21102055,
+      "lng": 10.068890600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1296164590), ODbL"
+    },
+    {
+      "id": "dietenheim-68dbb47c4b",
+      "city": "dietenheim",
+      "label": "Schulstraße",
+      "street": "Schulstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dietenheim",
+      "spotCount": 1,
+      "lat": 48.24295785,
+      "lng": 10.055756500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/734272811), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "aarbergen",
+    "name": "Aarbergen",
+    "center": {
+      "lat": 50.251262350000005,
+      "lng": 8.0708249
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "aarbergen-ab925d150a",
+      "city": "aarbergen",
+      "label": "Hauser Weg",
+      "street": "Hauser Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aarbergen",
+      "spotCount": 2,
+      "lat": 50.24743480000001,
+      "lng": 8.0708249,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1366523637), ODbL"
+    },
+    {
+      "id": "aarbergen-88cba6f8eb",
+      "city": "aarbergen",
+      "label": "Hintergasse",
+      "street": "Hintergasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aarbergen",
+      "spotCount": 3,
+      "lat": 50.2679337,
+      "lng": 8.0576374,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12899643509), ODbL"
+    },
+    {
+      "id": "aarbergen-936597ecb1",
+      "city": "aarbergen",
+      "label": "Schulstraße",
+      "street": "Schulstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aarbergen",
+      "spotCount": 2,
+      "lat": 50.251262350000005,
+      "lng": 8.109541750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/439871694), ODbL"
+    },
+    {
+      "id": "aarbergen-6622feec15",
+      "city": "aarbergen",
+      "label": "Untig Mühl",
+      "street": "Untig Mühl",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aarbergen",
+      "spotCount": 5,
+      "lat": 50.244649200000005,
+      "lng": 8.065995000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1120217626), ODbL"
+    }
+  ]
+}

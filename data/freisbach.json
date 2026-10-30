@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "freisbach",
+    "name": "Freisbach",
+    "center": {
+      "lat": 49.2722735,
+      "lng": 8.2788537
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "freisbach-cdc057fc06",
+      "city": "freisbach",
+      "label": "Jahnstraße 18",
+      "street": "Jahnstraße",
+      "houseNumber": "18",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Freisbach",
+      "spotCount": 1,
+      "lat": 49.2722735,
+      "lng": 8.2788537,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1106875675), ODbL"
+    }
+  ]
+}

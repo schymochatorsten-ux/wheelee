@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "auw",
+    "name": "Auw bei Prüm",
+    "center": {
+      "lat": 50.3058497,
+      "lng": 6.355747900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "auw-dce28442f1",
+      "city": "auw",
+      "label": "Behindertenparkplatz Auw bei Prüm",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Auw bei Prüm",
+      "spotCount": 2,
+      "lat": 50.3058497,
+      "lng": 6.355747900000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13094400767), ODbL"
+    }
+  ]
+}

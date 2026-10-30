@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "huglfing",
+    "name": "Huglfing",
+    "center": {
+      "lat": 47.777609500000004,
+      "lng": 11.143578000000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "huglfing-99f3349106",
+      "city": "huglfing",
+      "label": "Seeleite",
+      "street": "Seeleite",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Huglfing",
+      "spotCount": 2,
+      "lat": 47.777609500000004,
+      "lng": 11.143578000000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10978446605), ODbL"
+    },
+    {
+      "id": "huglfing-2300fbaad4",
+      "city": "huglfing",
+      "label": "Weilheimer Straße",
+      "street": "Weilheimer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Huglfing",
+      "spotCount": 2,
+      "lat": 47.777091850000005,
+      "lng": 11.139925850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/42104625), ODbL"
+    }
+  ]
+}

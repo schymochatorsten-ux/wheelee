@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "andechs",
+    "name": "Andechs",
+    "center": {
+      "lat": 47.97421665,
+      "lng": 11.186666200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "andechs-6a7c544704",
+      "city": "andechs",
+      "label": "Kloster Andechs",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Andechs",
+      "spotCount": 1,
+      "lat": 47.97421665,
+      "lng": 11.186666200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25811650), ODbL"
+    }
+  ]
+}

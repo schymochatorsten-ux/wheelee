@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "nobitz",
+    "name": "Nobitz",
+    "center": {
+      "lat": 50.97936245,
+      "lng": 12.4842095
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nobitz-a72bc106bf",
+      "city": "nobitz",
+      "label": "Altenburger Straße 25",
+      "street": "Altenburger Straße",
+      "houseNumber": "25",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nobitz",
+      "spotCount": 1,
+      "lat": 50.97936245,
+      "lng": 12.4842095,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1365685925), ODbL"
+    }
+  ]
+}

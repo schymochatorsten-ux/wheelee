@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wallhausen-rp",
+    "name": "Wallhausen",
+    "center": {
+      "lat": 49.887908350000004,
+      "lng": 7.777853650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wallhausen-rp-9d5a1423e2",
+      "city": "wallhausen-rp",
+      "label": "Gutenberger Straße",
+      "street": "Gutenberger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wallhausen",
+      "spotCount": 1,
+      "lat": 49.887908350000004,
+      "lng": 7.777853650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1033234639), ODbL"
+    }
+  ]
+}

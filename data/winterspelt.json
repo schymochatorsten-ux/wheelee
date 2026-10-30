@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "winterspelt",
+    "name": "Winterspelt",
+    "center": {
+      "lat": 50.21379335,
+      "lng": 6.2125084500000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "winterspelt-e2c8c7e82c",
+      "city": "winterspelt",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Winterspelt",
+      "spotCount": 1,
+      "lat": 50.21379335,
+      "lng": 6.2125084500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1543220306), ODbL"
+    }
+  ]
+}

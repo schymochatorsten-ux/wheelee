@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "aschheim",
+    "name": "Aschheim",
+    "center": {
+      "lat": 48.16937985,
+      "lng": 11.720559000000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "aschheim-667b687171",
+      "city": "aschheim",
+      "label": "Alpenstraße",
+      "street": "Alpenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aschheim",
+      "spotCount": 4,
+      "lat": 48.16937985,
+      "lng": 11.72358595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/40750920), ODbL"
+    },
+    {
+      "id": "aschheim-a19c8286ad",
+      "city": "aschheim",
+      "label": "Eichendorffstraße",
+      "street": "Eichendorffstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Aschheim",
+      "spotCount": 1,
+      "lat": 48.16544575,
+      "lng": 11.720536500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1215272129), ODbL"
+    },
+    {
+      "id": "aschheim-b2854fbc88",
+      "city": "aschheim",
+      "label": "Eichendorffstraße",
+      "street": "Eichendorffstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Aschheim",
+      "spotCount": 1,
+      "lat": 48.16541685,
+      "lng": 11.720559000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1215272130), ODbL"
+    },
+    {
+      "id": "aschheim-f690a19eb4",
+      "city": "aschheim",
+      "label": "Fasanenallee",
+      "street": "Fasanenallee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aschheim",
+      "spotCount": 10,
+      "lat": 48.1780484,
+      "lng": 11.699076300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/898268133), ODbL"
+    }
+  ]
+}

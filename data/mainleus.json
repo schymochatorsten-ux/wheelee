@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "mainleus",
+    "name": "Mainleus",
+    "center": {
+      "lat": 50.10411285000001,
+      "lng": 11.38568695
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mainleus-838418837b",
+      "city": "mainleus",
+      "label": "Kelter Weg",
+      "street": "Kelter Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mainleus",
+      "spotCount": 3,
+      "lat": 50.10411285000001,
+      "lng": 11.37896185,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1227029952), ODbL"
+    },
+    {
+      "id": "mainleus-aa6edc8e08",
+      "city": "mainleus",
+      "label": "Kulmbacher Straße",
+      "street": "Kulmbacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Mainleus",
+      "spotCount": 3,
+      "lat": 50.09939385,
+      "lng": 11.38568695,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/327674691), ODbL"
+    }
+  ]
+}

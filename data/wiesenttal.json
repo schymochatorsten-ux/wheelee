@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wiesenttal",
+    "name": "Wiesenttal",
+    "center": {
+      "lat": 49.803790600000006,
+      "lng": 11.25904895
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wiesenttal-739610bd94",
+      "city": "wiesenttal",
+      "label": "Forchheimer Straße",
+      "street": "Forchheimer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wiesenttal",
+      "spotCount": 1,
+      "lat": 49.803790600000006,
+      "lng": 11.25904895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/899629115), ODbL"
+    }
+  ]
+}

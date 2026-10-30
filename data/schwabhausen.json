@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "schwabhausen",
+    "name": "Schwabhausen",
+    "center": {
+      "lat": 48.301287050000006,
+      "lng": 11.363552600000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schwabhausen-373d075945",
+      "city": "schwabhausen",
+      "label": "Am Bahnhof 1",
+      "street": "Am Bahnhof",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwabhausen",
+      "spotCount": 1,
+      "lat": 48.300758800000004,
+      "lng": 11.364511700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/177659694), ODbL"
+    },
+    {
+      "id": "schwabhausen-ef25b8bb61",
+      "city": "schwabhausen",
+      "label": "Ludwig-Thoma-Straße 2",
+      "street": "Ludwig-Thoma-Straße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schwabhausen",
+      "spotCount": 1,
+      "lat": 48.3026897,
+      "lng": 11.358972050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1499326435), ODbL"
+    },
+    {
+      "id": "schwabhausen-660df34ccb",
+      "city": "schwabhausen",
+      "label": "Münchener Straße 24a",
+      "street": "Münchener Straße",
+      "houseNumber": "24a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwabhausen",
+      "spotCount": 1,
+      "lat": 48.301106000000004,
+      "lng": 11.363552600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/186363415), ODbL"
+    },
+    {
+      "id": "schwabhausen-ef085f5ac5",
+      "city": "schwabhausen",
+      "label": "Münchener Straße 24a",
+      "street": "Münchener Straße",
+      "houseNumber": "24a",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schwabhausen",
+      "spotCount": 1,
+      "lat": 48.301287050000006,
+      "lng": 11.363416650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1451037997), ODbL"
+    }
+  ]
+}

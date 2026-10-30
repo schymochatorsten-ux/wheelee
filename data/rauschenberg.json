@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "rauschenberg",
+    "name": "Rauschenberg",
+    "center": {
+      "lat": 50.883820500000006,
+      "lng": 8.920868200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rauschenberg-83dd17413e",
+      "city": "rauschenberg",
+      "label": "Bahnhofstraße 10",
+      "street": "Bahnhofstraße",
+      "houseNumber": "10",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rauschenberg",
+      "spotCount": 1,
+      "lat": 50.8812995,
+      "lng": 8.91844895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1235318727), ODbL"
+    },
+    {
+      "id": "rauschenberg-2b7dae81ff",
+      "city": "rauschenberg",
+      "label": "Bahnhofstraße 10",
+      "street": "Bahnhofstraße",
+      "houseNumber": "10",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rauschenberg",
+      "spotCount": 1,
+      "lat": 50.881283950000004,
+      "lng": 8.91849765,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1235318728), ODbL"
+    },
+    {
+      "id": "rauschenberg-f97aea7fbb",
+      "city": "rauschenberg",
+      "label": "Breslauer Straße",
+      "street": "Breslauer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rauschenberg",
+      "spotCount": 1,
+      "lat": 50.8838409,
+      "lng": 8.920868200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1387803473), ODbL"
+    },
+    {
+      "id": "rauschenberg-141ed3da41",
+      "city": "rauschenberg",
+      "label": "Breslauer Straße",
+      "street": "Breslauer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rauschenberg",
+      "spotCount": 1,
+      "lat": 50.883820500000006,
+      "lng": 8.920901050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1387803474), ODbL"
+    }
+  ]
+}

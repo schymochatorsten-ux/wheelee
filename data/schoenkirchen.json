@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schoenkirchen",
+    "name": "Schönkirchen",
+    "center": {
+      "lat": 54.334688,
+      "lng": 10.218379500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schoenkirchen-b729783316",
+      "city": "schoenkirchen",
+      "label": "Augustental",
+      "street": "Augustental",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schönkirchen",
+      "spotCount": 1,
+      "lat": 54.334688,
+      "lng": 10.218379500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13323767058), ODbL"
+    }
+  ]
+}

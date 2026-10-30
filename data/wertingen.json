@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "wertingen",
+    "name": "Wertingen",
+    "center": {
+      "lat": 48.55957905,
+      "lng": 10.68702565
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wertingen-681987929f",
+      "city": "wertingen",
+      "label": "Industriestraße",
+      "street": "Industriestraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wertingen",
+      "spotCount": 1,
+      "lat": 48.55957905,
+      "lng": 10.68702565,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1087291033), ODbL"
+    },
+    {
+      "id": "wertingen-a18e0b6d12",
+      "city": "wertingen",
+      "label": "Industriestraße",
+      "street": "Industriestraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wertingen",
+      "spotCount": 1,
+      "lat": 48.559572700000004,
+      "lng": 10.68709355,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1087291034), ODbL"
+    },
+    {
+      "id": "wertingen-c6f017c554",
+      "city": "wertingen",
+      "label": "Mühlgasse",
+      "street": "Mühlgasse",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wertingen",
+      "spotCount": 4,
+      "lat": 48.560577900000006,
+      "lng": 10.684811450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/629223164), ODbL"
+    }
+  ]
+}

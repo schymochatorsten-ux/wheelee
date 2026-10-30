@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "immenhausen",
+    "name": "Immenhausen",
+    "center": {
+      "lat": 51.426315100000004,
+      "lng": 9.474922300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "immenhausen-da7477c582",
+      "city": "immenhausen",
+      "label": "Hinter dem Friedhof",
+      "street": "Hinter dem Friedhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Immenhausen",
+      "spotCount": 1,
+      "lat": 51.42629955,
+      "lng": 9.474922300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1517824173), ODbL"
+    },
+    {
+      "id": "immenhausen-9e27cda775",
+      "city": "immenhausen",
+      "label": "Hinter dem Friedhof",
+      "street": "Hinter dem Friedhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Immenhausen",
+      "spotCount": 1,
+      "lat": 51.426315100000004,
+      "lng": 9.4747739,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1517824174), ODbL"
+    }
+  ]
+}

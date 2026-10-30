@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "mitterteich",
+    "name": "Mitterteich",
+    "center": {
+      "lat": 49.95135330000001,
+      "lng": 12.2431713
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mitterteich-15e6dd943e",
+      "city": "mitterteich",
+      "label": "Kirchplatz 1",
+      "street": "Kirchplatz",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mitterteich",
+      "spotCount": 2,
+      "lat": 49.95135330000001,
+      "lng": 12.2431713,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/666080466), ODbL"
+    },
+    {
+      "id": "mitterteich-784c4b0000",
+      "city": "mitterteich",
+      "label": "Kirchplatz 9",
+      "street": "Kirchplatz",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mitterteich",
+      "spotCount": 1,
+      "lat": 49.951212600000005,
+      "lng": 12.242729350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/666453599), ODbL"
+    }
+  ]
+}

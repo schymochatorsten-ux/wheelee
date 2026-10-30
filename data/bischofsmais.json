@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bischofsmais",
+    "name": "Bischofsmais",
+    "center": {
+      "lat": 48.919059450000006,
+      "lng": 13.0818038
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bischofsmais-d8c11ae9d8",
+      "city": "bischofsmais",
+      "label": "Fahrnbacher Straße",
+      "street": "Fahrnbacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bischofsmais",
+      "spotCount": 2,
+      "lat": 48.919059450000006,
+      "lng": 13.080789900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/123718579), ODbL"
+    },
+    {
+      "id": "bischofsmais-cc99311f50",
+      "city": "bischofsmais",
+      "label": "Pfarrergassl",
+      "street": "Pfarrergassl",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bischofsmais",
+      "spotCount": 1,
+      "lat": 48.9178433,
+      "lng": 13.0818038,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1184510835), ODbL"
+    }
+  ]
+}

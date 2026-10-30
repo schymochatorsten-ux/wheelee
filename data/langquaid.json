@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "langquaid",
+    "name": "Langquaid",
+    "center": {
+      "lat": 48.82198435,
+      "lng": 12.0530869
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "langquaid-4830130aba",
+      "city": "langquaid",
+      "label": "Leierndorfer Straße",
+      "street": "Leierndorfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Langquaid",
+      "spotCount": 1,
+      "lat": 48.82198435,
+      "lng": 12.0530869,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1364197877), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "fronhausen",
+    "name": "Fronhausen",
+    "center": {
+      "lat": 50.7101358,
+      "lng": 8.6667766
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "fronhausen-b8deba4e04",
+      "city": "fronhausen",
+      "label": "Kirchstraße",
+      "street": "Kirchstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Fronhausen",
+      "spotCount": 1,
+      "lat": 50.7101358,
+      "lng": 8.6667766,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10788335189), ODbL"
+    }
+  ]
+}

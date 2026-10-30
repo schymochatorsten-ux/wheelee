@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "staig",
+    "name": "Staig",
+    "center": {
+      "lat": 48.299862450000006,
+      "lng": 9.9885316
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "staig-23d8bf7d42",
+      "city": "staig",
+      "label": "Schulweg 10",
+      "street": "Schulweg",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Staig",
+      "spotCount": 1,
+      "lat": 48.299862450000006,
+      "lng": 9.9885316,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/351471469), ODbL"
+    },
+    {
+      "id": "staig-42ac8f0b7c",
+      "city": "staig",
+      "label": "Uhlandstraße",
+      "street": "Uhlandstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Staig",
+      "spotCount": 2,
+      "lat": 48.2993115,
+      "lng": 9.982380000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/484411713), ODbL"
+    }
+  ]
+}

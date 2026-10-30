@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "roethenbach",
+    "name": "Röthenbach (Allgäu)",
+    "center": {
+      "lat": 47.6214181,
+      "lng": 9.9526547
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "roethenbach-eb3e62da3c",
+      "city": "roethenbach",
+      "label": "Bahnhofstraße 24",
+      "street": "Bahnhofstraße",
+      "houseNumber": "24",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Röthenbach (Allgäu)",
+      "spotCount": 3,
+      "lat": 47.6214181,
+      "lng": 9.9526547,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24979475), ODbL"
+    }
+  ]
+}

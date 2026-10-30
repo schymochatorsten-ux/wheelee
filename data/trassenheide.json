@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "trassenheide",
+    "name": "Trassenheide",
+    "center": {
+      "lat": 54.090308300000004,
+      "lng": 13.868464000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "trassenheide-81c7425f15",
+      "city": "trassenheide",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Trassenheide",
+      "spotCount": 2,
+      "lat": 54.0817931,
+      "lng": 13.8676712,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1168578960), ODbL"
+    },
+    {
+      "id": "trassenheide-dd346f6f82",
+      "city": "trassenheide",
+      "label": "Dünenstraße",
+      "street": "Dünenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Trassenheide",
+      "spotCount": 2,
+      "lat": 54.096854,
+      "lng": 13.8762577,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/821279719), ODbL"
+    },
+    {
+      "id": "trassenheide-90bcbad542",
+      "city": "trassenheide",
+      "label": "Strandstraße",
+      "street": "Strandstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Trassenheide",
+      "spotCount": 2,
+      "lat": 54.090308300000004,
+      "lng": 13.868464000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/128548902), ODbL"
+    }
+  ]
+}

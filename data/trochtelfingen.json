@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "trochtelfingen",
+    "name": "Trochtelfingen",
+    "center": {
+      "lat": 48.30719190000001,
+      "lng": 9.246000800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "trochtelfingen-a8648a991a",
+      "city": "trochtelfingen",
+      "label": "Albstraße 4",
+      "street": "Albstraße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Trochtelfingen",
+      "spotCount": 2,
+      "lat": 48.30957205,
+      "lng": 9.2776242,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/53797225), ODbL"
+    },
+    {
+      "id": "trochtelfingen-6a6825e1af",
+      "city": "trochtelfingen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Trochtelfingen",
+      "spotCount": 1,
+      "lat": 48.30719190000001,
+      "lng": 9.246000800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1088623668), ODbL"
+    },
+    {
+      "id": "trochtelfingen-61b2f6740a",
+      "city": "trochtelfingen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Trochtelfingen",
+      "spotCount": 1,
+      "lat": 48.3071697,
+      "lng": 9.245991700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1421637562), ODbL"
+    }
+  ]
+}

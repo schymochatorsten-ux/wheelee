@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "weiding",
+    "name": "Weiding",
+    "center": {
+      "lat": 49.2558452,
+      "lng": 12.776575150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "weiding-01a6180ed2",
+      "city": "weiding",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weiding",
+      "spotCount": 1,
+      "lat": 49.2558452,
+      "lng": 12.776575150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/454267557), ODbL"
+    }
+  ]
+}

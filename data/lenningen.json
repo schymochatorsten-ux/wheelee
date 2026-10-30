@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "lenningen",
+    "name": "Lenningen",
+    "center": {
+      "lat": 48.56558265,
+      "lng": 9.4703449
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lenningen-88323d9aa9",
+      "city": "lenningen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Lenningen",
+      "spotCount": 1,
+      "lat": 48.5656247,
+      "lng": 9.4599407,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1252842708), ODbL"
+    },
+    {
+      "id": "lenningen-5fde90df87",
+      "city": "lenningen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Lenningen",
+      "spotCount": 1,
+      "lat": 48.56558265,
+      "lng": 9.45997065,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1252842709), ODbL"
+    },
+    {
+      "id": "lenningen-9214bea06f",
+      "city": "lenningen",
+      "label": "Parkstraße",
+      "street": "Parkstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Lenningen",
+      "spotCount": 1,
+      "lat": 48.554501,
+      "lng": 9.470416700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11643243212), ODbL"
+    },
+    {
+      "id": "lenningen-bed8338646",
+      "city": "lenningen",
+      "label": "Parkstraße",
+      "street": "Parkstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lenningen",
+      "spotCount": 1,
+      "lat": 48.554549050000006,
+      "lng": 9.4703449,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/905051190), ODbL"
+    }
+  ]
+}

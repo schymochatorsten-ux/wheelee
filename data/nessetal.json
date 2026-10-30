@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "nessetal",
+    "name": "Nessetal",
+    "center": {
+      "lat": 51.0403709,
+      "lng": 10.7077593
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nessetal-3669fa3aca",
+      "city": "nessetal",
+      "label": "Hochheimer Straße",
+      "street": "Hochheimer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nessetal",
+      "spotCount": 1,
+      "lat": 51.015764850000004,
+      "lng": 10.68393265,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/40670348), ODbL"
+    },
+    {
+      "id": "nessetal-4a5e8bd4ed",
+      "city": "nessetal",
+      "label": "Parkplatz Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nessetal",
+      "spotCount": 1,
+      "lat": 51.0403709,
+      "lng": 10.7077593,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/40662989), ODbL"
+    }
+  ]
+}

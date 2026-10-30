@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bempflingen",
+    "name": "Bempflingen",
+    "center": {
+      "lat": 48.57255620000001,
+      "lng": 9.274088350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bempflingen-2ffc60516c",
+      "city": "bempflingen",
+      "label": "Parkplatz Bahnhof 2",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Bempflingen",
+      "spotCount": 3,
+      "lat": 48.57255620000001,
+      "lng": 9.274088350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/204054721), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bad-laer",
+    "name": "Bad Laer",
+    "center": {
+      "lat": 52.09881775,
+      "lng": 8.0986852
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-laer-49c12b2d04",
+      "city": "bad-laer",
+      "label": "Grüner Weg",
+      "street": "Grüner Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Laer",
+      "spotCount": 4,
+      "lat": 52.097547150000004,
+      "lng": 8.09836035,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34595653), ODbL"
+    },
+    {
+      "id": "bad-laer-c4fc63f1cb",
+      "city": "bad-laer",
+      "label": "Grüner Weg 1",
+      "street": "Grüner Weg",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Laer",
+      "spotCount": 4,
+      "lat": 52.09881775,
+      "lng": 8.0986852,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29995048), ODbL"
+    }
+  ]
+}

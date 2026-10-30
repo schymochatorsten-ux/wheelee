@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "neckarbischofsheim",
+    "name": "Neckarbischofsheim",
+    "center": {
+      "lat": 49.29198515,
+      "lng": 8.961530250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neckarbischofsheim-0796e8c1cf",
+      "city": "neckarbischofsheim",
+      "label": "Obere Mühlbachgasse 1",
+      "street": "Obere Mühlbachgasse",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neckarbischofsheim",
+      "spotCount": 1,
+      "lat": 49.29198515,
+      "lng": 8.961530250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/954004843), ODbL"
+    }
+  ]
+}

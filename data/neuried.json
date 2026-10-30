@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "neuried",
+    "name": "Neuried",
+    "center": {
+      "lat": 48.4150751,
+      "lng": 7.8369331
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuried-9c26bb64b1",
+      "city": "neuried",
+      "label": "Behindertenparkplatz Neuried",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuried",
+      "spotCount": 4,
+      "lat": 48.4150751,
+      "lng": 7.8369331,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1498792579), ODbL"
+    }
+  ]
+}

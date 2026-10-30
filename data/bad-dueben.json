@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bad-dueben",
+    "name": "Bad Düben",
+    "center": {
+      "lat": 51.597429500000004,
+      "lng": 12.58777975
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-dueben-f21e11f6a5",
+      "city": "bad-dueben",
+      "label": "Brunnenstraße",
+      "street": "Brunnenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Düben",
+      "spotCount": 1,
+      "lat": 51.597429500000004,
+      "lng": 12.58777975,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/178327893), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "dietramszell",
+    "name": "Dietramszell",
+    "center": {
+      "lat": 47.88744625,
+      "lng": 11.5030064
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dietramszell-37c01cc079",
+      "city": "dietramszell",
+      "label": "Lindenweg",
+      "street": "Lindenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dietramszell",
+      "spotCount": 2,
+      "lat": 47.88744625,
+      "lng": 11.5030064,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/119048596), ODbL"
+    }
+  ]
+}

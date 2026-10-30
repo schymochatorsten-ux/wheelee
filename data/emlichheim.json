@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "emlichheim",
+    "name": "Emlichheim",
+    "center": {
+      "lat": 52.60483785,
+      "lng": 6.854141
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "emlichheim-ba2424d15b",
+      "city": "emlichheim",
+      "label": "Deichweg",
+      "street": "Deichweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Emlichheim",
+      "spotCount": 1,
+      "lat": 52.60257850000001,
+      "lng": 6.854141,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/623171874), ODbL"
+    },
+    {
+      "id": "emlichheim-d445154cfe",
+      "city": "emlichheim",
+      "label": "Lägen Diek",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Emlichheim",
+      "spotCount": 2,
+      "lat": 52.60483785,
+      "lng": 6.85360075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29292313), ODbL"
+    }
+  ]
+}

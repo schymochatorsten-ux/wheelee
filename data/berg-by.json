@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "berg-by",
+    "name": "Berg",
+    "center": {
+      "lat": 50.40511105,
+      "lng": 11.774416550000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "berg-by-4f48fce677",
+      "city": "berg-by",
+      "label": "Raststätte Frankenwald Ost",
+      "street": "Raststätte Frankenwald Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Berg",
+      "spotCount": 1,
+      "lat": 50.40511105,
+      "lng": 11.774416550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/36930355), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "ilsenburg",
+    "name": "Ilsenburg (Harz)",
+    "center": {
+      "lat": 51.85487400000001,
+      "lng": 10.7156061
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ilsenburg-754ab1e89a",
+      "city": "ilsenburg",
+      "label": "Am Osttor",
+      "street": "Am Osttor",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ilsenburg (Harz)",
+      "spotCount": 1,
+      "lat": 51.8548874,
+      "lng": 10.7156061,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12896162344), ODbL"
+    },
+    {
+      "id": "ilsenburg-3515128927",
+      "city": "ilsenburg",
+      "label": "Am Steinkreis",
+      "street": "Am Steinkreis",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ilsenburg (Harz)",
+      "spotCount": 1,
+      "lat": 51.8484849,
+      "lng": 10.7368982,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/191039986), ODbL"
+    },
+    {
+      "id": "ilsenburg-8294c6d577",
+      "city": "ilsenburg",
+      "label": "Ilsetal",
+      "street": "Ilsetal",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Ilsenburg (Harz)",
+      "spotCount": 2,
+      "lat": 51.857204450000005,
+      "lng": 10.6741066,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/132081443), ODbL"
+    },
+    {
+      "id": "ilsenburg-f2ec6c3c7c",
+      "city": "ilsenburg",
+      "label": "Ilsetal",
+      "street": "Ilsetal",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ilsenburg (Harz)",
+      "spotCount": 2,
+      "lat": 51.850562000000004,
+      "lng": 10.6656922,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/521099766), ODbL"
+    },
+    {
+      "id": "ilsenburg-f855d62845",
+      "city": "ilsenburg",
+      "label": "Karl-Marx-Straße",
+      "street": "Karl-Marx-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ilsenburg (Harz)",
+      "spotCount": 1,
+      "lat": 51.868815600000005,
+      "lng": 10.682886,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13018855901), ODbL"
+    },
+    {
+      "id": "ilsenburg-42e41e0732",
+      "city": "ilsenburg",
+      "label": "Straße der Republik 1",
+      "street": "Straße der Republik",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ilsenburg (Harz)",
+      "spotCount": 1,
+      "lat": 51.848896450000005,
+      "lng": 10.7346006,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/457725970), ODbL"
+    },
+    {
+      "id": "ilsenburg-936c44a1e7",
+      "city": "ilsenburg",
+      "label": "Wanderparkplatz Kloster Drübeck",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ilsenburg (Harz)",
+      "spotCount": 3,
+      "lat": 51.85487400000001,
+      "lng": 10.716600750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/62245182), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "plau",
+    "name": "Plau am See",
+    "center": {
+      "lat": 53.46064015,
+      "lng": 12.256607650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "plau-7cde5052ef",
+      "city": "plau",
+      "label": "Bahnhof",
+      "street": "Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Plau am See",
+      "spotCount": 2,
+      "lat": 53.46078775,
+      "lng": 12.2567122,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1165937679), ODbL"
+    },
+    {
+      "id": "plau-b71fe925b8",
+      "city": "plau",
+      "label": "Bahnhof 1",
+      "street": "Bahnhof",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Plau am See",
+      "spotCount": 1,
+      "lat": 53.460605900000004,
+      "lng": 12.25658975,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1425834220), ODbL"
+    },
+    {
+      "id": "plau-84525d7a4b",
+      "city": "plau",
+      "label": "Bahnhof 1",
+      "street": "Bahnhof",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Plau am See",
+      "spotCount": 1,
+      "lat": 53.46064015,
+      "lng": 12.256607650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1425834221), ODbL"
+    }
+  ]
+}

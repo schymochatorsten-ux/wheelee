@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "torgelow",
+    "name": "Torgelow",
+    "center": {
+      "lat": 53.62909725,
+      "lng": 14.008555050000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "torgelow-42fda25228",
+      "city": "torgelow",
+      "label": "Breite Straße 23",
+      "street": "Breite Straße",
+      "houseNumber": "23",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Torgelow",
+      "spotCount": 1,
+      "lat": 53.62909725,
+      "lng": 14.008555050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1482586784), ODbL"
+    }
+  ]
+}

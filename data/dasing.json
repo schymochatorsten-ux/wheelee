@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "dasing",
+    "name": "Dasing",
+    "center": {
+      "lat": 48.38622225,
+      "lng": 11.05172265
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dasing-a7c20536b8",
+      "city": "dasing",
+      "label": "An der Brandleiten",
+      "street": "An der Brandleiten",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dasing",
+      "spotCount": 1,
+      "lat": 48.39357055000001,
+      "lng": 11.07097275,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/121161739), ODbL"
+    },
+    {
+      "id": "dasing-48a3c8396e",
+      "city": "dasing",
+      "label": "An der Brandleiten 6",
+      "street": "An der Brandleiten",
+      "houseNumber": "6",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dasing",
+      "spotCount": 1,
+      "lat": 48.39353630000001,
+      "lng": 11.07061275,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1050627575), ODbL"
+    },
+    {
+      "id": "dasing-d042abde95",
+      "city": "dasing",
+      "label": "Industriestraße",
+      "street": "Industriestraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dasing",
+      "spotCount": 2,
+      "lat": 48.38622225,
+      "lng": 11.05172265,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/205144107), ODbL"
+    },
+    {
+      "id": "dasing-0de2ec4883",
+      "city": "dasing",
+      "label": "Kirchstraße 7",
+      "street": "Kirchstraße",
+      "houseNumber": "7",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dasing",
+      "spotCount": 1,
+      "lat": 48.3845765,
+      "lng": 11.04665605,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1507146913), ODbL"
+    },
+    {
+      "id": "dasing-92768dfc9c",
+      "city": "dasing",
+      "label": "Unterzeller Straße",
+      "street": "Unterzeller Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dasing",
+      "spotCount": 1,
+      "lat": 48.3849182,
+      "lng": 11.04525005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1220373958), ODbL"
+    },
+    {
+      "id": "dasing-3382e5ded0",
+      "city": "dasing",
+      "label": "Unterzeller Straße 10a",
+      "street": "Unterzeller Straße",
+      "houseNumber": "10a",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dasing",
+      "spotCount": 1,
+      "lat": 48.38491810000001,
+      "lng": 11.045208850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1220373957), ODbL"
+    }
+  ]
+}

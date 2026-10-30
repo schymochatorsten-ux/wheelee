@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "schwanstetten",
+    "name": "Schwanstetten",
+    "center": {
+      "lat": 49.322308650000004,
+      "lng": 11.124011800000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schwanstetten-b2d32c0144",
+      "city": "schwanstetten",
+      "label": "Am Wasserturm",
+      "street": "Am Wasserturm",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwanstetten",
+      "spotCount": 1,
+      "lat": 49.32186995000001,
+      "lng": 11.1231595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1356200284), ODbL"
+    },
+    {
+      "id": "schwanstetten-19bb87e295",
+      "city": "schwanstetten",
+      "label": "Hauptstraße 35",
+      "street": "Hauptstraße",
+      "houseNumber": "35",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwanstetten",
+      "spotCount": 1,
+      "lat": 49.322308650000004,
+      "lng": 11.124011800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1176514327), ODbL"
+    }
+  ]
+}

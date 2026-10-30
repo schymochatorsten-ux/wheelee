@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "hesel",
+    "name": "Hesel",
+    "center": {
+      "lat": 53.3068803,
+      "lng": 7.5944612000000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hesel-897b1a8d5d",
+      "city": "hesel",
+      "label": "Rathausstraße",
+      "street": "Rathausstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hesel",
+      "spotCount": 1,
+      "lat": 53.3068803,
+      "lng": 7.59440545,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1528075275), ODbL"
+    },
+    {
+      "id": "hesel-585c456e43",
+      "city": "hesel",
+      "label": "Rathausstraße",
+      "street": "Rathausstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hesel",
+      "spotCount": 1,
+      "lat": 53.307039950000004,
+      "lng": 7.594532600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1528075276), ODbL"
+    },
+    {
+      "id": "hesel-454b910f5d",
+      "city": "hesel",
+      "label": "Rathausstraße",
+      "street": "Rathausstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hesel",
+      "spotCount": 1,
+      "lat": 53.307183,
+      "lng": 7.59464775,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1528075277), ODbL"
+    },
+    {
+      "id": "hesel-edce3f9c1f",
+      "city": "hesel",
+      "label": "Rathausstraße 14",
+      "street": "Rathausstraße",
+      "houseNumber": "14",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hesel",
+      "spotCount": 1,
+      "lat": 53.3067362,
+      "lng": 7.5944612000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1528075283), ODbL"
+    },
+    {
+      "id": "hesel-eb119ad3d9",
+      "city": "hesel",
+      "label": "Rathausstraße 4",
+      "street": "Rathausstraße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hesel",
+      "spotCount": 1,
+      "lat": 53.3066271,
+      "lng": 7.5944476000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1528075284), ODbL"
+    },
+    {
+      "id": "hesel-de4fccda28",
+      "city": "hesel",
+      "label": "Stikelkamper Straße 1",
+      "street": "Stikelkamper Straße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hesel",
+      "spotCount": 1,
+      "lat": 53.306181300000006,
+      "lng": 7.592833100000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14058123560), ODbL"
+    }
+  ]
+}

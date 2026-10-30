@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "borgstedt",
+    "name": "Borgstedt",
+    "center": {
+      "lat": 54.33149215,
+      "lng": 9.7090101
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "borgstedt-28925627ee",
+      "city": "borgstedt",
+      "label": "Rendsburger Straße",
+      "street": "Rendsburger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Borgstedt",
+      "spotCount": 3,
+      "lat": 54.33149215,
+      "lng": 9.7090101,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/491783842), ODbL"
+    }
+  ]
+}

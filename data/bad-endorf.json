@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bad-endorf",
+    "name": "Bad Endorf",
+    "center": {
+      "lat": 47.909578800000006,
+      "lng": 12.30016445
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-endorf-84d5cc34e9",
+      "city": "bad-endorf",
+      "label": "Katharinenheimstraße",
+      "street": "Katharinenheimstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Endorf",
+      "spotCount": 1,
+      "lat": 47.909578800000006,
+      "lng": 12.300848100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/191573752), ODbL"
+    },
+    {
+      "id": "bad-endorf-3f9b4f0898",
+      "city": "bad-endorf",
+      "label": "Ströbinger Straße",
+      "street": "Ströbinger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Endorf",
+      "spotCount": 2,
+      "lat": 47.90135775,
+      "lng": 12.30016445,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/450699983), ODbL"
+    },
+    {
+      "id": "bad-endorf-f3e2b0972f",
+      "city": "bad-endorf",
+      "label": "Wasserburger Straße",
+      "street": "Wasserburger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Endorf",
+      "spotCount": 2,
+      "lat": 47.918929850000005,
+      "lng": 12.292945300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/260327740), ODbL"
+    }
+  ]
+}

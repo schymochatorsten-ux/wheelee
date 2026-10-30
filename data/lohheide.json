@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lohheide",
+    "name": "Lohheide",
+    "center": {
+      "lat": 52.80981485,
+      "lng": 9.933440400000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lohheide-0b47e78bb0",
+      "city": "lohheide",
+      "label": "Kirchweg 8",
+      "street": "Kirchweg",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lohheide",
+      "spotCount": 1,
+      "lat": 52.80981485,
+      "lng": 9.933440400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/172613119), ODbL"
+    }
+  ]
+}

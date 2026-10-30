@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "birkenau",
+    "name": "Birkenau",
+    "center": {
+      "lat": 49.560626750000004,
+      "lng": 8.706627400000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "birkenau-ad2bd979de",
+      "city": "birkenau",
+      "label": "Kirchgasse 5",
+      "street": "Kirchgasse",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Birkenau",
+      "spotCount": 1,
+      "lat": 49.560626750000004,
+      "lng": 8.706627400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/89061581), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "staudernheim",
+    "name": "Staudernheim",
+    "center": {
+      "lat": 49.780243250000005,
+      "lng": 7.6923860500000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "staudernheim-6cf64e24fe",
+      "city": "staudernheim",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Staudernheim",
+      "spotCount": 2,
+      "lat": 49.780243250000005,
+      "lng": 7.6923860500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/819409056), ODbL"
+    }
+  ]
+}

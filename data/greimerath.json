@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "greimerath",
+    "name": "Greimerath",
+    "center": {
+      "lat": 49.56218235,
+      "lng": 6.681644
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "greimerath-cc05d08054",
+      "city": "greimerath",
+      "label": "Hochwaldstraße",
+      "street": "Hochwaldstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Greimerath",
+      "spotCount": 2,
+      "lat": 49.56218235,
+      "lng": 6.681644,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1349278011), ODbL"
+    }
+  ]
+}

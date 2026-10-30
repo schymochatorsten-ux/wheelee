@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "burg-bb",
+    "name": "Burg (Spreewald)",
+    "center": {
+      "lat": 51.83675905,
+      "lng": 14.14543625
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "burg-bb-236b453fdb",
+      "city": "burg-bb",
+      "label": "Am Bahndamm",
+      "street": "Am Bahndamm",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burg (Spreewald)",
+      "spotCount": 1,
+      "lat": 51.83469960000001,
+      "lng": 14.14543625,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/37694893), ODbL"
+    },
+    {
+      "id": "burg-bb-b39b7f01ff",
+      "city": "burg-bb",
+      "label": "Bahnhofstraße 15i",
+      "street": "Bahnhofstraße",
+      "houseNumber": "15i",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burg (Spreewald)",
+      "spotCount": 1,
+      "lat": 51.835245150000006,
+      "lng": 14.145196850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/37694898), ODbL"
+    },
+    {
+      "id": "burg-bb-f2fcc0cb79",
+      "city": "burg-bb",
+      "label": "Burg, Am Hafen",
+      "street": "Burg, Am Hafen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Burg (Spreewald)",
+      "spotCount": 1,
+      "lat": 51.83675905,
+      "lng": 14.1483907,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/55894566), ODbL"
+    },
+    {
+      "id": "burg-bb-b124f255da",
+      "city": "burg-bb",
+      "label": "Burg, SpreewaldTherme",
+      "street": "Burg, SpreewaldTherme",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burg (Spreewald)",
+      "spotCount": 1,
+      "lat": 51.83789525,
+      "lng": 14.13376305,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/686484166), ODbL"
+    },
+    {
+      "id": "burg-bb-6522d545a6",
+      "city": "burg-bb",
+      "label": "Fasanenweg",
+      "street": "Fasanenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burg (Spreewald)",
+      "spotCount": 1,
+      "lat": 51.84723545,
+      "lng": 14.15458585,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/619980918), ODbL"
+    },
+    {
+      "id": "burg-bb-8b739fa5df",
+      "city": "burg-bb",
+      "label": "Raiffeisenstraße",
+      "street": "Raiffeisenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burg (Spreewald)",
+      "spotCount": 3,
+      "lat": 51.8370218,
+      "lng": 14.1463292,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/132465277), ODbL"
+    },
+    {
+      "id": "burg-bb-baad00a143",
+      "city": "burg-bb",
+      "label": "Zur Spreewaldklinik",
+      "street": "Zur Spreewaldklinik",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burg (Spreewald)",
+      "spotCount": 1,
+      "lat": 51.8325534,
+      "lng": 14.1418934,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/37683240), ODbL"
+    }
+  ]
+}

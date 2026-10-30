@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "sulzemoos",
+    "name": "Sulzemoos",
+    "center": {
+      "lat": 48.280720900000006,
+      "lng": 11.26779325
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sulzemoos-2c79279f35",
+      "city": "sulzemoos",
+      "label": "McDrive",
+      "street": "McDrive",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sulzemoos",
+      "spotCount": 1,
+      "lat": 48.280720900000006,
+      "lng": 11.26779325,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/616547723), ODbL"
+    }
+  ]
+}

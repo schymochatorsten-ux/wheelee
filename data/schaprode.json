@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schaprode",
+    "name": "Schaprode",
+    "center": {
+      "lat": 54.513125450000004,
+      "lng": 13.16437265
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schaprode-50680dc03c",
+      "city": "schaprode",
+      "label": "Hafenweg 43",
+      "street": "Hafenweg",
+      "houseNumber": "43",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schaprode",
+      "spotCount": 1,
+      "lat": 54.513125450000004,
+      "lng": 13.16437265,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1067969159), ODbL"
+    }
+  ]
+}

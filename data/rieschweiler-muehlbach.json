@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "rieschweiler-muehlbach",
+    "name": "Rieschweiler-Mühlbach",
+    "center": {
+      "lat": 49.24473705,
+      "lng": 7.50718495
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rieschweiler-muehlbach-7845827c78",
+      "city": "rieschweiler-muehlbach",
+      "label": "Bahnhofstraße 29",
+      "street": "Bahnhofstraße",
+      "houseNumber": "29",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rieschweiler-Mühlbach",
+      "spotCount": 1,
+      "lat": 49.24473705,
+      "lng": 7.50718495,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1453914340), ODbL"
+    }
+  ]
+}

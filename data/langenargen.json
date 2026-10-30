@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "langenargen",
+    "name": "Langenargen",
+    "center": {
+      "lat": 47.59912465000001,
+      "lng": 9.545780100000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "langenargen-fc492e2221",
+      "city": "langenargen",
+      "label": "Eisenbahnstraße",
+      "street": "Eisenbahnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Langenargen",
+      "spotCount": 2,
+      "lat": 47.59912465000001,
+      "lng": 9.545780100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29107467), ODbL"
+    },
+    {
+      "id": "langenargen-3ba3660f52",
+      "city": "langenargen",
+      "label": "Eisenbahnstraße",
+      "street": "Eisenbahnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Langenargen",
+      "spotCount": 2,
+      "lat": 47.59909675,
+      "lng": 9.54524185,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/166830263), ODbL"
+    }
+  ]
+}

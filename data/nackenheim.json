@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "nackenheim",
+    "name": "Nackenheim",
+    "center": {
+      "lat": 49.918551050000005,
+      "lng": 8.341761250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nackenheim-7b7a0b855b",
+      "city": "nackenheim",
+      "label": "Buchenweg",
+      "street": "Buchenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nackenheim",
+      "spotCount": 1,
+      "lat": 49.91862735,
+      "lng": 8.341472750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/30854588), ODbL"
+    },
+    {
+      "id": "nackenheim-2544fe0bcd",
+      "city": "nackenheim",
+      "label": "Buchenweg",
+      "street": "Buchenweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nackenheim",
+      "spotCount": 1,
+      "lat": 49.918551050000005,
+      "lng": 8.34154945,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1358356205), ODbL"
+    },
+    {
+      "id": "nackenheim-854323703f",
+      "city": "nackenheim",
+      "label": "Buchenweg",
+      "street": "Buchenweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nackenheim",
+      "spotCount": 1,
+      "lat": 49.918229800000006,
+      "lng": 8.341761250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1358356235), ODbL"
+    },
+    {
+      "id": "nackenheim-cc334d6264",
+      "city": "nackenheim",
+      "label": "Im Brühl 3",
+      "street": "Im Brühl",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nackenheim",
+      "spotCount": 1,
+      "lat": 49.9188394,
+      "lng": 8.34041275,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1315894105), ODbL"
+    },
+    {
+      "id": "nackenheim-0486488288",
+      "city": "nackenheim",
+      "label": "Marktplatz",
+      "street": "Marktplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nackenheim",
+      "spotCount": 1,
+      "lat": 49.918098650000005,
+      "lng": 8.3417747,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1276725064), ODbL"
+    },
+    {
+      "id": "nackenheim-c61bc79c81",
+      "city": "nackenheim",
+      "label": "Wormser Straße",
+      "street": "Wormser Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nackenheim",
+      "spotCount": 1,
+      "lat": 49.9149941,
+      "lng": 8.3421833,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1360070210), ODbL"
+    }
+  ]
+}

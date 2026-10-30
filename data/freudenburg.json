@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "freudenburg",
+    "name": "Freudenburg",
+    "center": {
+      "lat": 49.5437571,
+      "lng": 6.52912035
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "freudenburg-ef6eafc68c",
+      "city": "freudenburg",
+      "label": "Leukstraße",
+      "street": "Leukstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Freudenburg",
+      "spotCount": 1,
+      "lat": 49.5437571,
+      "lng": 6.52912035,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/659277182), ODbL"
+    }
+  ]
+}

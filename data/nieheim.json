@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "nieheim",
+    "name": "Nieheim",
+    "center": {
+      "lat": 51.811142600000004,
+      "lng": 9.024413500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nieheim-9acc5d182c",
+      "city": "nieheim",
+      "label": "Antoniusstraße 19",
+      "street": "Antoniusstraße",
+      "houseNumber": "19",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nieheim",
+      "spotCount": 3,
+      "lat": 51.811142600000004,
+      "lng": 9.024413500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/954742530), ODbL"
+    },
+    {
+      "id": "nieheim-62e0fc4354",
+      "city": "nieheim",
+      "label": "Antoniusstraße 29",
+      "street": "Antoniusstraße",
+      "houseNumber": "29",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nieheim",
+      "spotCount": 1,
+      "lat": 51.8106298,
+      "lng": 9.022956400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1212707996), ODbL"
+    }
+  ]
+}

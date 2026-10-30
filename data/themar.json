@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "themar",
+    "name": "Themar",
+    "center": {
+      "lat": 50.5036677,
+      "lng": 10.6140711
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "themar-155a792d2b",
+      "city": "themar",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Themar",
+      "spotCount": 1,
+      "lat": 50.5036677,
+      "lng": 10.6140711,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1617986893), ODbL"
+    }
+  ]
+}

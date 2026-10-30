@@ -1,0 +1,16 @@
+[Unit]
+Description=wheelee Aktualitätslauf der Datenquellen (ToDo 19.2)
+After=docker.service network-online.target
+Requires=docker.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/wheelee/deploy/wheelee-aktualitaet.sh
+User=niklas
+Group=niklas
+SupplementaryGroups=docker
+NoNewPrivileges=true
+# Der Lauf holt Daten von Fremddiensten (Overpass, Portale) und installiert
+# Pakete; eine Stunde ist reichlich.
+TimeoutStartSec=3600

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "pfaffenhofen",
+    "name": "Pfaffenhofen",
+    "center": {
+      "lat": 49.06564455,
+      "lng": 8.98046505
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pfaffenhofen-a7ae930400",
+      "city": "pfaffenhofen",
+      "label": "Goethestraße",
+      "street": "Goethestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pfaffenhofen",
+      "spotCount": 1,
+      "lat": 49.06564455,
+      "lng": 8.98046505,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/364736711), ODbL"
+    }
+  ]
+}

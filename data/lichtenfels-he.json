@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lichtenfels-he",
+    "name": "Lichtenfels",
+    "center": {
+      "lat": 51.128579550000005,
+      "lng": 8.719296150000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lichtenfels-he-a352dff262",
+      "city": "lichtenfels-he",
+      "label": "Zum Vogelbusch 6",
+      "street": "Zum Vogelbusch",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lichtenfels",
+      "spotCount": 1,
+      "lat": 51.128579550000005,
+      "lng": 8.719296150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1111879061), ODbL"
+    }
+  ]
+}

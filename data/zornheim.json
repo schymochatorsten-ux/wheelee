@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "zornheim",
+    "name": "Zornheim",
+    "center": {
+      "lat": 49.8888624,
+      "lng": 8.2258474
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zornheim-7ea3017cb1",
+      "city": "zornheim",
+      "label": "Röhrbrunnenplatz 3",
+      "street": "Röhrbrunnenplatz",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zornheim",
+      "spotCount": 1,
+      "lat": 49.8888624,
+      "lng": 8.2258474,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/305426644), ODbL"
+    }
+  ]
+}

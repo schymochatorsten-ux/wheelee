@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "perl",
+    "name": "Perl",
+    "center": {
+      "lat": 49.484219700000004,
+      "lng": 6.3734221
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "perl-66f680dd53",
+      "city": "perl",
+      "label": "Rastplatz Moseltal",
+      "street": "Rastplatz Moseltal",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Perl",
+      "spotCount": 1,
+      "lat": 49.484219700000004,
+      "lng": 6.3734221,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9061064679), ODbL"
+    }
+  ]
+}

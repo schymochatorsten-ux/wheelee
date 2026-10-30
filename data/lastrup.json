@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "lastrup",
+    "name": "Lastrup",
+    "center": {
+      "lat": 52.794935,
+      "lng": 7.865204
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lastrup-019783b81f",
+      "city": "lastrup",
+      "label": "St. Elisabeth-Straße",
+      "street": "St. Elisabeth-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lastrup",
+      "spotCount": 2,
+      "lat": 52.7946637,
+      "lng": 7.8625265,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1329761647), ODbL"
+    },
+    {
+      "id": "lastrup-98b5edaa79",
+      "city": "lastrup",
+      "label": "Wallstraße",
+      "street": "Wallstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lastrup",
+      "spotCount": 2,
+      "lat": 52.794935,
+      "lng": 7.865204,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1009120820), ODbL"
+    }
+  ]
+}

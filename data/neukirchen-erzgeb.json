@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "neukirchen-erzgeb",
+    "name": "Neukirchen/Erzgeb.",
+    "center": {
+      "lat": 50.774804950000004,
+      "lng": 12.876643950000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neukirchen-erzgeb-709d207de4",
+      "city": "neukirchen-erzgeb",
+      "label": "Markersdorfer Straße",
+      "street": "Markersdorfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neukirchen/Erzgeb.",
+      "spotCount": 1,
+      "lat": 50.778181950000004,
+      "lng": 12.876643950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27111547), ODbL"
+    },
+    {
+      "id": "neukirchen-erzgeb-4faae0f48c",
+      "city": "neukirchen-erzgeb",
+      "label": "Neukirchen, Saulheimer Straße",
+      "street": "Neukirchen, Saulheimer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Neukirchen/Erzgeb.",
+      "spotCount": 1,
+      "lat": 50.77460260000001,
+      "lng": 12.8532385,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1436512544), ODbL"
+    },
+    {
+      "id": "neukirchen-erzgeb-007f9703e5",
+      "city": "neukirchen-erzgeb",
+      "label": "Saulheimer Straße",
+      "street": "Saulheimer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neukirchen/Erzgeb.",
+      "spotCount": 1,
+      "lat": 50.774804950000004,
+      "lng": 12.85311025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1436512594), ODbL"
+    },
+    {
+      "id": "neukirchen-erzgeb-79b723f90e",
+      "city": "neukirchen-erzgeb",
+      "label": "Würschnitztalstraße",
+      "street": "Würschnitztalstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neukirchen/Erzgeb.",
+      "spotCount": 1,
+      "lat": 50.7707415,
+      "lng": 12.893486900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/248424056), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "billigheim",
+    "name": "Billigheim",
+    "center": {
+      "lat": 49.353612350000006,
+      "lng": 9.24310475
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "billigheim-0119d6cdac",
+      "city": "billigheim",
+      "label": "Dallauer Straße",
+      "street": "Dallauer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Billigheim",
+      "spotCount": 1,
+      "lat": 49.353612350000006,
+      "lng": 9.2170725,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/187089355), ODbL"
+    },
+    {
+      "id": "billigheim-f5cb41932f",
+      "city": "billigheim",
+      "label": "Höchstberger Straße",
+      "street": "Höchstberger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Billigheim",
+      "spotCount": 1,
+      "lat": 49.31935035000001,
+      "lng": 9.24310475,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/201877729), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bad-marienberg",
+    "name": "Bad Marienberg (Westerwald)",
+    "center": {
+      "lat": 50.6504387,
+      "lng": 7.9514091
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-marienberg-01b567ca4f",
+      "city": "bad-marienberg",
+      "label": "Bismarckstraße 6 A",
+      "street": "Bismarckstraße",
+      "houseNumber": "6 A",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Marienberg (Westerwald)",
+      "spotCount": 1,
+      "lat": 50.6504387,
+      "lng": 7.9514091,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1875517433), ODbL"
+    },
+    {
+      "id": "bad-marienberg-734ab775ab",
+      "city": "bad-marienberg",
+      "label": "Büchtingstraße 3",
+      "street": "Büchtingstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Marienberg (Westerwald)",
+      "spotCount": 1,
+      "lat": 50.6524457,
+      "lng": 7.954068900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/182908545), ODbL"
+    },
+    {
+      "id": "bad-marienberg-660b6b27f0",
+      "city": "bad-marienberg",
+      "label": "Robertstraße",
+      "street": "Robertstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Marienberg (Westerwald)",
+      "spotCount": 1,
+      "lat": 50.650144600000004,
+      "lng": 7.948788500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1875517505), ODbL"
+    }
+  ]
+}

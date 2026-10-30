@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "sukow",
+    "name": "Sukow",
+    "center": {
+      "lat": 53.5545631,
+      "lng": 11.5590346
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sukow-d25986c6ae",
+      "city": "sukow",
+      "label": "Bahnhofsstraße 10",
+      "street": "Bahnhofsstraße",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sukow",
+      "spotCount": 1,
+      "lat": 53.5545631,
+      "lng": 11.5590346,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/600118648), ODbL"
+    }
+  ]
+}

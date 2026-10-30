@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "weibersbrunn",
+    "name": "Weibersbrunn",
+    "center": {
+      "lat": 49.934554850000005,
+      "lng": 9.36520465
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "weibersbrunn-bc052e7d32",
+      "city": "weibersbrunn",
+      "label": "Am Ausblick",
+      "street": "Am Ausblick",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weibersbrunn",
+      "spotCount": 2,
+      "lat": 49.934554850000005,
+      "lng": 9.36520465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/41981429), ODbL"
+    }
+  ]
+}

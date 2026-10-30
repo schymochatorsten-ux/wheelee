@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "mueschenbach",
+    "name": "Müschenbach",
+    "center": {
+      "lat": 50.6826444,
+      "lng": 7.778883
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mueschenbach-ab8cd577cd",
+      "city": "mueschenbach",
+      "label": "Schulstraße",
+      "street": "Schulstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Müschenbach",
+      "spotCount": 1,
+      "lat": 50.6826444,
+      "lng": 7.778883,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1035947109), ODbL"
+    }
+  ]
+}

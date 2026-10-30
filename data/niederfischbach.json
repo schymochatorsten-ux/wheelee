@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "niederfischbach",
+    "name": "Niederfischbach",
+    "center": {
+      "lat": 50.854079000000006,
+      "lng": 7.8804404
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "niederfischbach-853aaf63dc",
+      "city": "niederfischbach",
+      "label": "Am Friedhof",
+      "street": "Am Friedhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Niederfischbach",
+      "spotCount": 1,
+      "lat": 50.854079000000006,
+      "lng": 7.8804404,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12847247483), ODbL"
+    },
+    {
+      "id": "niederfischbach-b32ee2d10d",
+      "city": "niederfischbach",
+      "label": "Netto Kundenparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Niederfischbach",
+      "spotCount": 2,
+      "lat": 50.8521647,
+      "lng": 7.8611412000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1001582032), ODbL"
+    }
+  ]
+}

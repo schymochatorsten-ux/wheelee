@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "klosterlechfeld",
+    "name": "Klosterlechfeld",
+    "center": {
+      "lat": 48.15509005,
+      "lng": 10.83230355
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "klosterlechfeld-92e9eb8e96",
+      "city": "klosterlechfeld",
+      "label": "P+R Klosterlechfeld",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Klosterlechfeld",
+      "spotCount": 1,
+      "lat": 48.15509005,
+      "lng": 10.83230355,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/43873814), ODbL"
+    }
+  ]
+}

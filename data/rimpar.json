@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "rimpar",
+    "name": "Rimpar",
+    "center": {
+      "lat": 49.85675555,
+      "lng": 9.96494475
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rimpar-629f1972c6",
+      "city": "rimpar",
+      "label": "Alte Schmiede",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rimpar",
+      "spotCount": 2,
+      "lat": 49.85675555,
+      "lng": 9.956745900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29394858), ODbL"
+    },
+    {
+      "id": "rimpar-75c0ccbf09",
+      "city": "rimpar",
+      "label": "Burggrumbacher Straße 1",
+      "street": "Burggrumbacher Straße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rimpar",
+      "spotCount": 1,
+      "lat": 49.860435700000004,
+      "lng": 9.966758,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3745457552), ODbL"
+    },
+    {
+      "id": "rimpar-20609b9282",
+      "city": "rimpar",
+      "label": "Burggrumbacher Straße 1",
+      "street": "Burggrumbacher Straße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rimpar",
+      "spotCount": 1,
+      "lat": 49.860410900000005,
+      "lng": 9.9666989,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3745457554), ODbL"
+    },
+    {
+      "id": "rimpar-3147417329",
+      "city": "rimpar",
+      "label": "Neue Siedlung",
+      "street": "Neue Siedlung",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rimpar",
+      "spotCount": 1,
+      "lat": 49.851180600000006,
+      "lng": 9.9610606,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1500344244), ODbL"
+    },
+    {
+      "id": "rimpar-eb983997b0",
+      "city": "rimpar",
+      "label": "REWE",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Rimpar",
+      "spotCount": 1,
+      "lat": 49.849630850000004,
+      "lng": 9.96494475,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/37755505), ODbL"
+    }
+  ]
+}

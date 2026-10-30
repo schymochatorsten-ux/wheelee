@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "alsbach-haehnlein",
+    "name": "Alsbach-Hähnlein",
+    "center": {
+      "lat": 49.742129750000004,
+      "lng": 8.624725250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "alsbach-haehnlein-2eb546c73b",
+      "city": "alsbach-haehnlein",
+      "label": "Im Kies",
+      "street": "Im Kies",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Alsbach-Hähnlein",
+      "spotCount": 2,
+      "lat": 49.73891665000001,
+      "lng": 8.62316505,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1359284560), ODbL"
+    },
+    {
+      "id": "alsbach-haehnlein-9e4456a2d1",
+      "city": "alsbach-haehnlein",
+      "label": "Im Klingen",
+      "street": "Im Klingen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Alsbach-Hähnlein",
+      "spotCount": 2,
+      "lat": 49.742129750000004,
+      "lng": 8.624725250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/33579520), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "frasdorf",
+    "name": "Frasdorf",
+    "center": {
+      "lat": 47.80294605,
+      "lng": 12.28404435
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "frasdorf-d329f69325",
+      "city": "frasdorf",
+      "label": "Verkehrsamt-Rathaus-Touristikinformation",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Frasdorf",
+      "spotCount": 1,
+      "lat": 47.80294605,
+      "lng": 12.28404435,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/303167066), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "uehlingen-birkendorf",
+    "name": "Ühlingen-Birkendorf",
+    "center": {
+      "lat": 47.74665855000001,
+      "lng": 8.301367250000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "uehlingen-birkendorf-a07ceef9cd",
+      "city": "uehlingen-birkendorf",
+      "label": "Im Tal 1",
+      "street": "Im Tal",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ühlingen-Birkendorf",
+      "spotCount": 2,
+      "lat": 47.74665855000001,
+      "lng": 8.301367250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1524355209), ODbL"
+    }
+  ]
+}

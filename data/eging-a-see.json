@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "eging-a-see",
+    "name": "Eging a.See",
+    "center": {
+      "lat": 48.714040000000004,
+      "lng": 13.2658164
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eging-a-see-587b3b7346",
+      "city": "eging-a-see",
+      "label": "Deggendorfer Straße",
+      "street": "Deggendorfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eging a.See",
+      "spotCount": 2,
+      "lat": 48.714040000000004,
+      "lng": 13.2658164,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/512060082), ODbL"
+    }
+  ]
+}

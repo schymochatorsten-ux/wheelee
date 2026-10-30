@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wees",
+    "name": "Wees",
+    "center": {
+      "lat": 54.80708665,
+      "lng": 9.51362485
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wees-ba768ef738",
+      "city": "wees",
+      "label": "Birkland",
+      "street": "Birkland",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wees",
+      "spotCount": 3,
+      "lat": 54.80708665,
+      "lng": 9.51362485,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/59934870), ODbL"
+    }
+  ]
+}

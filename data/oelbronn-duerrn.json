@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "oelbronn-duerrn",
+    "name": "Ölbronn-Dürrn",
+    "center": {
+      "lat": 48.991967700000004,
+      "lng": 8.753543400000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oelbronn-duerrn-889fc49664",
+      "city": "oelbronn-duerrn",
+      "label": "Aalkistensee 1",
+      "street": "Aalkistensee",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ölbronn-Dürrn",
+      "spotCount": 2,
+      "lat": 48.991967700000004,
+      "lng": 8.757553,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/351892202), ODbL"
+    },
+    {
+      "id": "oelbronn-duerrn-e941f1869e",
+      "city": "oelbronn-duerrn",
+      "label": "In der Heumahden",
+      "street": "In der Heumahden",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ölbronn-Dürrn",
+      "spotCount": 2,
+      "lat": 48.97930530000001,
+      "lng": 8.7550913,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/444926519), ODbL"
+    },
+    {
+      "id": "oelbronn-duerrn-4a5d04248f",
+      "city": "oelbronn-duerrn",
+      "label": "Kleinvillars Bahnhof",
+      "street": "Kleinvillars Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ölbronn-Dürrn",
+      "spotCount": 1,
+      "lat": 48.993346200000005,
+      "lng": 8.7449726,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1395653931), ODbL"
+    },
+    {
+      "id": "oelbronn-duerrn-5da423eaad",
+      "city": "oelbronn-duerrn",
+      "label": "Kleinvillars Bahnhof",
+      "street": "Kleinvillars Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Ölbronn-Dürrn",
+      "spotCount": 1,
+      "lat": 48.993350050000004,
+      "lng": 8.745102800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1395653932), ODbL"
+    },
+    {
+      "id": "oelbronn-duerrn-7eeb8e0cc7",
+      "city": "oelbronn-duerrn",
+      "label": "Lückenbronn",
+      "street": "Lückenbronn",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ölbronn-Dürrn",
+      "spotCount": 3,
+      "lat": 48.985606950000005,
+      "lng": 8.753543400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1395481839), ODbL"
+    },
+    {
+      "id": "oelbronn-duerrn-8397074374",
+      "city": "oelbronn-duerrn",
+      "label": "Lückenbronn",
+      "street": "Lückenbronn",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Ölbronn-Dürrn",
+      "spotCount": 3,
+      "lat": 48.985502,
+      "lng": 8.75346245,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1395481840), ODbL"
+    }
+  ]
+}

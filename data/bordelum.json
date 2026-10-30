@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bordelum",
+    "name": "Bordelum",
+    "center": {
+      "lat": 54.6533652,
+      "lng": 9.000238200000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bordelum-2d8d92681d",
+      "city": "bordelum",
+      "label": "Bekeweg",
+      "street": "Bekeweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bordelum",
+      "spotCount": 1,
+      "lat": 54.65329425,
+      "lng": 9.000238200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1484086561), ODbL"
+    },
+    {
+      "id": "bordelum-9018459c57",
+      "city": "bordelum",
+      "label": "Bekeweg 2a",
+      "street": "Bekeweg",
+      "houseNumber": "2a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bordelum",
+      "spotCount": 1,
+      "lat": 54.6533652,
+      "lng": 9.000144350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1343819023), ODbL"
+    }
+  ]
+}

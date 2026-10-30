@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "luechow",
+    "name": "Lüchow (Wendland)",
+    "center": {
+      "lat": 52.977584400000005,
+      "lng": 11.16425105
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "luechow-3f5995b971",
+      "city": "luechow",
+      "label": "Dannenberger Straße 30",
+      "street": "Dannenberger Straße",
+      "houseNumber": "30",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lüchow (Wendland)",
+      "spotCount": 2,
+      "lat": 52.967093950000006,
+      "lng": 11.14601875,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/45242136), ODbL"
+    },
+    {
+      "id": "luechow-919d599500",
+      "city": "luechow",
+      "label": "Seerauer Straße",
+      "street": "Seerauer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lüchow (Wendland)",
+      "spotCount": 2,
+      "lat": 52.977584400000005,
+      "lng": 11.16425105,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/342087936), ODbL"
+    }
+  ]
+}

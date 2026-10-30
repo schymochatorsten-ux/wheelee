@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "radeburg",
+    "name": "Radeburg",
+    "center": {
+      "lat": 51.21499745,
+      "lng": 13.74011465
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "radeburg-54cb0f61c3",
+      "city": "radeburg",
+      "label": "Finkenberg",
+      "street": "Finkenberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Radeburg",
+      "spotCount": 2,
+      "lat": 51.19409615000001,
+      "lng": 13.74011465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/400622381), ODbL"
+    },
+    {
+      "id": "radeburg-cd2b7983e0",
+      "city": "radeburg",
+      "label": "Finkenberg Ost",
+      "street": "Finkenberg Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Radeburg",
+      "spotCount": 2,
+      "lat": 51.195101750000006,
+      "lng": 13.741267650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/460922982), ODbL"
+    },
+    {
+      "id": "radeburg-065811d0be",
+      "city": "radeburg",
+      "label": "Markt 2",
+      "street": "Markt",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Radeburg",
+      "spotCount": 1,
+      "lat": 51.215068,
+      "lng": 13.724248800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1556408209), ODbL"
+    },
+    {
+      "id": "radeburg-207a2da9c7",
+      "city": "radeburg",
+      "label": "Markt 6",
+      "street": "Markt",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Radeburg",
+      "spotCount": 1,
+      "lat": 51.21499745,
+      "lng": 13.723440400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1556408207), ODbL"
+    }
+  ]
+}

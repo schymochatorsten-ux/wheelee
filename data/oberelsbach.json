@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "oberelsbach",
+    "name": "Oberelsbach",
+    "center": {
+      "lat": 50.4405175,
+      "lng": 10.1192803
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberelsbach-9106419571",
+      "city": "oberelsbach",
+      "label": "Marktplatz 3",
+      "street": "Marktplatz",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberelsbach",
+      "spotCount": 1,
+      "lat": 50.4405175,
+      "lng": 10.1192803,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/135254145), ODbL"
+    }
+  ]
+}

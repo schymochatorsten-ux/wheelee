@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "waldbuettelbrunn",
+    "name": "Waldbüttelbrunn",
+    "center": {
+      "lat": 49.78749565,
+      "lng": 9.843277200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "waldbuettelbrunn-20c63333a7",
+      "city": "waldbuettelbrunn",
+      "label": "August-Bebel-Straße 49",
+      "street": "August-Bebel-Straße",
+      "houseNumber": "49",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldbüttelbrunn",
+      "spotCount": 1,
+      "lat": 49.78749565,
+      "lng": 9.8418667,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1467271043), ODbL"
+    },
+    {
+      "id": "waldbuettelbrunn-0ca5bd8882",
+      "city": "waldbuettelbrunn",
+      "label": "Frankfurter Straße",
+      "street": "Frankfurter Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldbüttelbrunn",
+      "spotCount": 2,
+      "lat": 49.78670335,
+      "lng": 9.83321925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/758401140), ODbL"
+    },
+    {
+      "id": "waldbuettelbrunn-4597639bd6",
+      "city": "waldbuettelbrunn",
+      "label": "Gäßchen 19",
+      "street": "Gäßchen",
+      "houseNumber": "19",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Waldbüttelbrunn",
+      "spotCount": 1,
+      "lat": 49.7864439,
+      "lng": 9.8407865,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11451833944), ODbL"
+    },
+    {
+      "id": "waldbuettelbrunn-f6eb10b791",
+      "city": "waldbuettelbrunn",
+      "label": "Höchberger Straße 2",
+      "street": "Höchberger Straße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Waldbüttelbrunn",
+      "spotCount": 1,
+      "lat": 49.7877822,
+      "lng": 9.843277200000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11576610122), ODbL"
+    },
+    {
+      "id": "waldbuettelbrunn-0f827882f5",
+      "city": "waldbuettelbrunn",
+      "label": "Höchberger Straße 4a",
+      "street": "Höchberger Straße",
+      "houseNumber": "4a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldbüttelbrunn",
+      "spotCount": 1,
+      "lat": 49.78777335,
+      "lng": 9.84339375,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/404384452), ODbL"
+    },
+    {
+      "id": "waldbuettelbrunn-deaba2ae89",
+      "city": "waldbuettelbrunn",
+      "label": "Sumpfler",
+      "street": "Sumpfler",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Waldbüttelbrunn",
+      "spotCount": 1,
+      "lat": 49.784779300000004,
+      "lng": 9.8502255,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5966008289), ODbL"
+    }
+  ]
+}

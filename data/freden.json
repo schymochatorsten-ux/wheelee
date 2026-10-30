@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "freden",
+    "name": "Freden (Leine)",
+    "center": {
+      "lat": 51.92655715000001,
+      "lng": 9.900897500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "freden-181a980ad0",
+      "city": "freden",
+      "label": "Winzenburger Straße 4",
+      "street": "Winzenburger Straße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Freden (Leine)",
+      "spotCount": 1,
+      "lat": 51.92655715000001,
+      "lng": 9.900897500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/152615759), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "hallstadt",
+    "name": "Hallstadt",
+    "center": {
+      "lat": 49.923449000000005,
+      "lng": 10.874316100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hallstadt-98b2118a74",
+      "city": "hallstadt",
+      "label": "An der Marktscheune",
+      "street": "An der Marktscheune",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hallstadt",
+      "spotCount": 2,
+      "lat": 49.9272658,
+      "lng": 10.874316100000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5247422927), ODbL"
+    },
+    {
+      "id": "hallstadt-a6ac55161a",
+      "city": "hallstadt",
+      "label": "Dr.-Robert-Pfleger-Straße",
+      "street": "Dr.-Robert-Pfleger-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hallstadt",
+      "spotCount": 1,
+      "lat": 49.917069,
+      "lng": 10.871817400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/475109338), ODbL"
+    },
+    {
+      "id": "hallstadt-903cd39cde",
+      "city": "hallstadt",
+      "label": "Michelinstraße 130",
+      "street": "Michelinstraße",
+      "houseNumber": "130",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Hallstadt",
+      "spotCount": 1,
+      "lat": 49.923449000000005,
+      "lng": 10.890478000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/23402391), ODbL"
+    }
+  ]
+}

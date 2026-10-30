@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hoerden",
+    "name": "Hörden am Harz",
+    "center": {
+      "lat": 51.669528850000006,
+      "lng": 10.29104465
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hoerden-6d2b391db2",
+      "city": "hoerden",
+      "label": "Herzberger Straße",
+      "street": "Herzberger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hörden am Harz",
+      "spotCount": 2,
+      "lat": 51.669528850000006,
+      "lng": 10.290977700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1327925326), ODbL"
+    },
+    {
+      "id": "hoerden-6cc1021a81",
+      "city": "hoerden",
+      "label": "Herzberger Straße",
+      "street": "Herzberger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hörden am Harz",
+      "spotCount": 1,
+      "lat": 51.6694912,
+      "lng": 10.29104465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1327925327), ODbL"
+    }
+  ]
+}

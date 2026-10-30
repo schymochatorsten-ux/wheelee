@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wallerfangen",
+    "name": "Wallerfangen",
+    "center": {
+      "lat": 49.3200367,
+      "lng": 6.653575300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wallerfangen-b497b125b7",
+      "city": "wallerfangen",
+      "label": "Bergstraße",
+      "street": "Bergstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wallerfangen",
+      "spotCount": 1,
+      "lat": 49.3200367,
+      "lng": 6.653575300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8172328475), ODbL"
+    }
+  ]
+}

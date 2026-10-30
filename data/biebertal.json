@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "biebertal",
+    "name": "Biebertal",
+    "center": {
+      "lat": 50.62047805,
+      "lng": 8.5962133
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "biebertal-4f383506d6",
+      "city": "biebertal",
+      "label": "Mühlbergstraße 8",
+      "street": "Mühlbergstraße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Biebertal",
+      "spotCount": 2,
+      "lat": 50.62047805,
+      "lng": 8.5962133,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1482061766), ODbL"
+    }
+  ]
+}

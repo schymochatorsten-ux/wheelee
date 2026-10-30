@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "untergruppenbach",
+    "name": "Untergruppenbach",
+    "center": {
+      "lat": 49.0901595,
+      "lng": 9.31998475
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "untergruppenbach-fcaab18283",
+      "city": "untergruppenbach",
+      "label": "Donnbronner Straße 5",
+      "street": "Donnbronner Straße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Untergruppenbach",
+      "spotCount": 1,
+      "lat": 49.09173680000001,
+      "lng": 9.2761633,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/112472624), ODbL"
+    },
+    {
+      "id": "untergruppenbach-95753a0ff2",
+      "city": "untergruppenbach",
+      "label": "Kelterstraße",
+      "street": "Kelterstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Untergruppenbach",
+      "spotCount": 1,
+      "lat": 49.08908305,
+      "lng": 9.31998475,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1148346652), ODbL"
+    },
+    {
+      "id": "untergruppenbach-f812b4657f",
+      "city": "untergruppenbach",
+      "label": "Oberheinrieter Straße",
+      "street": "Oberheinrieter Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Untergruppenbach",
+      "spotCount": 2,
+      "lat": 49.0901595,
+      "lng": 9.32286125,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/130651373), ODbL"
+    }
+  ]
+}

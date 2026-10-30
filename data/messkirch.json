@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "messkirch",
+    "name": "Meßkirch",
+    "center": {
+      "lat": 47.99505885000001,
+      "lng": 9.1157546
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "messkirch-4b2b9873f7",
+      "city": "messkirch",
+      "label": "Am Stachus",
+      "street": "Am Stachus",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Meßkirch",
+      "spotCount": 2,
+      "lat": 47.9966974,
+      "lng": 9.11804285,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/209423046), ODbL"
+    },
+    {
+      "id": "messkirch-3dfbe69eeb",
+      "city": "messkirch",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Meßkirch",
+      "spotCount": 1,
+      "lat": 47.99505885000001,
+      "lng": 9.1157546,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/951436666), ODbL"
+    },
+    {
+      "id": "messkirch-5d248ff5f9",
+      "city": "messkirch",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Meßkirch",
+      "spotCount": 1,
+      "lat": 47.9950491,
+      "lng": 9.115725050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1256772999), ODbL"
+    }
+  ]
+}

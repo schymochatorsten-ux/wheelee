@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "treis-karden",
+    "name": "Treis-Karden",
+    "center": {
+      "lat": 50.169878250000004,
+      "lng": 7.2958748
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "treis-karden-3303436149",
+      "city": "treis-karden",
+      "label": "Auf der Kipp",
+      "street": "Auf der Kipp",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Treis-Karden",
+      "spotCount": 1,
+      "lat": 50.169878250000004,
+      "lng": 7.2958748,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/386603811), ODbL"
+    }
+  ]
+}

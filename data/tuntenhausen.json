@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "tuntenhausen",
+    "name": "Tuntenhausen",
+    "center": {
+      "lat": 47.93620490000001,
+      "lng": 12.018768300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "tuntenhausen-957d92783e",
+      "city": "tuntenhausen",
+      "label": "Bahnweg 13",
+      "street": "Bahnweg",
+      "houseNumber": "13",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Tuntenhausen",
+      "spotCount": 2,
+      "lat": 47.93620490000001,
+      "lng": 12.018818900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1111967714), ODbL"
+    },
+    {
+      "id": "tuntenhausen-7174a4b75c",
+      "city": "tuntenhausen",
+      "label": "Bahnweg 13",
+      "street": "Bahnweg",
+      "houseNumber": "13",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Tuntenhausen",
+      "spotCount": 1,
+      "lat": 47.936360750000006,
+      "lng": 12.018768300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1551476431), ODbL"
+    },
+    {
+      "id": "tuntenhausen-002f629b1b",
+      "city": "tuntenhausen",
+      "label": "Bahnweg 13",
+      "street": "Bahnweg",
+      "houseNumber": "13",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Tuntenhausen",
+      "spotCount": 1,
+      "lat": 47.93633165,
+      "lng": 12.0187937,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1551476432), ODbL"
+    },
+    {
+      "id": "tuntenhausen-2f302f5945",
+      "city": "tuntenhausen",
+      "label": "Freiung",
+      "street": "Freiung",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Tuntenhausen",
+      "spotCount": 2,
+      "lat": 47.901061500000004,
+      "lng": 11.992434000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1294895522), ODbL"
+    },
+    {
+      "id": "tuntenhausen-6c3e7f4067",
+      "city": "tuntenhausen",
+      "label": "Graf-Arco-Straße",
+      "street": "Graf-Arco-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Tuntenhausen",
+      "spotCount": 1,
+      "lat": 47.93239735,
+      "lng": 12.012963650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1034258814), ODbL"
+    },
+    {
+      "id": "tuntenhausen-00ec7d4793",
+      "city": "tuntenhausen",
+      "label": "Graf-Arco-Straße",
+      "street": "Graf-Arco-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Tuntenhausen",
+      "spotCount": 1,
+      "lat": 47.9324042,
+      "lng": 12.012979000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1551043969), ODbL"
+    },
+    {
+      "id": "tuntenhausen-728e917d32",
+      "city": "tuntenhausen",
+      "label": "Ostermünchen, Bahnhof",
+      "street": "Ostermünchen, Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Tuntenhausen",
+      "spotCount": 1,
+      "lat": 47.9425315,
+      "lng": 12.0413706,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1452798215), ODbL"
+    }
+  ]
+}

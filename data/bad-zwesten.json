@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "bad-zwesten",
+    "name": "Bad Zwesten",
+    "center": {
+      "lat": 51.0614088,
+      "lng": 9.174653450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-zwesten-be43b49170",
+      "city": "bad-zwesten",
+      "label": "Hardtstraße",
+      "street": "Hardtstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Zwesten",
+      "spotCount": 1,
+      "lat": 51.061035450000006,
+      "lng": 9.174653450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/116129233), ODbL"
+    },
+    {
+      "id": "bad-zwesten-124aeb2063",
+      "city": "bad-zwesten",
+      "label": "Hardtstraße",
+      "street": "Hardtstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Zwesten",
+      "spotCount": 3,
+      "lat": 51.058350100000006,
+      "lng": 9.175771750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/204171470), ODbL"
+    },
+    {
+      "id": "bad-zwesten-9693b52c98",
+      "city": "bad-zwesten",
+      "label": "Hardtstraße",
+      "street": "Hardtstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Zwesten",
+      "spotCount": 1,
+      "lat": 51.0614088,
+      "lng": 9.1729567,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/701021408), ODbL"
+    },
+    {
+      "id": "bad-zwesten-1070ffcb2c",
+      "city": "bad-zwesten",
+      "label": "Hardtstraße",
+      "street": "Hardtstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Zwesten",
+      "spotCount": 1,
+      "lat": 51.061978200000006,
+      "lng": 9.1735419,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/701457151), ODbL"
+    },
+    {
+      "id": "bad-zwesten-91511b2c98",
+      "city": "bad-zwesten",
+      "label": "Hardtstraße",
+      "street": "Hardtstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Zwesten",
+      "spotCount": 1,
+      "lat": 51.0627434,
+      "lng": 9.173173300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/701457152), ODbL"
+    },
+    {
+      "id": "bad-zwesten-1c13afcf93",
+      "city": "bad-zwesten",
+      "label": "Zum Kurpark 2",
+      "street": "Zum Kurpark",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Zwesten",
+      "spotCount": 1,
+      "lat": 51.0552905,
+      "lng": 9.17598165,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1469541259), ODbL"
+    }
+  ]
+}

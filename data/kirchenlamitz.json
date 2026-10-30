@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kirchenlamitz",
+    "name": "Kirchenlamitz",
+    "center": {
+      "lat": 50.143381600000005,
+      "lng": 11.9297793
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kirchenlamitz-12f67c2a5e",
+      "city": "kirchenlamitz",
+      "label": "Vorderes Buchhaus",
+      "street": "Vorderes Buchhaus",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kirchenlamitz",
+      "spotCount": 1,
+      "lat": 50.143381600000005,
+      "lng": 11.9297793,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/635208499), ODbL"
+    }
+  ]
+}

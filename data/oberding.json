@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "oberding",
+    "name": "Oberding",
+    "center": {
+      "lat": 48.308185650000006,
+      "lng": 11.86402385
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberding-6a09874b0b",
+      "city": "oberding",
+      "label": "Dorfstraße 15a",
+      "street": "Dorfstraße",
+      "houseNumber": "15a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberding",
+      "spotCount": 1,
+      "lat": 48.308185650000006,
+      "lng": 11.86402385,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1349829656), ODbL"
+    }
+  ]
+}

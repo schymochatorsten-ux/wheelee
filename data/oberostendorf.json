@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "oberostendorf",
+    "name": "Oberostendorf",
+    "center": {
+      "lat": 47.951362950000004,
+      "lng": 10.714209
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberostendorf-4bb4067028",
+      "city": "oberostendorf",
+      "label": "Inselweg",
+      "street": "Inselweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberostendorf",
+      "spotCount": 1,
+      "lat": 47.951362950000004,
+      "lng": 10.714209,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1183866847), ODbL"
+    }
+  ]
+}

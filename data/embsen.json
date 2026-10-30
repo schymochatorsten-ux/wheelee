@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "embsen",
+    "name": "Embsen",
+    "center": {
+      "lat": 53.1776677,
+      "lng": 10.3449335
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "embsen-f8edcb2c47",
+      "city": "embsen",
+      "label": "Ringstraße",
+      "street": "Ringstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Embsen",
+      "spotCount": 2,
+      "lat": 53.17770645,
+      "lng": 10.34506575,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1251882459), ODbL"
+    },
+    {
+      "id": "embsen-5fdff6b606",
+      "city": "embsen",
+      "label": "Ringstraße",
+      "street": "Ringstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Embsen",
+      "spotCount": 1,
+      "lat": 53.1776677,
+      "lng": 10.3449335,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1298511045), ODbL"
+    },
+    {
+      "id": "embsen-8ef9cdf9d4",
+      "city": "embsen",
+      "label": "Ringstraße",
+      "street": "Ringstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Embsen",
+      "spotCount": 1,
+      "lat": 53.1776421,
+      "lng": 10.3448855,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1369109228), ODbL"
+    }
+  ]
+}

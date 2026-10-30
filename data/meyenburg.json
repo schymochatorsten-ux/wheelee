@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "meyenburg",
+    "name": "Meyenburg",
+    "center": {
+      "lat": 53.31359675,
+      "lng": 12.24796155
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "meyenburg-95197968e9",
+      "city": "meyenburg",
+      "label": "Besucherparkplatz Amt Meyenburg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Meyenburg",
+      "spotCount": 1,
+      "lat": 53.31359675,
+      "lng": 12.24796155,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1065179467), ODbL"
+    }
+  ]
+}

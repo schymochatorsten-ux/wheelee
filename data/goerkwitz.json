@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "goerkwitz",
+    "name": "Görkwitz",
+    "center": {
+      "lat": 50.582479400000004,
+      "lng": 11.7789227
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "goerkwitz-46fc247eaa",
+      "city": "goerkwitz",
+      "label": "Himmelsteiche",
+      "street": "Himmelsteiche",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Görkwitz",
+      "spotCount": 1,
+      "lat": 50.582555600000006,
+      "lng": 11.77896325,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/754232335), ODbL"
+    },
+    {
+      "id": "goerkwitz-563e04ab38",
+      "city": "goerkwitz",
+      "label": "Himmelsteiche",
+      "street": "Himmelsteiche",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Görkwitz",
+      "spotCount": 1,
+      "lat": 50.5825182,
+      "lng": 11.77894315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/754232336), ODbL"
+    },
+    {
+      "id": "goerkwitz-d6c8527829",
+      "city": "goerkwitz",
+      "label": "Himmelsteiche",
+      "street": "Himmelsteiche",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Görkwitz",
+      "spotCount": 1,
+      "lat": 50.582479400000004,
+      "lng": 11.7789227,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/754232337), ODbL"
+    },
+    {
+      "id": "goerkwitz-5a46a78d67",
+      "city": "goerkwitz",
+      "label": "Himmelsteiche",
+      "street": "Himmelsteiche",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Görkwitz",
+      "spotCount": 1,
+      "lat": 50.582095300000006,
+      "lng": 11.777017350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/754245478), ODbL"
+    },
+    {
+      "id": "goerkwitz-0269600400",
+      "city": "goerkwitz",
+      "label": "Himmelsteiche",
+      "street": "Himmelsteiche",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Görkwitz",
+      "spotCount": 1,
+      "lat": 50.5821361,
+      "lng": 11.77704145,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/754245479), ODbL"
+    },
+    {
+      "id": "goerkwitz-26ea984dc1",
+      "city": "goerkwitz",
+      "label": "Himmelsteiche",
+      "street": "Himmelsteiche",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Görkwitz",
+      "spotCount": 1,
+      "lat": 50.58217690000001,
+      "lng": 11.7770655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/754245480), ODbL"
+    }
+  ]
+}

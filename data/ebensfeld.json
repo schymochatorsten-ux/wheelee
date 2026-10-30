@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ebensfeld",
+    "name": "Ebensfeld",
+    "center": {
+      "lat": 50.068209550000006,
+      "lng": 10.963011600000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ebensfeld-8c0507843d",
+      "city": "ebensfeld",
+      "label": "Balthasar-Neumann-Straße",
+      "street": "Balthasar-Neumann-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ebensfeld",
+      "spotCount": 1,
+      "lat": 50.068209550000006,
+      "lng": 10.963011600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/327107560), ODbL"
+    }
+  ]
+}

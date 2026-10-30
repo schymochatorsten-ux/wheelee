@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hochdorf-bw",
+    "name": "Hochdorf",
+    "center": {
+      "lat": 48.0385403,
+      "lng": 9.800339950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hochdorf-bw-d769985d97",
+      "city": "hochdorf-bw",
+      "label": "Appendorfer Straße 5",
+      "street": "Appendorfer Straße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hochdorf",
+      "spotCount": 1,
+      "lat": 48.0385403,
+      "lng": 9.800339950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/41948600), ODbL"
+    }
+  ]
+}

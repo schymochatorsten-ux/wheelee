@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ludwigsau",
+    "name": "Ludwigsau",
+    "center": {
+      "lat": 50.9170405,
+      "lng": 9.6984207
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ludwigsau-b3c5b84b47",
+      "city": "ludwigsau",
+      "label": "Parkplatz Besengrundhalle",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ludwigsau",
+      "spotCount": 20,
+      "lat": 50.9170405,
+      "lng": 9.6984207,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/90860789), ODbL"
+    }
+  ]
+}

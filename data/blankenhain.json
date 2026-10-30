@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "blankenhain",
+    "name": "Blankenhain",
+    "center": {
+      "lat": 50.8584807,
+      "lng": 11.340739150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "blankenhain-e1e221dd3f",
+      "city": "blankenhain",
+      "label": "Ackerwand 2",
+      "street": "Ackerwand",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Blankenhain",
+      "spotCount": 12,
+      "lat": 50.8584807,
+      "lng": 11.340739150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/924750365), ODbL"
+    }
+  ]
+}

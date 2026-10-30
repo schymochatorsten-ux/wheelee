@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "edesheim",
+    "name": "Edesheim",
+    "center": {
+      "lat": 49.26377575,
+      "lng": 8.133709750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "edesheim-fd30efb15a",
+      "city": "edesheim",
+      "label": "Jahnstraße",
+      "street": "Jahnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Edesheim",
+      "spotCount": 1,
+      "lat": 49.26377575,
+      "lng": 8.13873405,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/290827339), ODbL"
+    },
+    {
+      "id": "edesheim-7dac541ac0",
+      "city": "edesheim",
+      "label": "Leonhard-Eckel-Siedlung",
+      "street": "Leonhard-Eckel-Siedlung",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Edesheim",
+      "spotCount": 1,
+      "lat": 49.25766435,
+      "lng": 8.111828500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32427762), ODbL"
+    },
+    {
+      "id": "edesheim-9f3b75edb3",
+      "city": "edesheim",
+      "label": "Leonhard-Eckel-Siedlung",
+      "street": "Leonhard-Eckel-Siedlung",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Edesheim",
+      "spotCount": 1,
+      "lat": 49.2580645,
+      "lng": 8.1117277,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1014349073), ODbL"
+    },
+    {
+      "id": "edesheim-64ca6020e4",
+      "city": "edesheim",
+      "label": "Sparkasse",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Edesheim",
+      "spotCount": 1,
+      "lat": 49.264073700000004,
+      "lng": 8.133709750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/290832474), ODbL"
+    }
+  ]
+}

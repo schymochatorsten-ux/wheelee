@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "schallstadt",
+    "name": "Schallstadt",
+    "center": {
+      "lat": 47.96033715,
+      "lng": 7.7559223
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schallstadt-2daee879ef",
+      "city": "schallstadt",
+      "label": "Basler Straße",
+      "street": "Basler Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schallstadt",
+      "spotCount": 2,
+      "lat": 47.96210620000001,
+      "lng": 7.7685673500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/224144789), ODbL"
+    },
+    {
+      "id": "schallstadt-fb6b1be08b",
+      "city": "schallstadt",
+      "label": "P+R Bahnhof Nord",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Schallstadt",
+      "spotCount": 2,
+      "lat": 47.9560128,
+      "lng": 7.753169000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27154653), ODbL"
+    },
+    {
+      "id": "schallstadt-ccf775b6e3",
+      "city": "schallstadt",
+      "label": "Schallstadt Bahnhof",
+      "street": "Schallstadt Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schallstadt",
+      "spotCount": 2,
+      "lat": 47.95604695,
+      "lng": 7.753427100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1390005950), ODbL"
+    },
+    {
+      "id": "schallstadt-0d3bab2285",
+      "city": "schallstadt",
+      "label": "Waldseemüller-Straße 1",
+      "street": "Waldseemüller-Straße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schallstadt",
+      "spotCount": 1,
+      "lat": 47.96033715,
+      "lng": 7.7559223,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1011880942), ODbL"
+    }
+  ]
+}

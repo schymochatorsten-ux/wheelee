@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "borgholzhausen",
+    "name": "Borgholzhausen",
+    "center": {
+      "lat": 52.104939800000004,
+      "lng": 8.267644650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "borgholzhausen-115f3e1b25",
+      "city": "borgholzhausen",
+      "label": "Industriestraße",
+      "street": "Industriestraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Borgholzhausen",
+      "spotCount": 1,
+      "lat": 52.085059550000004,
+      "lng": 8.267644650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1050650575), ODbL"
+    },
+    {
+      "id": "borgholzhausen-e7bfcb1479",
+      "city": "borgholzhausen",
+      "label": "Wanderparkplatz Kleekamp",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Borgholzhausen",
+      "spotCount": 2,
+      "lat": 52.104939800000004,
+      "lng": 8.24795875,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1149541728), ODbL"
+    }
+  ]
+}

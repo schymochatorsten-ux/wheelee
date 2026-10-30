@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "herschbach",
+    "name": "Herschbach",
+    "center": {
+      "lat": 50.572866950000005,
+      "lng": 7.739811100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "herschbach-159bd54b32",
+      "city": "herschbach",
+      "label": "Heinrich-te-Poel-Straße 15",
+      "street": "Heinrich-te-Poel-Straße",
+      "houseNumber": "15",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Herschbach",
+      "spotCount": 1,
+      "lat": 50.572866950000005,
+      "lng": 7.739811100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1531637435), ODbL"
+    }
+  ]
+}

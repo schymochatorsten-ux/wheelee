@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "ottendorf-okrilla",
+    "name": "Ottendorf-Okrilla",
+    "center": {
+      "lat": 51.184368250000006,
+      "lng": 13.841926350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ottendorf-okrilla-2aadadcd1e",
+      "city": "ottendorf-okrilla",
+      "label": "Am Eichelberg",
+      "street": "Am Eichelberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ottendorf-Okrilla",
+      "spotCount": 2,
+      "lat": 51.17095075,
+      "lng": 13.841926350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1288944096), ODbL"
+    },
+    {
+      "id": "ottendorf-okrilla-05fbfc6496",
+      "city": "ottendorf-okrilla",
+      "label": "Bergener Ring",
+      "street": "Bergener Ring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ottendorf-Okrilla",
+      "spotCount": 2,
+      "lat": 51.184368250000006,
+      "lng": 13.835411100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1448588256), ODbL"
+    }
+  ]
+}

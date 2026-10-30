@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "pleinfeld",
+    "name": "Pleinfeld",
+    "center": {
+      "lat": 49.1192629,
+      "lng": 10.934687
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pleinfeld-c1d40015be",
+      "city": "pleinfeld",
+      "label": "Hafenstraße",
+      "street": "Hafenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pleinfeld",
+      "spotCount": 3,
+      "lat": 49.1192629,
+      "lng": 10.934687,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/445012728), ODbL"
+    }
+  ]
+}

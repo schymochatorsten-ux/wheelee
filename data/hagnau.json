@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "hagnau",
+    "name": "Hagnau am Bodensee",
+    "center": {
+      "lat": 47.6739242,
+      "lng": 9.31983735
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hagnau-6d05858ed1",
+      "city": "hagnau",
+      "label": "Im Hof",
+      "street": "Im Hof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hagnau am Bodensee",
+      "spotCount": 1,
+      "lat": 47.6739156,
+      "lng": 9.319878450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1073425284), ODbL"
+    },
+    {
+      "id": "hagnau-25d8373b23",
+      "city": "hagnau",
+      "label": "Im Hof",
+      "street": "Im Hof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hagnau am Bodensee",
+      "spotCount": 1,
+      "lat": 47.6739242,
+      "lng": 9.31983735,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1073425285), ODbL"
+    },
+    {
+      "id": "hagnau-52661bc4e8",
+      "city": "hagnau",
+      "label": "Seestraße 29",
+      "street": "Seestraße",
+      "houseNumber": "29",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hagnau am Bodensee",
+      "spotCount": 1,
+      "lat": 47.674115300000004,
+      "lng": 9.314750700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1535497300), ODbL"
+    }
+  ]
+}

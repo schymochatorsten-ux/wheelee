@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "sulzbach-laufen",
+    "name": "Sulzbach-Laufen",
+    "center": {
+      "lat": 48.960423000000006,
+      "lng": 9.849474200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sulzbach-laufen-dd0f7a85cc",
+      "city": "sulzbach-laufen",
+      "label": "Nestelbergstraße",
+      "street": "Nestelbergstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sulzbach-Laufen",
+      "spotCount": 1,
+      "lat": 48.960423000000006,
+      "lng": 9.849474200000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13416087968), ODbL"
+    }
+  ]
+}

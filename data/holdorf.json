@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "holdorf",
+    "name": "Holdorf",
+    "center": {
+      "lat": 52.579438550000006,
+      "lng": 8.114729400000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "holdorf-2c8bf7d254",
+      "city": "holdorf",
+      "label": "PKW",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Holdorf",
+      "spotCount": 1,
+      "lat": 52.538937100000005,
+      "lng": 8.114729400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/194375757), ODbL"
+    },
+    {
+      "id": "holdorf-1d847d21fa",
+      "city": "holdorf",
+      "label": "Zum Hansa Center",
+      "street": "Zum Hansa Center",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Holdorf",
+      "spotCount": 1,
+      "lat": 52.59807405000001,
+      "lng": 8.118379149999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1495941533), ODbL"
+    },
+    {
+      "id": "holdorf-602f2de359",
+      "city": "holdorf",
+      "label": "Zum Heidesee",
+      "street": "Zum Heidesee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Holdorf",
+      "spotCount": 2,
+      "lat": 52.579438550000006,
+      "lng": 8.11265315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1419112707), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "altenglan",
+    "name": "Altenglan",
+    "center": {
+      "lat": 49.5516298,
+      "lng": 7.4625807
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "altenglan-74ede0ae14",
+      "city": "altenglan",
+      "label": "Bahnhofstraße 45a",
+      "street": "Bahnhofstraße",
+      "houseNumber": "45a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Altenglan",
+      "spotCount": 1,
+      "lat": 49.5483488,
+      "lng": 7.4625807,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/464862288), ODbL"
+    },
+    {
+      "id": "altenglan-344db431e6",
+      "city": "altenglan",
+      "label": "Bergstraße",
+      "street": "Bergstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Altenglan",
+      "spotCount": 1,
+      "lat": 49.5516298,
+      "lng": 7.453587950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29213149), ODbL"
+    }
+  ]
+}

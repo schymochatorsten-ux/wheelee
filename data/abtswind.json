@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "abtswind",
+    "name": "Abtswind",
+    "center": {
+      "lat": 49.767650700000004,
+      "lng": 10.4099263
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "abtswind-3c0d1c9f42",
+      "city": "abtswind",
+      "label": "Wanderparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Abtswind",
+      "spotCount": 5,
+      "lat": 49.767650700000004,
+      "lng": 10.4099263,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11241293656), ODbL"
+    }
+  ]
+}

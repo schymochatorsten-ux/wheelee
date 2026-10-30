@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "osterrade",
+    "name": "Osterrade",
+    "center": {
+      "lat": 54.189762,
+      "lng": 9.352406250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "osterrade-8153177ed9",
+      "city": "osterrade",
+      "label": "Albersdorfer Straße",
+      "street": "Albersdorfer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Osterrade",
+      "spotCount": 1,
+      "lat": 54.18975575,
+      "lng": 9.35250035,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1522040544), ODbL"
+    },
+    {
+      "id": "osterrade-44068d0f34",
+      "city": "osterrade",
+      "label": "Albersdorfer Straße",
+      "street": "Albersdorfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Osterrade",
+      "spotCount": 4,
+      "lat": 54.189848350000005,
+      "lng": 9.352406250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1522040547), ODbL"
+    },
+    {
+      "id": "osterrade-b6e23e9ca3",
+      "city": "osterrade",
+      "label": "Dorfstraße 1",
+      "street": "Dorfstraße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Osterrade",
+      "spotCount": 1,
+      "lat": 54.189762,
+      "lng": 9.352369900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1522040545), ODbL"
+    }
+  ]
+}

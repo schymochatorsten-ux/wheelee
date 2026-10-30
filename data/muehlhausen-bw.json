@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "muehlhausen-bw",
+    "name": "Mühlhausen im Täle",
+    "center": {
+      "lat": 48.57526610000001,
+      "lng": 9.6570741
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "muehlhausen-bw-158714dccb",
+      "city": "muehlhausen-bw",
+      "label": "Filsaue",
+      "street": "Filsaue",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Mühlhausen im Täle",
+      "spotCount": 1,
+      "lat": 48.578927750000005,
+      "lng": 9.66293165,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1572287482), ODbL"
+    },
+    {
+      "id": "muehlhausen-bw-142861532c",
+      "city": "muehlhausen-bw",
+      "label": "Gosbacher Straße 18",
+      "street": "Gosbacher Straße",
+      "houseNumber": "18",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Mühlhausen im Täle",
+      "spotCount": 1,
+      "lat": 48.57524910000001,
+      "lng": 9.6570286,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1432550575), ODbL"
+    },
+    {
+      "id": "muehlhausen-bw-2f8363c4c7",
+      "city": "muehlhausen-bw",
+      "label": "Gosbacher Straße 18",
+      "street": "Gosbacher Straße",
+      "houseNumber": "18",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Mühlhausen im Täle",
+      "spotCount": 1,
+      "lat": 48.57526610000001,
+      "lng": 9.6570741,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1432550576), ODbL"
+    }
+  ]
+}

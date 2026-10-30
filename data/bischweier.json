@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bischweier",
+    "name": "Bischweier",
+    "center": {
+      "lat": 48.8321952,
+      "lng": 8.2779825
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bischweier-770bd8952c",
+      "city": "bischweier",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Bischweier",
+      "spotCount": 1,
+      "lat": 48.832084550000005,
+      "lng": 8.2779825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/203039276), ODbL"
+    },
+    {
+      "id": "bischweier-71683c7c34",
+      "city": "bischweier",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Bischweier",
+      "spotCount": 1,
+      "lat": 48.8321952,
+      "lng": 8.277716100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1309471148), ODbL"
+    }
+  ]
+}

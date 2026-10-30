@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ehringshausen",
+    "name": "Ehringshausen",
+    "center": {
+      "lat": 50.59946035,
+      "lng": 8.382584000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ehringshausen-c9a03c0e28",
+      "city": "ehringshausen",
+      "label": "Bahnhofstraße 37",
+      "street": "Bahnhofstraße",
+      "houseNumber": "37",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ehringshausen",
+      "spotCount": 1,
+      "lat": 50.59946035,
+      "lng": 8.382584000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1476135501), ODbL"
+    }
+  ]
+}

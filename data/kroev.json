@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kroev",
+    "name": "Kröv",
+    "center": {
+      "lat": 49.9741468,
+      "lng": 7.077086100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kroev-9f782930fa",
+      "city": "kroev",
+      "label": "In der Weiherwies 1",
+      "street": "In der Weiherwies",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kröv",
+      "spotCount": 1,
+      "lat": 49.9741468,
+      "lng": 7.077086100000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12046769953), ODbL"
+    }
+  ]
+}

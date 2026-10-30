@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "eibenstock",
+    "name": "Eibenstock",
+    "center": {
+      "lat": 50.4947754,
+      "lng": 12.59734465
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eibenstock-fbe09e7531",
+      "city": "eibenstock",
+      "label": "Schulstraße",
+      "street": "Schulstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eibenstock",
+      "spotCount": 2,
+      "lat": 50.4947754,
+      "lng": 12.59734465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/387925914), ODbL"
+    }
+  ]
+}

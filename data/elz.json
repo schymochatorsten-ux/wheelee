@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "elz",
+    "name": "Elz",
+    "center": {
+      "lat": 50.41318915000001,
+      "lng": 8.035054500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "elz-85e6b1a7be",
+      "city": "elz",
+      "label": "Hirtenplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Elz",
+      "spotCount": 3,
+      "lat": 50.41318915000001,
+      "lng": 8.0349853,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/436746234), ODbL"
+    },
+    {
+      "id": "elz-d554c2daf8",
+      "city": "elz",
+      "label": "Parkplatz Bachgasse",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Elz",
+      "spotCount": 2,
+      "lat": 50.411400300000004,
+      "lng": 8.035054500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1058578461), ODbL"
+    }
+  ]
+}

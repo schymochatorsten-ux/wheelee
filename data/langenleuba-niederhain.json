@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "langenleuba-niederhain",
+    "name": "Langenleuba-Niederhain",
+    "center": {
+      "lat": 50.960863,
+      "lng": 12.589340750000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "langenleuba-niederhain-5fefab1a6e",
+      "city": "langenleuba-niederhain",
+      "label": "Platz der Einheit",
+      "street": "Platz der Einheit",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Langenleuba-Niederhain",
+      "spotCount": 2,
+      "lat": 50.960863,
+      "lng": 12.589340750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/735402255), ODbL"
+    }
+  ]
+}

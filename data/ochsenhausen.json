@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "ochsenhausen",
+    "name": "Ochsenhausen",
+    "center": {
+      "lat": 48.0749304,
+      "lng": 9.947652950000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ochsenhausen-f2eb5b2144",
+      "city": "ochsenhausen",
+      "label": "Beim Braunland",
+      "street": "Beim Braunland",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ochsenhausen",
+      "spotCount": 2,
+      "lat": 48.078160700000005,
+      "lng": 9.947652950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/209426048), ODbL"
+    },
+    {
+      "id": "ochsenhausen-80fd723c6e",
+      "city": "ochsenhausen",
+      "label": "Grünweiler",
+      "street": "Grünweiler",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ochsenhausen",
+      "spotCount": 1,
+      "lat": 48.0727282,
+      "lng": 9.947297850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/209415311), ODbL"
+    },
+    {
+      "id": "ochsenhausen-4a5d13403b",
+      "city": "ochsenhausen",
+      "label": "Güterbahnhof",
+      "street": "Güterbahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ochsenhausen",
+      "spotCount": 2,
+      "lat": 48.0749304,
+      "lng": 9.946360300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/209426051), ODbL"
+    },
+    {
+      "id": "ochsenhausen-0eb1130004",
+      "city": "ochsenhausen",
+      "label": "Krankenhausweg",
+      "street": "Krankenhausweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ochsenhausen",
+      "spotCount": 1,
+      "lat": 48.07260895,
+      "lng": 9.95392295,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/51033742), ODbL"
+    },
+    {
+      "id": "ochsenhausen-0a99185aaa",
+      "city": "ochsenhausen",
+      "label": "Ulmer Straße 59",
+      "street": "Ulmer Straße",
+      "houseNumber": "59",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ochsenhausen",
+      "spotCount": 1,
+      "lat": 48.07775135,
+      "lng": 9.9488393,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/209426055), ODbL"
+    }
+  ]
+}

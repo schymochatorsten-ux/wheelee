@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bilshausen",
+    "name": "Bilshausen",
+    "center": {
+      "lat": 51.63183980000001,
+      "lng": 10.159153750000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bilshausen-5ac9f72e41",
+      "city": "bilshausen",
+      "label": "Kirchstraße",
+      "street": "Kirchstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bilshausen",
+      "spotCount": 1,
+      "lat": 51.63183980000001,
+      "lng": 10.1591064,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1308424593), ODbL"
+    },
+    {
+      "id": "bilshausen-f2c4dbd144",
+      "city": "bilshausen",
+      "label": "Kirchstraße",
+      "street": "Kirchstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bilshausen",
+      "spotCount": 1,
+      "lat": 51.63183955,
+      "lng": 10.159153750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1308424594), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "haslach",
+    "name": "Haslach im Kinzigtal",
+    "center": {
+      "lat": 48.279904200000004,
+      "lng": 8.08739145
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "haslach-ac2ee93319",
+      "city": "haslach",
+      "label": "Kinzigstraße 8",
+      "street": "Kinzigstraße",
+      "houseNumber": "8",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Haslach im Kinzigtal",
+      "spotCount": 1,
+      "lat": 48.291279450000005,
+      "lng": 8.07307265,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1567119702), ODbL"
+    },
+    {
+      "id": "haslach-f537f5cfde",
+      "city": "haslach",
+      "label": "Neue Eisenbahnstraße 16",
+      "street": "Neue Eisenbahnstraße",
+      "houseNumber": "16",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Haslach im Kinzigtal",
+      "spotCount": 1,
+      "lat": 48.27897900000001,
+      "lng": 8.087264750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1533263002), ODbL"
+    },
+    {
+      "id": "haslach-d66be27340",
+      "city": "haslach",
+      "label": "Schwarzwaldstraße",
+      "street": "Schwarzwaldstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Haslach im Kinzigtal",
+      "spotCount": 1,
+      "lat": 48.279858250000004,
+      "lng": 8.08744635,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/753899366), ODbL"
+    },
+    {
+      "id": "haslach-53c56ea97e",
+      "city": "haslach",
+      "label": "Schwarzwaldstraße",
+      "street": "Schwarzwaldstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Haslach im Kinzigtal",
+      "spotCount": 1,
+      "lat": 48.279904200000004,
+      "lng": 8.08739145,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1132734191), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "dannstadt-schauernheim",
+    "name": "Dannstadt-Schauernheim",
+    "center": {
+      "lat": 49.410643150000006,
+      "lng": 8.3415359
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dannstadt-schauernheim-aa1e97be0d",
+      "city": "dannstadt-schauernheim",
+      "label": "Autobahnraststätte Dannstadt-Ost",
+      "street": "Autobahnraststätte Dannstadt-Ost",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dannstadt-Schauernheim",
+      "spotCount": 1,
+      "lat": 49.410050250000005,
+      "lng": 8.34162765,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1147220135), ODbL"
+    },
+    {
+      "id": "dannstadt-schauernheim-7857021659",
+      "city": "dannstadt-schauernheim",
+      "label": "Dannstadt-Ost (PKW)",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Dannstadt-Schauernheim",
+      "spotCount": 2,
+      "lat": 49.410643150000006,
+      "lng": 8.3415359,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/117927142), ODbL"
+    },
+    {
+      "id": "dannstadt-schauernheim-81f4611eb1",
+      "city": "dannstadt-schauernheim",
+      "label": "Hauptstraße 162",
+      "street": "Hauptstraße",
+      "houseNumber": "162",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dannstadt-Schauernheim",
+      "spotCount": 2,
+      "lat": 49.424335150000005,
+      "lng": 8.31804065,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/550152847), ODbL"
+    }
+  ]
+}

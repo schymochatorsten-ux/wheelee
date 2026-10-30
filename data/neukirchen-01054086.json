@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "neukirchen-01054086",
+    "name": "Neukirchen",
+    "center": {
+      "lat": 54.883780200000004,
+      "lng": 8.7725538
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neukirchen-01054086-d7afe3129f",
+      "city": "neukirchen-01054086",
+      "label": "Seebüll",
+      "street": "Seebüll",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neukirchen",
+      "spotCount": 1,
+      "lat": 54.883780200000004,
+      "lng": 8.7725538,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/833356959), ODbL"
+    }
+  ]
+}

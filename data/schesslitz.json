@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "schesslitz",
+    "name": "Scheßlitz",
+    "center": {
+      "lat": 49.9808048,
+      "lng": 11.042579450000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schesslitz-63719a69db",
+      "city": "schesslitz",
+      "label": "Behindertenparkplatz Scheßlitz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Scheßlitz",
+      "spotCount": 1,
+      "lat": 50.0292647,
+      "lng": 11.05755525,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/219626367), ODbL"
+    },
+    {
+      "id": "schesslitz-3076104e02",
+      "city": "schesslitz",
+      "label": "Giechburgblick",
+      "street": "Giechburgblick",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Scheßlitz",
+      "spotCount": 2,
+      "lat": 49.95601310000001,
+      "lng": 10.9808378,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/384621780), ODbL"
+    },
+    {
+      "id": "schesslitz-d3b4e121aa",
+      "city": "schesslitz",
+      "label": "Oberend",
+      "street": "Oberend",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Scheßlitz",
+      "spotCount": 1,
+      "lat": 49.9808048,
+      "lng": 11.042579450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/312080108), ODbL"
+    }
+  ]
+}

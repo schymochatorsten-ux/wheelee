@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "dobel",
+    "name": "Dobel",
+    "center": {
+      "lat": 48.79690165,
+      "lng": 8.4929776
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dobel-f34379a2a0",
+      "city": "dobel",
+      "label": "Neue Herrenalber Straße",
+      "street": "Neue Herrenalber Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Dobel",
+      "spotCount": 2,
+      "lat": 48.79690165,
+      "lng": 8.4929776,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28314085), ODbL"
+    }
+  ]
+}

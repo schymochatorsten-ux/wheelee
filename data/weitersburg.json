@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "weitersburg",
+    "name": "Weitersburg",
+    "center": {
+      "lat": 50.414462,
+      "lng": 7.598751400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "weitersburg-07babc6867",
+      "city": "weitersburg",
+      "label": "Im Staffelstück",
+      "street": "Im Staffelstück",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weitersburg",
+      "spotCount": 1,
+      "lat": 50.414462,
+      "lng": 7.5987377,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/322074289), ODbL"
+    },
+    {
+      "id": "weitersburg-b954619aef",
+      "city": "weitersburg",
+      "label": "Im Staffelstück",
+      "street": "Im Staffelstück",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weitersburg",
+      "spotCount": 1,
+      "lat": 50.4144488,
+      "lng": 7.598751400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1540313041), ODbL"
+    }
+  ]
+}

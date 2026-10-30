@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "hoerselberg-hainich",
+    "name": "Hörselberg-Hainich",
+    "center": {
+      "lat": 50.992967500000006,
+      "lng": 10.4448615
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hoerselberg-hainich-72fcdbd0bb",
+      "city": "hoerselberg-hainich",
+      "label": "Hainich",
+      "street": "Hainich",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hörselberg-Hainich",
+      "spotCount": 1,
+      "lat": 50.992967500000006,
+      "lng": 10.4449318,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/753673267), ODbL"
+    },
+    {
+      "id": "hoerselberg-hainich-24487a2d1e",
+      "city": "hoerselberg-hainich",
+      "label": "Hainich",
+      "street": "Hainich",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hörselberg-Hainich",
+      "spotCount": 1,
+      "lat": 50.99298035,
+      "lng": 10.4448615,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/753673268), ODbL"
+    },
+    {
+      "id": "hoerselberg-hainich-afd58d15dc",
+      "city": "hoerselberg-hainich",
+      "label": "Hainich",
+      "street": "Hainich",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hörselberg-Hainich",
+      "spotCount": 1,
+      "lat": 50.992186450000005,
+      "lng": 10.44005905,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/753673269), ODbL"
+    },
+    {
+      "id": "hoerselberg-hainich-f8edee1f84",
+      "city": "hoerselberg-hainich",
+      "label": "Hainich",
+      "street": "Hainich",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hörselberg-Hainich",
+      "spotCount": 1,
+      "lat": 50.99219955000001,
+      "lng": 10.4399884,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/753673270), ODbL"
+    }
+  ]
+}

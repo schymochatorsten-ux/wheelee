@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "waldeck",
+    "name": "Waldeck",
+    "center": {
+      "lat": 51.2710718,
+      "lng": 8.9912139
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "waldeck-a8531908f1",
+      "city": "waldeck",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Waldeck",
+      "spotCount": 1,
+      "lat": 51.2710718,
+      "lng": 8.9912139,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10724324929), ODbL"
+    },
+    {
+      "id": "waldeck-8e4a5ee0b5",
+      "city": "waldeck",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Waldeck",
+      "spotCount": 1,
+      "lat": 51.2710962,
+      "lng": 8.991192400000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10724324930), ODbL"
+    },
+    {
+      "id": "waldeck-9992a79c52",
+      "city": "waldeck",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Waldeck",
+      "spotCount": 2,
+      "lat": 51.27094515,
+      "lng": 8.99132935,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1153040181), ODbL"
+    }
+  ]
+}

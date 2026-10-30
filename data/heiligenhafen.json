@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "heiligenhafen",
+    "name": "Heiligenhafen",
+    "center": {
+      "lat": 54.38115965,
+      "lng": 10.970492400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "heiligenhafen-ca7ea83e1c",
+      "city": "heiligenhafen",
+      "label": "Behindertenparkplatz Heiligenhafen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heiligenhafen",
+      "spotCount": 1,
+      "lat": 54.381423600000005,
+      "lng": 10.970492400000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11342354615), ODbL"
+    },
+    {
+      "id": "heiligenhafen-3a746fe681",
+      "city": "heiligenhafen",
+      "label": "Eichholzweg",
+      "street": "Eichholzweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Heiligenhafen",
+      "spotCount": 1,
+      "lat": 54.37531655000001,
+      "lng": 10.96016215,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1422172984), ODbL"
+    },
+    {
+      "id": "heiligenhafen-456c621d45",
+      "city": "heiligenhafen",
+      "label": "Steinwarder",
+      "street": "Steinwarder",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Heiligenhafen",
+      "spotCount": 4,
+      "lat": 54.379331900000004,
+      "lng": 10.974793600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/391818005), ODbL"
+    },
+    {
+      "id": "heiligenhafen-3ebeea3eef",
+      "city": "heiligenhafen",
+      "label": "Steinwarder 6",
+      "street": "Steinwarder",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heiligenhafen",
+      "spotCount": 2,
+      "lat": 54.38115965,
+      "lng": 10.96635605,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1175910321), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "guentersleben",
+    "name": "Güntersleben",
+    "center": {
+      "lat": 49.86907875,
+      "lng": 9.90500835
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "guentersleben-31f3115172",
+      "city": "guentersleben",
+      "label": "Langgasse 1",
+      "street": "Langgasse",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Güntersleben",
+      "spotCount": 1,
+      "lat": 49.86907875,
+      "lng": 9.90500835,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/904182364), ODbL"
+    }
+  ]
+}

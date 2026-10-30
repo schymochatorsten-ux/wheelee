@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "boltenhagen",
+    "name": "Boltenhagen",
+    "center": {
+      "lat": 53.9807105,
+      "lng": 11.2309798
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "boltenhagen-3e5cdc2cf2",
+      "city": "boltenhagen",
+      "label": "Albin-Köbis-Siedlung",
+      "street": "Albin-Köbis-Siedlung",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Boltenhagen",
+      "spotCount": 1,
+      "lat": 53.9807105,
+      "lng": 11.231922800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11700431934), ODbL"
+    },
+    {
+      "id": "boltenhagen-eb9daf767a",
+      "city": "boltenhagen",
+      "label": "Ostseeallee",
+      "street": "Ostseeallee",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Boltenhagen",
+      "spotCount": 3,
+      "lat": 53.9798838,
+      "lng": 11.2309798,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11701200859), ODbL"
+    },
+    {
+      "id": "boltenhagen-3118b60c23",
+      "city": "boltenhagen",
+      "label": "Ostseeallee",
+      "street": "Ostseeallee",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Boltenhagen",
+      "spotCount": 3,
+      "lat": 53.9854604,
+      "lng": 11.2077126,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11701207175), ODbL"
+    },
+    {
+      "id": "boltenhagen-95dec3b762",
+      "city": "boltenhagen",
+      "label": "Ostseeallee 38",
+      "street": "Ostseeallee",
+      "houseNumber": "38",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Boltenhagen",
+      "spotCount": 1,
+      "lat": 53.984047800000006,
+      "lng": 11.2107083,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5148903840), ODbL"
+    },
+    {
+      "id": "boltenhagen-81216ce8e3",
+      "city": "boltenhagen",
+      "label": "Ostseeallee 4",
+      "street": "Ostseeallee",
+      "houseNumber": "4",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Boltenhagen",
+      "spotCount": 1,
+      "lat": 53.9875167,
+      "lng": 11.203056,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10970225435), ODbL"
+    },
+    {
+      "id": "boltenhagen-0758ade0ef",
+      "city": "boltenhagen",
+      "label": "Zum Hafen",
+      "street": "Zum Hafen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Boltenhagen",
+      "spotCount": 2,
+      "lat": 53.97435300000001,
+      "lng": 11.24486825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/527931739), ODbL"
+    },
+    {
+      "id": "boltenhagen-8ac8c0a6d3",
+      "city": "boltenhagen",
+      "label": "Zum Hafen",
+      "street": "Zum Hafen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Boltenhagen",
+      "spotCount": 1,
+      "lat": 53.974099800000005,
+      "lng": 11.245124800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1187769798), ODbL"
+    }
+  ]
+}

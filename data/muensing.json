@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "muensing",
+    "name": "Münsing",
+    "center": {
+      "lat": 47.855615500000006,
+      "lng": 11.339439800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "muensing-d67d51b9e9",
+      "city": "muensing",
+      "label": "Am Labbach 15",
+      "street": "Am Labbach",
+      "houseNumber": "15",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Münsing",
+      "spotCount": 1,
+      "lat": 47.9030107,
+      "lng": 11.366094,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5130822626), ODbL"
+    },
+    {
+      "id": "muensing-99b3f96249",
+      "city": "muensing",
+      "label": "Am Schwaiblbach",
+      "street": "Am Schwaiblbach",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Münsing",
+      "spotCount": 1,
+      "lat": 47.855615500000006,
+      "lng": 11.339439800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14024467921), ODbL"
+    },
+    {
+      "id": "muensing-f406f96d7a",
+      "city": "muensing",
+      "label": "Behindertenparkplatz Münsing",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Münsing",
+      "spotCount": 2,
+      "lat": 47.8300824,
+      "lng": 11.337191800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1232312955), ODbL"
+    },
+    {
+      "id": "muensing-3b53cefdf7",
+      "city": "muensing",
+      "label": "Beuerberger Straße",
+      "street": "Beuerberger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Münsing",
+      "spotCount": 1,
+      "lat": 47.850615600000005,
+      "lng": 11.3394052,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14024467922), ODbL"
+    },
+    {
+      "id": "muensing-dae6a8b033",
+      "city": "muensing",
+      "label": "Weipertshausener Straße",
+      "street": "Weipertshausener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Münsing",
+      "spotCount": 1,
+      "lat": 47.90342335,
+      "lng": 11.36533895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1046853992), ODbL"
+    }
+  ]
+}

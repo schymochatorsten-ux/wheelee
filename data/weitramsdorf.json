@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "weitramsdorf",
+    "name": "Weitramsdorf",
+    "center": {
+      "lat": 50.23239100000001,
+      "lng": 10.863304000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "weitramsdorf-b4a0d61177",
+      "city": "weitramsdorf",
+      "label": "Schloßallee",
+      "street": "Schloßallee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weitramsdorf",
+      "spotCount": 1,
+      "lat": 50.23239100000001,
+      "lng": 10.863304000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/389864756), ODbL"
+    }
+  ]
+}

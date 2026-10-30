@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "waldfischbach-burgalben",
+    "name": "Waldfischbach-Burgalben",
+    "center": {
+      "lat": 49.28835335,
+      "lng": 7.6523881000000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "waldfischbach-burgalben-16c5b504a2",
+      "city": "waldfischbach-burgalben",
+      "label": "Bahnhofstraße 3",
+      "street": "Bahnhofstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldfischbach-Burgalben",
+      "spotCount": 1,
+      "lat": 49.28835335,
+      "lng": 7.6523881000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/364408280), ODbL"
+    }
+  ]
+}

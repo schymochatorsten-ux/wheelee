@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "tittmoning",
+    "name": "Tittmoning",
+    "center": {
+      "lat": 48.063173500000005,
+      "lng": 12.76649865
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "tittmoning-a1a3e77f4f",
+      "city": "tittmoning",
+      "label": "Hartlgasse",
+      "street": "Hartlgasse",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Tittmoning",
+      "spotCount": 1,
+      "lat": 48.063173500000005,
+      "lng": 12.76649865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/671131685), ODbL"
+    }
+  ]
+}

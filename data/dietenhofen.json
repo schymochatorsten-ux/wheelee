@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "dietenhofen",
+    "name": "Dietenhofen",
+    "center": {
+      "lat": 49.403480200000004,
+      "lng": 10.6908699
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dietenhofen-baf7541d7b",
+      "city": "dietenhofen",
+      "label": "Marktplatz",
+      "street": "Marktplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dietenhofen",
+      "spotCount": 1,
+      "lat": 49.3999249,
+      "lng": 10.6908699,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1532257774), ODbL"
+    },
+    {
+      "id": "dietenhofen-732807a561",
+      "city": "dietenhofen",
+      "label": "Pestalozzistraße",
+      "street": "Pestalozzistraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dietenhofen",
+      "spotCount": 1,
+      "lat": 49.403480200000004,
+      "lng": 10.686784750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/448917483), ODbL"
+    }
+  ]
+}

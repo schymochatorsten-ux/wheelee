@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "taura",
+    "name": "Taura",
+    "center": {
+      "lat": 50.9181468,
+      "lng": 12.841322950000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "taura-3cb9d1ec31",
+      "city": "taura",
+      "label": "Köthensdorfer Straße 2",
+      "street": "Köthensdorfer Straße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Taura",
+      "spotCount": 1,
+      "lat": 50.9181468,
+      "lng": 12.841322950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/909311160), ODbL"
+    }
+  ]
+}

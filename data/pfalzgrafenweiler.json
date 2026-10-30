@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "pfalzgrafenweiler",
+    "name": "Pfalzgrafenweiler",
+    "center": {
+      "lat": 48.53567305,
+      "lng": 8.56979265
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pfalzgrafenweiler-5e895a99f0",
+      "city": "pfalzgrafenweiler",
+      "label": "Dieselstraße",
+      "street": "Dieselstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pfalzgrafenweiler",
+      "spotCount": 1,
+      "lat": 48.5374009,
+      "lng": 8.571215200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/132533928), ODbL"
+    },
+    {
+      "id": "pfalzgrafenweiler-913b4431da",
+      "city": "pfalzgrafenweiler",
+      "label": "Karl-Berner-Straße",
+      "street": "Karl-Berner-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Pfalzgrafenweiler",
+      "spotCount": 3,
+      "lat": 48.5182286,
+      "lng": 8.57657855,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/929134019), ODbL"
+    },
+    {
+      "id": "pfalzgrafenweiler-a753de2371",
+      "city": "pfalzgrafenweiler",
+      "label": "Kronenstraße",
+      "street": "Kronenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Pfalzgrafenweiler",
+      "spotCount": 1,
+      "lat": 48.525528050000005,
+      "lng": 8.56520375,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/135978565), ODbL"
+    },
+    {
+      "id": "pfalzgrafenweiler-f09baa5e61",
+      "city": "pfalzgrafenweiler",
+      "label": "Marktplatz 19",
+      "street": "Marktplatz",
+      "houseNumber": "19",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Pfalzgrafenweiler",
+      "spotCount": 1,
+      "lat": 48.52588780000001,
+      "lng": 8.564499650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/132082336), ODbL"
+    },
+    {
+      "id": "pfalzgrafenweiler-8da74e581e",
+      "city": "pfalzgrafenweiler",
+      "label": "Porschestraße 11",
+      "street": "Porschestraße",
+      "houseNumber": "11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pfalzgrafenweiler",
+      "spotCount": 1,
+      "lat": 48.53567305,
+      "lng": 8.56844075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/132326324), ODbL"
+    },
+    {
+      "id": "pfalzgrafenweiler-8621c580c0",
+      "city": "pfalzgrafenweiler",
+      "label": "Porschestraße 19",
+      "street": "Porschestraße",
+      "houseNumber": "19",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pfalzgrafenweiler",
+      "spotCount": 1,
+      "lat": 48.5365717,
+      "lng": 8.56979265,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/132326323), ODbL"
+    }
+  ]
+}

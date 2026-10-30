@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "eching-by",
+    "name": "Eching",
+    "center": {
+      "lat": 48.490442800000004,
+      "lng": 12.02512355
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eching-by-7b3b28cc3d",
+      "city": "eching-by",
+      "label": "Möbel Biller",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eching",
+      "spotCount": 1,
+      "lat": 48.490442800000004,
+      "lng": 12.02512355,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/48581968), ODbL"
+    },
+    {
+      "id": "eching-by-2d30393b3a",
+      "city": "eching-by",
+      "label": "Strogenweg",
+      "street": "Strogenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eching",
+      "spotCount": 1,
+      "lat": 48.48568590000001,
+      "lng": 12.01435185,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/46035379), ODbL"
+    }
+  ]
+}

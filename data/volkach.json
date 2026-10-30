@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "volkach",
+    "name": "Volkach",
+    "center": {
+      "lat": 49.86723895,
+      "lng": 10.1820613
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "volkach-2b41eaeff5",
+      "city": "volkach",
+      "label": "Behindertenparkplatz Volkach",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Volkach",
+      "spotCount": 2,
+      "lat": 49.86720315,
+      "lng": 10.1810421,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/42126722), ODbL"
+    },
+    {
+      "id": "volkach-4ab258bb68",
+      "city": "volkach",
+      "label": "Behindertenparkplatz Volkach",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Volkach",
+      "spotCount": 1,
+      "lat": 49.86724475,
+      "lng": 10.1820613,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1537680929), ODbL"
+    },
+    {
+      "id": "volkach-0ef1127364",
+      "city": "volkach",
+      "label": "Behindertenparkplatz Volkach",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Volkach",
+      "spotCount": 1,
+      "lat": 49.86723895,
+      "lng": 10.1820263,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1537680930), ODbL"
+    },
+    {
+      "id": "volkach-d8cdeba829",
+      "city": "volkach",
+      "label": "Einkaufspark Volkacher Mainschleife",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Volkach",
+      "spotCount": 1,
+      "lat": 49.86161605,
+      "lng": 10.2252884,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/53536327), ODbL"
+    }
+  ]
+}

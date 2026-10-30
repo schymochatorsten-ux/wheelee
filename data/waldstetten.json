@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "waldstetten",
+    "name": "Waldstetten",
+    "center": {
+      "lat": 48.7667894,
+      "lng": 9.821619100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "waldstetten-e3b63c48dc",
+      "city": "waldstetten",
+      "label": "Gmünder Straße 7/1",
+      "street": "Gmünder Straße",
+      "houseNumber": "7/1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Waldstetten",
+      "spotCount": 1,
+      "lat": 48.7667894,
+      "lng": 9.821619100000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9804422320), ODbL"
+    },
+    {
+      "id": "waldstetten-84d7413481",
+      "city": "waldstetten",
+      "label": "Gmünder Straße 7/1",
+      "street": "Gmünder Straße",
+      "houseNumber": "7/1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldstetten",
+      "spotCount": 1,
+      "lat": 48.76678295000001,
+      "lng": 9.8216043,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1067963125), ODbL"
+    }
+  ]
+}

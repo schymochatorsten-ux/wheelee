@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "pellworm",
+    "name": "Pellworm",
+    "center": {
+      "lat": 54.5335513,
+      "lng": 8.5986227
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pellworm-13d4064eaf",
+      "city": "pellworm",
+      "label": "Sluutweg",
+      "street": "Sluutweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pellworm",
+      "spotCount": 1,
+      "lat": 54.53348615,
+      "lng": 8.5986227,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/108340661), ODbL"
+    },
+    {
+      "id": "pellworm-73d7cad80d",
+      "city": "pellworm",
+      "label": "Sluutweg",
+      "street": "Sluutweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Pellworm",
+      "spotCount": 1,
+      "lat": 54.5335513,
+      "lng": 8.59829765,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1429747352), ODbL"
+    }
+  ]
+}

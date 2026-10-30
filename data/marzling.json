@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "marzling",
+    "name": "Marzling",
+    "center": {
+      "lat": 48.41030495,
+      "lng": 11.799357750000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "marzling-683ba341a7",
+      "city": "marzling",
+      "label": "An der Stoibermühle",
+      "street": "An der Stoibermühle",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Marzling",
+      "spotCount": 1,
+      "lat": 48.388253500000005,
+      "lng": 11.7903983,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1082590255), ODbL"
+    },
+    {
+      "id": "marzling-e87f0b706a",
+      "city": "marzling",
+      "label": "Park and Ride",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Marzling",
+      "spotCount": 1,
+      "lat": 48.41030495,
+      "lng": 11.799357750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24632411), ODbL"
+    }
+  ]
+}

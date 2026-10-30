@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "longkamp",
+    "name": "Longkamp",
+    "center": {
+      "lat": 49.871856900000004,
+      "lng": 7.1263068
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "longkamp-363ca855ab",
+      "city": "longkamp",
+      "label": "Longkamp",
+      "street": "Longkamp",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Longkamp",
+      "spotCount": 1,
+      "lat": 49.871838800000006,
+      "lng": 7.1263068,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13987515136), ODbL"
+    },
+    {
+      "id": "longkamp-5696fc749d",
+      "city": "longkamp",
+      "label": "Longkamp",
+      "street": "Longkamp",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Longkamp",
+      "spotCount": 1,
+      "lat": 49.871856900000004,
+      "lng": 7.1262445,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13987515138), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "soerup",
+    "name": "Sörup",
+    "center": {
+      "lat": 54.71883145,
+      "lng": 9.67744925
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "soerup-fb44230ab3",
+      "city": "soerup",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sörup",
+      "spotCount": 2,
+      "lat": 54.71883145,
+      "lng": 9.67744925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/109852475), ODbL"
+    },
+    {
+      "id": "soerup-c118c29f22",
+      "city": "soerup",
+      "label": "Schleswiger Straße",
+      "street": "Schleswiger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sörup",
+      "spotCount": 1,
+      "lat": 54.71556270000001,
+      "lng": 9.669360300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/270293181), ODbL"
+    }
+  ]
+}

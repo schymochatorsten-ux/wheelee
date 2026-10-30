@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "grosskarolinenfeld",
+    "name": "Großkarolinenfeld",
+    "center": {
+      "lat": 47.891186250000004,
+      "lng": 12.079084300000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grosskarolinenfeld-242a9760b6",
+      "city": "grosskarolinenfeld",
+      "label": "Friedhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großkarolinenfeld",
+      "spotCount": 2,
+      "lat": 47.884503300000006,
+      "lng": 12.076090800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/79560125), ODbL"
+    },
+    {
+      "id": "grosskarolinenfeld-d668e80904",
+      "city": "grosskarolinenfeld",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großkarolinenfeld",
+      "spotCount": 1,
+      "lat": 47.9238227,
+      "lng": 12.079084300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1215037733), ODbL"
+    },
+    {
+      "id": "grosskarolinenfeld-76c3537336",
+      "city": "grosskarolinenfeld",
+      "label": "Karolinenplatz",
+      "street": "Karolinenplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großkarolinenfeld",
+      "spotCount": 1,
+      "lat": 47.8912999,
+      "lng": 12.079521600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/612930907), ODbL"
+    },
+    {
+      "id": "grosskarolinenfeld-2024e5c928",
+      "city": "grosskarolinenfeld",
+      "label": "Kolbergstraße",
+      "street": "Kolbergstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großkarolinenfeld",
+      "spotCount": 1,
+      "lat": 47.8909754,
+      "lng": 12.0786472,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/78059854), ODbL"
+    },
+    {
+      "id": "grosskarolinenfeld-2f7dd19c2f",
+      "city": "grosskarolinenfeld",
+      "label": "Rathaus",
+      "street": "Karolinenplatz",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großkarolinenfeld",
+      "spotCount": 2,
+      "lat": 47.891186250000004,
+      "lng": 12.077666650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/938122153), ODbL"
+    },
+    {
+      "id": "grosskarolinenfeld-d855460ad2",
+      "city": "grosskarolinenfeld",
+      "label": "Westheimer Platz",
+      "street": "Westheimer Platz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großkarolinenfeld",
+      "spotCount": 2,
+      "lat": 47.889177200000006,
+      "lng": 12.084480200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/412856991), ODbL"
+    }
+  ]
+}

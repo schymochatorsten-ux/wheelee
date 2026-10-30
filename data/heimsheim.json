@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "heimsheim",
+    "name": "Heimsheim",
+    "center": {
+      "lat": 48.82710165,
+      "lng": 8.8696748
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "heimsheim-9b23aedc19",
+      "city": "heimsheim",
+      "label": "Besucherparkplatz JVA",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heimsheim",
+      "spotCount": 1,
+      "lat": 48.82710165,
+      "lng": 8.860941350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28705089), ODbL"
+    },
+    {
+      "id": "heimsheim-e8a35d02ac",
+      "city": "heimsheim",
+      "label": "Römerstraße 11",
+      "street": "Römerstraße",
+      "houseNumber": "11",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Heimsheim",
+      "spotCount": 1,
+      "lat": 48.8245031,
+      "lng": 8.8696748,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10992582752), ODbL"
+    }
+  ]
+}

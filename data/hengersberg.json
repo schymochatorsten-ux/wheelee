@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hengersberg",
+    "name": "Hengersberg",
+    "center": {
+      "lat": 48.77386935,
+      "lng": 13.05173105
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hengersberg-0e2b09c823",
+      "city": "hengersberg",
+      "label": "Marktplatz 12",
+      "street": "Marktplatz",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hengersberg",
+      "spotCount": 2,
+      "lat": 48.77386935,
+      "lng": 13.05173105,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1308494795), ODbL"
+    }
+  ]
+}

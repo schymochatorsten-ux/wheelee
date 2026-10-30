@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "glaubitz",
+    "name": "Glaubitz",
+    "center": {
+      "lat": 51.322051900000005,
+      "lng": 13.394800850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "glaubitz-10f8ca3429",
+      "city": "glaubitz",
+      "label": "An der Mühle",
+      "street": "An der Mühle",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Glaubitz",
+      "spotCount": 1,
+      "lat": 51.322051900000005,
+      "lng": 13.394800850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/141331815), ODbL"
+    }
+  ]
+}

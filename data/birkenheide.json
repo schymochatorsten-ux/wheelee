@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "birkenheide",
+    "name": "Birkenheide",
+    "center": {
+      "lat": 49.48336675,
+      "lng": 8.265323200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "birkenheide-0a3197546f",
+      "city": "birkenheide",
+      "label": "Eyersheimer Straße 13",
+      "street": "Eyersheimer Straße",
+      "houseNumber": "13",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Birkenheide",
+      "spotCount": 1,
+      "lat": 49.48336675,
+      "lng": 8.265323200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/271791371), ODbL"
+    }
+  ]
+}

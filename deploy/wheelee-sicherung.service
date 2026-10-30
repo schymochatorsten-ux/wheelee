@@ -1,0 +1,14 @@
+[Unit]
+Description=wheelee Datenbanksicherung (ToDo 19.3)
+After=docker.service
+Requires=docker.service
+
+[Service]
+Type=oneshot
+ExecStart=/opt/wheelee/deploy/wheelee-sicherung.sh
+# Wie wheelee-webhook.service: der Benutzer, dem /opt/wheelee gehört und der
+# Docker benutzen darf. Beim Einrichten anpassen.
+User=niklas
+Group=niklas
+SupplementaryGroups=docker
+NoNewPrivileges=true

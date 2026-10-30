@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "fockbek",
+    "name": "Fockbek",
+    "center": {
+      "lat": 54.3073618,
+      "lng": 9.6032524
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "fockbek-88d3eafad8",
+      "city": "fockbek",
+      "label": "Rendsburger Straße",
+      "street": "Rendsburger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Fockbek",
+      "spotCount": 1,
+      "lat": 54.3073618,
+      "lng": 9.6032524,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5145278033), ODbL"
+    }
+  ]
+}

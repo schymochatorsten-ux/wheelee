@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "biblis",
+    "name": "Biblis",
+    "center": {
+      "lat": 49.69500000000001,
+      "lng": 8.4641376
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "biblis-7340a60620",
+      "city": "biblis",
+      "label": "Darmstädter Straße",
+      "street": "Darmstädter Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Biblis",
+      "spotCount": 1,
+      "lat": 49.69500000000001,
+      "lng": 8.4641376,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/36583430), ODbL"
+    },
+    {
+      "id": "biblis-f7c6bb9cf7",
+      "city": "biblis",
+      "label": "Kirchstraße 6",
+      "street": "Kirchstraße",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Biblis",
+      "spotCount": 1,
+      "lat": 49.68412205,
+      "lng": 8.4504047,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/233429920), ODbL"
+    }
+  ]
+}

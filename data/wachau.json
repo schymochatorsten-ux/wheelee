@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "wachau",
+    "name": "Wachau",
+    "center": {
+      "lat": 51.1646313,
+      "lng": 13.8816582
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wachau-db9cb020bf",
+      "city": "wachau",
+      "label": "Schönborner Weg",
+      "street": "Schönborner Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wachau",
+      "spotCount": 1,
+      "lat": 51.1507184,
+      "lng": 13.8816582,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5697138460), ODbL"
+    },
+    {
+      "id": "wachau-3a46950852",
+      "city": "wachau",
+      "label": "Siedlung 10",
+      "street": "Siedlung",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wachau",
+      "spotCount": 1,
+      "lat": 51.1646313,
+      "lng": 13.87914705,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1215566427), ODbL"
+    }
+  ]
+}

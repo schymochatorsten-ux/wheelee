@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hamberge",
+    "name": "Hamberge",
+    "center": {
+      "lat": 53.840605000000004,
+      "lng": 10.579732100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hamberge-23e3835197",
+      "city": "hamberge",
+      "label": "Schulstraße 13a",
+      "street": "Schulstraße",
+      "houseNumber": "13a",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hamberge",
+      "spotCount": 1,
+      "lat": 53.840605000000004,
+      "lng": 10.579732100000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14040849247), ODbL"
+    }
+  ]
+}

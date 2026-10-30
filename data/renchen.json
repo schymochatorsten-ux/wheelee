@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "renchen",
+    "name": "Renchen",
+    "center": {
+      "lat": 48.57650915000001,
+      "lng": 8.0568869
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "renchen-aca67d07ff",
+      "city": "renchen",
+      "label": "Reiterweg",
+      "street": "Reiterweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Renchen",
+      "spotCount": 2,
+      "lat": 48.57650915000001,
+      "lng": 8.0568869,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1548613760), ODbL"
+    }
+  ]
+}

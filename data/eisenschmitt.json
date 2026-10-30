@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "eisenschmitt",
+    "name": "Eisenschmitt",
+    "center": {
+      "lat": 50.03658635000001,
+      "lng": 6.737973200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eisenschmitt-69b73a099d",
+      "city": "eisenschmitt",
+      "label": "Behindertenparkplatz Eisenschmitt",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eisenschmitt",
+      "spotCount": 1,
+      "lat": 50.03658635000001,
+      "lng": 6.737973200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/831335112), ODbL"
+    }
+  ]
+}

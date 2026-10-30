@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hohenfelde-mv",
+    "name": "Hohenfelde",
+    "center": {
+      "lat": 54.0911203,
+      "lng": 11.90543845
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hohenfelde-mv-e79d3381dc",
+      "city": "hohenfelde-mv",
+      "label": "Bad Doberan, Krankenhaus",
+      "street": "Bad Doberan, Krankenhaus",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hohenfelde",
+      "spotCount": 5,
+      "lat": 54.0911203,
+      "lng": 11.905411500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27576157), ODbL"
+    },
+    {
+      "id": "hohenfelde-mv-4f8dcd829e",
+      "city": "hohenfelde-mv",
+      "label": "Bad Doberan, Krankenhaus",
+      "street": "Bad Doberan, Krankenhaus",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hohenfelde",
+      "spotCount": 1,
+      "lat": 54.090952400000006,
+      "lng": 11.90543845,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1462371191), ODbL"
+    }
+  ]
+}

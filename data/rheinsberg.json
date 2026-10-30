@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "rheinsberg",
+    "name": "Rheinsberg",
+    "center": {
+      "lat": 53.093665650000005,
+      "lng": 12.89944155
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rheinsberg-70cb19d95d",
+      "city": "rheinsberg",
+      "label": "Berliner Straße",
+      "street": "Berliner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rheinsberg",
+      "spotCount": 1,
+      "lat": 53.093665650000005,
+      "lng": 12.89944155,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/132902657), ODbL"
+    }
+  ]
+}

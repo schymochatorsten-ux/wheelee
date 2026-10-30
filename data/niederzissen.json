@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "niederzissen",
+    "name": "Niederzissen",
+    "center": {
+      "lat": 50.43964505,
+      "lng": 7.223437650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "niederzissen-24423c4924",
+      "city": "niederzissen",
+      "label": "Brohltal-Ost",
+      "street": "Brohltal-Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Niederzissen",
+      "spotCount": 4,
+      "lat": 50.44050250000001,
+      "lng": 7.225872150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/392984730), ODbL"
+    },
+    {
+      "id": "niederzissen-6465f0d0d7",
+      "city": "niederzissen",
+      "label": "Brohltal-West",
+      "street": "Brohltal-West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Niederzissen",
+      "spotCount": 7,
+      "lat": 50.44153695,
+      "lng": 7.22426735,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1329177131), ODbL"
+    },
+    {
+      "id": "niederzissen-d55c449899",
+      "city": "niederzissen",
+      "label": "Brohltal-West",
+      "street": "Brohltal-West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Niederzissen",
+      "spotCount": 3,
+      "lat": 50.439640600000004,
+      "lng": 7.223329700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1332079806), ODbL"
+    },
+    {
+      "id": "niederzissen-ea91184f21",
+      "city": "niederzissen",
+      "label": "Brohltal-West",
+      "street": "Brohltal-West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Niederzissen",
+      "spotCount": 3,
+      "lat": 50.440477200000004,
+      "lng": 7.2235705,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1332079807), ODbL"
+    },
+    {
+      "id": "niederzissen-2f147ee1e7",
+      "city": "niederzissen",
+      "label": "Brohltal-West",
+      "street": "Brohltal-West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Niederzissen",
+      "spotCount": 1,
+      "lat": 50.43964505,
+      "lng": 7.2233111,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1375428758), ODbL"
+    },
+    {
+      "id": "niederzissen-237be194d6",
+      "city": "niederzissen",
+      "label": "Brohltal-West",
+      "street": "Brohltal-West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Niederzissen",
+      "spotCount": 1,
+      "lat": 50.439635300000006,
+      "lng": 7.22337465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1375428759), ODbL"
+    },
+    {
+      "id": "niederzissen-5c37dd82d8",
+      "city": "niederzissen",
+      "label": "Brohltal-West",
+      "street": "Brohltal-West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Niederzissen",
+      "spotCount": 1,
+      "lat": 50.439626100000005,
+      "lng": 7.223437650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1375428760), ODbL"
+    }
+  ]
+}

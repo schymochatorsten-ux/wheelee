@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schaeftlarn",
+    "name": "Schäftlarn",
+    "center": {
+      "lat": 47.99149200000001,
+      "lng": 11.45751265
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schaeftlarn-1814f213ac",
+      "city": "schaeftlarn",
+      "label": "Bahnhofstraße 8",
+      "street": "Bahnhofstraße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schäftlarn",
+      "spotCount": 2,
+      "lat": 47.99149200000001,
+      "lng": 11.45751265,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/230258607), ODbL"
+    }
+  ]
+}

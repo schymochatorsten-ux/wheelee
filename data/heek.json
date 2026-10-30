@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "heek",
+    "name": "Heek",
+    "center": {
+      "lat": 52.123885650000005,
+      "lng": 7.101663350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "heek-5b1a8fb8e6",
+      "city": "heek",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heek",
+      "spotCount": 2,
+      "lat": 52.123885650000005,
+      "lng": 7.101663350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/178230657), ODbL"
+    }
+  ]
+}

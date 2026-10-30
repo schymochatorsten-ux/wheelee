@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "siemz-niendorf",
+    "name": "Siemz-Niendorf",
+    "center": {
+      "lat": 53.81584585,
+      "lng": 10.878616650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "siemz-niendorf-9a798c066c",
+      "city": "siemz-niendorf",
+      "label": "Schönberger Land Nord 1",
+      "street": "Schönberger Land Nord",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Siemz-Niendorf",
+      "spotCount": 1,
+      "lat": 53.81584585,
+      "lng": 10.878142350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1155599174), ODbL"
+    },
+    {
+      "id": "siemz-niendorf-a2f748dd59",
+      "city": "siemz-niendorf",
+      "label": "Schönberger Land Süd 1",
+      "street": "Schönberger Land Süd",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Siemz-Niendorf",
+      "spotCount": 1,
+      "lat": 53.8146608,
+      "lng": 10.878616650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/534815657), ODbL"
+    }
+  ]
+}

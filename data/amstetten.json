@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "amstetten",
+    "name": "Amstetten",
+    "center": {
+      "lat": 48.5787325,
+      "lng": 9.87379115
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "amstetten-efd44b9a99",
+      "city": "amstetten",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Amstetten",
+      "spotCount": 1,
+      "lat": 48.57891145000001,
+      "lng": 9.87280925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/300625931), ODbL"
+    },
+    {
+      "id": "amstetten-0b26f75e70",
+      "city": "amstetten",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Amstetten",
+      "spotCount": 1,
+      "lat": 48.57766955,
+      "lng": 9.87379115,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/300625932), ODbL"
+    },
+    {
+      "id": "amstetten-d6060f616c",
+      "city": "amstetten",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Amstetten",
+      "spotCount": 1,
+      "lat": 48.57789340000001,
+      "lng": 9.87351635,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1383722147), ODbL"
+    },
+    {
+      "id": "amstetten-df4a5da4c5",
+      "city": "amstetten",
+      "label": "Am Bahnhof 3",
+      "street": "Am Bahnhof",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Amstetten",
+      "spotCount": 1,
+      "lat": 48.57869765000001,
+      "lng": 9.873053200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1383721527), ODbL"
+    },
+    {
+      "id": "amstetten-3444b96bcd",
+      "city": "amstetten",
+      "label": "Hauptstraße 101",
+      "street": "Hauptstraße",
+      "houseNumber": "101",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Amstetten",
+      "spotCount": 1,
+      "lat": 48.578988200000005,
+      "lng": 9.8743414,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12757328568), ODbL"
+    },
+    {
+      "id": "amstetten-cd2c990f17",
+      "city": "amstetten",
+      "label": "Hauptstraße 93",
+      "street": "Hauptstraße",
+      "houseNumber": "93",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Amstetten",
+      "spotCount": 2,
+      "lat": 48.5787325,
+      "lng": 9.8745716,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/684177175), ODbL"
+    },
+    {
+      "id": "amstetten-0aa8c04cbc",
+      "city": "amstetten",
+      "label": "Im Burrach 41",
+      "street": "Im Burrach",
+      "houseNumber": "41",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Amstetten",
+      "spotCount": 1,
+      "lat": 48.5824122,
+      "lng": 9.9172767,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12766790523), ODbL"
+    }
+  ]
+}

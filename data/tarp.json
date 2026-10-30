@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "tarp",
+    "name": "Tarp",
+    "center": {
+      "lat": 54.666693800000004,
+      "lng": 9.403606700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "tarp-d8ae00fac8",
+      "city": "tarp",
+      "label": "Am Bahnhof 1",
+      "street": "Am Bahnhof",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Tarp",
+      "spotCount": 2,
+      "lat": 54.66510360000001,
+      "lng": 9.39893085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/452121759), ODbL"
+    },
+    {
+      "id": "tarp-dc48cc833e",
+      "city": "tarp",
+      "label": "An der Rampe",
+      "street": "An der Rampe",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Tarp",
+      "spotCount": 2,
+      "lat": 54.6644819,
+      "lng": 9.39796285,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/998124716), ODbL"
+    },
+    {
+      "id": "tarp-1cb77dfa24",
+      "city": "tarp",
+      "label": "Auf dem Campus",
+      "street": "Auf dem Campus",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Tarp",
+      "spotCount": 1,
+      "lat": 54.666693800000004,
+      "lng": 9.403606700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10108216761), ODbL"
+    },
+    {
+      "id": "tarp-cc600234a1",
+      "city": "tarp",
+      "label": "Auf dem Campus",
+      "street": "Auf dem Campus",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Tarp",
+      "spotCount": 1,
+      "lat": 54.666787400000004,
+      "lng": 9.4039944,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1037216084), ODbL"
+    }
+  ]
+}

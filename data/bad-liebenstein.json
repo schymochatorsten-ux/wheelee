@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bad-liebenstein",
+    "name": "Bad Liebenstein",
+    "center": {
+      "lat": 50.85864185,
+      "lng": 10.3840196
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-liebenstein-cb8ca7cddc",
+      "city": "bad-liebenstein",
+      "label": "Altenstein 4",
+      "street": "Altenstein",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Liebenstein",
+      "spotCount": 2,
+      "lat": 50.835046750000004,
+      "lng": 10.3521888,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1353403471), ODbL"
+    },
+    {
+      "id": "bad-liebenstein-ff0f9b1784",
+      "city": "bad-liebenstein",
+      "label": "Wallfahrt 1",
+      "street": "Wallfahrt",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Liebenstein",
+      "spotCount": 1,
+      "lat": 50.85864185,
+      "lng": 10.3840196,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/794282888), ODbL"
+    }
+  ]
+}

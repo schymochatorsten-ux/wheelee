@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "trebbin",
+    "name": "Trebbin",
+    "center": {
+      "lat": 52.247675900000004,
+      "lng": 13.26010565
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "trebbin-397e2cc1f9",
+      "city": "trebbin",
+      "label": "An der Bahn",
+      "street": "An der Bahn",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Trebbin",
+      "spotCount": 1,
+      "lat": 52.24768335,
+      "lng": 13.26010565,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29330404), ODbL"
+    },
+    {
+      "id": "trebbin-89497f7232",
+      "city": "trebbin",
+      "label": "Luckenwalder Straße 12a",
+      "street": "Luckenwalder Straße",
+      "houseNumber": "12a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Trebbin",
+      "spotCount": 1,
+      "lat": 52.2112988,
+      "lng": 13.210588350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/80511780), ODbL"
+    },
+    {
+      "id": "trebbin-f090b455c8",
+      "city": "trebbin",
+      "label": "Röllerstraße 1",
+      "street": "Röllerstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Trebbin",
+      "spotCount": 1,
+      "lat": 52.2151354,
+      "lng": 13.2132669,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/667655867), ODbL"
+    },
+    {
+      "id": "trebbin-9f78908697",
+      "city": "trebbin",
+      "label": "Wilmersdorfer Straße",
+      "street": "Wilmersdorfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Trebbin",
+      "spotCount": 1,
+      "lat": 52.247675900000004,
+      "lng": 13.2609407,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/7881354883), ODbL"
+    }
+  ]
+}

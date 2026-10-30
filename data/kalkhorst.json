@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "kalkhorst",
+    "name": "Kalkhorst",
+    "center": {
+      "lat": 53.9875414,
+      "lng": 11.04329605
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kalkhorst-f9ceae7027",
+      "city": "kalkhorst",
+      "label": "Behindertenparkplatz Kalkhorst",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kalkhorst",
+      "spotCount": 5,
+      "lat": 53.9875414,
+      "lng": 10.99177305,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24787757), ODbL"
+    },
+    {
+      "id": "kalkhorst-b5cb444a33",
+      "city": "kalkhorst",
+      "label": "Friedensstraße",
+      "street": "Friedensstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kalkhorst",
+      "spotCount": 3,
+      "lat": 53.969137,
+      "lng": 11.04329605,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/859408533), ODbL"
+    }
+  ]
+}

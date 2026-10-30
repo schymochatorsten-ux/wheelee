@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "ilshofen",
+    "name": "Ilshofen",
+    "center": {
+      "lat": 49.15268435,
+      "lng": 9.9360531
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ilshofen-034e153050",
+      "city": "ilshofen",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Ilshofen",
+      "spotCount": 2,
+      "lat": 49.152538050000004,
+      "lng": 9.9360531,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/579234670), ODbL"
+    },
+    {
+      "id": "ilshofen-22a0bff812",
+      "city": "ilshofen",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Ilshofen",
+      "spotCount": 1,
+      "lat": 49.152525700000005,
+      "lng": 9.93606725,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1427317346), ODbL"
+    },
+    {
+      "id": "ilshofen-3516f71cfb",
+      "city": "ilshofen",
+      "label": "Am Bahnhof 1",
+      "street": "Am Bahnhof",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ilshofen",
+      "spotCount": 2,
+      "lat": 49.15268435,
+      "lng": 9.9367147,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1414237550), ODbL"
+    },
+    {
+      "id": "ilshofen-7f8a3412a0",
+      "city": "ilshofen",
+      "label": "Ilshofener Straße",
+      "street": "Ilshofener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ilshofen",
+      "spotCount": 2,
+      "lat": 49.15343455,
+      "lng": 9.93205545,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/144398310), ODbL"
+    },
+    {
+      "id": "ilshofen-9408c95903",
+      "city": "ilshofen",
+      "label": "Marktplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ilshofen",
+      "spotCount": 1,
+      "lat": 49.17043945,
+      "lng": 9.9201355,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/96241907), ODbL"
+    }
+  ]
+}

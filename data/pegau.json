@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "pegau",
+    "name": "Pegau",
+    "center": {
+      "lat": 51.17128305,
+      "lng": 12.25038885
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pegau-aaf1ff175f",
+      "city": "pegau",
+      "label": "Carsdorfer Straße 8",
+      "street": "Carsdorfer Straße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pegau",
+      "spotCount": 2,
+      "lat": 51.17128305,
+      "lng": 12.25038885,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/202183928), ODbL"
+    },
+    {
+      "id": "pegau-12da29156c",
+      "city": "pegau",
+      "label": "Wachenheimer Straße",
+      "street": "Wachenheimer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pegau",
+      "spotCount": 4,
+      "lat": 51.167438000000004,
+      "lng": 12.2420603,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1409218022), ODbL"
+    }
+  ]
+}

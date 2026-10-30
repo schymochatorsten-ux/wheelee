@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "gebhardshain",
+    "name": "Gebhardshain",
+    "center": {
+      "lat": 50.748009350000004,
+      "lng": 7.822193250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gebhardshain-9d03ba644b",
+      "city": "gebhardshain",
+      "label": "Kirchplatz",
+      "street": "Kirchplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gebhardshain",
+      "spotCount": 2,
+      "lat": 50.746893850000006,
+      "lng": 7.820355300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/61849826), ODbL"
+    },
+    {
+      "id": "gebhardshain-20de29fe79",
+      "city": "gebhardshain",
+      "label": "Rathaus",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gebhardshain",
+      "spotCount": 1,
+      "lat": 50.748009350000004,
+      "lng": 7.81964125,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/61853120), ODbL"
+    },
+    {
+      "id": "gebhardshain-a86745bc1a",
+      "city": "gebhardshain",
+      "label": "Wissener Straße",
+      "street": "Wissener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gebhardshain",
+      "spotCount": 1,
+      "lat": 50.747527250000005,
+      "lng": 7.822193250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/236703013), ODbL"
+    },
+    {
+      "id": "gebhardshain-35ced4d562",
+      "city": "gebhardshain",
+      "label": "Wissener Straße",
+      "street": "Wissener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gebhardshain",
+      "spotCount": 1,
+      "lat": 50.74959405,
+      "lng": 7.8222128500000006,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/236704375), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "mommenheim",
+    "name": "Mommenheim",
+    "center": {
+      "lat": 49.88414900000001,
+      "lng": 8.265109850000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mommenheim-2965f56ca7",
+      "city": "mommenheim",
+      "label": "Gaustraße",
+      "street": "Gaustraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mommenheim",
+      "spotCount": 2,
+      "lat": 49.88414900000001,
+      "lng": 8.265109850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/141559775), ODbL"
+    }
+  ]
+}

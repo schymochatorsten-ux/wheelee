@@ -68,6 +68,9 @@ export const en: Messages = {
   "list.osmNote":
     "The OpenStreetMap data mostly shows car parks with designated disabled spaces rather than individual spaces at the kerb, and is incomplete – a missing entry there does not mean there is no disabled parking.",
   "list.allCities": "All {count} cities with source",
+  "list.cityFilter": "Search for a city",
+  "list.cityShown": "Showing {shown} of {count} – type a name to find more.",
+  "list.cityNone": "No city found.",
   "list.cityCounts": ": {spots} locations, {spaces} spaces",
   "list.source": "Source: {source}",
   "list.licenseMissing": " · licence not stated",
@@ -90,6 +93,9 @@ export const en: Messages = {
   "details.confirmed":
     "{strong} – the city administration and OpenStreetMap list this space at the same place.",
   "details.confirmedStrong": "Confirmed by two sources",
+  "details.osmOnly":
+    "{strong} – the city’s official list does not include this location. It may be new or missing there; the information is unverified, please check on site.",
+  "details.osmOnlyStrong": "Only in OpenStreetMap",
   "details.approx":
     "The position is only approximately known – the parking space is on this street, the exact spot may differ.",
   "details.source": "Source: {source}",
@@ -163,6 +169,8 @@ export const en: Messages = {
   "settings.legal": "Legal",
   "settings.imprint": "Imprint",
   "settings.privacy": "Privacy policy",
+  "settings.sources": "Sources and licences",
+  "settings.coverage": "Data coverage",
 
   "account.emailInvalid": "This email address does not look right.",
   "account.passwordTooShort": "The password must be at least {min} characters long.",

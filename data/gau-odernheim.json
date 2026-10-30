@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "gau-odernheim",
+    "name": "Gau-Odernheim",
+    "center": {
+      "lat": 49.77820865,
+      "lng": 8.18966545
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gau-odernheim-b47bd86d48",
+      "city": "gau-odernheim",
+      "label": "Alzeyer Straße",
+      "street": "Alzeyer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gau-Odernheim",
+      "spotCount": 1,
+      "lat": 49.77817155,
+      "lng": 8.1904596,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/39517457), ODbL"
+    },
+    {
+      "id": "gau-odernheim-1cc052434d",
+      "city": "gau-odernheim",
+      "label": "Bahnstraße",
+      "street": "Bahnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gau-Odernheim",
+      "spotCount": 1,
+      "lat": 49.777540200000004,
+      "lng": 8.18966545,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/37718266), ODbL"
+    },
+    {
+      "id": "gau-odernheim-3450db0f5a",
+      "city": "gau-odernheim",
+      "label": "Bahnstraße",
+      "street": "Bahnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gau-Odernheim",
+      "spotCount": 1,
+      "lat": 49.77820865,
+      "lng": 8.188997350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/66941627), ODbL"
+    },
+    {
+      "id": "gau-odernheim-d5e4aad2b6",
+      "city": "gau-odernheim",
+      "label": "Bahnstraße 5",
+      "street": "Bahnstraße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gau-Odernheim",
+      "spotCount": 1,
+      "lat": 49.78691925,
+      "lng": 8.1833784,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35577813), ODbL"
+    },
+    {
+      "id": "gau-odernheim-25edf6c6e4",
+      "city": "gau-odernheim",
+      "label": "Mainzer Straße",
+      "street": "Mainzer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Fr 08:00-18:30; Sa 08:00-13:30",
+      "district": "Gau-Odernheim",
+      "spotCount": 2,
+      "lat": 49.784883050000005,
+      "lng": 8.189981200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/39499979), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "frankenblick",
+    "name": "Frankenblick",
+    "center": {
+      "lat": 50.3954636,
+      "lng": 11.115334700000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "frankenblick-cc9cc2fc27",
+      "city": "frankenblick",
+      "label": "Freiherr-vom-Stein-Straße 10",
+      "street": "Freiherr-vom-Stein-Straße",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Frankenblick",
+      "spotCount": 3,
+      "lat": 50.3954636,
+      "lng": 11.115334700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/216386547), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kiedrich",
+    "name": "Kiedrich",
+    "center": {
+      "lat": 50.03407130000001,
+      "lng": 8.08194585
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kiedrich-0c1993e52d",
+      "city": "kiedrich",
+      "label": "Im Kiesling",
+      "street": "Im Kiesling",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kiedrich",
+      "spotCount": 2,
+      "lat": 50.03407130000001,
+      "lng": 8.08194585,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/548365221), ODbL"
+    }
+  ]
+}

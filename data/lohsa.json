@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lohsa",
+    "name": "Lohsa",
+    "center": {
+      "lat": 51.36747265,
+      "lng": 14.411029200000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lohsa-d1bf3f6fa4",
+      "city": "lohsa",
+      "label": "Zum Neuhof",
+      "street": "Zum Neuhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lohsa",
+      "spotCount": 1,
+      "lat": 51.36747265,
+      "lng": 14.411029200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/570158749), ODbL"
+    }
+  ]
+}

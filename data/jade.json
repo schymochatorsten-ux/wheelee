@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "jade",
+    "name": "Jade",
+    "center": {
+      "lat": 53.33779815,
+      "lng": 8.191482350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "jade-ab796610f6",
+      "city": "jade",
+      "label": "Jader Straße",
+      "street": "Jader Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jade",
+      "spotCount": 3,
+      "lat": 53.33743525,
+      "lng": 8.191482350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/224212495), ODbL"
+    },
+    {
+      "id": "jade-caee825fde",
+      "city": "jade",
+      "label": "Jader Straße",
+      "street": "Jader Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jade",
+      "spotCount": 2,
+      "lat": 53.33779815,
+      "lng": 8.19228915,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1564547002), ODbL"
+    },
+    {
+      "id": "jade-ea4430ed7f",
+      "city": "jade",
+      "label": "Vareler Straße",
+      "street": "Vareler Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Jade",
+      "spotCount": 1,
+      "lat": 53.344939800000006,
+      "lng": 8.184054,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/859443723), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wirsberg",
+    "name": "Wirsberg",
+    "center": {
+      "lat": 50.1076953,
+      "lng": 11.60676785
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wirsberg-97970d3ea9",
+      "city": "wirsberg",
+      "label": "Am Hügel",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Wirsberg",
+      "spotCount": 1,
+      "lat": 50.1076953,
+      "lng": 11.60676785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/41901232), ODbL"
+    }
+  ]
+}

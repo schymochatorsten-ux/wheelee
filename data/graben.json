@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "graben",
+    "name": "Graben",
+    "center": {
+      "lat": 48.19972115,
+      "lng": 10.850603750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "graben-369e98d22b",
+      "city": "graben",
+      "label": "Amazonstraße",
+      "street": "Amazonstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Graben",
+      "spotCount": 1,
+      "lat": 48.19972115,
+      "lng": 10.850603750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/657970684), ODbL"
+    },
+    {
+      "id": "graben-e3ce329e62",
+      "city": "graben",
+      "label": "Parkplatz Sporthalle",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Graben",
+      "spotCount": 2,
+      "lat": 48.1873724,
+      "lng": 10.82974905,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/450973209), ODbL"
+    }
+  ]
+}

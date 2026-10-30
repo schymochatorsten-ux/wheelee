@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "wittduen-auf-amrum",
+    "name": "Wittdün auf Amrum",
+    "center": {
+      "lat": 54.62791285,
+      "lng": 8.39683615
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wittduen-auf-amrum-b0cde183cb",
+      "city": "wittduen-auf-amrum",
+      "label": "Inselstraße",
+      "street": "Inselstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wittdün auf Amrum",
+      "spotCount": 2,
+      "lat": 54.627734200000006,
+      "lng": 8.3971414,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/89584208), ODbL"
+    },
+    {
+      "id": "wittduen-auf-amrum-ac19bfa4c9",
+      "city": "wittduen-auf-amrum",
+      "label": "Inselstraße",
+      "street": "Inselstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wittdün auf Amrum",
+      "spotCount": 1,
+      "lat": 54.62791285,
+      "lng": 8.39672015,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1179585768), ODbL"
+    },
+    {
+      "id": "wittduen-auf-amrum-780cc5c5dc",
+      "city": "wittduen-auf-amrum",
+      "label": "Inselstraße",
+      "street": "Inselstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wittdün auf Amrum",
+      "spotCount": 1,
+      "lat": 54.6279339,
+      "lng": 8.39683615,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1179585905), ODbL"
+    }
+  ]
+}

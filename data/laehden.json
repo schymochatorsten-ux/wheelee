@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "laehden",
+    "name": "Lähden",
+    "center": {
+      "lat": 52.775424150000006,
+      "lng": 7.647139500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "laehden-6fd29c030b",
+      "city": "laehden",
+      "label": "Am Kloster",
+      "street": "Am Kloster",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lähden",
+      "spotCount": 2,
+      "lat": 52.774741000000006,
+      "lng": 7.68611435,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1567448450), ODbL"
+    },
+    {
+      "id": "laehden-e4381a05d6",
+      "city": "laehden",
+      "label": "Gästeparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lähden",
+      "spotCount": 2,
+      "lat": 52.782914700000006,
+      "lng": 7.6313516,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/459004521), ODbL"
+    },
+    {
+      "id": "laehden-5185f69987",
+      "city": "laehden",
+      "label": "Zur Waldbühne",
+      "street": "Zur Waldbühne",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lähden",
+      "spotCount": 1,
+      "lat": 52.775424150000006,
+      "lng": 7.647139500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1251784357), ODbL"
+    }
+  ]
+}

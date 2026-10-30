@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "bad-neualbenreuth",
+    "name": "Bad Neualbenreuth",
+    "center": {
+      "lat": 49.981156750000004,
+      "lng": 12.421252
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-neualbenreuth-d6867e7d8a",
+      "city": "bad-neualbenreuth",
+      "label": "Kurallee",
+      "street": "Kurallee",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Neualbenreuth",
+      "spotCount": 1,
+      "lat": 49.981156750000004,
+      "lng": 12.4212001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1314181949), ODbL"
+    },
+    {
+      "id": "bad-neualbenreuth-98c7cb8821",
+      "city": "bad-neualbenreuth",
+      "label": "Kurallee",
+      "street": "Kurallee",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Neualbenreuth",
+      "spotCount": 1,
+      "lat": 49.981157550000006,
+      "lng": 12.421252,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1314181950), ODbL"
+    },
+    {
+      "id": "bad-neualbenreuth-5f975b058a",
+      "city": "bad-neualbenreuth",
+      "label": "Kurallee",
+      "street": "Kurallee",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Neualbenreuth",
+      "spotCount": 1,
+      "lat": 49.981059450000004,
+      "lng": 12.4212055,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1314181951), ODbL"
+    },
+    {
+      "id": "bad-neualbenreuth-e8b61509f0",
+      "city": "bad-neualbenreuth",
+      "label": "Kurallee",
+      "street": "Kurallee",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Neualbenreuth",
+      "spotCount": 1,
+      "lat": 49.98105985000001,
+      "lng": 12.421257950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1314181952), ODbL"
+    }
+  ]
+}

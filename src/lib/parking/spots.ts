@@ -1,7 +1,7 @@
 import type { ParkingSpot, ParkingSpotWithDistance } from "../types";
 import { sortByDistance, type LatLng } from "../geo";
 import { attributionOf, licenseOf } from "./license";
-import { confirmationOf } from "./confirmation";
+import { confirmationOf, osmOnlySpots } from "./confirmation";
 import { seeds } from "./seeds.generated";
 
 /**
@@ -85,10 +85,31 @@ export function getAllSpots(): ParkingSpot[] {
 let cached: ParkingSpot[] | null = null;
 
 function allSpots(): ParkingSpot[] {
-  cached ??= getAllSpots().map((spot) => {
-    const confirmation = confirmationOf(spot.id);
-    return confirmation ? { ...spot, confirmation } : spot;
-  });
+  cached ??= [
+    ...getAllSpots().map((spot) => {
+      const confirmation = confirmationOf(spot.id);
+      return confirmation ? { ...spot, confirmation } : spot;
+    }),
+    // Nur in OpenStreetMap (ToDo 3.11): ergänzt, mit Kennzeichnung "nur_osm".
+    ...osmOnlySpots().map(
+      (spot): ParkingSpot => ({
+        id: spot.id,
+        city: spot.city,
+        label: spot.label,
+        street: null,
+        houseNumber: null,
+        note: null,
+        timeRestriction: null,
+        district: "",
+        spotCount: 1,
+        lat: spot.lat,
+        lng: spot.lng,
+        geoAccuracy: "house",
+        source: "OpenStreetMap",
+        confirmation: "nur_osm",
+      }),
+    ),
+  ];
   return cached;
 }
 

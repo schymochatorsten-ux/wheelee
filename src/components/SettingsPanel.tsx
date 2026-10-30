@@ -273,6 +273,18 @@ export function SettingsPanel({
           >
             {t("settings.privacy")}
           </Link>
+          <Link
+            href="/quellen"
+            className="inline-flex min-h-11 items-center text-blue-800 hover:underline focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"
+          >
+            {t("settings.sources")}
+          </Link>
+          <Link
+            href="/abdeckung"
+            className="inline-flex min-h-11 items-center text-blue-800 hover:underline focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"
+          >
+            {t("settings.coverage")}
+          </Link>
         </nav>
         {locale !== "de" && (
           <p lang={locale} className="mt-1 text-xs text-neutral-500">

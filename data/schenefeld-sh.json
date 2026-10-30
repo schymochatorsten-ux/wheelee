@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "schenefeld-sh",
+    "name": "Schenefeld",
+    "center": {
+      "lat": 54.04733965,
+      "lng": 9.484264300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schenefeld-sh-aa0366f957",
+      "city": "schenefeld-sh",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schenefeld",
+      "spotCount": 1,
+      "lat": 54.045905700000006,
+      "lng": 9.484264300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4908924868), ODbL"
+    },
+    {
+      "id": "schenefeld-sh-714caf1a12",
+      "city": "schenefeld-sh",
+      "label": "Neumühlen",
+      "street": "Neumühlen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schenefeld",
+      "spotCount": 2,
+      "lat": 54.04733965,
+      "lng": 9.466605650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/608158603), ODbL"
+    }
+  ]
+}

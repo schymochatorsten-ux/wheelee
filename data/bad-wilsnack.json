@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bad-wilsnack",
+    "name": "Bad Wilsnack",
+    "center": {
+      "lat": 52.96334625,
+      "lng": 11.953984900000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-wilsnack-f8dc69d845",
+      "city": "bad-wilsnack",
+      "label": "Dr.-Wilhelm-Külz-Straße",
+      "street": "Dr.-Wilhelm-Külz-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Wilsnack",
+      "spotCount": 1,
+      "lat": 52.96334625,
+      "lng": 11.953984900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/164734412), ODbL"
+    }
+  ]
+}

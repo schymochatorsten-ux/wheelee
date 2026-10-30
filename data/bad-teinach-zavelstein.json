@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bad-teinach-zavelstein",
+    "name": "Bad Teinach-Zavelstein",
+    "center": {
+      "lat": 48.699161700000005,
+      "lng": 8.695225350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-teinach-zavelstein-8a71304d2d",
+      "city": "bad-teinach-zavelstein",
+      "label": "Fronwaldstraße 51",
+      "street": "Fronwaldstraße",
+      "houseNumber": "51",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Teinach-Zavelstein",
+      "spotCount": 1,
+      "lat": 48.699161700000005,
+      "lng": 8.695225350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/58671565), ODbL"
+    }
+  ]
+}

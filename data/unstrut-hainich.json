@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "unstrut-hainich",
+    "name": "Unstrut-Hainich",
+    "center": {
+      "lat": 51.08089940000001,
+      "lng": 10.51700945
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "unstrut-hainich-fc39e60746",
+      "city": "unstrut-hainich",
+      "label": "Nationalparkzentrum Thiemsburg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Unstrut-Hainich",
+      "spotCount": 1,
+      "lat": 51.08089940000001,
+      "lng": 10.51700945,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/4779915), ODbL"
+    }
+  ]
+}

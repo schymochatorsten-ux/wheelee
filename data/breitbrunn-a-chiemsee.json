@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "breitbrunn-a-chiemsee",
+    "name": "Breitbrunn a.Chiemsee",
+    "center": {
+      "lat": 47.888820700000004,
+      "lng": 12.3989762
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "breitbrunn-a-chiemsee-d7e31a43a7",
+      "city": "breitbrunn-a-chiemsee",
+      "label": "Seestraße 1",
+      "street": "Seestraße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Breitbrunn a.Chiemsee",
+      "spotCount": 1,
+      "lat": 47.888820700000004,
+      "lng": 12.3989762,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11993489215), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bernried-by",
+    "name": "Bernried am Starnberger See",
+    "center": {
+      "lat": 47.8667122,
+      "lng": 11.294788800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bernried-by-bd917623a9",
+      "city": "bernried-by",
+      "label": "Bahnhofstraße 32",
+      "street": "Bahnhofstraße",
+      "houseNumber": "32",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bernried am Starnberger See",
+      "spotCount": 2,
+      "lat": 47.86210105000001,
+      "lng": 11.28363495,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/447182794), ODbL"
+    },
+    {
+      "id": "bernried-by-c7cd154fb5",
+      "city": "bernried-by",
+      "label": "Dorfstraße 8",
+      "street": "Dorfstraße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bernried am Starnberger See",
+      "spotCount": 1,
+      "lat": 47.8667122,
+      "lng": 11.294788800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1279096693), ODbL"
+    }
+  ]
+}

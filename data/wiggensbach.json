@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "wiggensbach",
+    "name": "Wiggensbach",
+    "center": {
+      "lat": 47.7422484,
+      "lng": 10.2521322
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wiggensbach-6d8ccd5fbc",
+      "city": "wiggensbach",
+      "label": "Feuerwehrstraße",
+      "street": "Feuerwehrstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wiggensbach",
+      "spotCount": 1,
+      "lat": 47.7422484,
+      "lng": 10.2376287,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12480668757), ODbL"
+    },
+    {
+      "id": "wiggensbach-435bde9a27",
+      "city": "wiggensbach",
+      "label": "Römerstraße",
+      "street": "Römerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wiggensbach",
+      "spotCount": 3,
+      "lat": 47.7263966,
+      "lng": 10.2521322,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/872514216), ODbL"
+    }
+  ]
+}

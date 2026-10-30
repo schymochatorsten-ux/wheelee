@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "sanitz",
+    "name": "Sanitz",
+    "center": {
+      "lat": 54.0753349,
+      "lng": 12.37658845
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sanitz-702839c415",
+      "city": "sanitz",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sanitz",
+      "spotCount": 2,
+      "lat": 54.0753349,
+      "lng": 12.37658845,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/61962281), ODbL"
+    }
+  ]
+}

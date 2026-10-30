@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schechen",
+    "name": "Schechen",
+    "center": {
+      "lat": 47.92674035,
+      "lng": 12.126227100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schechen-82ad759893",
+      "city": "schechen",
+      "label": "Bahnhofstraße 5",
+      "street": "Bahnhofstraße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Schechen",
+      "spotCount": 1,
+      "lat": 47.92674035,
+      "lng": 12.126227100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1450077514), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "aglasterhausen",
+    "name": "Aglasterhausen",
+    "center": {
+      "lat": 49.35010735,
+      "lng": 8.9905103
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "aglasterhausen-771bf9b444",
+      "city": "aglasterhausen",
+      "label": "Bahnhofparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Aglasterhausen",
+      "spotCount": 2,
+      "lat": 49.34990690000001,
+      "lng": 8.990982550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/364632163), ODbL"
+    },
+    {
+      "id": "aglasterhausen-6e568715d9",
+      "city": "aglasterhausen",
+      "label": "Behindertenparkplatz Aglasterhausen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aglasterhausen",
+      "spotCount": 1,
+      "lat": 49.37910145000001,
+      "lng": 8.964352250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32983942), ODbL"
+    },
+    {
+      "id": "aglasterhausen-9efbeccd29",
+      "city": "aglasterhausen",
+      "label": "Friedhof-Parkplatz 2",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aglasterhausen",
+      "spotCount": 2,
+      "lat": 49.35023935,
+      "lng": 8.9905103,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/364632167), ODbL"
+    },
+    {
+      "id": "aglasterhausen-07b082394f",
+      "city": "aglasterhausen",
+      "label": "Im Oberen Tal",
+      "street": "Im Oberen Tal",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aglasterhausen",
+      "spotCount": 1,
+      "lat": 49.3474347,
+      "lng": 8.98355785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/46108309), ODbL"
+    },
+    {
+      "id": "aglasterhausen-990ba4dcde",
+      "city": "aglasterhausen",
+      "label": "Schützenstraße",
+      "street": "Schützenstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Aglasterhausen",
+      "spotCount": 2,
+      "lat": 49.35010735,
+      "lng": 8.9912083,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1389738224), ODbL"
+    }
+  ]
+}

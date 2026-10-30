@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lachendorf",
+    "name": "Lachendorf",
+    "center": {
+      "lat": 52.60904015,
+      "lng": 10.2335781
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lachendorf-c1a4f24a36",
+      "city": "lachendorf",
+      "label": "Buchfinkenweg",
+      "street": "Buchfinkenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lachendorf",
+      "spotCount": 7,
+      "lat": 52.60904015,
+      "lng": 10.2335781,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29145186), ODbL"
+    }
+  ]
+}

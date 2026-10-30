@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "waldburg",
+    "name": "Waldburg",
+    "center": {
+      "lat": 47.75179345000001,
+      "lng": 9.7134042
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "waldburg-4b800c72e3",
+      "city": "waldburg",
+      "label": "Brachäcker 8",
+      "street": "Brachäcker",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waldburg",
+      "spotCount": 4,
+      "lat": 47.75179345000001,
+      "lng": 9.7134042,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1392478356), ODbL"
+    }
+  ]
+}

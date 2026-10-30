@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wohltorf",
+    "name": "Wohltorf",
+    "center": {
+      "lat": 53.5186129,
+      "lng": 10.297202200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wohltorf-ab48e38832",
+      "city": "wohltorf",
+      "label": "Kirchberg",
+      "street": "Kirchberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wohltorf",
+      "spotCount": 1,
+      "lat": 53.5186129,
+      "lng": 10.297202200000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14027415350), ODbL"
+    }
+  ]
+}

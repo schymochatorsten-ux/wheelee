@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "kempfeld",
+    "name": "Kempfeld",
+    "center": {
+      "lat": 49.77445175,
+      "lng": 7.2268157
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kempfeld-dbf02557e1",
+      "city": "kempfeld",
+      "label": "Am Steinberg",
+      "street": "Am Steinberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kempfeld",
+      "spotCount": 2,
+      "lat": 49.774434150000005,
+      "lng": 7.226794850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1446694199), ODbL"
+    },
+    {
+      "id": "kempfeld-01ef9ff3ab",
+      "city": "kempfeld",
+      "label": "Am Steinberg",
+      "street": "Am Steinberg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kempfeld",
+      "spotCount": 1,
+      "lat": 49.7744776,
+      "lng": 7.2268463,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1446694200), ODbL"
+    },
+    {
+      "id": "kempfeld-32eb5c4554",
+      "city": "kempfeld",
+      "label": "Am Steinberg",
+      "street": "Am Steinberg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kempfeld",
+      "spotCount": 1,
+      "lat": 49.77445175,
+      "lng": 7.2268157,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1446694201), ODbL"
+    }
+  ]
+}

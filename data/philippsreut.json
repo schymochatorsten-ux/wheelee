@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "philippsreut",
+    "name": "Philippsreut",
+    "center": {
+      "lat": 48.8890897,
+      "lng": 13.643174
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "philippsreut-7bb91a6c90",
+      "city": "philippsreut",
+      "label": "Behindertenparkplatz Philippsreut",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Philippsreut",
+      "spotCount": 1,
+      "lat": 48.8890897,
+      "lng": 13.643174,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13876882748), ODbL"
+    }
+  ]
+}

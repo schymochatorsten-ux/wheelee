@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "zell-bw",
+    "name": "Zell im Wiesental",
+    "center": {
+      "lat": 47.734278200000006,
+      "lng": 7.8695475
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zell-bw-feb4ef44f8",
+      "city": "zell-bw",
+      "label": "Pfaffenberg 2",
+      "street": "Pfaffenberg",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zell im Wiesental",
+      "spotCount": 1,
+      "lat": 47.734278200000006,
+      "lng": 7.8695475,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6584868258), ODbL"
+    }
+  ]
+}

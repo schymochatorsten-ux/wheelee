@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "nordstrand",
+    "name": "Nordstrand",
+    "center": {
+      "lat": 54.504757700000006,
+      "lng": 8.82339535
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nordstrand-7bd1e145fa",
+      "city": "nordstrand",
+      "label": "Am Kurhaus 12",
+      "street": "Am Kurhaus",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nordstrand",
+      "spotCount": 2,
+      "lat": 54.504757700000006,
+      "lng": 8.82339535,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28330555), ODbL"
+    },
+    {
+      "id": "nordstrand-46cf3d82ed",
+      "city": "nordstrand",
+      "label": "Fähre nach Pellworm",
+      "street": "Hörnstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Nordstrand",
+      "spotCount": 1,
+      "lat": 54.4979785,
+      "lng": 8.81058495,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/103164356), ODbL"
+    }
+  ]
+}

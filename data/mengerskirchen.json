@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "mengerskirchen",
+    "name": "Mengerskirchen",
+    "center": {
+      "lat": 50.56221725,
+      "lng": 8.156495
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mengerskirchen-82d74c6317",
+      "city": "mengerskirchen",
+      "label": "Unterm Flecken",
+      "street": "Unterm Flecken",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mengerskirchen",
+      "spotCount": 2,
+      "lat": 50.56221725,
+      "lng": 8.156495,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1163733059), ODbL"
+    },
+    {
+      "id": "mengerskirchen-c840c2a6da",
+      "city": "mengerskirchen",
+      "label": "Zum Sportzentrum 6",
+      "street": "Zum Sportzentrum",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mengerskirchen",
+      "spotCount": 1,
+      "lat": 50.56113070000001,
+      "lng": 8.1564321,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1163733064), ODbL"
+    }
+  ]
+}

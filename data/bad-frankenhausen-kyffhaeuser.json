@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bad-frankenhausen-kyffhaeuser",
+    "name": "Bad Frankenhausen/Kyffhäuser",
+    "center": {
+      "lat": 51.3653825,
+      "lng": 11.104212400000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-frankenhausen-kyffhaeuser-e62aa6d3f7",
+      "city": "bad-frankenhausen-kyffhaeuser",
+      "label": "Panoramastraße",
+      "street": "Panoramastraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Frankenhausen/Kyffhäuser",
+      "spotCount": 1,
+      "lat": 51.3653825,
+      "lng": 11.104212400000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12222182808), ODbL"
+    }
+  ]
+}

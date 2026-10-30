@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "weissenstadt",
+    "name": "Weißenstadt",
+    "center": {
+      "lat": 50.1003692,
+      "lng": 11.882988050000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "weissenstadt-1d70777115",
+      "city": "weissenstadt",
+      "label": "Bayreuther Straße",
+      "street": "Bayreuther Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Weißenstadt",
+      "spotCount": 1,
+      "lat": 50.1003692,
+      "lng": 11.882988050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/639968096), ODbL"
+    },
+    {
+      "id": "weissenstadt-fd57182573",
+      "city": "weissenstadt",
+      "label": "Behindertenparkplatz Weißenstadt",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Weißenstadt",
+      "spotCount": 1,
+      "lat": 50.09347235,
+      "lng": 11.871646600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1162052406), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "sontheim-by",
+    "name": "Sontheim",
+    "center": {
+      "lat": 48.01202425,
+      "lng": 10.34688395
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sontheim-by-906aec507d",
+      "city": "sontheim-by",
+      "label": "Erkheimer Straße",
+      "street": "Erkheimer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sontheim",
+      "spotCount": 1,
+      "lat": 48.01202425,
+      "lng": 10.34688395,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1026478538), ODbL"
+    }
+  ]
+}

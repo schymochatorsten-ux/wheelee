@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ponitz",
+    "name": "Ponitz",
+    "center": {
+      "lat": 50.85751615000001,
+      "lng": 12.42429695
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ponitz-64dea1ca31",
+      "city": "ponitz",
+      "label": "Gößnitzer Straße 10",
+      "street": "Gößnitzer Straße",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ponitz",
+      "spotCount": 1,
+      "lat": 50.85751615000001,
+      "lng": 12.42429695,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1019712463), ODbL"
+    }
+  ]
+}

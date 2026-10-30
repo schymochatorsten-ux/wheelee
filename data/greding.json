@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "greding",
+    "name": "Greding",
+    "center": {
+      "lat": 49.04363120000001,
+      "lng": 11.361893600000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "greding-9c61f8113b",
+      "city": "greding",
+      "label": "Parkplatz EdeKa",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Greding",
+      "spotCount": 1,
+      "lat": 49.04363120000001,
+      "lng": 11.361893600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26492504), ODbL"
+    }
+  ]
+}

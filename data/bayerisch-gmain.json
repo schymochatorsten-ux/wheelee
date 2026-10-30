@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bayerisch-gmain",
+    "name": "Bayerisch Gmain",
+    "center": {
+      "lat": 47.7186606,
+      "lng": 12.8976138
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bayerisch-gmain-ef82110175",
+      "city": "bayerisch-gmain",
+      "label": "Klinik Hochstaufen - Behindertenparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bayerisch Gmain",
+      "spotCount": 1,
+      "lat": 47.7186606,
+      "lng": 12.8976138,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2150328049), ODbL"
+    }
+  ]
+}

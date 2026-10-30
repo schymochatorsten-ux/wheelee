@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bad-liebenzell",
+    "name": "Bad Liebenzell",
+    "center": {
+      "lat": 48.771231150000006,
+      "lng": 8.733166950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-liebenzell-2f70e07310",
+      "city": "bad-liebenzell",
+      "label": "Badweg",
+      "street": "Badweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Liebenzell",
+      "spotCount": 1,
+      "lat": 48.7726314,
+      "lng": 8.733166950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/955460836), ODbL"
+    },
+    {
+      "id": "bad-liebenzell-e441cde9c0",
+      "city": "bad-liebenzell",
+      "label": "Köpflesweg",
+      "street": "Köpflesweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Liebenzell",
+      "spotCount": 1,
+      "lat": 48.7645977,
+      "lng": 8.80330755,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1243484361), ODbL"
+    },
+    {
+      "id": "bad-liebenzell-57bd997cdb",
+      "city": "bad-liebenzell",
+      "label": "Kurhaus",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Liebenzell",
+      "spotCount": 1,
+      "lat": 48.771231150000006,
+      "lng": 8.73264475,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/450378208), ODbL"
+    }
+  ]
+}

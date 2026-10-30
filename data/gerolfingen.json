@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "gerolfingen",
+    "name": "Gerolfingen",
+    "center": {
+      "lat": 49.06765775000001,
+      "lng": 10.5282148
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gerolfingen-2354a5e6da",
+      "city": "gerolfingen",
+      "label": "Hesselbergstraße",
+      "street": "Hesselbergstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gerolfingen",
+      "spotCount": 1,
+      "lat": 49.06765775000001,
+      "lng": 10.5282148,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1287490305), ODbL"
+    }
+  ]
+}

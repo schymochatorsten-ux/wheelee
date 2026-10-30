@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "weilbach",
+    "name": "Weilbach",
+    "center": {
+      "lat": 49.6688393,
+      "lng": 9.21336145
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "weilbach-b8f946b741",
+      "city": "weilbach",
+      "label": "Raiffeisenstraße",
+      "street": "Raiffeisenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weilbach",
+      "spotCount": 1,
+      "lat": 49.6688393,
+      "lng": 9.21336145,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/777852637), ODbL"
+    }
+  ]
+}

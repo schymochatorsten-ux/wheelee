@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "neuberg",
+    "name": "Neuberg",
+    "center": {
+      "lat": 50.20037275,
+      "lng": 8.976317300000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuberg-fb46a26e68",
+      "city": "neuberg",
+      "label": "Auf der Pfingstweide Ost",
+      "street": "Auf der Pfingstweide Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuberg",
+      "spotCount": 3,
+      "lat": 50.1988068,
+      "lng": 9.005635000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/592406072), ODbL"
+    },
+    {
+      "id": "neuberg-5d92231009",
+      "city": "neuberg",
+      "label": "Auf der Pfingstweide West",
+      "street": "Auf der Pfingstweide West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuberg",
+      "spotCount": 3,
+      "lat": 50.198358850000005,
+      "lng": 9.004069050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/557368787), ODbL"
+    },
+    {
+      "id": "neuberg-3055b7e271",
+      "city": "neuberg",
+      "label": "Gartenweg",
+      "street": "Gartenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Neuberg",
+      "spotCount": 1,
+      "lat": 50.2029458,
+      "lng": 8.976317300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/150939325), ODbL"
+    },
+    {
+      "id": "neuberg-e30a4d3f42",
+      "city": "neuberg",
+      "label": "Mühlstraße 22",
+      "street": "Mühlstraße",
+      "houseNumber": "22",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Neuberg",
+      "spotCount": 1,
+      "lat": 50.20037275,
+      "lng": 8.975607700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/150939355), ODbL"
+    },
+    {
+      "id": "neuberg-6764e6f04d",
+      "city": "neuberg",
+      "label": "Ravolzhäuser Straße 16",
+      "street": "Ravolzhäuser Straße",
+      "houseNumber": "16",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neuberg",
+      "spotCount": 1,
+      "lat": 50.2030101,
+      "lng": 8.9762718,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/826575966), ODbL"
+    }
+  ]
+}

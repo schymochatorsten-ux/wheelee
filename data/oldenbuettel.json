@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "oldenbuettel",
+    "name": "Oldenbüttel",
+    "center": {
+      "lat": 54.185067350000004,
+      "lng": 9.443736450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oldenbuettel-1c8708490f",
+      "city": "oldenbuettel",
+      "label": "Behindertenparkplatz Oldenbüttel",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oldenbüttel",
+      "spotCount": 2,
+      "lat": 54.174027450000004,
+      "lng": 9.443736450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/615566313), ODbL"
+    },
+    {
+      "id": "oldenbuettel-6a8063620e",
+      "city": "oldenbuettel",
+      "label": "Gieselauschleuse",
+      "street": "Gieselauschleuse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oldenbüttel",
+      "spotCount": 2,
+      "lat": 54.185067350000004,
+      "lng": 9.44086345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/615566314), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "aspach",
+    "name": "Aspach",
+    "center": {
+      "lat": 48.96977735,
+      "lng": 9.40246205
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "aspach-f78e2d6449",
+      "city": "aspach",
+      "label": "Panoramastraße",
+      "street": "Panoramastraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Aspach",
+      "spotCount": 1,
+      "lat": 48.9643442,
+      "lng": 9.3971759,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1146065751), ODbL"
+    },
+    {
+      "id": "aspach-0f86bffd8c",
+      "city": "aspach",
+      "label": "Rübengasse",
+      "street": "Rübengasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aspach",
+      "spotCount": 1,
+      "lat": 48.9663789,
+      "lng": 9.39735095,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/43191634), ODbL"
+    },
+    {
+      "id": "aspach-022d62baad",
+      "city": "aspach",
+      "label": "Stegmühlenweg",
+      "street": "Stegmühlenweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Aspach",
+      "spotCount": 1,
+      "lat": 48.96984135,
+      "lng": 9.40246205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/193955409), ODbL"
+    },
+    {
+      "id": "aspach-d7330a8b90",
+      "city": "aspach",
+      "label": "Stegmühlenweg",
+      "street": "Stegmühlenweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Aspach",
+      "spotCount": 1,
+      "lat": 48.969809100000006,
+      "lng": 9.4024622,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1365337630), ODbL"
+    },
+    {
+      "id": "aspach-fa741a1878",
+      "city": "aspach",
+      "label": "Stegmühlenweg",
+      "street": "Stegmühlenweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Aspach",
+      "spotCount": 1,
+      "lat": 48.96977735,
+      "lng": 9.402462100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1365337631), ODbL"
+    }
+  ]
+}

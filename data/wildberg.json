@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "wildberg",
+    "name": "Wildberg",
+    "center": {
+      "lat": 48.6278068,
+      "lng": 8.77957655
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wildberg-b93fb328a2",
+      "city": "wildberg",
+      "label": "Am Bach",
+      "street": "Am Bach",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wildberg",
+      "spotCount": 1,
+      "lat": 48.6164034,
+      "lng": 8.77957655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/439369109), ODbL"
+    },
+    {
+      "id": "wildberg-d3ca78e61d",
+      "city": "wildberg",
+      "label": "Wächtersbergstraße 44",
+      "street": "Wächtersbergstraße",
+      "houseNumber": "44",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wildberg",
+      "spotCount": 13,
+      "lat": 48.6278068,
+      "lng": 8.751389150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/413718148), ODbL"
+    }
+  ]
+}

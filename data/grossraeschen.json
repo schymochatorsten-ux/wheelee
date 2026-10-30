@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "grossraeschen",
+    "name": "Großräschen",
+    "center": {
+      "lat": 51.588376700000005,
+      "lng": 14.01479175
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grossraeschen-5f402b7370",
+      "city": "grossraeschen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großräschen",
+      "spotCount": 1,
+      "lat": 51.5911314,
+      "lng": 14.01479175,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/329862821), ODbL"
+    },
+    {
+      "id": "grossraeschen-b954087eb5",
+      "city": "grossraeschen",
+      "label": "Friedensstraße",
+      "street": "Friedensstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Großräschen",
+      "spotCount": 1,
+      "lat": 51.588376700000005,
+      "lng": 14.031360800000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12496756017), ODbL"
+    },
+    {
+      "id": "grossraeschen-f466df8a6b",
+      "city": "grossraeschen",
+      "label": "Marienstraße",
+      "street": "Marienstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Großräschen",
+      "spotCount": 4,
+      "lat": 51.5788353,
+      "lng": 14.005788550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/828598123), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "sinzing",
+    "name": "Sinzing",
+    "center": {
+      "lat": 48.9915685,
+      "lng": 12.0382109
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sinzing-1ff2a315d2",
+      "city": "sinzing",
+      "label": "Fährenweg",
+      "street": "Fährenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sinzing",
+      "spotCount": 2,
+      "lat": 48.9915685,
+      "lng": 12.0382109,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28141078), ODbL"
+    },
+    {
+      "id": "sinzing-b79a251de6",
+      "city": "sinzing",
+      "label": "Heckenweg",
+      "street": "Heckenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sinzing",
+      "spotCount": 1,
+      "lat": 48.98988,
+      "lng": 12.0379658,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1022722326), ODbL"
+    }
+  ]
+}

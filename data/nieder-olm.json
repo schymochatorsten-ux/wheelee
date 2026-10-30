@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "nieder-olm",
+    "name": "Nieder-Olm",
+    "center": {
+      "lat": 49.908336750000004,
+      "lng": 8.2026275
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nieder-olm-ea63f7282b",
+      "city": "nieder-olm",
+      "label": "Am Laushans",
+      "street": "Am Laushans",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nieder-Olm",
+      "spotCount": 2,
+      "lat": 49.90317985,
+      "lng": 8.2111305,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/320045684), ODbL"
+    },
+    {
+      "id": "nieder-olm-fd852a80d4",
+      "city": "nieder-olm",
+      "label": "Am Laushans 6",
+      "street": "Am Laushans",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nieder-Olm",
+      "spotCount": 2,
+      "lat": 49.904180600000004,
+      "lng": 8.21140525,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/320045683), ODbL"
+    },
+    {
+      "id": "nieder-olm-83f55a4d27",
+      "city": "nieder-olm",
+      "label": "Am Woog",
+      "street": "Am Woog",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nieder-Olm",
+      "spotCount": 1,
+      "lat": 49.90823175,
+      "lng": 8.196798650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1347823115), ODbL"
+    },
+    {
+      "id": "nieder-olm-e9be8dad57",
+      "city": "nieder-olm",
+      "label": "Am Woog",
+      "street": "Am Woog",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nieder-Olm",
+      "spotCount": 1,
+      "lat": 49.908337450000005,
+      "lng": 8.1962138,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1347823134), ODbL"
+    },
+    {
+      "id": "nieder-olm-a8b9bac449",
+      "city": "nieder-olm",
+      "label": "Am Woog",
+      "street": "Am Woog",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nieder-Olm",
+      "spotCount": 1,
+      "lat": 49.908336750000004,
+      "lng": 8.19632685,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1347823143), ODbL"
+    },
+    {
+      "id": "nieder-olm-f703d4e5f9",
+      "city": "nieder-olm",
+      "label": "Domherrnstraße",
+      "street": "Domherrnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Nieder-Olm",
+      "spotCount": 1,
+      "lat": 49.9087265,
+      "lng": 8.2040771,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/323844143), ODbL"
+    },
+    {
+      "id": "nieder-olm-0511c50e5d",
+      "city": "nieder-olm",
+      "label": "Pariser Straße",
+      "street": "Pariser Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Nieder-Olm",
+      "spotCount": 1,
+      "lat": 49.90852915000001,
+      "lng": 8.2026275,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/253652954), ODbL"
+    }
+  ]
+}

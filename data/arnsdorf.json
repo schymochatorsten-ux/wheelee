@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "arnsdorf",
+    "name": "Arnsdorf",
+    "center": {
+      "lat": 51.0937476,
+      "lng": 13.99876235
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "arnsdorf-cfe0ca5411",
+      "city": "arnsdorf",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Arnsdorf",
+      "spotCount": 6,
+      "lat": 51.0930667,
+      "lng": 13.982581150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/173441817), ODbL"
+    },
+    {
+      "id": "arnsdorf-3e317f0bf3",
+      "city": "arnsdorf",
+      "label": "Hufelandstraße",
+      "street": "Hufelandstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Arnsdorf",
+      "spotCount": 2,
+      "lat": 51.0924304,
+      "lng": 13.9961976,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/155890214), ODbL"
+    },
+    {
+      "id": "arnsdorf-4b5fe928a6",
+      "city": "arnsdorf",
+      "label": "Kurzzeit",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Arnsdorf",
+      "spotCount": 1,
+      "lat": 51.09392925,
+      "lng": 14.000322350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1043531613), ODbL"
+    },
+    {
+      "id": "arnsdorf-220a04ad8d",
+      "city": "arnsdorf",
+      "label": "Lindenweg",
+      "street": "Lindenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Arnsdorf",
+      "spotCount": 2,
+      "lat": 51.0937476,
+      "lng": 13.99876235,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1046540997), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "sande",
+    "name": "Sande",
+    "center": {
+      "lat": 53.49476870000001,
+      "lng": 8.021267250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sande-0c18e694a8",
+      "city": "sande",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sande",
+      "spotCount": 1,
+      "lat": 53.491055900000006,
+      "lng": 8.0307431,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/799365964), ODbL"
+    },
+    {
+      "id": "sande-293d61c564",
+      "city": "sande",
+      "label": "Danziger Straße",
+      "street": "Danziger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sande",
+      "spotCount": 1,
+      "lat": 53.49476870000001,
+      "lng": 8.021267250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/405455085), ODbL"
+    },
+    {
+      "id": "sande-55b85ee9de",
+      "city": "sande",
+      "label": "Danziger Straße",
+      "street": "Danziger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sande",
+      "spotCount": 1,
+      "lat": 53.494706400000005,
+      "lng": 8.021114100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1210688276), ODbL"
+    },
+    {
+      "id": "sande-6bedb4d8d1",
+      "city": "sande",
+      "label": "Hauptstraße 37",
+      "street": "Hauptstraße",
+      "houseNumber": "37",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sande",
+      "spotCount": 1,
+      "lat": 53.4990152,
+      "lng": 8.018838200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/38305276), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "grabenstetten",
+    "name": "Grabenstetten",
+    "center": {
+      "lat": 48.523365600000005,
+      "lng": 9.46299435
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grabenstetten-dcdf71cfaa",
+      "city": "grabenstetten",
+      "label": "Hofener Weg 9",
+      "street": "Hofener Weg",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grabenstetten",
+      "spotCount": 1,
+      "lat": 48.523365600000005,
+      "lng": 9.46299435,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1346169186), ODbL"
+    }
+  ]
+}

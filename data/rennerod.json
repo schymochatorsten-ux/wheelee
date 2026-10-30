@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "rennerod",
+    "name": "Rennerod",
+    "center": {
+      "lat": 50.60432035,
+      "lng": 8.07314645
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rennerod-f6132b9d1c",
+      "city": "rennerod",
+      "label": "Hubertusstraße",
+      "street": "Hubertusstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rennerod",
+      "spotCount": 1,
+      "lat": 50.6043231,
+      "lng": 8.07319725,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1508206326), ODbL"
+    },
+    {
+      "id": "rennerod-01b5767a04",
+      "city": "rennerod",
+      "label": "Hubertusstraße",
+      "street": "Hubertusstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rennerod",
+      "spotCount": 1,
+      "lat": 50.60432035,
+      "lng": 8.07314645,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1508206327), ODbL"
+    },
+    {
+      "id": "rennerod-b2e9e6fd04",
+      "city": "rennerod",
+      "label": "Hubertusstraße",
+      "street": "Hubertusstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rennerod",
+      "spotCount": 1,
+      "lat": 50.60431845000001,
+      "lng": 8.07309485,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1508206328), ODbL"
+    }
+  ]
+}

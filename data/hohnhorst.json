@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hohnhorst",
+    "name": "Hohnhorst",
+    "center": {
+      "lat": 52.37718410000001,
+      "lng": 9.3837807
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hohnhorst-05d4c009a6",
+      "city": "hohnhorst",
+      "label": "Feldweg",
+      "street": "Feldweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hohnhorst",
+      "spotCount": 2,
+      "lat": 52.37718410000001,
+      "lng": 9.3837807,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/887900608), ODbL"
+    }
+  ]
+}

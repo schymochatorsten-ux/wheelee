@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "wildeck",
+    "name": "Wildeck",
+    "center": {
+      "lat": 50.95298170000001,
+      "lng": 10.0372496
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wildeck-327071cbba",
+      "city": "wildeck",
+      "label": "Hopfengarten",
+      "street": "Hopfengarten",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wildeck",
+      "spotCount": 2,
+      "lat": 50.95316150000001,
+      "lng": 10.037587300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1355397586), ODbL"
+    },
+    {
+      "id": "wildeck-eb629ffd58",
+      "city": "wildeck",
+      "label": "Hopfengarten 7",
+      "street": "Hopfengarten",
+      "houseNumber": "7",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wildeck",
+      "spotCount": 1,
+      "lat": 50.95298170000001,
+      "lng": 10.0372496,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1355397587), ODbL"
+    },
+    {
+      "id": "wildeck-ba5753a1d9",
+      "city": "wildeck",
+      "label": "Vohlstraße",
+      "street": "Vohlstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wildeck",
+      "spotCount": 2,
+      "lat": 50.94591390000001,
+      "lng": 10.025292400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1355786645), ODbL"
+    }
+  ]
+}

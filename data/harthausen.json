@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "harthausen",
+    "name": "Harthausen",
+    "center": {
+      "lat": 49.295566050000005,
+      "lng": 8.3490279
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "harthausen-fee40b06eb",
+      "city": "harthausen",
+      "label": "Gretelplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Harthausen",
+      "spotCount": 26,
+      "lat": 49.295566050000005,
+      "lng": 8.3490279,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1192936250), ODbL"
+    },
+    {
+      "id": "harthausen-3df824d4f1",
+      "city": "harthausen",
+      "label": "Hanhofer Straße 1",
+      "street": "Hanhofer Straße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Harthausen",
+      "spotCount": 1,
+      "lat": 49.295230350000004,
+      "lng": 8.344113400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/384019961), ODbL"
+    }
+  ]
+}

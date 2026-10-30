@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "duempelfeld",
+    "name": "Dümpelfeld",
+    "center": {
+      "lat": 50.44570815,
+      "lng": 6.9385584
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "duempelfeld-bc1dbd34fc",
+      "city": "duempelfeld",
+      "label": "Hauptstraße 16",
+      "street": "Hauptstraße",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dümpelfeld",
+      "spotCount": 1,
+      "lat": 50.44280895,
+      "lng": 6.93352125,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1482254868), ODbL"
+    },
+    {
+      "id": "duempelfeld-7da266016b",
+      "city": "duempelfeld",
+      "label": "Wingertsbach",
+      "street": "Wingertsbach",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dümpelfeld",
+      "spotCount": 2,
+      "lat": 50.44570815,
+      "lng": 6.9385584,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1532852467), ODbL"
+    }
+  ]
+}

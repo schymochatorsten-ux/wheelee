@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kinding",
+    "name": "Kinding",
+    "center": {
+      "lat": 48.992597,
+      "lng": 11.376818400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kinding-ef4efd4d30",
+      "city": "kinding",
+      "label": "Behindertenparkplatz Kinding",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kinding",
+      "spotCount": 4,
+      "lat": 48.992597,
+      "lng": 11.376818400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25507874), ODbL"
+    }
+  ]
+}

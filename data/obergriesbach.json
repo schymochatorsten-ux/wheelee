@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "obergriesbach",
+    "name": "Obergriesbach",
+    "center": {
+      "lat": 48.42233615000001,
+      "lng": 11.079930449999999
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "obergriesbach-8280a8dca9",
+      "city": "obergriesbach",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Obergriesbach",
+      "spotCount": 1,
+      "lat": 48.42233615000001,
+      "lng": 11.079930449999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/158668492), ODbL"
+    },
+    {
+      "id": "obergriesbach-124c246ac1",
+      "city": "obergriesbach",
+      "label": "Am Bahnhof 4",
+      "street": "Am Bahnhof",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Obergriesbach",
+      "spotCount": 1,
+      "lat": 48.4220982,
+      "lng": 11.079766300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2910933984), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "birkenwerder",
+    "name": "Birkenwerder",
+    "center": {
+      "lat": 52.70309760000001,
+      "lng": 13.28422655
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "birkenwerder-cca2df71a2",
+      "city": "birkenwerder",
+      "label": "Am Waldfriedhof 2",
+      "street": "Am Waldfriedhof",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Birkenwerder",
+      "spotCount": 2,
+      "lat": 52.70309760000001,
+      "lng": 13.28422655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/497003781), ODbL"
+    }
+  ]
+}

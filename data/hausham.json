@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "hausham",
+    "name": "Hausham",
+    "center": {
+      "lat": 47.7647992,
+      "lng": 11.8288673
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hausham-163af55169",
+      "city": "hausham",
+      "label": "Agatharied Bahnhof P+R",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hausham",
+      "spotCount": 1,
+      "lat": 47.7647992,
+      "lng": 11.824954250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/195992753), ODbL"
+    },
+    {
+      "id": "hausham-7dfbbc25b2",
+      "city": "hausham",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hausham",
+      "spotCount": 3,
+      "lat": 47.75192355,
+      "lng": 11.838902350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1392856763), ODbL"
+    },
+    {
+      "id": "hausham-2fa6b23882",
+      "city": "hausham",
+      "label": "Norbert-Kerkel-Platz",
+      "street": "Norbert-Kerkel-Platz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hausham",
+      "spotCount": 5,
+      "lat": 47.76910265,
+      "lng": 11.826851650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/48388767), ODbL"
+    },
+    {
+      "id": "hausham-64c96b99d9",
+      "city": "hausham",
+      "label": "Norbert-Kerkel-Platz 1",
+      "street": "Norbert-Kerkel-Platz",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hausham",
+      "spotCount": 5,
+      "lat": 47.7689595,
+      "lng": 11.82715815,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/48388769), ODbL"
+    },
+    {
+      "id": "hausham-7a62439ced",
+      "city": "hausham",
+      "label": "Obere Tiefenbachstraße 2",
+      "street": "Obere Tiefenbachstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hausham",
+      "spotCount": 1,
+      "lat": 47.76251795,
+      "lng": 11.8288673,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/363517699), ODbL"
+    },
+    {
+      "id": "hausham-b6ec82d1e5",
+      "city": "hausham",
+      "label": "Schlierseer Straße 20",
+      "street": "Schlierseer Straße",
+      "houseNumber": "20",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hausham",
+      "spotCount": 2,
+      "lat": 47.7482789,
+      "lng": 11.8412535,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2083139106), ODbL"
+    }
+  ]
+}

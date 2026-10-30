@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wilthen",
+    "name": "Wilthen",
+    "center": {
+      "lat": 51.09316530000001,
+      "lng": 14.3913829
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wilthen-851945ccfd",
+      "city": "wilthen",
+      "label": "Bahnhofstraße 1",
+      "street": "Bahnhofstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wilthen",
+      "spotCount": 1,
+      "lat": 51.09316530000001,
+      "lng": 14.3913829,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/509469700), ODbL"
+    }
+  ]
+}

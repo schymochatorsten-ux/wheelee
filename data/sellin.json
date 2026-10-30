@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "sellin",
+    "name": "Sellin",
+    "center": {
+      "lat": 54.38110055,
+      "lng": 13.691368800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sellin-cd30ca940d",
+      "city": "sellin",
+      "label": "Kurweg",
+      "street": "Kurweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sellin",
+      "spotCount": 1,
+      "lat": 54.38110055,
+      "lng": 13.691368800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/231194783), ODbL"
+    }
+  ]
+}

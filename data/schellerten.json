@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "schellerten",
+    "name": "Schellerten",
+    "center": {
+      "lat": 52.15185135,
+      "lng": 10.08671535
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schellerten-687ae8c407",
+      "city": "schellerten",
+      "label": "Klosterstraße",
+      "street": "Klosterstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schellerten",
+      "spotCount": 1,
+      "lat": 52.151762000000005,
+      "lng": 10.08607115,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/490488940), ODbL"
+    },
+    {
+      "id": "schellerten-5288897e38",
+      "city": "schellerten",
+      "label": "Klosterstraße",
+      "street": "Klosterstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schellerten",
+      "spotCount": 1,
+      "lat": 52.15185135,
+      "lng": 10.08671535,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1286850542), ODbL"
+    }
+  ]
+}

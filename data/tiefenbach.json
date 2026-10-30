@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "tiefenbach",
+    "name": "Tiefenbach",
+    "center": {
+      "lat": 48.646196,
+      "lng": 13.3978294
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "tiefenbach-cf8829204a",
+      "city": "tiefenbach",
+      "label": "Dorfstraße",
+      "street": "Dorfstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Tiefenbach",
+      "spotCount": 1,
+      "lat": 48.646196,
+      "lng": 13.322856400000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13849414192), ODbL"
+    },
+    {
+      "id": "tiefenbach-05ff590cf7",
+      "city": "tiefenbach",
+      "label": "Hochstiftsweg",
+      "street": "Hochstiftsweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Tiefenbach",
+      "spotCount": 1,
+      "lat": 48.6258453,
+      "lng": 13.3978294,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13853936948), ODbL"
+    }
+  ]
+}

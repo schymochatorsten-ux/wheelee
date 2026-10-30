@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "berlingerode",
+    "name": "Berlingerode",
+    "center": {
+      "lat": 51.459300250000005,
+      "lng": 10.2399132
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "berlingerode-d8784d0db1",
+      "city": "berlingerode",
+      "label": "Klappe",
+      "street": "Klappe",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Berlingerode",
+      "spotCount": 3,
+      "lat": 51.459300250000005,
+      "lng": 10.2399132,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/237195489), ODbL"
+    }
+  ]
+}

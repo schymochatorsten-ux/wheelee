@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "frittlingen",
+    "name": "Frittlingen",
+    "center": {
+      "lat": 48.127174950000004,
+      "lng": 8.709426
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "frittlingen-5446d4d776",
+      "city": "frittlingen",
+      "label": "Schulstraße 2",
+      "street": "Schulstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Frittlingen",
+      "spotCount": 1,
+      "lat": 48.127174950000004,
+      "lng": 8.709426,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/38434593), ODbL"
+    }
+  ]
+}

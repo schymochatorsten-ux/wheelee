@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bad-karlshafen",
+    "name": "Bad Karlshafen",
+    "center": {
+      "lat": 51.64726815,
+      "lng": 9.45681965
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-karlshafen-1e264d6d75",
+      "city": "bad-karlshafen",
+      "label": "Am Auland",
+      "street": "Am Auland",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Karlshafen",
+      "spotCount": 1,
+      "lat": 51.64726815,
+      "lng": 9.45681965,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/38780626), ODbL"
+    },
+    {
+      "id": "bad-karlshafen-019dd3e2a2",
+      "city": "bad-karlshafen",
+      "label": "Am Fahlenberg",
+      "street": "Am Fahlenberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Karlshafen",
+      "spotCount": 2,
+      "lat": 51.63055545,
+      "lng": 9.4521022,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1343220725), ODbL"
+    }
+  ]
+}

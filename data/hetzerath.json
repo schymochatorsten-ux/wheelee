@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hetzerath",
+    "name": "Hetzerath",
+    "center": {
+      "lat": 49.8777477,
+      "lng": 6.81445235
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hetzerath-e404339764",
+      "city": "hetzerath",
+      "label": "Hauptstraße 12a",
+      "street": "Hauptstraße",
+      "houseNumber": "12a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hetzerath",
+      "spotCount": 2,
+      "lat": 49.8777477,
+      "lng": 6.81445235,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1472075176), ODbL"
+    }
+  ]
+}

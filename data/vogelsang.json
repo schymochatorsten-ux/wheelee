@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "vogelsang",
+    "name": "Vogelsang",
+    "center": {
+      "lat": 52.1792305,
+      "lng": 14.6670311
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "vogelsang-716b1a5212",
+      "city": "vogelsang",
+      "label": "Straße der Jugend",
+      "street": "Straße der Jugend",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vogelsang",
+      "spotCount": 1,
+      "lat": 52.1792305,
+      "lng": 14.6670311,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/55130306), ODbL"
+    }
+  ]
+}

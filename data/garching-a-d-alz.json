@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "garching-a-d-alz",
+    "name": "Garching a.d.Alz",
+    "center": {
+      "lat": 48.13123805000001,
+      "lng": 12.572819250000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "garching-a-d-alz-61b55d04bd",
+      "city": "garching-a-d-alz",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Garching a.d.Alz",
+      "spotCount": 2,
+      "lat": 48.13123805000001,
+      "lng": 12.572819250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/310109743), ODbL"
+    }
+  ]
+}

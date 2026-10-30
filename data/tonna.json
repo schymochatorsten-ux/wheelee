@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "tonna",
+    "name": "Tonna",
+    "center": {
+      "lat": 51.0905082,
+      "lng": 10.7370344
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "tonna-58231532f3",
+      "city": "tonna",
+      "label": "Erfurter Straße",
+      "street": "Erfurter Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Tonna",
+      "spotCount": 1,
+      "lat": 51.0905082,
+      "lng": 10.7370344,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11195633538), ODbL"
+    }
+  ]
+}

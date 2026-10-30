@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "widdern",
+    "name": "Widdern",
+    "center": {
+      "lat": 49.324196,
+      "lng": 9.41603165
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "widdern-9b9335f89f",
+      "city": "widdern",
+      "label": "Jagsttal West",
+      "street": "Jagsttal West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Widdern",
+      "spotCount": 2,
+      "lat": 49.324196,
+      "lng": 9.41184145,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29487949), ODbL"
+    },
+    {
+      "id": "widdern-5e8cb450fa",
+      "city": "widdern",
+      "label": "Rastanlage Jagsttal Ost",
+      "street": "Rastanlage Jagsttal Ost",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Widdern",
+      "spotCount": 2,
+      "lat": 49.3229515,
+      "lng": 9.41603165,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26478522), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "rosenberg",
+    "name": "Rosenberg",
+    "center": {
+      "lat": 49.021198350000006,
+      "lng": 10.020282400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rosenberg-0bc33bf5aa",
+      "city": "rosenberg",
+      "label": "Haller Straße",
+      "street": "Haller Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rosenberg",
+      "spotCount": 1,
+      "lat": 49.02119450000001,
+      "lng": 10.020236,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1560019528), ODbL"
+    },
+    {
+      "id": "rosenberg-e45c5e4456",
+      "city": "rosenberg",
+      "label": "Haller Straße",
+      "street": "Haller Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rosenberg",
+      "spotCount": 1,
+      "lat": 49.021198350000006,
+      "lng": 10.020282400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1560019529), ODbL"
+    },
+    {
+      "id": "rosenberg-c7a33b8676",
+      "city": "rosenberg",
+      "label": "Haller Straße",
+      "street": "Haller Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rosenberg",
+      "spotCount": 1,
+      "lat": 49.021202200000005,
+      "lng": 10.020328800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1560019530), ODbL"
+    }
+  ]
+}

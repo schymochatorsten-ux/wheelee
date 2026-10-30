@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "giebelstadt",
+    "name": "Giebelstadt",
+    "center": {
+      "lat": 49.6524701,
+      "lng": 9.9469593
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "giebelstadt-5ee13591ed",
+      "city": "giebelstadt",
+      "label": "Marktplatz",
+      "street": "Marktplatz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Giebelstadt",
+      "spotCount": 1,
+      "lat": 49.6524701,
+      "lng": 9.9469593,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1176346144), ODbL"
+    }
+  ]
+}

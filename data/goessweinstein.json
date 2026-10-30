@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "goessweinstein",
+    "name": "Gößweinstein",
+    "center": {
+      "lat": 49.770639300000006,
+      "lng": 11.339454100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "goessweinstein-0782944f12",
+      "city": "goessweinstein",
+      "label": "Burgstraße 8",
+      "street": "Burgstraße",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gößweinstein",
+      "spotCount": 1,
+      "lat": 49.770639300000006,
+      "lng": 11.3358843,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5969622686), ODbL"
+    },
+    {
+      "id": "goessweinstein-44d8ae2075",
+      "city": "goessweinstein",
+      "label": "Viktor-von-Scheffel-Straße",
+      "street": "Viktor-von-Scheffel-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gößweinstein",
+      "spotCount": 1,
+      "lat": 49.7691644,
+      "lng": 11.339454100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/67263082), ODbL"
+    }
+  ]
+}

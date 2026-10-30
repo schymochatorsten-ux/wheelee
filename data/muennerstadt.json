@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "muennerstadt",
+    "name": "Münnerstadt",
+    "center": {
+      "lat": 50.25113925000001,
+      "lng": 10.1913736
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "muennerstadt-9463b419cd",
+      "city": "muennerstadt",
+      "label": "Altstadtweg",
+      "street": "Altstadtweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Münnerstadt",
+      "spotCount": 1,
+      "lat": 50.25113925000001,
+      "lng": 10.1913736,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/869375247), ODbL"
+    }
+  ]
+}

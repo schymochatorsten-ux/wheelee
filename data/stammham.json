@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "stammham",
+    "name": "Stammham",
+    "center": {
+      "lat": 48.8374656,
+      "lng": 11.469163900000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "stammham-042cb041dc",
+      "city": "stammham",
+      "label": "Köschinger Forst West",
+      "street": "Köschinger Forst West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stammham",
+      "spotCount": 2,
+      "lat": 48.8374656,
+      "lng": 11.469163900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/940252975), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "grinau",
+    "name": "Grinau",
+    "center": {
+      "lat": 53.7724776,
+      "lng": 10.5469662
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grinau-fde97e1133",
+      "city": "grinau",
+      "label": "Hauptstraße 38",
+      "street": "Hauptstraße",
+      "houseNumber": "38",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Grinau",
+      "spotCount": 1,
+      "lat": 53.7724776,
+      "lng": 10.5469662,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11064320886), ODbL"
+    }
+  ]
+}

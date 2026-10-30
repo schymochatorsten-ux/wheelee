@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "lindberg",
+    "name": "Lindberg",
+    "center": {
+      "lat": 49.06053395000001,
+      "lng": 13.236545900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lindberg-08cffd8a04",
+      "city": "lindberg",
+      "label": "Alte Böhmerstraße",
+      "street": "Alte Böhmerstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lindberg",
+      "spotCount": 1,
+      "lat": 49.060027700000006,
+      "lng": 13.236545900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1358718894), ODbL"
+    },
+    {
+      "id": "lindberg-85ceff9df6",
+      "city": "lindberg",
+      "label": "Haus zur Wildnis-Ludwigsthal",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Lindberg",
+      "spotCount": 1,
+      "lat": 49.06053395000001,
+      "lng": 13.235623400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/130127124), ODbL"
+    }
+  ]
+}

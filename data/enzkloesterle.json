@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "enzkloesterle",
+    "name": "Enzklösterle",
+    "center": {
+      "lat": 48.668815300000006,
+      "lng": 8.474733
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "enzkloesterle-b73ee8f176",
+      "city": "enzkloesterle",
+      "label": "Wildbader Straße",
+      "street": "Wildbader Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Enzklösterle",
+      "spotCount": 6,
+      "lat": 48.668815300000006,
+      "lng": 8.474733,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1302482700), ODbL"
+    }
+  ]
+}

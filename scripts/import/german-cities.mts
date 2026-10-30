@@ -40,7 +40,7 @@ export interface GermanCity {
  * muss 2e.7 gelöst sein – eine Overpass-Abfrage je Gemeinde ist bei
  * tausenden Gemeinden nicht vertretbar.
  */
-export const MIN_POPULATION = 5_000;
+export const MIN_POPULATION = 0;
 
 /**
  * Slugs, die vom abgeleiteten Namen abweichen.

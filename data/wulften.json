@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wulften",
+    "name": "Wulften am Harz",
+    "center": {
+      "lat": 51.6603913,
+      "lng": 10.176729550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wulften-a858fe726f",
+      "city": "wulften",
+      "label": "Winkel 2",
+      "street": "Winkel",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wulften am Harz",
+      "spotCount": 1,
+      "lat": 51.6603913,
+      "lng": 10.176729550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1363875780), ODbL"
+    }
+  ]
+}

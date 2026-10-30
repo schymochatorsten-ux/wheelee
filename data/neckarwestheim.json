@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "neckarwestheim",
+    "name": "Neckarwestheim",
+    "center": {
+      "lat": 49.05134815,
+      "lng": 9.193402200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neckarwestheim-20e541263e",
+      "city": "neckarwestheim",
+      "label": "Liebensteiner Straße",
+      "street": "Liebensteiner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neckarwestheim",
+      "spotCount": 1,
+      "lat": 49.044281500000004,
+      "lng": 9.18753465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/325906775), ODbL"
+    },
+    {
+      "id": "neckarwestheim-29d2ccf455",
+      "city": "neckarwestheim",
+      "label": "Netto Marken-Discount",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neckarwestheim",
+      "spotCount": 2,
+      "lat": 49.051147300000004,
+      "lng": 9.1936505,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/174659416), ODbL"
+    },
+    {
+      "id": "neckarwestheim-da4ff908aa",
+      "city": "neckarwestheim",
+      "label": "Schillerstraße",
+      "street": "Schillerstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neckarwestheim",
+      "spotCount": 1,
+      "lat": 49.0513783,
+      "lng": 9.193402200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/174776402), ODbL"
+    },
+    {
+      "id": "neckarwestheim-aa4499c8f9",
+      "city": "neckarwestheim",
+      "label": "Schillerstraße",
+      "street": "Schillerstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neckarwestheim",
+      "spotCount": 1,
+      "lat": 49.0514084,
+      "lng": 9.1934073,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/174776403), ODbL"
+    },
+    {
+      "id": "neckarwestheim-d5559df260",
+      "city": "neckarwestheim",
+      "label": "Schillerstraße",
+      "street": "Schillerstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neckarwestheim",
+      "spotCount": 1,
+      "lat": 49.05134815,
+      "lng": 9.1933971,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/174776407), ODbL"
+    }
+  ]
+}

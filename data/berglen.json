@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "berglen",
+    "name": "Berglen",
+    "center": {
+      "lat": 48.85834455,
+      "lng": 9.4647862
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "berglen-0a88470469",
+      "city": "berglen",
+      "label": "Georg-Friedrich-Händel-Straße",
+      "street": "Georg-Friedrich-Händel-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Berglen",
+      "spotCount": 2,
+      "lat": 48.85834455,
+      "lng": 9.4647862,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/366118226), ODbL"
+    },
+    {
+      "id": "berglen-ec566097bb",
+      "city": "berglen",
+      "label": "Tannenstraße",
+      "street": "Tannenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Berglen",
+      "spotCount": 2,
+      "lat": 48.84582495,
+      "lng": 9.4558885,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1349262410), ODbL"
+    }
+  ]
+}

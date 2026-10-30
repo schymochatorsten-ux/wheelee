@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "eschau",
+    "name": "Eschau",
+    "center": {
+      "lat": 49.834210350000006,
+      "lng": 9.354463
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eschau-2e0eeec6e2",
+      "city": "eschau",
+      "label": "Elsavastraße 158",
+      "street": "Elsavastraße",
+      "houseNumber": "158",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eschau",
+      "spotCount": 1,
+      "lat": 49.825428300000006,
+      "lng": 9.254280900000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9031431209), ODbL"
+    },
+    {
+      "id": "eschau-fb598997c8",
+      "city": "eschau",
+      "label": "Wildensee",
+      "street": "Wildensee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eschau",
+      "spotCount": 1,
+      "lat": 49.834210350000006,
+      "lng": 9.354463,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/802151764), ODbL"
+    }
+  ]
+}

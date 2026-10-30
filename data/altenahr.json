@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "altenahr",
+    "name": "Altenahr",
+    "center": {
+      "lat": 50.5174803,
+      "lng": 6.991497900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "altenahr-61f52793a0",
+      "city": "altenahr",
+      "label": "Altenburger Straße 1",
+      "street": "Altenburger Straße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Altenahr",
+      "spotCount": 1,
+      "lat": 50.515809950000005,
+      "lng": 6.98846155,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/131609828), ODbL"
+    },
+    {
+      "id": "altenahr-76ee115e13",
+      "city": "altenahr",
+      "label": "Markt 3",
+      "street": "Markt",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Altenahr",
+      "spotCount": 1,
+      "lat": 50.5174803,
+      "lng": 6.991497900000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/369965871), ODbL"
+    }
+  ]
+}

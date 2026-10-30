@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "huefingen",
+    "name": "Hüfingen",
+    "center": {
+      "lat": 47.92424065,
+      "lng": 8.48884905
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "huefingen-620c005182",
+      "city": "huefingen",
+      "label": "Schaffhauser Straße",
+      "street": "Schaffhauser Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hüfingen",
+      "spotCount": 1,
+      "lat": 47.922827600000005,
+      "lng": 8.48884905,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1187205879), ODbL"
+    },
+    {
+      "id": "huefingen-577760bac8",
+      "city": "huefingen",
+      "label": "Süßer Winkel",
+      "street": "Süßer Winkel",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hüfingen",
+      "spotCount": 2,
+      "lat": 47.92424065,
+      "lng": 8.488356450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/342812143), ODbL"
+    }
+  ]
+}

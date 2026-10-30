@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "seelow",
+    "name": "Seelow",
+    "center": {
+      "lat": 52.534341600000005,
+      "lng": 14.382397000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "seelow-198d7c761b",
+      "city": "seelow",
+      "label": "Bertolt-Brecht-Straße 5",
+      "street": "Bertolt-Brecht-Straße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Seelow",
+      "spotCount": 1,
+      "lat": 52.529238750000005,
+      "lng": 14.38937,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/102719591), ODbL"
+    },
+    {
+      "id": "seelow-8ba057974f",
+      "city": "seelow",
+      "label": "Küstriner Straße",
+      "street": "Küstriner Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Seelow",
+      "spotCount": 1,
+      "lat": 52.534341600000005,
+      "lng": 14.382397000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13208918586), ODbL"
+    },
+    {
+      "id": "seelow-bc189990dd",
+      "city": "seelow",
+      "label": "Rathaus",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Sa 08:00-16:00",
+      "district": "Seelow",
+      "spotCount": 1,
+      "lat": 52.534549850000005,
+      "lng": 14.382383750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27134458), ODbL"
+    }
+  ]
+}

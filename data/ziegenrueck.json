@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "ziegenrueck",
+    "name": "Ziegenrück",
+    "center": {
+      "lat": 50.61301470000001,
+      "lng": 11.65139705
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ziegenrueck-1f40818e14",
+      "city": "ziegenrueck",
+      "label": "Mühlstraße",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ziegenrück",
+      "spotCount": 1,
+      "lat": 50.6120507,
+      "lng": 11.651031450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/219110310), ODbL"
+    },
+    {
+      "id": "ziegenrueck-6dcae36f2d",
+      "city": "ziegenrueck",
+      "label": "Platz der Jugend",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ziegenrück",
+      "spotCount": 1,
+      "lat": 50.61301470000001,
+      "lng": 11.65139705,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/219110323), ODbL"
+    }
+  ]
+}

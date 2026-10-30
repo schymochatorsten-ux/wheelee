@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "grossschirma",
+    "name": "Großschirma",
+    "center": {
+      "lat": 51.0339054,
+      "lng": 13.29873395
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grossschirma-00446639bc",
+      "city": "grossschirma",
+      "label": "An der Autobahn",
+      "street": "An der Autobahn",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großschirma",
+      "spotCount": 3,
+      "lat": 51.03363615000001,
+      "lng": 13.2983096,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/36910649), ODbL"
+    },
+    {
+      "id": "grossschirma-54e8fb3b85",
+      "city": "grossschirma",
+      "label": "An der Autobahn",
+      "street": "An der Autobahn",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Großschirma",
+      "spotCount": 1,
+      "lat": 51.0339054,
+      "lng": 13.29873395,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1503108928), ODbL"
+    },
+    {
+      "id": "grossschirma-02251574f2",
+      "city": "grossschirma",
+      "label": "An der Autobahn",
+      "street": "An der Autobahn",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Großschirma",
+      "spotCount": 1,
+      "lat": 51.0339055,
+      "lng": 13.2986823,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1503108929), ODbL"
+    },
+    {
+      "id": "grossschirma-8b4d85a866",
+      "city": "grossschirma",
+      "label": "An der Autobahn",
+      "street": "An der Autobahn",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Großschirma",
+      "spotCount": 1,
+      "lat": 51.033905600000004,
+      "lng": 13.29863065,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1503108930), ODbL"
+    },
+    {
+      "id": "grossschirma-a00e3d6ea1",
+      "city": "grossschirma",
+      "label": "Markt 10",
+      "street": "Markt",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-We 00:00-23:59; Fr-Su 00:00-23:59",
+      "district": "Großschirma",
+      "spotCount": 1,
+      "lat": 51.029806750000006,
+      "lng": 13.308049500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28366384), ODbL"
+    },
+    {
+      "id": "grossschirma-665dd0abba",
+      "city": "grossschirma",
+      "label": "Markt 24",
+      "street": "Markt",
+      "houseNumber": "24",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großschirma",
+      "spotCount": 1,
+      "lat": 51.0297255,
+      "lng": 13.30805465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/187245252), ODbL"
+    }
+  ]
+}

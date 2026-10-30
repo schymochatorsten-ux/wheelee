@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "maxdorf",
+    "name": "Maxdorf",
+    "center": {
+      "lat": 49.48036325,
+      "lng": 8.286561200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "maxdorf-362035df02",
+      "city": "maxdorf",
+      "label": "Friedhofstraße",
+      "street": "Friedhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Maxdorf",
+      "spotCount": 1,
+      "lat": 49.48035915,
+      "lng": 8.286561200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/633208025), ODbL"
+    },
+    {
+      "id": "maxdorf-31afd7f1cd",
+      "city": "maxdorf",
+      "label": "Schillerplatz",
+      "street": "Schillerplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Maxdorf",
+      "spotCount": 2,
+      "lat": 49.48036325,
+      "lng": 8.2935624,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1505900153), ODbL"
+    },
+    {
+      "id": "maxdorf-d86225c6d7",
+      "city": "maxdorf",
+      "label": "Waldstraße",
+      "street": "Waldstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Maxdorf",
+      "spotCount": 2,
+      "lat": 49.49866275,
+      "lng": 8.28496675,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1175116260), ODbL"
+    }
+  ]
+}

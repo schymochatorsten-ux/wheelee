@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kiefersfelden",
+    "name": "Kiefersfelden",
+    "center": {
+      "lat": 47.610518150000004,
+      "lng": 12.19123445
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kiefersfelden-fafaf5d713",
+      "city": "kiefersfelden",
+      "label": "Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kiefersfelden",
+      "spotCount": 1,
+      "lat": 47.610518150000004,
+      "lng": 12.19123445,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/143328990), ODbL"
+    }
+  ]
+}

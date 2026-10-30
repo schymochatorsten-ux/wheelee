@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "dittelbrunn",
+    "name": "Dittelbrunn",
+    "center": {
+      "lat": 50.07583290000001,
+      "lng": 10.2193926
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dittelbrunn-59dc546a0f",
+      "city": "dittelbrunn",
+      "label": "Am Marienbach 1",
+      "street": "Am Marienbach",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dittelbrunn",
+      "spotCount": 1,
+      "lat": 50.07583290000001,
+      "lng": 10.2193926,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/726112440), ODbL"
+    },
+    {
+      "id": "dittelbrunn-d488113da9",
+      "city": "dittelbrunn",
+      "label": "Am Steingraben",
+      "street": "Am Steingraben",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dittelbrunn",
+      "spotCount": 1,
+      "lat": 50.06672375,
+      "lng": 10.2251747,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/71606100), ODbL"
+    },
+    {
+      "id": "dittelbrunn-b3ba3c11ab",
+      "city": "dittelbrunn",
+      "label": "Am Steinig",
+      "street": "Am Steinig",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dittelbrunn",
+      "spotCount": 4,
+      "lat": 50.073891,
+      "lng": 10.216602600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/55640894), ODbL"
+    },
+    {
+      "id": "dittelbrunn-98b0d7069c",
+      "city": "dittelbrunn",
+      "label": "Herrengasse",
+      "street": "Herrengasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dittelbrunn",
+      "spotCount": 2,
+      "lat": 50.099258000000006,
+      "lng": 10.206502050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/296653738), ODbL"
+    },
+    {
+      "id": "dittelbrunn-b3534308a8",
+      "city": "dittelbrunn",
+      "label": "Schulweg 1",
+      "street": "Schulweg",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dittelbrunn",
+      "spotCount": 1,
+      "lat": 50.07389845,
+      "lng": 10.221168800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24350142), ODbL"
+    },
+    {
+      "id": "dittelbrunn-20ddc67f93",
+      "city": "dittelbrunn",
+      "label": "Zeller Straße",
+      "street": "Zeller Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dittelbrunn",
+      "spotCount": 2,
+      "lat": 50.099624500000004,
+      "lng": 10.2164049,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9885038834), ODbL"
+    }
+  ]
+}

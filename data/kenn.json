@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kenn",
+    "name": "Kenn",
+    "center": {
+      "lat": 49.8029188,
+      "lng": 6.7148647
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kenn-abf140a069",
+      "city": "kenn",
+      "label": "Trierer Straße",
+      "street": "Trierer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kenn",
+      "spotCount": 1,
+      "lat": 49.8029188,
+      "lng": 6.7148647,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32674446), ODbL"
+    }
+  ]
+}

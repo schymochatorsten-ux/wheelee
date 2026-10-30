@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "kolkwitz",
+    "name": "Kolkwitz",
+    "center": {
+      "lat": 51.7504012,
+      "lng": 14.2771389
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kolkwitz-26f6e56b54",
+      "city": "kolkwitz",
+      "label": "Annahofer Graben 3",
+      "street": "Annahofer Graben",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kolkwitz",
+      "spotCount": 1,
+      "lat": 51.717583000000005,
+      "lng": 14.288534250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1305108021), ODbL"
+    },
+    {
+      "id": "kolkwitz-2f44d34812",
+      "city": "kolkwitz",
+      "label": "Berliner Straße",
+      "street": "Berliner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kolkwitz",
+      "spotCount": 1,
+      "lat": 51.7504012,
+      "lng": 14.260333500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1525855328), ODbL"
+    },
+    {
+      "id": "kolkwitz-efdbba9804",
+      "city": "kolkwitz",
+      "label": "Friedensweg",
+      "street": "Friedensweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kolkwitz",
+      "spotCount": 1,
+      "lat": 51.7514491,
+      "lng": 14.2597989,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/16222328), ODbL"
+    },
+    {
+      "id": "kolkwitz-12e52766c3",
+      "city": "kolkwitz",
+      "label": "Hänchener Hauptstraße",
+      "street": "Hänchener Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kolkwitz",
+      "spotCount": 1,
+      "lat": 51.72258945,
+      "lng": 14.2771389,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1061511190), ODbL"
+    }
+  ]
+}

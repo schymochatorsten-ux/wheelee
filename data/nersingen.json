@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "nersingen",
+    "name": "Nersingen",
+    "center": {
+      "lat": 48.425093350000004,
+      "lng": 10.1142429
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nersingen-eb614807ec",
+      "city": "nersingen",
+      "label": "Fachmarktzentrum Riedle",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nersingen",
+      "spotCount": 12,
+      "lat": 48.425093350000004,
+      "lng": 10.1142429,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/117458967), ODbL"
+    }
+  ]
+}

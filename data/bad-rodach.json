@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "bad-rodach",
+    "name": "Bad Rodach",
+    "center": {
+      "lat": 50.34091645,
+      "lng": 10.7789023
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-rodach-6cbfd2b3d8",
+      "city": "bad-rodach",
+      "label": "Fladengasse 1",
+      "street": "Fladengasse",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Rodach",
+      "spotCount": 1,
+      "lat": 50.3366978,
+      "lng": 10.777409550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/323817287), ODbL"
+    },
+    {
+      "id": "bad-rodach-60534ff3d6",
+      "city": "bad-rodach",
+      "label": "Kirchgasse",
+      "street": "Kirchgasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Rodach",
+      "spotCount": 1,
+      "lat": 50.341384700000006,
+      "lng": 10.7789023,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2859138796), ODbL"
+    },
+    {
+      "id": "bad-rodach-f214f105e9",
+      "city": "bad-rodach",
+      "label": "Kurring",
+      "street": "Kurring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Rodach",
+      "spotCount": 1,
+      "lat": 50.331403800000004,
+      "lng": 10.7669637,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/4035152489), ODbL"
+    },
+    {
+      "id": "bad-rodach-633175f6e5",
+      "city": "bad-rodach",
+      "label": "Siedlungsweg",
+      "street": "Siedlungsweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Rodach",
+      "spotCount": 1,
+      "lat": 50.34091645,
+      "lng": 10.7856907,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/317015768), ODbL"
+    }
+  ]
+}

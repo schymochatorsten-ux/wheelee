@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "herrnhut",
+    "name": "Herrnhut",
+    "center": {
+      "lat": 51.0155115,
+      "lng": 14.738700000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "herrnhut-d2591d420c",
+      "city": "herrnhut",
+      "label": "Löbauer Straße",
+      "street": "Löbauer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herrnhut",
+      "spotCount": 2,
+      "lat": 51.0278945,
+      "lng": 14.723292700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/55602426), ODbL"
+    },
+    {
+      "id": "herrnhut-96e85b4fa8",
+      "city": "herrnhut",
+      "label": "Oderwitzer Straße",
+      "street": "Oderwitzer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herrnhut",
+      "spotCount": 1,
+      "lat": 51.0155115,
+      "lng": 14.738116900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/59364977), ODbL"
+    },
+    {
+      "id": "herrnhut-c07e9909f8",
+      "city": "herrnhut",
+      "label": "Oderwitzer Straße",
+      "street": "Oderwitzer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herrnhut",
+      "spotCount": 1,
+      "lat": 51.015994400000004,
+      "lng": 14.738700000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1376566771), ODbL"
+    },
+    {
+      "id": "herrnhut-2336da7687",
+      "city": "herrnhut",
+      "label": "Uttendörferweg",
+      "street": "Uttendörferweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herrnhut",
+      "spotCount": 2,
+      "lat": 51.01299660000001,
+      "lng": 14.748336900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/52882559), ODbL"
+    },
+    {
+      "id": "herrnhut-64112fc142",
+      "city": "herrnhut",
+      "label": "Weg zum Altenheim",
+      "street": "Weg zum Altenheim",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herrnhut",
+      "spotCount": 1,
+      "lat": 51.0152865,
+      "lng": 14.747074050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/79264900), ODbL"
+    }
+  ]
+}

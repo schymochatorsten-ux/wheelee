@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "goehren-lebbin",
+    "name": "Göhren-Lebbin",
+    "center": {
+      "lat": 53.4925674,
+      "lng": 12.491798750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "goehren-lebbin-32a7d08aa7",
+      "city": "goehren-lebbin",
+      "label": "Am Seeblick",
+      "street": "Am Seeblick",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Göhren-Lebbin",
+      "spotCount": 2,
+      "lat": 53.49133045000001,
+      "lng": 12.48472285,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/85710813), ODbL"
+    },
+    {
+      "id": "goehren-lebbin-8e91c03154",
+      "city": "goehren-lebbin",
+      "label": "Strandweg 5",
+      "street": "Strandweg",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Göhren-Lebbin",
+      "spotCount": 2,
+      "lat": 53.4925674,
+      "lng": 12.491798750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1326461959), ODbL"
+    }
+  ]
+}

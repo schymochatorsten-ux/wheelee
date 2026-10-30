@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "roetgesbuettel",
+    "name": "Rötgesbüttel",
+    "center": {
+      "lat": 52.415291200000006,
+      "lng": 10.5244032
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "roetgesbuettel-fe9a8becea",
+      "city": "roetgesbuettel",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rötgesbüttel",
+      "spotCount": 1,
+      "lat": 52.415291200000006,
+      "lng": 10.5244032,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11208368038), ODbL"
+    }
+  ]
+}

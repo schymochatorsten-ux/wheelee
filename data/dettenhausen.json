@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "dettenhausen",
+    "name": "Dettenhausen",
+    "center": {
+      "lat": 48.608009900000006,
+      "lng": 9.09963795
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dettenhausen-3832e5b2ca",
+      "city": "dettenhausen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Dettenhausen",
+      "spotCount": 1,
+      "lat": 48.60638515000001,
+      "lng": 9.0943164,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/173875579), ODbL"
+    },
+    {
+      "id": "dettenhausen-cc18af69a1",
+      "city": "dettenhausen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Dettenhausen",
+      "spotCount": 1,
+      "lat": 48.606448650000004,
+      "lng": 9.0940555,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1011654086), ODbL"
+    },
+    {
+      "id": "dettenhausen-4a19401a43",
+      "city": "dettenhausen",
+      "label": "Schulstraße 7",
+      "street": "Schulstraße",
+      "houseNumber": "7",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dettenhausen",
+      "spotCount": 1,
+      "lat": 48.608009900000006,
+      "lng": 9.1006078,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11671746954), ODbL"
+    },
+    {
+      "id": "dettenhausen-74f6993c69",
+      "city": "dettenhausen",
+      "label": "Störrenstraße 32",
+      "street": "Störrenstraße",
+      "houseNumber": "32",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dettenhausen",
+      "spotCount": 1,
+      "lat": 48.608742750000005,
+      "lng": 9.09963795,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/173938999), ODbL"
+    },
+    {
+      "id": "dettenhausen-14551ad31e",
+      "city": "dettenhausen",
+      "label": "Störrenstraße 38-40",
+      "street": "Störrenstraße",
+      "houseNumber": "38-40",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dettenhausen",
+      "spotCount": 1,
+      "lat": 48.6087244,
+      "lng": 9.10003825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/173942573), ODbL"
+    }
+  ]
+}

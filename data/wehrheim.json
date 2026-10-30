@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "wehrheim",
+    "name": "Wehrheim",
+    "center": {
+      "lat": 50.3034543,
+      "lng": 8.569303600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wehrheim-0f52a6127b",
+      "city": "wehrheim",
+      "label": "Bahnhofstraße 4",
+      "street": "Bahnhofstraße",
+      "houseNumber": "4",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wehrheim",
+      "spotCount": 1,
+      "lat": 50.3034543,
+      "lng": 8.56910715,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1180786794), ODbL"
+    },
+    {
+      "id": "wehrheim-977e11a559",
+      "city": "wehrheim",
+      "label": "Dorfborngasse 1",
+      "street": "Dorfborngasse",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wehrheim",
+      "spotCount": 1,
+      "lat": 50.3034261,
+      "lng": 8.569303600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1180786802), ODbL"
+    }
+  ]
+}

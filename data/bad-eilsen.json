@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bad-eilsen",
+    "name": "Bad Eilsen",
+    "center": {
+      "lat": 52.243911700000005,
+      "lng": 9.1070928
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-eilsen-f0da095a04",
+      "city": "bad-eilsen",
+      "label": "EDEKA Bolinger",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Eilsen",
+      "spotCount": 1,
+      "lat": 52.239570050000005,
+      "lng": 9.1070928,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/45071965), ODbL"
+    },
+    {
+      "id": "bad-eilsen-75f4311fb8",
+      "city": "bad-eilsen",
+      "label": "Kurzparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Eilsen",
+      "spotCount": 1,
+      "lat": 52.243911700000005,
+      "lng": 9.102062100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/45071962), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "lautenbach",
+    "name": "Lautenbach",
+    "center": {
+      "lat": 48.5193479,
+      "lng": 8.116933500000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lautenbach-9ec1b29d40",
+      "city": "lautenbach",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lautenbach",
+      "spotCount": 1,
+      "lat": 48.5193479,
+      "lng": 8.116503250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/851758057), ODbL"
+    },
+    {
+      "id": "lautenbach-8bc4d0b6dc",
+      "city": "lautenbach",
+      "label": "Bahnhofstraße 1",
+      "street": "Bahnhofstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lautenbach",
+      "spotCount": 1,
+      "lat": 48.51902975,
+      "lng": 8.116933500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/82513091), ODbL"
+    }
+  ]
+}

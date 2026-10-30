@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lauben",
+    "name": "Lauben",
+    "center": {
+      "lat": 47.78108225,
+      "lng": 10.3110341
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lauben-12e36d4dd9",
+      "city": "lauben",
+      "label": "Sportplatzstraße 13",
+      "street": "Sportplatzstraße",
+      "houseNumber": "13",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lauben",
+      "spotCount": 1,
+      "lat": 47.78108225,
+      "lng": 10.3110341,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/169457089), ODbL"
+    }
+  ]
+}

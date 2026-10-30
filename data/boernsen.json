@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "boernsen",
+    "name": "Börnsen",
+    "center": {
+      "lat": 53.48775450000001,
+      "lng": 10.28826205
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "boernsen-a04a7fc25e",
+      "city": "boernsen",
+      "label": "Am Bornbusch",
+      "street": "Am Bornbusch",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Börnsen",
+      "spotCount": 1,
+      "lat": 53.48775450000001,
+      "lng": 10.287029500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/115838917), ODbL"
+    },
+    {
+      "id": "boernsen-7a7d34f77a",
+      "city": "boernsen",
+      "label": "Zwischen den Kreiseln",
+      "street": "Zwischen den Kreiseln",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Sa 08:00-20:00; PH off",
+      "district": "Börnsen",
+      "spotCount": 1,
+      "lat": 53.486575200000004,
+      "lng": 10.28826205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27489392), ODbL"
+    }
+  ]
+}

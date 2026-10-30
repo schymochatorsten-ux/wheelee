@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "oberammergau",
+    "name": "Oberammergau",
+    "center": {
+      "lat": 47.59697775000001,
+      "lng": 11.072870400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberammergau-8beeadb832",
+      "city": "oberammergau",
+      "label": "Armeseelenstraße",
+      "street": "Armeseelenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Oberammergau",
+      "spotCount": 1,
+      "lat": 47.586921200000006,
+      "lng": 11.072870400000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3792240843), ODbL"
+    },
+    {
+      "id": "oberammergau-d6e6cdd798",
+      "city": "oberammergau",
+      "label": "Eugen-Papst-Straße 9a",
+      "street": "Eugen-Papst-Straße",
+      "houseNumber": "9a",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oberammergau",
+      "spotCount": 1,
+      "lat": 47.59697775000001,
+      "lng": 11.062574650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1144974443), ODbL"
+    }
+  ]
+}

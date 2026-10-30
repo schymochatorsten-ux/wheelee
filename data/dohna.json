@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "dohna",
+    "name": "Dohna",
+    "center": {
+      "lat": 50.96275115,
+      "lng": 13.869932850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dohna-138ea0d144",
+      "city": "dohna",
+      "label": "Eppinger Straße 10",
+      "street": "Eppinger Straße",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dohna",
+      "spotCount": 5,
+      "lat": 50.96275115,
+      "lng": 13.869932850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1354420782), ODbL"
+    }
+  ]
+}

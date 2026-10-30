@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "naila",
+    "name": "Naila",
+    "center": {
+      "lat": 50.32378705000001,
+      "lng": 11.720949950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "naila-a109ffa9fc",
+      "city": "naila",
+      "label": "KlinikenHochfranken",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Naila",
+      "spotCount": 1,
+      "lat": 50.32378705000001,
+      "lng": 11.720949950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/178506193), ODbL"
+    }
+  ]
+}

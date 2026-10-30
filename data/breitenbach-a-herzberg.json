@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "breitenbach-a-herzberg",
+    "name": "Breitenbach a.Herzberg",
+    "center": {
+      "lat": 50.79292975,
+      "lng": 9.47334605
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "breitenbach-a-herzberg-f5c1293ca5",
+      "city": "breitenbach-a-herzberg",
+      "label": "Rimberg",
+      "street": "Rimberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Breitenbach a.Herzberg",
+      "spotCount": 2,
+      "lat": 50.79273930000001,
+      "lng": 9.472514450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1496028809), ODbL"
+    },
+    {
+      "id": "breitenbach-a-herzberg-ac9a945eac",
+      "city": "breitenbach-a-herzberg",
+      "label": "Rimberg",
+      "street": "Rimberg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Breitenbach a.Herzberg",
+      "spotCount": 1,
+      "lat": 50.79292975,
+      "lng": 9.473393000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1497186233), ODbL"
+    },
+    {
+      "id": "breitenbach-a-herzberg-654cf51fd3",
+      "city": "breitenbach-a-herzberg",
+      "label": "Rimberg",
+      "street": "Rimberg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Breitenbach a.Herzberg",
+      "spotCount": 1,
+      "lat": 50.79294215,
+      "lng": 9.47334605,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1497186234), ODbL"
+    }
+  ]
+}

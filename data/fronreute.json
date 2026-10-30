@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "fronreute",
+    "name": "Fronreute",
+    "center": {
+      "lat": 47.8640379,
+      "lng": 9.5881449
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "fronreute-16d2e99701",
+      "city": "fronreute",
+      "label": "Hauptstraße 18",
+      "street": "Hauptstraße",
+      "houseNumber": "18",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Fronreute",
+      "spotCount": 2,
+      "lat": 47.8640379,
+      "lng": 9.5881449,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1252264943), ODbL"
+    }
+  ]
+}

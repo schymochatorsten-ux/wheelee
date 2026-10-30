@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "tiefenbronn",
+    "name": "Tiefenbronn",
+    "center": {
+      "lat": 48.8057615,
+      "lng": 8.823263200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "tiefenbronn-fe5da45622",
+      "city": "tiefenbronn",
+      "label": "Kirchenstraße",
+      "street": "Kirchenstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Tiefenbronn",
+      "spotCount": 1,
+      "lat": 48.8057615,
+      "lng": 8.823263200000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11023224641), ODbL"
+    }
+  ]
+}

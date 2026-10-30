@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "am-mellensee",
+    "name": "Am Mellensee",
+    "center": {
+      "lat": 52.185524550000004,
+      "lng": 13.415131250000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "am-mellensee-f5ccf3ae2f",
+      "city": "am-mellensee",
+      "label": "Hauptstraße 17",
+      "street": "Hauptstraße",
+      "houseNumber": "17",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Am Mellensee",
+      "spotCount": 1,
+      "lat": 52.185524550000004,
+      "lng": 13.415131250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1211630961), ODbL"
+    }
+  ]
+}

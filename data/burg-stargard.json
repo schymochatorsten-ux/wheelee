@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "burg-stargard",
+    "name": "Burg Stargard",
+    "center": {
+      "lat": 53.496563,
+      "lng": 13.3222636
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "burg-stargard-f71edd56c7",
+      "city": "burg-stargard",
+      "label": "Dewitzer Chaussee 17",
+      "street": "Dewitzer Chaussee",
+      "houseNumber": "17",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burg Stargard",
+      "spotCount": 1,
+      "lat": 53.49421465,
+      "lng": 13.3222636,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1065746713), ODbL"
+    },
+    {
+      "id": "burg-stargard-1bccedaa92",
+      "city": "burg-stargard",
+      "label": "Papiermühlenweg",
+      "street": "Papiermühlenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burg Stargard",
+      "spotCount": 1,
+      "lat": 53.496563,
+      "lng": 13.3080842,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/177296010), ODbL"
+    }
+  ]
+}

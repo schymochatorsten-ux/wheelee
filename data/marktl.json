@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "marktl",
+    "name": "Marktl",
+    "center": {
+      "lat": 48.25637905000001,
+      "lng": 12.852150700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "marktl-fdffccf661",
+      "city": "marktl",
+      "label": "Simbacher Straße",
+      "street": "Simbacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Marktl",
+      "spotCount": 2,
+      "lat": 48.25637905000001,
+      "lng": 12.852150700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/452400507), ODbL"
+    }
+  ]
+}

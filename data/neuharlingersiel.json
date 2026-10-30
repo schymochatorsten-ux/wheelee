@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "neuharlingersiel",
+    "name": "Neuharlingersiel",
+    "center": {
+      "lat": 53.698812950000004,
+      "lng": 7.701033150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuharlingersiel-11b67a859f",
+      "city": "neuharlingersiel",
+      "label": "Addenhausen",
+      "street": "Addenhausen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Neuharlingersiel",
+      "spotCount": 1,
+      "lat": 53.7001161,
+      "lng": 7.701033150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25553983), ODbL"
+    },
+    {
+      "id": "neuharlingersiel-55599d0248",
+      "city": "neuharlingersiel",
+      "label": "Alt Addenhausen",
+      "street": "Alt Addenhausen",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neuharlingersiel",
+      "spotCount": 1,
+      "lat": 53.69591500000001,
+      "lng": 7.690589600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13942771483), ODbL"
+    },
+    {
+      "id": "neuharlingersiel-1fe17eb986",
+      "city": "neuharlingersiel",
+      "label": "Deichstrich",
+      "street": "Deichstrich",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuharlingersiel",
+      "spotCount": 2,
+      "lat": 53.690284250000005,
+      "lng": 7.6841999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1374820749), ODbL"
+    },
+    {
+      "id": "neuharlingersiel-d40f3ba099",
+      "city": "neuharlingersiel",
+      "label": "Fischerei Genossenschaft",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuharlingersiel",
+      "spotCount": 1,
+      "lat": 53.698812950000004,
+      "lng": 7.711802200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/587518534), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "arrach",
+    "name": "Arrach",
+    "center": {
+      "lat": 49.19866125,
+      "lng": 13.00798915
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "arrach-9b28fcce04",
+      "city": "arrach",
+      "label": "Edeka",
+      "street": "Edeka",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Arrach",
+      "spotCount": 1,
+      "lat": 49.19866125,
+      "lng": 13.004620000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/255010852), ODbL"
+    },
+    {
+      "id": "arrach-8d6a57a903",
+      "city": "arrach",
+      "label": "Regentalstraße",
+      "street": "Regentalstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Arrach",
+      "spotCount": 1,
+      "lat": 49.197005850000004,
+      "lng": 13.00798915,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/196375899), ODbL"
+    }
+  ]
+}

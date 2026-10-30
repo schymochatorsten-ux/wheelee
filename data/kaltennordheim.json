@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kaltennordheim",
+    "name": "Kaltennordheim",
+    "center": {
+      "lat": 50.626290350000005,
+      "lng": 10.15885085
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kaltennordheim-6714fc7dfc",
+      "city": "kaltennordheim",
+      "label": "Neumarkt 9",
+      "street": "Neumarkt",
+      "houseNumber": "9",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kaltennordheim",
+      "spotCount": 1,
+      "lat": 50.626290350000005,
+      "lng": 10.15885085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1018226759), ODbL"
+    }
+  ]
+}

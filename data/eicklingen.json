@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "eicklingen",
+    "name": "Eicklingen",
+    "center": {
+      "lat": 52.557125500000005,
+      "lng": 10.1846578
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eicklingen-66ad0af116",
+      "city": "eicklingen",
+      "label": "Mühlenweg 60",
+      "street": "Mühlenweg",
+      "houseNumber": "60",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eicklingen",
+      "spotCount": 1,
+      "lat": 52.557125500000005,
+      "lng": 10.1846578,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11395161089), ODbL"
+    }
+  ]
+}

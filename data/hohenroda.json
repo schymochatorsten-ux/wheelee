@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "hohenroda",
+    "name": "Hohenroda",
+    "center": {
+      "lat": 50.80942095,
+      "lng": 9.8995502
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hohenroda-c7edd89101",
+      "city": "hohenroda",
+      "label": "Am Buegel-Ferienhaus",
+      "street": "Am Buegel-Ferienhaus",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hohenroda",
+      "spotCount": 1,
+      "lat": 50.8095816,
+      "lng": 9.899595350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1419732150), ODbL"
+    },
+    {
+      "id": "hohenroda-ac8d69eba4",
+      "city": "hohenroda",
+      "label": "Am Buegel-Ferienhaus",
+      "street": "Am Buegel-Ferienhaus",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hohenroda",
+      "spotCount": 1,
+      "lat": 50.80955675,
+      "lng": 9.8995502,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1419732151), ODbL"
+    },
+    {
+      "id": "hohenroda-4f56d00266",
+      "city": "hohenroda",
+      "label": "Am Buegel-Ferienhaus",
+      "street": "Am Buegel-Ferienhaus",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hohenroda",
+      "spotCount": 1,
+      "lat": 50.80942095,
+      "lng": 9.89937355,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1419732152), ODbL"
+    },
+    {
+      "id": "hohenroda-3f349cd8c3",
+      "city": "hohenroda",
+      "label": "Am Buegel-Ferienhaus",
+      "street": "Am Buegel-Ferienhaus",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hohenroda",
+      "spotCount": 4,
+      "lat": 50.809539650000005,
+      "lng": 9.899531150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1419732154), ODbL"
+    },
+    {
+      "id": "hohenroda-ee013b8f22",
+      "city": "hohenroda",
+      "label": "Baumgarten 1a",
+      "street": "Baumgarten",
+      "houseNumber": "1a",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hohenroda",
+      "spotCount": 1,
+      "lat": 50.805722,
+      "lng": 9.92042,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1417923643), ODbL"
+    },
+    {
+      "id": "hohenroda-faecc4f337",
+      "city": "hohenroda",
+      "label": "Behindertenparkplatz Hohenroda",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hohenroda",
+      "spotCount": 1,
+      "lat": 50.80938870000001,
+      "lng": 9.899338,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1419732153), ODbL"
+    },
+    {
+      "id": "hohenroda-58c5205e67",
+      "city": "hohenroda",
+      "label": "Dorfwiese 19",
+      "street": "Dorfwiese",
+      "houseNumber": "19",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hohenroda",
+      "spotCount": 1,
+      "lat": 50.78448695,
+      "lng": 9.912563200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1468024843), ODbL"
+    }
+  ]
+}

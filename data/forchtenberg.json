@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "forchtenberg",
+    "name": "Forchtenberg",
+    "center": {
+      "lat": 49.31656120000001,
+      "lng": 9.560984300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "forchtenberg-11e5810afb",
+      "city": "forchtenberg",
+      "label": "Tiroler-Seen-Weg",
+      "street": "Tiroler-Seen-Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Forchtenberg",
+      "spotCount": 1,
+      "lat": 49.31656120000001,
+      "lng": 9.560984300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1532643608), ODbL"
+    }
+  ]
+}

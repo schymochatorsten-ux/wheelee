@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "rammenau",
+    "name": "Rammenau",
+    "center": {
+      "lat": 51.159527250000004,
+      "lng": 14.12957405
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rammenau-6708d7e335",
+      "city": "rammenau",
+      "label": "Johann-Gottlieb-Fichte-Straße",
+      "street": "Johann-Gottlieb-Fichte-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Rammenau",
+      "spotCount": 3,
+      "lat": 51.15926425000001,
+      "lng": 14.1294596,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/36997401), ODbL"
+    },
+    {
+      "id": "rammenau-30bcfdc257",
+      "city": "rammenau",
+      "label": "Johann-Gottlieb-Fichte-Straße",
+      "street": "Johann-Gottlieb-Fichte-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Rammenau",
+      "spotCount": 1,
+      "lat": 51.159527250000004,
+      "lng": 14.1297764,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/230239825), ODbL"
+    },
+    {
+      "id": "rammenau-cbd345f920",
+      "city": "rammenau",
+      "label": "Johann-Gottlieb-Fichte-Straße",
+      "street": "Johann-Gottlieb-Fichte-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Rammenau",
+      "spotCount": 1,
+      "lat": 51.15957135,
+      "lng": 14.12957405,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/230239826), ODbL"
+    }
+  ]
+}

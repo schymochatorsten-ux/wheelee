@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "teublitz",
+    "name": "Teublitz",
+    "center": {
+      "lat": 49.229857800000005,
+      "lng": 12.0853161
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "teublitz-7a57e76146",
+      "city": "teublitz",
+      "label": "Am Wildpark",
+      "street": "Am Wildpark",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Teublitz",
+      "spotCount": 1,
+      "lat": 49.234241000000004,
+      "lng": 12.086927000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11987408943), ODbL"
+    },
+    {
+      "id": "teublitz-71f7c663d8",
+      "city": "teublitz",
+      "label": "Platz der Freiheit",
+      "street": "Platz der Freiheit",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Teublitz",
+      "spotCount": 1,
+      "lat": 49.2215295,
+      "lng": 12.0853161,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/53740675), ODbL"
+    },
+    {
+      "id": "teublitz-a9488a64c8",
+      "city": "teublitz",
+      "label": "Rötlsteinstraße",
+      "street": "Rötlsteinstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Teublitz",
+      "spotCount": 2,
+      "lat": 49.229857800000005,
+      "lng": 12.08149465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/910855025), ODbL"
+    }
+  ]
+}

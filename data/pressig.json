@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "pressig",
+    "name": "Pressig",
+    "center": {
+      "lat": 50.3458861,
+      "lng": 11.311166
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pressig-1b23c41880",
+      "city": "pressig",
+      "label": "Hauptstraße 10",
+      "street": "Hauptstraße",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pressig",
+      "spotCount": 1,
+      "lat": 50.3458861,
+      "lng": 11.311166,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/728836697), ODbL"
+    }
+  ]
+}

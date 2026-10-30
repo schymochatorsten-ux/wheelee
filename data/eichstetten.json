@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "eichstetten",
+    "name": "Eichstetten am Kaiserstuhl",
+    "center": {
+      "lat": 48.0926265,
+      "lng": 7.747373550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eichstetten-81c90f7543",
+      "city": "eichstetten",
+      "label": "Parkplatz Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Eichstetten am Kaiserstuhl",
+      "spotCount": 2,
+      "lat": 48.0926265,
+      "lng": 7.747373550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/59604117), ODbL"
+    }
+  ]
+}

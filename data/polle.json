@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "polle",
+    "name": "Polle",
+    "center": {
+      "lat": 51.883057300000004,
+      "lng": 9.349273400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "polle-b44384ace8",
+      "city": "polle",
+      "label": "Weißenfeld 2",
+      "street": "Weißenfeld",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Polle",
+      "spotCount": 1,
+      "lat": 51.883057300000004,
+      "lng": 9.349273400000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9752054850), ODbL"
+    }
+  ]
+}

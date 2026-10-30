@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "haertlingen",
+    "name": "Härtlingen",
+    "center": {
+      "lat": 50.539273550000004,
+      "lng": 7.91767085
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "haertlingen-de85043d47",
+      "city": "haertlingen",
+      "label": "Schulstraße",
+      "street": "Schulstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Härtlingen",
+      "spotCount": 1,
+      "lat": 50.539273550000004,
+      "lng": 7.91767085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/474788068), ODbL"
+    }
+  ]
+}

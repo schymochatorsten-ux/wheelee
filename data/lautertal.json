@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "lautertal",
+    "name": "Lautertal (Odenwald)",
+    "center": {
+      "lat": 49.7116132,
+      "lng": 8.69619345
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lautertal-ebfbb9ed05",
+      "city": "lautertal",
+      "label": "Knodener Straße 2",
+      "street": "Knodener Straße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lautertal (Odenwald)",
+      "spotCount": 4,
+      "lat": 49.7116132,
+      "lng": 8.69606245,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1413154606), ODbL"
+    },
+    {
+      "id": "lautertal-668d291e3a",
+      "city": "lautertal",
+      "label": "Knodener Straße 3",
+      "street": "Knodener Straße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lautertal (Odenwald)",
+      "spotCount": 4,
+      "lat": 49.711543750000004,
+      "lng": 8.69619345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1413154607), ODbL"
+    }
+  ]
+}

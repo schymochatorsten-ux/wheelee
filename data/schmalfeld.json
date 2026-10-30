@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schmalfeld",
+    "name": "Schmalfeld",
+    "center": {
+      "lat": 53.87979365,
+      "lng": 9.98238465
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schmalfeld-e9b196fc76",
+      "city": "schmalfeld",
+      "label": "Familienparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schmalfeld",
+      "spotCount": 1,
+      "lat": 53.87979365,
+      "lng": 9.98238465,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1086253618), ODbL"
+    }
+  ]
+}

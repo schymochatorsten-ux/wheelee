@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "hirrlingen",
+    "name": "Hirrlingen",
+    "center": {
+      "lat": 48.410576000000006,
+      "lng": 8.887589850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hirrlingen-7d4109f4ff",
+      "city": "hirrlingen",
+      "label": "Hirschstraße",
+      "street": "Hirschstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hirrlingen",
+      "spotCount": 1,
+      "lat": 48.41054025,
+      "lng": 8.8880558,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/50636392), ODbL"
+    },
+    {
+      "id": "hirrlingen-0fed0a7f72",
+      "city": "hirrlingen",
+      "label": "Marktstraße 5",
+      "street": "Marktstraße",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hirrlingen",
+      "spotCount": 1,
+      "lat": 48.410576000000006,
+      "lng": 8.887589850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1394798641), ODbL"
+    },
+    {
+      "id": "hirrlingen-2843a9a4d3",
+      "city": "hirrlingen",
+      "label": "Schloßhof 4",
+      "street": "Schloßhof",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hirrlingen",
+      "spotCount": 1,
+      "lat": 48.4109227,
+      "lng": 8.8866731,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/37654676), ODbL"
+    }
+  ]
+}

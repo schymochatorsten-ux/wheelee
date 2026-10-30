@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bad-endbach",
+    "name": "Bad Endbach",
+    "center": {
+      "lat": 50.75574025,
+      "lng": 8.482020349999999
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-endbach-673f9414f0",
+      "city": "bad-endbach",
+      "label": "Am Bewegungsbad",
+      "street": "Am Bewegungsbad",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Bad Endbach",
+      "spotCount": 2,
+      "lat": 50.7564067,
+      "lng": 8.48135735,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/255570951), ODbL"
+    },
+    {
+      "id": "bad-endbach-c35de0a8fb",
+      "city": "bad-endbach",
+      "label": "Parkplatz Kur- und Bürgerhaus",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Bad Endbach",
+      "spotCount": 1,
+      "lat": 50.75246055000001,
+      "lng": 8.4951154,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/283424943), ODbL"
+    },
+    {
+      "id": "bad-endbach-ffc0420df1",
+      "city": "bad-endbach",
+      "label": "Parkplatz Therme",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Endbach",
+      "spotCount": 1,
+      "lat": 50.75574025,
+      "lng": 8.482020349999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/53084382), ODbL"
+    }
+  ]
+}

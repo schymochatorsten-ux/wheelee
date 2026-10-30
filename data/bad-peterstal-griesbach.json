@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bad-peterstal-griesbach",
+    "name": "Bad Peterstal-Griesbach",
+    "center": {
+      "lat": 48.428452050000004,
+      "lng": 8.2019296
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-peterstal-griesbach-5b331dfd06",
+      "city": "bad-peterstal-griesbach",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Peterstal-Griesbach",
+      "spotCount": 1,
+      "lat": 48.42836055,
+      "lng": 8.2014735,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1392358567), ODbL"
+    },
+    {
+      "id": "bad-peterstal-griesbach-7e200ad458",
+      "city": "bad-peterstal-griesbach",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Bad Peterstal-Griesbach",
+      "spotCount": 1,
+      "lat": 48.428452050000004,
+      "lng": 8.2019296,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1500334684), ODbL"
+    }
+  ]
+}

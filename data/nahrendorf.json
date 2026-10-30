@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "nahrendorf",
+    "name": "Nahrendorf",
+    "center": {
+      "lat": 53.171485450000006,
+      "lng": 10.81963595
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nahrendorf-8dceaa2f53",
+      "city": "nahrendorf",
+      "label": "Friedhofsparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nahrendorf",
+      "spotCount": 1,
+      "lat": 53.171485450000006,
+      "lng": 10.81963595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/183193975), ODbL"
+    }
+  ]
+}

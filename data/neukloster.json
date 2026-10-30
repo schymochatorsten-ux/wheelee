@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "neukloster",
+    "name": "Neukloster",
+    "center": {
+      "lat": 53.87001145000001,
+      "lng": 11.6928739
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neukloster-93e1be9137",
+      "city": "neukloster",
+      "label": "Hopfenbachstraße",
+      "street": "Hopfenbachstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neukloster",
+      "spotCount": 1,
+      "lat": 53.87001145000001,
+      "lng": 11.6928739,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/450670906), ODbL"
+    }
+  ]
+}

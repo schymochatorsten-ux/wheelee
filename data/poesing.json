@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "poesing",
+    "name": "Pösing",
+    "center": {
+      "lat": 49.229270400000004,
+      "lng": 12.54228265
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "poesing-59ffe4f0d4",
+      "city": "poesing",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Pösing",
+      "spotCount": 1,
+      "lat": 49.229270400000004,
+      "lng": 12.54228265,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/449683340), ODbL"
+    }
+  ]
+}

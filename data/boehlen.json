@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "boehlen",
+    "name": "Böhlen",
+    "center": {
+      "lat": 51.204369050000004,
+      "lng": 12.38689815
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "boehlen-166492d946",
+      "city": "boehlen",
+      "label": "Kulturhaus Böhlen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Böhlen",
+      "spotCount": 2,
+      "lat": 51.20777435000001,
+      "lng": 12.3875577,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35005218), ODbL"
+    },
+    {
+      "id": "boehlen-5b05235b95",
+      "city": "boehlen",
+      "label": "Parkweg",
+      "street": "Parkweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Böhlen",
+      "spotCount": 2,
+      "lat": 51.204369050000004,
+      "lng": 12.385649,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1415328822), ODbL"
+    },
+    {
+      "id": "boehlen-994680430a",
+      "city": "boehlen",
+      "label": "Wilhelm-Wander-Straße",
+      "street": "Wilhelm-Wander-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Böhlen",
+      "spotCount": 2,
+      "lat": 51.1989837,
+      "lng": 12.38689815,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1415328525), ODbL"
+    }
+  ]
+}

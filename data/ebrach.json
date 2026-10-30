@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "ebrach",
+    "name": "Ebrach",
+    "center": {
+      "lat": 49.848298650000004,
+      "lng": 10.467454750000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ebrach-999999768c",
+      "city": "ebrach",
+      "label": "Behindertenparkplatz Ebrach",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ebrach",
+      "spotCount": 6,
+      "lat": 49.84825825,
+      "lng": 10.46694115,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/710355660), ODbL"
+    },
+    {
+      "id": "ebrach-12655f1719",
+      "city": "ebrach",
+      "label": "Radstein",
+      "street": "Radstein",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ebrach",
+      "spotCount": 10,
+      "lat": 49.848298650000004,
+      "lng": 10.467454750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/710355661), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "wallhausen-st",
+    "name": "Wallhausen",
+    "center": {
+      "lat": 51.4527482,
+      "lng": 11.228307800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wallhausen-st-120bed8a6d",
+      "city": "wallhausen-st",
+      "label": "Helmetal",
+      "street": "Helmetal",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wallhausen",
+      "spotCount": 2,
+      "lat": 51.4514114,
+      "lng": 11.2280511,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1193945569), ODbL"
+    },
+    {
+      "id": "wallhausen-st-448eb1a8c7",
+      "city": "wallhausen-st",
+      "label": "Helmetal",
+      "street": "Helmetal",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wallhausen",
+      "spotCount": 2,
+      "lat": 51.4527482,
+      "lng": 11.228307800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1193957729), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "ellrich",
+    "name": "Ellrich",
+    "center": {
+      "lat": 51.63337250000001,
+      "lng": 10.722834
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ellrich-cb923e93ce",
+      "city": "ellrich",
+      "label": "Alte Straße",
+      "street": "Alte Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ellrich",
+      "spotCount": 1,
+      "lat": 51.63337250000001,
+      "lng": 10.722834,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1250879061), ODbL"
+    },
+    {
+      "id": "ellrich-ca85c897e8",
+      "city": "ellrich",
+      "label": "Alte-Nordhäuser-Straße",
+      "street": "Alte-Nordhäuser-Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ellrich",
+      "spotCount": 1,
+      "lat": 51.6327913,
+      "lng": 10.7222056,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12659505997), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "falkenberg-elster",
+    "name": "Falkenberg/Elster",
+    "center": {
+      "lat": 51.59424465000001,
+      "lng": 13.2598977
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "falkenberg-elster-66cc50c4c3",
+      "city": "falkenberg-elster",
+      "label": "Hörsteweg",
+      "street": "Hörsteweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Falkenberg/Elster",
+      "spotCount": 1,
+      "lat": 51.59424465000001,
+      "lng": 13.2598977,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/23236753), ODbL"
+    }
+  ]
+}

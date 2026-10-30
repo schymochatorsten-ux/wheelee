@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "ertingen",
+    "name": "Ertingen",
+    "center": {
+      "lat": 48.1047727,
+      "lng": 9.459585650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ertingen-397e4dd625",
+      "city": "ertingen",
+      "label": "Eisenbahnstraße",
+      "street": "Eisenbahnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ertingen",
+      "spotCount": 4,
+      "lat": 48.1047727,
+      "lng": 9.459585650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/298589912), ODbL"
+    },
+    {
+      "id": "ertingen-8a2307bf21",
+      "city": "ertingen",
+      "label": "Industriestraße",
+      "street": "Industriestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ertingen",
+      "spotCount": 5,
+      "lat": 48.103640150000004,
+      "lng": 9.459065950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/298935234), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "beratzhausen",
+    "name": "Beratzhausen",
+    "center": {
+      "lat": 49.095435550000005,
+      "lng": 11.809067500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "beratzhausen-71a9623624",
+      "city": "beratzhausen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Beratzhausen",
+      "spotCount": 2,
+      "lat": 49.0912537,
+      "lng": 11.8099895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/258700447), ODbL"
+    },
+    {
+      "id": "beratzhausen-bbe18dd7de",
+      "city": "beratzhausen",
+      "label": "Marktstraße 22",
+      "street": "Marktstraße",
+      "houseNumber": "22",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Beratzhausen",
+      "spotCount": 1,
+      "lat": 49.095809100000004,
+      "lng": 11.807744450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/297939049), ODbL"
+    },
+    {
+      "id": "beratzhausen-66b3f259bc",
+      "city": "beratzhausen",
+      "label": "Marktstraße 7",
+      "street": "Marktstraße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Beratzhausen",
+      "spotCount": 1,
+      "lat": 49.09539115,
+      "lng": 11.809067500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/297939048), ODbL"
+    },
+    {
+      "id": "beratzhausen-b4301634c4",
+      "city": "beratzhausen",
+      "label": "Mausheim 100",
+      "street": "Mausheim 100",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Beratzhausen",
+      "spotCount": 1,
+      "lat": 49.121076450000004,
+      "lng": 11.76640875,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/480863641), ODbL"
+    },
+    {
+      "id": "beratzhausen-2537921d18",
+      "city": "beratzhausen",
+      "label": "Mühlenstraße",
+      "street": "Mühlenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Beratzhausen",
+      "spotCount": 1,
+      "lat": 49.095435550000005,
+      "lng": 11.8107513,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/127677410), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hammersbach",
+    "name": "Hammersbach",
+    "center": {
+      "lat": 50.249894700000006,
+      "lng": 8.99660405
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hammersbach-b0c8b1f225",
+      "city": "hammersbach",
+      "label": "Friedhofstraße 2a",
+      "street": "Friedhofstraße",
+      "houseNumber": "2a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Hammersbach",
+      "spotCount": 1,
+      "lat": 50.236677,
+      "lng": 8.99660405,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/524168524), ODbL"
+    },
+    {
+      "id": "hammersbach-236073e124",
+      "city": "hammersbach",
+      "label": "Langen-Bergheim Ost",
+      "street": "Langen-Bergheim Ost",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hammersbach",
+      "spotCount": 1,
+      "lat": 50.249894700000006,
+      "lng": 8.9947665,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10656730214), ODbL"
+    }
+  ]
+}

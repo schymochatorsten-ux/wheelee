@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "mietingen",
+    "name": "Mietingen",
+    "center": {
+      "lat": 48.17528110000001,
+      "lng": 9.8658194
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mietingen-25828260df",
+      "city": "mietingen",
+      "label": "Schulstraße",
+      "street": "Schulstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mietingen",
+      "spotCount": 2,
+      "lat": 48.17528110000001,
+      "lng": 9.8658194,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/812838741), ODbL"
+    }
+  ]
+}

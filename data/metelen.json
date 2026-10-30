@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "metelen",
+    "name": "Metelen",
+    "center": {
+      "lat": 52.142590350000006,
+      "lng": 7.210507100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "metelen-122c2f9a11",
+      "city": "metelen",
+      "label": "Kattenkolk 10",
+      "street": "Kattenkolk",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Metelen",
+      "spotCount": 1,
+      "lat": 52.142590350000006,
+      "lng": 7.210507100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1562178216), ODbL"
+    }
+  ]
+}

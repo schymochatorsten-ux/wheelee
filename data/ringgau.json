@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "ringgau",
+    "name": "Ringgau",
+    "center": {
+      "lat": 51.11803065,
+      "lng": 10.0320623
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ringgau-56181bc6bb",
+      "city": "ringgau",
+      "label": "Leipziger Straße 40",
+      "street": "Leipziger Straße",
+      "houseNumber": "40",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ringgau",
+      "spotCount": 1,
+      "lat": 51.11803065,
+      "lng": 10.031991300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1462677497), ODbL"
+    },
+    {
+      "id": "ringgau-76b8786f4f",
+      "city": "ringgau",
+      "label": "Leipziger Straße 40",
+      "street": "Leipziger Straße",
+      "houseNumber": "40",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ringgau",
+      "spotCount": 1,
+      "lat": 51.118020550000004,
+      "lng": 10.0320623,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1462677510), ODbL"
+    }
+  ]
+}

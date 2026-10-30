@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "geyer",
+    "name": "Geyer",
+    "center": {
+      "lat": 50.625296000000006,
+      "lng": 12.92581305
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "geyer-8bf07266c5",
+      "city": "geyer",
+      "label": "Braustraße",
+      "street": "Braustraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Geyer",
+      "spotCount": 2,
+      "lat": 50.62262935,
+      "lng": 12.9234294,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/304099454), ODbL"
+    },
+    {
+      "id": "geyer-ea9ef32d85",
+      "city": "geyer",
+      "label": "Ehrenfriedersdorfer Straße",
+      "street": "Ehrenfriedersdorfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Geyer",
+      "spotCount": 1,
+      "lat": 50.6252544,
+      "lng": 12.92581305,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1331719402), ODbL"
+    },
+    {
+      "id": "geyer-3c7fbae50d",
+      "city": "geyer",
+      "label": "Lindenstraße",
+      "street": "Lindenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Geyer",
+      "spotCount": 1,
+      "lat": 50.625296000000006,
+      "lng": 12.92595935,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1331719401), ODbL"
+    },
+    {
+      "id": "geyer-831a6bf635",
+      "city": "geyer",
+      "label": "Thumer Straße",
+      "street": "Thumer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Geyer",
+      "spotCount": 9,
+      "lat": 50.6466174,
+      "lng": 12.916139350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/41926983), ODbL"
+    }
+  ]
+}

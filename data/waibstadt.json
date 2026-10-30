@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "waibstadt",
+    "name": "Waibstadt",
+    "center": {
+      "lat": 49.2979112,
+      "lng": 8.9213533
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "waibstadt-dcd55040e8",
+      "city": "waibstadt",
+      "label": "Dammstraße 11",
+      "street": "Dammstraße",
+      "houseNumber": "11",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Su 06:00-22:00",
+      "district": "Waibstadt",
+      "spotCount": 2,
+      "lat": 49.2979112,
+      "lng": 8.9213533,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/2476314127), ODbL"
+    },
+    {
+      "id": "waibstadt-82c6857fa9",
+      "city": "waibstadt",
+      "label": "Dammstraße 13",
+      "street": "Dammstraße",
+      "houseNumber": "13",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waibstadt",
+      "spotCount": 2,
+      "lat": 49.29768180000001,
+      "lng": 8.921519750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/239847621), ODbL"
+    },
+    {
+      "id": "waibstadt-4ea885990c",
+      "city": "waibstadt",
+      "label": "Pfarrstraße 1",
+      "street": "Pfarrstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waibstadt",
+      "spotCount": 1,
+      "lat": 49.29740125,
+      "lng": 8.92078935,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/239847629), ODbL"
+    },
+    {
+      "id": "waibstadt-213a72db42",
+      "city": "waibstadt",
+      "label": "Waibstadt, Bahnhof",
+      "street": "Waibstadt, Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Waibstadt",
+      "spotCount": 1,
+      "lat": 49.300893900000005,
+      "lng": 8.9187844,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1314868253), ODbL"
+    }
+  ]
+}

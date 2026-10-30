@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "wangen-bw",
+    "name": "Wangen",
+    "center": {
+      "lat": 48.729961100000004,
+      "lng": 9.60892405
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wangen-bw-0daa08cbda",
+      "city": "wangen-bw",
+      "label": "Blumenstraße 22",
+      "street": "Blumenstraße",
+      "houseNumber": "22",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wangen",
+      "spotCount": 1,
+      "lat": 48.7311491,
+      "lng": 9.60892405,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1177888095), ODbL"
+    },
+    {
+      "id": "wangen-bw-13019e9ae8",
+      "city": "wangen-bw",
+      "label": "Dölle 23",
+      "street": "Dölle",
+      "houseNumber": "23",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wangen",
+      "spotCount": 1,
+      "lat": 48.727322300000004,
+      "lng": 9.610397850000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1413794061), ODbL"
+    },
+    {
+      "id": "wangen-bw-5dc6555dbe",
+      "city": "wangen-bw",
+      "label": "Pfarrberg 2",
+      "street": "Pfarrberg",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wangen",
+      "spotCount": 1,
+      "lat": 48.729824400000005,
+      "lng": 9.6116147,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1415631096), ODbL"
+    },
+    {
+      "id": "wangen-bw-a67a774fdd",
+      "city": "wangen-bw",
+      "label": "Schorndorfer Straße",
+      "street": "Schorndorfer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wangen",
+      "spotCount": 1,
+      "lat": 48.729961100000004,
+      "lng": 9.6033302,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10994497667), ODbL"
+    },
+    {
+      "id": "wangen-bw-9a8b66b00c",
+      "city": "wangen-bw",
+      "label": "Schorndorfer Straße",
+      "street": "Schorndorfer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wangen",
+      "spotCount": 1,
+      "lat": 48.730154000000006,
+      "lng": 9.6027667,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14246136244), ODbL"
+    },
+    {
+      "id": "wangen-bw-69b8bae2f0",
+      "city": "wangen-bw",
+      "label": "Schorndorfer Straße",
+      "street": "Schorndorfer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wangen",
+      "spotCount": 1,
+      "lat": 48.7302143,
+      "lng": 9.60270645,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1413480916), ODbL"
+    },
+    {
+      "id": "wangen-bw-836c6e46f1",
+      "city": "wangen-bw",
+      "label": "Siemensstraße 10",
+      "street": "Siemensstraße",
+      "houseNumber": "10",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wangen",
+      "spotCount": 1,
+      "lat": 48.7184126,
+      "lng": 9.610910500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10994497669), ODbL"
+    }
+  ]
+}

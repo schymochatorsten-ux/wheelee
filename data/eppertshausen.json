@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "eppertshausen",
+    "name": "Eppertshausen",
+    "center": {
+      "lat": 49.95027185000001,
+      "lng": 8.83351335
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eppertshausen-7281aa1036",
+      "city": "eppertshausen",
+      "label": "Röntgenstraße 2",
+      "street": "Röntgenstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Eppertshausen",
+      "spotCount": 1,
+      "lat": 49.95027185000001,
+      "lng": 8.83351335,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/220361769), ODbL"
+    }
+  ]
+}

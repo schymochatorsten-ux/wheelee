@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "nufringen",
+    "name": "Nufringen",
+    "center": {
+      "lat": 48.615137600000004,
+      "lng": 8.90386705
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nufringen-be78036b62",
+      "city": "nufringen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nufringen",
+      "spotCount": 3,
+      "lat": 48.62103435,
+      "lng": 8.890946200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1416060774), ODbL"
+    },
+    {
+      "id": "nufringen-50c713f524",
+      "city": "nufringen",
+      "label": "Hauptstraße 28",
+      "street": "Hauptstraße",
+      "houseNumber": "28",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nufringen",
+      "spotCount": 1,
+      "lat": 48.6230545,
+      "lng": 8.8912104,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13479192336), ODbL"
+    },
+    {
+      "id": "nufringen-2e8a486d71",
+      "city": "nufringen",
+      "label": "Rasthof Schönbuch-West",
+      "street": "Rasthof Schönbuch-West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nufringen",
+      "spotCount": 3,
+      "lat": 48.61438495,
+      "lng": 8.903795200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/289929416), ODbL"
+    },
+    {
+      "id": "nufringen-8e035a2f9a",
+      "city": "nufringen",
+      "label": "Rasthof Schönbuch-West",
+      "street": "Rasthof Schönbuch-West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nufringen",
+      "spotCount": 1,
+      "lat": 48.615137600000004,
+      "lng": 8.90392765,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1364104092), ODbL"
+    },
+    {
+      "id": "nufringen-0688e0b07a",
+      "city": "nufringen",
+      "label": "Rasthof Schönbuch-West",
+      "street": "Rasthof Schönbuch-West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nufringen",
+      "spotCount": 1,
+      "lat": 48.615114750000004,
+      "lng": 8.903897350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1364104093), ODbL"
+    },
+    {
+      "id": "nufringen-5a7e8e4c95",
+      "city": "nufringen",
+      "label": "Rasthof Schönbuch-West",
+      "street": "Rasthof Schönbuch-West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Nufringen",
+      "spotCount": 1,
+      "lat": 48.6150916,
+      "lng": 8.90386705,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1364104094), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "rheurdt",
+    "name": "Rheurdt",
+    "center": {
+      "lat": 51.46798080000001,
+      "lng": 6.468640350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rheurdt-f482248610",
+      "city": "rheurdt",
+      "label": "Aldekerker Straße",
+      "street": "Aldekerker Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rheurdt",
+      "spotCount": 1,
+      "lat": 51.46798580000001,
+      "lng": 6.4684933000000004,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1139157390), ODbL"
+    },
+    {
+      "id": "rheurdt-d5bc44f94a",
+      "city": "rheurdt",
+      "label": "Aldekerker Straße",
+      "street": "Aldekerker Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rheurdt",
+      "spotCount": 1,
+      "lat": 51.46798080000001,
+      "lng": 6.4684416,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1139157391), ODbL"
+    },
+    {
+      "id": "rheurdt-72c8d6fd23",
+      "city": "rheurdt",
+      "label": "Bürgermeister-Beelen-Platz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rheurdt",
+      "spotCount": 2,
+      "lat": 51.4418338,
+      "lng": 6.48613115,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/30911309), ODbL"
+    },
+    {
+      "id": "rheurdt-57ceca2c2c",
+      "city": "rheurdt",
+      "label": "Rastplatz Neufelder Heide (Nord)",
+      "street": "Rastplatz Neufelder Heide (Nord)",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rheurdt",
+      "spotCount": 2,
+      "lat": 51.4241878,
+      "lng": 6.4984498,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1503420754), ODbL"
+    },
+    {
+      "id": "rheurdt-8b294cb687",
+      "city": "rheurdt",
+      "label": "Rathausstraße",
+      "street": "Rathausstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rheurdt",
+      "spotCount": 2,
+      "lat": 51.4680419,
+      "lng": 6.468640350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1139157359), ODbL"
+    }
+  ]
+}

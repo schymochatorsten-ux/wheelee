@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "grosselfingen",
+    "name": "Grosselfingen",
+    "center": {
+      "lat": 48.328242350000004,
+      "lng": 8.89251225
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grosselfingen-a7b78822c6",
+      "city": "grosselfingen",
+      "label": "Bisinger Straße 14",
+      "street": "Bisinger Straße",
+      "houseNumber": "14",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grosselfingen",
+      "spotCount": 2,
+      "lat": 48.328242350000004,
+      "lng": 8.89251225,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1448407409), ODbL"
+    }
+  ]
+}

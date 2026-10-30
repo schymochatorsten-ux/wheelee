@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hoernum",
+    "name": "Hörnum (Sylt)",
+    "center": {
+      "lat": 54.770170300000004,
+      "lng": 8.2853152
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hoernum-12ce182a81",
+      "city": "hoernum",
+      "label": "Gurtdeel 10",
+      "street": "Gurtdeel",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hörnum (Sylt)",
+      "spotCount": 1,
+      "lat": 54.770170300000004,
+      "lng": 8.2853152,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1090970239), ODbL"
+    },
+    {
+      "id": "hoernum-92aa7a1ded",
+      "city": "hoernum",
+      "label": "Strandweg",
+      "street": "Strandweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hörnum (Sylt)",
+      "spotCount": 2,
+      "lat": 54.75821845,
+      "lng": 8.2818711,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/534502612), ODbL"
+    }
+  ]
+}

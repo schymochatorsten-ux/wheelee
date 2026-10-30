@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "weikersheim",
+    "name": "Weikersheim",
+    "center": {
+      "lat": 49.478740450000004,
+      "lng": 9.9053978
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "weikersheim-bad7b7649c",
+      "city": "weikersheim",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Weikersheim",
+      "spotCount": 2,
+      "lat": 49.478740450000004,
+      "lng": 9.905592,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1323184015), ODbL"
+    },
+    {
+      "id": "weikersheim-cb4a963df0",
+      "city": "weikersheim",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Weikersheim",
+      "spotCount": 2,
+      "lat": 49.478613100000004,
+      "lng": 9.9053978,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1416289451), ODbL"
+    },
+    {
+      "id": "weikersheim-01bd7a9f91",
+      "city": "weikersheim",
+      "label": "August-Laukhuff-Straße",
+      "street": "August-Laukhuff-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weikersheim",
+      "spotCount": 3,
+      "lat": 49.4845163,
+      "lng": 9.8968077,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/7552687792), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "gillenfeld",
+    "name": "Gillenfeld",
+    "center": {
+      "lat": 50.13332890000001,
+      "lng": 6.92783985
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gillenfeld-31da45b228",
+      "city": "gillenfeld",
+      "label": "Am Pulvermaar",
+      "street": "Am Pulvermaar",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Gillenfeld",
+      "spotCount": 4,
+      "lat": 50.13332890000001,
+      "lng": 6.92783985,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/660304216), ODbL"
+    }
+  ]
+}

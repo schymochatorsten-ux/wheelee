@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "herzberg-bb",
+    "name": "Herzberg (Elster)",
+    "center": {
+      "lat": 51.693546850000004,
+      "lng": 13.238121
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "herzberg-bb-5de945ab8f",
+      "city": "herzberg-bb",
+      "label": "Leipziger Straße",
+      "street": "Leipziger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herzberg (Elster)",
+      "spotCount": 2,
+      "lat": 51.69036415000001,
+      "lng": 13.223116650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/51360247), ODbL"
+    },
+    {
+      "id": "herzberg-bb-191014d709",
+      "city": "herzberg-bb",
+      "label": "Mauerstraße",
+      "street": "Mauerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herzberg (Elster)",
+      "spotCount": 2,
+      "lat": 51.693546850000004,
+      "lng": 13.238121,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/484786565), ODbL"
+    },
+    {
+      "id": "herzberg-bb-87947e4178",
+      "city": "herzberg-bb",
+      "label": "Neunaundorfer Straße",
+      "street": "Neunaundorfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herzberg (Elster)",
+      "spotCount": 1,
+      "lat": 51.695042150000006,
+      "lng": 13.26083825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28748676), ODbL"
+    },
+    {
+      "id": "herzberg-bb-9550774464",
+      "city": "herzberg-bb",
+      "label": "Parkplatz Bürgerzentrum",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herzberg (Elster)",
+      "spotCount": 2,
+      "lat": 51.69085750000001,
+      "lng": 13.231644250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/282123821), ODbL"
+    }
+  ]
+}

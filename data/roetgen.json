@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "roetgen",
+    "name": "Roetgen",
+    "center": {
+      "lat": 50.64746685,
+      "lng": 6.1924685
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "roetgen-51f3f6e493",
+      "city": "roetgen",
+      "label": "Mühlenstraße",
+      "street": "Mühlenstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Roetgen",
+      "spotCount": 1,
+      "lat": 50.646996300000005,
+      "lng": 6.184094900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/958935946), ODbL"
+    },
+    {
+      "id": "roetgen-9114a21d1a",
+      "city": "roetgen",
+      "label": "Rosentalstraße",
+      "street": "Rosentalstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Roetgen",
+      "spotCount": 2,
+      "lat": 50.64746685,
+      "lng": 6.1924685,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/722862170), ODbL"
+    }
+  ]
+}

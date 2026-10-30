@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "kranichfeld",
+    "name": "Kranichfeld",
+    "center": {
+      "lat": 50.8515795,
+      "lng": 11.1915717
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kranichfeld-a764ec1707",
+      "city": "kranichfeld",
+      "label": "Am Oberschloss",
+      "street": "Am Oberschloss",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kranichfeld",
+      "spotCount": 3,
+      "lat": 50.8515795,
+      "lng": 11.1915717,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/881299059), ODbL"
+    },
+    {
+      "id": "kranichfeld-8c1d2711d9",
+      "city": "kranichfeld",
+      "label": "Camping Freizeitpark Stausee Hohenfelden",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kranichfeld",
+      "spotCount": 2,
+      "lat": 50.87211155,
+      "lng": 11.17926265,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/594448427), ODbL"
+    },
+    {
+      "id": "kranichfeld-2d76646b18",
+      "city": "kranichfeld",
+      "label": "Lichttalsweg",
+      "street": "Lichttalsweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kranichfeld",
+      "spotCount": 2,
+      "lat": 50.847238700000005,
+      "lng": 11.194549300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/778310417), ODbL"
+    }
+  ]
+}

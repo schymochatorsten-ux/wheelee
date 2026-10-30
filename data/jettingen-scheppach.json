@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "jettingen-scheppach",
+    "name": "Jettingen-Scheppach",
+    "center": {
+      "lat": 48.411603150000005,
+      "lng": 10.435701350000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "jettingen-scheppach-715b63f015",
+      "city": "jettingen-scheppach",
+      "label": "Euro Rastpark Jettingen-Scheppach",
+      "street": "Euro Rastpark Jettingen-Scheppach",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Jettingen-Scheppach",
+      "spotCount": 1,
+      "lat": 48.411603150000005,
+      "lng": 10.4403837,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1303247754), ODbL"
+    },
+    {
+      "id": "jettingen-scheppach-ac60a9924c",
+      "city": "jettingen-scheppach",
+      "label": "Euro Rastpark Jettingen-Scheppach",
+      "street": "Euro Rastpark Jettingen-Scheppach",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Jettingen-Scheppach",
+      "spotCount": 1,
+      "lat": 48.412129500000006,
+      "lng": 10.440039650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1303247760), ODbL"
+    },
+    {
+      "id": "jettingen-scheppach-f96403f9fc",
+      "city": "jettingen-scheppach",
+      "label": "Messerschmittstraße",
+      "street": "Messerschmittstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jettingen-Scheppach",
+      "spotCount": 2,
+      "lat": 48.40834460000001,
+      "lng": 10.435701350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/196485849), ODbL"
+    },
+    {
+      "id": "jettingen-scheppach-8f2953a588",
+      "city": "jettingen-scheppach",
+      "label": "Rastanlage Burgauer See",
+      "street": "Rastanlage Burgauer See",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jettingen-Scheppach",
+      "spotCount": 3,
+      "lat": 48.41340495,
+      "lng": 10.4280102,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/665268580), ODbL"
+    },
+    {
+      "id": "jettingen-scheppach-78b02a5aab",
+      "city": "jettingen-scheppach",
+      "label": "Rastanlage Burgauer See",
+      "street": "Rastanlage Burgauer See",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jettingen-Scheppach",
+      "spotCount": 2,
+      "lat": 48.413618050000004,
+      "lng": 10.427741350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/983623531), ODbL"
+    },
+    {
+      "id": "jettingen-scheppach-ded117efbd",
+      "city": "jettingen-scheppach",
+      "label": "Siemensstraße",
+      "street": "Siemensstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jettingen-Scheppach",
+      "spotCount": 4,
+      "lat": 48.40910960000001,
+      "lng": 10.4353248,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/196485851), ODbL"
+    },
+    {
+      "id": "jettingen-scheppach-3a412ceb2b",
+      "city": "jettingen-scheppach",
+      "label": "Siemensstraße",
+      "street": "Siemensstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Jettingen-Scheppach",
+      "spotCount": 1,
+      "lat": 48.41013885,
+      "lng": 10.444250400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1303247776), ODbL"
+    }
+  ]
+}

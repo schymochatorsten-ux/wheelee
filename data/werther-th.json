@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "werther-th",
+    "name": "Werther",
+    "center": {
+      "lat": 51.486837200000004,
+      "lng": 10.7437194
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "werther-th-bfedcb0ec5",
+      "city": "werther-th",
+      "label": "Am Helmeberg 2",
+      "street": "Am Helmeberg",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Werther",
+      "spotCount": 1,
+      "lat": 51.486837200000004,
+      "lng": 10.7437194,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13311236013), ODbL"
+    }
+  ]
+}

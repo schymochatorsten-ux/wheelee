@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "chorin",
+    "name": "Chorin",
+    "center": {
+      "lat": 52.891800450000005,
+      "lng": 13.88204935
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "chorin-5f1f8ffb9e",
+      "city": "chorin",
+      "label": "Amt Chorin",
+      "street": "Amt Chorin",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Chorin",
+      "spotCount": 3,
+      "lat": 52.891800450000005,
+      "lng": 13.88204935,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/64436994), ODbL"
+    }
+  ]
+}

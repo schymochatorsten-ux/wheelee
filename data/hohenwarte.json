@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hohenwarte",
+    "name": "Hohenwarte",
+    "center": {
+      "lat": 50.61162795,
+      "lng": 11.490898450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hohenwarte-37e2319ff3",
+      "city": "hohenwarte",
+      "label": "Wanderparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Hohenwarte",
+      "spotCount": 1,
+      "lat": 50.61162795,
+      "lng": 11.490898450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/136848875), ODbL"
+    }
+  ]
+}

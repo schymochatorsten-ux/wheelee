@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "salmtal",
+    "name": "Salmtal",
+    "center": {
+      "lat": 49.92263255,
+      "lng": 6.83867255
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "salmtal-651f9697f4",
+      "city": "salmtal",
+      "label": "Neuer Bahnhof",
+      "street": "Neuer Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Salmtal",
+      "spotCount": 2,
+      "lat": 49.92263255,
+      "lng": 6.83710995,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/197932976), ODbL"
+    },
+    {
+      "id": "salmtal-f3c76d89d4",
+      "city": "salmtal",
+      "label": "Neuer Bahnhof 7",
+      "street": "Neuer Bahnhof",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Salmtal",
+      "spotCount": 2,
+      "lat": 49.92249875,
+      "lng": 6.83867255,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/197932963), ODbL"
+    }
+  ]
+}

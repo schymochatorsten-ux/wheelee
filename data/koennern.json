@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "koennern",
+    "name": "Könnern",
+    "center": {
+      "lat": 51.672539900000004,
+      "lng": 11.7749485
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "koennern-4b57620fed",
+      "city": "koennern",
+      "label": "Magdeburger Straße 5d",
+      "street": "Magdeburger Straße",
+      "houseNumber": "5d",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Könnern",
+      "spotCount": 2,
+      "lat": 51.672539900000004,
+      "lng": 11.7749485,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/82121653), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "thaleischweiler-froeschen",
+    "name": "Thaleischweiler-Fröschen",
+    "center": {
+      "lat": 49.2614277,
+      "lng": 7.579466050000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "thaleischweiler-froeschen-a154712215",
+      "city": "thaleischweiler-froeschen",
+      "label": "Uferstraße",
+      "street": "Uferstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Thaleischweiler-Fröschen",
+      "spotCount": 2,
+      "lat": 49.2614277,
+      "lng": 7.579466050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1044690130), ODbL"
+    }
+  ]
+}

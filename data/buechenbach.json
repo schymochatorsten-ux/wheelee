@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "buechenbach",
+    "name": "Büchenbach",
+    "center": {
+      "lat": 49.26778695,
+      "lng": 11.06587595
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "buechenbach-f2681a2c88",
+      "city": "buechenbach",
+      "label": "Bahnhofsparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Büchenbach",
+      "spotCount": 2,
+      "lat": 49.26795370000001,
+      "lng": 11.0734599,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/263294827), ODbL"
+    },
+    {
+      "id": "buechenbach-76d787fff9",
+      "city": "buechenbach",
+      "label": "Németkérstraße",
+      "street": "Németkérstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Büchenbach",
+      "spotCount": 25,
+      "lat": 49.26778695,
+      "lng": 11.06587595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/70483868), ODbL"
+    },
+    {
+      "id": "buechenbach-d066f9215e",
+      "city": "buechenbach",
+      "label": "Rother Straße",
+      "street": "Rother Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Büchenbach",
+      "spotCount": 4,
+      "lat": 49.265621,
+      "lng": 11.0510552,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/7642369729), ODbL"
+    }
+  ]
+}

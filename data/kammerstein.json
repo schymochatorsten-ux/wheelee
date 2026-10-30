@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "kammerstein",
+    "name": "Kammerstein",
+    "center": {
+      "lat": 49.3062746,
+      "lng": 10.96931445
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kammerstein-a5fe403ff0",
+      "city": "kammerstein",
+      "label": "Am Markt",
+      "street": "Am Markt",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kammerstein",
+      "spotCount": 2,
+      "lat": 49.2962447,
+      "lng": 10.975618,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28954332), ODbL"
+    },
+    {
+      "id": "kammerstein-6a5d6627e6",
+      "city": "kammerstein",
+      "label": "Raststätte Kammersteiner Land Nord",
+      "street": "Raststätte Kammersteiner Land Nord",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kammerstein",
+      "spotCount": 4,
+      "lat": 49.30809395,
+      "lng": 10.967955800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/223320637), ODbL"
+    },
+    {
+      "id": "kammerstein-0153e1b4d7",
+      "city": "kammerstein",
+      "label": "Raststätte Kammersteiner Land Süd",
+      "street": "Raststätte Kammersteiner Land Süd",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kammerstein",
+      "spotCount": 3,
+      "lat": 49.3062746,
+      "lng": 10.96931445,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/485699600), ODbL"
+    }
+  ]
+}

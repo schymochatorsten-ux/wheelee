@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "goellheim",
+    "name": "Göllheim",
+    "center": {
+      "lat": 49.57530345000001,
+      "lng": 8.0276054
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "goellheim-5881352455",
+      "city": "goellheim",
+      "label": "Behindertenparkplatz Göllheim",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Göllheim",
+      "spotCount": 1,
+      "lat": 49.57530345000001,
+      "lng": 8.0276054,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/533244151), ODbL"
+    }
+  ]
+}

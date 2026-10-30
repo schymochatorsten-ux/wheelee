@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hambruecken",
+    "name": "Hambrücken",
+    "center": {
+      "lat": 49.199493700000005,
+      "lng": 8.551736
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hambruecken-6b6c04151d",
+      "city": "hambruecken",
+      "label": "Behindertenparkplatz Hambrücken",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hambrücken",
+      "spotCount": 5,
+      "lat": 49.199493700000005,
+      "lng": 8.551736,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/3715888082), ODbL"
+    },
+    {
+      "id": "hambruecken-23aae8cecf",
+      "city": "hambruecken",
+      "label": "Lußhardthalle",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Hambrücken",
+      "spotCount": 2,
+      "lat": 49.184587400000005,
+      "lng": 8.54308885,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28753606), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wesenberg",
+    "name": "Wesenberg",
+    "center": {
+      "lat": 53.280551100000004,
+      "lng": 12.9600212
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wesenberg-f4393e4509",
+      "city": "wesenberg",
+      "label": "Mirower Chaussee",
+      "street": "Mirower Chaussee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wesenberg",
+      "spotCount": 1,
+      "lat": 53.280551100000004,
+      "lng": 12.9600212,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/40840399), ODbL"
+    }
+  ]
+}

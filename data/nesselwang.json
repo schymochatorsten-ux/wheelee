@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "nesselwang",
+    "name": "Nesselwang",
+    "center": {
+      "lat": 47.6182232,
+      "lng": 10.496493000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nesselwang-24763a8278",
+      "city": "nesselwang",
+      "label": "Alpspitzweg 5",
+      "street": "Alpspitzweg",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Nesselwang",
+      "spotCount": 1,
+      "lat": 47.6182232,
+      "lng": 10.496493000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10300165710), ODbL"
+    }
+  ]
+}

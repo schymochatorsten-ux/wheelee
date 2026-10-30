@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "maikammer",
+    "name": "Maikammer",
+    "center": {
+      "lat": 49.30472400000001,
+      "lng": 8.132416150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "maikammer-5549895575",
+      "city": "maikammer",
+      "label": "An der Steinmühle 16",
+      "street": "An der Steinmühle",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Maikammer",
+      "spotCount": 2,
+      "lat": 49.30112175000001,
+      "lng": 8.13705015,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/384180721), ODbL"
+    },
+    {
+      "id": "maikammer-08ff5b4c3b",
+      "city": "maikammer",
+      "label": "An der Südumgehung",
+      "street": "An der Südumgehung",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Maikammer",
+      "spotCount": 1,
+      "lat": 49.299352000000006,
+      "lng": 8.13247985,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/994061707), ODbL"
+    },
+    {
+      "id": "maikammer-68e3b694df",
+      "city": "maikammer",
+      "label": "Erbgasse",
+      "street": "Erbgasse",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Maikammer",
+      "spotCount": 1,
+      "lat": 49.30459810000001,
+      "lng": 8.12915055,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1075297682), ODbL"
+    },
+    {
+      "id": "maikammer-ec2f4a78bf",
+      "city": "maikammer",
+      "label": "Friedhofstraße 19",
+      "street": "Friedhofstraße",
+      "houseNumber": "19",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Maikammer",
+      "spotCount": 1,
+      "lat": 49.30591080000001,
+      "lng": 8.1299305,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1359094596), ODbL"
+    },
+    {
+      "id": "maikammer-3bb07f7c3e",
+      "city": "maikammer",
+      "label": "Oberer Schnetzweg 4",
+      "street": "Oberer Schnetzweg",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Maikammer",
+      "spotCount": 1,
+      "lat": 49.3049649,
+      "lng": 8.137336000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1370075924), ODbL"
+    },
+    {
+      "id": "maikammer-b52dd6ffe2",
+      "city": "maikammer",
+      "label": "Sankt-Martiner-Straße 17",
+      "street": "Sankt-Martiner-Straße",
+      "houseNumber": "17",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Maikammer",
+      "spotCount": 1,
+      "lat": 49.30472400000001,
+      "lng": 8.1290875,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1075297685), ODbL"
+    },
+    {
+      "id": "maikammer-93fe95880f",
+      "city": "maikammer",
+      "label": "Schulstraße 2",
+      "street": "Schulstraße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Maikammer",
+      "spotCount": 1,
+      "lat": 49.3047625,
+      "lng": 8.132416150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/886989531), ODbL"
+    }
+  ]
+}

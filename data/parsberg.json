@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "parsberg",
+    "name": "Parsberg",
+    "center": {
+      "lat": 49.1591339,
+      "lng": 11.720490250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "parsberg-71d07cf904",
+      "city": "parsberg",
+      "label": "Aschenbrennerstraße",
+      "street": "Aschenbrennerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Parsberg",
+      "spotCount": 1,
+      "lat": 49.1591339,
+      "lng": 11.724707500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14192042577), ODbL"
+    },
+    {
+      "id": "parsberg-dd15f86f15",
+      "city": "parsberg",
+      "label": "Eglwanger Straße",
+      "street": "Eglwanger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Parsberg",
+      "spotCount": 3,
+      "lat": 49.15592375,
+      "lng": 11.70675755,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/605750714), ODbL"
+    },
+    {
+      "id": "parsberg-5f77485159",
+      "city": "parsberg",
+      "label": "Hohenfelser Straße 43",
+      "street": "Hohenfelser Straße",
+      "houseNumber": "43",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Parsberg",
+      "spotCount": 2,
+      "lat": 49.166931500000004,
+      "lng": 11.720490250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/375723082), ODbL"
+    }
+  ]
+}

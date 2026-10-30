@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "ovelgoenne",
+    "name": "Ovelgönne",
+    "center": {
+      "lat": 53.3224128,
+      "lng": 8.378219300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ovelgoenne-12f9e65456",
+      "city": "ovelgoenne",
+      "label": "Strückhauser Straße",
+      "street": "Strückhauser Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ovelgönne",
+      "spotCount": 1,
+      "lat": 53.3224128,
+      "lng": 8.378219300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1469901702), ODbL"
+    },
+    {
+      "id": "ovelgoenne-fa7b0bc415",
+      "city": "ovelgoenne",
+      "label": "Strückhauser Straße",
+      "street": "Strückhauser Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ovelgönne",
+      "spotCount": 1,
+      "lat": 53.32224930000001,
+      "lng": 8.37774585,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1469901703), ODbL"
+    }
+  ]
+}

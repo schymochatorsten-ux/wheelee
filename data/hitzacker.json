@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hitzacker",
+    "name": "Hitzacker (Elbe)",
+    "center": {
+      "lat": 53.14975315000001,
+      "lng": 11.05033045
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hitzacker-cab871a04f",
+      "city": "hitzacker",
+      "label": "Marschtorstraße",
+      "street": "Marschtorstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hitzacker (Elbe)",
+      "spotCount": 1,
+      "lat": 53.14975315000001,
+      "lng": 11.05033045,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28470101), ODbL"
+    }
+  ]
+}

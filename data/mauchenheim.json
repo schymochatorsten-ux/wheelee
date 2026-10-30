@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "mauchenheim",
+    "name": "Mauchenheim",
+    "center": {
+      "lat": 49.71767165,
+      "lng": 8.042313400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mauchenheim-6a09ad2dbf",
+      "city": "mauchenheim",
+      "label": "An der Mühlwiese 1",
+      "street": "An der Mühlwiese",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mauchenheim",
+      "spotCount": 5,
+      "lat": 49.71767165,
+      "lng": 8.042313400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1220069139), ODbL"
+    }
+  ]
+}

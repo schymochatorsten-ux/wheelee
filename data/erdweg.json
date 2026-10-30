@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "erdweg",
+    "name": "Erdweg",
+    "center": {
+      "lat": 48.35440985,
+      "lng": 11.27496305
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "erdweg-5ea08c8b33",
+      "city": "erdweg",
+      "label": "Münchener Straße",
+      "street": "Münchener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Erdweg",
+      "spotCount": 3,
+      "lat": 48.35440985,
+      "lng": 11.27496305,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/255668380), ODbL"
+    }
+  ]
+}

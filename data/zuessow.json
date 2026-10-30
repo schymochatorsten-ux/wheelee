@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "zuessow",
+    "name": "Züssow",
+    "center": {
+      "lat": 53.97379275,
+      "lng": 13.549743250000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zuessow-6429c9235f",
+      "city": "zuessow",
+      "label": "Nepziner Straße",
+      "street": "Nepziner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Züssow",
+      "spotCount": 3,
+      "lat": 53.97379275,
+      "lng": 13.549743250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/175614816), ODbL"
+    }
+  ]
+}

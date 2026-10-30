@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bad-kleinen",
+    "name": "Bad Kleinen",
+    "center": {
+      "lat": 53.76751515000001,
+      "lng": 11.466144100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-kleinen-e24faa3cf4",
+      "city": "bad-kleinen",
+      "label": "Rosensteig",
+      "street": "Rosensteig",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Kleinen",
+      "spotCount": 1,
+      "lat": 53.76751515000001,
+      "lng": 11.466144100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/670869938), ODbL"
+    }
+  ]
+}

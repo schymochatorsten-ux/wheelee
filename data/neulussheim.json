@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "neulussheim",
+    "name": "Neulußheim",
+    "center": {
+      "lat": 49.292750500000004,
+      "lng": 8.52979275
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neulussheim-cf7fd50e9e",
+      "city": "neulussheim",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neulußheim",
+      "spotCount": 1,
+      "lat": 49.292750500000004,
+      "lng": 8.5297423,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1067128158), ODbL"
+    },
+    {
+      "id": "neulussheim-0cb254460c",
+      "city": "neulussheim",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Neulußheim",
+      "spotCount": 1,
+      "lat": 49.29274,
+      "lng": 8.52979275,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1159723746), ODbL"
+    },
+    {
+      "id": "neulussheim-eeaf0e0e77",
+      "city": "neulussheim",
+      "label": "Bahnhof Neulußheim P1",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Neulußheim",
+      "spotCount": 1,
+      "lat": 49.292685250000005,
+      "lng": 8.529028150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/74518091), ODbL"
+    },
+    {
+      "id": "neulussheim-13b8acdfdc",
+      "city": "neulussheim",
+      "label": "Bahnhof Neulußheim P2",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neulußheim",
+      "spotCount": 2,
+      "lat": 49.2930385,
+      "lng": 8.52990555,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/131226751), ODbL"
+    }
+  ]
+}

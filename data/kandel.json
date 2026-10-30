@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "kandel",
+    "name": "Kandel",
+    "center": {
+      "lat": 49.079426950000006,
+      "lng": 8.200095350000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kandel-1b6480b4e4",
+      "city": "kandel",
+      "label": "Georg-Todt-Straße",
+      "street": "Georg-Todt-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kandel",
+      "spotCount": 2,
+      "lat": 49.07907985,
+      "lng": 8.199084,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/384689061), ODbL"
+    },
+    {
+      "id": "kandel-2e7cd9bb00",
+      "city": "kandel",
+      "label": "Georg-Todt-Straße 19",
+      "street": "Georg-Todt-Straße",
+      "houseNumber": "19",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kandel",
+      "spotCount": 1,
+      "lat": 49.079426950000006,
+      "lng": 8.19857805,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/249985766), ODbL"
+    },
+    {
+      "id": "kandel-167de75032",
+      "city": "kandel",
+      "label": "Lauterburger Straße",
+      "street": "Lauterburger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kandel",
+      "spotCount": 2,
+      "lat": 49.07678730000001,
+      "lng": 8.201876200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/205245855), ODbL"
+    },
+    {
+      "id": "kandel-277bd1af83",
+      "city": "kandel",
+      "label": "Luitpoldstraße",
+      "street": "Luitpoldstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kandel",
+      "spotCount": 1,
+      "lat": 49.084775900000004,
+      "lng": 8.200095350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/292194626), ODbL"
+    }
+  ]
+}

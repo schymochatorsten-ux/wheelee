@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "mesekenhagen",
+    "name": "Mesekenhagen",
+    "center": {
+      "lat": 54.17395225,
+      "lng": 13.324154400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mesekenhagen-a39458861b",
+      "city": "mesekenhagen",
+      "label": "Hufenweg",
+      "street": "Hufenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mesekenhagen",
+      "spotCount": 1,
+      "lat": 54.17395225,
+      "lng": 13.324154400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/47050880), ODbL"
+    }
+  ]
+}

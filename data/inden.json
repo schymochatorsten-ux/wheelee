@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "inden",
+    "name": "Inden",
+    "center": {
+      "lat": 50.85079295,
+      "lng": 6.36632055
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "inden-461d1c7c2f",
+      "city": "inden",
+      "label": "Indemann",
+      "street": "Indemann",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Inden",
+      "spotCount": 4,
+      "lat": 50.85079295,
+      "lng": 6.36632055,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/195448342), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "neuzelle",
+    "name": "Neuzelle",
+    "center": {
+      "lat": 52.0945258,
+      "lng": 14.655860700000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuzelle-02f3f7f1f2",
+      "city": "neuzelle",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuzelle",
+      "spotCount": 2,
+      "lat": 52.0945258,
+      "lng": 14.64876885,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/87563970), ODbL"
+    },
+    {
+      "id": "neuzelle-97f9278619",
+      "city": "neuzelle",
+      "label": "Kirchstraße 42",
+      "street": "Kirchstraße",
+      "houseNumber": "42",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuzelle",
+      "spotCount": 1,
+      "lat": 52.088340800000005,
+      "lng": 14.655860700000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9359690274), ODbL"
+    }
+  ]
+}

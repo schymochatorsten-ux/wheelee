@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "grossschoenau",
+    "name": "Großschönau",
+    "center": {
+      "lat": 50.89306655,
+      "lng": 14.66551375
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grossschoenau-50442b4495",
+      "city": "grossschoenau",
+      "label": "Am Hutberg",
+      "street": "Am Hutberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großschönau",
+      "spotCount": 3,
+      "lat": 50.9012461,
+      "lng": 14.665435500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/322870390), ODbL"
+    },
+    {
+      "id": "grossschoenau-d7b1795f08",
+      "city": "grossschoenau",
+      "label": "August-Bebel-Straße",
+      "street": "August-Bebel-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großschönau",
+      "spotCount": 4,
+      "lat": 50.86892875,
+      "lng": 14.650349300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/571821992), ODbL"
+    },
+    {
+      "id": "grossschoenau-ffbe3df50d",
+      "city": "grossschoenau",
+      "label": "Buchbergstraße",
+      "street": "Buchbergstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großschönau",
+      "spotCount": 2,
+      "lat": 50.88684670000001,
+      "lng": 14.66551375,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/123392481), ODbL"
+    },
+    {
+      "id": "grossschoenau-0b29fd06b2",
+      "city": "grossschoenau",
+      "label": "Gerichtsstraße",
+      "street": "Gerichtsstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großschönau",
+      "spotCount": 2,
+      "lat": 50.89612045,
+      "lng": 14.66651645,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/74381259), ODbL"
+    },
+    {
+      "id": "grossschoenau-87c1777dbb",
+      "city": "grossschoenau",
+      "label": "Güterbodenstraße",
+      "street": "Güterbodenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großschönau",
+      "spotCount": 2,
+      "lat": 50.89306655,
+      "lng": 14.66628305,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/863728957), ODbL"
+    },
+    {
+      "id": "grossschoenau-c2348bbe75",
+      "city": "grossschoenau",
+      "label": "Hauptstraße 70",
+      "street": "Hauptstraße",
+      "houseNumber": "70",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großschönau",
+      "spotCount": 2,
+      "lat": 50.895786150000006,
+      "lng": 14.6665164,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/797675961), ODbL"
+    },
+    {
+      "id": "grossschoenau-655578f866",
+      "city": "grossschoenau",
+      "label": "Windgasse",
+      "street": "Windgasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großschönau",
+      "spotCount": 3,
+      "lat": 50.85948065,
+      "lng": 14.655253550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28186165), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "hirschberg",
+    "name": "Hirschberg an der Bergstraße",
+    "center": {
+      "lat": 49.51219295,
+      "lng": 8.6576442
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hirschberg-3a3879072d",
+      "city": "hirschberg",
+      "label": "Beethovenstraße 2",
+      "street": "Beethovenstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hirschberg an der Bergstraße",
+      "spotCount": 1,
+      "lat": 49.497966250000005,
+      "lng": 8.656902800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/181221366), ODbL"
+    },
+    {
+      "id": "hirschberg-fa5d386f41",
+      "city": "hirschberg",
+      "label": "Breitgasse 12",
+      "street": "Breitgasse",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hirschberg an der Bergstraße",
+      "spotCount": 1,
+      "lat": 49.512247300000006,
+      "lng": 8.6579849,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1719218218), ODbL"
+    },
+    {
+      "id": "hirschberg-790f50cf8d",
+      "city": "hirschberg",
+      "label": "Evangelisches Gemeindehaus",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hirschberg an der Bergstraße",
+      "spotCount": 1,
+      "lat": 49.51219295,
+      "lng": 8.6576442,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/159823050), ODbL"
+    },
+    {
+      "id": "hirschberg-44da83f851",
+      "city": "hirschberg",
+      "label": "Im Sterzwinkel",
+      "street": "Im Sterzwinkel",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hirschberg an der Bergstraße",
+      "spotCount": 2,
+      "lat": 49.509786950000006,
+      "lng": 8.6551449,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/136450849), ODbL"
+    }
+  ]
+}

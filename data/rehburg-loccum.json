@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "rehburg-loccum",
+    "name": "Rehburg-Loccum",
+    "center": {
+      "lat": 52.4420998,
+      "lng": 9.1985766
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rehburg-loccum-647416f374",
+      "city": "rehburg-loccum",
+      "label": "Parkplatz Dinopark P2",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rehburg-Loccum",
+      "spotCount": 4,
+      "lat": 52.4420998,
+      "lng": 9.1985766,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/35153970), ODbL"
+    }
+  ]
+}

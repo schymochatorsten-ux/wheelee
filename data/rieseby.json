@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "rieseby",
+    "name": "Rieseby",
+    "center": {
+      "lat": 54.5415025,
+      "lng": 9.82075605
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rieseby-9c19638e29",
+      "city": "rieseby",
+      "label": "Dorfstraße 32",
+      "street": "Dorfstraße",
+      "houseNumber": "32",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rieseby",
+      "spotCount": 1,
+      "lat": 54.5419757,
+      "lng": 9.8141344,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/167646552), ODbL"
+    },
+    {
+      "id": "rieseby-4a0eee9e26",
+      "city": "rieseby",
+      "label": "Rieseby, Bahnhof",
+      "street": "Rieseby, Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rieseby",
+      "spotCount": 1,
+      "lat": 54.5415025,
+      "lng": 9.8208053,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12953692416), ODbL"
+    },
+    {
+      "id": "rieseby-cbf2cc132f",
+      "city": "rieseby",
+      "label": "Rieseby, Bahnhof",
+      "street": "Rieseby, Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rieseby",
+      "spotCount": 1,
+      "lat": 54.541185250000005,
+      "lng": 9.82075605,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34895881), ODbL"
+    }
+  ]
+}

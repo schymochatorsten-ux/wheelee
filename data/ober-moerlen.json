@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "ober-moerlen",
+    "name": "Ober-Mörlen",
+    "center": {
+      "lat": 50.3711673,
+      "lng": 8.693214350000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ober-moerlen-2d54354807",
+      "city": "ober-moerlen",
+      "label": "Kirchplatz 1",
+      "street": "Kirchplatz",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ober-Mörlen",
+      "spotCount": 1,
+      "lat": 50.3735513,
+      "lng": 8.6941943,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1148991903), ODbL"
+    },
+    {
+      "id": "ober-moerlen-26e3697e56",
+      "city": "ober-moerlen",
+      "label": "Lekkerkerkplatz 3",
+      "street": "Lekkerkerkplatz",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ober-Mörlen",
+      "spotCount": 1,
+      "lat": 50.3711673,
+      "lng": 8.68710625,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1286419213), ODbL"
+    },
+    {
+      "id": "ober-moerlen-b8889d4466",
+      "city": "ober-moerlen",
+      "label": "Usatalhalle",
+      "street": "Usatalhalle",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ober-Mörlen",
+      "spotCount": 1,
+      "lat": 50.3703951,
+      "lng": 8.686616950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1286419200), ODbL"
+    },
+    {
+      "id": "ober-moerlen-eeeb728fa7",
+      "city": "ober-moerlen",
+      "label": "Wetterau West",
+      "street": "Wetterau West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ober-Mörlen",
+      "spotCount": 3,
+      "lat": 50.357301150000005,
+      "lng": 8.693214350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/367459363), ODbL"
+    }
+  ]
+}

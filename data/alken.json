@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "alken",
+    "name": "Alken",
+    "center": {
+      "lat": 50.250119000000005,
+      "lng": 7.446409
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "alken-f3f7fef50d",
+      "city": "alken",
+      "label": "Bachstraße 1",
+      "street": "Bachstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Alken",
+      "spotCount": 1,
+      "lat": 50.250119000000005,
+      "lng": 7.446409,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/7902819704), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "moeser",
+    "name": "Möser",
+    "center": {
+      "lat": 52.21199130000001,
+      "lng": 11.736907350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "moeser-8447889393",
+      "city": "moeser",
+      "label": "Hohenwarther Landstraße",
+      "street": "Hohenwarther Landstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Möser",
+      "spotCount": 3,
+      "lat": 52.24289985,
+      "lng": 11.7376666,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32239595), ODbL"
+    },
+    {
+      "id": "moeser-6890fad384",
+      "city": "moeser",
+      "label": "Lindenstraße",
+      "street": "Lindenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Möser",
+      "spotCount": 1,
+      "lat": 52.21194645,
+      "lng": 11.737202800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/482282507), ODbL"
+    },
+    {
+      "id": "moeser-9d20b924da",
+      "city": "moeser",
+      "label": "Lindenstraße",
+      "street": "Lindenstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Möser",
+      "spotCount": 1,
+      "lat": 52.21199130000001,
+      "lng": 11.7368843,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1161280301), ODbL"
+    },
+    {
+      "id": "moeser-e1b848b387",
+      "city": "moeser",
+      "label": "Lindenstraße",
+      "street": "Lindenstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Möser",
+      "spotCount": 1,
+      "lat": 52.2119623,
+      "lng": 11.736907350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1161280302), ODbL"
+    },
+    {
+      "id": "moeser-d0455c88e3",
+      "city": "moeser",
+      "label": "Lindenstraße",
+      "street": "Lindenstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Möser",
+      "spotCount": 1,
+      "lat": 52.21203175000001,
+      "lng": 11.736855100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1161280303), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "malterdingen",
+    "name": "Malterdingen",
+    "center": {
+      "lat": 48.151873050000006,
+      "lng": 7.77207305
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "malterdingen-8cad8c0753",
+      "city": "malterdingen",
+      "label": "P+R Bahnhof Riegel-Malterdingen Ostseite",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Malterdingen",
+      "spotCount": 2,
+      "lat": 48.151736400000004,
+      "lng": 7.77207305,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/134929026), ODbL"
+    },
+    {
+      "id": "malterdingen-053da284b1",
+      "city": "malterdingen",
+      "label": "Riegeler Straße",
+      "street": "Riegeler Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Malterdingen",
+      "spotCount": 2,
+      "lat": 48.151873050000006,
+      "lng": 7.7715776000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1392053113), ODbL"
+    }
+  ]
+}

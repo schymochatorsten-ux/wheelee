@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "lalling",
+    "name": "Lalling",
+    "center": {
+      "lat": 48.84124665,
+      "lng": 13.139455900000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lalling-e616901b1e",
+      "city": "lalling",
+      "label": "Am Kurpark",
+      "street": "Am Kurpark",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lalling",
+      "spotCount": 2,
+      "lat": 48.841191300000006,
+      "lng": 13.139234100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1090219666), ODbL"
+    },
+    {
+      "id": "lalling-56fa7e7cc5",
+      "city": "lalling",
+      "label": "Am Kurpark",
+      "street": "Am Kurpark",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lalling",
+      "spotCount": 2,
+      "lat": 48.84120845,
+      "lng": 13.1394557,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1488658637), ODbL"
+    },
+    {
+      "id": "lalling-9e31f96f61",
+      "city": "lalling",
+      "label": "Am Kurpark",
+      "street": "Am Kurpark",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lalling",
+      "spotCount": 1,
+      "lat": 48.84124665,
+      "lng": 13.139455900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1488658639), ODbL"
+    },
+    {
+      "id": "lalling-cc8d5b9b1b",
+      "city": "lalling",
+      "label": "Am Kurpark",
+      "street": "Am Kurpark",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lalling",
+      "spotCount": 1,
+      "lat": 48.84121950000001,
+      "lng": 13.139455000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1488658640), ODbL"
+    },
+    {
+      "id": "lalling-a421abc192",
+      "city": "lalling",
+      "label": "Ranzingerbergstraße",
+      "street": "Ranzingerbergstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lalling",
+      "spotCount": 1,
+      "lat": 48.84613875000001,
+      "lng": 13.1398047,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1299820496), ODbL"
+    },
+    {
+      "id": "lalling-1cee490594",
+      "city": "lalling",
+      "label": "Ranzingerbergstraße",
+      "street": "Ranzingerbergstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lalling",
+      "spotCount": 1,
+      "lat": 48.84602035,
+      "lng": 13.13980605,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1299820497), ODbL"
+    }
+  ]
+}

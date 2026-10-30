@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "eichenbuehl",
+    "name": "Eichenbühl",
+    "center": {
+      "lat": 49.7038785,
+      "lng": 9.32864275
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eichenbuehl-bc81ec3bdb",
+      "city": "eichenbuehl",
+      "label": "Hauptstraße 131",
+      "street": "Hauptstraße",
+      "houseNumber": "131",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eichenbühl",
+      "spotCount": 1,
+      "lat": 49.7038785,
+      "lng": 9.32864275,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1012030797), ODbL"
+    }
+  ]
+}

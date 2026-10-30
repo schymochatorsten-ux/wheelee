@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "oberstaufen",
+    "name": "Oberstaufen",
+    "center": {
+      "lat": 47.554481800000005,
+      "lng": 10.024828450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberstaufen-44b82f6276",
+      "city": "oberstaufen",
+      "label": "Am Girrenbach",
+      "street": "Am Girrenbach",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oberstaufen",
+      "spotCount": 1,
+      "lat": 47.558108700000005,
+      "lng": 10.02832925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1524912863), ODbL"
+    },
+    {
+      "id": "oberstaufen-6f8c06b207",
+      "city": "oberstaufen",
+      "label": "Bahnhofsplatz",
+      "street": "Bahnhofsplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Oberstaufen",
+      "spotCount": 1,
+      "lat": 47.553555900000006,
+      "lng": 10.024828450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1026523972), ODbL"
+    },
+    {
+      "id": "oberstaufen-3ec6a279ec",
+      "city": "oberstaufen",
+      "label": "Johann-Schroth-Straße",
+      "street": "Johann-Schroth-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberstaufen",
+      "spotCount": 1,
+      "lat": 47.554481800000005,
+      "lng": 10.0207651,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13905476960), ODbL"
+    }
+  ]
+}

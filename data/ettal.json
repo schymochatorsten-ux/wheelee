@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "ettal",
+    "name": "Ettal",
+    "center": {
+      "lat": 47.568867,
+      "lng": 11.09419205
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ettal-4f5557808a",
+      "city": "ettal",
+      "label": "Kaiser-Ludwig-Platz",
+      "street": "Kaiser-Ludwig-Platz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Ettal",
+      "spotCount": 4,
+      "lat": 47.568867,
+      "lng": 11.09419205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/303448665), ODbL"
+    }
+  ]
+}

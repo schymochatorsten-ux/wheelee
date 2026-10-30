@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lauenbrueck",
+    "name": "Lauenbrück",
+    "center": {
+      "lat": 53.20215945,
+      "lng": 9.55117605
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lauenbrueck-6ff0940f84",
+      "city": "lauenbrueck",
+      "label": "Schülerweg",
+      "street": "Schülerweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lauenbrück",
+      "spotCount": 2,
+      "lat": 53.20215945,
+      "lng": 9.55117605,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1567303811), ODbL"
+    }
+  ]
+}

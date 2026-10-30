@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hohenwestedt",
+    "name": "Hohenwestedt",
+    "center": {
+      "lat": 54.090034,
+      "lng": 9.64988765
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hohenwestedt-b54c3d57d6",
+      "city": "hohenwestedt",
+      "label": "Itzehoer Straße",
+      "street": "Itzehoer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hohenwestedt",
+      "spotCount": 1,
+      "lat": 54.090034,
+      "lng": 9.64965175,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/188144117), ODbL"
+    },
+    {
+      "id": "hohenwestedt-13549d027f",
+      "city": "hohenwestedt",
+      "label": "Itzehoer Straße 36",
+      "street": "Itzehoer Straße",
+      "houseNumber": "36",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hohenwestedt",
+      "spotCount": 1,
+      "lat": 54.086433150000005,
+      "lng": 9.64988765,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/188142170), ODbL"
+    }
+  ]
+}

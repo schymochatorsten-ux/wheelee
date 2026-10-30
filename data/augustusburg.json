@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "augustusburg",
+    "name": "Augustusburg",
+    "center": {
+      "lat": 50.82086290000001,
+      "lng": 13.0842624
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "augustusburg-fd3a9412c5",
+      "city": "augustusburg",
+      "label": "Am Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Augustusburg",
+      "spotCount": 4,
+      "lat": 50.821708050000005,
+      "lng": 13.0842624,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32430699), ODbL"
+    },
+    {
+      "id": "augustusburg-fa756f39f8",
+      "city": "augustusburg",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Augustusburg",
+      "spotCount": 3,
+      "lat": 50.82086290000001,
+      "lng": 13.08403855,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/320391878), ODbL"
+    },
+    {
+      "id": "augustusburg-aa6545526c",
+      "city": "augustusburg",
+      "label": "Hintere Schlossauffahrt",
+      "street": "Hintere Schlossauffahrt",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Augustusburg",
+      "spotCount": 3,
+      "lat": 50.811490250000006,
+      "lng": 13.1001625,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/257117847), ODbL"
+    }
+  ]
+}

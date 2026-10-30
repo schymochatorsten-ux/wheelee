@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "altenberg",
+    "name": "Altenberg",
+    "center": {
+      "lat": 50.778637950000004,
+      "lng": 13.7919958
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "altenberg-3089866253",
+      "city": "altenberg",
+      "label": "Am Kalkschneller",
+      "street": "Am Kalkschneller",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Altenberg",
+      "spotCount": 3,
+      "lat": 50.73568495000001,
+      "lng": 13.7489709,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/201131160), ODbL"
+    },
+    {
+      "id": "altenberg-a617f4bb75",
+      "city": "altenberg",
+      "label": "Dresdner Straße",
+      "street": "Dresdner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Altenberg",
+      "spotCount": 3,
+      "lat": 50.779150200000004,
+      "lng": 13.7925061,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/307935277), ODbL"
+    },
+    {
+      "id": "altenberg-d3674754b9",
+      "city": "altenberg",
+      "label": "Dresdner Straße",
+      "street": "Dresdner Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Altenberg",
+      "spotCount": 1,
+      "lat": 50.778795800000005,
+      "lng": 13.7922029,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1106634437), ODbL"
+    },
+    {
+      "id": "altenberg-e759e4bc13",
+      "city": "altenberg",
+      "label": "Dresdner Straße",
+      "street": "Dresdner Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Altenberg",
+      "spotCount": 1,
+      "lat": 50.778637950000004,
+      "lng": 13.7919958,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1106634438), ODbL"
+    },
+    {
+      "id": "altenberg-0ee5d07642",
+      "city": "altenberg",
+      "label": "Rehefelder Straße",
+      "street": "Rehefelder Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Altenberg",
+      "spotCount": 1,
+      "lat": 50.758359600000006,
+      "lng": 13.7429681,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/231231588), ODbL"
+    }
+  ]
+}

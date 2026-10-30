@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "binz",
+    "name": "Binz",
+    "center": {
+      "lat": 54.43449605000001,
+      "lng": 13.57065575
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "binz-162d59bbbe",
+      "city": "binz",
+      "label": "Dollahner Straße",
+      "street": "Dollahner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Binz",
+      "spotCount": 2,
+      "lat": 54.40554565000001,
+      "lng": 13.600306100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/440473486), ODbL"
+    },
+    {
+      "id": "binz-7854121936",
+      "city": "binz",
+      "label": "Fünfte Straße 6",
+      "street": "Fünfte Straße",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Binz",
+      "spotCount": 3,
+      "lat": 54.449007400000006,
+      "lng": 13.567609800000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10910965051), ODbL"
+    },
+    {
+      "id": "binz-88fd80c7ea",
+      "city": "binz",
+      "label": "Großparkplatz Prora",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Binz",
+      "spotCount": 20,
+      "lat": 54.438573950000006,
+      "lng": 13.57065575,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/464580924), ODbL"
+    },
+    {
+      "id": "binz-ea603a4c14",
+      "city": "binz",
+      "label": "Lidl/Baumarkt Parkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Binz",
+      "spotCount": 2,
+      "lat": 54.401903850000004,
+      "lng": 13.60345625,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/71047615), ODbL"
+    },
+    {
+      "id": "binz-9fafb5ea21",
+      "city": "binz",
+      "label": "Prora, Naturerbezentrum/Baumwipfelpfad",
+      "street": "Prora, Naturerbezentrum/Baumwipfelpfad",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Binz",
+      "spotCount": 6,
+      "lat": 54.43449605000001,
+      "lng": 13.5575315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1553692716), ODbL"
+    }
+  ]
+}

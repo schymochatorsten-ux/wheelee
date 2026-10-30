@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bad-lobenstein",
+    "name": "Bad Lobenstein",
+    "center": {
+      "lat": 50.4519449,
+      "lng": 11.641747350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-lobenstein-f7ac5d1bdb",
+      "city": "bad-lobenstein",
+      "label": "Poststraße",
+      "street": "Poststraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Lobenstein",
+      "spotCount": 2,
+      "lat": 50.4519449,
+      "lng": 11.641747350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1023316011), ODbL"
+    }
+  ]
+}

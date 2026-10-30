@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "dornhan",
+    "name": "Dornhan",
+    "center": {
+      "lat": 48.3306348,
+      "lng": 8.53328495
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dornhan-2b6d15cb19",
+      "city": "dornhan",
+      "label": "Gewand",
+      "street": "Gewand",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dornhan",
+      "spotCount": 1,
+      "lat": 48.3306348,
+      "lng": 8.53328495,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1295361830), ODbL"
+    }
+  ]
+}

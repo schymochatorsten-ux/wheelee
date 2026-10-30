@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "rositz",
+    "name": "Rositz",
+    "center": {
+      "lat": 51.0169561,
+      "lng": 12.3712383
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rositz-5c34e4829d",
+      "city": "rositz",
+      "label": "Goethestraße 2",
+      "street": "Goethestraße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rositz",
+      "spotCount": 1,
+      "lat": 51.0169561,
+      "lng": 12.3712383,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/8483143595), ODbL"
+    }
+  ]
+}

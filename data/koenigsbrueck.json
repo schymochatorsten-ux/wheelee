@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "koenigsbrueck",
+    "name": "Königsbrück",
+    "center": {
+      "lat": 51.26418575,
+      "lng": 13.9060381
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "koenigsbrueck-b3a0dc0aac",
+      "city": "koenigsbrueck",
+      "label": "Kamenzer Straße 17",
+      "street": "Kamenzer Straße",
+      "houseNumber": "17",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Königsbrück",
+      "spotCount": 1,
+      "lat": 51.26418575,
+      "lng": 13.9060381,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/294184727), ODbL"
+    },
+    {
+      "id": "koenigsbrueck-aa72822d66",
+      "city": "koenigsbrueck",
+      "label": "Markt 10",
+      "street": "Markt",
+      "houseNumber": "10",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Königsbrück",
+      "spotCount": 1,
+      "lat": 51.26386695000001,
+      "lng": 13.903310300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1299787106), ODbL"
+    },
+    {
+      "id": "koenigsbrueck-cd5eb19e49",
+      "city": "koenigsbrueck",
+      "label": "Marktstraße",
+      "street": "Marktstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Königsbrück",
+      "spotCount": 1,
+      "lat": 51.26362830000001,
+      "lng": 13.90262195,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1299787107), ODbL"
+    },
+    {
+      "id": "koenigsbrueck-318a45bc60",
+      "city": "koenigsbrueck",
+      "label": "Weißbacher Straße 28",
+      "street": "Weißbacher Straße",
+      "houseNumber": "28",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Königsbrück",
+      "spotCount": 1,
+      "lat": 51.265638450000004,
+      "lng": 13.90825775,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1239187222), ODbL"
+    }
+  ]
+}

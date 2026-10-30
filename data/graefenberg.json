@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "graefenberg",
+    "name": "Gräfenberg",
+    "center": {
+      "lat": 49.6501657,
+      "lng": 11.2649497
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "graefenberg-986b61abc5",
+      "city": "graefenberg",
+      "label": "Am Schönfeld",
+      "street": "Am Schönfeld",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gräfenberg",
+      "spotCount": 1,
+      "lat": 49.6501657,
+      "lng": 11.2649497,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/44878353), ODbL"
+    }
+  ]
+}

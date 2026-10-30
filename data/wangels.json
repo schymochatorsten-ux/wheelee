@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "wangels",
+    "name": "Wangels",
+    "center": {
+      "lat": 54.31152010000001,
+      "lng": 10.80035595
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wangels-e33689370c",
+      "city": "wangels",
+      "label": "Parkstraße",
+      "street": "Parkstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wangels",
+      "spotCount": 8,
+      "lat": 54.31152010000001,
+      "lng": 10.799743750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26264821), ODbL"
+    },
+    {
+      "id": "wangels-34529e748d",
+      "city": "wangels",
+      "label": "Seestraße",
+      "street": "Seestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wangels",
+      "spotCount": 2,
+      "lat": 54.310269950000006,
+      "lng": 10.80035595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26264190), ODbL"
+    }
+  ]
+}

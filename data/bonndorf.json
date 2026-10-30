@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bonndorf",
+    "name": "Bonndorf im Schwarzwald",
+    "center": {
+      "lat": 47.819328250000005,
+      "lng": 8.337146650000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bonndorf-1ff9f6ad8f",
+      "city": "bonndorf",
+      "label": "Kirchstraße 16",
+      "street": "Kirchstraße",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bonndorf im Schwarzwald",
+      "spotCount": 2,
+      "lat": 47.819328250000005,
+      "lng": 8.337146650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1148176225), ODbL"
+    }
+  ]
+}

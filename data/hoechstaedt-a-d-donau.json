@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "hoechstaedt-a-d-donau",
+    "name": "Höchstädt a.d.Donau",
+    "center": {
+      "lat": 48.61191885000001,
+      "lng": 10.5674235
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hoechstaedt-a-d-donau-6ab4445ad5",
+      "city": "hoechstaedt-a-d-donau",
+      "label": "Bachgasse 5",
+      "street": "Bachgasse",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Höchstädt a.d.Donau",
+      "spotCount": 1,
+      "lat": 48.6111365,
+      "lng": 10.56793275,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1252018694), ODbL"
+    },
+    {
+      "id": "hoechstaedt-a-d-donau-ab0a9a7baf",
+      "city": "hoechstaedt-a-d-donau",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Höchstädt a.d.Donau",
+      "spotCount": 3,
+      "lat": 48.6188238,
+      "lng": 10.567093550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/199327757), ODbL"
+    },
+    {
+      "id": "hoechstaedt-a-d-donau-476d3bb200",
+      "city": "hoechstaedt-a-d-donau",
+      "label": "Donauwörther Straße 15",
+      "street": "Donauwörther Straße",
+      "houseNumber": "15",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Höchstädt a.d.Donau",
+      "spotCount": 1,
+      "lat": 48.61744275,
+      "lng": 10.5674235,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1315065266), ODbL"
+    },
+    {
+      "id": "hoechstaedt-a-d-donau-ffa4527672",
+      "city": "hoechstaedt-a-d-donau",
+      "label": "Eichenstraße 9",
+      "street": "Eichenstraße",
+      "houseNumber": "9",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Höchstädt a.d.Donau",
+      "spotCount": 7,
+      "lat": 48.61480215,
+      "lng": 10.571661250000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1024912065), ODbL"
+    },
+    {
+      "id": "hoechstaedt-a-d-donau-d42f835cdd",
+      "city": "hoechstaedt-a-d-donau",
+      "label": "Herzogin-Anna-Straße 3",
+      "street": "Herzogin-Anna-Straße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Höchstädt a.d.Donau",
+      "spotCount": 1,
+      "lat": 48.611503850000005,
+      "lng": 10.567724900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1252019072), ODbL"
+    },
+    {
+      "id": "hoechstaedt-a-d-donau-4965bb0ccb",
+      "city": "hoechstaedt-a-d-donau",
+      "label": "Kirchgasse 2",
+      "street": "Kirchgasse",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Höchstädt a.d.Donau",
+      "spotCount": 2,
+      "lat": 48.61191885000001,
+      "lng": 10.56642,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/199302089), ODbL"
+    },
+    {
+      "id": "hoechstaedt-a-d-donau-b4717bd5ee",
+      "city": "hoechstaedt-a-d-donau",
+      "label": "Marktplatz 6",
+      "street": "Marktplatz",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Höchstädt a.d.Donau",
+      "spotCount": 7,
+      "lat": 48.61153315,
+      "lng": 10.567061200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1025305250), ODbL"
+    }
+  ]
+}

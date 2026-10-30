@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "glees",
+    "name": "Glees",
+    "center": {
+      "lat": 50.403215,
+      "lng": 7.252331250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "glees-02884e7ebd",
+      "city": "glees",
+      "label": "Behindertenparkplatz Glees",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Glees",
+      "spotCount": 1,
+      "lat": 50.40354185,
+      "lng": 7.2531265000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/85080734), ODbL"
+    },
+    {
+      "id": "glees-5b427d51b0",
+      "city": "glees",
+      "label": "Behindertenparkplatz Glees",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Glees",
+      "spotCount": 1,
+      "lat": 50.403215,
+      "lng": 7.252331250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/534610950), ODbL"
+    },
+    {
+      "id": "glees-f03db803f0",
+      "city": "glees",
+      "label": "Behindertenparkplatz Glees",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Glees",
+      "spotCount": 1,
+      "lat": 50.4031986,
+      "lng": 7.2521556,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1446808540), ODbL"
+    }
+  ]
+}

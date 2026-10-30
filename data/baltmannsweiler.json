@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "baltmannsweiler",
+    "name": "Baltmannsweiler",
+    "center": {
+      "lat": 48.750741700000006,
+      "lng": 9.439411450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "baltmannsweiler-c371537efa",
+      "city": "baltmannsweiler",
+      "label": "Baacher Straße",
+      "street": "Baacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Baltmannsweiler",
+      "spotCount": 2,
+      "lat": 48.750741700000006,
+      "lng": 9.439411450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/136692926), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "staufenberg",
+    "name": "Staufenberg",
+    "center": {
+      "lat": 50.657576850000005,
+      "lng": 8.736118650000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "staufenberg-30be9fbc3b",
+      "city": "staufenberg",
+      "label": "Marktstraße 3",
+      "street": "Marktstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Staufenberg",
+      "spotCount": 2,
+      "lat": 50.65786785,
+      "lng": 8.73704775,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/93078955), ODbL"
+    },
+    {
+      "id": "staufenberg-47e6d577cf",
+      "city": "staufenberg",
+      "label": "Porstendorfer Straße",
+      "street": "Porstendorfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Staufenberg",
+      "spotCount": 2,
+      "lat": 50.657576850000005,
+      "lng": 8.734414950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24441541), ODbL"
+    },
+    {
+      "id": "staufenberg-6f7eeef450",
+      "city": "staufenberg",
+      "label": "Porstendorfer Straße",
+      "street": "Porstendorfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Staufenberg",
+      "spotCount": 2,
+      "lat": 50.6572678,
+      "lng": 8.736118650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24441544), ODbL"
+    },
+    {
+      "id": "staufenberg-1846b774a6",
+      "city": "staufenberg",
+      "label": "Porstendorfer Straße 3",
+      "street": "Porstendorfer Straße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Staufenberg",
+      "spotCount": 3,
+      "lat": 50.657001750000006,
+      "lng": 8.735101,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24441545), ODbL"
+    }
+  ]
+}

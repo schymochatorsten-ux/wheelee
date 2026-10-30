@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "muenster-sarmsheim",
+    "name": "Münster-Sarmsheim",
+    "center": {
+      "lat": 49.945238800000006,
+      "lng": 7.8946551000000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "muenster-sarmsheim-5f22d4c436",
+      "city": "muenster-sarmsheim",
+      "label": "Waldstraße",
+      "street": "Waldstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Münster-Sarmsheim",
+      "spotCount": 1,
+      "lat": 49.945238800000006,
+      "lng": 7.894646850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/226758610), ODbL"
+    },
+    {
+      "id": "muenster-sarmsheim-5342dd4cfd",
+      "city": "muenster-sarmsheim",
+      "label": "Waldstraße",
+      "street": "Waldstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Münster-Sarmsheim",
+      "spotCount": 1,
+      "lat": 49.945061,
+      "lng": 7.8946551000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/226758611), ODbL"
+    }
+  ]
+}

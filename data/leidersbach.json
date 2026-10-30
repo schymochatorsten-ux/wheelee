@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "leidersbach",
+    "name": "Leidersbach",
+    "center": {
+      "lat": 49.901361800000004,
+      "lng": 9.2259262
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "leidersbach-e2049607b1",
+      "city": "leidersbach",
+      "label": "Hauptstraße 123",
+      "street": "Hauptstraße",
+      "houseNumber": "123",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Leidersbach",
+      "spotCount": 1,
+      "lat": 49.901361800000004,
+      "lng": 9.2259262,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/433348446), ODbL"
+    }
+  ]
+}

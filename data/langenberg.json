@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "langenberg",
+    "name": "Langenberg",
+    "center": {
+      "lat": 51.77230705000001,
+      "lng": 8.31676775
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "langenberg-dffe4924d1",
+      "city": "langenberg",
+      "label": "Bildhauerstraße 25",
+      "street": "Bildhauerstraße",
+      "houseNumber": "25",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Langenberg",
+      "spotCount": 1,
+      "lat": 51.77230705000001,
+      "lng": 8.31676775,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/73028080), ODbL"
+    }
+  ]
+}

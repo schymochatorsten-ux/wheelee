@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "todtmoos",
+    "name": "Todtmoos",
+    "center": {
+      "lat": 47.73710215,
+      "lng": 8.0007064
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "todtmoos-7756cf9db8",
+      "city": "todtmoos",
+      "label": "Kurzzeitplarkplätze",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Todtmoos",
+      "spotCount": 1,
+      "lat": 47.7353012,
+      "lng": 8.0007064,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/462258574), ODbL"
+    },
+    {
+      "id": "todtmoos-af7c42293b",
+      "city": "todtmoos",
+      "label": "Wehratalstraße",
+      "street": "Wehratalstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Todtmoos",
+      "spotCount": 5,
+      "lat": 47.73710215,
+      "lng": 8.00011345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/947921947), ODbL"
+    }
+  ]
+}

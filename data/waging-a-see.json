@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "waging-a-see",
+    "name": "Waging a.See",
+    "center": {
+      "lat": 47.956306350000006,
+      "lng": 12.7554004
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "waging-a-see-4794c1b607",
+      "city": "waging-a-see",
+      "label": "Hauptstraße 12",
+      "street": "Hauptstraße",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waging a.See",
+      "spotCount": 1,
+      "lat": 47.956306350000006,
+      "lng": 12.7554004,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/700921391), ODbL"
+    }
+  ]
+}

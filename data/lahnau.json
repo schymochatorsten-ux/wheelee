@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "lahnau",
+    "name": "Lahnau",
+    "center": {
+      "lat": 50.581553,
+      "lng": 8.54908625
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lahnau-bfce0aa781",
+      "city": "lahnau",
+      "label": "Geraberger Platz",
+      "street": "Geraberger Platz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lahnau",
+      "spotCount": 3,
+      "lat": 50.58129385,
+      "lng": 8.5481384,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/136276591), ODbL"
+    },
+    {
+      "id": "lahnau-7d0a28ee38",
+      "city": "lahnau",
+      "label": "Geraberger Platz 1",
+      "street": "Geraberger Platz",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lahnau",
+      "spotCount": 1,
+      "lat": 50.58165285,
+      "lng": 8.54908625,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1318199248), ODbL"
+    },
+    {
+      "id": "lahnau-4d1990e2d6",
+      "city": "lahnau",
+      "label": "Geraberger Platz 1",
+      "street": "Geraberger Platz",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lahnau",
+      "spotCount": 1,
+      "lat": 50.581553,
+      "lng": 8.548881650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1318199250), ODbL"
+    },
+    {
+      "id": "lahnau-7bc6243322",
+      "city": "lahnau",
+      "label": "Lindenstraße",
+      "street": "Lindenstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lahnau",
+      "spotCount": 1,
+      "lat": 50.5815454,
+      "lng": 8.5490606,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1318199249), ODbL"
+    },
+    {
+      "id": "lahnau-2e0835d715",
+      "city": "lahnau",
+      "label": "Nordendstraße",
+      "street": "Nordendstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lahnau",
+      "spotCount": 1,
+      "lat": 50.58904675,
+      "lng": 8.549560750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1189757077), ODbL"
+    },
+    {
+      "id": "lahnau-6f32601deb",
+      "city": "lahnau",
+      "label": "Rathausplatz 3",
+      "street": "Rathausplatz",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lahnau",
+      "spotCount": 2,
+      "lat": 50.5766538,
+      "lng": 8.566457900000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1467444825), ODbL"
+    }
+  ]
+}

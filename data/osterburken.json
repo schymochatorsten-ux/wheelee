@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "osterburken",
+    "name": "Osterburken",
+    "center": {
+      "lat": 49.430689650000005,
+      "lng": 9.4251743
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "osterburken-fc4f32140c",
+      "city": "osterburken",
+      "label": "Bahnhofstraße 1",
+      "street": "Bahnhofstraße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": "24/7",
+      "district": "Osterburken",
+      "spotCount": 1,
+      "lat": 49.430221,
+      "lng": 9.42252425,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1284811005), ODbL"
+    },
+    {
+      "id": "osterburken-5d0f3782c1",
+      "city": "osterburken",
+      "label": "Bahnhofsvorplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Osterburken",
+      "spotCount": 1,
+      "lat": 49.430112050000005,
+      "lng": 9.42237325,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/262833540), ODbL"
+    },
+    {
+      "id": "osterburken-d5c4682c2d",
+      "city": "osterburken",
+      "label": "Kapellenstraße",
+      "street": "Kapellenstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Osterburken",
+      "spotCount": 1,
+      "lat": 49.431167200000004,
+      "lng": 9.4251743,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11800333398), ODbL"
+    },
+    {
+      "id": "osterburken-12516f2c7c",
+      "city": "osterburken",
+      "label": "Marktplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Osterburken",
+      "spotCount": 1,
+      "lat": 49.430689650000005,
+      "lng": 9.4269912,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/263595941), ODbL"
+    }
+  ]
+}

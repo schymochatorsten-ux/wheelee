@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "hartenstein",
+    "name": "Hartenstein",
+    "center": {
+      "lat": 50.66185110000001,
+      "lng": 12.67162785
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hartenstein-a3508e3926",
+      "city": "hartenstein",
+      "label": "Hartensteiner Straße",
+      "street": "Hartensteiner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hartenstein",
+      "spotCount": 1,
+      "lat": 50.68779965,
+      "lng": 12.699391850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1050303009), ODbL"
+    },
+    {
+      "id": "hartenstein-2f9c16414a",
+      "city": "hartenstein",
+      "label": "Marktplatz",
+      "street": "Marktplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hartenstein",
+      "spotCount": 1,
+      "lat": 50.6616207,
+      "lng": 12.671581500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/60367665), ODbL"
+    },
+    {
+      "id": "hartenstein-0711c29262",
+      "city": "hartenstein",
+      "label": "Marktplatz 4",
+      "street": "Marktplatz",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hartenstein",
+      "spotCount": 1,
+      "lat": 50.66185110000001,
+      "lng": 12.67162785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/753511856), ODbL"
+    },
+    {
+      "id": "hartenstein-840eaaf58f",
+      "city": "hartenstein",
+      "label": "Waldstraße",
+      "street": "Waldstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hartenstein",
+      "spotCount": 2,
+      "lat": 50.6523425,
+      "lng": 12.6642696,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/736829476), ODbL"
+    }
+  ]
+}

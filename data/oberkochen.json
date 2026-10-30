@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "oberkochen",
+    "name": "Oberkochen",
+    "center": {
+      "lat": 48.7825439,
+      "lng": 10.1064684
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberkochen-97ead3591c",
+      "city": "oberkochen",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oberkochen",
+      "spotCount": 1,
+      "lat": 48.78246610000001,
+      "lng": 10.1063852,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1385402506), ODbL"
+    },
+    {
+      "id": "oberkochen-79c916fc89",
+      "city": "oberkochen",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Oberkochen",
+      "spotCount": 2,
+      "lat": 48.782503750000004,
+      "lng": 10.1064684,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1385402510), ODbL"
+    },
+    {
+      "id": "oberkochen-d2e573bec5",
+      "city": "oberkochen",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oberkochen",
+      "spotCount": 1,
+      "lat": 48.7825439,
+      "lng": 10.1065529,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1385402511), ODbL"
+    },
+    {
+      "id": "oberkochen-b9ecfecde2",
+      "city": "oberkochen",
+      "label": "Gartenstraße 26",
+      "street": "Gartenstraße",
+      "houseNumber": "26",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberkochen",
+      "spotCount": 3,
+      "lat": 48.78483490000001,
+      "lng": 10.1005512,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/922250393), ODbL"
+    }
+  ]
+}

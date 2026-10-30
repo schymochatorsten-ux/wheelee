@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "niederstotzingen",
+    "name": "Niederstotzingen",
+    "center": {
+      "lat": 48.53197655,
+      "lng": 10.23534425
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "niederstotzingen-9c2d7a5591",
+      "city": "niederstotzingen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Niederstotzingen",
+      "spotCount": 4,
+      "lat": 48.53197655,
+      "lng": 10.23521045,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/261411291), ODbL"
+    },
+    {
+      "id": "niederstotzingen-92fccf7afd",
+      "city": "niederstotzingen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Niederstotzingen",
+      "spotCount": 1,
+      "lat": 48.532778300000004,
+      "lng": 10.236241,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1395969213), ODbL"
+    },
+    {
+      "id": "niederstotzingen-fe79059578",
+      "city": "niederstotzingen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Niederstotzingen",
+      "spotCount": 1,
+      "lat": 48.53193685000001,
+      "lng": 10.23534425,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1395969215), ODbL"
+    },
+    {
+      "id": "niederstotzingen-7ca4868e2d",
+      "city": "niederstotzingen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Niederstotzingen",
+      "spotCount": 1,
+      "lat": 48.53201025,
+      "lng": 10.23544595,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1395969216), ODbL"
+    },
+    {
+      "id": "niederstotzingen-6fa4f8ee0f",
+      "city": "niederstotzingen",
+      "label": "Recyclinghof",
+      "street": "Recyclinghof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Niederstotzingen",
+      "spotCount": 1,
+      "lat": 48.53181335000001,
+      "lng": 10.23517325,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1395969214), ODbL"
+    },
+    {
+      "id": "niederstotzingen-598fa02d0d",
+      "city": "niederstotzingen",
+      "label": "Recyclinghof",
+      "street": "Recyclinghof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Niederstotzingen",
+      "spotCount": 1,
+      "lat": 48.5318874,
+      "lng": 10.235275750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1395969217), ODbL"
+    }
+  ]
+}

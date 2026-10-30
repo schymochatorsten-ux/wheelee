@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "walddorfhaeslach",
+    "name": "Walddorfhäslach",
+    "center": {
+      "lat": 48.586815550000004,
+      "lng": 9.1832195
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "walddorfhaeslach-87faf23cf8",
+      "city": "walddorfhaeslach",
+      "label": "Hauptstraße 15",
+      "street": "Hauptstraße",
+      "houseNumber": "15",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Walddorfhäslach",
+      "spotCount": 1,
+      "lat": 48.586815550000004,
+      "lng": 9.1832195,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1033356773), ODbL"
+    },
+    {
+      "id": "walddorfhaeslach-f4869730d8",
+      "city": "walddorfhaeslach",
+      "label": "P+M Bullenbank bei Gniebel",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Walddorfhäslach",
+      "spotCount": 3,
+      "lat": 48.5801252,
+      "lng": 9.1718023,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/146186055), ODbL"
+    },
+    {
+      "id": "walddorfhaeslach-95946e02c9",
+      "city": "walddorfhaeslach",
+      "label": "Unter dem Weiler",
+      "street": "Unter dem Weiler",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Walddorfhäslach",
+      "spotCount": 1,
+      "lat": 48.595939800000004,
+      "lng": 9.197893,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1380613540), ODbL"
+    }
+  ]
+}

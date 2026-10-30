@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "wust-fischbeck",
+    "name": "Wust-Fischbeck",
+    "center": {
+      "lat": 52.5522198,
+      "lng": 12.0805553
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wust-fischbeck-1675965c57",
+      "city": "wust-fischbeck",
+      "label": "Behindertenparkplatz Wust-Fischbeck",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wust-Fischbeck",
+      "spotCount": 1,
+      "lat": 52.5522198,
+      "lng": 12.0805553,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1524846697), ODbL"
+    },
+    {
+      "id": "wust-fischbeck-062af8218e",
+      "city": "wust-fischbeck",
+      "label": "Behindertenparkplatz Wust-Fischbeck",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wust-Fischbeck",
+      "spotCount": 1,
+      "lat": 52.5510012,
+      "lng": 12.07747075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1524847128), ODbL"
+    }
+  ]
+}

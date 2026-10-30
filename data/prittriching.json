@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "prittriching",
+    "name": "Prittriching",
+    "center": {
+      "lat": 48.197841600000004,
+      "lng": 10.92596155
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "prittriching-10f9fd5cdd",
+      "city": "prittriching",
+      "label": "Am Rathaus 2",
+      "street": "Am Rathaus",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Prittriching",
+      "spotCount": 1,
+      "lat": 48.197841600000004,
+      "lng": 10.92596155,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1086916326), ODbL"
+    }
+  ]
+}

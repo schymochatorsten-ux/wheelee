@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "seeg",
+    "name": "Seeg",
+    "center": {
+      "lat": 47.6537536,
+      "lng": 10.6043661
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "seeg-b904c6b2f4",
+      "city": "seeg",
+      "label": "Kirchplatz 3",
+      "street": "Kirchplatz",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Seeg",
+      "spotCount": 1,
+      "lat": 47.6537536,
+      "lng": 10.6043661,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6955041147), ODbL"
+    }
+  ]
+}

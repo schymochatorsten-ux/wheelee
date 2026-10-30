@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "grossbreitenbach",
+    "name": "Großbreitenbach",
+    "center": {
+      "lat": 50.584342850000006,
+      "lng": 10.935399450000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grossbreitenbach-9316eb677f",
+      "city": "grossbreitenbach",
+      "label": "Am Kokshügel",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Großbreitenbach",
+      "spotCount": 2,
+      "lat": 50.584342850000006,
+      "lng": 10.92735945,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/345041089), ODbL"
+    },
+    {
+      "id": "grossbreitenbach-e6cf3a4bbd",
+      "city": "grossbreitenbach",
+      "label": "Ehringshäuser Straße",
+      "street": "Ehringshäuser Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Großbreitenbach",
+      "spotCount": 5,
+      "lat": 50.5827815,
+      "lng": 10.935399450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/993570082), ODbL"
+    }
+  ]
+}

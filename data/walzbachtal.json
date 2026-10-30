@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "walzbachtal",
+    "name": "Walzbachtal",
+    "center": {
+      "lat": 49.028800950000004,
+      "lng": 8.574354500000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "walzbachtal-de0a3d878f",
+      "city": "walzbachtal",
+      "label": "Bruchsaler Straße",
+      "street": "Bruchsaler Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Walzbachtal",
+      "spotCount": 2,
+      "lat": 49.016050050000004,
+      "lng": 8.609805000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/914402943), ODbL"
+    },
+    {
+      "id": "walzbachtal-9334737f76",
+      "city": "walzbachtal",
+      "label": "Ladestraße",
+      "street": "Ladestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Walzbachtal",
+      "spotCount": 1,
+      "lat": 49.028800950000004,
+      "lng": 8.574354500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/793378845), ODbL"
+    },
+    {
+      "id": "walzbachtal-fd22f7b52a",
+      "city": "walzbachtal",
+      "label": "Mörikestraße",
+      "street": "Mörikestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Walzbachtal",
+      "spotCount": 1,
+      "lat": 49.031281150000005,
+      "lng": 8.5691144,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/218946959), ODbL"
+    },
+    {
+      "id": "walzbachtal-74e4e367e6",
+      "city": "walzbachtal",
+      "label": "Mörikestraße",
+      "street": "Mörikestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Walzbachtal",
+      "spotCount": 1,
+      "lat": 49.03113375,
+      "lng": 8.5695899,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/218946962), ODbL"
+    },
+    {
+      "id": "walzbachtal-dc670ec8ce",
+      "city": "walzbachtal",
+      "label": "Mörikestraße",
+      "street": "Mörikestraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Walzbachtal",
+      "spotCount": 1,
+      "lat": 49.03117985,
+      "lng": 8.569420650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1414637734), ODbL"
+    },
+    {
+      "id": "walzbachtal-a87f3c5685",
+      "city": "walzbachtal",
+      "label": "Wössinger Straße",
+      "street": "Wössinger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Walzbachtal",
+      "spotCount": 2,
+      "lat": 49.0174413,
+      "lng": 8.59883335,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/694781374), ODbL"
+    },
+    {
+      "id": "walzbachtal-530e9a38ce",
+      "city": "walzbachtal",
+      "label": "Wössinger Straße 24",
+      "street": "Wössinger Straße",
+      "houseNumber": "24",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Walzbachtal",
+      "spotCount": 1,
+      "lat": 49.010937000000006,
+      "lng": 8.611225300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/615498546), ODbL"
+    }
+  ]
+}

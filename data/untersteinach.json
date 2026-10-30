@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "untersteinach",
+    "name": "Untersteinach",
+    "center": {
+      "lat": 50.133189200000004,
+      "lng": 11.52932345
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "untersteinach-f4e2f4a673",
+      "city": "untersteinach",
+      "label": "Wassergasse",
+      "street": "Wassergasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Untersteinach",
+      "spotCount": 3,
+      "lat": 50.133189200000004,
+      "lng": 11.52932345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1052326028), ODbL"
+    }
+  ]
+}

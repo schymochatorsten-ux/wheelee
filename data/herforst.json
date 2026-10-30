@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "herforst",
+    "name": "Herforst",
+    "center": {
+      "lat": 49.946630750000004,
+      "lng": 6.6973930500000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "herforst-a8eb5a9538",
+      "city": "herforst",
+      "label": "St.-Eligiusstraße",
+      "street": "St.-Eligiusstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Herforst",
+      "spotCount": 1,
+      "lat": 49.946630750000004,
+      "lng": 6.6973930500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/446533534), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "allersberg",
+    "name": "Allersberg",
+    "center": {
+      "lat": 49.26179475000001,
+      "lng": 11.2113738
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "allersberg-df9164ed21",
+      "city": "allersberg",
+      "label": "P1",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Allersberg",
+      "spotCount": 1,
+      "lat": 49.26197205,
+      "lng": 11.21137805,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/498023531), ODbL"
+    },
+    {
+      "id": "allersberg-5d9f8888c2",
+      "city": "allersberg",
+      "label": "P2",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Allersberg",
+      "spotCount": 1,
+      "lat": 49.26179475000001,
+      "lng": 11.2113738,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26683094), ODbL"
+    },
+    {
+      "id": "allersberg-8928f183ac",
+      "city": "allersberg",
+      "label": "P3",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Allersberg",
+      "spotCount": 1,
+      "lat": 49.2616165,
+      "lng": 11.2113533,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/498023534), ODbL"
+    }
+  ]
+}

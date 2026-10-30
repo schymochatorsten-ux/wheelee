@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hohenstadt",
+    "name": "Hohenstadt",
+    "center": {
+      "lat": 48.544219000000005,
+      "lng": 9.6642285
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hohenstadt-5f011bb752",
+      "city": "hohenstadt",
+      "label": "Merklinger Straße",
+      "street": "Merklinger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hohenstadt",
+      "spotCount": 8,
+      "lat": 48.544219000000005,
+      "lng": 9.6642285,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/7490068703), ODbL"
+    }
+  ]
+}

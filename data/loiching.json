@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "loiching",
+    "name": "Loiching",
+    "center": {
+      "lat": 48.63892675,
+      "lng": 12.424256100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "loiching-6889408697",
+      "city": "loiching",
+      "label": "Bahnweg",
+      "street": "Bahnweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Loiching",
+      "spotCount": 1,
+      "lat": 48.63892095,
+      "lng": 12.424206900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1552353240), ODbL"
+    },
+    {
+      "id": "loiching-555596c571",
+      "city": "loiching",
+      "label": "Bahnweg",
+      "street": "Bahnweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Loiching",
+      "spotCount": 1,
+      "lat": 48.63892675,
+      "lng": 12.424256100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1552353241), ODbL"
+    }
+  ]
+}

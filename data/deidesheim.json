@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "deidesheim",
+    "name": "Deidesheim",
+    "center": {
+      "lat": 49.407533050000005,
+      "lng": 8.18985015
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "deidesheim-53379e1367",
+      "city": "deidesheim",
+      "label": "Prinz-Rupprecht-Straße 17b",
+      "street": "Prinz-Rupprecht-Straße",
+      "houseNumber": "17b",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Deidesheim",
+      "spotCount": 2,
+      "lat": 49.4090233,
+      "lng": 8.18985015,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/252774869), ODbL"
+    },
+    {
+      "id": "deidesheim-eaf271df5b",
+      "city": "deidesheim",
+      "label": "Rossmühle",
+      "street": "Rossmühle",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Deidesheim",
+      "spotCount": 1,
+      "lat": 49.40714080000001,
+      "lng": 8.185806300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1353429872), ODbL"
+    },
+    {
+      "id": "deidesheim-cb6ec10458",
+      "city": "deidesheim",
+      "label": "Tourist Information",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Deidesheim",
+      "spotCount": 2,
+      "lat": 49.407533050000005,
+      "lng": 8.190867950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1314789896), ODbL"
+    }
+  ]
+}

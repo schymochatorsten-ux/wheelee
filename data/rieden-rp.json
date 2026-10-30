@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "rieden-rp",
+    "name": "Rieden",
+    "center": {
+      "lat": 50.389242700000004,
+      "lng": 7.16376185
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rieden-rp-43c9605140",
+      "city": "rieden-rp",
+      "label": "Seeblick",
+      "street": "Seeblick",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rieden",
+      "spotCount": 2,
+      "lat": 50.389242700000004,
+      "lng": 7.16376185,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/715091979), ODbL"
+    }
+  ]
+}

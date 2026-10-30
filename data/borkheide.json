@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "borkheide",
+    "name": "Borkheide",
+    "center": {
+      "lat": 52.22370335000001,
+      "lng": 12.858446
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "borkheide-dc62b98a2e",
+      "city": "borkheide",
+      "label": "Friedrich-Engels-Straße 55",
+      "street": "Friedrich-Engels-Straße",
+      "houseNumber": "55",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Borkheide",
+      "spotCount": 1,
+      "lat": 52.22370335000001,
+      "lng": 12.858446,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/306110162), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "rengsdorf",
+    "name": "Rengsdorf",
+    "center": {
+      "lat": 50.5045458,
+      "lng": 7.495214900000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rengsdorf-fcdf99a56f",
+      "city": "rengsdorf",
+      "label": "Behinderten Parkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rengsdorf",
+      "spotCount": 1,
+      "lat": 50.499728100000006,
+      "lng": 7.4966974,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1207467287), ODbL"
+    },
+    {
+      "id": "rengsdorf-13ab8be133",
+      "city": "rengsdorf",
+      "label": "Friedrichstraße 17b",
+      "street": "Friedrichstraße",
+      "houseNumber": "17b",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rengsdorf",
+      "spotCount": 3,
+      "lat": 50.5045458,
+      "lng": 7.49377565,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1113079906), ODbL"
+    },
+    {
+      "id": "rengsdorf-c81184f055",
+      "city": "rengsdorf",
+      "label": "Pfarrer-Knappmann-Straße 3",
+      "street": "Pfarrer-Knappmann-Straße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rengsdorf",
+      "spotCount": 1,
+      "lat": 50.5023793,
+      "lng": 7.495214900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1225208183), ODbL"
+    },
+    {
+      "id": "rengsdorf-83dc4f1f54",
+      "city": "rengsdorf",
+      "label": "Westerwaldstraße",
+      "street": "Westerwaldstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rengsdorf",
+      "spotCount": 6,
+      "lat": 50.51051785,
+      "lng": 7.48377045,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/162082271), ODbL"
+    }
+  ]
+}

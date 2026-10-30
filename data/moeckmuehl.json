@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "moeckmuehl",
+    "name": "Möckmühl",
+    "center": {
+      "lat": 49.32076055,
+      "lng": 9.3582948
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "moeckmuehl-6d25d9a31d",
+      "city": "moeckmuehl",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Möckmühl",
+      "spotCount": 1,
+      "lat": 49.32076055,
+      "lng": 9.3582948,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/61731203), ODbL"
+    },
+    {
+      "id": "moeckmuehl-32e9ab3c21",
+      "city": "moeckmuehl",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Möckmühl",
+      "spotCount": 1,
+      "lat": 49.32074355,
+      "lng": 9.35821645,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1410854468), ODbL"
+    },
+    {
+      "id": "moeckmuehl-4765680927",
+      "city": "moeckmuehl",
+      "label": "Bahnhofstraße 1",
+      "street": "Bahnhofstraße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Möckmühl",
+      "spotCount": 2,
+      "lat": 49.32086505,
+      "lng": 9.358565900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1410858574), ODbL"
+    },
+    {
+      "id": "moeckmuehl-46a8286752",
+      "city": "moeckmuehl",
+      "label": "Bahnhofstraße 17",
+      "street": "Bahnhofstraße",
+      "houseNumber": "17",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Möckmühl",
+      "spotCount": 2,
+      "lat": 49.320531,
+      "lng": 9.358549100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/513971652), ODbL"
+    },
+    {
+      "id": "moeckmuehl-e61a81e100",
+      "city": "moeckmuehl",
+      "label": "Hahnenäcker",
+      "street": "Hahnenäcker",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Möckmühl",
+      "spotCount": 2,
+      "lat": 49.32380330000001,
+      "lng": 9.350523500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/889217428), ODbL"
+    }
+  ]
+}

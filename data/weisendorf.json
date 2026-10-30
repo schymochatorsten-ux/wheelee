@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "weisendorf",
+    "name": "Weisendorf",
+    "center": {
+      "lat": 49.625848950000005,
+      "lng": 10.836105400000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "weisendorf-0758405ae1",
+      "city": "weisendorf",
+      "label": "Kirchenstraße",
+      "street": "Kirchenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weisendorf",
+      "spotCount": 1,
+      "lat": 49.6216649,
+      "lng": 10.822742600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/24256052), ODbL"
+    },
+    {
+      "id": "weisendorf-cb41bb8e62",
+      "city": "weisendorf",
+      "label": "Kundenparkplatz Norma",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weisendorf",
+      "spotCount": 1,
+      "lat": 49.625848950000005,
+      "lng": 10.836105400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/441373944), ODbL"
+    }
+  ]
+}

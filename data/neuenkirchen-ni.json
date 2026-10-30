@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "neuenkirchen-ni",
+    "name": "Neuenkirchen",
+    "center": {
+      "lat": 53.0318508,
+      "lng": 9.69929145
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuenkirchen-ni-67678526e2",
+      "city": "neuenkirchen-ni",
+      "label": "Edeka-Kundenparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuenkirchen",
+      "spotCount": 1,
+      "lat": 53.0318508,
+      "lng": 9.69929145,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/176347412), ODbL"
+    }
+  ]
+}

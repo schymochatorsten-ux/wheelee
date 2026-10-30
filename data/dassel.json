@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "dassel",
+    "name": "Dassel",
+    "center": {
+      "lat": 51.812485800000005,
+      "lng": 9.7682093
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dassel-b946ca72f2",
+      "city": "dassel",
+      "label": "Alter Markt 2",
+      "street": "Alter Markt",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dassel",
+      "spotCount": 2,
+      "lat": 51.812485800000005,
+      "lng": 9.769141950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/959803378), ODbL"
+    },
+    {
+      "id": "dassel-0b2783cba2",
+      "city": "dassel",
+      "label": "Behindertenparkplatz Dassel",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dassel",
+      "spotCount": 1,
+      "lat": 51.763661000000006,
+      "lng": 9.6713749,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12758608335), ODbL"
+    },
+    {
+      "id": "dassel-67af584ad0",
+      "city": "dassel",
+      "label": "Ilmebahnstraße",
+      "street": "Ilmebahnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dassel",
+      "spotCount": 2,
+      "lat": 51.81490145000001,
+      "lng": 9.7682093,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/259076124), ODbL"
+    }
+  ]
+}

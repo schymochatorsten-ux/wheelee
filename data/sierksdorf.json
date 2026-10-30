@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "sierksdorf",
+    "name": "Sierksdorf",
+    "center": {
+      "lat": 54.0594619,
+      "lng": 10.759519200000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sierksdorf-7db90784ae",
+      "city": "sierksdorf",
+      "label": "Am Strande",
+      "street": "Am Strande",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sierksdorf",
+      "spotCount": 1,
+      "lat": 54.0594619,
+      "lng": 10.759519200000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5181528609), ODbL"
+    },
+    {
+      "id": "sierksdorf-77e9d273d0",
+      "city": "sierksdorf",
+      "label": "Am Strande",
+      "street": "Am Strande",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sierksdorf",
+      "spotCount": 1,
+      "lat": 54.0594107,
+      "lng": 10.759428000000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5181528610), ODbL"
+    },
+    {
+      "id": "sierksdorf-aa8574ae68",
+      "city": "sierksdorf",
+      "label": "Wagrienring 25",
+      "street": "Wagrienring",
+      "houseNumber": "25",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sierksdorf",
+      "spotCount": 9,
+      "lat": 54.09301765000001,
+      "lng": 10.780957800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1372129077), ODbL"
+    }
+  ]
+}

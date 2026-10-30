@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "marktrodach",
+    "name": "Marktrodach",
+    "center": {
+      "lat": 50.2516017,
+      "lng": 11.39383085
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "marktrodach-515f9df0c0",
+      "city": "marktrodach",
+      "label": "Kulmbacher Straße",
+      "street": "Kulmbacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Marktrodach",
+      "spotCount": 2,
+      "lat": 50.2516017,
+      "lng": 11.39383085,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/769088610), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "chieming",
+    "name": "Chieming",
+    "center": {
+      "lat": 47.8857285,
+      "lng": 12.53406775
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "chieming-3ae64086a9",
+      "city": "chieming",
+      "label": "Grabenstätter Straße 14",
+      "street": "Grabenstätter Straße",
+      "houseNumber": "14",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Chieming",
+      "spotCount": 2,
+      "lat": 47.8857285,
+      "lng": 12.53406775,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1086526106), ODbL"
+    }
+  ]
+}

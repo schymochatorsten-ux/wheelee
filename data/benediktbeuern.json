@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "benediktbeuern",
+    "name": "Benediktbeuern",
+    "center": {
+      "lat": 47.70937515,
+      "lng": 11.40357705
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "benediktbeuern-3f0e31e1a9",
+      "city": "benediktbeuern",
+      "label": "Bahnhofsplatz 5",
+      "street": "Bahnhofsplatz",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Benediktbeuern",
+      "spotCount": 1,
+      "lat": 47.70937515,
+      "lng": 11.40357705,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/67012663), ODbL"
+    },
+    {
+      "id": "benediktbeuern-9a421b3e19",
+      "city": "benediktbeuern",
+      "label": "Don-Bosco-Straße",
+      "street": "Don-Bosco-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Benediktbeuern",
+      "spotCount": 5,
+      "lat": 47.7088879,
+      "lng": 11.3995712,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/45068110), ODbL"
+    }
+  ]
+}

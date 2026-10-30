@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "riethnordhausen",
+    "name": "Riethnordhausen",
+    "center": {
+      "lat": 51.085589,
+      "lng": 11.0035352
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "riethnordhausen-60d2ed289a",
+      "city": "riethnordhausen",
+      "label": "Alperstedter Weg 3a",
+      "street": "Alperstedter Weg",
+      "houseNumber": "3a",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Riethnordhausen",
+      "spotCount": 3,
+      "lat": 51.085589,
+      "lng": 11.0035352,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/875926599), ODbL"
+    }
+  ]
+}

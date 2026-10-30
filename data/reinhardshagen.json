@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "reinhardshagen",
+    "name": "Reinhardshagen",
+    "center": {
+      "lat": 51.4947492,
+      "lng": 9.601388700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "reinhardshagen-79210abf9a",
+      "city": "reinhardshagen",
+      "label": "Amtsstraße 12",
+      "street": "Amtsstraße",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Reinhardshagen",
+      "spotCount": 1,
+      "lat": 51.4947492,
+      "lng": 9.601388700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/42133853), ODbL"
+    }
+  ]
+}

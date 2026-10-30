@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "woltersdorf",
+    "name": "Woltersdorf",
+    "center": {
+      "lat": 52.457847550000004,
+      "lng": 13.753414300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "woltersdorf-b4117fbf3c",
+      "city": "woltersdorf",
+      "label": "Hochlandstraße",
+      "street": "Hochlandstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Woltersdorf",
+      "spotCount": 2,
+      "lat": 52.457847550000004,
+      "lng": 13.746151400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/336913522), ODbL"
+    },
+    {
+      "id": "woltersdorf-67ac50ae9d",
+      "city": "woltersdorf",
+      "label": "Vogelsdorfer Straße",
+      "street": "Vogelsdorfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Woltersdorf",
+      "spotCount": 1,
+      "lat": 52.4505111,
+      "lng": 13.753414300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12178279739), ODbL"
+    }
+  ]
+}

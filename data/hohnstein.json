@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hohnstein",
+    "name": "Hohnstein",
+    "center": {
+      "lat": 50.99249615000001,
+      "lng": 14.112349300000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hohnstein-d7328d6b32",
+      "city": "hohnstein",
+      "label": "Rundling",
+      "street": "Rundling",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hohnstein",
+      "spotCount": 2,
+      "lat": 50.99249615000001,
+      "lng": 14.086821950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1330279869), ODbL"
+    },
+    {
+      "id": "hohnstein-710111162f",
+      "city": "hohnstein",
+      "label": "Waldstraße",
+      "street": "Waldstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hohnstein",
+      "spotCount": 2,
+      "lat": 50.97497490000001,
+      "lng": 14.112349300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/379125242), ODbL"
+    }
+  ]
+}

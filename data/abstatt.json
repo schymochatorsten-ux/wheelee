@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "abstatt",
+    "name": "Abstatt",
+    "center": {
+      "lat": 49.07367670000001,
+      "lng": 9.2881344
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "abstatt-d9a43230b3",
+      "city": "abstatt",
+      "label": "Akazienstraße",
+      "street": "Akazienstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Abstatt",
+      "spotCount": 1,
+      "lat": 49.066883000000004,
+      "lng": 9.284735050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/131188855), ODbL"
+    },
+    {
+      "id": "abstatt-cd50348902",
+      "city": "abstatt",
+      "label": "Beilsteiner Straße",
+      "street": "Beilsteiner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Abstatt",
+      "spotCount": 1,
+      "lat": 49.066171600000004,
+      "lng": 9.2917672,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/192324354), ODbL"
+    },
+    {
+      "id": "abstatt-8fa95dbaff",
+      "city": "abstatt",
+      "label": "Happenbacher Straße",
+      "street": "Happenbacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Abstatt",
+      "spotCount": 2,
+      "lat": 49.07367670000001,
+      "lng": 9.2915855,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1159501487), ODbL"
+    },
+    {
+      "id": "abstatt-39017b07c7",
+      "city": "abstatt",
+      "label": "Im Deboldsacker 4",
+      "street": "Im Deboldsacker",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Abstatt",
+      "spotCount": 5,
+      "lat": 49.0755472,
+      "lng": 9.28797055,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/36954947), ODbL"
+    },
+    {
+      "id": "abstatt-1cc9d56f69",
+      "city": "abstatt",
+      "label": "Jägerhausstraße",
+      "street": "Jägerhausstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Abstatt",
+      "spotCount": 1,
+      "lat": 49.0697917,
+      "lng": 9.2881344,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/847676068), ODbL"
+    },
+    {
+      "id": "abstatt-014dd27bca",
+      "city": "abstatt",
+      "label": "Rauheckstraße",
+      "street": "Rauheckstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Abstatt",
+      "spotCount": 2,
+      "lat": 49.07703295,
+      "lng": 9.2868822,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/36954952), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "altenholz",
+    "name": "Altenholz",
+    "center": {
+      "lat": 54.401157100000006,
+      "lng": 10.127229250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "altenholz-3b32be0954",
+      "city": "altenholz",
+      "label": "Altenholzer Straße",
+      "street": "Altenholzer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Altenholz",
+      "spotCount": 1,
+      "lat": 54.401157100000006,
+      "lng": 10.127229250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29734000), ODbL"
+    }
+  ]
+}

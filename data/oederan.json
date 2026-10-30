@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "oederan",
+    "name": "Oederan",
+    "center": {
+      "lat": 50.905460600000005,
+      "lng": 13.17488995
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oederan-73fe0addf7",
+      "city": "oederan",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oederan",
+      "spotCount": 2,
+      "lat": 50.857432300000006,
+      "lng": 13.17488995,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/542806302), ODbL"
+    },
+    {
+      "id": "oederan-f009e53e61",
+      "city": "oederan",
+      "label": "Zur Räuberschänke",
+      "street": "Zur Räuberschänke",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oederan",
+      "spotCount": 1,
+      "lat": 50.905460600000005,
+      "lng": 13.165802750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/45318119), ODbL"
+    }
+  ]
+}

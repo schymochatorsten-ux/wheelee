@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "seddiner-see",
+    "name": "Seddiner See",
+    "center": {
+      "lat": 52.288693300000006,
+      "lng": 12.993331650000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "seddiner-see-db1f4245e8",
+      "city": "seddiner-see",
+      "label": "Dorfstraße 13",
+      "street": "Dorfstraße",
+      "houseNumber": "13",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Seddiner See",
+      "spotCount": 1,
+      "lat": 52.270008250000004,
+      "lng": 13.0407735,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/837036214), ODbL"
+    },
+    {
+      "id": "seddiner-see-516ca4cee9",
+      "city": "seddiner-see",
+      "label": "Hans-Beimler-Straße",
+      "street": "Hans-Beimler-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Seddiner See",
+      "spotCount": 2,
+      "lat": 52.288693300000006,
+      "lng": 12.99326695,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1350397221), ODbL"
+    },
+    {
+      "id": "seddiner-see-31913b817b",
+      "city": "seddiner-see",
+      "label": "Hans-Beimler-Straße",
+      "street": "Hans-Beimler-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Seddiner See",
+      "spotCount": 2,
+      "lat": 52.2886484,
+      "lng": 12.993331650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1350691869), ODbL"
+    },
+    {
+      "id": "seddiner-see-9b02ed1d66",
+      "city": "seddiner-see",
+      "label": "P+R Bahnhof Seddin",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Seddiner See",
+      "spotCount": 3,
+      "lat": 52.292107400000006,
+      "lng": 12.984564550000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1333214026), ODbL"
+    }
+  ]
+}

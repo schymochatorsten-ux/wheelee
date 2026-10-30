@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schoenwald-bw",
+    "name": "Schönwald im Schwarzwald",
+    "center": {
+      "lat": 48.10512455,
+      "lng": 8.2008464
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schoenwald-bw-d5ca05abe3",
+      "city": "schoenwald-bw",
+      "label": "Friedhofstraße 1",
+      "street": "Friedhofstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schönwald im Schwarzwald",
+      "spotCount": 2,
+      "lat": 48.10512455,
+      "lng": 8.2008464,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1163029088), ODbL"
+    }
+  ]
+}

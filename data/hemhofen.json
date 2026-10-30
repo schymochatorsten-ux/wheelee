@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hemhofen",
+    "name": "Hemhofen",
+    "center": {
+      "lat": 49.690815400000005,
+      "lng": 10.941564450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hemhofen-36f77f4d02",
+      "city": "hemhofen",
+      "label": "Am Zobelstein 4",
+      "street": "Am Zobelstein",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hemhofen",
+      "spotCount": 2,
+      "lat": 49.690815400000005,
+      "lng": 10.941564450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/336063435), ODbL"
+    }
+  ]
+}

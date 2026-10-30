@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "postau",
+    "name": "Postau",
+    "center": {
+      "lat": 48.651754700000005,
+      "lng": 12.3287747
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "postau-16d36a2374",
+      "city": "postau",
+      "label": "Unholzinger Straße",
+      "street": "Unholzinger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Postau",
+      "spotCount": 1,
+      "lat": 48.651754700000005,
+      "lng": 12.3287747,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/52918428), ODbL"
+    }
+  ]
+}

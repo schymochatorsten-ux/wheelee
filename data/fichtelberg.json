@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "fichtelberg",
+    "name": "Fichtelberg",
+    "center": {
+      "lat": 50.0159827,
+      "lng": 11.853263850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "fichtelberg-b52b4ebea8",
+      "city": "fichtelberg",
+      "label": "Fichtelseestraße",
+      "street": "Fichtelseestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Fichtelberg",
+      "spotCount": 3,
+      "lat": 50.016018900000006,
+      "lng": 11.852885700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/197483462), ODbL"
+    },
+    {
+      "id": "fichtelberg-8e4c5f7919",
+      "city": "fichtelberg",
+      "label": "Fichtelseestraße",
+      "street": "Fichtelseestraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Fichtelberg",
+      "spotCount": 1,
+      "lat": 50.015996200000004,
+      "lng": 11.85332215,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1195354281), ODbL"
+    },
+    {
+      "id": "fichtelberg-3df04b382c",
+      "city": "fichtelberg",
+      "label": "Fichtelseestraße",
+      "street": "Fichtelseestraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Fichtelberg",
+      "spotCount": 1,
+      "lat": 50.0159827,
+      "lng": 11.853293,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1195354282), ODbL"
+    },
+    {
+      "id": "fichtelberg-265a698d02",
+      "city": "fichtelberg",
+      "label": "Fichtelseestraße 25c",
+      "street": "Fichtelseestraße",
+      "houseNumber": "25c",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Fichtelberg",
+      "spotCount": 1,
+      "lat": 50.01596945,
+      "lng": 11.853263850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1195354283), ODbL"
+    },
+    {
+      "id": "fichtelberg-bad74bf928",
+      "city": "fichtelberg",
+      "label": "Killerweitweg 13",
+      "street": "Killerweitweg",
+      "houseNumber": "13",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Fichtelberg",
+      "spotCount": 8,
+      "lat": 50.00294255,
+      "lng": 11.8440559,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/436290157), ODbL"
+    }
+  ]
+}

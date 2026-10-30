@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "waake",
+    "name": "Waake",
+    "center": {
+      "lat": 51.55818585,
+      "lng": 10.0550586
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "waake-239028673f",
+      "city": "waake",
+      "label": "Am Sportplatz",
+      "street": "Am Sportplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Waake",
+      "spotCount": 1,
+      "lat": 51.55830935,
+      "lng": 10.05508795,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1418895844), ODbL"
+    },
+    {
+      "id": "waake-bb8dd141a5",
+      "city": "waake",
+      "label": "Am Sportplatz 3",
+      "street": "Am Sportplatz",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Waake",
+      "spotCount": 1,
+      "lat": 51.55814255,
+      "lng": 10.0550586,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1418895857), ODbL"
+    },
+    {
+      "id": "waake-3d600c2f93",
+      "city": "waake",
+      "label": "Schulstraße 17",
+      "street": "Schulstraße",
+      "houseNumber": "17",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Waake",
+      "spotCount": 1,
+      "lat": 51.55818585,
+      "lng": 10.053125350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1418895978), ODbL"
+    }
+  ]
+}

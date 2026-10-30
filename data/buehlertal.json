@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "buehlertal",
+    "name": "Bühlertal",
+    "center": {
+      "lat": 48.67751,
+      "lng": 8.19075355
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "buehlertal-b091da6403",
+      "city": "buehlertal",
+      "label": "Eichwaldstraße",
+      "street": "Eichwaldstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bühlertal",
+      "spotCount": 1,
+      "lat": 48.67751,
+      "lng": 8.19075355,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1408901283), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "helmstadt",
+    "name": "Helmstadt",
+    "center": {
+      "lat": 49.77323135,
+      "lng": 9.716242000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "helmstadt-660e6b081f",
+      "city": "helmstadt",
+      "label": "Fronberg-Süd",
+      "street": "Fronberg-Süd",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Helmstadt",
+      "spotCount": 3,
+      "lat": 49.77323135,
+      "lng": 9.716242000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/553586927), ODbL"
+    }
+  ]
+}

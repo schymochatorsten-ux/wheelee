@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "wallmerod",
+    "name": "Wallmerod",
+    "center": {
+      "lat": 50.481163300000006,
+      "lng": 7.9557421
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wallmerod-6a0135db91",
+      "city": "wallmerod",
+      "label": "Alte Turnhalle",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wallmerod",
+      "spotCount": 1,
+      "lat": 50.48270345,
+      "lng": 7.957753,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/694240603), ODbL"
+    },
+    {
+      "id": "wallmerod-a5a140da98",
+      "city": "wallmerod",
+      "label": "Frankfurter Straße 45",
+      "street": "Frankfurter Straße",
+      "houseNumber": "45",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wallmerod",
+      "spotCount": 1,
+      "lat": 50.481163300000006,
+      "lng": 7.9554767,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/330485107), ODbL"
+    },
+    {
+      "id": "wallmerod-eee8ae187e",
+      "city": "wallmerod",
+      "label": "Frankfurter Straße 47",
+      "street": "Frankfurter Straße",
+      "houseNumber": "47",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wallmerod",
+      "spotCount": 1,
+      "lat": 50.48015405,
+      "lng": 7.9555943000000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/330485117), ODbL"
+    },
+    {
+      "id": "wallmerod-447080076d",
+      "city": "wallmerod",
+      "label": "Frankfurter Straße 49",
+      "street": "Frankfurter Straße",
+      "houseNumber": "49",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wallmerod",
+      "spotCount": 1,
+      "lat": 50.479051850000005,
+      "lng": 7.9557421,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/330485110), ODbL"
+    }
+  ]
+}

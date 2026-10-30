@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "graal-mueritz",
+    "name": "Graal-Müritz",
+    "center": {
+      "lat": 54.24923785,
+      "lng": 12.246000500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "graal-mueritz-96860d6eaf",
+      "city": "graal-mueritz",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Graal-Müritz",
+      "spotCount": 1,
+      "lat": 54.24914735,
+      "lng": 12.246000500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/406057605), ODbL"
+    },
+    {
+      "id": "graal-mueritz-0adee9ecfb",
+      "city": "graal-mueritz",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Graal-Müritz",
+      "spotCount": 1,
+      "lat": 54.24923785,
+      "lng": 12.24631445,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1143408351), ODbL"
+    },
+    {
+      "id": "graal-mueritz-31194d303e",
+      "city": "graal-mueritz",
+      "label": "Zur Seebrücke 34",
+      "street": "Zur Seebrücke",
+      "houseNumber": "34",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Graal-Müritz",
+      "spotCount": 3,
+      "lat": 54.2569784,
+      "lng": 12.2451231,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13265855643), ODbL"
+    }
+  ]
+}

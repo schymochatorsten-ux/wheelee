@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "gueglingen",
+    "name": "Güglingen",
+    "center": {
+      "lat": 49.0634544,
+      "lng": 9.0060821
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gueglingen-999e773e12",
+      "city": "gueglingen",
+      "label": "Oberes Tal",
+      "street": "Oberes Tal",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Güglingen",
+      "spotCount": 4,
+      "lat": 49.0647642,
+      "lng": 8.994161000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/109609279), ODbL"
+    },
+    {
+      "id": "gueglingen-9673dc8586",
+      "city": "gueglingen",
+      "label": "Ochsenwiesenstraße",
+      "street": "Ochsenwiesenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Güglingen",
+      "spotCount": 1,
+      "lat": 49.0634544,
+      "lng": 9.0068837,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/193538568), ODbL"
+    },
+    {
+      "id": "gueglingen-65ebbafe0a",
+      "city": "gueglingen",
+      "label": "Ochsenwiesenstraße",
+      "street": "Ochsenwiesenstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Güglingen",
+      "spotCount": 1,
+      "lat": 49.06323505,
+      "lng": 9.005999800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1267246543), ODbL"
+    },
+    {
+      "id": "gueglingen-21c00d4757",
+      "city": "gueglingen",
+      "label": "Ochsenwiesenstraße",
+      "street": "Ochsenwiesenstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Güglingen",
+      "spotCount": 1,
+      "lat": 49.06323535,
+      "lng": 9.0060821,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1267246544), ODbL"
+    }
+  ]
+}

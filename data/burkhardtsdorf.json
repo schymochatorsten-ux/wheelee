@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "burkhardtsdorf",
+    "name": "Burkhardtsdorf",
+    "center": {
+      "lat": 50.734976700000004,
+      "lng": 12.931697800000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "burkhardtsdorf-06a4dbd4d3",
+      "city": "burkhardtsdorf",
+      "label": "Am Auenberg 8",
+      "street": "Am Auenberg",
+      "houseNumber": "8",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burkhardtsdorf",
+      "spotCount": 2,
+      "lat": 50.73320645,
+      "lng": 12.931697800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1337577268), ODbL"
+    },
+    {
+      "id": "burkhardtsdorf-8eec565ea4",
+      "city": "burkhardtsdorf",
+      "label": "Am Markt",
+      "street": "Am Markt",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burkhardtsdorf",
+      "spotCount": 1,
+      "lat": 50.734976700000004,
+      "lng": 12.91959225,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/411317243), ODbL"
+    }
+  ]
+}

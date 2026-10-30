@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "jahnatal",
+    "name": "Jahnatal",
+    "center": {
+      "lat": 51.20500055,
+      "lng": 13.152732100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "jahnatal-956a2e7630",
+      "city": "jahnatal",
+      "label": "Zur Linde",
+      "street": "Zur Linde",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jahnatal",
+      "spotCount": 1,
+      "lat": 51.20500055,
+      "lng": 13.152732100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/51030639), ODbL"
+    }
+  ]
+}

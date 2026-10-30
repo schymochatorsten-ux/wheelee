@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "schwarzenbach-a-wald",
+    "name": "Schwarzenbach a.Wald",
+    "center": {
+      "lat": 50.2876551,
+      "lng": 11.6280368
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schwarzenbach-a-wald-3f55dbbb93",
+      "city": "schwarzenbach-a-wald",
+      "label": "Schwarzenbacher Straße",
+      "street": "Schwarzenbacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwarzenbach a.Wald",
+      "spotCount": 2,
+      "lat": 50.28309315,
+      "lng": 11.661858500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/160267106), ODbL"
+    },
+    {
+      "id": "schwarzenbach-a-wald-b25e2138d9",
+      "city": "schwarzenbach-a-wald",
+      "label": "Windmühle",
+      "street": "Windmühle",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwarzenbach a.Wald",
+      "spotCount": 1,
+      "lat": 50.288208350000005,
+      "lng": 11.6280368,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/97096298), ODbL"
+    },
+    {
+      "id": "schwarzenbach-a-wald-8d142c9a80",
+      "city": "schwarzenbach-a-wald",
+      "label": "Windmühle",
+      "street": "Windmühle",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwarzenbach a.Wald",
+      "spotCount": 1,
+      "lat": 50.2876551,
+      "lng": 11.627539800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/97096387), ODbL"
+    }
+  ]
+}

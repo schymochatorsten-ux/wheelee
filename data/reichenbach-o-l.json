@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "reichenbach-o-l",
+    "name": "Reichenbach/O.L.",
+    "center": {
+      "lat": 51.14048605000001,
+      "lng": 14.7989766
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "reichenbach-o-l-049126f6a3",
+      "city": "reichenbach-o-l",
+      "label": "Mittelstraße",
+      "street": "Mittelstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Reichenbach/O.L.",
+      "spotCount": 1,
+      "lat": 51.14048605000001,
+      "lng": 14.7989766,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/397409435), ODbL"
+    }
+  ]
+}

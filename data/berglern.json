@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "berglern",
+    "name": "Berglern",
+    "center": {
+      "lat": 48.388209950000004,
+      "lng": 11.9288941
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "berglern-38c0265c5b",
+      "city": "berglern",
+      "label": "St.-Florian-Weg 1",
+      "street": "St.-Florian-Weg",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Berglern",
+      "spotCount": 1,
+      "lat": 48.388209950000004,
+      "lng": 11.9288941,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1414499227), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "jettingen",
+    "name": "Jettingen",
+    "center": {
+      "lat": 48.57186370000001,
+      "lng": 8.778099000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "jettingen-1ef3aa350e",
+      "city": "jettingen",
+      "label": "Albstraße",
+      "street": "Albstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jettingen",
+      "spotCount": 2,
+      "lat": 48.5714953,
+      "lng": 8.78071805,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/941941774), ODbL"
+    },
+    {
+      "id": "jettingen-7e3ae972ef",
+      "city": "jettingen",
+      "label": "Heilbergstraße",
+      "street": "Heilbergstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jettingen",
+      "spotCount": 1,
+      "lat": 48.5740606,
+      "lng": 8.76464695,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/381916430), ODbL"
+    },
+    {
+      "id": "jettingen-b2c3162799",
+      "city": "jettingen",
+      "label": "Heilbergstraße 4/1",
+      "street": "Heilbergstraße",
+      "houseNumber": "4/1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jettingen",
+      "spotCount": 1,
+      "lat": 48.57408015,
+      "lng": 8.7649932,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1557359625), ODbL"
+    },
+    {
+      "id": "jettingen-d5c13e9c8f",
+      "city": "jettingen",
+      "label": "Marktplatz 1",
+      "street": "Marktplatz",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jettingen",
+      "spotCount": 1,
+      "lat": 48.57574865000001,
+      "lng": 8.774219200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/925048868), ODbL"
+    },
+    {
+      "id": "jettingen-1a257f3e04",
+      "city": "jettingen",
+      "label": "Parkplatz am Gemeindezentrum",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jettingen",
+      "spotCount": 1,
+      "lat": 48.57186370000001,
+      "lng": 8.7793024,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/208488490), ODbL"
+    },
+    {
+      "id": "jettingen-f3f48c1716",
+      "city": "jettingen",
+      "label": "Praxis für Ergotherapie Martina Dengler",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Jettingen",
+      "spotCount": 1,
+      "lat": 48.5638857,
+      "lng": 8.778099000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1136933923), ODbL"
+    },
+    {
+      "id": "jettingen-8ca0310b44",
+      "city": "jettingen",
+      "label": "Willy-Dieterle-Halle",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Jettingen",
+      "spotCount": 2,
+      "lat": 48.5699258,
+      "lng": 8.7812236,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/36547484), ODbL"
+    }
+  ]
+}

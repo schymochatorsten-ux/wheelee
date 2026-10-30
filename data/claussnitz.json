@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "claussnitz",
+    "name": "Claußnitz",
+    "center": {
+      "lat": 50.936260700000005,
+      "lng": 12.8543667
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "claussnitz-886fc0ab8e",
+      "city": "claussnitz",
+      "label": "Alte Mühle",
+      "street": "Alte Mühle",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Claußnitz",
+      "spotCount": 1,
+      "lat": 50.926344300000004,
+      "lng": 12.852827150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/956243387), ODbL"
+    },
+    {
+      "id": "claussnitz-05ab8977b7",
+      "city": "claussnitz",
+      "label": "Am Anger 4",
+      "street": "Am Anger",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Claußnitz",
+      "spotCount": 1,
+      "lat": 50.936260700000005,
+      "lng": 12.883771900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/30885832), ODbL"
+    },
+    {
+      "id": "claussnitz-b28f32dc50",
+      "city": "claussnitz",
+      "label": "Industriestraße 1",
+      "street": "Industriestraße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Claußnitz",
+      "spotCount": 2,
+      "lat": 50.9514454,
+      "lng": 12.8543667,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/908078500), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bad-sooden-allendorf",
+    "name": "Bad Sooden-Allendorf",
+    "center": {
+      "lat": 51.270687200000005,
+      "lng": 9.9654764
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-sooden-allendorf-f860dd764a",
+      "city": "bad-sooden-allendorf",
+      "label": "Am Gradierwerk",
+      "street": "Am Gradierwerk",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bad Sooden-Allendorf",
+      "spotCount": 10,
+      "lat": 51.270687200000005,
+      "lng": 9.9654764,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/290063921), ODbL"
+    }
+  ]
+}

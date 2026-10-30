@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lengdorf",
+    "name": "Lengdorf",
+    "center": {
+      "lat": 48.26621155,
+      "lng": 12.0461665
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lengdorf-ab35ad1627",
+      "city": "lengdorf",
+      "label": "Thann",
+      "street": "Thann",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lengdorf",
+      "spotCount": 1,
+      "lat": 48.26621155,
+      "lng": 12.0461665,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/71001969), ODbL"
+    }
+  ]
+}

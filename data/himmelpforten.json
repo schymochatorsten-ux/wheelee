@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "himmelpforten",
+    "name": "Himmelpforten",
+    "center": {
+      "lat": 53.622813550000004,
+      "lng": 9.31743885
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "himmelpforten-9e0344c36f",
+      "city": "himmelpforten",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Himmelpforten",
+      "spotCount": 1,
+      "lat": 53.622813550000004,
+      "lng": 9.31176095,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/146923659), ODbL"
+    },
+    {
+      "id": "himmelpforten-de5c2acd41",
+      "city": "himmelpforten",
+      "label": "Kuckucksweg",
+      "street": "Kuckucksweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Himmelpforten",
+      "spotCount": 2,
+      "lat": 53.606727500000005,
+      "lng": 9.31743885,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/36776235), ODbL"
+    }
+  ]
+}

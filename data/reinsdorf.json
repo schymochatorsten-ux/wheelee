@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "reinsdorf",
+    "name": "Reinsdorf",
+    "center": {
+      "lat": 50.694101100000005,
+      "lng": 12.5407338
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "reinsdorf-a93de02636",
+      "city": "reinsdorf",
+      "label": "Lößnitzer Straße 47",
+      "street": "Lößnitzer Straße",
+      "houseNumber": "47",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Reinsdorf",
+      "spotCount": 1,
+      "lat": 50.694101100000005,
+      "lng": 12.5407338,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10994384090), ODbL"
+    }
+  ]
+}

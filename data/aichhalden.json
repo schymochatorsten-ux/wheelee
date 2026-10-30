@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "aichhalden",
+    "name": "Aichhalden",
+    "center": {
+      "lat": 48.305169750000005,
+      "lng": 8.423600799999999
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "aichhalden-827dd3c9df",
+      "city": "aichhalden",
+      "label": "Hagenwinkel 5",
+      "street": "Hagenwinkel",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aichhalden",
+      "spotCount": 1,
+      "lat": 48.30279525,
+      "lng": 8.421906100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/619396836), ODbL"
+    },
+    {
+      "id": "aichhalden-32d4e0a916",
+      "city": "aichhalden",
+      "label": "Kirchgasse 12",
+      "street": "Kirchgasse",
+      "houseNumber": "12",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aichhalden",
+      "spotCount": 2,
+      "lat": 48.305169750000005,
+      "lng": 8.423600799999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/987221392), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "stadtilm",
+    "name": "Stadtilm",
+    "center": {
+      "lat": 50.77436775,
+      "lng": 11.081587900000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "stadtilm-860e248b35",
+      "city": "stadtilm",
+      "label": "Am Markt",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Stadtilm",
+      "spotCount": 1,
+      "lat": 50.774788150000006,
+      "lng": 11.081587900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26977530), ODbL"
+    },
+    {
+      "id": "stadtilm-6ee854c021",
+      "city": "stadtilm",
+      "label": "Feldstraße",
+      "street": "Feldstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stadtilm",
+      "spotCount": 1,
+      "lat": 50.76923115,
+      "lng": 11.07081745,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/121090711), ODbL"
+    },
+    {
+      "id": "stadtilm-8198c8144e",
+      "city": "stadtilm",
+      "label": "Markt 25",
+      "street": "Markt",
+      "houseNumber": "25",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Stadtilm",
+      "spotCount": 1,
+      "lat": 50.77436775,
+      "lng": 11.0824271,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1489800256), ODbL"
+    }
+  ]
+}

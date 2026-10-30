@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "worpswede",
+    "name": "Worpswede",
+    "center": {
+      "lat": 53.22086565000001,
+      "lng": 8.93130005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "worpswede-891c5749bb",
+      "city": "worpswede",
+      "label": "Albert-Reiners-Platz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Worpswede",
+      "spotCount": 1,
+      "lat": 53.22086565000001,
+      "lng": 8.93130005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/112509784), ODbL"
+    }
+  ]
+}

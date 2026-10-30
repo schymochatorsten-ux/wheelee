@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "zotzenheim",
+    "name": "Zotzenheim",
+    "center": {
+      "lat": 49.86508895,
+      "lng": 7.9643313000000004
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zotzenheim-4681b5ebd8",
+      "city": "zotzenheim",
+      "label": "Sitzborn",
+      "street": "Sitzborn",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Zotzenheim",
+      "spotCount": 2,
+      "lat": 49.86495585,
+      "lng": 7.96452225,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/225655645), ODbL"
+    },
+    {
+      "id": "zotzenheim-aad5b83eb7",
+      "city": "zotzenheim",
+      "label": "Sitzborn",
+      "street": "Sitzborn",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Zotzenheim",
+      "spotCount": 1,
+      "lat": 49.86508895,
+      "lng": 7.9643313000000004,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1481411325), ODbL"
+    },
+    {
+      "id": "zotzenheim-059352db73",
+      "city": "zotzenheim",
+      "label": "Sitzborn",
+      "street": "Sitzborn",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Zotzenheim",
+      "spotCount": 1,
+      "lat": 49.86512775,
+      "lng": 7.9642955,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1481411326), ODbL"
+    }
+  ]
+}

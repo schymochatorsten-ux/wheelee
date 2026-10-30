@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "rathen",
+    "name": "Rathen",
+    "center": {
+      "lat": 50.962082900000006,
+      "lng": 14.0879598
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rathen-994f9f6385",
+      "city": "rathen",
+      "label": "Amselgrund 16",
+      "street": "Amselgrund",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rathen",
+      "spotCount": 2,
+      "lat": 50.962082900000006,
+      "lng": 14.0804226,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/429280010), ODbL"
+    },
+    {
+      "id": "rathen-5210a4adff",
+      "city": "rathen",
+      "label": "Füllhölzelweg 1",
+      "street": "Füllhölzelweg",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rathen",
+      "spotCount": 1,
+      "lat": 50.9589426,
+      "lng": 14.0879598,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/527623378), ODbL"
+    }
+  ]
+}

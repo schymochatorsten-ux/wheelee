@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wiesenau",
+    "name": "Wiesenau",
+    "center": {
+      "lat": 52.229389100000006,
+      "lng": 14.5916879
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wiesenau-e978e7a2e1",
+      "city": "wiesenau",
+      "label": "Alte Poststraße 1",
+      "street": "Alte Poststraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wiesenau",
+      "spotCount": 1,
+      "lat": 52.229389100000006,
+      "lng": 14.5916879,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/66087383), ODbL"
+    }
+  ]
+}

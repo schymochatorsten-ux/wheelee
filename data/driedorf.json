@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "driedorf",
+    "name": "Driedorf",
+    "center": {
+      "lat": 50.61619040000001,
+      "lng": 8.14092635
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "driedorf-554473774f",
+      "city": "driedorf",
+      "label": "An der Krombachtalsperre",
+      "street": "An der Krombachtalsperre",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Driedorf",
+      "spotCount": 1,
+      "lat": 50.61619040000001,
+      "lng": 8.14092635,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/121348347), ODbL"
+    }
+  ]
+}

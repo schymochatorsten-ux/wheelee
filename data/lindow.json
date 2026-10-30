@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lindow",
+    "name": "Lindow (Mark)",
+    "center": {
+      "lat": 52.974075400000004,
+      "lng": 13.009049500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lindow-570d5953a0",
+      "city": "lindow",
+      "label": "Sportschule",
+      "street": "Sportschule",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Lindow (Mark)",
+      "spotCount": 1,
+      "lat": 52.974075400000004,
+      "lng": 13.009049500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11166489301), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "arzberg-sn",
+    "name": "Arzberg",
+    "center": {
+      "lat": 51.49955270000001,
+      "lng": 13.120638750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "arzberg-sn-44b8e88b25",
+      "city": "arzberg-sn",
+      "label": "Belgeraner Straße",
+      "street": "Belgeraner Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Arzberg",
+      "spotCount": 1,
+      "lat": 51.49955270000001,
+      "lng": 13.120638750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/355136726), ODbL"
+    }
+  ]
+}

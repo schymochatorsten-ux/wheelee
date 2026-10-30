@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kaebschuetztal",
+    "name": "Käbschütztal",
+    "center": {
+      "lat": 51.11688050000001,
+      "lng": 13.37566245
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kaebschuetztal-1bce731670",
+      "city": "kaebschuetztal",
+      "label": "Meißner Straße 21c",
+      "street": "Meißner Straße",
+      "houseNumber": "21c",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Käbschütztal",
+      "spotCount": 2,
+      "lat": 51.11688050000001,
+      "lng": 13.37566245,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1222019060), ODbL"
+    }
+  ]
+}

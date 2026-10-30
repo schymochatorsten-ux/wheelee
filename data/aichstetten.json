@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "aichstetten",
+    "name": "Aichstetten",
+    "center": {
+      "lat": 47.8871702,
+      "lng": 10.0486854
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "aichstetten-5f2525c24c",
+      "city": "aichstetten",
+      "label": "Allgäustraße",
+      "street": "Allgäustraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aichstetten",
+      "spotCount": 2,
+      "lat": 47.88686655,
+      "lng": 10.0473502,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/589671051), ODbL"
+    },
+    {
+      "id": "aichstetten-e3ffde5ddd",
+      "city": "aichstetten",
+      "label": "Schloßbergweg 5",
+      "street": "Schloßbergweg",
+      "houseNumber": "5",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aichstetten",
+      "spotCount": 2,
+      "lat": 47.8871702,
+      "lng": 10.0486854,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/603244548), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schoenbach",
+    "name": "Schönbach",
+    "center": {
+      "lat": 51.0625161,
+      "lng": 14.5683415
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schoenbach-5f88fc6844",
+      "city": "schoenbach",
+      "label": "Teichdamm",
+      "street": "Teichdamm",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schönbach",
+      "spotCount": 2,
+      "lat": 51.0625161,
+      "lng": 14.5683415,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/38269743), ODbL"
+    }
+  ]
+}

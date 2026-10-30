@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "stadelhofen",
+    "name": "Stadelhofen",
+    "center": {
+      "lat": 49.9949409,
+      "lng": 11.166713350000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "stadelhofen-8ab5215b61",
+      "city": "stadelhofen",
+      "label": "Paradiestal",
+      "street": "Paradiestal",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Stadelhofen",
+      "spotCount": 3,
+      "lat": 49.9949409,
+      "lng": 11.166713350000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/742817355), ODbL"
+    }
+  ]
+}

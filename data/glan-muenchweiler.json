@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "glan-muenchweiler",
+    "name": "Glan-Münchweiler",
+    "center": {
+      "lat": 49.4727977,
+      "lng": 7.4394525
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "glan-muenchweiler-249d52d88a",
+      "city": "glan-muenchweiler",
+      "label": "Wasgau Parkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Glan-Münchweiler",
+      "spotCount": 1,
+      "lat": 49.4727977,
+      "lng": 7.4394525,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31270809), ODbL"
+    }
+  ]
+}

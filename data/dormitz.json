@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "dormitz",
+    "name": "Dormitz",
+    "center": {
+      "lat": 49.6009212,
+      "lng": 11.120123150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "dormitz-3dc88446b6",
+      "city": "dormitz",
+      "label": "Bierleinswiesen 1",
+      "street": "Bierleinswiesen",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dormitz",
+      "spotCount": 1,
+      "lat": 49.60089325,
+      "lng": 11.120101900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1264139498), ODbL"
+    },
+    {
+      "id": "dormitz-e9ed72bcd7",
+      "city": "dormitz",
+      "label": "Bierleinswiesen 1",
+      "street": "Bierleinswiesen",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Dormitz",
+      "spotCount": 1,
+      "lat": 49.6009212,
+      "lng": 11.120123150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1264139499), ODbL"
+    }
+  ]
+}

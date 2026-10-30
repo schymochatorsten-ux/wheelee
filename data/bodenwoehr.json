@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bodenwoehr",
+    "name": "Bodenwöhr",
+    "center": {
+      "lat": 49.277995700000005,
+      "lng": 12.326496950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bodenwoehr-e4555b7d57",
+      "city": "bodenwoehr",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bodenwöhr",
+      "spotCount": 2,
+      "lat": 49.277995700000005,
+      "lng": 12.326496950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28968130), ODbL"
+    },
+    {
+      "id": "bodenwoehr-1540d9e356",
+      "city": "bodenwoehr",
+      "label": "Kolpingstraße",
+      "street": "Kolpingstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bodenwöhr",
+      "spotCount": 2,
+      "lat": 49.27283355,
+      "lng": 12.299104,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29018147), ODbL"
+    }
+  ]
+}

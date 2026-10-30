@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "calau",
+    "name": "Calau",
+    "center": {
+      "lat": 51.749649600000005,
+      "lng": 13.96270475
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "calau-d44697e363",
+      "city": "calau",
+      "label": "Am Friedhof",
+      "street": "Am Friedhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Calau",
+      "spotCount": 1,
+      "lat": 51.749649600000005,
+      "lng": 13.96270475,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/51768761), ODbL"
+    }
+  ]
+}

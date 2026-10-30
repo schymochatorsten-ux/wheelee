@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wechselburg",
+    "name": "Wechselburg",
+    "center": {
+      "lat": 51.0034897,
+      "lng": 12.767353800000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wechselburg-e1af24cfab",
+      "city": "wechselburg",
+      "label": "Wanderparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Wechselburg",
+      "spotCount": 2,
+      "lat": 51.0034897,
+      "lng": 12.767353800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/225922821), ODbL"
+    }
+  ]
+}

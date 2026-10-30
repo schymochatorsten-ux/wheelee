@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "eimeldingen",
+    "name": "Eimeldingen",
+    "center": {
+      "lat": 47.628266800000006,
+      "lng": 7.59672905
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "eimeldingen-ab9a228c26",
+      "city": "eimeldingen",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Eimeldingen",
+      "spotCount": 1,
+      "lat": 47.62731035,
+      "lng": 7.596954500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/727639024), ODbL"
+    },
+    {
+      "id": "eimeldingen-1e4a0e2bd6",
+      "city": "eimeldingen",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eimeldingen",
+      "spotCount": 1,
+      "lat": 47.627647100000004,
+      "lng": 7.59672905,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1417398693), ODbL"
+    },
+    {
+      "id": "eimeldingen-037fcce344",
+      "city": "eimeldingen",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Eimeldingen",
+      "spotCount": 1,
+      "lat": 47.628266800000006,
+      "lng": 7.59574175,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/598540558), ODbL"
+    },
+    {
+      "id": "eimeldingen-b368deb31d",
+      "city": "eimeldingen",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Eimeldingen",
+      "spotCount": 1,
+      "lat": 47.62831675,
+      "lng": 7.5957236,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1417398113), ODbL"
+    }
+  ]
+}

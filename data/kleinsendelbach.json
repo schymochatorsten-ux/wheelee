@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kleinsendelbach",
+    "name": "Kleinsendelbach",
+    "center": {
+      "lat": 49.59603130000001,
+      "lng": 11.15704885
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kleinsendelbach-69375dd523",
+      "city": "kleinsendelbach",
+      "label": "Schulstraße 2",
+      "street": "Schulstraße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kleinsendelbach",
+      "spotCount": 1,
+      "lat": 49.59603130000001,
+      "lng": 11.15704885,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1486988415), ODbL"
+    }
+  ]
+}

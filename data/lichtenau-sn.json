@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "lichtenau-sn",
+    "name": "Lichtenau",
+    "center": {
+      "lat": 50.9074444,
+      "lng": 12.959604050000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lichtenau-sn-a4daeeb005",
+      "city": "lichtenau-sn",
+      "label": "Auerswalder Hauptstraße 193",
+      "street": "Auerswalder Hauptstraße",
+      "houseNumber": "193",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lichtenau",
+      "spotCount": 1,
+      "lat": 50.90018765000001,
+      "lng": 12.9172607,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1455950079), ODbL"
+    },
+    {
+      "id": "lichtenau-sn-e6d80d29c1",
+      "city": "lichtenau-sn",
+      "label": "Bahnweg",
+      "street": "Bahnweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lichtenau",
+      "spotCount": 2,
+      "lat": 50.9074444,
+      "lng": 12.959604050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/830801849), ODbL"
+    }
+  ]
+}

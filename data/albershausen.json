@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "albershausen",
+    "name": "Albershausen",
+    "center": {
+      "lat": 48.6928128,
+      "lng": 9.56822605
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "albershausen-a35eb583b3",
+      "city": "albershausen",
+      "label": "Schafhofstraße",
+      "street": "Schafhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Albershausen",
+      "spotCount": 1,
+      "lat": 48.6928128,
+      "lng": 9.56822605,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1452150576), ODbL"
+    },
+    {
+      "id": "albershausen-bd252bf40b",
+      "city": "albershausen",
+      "label": "Schafhofstraße 7",
+      "street": "Schafhofstraße",
+      "houseNumber": "7",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Albershausen",
+      "spotCount": 1,
+      "lat": 48.692800150000004,
+      "lng": 9.568164000000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1452150577), ODbL"
+    }
+  ]
+}

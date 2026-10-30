@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "wertach",
+    "name": "Wertach",
+    "center": {
+      "lat": 47.615995700000006,
+      "lng": 10.4306985
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wertach-58c1e48207",
+      "city": "wertach",
+      "label": "Kolpingstraße 4",
+      "street": "Kolpingstraße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wertach",
+      "spotCount": 1,
+      "lat": 47.615785200000005,
+      "lng": 10.430652700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11941291476), ODbL"
+    },
+    {
+      "id": "wertach-79ecc3b166",
+      "city": "wertach",
+      "label": "Kolpingstraße 4",
+      "street": "Kolpingstraße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wertach",
+      "spotCount": 3,
+      "lat": 47.615995700000006,
+      "lng": 10.4306985,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12234491901), ODbL"
+    },
+    {
+      "id": "wertach-f04328eb0e",
+      "city": "wertach",
+      "label": "P2 Nordparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wertach",
+      "spotCount": 2,
+      "lat": 47.61609095,
+      "lng": 10.430720400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1021418092), ODbL"
+    }
+  ]
+}

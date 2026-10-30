@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "rammingen",
+    "name": "Rammingen",
+    "center": {
+      "lat": 48.06265755,
+      "lng": 10.583070600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rammingen-0d04a72dce",
+      "city": "rammingen",
+      "label": "Rathausplatz 1",
+      "street": "Rathausplatz",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rammingen",
+      "spotCount": 1,
+      "lat": 48.06265755,
+      "lng": 10.583070600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1187744503), ODbL"
+    },
+    {
+      "id": "rammingen-4e1d998f90",
+      "city": "rammingen",
+      "label": "Rathausplatz 3",
+      "street": "Rathausplatz",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Rammingen",
+      "spotCount": 1,
+      "lat": 48.0621316,
+      "lng": 10.58266015,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1187744526), ODbL"
+    }
+  ]
+}

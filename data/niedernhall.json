@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "niedernhall",
+    "name": "Niedernhall",
+    "center": {
+      "lat": 49.2948435,
+      "lng": 9.61811005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "niedernhall-99e74ddc8c",
+      "city": "niedernhall",
+      "label": "Hauptstraße 61",
+      "street": "Hauptstraße",
+      "houseNumber": "61",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Niedernhall",
+      "spotCount": 1,
+      "lat": 49.2948435,
+      "lng": 9.61811005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/853928923), ODbL"
+    }
+  ]
+}

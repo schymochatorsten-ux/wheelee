@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "pruchten",
+    "name": "Pruchten",
+    "center": {
+      "lat": 54.380721050000005,
+      "lng": 12.679997250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "pruchten-4eac5cda3b",
+      "city": "pruchten",
+      "label": "Zum Hafen 4",
+      "street": "Zum Hafen",
+      "houseNumber": "4",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Pruchten",
+      "spotCount": 1,
+      "lat": 54.380721050000005,
+      "lng": 12.679997250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1099784508), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "leipheim",
+    "name": "Leipheim",
+    "center": {
+      "lat": 48.450771550000006,
+      "lng": 10.21558075
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "leipheim-a389bd3c80",
+      "city": "leipheim",
+      "label": "Riedheimer Straße",
+      "street": "Riedheimer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Leipheim",
+      "spotCount": 2,
+      "lat": 48.450771550000006,
+      "lng": 10.21558075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/158836671), ODbL"
+    }
+  ]
+}

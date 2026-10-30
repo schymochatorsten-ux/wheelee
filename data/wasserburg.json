@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wasserburg",
+    "name": "Wasserburg (Bodensee)",
+    "center": {
+      "lat": 47.57161240000001,
+      "lng": 9.6395947
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wasserburg-432b9c91b3",
+      "city": "wasserburg",
+      "label": "Ladestraße",
+      "street": "Ladestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wasserburg (Bodensee)",
+      "spotCount": 1,
+      "lat": 47.57161240000001,
+      "lng": 9.6395947,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/53371164), ODbL"
+    }
+  ]
+}

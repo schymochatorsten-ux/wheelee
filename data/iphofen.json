@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "iphofen",
+    "name": "Iphofen",
+    "center": {
+      "lat": 49.697014300000006,
+      "lng": 10.2557328
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "iphofen-5d98620896",
+      "city": "iphofen",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Iphofen",
+      "spotCount": 1,
+      "lat": 49.696983700000004,
+      "lng": 10.255585400000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9522946938), ODbL"
+    },
+    {
+      "id": "iphofen-6970b9b868",
+      "city": "iphofen",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Iphofen",
+      "spotCount": 1,
+      "lat": 49.6969672,
+      "lng": 10.2557328,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9522946939), ODbL"
+    },
+    {
+      "id": "iphofen-46fa59ede7",
+      "city": "iphofen",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Iphofen",
+      "spotCount": 1,
+      "lat": 49.696939500000006,
+      "lng": 10.255707000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9522946940), ODbL"
+    },
+    {
+      "id": "iphofen-13c14fd66d",
+      "city": "iphofen",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Iphofen",
+      "spotCount": 1,
+      "lat": 49.697014300000006,
+      "lng": 10.2556112,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13030466597), ODbL"
+    },
+    {
+      "id": "iphofen-44db38a708",
+      "city": "iphofen",
+      "label": "Anton-Sabel-Straße",
+      "street": "Anton-Sabel-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Iphofen",
+      "spotCount": 1,
+      "lat": 49.7100238,
+      "lng": 10.26580655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/92209941), ODbL"
+    },
+    {
+      "id": "iphofen-30c372811b",
+      "city": "iphofen",
+      "label": "Einersheimer Straße",
+      "street": "Einersheimer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Iphofen",
+      "spotCount": 1,
+      "lat": 49.7029398,
+      "lng": 10.2643849,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1182280614), ODbL"
+    },
+    {
+      "id": "iphofen-e5e9edb626",
+      "city": "iphofen",
+      "label": "Karl-Knauf-Halle",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Iphofen",
+      "spotCount": 1,
+      "lat": 49.70667585,
+      "lng": 10.26464825,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/53860882), ODbL"
+    }
+  ]
+}

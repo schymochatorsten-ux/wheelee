@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kabelsketal",
+    "name": "Kabelsketal",
+    "center": {
+      "lat": 51.429632500000004,
+      "lng": 12.118428250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kabelsketal-7afb53a564",
+      "city": "kabelsketal",
+      "label": "Lange Straße 18",
+      "street": "Lange Straße",
+      "houseNumber": "18",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kabelsketal",
+      "spotCount": 3,
+      "lat": 51.429632500000004,
+      "lng": 12.118428250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/301752039), ODbL"
+    }
+  ]
+}

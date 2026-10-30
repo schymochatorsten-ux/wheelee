@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "hemmingen-bw",
+    "name": "Hemmingen",
+    "center": {
+      "lat": 48.86436045000001,
+      "lng": 9.039882350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hemmingen-bw-51c0aeb572",
+      "city": "hemmingen-bw",
+      "label": "Freiherr-von-Varnbüler-Straße",
+      "street": "Freiherr-von-Varnbüler-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hemmingen",
+      "spotCount": 3,
+      "lat": 48.864460300000005,
+      "lng": 9.03940365,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27276707), ODbL"
+    },
+    {
+      "id": "hemmingen-bw-7ae66a38d1",
+      "city": "hemmingen-bw",
+      "label": "Lindenstraße",
+      "street": "Lindenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hemmingen",
+      "spotCount": 1,
+      "lat": 48.86517095000001,
+      "lng": 9.03523075,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/218953980), ODbL"
+    },
+    {
+      "id": "hemmingen-bw-bdfbb006e1",
+      "city": "hemmingen-bw",
+      "label": "Münchinger Straße",
+      "street": "Münchinger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hemmingen",
+      "spotCount": 1,
+      "lat": 48.86436045000001,
+      "lng": 9.039909300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1279471077), ODbL"
+    },
+    {
+      "id": "hemmingen-bw-067818cfe8",
+      "city": "hemmingen-bw",
+      "label": "Münchinger Straße",
+      "street": "Münchinger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hemmingen",
+      "spotCount": 1,
+      "lat": 48.864329600000005,
+      "lng": 9.039895900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1279471078), ODbL"
+    },
+    {
+      "id": "hemmingen-bw-aed443b809",
+      "city": "hemmingen-bw",
+      "label": "Münchinger Straße",
+      "street": "Münchinger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hemmingen",
+      "spotCount": 1,
+      "lat": 48.86429820000001,
+      "lng": 9.039882350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1279471079), ODbL"
+    }
+  ]
+}

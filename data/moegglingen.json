@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "moegglingen",
+    "name": "Mögglingen",
+    "center": {
+      "lat": 48.824815400000006,
+      "lng": 9.959176500000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "moegglingen-4b0f19f4c2",
+      "city": "moegglingen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Mögglingen",
+      "spotCount": 1,
+      "lat": 48.82482825,
+      "lng": 9.959166500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1386662206), ODbL"
+    },
+    {
+      "id": "moegglingen-e7439a2d1f",
+      "city": "moegglingen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Mögglingen",
+      "spotCount": 2,
+      "lat": 48.824815400000006,
+      "lng": 9.959176500000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1386662208), ODbL"
+    },
+    {
+      "id": "moegglingen-3f3b0470d7",
+      "city": "moegglingen",
+      "label": "Bahnhofstraße 27",
+      "street": "Bahnhofstraße",
+      "houseNumber": "27",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Mögglingen",
+      "spotCount": 1,
+      "lat": 48.82480255,
+      "lng": 9.95918655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1386662207), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bodenmais",
+    "name": "Bodenmais",
+    "center": {
+      "lat": 49.0719458,
+      "lng": 13.10119635
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bodenmais-0ec41428b0",
+      "city": "bodenmais",
+      "label": "ALDI Süd",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bodenmais",
+      "spotCount": 2,
+      "lat": 49.0719458,
+      "lng": 13.09180055,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/88520907), ODbL"
+    },
+    {
+      "id": "bodenmais-6288eed2cc",
+      "city": "bodenmais",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Su 07:00-18:00",
+      "district": "Bodenmais",
+      "spotCount": 1,
+      "lat": 49.070010350000004,
+      "lng": 13.10119635,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/446956200), ODbL"
+    },
+    {
+      "id": "bodenmais-84b3a45aea",
+      "city": "bodenmais",
+      "label": "Finkenweg",
+      "street": "Finkenweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": "24/7",
+      "district": "Bodenmais",
+      "spotCount": 2,
+      "lat": 49.072109000000005,
+      "lng": 13.101267800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/199388792), ODbL"
+    }
+  ]
+}

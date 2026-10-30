@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "etzelwang",
+    "name": "Etzelwang",
+    "center": {
+      "lat": 49.526276700000004,
+      "lng": 11.584473500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "etzelwang-2a5bf52ded",
+      "city": "etzelwang",
+      "label": "Nürnberger Straße",
+      "street": "Nürnberger Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Etzelwang",
+      "spotCount": 1,
+      "lat": 49.526276700000004,
+      "lng": 11.584473500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12133576887), ODbL"
+    }
+  ]
+}

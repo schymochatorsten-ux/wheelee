@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hergatz",
+    "name": "Hergatz",
+    "center": {
+      "lat": 47.64631965,
+      "lng": 9.82680895
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hergatz-f0c1f3c9f6",
+      "city": "hergatz",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hergatz",
+      "spotCount": 1,
+      "lat": 47.64631965,
+      "lng": 9.82680895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/221159392), ODbL"
+    }
+  ]
+}

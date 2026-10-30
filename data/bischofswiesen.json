@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bischofswiesen",
+    "name": "Bischofswiesen",
+    "center": {
+      "lat": 47.65164115,
+      "lng": 12.9634483
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bischofswiesen-2332b6eb3e",
+      "city": "bischofswiesen",
+      "label": "Schulstraße",
+      "street": "Schulstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bischofswiesen",
+      "spotCount": 1,
+      "lat": 47.65164115,
+      "lng": 12.9634483,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1241955061), ODbL"
+    }
+  ]
+}

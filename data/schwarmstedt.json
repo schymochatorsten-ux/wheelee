@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "schwarmstedt",
+    "name": "Schwarmstedt",
+    "center": {
+      "lat": 52.6780507,
+      "lng": 9.615921100000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schwarmstedt-fa4998919f",
+      "city": "schwarmstedt",
+      "label": "Am Markt",
+      "street": "Am Markt",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwarmstedt",
+      "spotCount": 1,
+      "lat": 52.677545050000006,
+      "lng": 9.6153601,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/188089230), ODbL"
+    },
+    {
+      "id": "schwarmstedt-07e7a06010",
+      "city": "schwarmstedt",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwarmstedt",
+      "spotCount": 1,
+      "lat": 52.6794488,
+      "lng": 9.62464905,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/23712928), ODbL"
+    },
+    {
+      "id": "schwarmstedt-ce34a72052",
+      "city": "schwarmstedt",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "Mo-Th,Sa-Su 00:00-24:00;Fr 00:00-12:00,19:00-24:00",
+      "district": "Schwarmstedt",
+      "spotCount": 2,
+      "lat": 52.6780507,
+      "lng": 9.615921100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/4423888), ODbL"
+    }
+  ]
+}

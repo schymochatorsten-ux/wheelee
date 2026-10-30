@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "zettlitz",
+    "name": "Zettlitz",
+    "center": {
+      "lat": 51.0745185,
+      "lng": 12.835550600000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zettlitz-7705eeade9",
+      "city": "zettlitz",
+      "label": "Ceesewitzer Straße 17",
+      "street": "Ceesewitzer Straße",
+      "houseNumber": "17",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zettlitz",
+      "spotCount": 1,
+      "lat": 51.0745185,
+      "lng": 12.835550600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/131690884), ODbL"
+    }
+  ]
+}

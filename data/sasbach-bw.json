@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "sasbach-bw",
+    "name": "Sasbach am Kaiserstuhl",
+    "center": {
+      "lat": 48.139957550000005,
+      "lng": 7.6141728
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sasbach-bw-082a8c5373",
+      "city": "sasbach-bw",
+      "label": "Hintergasse",
+      "street": "Hintergasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Sasbach am Kaiserstuhl",
+      "spotCount": 1,
+      "lat": 48.139957550000005,
+      "lng": 7.6141728,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/914259420), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "longuich",
+    "name": "Longuich",
+    "center": {
+      "lat": 49.80948815,
+      "lng": 6.7698029
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "longuich-582e6d214d",
+      "city": "longuich",
+      "label": "Maiwiese",
+      "street": "Maiwiese",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Longuich",
+      "spotCount": 2,
+      "lat": 49.80948815,
+      "lng": 6.7698029,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1030976504), ODbL"
+    }
+  ]
+}

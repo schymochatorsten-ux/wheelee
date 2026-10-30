@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "mainbernheim",
+    "name": "Mainbernheim",
+    "center": {
+      "lat": 49.711009000000004,
+      "lng": 10.217445000000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mainbernheim-48c1e1d396",
+      "city": "mainbernheim",
+      "label": "Herrnstraße 13",
+      "street": "Herrnstraße",
+      "houseNumber": "13",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Mainbernheim",
+      "spotCount": 1,
+      "lat": 49.711009000000004,
+      "lng": 10.217445000000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13770372193), ODbL"
+    }
+  ]
+}

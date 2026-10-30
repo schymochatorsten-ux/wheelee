@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "borsdorf",
+    "name": "Borsdorf",
+    "center": {
+      "lat": 51.3618951,
+      "lng": 12.527710800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "borsdorf-08af292d89",
+      "city": "borsdorf",
+      "label": "Sommerfelder Straße",
+      "street": "Sommerfelder Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Borsdorf",
+      "spotCount": 2,
+      "lat": 51.3618951,
+      "lng": 12.527710800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/799321177), ODbL"
+    }
+  ]
+}

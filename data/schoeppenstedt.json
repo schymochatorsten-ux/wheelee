@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schoeppenstedt",
+    "name": "Schöppenstedt",
+    "center": {
+      "lat": 52.1410846,
+      "lng": 10.77196205
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schoeppenstedt-9a5179c339",
+      "city": "schoeppenstedt",
+      "label": "Schöppenstedt, Bahnhof",
+      "street": "Schöppenstedt, Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schöppenstedt",
+      "spotCount": 4,
+      "lat": 52.1410846,
+      "lng": 10.77196205,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/516429603), ODbL"
+    }
+  ]
+}

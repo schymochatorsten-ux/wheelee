@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "muendersbach",
+    "name": "Mündersbach",
+    "center": {
+      "lat": 50.61221385,
+      "lng": 7.734681050000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "muendersbach-ef2653ac7f",
+      "city": "muendersbach",
+      "label": "Alte Straße",
+      "street": "Alte Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mündersbach",
+      "spotCount": 1,
+      "lat": 50.61221385,
+      "lng": 7.734681050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/72311374), ODbL"
+    }
+  ]
+}

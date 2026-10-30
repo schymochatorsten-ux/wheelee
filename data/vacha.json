@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "vacha",
+    "name": "Vacha",
+    "center": {
+      "lat": 50.82572725,
+      "lng": 10.0233354
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "vacha-1bdd96d00d",
+      "city": "vacha",
+      "label": "Völkershäuser Straße",
+      "street": "Völkershäuser Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Vacha",
+      "spotCount": 15,
+      "lat": 50.82572725,
+      "lng": 10.0233354,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1437011752), ODbL"
+    }
+  ]
+}

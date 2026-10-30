@@ -1,0 +1,105 @@
+{
+  "city": {
+    "slug": "kappeln",
+    "name": "Kappeln",
+    "center": {
+      "lat": 54.660236700000006,
+      "lng": 9.9313736
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kappeln-a34269b2bd",
+      "city": "kappeln",
+      "label": "Eichwaldplatz",
+      "street": "Eichwaldplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kappeln",
+      "spotCount": 1,
+      "lat": 54.6602906,
+      "lng": 9.9313736,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/192295126), ODbL"
+    },
+    {
+      "id": "kappeln-80851333ea",
+      "city": "kappeln",
+      "label": "Feldstraße",
+      "street": "Feldstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kappeln",
+      "spotCount": 6,
+      "lat": 54.659435550000005,
+      "lng": 9.93018535,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/26603230), ODbL"
+    },
+    {
+      "id": "kappeln-cb009f32bd",
+      "city": "kappeln",
+      "label": "Franz-von-Assisi-Allee",
+      "street": "Franz-von-Assisi-Allee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kappeln",
+      "spotCount": 1,
+      "lat": 54.646985,
+      "lng": 10.01086985,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/372229932), ODbL"
+    },
+    {
+      "id": "kappeln-cece68ec52",
+      "city": "kappeln",
+      "label": "Gerichtsstraße 4",
+      "street": "Gerichtsstraße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kappeln",
+      "spotCount": 1,
+      "lat": 54.66134770000001,
+      "lng": 9.9265474,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/973031199), ODbL"
+    },
+    {
+      "id": "kappeln-2db665e3fc",
+      "city": "kappeln",
+      "label": "Konsul-Lorentzen-Straße 3",
+      "street": "Konsul-Lorentzen-Straße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kappeln",
+      "spotCount": 2,
+      "lat": 54.65875505,
+      "lng": 9.924731900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/710308556), ODbL"
+    },
+    {
+      "id": "kappeln-0ff61464ac",
+      "city": "kappeln",
+      "label": "Wiker Straße",
+      "street": "Wiker Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kappeln",
+      "spotCount": 4,
+      "lat": 54.660236700000006,
+      "lng": 9.94249345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/690310600), ODbL"
+    }
+  ]
+}

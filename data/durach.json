@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "durach",
+    "name": "Durach",
+    "center": {
+      "lat": 47.699166500000004,
+      "lng": 10.342322750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "durach-de69767b55",
+      "city": "durach",
+      "label": "Bachtelweg",
+      "street": "Bachtelweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Durach",
+      "spotCount": 10,
+      "lat": 47.694086850000005,
+      "lng": 10.3573162,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/119208570), ODbL"
+    },
+    {
+      "id": "durach-eb9a3a6293",
+      "city": "durach",
+      "label": "Füssener Straße",
+      "street": "Füssener Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Durach",
+      "spotCount": 4,
+      "lat": 47.702467350000006,
+      "lng": 10.33992735,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/42505992), ODbL"
+    },
+    {
+      "id": "durach-17a022cd0d",
+      "city": "durach",
+      "label": "Karlsberger Straße",
+      "street": "Karlsberger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Durach",
+      "spotCount": 2,
+      "lat": 47.699166500000004,
+      "lng": 10.342322750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/47131736), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "mittenwald",
+    "name": "Mittenwald",
+    "center": {
+      "lat": 47.4422234,
+      "lng": 11.2619416
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "mittenwald-9e42b9d4ee",
+      "city": "mittenwald",
+      "label": "Fritz-Prölß-Platz 2",
+      "street": "Fritz-Prölß-Platz",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Mittenwald",
+      "spotCount": 1,
+      "lat": 47.442002200000005,
+      "lng": 11.2619416,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/14210380905), ODbL"
+    },
+    {
+      "id": "mittenwald-6e8bf188a1",
+      "city": "mittenwald",
+      "label": "Im Gries 41",
+      "street": "Im Gries",
+      "houseNumber": "41",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mittenwald",
+      "spotCount": 1,
+      "lat": 47.4422234,
+      "lng": 11.2581123,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/11025539340), ODbL"
+    }
+  ]
+}

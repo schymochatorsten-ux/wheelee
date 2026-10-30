@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "hirschfeld-sn",
+    "name": "Hirschfeld",
+    "center": {
+      "lat": 50.6498646,
+      "lng": 12.487160200000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hirschfeld-sn-00557ef8b1",
+      "city": "hirschfeld-sn",
+      "label": "Niedercrinitz",
+      "street": "Niedercrinitz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hirschfeld",
+      "spotCount": 2,
+      "lat": 50.6498646,
+      "lng": 12.486784200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1363101386), ODbL"
+    },
+    {
+      "id": "hirschfeld-sn-cf0e1561db",
+      "city": "hirschfeld-sn",
+      "label": "Niedercrinitz",
+      "street": "Niedercrinitz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hirschfeld",
+      "spotCount": 1,
+      "lat": 50.650064900000004,
+      "lng": 12.487160200000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1441722806), ODbL"
+    },
+    {
+      "id": "hirschfeld-sn-f05fb10094",
+      "city": "hirschfeld-sn",
+      "label": "Niedercrinitz",
+      "street": "Niedercrinitz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hirschfeld",
+      "spotCount": 1,
+      "lat": 50.64916875,
+      "lng": 12.490287200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1441722809), ODbL"
+    }
+  ]
+}

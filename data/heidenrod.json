@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "heidenrod",
+    "name": "Heidenrod",
+    "center": {
+      "lat": 50.16870350000001,
+      "lng": 8.0211008
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "heidenrod-f08aefadfb",
+      "city": "heidenrod",
+      "label": "Die Haide",
+      "street": "Die Haide",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heidenrod",
+      "spotCount": 1,
+      "lat": 50.16870350000001,
+      "lng": 8.0130611,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1037809995), ODbL"
+    },
+    {
+      "id": "heidenrod-937695cf25",
+      "city": "heidenrod",
+      "label": "Schwalbacher Straße",
+      "street": "Schwalbacher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Heidenrod",
+      "spotCount": 1,
+      "lat": 50.16193305,
+      "lng": 8.0211008,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/240873385), ODbL"
+    }
+  ]
+}

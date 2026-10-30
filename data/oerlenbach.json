@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "oerlenbach",
+    "name": "Oerlenbach",
+    "center": {
+      "lat": 50.14564440000001,
+      "lng": 10.15173025
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oerlenbach-63bb77ff22",
+      "city": "oerlenbach",
+      "label": "An der Heide 4",
+      "street": "An der Heide",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oerlenbach",
+      "spotCount": 1,
+      "lat": 50.14564440000001,
+      "lng": 10.15173025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1465214090), ODbL"
+    }
+  ]
+}

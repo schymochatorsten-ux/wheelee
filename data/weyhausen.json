@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "weyhausen",
+    "name": "Weyhausen",
+    "center": {
+      "lat": 52.463156100000006,
+      "lng": 10.720986750000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "weyhausen-eb372581e7",
+      "city": "weyhausen",
+      "label": "An der Klanze 18",
+      "street": "An der Klanze",
+      "houseNumber": "18",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Weyhausen",
+      "spotCount": 1,
+      "lat": 52.462667950000004,
+      "lng": 10.728163250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1074295606), ODbL"
+    },
+    {
+      "id": "weyhausen-659d9c0623",
+      "city": "weyhausen",
+      "label": "Edeka Eisbrenner Weyhausen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weyhausen",
+      "spotCount": 2,
+      "lat": 52.4633498,
+      "lng": 10.7164587,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/146411168), ODbL"
+    },
+    {
+      "id": "weyhausen-188842433b",
+      "city": "weyhausen",
+      "label": "Klanze-Center Weyhausen - Ost",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weyhausen",
+      "spotCount": 1,
+      "lat": 52.4631192,
+      "lng": 10.724107450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/74847894), ODbL"
+    },
+    {
+      "id": "weyhausen-79b80da48c",
+      "city": "weyhausen",
+      "label": "Klanze-Center Weyhausen - West",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weyhausen",
+      "spotCount": 1,
+      "lat": 52.463156100000006,
+      "lng": 10.720986750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/74847891), ODbL"
+    },
+    {
+      "id": "weyhausen-32dde31c59",
+      "city": "weyhausen",
+      "label": "Rathaus Weyhausen",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Weyhausen",
+      "spotCount": 1,
+      "lat": 52.46615905,
+      "lng": 10.7154834,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/262994434), ODbL"
+    }
+  ]
+}

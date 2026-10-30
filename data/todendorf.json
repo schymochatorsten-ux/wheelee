@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "todendorf",
+    "name": "Todendorf",
+    "center": {
+      "lat": 53.693325200000004,
+      "lng": 10.321393050000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "todendorf-2ad0df3529",
+      "city": "todendorf",
+      "label": "Raststätte Buddikate West",
+      "street": "Raststätte Buddikate West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Todendorf",
+      "spotCount": 1,
+      "lat": 53.693325200000004,
+      "lng": 10.321393050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1090787801), ODbL"
+    },
+    {
+      "id": "todendorf-9dfee9b497",
+      "city": "todendorf",
+      "label": "Raststätte Buddikate West",
+      "street": "Raststätte Buddikate West",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Todendorf",
+      "spotCount": 2,
+      "lat": 53.69278250000001,
+      "lng": 10.320594150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1090787807), ODbL"
+    },
+    {
+      "id": "todendorf-1f110b877a",
+      "city": "todendorf",
+      "label": "Raststätte Buddikate West",
+      "street": "Raststätte Buddikate West",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Todendorf",
+      "spotCount": 1,
+      "lat": 53.69337325000001,
+      "lng": 10.32142275,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1301869352), ODbL"
+    }
+  ]
+}

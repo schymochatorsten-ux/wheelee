@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "ohrdruf",
+    "name": "Ohrdruf",
+    "center": {
+      "lat": 50.829930450000006,
+      "lng": 10.73154035
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ohrdruf-28b7bc11d2",
+      "city": "ohrdruf",
+      "label": "Hohenlohestraße 27",
+      "street": "Hohenlohestraße",
+      "houseNumber": "27",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ohrdruf",
+      "spotCount": 1,
+      "lat": 50.829923750000006,
+      "lng": 10.731492300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1505822077), ODbL"
+    },
+    {
+      "id": "ohrdruf-0dfdc0a7af",
+      "city": "ohrdruf",
+      "label": "Hohenlohestraße 27",
+      "street": "Hohenlohestraße",
+      "houseNumber": "27",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ohrdruf",
+      "spotCount": 1,
+      "lat": 50.829930450000006,
+      "lng": 10.73154035,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1505822078), ODbL"
+    }
+  ]
+}

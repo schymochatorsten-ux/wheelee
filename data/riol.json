@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "riol",
+    "name": "Riol",
+    "center": {
+      "lat": 49.7837942,
+      "lng": 6.8132745
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "riol-9b847a055d",
+      "city": "riol",
+      "label": "Rastplatz Rioler Wald",
+      "street": "Rastplatz Rioler Wald",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Riol",
+      "spotCount": 1,
+      "lat": 49.7837942,
+      "lng": 6.8132745,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13009350970), ODbL"
+    }
+  ]
+}

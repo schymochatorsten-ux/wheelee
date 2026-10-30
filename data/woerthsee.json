@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "woerthsee",
+    "name": "Wörthsee",
+    "center": {
+      "lat": 48.0707499,
+      "lng": 11.2046864
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "woerthsee-03dcf2df8d",
+      "city": "woerthsee",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wörthsee",
+      "spotCount": 4,
+      "lat": 48.0619196,
+      "lng": 11.20727195,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/155191088), ODbL"
+    },
+    {
+      "id": "woerthsee-8193d813ee",
+      "city": "woerthsee",
+      "label": "Kuckuckstraße 3",
+      "street": "Kuckuckstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wörthsee",
+      "spotCount": 1,
+      "lat": 48.07208005,
+      "lng": 11.2046864,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1268364973), ODbL"
+    },
+    {
+      "id": "woerthsee-05546c6046",
+      "city": "woerthsee",
+      "label": "Seestraße",
+      "street": "Seestraße",
+      "houseNumber": null,
+      "note": "gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Wörthsee",
+      "spotCount": 1,
+      "lat": 48.0707499,
+      "lng": 11.199747100000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12974645706), ODbL"
+    }
+  ]
+}

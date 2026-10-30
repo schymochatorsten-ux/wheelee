@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hatzenbuehl",
+    "name": "Hatzenbühl",
+    "center": {
+      "lat": 49.11043860000001,
+      "lng": 8.246791250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hatzenbuehl-e892cc1502",
+      "city": "hatzenbuehl",
+      "label": "Kirchstraße",
+      "street": "Kirchstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hatzenbühl",
+      "spotCount": 1,
+      "lat": 49.10710085,
+      "lng": 8.246791250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/999882716), ODbL"
+    },
+    {
+      "id": "hatzenbuehl-57ceff42d1",
+      "city": "hatzenbuehl",
+      "label": "Kirchstraße 2",
+      "street": "Kirchstraße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hatzenbühl",
+      "spotCount": 1,
+      "lat": 49.11043860000001,
+      "lng": 8.24387955,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29464675), ODbL"
+    }
+  ]
+}

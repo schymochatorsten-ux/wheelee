@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "berge",
+    "name": "Berge",
+    "center": {
+      "lat": 52.625986000000005,
+      "lng": 7.6748788
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "berge-9122e3b762",
+      "city": "berge",
+      "label": "Herzlaker Straße",
+      "street": "Herzlaker Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Berge",
+      "spotCount": 10,
+      "lat": 52.625986000000005,
+      "lng": 7.6759645,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/697821145), ODbL"
+    },
+    {
+      "id": "berge-36ed486907",
+      "city": "berge",
+      "label": "Schulweg",
+      "street": "Schulweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Berge",
+      "spotCount": 16,
+      "lat": 52.62494950000001,
+      "lng": 7.6748788,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/697821150), ODbL"
+    },
+    {
+      "id": "berge-5d8c2def5d",
+      "city": "berge",
+      "label": "Schulweg",
+      "street": "Schulweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Berge",
+      "spotCount": 10,
+      "lat": 52.6259895,
+      "lng": 7.6746483,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/697821154), ODbL"
+    }
+  ]
+}

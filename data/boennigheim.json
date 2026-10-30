@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "boennigheim",
+    "name": "Bönnigheim",
+    "center": {
+      "lat": 49.04148585,
+      "lng": 9.0921169
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "boennigheim-00f55501ff",
+      "city": "boennigheim",
+      "label": "Bachstraße",
+      "street": "Bachstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bönnigheim",
+      "spotCount": 1,
+      "lat": 49.0394133,
+      "lng": 9.084030100000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/1757330513), ODbL"
+    },
+    {
+      "id": "boennigheim-91e6586e44",
+      "city": "boennigheim",
+      "label": "Bleichwiese",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bönnigheim",
+      "spotCount": 1,
+      "lat": 49.040096750000004,
+      "lng": 9.0921169,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/47500680), ODbL"
+    },
+    {
+      "id": "boennigheim-ba50f84262",
+      "city": "boennigheim",
+      "label": "Burgplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bönnigheim",
+      "spotCount": 1,
+      "lat": 49.041824000000005,
+      "lng": 9.091157500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/46602454), ODbL"
+    },
+    {
+      "id": "boennigheim-a4cc83b5a6",
+      "city": "boennigheim",
+      "label": "Hauptstraße 31",
+      "street": "Hauptstraße",
+      "houseNumber": "31",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bönnigheim",
+      "spotCount": 1,
+      "lat": 49.04148585,
+      "lng": 9.0931687,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/443134343), ODbL"
+    }
+  ]
+}

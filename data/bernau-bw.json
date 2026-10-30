@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bernau-bw",
+    "name": "Bernau im Schwarzwald",
+    "center": {
+      "lat": 47.78202520000001,
+      "lng": 8.043076450000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bernau-bw-284a6dd7e2",
+      "city": "bernau-bw",
+      "label": "Parkplatz Steinernes Kreuz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Bernau im Schwarzwald",
+      "spotCount": 1,
+      "lat": 47.78202520000001,
+      "lng": 8.043076450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/276763961), ODbL"
+    }
+  ]
+}

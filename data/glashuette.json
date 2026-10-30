@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "glashuette",
+    "name": "Glashütte",
+    "center": {
+      "lat": 50.89323265,
+      "lng": 13.7773012
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "glashuette-a0fd8d46d2",
+      "city": "glashuette",
+      "label": "Hauptstraße 7",
+      "street": "Hauptstraße",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Glashütte",
+      "spotCount": 1,
+      "lat": 50.851921350000005,
+      "lng": 13.78102495,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/498633891), ODbL"
+    },
+    {
+      "id": "glashuette-65cc4cd71e",
+      "city": "glashuette",
+      "label": "Markt 2",
+      "street": "Markt",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Glashütte",
+      "spotCount": 1,
+      "lat": 50.8524434,
+      "lng": 13.7773012,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/409259634), ODbL"
+    },
+    {
+      "id": "glashuette-d9c1c1d9b1",
+      "city": "glashuette",
+      "label": "Wilischbaude",
+      "street": "Wilischbaude",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Glashütte",
+      "spotCount": 1,
+      "lat": 50.92424270000001,
+      "lng": 13.741078750000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/310909610), ODbL"
+    },
+    {
+      "id": "glashuette-dd841a5771",
+      "city": "glashuette",
+      "label": "Zur Alten Schäferei",
+      "street": "Zur Alten Schäferei",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Glashütte",
+      "spotCount": 1,
+      "lat": 50.89323265,
+      "lng": 13.756851150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1331139613), ODbL"
+    }
+  ]
+}

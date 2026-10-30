@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "oberottmarshausen",
+    "name": "Oberottmarshausen",
+    "center": {
+      "lat": 48.235420700000006,
+      "lng": 10.852433950000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberottmarshausen-dcaa4c6cf7",
+      "city": "oberottmarshausen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberottmarshausen",
+      "spotCount": 4,
+      "lat": 48.235420700000006,
+      "lng": 10.852433950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1060005671), ODbL"
+    }
+  ]
+}

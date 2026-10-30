@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bismark",
+    "name": "Bismark (Altmark)",
+    "center": {
+      "lat": 52.66800365,
+      "lng": 11.5936309
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bismark-a352f8343f",
+      "city": "bismark",
+      "label": "Hohenwulscher Bahnhof",
+      "street": "Hohenwulscher Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bismark (Altmark)",
+      "spotCount": 1,
+      "lat": 52.66800365,
+      "lng": 11.5936309,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1498018983), ODbL"
+    },
+    {
+      "id": "bismark-d3dda3150e",
+      "city": "bismark",
+      "label": "Hohenwulscher Bahnhof",
+      "street": "Hohenwulscher Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bismark (Altmark)",
+      "spotCount": 1,
+      "lat": 52.668016800000004,
+      "lng": 11.59368585,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1498018984), ODbL"
+    },
+    {
+      "id": "bismark-66ac7fd82c",
+      "city": "bismark",
+      "label": "Wilhelm-Lüdecke-Straße 17",
+      "street": "Wilhelm-Lüdecke-Straße",
+      "houseNumber": "17",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bismark (Altmark)",
+      "spotCount": 1,
+      "lat": 52.664332550000005,
+      "lng": 11.5590035,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1492606565), ODbL"
+    }
+  ]
+}

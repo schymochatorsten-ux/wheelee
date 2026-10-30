@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "bad-berka",
+    "name": "Bad Berka",
+    "center": {
+      "lat": 50.8957666,
+      "lng": 11.2810314
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bad-berka-a2cccd34d8",
+      "city": "bad-berka",
+      "label": "Tannrodaer Straße",
+      "street": "Tannrodaer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Berka",
+      "spotCount": 1,
+      "lat": 50.8957666,
+      "lng": 11.2810314,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1550755969), ODbL"
+    },
+    {
+      "id": "bad-berka-dd24b4b2ad",
+      "city": "bad-berka",
+      "label": "Tannrodaer Straße",
+      "street": "Tannrodaer Straße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bad Berka",
+      "spotCount": 1,
+      "lat": 50.895259200000005,
+      "lng": 11.280686450000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1550755973), ODbL"
+    }
+  ]
+}

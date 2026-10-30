@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "koenigsfeld",
+    "name": "Königsfeld im Schwarzwald",
+    "center": {
+      "lat": 48.1393624,
+      "lng": 8.4148215
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "koenigsfeld-3605cff162",
+      "city": "koenigsfeld",
+      "label": "Mozartweg",
+      "street": "Mozartweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Königsfeld im Schwarzwald",
+      "spotCount": 1,
+      "lat": 48.1393624,
+      "lng": 8.4148215,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/323093572), ODbL"
+    }
+  ]
+}

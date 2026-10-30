@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "egloffstein",
+    "name": "Egloffstein",
+    "center": {
+      "lat": 49.699131550000004,
+      "lng": 11.264762300000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "egloffstein-9da00a6bab",
+      "city": "egloffstein",
+      "label": "Behindertenparkplatz Egloffstein",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Egloffstein",
+      "spotCount": 2,
+      "lat": 49.721325300000004,
+      "lng": 11.2287496,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/4310361), ODbL"
+    },
+    {
+      "id": "egloffstein-57a56052da",
+      "city": "egloffstein",
+      "label": "Talstraße",
+      "street": "Talstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Egloffstein",
+      "spotCount": 1,
+      "lat": 49.69906945,
+      "lng": 11.264762300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1302723119), ODbL"
+    },
+    {
+      "id": "egloffstein-03a8ac52e1",
+      "city": "egloffstein",
+      "label": "Talstraße",
+      "street": "Talstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Egloffstein",
+      "spotCount": 1,
+      "lat": 49.699131550000004,
+      "lng": 11.264873300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1302723122), ODbL"
+    }
+  ]
+}

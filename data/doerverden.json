@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "doerverden",
+    "name": "Dörverden",
+    "center": {
+      "lat": 52.846944650000005,
+      "lng": 9.24634575
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "doerverden-009b5de3b7",
+      "city": "doerverden",
+      "label": "Hinter der Bahn",
+      "street": "Hinter der Bahn",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dörverden",
+      "spotCount": 1,
+      "lat": 52.84589485000001,
+      "lng": 9.24634575,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1128964543), ODbL"
+    },
+    {
+      "id": "doerverden-cdb0abe3d1",
+      "city": "doerverden",
+      "label": "Stedorfer Bahnhofstraße",
+      "street": "Stedorfer Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Dörverden",
+      "spotCount": 2,
+      "lat": 52.846944650000005,
+      "lng": 9.246007300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/99348503), ODbL"
+    }
+  ]
+}

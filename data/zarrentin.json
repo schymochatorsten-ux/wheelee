@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "zarrentin",
+    "name": "Zarrentin am Schaalsee",
+    "center": {
+      "lat": 53.5544354,
+      "lng": 10.9012195
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zarrentin-6870bdf0b5",
+      "city": "zarrentin",
+      "label": "Zum Schulcampus",
+      "street": "Zum Schulcampus",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zarrentin am Schaalsee",
+      "spotCount": 2,
+      "lat": 53.5544354,
+      "lng": 10.9012195,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1326267971), ODbL"
+    }
+  ]
+}

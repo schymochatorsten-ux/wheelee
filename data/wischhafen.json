@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wischhafen",
+    "name": "Wischhafen",
+    "center": {
+      "lat": 53.788244500000005,
+      "lng": 9.3436403
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wischhafen-9fdb3c0feb",
+      "city": "wischhafen",
+      "label": "Glückstädter Straße",
+      "street": "Glückstädter Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wischhafen",
+      "spotCount": 2,
+      "lat": 53.788244500000005,
+      "lng": 9.3436403,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/76634903), ODbL"
+    }
+  ]
+}

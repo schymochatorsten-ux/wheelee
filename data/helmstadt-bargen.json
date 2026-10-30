@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "helmstadt-bargen",
+    "name": "Helmstadt-Bargen",
+    "center": {
+      "lat": 49.32018405000001,
+      "lng": 8.97519325
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "helmstadt-bargen-2486c7ceec",
+      "city": "helmstadt-bargen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Helmstadt-Bargen",
+      "spotCount": 2,
+      "lat": 49.32018405000001,
+      "lng": 8.97519325,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/371513098), ODbL"
+    }
+  ]
+}

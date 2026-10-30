@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "langenfeld-rp",
+    "name": "Langenfeld",
+    "center": {
+      "lat": 50.37679250000001,
+      "lng": 7.091107150000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "langenfeld-rp-0cc88908fe",
+      "city": "langenfeld-rp",
+      "label": "Kirchstraße 11",
+      "street": "Kirchstraße",
+      "houseNumber": "11",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Langenfeld",
+      "spotCount": 1,
+      "lat": 50.37679250000001,
+      "lng": 7.091107150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1544405449), ODbL"
+    }
+  ]
+}

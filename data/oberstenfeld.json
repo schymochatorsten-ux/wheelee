@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "oberstenfeld",
+    "name": "Oberstenfeld",
+    "center": {
+      "lat": 49.0248,
+      "lng": 9.31999895
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberstenfeld-9a0cdd5430",
+      "city": "oberstenfeld",
+      "label": "Großbottwarer Straße 3",
+      "street": "Großbottwarer Straße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Oberstenfeld",
+      "spotCount": 1,
+      "lat": 49.0248,
+      "lng": 9.31999895,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/563571445), ODbL"
+    }
+  ]
+}

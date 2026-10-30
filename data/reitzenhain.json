@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "reitzenhain",
+    "name": "Reitzenhain",
+    "center": {
+      "lat": 50.1518001,
+      "lng": 7.7808082
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "reitzenhain-c433720407",
+      "city": "reitzenhain",
+      "label": "Am Wiesengrund",
+      "street": "Am Wiesengrund",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Reitzenhain",
+      "spotCount": 3,
+      "lat": 50.1518001,
+      "lng": 7.7808082,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10767540953), ODbL"
+    }
+  ]
+}

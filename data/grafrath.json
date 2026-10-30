@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "grafrath",
+    "name": "Grafrath",
+    "center": {
+      "lat": 48.13174535,
+      "lng": 11.154521200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "grafrath-417491874b",
+      "city": "grafrath",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grafrath",
+      "spotCount": 1,
+      "lat": 48.13284865,
+      "lng": 11.154521200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/25217644), ODbL"
+    },
+    {
+      "id": "grafrath-b3648be55a",
+      "city": "grafrath",
+      "label": "Bahnhofstraße 91",
+      "street": "Bahnhofstraße",
+      "houseNumber": "91",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grafrath",
+      "spotCount": 1,
+      "lat": 48.13174535,
+      "lng": 11.15180175,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/340286249), ODbL"
+    },
+    {
+      "id": "grafrath-9400cc9eba",
+      "city": "grafrath",
+      "label": "Hauptstraße 66",
+      "street": "Hauptstraße",
+      "houseNumber": "66",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Grafrath",
+      "spotCount": 1,
+      "lat": 48.12276645,
+      "lng": 11.158982900000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1391340338), ODbL"
+    }
+  ]
+}

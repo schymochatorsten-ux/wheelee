@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "hodenhagen",
+    "name": "Hodenhagen",
+    "center": {
+      "lat": 52.766909950000006,
+      "lng": 9.5958523
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hodenhagen-deb79d6fe3",
+      "city": "hodenhagen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hodenhagen",
+      "spotCount": 2,
+      "lat": 52.766909950000006,
+      "lng": 9.5947654,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1165233776), ODbL"
+    },
+    {
+      "id": "hodenhagen-7cb03ee210",
+      "city": "hodenhagen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hodenhagen",
+      "spotCount": 2,
+      "lat": 52.7655395,
+      "lng": 9.5958523,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1352292194), ODbL"
+    }
+  ]
+}

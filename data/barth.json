@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "barth",
+    "name": "Barth",
+    "center": {
+      "lat": 54.369688550000006,
+      "lng": 12.7254656
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "barth-d4b2ca36f8",
+      "city": "barth",
+      "label": "Am Westhafen",
+      "street": "Am Westhafen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Barth",
+      "spotCount": 1,
+      "lat": 54.371249500000005,
+      "lng": 12.7254656,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1113380232), ODbL"
+    },
+    {
+      "id": "barth-0dfb8ffcce",
+      "city": "barth",
+      "label": "Gartenstraße",
+      "street": "Gartenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Barth",
+      "spotCount": 1,
+      "lat": 54.369688550000006,
+      "lng": 12.72386765,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/370713938), ODbL"
+    },
+    {
+      "id": "barth-3e1fb6f4d1",
+      "city": "barth",
+      "label": "Hafen West",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Barth",
+      "spotCount": 2,
+      "lat": 54.3711802,
+      "lng": 12.72473295,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31556931), ODbL"
+    },
+    {
+      "id": "barth-3a00b8bdc7",
+      "city": "barth",
+      "label": "Hunnenstraße 4",
+      "street": "Hunnenstraße",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Barth",
+      "spotCount": 1,
+      "lat": 54.36894505000001,
+      "lng": 12.727471650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/212679335), ODbL"
+    },
+    {
+      "id": "barth-21341a9d37",
+      "city": "barth",
+      "label": "Markt",
+      "street": "Markt",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Barth",
+      "spotCount": 2,
+      "lat": 54.369034600000006,
+      "lng": 12.72595135,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/31564091), ODbL"
+    }
+  ]
+}

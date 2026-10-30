@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "braunlage",
+    "name": "Braunlage",
+    "center": {
+      "lat": 51.723337300000004,
+      "lng": 10.6117639
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "braunlage-a89876e213",
+      "city": "braunlage",
+      "label": "Am Pfaffenstieg",
+      "street": "Am Pfaffenstieg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Braunlage",
+      "spotCount": 1,
+      "lat": 51.73194550000001,
+      "lng": 10.6125558,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/296868764), ODbL"
+    },
+    {
+      "id": "braunlage-983e7bd752",
+      "city": "braunlage",
+      "label": "Glückauf-Weg",
+      "street": "Glückauf-Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Braunlage",
+      "spotCount": 1,
+      "lat": 51.7100607,
+      "lng": 10.519936650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/29257542), ODbL"
+    },
+    {
+      "id": "braunlage-7dcc19f792",
+      "city": "braunlage",
+      "label": "Lederhecke 1",
+      "street": "Lederhecke",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Braunlage",
+      "spotCount": 2,
+      "lat": 51.723337300000004,
+      "lng": 10.6117639,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/808014759), ODbL"
+    }
+  ]
+}

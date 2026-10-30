@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kirchweidach",
+    "name": "Kirchweidach",
+    "center": {
+      "lat": 48.092845350000005,
+      "lng": 12.6484064
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kirchweidach-68bd0d204c",
+      "city": "kirchweidach",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kirchweidach",
+      "spotCount": 1,
+      "lat": 48.092845350000005,
+      "lng": 12.6484064,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/476634187), ODbL"
+    }
+  ]
+}

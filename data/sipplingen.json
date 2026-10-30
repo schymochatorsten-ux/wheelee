@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "sipplingen",
+    "name": "Sipplingen",
+    "center": {
+      "lat": 47.79646425,
+      "lng": 9.09630795
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sipplingen-0c5fd87134",
+      "city": "sipplingen",
+      "label": "Parkplatz Bahnhof",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Sipplingen",
+      "spotCount": 1,
+      "lat": 47.79646425,
+      "lng": 9.0937628,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/797073750), ODbL"
+    },
+    {
+      "id": "sipplingen-383f4a23cf",
+      "city": "sipplingen",
+      "label": "Parkplatz Landungsplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Sipplingen",
+      "spotCount": 3,
+      "lat": 47.79509845,
+      "lng": 9.09630795,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/672510951), ODbL"
+    }
+  ]
+}

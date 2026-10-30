@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "schoemberg",
+    "name": "Schömberg",
+    "center": {
+      "lat": 48.7824638,
+      "lng": 8.654639750000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schoemberg-d61a02cd43",
+      "city": "schoemberg",
+      "label": "Hugo-Römpler-Straße",
+      "street": "Hugo-Römpler-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schömberg",
+      "spotCount": 3,
+      "lat": 48.78831825,
+      "lng": 8.6438417,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1249127652), ODbL"
+    },
+    {
+      "id": "schoemberg-20acb678d6",
+      "city": "schoemberg",
+      "label": "Schwarzwaldstraße",
+      "street": "Schwarzwaldstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schömberg",
+      "spotCount": 1,
+      "lat": 48.7824638,
+      "lng": 8.6546792,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1087672888), ODbL"
+    },
+    {
+      "id": "schoemberg-2b71d8f383",
+      "city": "schoemberg",
+      "label": "Schwarzwaldstraße",
+      "street": "Schwarzwaldstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schömberg",
+      "spotCount": 1,
+      "lat": 48.7824109,
+      "lng": 8.654639750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1087672889), ODbL"
+    },
+    {
+      "id": "schoemberg-bef5e8feae",
+      "city": "schoemberg",
+      "label": "Schwarzwaldstraße",
+      "street": "Schwarzwaldstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schömberg",
+      "spotCount": 1,
+      "lat": 48.7823592,
+      "lng": 8.65460125,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1087672890), ODbL"
+    }
+  ]
+}

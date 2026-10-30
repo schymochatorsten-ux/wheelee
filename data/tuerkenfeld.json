@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "tuerkenfeld",
+    "name": "Türkenfeld",
+    "center": {
+      "lat": 48.1049199,
+      "lng": 11.07696615
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "tuerkenfeld-dfc3da08c9",
+      "city": "tuerkenfeld",
+      "label": "Türkenfeld P+R",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Türkenfeld",
+      "spotCount": 3,
+      "lat": 48.1049199,
+      "lng": 11.07696615,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27864486), ODbL"
+    }
+  ]
+}

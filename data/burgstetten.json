@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "burgstetten",
+    "name": "Burgstetten",
+    "center": {
+      "lat": 48.9288009,
+      "lng": 9.3707213
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "burgstetten-05e4ac3dba",
+      "city": "burgstetten",
+      "label": "Bahnhof 3",
+      "street": "Bahnhof",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burgstetten",
+      "spotCount": 3,
+      "lat": 48.92822485000001,
+      "lng": 9.36946045,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/996473700), ODbL"
+    },
+    {
+      "id": "burgstetten-f0f66b5942",
+      "city": "burgstetten",
+      "label": "Marbacher Straße 64",
+      "street": "Marbacher Straße",
+      "houseNumber": "64",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Burgstetten",
+      "spotCount": 1,
+      "lat": 48.9301686,
+      "lng": 9.3656345,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1382096989), ODbL"
+    },
+    {
+      "id": "burgstetten-b103b8c8ca",
+      "city": "burgstetten",
+      "label": "Neue Straße",
+      "street": "Neue Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burgstetten",
+      "spotCount": 1,
+      "lat": 48.9288009,
+      "lng": 9.3707213,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/289014646), ODbL"
+    },
+    {
+      "id": "burgstetten-cec7b976c9",
+      "city": "burgstetten",
+      "label": "Neue Straße",
+      "street": "Neue Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burgstetten",
+      "spotCount": 5,
+      "lat": 48.92410395,
+      "lng": 9.37418765,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1376686405), ODbL"
+    },
+    {
+      "id": "burgstetten-0007f482ad",
+      "city": "burgstetten",
+      "label": "Neue Straße 2",
+      "street": "Neue Straße",
+      "houseNumber": "2",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Burgstetten",
+      "spotCount": 2,
+      "lat": 48.92886885,
+      "lng": 9.3709755,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1487656906), ODbL"
+    }
+  ]
+}

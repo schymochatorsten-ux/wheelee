@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "walheim",
+    "name": "Walheim",
+    "center": {
+      "lat": 49.01038355,
+      "lng": 9.151949000000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "walheim-8d91d08849",
+      "city": "walheim",
+      "label": "Behindertenparkplätze Villastraße",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Walheim",
+      "spotCount": 1,
+      "lat": 49.01038355,
+      "lng": 9.151949000000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1548822643), ODbL"
+    }
+  ]
+}

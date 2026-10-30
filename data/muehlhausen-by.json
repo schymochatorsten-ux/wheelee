@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "muehlhausen-by",
+    "name": "Mühlhausen",
+    "center": {
+      "lat": 49.17745275,
+      "lng": 11.447725550000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "muehlhausen-by-9ccf472918",
+      "city": "muehlhausen-by",
+      "label": "Edeka",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mühlhausen",
+      "spotCount": 1,
+      "lat": 49.1752755,
+      "lng": 11.447725550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/211197218), ODbL"
+    },
+    {
+      "id": "muehlhausen-by-9704e512c0",
+      "city": "muehlhausen-by",
+      "label": "Wappersdorfer Straße",
+      "street": "Wappersdorfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Mühlhausen",
+      "spotCount": 1,
+      "lat": 49.17745275,
+      "lng": 11.4473655,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/211197307), ODbL"
+    }
+  ]
+}

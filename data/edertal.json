@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "edertal",
+    "name": "Edertal",
+    "center": {
+      "lat": 51.1807067,
+      "lng": 9.057193700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "edertal-6879fe4a22",
+      "city": "edertal",
+      "label": "Zur Sperrmauer",
+      "street": "Zur Sperrmauer",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Edertal",
+      "spotCount": 3,
+      "lat": 51.1807067,
+      "lng": 9.057193700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/276956412), ODbL"
+    },
+    {
+      "id": "edertal-347d5db9c6",
+      "city": "edertal",
+      "label": "Zur Sperrmauer 15",
+      "street": "Zur Sperrmauer",
+      "houseNumber": "15",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Edertal",
+      "spotCount": 1,
+      "lat": 51.175931950000006,
+      "lng": 9.05490425,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/680676161), ODbL"
+    }
+  ]
+}

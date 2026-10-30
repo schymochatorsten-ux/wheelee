@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "saal-a-d-saale",
+    "name": "Saal a.d.Saale",
+    "center": {
+      "lat": 50.317180400000005,
+      "lng": 10.356288800000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "saal-a-d-saale-b612f2622f",
+      "city": "saal-a-d-saale",
+      "label": "Marktplatz",
+      "street": "Marktplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Saal a.d.Saale",
+      "spotCount": 1,
+      "lat": 50.317180400000005,
+      "lng": 10.356288800000002,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/853574004), ODbL"
+    }
+  ]
+}

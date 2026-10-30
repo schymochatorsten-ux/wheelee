@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "friedrichskoog",
+    "name": "Friedrichskoog",
+    "center": {
+      "lat": 54.029673100000004,
+      "lng": 8.83867865
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "friedrichskoog-4c8b832f2a",
+      "city": "friedrichskoog",
+      "label": "An der Seeschleuse",
+      "street": "An der Seeschleuse",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Friedrichskoog",
+      "spotCount": 1,
+      "lat": 54.001062600000004,
+      "lng": 8.8773978,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10114153153), ODbL"
+    },
+    {
+      "id": "friedrichskoog-acaf289a6e",
+      "city": "friedrichskoog",
+      "label": "Strandweg",
+      "street": "Strandweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Friedrichskoog",
+      "spotCount": 1,
+      "lat": 54.029673100000004,
+      "lng": 8.8384715,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/5760424277), ODbL"
+    },
+    {
+      "id": "friedrichskoog-bba8d92b65",
+      "city": "friedrichskoog",
+      "label": "Strandweg",
+      "street": "Strandweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Friedrichskoog",
+      "spotCount": 1,
+      "lat": 54.029555,
+      "lng": 8.8385783,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/10117784047), ODbL"
+    },
+    {
+      "id": "friedrichskoog-55401accc4",
+      "city": "friedrichskoog",
+      "label": "Strandweg",
+      "street": "Strandweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Friedrichskoog",
+      "spotCount": 2,
+      "lat": 54.0304199,
+      "lng": 8.83867865,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/863779972), ODbL"
+    }
+  ]
+}

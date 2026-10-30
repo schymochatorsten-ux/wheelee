@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "fuerstenzell",
+    "name": "Fürstenzell",
+    "center": {
+      "lat": 48.5233429,
+      "lng": 13.31864375
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "fuerstenzell-3397e1afa5",
+      "city": "fuerstenzell",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Fürstenzell",
+      "spotCount": 1,
+      "lat": 48.5224834,
+      "lng": 13.317592900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/668684508), ODbL"
+    },
+    {
+      "id": "fuerstenzell-c89fc7b1fe",
+      "city": "fuerstenzell",
+      "label": "Doktorweg",
+      "street": "Doktorweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Fürstenzell",
+      "spotCount": 2,
+      "lat": 48.524008050000006,
+      "lng": 13.318680950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/224306516), ODbL"
+    },
+    {
+      "id": "fuerstenzell-cfa7fa162e",
+      "city": "fuerstenzell",
+      "label": "Doktorweg",
+      "street": "Doktorweg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Fürstenzell",
+      "spotCount": 2,
+      "lat": 48.5233429,
+      "lng": 13.31864375,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/525348514), ODbL"
+    }
+  ]
+}

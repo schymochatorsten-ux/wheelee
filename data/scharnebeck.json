@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "scharnebeck",
+    "name": "Scharnebeck",
+    "center": {
+      "lat": 53.2932843,
+      "lng": 10.490280600000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "scharnebeck-15189d4b5a",
+      "city": "scharnebeck",
+      "label": "Bardowicker Straße",
+      "street": "Bardowicker Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Scharnebeck",
+      "spotCount": 2,
+      "lat": 53.2982071,
+      "lng": 10.490280600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/317097928), ODbL"
+    },
+    {
+      "id": "scharnebeck-2d55e401a3",
+      "city": "scharnebeck",
+      "label": "Bardowicker Weg",
+      "street": "Bardowicker Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Scharnebeck",
+      "spotCount": 2,
+      "lat": 53.292120800000006,
+      "lng": 10.48611245,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/39322693), ODbL"
+    },
+    {
+      "id": "scharnebeck-b6d095dac5",
+      "city": "scharnebeck",
+      "label": "Bardowicker Weg",
+      "street": "Bardowicker Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Scharnebeck",
+      "spotCount": 2,
+      "lat": 53.292027700000006,
+      "lng": 10.486189750000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1396252223), ODbL"
+    },
+    {
+      "id": "scharnebeck-9651d7801d",
+      "city": "scharnebeck",
+      "label": "Parkplatz Edeka Sparkasse Hohmann",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Scharnebeck",
+      "spotCount": 3,
+      "lat": 53.2945402,
+      "lng": 10.503239100000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/54174445), ODbL"
+    },
+    {
+      "id": "scharnebeck-3fe4e1a02b",
+      "city": "scharnebeck",
+      "label": "Röthenkuhlen 85",
+      "street": "Röthenkuhlen",
+      "houseNumber": "85",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Scharnebeck",
+      "spotCount": 3,
+      "lat": 53.2932843,
+      "lng": 10.491401250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/39484509), ODbL"
+    }
+  ]
+}

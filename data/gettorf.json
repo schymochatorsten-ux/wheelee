@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "gettorf",
+    "name": "Gettorf",
+    "center": {
+      "lat": 54.409045500000005,
+      "lng": 9.97946375
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gettorf-625ed4c631",
+      "city": "gettorf",
+      "label": "Hohe Straße",
+      "street": "Hohe Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gettorf",
+      "spotCount": 1,
+      "lat": 54.408354200000005,
+      "lng": 9.9803167,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32642587), ODbL"
+    },
+    {
+      "id": "gettorf-b3372ef7a8",
+      "city": "gettorf",
+      "label": "Mühlenplatz",
+      "street": "Mühlenplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Gettorf",
+      "spotCount": 2,
+      "lat": 54.409045500000005,
+      "lng": 9.97946375,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/67154627), ODbL"
+    },
+    {
+      "id": "gettorf-dd4ed64f64",
+      "city": "gettorf",
+      "label": "Schulstraße 1",
+      "street": "Schulstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gettorf",
+      "spotCount": 1,
+      "lat": 54.4101426,
+      "lng": 9.975816600000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/420533267), ODbL"
+    },
+    {
+      "id": "gettorf-f508396d4e",
+      "city": "gettorf",
+      "label": "Spritzengang 2",
+      "street": "Spritzengang",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Gettorf",
+      "spotCount": 2,
+      "lat": 54.4082621,
+      "lng": 9.9738752,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/682643890), ODbL"
+    }
+  ]
+}

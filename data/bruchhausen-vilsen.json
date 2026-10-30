@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "bruchhausen-vilsen",
+    "name": "Bruchhausen-Vilsen",
+    "center": {
+      "lat": 52.82891325,
+      "lng": 8.99492815
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bruchhausen-vilsen-ce1f52b475",
+      "city": "bruchhausen-vilsen",
+      "label": "Am Gaswerk",
+      "street": "Am Gaswerk",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Bruchhausen-Vilsen",
+      "spotCount": 2,
+      "lat": 52.827337,
+      "lng": 8.990369900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1291072165), ODbL"
+    },
+    {
+      "id": "bruchhausen-vilsen-c1ab2be877",
+      "city": "bruchhausen-vilsen",
+      "label": "Am Gaswerk",
+      "street": "Am Gaswerk",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Bruchhausen-Vilsen",
+      "spotCount": 2,
+      "lat": 52.8271558,
+      "lng": 8.9904543,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1291072170), ODbL"
+    },
+    {
+      "id": "bruchhausen-vilsen-8e09694317",
+      "city": "bruchhausen-vilsen",
+      "label": "Schöne Reihe 6",
+      "street": "Schöne Reihe",
+      "houseNumber": "6",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bruchhausen-Vilsen",
+      "spotCount": 1,
+      "lat": 52.8351753,
+      "lng": 9.006110800000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/32445670), ODbL"
+    },
+    {
+      "id": "bruchhausen-vilsen-f8a23ecb03",
+      "city": "bruchhausen-vilsen",
+      "label": "Zur Kleinbahn 3",
+      "street": "Zur Kleinbahn",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Bruchhausen-Vilsen",
+      "spotCount": 1,
+      "lat": 52.82891325,
+      "lng": 8.99492815,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1284958249), ODbL"
+    }
+  ]
+}

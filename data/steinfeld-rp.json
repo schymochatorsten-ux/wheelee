@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "steinfeld-rp",
+    "name": "Steinfeld",
+    "center": {
+      "lat": 49.05530635,
+      "lng": 8.063787950000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "steinfeld-rp-ceb36616ea",
+      "city": "steinfeld-rp",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Steinfeld",
+      "spotCount": 2,
+      "lat": 49.04449695,
+      "lng": 8.039396450000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/948427328), ODbL"
+    },
+    {
+      "id": "steinfeld-rp-bd6fee5f17",
+      "city": "steinfeld-rp",
+      "label": "Behindertenparkplatz Steinfeld",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Steinfeld",
+      "spotCount": 2,
+      "lat": 49.05530635,
+      "lng": 8.063787950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/210285731), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "insheim",
+    "name": "Insheim",
+    "center": {
+      "lat": 49.157529000000004,
+      "lng": 8.15245245
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "insheim-b7f84e9acb",
+      "city": "insheim",
+      "label": "P+R",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Insheim",
+      "spotCount": 1,
+      "lat": 49.157529000000004,
+      "lng": 8.15245245,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/224513293), ODbL"
+    }
+  ]
+}

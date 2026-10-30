@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "emmerthal",
+    "name": "Emmerthal",
+    "center": {
+      "lat": 52.018977500000005,
+      "lng": 9.42656385
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "emmerthal-d540fd2933",
+      "city": "emmerthal",
+      "label": "Am Park 1",
+      "street": "Am Park",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Emmerthal",
+      "spotCount": 1,
+      "lat": 52.018923300000004,
+      "lng": 9.420720300000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/83232048), ODbL"
+    },
+    {
+      "id": "emmerthal-0fc3f06505",
+      "city": "emmerthal",
+      "label": "Behindertenparkplatz Emmerthal",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Emmerthal",
+      "spotCount": 1,
+      "lat": 52.018977500000005,
+      "lng": 9.426626800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/431831596), ODbL"
+    },
+    {
+      "id": "emmerthal-ae412a45db",
+      "city": "emmerthal",
+      "label": "Bückebergstraße",
+      "street": "Bückebergstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Emmerthal",
+      "spotCount": 2,
+      "lat": 52.0525177,
+      "lng": 9.4026409,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9553022086), ODbL"
+    },
+    {
+      "id": "emmerthal-0c0c4297c3",
+      "city": "emmerthal",
+      "label": "Hotelparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Emmerthal",
+      "spotCount": 2,
+      "lat": 52.01837675,
+      "lng": 9.42656385,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/431831601), ODbL"
+    }
+  ]
+}

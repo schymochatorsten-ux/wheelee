@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "kirchenthumbach",
+    "name": "Kirchenthumbach",
+    "center": {
+      "lat": 49.7490588,
+      "lng": 11.7252951
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kirchenthumbach-b549b91092",
+      "city": "kirchenthumbach",
+      "label": "Burgring",
+      "street": "Burgring",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kirchenthumbach",
+      "spotCount": 1,
+      "lat": 49.749018400000004,
+      "lng": 11.7252951,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6169404963), ODbL"
+    },
+    {
+      "id": "kirchenthumbach-5bcc249f2a",
+      "city": "kirchenthumbach",
+      "label": "Marktplatz",
+      "street": "Marktplatz",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kirchenthumbach",
+      "spotCount": 1,
+      "lat": 49.7490588,
+      "lng": 11.72464,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/6169410034), ODbL"
+    }
+  ]
+}

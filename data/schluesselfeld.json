@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schluesselfeld",
+    "name": "Schlüsselfeld",
+    "center": {
+      "lat": 49.74659820000001,
+      "lng": 10.63409025
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schluesselfeld-be226176ce",
+      "city": "schluesselfeld",
+      "label": "Autohof Schlüsselfeld",
+      "street": "Autohof Schlüsselfeld",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schlüsselfeld",
+      "spotCount": 1,
+      "lat": 49.74659820000001,
+      "lng": 10.63409025,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1254076615), ODbL"
+    }
+  ]
+}

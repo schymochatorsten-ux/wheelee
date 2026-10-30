@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "aach",
+    "name": "Aach",
+    "center": {
+      "lat": 47.8432267,
+      "lng": 8.85268615
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "aach-962c6a2b79",
+      "city": "aach",
+      "label": "Hauptstraße",
+      "street": "Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Aach",
+      "spotCount": 1,
+      "lat": 47.8432267,
+      "lng": 8.85268615,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1069033799), ODbL"
+    }
+  ]
+}

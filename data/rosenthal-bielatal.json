@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "rosenthal-bielatal",
+    "name": "Rosenthal-Bielatal",
+    "center": {
+      "lat": 50.831988550000005,
+      "lng": 14.067348800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rosenthal-bielatal-7da10527bc",
+      "city": "rosenthal-bielatal",
+      "label": "Zollhäuser",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Rosenthal-Bielatal",
+      "spotCount": 2,
+      "lat": 50.831988550000005,
+      "lng": 14.067348800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/33129818), ODbL"
+    }
+  ]
+}

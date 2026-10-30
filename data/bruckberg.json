@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "bruckberg",
+    "name": "Bruckberg",
+    "center": {
+      "lat": 48.52337335,
+      "lng": 11.9959004
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bruckberg-71649d6b1c",
+      "city": "bruckberg",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bruckberg",
+      "spotCount": 3,
+      "lat": 48.51903575,
+      "lng": 11.9950869,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/129913516), ODbL"
+    },
+    {
+      "id": "bruckberg-23e2e3cd62",
+      "city": "bruckberg",
+      "label": "Bergstraße",
+      "street": "Bergstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bruckberg",
+      "spotCount": 1,
+      "lat": 48.52337335,
+      "lng": 11.9959004,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/229777801), ODbL"
+    },
+    {
+      "id": "bruckberg-cd41ff3b31",
+      "city": "bruckberg",
+      "label": "Tondorfer Straße",
+      "street": "Tondorfer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bruckberg",
+      "spotCount": 1,
+      "lat": 48.53891715,
+      "lng": 12.0232928,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/229777808), ODbL"
+    }
+  ]
+}

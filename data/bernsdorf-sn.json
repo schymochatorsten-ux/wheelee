@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "bernsdorf-sn",
+    "name": "Bernsdorf",
+    "center": {
+      "lat": 50.78375055000001,
+      "lng": 12.6721878
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "bernsdorf-sn-bcfcce4e3c",
+      "city": "bernsdorf-sn",
+      "label": "Obere Hauptstraße",
+      "street": "Obere Hauptstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Bernsdorf",
+      "spotCount": 1,
+      "lat": 50.78375055000001,
+      "lng": 12.6721878,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1041807362), ODbL"
+    }
+  ]
+}

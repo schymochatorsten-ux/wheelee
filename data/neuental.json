@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "neuental",
+    "name": "Neuental",
+    "center": {
+      "lat": 51.00871165000001,
+      "lng": 9.2002785
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "neuental-9331f8299d",
+      "city": "neuental",
+      "label": "Am Kronberg",
+      "street": "Am Kronberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Neuental",
+      "spotCount": 2,
+      "lat": 51.00871165000001,
+      "lng": 9.2002785,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1371048762), ODbL"
+    }
+  ]
+}

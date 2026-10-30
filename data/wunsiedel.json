@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wunsiedel",
+    "name": "Wunsiedel",
+    "center": {
+      "lat": 50.037322,
+      "lng": 12.002013250000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wunsiedel-77274f99a1",
+      "city": "wunsiedel",
+      "label": "Rathausparkplatz",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Wunsiedel",
+      "spotCount": 1,
+      "lat": 50.037322,
+      "lng": 12.002013250000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/27015669), ODbL"
+    }
+  ]
+}

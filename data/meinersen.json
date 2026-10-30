@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "meinersen",
+    "name": "Meinersen",
+    "center": {
+      "lat": 52.476362300000005,
+      "lng": 10.351238500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "meinersen-7f1b44a177",
+      "city": "meinersen",
+      "label": "Am Marktplatz 4",
+      "street": "Am Marktplatz",
+      "houseNumber": "4",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Meinersen",
+      "spotCount": 1,
+      "lat": 52.4738266,
+      "lng": 10.351238500000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/292393110), ODbL"
+    },
+    {
+      "id": "meinersen-904eba2c00",
+      "city": "meinersen",
+      "label": "Hauptstraße 1",
+      "street": "Hauptstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Meinersen",
+      "spotCount": 1,
+      "lat": 52.476362300000005,
+      "lng": 10.345964700000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/292401305), ODbL"
+    }
+  ]
+}

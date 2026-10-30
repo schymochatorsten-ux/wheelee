@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "wolfstein",
+    "name": "Wolfstein",
+    "center": {
+      "lat": 49.58337160000001,
+      "lng": 7.60641955
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wolfstein-f2697ff674",
+      "city": "wolfstein",
+      "label": "Parkplatz \"Im Tauchental\"",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Wolfstein",
+      "spotCount": 80,
+      "lat": 49.58337160000001,
+      "lng": 7.60641955,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/223963829), ODbL"
+    }
+  ]
+}

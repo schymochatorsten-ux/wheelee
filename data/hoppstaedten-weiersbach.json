@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hoppstaedten-weiersbach",
+    "name": "Hoppstädten-Weiersbach",
+    "center": {
+      "lat": 49.607973900000005,
+      "lng": 7.1658494500000005
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hoppstaedten-weiersbach-2f079f28ba",
+      "city": "hoppstaedten-weiersbach",
+      "label": "Neubrücker Straße",
+      "street": "Neubrücker Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hoppstädten-Weiersbach",
+      "spotCount": 2,
+      "lat": 49.607973900000005,
+      "lng": 7.1658494500000005,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/991359672), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "aitrach",
+    "name": "Aitrach",
+    "center": {
+      "lat": 47.943306500000006,
+      "lng": 10.08027745
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "aitrach-6f8a605c63",
+      "city": "aitrach",
+      "label": "Bahnhof Aitrach-Marstetten",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Aitrach",
+      "spotCount": 2,
+      "lat": 47.94320605,
+      "lng": 10.0803384,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/857825397), ODbL"
+    },
+    {
+      "id": "aitrach-b40bc9360a",
+      "city": "aitrach",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Aitrach",
+      "spotCount": 1,
+      "lat": 47.943306500000006,
+      "lng": 10.080275150000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1462081044), ODbL"
+    },
+    {
+      "id": "aitrach-a9abb8abb4",
+      "city": "aitrach",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Aitrach",
+      "spotCount": 1,
+      "lat": 47.943337850000006,
+      "lng": 10.08027745,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1462081045), ODbL"
+    }
+  ]
+}

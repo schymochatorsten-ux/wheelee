@@ -1,0 +1,75 @@
+{
+  "city": {
+    "slug": "nettersheim",
+    "name": "Nettersheim",
+    "center": {
+      "lat": 50.490712300000006,
+      "lng": 6.6299105
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "nettersheim-6a3054a27e",
+      "city": "nettersheim",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Nettersheim",
+      "spotCount": 6,
+      "lat": 50.4908919,
+      "lng": 6.6299105,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/396753467), ODbL"
+    },
+    {
+      "id": "nettersheim-aeb9792572",
+      "city": "nettersheim",
+      "label": "Dr. Konrad-Adenauer-Straße",
+      "street": "Dr. Konrad-Adenauer-Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nettersheim",
+      "spotCount": 1,
+      "lat": 50.4833823,
+      "lng": 6.573506,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/104158624), ODbL"
+    },
+    {
+      "id": "nettersheim-caf4375450",
+      "city": "nettersheim",
+      "label": "Euskirchener Straße 38",
+      "street": "Euskirchener Straße",
+      "houseNumber": "38",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nettersheim",
+      "spotCount": 2,
+      "lat": 50.4725169,
+      "lng": 6.711330950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1076409921), ODbL"
+    },
+    {
+      "id": "nettersheim-2d15584d48",
+      "city": "nettersheim",
+      "label": "P4",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Nettersheim",
+      "spotCount": 1,
+      "lat": 50.490712300000006,
+      "lng": 6.627397850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/308795970), ODbL"
+    }
+  ]
+}

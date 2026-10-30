@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "gross-sarau",
+    "name": "Groß Sarau",
+    "center": {
+      "lat": 53.7829701,
+      "lng": 10.766314950000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gross-sarau-bb0a4883dd",
+      "city": "gross-sarau",
+      "label": "Rothenhusener Weg",
+      "street": "Rothenhusener Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Groß Sarau",
+      "spotCount": 1,
+      "lat": 53.7810878,
+      "lng": 10.766005400000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/28408592), ODbL"
+    },
+    {
+      "id": "gross-sarau-a0a59a5429",
+      "city": "gross-sarau",
+      "label": "Rothenhusener Weg",
+      "street": "Rothenhusener Weg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Groß Sarau",
+      "spotCount": 3,
+      "lat": 53.7829701,
+      "lng": 10.766314950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1344797011), ODbL"
+    }
+  ]
+}

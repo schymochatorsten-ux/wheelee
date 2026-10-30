@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kisslegg",
+    "name": "Kißlegg",
+    "center": {
+      "lat": 47.7878794,
+      "lng": 9.88309515
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kisslegg-3695443e74",
+      "city": "kisslegg",
+      "label": "Schützengasse 1",
+      "street": "Schützengasse",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kißlegg",
+      "spotCount": 1,
+      "lat": 47.7878794,
+      "lng": 9.88309515,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1413588110), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "zellingen",
+    "name": "Zellingen",
+    "center": {
+      "lat": 49.89635735,
+      "lng": 9.818063200000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "zellingen-6ee0a2dd73",
+      "city": "zellingen",
+      "label": "Würzburger Straße",
+      "street": "Würzburger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zellingen",
+      "spotCount": 1,
+      "lat": 49.8963279,
+      "lng": 9.818063200000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/317007523), ODbL"
+    },
+    {
+      "id": "zellingen-373664dc57",
+      "city": "zellingen",
+      "label": "Würzburger Straße",
+      "street": "Würzburger Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Zellingen",
+      "spotCount": 1,
+      "lat": 49.89635735,
+      "lng": 9.81804545,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/963588204), ODbL"
+    }
+  ]
+}

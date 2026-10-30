@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schwaan",
+    "name": "Schwaan",
+    "center": {
+      "lat": 53.941299,
+      "lng": 12.1067941
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schwaan-a33e41bacd",
+      "city": "schwaan",
+      "label": "Große Bergstraße 40",
+      "street": "Große Bergstraße",
+      "houseNumber": "40",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schwaan",
+      "spotCount": 1,
+      "lat": 53.941299,
+      "lng": 12.1067941,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1420229238), ODbL"
+    }
+  ]
+}

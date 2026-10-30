@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "rottach-egern",
+    "name": "Rottach-Egern",
+    "center": {
+      "lat": 47.6841811,
+      "lng": 11.7816433
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rottach-egern-da5edb585d",
+      "city": "rottach-egern",
+      "label": "Feldstraße",
+      "street": "Feldstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rottach-Egern",
+      "spotCount": 1,
+      "lat": 47.6841811,
+      "lng": 11.7816433,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/432744866), ODbL"
+    }
+  ]
+}

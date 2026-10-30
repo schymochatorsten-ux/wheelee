@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "suederholz",
+    "name": "Süderholz",
+    "center": {
+      "lat": 54.09297275,
+      "lng": 13.084706350000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "suederholz-6e48da8fb0",
+      "city": "suederholz",
+      "label": "Pommerndreieck 1",
+      "street": "Pommerndreieck",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Süderholz",
+      "spotCount": 1,
+      "lat": 54.09297275,
+      "lng": 13.084706350000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/51849879), ODbL"
+    }
+  ]
+}

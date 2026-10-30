@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "hohenzieritz",
+    "name": "Hohenzieritz",
+    "center": {
+      "lat": 53.444413000000004,
+      "lng": 13.1024046
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hohenzieritz-6df629d6c2",
+      "city": "hohenzieritz",
+      "label": "Parkstraße",
+      "street": "Parkstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Hohenzieritz",
+      "spotCount": 3,
+      "lat": 53.444413000000004,
+      "lng": 13.1024046,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/389508914), ODbL"
+    }
+  ]
+}

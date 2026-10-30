@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "wildflecken",
+    "name": "Wildflecken",
+    "center": {
+      "lat": 50.3790367,
+      "lng": 9.9149773
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "wildflecken-17d72067ef",
+      "city": "wildflecken",
+      "label": "Rathausplatz",
+      "street": "Rathausplatz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wildflecken",
+      "spotCount": 1,
+      "lat": 50.3790367,
+      "lng": 9.9149773,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1518166915), ODbL"
+    },
+    {
+      "id": "wildflecken-ace30dc674",
+      "city": "wildflecken",
+      "label": "Zum Rosengarten",
+      "street": "Zum Rosengarten",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wildflecken",
+      "spotCount": 1,
+      "lat": 50.346038500000006,
+      "lng": 9.882632700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1518167833), ODbL"
+    }
+  ]
+}

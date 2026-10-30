@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "auma-weidatal",
+    "name": "Auma-Weidatal",
+    "center": {
+      "lat": 50.69920450000001,
+      "lng": 11.902606950000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "auma-weidatal-a4e65b89e9",
+      "city": "auma-weidatal",
+      "label": "Am Seeweg 8b",
+      "street": "Am Seeweg",
+      "houseNumber": "8b",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Auma-Weidatal",
+      "spotCount": 3,
+      "lat": 50.6944408,
+      "lng": 11.904175550000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1379146424), ODbL"
+    },
+    {
+      "id": "auma-weidatal-1dfc4915dd",
+      "city": "auma-weidatal",
+      "label": "Eichstraße 3",
+      "street": "Eichstraße",
+      "houseNumber": "3",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Auma-Weidatal",
+      "spotCount": 1,
+      "lat": 50.69920450000001,
+      "lng": 11.90257445,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1492175975), ODbL"
+    },
+    {
+      "id": "auma-weidatal-81b9cb43f7",
+      "city": "auma-weidatal",
+      "label": "Eichstraße 3",
+      "street": "Eichstraße",
+      "houseNumber": "3",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Auma-Weidatal",
+      "spotCount": 1,
+      "lat": 50.69925135,
+      "lng": 11.902606950000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1492175978), ODbL"
+    }
+  ]
+}

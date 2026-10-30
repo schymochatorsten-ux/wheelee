@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "lommatzsch",
+    "name": "Lommatzsch",
+    "center": {
+      "lat": 51.200602350000004,
+      "lng": 13.30469545
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "lommatzsch-80274b843a",
+      "city": "lommatzsch",
+      "label": "Oschatzer Straße",
+      "street": "Oschatzer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Lommatzsch",
+      "spotCount": 3,
+      "lat": 51.200602350000004,
+      "lng": 13.30469545,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/85641750), ODbL"
+    }
+  ]
+}

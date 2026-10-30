@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "alleshausen",
+    "name": "Alleshausen",
+    "center": {
+      "lat": 48.1128767,
+      "lng": 9.627685249999999
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "alleshausen-fdc3bad4b1",
+      "city": "alleshausen",
+      "label": "Im Grund",
+      "street": "Im Grund",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Alleshausen",
+      "spotCount": 2,
+      "lat": 48.1128767,
+      "lng": 9.627685249999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1104915168), ODbL"
+    }
+  ]
+}

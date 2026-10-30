@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "gruibingen",
+    "name": "Gruibingen",
+    "center": {
+      "lat": 48.608036250000005,
+      "lng": 9.63185765
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gruibingen-4a1fdb4149",
+      "city": "gruibingen",
+      "label": "Am Kornberg",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Gruibingen",
+      "spotCount": 2,
+      "lat": 48.608036250000005,
+      "lng": 9.631652,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/651254316), ODbL"
+    },
+    {
+      "id": "gruibingen-82dd0b9648",
+      "city": "gruibingen",
+      "label": "Rasthof Gruibingen",
+      "street": "Rasthof Gruibingen",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gruibingen",
+      "spotCount": 5,
+      "lat": 48.605746700000005,
+      "lng": 9.63185765,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/193741189), ODbL"
+    }
+  ]
+}

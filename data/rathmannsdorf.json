@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "rathmannsdorf",
+    "name": "Rathmannsdorf",
+    "center": {
+      "lat": 50.928162400000005,
+      "lng": 14.144071850000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rathmannsdorf-5dc431d569",
+      "city": "rathmannsdorf",
+      "label": "Pestalozzistraße",
+      "street": "Pestalozzistraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rathmannsdorf",
+      "spotCount": 2,
+      "lat": 50.928162400000005,
+      "lng": 14.144071850000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/506172137), ODbL"
+    }
+  ]
+}

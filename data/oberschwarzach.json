@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "oberschwarzach",
+    "name": "Oberschwarzach",
+    "center": {
+      "lat": 49.86860025,
+      "lng": 10.443295899999999
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "oberschwarzach-8b48bc945f",
+      "city": "oberschwarzach",
+      "label": "Behindertenparkplatz Oberschwarzach",
+      "street": null,
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Oberschwarzach",
+      "spotCount": 1,
+      "lat": 49.86860025,
+      "lng": 10.443295899999999,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/576328189), ODbL"
+    }
+  ]
+}

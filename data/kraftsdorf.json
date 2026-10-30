@@ -1,0 +1,90 @@
+{
+  "city": {
+    "slug": "kraftsdorf",
+    "name": "Kraftsdorf",
+    "center": {
+      "lat": 50.888674050000006,
+      "lng": 11.9486617
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kraftsdorf-71ca89197e",
+      "city": "kraftsdorf",
+      "label": "Tümmelsberg",
+      "street": "Tümmelsberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kraftsdorf",
+      "spotCount": 2,
+      "lat": 50.88865665,
+      "lng": 11.9486617,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/693839457), ODbL"
+    },
+    {
+      "id": "kraftsdorf-a9c9f780e6",
+      "city": "kraftsdorf",
+      "label": "Tümmelsberg",
+      "street": "Tümmelsberg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kraftsdorf",
+      "spotCount": 1,
+      "lat": 50.888674050000006,
+      "lng": 11.948806050000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/758648049), ODbL"
+    },
+    {
+      "id": "kraftsdorf-10371f7e45",
+      "city": "kraftsdorf",
+      "label": "Tümmelsberg",
+      "street": "Tümmelsberg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kraftsdorf",
+      "spotCount": 1,
+      "lat": 50.8886662,
+      "lng": 11.94874315,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/758648050), ODbL"
+    },
+    {
+      "id": "kraftsdorf-a473c2404a",
+      "city": "kraftsdorf",
+      "label": "Tümmelsberg",
+      "street": "Tümmelsberg",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Kraftsdorf",
+      "spotCount": 2,
+      "lat": 50.8902112,
+      "lng": 11.948203900000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1005278931), ODbL"
+    },
+    {
+      "id": "kraftsdorf-f10ead6aff",
+      "city": "kraftsdorf",
+      "label": "Tümmelsberg",
+      "street": "Tümmelsberg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Kraftsdorf",
+      "spotCount": 2,
+      "lat": 50.89024465,
+      "lng": 11.948513300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1005278932), ODbL"
+    }
+  ]
+}

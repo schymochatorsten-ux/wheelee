@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "schafstedt",
+    "name": "Schafstedt",
+    "center": {
+      "lat": 54.063063400000004,
+      "lng": 9.3080551
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schafstedt-8e65733edc",
+      "city": "schafstedt",
+      "label": "Hohenhörner Straße 33",
+      "street": "Hohenhörner Straße",
+      "houseNumber": "33",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Schafstedt",
+      "spotCount": 1,
+      "lat": 54.063063400000004,
+      "lng": 9.3080551,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13609280375), ODbL"
+    }
+  ]
+}

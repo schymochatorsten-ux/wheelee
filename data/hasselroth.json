@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "hasselroth",
+    "name": "Hasselroth",
+    "center": {
+      "lat": 50.1791791,
+      "lng": 9.11016755
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "hasselroth-fcbec0d563",
+      "city": "hasselroth",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Hasselroth",
+      "spotCount": 2,
+      "lat": 50.1793708,
+      "lng": 9.110690100000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/279947564), ODbL"
+    },
+    {
+      "id": "hasselroth-6cf82aa9ed",
+      "city": "hasselroth",
+      "label": "Am Bahnhof",
+      "street": "Am Bahnhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Hasselroth",
+      "spotCount": 1,
+      "lat": 50.1791791,
+      "lng": 9.11016755,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/855651195), ODbL"
+    },
+    {
+      "id": "hasselroth-4b97d453b0",
+      "city": "hasselroth",
+      "label": "Rathausstraße 21",
+      "street": "Rathausstraße",
+      "houseNumber": "21",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Hasselroth",
+      "spotCount": 2,
+      "lat": 50.164653,
+      "lng": 9.094549650000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/678720655), ODbL"
+    }
+  ]
+}

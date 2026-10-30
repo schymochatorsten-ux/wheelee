@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "amorbach",
+    "name": "Amorbach",
+    "center": {
+      "lat": 49.643516000000005,
+      "lng": 9.221693700000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "amorbach-961dbd6d05",
+      "city": "amorbach",
+      "label": "Debonstraße",
+      "street": "Debonstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Amorbach",
+      "spotCount": 1,
+      "lat": 49.643431400000004,
+      "lng": 9.221693700000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1137414243), ODbL"
+    },
+    {
+      "id": "amorbach-4bc0710d75",
+      "city": "amorbach",
+      "label": "Debonstraße",
+      "street": "Debonstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Amorbach",
+      "spotCount": 1,
+      "lat": 49.643516000000005,
+      "lng": 9.22176625,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1137635848), ODbL"
+    },
+    {
+      "id": "amorbach-286fbe807b",
+      "city": "amorbach",
+      "label": "Neugasse",
+      "street": "Neugasse",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Amorbach",
+      "spotCount": 1,
+      "lat": 49.64401455000001,
+      "lng": 9.21822925,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1553206791), ODbL"
+    }
+  ]
+}

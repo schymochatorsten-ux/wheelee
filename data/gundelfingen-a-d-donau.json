@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "gundelfingen-a-d-donau",
+    "name": "Gundelfingen a.d.Donau",
+    "center": {
+      "lat": 48.5519218,
+      "lng": 10.3765997
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "gundelfingen-a-d-donau-8f2620e014",
+      "city": "gundelfingen-a-d-donau",
+      "label": "Gundelfingen, Bahnhof",
+      "street": "Gundelfingen, Bahnhof",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gundelfingen a.d.Donau",
+      "spotCount": 2,
+      "lat": 48.548439,
+      "lng": 10.3765997,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/453531324), ODbL"
+    },
+    {
+      "id": "gundelfingen-a-d-donau-238116ed4d",
+      "city": "gundelfingen-a-d-donau",
+      "label": "Pfaffenbergergasse 7",
+      "street": "Pfaffenbergergasse",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Gundelfingen a.d.Donau",
+      "spotCount": 1,
+      "lat": 48.5519218,
+      "lng": 10.3715568,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/390375631), ODbL"
+    }
+  ]
+}

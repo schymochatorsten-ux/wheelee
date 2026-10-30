@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "sulzbach",
+    "name": "Sulzbach (Taunus)",
+    "center": {
+      "lat": 50.116741100000006,
+      "lng": 8.5292355
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "sulzbach-aa74873c1d",
+      "city": "sulzbach",
+      "label": "Am Main-Taunus-Zentrum",
+      "street": "Am Main-Taunus-Zentrum",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sulzbach (Taunus)",
+      "spotCount": 1,
+      "lat": 50.116741100000006,
+      "lng": 8.529397600000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13961894885), ODbL"
+    },
+    {
+      "id": "sulzbach-9aa036bc9e",
+      "city": "sulzbach",
+      "label": "Am Main-Taunus-Zentrum",
+      "street": "Am Main-Taunus-Zentrum",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sulzbach (Taunus)",
+      "spotCount": 1,
+      "lat": 50.1166702,
+      "lng": 8.5292355,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/13961894886), ODbL"
+    },
+    {
+      "id": "sulzbach-6182d9187c",
+      "city": "sulzbach",
+      "label": "Am Sportplatz",
+      "street": "Am Sportplatz",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Sulzbach (Taunus)",
+      "spotCount": 1,
+      "lat": 50.1407819,
+      "lng": 8.5144224,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/9724354971), ODbL"
+    }
+  ]
+}

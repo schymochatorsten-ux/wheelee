@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "salzhemmendorf",
+    "name": "Salzhemmendorf",
+    "center": {
+      "lat": 52.09035145,
+      "lng": 9.638899050000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "salzhemmendorf-ec87a4a49d",
+      "city": "salzhemmendorf",
+      "label": "Heerstraße",
+      "street": "Heerstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Salzhemmendorf",
+      "spotCount": 3,
+      "lat": 52.09035145,
+      "lng": 9.638899050000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1453407672), ODbL"
+    },
+    {
+      "id": "salzhemmendorf-3d3ae5c94e",
+      "city": "salzhemmendorf",
+      "label": "Vogelsang",
+      "street": "Vogelsang",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Salzhemmendorf",
+      "spotCount": 2,
+      "lat": 52.08749175,
+      "lng": 9.553169200000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1305533575), ODbL"
+    }
+  ]
+}

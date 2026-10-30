@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "ellhofen",
+    "name": "Ellhofen",
+    "center": {
+      "lat": 49.15005525000001,
+      "lng": 9.315383800000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "ellhofen-2382464266",
+      "city": "ellhofen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": "24/7",
+      "district": "Ellhofen",
+      "spotCount": 2,
+      "lat": 49.1500243,
+      "lng": 9.315570150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/141764670), ODbL"
+    },
+    {
+      "id": "ellhofen-e97c53d3ac",
+      "city": "ellhofen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ellhofen",
+      "spotCount": 1,
+      "lat": 49.1500573,
+      "lng": 9.315383800000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1410117040), ODbL"
+    },
+    {
+      "id": "ellhofen-7e36f7780a",
+      "city": "ellhofen",
+      "label": "Bahnhofstraße",
+      "street": "Bahnhofstraße",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Ellhofen",
+      "spotCount": 1,
+      "lat": 49.15005525000001,
+      "lng": 9.31532765,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1410117041), ODbL"
+    }
+  ]
+}

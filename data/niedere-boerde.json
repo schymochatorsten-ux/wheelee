@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "niedere-boerde",
+    "name": "Niedere Börde",
+    "center": {
+      "lat": 52.2600123,
+      "lng": 11.571476
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "niedere-boerde-ccd00e89ce",
+      "city": "niedere-boerde",
+      "label": "Wolmirstedter Straße 16",
+      "street": "Wolmirstedter Straße",
+      "houseNumber": "16",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Niedere Börde",
+      "spotCount": 1,
+      "lat": 52.2600123,
+      "lng": 11.571476,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1294488502), ODbL"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "rehau",
+    "name": "Rehau",
+    "center": {
+      "lat": 50.2388033,
+      "lng": 12.047727950000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rehau-70767d2480",
+      "city": "rehau",
+      "label": "Baukondukteur-Baumann-Allee",
+      "street": "Baukondukteur-Baumann-Allee",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rehau",
+      "spotCount": 1,
+      "lat": 50.2388033,
+      "lng": 12.0298169,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/75804957), ODbL"
+    },
+    {
+      "id": "rehau-6b3747bcc0",
+      "city": "rehau",
+      "label": "Behindertenparkplatz Rehau",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rehau",
+      "spotCount": 3,
+      "lat": 50.231257600000006,
+      "lng": 12.057670100000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12782501239), ODbL"
+    },
+    {
+      "id": "rehau-805f74d9f9",
+      "city": "rehau",
+      "label": "Regnitzlosauer Straße",
+      "street": "Regnitzlosauer Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rehau",
+      "spotCount": 2,
+      "lat": 50.261065,
+      "lng": 12.047727950000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1128319007), ODbL"
+    }
+  ]
+}

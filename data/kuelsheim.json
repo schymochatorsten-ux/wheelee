@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "kuelsheim",
+    "name": "Külsheim",
+    "center": {
+      "lat": 49.66331305,
+      "lng": 9.5251096
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "kuelsheim-c2dc3c0ad1",
+      "city": "kuelsheim",
+      "label": "Jahnstraße",
+      "street": "Jahnstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Külsheim",
+      "spotCount": 2,
+      "lat": 49.66331305,
+      "lng": 9.5251096,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/163563685), ODbL"
+    }
+  ]
+}

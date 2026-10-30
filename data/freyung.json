@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "freyung",
+    "name": "Freyung",
+    "center": {
+      "lat": 48.8084648,
+      "lng": 13.547291700000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "freyung-a6ef12a890",
+      "city": "freyung",
+      "label": "Stadtplatz 10",
+      "street": "Stadtplatz",
+      "houseNumber": "10",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
+      "timeRestriction": null,
+      "district": "Freyung",
+      "spotCount": 2,
+      "lat": 48.8084648,
+      "lng": 13.547291700000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/246379441), ODbL"
+    }
+  ]
+}

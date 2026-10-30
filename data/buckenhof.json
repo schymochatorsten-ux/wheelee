@@ -1,0 +1,120 @@
+{
+  "city": {
+    "slug": "buckenhof",
+    "name": "Buckenhof",
+    "center": {
+      "lat": 49.59255485,
+      "lng": 11.05054155
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "buckenhof-fa8316d7c3",
+      "city": "buckenhof",
+      "label": "Am Tennenbach",
+      "street": "Am Tennenbach",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Buckenhof",
+      "spotCount": 1,
+      "lat": 49.59614115000001,
+      "lng": 11.0543533,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/28168460), ODbL"
+    },
+    {
+      "id": "buckenhof-8023d94502",
+      "city": "buckenhof",
+      "label": "Feuerwehr / Bauhof Buckenhof",
+      "street": "Feuerwehr / Bauhof Buckenhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Buckenhof",
+      "spotCount": 1,
+      "lat": 49.592403600000004,
+      "lng": 11.05054155,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/263943429), ODbL"
+    },
+    {
+      "id": "buckenhof-d9af449a93",
+      "city": "buckenhof",
+      "label": "Feuerwehr / Bauhof Buckenhof",
+      "street": "Feuerwehr / Bauhof Buckenhof",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Buckenhof",
+      "spotCount": 1,
+      "lat": 49.59262815,
+      "lng": 11.050483400000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/263943430), ODbL"
+    },
+    {
+      "id": "buckenhof-71b0cbf1ef",
+      "city": "buckenhof",
+      "label": "Gehbehindert",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Buckenhof",
+      "spotCount": 3,
+      "lat": 49.58758540000001,
+      "lng": 11.059301650000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/923151256), ODbL"
+    },
+    {
+      "id": "buckenhof-597fef047d",
+      "city": "buckenhof",
+      "label": "Obere Büch 7",
+      "street": "Obere Büch",
+      "houseNumber": "7",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Buckenhof",
+      "spotCount": 1,
+      "lat": 49.59366165,
+      "lng": 11.053935150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1256922276), ODbL"
+    },
+    {
+      "id": "buckenhof-c1694ebd04",
+      "city": "buckenhof",
+      "label": "Tennenloher Straße",
+      "street": "Tennenloher Straße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Buckenhof",
+      "spotCount": 2,
+      "lat": 49.59255485,
+      "lng": 11.050227150000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/50131229), ODbL"
+    },
+    {
+      "id": "buckenhof-ba26cf0703",
+      "city": "buckenhof",
+      "label": "Weiselstraße 32",
+      "street": "Weiselstraße",
+      "houseNumber": "32",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Buckenhof",
+      "spotCount": 1,
+      "lat": 49.59099205,
+      "lng": 11.0463842,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/252726502), ODbL"
+    }
+  ]
+}

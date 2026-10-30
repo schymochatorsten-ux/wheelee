@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "deggingen",
+    "name": "Deggingen",
+    "center": {
+      "lat": 48.59969480000001,
+      "lng": 9.726684500000001
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "deggingen-af65441ab1",
+      "city": "deggingen",
+      "label": "Am Park 11",
+      "street": "Am Park",
+      "houseNumber": "11",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Deggingen",
+      "spotCount": 1,
+      "lat": 48.5986318,
+      "lng": 9.721969300000001,
+      "geoAccuracy": "house",
+      "source": "OpenStreetMap (node/12579327308), ODbL"
+    },
+    {
+      "id": "deggingen-f8e8e10e8d",
+      "city": "deggingen",
+      "label": "Jahnstraße 11",
+      "street": "Jahnstraße",
+      "houseNumber": "11",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Deggingen",
+      "spotCount": 1,
+      "lat": 48.59969480000001,
+      "lng": 9.726684500000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1426369933), ODbL"
+    }
+  ]
+}

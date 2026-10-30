@@ -1,0 +1,45 @@
+{
+  "city": {
+    "slug": "osten",
+    "name": "Osten",
+    "center": {
+      "lat": 53.69597585,
+      "lng": 9.18832815
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "osten-8fc7824b32",
+      "city": "osten",
+      "label": "Deichstraße 1",
+      "street": "Deichstraße",
+      "houseNumber": "1",
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Osten",
+      "spotCount": 1,
+      "lat": 53.69485765,
+      "lng": 9.183865400000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/1106454828), ODbL"
+    },
+    {
+      "id": "osten-8973bcf469",
+      "city": "osten",
+      "label": "Wiesenstraße",
+      "street": "Wiesenstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Osten",
+      "spotCount": 2,
+      "lat": 53.69597585,
+      "lng": 9.18832815,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/34598746), ODbL"
+    }
+  ]
+}

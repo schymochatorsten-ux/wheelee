@@ -1,0 +1,60 @@
+{
+  "city": {
+    "slug": "schleiz",
+    "name": "Schleiz",
+    "center": {
+      "lat": 50.580654800000005,
+      "lng": 11.804494300000002
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "schleiz-c669254dfc",
+      "city": "schleiz",
+      "label": "Bergstraße",
+      "street": "Bergstraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schleiz",
+      "spotCount": 1,
+      "lat": 50.5835122,
+      "lng": 11.804494300000002,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/127852652), ODbL"
+    },
+    {
+      "id": "schleiz-1d21cac8a3",
+      "city": "schleiz",
+      "label": "Industriestraße",
+      "street": "Industriestraße",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schleiz",
+      "spotCount": 2,
+      "lat": 50.551998100000006,
+      "lng": 11.7906651,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/118962411), ODbL"
+    },
+    {
+      "id": "schleiz-f36fcdaa50",
+      "city": "schleiz",
+      "label": "Lidl, Getränke Huster",
+      "street": null,
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Schleiz",
+      "spotCount": 1,
+      "lat": 50.580654800000005,
+      "lng": 11.808015600000001,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/127852644), ODbL"
+    }
+  ]
+}

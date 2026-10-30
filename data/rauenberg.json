@@ -1,0 +1,30 @@
+{
+  "city": {
+    "slug": "rauenberg",
+    "name": "Rauenberg",
+    "center": {
+      "lat": 49.26473765,
+      "lng": 8.7028069
+    }
+  },
+  "source": "OpenStreetMap-Mitwirkende (ODbL)",
+  "license": "Open Database License (ODbL)",
+  "generatedAt": "2026-10-30",
+  "spots": [
+    {
+      "id": "rauenberg-871e53141d",
+      "city": "rauenberg",
+      "label": "Am Rainacker",
+      "street": "Am Rainacker",
+      "houseNumber": null,
+      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
+      "timeRestriction": null,
+      "district": "Rauenberg",
+      "spotCount": 1,
+      "lat": 49.26473765,
+      "lng": 8.7028069,
+      "geoAccuracy": "street",
+      "source": "OpenStreetMap (way/33641076), ODbL"
+    }
+  ]
+}
