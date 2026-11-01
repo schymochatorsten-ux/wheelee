@@ -177,6 +177,8 @@ export const es: Messages = {
   "settings.info": "Acerca de wheelee",
   "info.lead":
     "wheelee ayuda a las personas con movilidad reducida a encontrar rápidamente la plaza de aparcamiento para personas con discapacidad más cercana.",
+  "info.reach":
+    "Ya se ha abierto wheelee {count} veces para encontrar aparcamiento.",
   "info.goal.title": "De qué se trata",
   "info.goal.text":
     "Quien depende de una plaza para personas con discapacidad no puede dar vueltas por la ciudad esperando tener suerte. wheelee muestra en un mapa las plazas públicas de toda Alemania, destaca la más cercana a tu ubicación y abre la ruta en tu aplicación de mapas.",

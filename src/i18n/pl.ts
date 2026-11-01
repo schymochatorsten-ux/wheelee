@@ -176,6 +176,8 @@ export const pl: Messages = {
   "settings.info": "O wheelee",
   "info.lead":
     "wheelee pomaga osobom z ograniczoną mobilnością szybko znaleźć najbliższe miejsce parkingowe dla osób niepełnosprawnych.",
+  "info.reach":
+    "wheelee otwarto już {count} razy, aby znaleźć miejsce parkingowe.",
   "info.goal.title": "O co chodzi",
   "info.goal.text":
     "Kto potrzebuje miejsca dla osób niepełnosprawnych, nie może krążyć po mieście na szczęście. wheelee pokazuje na mapie publiczne miejsca parkingowe dla osób niepełnosprawnych w całych Niemczech, wyróżnia to najbliższe Twojej lokalizacji i otwiera trasę w Twojej aplikacji map.",

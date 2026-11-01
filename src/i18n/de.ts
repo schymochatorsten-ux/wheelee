@@ -168,6 +168,8 @@ export const de = {
   "settings.info": "Über wheelee",
   "info.lead":
     "wheelee hilft Menschen mit Gehbehinderung, schnell den nächsten Behindertenparkplatz zu finden.",
+  "info.reach":
+    "Schon {count} Mal haben Menschen wheelee geöffnet, um einen Parkplatz zu finden.",
   "info.goal.title": "Worum es geht",
   "info.goal.text":
     "Wer auf einen Behindertenparkplatz angewiesen ist, kann nicht auf gut Glück durch die Stadt kreisen. wheelee zeigt öffentliche Behindertenparkplätze in ganz Deutschland auf einer Karte, hebt den nächsten zu deinem Standort hervor und öffnet die Route in deiner Karten-App.",

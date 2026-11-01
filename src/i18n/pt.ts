@@ -174,6 +174,8 @@ export const pt: Messages = {
   "settings.info": "Sobre o wheelee",
   "info.lead":
     "O wheelee ajuda pessoas com mobilidade reduzida a encontrar rapidamente o lugar de estacionamento para pessoas com deficiência mais próximo.",
+  "info.reach":
+    "O wheelee já foi aberto {count} vezes para encontrar um lugar de estacionamento.",
   "info.goal.title": "Do que se trata",
   "info.goal.text":
     "Quem precisa de um lugar para pessoas com deficiência não pode andar às voltas pela cidade à espera de sorte. O wheelee mostra num mapa os lugares públicos de toda a Alemanha, destaca o mais próximo da sua localização e abre o percurso na sua aplicação de mapas.",

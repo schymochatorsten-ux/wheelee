@@ -174,6 +174,8 @@ export const it: Messages = {
   "settings.info": "Informazioni su wheelee",
   "info.lead":
     "wheelee aiuta le persone con difficoltà motorie a trovare rapidamente il parcheggio per disabili più vicino.",
+  "info.reach":
+    "wheelee è già stato aperto {count} volte per trovare un parcheggio.",
   "info.goal.title": "Di cosa si tratta",
   "info.goal.text":
     "Chi ha bisogno di un parcheggio per disabili non può girare per la città sperando nella fortuna. wheelee mostra su una mappa i parcheggi pubblici per disabili in tutta la Germania, evidenzia quello più vicino alla tua posizione e apre il percorso nella tua app di mappe.",

@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-01):** **221 Einträge** auf oberster Ebene –
-davon 196, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-01):** **222 Einträge** auf oberster Ebene –
+davon 197, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 25, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -1640,6 +1640,12 @@ Torsten, 2026-10-30: „19 alle umsetzen, die ohne mich gehen.“ 13 bleibt gesp
   - **Offline:** `public/sw.js` behandelt `/api/cities` wie `/api/spots` (Netz zuerst, sonst die letzte Antwort); `VERSION` auf `v3` hochgezählt. Ohne Netz und ohne frühere Antwort zeigt die App nur die Standardstadt – die Parkplätze bleiben über die vorab geladenen Städte erreichbar.
   - **Bekannte Folge:** Bis die Antwort da ist, steht in der Liste nur die Standardstadt; der Stadtname eines Standorts fällt kurz auf den Kürzel (`slug`) zurück. Beim ersten Aufruf sind das die Standorte der Standardstadt, deren Name mitgeliefert wird.
   - **Tests:** `e2e/staedte.spec.ts` (Schnittstelle, HTML unter 150 KB und ohne OSM-Attributionen, Auswahl im Vorab-Download füllt sich). Dev-E2E 105 + 3, Produktions-E2E 110 grün.
+
+## 20. Ergänzung (2026-11-01)
+
+- [x] 20.2 **Besucherzahl öffentlich auf der Infoseite** (Torsten, 2026-11-01: „Wir haben schon X Leuten geholfen, einen Parkplatz zu finden“). Gebaut als `info.reach` (neun Sprachen) über `publicReach()` in `src/lib/visits.ts`; Test `visits-public.test.ts`.
+  - **Der Satz ist umformuliert:** „Schon X Mal haben Menschen wheelee geöffnet, um einen Parkplatz zu finden.“ Gezählt wird, wie oft die Seite geladen wurde (Summe der Tagesbesucher, ohne Bots und ohne Menschen mit „Do Not Track“), nicht, wem geholfen wurde: Ob jemand einen Parkplatz gefunden hat, misst wheelee bewusst nicht, und dieselbe Person an zwei Tagen zählt zweimal. „Geholfen“ wäre eine Behauptung ohne Messung (siehe „Eine plausible Ursache ist keine gemessene“ in `CLAUDE.md`, sinngemäß).
+  - **Die Zahl erscheint erst ab 50** (`MIN_PUBLIC`): „3 Mal“ sagt nichts und wirkt kläglich. Ohne Datenbank (Bauen) bleibt nur die Anzeige weg, die Seite nicht. Es werden nur Summen angezeigt, keine Tage und keine Herkunft; personenbezogen ist daran nichts.
 
 ## 19. Ergänzung 2 (2026-11-01)
 

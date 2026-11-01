@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { translator } from "@/i18n";
+import { localeTag, translator } from "@/i18n";
 import { getLocale } from "@/i18n/server";
+import { publicReach } from "@/lib/visits";
 
 /**
  * Worum es bei wheelee geht (ToDo 19.11): kurz sagen, wofür die Seite da ist,
@@ -26,6 +27,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function Info() {
   const locale = await getLocale();
   const t = translator(locale);
+  const reach = publicReach();
 
   return (
     <main className="min-h-0 flex-1 overflow-y-auto">
@@ -39,6 +41,11 @@ export default async function Info() {
 
         <h1 className="mt-3 bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-2xl font-bold text-transparent dark:from-blue-300 dark:to-cyan-300">{t("settings.info")}</h1>
         <p className="mt-3 text-lg leading-snug">{t("info.lead")}</p>
+        {reach !== null && (
+          <p className="mt-3 text-sm font-medium text-blue-800 dark:text-blue-300">
+            {t("info.reach", { count: reach.toLocaleString(localeTag(locale)) })}
+          </p>
+        )}
 
         <div className="mt-6 space-y-6 text-sm leading-relaxed">
           <section className={CARD}>

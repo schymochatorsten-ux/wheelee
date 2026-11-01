@@ -176,6 +176,8 @@ export const fr: Messages = {
   "settings.info": "À propos de wheelee",
   "info.lead":
     "wheelee aide les personnes à mobilité réduite à trouver rapidement la place de stationnement handicapé la plus proche.",
+  "info.reach":
+    "wheelee a déjà été ouvert {count} fois pour trouver une place.",
   "info.goal.title": "De quoi s’agit-il",
   "info.goal.text":
     "Quand on dépend d’une place handicapé, on ne peut pas tourner en ville en espérant tomber sur une place libre. wheelee affiche sur une carte les places handicapé publiques de toute l’Allemagne, met en évidence la plus proche de votre position et ouvre l’itinéraire dans votre application de cartes.",

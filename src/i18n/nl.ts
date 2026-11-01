@@ -174,6 +174,8 @@ export const nl: Messages = {
   "settings.info": "Over wheelee",
   "info.lead":
     "wheelee helpt mensen met een beperking om snel de dichtstbijzijnde gehandicaptenparkeerplaats te vinden.",
+  "info.reach":
+    "wheelee is al {count} keer geopend om een parkeerplaats te vinden.",
   "info.goal.title": "Waar het om gaat",
   "info.goal.text":
     "Wie een gehandicaptenparkeerplaats nodig heeft, kan niet op goed geluk door de stad rijden. wheelee toont openbare gehandicaptenparkeerplaatsen in heel Duitsland op een kaart, licht de plek het dichtst bij jouw locatie uit en opent de route in je kaartenapp.",

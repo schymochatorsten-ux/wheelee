@@ -174,6 +174,8 @@ export const en: Messages = {
   "settings.info": "About wheelee",
   "info.lead":
     "wheelee helps people with mobility impairments quickly find the nearest disabled parking space.",
+  "info.reach":
+    "People have already opened wheelee {count} times to find a parking space.",
   "info.goal.title": "What it is about",
   "info.goal.text":
     "If you depend on a disabled parking space, you cannot just drive around town hoping for luck. wheelee shows public disabled parking spaces across Germany on a map, highlights the one nearest to you and opens the route in your maps app.",

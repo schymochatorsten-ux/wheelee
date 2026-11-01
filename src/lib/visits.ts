@@ -162,6 +162,27 @@ export function totalVisits(): { visitors: number; views: number; since: string 
   return { visitors: Number(row.visitors), views: Number(row.views), since: row.since };
 }
 
+/**
+ * Die Zahl für die öffentliche Anzeige auf der Infoseite (ToDo 20.2) – oder `null`.
+ *
+ * **Erst ab `MIN_PUBLIC`.** Eine Zahl wie „3“ wäre eher peinlich als werbend und
+ * sagt nichts; bis dahin steht dort gar nichts. Gezählt sind die Besuche
+ * (Summe der Tagesbesucher), nicht „Menschen, denen geholfen wurde“: Ob jemand
+ * einen Parkplatz gefunden hat, misst wheelee bewusst nicht. Dieselbe Person an
+ * zwei Tagen zählt zweimal; deshalb heißt der Satz „Mal geöffnet“.
+ */
+export const MIN_PUBLIC = 50;
+
+export function publicReach(): number | null {
+  try {
+    const { visitors } = totalVisits();
+    return visitors >= MIN_PUBLIC ? visitors : null;
+  } catch {
+    // Ohne Datenbank (etwa beim Bauen) bleibt die Anzeige weg, die Seite nicht.
+    return null;
+  }
+}
+
 /** Nur für Tests: den Tageszustand vergessen. */
 export function resetVisitState(): void {
   today = null;
