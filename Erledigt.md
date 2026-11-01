@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-01):** **220 Einträge** auf oberster Ebene –
-davon 195, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-01):** **221 Einträge** auf oberster Ebene –
+davon 196, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 25, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -1640,6 +1640,15 @@ Torsten, 2026-10-30: „19 alle umsetzen, die ohne mich gehen.“ 13 bleibt gesp
   - **Offline:** `public/sw.js` behandelt `/api/cities` wie `/api/spots` (Netz zuerst, sonst die letzte Antwort); `VERSION` auf `v3` hochgezählt. Ohne Netz und ohne frühere Antwort zeigt die App nur die Standardstadt – die Parkplätze bleiben über die vorab geladenen Städte erreichbar.
   - **Bekannte Folge:** Bis die Antwort da ist, steht in der Liste nur die Standardstadt; der Stadtname eines Standorts fällt kurz auf den Kürzel (`slug`) zurück. Beim ersten Aufruf sind das die Standorte der Standardstadt, deren Name mitgeliefert wird.
   - **Tests:** `e2e/staedte.spec.ts` (Schnittstelle, HTML unter 150 KB und ohne OSM-Attributionen, Auswahl im Vorab-Download füllt sich). Dev-E2E 105 + 3, Produktions-E2E 110 grün.
+
+## 19. Ergänzung 2 (2026-11-01)
+
+- [x] 19.12 **Auffindbarkeit bei Suchmaschinen** (Torsten, 2026-11-01). **Ausgangslage:** Die Startseite ist eine Karte ohne lesbaren Text, es gab weder Sitemap noch Beschreibung je Stadt; wer „Behindertenparkplatz Hamburg“ sucht, hätte wheelee nicht gefunden. `robots.txt` erlaubte alles außer `/api/`, das war richtig und bleibt.
+  - **Eine Seite je Stadt** `/parkplaetze/<slug>` (`src/app/parkplaetze/[slug]/page.tsx`): Titel „Behindertenparkplätze in Hamburg“, Beschreibung mit Zahlen, kanonische Adresse, die Standorte als echter Text (höchstens 300 Zeilen), Hinweis, ob die Liste amtlich oder aus OpenStreetMap ist, und ein Link auf die Karte (`/?stadt=<slug>`, neu: die Startseite öffnet die gewünschte Stadt). Text in der Sprache der Oberfläche (`city.*`, neun Sprachen, von mir übersetzt). Unbekannte Städte antworten 404.
+  - **`sitemap.xml`** mit festen Seiten und allen Städten (`lastModified` = Importtag); `robots.txt` nennt sie. Die frühere Begründung „keine Sitemap, die App ist eine Seite“ galt nur, solange es keine Stadtseiten gab.
+  - **Beschreibung** (`meta.description`, neun Sprachen) mit den Suchbegriffen: Behindertenparkplätze, ganz Deutschland, Karte, Entfernung, Navigation, kostenlos, ohne Anmeldung. **Strukturierte Angaben** (schema.org `WebApplication`: kostenlos, Zielgruppe, Sprachen, Land) auf der Startseite, mit CSP-Nonce, damit die Sicherheitsprüfung 10.7 ohne Ausnahme bleibt. Kanonische Adresse der Startseite `/`, damit `/?stadt=…` nicht als Dublette zählt.
+  - **Barrierefreiheit** ist schon Teil der Prüfkette (`e2e/zugaenglichkeit.spec.ts`, axe, hell und dunkel); die neue Stadtseite kam dazu. **Geschwindigkeit:** erste Seite 73 KB, Stadtseite Hamburg 79 KB (Entwicklungsserver, unkomprimiert); die Karte lädt ihre Standorte nach (19.9). Nicht gemessen: Lighthouse und echte Ladezeiten im Betrieb.
+  - **Nicht getan, bewusst:** Sprachversionen unter eigenen Adressen (`hreflang`): Die Sprache kommt aus Cookie und Browser, nicht aus der Adresse; eigene Adressen je Sprache wären ein Umbau der Routen. Ein Vorschaubild für Messenger (Open Graph) fehlt weiter. **Nicht geprüft:** ob Google die Seiten tatsächlich aufnimmt – das zeigt erst die Search Console (Eigentum an `wheelee.de` bestätigen, Sitemap einreichen), was Torsten selbst tun muss.
 
 ## 9. Ergänzung (2026-11-01)
 

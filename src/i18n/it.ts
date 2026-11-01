@@ -451,7 +451,21 @@ export const it: Messages = {
 
   "meta.title": "wheelee – parcheggi per disabili",
   "meta.description":
-    "Trova su una mappa il parcheggio pubblico per disabili più vicino – da mobile, senza registrazione.",
+    "I parcheggi per disabili di tutta la Germania su una mappa: trova il più vicino, con distanza e navigazione. Gratuito, senza registrazione, da mobile.",
+  "city.title":
+    "Parcheggi per disabili a {city}",
+  "city.intro":
+    "{spots} ubicazioni con {spaces} posti a {city}.",
+  "city.official":
+    "L’elenco proviene dall’amministrazione comunale.",
+  "city.crowd":
+    "I dati provengono da OpenStreetMap e sono incompleti; una voce mancante non significa che non ci siano posti.",
+  "city.list":
+    "Ubicazioni a {city}",
+  "city.openMap":
+    "Apri sulla mappa",
+  "city.description":
+    "Parcheggi per disabili a {city}: {spots} ubicazioni con {spaces} posti su una mappa, con distanza e navigazione. Gratuito, senza registrazione.",
 
   "error.title": "Qualcosa è andato storto",
   "error.text":

@@ -73,6 +73,7 @@ Was von 19 baubar war, ist gebaut (19.1, 19.4, 19.7, 19.8; Begründung in [Erled
 
 - [~] 19.2 **Täglicher Datenlauf auf dem NAS** (Prüfung, höchstens 5 Neuimporte je Tag). Prüft die Quellen, importiert geänderte amtliche Städte neu und pusht die Daten (19.10, [Erledigt.md](Erledigt.md)); auf dem NAS nicht erprobt. **Braucht Torsten und Niklas:** Einrichtung nach [deploy/Datenlauf.md](deploy/Datenlauf.md) (Schreibschlüssel, Trockenlauf, Lauf ohne Push, Timer).
 - [~] 19.3 **Zeitgesteuerte Sicherung.** Skript und Timer liegen in `deploy/wheelee-sicherung.*` (täglich, 14 Sicherungen), auf dem NAS nicht erprobt. **Braucht Torsten:** einschalten wie 19.2 und einmal mit `systemctl start wheelee-sicherung.service` prüfen.
+- [!] 19.13 **Google Search Console einrichten.** Dort `wheelee.de` als Eigentum bestätigen (DNS-Eintrag oder Datei), `https://wheelee.de/sitemap.xml` einreichen und nach einigen Tagen unter „Seiten“ prüfen, ob die Stadtseiten aufgenommen sind (19.12). Braucht Torsten (Google-Konto, DNS beim Registrar).
 - [!] 19.5 **„Nur OSM“ und „aufgehoben gemeldet“ als OpenStreetMap-Hinweise zurückgeben.** Geschieht von Hand in OSM-Notizen mit eigenem Konto; die Liste der Kandidaten steht in `data/_validierung.md`.
 
 ---

@@ -15,9 +15,9 @@ import type { MetadataRoute } from "next";
  */
 export default function robots(): MetadataRoute.Robots {
   return {
-    // Keine `sitemap`-Angabe: Die App ist eine einzige Seite, und ein Verweis
-    // auf eine Datei, die es nicht gibt, ist schlechter als keiner.
+    // Die Sitemap nennt auch die Seite je Stadt (ToDo 19.12).
     rules: [{ userAgent: "*", allow: "/", disallow: ["/api/"] }],
+    sitemap: "https://wheelee.de/sitemap.xml",
     host: "https://wheelee.de",
   };
 }

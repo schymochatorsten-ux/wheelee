@@ -47,7 +47,7 @@ for (const modus of ["light", "dark"] as const) {
       await pruefen(page);
     });
 
-    for (const pfad of ["/info", "/quellen", "/abdeckung", "/datenschutz"]) {
+    for (const pfad of ["/info", "/parkplaetze/hamburg", "/quellen", "/abdeckung", "/datenschutz"]) {
       test(`Seite ${pfad}`, async ({ page }) => {
         await page.goto(pfad);
         await expect(page.getByRole("heading", { level: 1 })).toBeVisible();

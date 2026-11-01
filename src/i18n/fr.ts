@@ -462,7 +462,21 @@ export const fr: Messages = {
 
   "meta.title": "wheelee – places de stationnement PMR",
   "meta.description":
-    "Trouve la place de stationnement PMR publique la plus proche sur une carte – sur mobile, sans inscription.",
+    "Les places de stationnement handicapé de toute l’Allemagne sur une carte : trouvez la plus proche, avec distance et navigation. Gratuit, sans inscription, pour mobile.",
+  "city.title":
+    "Places de stationnement handicapé à {city}",
+  "city.intro":
+    "{spots} emplacements avec {spaces} places à {city}.",
+  "city.official":
+    "La liste provient de l’administration municipale.",
+  "city.crowd":
+    "Les données proviennent d’OpenStreetMap et sont incomplètes ; une entrée manquante ne signifie pas qu’il n’y a pas de places.",
+  "city.list":
+    "Emplacements à {city}",
+  "city.openMap":
+    "Ouvrir sur la carte",
+  "city.description":
+    "Places de stationnement handicapé à {city} : {spots} emplacements avec {spaces} places sur une carte, avec distance et navigation. Gratuit, sans inscription.",
 
   "error.title": "Quelque chose s'est mal passé",
   "error.text":

@@ -451,7 +451,21 @@ export const nl: Messages = {
 
   "meta.title": "wheelee – gehandicaptenparkeren",
   "meta.description":
-    "Vind de dichtstbijzijnde openbare gehandicaptenparkeerplaats op de kaart – op je telefoon, zonder registratie.",
+    "Gehandicaptenparkeerplaatsen in heel Duitsland op één kaart: vind de dichtstbijzijnde, met afstand en navigatie. Gratis, zonder account, mobiel.",
+  "city.title":
+    "Gehandicaptenparkeerplaatsen in {city}",
+  "city.intro":
+    "{spots} locaties met {spaces} parkeervakken in {city}.",
+  "city.official":
+    "De lijst komt van het gemeentebestuur.",
+  "city.crowd":
+    "De gegevens komen uit OpenStreetMap en zijn onvolledig; een ontbrekend item betekent niet dat er geen plaatsen zijn.",
+  "city.list":
+    "Locaties in {city}",
+  "city.openMap":
+    "Openen op de kaart",
+  "city.description":
+    "Gehandicaptenparkeerplaatsen in {city}: {spots} locaties met {spaces} parkeervakken op een kaart, met afstand en navigatie. Gratis, zonder account.",
 
   "error.title": "Er is iets misgegaan",
   "error.text":

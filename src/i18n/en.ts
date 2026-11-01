@@ -451,7 +451,21 @@ export const en: Messages = {
 
   "meta.title": "wheelee – disabled parking",
   "meta.description":
-    "Finds the nearest public disabled parking space on a map – mobile, no sign-up.",
+    "Disabled parking spaces across Germany on one map: find the nearest space for people with mobility impairments, with distance and navigation. Free, no sign-up, mobile.",
+  "city.title":
+    "Disabled parking in {city}",
+  "city.intro":
+    "{spots} locations with {spaces} parking spaces in {city}.",
+  "city.official":
+    "The list comes from the city administration.",
+  "city.crowd":
+    "The data comes from OpenStreetMap and is incomplete; a missing entry does not mean there are no spaces there.",
+  "city.list":
+    "Locations in {city}",
+  "city.openMap":
+    "Open on the map",
+  "city.description":
+    "Disabled parking in {city}: {spots} locations with {spaces} spaces on a map, with distance and navigation. Free, no sign-up.",
 
   "error.title": "Something went wrong",
   "error.text":

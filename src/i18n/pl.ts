@@ -454,7 +454,21 @@ export const pl: Messages = {
 
   "meta.title": "wheelee – parkowanie dla osób z niepełnosprawnościami",
   "meta.description":
-    "Znajduje na mapie najbliższe publiczne miejsce parkingowe dla osób z niepełnosprawnościami – na telefonie, bez rejestracji.",
+    "Miejsca parkingowe dla osób niepełnosprawnych w całych Niemczech na jednej mapie: znajdź najbliższe, z odległością i nawigacją. Za darmo, bez rejestracji, na telefon.",
+  "city.title":
+    "Miejsca parkingowe dla osób niepełnosprawnych: {city}",
+  "city.intro":
+    "{spots} lokalizacji z {spaces} miejscami: {city}.",
+  "city.official":
+    "Lista pochodzi z urzędu miasta.",
+  "city.crowd":
+    "Dane pochodzą z OpenStreetMap i są niekompletne; brak wpisu nie oznacza, że nie ma tam miejsc.",
+  "city.list":
+    "Lokalizacje: {city}",
+  "city.openMap":
+    "Otwórz na mapie",
+  "city.description":
+    "Miejsca parkingowe dla osób niepełnosprawnych: {city}. {spots} lokalizacji z {spaces} miejscami na mapie, z odległością i nawigacją. Za darmo, bez rejestracji.",
 
   "error.title": "Coś poszło nie tak",
   "error.text":

@@ -451,7 +451,21 @@ export const de = {
 
   "meta.title": "wheelee – Behindertenparkplätze",
   "meta.description":
-    "Findet den nächstgelegenen öffentlichen Behindertenparkplatz auf einer Karte – mobil, ohne Anmeldung.",
+    "Behindertenparkplätze in ganz Deutschland auf einer Karte: den nächsten Parkplatz für Menschen mit Gehbehinderung finden, mit Entfernung und Navigation. Kostenlos, ohne Anmeldung, mobil.",
+  "city.title":
+    "Behindertenparkplätze in {city}",
+  "city.intro":
+    "{spots} Standorte mit {spaces} Stellplätzen in {city}.",
+  "city.official":
+    "Die Liste stammt von der Stadtverwaltung.",
+  "city.crowd":
+    "Die Daten stammen aus OpenStreetMap und sind unvollständig; fehlende Einträge bedeuten nicht, dass es dort keine Plätze gibt.",
+  "city.list":
+    "Standorte in {city}",
+  "city.openMap":
+    "Auf der Karte öffnen",
+  "city.description":
+    "Behindertenparkplätze in {city}: {spots} Standorte mit {spaces} Stellplätzen auf der Karte, mit Entfernung und Navigation. Kostenlos, ohne Anmeldung.",
 
   "error.title": "Da ist etwas schiefgelaufen",
   "error.text":
