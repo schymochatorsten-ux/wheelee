@@ -57,21 +57,6 @@
       "source": "OpenStreetMap (way/1375242770), ODbL"
     },
     {
-      "id": "hardegsen-cd15a2fd7c",
-      "city": "hardegsen",
-      "label": "Amtsfreiheit 3",
-      "street": "Amtsfreiheit",
-      "houseNumber": "3",
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Hardegsen",
-      "spotCount": 2,
-      "lat": 51.65115180000001,
-      "lng": 9.8276125,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/204210835), ODbL"
-    },
-    {
       "id": "hardegsen-a9c5c706a8",
       "city": "hardegsen",
       "label": "Amtsfreiheit 3",
@@ -80,7 +65,7 @@
       "note": null,
       "timeRestriction": null,
       "district": "Hardegsen",
-      "spotCount": 1,
+      "spotCount": 2,
       "lat": 51.6511512,
       "lng": 9.82760905,
       "geoAccuracy": "street",

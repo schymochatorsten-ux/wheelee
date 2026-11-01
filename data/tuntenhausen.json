@@ -72,21 +72,6 @@
       "source": "OpenStreetMap (way/1294895522), ODbL"
     },
     {
-      "id": "tuntenhausen-6c3e7f4067",
-      "city": "tuntenhausen",
-      "label": "Graf-Arco-Straße",
-      "street": "Graf-Arco-Straße",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Tuntenhausen",
-      "spotCount": 1,
-      "lat": 47.93239735,
-      "lng": 12.012963650000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1034258814), ODbL"
-    },
-    {
       "id": "tuntenhausen-00ec7d4793",
       "city": "tuntenhausen",
       "label": "Graf-Arco-Straße",

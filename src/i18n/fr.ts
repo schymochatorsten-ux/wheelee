@@ -173,6 +173,24 @@ export const fr: Messages = {
   "settings.privacy": "Politique de confidentialité",
   "settings.sources": "Sources et licences",
   "settings.coverage": "Couverture des données",
+  "settings.info": "À propos de wheelee",
+  "info.lead":
+    "wheelee aide les personnes à mobilité réduite à trouver rapidement la place de stationnement handicapé la plus proche.",
+  "info.goal.title": "De quoi s’agit-il",
+  "info.goal.text":
+    "Quand on dépend d’une place handicapé, on ne peut pas tourner en ville en espérant tomber sur une place libre. wheelee affiche sur une carte les places handicapé publiques de toute l’Allemagne, met en évidence la plus proche de votre position et ouvre l’itinéraire dans votre application de cartes.",
+  "info.how.title": "Comment ça marche",
+  "info.how.1":
+    "Autorisez l’accès à la position. Elle reste sur votre appareil et n’est pas enregistrée.",
+  "info.how.2": "La place la plus proche est mise en évidence, avec sa distance.",
+  "info.how.3": "Un appui ouvre l’itinéraire dans Google Maps ou Apple Plans.",
+  "info.data.title": "D’où viennent les données",
+  "info.data.text":
+    "Les données proviennent de listes officielles des villes et d’OpenStreetMap. Elles sont incomplètes et peuvent être périmées. En cas de doute, les panneaux sur place font foi.",
+  "info.help.title": "Participez",
+  "info.help.text":
+    "Des données justes et à jour, nous ne les obtiendrons qu’avec la communauté. Si une place est erronée, a disparu ou manque, dites-le-nous : confirmez ou contestez une place d’un appui (un compte gratuit est nécessaire) ou signalez une erreur ou faites une suggestion, y compris sans compte. Chaque message est lu.",
+  "info.toMap": "Vers la carte",
 
   "account.emailInvalid": "Cette adresse e-mail ne semble pas correcte.",
   "account.passwordTooShort": "Le mot de passe doit comporter au moins {min} caractères.",

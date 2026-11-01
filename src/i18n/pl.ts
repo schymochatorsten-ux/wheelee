@@ -173,6 +173,24 @@ export const pl: Messages = {
   "settings.privacy": "Polityka prywatności",
   "settings.sources": "Źródła i licencje",
   "settings.coverage": "Pokrycie danych",
+  "settings.info": "O wheelee",
+  "info.lead":
+    "wheelee pomaga osobom z ograniczoną mobilnością szybko znaleźć najbliższe miejsce parkingowe dla osób niepełnosprawnych.",
+  "info.goal.title": "O co chodzi",
+  "info.goal.text":
+    "Kto potrzebuje miejsca dla osób niepełnosprawnych, nie może krążyć po mieście na szczęście. wheelee pokazuje na mapie publiczne miejsca parkingowe dla osób niepełnosprawnych w całych Niemczech, wyróżnia to najbliższe Twojej lokalizacji i otwiera trasę w Twojej aplikacji map.",
+  "info.how.title": "Jak to działa",
+  "info.how.1":
+    "Zezwól na dostęp do lokalizacji. Zostaje ona na Twoim urządzeniu i nie jest zapisywana.",
+  "info.how.2": "Najbliższe miejsce jest wyróżnione i podana jest odległość.",
+  "info.how.3": "Jedno dotknięcie otwiera trasę w Mapach Google lub Mapach Apple.",
+  "info.data.title": "Skąd pochodzą dane",
+  "info.data.text":
+    "Dane pochodzą z oficjalnych list miast i z OpenStreetMap. Są niekompletne i mogą być nieaktualne. W razie wątpliwości obowiązują znaki na miejscu.",
+  "info.help.title": "Pomóż nam",
+  "info.help.text":
+    "Poprawne i aktualne dane uda się zebrać tylko razem ze społecznością. Jeśli miejsce się nie zgadza, zniknęło albo brakuje go na mapie, daj nam znać: potwierdź lub zakwestionuj miejsce jednym dotknięciem (potrzebne jest bezpłatne konto) albo zgłoś błąd lub sugestię – także bez konta. Każde zgłoszenie jest czytane.",
+  "info.toMap": "Do mapy",
 
   "account.emailInvalid": "Ten adres e-mail wygląda niepoprawnie.",
   "account.passwordTooShort": "Hasło musi mieć co najmniej {min} znaków.",

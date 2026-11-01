@@ -87,21 +87,6 @@
       "source": "OpenStreetMap (way/944332637), ODbL"
     },
     {
-      "id": "selm-4cbb773d08",
-      "city": "selm",
-      "label": "Auf der Geist",
-      "street": "Auf der Geist",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Selm",
-      "spotCount": 1,
-      "lat": 51.702786,
-      "lng": 7.4698051,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1213100962), ODbL"
-    },
-    {
       "id": "selm-302d6e6c9a",
       "city": "selm",
       "label": "Auf der Geist",

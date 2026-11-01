@@ -132,21 +132,6 @@
       "source": "OpenStreetMap (way/799749170), ODbL"
     },
     {
-      "id": "oberursel-63db8458c0",
-      "city": "oberursel",
-      "label": "Geschwister-Scholl-Platz",
-      "street": "Geschwister-Scholl-Platz",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Oberursel (Taunus)",
-      "spotCount": 1,
-      "lat": 50.1969141,
-      "lng": 8.5917101,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/799749203), ODbL"
-    },
-    {
       "id": "oberursel-f80e77be80",
       "city": "oberursel",
       "label": "Geschwister-Scholl-Platz",

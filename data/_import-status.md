@@ -1,6 +1,6 @@
 # Importstand der deutschen Gemeinden
 
-Zuletzt aktualisiert: 2026-10-30T10:08:33.419Z
+Zuletzt aktualisiert: 2026-11-01T19:02:42.046Z
 
 Diese Datei schreiben die Importskripte selbst nach **jeder einzelnen Stadt**.
 Sie ist damit auch nach einem Abbruch mitten im Lauf korrekt.
@@ -30,8 +30,8 @@ npm run import:city -- --rest
 | davon geprüft, nichts gefunden | 0 |
 | noch nicht geprüft | 6.996 |
 | mit Problem | 0 |
-| importierte Standorte | 38.414 |
-| importierte Stellplätze | 64.341 |
+| importierte Standorte | 38.400 |
+| importierte Stellplätze | 64.117 |
 
 „Geprüft, nichts gefunden" ist etwas anderes als „noch nicht geprüft": Dort
 lief die Abfrage sauber durch und war leer. Diese Gemeinden werden nicht
@@ -89,8 +89,8 @@ liest niemand.
  | ✅ | 2 | Hamburg | 1.862.565 | amtlich (WFS) | 936 | 1310 | fertig | 
  | ✅ | 3 | München | 1.505.005 | amtlich (GEOJSON) | 568 | 958 | fertig | 
  | ✅ | 4 | Köln | 1.024.621 | amtlich (WFS) | 445 | 605 | fertig | 
- | ✅ | 5 | Frankfurt am Main | 756.021 | amtlich (WFS) | 458 | 615 | fertig | 
- | ✅ | 6 | Düsseldorf | 618.685 | amtlich (JSON) | 340 | 523 | fertig | 
+ | ✅ | 5 | Frankfurt am Main | 756.021 | amtlich (WFS) | 444 | 593 | fertig | 
+ | ✅ | 6 | Düsseldorf | 618.685 | amtlich (JSON) | 340 | 340 | fertig | 
  | ✅ | 7 | Stuttgart | 612.663 | OpenStreetMap | 266 | 646 | fertig | 
  | ✅ | 8 | Leipzig | 611.850 | OpenStreetMap | 237 | 358 | fertig | 
  | ✅ | 9 | Dortmund | 603.462 | amtlich (GEOJSON) | 368 | 368 | fertig | 
@@ -139,7 +139,7 @@ liest niemand.
  | ✅ | 52 | Paderborn | 156.378 | OpenStreetMap | 107 | 185 | fertig | 
  | ✅ | 53 | Herne | 155.851 | OpenStreetMap | 35 | 64 | fertig | 
  | ✅ | 54 | Heidelberg | 155.756 | amtlich (GEOJSON) | 214 | 214 | fertig | 
- | ✅ | 55 | Neuss | 154.317 | amtlich (GEOJSON) | 38 | 57 | fertig | 
+ | ✅ | 55 | Neuss | 154.317 | amtlich (GEOJSON) | 38 | 38 | fertig | 
  | ✅ | 56 | Regensburg | 151.389 | OpenStreetMap (Geofabrik-Auszug) | 67 | 121 | fertig | 
  | ✅ | 57 | Ingolstadt | 141.185 | OpenStreetMap | 31 | 54 | fertig | 
  | ✅ | 58 | Pforzheim | 134.912 | OpenStreetMap | 51 | 116 | fertig | 

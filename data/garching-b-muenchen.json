@@ -72,21 +72,6 @@
       "source": "OpenStreetMap (way/994977800), ODbL"
     },
     {
-      "id": "garching-b-muenchen-fad910a627",
-      "city": "garching-b-muenchen",
-      "label": "Am Coulombwall",
-      "street": "Am Coulombwall",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Garching b.München",
-      "spotCount": 1,
-      "lat": 48.26883565,
-      "lng": 11.67722595,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1067293641), ODbL"
-    },
-    {
       "id": "garching-b-muenchen-4a71569662",
       "city": "garching-b-muenchen",
       "label": "Am See",
@@ -490,21 +475,6 @@
       "lng": 11.668570850000002,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1362962606), ODbL"
-    },
-    {
-      "id": "garching-b-muenchen-391f28ab76",
-      "city": "garching-b-muenchen",
-      "label": "Lichtenbergstraße",
-      "street": "Lichtenbergstraße",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Garching b.München",
-      "spotCount": 1,
-      "lat": 48.26724660000001,
-      "lng": 11.668570850000002,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1362962607), ODbL"
     },
     {
       "id": "garching-b-muenchen-8976a48fcf",

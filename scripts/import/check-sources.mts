@@ -50,7 +50,7 @@ interface QuellenEintrag {
 /** Was der vorige Lauf gesehen hat – nur für Quellen ohne echtes Datum. */
 type SeenFile = Record<string, { marker: string; seenAt: string }>;
 
-type Verdict =
+export type Verdict =
   /** Quelle unverändert seit dem Import. */
   | "unveraendert"
   /** Quelle hat sich seit dem Import geändert – neu importieren. */
@@ -68,7 +68,7 @@ type Verdict =
   /** Abruf nicht möglich (Netzfehler, Zeitüberschreitung). */
   | "unpruefbar";
 
-interface Result {
+export interface Result {
   slug: string;
   city: string;
   verdict: Verdict;
@@ -428,9 +428,11 @@ function render(results: Result[]): string {
   return lines.join("\n");
 }
 
-async function main() {
-  const wanted = process.argv.slice(2).filter((argument) => !argument.startsWith("--"));
-
+/**
+ * Alle (oder die genannten) Städte prüfen und `data/_aktualitaet.md` schreiben.
+ * Getrennt von `main`, damit `auto-update.mts` das Ergebnis weiterverwenden kann.
+ */
+export async function checkAll(wanted: string[] = []): Promise<Result[]> {
   const status = await loadStatus();
   const quellen = await readJson<QuellenEintrag[]>(
     path.join(projectRoot, "data", "_quellen-status.json"),
@@ -458,6 +460,13 @@ async function main() {
 
   await fs.writeFile(seenPath, `${JSON.stringify(seen, null, 2)}\n`, "utf8");
   await fs.writeFile(path.join(projectRoot, "data", "_aktualitaet.md"), render(results), "utf8");
+
+  return results;
+}
+
+async function main() {
+  const wanted = process.argv.slice(2).filter((argument) => !argument.startsWith("--"));
+  const results = await checkAll(wanted);
 
   const reimport = results.filter((result) => result.reimport);
   const dead = results.filter((result) => result.verdict === "tot");

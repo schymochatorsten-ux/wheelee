@@ -12,21 +12,6 @@
   "generatedAt": "2026-10-30",
   "spots": [
     {
-      "id": "hechingen-0a1879dffa",
-      "city": "hechingen",
-      "label": "Bahnhofstraße",
-      "street": "Bahnhofstraße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Hechingen",
-      "spotCount": 1,
-      "lat": 48.3592941,
-      "lng": 8.96834015,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1254571470), ODbL"
-    },
-    {
       "id": "hechingen-b499b8c15e",
       "city": "hechingen",
       "label": "Bahnhofstraße",

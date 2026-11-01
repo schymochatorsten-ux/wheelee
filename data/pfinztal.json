@@ -27,21 +27,6 @@
       "source": "OpenStreetMap (way/79481301), ODbL"
     },
     {
-      "id": "pfinztal-6a0588737e",
-      "city": "pfinztal",
-      "label": "Am Stadion",
-      "street": "Am Stadion",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Pfinztal",
-      "spotCount": 1,
-      "lat": 49.00353245000001,
-      "lng": 8.534499,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1414251877), ODbL"
-    },
-    {
       "id": "pfinztal-47e64b53c6",
       "city": "pfinztal",
       "label": "Am Stadion",

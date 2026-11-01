@@ -625,21 +625,6 @@
       "lng": 9.31310405,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1417558083), ODbL"
-    },
-    {
-      "id": "metzingen-913ba3a338",
-      "city": "metzingen",
-      "label": "Wolfgrubstraße",
-      "street": "Wolfgrubstraße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Metzingen",
-      "spotCount": 1,
-      "lat": 48.531249800000005,
-      "lng": 9.313086900000002,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1502926316), ODbL"
     }
   ]
 }

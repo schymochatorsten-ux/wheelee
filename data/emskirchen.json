@@ -57,21 +57,6 @@
       "source": "OpenStreetMap (way/1453950662), ODbL"
     },
     {
-      "id": "emskirchen-b55f49d2fc",
-      "city": "emskirchen",
-      "label": "Bahnhofstraße",
-      "street": "Bahnhofstraße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": "24/7",
-      "district": "Emskirchen",
-      "spotCount": 1,
-      "lat": 49.5546986,
-      "lng": 10.7093342,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1451127556), ODbL"
-    },
-    {
       "id": "emskirchen-b17dea62b6",
       "city": "emskirchen",
       "label": "Bahnhofstraße",

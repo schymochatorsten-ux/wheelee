@@ -102,21 +102,6 @@
       "source": "OpenStreetMap (node/10056633979), ODbL"
     },
     {
-      "id": "bebra-ddc0548d14",
-      "city": "bebra",
-      "label": "Bahnhofstraße",
-      "street": "Bahnhofstraße",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Bebra",
-      "spotCount": 1,
-      "lat": 50.969130050000004,
-      "lng": 9.796580500000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1359588676), ODbL"
-    },
-    {
       "id": "bebra-4c40862d65",
       "city": "bebra",
       "label": "Bahnhofstraße 16",

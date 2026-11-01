@@ -192,21 +192,6 @@
       "source": "OpenStreetMap (way/1291758893), ODbL"
     },
     {
-      "id": "pirna-6268719aa2",
-      "city": "pirna",
-      "label": "Dresdner Straße 8b",
-      "street": "Dresdner Straße",
-      "houseNumber": "8b",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Pirna",
-      "spotCount": 1,
-      "lat": 50.958468450000005,
-      "lng": 13.9276725,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1291758894), ODbL"
-    },
-    {
       "id": "pirna-aa1946f7ed",
       "city": "pirna",
       "label": "Dresdner Straße 8b",

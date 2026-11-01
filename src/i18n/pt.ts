@@ -171,6 +171,23 @@ export const pt: Messages = {
   "settings.privacy": "Política de privacidade",
   "settings.sources": "Fontes e licenças",
   "settings.coverage": "Cobertura de dados",
+  "settings.info": "Sobre o wheelee",
+  "info.lead":
+    "O wheelee ajuda pessoas com mobilidade reduzida a encontrar rapidamente o lugar de estacionamento para pessoas com deficiência mais próximo.",
+  "info.goal.title": "Do que se trata",
+  "info.goal.text":
+    "Quem precisa de um lugar para pessoas com deficiência não pode andar às voltas pela cidade à espera de sorte. O wheelee mostra num mapa os lugares públicos de toda a Alemanha, destaca o mais próximo da sua localização e abre o percurso na sua aplicação de mapas.",
+  "info.how.title": "Como funciona",
+  "info.how.1": "Permita o acesso à localização. Fica no seu dispositivo e não é guardada.",
+  "info.how.2": "O lugar mais próximo é destacado, com a distância.",
+  "info.how.3": "Um toque abre o percurso no Google Maps ou no Apple Mapas.",
+  "info.data.title": "De onde vêm os dados",
+  "info.data.text":
+    "Os dados vêm de listas oficiais das cidades e do OpenStreetMap. Estão incompletos e podem estar desatualizados. Em caso de dúvida, valem os sinais no local.",
+  "info.help.title": "Ajude",
+  "info.help.text":
+    "Só com a comunidade conseguimos dados corretos e atualizados. Se um lugar estiver errado, tiver desaparecido ou faltar, diga-nos: confirme ou conteste um lugar com um toque (é necessária uma conta gratuita) ou comunique um erro ou uma sugestão, também sem conta. Cada mensagem é lida.",
+  "info.toMap": "Ir para o mapa",
 
   "account.emailInvalid": "Este endereço de e-mail parece incorreto.",
   "account.passwordTooShort": "A palavra-passe tem de ter pelo menos {min} caracteres.",

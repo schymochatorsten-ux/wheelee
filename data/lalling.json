@@ -57,21 +57,6 @@
       "source": "OpenStreetMap (way/1488658639), ODbL"
     },
     {
-      "id": "lalling-cc8d5b9b1b",
-      "city": "lalling",
-      "label": "Am Kurpark",
-      "street": "Am Kurpark",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Lalling",
-      "spotCount": 1,
-      "lat": 48.84121950000001,
-      "lng": 13.139455000000002,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1488658640), ODbL"
-    },
-    {
       "id": "lalling-a421abc192",
       "city": "lalling",
       "label": "Ranzingerbergstraße",

@@ -147,21 +147,6 @@
       "source": "OpenStreetMap (way/1272735720), ODbL"
     },
     {
-      "id": "adendorf-669bf4bdc2",
-      "city": "adendorf",
-      "label": "Artlenburger Landstraße",
-      "street": "Artlenburger Landstraße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Adendorf",
-      "spotCount": 1,
-      "lat": 53.286902850000004,
-      "lng": 10.425867700000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1272735721), ODbL"
-    },
-    {
       "id": "adendorf-42c47f5b8d",
       "city": "adendorf",
       "label": "Artlenburger Landstraße",

@@ -387,21 +387,6 @@
       "source": "OpenStreetMap (way/1202814030), ODbL"
     },
     {
-      "id": "dachau-ff793b7afa",
-      "city": "dachau",
-      "label": "Obere Moosschwaigestraße",
-      "street": "Obere Moosschwaigestraße",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Dachau",
-      "spotCount": 5,
-      "lat": 48.255023650000005,
-      "lng": 11.44483185,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/108199880), ODbL"
-    },
-    {
       "id": "dachau-fa1307c6e7",
       "city": "dachau",
       "label": "Obere Moosschwaigestraße",
@@ -440,7 +425,7 @@
       "note": null,
       "timeRestriction": null,
       "district": "Dachau",
-      "spotCount": 1,
+      "spotCount": 5,
       "lat": 48.2550246,
       "lng": 11.444825000000002,
       "geoAccuracy": "street",

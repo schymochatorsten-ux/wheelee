@@ -42,21 +42,6 @@
       "source": "OpenStreetMap (way/1395181608), ODbL"
     },
     {
-      "id": "zeltingen-rachtig-f08e882ddc",
-      "city": "zeltingen-rachtig",
-      "label": "Moselblick",
-      "street": "Moselblick",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Zeltingen-Rachtig",
-      "spotCount": 1,
-      "lat": 49.96197735,
-      "lng": 7.0158997,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1395181609), ODbL"
-    },
-    {
       "id": "zeltingen-rachtig-0097e24412",
       "city": "zeltingen-rachtig",
       "label": "Moselblick",

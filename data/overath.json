@@ -57,21 +57,6 @@
       "source": "OpenStreetMap (way/1434841125), ODbL"
     },
     {
-      "id": "overath-e3857fed66",
-      "city": "overath",
-      "label": "Aggertal Nord",
-      "street": "Aggertal Nord",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Overath",
-      "spotCount": 1,
-      "lat": 50.952844,
-      "lng": 7.31892135,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1434841128), ODbL"
-    },
-    {
       "id": "overath-805ab15475",
       "city": "overath",
       "label": "Aggertal Süd",

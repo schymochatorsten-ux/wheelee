@@ -42,21 +42,6 @@
       "source": "OpenStreetMap (node/8261513305), ODbL"
     },
     {
-      "id": "germaringen-b1767e4e50",
-      "city": "germaringen",
-      "label": "Zufahrt FW Obergermaringen",
-      "street": "Zufahrt FW Obergermaringen",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Germaringen",
-      "spotCount": 1,
-      "lat": 47.9277281,
-      "lng": 10.6720184,
-      "geoAccuracy": "house",
-      "source": "OpenStreetMap (node/11883065984), ODbL"
-    },
-    {
       "id": "germaringen-43789c1f43",
       "city": "germaringen",
       "label": "Zufahrt FW Obergermaringen",

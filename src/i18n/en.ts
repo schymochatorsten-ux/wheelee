@@ -171,6 +171,23 @@ export const en: Messages = {
   "settings.privacy": "Privacy policy",
   "settings.sources": "Sources and licences",
   "settings.coverage": "Data coverage",
+  "settings.info": "About wheelee",
+  "info.lead":
+    "wheelee helps people with mobility impairments quickly find the nearest disabled parking space.",
+  "info.goal.title": "What it is about",
+  "info.goal.text":
+    "If you depend on a disabled parking space, you cannot just drive around town hoping for luck. wheelee shows public disabled parking spaces across Germany on a map, highlights the one nearest to you and opens the route in your maps app.",
+  "info.how.title": "How it works",
+  "info.how.1": "Allow location access. It stays on your device and is not stored.",
+  "info.how.2": "The nearest parking space is highlighted, with its distance.",
+  "info.how.3": "One tap opens the route in Google Maps or Apple Maps.",
+  "info.data.title": "Where the data comes from",
+  "info.data.text":
+    "The information comes from official city lists and from OpenStreetMap. It is incomplete and may be out of date. When in doubt, trust the signs on site.",
+  "info.help.title": "Help us",
+  "info.help.text":
+    "Correct, up-to-date data is only possible together with the community. If a space is wrong, has disappeared or is missing, tell us: confirm or dispute a space with one tap (this needs a free account), or report an error or suggestion, which also works without an account. Every message is read.",
+  "info.toMap": "To the map",
 
   "account.emailInvalid": "This email address does not look right.",
   "account.passwordTooShort": "The password must be at least {min} characters long.",

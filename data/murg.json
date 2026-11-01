@@ -42,21 +42,6 @@
       "source": "OpenStreetMap (way/1148203876), ODbL"
     },
     {
-      "id": "murg-bcd5d9f92d",
-      "city": "murg",
-      "label": "Am Freibad 3",
-      "street": "Am Freibad",
-      "houseNumber": "3",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Murg",
-      "spotCount": 1,
-      "lat": 47.552537,
-      "lng": 8.0240291,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1172762141), ODbL"
-    },
-    {
       "id": "murg-348bc0a0ed",
       "city": "murg",
       "label": "Am Rathaus",

@@ -312,21 +312,6 @@
       "source": "OpenStreetMap (way/1460544600), ODbL"
     },
     {
-      "id": "clausthal-zellerfeld-e5d633c969",
-      "city": "clausthal-zellerfeld",
-      "label": "Kronenplatz 10",
-      "street": "Kronenplatz",
-      "houseNumber": "10",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Clausthal-Zellerfeld",
-      "spotCount": 1,
-      "lat": 51.807032750000005,
-      "lng": 10.33643155,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1460544606), ODbL"
-    },
-    {
       "id": "clausthal-zellerfeld-4708900383",
       "city": "clausthal-zellerfeld",
       "label": "Leibnizstraße",

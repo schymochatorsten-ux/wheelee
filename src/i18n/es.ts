@@ -174,6 +174,23 @@ export const es: Messages = {
   "settings.privacy": "Política de privacidad",
   "settings.sources": "Fuentes y licencias",
   "settings.coverage": "Cobertura de datos",
+  "settings.info": "Acerca de wheelee",
+  "info.lead":
+    "wheelee ayuda a las personas con movilidad reducida a encontrar rápidamente la plaza de aparcamiento para personas con discapacidad más cercana.",
+  "info.goal.title": "De qué se trata",
+  "info.goal.text":
+    "Quien depende de una plaza para personas con discapacidad no puede dar vueltas por la ciudad esperando tener suerte. wheelee muestra en un mapa las plazas públicas de toda Alemania, destaca la más cercana a tu ubicación y abre la ruta en tu aplicación de mapas.",
+  "info.how.title": "Cómo funciona",
+  "info.how.1": "Permite el acceso a la ubicación. Se queda en tu dispositivo y no se guarda.",
+  "info.how.2": "Se destaca la plaza más cercana, con su distancia.",
+  "info.how.3": "Un toque abre la ruta en Google Maps o Apple Maps.",
+  "info.data.title": "De dónde vienen los datos",
+  "info.data.text":
+    "Los datos proceden de listas oficiales de las ciudades y de OpenStreetMap. Están incompletos y pueden estar desactualizados. En caso de duda, valen las señales sobre el terreno.",
+  "info.help.title": "Colabora",
+  "info.help.text":
+    "Solo con la comunidad podemos conseguir datos correctos y actualizados. Si una plaza no es correcta, ha desaparecido o falta, avísanos: confirma o desmiente una plaza con un toque (hace falta una cuenta gratuita) o notifica un error o una sugerencia, también sin cuenta. Leemos cada mensaje.",
+  "info.toMap": "Ir al mapa",
 
   "account.emailInvalid": "Esta dirección de correo no parece correcta.",
   "account.passwordTooShort": "La contraseña debe tener al menos {min} caracteres.",

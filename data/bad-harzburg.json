@@ -27,21 +27,6 @@
       "source": "OpenStreetMap (way/58308224), ODbL"
     },
     {
-      "id": "bad-harzburg-ff78eebbae",
-      "city": "bad-harzburg",
-      "label": "Herzog-Wilhelm-Straße 40",
-      "street": "Herzog-Wilhelm-Straße",
-      "houseNumber": "40",
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Bad Harzburg",
-      "spotCount": 1,
-      "lat": 51.88333445000001,
-      "lng": 10.5585348,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1524985300), ODbL"
-    },
-    {
       "id": "bad-harzburg-df939655fb",
       "city": "bad-harzburg",
       "label": "Herzog-Wilhelm-Straße 40",
@@ -70,21 +55,6 @@
       "lng": 10.559965900000002,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1524985298), ODbL"
-    },
-    {
-      "id": "bad-harzburg-6ef3729eda",
-      "city": "bad-harzburg",
-      "label": "Herzog-Wilhelm-Straße 57",
-      "street": "Herzog-Wilhelm-Straße",
-      "houseNumber": "57",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Bad Harzburg",
-      "spotCount": 1,
-      "lat": 51.88137805,
-      "lng": 10.559966200000002,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1524985299), ODbL"
     },
     {
       "id": "bad-harzburg-eb8ad2166d",

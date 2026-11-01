@@ -192,21 +192,6 @@
       "source": "OpenStreetMap (way/1267941965), ODbL"
     },
     {
-      "id": "wustermark-f66e9fc8b3",
-      "city": "wustermark",
-      "label": "Hafenstraße",
-      "street": "Hafenstraße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Wustermark",
-      "spotCount": 1,
-      "lat": 52.552902350000004,
-      "lng": 12.960286700000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1193618789), ODbL"
-    },
-    {
       "id": "wustermark-0d802be2b8",
       "city": "wustermark",
       "label": "Hafenstraße",

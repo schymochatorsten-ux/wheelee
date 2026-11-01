@@ -12,21 +12,6 @@
   "generatedAt": "2026-10-30",
   "spots": [
     {
-      "id": "wiemersdorf-7be58ae47b",
-      "city": "wiemersdorf",
-      "label": "Bimöhlen",
-      "street": "Bimöhlen",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Wiemersdorf",
-      "spotCount": 3,
-      "lat": 53.94178205,
-      "lng": 9.9461111,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1086404565), ODbL"
-    },
-    {
       "id": "wiemersdorf-f941feeb26",
       "city": "wiemersdorf",
       "label": "Bimöhlen",
@@ -50,7 +35,7 @@
       "note": null,
       "timeRestriction": null,
       "district": "Wiemersdorf",
-      "spotCount": 1,
+      "spotCount": 3,
       "lat": 53.94178045,
       "lng": 9.9461066,
       "geoAccuracy": "street",

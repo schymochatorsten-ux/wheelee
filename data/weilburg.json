@@ -27,21 +27,6 @@
       "source": "OpenStreetMap (way/200831186), ODbL"
     },
     {
-      "id": "weilburg-4fdcc6fbae",
-      "city": "weilburg",
-      "label": "Bahnhofstraße",
-      "street": "Bahnhofstraße",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Weilburg",
-      "spotCount": 1,
-      "lat": 50.48593745000001,
-      "lng": 8.2674531,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1390970861), ODbL"
-    },
-    {
       "id": "weilburg-06d692944c",
       "city": "weilburg",
       "label": "Bahnhofstraße",

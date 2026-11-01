@@ -57,21 +57,6 @@
       "source": "OpenStreetMap (way/1099784504), ODbL"
     },
     {
-      "id": "zingst-eb5c1d7d6e",
-      "city": "zingst",
-      "label": "Hafenstraße",
-      "street": "Hafenstraße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Zingst",
-      "spotCount": 1,
-      "lat": 54.4319751,
-      "lng": 12.6901367,
-      "geoAccuracy": "house",
-      "source": "OpenStreetMap (node/12645827547), ODbL"
-    },
-    {
       "id": "zingst-1847fcabbf",
       "city": "zingst",
       "label": "Hafenstraße",

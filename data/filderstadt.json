@@ -312,21 +312,6 @@
       "source": "OpenStreetMap (node/10133322012), ODbL"
     },
     {
-      "id": "filderstadt-e6cf72ec8f",
-      "city": "filderstadt",
-      "label": "Karlstraße 60",
-      "street": "Karlstraße",
-      "houseNumber": "60",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Filderstadt",
-      "spotCount": 1,
-      "lat": 48.6767496,
-      "lng": 9.223397400000001,
-      "geoAccuracy": "house",
-      "source": "OpenStreetMap (node/10133439810), ODbL"
-    },
-    {
       "id": "filderstadt-4d54a85395",
       "city": "filderstadt",
       "label": "Karlstraße 94",

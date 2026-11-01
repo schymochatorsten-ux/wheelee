@@ -27,21 +27,6 @@
       "source": "OpenStreetMap (way/350475258), ODbL"
     },
     {
-      "id": "forst-bw-e693461d87",
-      "city": "forst-bw",
-      "label": "Bruchsal West",
-      "street": "Bruchsal West",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Forst",
-      "spotCount": 6,
-      "lat": 49.1616561,
-      "lng": 8.5674591,
-      "geoAccuracy": "house",
-      "source": "OpenStreetMap (node/5621804679), ODbL"
-    },
-    {
       "id": "forst-bw-ac4cbbd52b",
       "city": "forst-bw",
       "label": "Bruchsal West",

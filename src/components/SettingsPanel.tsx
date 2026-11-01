@@ -262,6 +262,12 @@ export function SettingsPanel({
       <footer className="border-t border-neutral-200 pt-4 dark:border-neutral-800">
         <nav aria-label={t("settings.legal")} className="flex flex-wrap gap-x-5 gap-y-1 text-sm">
           <Link
+            href="/info"
+            className="inline-flex min-h-11 items-center text-blue-800 hover:underline focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"
+          >
+            {t("settings.info")}
+          </Link>
+          <Link
             href="/impressum"
             className="inline-flex min-h-11 items-center text-blue-800 hover:underline focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"
           >

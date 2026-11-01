@@ -447,21 +447,6 @@
       "source": "OpenStreetMap (way/1309444733), ODbL"
     },
     {
-      "id": "senden-nw-a46b6745ab",
-      "city": "senden-nw",
-      "label": "Laurentiusplatz 2",
-      "street": "Laurentiusplatz",
-      "houseNumber": "2",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Senden",
-      "spotCount": 1,
-      "lat": 51.8547262,
-      "lng": 7.4871844,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1309444736), ODbL"
-    },
-    {
       "id": "senden-nw-4286262f9a",
       "city": "senden-nw",
       "label": "Laurentiusplatz 3",
@@ -595,21 +580,6 @@
       "lng": 7.48478725,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/27337148), ODbL"
-    },
-    {
-      "id": "senden-nw-d2b1aeeb92",
-      "city": "senden-nw",
-      "label": "Steverstraße",
-      "street": "Steverstraße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Senden",
-      "spotCount": 1,
-      "lat": 51.85820605000001,
-      "lng": 7.48478675,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1309094660), ODbL"
     },
     {
       "id": "senden-nw-ca3fcac839",

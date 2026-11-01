@@ -48,9 +48,8 @@ vom BKG, die nicht im Repository liegen).
 
 Datenläufe laufen in Stufen, jede erst nach den Prüfungen (D-11 in
 [Erledigt.md](Erledigt.md)); alle Stufen sind eingespielt. Offen ist, in dieser
-Reihenfolge: **2d.8a** (Bochum, braucht die Datei von Torsten), **15.1**
-(weitere Prüfrunden der Übersetzungen), **19.2 und 19.3** (Timer auf dem NAS
-einschalten), **19.5 und 19.6** (von Hand).
+Reihenfolge: **2d.8a** (Bochum und Köln), **10.20** (NAS prüfen), **19.2 und
+19.3** (Timer auf dem NAS einschalten), **19.5** (von Hand).
 
 **Neue Knöpfe und Meldungen kommen gleich in `src/i18n/de.ts`, nicht in die
 Komponente** (Aufbau in [Erledigt.md](Erledigt.md) unter 15.2) – und in die
@@ -62,24 +61,19 @@ maschinelle Mehrfachprüfung.
 
 ## 2. Datenquellen und Import
 
-- [~] 2d.8a **Städte mit ungenutzter amtlicher Quelle.** München und Bielefeld sind umgestellt (Befund in [Erledigt.md](Erledigt.md)). **Offen: Bochum.** Am 2026-10-30 erneut mit einfachem Abruf versucht: Der Datensatz `bochum-behindertenparkplaetze` ist über die CKAN-Schnittstelle von `opendata.ruhr` auffindbar (GeoJSON, CSV, ZIP), der Download antwortet aber weiter mit 403, der ArcGIS-Dienst mit 404; ich lade die Datei nicht selbst. **Braucht Torsten:** die CSV oder das GeoJSON „Bochum – Behindertenparkplätze“ (CC0) von `bochum.opendata.ruhr` im Browser laden und in den Arbeitsordner legen; vorher prüfen, ob sie Koordinaten enthält.
+- [~] 2d.8a **Städte mit ungenutzter amtlicher Quelle.** München und Bielefeld sind umgestellt (Befund in [Erledigt.md](Erledigt.md)). **Offen: Bochum.** Am 2026-11-01 erneut mit einfachem Abruf versucht, auch über GovData und die Datastore-Schnittstelle: Der Datensatz `bochum-behindertenparkplaetze` ist über `opendata.ruhr` auffindbar (GeoJSON, CSV, ZIP), der Download antwortet aber weiter mit 403, der ArcGIS-Dienst mit 404, die Datastore-Schnittstelle ebenfalls; ich umgehe die Sperre nicht. **Ohne die Datei im Browser geht es nicht:** CSV oder GeoJSON „Bochum – Behindertenparkplätze“ (CC0) von `bochum.opendata.ruhr` laden und in den Arbeitsordner legen. **Köln** (neu am 2026-11-01): Der ArcGIS-Dienst der Stadt liefert kein JSON mehr (Ebenen 0–2), der automatische Lauf (19.10) hat den Kölner Import deshalb verworfen; der Bestand bleibt amtlich vom 2026-10-08. Neuer Bezugsweg zu suchen.
 
 ## 10. Sicherheit und Recht
 
 - [!] 10.20 **Admin-Konto auf dem NAS prüfen und die neue Reihenfolge einhalten** (zu 10.19, [Erledigt.md](Erledigt.md)). **Braucht Torsten:** Nach dem Einspielen den Container neu starten und prüfen, dass das eigene Konto `role = 'admin'` trägt (`docker exec wheelee node -e "const {DatabaseSync}=require('node:sqlite');console.log(new DatabaseSync(process.env.WHEELEE_DB_PATH).prepare('SELECT email,role FROM account').all())"`). Stehen Adressen in `ADMIN_EMAILS`, zu denen es *kein eigenes* Konto gibt, die Adresse entfernen.
 
-## 15. Mehrsprachigkeit
-
-- [!] 15.1 **Prüfung der Übersetzungen durch Menschen** (D-08) für Italienisch, Polnisch, Niederländisch, Portugiesisch und Russisch; Englisch und Spanisch ebenso. Die drei maschinellen Prüfrunden sind gelaufen (Befund in [Erledigt.md](Erledigt.md), 15.1) und finden nichts mehr. **Braucht Torsten:** je Sprache eine Muttersprachler:in, die `src/i18n/<code>.ts` gegenliest; besonders das niederländische „parkeervak“ für Stellplatz und das portugiesische „comunicação“. Alle Sprachen sind gebaut; eine weitere Sprache braucht je `src/i18n/<code>.ts`, Eintrag in `index.ts`, Zeile in `opening-hours.test.ts` und einen E2E-Test in `sprache.spec.ts`.
-
 ## 19. Betrieb und Pflege
 
 Was von 19 baubar war, ist gebaut (19.1, 19.4, 19.7, 19.8; Begründung in [Erledigt.md](Erledigt.md)). Offen ist, was auf dem NAS oder von Hand geschieht:
 
-- [~] 19.2 **Monatlicher Aktualitätslauf auf dem NAS.** Skript und Timer liegen in `deploy/wheelee-aktualitaet.*`, auf dem NAS nicht erprobt. **Braucht Torsten:** einschalten (Befehle in `deploy/README.md`, „Zeitgesteuerte Läufe“) und nach dem ersten Lauf `data/_aktualitaet.md` ansehen.
+- [~] 19.2 **Monatlicher Aktualitätslauf auf dem NAS.** Prüft die Quellen, importiert geänderte amtliche Städte neu und pusht die Daten (19.10, [Erledigt.md](Erledigt.md)); auf dem NAS nicht erprobt. **Braucht Torsten:** einschalten (Befehle in `deploy/README.md`, „Zeitgesteuerte Läufe“), dem NAS-Benutzer einen Schreibschlüssel fürs Repository geben und nach dem ersten Lauf `data/_auto-update.md` ansehen.
 - [~] 19.3 **Zeitgesteuerte Sicherung.** Skript und Timer liegen in `deploy/wheelee-sicherung.*` (täglich, 14 Sicherungen), auf dem NAS nicht erprobt. **Braucht Torsten:** einschalten wie 19.2 und einmal mit `systemctl start wheelee-sicherung.service` prüfen.
 - [!] 19.5 **„Nur OSM“ und „aufgehoben gemeldet“ als OpenStreetMap-Hinweise zurückgeben.** Geschieht von Hand in OSM-Notizen mit eigenem Konto; die Liste der Kandidaten steht in `data/_validierung.md`.
-- [!] 19.6 **Laufender Betriebsmonitor** (Eintrag in nfuptime, siehe Checkliste in `wheelee-infrastruktur.md`). Braucht Zugang zu nfuptime.
 
 ---
 

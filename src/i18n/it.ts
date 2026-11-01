@@ -171,6 +171,23 @@ export const it: Messages = {
   "settings.privacy": "Informativa sulla privacy",
   "settings.sources": "Fonti e licenze",
   "settings.coverage": "Copertura dei dati",
+  "settings.info": "Informazioni su wheelee",
+  "info.lead":
+    "wheelee aiuta le persone con difficoltà motorie a trovare rapidamente il parcheggio per disabili più vicino.",
+  "info.goal.title": "Di cosa si tratta",
+  "info.goal.text":
+    "Chi ha bisogno di un parcheggio per disabili non può girare per la città sperando nella fortuna. wheelee mostra su una mappa i parcheggi pubblici per disabili in tutta la Germania, evidenzia quello più vicino alla tua posizione e apre il percorso nella tua app di mappe.",
+  "info.how.title": "Come funziona",
+  "info.how.1": "Consenti l’accesso alla posizione. Resta sul tuo dispositivo e non viene salvata.",
+  "info.how.2": "Il parcheggio più vicino viene evidenziato, con la distanza.",
+  "info.how.3": "Un tocco apre il percorso in Google Maps o Apple Mappe.",
+  "info.data.title": "Da dove vengono i dati",
+  "info.data.text":
+    "I dati provengono da elenchi ufficiali delle città e da OpenStreetMap. Sono incompleti e possono essere non aggiornati. In caso di dubbio valgono i cartelli sul posto.",
+  "info.help.title": "Dai una mano",
+  "info.help.text":
+    "Dati corretti e aggiornati si ottengono solo insieme alla community. Se un parcheggio non è corretto, non esiste più o ne manca uno, faccelo sapere: conferma o contesta un parcheggio con un tocco (serve un account gratuito) oppure segnala un errore o invia un suggerimento, anche senza account. Ogni messaggio viene letto.",
+  "info.toMap": "Vai alla mappa",
 
   "account.emailInvalid": "Questo indirizzo e-mail non sembra corretto.",
   "account.passwordTooShort": "La password deve avere almeno {min} caratteri.",

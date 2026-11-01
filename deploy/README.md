@@ -76,9 +76,15 @@ einschaltest** – sie wurden nicht auf dem NAS ausprobiert. Beim Einrichten
 
 - `wheelee-sicherung` – täglich 03:30, `VACUUM INTO` im Container, die letzten
   14 Sicherungen bleiben (`WHEELEE_SICHERUNGEN` ändert die Zahl).
-- `wheelee-aktualitaet` – am Monatsersten, `sources:check` und `validate` in
-  einem Wegwerf-Container; Ergebnis in `data/_aktualitaet.md` und
-  `data/_validierung.md`. Ändert keine Seed-Dateien.
+- `wheelee-aktualitaet` – am Monatsersten, `data:update` (Quellen prüfen und
+  geänderte amtliche Städte neu importieren, ToDo 19.10) und `validate` in einem
+  Wegwerf-Container; Berichte in `data/_aktualitaet.md`, `data/_auto-update.md`
+  und `data/_validierung.md`. **Geänderte Daten werden committet und nach
+  `origin/main` gepusht** (`WHEELEE_AUTO_PUSH=1` in der `.service`), der Webhook
+  baut dann neu. Dafür braucht der Benutzer des Dienstes einen
+  **Schreibschlüssel** für das Repository; ohne ihn bleibt der Stand auf dem
+  Zweig `daten-update`. Probelauf ohne Änderung:
+  `docker run --rm -v /opt/wheelee:/app -w /app node:24-alpine sh -c 'npm ci && npm run data:update -- --dry'`.
 
 ```bash
 sudo chmod +x /opt/wheelee/deploy/*.sh

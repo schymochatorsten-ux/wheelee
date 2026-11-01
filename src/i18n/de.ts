@@ -165,6 +165,23 @@ export const de = {
   "settings.privacy": "Datenschutzerklärung",
   "settings.sources": "Quellen und Lizenzen",
   "settings.coverage": "Datenabdeckung",
+  "settings.info": "Über wheelee",
+  "info.lead":
+    "wheelee hilft Menschen mit Gehbehinderung, schnell den nächsten Behindertenparkplatz zu finden.",
+  "info.goal.title": "Worum es geht",
+  "info.goal.text":
+    "Wer auf einen Behindertenparkplatz angewiesen ist, kann nicht auf gut Glück durch die Stadt kreisen. wheelee zeigt öffentliche Behindertenparkplätze in ganz Deutschland auf einer Karte, hebt den nächsten zu deinem Standort hervor und öffnet die Route in deiner Karten-App.",
+  "info.how.title": "So funktioniert es",
+  "info.how.1": "Erlaube den Standort. Er bleibt auf deinem Gerät und wird nicht gespeichert.",
+  "info.how.2": "Der nächste Parkplatz wird mit Entfernung hervorgehoben.",
+  "info.how.3": "Ein Tipp öffnet die Route in Google Maps oder Apple Karten.",
+  "info.data.title": "Woher die Daten kommen",
+  "info.data.text":
+    "Die Angaben stammen aus amtlichen Listen der Städte und aus OpenStreetMap. Sie sind nicht vollständig und können veraltet sein. Im Zweifel gelten die Schilder vor Ort.",
+  "info.help.title": "Hilf mit",
+  "info.help.text":
+    "Richtige und aktuelle Daten schaffen wir nur gemeinsam mit der Community. Stimmt ein Parkplatz nicht, ist er verschwunden oder fehlt einer, sag es uns: Bestätige oder bestreite einen Parkplatz mit einem Tipp (dafür brauchst du ein kostenloses Konto) oder melde einen Fehler oder Vorschlag – das geht auch ohne Konto. Jede Rückmeldung wird gelesen.",
+  "info.toMap": "Zur Karte",
 
   "account.emailInvalid": "Diese E-Mail-Adresse sieht nicht richtig aus.",
   "account.passwordTooShort": "Das Passwort muss mindestens {min} Zeichen lang sein.",

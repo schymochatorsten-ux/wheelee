@@ -265,21 +265,6 @@
       "lng": 7.326304400000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1395175312), ODbL"
-    },
-    {
-      "id": "hueckeswagen-b951219bc2",
-      "city": "hueckeswagen",
-      "label": "Zum Sportzentrum",
-      "street": "Zum Sportzentrum",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Hückeswagen",
-      "spotCount": 1,
-      "lat": 51.14579665000001,
-      "lng": 7.32634305,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1395175313), ODbL"
     }
   ]
 }

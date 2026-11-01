@@ -50,26 +50,11 @@
       "note": null,
       "timeRestriction": null,
       "district": "Schwerte",
-      "spotCount": 1,
+      "spotCount": 2,
       "lat": 51.442332400000005,
       "lng": 7.5601178,
       "geoAccuracy": "house",
       "source": "OpenStreetMap (node/8486095094), ODbL"
-    },
-    {
-      "id": "schwerte-bdc7f56873",
-      "city": "schwerte",
-      "label": "Bahnhofstraße",
-      "street": "Bahnhofstraße",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Schwerte",
-      "spotCount": 2,
-      "lat": 51.44233115,
-      "lng": 7.560122850000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/418383260), ODbL"
     },
     {
       "id": "schwerte-227732df55",

@@ -171,6 +171,23 @@ export const nl: Messages = {
   "settings.privacy": "Privacyverklaring",
   "settings.sources": "Bronnen en licenties",
   "settings.coverage": "Gegevensdekking",
+  "settings.info": "Over wheelee",
+  "info.lead":
+    "wheelee helpt mensen met een beperking om snel de dichtstbijzijnde gehandicaptenparkeerplaats te vinden.",
+  "info.goal.title": "Waar het om gaat",
+  "info.goal.text":
+    "Wie een gehandicaptenparkeerplaats nodig heeft, kan niet op goed geluk door de stad rijden. wheelee toont openbare gehandicaptenparkeerplaatsen in heel Duitsland op een kaart, licht de plek het dichtst bij jouw locatie uit en opent de route in je kaartenapp.",
+  "info.how.title": "Zo werkt het",
+  "info.how.1": "Geef toegang tot je locatie. Die blijft op je apparaat en wordt niet opgeslagen.",
+  "info.how.2": "De dichtstbijzijnde parkeerplaats wordt uitgelicht, met de afstand.",
+  "info.how.3": "Met één tik open je de route in Google Maps of Apple Kaarten.",
+  "info.data.title": "Waar de gegevens vandaan komen",
+  "info.data.text":
+    "De gegevens komen uit officiële lijsten van steden en uit OpenStreetMap. Ze zijn onvolledig en kunnen verouderd zijn. Bij twijfel gelden de borden ter plaatse.",
+  "info.help.title": "Help mee",
+  "info.help.text":
+    "Juiste en actuele gegevens krijgen we alleen samen met de community. Klopt een parkeerplaats niet, is die verdwenen of ontbreekt er een, laat het ons weten: bevestig of betwist een plek met één tik (daarvoor is een gratis account nodig) of meld een fout of doe een suggestie, ook zonder account. Elke melding wordt gelezen.",
+  "info.toMap": "Naar de kaart",
 
   "account.emailInvalid": "Dit e-mailadres ziet er onjuist uit.",
   "account.passwordTooShort": "Het wachtwoord moet minstens {min} tekens hebben.",

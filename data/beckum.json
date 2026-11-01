@@ -207,21 +207,6 @@
       "source": "OpenStreetMap (way/881057276), ODbL"
     },
     {
-      "id": "beckum-b58079befc",
-      "city": "beckum",
-      "label": "Roggenmarkt 1",
-      "street": "Roggenmarkt",
-      "houseNumber": "1",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Beckum",
-      "spotCount": 1,
-      "lat": 51.755953850000004,
-      "lng": 8.0400675,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1307307740), ODbL"
-    },
-    {
       "id": "beckum-5312a9c54c",
       "city": "beckum",
       "label": "Roggenmarkt 1",

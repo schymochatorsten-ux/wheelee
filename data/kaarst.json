@@ -267,21 +267,6 @@
       "source": "OpenStreetMap (way/1471706583), ODbL"
     },
     {
-      "id": "kaarst-b07d820b5c",
-      "city": "kaarst",
-      "label": "Driescher Straße",
-      "street": "Driescher Straße",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Kaarst",
-      "spotCount": 2,
-      "lat": 51.20026705000001,
-      "lng": 6.6049721,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/87545862), ODbL"
-    },
-    {
       "id": "kaarst-621b44442f",
       "city": "kaarst",
       "label": "Driescher Straße",
@@ -320,7 +305,7 @@
       "note": null,
       "timeRestriction": null,
       "district": "Kaarst",
-      "spotCount": 1,
+      "spotCount": 2,
       "lat": 51.20025505,
       "lng": 6.60497985,
       "geoAccuracy": "street",

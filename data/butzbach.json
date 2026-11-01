@@ -27,36 +27,6 @@
       "source": "OpenStreetMap (way/1151987837), ODbL"
     },
     {
-      "id": "butzbach-6d1399f3fc",
-      "city": "butzbach",
-      "label": "Griedeler Straße",
-      "street": "Griedeler Straße",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Butzbach",
-      "spotCount": 1,
-      "lat": 50.4352688,
-      "lng": 8.6757237,
-      "geoAccuracy": "house",
-      "source": "OpenStreetMap (node/10682871005), ODbL"
-    },
-    {
-      "id": "butzbach-99944d47c2",
-      "city": "butzbach",
-      "label": "Griedeler Straße",
-      "street": "Griedeler Straße",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Butzbach",
-      "spotCount": 1,
-      "lat": 50.4352761,
-      "lng": 8.6757378,
-      "geoAccuracy": "house",
-      "source": "OpenStreetMap (node/10826852106), ODbL"
-    },
-    {
       "id": "butzbach-3593adb0eb",
       "city": "butzbach",
       "label": "Griedeler Straße",
@@ -100,21 +70,6 @@
       "lng": 8.6754314,
       "geoAccuracy": "house",
       "source": "OpenStreetMap (node/10247271009), ODbL"
-    },
-    {
-      "id": "butzbach-71e1698d46",
-      "city": "butzbach",
-      "label": "Griedeler Straße 42",
-      "street": "Griedeler Straße",
-      "houseNumber": "42",
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Butzbach",
-      "spotCount": 1,
-      "lat": 50.4350688,
-      "lng": 8.675422350000002,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1120388042), ODbL"
     },
     {
       "id": "butzbach-16e6ffbe34",
@@ -220,21 +175,6 @@
       "lng": 8.673227650000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1149459654), ODbL"
-    },
-    {
-      "id": "butzbach-ba45c5dff8",
-      "city": "butzbach",
-      "label": "Wilhelm-Leuschner-Straße",
-      "street": "Wilhelm-Leuschner-Straße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Butzbach",
-      "spotCount": 1,
-      "lat": 50.43123440000001,
-      "lng": 8.6732299,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1382840477), ODbL"
     }
   ]
 }

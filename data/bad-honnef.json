@@ -57,21 +57,6 @@
       "source": "OpenStreetMap (way/1305317807), ODbL"
     },
     {
-      "id": "bad-honnef-191479db3a",
-      "city": "bad-honnef",
-      "label": "Bad Honnef (Stadtbahn)",
-      "street": "Bad Honnef (Stadtbahn)",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Bad Honnef",
-      "spotCount": 1,
-      "lat": 50.643948400000006,
-      "lng": 7.21759125,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1305317808), ODbL"
-    },
-    {
       "id": "bad-honnef-30185ed7d6",
       "city": "bad-honnef",
       "label": "Bad Honnef (Stadtbahn)",

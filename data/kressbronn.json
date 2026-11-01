@@ -70,21 +70,6 @@
       "lng": 9.5989471,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/971890765), ODbL"
-    },
-    {
-      "id": "kressbronn-3ea42cf39f",
-      "city": "kressbronn",
-      "label": "Nonnenbacher Weg 33",
-      "street": "Nonnenbacher Weg",
-      "houseNumber": "33",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Kressbronn am Bodensee",
-      "spotCount": 1,
-      "lat": 47.59461145,
-      "lng": 9.598960850000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1420928346), ODbL"
     }
   ]
 }

@@ -297,21 +297,6 @@
       "source": "OpenStreetMap (way/1087871171), ODbL"
     },
     {
-      "id": "oldenburg-in-holstein-671db831f0",
-      "city": "oldenburg-in-holstein",
-      "label": "Mühlenkamp 5",
-      "street": "Mühlenkamp",
-      "houseNumber": "5",
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Oldenburg in Holstein",
-      "spotCount": 2,
-      "lat": 54.2904914,
-      "lng": 10.880611000000002,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1087871169), ODbL"
-    },
-    {
       "id": "oldenburg-in-holstein-ca16545e80",
       "city": "oldenburg-in-holstein",
       "label": "Mühlenkamp 5",
@@ -335,7 +320,7 @@
       "note": null,
       "timeRestriction": null,
       "district": "Oldenburg in Holstein",
-      "spotCount": 1,
+      "spotCount": 2,
       "lat": 54.29048885,
       "lng": 10.880618550000001,
       "geoAccuracy": "street",

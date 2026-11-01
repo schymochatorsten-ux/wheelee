@@ -42,21 +42,6 @@
       "source": "OpenStreetMap (way/1053243950), ODbL"
     },
     {
-      "id": "bispingen-f50855c3e5",
-      "city": "bispingen",
-      "label": "Im Brunautal",
-      "street": "Im Brunautal",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Bispingen",
-      "spotCount": 3,
-      "lat": 53.1096637,
-      "lng": 9.9839846,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1087439336), ODbL"
-    },
-    {
       "id": "bispingen-f0f2d297af",
       "city": "bispingen",
       "label": "Im Brunautal",
@@ -65,7 +50,7 @@
       "note": null,
       "timeRestriction": null,
       "district": "Bispingen",
-      "spotCount": 1,
+      "spotCount": 3,
       "lat": 53.109661,
       "lng": 9.98398765,
       "geoAccuracy": "street",

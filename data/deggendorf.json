@@ -102,21 +102,6 @@
       "source": "OpenStreetMap (way/901673894), ODbL"
     },
     {
-      "id": "deggendorf-ce59a98287",
-      "city": "deggendorf",
-      "label": "Am Stadtpark",
-      "street": "Am Stadtpark",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Deggendorf",
-      "spotCount": 2,
-      "lat": 48.8451104,
-      "lng": 12.9584376,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1128046841), ODbL"
-    },
-    {
       "id": "deggendorf-abb54275fc",
       "city": "deggendorf",
       "label": "Am Stadtpark",
@@ -125,7 +110,7 @@
       "note": null,
       "timeRestriction": null,
       "district": "Deggendorf",
-      "spotCount": 1,
+      "spotCount": 2,
       "lat": 48.8451232,
       "lng": 12.9584352,
       "geoAccuracy": "street",
@@ -175,21 +160,6 @@
       "lng": 12.958675800000002,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1292153443), ODbL"
-    },
-    {
-      "id": "deggendorf-47205bbce7",
-      "city": "deggendorf",
-      "label": "Angermühle 15a",
-      "street": "Angermühle",
-      "houseNumber": "15a",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Deggendorf",
-      "spotCount": 1,
-      "lat": 48.836257,
-      "lng": 12.958675800000002,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1292153444), ODbL"
     },
     {
       "id": "deggendorf-680bcafd54",
@@ -1362,21 +1332,6 @@
       "source": "OpenStreetMap (way/227659397), ODbL"
     },
     {
-      "id": "deggendorf-d2b3c2d17f",
-      "city": "deggendorf",
-      "label": "Konrad-Adenauer-Straße",
-      "street": "Konrad-Adenauer-Straße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Deggendorf",
-      "spotCount": 1,
-      "lat": 48.846884450000005,
-      "lng": 12.951865150000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1460810931), ODbL"
-    },
-    {
       "id": "deggendorf-035e9a1e04",
       "city": "deggendorf",
       "label": "Konrad-Adenauer-Straße",
@@ -1617,36 +1572,6 @@
       "source": "OpenStreetMap (way/1289387437), ODbL"
     },
     {
-      "id": "deggendorf-f14fba6059",
-      "city": "deggendorf",
-      "label": "Pandurenweg 10",
-      "street": "Pandurenweg",
-      "houseNumber": "10",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Deggendorf",
-      "spotCount": 1,
-      "lat": 48.83014165,
-      "lng": 12.964521650000002,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1289387438), ODbL"
-    },
-    {
-      "id": "deggendorf-52c8841143",
-      "city": "deggendorf",
-      "label": "Pandurenweg 10",
-      "street": "Pandurenweg",
-      "houseNumber": "10",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Deggendorf",
-      "spotCount": 1,
-      "lat": 48.83013885,
-      "lng": 12.964485800000002,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1289387439), ODbL"
-    },
-    {
       "id": "deggendorf-5e0e5d9057",
       "city": "deggendorf",
       "label": "Parkdeck Donau / THD",
@@ -1767,36 +1692,6 @@
       "source": "OpenStreetMap (way/995310423), ODbL"
     },
     {
-      "id": "deggendorf-b384f4da69",
-      "city": "deggendorf",
-      "label": "Poststraße",
-      "street": "Poststraße",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Deggendorf",
-      "spotCount": 2,
-      "lat": 48.8360093,
-      "lng": 12.9608688,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1481128247), ODbL"
-    },
-    {
-      "id": "deggendorf-cc4347c15b",
-      "city": "deggendorf",
-      "label": "Poststraße",
-      "street": "Poststraße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Deggendorf",
-      "spotCount": 1,
-      "lat": 48.8360172,
-      "lng": 12.96085755,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1481128248), ODbL"
-    },
-    {
       "id": "deggendorf-69c971e27e",
       "city": "deggendorf",
       "label": "Poststraße",
@@ -1805,7 +1700,7 @@
       "note": null,
       "timeRestriction": null,
       "district": "Deggendorf",
-      "spotCount": 1,
+      "spotCount": 2,
       "lat": 48.83600195,
       "lng": 12.960881150000002,
       "geoAccuracy": "street",

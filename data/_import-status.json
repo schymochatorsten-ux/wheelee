@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T10:08:33.419Z",
+  "updatedAt": "2026-11-01T19:02:42.046Z",
   "records": [
     {
       "rank": 1,
@@ -30,7 +30,7 @@
       "status": "fertig",
       "locations": 936,
       "spaces": 1310,
-      "attemptedAt": "2026-10-08T21:33:55.451Z",
+      "attemptedAt": "2026-11-01T18:49:33.152Z",
       "message": null
     },
     {
@@ -76,9 +76,9 @@
       "usedSource": "amtlich (WFS)",
       "usedUrl": "https://geowebdienste.frankfurt.de/Parken?service=WFS&version=2.0.0&request=GetFeature&typeNames=opendata%3ABehindertenparkplaetze&outputFormat=application%2Fjson&srsName=EPSG%3A4326",
       "status": "fertig",
-      "locations": 458,
-      "spaces": 615,
-      "attemptedAt": "2026-10-08T21:27:39.797Z",
+      "locations": 444,
+      "spaces": 593,
+      "attemptedAt": "2026-11-01T18:51:24.465Z",
       "message": null
     },
     {
@@ -93,8 +93,8 @@
       "usedUrl": "https://maps.duesseldorf.de/services/verkehr/wfs?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;typeName=verkehr:behindertenparkplatz&amp;outputFormat=application/json&amp;srsName=epsg:25832&amp;limit=1000",
       "status": "fertig",
       "locations": 340,
-      "spaces": 523,
-      "attemptedAt": "2026-10-08T21:52:02.060Z",
+      "spaces": 340,
+      "attemptedAt": "2026-11-01T18:51:26.510Z",
       "message": null
     },
     {
@@ -142,7 +142,7 @@
       "status": "fertig",
       "locations": 368,
       "spaces": 368,
-      "attemptedAt": "2026-10-08T21:36:53.408Z",
+      "attemptedAt": "2026-11-01T18:51:28.191Z",
       "message": null
     },
     {
@@ -190,7 +190,7 @@
       "status": "fertig",
       "locations": 481,
       "spaces": 680,
-      "attemptedAt": "2026-10-08T22:06:39.400Z",
+      "attemptedAt": "2026-11-01T19:02:00.737Z",
       "message": null
     },
     {
@@ -286,7 +286,7 @@
       "status": "fertig",
       "locations": 122,
       "spaces": 199,
-      "attemptedAt": "2026-10-30T07:11:30.208Z",
+      "attemptedAt": "2026-11-01T19:02:03.623Z",
       "message": null
     },
     {
@@ -877,8 +877,8 @@
       "usedUrl": "https://opendata.rhein-kreis-neuss.de/api/v2/catalog/datasets/stadt-neuss-behindertenparkplaetze/exports/geojson",
       "status": "fertig",
       "locations": 38,
-      "spaces": 57,
-      "attemptedAt": "2026-10-08T22:36:41.123Z",
+      "spaces": 38,
+      "attemptedAt": "2026-11-01T19:02:05.332Z",
       "message": null
     },
     {
@@ -1006,7 +1006,7 @@
       "status": "fertig",
       "locations": 48,
       "spaces": 107,
-      "attemptedAt": "2026-10-08T22:41:19.192Z",
+      "attemptedAt": "2026-11-01T19:02:42.046Z",
       "message": null
     },
     {

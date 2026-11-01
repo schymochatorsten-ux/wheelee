@@ -50,7 +50,7 @@
       "note": null,
       "timeRestriction": "24/7",
       "district": "Bimöhlen",
-      "spotCount": 1,
+      "spotCount": 5,
       "lat": 53.9234627,
       "lng": 9.94134115,
       "geoAccuracy": "street",
@@ -85,21 +85,6 @@
       "lng": 9.941375350000001,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1087264157), ODbL"
-    },
-    {
-      "id": "bimoehlen-1699e2dcd9",
-      "city": "bimoehlen",
-      "label": "Sielsbrook",
-      "street": "Sielsbrook",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Bimöhlen",
-      "spotCount": 5,
-      "lat": 53.92346305000001,
-      "lng": 9.9413423,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1087585335), ODbL"
     }
   ]
 }

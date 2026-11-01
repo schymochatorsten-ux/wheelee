@@ -1,5 +1,5 @@
 [Unit]
-Description=wheelee Aktualitätslauf der Datenquellen (ToDo 19.2)
+Description=wheelee Aktualitätslauf mit Neuimport (ToDo 19.2, 19.10)
 After=docker.service network-online.target
 Requires=docker.service
 Wants=network-online.target
@@ -11,6 +11,9 @@ User=niklas
 Group=niklas
 SupplementaryGroups=docker
 NoNewPrivileges=true
+# Geänderte Daten nach origin/main pushen (löst den Deploy aus). Auf 0 setzen,
+# wenn der Lauf nur auf dem Zweig daten-update ablegen soll.
+Environment=WHEELEE_AUTO_PUSH=1
 # Der Lauf holt Daten von Fremddiensten (Overpass, Portale) und installiert
 # Pakete; eine Stunde ist reichlich.
 TimeoutStartSec=3600

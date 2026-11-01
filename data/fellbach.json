@@ -72,21 +72,6 @@
       "source": "OpenStreetMap (way/1211743828), ODbL"
     },
     {
-      "id": "fellbach-7cc19a5893",
-      "city": "fellbach",
-      "label": "Eisenbahnstraße 14",
-      "street": "Eisenbahnstraße",
-      "houseNumber": "14",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Fellbach",
-      "spotCount": 1,
-      "lat": 48.81982285000001,
-      "lng": 9.27030435,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/784734806), ODbL"
-    },
-    {
       "id": "fellbach-e039d2c0ae",
       "city": "fellbach",
       "label": "Eisenbahnstraße 14",

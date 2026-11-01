@@ -298,9 +298,17 @@ npm run validate -- <stadt>
 
 Der monatliche Lauf liegt als systemd-Timer auf dem NAS bereit
 (`deploy/wheelee-aktualitaet.*`, ToDo 19.2; Einrichtung in `deploy/README.md`).
-Er schreibt nur die Berichte nach `data/` und ändert keine Seed-Dateien – die
-Entscheidung über neue Daten bleibt bei einem Menschen. (Ein GitHub-Actions-Lauf
-mit Pull Request war die frühere Überlegung; der NAS-Timer hat sie abgelöst.)
+Seit 19.10 prüft er nicht nur, sondern importiert: `npm run data:update`
+(`scripts/import/auto-update.mts`) holt die **amtlichen** Städte neu, deren Quelle
+sich geändert hat oder deren Import älter als ein halbes Jahr ist, und übernimmt
+das Ergebnis nur, wenn die Stadt weiter amtlich bleibt und nicht unter 70 % des
+bisherigen Bestands fällt (`update-guard.mts`); sonst kommt der alte Stand
+zurück. `npm run data:update -- --dry` zeigt nur, was fällig wäre. Ergebnis:
+`data/_auto-update.md`. **OpenStreetMap-Gemeinden holt der Lauf nicht:** Dort gibt
+es kein Änderungsdatum, und tausende Overpass-Abfragen laufen nie ungesehen.
+Auf dem NAS committet und pusht der Timer die geänderten Daten (siehe
+`deploy/README.md`). (Ein GitHub-Actions-Lauf mit Pull Request war die frühere
+Überlegung; der NAS-Timer hat sie abgelöst.)
 
 ---
 

@@ -87,21 +87,6 @@
       "source": "OpenStreetMap (way/1376458006), ODbL"
     },
     {
-      "id": "bruehl-c3494b42bc",
-      "city": "bruehl",
-      "label": "Hedwig-Gries-Straße",
-      "street": "Hedwig-Gries-Straße",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Brühl",
-      "spotCount": 1,
-      "lat": 50.83292395,
-      "lng": 6.919074,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1376458008), ODbL"
-    },
-    {
       "id": "bruehl-1d2f4108ab",
       "city": "bruehl",
       "label": "Hedwig-Gries-Straße",
@@ -130,21 +115,6 @@
       "lng": 6.9194756,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1376458010), ODbL"
-    },
-    {
-      "id": "bruehl-de45200a60",
-      "city": "bruehl",
-      "label": "Hedwig-Gries-Straße",
-      "street": "Hedwig-Gries-Straße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Brühl",
-      "spotCount": 1,
-      "lat": 50.83300055000001,
-      "lng": 6.9195224500000005,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1376458011), ODbL"
     },
     {
       "id": "bruehl-eefd6e79ed",

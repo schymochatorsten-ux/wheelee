@@ -972,21 +972,6 @@
       "source": "OpenStreetMap (way/1482291891), ODbL"
     },
     {
-      "id": "dormagen-2023648e94",
-      "city": "dormagen",
-      "label": "Robert-Koch-Straße",
-      "street": "Robert-Koch-Straße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Dormagen",
-      "spotCount": 1,
-      "lat": 51.1016184,
-      "lng": 6.822437,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1482291892), ODbL"
-    },
-    {
       "id": "dormagen-a649fc9f7e",
       "city": "dormagen",
       "label": "Robert-Koch-Straße",

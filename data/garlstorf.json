@@ -35,7 +35,7 @@
       "note": null,
       "timeRestriction": null,
       "district": "Garlstorf",
-      "spotCount": 1,
+      "spotCount": 3,
       "lat": 53.231675550000006,
       "lng": 10.078383250000002,
       "geoAccuracy": "street",
@@ -55,21 +55,6 @@
       "lng": 10.07837005,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1087264144), ODbL"
-    },
-    {
-      "id": "garlstorf-ac3ca231e8",
-      "city": "garlstorf",
-      "label": "Schaapskaben",
-      "street": "Schaapskaben",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Garlstorf",
-      "spotCount": 3,
-      "lat": 53.231669100000005,
-      "lng": 10.07838215,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1087585319), ODbL"
     }
   ]
 }

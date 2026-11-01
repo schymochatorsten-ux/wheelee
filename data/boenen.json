@@ -177,21 +177,6 @@
       "source": "OpenStreetMap (way/1218569400), ODbL"
     },
     {
-      "id": "boenen-62100173ce",
-      "city": "boenen",
-      "label": "Hammer Straße",
-      "street": "Hammer Straße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Bönen",
-      "spotCount": 1,
-      "lat": 51.6158181,
-      "lng": 7.741497650000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1218569401), ODbL"
-    },
-    {
       "id": "boenen-f72c7c5405",
       "city": "boenen",
       "label": "Hammer Straße",

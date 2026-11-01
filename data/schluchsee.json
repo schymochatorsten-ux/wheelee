@@ -27,21 +27,6 @@
       "source": "OpenStreetMap (way/1388193221), ODbL"
     },
     {
-      "id": "schluchsee-e39d32f609",
-      "city": "schluchsee",
-      "label": "Fischbacher Straße 7",
-      "street": "Fischbacher Straße",
-      "houseNumber": "7",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Schluchsee",
-      "spotCount": 1,
-      "lat": 47.8186041,
-      "lng": 8.177015,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1425592131), ODbL"
-    },
-    {
       "id": "schluchsee-54527afc9c",
       "city": "schluchsee",
       "label": "Fischbacher Straße 7",

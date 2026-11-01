@@ -72,36 +72,6 @@
       "source": "OpenStreetMap (way/1422161352), ODbL"
     },
     {
-      "id": "waldkirch-f31f1195d1",
-      "city": "waldkirch",
-      "label": "Bahnhofplatz 4",
-      "street": "Bahnhofplatz",
-      "houseNumber": "4",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Waldkirch",
-      "spotCount": 1,
-      "lat": 48.095697650000005,
-      "lng": 7.958176550000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1422161354), ODbL"
-    },
-    {
-      "id": "waldkirch-5847ab7c29",
-      "city": "waldkirch",
-      "label": "Bahnhofplatz 4",
-      "street": "Bahnhofplatz",
-      "houseNumber": "4",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Waldkirch",
-      "spotCount": 1,
-      "lat": 48.095707850000004,
-      "lng": 7.95821145,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1422161355), ODbL"
-    },
-    {
       "id": "waldkirch-b83c606d4c",
       "city": "waldkirch",
       "label": "Bahnhofplatz 4",

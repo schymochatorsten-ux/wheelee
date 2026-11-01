@@ -83,6 +83,7 @@ npm run clean        # Build-Zwischenstand löschen
 
 ```
 src/app/              Next.js-Routen und Layout
+src/app/info/         Infoseite: Ziel von wheelee und Bitte um Rückmeldungen
 src/app/api/spots/    Parkplätze nach Kartenausschnitt, Nähe oder ID
 src/app/api/geocode/  Ortssuche für das Reiseziel (Nominatim-Vorschaltung)
 src/app/api/auth/     Anmelden, Konto anlegen, abmelden
@@ -139,6 +140,7 @@ npm run check:slugs       # passen Register und Seed-Dateien zusammen?
 npm run report:abdeckung  # wie weit ist das Endziel?
 npm run sources:amtlich   # welche Gemeinde hat amtliche Daten, egal wie groß?
 npm run sources:check   # monatlich: hat sich an einer Quelle etwas geändert?
+npm run data:update     # prüfen und geänderte amtliche Städte neu importieren (--dry: nur zeigen)
 npm run validate        # Datenprüfung, mit --offline ohne Netzabfragen
 npm run import:streets  # fehlende Straßennamen aus OpenStreetMap nachtragen
 npm run data:dedupe     # doppelte Einträge zusammenführen (--dry zum Ansehen)

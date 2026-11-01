@@ -157,9 +157,13 @@ export function dedupeSpots(spots: readonly ParkingSpot[]): DedupeResult {
 /** Alle Seed-Dateien bereinigen. */
 async function main() {
   const dryRun = process.argv.includes("--dry");
+  // Mit Städtenamen (`dedupe.mts hamburg koeln`) nur diese bereinigen; der
+  // automatische Monatslauf fasst so keine fremden Seed-Dateien an.
+  const only = process.argv.slice(2).filter((argument) => !argument.startsWith("--"));
   const dataDir = path.join(projectRoot, "data");
   const files = (await fs.readdir(dataDir))
     .filter((file) => file.endsWith(".json") && !file.startsWith("_"))
+    .filter((file) => only.length === 0 || only.includes(file.replace(/\.json$/u, "")))
     .filter((file) => !file.replace(/\.json$/u, "").includes("."))
     .filter((file) => !/(cache|pdf-liste)/u.test(file));
 

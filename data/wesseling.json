@@ -117,21 +117,6 @@
       "source": "OpenStreetMap (way/1087577265), ODbL"
     },
     {
-      "id": "wesseling-5a14c58b37",
-      "city": "wesseling",
-      "label": "Bonner Straße",
-      "street": "Bonner Straße",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Wesseling",
-      "spotCount": 1,
-      "lat": 50.82243735,
-      "lng": 6.986427150000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/858880936), ODbL"
-    },
-    {
       "id": "wesseling-21dd2b43d1",
       "city": "wesseling",
       "label": "Bonner Straße",

@@ -222,21 +222,6 @@
       "source": "OpenStreetMap (way/725365718), ODbL"
     },
     {
-      "id": "heilbad-heiligenstadt-ac4ec921c7",
-      "city": "heilbad-heiligenstadt",
-      "label": "Robert-Koch-Straße 42",
-      "street": "Robert-Koch-Straße",
-      "houseNumber": "42",
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen · gebührenpflichtig",
-      "timeRestriction": null,
-      "district": "Heilbad Heiligenstadt",
-      "spotCount": 1,
-      "lat": 51.37615805,
-      "lng": 10.140031050000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/725365719), ODbL"
-    },
-    {
       "id": "heilbad-heiligenstadt-2330b8207b",
       "city": "heilbad-heiligenstadt",
       "label": "Robert-Koch-Straße 42",

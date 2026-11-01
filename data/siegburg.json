@@ -342,21 +342,6 @@
       "source": "OpenStreetMap (way/1503539490), ODbL"
     },
     {
-      "id": "siegburg-9c7e6f8c42",
-      "city": "siegburg",
-      "label": "Herrengartenstraße",
-      "street": "Herrengartenstraße",
-      "houseNumber": null,
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Siegburg",
-      "spotCount": 3,
-      "lat": 50.79498585,
-      "lng": 7.2080395500000005,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1503539491), ODbL"
-    },
-    {
       "id": "siegburg-c9da864eab",
       "city": "siegburg",
       "label": "Herrengartenstraße",
@@ -380,7 +365,7 @@
       "note": null,
       "timeRestriction": null,
       "district": "Siegburg",
-      "spotCount": 1,
+      "spotCount": 3,
       "lat": 50.7949842,
       "lng": 7.20803785,
       "geoAccuracy": "street",

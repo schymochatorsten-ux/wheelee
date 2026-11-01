@@ -87,21 +87,6 @@
       "source": "OpenStreetMap (way/1255382849), ODbL"
     },
     {
-      "id": "heusenstamm-fb11c42514",
-      "city": "heusenstamm",
-      "label": "Frankfurter Straße 26",
-      "street": "Frankfurter Straße",
-      "houseNumber": "26",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Heusenstamm",
-      "spotCount": 1,
-      "lat": 50.0593286,
-      "lng": 8.807107550000001,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1245287429), ODbL"
-    },
-    {
       "id": "heusenstamm-1b5c06bde8",
       "city": "heusenstamm",
       "label": "Frankfurter Straße 26",
@@ -385,21 +370,6 @@
       "lng": 8.80638895,
       "geoAccuracy": "street",
       "source": "OpenStreetMap (way/1250834741), ODbL"
-    },
-    {
-      "id": "heusenstamm-aa45b64674",
-      "city": "heusenstamm",
-      "label": "Schloßstraße",
-      "street": "Schloßstraße",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Heusenstamm",
-      "spotCount": 1,
-      "lat": 50.062376400000005,
-      "lng": 8.8063642,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/1250834742), ODbL"
     }
   ]
 }

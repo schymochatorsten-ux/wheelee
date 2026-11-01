@@ -132,21 +132,6 @@
       "source": "OpenStreetMap (way/925835862), ODbL"
     },
     {
-      "id": "schwetzingen-d1472832f3",
-      "city": "schwetzingen",
-      "label": "Hockenheimer Landstraße 4/1",
-      "street": "Hockenheimer Landstraße",
-      "houseNumber": "4/1",
-      "note": "Parkplatz mit ausgewiesenen Behindertenstellplätzen",
-      "timeRestriction": null,
-      "district": "Schwetzingen",
-      "spotCount": 1,
-      "lat": 49.377059900000006,
-      "lng": 8.560173850000002,
-      "geoAccuracy": "street",
-      "source": "OpenStreetMap (way/332583141), ODbL"
-    },
-    {
       "id": "schwetzingen-3137fe7572",
       "city": "schwetzingen",
       "label": "Hockenheimer Landstraße 4/1",
