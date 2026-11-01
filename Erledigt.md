@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-01):** **219 Einträge** auf oberster Ebene –
-davon 194, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-01):** **220 Einträge** auf oberster Ebene –
+davon 195, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 25, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -1640,6 +1640,14 @@ Torsten, 2026-10-30: „19 alle umsetzen, die ohne mich gehen.“ 13 bleibt gesp
   - **Offline:** `public/sw.js` behandelt `/api/cities` wie `/api/spots` (Netz zuerst, sonst die letzte Antwort); `VERSION` auf `v3` hochgezählt. Ohne Netz und ohne frühere Antwort zeigt die App nur die Standardstadt – die Parkplätze bleiben über die vorab geladenen Städte erreichbar.
   - **Bekannte Folge:** Bis die Antwort da ist, steht in der Liste nur die Standardstadt; der Stadtname eines Standorts fällt kurz auf den Kürzel (`slug`) zurück. Beim ersten Aufruf sind das die Standorte der Standardstadt, deren Name mitgeliefert wird.
   - **Tests:** `e2e/staedte.spec.ts` (Schnittstelle, HTML unter 150 KB und ohne OSM-Attributionen, Auswahl im Vorab-Download füllt sich). Dev-E2E 105 + 3, Produktions-E2E 110 grün.
+
+## 9. Ergänzung (2026-11-01)
+
+- [x] 9.19 **Neue Optik nach dem Vorbild von jarlsaufgaben.nfhub.de** (Torsten, 2026-11-01: „sieht nicht gut aus, bitte nahe an dieses Design“). Violett-indigoblauer Verlauf mit hellem Schein statt flachem Schwarz, Karten aus Milchglas (`backdrop-blur`), Reiter als einzelne runde Schaltflächen mit Verlauf, Überschrift mit Farbverlauf, Kopfzeile aus Milchglas.
+  - **Umgesetzt über die Farbpaletten, nicht je Komponente:** `globals.css` überschreibt `--color-blue-*` (jetzt Violett) und `--color-neutral-*` (Indigostich) für Hell und Dunkel. Alle bestehenden Klassen der App ziehen damit mit; ein Umbau von rund 30 Komponenten wäre fehleranfälliger gewesen. Die Kontrastprüfung (`e2e/zugaenglichkeit.spec.ts`, hell und dunkel) läuft mit den neuen Farben grün; sie war der Grund, die Werte nicht frei zu raten.
+  - **Einstellungen:** Die Abschnitte sind Karten; **die Sprache ist ein Auswahlfeld** (`#sprache-auswahl`) statt neun Optionsknöpfen. `e2e/sprache.spec.ts` prüft nun den Wert des Feldes. Die Kartenmarker behalten ihr Blau (Bedeutung), nur die Bündelkreise sind violett.
+  - **Info-Seite:** neue Karte „Kostenlos – für alle, für immer“ (`info.free.*`, neun Sprachen): Zusage, wheelee immer kostenlos zu halten, ohne Premium-Funktionen, Bezahlstufen oder versteckte Kosten. Das ist eine Selbstverpflichtung der Betreiber; sie berührt Abschnitt 13 (Finanzierung, gesperrt): Spenden wären vereinbar, Bezahlfunktionen nicht.
+  - **Geprüft:** im Browser (Karte, Einstellungen, Info) und mit allen 126 E2E-Tests gegen den Entwicklungsserver. **Nicht geprüft:** Telefongröße von Hand, Hell-Modus von Hand (nur die automatische Kontrastprüfung), `wheelee.de`.
 
 ## 18. Ergänzung (2026-11-01)
 

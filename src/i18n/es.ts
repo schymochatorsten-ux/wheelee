@@ -190,6 +190,9 @@ export const es: Messages = {
   "info.help.title": "Colabora",
   "info.help.text":
     "Solo con la comunidad podemos conseguir datos correctos y actualizados. Si una plaza no es correcta, ha desaparecido o falta, avísanos: confirma o desmiente una plaza con un toque (hace falta una cuenta gratuita) o notifica un error o una sugerencia, también sin cuenta. Leemos cada mensaje.",
+  "info.free.title": "Gratis: para todos, para siempre",
+  "info.free.text":
+    "Nos comprometemos a que wheelee sea siempre gratuito para todos. No habrá funciones premium, ni niveles de pago, ni costes ocultos: quien busque aparcamiento nunca tendrá que pagar por ello.",
   "info.toMap": "Ir al mapa",
 
   "account.emailInvalid": "Esta dirección de correo no parece correcta.",

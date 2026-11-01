@@ -14,6 +14,10 @@ import { getLocale } from "@/i18n/server";
  * steht und einen Hinweis „nur deutsch maßgeblich" trägt.
  */
 
+/** Karte im Stil der Einstellungen (dasselbe Glas wie `SettingsPanel`). */
+const CARD =
+  "rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm backdrop-blur-sm dark:border-neutral-800 dark:bg-neutral-900/50";
+
 export async function generateMetadata(): Promise<Metadata> {
   const t = translator(await getLocale());
   return { title: `${t("settings.info")} – wheelee`, description: t("info.lead") };
@@ -33,16 +37,16 @@ export default async function Info() {
           <span aria-hidden="true">←</span> {t("error.backToMap")}
         </Link>
 
-        <h1 className="mt-3 text-2xl font-semibold">{t("settings.info")}</h1>
+        <h1 className="mt-3 bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-2xl font-bold text-transparent dark:from-blue-300 dark:to-cyan-300">{t("settings.info")}</h1>
         <p className="mt-3 text-lg leading-snug">{t("info.lead")}</p>
 
         <div className="mt-6 space-y-6 text-sm leading-relaxed">
-          <section>
+          <section className={CARD}>
             <h2 className="text-base font-semibold">{t("info.goal.title")}</h2>
             <p className="mt-1">{t("info.goal.text")}</p>
           </section>
 
-          <section>
+          <section className={CARD}>
             <h2 className="text-base font-semibold">{t("info.how.title")}</h2>
             <ol className="mt-1 list-decimal space-y-1 pl-5">
               <li>{t("info.how.1")}</li>
@@ -51,14 +55,19 @@ export default async function Info() {
             </ol>
           </section>
 
-          <section>
+          <section className={CARD}>
             <h2 className="text-base font-semibold">{t("info.data.title")}</h2>
             <p className="mt-1">{t("info.data.text")}</p>
           </section>
 
-          <section className="rounded-xl border border-blue-200 bg-blue-50 p-4 dark:border-blue-900 dark:bg-blue-950">
+          <section className="rounded-2xl border border-blue-300/60 bg-blue-50/80 p-4 backdrop-blur-sm dark:border-blue-700/60 dark:bg-blue-950/60">
             <h2 className="text-base font-semibold">{t("info.help.title")}</h2>
             <p className="mt-1">{t("info.help.text")}</p>
+          </section>
+
+          <section className={CARD}>
+            <h2 className="text-base font-semibold">{t("info.free.title")}</h2>
+            <p className="mt-1">{t("info.free.text")}</p>
           </section>
         </div>
 

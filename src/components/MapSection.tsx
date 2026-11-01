@@ -481,7 +481,7 @@ export function MapSection({
         2026-10-11). Sie trägt nichts bei, was beim Parkplatzsuchen hilft –
         jeder Millimeter hier fehlt der Karte, und die Karte ist die App.
       */}
-      <header className="shrink-0 border-b border-neutral-200 px-3 py-1.5 dark:border-neutral-800">
+      <header className="shrink-0 border-b border-neutral-200/70 bg-white/60 px-3 py-2 backdrop-blur-md dark:border-neutral-800/80 dark:bg-neutral-900/50">
         {/*
           `flex-wrap`, damit bei großer Schrift die Ansichtswahl in die
           nächste Zeile rutscht, statt die Seite breiter zu machen: Bei 200 %
@@ -504,13 +504,13 @@ export function MapSection({
             kommen" und in `data/_abdeckung.md`, also dort, wo jemand sie
             wirklich nachschlägt.
           */}
-          <h1 className="min-w-0 text-sm font-semibold break-words hyphens-auto">
+          <h1 className="min-w-0 bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-base font-bold break-words hyphens-auto text-transparent dark:from-blue-300 dark:to-cyan-300">
             {t("app.title")}
           </h1>
           <div
             role="tablist"
             aria-label={t("view.choose")}
-            className="flex shrink-0 overflow-hidden rounded-lg border border-neutral-200 text-xs dark:border-neutral-800"
+            className="flex shrink-0 gap-1.5 text-xs"
           >
             {views.map((option) => (
               <button
@@ -522,10 +522,10 @@ export function MapSection({
                 // `min-h-11` bleibt: 44 px ist die Mindestgröße, die sich
                 // einhändig treffen lässt (ToDo 9.8). Schlanker heißt hier
                 // weniger Fläche drumherum, nicht kleinere Knöpfe.
-                className={`min-h-11 px-2.5 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none ${
+                className={`min-h-11 rounded-xl px-3 font-medium transition-colors focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none ${
                   view === option
-                    ? "bg-blue-700 text-white"
-                    : "bg-white text-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
+                    ? "bg-gradient-to-r from-blue-700 to-blue-600 text-white shadow-lg shadow-blue-700/30"
+                    : "bg-neutral-100/80 text-neutral-700 hover:bg-neutral-200 dark:bg-neutral-900/70 dark:text-neutral-300 dark:hover:bg-neutral-800"
                 }`}
               >
                 {/* Auf schmalen Displays sind „Einstellungen" und

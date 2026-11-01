@@ -123,10 +123,10 @@ export function SettingsPanel({
   };
 
   return (
-    <div className="space-y-8">
+    <div className="mx-auto max-w-2xl space-y-4">
       <DataDisclaimer variant="lang" />
 
-      <section aria-labelledby="darstellung-heading">
+      <section aria-labelledby="darstellung-heading" className="rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm backdrop-blur-sm dark:border-neutral-800 dark:bg-neutral-900/50">
         <h2 id="darstellung-heading" className="text-base font-semibold">
           {t("settings.appearance")}
         </h2>
@@ -138,7 +138,7 @@ export function SettingsPanel({
         </div>
       </section>
 
-      <section aria-labelledby="sprache-heading">
+      <section aria-labelledby="sprache-heading" className="rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm backdrop-blur-sm dark:border-neutral-800 dark:bg-neutral-900/50">
         <h2 id="sprache-heading" className="text-base font-semibold">
           {t("settings.language")}
         </h2>
@@ -146,34 +146,26 @@ export function SettingsPanel({
           {t("settings.languageNote")}
         </p>
 
-        <fieldset className="mt-2">
-          <legend className="sr-only">{t("settings.languageChoose")}</legend>
-          <div className="flex flex-col gap-1">
-            {LOCALE_CODES.map((code) => (
-              <label
-                key={code}
-                className="flex min-h-11 cursor-pointer items-center gap-3 rounded-lg px-2 focus-within:ring-2 focus-within:ring-blue-600"
-              >
-                <input
-                  type="radio"
-                  name="sprache"
-                  value={code}
-                  checked={locale === code}
-                  onChange={() => void chooseLanguage(code)}
-                  className="h-5 w-5 accent-blue-700"
-                />
-                {/* Der Name steht in der eigenen Sprache und wird nie übersetzt. */}
-                <span lang={code}>{LOCALES[code].name}</span>
-              </label>
-            ))}
-          </div>
-        </fieldset>
+        <select
+          id="sprache-auswahl"
+          aria-label={t("settings.languageChoose")}
+          value={locale}
+          onChange={(event) => void chooseLanguage(event.target.value as Locale)}
+          className="mt-3 min-h-11 w-full rounded-xl border border-neutral-300 bg-white px-3 text-sm focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700 dark:bg-neutral-950"
+        >
+          {LOCALE_CODES.map((code) => (
+            // Der Name steht in der eigenen Sprache und wird nie übersetzt.
+            <option key={code} value={code} lang={code}>
+              {LOCALES[code].name}
+            </option>
+          ))}
+        </select>
         {LOCALE_CODES.length > 1 && (
           <p className="mt-2 text-xs text-neutral-500">{t("settings.languageUnreviewed")}</p>
         )}
       </section>
 
-      <section aria-labelledby="karten-app-heading">
+      <section aria-labelledby="karten-app-heading" className="rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm backdrop-blur-sm dark:border-neutral-800 dark:bg-neutral-900/50">
         <h2 id="karten-app-heading" className="text-base font-semibold">
           {t("settings.mapsApp")}
         </h2>
@@ -215,7 +207,7 @@ export function SettingsPanel({
 
       <OfflineCities cities={cities} />
 
-      <section aria-labelledby="feedback-heading">
+      <section aria-labelledby="feedback-heading" className="rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm backdrop-blur-sm dark:border-neutral-800 dark:bg-neutral-900/50">
         <h2 id="feedback-heading" className="text-base font-semibold">
           {t("settings.feedback")}
         </h2>
@@ -231,7 +223,7 @@ export function SettingsPanel({
         Anmeldung niemanden, der nur einen Parkplatz sucht (ToDo 11.2 –
         „Anmeldung so spät wie möglich verlangen").
       */}
-      <section aria-labelledby="konto-heading">
+      <section aria-labelledby="konto-heading" className="rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm backdrop-blur-sm dark:border-neutral-800 dark:bg-neutral-900/50">
         <h2 id="konto-heading" className="text-base font-semibold">
           {t("settings.account")}
         </h2>

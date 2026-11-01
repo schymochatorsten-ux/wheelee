@@ -187,6 +187,9 @@ export const nl: Messages = {
   "info.help.title": "Help mee",
   "info.help.text":
     "Juiste en actuele gegevens krijgen we alleen samen met de community. Klopt een parkeerplaats niet, is die verdwenen of ontbreekt er een, laat het ons weten: bevestig of betwist een plek met één tik (daarvoor is een gratis account nodig) of meld een fout of doe een suggestie, ook zonder account. Elke melding wordt gelezen.",
+  "info.free.title": "Gratis – voor iedereen, voor altijd",
+  "info.free.text":
+    "We beloven wheelee altijd gratis te houden voor iedereen. Er komen geen premiumfuncties, geen betaalde niveaus en geen verborgen kosten: wie een parkeerplaats zoekt, hoeft daar nooit voor te betalen.",
   "info.toMap": "Naar de kaart",
 
   "account.emailInvalid": "Dit e-mailadres ziet er onjuist uit.",

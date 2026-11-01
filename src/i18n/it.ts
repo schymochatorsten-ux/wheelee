@@ -187,6 +187,9 @@ export const it: Messages = {
   "info.help.title": "Dai una mano",
   "info.help.text":
     "Dati corretti e aggiornati si ottengono solo insieme alla community. Se un parcheggio non è corretto, non esiste più o ne manca uno, faccelo sapere: conferma o contesta un parcheggio con un tocco (serve un account gratuito) oppure segnala un errore o invia un suggerimento, anche senza account. Ogni messaggio viene letto.",
+  "info.free.title": "Gratuito – per tutti, per sempre",
+  "info.free.text":
+    "Ci impegniamo a mantenere wheelee sempre gratuito per tutti. Non ci saranno funzioni premium, livelli a pagamento né costi nascosti: chi cerca un parcheggio non dovrà mai pagare per farlo.",
   "info.toMap": "Vai alla mappa",
 
   "account.emailInvalid": "Questo indirizzo e-mail non sembra corretto.",

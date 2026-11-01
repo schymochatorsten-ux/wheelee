@@ -181,6 +181,9 @@ export const de = {
   "info.help.title": "Hilf mit",
   "info.help.text":
     "Richtige und aktuelle Daten schaffen wir nur gemeinsam mit der Community. Stimmt ein Parkplatz nicht, ist er verschwunden oder fehlt einer, sag es uns: Bestätige oder bestreite einen Parkplatz mit einem Tipp (dafür brauchst du ein kostenloses Konto) oder melde einen Fehler oder Vorschlag – das geht auch ohne Konto. Jede Rückmeldung wird gelesen.",
+  "info.free.title": "Kostenlos – für alle, für immer",
+  "info.free.text":
+    "Wir verpflichten uns, wheelee immer für alle kostenlos zu halten. Es wird keine Premium-Funktionen, keine Bezahlstufen und keine versteckten Kosten geben: Wer einen Parkplatz sucht, soll dafür nie bezahlen müssen.",
   "info.toMap": "Zur Karte",
 
   "account.emailInvalid": "Diese E-Mail-Adresse sieht nicht richtig aus.",

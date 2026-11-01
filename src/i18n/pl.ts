@@ -190,6 +190,9 @@ export const pl: Messages = {
   "info.help.title": "Pomóż nam",
   "info.help.text":
     "Poprawne i aktualne dane uda się zebrać tylko razem ze społecznością. Jeśli miejsce się nie zgadza, zniknęło albo brakuje go na mapie, daj nam znać: potwierdź lub zakwestionuj miejsce jednym dotknięciem (potrzebne jest bezpłatne konto) albo zgłoś błąd lub sugestię – także bez konta. Każde zgłoszenie jest czytane.",
+  "info.free.title": "Za darmo – dla wszystkich, na zawsze",
+  "info.free.text":
+    "Zobowiązujemy się, że wheelee zawsze pozostanie darmowe dla wszystkich. Nie będzie funkcji premium, płatnych poziomów ani ukrytych kosztów: kto szuka miejsca parkingowego, nigdy nie powinien za to płacić.",
   "info.toMap": "Do mapy",
 
   "account.emailInvalid": "Ten adres e-mail wygląda niepoprawnie.",

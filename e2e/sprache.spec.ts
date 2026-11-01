@@ -29,7 +29,7 @@ test("die Einstellungen bieten die Sprachwahl", async ({ page }) => {
   await page.goto("/");
   await page.getByRole("tab", { name: "Einstellungen" }).click();
   await expect(page.getByRole("heading", { name: "Sprache", level: 2 })).toBeVisible();
-  await expect(page.getByRole("radio", { name: "Deutsch" })).toBeChecked();
+  await expect(page.locator("#sprache-auswahl")).toHaveValue("de");
 });
 
 test.describe("Englisch", () => {
@@ -43,7 +43,7 @@ test.describe("Englisch", () => {
     await expect(page.locator("html")).toHaveAttribute("lang", "en");
     await page.getByRole("tab", { name: "Settings" }).click();
     await expect(page.getByRole("heading", { name: "Language", level: 2 })).toBeVisible();
-    await expect(page.getByRole("radio", { name: "English" })).toBeChecked();
+    await expect(page.locator("#sprache-auswahl")).toHaveValue("en");
 
     const eigene = (await context.cookies()).filter((c) => !c.name.startsWith("__next_hmr"));
     expect(eigene).toEqual([]);
@@ -72,7 +72,7 @@ test.describe("Englisch", () => {
     const page = await context.newPage();
     await page.goto("/");
     await page.getByRole("tab", { name: "Settings" }).click();
-    await page.getByRole("radio", { name: "Deutsch" }).click();
+    await page.locator("#sprache-auswahl").selectOption("de");
 
     await expect(page.locator("html")).toHaveAttribute("lang", "de");
     await expect(page.getByRole("heading", { name: "Sprache", level: 2 })).toBeVisible();
@@ -125,7 +125,7 @@ test.describe("Spanisch", () => {
     await expect(page.locator("html")).toHaveAttribute("lang", "es");
     await page.getByRole("tab", { name: "Ajustes" }).click();
     await expect(page.getByRole("heading", { name: "Idioma", level: 2 })).toBeVisible();
-    await expect(page.getByRole("radio", { name: "Español" })).toBeChecked();
+    await expect(page.locator("#sprache-auswahl")).toHaveValue("es");
     await expect(page.getByRole("heading", { name: "Léelo antes de salir" })).toBeVisible();
     await expect(page.getByText("en el lugar rige la señalización")).toBeVisible();
     await expect(page.getByText("Bitte vor der Fahrt lesen")).toHaveCount(0);
@@ -148,7 +148,7 @@ test.describe("Französisch", () => {
     await expect(page.locator("html")).toHaveAttribute("lang", "fr");
     await page.getByRole("tab", { name: "Paramètres" }).click();
     await expect(page.getByRole("heading", { name: "Langue", level: 2 })).toBeVisible();
-    await expect(page.getByRole("radio", { name: "Français" })).toBeChecked();
+    await expect(page.locator("#sprache-auswahl")).toHaveValue("fr");
     await expect(page.getByRole("heading", { name: "À lire avant de partir" })).toBeVisible();
     await expect(page.getByText("sur place, c'est la signalisation qui prévaut")).toBeVisible();
     await expect(page.getByText("Bitte vor der Fahrt lesen")).toHaveCount(0);
@@ -170,7 +170,7 @@ test.describe("Italienisch", () => {
     await expect(page.locator("html")).toHaveAttribute("lang", "it");
     await page.getByRole("tab", { name: "Impostazioni" }).click();
     await expect(page.getByRole("heading", { name: "Lingua", level: 2 })).toBeVisible();
-    await expect(page.getByRole("radio", { name: "Italiano" })).toBeChecked();
+    await expect(page.locator("#sprache-auswahl")).toHaveValue("it");
     await expect(page.getByRole("heading", { name: "Da leggere prima di partire" })).toBeVisible();
     await expect(page.getByText("sul posto valgono i cartelli e la segnaletica")).toBeVisible();
     await expect(page.getByText("Bitte vor der Fahrt lesen")).toHaveCount(0);
@@ -192,7 +192,7 @@ test.describe("Polnisch", () => {
     await expect(page.locator("html")).toHaveAttribute("lang", "pl");
     await page.getByRole("tab", { name: "Ustawienia" }).click();
     await expect(page.getByRole("heading", { name: "Język", level: 2 })).toBeVisible();
-    await expect(page.getByRole("radio", { name: "Polski" })).toBeChecked();
+    await expect(page.locator("#sprache-auswahl")).toHaveValue("pl");
     await expect(page.getByRole("heading", { name: "Przeczytaj przed wyjazdem" })).toBeVisible();
     await expect(page.getByText("na miejscu obowiązują znaki i oznaczenia")).toBeVisible();
     await expect(page.getByText("Bitte vor der Fahrt lesen")).toHaveCount(0);
@@ -214,7 +214,7 @@ test.describe("Niederländisch", () => {
     await expect(page.locator("html")).toHaveAttribute("lang", "nl");
     await page.getByRole("tab", { name: "Instellingen" }).click();
     await expect(page.getByRole("heading", { name: "Taal", level: 2 })).toBeVisible();
-    await expect(page.getByRole("radio", { name: "Nederlands" })).toBeChecked();
+    await expect(page.locator("#sprache-auswahl")).toHaveValue("nl");
     await expect(page.getByRole("heading", { name: "Lezen voor je vertrekt" })).toBeVisible();
     await expect(page.getByText("ter plaatse gelden de borden en markeringen")).toBeVisible();
     await expect(page.getByText("Bitte vor der Fahrt lesen")).toHaveCount(0);
@@ -236,7 +236,7 @@ test.describe("Portugiesisch", () => {
     await expect(page.locator("html")).toHaveAttribute("lang", "pt");
     await page.getByRole("tab", { name: "Definições" }).click();
     await expect(page.getByRole("heading", { name: "Idioma", level: 2 })).toBeVisible();
-    await expect(page.getByRole("radio", { name: "Português" })).toBeChecked();
+    await expect(page.locator("#sprache-auswahl")).toHaveValue("pt");
     await expect(page.getByRole("heading", { name: "Ler antes de partir" })).toBeVisible();
     await expect(page.getByText("no local, vale a sinalização")).toBeVisible();
     await expect(page.getByText("Bitte vor der Fahrt lesen")).toHaveCount(0);
@@ -258,7 +258,7 @@ test.describe("Russisch", () => {
     await expect(page.locator("html")).toHaveAttribute("lang", "ru");
     await page.getByRole("tab", { name: "Настройки" }).click();
     await expect(page.getByRole("heading", { name: "Язык", level: 2 })).toBeVisible();
-    await expect(page.getByRole("radio", { name: "Русский" })).toBeChecked();
+    await expect(page.locator("#sprache-auswahl")).toHaveValue("ru");
     await expect(page.getByRole("heading", { name: "Прочтите перед поездкой" })).toBeVisible();
     await expect(page.getByText("на месте действуют знаки и разметка")).toBeVisible();
     await expect(page.getByText("Bitte vor der Fahrt lesen")).toHaveCount(0);
