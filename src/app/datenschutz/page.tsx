@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { LegalPage, MissingOperator } from "@/components/LegalPage";
+import { LegalPage } from "@/components/LegalPage";
 import { operator } from "@/lib/legal/operator";
 import { mailConfigured } from "@/lib/mail";
 
@@ -73,11 +73,7 @@ export default function Datenschutz() {
               E-Mail: <a href={`mailto:${betreiber.email}`}>{betreiber.email}</a>
             </p>
           </>
-        ) : (
-          <div className="mt-2">
-            <MissingOperator />
-          </div>
-        )}
+        ) : null}
         <p className="mt-2">
           Ein Datenschutzbeauftragter ist nicht bestellt; die Voraussetzungen des § 38 BDSG liegen
           bei diesem Projekt nicht vor.

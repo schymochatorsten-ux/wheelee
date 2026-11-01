@@ -5,7 +5,7 @@ import path from "node:path";
 import { closeDb, db } from "./db/sqlite";
 import { MIN_PUBLIC, publicReach } from "./visits";
 
-/** Öffentliche Besucherzahl (ToDo 20.2): erst ab einer Mindestzahl, nie eine Null. */
+/** Öffentliche Besucherzahl (ToDo 20.2): immer sichtbar, auch bei 0 oder 1. */
 
 let folder: string;
 
@@ -25,15 +25,16 @@ const add = (day: string, visitors: number) =>
   db().prepare("INSERT INTO visit_day (day, visitors, views) VALUES (?, ?, ?)").run(day, visitors, visitors);
 
 describe("publicReach", () => {
-  it("zeigt nichts, solange die Zahl klein ist", () => {
-    expect(publicReach()).toBeNull();
-    add("2026-11-01", MIN_PUBLIC - 1);
-    expect(publicReach()).toBeNull();
+  it("zeigt die Zahl von Anfang an, auch bei 0 und 1", () => {
+    expect(MIN_PUBLIC).toBe(0);
+    expect(publicReach()).toBe(0);
+    add("2026-11-01", 1);
+    expect(publicReach()).toBe(1);
   });
 
   it("summiert die Tage ab der Mindestzahl", () => {
-    add("2026-11-01", MIN_PUBLIC - 10);
+    add("2026-11-01", 20);
     add("2026-11-02", 30);
-    expect(publicReach()).toBe(MIN_PUBLIC + 20);
+    expect(publicReach()).toBe(50);
   });
 });

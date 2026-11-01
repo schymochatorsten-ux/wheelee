@@ -487,10 +487,6 @@ export const ru: Messages = {
   "stay.hours": "ч",
 
   "legal.updated": "По состоянию на: {date}",
-  "legal.missingTitle": "Этих данных ещё нет",
-  "legal.missingText":
-    "Данные оператора не заданы на этом сервере. Это ошибка настройки, а не недосмотр в тексте – страница здесь ничего не выдумывает.",
-  "legal.missingHow": "Нужно задать {name}, {address} и {email}; шаблон находится в {template}.",
 
   "api.notSignedIn": "Вы не вошли.",
   "api.invalidRequest": "Недопустимый запрос.",

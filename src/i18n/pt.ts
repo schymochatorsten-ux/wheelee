@@ -484,10 +484,6 @@ export const pt: Messages = {
   "stay.hours": "h",
 
   "legal.updated": "Versão de: {date}",
-  "legal.missingTitle": "Estes dados ainda faltam",
-  "legal.missingText":
-    "Os dados do operador não estão definidos neste servidor. É um erro de configuração, não um lapso no texto – a página não inventa nada aqui.",
-  "legal.missingHow": "É preciso definir {name}, {address} e {email}; o modelo encontra-se em {template}.",
 
   "api.notSignedIn": "Sessão não iniciada.",
   "api.invalidRequest": "Pedido inválido.",

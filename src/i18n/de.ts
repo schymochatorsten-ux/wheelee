@@ -484,11 +484,6 @@ export const de = {
   "stay.hours": "Stunden",
 
   "legal.updated": "Stand: {date}",
-  "legal.missingTitle": "Diese Angaben fehlen noch",
-  "legal.missingText":
-    "Die Betreiberangaben sind auf diesem Server nicht hinterlegt. Das ist ein Fehler in der Einrichtung, kein Versehen im Text – die Seite erfindet hier nichts.",
-  "legal.missingHow":
-    "Zu setzen sind {name}, {address} und {email}; die Vorlage dafür steht in {template}.",
 
   // Nur in anderen Sprachen sichtbar (15.1): Hinweis, dass der Rechtstext
   // deutsch bleibt. Hier der Sinn, den jede Übersetzung treffen muss.

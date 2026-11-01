@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-01):** **222 Einträge** auf oberster Ebene –
-davon 197, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-01):** **223 Einträge** auf oberster Ebene –
+davon 198, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 25, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -1641,11 +1641,15 @@ Torsten, 2026-10-30: „19 alle umsetzen, die ohne mich gehen.“ 13 bleibt gesp
   - **Bekannte Folge:** Bis die Antwort da ist, steht in der Liste nur die Standardstadt; der Stadtname eines Standorts fällt kurz auf den Kürzel (`slug`) zurück. Beim ersten Aufruf sind das die Standorte der Standardstadt, deren Name mitgeliefert wird.
   - **Tests:** `e2e/staedte.spec.ts` (Schnittstelle, HTML unter 150 KB und ohne OSM-Attributionen, Auswahl im Vorab-Download füllt sich). Dev-E2E 105 + 3, Produktions-E2E 110 grün.
 
+## 19. Ergänzung 3 (2026-11-01)
+
+- [x] 19.14 **Datenabdeckung, Betreiberhinweis, Rückmeldung** (Torsten, 2026-11-01). (1) **Der Hinweiskasten „Diese Angaben fehlen noch“ ist aus Impressum und Datenschutzerklärung entfernt** (Komponente `MissingOperator` und Texte `legal.missing*` in neun Sprachen gelöscht); der Test prüft jetzt, dass weder Kasten noch erfundene Angaben dastehen. **Folge, die man kennen muss:** Sind die Betreiberangaben (`WHEELEE_OPERATOR_*`) auf dem NAS nicht gesetzt, steht im Impressum nichts – und niemand sieht den Mangel mehr. Ein Impressum ohne Anschrift ist in Deutschland abmahnfähig (§ 5 DDG); die Angaben müssen vor einer Veröffentlichung in die `.env` (siehe `deploy/env.beispiel`). (2) **Die Seite `/abdeckung` zeigt ihr Datum nicht mehr von Hand, sondern den jüngsten Import** aus den Daten; neu eine zweite Tabelle „Die 25 Städte mit den meisten Stellplätzen“ aus allen Quellen (Stuttgart, Nürnberg, Augsburg stehen nicht in der Tabelle der amtlichen Listen, weil sie aus OpenStreetMap kommen). **Eine Prüfung ohne Datenänderung erzeugt kein neues Datum**: Ein Tageslauf, der nur nachsieht, schreibt nichts ins Repository, sonst baute das NAS täglich das Abbild neu (`deploy/Datenlauf.md`). Wer das „zuletzt geprüft“ öffentlich zeigen will, braucht dafür einen Wert zur Laufzeit statt in den Daten – nicht gebaut.
+
 ## 20. Ergänzung (2026-11-01)
 
 - [x] 20.2 **Besucherzahl öffentlich auf der Infoseite** (Torsten, 2026-11-01: „Wir haben schon X Leuten geholfen, einen Parkplatz zu finden“). Gebaut als `info.reach` (neun Sprachen) über `publicReach()` in `src/lib/visits.ts`; Test `visits-public.test.ts`.
   - **Der Satz ist umformuliert:** „Schon X Mal haben Menschen wheelee geöffnet, um einen Parkplatz zu finden.“ Gezählt wird, wie oft die Seite geladen wurde (Summe der Tagesbesucher, ohne Bots und ohne Menschen mit „Do Not Track“), nicht, wem geholfen wurde: Ob jemand einen Parkplatz gefunden hat, misst wheelee bewusst nicht, und dieselbe Person an zwei Tagen zählt zweimal. „Geholfen“ wäre eine Behauptung ohne Messung (siehe „Eine plausible Ursache ist keine gemessene“ in `CLAUDE.md`, sinngemäß).
-  - **Die Zahl erscheint erst ab 50** (`MIN_PUBLIC`): „3 Mal“ sagt nichts und wirkt kläglich. Ohne Datenbank (Bauen) bleibt nur die Anzeige weg, die Seite nicht. Es werden nur Summen angezeigt, keine Tage und keine Herkunft; personenbezogen ist daran nichts.
+  - **Die Zahl erscheint immer, auch bei 0 oder 1** (Torsten, 2026-11-01, nach einer ersten Fassung mit Mindestzahl 50; `MIN_PUBLIC = 0` ist der Schalter dafür). Ohne Datenbank (Bauen) bleibt nur die Anzeige weg, die Seite nicht. Es werden nur Summen angezeigt, keine Tage und keine Herkunft; personenbezogen ist daran nichts.
 
 ## 19. Ergänzung 2 (2026-11-01)
 

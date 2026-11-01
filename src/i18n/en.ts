@@ -484,10 +484,6 @@ export const en: Messages = {
   "stay.hours": "hours",
 
   "legal.updated": "As of: {date}",
-  "legal.missingTitle": "These details are still missing",
-  "legal.missingText":
-    "The operator details are not set on this server. That is a setup error, not an oversight in the text – the page does not invent anything here.",
-  "legal.missingHow": "To be set are {name}, {address} and {email}; the template is in {template}.",
 
   "api.notSignedIn": "Not signed in.",
   "api.invalidRequest": "Invalid request.",

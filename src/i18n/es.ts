@@ -490,11 +490,6 @@ export const es: Messages = {
   "stay.hours": "horas",
 
   "legal.updated": "Fecha: {date}",
-  "legal.missingTitle": "Faltan estos datos",
-  "legal.missingText":
-    "Los datos del responsable no están configurados en este servidor. Es un error de configuración, no un descuido en el texto: la página no se inventa nada.",
-  "legal.missingHow":
-    "Hay que definir {name}, {address} y {email}; la plantilla está en {template}.",
 
   "api.notSignedIn": "No has iniciado sesión.",
   "api.invalidRequest": "Solicitud no válida.",

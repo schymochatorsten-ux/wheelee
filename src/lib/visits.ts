@@ -165,13 +165,14 @@ export function totalVisits(): { visitors: number; views: number; since: string 
 /**
  * Die Zahl für die öffentliche Anzeige auf der Infoseite (ToDo 20.2) – oder `null`.
  *
- * **Erst ab `MIN_PUBLIC`.** Eine Zahl wie „3“ wäre eher peinlich als werbend und
- * sagt nichts; bis dahin steht dort gar nichts. Gezählt sind die Besuche
+ * **Immer, auch bei 0 oder 1** (Torsten, 2026-11-01). Anfangs gab es eine Mindestzahl
+ * von 50 (`MIN_PUBLIC`), damit „3“ nicht kläglich wirkt; er wollte die Zahl
+ * stattdessen von Anfang an offen zeigen. Die Grenze bleibt als Schalter. Gezählt sind die Besuche
  * (Summe der Tagesbesucher), nicht „Menschen, denen geholfen wurde“: Ob jemand
  * einen Parkplatz gefunden hat, misst wheelee bewusst nicht. Dieselbe Person an
  * zwei Tagen zählt zweimal; deshalb heißt der Satz „Mal geöffnet“.
  */
-export const MIN_PUBLIC = 50;
+export const MIN_PUBLIC = 0;
 
 export function publicReach(): number | null {
   try {

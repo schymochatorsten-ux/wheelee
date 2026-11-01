@@ -83,7 +83,8 @@ test.describe("Rechtstexte", () => {
      */
     for (const pfad of ["/impressum", "/datenschutz"]) {
       await page.goto(pfad);
-      await expect(page.getByText("Diese Angaben fehlen noch").first()).toBeVisible();
+      // Kein Hinweiskasten mehr (auf Wunsch, 2026-11-01), aber auch keine erfundenen Angaben.
+      await expect(page.getByText("Diese Angaben fehlen noch")).toHaveCount(0);
       await expect(page.getByText(/Mustermann|Musterstraße/u)).toHaveCount(0);
     }
   });

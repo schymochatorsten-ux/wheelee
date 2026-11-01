@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { LegalPage, MissingOperator } from "@/components/LegalPage";
+import { LegalPage } from "@/components/LegalPage";
 import { operator } from "@/lib/legal/operator";
 
 /**
@@ -48,11 +48,7 @@ export default function Impressum() {
               </span>
             ))}
           </address>
-        ) : (
-          <div className="mt-2">
-            <MissingOperator />
-          </div>
-        )}
+        ) : null}
       </section>
 
       {betreiber && (

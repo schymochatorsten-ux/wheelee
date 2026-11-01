@@ -27,9 +27,16 @@ export default function Abdeckung() {
     list.reduce((total, city) => total + city[key], 0);
   const confirmation = confirmationSummary();
   const number = (value: number) => value.toLocaleString("de-DE");
+  // „Stand“ ist der jüngste Import, nicht ein von Hand gepflegtes Datum: Es ändert sich
+  // mit den Daten (ToDo 19.14). Eine Prüfung ohne Änderung erzeugt keinen neuen Stand –
+  // siehe `deploy/Datenlauf.md`, sonst baute das NAS jeden Tag das Abbild neu.
+  const newest = cities.reduce((latest, city) => (city.importedAt > latest ? city.importedAt : latest), "2026-01-01");
+  // Die größten Städte insgesamt, gleich welcher Quelle – die Tabelle der amtlichen
+  // Listen allein zeigt nicht, wo es die meisten Stellplätze gibt.
+  const largest = [...cities].sort((a, b) => b.spaceCount - a.spaceCount).slice(0, 25);
 
   return (
-    <LegalPage title="Datenabdeckung" updated="2026-10-30">
+    <LegalPage title="Datenabdeckung" updated={newest}>
       <section>
         <h2>Überblick</h2>
         <p>
@@ -64,6 +71,36 @@ export default function Abdeckung() {
                 <td>{number(city.spotCount)}</td>
                 <td>{number(city.spaceCount)}</td>
                 <td>{city.importedAt.slice(0, 10)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Die 25 Städte mit den meisten Stellplätzen</h2>
+        <p>
+          Aus allen Quellen, nach Stellplätzen sortiert. Dass Städte wie Stuttgart oder
+          Nürnberg hier stehen, aber nicht oben bei den amtlichen Listen, liegt an der Quelle:
+          Sie haben keine veröffentlichte Liste, ihre Zahlen stammen aus OpenStreetMap und sind
+          eine Mindestzahl.
+        </p>
+        <table className="mt-2 w-full text-left text-sm">
+          <thead>
+            <tr>
+              <th>Stadt</th>
+              <th>Standorte</th>
+              <th>Stellplätze</th>
+              <th>Quelle</th>
+            </tr>
+          </thead>
+          <tbody>
+            {largest.map((city) => (
+              <tr key={city.slug}>
+                <td>{city.name}</td>
+                <td>{number(city.spotCount)}</td>
+                <td>{number(city.spaceCount)}</td>
+                <td>{city.coverage === "official" ? "amtlich" : "OpenStreetMap"}</td>
               </tr>
             ))}
           </tbody>

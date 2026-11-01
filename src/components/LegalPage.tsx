@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { DEFAULT_LOCALE, localeTag, translator } from "@/i18n";
 import { getLocale } from "@/i18n/server";
-import { tRich } from "@/i18n/rich";
 
 /**
  * Rahmen für Impressum und Datenschutzerklärung (ToDo 10.2).
@@ -78,37 +77,5 @@ export async function LegalPage({ title, updated, children }: LegalPageProps) {
         </div>
       </div>
     </main>
-  );
-}
-
-/**
- * Was dasteht, wenn die Betreiberangaben fehlen.
- *
- * **Bewusst auffällig und bewusst ehrlich.** Die Versuchung wäre, hier
- * Platzhalter zu zeigen („Max Mustermann, Musterstraße 1"). Das sähe nach
- * einem erfüllten Impressum aus und wäre keines – und niemandem fiele es auf,
- * am wenigsten dem Betreiber, der die Seite selten selbst aufruft.
- */
-export async function MissingOperator() {
-  const locale = await getLocale();
-  const t = translator(locale);
-  return (
-    <section className="rounded-xl border border-amber-300 bg-amber-50 p-3 text-amber-900 dark:border-amber-900 dark:bg-amber-950 dark:text-amber-100">
-      <h2 className="font-semibold">{t("legal.missingTitle")}</h2>
-      <p className="mt-1">{t("legal.missingText")}</p>
-      <p className="mt-2">
-        {tRich(
-          "legal.missingHow",
-          {
-            name: <code>WHEELEE_OPERATOR_NAME</code>,
-            address: <code>WHEELEE_OPERATOR_ADDRESS</code>,
-            email: <code>WHEELEE_OPERATOR_EMAIL</code>,
-            template: <code>deploy/env.beispiel</code>,
-          },
-          undefined,
-          locale,
-        )}
-      </p>
-    </section>
   );
 }

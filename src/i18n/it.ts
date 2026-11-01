@@ -484,10 +484,6 @@ export const it: Messages = {
   "stay.hours": "ore",
 
   "legal.updated": "Aggiornato al: {date}",
-  "legal.missingTitle": "Questi dati mancano ancora",
-  "legal.missingText":
-    "I dati del gestore non sono impostati su questo server. È un errore di configurazione, non una svista nel testo – la pagina qui non inventa nulla.",
-  "legal.missingHow": "Da impostare sono {name}, {address} e {email}; il modello si trova in {template}.",
 
   "api.notSignedIn": "Accesso non effettuato.",
   "api.invalidRequest": "Richiesta non valida.",

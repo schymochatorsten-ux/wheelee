@@ -487,10 +487,6 @@ export const pl: Messages = {
   "stay.hours": "godz.",
 
   "legal.updated": "Stan na: {date}",
-  "legal.missingTitle": "Tych danych jeszcze brakuje",
-  "legal.missingText":
-    "Dane operatora nie są ustawione na tym serwerze. To błąd konfiguracji, nie przeoczenie w tekście – strona niczego tu nie zmyśla.",
-  "legal.missingHow": "Do ustawienia są {name}, {address} i {email}; szablon znajduje się w {template}.",
 
   "api.notSignedIn": "Nie zalogowano.",
   "api.invalidRequest": "Nieprawidłowe żądanie.",

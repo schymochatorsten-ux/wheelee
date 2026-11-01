@@ -495,11 +495,6 @@ export const fr: Messages = {
   "stay.hours": "heures",
 
   "legal.updated": "Mise à jour : {date}",
-  "legal.missingTitle": "Ces informations manquent encore",
-  "legal.missingText":
-    "Les informations sur l'exploitant ne sont pas renseignées sur ce serveur. C'est une erreur de configuration, pas un oubli dans le texte – la page n'invente rien ici.",
-  "legal.missingHow":
-    "Il faut définir {name}, {address} et {email} ; le modèle se trouve dans {template}.",
 
   "legal.germanOnly":
     "Les mentions légales et la politique de confidentialité n'existent qu'en allemand ; la version allemande fait foi.",

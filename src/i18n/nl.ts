@@ -484,10 +484,6 @@ export const nl: Messages = {
   "stay.hours": "uur",
 
   "legal.updated": "Stand: {date}",
-  "legal.missingTitle": "Deze gegevens ontbreken nog",
-  "legal.missingText":
-    "De gegevens van de exploitant zijn op deze server niet ingesteld. Dat is een configuratiefout, geen vergissing in de tekst – de pagina verzint hier niets.",
-  "legal.missingHow": "In te stellen zijn {name}, {address} en {email}; de sjabloon staat in {template}.",
 
   "api.notSignedIn": "Niet aangemeld.",
   "api.invalidRequest": "Ongeldig verzoek.",
