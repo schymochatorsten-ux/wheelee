@@ -539,15 +539,6 @@ export function MapSection({
               </button>
             ))}
           </div>
-          {/* Probeweise (2026-11-01): Knopf ohne Funktion, nur zum Ansehen der
-              Kopfzeile. Bewusst kein Tab und nicht übersetzt; wird entfernt
-              oder ersetzt. */}
-          <button
-            type="button"
-            className="min-h-11 shrink-0 rounded-lg border border-neutral-200 bg-white px-2.5 text-xs text-neutral-700 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300"
-          >
-            Test
-          </button>
         </div>
 
         {/*
