@@ -76,21 +76,17 @@ einschaltest** – sie wurden nicht auf dem NAS ausprobiert. Beim Einrichten
 
 - `wheelee-sicherung` – täglich 03:30, `VACUUM INTO` im Container, die letzten
   14 Sicherungen bleiben (`WHEELEE_SICHERUNGEN` ändert die Zahl).
-- `wheelee-aktualitaet` – am Monatsersten, `data:update` (Quellen prüfen und
-  geänderte amtliche Städte neu importieren, ToDo 19.10) und `validate` in einem
-  Wegwerf-Container; Berichte in `data/_aktualitaet.md`, `data/_auto-update.md`
-  und `data/_validierung.md`. **Geänderte Daten werden committet und nach
-  `origin/main` gepusht** (`WHEELEE_AUTO_PUSH=1` in der `.service`), der Webhook
-  baut dann neu. Dafür braucht der Benutzer des Dienstes einen
-  **Schreibschlüssel** für das Repository; ohne ihn bleibt der Stand auf dem
-  Zweig `daten-update`. Probelauf ohne Änderung:
-  `docker run --rm -v /opt/wheelee:/app -w /app node:24-alpine sh -c 'npm ci && npm run data:update -- --dry'`.
+- `wheelee-aktualitaet` – der **monatliche Datenlauf** (Quellen prüfen, geänderte
+  amtliche Städte neu importieren, committen, pushen). Arbeitet in einem eigenen
+  Klon und braucht einen **Schreibschlüssel** für das Repository. Einrichtung
+  Schritt für Schritt, Ressourcen und Fehlerbilder: **[Datenlauf.md](Datenlauf.md)**.
+  Nicht einfach einschalten, sondern dort der Reihenfolge nach (Trockenlauf, Lauf
+  ohne Push, dann Timer).
 
 ```bash
-sudo chmod +x /opt/wheelee/deploy/*.sh
-sudo cp /opt/wheelee/deploy/wheelee-{sicherung,aktualitaet}.{service,timer} /etc/systemd/system/
+sudo cp /opt/wheelee/deploy/wheelee-sicherung.{service,timer} /etc/systemd/system/
 sudo systemctl daemon-reload
-sudo systemctl enable --now wheelee-sicherung.timer wheelee-aktualitaet.timer
+sudo systemctl enable --now wheelee-sicherung.timer
 systemctl list-timers 'wheelee-*'
 sudo systemctl start wheelee-sicherung.service   # einmal von Hand zur Probe
 ```

@@ -26,6 +26,27 @@ export interface AfterState {
   locations: number | null;
 }
 
+/**
+ * Haben zwei Fassungen einer Seed-Datei dieselben Standorte? `generatedAt` und
+ * die Reihenfolge der Schlüssel zählen nicht, nur der Inhalt von `spots`.
+ *
+ * Der Grund: GovData meldet `metadata_modified` auch bei geänderter
+ * Beschreibung. Ohne diese Prüfung entstünde bei jedem solchen Hinweis ein
+ * Commit, ein Push und auf dem NAS ein Neubau des Abbilds – für identische
+ * Daten.
+ */
+export function sameSpots(a: unknown, b: unknown): boolean {
+  const spots = (value: unknown) =>
+    JSON.stringify(
+      (value as { spots?: unknown[] } | null)?.spots ?? null,
+      (_key, v: unknown) =>
+        v && typeof v === "object" && !Array.isArray(v)
+          ? Object.fromEntries(Object.entries(v as object).sort(([x], [y]) => x.localeCompare(y)))
+          : v,
+    );
+  return spots(a) === spots(b) && spots(a) !== "null";
+}
+
 export type Judgement = { accept: true } | { accept: false; reason: string };
 
 export function judgeUpdate(before: BeforeState, after: AfterState): Judgement {

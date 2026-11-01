@@ -1,5 +1,5 @@
 [Unit]
-Description=wheelee Aktualitätslauf monatlich (ToDo 19.2)
+Description=wheelee Datenlauf monatlich (ToDo 19.2, 19.10)
 
 [Timer]
 OnCalendar=*-*-01 04:30:00

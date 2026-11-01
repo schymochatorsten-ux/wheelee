@@ -1,5 +1,24 @@
 import { describe, expect, it } from "vitest";
-import { judgeUpdate } from "./update-guard.mjs";
+import { judgeUpdate, sameSpots } from "./update-guard.mjs";
+
+describe("sameSpots", () => {
+  const a = { generatedAt: "2026-10-08", spots: [{ id: "x", lat: 1, lng: 2, label: "A" }] };
+
+  it("ignoriert Datum und Schlüsselreihenfolge", () => {
+    const b = { spots: [{ label: "A", lng: 2, lat: 1, id: "x" }], generatedAt: "2026-11-01" };
+    expect(sameSpots(a, b)).toBe(true);
+  });
+
+  it("erkennt jede Änderung an den Standorten", () => {
+    expect(sameSpots(a, { spots: [{ id: "x", lat: 1, lng: 2.0001, label: "A" }] })).toBe(false);
+    expect(sameSpots(a, { spots: [] })).toBe(false);
+  });
+
+  it("hält fehlende oder kaputte Dateien nie für gleich", () => {
+    expect(sameSpots(null, null)).toBe(false);
+    expect(sameSpots({}, {})).toBe(false);
+  });
+});
 
 const amtlich = { status: "fertig", usedSource: "amtlich (WFS)" };
 

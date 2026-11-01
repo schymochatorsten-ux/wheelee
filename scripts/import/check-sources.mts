@@ -440,7 +440,12 @@ export async function checkAll(wanted: string[] = []): Promise<Result[]> {
   );
   const quellenBySlug = new Map(quellen.map((entry) => [entry.slug, entry]));
 
-  const seenPath = path.join(projectRoot, "data", "_aktualitaet.json");
+  // Die gemerkten ETags müssen die Läufe überleben. Auf dem NAS arbeitet der
+  // Monatslauf in einem frischen Klon, der bei jedem Lauf auf origin/main
+  // zurückgesetzt wird – dort liegt die Datei deshalb im Zustandsverzeichnis.
+  const seenPath = process.env.WHEELEE_STATE_DIR
+    ? path.join(process.env.WHEELEE_STATE_DIR, "aktualitaet.json")
+    : path.join(projectRoot, "data", "_aktualitaet.json");
   const seen = await readJson<SeenFile>(seenPath, {});
 
   const records = status.records.filter(

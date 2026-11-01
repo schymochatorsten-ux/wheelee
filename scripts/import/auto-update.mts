@@ -25,7 +25,7 @@ import path from "node:path";
 import { checkAll } from "./check-sources.mjs";
 import { projectRoot } from "./config.mjs";
 import { loadStatus } from "./status.mjs";
-import { judgeUpdate } from "./update-guard.mjs";
+import { judgeUpdate, sameSpots } from "./update-guard.mjs";
 
 const data = (name: string) => path.join(projectRoot, "data", name);
 const tsx = path.join(projectRoot, "node_modules", "tsx", "dist", "cli.mjs");
@@ -55,6 +55,8 @@ interface Outcome {
   city: string;
   slug: string;
   accepted: boolean;
+  /** Neu geholt, aber inhaltlich gleich – kein Fehler, nur nichts zu tun. */
+  unchanged?: boolean;
   before: number | null;
   after: number | null;
   note: string;
@@ -71,8 +73,10 @@ async function main() {
   );
 
   console.log(`\n${due.length} amtliche Stadt/Städte fällig: ${due.map((r) => r.slug).join(", ") || "–"}`);
-  if (dry || due.length === 0) {
-    await writeReport([], dry, due.map((r) => `${r.city} (${r.detail})`));
+  // Ein Probelauf schreibt keinen Bericht: Er würde den des letzten echten Laufs ersetzen.
+  if (dry) return;
+  if (due.length === 0) {
+    await writeReport([], false, []);
     return;
   }
 
@@ -91,7 +95,25 @@ async function main() {
       ? judgeUpdate({ locations: before?.locations ?? null }, after)
       : { accept: false as const, reason: "Importlauf abgebrochen" };
 
-    if (judgement.accept) {
+    const newSeed = await readOrNull(seedFile);
+    const unchanged =
+      judgement.accept &&
+      savedSeed !== null &&
+      newSeed !== null &&
+      sameSpots(JSON.parse(savedSeed), JSON.parse(newSeed));
+
+    if (unchanged) {
+      // Inhalt gleich: alles auf den alten Stand, damit nichts zu committen ist.
+      await restore(seedFile, savedSeed);
+      await restore(data("_import-status.json"), savedJson);
+      await restore(data("_import-status.md"), savedMd);
+      outcomes.push({
+        city: result.city, slug: result.slug, accepted: false, unchanged: true,
+        before: before?.locations ?? null, after: after?.locations ?? null,
+        note: "Quelle neu geholt, Standorte unverändert",
+      });
+      console.log(`  = ${result.city}: Standorte unverändert, nichts zu übernehmen`);
+    } else if (judgement.accept) {
       outcomes.push({
         city: result.city, slug: result.slug, accepted: true,
         before: before?.locations ?? null, after: after?.locations ?? null,
@@ -136,7 +158,7 @@ async function writeReport(outcomes: Outcome[], dry: boolean, planned: string[])
   if (outcomes.length > 0) {
     lines.push("## Ergebnis", "", "| Stadt | Befund | Standorte vorher → nachher | Hinweis |", "| --- | --- | --- | --- |");
     for (const o of outcomes) {
-      lines.push(`| ${o.city} | ${o.accepted ? "✅ übernommen" : "↩ verworfen"} | ${o.before ?? "–"} → ${o.accepted ? (o.after ?? "–") : "unverändert"} | ${o.note} |`);
+      lines.push(`| ${o.city} | ${o.accepted ? "✅ übernommen" : o.unchanged ? "= unverändert" : "↩ verworfen"} | ${o.before ?? "–"} → ${o.accepted ? (o.after ?? "–") : "unverändert"} | ${o.note} |`);
     }
     lines.push("");
   }
