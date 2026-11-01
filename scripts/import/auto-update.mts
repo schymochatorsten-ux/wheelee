@@ -52,7 +52,42 @@ const statePath = process.env.WHEELEE_STATE_DIR
   ? path.join(process.env.WHEELEE_STATE_DIR, "auto-update.json")
   : data("_auto-update.json");
 
-const MAX_CITIES = Number.parseInt(process.env.WHEELEE_MAX_STAEDTE ?? "5", 10) || 5;
+/**
+ * Wann wurde jede amtliche Stadt zuletzt **mit ihrer Quelle verglichen**? Die Datei
+ * zeigt `/abdeckung` als „Zuletzt geprüft“ (ToDo 19.15) – auch wenn sich dabei nichts
+ * geändert hat. Sie liegt nicht im Repository: Ein Tageslauf, der nur nachsieht,
+ * soll keinen Commit und keinen Neubau auslösen. Auf dem NAS kopiert das Skript sie in
+ * das Volume der App, lokal liegt sie in `.data/`.
+ */
+const checkedPath = process.env.WHEELEE_STATE_DIR
+  ? path.join(process.env.WHEELEE_STATE_DIR, "geprueft.json")
+  : path.join(projectRoot, ".data", "geprueft.json");
+
+interface CheckedFile {
+  updatedAt: string;
+  cities: Record<string, string>;
+}
+
+async function loadChecked(): Promise<CheckedFile> {
+  try {
+    const parsed = JSON.parse((await readOrNull(checkedPath)) ?? "{}") as Partial<CheckedFile>;
+    return { updatedAt: parsed.updatedAt ?? "", cities: parsed.cities ?? {} };
+  } catch {
+    return { updatedAt: "", cities: {} };
+  }
+}
+
+async function saveChecked(checked: CheckedFile): Promise<void> {
+  checked.updatedAt = new Date().toISOString();
+  await fs.mkdir(path.dirname(checkedPath), { recursive: true });
+  await fs.writeFile(checkedPath, `${JSON.stringify(checked, null, 2)}\n`, "utf8");
+}
+
+/** `--all`: heute alle amtlichen Städte vergleichen, ohne Obergrenze (Handlauf nach längerer Pause). */
+const ALL = process.argv.includes("--all");
+const MAX_CITIES = ALL ? 10_000 : Number.parseInt(process.env.WHEELEE_MAX_STAEDTE ?? "5", 10) || 5;
+/** Regionale Sammeldatensätze (TRK) werden so oft neu verglichen. */
+const REGIONAL_DAYS = 30;
 
 /** Quellen, die jetzt amtlich geführt werden – „ungenutzt“, „tot“ und OSM bleiben Handarbeit. */
 const OFFICIAL_VERDICTS = ["geaendert", "unveraendert", "unpruefbar"];
@@ -115,8 +150,18 @@ async function main() {
     since: result.since,
   });
 
+  const checked = await loadChecked();
+  // Wo die Quelle ein Änderungsdatum nennt, ist die Prüfung mit der Abfrage geschehen.
+  if (!dry) {
+    for (const result of results) {
+      if (result.verdict === "geaendert" || result.verdict === "unveraendert") {
+        checked.cities[result.slug] = new Date().toISOString();
+      }
+    }
+  }
+
   const picked = pickDue(
-    eligible.filter((result) => result.reimport).map(toCandidate),
+    eligible.filter((result) => ALL || result.reimport).map(toCandidate),
     eligible.filter((result) => state.pending.includes(result.slug)).map(toCandidate),
     state,
     MAX_CITIES,
@@ -132,7 +177,9 @@ async function main() {
 
   state.pending = picked.pending;
   if (picked.run.length === 0) {
+    await checkRegional(state, checked);
     await saveState(state);
+    await saveChecked(checked);
     return;
   }
 
@@ -173,11 +220,13 @@ async function main() {
       await restore(data("_import-status.json"), savedJson);
       await restore(data("_import-status.md"), savedMd);
       state.looked[slug] = new Date().toISOString();
+      checked.cities[slug] = new Date().toISOString();
       delete state.tried[slug];
       outcomes.push({ ...base, accepted: false, unchanged: true, note: "Quelle neu geholt, Standorte unverändert" });
       console.log(`  = ${result.city}: Standorte unverändert, nichts zu übernehmen`);
     } else if (judgement.accept) {
       state.looked[slug] = new Date().toISOString();
+      checked.cities[slug] = new Date().toISOString();
       delete state.tried[slug];
       outcomes.push({ ...base, accepted: true, note: result.detail });
     } else {
@@ -192,6 +241,8 @@ async function main() {
     await saveState(state);
   }
 
+  await checkRegional(state, checked);
+
   if (outcomes.some((o) => o.accepted)) {
     // Schritte 5 bis 7 aus Datenpflege.md.
     // Nur die eben importierten Städte, nicht alle mit Lücken: Das hielte Overpass
@@ -201,7 +252,62 @@ async function main() {
     run("dedupe.mts", slugs);
     run("generate-index.mts");
   }
+  await saveState(state);
+  await saveChecked(checked);
   await writeReport(outcomes);
+}
+
+/**
+ * Der regionale Sammeldatensatz (TRK: zwölf Gemeinden um Karlsruhe) kommt nicht über
+ * `import:city`, sondern über `import:regional`; ohne diesen Schritt würde er nie
+ * aktualisiert. Es gilt dieselbe Vorsicht wie bei den Städten: Seed und Status werden
+ * vorher gesichert, ein Ergebnis mit weniger als 70 % der Standorte wird verworfen,
+ * ein inhaltlich gleiches ändert nichts.
+ */
+async function checkRegional(state: UpdateState, checked: CheckedFile): Promise<void> {
+  const last = state.regionalAt ? new Date(state.regionalAt).getTime() : 0;
+  if (!ALL && Date.now() - last < REGIONAL_DAYS * 86_400_000) return;
+
+  const before = (await loadStatus()).records.filter((r) => /regional: trk/u.test(r.usedSource ?? ""));
+  if (before.length === 0) return;
+  const savedSeeds = new Map<string, string | null>();
+  for (const record of before) savedSeeds.set(record.slug, await readOrNull(data(`${record.slug}.json`)));
+  const savedJson = await readOrNull(data("_import-status.json"));
+  const savedMd = await readOrNull(data("_import-status.md"));
+
+  if (!run("regional.mts", ["trk"])) {
+    console.log("  ↩ regional: Lauf fehlgeschlagen, alter Stand bleibt");
+    for (const [slug, text] of savedSeeds) await restore(data(`${slug}.json`), text);
+    await restore(data("_import-status.json"), savedJson);
+    await restore(data("_import-status.md"), savedMd);
+    return;
+  }
+
+  const after = new Map((await loadStatus()).records.map((r) => [r.slug, r]));
+  let changed = 0;
+  for (const record of before) {
+    const seedFile = data(`${record.slug}.json`);
+    const saved = savedSeeds.get(record.slug) ?? null;
+    const fresh = await readOrNull(seedFile);
+    const now = after.get(record.slug);
+    const verdict = now ? judgeUpdate({ locations: record.locations }, now) : { accept: false as const, reason: "fehlt" };
+    const same = saved !== null && fresh !== null && sameSpots(JSON.parse(saved), JSON.parse(fresh));
+    if (!verdict.accept || same) {
+      await restore(seedFile, saved);
+      if (!verdict.accept) console.log(`  ↩ regional ${record.slug}: ${verdict.reason}`);
+    } else {
+      changed += 1;
+    }
+    if (verdict.accept) checked.cities[record.slug] = new Date().toISOString();
+  }
+  if (changed === 0) {
+    await restore(data("_import-status.json"), savedJson);
+    await restore(data("_import-status.md"), savedMd);
+  } else {
+    run("generate-index.mts");
+  }
+  state.regionalAt = new Date().toISOString();
+  console.log(`  regional (TRK): ${changed} Gemeinde(n) geändert`);
 }
 
 async function writeReport(outcomes: Outcome[]) {

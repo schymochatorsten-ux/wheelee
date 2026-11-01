@@ -62,6 +62,8 @@ export interface UpdateState {
   looked: Record<string, string>;
   tried: Record<string, string>;
   pending: string[];
+  /** Wann zuletzt der regionale Sammeldatensatz verglichen wurde. */
+  regionalAt?: string;
 }
 
 export const RETRY_DAYS = 7;

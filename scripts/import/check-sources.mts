@@ -36,6 +36,12 @@ const USER_AGENT = "wheelee-import/0.1 (Behindertenparkplatz-Karte; Kontakt via 
 const OSM_INTERVAL_DAYS = 90;
 /** Auch amtliche Quellen werden halbjährlich ungefragt neu geholt. */
 const FULL_REIMPORT_DAYS = 182;
+/**
+ * Quellen **ohne Änderungsdatum** (Berlin, Gelsenkirchen, Bottrop …) lassen sich
+ * nicht abfragen; ein Vergleich geht nur durch Neuholen. Das geschieht monatlich
+ * (ToDo 19.15) – halbjährlich wäre ein halbes Jahr, in dem „geprüft“ nichts hieße.
+ */
+const NO_DATE_REIMPORT_DAYS = 30;
 
 interface QuellenEintrag {
   slug: string;
@@ -305,7 +311,7 @@ async function checkCity(
   }
 
   if (!newest) {
-    const due = age !== null && age >= FULL_REIMPORT_DAYS;
+    const due = age !== null && age >= NO_DATE_REIMPORT_DAYS;
     return {
       ...base,
       verdict: "unpruefbar",
