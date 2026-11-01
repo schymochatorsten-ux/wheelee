@@ -13,10 +13,10 @@ heißt also „sieh nach“, nicht „die Daten sind neu“.
 
 | Befund | Städte |
 | --- | ---: |
-| 🔄 geändert | 1 |
+| 🔄 geändert | 3 |
 | 💀 nicht mehr abrufbar | 0 |
 | 🟡 amtliche Quelle ungenutzt | 6 |
-| ✅ unverändert | 10 |
+| ✅ unverändert | 8 |
 | ❔ nicht prüfbar | 3 |
 | ⬜ kein Änderungsdatum | 3738 |
 
@@ -47,12 +47,14 @@ npm run import:city -- bochum karlsruhe kiel rostock norderstedt viersen
 ## Neu zu importieren
 
 ```bash
-npm run import:city -- koeln
+npm run import:city -- koeln duesseldorf bielefeld
 npm run import:streets
 npm run import:index
 ```
 
 - **Köln** – Quelle vom 2026-11-01, Import vom 2026-10-08
+- **Düsseldorf** – Quelle vom 2026-11-01, Import vom 2026-11-01
+- **Bielefeld** – Quelle vom 2026-11-01, Import vom 2026-11-01
 
 ## Alle Städte
 
@@ -63,7 +65,7 @@ npm run import:index
 | ⬜ | München | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | 🔄 | Köln | geändert | Quelle vom 2026-11-01, Import vom 2026-10-08 |
 | ✅ | Frankfurt am Main | unverändert | Quelle vom 2026-11-01 |
-| ✅ | Düsseldorf | unverändert | Quelle vom 2026-11-01 |
+| 🔄 | Düsseldorf | geändert | Quelle vom 2026-11-01, Import vom 2026-11-01 |
 | ⬜ | Stuttgart | kein Änderungsdatum | OpenStreetMap, zuletzt vor 24 Tagen geholt |
 | ⬜ | Leipzig | kein Änderungsdatum | OpenStreetMap, zuletzt vor 24 Tagen geholt |
 | ✅ | Dortmund | unverändert | Quelle vom 2026-10-29 |
@@ -75,7 +77,7 @@ npm run import:index
 | ⬜ | Duisburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 24 Tagen geholt |
 | 🟡 | Bochum | amtliche Quelle ungenutzt | amtliche Quelle erreichbar, verwendet wird OpenStreetMap · Quelle vom 2026-10-29 · Importvermerk: amtliche Quelle nicht nutzbar, OSM verwendet |
 | ⬜ | Wuppertal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 24 Tagen geholt |
-| ✅ | Bielefeld | unverändert | Quelle vom 2026-11-01 |
+| 🔄 | Bielefeld | geändert | Quelle vom 2026-11-01, Import vom 2026-11-01 |
 | ⬜ | Bonn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 24 Tagen geholt |
 | ⬜ | Mannheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 24 Tagen geholt |
 | 🟡 | Karlsruhe | amtliche Quelle ungenutzt | amtliche Quelle erreichbar, verwendet wird OpenStreetMap · Quelle vom 2026-11-01 · Importvermerk: amtliche Quelle nicht nutzbar, OSM verwendet |
