@@ -242,6 +242,16 @@ const MIGRATIONS: readonly string[] = [
   ALTER TABLE account ADD COLUMN email_verified_at TEXT;
   UPDATE account SET email_verified_at = created_at;
   `,
+
+  // 12 – Benutzername und Pflicht zum Passwortwechsel (ToDo 18.7).
+  `
+  -- Zusätzlich zur E-Mail-Adresse; Anmeldung mit beidem. Ohne Groß-/Kleinschreibung
+  -- eindeutig, damit „Torsten“ und „torsten“ nicht zwei Konten sind.
+  ALTER TABLE account ADD COLUMN username TEXT;
+  CREATE UNIQUE INDEX account_username ON account(username COLLATE NOCASE) WHERE username IS NOT NULL;
+  -- 1 = beim nächsten Anmelden muss das Passwort geändert werden (Startpasswort).
+  ALTER TABLE account ADD COLUMN must_change_password INTEGER NOT NULL DEFAULT 0;
+  `,
 ];
 
 let database: DatabaseSync | null = null;

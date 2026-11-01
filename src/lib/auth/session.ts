@@ -27,8 +27,12 @@ export { adminEmails, isAdminEmail } from "./admin-emails";
  * (die Adresse wird nicht bestätigt), und der eigentliche Besitzer verlor sein
  * Recht, sobald ein zweiter Admin existierte.
  */
-export function isAdminAccount(account: Pick<Account, "role" | "disabledAt">): boolean {
-  return !account.disabledAt && account.role === "admin";
+export function isAdminAccount(
+  account: Pick<Account, "role" | "disabledAt"> & { mustChangePassword?: boolean },
+): boolean {
+  // Mit einem Startpasswort (ToDo 18.7) gibt es noch keine Verwaltungsrechte: Wer
+  // es kennt, soll erst ein eigenes setzen, bevor er etwas verwalten kann.
+  return !account.disabledAt && !account.mustChangePassword && account.role === "admin";
 }
 
 const toUser = (account: Account): SessionUser => ({
@@ -39,6 +43,7 @@ const toUser = (account: Account): SessionUser => ({
   // bei einem unlesbaren Browser-Speicher (siehe Migration 4).
   mapsPreference: isMapsPreference(account.mapsPreference) ? account.mapsPreference : null,
   language: isLocale(account.language) ? account.language : null,
+  mustChangePassword: account.mustChangePassword,
 });
 
 /** Das angemeldete Konto, oder `null`. */

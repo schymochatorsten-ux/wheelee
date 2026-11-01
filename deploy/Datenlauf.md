@@ -202,6 +202,34 @@ systemctl list-timers 'wheelee-*'                          # nächster Lauf
 journalctl -u wheelee-aktualitaet --since '2 days ago' | tail -n 30
 ```
 
+## Ersten Admin anlegen (ToDo 10.20, 18.7)
+
+Unabhängig vom Datenlauf, aber mit demselben Klon. Voraussetzung: Der Stand mit
+`admin:create` ist deployt und im Klon (`git -C /var/lib/wheelee-update/repo pull`
+oder ein Trockenlauf von oben), und die `node_modules` im Klon sind da (erster
+Datenlauf).
+
+```bash
+docker volume ls | grep wheelee-data        # genauen Namen des Volumes ablesen
+read -rs -p "Startpasswort: " WHEELEE_START_PASSWORD; echo; export WHEELEE_START_PASSWORD
+docker run --rm --user 1001:1001 -e HOME=/tmp \
+  -e WHEELEE_DB_PATH=/app/var/wheelee.sqlite -e WHEELEE_START_PASSWORD \
+  -v <NAME-DES-VOLUMES>:/app/var \
+  -v /var/lib/wheelee-update/repo:/work -w /work \
+  node:24-alpine npx tsx scripts/create-admin.mts \
+  --username Torsten --email <ADRESSE VON TORSTEN>
+unset WHEELEE_START_PASSWORD
+```
+
+- `--user 1001:1001` ist die Kennung, unter der die App läuft: Sonst legt der Lauf
+  Dateien an (`-wal`, `-shm`), die der App nicht gehören und die sie nicht öffnen kann.
+- Das Startpasswort wird nur abgefragt, nicht ausgegeben und landet nicht in der
+  Shell-Historie. Es unterliegt nicht der Mindestlänge, ist aber ein Wegwerfwert.
+- **Sofort danach** auf `https://wheelee.de` mit Name (oder Adresse) und
+  Startpasswort anmelden und ein eigenes Passwort setzen; bis dahin gibt das
+  Konto keine Verwaltungsrechte.
+- Antwortet das Skript „schon vergeben“, ändert es nichts.
+
 ## Wenn etwas schiefgeht
 
 | Beobachtung | Bedeutung | Was tun |

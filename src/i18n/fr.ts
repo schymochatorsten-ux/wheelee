@@ -258,6 +258,9 @@ export const fr: Messages = {
   "account.login": "Se connecter",
   "account.register": "Créer un compte",
   "account.email": "Adresse e-mail",
+  "account.emailOrName": "Adresse e-mail ou nom d’utilisateur",
+  "account.mustChange":
+    "Votre mot de passe est provisoire. Choisissez-en un dès maintenant ; d’ici là, les droits d’administration restent désactivés.",
   "account.password": "Mot de passe",
   "account.passwordHelp":
     "Au moins {min} caractères. La longueur compte plus que les caractères spéciaux – une phrase facile à retenir vaut mieux que {example}.",

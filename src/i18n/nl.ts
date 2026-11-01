@@ -253,6 +253,9 @@ export const nl: Messages = {
   "account.login": "Aanmelden",
   "account.register": "Account aanmaken",
   "account.email": "E-mailadres",
+  "account.emailOrName": "E-mailadres of gebruikersnaam",
+  "account.mustChange":
+    "Je wachtwoord is tijdelijk. Kies nu een eigen wachtwoord; tot die tijd zijn de beheerdersrechten niet actief.",
   "account.password": "Wachtwoord",
   "account.passwordHelp":
     "Minstens {min} tekens. De lengte telt meer dan speciale tekens – een zin die je kunt onthouden is beter dan {example}.",

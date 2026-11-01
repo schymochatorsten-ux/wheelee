@@ -256,6 +256,9 @@ export const ru: Messages = {
   "account.login": "Войти",
   "account.register": "Создать учётную запись",
   "account.email": "Адрес электронной почты",
+  "account.emailOrName": "Адрес электронной почты или имя пользователя",
+  "account.mustChange":
+    "Ваш пароль временный. Задайте сейчас собственный; до этого права администратора отключены.",
   "account.password": "Пароль",
   "account.passwordHelp":
     "Не менее {min} символов. Длина важнее спецсимволов – фраза, которую вы запомните, лучше, чем {example}.",

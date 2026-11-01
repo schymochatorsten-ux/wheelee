@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-01):** **218 Einträge** auf oberster Ebene –
-davon 193, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-01):** **219 Einträge** auf oberster Ebene –
+davon 194, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 25, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -1640,6 +1640,14 @@ Torsten, 2026-10-30: „19 alle umsetzen, die ohne mich gehen.“ 13 bleibt gesp
   - **Offline:** `public/sw.js` behandelt `/api/cities` wie `/api/spots` (Netz zuerst, sonst die letzte Antwort); `VERSION` auf `v3` hochgezählt. Ohne Netz und ohne frühere Antwort zeigt die App nur die Standardstadt – die Parkplätze bleiben über die vorab geladenen Städte erreichbar.
   - **Bekannte Folge:** Bis die Antwort da ist, steht in der Liste nur die Standardstadt; der Stadtname eines Standorts fällt kurz auf den Kürzel (`slug`) zurück. Beim ersten Aufruf sind das die Standorte der Standardstadt, deren Name mitgeliefert wird.
   - **Tests:** `e2e/staedte.spec.ts` (Schnittstelle, HTML unter 150 KB und ohne OSM-Attributionen, Auswahl im Vorab-Download füllt sich). Dev-E2E 105 + 3, Produktions-E2E 110 grün.
+
+## 18. Ergänzung (2026-11-01)
+
+- [x] 18.7 **Benutzername, Startpasswort und Skript für den ersten Admin** (Torsten, 2026-11-01: Konto „Torsten“, Login „Torsten“, Passwortwechsel beim ersten Anmelden). **Gebaut, nichts auf dem NAS angelegt** (die Datenbank liegt dort; offen in `ToDos.md` unter 10.20).
+  - **Benutzername zusätzlich zur Adresse** (Migration 12, Spalte `username`, ohne Groß-/Kleinschreibung eindeutig). Die Anmeldung nimmt beides: Was ein „@“ enthält, ist die Adresse, sonst der Name; deshalb darf ein Name keines enthalten (3–32 Zeichen, Buchstaben, Ziffern, `. _ -`). Die Registrierung bleibt bei der Adresse; ein Name entsteht nur durch das Skript. Das Anmeldefeld ist nun `text` statt `email` (der Browser wiese „Torsten“ sonst ab), die Beschriftung nennt beides (`account.emailOrName`).
+  - **Startpasswort mit Pflichtwechsel** (`must_change_password`). **Bis zum Wechsel gibt es keine Verwaltungsrechte**, obwohl die Rolle `admin` ist (`isAdminAccount`): Wer das Startpasswort kennt, soll erst ein eigenes setzen, bevor er etwas verwalten kann – serverseitig, nicht nur in der Oberfläche. Die Oberfläche öffnet die Einstellungen, zeigt nur das Passwortformular (nicht schließbar) und lädt nach dem Wechsel neu. Der Wechsel über „Passwort ändern“ und über den Mail-Link („vergessen“) hebt die Pflicht auf.
+  - **Das Startpasswort unterliegt nicht der Mindestlänge** und steht nicht im Repository: `npm run admin:create -- --username … --email … --password …` (oder `WHEELEE_START_PASSWORD`) legt das Konto an; die Adresse gilt als bestätigt. Das Skript gibt das Passwort nicht aus. **Das gewünschte Startpasswort „Torsten“ ist 7 Zeichen und damit kürzer als die Mindestlänge von 10** – das geht nur, weil es ein Wegwerfwert ist; ein schwaches Startpasswort ist bis zum ersten Wechsel angreifbar (die Anmeldung ist gedrosselt, ein Erraten von „Torsten“ aber naheliegend). Deshalb nur anlegen, wenn der Wechsel sofort danach geschieht.
+  - **Tests:** `src/lib/db/operator-account.test.ts` (Anmeldung mit Name/Adresse, keine Rechte vor dem Wechsel, volle Rechte danach, Doppelvergabe). **Nicht geprüft:** der Weg im Browser (E2E) und der Lauf des Skripts auf dem NAS.
 
 ## 19. Ergänzung (2026-11-01)
 

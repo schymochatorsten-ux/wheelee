@@ -92,6 +92,7 @@ async function postHandler(request: Request) {
       isAdmin: isAdminAccount(account),
       mapsPreference: null,
       language: null,
+      mustChangePassword: false,
     }),
   }, { headers: { "Cache-Control": "no-store" } });
   response.cookies.set(sessionCookie(createSession(account.id)));

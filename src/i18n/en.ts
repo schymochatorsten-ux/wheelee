@@ -253,6 +253,9 @@ export const en: Messages = {
   "account.login": "Sign in",
   "account.register": "Create account",
   "account.email": "Email address",
+  "account.emailOrName": "Email address or username",
+  "account.mustChange":
+    "Your password is a temporary one. Please set your own now; until then admin rights are not enabled.",
   "account.password": "Password",
   "account.passwordHelp":
     "At least {min} characters. Length counts for more than special characters – a sentence you can remember is better than {example}.",

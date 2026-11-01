@@ -256,6 +256,9 @@ export const es: Messages = {
   "account.login": "Iniciar sesión",
   "account.register": "Crear cuenta",
   "account.email": "Dirección de correo",
+  "account.emailOrName": "Correo electrónico o nombre de usuario",
+  "account.mustChange":
+    "Tu contraseña es provisional. Elige ahora una propia; hasta entonces no se activan los derechos de administración.",
   "account.password": "Contraseña",
   "account.passwordHelp":
     "Al menos {min} caracteres. La longitud cuenta más que los caracteres especiales: una frase que puedas recordar es mejor que {example}.",

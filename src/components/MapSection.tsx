@@ -219,6 +219,11 @@ export function MapSection({
     if (view === "feedback" && user?.isAdmin !== true) setView("map");
   }, [view, user]);
 
+  // Startpasswort (ToDo 18.7): Die Einstellungen sind der Ort, an dem es geändert wird.
+  useEffect(() => {
+    if (user?.mustChangePassword) setView("settings");
+  }, [user]);
+
   /**
    * Die Marker der Karte kommen aus dem sichtbaren Ausschnitt, die Liste und
    * die Navigationsleiste aus der Nähe-Abfrage. Beides lädt der Server

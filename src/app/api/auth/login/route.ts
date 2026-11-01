@@ -91,6 +91,7 @@ async function postHandler(request: Request) {
       id: account.id,
       email: account.email,
       isAdmin: isAdminAccount(account),
+      mustChangePassword: account.mustChangePassword,
       mapsPreference: isMapsPreference(account.mapsPreference) ? account.mapsPreference : null,
       language: isLocale(account.language) ? account.language : null,
     }),

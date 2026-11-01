@@ -256,6 +256,9 @@ export const pl: Messages = {
   "account.login": "Zaloguj się",
   "account.register": "Załóż konto",
   "account.email": "Adres e-mail",
+  "account.emailOrName": "Adres e-mail lub nazwa użytkownika",
+  "account.mustChange":
+    "Hasło jest tymczasowe. Ustaw teraz własne; do tego czasu uprawnienia administratora są wyłączone.",
   "account.password": "Hasło",
   "account.passwordHelp":
     "Co najmniej {min} znaków. Długość liczy się bardziej niż znaki specjalne – zdanie, które zapamiętasz, jest lepsze niż {example}.",

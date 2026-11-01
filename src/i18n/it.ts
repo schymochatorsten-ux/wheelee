@@ -253,6 +253,9 @@ export const it: Messages = {
   "account.login": "Accedi",
   "account.register": "Crea account",
   "account.email": "Indirizzo e-mail",
+  "account.emailOrName": "Indirizzo e-mail o nome utente",
+  "account.mustChange":
+    "La tua password è provvisoria. Scegline subito una tua; fino ad allora i diritti di amministrazione restano disattivati.",
   "account.password": "Password",
   "account.passwordHelp":
     "Almeno {min} caratteri. La lunghezza conta più dei caratteri speciali – una frase che ricordi è meglio di {example}.",

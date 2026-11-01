@@ -34,6 +34,10 @@ export interface Account {
   role: Role;
   /** Gesperrt seit – ein gesperrtes Konto kann sich nicht anmelden und hat keine Sitzung. */
   disabledAt: string | null;
+  /** Anmeldename zusätzlich zur Adresse (ToDo 18.7), `null` bei Konten ohne. */
+  username: string | null;
+  /** Das Passwort ist ein Startpasswort und muss bei der Anmeldung geändert werden (ToDo 18.7). */
+  mustChangePassword: boolean;
 }
 
 export type Role = "user" | "admin";
@@ -45,6 +49,8 @@ interface AccountRow {
   language?: string | null;
   role?: string | null;
   disabled_at?: string | null;
+  username?: string | null;
+  must_change_password?: number | null;
   password_hash: string;
   created_at: string;
 }
@@ -70,7 +76,13 @@ const toAccount = (row: AccountRow): Account => ({
   language: row.language ?? null,
   role: row.role === "admin" ? "admin" : "user",
   disabledAt: row.disabled_at ?? null,
+  username: row.username ?? null,
+  mustChangePassword: Number(row.must_change_password ?? 0) === 1,
 });
+
+/** Spalten, die `toAccount` braucht – an einer Stelle, damit keine Abfrage eine vergisst. */
+const ACCOUNT_COLUMNS =
+  "id, email, password_hash, created_at, maps_preference, language, role, disabled_at, username, must_change_password";
 
 /**
  * Die gewählte Karten-App am Konto ablegen (ToDo 11.3a).
@@ -93,9 +105,7 @@ export function setLanguage(accountId: string, language: string | null): void {
 
 export function findAccountByEmail(email: string): Account | null {
   const row = db()
-    .prepare(
-      "SELECT id, email, password_hash, created_at, maps_preference, language, role, disabled_at FROM account WHERE email = ?",
-    )
+    .prepare(`SELECT ${ACCOUNT_COLUMNS} FROM account WHERE email = ?`)
     .get(normalizeEmail(email)) as AccountRow | undefined;
   return row ? toAccount(row) : null;
 }
@@ -125,6 +135,8 @@ export function createAccount(email: string, password: string): Account | null {
     language: null,
     role: "user",
     disabledAt: null,
+    username: null,
+    mustChangePassword: false,
   };
 
   try {
@@ -139,6 +151,66 @@ export function createAccount(email: string, password: string): Account | null {
   return account;
 }
 
+/** Erlaubt: Buchstaben, Ziffern, Punkt, Unterstrich, Bindestrich; 3 bis 32 Zeichen, kein „@“. */
+export function usernameProblem(username: string): string | null {
+  return /^[\p{L}\p{N}._-]{3,32}$/u.test(username)
+    ? null
+    : "Benutzername: 3 bis 32 Zeichen, nur Buchstaben, Ziffern, Punkt, Unterstrich und Bindestrich.";
+}
+
+/**
+ * Konto durch die Betreiber:innen anlegen (ToDo 18.7) – für den ersten Admin
+ * (`scripts/create-admin.mts`), nicht für die Oberfläche.
+ *
+ * **Das Startpasswort unterliegt nicht den Passwortregeln** (Mindestlänge) und
+ * ist immer ein Wegwerfwert: `mustChangePassword` ist gesetzt, bis die Person
+ * selbst eines gewählt hat. Die Adresse gilt als bestätigt, weil sie von den
+ * Betreiber:innen kommt. Gibt `null` zurück, wenn Adresse oder Name schon
+ * vergeben sind.
+ */
+export function createOperatorAccount(input: {
+  email: string;
+  username: string;
+  password: string;
+  role: Role;
+}): Account | null {
+  const problem = usernameProblem(input.username);
+  if (problem) throw new Error(problem);
+
+  const account: Account = {
+    id: randomUUID(),
+    email: normalizeEmail(input.email),
+    createdAt: now(),
+    mapsPreference: null,
+    language: null,
+    role: input.role,
+    disabledAt: null,
+    username: input.username,
+    mustChangePassword: true,
+  };
+
+  try {
+    db()
+      .prepare(
+        `INSERT INTO account (id, email, password_hash, created_at, role, email_verified_at, username, must_change_password)
+         VALUES (?, ?, ?, ?, ?, ?, ?, 1)`,
+      )
+      .run(
+        account.id,
+        account.email,
+        hashPassword(input.password),
+        account.createdAt,
+        account.role,
+        account.createdAt,
+        account.username,
+      );
+  } catch (error) {
+    if (String((error as Error).message).includes("UNIQUE")) return null;
+    throw error;
+  }
+  return account;
+}
+
 /**
  * Anmeldedaten prüfen.
  *
@@ -148,9 +220,9 @@ export function createAccount(email: string, password: string): Account | null {
  * 100 ms des scrypt-Durchlaufs. Das ist kein theoretischer Einwand: Genau so
  * werden Adresslisten auf Treffer abgeklopft.
  */
-export function authenticate(email: string, password: string): Account | null {
+export function authenticate(identifier: string, password: string): Account | null {
   bootstrapAdmins();
-  const row = accountRowByEmail(email);
+  const row = accountRowByLogin(identifier);
 
   if (!row) {
     verifyPassword(password, DUMMY_HASH);
@@ -169,9 +241,9 @@ export function authenticate(email: string, password: string): Account | null {
  * Weg, den Unbekannte beliebig oft aufrufen können; die übrigen prüfen ein
  * Passwort erst hinter einer gültigen Sitzung.
  */
-export async function authenticateAsync(email: string, password: string): Promise<Account | null> {
+export async function authenticateAsync(identifier: string, password: string): Promise<Account | null> {
   bootstrapAdmins();
-  const row = accountRowByEmail(email);
+  const row = accountRowByLogin(identifier);
 
   if (!row) {
     await verifyPasswordAsync(password, DUMMY_HASH);
@@ -182,12 +254,21 @@ export async function authenticateAsync(email: string, password: string): Promis
   return signedIn(row);
 }
 
-function accountRowByEmail(email: string): AccountRow | undefined {
+/**
+ * Konto zur Anmeldung: Enthält die Eingabe ein „@“, ist es die Adresse,
+ * sonst der Benutzername (ohne Groß-/Kleinschreibung). Ein Benutzername darf
+ * deshalb kein „@“ enthalten (siehe `usernameProblem`).
+ */
+function accountRowByLogin(identifier: string): AccountRow | undefined {
+  const value = identifier.trim();
+  if (value.includes("@")) {
+    return db()
+      .prepare(`SELECT ${ACCOUNT_COLUMNS} FROM account WHERE email = ?`)
+      .get(normalizeEmail(value)) as AccountRow | undefined;
+  }
   return db()
-    .prepare(
-      "SELECT id, email, password_hash, created_at, maps_preference, language, role, disabled_at FROM account WHERE email = ?",
-    )
-    .get(normalizeEmail(email)) as AccountRow | undefined;
+    .prepare(`SELECT ${ACCOUNT_COLUMNS} FROM account WHERE username = ? COLLATE NOCASE`)
+    .get(value) as AccountRow | undefined;
 }
 
 function signedIn(row: AccountRow): Account | null {
@@ -268,7 +349,7 @@ export function accountForSession(token: string | undefined): Account | null {
 
   const row = db()
     .prepare(
-      `SELECT a.id, a.email, a.password_hash, a.created_at, a.maps_preference, a.language, a.role, a.disabled_at, s.expires_at
+      `SELECT a.id, a.email, a.password_hash, a.created_at, a.maps_preference, a.language, a.role, a.disabled_at, a.username, a.must_change_password, s.expires_at
          FROM session s JOIN account a ON a.id = s.account_id
         WHERE s.token_hash = ?`,
     )
@@ -371,7 +452,7 @@ export function changePassword(
   handle.exec("BEGIN");
   try {
     handle
-      .prepare("UPDATE account SET password_hash = ? WHERE id = ?")
+      .prepare("UPDATE account SET password_hash = ?, must_change_password = 0 WHERE id = ?")
       .run(hashPassword(newPassword), accountId);
     handle
       .prepare("DELETE FROM session WHERE account_id = ? AND token_hash <> ?")

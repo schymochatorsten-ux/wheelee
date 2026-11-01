@@ -114,7 +114,7 @@ export function resetPassword(token: string, newPassword: string): boolean {
       return false;
     }
     handle
-      .prepare("UPDATE account SET password_hash = ? WHERE id = ?")
+      .prepare("UPDATE account SET password_hash = ?, must_change_password = 0 WHERE id = ?")
       .run(hashPassword(newPassword), claimed.accountId);
     handle.prepare("DELETE FROM session WHERE account_id = ?").run(claimed.accountId);
     voidOpenTokens(claimed.accountId);

@@ -249,6 +249,9 @@ export const de = {
   "account.login": "Anmelden",
   "account.register": "Konto anlegen",
   "account.email": "E-Mail-Adresse",
+  "account.emailOrName": "E-Mail-Adresse oder Benutzername",
+  "account.mustChange":
+    "Dein Passwort ist ein Startpasswort. Bitte vergib jetzt ein eigenes; bis dahin sind keine Verwaltungsrechte freigeschaltet.",
   "account.password": "Passwort",
   "account.passwordHelp":
     "Mindestens {min} Zeichen. Länge zählt mehr als Sonderzeichen – ein Satz, den du dir merken kannst, ist besser als {example}.",

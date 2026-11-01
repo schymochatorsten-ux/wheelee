@@ -123,6 +123,8 @@ export function redeemInvitation(token: string, password: string): Redeemed {
       language: null,
       role,
       disabledAt: null,
+      username: null,
+      mustChangePassword: false,
     };
 
     try {

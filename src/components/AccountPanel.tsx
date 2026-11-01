@@ -46,10 +46,11 @@ type Mode = "anmelden" | "registrieren";
  * Passwort ändern (ToDo 10.7). Der Server beendet dabei alle übrigen
  * Sitzungen; diese hier bleibt.
  */
-function PasswordChange() {
+function PasswordChange({ forced = false }: { forced?: boolean }) {
   const t = useT();
   const tr = useRich();
-  const [open, setOpen] = useState(false);
+  // Bei einem Startpasswort (ToDo 18.7) ist das Formular von Anfang an offen und nicht zu schließen.
+  const [open, setOpen] = useState(forced);
   const [oldPassword, setOldPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [busy, setBusy] = useState(false);
@@ -82,6 +83,9 @@ function PasswordChange() {
       setNewPassword("");
       setOpen(false);
       setDone(true);
+      // Nach dem Pflichtwechsel hat der Server die Verwaltungsrechte freigegeben; die
+      // Seite neu laden, damit sie überall ankommen.
+      if (forced) window.location.reload();
     } catch {
       setError(t("account.offline"));
     } finally {
@@ -530,7 +534,9 @@ export function AccountPanel({ user, onUserChange, onShowSpot, position }: Accou
     event.preventDefault();
     if (busy) return;
 
-    if (!looksLikeEmail(email)) {
+    // Beim Anmelden darf es auch ein Benutzername sein (ToDo 18.7): Nur was ein „@“
+    // enthält, wird als Adresse geprüft.
+    if (mode === "registrieren" || email.includes("@") ? !looksLikeEmail(email) : email.trim() === "") {
       setError(t("account.emailInvalid"));
       emailRef.current?.focus();
       return;
@@ -565,6 +571,7 @@ export function AccountPanel({ user, onUserChange, onShowSpot, position }: Accou
         // (ToDo 11.3a); ohne sie gilt weiter, was im Browser steht.
         mapsPreference: data.user.mapsPreference ?? null,
         language: data.user.language ?? null,
+        mustChangePassword: data.user.mustChangePassword === true,
       });
     } catch {
       setError(t("account.offline"));
@@ -584,6 +591,26 @@ export function AccountPanel({ user, onUserChange, onShowSpot, position }: Accou
       setBusy(false);
     }
   };
+
+  if (user?.mustChangePassword) {
+    // Startpasswort: erst ein eigenes Passwort, bis dahin nichts anderes (ToDo 18.7).
+    return (
+      <div className="space-y-3">
+        <p role="alert" className="text-sm font-medium text-amber-900 dark:text-amber-200">
+          {t("account.mustChange")}
+        </p>
+        <PasswordChange forced />
+        <button
+          type="button"
+          onClick={logout}
+          disabled={busy}
+          className="min-h-11 rounded-lg border border-neutral-300 px-3 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none disabled:opacity-60 dark:border-neutral-700"
+        >
+          {busy ? "…" : t("account.logout")}
+        </button>
+      </div>
+    );
+  }
 
   if (user) {
     return (
@@ -657,14 +684,16 @@ export function AccountPanel({ user, onUserChange, onShowSpot, position }: Accou
 
       <div>
         <label htmlFor="konto-email" className="text-sm font-medium">
-          {t("account.email")}
+          {mode === "anmelden" ? t("account.emailOrName") : t("account.email")}
         </label>
         <input
           id="konto-email"
           ref={emailRef}
-          type="email"
-          inputMode="email"
-          autoComplete="email"
+          // Beim Anmelden Text statt „email“: Ein Benutzername ohne „@“ würde vom Browser sonst abgewiesen.
+          type={mode === "anmelden" ? "text" : "email"}
+          inputMode={mode === "anmelden" ? "text" : "email"}
+          autoComplete={mode === "anmelden" ? "username" : "email"}
+          autoCapitalize="none"
           required
           value={email}
           onChange={(event) => setEmail(event.target.value)}

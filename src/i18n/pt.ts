@@ -253,6 +253,9 @@ export const pt: Messages = {
   "account.login": "Iniciar sessão",
   "account.register": "Criar conta",
   "account.email": "Endereço de e-mail",
+  "account.emailOrName": "Endereço de e-mail ou nome de utilizador",
+  "account.mustChange":
+    "A sua palavra-passe é provisória. Defina agora uma própria; até lá, os direitos de administração ficam desativados.",
   "account.password": "Palavra-passe",
   "account.passwordHelp":
     "Pelo menos {min} caracteres. O comprimento conta mais do que os caracteres especiais – uma frase que consiga memorizar é melhor do que {example}.",

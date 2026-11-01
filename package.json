@@ -45,6 +45,7 @@
     "sources:amtlich": "tsx scripts/import/find-official.mts",
     "import:regional": "tsx scripts/import/regional.mts",
     "data:update": "tsx scripts/import/auto-update.mts",
+    "admin:create": "tsx scripts/create-admin.mts",
     "db:backup": "tsx scripts/backup-db.mts"
   },
   "dependencies": {

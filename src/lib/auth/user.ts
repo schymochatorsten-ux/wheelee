@@ -24,6 +24,8 @@ export interface SessionUser {
    * wurde. Dann gilt das Cookie, sonst die Browsersprache.
    */
   language: Locale | null;
+  /** Startpasswort: Bis zur Änderung gibt es keine Verwaltungsrechte (ToDo 18.7). */
+  mustChangePassword: boolean;
 }
 
 /**
@@ -33,11 +35,15 @@ export interface SessionUser {
  * gebraucht, und was nicht ausgeliefert wird, kann auch nicht aus Versehen in
  * einer Anfrage landen.
  */
-export type PublicUser = Pick<SessionUser, "email" | "isAdmin" | "mapsPreference" | "language">;
+export type PublicUser = Pick<
+  SessionUser,
+  "email" | "isAdmin" | "mapsPreference" | "language" | "mustChangePassword"
+>;
 
 export const publicUser = (user: SessionUser): PublicUser => ({
   email: user.email,
   isAdmin: user.isAdmin,
   mapsPreference: user.mapsPreference,
   language: user.language,
+  mustChangePassword: user.mustChangePassword,
 });

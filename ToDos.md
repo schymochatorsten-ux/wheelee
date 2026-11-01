@@ -65,7 +65,7 @@ maschinelle Mehrfachprüfung.
 
 ## 10. Sicherheit und Recht
 
-- [!] 10.20 **Admin-Konto auf dem NAS prüfen und die neue Reihenfolge einhalten** (zu 10.19, [Erledigt.md](Erledigt.md)). **Braucht Torsten:** Nach dem Einspielen den Container neu starten und prüfen, dass das eigene Konto `role = 'admin'` trägt (`docker exec wheelee node -e "const {DatabaseSync}=require('node:sqlite');console.log(new DatabaseSync(process.env.WHEELEE_DB_PATH).prepare('SELECT email,role FROM account').all())"`). Stehen Adressen in `ADMIN_EMAILS`, zu denen es *kein eigenes* Konto gibt, die Adresse entfernen.
+- [!] 10.20 **Admin-Konto auf dem NAS anlegen/prüfen und die neue Reihenfolge einhalten** (zu 10.19 und 18.7, [Erledigt.md](Erledigt.md)). **Braucht Torsten und Niklas:** Das Konto „Torsten“ mit Startpasswort anlegen (`npm run admin:create`, Befehle in [deploy/Datenlauf.md](deploy/Datenlauf.md), „Ersten Admin anlegen“; dafür braucht es Torstens E-Mail-Adresse), sofort anmelden und das Passwort ändern. Außerdem: Nach dem Einspielen den Container neu starten und prüfen, dass das eigene Konto `role = 'admin'` trägt (`docker exec wheelee node -e "const {DatabaseSync}=require('node:sqlite');console.log(new DatabaseSync(process.env.WHEELEE_DB_PATH).prepare('SELECT email,role FROM account').all())"`). Stehen Adressen in `ADMIN_EMAILS`, zu denen es *kein eigenes* Konto gibt, die Adresse entfernen.
 
 ## 19. Betrieb und Pflege
 
