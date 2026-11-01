@@ -62,7 +62,7 @@ export function DataDisclaimer({ importedAt = null, variant = "kurz" }: DataDisc
     <section
       aria-labelledby="disclaimer-heading"
       lang={locale}
-      className="rounded-xl border border-amber-300 bg-amber-50 p-3 text-sm text-amber-900 dark:border-amber-900 dark:bg-amber-950 dark:text-amber-100"
+      className="rounded-2xl border border-l-4 border-blue-300/60 border-l-amber-400 bg-blue-50/80 p-4 text-sm text-neutral-900 dark:border-blue-700/50 dark:border-l-amber-400 dark:bg-blue-950/50 dark:text-neutral-100"
     >
       <h2 id="disclaimer-heading" className="font-semibold">
         {t("disclaimer.heading")}

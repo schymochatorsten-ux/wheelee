@@ -126,7 +126,7 @@ export function SettingsPanel({
     <div className="mx-auto max-w-2xl space-y-4">
       <DataDisclaimer variant="lang" />
 
-      <section aria-labelledby="darstellung-heading" className="rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm backdrop-blur-sm dark:border-neutral-800 dark:bg-neutral-900/50">
+      <section aria-labelledby="darstellung-heading" className="rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/50">
         <h2 id="darstellung-heading" className="text-base font-semibold">
           {t("settings.appearance")}
         </h2>
@@ -138,7 +138,7 @@ export function SettingsPanel({
         </div>
       </section>
 
-      <section aria-labelledby="sprache-heading" className="rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm backdrop-blur-sm dark:border-neutral-800 dark:bg-neutral-900/50">
+      <section aria-labelledby="sprache-heading" className="rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/50">
         <h2 id="sprache-heading" className="text-base font-semibold">
           {t("settings.language")}
         </h2>
@@ -165,7 +165,7 @@ export function SettingsPanel({
         )}
       </section>
 
-      <section aria-labelledby="karten-app-heading" className="rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm backdrop-blur-sm dark:border-neutral-800 dark:bg-neutral-900/50">
+      <section aria-labelledby="karten-app-heading" className="rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/50">
         <h2 id="karten-app-heading" className="text-base font-semibold">
           {t("settings.mapsApp")}
         </h2>
@@ -207,7 +207,7 @@ export function SettingsPanel({
 
       <OfflineCities cities={cities} />
 
-      <section aria-labelledby="feedback-heading" className="rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm backdrop-blur-sm dark:border-neutral-800 dark:bg-neutral-900/50">
+      <section aria-labelledby="feedback-heading" className="rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/50">
         <h2 id="feedback-heading" className="text-base font-semibold">
           {t("settings.feedback")}
         </h2>
@@ -223,7 +223,7 @@ export function SettingsPanel({
         Anmeldung niemanden, der nur einen Parkplatz sucht (ToDo 11.2 –
         „Anmeldung so spät wie möglich verlangen").
       */}
-      <section aria-labelledby="konto-heading" className="rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm backdrop-blur-sm dark:border-neutral-800 dark:bg-neutral-900/50">
+      <section aria-labelledby="konto-heading" className="rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/50">
         <h2 id="konto-heading" className="text-base font-semibold">
           {t("settings.account")}
         </h2>

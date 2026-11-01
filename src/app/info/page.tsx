@@ -16,7 +16,7 @@ import { getLocale } from "@/i18n/server";
 
 /** Karte im Stil der Einstellungen (dasselbe Glas wie `SettingsPanel`). */
 const CARD =
-  "rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm backdrop-blur-sm dark:border-neutral-800 dark:bg-neutral-900/50";
+  "rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/50";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = translator(await getLocale());
@@ -60,7 +60,7 @@ export default async function Info() {
             <p className="mt-1">{t("info.data.text")}</p>
           </section>
 
-          <section className="rounded-2xl border border-blue-300/60 bg-blue-50/80 p-4 backdrop-blur-sm dark:border-blue-700/60 dark:bg-blue-950/60">
+          <section className="rounded-2xl border border-blue-300/60 bg-blue-50/80 p-4 dark:border-blue-700/60 dark:bg-blue-950/60">
             <h2 className="text-base font-semibold">{t("info.help.title")}</h2>
             <p className="mt-1">{t("info.help.text")}</p>
           </section>
