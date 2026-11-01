@@ -76,7 +76,7 @@ einschaltest** – sie wurden nicht auf dem NAS ausprobiert. Beim Einrichten
 
 - `wheelee-sicherung` – täglich 03:30, `VACUUM INTO` im Container, die letzten
   14 Sicherungen bleiben (`WHEELEE_SICHERUNGEN` ändert die Zahl).
-- `wheelee-aktualitaet` – der **monatliche Datenlauf** (Quellen prüfen, geänderte
+- `wheelee-aktualitaet` – der **tägliche Datenlauf** (Quellen prüfen, geänderte
   amtliche Städte neu importieren, committen, pushen). Arbeitet in einem eigenen
   Klon und braucht einen **Schreibschlüssel** für das Repository. Einrichtung
   Schritt für Schritt, Ressourcen und Fehlerbilder: **[Datenlauf.md](Datenlauf.md)**.

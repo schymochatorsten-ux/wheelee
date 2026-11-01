@@ -158,7 +158,7 @@ export function dedupeSpots(spots: readonly ParkingSpot[]): DedupeResult {
 async function main() {
   const dryRun = process.argv.includes("--dry");
   // Mit Städtenamen (`dedupe.mts hamburg koeln`) nur diese bereinigen; der
-  // automatische Monatslauf fasst so keine fremden Seed-Dateien an.
+  // automatische Datenlauf fasst so keine fremden Seed-Dateien an.
   const only = process.argv.slice(2).filter((argument) => !argument.startsWith("--"));
   const dataDir = path.join(projectRoot, "data");
   const files = (await fs.readdir(dataDir))

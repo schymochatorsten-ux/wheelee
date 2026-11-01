@@ -782,12 +782,12 @@ npm run import:index
 | ⬜ | Windeck | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bad Harzburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Alzey | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Lebach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Lebach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Wenden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Sarstedt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Sulzbach-Rosenberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Gröbenzell | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Weil der Stadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Weil der Stadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Schmalkalden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Heusenstamm | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Kleinmachnow | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -795,22 +795,22 @@ npm run import:index
 | ⬜ | Neuenhagen bei Berlin | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Eitorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bad Dürkheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Schönefeld | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
-| ⬜ | Haldensleben | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Schönefeld | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
+| ⬜ | Haldensleben | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Kolbermoor | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bad Driburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Gilching | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Wittlich | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Schneverdingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Weilerswist | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Weilerswist | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Blankenburg (Harz) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Hemmingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Prenzlau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Holzminden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Haiger | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Haiger | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Aue-Bad Schlema | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Oschersleben (Bode) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
-| ⬜ | Schwalmtal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Oschersleben (Bode) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
+| ⬜ | Schwalmtal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Annaberg-Buchholz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Hohe Börde | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Eschwege | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -822,18 +822,18 @@ npm run import:index
 | ⬜ | Sachsenheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bergneustadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Marktoberdorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Swisttal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Swisttal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Hessisch Oldendorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Renningen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
-| ⬜ | Sömmerda | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
-| ⬜ | Bad Aibling | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Renningen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
+| ⬜ | Sömmerda | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
+| ⬜ | Bad Aibling | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Illertissen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Heusweiler | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Heusweiler | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Hochheim am Main | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Schwalmstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bad Segeberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Gerlingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
-| ⬜ | Wörth am Rhein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Gerlingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
+| ⬜ | Wörth am Rhein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Südbrookmerland | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Püttlingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Weißenburg i.Bay. | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -858,21 +858,21 @@ npm run import:index
 | ⬜ | Alzenau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Wadgassen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Alfeld (Leine) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Bobingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Bobingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Parchim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bad Saulgau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Schrobenhausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bexbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bad Säckingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Bönen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Bönen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Babenhausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Pohlheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Vellmar | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Garching b.München | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Garching b.München | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Diepholz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Oberasbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Stockach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Frankenberg (Eder) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Frankenberg (Eder) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Freilassing | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Remagen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Holzwickede | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -883,7 +883,7 @@ npm run import:index
 | ⬜ | Gescher | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bad Wildungen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Freudenberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Horn-Bad Meinberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Horn-Bad Meinberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Auerbach/Vogtl. | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Eutin | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bad Münder am Deister | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -901,7 +901,7 @@ npm run import:index
 | ⬜ | Finnentrop | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Schwarzenbek | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Schmelz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Hünfeld | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Hünfeld | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bad Wörishofen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Kamenz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Künzell | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -912,10 +912,10 @@ npm run import:index
 | ⬜ | Thale | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Brackenheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Wurster Nordseeküste | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Bruckmühl | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Bruckmühl | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bad Langensalza | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Heidenau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Königstein im Taunus | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Königstein im Taunus | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Gunzenhausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Eppelborn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Kelsterbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -933,7 +933,7 @@ npm run import:index
 | ⬜ | Breisach am Rhein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Wardenburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Straelen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Wadern | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Wadern | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Kierspe | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Wendelstein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Herzebrock-Clarholz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -956,8 +956,8 @@ npm run import:index
 | ⬜ | Brüggen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Rahden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Markranstädt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Brakel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
-| ⬜ | Walldorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Brakel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
+| ⬜ | Walldorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Marienberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Stahnsdorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bad Arolsen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -971,7 +971,7 @@ npm run import:index
 | ⬜ | Kernen im Remstal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Rüdersdorf bei Berlin | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Großostheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Ascheberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Ascheberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Schiffweiler | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Dieburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Guben | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -982,7 +982,7 @@ npm run import:index
 | ⬜ | Usingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Zeulenroda-Triebes | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Eppelheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Stadtbergen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Stadtbergen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Großenkneten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Templin | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bitburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -991,11 +991,11 @@ npm run import:index
 | ⬜ | Freiberg am Neckar | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Finsterwalde | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Blomberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Altdorf b.Nürnberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Altdorf b.Nürnberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Grenzach-Wyhlen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Schwarzenberg/Erzgeb. | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Marbach am Neckar | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Baiersbronn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Baiersbronn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Schwalbach am Taunus | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Beckingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bad Bramstedt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -1011,13 +1011,13 @@ npm run import:index
 | ⬜ | Raunheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Füssen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Schwabmünchen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Langenau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Langenau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Mainburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Weener | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Schriesheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Brake (Unterweser) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Mühlenbecker Land | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Mering | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Mering | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Garrel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Isny im Allgäu | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Witzenhausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -1057,13 +1057,13 @@ npm run import:index
 | ⬜ | Bissendorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Kraichtal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Langelsheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Schiffdorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Schiffdorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Tornesch | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Wilsdruff | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Lengede | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Burglengenfeld | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Much | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Gründau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Gründau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Sassenberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Burbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Murrhardt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -1078,23 +1078,23 @@ npm run import:index
 | ⬜ | Langenselbold | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Hofgeismar | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Ahrensfelde | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Grünstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Grünstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Hilchenbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Gernsbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Immenstadt i.Allgäu | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Saterland | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Saterland | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Niedernhausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Neu-Anspach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Tostedt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Tostedt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Remshalden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Neubiberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Brühl | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Löningen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Uhingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Markdorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Markdorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Riegelsberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Lorsch | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Eggenfelden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Eggenfelden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bad Camberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Ottweiler | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Wennigsen (Deister) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -1109,30 +1109,30 @@ npm run import:index
 | ⬜ | Sylt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Freigericht | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Erbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Markgröningen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
-| ⬜ | Leuna | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Markgröningen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
+| ⬜ | Leuna | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Sandersdorf-Brehna | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Schwentinental | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Rommerskirchen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Bovenden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Bovenden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Lauchhammer | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Rosengarten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Großefehn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Lübben (Spreewald) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Quakenbrück | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Quakenbrück | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Melsungen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | St. Leon-Rot | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Maisach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Maisach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Zeven | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Mühltal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Grafing b.München | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Grafing b.München | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Erbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Dippoldiswalde | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Neuenkirchen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Clausthal-Zellerfeld | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Clausthal-Zellerfeld | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Eichstätt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Beelitz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
-| ⬜ | Lohfelden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Beelitz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
+| ⬜ | Lohfelden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Haßfurt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Friesenheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Mittweida | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -1144,7 +1144,7 @@ npm run import:index
 | ⬜ | Obersulm | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Philippsburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Meckenbeuren | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Wanzleben-Börde | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Wanzleben-Börde | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Ettenheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Borchen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Denzlingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -1194,7 +1194,7 @@ npm run import:index
 | ⬜ | Hagen am Teutoburger Wald | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Weinsberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Kalletal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Fehmarn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Fehmarn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Brieselang | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Kerken | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Ubstadt-Weiher | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -1221,13 +1221,13 @@ npm run import:index
 | ⬜ | Manching | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Teutschenthal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bad Salzdetfurth | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Oebisfelde-Weferlingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Oebisfelde-Weferlingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Weilburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bergen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bischofsheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Biedenkopf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Wietmarschen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Bebra | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Bebra | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Rotenburg a.d.Fulda | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Gärtringen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Jüterbog | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -1241,13 +1241,13 @@ npm run import:index
 | ⬜ | Herzberg am Harz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bad Fallingbostel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Hettstedt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Weeze | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Weeze | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Altenstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Pfarrkirchen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Hungen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Fuldatal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bad Urach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Wächtersbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Wächtersbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Velten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Blaubeuren | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bretzfeld | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -1258,7 +1258,7 @@ npm run import:index
 | ⬜ | Velen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Beverungen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Mettlach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Möckern | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Möckern | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Wolfhagen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Schongau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Feuchtwangen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -1269,12 +1269,12 @@ npm run import:index
 | ⬜ | Emstek | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Linkenheim-Hochstetten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Gaimersheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Rödental | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Rödental | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Graben-Neudorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bad Windsheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Preußisch Oldendorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Hirschaid | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Issum | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Issum | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Laichingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bad Wünnenberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Gladenbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -1286,7 +1286,7 @@ npm run import:index
 | ⬜ | Wasserburg a.Inn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Hersbruck | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Hessisch Lichtenau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Wolmirstedt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Wolmirstedt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Meitingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Tamm | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | St. Georgen im Schwarzwald | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -1300,7 +1300,7 @@ npm run import:index
 | ⬜ | Besigheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Dinkelsbühl | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Salem | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Rosdorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Rosdorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Vilsbiburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Kronshagen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Wernau (Neckar) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -1308,7 +1308,7 @@ npm run import:index
 | ⬜ | Lauffen am Neckar | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Gundelfingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Glienicke/Nordbahn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Zella-Mehlis | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Zella-Mehlis | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Oberkrämer | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Geeste | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Apen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -1348,13 +1348,13 @@ npm run import:index
 | ⬜ | Scharbeutz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Jork | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Oberderdingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Bad Nenndorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Bad Nenndorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Limburgerhof | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Schwaigern | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Kissing | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Kissing | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Lauenburg/Elbe | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Mettingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Erkner | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Erkner | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Leingarten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Wickede (Ruhr) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Hildburghausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -1370,8 +1370,8 @@ npm run import:index
 | ⬜ | Gerstetten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Eichenau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Muldestausee | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Bad Schwalbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
-| ⬜ | Ammerbuch | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Bad Schwalbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
+| ⬜ | Ammerbuch | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bad Dürrenberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Lauingen (Donau) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Eningen unter Achalm | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -1394,7 +1394,7 @@ npm run import:index
 | ⬜ | Trostberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Schwieberdingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Drochtersen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Engen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Engen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Kranenburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Altdorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Möhnesee | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -1406,12 +1406,12 @@ npm run import:index
 | ⬜ | Ochsenfurt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Mömbris | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Südheide | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Kall | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Kall | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Grünwald | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Riedlingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Raubling | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
-| ⬜ | Mülheim-Kärlich | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
-| ⬜ | Wittingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Raubling | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
+| ⬜ | Mülheim-Kärlich | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
+| ⬜ | Wittingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Coswig (Anhalt) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Stollberg/Erzgeb. | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bannewitz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -1420,15 +1420,15 @@ npm run import:index
 | ⬜ | Herrsching a.Ammersee | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Herxheim bei Landau/Pfalz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Denkendorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Gengenbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Gengenbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Schöningen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Rodenbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Werther (Westf.) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Boizenburg/Elbe | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Braunfels | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Höhenkirchen-Siegertsbrunn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Wustermark | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
-| ⬜ | Regen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Wustermark | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
+| ⬜ | Regen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Planegg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Burgkirchen a.d.Alz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Wolgast | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -1451,7 +1451,7 @@ npm run import:index
 | ⬜ | Steinbach (Taunus) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Mandelbachtal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Bad Staffelstein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Adendorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Adendorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Grafschaft | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Schkopau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Fürth | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -1464,7 +1464,7 @@ npm run import:index
 | ⬜ | Kenzingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Feldkirchen-Westerham | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Schwielowsee | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Wildau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Wildau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Hagen im Bremischen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Diedorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Karlsdorf-Neuthard | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -1502,7 +1502,7 @@ npm run import:index
 | ⬜ | Klipphausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Werlte | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Hünstetten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Appenweier | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Appenweier | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Betzdorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Braunsbedra | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Schauenburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -1513,7 +1513,7 @@ npm run import:index
 | ⬜ | Markt Indersdorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Friedeburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Altenberge | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Kirchzarten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Kirchzarten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Simbach a.Inn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Mörlenbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Steinfeld (Oldenburg) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -1523,9 +1523,9 @@ npm run import:index
 | ⬜ | Tangermünde | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Königsbach-Stein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Wendeburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Kirkel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Kirkel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Steinau an der Straße | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Flöha | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Flöha | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Niebüll | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Grevesmühlen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Kirchlinteln | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
@@ -1534,9 +1534,9 @@ npm run import:index
 | ⬜ | Bestwig | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Lenggries | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Willstätt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Tangerhütte | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Tangerhütte | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Merchweiler | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
-| ⬜ | Gommern | kein Änderungsdatum | OpenStreetMap, zuletzt vor 2 Tagen geholt |
+| ⬜ | Gommern | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Hilter am Teutoburger Wald | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Rödinghausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |
 | ⬜ | Oelsnitz/Vogtl. | kein Änderungsdatum | OpenStreetMap, zuletzt vor 3 Tagen geholt |

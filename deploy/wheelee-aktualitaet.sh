@@ -1,7 +1,10 @@
 #!/bin/sh
-# Monatlicher Datenlauf (ToDo 19.2, 19.10): prüfen, ob amtliche Quellen sich
-# geändert haben, geänderte Städte neu importieren, das Ergebnis committen und
-# nach origin/main pushen. Der Push löst den normalen Webhook-Deploy aus.
+# Täglicher Datenlauf (ToDo 19.2, 19.10): prüfen, ob amtliche Quellen sich
+# geändert haben, höchstens WHEELEE_MAX_STAEDTE geänderte Städte neu
+# importieren, das Ergebnis committen und nach origin/main pushen. Der Push löst
+# den normalen Webhook-Deploy aus – aber nur, wenn sich Standortdaten wirklich
+# geändert haben; an den meisten Tagen endet der Lauf nach einer halben Minute
+# ohne Commit.
 #
 # **Er arbeitet nicht in /opt/wheelee, sondern in einem eigenen Klon** unter
 # $WHEELEE_ARBEIT/repo. Zwei Gründe:
@@ -20,14 +23,15 @@
 #   WHEELEE_AUTO_PUSH=1        pushen; sonst bleibt der Stand auf Zweig daten-update
 #   WHEELEE_TROCKEN=1          nur zeigen, was fällig wäre; ändert und pusht nichts
 #   WHEELEE_VALIDIERUNG_MONATE Monate (zweistellig, durch Leerzeichen), in denen
-#                              zusätzlich `validate` läuft; Vorgabe "01 07"
-#   WHEELEE_MAX_DATEIEN        Obergrenze geänderter Seed-Dateien; Vorgabe 40
+#                              einmal `validate` läuft; Vorgabe "01 07"
+#   WHEELEE_MAX_STAEDTE        Städte je Lauf; Vorgabe 5
+#   WHEELEE_MAX_DATEIEN        Obergrenze geänderter Seed-Dateien; Vorgabe 15
 set -eu
 
 ARBEIT="${WHEELEE_ARBEIT:-/var/lib/wheelee-update}"
 QUELLE="${WHEELEE_ORDNER:-/opt/wheelee}"
 CLONE="$ARBEIT/repo"
-MAX_DATEIEN="${WHEELEE_MAX_DATEIEN:-40}"
+MAX_DATEIEN="${WHEELEE_MAX_DATEIEN:-15}"
 
 mkdir -p "$ARBEIT/state" "$ARBEIT/npm-cache"
 
@@ -45,9 +49,15 @@ git -C "$CLONE" fetch --quiet origin main
 git -C "$CLONE" checkout --quiet -B main origin/main
 git -C "$CLONE" reset --quiet --hard origin/main
 
+# `validate` einmal in jedem der genannten Monate, beim ersten Lauf darin. Der
+# Lauf ist täglich; ohne Merkzettel liefe die Prüfung im Januar und Juli
+# 62 Tage hintereinander.
 monat="$(date +%m)"
+STEMPEL="validate-$(date +%Y-%m)"
 VALIDIEREN=0
-case " ${WHEELEE_VALIDIERUNG_MONATE:-01 07} " in *" $monat "*) VALIDIEREN=1 ;; esac
+case " ${WHEELEE_VALIDIERUNG_MONATE:-01 07} " in
+  *" $monat "*) [ -e "$ARBEIT/state/$STEMPEL" ] || VALIDIEREN=1 ;;
+esac
 
 echo "=== $(date --iso-8601=seconds) Datenlauf beginnt (validate: $VALIDIEREN) ==="
 
@@ -56,7 +66,8 @@ docker run --rm --name wheelee-datenlauf \
   --memory=1g --memory-swap=1g --pids-limit=256 \
   -e NODE_OPTIONS=--max-old-space-size=768 \
   -e WHEELEE_STATE_DIR=/state \
-  -e TROCKEN="${WHEELEE_TROCKEN:-0}" -e VALIDIEREN="$VALIDIEREN" \
+  -e WHEELEE_MAX_STAEDTE="${WHEELEE_MAX_STAEDTE:-5}" \
+  -e TROCKEN="${WHEELEE_TROCKEN:-0}" -e VALIDIEREN="$VALIDIEREN" -e STEMPEL="$STEMPEL" \
   -v "$CLONE":/app -v "$ARBEIT/state":/state -v "$ARBEIT/npm-cache":/root/.npm \
   -w /app node:24-alpine sh deploy/wheelee-datenlauf-container.sh
 

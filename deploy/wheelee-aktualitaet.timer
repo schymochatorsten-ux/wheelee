@@ -1,11 +1,13 @@
 [Unit]
-Description=wheelee Datenlauf monatlich (ToDo 19.2, 19.10)
+Description=wheelee Datenlauf täglich (ToDo 19.2, 19.10)
 
 [Timer]
-OnCalendar=*-*-01 04:30:00
+# Nach der Sicherung (03:30), vor dem Morgen. Der Lauf ist an den meisten Tagen
+# nach einer halben Minute fertig (nur Prüfung, kein Import).
+OnCalendar=*-*-* 04:30:00
 Persistent=true
-# Overpass und die Portale gehören Freiwilligen (CLAUDE.md): nicht alle zur
-# selben Minute.
+# Overpass, Nominatim und die Portale gehören Freiwilligen oder Städten
+# (CLAUDE.md): nicht alle zur selben Minute.
 RandomizedDelaySec=1h
 
 [Install]

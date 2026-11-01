@@ -1,5 +1,5 @@
 #!/bin/sh
-# Der Teil des Monatslaufs, der im Wegwerf-Container läuft (ToDo 19.10).
+# Der Teil des täglichen Datenlaufs, der im Wegwerf-Container läuft (ToDo 19.10).
 # Aufgerufen von wheelee-aktualitaet.sh, nie direkt.
 #
 # Umgebung: TROCKEN=1 (nur zeigen, was fällig wäre), VALIDIEREN=1 (danach
@@ -10,7 +10,7 @@ set -eu
 # wieder dem Benutzer gehören, der den Klon verwaltet; sonst scheitert dessen
 # nächster `git reset --hard` an fremden Dateien. Auch bei einem Fehler.
 eigner="$(stat -c %u:%g /app/package.json)"
-trap 'chown -R "$eigner" /app/data /app/src/lib/parking 2>/dev/null || true' EXIT
+trap 'chown -R "$eigner" /app/data /app/src/lib/parking /state 2>/dev/null || true' EXIT
 
 # Abhängigkeiten nur installieren, wenn sich die Lock-Datei geändert hat. Die
 # node_modules bleiben im Klon liegen (sie sind ignoriert und überstehen
@@ -34,4 +34,6 @@ npm run data:update
 # Stadt ab; das genügt halbjährlich (Datenpflege.md, „Takt“).
 if [ "${VALIDIEREN:-0}" = "1" ]; then
   npm run validate
+  # Merkzettel erst nach Erfolg: Scheitert die Prüfung, versucht es der nächste Lauf wieder.
+  touch "/state/$STEMPEL"
 fi

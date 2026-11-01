@@ -1,5 +1,5 @@
 [Unit]
-Description=wheelee Datenlauf: Quellen prüfen, geänderte amtliche Städte neu importieren (ToDo 19.2, 19.10)
+Description=wheelee täglicher Datenlauf: Quellen prüfen, geänderte amtliche Städte neu importieren (ToDo 19.2, 19.10)
 After=docker.service network-online.target
 Requires=docker.service
 Wants=network-online.target
@@ -26,7 +26,8 @@ Environment=WHEELEE_AUTO_PUSH=1
 # Weitere Schalter (Voreinstellungen, nur bei Bedarf ändern):
 #   Environment=WHEELEE_VALIDIERUNG_MONATE=01 07
 #   Environment=WHEELEE_CPUS=1
-#   Environment=WHEELEE_MAX_DATEIEN=40
+#   Environment=WHEELEE_MAX_STAEDTE=5
+#   Environment=WHEELEE_MAX_DATEIEN=15
 
 # Der Lauf wartet auf Fremddienste (Nominatim: eine Anfrage je Sekunde,
 # Overpass mit Pausen). Der Erstlauf mit neun Städten dauerte rund eine Stunde.

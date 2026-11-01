@@ -139,7 +139,7 @@ npm run import:osm-state  # landesweiter OSM-Lauf statt einer Abfrage je Gemeind
 npm run check:slugs       # passen Register und Seed-Dateien zusammen?
 npm run report:abdeckung  # wie weit ist das Endziel?
 npm run sources:amtlich   # welche Gemeinde hat amtliche Daten, egal wie groß?
-npm run sources:check   # monatlich: hat sich an einer Quelle etwas geändert?
+npm run sources:check   # hat sich an einer Quelle etwas geändert? (nur Bericht)
 npm run data:update     # prüfen und geänderte amtliche Städte neu importieren (--dry: nur zeigen)
 npm run validate        # Datenprüfung, mit --offline ohne Netzabfragen
 npm run import:streets  # fehlende Straßennamen aus OpenStreetMap nachtragen

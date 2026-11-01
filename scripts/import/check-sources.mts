@@ -71,6 +71,8 @@ export type Verdict =
 export interface Result {
   slug: string;
   city: string;
+  /** Bezugsdatum der Prüfung (Import oder letztes Nachsehen); Grundlage für die Reihenfolge im Tageslauf. */
+  since: string | null;
   verdict: Verdict;
   detail: string;
   /** Soll diese Stadt neu importiert werden? */
@@ -181,9 +183,22 @@ async function checkCity(
   record: CityImportRecord,
   quellen: QuellenEintrag | undefined,
   seen: SeenFile,
+  lookedAt?: string,
 ): Promise<Result> {
-  const base = { slug: record.slug, city: record.city };
-  const importedAt = record.attemptedAt ? new Date(record.attemptedAt) : null;
+  // Bezugspunkt für „ist die Quelle jünger?“ und „wie alt ist der Import?“: der
+  // spätere von Importdatum und letztem Nachsehen. Hat der Tageslauf eine Quelle
+  // schon angesehen und als inhaltlich unverändert befunden, soll dieselbe
+  // Metadatenänderung nicht jeden Tag erneut als Anlass gelten.
+  const importedRaw = [record.attemptedAt, lookedAt]
+    .filter((value): value is string => !!value)
+    .sort()
+    .pop();
+  const importedAt = importedRaw ? new Date(importedRaw) : null;
+  const base = {
+    slug: record.slug,
+    city: record.city,
+    since: importedAt ? importedAt.toISOString() : null,
+  };
   const age = importedAt ? daysBetween(importedAt, new Date()) : null;
 
   const usesOsm = /OpenStreetMap/iu.test(record.usedSource ?? "");
@@ -432,7 +447,12 @@ function render(results: Result[]): string {
  * Alle (oder die genannten) Städte prüfen und `data/_aktualitaet.md` schreiben.
  * Getrennt von `main`, damit `auto-update.mts` das Ergebnis weiterverwenden kann.
  */
-export async function checkAll(wanted: string[] = []): Promise<Result[]> {
+export async function checkAll(
+  wanted: string[] = [],
+  lookedAt: Record<string, string> = {},
+  /** `false` für Probeläufe: gemerkte ETags und Bericht bleiben unberührt, sonst ginge ein ETag-Hinweis verloren. */
+  persist = true,
+): Promise<Result[]> {
   const status = await loadStatus();
   const quellen = await readJson<QuellenEintrag[]>(
     path.join(projectRoot, "data", "_quellen-status.json"),
@@ -441,7 +461,7 @@ export async function checkAll(wanted: string[] = []): Promise<Result[]> {
   const quellenBySlug = new Map(quellen.map((entry) => [entry.slug, entry]));
 
   // Die gemerkten ETags müssen die Läufe überleben. Auf dem NAS arbeitet der
-  // Monatslauf in einem frischen Klon, der bei jedem Lauf auf origin/main
+  // Datenlauf in einem frischen Klon, der bei jedem Lauf auf origin/main
   // zurückgesetzt wird – dort liegt die Datei deshalb im Zustandsverzeichnis.
   const seenPath = process.env.WHEELEE_STATE_DIR
     ? path.join(process.env.WHEELEE_STATE_DIR, "aktualitaet.json")
@@ -456,15 +476,18 @@ export async function checkAll(wanted: string[] = []): Promise<Result[]> {
 
   const results: Result[] = [];
   for (const record of records) {
-    const result = await checkCity(record, quellenBySlug.get(record.slug), seen);
+    const result = await checkCity(record, quellenBySlug.get(record.slug), seen, lookedAt[record.slug]);
     results.push(result);
     if (result.verdict !== "kein-datum") {
       console.log(`  ${SYMBOL[result.verdict]} ${result.city.padEnd(24)} ${result.detail}`);
     }
   }
 
-  await fs.writeFile(seenPath, `${JSON.stringify(seen, null, 2)}\n`, "utf8");
-  await fs.writeFile(path.join(projectRoot, "data", "_aktualitaet.md"), render(results), "utf8");
+  if (persist) {
+    await fs.mkdir(path.dirname(seenPath), { recursive: true });
+    await fs.writeFile(seenPath, `${JSON.stringify(seen, null, 2)}\n`, "utf8");
+    await fs.writeFile(path.join(projectRoot, "data", "_aktualitaet.md"), render(results), "utf8");
+  }
 
   return results;
 }

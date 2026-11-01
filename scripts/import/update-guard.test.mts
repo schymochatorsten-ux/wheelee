@@ -1,5 +1,34 @@
 import { describe, expect, it } from "vitest";
-import { judgeUpdate, sameSpots } from "./update-guard.mjs";
+import { judgeUpdate, pickDue, sameSpots } from "./update-guard.mjs";
+
+describe("pickDue", () => {
+  const now = new Date("2026-11-10T04:00:00Z");
+  const c = (slug: string, since: string | null) => ({ slug, since });
+
+  it("nimmt höchstens max Städte, die am längsten unbesehenen zuerst", () => {
+    const result = pickDue(
+      [c("a", "2026-10-05T00:00:00Z"), c("b", "2026-09-01T00:00:00Z"), c("c", null), c("d", "2026-10-30T00:00:00Z")],
+      [],
+      { tried: {} },
+      2,
+      now,
+    );
+    expect(result.run).toEqual(["c", "b"]);
+    expect(result.pending).toEqual(["a", "d"]);
+  });
+
+  it("holt Vorgemerktes nach und führt Doppelte nur einmal", () => {
+    const result = pickDue([c("a", "2026-10-05T00:00:00Z")], [c("a", "2026-10-05T00:00:00Z"), c("z", "2026-08-01T00:00:00Z")], { tried: {} }, 5, now);
+    expect(result.run).toEqual(["z", "a"]);
+  });
+
+  it("wartet nach einem verworfenen Import eine Woche", () => {
+    const state = { tried: { a: "2026-11-05T00:00:00Z", b: "2026-11-01T00:00:00Z" } };
+    const result = pickDue([c("a", null), c("b", null)], [], state, 5, now);
+    expect(result.run).toEqual(["b"]);
+    expect(result.pending).toEqual([]);
+  });
+});
 
 describe("sameSpots", () => {
   const a = { generatedAt: "2026-10-08", spots: [{ id: "x", lat: 1, lng: 2, label: "A" }] };

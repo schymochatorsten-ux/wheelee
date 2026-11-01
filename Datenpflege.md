@@ -282,8 +282,8 @@ vergleicht nur und schreibt `data/_aktualitaet.md` – er importiert nichts.
 
 | Was                                    | Wie oft                                       | Warum                                                                                         |
 | -------------------------------------- | --------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| Änderungsprüfung                       | **monatlich**                                 | kostet fast nichts, findet jede gemeldete Änderung                                            |
-| Neuimport einer Stadt                  | **bei gemeldeter Änderung**                   | nur dann gibt es wirklich etwas Neues                                                         |
+| Änderungsprüfung                       | **täglich** (NAS-Timer)                       | kostet 20 Sekunden, findet jede gemeldete Änderung binnen eines Tages                         |
+| Neuimport einer Stadt                  | **bei gemeldeter Änderung**, höchstens 5 je Tag | nur dann gibt es wirklich etwas Neues; gleiche Standorte → kein Commit                      |
 | Vollständiger Neuimport aller Städte   | **halbjährlich**                              | manche Portale pflegen ihr Änderungsdatum nicht – darauf allein darf man sich nicht verlassen |
 | OpenStreetMap-Städte                   | **vierteljährlich**                           | kein Änderungsdatum verfügbar, aber dort wird laufend kartiert                                |
 | Vollständige Validierung (Abschnitt 2) | **halbjährlich**, zusammen mit dem Vollimport | prüft die Daten, nicht nur ihr Alter                                                          |
@@ -296,7 +296,7 @@ npm run import:index
 npm run validate -- <stadt>
 ```
 
-Der monatliche Lauf liegt als systemd-Timer auf dem NAS bereit
+Der Lauf (seit 19.10 täglich statt monatlich) liegt als systemd-Timer auf dem NAS bereit
 (`deploy/wheelee-aktualitaet.*`, ToDo 19.2; Einrichtung in `deploy/README.md`).
 Seit 19.10 prüft er nicht nur, sondern importiert: `npm run data:update`
 (`scripts/import/auto-update.mts`) holt die **amtlichen** Städte neu, deren Quelle
