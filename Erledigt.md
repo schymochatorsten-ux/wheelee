@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-01):** **223 Einträge** auf oberster Ebene –
-davon 198, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-01):** **224 Einträge** auf oberster Ebene –
+davon 199, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 25, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -1640,6 +1640,15 @@ Torsten, 2026-10-30: „19 alle umsetzen, die ohne mich gehen.“ 13 bleibt gesp
   - **Offline:** `public/sw.js` behandelt `/api/cities` wie `/api/spots` (Netz zuerst, sonst die letzte Antwort); `VERSION` auf `v3` hochgezählt. Ohne Netz und ohne frühere Antwort zeigt die App nur die Standardstadt – die Parkplätze bleiben über die vorab geladenen Städte erreichbar.
   - **Bekannte Folge:** Bis die Antwort da ist, steht in der Liste nur die Standardstadt; der Stadtname eines Standorts fällt kurz auf den Kürzel (`slug`) zurück. Beim ersten Aufruf sind das die Standorte der Standardstadt, deren Name mitgeliefert wird.
   - **Tests:** `e2e/staedte.spec.ts` (Schnittstelle, HTML unter 150 KB und ohne OSM-Attributionen, Auswahl im Vorab-Download füllt sich). Dev-E2E 105 + 3, Produktions-E2E 110 grün.
+
+## 19. Ergänzung 4 (2026-11-01)
+
+- [x] 19.15 **„Zuletzt geprüft“ auf `/abdeckung`, und alle amtlichen Quellen werden wirklich verglichen** (Torsten, 2026-11-01: „warum nicht überall der Stand heute?“). **Befund, den ich vorher nicht gesehen hatte:** Der Datenlauf hat nur Städte angefasst, deren Quelle ein *Änderungsdatum* nennt und jünger war. Berlin, Gelsenkirchen und Bottrop nennen keines (Vergleich nur durch Neuholen, vorher erst nach 182 Tagen), **München** hat eine handgepflegte Quelle und lief als „kein Datum“ durch, und der **regionale Satz (TRK, zwölf Gemeinden)** läuft über `import:regional`, das der Lauf gar nicht kannte. Diese Städte wurden also nie aktualisiert, obwohl ich „alle prüfen“ gesagt hatte.
+  - **Jetzt:** Quellen ohne Datum und München werden monatlich neu geholt und verglichen (`NO_DATE_REIMPORT_DAYS = 30`), der TRK-Satz alle 30 Tage über `checkRegional` (mit derselben Notbremse und Gleichheitsprüfung). `npm run data:update -- --all` vergleicht alles sofort, ohne Obergrenze.
+  - **Zwei Spalten statt einer:** „Daten vom“ (letzte Änderung des Bestands) und „Zuletzt geprüft“ (letzter Vergleich mit der Quelle, auch ohne Änderung). Der Stand oben auf der Seite ist der jüngere von beiden. Die Prüfdaten stehen in `geprueft.json` **neben der Datenbank** (`/app/var/` im Container, `.data/` lokal), nicht im Repository: Ein Lauf ohne Änderung soll keinen Commit und keinen Neubau auslösen. Das NAS-Skript kopiert die Datei per `docker exec` ins Volume der App. Gelesen von `src/lib/checked.ts`; fehlt sie, steht „–“, nie ein erfundenes Datum.
+  - **„Geprüft“ heißt ein gelungener Vergleich:** Eine Quelle, die sich meldet, deren Dienst aber nichts liefert, zählt nicht (Köln, Heidelberg bleiben „–“). Der Vergleich der Standorte ist grob (Platz, Lage, Anzahl, Zeitbeschränkung, nach dem Entdoppeln); Straßennamen trägt `import:streets` nach und sind kein Unterschied, sonst wäre jede Stadt täglich „geändert“.
+  - **Funde beim Vollauf (2026-11-01):** Berlin 923 → 924 Standorte (echt); **Heidelberg**: die Quelle (CKAN) liefert nichts Brauchbares mehr, der Import wurde verworfen, der Bestand vom 2026-10-08 bleibt; Köln wie bisher (Geoportal der Stadt gestört). Beides steht in `ToDos.md` unter 2d.8a.
+  - **Nicht geprüft:** das Kopieren ins App-Volume auf dem NAS.
 
 ## 19. Ergänzung 3 (2026-11-01)
 

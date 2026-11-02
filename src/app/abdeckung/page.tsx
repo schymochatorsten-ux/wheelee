@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { LegalPage } from "@/components/LegalPage";
 import { confirmationSummary } from "@/lib/parking/confirmation";
+import { readChecked } from "@/lib/checked";
 import { getCities } from "@/lib/parking/spots";
 
 /**
@@ -30,7 +31,10 @@ export default function Abdeckung() {
   // „Stand“ ist der jüngste Import, nicht ein von Hand gepflegtes Datum: Es ändert sich
   // mit den Daten (ToDo 19.14). Eine Prüfung ohne Änderung erzeugt keinen neuen Stand –
   // siehe `deploy/Datenlauf.md`, sonst baute das NAS jeden Tag das Abbild neu.
-  const newest = cities.reduce((latest, city) => (city.importedAt > latest ? city.importedAt : latest), "2026-01-01");
+  const checked = readChecked();
+  const newestImport = cities.reduce((latest, city) => (city.importedAt > latest ? city.importedAt : latest), "2026-01-01");
+  // Der Stand der Seite ist der jüngere von letztem Import und letztem Lauf (ToDo 19.15).
+  const newest = [newestImport, checked.updatedAt?.slice(0, 10) ?? ""].sort().pop() ?? newestImport;
   // Die größten Städte insgesamt, gleich welcher Quelle – die Tabelle der amtlichen
   // Listen allein zeigt nicht, wo es die meisten Stellplätze gibt.
   const largest = [...cities].sort((a, b) => b.spaceCount - a.spaceCount).slice(0, 25);
@@ -61,7 +65,8 @@ export default function Abdeckung() {
               <th>Stadt</th>
               <th>Standorte</th>
               <th>Stellplätze</th>
-              <th>Stand</th>
+              <th>Daten vom</th>
+              <th>Zuletzt geprüft</th>
             </tr>
           </thead>
           <tbody>
@@ -71,10 +76,17 @@ export default function Abdeckung() {
                 <td>{number(city.spotCount)}</td>
                 <td>{number(city.spaceCount)}</td>
                 <td>{city.importedAt.slice(0, 10)}</td>
+                <td>{checked.cities[city.slug]?.slice(0, 10) ?? "–"}</td>
               </tr>
             ))}
           </tbody>
         </table>
+        <p className="mt-2 text-sm">
+          „Daten vom“ ist der Tag, an dem sich der Bestand zuletzt geändert hat; „Zuletzt geprüft“
+          der Tag des letzten Vergleichs mit der Quelle der Stadt, auch wenn sich nichts geändert hat.
+          Quellen ohne Änderungsdatum werden dafür monatlich neu geholt und verglichen. „–“ heißt:
+          noch nicht geprüft, oder die Quelle ist derzeit nicht erreichbar.
+        </p>
       </section>
 
       <section>

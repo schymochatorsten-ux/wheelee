@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T21:13:37.326Z",
+  "updatedAt": "2026-11-01T23:30:01.730Z",
   "records": [
     {
       "rank": 1,
@@ -10,11 +10,11 @@
       "ags": "11000000",
       "plan": "official",
       "usedSource": "amtlich (WFS)",
-      "usedUrl": "https://gdi.berlin.de/services/wfs/behindertenparkplaetze?request=GetFeature&service=WFS&version=2.0.0&typeNames=behindertenparkplaetze%3Abpark&outputFormat=application%2Fjson&srsName=EPSG%3A4326",
+      "usedUrl": "https://gdi.berlin.de/services/wfs/behindertenparkplaetze?service=WFS&version=2.0.0&request=GetFeature&typeNames=behindertenparkplaetze%3Abpark&outputFormat=application%2Fjson&srsName=EPSG%3A4326",
       "status": "fertig",
-      "locations": 923,
-      "spaces": 1560,
-      "attemptedAt": "2026-10-10T22:05:50.650Z",
+      "locations": 924,
+      "spaces": 1562,
+      "attemptedAt": "2026-11-01T23:17:29.741Z",
       "message": null
     },
     {
@@ -30,7 +30,7 @@
       "status": "fertig",
       "locations": 936,
       "spaces": 1310,
-      "attemptedAt": "2026-11-01T20:12:55.284Z",
+      "attemptedAt": "2026-11-01T23:29:57.682Z",
       "message": null
     },
     {
@@ -46,7 +46,7 @@
       "status": "fertig",
       "locations": 568,
       "spaces": 958,
-      "attemptedAt": "2026-10-29T20:58:41.471Z",
+      "attemptedAt": "2026-11-01T23:29:39.551Z",
       "message": null
     },
     {
@@ -94,7 +94,7 @@
       "status": "fertig",
       "locations": 340,
       "spaces": 340,
-      "attemptedAt": "2026-11-01T21:13:37.326Z",
+      "attemptedAt": "2026-11-01T23:30:01.730Z",
       "message": null
     },
     {
@@ -190,7 +190,7 @@
       "status": "fertig",
       "locations": 481,
       "spaces": 680,
-      "attemptedAt": "2026-11-01T20:12:58.018Z",
+      "attemptedAt": "2026-11-01T23:29:59.889Z",
       "message": null
     },
     {
@@ -510,7 +510,7 @@
       "status": "fertig",
       "locations": 330,
       "spaces": 334,
-      "attemptedAt": "2026-10-09T06:37:22.577Z",
+      "attemptedAt": "2026-11-01T23:17:27.777Z",
       "message": null
     },
     {

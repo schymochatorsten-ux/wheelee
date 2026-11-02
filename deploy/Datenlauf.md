@@ -27,7 +27,8 @@ ohne Neubau:
    zusätzlich `npm run validate` (Abgleich der amtlichen Städte mit
    OpenStreetMap). Ein Merkzettel `validate-JJJJ-MM` im Zustandsverzeichnis
    verhindert, dass die Prüfung dann 62 Tage hintereinander läuft.
-4. **Nur wenn sich Standortdaten wirklich geändert haben:** committen und nach
+4. Die Datei geprueft.json (wann jede Stadt zuletzt verglichen wurde, für /abdeckung) kopiert das Skript bei **jedem** Lauf per docker exec in das Volume der App; sie löst keinen Neubau aus.
+5. **Nur wenn sich Standortdaten wirklich geändert haben:** committen und nach
    `origin/main` pushen. Der Push löst den normalen Webhook-Deploy aus (Abbild
    neu bauen). Ändert sich nichts, gibt es weder Commit noch Neubau.
 

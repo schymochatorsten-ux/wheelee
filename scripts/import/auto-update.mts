@@ -144,19 +144,45 @@ async function main() {
 
   const state = await loadState();
   const results = await checkAll([], state.looked, !dry);
-  const eligible = results.filter((result) => OFFICIAL_VERDICTS.includes(result.verdict));
+  // Städte mit handgepflegter amtlicher Quelle (München) tragen kein GovData-Datum, laufen im
+  // Prüflauf als „kein Datum“ und kämen so nie dran. Sie zählen hier mit; fällig sind sie
+  // wie alle Quellen ohne Änderungsdatum nach 30 Tagen. Der regionale Satz (TRK) hat seinen
+  // eigenen Schritt (`checkRegional`).
+  const handOfficial = new Set(
+    (await loadStatus()).records
+      .filter((r) => /^amtlich/u.test(r.usedSource ?? "") && !/regional/u.test(r.usedSource ?? ""))
+      .map((r) => r.slug),
+  );
+  const NO_DATE_DAYS = 30;
+  const eligible = results
+    .filter(
+      (result) =>
+        OFFICIAL_VERDICTS.includes(result.verdict) ||
+        (result.verdict === "kein-datum" && handOfficial.has(result.slug)),
+    )
+    .map((result) =>
+      result.verdict === "kein-datum"
+        ? {
+            ...result,
+            reimport:
+              result.since === null ||
+              Date.now() - new Date(result.since).getTime() >= NO_DATE_DAYS * 86_400_000,
+          }
+        : result,
+    );
   const toCandidate = (result: { slug: string; since: string | null }) => ({
     slug: result.slug,
     since: result.since,
   });
 
   const checked = await loadChecked();
-  // Wo die Quelle ein Änderungsdatum nennt, ist die Prüfung mit der Abfrage geschehen.
+  // Nennt die Quelle ein Änderungsdatum und liegt es vor unserem Stand, ist die Prüfung mit
+  // der Abfrage geschehen. **„Geändert“ zählt erst nach einem erfolgreichen Vergleich** (unten):
+  // Eine Quelle, die sich gemeldet hat, deren Dienst aber nichts liefert (Köln), wäre sonst
+  // „heute geprüft“.
   if (!dry) {
     for (const result of results) {
-      if (result.verdict === "geaendert" || result.verdict === "unveraendert") {
-        checked.cities[result.slug] = new Date().toISOString();
-      }
+      if (result.verdict === "unveraendert") checked.cities[result.slug] = new Date().toISOString();
     }
   }
 
@@ -200,12 +226,15 @@ async function main() {
         ? judgeUpdate({ locations: before?.locations ?? null }, after)
         : { accept: false as const, reason: "Importlauf abgebrochen" };
 
+    // Erst entdoppeln, dann vergleichen: Der gespeicherte Stand ist schon entdoppelt, der
+    // frisch geholte nicht – sonst wäre jede Stadt mit Dubletten bei jedem Lauf „geändert“.
+    if (judgement.accept) run("dedupe.mts", [slug]);
     const newSeed = await readOrNull(seedFile);
     const unchanged =
       judgement.accept &&
       savedSeed !== null &&
       newSeed !== null &&
-      sameSpots(JSON.parse(savedSeed), JSON.parse(newSeed));
+      sameSpots(JSON.parse(savedSeed), JSON.parse(newSeed), { coarse: true });
 
     const base = {
       city: result.city,
@@ -234,6 +263,8 @@ async function main() {
       await restore(data("_import-status.json"), savedJson);
       await restore(data("_import-status.md"), savedMd);
       state.tried[slug] = new Date().toISOString();
+      // Der Vergleich ist gescheitert: kein „geprüft“, auch nicht aus einem früheren Lauf.
+      delete checked.cities[slug];
       outcomes.push({ ...base, accepted: false, note: judgement.reason });
       console.log(`  ↩ ${result.city}: alter Stand wiederhergestellt – ${judgement.reason}`);
     }

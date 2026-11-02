@@ -43,6 +43,14 @@ describe("sameSpots", () => {
     expect(sameSpots(a, { spots: [] })).toBe(false);
   });
 
+  it("vergleicht grob: Straßennamen zählen nicht, Lage und Anzahl schon", () => {
+    const withStreet = { spots: [{ id: "x", lat: 1, lng: 2, spotCount: 1, label: "Parkplatz", street: "Hauptstraße" }] };
+    const fresh = { spots: [{ id: "x", lat: 1, lng: 2, spotCount: 1, label: "Behindertenparkplatz Ulm", street: null }] };
+    expect(sameSpots(withStreet, fresh)).toBe(false);
+    expect(sameSpots(withStreet, fresh, { coarse: true })).toBe(true);
+    expect(sameSpots(withStreet, { spots: [{ ...fresh.spots[0], spotCount: 2 }] }, { coarse: true })).toBe(false);
+  });
+
   it("hält fehlende oder kaputte Dateien nie für gleich", () => {
     expect(sameSpots(null, null)).toBe(false);
     expect(sameSpots({}, {})).toBe(false);

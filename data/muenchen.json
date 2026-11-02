@@ -9,7 +9,7 @@
   },
   "source": "Behindertenparkplätze (Mobilitätsreferat München) – München (Datenlizenz Deutschland – Namensnennung – Version 2.0)",
   "license": "Datenlizenz Deutschland – Namensnennung – Version 2.0",
-  "generatedAt": "2026-10-29",
+  "generatedAt": "2026-11-01",
   "spots": [
     {
       "id": "muenchen-5283565014",
@@ -2376,8 +2376,8 @@
       "timeRestriction": null,
       "district": "Bogenhausen",
       "spotCount": 1,
-      "lat": 48.16547605791249,
-      "lng": 11.644449912428456,
+      "lat": 48.16550337800618,
+      "lng": 11.64446853683895,
       "geoAccuracy": "house",
       "source": "Behindertenparkplätze (Mobilitätsreferat München) – München (Datenlizenz Deutschland – Namensnennung – Version 2.0)"
     },
@@ -4341,8 +4341,8 @@
       "timeRestriction": null,
       "district": "Pasing-Obermenzing",
       "spotCount": 1,
-      "lat": 48.146670403559014,
-      "lng": 11.460385653827888,
+      "lat": 48.14668861977715,
+      "lng": 11.460266594375902,
       "geoAccuracy": "house",
       "source": "Behindertenparkplätze (Mobilitätsreferat München) – München (Datenlizenz Deutschland – Namensnennung – Version 2.0)"
     },
@@ -6816,8 +6816,8 @@
       "timeRestriction": "werktags, Montag bis Freitag von 8 - 18 Uhr, bis 2 Stunden",
       "district": "Ludwigsvorstadt-Isarvorstadt",
       "spotCount": 1,
-      "lat": 48.137605750010685,
-      "lng": 11.553019417217179,
+      "lat": 48.13757951652859,
+      "lng": 11.552999297086954,
       "geoAccuracy": "house",
       "source": "Behindertenparkplätze (Mobilitätsreferat München) – München (Datenlizenz Deutschland – Namensnennung – Version 2.0)"
     },

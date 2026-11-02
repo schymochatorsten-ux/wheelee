@@ -35,15 +35,22 @@ export interface AfterState {
  * Commit, ein Push und auf dem NAS ein Neubau des Abbilds – für identische
  * Daten.
  */
-export function sameSpots(a: unknown, b: unknown): boolean {
-  const spots = (value: unknown) =>
-    JSON.stringify(
-      (value as { spots?: unknown[] } | null)?.spots ?? null,
-      (_key, v: unknown) =>
-        v && typeof v === "object" && !Array.isArray(v)
-          ? Object.fromEntries(Object.entries(v as object).sort(([x], [y]) => x.localeCompare(y)))
-          : v,
+export function sameSpots(a: unknown, b: unknown, options: { coarse?: boolean } = {}): boolean {
+  const spots = (value: unknown) => {
+    const list = (value as { spots?: Record<string, unknown>[] } | null)?.spots;
+    if (!Array.isArray(list)) return "null";
+    // `coarse`: nur, was der Standort **ist** (Platz, Lage, Anzahl, Zeitbeschränkung). Straßennamen
+    // trägt erst `import:streets` nach; ein frisch geholter Stand hat sie noch nicht und
+    // wäre sonst jedes Mal „anders“ als der angereicherte.
+    const rows = options.coarse
+      ? list.map((s) => [s.id, s.lat, s.lng, s.spotCount, s.timeRestriction ?? null])
+      : list;
+    return JSON.stringify(rows, (_key, v: unknown) =>
+      v && typeof v === "object" && !Array.isArray(v)
+        ? Object.fromEntries(Object.entries(v as object).sort(([x], [y]) => x.localeCompare(y)))
+        : v,
     );
+  };
   return spots(a) === spots(b) && spots(a) !== "null";
 }
 

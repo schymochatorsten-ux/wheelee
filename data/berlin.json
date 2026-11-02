@@ -9,7 +9,7 @@
   },
   "source": "Behindertenparkplätze – Berlin (nicht angegeben)",
   "license": "Datenlizenz Deutschland – Zero – Version 2.0",
-  "generatedAt": "2026-10-08",
+  "generatedAt": "2026-11-01",
   "spots": [
     {
       "id": "berlin-5c8c6d0955",
@@ -2408,6 +2408,21 @@
       "spotCount": 2,
       "lat": 52.48680704,
       "lng": 13.337996,
+      "geoAccuracy": "house",
+      "source": "Behindertenparkplätze – Berlin (nicht angegeben)"
+    },
+    {
+      "id": "berlin-f1524a57c5",
+      "city": "berlin",
+      "label": "Brachvogelstraße ggü. 18",
+      "street": "Brachvogelstraße",
+      "houseNumber": "18",
+      "note": "ggü.",
+      "timeRestriction": null,
+      "district": "Friedrichshain-Kreuzberg",
+      "spotCount": 2,
+      "lat": 52.49660204,
+      "lng": 13.39878059,
       "geoAccuracy": "house",
       "source": "Behindertenparkplätze – Berlin (nicht angegeben)"
     },

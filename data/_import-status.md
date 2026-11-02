@@ -1,6 +1,6 @@
 # Importstand der deutschen Gemeinden
 
-Zuletzt aktualisiert: 2026-11-01T21:13:37.326Z
+Zuletzt aktualisiert: 2026-11-01T23:30:01.730Z
 
 Diese Datei schreiben die Importskripte selbst nach **jeder einzelnen Stadt**.
 Sie ist damit auch nach einem Abbruch mitten im Lauf korrekt.
@@ -30,8 +30,8 @@ npm run import:city -- --rest
 | davon geprüft, nichts gefunden | 0 |
 | noch nicht geprüft | 6.996 |
 | mit Problem | 0 |
-| importierte Standorte | 38.400 |
-| importierte Stellplätze | 64.117 |
+| importierte Standorte | 38.401 |
+| importierte Stellplätze | 64.119 |
 
 „Geprüft, nichts gefunden" ist etwas anderes als „noch nicht geprüft": Dort
 lief die Abfrage sauber durch und war leer. Diese Gemeinden werden nicht
@@ -85,7 +85,7 @@ liest niemand.
 
 | | Rang | Gemeinde | Einwohner | Quelle | Standorte | Stellplätze | Stand |
 | --- | ---: | --- | ---: | --- | ---: | ---: | --- |
- | ✅ | 1 | Berlin | 3.685.265 | amtlich (WFS) | 923 | 1560 | fertig | 
+ | ✅ | 1 | Berlin | 3.685.265 | amtlich (WFS) | 924 | 1562 | fertig | 
  | ✅ | 2 | Hamburg | 1.862.565 | amtlich (WFS) | 936 | 1310 | fertig | 
  | ✅ | 3 | München | 1.505.005 | amtlich (GEOJSON) | 568 | 958 | fertig | 
  | ✅ | 4 | Köln | 1.024.621 | amtlich (WFS) | 445 | 605 | fertig | 
@@ -3846,7 +3846,7 @@ liest niemand.
 
 ## Genaue Herkunft je Gemeinde
 
-- **Berlin** (amtlich (WFS)): `https://gdi.berlin.de/services/wfs/behindertenparkplaetze?request=GetFeature&service=WFS&version=2.0.0&typeNames=behindertenparkplaetze%3Abpark&outputFormat=application%2Fjson&srsName=EPSG%3A4326`
+- **Berlin** (amtlich (WFS)): `https://gdi.berlin.de/services/wfs/behindertenparkplaetze?service=WFS&version=2.0.0&request=GetFeature&typeNames=behindertenparkplaetze%3Abpark&outputFormat=application%2Fjson&srsName=EPSG%3A4326`
 - **Hamburg** (amtlich (WFS)): `https://geodienste.hamburg.de/wfs_behindertenstellplaetze?service=WFS&version=2.0.0&request=GetFeature&typeNames=de.hh.up%3Abehindertenstellplaetze`
 - **München** (amtlich (GEOJSON)): `https://geoportal.muenchen.de/geoserver/mor_wfs/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=mor_wfs:behindertenparkplaetze&outputFormat=application/json`
 - **Köln** (amtlich (WFS)): `https://geoportal.stadt-koeln.de/arcgis/services/verkehr/behindertenparkplaetze/MapServer/WFSServer?service=WFS&version=2.0.0&request=GetFeature&typeNames=behindertenparkplaetze%3ABehindertenparkplatz`

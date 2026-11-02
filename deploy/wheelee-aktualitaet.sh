@@ -76,6 +76,14 @@ if [ "${WHEELEE_TROCKEN:-0}" = "1" ]; then
   exit 0
 fi
 
+# „Zuletzt geprüft“ für /abdeckung (ToDo 19.15): in das Volume der App kopieren, nicht
+# ins Repository – ein Lauf ohne Datenänderung soll keinen Neubau auslösen. Fehlt der
+# Container (z. B. beim ersten Einrichten), ist das nur eine Warnung.
+if [ -f "$ARBEIT/state/geprueft.json" ]; then
+  docker exec -i "${WHEELEE_APP_CONTAINER:-wheelee}" sh -c "cat > /app/var/geprueft.json" < "$ARBEIT/state/geprueft.json" \
+    || echo "Warnung: geprueft.json konnte nicht in den App-Container kopiert werden."
+fi
+
 cd "$CLONE"
 
 # Was zählt als Änderung der Daten? Ein Seed einer Stadt oder die Seed-Liste.
