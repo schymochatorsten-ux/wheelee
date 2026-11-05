@@ -3,13 +3,13 @@
     "slug": "freiburg",
     "name": "Freiburg im Breisgau",
     "center": {
-      "lat": 47.997074622549086,
-      "lng": 7.842315461943512
+      "lat": 47.99702427662513,
+      "lng": 7.8417164842308615
     }
   },
   "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)",
   "license": null,
-  "generatedAt": "2026-11-01",
+  "generatedAt": "2026-11-05",
   "spots": [
     {
       "id": "freiburg-0d8cdad7b0",
@@ -327,21 +327,6 @@
       "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
     },
     {
-      "id": "freiburg-76629c29a8",
-      "city": "freiburg",
-      "label": "Auwaldstrasse",
-      "street": "Auwaldstrasse",
-      "houseNumber": "1",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Landwasser",
-      "spotCount": 2,
-      "lat": 48.02818896008789,
-      "lng": 7.8044361777881255,
-      "geoAccuracy": "house",
-      "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
-    },
-    {
       "id": "freiburg-92c0dc0012",
       "city": "freiburg",
       "label": "Auwaldstraße",
@@ -398,6 +383,36 @@
       "spotCount": 1,
       "lat": 48.02918093841016,
       "lng": 7.808389463917045,
+      "geoAccuracy": "house",
+      "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
+    },
+    {
+      "id": "freiburg-73fbc0ac64",
+      "city": "freiburg",
+      "label": "Auwaldstraße",
+      "street": "Auwaldstraße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Landwasser",
+      "spotCount": 1,
+      "lat": 48.02823321972317,
+      "lng": 7.804465479023658,
+      "geoAccuracy": "house",
+      "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
+    },
+    {
+      "id": "freiburg-d22e503f2d",
+      "city": "freiburg",
+      "label": "Auwaldstraße",
+      "street": "Auwaldstraße",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Landwasser",
+      "spotCount": 1,
+      "lat": 48.02821997729012,
+      "lng": 7.804509934830525,
       "geoAccuracy": "house",
       "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
     },
@@ -702,17 +717,17 @@
       "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
     },
     {
-      "id": "freiburg-52720c85d3",
+      "id": "freiburg-a073d06a73",
       "city": "freiburg",
       "label": "Bugginger Straße",
       "street": "Bugginger Straße",
-      "houseNumber": "6",
+      "houseNumber": "37",
       "note": null,
       "timeRestriction": null,
       "district": "Weingarten",
       "spotCount": 1,
-      "lat": 47.9971262912791,
-      "lng": 7.80237903447966,
+      "lat": 47.99708441652831,
+      "lng": 7.802655504571471,
       "geoAccuracy": "house",
       "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
     },
@@ -863,6 +878,21 @@
       "spotCount": 1,
       "lat": 47.986686492670756,
       "lng": 7.857338894070389,
+      "geoAccuracy": "house",
+      "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
+    },
+    {
+      "id": "freiburg-44a8f3d944",
+      "city": "freiburg",
+      "label": "Dreikönigstraße",
+      "street": "Dreikönigstraße",
+      "houseNumber": "10",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wiehre",
+      "spotCount": 1,
+      "lat": 47.98926750427591,
+      "lng": 7.857105729447852,
       "geoAccuracy": "house",
       "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
     },
@@ -1313,21 +1343,6 @@
       "spotCount": 1,
       "lat": 47.99779112481292,
       "lng": 7.848332769478676,
-      "geoAccuracy": "house",
-      "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
-    },
-    {
-      "id": "freiburg-3b9db178ea",
-      "city": "freiburg",
-      "label": "Fasanenstraße",
-      "street": "Fasanenstraße",
-      "houseNumber": "11",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Lehen",
-      "spotCount": 1,
-      "lat": 48.01466218067461,
-      "lng": 7.805792700850736,
       "geoAccuracy": "house",
       "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
     },
@@ -2607,21 +2622,6 @@
       "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
     },
     {
-      "id": "freiburg-a53f2edef9",
-      "city": "freiburg",
-      "label": "Konradin-Kreutzer-Strasse",
-      "street": "Konradin-Kreutzer-Strasse",
-      "houseNumber": "10",
-      "note": null,
-      "timeRestriction": null,
-      "district": "Bruehl",
-      "spotCount": 1,
-      "lat": 48.00688096215903,
-      "lng": 7.847575889751464,
-      "geoAccuracy": "house",
-      "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
-    },
-    {
       "id": "freiburg-25e7115732",
       "city": "freiburg",
       "label": "Kronenmattenstraße",
@@ -3252,21 +3252,6 @@
       "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
     },
     {
-      "id": "freiburg-40c940b03b",
-      "city": "freiburg",
-      "label": "Otto-Dangelmaier-Platz",
-      "street": "Otto-Dangelmaier-Platz",
-      "houseNumber": null,
-      "note": null,
-      "timeRestriction": null,
-      "district": "Betzenhausen",
-      "spotCount": 1,
-      "lat": 48.00820550254395,
-      "lng": 7.823450849642514,
-      "geoAccuracy": "house",
-      "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
-    },
-    {
       "id": "freiburg-30309384f3",
       "city": "freiburg",
       "label": "Prinz-Eugen-Strasse",
@@ -3732,6 +3717,21 @@
       "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
     },
     {
+      "id": "freiburg-40c940b03b",
+      "city": "freiburg",
+      "label": "Schongauerweg",
+      "street": "Schongauerweg",
+      "houseNumber": null,
+      "note": null,
+      "timeRestriction": null,
+      "district": "Betzenhausen",
+      "spotCount": 1,
+      "lat": 48.00820550254395,
+      "lng": 7.823450849642514,
+      "geoAccuracy": "house",
+      "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
+    },
+    {
       "id": "freiburg-b9b09961fa",
       "city": "freiburg",
       "label": "Schreiberstraße",
@@ -3991,7 +3991,7 @@
       "city": "freiburg",
       "label": "St.-Stephan-Straße",
       "street": "St.-Stephan-Straße",
-      "houseNumber": "12",
+      "houseNumber": "13",
       "note": null,
       "timeRestriction": null,
       "district": "Munzingen",
@@ -4583,6 +4583,21 @@
       "spotCount": 1,
       "lat": 47.99861259777728,
       "lng": 7.835583222212824,
+      "geoAccuracy": "house",
+      "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
+    },
+    {
+      "id": "freiburg-6b4c302995",
+      "city": "freiburg",
+      "label": "Weddigenstraße",
+      "street": "Weddigenstraße",
+      "houseNumber": "18",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Wiehre",
+      "spotCount": 1,
+      "lat": 47.98497862677805,
+      "lng": 7.833962756830418,
       "geoAccuracy": "house",
       "source": "Behindertenparkplätze in Freiburg i. Br. – Freiburg im Breisgau (nicht angegeben)"
     },

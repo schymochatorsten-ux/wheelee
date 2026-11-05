@@ -1,6 +1,6 @@
 # Importstand der deutschen Gemeinden
 
-Zuletzt aktualisiert: 2026-11-01T23:30:01.730Z
+Zuletzt aktualisiert: 2026-11-05T17:52:58.414Z
 
 Diese Datei schreiben die Importskripte selbst nach **jeder einzelnen Stadt**.
 Sie ist damit auch nach einem Abbruch mitten im Lauf korrekt.
@@ -30,7 +30,7 @@ npm run import:city -- --rest
 | davon geprüft, nichts gefunden | 0 |
 | noch nicht geprüft | 6.996 |
 | mit Problem | 0 |
-| importierte Standorte | 38.401 |
+| importierte Standorte | 38.402 |
 | importierte Stellplätze | 64.119 |
 
 „Geprüft, nichts gefunden" ist etwas anderes als „noch nicht geprüft": Dort
@@ -116,7 +116,7 @@ liest niemand.
  | ✅ | 29 | Kiel | 252.668 | OpenStreetMap | 85 | 241 | amtliche Quelle nicht nutzbar, OSM verwendet | 
  | ✅ | 30 | Chemnitz | 245.618 | OpenStreetMap | 221 | 337 | fertig | 
  | ✅ | 31 | Magdeburg | 244.329 | OpenStreetMap | 208 | 345 | fertig | 
- | ✅ | 32 | Freiburg im Breisgau | 237.460 | amtlich (WFS) | 330 | 334 | fertig | 
+ | ✅ | 32 | Freiburg im Breisgau | 237.460 | amtlich (WFS) | 331 | 334 | fertig | 
  | ✅ | 33 | Krefeld | 231.406 | OpenStreetMap | 40 | 71 | amtliche Quelle nicht nutzbar, OSM verwendet | 
  | ✅ | 34 | Halle (Saale) | 226.767 | OpenStreetMap | 62 | 178 | fertig | 
  | ✅ | 35 | Mainz | 224.684 | OpenStreetMap | 171 | 295 | fertig | 

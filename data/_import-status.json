@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T23:30:01.730Z",
+  "updatedAt": "2026-11-05T17:52:58.414Z",
   "records": [
     {
       "rank": 1,
@@ -30,7 +30,7 @@
       "status": "fertig",
       "locations": 936,
       "spaces": 1310,
-      "attemptedAt": "2026-11-01T23:29:57.682Z",
+      "attemptedAt": "2026-11-05T17:52:53.425Z",
       "message": null
     },
     {
@@ -46,7 +46,7 @@
       "status": "fertig",
       "locations": 568,
       "spaces": 958,
-      "attemptedAt": "2026-11-01T23:29:39.551Z",
+      "attemptedAt": "2026-11-05T17:52:33.443Z",
       "message": null
     },
     {
@@ -94,7 +94,7 @@
       "status": "fertig",
       "locations": 340,
       "spaces": 340,
-      "attemptedAt": "2026-11-01T23:30:01.730Z",
+      "attemptedAt": "2026-11-05T17:52:58.414Z",
       "message": null
     },
     {
@@ -190,7 +190,7 @@
       "status": "fertig",
       "locations": 481,
       "spaces": 680,
-      "attemptedAt": "2026-11-01T23:29:59.889Z",
+      "attemptedAt": "2026-11-05T17:52:56.286Z",
       "message": null
     },
     {
@@ -508,9 +508,9 @@
       "usedSource": "amtlich (WFS)",
       "usedUrl": "https://geoportal.freiburg.de/wfs/gut_parken/gut_parken?service=WFS&version=2.0.0&request=GetFeature&typeNames=ms%3Abehindertenparkplatz_detail",
       "status": "fertig",
-      "locations": 330,
+      "locations": 331,
       "spaces": 334,
-      "attemptedAt": "2026-11-01T23:17:27.777Z",
+      "attemptedAt": "2026-11-05T17:52:40.648Z",
       "message": null
     },
     {
