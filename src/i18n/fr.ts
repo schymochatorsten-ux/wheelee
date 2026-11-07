@@ -443,6 +443,7 @@ export const fr: Messages = {
   "map.retryLocation": "Réessayer la localisation",
   "map.hintCityLevel": "Zoomez au niveau de la ville pour voir les places.",
   "map.hintTruncated": "Toutes les places ne sont pas chargées – zoomez davantage.",
+  "map.hintCounts": "Les nombres indiquent les places connues par zone.",
 
   "geo.denied":
     "Vous avez refusé l'accès à la position. La carte montre le centre-ville – toutes les places restent visibles.",

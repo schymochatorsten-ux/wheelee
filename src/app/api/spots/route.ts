@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { nearestSpots, spotById, spotsInBounds } from "@/lib/parking/spots";
+import { nearestSpots, spotById, spotClusters, spotsInBounds } from "@/lib/parking/spots";
 import { withLogging } from "@/lib/log";
 import { t } from "@/i18n";
 
@@ -63,7 +63,34 @@ function getHandler(request: Request) {
       return bad("bbox: Mindestwerte müssen kleiner als die Höchstwerte sein.");
     }
 
-    const result = spotsInBounds({ minLat, minLng, maxLat, maxLng }, limit);
+    const bounds = { minLat, minLng, maxLat, maxLng };
+    const result = spotsInBounds(bounds, limit);
+
+    /*
+     * Passt der Ausschnitt nicht in `limit`, gehen **keine** Einzelstandorte
+     * hinaus, sondern Zähler je Gebiet (ToDo 9.20).
+     *
+     * Die abgeschnittene Liste wäre eine willkürliche Teilmenge in
+     * Seed-Reihenfolge, und die Karte hat sie deshalb bisher gar nicht erst
+     * gezeichnet – 2.000 Datensätze über das Mobilfunknetz zu schicken, nur um
+     * sie wegzuwerfen, war die Folge davon. Die Zähler sind aus allen
+     * Standorten des Ausschnitts gerechnet, vollständig und ein Bruchteil der
+     * Größe.
+     */
+    if (result.truncated) {
+      const zoomRaw = params.get("zoom");
+      const parsed = zoomRaw === null ? Number.NaN : Number(zoomRaw);
+      // Eine unbrauchbare Angabe wird nicht geraten, sondern weggelassen; das
+      // Gitter leitet die Zellgröße dann aus dem Ausschnitt ab.
+      const zoom = Number.isFinite(parsed) && parsed >= 0 && parsed <= 22 ? parsed : null;
+
+      const { clusters, total } = spotClusters(bounds, zoom);
+      return NextResponse.json(
+        { spots: [], truncated: true, total, clusters },
+        { headers: { "Cache-Control": CACHE_CONTROL } },
+      );
+    }
+
     return NextResponse.json(result, { headers: { "Cache-Control": CACHE_CONTROL } });
   }
 

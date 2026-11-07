@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-01):** **224 Einträge** auf oberster Ebene –
-davon 199, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-07):** **225 Einträge** auf oberster Ebene –
+davon 200, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 25, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -776,6 +776,20 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
 ---
 
 ## 9. Darstellung und Bedienung
+
+- [x] 9.20 **Zähler je Gebiet statt leerer Karte** (2026-11-07, auf Torstens „ja bitte bauen“; `lib/parking/grid.ts`, `spots.ts`, `api/spots/route.ts`, `hooks/useSpots.ts`, `components/map/SpotCounts.tsx`, `ParkingMap.tsx`, `MapSection.tsx`, `public/sw.js`). Weit herausgezoomt zeigte die Karte **gar nichts** und den Satz „Zoome auf Stadtgröße, um Parkplätze zu sehen." (9.16). Jetzt stehen dort runde Zähler – 1.122 für den Hamburger Raum, 651 für die Stadt –, und ein Antippen zieht sie auseinander.
+
+  - **Der Grund von 9.16 war nicht „zu viele Punkte", sondern eine unvollständige Antwort.** `spotsInBounds` liefert die ersten 2.000 in Seed-Reihenfolge – eine Teilmenge Stadt für Stadt, keine Auswahl nach Fläche. Sie zu zeichnen hieße, an manchen Orten „hier ist nichts" vorzutäuschen. Die Zähler beseitigen die Ursache: Sie sind über **alle** Standorte des Ausschnitts gerechnet und damit exakt (nachgemessen: Summe der 51 Zellen = `total` = 2.697 für Rhein-Main bei Stufe 9).
+  - **Warum nicht `leaflet.markercluster`.** Dessen Bündel entstehen aus den Markern, die der Browser hat – also aus derselben abgeschnittenen Teilmenge. Eine Zahl über einer unvollständigen Menge wäre **schlechter als die leere Karte**, denn eine Zahl sieht aus wie Wissen. Gebündelt wird deshalb auf dem Server, wo der ganze Bestand liegt.
+  - **Bei abgeschnittener Antwort gehen keine Einzelstandorte mehr hinaus** (`spots: []`). Vorher wurden 2.000 Datensätze über das Mobilfunknetz geschickt und anschließend weggeworfen; 51 Zellen sind ein Bruchteil davon.
+  - **Der Punkt ist der Schwerpunkt der Zelle, nicht die Zellmitte.** Eine Zelle reicht oft über den Stadtrand hinaus – die Mitte läge auf freiem Feld, und der Zähler zeigte auf eine Gegend, in der nichts ist.
+  - **Der Gitterursprung ist die Erde (−180, −90), nicht der Bildrand.** Sonst verschöben sich beim Ziehen der Karte alle Zellgrenzen und die Zahlen sprängen bei jeder Bewegung, obwohl sich nichts geändert hat.
+  - **Die Zellen sind auf dem Bildschirm quadratisch, in Grad aber nicht.** Auf der Mercator-Karte nimmt ein Breitengrad mehr Pixel ein als ein Längengrad (Faktor 1/cos der Breite); ohne diese Korrektur stünden die Zähler in Reihen statt in einem Raster. Raster 88 px, damit die bis zu 64 px breiten Kreise (9.17) sichtbar Luft behalten.
+  - **Der Satz dazu nennt, was die Zahl ist:** „Zahlen zeigen bekannte Parkplätze je Gebiet." **Bekannt**, nicht **vorhanden** – in OpenStreetMap-Gemeinden ist das nicht dasselbe, und ohne das Wort läse sich der Zähler als Vollständigkeitsaussage. Kurz gehalten aus dem Grund von 9.16 (ein zu langer Satz wird aus der Pille ein Balken von Kante zu Kante).
+  - **9.16 bleibt als Rückfallebene in Kraft** und wird nicht gelöscht: Ein Service Worker aus einem früheren Stand beantwortet `/api/spots` noch ohne `clusters`. Dann gilt wieder die gemessene Schwelle (Stufe 10) und die leere Karte. Deshalb sind `map-hint.ts` und seine vier Tests geblieben; die Messung von 2026-10-23 ist weiterhin der Beleg dafür, warum Marker ohne Zähler nicht gezeichnet werden dürfen.
+  - **Der Service Worker rechnet dasselbe noch einmal** (`public/sw.js`, `VERSION` auf `v4`). Er kann kein Modul aus `src/` laden, und eine Antwort ohne `clusters` ließe die Karte offline leer, obwohl die Daten im Speicher liegen. Die Doppelung ist benannt: Wer `grid.ts` ändert, ändert `sw.js` mit.
+  - **Aussehen und Beschriftung sind die der Bündel** (`cluster.ts`, 48 px Bedienmaß, `aria-label` statt nackter Zahl). Für die Nutzerin ist es dieselbe Sache; zwei verschiedene runde Zahlen auf einer Karte wären eine Unterscheidung ohne Unterschied.
+  - **Im Browser geprüft** (Telefonformat 375 × 812, Dev-Server): bei Stufe 7 Zähler über Norddeutschland statt leerer Karte, Hinweis als Pille mit Rand; Antippen des Zählers 1.122 zoomt zwei Stufen hinein, die Einzelbündel sind wieder da und der Hinweis verschwindet. Keine Fehler in der Browser-Konsole. Acht neue Unit-Tests (`grid.test.ts`), 677 Tests grün, `typecheck` und `lint` sauber.
 
 - [x] 9.16 **Der Hinweis am Kartenrand: Darstellung (2026-10-21) und Inhalt (2026-10-23)** (`MapSection.tsx`, `lib/map-hint.ts`).
 

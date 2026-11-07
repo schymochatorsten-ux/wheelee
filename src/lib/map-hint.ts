@@ -2,6 +2,14 @@
  * Welcher Hinweis am Kartenrand steht, wenn nicht alle Parkplätze des
  * Ausschnitts geladen sind (ToDo 9.16).
  *
+ * **Seit 9.20 ist das die Rückfallebene, nicht mehr der Normalfall.** Der
+ * Server schickt bei abgeschnittener Antwort Zähler je Gebiet; dann gibt es
+ * nichts zu verschweigen und keinen Hinweis dieser Art. Diese Regel greift
+ * noch, wenn die Antwort keine Zähler enthält – also von einem Service Worker
+ * aus einem früheren Stand. Die gemessenen Zahlen unten bleiben deshalb
+ * gültig, und sie sind der Beleg dafür, warum Marker ohne Zähler nicht
+ * gezeichnet werden dürfen.
+ *
  * „Näher heranzoomen" ist nur dann eine brauchbare Aufforderung, wenn ein bis
  * zwei Zoomschritte genügen. Bei kontinentaler Zoomstufe sind es ein Dutzend,
  * im Bild liegt überwiegend Ausland ohne Daten – und die geladenen 2.000

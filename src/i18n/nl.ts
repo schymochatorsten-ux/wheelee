@@ -433,6 +433,7 @@ export const nl: Messages = {
   "map.retryLocation": "Locatie opnieuw proberen te bepalen",
   "map.hintCityLevel": "Zoom in tot stadsniveau om parkeerplaatsen te zien.",
   "map.hintTruncated": "Niet alle parkeerplaatsen zijn geladen – zoom verder in.",
+  "map.hintCounts": "De getallen tonen bekende parkeerplaatsen per gebied.",
 
   "geo.denied":
     "Je hebt de toegang tot je locatie geweigerd. De kaart toont het stadscentrum – alle parkeerplaatsen blijven zichtbaar.",

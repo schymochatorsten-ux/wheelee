@@ -433,6 +433,7 @@ export const it: Messages = {
   "map.retryLocation": "Riprova la localizzazione",
   "map.hintCityLevel": "Ingrandisci fino al livello della città per vedere i parcheggi.",
   "map.hintTruncated": "Non tutti i parcheggi sono caricati – ingrandisci ancora.",
+  "map.hintCounts": "I numeri indicano i parcheggi noti per zona.",
 
   "geo.denied":
     "Hai rifiutato l’accesso alla posizione. La mappa mostra il centro della città – tutti i parcheggi restano visibili.",

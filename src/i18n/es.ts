@@ -438,6 +438,7 @@ export const es: Messages = {
   "map.retryLocation": "Volver a intentar la ubicación",
   "map.hintCityLevel": "Acerca el mapa al tamaño de una ciudad para ver las plazas.",
   "map.hintTruncated": "No se han cargado todas las plazas: acerca más el mapa.",
+  "map.hintCounts": "Las cifras muestran las plazas conocidas por zona.",
 
   "geo.denied":
     "Has rechazado el acceso a la ubicación. El mapa muestra el centro de la ciudad; todas las plazas siguen visibles.",

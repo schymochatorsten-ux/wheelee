@@ -433,6 +433,7 @@ export const pt: Messages = {
   "map.retryLocation": "Tentar determinar a localização novamente",
   "map.hintCityLevel": "Aproxime ao nível da cidade para ver os lugares de estacionamento.",
   "map.hintTruncated": "Nem todos os lugares de estacionamento estão carregados – aproxime mais.",
+  "map.hintCounts": "Os números mostram os lugares conhecidos por zona.",
 
   "geo.denied":
     "O acesso à localização foi recusado. O mapa mostra o centro da cidade – todos os lugares de estacionamento continuam visíveis.",

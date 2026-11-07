@@ -433,6 +433,7 @@ export const en: Messages = {
   "map.retryLocation": "Try location again",
   "map.hintCityLevel": "Zoom to city level to see parking spaces.",
   "map.hintTruncated": "Not all parking spaces are loaded – zoom in closer.",
+  "map.hintCounts": "Numbers show known parking spaces per area.",
 
   "geo.denied":
     "You declined location access. The map shows the city centre – all parking spaces stay visible.",

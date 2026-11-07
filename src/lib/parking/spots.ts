@@ -2,6 +2,7 @@ import type { ParkingSpot, ParkingSpotWithDistance } from "../types";
 import { sortByDistance, type LatLng } from "../geo";
 import { attributionOf, licenseOf } from "./license";
 import { confirmationOf, osmOnlySpots } from "./confirmation";
+import { cellKey, cellSize } from "./grid";
 import { seeds } from "./seeds.generated";
 
 /**
@@ -149,6 +150,68 @@ export function spotsInBounds(
   }
 
   return { spots: found, truncated: total > found.length, total };
+}
+
+/** Ein Zähler für ein Gebiet, wenn der Ausschnitt zu viele Standorte enthält. */
+export interface SpotCluster {
+  /** Schwerpunkt der enthaltenen Standorte, nicht die Mitte der Zelle. */
+  lat: number;
+  lng: number;
+  count: number;
+}
+
+/**
+ * Die Standorte eines Ausschnitts als Zähler je Gebiet (ToDo 9.20).
+ *
+ * Gebraucht, wenn `spotsInBounds` abschneiden müsste. Dann ist die Liste der
+ * Einzelstandorte eine willkürliche Teilmenge in Seed-Reihenfolge – diese
+ * Zahlen dagegen sind über **alle** Standorte des Ausschnitts gerechnet und
+ * damit vollständig. Das ist der ganze Zweck: keine Karte, die stillschweigend
+ * die Hälfte verschweigt, und keine, die ohne Not leer bleibt.
+ *
+ * **Der Punkt ist der Schwerpunkt, nicht die Zellmitte.** Eine Zelle reicht oft
+ * über den Stadtrand hinaus; die Zellmitte läge dann auf freiem Feld, und der
+ * Zähler zeigte auf eine Gegend, in der nichts ist.
+ *
+ * Derselbe eine Durchlauf über den Bestand wie bei `spotsInBounds`, nur mit
+ * einer Map statt einer Liste.
+ */
+export function spotClusters(
+  bounds: Bounds,
+  zoom: number | null,
+): { clusters: SpotCluster[]; total: number } {
+  const cell = cellSize(bounds, zoom);
+  const buckets = new Map<string, { sumLat: number; sumLng: number; count: number }>();
+  let total = 0;
+
+  for (const spot of allSpots()) {
+    if (spot.lat === null || spot.lng === null) continue;
+    if (spot.lat < bounds.minLat || spot.lat > bounds.maxLat) continue;
+    if (spot.lng < bounds.minLng || spot.lng > bounds.maxLng) continue;
+
+    total += 1;
+    const key = cellKey(spot.lat, spot.lng, cell);
+    const bucket = buckets.get(key);
+    if (bucket) {
+      bucket.sumLat += spot.lat;
+      bucket.sumLng += spot.lng;
+      bucket.count += 1;
+    } else {
+      buckets.set(key, { sumLat: spot.lat, sumLng: spot.lng, count: 1 });
+    }
+  }
+
+  const clusters = [...buckets.values()].map(({ sumLat, sumLng, count }) => ({
+    lat: sumLat / count,
+    lng: sumLng / count,
+    count,
+  }));
+
+  // Die größten zuerst: Leaflet zeichnet in Reihenfolge, und ein kleiner
+  // Zähler soll nicht hinter einem großen verschwinden.
+  clusters.sort((a, b) => b.count - a.count || a.lat - b.lat || a.lng - b.lng);
+
+  return { clusters, total };
 }
 
 /**

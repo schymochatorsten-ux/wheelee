@@ -230,11 +230,22 @@ export function MapSection({
    * nach – siehe `useSpots`.
    */
   const [bounds, setBounds] = useState<MapBounds | null>(null);
-  const { spots: mapSpots, truncated } = useSpotsInBounds(bounds, initialNearby);
-  // Zu weit herausgezoomt: Die geladenen 2.000 sind eine zufällige Auswahl und
-  // würden an manchen Orten „hier ist nichts" vortäuschen – also gar keine
-  // zeigen (ToDo 9.16).
-  const hint = truncationHint(truncated, bounds?.zoom ?? null);
+  const { spots: mapSpots, clusters, truncated } = useSpotsInBounds(bounds, initialNearby);
+  /*
+   * Zu viele Standorte für Einzelmarker: Der Server schickt dann Zähler je
+   * Gebiet (ToDo 9.20), gerechnet über **alle** Standorte des Ausschnitts.
+   *
+   * Vorher blieb die Karte in diesem Fall unterhalb von Zoomstufe 10 leer
+   * (9.16) – zu Recht, denn die 2.000 gelieferten Standorte waren eine
+   * Teilmenge in Seed-Reihenfolge und hätten an manchen Orten „hier ist
+   * nichts" vorgetäuscht. Die Zähler beseitigen den Grund dafür.
+   *
+   * **Der alte Weg bleibt als Rückfallebene:** Ein Service Worker aus einem
+   * früheren Stand beantwortet `/api/spots` noch ohne `clusters`. Dann gilt
+   * wieder die gemessene Schwelle aus `lib/map-hint.ts`.
+   */
+  const showCounts = clusters.length > 0;
+  const hint = showCounts ? "none" : truncationHint(truncated, bounds?.zoom ?? null);
 
   /**
    * Das Reiseziel (ToDo 6.12). Ist eines gesetzt, bezieht sich alles darauf
@@ -599,6 +610,7 @@ export function MapSection({
           <>
             <ParkingMap
               spots={hint === "city-level" ? [] : mapSpots}
+              clusters={clusters}
               center={center}
               userPosition={geo.position}
               destination={destination}
@@ -664,6 +676,21 @@ export function MapSection({
               „dieses Ausschnitts" ist weg – es stand da, wo ohnehin nur der
               sichtbare Ausschnitt gemeint sein kann.
             */}
+            {/*
+              Bei Zählern steht dort, was die Zahlen bedeuten. Ohne diesen Satz
+              läse man sie als „so viele gibt es hier" – gemeint ist „so viele
+              sind hier bekannt", und in OpenStreetMap-Gemeinden ist das nicht
+              dasselbe. Kurz gehalten aus dem Grund von 9.16: Ein Satz, der
+              breiter ist als der Bildschirm, wird aus der Pille ein Balken.
+            */}
+            {showCounts && (
+              <p
+                role="status"
+                className="pointer-events-none absolute inset-x-0 bottom-10 z-[1000] mx-auto w-fit max-w-[calc(100%-2rem)] rounded-2xl bg-amber-100 px-3 py-1.5 text-center text-xs font-medium text-amber-900 shadow dark:bg-amber-950 dark:text-amber-100"
+              >
+                {t("map.hintCounts")}
+              </p>
+            )}
             {hint !== "none" && (
               <p
                 role="status"

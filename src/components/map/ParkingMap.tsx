@@ -6,7 +6,9 @@ import { MapContainer, Marker, Polyline, TileLayer, useMap } from "react-leaflet
 import { useT } from "@/i18n/context";
 import type { ParkingSpot } from "@/lib/types";
 import type { LatLng } from "@/lib/geo";
+import type { SpotCluster } from "@/lib/parking/spots";
 import { SpotMarkers } from "./SpotMarkers";
+import { SpotCounts } from "./SpotCounts";
 import { destinationIcon, userIcon } from "./icons";
 import "leaflet/dist/leaflet.css";
 import "leaflet.markercluster/dist/MarkerCluster.css";
@@ -19,6 +21,12 @@ import "leaflet.markercluster/dist/MarkerCluster.Default.css";
 
 interface ParkingMapProps {
   spots: readonly ParkingSpot[];
+  /**
+   * Zähler je Gebiet statt Einzelmarkern (ToDo 9.20). Sind welche da, enthält
+   * `spots` nichts: Der Ausschnitt fasst mehr Standorte, als einzeln
+   * ausgeliefert werden.
+   */
+  clusters?: readonly SpotCluster[];
   center: LatLng;
   /** Nutzerstandort, falls erlaubt und ermittelt. */
   userPosition: LatLng | null;
@@ -187,6 +195,7 @@ function MapFocus({ target }: { target: FocusTarget | null }) {
 
 export default function ParkingMap({
   spots,
+  clusters = [],
   center,
   userPosition,
   destination,
@@ -254,12 +263,16 @@ export default function ParkingMap({
         </>
       )}
 
-      <SpotMarkers
-        spots={spots}
-        nearestId={nearestId}
-        highlightIds={highlightIds}
-        onSelect={onSelect}
-      />
+      {clusters.length > 0 ? (
+        <SpotCounts clusters={clusters} />
+      ) : (
+        <SpotMarkers
+          spots={spots}
+          nearestId={nearestId}
+          highlightIds={highlightIds}
+          onSelect={onSelect}
+        />
+      )}
 
       {userPosition && (
         <Marker

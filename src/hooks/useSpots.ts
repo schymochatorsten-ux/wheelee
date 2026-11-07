@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { ParkingSpot, ParkingSpotWithDistance } from "@/lib/types";
 import { distanceMeters, type LatLng } from "@/lib/geo";
-import type { Bounds } from "@/lib/parking/spots";
+import type { Bounds, SpotCluster } from "@/lib/parking/spots";
 
 /**
  * Parkplätze vom Server holen, statt alle in die Seite zu schreiben
@@ -18,6 +18,13 @@ interface SpotResponse {
   spots: ParkingSpot[];
   truncated: boolean;
   total: number;
+  /**
+   * Zähler je Gebiet statt Einzelstandorten (ToDo 9.20). Kommt nur bei
+   * abgeschnittener Antwort – und nicht von einem älteren Service Worker, der
+   * den Modus noch nicht kennt. Deshalb optional: Fehlt das Feld, gilt wieder
+   * die Regel aus 9.16 (`lib/map-hint.ts`).
+   */
+  clusters?: SpotCluster[];
 }
 
 /** Verwirft Antworten, die von einer überholten Anfrage stammen. */
@@ -37,11 +44,21 @@ function useLatestOnly() {
  * entstehen sonst Dutzende Anfragen, von denen nur die letzte zählt.
  */
 export function useSpotsInBounds(
-  bounds: Bounds | null,
+  bounds: (Bounds & { zoom?: number }) | null,
   initial: ParkingSpot[] = [],
-): { spots: ParkingSpot[]; truncated: boolean; loading: boolean } {
-  const [state, setState] = useState<{ spots: ParkingSpot[]; truncated: boolean }>({
+): {
+  spots: ParkingSpot[];
+  clusters: SpotCluster[];
+  truncated: boolean;
+  loading: boolean;
+} {
+  const [state, setState] = useState<{
+    spots: ParkingSpot[];
+    clusters: SpotCluster[];
+    truncated: boolean;
+  }>({
     spots: initial,
+    clusters: [],
     truncated: false,
   });
   const [loading, setLoading] = useState(false);
@@ -57,18 +74,32 @@ export function useSpotsInBounds(
   useEffect(() => {
     if (!bounds) return;
     const bbox = [bounds.minLng, bounds.minLat, bounds.maxLng, bounds.maxLat].join(",");
-    if (bbox === lastBbox.current) return;
+    /*
+     * Die Zoomstufe gehört zur Anfrage, weil sie die Zellgröße der Zähler
+     * bestimmt (9.20) – und damit auch in die Sperre gegen doppelte Anfragen:
+     * Derselbe Ausschnitt bei anderer Stufe ist eine andere Antwort.
+     */
+    const zoom = bounds.zoom;
+    const query = zoom === undefined ? bbox : `${bbox}@${zoom}`;
+    if (query === lastBbox.current) return;
 
     const stillCurrent = isLatest();
 
     const timer = setTimeout(async () => {
       setLoading(true);
-      lastBbox.current = bbox;
+      lastBbox.current = query;
       try {
-        const response = await fetch(`/api/spots?bbox=${bbox}&limit=2000`);
+        const zoomParam = zoom === undefined ? "" : `&zoom=${zoom}`;
+        const response = await fetch(`/api/spots?bbox=${bbox}&limit=2000${zoomParam}`);
         if (!response.ok) return;
         const data = (await response.json()) as SpotResponse;
-        if (stillCurrent()) setState({ spots: data.spots, truncated: data.truncated });
+        if (stillCurrent()) {
+          setState({
+            spots: data.spots,
+            clusters: data.clusters ?? [],
+            truncated: data.truncated,
+          });
+        }
       } catch {
         // Kein Netz: Die zuletzt geladenen Marker bleiben stehen. Besser eine
         // veraltete Karte als eine leere – im Funkloch ist beides möglich,
@@ -80,7 +111,7 @@ export function useSpotsInBounds(
 
     return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [bounds?.minLat, bounds?.minLng, bounds?.maxLat, bounds?.maxLng]);
+  }, [bounds?.minLat, bounds?.minLng, bounds?.maxLat, bounds?.maxLng, bounds?.zoom]);
 
   return { ...state, loading };
 }

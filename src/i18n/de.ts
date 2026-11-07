@@ -432,6 +432,7 @@ export const de = {
   "map.retryLocation": "Standort erneut versuchen",
   "map.hintCityLevel": "Zoome auf Stadtgröße, um Parkplätze zu sehen.",
   "map.hintTruncated": "Nicht alle Parkplätze sind geladen – näher heranzoomen.",
+  "map.hintCounts": "Zahlen zeigen bekannte Parkplätze je Gebiet.",
 
   "geo.denied":
     "Du hast den Standortzugriff abgelehnt. Die Karte zeigt die Stadtmitte – alle Parkplätze bleiben sichtbar.",

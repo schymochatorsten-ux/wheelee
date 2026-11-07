@@ -21,7 +21,7 @@
  */
 
 /** Bei jeder Änderung hochzählen – sonst bleibt der alte Stand liegen. */
-const VERSION = "v3";
+const VERSION = "v4";
 
 /**
  * Vorab geladene Städte (ToDo 16.1). **Ohne Versionsnummer und von `activate`
@@ -86,6 +86,43 @@ async function networkFirst(request, cacheName, fallback) {
   }
 }
 
+/**
+ * Zähler je Gebiet – dieselbe Rechnung wie `cellSize`/`cellKey` in
+ * `src/lib/parking/grid.ts` und `spotClusters` in `spots.ts` (ToDo 9.20).
+ *
+ * Doppelt geschrieben, weil der Service Worker kein Modul aus `src/` laden
+ * kann; wer dort etwas ändert, ändert es hier mit. Die Zahlen müssen
+ * übereinstimmen, sonst zeigt dieselbe Stelle online und offline Verschiedenes.
+ */
+function cluster(spots, bounds, zoom) {
+  const spanLng = Math.max(bounds.maxLng - bounds.minLng, 0);
+  const spanLat = Math.max(bounds.maxLat - bounds.minLat, 0);
+  const midLat = (bounds.minLat + bounds.maxLat) / 2;
+  const cosLat = Math.max(Math.cos((midLat * Math.PI) / 180), 0.05);
+
+  const stufe = zoom === null ? null : Math.min(Math.max(zoom, 1), 18);
+  let lng = stufe === null ? spanLng / 12 : (88 * 360) / (256 * Math.pow(2, stufe));
+  lng = Math.max(lng, spanLng / 64, spanLat / (64 * cosLat), 1e-6);
+  const cellLat = lng * cosLat;
+
+  const buckets = new Map();
+  for (const spot of spots) {
+    const key = `${Math.floor((spot.lat + 90) / cellLat)}:${Math.floor((spot.lng + 180) / lng)}`;
+    const bucket = buckets.get(key);
+    if (bucket) {
+      bucket.sumLat += spot.lat;
+      bucket.sumLng += spot.lng;
+      bucket.count += 1;
+    } else {
+      buckets.set(key, { sumLat: spot.lat, sumLng: spot.lng, count: 1 });
+    }
+  }
+
+  return [...buckets.values()]
+    .map((b) => ({ lat: b.sumLat / b.count, lng: b.sumLng / b.count, count: b.count }))
+    .sort((a, b) => b.count - a.count || a.lat - b.lat || a.lng - b.lng);
+}
+
 /** Luftlinie in Metern – dieselbe Formel wie `distanceMeters` in `src/lib/geo.ts`. */
 function distanceMeters(a, b) {
   const rad = (deg) => (deg * Math.PI) / 180;
@@ -137,8 +174,26 @@ async function answerFromCities(request) {
         spot.lng >= minLng &&
         spot.lng <= maxLng,
     );
-    const found = inside.slice(0, limit ?? 2_000);
-    return Response.json({ spots: found, truncated: inside.length > found.length, total: inside.length });
+    const max = limit ?? 2_000;
+    const found = inside.slice(0, max);
+    if (inside.length > found.length) {
+      /*
+       * Dasselbe wie auf dem Server (ToDo 9.20): Statt einer willkürlichen
+       * Teilmenge gehen Zähler je Gebiet hinaus. Offline ist das selten –
+       * zwischengespeichert sind einzelne Städte –, aber eine Antwort ohne
+       * `clusters` ließe die Karte nach der alten Regel leer bleiben, obwohl
+       * die Daten da sind.
+       */
+      const zoomRaw = Number(params.get("zoom"));
+      const zoom = Number.isFinite(zoomRaw) && zoomRaw >= 0 && zoomRaw <= 22 ? zoomRaw : null;
+      return Response.json({
+        spots: [],
+        truncated: true,
+        total: inside.length,
+        clusters: cluster(inside, { minLat, minLng, maxLat, maxLng }, zoom),
+      });
+    }
+    return Response.json({ spots: found, truncated: false, total: inside.length });
   }
 
   const lat = Number(params.get("lat"));

@@ -436,6 +436,7 @@ export const pl: Messages = {
   "map.retryLocation": "Spróbuj ponownie ustalić lokalizację",
   "map.hintCityLevel": "Przybliż do poziomu miasta, aby zobaczyć miejsca parkingowe.",
   "map.hintTruncated": "Nie wszystkie miejsca parkingowe są załadowane – przybliż bardziej.",
+  "map.hintCounts": "Liczby pokazują znane miejsca parkingowe w obszarze.",
 
   "geo.denied":
     "Odmówiono dostępu do lokalizacji. Mapa pokazuje centrum miasta – wszystkie miejsca parkingowe pozostają widoczne.",
