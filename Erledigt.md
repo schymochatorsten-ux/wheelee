@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-08):** **238 Einträge** auf oberster Ebene –
-davon 213, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-08):** **240 Einträge** auf oberster Ebene –
+davon 215, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 25, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -726,6 +726,14 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
 
 ## 17 / 10. Aufräumen und Sicherheit (2026-10-17)
 
+- [x] 17.10 **Ein stiller Fehlschlag ist kein Fehlschlag, den man findet** (2026-11-08, nachdem bei Torsten trotz eingerichtetem Versand keine Benachrichtigung ankam; `lib/feedback-notify.ts`, `components/AdminMail.tsx`, neun Sprachdateien, `feedback-notify.test.ts`).
+
+  **Der Befund ist nicht die Ursache, sondern dass es keine gab, die man nachsehen konnte.** `notifyNewFeedback` kannte drei Ausgänge – keine Adresse eingetragen, Versand aus, Senden gescheitert – und **alle drei endeten lautlos**: ein leeres `return` bzw. ein leeres `catch`. Der Kommentar dort behauptete, der Fehlschlag stehe „im Protokoll des Mailservers"; auf unserer Seite stand er nirgends. Entsprechend begann die Suche mit Raten.
+
+  - **Jeder Ausgang schreibt jetzt eine Zeile** (`feedback_notify_skipped` mit Grund, `feedback_notify_failed` mit der Fehlerart, `feedback_notify_sent`). **Ohne die Adresse und ohne den Meldungstext** – `log.ts` protokolliert keine Inhalte und keine E-Mail-Adressen, und das bleibt so; ein Test prüft genau das mit.
+  - **Nach außen bleibt es still.** Die Meldung ist gespeichert, bevor die Mail losgeht; wer vor einem aufgehobenen Parkplatz steht, darf nicht an unserem Postfach scheitern (17.9).
+  - **Die wahrscheinlichste Ursache im konkreten Fall ist sichtbar gemacht worden:** Steht „Benachrichtigung bei neuer Rückmeldung an" leer, während der Versand läuft, sieht alles eingerichtet aus – die Testmail kommt an, weil sie an das **angemeldete Konto** geht und nicht an diese Adresse. Das Feld darf leer bleiben, es ist die Abschaltung; es darf nur nicht so aussehen wie „fertig eingerichtet". Jetzt steht in diesem Fall ein Warnhinweis daneben.
+
 - [x] 17.9 **Mail an den Betreiber bei neuer Rückmeldung** (2026-11-08, auf Torstens Wunsch; Migration 15, `lib/feedback-notify.ts`, `api/feedback/route.ts`, `api/admin/mail/route.ts`, `components/AdminMail.tsx`, `app/datenschutz/page.tsx`, Anleitung in `deploy/Mailversand-GMX.md`).
 
   Eine Meldung ist nur etwas wert, wenn sie jemand liest. Bisher musste man sich dafür anmelden und in den Reiter „Rückmeldungen“ sehen – also gerade dann daran denken, wenn nichts darauf hinweist, dass es etwas zu lesen gibt.
@@ -795,6 +803,12 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
 ---
 
 ## 9. Darstellung und Bedienung
+
+- [x] 9.28 **Das Zahnrad war eine Sonne** (2026-11-08, von Torsten zum zweiten Mal gemeldet: „das Symbol für Einstellungen ist kein Zahnrad“; `MapSection.tsx`).
+
+  Die erste Fassung war ein Kreis mit sechs **abgesetzten** Strichen darum – die Bauform einer Sonne, und genau so wurde sie zweimal gelesen (siehe 9.23, wo das Symbol deshalb kurzzeitig ausgeschrieben wurde). Der Unterschied liegt in der Lücke: Ein Zahnrad hat **anliegende** Zähne auf einem geschlossenen Ring. Jetzt ein gefüllter Kranz mit acht Zähnen und ausgespartem Loch (`fill-rule: evenodd`), der auch bei 17 px eindeutig bleibt.
+
+  **Der Pfad ist gerechnet, nicht abgetippt.** Von Hand gesetzte Koordinaten sehen im Quelltext plausibel aus und stehen im Bild schief – bei einem Zahnrad sofort sichtbar. Acht Zähne über Polarkoordinaten, ein Zahn 42 % des Winkelschritts breit.
 
 - [x] 9.27 **Konto hinter dem Benutzersymbol oben rechts** (2026-11-08, auf Torstens Wunsch: „Anmeldung aus den Einstellungen raus und oben rechts als kleines Benutzersymbol anbieten“; `MapSection.tsx`, `SettingsPanel.tsx`, `SettingsSection.tsx`, `e2e/bewertungen|favoriten|mail|meine-bewertungen|scrollen|zugaenglichkeit.spec.ts`).
 

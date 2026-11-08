@@ -353,6 +353,7 @@ export const pl: Messages = {
   "adminMail.intro": "Do „nie pamiętam hasła” i zmiany adresu e-mail. Bez tych danych obie funkcje są ukryte.",
   "adminMail.notify": "Powiadomienie o nowej informacji zwrotnej na",
   "adminMail.notifyNone": "bez powiadomienia",
+  "adminMail.notifyMissing": "Brakuje tej danej: wysyłka działa, ale przy nowych zgłoszeniach nie wychodzi żadna wiadomość.",
   "adminMail.notifyNote": "Każdy nowy błąd lub pomysł od razu wysyła wiadomość na ten adres. Temat: „Wheelee Fehler” lub „Wheelee Verbesserungsvorschlag”. Puste pole wyłącza powiadomienia.",
   "adminMail.notifyInvalid": "Adres powiadomienia nie wygląda poprawnie.",
   "adminMail.statusOn": "Wysyłka działa.",

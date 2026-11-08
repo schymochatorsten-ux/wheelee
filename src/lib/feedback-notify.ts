@@ -1,4 +1,5 @@
 import { readMailConfig } from "./db/mail-config";
+import { logEvent } from "./log";
 import { mailConfigured, publicUrl, sendMail } from "./mail";
 import type { ValidFeedback } from "./feedback";
 
@@ -65,7 +66,27 @@ export function notifyText(feedback: ValidFeedback): string {
  */
 export async function notifyNewFeedback(feedback: ValidFeedback): Promise<void> {
   const to = readMailConfig()?.notifyEmail?.trim();
-  if (!to || !mailConfigured()) return;
+
+  /*
+   * **Still gegenüber der meldenden Person, aber nicht gegenüber dem
+   * Betreiber** (ToDo 17.10). Bis zum 2026-11-08 endete jeder dieser Fälle in
+   * einem leeren `return` bzw. einem leeren `catch`: Es kam keine Mail an,
+   * und es gab **nirgends** eine Spur davon – weder in der Verwaltung noch im
+   * Protokoll. Genau das ist dann passiert, und die Suche danach begann mit
+   * Raten. Eine Zeile im Protokoll kostet nichts und beantwortet die Frage
+   * beim nächsten Mal in Sekunden.
+   *
+   * Die Adresse selbst steht **nicht** in der Zeile: Protokolliert werden nie
+   * Inhalte und keine E-Mail-Adressen (siehe `log.ts`).
+   */
+  if (!to) {
+    logEvent("warn", "feedback_notify_skipped", { grund: "keine_adresse" });
+    return;
+  }
+  if (!mailConfigured()) {
+    logEvent("warn", "feedback_notify_skipped", { grund: "versand_aus" });
+    return;
+  }
 
   try {
     await sendMail({
@@ -73,8 +94,11 @@ export async function notifyNewFeedback(feedback: ValidFeedback): Promise<void> 
       subject: NOTIFY_SUBJECT[feedback.kind],
       text: notifyText(feedback),
     });
-  } catch {
-    // Absichtlich still: siehe oben. Der Fehlschlag steht im Protokoll des
-    // Mailservers, nicht in der Antwort an die meldende Person.
+    logEvent("info", "feedback_notify_sent", { art: feedback.kind });
+  } catch (error) {
+    logEvent("error", "feedback_notify_failed", {
+      // Nur die Art des Fehlers, nicht die Adresse und nicht der Meldungstext.
+      fehler: error instanceof Error ? error.message : "unbekannt",
+    });
   }
 }

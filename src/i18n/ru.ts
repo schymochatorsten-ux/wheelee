@@ -353,6 +353,7 @@ export const ru: Messages = {
   "adminMail.intro": "Для «забыли пароль» и смены адреса электронной почты. Без этих данных обе функции скрыты.",
   "adminMail.notify": "Уведомлять о новых сообщениях на",
   "adminMail.notifyNone": "без уведомления",
+  "adminMail.notifyMissing": "Этого значения нет: отправка работает, но при новых сообщениях письмо не уходит.",
   "adminMail.notifyNote": "Каждая новая ошибка или предложение сразу отправляет письмо на этот адрес. Тема: «Wheelee Fehler» или «Wheelee Verbesserungsvorschlag». Пустое поле отключает уведомления.",
   "adminMail.notifyInvalid": "Адрес для уведомления выглядит неправильно.",
   "adminMail.statusOn": "Отправка работает.",

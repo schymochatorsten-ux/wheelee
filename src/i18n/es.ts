@@ -352,6 +352,7 @@ export const es: Messages = {
   "adminMail.intro": "Para «he olvidado mi contraseña» y el cambio de dirección de correo. Sin estos datos ambas funciones están ocultas.",
   "adminMail.notify": "Avisar de nuevos comentarios a",
   "adminMail.notifyNone": "sin aviso",
+  "adminMail.notifyMissing": "Falta este dato: el envío funciona, pero no sale ningún correo cuando llega un comentario nuevo.",
   "adminMail.notifyNote": "Cada nuevo fallo o sugerencia envía de inmediato un correo a esta dirección. Asunto: «Wheelee Fehler» o «Wheelee Verbesserungsvorschlag». Déjalo vacío para desactivarlo.",
   "adminMail.notifyInvalid": "La dirección para el aviso no parece correcta.",
   "adminMail.statusOn": "El envío está activo.",

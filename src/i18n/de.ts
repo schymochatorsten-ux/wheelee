@@ -348,6 +348,7 @@ export const de = {
   "adminMail.intro": "Für „Passwort vergessen“ und das Ändern der E-Mail-Adresse. Ohne diese Angaben sind beide Funktionen ausgeblendet.",
   "adminMail.notify": "Benachrichtigung bei neuer Rückmeldung an",
   "adminMail.notifyNone": "keine Benachrichtigung",
+  "adminMail.notifyMissing": "Diese Angabe fehlt: Der Versand läuft, aber bei neuen Rückmeldungen geht keine Mail hinaus.",
   "adminMail.notifyNote": "Bei jedem neuen Fehler oder Vorschlag geht sofort eine Mail an diese Adresse. Betreff: „Wheelee Fehler“ oder „Wheelee Verbesserungsvorschlag“. Leer lassen schaltet es ab.",
   "adminMail.notifyInvalid": "Die Adresse für die Benachrichtigung sieht nicht richtig aus.",
   "adminMail.statusOn": "Der Versand läuft.",

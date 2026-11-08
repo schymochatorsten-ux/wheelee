@@ -157,21 +157,62 @@ const EXPANDED_BAR_HEIGHT = 430;
  */
 const TAB_ICON = "h-[1.15em] w-[1.15em]";
 
+/**
+ * Zahnrad – mit **Zähnen**, nicht mit Strahlen (ToDo 9.28).
+ *
+ * Die erste Fassung war ein Kreis mit sechs abgesetzten Strichen darum. Das
+ * ist die Bauform einer Sonne, und genau so wurde sie gelesen: Torsten hielt
+ * den Reiter zweimal für eine Helligkeitsumschaltung („das Symbol für
+ * Einstellungen ist kein Zahnrad“). Der Unterschied ist nicht Geschmack,
+ * sondern Erkennbarkeit: Ein Zahnrad hat **anliegende** Zähne auf einem
+ * geschlossenen Ring – die Lücke zwischen Ring und Strich ist es, die das
+ * Bild zur Sonne macht.
+ *
+ * Deshalb hier ein gefüllter Kranz mit acht anliegenden Zähnen und einem
+ * ausgesparten Loch in der Mitte (`fill-rule: evenodd`). **Der Pfad ist
+ * gerechnet und nicht abgetippt** – von Hand gesetzte Koordinaten sehen im
+ * Quelltext plausibel aus und stehen im Bild schief, und schief ist bei einem
+ * Zahnrad sofort zu sehen.
+ */
+const GEAR_PATH = (() => {
+  const mitte = 12;
+  const zaehne = 8;
+  const aussen = 10.6; // Spitze des Zahns
+  const innen = 7.6; // Grund zwischen zwei Zähnen
+  // Wie breit ein Zahn gemessen am Winkel ist: 0.5 wäre Zahn und Lücke gleich
+  // breit. Etwas schmaler steht ruhiger, weil die Spitze außen länger wird.
+  const breite = 0.42;
+
+  const punkt = (winkel: number, radius: number) =>
+    `${(mitte + Math.cos(winkel) * radius).toFixed(2)} ${(mitte + Math.sin(winkel) * radius).toFixed(2)}`;
+
+  const schritt = (Math.PI * 2) / zaehne;
+  const teile: string[] = [];
+
+  for (let i = 0; i < zaehne; i += 1) {
+    const start = i * schritt - schritt / 2;
+    teile.push(
+      `${i === 0 ? "M" : "L"}${punkt(start, innen)}`,
+      `L${punkt(start + schritt * ((1 - breite) / 2), aussen)}`,
+      `L${punkt(start + schritt * ((1 + breite) / 2), aussen)}`,
+      `L${punkt(start + schritt, innen)}`,
+    );
+  }
+
+  // Das Loch gegenläufig, damit `evenodd` es aussticht.
+  const loch = 3.5;
+  return (
+    `${teile.join("")}Z` +
+    `M${mitte + loch} ${mitte}` +
+    `A${loch} ${loch} 0 1 0 ${mitte - loch} ${mitte}` +
+    `A${loch} ${loch} 0 1 0 ${mitte + loch} ${mitte}Z`
+  );
+})();
+
 function GearIcon() {
   return (
-    <svg
-      className={TAB_ICON}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      aria-hidden="true"
-    >
-      <circle cx="12" cy="12" r="3.2" strokeWidth="2" />
-      <path
-        d="M12 2.5v2.2M12 19.3v2.2M4.2 7.2l1.9 1.1M17.9 15.7l1.9 1.1M4.2 16.8l1.9-1.1M17.9 8.3l1.9-1.1"
-        strokeWidth="2"
-        strokeLinecap="round"
-      />
+    <svg className={TAB_ICON} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path fillRule="evenodd" clipRule="evenodd" d={GEAR_PATH} />
     </svg>
   );
 }

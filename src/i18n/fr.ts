@@ -358,6 +358,7 @@ export const fr: Messages = {
   "adminMail.intro": "Pour « mot de passe oublié » et le changement d’adresse e-mail. Sans ces données, les deux fonctions sont masquées.",
   "adminMail.notify": "Notifier les nouveaux retours à",
   "adminMail.notifyNone": "aucune notification",
+  "adminMail.notifyMissing": "Cette indication manque : l’envoi fonctionne, mais aucun courriel ne part lors d’un nouveau retour.",
   "adminMail.notifyNote": "Chaque nouvelle erreur ou suggestion envoie aussitôt un courriel à cette adresse. Objet : « Wheelee Fehler » ou « Wheelee Verbesserungsvorschlag ». Laisser vide pour désactiver.",
   "adminMail.notifyInvalid": "L’adresse de notification ne semble pas correcte.",
   "adminMail.statusOn": "L’envoi fonctionne.",

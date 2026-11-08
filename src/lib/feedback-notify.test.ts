@@ -6,6 +6,7 @@ import net from "node:net";
 import { closeDb } from "./db/sqlite";
 import { saveMailConfig } from "./db/mail-config";
 import { NOTIFY_SUBJECT, notifyNewFeedback, notifyText } from "./feedback-notify";
+import { setLogWriter } from "./log";
 import type { ValidFeedback } from "./feedback";
 
 /** Benachrichtigung des Betreibers bei neuer Rückmeldung (ToDo 17.9). */
@@ -158,5 +159,38 @@ describe("Versand", () => {
     // Die Meldung ist da; ein kaputtes Postfach darf sie nicht gefährden.
     konfiguriere(1, "betreiber@example.org");
     await expect(notifyNewFeedback(meldung())).resolves.toBeUndefined();
+  });
+
+  /*
+   * **Still heißt still gegenüber der meldenden Person, nicht gegenüber dem
+   * Betreiber** (ToDo 17.10). Genau das fehlte: Am 2026-11-08 kam keine
+   * Benachrichtigung an, und es gab nirgends eine Spur – die Suche begann
+   * mit Raten. Jeder der drei Ausgänge hinterlässt jetzt eine Zeile.
+   */
+  describe("Protokoll", () => {
+    const zeilen: string[] = [];
+
+    beforeEach(() => {
+      zeilen.length = 0;
+      setLogWriter((line) => zeilen.push(line));
+    });
+
+    afterEach(() => {
+      setLogWriter(null);
+    });
+
+    it("hält fest, dass keine Adresse eingetragen ist", async () => {
+      konfiguriere(1, null);
+      await notifyNewFeedback(meldung());
+      expect(zeilen.join("\n")).toContain("keine_adresse");
+    });
+
+    it("hält den Fehlschlag fest – und nennt dabei keine Adresse", async () => {
+      konfiguriere(1, "betreiber@example.org");
+      await notifyNewFeedback(meldung());
+      const text = zeilen.join("\n");
+      expect(text).toContain("feedback_notify_failed");
+      expect(text).not.toContain("betreiber@example.org");
+    });
   });
 });

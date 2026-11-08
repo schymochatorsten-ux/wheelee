@@ -350,6 +350,7 @@ export const en: Messages = {
   "adminMail.intro": "For “forgot password” and changing the email address. Without these details both functions are hidden.",
   "adminMail.notify": "Notify about new feedback at",
   "adminMail.notifyNone": "no notification",
+  "adminMail.notifyMissing": "This is missing: sending works, but no email goes out when new feedback arrives.",
   "adminMail.notifyNote": "Every new fault report or suggestion sends an email to this address at once. Subject: “Wheelee Fehler” or “Wheelee Verbesserungsvorschlag”. Leave empty to switch it off.",
   "adminMail.notifyInvalid": "The notification address does not look right.",
   "adminMail.statusOn": "Sending is active.",

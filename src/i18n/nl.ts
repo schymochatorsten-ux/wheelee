@@ -350,6 +350,7 @@ export const nl: Messages = {
   "adminMail.intro": "Voor “wachtwoord vergeten” en het wijzigen van het e-mailadres. Zonder deze gegevens zijn beide functies verborgen.",
   "adminMail.notify": "Melding bij nieuwe terugmelding naar",
   "adminMail.notifyNone": "geen melding",
+  "adminMail.notifyMissing": "Deze gegevens ontbreken: verzenden werkt, maar er gaat geen e-mail uit bij nieuwe reacties.",
   "adminMail.notifyNote": "Elke nieuwe fout of suggestie stuurt meteen een e-mail naar dit adres. Onderwerp: “Wheelee Fehler” of “Wheelee Verbesserungsvorschlag”. Laat leeg om het uit te zetten.",
   "adminMail.notifyInvalid": "Het adres voor de melding ziet er niet goed uit.",
   "adminMail.statusOn": "Het versturen werkt.",
