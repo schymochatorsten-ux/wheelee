@@ -12,10 +12,21 @@ import { activeAdminCount, type Role } from "./accounts";
 export interface AccountSummary {
   id: string;
   email: string;
+  /** Anmeldename (18.7); `null` heißt: Dieses Konto geht über die Adresse. */
+  username: string | null;
   role: Role;
   createdAt: string;
   lastLoginAt: string | null;
   disabledAt: string | null;
+  /**
+   * Ist die Adresse nachgewiesen? Gehört in die Liste, seit ein Administrator
+   * sie ändern kann (18.8): Danach ist sie unbestätigt, und `ADMIN_EMAILS`
+   * hebt nur bestätigte Adressen (10.19). Ohne die Anzeige wäre dieser
+   * Unterschied unsichtbar.
+   */
+  emailVerified: boolean;
+  /** Startpasswort noch nicht ersetzt – bis dahin keine Verwaltungsrechte (18.7). */
+  mustChangePassword: boolean;
 }
 
 /** Seitengröße der Kontenliste und deren Obergrenze (ToDo 18.6). */
@@ -33,10 +44,19 @@ export interface AccountListOptions {
 /**
  * `instr` statt `LIKE`: Eine Suche nach „50%“ oder „a_b“ soll die Zeichen
  * suchen und nicht als Muster gelten – dann müsste man sie maskieren.
+ *
+ * **Gesucht wird auch im Benutzernamen** (18.8). Seit 18.7 meldet man sich mit
+ * Name oder Adresse an; wer „Torsten“ in die Suche tippt und nichts findet,
+ * obwohl das Konto so heißt, hält es für nicht vorhanden.
  */
 function accountFilter(query: string | undefined): { where: string; params: string[] } {
   const needle = (query ?? "").trim().slice(0, ACCOUNT_SEARCH_MAX).toLowerCase();
-  return needle ? { where: "WHERE instr(lower(email), ?) > 0", params: [needle] } : { where: "", params: [] };
+  return needle
+    ? {
+        where: "WHERE instr(lower(email), ?) > 0 OR instr(lower(COALESCE(username, '')), ?) > 0",
+        params: [needle, needle],
+      }
+    : { where: "", params: [] };
 }
 
 /** Wie viele Konten die Suche trifft – unabhängig von der Seitengröße. */
@@ -56,7 +76,8 @@ export function listAccounts(options: AccountListOptions = {}): AccountSummary[]
     options.limit === undefined ? -1 : Math.max(0, Math.min(Math.floor(options.limit), ACCOUNTS_MAX));
   const rows = db()
     .prepare(
-      `SELECT id, email, role, created_at, last_login_at, disabled_at
+      `SELECT id, email, username, role, created_at, last_login_at, disabled_at,
+              email_verified_at, must_change_password
          FROM account ${where}
          ORDER BY (role = 'admin') DESC, (disabled_at IS NOT NULL) DESC, created_at DESC, id
          LIMIT ?`,
@@ -64,19 +85,25 @@ export function listAccounts(options: AccountListOptions = {}): AccountSummary[]
     .all(...params, limit) as {
     id: string;
     email: string;
+    username: string | null;
     role: string;
     created_at: string;
     last_login_at: string | null;
     disabled_at: string | null;
+    email_verified_at: string | null;
+    must_change_password: number;
   }[];
 
   return rows.map((row) => ({
     id: row.id,
     email: row.email,
+    username: row.username,
     role: row.role === "admin" ? "admin" : "user",
     createdAt: row.created_at,
     lastLoginAt: row.last_login_at,
     disabledAt: row.disabled_at,
+    emailVerified: row.email_verified_at !== null,
+    mustChangePassword: row.must_change_password === 1,
   }));
 }
 

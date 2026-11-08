@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-08):** **226 Einträge** auf oberster Ebene –
-davon 201, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-08):** **227 Einträge** auf oberster Ebene –
+davon 202, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 25, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -904,6 +904,20 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
   - **Gedrosselt wie die Anmeldung** (`LIMITS.passwordChange`, 5 je 10 Minuten, nach Herkunft und Konto): Der Endpunkt prüft das alte Passwort und wäre sonst ein zweiter Weg, es zu erraten.
   - **Neue Regeln gibt es nicht**: `passwordProblem` aus `password-rules.ts` gilt wie bei der Registrierung. Tests: `accounts.test.ts` (Datenbank), `e2e/passwort-aendern.spec.ts`. Eine Sitzungsübersicht (welche Geräte) wurde nicht gebaut; „alle übrigen verwerfen" deckt den Zweck ab.
 - [x] **Lizenzangabe je Stadt im Datenmodell** (2026-10-10, Teil von 2a.5/10.3). `license` ist ein eigenes Feld statt eingebettet im Freitext; `src/lib/parking/license.ts` zerlegt ältere Angaben und unterscheidet dabei eine fehlende Lizenz von einer Lizenz namens „nicht angegeben". Die Oberfläche benennt die Lücke offen, statt sie zu verschweigen.
+
+- [x] 18.8 **Konten in der Verwaltung ändern: Name, Adresse, Passwort** (2026-11-08, auf Torstens Wunsch „Benutzerverwaltung wo er Nutzer löschen, ändern etc. kann“; `lib/db/accounts.ts`, `lib/db/admin.ts`, `api/admin/accounts/[id]/route.ts`, `components/AdminUsers.tsx`).
+
+  **Löschen, Sperren und die Rolle gab es schon** (18.1, 18.3) – gefehlt hat das Ändern. Neu je Konto: Benutzername setzen oder entfernen, Adresse ändern, ein neues Startpasswort setzen.
+
+  - **Das Zurücksetzen des Passworts ist der eigentliche Zugewinn.** „Passwort vergessen“ setzt den Mailversand voraus; ohne ihn – und das ist der Stand, bis 10.22 auf dem NAS eingerichtet ist – gab es für jemanden, der sich aussperrt, **keinen** Weg zurück. Mit einer nicht mehr erreichbaren Adresse auch mit Mailversand nicht.
+  - **Das eigene Passwort geht hier ausdrücklich nicht** (`"self"`, 409, und in der Oberfläche fehlt das Feld). Das Ändern des eigenen verlangt das bisherige (10.7), damit eine gestohlene Sitzung allein nicht genügt; über diesen Weg wäre die Regel umgangen. Der Knopf fehlt, statt eine Fehlermeldung zu provozieren.
+  - **Ein zurückgesetztes Passwort ist ein Startpasswort** wie in 18.7: `must_change_password = 1`, keine Mindestlänge, keine Verwaltungsrechte bis zur eigenen Wahl – und **alle Sitzungen des Kontos enden**. Wer zurücksetzt, tut es, weil der bisherige Zugang nicht mehr stimmt; eine weiterlaufende Sitzung wäre das Gegenteil davon. Offene Mail-Links verfallen mit (wie in `changePassword`, 10.19).
+  - **Eine vom Administrator geänderte Adresse gilt als unbestätigt.** Niemand hat nachgewiesen, dass das Postfach erreichbar ist – auch der nicht, der sie eingetippt hat. Sie als bestätigt zu führen wäre eine Behauptung über etwas Ungeprüftes, und `ADMIN_EMAILS` hebt ausdrücklich nur bestätigte Adressen (10.19). **Die Liste zeigt den Zustand deshalb an**, zusammen mit „Startpasswort“: Beides war vorher unsichtbar und beides erklärt, warum ein Konto keine Rechte bekommt – sonst sucht man den Fehler woanders.
+  - **Die Sitzungen überleben eine Adressänderung**, anders als beim Passwort: Sie ist kein Hinweis auf Missbrauch. Wer jemanden hinauswerfen will, sperrt das Konto.
+  - **Genau ein Feld je Aufruf**, mehrere werden mit 400 abgelehnt. Die Änderungen laufen nicht gemeinsam in einer Transaktion; scheiterte die zweite, bliebe die erste bestehen und die Oberfläche zeigte einen Fehler, obwohl etwas geändert wurde. Vorher stand genau das als Einschränkung im Kommentar („die Oberfläche sendet immer nur eine von beiden“) – eine Zusage der Oberfläche an den Server, die der Server nicht geprüft hat.
+  - **Die Suche greift jetzt auch den Benutzernamen.** Seit 18.7 meldet man sich mit Name oder Adresse an; wer „Torsten“ sucht und nichts findet, obwohl das Konto so heißt, hält es für nicht vorhanden.
+  - **Eindeutigkeit über den Index, nicht über ein vorgelagertes `SELECT`** – dieselbe Begründung wie bei `createAccount`: Zwei gleichzeitige Änderungen kämen sonst beide durch die Prüfung. Groß- und Kleinschreibung zählt beim Namen nicht (Migration 12).
+  - **Im Browser durchgespielt** (Telefonformat, Dev-Server): Konto aufklappen, vergebenen Namen → „Dieser Benutzername ist schon vergeben“, dann umbenennen, Adresse auf `Neue.Adresse@…` ändern → kleingeschrieben gespeichert und als unbestätigt geführt, Startpasswort setzen → Konto trägt danach „Startpasswort“. Am eigenen Konto stehen nur Name und Adresse, kein Passwortfeld und kein Löschen. Keine Fehler in der Konsole außer dem beabsichtigten 409. 13 neue Unit-Tests (`account-edit.test.ts`), 700 Tests grün, `typecheck` und `lint` sauber. 18 neue Texte in allen neun Sprachen.
 
 - [x] 18.6 **Kontenliste der Verwaltung begrenzt** (2026-10-24; gefunden bei der Browserprüfung von 18.5: 158 Konten untereinander mit je drei Knöpfen). `GET /api/admin/accounts?q=&limit=` liefert höchstens 25 Konten (Obergrenze 200) plus `total`; `listAccounts({query, limit})` und `countAccounts(query)` in `src/lib/db/admin.ts`. Oberfläche `AdminUsers.tsx`: Suchfeld, „25 von 206 Konten“, Knopf „Weitere Konten anzeigen“.
   - **Server begrenzt, nicht die Oberfläche** – die Route liefert auch ohne Parameter nur eine Seite. Zugang unverändert: 401 ohne Admin (`e2e/verwaltung.spec.ts`, alle Verwaltungsrouten).

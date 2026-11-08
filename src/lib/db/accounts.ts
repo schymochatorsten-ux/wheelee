@@ -1,7 +1,7 @@
 import { createHash, randomBytes, randomUUID } from "node:crypto";
 import { db, now } from "./sqlite";
 import { hashPassword, verifyPassword, verifyPasswordAsync } from "../auth/password";
-import { normalizeEmail } from "../auth/email";
+import { looksLikeEmail, normalizeEmail } from "../auth/email";
 import { adminEmails } from "../auth/admin-emails";
 import { listFavorites } from "./favorites";
 
@@ -417,6 +417,127 @@ export function setDisabled(accountId: string, disabled: boolean): boolean {
     .run(disabled ? now() : null, accountId);
   if (disabled) deleteSessionsOf(accountId);
   return true;
+}
+
+/**
+ * Benutzernamen setzen oder entfernen, durch einen Administrator (ToDo 18.8).
+ *
+ * Seit 18.7 kann man sich mit Name **oder** Adresse anmelden; ein Konto ohne
+ * Namen ist keins mit Mangel, sondern eins, das über die Adresse geht. Deshalb
+ * ist `null` erlaubt.
+ *
+ * Eindeutig ohne Rücksicht auf Groß- und Kleinschreibung (Migration 12) –
+ * geprüft über den Index und nicht mit einem vorgelagerten `SELECT`, aus
+ * demselben Grund wie bei `createAccount`: Zwei gleichzeitige Änderungen kämen
+ * sonst beide durch die Prüfung.
+ */
+export function setUsername(
+  accountId: string,
+  username: string | null,
+): "ok" | "not-found" | "taken" | "invalid" {
+  if (username !== null && usernameProblem(username)) return "invalid";
+  try {
+    const result = db()
+      .prepare("UPDATE account SET username = ? WHERE id = ?")
+      .run(username, accountId);
+    return Number(result.changes) === 1 ? "ok" : "not-found";
+  } catch (error) {
+    if (String((error as Error).message).includes("UNIQUE")) return "taken";
+    throw error;
+  }
+}
+
+/**
+ * Die Adresse eines Kontos ändern, durch einen Administrator (ToDo 18.8).
+ *
+ * **Die neue Adresse gilt als unbestätigt.** Niemand hat nachgewiesen, dass
+ * das Postfach erreichbar ist – auch der Administrator nicht, der sie
+ * eingetippt hat. Sie als bestätigt zu führen wäre eine Behauptung über etwas,
+ * das nicht geprüft wurde, und `ADMIN_EMAILS` hebt ausdrücklich nur bestätigte
+ * Adressen (10.19). Die Liste zeigt den Zustand deshalb an.
+ *
+ * **Die Sitzungen bleiben bestehen.** Eine Adressänderung ist kein Hinweis auf
+ * einen Missbrauch; wer jemanden hinauswerfen will, sperrt das Konto. Offene
+ * Links aus Mails verlieren dagegen ihre Gültigkeit: Sie wurden für die alte
+ * Adresse ausgestellt.
+ */
+export function setEmailByAdmin(
+  accountId: string,
+  email: string,
+): "ok" | "not-found" | "taken" | "invalid" {
+  if (!looksLikeEmail(email)) return "invalid";
+  const normalized = normalizeEmail(email);
+  const handle = db();
+
+  handle.exec("BEGIN");
+  try {
+    const result = handle
+      .prepare("UPDATE account SET email = ?, email_verified_at = NULL WHERE id = ?")
+      .run(normalized, accountId);
+    if (Number(result.changes) !== 1) {
+      handle.exec("ROLLBACK");
+      return "not-found";
+    }
+    handle
+      .prepare("UPDATE mail_token SET used_at = ? WHERE account_id = ? AND used_at IS NULL")
+      .run(now(), accountId);
+    handle.exec("COMMIT");
+    return "ok";
+  } catch (error) {
+    handle.exec("ROLLBACK");
+    if (String((error as Error).message).includes("UNIQUE")) return "taken";
+    throw error;
+  }
+}
+
+/**
+ * Ein neues Startpasswort setzen, durch einen Administrator (ToDo 18.8).
+ *
+ * **Der Weg für den Fall, dass jemand ausgesperrt ist.** „Passwort vergessen"
+ * setzt den Mailversand voraus; ohne ihn gäbe es sonst überhaupt keine
+ * Möglichkeit, und mit ihm immer noch keine für eine Adresse, die nicht mehr
+ * erreichbar ist.
+ *
+ * Es ist ein **Startpasswort** wie bei `createOperatorAccount`: Es unterliegt
+ * nicht der Mindestlänge, und bis die Person ein eigenes gesetzt hat, gibt das
+ * Konto keine Verwaltungsrechte (`isAdminAccount`). Alle Sitzungen des Kontos
+ * enden – wer das Passwort zurücksetzt, tut es typischerweise, weil der
+ * bisherige Zugang nicht mehr stimmt, und eine weiterlaufende Sitzung wäre
+ * genau das Gegenteil davon. Offene Mail-Links verfallen mit (wie in
+ * `changePassword`, 10.19).
+ *
+ * **Das eigene Konto ist ausgenommen** (`"self"`), und das ist keine
+ * Förmlichkeit: Das Ändern des eigenen Passworts verlangt das bisherige
+ * (ToDo 10.7), damit eine gestohlene Sitzung allein nicht genügt. Über diesen
+ * Weg wäre das umgangen.
+ */
+export function resetPasswordByAdmin(
+  accountId: string,
+  actingAccountId: string,
+  newPassword: string,
+): "ok" | "not-found" | "self" {
+  if (accountId === actingAccountId) return "self";
+
+  const handle = db();
+  handle.exec("BEGIN");
+  try {
+    const result = handle
+      .prepare("UPDATE account SET password_hash = ?, must_change_password = 1 WHERE id = ?")
+      .run(hashPassword(newPassword), accountId);
+    if (Number(result.changes) !== 1) {
+      handle.exec("ROLLBACK");
+      return "not-found";
+    }
+    handle.prepare("DELETE FROM session WHERE account_id = ?").run(accountId);
+    handle
+      .prepare("UPDATE mail_token SET used_at = ? WHERE account_id = ? AND used_at IS NULL")
+      .run(now(), accountId);
+    handle.exec("COMMIT");
+    return "ok";
+  } catch (error) {
+    handle.exec("ROLLBACK");
+    throw error;
+  }
 }
 
 export function deleteSession(token: string | undefined): void {

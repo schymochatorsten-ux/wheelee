@@ -188,6 +188,11 @@ bliebe in der Git-Historie stehen.
   **Die `.env` wird dafür nicht mehr gebraucht** (10.22); stehen dort noch
   SMTP-Variablen, gewinnt trotzdem, was auf der Seite gespeichert ist, und die
   Seite sagt das an.
+- **Ein zweites Admin-Konto anlegen**, sobald du angemeldet bist (Reiter
+  „Rückmeldungen“ → Benutzer und Einladungen). **Das ist die Absicherung gegen
+  genau den Fall, für den es sonst wieder Niklas bräuchte:** Sperrst du dich
+  aus, kann der zweite Admin dir unter „Ändern“ ein neues Startpasswort setzen
+  (18.8). Mit nur einem Konto und ohne Mailversand gibt es keinen Weg zurück.
 - **Google Search Console** (19.13): Eigentum bestätigen, Sitemap einreichen.
   Braucht nur dein Google-Konto und den Registrar.
 - **OSM-Hinweise zurückmelden** (19.5), Liste in `data/_validierung.md`.

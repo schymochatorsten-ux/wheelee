@@ -13,9 +13,13 @@ import { useLocale, useT } from "@/i18n/context";
 interface AccountView {
   id: string;
   email: string;
+  username: string | null;
   role: "admin" | "user";
+  createdAt: string;
   lastLoginAt: string | null;
   disabledAt: string | null;
+  emailVerified: boolean;
+  mustChangePassword: boolean;
   isYou: boolean;
 }
 
@@ -43,6 +47,19 @@ export function AdminUsers() {
   const [role, setRole] = useState<"admin" | "user">("user");
   const [created, setCreated] = useState<{ email: string; link: string } | null>(null);
   const [copied, setCopied] = useState(false);
+
+  /**
+   * Welches Konto gerade aufgeklappt ist, und was in seinen Feldern steht
+   * (ToDo 18.8).
+   *
+   * **Nur eines auf einmal.** Die Felder zeigen den gespeicherten Stand; blieben
+   * mehrere Formulare offen, während die Liste sich nach jeder Änderung neu
+   * lädt, stünden dort halb getippte Werte neben frisch geladenen – und man
+   * sähe nicht mehr, welcher davon gilt.
+   */
+  const [editing, setEditing] = useState<string | null>(null);
+  const [draft, setDraft] = useState({ username: "", email: "", password: "" });
+  const [saved, setSaved] = useState<string | null>(null);
 
   const [total, setTotal] = useState<number | null>(null);
   const [search, setSearch] = useState("");
@@ -97,6 +114,28 @@ export function AdminUsers() {
   useEffect(() => {
     void load();
   }, [load]);
+
+  function openEditor(account: AccountView) {
+    setEditing(account.id);
+    setSaved(null);
+    setError(null);
+    // Das Passwortfeld bleibt leer: Es gibt keinen Wert zum Anzeigen, nur
+    // einen zum Setzen.
+    setDraft({ username: account.username ?? "", email: account.email, password: "" });
+  }
+
+  /**
+   * Eine einzelne Änderung am Konto. Der Endpunkt nimmt genau ein Feld je
+   * Aufruf (die Begründung steht dort), deshalb hat jede Zeile ihren Knopf.
+   */
+  async function change(id: string, body: Record<string, unknown>, keepOpen = true) {
+    setSaved(null);
+    if (await send(`/api/admin/accounts/${id}`, "PATCH", body)) {
+      setSaved(id);
+      if (!keepOpen) setEditing(null);
+      if ("password" in body) setDraft((current) => ({ ...current, password: "" }));
+    }
+  }
 
   /** Eine Änderung senden und danach neu laden; die Antwort sagt, warum es nicht ging. */
   async function send(url: string, method: string, body?: unknown) {
@@ -247,6 +286,7 @@ export function AdminUsers() {
               className="rounded-lg border border-neutral-300 p-3 text-sm dark:border-neutral-700"
             >
               <p className="font-medium break-all">
+                {account.username ? `${account.username} · ` : ""}
                 {account.email}{" "}
                 <span className="font-normal text-neutral-500">
                   · {t(`users.role.${account.role}`)}
@@ -254,7 +294,25 @@ export function AdminUsers() {
                   {account.disabledAt ? ` · ${t("users.disabled")}` : ""}
                 </span>
               </p>
+              {/*
+                Zwei Zustände, die sonst unsichtbar wären und beide etwas
+                bedeuten: Eine unbestätigte Adresse wird von `ADMIN_EMAILS`
+                nicht gehoben (10.19), und ein Konto mit Startpasswort hat
+                noch keine Verwaltungsrechte (18.7). Wer das nicht sieht,
+                sucht den Fehler woanders.
+              */}
+              {!account.emailVerified || account.mustChangePassword ? (
+                <p className="text-amber-700 dark:text-amber-300">
+                  {[
+                    account.emailVerified ? null : t("users.unverified"),
+                    account.mustChangePassword ? t("users.startPassword") : null,
+                  ]
+                    .filter(Boolean)
+                    .join(" · ")}
+                </p>
+              ) : null}
               <p className="text-neutral-500">
+                {t("users.created", { date: date(account.createdAt) })} ·{" "}
                 {account.lastLoginAt
                   ? t("users.lastLogin", { date: date(account.lastLoginAt) })
                   : t("users.never")}
@@ -282,6 +340,16 @@ export function AdminUsers() {
                 >
                   {account.disabledAt ? t("users.enable") : t("users.disable")}
                 </button>
+                <button
+                  type="button"
+                  className={button}
+                  aria-expanded={editing === account.id}
+                  onClick={() =>
+                    editing === account.id ? setEditing(null) : openEditor(account)
+                  }
+                >
+                  {editing === account.id ? t("users.editClose") : t("users.edit")}
+                </button>
                 {account.isYou ? null : (
                   <button
                     type="button"
@@ -296,6 +364,115 @@ export function AdminUsers() {
                   </button>
                 )}
               </div>
+
+              {editing === account.id ? (
+                <div className="mt-3 space-y-3 border-t border-neutral-200 pt-3 dark:border-neutral-800">
+                  <div>
+                    <label
+                      htmlFor={`name-${account.id}`}
+                      className="block text-xs text-neutral-500 uppercase"
+                    >
+                      {t("users.username")}
+                    </label>
+                    <div className="mt-1 flex flex-wrap gap-2">
+                      <input
+                        id={`name-${account.id}`}
+                        value={draft.username}
+                        autoComplete="off"
+                        onChange={(event) =>
+                          setDraft({ ...draft, username: event.target.value })
+                        }
+                        placeholder={t("users.usernameNone")}
+                        className="min-h-11 min-w-0 flex-1 rounded-lg border border-neutral-300 bg-white px-3 text-sm dark:border-neutral-700 dark:bg-neutral-950"
+                      />
+                      <button
+                        type="button"
+                        className={button}
+                        onClick={() =>
+                          void change(account.id, { username: draft.username.trim() || null })
+                        }
+                      >
+                        {t("users.apply")}
+                      </button>
+                    </div>
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor={`mail-${account.id}`}
+                      className="block text-xs text-neutral-500 uppercase"
+                    >
+                      {t("users.email")}
+                    </label>
+                    <div className="mt-1 flex flex-wrap gap-2">
+                      <input
+                        id={`mail-${account.id}`}
+                        type="email"
+                        value={draft.email}
+                        autoComplete="off"
+                        onChange={(event) => setDraft({ ...draft, email: event.target.value })}
+                        className="min-h-11 min-w-0 flex-1 rounded-lg border border-neutral-300 bg-white px-3 text-sm dark:border-neutral-700 dark:bg-neutral-950"
+                      />
+                      <button
+                        type="button"
+                        className={button}
+                        onClick={() => void change(account.id, { email: draft.email })}
+                      >
+                        {t("users.apply")}
+                      </button>
+                    </div>
+                    <p className="mt-1 text-xs text-neutral-500">{t("users.emailNote")}</p>
+                  </div>
+
+                  {/*
+                    Das eigene Passwort wird hier nicht gesetzt: Dafür ist das
+                    bisherige anzugeben (10.7), damit eine gestohlene Sitzung
+                    allein nicht genügt. Der Knopf fehlt deshalb, statt eine
+                    Fehlermeldung zu provozieren.
+                  */}
+                  {account.isYou ? null : (
+                    <div>
+                      <label
+                        htmlFor={`pw-${account.id}`}
+                        className="block text-xs text-neutral-500 uppercase"
+                      >
+                        {t("users.newPassword")}
+                      </label>
+                      <div className="mt-1 flex flex-wrap gap-2">
+                        <input
+                          id={`pw-${account.id}`}
+                          type="password"
+                          value={draft.password}
+                          autoComplete="new-password"
+                          onChange={(event) =>
+                            setDraft({ ...draft, password: event.target.value })
+                          }
+                          className="min-h-11 min-w-0 flex-1 rounded-lg border border-neutral-300 bg-white px-3 text-sm dark:border-neutral-700 dark:bg-neutral-950"
+                        />
+                        <button
+                          type="button"
+                          className={button}
+                          disabled={draft.password.length === 0}
+                          onClick={() =>
+                            void change(account.id, { password: draft.password })
+                          }
+                        >
+                          {t("users.apply")}
+                        </button>
+                      </div>
+                      <p className="mt-1 text-xs text-neutral-500">
+                        {t("users.newPasswordNote")}
+                      </p>
+                    </div>
+                  )}
+
+                  {saved === account.id ? (
+                    <p role="status" className="text-sm text-green-700 dark:text-green-400">
+                      {t("users.saved")}
+                    </p>
+                  ) : null}
+                </div>
+              ) : null}
             </li>
           ))}
         </ul>
