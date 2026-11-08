@@ -54,7 +54,16 @@ export default function Datenschutz() {
    * damit eine Datenschutzerklärung mit rotem „Angabe fehlt“ hinterlassen und
    * sie nicht selbst vervollständigen können.
    */
-  const mailProvider = readMailConfig()?.provider?.trim() || process.env.WHEELEE_MAIL_PROVIDER?.trim() || null;
+  const mailConfig = readMailConfig();
+  const mailProvider = mailConfig?.provider?.trim() || process.env.WHEELEE_MAIL_PROVIDER?.trim() || null;
+  /*
+   * Die Benachrichtigung des Betreibers bei neuer Rückmeldung (ToDo 17.9) ist
+   * ein **eigener Zweck** und steht nur da, wenn sie eingerichtet ist. Ohne
+   * diesen Absatz wäre der Satz „nur auf deine Anforderung hin verschickt die
+   * App eine E-Mail" falsch geworden – eine Datenschutzerklärung, die der
+   * Code überholt hat, ist schlimmer als eine knappe.
+   */
+  const notifyEnabled = mailEnabled && Boolean(mailConfig?.notifyEmail?.trim());
 
   return (
     <LegalPage title="Datenschutzerklärung" updated="2026-10-30">
@@ -257,6 +266,19 @@ export default function Datenschutz() {
               Es gibt keine Werbe-, Rundschreiben- oder Erinnerungsmails. Rechtsgrundlage ist Art. 6
               Abs. 1 lit. b DSGVO (Vertragserfüllung: Zugang zum Konto) beziehungsweise bei der
               neuen Adresse die von dir ausgelöste Anforderung.
+            </p>
+            {notifyEnabled ? (
+              <p>
+                <strong>Benachrichtigung des Betreibers:</strong> Schickst du eine Rückmeldung
+                (Fehler oder Verbesserungsvorschlag), geht eine E-Mail an den Betreiber. Sie
+                enthält deinen Meldungstext und – falls du sie freiwillig angegeben hast – deine
+                Antwortadresse; der Versanddienstleister unten sieht beides. Diese Mail geht
+                <strong> an niemanden sonst</strong> und ist keine Antwort an dich.
+                Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO: Eine Meldung über einen falschen
+                Parkplatz nützt nur, wenn sie jemand zeitnah liest.
+              </p>
+            ) : null}
+            <p>
             </p>
             <p>
               <strong>Versanddienstleister:</strong>{" "}

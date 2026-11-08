@@ -52,6 +52,19 @@ export function proxy(request: NextRequest) {
 
   const response = NextResponse.next({ request: { headers } });
   response.headers.set("Content-Security-Policy", policy);
+
+  /*
+   * **Kein `Vary: Accept-Language` – nachgesehen, nicht vergessen**
+   * (ToDo 19.17). Die Sprache hängt an Cookie und `Accept-Language` (15.5),
+   * die Adresse ändert sich dabei nicht; ein Zwischenspeicher könnte also die
+   * Sprache des vorigen Besuchers ausliefern. Gemessen: Alle HTML-Antworten
+   * tragen `Cache-Control: no-store`, weil jede Seite wegen der Nonce je
+   * Anfrage gerendert wird – **sie werden nirgends zwischengespeichert, und
+   * damit gibt es nichts zu unterscheiden.** Zweimal versucht, die Kopfzeile
+   * zu setzen (in `next.config.ts` und hier): Next ersetzt `Vary` für seine
+   * eigenen Zwecke, sie kam in keinem Fall an. Eine Zeile, die nichts
+   * bewirkt, wäre schlimmer als keine – sie sähe nach Schutz aus.
+   */
   return response;
 }
 

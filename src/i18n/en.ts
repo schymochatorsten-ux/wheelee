@@ -172,6 +172,8 @@ export const en: Messages = {
   "settings.sources": "Sources and licences",
   "settings.coverage": "Data coverage",
   "settings.info": "About wheelee",
+  "settings.cities": "All cities",
+  "city.synonyms": "Also called disabled parking bays, blue badge bays or wheelchair parking. These are spaces that require the blue EU parking card.",
   "info.lead":
     "wheelee helps people with mobility impairments quickly find the nearest disabled parking space.",
   "info.reach":
@@ -341,6 +343,10 @@ export const en: Messages = {
   "users.created": "created {date}",
   "adminMail.title": "Sending mail",
   "adminMail.intro": "For “forgot password” and changing the email address. Without these details both functions are hidden.",
+  "adminMail.notify": "Notify about new feedback at",
+  "adminMail.notifyNone": "no notification",
+  "adminMail.notifyNote": "Every new fault report or suggestion sends an email to this address at once. Subject: “Wheelee Fehler” or “Wheelee Verbesserungsvorschlag”. Leave empty to switch it off.",
+  "adminMail.notifyInvalid": "The notification address does not look right.",
   "adminMail.statusOn": "Sending is active.",
   "adminMail.statusOff": "Sending is off.",
   "adminMail.fromEnv": "Details from the server environment",

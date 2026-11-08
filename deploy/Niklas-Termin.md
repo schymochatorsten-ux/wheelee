@@ -179,15 +179,10 @@ bliebe in der Git-Historie stehen.
 
 ## Danach allein, ohne Niklas
 
-- **SMTP einrichten**, wann du willst: anmelden → Reiter **Rückmeldungen** →
-  ganz unten **Mailversand**. Server, Port, Benutzer, Passwort,
-  Absenderadresse, Adresse der App (`https://wheelee.de`) und der
-  Versanddienstleister für die Datenschutzerklärung. Dann **Testmail an mich** –
-  sie geht immer an die eigene Adresse. Ein Fehler des Servers („535
-  Authentifizierung fehlgeschlagen") steht im Klartext da.
-  **Die `.env` wird dafür nicht mehr gebraucht** (10.22); stehen dort noch
-  SMTP-Variablen, gewinnt trotzdem, was auf der Seite gespeichert ist, und die
-  Seite sagt das an.
+- **SMTP einrichten**, wann du willst – Anleitung für GMX unten in dieser
+  Datei. **Die `.env` wird dafür nicht mehr gebraucht** (10.22); stehen dort
+  noch SMTP-Variablen, gewinnt trotzdem, was auf der Seite gespeichert ist,
+  und die Seite sagt das an.
 - **Ein zweites Admin-Konto anlegen**, sobald du angemeldet bist (Reiter
   „Rückmeldungen“ → Benutzer und Einladungen). **Das ist die Absicherung gegen
   genau den Fall, für den es sonst wieder Niklas bräuchte:** Sperrst du dich

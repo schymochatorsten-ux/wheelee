@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { saveFeedback } from "@/lib/db/feedback";
 import { validateFeedback } from "@/lib/feedback";
+import { notifyNewFeedback } from "@/lib/feedback-notify";
 import { userFromRequest } from "@/lib/auth/session";
 import { allow, clientKey, LIMITS } from "@/lib/rate-limit";
 import { withLogging } from "@/lib/log";
@@ -60,6 +61,15 @@ async function postHandler(request: Request) {
   if (withinLimit) {
     const user = userFromRequest(request);
     saveFeedback(check.value, user?.id ?? null);
+
+    /*
+     * Benachrichtigung an den Betreiber (ToDo 17.9) – **im Hintergrund, nach
+     * dem Speichern**. Die Antwort wartet nicht darauf, und ein kaputter
+     * Mailserver darf die Meldung nicht verhindern: Wer gerade vor einem
+     * aufgehobenen Parkplatz steht, soll nicht an unserem Postfach scheitern.
+     * Dieselbe Form wie bei der Bestätigungsmail der Registrierung (10.21).
+     */
+    void notifyNewFeedback(check.value);
   }
 
   return NextResponse.json({ ok: true, willReply: check.value.contactEmail !== null });

@@ -370,6 +370,15 @@ geltenden Angaben kommen.
 Der Grund für die Verlagerung: Die `.env` liegt auf dem NAS, und dorthin kommt
 nur, wer Zugang zum Gerät hat. Ein abgelaufenes Postfachpasswort hätte sonst
 einen Termin gekostet – und bis dahin gäbe es kein „Passwort vergessen“.
+Schritt für Schritt für ein GMX-Postfach:
+[deploy/Mailversand-GMX.md](deploy/Mailversand-GMX.md).
+
+**Benachrichtigung bei neuer Rückmeldung (ToDo 17.9).** Steht dort eine
+Adresse, geht bei jedem neuen Eintrag sofort eine Mail an sie – Betreff
+„Wheelee Fehler“ oder „Wheelee Verbesserungsvorschlag“, fest und deutsch,
+damit sich im Postfach eine Regel darauf bauen lässt. Der Versand läuft im
+Hintergrund und **kann die Meldung nicht gefährden**: Sie ist gespeichert,
+bevor die Mail losgeht.
 
 **Admin ist man nur durch die Rolle in der Datenbank** (ToDo 10.19). `ADMIN_EMAILS`
 ist der Erstzugang: Beim ersten Zugriff nach dem Start werden die *bereits

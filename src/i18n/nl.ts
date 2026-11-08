@@ -172,6 +172,8 @@ export const nl: Messages = {
   "settings.sources": "Bronnen en licenties",
   "settings.coverage": "Gegevensdekking",
   "settings.info": "Over wheelee",
+  "settings.cities": "Alle steden",
+  "city.synonyms": "Ook gehandicaptenparkeerplaats, invalidenparkeerplaats of rolstoelparkeerplaats genoemd. Het gaat om plaatsen waarvoor de blauwe Europese parkeerkaart nodig is.",
   "info.lead":
     "wheelee helpt mensen met een beperking om snel de dichtstbijzijnde gehandicaptenparkeerplaats te vinden.",
   "info.reach":
@@ -341,6 +343,10 @@ export const nl: Messages = {
   "users.created": "aangemaakt op {date}",
   "adminMail.title": "E-mail versturen",
   "adminMail.intro": "Voor “wachtwoord vergeten” en het wijzigen van het e-mailadres. Zonder deze gegevens zijn beide functies verborgen.",
+  "adminMail.notify": "Melding bij nieuwe terugmelding naar",
+  "adminMail.notifyNone": "geen melding",
+  "adminMail.notifyNote": "Elke nieuwe fout of suggestie stuurt meteen een e-mail naar dit adres. Onderwerp: “Wheelee Fehler” of “Wheelee Verbesserungsvorschlag”. Laat leeg om het uit te zetten.",
+  "adminMail.notifyInvalid": "Het adres voor de melding ziet er niet goed uit.",
   "adminMail.statusOn": "Het versturen werkt.",
   "adminMail.statusOff": "Het versturen staat uit.",
   "adminMail.fromEnv": "Gegevens uit de serveromgeving",

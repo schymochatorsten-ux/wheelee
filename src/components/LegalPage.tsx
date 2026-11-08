@@ -70,7 +70,10 @@ export async function LegalPage({
     // `min-h-0 flex-1 overflow-y-auto`, weil das Layout die Bildschirmhöhe
     // hält (für den Offline-Hinweis über der Karte). Ohne das wächst die Seite
     // über den Rand hinaus und lässt sich nicht scrollen.
-    <main className="min-h-0 flex-1 overflow-y-auto">
+    // `relative` aus demselben Grund wie im Einstellungsreiter (ToDo 9.22):
+    // Ein `sr-only`-Element unterhalb des sichtbaren Bereichs wäre sonst nicht
+    // vom `overflow` erfasst und zöge die Seite auf.
+    <main className="relative min-h-0 flex-1 overflow-y-auto">
       <div className="mx-auto max-w-2xl px-4 py-6">
         <Link
           href="/"

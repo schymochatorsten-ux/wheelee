@@ -174,6 +174,8 @@ export const ru: Messages = {
   "settings.sources": "Источники и лицензии",
   "settings.coverage": "Охват данных",
   "settings.info": "О wheelee",
+  "settings.cities": "Все города",
+  "city.synonyms": "Их также называют местами для инвалидов или парковкой для колясочников. Это места, для которых нужна синяя европейская парковочная карта.",
   "info.lead":
     "wheelee помогает людям с ограниченной подвижностью быстро найти ближайшее парковочное место для инвалидов.",
   "info.reach":
@@ -344,6 +346,10 @@ export const ru: Messages = {
   "users.created": "создана {date}",
   "adminMail.title": "Отправка писем",
   "adminMail.intro": "Для «забыли пароль» и смены адреса электронной почты. Без этих данных обе функции скрыты.",
+  "adminMail.notify": "Уведомлять о новых сообщениях на",
+  "adminMail.notifyNone": "без уведомления",
+  "adminMail.notifyNote": "Каждая новая ошибка или предложение сразу отправляет письмо на этот адрес. Тема: «Wheelee Fehler» или «Wheelee Verbesserungsvorschlag». Пустое поле отключает уведомления.",
+  "adminMail.notifyInvalid": "Адрес для уведомления выглядит неправильно.",
   "adminMail.statusOn": "Отправка работает.",
   "adminMail.statusOff": "Отправка выключена.",
   "adminMail.fromEnv": "Данные из окружения сервера",

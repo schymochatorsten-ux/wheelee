@@ -172,6 +172,8 @@ export const pt: Messages = {
   "settings.sources": "Fontes e licenças",
   "settings.coverage": "Cobertura de dados",
   "settings.info": "Sobre o wheelee",
+  "settings.cities": "Todas as cidades",
+  "city.synonyms": "Também chamados lugares para deficientes, estacionamento reservado ou lugares para cadeira de rodas. São lugares para os quais é necessário o dístico europeu de estacionamento.",
   "info.lead":
     "O wheelee ajuda pessoas com mobilidade reduzida a encontrar rapidamente o lugar de estacionamento para pessoas com deficiência mais próximo.",
   "info.reach":
@@ -341,6 +343,10 @@ export const pt: Messages = {
   "users.created": "criada em {date}",
   "adminMail.title": "Envio de e-mail",
   "adminMail.intro": "Para «esqueci-me da palavra-passe» e a alteração do endereço de e-mail. Sem estes dados, ambas as funções estão ocultas.",
+  "adminMail.notify": "Avisar de novo comentário para",
+  "adminMail.notifyNone": "sem aviso",
+  "adminMail.notifyNote": "Cada novo erro ou sugestão envia logo um e-mail para este endereço. Assunto: «Wheelee Fehler» ou «Wheelee Verbesserungsvorschlag». Deixe vazio para desligar.",
+  "adminMail.notifyInvalid": "O endereço para o aviso não parece correto.",
   "adminMail.statusOn": "O envio está ativo.",
   "adminMail.statusOff": "O envio está desligado.",
   "adminMail.fromEnv": "Dados do ambiente do servidor",

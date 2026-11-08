@@ -3,6 +3,7 @@ import { userFromRequest } from "@/lib/auth/session";
 import { withLogging } from "@/lib/log";
 import { clearMailConfig, readMailConfig, saveMailConfig } from "@/lib/db/mail-config";
 import { envMailConfigured, mailConfigured, validUrl } from "@/lib/mail";
+import { looksLikeEmail } from "@/lib/auth/email";
 import { t } from "@/i18n";
 
 /**
@@ -46,6 +47,7 @@ function state() {
           publicUrl: row.publicUrl,
           enabled: row.enabled,
           provider: row.provider,
+          notifyEmail: row.notifyEmail,
           hasPassword: row.password !== null && row.password !== "",
           updatedAt: row.updatedAt,
         }
@@ -69,6 +71,7 @@ interface Body {
   publicUrl?: unknown;
   enabled?: unknown;
   provider?: unknown;
+  notifyEmail?: unknown;
 }
 
 const text = (value: unknown): string => (typeof value === "string" ? value.trim() : "");
@@ -109,6 +112,17 @@ async function putHandler(request: Request) {
     return NextResponse.json({ error: t("adminMail.urlInvalid") }, { status: 400 });
   }
 
+  /*
+   * Die Benachrichtigungsadresse ist freiwillig (leer = keine), aber wenn sie
+   * dasteht, muss sie wie eine Adresse aussehen. Ein Tippfehler fiele sonst
+   * erst Wochen später auf – nämlich nie, denn es kommt ja nur nichts an.
+   */
+  const notifyRaw = text(body.notifyEmail);
+  if (notifyRaw && !looksLikeEmail(notifyRaw)) {
+    return NextResponse.json({ error: t("adminMail.notifyInvalid") }, { status: 400 });
+  }
+  const notify = notifyRaw || null;
+
   saveMailConfig(
     {
       host,
@@ -126,6 +140,7 @@ async function putHandler(request: Request) {
       // **keine** Pflicht: Wer beim Einrichten noch nicht weiß, wie der
       // Anbieter im Vertrag heißt, soll trotzdem speichern können.
       provider: text(body.provider) || null,
+      notifyEmail: notify,
     },
     user.id,
   );

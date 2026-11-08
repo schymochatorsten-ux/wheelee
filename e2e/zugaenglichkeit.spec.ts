@@ -47,7 +47,18 @@ for (const modus of ["light", "dark"] as const) {
       await pruefen(page);
     });
 
-    for (const pfad of ["/info", "/parkplaetze/hamburg", "/quellen", "/abdeckung", "/datenschutz"]) {
+    // `/parkplaetze` und eine Buchstabenseite sind seit 19.17 dabei: Sie
+    // bestehen fast nur aus Verweisen, und genau dort fällt ein zu schwacher
+    // Kontrast am ehesten auf – und am wenigsten beim Draufschauen.
+    for (const pfad of [
+      "/info",
+      "/parkplaetze",
+      "/parkplaetze/buchstabe/w",
+      "/parkplaetze/hamburg",
+      "/quellen",
+      "/abdeckung",
+      "/datenschutz",
+    ]) {
       test(`Seite ${pfad}`, async ({ page }) => {
         await page.goto(pfad);
         await expect(page.getByRole("heading", { level: 1 })).toBeVisible();

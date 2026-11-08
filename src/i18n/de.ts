@@ -166,6 +166,8 @@ export const de = {
   "settings.sources": "Quellen und Lizenzen",
   "settings.coverage": "Datenabdeckung",
   "settings.info": "Über wheelee",
+  "settings.cities": "Alle Städte",
+  "city.synonyms": "Oft auch Schwerbehindertenparkplatz, Rollstuhl-Parkplatz oder Behindertenstellplatz genannt. Gemeint sind Stellplätze, für die ein blauer EU-Parkausweis nötig ist.",
   "info.lead":
     "wheelee hilft Menschen mit Gehbehinderung, schnell den nächsten Behindertenparkplatz zu finden.",
   "info.reach":
@@ -339,6 +341,10 @@ export const de = {
   "users.created": "angelegt {date}",
   "adminMail.title": "Mailversand",
   "adminMail.intro": "Für „Passwort vergessen“ und das Ändern der E-Mail-Adresse. Ohne diese Angaben sind beide Funktionen ausgeblendet.",
+  "adminMail.notify": "Benachrichtigung bei neuer Rückmeldung an",
+  "adminMail.notifyNone": "keine Benachrichtigung",
+  "adminMail.notifyNote": "Bei jedem neuen Fehler oder Vorschlag geht sofort eine Mail an diese Adresse. Betreff: „Wheelee Fehler“ oder „Wheelee Verbesserungsvorschlag“. Leer lassen schaltet es ab.",
+  "adminMail.notifyInvalid": "Die Adresse für die Benachrichtigung sieht nicht richtig aus.",
   "adminMail.statusOn": "Der Versand läuft.",
   "adminMail.statusOff": "Der Versand ist aus.",
   "adminMail.fromEnv": "Angaben aus der Umgebung des Servers",

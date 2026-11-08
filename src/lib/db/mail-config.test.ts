@@ -31,6 +31,7 @@ const eingabe = (over: Partial<MailConfigInput> = {}): MailConfigInput => ({
   publicUrl: "https://wheelee.example.org",
   enabled: true,
   provider: "Beispiel Mail GmbH, Berlin",
+  notifyEmail: null,
   ...over,
 });
 

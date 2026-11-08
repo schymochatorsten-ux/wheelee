@@ -229,6 +229,17 @@ export function SettingsPanel({
           >
             {t("settings.info")}
           </Link>
+          {/*
+            Das Städteverzeichnis gehört in die Fußzeile und nicht nur in die
+            Sitemap (19.17): Erst ein echter Verweis macht aus den 3.700
+            Stadtseiten etwas, das eine Suchmaschine für wichtig hält.
+          */}
+          <Link
+            href="/parkplaetze"
+            className="inline-flex min-h-11 items-center text-blue-800 hover:underline focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"
+          >
+            {t("settings.cities")}
+          </Link>
           <Link
             href="/impressum"
             className="inline-flex min-h-11 items-center text-blue-800 hover:underline focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"

@@ -103,6 +103,7 @@ describe("Datenschutzerklärung und Mailversand", () => {
         publicUrl: "https://wheelee.example.org",
         enabled: true,
         provider: "Neu GmbH, aus der Verwaltung",
+        notifyEmail: null,
       },
       null,
     );

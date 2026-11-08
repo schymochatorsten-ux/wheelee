@@ -308,6 +308,19 @@ const MIGRATIONS: readonly string[] = [
   -- Das wäre genau die Abhängigkeit, die 10.22 auflöst.
   ALTER TABLE mail_config ADD COLUMN provider TEXT;
   `,
+
+  // 15 – Benachrichtigung bei neuer Rückmeldung (ToDo 17.9).
+  `
+  -- An welche Adresse eine Nachricht geht, sobald jemand einen Fehler oder
+  -- einen Vorschlag einträgt. Leer heißt: keine Benachrichtigung.
+  --
+  -- **Eine eigene Angabe und nicht „alle Admin-Konten":** Wer die Verwaltung
+  -- bedienen darf, will nicht zwangsläufig jede Meldung ins Postfach bekommen
+  -- – und ein zweiter Admin, der still mitbenachrichtigt wird, ohne es
+  -- eingestellt zu haben, wäre eine Überraschung. Hier steht genau eine
+  -- Adresse, und jemand hat sie eingetragen.
+  ALTER TABLE mail_config ADD COLUMN notify_email TEXT;
+  `,
 ];
 
 let database: DatabaseSync | null = null;

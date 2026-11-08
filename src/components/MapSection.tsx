@@ -731,7 +731,7 @@ export function MapSection({
             Bildschirm der häufigste Grund, warum eine Einstellungsseite
             unübersichtlich wirkt.
           */
-          <div className="mx-auto h-full w-full max-w-2xl space-y-6 overflow-y-auto px-4 py-4">
+          <div className="relative mx-auto h-full w-full max-w-2xl space-y-6 overflow-y-auto px-4 py-4">
             {/*
               Die Prüfliste aus den Bewertungen (8.8) steht im **selben**
               Reiter und nicht in einem eigenen. Beide Abschnitte beantworten
@@ -764,7 +764,19 @@ export function MapSection({
             <AdminMail />
           </div>
         ) : (
-          <div className="h-full overflow-y-auto px-4 py-4">
+          /*
+            **`relative` ist hier kein Schmuck, sondern behebt einen zweiten
+            Scrollbalken** (ToDo 9.22). `sr-only` ist in Tailwind
+            `position: absolute`. Ohne einen positionierten Vorfahren ist der
+            Bezugsrahmen dieser Überschriften das `main` **außerhalb** des
+            scrollenden Kastens – sie werden von dessen `overflow` also nicht
+            abgeschnitten, stehen an ihrer statischen Stelle weit unten und
+            ziehen die ganze Seite auf. Gemessen bei 1280 × 860 und
+            angemeldetem Konto: `body.scrollHeight` 1876 statt 860, also gut
+            tausend Pixel Leere unter dem Inhalt. Mit `relative` liegt der
+            Bezugsrahmen im Kasten und alles wird geschnitten.
+          */
+          <div className="relative h-full overflow-y-auto px-4 py-4">
             <SettingsPanel
               detected={detected}
               cities={cities}

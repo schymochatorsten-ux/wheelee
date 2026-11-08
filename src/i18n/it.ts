@@ -172,6 +172,8 @@ export const it: Messages = {
   "settings.sources": "Fonti e licenze",
   "settings.coverage": "Copertura dei dati",
   "settings.info": "Informazioni su wheelee",
+  "settings.cities": "Tutte le città",
+  "city.synonyms": "Chiamati anche parcheggi per disabili, stalli riservati o posti per sedia a rotelle. Sono stalli per cui serve il contrassegno europeo di parcheggio.",
   "info.lead":
     "wheelee aiuta le persone con difficoltà motorie a trovare rapidamente il parcheggio per disabili più vicino.",
   "info.reach":
@@ -341,6 +343,10 @@ export const it: Messages = {
   "users.created": "creato il {date}",
   "adminMail.title": "Invio di e-mail",
   "adminMail.intro": "Per «password dimenticata» e la modifica dell’indirizzo e-mail. Senza questi dati entrambe le funzioni sono nascoste.",
+  "adminMail.notify": "Avvisa di nuovi riscontri a",
+  "adminMail.notifyNone": "nessun avviso",
+  "adminMail.notifyNote": "Ogni nuovo errore o suggerimento invia subito un’e-mail a questo indirizzo. Oggetto: «Wheelee Fehler» o «Wheelee Verbesserungsvorschlag». Lascia vuoto per disattivarlo.",
+  "adminMail.notifyInvalid": "L’indirizzo per l’avviso non sembra corretto.",
   "adminMail.statusOn": "L’invio è attivo.",
   "adminMail.statusOff": "L’invio è disattivato.",
   "adminMail.fromEnv": "Dati dall’ambiente del server",

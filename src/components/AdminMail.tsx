@@ -31,6 +31,7 @@ interface Config {
   publicUrl: string;
   enabled: boolean;
   provider: string | null;
+  notifyEmail: string | null;
   hasPassword: boolean;
   updatedAt: string;
 }
@@ -52,6 +53,7 @@ const EMPTY = {
   publicUrl: "",
   enabled: true,
   provider: "",
+  notifyEmail: "",
 };
 
 export function AdminMail() {
@@ -75,6 +77,7 @@ export function AdminMail() {
       publicUrl: next.config?.publicUrl ?? "",
       enabled: next.config?.enabled ?? true,
       provider: next.config?.provider ?? "",
+      notifyEmail: next.config?.notifyEmail ?? "",
     });
   }, []);
 
@@ -116,6 +119,7 @@ export function AdminMail() {
           publicUrl: form.publicUrl,
           enabled: form.enabled,
           provider: form.provider,
+          notifyEmail: form.notifyEmail,
         }),
       });
       const data = (await response.json()) as State & { error?: string };
@@ -280,6 +284,24 @@ export function AdminMail() {
             onChange={(event) => setForm({ ...form, publicUrl: event.target.value })}
           />
           <span className="mt-1 block text-xs text-neutral-500">{t("adminMail.publicUrlNote")}</span>
+        </label>
+
+        {/*
+          Die Benachrichtigung steht bei den Zugangsdaten und nicht bei den
+          Rückmeldungen: Sie setzt den Versand voraus, und wer sie einträgt,
+          hat gerade diesen eingerichtet.
+        */}
+        <label className="block text-sm">
+          {t("adminMail.notify")}
+          <input
+            className={field}
+            type="email"
+            value={form.notifyEmail}
+            autoComplete="off"
+            placeholder={t("adminMail.notifyNone")}
+            onChange={(event) => setForm({ ...form, notifyEmail: event.target.value })}
+          />
+          <span className="mt-1 block text-xs text-neutral-500">{t("adminMail.notifyNote")}</span>
         </label>
 
         {/*

@@ -175,6 +175,8 @@ export const es: Messages = {
   "settings.sources": "Fuentes y licencias",
   "settings.coverage": "Cobertura de datos",
   "settings.info": "Acerca de wheelee",
+  "settings.cities": "Todas las ciudades",
+  "city.synonyms": "También llamadas plazas PMR, aparcamiento para personas con discapacidad o plazas para silla de ruedas. Son plazas que requieren la tarjeta azul de estacionamiento de la UE.",
   "info.lead":
     "wheelee ayuda a las personas con movilidad reducida a encontrar rápidamente la plaza de aparcamiento para personas con discapacidad más cercana.",
   "info.reach":
@@ -343,6 +345,10 @@ export const es: Messages = {
   "users.created": "creada el {date}",
   "adminMail.title": "Envío de correo",
   "adminMail.intro": "Para «he olvidado mi contraseña» y el cambio de dirección de correo. Sin estos datos ambas funciones están ocultas.",
+  "adminMail.notify": "Avisar de nuevos comentarios a",
+  "adminMail.notifyNone": "sin aviso",
+  "adminMail.notifyNote": "Cada nuevo fallo o sugerencia envía de inmediato un correo a esta dirección. Asunto: «Wheelee Fehler» o «Wheelee Verbesserungsvorschlag». Déjalo vacío para desactivarlo.",
+  "adminMail.notifyInvalid": "La dirección para el aviso no parece correcta.",
   "adminMail.statusOn": "El envío está activo.",
   "adminMail.statusOff": "El envío está desactivado.",
   "adminMail.fromEnv": "Datos del entorno del servidor",

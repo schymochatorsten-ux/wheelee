@@ -32,6 +32,11 @@ export interface MailConfigRow {
    * dann nennt die Erklärung den Mangel, statt einen Namen zu erfinden.
    */
   provider: string | null;
+  /**
+   * Adresse für die Benachrichtigung bei neuer Rückmeldung (ToDo 17.9).
+   * `null` heißt: keine.
+   */
+  notifyEmail: string | null;
   updatedAt: string;
 }
 
@@ -53,6 +58,7 @@ export interface MailConfigInput {
   publicUrl: string;
   enabled: boolean;
   provider: string | null;
+  notifyEmail: string | null;
 }
 
 interface Raw {
@@ -65,6 +71,7 @@ interface Raw {
   public_url: string;
   enabled: number;
   provider: string | null;
+  notify_email: string | null;
   updated_at: string;
 }
 
@@ -72,7 +79,8 @@ interface Raw {
 export function readMailConfig(): MailConfigRow | null {
   const row = db()
     .prepare(
-      `SELECT host, port, secure, username, password, from_address, public_url, enabled, provider, updated_at
+      `SELECT host, port, secure, username, password, from_address, public_url, enabled,
+              provider, notify_email, updated_at
        FROM mail_config WHERE id = 1`,
     )
     .get() as Raw | undefined;
@@ -89,6 +97,7 @@ export function readMailConfig(): MailConfigRow | null {
     publicUrl: row.public_url,
     enabled: row.enabled === 1,
     provider: row.provider,
+    notifyEmail: row.notify_email,
     updatedAt: row.updated_at,
   };
 }
@@ -108,8 +117,8 @@ export function saveMailConfig(input: MailConfigInput, accountId: string | null)
   db()
     .prepare(
       `INSERT INTO mail_config
-         (id, host, port, secure, username, password, from_address, public_url, enabled, provider, updated_at, updated_by)
-       VALUES (1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+         (id, host, port, secure, username, password, from_address, public_url, enabled, provider, notify_email, updated_at, updated_by)
+       VALUES (1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
        ON CONFLICT (id) DO UPDATE SET
          host = excluded.host,
          port = excluded.port,
@@ -120,6 +129,7 @@ export function saveMailConfig(input: MailConfigInput, accountId: string | null)
          public_url = excluded.public_url,
          enabled = excluded.enabled,
          provider = excluded.provider,
+         notify_email = excluded.notify_email,
          updated_at = excluded.updated_at,
          updated_by = excluded.updated_by`,
     )
@@ -133,6 +143,7 @@ export function saveMailConfig(input: MailConfigInput, accountId: string | null)
       input.publicUrl,
       input.enabled ? 1 : 0,
       input.provider,
+      input.notifyEmail,
       now(),
       accountId,
     );

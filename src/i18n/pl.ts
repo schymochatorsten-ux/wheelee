@@ -174,6 +174,8 @@ export const pl: Messages = {
   "settings.sources": "Źródła i licencje",
   "settings.coverage": "Pokrycie danych",
   "settings.info": "O wheelee",
+  "settings.cities": "Wszystkie miasta",
+  "city.synonyms": "Nazywane też kopertami dla niepełnosprawnych lub miejscami dla osób na wózku. To miejsca, na których wymagana jest niebieska europejska karta parkingowa.",
   "info.lead":
     "wheelee pomaga osobom z ograniczoną mobilnością szybko znaleźć najbliższe miejsce parkingowe dla osób niepełnosprawnych.",
   "info.reach":
@@ -344,6 +346,10 @@ export const pl: Messages = {
   "users.created": "utworzono {date}",
   "adminMail.title": "Wysyłka e-maili",
   "adminMail.intro": "Do „nie pamiętam hasła” i zmiany adresu e-mail. Bez tych danych obie funkcje są ukryte.",
+  "adminMail.notify": "Powiadomienie o nowej informacji zwrotnej na",
+  "adminMail.notifyNone": "bez powiadomienia",
+  "adminMail.notifyNote": "Każdy nowy błąd lub pomysł od razu wysyła wiadomość na ten adres. Temat: „Wheelee Fehler” lub „Wheelee Verbesserungsvorschlag”. Puste pole wyłącza powiadomienia.",
+  "adminMail.notifyInvalid": "Adres powiadomienia nie wygląda poprawnie.",
   "adminMail.statusOn": "Wysyłka działa.",
   "adminMail.statusOff": "Wysyłka jest wyłączona.",
   "adminMail.fromEnv": "Dane ze środowiska serwera",

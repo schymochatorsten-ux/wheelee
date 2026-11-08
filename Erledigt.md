@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-08):** **229 Einträge** auf oberster Ebene –
-davon 204, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-08):** **233 Einträge** auf oberster Ebene –
+davon 208, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 25, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -726,6 +726,25 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
 
 ## 17 / 10. Aufräumen und Sicherheit (2026-10-17)
 
+- [x] 17.9 **Mail an den Betreiber bei neuer Rückmeldung** (2026-11-08, auf Torstens Wunsch; Migration 15, `lib/feedback-notify.ts`, `api/feedback/route.ts`, `api/admin/mail/route.ts`, `components/AdminMail.tsx`, `app/datenschutz/page.tsx`, Anleitung in `deploy/Mailversand-GMX.md`).
+
+  Eine Meldung ist nur etwas wert, wenn sie jemand liest. Bisher musste man sich dafür anmelden und in den Reiter „Rückmeldungen“ sehen – also gerade dann daran denken, wenn nichts darauf hinweist, dass es etwas zu lesen gibt.
+
+  - **Betreff fest und deutsch:** „Wheelee Fehler“ oder „Wheelee Verbesserungsvorschlag“ (so gewünscht). Er steht **nicht** in den Sprachdateien: Die Mail geht an den Betreiber, und eine Betreffzeile, die je nach eingestellter Oberflächensprache anders heißt, ließe sich im Postfach nicht filtern.
+  - **Die Empfängeradresse ist eine eigene Angabe in der Verwaltung**, keine Liste aller Admin-Konten. Wer die Verwaltung bedienen darf, will nicht zwangsläufig jede Meldung ins Postfach bekommen; ein zweiter Admin, der still mitbenachrichtigt wird, wäre eine Überraschung. Leer heißt: keine Benachrichtigung.
+  - **Der Versand scheitert nie nach außen.** Die Meldung ist gespeichert, bevor die Mail losgeht, und der Aufruf läuft im Hintergrund (`void`, wie die Bestätigungsmail in 10.21). Ein kaputtes Postfach würde sonst genau die Rückmeldungen verhindern, auf die es ankommt – jemand steht womöglich gerade vor dem aufgehobenen Parkplatz.
+  - **Der Meldungstext steht in der Mail.** Ohne ihn müsste man für jede Nachricht doch die Verwaltung öffnen, und die Benachrichtigung spart nichts. Die Antwortadresse nur, wenn sie freiwillig angegeben wurde; sonst steht ausdrücklich da, dass keine Antwort möglich ist – dieselbe Unterscheidung wie in der Übersicht (Migration 3).
+  - **Die Datenschutzerklärung musste mit** (zu 10.16): Der Satz „nur auf deine Anforderung hin verschickt die App eine E-Mail“ wäre sonst falsch geworden. Neuer Absatz „Benachrichtigung des Betreibers“, nur sichtbar, wenn eine Adresse eingetragen ist, mit Art. 6 Abs. 1 lit. f DSGVO als Grundlage. **Eine Datenschutzerklärung, die der Code überholt hat, ist schlimmer als eine knappe.**
+  - **Ende zu Ende geprüft** (Dev-Server, eigener SMTP-Server): Vorschlag → Betreff „Wheelee Verbesserungsvorschlag“ mit Stadt und Antwortadresse; Fehler ohne Adresse → Betreff „Wheelee Fehler“ und der Satz, dass keine Antwort möglich ist; beide an die eingetragene Adresse. Der neue Absatz erscheint auf `/datenschutz`. Sechs Unit-Tests, darunter „wirft nicht, wenn der Mailserver nicht antwortet“. 709 Tests grün, `typecheck` und `lint` sauber.
+  - **Anleitung für GMX** in `deploy/Mailversand-GMX.md`: POP3/IMAP-Freigabe (GMX verlangt sie auch für reines Senden), `mail.gmx.net:587`, und der Fallstrick, dass die Absenderadresse die GMX-Adresse sein muss – sonst lehnt der Server mit 550 ab.
+
+- [x] 17.8 **Besucherzählung nachgerechnet, nicht nachgebessert** (2026-11-08, auf Torstens Frage „bist du sicher, dass das funktioniert? Es zeigt nur 3 an“). **Befund: Die Zählung stimmt; geändert wurde nichts.**
+
+  - **Der Botfilter wurde gemessen, nicht eingeschätzt.** `isBot` arbeitet mit Teilzeichenketten (`"fetch"`, `"preview"`, `"monitor"`, `"reader"`…), und so etwas trifft leicht einen echten Browser. Gegen 16 echte Kennungen gehalten – Chrome, Edge, Safari (macOS, iPhone, iPad), Firefox (Windows, Android, iOS), Samsung Internet, Opera, Vivaldi, Brave, Chrome iOS, die In-App-Browser von Instagram und Facebook – **fällt keine durch**; Googlebot, curl, die WhatsApp-Vorschau und eine leere Kennung werden erkannt.
+  - **Die IP kommt richtig an.** `clientKey` nimmt den letzten Eintrag aus `X-Forwarded-For`. Käme sie nicht an, fielen hinter dem Proxy alle Besucher mit gleichem Browser auf **einen** Hash zusammen – das wäre die Erklärung für eine zu kleine Zahl gewesen, ist es aber nicht.
+  - **Die Zahl ist eine Untergrenze, und das aus drei gewollten Gründen:** „Do Not Track“ und „Global Privacy Control“ werden respektiert (Brave sendet GPC von Haus aus), gezählt wird nur, wer JavaScript ausführt, und der Botfilter ist bewusst großzügig. Eine fälschlich ausgeschlossene Person fehlt in einer Zahl; ein fälschlich gezählter Roboter verfälscht sie.
+  - Der einzige Fehler in die andere Richtung ist ein Neustart des Containers: Die Menge der gesehenen Hashes lebt nur im Arbeitsspeicher, und wer danach wiederkommt, zählt am selben Tag ein zweites Mal. Das ist in `visits.ts` als gewollte leichte Überzählung festgehalten – lieber das als eine dauerhafte Kennung.
+
 - [x] 17.6 **Die Antwortadresse an offenen Meldungen läuft nach zwei Jahren ab** (2026-10-21, `cleanup.ts`, Migration 3). Die Lücke, die 17.5 offen ließ: Offene Meldungen laufen bewusst nicht ab – damit stand eine freiwillig angegebene Adresse unbegrenzt in der Datenbank, gegen die Zusage im Formular.
   - **Entfernt wird die Adresse, nicht die Meldung.** Der zweite erwogene Weg – offene Meldungen nach einer Frist maschinell auf „verworfen" setzen, damit 17.5 greift – ist verworfen: Dann entschiede ein Zeitablauf über einen Hinweis von jemandem, der sich die Mühe gemacht hat. So bleibt der Hinweis vollständig lesbar und kann weiter zur Korrektur beitragen; verloren geht allein die Möglichkeit zu antworten, und die war nach zwei Jahren ohne Bearbeitung ohnehin keine ernsthafte mehr.
   - **Zwei Jahre, also doppelt so lang wie die Frist für Erledigtes**, weil hier nichts abgeschlossen ist. Niemand soll sagen können, eine Meldung sei übergangen worden, weil die Technik zu schnell war.
@@ -776,6 +795,24 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
 ---
 
 ## 9. Darstellung und Bedienung
+
+- [x] 9.22 **Zweiter Scrollbalken auf der Einstellungsseite** (2026-11-08, von Torsten gemeldet; `MapSection.tsx`, `LegalPage.tsx`, `parkplaetze/[slug]/page.tsx`, `e2e/scrollen.spec.ts`).
+
+  **Ursache gemessen, nicht geraten:** `sr-only` ist in Tailwind `position: absolute`. Dem scrollenden Kasten fehlte `position: relative`, also war der Bezugsrahmen solcher Überschriften das umgebende `main` – sie wurden vom `overflow` nicht erfasst, standen an ihrer statischen Stelle weit unten und zogen die ganze Seite auf. Bei 1280 × 860 mit angemeldetem Konto: `body.scrollHeight` **1876 statt 860**, also über tausend Pixel Leere unter dem Inhalt plus ein zweiter Scrollbalken. Nach `relative`: 860, das Fenster scrollt nicht mehr, genau ein scrollender Kasten.
+
+  - **Nur angemeldet sichtbar**, weil der Reiter erst dann über den Bildschirm hinausreicht – deshalb ist es lange niemandem aufgefallen. Der E2E-Test meldet sich deshalb mit einem Konto an.
+  - Die Suche nach der Ursache lief über Messung statt Hinsehen: erst alle scrollenden Kästen auflisten, dann den Kasten kurz ausblenden (`display:none`) und `body.scrollHeight` erneut lesen – von 1876 auf 860. Damit stand der Verursacher fest, bevor eine Zeile geändert war.
+  - `relative` auch in `LegalPage` und auf der Stadtseite, die dieselbe Form haben.
+
+- [x] 19.17 **Auffindbarkeit: Städteverzeichnis, strukturierte Angaben, Synonyme** (2026-11-08, auf Torstens Wunsch; neu `app/parkplaetze/page.tsx`, `app/parkplaetze/buchstabe/[letter]/page.tsx`, `app/parkplaetze/verzeichnis.ts`, geändert `sitemap.ts`, `parkplaetze/[slug]/page.tsx`, `SettingsPanel.tsx`, `proxy.ts`).
+
+  - **Der größte Mangel waren verwaiste Seiten.** Die 3.763 Stadtseiten aus 19.12 standen **nur** in der Sitemap; kein einziger interner Link zeigte auf sie. Suchmaschinen werten Verweise als Hinweis auf Wichtigkeit – es gab keinen. Jetzt führt die Fußzeile auf `/parkplaetze`, von dort auf eine Seite je Anfangsbuchstabe und von dort auf jede Stadt.
+  - **Alle Städte auf einer Seite war ein Fehler, und zwar ein gemessener:** 2.236 KB HTML, nach dem Weglassen von `next/link` immer noch 2.021 KB – derselbe Fehler wie die 6,3 MB der Startseite (5.4), nur kleiner. Mit der Aufteilung: Übersicht 42 KB, größte Buchstabenseite 140 KB, vergleichbar mit einer Stadtseite (83 KB). Die Klassenliste steht am Elternknoten statt an jedem der tausenden Verweise; bei 150 Zeichen je Verweis sind das über 500 KB, und React liefert den Baum ein zweites Mal als Datenblock aus.
+  - **Strukturierte Angaben je Stadt:** `BreadcrumbList` (Google zeigt den Pfad im Suchergebnis statt der nackten Adresse) und `CollectionPage` mit `about: Place`. Mit Nonce wie auf der Startseite (10.7).
+  - **„Schlagworte" gibt es nicht mehr:** `meta keywords` wertet keine Suchmaschine aus. Stattdessen ein Satz im sichtbaren Text, der die gebräuchlichen anderen Namen nennt (Schwerbehindertenparkplatz, Rollstuhl-Parkplatz, Behindertenstellplatz, blauer EU-Parkausweis). Er erklärt zugleich, was gemeint ist, und ist damit auch ohne Suchmaschine seinen Platz wert – in allen neun Sprachen.
+  - **`Vary: Accept-Language` geprüft und bewusst weggelassen.** Die Sprache hängt an Cookie und Kopfzeile, die Adresse nicht – ein Zwischenspeicher könnte also die falsche Sprache ausliefern. Gemessen: Alle HTML-Antworten tragen `Cache-Control: no-store`, weil jede Seite wegen der Nonce je Anfrage gerendert wird; es gibt nichts zwischenzuspeichern. Zweimal versucht, die Kopfzeile zu setzen (`next.config.ts` und `proxy.ts`) – **Next ersetzt `Vary` für eigene Zwecke, sie kam nie an.** Eine Zeile, die nichts bewirkt, wäre schlimmer als keine; der Befund steht als Kommentar in `proxy.ts`.
+  - **Die neuen Seiten stehen in der Zugänglichkeitsprüfung** (`e2e/zugaenglichkeit.spec.ts`, hell und dunkel). Sie bestehen fast nur aus Verweisen – dort fällt ein zu schwacher Kontrast am ehesten auf und beim Draufschauen am wenigsten. 18 statt 14 Prüfungen, alle grün; der volle E2E-Durchlauf bleibt bei 134 Tests grün.
+  - **Leistung gemessen statt optimiert:** Jede Stadtseite durchsucht beim Aufruf den ganzen Bestand (`spotsOfCity`). Über 200 Städte gemittelt sind das **1,74 ms je Seite** – zu wenig, um dafür einen Zwischenspeicher einzuführen. Geändert wurde deshalb nichts. Offen bleibt die größere Frage: Alle Seiten sind `ƒ` (je Anfrage gerendert), weil die Nonce es verlangt (10.7); das ist eine bewusste Abwägung zwischen Sicherheitsrichtlinie und Auslieferzeit und wird nicht nebenbei umgestoßen.
 
 - [x] 9.21 **Eine Form für alle Einstellungsbereiche** (2026-11-08, auf Torstens Wunsch mit gezeigtem Vorbild: „schöner grafisch zusammengehörende Einstellungen umrahmen … auch nicht über die ganze Breite der Seite“; neu `components/SettingsSection.tsx`, umgestellt `SettingsPanel`, `OfflineCities`, `ReportedSpots`, `FeedbackAdmin`, `AdminUsers`, `AdminVisits`, `AdminMail`, `MapSection`).
 

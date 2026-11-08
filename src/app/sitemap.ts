@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getCities } from "@/lib/parking/spots";
+import { cityGroups, letterPath } from "./parkplaetze/verzeichnis";
 
 /**
  * Sitemap (ToDo 19.12): die festen Seiten und eine Seite je Stadt.
@@ -15,10 +16,21 @@ import { getCities } from "@/lib/parking/spots";
 const BASE = "https://wheelee.de";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const fixed = ["/", "/info", "/quellen", "/abdeckung"].map((path) => ({
+  // `/parkplaetze` ist das Verzeichnis (19.17) – der Weg, auf dem eine
+  // Suchmaschine die Stadtseiten über Links statt nur über diese Datei findet.
+  const fixed = ["/", "/info", "/parkplaetze", "/quellen", "/abdeckung"].map((path) => ({
     url: `${BASE}${path === "/" ? "" : path}`,
     changeFrequency: "weekly" as const,
-    priority: path === "/" ? 1 : 0.5,
+    priority: path === "/" ? 1 : path === "/parkplaetze" ? 0.7 : 0.5,
+  }));
+
+  // Je Anfangsbuchstabe eine Seite (19.17). Sie stehen hier, weil sie die
+  // Verweise auf die Stadtseiten tragen: Findet eine Suchmaschine sie nicht,
+  // sind die Stadtseiten wieder so verwaist wie vorher.
+  const letters = cityGroups(getCities()).letters.map((letter) => ({
+    url: `${BASE}${letterPath(letter)}`,
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
   }));
 
   const cities = getCities().map((city) => ({
@@ -29,5 +41,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: city.coverage === "official" ? 0.8 : 0.4,
   }));
 
-  return [...fixed, ...cities];
+  return [...fixed, ...letters, ...cities];
 }

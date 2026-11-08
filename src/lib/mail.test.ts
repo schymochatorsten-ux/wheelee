@@ -53,6 +53,7 @@ const gespeichert = (over: Partial<Parameters<typeof saveMailConfig>[0]> = {}) =
       publicUrl: "https://db.example.org",
       enabled: true,
       provider: null,
+      notifyEmail: null,
       ...over,
     },
     null,
