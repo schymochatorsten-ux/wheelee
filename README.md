@@ -352,11 +352,24 @@ Tailscale-Tunnel läuft und keine Verbindung nach außen braucht.
 | `WHEELEE_OPERATOR_PHONE`   | Telefonnummer – freiwillig                                             |
 | `WHEELEE_OPERATOR_VAT_ID`  | Umsatzsteuer-ID – nur falls vorhanden                                  |
 
-Optional (Mailversand für „Passwort vergessen“ und „E-Mail-Adresse ändern“,
-D-10): `SMTP_HOST`, `SMTP_FROM` und `WHEELEE_PUBLIC_URL` zusammen schalten ihn
-ein; dazu `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `SMTP_SECURE`. Ohne sie sind
-beide Funktionen ausgeblendet. Siehe [deploy/env.beispiel](deploy/env.beispiel);
-vor dem Einschalten die Datenschutzerklärung ergänzen (ToDo 10.16).
+**Mailversand für „Passwort vergessen“ und „E-Mail-Adresse ändern“ (D-10):
+seit ToDo 10.22 in der App einzurichten** – angemeldet als Administrator im
+Reiter „Rückmeldungen“ unter „Mailversand“, samt Testmail an die eigene
+Adresse. Ohne Angaben sind beide Funktionen ausgeblendet.
+
+Der Weg über die Umgebung bleibt als Rückfallebene: `SMTP_HOST`, `SMTP_FROM`
+und `WHEELEE_PUBLIC_URL` zusammen schalten ihn ein, dazu `SMTP_PORT`,
+`SMTP_USER`, `SMTP_PASS`, `SMTP_SECURE`, `WHEELEE_MAIL_PROVIDER` (siehe
+[deploy/env.beispiel](deploy/env.beispiel)). **Stehen Angaben in der Datenbank,
+gewinnen diese** – auch eine dort abgeschaltete Konfiguration, die den Versand
+dann ganz stilllegt. Die andere Reihenfolge wäre die gefährlichere: Eine
+Eingabe in der Verwaltung, die eine unsichtbare Variable überstimmt, sähe aus
+wie gespeichert und hätte keine Wirkung. Die Seite sagt deshalb an, woher die
+geltenden Angaben kommen.
+
+Der Grund für die Verlagerung: Die `.env` liegt auf dem NAS, und dorthin kommt
+nur, wer Zugang zum Gerät hat. Ein abgelaufenes Postfachpasswort hätte sonst
+einen Termin gekostet – und bis dahin gäbe es kein „Passwort vergessen“.
 
 **Admin ist man nur durch die Rolle in der Datenbank** (ToDo 10.19). `ADMIN_EMAILS`
 ist der Erstzugang: Beim ersten Zugriff nach dem Start werden die *bereits
@@ -485,6 +498,12 @@ Datei im Volume ab, eine vorhandene wird nicht überschrieben):
 ```bash
 docker exec wheelee sh -c 'mkdir -p /app/var/sicherung && node -e "const {DatabaseSync}=require(\"node:sqlite\");new DatabaseSync(process.env.WHEELEE_DB_PATH).prepare(\"VACUUM INTO ?\").run(process.argv[1])" /app/var/sicherung/wheelee-$(date +%F).sqlite'
 ```
+
+**In der Sicherung steht auch das SMTP-Passwort**, seit es in der Datenbank
+liegen kann (ToDo 10.22). Ein SMTP-Server verlangt das Passwort selbst und
+keinen Hash davon; es lässt sich deshalb nicht wie ein Kontopasswort
+unkenntlich ablegen. Die Sicherungen gehören entsprechend behandelt – es ist
+derselbe Rang wie die `.env` daneben.
 
 Den Takt (täglich 03:30, die letzten 14 bleiben) liefern die Timer in `deploy/`
 (`wheelee-sicherung.*`, ToDo 19.3; Einrichtung in `deploy/README.md`). Die

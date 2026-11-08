@@ -31,6 +31,7 @@ import { FeedbackAdmin } from "./FeedbackAdmin";
 import { ReportedSpots } from "./ReportedSpots";
 import { AdminUsers } from "./AdminUsers";
 import { AdminVisits } from "./AdminVisits";
+import { AdminMail } from "./AdminMail";
 
 /**
  * Hält Karte, Liste und Detailansicht zusammen: Standort anfragen,
@@ -750,6 +751,10 @@ export function MapSection({
             <FeedbackAdmin onShowSpot={select} />
             <AdminUsers />
             <AdminVisits />
+            {/* Mailversand einrichten (10.22): steht unten, weil man ihn einmal
+                einstellt und dann jahrelang nicht ansieht – anders als die
+                Prüflisten darüber, die bei jedem Öffnen zählen. */}
+            <AdminMail />
           </div>
         ) : (
           <div className="h-full overflow-y-auto px-4 py-4">

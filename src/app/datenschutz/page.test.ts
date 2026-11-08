@@ -1,6 +1,11 @@
-import { afterEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { createElement } from "react";
 import { prerenderToNodeStream } from "react-dom/static";
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
+import { closeDb } from "@/lib/db/sqlite";
+import { saveMailConfig } from "@/lib/db/mail-config";
 import Datenschutz from "./page";
 
 /**
@@ -23,7 +28,25 @@ const VARIABLEN = [
   "WHEELEE_MAIL_PROVIDER",
 ] as const;
 
+/*
+ * Eigene Datenbankdatei je Fall, seit die Seite den Versanddienstleister auch
+ * dort sucht (ToDo 10.22). Ohne das liefe der Test gegen die
+ * Entwicklungsdatenbank: Stünde dort ein Anbieter, schlüge „ohne Anbieter
+ * steht der Hinweis" fehl – und zwar nur auf dem Rechner, auf dem jemand den
+ * Versand einmal ausprobiert hat.
+ */
+let folder: string;
+
+beforeEach(() => {
+  folder = fs.mkdtempSync(path.join(os.tmpdir(), "wheelee-ds-"));
+  process.env.WHEELEE_DB_PATH = path.join(folder, "test.sqlite");
+  closeDb();
+});
+
 afterEach(() => {
+  closeDb();
+  delete process.env.WHEELEE_DB_PATH;
+  fs.rmSync(folder, { recursive: true, force: true });
   for (const name of VARIABLEN) delete process.env[name];
 });
 
@@ -62,5 +85,31 @@ describe("Datenschutzerklärung und Mailversand", () => {
     const html = await seite();
     expect(html).toContain("Angabe fehlt");
     expect(html).toContain("WHEELEE_MAIL_PROVIDER");
+  });
+
+  it("nimmt den Anbieter aus der Verwaltung vor dem aus der Umgebung", async () => {
+    // Der eigentliche Zweck von 10.22: Wer den Versand ohne Zugang zum NAS
+    // einschaltet, muss die Datenschutzerklärung auch ohne ihn vollständig
+    // bekommen.
+    process.env.WHEELEE_MAIL_PROVIDER = "Alt GmbH, aus der Umgebung";
+    saveMailConfig(
+      {
+        host: "smtp.example.org",
+        port: 587,
+        secure: false,
+        username: null,
+        password: null,
+        fromAddress: "wheelee <noreply@example.org>",
+        publicUrl: "https://wheelee.example.org",
+        enabled: true,
+        provider: "Neu GmbH, aus der Verwaltung",
+      },
+      null,
+    );
+
+    const html = await seite();
+    expect(html).toContain("Neu GmbH, aus der Verwaltung");
+    expect(html).not.toContain("Alt GmbH");
+    expect(html).not.toContain("Angabe fehlt");
   });
 });

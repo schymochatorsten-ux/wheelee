@@ -1,10 +1,19 @@
-import { afterEach, describe, expect, it } from "vitest";
+import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import net from "node:net";
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
 import { mailConfigured, publicUrl, sendMail } from "./mail";
+import { saveMailConfig } from "./db/mail-config";
+import { closeDb } from "./db/sqlite";
 
 /**
  * Mailversand (D-10), gegen einen kleinen SMTP-Server im Test statt gegen
  * einen echten Dienst: Es soll geprüft werden, was **wir** schicken.
+ *
+ * **Jeder Fall bekommt eine eigene Datenbankdatei**, seit die Zugangsdaten auch
+ * dort stehen können (ToDo 10.22): Sonst liefe der Test gegen die
+ * Entwicklungsdatenbank und änderte sie.
  */
 
 const VARIABLEN = [
@@ -17,9 +26,37 @@ const VARIABLEN = [
   "WHEELEE_PUBLIC_URL",
 ] as const;
 
+let folder: string;
+
+beforeEach(() => {
+  folder = fs.mkdtempSync(path.join(os.tmpdir(), "wheelee-mail-"));
+  process.env.WHEELEE_DB_PATH = path.join(folder, "test.sqlite");
+  closeDb();
+});
+
 afterEach(() => {
+  closeDb();
+  delete process.env.WHEELEE_DB_PATH;
+  fs.rmSync(folder, { recursive: true, force: true });
   for (const name of VARIABLEN) delete process.env[name];
 });
+
+const gespeichert = (over: Partial<Parameters<typeof saveMailConfig>[0]> = {}) =>
+  saveMailConfig(
+    {
+      host: "smtp.db.example",
+      port: 2525,
+      secure: false,
+      username: null,
+      password: null,
+      fromAddress: "db <db@example.org>",
+      publicUrl: "https://db.example.org",
+      enabled: true,
+      provider: null,
+      ...over,
+    },
+    null,
+  );
 
 /** Ein SMTP-Server, der alles annimmt und die Nachricht sammelt. */
 function fakeSmtp(): Promise<{ port: number; received: Promise<string>; close: () => void }> {
@@ -82,6 +119,31 @@ describe("Konfiguration", () => {
     process.env.WHEELEE_PUBLIC_URL = "http://localhost:3000";
     expect(publicUrl()).toBe("http://localhost:3000");
     process.env.WHEELEE_PUBLIC_URL = "kein link";
+    expect(publicUrl()).toBeNull();
+  });
+
+  it("nimmt die Angaben aus der Datenbank vor denen der Umgebung", () => {
+    process.env.SMTP_HOST = "smtp.env.example";
+    process.env.SMTP_FROM = "env <env@example.org>";
+    process.env.WHEELEE_PUBLIC_URL = "https://env.example.org";
+    expect(publicUrl()).toBe("https://env.example.org");
+
+    gespeichert();
+    // Sonst sähe eine Eingabe in der Verwaltung aus wie gespeichert und wäre
+    // doch wirkungslos (siehe db/mail-config.ts).
+    expect(publicUrl()).toBe("https://db.example.org");
+    expect(mailConfigured()).toBe(true);
+  });
+
+  it("schaltet den Versand ganz aus, statt auf die Umgebung zurückzufallen", () => {
+    process.env.SMTP_HOST = "smtp.env.example";
+    process.env.SMTP_FROM = "env <env@example.org>";
+    process.env.WHEELEE_PUBLIC_URL = "https://env.example.org";
+
+    gespeichert({ enabled: false });
+    // Wer in der Verwaltung abschaltet, will ihn aus haben – nicht heimlich
+    // über den alten Weg weiterlaufen lassen.
+    expect(mailConfigured()).toBe(false);
     expect(publicUrl()).toBeNull();
   });
 });

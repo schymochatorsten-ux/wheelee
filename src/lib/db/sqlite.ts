@@ -252,6 +252,62 @@ const MIGRATIONS: readonly string[] = [
   -- 1 = beim nächsten Anmelden muss das Passwort geändert werden (Startpasswort).
   ALTER TABLE account ADD COLUMN must_change_password INTEGER NOT NULL DEFAULT 0;
   `,
+
+  // 13 – Mailversand aus der Verwaltung statt aus der Umgebung (ToDo 10.22).
+  `
+  -- **Warum in der Datenbank und nicht weiter nur in der \`.env\`:** Die Datei
+  -- liegt auf dem NAS, und dorthin kommt nur Niklas. Jede Änderung an den
+  -- SMTP-Daten – ein neues Passwort, ein anderer Server – hieße sonst: einen
+  -- Termin ausmachen, bis dahin kein „Passwort vergessen". Die Angaben gehören
+  -- demjenigen, der die App betreibt, nicht demjenigen, der das Blech besitzt.
+  --
+  -- **Eine Zeile, erzwungen durch \`CHECK (id = 1)\`.** Eine Tabelle, in der
+  -- versehentlich zwei Konfigurationen stehen können, hätte eine stille
+  -- Reihenfolgefrage: Welche gilt? Die Antwort soll nicht von \`ORDER BY\`
+  -- abhängen.
+  --
+  -- **Das Passwort steht im Klartext**, und das ist keine Nachlässigkeit,
+  -- sondern unvermeidlich: Ein SMTP-Server verlangt das Passwort selbst, kein
+  -- Hash davon. Eine Verschlüsselung hier bräuchte einen Schlüssel, und der
+  -- läge wieder in der Umgebung auf demselben NAS – gewonnen wäre nichts außer
+  -- dem Anschein. Was daraus folgt, steht am Endpunkt (es geht nie an den
+  -- Browser zurück) und in \`README.md\` unter „Sicherung" (es steht in jeder
+  -- Kopie der Datenbank).
+  CREATE TABLE mail_config (
+    id           INTEGER PRIMARY KEY CHECK (id = 1),
+    host         TEXT NOT NULL,
+    port         INTEGER NOT NULL,
+    secure       INTEGER NOT NULL DEFAULT 0,
+    username     TEXT,
+    password     TEXT,
+    from_address TEXT NOT NULL,
+    -- Adresse der App für Links in Mails. Steht hier und nicht im \`Host\`-Kopf
+    -- der Anfrage – die Begründung (Host-Header-Poisoning) in \`lib/mail.ts\`.
+    public_url   TEXT NOT NULL,
+    -- Ausschalten, ohne die Angaben zu verlieren: Wer einen Fehler sucht, soll
+    -- den Versand stilllegen können, ohne das Passwort neu eintippen zu müssen.
+    enabled      INTEGER NOT NULL DEFAULT 0,
+    updated_at   TEXT NOT NULL,
+    updated_by   TEXT REFERENCES account(id) ON DELETE SET NULL
+  );
+  `,
+
+  // 14 – Versanddienstleister für die Datenschutzerklärung (ToDo 10.22, zu 10.16).
+  `
+  -- **Ein eigener Schritt und keine Änderung an Migration 13**, obwohl beide am
+  -- selben Tag entstanden sind: Ein bereits gelaufener Schritt läuft nicht noch
+  -- einmal, und eine nachträglich geänderte Migration fehlt genau dort, wo das
+  -- Schema schon angelegt wurde.
+  --
+  -- **Warum die Angabe hierher gehört:** Die Datenschutzerklärung nennt den
+  -- Dienstleister, der beim Versand Empfängeradresse und Link sieht (Art. 28
+  -- DSGVO). Bisher kam der Name aus \`WHEELEE_MAIL_PROVIDER\`, also aus der
+  -- \`.env\` auf dem NAS. Damit hätte das Einschalten des Versands in der
+  -- Verwaltung eine unvollständige Datenschutzerklärung hinterlassen – der rote
+  -- Hinweis „Angabe fehlt“ –, und nur Niklas hätte sie vervollständigen können.
+  -- Das wäre genau die Abhängigkeit, die 10.22 auflöst.
+  ALTER TABLE mail_config ADD COLUMN provider TEXT;
+  `,
 ];
 
 let database: DatabaseSync | null = null;

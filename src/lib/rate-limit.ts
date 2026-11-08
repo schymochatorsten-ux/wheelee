@@ -115,6 +115,13 @@ export const LIMITS = {
   visit: { max: 60, windowMs: 60 * 60_000 },
   /** Link aus einer Mail einlösen: je Herkunft, das Token ist das Geheimnis. */
   mailRedeem: { max: 10, windowMs: 10 * 60_000 },
+  /**
+   * Testmail aus der Verwaltung (ToDo 10.22): je Admin-Konto. Beim Einrichten
+   * drückt man den Knopf einige Male hintereinander – deshalb nicht zu eng;
+   * eine Dauerschleife gegen einen fremden SMTP-Server soll er trotzdem nicht
+   * erlauben. Die Mail geht ohnehin nur an die eigene Adresse.
+   */
+  mailTest: { max: 10, windowMs: 10 * 60_000 },
 
   /*
    * Bewertungen (ToDo 8.4). Großzügiger als die übrigen Grenzen, weil hier ein

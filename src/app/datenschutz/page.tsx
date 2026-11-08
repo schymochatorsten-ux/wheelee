@@ -3,6 +3,7 @@ import Link from "next/link";
 import { LegalPage } from "@/components/LegalPage";
 import { operator } from "@/lib/legal/operator";
 import { mailConfigured } from "@/lib/mail";
+import { readMailConfig } from "@/lib/db/mail-config";
 
 /**
  * Datenschutzerklärung (ToDo 10.2).
@@ -45,7 +46,15 @@ export default function Datenschutz() {
   const betreiber = operator();
   // Der Abschnitt zum Mailversand erscheint nur, wenn es ihn gibt (D-10, 10.16).
   const mailEnabled = mailConfigured();
-  const mailProvider = process.env.WHEELEE_MAIL_PROVIDER?.trim() || null;
+  /*
+   * Der Versanddienstleister kommt zuerst aus der Verwaltung und erst dann aus
+   * der Umgebung (ToDo 10.22, dieselbe Reihenfolge wie bei den SMTP-Daten in
+   * `lib/mail.ts`). Vorher gab es ihn nur als `WHEELEE_MAIL_PROVIDER` in der
+   * `.env` auf dem NAS: Wer den Versand in der Verwaltung einschaltete, hätte
+   * damit eine Datenschutzerklärung mit rotem „Angabe fehlt“ hinterlassen und
+   * sie nicht selbst vervollständigen können.
+   */
+  const mailProvider = readMailConfig()?.provider?.trim() || process.env.WHEELEE_MAIL_PROVIDER?.trim() || null;
 
   return (
     <LegalPage title="Datenschutzerklärung" updated="2026-10-30">
@@ -258,9 +267,10 @@ export default function Datenschutz() {
                 </>
               ) : (
                 <strong className="text-red-700 dark:text-red-400">
-                  [Angabe fehlt: Der Betreiber hat den Versanddienstleister (Variable
-                  WHEELEE_MAIL_PROVIDER) nicht eingetragen. Dieser Abschnitt ist erst vollständig,
-                  wenn Name, Sitz und der Stand des Auftragsverarbeitungsvertrags dort stehen.]
+                  [Angabe fehlt: Der Betreiber hat den Versanddienstleister nicht eingetragen
+                  (im Reiter „Rückmeldungen“ unter „Mailversand“, ersatzweise Variable
+                  WHEELEE_MAIL_PROVIDER). Dieser Abschnitt ist erst vollständig, wenn Name, Sitz
+                  und der Stand des Auftragsverarbeitungsvertrags dort stehen.]
                 </strong>
               )}
             </p>

@@ -8,7 +8,7 @@
 **Legende:** `[ ]` offen · `[~]` teils gebaut, Rest hier · `[!]` braucht eine
 Entscheidung oder Angabe von dir · `[-]` gesperrt bis zur Freigabe
 
-**Letzte Aktualisierung:** 2026-10-30
+**Letzte Aktualisierung:** 2026-11-08
 
 **Stand:** wird nachgezählt, nicht fortgeschrieben:
 
@@ -47,9 +47,14 @@ vom BKG, die nicht im Repository liegen).
 ## Reihenfolge
 
 Datenläufe laufen in Stufen, jede erst nach den Prüfungen (D-11 in
-[Erledigt.md](Erledigt.md)); alle Stufen sind eingespielt. Offen ist, in dieser
-Reihenfolge: **2d.8a** (Bochum und Köln), **10.20** (NAS prüfen), **19.2 und
-19.3** (Timer auf dem NAS einschalten), **19.5** (von Hand).
+[Erledigt.md](Erledigt.md)); alle Stufen sind eingespielt.
+
+**Was den Zugang zum NAS braucht – 10.20, 19.2 und 19.3 – wird in einem Termin
+zusammen erledigt; der Ablauf steht in [deploy/Niklas-Termin.md](deploy/Niklas-Termin.md).**
+Die Reihenfolge dort ist nicht beliebig: Das Admin-Konto braucht den Klon, den
+der erste Datenlauf anlegt, und `ADMIN_EMAILS` scheidet ohne Mailversand aus
+(es hebt nur bestätigte Adressen). Danach offen: **2d.8a** (Bochum und Köln),
+**19.13** und **19.5** (beide ohne Niklas).
 
 **Neue Knöpfe und Meldungen kommen gleich in `src/i18n/de.ts`, nicht in die
 Komponente** (Aufbau in [Erledigt.md](Erledigt.md) unter 15.2) – und in die
@@ -65,14 +70,14 @@ maschinelle Mehrfachprüfung.
 
 ## 10. Sicherheit und Recht
 
-- [!] 10.20 **Admin-Konto auf dem NAS anlegen/prüfen und die neue Reihenfolge einhalten** (zu 10.19 und 18.7, [Erledigt.md](Erledigt.md)). **Braucht Torsten und Niklas:** Das Konto „Torsten“ mit Startpasswort anlegen (`npm run admin:create`, Befehle in [deploy/Datenlauf.md](deploy/Datenlauf.md), „Ersten Admin anlegen“; dafür braucht es Torstens E-Mail-Adresse), sofort anmelden und das Passwort ändern. Außerdem: Nach dem Einspielen den Container neu starten und prüfen, dass das eigene Konto `role = 'admin'` trägt (`docker exec wheelee node -e "const {DatabaseSync}=require('node:sqlite');console.log(new DatabaseSync(process.env.WHEELEE_DB_PATH).prepare('SELECT email,role FROM account').all())"`). Stehen Adressen in `ADMIN_EMAILS`, zu denen es *kein eigenes* Konto gibt, die Adresse entfernen.
+- [!] 10.20 **Admin-Konto auf dem NAS anlegen und prüfen** (zu 10.19 und 18.7, [Erledigt.md](Erledigt.md)). **Braucht Torsten und Niklas**, Ablauf und Befehle in [deploy/Niklas-Termin.md](deploy/Niklas-Termin.md) (Schritt 4). Nur über `admin:create`: `ADMIN_EMAILS` hebt ausschließlich Konten mit bestätigter Adresse, und bestätigt wird per Mail, die es ohne dieses Konto noch nicht gibt.
 
 ## 19. Betrieb und Pflege
 
 Was von 19 baubar war, ist gebaut (19.1, 19.4, 19.7, 19.8; Begründung in [Erledigt.md](Erledigt.md)). Offen ist, was auf dem NAS oder von Hand geschieht:
 
-- [~] 19.2 **Täglicher Datenlauf auf dem NAS** (Prüfung, höchstens 5 Neuimporte je Tag). Prüft die Quellen, importiert geänderte amtliche Städte neu und pusht die Daten (19.10, [Erledigt.md](Erledigt.md)); auf dem NAS nicht erprobt. **Braucht Torsten und Niklas:** Einrichtung nach [deploy/Datenlauf.md](deploy/Datenlauf.md) (Schreibschlüssel, Trockenlauf, Lauf ohne Push, Timer).
-- [~] 19.3 **Zeitgesteuerte Sicherung.** Skript und Timer liegen in `deploy/wheelee-sicherung.*` (täglich, 14 Sicherungen), auf dem NAS nicht erprobt. **Braucht Torsten:** einschalten wie 19.2 und einmal mit `systemctl start wheelee-sicherung.service` prüfen.
+- [~] 19.2 **Täglicher Datenlauf auf dem NAS** (Prüfung, höchstens 5 Neuimporte je Tag). Prüft die Quellen, importiert geänderte amtliche Städte neu und pusht die Daten (19.10, [Erledigt.md](Erledigt.md)); auf dem NAS nicht erprobt. **Braucht Torsten und Niklas:** [deploy/Niklas-Termin.md](deploy/Niklas-Termin.md), Schritte 1–3 und 5; die Einzelheiten und Fehlerbilder in [deploy/Datenlauf.md](deploy/Datenlauf.md).
+- [~] 19.3 **Zeitgesteuerte Sicherung.** Skript und Timer liegen in `deploy/wheelee-sicherung.*` (täglich, 14 Sicherungen), auf dem NAS nicht erprobt. **Braucht Niklas:** [deploy/Niklas-Termin.md](deploy/Niklas-Termin.md), Schritt 5 – zusammen mit 19.2, es sind dieselben Handgriffe.
 - [!] 19.13 **Google Search Console einrichten.** Dort `wheelee.de` als Eigentum bestätigen (DNS-Eintrag oder Datei), `https://wheelee.de/sitemap.xml` einreichen und nach einigen Tagen unter „Seiten“ prüfen, ob die Stadtseiten aufgenommen sind (19.12). Braucht Torsten (Google-Konto, DNS beim Registrar).
 - [!] 19.5 **„Nur OSM“ und „aufgehoben gemeldet“ als OpenStreetMap-Hinweise zurückgeben.** Geschieht von Hand in OSM-Notizen mit eigenem Konto; die Liste der Kandidaten steht in `data/_validierung.md`.
 
