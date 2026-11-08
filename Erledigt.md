@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-08):** **240 Einträge** auf oberster Ebene –
-davon 215, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-08):** **241 Einträge** auf oberster Ebene –
+davon 216, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 25, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -803,6 +803,12 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
 ---
 
 ## 9. Darstellung und Bedienung
+
+- [x] 9.29 **Der Hof um den gewählten Reiter** (2026-11-08, von Torsten am Screenshot eingekringelt: „Der obere Bereich sieht immer noch aus, als wäre ein Weichzeichner darüber“; `MapSection.tsx`).
+
+  **Die dritte und letzte Quelle derselben Wahrnehmung** – und die einzige, die sich im Bild einkringeln ließ: `shadow-lg shadow-blue-700/30` am gewählten Reiter. Ein großer, farbiger Schatten läuft nach allen Seiten weich aus; neben scharfer Schrift liest sich das als Unschärfe des ganzen Streifens. Dazu kam ein Farbverlauf in der Füllung. Jetzt eine Fläche, eine Farbe, kein Schatten; die nicht gewählten Reiter ebenfalls deckend statt halbdurchsichtig.
+
+  **Warum es dreimal gedauert hat:** 9.26 hat zwei Ursachen behoben (`backdrop-blur` am Streifen, `bg-clip-text` in der Überschrift) und dabei den Schatten übersehen – er stand in der Klassenliste des Knopfes und nicht in der des Streifens. **Ein weicher Rand ist kein Nebeneffekt, sondern eine Angabe im Code;** beim nächsten „sieht unscharf aus“ zuerst nach `blur`, `shadow-*` und `bg-clip-text` suchen, statt am Bild zu raten.
 
 - [x] 9.28 **Das Zahnrad war eine Sonne** (2026-11-08, von Torsten zum zweiten Mal gemeldet: „das Symbol für Einstellungen ist kein Zahnrad“; `MapSection.tsx`).
 

@@ -655,8 +655,18 @@ export function MapSection({
                 // weniger Fläche drumherum, nicht kleinere Knöpfe.
                 className={`inline-flex min-h-11 min-w-11 items-center justify-center gap-1.5 rounded-xl px-3 font-medium transition-colors focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none ${
                   view === option
-                    ? "bg-gradient-to-r from-blue-700 to-blue-600 text-white shadow-lg shadow-blue-700/30"
-                    : "bg-neutral-100/80 text-neutral-700 hover:bg-neutral-200 dark:bg-neutral-900/70 dark:text-neutral-300 dark:hover:bg-neutral-800"
+                    ? // **Flächig, ohne Schein und ohne Verlauf** (ToDo 9.29).
+                      // `shadow-lg shadow-blue-700/30` legte einen weich
+                      // auslaufenden blauen Hof um den gewählten Reiter –
+                      // auf dem Telefon las sich der ganze Streifen dadurch
+                      // wie weichgezeichnet, und genau diesen Hof hat
+                      // Torsten am 2026-11-08 eingekringelt. Ein Schatten,
+                      // der nach Leuchten aussieht, sagt nichts; welcher
+                      // Reiter gewählt ist, sagt die Füllung.
+                      "bg-blue-700 text-white"
+                    : // Ebenfalls deckend statt halbdurchsichtig: Dahinter
+                      // liegt nur die Kopfzeile, zu sehen gibt es da nichts.
+                      "bg-neutral-100 text-neutral-700 hover:bg-neutral-200 dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700"
                 }`}
               >
                 {/*
