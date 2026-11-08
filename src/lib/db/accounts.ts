@@ -30,6 +30,12 @@ export interface Account {
    * heißt: nie gewählt – dann gilt Cookie, sonst Browsersprache.
    */
   language: string | null;
+  /**
+   * Ob die App den Standort von sich aus abfragen darf (ToDo 9.25), `"on"`
+   * oder `"off"`. `null` heißt: nie entschieden – dann wird gefragt. Es ist
+   * die Absicht, nicht die Erlaubnis: Die vergibt der Browser je Gerät.
+   */
+  locationPreference: string | null;
   /** Rolle am Konto (ToDo 18.1). `admin` darf die Verwaltung benutzen. */
   role: Role;
   /** Gesperrt seit – ein gesperrtes Konto kann sich nicht anmelden und hat keine Sitzung. */
@@ -47,6 +53,7 @@ interface AccountRow {
   email: string;
   maps_preference?: string | null;
   language?: string | null;
+  location_preference?: string | null;
   role?: string | null;
   disabled_at?: string | null;
   username?: string | null;
@@ -74,6 +81,7 @@ const toAccount = (row: AccountRow): Account => ({
   createdAt: row.created_at,
   mapsPreference: row.maps_preference ?? null,
   language: row.language ?? null,
+  locationPreference: row.location_preference ?? null,
   role: row.role === "admin" ? "admin" : "user",
   disabledAt: row.disabled_at ?? null,
   username: row.username ?? null,
@@ -82,7 +90,7 @@ const toAccount = (row: AccountRow): Account => ({
 
 /** Spalten, die `toAccount` braucht – an einer Stelle, damit keine Abfrage eine vergisst. */
 const ACCOUNT_COLUMNS =
-  "id, email, password_hash, created_at, maps_preference, language, role, disabled_at, username, must_change_password";
+  "id, email, password_hash, created_at, maps_preference, language, location_preference, role, disabled_at, username, must_change_password";
 
 /**
  * Die gewählte Karten-App am Konto ablegen (ToDo 11.3a).
@@ -101,6 +109,14 @@ export function setMapsPreference(accountId: string, preference: string | null):
  */
 export function setLanguage(accountId: string, language: string | null): void {
   db().prepare("UPDATE account SET language = ? WHERE id = ?").run(language, accountId);
+}
+
+/**
+ * Die Standortfreigabe am Konto ablegen (ToDo 9.25). Wie die Karten-App: Der
+ * Wert wird am Endpunkt geprüft, nicht hier.
+ */
+export function setLocationPreference(accountId: string, preference: string | null): void {
+  db().prepare("UPDATE account SET location_preference = ? WHERE id = ?").run(preference, accountId);
 }
 
 export function findAccountByEmail(email: string): Account | null {
@@ -133,6 +149,7 @@ export function createAccount(email: string, password: string): Account | null {
     // steht (ToDo 11.3a).
     mapsPreference: null,
     language: null,
+    locationPreference: null,
     role: "user",
     disabledAt: null,
     username: null,
@@ -183,6 +200,7 @@ export function createOperatorAccount(input: {
     createdAt: now(),
     mapsPreference: null,
     language: null,
+    locationPreference: null,
     role: input.role,
     disabledAt: null,
     username: input.username,
@@ -349,7 +367,7 @@ export function accountForSession(token: string | undefined): Account | null {
 
   const row = db()
     .prepare(
-      `SELECT a.id, a.email, a.password_hash, a.created_at, a.maps_preference, a.language, a.role, a.disabled_at, a.username, a.must_change_password, s.expires_at
+      `SELECT a.id, a.email, a.password_hash, a.created_at, a.maps_preference, a.language, a.location_preference, a.role, a.disabled_at, a.username, a.must_change_password, s.expires_at
          FROM session s JOIN account a ON a.id = s.account_id
         WHERE s.token_hash = ?`,
     )
@@ -658,6 +676,7 @@ export interface AccountExport {
     lastLoginAt: string | null;
     mapsPreference: string | null;
     language: string | null;
+    locationPreference: string | null;
   };
   ratings: { spotId: string; vote: string; createdAt: string; updatedAt: string | null }[];
   favorites: { spotId: string; createdAt: string }[];
@@ -686,7 +705,7 @@ export function exportAccountData(accountId: string): AccountExport | null {
   const handle = db();
   const account = handle
     .prepare(
-      "SELECT email, created_at, last_login_at, maps_preference, language FROM account WHERE id = ?",
+      "SELECT email, created_at, last_login_at, maps_preference, language, location_preference FROM account WHERE id = ?",
     )
     .get(accountId) as
     | {
@@ -695,6 +714,7 @@ export function exportAccountData(accountId: string): AccountExport | null {
         last_login_at: string | null;
         maps_preference: string | null;
         language: string | null;
+        location_preference: string | null;
       }
     | undefined;
   if (!account) return null;
@@ -736,6 +756,9 @@ export function exportAccountData(accountId: string): AccountExport | null {
       lastLoginAt: account.last_login_at,
       mapsPreference: account.maps_preference,
       language: account.language,
+      // Gehört in die Auskunft, weil es am Konto gespeichert ist (9.25) – der
+      // Standort selbst steht hier nicht und wird nirgends gespeichert.
+      locationPreference: account.location_preference,
     },
     ratings: ratings.map((r) => ({
       spotId: r.spot_id,

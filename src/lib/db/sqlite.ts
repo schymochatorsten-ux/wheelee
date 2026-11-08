@@ -321,6 +321,22 @@ const MIGRATIONS: readonly string[] = [
   -- Adresse, und jemand hat sie eingetragen.
   ALTER TABLE mail_config ADD COLUMN notify_email TEXT;
   `,
+
+  // 16 – Standortfreigabe am Konto (ToDo 9.25).
+  `
+  -- Ob die App den Standort von sich aus abfragen darf. \`on\` oder \`off\`;
+  -- NULL heißt: nie entschieden, dann wird gefragt wie bisher.
+  --
+  -- **Das ist die Absicht, nicht die Erlaubnis.** Die Erlaubnis selbst
+  -- vergibt der Browser je Gerät, und kein Server kann sie setzen – das ist
+  -- eine Zusage des Browsers an die Nutzerin, keine Lücke. Gespeichert wird
+  -- hier nur, ob überhaupt gefragt werden soll; das erspart auf dem zweiten
+  -- Gerät das erneute Wegklicken.
+  --
+  -- Ohne Prüfung in der Datenbank, wie \`maps_preference\` (Migration 4): Der
+  -- Wert wird am Endpunkt geprüft.
+  ALTER TABLE account ADD COLUMN location_preference TEXT;
+  `,
 ];
 
 let database: DatabaseSync | null = null;

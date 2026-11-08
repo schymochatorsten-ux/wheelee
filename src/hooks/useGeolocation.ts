@@ -52,6 +52,15 @@ const OPTIONS: PositionOptions = {
 export function useGeolocation(): GeolocationState & {
   /** Standortbestimmung starten oder wiederholen. */
   request: () => void;
+  /**
+   * Laufende Ortung beenden und den Standort vergessen (ToDo 9.25).
+   *
+   * Nötig, wenn die Standortnutzung in den Einstellungen abgeschaltet wird:
+   * Ohne das liefe `watchPosition` weiter und die Karte zeigte weiter die
+   * Entfernung zum eigenen Standort – ein Schalter, der nichts abschaltet,
+   * wäre schlimmer als keiner.
+   */
+  stop: () => void;
 } {
   const [state, setState] = useState<GeolocationState>({
     status: "idle",
@@ -110,6 +119,14 @@ export function useGeolocation(): GeolocationState & {
     );
   }, [t]);
 
+  const stop = useCallback(() => {
+    if (watchId.current !== null && typeof navigator !== "undefined") {
+      navigator.geolocation?.clearWatch(watchId.current);
+      watchId.current = null;
+    }
+    setState({ status: "idle", position: null, accuracyMeters: null, message: null });
+  }, []);
+
   useEffect(() => {
     return () => {
       if (watchId.current !== null && typeof navigator !== "undefined") {
@@ -118,5 +135,5 @@ export function useGeolocation(): GeolocationState & {
     };
   }, []);
 
-  return { ...state, request };
+  return { ...state, request, stop };
 }

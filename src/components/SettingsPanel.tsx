@@ -13,6 +13,11 @@ import {
   writeMapsPreference,
   type MapsPreference,
 } from "@/lib/maps-preference";
+import {
+  LOCATION_PREFERENCES,
+  writeLocationPreference,
+  type LocationPreference,
+} from "@/lib/location-preference";
 import { mapsShortLabel } from "@/lib/navigation";
 import type { MapsTarget } from "@/lib/navigation";
 import type { PublicUser } from "@/lib/auth/user";
@@ -46,6 +51,10 @@ interface SettingsPanelProps {
   detected: MapsTarget;
   /** Meldet eine geänderte Karten-App nach oben, damit sie sofort gilt. */
   onMapsPreferenceChange: (preference: MapsPreference) => void;
+  /** Ob die App den Standort abfragen darf (ToDo 9.25). */
+  locationPreference: LocationPreference;
+  /** Meldet die geänderte Standortfreigabe nach oben – sie wirkt sofort. */
+  onLocationPreferenceChange: (preference: LocationPreference) => void;
   /** Angemeldetes Konto, falls eines besteht. */
   user: PublicUser | null;
   /** Meldet An- und Abmelden nach oben – davon hängen die Reiter ab. */
@@ -62,6 +71,8 @@ export function SettingsPanel({
   detected,
   cities,
   onMapsPreferenceChange,
+  locationPreference,
+  onLocationPreferenceChange,
   user,
   onUserChange,
   onShowSpot,
@@ -96,6 +107,23 @@ export function SettingsPanel({
      */
     if (!user) return;
     void fetch("/api/account/maps", {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ preference: next }),
+    }).catch(() => {});
+  };
+
+  /*
+   * Standortfreigabe wählen (ToDo 9.25). Dieselbe Regel wie bei der
+   * Karten-App: Lokal gilt sie sofort, der Weg zum Konto läuft nebenher und
+   * ohne Fehlermeldung. Es geht nur ein Wort über die Leitung, nie ein
+   * Standort.
+   */
+  const chooseLocation = (next: LocationPreference) => {
+    onLocationPreferenceChange(next);
+    writeLocationPreference(next);
+    if (!user) return;
+    void fetch("/api/account/location", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ preference: next }),
@@ -142,6 +170,36 @@ export function SettingsPanel({
           {user ? t("settings.account") : t("account.login")} ↓
         </a>
       </p>
+
+      {/*
+        **Der Standort steht vor allem anderen** (ToDo 9.25). Er ist die eine
+        Einstellung, von der abhängt, ob die App überhaupt etwas Nützliches
+        anzeigt – und die einzige, bei der jemand ein Interesse daran hat, sie
+        schnell wiederzufinden.
+      */}
+      <SettingsSection title={t("settings.location")} description={t("settings.locationNote")}>
+        <fieldset>
+          <legend className="sr-only">{t("settings.location")}</legend>
+          <div className="flex flex-col gap-1">
+            {LOCATION_PREFERENCES.map((value) => (
+              <label
+                key={value}
+                className="flex min-h-11 cursor-pointer items-center gap-3 rounded-lg px-2 focus-within:ring-2 focus-within:ring-blue-600"
+              >
+                <input
+                  type="radio"
+                  name="standort"
+                  value={value}
+                  checked={locationPreference === value}
+                  onChange={() => chooseLocation(value)}
+                  className="h-5 w-5 accent-blue-700"
+                />
+                <span>{t(value === "on" ? "settings.locationOn" : "settings.locationOff")}</span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
+      </SettingsSection>
 
       <SettingsSection title={t("settings.appearance")} description={t("settings.appearanceNote")}>
         <ThemeToggle />

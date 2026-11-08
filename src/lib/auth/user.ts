@@ -7,6 +7,7 @@
  */
 
 import type { Locale } from "../../i18n";
+import type { LocationPreference } from "../location-preference";
 import type { MapsPreference } from "../maps-preference";
 
 export interface SessionUser {
@@ -24,6 +25,11 @@ export interface SessionUser {
    * wurde. Dann gilt das Cookie, sonst die Browsersprache.
    */
   language: Locale | null;
+  /**
+   * Am Konto abgelegte Standortfreigabe (ToDo 9.25) – `null`, solange nie
+   * etwas gewählt wurde. Dann gilt die Wahl im Browser, sonst „fragen“.
+   */
+  locationPreference: LocationPreference | null;
   /** Startpasswort: Bis zur Änderung gibt es keine Verwaltungsrechte (ToDo 18.7). */
   mustChangePassword: boolean;
 }
@@ -37,7 +43,12 @@ export interface SessionUser {
  */
 export type PublicUser = Pick<
   SessionUser,
-  "email" | "isAdmin" | "mapsPreference" | "language" | "mustChangePassword"
+  | "email"
+  | "isAdmin"
+  | "mapsPreference"
+  | "language"
+  | "locationPreference"
+  | "mustChangePassword"
 >;
 
 export const publicUser = (user: SessionUser): PublicUser => ({
@@ -45,5 +56,6 @@ export const publicUser = (user: SessionUser): PublicUser => ({
   isAdmin: user.isAdmin,
   mapsPreference: user.mapsPreference,
   language: user.language,
+  locationPreference: user.locationPreference,
   mustChangePassword: user.mustChangePassword,
 });

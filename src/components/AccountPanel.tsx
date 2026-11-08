@@ -571,6 +571,10 @@ export function AccountPanel({ user, onUserChange, onShowSpot, position }: Accou
         // (ToDo 11.3a); ohne sie gilt weiter, was im Browser steht.
         mapsPreference: data.user.mapsPreference ?? null,
         language: data.user.language ?? null,
+        // Ebenso die Standortfreigabe (9.25): Wer sie auf dem Telefon
+        // abgelehnt hat, soll nach der Anmeldung hier nicht erneut gefragt
+        // werden.
+        locationPreference: data.user.locationPreference ?? null,
         mustChangePassword: data.user.mustChangePassword === true,
       });
     } catch {

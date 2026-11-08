@@ -123,6 +123,11 @@ export const nl: Messages = {
   "maps.fallback.open": "Openen in kaartenapp",
   "maps.fallback.short": "Kaartenapp",
 
+  "settings.location": "Locatie",
+  "settings.locationNote":
+    "Bij het openen vraagt de app om je locatie om de dichtstbijzijnde parkeerplaats te tonen. De locatie blijft op het apparaat. Met een account geldt de keuze op alle apparaten; de toestemming zelf geeft je browser, één keer per apparaat.",
+  "settings.locationOn": "Locatie gebruiken",
+  "settings.locationOff": "Niet gebruiken",
   "settings.appearance": "Weergave",
   "settings.appearanceNote":
     "Standaard is donker – de app wordt vaak in de auto en in het donker gebruikt.",

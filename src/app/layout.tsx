@@ -54,6 +54,15 @@ export const viewport: Viewport = {
   // Sehbehinderte unverzichtbar ist.
   width: "device-width",
   initialScale: 1,
+  /*
+   * **Nötig, damit `env(safe-area-inset-*)` überhaupt Werte liefert** (ToDo
+   * 9.24). Ohne `cover` meldet jeder Rand 0 – und mit
+   * `statusBarStyle: "black-translucent"` (oben in `metadata`) liegt die
+   * Statusleiste des iPhones über der Seite. Auf dem Startbildschirm
+   * installiert verschwand die Kopfzeile dadurch teilweise unter Uhr und
+   * Akkustand. Den Abstand setzt der `body` unten.
+   */
+  viewportFit: "cover",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#ffffff" },
     { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
@@ -111,7 +120,17 @@ export default async function RootLayout({
         Karte zusammenschiebt, statt die Seite länger zu machen – sonst
         entstünde ausgerechnet im Funkloch ein Scrollbalken über der Karte.
       */}
-      <body className={`${geistSans.variable} flex h-dvh flex-col antialiased`}>
+      {/*
+        **Die Ränder des Geräts aussparen** (ToDo 9.24). `h-dvh` plus
+        Innenabstand heißt: Der Inhalt wird um die Statusleiste und den
+        Home-Balken kürzer, statt darunter zu verschwinden. Im Browser und auf
+        dem Rechner sind alle vier Werte 0, dort ändert sich nichts.
+        Links und rechts zählt nur im Querformat, kostet dann aber genau die
+        Spalte, in der sonst die Zoomknöpfe unter der Kerbe lägen.
+      */}
+      <body
+        className={`${geistSans.variable} flex h-dvh flex-col pt-[env(safe-area-inset-top)] pr-[env(safe-area-inset-right)] pb-[env(safe-area-inset-bottom)] pl-[env(safe-area-inset-left)] antialiased`}
+      >
         <LocaleProvider locale={locale}>
           <ServiceWorker />
           <VisitBeacon />

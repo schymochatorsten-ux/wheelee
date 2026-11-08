@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-08):** **234 Einträge** auf oberster Ebene –
-davon 209, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-08):** **236 Einträge** auf oberster Ebene –
+davon 211, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 25, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -796,14 +796,29 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
 
 ## 9. Darstellung und Bedienung
 
-- [x] 9.23 **Reiter beschriftet, Anmeldung auffindbar** (2026-11-08, von Torsten auf dem iPhone gemeldet: „Die mobile Ansicht sieht nicht gut aus, man kann oben nicht alle Buttons ordentlich klicken. Ich weiß nicht, wo ich mich anmelden kann“; `MapSection.tsx`, `SettingsSection.tsx`, `SettingsPanel.tsx`).
+- [x] 9.25 **Standortfreigabe am Konto** (2026-11-08, auf Torstens Wunsch; neu `lib/location-preference.ts`, `api/account/location/route.ts`, Migration 16, geändert `useGeolocation`, `MapSection`, `SettingsPanel`, `accounts.ts`, `auth/user.ts`, `auth/session.ts`, Anmeldung und Registrierung, Datenschutzerklärung, neun Sprachdateien).
 
-  **Zwei Mängel, und beide gingen auf dieselbe Sparsamkeit zurück.** Auf schmalen Displays zeigte der Reiter „Einstellungen“ nur das Zahnrad (der Name blieb als `sr-only` stehen). Torsten hielt es für eine Helligkeitsumschaltung – die Zacken des Zahnrads sehen bei 17 px wie eine Sonne aus – und öffnete den Reiter nie. Damit war **die halbe App verborgen**, darunter die Anmeldung.
+  **Gespeichert wird die Absicht, nicht die Erlaubnis – und das ist keine Halbheit, sondern die Grenze.** Die Erlaubnis für den Standort vergibt der Browser je Gerät; kein Server kann sie setzen oder auslesen. Das ist eine Zusage des Browsers an die Nutzerin und soll so bleiben. Am Konto steht deshalb ein Wort (`on`/`off`): ob die App überhaupt fragen darf.
 
-  - **Gemessen, bevor geändert wurde:** Der Knopf war **38 × 44 px** statt der 44 × 44, die 9.8 selbst als Mindestmaß festhält, und stand 12 px vom Bildschirmrand – daher „nicht ordentlich klicken“. Jetzt `min-w-11` und `gap-2`.
-  - **Der Name steht jetzt immer da.** Die Reiterzeile bricht dadurch bei 375 px in eine eigene Zeile um: Kopfzeile **107 → 139 px**. Das widerspricht 9.15 („jeder Millimeter gehört der Karte“), und die Abwägung ist bewusst anders ausgefallen: 32 px Karte wiegen weniger als ein Reiter, den der Besitzer der App selbst nicht erkennt. Kein seitliches Überlaufen, auch mit drei Reitern (Verwaltung) und mit den längeren Übersetzungen.
-  - **Sprungmarke zum Konto, ganz oben in den Einstellungen.** Der Kontoblock steht weiter **zuletzt** – 11.2 („Anmeldung so spät wie möglich verlangen“) bleibt richtig –, aber über ihm liegen inzwischen fünf Blöcke und die Städteliste: gemessen **1.978 px**, also drei Bildschirmlängen. Wer nicht weiß, dass es unten weitergeht, sucht vergeblich. Die neue Zeile verlangt nichts, sie zeigt nur, dass es eine Anmeldung gibt (angemeldet: „Konto“, sonst „Anmelden“), und `SettingsSection` nimmt dafür ein optionales `anchor`.
-  - Zugänglichkeitsprüfung hell und dunkel grün (19 Tests), 709 Unit-Tests grün.
+  - **Der Unterschied im Alltag:** Wer die Abfrage einmal abgelehnt hat, wurde bisher auf jedem Gerät und nach jedem Löschen der Browserdaten erneut gefragt – `MapSection` rief `geo.request()` beim Laden bedingungslos auf. Jetzt entscheidet die Einstellung; ohne Konto bleibt sie im Browser (`wheelee-standort`), mit Konto schlägt das Konto den Browser, wie bei Karten-App (11.3a) und Sprache (15.5).
+  - **Abschalten schaltet wirklich ab.** `useGeolocation` hat dafür ein `stop()` bekommen: Ohne das liefe `watchPosition` weiter und die Karte zeigte weiter Entfernungen – ein Schalter, der nichts abschaltet, wäre schlimmer als keiner.
+  - **Zwei Werte, keine dritte Stufe „nur dieses Mal".** Die eigentliche Rückfrage stellt der Browser ohnehin; eine zweite davor wäre eine Hürde mehr für jemanden, der gerade einen Parkplatz sucht.
+  - **Der Block steht ganz oben in den Einstellungen**, vor der Darstellung: Es ist die eine Einstellung, von der abhängt, ob die App überhaupt etwas Nützliches zeigt.
+  - **Datenschutzerklärung und Datenauskunft nachgezogen.** Was am Konto liegt, muss dort stehen – mit dem ausdrücklichen Satz, dass es ein Ja oder Nein ist und der Standort selbst nirgends gespeichert wird. Ein stillschweigend zusätzlich gespeichertes Feld wäre genau der Fehler, den 10.16 vermeiden sollte.
+
+- [x] 9.24 **Rand des Geräts aussparen (Safe Area)** (2026-11-08, von Torsten am Screenshot gemeldet: „die Ansicht ist oben abgeschnitten, etwas weiter runter“; `app/layout.tsx`).
+
+  **Ursache im Code gefunden, nicht am Symptom geraten:** Das Manifest setzt `display: "standalone"` und die Kennzeichnung `appleWebApp.statusBarStyle: "black-translucent"`. Auf dem Startbildschirm installiert liegt die Statusleiste des iPhones damit **über** der Seite – und die App sparte den Bereich nirgends aus. Die Kopfzeile verschwand teilweise unter Uhr und Akkustand.
+
+  - **`viewportFit: "cover"` war die fehlende Hälfte.** Ohne diese Angabe melden alle `env(safe-area-inset-*)` den Wert 0; die Abstände hätten also auch dann nicht gewirkt, wenn jemand sie gesetzt hätte. Jetzt steht sie im `viewport`-Export, der Abstand am `body`.
+  - **Am `body` und nicht in jeder Komponente:** `h-dvh` plus Innenabstand heißt, der Inhalt wird um Statusleiste und Home-Balken kürzer, statt darunter zu verschwinden – für alle Seiten auf einmal. Links und rechts zählt nur im Querformat, kostet dann aber genau die Spalte, in der sonst die Zoomknöpfe unter der Kerbe lägen.
+  - **Im Browser und am Rechner ändert sich nichts**, dort sind alle vier Werte 0 (gemessen: `padding-top` bleibt `0px`). **Auf einem echten iPhone ist es nicht geprüft** – dafür fehlt hier das Gerät. Der Mechanismus ist der vorgesehene; die Gegenprobe steht aus.
+
+- [x] 9.23 **Reiter leichter zu treffen, Anmeldung auffindbar** (2026-11-08, von Torsten auf dem iPhone gemeldet: „man kann oben nicht alle Buttons ordentlich klicken. Ich weiß nicht, wo ich mich anmelden kann“; `MapSection.tsx`, `SettingsSection.tsx`, `SettingsPanel.tsx`).
+
+  - **Gemessen, bevor geändert wurde:** Der Reiter „Einstellungen“ war **38 × 44 px** statt der 44 × 44, die 9.8 selbst als Mindestmaß festhält, und stand 12 px vom Bildschirmrand – daher „nicht ordentlich klicken“. Jetzt `min-w-11` und `gap-2`, gemessen 44 × 44.
+  - **Der Name wurde zwischendurch ausgeschrieben und auf Torstens Wunsch zurückgenommen** („Settings bitte mobil als Zahnrad darstellen“). Begründet war der Versuch damit, dass er das Zahnrad für eine Helligkeitsumschaltung gehalten hatte; gekostet hätte es 32 px Kopfzeile (107 → 139 px bei 375 px Breite), die nach 9.15 der Karte gehören. **Das Symbol war auch nicht die Ursache** – die Anmeldung lag schlicht zu tief.
+  - **Sprungmarke zum Konto, ganz oben in den Einstellungen.** Der Kontoblock steht weiter **zuletzt** – 11.2 („Anmeldung so spät wie möglich verlangen“) bleibt richtig –, aber über ihm liegen fünf Blöcke und die Städteliste: gemessen **1.978 px**, also drei Bildschirmlängen. Wer nicht weiß, dass es unten weitergeht, sucht vergeblich. Die Zeile verlangt nichts, sie zeigt nur, dass es eine Anmeldung gibt (angemeldet: „Konto“, sonst „Anmelden“); `SettingsSection` nimmt dafür ein optionales `anchor`.
 
 - [x] 9.22 **Zweiter Scrollbalken auf der Einstellungsseite** (2026-11-08, von Torsten gemeldet; `MapSection.tsx`, `LegalPage.tsx`, `parkplaetze/[slug]/page.tsx`, `e2e/scrollen.spec.ts`).
 

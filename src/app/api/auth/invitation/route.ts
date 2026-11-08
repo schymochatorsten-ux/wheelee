@@ -56,6 +56,7 @@ async function postHandler(request: Request) {
         isAdmin: isAdminAccount(account),
         mapsPreference: null,
         language: null,
+        locationPreference: null,
       mustChangePassword: false,
       }),
     },

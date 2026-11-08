@@ -126,6 +126,11 @@ export const es: Messages = {
   "maps.fallback.open": "Abrir en aplicación de mapas",
   "maps.fallback.short": "App de mapas",
 
+  "settings.location": "Ubicación",
+  "settings.locationNote":
+    "Al abrirse, la aplicación pide tu ubicación para mostrar la plaza más cercana. La ubicación permanece en el dispositivo. Con una cuenta, la elección se aplica en todos los dispositivos; el permiso en sí lo concede tu navegador, una vez por dispositivo.",
+  "settings.locationOn": "Usar la ubicación",
+  "settings.locationOff": "No usarla",
   "settings.appearance": "Apariencia",
   "settings.appearanceNote":
     "Oscuro es el ajuste predeterminado: la app se usa a menudo en el coche y de noche.",

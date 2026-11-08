@@ -121,6 +121,7 @@ export function redeemInvitation(token: string, password: string): Redeemed {
       createdAt: now(),
       mapsPreference: null,
       language: null,
+      locationPreference: null,
       role,
       disabledAt: null,
       username: null,

@@ -11,6 +11,7 @@ import {
   createSession,
   deleteAccount,
   exportAccountData,
+  setLocationPreference,
 } from "./accounts";
 import { castVote, ratingSummary } from "./ratings";
 
@@ -41,6 +42,25 @@ function rueckmeldung(accountId: string | null, adresse: string | null): void {
     )
     .run(adresse, accountId);
 }
+
+describe("Standortfreigabe am Konto (ToDo 9.25)", () => {
+  it("überlebt die Sitzung und steht in der Auskunft", () => {
+    const konto = createAccount("standort@example.org", ALT);
+    if (!konto) throw new Error("Konto wurde nicht angelegt");
+    // Ein neues Konto hat sich nie entschieden – dann wird gefragt.
+    expect(konto.locationPreference).toBeNull();
+
+    setLocationPreference(konto.id, "off");
+
+    // Genau der Zweck: Auf dem zweiten Gerät kommt die Wahl mit der Sitzung
+    // zurück, ohne dass dort erneut etwas weggeklickt werden muss.
+    const token = createSession(konto.id);
+    expect(accountForSession(token)?.locationPreference).toBe("off");
+
+    // Am Konto gespeichert heißt: gehört in die Datenauskunft.
+    expect(exportAccountData(konto.id)?.account.locationPreference).toBe("off");
+  });
+});
 
 describe("deleteAccount", () => {
   it("löscht Konto, Sitzungen und Bewertungen, behält die Rückmeldung ohne Adresse", () => {

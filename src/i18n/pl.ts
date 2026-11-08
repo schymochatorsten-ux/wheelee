@@ -125,6 +125,11 @@ export const pl: Messages = {
   "maps.fallback.open": "Otwórz w aplikacji map",
   "maps.fallback.short": "Aplikacja map",
 
+  "settings.location": "Lokalizacja",
+  "settings.locationNote":
+    "Po otwarciu aplikacja pyta o Twoją lokalizację, aby pokazać najbliższe miejsce parkingowe. Lokalizacja pozostaje na urządzeniu. Z kontem wybór obowiązuje na wszystkich urządzeniach; samą zgodę wydaje przeglądarka, raz na każdym urządzeniu.",
+  "settings.locationOn": "Używaj lokalizacji",
+  "settings.locationOff": "Nie używaj",
   "settings.appearance": "Wygląd",
   "settings.appearanceNote":
     "Domyślnie ustawiony jest ciemny motyw – aplikacji często używa się w samochodzie i po ciemku.",

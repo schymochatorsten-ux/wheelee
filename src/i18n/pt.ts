@@ -123,6 +123,11 @@ export const pt: Messages = {
   "maps.fallback.open": "Abrir na aplicação de mapas",
   "maps.fallback.short": "Aplicação de mapas",
 
+  "settings.location": "Localização",
+  "settings.locationNote":
+    "Ao abrir, a aplicação pede a sua localização para mostrar o lugar de estacionamento mais próximo. A localização fica no dispositivo. Com conta, a escolha vale em todos os dispositivos; a autorização em si é dada pelo navegador, uma vez em cada dispositivo.",
+  "settings.locationOn": "Usar a localização",
+  "settings.locationOff": "Não usar",
   "settings.appearance": "Aspeto",
   "settings.appearanceNote":
     "A predefinição é escuro – a aplicação é muitas vezes usada no carro e no escuro.",

@@ -13,6 +13,11 @@ import {
   readMapsPreference,
   type MapsPreference,
 } from "@/lib/maps-preference";
+import {
+  DEFAULT_LOCATION_PREFERENCE,
+  readLocationPreference,
+  type LocationPreference,
+} from "@/lib/location-preference";
 import type { CityInfo } from "@/lib/parking/spots";
 import type { Place } from "@/lib/geocode";
 import type { PublicUser } from "@/lib/auth/user";
@@ -280,11 +285,27 @@ export function MapSection({
   // Die Wahl schlägt die Geräteerkennung; „auto" bedeutet weiter raten.
   const mapsTarget: MapsTarget = mapsPreference === "auto" ? detected : mapsPreference;
 
-  // Standort direkt anfragen: Der Nutzen der App hängt daran, und der Browser
-  // fragt selbst um Erlaubnis.
+  /**
+   * Standort abfragen – aber nur, wenn es erlaubt ist (ToDo 9.25).
+   *
+   * **Erst nach dem Laden gelesen**, weil es auf dem Server keinen Speicher
+   * gibt; `null` heißt also „noch nicht gelesen“ und nicht „aus“. Am Konto
+   * schlägt die Wahl den Browser – das ist der Sinn der Sache: Wer auf dem
+   * Telefon abgelehnt hat, soll am Rechner nicht erneut gefragt werden.
+   */
+  const [locationPreference, setLocationPreference] = useState<LocationPreference | null>(null);
   useEffect(() => {
-    geo.request();
-  }, [geo.request]); // eslint-disable-line react-hooks/exhaustive-deps
+    setLocationPreference(
+      user?.locationPreference ?? readLocationPreference() ?? DEFAULT_LOCATION_PREFERENCE,
+    );
+  }, [user?.locationPreference]);
+
+  // Der Browser fragt selbst um Erlaubnis; hier steht nur, ob überhaupt
+  // gefragt werden soll. Beim Abschalten endet die laufende Ortung sofort.
+  useEffect(() => {
+    if (locationPreference === "on") geo.request();
+    if (locationPreference === "off") geo.stop();
+  }, [locationPreference]); // eslint-disable-line react-hooks/exhaustive-deps
 
   /**
    * Die nächstgelegenen Parkplätze, vom Server berechnet.
@@ -541,20 +562,25 @@ export function MapSection({
                 }`}
               >
                 {/*
-                  **Der Name steht auch auf dem Telefon da** (ToDo 9.23). Bis
-                  zum 2026-11-08 blieb auf schmalen Displays nur das Zahnrad
-                  übrig, um Platz zu sparen – und Torsten hielt es auf dem
-                  iPhone für eine Helligkeitsumschaltung und fand die Anmeldung
-                  nicht, weil sie hinter diesem Reiter liegt. Ein Symbol, das
-                  nicht erkannt wird, verbirgt die halbe App; die Zeile, die
-                  dadurch umbricht, kostet 32 px.
+                  **Auf dem Telefon nur das Symbol** – so ausdrücklich gewollt
+                  (Torsten, 2026-11-08: „Settings bitte mobil als Zahnrad
+                  darstellen und nicht Settings schreiben“). Der Name bleibt
+                  für Screenreader stehen.
+
+                  Am selben Tag war er kurzzeitig ausgeschrieben, weil das
+                  Zahnrad für eine Helligkeitsumschaltung gehalten worden war
+                  und die Anmeldung dahinter unauffindbar schien. Das war
+                  nicht die Ursache: Die Anmeldung lag 1.978 px tief in den
+                  Einstellungen. Dagegen hilft die Sprungmarke in
+                  `SettingsPanel`, nicht ein breiterer Reiter – die Kopfzeile
+                  wuchs dadurch um 32 px, die der Karte gehören (9.15).
                 */}
                 {option === "settings" || option === "feedback" ? (
                   <>
-                    <span aria-hidden="true">
+                    <span aria-hidden="true" className="sm:hidden">
                       {option === "settings" ? <GearIcon /> : <InboxIcon />}
                     </span>
-                    <span>{t(VIEW_LABELS[option])}</span>
+                    <span className="max-sm:sr-only">{t(VIEW_LABELS[option])}</span>
                   </>
                 ) : (
                   t(VIEW_LABELS[option])
@@ -787,6 +813,8 @@ export function MapSection({
               detected={detected}
               cities={cities}
               onMapsPreferenceChange={setMapsPreference}
+              locationPreference={locationPreference ?? DEFAULT_LOCATION_PREFERENCE}
+              onLocationPreferenceChange={setLocationPreference}
               user={user}
               onUserChange={setUser}
               onShowSpot={select}

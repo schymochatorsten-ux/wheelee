@@ -123,6 +123,11 @@ export const en: Messages = {
   "maps.fallback.open": "Open in maps app",
   "maps.fallback.short": "Maps app",
 
+  "settings.location": "Location",
+  "settings.locationNote":
+    "When it opens, the app asks for your location to show the nearest parking space. The location stays on the device. With an account the choice applies on every device – the permission itself is granted by your browser, once per device.",
+  "settings.locationOn": "Use location",
+  "settings.locationOff": "Do not use",
   "settings.appearance": "Appearance",
   "settings.appearanceNote":
     "Dark is the default – the app is often used in the car and in the dark.",

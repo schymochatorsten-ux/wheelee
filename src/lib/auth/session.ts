@@ -1,6 +1,7 @@
 import { cookies } from "next/headers";
 import { accountForSession, SESSION_COOKIE, SESSION_MAX_AGE, type Account } from "../db/accounts";
 import { isLocale } from "../../i18n";
+import { isLocationPreference } from "../location-preference";
 import { isMapsPreference } from "../maps-preference";
 import type { SessionUser } from "./user";
 
@@ -43,6 +44,9 @@ const toUser = (account: Account): SessionUser => ({
   // bei einem unlesbaren Browser-Speicher (siehe Migration 4).
   mapsPreference: isMapsPreference(account.mapsPreference) ? account.mapsPreference : null,
   language: isLocale(account.language) ? account.language : null,
+  locationPreference: isLocationPreference(account.locationPreference)
+    ? account.locationPreference
+    : null,
   mustChangePassword: account.mustChangePassword,
 });
 

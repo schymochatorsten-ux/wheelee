@@ -125,6 +125,11 @@ export const fr: Messages = {
   "maps.fallback.open": "Ouvrir dans l'application de cartes",
   "maps.fallback.short": "App de cartes",
 
+  "settings.location": "Position",
+  "settings.locationNote":
+    "À l'ouverture, l'application demande votre position pour afficher la place la plus proche. La position reste sur l'appareil. Avec un compte, le choix s'applique sur tous les appareils ; l'autorisation elle-même est accordée par votre navigateur, une fois par appareil.",
+  "settings.locationOn": "Utiliser la position",
+  "settings.locationOff": "Ne pas l'utiliser",
   "settings.appearance": "Affichage",
   "settings.appearanceNote":
     "Le mode sombre est le réglage par défaut – l'application est souvent utilisée en voiture et dans l'obscurité.",

@@ -168,6 +168,10 @@ export default function Datenschutz() {
             eine gewählt hast
           </li>
           <li>
+            <code>wheelee-standort</code> – ob die App nach deinem Standort fragen darf. Nur dieses
+            Ja oder Nein; der Standort selbst wird nirgends gespeichert
+          </li>
+          <li>
             <code>wheelee-ziele</code> – die zuletzt gesuchten Ziele, damit wiederkehrende Fahrten
             schneller gehen
           </li>
@@ -239,8 +243,10 @@ export default function Datenschutz() {
         <p>
           Gespeichert werden deine E-Mail-Adresse, dein Passwort als <em>scrypt</em>-Hash (niemals
           im Klartext), der Zeitpunkt der Anmeldung und der letzten Nutzung. Dazu, falls du eine
-          wählst, <strong>die bevorzugte Karten-App</strong> und{" "}
-          <strong>die gewählte Sprache</strong> – damit sie auch auf einem zweiten Gerät gelten. Ohne
+          wählst, <strong>die bevorzugte Karten-App</strong>, <strong>die gewählte Sprache</strong>{" "}
+          und <strong>ob die App nach deinem Standort fragen darf</strong> – damit sie auch auf
+          einem zweiten Gerät gelten. Das Letzte ist ein Ja oder Nein; dein Standort selbst wird
+          weder übertragen noch gespeichert. Ohne
           Konto bleiben diese Wahlen allein im Browser. Rechtsgrundlage ist Art. 6
           Abs. 1 lit. b DSGVO.
         </p>

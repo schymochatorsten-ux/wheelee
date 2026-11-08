@@ -117,6 +117,11 @@ export const de = {
   "maps.fallback.open": "In Karten-App öffnen",
   "maps.fallback.short": "Karten-App",
 
+  "settings.location": "Standort",
+  "settings.locationNote":
+    "Beim Öffnen fragt die App nach deinem Standort, um den nächsten Parkplatz zu zeigen. Der Standort bleibt auf dem Gerät. Mit Konto gilt die Wahl auf allen Geräten – die Erlaubnis selbst vergibt dein Browser, auf jedem Gerät einmal.",
+  "settings.locationOn": "Standort verwenden",
+  "settings.locationOff": "Nicht verwenden",
   "settings.appearance": "Darstellung",
   "settings.appearanceNote":
     "Dunkel ist die Vorgabe – die App wird oft im Auto und bei Dunkelheit benutzt.",

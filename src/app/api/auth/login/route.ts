@@ -4,6 +4,7 @@ import { normalizeEmail } from "@/lib/auth/email";
 import { MAX_PASSWORD_LENGTH } from "@/lib/auth/password-rules";
 import { isAdminAccount, sessionCookie } from "@/lib/auth/session";
 import { publicUser } from "@/lib/auth/user";
+import { isLocationPreference } from "@/lib/location-preference";
 import { isMapsPreference } from "@/lib/maps-preference";
 import { allow, clientKey, LIMITS, retryAfter } from "@/lib/rate-limit";
 import { clearLoginFailures, loginPauseSeconds, recordLoginFailure } from "@/lib/login-backoff";
@@ -94,6 +95,9 @@ async function postHandler(request: Request) {
       mustChangePassword: account.mustChangePassword,
       mapsPreference: isMapsPreference(account.mapsPreference) ? account.mapsPreference : null,
       language: isLocale(account.language) ? account.language : null,
+      locationPreference: isLocationPreference(account.locationPreference)
+        ? account.locationPreference
+        : null,
     }),
   }, { headers: { "Cache-Control": "no-store" } });
   response.cookies.set(sessionCookie(createSession(account.id)));
