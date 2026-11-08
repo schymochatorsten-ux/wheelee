@@ -302,19 +302,6 @@ export function AdminMail() {
             onChange={(event) => setForm({ ...form, notifyEmail: event.target.value })}
           />
           <span className="mt-1 block text-xs text-neutral-500">{t("adminMail.notifyNote")}</span>
-          {/*
-            **Sichtbarer Hinweis, wenn der Versand läuft und das Feld leer
-            ist** (ToDo 17.10). Genau diese Lage sieht aus wie „alles
-            eingerichtet": Die Testmail kommt an, weil sie am Konto hängt und
-            nicht an dieser Adresse – und trotzdem geht bei jeder Rückmeldung
-            nichts hinaus. Leer bleiben darf es, es ist ja die Abschaltung;
-            nur still bleiben darf es nicht.
-          */}
-          {form.enabled && form.notifyEmail.trim() === "" ? (
-            <span className="mt-1 block text-xs font-medium text-amber-700 dark:text-amber-300">
-              {t("adminMail.notifyMissing")}
-            </span>
-          ) : null}
         </label>
 
         {/*

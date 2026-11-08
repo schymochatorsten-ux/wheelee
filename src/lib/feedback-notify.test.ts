@@ -7,6 +7,7 @@ import { closeDb } from "./db/sqlite";
 import { saveMailConfig } from "./db/mail-config";
 import { NOTIFY_SUBJECT, notifyNewFeedback, notifyText } from "./feedback-notify";
 import { setLogWriter } from "./log";
+import { createAccount, setRole } from "./db/accounts";
 import type { ValidFeedback } from "./feedback";
 
 /** Benachrichtigung des Betreibers bei neuer Rückmeldung (ToDo 17.9). */
@@ -138,18 +139,41 @@ describe("Versand", () => {
     }
   });
 
-  it("tut nichts ohne eingetragene Adresse", async () => {
+  /*
+   * **Der Fall, der in der Wirklichkeit schiefging** (ToDo 17.11): Versand
+   * eingerichtet, Feld leer – und es kam nichts an. Bis zum 2026-11-08 war
+   * das so gewollt und genau deshalb falsch; jetzt gehen die Mails an die
+   * Admin-Konten.
+   */
+  it("geht ohne eingetragene Adresse an die Admin-Konten", async () => {
     const server = await fakeSmtp();
     try {
+      const admin = createAccount("chefin@example.org", "ein gutes langes Passwort");
+      if (!admin) throw new Error("Konto wurde nicht angelegt");
+      setRole(admin.id, "admin");
       konfiguriere(server.port, null);
-      // Kein Empfänger heißt: keine Benachrichtigung – nicht etwa an
-      // irgendeine andere Adresse.
-      await expect(
-        Promise.race([
-          notifyNewFeedback(meldung()).then(() => "fertig"),
-          server.received.then(() => "verschickt"),
-        ]),
-      ).resolves.toBe("fertig");
+
+      await notifyNewFeedback(meldung());
+      const raw = await server.received;
+      expect(raw).toContain("To: chefin@example.org");
+      expect(raw).toContain("Wheelee Fehler");
+    } finally {
+      server.close();
+    }
+  });
+
+  it("die eingetragene Adresse schlägt die Admin-Konten", async () => {
+    const server = await fakeSmtp();
+    try {
+      const admin = createAccount("chefin@example.org", "ein gutes langes Passwort");
+      if (!admin) throw new Error("Konto wurde nicht angelegt");
+      setRole(admin.id, "admin");
+      konfiguriere(server.port, "nur-hierhin@example.org");
+
+      await notifyNewFeedback(meldung());
+      const raw = await server.received;
+      expect(raw).toContain("To: nur-hierhin@example.org");
+      expect(raw).not.toContain("chefin@example.org");
     } finally {
       server.close();
     }

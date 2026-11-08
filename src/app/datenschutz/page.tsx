@@ -4,6 +4,7 @@ import { LegalPage } from "@/components/LegalPage";
 import { operator } from "@/lib/legal/operator";
 import { mailConfigured } from "@/lib/mail";
 import { readMailConfig } from "@/lib/db/mail-config";
+import { adminAccountEmails } from "@/lib/db/accounts";
 
 /**
  * Datenschutzerklärung (ToDo 10.2).
@@ -55,6 +56,7 @@ export default function Datenschutz() {
    * sie nicht selbst vervollständigen können.
    */
   const mailConfig = readMailConfig();
+  const hasAdmins = adminAccountEmails().length > 0;
   const mailProvider = mailConfig?.provider?.trim() || process.env.WHEELEE_MAIL_PROVIDER?.trim() || null;
   /*
    * Die Benachrichtigung des Betreibers bei neuer Rückmeldung (ToDo 17.9) ist
@@ -63,7 +65,13 @@ export default function Datenschutz() {
    * App eine E-Mail" falsch geworden – eine Datenschutzerklärung, die der
    * Code überholt hat, ist schlimmer als eine knappe.
    */
-  const notifyEnabled = mailEnabled && Boolean(mailConfig?.notifyEmail?.trim());
+  /*
+   * **Seit 17.11 hängt sie nicht mehr an der eingetragenen Adresse**: Ist das
+   * Feld leer, gehen die Mails an die Admin-Konten. Die Bedingung hier musste
+   * deshalb mit – stünde sie weiter auf „nur mit eingetragener Adresse",
+   * verschwiege die Erklärung genau den Fall, der jetzt der Normalfall ist.
+   */
+  const notifyEnabled = mailEnabled && (Boolean(mailConfig?.notifyEmail?.trim()) || hasAdmins);
 
   return (
     <LegalPage title="Datenschutzerklärung" updated="2026-10-30">

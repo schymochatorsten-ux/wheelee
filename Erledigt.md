@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-08):** **241 Einträge** auf oberster Ebene –
-davon 216, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-08):** **242 Einträge** auf oberster Ebene –
+davon 217, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 25, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -726,13 +726,22 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
 
 ## 17 / 10. Aufräumen und Sicherheit (2026-10-17)
 
+- [x] 17.11 **Ohne eingetragene Adresse an die Admin-Konten** (2026-11-08, nachdem bei Torsten auch eine frisch angelegte Testmeldung keine Mail auslöste; `lib/feedback-notify.ts`, `lib/db/accounts.ts`, `components/AdminMail.tsx`, `app/datenschutz/page.tsx`, neun Sprachdateien, `deploy/Mailversand-GMX.md`).
+
+  **Die Vorgabe war falsch herum, und 17.9 hat sie so gebaut.** Dort stand: Leeres Feld heißt keine Benachrichtigung, denn ein still mitbenachrichtigter zweiter Admin wäre eine Überraschung. Das Argument stimmt – es wiegt nur viel leichter als der Fall, der dann eintrat: **Versand eingerichtet, Testmail kommt an, und bei jeder echten Meldung geht nichts hinaus.** Die Testmail geht an das *angemeldete Konto*, nicht an diese Adresse; von außen sieht beides gleich aus. Eine Mail zu viel an jemanden, der die Meldungen ohnehin bearbeitet, ist kein Schaden. Eine Meldung, von der niemand erfährt, ist genau der Schaden, den 17.9 verhindern sollte.
+
+  - **Leer heißt jetzt: an alle nicht gesperrten Admin-Konten** (`adminAccountEmails()`). Eine eingetragene Adresse schlägt das weiterhin – wer es auf ein Postfach lenken will, kann das.
+  - **Nicht zu verwechseln mit `adminEmails()` aus `auth/admin-emails`:** Das ist die Liste aus der Umgebung, die beim Anmelden Rollen *vergibt*. Hier zählt, wer die Rolle **hat**. Die erste Fassung hieß genauso und überschattete den Import – drei Tests der Rollenprüfung fielen um, was den Namen geklärt hat, bevor etwas ausgeliefert wurde.
+  - **Die Datenschutzerklärung musste mit.** Ihr Absatz zur Benachrichtigung hing an „eingetragene Adresse vorhanden" und hätte ab jetzt genau den Normalfall verschwiegen. Eine Erklärung, die der Code überholt hat, ist schlimmer als eine knappe (vgl. 10.16).
+  - **Der Warnhinweis aus 17.10 ist wieder weg** und die Hinweistexte in allen neun Sprachen sind ersetzt: „Leer lassen schaltet es ab" wäre jetzt das Gegenteil des Verhaltens.
+
 - [x] 17.10 **Ein stiller Fehlschlag ist kein Fehlschlag, den man findet** (2026-11-08, nachdem bei Torsten trotz eingerichtetem Versand keine Benachrichtigung ankam; `lib/feedback-notify.ts`, `components/AdminMail.tsx`, neun Sprachdateien, `feedback-notify.test.ts`).
 
   **Der Befund ist nicht die Ursache, sondern dass es keine gab, die man nachsehen konnte.** `notifyNewFeedback` kannte drei Ausgänge – keine Adresse eingetragen, Versand aus, Senden gescheitert – und **alle drei endeten lautlos**: ein leeres `return` bzw. ein leeres `catch`. Der Kommentar dort behauptete, der Fehlschlag stehe „im Protokoll des Mailservers"; auf unserer Seite stand er nirgends. Entsprechend begann die Suche mit Raten.
 
   - **Jeder Ausgang schreibt jetzt eine Zeile** (`feedback_notify_skipped` mit Grund, `feedback_notify_failed` mit der Fehlerart, `feedback_notify_sent`). **Ohne die Adresse und ohne den Meldungstext** – `log.ts` protokolliert keine Inhalte und keine E-Mail-Adressen, und das bleibt so; ein Test prüft genau das mit.
   - **Nach außen bleibt es still.** Die Meldung ist gespeichert, bevor die Mail losgeht; wer vor einem aufgehobenen Parkplatz steht, darf nicht an unserem Postfach scheitern (17.9).
-  - **Die wahrscheinlichste Ursache im konkreten Fall ist sichtbar gemacht worden:** Steht „Benachrichtigung bei neuer Rückmeldung an" leer, während der Versand läuft, sieht alles eingerichtet aus – die Testmail kommt an, weil sie an das **angemeldete Konto** geht und nicht an diese Adresse. Das Feld darf leer bleiben, es ist die Abschaltung; es darf nur nicht so aussehen wie „fertig eingerichtet". Jetzt steht in diesem Fall ein Warnhinweis daneben.
+  - **Der Warnhinweis am leeren Feld, der hier zuerst eingebaut wurde, ist noch am selben Abend durch 17.11 ersetzt worden:** Die Ursache war nicht, dass das leere Feld zu leise war, sondern dass leer „kein Versand" bedeutete. Das Protokoll bleibt – es ist das, was die Frage überhaupt erst beantwortbar gemacht hat.
 
 - [x] 17.9 **Mail an den Betreiber bei neuer Rückmeldung** (2026-11-08, auf Torstens Wunsch; Migration 15, `lib/feedback-notify.ts`, `api/feedback/route.ts`, `api/admin/mail/route.ts`, `components/AdminMail.tsx`, `app/datenschutz/page.tsx`, Anleitung in `deploy/Mailversand-GMX.md`).
 

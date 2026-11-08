@@ -41,7 +41,7 @@ Anmelden → Reiter **Rückmeldungen** → ganz unten **Mailversand**:
 | Passwort | das GMX-Passwort (oder das anwendungsspezifische aus Schritt 1) |
 | Absenderadresse | **dieselbe** GMX-Adresse |
 | Adresse der App | `https://wheelee.de` |
-| Benachrichtigung bei neuer Rückmeldung an | `Torsten.Schymocha@gmail.com` |
+| Benachrichtigung bei neuer Rückmeldung an | leer lassen – dann geht sie an **alle Admin-Konten**. Eine Adresse hier schickt sie stattdessen nur dorthin |
 | Versanddienstleister | `1&1 Mail & Media GmbH, Montabaur, Deutschland` – und dahinter der Stand des Auftragsverarbeitungsvertrags |
 | Versand einschalten | **an** |
 
@@ -81,7 +81,17 @@ die freiwillige Antwortadresse – oder ausdrücklich, dass keine angegeben wurd
 Die Betreffzeilen sind fest und deutsch, damit sich im Postfach eine Regel
 darauf bauen lässt; sie ändern sich nicht mit der eingestellten Sprache.
 
-**Leeres Feld = keine Benachrichtigung.** Der Rest des Versands läuft weiter.
+**Leeres Feld = an alle Admin-Konten** (seit 17.11). Vorher hieß leer „keine
+Benachrichtigung", und genau das ist am 2026-11-08 passiert: Der Versand war
+eingerichtet, die Testmail kam an – die geht nämlich an das **angemeldete
+Konto** – und bei echten Meldungen ging trotzdem nichts hinaus. Wer die
+Benachrichtigung auf eine einzige Adresse lenken will, trägt sie hier ein.
+
+**Ob eine Mail hinausging, steht im Protokoll:**
+
+```bash
+docker logs wheelee --since 10m | findstr feedback_notify
+```
 
 **Der Versand scheitert nie nach außen:** Die Meldung ist gespeichert, bevor
 die Mail losgeht. Ein kaputtes Postfach darf keine Rückmeldung verhindern – wer

@@ -392,6 +392,26 @@ export function deleteSessionsOf(accountId: string): void {
   db().prepare("DELETE FROM session WHERE account_id = ?").run(accountId);
 }
 
+/**
+ * Die Adressen aller nicht gesperrten Admin-**Konten** (ToDo 17.11).
+ *
+ * Nicht zu verwechseln mit `adminEmails()` aus `auth/admin-emails`: Das ist
+ * die Liste aus der Umgebung (`ADMIN_EMAILS`), die beim Anmelden Rollen
+ * vergibt. Hier zählt, wer die Rolle **hat**.
+ *
+ * Gebraucht für die Benachrichtigung bei neuer Rückmeldung: Sie geht an diese
+ * Adressen, solange in der Verwaltung keine eigene eingetragen ist. Die
+ * Begründung steht bei `notifyNewFeedback`.
+ */
+export function adminAccountEmails(): string[] {
+  const rows = db()
+    .prepare(
+      "SELECT email FROM account WHERE role = 'admin' AND disabled_at IS NULL ORDER BY created_at",
+    )
+    .all() as { email: string }[];
+  return rows.map((row) => row.email);
+}
+
 /** Konten mit Rolle `admin`, die nicht gesperrt sind. */
 export function activeAdminCount(): number {
   const row = db()

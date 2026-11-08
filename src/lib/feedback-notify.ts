@@ -1,4 +1,5 @@
 import { readMailConfig } from "./db/mail-config";
+import { adminAccountEmails } from "./db/accounts";
 import { logEvent } from "./log";
 import { mailConfigured, publicUrl, sendMail } from "./mail";
 import type { ValidFeedback } from "./feedback";
@@ -65,7 +66,22 @@ export function notifyText(feedback: ValidFeedback): string {
  * ankommt.
  */
 export async function notifyNewFeedback(feedback: ValidFeedback): Promise<void> {
-  const to = readMailConfig()?.notifyEmail?.trim();
+  /*
+   * **Ohne eingetragene Adresse gehen die Mails an die Admin-Konten**
+   * (ToDo 17.11). Bis zum 2026-11-08 war das Feld in der Verwaltung die
+   * einzige Quelle, und leer hieß: kein Versand. Das sah aus wie eingerichtet
+   * – die Testmail kam ja an, denn die geht an das **angemeldete Konto** –,
+   * und es kam trotzdem nichts.
+   *
+   * **Die Erwartung ist die umgekehrte**, und sie ist die richtige: Wer die
+   * Verwaltung bedient, will von neuen Meldungen erfahren. 17.9 hatte
+   * argumentiert, ein still mitbenachrichtigter zweiter Admin wäre eine
+   * Überraschung. Das stimmt – aber eine Mail zu viel an jemanden, der die
+   * Meldungen ohnehin bearbeitet, wiegt leichter als jede Meldung, von der
+   * niemand erfährt. Wer es anders will, trägt genau eine Adresse ein.
+   */
+  const eingetragen = readMailConfig()?.notifyEmail?.trim();
+  const to = eingetragen || adminAccountEmails().join(", ");
 
   /*
    * **Still gegenüber der meldenden Person, aber nicht gegenüber dem
@@ -80,6 +96,7 @@ export async function notifyNewFeedback(feedback: ValidFeedback): Promise<void> 
    * Inhalte und keine E-Mail-Adressen (siehe `log.ts`).
    */
   if (!to) {
+    // Jetzt nur noch möglich, wenn es gar kein Admin-Konto gibt.
     logEvent("warn", "feedback_notify_skipped", { grund: "keine_adresse" });
     return;
   }
@@ -94,7 +111,11 @@ export async function notifyNewFeedback(feedback: ValidFeedback): Promise<void> 
       subject: NOTIFY_SUBJECT[feedback.kind],
       text: notifyText(feedback),
     });
-    logEvent("info", "feedback_notify_sent", { art: feedback.kind });
+    logEvent("info", "feedback_notify_sent", {
+      art: feedback.kind,
+      // Nur **welcher Weg**, nie die Adresse.
+      empfaenger: eingetragen ? "eingetragen" : "admin_konten",
+    });
   } catch (error) {
     logEvent("error", "feedback_notify_failed", {
       // Nur die Art des Fehlers, nicht die Adresse und nicht der Meldungstext.
