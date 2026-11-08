@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-08):** **237 Einträge** auf oberster Ebene –
-davon 212, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-08):** **238 Einträge** auf oberster Ebene –
+davon 213, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 25, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -796,6 +796,15 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
 
 ## 9. Darstellung und Bedienung
 
+- [x] 9.27 **Konto hinter dem Benutzersymbol oben rechts** (2026-11-08, auf Torstens Wunsch: „Anmeldung aus den Einstellungen raus und oben rechts als kleines Benutzersymbol anbieten“; `MapSection.tsx`, `SettingsPanel.tsx`, `SettingsSection.tsx`, `e2e/bewertungen|favoriten|mail|meine-bewertungen|scrollen|zugaenglichkeit.spec.ts`).
+
+  **Damit ist der Befund aus 9.23 an der Wurzel behoben.** Das Konto war der letzte Block in den Einstellungen – gemessen 1.978 px tief, hinter Darstellung, Sprache, Karten-App und der Städteliste mit 3.700 Einträgen. Die Begründung dafür (11.2, „Anmeldung so spät wie möglich verlangen“) war und bleibt richtig; nur war aus „nicht aufdrängen“ ein „nicht auffindbar“ geworden. Ein Symbol in der Kopfzeile drängt nichts auf und ist mit einem Griff erreichbar.
+
+  - **Eine eigene Ansicht, kein überlagerndes Fenster.** Ein Dialog hätte Fokusfalle, Esc-Taste und Rücksprung gebraucht – drei Stellen, an denen Zugänglichkeit scheitert. Die Ansicht liegt im selben `main` wie Karte und Einstellungen und erbt deren Breite (9.21) und `relative` (9.22).
+  - **Die Sprungmarke aus 9.23 ist damit überflüssig** und wieder entfernt, ebenso das `anchor` an `SettingsSection`. Zwei Wege zu derselben Stelle heißen, dass beim nächsten Umbau nur einer nachgeführt wird.
+  - **Angemeldet ist der Umriss gefüllt, abgemeldet nur gezeichnet** – ein Unterschied, den man ohne Lesen sieht. Der Name steht für Screenreader dabei; ausgeschrieben nähme „Konto“ dem Kartenausschnitt Platz, ohne etwas zu erklären.
+  - **Sechs E2E-Dateien nachgezogen**, die sich über den Einstellungsreiter angemeldet haben. Der Scrolltest aus 9.22 prüft jetzt **beide** Ansichten: Die `sr-only`-Überschriften, die den Fehler ausgelöst haben, stehen in `AccountPanel` und sind mit umgezogen – sonst bewachte der Test ab sofort die Stelle, an der der Fehler gerade nicht mehr sein kann. Die Zugänglichkeitsprüfung hat die Anmeldemaske neu dabei (20 statt 18 Prüfungen). Voller Durchlauf: 140 grün, 2 übersprungen.
+
 - [x] 9.26 **Kopfzeile scharf** (2026-11-08, von Torsten am iPhone-Foto gemeldet: „Oben sieht es nicht scharf aus und gefühlt etwas abgeschnitten“; `MapSection.tsx`).
 
   **Zwei Ursachen, beide mit demselben Mechanismus.** Weiche Schrift entsteht hier nicht durch zu wenig Auflösung, sondern dadurch, dass der Browser die Subpixel-Glättung abschaltet – und das tut er in genau diesen beiden Fällen:
@@ -827,7 +836,7 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
 
   - **Gemessen, bevor geändert wurde:** Der Reiter „Einstellungen“ war **38 × 44 px** statt der 44 × 44, die 9.8 selbst als Mindestmaß festhält, und stand 12 px vom Bildschirmrand – daher „nicht ordentlich klicken“. Jetzt `min-w-11` und `gap-2`, gemessen 44 × 44.
   - **Der Name wurde zwischendurch ausgeschrieben und auf Torstens Wunsch zurückgenommen** („Settings bitte mobil als Zahnrad darstellen“). Begründet war der Versuch damit, dass er das Zahnrad für eine Helligkeitsumschaltung gehalten hatte; gekostet hätte es 32 px Kopfzeile (107 → 139 px bei 375 px Breite), die nach 9.15 der Karte gehören. **Das Symbol war auch nicht die Ursache** – die Anmeldung lag schlicht zu tief.
-  - **Sprungmarke zum Konto, ganz oben in den Einstellungen.** Der Kontoblock steht weiter **zuletzt** – 11.2 („Anmeldung so spät wie möglich verlangen“) bleibt richtig –, aber über ihm liegen fünf Blöcke und die Städteliste: gemessen **1.978 px**, also drei Bildschirmlängen. Wer nicht weiß, dass es unten weitergeht, sucht vergeblich. Die Zeile verlangt nichts, sie zeigt nur, dass es eine Anmeldung gibt (angemeldet: „Konto“, sonst „Anmelden“); `SettingsSection` nimmt dafür ein optionales `anchor`.
+  - **Sprungmarke zum Konto, ganz oben in den Einstellungen.** Der Kontoblock steht weiter **zuletzt** – 11.2 („Anmeldung so spät wie möglich verlangen“) bleibt richtig –, aber über ihm liegen fünf Blöcke und die Städteliste: gemessen **1.978 px**, also drei Bildschirmlängen. Wer nicht weiß, dass es unten weitergeht, sucht vergeblich. Die Zeile verlangt nichts, sie zeigt nur, dass es eine Anmeldung gibt. **Noch am selben Tag durch 9.27 ersetzt:** Das Konto liegt jetzt hinter dem Benutzersymbol oben rechts, die Sprungmarke ist wieder entfernt.
 
 - [x] 9.22 **Zweiter Scrollbalken auf der Einstellungsseite** (2026-11-08, von Torsten gemeldet; `MapSection.tsx`, `LegalPage.tsx`, `parkplaetze/[slug]/page.tsx`, `e2e/scrollen.spec.ts`).
 

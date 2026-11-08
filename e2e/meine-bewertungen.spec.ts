@@ -46,7 +46,8 @@ test.describe("Meine Bewertungen", () => {
     // Über die Schnittstelle abstimmen und im Browser anmelden.
     await page.goto("/");
     await page.addStyleTag({ content: "nextjs-portal { pointer-events: none; }" });
-    await page.getByRole("tab", { name: "Einstellungen" }).click();
+    // Konto seit 9.27 hinter dem Benutzersymbol oben rechts.
+    await page.getByRole("tab", { name: "Konto" }).click();
     await page.getByRole("radio", { name: "Anmelden" }).click();
     await page.getByLabel("E-Mail-Adresse").fill(KONTO.email);
     await page.getByLabel("Passwort").fill(KONTO.password);
@@ -75,7 +76,7 @@ test.describe("Meine Bewertungen", () => {
 
     // Zurückziehen.
     await page.getByRole("button", { name: "Details schließen" }).click();
-    await page.getByRole("tab", { name: "Einstellungen" }).click();
+    await page.getByRole("tab", { name: "Konto" }).click();
     await page.getByRole("button", { name: "Meine Bewertungen", exact: true }).click();
     await page.getByRole("button", { name: /Stimme zu .* zurückziehen/u }).click();
     await expect(page.getByText("Du hast noch keinen Parkplatz bewertet.")).toBeVisible();

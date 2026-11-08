@@ -73,7 +73,9 @@ const KONTO = {
 
 /** Über die Oberfläche anmelden – wie es ein Mensch täte. */
 async function anmelden(page: import("@playwright/test").Page) {
-  await page.getByRole("tab", { name: "Einstellungen" }).click();
+  // Seit 9.27 liegt das Konto hinter dem Benutzersymbol oben rechts und
+  // nicht mehr unten in den Einstellungen.
+  await page.getByRole("tab", { name: "Konto" }).click();
   await page.getByRole("radio", { name: "Anmelden" }).click();
   await page.getByLabel("E-Mail-Adresse").fill(KONTO.email);
   await page.getByLabel("Passwort").fill(KONTO.password);

@@ -36,34 +36,51 @@ test.describe("Kein zweiter Scrollbalken", () => {
     await page.goto("/");
     await page.getByRole("tab", { name: "Einstellungen" }).click();
     await expect(page.getByRole("heading", { name: "Darstellung" })).toBeVisible();
+    await pruefen(page);
 
-    // Das Fenster selbst darf nicht scrollen: Die Bildschirmhöhe hält das
-    // Layout, gescrollt wird nur im Inhaltskasten.
-    const fenster = await page.evaluate(() => {
-      window.scrollTo(0, 5000);
-      return {
-        scrollY: window.scrollY,
-        bodyScrollHeight: document.body.scrollHeight,
-        innerHeight: window.innerHeight,
-      };
-    });
-
-    expect(fenster.scrollY).toBe(0);
-    // Ein Pixel Toleranz für gebrochene Zoomstufen.
-    expect(fenster.bodyScrollHeight).toBeLessThanOrEqual(fenster.innerHeight + 1);
-
-    // Und es gibt genau einen scrollenden Kasten, nicht zwei.
-    const scrollende = await page.evaluate(
-      () =>
-        [...document.querySelectorAll("*")].filter((element) => {
-          const style = getComputedStyle(element);
-          return (
-            element.scrollHeight - element.clientHeight > 4 &&
-            /auto|scroll/.test(style.overflowY) &&
-            element.clientHeight > 0
-          );
-        }).length,
-    );
-    expect(scrollende).toBe(1);
+    /*
+     * **Und dasselbe im Reiter „Konto"** (seit 9.27). Die `sr-only`-
+     * Überschriften, die 9.22 ausgelöst haben, stehen in `AccountPanel` –
+     * das liegt seit dem 2026-11-08 nicht mehr in den Einstellungen, sondern
+     * in einer eigenen Ansicht. Ohne diese zweite Prüfung bewachte der Test
+     * ab sofort die Stelle, an der der Fehler gerade **nicht** mehr sein
+     * kann.
+     */
+    await page.getByRole("tab", { name: "Konto" }).click();
+    await expect(page.getByRole("heading", { name: "Konto", exact: true })).toBeVisible();
+    await pruefen(page);
   });
 });
+
+async function pruefen(page: import("@playwright/test").Page) {
+  // Das Fenster selbst darf nicht scrollen: Die Bildschirmhöhe hält das
+  // Layout, gescrollt wird nur im Inhaltskasten.
+  const fenster = await page.evaluate(() => {
+    window.scrollTo(0, 5000);
+    return {
+      scrollY: window.scrollY,
+      bodyScrollHeight: document.body.scrollHeight,
+      innerHeight: window.innerHeight,
+    };
+  });
+
+  expect(fenster.scrollY).toBe(0);
+  // Ein Pixel Toleranz für gebrochene Zoomstufen.
+  expect(fenster.bodyScrollHeight).toBeLessThanOrEqual(fenster.innerHeight + 1);
+
+  // Und es gibt höchstens **einen** scrollenden Kasten, nicht zwei. Höchstens
+  // und nicht genau: Im Reiter „Konto" passt der Inhalt abgemeldet oder mit
+  // leeren Listen auf den Bildschirm, dann scrollt zu Recht gar nichts.
+  const scrollende = await page.evaluate(
+    () =>
+      [...document.querySelectorAll("*")].filter((element) => {
+        const style = getComputedStyle(element);
+        return (
+          element.scrollHeight - element.clientHeight > 4 &&
+          /auto|scroll/.test(style.overflowY) &&
+          element.clientHeight > 0
+        );
+      }).length,
+  );
+  expect(scrollende).toBeLessThanOrEqual(1);
+}

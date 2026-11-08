@@ -22,9 +22,6 @@ import { mapsShortLabel } from "@/lib/navigation";
 import type { MapsTarget } from "@/lib/navigation";
 import type { PublicUser } from "@/lib/auth/user";
 import type { CityInfo } from "@/lib/parking/spots";
-import type { ParkingSpot } from "@/lib/types";
-import type { LatLng } from "@/lib/geo";
-import { AccountPanel } from "./AccountPanel";
 import { SettingsSection } from "./SettingsSection";
 import { OfflineCities } from "./OfflineCities";
 import { DataDisclaimer } from "./DataDisclaimer";
@@ -61,10 +58,6 @@ interface SettingsPanelProps {
   onUserChange: (user: PublicUser | null) => void;
   /** Alle Städte – zur Auswahl für das Vorabladen (16.1). */
   cities: readonly CityInfo[];
-  /** Einen Parkplatz aus den Listen im Konto auf der Karte zeigen. */
-  onShowSpot: (spot: ParkingSpot) => void;
-  /** Eigener Standort, falls bekannt (Entfernung bei gespeicherten Parkplätzen). */
-  position: LatLng | null;
 }
 
 export function SettingsPanel({
@@ -75,8 +68,6 @@ export function SettingsPanel({
   onLocationPreferenceChange,
   user,
   onUserChange,
-  onShowSpot,
-  position,
 }: SettingsPanelProps) {
   const t = useT();
   const [preference, setPreference] = useState<MapsPreference | null>(null);
@@ -155,21 +146,6 @@ export function SettingsPanel({
     <div className="mx-auto max-w-2xl space-y-4">
       <DataDisclaimer variant="lang" />
 
-      {/*
-        **Ein Sprung zum Konto, ganz oben** (ToDo 9.23). Der Kontoblock steht
-        bewusst zuletzt (Begründung weiter unten), aber über ihm liegen
-        inzwischen fünf Blöcke und die Städteliste – rund 2.000 px. Torsten
-        suchte am 2026-11-08 auf dem Telefon vergeblich, wo man sich anmeldet.
-        Die Zeile verlangt keine Anmeldung, sie zeigt nur, dass es eine gibt.
-      */}
-      <p className="text-sm">
-        <a
-          href="#konto"
-          className="inline-flex min-h-11 items-center text-blue-800 hover:underline focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"
-        >
-          {user ? t("settings.account") : t("account.login")} ↓
-        </a>
-      </p>
 
       {/*
         **Der Standort steht vor allem anderen** (ToDo 9.25). Er ist die eine
@@ -268,23 +244,14 @@ export function SettingsPanel({
       </SettingsSection>
 
       {/*
-        Das Konto steht **zuletzt**, und das ist Absicht: Es ist das, was die
-        wenigsten brauchen. Darstellung und Karten-App betreffen jede:n, eine
-        Anmeldung niemanden, der nur einen Parkplatz sucht (ToDo 11.2 –
-        „Anmeldung so spät wie möglich verlangen").
+        **Das Konto steht seit dem 2026-11-08 nicht mehr hier** (ToDo 9.27).
+        Es war der letzte Block – gemessen 1.978 px tief, hinter Darstellung,
+        Sprache, Karten-App und der Städteliste. Die Begründung dafür (11.2:
+        „Anmeldung so spät wie möglich verlangen") war richtig und ist es
+        immer noch; nur war aus „nicht aufdrängen" ein „nicht auffindbar"
+        geworden. Jetzt liegt es hinter dem Benutzersymbol oben rechts: nicht
+        aufdringlicher als vorher und mit einem Griff erreichbar.
       */}
-      <SettingsSection
-        anchor="konto"
-        title={t("settings.account")}
-        description={t("settings.accountNote")}
-      >
-        <AccountPanel
-          user={user}
-          onUserChange={onUserChange}
-          onShowSpot={onShowSpot}
-          position={position}
-        />
-      </SettingsSection>
 
       {/*
         Impressum und Datenschutzerklärung (ToDo 10.2).

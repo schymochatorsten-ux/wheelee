@@ -56,7 +56,8 @@ test.describe("Gespeicherte Parkplätze", () => {
     await page.goto("/");
     await page.addStyleTag({ content: "nextjs-portal { pointer-events: none; }" });
 
-    await page.getByRole("tab", { name: "Einstellungen" }).click();
+    // Konto seit 9.27 hinter dem Benutzersymbol oben rechts.
+    await page.getByRole("tab", { name: "Konto" }).click();
     await page.getByRole("radio", { name: "Anmelden" }).click();
     await page.getByLabel("E-Mail-Adresse").fill(KONTO.email);
     await page.getByLabel("Passwort").fill(KONTO.password);
@@ -103,7 +104,7 @@ test.describe("Gespeicherte Parkplätze", () => {
     await dialog.getByRole("button", { name: "Parkplatz speichern" }).click();
     await expect(stern).toBeVisible();
     await page.getByRole("button", { name: "Details schließen" }).click();
-    await page.getByRole("tab", { name: "Einstellungen" }).click();
+    await page.getByRole("tab", { name: "Konto" }).click();
     await page.getByRole("button", { name: "Gespeicherte Parkplätze", exact: true }).click();
     await page.getByRole("button", { name: /aus den gespeicherten Parkplätzen entfernen/u }).click();
     await expect(page.getByText(/Noch nichts gespeichert/u)).toBeVisible();

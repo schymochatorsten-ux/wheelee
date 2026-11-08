@@ -29,6 +29,8 @@ import type { FocusTarget, MapBounds } from "./map/ParkingMap";
 import { LanguageSync } from "./LanguageSync";
 import { MapLegend } from "./MapLegend";
 import { SettingsPanel } from "./SettingsPanel";
+import { AccountPanel } from "./AccountPanel";
+import { SettingsSection } from "./SettingsSection";
 import { NearestBar } from "./NearestBar";
 import { SpotDetails } from "./SpotDetails";
 import { SpotList } from "./SpotList";
@@ -74,13 +76,14 @@ interface MapSectionProps {
   user: PublicUser | null;
 }
 
-type View = "map" | "list" | "settings" | "feedback";
+type View = "map" | "list" | "settings" | "feedback" | "account";
 
 const VIEW_LABELS: Record<View, MessageKey> = {
   map: "view.map",
   list: "view.list",
   settings: "view.settings",
   feedback: "view.feedback",
+  account: "settings.account",
 };
 
 /**
@@ -98,9 +101,16 @@ const VIEW_LABELS: Record<View, MessageKey> = {
  * dort Platz, den die Karte braucht (9.15). Dass der Reiter fehlt, ist
  * allerdings **kein Schutz**: Die Zugangsprüfung sitzt in
  * `/api/admin/feedback` und damit auf dem Server.
+ *
+ * **„Konto" steht ganz rechts und immer** (ToDo 9.27, auf Torstens Wunsch:
+ * „Anmeldung aus den Einstellungen raus und oben rechts als kleines
+ * Benutzersymbol"). Vorher lag die Anmeldung als letzter Block in den
+ * Einstellungen – gemessen 1.978 px tief – und war damit praktisch nicht
+ * auffindbar. Als Symbol kostet sie 44 px Kopfzeile und keinen Millimeter
+ * mehr.
  */
 function visibleViews(isAdmin: boolean): readonly View[] {
-  return isAdmin ? ["map", "settings", "feedback"] : ["map", "settings"];
+  return isAdmin ? ["map", "settings", "feedback", "account"] : ["map", "settings", "account"];
 }
 
 /** So viele Parkplätze zeigt die Liste höchstens. */
@@ -184,6 +194,31 @@ function InboxIcon() {
         d="M3 13.5 5.8 4.8A1.5 1.5 0 0 1 7.2 3.8h9.6a1.5 1.5 0 0 1 1.4 1L21 13.5h-5l-1.3 2.2h-5.4L8 13.5H3z"
         strokeWidth="2"
         strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+/**
+ * Konto – der Kopf-und-Schultern-Umriss, den jede App dafür benutzt.
+ *
+ * Angemeldet ist er gefüllt, abgemeldet nur umrissen: ein Unterschied, den
+ * man ohne Lesen sieht, zusätzlich zum Namen für Screenreader.
+ */
+function UserIcon({ filled }: { filled: boolean }) {
+  return (
+    <svg
+      className={TAB_ICON}
+      viewBox="0 0 24 24"
+      fill={filled ? "currentColor" : "none"}
+      stroke="currentColor"
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="8" r="3.6" strokeWidth="2" />
+      <path
+        d="M4.8 20.2c0-3.6 3.2-5.8 7.2-5.8s7.2 2.2 7.2 5.8"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
     </svg>
   );
@@ -596,8 +631,20 @@ export function MapSection({
                   Einstellungen. Dagegen hilft die Sprungmarke in
                   `SettingsPanel`, nicht ein breiterer Reiter – die Kopfzeile
                   wuchs dadurch um 32 px, die der Karte gehören (9.15).
+
+                  **„Konto" bleibt auf jeder Breite ein Symbol** (9.27): Der
+                  Umriss ist dafür das eingeführte Zeichen, und ausgeschrieben
+                  nähme „Konto“ dem Kartenausschnitt auf dem Rechner Platz
+                  weg, ohne etwas zu erklären.
                 */}
-                {option === "settings" || option === "feedback" ? (
+                {option === "account" ? (
+                  <>
+                    <span aria-hidden="true">
+                      <UserIcon filled={user !== null} />
+                    </span>
+                    <span className="sr-only">{t(VIEW_LABELS[option])}</span>
+                  </>
+                ) : option === "settings" || option === "feedback" ? (
                   <>
                     <span aria-hidden="true" className="sm:hidden">
                       {option === "settings" ? <GearIcon /> : <InboxIcon />}
@@ -817,6 +864,25 @@ export function MapSection({
                 Prüflisten darüber, die bei jedem Öffnen zählen. */}
             <AdminMail />
           </div>
+        ) : view === "account" ? (
+          /*
+            **Das Konto hat eine eigene Ansicht** (ToDo 9.27). Bis zum
+            2026-11-08 war es der letzte Block in den Einstellungen und lag
+            damit 1.978 px tief – hinter Darstellung, Sprache, Karten-App und
+            der Städteliste. Wer sich anmelden wollte, fand es nicht.
+
+            `relative` und begrenzte Breite wie überall sonst (9.21, 9.22).
+          */
+          <div className="relative mx-auto h-full w-full max-w-2xl overflow-y-auto px-4 py-4">
+            <SettingsSection title={t("settings.account")} description={t("settings.accountNote")}>
+              <AccountPanel
+                user={user}
+                onUserChange={setUser}
+                onShowSpot={select}
+                position={geo.position}
+              />
+            </SettingsSection>
+          </div>
         ) : (
           /*
             **`relative` ist hier kein Schmuck, sondern behebt einen zweiten
@@ -839,8 +905,6 @@ export function MapSection({
               onLocationPreferenceChange={setLocationPreference}
               user={user}
               onUserChange={setUser}
-              onShowSpot={select}
-              position={geo.position}
             />
           </div>
         )}

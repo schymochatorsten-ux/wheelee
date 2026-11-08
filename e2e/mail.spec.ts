@@ -26,7 +26,7 @@ test("ohne Mailversand gibt es die Endpunkte nicht", async ({ request }) => {
 
 test("die Anmeldemaske bietet kein „Passwort vergessen“ an, sondern sagt, warum", async ({ page }) => {
   await page.goto("/");
-  await page.getByRole("tab", { name: "Einstellungen" }).click();
+  await page.getByRole("tab", { name: "Konto" }).click();
   await expect(page.getByText("lässt sich derzeit nicht selbst zurücksetzen")).toBeVisible();
   await expect(page.getByRole("button", { name: "Passwort vergessen?" })).toHaveCount(0);
 });

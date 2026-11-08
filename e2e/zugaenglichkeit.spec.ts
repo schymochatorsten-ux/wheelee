@@ -47,6 +47,16 @@ for (const modus of ["light", "dark"] as const) {
       await pruefen(page);
     });
 
+    // Seit 9.27 hat das Konto eine eigene Ansicht hinter dem Benutzersymbol.
+    // Abgemeldet ist das die Anmeldemaske – ein Formular, und damit die
+    // Stelle, an der eine fehlende Beschriftung am teuersten wäre.
+    test("Konto", async ({ page }) => {
+      await page.goto("/");
+      await page.getByRole("tab", { name: "Konto" }).click();
+      await expect(page.getByRole("heading", { name: "Konto", exact: true })).toBeVisible();
+      await pruefen(page);
+    });
+
     // `/parkplaetze` und eine Buchstabenseite sind seit 19.17 dabei: Sie
     // bestehen fast nur aus Verweisen, und genau dort fällt ein zu schwacher
     // Kontrast am ehesten auf – und am wenigsten beim Draufschauen.
