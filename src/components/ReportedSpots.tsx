@@ -5,6 +5,7 @@ import { useLocale, useT } from "@/i18n/context";
 import { localeTag, type Locale } from "@/i18n";
 import type { ParkingSpot } from "@/lib/types";
 import { formatDate } from "./DataDisclaimer";
+import { SettingsSection } from "./SettingsSection";
 
 /**
  * Mehrfach als aufgehoben gemeldete Parkplätze – die Prüfliste (ToDo 8.8).
@@ -104,19 +105,16 @@ export function ReportedSpots({ onShowSpot }: ReportedSpotsProps) {
   };
 
   return (
-    <section aria-labelledby="gemeldet" className="space-y-3">
-      <div>
-        <h2 id="gemeldet" className="text-base font-semibold">
-          {t("reported.title")}
-        </h2>
-        <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
-          {/* „mindestens 1 Meldungen“ stand hier, bis es im Browser auffiel.
-              Kein Test hätte das gefunden – geprüft wird der Zählerstand,
-              nicht die Grammatik. */}
-          {t(minimum === 1 ? "reported.introOne" : "reported.introMany", { count: minimum })}
-        </p>
-      </div>
-
+    <SettingsSection
+      title={t("reported.title")}
+      /* „mindestens 1 Meldungen“ stand hier, bis es im Browser auffiel. Kein
+         Test hätte das gefunden – geprüft wird der Zählerstand, nicht die
+         Grammatik. */
+      description={t(minimum === 1 ? "reported.introOne" : "reported.introMany", {
+        count: minimum,
+      })}
+    >
+      <div className="space-y-3">
       <div className="flex flex-wrap items-end gap-3">
         <div>
           <label htmlFor="gemeldet-ab" className="block text-xs text-neutral-500 uppercase">
@@ -251,6 +249,7 @@ export function ReportedSpots({ onShowSpot }: ReportedSpotsProps) {
           </li>
         ))}
       </ul>
-    </section>
+      </div>
+    </SettingsSection>
   );
 }

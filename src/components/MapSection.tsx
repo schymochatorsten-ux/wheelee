@@ -724,7 +724,14 @@ export function MapSection({
             />
           </div>
         ) : view === "feedback" ? (
-          <div className="h-full space-y-8 overflow-y-auto px-4 py-4">
+          /*
+            Begrenzte Breite wie im Reiter „Einstellungen“ (ToDo 9.21): Über
+            die ganze Bildschirmbreite gezogen stehen Beschriftung und Feld so
+            weit auseinander, dass man die Zeile verliert – auf einem breiten
+            Bildschirm der häufigste Grund, warum eine Einstellungsseite
+            unübersichtlich wirkt.
+          */
+          <div className="mx-auto h-full w-full max-w-2xl space-y-6 overflow-y-auto px-4 py-4">
             {/*
               Die Prüfliste aus den Bewertungen (8.8) steht im **selben**
               Reiter und nicht in einem eigenen. Beide Abschnitte beantworten

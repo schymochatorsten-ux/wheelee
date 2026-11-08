@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState, type FormEvent } from "react";
 import { useLocale, useT } from "@/i18n/context";
+import { SettingsSection } from "./SettingsSection";
 
 /**
  * Benutzer und Einladungen verwalten (ToDo 18.3) – nur für Administratoren.
@@ -196,14 +197,8 @@ export function AdminUsers() {
   }
 
   return (
-    <section aria-labelledby="benutzer" className="mt-8 space-y-4">
-      <div>
-        <h2 id="benutzer" className="text-base font-semibold">
-          {t("users.title")}
-        </h2>
-        <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">{t("users.intro")}</p>
-      </div>
-
+    <SettingsSection title={t("users.title")} description={t("users.intro")}>
+      <div className="space-y-4">
       {error ? (
         <p role="alert" className="text-sm text-red-700 dark:text-red-400">
           {error}
@@ -519,6 +514,7 @@ export function AdminUsers() {
           </ul>
         </div>
       ) : null}
-    </section>
+      </div>
+    </SettingsSection>
   );
 }

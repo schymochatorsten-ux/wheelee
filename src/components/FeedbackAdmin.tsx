@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import { useLocale, useT } from "@/i18n/context";
 import { localeTag, type Locale } from "@/i18n";
 import type { ParkingSpot } from "@/lib/types";
+import { SettingsSection } from "./SettingsSection";
 import {
   FEEDBACK_STATUSES,
   KIND_LABELS,
@@ -187,19 +188,19 @@ export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
   };
 
   return (
-    <div className="space-y-4">
-      <div>
-        <h2 className="text-base font-semibold">{t("feedbackAdmin.title")}</h2>
-        <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
-          {counts
-            ? t(counts.gesamt === 1 ? "feedbackAdmin.countsOne" : "feedbackAdmin.countsMany", {
-                total: counts.gesamt,
-                neu: counts.neu,
-                done: counts.umgesetzt,
-              })
-            : "…"}
-        </p>
-      </div>
+    <SettingsSection
+      title={t("feedbackAdmin.title")}
+      description={
+        counts
+          ? t(counts.gesamt === 1 ? "feedbackAdmin.countsOne" : "feedbackAdmin.countsMany", {
+              total: counts.gesamt,
+              neu: counts.neu,
+              done: counts.umgesetzt,
+            })
+          : "…"
+      }
+    >
+      <div className="space-y-4">
 
       <div className="flex flex-wrap gap-3">
         <div>
@@ -391,7 +392,8 @@ export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
           </li>
         ))}
       </ul>
-    </div>
+      </div>
+    </SettingsSection>
   );
 }
 

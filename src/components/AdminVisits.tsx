@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { useLocale, useT } from "@/i18n/context";
+import { SettingsSection } from "./SettingsSection";
 
 /**
  * Besucherzahlen der letzten Tage (ToDo 20.1) – nur für Administratoren.
@@ -57,13 +58,8 @@ export function AdminVisits() {
   const todayRow = days.find((entry) => entry.day === data?.today);
 
   return (
-    <section aria-labelledby="besucher-titel" className="border-t border-neutral-200 pt-4 dark:border-neutral-800">
-      <h2 id="besucher-titel" className="text-base font-semibold">
-        {t("visits.title")}
-      </h2>
-      <p className="mt-1 text-xs text-neutral-500">{t("visits.note")}</p>
-
-      <div role="radiogroup" aria-label={t("visits.range")} className="mt-3 flex gap-2">
+    <SettingsSection title={t("visits.title")} description={t("visits.note")}>
+      <div role="radiogroup" aria-label={t("visits.range")} className="flex gap-2">
         {RANGES.map((option) => (
           <button
             key={option}
@@ -135,6 +131,6 @@ export function AdminVisits() {
           )}
         </>
       ) : null}
-    </section>
+    </SettingsSection>
   );
 }

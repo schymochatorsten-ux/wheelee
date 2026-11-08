@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-08):** **228 Einträge** auf oberster Ebene –
-davon 203, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-08):** **229 Einträge** auf oberster Ebene –
+davon 204, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 25, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -776,6 +776,17 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
 ---
 
 ## 9. Darstellung und Bedienung
+
+- [x] 9.21 **Eine Form für alle Einstellungsbereiche** (2026-11-08, auf Torstens Wunsch mit gezeigtem Vorbild: „schöner grafisch zusammengehörende Einstellungen umrahmen … auch nicht über die ganze Breite der Seite“; neu `components/SettingsSection.tsx`, umgestellt `SettingsPanel`, `OfflineCities`, `ReportedSpots`, `FeedbackAdmin`, `AdminUsers`, `AdminVisits`, `AdminMail`, `MapSection`).
+
+  **Ausgangslage: drei verschiedene Rahmungen nebeneinander.** Der Reiter „Einstellungen“ hatte Karten mit der Überschrift **innen**, die Verwaltung nur dünne Trennlinien, „Offline-Städte“ und der Mailversand gar keinen Rahmen – und die Verwaltung lief über die volle Bildschirmbreite.
+
+  - **Die Überschrift steht jetzt über dem Rahmen, nicht darin** (so das gezeigte Beispiel). Damit beschriftet sie die Gruppe, statt deren erste Zeile zu sein; zwei Blöcke untereinander sind auf einen Blick zu trennen. Der Erklärungssatz bleibt im Rahmen, weil er zum Inhalt gehört.
+  - **Eine gemeinsame Komponente statt derselben Klassen an sieben Stellen.** Beim siebten Kopieren weicht ohnehin eine Fassung ab, und dann sieht ein Bereich anders aus als die übrigen, ohne dass es jemandem auffällt.
+  - **Breite auf `max-w-2xl` begrenzt, auch in der Verwaltung.** Über die ganze Bildschirmbreite gezogen stehen Beschriftung und Feld so weit auseinander, dass man die Zeile verliert – auf einem breiten Bildschirm der häufigste Grund, warum eine Einstellungsseite unübersichtlich wirkt. Der Reiter „Einstellungen“ war schon so.
+  - **`useId` für die Überschrift-ID** statt fester Zeichenketten: Zwei Blöcke mit gleichem Titel trügen sonst dieselbe ID, und `aria-labelledby` wäre für Screenreader unbrauchbar.
+  - **Ein Zusatz rechts neben der Überschrift** (`aside`) für den Zustand, den man zuerst wissen will – beim Mailversand „Der Versand ist aus.“ Er gehört an die Gruppe, nicht in das Formular darunter.
+  - **Im Browser bei 1280 × 900 und im Telefonformat angesehen:** beide Reiter mit gleicher Rahmung und gleicher Breite, der Zustand bricht auf dem Telefon sauber um, keine Überläufe. 703 Tests grün, `typecheck` und `lint` sauber. **Rein optisch, ohne Verhaltensänderung** – deshalb kein neuer Test: Was hier zählt, sieht man, und ein Test auf Klassennamen hielte nur fest, dass niemand sie ändert.
 
 - [x] 9.20 **Zähler je Gebiet statt leerer Karte** (2026-11-07, auf Torstens „ja bitte bauen“; `lib/parking/grid.ts`, `spots.ts`, `api/spots/route.ts`, `hooks/useSpots.ts`, `components/map/SpotCounts.tsx`, `ParkingMap.tsx`, `MapSection.tsx`, `public/sw.js`). Weit herausgezoomt zeigte die Karte **gar nichts** und den Satz „Zoome auf Stadtgröße, um Parkplätze zu sehen." (9.16). Jetzt stehen dort runde Zähler – 1.122 für den Hamburger Raum, 651 für die Stadt –, und ein Antippen zieht sie auseinander.
 

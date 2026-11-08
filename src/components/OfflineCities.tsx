@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useLocale, useT } from "@/i18n/context";
 import { localeTag, type Locale } from "@/i18n";
 import type { CityInfo } from "@/lib/parking/spots";
+import { SettingsSection } from "./SettingsSection";
 import {
   formatBytes,
   listOfflineCities,
@@ -93,17 +94,12 @@ export function OfflineCities({ cities }: { cities: readonly CityInfo[] }) {
   }, [sorted, needle, choice, locale]);
 
   return (
-    <section aria-labelledby="offline-heading">
-      <h2 id="offline-heading" className="text-base font-semibold">
-        {t("offline.heading")}
-      </h2>
-      <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">{t("offline.note")}</p>
-
+    <SettingsSection title={t("offline.heading")} description={t("offline.note")}>
       {!supported ? (
-        <p className="mt-2 text-sm">{t("offline.unsupported")}</p>
+        <p className="text-sm">{t("offline.unsupported")}</p>
       ) : (
         <>
-          <div className="mt-2 flex flex-wrap items-end gap-2">
+          <div className="flex flex-wrap items-end gap-2">
             {cities.length > 30 && (
               <label className="flex flex-col gap-1 text-sm">
                 {t("list.cityFilter")}
@@ -205,6 +201,6 @@ export function OfflineCities({ cities }: { cities: readonly CityInfo[] }) {
           )}
         </>
       )}
-    </section>
+    </SettingsSection>
   );
 }

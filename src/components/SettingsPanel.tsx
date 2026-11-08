@@ -20,6 +20,7 @@ import type { CityInfo } from "@/lib/parking/spots";
 import type { ParkingSpot } from "@/lib/types";
 import type { LatLng } from "@/lib/geo";
 import { AccountPanel } from "./AccountPanel";
+import { SettingsSection } from "./SettingsSection";
 import { OfflineCities } from "./OfflineCities";
 import { DataDisclaimer } from "./DataDisclaimer";
 import { FeedbackButton } from "./FeedbackButton";
@@ -126,32 +127,17 @@ export function SettingsPanel({
     <div className="mx-auto max-w-2xl space-y-4">
       <DataDisclaimer variant="lang" />
 
-      <section aria-labelledby="darstellung-heading" className="rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/50">
-        <h2 id="darstellung-heading" className="text-base font-semibold">
-          {t("settings.appearance")}
-        </h2>
-        <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
-          {t("settings.appearanceNote")}
-        </p>
-        <div className="mt-2">
-          <ThemeToggle />
-        </div>
-      </section>
+      <SettingsSection title={t("settings.appearance")} description={t("settings.appearanceNote")}>
+        <ThemeToggle />
+      </SettingsSection>
 
-      <section aria-labelledby="sprache-heading" className="rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/50">
-        <h2 id="sprache-heading" className="text-base font-semibold">
-          {t("settings.language")}
-        </h2>
-        <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
-          {t("settings.languageNote")}
-        </p>
-
+      <SettingsSection title={t("settings.language")} description={t("settings.languageNote")}>
         <select
           id="sprache-auswahl"
           aria-label={t("settings.languageChoose")}
           value={locale}
           onChange={(event) => void chooseLanguage(event.target.value as Locale)}
-          className="mt-3 min-h-11 w-full rounded-xl border border-neutral-300 bg-white px-3 text-sm focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700 dark:bg-neutral-950"
+          className="min-h-11 w-full rounded-xl border border-neutral-300 bg-white px-3 text-sm focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700 dark:bg-neutral-950"
         >
           {LOCALE_CODES.map((code) => (
             // Der Name steht in der eigenen Sprache und wird nie übersetzt.
@@ -163,17 +149,13 @@ export function SettingsPanel({
         {LOCALE_CODES.length > 1 && (
           <p className="mt-2 text-xs text-neutral-500">{t("settings.languageUnreviewed")}</p>
         )}
-      </section>
+      </SettingsSection>
 
-      <section aria-labelledby="karten-app-heading" className="rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/50">
-        <h2 id="karten-app-heading" className="text-base font-semibold">
-          {t("settings.mapsApp")}
-        </h2>
-        <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
-          {t("settings.mapsAppNote", { detected: mapsShortLabel(detected, locale) })}
-        </p>
-
-        <fieldset className="mt-2">
+      <SettingsSection
+        title={t("settings.mapsApp")}
+        description={t("settings.mapsAppNote", { detected: mapsShortLabel(detected, locale) })}
+      >
+        <fieldset>
           <legend className="sr-only">{t("settings.mapsAppChoose")}</legend>
           <div className="flex flex-col gap-1">
             {MAPS_CHOICES.map((choice) => (
@@ -203,19 +185,13 @@ export function SettingsPanel({
           ToDo 11.3a offen.
         */}
         <p className="mt-2 text-xs text-neutral-500">{t("settings.mapsAppDeviceOnly")}</p>
-      </section>
+      </SettingsSection>
 
       <OfflineCities cities={cities} />
 
-      <section aria-labelledby="feedback-heading" className="rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/50">
-        <h2 id="feedback-heading" className="text-base font-semibold">
-          {t("settings.feedback")}
-        </h2>
-        <p className="mt-1 mb-2 text-sm text-neutral-600 dark:text-neutral-400">
-          {t("settings.feedbackNote")}
-        </p>
+      <SettingsSection title={t("settings.feedback")} description={t("settings.feedbackNote")}>
         <FeedbackButton accountEmail={user?.email ?? null} />
-      </section>
+      </SettingsSection>
 
       {/*
         Das Konto steht **zuletzt**, und das ist Absicht: Es ist das, was die
@@ -223,20 +199,14 @@ export function SettingsPanel({
         Anmeldung niemanden, der nur einen Parkplatz sucht (ToDo 11.2 –
         „Anmeldung so spät wie möglich verlangen").
       */}
-      <section aria-labelledby="konto-heading" className="rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/50">
-        <h2 id="konto-heading" className="text-base font-semibold">
-          {t("settings.account")}
-        </h2>
-        <p className="mt-1 mb-2 text-sm text-neutral-600 dark:text-neutral-400">
-          {t("settings.accountNote")}
-        </p>
+      <SettingsSection title={t("settings.account")} description={t("settings.accountNote")}>
         <AccountPanel
           user={user}
           onUserChange={onUserChange}
           onShowSpot={onShowSpot}
           position={position}
         />
-      </section>
+      </SettingsSection>
 
       {/*
         Impressum und Datenschutzerklärung (ToDo 10.2).

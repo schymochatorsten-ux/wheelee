@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { useT } from "@/i18n/context";
+import { SettingsSection } from "./SettingsSection";
 
 /**
  * Mailversand einrichten (ToDo 10.22) – nur für Administratoren.
@@ -175,37 +176,34 @@ export function AdminMail() {
     "min-h-11 rounded-lg border border-neutral-300 px-3 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none disabled:opacity-50 dark:border-neutral-700";
 
   return (
-    <section
-      aria-labelledby="mail-titel"
-      className="border-t border-neutral-200 pt-4 dark:border-neutral-800"
+    <SettingsSection
+      title={t("adminMail.title")}
+      description={t("adminMail.intro")}
+      /*
+        Der Zustand steht neben der Überschrift, und zwar als Satz statt als
+        Ampel: „Der Versand läuft" ist die Frage, die jemand hat, wenn er
+        diesen Block öffnet – sie gehört an die Gruppe, nicht in das Formular.
+      */
+      aside={
+        <span className="text-sm font-medium">
+          {state?.active ? t("adminMail.statusOn") : t("adminMail.statusOff")}
+          {state?.source === "env" && ` – ${t("adminMail.fromEnv")}`}
+          {state?.source === "db" && ` – ${t("adminMail.fromDatabase")}`}
+        </span>
+      }
     >
-      <h2 id="mail-titel" className="text-base font-semibold">
-        {t("adminMail.title")}
-      </h2>
-      <p className="mt-1 text-xs text-neutral-500">{t("adminMail.intro")}</p>
-
-      {/*
-        Der Zustand zuerst, und zwar als Satz statt als Ampel: „Der Versand
-        läuft" ist die Frage, die jemand hat, wenn er diese Seite öffnet.
-      */}
-      <p className="mt-3 text-sm font-medium">
-        {state?.active ? t("adminMail.statusOn") : t("adminMail.statusOff")}
-        {state?.source === "env" && ` – ${t("adminMail.fromEnv")}`}
-        {state?.source === "db" && ` – ${t("adminMail.fromDatabase")}`}
-      </p>
-
       {/*
         Liegen in der Umgebung noch Angaben, muss das dastehen: Sonst sucht
         jemand den Fehler in seiner Eingabe, während in Wahrheit die
         gespeicherte Zeile gilt – oder umgekehrt.
       */}
       {state?.envPresent && state.source === "db" && (
-        <p className="mt-1 text-xs text-amber-700 dark:text-amber-300">
+        <p className="mb-3 text-xs text-amber-700 dark:text-amber-300">
           {t("adminMail.envOverridden")}
         </p>
       )}
 
-      <div className="mt-4 space-y-3">
+      <div className="space-y-3">
         <label className="block text-sm">
           {t("adminMail.host")}
           <input
@@ -350,6 +348,6 @@ export function AdminMail() {
           {error}
         </p>
       )}
-    </section>
+    </SettingsSection>
   );
 }
