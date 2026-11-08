@@ -514,7 +514,18 @@ export function MapSection({
         2026-10-11). Sie trägt nichts bei, was beim Parkplatzsuchen hilft –
         jeder Millimeter hier fehlt der Karte, und die Karte ist die App.
       */}
-      <header className="shrink-0 border-b border-neutral-200/70 bg-white/60 px-3 py-2 backdrop-blur-md dark:border-neutral-800/80 dark:bg-neutral-900/50">
+      {/*
+        **Deckend und ohne `backdrop-blur`** (ToDo 9.26). Die Kopfzeile liegt
+        nicht über der Karte – sie ist deren Nachbarin im Flex-Rahmen –, also
+        verwischte der Weichzeichner nichts als den eigenen Hintergrund. Er
+        kostete aber eine eigene Ebene, und auf der zeichnet der Browser
+        Schrift ohne Subpixel-Glättung: Der ganze Streifen wirkte unscharf,
+        während der Text darunter scharf stand.
+
+        Oben etwas mehr Luft (`pt-3`), weil die Zeile auf dem iPhone direkt
+        an der Statusleiste klebte und abgeschnitten wirkte.
+      */}
+      <header className="shrink-0 border-b border-neutral-200 bg-white px-3 pt-3 pb-2 dark:border-neutral-800 dark:bg-neutral-900">
         {/*
           `flex-wrap`, damit bei großer Schrift die Ansichtswahl in die
           nächste Zeile rutscht, statt die Seite breiter zu machen: Bei 200 %
@@ -537,7 +548,18 @@ export function MapSection({
             kommen" und in `data/_abdeckung.md`, also dort, wo jemand sie
             wirklich nachschlägt.
           */}
-          <h1 className="min-w-0 bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-base font-bold break-words hyphens-auto text-transparent dark:from-blue-300 dark:to-cyan-300">
+          {/*
+            **Ohne Farbverlauf** (ToDo 9.26). `bg-clip-text` zeichnet Schrift
+            als Maske über einen Verlauf; der Browser kann dabei nicht mit
+            Subpixeln glätten, und genau deshalb stand die Überschrift weich
+            da, während die Zeile darunter scharf war – auf dem iPhone-Foto
+            Seite an Seite zu sehen. Dazu lief der Verlauf ins Cyan, das auf
+            dunklem Grund am schwächsten steht.
+
+            Eine Volltonfarbe ist hier nicht Geschmack, sondern Lesbarkeit:
+            Die Zielgruppe liest das auf einem Telefon, oft im Auto.
+          */}
+          <h1 className="min-w-0 text-base font-bold break-words hyphens-auto text-blue-800 dark:text-blue-200">
             {t("app.title")}
           </h1>
           <div

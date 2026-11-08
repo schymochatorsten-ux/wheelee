@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-08):** **236 Einträge** auf oberster Ebene –
-davon 211, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-08):** **237 Einträge** auf oberster Ebene –
+davon 212, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 25, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -795,6 +795,15 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
 ---
 
 ## 9. Darstellung und Bedienung
+
+- [x] 9.26 **Kopfzeile scharf** (2026-11-08, von Torsten am iPhone-Foto gemeldet: „Oben sieht es nicht scharf aus und gefühlt etwas abgeschnitten“; `MapSection.tsx`).
+
+  **Zwei Ursachen, beide mit demselben Mechanismus.** Weiche Schrift entsteht hier nicht durch zu wenig Auflösung, sondern dadurch, dass der Browser die Subpixel-Glättung abschaltet – und das tut er in genau diesen beiden Fällen:
+
+  - **`backdrop-blur-md` an der Kopfzeile.** Das Foto zeigt den Grund, dass es niemandem auffiel: Die Kopfzeile liegt gar **nicht über der Karte** – sie ist deren Nachbarin im Flex-Rahmen. Der Weichzeichner verwischte also nichts als den eigenen Hintergrund, kostete aber eine eigene Zeichenebene, und auf der wird Schrift grau statt subpixelweise geglättet. Jetzt deckend. Die übrigen `backdrop-blur` (Zielsuche, Legende, Leiste über der Karte) bleiben: Die liegen wirklich über der Karte und verdecken sie sonst.
+  - **Der Farbverlauf in der Überschrift.** `bg-clip-text` zeichnet die Schrift als Maske über einen Verlauf – wieder ohne Subpixel. Auf dem Foto steht sie deshalb weich, während „Nächster Parkplatz …“ eine Zeile darunter scharf steht; dieselbe Kopfzeile, derselbe Weichzeichner, unterschiedliche Schärfe. Das war der Beweis, dass der Verlauf mitwirkt. Jetzt eine Volltonfarbe, die zugleich besser steht als das Cyan am Ende des Verlaufs.
+
+  **„Gefühlt abgeschnitten":** oben `pt-3` statt `py-2`. Auf dem Startbildschirm kommt der Abstand zur Statusleiste aus 9.24 dazu – der Screenshot stammt noch von der Fassung davor.
 
 - [x] 9.25 **Standortfreigabe am Konto** (2026-11-08, auf Torstens Wunsch; neu `lib/location-preference.ts`, `api/account/location/route.ts`, Migration 16, geändert `useGeolocation`, `MapSection`, `SettingsPanel`, `accounts.ts`, `auth/user.ts`, `auth/session.ts`, Anmeldung und Registrierung, Datenschutzerklärung, neun Sprachdateien).
 
