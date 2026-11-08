@@ -32,16 +32,24 @@ interface SettingsSectionProps {
    * läuft“). Steht außerhalb des Rahmens, weil es die Gruppe beschreibt.
    */
   aside?: React.ReactNode;
+  /** Sprungziel, damit weiter oben darauf verwiesen werden kann (9.23). */
+  anchor?: string;
   children: React.ReactNode;
 }
 
-export function SettingsSection({ title, description, aside, children }: SettingsSectionProps) {
+export function SettingsSection({
+  title,
+  description,
+  aside,
+  anchor,
+  children,
+}: SettingsSectionProps) {
   // `useId`, damit zwei Blöcke mit gleichem Titel nicht dieselbe ID tragen –
   // eine doppelte ID macht `aria-labelledby` für Screenreader unbrauchbar.
   const headingId = useId();
 
   return (
-    <section aria-labelledby={headingId}>
+    <section id={anchor} aria-labelledby={headingId} className={anchor ? "scroll-mt-4" : undefined}>
       <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
         <h2 id={headingId} className="text-base font-semibold">
           {title}

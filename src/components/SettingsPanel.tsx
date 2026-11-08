@@ -127,6 +127,22 @@ export function SettingsPanel({
     <div className="mx-auto max-w-2xl space-y-4">
       <DataDisclaimer variant="lang" />
 
+      {/*
+        **Ein Sprung zum Konto, ganz oben** (ToDo 9.23). Der Kontoblock steht
+        bewusst zuletzt (Begründung weiter unten), aber über ihm liegen
+        inzwischen fünf Blöcke und die Städteliste – rund 2.000 px. Torsten
+        suchte am 2026-11-08 auf dem Telefon vergeblich, wo man sich anmeldet.
+        Die Zeile verlangt keine Anmeldung, sie zeigt nur, dass es eine gibt.
+      */}
+      <p className="text-sm">
+        <a
+          href="#konto"
+          className="inline-flex min-h-11 items-center text-blue-800 hover:underline focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"
+        >
+          {user ? t("settings.account") : t("account.login")} ↓
+        </a>
+      </p>
+
       <SettingsSection title={t("settings.appearance")} description={t("settings.appearanceNote")}>
         <ThemeToggle />
       </SettingsSection>
@@ -199,7 +215,11 @@ export function SettingsPanel({
         Anmeldung niemanden, der nur einen Parkplatz sucht (ToDo 11.2 –
         „Anmeldung so spät wie möglich verlangen").
       */}
-      <SettingsSection title={t("settings.account")} description={t("settings.accountNote")}>
+      <SettingsSection
+        anchor="konto"
+        title={t("settings.account")}
+        description={t("settings.accountNote")}
+      >
         <AccountPanel
           user={user}
           onUserChange={onUserChange}

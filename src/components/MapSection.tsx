@@ -522,7 +522,7 @@ export function MapSection({
           <div
             role="tablist"
             aria-label={t("view.choose")}
-            className="flex shrink-0 gap-1.5 text-xs"
+            className="flex shrink-0 gap-2 text-xs"
           >
             {views.map((option) => (
               <button
@@ -534,21 +534,27 @@ export function MapSection({
                 // `min-h-11` bleibt: 44 px ist die Mindestgröße, die sich
                 // einhändig treffen lässt (ToDo 9.8). Schlanker heißt hier
                 // weniger Fläche drumherum, nicht kleinere Knöpfe.
-                className={`min-h-11 rounded-xl px-3 font-medium transition-colors focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none ${
+                className={`inline-flex min-h-11 min-w-11 items-center justify-center gap-1.5 rounded-xl px-3 font-medium transition-colors focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none ${
                   view === option
                     ? "bg-gradient-to-r from-blue-700 to-blue-600 text-white shadow-lg shadow-blue-700/30"
                     : "bg-neutral-100/80 text-neutral-700 hover:bg-neutral-200 dark:bg-neutral-900/70 dark:text-neutral-300 dark:hover:bg-neutral-800"
                 }`}
               >
-                {/* Auf schmalen Displays sind „Einstellungen" und
-                    „Rückmeldungen" zu lang – dort nur das Symbol, der Name
-                    bleibt für Screenreader stehen. */}
+                {/*
+                  **Der Name steht auch auf dem Telefon da** (ToDo 9.23). Bis
+                  zum 2026-11-08 blieb auf schmalen Displays nur das Zahnrad
+                  übrig, um Platz zu sparen – und Torsten hielt es auf dem
+                  iPhone für eine Helligkeitsumschaltung und fand die Anmeldung
+                  nicht, weil sie hinter diesem Reiter liegt. Ein Symbol, das
+                  nicht erkannt wird, verbirgt die halbe App; die Zeile, die
+                  dadurch umbricht, kostet 32 px.
+                */}
                 {option === "settings" || option === "feedback" ? (
                   <>
-                    <span aria-hidden="true" className="sm:hidden">
+                    <span aria-hidden="true">
                       {option === "settings" ? <GearIcon /> : <InboxIcon />}
                     </span>
-                    <span className="max-sm:sr-only">{t(VIEW_LABELS[option])}</span>
+                    <span>{t(VIEW_LABELS[option])}</span>
                   </>
                 ) : (
                   t(VIEW_LABELS[option])

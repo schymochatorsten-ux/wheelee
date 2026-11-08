@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-08):** **233 Einträge** auf oberster Ebene –
-davon 208, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-08):** **234 Einträge** auf oberster Ebene –
+davon 209, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 25, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -795,6 +795,15 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
 ---
 
 ## 9. Darstellung und Bedienung
+
+- [x] 9.23 **Reiter beschriftet, Anmeldung auffindbar** (2026-11-08, von Torsten auf dem iPhone gemeldet: „Die mobile Ansicht sieht nicht gut aus, man kann oben nicht alle Buttons ordentlich klicken. Ich weiß nicht, wo ich mich anmelden kann“; `MapSection.tsx`, `SettingsSection.tsx`, `SettingsPanel.tsx`).
+
+  **Zwei Mängel, und beide gingen auf dieselbe Sparsamkeit zurück.** Auf schmalen Displays zeigte der Reiter „Einstellungen“ nur das Zahnrad (der Name blieb als `sr-only` stehen). Torsten hielt es für eine Helligkeitsumschaltung – die Zacken des Zahnrads sehen bei 17 px wie eine Sonne aus – und öffnete den Reiter nie. Damit war **die halbe App verborgen**, darunter die Anmeldung.
+
+  - **Gemessen, bevor geändert wurde:** Der Knopf war **38 × 44 px** statt der 44 × 44, die 9.8 selbst als Mindestmaß festhält, und stand 12 px vom Bildschirmrand – daher „nicht ordentlich klicken“. Jetzt `min-w-11` und `gap-2`.
+  - **Der Name steht jetzt immer da.** Die Reiterzeile bricht dadurch bei 375 px in eine eigene Zeile um: Kopfzeile **107 → 139 px**. Das widerspricht 9.15 („jeder Millimeter gehört der Karte“), und die Abwägung ist bewusst anders ausgefallen: 32 px Karte wiegen weniger als ein Reiter, den der Besitzer der App selbst nicht erkennt. Kein seitliches Überlaufen, auch mit drei Reitern (Verwaltung) und mit den längeren Übersetzungen.
+  - **Sprungmarke zum Konto, ganz oben in den Einstellungen.** Der Kontoblock steht weiter **zuletzt** – 11.2 („Anmeldung so spät wie möglich verlangen“) bleibt richtig –, aber über ihm liegen inzwischen fünf Blöcke und die Städteliste: gemessen **1.978 px**, also drei Bildschirmlängen. Wer nicht weiß, dass es unten weitergeht, sucht vergeblich. Die neue Zeile verlangt nichts, sie zeigt nur, dass es eine Anmeldung gibt (angemeldet: „Konto“, sonst „Anmelden“), und `SettingsSection` nimmt dafür ein optionales `anchor`.
+  - Zugänglichkeitsprüfung hell und dunkel grün (19 Tests), 709 Unit-Tests grün.
 
 - [x] 9.22 **Zweiter Scrollbalken auf der Einstellungsseite** (2026-11-08, von Torsten gemeldet; `MapSection.tsx`, `LegalPage.tsx`, `parkplaetze/[slug]/page.tsx`, `e2e/scrollen.spec.ts`).
 
