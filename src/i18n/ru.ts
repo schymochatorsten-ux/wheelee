@@ -545,6 +545,9 @@ export const ru: Messages = {
   "stay.hours": "ч",
 
   "legal.updated": "По состоянию на: {date}",
+  "legal.dataFrom": "Данные от: {date}",
+  "legal.lastRun": "Последнее обновление (ночной запуск): {date}",
+  "legal.lastRunNever": "Последнее обновление (ночной запуск): ещё не выполнялся",
 
   "api.notSignedIn": "Вы не вошли.",
   "api.invalidRequest": "Недопустимый запрос.",

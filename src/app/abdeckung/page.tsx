@@ -28,19 +28,38 @@ export default function Abdeckung() {
     list.reduce((total, city) => total + city[key], 0);
   const confirmation = confirmationSummary();
   const number = (value: number) => value.toLocaleString("de-DE");
-  // „Stand“ ist der jüngste Import, nicht ein von Hand gepflegtes Datum: Es ändert sich
-  // mit den Daten (ToDo 19.14). Eine Prüfung ohne Änderung erzeugt keinen neuen Stand –
-  // siehe `deploy/Datenlauf.md`, sonst baute das NAS jeden Tag das Abbild neu.
+  /*
+   * **Zwei Daten, zwei Zeilen** (ToDo 19.16).
+   *
+   * Bis hierher stand oben **ein** Datum: der jüngere von letztem Import und
+   * letztem Lauf. Das las sich als „so alt sind die Daten“ und war es nicht –
+   * ein nächtlicher Lauf, der die Quellen prüft und nichts Neues findet,
+   * schob das Datum jede Nacht vor, obwohl sich am Bestand nichts geändert
+   * hatte. Genau die Verwechslung, vor der dieses Projekt sich sonst hütet:
+   * Es sah frischer aus, als es war.
+   *
+   * Jetzt steht beides getrennt da – „Daten vom“ (jüngster Import, ändert
+   * sich nur mit den Daten) und „Zuletzt aktualisiert (nächtlicher Lauf)“
+   * (wann zuletzt überhaupt nachgesehen wurde).
+   *
+   * Das Laufdatum kommt aus `geprueft.json` neben der Datenbank, nicht aus
+   * dem Repository: Ein Lauf ohne Fund soll keinen Commit und keinen Neubau
+   * auslösen (siehe `lib/checked.ts` und `deploy/Datenlauf.md`). Fehlt die
+   * Datei, steht „noch nicht gelaufen“ – nie ein erfundenes Datum.
+   */
   const checked = readChecked();
   const newestImport = cities.reduce((latest, city) => (city.importedAt > latest ? city.importedAt : latest), "2026-01-01");
-  // Der Stand der Seite ist der jüngere von letztem Import und letztem Lauf (ToDo 19.15).
-  const newest = [newestImport, checked.updatedAt?.slice(0, 10) ?? ""].sort().pop() ?? newestImport;
   // Die größten Städte insgesamt, gleich welcher Quelle – die Tabelle der amtlichen
   // Listen allein zeigt nicht, wo es die meisten Stellplätze gibt.
   const largest = [...cities].sort((a, b) => b.spaceCount - a.spaceCount).slice(0, 25);
 
   return (
-    <LegalPage title="Datenabdeckung" updated={newest}>
+    <LegalPage
+      title="Datenabdeckung"
+      updated={newestImport}
+      updatedKey="legal.dataFrom"
+      lastRun={checked.updatedAt}
+    >
       <section>
         <h2>Überblick</h2>
         <p>

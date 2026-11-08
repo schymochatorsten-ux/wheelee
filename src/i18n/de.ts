@@ -542,6 +542,9 @@ export const de = {
   "stay.hours": "Stunden",
 
   "legal.updated": "Stand: {date}",
+  "legal.dataFrom": "Daten vom: {date}",
+  "legal.lastRun": "Zuletzt aktualisiert (nächtlicher Lauf): {date}",
+  "legal.lastRunNever": "Zuletzt aktualisiert (nächtlicher Lauf): noch nicht gelaufen",
 
   // Nur in anderen Sprachen sichtbar (15.1): Hinweis, dass der Rechtstext
   // deutsch bleibt. Hier der Sinn, den jede Übersetzung treffen muss.

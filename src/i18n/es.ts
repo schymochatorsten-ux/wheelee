@@ -548,6 +548,9 @@ export const es: Messages = {
   "stay.hours": "horas",
 
   "legal.updated": "Fecha: {date}",
+  "legal.dataFrom": "Datos del: {date}",
+  "legal.lastRun": "Última actualización (ejecución nocturna): {date}",
+  "legal.lastRunNever": "Última actualización (ejecución nocturna): aún no se ha ejecutado",
 
   "api.notSignedIn": "No has iniciado sesión.",
   "api.invalidRequest": "Solicitud no válida.",

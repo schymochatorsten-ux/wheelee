@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-08):** **227 Einträge** auf oberster Ebene –
-davon 202, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-08):** **228 Einträge** auf oberster Ebene –
+davon 203, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 25, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -1684,6 +1684,16 @@ Torsten, 2026-10-30: „19 alle umsetzen, die ohne mich gehen.“ 13 bleibt gesp
   - **Tests:** `e2e/staedte.spec.ts` (Schnittstelle, HTML unter 150 KB und ohne OSM-Attributionen, Auswahl im Vorab-Download füllt sich). Dev-E2E 105 + 3, Produktions-E2E 110 grün.
 
 ## 19. Ergänzung 4 (2026-11-01)
+
+- [x] 19.16 **Abdeckungsseite: Laufdatum und Datenstand getrennt** (2026-11-08, auf Torstens Wunsch; `components/LegalPage.tsx`, `app/abdeckung/page.tsx`, `app/abdeckung/page.test.ts`).
+
+  Oben stand **ein** Datum – der jüngere von letztem Import und letztem Lauf (19.15). Das las sich als „so alt sind die Daten“ und war es nicht: Ein nächtlicher Lauf, der die Quellen prüft und nichts Neues findet, schob es jede Nacht vor, obwohl sich am Bestand nichts geändert hatte. **Der Bestand sah frischer aus, als er war** – genau die Verwechslung, vor der dieses Projekt sich sonst hütet.
+
+  - Jetzt zwei Zeilen: **„Daten vom“** (jüngster Import, ändert sich nur mit den Daten) und **„Zuletzt aktualisiert (nächtlicher Lauf)“** (wann zuletzt überhaupt nachgesehen wurde).
+  - **Ohne `geprueft.json` steht „noch nicht gelaufen“**, kein erfundenes Datum – dieselbe Haltung wie beim Impressum. Die Datei liegt neben der Datenbank und nicht im Repository, damit ein Lauf ohne Fund keinen Neubau auslöst (19.15).
+  - `LegalPage` bekam dafür zwei optionale Angaben (`updatedKey`, `lastRun`); Impressum und Datenschutzerklärung zeigen unverändert „Stand“ (im Browser gegengeprüft).
+  - **Drei Tests halten die Trennung fest**, darunter einer, der prüft, dass das Laufdatum das Datendatum *nicht* mitzieht: Beim nächsten Umbau fällt beides sonst leicht wieder zusammen. Im Browser gesehen: „Daten vom: 8. November 2026“ über „Zuletzt aktualisiert (nächtlicher Lauf): 5. November 2026“.
+  - **Geschrieben wird das Laufdatum bei jedem echten Lauf**, auch wenn nichts fällig war: `saveChecked()` in `scripts/import/auto-update.mts` läuft in beiden Zweigen und stempelt die Zeit. Ein Probelauf (`--dry`) schreibt nichts.
 
 - [x] 19.15 **„Zuletzt geprüft“ auf `/abdeckung`, und alle amtlichen Quellen werden wirklich verglichen** (Torsten, 2026-11-01: „warum nicht überall der Stand heute?“). **Befund, den ich vorher nicht gesehen hatte:** Der Datenlauf hat nur Städte angefasst, deren Quelle ein *Änderungsdatum* nennt und jünger war. Berlin, Gelsenkirchen und Bottrop nennen keines (Vergleich nur durch Neuholen, vorher erst nach 182 Tagen), **München** hat eine handgepflegte Quelle und lief als „kein Datum“ durch, und der **regionale Satz (TRK, zwölf Gemeinden)** läuft über `import:regional`, das der Lauf gar nicht kannte. Diese Städte wurden also nie aktualisiert, obwohl ich „alle prüfen“ gesagt hatte.
   - **Jetzt:** Quellen ohne Datum und München werden monatlich neu geholt und verglichen (`NO_DATE_REIMPORT_DAYS = 30`), der TRK-Satz alle 30 Tage über `checkRegional` (mit derselben Notbremse und Gleichheitsprüfung). `npm run data:update -- --all` vergleicht alles sofort, ohne Obergrenze.

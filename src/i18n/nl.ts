@@ -542,6 +542,9 @@ export const nl: Messages = {
   "stay.hours": "uur",
 
   "legal.updated": "Stand: {date}",
+  "legal.dataFrom": "Gegevens van: {date}",
+  "legal.lastRun": "Laatst bijgewerkt (nachtelijke run): {date}",
+  "legal.lastRunNever": "Laatst bijgewerkt (nachtelijke run): nog niet uitgevoerd",
 
   "api.notSignedIn": "Niet aangemeld.",
   "api.invalidRequest": "Ongeldig verzoek.",

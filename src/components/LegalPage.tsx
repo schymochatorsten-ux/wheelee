@@ -20,6 +20,25 @@ interface LegalPageProps {
   title: string;
   /** Datum der letzten Änderung (ISO), erscheint unter der Überschrift. */
   updated: string;
+  /**
+   * Wie die erste Zeile heißt. Vorgabe „Stand“ – für die Abdeckungsseite
+   * „Daten vom“, denn dort ist es kein Stand der Seite, sondern der Tag, an
+   * dem sich der Bestand zuletzt geändert hat (ToDo 19.16).
+   */
+  updatedKey?: "legal.updated" | "legal.dataFrom";
+  /**
+   * Wann der nächtliche Datenlauf zuletzt durchlief (ISO), für eine zweite
+   * Zeile darunter.
+   *
+   * **Getrennt vom Datum oben, und das ist der ganze Zweck:** Ein Lauf, der
+   * die Quellen prüft und nichts Neues findet, ist etwas anderes als neue
+   * Daten. Beides in eine Zeile zu legen hieße, einen unveränderten Bestand
+   * jede Nacht als frisch auszuweisen.
+   *
+   * `null` heißt „nie gelaufen oder nicht bekannt" und wird auch so
+   * geschrieben – nie ein erfundenes Datum.
+   */
+  lastRun?: string | null;
   children: React.ReactNode;
 }
 
@@ -29,14 +48,23 @@ interface LegalPageProps {
  * maßgeblich ist. Der Hinweis steht in der Sprache der Oberfläche, weil sonst
  * ausgerechnet der, der den deutschen Text nicht lesen kann, ihn nicht läse.
  */
-export async function LegalPage({ title, updated, children }: LegalPageProps) {
+export async function LegalPage({
+  title,
+  updated,
+  updatedKey = "legal.updated",
+  lastRun,
+  children,
+}: LegalPageProps) {
   const locale = await getLocale();
   const t = translator(locale);
-  const date = new Date(`${updated}T00:00:00`).toLocaleDateString(localeTag(locale), {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
+  const tag = localeTag(locale);
+  const format = (iso: string) =>
+    new Date(iso.length === 10 ? `${iso}T00:00:00` : iso).toLocaleDateString(tag, {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    });
+  const date = format(updated);
 
   return (
     // `min-h-0 flex-1 overflow-y-auto`, weil das Layout die Bildschirmhöhe
@@ -54,7 +82,14 @@ export async function LegalPage({ title, updated, children }: LegalPageProps) {
         <h1 lang="de" className="mt-3 text-2xl font-semibold hyphens-auto">
           {title}
         </h1>
-        <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">{t("legal.updated", { date })}</p>
+        <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">{t(updatedKey, { date })}</p>
+        {lastRun !== undefined && (
+          <p className="text-sm text-neutral-600 dark:text-neutral-400">
+            {lastRun === null
+              ? t("legal.lastRunNever")
+              : t("legal.lastRun", { date: format(lastRun) })}
+          </p>
+        )}
         {locale !== DEFAULT_LOCALE && (
           <p
             lang={locale}

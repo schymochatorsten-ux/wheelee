@@ -545,6 +545,9 @@ export const pl: Messages = {
   "stay.hours": "godz.",
 
   "legal.updated": "Stan na: {date}",
+  "legal.dataFrom": "Dane z: {date}",
+  "legal.lastRun": "Ostatnia aktualizacja (nocne uruchomienie): {date}",
+  "legal.lastRunNever": "Ostatnia aktualizacja (nocne uruchomienie): jeszcze nie uruchomiono",
 
   "api.notSignedIn": "Nie zalogowano.",
   "api.invalidRequest": "Nieprawidłowe żądanie.",

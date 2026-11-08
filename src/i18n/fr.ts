@@ -553,6 +553,9 @@ export const fr: Messages = {
   "stay.hours": "heures",
 
   "legal.updated": "Mise à jour : {date}",
+  "legal.dataFrom": "Données du : {date}",
+  "legal.lastRun": "Dernière mise à jour (exécution nocturne) : {date}",
+  "legal.lastRunNever": "Dernière mise à jour (exécution nocturne) : pas encore exécutée",
 
   "legal.germanOnly":
     "Les mentions légales et la politique de confidentialité n'existent qu'en allemand ; la version allemande fait foi.",
