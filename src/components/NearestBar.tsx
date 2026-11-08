@@ -192,7 +192,10 @@ export function NearestBar({
   // meinem Standort", damit nicht zwei Knopfreihen über der Karte stehen.
   if (closed) {
     return (
-      <div className="flex justify-end gap-2">
+      // `ml-auto` schiebt die beiden Knöpfe an den rechten Rand der Zeile, in
+      // der links die Zielsuche steht (9.30). Keine eigene Breite: Nur so
+      // bleibt Platz für die Suche daneben.
+      <div className="ml-auto flex gap-2">
         <button
           type="button"
           onClick={() => setClosed(false)}
@@ -225,7 +228,9 @@ export function NearestBar({
     // Gestaltungsklasse zu hängen: Er suchte zuvor nach `rounded-2xl` und
     // schlug fehl, als die Ecken schlanker wurden – ein Fehlalarm über eine
     // Änderung, die nichts kaputt gemacht hatte.
-    <div id="parkplatz-leiste" className={`${PANEL} max-h-[46vh] overflow-y-auto p-2`}>
+    // `w-full`: Aufgeklappt gehört der Leiste die ganze Zeile, und die
+    // Knöpfe daneben rutschen durch den Umbruch nach unten (9.30).
+    <div id="parkplatz-leiste" className={`${PANEL} max-h-[46vh] w-full overflow-y-auto p-2`}>
       <div className="flex items-start gap-1">
         {/*
           Der ganze Textblock ist der Knopf „auf der Karte zeigen". Das ist die

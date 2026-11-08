@@ -789,7 +789,22 @@ export function MapSection({
               bleibt sie auffindbar, ohne eine volle Zeile Karte zu kosten.
             */}
             {!selected && (
-              <div className="pointer-events-none absolute inset-x-0 top-0 z-[1000] flex flex-col items-stretch gap-1.5 p-2">
+              /*
+                **Eine umbrechende Zeile statt einer Spalte** (ToDo 9.30).
+                Zugeklappt sind das drei kleine Flächen – „Wohin willst du?",
+                die Entfernung und „zurück zu meinem Standort" –, und die
+                standen untereinander: zwei Zeilen Karte für zusammen keine
+                halbe. Jetzt stehen sie nebeneinander, die beiden Knöpfe
+                rechts.
+
+                **Der Umbruch ist der Trick und keine Nachlässigkeit:** Wer
+                die Suche öffnet oder den Parkplatzvorschlag aufklappt, nimmt
+                die volle Breite (`w-full` an deren Wurzel) – dann rutschen
+                die beiden Knöpfe von selbst in die nächste Zeile, genau wie
+                gewünscht. Ohne `flex-wrap` müsste dafür ein Zustand von
+                unten nach oben gereicht werden.
+              */
+              <div className="pointer-events-none absolute inset-x-0 top-0 z-[1000] flex flex-wrap items-start gap-1.5 p-2">
                 <DestinationSearch
                   destination={destination}
                   // Derselbe Bezugspunkt wie für die Auswahl: Ziel, wenn eines

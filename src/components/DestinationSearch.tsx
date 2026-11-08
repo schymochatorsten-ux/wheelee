@@ -475,7 +475,9 @@ export function DestinationSearch({
   }
 
   return (
-    <div className={`${PANEL} p-2.5`}>
+    // `w-full`: Geöffnet gehört der Suche die ganze Zeile – die Knöpfe
+    // rechts daneben rutschen dadurch nach unten (9.30, so gewünscht).
+    <div className={`${PANEL} w-full p-2.5`}>
       <div className="flex items-center gap-2">
         <span aria-hidden="true" className="pl-1 text-neutral-400">
           <SearchIcon />

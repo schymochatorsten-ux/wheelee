@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-08):** **242 Einträge** auf oberster Ebene –
-davon 217, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-08):** **243 Einträge** auf oberster Ebene –
+davon 218, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 25, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -812,6 +812,13 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
 ---
 
 ## 9. Darstellung und Bedienung
+
+- [x] 9.30 **Entfernung und Standortknopf neben die Zielsuche** (2026-11-08, von Torsten gemeldet: „nachdem man die nearest parking spaces weggeixt hat, sieht man die Entfernung und den Standort-Button nicht auf der Höhe von ‚where do you want to go‘ … sobald man auf die Suche klickt, dürfen die zwei Symbole gerne runterrutschen“; `MapSection.tsx`, `NearestBar.tsx`, `DestinationSearch.tsx`, neu `e2e/kartenleiste.spec.ts`).
+
+  Über der Karte stand eine **Spalte**: „Wohin willst du?" in Zeile eins, Entfernung und „zurück zu meinem Standort" in Zeile zwei – zwei Zeilen Karte für drei kleine Flächen, die zusammen keine halbe füllen. Jetzt eine Zeile mit Umbruch (`flex-wrap`), die Knöpfe rechts (`ml-auto`).
+
+  - **Der Umbruch ersetzt einen durchgereichten Zustand.** Aufgeklappt nehmen Suche und Parkplatzvorschlag `w-full`, und die Knöpfe rutschen von selbst in die nächste Zeile – genau das Gewünschte. Die Alternative wäre gewesen, „zugeklappt?" aus zwei Kindkomponenten nach oben zu melden und daraus die Richtung zu rechnen: mehr Code für dasselbe Bild.
+  - **Mit einem E2E-Test, weil es um Pixel geht** (`e2e/kartenleiste.spec.ts`): gleiche obere Kante bis auf 4 px und der Standortknopf rechts **neben** der Suche; geöffnet steht er darunter. Im Quelltext war der alte Fehler nicht zu sehen, nur im Bild – dann gehört die Prüfung auch ins Bild.
 
 - [x] 9.29 **Der Hof um den gewählten Reiter** (2026-11-08, von Torsten am Screenshot eingekringelt: „Der obere Bereich sieht immer noch aus, als wäre ein Weichzeichner darüber“; `MapSection.tsx`).
 
