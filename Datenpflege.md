@@ -296,8 +296,9 @@ npm run import:index
 npm run validate -- <stadt>
 ```
 
-Der Lauf (seit 19.10 täglich statt monatlich) liegt als systemd-Timer auf dem NAS bereit
-(`deploy/wheelee-aktualitaet.*`, ToDo 19.2; Einrichtung in `deploy/README.md`).
+Der Lauf (seit 19.10 täglich statt monatlich) läuft als systemd-Timer auf dem NAS
+(`deploy/wheelee-aktualitaet.*`, ToDo 19.2, dort eingerichtet am 2026-11-09;
+Einzelheiten und Fehlerbilder in `deploy/Datenlauf.md`).
 Seit 19.10 prüft er nicht nur, sondern importiert: `npm run data:update`
 (`scripts/import/auto-update.mts`) holt die **amtlichen** Städte neu, deren Quelle
 sich geändert hat oder deren Import älter als ein halbes Jahr ist, und übernimmt

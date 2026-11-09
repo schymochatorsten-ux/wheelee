@@ -49,16 +49,15 @@ vom BKG, die nicht im Repository liegen).
 Datenläufe laufen in Stufen, jede erst nach den Prüfungen (D-11 in
 [Erledigt.md](Erledigt.md)); alle Stufen sind eingespielt.
 
-**Was den Zugang zum NAS braucht – 10.20, 19.2 und 19.3 – wird in einem Termin
-zusammen erledigt; der Ablauf steht in [deploy/Niklas-Termin.md](deploy/Niklas-Termin.md).**
-Die Reihenfolge dort ist nicht beliebig: Das Admin-Konto braucht den Klon, den
-der erste Datenlauf anlegt, und `ADMIN_EMAILS` scheidet ohne Mailversand aus
-(es hebt nur bestätigte Adressen). Danach offen: **2d.8a** (Bochum und Köln),
-**19.13** und **19.5** (beide ohne Niklas).
+**Nichts auf dieser Liste braucht noch den Zugang zum NAS.** Der Termin dafür
+ist gelaufen: 10.20 (Admin-Konto), 19.2 (Datenlauf) und 19.3 (Sicherung) sind
+am 2026-11-09 erledigt. **Läuft dort etwas nicht wie erwartet, wird es ein
+eigener Punkt**; wo der Nachweis liegt und welche Fehlerbilder es gibt, steht
+in [Erledigt.md](Erledigt.md) bei 19.3 und in [deploy/Datenlauf.md](deploy/Datenlauf.md).
 
 **Zum Schluss steht 12.17** (abschließender Gesamttest), weil er sonst einen
-Stand prüft, den es danach nicht mehr gibt. _10.23 (Sicherheit) und 12.16
-(Geschwindigkeit) sind am 2026-11-09 erledigt._
+Stand prüft, den es danach nicht mehr gibt. _10.23 (Sicherheit), 12.16
+(Geschwindigkeit) und 12.18 (npm audit) sind am 2026-11-09 erledigt._
 
 **Neue Knöpfe und Meldungen kommen gleich in `src/i18n/de.ts`, nicht in die
 Komponente** (Aufbau in [Erledigt.md](Erledigt.md) unter 15.2) – und in die
@@ -72,21 +71,14 @@ maschinelle Mehrfachprüfung.
 
 - [~] 2d.8a **Städte mit ungenutzter amtlicher Quelle.** München und Bielefeld sind umgestellt (Befund in [Erledigt.md](Erledigt.md)). **Offen: Bochum.** Am 2026-11-01 erneut mit einfachem Abruf versucht, auch über GovData und die Datastore-Schnittstelle: Der Datensatz `bochum-behindertenparkplaetze` ist über `opendata.ruhr` auffindbar (GeoJSON, CSV, ZIP), der Download antwortet aber weiter mit 403, der ArcGIS-Dienst mit 404, die Datastore-Schnittstelle ebenfalls; ich umgehe die Sperre nicht. **Ohne die Datei im Browser geht es nicht:** CSV oder GeoJSON „Bochum – Behindertenparkplätze“ (CC0) von `bochum.opendata.ruhr` laden und in den Arbeitsordner legen. **Köln** (neu am 2026-11-01): Der ArcGIS-Server der Stadt (`geoportal.stadt-koeln.de/arcgis`) antwortet auf jeden Pfad mit der Startseite der Stadt; deren Geoportal-Seite sagt „Einige unserer interaktiven Karten stehen derzeit nicht zur Verfügung“ (Stand 2026-11-01). Auch offenedaten-koeln.de und GovData verweisen nur auf diese Adressen, einen anderen Weg gibt es dort nicht. Der Kölner Bestand bleibt amtlich vom 2026-10-08; der Datenlauf (19.10) versucht es wöchentlich von selbst. **Heidelberg** (neu am 2026-11-01): Die Quelle (CKAN-Datenplattform) liefert nichts Brauchbares mehr, der Lauf hat den Import verworfen, der Bestand vom 2026-10-08 bleibt; neuen Bezugsweg suchen. Köln: ob der Dienst zurückkommt, sonst das gebündelte NRW-Angebot der Mobilithek (Zugang unbekannt, Anmeldung nötig).
 
-## 10. Sicherheit und Recht
-
-- [!] 10.20 **Admin-Konto auf dem NAS anlegen und prüfen** (zu 10.19 und 18.7, [Erledigt.md](Erledigt.md)). **Braucht Torsten und Niklas**, Ablauf und Befehle in [deploy/Niklas-Termin.md](deploy/Niklas-Termin.md) (Schritt 4). Nur über `admin:create`: `ADMIN_EMAILS` hebt ausschließlich Konten mit bestätigter Adresse, und bestätigt wird per Mail, die es ohne dieses Konto noch nicht gibt.
-
 ## 12. Qualität und Deployment
 
-- [ ] 12.18 **ESLint anheben, damit `npm audit` wieder sauber ist** (Befund aus 10.23, [Erledigt.md](Erledigt.md)). 8 moderate Meldungen aus **einer** Wurzel: `minimatch` (GHSA-g3hv-75wg-m249) über `typescript-eslint` → `eslint-config-next`. **Es trifft keine ausgelieferte Zeile** – ESLint ist Bauwerkzeug und steckt nicht im Abbild; deshalb hier und nicht als Sicherheitslücke. `npm audit fix --force` wollte ESLint umbauen, und `eslint.config.mjs` hing schon einmal an einem Zirkelverweis im React-Plugin (1.8). Also gezielt: Fassungen ansehen, anheben, `npm run lint` gegenprüfen.
-- [ ] 12.17 **Abschließender Gesamttest** (auf Torstens Wunsch, 2026-11-08). **Zuletzt, nach 10.23 und 12.16**, sonst prüft er einen Stand, den es danach nicht mehr gibt. Alles grün auf einmal: `npm run test`, `typecheck`, `lint`, `npm run check:slugs`, `npx playwright test` (voller Durchlauf, auch die übersprungenen Offline-Prüfungen einmal von Hand gegen `npm run start`), dazu ein Durchgang von Hand auf dem Telefon: Karte, Suche, Navigation, Rückmeldung mit Mail, An- und Abmelden, Verwaltung. Was dabei auffällt, wird als eigener Punkt aufgenommen und nicht nebenbei geändert.
+- [~] 12.17 **Gesamttest: Durchgang von Hand auf dem Telefon.** Offen ist nur noch dieser – Karte, Suche, Navigation, Rückmeldung mit Mail, An- und Abmelden, Verwaltung. **Braucht Torsten** (Gerät und laufender Betrieb). Der maschinelle Teil ist am 2026-11-09 gelaufen, Zahlen in [Erledigt.md](Erledigt.md). Was auffällt, wird als eigener Punkt aufgenommen und nicht nebenbei geändert. **Läuft danach noch etwas am Code, gehört der maschinelle Teil wiederholt.**
 
 ## 19. Betrieb und Pflege
 
 Was von 19 baubar war, ist gebaut (19.1, 19.4, 19.7, 19.8; Begründung in [Erledigt.md](Erledigt.md)). Offen ist, was auf dem NAS oder von Hand geschieht:
 
-- [~] 19.2 **Täglicher Datenlauf auf dem NAS** (Prüfung, höchstens 5 Neuimporte je Tag). Prüft die Quellen, importiert geänderte amtliche Städte neu und pusht die Daten (19.10, [Erledigt.md](Erledigt.md)); auf dem NAS nicht erprobt. **Braucht Torsten und Niklas:** [deploy/Niklas-Termin.md](deploy/Niklas-Termin.md), Schritte 1–3 und 5; die Einzelheiten und Fehlerbilder in [deploy/Datenlauf.md](deploy/Datenlauf.md).
-- [~] 19.3 **Zeitgesteuerte Sicherung.** Skript und Timer liegen in `deploy/wheelee-sicherung.*` (täglich, 14 Sicherungen), auf dem NAS nicht erprobt. **Braucht Niklas:** [deploy/Niklas-Termin.md](deploy/Niklas-Termin.md), Schritt 5 – zusammen mit 19.2, es sind dieselben Handgriffe.
 - [!] 19.13 **Google Search Console einrichten.** Dort `wheelee.de` als Eigentum bestätigen (DNS-Eintrag oder Datei), `https://wheelee.de/sitemap.xml` einreichen und nach einigen Tagen unter „Seiten“ prüfen, ob die Stadtseiten aufgenommen sind (19.12). Braucht Torsten (Google-Konto, DNS beim Registrar).
 - [!] 19.5 **„Nur OSM“ und „aufgehoben gemeldet“ als OpenStreetMap-Hinweise zurückgeben.** Geschieht von Hand in OSM-Notizen mit eigenem Konto; die Liste der Kandidaten steht in `data/_validierung.md`.
 

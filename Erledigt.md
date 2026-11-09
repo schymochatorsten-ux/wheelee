@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-09):** **245 Einträge** auf oberster Ebene –
-davon 220, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-09):** **248 Einträge** auf oberster Ebene –
+davon 223, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 25, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -1795,8 +1795,9 @@ Der Punkt bleibt in `ToDos.md` offen (`[~]`, nur noch Bochum); hierher gehört, 
 Torsten, 2026-10-30: „19 alle umsetzen, die ohne mich gehen.“ 13 bleibt gesperrt.
 
 - [x] 19.1 **Automatische Zugänglichkeitsprüfung** (`e2e/zugaenglichkeit.spec.ts`, `@axe-core/playwright` als Entwicklungsabhängigkeit). Startseite, Einstellungen, `/quellen`, `/abdeckung` und `/datenschutz`, je hell und dunkel, gegen WCAG 2.0/2.1 A und AA. **Die Kartenkacheln sind ausgenommen** (`.leaflet-container`): Ihren Kontrast bestimmt der Kartendienst. **Fund beim ersten Lauf:** die Zeile „Stand: …“ auf den Rechtsseiten (`LegalPage.tsx`) war `neutral-500` auf dem Seitenhintergrund und fiel im Kontrast durch – jetzt `neutral-600` / dunkel `neutral-400`. Grenze: Automatik findet nur einen Teil der Fehler; ein Screenreader-Test ersetzt sie nicht. Die ausgeblendete Listenansicht (9.11) und die Verwaltungsansichten sind nicht abgedeckt.
-- [~] 19.2 **Monatlicher Aktualitätslauf** – gebaut: `deploy/wheelee-aktualitaet.sh`, `.service`, `.timer` (am Monatsersten, Verzögerung bis eine Stunde, `Persistent=true`). **Läuft in einem Wegwerf-Container** (`node:24-alpine`, Arbeitsordner als Volume), weil das Produktionsabbild nur das Standalone-Paket enthält – weder `tsx` noch die Skripte. Schreibt nach `data/`; **seit 19.10 führt es auch den Neuimport aus** (`npm run data:update`) und committet auf Wunsch. **Auf dem NAS nicht erprobt**, Einschalten ist offen (`ToDos.md`).
-- [~] 19.3 **Zeitgesteuerte Sicherung** – gebaut: `deploy/wheelee-sicherung.sh` (derselbe `VACUUM INTO`-Einzeiler wie in der README, plus Rotation auf die letzten 14), `.service`, `.timer` (täglich 03:30). Auf dem NAS nicht erprobt, Einschalten offen.
+- [x] 19.2 **Täglicher Datenlauf** – gebaut: `deploy/wheelee-aktualitaet.sh`, `.service`, `.timer` (`Persistent=true`). **Läuft in einem Wegwerf-Container** (`node:24-alpine`, Arbeitsordner als Volume), weil das Produktionsabbild nur das Standalone-Paket enthält – weder `tsx` noch die Skripte. Schreibt nach `data/`; **seit 19.10 führt es auch den Neuimport aus** (`npm run data:update`) und committet auf Wunsch. **Auf dem NAS eingerichtet und erledigt (Torstens Bescheid vom 2026-11-09)**; bis dahin stand hier „auf dem NAS nicht erprobt".
+- [x] 19.3 **Zeitgesteuerte Sicherung** – gebaut: `deploy/wheelee-sicherung.sh` (derselbe `VACUUM INTO`-Einzeiler wie in der README, plus Rotation auf die letzten 14), `.service`, `.timer` (täglich 03:30). **Auf dem NAS eingerichtet und erledigt (Torstens Bescheid vom 2026-11-09)**, zusammen mit 19.2 und 10.20 – es waren dieselben Handgriffe.
+  - **Was von hier aus nicht geprüft ist, und das gehört dazu:** ob der erste Lauf wirklich durchgelaufen ist, ob der Push des Datenlaufs greift (er braucht einen Schreibschlüssel auf dem NAS, sonst bleibt der Stand auf dem Zweig `daten-update`) und ob die Sicherung Dateien ablegt. Der Nachweis liegt auf dem NAS: `systemctl list-timers 'wheelee-*'`, `journalctl -u wheelee-aktualitaet`, `data/_auto-update.md` und der Ordner `sicherung/` im Volume. **Fällt dort etwas auf, wird es ein eigener Punkt** – die Fehlerbilder stehen in [deploy/Datenlauf.md](deploy/Datenlauf.md).
 - [x] 19.4 **Öffentliche Abdeckungsseite** `/abdeckung` (`src/app/abdeckung/page.tsx`, aus den Einstellungen verlinkt, `settings.coverage`). Zeigt Städte-, Standort- und Stellplatzzahlen, den Anteil amtlich/OSM, das Ergebnis des Kreuzvergleichs und je amtliche Stadt Zahl und Stand. **Aus den Seed-Dateien gebaut, nicht aus `_abdeckung.md` gelesen** (wie die Karte: nie älter als die Daten, keine zweite Quelle zum Nachführen). Die rund 3.700 OSM-Städte stehen nur als Summe, nicht einzeln – die Tabelle bliebe sonst unlesbar; je Stadt gibt es weiter die Auswahl in den Einstellungen. Deutsch, wie die übrigen Seiten.
 - [x] 19.7 **Hinweis „Daten älter als ein halbes Jahr“ in der Listenansicht** (`SpotList.tsx`, Städteliste). **Dieselbe Grenze und derselbe Text wie in der Offline-Ansicht** (`STALE_DATA_DAYS`, `offline.staleData`) – eine zweite Grenze würde auseinanderlaufen. Heute zeigt keine Stadt den Hinweis (die Seeds sind jünger); er wirkt, sobald ein Import alt wird. Die Listenansicht ist ausgeblendet (9.11), deshalb nur Typ- und Lint-Prüfung, kein Browsertest.
 - [x] 19.8 **Gemeinsame Quellen- und Lizenzseite** `/quellen` (`src/app/quellen/page.tsx`, aus den Einstellungen verlinkt, `settings.sources`). Eine Zeile je Quelle mit Lizenz und den Städten, die sie liefert (bei mehr als 12 nur die Zahl), dazu die OSM- und BKG-Vermerke. Der Vermerk steht damit außerhalb der ausgeblendeten Liste – das war die Lücke, die dl-de/by-2.0 und ODbL betrifft. Hinweis: `legal.germanOnly` nennt nur Impressum und Datenschutzerklärung; die beiden neuen Seiten sind ebenfalls deutsch.
@@ -1923,6 +1924,49 @@ Torsten, 2026-10-30: „19 alle umsetzen, die ohne mich gehen.“ 13 bleibt gesp
   - **Geprüft:** 717 Unit-Tests (einer neu), `typecheck`, `lint`, dazu `e2e/sicherheit.spec.ts`, `e2e/verwaltung.spec.ts` und `e2e/rueckmeldungen.spec.ts` grün. **Nicht geprüft:** der volle E2E-Durchlauf und der Docker-Bau – beides gehört zu 12.17.
 
 ---
+
+## 12.17 Gesamttest, maschineller Teil (2026-11-09)
+
+- [~] 12.17 **Der maschinelle Teil ist durchgelaufen, der Durchgang von Hand steht aus** (Rest in [ToDos.md](ToDos.md)). Gelaufen nach 10.23, 12.16 und 12.18 – also auf dem Stand, den der Gesamttest prüfen soll:
+
+  | Prüfung | Ergebnis |
+  | --- | --- |
+  | `npm run test` | 724 Tests in 68 Dateien |
+  | `npm run typecheck` | ohne Befund |
+  | `npm run lint` | ohne Befund |
+  | `npm run check:slugs` | keine verwaiste Seed-Datei (10.754 Gemeinden, 3.763 Seeds) |
+  | `npx playwright test` (Entwicklungsserver) | **142 grün**, 2 übersprungen |
+  | `npm run test:e2e:prod` (Produktionsbau) | **144 grün** |
+  | `npm audit` | 0 Schwachstellen |
+
+  - **Die zwei im Entwicklungsserver übersprungenen Prüfungen sind die Offline-Tests** und laufen gegen den Produktionsbau mit (142 + 2 = 144). Damit ist die Auflage aus der Aufgabe erfüllt, sie „einmal von Hand gegen `npm run start`" zu sehen – der Produktionslauf baut und startet selbst. `e2e/offline.spec.ts` überspringt sich im eingebetteten Browser, weil `register('/sw.js')` dort scheitert; das ist eine Eigenschaft jener Umgebung und steht seit dem 2026-10-17 in `next.config.ts`.
+  - **Der Produktionslauf ist zugleich die breite Gegenprobe zu 12.16:** Er baut neu und prüft alle 144 Fälle gegen einen Bau, in dem `/api/spots`, `/api/cities` und `/api/offline` gzip liefern. Keiner ist daran gescheitert.
+  - **`e2e/smoke.spec.ts` lief diesmal ohne Ausfall durch** – derselbe Test, der am 2026-10-30 und noch einmal am 2026-11-09 unter Nebenlast einmal ausfiel. Ohne Nebenlast also wieder grün; die Ursache bleibt ungemessen und die Beobachtung damit unbewiesen.
+
+  **Was offen bleibt und nicht maschinell geht:** der Durchgang von Hand auf dem Telefon (Karte, Suche, Navigation, Rückmeldung mit Mail, An- und Abmelden, Verwaltung). Den kann nur jemand mit dem Gerät und dem laufenden Betrieb machen; er steht weiter in `ToDos.md`.
+
+## 12.18 npm audit wieder ohne Befund (2026-11-09)
+
+- [x] 12.18 **`minimatch` über einen Override angehoben** (Befund aus 10.23). `npm audit` meldete 8 moderate Einträge aus **einer** Wurzel: `minimatch` 10.2.6 (GHSA-g3hv-75wg-m249, ReDoS über „globparts amplification") unter `@typescript-eslint/typescript-estree` ← `eslint-config-next`. Danach: **0 vulnerabilities.**
+
+  **Erst nachgesehen, dann entschieden – und das Naheliegende war falsch.** Die Aufgabe hieß „ESLint anheben". Das hilft aber nicht: **Auch die neueste Fassung (`typescript-eslint` 8.72.2) hängt an `minimatch ^10.2.2`**, und die reparierte Linie beginnt erst bei 11.0.1. Es gibt also stromaufwärts nichts anzuheben; ein `npm update` hätte nichts geändert und `npm audit fix --force` hätte `eslint-config-next` umgebaut, das bewusst exakt auf die Next-Fassung gepinnt ist (1.8).
+
+  **Stattdessen ein eng gefasster Override** in `package.json` – nur für diesen einen Teilbaum:
+
+  ```json
+  "overrides": { "@typescript-eslint/typescript-estree": { "minimatch": "^11.0.5" } }
+  ```
+
+  - **Warum überhaupt, wenn die Lücke hier gar nicht erreichbar ist:** Sie ist es nicht. `typescript-estree` benutzt `minimatch` an **einer** Stelle (`useProgramFromProjectService.js`, `filePathMatchedBy`), und zwar gegen die Muster aus `projectService.allowDefaultProject` – also gegen Muster, die wir selbst schreiben. Wir setzen die Option nicht einmal. Dazu ist ESLint Bauwerkzeug und steckt nicht im Abbild (der Runner kopiert nur `.next/standalone`). **Der Grund ist ein anderer:** Ein `npm audit`, das dauerhaft acht Meldungen zeigt, ist die Stelle, an der die **nächste** – womöglich echte – Meldung übersehen wird. Eine saubere Null ist ein Signal, eine gewohnte Acht ist keines.
+  - **Geprüft, dass der erzwungene Hauptsprung nichts bricht:** `minimatch` 11 verlangt Node `20 || >=22`, das Projekt steht auf 24. Danach `npm run lint` ohne Befund, `typecheck` sauber, 724 Unit-Tests grün.
+  - **Gegenprobe, weil ein grünes `lint` auch heißen kann, dass nichts geprüft wird:** Eine Wegwerfdatei mit einer unbenutzten Variablen eingefügt – ESLint meldet sie (`@typescript-eslint/no-unused-vars`, also eine Regel aus genau dem Paket, dessen Abhängigkeit ausgetauscht wurde), Datei wieder entfernt, `lint` wieder still.
+  - **Was daran vorläufig ist:** Der Override zwingt einem Paket eine Fassung auf, die es nicht erklärt hat. Sobald `typescript-eslint` selbst auf `minimatch` 11 geht, gehört er wieder heraus – nachsehen beim nächsten Anheben von `eslint-config-next` (das ist an die Next-Fassung gebunden, also an 1.8).
+
+## 10.20 Admin-Konto auf dem NAS (2026-11-09)
+
+- [x] 10.20 **Admin-Konto auf dem NAS angelegt und geprüft** (zu 10.19 und 18.7). **Auf Torstens Bescheid vom 2026-11-09 als erledigt geführt.** Der Weg stand in [deploy/Niklas-Termin.md](deploy/Niklas-Termin.md), Schritt 4: über `npm run admin:create`, weil `ADMIN_EMAILS` nur Konten mit **bestätigter** Adresse hebt und bestätigt per Mail wird – die es ohne dieses erste Konto nicht gibt.
+  - **Was hier nicht steht, weil es von hier nicht zu sehen ist:** Benutzername, ob der Pflichtwechsel des Startpassworts durchlief und ob die Verwaltung danach erreichbar war. Die Datenbank liegt auf dem NAS; von diesem Rechner ist nichts davon nachgeprüft. Wer später eine Unstimmigkeit sucht, findet den Nachweis dort und nicht hier.
+  - **Offen geblieben ist die Frage nach den beiden anderen Punkten desselben Termins** (19.2 täglicher Datenlauf, 19.3 Sicherung). Sie stehen weiter als `[~]` in `ToDos.md`; waren sie Teil desselben Termins, gehören sie nachgeführt.
 
 ## 12. Geschwindigkeit gemessen (2026-11-09)
 
