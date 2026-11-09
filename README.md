@@ -33,6 +33,29 @@ die Arbeit aufhält, ist der richtige Weg: alles erledigen, was nicht an der
 Antwort hängt, und die Frage dann gezielt stellen – nicht alles anhalten und
 nicht einfach weiterraten.
 
+## Commit-Nachrichten
+
+**Kurz, und in zwei getrennten Blöcken zum Kopieren.** Erst ein Codeblock mit
+**nur der Betreffzeile**, darunter ein zweiter mit der Beschreibung. Als
+Fließtext geschrieben lässt sich der Betreff nicht mit einem Klick kopieren,
+und als ein einziger Block muss man ihn aus der Beschreibung heraustrennen –
+beides jedes Mal von Hand.
+
+**Betreff plus höchstens fünf bis sechs Zeilen.** Was der Commit tut und der
+eine Grund dafür; nicht die Messwerte, nicht die Abwägungen, nicht die Liste
+der Dateien.
+
+**Der Grund für die Kürze ist nicht Bequemlichkeit, sondern dieselbe Regel wie
+bei den Aufgabenlisten:** Die ausführliche Begründung steht in
+[Erledigt.md](Erledigt.md) und gehört dorthin. Steht sie zweimal, wird beim
+nächsten Mal nur eine Fassung nachgeführt – und welche von beiden gilt, weiß
+dann niemand. Eine Commit-Nachricht sagt, was geschah; `Erledigt.md` sagt,
+warum es so gelöst wurde.
+
+**Committet wird nicht von Claude.** Torsten macht das selbst. Die Nachricht
+wird hingeschrieben, kopierfertig – mehr nicht, kein Angebot und keine
+Rückfrage dazu.
+
 ## Stack
 
 | Bereich     | Technologie                                   |

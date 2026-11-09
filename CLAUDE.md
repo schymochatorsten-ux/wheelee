@@ -15,6 +15,18 @@ angewiesen sind.
 Praktisch heißt das: erst alles erledigen, was nicht an der Antwort hängt,
 dann gezielt fragen. Nicht alles anhalten, aber auch nicht weiterraten.
 
+## Commit-Nachrichten kurz und kopierfertig
+
+**Betreff und Beschreibung als zwei getrennte Codeblöcke, zusammen höchstens
+fünf bis sechs Zeilen Beschreibung.** Die Regel steht in der
+[README](README.md#commit-nachrichten); sie wurde am 2026-11-08 verlangt und
+am 2026-11-09 dort festgehalten, weil sie in derselben Sitzung wieder
+missachtet wurde. Kurz: Die Begründung gehört nach `Erledigt.md` und steht
+dort schon – zweimal dasselbe heißt, dass nur eine Fassung nachgeführt wird.
+
+**Committet wird nicht von hier aus.** Nachricht hinschreiben, sonst nichts –
+kein Angebot, keine Rückfrage.
+
 ## Aufgabenliste pflegen
 
 **Erledigte Punkte gehören nach [Erledigt.md](Erledigt.md), nicht in
