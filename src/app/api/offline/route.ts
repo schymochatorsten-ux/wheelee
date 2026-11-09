@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { spotsOfCity } from "@/lib/parking/spots";
 import { withLogging } from "@/lib/log";
+import { jsonCompressed } from "@/lib/json-compressed";
 import { t } from "@/i18n";
 
 /**
@@ -22,7 +23,9 @@ function getHandler(request: Request) {
   if (!found) {
     return NextResponse.json({ error: t("api.unknownCity") }, { status: 404 });
   }
-  return NextResponse.json(found, { headers: { "Cache-Control": "no-store" } });
+  // Komprimiert (ToDo 12.16): Köln 359,2 KB → 32,5 KB. Das ist die Route, bei
+  // der es am meisten zählt – sie wird im Mobilfunknetz bewusst angefordert.
+  return jsonCompressed(request, found, { headers: { "Cache-Control": "no-store" } });
 }
 
 export const GET = withLogging(getHandler);

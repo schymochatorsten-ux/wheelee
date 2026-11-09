@@ -1,6 +1,6 @@
-import { NextResponse } from "next/server";
 import { getCities } from "@/lib/parking/spots";
 import { withLogging } from "@/lib/log";
+import { jsonCompressed } from "@/lib/json-compressed";
 
 /**
  * Alle Städte mit Quelle, Lizenz und Zahlen (ToDo 19.9, 2e.14).
@@ -25,7 +25,7 @@ const CACHE_CONTROL = "public, max-age=3600, stale-while-revalidate=86400";
 
 const round4 = (value: number) => Math.round(value * 1e4) / 1e4;
 
-function getHandler() {
+function getHandler(request: Request) {
   const sources: { attribution: string; license: string | null }[] = [];
   const indexOf = new Map<string, number>();
 
@@ -50,7 +50,16 @@ function getHandler() {
     };
   });
 
-  return NextResponse.json({ sources, cities }, { headers: { "Cache-Control": CACHE_CONTROL } });
+  /*
+   * Komprimiert (ToDo 12.16): 591,2 KB → 84,1 KB. Die Verdichtung oben hat die
+   * Rohgröße gesenkt, über die Leitung ging sie trotzdem unkomprimiert –
+   * siehe `lib/json-compressed.ts`.
+   */
+  return jsonCompressed(
+    request,
+    { sources, cities },
+    { headers: { "Cache-Control": CACHE_CONTROL } },
+  );
 }
 
 export const GET = withLogging(getHandler);

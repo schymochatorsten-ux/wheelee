@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { nearestSpots, spotById, spotClusters, spotsInBounds } from "@/lib/parking/spots";
 import { withLogging } from "@/lib/log";
+import { jsonCompressed } from "@/lib/json-compressed";
 import { t } from "@/i18n";
 
 /**
@@ -48,7 +49,7 @@ function getHandler(request: Request) {
       // (mehr)" ist eine Antwort, und die Übersicht soll sie zeigen können.
       return NextResponse.json({ error: t("api.unknownSpot") }, { status: 404 });
     }
-    return NextResponse.json({ spot }, { headers: { "Cache-Control": CACHE_CONTROL } });
+    return jsonCompressed(request, { spot }, { headers: { "Cache-Control": CACHE_CONTROL } });
   }
 
   const bbox = params.get("bbox");
@@ -85,13 +86,20 @@ function getHandler(request: Request) {
       const zoom = Number.isFinite(parsed) && parsed >= 0 && parsed <= 22 ? parsed : null;
 
       const { clusters, total } = spotClusters(bounds, zoom);
-      return NextResponse.json(
+      return jsonCompressed(
+        request,
         { spots: [], truncated: true, total, clusters },
         { headers: { "Cache-Control": CACHE_CONTROL } },
       );
     }
 
-    return NextResponse.json(result, { headers: { "Cache-Control": CACHE_CONTROL } });
+    /*
+     * Komprimiert (ToDo 12.16). **Das ist die heiße Strecke:** Die Karte fragt
+     * bei jeder Bewegung hier nach, und eine Stadtansicht wog 429,2 KB – mehr
+     * als die ganze App an JavaScript (325 KB). Mit gzip sind es 41,2 KB,
+     * gerechnet in 2,5 ms. Begründung und Messung in `lib/json-compressed.ts`.
+     */
+    return jsonCompressed(request, result, { headers: { "Cache-Control": CACHE_CONTROL } });
   }
 
   const lat = Number(params.get("lat"));
@@ -101,7 +109,8 @@ function getHandler(request: Request) {
   }
 
   const spots = nearestSpots({ lat, lng }, limit ?? 100);
-  return NextResponse.json(
+  return jsonCompressed(
+    request,
     { spots, truncated: false, total: spots.length },
     // Der Standort steckt in der Adresse: nur der Browser darf zwischenspeichern,
     // kein Proxy dazwischen (10.9).

@@ -120,10 +120,17 @@ Quelldaten bleiben deutsch. Die E2E-Tests laufen mit `locale: "de-DE"`, weil
 sie am deutschen Wortlaut hängen.
 
 **Die Seite lädt nur, was sichtbar ist.** Alle Standorte ins HTML zu
-schreiben ergab 6,3 MB; jetzt sind es rund 72 KB unkomprimiert (gemessen am
-2026-10-30 im Entwicklungsserver). Die Städteliste mit Quelle und Vermerk je
-Gemeinde steht nicht im HTML, sondern kommt verdichtet über `/api/cities`; die
-Karte holt den jeweiligen Ausschnitt über `/api/spots` nach. Ein Service Worker legt Seite,
+schreiben ergab 6,3 MB; jetzt sind es 12,1 KB übertragen (63,6 KB roh,
+gemessen am 2026-11-09 am Produktionsbau). Die Städteliste mit Quelle und
+Vermerk je Gemeinde steht nicht im HTML, sondern kommt verdichtet über
+`/api/cities`; die Karte holt den jeweiligen Ausschnitt über `/api/spots` nach.
+
+**Die Schnittstellen liefern gzip** (`src/lib/json-compressed.ts`, ToDo 12.16).
+Next komprimiert HTML und statische Dateien von sich aus, Route-Handler aber
+nicht: Eine Stadtansicht wog damit 429 KB statt 41 KB – mehr als die ganze App
+an JavaScript. Gemessen wird so etwas **nicht mit `fetch`**, das gzip
+transparent auspackt und immer die Rohgröße zeigt, sondern mit `node:http` und
+ausdrücklichem `accept-encoding`. Ein Service Worker legt Seite,
 zuletzt geladene Parkplätze und Kartenkacheln beiseite, damit im Funkloch
 nicht eine weiße Seite steht – mit sichtbarem Hinweis, dass die Angaben vom
 letzten Stand sind.

@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-09):** **244 Einträge** auf oberster Ebene –
-davon 219, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-09):** **245 Einträge** auf oberster Ebene –
+davon 220, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 25, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -1921,6 +1921,56 @@ Torsten, 2026-10-30: „19 alle umsetzen, die ohne mich gehen.“ 13 bleibt gesp
   - **Der Weg hinter dem Proxy** (`X-Forwarded-For`, Kopfzeilen des NPM) ist nur aus dem Code beurteilt, nicht am NAS gemessen.
   - **Die Registrierung bestätigt die Adresse nicht**, solange kein Mailversand eingerichtet ist (bekannt und begründet in 11.1); `ADMIN_EMAILS` hebt deshalb nur bestätigte Adressen.
   - **Geprüft:** 717 Unit-Tests (einer neu), `typecheck`, `lint`, dazu `e2e/sicherheit.spec.ts`, `e2e/verwaltung.spec.ts` und `e2e/rueckmeldungen.spec.ts` grün. **Nicht geprüft:** der volle E2E-Durchlauf und der Docker-Bau – beides gehört zu 12.17.
+
+---
+
+## 12. Geschwindigkeit gemessen (2026-11-09)
+
+- [x] 12.16 **Geschwindigkeit messen und verbessern** (Auftrag von Torsten, 2026-11-08). **Erst gemessen, dann genau eine Sache geändert** – die, die eine Messung trägt.
+
+  **Gemessen wurde am Produktionsbau, und zwar an dem, der im Container läuft:** `node .next/standalone/server.js`, nicht `npm run start`. Next meldet beim Start ausdrücklich „`next start` does not work with `output: standalone`"; es läuft zwar, ist aber nicht der ausgelieferte Weg. Für den Lauf werden `.next/static` und `public` nach `.next/standalone` kopiert, wie es das `Dockerfile` tut. **Fallstrick dabei:** Der Server legt sich ohne `WHEELEE_DB_PATH` eine Datenbank unter `.next/standalone/.data` an, hält sie offen – und der nächste `npm run build` scheitert mit `EBUSY`, weil er `.next` räumen will. Also den Pfad setzen oder den Server vorher beenden.
+
+  **Der Befund, und er war nicht der erwartete:** **Next komprimiert HTML und statische Dateien, Route-Handler aber nicht.** Über die Leitung gingen:
+
+  | Antwort | vorher | jetzt |
+  | --- | --- | --- |
+  | `/api/spots` Stadtansicht Köln (1.420 Standorte) | **429,2 KB** | 41,2 KB |
+  | `/api/cities` (3.763 Städte) | **591,2 KB** | 84,1 KB |
+  | `/api/offline?city=koeln` (1.193 Standorte) | **359,2 KB** | 32,5 KB |
+  | `/api/spots?lat&lng` (100 Standorte) | 36,8 KB | 5,7 KB |
+  | Startseite (HTML) | 12,1 KB | unverändert (Next komprimiert sie) |
+
+  - **Warum das so lange niemand sah:** Mit `fetch` ist es nicht zu messen. `undici` packt gzip transparent aus, und die Zahl, die man dann liest, ist die Rohgröße – egal ob komprimiert übertragen wurde oder nicht. Erst `node:http` mit ausdrücklichem `accept-encoding` zeigt den Unterschied: Die Startseite kam mit `Content-Encoding: gzip` und `Vary: Accept-Encoding`, die Schnittstellen ohne beides. *In `Erledigt.md` stand zu 2e.6 Stufe 4 „`/api/cities` 605 KB roh, **87 KB gzip-komprimiert**". Die Zahl stimmt (84,1 KB) – sie war **errechnet**, nicht an der Antwort gemessen. Ausgeliefert wurden 591 KB.*
+  - **Die Größenordnung macht es zum Hauptbefund:** Eine Stadtansicht zog an Parkplatzdaten **mehr als die ganze App an JavaScript** (325 KB komprimiert), und zwar bei jeder Kartenbewegung neu – im Mobilfunknetz, bei jemandem, der schon im Auto sitzt.
+  - **Behoben** in `src/lib/json-compressed.ts`, benutzt von `/api/spots`, `/api/cities` und `/api/offline`. **In der Anwendung und nicht im Nginx Proxy Manager** – dieselbe Begründung wie bei den Sicherheits-Kopfzeilen (10.6): Im Proxy wäre es im Entwicklungsbetrieb nicht da, also genau dort nicht, wo ein Rückschritt auffallen müsste. Dazu kommt, dass von hier **nicht nachzusehen ist**, ob der NPM `gzip` für `application/json` überhaupt eingeschaltet hat (kein Zugang); eine Verbesserung, die davon abhängt, wäre eine Vermutung. Komprimiert der Proxy zusätzlich, reicht er eine Antwort mit `Content-Encoding` durch.
+  - **Stufe 6 (zlib-Vorgabe), gemessen an der Stadtansicht:** Stufe 1 → 47,4 KB in 1,0 ms, **Stufe 6 → 41,2 KB in 2,5 ms**, Stufe 9 → 39,4 KB in 4,7 ms. Brotli wäre 30,7 KB, rechnet aber deutlich länger. Bei 388 gesparten Kilobyte entscheidet nicht das letzte Zehntel, sondern dass überhaupt komprimiert wird.
+  - **Was es an Zeit kostet:** TTFB `/api/spots` Stadtansicht 4 → 6 ms, `/api/cities` 7 → 13 ms, `/api/offline` 5 → 7 ms. Der N100 des NAS ist langsamer; auch verdreifacht bleibt es ein Bruchteil der Übertragungszeit.
+  - **`Vary: Accept-Encoding` steht in beiden Fällen**, auch in der unkomprimierten Antwort: `/api/spots` und `/api/cities` tragen `Cache-Control: public`, ein Zwischenspeicher darf die eine nicht für die andere halten. Wer kein gzip anfragt, bekommt weiter die rohe Antwort (nachgemessen mit `accept-encoding: identity`).
+  - **Gegenprobe im Browser**, nicht nur am Messskript: Die Karte zeichnet ihre Marker, und `/api/cities` liefert im Browser 3.763 Städte und 18 Quellen, `/api/offline?city=koeln` 1.193 Standorte – die Antworten werden also ausgepackt und gelesen. Das war die offene Frage beim Service Worker, der genau diese beiden Antworten beiseitelegt (12.8/12.9, 19.9). Dazu 7 Unit-Tests und die E2E-Dateien `staedte`, `vorab-laden`, `offline`, `bestaetigt`, `ziel` grün.
+
+  **Die übrigen Zahlen, damit die nächste Messung etwas zum Vergleichen hat** (Median aus 7 Läufen, übertragen = komprimiert):
+
+  | Seite | HTML | JS/CSS | TTFB |
+  | --- | --- | --- | --- |
+  | Startseite `/` | 12,1 KB | 325,4 KB (12 Dateien) | 18 ms |
+  | Stadtseite Hamburg | 15,3 KB | 293,5 KB (11) | 11 ms |
+  | Verzeichnis `/parkplaetze` | 7,4 KB | 293,5 KB | 6 ms |
+  | Verzeichnis Buchstabe B | 18,3 KB | 293,5 KB | 12 ms |
+  | `/abdeckung` | 36,6 KB roh | 293,5 KB | 7 ms |
+  | `/info` | 6,5 KB | 293,5 KB | 3 ms |
+
+  **Angesehen und ausdrücklich nicht geändert:**
+  - **Alle Seiten sind `ƒ` und tragen `no-store`** (bekannter Faden aus der Aufgabe). Das ist der Preis der Nonce (10.7) und bleibt – gemessen kostet es nichts: TTFB 3 bis 18 ms, und zwischen kalt (erster Aufruf nach dem Start) und warm liegen 25 gegen 18 ms. Es gibt keinen Aufwärmeffekt, weil die Seed-Daten statisch im Bündel liegen.
+  - **`spotsOfCity` durchsucht je Stadtseite den ganzen Bestand** (der andere benannte Faden, 1,74 ms laut 19.17). Die Stadtseite antwortet in 11 bis 14 ms **insgesamt**; ein Index dafür wäre Aufwand ohne messbaren Gewinn.
+  - **Das Zoomen ist schon entprellt** (`useSpotsInBounds`): 350 ms Wartezeit, Sperre gegen denselben Ausschnitt, und veraltete Antworten werden verworfen. Eine Kartenbewegung kostet also genau eine Anfrage.
+  - **Der HTTP-Zwischenspeicher greift bei `/api/spots` praktisch nie**, weil jede Bewegung eine andere Bbox ergibt (`max-age=300` läuft ins Leere). Ein auf ein Raster gerundeter Ausschnitt würde das ändern. **Nicht gebaut:** Wie oft derselbe Ausschnitt wirklich zweimal gefragt wird, ist nicht gemessen – und ohne diese Zahl wäre es eine Vermutung. Mit der Kompression kostet ein Fehlgriff jetzt 41 KB statt 429.
+  - **325 KB JavaScript auf der Startseite** (Leaflet, markercluster, React). Sie liegen in `_next/static` und sind unveränderlich zwischengespeichert, zahlen also nur beim ersten Besuch. Die Karte ist der Inhalt der Seite, ein Nachladen verschöbe den ersten Eindruck nur.
+
+  **Nebenbefund: Next 16 nennt die Bündelgrößen nicht mehr in der Bau-Ausgabe.** Die Aufgabe ging noch davon aus („`npm run build` nennt sie je Route"); die Tabelle führt jetzt nur Pfade und `ƒ`/`○`. Die Zahlen oben sind deshalb am laufenden Server gemessen; das Skript dafür liegt nicht im Repository, der Weg steht hier.
+
+  **Nicht geprüft:** das Verhalten hinter dem Nginx Proxy Manager und auf dem NAS (kein Zugang), echte Mobilfunkzeiten und Lighthouse. Gemessen wurde über `127.0.0.1`; die Übertragungszeit einer Leitung steckt in keiner der Zahlen – deshalb sind **Bytes** die Zahl, auf die es hier ankommt, und nicht die Millisekunden.
+
+  **Eine Beobachtung zu einem Test, und sie bleibt unbewiesen:** `e2e/smoke.spec.ts` („mit Standort erscheint die Navigationsleiste und lässt sich schließen") fiel einmal aus, während parallel die Unit-Suite lief; allein dreimal wiederholt 30 von 30 grün. Das ist dieselbe Beobachtung wie am 2026-10-30, diesmal mit bekannter Nebenlast. **Zweimal beobachtet ist noch keine Ursache** – wer es misst, hat etwas gefunden.
 
 ---
 
