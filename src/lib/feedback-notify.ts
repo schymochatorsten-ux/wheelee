@@ -117,9 +117,38 @@ export async function notifyNewFeedback(feedback: ValidFeedback): Promise<void> 
       empfaenger: eingetragen ? "eingetragen" : "admin_konten",
     });
   } catch (error) {
-    logEvent("error", "feedback_notify_failed", {
-      // Nur die Art des Fehlers, nicht die Adresse und nicht der Meldungstext.
-      fehler: error instanceof Error ? error.message : "unbekannt",
-    });
+    logEvent("error", "feedback_notify_failed", smtpFehlerfelder(error));
   }
+}
+
+/**
+ * Was von einem Versandfehler ins Protokoll darf (ToDo 10.23).
+ *
+ * **Die Meldung selbst darf es nicht**, und das ist gemessen, nicht vermutet:
+ * Lehnt ein Server den Empfänger ab, lautet `error.message`
+ * `Can't send mail - all recipients were rejected: 550 5.1.1 <name@example.de>:
+ * Recipient address rejected` – **mit der Adresse darin**. Bis zum 2026-11-09
+ * stand genau diese Meldung in der Zeile, direkt unter dem Kommentar „nicht die
+ * Adresse". Die Datenschutzerklärung und `log.ts` sagen beide zu, dass keine
+ * E-Mail-Adresse in ein Protokoll gelangt; `log.ts` kann es nicht abfangen,
+ * weil seine Sperrliste nach Feldnamen geht und hier `fehler` darüberstand.
+ *
+ * **Der Test, der das verhindern sollte, griff nicht:** Er maß den Fall
+ * „Mailserver antwortet nicht" (`connect ECONNREFUSED 127.0.0.1:1`) – eine
+ * Meldung, die zufällig keine Adresse enthält. Er lief deshalb grün, während
+ * der eigentliche Fall unbeobachtet blieb.
+ *
+ * Übrig bleibt, was die Störung einordnet und nichts über Personen sagt:
+ * nodemailers Fehlerkennung (`EENVELOPE`, `ECONNECTION`, `EAUTH`) und der
+ * SMTP-Statuscode. Für die Frage „warum kam keine Mail an" ist das mehr wert
+ * als der Fließtext: `EAUTH` heißt abgelaufenes Postfachpasswort, `550` ein
+ * Problem mit der Adresse.
+ */
+function smtpFehlerfelder(error: unknown): Record<string, string | number | null> {
+  const smtp = error as { code?: unknown; responseCode?: unknown };
+  return {
+    art: error instanceof Error ? error.name : "unbekannt",
+    code: typeof smtp.code === "string" ? smtp.code : null,
+    status: typeof smtp.responseCode === "number" ? smtp.responseCode : null,
+  };
 }

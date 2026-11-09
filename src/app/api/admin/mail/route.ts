@@ -5,6 +5,7 @@ import { clearMailConfig, readMailConfig, saveMailConfig } from "@/lib/db/mail-c
 import { envMailConfigured, mailConfigured, validUrl } from "@/lib/mail";
 import { looksLikeEmail } from "@/lib/auth/email";
 import { t } from "@/i18n";
+import { readJson } from "@/lib/read-json";
 
 /**
  * Die SMTP-Zugangsdaten aus der Verwaltung pflegen (ToDo 10.22).
@@ -82,7 +83,18 @@ async function putHandler(request: Request) {
 
   let body: Body;
   try {
-    body = (await request.json()) as Body;
+    /*
+     * **Über `readJson` und nicht über `request.json()`** (ToDo 10.23). Diese
+     * Route war die einzige schreibende, die den Riegel aus 10.14 umging:
+     * `request.json()` liest, was kommt. Die Prüfung in `proxy.ts` weist nur
+     * **ehrliche** Überlängen ab – eine Anfrage ohne `Content-Length`
+     * (chunked) kommt dort durch, und genau dafür gibt es `readJson`.
+     *
+     * Erreichbar war das nur mit Admin-Sitzung, denn die Rechteprüfung steht
+     * oben; der Riegel gehört trotzdem hierher, weil „nur Admins" keine
+     * Begründung für eine fehlende Grenze ist.
+     */
+    body = (await readJson(request)) as Body;
   } catch {
     return NextResponse.json({ error: t("adminMail.invalid") }, { status: 400 });
   }

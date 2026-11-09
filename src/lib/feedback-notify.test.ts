@@ -82,6 +82,34 @@ function fakeSmtp(): Promise<{ port: number; received: Promise<string>; close: (
   });
 }
 
+/**
+ * Lehnt den Empfänger ab, wie ein echter Server bei unbekanntem Postfach
+ * (ToDo 10.23). Gebraucht, weil der Fall „Server antwortet nicht" eine
+ * Fehlermeldung **ohne** Adresse ergibt und die Zusage deshalb nicht prüft.
+ */
+function ablehnenderSmtp(adresse: string): Promise<{ port: number; close: () => void }> {
+  return new Promise((resolve) => {
+    const server = net.createServer((socket) => {
+      socket.write("220 fake ESMTP\r\n");
+      socket.on("data", (chunk) => {
+        for (const line of chunk.toString("utf8").split("\r\n").filter(Boolean)) {
+          const command = line.slice(0, 4).toUpperCase();
+          if (command === "EHLO") socket.write("250-fake\r\n250 8BITMIME\r\n");
+          else if (command === "RCPT")
+            socket.write(`550 5.1.1 <${adresse}>: Recipient address rejected: User unknown\r\n`);
+          else if (command === "QUIT") socket.end("221 bye\r\n");
+          else socket.write("250 ok\r\n");
+        }
+      });
+    });
+
+    server.listen(0, "127.0.0.1", () => {
+      const { port } = server.address() as net.AddressInfo;
+      resolve({ port, close: () => server.close() });
+    });
+  });
+}
+
 function konfiguriere(port: number, notifyEmail: string | null): void {
   saveMailConfig(
     {
@@ -215,6 +243,31 @@ describe("Versand", () => {
       const text = zeilen.join("\n");
       expect(text).toContain("feedback_notify_failed");
       expect(text).not.toContain("betreiber@example.org");
+    });
+
+    /*
+     * **Der Fall, den der Test darüber nicht abdeckte** (ToDo 10.23). „Server
+     * antwortet nicht" ergibt `connect ECONNREFUSED 127.0.0.1:1` – eine
+     * Meldung ohne Adresse. Lehnt der Server dagegen den Empfänger ab, steht
+     * die Adresse in `error.message`, und bis zum 2026-11-09 stand sie damit
+     * im Protokoll. Gemessen, nicht vermutet: siehe `smtpFehlerfelder`.
+     */
+    it("nennt auch bei abgelehntem Empfänger keine Adresse, aber den Grund", async () => {
+      const server = await ablehnenderSmtp("betreiber@example.org");
+      try {
+        konfiguriere(server.port, "betreiber@example.org");
+        await notifyNewFeedback(meldung());
+
+        const text = zeilen.join("\n");
+        expect(text).toContain("feedback_notify_failed");
+        expect(text).not.toContain("betreiber@example.org");
+        expect(text).not.toContain("example.org");
+        // Die Einordnung bleibt: Kennung und SMTP-Status sagen, woran es lag.
+        expect(text).toContain("EENVELOPE");
+        expect(text).toContain("550");
+      } finally {
+        server.close();
+      }
     });
   });
 });

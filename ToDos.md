@@ -8,7 +8,7 @@
 **Legende:** `[ ]` offen · `[~]` teils gebaut, Rest hier · `[!]` braucht eine
 Entscheidung oder Angabe von dir · `[-]` gesperrt bis zur Freigabe
 
-**Letzte Aktualisierung:** 2026-11-08
+**Letzte Aktualisierung:** 2026-11-09
 
 **Stand:** wird nachgezählt, nicht fortgeschrieben:
 
@@ -56,11 +56,11 @@ der erste Datenlauf anlegt, und `ADMIN_EMAILS` scheidet ohne Mailversand aus
 (es hebt nur bestätigte Adressen). Danach offen: **2d.8a** (Bochum und Köln),
 **19.13** und **19.5** (beide ohne Niklas).
 
-**Zum Schluss, in dieser Reihenfolge:** erst **10.23** (Sicherheit gründlich
-prüfen), dann **12.16** (Geschwindigkeit), dann **12.17** (abschließender
-Gesamttest). Der Gesamttest steht am Ende, weil er sonst einen Stand prüft, den
-es danach nicht mehr gibt; Sicherheit vor Geschwindigkeit, weil eine
-Beschleunigung, die eine Lücke lässt, zurückgebaut werden müsste.
+**Zum Schluss, in dieser Reihenfolge:** erst **12.16** (Geschwindigkeit), dann
+**12.17** (abschließender Gesamttest). Der Gesamttest steht am Ende, weil er
+sonst einen Stand prüft, den es danach nicht mehr gibt. _10.23 (Sicherheit) ist
+am 2026-11-09 erledigt und stand aus demselben Grund davor: Eine Beschleunigung,
+die eine Lücke lässt, müsste zurückgebaut werden._
 
 **Neue Knöpfe und Meldungen kommen gleich in `src/i18n/de.ts`, nicht in die
 Komponente** (Aufbau in [Erledigt.md](Erledigt.md) unter 15.2) – und in die
@@ -77,11 +77,11 @@ maschinelle Mehrfachprüfung.
 ## 10. Sicherheit und Recht
 
 - [!] 10.20 **Admin-Konto auf dem NAS anlegen und prüfen** (zu 10.19 und 18.7, [Erledigt.md](Erledigt.md)). **Braucht Torsten und Niklas**, Ablauf und Befehle in [deploy/Niklas-Termin.md](deploy/Niklas-Termin.md) (Schritt 4). Nur über `admin:create`: `ADMIN_EMAILS` hebt ausschließlich Konten mit bestätigter Adresse, und bestätigt wird per Mail, die es ohne dieses Konto noch nicht gibt.
-- [ ] 10.23 **Sicherheit gründlich prüfen** (auf Torstens Wunsch, 2026-11-08). Die Seite steht offen im Netz, führt Anmeldungen mit Sitzungscookie und speichert Angaben über eine Behinderung – dafür ist bisher nie am Stück geprüft worden, sondern immer nur beim Bauen nebenbei. Einmal vollständig durchgehen: schreibende Endpunkte unter `src/app/api/` (Rechte, Drosselung, Eingabeprüfung), Sitzungen und Passwörter (`lib/auth/`), die Verwaltung (`api/admin/`), Inhaltsrichtlinie und Kopfzeilen (`lib/csp.ts`, `next.config.ts`, `proxy.ts`), SQL-Parameter in `lib/db/`, die Mailwege samt Tokens, und was in Protokolle und Mails gelangt. **Erst lesen und messen, dann ändern** – jeder Befund mit Beleg nach `Erledigt.md`, auch der, wo nichts zu tun war. Ausgangslage: `npm run test && npm run typecheck && npm run lint`, dazu `npx playwright test e2e/sicherheit.spec.ts`.
 
 ## 12. Qualität und Deployment
 
 - [ ] 12.16 **Geschwindigkeit messen und verbessern** (auf Torstens Wunsch, 2026-11-08). Die App wird unterwegs über Mobilfunk geöffnet, oft von jemandem, der schon im Auto sitzt; jede Sekunde zählt hier mehr als auf einer Schreibtischseite. **Zuerst messen, nicht optimieren:** Ladezeit und Größe der Startseite, der Stadtseiten und der Verzeichnisseiten, die Antwortzeiten von `/api/spots`, die Bündelgrößen (`npm run build` nennt sie je Route) und das Verhalten beim Zoomen auf der Karte. Bekannte Fäden, an denen zu ziehen wäre: Alle Seiten sind wegen der Nonce `ƒ` (je Anfrage gerendert, 10.7) und tragen `Cache-Control: no-store`; `spotsOfCity` durchsucht je Stadtseite den ganzen Bestand (gemessen 1,74 ms, siehe 19.17). **Nur ändern, was eine Messung trägt** – ein Zwischenspeicher, der nichts spart, kostet nur Verständlichkeit.
+- [ ] 12.18 **ESLint anheben, damit `npm audit` wieder sauber ist** (Befund aus 10.23, [Erledigt.md](Erledigt.md)). 8 moderate Meldungen aus **einer** Wurzel: `minimatch` (GHSA-g3hv-75wg-m249) über `typescript-eslint` → `eslint-config-next`. **Es trifft keine ausgelieferte Zeile** – ESLint ist Bauwerkzeug und steckt nicht im Abbild; deshalb hier und nicht als Sicherheitslücke. `npm audit fix --force` wollte ESLint umbauen, und `eslint.config.mjs` hing schon einmal an einem Zirkelverweis im React-Plugin (1.8). Also gezielt: Fassungen ansehen, anheben, `npm run lint` gegenprüfen.
 - [ ] 12.17 **Abschließender Gesamttest** (auf Torstens Wunsch, 2026-11-08). **Zuletzt, nach 10.23 und 12.16**, sonst prüft er einen Stand, den es danach nicht mehr gibt. Alles grün auf einmal: `npm run test`, `typecheck`, `lint`, `npm run check:slugs`, `npx playwright test` (voller Durchlauf, auch die übersprungenen Offline-Prüfungen einmal von Hand gegen `npm run start`), dazu ein Durchgang von Hand auf dem Telefon: Karte, Suche, Navigation, Rückmeldung mit Mail, An- und Abmelden, Verwaltung. Was dabei auffällt, wird als eigener Punkt aufgenommen und nicht nebenbei geändert.
 
 ## 19. Betrieb und Pflege
