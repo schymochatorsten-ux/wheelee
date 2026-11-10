@@ -10,9 +10,9 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-09):** **248 Einträge** auf oberster Ebene –
-davon 223, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
-Einzeiler unten), und 25, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
+**Stand (nachgezählt 2026-11-10):** **250 Einträge** auf oberster Ebene –
+davon 224, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+Einzeiler unten), und 26, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
 Zahlen oben.*
@@ -2015,6 +2015,64 @@ Torsten, 2026-10-30: „19 alle umsetzen, die ohne mich gehen.“ 13 bleibt gesp
   **Nicht geprüft:** das Verhalten hinter dem Nginx Proxy Manager und auf dem NAS (kein Zugang), echte Mobilfunkzeiten und Lighthouse. Gemessen wurde über `127.0.0.1`; die Übertragungszeit einer Leitung steckt in keiner der Zahlen – deshalb sind **Bytes** die Zahl, auf die es hier ankommt, und nicht die Millisekunden.
 
   **Eine Beobachtung zu einem Test, und sie bleibt unbewiesen:** `e2e/smoke.spec.ts` („mit Standort erscheint die Navigationsleiste und lässt sich schließen") fiel einmal aus, während parallel die Unit-Suite lief; allein dreimal wiederholt 30 von 30 grün. Das ist dieselbe Beobachtung wie am 2026-10-30, diesmal mit bekannter Nebenlast. **Zweimal beobachtet ist noch keine Ursache** – wer es misst, hat etwas gefunden.
+
+---
+
+## 12.19 Der wackelnde Smoke-Test: Ursache gemessen (2026-11-10)
+
+- [x] 12.19 **`e2e/smoke.spec.ts` fällt unter Nebenlast aus – Ursache gemessen und behoben.** Die Beobachtung stand seit dem 2026-10-30 dreimal in dieser Datei (zuletzt bei 12.16 und 12.17), jedes Mal mit dem Satz „die Ursache bleibt ungemessen und die Beobachtung damit unbewiesen". **Jetzt ist sie gemessen.**
+
+  **Der Messaufbau, damit er wiederholbar ist:** `npx playwright test e2e/smoke.spec.ts --repeat-each=10 --workers=4`, also 100 Durchläufe der zehn Tests, zweimal – einmal ohne und einmal mit Nebenlast (drei Prozesse `npx vitest run` in Dauerschleife). Das Skript dafür liegt nicht im Repository, der Aufbau steht hier.
+
+  | Durchgang | Ergebnis |
+  | --- | --- |
+  | ohne Nebenlast | **100 von 100 grün** |
+  | mit Nebenlast | **98 von 100**, 2 Fehlschläge |
+
+  **Damit ist die Beobachtung bewiesen, aber sie war falsch zugeordnet.** Die Datei nennt an drei Stellen „mit Standort erscheint die Navigationsleiste" bzw. „die aufgeklappte Auswahl lässt Karte übrig" als den wackelnden Test. Es ist **kein einzelner Test**: Im ersten Durchgang fiel „beide Enden der Luftlinie bleiben im Bild" aus, in den Gegenproben danach die beiden anderen. Betroffen ist, was mit Karte und Standort zu tun hat – und zwar aus **zwei** Gründen, die beide nichts mit der App zu tun haben:
+
+  - **Feste Wartezeiten.** Zweimal stand `await page.waitForTimeout(1500)` für die Fahrt der Karte (`flyToBounds`, 6.22) und für die aufgeklappte Auswahl (6.21). Unter Last ist die Fahrt danach nicht zu Ende, die Luftlinie steht noch heraus, und die Messung trifft einen Zwischenzustand.
+  - **Der Wettlauf zwischen vorgerenderter und standortbezogener Liste.** Bis der Standort da ist, zeigt die Leiste die Standorte um die Stadtmitte; danach ersetzt sie sie. Wer dazwischen auf einen Eintrag klickt, trifft eine Zeile, die gleich darauf ersetzt wird – der Klick setzt dann kein Ziel, und „Gewähltes Ziel" erscheint nie. **Das ist derselbe Wettlauf, der schon bei 3.7, 11.5 und 15.4 zugeschlagen hat**, dort jeweils einzeln abgefangen. Hier steht er jetzt als `oeffnenMitStandort()` an **einer** Stelle für alle sechs Standort-Tests der Datei: Vier davon klicken Einträge an, und an jedem einzeln abgefangen wäre beim nächsten Mal einer vergessen.
+
+  **Ein Zwischenschritt war schlechter als der Ausgangszustand, und das gehört hierher.** Die feste Wartezeit bei 6.21 durch Prüfungen auf `#parkplatz-auswahl` und `#parkplatz-leiste` zu ersetzen machte es **messbar schlimmer**: 4 Fehlschläge statt 1. Grund: Ohne die Wartezeit war die Messung früher dran als Leaflet, und `.leaflet-container` fehlte noch. Drei Dinge müssen zugleich stehen – Karte, Leiste und die nachgeladenen Marker –, und dafür taugt keine Reihe einzelner Prüfungen, sondern nur ein Block, der bis zum Ergebnis wiederholt wird (`expect(async () => {…}).toPass()`). **Eine naheliegende Behebung ist ohne Gegenprobe keine** – dieselbe Lehre wie bei der Inhaltsrichtlinie und dem Service Worker (10.6).
+
+  **Gegenprobe:** derselbe Durchgang mit Nebenlast **zweimal wiederholt, 200 von 200 grün**. **Geändert wurde nur `e2e/smoke.spec.ts`** – kein Code der App, denn der Mangel lag im Test.
+
+  **Der maschinelle Teil von 12.17 ist danach wiederholt**, wie es die Auflage dort verlangt („läuft danach noch etwas am Code, gehört der maschinelle Teil wiederholt"). Alle Zahlen gleich wie am 2026-11-09:
+
+  | Prüfung | Ergebnis |
+  | --- | --- |
+  | `npm run test` | 724 Tests in 68 Dateien |
+  | `npm run typecheck` · `npm run lint` | ohne Befund |
+  | `npm run check:slugs` | keine verwaiste Seed-Datei (10.754 Gemeinden, 3.763 Seeds) |
+  | `npx playwright test` (Entwicklungsserver) | **142 grün**, 2 übersprungen |
+  | `npm run test:e2e:prod` (Produktionsbau) | **144 grün** |
+  | `npm audit` | 0 Schwachstellen |
+
+  **Was offen bleibt:** Die Ausfälle von `ziel.spec.ts` („Enter sucht sofort", 2026-10-30) und `log.test.ts` unter Last sind damit **nicht** erklärt; sie sind nicht nachgemessen. Wer sie sieht, hat denselben Aufbau wie oben zur Hand.
+
+- [x] **`minimatch`-Override nachgesehen: er bleibt** (2026-11-10, zu 12.18). Der Eintrag zu 12.18 sagt, der Override gehöre heraus, sobald `typescript-eslint` selbst auf `minimatch` 11 geht. Gemessen: Die installierte Fassung `@typescript-eslint/typescript-estree` 8.72.1 **und die neueste (8.72.2)** verlangen weiterhin `^10.2.2`. Stromaufwärts ist also nichts geschehen, der Override steht unverändert, `npm audit` meldet **0 Schwachstellen**. Beim nächsten Anheben von `eslint-config-next` (also bei 1.8) wieder nachsehen.
+
+## 2d.8a Köln ist zurück, Heidelberg nicht (2026-11-10)
+
+Der Punkt bleibt in `ToDos.md` offen (`[~]`); hierher gehört, was gemessen wurde.
+
+- **Köln: der Dienst antwortet wieder.** Am 2026-11-01 antwortete `geoportal.stadt-koeln.de/arcgis` auf jeden Pfad mit der Startseite der Stadt. Jetzt liefert das Verzeichnis sauberes JSON (ArcGIS 11.3, 16 Ordner), der Ordner `verkehr` führt `behindertenparkplaetze`, und der **im Importstand gemerkte WFS-Aufruf** (`.../verkehr/behindertenparkplaetze/MapServer/WFSServer`) antwortet mit HTTP 200. Der Neuimport lief durch: **445 Standorte, 605 Stellplätze – genau wie am 2026-10-08.**
+  - **Die Seed-Datei ist auf den alten Stand zurückgesetzt, und das ist Absicht.** Die Standorte sind Zeichen für Zeichen identisch; geändert hätte sich allein `generatedAt` (2026-10-08 → 2026-11-10). Genau das ist der Fehler, den 19.16 behoben hat: Ein Lauf, der nur nachsieht, darf das **Datendatum** nicht vorschieben, sonst sieht der Bestand frischer aus als er ist. Das Prüfdatum gehört nach `_import-status.json` (dort steht es jetzt) und auf `/abdeckung` in die Zeile „zuletzt geprüft" (19.15/19.16). **Vor dem Lauf wurde die Datei gesichert**, wie es der Fallstrick bei Bielefeld verlangt.
+  - **Folge:** Der tägliche Datenlauf (19.10) wird Köln von selbst wieder anfassen, sobald die Quelle ein neueres Änderungsdatum nennt – der Weg ist nicht mehr versperrt. Die Mobilithek NRW als Ausweg braucht es nicht mehr.
+- **Heidelberg: kein neuer Bezugsweg gefunden.** Gesucht in dieser Reihenfolge, alles ohne Treffer:
+  - Die gemerkte Quelle (`ckan.datenplattform.heidelberg.de/.../features_new.geojson`) antwortet mit **404**. Nicht nur die Datei: **jeder** Pfad dieses Hosts tut es, auch die Wurzel und die CKAN-Schnittstelle.
+  - `npm run sources -- Heidelberg` findet in GovData weiterhin genau diesen toten Verweis. Das ist die Lehre aus 2d.8, zum zweiten Mal: **GovData verweist auf Dienste, die es nicht mehr gibt.**
+  - Ein eigener Geodienst der Stadt ist nicht zu finden (`geodaten.`, `gis.`, `geoportal.heidelberg.de` – 404 oder kein DNS-Eintrag).
+  - **Kein landesweiter Sammeldatensatz.** Eine Websuche nannte „Gebündelte Daten Behindertenparkplätze Baden-Württemberg" unter dl-de/by-2.0 – **den gibt es nicht.** Die CKAN-Suche auf MobiData BW liefert zu „behindertenparkpl" fünf Datensätze: den der TechnologieRegion Karlsruhe (nutzen wir, 2e.2), Ulm (nutzen wir), Karlsruher POIs und die beiden „Gebündelten Daten", die **allgemeine** Parkplätze führen – wie 3.2 schon festgestellt hat. Im WFS von `api.mobidata-bw.de` gibt es unter 13 Ebenen keine zu Behindertenparkplätzen. **Das ist derselbe Fall wie bei den Lizenzen in 2a.5: Die Suchzusammenfassung behauptete etwas anderes als die Quelle.**
+  - **Nichts umgangen:** `mobidata-bw.de` und `daten-bw.de` antworten auf manche Abrufe mit 403; es wurden keine Kopfzeilen verstellt, und was über die normale Schnittstelle zu holen war, steht oben.
+  - **Ergebnis:** Der Heidelberger Bestand bleibt amtlich vom 2026-10-08 (214 Standorte). Wer es wieder aufnimmt: Die Stadt führt die Liste in jedem Fall (jeder Stellplatz wird förmlich angeordnet) – der Weg wäre die Anfrage beim Amt für Mobilität, also Schritt 3 aus `Datenpflege.md`, und das ist eine Handlung nach außen.
+- **Bochum: im Browser nachgesehen (auf Torstens Freigabe vom 2026-11-10) – es geht ohne Zugangsdaten nicht.** Bisher stand hier, der Download antworte „mit 403“ und die Datei müsse von Hand im Browser geladen werden. **Das war die richtige Beobachtung mit der falschen Folgerung:** Der Browser bekommt dieselbe 403, und sie sagt im Klartext, warum – „Keine Berechtigung, um Ressource herunterzuladen. Um diese Seite zu sehen, bitte anmelden.“ Es ist keine Bot-Abwehr, sondern eine **Zugangsbeschränkung des Portals**; ein Blick von Hand ändert daran nichts.
+  - **Der Weg über das zentrale Portal ist derselbe Weg.** Der Datensatz steht auf `opendata.ruhr` (dort auch gefunden, auf `bochum.opendata.ruhr` findet die Suche ihn nicht mehr – der Auftritt trägt im Titel „(DEV)“). Alle sechs Ressourcen verweisen aber auf den geschützten Host, und die Datastore-Schnittstelle des zentralen Portals kennt sie nicht (404).
+  - **Der ArcGIS-Dienst ist abgeschaltet, nicht umgezogen.** Die im Datensatz genannte Quelle liegt auf `geoservicekkm.bochum.de` – ein **anderer Host** als der früher geprüfte. Er antwortet, und seine Antwort ist eindeutig: `Service maponline/Behindertenparkplaetze/MapServer not found`. Der Ordner `maponline` listet **63 Dienste**, keiner davon handelt von Parken.
+  - **Dazu fehlt jetzt die Lizenz.** Hier stand „CC0“ bzw. „CC0-1.0“. Das Portal nennt heute „Keine Lizenz angegeben“, und das Feld in den Metadaten ist leer. Nach `Datenpflege.md` ist eine ungeklärte Lizenz allein schon ein Ausschlussgrund – selbst mit der Datei in der Hand dürfte sie so nicht in den Bestand.
+  - **Ergebnis:** Bochum bleibt bei OpenStreetMap. Was offen ist, ist keine Abrufarbeit mehr, sondern eine Entscheidung (Zugang beim Portal erfragen oder dabei bleiben); so steht es jetzt in `ToDos.md`. **Nichts umgangen:** keine Anmeldung, keine verstellten Kopfzeilen.
+- **Nebenbefund: Moers hat eine amtliche Quelle, die wir nicht nutzen** (neu als 2d.12 in `ToDos.md`). Die Suche auf `opendata.ruhr` nach Behindertenparkplätzen liefert fünf Datensätze: Bochum (oben), Bottrop und Gelsenkirchen (nutzen wir schon amtlich), die Verkehrs-POIs des Regionalverbands – und **Moers**, CSV auf `offenesdatenportal.de` unter **Datenlizenz Deutschland Zero 2.0**, ohne Sperre abrufbar. Moers steht bei uns mit 66 Standorten aus OpenStreetMap. **Nicht importiert:** Eine Umstellung ersetzt den Bestand und wechselt alle Parkplatz-IDs, und daran hängen Bewertungen und gespeicherte Parkplätze (so bei München, 2d.8a) – das ist Torstens Entscheidung, keine Routine.
 
 ---
 

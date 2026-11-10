@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T04:48:59.582Z",
+  "updatedAt": "2026-11-10T21:44:48.091Z",
   "records": [
     {
       "rank": 1,
@@ -58,11 +58,11 @@
       "ags": "05315000",
       "plan": "official",
       "usedSource": "amtlich (WFS)",
-      "usedUrl": "https://geoportal.stadt-koeln.de/arcgis/services/verkehr/behindertenparkplaetze/MapServer/WFSServer?service=WFS&version=2.0.0&request=GetFeature&typeNames=behindertenparkplaetze%3ABehindertenparkplatz",
+      "usedUrl": "https://geoportal.stadt-koeln.de/arcgis/services/verkehr/behindertenparkplaetze/MapServer/WFSServer?service=WFS&version=2.0.0&request=GetFeature&typeNames=Behindertenparkplaetze%3ABehindertenparkplatz",
       "status": "fertig",
       "locations": 445,
       "spaces": 605,
-      "attemptedAt": "2026-10-08T21:33:55.896Z",
+      "attemptedAt": "2026-11-10T21:44:48.091Z",
       "message": null
     },
     {

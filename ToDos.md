@@ -8,7 +8,7 @@
 **Legende:** `[ ]` offen · `[~]` teils gebaut, Rest hier · `[!]` braucht eine
 Entscheidung oder Angabe von dir · `[-]` gesperrt bis zur Freigabe
 
-**Letzte Aktualisierung:** 2026-11-09
+**Letzte Aktualisierung:** 2026-11-10
 
 **Stand:** wird nachgezählt, nicht fortgeschrieben:
 
@@ -57,7 +57,8 @@ in [Erledigt.md](Erledigt.md) bei 19.3 und in [deploy/Datenlauf.md](deploy/Daten
 
 **Zum Schluss steht 12.17** (abschließender Gesamttest), weil er sonst einen
 Stand prüft, den es danach nicht mehr gibt. _10.23 (Sicherheit), 12.16
-(Geschwindigkeit) und 12.18 (npm audit) sind am 2026-11-09 erledigt._
+(Geschwindigkeit) und 12.18 (npm audit) sind am 2026-11-09 erledigt, 12.19
+(wackelnder Smoke-Test) und Köln aus 2d.8a am 2026-11-10._
 
 **Neue Knöpfe und Meldungen kommen gleich in `src/i18n/de.ts`, nicht in die
 Komponente** (Aufbau in [Erledigt.md](Erledigt.md) unter 15.2) – und in die
@@ -69,11 +70,15 @@ maschinelle Mehrfachprüfung.
 
 ## 2. Datenquellen und Import
 
-- [~] 2d.8a **Städte mit ungenutzter amtlicher Quelle.** München und Bielefeld sind umgestellt (Befund in [Erledigt.md](Erledigt.md)). **Offen: Bochum.** Am 2026-11-01 erneut mit einfachem Abruf versucht, auch über GovData und die Datastore-Schnittstelle: Der Datensatz `bochum-behindertenparkplaetze` ist über `opendata.ruhr` auffindbar (GeoJSON, CSV, ZIP), der Download antwortet aber weiter mit 403, der ArcGIS-Dienst mit 404, die Datastore-Schnittstelle ebenfalls; ich umgehe die Sperre nicht. **Ohne die Datei im Browser geht es nicht:** CSV oder GeoJSON „Bochum – Behindertenparkplätze“ (CC0) von `bochum.opendata.ruhr` laden und in den Arbeitsordner legen. **Köln** (neu am 2026-11-01): Der ArcGIS-Server der Stadt (`geoportal.stadt-koeln.de/arcgis`) antwortet auf jeden Pfad mit der Startseite der Stadt; deren Geoportal-Seite sagt „Einige unserer interaktiven Karten stehen derzeit nicht zur Verfügung“ (Stand 2026-11-01). Auch offenedaten-koeln.de und GovData verweisen nur auf diese Adressen, einen anderen Weg gibt es dort nicht. Der Kölner Bestand bleibt amtlich vom 2026-10-08; der Datenlauf (19.10) versucht es wöchentlich von selbst. **Heidelberg** (neu am 2026-11-01): Die Quelle (CKAN-Datenplattform) liefert nichts Brauchbares mehr, der Lauf hat den Import verworfen, der Bestand vom 2026-10-08 bleibt; neuen Bezugsweg suchen. Köln: ob der Dienst zurückkommt, sonst das gebündelte NRW-Angebot der Mobilithek (Zugang unbekannt, Anmeldung nötig).
+- [~] 2d.8a **Städte mit ungenutzter amtlicher Quelle.** München, Bielefeld und – seit dem 2026-11-10 – Köln sind erledigt; Befunde in [Erledigt.md](Erledigt.md). Offen sind zwei, und beide brauchen eine Handlung nach außen:
+  - [!] **Bochum – im Browser nachgesehen, es geht ohne Zugangsdaten nicht** (2026-11-10, Befund in [Erledigt.md](Erledigt.md)). Der Download verlangt eine **Anmeldung** auf dem Portal der Stadt, der ArcGIS-Dienst ist abgeschaltet, und eine Lizenz nennt der Datensatz nicht mehr. **Nötig ist eine Entscheidung, nicht ein Abruf:** Zugang beim Portal erfragen, oder Bochum bleibt bei OpenStreetMap.
+  - [!] **Heidelberg.** Die CKAN-Quelle ist samt Host weg, GovData verweist weiter auf sie, einen anderen Bezugsweg gibt es nicht (gesucht am 2026-11-10, Einzelheiten in [Erledigt.md](Erledigt.md)). **Nötig:** Anfrage beim Amt für Mobilität der Stadt, also Schritt 3 aus [Datenpflege.md](Datenpflege.md). Der Bestand vom 2026-10-08 bleibt bis dahin.
+
+- [!] 2d.12 **Moers hat eine amtliche Quelle, die wir nicht nutzen.** Beim Nachsehen zu 2d.8a gefunden: „Behindertenparkplätze (Stadt Moers)“ auf `offenesdatenportal.de`, CSV, **Datenlizenz Deutschland Zero 2.0**, abrufbar. Im Bestand steht Moers mit 66 Standorten aus OpenStreetMap. **Braucht deine Entscheidung, weil es den Bestand ersetzt:** Wie bei München (2d.8a) ändern sich dabei alle Parkplatz-IDs, und Bewertungen und gespeicherte Parkplätze auf dem NAS zeigen danach ins Leere. Nicht importiert.
 
 ## 12. Qualität und Deployment
 
-- [~] 12.17 **Gesamttest: Durchgang von Hand auf dem Telefon.** Offen ist nur noch dieser – Karte, Suche, Navigation, Rückmeldung mit Mail, An- und Abmelden, Verwaltung. **Braucht Torsten** (Gerät und laufender Betrieb). Der maschinelle Teil ist am 2026-11-09 gelaufen, Zahlen in [Erledigt.md](Erledigt.md). Was auffällt, wird als eigener Punkt aufgenommen und nicht nebenbei geändert. **Läuft danach noch etwas am Code, gehört der maschinelle Teil wiederholt.**
+- [~] 12.17 **Gesamttest: Durchgang von Hand auf dem Telefon.** Offen ist nur noch dieser – Karte, Suche, Navigation, Rückmeldung mit Mail, An- und Abmelden, Verwaltung. **Braucht Torsten** (Gerät und laufender Betrieb). Der maschinelle Teil ist am 2026-11-10 erneut gelaufen (nach 12.19), Zahlen in [Erledigt.md](Erledigt.md). Was auffällt, wird als eigener Punkt aufgenommen und nicht nebenbei geändert. **Läuft danach noch etwas am Code, gehört der maschinelle Teil wiederholt.**
 
 ## 19. Betrieb und Pflege
 

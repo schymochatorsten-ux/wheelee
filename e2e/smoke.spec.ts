@@ -11,6 +11,28 @@ import { expect, test } from "@playwright/test";
 /** Köln, nahe der Domplatte – dort stehen genug Parkplätze für den Test. */
 const KOELN = { latitude: 50.938, longitude: 6.9551 };
 
+/**
+ * Die Seite öffnen und warten, bis die **standortbezogene** Liste da ist.
+ *
+ * Bis der Standort im Browser angekommen ist, zeigt die Leiste die
+ * vorgerenderten Standorte um die Stadtmitte; danach ersetzt sie sie durch die
+ * nächsten beim Standort. Wer dazwischen auf einen Eintrag klickt, trifft eine
+ * Zeile, die gleich darauf ersetzt wird – der Klick setzt dann kein Ziel.
+ * Derselbe Wettlauf steckte hinter den Fehlschlägen in `bewertungen.spec.ts`
+ * (dort seit 11.5 genauso gelöst), `sprache.spec.ts` (15.4) und dem Befund zu
+ * 3.7, und er ist die gemessene Ursache der Ausfälle dieser Datei unter
+ * Nebenlast (2026-11-10, Begründung in `Erledigt.md`).
+ *
+ * **Eine Stelle statt vier:** Vier Tests dieser Datei klicken Einträge der
+ * Auswahl an. Der Wettlauf an jeder einzeln abgefangen hieße, beim nächsten
+ * Mal eine zu vergessen.
+ */
+async function oeffnenMitStandort(page: import("@playwright/test").Page) {
+  const nahe = page.waitForResponse((antwort) => /\/api\/spots\?lat=50/u.test(antwort.url()));
+  await page.goto("/");
+  await nahe;
+}
+
 test.describe("wheelee", () => {
   test("Karte lädt mit Attribution und Markern", async ({ page }) => {
     await page.goto("/");
@@ -61,7 +83,7 @@ test.describe("wheelee", () => {
   test("Detailansicht öffnet aus der Leiste und schließt mit Escape", async ({ page, context }) => {
     await context.grantPermissions(["geolocation"]);
     await context.setGeolocation(KOELN);
-    await page.goto("/");
+    await oeffnenMitStandort(page);
 
     await page.getByRole("button", { name: "Details" }).click();
 
@@ -82,7 +104,7 @@ test.describe("wheelee", () => {
   }) => {
     await context.grantPermissions(["geolocation"]);
     await context.setGeolocation(KOELN);
-    await page.goto("/");
+    await oeffnenMitStandort(page);
 
     const bar = page.getByText("Nächster Behindertenparkplatz");
     await expect(bar).toBeVisible();
@@ -105,7 +127,7 @@ test.describe("wheelee", () => {
   test("ausgewählter Parkplatz bekommt eine rote Luftlinie", async ({ page, context }) => {
     await context.grantPermissions(["geolocation"]);
     await context.setGeolocation(KOELN);
-    await page.goto("/");
+    await oeffnenMitStandort(page);
 
     await expect(page.getByText("Nächster Behindertenparkplatz")).toBeVisible();
 
@@ -118,7 +140,7 @@ test.describe("wheelee", () => {
   test("ein Eintrag der Auswahl bringt den Parkplatz auf die Karte", async ({ page, context }) => {
     await context.grantPermissions(["geolocation"]);
     await context.setGeolocation(KOELN);
-    await page.goto("/");
+    await oeffnenMitStandort(page);
 
     await page.getByRole("button", { name: /Weitere in der Nähe/ }).click();
 
@@ -137,97 +159,99 @@ test.describe("wheelee", () => {
   }) => {
     await context.grantPermissions(["geolocation"]);
     await context.setGeolocation(KOELN);
-    await page.goto("/");
+    await oeffnenMitStandort(page);
 
     await page.getByRole("button", { name: /Weitere in der Nähe/ }).click();
-    await page.waitForTimeout(1500);
 
     /*
      * ToDo 6.21: Vorher deckte die Liste die Karte zu, und darunter lagen
      * genau die Parkplätze, über die sie Auskunft gab. Geprüft wird deshalb
      * das Ergebnis und nicht eine Höhenangabe: Bleibt ein brauchbarer
      * Kartenstreifen, und stehen dort auch Marker drin?
+     *
+     * **Alles in einem wiederholten Block, nicht nach festem Warten**
+     * (gemessen am 2026-11-10, Begründung in `Erledigt.md`). Hier standen
+     * 1,5 s Wartezeit und danach eine einzige Messung. Unter Nebenlast kam
+     * entweder die Auswahl zu spät (`messung` war `null`) oder die Karte hatte
+     * ihren Ausschnitt noch nicht eingepasst. Die Wartezeit durch Prüfungen auf
+     * die Auswahl zu ersetzen machte es **schlechter**: Dann war die Messung
+     * früher dran als Leaflet, und `.leaflet-container` fehlte. Drei Dinge
+     * müssen zugleich stehen – Karte, Leiste und die nachgeladenen Marker –,
+     * und das ist genau der Fall für einen Block, der bis zum Ergebnis
+     * wiederholt wird.
      */
-    const messung = await page.evaluate(() => {
-      const map = document.querySelector(".leaflet-container");
-      const list = document.querySelector("#parkplatz-auswahl");
-      if (!map || !list) return null;
+    await expect(async () => {
+      const messung = await page.evaluate(() => {
+        const map = document.querySelector(".leaflet-container");
+        const list = document.querySelector("#parkplatz-auswahl");
+        const panel = document.querySelector("#parkplatz-leiste");
+        if (!map || !list || !panel) return null;
 
-      const panel = document.querySelector("#parkplatz-leiste");
-      if (!panel) return null;
+        const frame = map.getBoundingClientRect();
+        const bar = panel.getBoundingClientRect();
 
-      const frame = map.getBoundingClientRect();
-      const bar = panel.getBoundingClientRect();
-      const freeStrip = frame.bottom - bar.bottom;
+        return {
+          share: bar.height / frame.height,
+          freeStrip: frame.bottom - bar.bottom,
+          visible: [...document.querySelectorAll(".leaflet-marker-icon")].filter((marker) => {
+            const box = marker.getBoundingClientRect();
+            return box.top >= bar.bottom && box.bottom <= frame.bottom;
+          }).length,
+        };
+      });
 
-      const visible = [...document.querySelectorAll(".leaflet-marker-icon")].filter((marker) => {
-        const box = marker.getBoundingClientRect();
-        return box.top >= bar.bottom && box.bottom <= frame.bottom;
-      }).length;
-
-      return { share: bar.height / frame.height, freeStrip, visible };
-    });
-
-    expect(messung).not.toBeNull();
-    // Die Leiste darf nicht mehr als zwei Drittel der Karte einnehmen …
-    expect(messung!.share).toBeLessThan(0.67);
-    // … und im Rest müssen Parkplätze zu sehen sein, sonst nützt er nichts.
-    expect(messung!.freeStrip).toBeGreaterThan(150);
-    // Die Marker kommen aus `/api/spots` und brauchen bei größerem Bestand etwas
-    // länger; eine feste Wartezeit allein machte den Test zeitabhängig. Deshalb
-    // wird bis zum Ergebnis neu gezählt.
-    await expect
-      .poll(
-        () =>
-          page.evaluate(() => {
-            const map = document.querySelector(".leaflet-container");
-            const panel = document.querySelector("#parkplatz-leiste");
-            if (!map || !panel) return 0;
-            const frame = map.getBoundingClientRect();
-            const bar = panel.getBoundingClientRect();
-            return [...document.querySelectorAll(".leaflet-marker-icon")].filter((marker) => {
-              const box = marker.getBoundingClientRect();
-              return box.top >= bar.bottom && box.bottom <= frame.bottom;
-            }).length;
-          }),
-        { timeout: 10_000 },
-      )
-      .toBeGreaterThan(2);
+      expect(messung).not.toBeNull();
+      // Die Leiste darf nicht mehr als zwei Drittel der Karte einnehmen …
+      expect(messung!.share).toBeLessThan(0.67);
+      // … und im Rest müssen Parkplätze zu sehen sein, sonst nützt er nichts.
+      expect(messung!.freeStrip).toBeGreaterThan(150);
+      // Die Marker kommen aus `/api/spots` und brauchen bei größerem Bestand
+      // etwas länger.
+      expect(messung!.visible).toBeGreaterThan(2);
+    }).toPass({ timeout: 20_000 });
   });
 
   test("beide Enden der Luftlinie bleiben im Bild", async ({ page, context }) => {
     await context.grantPermissions(["geolocation"]);
     await context.setGeolocation(KOELN);
-    await page.goto("/");
+    await oeffnenMitStandort(page);
 
     await page.getByRole("button", { name: /Weitere in der Nähe/ }).click();
     await page.locator("#parkplatz-auswahl li").last().locator("button").click();
-
-    // Die Karte fährt – erst danach messen.
-    await page.waitForTimeout(1500);
 
     /*
      * ToDo 6.22: Vorher sprang die Karte allein auf den Parkplatz, und die
      * Luftlinie lief ohne Erklärung aus dem Bild. Geprüft wird deshalb nicht
      * die Zoomstufe, sondern das, worauf es ankommt: Liegen beide Enden im
      * sichtbaren Ausschnitt?
+     *
+     * **Bis zum Ergebnis neu gemessen, nicht nach festem Warten** – wie in der
+     * Markerzählung oben. Hier stand `waitForTimeout(1500)` für die Fahrt der
+     * Karte (`flyToBounds`); unter Nebenlast ist sie danach noch nicht zu Ende,
+     * die Linie steht dann noch heraus und der Test fiel aus. Gemessen am
+     * 2026-11-10: 100 von 100 Durchläufen grün ohne Last, 98 von 100 mit – die
+     * beiden Fehlschläge genau hier. Begründung in `Erledigt.md`.
      */
-    const sichtbar = await page.evaluate(() => {
-      const path = document.querySelector('.leaflet-overlay-pane path[stroke="#dc2626"]');
-      const map = document.querySelector(".leaflet-container");
-      if (!path || !map) return null;
+    await expect
+      .poll(
+        () =>
+          page.evaluate(() => {
+            const path = document.querySelector('.leaflet-overlay-pane path[stroke="#dc2626"]');
+            const map = document.querySelector(".leaflet-container");
+            if (!path || !map) return null;
 
-      const line = path.getBoundingClientRect();
-      const frame = map.getBoundingClientRect();
-      return (
-        line.left >= frame.left &&
-        line.right <= frame.right &&
-        line.top >= frame.top &&
-        line.bottom <= frame.bottom
-      );
-    });
-
-    expect(sichtbar).toBe(true);
+            const line = path.getBoundingClientRect();
+            const frame = map.getBoundingClientRect();
+            return (
+              line.left >= frame.left &&
+              line.right <= frame.right &&
+              line.top >= frame.top &&
+              line.bottom <= frame.bottom
+            );
+          }),
+        { timeout: 10_000 },
+      )
+      .toBe(true);
   });
 
   test("Einstellungen merken die Karten-App", async ({ page }) => {
