@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T04:48:59.582Z",
+  "updatedAt": "2026-11-10T05:13:56.087Z",
   "records": [
     {
       "rank": 1,
@@ -30,7 +30,7 @@
       "status": "fertig",
       "locations": 936,
       "spaces": 1310,
-      "attemptedAt": "2026-11-08T14:09:01.494Z",
+      "attemptedAt": "2026-11-10T05:13:49.780Z",
       "message": null
     },
     {
@@ -94,7 +94,7 @@
       "status": "fertig",
       "locations": 340,
       "spaces": 340,
-      "attemptedAt": "2026-11-09T04:48:59.582Z",
+      "attemptedAt": "2026-11-10T05:13:56.087Z",
       "message": null
     },
     {
@@ -190,7 +190,7 @@
       "status": "fertig",
       "locations": 481,
       "spaces": 680,
-      "attemptedAt": "2026-11-09T04:48:56.850Z",
+      "attemptedAt": "2026-11-10T05:13:53.307Z",
       "message": null
     },
     {
