@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { useT } from "@/i18n/context";
 import type { ParkingSpot } from "@/lib/types";
 import { FeedbackForm } from "./FeedbackForm";
@@ -46,7 +47,22 @@ export function FeedbackButton({
       if (event.key === "Escape") setOpen(false);
     };
     window.addEventListener("keydown", onKeyDown);
-    return () => window.removeEventListener("keydown", onKeyDown);
+
+    /*
+     * **Die Seite darunter steht still, solange das Formular offen ist**
+     * (gemeldet am 2026-11-11: die Einstellungen scrollten hinter dem
+     * Fenster weg). Beim Wischen über dem halbdurchsichtigen Hintergrund
+     * scrollte die Liste darunter; man schloss das Fenster und stand an
+     * einer anderen Stelle der Seite, als man es verlassen hatte. Das
+     * Formular selbst scrollt weiter – es ist höher als ein Telefon.
+     */
+    const vorher = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      window.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = vorher;
+    };
   }, [open]);
 
   const close = () => {
@@ -65,51 +81,62 @@ export function FeedbackButton({
         {spot ? t("feedback.reportSpot") : t("feedback.reportOrSuggest")}
       </button>
 
-      {open && (
-        <div
-          // Über allem, auch über der Detailansicht (z-[1000]) und der Karte:
-          // Das Formular ist in diesem Moment die Hauptsache.
-          className="fixed inset-0 z-[2000] flex items-end justify-center sm:items-center"
-          role="presentation"
-        >
-          {/* Klick daneben schließt. Ein Formular, das nur über einen kleinen
-              Knopf zu verlassen ist, fühlt sich wie eine Falle an. */}
-          <div className="absolute inset-0 bg-black/40" onClick={close} aria-hidden="true" />
-
+      {/*
+        **Das Fenster hängt am `body`, nicht an seiner Stelle im Baum**
+        (gemeldet am 2026-11-11: Es lag hinter der Liste darunter). Der Knopf
+        steht in einer Gruppe mit `backdrop-blur`, und ein Weichzeichner
+        eröffnet einen eigenen Stapelzusammenhang: Darin ist `z-[2000]` nur
+        innerhalb der Gruppe groß, und jede später gezeichnete Gruppe liegt
+        darüber. Ein noch größerer Wert hätte daran nichts geändert – das ist
+        der Grund, warum „z-index hilft nicht“ hier kein Rätsel ist.
+      */}
+      {open &&
+        createPortal(
           <div
-            ref={dialog}
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="feedback-dialog-titel"
-            className="relative max-h-[90vh] w-full overflow-y-auto rounded-t-3xl bg-white p-4 pb-6 shadow-[0_-4px_24px_rgba(0,0,0,.25)] sm:max-w-lg sm:rounded-3xl dark:bg-neutral-900"
+            // Über allem, auch über der Detailansicht (z-[1000]) und der Karte:
+            // Das Formular ist in diesem Moment die Hauptsache.
+            className="fixed inset-0 z-[2000] flex items-end justify-center sm:items-center"
+            role="presentation"
           >
-            <div className="flex items-start gap-3">
-              <h2 id="feedback-dialog-titel" className="flex-1 text-lg font-semibold">
-                {t("feedback.title")}
-              </h2>
-              <button
-                type="button"
-                onClick={close}
-                aria-label={t("feedback.close")}
-                className="-mt-1 -mr-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-neutral-200/70 text-xl text-neutral-600 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-800 dark:text-neutral-300"
-              >
-                ×
-              </button>
+            {/* Klick daneben schließt. Ein Formular, das nur über einen kleinen
+              Knopf zu verlassen ist, fühlt sich wie eine Falle an. */}
+            <div className="absolute inset-0 bg-black/40" onClick={close} aria-hidden="true" />
+
+            <div
+              ref={dialog}
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="feedback-dialog-titel"
+              className="relative max-h-[90vh] w-full overflow-y-auto rounded-t-3xl bg-white p-4 pb-6 shadow-[0_-4px_24px_rgba(0,0,0,.25)] sm:max-w-lg sm:rounded-3xl dark:bg-neutral-900"
+            >
+              <div className="flex items-start gap-3">
+                <h2 id="feedback-dialog-titel" className="flex-1 text-lg font-semibold">
+                  {t("feedback.title")}
+                </h2>
+                <button
+                  type="button"
+                  onClick={close}
+                  aria-label={t("feedback.close")}
+                  className="-mt-1 -mr-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-neutral-200/70 text-xl text-neutral-600 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-800 dark:text-neutral-300"
+                >
+                  ×
+                </button>
+              </div>
+
+              <p className="mt-1 mb-4 text-sm text-neutral-600 dark:text-neutral-400">
+                {t("feedback.intro")}
+              </p>
+
+              <FeedbackForm
+                spot={spot}
+                accountEmail={accountEmail}
+                initialKind={spot ? "fehler" : undefined}
+                onDone={close}
+              />
             </div>
-
-            <p className="mt-1 mb-4 text-sm text-neutral-600 dark:text-neutral-400">
-              {t("feedback.intro")}
-            </p>
-
-            <FeedbackForm
-              spot={spot}
-              accountEmail={accountEmail}
-              initialKind={spot ? "fehler" : undefined}
-              onDone={close}
-            />
-          </div>
-        </div>
-      )}
+          </div>,
+          document.body,
+        )}
     </>
   );
 }

@@ -160,7 +160,7 @@ export const it: Messages = {
   "settings.account": "Account",
   "settings.accountNote":
     "Facoltativo. L’app funziona pienamente anche senza account – segnalazioni di errori incluse. Un account serve solo a ricordare che le tue segnalazioni sono collegate tra loro.",
-  "settings.legal": "Note legali",
+  "settings.legal": "Altro",
   "settings.imprint": "Impressum (note legali)",
   "settings.privacy": "Informativa sulla privacy",
   "settings.sources": "Fonti e licenze",
@@ -368,11 +368,8 @@ export const it: Messages = {
   "adminMail.publicUrl": "Indirizzo dell’app",
   "adminMail.publicUrlNote": "Per i link nelle e-mail. Solo https (o localhost).",
   "adminMail.enabled": "Attivare l’invio",
-  "adminMail.provider": "Fornitore del servizio di posta",
-  "adminMail.providerNote":
-    "Nome, sede e stato del contratto di responsabile del trattamento. È ciò che compare nell’informativa sulla privacy; se resta vuoto, lì viene segnalata la mancanza.",
   "adminMail.privacyNote":
-    "Non appena l’invio funziona, l’informativa sulla privacy lo indica da sé, ma è completa solo con il fornitore qui sopra.",
+    "Non appena l'invio è attivo, l'informativa sulla privacy lo indica da sé.",
   "adminMail.save": "Salva",
   "adminMail.test": "Invia una prova a me",
   "adminMail.clear": "Elimina i dati",

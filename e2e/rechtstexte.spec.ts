@@ -38,7 +38,9 @@ test.describe("Rechtstexte", () => {
     await devLeisteDurchklickbarMachen(page);
     await page.getByRole("tab", { name: "Einstellungen" }).click();
 
-    const rechtliches = page.getByRole("navigation", { name: "Rechtliches" });
+    // Die Gruppe heißt seit dem 2026-11-11 „Mehr“ (sie führt nicht nur
+    // Pflichttexte, sondern auch Infoseite, Städte, Quellen und Abdeckung).
+    const rechtliches = page.getByRole("navigation", { name: "Mehr" });
     await expect(rechtliches.getByRole("link", { name: "Impressum" })).toBeVisible();
     await expect(rechtliches.getByRole("link", { name: "Datenschutzerklärung" })).toBeVisible();
 

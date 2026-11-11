@@ -165,7 +165,7 @@ export const fr: Messages = {
   "settings.account": "Compte",
   "settings.accountNote":
     "Facultatif. L'application fonctionne entièrement sans compte – y compris pour signaler des erreurs. Un compte retient seulement que vos retours vont ensemble.",
-  "settings.legal": "Mentions légales",
+  "settings.legal": "Plus",
   "settings.imprint": "Mentions légales (Impressum)",
   "settings.privacy": "Politique de confidentialité",
   "settings.sources": "Sources et licences",
@@ -376,11 +376,8 @@ export const fr: Messages = {
   "adminMail.publicUrl": "Adresse de l’application",
   "adminMail.publicUrlNote": "Pour les liens dans les courriels. Uniquement https (ou localhost).",
   "adminMail.enabled": "Activer l’envoi",
-  "adminMail.provider": "Prestataire d’envoi",
-  "adminMail.providerNote":
-    "Nom, siège et état du contrat de sous-traitance. C’est ce qu’affiche la politique de confidentialité ; laissé vide, elle y signale le manque.",
   "adminMail.privacyNote":
-    "Dès que l’envoi fonctionne, la politique de confidentialité le mentionne d’elle-même – elle n’est complète qu’avec le prestataire ci-dessus.",
+    "Dès que l'envoi fonctionne, la politique de confidentialité le mentionne d'elle-même.",
   "adminMail.save": "Enregistrer",
   "adminMail.test": "M’envoyer un courriel de test",
   "adminMail.clear": "Supprimer les données",

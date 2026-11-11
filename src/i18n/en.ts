@@ -161,7 +161,7 @@ export const en: Messages = {
   "settings.account": "Account",
   "settings.accountNote":
     "Optional. The app works fully without an account – including reporting errors. An account only remembers that your feedback belongs together.",
-  "settings.legal": "Legal",
+  "settings.legal": "More",
   "settings.imprint": "Imprint",
   "settings.privacy": "Privacy policy",
   "settings.sources": "Sources and licences",
@@ -365,11 +365,7 @@ export const en: Messages = {
   "adminMail.publicUrl": "App address",
   "adminMail.publicUrlNote": "For the links in the emails. Only https (or localhost).",
   "adminMail.enabled": "Switch sending on",
-  "adminMail.provider": "Mail service provider",
-  "adminMail.providerNote":
-    "Name, registered office and status of the data processing agreement. This is what the privacy policy shows; left empty, it names the gap there.",
-  "adminMail.privacyNote":
-    "Once sending is active the privacy policy mentions it by itself – but it is only complete with the service provider above.",
+  "adminMail.privacyNote": "Once sending is active, the privacy policy mentions it by itself.",
   "adminMail.save": "Save",
   "adminMail.test": "Send a test to me",
   "adminMail.clear": "Discard details",

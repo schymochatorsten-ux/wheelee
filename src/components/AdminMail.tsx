@@ -311,23 +311,17 @@ export function AdminMail() {
         </label>
 
         {/*
-          Der Versanddienstleister steht hier und nicht bei den Rechtstexten:
-          Er ist genau dann einzutragen, wenn jemand den Versand einrichtet,
-          und sonst nie. Fehlt er, nennt die Datenschutzerklärung den Mangel
-          (10.16) – deshalb ist er kein Pflichtfeld, aber der Hinweis daneben
-          sagt, was sonst dort steht.
-        */}
-        <label className="block text-sm">
-          {t("adminMail.provider")}
-          <input
-            className={field}
-            value={form.provider}
-            autoComplete="off"
-            onChange={(event) => setForm({ ...form, provider: event.target.value })}
-          />
-          <span className="mt-1 block text-xs text-neutral-500">{t("adminMail.providerNote")}</span>
-        </label>
+          **Das Feld „Versanddienstleister“ ist am 2026-11-11 aus der
+          Oberfläche genommen** (Anweisung von Torsten, zusammen mit dem
+          Abschnitt in der Datenschutzerklärung, der es las). Es hätte sonst
+          eine Angabe erfragt, die nirgends mehr erscheint, und sein
+          Hinweistext hätte etwas Falsches behauptet.
 
+          **Die Spalte `provider` bleibt in der Datenbank** (Migration 14):
+          Schritte werden nur angehängt, nie geändert, und ein bereits
+          eingetragener Name soll nicht beim nächsten Speichern verschwinden –
+          `saveMailConfig` schreibt ihn unverändert zurück.
+        */}
         <div className="flex items-center gap-3 text-sm">
           <span className="flex-1">{t("adminMail.enabled")}</span>
           <Switch

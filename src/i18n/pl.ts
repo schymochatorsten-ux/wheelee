@@ -163,7 +163,7 @@ export const pl: Messages = {
   "settings.account": "Konto",
   "settings.accountNote":
     "Opcjonalnie. Aplikacja działa w pełni także bez konta – łącznie ze zgłaszaniem błędów. Konto zapamiętuje jedynie, że Twoje zgłoszenia są ze sobą powiązane.",
-  "settings.legal": "Informacje prawne",
+  "settings.legal": "Więcej",
   "settings.imprint": "Impressum (nota prawna)",
   "settings.privacy": "Polityka prywatności",
   "settings.sources": "Źródła i licencje",
@@ -368,11 +368,7 @@ export const pl: Messages = {
   "adminMail.publicUrl": "Adres aplikacji",
   "adminMail.publicUrlNote": "Do linków w e-mailach. Tylko https (lub localhost).",
   "adminMail.enabled": "Włącz wysyłkę",
-  "adminMail.provider": "Dostawca usługi pocztowej",
-  "adminMail.providerNote":
-    "Nazwa, siedziba i stan umowy powierzenia przetwarzania. Tak wygląda to w polityce prywatności; puste pole oznacza tam wskazanie braku.",
-  "adminMail.privacyNote":
-    "Gdy wysyłka działa, polityka prywatności wspomina o niej sama – pełna jest jednak dopiero z dostawcą podanym powyżej.",
+  "adminMail.privacyNote": "Gdy wysyłka działa, polityka prywatności wspomina o niej sama.",
   "adminMail.save": "Zapisz",
   "adminMail.test": "Wyślij test do mnie",
   "adminMail.clear": "Odrzuć dane",

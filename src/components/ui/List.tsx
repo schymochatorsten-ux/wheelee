@@ -196,21 +196,39 @@ export function SelectRow<T extends string>({
   const shown = options.find((option) => option.value === value);
 
   return (
-    <div className="relative flex min-h-12 items-center gap-3 px-4 py-2">
+    // Der Fokus liegt auf dem unsichtbaren Feld; sichtbar machen muss ihn
+    // deshalb die Zeile (`focus-within`), sonst sieht man bei Tastaturbedienung
+    // gar nichts.
+    <div className="relative flex min-h-12 items-center gap-3 px-4 py-2 focus-within:ring-2 focus-within:ring-blue-600 focus-within:ring-inset">
       <span className="min-w-0 flex-1 text-[15px]">{label}</span>
       <span className="flex shrink-0 items-center gap-1 text-[15px] text-neutral-600 dark:text-neutral-400">
         <span lang={shown?.lang}>{shown?.label ?? ""}</span>
         <Chevron />
       </span>
+      {/*
+        **Unsichtbar allein über `opacity`, nicht über `text-transparent`**
+        (gemeldet am 2026-11-11: Im aufgeklappten Menü war nur die Zeile zu
+        lesen, über der die Maus stand). Das Menü zeichnet der Browser selbst,
+        außerhalb der Seite – die Deckkraft des Feldes gilt dort nicht, seine
+        **Schriftfarbe** aber schon. Durchsichtige Schrift hieß: unsichtbare
+        Einträge, sichtbar nur der hervorgehobene, der die Farbe des Systems
+        bekommt. Die Farben stehen deshalb ausdrücklich am Feld und an jedem
+        Eintrag.
+      */}
       <select
         id={id}
         aria-label={ariaLabel ?? label}
         value={value}
         onChange={(event) => onChange(event.target.value as T)}
-        className="absolute inset-0 h-full w-full cursor-pointer appearance-none bg-transparent text-transparent opacity-0 focus-visible:opacity-100 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none"
+        className="absolute inset-0 h-full w-full cursor-pointer appearance-none bg-white text-neutral-900 opacity-0 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-900 dark:text-neutral-100"
       >
         {options.map((option) => (
-          <option key={option.value} value={option.value} lang={option.lang}>
+          <option
+            key={option.value}
+            value={option.value}
+            lang={option.lang}
+            className="bg-white text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100"
+          >
             {option.label}
           </option>
         ))}

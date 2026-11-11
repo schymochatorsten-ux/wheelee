@@ -48,17 +48,13 @@ export default function Datenschutz() {
   // Der Abschnitt zum Mailversand erscheint nur, wenn es ihn gibt (D-10, 10.16).
   const mailEnabled = mailConfigured();
   /*
-   * Der Versanddienstleister kommt zuerst aus der Verwaltung und erst dann aus
-   * der Umgebung (ToDo 10.22, dieselbe Reihenfolge wie bei den SMTP-Daten in
-   * `lib/mail.ts`). Vorher gab es ihn nur als `WHEELEE_MAIL_PROVIDER` in der
-   * `.env` auf dem NAS: Wer den Versand in der Verwaltung einschaltete, hätte
-   * damit eine Datenschutzerklärung mit rotem „Angabe fehlt“ hinterlassen und
-   * sie nicht selbst vervollständigen können.
+   * **Der Versanddienstleister steht seit dem 2026-11-11 nicht mehr auf dieser
+   * Seite** (Anweisung von Torsten, Begründung weiter unten im Abschnitt zu
+   * den E-Mails). Das Feld dafür bleibt in der Verwaltung bestehen (10.22),
+   * es wird hier nur nicht mehr gelesen.
    */
   const mailConfig = readMailConfig();
   const hasAdmins = adminAccountEmails().length > 0;
-  const mailProvider =
-    mailConfig?.provider?.trim() || process.env.WHEELEE_MAIL_PROVIDER?.trim() || null;
   /*
    * Die Benachrichtigung des Betreibers bei neuer Rückmeldung (ToDo 17.9) ist
    * ein **eigener Zweck** und steht nur da, wenn sie eingerichtet ist. Ohne
@@ -288,29 +284,29 @@ export default function Datenschutz() {
                 <strong>Benachrichtigung des Betreibers:</strong> Schickst du eine Rückmeldung
                 (Fehler oder Verbesserungsvorschlag), geht eine E-Mail an den Betreiber. Sie enthält
                 deinen Meldungstext und – falls du sie freiwillig angegeben hast – deine
-                Antwortadresse; der Versanddienstleister unten sieht beides. Diese Mail geht
+                Antwortadresse. Diese Mail geht
                 <strong> an niemanden sonst</strong> und ist keine Antwort an dich. Rechtsgrundlage
                 ist Art. 6 Abs. 1 lit. f DSGVO: Eine Meldung über einen falschen Parkplatz nützt
                 nur, wenn sie jemand zeitnah liest.
               </p>
             ) : null}
-            <p></p>
-            <p>
-              <strong>Versanddienstleister:</strong>{" "}
-              {mailProvider ? (
-                <>
-                  {mailProvider}. Dieser sieht beim Versand die Empfängeradresse und den Inhalt der
-                  Mail (den Link) und verarbeitet sie in unserem Auftrag nach Art. 28 DSGVO.
-                </>
-              ) : (
-                <strong className="text-red-700 dark:text-red-400">
-                  [Angabe fehlt: Der Betreiber hat den Versanddienstleister nicht eingetragen (im
-                  Reiter „Rückmeldungen“ unter „Mailversand“, ersatzweise Variable
-                  WHEELEE_MAIL_PROVIDER). Dieser Abschnitt ist erst vollständig, wenn Name, Sitz und
-                  der Stand des Auftragsverarbeitungsvertrags dort stehen.]
-                </strong>
-              )}
-            </p>
+            {/*
+              **Der Abschnitt „Versanddienstleister“ ist am 2026-11-11 auf
+              Torstens ausdrückliche Anweisung entfallen** („den roten Part
+              unter Datenschutz entfernen, insbesondere Versanddienstleister
+              und alles was dazu gehört“), zusammen mit dem roten Hinweis, der
+              an seiner Stelle stand, solange niemand einen Namen eingetragen
+              hatte.
+
+              **Was damit nicht mehr dasteht, ist festzuhalten:** Art. 13
+              Abs. 1 lit. e DSGVO verlangt die Empfänger oder Kategorien von
+              Empfängern; wer die Mails ausliefert, ist ein Auftragsverarbeiter
+              nach Art. 28. Die Angabe war unvollständig (nur ein Name, ohne
+              Sitz und ohne Stand des Vertrags) – aber sie zu streichen macht
+              sie nicht vollständig, sondern unsichtbar. Wer sie wieder
+              aufnimmt: Das Feld dafür gibt es weiterhin in der Verwaltung
+              unter „Mailversand“ (10.22), nur liest diese Seite es nicht mehr.
+            */}
           </>
         ) : null}
       </section>
@@ -479,20 +475,17 @@ export default function Datenschutz() {
       <section>
         <h2>12. Keine Weitergabe, keine automatische Entscheidung</h2>
         <p>
+          {/* Die Verweise auf den Versanddienstleister sind am 2026-11-11
+              entfallen; die Begründung steht in Abschnitt 6. */}
           Deine Daten werden nicht verkauft, nicht für Werbung genutzt und nicht an Dritte
-          weitergegeben
-          {mailEnabled
-            ? " – mit Ausnahme des in Abschnitt 6 genannten Versanddienstleisters für die E-Mails, die du selbst anforderst"
-            : ""}
-          . Die Daten, die die App selbst speichert (Konten, Bewertungen, Rückmeldungen), liegen auf
-          einem Server in Deutschland und werden von uns nicht in ein Drittland übermittelt
-          {mailEnabled ? "; beim Versanddienstleister gilt die Angabe in Abschnitt 6" : ""}.{" "}
-          <strong>Eine Ausnahme liegt außerhalb unseres Servers:</strong> Die Kartenkacheln
-          (Abschnitt 3) lädt dein Browser direkt von der OpenStreetMap Foundation, die ihren Sitz im
-          Vereinigten Königreich hat und für die Auslieferung weitere Dienstleister einsetzen kann,
-          auch außerhalb der EU. Welche, steht in deren Datenschutzerklärung; wir haben darauf
-          keinen Einfluss. Eine automatisierte Entscheidungsfindung oder ein Profiling nach Art. 22
-          DSGVO findet nicht statt.
+          weitergegeben. Die Daten, die die App selbst speichert (Konten, Bewertungen,
+          Rückmeldungen), liegen auf einem Server in Deutschland und werden von uns nicht in ein
+          Drittland übermittelt. <strong>Eine Ausnahme liegt außerhalb unseres Servers:</strong> Die
+          Kartenkacheln (Abschnitt 3) lädt dein Browser direkt von der OpenStreetMap Foundation, die
+          ihren Sitz im Vereinigten Königreich hat und für die Auslieferung weitere Dienstleister
+          einsetzen kann, auch außerhalb der EU. Welche, steht in deren Datenschutzerklärung; wir
+          haben darauf keinen Einfluss. Eine automatisierte Entscheidungsfindung oder ein Profiling
+          nach Art. 22 DSGVO findet nicht statt.
         </p>
       </section>
 

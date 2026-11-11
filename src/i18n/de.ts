@@ -155,7 +155,7 @@ export const de = {
   "settings.account": "Konto",
   "settings.accountNote":
     "Freiwillig. Die App funktioniert ohne Konto vollständig – auch das Melden von Fehlern. Ein Konto merkt sich nur, dass deine Rückmeldungen zusammengehören.",
-  "settings.legal": "Rechtliches",
+  "settings.legal": "Mehr",
   "settings.imprint": "Impressum",
   "settings.privacy": "Datenschutzerklärung",
   "settings.sources": "Quellen und Lizenzen",
@@ -365,11 +365,8 @@ export const de = {
   "adminMail.publicUrl": "Adresse der App",
   "adminMail.publicUrlNote": "Für die Links in den Mails. Nur https (oder localhost).",
   "adminMail.enabled": "Versand einschalten",
-  "adminMail.provider": "Versanddienstleister",
-  "adminMail.providerNote":
-    "Name, Sitz und Stand des Auftragsverarbeitungsvertrags. Steht so in der Datenschutzerklärung; bleibt das Feld leer, nennt sie dort einen Mangel.",
   "adminMail.privacyNote":
-    "Sobald der Versand läuft, nennt die Datenschutzerklärung ihn von selbst – vollständig ist sie aber erst mit dem Versanddienstleister oben.",
+    "Sobald der Versand läuft, nennt die Datenschutzerklärung ihn von selbst.",
   "adminMail.save": "Speichern",
   "adminMail.test": "Testmail an mich",
   "adminMail.clear": "Angaben verwerfen",

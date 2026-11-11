@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-11):** **251 Einträge** auf oberster Ebene –
-davon 225, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-11):** **253 Einträge** auf oberster Ebene –
+davon 227, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 26, die das nicht tun. _Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -2228,6 +2228,22 @@ die Angabe, die sonst beim nächsten Mal wieder zusammengesucht wird.
   - **Feldbeschriftungen sahen aus wie Gruppenüberschriften.** `AdminUsers`, `FeedbackAdmin` und `ReportedSpots` beschrifteten ihre Felder seit jeher klein und in Großbuchstaben. Seit die **Gruppen** genau so überschrieben sind (9.31), standen in derselben Ansicht zwei verschiedene Dinge in derselben Schrift: „RÜCKMELDUNGEN“ (die Gruppe) und „ART“ (ein Auswahlfeld darin). Die Feldbeschriftungen sind jetzt normale Schrift; großgeschrieben ist nur noch, was eine Gruppe benennt. **Kein Test hätte das gemeldet** – die Namen stimmten ja.
   - **Zwei Kästchen beim Mailversand sind Schalter geworden** („TLS von Anfang an“, „Versand einschalten“). Ein Kästchen neben Schaltern in derselben App ist dieselbe Frage in zwei Formen.
   - Nicht geändert: die Filter der Verwaltung bleiben einfache Auswahlfelder (kein `SelectRow`). Sie stehen zu zweit nebeneinander über einer Liste, die sie einengen – dort ist das Feld die Sache selbst, nicht der Wert einer Einstellung.
+
+---
+
+## 9.32 / 10.24 Befunde aus dem Telefontest (2026-11-11)
+
+- [x] 9.32 **Vier Mängel aus dem Durchgang auf dem Telefon behoben** (Torsten, 2026-11-11, mit zwei Bildschirmfotos). Alle vier sind beim Bauen nicht aufgefallen und von keinem Test gemeldet worden – sie betrafen, wie etwas aussieht und sich anfühlt, nicht, was es tut.
+  - **Das aufgeklappte Auswahlmenü zeigte nur die Zeile unter dem Finger.** Die Auswahlzeile legt ein unsichtbares `<select>` über die ganze Zeile (9.31); unsichtbar war es über `opacity-0` **und** `text-transparent`. Das Menü zeichnet aber der Browser selbst, außerhalb der Seite: Die **Deckkraft** gilt dort nicht, die **Schriftfarbe** schon. Also standen alle Einträge in durchsichtiger Schrift, und sichtbar war allein der hervorgehobene, den das System einfärbt. Jetzt stehen Vorder- und Hintergrundfarbe ausdrücklich am Feld und an jedem Eintrag. **Lehre:** Was der Browser außerhalb der Seite zeichnet, erbt Farben, aber keine Deckkraft – ein Element „unsichtbar“ zu machen, ist zweierlei.
+  - **Das Rückmeldefenster lag hinter den Zeilen darunter.** Es trug `z-[2000]`, half nichts: Der Knopf steht in einer Gruppe mit `backdrop-blur`, und ein Weichzeichner eröffnet einen eigenen Stapelzusammenhang – darin ist jede Zahl nur innerhalb der Gruppe groß. Ein höherer Wert hätte daran nichts geändert. Das Fenster hängt jetzt über ein Portal am `body`.
+  - **Die Seite scrollte hinter dem offenen Fenster weg.** `document.body` steht still, solange es offen ist; das Fenster selbst scrollt weiter, es ist höher als ein Telefon.
+  - **„Rechtliches“ heißt jetzt „Mehr“** (Wunsch: kein Name, der nach Recht klingt), in allen neun Sprachen. Sachlich richtiger ist es ohnehin: Die Gruppe führt neben Impressum und Datenschutzerklärung auch die Infoseite, das Städteverzeichnis, die Quellen und die Abdeckung.
+
+- [x] 10.24 **Versanddienstleister aus der Datenschutzerklärung entfernt** (ausdrückliche Anweisung von Torsten, 2026-11-11: „den roten Part unter Datenschutz entfernen, insbesondere Versanddienstleister und alles was dazu gehört“). Weg sind: der Abschnitt selbst, der rote Hinweis „Angabe fehlt“, der dort stand, solange niemand einen Namen eingetragen hatte, die zwei Verweise darauf in Abschnitt 12 und das Eingabefeld in der Verwaltung samt seinen beiden Beschriftungen in neun Sprachen.
+  - **Die Spalte `provider` bleibt in der Datenbank** (Migration 14). Schritte werden nur angehängt, nie geändert, und `saveMailConfig` schreibt einen bereits eingetragenen Namen unverändert zurück – wer die Angabe später wieder anzeigen will, hat sie noch.
+  - **Was damit nicht mehr dasteht, gehört festgehalten, weil es eine Anweisung gegen eine Pflichtangabe war:** Art. 13 Abs. 1 lit. e DSGVO verlangt Empfänger oder Kategorien von Empfängern, und wer die Mails ausliefert, ist Auftragsverarbeiter nach Art. 28. Der Einwand ist genannt und die Entscheidung steht; die Erklärung sagt jetzt nicht mehr, dass es keinen Versanddienstleister gibt – sie sagt dazu gar nichts. Das betrifft nur den Fall, dass der Mailversand eingeschaltet ist; ohne ihn war der Abschnitt ohnehin nie zu sehen.
+  - **Drei Unit-Tests haben die alte Zusage festgehalten** (Name aus der Umgebung, Name aus der Verwaltung, roter Hinweis bei fehlendem Namen). Sie prüfen jetzt das Gegenteil: dass **nirgends** ein Dienstleister auftaucht, auch nicht, wenn in der Verwaltung noch ein Name steht. Eine Zusage zu streichen, ohne den Test umzudrehen, hieße, sie später versehentlich wiederherzustellen.
+  - **Geprüft:** Typecheck, Lint, 724 Unit-Tests, 142 E2E-Tests; die Seite im Browser durchgesehen – kein „Versanddienstleister“, kein „Angabe fehlt“, nichts Rotes.
 
 ---
 

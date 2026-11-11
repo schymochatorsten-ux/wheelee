@@ -162,7 +162,7 @@ export const nl: Messages = {
   "settings.account": "Account",
   "settings.accountNote":
     "Optioneel. De app werkt ook zonder account volledig – inclusief fouten melden. Een account onthoudt alleen dat je meldingen bij elkaar horen.",
-  "settings.legal": "Juridische informatie",
+  "settings.legal": "Meer",
   "settings.imprint": "Impressum (colofon)",
   "settings.privacy": "Privacyverklaring",
   "settings.sources": "Bronnen en licenties",
@@ -366,11 +366,7 @@ export const nl: Messages = {
   "adminMail.publicUrl": "Adres van de app",
   "adminMail.publicUrlNote": "Voor de links in de e-mails. Alleen https (of localhost).",
   "adminMail.enabled": "Versturen inschakelen",
-  "adminMail.provider": "Verzenddienstverlener",
-  "adminMail.providerNote":
-    "Naam, vestigingsplaats en stand van de verwerkersovereenkomst. Zo staat het in de privacyverklaring; blijft het leeg, dan noemt die daar het gebrek.",
-  "adminMail.privacyNote":
-    "Zodra het versturen werkt, noemt de privacyverklaring dat vanzelf – volledig is zij pas met de dienstverlener hierboven.",
+  "adminMail.privacyNote": "Zodra het verzenden werkt, vermeldt de privacyverklaring dit vanzelf.",
   "adminMail.save": "Opslaan",
   "adminMail.test": "Testmail naar mij",
   "adminMail.clear": "Gegevens weggooien",

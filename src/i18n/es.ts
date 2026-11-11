@@ -164,7 +164,7 @@ export const es: Messages = {
   "settings.account": "Cuenta",
   "settings.accountNote":
     "Opcional. La app funciona por completo sin cuenta, también para notificar errores. Una cuenta solo recuerda que tus comentarios van juntos.",
-  "settings.legal": "Información legal",
+  "settings.legal": "Más",
   "settings.imprint": "Aviso legal (Impressum)",
   "settings.privacy": "Política de privacidad",
   "settings.sources": "Fuentes y licencias",
@@ -369,11 +369,8 @@ export const es: Messages = {
   "adminMail.publicUrl": "Dirección de la aplicación",
   "adminMail.publicUrlNote": "Para los enlaces de los correos. Solo https (o localhost).",
   "adminMail.enabled": "Activar el envío",
-  "adminMail.provider": "Proveedor del servicio de correo",
-  "adminMail.providerNote":
-    "Nombre, domicilio y estado del contrato de encargo de tratamiento. Es lo que aparece en la política de privacidad; si se deja vacío, allí se indica la carencia.",
   "adminMail.privacyNote":
-    "En cuanto el envío funciona, la política de privacidad lo menciona por sí sola, pero solo está completa con el proveedor indicado arriba.",
+    "En cuanto el envío funciona, la política de privacidad lo menciona por sí sola.",
   "adminMail.save": "Guardar",
   "adminMail.test": "Enviarme un correo de prueba",
   "adminMail.clear": "Descartar los datos",

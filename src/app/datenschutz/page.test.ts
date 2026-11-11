@@ -9,9 +9,14 @@ import { saveMailConfig } from "@/lib/db/mail-config";
 import Datenschutz from "./page";
 
 /**
- * Der Abschnitt zum Mailversand erscheint nur, wenn es ihn gibt (ToDo 10.16),
- * und fehlt der Anbieter, steht dort ein sichtbarer Hinweis statt eines
- * erfundenen Namens.
+ * Der Abschnitt zum Mailversand erscheint nur, wenn es ihn gibt (ToDo 10.16).
+ *
+ * **Der Versanddienstleister steht seit dem 2026-11-11 nicht mehr auf der
+ * Seite** (Anweisung von Torsten; Begründung in `Erledigt.md` unter 9.32).
+ * Die drei Fälle, die ihn geprüft haben – Name aus der Umgebung, Name aus der
+ * Verwaltung, roter Hinweis bei fehlendem Namen –, sind damit gegenstandslos
+ * und durch einen ersetzt: Er darf **nirgends mehr** auftauchen, auch nicht,
+ * wenn in der Verwaltung noch ein Name steht.
  *
  * Die Seite fragt Cookie und Kopfzeilen der Anfrage nach der Sprache; hier gibt
  * es keine Anfrage, also steht die Sprache fest auf Deutsch.
@@ -71,26 +76,26 @@ describe("Datenschutzerklärung und Mailversand", () => {
     expect(html).toContain("Vereinigten Königreich");
   });
 
-  it("nennt mit Mailversand den Anbieter, wenn er eingetragen ist", async () => {
+  it("nennt mit Mailversand den Abschnitt zu den E-Mails, aber keinen Dienstleister", async () => {
     mailAn();
     process.env.WHEELEE_MAIL_PROVIDER = "Beispiel Mail GmbH, Berlin";
     const html = await seite();
     expect(html).toContain("E-Mails der App");
-    expect(html).toContain("Beispiel Mail GmbH, Berlin");
+    expect(html).not.toContain("Beispiel Mail GmbH, Berlin");
+    expect(html).not.toContain("Versanddienstleister");
     expect(html).not.toContain("Angabe fehlt");
   });
 
-  it("zeigt mit Mailversand ohne Anbieter einen Hinweis, statt einen zu erfinden", async () => {
+  it("zeigt auch ohne eingetragenen Anbieter keinen roten Hinweis mehr", async () => {
     mailAn();
     const html = await seite();
-    expect(html).toContain("Angabe fehlt");
-    expect(html).toContain("WHEELEE_MAIL_PROVIDER");
+    expect(html).not.toContain("Angabe fehlt");
+    expect(html).not.toContain("WHEELEE_MAIL_PROVIDER");
   });
 
-  it("nimmt den Anbieter aus der Verwaltung vor dem aus der Umgebung", async () => {
-    // Der eigentliche Zweck von 10.22: Wer den Versand ohne Zugang zum NAS
-    // einschaltet, muss die Datenschutzerklärung auch ohne ihn vollständig
-    // bekommen.
+  it("nennt auch den in der Verwaltung eingetragenen Anbieter nicht", async () => {
+    // Die Angabe in der Verwaltung bleibt bestehen (10.22) – diese Seite
+    // liest sie seit dem 2026-11-11 nicht mehr.
     process.env.WHEELEE_MAIL_PROVIDER = "Alt GmbH, aus der Umgebung";
     saveMailConfig(
       {
@@ -109,8 +114,8 @@ describe("Datenschutzerklärung und Mailversand", () => {
     );
 
     const html = await seite();
-    expect(html).toContain("Neu GmbH, aus der Verwaltung");
+    expect(html).not.toContain("Neu GmbH, aus der Verwaltung");
     expect(html).not.toContain("Alt GmbH");
-    expect(html).not.toContain("Angabe fehlt");
+    expect(html).not.toContain("Versanddienstleister");
   });
 });
