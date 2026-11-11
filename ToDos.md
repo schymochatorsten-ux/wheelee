@@ -55,6 +55,10 @@ am 2026-11-09 erledigt. **Läuft dort etwas nicht wie erwartet, wird es ein
 eigener Punkt**; wo der Nachweis liegt und welche Fehlerbilder es gibt, steht
 in [Erledigt.md](Erledigt.md) bei 19.3 und in [deploy/Datenlauf.md](deploy/Datenlauf.md).
 
+**Abschnitt 21 (Bekanntmachen) kommt nach 12.17**, nicht davor: Wer die App
+empfiehlt, steht mit seinem Namen dafür ein – und der Durchgang von Hand ist
+das Einzige, was bisher niemand gemacht hat.
+
 **Zum Schluss steht 12.17** (abschließender Gesamttest), weil er sonst einen
 Stand prüft, den es danach nicht mehr gibt. _10.23 (Sicherheit), 12.16
 (Geschwindigkeit) und 12.18 (npm audit) sind am 2026-11-09 erledigt, 12.19
@@ -89,6 +93,18 @@ Was von 19 baubar war, ist gebaut (19.1, 19.4, 19.7, 19.8; Begründung in [Erled
 
 - [~] 19.13 **Google Search Console: eingerichtet, Aufnahme steht aus.** Am 2026-11-11 erledigt: Domain-Property bestätigt (TXT bei netcup) und `sitemap.xml` eingereicht, angenommen (Einzelheiten in [Erledigt.md](Erledigt.md)). **Offen ist nur das Nachsehen:** in einigen Tagen unter „Seiten“ prüfen, ob die Stadtseiten aufgenommen sind (19.12), und was dort als Grund für Ausschlüsse steht. **Der TXT-Eintrag darf nicht gelöscht werden**, sonst verfällt die Bestätigung.
 - [!] 19.5 **„Nur OSM“ und „aufgehoben gemeldet“ als OpenStreetMap-Hinweise zurückgeben.** Geschieht von Hand in OSM-Notizen mit eigenem Konto; die Liste der Kandidaten steht in `data/_validierung.md`.
+
+## 21. Bekanntmachen und Kontakte
+
+Die App hilft nur, wer sie kennt. Bisher gibt es dafür allein die Suchmaschine
+(19.12, 19.13) – 117 Besucher im letzten Monat. **Alles hier ist Arbeit von
+Torsten** (Absender, Adresse und Stimme gehören ihm); vorbereiten lassen sich
+Textentwürfe, Adresslisten und Zahlen.
+
+- [!] 21.1 **Behindertenverbände ansprechen.** Sozialverband VdK und SoVD (beide mit Landes- und Kreisverbänden), BSK, Bundesverband Selbsthilfe Körperbehinderter, Lebenshilfe, örtliche Behindertenbeiräte. Ziel: ein Hinweis in Mitgliederzeitschrift, Newsletter oder auf der Website – und, wichtiger, **Rückmeldungen zu falschen Daten** von Leuten, die die Plätze täglich brauchen. Vor der ersten Mail zu klären: unter welchem Absender, und ob eine Antwort an dich oder an eine Projektadresse geht.
+- [!] 21.2 **Politik und Verwaltung.** Behindertenbeauftragte von Bund, Ländern und größeren Städten; dazu die Straßenverkehrsbehörden, die ohnehin für 2d.8a angeschrieben werden. Zwei Anliegen, die sich nicht vermischen sollten: die App bekannt machen – und amtliche Listen als offene Daten erbitten (das trägt direkt zum Bestand bei, siehe `data/_quellen-status.md`).
+- [!] 21.3 **Was vor dem ersten Kontakt stehen muss.** Eine Seite, die erklärt, was wheelee ist und was es nicht ist (es gibt `/info`, 19.11 – als Grundlage prüfen), die Zahlen zur Abdeckung (`/abdeckung`) und eine Antwortadresse, die gelesen wird. Ohne das wird aus einer Anfrage eine Rückfrage.
+- [ ] 21.4 **Reihenfolge und Maß.** Erst ein oder zwei Verbände anschreiben und abwarten, was zurückkommt – dann breiter. Eine Rundmail an fünfzig Adressen, die niemand beantworten kann, verbrennt genau die Kontakte, auf die es ankommt. Was geantwortet wurde, gehört nach `Erledigt.md`, nicht in den Kopf.
 
 ---
 
