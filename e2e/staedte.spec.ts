@@ -24,21 +24,38 @@ test.describe("Städteliste", () => {
     expect(html).not.toContain('"attribution":"OpenStreetMap-Mitwirkende');
   });
 
-  test("die Auswahl für den Vorab-Download füllt sich nach dem Laden", async ({ page }) => {
+  /*
+   * Seit 9.31 gibt es für den Vorab-Download keine Auswahlliste mehr, sondern
+   * ein Feld mit Vorschlägen. Geprüft wird dieselbe Sache wie vorher: dass die
+   * nachgeladenen Städte ankommen (19.9) und dass die Eingabe sie eingrenzt
+   * (2e.14) – nur eben an dem Bedienelement, das es jetzt gibt.
+   */
+  test("die Vorschläge kommen aus den nachgeladenen Städten", async ({ page }) => {
     await page.goto("/");
     await page.getByRole("tab", { name: "Einstellungen" }).click();
+
+    const feld = page.getByRole("combobox", { name: "Stadt" });
     // Die Seite trägt nur die Standardstadt; der Rest kommt von /api/cities.
-    await expect.poll(() => page.locator("select option").count(), { timeout: 15_000 }).toBeGreaterThan(100);
+    // „Köln" steht nicht im ersten HTML – ein Vorschlag dazu beweist also,
+    // dass die Liste nachgeladen wurde.
+    await feld.fill("Köln");
+    await expect(page.getByTestId("offline-vorschlag-koeln")).toBeVisible({ timeout: 15_000 });
   });
 
-  test("die Auswahl lässt sich mit dem Suchfeld eingrenzen (ToDo 2e.14)", async ({ page }) => {
+  test("die Vorschläge beginnen am Wortanfang und bleiben wenige (ToDo 2e.14)", async ({
+    page,
+  }) => {
     await page.goto("/");
     await page.getByRole("tab", { name: "Einstellungen" }).click();
-    await expect.poll(() => page.locator("select option").count(), { timeout: 15_000 }).toBeGreaterThan(100);
 
-    await page.getByRole("searchbox", { name: "Stadt suchen" }).fill("Köln");
-    await expect.poll(() => page.locator("select option").count()).toBeLessThan(20);
-    await expect(page.locator("select option", { hasText: "Köln" }).first()).toBeAttached();
+    const feld = page.getByRole("combobox", { name: "Stadt" });
+    await feld.fill("Mo");
+    // Auf die Vorschlagsliste eingegrenzt: Die Auswahlzeilen für Sprache und
+    // Karten-App sind echte `<select>` und bringen eigene Optionen mit.
+    const vorschlaege = page.getByRole("listbox", { name: "Vorschläge" }).getByRole("option");
+    await expect(vorschlaege.first()).toBeVisible({ timeout: 15_000 });
+    // Höchstens acht, und der erste beginnt mit der Eingabe.
+    await expect.poll(() => vorschlaege.count()).toBeLessThanOrEqual(8);
+    await expect(vorschlaege.first()).toHaveText(/^Mo/u);
   });
-
 });

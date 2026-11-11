@@ -11,13 +11,16 @@ import { herkunft } from "./herkunft";
  * Schnittstelle mit einer gewöhnlichen Browserkennung geschickt.
  */
 
-const BROWSER =
-  "Mozilla/5.0 (X11; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0";
+const BROWSER = "Mozilla/5.0 (X11; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0";
 
-test("die Schnittstelle antwortet immer gleich, ob gezählt wird oder nicht", async ({ request }) => {
+test("die Schnittstelle antwortet immer gleich, ob gezählt wird oder nicht", async ({
+  request,
+}) => {
   const mensch = await request.post("/api/visit", { headers: { "User-Agent": BROWSER } });
   const roboter = await request.post("/api/visit", {
-    headers: { "User-Agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" },
+    headers: {
+      "User-Agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+    },
   });
   expect(mensch.status()).toBe(204);
   expect(roboter.status()).toBe(204);
@@ -61,7 +64,11 @@ test("ein Browser ohne Automatisierung meldet sich genau einmal je Seitenaufruf,
   await context.close();
 });
 
-test("ein Administrator sieht die Zahlen in der Verwaltung", async ({ playwright, browser, baseURL }) => {
+test("ein Administrator sieht die Zahlen in der Verwaltung", async ({
+  playwright,
+  browser,
+  baseURL,
+}) => {
   const api = await playwright.request.newContext({ baseURL, extraHTTPHeaders: herkunft() });
   await api.post("/api/visit", { headers: { "User-Agent": BROWSER } });
 

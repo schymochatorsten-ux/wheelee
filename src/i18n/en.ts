@@ -124,27 +124,19 @@ export const en: Messages = {
   "maps.fallback.short": "Maps app",
 
   "settings.location": "Location",
-  "settings.locationNote":
-    "When it opens, the app asks for your location to show the nearest parking space. The location stays on the device. With an account the choice applies on every device – the permission itself is granted by your browser, once per device.",
+  "settings.locationNote": "Your location stays on the device.",
   "settings.locationOn": "Use location",
-  "settings.locationOff": "Do not use",
   "settings.appearance": "Appearance",
-  "settings.appearanceNote":
-    "Dark is the default – the app is often used in the car and in the dark.",
   "settings.language": "Language",
-  "settings.languageNote":
-    "Your browser’s language is suggested first. With an account, your choice applies on all devices.",
   "settings.languageChoose": "Choose language",
-  "settings.languageUnreviewed":
-    "The translations were produced by machine and checked several times by machine, not by native speakers. The German version is authoritative; on site, the signs and markings always apply.",
-  "settings.mapsApp": "Maps app for navigation",
-  "settings.mapsAppNote":
-    "What “Start navigation” opens. Without a choice of your own this depends on the device – here that would be {detected}.",
+  "settings.languageUnreviewed": "Machine-translated. The German version prevails.",
+  "settings.mapsApp": "Navigation",
+  "settings.mapsAppAuto": "Automatic ({detected})",
   "settings.mapsAppChoose": "Choose maps app",
-  "settings.mapsAppDeviceOnly": "The choice only applies on this device – even with an account.",
-  "offline.heading": "Offline: take parking data with you",
-  "offline.note":
-    "Downloads a city’s parking data to this device so that it is fully available in car parks and dead spots. Map tiles are not included – without a connection the map underneath stays grey, but markers and the list work.",
+  "offline.heading": "Offline",
+  "offline.note": "A city's parking data on your device. Offline, only the map stays grey.",
+  "offline.suggestions": "Suggestions",
+  "offline.pick": "Enter a city",
   "offline.cityLabel": "City",
   "offline.download": "Download",
   "offline.downloading": "Loading …",
@@ -165,9 +157,7 @@ export const en: Messages = {
     "The data is more than six months old. Parking spaces may have changed – please check on site.",
   "offline.staleCopy": "The copy is more than a month old. Please update when you are online.",
   "offline.total": "Used in total: {size}",
-  "settings.feedback": "Report an error or send a suggestion",
-  "settings.feedbackNote":
-    "Something wrong? Is a parking space missing, or gone? Feedback is the only source that notices such changes. If you like, you can give an email address – then we will reply to you.",
+  "settings.feedback": "Feedback",
   "settings.account": "Account",
   "settings.accountNote":
     "Optional. The app works fully without an account – including reporting errors. An account only remembers that your feedback belongs together.",
@@ -178,11 +168,11 @@ export const en: Messages = {
   "settings.coverage": "Data coverage",
   "settings.info": "About wheelee",
   "settings.cities": "All cities",
-  "city.synonyms": "Also called disabled parking bays, blue badge bays or wheelchair parking. These are spaces that require the blue EU parking card.",
+  "city.synonyms":
+    "Also called disabled parking bays, blue badge bays or wheelchair parking. These are spaces that require the blue EU parking card.",
   "info.lead":
     "wheelee helps people with mobility impairments quickly find the nearest disabled parking space.",
-  "info.reach":
-    "People have already opened wheelee {count} times to find a parking space.",
+  "info.reach": "People have already opened wheelee {count} times to find a parking space.",
   "info.goal.title": "What it is about",
   "info.goal.text":
     "If you depend on a disabled parking space, you cannot just drive around town hoping for luck. wheelee shows public disabled parking spaces across Germany on a map, highlights the one nearest to you and opens the route in your maps app.",
@@ -329,10 +319,12 @@ export const en: Messages = {
   "admin.unauthorized": "Not signed in or not authorised.",
   "admin.noConnection": "No connection.",
   "api.usernameTaken": "This username is already taken.",
-  "api.usernameInvalid": "Username: 3 to 32 characters, only letters, digits, dot, underscore and hyphen.",
+  "api.usernameInvalid":
+    "Username: 3 to 32 characters, only letters, digits, dot, underscore and hyphen.",
   "api.emailTaken": "This email address already belongs to an account.",
   "api.invalidEmail": "This email address does not look right.",
-  "api.passwordSelf": "Your own password is changed in the account settings – there with the current one.",
+  "api.passwordSelf":
+    "Your own password is changed in the account settings – there with the current one.",
   "users.edit": "Change",
   "users.editClose": "Done",
   "users.username": "Username",
@@ -340,23 +332,27 @@ export const en: Messages = {
   "users.email": "Email address",
   "users.emailNote": "After the change the address counts as unconfirmed until someone proves it.",
   "users.newPassword": "New start password",
-  "users.newPasswordNote": "Set immediately. At the next sign-in the person must choose their own; until then the account grants no admin rights. All sessions end.",
+  "users.newPasswordNote":
+    "Set immediately. At the next sign-in the person must choose their own; until then the account grants no admin rights. All sessions end.",
   "users.apply": "Apply",
   "users.saved": "Saved.",
   "users.unverified": "Address unconfirmed",
   "users.startPassword": "Start password",
   "users.created": "created {date}",
   "adminMail.title": "Sending mail",
-  "adminMail.intro": "For “forgot password” and changing the email address. Without these details both functions are hidden.",
+  "adminMail.intro":
+    "For “forgot password” and changing the email address. Without these details both functions are hidden.",
   "adminMail.notify": "Notify about new feedback at",
   "adminMail.notifyNone": "no notification",
-  "adminMail.notifyNote": "Every new fault report or suggestion sends an email at once. Subject: “Wheelee Fehler” or “Wheelee Verbesserungsvorschlag”. Leave empty to send to all admin accounts.",
+  "adminMail.notifyNote":
+    "Every new fault report or suggestion sends an email at once. Subject: “Wheelee Fehler” or “Wheelee Verbesserungsvorschlag”. Leave empty to send to all admin accounts.",
   "adminMail.notifyInvalid": "The notification address does not look right.",
   "adminMail.statusOn": "Sending is active.",
   "adminMail.statusOff": "Sending is off.",
   "adminMail.fromEnv": "Details from the server environment",
   "adminMail.fromDatabase": "Details from this page",
-  "adminMail.envOverridden": "The server environment also holds details. The ones saved here apply.",
+  "adminMail.envOverridden":
+    "The server environment also holds details. The ones saved here apply.",
   "adminMail.host": "SMTP server",
   "adminMail.port": "Port",
   "adminMail.secure": "TLS from the start (otherwise only on port 465)",
@@ -370,8 +366,10 @@ export const en: Messages = {
   "adminMail.publicUrlNote": "For the links in the emails. Only https (or localhost).",
   "adminMail.enabled": "Switch sending on",
   "adminMail.provider": "Mail service provider",
-  "adminMail.providerNote": "Name, registered office and status of the data processing agreement. This is what the privacy policy shows; left empty, it names the gap there.",
-  "adminMail.privacyNote": "Once sending is active the privacy policy mentions it by itself – but it is only complete with the service provider above.",
+  "adminMail.providerNote":
+    "Name, registered office and status of the data processing agreement. This is what the privacy policy shows; left empty, it names the gap there.",
+  "adminMail.privacyNote":
+    "Once sending is active the privacy policy mentions it by itself – but it is only complete with the service provider above.",
   "adminMail.save": "Save",
   "adminMail.test": "Send a test to me",
   "adminMail.clear": "Discard details",
@@ -380,7 +378,8 @@ export const en: Messages = {
   "adminMail.loadFailed": "The details could not be loaded.",
   "adminMail.saveFailed": "Saving failed.",
   "adminMail.testFailed": "Sending failed.",
-  "adminMail.testSent": "The server accepted the email to {email}. Whether it arrives is only shown by the mailbox.",
+  "adminMail.testSent":
+    "The server accepted the email to {email}. Whether it arrives is only shown by the mailbox.",
   "adminMail.notConfigured": "Sending is not set up.",
   "adminMail.invalid": "The details could not be read.",
   "adminMail.hostMissing": "An SMTP server is required.",
@@ -465,7 +464,8 @@ export const en: Messages = {
   "search.retry": "Retry",
   "search.recent": "Recent searches",
   "search.suggestions": "Suggestions",
-  "search.unavailableLocal": "Online search is currently unavailable. Showing matches from our data and your recent destinations.",
+  "search.unavailableLocal":
+    "Online search is currently unavailable. Showing matches from our data and your recent destinations.",
   "search.forget": "Remove from recent destinations",
   "search.kind.city": "Place",
   "search.kind.street": "Street",
@@ -523,18 +523,13 @@ export const en: Messages = {
   "meta.title": "wheelee – disabled parking",
   "meta.description":
     "Disabled parking spaces across Germany on one map: find the nearest space for people with mobility impairments, with distance and navigation. Free, no sign-up, mobile.",
-  "city.title":
-    "Disabled parking in {city}",
-  "city.intro":
-    "{spots} locations with {spaces} parking spaces in {city}.",
-  "city.official":
-    "The list comes from the city administration.",
+  "city.title": "Disabled parking in {city}",
+  "city.intro": "{spots} locations with {spaces} parking spaces in {city}.",
+  "city.official": "The list comes from the city administration.",
   "city.crowd":
     "The data comes from OpenStreetMap and is incomplete; a missing entry does not mean there are no spaces there.",
-  "city.list":
-    "Locations in {city}",
-  "city.openMap":
-    "Open on the map",
+  "city.list": "Locations in {city}",
+  "city.openMap": "Open on the map",
   "city.description":
     "Disabled parking in {city}: {spots} locations with {spaces} spaces on a map, with distance and navigation. Free, no sign-up.",
 
@@ -614,16 +609,20 @@ export const en: Messages = {
   "invitation.toApp": "Go to the map",
 
   // Benutzerverwaltung (ToDo 18.3)
-  "api.adminCannotChange": "That is not possible: at least one active admin account must remain, and you delete your own account in the account settings.",
-  "api.lastAdminCannotDelete": "Your account is the last active admin account and cannot be deleted. Make someone else an admin first.",
+  "api.adminCannotChange":
+    "That is not possible: at least one active admin account must remain, and you delete your own account in the account settings.",
+  "api.lastAdminCannotDelete":
+    "Your account is the last active admin account and cannot be deleted. Make someone else an admin first.",
   "users.title": "Users and invitations",
-  "users.intro": "Admins manage accounts and invite other admins. The app does not send invitations by e-mail: you get a link that you pass on yourself.",
+  "users.intro":
+    "Admins manage accounts and invite other admins. The app does not send invitations by e-mail: you get a link that you pass on yourself.",
   "users.inviteEmail": "E-mail address for the invitation",
   "users.inviteRole": "Role",
   "users.role.admin": "Admin",
   "users.role.user": "User",
   "users.inviteSubmit": "Create invitation link",
-  "users.inviteCreated": "Invitation link for {email}. It is shown only now and is valid for seven days – pass it on yourself.",
+  "users.inviteCreated":
+    "Invitation link for {email}. It is shown only now and is valid for seven days – pass it on yourself.",
   "users.copy": "Copy link",
   "users.copied": "Copied",
   "users.accounts": "Accounts",
@@ -683,7 +682,8 @@ export const en: Messages = {
   "account.forgotSent":
     "If there is an account for this address, we have sent a link. It is valid for one hour.",
   "reset.title": "Set a new password",
-  "reset.intro": "Choose a new password. You will then be signed out everywhere and sign in again with it.",
+  "reset.intro":
+    "Choose a new password. You will then be signed out everywhere and sign in again with it.",
   "reset.password": "New password",
   "reset.submit": "Save password",
   "reset.missing": "This link contains no token.",

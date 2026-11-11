@@ -25,7 +25,8 @@ export const pt: Messages = {
 
   "share.title": "Lugar de estacionamento para pessoas com deficiência {name}",
   "share.text": "Lugar de estacionamento para pessoas com deficiência: {name}",
-  "share.textCount": "Lugar de estacionamento para pessoas com deficiência: {name} ({count} lugares)",
+  "share.textCount":
+    "Lugar de estacionamento para pessoas com deficiência: {name} ({count} lugares)",
   "share.copied": "Ligação copiada",
   "share.copyFailed": "Não foi possível copiar",
   "share.share": "Partilhar lugar de estacionamento",
@@ -49,7 +50,8 @@ export const pt: Messages = {
   "list.spacesMany": "{count} lugares",
   "list.nearby": "Estacionamento nas proximidades",
   "list.nearest": "Lugares de estacionamento mais próximos",
-  "list.noLocation": "Sem acesso à sua localização, a distância é calculada a partir do centro da cidade.",
+  "list.noLocation":
+    "Sem acesso à sua localização, a distância é calculada a partir do centro da cidade.",
   "list.showDetails": "Mostrar detalhes",
   "list.unlocated": "Sem posição exata ({count})",
   "list.unlocatedNote":
@@ -124,27 +126,19 @@ export const pt: Messages = {
   "maps.fallback.short": "Aplicação de mapas",
 
   "settings.location": "Localização",
-  "settings.locationNote":
-    "Ao abrir, a aplicação pede a sua localização para mostrar o lugar de estacionamento mais próximo. A localização fica no dispositivo. Com conta, a escolha vale em todos os dispositivos; a autorização em si é dada pelo navegador, uma vez em cada dispositivo.",
+  "settings.locationNote": "A localização fica no dispositivo.",
   "settings.locationOn": "Usar a localização",
-  "settings.locationOff": "Não usar",
   "settings.appearance": "Aspeto",
-  "settings.appearanceNote":
-    "A predefinição é escuro – a aplicação é muitas vezes usada no carro e no escuro.",
   "settings.language": "Idioma",
-  "settings.languageNote":
-    "Primeiro é sugerido o idioma do seu navegador. Com uma conta, a sua escolha vale em todos os dispositivos.",
   "settings.languageChoose": "Escolher idioma",
-  "settings.languageUnreviewed":
-    "As traduções foram feitas por máquina e verificadas várias vezes por máquina, não por falantes nativos. Prevalece a versão alemã; no local, prevalece sempre a sinalização.",
-  "settings.mapsApp": "Aplicação de mapas para navegação",
-  "settings.mapsAppNote":
-    "O que “Iniciar navegação” abre. Sem escolha própria, depende do dispositivo – aqui seria: {detected}.",
+  "settings.languageUnreviewed": "Tradução automática. Prevalece a versão alemã.",
+  "settings.mapsApp": "Navegação",
+  "settings.mapsAppAuto": "Automático ({detected})",
   "settings.mapsAppChoose": "Escolher aplicação de mapas",
-  "settings.mapsAppDeviceOnly": "A escolha vale apenas neste dispositivo – mesmo com uma conta.",
-  "offline.heading": "Offline: levar os dados de estacionamento consigo",
-  "offline.note":
-    "Guarda neste dispositivo os dados de estacionamento de uma cidade, para ficarem completos em parques cobertos e sem rede. Os mosaicos do mapa não estão incluídos – sem ligação o mapa de fundo fica cinzento, mas os marcadores e a lista funcionam.",
+  "offline.heading": "Sem rede",
+  "offline.note": "Os dados de uma cidade no dispositivo. Sem rede, só o mapa fica cinzento.",
+  "offline.suggestions": "Sugestões",
+  "offline.pick": "Escreve uma cidade",
   "offline.cityLabel": "Cidade",
   "offline.download": "Transferir",
   "offline.downloading": "A transferir …",
@@ -165,9 +159,7 @@ export const pt: Messages = {
     "Os dados têm mais de meio ano. Os lugares de estacionamento podem ter mudado – confirme no local.",
   "offline.staleCopy": "A cópia tem mais de um mês. Atualize-a quando tiver ligação.",
   "offline.total": "Total ocupado: {size}",
-  "settings.feedback": "Comunicar um erro ou dar uma sugestão",
-  "settings.feedbackNote":
-    "Algo não está certo? Falta um lugar de estacionamento ou já não existe? As comunicações são a única fonte que repara em tais mudanças. Se quiser, pode indicar um endereço de e-mail – assim podemos responder.",
+  "settings.feedback": "Comentários",
   "settings.account": "Conta",
   "settings.accountNote":
     "Opcional. A aplicação funciona totalmente também sem conta – incluindo comunicar erros. Uma conta apenas associa entre si as suas comunicações.",
@@ -178,11 +170,11 @@ export const pt: Messages = {
   "settings.coverage": "Cobertura de dados",
   "settings.info": "Sobre o wheelee",
   "settings.cities": "Todas as cidades",
-  "city.synonyms": "Também chamados lugares para deficientes, estacionamento reservado ou lugares para cadeira de rodas. São lugares para os quais é necessário o dístico europeu de estacionamento.",
+  "city.synonyms":
+    "Também chamados lugares para deficientes, estacionamento reservado ou lugares para cadeira de rodas. São lugares para os quais é necessário o dístico europeu de estacionamento.",
   "info.lead":
     "O wheelee ajuda pessoas com mobilidade reduzida a encontrar rapidamente o lugar de estacionamento para pessoas com deficiência mais próximo.",
-  "info.reach":
-    "O wheelee já foi aberto {count} vezes para encontrar um lugar de estacionamento.",
+  "info.reach": "O wheelee já foi aberto {count} vezes para encontrar um lugar de estacionamento.",
   "info.goal.title": "Do que se trata",
   "info.goal.text":
     "Quem precisa de um lugar para pessoas com deficiência não pode andar às voltas pela cidade à espera de sorte. O wheelee mostra num mapa os lugares públicos de toda a Alemanha, destaca o mais próximo da sua localização e abre o percurso na sua aplicação de mapas.",
@@ -230,7 +222,8 @@ export const pt: Messages = {
   "myRatings.loadFailed": "Não foi possível carregar as suas avaliações.",
   "myRatings.date": "em {date}",
   "myRatings.notInStock": "Já não consta dos dados",
-  "myRatings.notInStockNote": "Não consta da última importação. Pode retirar o seu voto mesmo assim.",
+  "myRatings.notInStockNote":
+    "Não consta da última importação. Pode retirar o seu voto mesmo assim.",
   "myRatings.showOnMap": "Mostrar no mapa",
   "myRatings.withdraw": "Retirar",
   "myRatings.withdrawLabel": "Retirar o voto em {name}",
@@ -248,7 +241,8 @@ export const pt: Messages = {
     "Os lugares de estacionamento que guardou, o mais recente primeiro. A distância é em linha reta a partir da sua localização.",
   "myFavorites.none":
     "Ainda nada guardado. Na vista de detalhes de um lugar de estacionamento encontra o botão “Guardar lugar de estacionamento”.",
-  "myFavorites.loadFailed": "Não foi possível carregar os seus lugares de estacionamento guardados.",
+  "myFavorites.loadFailed":
+    "Não foi possível carregar os seus lugares de estacionamento guardados.",
   "myFavorites.distance": "{distance} daqui",
   "myFavorites.notInStock": "Já não consta dos dados",
   "myFavorites.notInStockNote": "Não consta da última importação. Pode remover esta entrada.",
@@ -293,9 +287,9 @@ export const pt: Messages = {
     "Este endereço de e-mail parece incorreto. Corrija-o ou deixe o campo vazio.",
   "feedback.offline": "Sem ligação. A comunicação não foi enviada – tente novamente mais tarde.",
   "feedback.thanks": "Agradecemos – a comunicação foi recebida.",
-  "feedback.willReply":
-    "Vamos analisá-la e responder por e-mail se houver algo a dizer.",
-  "feedback.noReply": "Não foi indicado nenhum endereço, por isso não receberá resposta – a sua comunicação ajuda na mesma.",
+  "feedback.willReply": "Vamos analisá-la e responder por e-mail se houver algo a dizer.",
+  "feedback.noReply":
+    "Não foi indicado nenhum endereço, por isso não receberá resposta – a sua comunicação ajuda na mesma.",
   "feedback.again": "Comunicar outra coisa",
   "feedback.done": "Concluído",
   "feedback.whatAbout": "De que se trata?",
@@ -329,7 +323,8 @@ export const pt: Messages = {
   "admin.unauthorized": "Sem sessão iniciada ou sem permissões.",
   "admin.noConnection": "Sem ligação.",
   "api.usernameTaken": "Este nome de utilizador já está ocupado.",
-  "api.usernameInvalid": "Nome de utilizador: 3 a 32 caracteres, apenas letras, algarismos, ponto, sublinhado e hífen.",
+  "api.usernameInvalid":
+    "Nome de utilizador: 3 a 32 caracteres, apenas letras, algarismos, ponto, sublinhado e hífen.",
   "api.emailTaken": "Este endereço de e-mail já pertence a uma conta.",
   "api.invalidEmail": "Este endereço de e-mail não parece correto.",
   "api.passwordSelf": "A palavra-passe própria altera-se nas definições da conta – aí com a atual.",
@@ -338,25 +333,30 @@ export const pt: Messages = {
   "users.username": "Nome de utilizador",
   "users.usernameNone": "sem nome – entrada pelo endereço",
   "users.email": "Endereço de e-mail",
-  "users.emailNote": "Depois da alteração o endereço conta como não confirmado até alguém o comprovar.",
+  "users.emailNote":
+    "Depois da alteração o endereço conta como não confirmado até alguém o comprovar.",
   "users.newPassword": "Nova palavra-passe inicial",
-  "users.newPasswordNote": "É definida de imediato. Na entrada seguinte a pessoa tem de escolher a sua; até lá a conta não dá direitos de administração. Todas as sessões terminam.",
+  "users.newPasswordNote":
+    "É definida de imediato. Na entrada seguinte a pessoa tem de escolher a sua; até lá a conta não dá direitos de administração. Todas as sessões terminam.",
   "users.apply": "Aplicar",
   "users.saved": "Guardado.",
   "users.unverified": "Endereço não confirmado",
   "users.startPassword": "Palavra-passe inicial",
   "users.created": "criada em {date}",
   "adminMail.title": "Envio de e-mail",
-  "adminMail.intro": "Para «esqueci-me da palavra-passe» e a alteração do endereço de e-mail. Sem estes dados, ambas as funções estão ocultas.",
+  "adminMail.intro":
+    "Para «esqueci-me da palavra-passe» e a alteração do endereço de e-mail. Sem estes dados, ambas as funções estão ocultas.",
   "adminMail.notify": "Avisar de novo comentário para",
   "adminMail.notifyNone": "sem aviso",
-  "adminMail.notifyNote": "Cada novo erro ou sugestão envia logo um e-mail. Assunto: «Wheelee Fehler» ou «Wheelee Verbesserungsvorschlag». Deixe vazio para enviar a todas as contas de administração.",
+  "adminMail.notifyNote":
+    "Cada novo erro ou sugestão envia logo um e-mail. Assunto: «Wheelee Fehler» ou «Wheelee Verbesserungsvorschlag». Deixe vazio para enviar a todas as contas de administração.",
   "adminMail.notifyInvalid": "O endereço para o aviso não parece correto.",
   "adminMail.statusOn": "O envio está ativo.",
   "adminMail.statusOff": "O envio está desligado.",
   "adminMail.fromEnv": "Dados do ambiente do servidor",
   "adminMail.fromDatabase": "Dados desta página",
-  "adminMail.envOverridden": "O ambiente do servidor também contém dados. Aplicam-se os guardados aqui.",
+  "adminMail.envOverridden":
+    "O ambiente do servidor também contém dados. Aplicam-se os guardados aqui.",
   "adminMail.host": "Servidor SMTP",
   "adminMail.port": "Porta",
   "adminMail.secure": "TLS desde o início (caso contrário, apenas na porta 465)",
@@ -364,14 +364,17 @@ export const pt: Messages = {
   "adminMail.password": "Palavra-passe",
   "adminMail.passwordKept": "inalterada",
   "adminMail.passwordNone": "nenhuma guardada",
-  "adminMail.passwordNote": "Deixar vazio significa inalterada. A palavra-passe guardada nunca é mostrada.",
+  "adminMail.passwordNote":
+    "Deixar vazio significa inalterada. A palavra-passe guardada nunca é mostrada.",
   "adminMail.from": "Endereço do remetente",
   "adminMail.publicUrl": "Endereço da aplicação",
   "adminMail.publicUrlNote": "Para as ligações nos e-mails. Apenas https (ou localhost).",
   "adminMail.enabled": "Ligar o envio",
   "adminMail.provider": "Prestador do serviço de correio",
-  "adminMail.providerNote": "Nome, sede e estado do contrato de subcontratação. É o que consta da política de privacidade; se ficar vazio, é aí indicada a falta.",
-  "adminMail.privacyNote": "Assim que o envio funciona, a política de privacidade menciona-o por si própria – mas só fica completa com o prestador acima.",
+  "adminMail.providerNote":
+    "Nome, sede e estado do contrato de subcontratação. É o que consta da política de privacidade; se ficar vazio, é aí indicada a falta.",
+  "adminMail.privacyNote":
+    "Assim que o envio funciona, a política de privacidade menciona-o por si própria – mas só fica completa com o prestador acima.",
   "adminMail.save": "Guardar",
   "adminMail.test": "Enviar um teste para mim",
   "adminMail.clear": "Descartar os dados",
@@ -380,7 +383,8 @@ export const pt: Messages = {
   "adminMail.loadFailed": "Não foi possível carregar os dados.",
   "adminMail.saveFailed": "Não foi possível guardar.",
   "adminMail.testFailed": "O envio falhou.",
-  "adminMail.testSent": "O servidor aceitou o e-mail para {email}. Se chega, só a caixa de correio o mostra.",
+  "adminMail.testSent":
+    "O servidor aceitou o e-mail para {email}. Se chega, só a caixa de correio o mostra.",
   "adminMail.notConfigured": "O envio não está configurado.",
   "adminMail.invalid": "Não foi possível ler os dados.",
   "adminMail.hostMissing": "Sem um servidor SMTP não funciona.",
@@ -417,7 +421,8 @@ export const pt: Messages = {
   "reported.lastReported": "Última comunicação",
   "reported.lastConfirmed": "Última confirmação",
   "reported.showOnMap": "Lugar de estacionamento no mapa",
-  "reported.confirmedGone": "Não consta da última importação – a comunicação ficou assim confirmada.",
+  "reported.confirmedGone":
+    "Não consta da última importação – a comunicação ficou assim confirmada.",
 
   "feedback.status.neu": "Novo",
   "feedback.status.in_arbeit": "Em curso",
@@ -465,7 +470,8 @@ export const pt: Messages = {
   "search.retry": "Tentar novamente",
   "search.recent": "Pesquisas recentes",
   "search.suggestions": "Sugestões",
-  "search.unavailableLocal": "A pesquisa online não está disponível neste momento. São mostrados resultados dos nossos dados e os seus destinos recentes.",
+  "search.unavailableLocal":
+    "A pesquisa online não está disponível neste momento. São mostrados resultados dos nossos dados e os seus destinos recentes.",
   "search.forget": "Remover dos destinos recentes",
   "search.kind.city": "Localidade",
   "search.kind.street": "Rua",
@@ -507,7 +513,8 @@ export const pt: Messages = {
     "O acesso à localização foi recusado. O mapa mostra o centro da cidade – todos os lugares de estacionamento continuam visíveis.",
   "geo.unavailable":
     "O seu dispositivo não conseguiu determinar a localização. O mapa mostra o centro da cidade – todos os lugares de estacionamento continuam visíveis.",
-  "geo.timeout": "A determinação da sua localização demorou demasiado. Pode tentar novamente ou usar o mapa tal como está.",
+  "geo.timeout":
+    "A determinação da sua localização demorou demasiado. Pode tentar novamente ou usar o mapa tal como está.",
 
   "map.clusterOne": "{count} lugar de estacionamento nesta zona, toque para separar",
   "map.clusterMany": "{count} lugares de estacionamento nesta zona, toque para separar",
@@ -523,18 +530,13 @@ export const pt: Messages = {
   "meta.title": "wheelee – estacionamento para pessoas com deficiência",
   "meta.description":
     "Lugares de estacionamento para pessoas com deficiência de toda a Alemanha num mapa: encontre o mais próximo, com distância e navegação. Gratuito, sem registo, para telemóvel.",
-  "city.title":
-    "Estacionamento para pessoas com deficiência em {city}",
-  "city.intro":
-    "{spots} locais com {spaces} lugares em {city}.",
-  "city.official":
-    "A lista provém da administração municipal.",
+  "city.title": "Estacionamento para pessoas com deficiência em {city}",
+  "city.intro": "{spots} locais com {spaces} lugares em {city}.",
+  "city.official": "A lista provém da administração municipal.",
   "city.crowd":
     "Os dados provêm do OpenStreetMap e estão incompletos; uma entrada em falta não significa que não haja lugares.",
-  "city.list":
-    "Locais em {city}",
-  "city.openMap":
-    "Abrir no mapa",
+  "city.list": "Locais em {city}",
+  "city.openMap": "Abrir no mapa",
   "city.description":
     "Estacionamento para pessoas com deficiência em {city}: {spots} locais com {spaces} lugares num mapa, com distância e navegação. Gratuito, sem registo.",
 
@@ -565,7 +567,8 @@ export const pt: Messages = {
   "api.unknownStatus": "Estado desconhecido.",
   "api.notFoundOrNoChange": "Não encontrado ou nada a alterar.",
   "api.notFound": "Não encontrado.",
-  "api.tooManyLogins": "Demasiadas tentativas de início de sessão. Tente novamente dentro de alguns minutos.",
+  "api.tooManyLogins":
+    "Demasiadas tentativas de início de sessão. Tente novamente dentro de alguns minutos.",
   "api.credentialsRequired": "Indique o endereço de e-mail e a palavra-passe.",
   "api.tooManyPasswordChanges":
     "Demasiadas tentativas de alterar a palavra-passe. Tente novamente dentro de alguns minutos.",
@@ -605,7 +608,8 @@ export const pt: Messages = {
   "api.invitationInvalid": "O convite é inválido, expirou ou já foi usado.",
   "api.tooManyInvitations": "Demasiados convites em pouco tempo. Tente novamente mais tarde.",
   "invitation.title": "Aceitar convite",
-  "invitation.intro": "Recebeu um convite para o wheelee. Escolha uma palavra-passe para criar a sua conta.",
+  "invitation.intro":
+    "Recebeu um convite para o wheelee. Escolha uma palavra-passe para criar a sua conta.",
   "invitation.password": "Palavra-passe",
   "invitation.submit": "Criar conta",
   "invitation.missing": "Esta ligação não contém nenhum convite.",
@@ -614,16 +618,20 @@ export const pt: Messages = {
   "invitation.toApp": "Ir para o mapa",
 
   // Gestão de utilizadores (ToDo 18.3)
-  "api.adminCannotChange": "Isso não é possível: tem de restar pelo menos uma conta de administrador ativa, e a sua própria conta elimina-se nas definições da conta.",
-  "api.lastAdminCannotDelete": "A sua conta é a última conta de administrador ativa e não pode ser eliminada. Atribua primeiro direitos de administrador a outra pessoa.",
+  "api.adminCannotChange":
+    "Isso não é possível: tem de restar pelo menos uma conta de administrador ativa, e a sua própria conta elimina-se nas definições da conta.",
+  "api.lastAdminCannotDelete":
+    "A sua conta é a última conta de administrador ativa e não pode ser eliminada. Atribua primeiro direitos de administrador a outra pessoa.",
   "users.title": "Utilizadores e convites",
-  "users.intro": "Os administradores gerem contas e convidam outros administradores. A aplicação não envia convites por e-mail: recebe uma ligação que entrega pessoalmente.",
+  "users.intro":
+    "Os administradores gerem contas e convidam outros administradores. A aplicação não envia convites por e-mail: recebe uma ligação que entrega pessoalmente.",
   "users.inviteEmail": "Endereço de e-mail a convidar",
   "users.inviteRole": "Função",
   "users.role.admin": "Administrador",
   "users.role.user": "Utilizador",
   "users.inviteSubmit": "Criar ligação de convite",
-  "users.inviteCreated": "Ligação de convite para {email}. É mostrada só agora e é válida por sete dias – entregue-a pessoalmente.",
+  "users.inviteCreated":
+    "Ligação de convite para {email}. É mostrada só agora e é válida por sete dias – entregue-a pessoalmente.",
   "users.copy": "Copiar ligação",
   "users.copied": "Copiado",
   "users.accounts": "Contas",
@@ -641,7 +649,8 @@ export const pt: Messages = {
   "users.disable": "Bloquear",
   "users.enable": "Desbloquear",
   "users.delete": "Eliminar",
-  "users.deleteConfirm": "Eliminar definitivamente a conta {email}, com as respetivas avaliações e favoritos?",
+  "users.deleteConfirm":
+    "Eliminar definitivamente a conta {email}, com as respetivas avaliações e favoritos?",
   "users.state.open": "aberto",
   "users.state.used": "utilizado",
   "users.state.expired": "expirado",
@@ -683,7 +692,8 @@ export const pt: Messages = {
   "account.forgotSent":
     "Se existir uma conta com este endereço, enviámos uma ligação. É válida durante uma hora.",
   "reset.title": "Definir nova palavra-passe",
-  "reset.intro": "Escolha uma nova palavra-passe. Depois, todas as sessões serão terminadas e iniciará sessão novamente com ela.",
+  "reset.intro":
+    "Escolha uma nova palavra-passe. Depois, todas as sessões serão terminadas e iniciará sessão novamente com ela.",
   "reset.password": "Nova palavra-passe",
   "reset.submit": "Guardar palavra-passe",
   "reset.missing": "Esta ligação não contém nenhum token.",
@@ -698,7 +708,8 @@ export const pt: Messages = {
   "emailChange.sent":
     "Se o endereço estiver livre, enviámos-lhe uma ligação. Enquanto não a abrir, vale o endereço atual.",
   "confirmEmail.title": "Confirmar endereço de e-mail",
-  "confirmEmail.intro": "Com um clique, este endereço passa a ser o endereço de e-mail da sua conta.",
+  "confirmEmail.intro":
+    "Com um clique, este endereço passa a ser o endereço de e-mail da sua conta.",
   "confirmEmail.submit": "Usar este endereço",
   "confirmEmail.done": "Concluído – a sua conta está agora associada a {email}.",
   "confirmEmail.missing": "Esta ligação não contém nenhum token.",

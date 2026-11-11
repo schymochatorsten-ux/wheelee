@@ -21,7 +21,9 @@ test.describe("Meine Bewertungen", () => {
 
   test.beforeAll(async ({ playwright, baseURL }) => {
     const api = await playwright.request.newContext({ baseURL });
-    expect((await api.post("/api/auth/register", { data: KONTO, headers: herkunft() })).status()).toBe(200);
+    expect(
+      (await api.post("/api/auth/register", { data: KONTO, headers: herkunft() })).status(),
+    ).toBe(200);
 
     // Nicht der erstbeste Platz: `bewertungen.spec.ts` zählt dort die Stimmen
     // relativ, und eine fremde Stimme zur selben Zeit ließe seine Rechnung

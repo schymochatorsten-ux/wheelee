@@ -21,7 +21,9 @@ test.describe("Gespeicherte Parkplätze", () => {
 
   test.beforeAll(async ({ playwright, baseURL }) => {
     const api = await playwright.request.newContext({ baseURL });
-    expect((await api.post("/api/auth/register", { data: KONTO, headers: herkunft() })).status()).toBe(200);
+    expect(
+      (await api.post("/api/auth/register", { data: KONTO, headers: herkunft() })).status(),
+    ).toBe(200);
 
     const spots = await api.get("/api/spots?lat=50.938&lng=6.9551&limit=8");
     spotId = ((await spots.json()) as { spots: { id: string }[] }).spots[6].id;
@@ -106,7 +108,9 @@ test.describe("Gespeicherte Parkplätze", () => {
     await page.getByRole("button", { name: "Details schließen" }).click();
     await page.getByRole("tab", { name: "Konto" }).click();
     await page.getByRole("button", { name: "Gespeicherte Parkplätze", exact: true }).click();
-    await page.getByRole("button", { name: /aus den gespeicherten Parkplätzen entfernen/u }).click();
+    await page
+      .getByRole("button", { name: /aus den gespeicherten Parkplätzen entfernen/u })
+      .click();
     await expect(page.getByText(/Noch nichts gespeichert/u)).toBeVisible();
   });
 });

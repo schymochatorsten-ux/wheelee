@@ -126,27 +126,20 @@ export const fr: Messages = {
   "maps.fallback.short": "App de cartes",
 
   "settings.location": "Position",
-  "settings.locationNote":
-    "À l'ouverture, l'application demande votre position pour afficher la place la plus proche. La position reste sur l'appareil. Avec un compte, le choix s'applique sur tous les appareils ; l'autorisation elle-même est accordée par votre navigateur, une fois par appareil.",
+  "settings.locationNote": "Votre position reste sur l'appareil.",
   "settings.locationOn": "Utiliser la position",
-  "settings.locationOff": "Ne pas l'utiliser",
   "settings.appearance": "Affichage",
-  "settings.appearanceNote":
-    "Le mode sombre est le réglage par défaut – l'application est souvent utilisée en voiture et dans l'obscurité.",
   "settings.language": "Langue",
-  "settings.languageNote":
-    "La langue de votre navigateur est proposée en premier. Avec un compte, le choix vaut sur tous vos appareils.",
   "settings.languageChoose": "Choisir la langue",
-  "settings.languageUnreviewed":
-    "Les traductions sont produites automatiquement et vérifiées plusieurs fois de façon automatique, pas par des locuteurs natifs. La version allemande fait foi ; sur place, la signalisation prévaut toujours.",
-  "settings.mapsApp": "Application de cartes pour la navigation",
-  "settings.mapsAppNote":
-    "Avec quoi « Démarrer la navigation » s'ouvre. Sans choix de votre part, cela dépend de l'appareil – ici ce serait {detected}.",
+  "settings.languageUnreviewed": "Traduction automatique. La version allemande fait foi.",
+  "settings.mapsApp": "Navigation",
+  "settings.mapsAppAuto": "Automatique ({detected})",
   "settings.mapsAppChoose": "Choisir l'application de cartes",
-  "settings.mapsAppDeviceOnly": "Le choix ne vaut que sur cet appareil – même avec un compte.",
-  "offline.heading": "Hors réseau : emporter les places",
+  "offline.heading": "Hors ligne",
   "offline.note":
-    "Charge les données de stationnement d'une ville sur cet appareil afin qu'elles soient complètes même dans un parking couvert ou une zone sans réseau. Les images de la carte n'en font pas partie – sans réseau, la carte reste grise, mais les repères et la liste fonctionnent.",
+    "Les données d'une ville sur l'appareil. Hors ligne, seul le fond de carte reste gris.",
+  "offline.suggestions": "Suggestions",
+  "offline.pick": "Saisir une ville",
   "offline.cityLabel": "Ville",
   "offline.download": "Charger à l'avance",
   "offline.downloading": "Chargement …",
@@ -157,7 +150,8 @@ export const fr: Messages = {
   "offline.saved": "{name} est maintenant enregistrée sur cet appareil.",
   "offline.removed": "{name} a été supprimée de l'appareil.",
   "offline.failed": "Le chargement a échoué. Veuillez réessayer avec du réseau.",
-  "offline.unsupported": "Ce navigateur ne peut pas stocker de données pour une utilisation hors réseau.",
+  "offline.unsupported":
+    "Ce navigateur ne peut pas stocker de données pour une utilisation hors réseau.",
   "offline.none": "Aucune ville n'est encore enregistrée sur cet appareil.",
   "offline.listLabel": "Enregistrées sur cet appareil",
   "offline.entry": "{count} emplacements, {size} utilisés",
@@ -167,9 +161,7 @@ export const fr: Messages = {
     "Les données ont plus de six mois. Les places ont pu changer – veuillez vérifier sur place.",
   "offline.staleCopy": "La copie a plus d'un mois. Veuillez l'actualiser avec du réseau.",
   "offline.total": "Espace total utilisé : {size}",
-  "settings.feedback": "Signaler une erreur ou envoyer une suggestion",
-  "settings.feedbackNote":
-    "Quelque chose ne va pas ? Une place manque ou n'existe plus ? Les retours sont la seule source qui remarque de tels changements. Si vous le souhaitez, vous pouvez indiquer une adresse e-mail – nous vous répondrons.",
+  "settings.feedback": "Retour",
   "settings.account": "Compte",
   "settings.accountNote":
     "Facultatif. L'application fonctionne entièrement sans compte – y compris pour signaler des erreurs. Un compte retient seulement que vos retours vont ensemble.",
@@ -180,11 +172,11 @@ export const fr: Messages = {
   "settings.coverage": "Couverture des données",
   "settings.info": "À propos de wheelee",
   "settings.cities": "Toutes les villes",
-  "city.synonyms": "Aussi appelées places PMR, stationnement pour personnes handicapées ou places pour fauteuil roulant. Il s’agit de places nécessitant la carte européenne de stationnement.",
+  "city.synonyms":
+    "Aussi appelées places PMR, stationnement pour personnes handicapées ou places pour fauteuil roulant. Il s’agit de places nécessitant la carte européenne de stationnement.",
   "info.lead":
     "wheelee aide les personnes à mobilité réduite à trouver rapidement la place de stationnement handicapé la plus proche.",
-  "info.reach":
-    "wheelee a déjà été ouvert {count} fois pour trouver une place.",
+  "info.reach": "wheelee a déjà été ouvert {count} fois pour trouver une place.",
   "info.goal.title": "De quoi s’agit-il",
   "info.goal.text":
     "Quand on dépend d’une place handicapé, on ne peut pas tourner en ville en espérant tomber sur une place libre. wheelee affiche sur une carte les places handicapé publiques de toute l’Allemagne, met en évidence la plus proche de votre position et ouvre l’itinéraire dans votre application de cartes.",
@@ -330,41 +322,47 @@ export const fr: Messages = {
   "rating.lastGone": "Dernier signalement de suppression :",
   "rating.needAccount":
     "Pour évaluer, il faut un compte – sous « Paramètres → Compte ». Vous pouvez consulter les informations sans compte.",
-  "rating.voted":
-    "Vous avez évalué. Appuyer à nouveau annule, l'autre bouton inverse le vote.",
+  "rating.voted": "Vous avez évalué. Appuyer à nouveau annule, l'autre bouton inverse le vote.",
   "rating.votes": "{label}, {count} votes",
 
   "admin.unauthorized": "Non connecté ou sans autorisation.",
   "admin.noConnection": "Pas de connexion.",
   "api.usernameTaken": "Ce nom d’utilisateur est déjà pris.",
-  "api.usernameInvalid": "Nom d’utilisateur : 3 à 32 caractères, uniquement lettres, chiffres, point, tiret bas et trait d’union.",
+  "api.usernameInvalid":
+    "Nom d’utilisateur : 3 à 32 caractères, uniquement lettres, chiffres, point, tiret bas et trait d’union.",
   "api.emailTaken": "Cette adresse e-mail appartient déjà à un compte.",
   "api.invalidEmail": "Cette adresse e-mail ne semble pas correcte.",
-  "api.passwordSelf": "Son propre mot de passe se change dans les paramètres du compte – avec l’ancien.",
+  "api.passwordSelf":
+    "Son propre mot de passe se change dans les paramètres du compte – avec l’ancien.",
   "users.edit": "Modifier",
   "users.editClose": "Terminé",
   "users.username": "Nom d’utilisateur",
   "users.usernameNone": "sans nom – connexion avec l’adresse",
   "users.email": "Adresse e-mail",
-  "users.emailNote": "Après la modification, l’adresse est considérée comme non confirmée jusqu’à preuve.",
+  "users.emailNote":
+    "Après la modification, l’adresse est considérée comme non confirmée jusqu’à preuve.",
   "users.newPassword": "Nouveau mot de passe initial",
-  "users.newPasswordNote": "Appliqué aussitôt. À la prochaine connexion, la personne devra en choisir un ; jusque-là le compte ne donne aucun droit d’administration. Toutes les sessions prennent fin.",
+  "users.newPasswordNote":
+    "Appliqué aussitôt. À la prochaine connexion, la personne devra en choisir un ; jusque-là le compte ne donne aucun droit d’administration. Toutes les sessions prennent fin.",
   "users.apply": "Appliquer",
   "users.saved": "Enregistré.",
   "users.unverified": "Adresse non confirmée",
   "users.startPassword": "Mot de passe initial",
   "users.created": "créé le {date}",
   "adminMail.title": "Envoi de courriels",
-  "adminMail.intro": "Pour « mot de passe oublié » et le changement d’adresse e-mail. Sans ces données, les deux fonctions sont masquées.",
+  "adminMail.intro":
+    "Pour « mot de passe oublié » et le changement d’adresse e-mail. Sans ces données, les deux fonctions sont masquées.",
   "adminMail.notify": "Notifier les nouveaux retours à",
   "adminMail.notifyNone": "aucune notification",
-  "adminMail.notifyNote": "Chaque nouvelle erreur ou suggestion envoie aussitôt un courriel. Objet : « Wheelee Fehler » ou « Wheelee Verbesserungsvorschlag ». Laisser vide envoie à tous les comptes d’administration.",
+  "adminMail.notifyNote":
+    "Chaque nouvelle erreur ou suggestion envoie aussitôt un courriel. Objet : « Wheelee Fehler » ou « Wheelee Verbesserungsvorschlag ». Laisser vide envoie à tous les comptes d’administration.",
   "adminMail.notifyInvalid": "L’adresse de notification ne semble pas correcte.",
   "adminMail.statusOn": "L’envoi fonctionne.",
   "adminMail.statusOff": "L’envoi est désactivé.",
   "adminMail.fromEnv": "Données de l’environnement du serveur",
   "adminMail.fromDatabase": "Données de cette page",
-  "adminMail.envOverridden": "L’environnement du serveur contient aussi des données. Ce sont celles enregistrées ici qui s’appliquent.",
+  "adminMail.envOverridden":
+    "L’environnement du serveur contient aussi des données. Ce sont celles enregistrées ici qui s’appliquent.",
   "adminMail.host": "Serveur SMTP",
   "adminMail.port": "Port",
   "adminMail.secure": "TLS dès le début (sinon uniquement sur le port 465)",
@@ -372,29 +370,35 @@ export const fr: Messages = {
   "adminMail.password": "Mot de passe",
   "adminMail.passwordKept": "inchangé",
   "adminMail.passwordNone": "aucun enregistré",
-  "adminMail.passwordNote": "Laisser vide signifie inchangé. Le mot de passe enregistré n’est jamais affiché.",
+  "adminMail.passwordNote":
+    "Laisser vide signifie inchangé. Le mot de passe enregistré n’est jamais affiché.",
   "adminMail.from": "Adresse d’expéditeur",
   "adminMail.publicUrl": "Adresse de l’application",
   "adminMail.publicUrlNote": "Pour les liens dans les courriels. Uniquement https (ou localhost).",
   "adminMail.enabled": "Activer l’envoi",
   "adminMail.provider": "Prestataire d’envoi",
-  "adminMail.providerNote": "Nom, siège et état du contrat de sous-traitance. C’est ce qu’affiche la politique de confidentialité ; laissé vide, elle y signale le manque.",
-  "adminMail.privacyNote": "Dès que l’envoi fonctionne, la politique de confidentialité le mentionne d’elle-même – elle n’est complète qu’avec le prestataire ci-dessus.",
+  "adminMail.providerNote":
+    "Nom, siège et état du contrat de sous-traitance. C’est ce qu’affiche la politique de confidentialité ; laissé vide, elle y signale le manque.",
+  "adminMail.privacyNote":
+    "Dès que l’envoi fonctionne, la politique de confidentialité le mentionne d’elle-même – elle n’est complète qu’avec le prestataire ci-dessus.",
   "adminMail.save": "Enregistrer",
   "adminMail.test": "M’envoyer un courriel de test",
   "adminMail.clear": "Supprimer les données",
   "adminMail.saved": "Enregistré.",
-  "adminMail.cleared": "Supprimé. Ce qui se trouve dans l’environnement du serveur s’applique de nouveau – ou rien.",
+  "adminMail.cleared":
+    "Supprimé. Ce qui se trouve dans l’environnement du serveur s’applique de nouveau – ou rien.",
   "adminMail.loadFailed": "Les données n’ont pas pu être chargées.",
   "adminMail.saveFailed": "L’enregistrement a échoué.",
   "adminMail.testFailed": "L’envoi a échoué.",
-  "adminMail.testSent": "Le serveur a accepté le courriel vers {email}. Seule la boîte de réception dira s’il arrive.",
+  "adminMail.testSent":
+    "Le serveur a accepté le courriel vers {email}. Seule la boîte de réception dira s’il arrive.",
   "adminMail.notConfigured": "L’envoi n’est pas configuré.",
   "adminMail.invalid": "Les données n’ont pas pu être lues.",
   "adminMail.hostMissing": "Un serveur SMTP est indispensable.",
   "adminMail.fromMissing": "L’adresse d’expéditeur est absente ou n’est pas une adresse.",
   "adminMail.portInvalid": "Le port doit être compris entre 1 et 65535.",
-  "adminMail.urlInvalid": "L’adresse de l’application doit commencer par https:// (sauf localhost).",
+  "adminMail.urlInvalid":
+    "L’adresse de l’application doit commencer par https:// (sauf localhost).",
   "adminMail.testSubject": "wheelee : courriel de test",
   "adminMail.testBody": "Ce courriel confirme que l’envoi depuis wheelee est configuré.",
   "admin.reload": "Recharger",
@@ -436,7 +440,8 @@ export const fr: Messages = {
   "feedbackAdmin.loadFailed": "Les retours n'ont pas pu être chargés.",
   "feedbackAdmin.changeFailed": "La modification a échoué.",
   "feedbackAdmin.noteFailed": "La note n'a pas pu être enregistrée.",
-  "feedbackAdmin.confirmDelete": "Supprimer définitivement le signalement #{id} ?\n\n« {preview}… »",
+  "feedbackAdmin.confirmDelete":
+    "Supprimer définitivement le signalement #{id} ?\n\n« {preview}… »",
   "feedbackAdmin.deleteFailed": "La suppression a échoué.",
   "feedbackAdmin.title": "Retours",
   "feedbackAdmin.countsOne": "{total} signalement, dont {neu} nouveau(x) et {done} réalisé(s).",
@@ -534,18 +539,13 @@ export const fr: Messages = {
   "meta.title": "wheelee – places de stationnement PMR",
   "meta.description":
     "Les places de stationnement handicapé de toute l’Allemagne sur une carte : trouvez la plus proche, avec distance et navigation. Gratuit, sans inscription, pour mobile.",
-  "city.title":
-    "Places de stationnement handicapé à {city}",
-  "city.intro":
-    "{spots} emplacements avec {spaces} places à {city}.",
-  "city.official":
-    "La liste provient de l’administration municipale.",
+  "city.title": "Places de stationnement handicapé à {city}",
+  "city.intro": "{spots} emplacements avec {spaces} places à {city}.",
+  "city.official": "La liste provient de l’administration municipale.",
   "city.crowd":
     "Les données proviennent d’OpenStreetMap et sont incomplètes ; une entrée manquante ne signifie pas qu’il n’y a pas de places.",
-  "city.list":
-    "Emplacements à {city}",
-  "city.openMap":
-    "Ouvrir sur la carte",
+  "city.list": "Emplacements à {city}",
+  "city.openMap": "Ouvrir sur la carte",
   "city.description":
     "Places de stationnement handicapé à {city} : {spots} emplacements avec {spaces} places sur une carte, avec distance et navigation. Gratuit, sans inscription.",
 
@@ -615,7 +615,8 @@ export const fr: Messages = {
   "api.invitationInvalid": "L'invitation est invalide, expirée ou déjà utilisée.",
   "api.tooManyInvitations": "Trop d'invitations en peu de temps. Veuillez réessayer plus tard.",
   "invitation.title": "Accepter l'invitation",
-  "invitation.intro": "Vous avez été invité sur wheelee. Choisissez un mot de passe pour créer votre compte.",
+  "invitation.intro":
+    "Vous avez été invité sur wheelee. Choisissez un mot de passe pour créer votre compte.",
   "invitation.password": "Mot de passe",
   "invitation.submit": "Créer le compte",
   "invitation.missing": "Ce lien ne contient aucune invitation.",
@@ -697,7 +698,8 @@ export const fr: Messages = {
   "account.forgotSent":
     "S'il existe un compte pour cette adresse, nous avons envoyé un lien. Il est valable une heure.",
   "reset.title": "Définir un nouveau mot de passe",
-  "reset.intro": "Choisissez un nouveau mot de passe. Vous serez ensuite déconnecté partout et vous vous reconnecterez avec lui.",
+  "reset.intro":
+    "Choisissez un nouveau mot de passe. Vous serez ensuite déconnecté partout et vous vous reconnecterez avec lui.",
   "reset.password": "Nouveau mot de passe",
   "reset.submit": "Enregistrer le mot de passe",
   "reset.missing": "Ce lien ne contient aucun jeton.",

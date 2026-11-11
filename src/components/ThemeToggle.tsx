@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useT } from "@/i18n/context";
 import { applyTheme, readTheme, THEMES, type Theme } from "@/lib/theme";
+import { Segmented } from "./ui/List";
 
 /**
  * Umschalter für Hell und Dunkel.
@@ -34,28 +35,18 @@ export function ThemeToggle() {
     applyTheme(next);
   };
 
+  /*
+   * Ein Segmentschalter wie in den Systemapps von Apple (ToDo 9.31) statt
+   * dreier Knöpfe mit Rahmen: Drei gleichrangige Stellungen gehören in eine
+   * Fläche, und welche gilt, zeigt die hervorgehobene Stellung – ohne dass
+   * dafür eine Farbe des Hauses verbraucht wird.
+   */
   return (
-    <div
-      role="radiogroup"
-      aria-label={t("theme.group")}
-      className="flex shrink-0 overflow-hidden rounded-lg border border-neutral-300 text-sm dark:border-neutral-700"
-    >
-      {THEMES.map((option) => (
-        <button
-          key={option.id}
-          type="button"
-          role="radio"
-          aria-checked={theme === option.id}
-          onClick={() => choose(option.id)}
-          className={`min-h-11 px-3 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none ${
-            theme === option.id
-              ? "bg-blue-700 text-white"
-              : "bg-white text-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
-          }`}
-        >
-          {t(option.label)}
-        </button>
-      ))}
-    </div>
+    <Segmented
+      value={theme}
+      label={t("theme.group")}
+      onChange={choose}
+      options={THEMES.map((option) => ({ value: option.id, label: t(option.label) }))}
+    />
   );
 }

@@ -49,7 +49,8 @@ export const nl: Messages = {
   "list.spacesMany": "{count} parkeervakken",
   "list.nearby": "Parkeerplaatsen in de buurt",
   "list.nearest": "Dichtstbijzijnde parkeerplaatsen",
-  "list.noLocation": "Zonder toegang tot je locatie wordt de afstand vanaf het stadscentrum berekend.",
+  "list.noLocation":
+    "Zonder toegang tot je locatie wordt de afstand vanaf het stadscentrum berekend.",
   "list.showDetails": "Details tonen",
   "list.unlocated": "Zonder exacte positie ({count})",
   "list.unlocatedNote":
@@ -124,27 +125,19 @@ export const nl: Messages = {
   "maps.fallback.short": "Kaartenapp",
 
   "settings.location": "Locatie",
-  "settings.locationNote":
-    "Bij het openen vraagt de app om je locatie om de dichtstbijzijnde parkeerplaats te tonen. De locatie blijft op het apparaat. Met een account geldt de keuze op alle apparaten; de toestemming zelf geeft je browser, één keer per apparaat.",
+  "settings.locationNote": "Je locatie blijft op het apparaat.",
   "settings.locationOn": "Locatie gebruiken",
-  "settings.locationOff": "Niet gebruiken",
   "settings.appearance": "Weergave",
-  "settings.appearanceNote":
-    "Standaard is donker – de app wordt vaak in de auto en in het donker gebruikt.",
   "settings.language": "Taal",
-  "settings.languageNote":
-    "Eerst wordt de taal van je browser voorgesteld. Met een account geldt je keuze op al je apparaten.",
   "settings.languageChoose": "Taal kiezen",
-  "settings.languageUnreviewed":
-    "De vertalingen zijn machinaal gemaakt en meermaals machinaal gecontroleerd, niet door moedertaalsprekers. Bindend is de Duitse versie; ter plaatse gelden altijd de borden en markeringen.",
-  "settings.mapsApp": "Kaartenapp voor navigatie",
-  "settings.mapsAppNote":
-    "Wat “Navigatie starten” opent. Zonder eigen keuze hangt het af van het apparaat – hier zou dat zijn: {detected}.",
+  "settings.languageUnreviewed": "Machinaal vertaald. De Duitse versie is bepalend.",
+  "settings.mapsApp": "Navigatie",
+  "settings.mapsAppAuto": "Automatisch ({detected})",
   "settings.mapsAppChoose": "Kaartenapp kiezen",
-  "settings.mapsAppDeviceOnly": "De keuze geldt alleen op dit apparaat – ook met een account.",
-  "offline.heading": "Offline: parkeergegevens meenemen",
-  "offline.note":
-    "Slaat de parkeergegevens van één stad op dit apparaat op, zodat ze ook in parkeergarages en zonder bereik volledig beschikbaar zijn. Kaarttegels zijn niet inbegrepen – zonder verbinding blijft de achtergrondkaart grijs, maar markeringen en lijst werken.",
+  "offline.heading": "Offline",
+  "offline.note": "De gegevens van een stad op je apparaat. Offline blijft alleen de kaart grijs.",
+  "offline.suggestions": "Suggesties",
+  "offline.pick": "Stad invoeren",
   "offline.cityLabel": "Stad",
   "offline.download": "Downloaden",
   "offline.downloading": "Laden …",
@@ -165,9 +158,7 @@ export const nl: Messages = {
     "De gegevens zijn ouder dan een half jaar. Parkeerplaatsen kunnen veranderd zijn – controleer het ter plaatse.",
   "offline.staleCopy": "De kopie is ouder dan een maand. Vernieuw haar zodra je online bent.",
   "offline.total": "Totaal in gebruik: {size}",
-  "settings.feedback": "Fout melden of suggestie doen",
-  "settings.feedbackNote":
-    "Klopt er iets niet? Ontbreekt er een parkeerplaats of bestaat ze niet meer? Meldingen zijn de enige bron die zulke veranderingen opmerkt. Als je wilt, kun je een e-mailadres opgeven – dan kunnen we antwoorden.",
+  "settings.feedback": "Terugkoppeling",
   "settings.account": "Account",
   "settings.accountNote":
     "Optioneel. De app werkt ook zonder account volledig – inclusief fouten melden. Een account onthoudt alleen dat je meldingen bij elkaar horen.",
@@ -178,11 +169,11 @@ export const nl: Messages = {
   "settings.coverage": "Gegevensdekking",
   "settings.info": "Over wheelee",
   "settings.cities": "Alle steden",
-  "city.synonyms": "Ook gehandicaptenparkeerplaats, invalidenparkeerplaats of rolstoelparkeerplaats genoemd. Het gaat om plaatsen waarvoor de blauwe Europese parkeerkaart nodig is.",
+  "city.synonyms":
+    "Ook gehandicaptenparkeerplaats, invalidenparkeerplaats of rolstoelparkeerplaats genoemd. Het gaat om plaatsen waarvoor de blauwe Europese parkeerkaart nodig is.",
   "info.lead":
     "wheelee helpt mensen met een beperking om snel de dichtstbijzijnde gehandicaptenparkeerplaats te vinden.",
-  "info.reach":
-    "wheelee is al {count} keer geopend om een parkeerplaats te vinden.",
+  "info.reach": "wheelee is al {count} keer geopend om een parkeerplaats te vinden.",
   "info.goal.title": "Waar het om gaat",
   "info.goal.text":
     "Wie een gehandicaptenparkeerplaats nodig heeft, kan niet op goed geluk door de stad rijden. wheelee toont openbare gehandicaptenparkeerplaatsen in heel Duitsland op een kaart, licht de plek het dichtst bij jouw locatie uit en opent de route in je kaartenapp.",
@@ -289,13 +280,12 @@ export const nl: Messages = {
   "feedback.errorKind": "Kies waar het over gaat.",
   "feedback.errorMessageShort": "Beschrijf in een paar woorden wat er niet klopt.",
   "feedback.errorMessageLong": "Houd het korter – maximaal {max} tekens.",
-  "feedback.errorEmail":
-    "Dit e-mailadres ziet er onjuist uit. Laat het veld anders leeg.",
+  "feedback.errorEmail": "Dit e-mailadres ziet er onjuist uit. Laat het veld anders leeg.",
   "feedback.offline": "Geen verbinding. De melding is niet verzonden – probeer het later opnieuw.",
   "feedback.thanks": "Bedankt – de melding is aangekomen.",
-  "feedback.willReply":
-    "We kijken ernaar en antwoorden per e-mail als er iets te zeggen valt.",
-  "feedback.noReply": "Er is geen adres opgegeven, dus je krijgt geen antwoord – je melding helpt toch.",
+  "feedback.willReply": "We kijken ernaar en antwoorden per e-mail als er iets te zeggen valt.",
+  "feedback.noReply":
+    "Er is geen adres opgegeven, dus je krijgt geen antwoord – je melding helpt toch.",
   "feedback.again": "Iets anders melden",
   "feedback.done": "Klaar",
   "feedback.whatAbout": "Waar gaat het over?",
@@ -329,10 +319,12 @@ export const nl: Messages = {
   "admin.unauthorized": "Niet aangemeld of geen rechten.",
   "admin.noConnection": "Geen verbinding.",
   "api.usernameTaken": "Deze gebruikersnaam is al bezet.",
-  "api.usernameInvalid": "Gebruikersnaam: 3 tot 32 tekens, alleen letters, cijfers, punt, liggend streepje en koppelteken.",
+  "api.usernameInvalid":
+    "Gebruikersnaam: 3 tot 32 tekens, alleen letters, cijfers, punt, liggend streepje en koppelteken.",
   "api.emailTaken": "Dit e-mailadres hoort al bij een account.",
   "api.invalidEmail": "Dit e-mailadres ziet er niet goed uit.",
-  "api.passwordSelf": "Het eigen wachtwoord wijzig je in de accountinstellingen – daar met het huidige.",
+  "api.passwordSelf":
+    "Het eigen wachtwoord wijzig je in de accountinstellingen – daar met het huidige.",
   "users.edit": "Wijzigen",
   "users.editClose": "Klaar",
   "users.username": "Gebruikersnaam",
@@ -340,23 +332,27 @@ export const nl: Messages = {
   "users.email": "E-mailadres",
   "users.emailNote": "Na de wijziging geldt het adres als onbevestigd totdat iemand het aantoont.",
   "users.newPassword": "Nieuw startwachtwoord",
-  "users.newPasswordNote": "Wordt meteen ingesteld. Bij de volgende aanmelding moet de persoon een eigen kiezen; tot dan geeft het account geen beheerrechten. Alle sessies eindigen.",
+  "users.newPasswordNote":
+    "Wordt meteen ingesteld. Bij de volgende aanmelding moet de persoon een eigen kiezen; tot dan geeft het account geen beheerrechten. Alle sessies eindigen.",
   "users.apply": "Toepassen",
   "users.saved": "Opgeslagen.",
   "users.unverified": "Adres onbevestigd",
   "users.startPassword": "Startwachtwoord",
   "users.created": "aangemaakt op {date}",
   "adminMail.title": "E-mail versturen",
-  "adminMail.intro": "Voor “wachtwoord vergeten” en het wijzigen van het e-mailadres. Zonder deze gegevens zijn beide functies verborgen.",
+  "adminMail.intro":
+    "Voor “wachtwoord vergeten” en het wijzigen van het e-mailadres. Zonder deze gegevens zijn beide functies verborgen.",
   "adminMail.notify": "Melding bij nieuwe terugmelding naar",
   "adminMail.notifyNone": "geen melding",
-  "adminMail.notifyNote": "Elke nieuwe fout of suggestie stuurt meteen een e-mail. Onderwerp: “Wheelee Fehler” of “Wheelee Verbesserungsvorschlag”. Laat leeg om naar alle beheerdersaccounts te sturen.",
+  "adminMail.notifyNote":
+    "Elke nieuwe fout of suggestie stuurt meteen een e-mail. Onderwerp: “Wheelee Fehler” of “Wheelee Verbesserungsvorschlag”. Laat leeg om naar alle beheerdersaccounts te sturen.",
   "adminMail.notifyInvalid": "Het adres voor de melding ziet er niet goed uit.",
   "adminMail.statusOn": "Het versturen werkt.",
   "adminMail.statusOff": "Het versturen staat uit.",
   "adminMail.fromEnv": "Gegevens uit de serveromgeving",
   "adminMail.fromDatabase": "Gegevens van deze pagina",
-  "adminMail.envOverridden": "In de serveromgeving staan ook gegevens. De hier opgeslagen gegevens gelden.",
+  "adminMail.envOverridden":
+    "In de serveromgeving staan ook gegevens. De hier opgeslagen gegevens gelden.",
   "adminMail.host": "SMTP-server",
   "adminMail.port": "Poort",
   "adminMail.secure": "TLS vanaf het begin (anders alleen bij poort 465)",
@@ -364,14 +360,17 @@ export const nl: Messages = {
   "adminMail.password": "Wachtwoord",
   "adminMail.passwordKept": "ongewijzigd",
   "adminMail.passwordNone": "geen opgeslagen",
-  "adminMail.passwordNote": "Leeg laten betekent ongewijzigd. Het opgeslagen wachtwoord wordt nooit getoond.",
+  "adminMail.passwordNote":
+    "Leeg laten betekent ongewijzigd. Het opgeslagen wachtwoord wordt nooit getoond.",
   "adminMail.from": "Afzenderadres",
   "adminMail.publicUrl": "Adres van de app",
   "adminMail.publicUrlNote": "Voor de links in de e-mails. Alleen https (of localhost).",
   "adminMail.enabled": "Versturen inschakelen",
   "adminMail.provider": "Verzenddienstverlener",
-  "adminMail.providerNote": "Naam, vestigingsplaats en stand van de verwerkersovereenkomst. Zo staat het in de privacyverklaring; blijft het leeg, dan noemt die daar het gebrek.",
-  "adminMail.privacyNote": "Zodra het versturen werkt, noemt de privacyverklaring dat vanzelf – volledig is zij pas met de dienstverlener hierboven.",
+  "adminMail.providerNote":
+    "Naam, vestigingsplaats en stand van de verwerkersovereenkomst. Zo staat het in de privacyverklaring; blijft het leeg, dan noemt die daar het gebrek.",
+  "adminMail.privacyNote":
+    "Zodra het versturen werkt, noemt de privacyverklaring dat vanzelf – volledig is zij pas met de dienstverlener hierboven.",
   "adminMail.save": "Opslaan",
   "adminMail.test": "Testmail naar mij",
   "adminMail.clear": "Gegevens weggooien",
@@ -380,13 +379,15 @@ export const nl: Messages = {
   "adminMail.loadFailed": "De gegevens konden niet worden geladen.",
   "adminMail.saveFailed": "Opslaan mislukt.",
   "adminMail.testFailed": "Het versturen is mislukt.",
-  "adminMail.testSent": "De server heeft de e-mail aan {email} aangenomen. Of hij aankomt, laat alleen de mailbox zien.",
+  "adminMail.testSent":
+    "De server heeft de e-mail aan {email} aangenomen. Of hij aankomt, laat alleen de mailbox zien.",
   "adminMail.notConfigured": "Het versturen is niet ingericht.",
   "adminMail.invalid": "De gegevens konden niet worden gelezen.",
   "adminMail.hostMissing": "Zonder SMTP-server gaat het niet.",
   "adminMail.fromMissing": "Het afzenderadres ontbreekt of is geen adres.",
   "adminMail.portInvalid": "De poort moet tussen 1 en 65535 liggen.",
-  "adminMail.urlInvalid": "Het adres van de app moet met https:// beginnen (localhost uitgezonderd).",
+  "adminMail.urlInvalid":
+    "Het adres van de app moet met https:// beginnen (localhost uitgezonderd).",
   "adminMail.testSubject": "wheelee: testmail",
   "adminMail.testBody": "Deze e-mail bevestigt dat het versturen vanuit wheelee is ingericht.",
   "admin.reload": "Opnieuw laden",
@@ -465,7 +466,8 @@ export const nl: Messages = {
   "search.retry": "Opnieuw proberen",
   "search.recent": "Recent gezocht",
   "search.suggestions": "Suggesties",
-  "search.unavailableLocal": "Online zoeken is nu niet beschikbaar. Er worden treffers uit onze gegevens en je recente bestemmingen getoond.",
+  "search.unavailableLocal":
+    "Online zoeken is nu niet beschikbaar. Er worden treffers uit onze gegevens en je recente bestemmingen getoond.",
   "search.forget": "Uit recente bestemmingen verwijderen",
   "search.kind.city": "Plaats",
   "search.kind.street": "Straat",
@@ -507,7 +509,8 @@ export const nl: Messages = {
     "Je hebt de toegang tot je locatie geweigerd. De kaart toont het stadscentrum – alle parkeerplaatsen blijven zichtbaar.",
   "geo.unavailable":
     "Je apparaat kon de locatie niet bepalen. De kaart toont het stadscentrum – alle parkeerplaatsen blijven zichtbaar.",
-  "geo.timeout": "Het bepalen van je locatie duurde te lang. Je kunt het opnieuw proberen of de kaart gebruiken zoals ze is.",
+  "geo.timeout":
+    "Het bepalen van je locatie duurde te lang. Je kunt het opnieuw proberen of de kaart gebruiken zoals ze is.",
 
   "map.clusterOne": "{count} parkeerplaats in dit gebied, tik om te splitsen",
   "map.clusterMany": "{count} parkeerplaatsen in dit gebied, tik om te splitsen",
@@ -523,18 +526,13 @@ export const nl: Messages = {
   "meta.title": "wheelee – gehandicaptenparkeren",
   "meta.description":
     "Gehandicaptenparkeerplaatsen in heel Duitsland op één kaart: vind de dichtstbijzijnde, met afstand en navigatie. Gratis, zonder account, mobiel.",
-  "city.title":
-    "Gehandicaptenparkeerplaatsen in {city}",
-  "city.intro":
-    "{spots} locaties met {spaces} parkeervakken in {city}.",
-  "city.official":
-    "De lijst komt van het gemeentebestuur.",
+  "city.title": "Gehandicaptenparkeerplaatsen in {city}",
+  "city.intro": "{spots} locaties met {spaces} parkeervakken in {city}.",
+  "city.official": "De lijst komt van het gemeentebestuur.",
   "city.crowd":
     "De gegevens komen uit OpenStreetMap en zijn onvolledig; een ontbrekend item betekent niet dat er geen plaatsen zijn.",
-  "city.list":
-    "Locaties in {city}",
-  "city.openMap":
-    "Openen op de kaart",
+  "city.list": "Locaties in {city}",
+  "city.openMap": "Openen op de kaart",
   "city.description":
     "Gehandicaptenparkeerplaatsen in {city}: {spots} locaties met {spaces} parkeervakken op een kaart, met afstand en navigatie. Gratis, zonder account.",
 
@@ -605,7 +603,8 @@ export const nl: Messages = {
   "api.invitationInvalid": "De uitnodiging is ongeldig, verlopen of al gebruikt.",
   "api.tooManyInvitations": "Te veel uitnodigingen in korte tijd. Probeer het later opnieuw.",
   "invitation.title": "Uitnodiging accepteren",
-  "invitation.intro": "Je bent uitgenodigd voor wheelee. Kies een wachtwoord om je account aan te maken.",
+  "invitation.intro":
+    "Je bent uitgenodigd voor wheelee. Kies een wachtwoord om je account aan te maken.",
   "invitation.password": "Wachtwoord",
   "invitation.submit": "Account aanmaken",
   "invitation.missing": "Deze link bevat geen uitnodiging.",
@@ -614,16 +613,20 @@ export const nl: Messages = {
   "invitation.toApp": "Naar de kaart",
 
   // Gebruikersbeheer (ToDo 18.3)
-  "api.adminCannotChange": "Dat kan niet: er moet minstens één actief beheerdersaccount overblijven, en je eigen account verwijder je in de accountinstellingen.",
-  "api.lastAdminCannotDelete": "Je account is het laatste actieve beheerdersaccount en kan niet worden verwijderd. Geef eerst iemand anders beheerdersrechten.",
+  "api.adminCannotChange":
+    "Dat kan niet: er moet minstens één actief beheerdersaccount overblijven, en je eigen account verwijder je in de accountinstellingen.",
+  "api.lastAdminCannotDelete":
+    "Je account is het laatste actieve beheerdersaccount en kan niet worden verwijderd. Geef eerst iemand anders beheerdersrechten.",
   "users.title": "Gebruikers en uitnodigingen",
-  "users.intro": "Beheerders beheren accounts en nodigen andere beheerders uit. De app verstuurt geen uitnodigingen per e-mail: je krijgt een link die je zelf doorgeeft.",
+  "users.intro":
+    "Beheerders beheren accounts en nodigen andere beheerders uit. De app verstuurt geen uitnodigingen per e-mail: je krijgt een link die je zelf doorgeeft.",
   "users.inviteEmail": "E-mailadres om uit te nodigen",
   "users.inviteRole": "Rol",
   "users.role.admin": "Beheerder",
   "users.role.user": "Gebruiker",
   "users.inviteSubmit": "Uitnodigingslink maken",
-  "users.inviteCreated": "Uitnodigingslink voor {email}. Hij wordt alleen nu getoond en is zeven dagen geldig – geef hem zelf door.",
+  "users.inviteCreated":
+    "Uitnodigingslink voor {email}. Hij wordt alleen nu getoond en is zeven dagen geldig – geef hem zelf door.",
   "users.copy": "Link kopiëren",
   "users.copied": "Gekopieerd",
   "users.accounts": "Accounts",
@@ -641,7 +644,8 @@ export const nl: Messages = {
   "users.disable": "Blokkeren",
   "users.enable": "Deblokkeren",
   "users.delete": "Verwijderen",
-  "users.deleteConfirm": "Het account {email} definitief verwijderen, met beoordelingen en favorieten?",
+  "users.deleteConfirm":
+    "Het account {email} definitief verwijderen, met beoordelingen en favorieten?",
   "users.state.open": "open",
   "users.state.used": "gebruikt",
   "users.state.expired": "verlopen",
@@ -683,7 +687,8 @@ export const nl: Messages = {
   "account.forgotSent":
     "Als er een account met dit adres bestaat, hebben we een link gestuurd. Hij is een uur geldig.",
   "reset.title": "Nieuw wachtwoord instellen",
-  "reset.intro": "Kies een nieuw wachtwoord. Daarna word je overal afgemeld en meld je je er opnieuw mee aan.",
+  "reset.intro":
+    "Kies een nieuw wachtwoord. Daarna word je overal afgemeld en meld je je er opnieuw mee aan.",
   "reset.password": "Nieuw wachtwoord",
   "reset.submit": "Wachtwoord opslaan",
   "reset.missing": "Deze link bevat geen token.",

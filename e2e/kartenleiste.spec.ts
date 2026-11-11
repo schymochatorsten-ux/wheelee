@@ -57,7 +57,10 @@ test.describe("Knopfzeile über der Karte", () => {
     await page.goto("/");
     await page.addStyleTag({ content: "nextjs-portal { pointer-events: none; }" });
 
-    await page.locator("#parkplatz-leiste").getByRole("button", { name: "Vorschlag schließen und Karte freigeben" }).click();
+    await page
+      .locator("#parkplatz-leiste")
+      .getByRole("button", { name: "Vorschlag schließen und Karte freigeben" })
+      .click();
     await page.getByRole("button", { name: /Wohin willst du/u }).click();
 
     const feld = page.getByRole("combobox");

@@ -7,7 +7,9 @@ import { expect, test } from "@playwright/test";
  */
 
 test.describe("Infoseite", () => {
-  test("ist aus den Einstellungen erreichbar und nennt Ziel und Bitte um Rückmeldung", async ({ page }) => {
+  test("ist aus den Einstellungen erreichbar und nennt Ziel und Bitte um Rückmeldung", async ({
+    page,
+  }) => {
     await page.goto("/");
     await page.addStyleTag({ content: "nextjs-portal { pointer-events: none; }" });
     await page.getByRole("tab", { name: "Einstellungen" }).click();

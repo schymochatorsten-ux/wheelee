@@ -13,16 +13,12 @@ import {
   writeMapsPreference,
   type MapsPreference,
 } from "@/lib/maps-preference";
-import {
-  LOCATION_PREFERENCES,
-  writeLocationPreference,
-  type LocationPreference,
-} from "@/lib/location-preference";
+import { writeLocationPreference, type LocationPreference } from "@/lib/location-preference";
 import { mapsShortLabel } from "@/lib/navigation";
 import type { MapsTarget } from "@/lib/navigation";
 import type { PublicUser } from "@/lib/auth/user";
 import type { CityInfo } from "@/lib/parking/spots";
-import { SettingsSection } from "./SettingsSection";
+import { Chevron, ListGroup, Row, SelectRow, Switch } from "./ui/List";
 import { OfflineCities } from "./OfflineCities";
 import { DataDisclaimer } from "./DataDisclaimer";
 import { FeedbackButton } from "./FeedbackButton";
@@ -143,105 +139,94 @@ export function SettingsPanel({
   };
 
   return (
-    <div className="mx-auto max-w-2xl space-y-4">
+    <div className="mx-auto max-w-2xl space-y-6">
       <DataDisclaimer variant="lang" />
-
 
       {/*
         **Der Standort steht vor allem anderen** (ToDo 9.25). Er ist die eine
         Einstellung, von der abhängt, ob die App überhaupt etwas Nützliches
         anzeigt – und die einzige, bei der jemand ein Interesse daran hat, sie
         schnell wiederzufinden.
+
+        **Ein Schalter statt zweier Auswahlfelder** (ToDo 9.31, Torsten:
+        „Slider für an/aus statt 2 Auswahlfelder"). „Standort verwenden" und
+        „Nicht verwenden" waren zwei Zeilen für eine Frage mit zwei Antworten;
+        ein Schalter ist dieselbe Entscheidung in einem Griff und sagt seinen
+        Zustand selbst.
       */}
-      <SettingsSection title={t("settings.location")} description={t("settings.locationNote")}>
-        <fieldset>
-          <legend className="sr-only">{t("settings.location")}</legend>
-          <div className="flex flex-col gap-1">
-            {LOCATION_PREFERENCES.map((value) => (
-              <label
-                key={value}
-                className="flex min-h-11 cursor-pointer items-center gap-3 rounded-lg px-2 focus-within:ring-2 focus-within:ring-blue-600"
-              >
-                <input
-                  type="radio"
-                  name="standort"
-                  value={value}
-                  checked={locationPreference === value}
-                  onChange={() => chooseLocation(value)}
-                  className="h-5 w-5 accent-blue-700"
-                />
-                <span>{t(value === "on" ? "settings.locationOn" : "settings.locationOff")}</span>
-              </label>
-            ))}
-          </div>
-        </fieldset>
-      </SettingsSection>
+      <ListGroup title={t("settings.location")} footer={t("settings.locationNote")}>
+        <Row label={t("settings.locationOn")}>
+          <Switch
+            checked={locationPreference === "on"}
+            onChange={(next) => chooseLocation(next ? "on" : "off")}
+            label={t("settings.locationOn")}
+          />
+        </Row>
+      </ListGroup>
 
-      <SettingsSection title={t("settings.appearance")} description={t("settings.appearanceNote")}>
-        <ThemeToggle />
-      </SettingsSection>
+      <ListGroup title={t("settings.appearance")}>
+        <Row>
+          <ThemeToggle />
+        </Row>
+      </ListGroup>
 
-      <SettingsSection title={t("settings.language")} description={t("settings.languageNote")}>
-        <select
-          id="sprache-auswahl"
-          aria-label={t("settings.languageChoose")}
-          value={locale}
-          onChange={(event) => void chooseLanguage(event.target.value as Locale)}
-          className="min-h-11 w-full rounded-xl border border-neutral-300 bg-white px-3 text-sm focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700 dark:bg-neutral-950"
-        >
-          {LOCALE_CODES.map((code) => (
-            // Der Name steht in der eigenen Sprache und wird nie übersetzt.
-            <option key={code} value={code} lang={code}>
-              {LOCALES[code].name}
-            </option>
-          ))}
-        </select>
-        {LOCALE_CODES.length > 1 && (
-          <p className="mt-2 text-xs text-neutral-500">{t("settings.languageUnreviewed")}</p>
-        )}
-      </SettingsSection>
-
-      <SettingsSection
-        title={t("settings.mapsApp")}
-        description={t("settings.mapsAppNote", { detected: mapsShortLabel(detected, locale) })}
+      {/*
+        **Sprache und Karten-App als Auswahlzeile** (ToDo 9.31): rechts steht,
+        was gilt – wie in den Systemapps. Die neun Sprachen als Liste von
+        Radioknöpfen hätten einen halben Bildschirm gefüllt, die
+        Erklärungssätze darüber den anderen halben. Beides war Text zu einer
+        Sache, die sich selbst erklärt.
+      */}
+      <ListGroup
+        title={t("settings.language")}
+        footer={LOCALE_CODES.length > 1 ? t("settings.languageUnreviewed") : undefined}
       >
-        <fieldset>
-          <legend className="sr-only">{t("settings.mapsAppChoose")}</legend>
-          <div className="flex flex-col gap-1">
-            {MAPS_CHOICES.map((choice) => (
-              <label
-                key={choice.id}
-                className="flex min-h-11 cursor-pointer items-center gap-3 rounded-lg px-2 focus-within:ring-2 focus-within:ring-blue-600"
-              >
-                <input
-                  type="radio"
-                  name="karten-app"
-                  value={choice.id}
-                  checked={preference === choice.id}
-                  onChange={() => choose(choice.id)}
-                  className="h-5 w-5 accent-blue-700"
-                />
-                <span>{t(choice.label)}</span>
-              </label>
-            ))}
-          </div>
-        </fieldset>
+        <SelectRow
+          id="sprache-auswahl"
+          label={t("settings.language")}
+          ariaLabel={t("settings.languageChoose")}
+          value={locale}
+          onChange={(next) => void chooseLanguage(next)}
+          // Der Name steht in der eigenen Sprache und wird nie übersetzt.
+          options={LOCALE_CODES.map((code) => ({
+            value: code,
+            label: LOCALES[code].name,
+            lang: code,
+          }))}
+        />
+      </ListGroup>
 
-        {/*
-          Stand bis zum 2026-10-11 auf „Sobald es Benutzerkonten gibt, lässt
-          sie sich geräteübergreifend speichern" – seit es Konten gibt, war
-          das eine Zusage, die die App nicht einlöst. Die Auswahl liegt
-          weiterhin nur im Browser; sie ins Konto zu übernehmen, steht als
-          ToDo 11.3a offen.
-        */}
-        <p className="mt-2 text-xs text-neutral-500">{t("settings.mapsAppDeviceOnly")}</p>
-      </SettingsSection>
+      <ListGroup title={t("settings.mapsApp")}>
+        <SelectRow
+          // Die Gruppe heißt „Navigation“, die Zeile nennt die Sache:
+          // zweimal dasselbe Wort untereinander sagt nichts.
+          label={t("maps.fallback.short")}
+          ariaLabel={t("settings.mapsAppChoose")}
+          // Vor dem ersten Lesen des Speichers gilt „automatisch" – sonst
+          // stünde dort kurz nichts.
+          value={preference ?? "auto"}
+          onChange={choose}
+          options={MAPS_CHOICES.map((item) => ({
+            value: item.id,
+            label:
+              item.id === "auto"
+                ? t("settings.mapsAppAuto", { detected: mapsShortLabel(detected, locale) })
+                : t(item.label),
+          }))}
+        />
+      </ListGroup>
 
       <OfflineCities cities={cities} />
 
-      <SettingsSection title={t("settings.feedback")} description={t("settings.feedbackNote")}>
-        <FeedbackButton accountEmail={user?.email ?? null} />
-      </SettingsSection>
+      {/*
+        `clip={false}`: Das Formular öffnet als Blatt über der Seite und darf
+        nicht an der Gruppe abgeschnitten werden.
+      */}
+      <ListGroup title={t("settings.feedback")} clip={false}>
+        <Row>
+          <FeedbackButton accountEmail={user?.email ?? null} />
+        </Row>
+      </ListGroup>
 
       {/*
         **Das Konto steht seit dem 2026-11-08 nicht mehr hier** (ToDo 9.27).
@@ -265,56 +250,38 @@ export function SettingsPanel({
         Als normale Links und nicht als Knöpfe: Sie führen auf eine andere
         Seite, sollen sich in einem neuen Tab öffnen lassen und müssen für
         Suchmaschinen als Verweise erkennbar sein.
+
+        **Seit 9.31 als Gruppe von Zeilen mit Winkelzeichen** statt als Reihe
+        blauer Textlinks: Das Städteverzeichnis (19.17) bleibt dabei ein echter
+        Verweis, es sieht nur nicht mehr nach Kleingedrucktem aus.
       */}
-      <footer className="border-t border-neutral-200 pt-4 dark:border-neutral-800">
-        <nav aria-label={t("settings.legal")} className="flex flex-wrap gap-x-5 gap-y-1 text-sm">
-          <Link
-            href="/info"
-            className="inline-flex min-h-11 items-center text-blue-800 hover:underline focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"
+      <footer>
+        <nav aria-label={t("settings.legal")}>
+          <ListGroup
+            title={t("settings.legal")}
+            footer={
+              locale !== "de" ? <span lang={locale}>{t("legal.germanOnly")}</span> : undefined
+            }
           >
-            {t("settings.info")}
-          </Link>
-          {/*
-            Das Städteverzeichnis gehört in die Fußzeile und nicht nur in die
-            Sitemap (19.17): Erst ein echter Verweis macht aus den 3.700
-            Stadtseiten etwas, das eine Suchmaschine für wichtig hält.
-          */}
-          <Link
-            href="/parkplaetze"
-            className="inline-flex min-h-11 items-center text-blue-800 hover:underline focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"
-          >
-            {t("settings.cities")}
-          </Link>
-          <Link
-            href="/impressum"
-            className="inline-flex min-h-11 items-center text-blue-800 hover:underline focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"
-          >
-            {t("settings.imprint")}
-          </Link>
-          <Link
-            href="/datenschutz"
-            className="inline-flex min-h-11 items-center text-blue-800 hover:underline focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"
-          >
-            {t("settings.privacy")}
-          </Link>
-          <Link
-            href="/quellen"
-            className="inline-flex min-h-11 items-center text-blue-800 hover:underline focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"
-          >
-            {t("settings.sources")}
-          </Link>
-          <Link
-            href="/abdeckung"
-            className="inline-flex min-h-11 items-center text-blue-800 hover:underline focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"
-          >
-            {t("settings.coverage")}
-          </Link>
+            {[
+              { href: "/info", label: t("settings.info") },
+              { href: "/parkplaetze", label: t("settings.cities") },
+              { href: "/impressum", label: t("settings.imprint") },
+              { href: "/datenschutz", label: t("settings.privacy") },
+              { href: "/quellen", label: t("settings.sources") },
+              { href: "/abdeckung", label: t("settings.coverage") },
+            ].map((entry) => (
+              <Link
+                key={entry.href}
+                href={entry.href}
+                className="flex min-h-12 items-center justify-between gap-3 px-4 py-2 text-[15px] focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none"
+              >
+                <span>{entry.label}</span>
+                <Chevron direction="right" />
+              </Link>
+            ))}
+          </ListGroup>
         </nav>
-        {locale !== "de" && (
-          <p lang={locale} className="mt-1 text-xs text-neutral-500">
-            {t("legal.germanOnly")}
-          </p>
-        )}
       </footer>
     </div>
   );

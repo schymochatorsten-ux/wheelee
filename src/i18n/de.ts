@@ -118,27 +118,19 @@ export const de = {
   "maps.fallback.short": "Karten-App",
 
   "settings.location": "Standort",
-  "settings.locationNote":
-    "Beim Öffnen fragt die App nach deinem Standort, um den nächsten Parkplatz zu zeigen. Der Standort bleibt auf dem Gerät. Mit Konto gilt die Wahl auf allen Geräten – die Erlaubnis selbst vergibt dein Browser, auf jedem Gerät einmal.",
+  "settings.locationNote": "Der Standort bleibt auf dem Gerät.",
   "settings.locationOn": "Standort verwenden",
-  "settings.locationOff": "Nicht verwenden",
   "settings.appearance": "Darstellung",
-  "settings.appearanceNote":
-    "Dunkel ist die Vorgabe – die App wird oft im Auto und bei Dunkelheit benutzt.",
   "settings.language": "Sprache",
-  "settings.languageNote":
-    "Vorgeschlagen wird die Sprache deines Browsers. Mit Konto gilt die Wahl auf allen Geräten.",
   "settings.languageChoose": "Sprache wählen",
-  "settings.languageUnreviewed":
-    "Die Übersetzungen sind maschinell erstellt und maschinell mehrfach geprüft, nicht von Muttersprachler:innen. Maßgeblich ist die deutsche Fassung; vor Ort gilt immer die Beschilderung.",
-  "settings.mapsApp": "Karten-App für die Navigation",
-  "settings.mapsAppNote":
-    "Womit „Navigation starten“ geöffnet wird. Ohne eigene Wahl richtet sich das nach dem Gerät – hier wäre das {detected}.",
+  "settings.languageUnreviewed": "Maschinell übersetzt. Maßgeblich ist die deutsche Fassung.",
+  "settings.mapsApp": "Navigation",
+  "settings.mapsAppAuto": "Automatisch ({detected})",
   "settings.mapsAppChoose": "Karten-App wählen",
-  "settings.mapsAppDeviceOnly": "Die Auswahl gilt nur auf diesem Gerät – auch mit Konto.",
-  "offline.heading": "Ohne Netz: Parkplätze mitnehmen",
-  "offline.note":
-    "Lädt die Parkplatzdaten einer Stadt auf dieses Gerät, damit sie auch in Parkhaus und Funkloch vollständig da sind. Die Kartenbilder gehören nicht dazu – ohne Netz bleibt die Karte darunter grau, die Marker und die Liste funktionieren.",
+  "offline.heading": "Ohne Netz",
+  "offline.note": "Parkplatzdaten einer Stadt aufs Gerät. Ohne Netz bleibt nur die Karte grau.",
+  "offline.suggestions": "Vorschläge",
+  "offline.pick": "Stadt eingeben",
   "offline.cityLabel": "Stadt",
   "offline.download": "Vorab laden",
   "offline.downloading": "Wird geladen …",
@@ -159,9 +151,7 @@ export const de = {
     "Der Stand ist älter als ein halbes Jahr. Parkplätze können sich geändert haben – bitte vor Ort prüfen.",
   "offline.staleCopy": "Die Kopie ist über einen Monat alt. Mit Netz bitte aktualisieren.",
   "offline.total": "Zusammen belegt: {size}",
-  "settings.feedback": "Fehler melden oder Vorschlag schicken",
-  "settings.feedbackNote":
-    "Stimmt etwas nicht? Fehlt ein Parkplatz oder gibt es einen nicht mehr? Rückmeldungen sind die einzige Quelle, die solche Änderungen bemerkt. Wenn du magst, kannst du eine E-Mail-Adresse angeben – dann antworten wir dir.",
+  "settings.feedback": "Rückmeldung",
   "settings.account": "Konto",
   "settings.accountNote":
     "Freiwillig. Die App funktioniert ohne Konto vollständig – auch das Melden von Fehlern. Ein Konto merkt sich nur, dass deine Rückmeldungen zusammengehören.",
@@ -172,11 +162,11 @@ export const de = {
   "settings.coverage": "Datenabdeckung",
   "settings.info": "Über wheelee",
   "settings.cities": "Alle Städte",
-  "city.synonyms": "Oft auch Schwerbehindertenparkplatz, Rollstuhl-Parkplatz oder Behindertenstellplatz genannt. Gemeint sind Stellplätze, für die ein blauer EU-Parkausweis nötig ist.",
+  "city.synonyms":
+    "Oft auch Schwerbehindertenparkplatz, Rollstuhl-Parkplatz oder Behindertenstellplatz genannt. Gemeint sind Stellplätze, für die ein blauer EU-Parkausweis nötig ist.",
   "info.lead":
     "wheelee hilft Menschen mit Gehbehinderung, schnell den nächsten Behindertenparkplatz zu finden.",
-  "info.reach":
-    "Schon {count} Mal haben Menschen wheelee geöffnet, um einen Parkplatz zu finden.",
+  "info.reach": "Schon {count} Mal haben Menschen wheelee geöffnet, um einen Parkplatz zu finden.",
   "info.goal.title": "Worum es geht",
   "info.goal.text":
     "Wer auf einen Behindertenparkplatz angewiesen ist, kann nicht auf gut Glück durch die Stadt kreisen. wheelee zeigt öffentliche Behindertenparkplätze in ganz Deutschland auf einer Karte, hebt den nächsten zu deinem Standort hervor und öffnet die Route in deiner Karten-App.",
@@ -327,34 +317,41 @@ export const de = {
   "admin.unauthorized": "Nicht angemeldet oder keine Berechtigung.",
   "admin.noConnection": "Keine Verbindung.",
   "api.usernameTaken": "Dieser Benutzername ist schon vergeben.",
-  "api.usernameInvalid": "Benutzername: 3 bis 32 Zeichen, nur Buchstaben, Ziffern, Punkt, Unterstrich und Bindestrich.",
+  "api.usernameInvalid":
+    "Benutzername: 3 bis 32 Zeichen, nur Buchstaben, Ziffern, Punkt, Unterstrich und Bindestrich.",
   "api.emailTaken": "Diese E-Mail-Adresse gehört schon zu einem Konto.",
   "api.invalidEmail": "Diese E-Mail-Adresse sieht nicht richtig aus.",
-  "api.passwordSelf": "Das eigene Passwort wird in den Kontoeinstellungen geändert – dort mit dem bisherigen.",
+  "api.passwordSelf":
+    "Das eigene Passwort wird in den Kontoeinstellungen geändert – dort mit dem bisherigen.",
   "users.edit": "Ändern",
   "users.editClose": "Fertig",
   "users.username": "Benutzername",
   "users.usernameNone": "kein Name – Anmeldung über die Adresse",
   "users.email": "E-Mail-Adresse",
-  "users.emailNote": "Nach der Änderung gilt die Adresse als unbestätigt, bis sie jemand nachweist.",
+  "users.emailNote":
+    "Nach der Änderung gilt die Adresse als unbestätigt, bis sie jemand nachweist.",
   "users.newPassword": "Neues Startpasswort",
-  "users.newPasswordNote": "Wird sofort gesetzt. Beim nächsten Anmelden muss die Person ein eigenes wählen; bis dahin gibt das Konto keine Verwaltungsrechte. Alle Sitzungen enden.",
+  "users.newPasswordNote":
+    "Wird sofort gesetzt. Beim nächsten Anmelden muss die Person ein eigenes wählen; bis dahin gibt das Konto keine Verwaltungsrechte. Alle Sitzungen enden.",
   "users.apply": "Übernehmen",
   "users.saved": "Gespeichert.",
   "users.unverified": "Adresse unbestätigt",
   "users.startPassword": "Startpasswort",
   "users.created": "angelegt {date}",
   "adminMail.title": "Mailversand",
-  "adminMail.intro": "Für „Passwort vergessen“ und das Ändern der E-Mail-Adresse. Ohne diese Angaben sind beide Funktionen ausgeblendet.",
+  "adminMail.intro":
+    "Für „Passwort vergessen“ und das Ändern der E-Mail-Adresse. Ohne diese Angaben sind beide Funktionen ausgeblendet.",
   "adminMail.notify": "Benachrichtigung bei neuer Rückmeldung an",
   "adminMail.notifyNone": "keine Benachrichtigung",
-  "adminMail.notifyNote": "Bei jedem neuen Fehler oder Vorschlag geht sofort eine Mail hinaus. Betreff: „Wheelee Fehler“ oder „Wheelee Verbesserungsvorschlag“. Leer lassen heißt: an alle Admin-Konten.",
+  "adminMail.notifyNote":
+    "Bei jedem neuen Fehler oder Vorschlag geht sofort eine Mail hinaus. Betreff: „Wheelee Fehler“ oder „Wheelee Verbesserungsvorschlag“. Leer lassen heißt: an alle Admin-Konten.",
   "adminMail.notifyInvalid": "Die Adresse für die Benachrichtigung sieht nicht richtig aus.",
   "adminMail.statusOn": "Der Versand läuft.",
   "adminMail.statusOff": "Der Versand ist aus.",
   "adminMail.fromEnv": "Angaben aus der Umgebung des Servers",
   "adminMail.fromDatabase": "Angaben von dieser Seite",
-  "adminMail.envOverridden": "In der Umgebung des Servers stehen ebenfalls Angaben. Es gelten die hier gespeicherten.",
+  "adminMail.envOverridden":
+    "In der Umgebung des Servers stehen ebenfalls Angaben. Es gelten die hier gespeicherten.",
   "adminMail.host": "SMTP-Server",
   "adminMail.port": "Port",
   "adminMail.secure": "TLS von Anfang an (sonst nur bei Port 465)",
@@ -362,23 +359,28 @@ export const de = {
   "adminMail.password": "Passwort",
   "adminMail.passwordKept": "unverändert",
   "adminMail.passwordNone": "keines hinterlegt",
-  "adminMail.passwordNote": "Leer lassen heißt: unverändert. Das gespeicherte Passwort wird nie angezeigt.",
+  "adminMail.passwordNote":
+    "Leer lassen heißt: unverändert. Das gespeicherte Passwort wird nie angezeigt.",
   "adminMail.from": "Absenderadresse",
   "adminMail.publicUrl": "Adresse der App",
   "adminMail.publicUrlNote": "Für die Links in den Mails. Nur https (oder localhost).",
   "adminMail.enabled": "Versand einschalten",
   "adminMail.provider": "Versanddienstleister",
-  "adminMail.providerNote": "Name, Sitz und Stand des Auftragsverarbeitungsvertrags. Steht so in der Datenschutzerklärung; bleibt das Feld leer, nennt sie dort einen Mangel.",
-  "adminMail.privacyNote": "Sobald der Versand läuft, nennt die Datenschutzerklärung ihn von selbst – vollständig ist sie aber erst mit dem Versanddienstleister oben.",
+  "adminMail.providerNote":
+    "Name, Sitz und Stand des Auftragsverarbeitungsvertrags. Steht so in der Datenschutzerklärung; bleibt das Feld leer, nennt sie dort einen Mangel.",
+  "adminMail.privacyNote":
+    "Sobald der Versand läuft, nennt die Datenschutzerklärung ihn von selbst – vollständig ist sie aber erst mit dem Versanddienstleister oben.",
   "adminMail.save": "Speichern",
   "adminMail.test": "Testmail an mich",
   "adminMail.clear": "Angaben verwerfen",
   "adminMail.saved": "Gespeichert.",
-  "adminMail.cleared": "Verworfen. Es gilt wieder, was in der Umgebung des Servers steht – oder nichts.",
+  "adminMail.cleared":
+    "Verworfen. Es gilt wieder, was in der Umgebung des Servers steht – oder nichts.",
   "adminMail.loadFailed": "Die Angaben konnten nicht geladen werden.",
   "adminMail.saveFailed": "Speichern fehlgeschlagen.",
   "adminMail.testFailed": "Der Versand ist fehlgeschlagen.",
-  "adminMail.testSent": "Der Server hat die Mail an {email} angenommen. Ob sie ankommt, zeigt erst das Postfach.",
+  "adminMail.testSent":
+    "Der Server hat die Mail an {email} angenommen. Ob sie ankommt, zeigt erst das Postfach.",
   "adminMail.notConfigured": "Der Versand ist nicht eingerichtet.",
   "adminMail.invalid": "Die Angaben konnten nicht gelesen werden.",
   "adminMail.hostMissing": "Ohne SMTP-Server geht es nicht.",
@@ -464,7 +466,8 @@ export const de = {
   "search.retry": "Erneut",
   "search.recent": "Zuletzt gesucht",
   "search.suggestions": "Vorschläge",
-  "search.unavailableLocal": "Die Online-Suche ist gerade nicht erreichbar. Gezeigt werden Treffer aus unseren Daten und deine letzten Ziele.",
+  "search.unavailableLocal":
+    "Die Online-Suche ist gerade nicht erreichbar. Gezeigt werden Treffer aus unseren Daten und deine letzten Ziele.",
   "search.forget": "Aus den letzten Zielen entfernen",
   "search.kind.city": "Ort",
   "search.kind.street": "Straße",
@@ -523,18 +526,13 @@ export const de = {
   "meta.title": "wheelee – Behindertenparkplätze",
   "meta.description":
     "Behindertenparkplätze in ganz Deutschland auf einer Karte: den nächsten Parkplatz für Menschen mit Gehbehinderung finden, mit Entfernung und Navigation. Kostenlos, ohne Anmeldung, mobil.",
-  "city.title":
-    "Behindertenparkplätze in {city}",
-  "city.intro":
-    "{spots} Standorte mit {spaces} Stellplätzen in {city}.",
-  "city.official":
-    "Die Liste stammt von der Stadtverwaltung.",
+  "city.title": "Behindertenparkplätze in {city}",
+  "city.intro": "{spots} Standorte mit {spaces} Stellplätzen in {city}.",
+  "city.official": "Die Liste stammt von der Stadtverwaltung.",
   "city.crowd":
     "Die Daten stammen aus OpenStreetMap und sind unvollständig; fehlende Einträge bedeuten nicht, dass es dort keine Plätze gibt.",
-  "city.list":
-    "Standorte in {city}",
-  "city.openMap":
-    "Auf der Karte öffnen",
+  "city.list": "Standorte in {city}",
+  "city.openMap": "Auf der Karte öffnen",
   "city.description":
     "Behindertenparkplätze in {city}: {spots} Standorte mit {spaces} Stellplätzen auf der Karte, mit Entfernung und Navigation. Kostenlos, ohne Anmeldung.",
 
@@ -609,7 +607,8 @@ export const de = {
   "api.invitationInvalid": "Die Einladung ist ungültig, abgelaufen oder schon benutzt.",
   "api.tooManyInvitations": "Zu viele Einladungen in kurzer Zeit. Bitte später erneut probieren.",
   "invitation.title": "Einladung annehmen",
-  "invitation.intro": "Du wurdest zu wheelee eingeladen. Vergib ein Passwort, um dein Konto anzulegen.",
+  "invitation.intro":
+    "Du wurdest zu wheelee eingeladen. Vergib ein Passwort, um dein Konto anzulegen.",
   "invitation.password": "Passwort",
   "invitation.submit": "Konto anlegen",
   "invitation.missing": "Dieser Link enthält keine Einladung.",
@@ -618,16 +617,20 @@ export const de = {
   "invitation.toApp": "Zur Karte",
 
   // Benutzerverwaltung (ToDo 18.3)
-  "api.adminCannotChange": "Das geht nicht: Es muss mindestens ein aktives Admin-Konto bleiben, und das eigene Konto löschst du in den Kontoeinstellungen.",
-  "api.lastAdminCannotDelete": "Dein Konto ist das letzte aktive Admin-Konto und lässt sich nicht löschen. Ernenne zuerst jemand anderen zum Admin.",
+  "api.adminCannotChange":
+    "Das geht nicht: Es muss mindestens ein aktives Admin-Konto bleiben, und das eigene Konto löschst du in den Kontoeinstellungen.",
+  "api.lastAdminCannotDelete":
+    "Dein Konto ist das letzte aktive Admin-Konto und lässt sich nicht löschen. Ernenne zuerst jemand anderen zum Admin.",
   "users.title": "Benutzer und Einladungen",
-  "users.intro": "Admins verwalten Konten und laden andere Admins ein. Einladungen versendet die App nicht per E-Mail: Du bekommst einen Link, den du selbst weitergibst.",
+  "users.intro":
+    "Admins verwalten Konten und laden andere Admins ein. Einladungen versendet die App nicht per E-Mail: Du bekommst einen Link, den du selbst weitergibst.",
   "users.inviteEmail": "E-Mail-Adresse der Einladung",
   "users.inviteRole": "Rolle",
   "users.role.admin": "Admin",
   "users.role.user": "Nutzer",
   "users.inviteSubmit": "Einladungslink erzeugen",
-  "users.inviteCreated": "Einladungslink für {email}. Er wird nur jetzt angezeigt und gilt sieben Tage – gib ihn selbst weiter.",
+  "users.inviteCreated":
+    "Einladungslink für {email}. Er wird nur jetzt angezeigt und gilt sieben Tage – gib ihn selbst weiter.",
   "users.copy": "Link kopieren",
   "users.copied": "Kopiert",
   "users.accounts": "Konten",
@@ -687,7 +690,8 @@ export const de = {
   "account.forgotSent":
     "Falls es zu dieser Adresse ein Konto gibt, haben wir einen Link geschickt. Er gilt eine Stunde.",
   "reset.title": "Neues Passwort setzen",
-  "reset.intro": "Wähle ein neues Passwort. Danach bist du überall abgemeldet und meldest dich damit neu an.",
+  "reset.intro":
+    "Wähle ein neues Passwort. Danach bist du überall abgemeldet und meldest dich damit neu an.",
   "reset.password": "Neues Passwort",
   "reset.submit": "Passwort speichern",
   "reset.missing": "Dieser Link enthält kein Token.",

@@ -18,7 +18,8 @@ import { DatabaseSync } from "node:sqlite";
  * Konto (`SET NULL`), deshalb muss `foreign_keys` an sein.
  */
 export default function globalTeardown(): void {
-  const file = process.env.WHEELEE_DB_PATH?.trim() || path.join(process.cwd(), ".data", "wheelee.sqlite");
+  const file =
+    process.env.WHEELEE_DB_PATH?.trim() || path.join(process.cwd(), ".data", "wheelee.sqlite");
   if (!fs.existsSync(file)) return;
 
   const db = new DatabaseSync(file);

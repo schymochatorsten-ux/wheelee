@@ -265,11 +265,7 @@ function UserIcon({ filled }: { filled: boolean }) {
   );
 }
 
-export function MapSection({
-  initialNearby,
-  defaultCity,
-  user: initialUser,
-}: MapSectionProps) {
+export function MapSection({ initialNearby, defaultCity, user: initialUser }: MapSectionProps) {
   const t = useT();
   const cities = useCities(defaultCity);
   const locale = useLocale();
@@ -638,10 +634,18 @@ export function MapSection({
           <h1 className="min-w-0 text-base font-bold break-words hyphens-auto text-blue-800 dark:text-blue-200">
             {t("app.title")}
           </h1>
+          {/*
+            **Ein Segmentschalter wie in den Systemapps von Apple** (ToDo
+            9.31): eine Fläche, darin die Stellungen, die gewählte als weißes
+            Feld. Vorher waren es vier einzelne Knöpfe mit Abstand, von denen
+            der gewählte als blauer Block heraussprang – vier Flächen für eine
+            Entscheidung. Die Mindestgröße von 44 px (9.8) und die Symbole auf
+            dem Telefon (9.28, 9.27) bleiben unverändert.
+          */}
           <div
             role="tablist"
             aria-label={t("view.choose")}
-            className="flex shrink-0 gap-2 text-xs"
+            className="flex shrink-0 gap-0.5 rounded-xl bg-neutral-200/80 p-0.5 text-xs dark:bg-neutral-800/80"
           >
             {views.map((option) => (
               <button
@@ -653,7 +657,7 @@ export function MapSection({
                 // `min-h-11` bleibt: 44 px ist die Mindestgröße, die sich
                 // einhändig treffen lässt (ToDo 9.8). Schlanker heißt hier
                 // weniger Fläche drumherum, nicht kleinere Knöpfe.
-                className={`inline-flex min-h-11 min-w-11 items-center justify-center gap-1.5 rounded-xl px-3 font-medium transition-colors focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none ${
+                className={`inline-flex min-h-11 min-w-11 items-center justify-center gap-1.5 rounded-[0.6rem] px-3 font-medium transition-colors focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none ${
                   view === option
                     ? // **Flächig, ohne Schein und ohne Verlauf** (ToDo 9.29).
                       // `shadow-lg shadow-blue-700/30` legte einen weich
@@ -663,10 +667,17 @@ export function MapSection({
                       // Torsten am 2026-11-08 eingekringelt. Ein Schatten,
                       // der nach Leuchten aussieht, sagt nichts; welcher
                       // Reiter gewählt ist, sagt die Füllung.
-                      "bg-blue-700 text-white"
-                    : // Ebenfalls deckend statt halbdurchsichtig: Dahinter
-                      // liegt nur die Kopfzeile, zu sehen gibt es da nichts.
-                      "bg-neutral-100 text-neutral-700 hover:bg-neutral-200 dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700"
+                      //
+                      // **Seit 9.31 weiß statt blau:** Im Segmentschalter
+                      // trägt die erhobene Fläche die Auswahl. Blau wäre hier
+                      // ein zweites Signal für dieselbe Sache und nimmt der
+                      // Kopfzeile ihre Ruhe.
+                      // Im Dunkelmodus die **dunklere** Fläche: Die Palette
+                      // dieses Projekts dreht die Grauwerte (globals.css),
+                      // ein helleres Grau trüge weiße Schrift nur mit 2,6 : 1
+                      // – WCAG AA verlangt 4,5 : 1 (9.7).
+                      "bg-white text-neutral-900 shadow-sm dark:bg-neutral-950 dark:text-white"
+                    : "text-neutral-700 dark:text-neutral-300"
                 }`}
               >
                 {/*

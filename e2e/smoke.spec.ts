@@ -258,10 +258,12 @@ test.describe("wheelee", () => {
     await page.goto("/");
     await page.getByRole("tab", { name: "Einstellungen" }).click();
 
-    await page.getByRole("radio", { name: "Waze" }).check();
+    // Seit 9.31 eine Auswahlzeile statt einer Liste von Radioknöpfen.
+    const auswahl = page.getByRole("combobox", { name: "Karten-App wählen" });
+    await auswahl.selectOption("waze");
     await page.reload();
 
     await page.getByRole("tab", { name: "Einstellungen" }).click();
-    await expect(page.getByRole("radio", { name: "Waze" })).toBeChecked();
+    await expect(page.getByRole("combobox", { name: "Karten-App wählen" })).toHaveValue("waze");
   });
 });

@@ -126,27 +126,19 @@ export const pl: Messages = {
   "maps.fallback.short": "Aplikacja map",
 
   "settings.location": "Lokalizacja",
-  "settings.locationNote":
-    "Po otwarciu aplikacja pyta o Twoją lokalizację, aby pokazać najbliższe miejsce parkingowe. Lokalizacja pozostaje na urządzeniu. Z kontem wybór obowiązuje na wszystkich urządzeniach; samą zgodę wydaje przeglądarka, raz na każdym urządzeniu.",
+  "settings.locationNote": "Lokalizacja pozostaje na urządzeniu.",
   "settings.locationOn": "Używaj lokalizacji",
-  "settings.locationOff": "Nie używaj",
   "settings.appearance": "Wygląd",
-  "settings.appearanceNote":
-    "Domyślnie ustawiony jest ciemny motyw – aplikacji często używa się w samochodzie i po ciemku.",
   "settings.language": "Język",
-  "settings.languageNote":
-    "Najpierw proponowany jest język Twojej przeglądarki. Z kontem Twój wybór obowiązuje na wszystkich urządzeniach.",
   "settings.languageChoose": "Wybierz język",
-  "settings.languageUnreviewed":
-    "Tłumaczenia powstały maszynowo i zostały kilkakrotnie sprawdzone maszynowo, nie przez osoby, dla których polski jest językiem ojczystym. Obowiązującą wersją jest niemiecka; na miejscu zawsze obowiązują znaki i oznaczenia.",
-  "settings.mapsApp": "Aplikacja map do nawigacji",
-  "settings.mapsAppNote":
-    "Co otwiera „Rozpocznij nawigację”. Bez własnego wyboru zależy to od urządzenia – tutaj byłoby to: {detected}.",
+  "settings.languageUnreviewed": "Tłumaczenie maszynowe. Obowiązuje wersja niemiecka.",
+  "settings.mapsApp": "Nawigacja",
+  "settings.mapsAppAuto": "Automatycznie ({detected})",
   "settings.mapsAppChoose": "Wybierz aplikację map",
-  "settings.mapsAppDeviceOnly": "Wybór obowiązuje tylko na tym urządzeniu – także z kontem.",
-  "offline.heading": "Offline: zabierz dane o parkingach ze sobą",
-  "offline.note":
-    "Pobiera dane o miejscach parkingowych jednego miasta na to urządzenie, by były w pełni dostępne w parkingach wielopoziomowych i miejscach bez zasięgu. Kafelki mapy nie są wliczone – bez połączenia mapa w tle pozostaje szara, ale znaczniki i lista działają.",
+  "offline.heading": "Bez sieci",
+  "offline.note": "Dane miasta na urządzeniu. Bez sieci szara pozostaje tylko mapa.",
+  "offline.suggestions": "Podpowiedzi",
+  "offline.pick": "Wpisz miasto",
   "offline.cityLabel": "Miasto",
   "offline.download": "Pobierz",
   "offline.downloading": "Ładowanie …",
@@ -167,9 +159,7 @@ export const pl: Messages = {
     "Dane mają ponad pół roku. Miejsca parkingowe mogły się zmienić – sprawdź na miejscu.",
   "offline.staleCopy": "Kopia ma ponad miesiąc. Zaktualizuj ją, gdy będziesz online.",
   "offline.total": "Łącznie zajmuje: {size}",
-  "settings.feedback": "Zgłoś błąd lub wyślij sugestię",
-  "settings.feedbackNote":
-    "Coś jest nie tak? Brakuje miejsca parkingowego albo go już nie ma? Zgłoszenia to jedyne źródło, które zauważa takie zmiany. Jeśli chcesz, możesz podać adres e-mail – wtedy odpowiemy.",
+  "settings.feedback": "Zgłoszenia",
   "settings.account": "Konto",
   "settings.accountNote":
     "Opcjonalnie. Aplikacja działa w pełni także bez konta – łącznie ze zgłaszaniem błędów. Konto zapamiętuje jedynie, że Twoje zgłoszenia są ze sobą powiązane.",
@@ -180,11 +170,11 @@ export const pl: Messages = {
   "settings.coverage": "Pokrycie danych",
   "settings.info": "O wheelee",
   "settings.cities": "Wszystkie miasta",
-  "city.synonyms": "Nazywane też kopertami dla niepełnosprawnych lub miejscami dla osób na wózku. To miejsca, na których wymagana jest niebieska europejska karta parkingowa.",
+  "city.synonyms":
+    "Nazywane też kopertami dla niepełnosprawnych lub miejscami dla osób na wózku. To miejsca, na których wymagana jest niebieska europejska karta parkingowa.",
   "info.lead":
     "wheelee pomaga osobom z ograniczoną mobilnością szybko znaleźć najbliższe miejsce parkingowe dla osób niepełnosprawnych.",
-  "info.reach":
-    "wheelee otwarto już {count} razy, aby znaleźć miejsce parkingowe.",
+  "info.reach": "wheelee otwarto już {count} razy, aby znaleźć miejsce parkingowe.",
   "info.goal.title": "O co chodzi",
   "info.goal.text":
     "Kto potrzebuje miejsca dla osób niepełnosprawnych, nie może krążyć po mieście na szczęście. wheelee pokazuje na mapie publiczne miejsca parkingowe dla osób niepełnosprawnych w całych Niemczech, wyróżnia to najbliższe Twojej lokalizacji i otwiera trasę w Twojej aplikacji map.",
@@ -296,9 +286,9 @@ export const pl: Messages = {
     "Ten adres e-mail wygląda niepoprawnie. W przeciwnym razie zostaw pole puste.",
   "feedback.offline": "Brak połączenia. Zgłoszenie nie zostało wysłane – spróbuj ponownie później.",
   "feedback.thanks": "Dziękujemy – zgłoszenie dotarło.",
-  "feedback.willReply":
-    "Przyjrzymy się mu i odpowiemy e-mailem, jeśli będzie coś do powiedzenia.",
-  "feedback.noReply": "Nie podano adresu, więc nie otrzymasz odpowiedzi – Twoje zgłoszenie mimo to pomaga.",
+  "feedback.willReply": "Przyjrzymy się mu i odpowiemy e-mailem, jeśli będzie coś do powiedzenia.",
+  "feedback.noReply":
+    "Nie podano adresu, więc nie otrzymasz odpowiedzi – Twoje zgłoszenie mimo to pomaga.",
   "feedback.again": "Zgłoś coś innego",
   "feedback.done": "Gotowe",
   "feedback.whatAbout": "Czego to dotyczy?",
@@ -326,13 +316,15 @@ export const pl: Messages = {
   "rating.lastGone": "Ostatnie zgłoszenie likwidacji:",
   "rating.needAccount":
     "Do oceniania potrzebne jest konto – w „Ustawienia → Konto”. Informacje możesz mimo to przeglądać bez niego.",
-  "rating.voted": "Oddano głos. Ponowne dotknięcie wycofuje go, drugi przycisk zmienia go na przeciwny.",
+  "rating.voted":
+    "Oddano głos. Ponowne dotknięcie wycofuje go, drugi przycisk zmienia go na przeciwny.",
   "rating.votes": "{label}, głosów: {count}",
 
   "admin.unauthorized": "Nie zalogowano lub brak uprawnień.",
   "admin.noConnection": "Brak połączenia.",
   "api.usernameTaken": "Ta nazwa użytkownika jest już zajęta.",
-  "api.usernameInvalid": "Nazwa użytkownika: od 3 do 32 znaków, tylko litery, cyfry, kropka, podkreślenie i myślnik.",
+  "api.usernameInvalid":
+    "Nazwa użytkownika: od 3 do 32 znaków, tylko litery, cyfry, kropka, podkreślenie i myślnik.",
   "api.emailTaken": "Ten adres e-mail należy już do konta.",
   "api.invalidEmail": "Ten adres e-mail nie wygląda poprawnie.",
   "api.passwordSelf": "Własne hasło zmienia się w ustawieniach konta – tam z dotychczasowym.",
@@ -343,17 +335,20 @@ export const pl: Messages = {
   "users.email": "Adres e-mail",
   "users.emailNote": "Po zmianie adres jest niepotwierdzony, dopóki ktoś go nie wykaże.",
   "users.newPassword": "Nowe hasło początkowe",
-  "users.newPasswordNote": "Ustawiane natychmiast. Przy następnym logowaniu osoba musi wybrać własne; do tego czasu konto nie daje uprawnień administracyjnych. Wszystkie sesje się kończą.",
+  "users.newPasswordNote":
+    "Ustawiane natychmiast. Przy następnym logowaniu osoba musi wybrać własne; do tego czasu konto nie daje uprawnień administracyjnych. Wszystkie sesje się kończą.",
   "users.apply": "Zastosuj",
   "users.saved": "Zapisano.",
   "users.unverified": "Adres niepotwierdzony",
   "users.startPassword": "Hasło początkowe",
   "users.created": "utworzono {date}",
   "adminMail.title": "Wysyłka e-maili",
-  "adminMail.intro": "Do „nie pamiętam hasła” i zmiany adresu e-mail. Bez tych danych obie funkcje są ukryte.",
+  "adminMail.intro":
+    "Do „nie pamiętam hasła” i zmiany adresu e-mail. Bez tych danych obie funkcje są ukryte.",
   "adminMail.notify": "Powiadomienie o nowej informacji zwrotnej na",
   "adminMail.notifyNone": "bez powiadomienia",
-  "adminMail.notifyNote": "Każdy nowy błąd lub pomysł od razu wysyła wiadomość. Temat: „Wheelee Fehler” lub „Wheelee Verbesserungsvorschlag”. Puste pole oznacza: do wszystkich kont administracyjnych.",
+  "adminMail.notifyNote":
+    "Każdy nowy błąd lub pomysł od razu wysyła wiadomość. Temat: „Wheelee Fehler” lub „Wheelee Verbesserungsvorschlag”. Puste pole oznacza: do wszystkich kont administracyjnych.",
   "adminMail.notifyInvalid": "Adres powiadomienia nie wygląda poprawnie.",
   "adminMail.statusOn": "Wysyłka działa.",
   "adminMail.statusOff": "Wysyłka jest wyłączona.",
@@ -367,14 +362,17 @@ export const pl: Messages = {
   "adminMail.password": "Hasło",
   "adminMail.passwordKept": "bez zmian",
   "adminMail.passwordNone": "brak zapisanego",
-  "adminMail.passwordNote": "Pozostawienie pustego pola oznacza bez zmian. Zapisane hasło nigdy nie jest pokazywane.",
+  "adminMail.passwordNote":
+    "Pozostawienie pustego pola oznacza bez zmian. Zapisane hasło nigdy nie jest pokazywane.",
   "adminMail.from": "Adres nadawcy",
   "adminMail.publicUrl": "Adres aplikacji",
   "adminMail.publicUrlNote": "Do linków w e-mailach. Tylko https (lub localhost).",
   "adminMail.enabled": "Włącz wysyłkę",
   "adminMail.provider": "Dostawca usługi pocztowej",
-  "adminMail.providerNote": "Nazwa, siedziba i stan umowy powierzenia przetwarzania. Tak wygląda to w polityce prywatności; puste pole oznacza tam wskazanie braku.",
-  "adminMail.privacyNote": "Gdy wysyłka działa, polityka prywatności wspomina o niej sama – pełna jest jednak dopiero z dostawcą podanym powyżej.",
+  "adminMail.providerNote":
+    "Nazwa, siedziba i stan umowy powierzenia przetwarzania. Tak wygląda to w polityce prywatności; puste pole oznacza tam wskazanie braku.",
+  "adminMail.privacyNote":
+    "Gdy wysyłka działa, polityka prywatności wspomina o niej sama – pełna jest jednak dopiero z dostawcą podanym powyżej.",
   "adminMail.save": "Zapisz",
   "adminMail.test": "Wyślij test do mnie",
   "adminMail.clear": "Odrzuć dane",
@@ -383,7 +381,8 @@ export const pl: Messages = {
   "adminMail.loadFailed": "Nie udało się wczytać danych.",
   "adminMail.saveFailed": "Zapis nie powiódł się.",
   "adminMail.testFailed": "Wysyłka nie powiodła się.",
-  "adminMail.testSent": "Serwer przyjął wiadomość na adres {email}. Czy dotrze, pokaże dopiero skrzynka.",
+  "adminMail.testSent":
+    "Serwer przyjął wiadomość na adres {email}. Czy dotrze, pokaże dopiero skrzynka.",
   "adminMail.notConfigured": "Wysyłka nie jest skonfigurowana.",
   "adminMail.invalid": "Nie udało się odczytać danych.",
   "adminMail.hostMissing": "Bez serwera SMTP się nie obejdzie.",
@@ -468,7 +467,8 @@ export const pl: Messages = {
   "search.retry": "Spróbuj ponownie",
   "search.recent": "Ostatnie wyszukiwania",
   "search.suggestions": "Propozycje",
-  "search.unavailableLocal": "Wyszukiwanie online jest obecnie niedostępne. Pokazano trafienia z naszych danych i Twoje ostatnie cele.",
+  "search.unavailableLocal":
+    "Wyszukiwanie online jest obecnie niedostępne. Pokazano trafienia z naszych danych i Twoje ostatnie cele.",
   "search.forget": "Usuń z ostatnich celów",
   "search.kind.city": "Miejscowość",
   "search.kind.street": "Ulica",
@@ -510,7 +510,8 @@ export const pl: Messages = {
     "Odmówiono dostępu do lokalizacji. Mapa pokazuje centrum miasta – wszystkie miejsca parkingowe pozostają widoczne.",
   "geo.unavailable":
     "Twoje urządzenie nie mogło ustalić lokalizacji. Mapa pokazuje centrum miasta – wszystkie miejsca parkingowe pozostają widoczne.",
-  "geo.timeout": "Ustalanie Twojej lokalizacji trwało zbyt długo. Możesz spróbować ponownie lub korzystać z mapy tak, jak jest.",
+  "geo.timeout":
+    "Ustalanie Twojej lokalizacji trwało zbyt długo. Możesz spróbować ponownie lub korzystać z mapy tak, jak jest.",
 
   "map.clusterOne": "{count} miejsce parkingowe w tym obszarze, dotknij, aby rozdzielić",
   "map.clusterMany": "Miejsc parkingowych w tym obszarze: {count}, dotknij, aby rozdzielić",
@@ -526,18 +527,13 @@ export const pl: Messages = {
   "meta.title": "wheelee – parkowanie dla osób z niepełnosprawnościami",
   "meta.description":
     "Miejsca parkingowe dla osób niepełnosprawnych w całych Niemczech na jednej mapie: znajdź najbliższe, z odległością i nawigacją. Za darmo, bez rejestracji, na telefon.",
-  "city.title":
-    "Miejsca parkingowe dla osób niepełnosprawnych: {city}",
-  "city.intro":
-    "{spots} lokalizacji z {spaces} miejscami: {city}.",
-  "city.official":
-    "Lista pochodzi z urzędu miasta.",
+  "city.title": "Miejsca parkingowe dla osób niepełnosprawnych: {city}",
+  "city.intro": "{spots} lokalizacji z {spaces} miejscami: {city}.",
+  "city.official": "Lista pochodzi z urzędu miasta.",
   "city.crowd":
     "Dane pochodzą z OpenStreetMap i są niekompletne; brak wpisu nie oznacza, że nie ma tam miejsc.",
-  "city.list":
-    "Lokalizacje: {city}",
-  "city.openMap":
-    "Otwórz na mapie",
+  "city.list": "Lokalizacje: {city}",
+  "city.openMap": "Otwórz na mapie",
   "city.description":
     "Miejsca parkingowe dla osób niepełnosprawnych: {city}. {spots} lokalizacji z {spaces} miejscami na mapie, z odległością i nawigacją. Za darmo, bez rejestracji.",
 
@@ -570,8 +566,7 @@ export const pl: Messages = {
   "api.notFound": "Nie znaleziono.",
   "api.tooManyLogins": "Zbyt wiele prób logowania. Spróbuj ponownie za kilka minut.",
   "api.credentialsRequired": "Podaj adres e-mail i hasło.",
-  "api.tooManyPasswordChanges":
-    "Zbyt wiele prób zmiany hasła. Spróbuj ponownie za kilka minut.",
+  "api.tooManyPasswordChanges": "Zbyt wiele prób zmiany hasła. Spróbuj ponownie za kilka minut.",
   "api.passwordRequired": "Podaj hasło.",
   "api.passwordWrong": "Hasło jest nieprawidłowe.",
   "api.oldPasswordRequired": "Podaj obecne hasło.",
@@ -617,16 +612,20 @@ export const pl: Messages = {
   "invitation.toApp": "Przejdź do mapy",
 
   // Benutzerverwaltung (ToDo 18.3)
-  "api.adminCannotChange": "To niemożliwe: musi pozostać co najmniej jedno aktywne konto administratora, a własne konto usuwasz w ustawieniach konta.",
-  "api.lastAdminCannotDelete": "Twoje konto jest ostatnim aktywnym kontem administratora i nie można go usunąć. Najpierw nadaj uprawnienia administratora komuś innemu.",
+  "api.adminCannotChange":
+    "To niemożliwe: musi pozostać co najmniej jedno aktywne konto administratora, a własne konto usuwasz w ustawieniach konta.",
+  "api.lastAdminCannotDelete":
+    "Twoje konto jest ostatnim aktywnym kontem administratora i nie można go usunąć. Najpierw nadaj uprawnienia administratora komuś innemu.",
   "users.title": "Użytkownicy i zaproszenia",
-  "users.intro": "Administratorzy zarządzają kontami i zapraszają innych administratorów. Aplikacja nie wysyła zaproszeń e-mailem: otrzymujesz link, który przekazujesz samodzielnie.",
+  "users.intro":
+    "Administratorzy zarządzają kontami i zapraszają innych administratorów. Aplikacja nie wysyła zaproszeń e-mailem: otrzymujesz link, który przekazujesz samodzielnie.",
   "users.inviteEmail": "Adres e-mail do zaproszenia",
   "users.inviteRole": "Rola",
   "users.role.admin": "Administrator",
   "users.role.user": "Użytkownik",
   "users.inviteSubmit": "Utwórz link z zaproszeniem",
-  "users.inviteCreated": "Link z zaproszeniem dla {email}. Jest pokazywany tylko teraz i ważny przez siedem dni – przekaż go samodzielnie.",
+  "users.inviteCreated":
+    "Link z zaproszeniem dla {email}. Jest pokazywany tylko teraz i ważny przez siedem dni – przekaż go samodzielnie.",
   "users.copy": "Kopiuj link",
   "users.copied": "Skopiowano",
   "users.accounts": "Konta",
@@ -644,7 +643,8 @@ export const pl: Messages = {
   "users.disable": "Zablokuj",
   "users.enable": "Odblokuj",
   "users.delete": "Usuń",
-  "users.deleteConfirm": "Usunąć na stałe konto {email} wraz z jego ocenami i zapisanymi miejscami parkingowymi?",
+  "users.deleteConfirm":
+    "Usunąć na stałe konto {email} wraz z jego ocenami i zapisanymi miejscami parkingowymi?",
   "users.state.open": "otwarte",
   "users.state.used": "wykorzystane",
   "users.state.expired": "wygasłe",
@@ -686,7 +686,8 @@ export const pl: Messages = {
   "account.forgotSent":
     "Jeśli istnieje konto z tym adresem, wysłaliśmy link. Jest ważny przez godzinę.",
   "reset.title": "Ustaw nowe hasło",
-  "reset.intro": "Wybierz nowe hasło. Potem nastąpi wylogowanie ze wszystkich urządzeń i zalogujesz się nim ponownie.",
+  "reset.intro":
+    "Wybierz nowe hasło. Potem nastąpi wylogowanie ze wszystkich urządzeń i zalogujesz się nim ponownie.",
   "reset.password": "Nowe hasło",
   "reset.submit": "Zapisz hasło",
   "reset.missing": "Ten link nie zawiera tokenu.",

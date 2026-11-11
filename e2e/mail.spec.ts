@@ -18,13 +18,17 @@ test("ohne Mailversand meldet die Schnittstelle, dass er aus ist", async ({ requ
 test("ohne Mailversand gibt es die Endpunkte nicht", async ({ request }) => {
   const forgot = await request.post("/api/auth/forgot", { data: { email: "a@example.org" } });
   expect(forgot.status()).toBe(404);
-  const reset = await request.post("/api/auth/reset", { data: { token: "x", password: "ein langes Passwort" } });
+  const reset = await request.post("/api/auth/reset", {
+    data: { token: "x", password: "ein langes Passwort" },
+  });
   expect(reset.status()).toBe(404);
   const confirm = await request.post("/api/account/email/confirm", { data: { token: "x" } });
   expect(confirm.status()).toBe(404);
 });
 
-test("die Anmeldemaske bietet kein „Passwort vergessen“ an, sondern sagt, warum", async ({ page }) => {
+test("die Anmeldemaske bietet kein „Passwort vergessen“ an, sondern sagt, warum", async ({
+  page,
+}) => {
   await page.goto("/");
   await page.getByRole("tab", { name: "Konto" }).click();
   await expect(page.getByText("lässt sich derzeit nicht selbst zurücksetzen")).toBeVisible();

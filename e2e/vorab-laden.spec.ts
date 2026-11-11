@@ -10,7 +10,17 @@ import { expect, test } from "@playwright/test";
 async function openOfflineSection(page: import("@playwright/test").Page) {
   await page.goto("/");
   await page.getByRole("tab", { name: "Einstellungen" }).click();
-  await expect(page.getByRole("heading", { name: "Ohne Netz: Parkplätze mitnehmen" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Ohne Netz" })).toBeVisible();
+}
+
+/**
+ * Stadt eintippen und den Vorschlag antippen – seit 9.31 ist das der ganze
+ * Weg: ein Feld, Vorschläge ab dem ersten Buchstaben, und der Vorschlag ist
+ * der Knopf. Vorher waren es Suchfeld, Auswahlliste und „Vorab laden".
+ */
+async function stadtLaden(page: import("@playwright/test").Page, name: string, slug: string) {
+  await page.getByRole("combobox", { name: "Stadt" }).fill(name);
+  await page.getByTestId(`offline-vorschlag-${slug}`).click();
 }
 
 test("Stadt vorab laden, Größe und Alter sehen, wieder löschen", async ({ page }) => {
@@ -22,10 +32,7 @@ test("Stadt vorab laden, Größe und Alter sehen, wieder löschen", async ({ pag
   await page.getByRole("tab", { name: "Einstellungen" }).click();
   await expect(page.getByText("Noch keine Stadt auf diesem Gerät gespeichert.")).toBeVisible();
 
-  // Die Auswahl zeigt nicht alle Städte auf einmal (2e.14): erst eingrenzen.
-  await page.getByRole("searchbox", { name: "Stadt suchen" }).fill("Köln");
-  await page.getByTestId("offline-city").selectOption("koeln");
-  await page.getByRole("button", { name: "Vorab laden" }).click();
+  await stadtLaden(page, "Köln", "koeln");
 
   const entry = page.getByTestId("offline-koeln");
   await expect(entry).toBeVisible();
@@ -51,10 +58,7 @@ test("ohne Netz kommen auch ungesehene Ausschnitte aus den geladenen Daten", asy
   test.skip(!active, "Kein Service Worker aktiv – vermutlich Entwicklungsbetrieb.");
 
   await openOfflineSection(page);
-  // Die Auswahl zeigt nicht alle Städte auf einmal (2e.14): erst eingrenzen.
-  await page.getByRole("searchbox", { name: "Stadt suchen" }).fill("Köln");
-  await page.getByTestId("offline-city").selectOption("koeln");
-  await page.getByRole("button", { name: "Vorab laden" }).click();
+  await stadtLaden(page, "Köln", "koeln");
   await expect(page.getByTestId("offline-koeln")).toBeVisible();
 
   // Ein Ausschnitt, den die Karte nie angefragt hat (Kommastellen gibt es sonst nirgends).

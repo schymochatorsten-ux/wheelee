@@ -58,7 +58,9 @@ test.describe("Englisch", () => {
     const page = await context.newPage();
     await page.goto("/");
     await page.getByRole("tab", { name: "Settings" }).click();
-    await expect(page.getByRole("heading", { name: "Please read before you set off" })).toBeVisible();
+    await expect(
+      page.getByRole("heading", { name: "Please read before you set off" }),
+    ).toBeVisible();
     await expect(page.getByText("on site, the signs and markings apply")).toBeVisible();
     await expect(page.getByText("Bitte vor der Fahrt lesen")).toHaveCount(0);
     await context.close();

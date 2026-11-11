@@ -74,6 +74,10 @@ maschinelle Mehrfachprüfung.
 - [~] 2d.8a **Städte mit ungenutzter amtlicher Quelle.** München, Bielefeld, Köln und – seit dem 2026-11-11 – Bochum sind abgeschlossen; Befunde in [Erledigt.md](Erledigt.md). Offen ist einer:
   - [~] **Heidelberg – Anfrage ist raus, Antwort steht aus.** Am 2026-11-11 an `mobilitaet@heidelberg.de` geschickt (Wortlaut und Befund in [Erledigt.md](Erledigt.md)): neuer Bezugsweg, sonst die Liste einmalig samt Lizenzhinweis. **Hier zu tun ist nichts, bis eine Antwort kommt** – danach entweder Import oder, bei Absage, Vermerk und Schluss. Der Bestand vom 2026-10-08 (214 Standorte) bleibt bis dahin. **Ohne Antwort nach drei bis vier Wochen einmal nachfassen.**
 
+## 9. Darstellung und Bedienung
+
+- [~] 9.31 **Die übrigen Ansichten auf die Form der Systemapps bringen.** Gebaut sind Einstellungen, Kopfzeile und Detailblatt (Befund und Begründung in [Erledigt.md](Erledigt.md)); dieselben Bausteine aus `src/components/ui/List.tsx` fehlen noch in **Konto** (`AccountPanel.tsx`), **Verwaltung** (`AdminUsers`, `AdminMail`, `FeedbackAdmin`, `ReportedSpots`, `AdminVisits` – dort steht noch `SettingsSection`), **Listenansicht** (`SpotList`, `SpotRow`) und den **Rechtstexten** (`LegalPage`). Pro Ansicht gilt dasselbe: Zeile statt Kästchen, Schalter statt zweier Felder, Erklärung als Fußnote – und jeder gekürzte Satz in allen neun Sprachdateien.
+
 ## 12. Qualität und Deployment
 
 - [~] 12.17 **Gesamttest: Durchgang von Hand auf dem Telefon.** Offen ist nur noch dieser – Karte, Suche, Navigation, Rückmeldung mit Mail, An- und Abmelden, Verwaltung. **Braucht Torsten** (Gerät und laufender Betrieb). Der maschinelle Teil ist am 2026-11-10 erneut gelaufen (nach 12.19), Zahlen in [Erledigt.md](Erledigt.md). Was auffällt, wird als eigener Punkt aufgenommen und nicht nebenbei geändert. **Läuft danach noch etwas am Code, gehört der maschinelle Teil wiederholt.**

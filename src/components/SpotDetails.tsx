@@ -96,13 +96,24 @@ export function SpotDetails({
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [onClose]);
 
+  /*
+   * **Blatt wie in den Systemapps von Apple** (ToDo 9.31): größerer Eckradius
+   * und oben der Greifbalken, der sagt, dass dieses Blatt über der Karte liegt
+   * und wieder weggeht. Er ist nur Zeichen, kein Bedienelement – gezogen wird
+   * hier nichts, und ein Balken, der nach Griff aussieht, ohne einer zu sein,
+   * bliebe ein Versprechen; geschlossen wird weiter mit dem × daneben.
+   */
   return (
     <aside
       role="dialog"
       aria-modal="false"
       aria-labelledby="spot-details-title"
-      className="pointer-events-auto absolute inset-x-0 bottom-0 z-[1000] max-h-[70vh] overflow-y-auto rounded-t-2xl bg-white p-4 pb-6 shadow-[0_-4px_24px_rgba(0,0,0,.18)] sm:inset-x-auto sm:right-4 sm:bottom-4 sm:w-96 sm:rounded-2xl dark:bg-neutral-900"
+      className="pointer-events-auto absolute inset-x-0 bottom-0 z-[1000] max-h-[70vh] overflow-y-auto rounded-t-3xl bg-white p-4 pt-2 pb-6 shadow-[0_-4px_24px_rgba(0,0,0,.18)] sm:inset-x-auto sm:right-4 sm:bottom-4 sm:w-96 sm:rounded-3xl sm:pt-4 dark:bg-neutral-900"
     >
+      <div
+        aria-hidden="true"
+        className="mx-auto mb-2 h-1 w-9 rounded-full bg-neutral-300 sm:hidden dark:bg-neutral-700"
+      />
       <div className="flex items-start gap-3">
         <h2 id="spot-details-title" className="flex-1 text-lg leading-snug font-semibold">
           {spotTitle(spot)}

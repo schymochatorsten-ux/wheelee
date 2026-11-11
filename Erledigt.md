@@ -10,12 +10,12 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-11):** **250 Einträge** auf oberster Ebene –
-davon 224, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
-Einzeiler unten), und 26, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
+**Stand (nachgezählt 2026-11-11):** **251 Einträge** auf oberster Ebene –
+davon 225, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+Einzeiler unten), und 26, die das nicht tun. _Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
-Zahlen oben.*
+Zahlen oben._
 Einige stehen als `[~]`: Ihr gebauter Teil steht hier, ihr offener Rest in
 `ToDos.md`.
 
@@ -107,13 +107,13 @@ Aufgaben.
 - [x] 2a.5 **Lizenz je Stadt: fünf von zwölf fehlenden an der Quelle belegt, der Rest bewusst offen gelassen** (2026-10-24). Datenmodell und Anzeige standen schon (Eintrag „Lizenzangabe je Stadt im Datenmodell“ in Abschnitt 10). Nachgezählt: Von 23 amtlichen Städten hatten **12** keine Lizenz (nicht 13 wie in `ToDos.md`; Dortmund zählt nicht, seine Quellenangabe nennt „Zero 2.0“ und `licenseOf` löst sie auf).
   - **Eingetragen**, mit Fundstelle in `data/<stadt>.overrides.json` (`license`, `licenseSource`, `licenseCheckedAt`) und im Feld `license` der Seed-Datei:
 
-    | Stadt | Lizenz | Beleg |
-    | --- | --- | --- |
-    | Berlin | Datenlizenz Deutschland – Zero – 2.0 | Metadatensatz auf gdi.berlin.de, Feld „Other constraints“, wörtlich |
-    | Düsseldorf | Datenlizenz Deutschland – Zero – 2.0 | Katalogeintrag auf open.nrw (Spiegel, **nicht** das Düsseldorfer Portal selbst) |
-    | Heidelberg | CC BY 4.0 | Datensatzseite auf ckan.datenplattform.heidelberg.de |
-    | Ulm | CC0 | Datensatzseite auf datenhub.ulm.de („Creative Commons CCZero“; eine andere Ressource nennt „Domínio Público“, die Seite selbst nennt für die GeoJSON-Datei keine eigene) |
-    | Neuss | CC0 | API-Metadaten auf opendata.rhein-kreis-neuss.de |
+    | Stadt      | Lizenz                               | Beleg                                                                                                                                                                    |
+    | ---------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+    | Berlin     | Datenlizenz Deutschland – Zero – 2.0 | Metadatensatz auf gdi.berlin.de, Feld „Other constraints“, wörtlich                                                                                                      |
+    | Düsseldorf | Datenlizenz Deutschland – Zero – 2.0 | Katalogeintrag auf open.nrw (Spiegel, **nicht** das Düsseldorfer Portal selbst)                                                                                          |
+    | Heidelberg | CC BY 4.0                            | Datensatzseite auf ckan.datenplattform.heidelberg.de                                                                                                                     |
+    | Ulm        | CC0                                  | Datensatzseite auf datenhub.ulm.de („Creative Commons CCZero“; eine andere Ressource nennt „Domínio Público“, die Seite selbst nennt für die GeoJSON-Datei keine eigene) |
+    | Neuss      | CC0                                  | API-Metadaten auf opendata.rhein-kreis-neuss.de                                                                                                                          |
 
   - **Wie es einen Neuimport übersteht:** `writeSeed` (`import-city.mts`) liest `license` aus der Override-Datei und lässt sie gegen die Angabe der Quelle gewinnen. Ohne das hätte der nächste `import:city` „nicht angegeben“ zurückgeschrieben. Die fünf Seed-Dateien habe ich mit demselben Ergebnis direkt nachgeführt (kein Netz nötig), `seeds.generated.ts` kennt das Feld nicht.
   - **Bewusst nicht eingetragen, weil nicht belegt:**
@@ -258,7 +258,7 @@ Aufgaben.
 
 ## 3. Datenvalidierung
 
-- [x] 3.11 **„Nur OSM“-Standorte werden zusätzlich zur amtlichen Liste angezeigt** (2026-10-30, Entscheidung von Torsten: ja, als „nur OSM“). Die 1.916 Standorte aus dem Kreuzvergleich (3.10, `nurOsmStandorte` in `data/_bestaetigt.json`) kommen beim Aufbau von `allSpots()` als Standorte mit `confirmation: "nur_osm"` hinzu (`confirmation.ts` → `osmOnlySpots()`, `spots.ts`). Die Detailansicht zeigt einen gelben Hinweis („Nur in OpenStreetMap … ungeprüft, bitte vor Ort nachsehen“; `details.osmOnly*`, in allen neun Sprachen). **Begründung der Entscheidungen:** (1) *Zur Laufzeit ergänzt, nicht in die Seed-Dateien geschrieben* – die Seeds bleiben, was die Quelle sagt; der Hinweis ist ein Prüfergebnis, kein Datum der Quelle (wie bei „bestätigt“). (2) *ID aus gerundeten Koordinaten* (`<stadt>-osm-<lat·1e5>-<lng·1e5>`): stabil, solange der Punkt in OSM nicht wandert; zwei Punkte im selben Meter werden zusammengelegt (7 von 1.916 – ohne das doppelte IDs). (3) *`spotCount` ist 1*, weil der Abgleich die OSM-Kapazität nicht speichert; die Zahl ist also eine Untergrenze. (4) Die Städtezählung (`/api/cities`, `spotCount`) enthält sie **nicht** – sie bleibt bei der amtlichen Liste. **Der Offline-Download (`spotsOfCity`) enthält sie**: Der Produktions-E2E-Test `vorab-laden` fand am 2026-10-30, dass Köln offline 185 statt online 259 Standorte zeigte; erst so zeigt die Karte offline dasselbe wie online. Grenze: Die Daten stammen vom Lauf vom 2026-10-29 und werden erst mit dem nächsten `npm run validate` aktualisiert. Test: `osm-only.test.ts`.
+- [x] 3.11 **„Nur OSM“-Standorte werden zusätzlich zur amtlichen Liste angezeigt** (2026-10-30, Entscheidung von Torsten: ja, als „nur OSM“). Die 1.916 Standorte aus dem Kreuzvergleich (3.10, `nurOsmStandorte` in `data/_bestaetigt.json`) kommen beim Aufbau von `allSpots()` als Standorte mit `confirmation: "nur_osm"` hinzu (`confirmation.ts` → `osmOnlySpots()`, `spots.ts`). Die Detailansicht zeigt einen gelben Hinweis („Nur in OpenStreetMap … ungeprüft, bitte vor Ort nachsehen“; `details.osmOnly*`, in allen neun Sprachen). **Begründung der Entscheidungen:** (1) _Zur Laufzeit ergänzt, nicht in die Seed-Dateien geschrieben_ – die Seeds bleiben, was die Quelle sagt; der Hinweis ist ein Prüfergebnis, kein Datum der Quelle (wie bei „bestätigt“). (2) _ID aus gerundeten Koordinaten_ (`<stadt>-osm-<lat·1e5>-<lng·1e5>`): stabil, solange der Punkt in OSM nicht wandert; zwei Punkte im selben Meter werden zusammengelegt (7 von 1.916 – ohne das doppelte IDs). (3) _`spotCount` ist 1_, weil der Abgleich die OSM-Kapazität nicht speichert; die Zahl ist also eine Untergrenze. (4) Die Städtezählung (`/api/cities`, `spotCount`) enthält sie **nicht** – sie bleibt bei der amtlichen Liste. **Der Offline-Download (`spotsOfCity`) enthält sie**: Der Produktions-E2E-Test `vorab-laden` fand am 2026-10-30, dass Köln offline 185 statt online 259 Standorte zeigte; erst so zeigt die Karte offline dasselbe wie online. Grenze: Die Daten stammen vom Lauf vom 2026-10-29 und werden erst mit dem nächsten `npm run validate` aktualisiert. Test: `osm-only.test.ts`.
 - [x] 3.10 **Kreuzvergleich über alle amtlichen Städte gelaufen** (2026-10-29, `npm run validate` mit Netz; Ergebnis `data/_validierung.md`, `data/_bestaetigt.json`). Vorher war eine Stadt abgeglichen (Germersheim), jetzt **22 Städte mit 4.336 amtlichen Standorten** (23 amtlich im Verzeichnis; Bottrop eingeschlossen, München wurde danach umgestellt und ist nicht mehr dabei).
   - **Zwei Läufe hingen über eine Stunde**, weil Overpass nicht antwortete; der zweite lief durch, als es wieder ging. Die Ergebnisdateien werden erst am Ende geschrieben – deshalb sah man davor nichts.
   - **Ergebnis, die Gruppen:** bestätigt (beide Quellen) zwischen 0 % (Hamburg, Rheinstetten) und 95 % (Neuss), im Mittel der großen Städte **5–23 %** (Düsseldorf 5, Gelsenkirchen 6, Frankfurt 8, Dortmund 9, Freiburg 11, Dresden 17, Köln 23). Sehr hoch: Neuss 36 von 38, Ulm 39 von 48 – dort sind beide Quellen dicht.
@@ -728,10 +728,10 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
 
 - [x] 17.11 **Ohne eingetragene Adresse an die Admin-Konten** (2026-11-08, nachdem bei Torsten auch eine frisch angelegte Testmeldung keine Mail auslöste; `lib/feedback-notify.ts`, `lib/db/accounts.ts`, `components/AdminMail.tsx`, `app/datenschutz/page.tsx`, neun Sprachdateien, `deploy/Mailversand-GMX.md`).
 
-  **Die Vorgabe war falsch herum, und 17.9 hat sie so gebaut.** Dort stand: Leeres Feld heißt keine Benachrichtigung, denn ein still mitbenachrichtigter zweiter Admin wäre eine Überraschung. Das Argument stimmt – es wiegt nur viel leichter als der Fall, der dann eintrat: **Versand eingerichtet, Testmail kommt an, und bei jeder echten Meldung geht nichts hinaus.** Die Testmail geht an das *angemeldete Konto*, nicht an diese Adresse; von außen sieht beides gleich aus. Eine Mail zu viel an jemanden, der die Meldungen ohnehin bearbeitet, ist kein Schaden. Eine Meldung, von der niemand erfährt, ist genau der Schaden, den 17.9 verhindern sollte.
+  **Die Vorgabe war falsch herum, und 17.9 hat sie so gebaut.** Dort stand: Leeres Feld heißt keine Benachrichtigung, denn ein still mitbenachrichtigter zweiter Admin wäre eine Überraschung. Das Argument stimmt – es wiegt nur viel leichter als der Fall, der dann eintrat: **Versand eingerichtet, Testmail kommt an, und bei jeder echten Meldung geht nichts hinaus.** Die Testmail geht an das _angemeldete Konto_, nicht an diese Adresse; von außen sieht beides gleich aus. Eine Mail zu viel an jemanden, der die Meldungen ohnehin bearbeitet, ist kein Schaden. Eine Meldung, von der niemand erfährt, ist genau der Schaden, den 17.9 verhindern sollte.
 
   - **Leer heißt jetzt: an alle nicht gesperrten Admin-Konten** (`adminAccountEmails()`). Eine eingetragene Adresse schlägt das weiterhin – wer es auf ein Postfach lenken will, kann das.
-  - **Nicht zu verwechseln mit `adminEmails()` aus `auth/admin-emails`:** Das ist die Liste aus der Umgebung, die beim Anmelden Rollen *vergibt*. Hier zählt, wer die Rolle **hat**. Die erste Fassung hieß genauso und überschattete den Import – drei Tests der Rollenprüfung fielen um, was den Namen geklärt hat, bevor etwas ausgeliefert wurde.
+  - **Nicht zu verwechseln mit `adminEmails()` aus `auth/admin-emails`:** Das ist die Liste aus der Umgebung, die beim Anmelden Rollen _vergibt_. Hier zählt, wer die Rolle **hat**. Die erste Fassung hieß genauso und überschattete den Import – drei Tests der Rollenprüfung fielen um, was den Namen geklärt hat, bevor etwas ausgeliefert wurde.
   - **Die Datenschutzerklärung musste mit.** Ihr Absatz zur Benachrichtigung hing an „eingetragene Adresse vorhanden" und hätte ab jetzt genau den Normalfall verschwiegen. Eine Erklärung, die der Code überholt hat, ist schlimmer als eine knappe (vgl. 10.16).
   - **Der Warnhinweis aus 17.10 ist wieder weg** und die Hinweistexte in allen neun Sprachen sind ersetzt: „Leer lassen schaltet es ab" wäre jetzt das Gegenteil des Verhaltens.
 
@@ -927,6 +927,7 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
   - **Im Browser geprüft** (Dev-Server, Telefonformat, Mausrad per Skript): weit herausgezoomt Hinweis da und 0 Marker; wieder hineingezoomt kommen die Marker zurück, der Hinweis verschwindet. **Nicht beobachtet:** der Hinweis „näher heranzoomen" bei Stufe ≥ 10, weil dafür ein Ausschnitt mit über 2.000 Standorten nötig ist (dichtes Ruhrgebiet, Desktop); dort trägt nur der Unit-Test.
 
   **Darstellung, 2026-10-21:** Der Hinweisstreifen klebte randlos an beiden Seiten. `w-fit` heißt bei einem Satz, der länger ist als der Bildschirm, **volle Breite** – aus der Pille wurde ein Balken von Kante zu Kante. Jetzt mit begrenzter Breite und 21 px Rand auf beiden Seiten (im Telefonformat nachgemessen). Der Satz ist dabei kürzer geworden: „dieses Ausschnitts" stand da, wo ohnehin nur der sichtbare Ausschnitt gemeint sein kann, und war genau das Wort, das die Zeile sprengte. Der Inhalt war damals noch offen und ist oben beantwortet.
+
 - [x] 9.17 **Punktbündel auf Bedienmaß vergrößert** (2026-10-21, `components/map/cluster.ts`, `SpotMarkers.tsx`, `globals.css`). `leaflet.markercluster` liefert 40 px; jetzt sind es **48** und bei vielen Punkten 56 bzw. 64 – das Maß, das Android und iOS für Bedienziele empfehlen. Die 24 px der Prüfwerkzeuge sind das Minimum, nicht das Ziel: Wer einhändig, im Sitzen und im Auto tippt, trifft sonst den falschen Parkplatz oder verschiebt die Karte.
   - Die Bündel kommen jetzt aus einer eigenen `iconCreateFunction`. Das kostet die mitgelieferte Gestaltung, bringt aber zweierlei: einen hellen Ring, der zwei dicht beieinander liegende Bündel trennt, und **eine Beschriftung für den Screenreader** – vorher las er eine nackte Zahl vor, die nicht verriet, dass sich Parkplätze dahinter verbergen und ein Antippen sie auseinanderzieht.
   - Größe und Beschriftung stehen **ohne Leaflet** in `cluster.ts`, damit es vier Unit-Tests dafür gibt; `icons.ts` lädt Leaflet beim Import und bräuchte dafür einen künstlichen Browser.
@@ -972,7 +973,7 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
 
   - **Der Grund ist kein technischer, sondern ein organisatorischer.** Die SMTP-Daten standen in der `.env` auf dem NAS, und dorthin kommt nur Niklas (siehe `wheelee-infrastruktur.md`: Torsten hat keinen SSH-Zugang). Ein abgelaufenes Postfachpasswort hätte damit einen Termin gekostet – und bis dahin gäbe es kein „Passwort vergessen“. Die Angaben gehören dem, der die App betreibt, nicht dem, der das Blech besitzt.
   - **Die Datenbank gewinnt gegen die Umgebung, nicht umgekehrt.** Die andere Reihenfolge wäre die gefährlichere: Eine Eingabe in der Verwaltung, die eine unsichtbare Variable überstimmt, sähe aus wie gespeichert und hätte keine Wirkung – genau das Muster „Falsches sieht richtig aus“ aus der README. Die Seite nennt deshalb die Herkunft der geltenden Angaben und warnt, wenn in der Umgebung ein zweiter Satz liegt.
-  - **Eine dort abgeschaltete Konfiguration fällt *nicht* auf die Umgebung zurück**, sondern legt den Versand still. Wer abschaltet, will ihn aus haben, nicht heimlich über den alten Weg weiterlaufen lassen.
+  - **Eine dort abgeschaltete Konfiguration fällt _nicht_ auf die Umgebung zurück**, sondern legt den Versand still. Wer abschaltet, will ihn aus haben, nicht heimlich über den alten Weg weiterlaufen lassen.
   - **Das Passwort geht nie an den Browser zurück**, die Antwort sagt nur `hasPassword`. Ein leeres Feld heißt „unverändert“, ein geleertes Feld löscht – ohne diese Unterscheidung wäre jedes Speichern des Servernamens ein Löschen des Passworts. Dafür gibt es einen eigenen Test.
   - **Im Klartext steht es trotzdem in der Datenbank, und das ist unvermeidlich:** Ein SMTP-Server verlangt das Passwort selbst, keinen Hash. Eine Verschlüsselung bräuchte einen Schlüssel, der wieder in derselben Umgebung auf demselben NAS läge – gewonnen wäre nur der Anschein. Die Folge ist benannt, wo sie zählt: in `README.md` unter „Sicherung“, denn jede Kopie der Datenbank enthält es.
   - **Die Testmail geht immer an die eigene Adresse des angemeldeten Admins**; es gibt bewusst kein Empfängerfeld. Ein Endpunkt, der eine beliebige Adresse annimmt, ist ein Versandweg für fremde Post. Der Fehlergrund des Servers geht dagegen im Klartext zurück („535 Authentifizierung fehlgeschlagen“) – hier ist er die Auskunft, die zum Einrichten gebraucht wird, anders als bei den öffentlichen Mailwegen, wo jede Einzelheit etwas über fremde Konten verriete. Und die Erfolgsmeldung verspricht nur, was sie weiß: „Der Server hat die Mail angenommen. Ob sie ankommt, zeigt erst das Postfach.“
@@ -987,7 +988,7 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
   - **Wer als bestätigt gilt:** alle Konten, die vor der Migration bestanden (`email_verified_at = created_at`), eingeladene Konten (der Link war der Nachweis) und Konten nach bestätigtem Adresswechsel. Bestehende Konten rückwirkend zu entrechten träfe den Besitzer; das ist der Grund, warum 10.20 (Konto auf dem NAS prüfen) bleibt.
   - **Nicht gelöst:** Ohne eingerichteten Mailversand gibt es keine Bestätigung; neue Konten bleiben unbestätigt und werden nie Admin (Admins kommen dann über Einladung). Eine unbestätigte Registrierung fremder Adressen verhindert nicht, dass die echte Person bei der Registrierung ein „vergeben“ bekommt; sie kann das Konto über „Passwort vergessen“ übernehmen, sobald der Mailversand läuft. Die Oberfläche zeigt den Bestätigungsstatus nicht an.
 - [x] 10.19 **Härtung der Konten nach der Sicherheitsprüfung** (2026-10-30). Ein Live-Test gegen einen echten Server mit Wegwerf-Datenbank hatte Folgendes gezeigt; alles ist behoben und durch `src/lib/db/auth-hardening.test.ts` gesichert.
-  - **Admin-Übernahme und Admin-Verlust (hoch).** Die Adressen aus `ADMIN_EMAILS` galten bei jeder Anfrage, solange kein Admin in der Datenbank stand. Weil die Registrierung offen ist und Adressen nicht bestätigt werden, wurde Admin, wer eine dieser Adressen zuerst registrierte. Umgekehrt verlor der Besitzer sein Recht, sobald ein zweiter Admin eingeladen wurde, und konnte sich dann sogar löschen (der Schutz des letzten Admins sah ihn nicht). **Jetzt zählt allein die Rolle in der Datenbank** (`isAdminAccount`). `ADMIN_EMAILS` hebt über `bootstrapAdmins` einmal je Datenbank die *bereits vorhandenen* Konten mit diesen Adressen, und nur solange kein aktives Admin-Konto besteht. Der Lauf geschieht vor dem Anlegen jedes Kontos und vor Anmeldung und Sitzungsprüfung: Eine nach dem Start registrierte Adresse bekommt nie etwas. Preis: Wer `ADMIN_EMAILS` neu setzt, registriert sich zuerst und startet den Container danach neu. **Nicht gelöst:** Wer die Adresse im Fenster *vor* der ersten Hochstufung registriert hat, wird beim nächsten Start Admin; das schließt erst die E-Mail-Bestätigung (gebaut unter 10.21, wirkt aber nur für neue Konten). Deshalb 10.20 in `ToDos.md`.
+  - **Admin-Übernahme und Admin-Verlust (hoch).** Die Adressen aus `ADMIN_EMAILS` galten bei jeder Anfrage, solange kein Admin in der Datenbank stand. Weil die Registrierung offen ist und Adressen nicht bestätigt werden, wurde Admin, wer eine dieser Adressen zuerst registrierte. Umgekehrt verlor der Besitzer sein Recht, sobald ein zweiter Admin eingeladen wurde, und konnte sich dann sogar löschen (der Schutz des letzten Admins sah ihn nicht). **Jetzt zählt allein die Rolle in der Datenbank** (`isAdminAccount`). `ADMIN_EMAILS` hebt über `bootstrapAdmins` einmal je Datenbank die _bereits vorhandenen_ Konten mit diesen Adressen, und nur solange kein aktives Admin-Konto besteht. Der Lauf geschieht vor dem Anlegen jedes Kontos und vor Anmeldung und Sitzungsprüfung: Eine nach dem Start registrierte Adresse bekommt nie etwas. Preis: Wer `ADMIN_EMAILS` neu setzt, registriert sich zuerst und startet den Container danach neu. **Nicht gelöst:** Wer die Adresse im Fenster _vor_ der ersten Hochstufung registriert hat, wird beim nächsten Start Admin; das schließt erst die E-Mail-Bestätigung (gebaut unter 10.21, wirkt aber nur für neue Konten). Deshalb 10.20 in `ToDos.md`.
   - **Anmeldung überlastbar (mittel).** Die Grenze zählte je Herkunft und Adresse, mit erfundenen Adressen also nie, und jeder Versuch rechnete synchron ein scrypt (rund 100 ms, der Prozess stand). Neu: eigene Grenze je Herkunft ohne Adresse (`loginPerClient`, 40 in 10 Minuten), Adressen über 254 und Passwörter über 200 Zeichen werden ohne Rechnen abgelehnt, die Anmeldung rechnet asynchron mit höchstens zwei gleichzeitigen scrypt-Läufen (`authenticateAsync`). Die übrigen Stellen bleiben synchron, weil sie hinter einer gültigen Sitzung liegen. Die Pausentabelle (`login-backoff`) verdrängt bei Überfüllung den ältesten Eintrag, statt neue Adressen zu ignorieren – sonst ließ sich die Pause durch Auffüllen abschalten (Test angepasst).
   - **Antwortzeit bei „Passwort vergessen“ (mittel).** Die Antwort wartete auf den Mailversand, aber nur bei vorhandenem Konto. Der Versand läuft jetzt im Hintergrund. Dasselbe bei „E-Mail ändern“; **Folge:** ein Versandfehler wird dort nicht mehr gemeldet (vorher 502), weil schon das ein Unterschied wäre.
   - **Altes Passwort raten (niedrig bis mittel).** „Passwort ändern“ und „Konto löschen“ drosselten je Herkunft und Konto; mit wechselnden Herkünften war das beliebig oft möglich. Jetzt je Konto, und Fehlversuche zählen in die Anmeldepause ein.
@@ -1016,7 +1017,7 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
 - [x] 10.7 **Rest der Sicherheitsprüfung vom 2026-10-17: Nonce-CSP und Passwort ändern** (beide 2026-10-23; bis zum 2026-10-20 als 10.5 geführt – doppelt belegt mit dem Haftungshinweis).
 
   **Nonce-CSP** (`src/middleware.ts`, `src/lib/csp.ts`, `src/app/layout.tsx`):
-  - **Die CSP führt kein `'unsafe-inline'` mehr bei den Skripten**, sondern `'nonce-…'` je Anfrage. Die Middleware schreibt die Richtlinie auf die *Anfrage* – daraus liest Next die Nonce für seine Hydrationsskripte – und auf die Antwort; das Theme-Skript nimmt sie aus dem Kopf `x-nonce`. Gemessen im Produktionsbau (`npm run build`, Start): alle Skripte tragen die Nonce, die Seite hydriert, kein Verstoß.
+  - **Die CSP führt kein `'unsafe-inline'` mehr bei den Skripten**, sondern `'nonce-…'` je Anfrage. Die Middleware schreibt die Richtlinie auf die _Anfrage_ – daraus liest Next die Nonce für seine Hydrationsskripte – und auf die Antwort; das Theme-Skript nimmt sie aus dem Kopf `x-nonce`. Gemessen im Produktionsbau (`npm run build`, Start): alle Skripte tragen die Nonce, die Seite hydriert, kein Verstoß.
   - **Stile behalten `'unsafe-inline'`** (Leaflet setzt `style`-Attribute). README und Kommentar sagen das ausdrücklich, damit niemand die Richtlinie für lückenlos hält.
   - **Alle Seiten sind jetzt dynamisch** (`ƒ` im Bauprotokoll): `headers()` im Wurzel-Layout. Eine vorab erzeugte Seite kann keine Nonce je Anfrage tragen. Unbedenklich, weil die Startseite es schon war und die Daten ohnehin aus Paketen kommen.
   - **Fund beim Einbau:** Mit Middleware lädt Next `src/instrumentation.ts` auch für die Edge-Laufzeit; dort gibt es `process.stdout` nicht, der Start brach ab und jede Seite antwortete 404. `register()` kehrt in der Edge-Laufzeit jetzt zurück. Ohne den E2E-Lauf wäre das erst aufgefallen, wenn der Container nicht antwortet.
@@ -1029,6 +1030,7 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
   - **Das bisherige Passwort wird verlangt.** Eine gestohlene Sitzung allein soll nicht genügen, das Konto dauerhaft zu übernehmen.
   - **Gedrosselt wie die Anmeldung** (`LIMITS.passwordChange`, 5 je 10 Minuten, nach Herkunft und Konto): Der Endpunkt prüft das alte Passwort und wäre sonst ein zweiter Weg, es zu erraten.
   - **Neue Regeln gibt es nicht**: `passwordProblem` aus `password-rules.ts` gilt wie bei der Registrierung. Tests: `accounts.test.ts` (Datenbank), `e2e/passwort-aendern.spec.ts`. Eine Sitzungsübersicht (welche Geräte) wurde nicht gebaut; „alle übrigen verwerfen" deckt den Zweck ab.
+
 - [x] **Lizenzangabe je Stadt im Datenmodell** (2026-10-10, Teil von 2a.5/10.3). `license` ist ein eigenes Feld statt eingebettet im Freitext; `src/lib/parking/license.ts` zerlegt ältere Angaben und unterscheidet dabei eine fehlende Lizenz von einer Lizenz namens „nicht angegeben". Die Oberfläche benennt die Lücke offen, statt sie zu verschweigen.
 
 - [x] 18.8 **Konten in der Verwaltung ändern: Name, Adresse, Passwort** (2026-11-08, auf Torstens Wunsch „Benutzerverwaltung wo er Nutzer löschen, ändern etc. kann“; `lib/db/accounts.ts`, `lib/db/admin.ts`, `api/admin/accounts/[id]/route.ts`, `components/AdminUsers.tsx`).
@@ -1055,7 +1057,7 @@ wieder eine halbe Stunde nach einem Fehler sucht, den es nicht gibt.
   - **Bedienung:** Suchfeld und Knöpfe 44 px hoch (gemessen im Telefonformat 375 px), keine Querverschiebung. Beschriftungen `users.search/count/noMatch/more` in `de.ts`, `en.ts`, `es.ts`.
   - **Übersetzungsprüfung wie 15.6:** drei Prüfer (haiku, sonnet, opus), blind zurück ins Deutsche übersetzt. Ergebnis: Platzhalter, Verneinung („Kein Konto“) und Bedeutung überall richtig; ein Prüfer fand „blocked ones“ mehrdeutig – jetzt „blocked accounts“. Wie bei 15.6 keine Prüfung durch Muttersprachler:innen.
   - **Nicht begrenzt:** die Einladungsliste (`listInvitations`), sie wächst nur mit den Einladungen. Sollte sie lang werden, braucht sie dasselbe.
-- [x] 10.11 **Cookies und Einwilligung (§ 25 TDDDG): Tatsachen belegt, Einstufung bleibt bei 10.2b** (2026-10-24; Datenschutzerklärung Abschnitt 5, Gegenprobe `e2e/datenschutz.spec.ts`). Geprüft wurde, *was* wann gesetzt wird – nicht, ob das rechtlich als „unbedingt erforderlich“ gilt. Das kann ich nicht beurteilen.
+- [x] 10.11 **Cookies und Einwilligung (§ 25 TDDDG): Tatsachen belegt, Einstufung bleibt bei 10.2b** (2026-10-24; Datenschutzerklärung Abschnitt 5, Gegenprobe `e2e/datenschutz.spec.ts`). Geprüft wurde, _was_ wann gesetzt wird – nicht, ob das rechtlich als „unbedingt erforderlich“ gilt. Das kann ich nicht beurteilen.
   - **Belegt (Code):** Cookies gibt es genau zwei. `wheelee-session` (`session.ts`: HttpOnly, SameSite=Lax, 30 Tage, `Secure` in Produktion) wird nur von Anmelden, Registrieren und Einladung einlösen gesetzt. `wheelee-lang` (`preference.ts`: ein Jahr, nur der Sprachcode) setzt `writeLanguagePreference` – bei Wahl in den Einstellungen **und durch `LanguageSync` nach der Anmeldung**, wenn die Kontosprache von der angezeigten abweicht. Letzteres stand nicht in der Erklärung („nur beim Wählen“); der Text sagt es jetzt.
   - **Belegt (Messung):** Erster Aufruf ohne Handlung: kein Cookie und **kein** Eintrag im `localStorage` (`e2e/datenschutz.spec.ts`, neu für den lokalen Speicher). Schreibstellen im Code: Darstellung nur beim Wählen bzw. bei einem Wechsel der Systemeinstellung (`ThemeToggle`), Karten-App/Sprache in den Einstellungen, `wheelee-ziele` bei einer Suche, `wheelee-geraet` beim Abschicken einer Rückmeldung (`device.ts`, aus `FeedbackForm`).
   - **Nicht von einer Handlung abhängig:** Der Service-Worker-Zwischenspeicher (`wheelee-shell-*` usw.) wird im Produktivbetrieb beim ersten Aufruf angemeldet (`ServiceWorker.tsx`). Der Erklärung stand das nicht ausdrücklich; sie sagt jetzt, dass Offline-Kopien beim Aufruf angelegt werden. Im Entwicklungsbetrieb nicht gemessen, weil dort kein Service Worker läuft.
@@ -1385,7 +1387,7 @@ Was dabei auffiel und behoben wurde:
   **Alter, und was „veraltet" heißt.** Es stehen zwei Daten da: **„Stand der Daten"** (`importedAt` – wann der Import der Stadt lief) und **„Geladen am"** (wann die Kopie auf das Gerät kam). Zwei Hinweise, weil es zwei Fehler gibt:
   - **Daten älter als 190 Tage** – „Der Stand ist älter als ein halbes Jahr …". Orientiert an Datenpflege.md, Abschnitt 3: Der vollständige Neuimport läuft halbjährlich; ein Stand, der älter ist als ein halbes Jahr plus eine Woche Spielraum, hat einen Durchgang verpasst. Das gilt auch bei frischer Kopie – eine heute geladene Kopie eines alten Imports ist nicht aktuell.
   - **Kopie älter als 31 Tage** – „Die Kopie ist über einen Monat alt. Mit Netz bitte aktualisieren." Die Aktualitätsprüfung läuft monatlich (Datenpflege.md, Abschnitt 3); danach kann der Server einen neueren Stand haben.
-  Beide Schwellen stehen als `STALE_DATA_DAYS` und `STALE_COPY_DAYS` in `offline-cities.ts` und sind geprüft (`offline-cities.test.ts`). **Die Zahlen sind meine Setzung aus der Datenpflege, keine Vorgabe von Torsten** – bitte bestätigen oder ändern. Der Hinweis erscheint nur in den Einstellungen, nicht an der Karte: Ob die Karte gerade aus einer Kopie bedient wird, weiß die Oberfläche nicht (der Service Worker antwortet für sie), das wäre ein eigener Punkt.
+    Beide Schwellen stehen als `STALE_DATA_DAYS` und `STALE_COPY_DAYS` in `offline-cities.ts` und sind geprüft (`offline-cities.test.ts`). **Die Zahlen sind meine Setzung aus der Datenpflege, keine Vorgabe von Torsten** – bitte bestätigen oder ändern. Der Hinweis erscheint nur in den Einstellungen, nicht an der Karte: Ob die Karte gerade aus einer Kopie bedient wird, weiß die Oberfläche nicht (der Service Worker antwortet für sie), das wäre ein eigener Punkt.
 
   **Datenschutzerklärung nachgeführt** (Abschnitt 4): Der Zwischenspeicher, auch der, den die App schon vorher für 12.8/12.9 anlegte und der dort fehlte, steht jetzt dort, samt dem ausdrücklichen Vorabladen und der Löschmöglichkeit. Der Text gehört nach D-08 zur Ausnahmeliste und bleibt deutscher Quelltext; die Prüfung nach 10.2b steht weiter aus.
 
@@ -1465,31 +1467,31 @@ Was dabei auffiel und behoben wurde:
   - **Beobachtet, bewusst nicht geändert:** `POST /api/auth/register` und `auth/invitation` antworten mit 409, wenn die Adresse existiert (verrät Existenz; im Code begründet, durch `register` 5/h gebremst, bei Einladung nur mit gültigem Token; in der Verwaltung nur für Admins); `GET /api/offline` hat keine Drosselung (statische Liste je Stadt, Last gering); `PATCH /api/admin/feedback/[id]` akzeptiert `12abc` als ID 12 (`parseInt`, folgenlos); `spots` hat vier fest deutsche Fehlertexte (Beschriftung, keine Sicherheitsfrage).
   - **Tabelle je Route** (Methode · Zugang · Drosselung · Eingabeprüfung). **Protokoll bei allen:** `withLogging` (siehe oben), nichts zusätzlich. **Ursprungs-Schutz bei allen schreibenden Sitzungsrouten: nur `SameSite=Lax`** (10.13). **Sitzungsrouten antworten `no-store`.** „JSON" = `request.json()` in `try/catch` (400). Kein Größenlimit (10.14).
 
-    | Route | Zugang | Drosselung | Eingabeprüfung |
-    | --- | --- | --- | --- |
-    | `POST /api/auth/login` | anonym | `login:{Herkunft}:{Adresse}`, 10/10 min | JSON, Typen, Adresse normalisiert; einheitliche Fehlermeldung |
-    | `POST /api/auth/register` | anonym | `register:{Herkunft}`, 5/h | JSON, `looksLikeEmail`, `passwordProblem` |
-    | `POST /api/auth/logout` | anonym (liest Cookie) | keine | kein Body |
-    | `POST /api/auth/invitation` | anonym + Token | `invitation:{Herkunft}`, 10/10 min | JSON, Typen, `passwordProblem`; Token nur als Hash-Suche |
-    | `DELETE /api/account` | Sitzung + Passwort | `delete:{Herkunft}:{Konto}`, 5/10 min | JSON, Typ |
-    | `PUT /api/account/password` | Sitzung + altes Passwort | `password:{Herkunft}:{Konto}`, 5/10 min | JSON, `passwordProblem` |
-    | `GET /api/account/export` | Sitzung | keine | – |
-    | `PUT /api/account/maps` · `/language` | Sitzung | keine | JSON, Whitelist |
-    | `GET /api/account/ratings` · `/favorites` | Sitzung | keine | – |
-    | `GET /api/admin/accounts` | Admin (sonst 401) | keine | – |
-    | `PATCH /api/admin/accounts/[id]` | Admin | keine | JSON, Rolle ∈ {admin,user}, `disabled` boolean; letzter aktiver Admin geschützt (409) |
-    | `DELETE /api/admin/accounts/[id]` | Admin | keine | eigenes Konto und letzter Admin geschützt |
-    | `POST /api/admin/invitations` | Admin | `invite:{Admin}`, 20/h | JSON, `looksLikeEmail`, Rolle ∈ {admin,user} (Standard `admin`) |
-    | `DELETE /api/admin/invitations/[id]` | Admin | keine | ID nur als Parameter einer vorbereiteten Anweisung |
-    | `GET /api/admin/feedback` · `/reported` | Admin | keine | Whitelists, Zahlbereich 1–50 |
-    | `PATCH` · `DELETE /api/admin/feedback/[id]` | Admin | keine | ID Ganzzahl ≥ 1, Status per Whitelist, Notiz ohne Längengrenze |
-    | `POST /api/feedback` | anonym (Sitzung optional) | `feedback:{Herkunft}` und `feedback-device:{Gerät}`, 5/10 min; Überschreitung wird als Erfolg beantwortet | JSON, `validateFeedback` (Längen) |
-    | `GET /api/spots` | anonym | keine | `limit` 1–5000, `bbox` 4 Zahlen oder `lat`/`lng`; nur Lesen im Speicher, kein SQL |
-    | `GET /api/spots/[id]/ratings` | anonym (Sitzung für eigene Stimme) | keine | `spotById` (404) |
-    | `POST` · `DELETE /api/spots/[id]/ratings` | Sitzung | `rating:{Konto}` 30/10 min, `rating-ip:{Herkunft}` 120/10 min | `spotById`, Stimme per Whitelist |
-    | `GET` · `PUT` · `DELETE /api/spots/[id]/favorite` | Sitzung | `favorite:{Konto}` 60/10 min, `favorite-ip:{Herkunft}` 240/10 min (schreibend) | `spotById` (PUT) |
-    | `GET /api/offline` | anonym | keine | Stadt nur per Gleichheit gegen die Liste |
-    | `GET /api/geocode` | anonym | `geocode:{Herkunft}` 40/min, `geocode:all` 50/min | `q` ≥ 3 Zeichen (keine Obergrenze), `lat`/`lng` im Wertebereich; festes Ziel, kein SSRF |
+    | Route                                             | Zugang                             | Drosselung                                                                                                | Eingabeprüfung                                                                          |
+    | ------------------------------------------------- | ---------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+    | `POST /api/auth/login`                            | anonym                             | `login:{Herkunft}:{Adresse}`, 10/10 min                                                                   | JSON, Typen, Adresse normalisiert; einheitliche Fehlermeldung                           |
+    | `POST /api/auth/register`                         | anonym                             | `register:{Herkunft}`, 5/h                                                                                | JSON, `looksLikeEmail`, `passwordProblem`                                               |
+    | `POST /api/auth/logout`                           | anonym (liest Cookie)              | keine                                                                                                     | kein Body                                                                               |
+    | `POST /api/auth/invitation`                       | anonym + Token                     | `invitation:{Herkunft}`, 10/10 min                                                                        | JSON, Typen, `passwordProblem`; Token nur als Hash-Suche                                |
+    | `DELETE /api/account`                             | Sitzung + Passwort                 | `delete:{Herkunft}:{Konto}`, 5/10 min                                                                     | JSON, Typ                                                                               |
+    | `PUT /api/account/password`                       | Sitzung + altes Passwort           | `password:{Herkunft}:{Konto}`, 5/10 min                                                                   | JSON, `passwordProblem`                                                                 |
+    | `GET /api/account/export`                         | Sitzung                            | keine                                                                                                     | –                                                                                       |
+    | `PUT /api/account/maps` · `/language`             | Sitzung                            | keine                                                                                                     | JSON, Whitelist                                                                         |
+    | `GET /api/account/ratings` · `/favorites`         | Sitzung                            | keine                                                                                                     | –                                                                                       |
+    | `GET /api/admin/accounts`                         | Admin (sonst 401)                  | keine                                                                                                     | –                                                                                       |
+    | `PATCH /api/admin/accounts/[id]`                  | Admin                              | keine                                                                                                     | JSON, Rolle ∈ {admin,user}, `disabled` boolean; letzter aktiver Admin geschützt (409)   |
+    | `DELETE /api/admin/accounts/[id]`                 | Admin                              | keine                                                                                                     | eigenes Konto und letzter Admin geschützt                                               |
+    | `POST /api/admin/invitations`                     | Admin                              | `invite:{Admin}`, 20/h                                                                                    | JSON, `looksLikeEmail`, Rolle ∈ {admin,user} (Standard `admin`)                         |
+    | `DELETE /api/admin/invitations/[id]`              | Admin                              | keine                                                                                                     | ID nur als Parameter einer vorbereiteten Anweisung                                      |
+    | `GET /api/admin/feedback` · `/reported`           | Admin                              | keine                                                                                                     | Whitelists, Zahlbereich 1–50                                                            |
+    | `PATCH` · `DELETE /api/admin/feedback/[id]`       | Admin                              | keine                                                                                                     | ID Ganzzahl ≥ 1, Status per Whitelist, Notiz ohne Längengrenze                          |
+    | `POST /api/feedback`                              | anonym (Sitzung optional)          | `feedback:{Herkunft}` und `feedback-device:{Gerät}`, 5/10 min; Überschreitung wird als Erfolg beantwortet | JSON, `validateFeedback` (Längen)                                                       |
+    | `GET /api/spots`                                  | anonym                             | keine                                                                                                     | `limit` 1–5000, `bbox` 4 Zahlen oder `lat`/`lng`; nur Lesen im Speicher, kein SQL       |
+    | `GET /api/spots/[id]/ratings`                     | anonym (Sitzung für eigene Stimme) | keine                                                                                                     | `spotById` (404)                                                                        |
+    | `POST` · `DELETE /api/spots/[id]/ratings`         | Sitzung                            | `rating:{Konto}` 30/10 min, `rating-ip:{Herkunft}` 120/10 min                                             | `spotById`, Stimme per Whitelist                                                        |
+    | `GET` · `PUT` · `DELETE /api/spots/[id]/favorite` | Sitzung                            | `favorite:{Konto}` 60/10 min, `favorite-ip:{Herkunft}` 240/10 min (schreibend)                            | `spotById` (PUT)                                                                        |
+    | `GET /api/offline`                                | anonym                             | keine                                                                                                     | Stadt nur per Gleichheit gegen die Liste                                                |
+    | `GET /api/geocode`                                | anonym                             | `geocode:{Herkunft}` 40/min, `geocode:all` 50/min                                                         | `q` ≥ 3 Zeichen (keine Obergrenze), `lat`/`lng` im Wertebereich; festes Ziel, kein SSRF |
 
   - **Gemessen, Gesamtergebnis der Skript-Läufe:** Anmeldung, Cookie, Abmelden und Drosselung wie oben; kaputtes JSON → 400; 404 für unbekannte API-Pfade trägt alle Kopfzeilen; `/api/admin/accounts` anonym → 401.
 - [x] 10.8 **Datenschutz über die ganze Seite gegen die Erklärung gehalten** (2026-10-24; `src/app/datenschutz/page.tsx`, Stand der Erklärung jetzt 2026-10-24; Gegenprobe `e2e/datenschutz.spec.ts`, alle grün). Vorgehen: jeden Speicherort aus dem Code gesucht (`localStorage`, `document.cookie`, `cookies()`, `caches`, Service Worker) und jede Aussage der Erklärung dagegen gelegt. **Abweichungen stehen im Text, nicht im Code versteckt.**
@@ -1745,15 +1747,18 @@ Zwei Dinge fielen erst auf, als nach dem Import (648 Städte) wieder die ganze S
 Auftrag: DSGVO, Datenschutz und rechtliche Themen in EU und Deutschland prüfen; die fehlende Anschrift im Impressum bleibt außer Betracht. Geprüft wurde der Code und die Datenschutzerklärung gegeneinander. **Keine Rechtsberatung**; die Punkte unten sind Befunde einer Durchsicht, keine Rechtsauskunft.
 
 **Behoben:**
+
 - **Widerspruch in der Datenschutzerklärung (Abschnitt 12):** Sie sagte „es findet keine Übermittlung in ein Drittland statt“, Abschnitt 3 beschreibt aber, dass der Browser Kartenkacheln direkt von der OpenStreetMap Foundation lädt – die sitzt im Vereinigten Königreich und kann für die Auslieferung Dienstleister außerhalb der EU einsetzen. Art. 13 Abs. 1 lit. f verlangt die Angabe. Jetzt trennt der Abschnitt: Daten der App bleiben in Deutschland; die Kacheln sind die ausdrückliche Ausnahme. Ob für das Vereinigte Königreich ein gültiger Angemessenheitsbeschluss besteht, ist **bewusst nicht behauptet**; der Hinweis verweist auf deren Datenschutzerklärung.
 - **Mailversand (11.1/11.8):** Datenschutzerklärung und der Satz „die App versendet keine E-Mails“ (jetzt: keine Einladungen per Mail) angepasst – siehe 10.16.
 - **Verarbeitungsverzeichnis (Art. 30) fehlte:** Entwurf in [Verarbeitungsverzeichnis.md](Verarbeitungsverzeichnis.md), aus dem Code abgeleitet, mit technischen und organisatorischen Maßnahmen, Ablauf bei einer Datenpanne (72 Stunden, Art. 33/34) und Einschätzung zur Folgenabschätzung (Art. 35).
 
 **Offen, braucht eine rechtskundige Person (ToDo 10.17, 10.18):**
+
 - **Art. 9:** Konto plus gespeicherte oder bewertete Behindertenparkplätze lässt Rückschlüsse auf die Gesundheit zu, auch wenn die App nie danach fragt. Die Rechtsprechung des EuGH zu „Gesundheitsdaten“ ist weit (u. a. Rs. C-184/20, C-252/21 zu mittelbaren Rückschlüssen). Falls das gilt, wäre eine ausdrückliche Einwilligung bei der Registrierung nötig; ohne Konto fällt nichts davon an.
 - **§ 25 TDDDG, Offline-Kopien:** Die Datenschutzerklärung stuft Service Worker und Zwischenspeicher als „unbedingt erforderlich“ ein. Bei Kopien, die ohne Zutun beim Aufruf angelegt werden, ist das vertretbar, aber nicht zweifelsfrei.
 
 **Geprüft und ohne Befund:**
+
 - **Cookies:** höchstens zwei, beide erst auf Handlung (Anmelden, Sprache wählen), per E2E-Test festgehalten (`e2e/datenschutz.spec.ts`).
 - **Betroffenenrechte:** Auskunft und Übertragbarkeit (`/api/account/export`), Löschung mit Passwort (`deleteAccount`), automatische Fristen (`cleanup.ts`); Rückmeldungen ohne Konto werden von Hand bearbeitet, das steht in der Erklärung.
 - **Standort:** bleibt im Browser; Ausnahme Zielsuche auf zwei Nachkommastellen gerundet, steht in der Erklärung.
@@ -1768,6 +1773,7 @@ Auftrag: DSGVO, Datenschutz und rechtliche Themen in EU und Deutschland prüfen;
 Der Punkt bleibt in `ToDos.md` offen (`[~]`, nur noch Bochum); hierher gehört, was gemessen wurde und was gebaut ist.
 
 **Umgestellt am 2026-10-29 (Entscheidung D-11):** `data/muenchen.json` kommt jetzt aus der amtlichen Quelle, **568 Standorte mit 958 Stellplätzen** (vorher 218 aus OSM). Gebaut dafür:
+
 - **`scripts/import/manual-sources.mts`:** handgepflegte Quellen, die der Importer **vor** die in GovData gefundenen stellt. Nötig, weil `sources:scan` München nicht kennt und `_quellen-status.json` erzeugt (also überschrieben) wird. Je Quelle optional `noteOf` (Zusatzhinweis je Standort) und `idOf` (stabile Kennung).
 - **Koordinatensystem:** `fetchGeoJson` liest jetzt `crs` aus dem Kopf der Datei (GeoServer schreibt es dorthin, nicht an jedes Objekt) und gibt es an die Features weiter. Vorher wäre die UTM-Zone geraten worden (zuerst 32, dann 33 – bei München zufällig richtig, bei Dresden war es das nicht).
 - **Baustellen:** 26 Standorte tragen den Hinweis „Wegen einer Baustelle vorübergehend geändert (bis TT.MM.JJJJ) – <Text der Stadt>“. Die Formulierung ist bewusst **nicht** „nicht nutzbar“: Der Text der Stadt sagt bei manchen, dass der Platz nur verlegt ist („befindet sich vor Amalienstraße 15“). Das Enddatum kommt in der Quelle mal als `06.04.2027`, mal als `20261211103557`; beides wird zu einem Datum.
@@ -1777,6 +1783,7 @@ Der Punkt bleibt in `ToDos.md` offen (`[~]`, nur noch Bochum); hierher gehört, 
 - **Nicht geprüft:** der Vergleich mit den 218 alten OSM-Standorten („nur OSM“, was die Stadt nicht führt). Die OSM-Daten liegen als Sicherung unter dem Namen `muenchen.osm.backup.json` im Arbeitsordner dieser Sitzung und gehen mit ihr verloren; neu holen ließen sie sich über den OSM-Weg von `import:city` (Quelle in `manual-sources.mts` vorübergehend entfernen).
 
 **Die übrigen Städte, angesehen am 2026-10-30:**
+
 - **Bielefeld:** Datensatz „Öffentliche Schwerbehindertenparkplätze in Bielefeld“ auf open-data.bielefeld.de, CC BY 4.0, als CSV, GML, Shapefile und WFS (Stand laut Portal 2026-10-29). Das Portal antwortet auf jede Ressource mit **HTTP 500** (wie schon bei 2d.8). Die Quelle steht jetzt in `manual-sources.mts`; ein Lauf fiel auf OSM zurück und schrieb den Bestand um – **die Datei ist aus der Sicherung wiederhergestellt**, `bielefeld.json` ist unverändert (125 Standorte, OSM, Stand 2026-10-08). Wer es erneut versucht, sichert die Datei vorher: Ein gescheiterter Abruf überschreibt sie mit einem neuen OSM-Stand.
 - **Bochum:** CSV „bochum_behindertenparkplätze“ auf opendata.ruhr, CC0-1.0, zuletzt 2024-09-30. Abruf der Seite scheiterte mit 502, ob die CSV Koordinaten enthält, ist offen. **Neu probiert am 2026-10-30:** Die CKAN-Schnittstelle antwortet (Datensatz `bochum-behindertenparkplaetze`, GeoJSON 82 KB, CSV 27 KB, ZIP), der Dateidownload liefert mit einfachem Abruf **403**, der ArcGIS-Dienst `maponline/Behindertenparkplaetze` meldet **404**. Nichts umgangen (keine verstellten Kopfzeilen); die Datei muss von Hand im Browser geladen werden.
 - **Norderstedt, Viersen:** **keine Quelle gefunden** (nur fremde Städte und ein Radverkehrs-Datensatz des Kreises Viersen). Die Annahme „ungenutzte amtliche Quelle“ war dort falsch; OSM bleibt die richtige Quelle.
@@ -1819,10 +1826,10 @@ Torsten, 2026-10-30: „19 alle umsetzen, die ohne mich gehen.“ 13 bleibt gesp
   - Jetzt zwei Zeilen: **„Daten vom“** (jüngster Import, ändert sich nur mit den Daten) und **„Zuletzt aktualisiert (nächtlicher Lauf)“** (wann zuletzt überhaupt nachgesehen wurde).
   - **Ohne `geprueft.json` steht „noch nicht gelaufen“**, kein erfundenes Datum – dieselbe Haltung wie beim Impressum. Die Datei liegt neben der Datenbank und nicht im Repository, damit ein Lauf ohne Fund keinen Neubau auslöst (19.15).
   - `LegalPage` bekam dafür zwei optionale Angaben (`updatedKey`, `lastRun`); Impressum und Datenschutzerklärung zeigen unverändert „Stand“ (im Browser gegengeprüft).
-  - **Drei Tests halten die Trennung fest**, darunter einer, der prüft, dass das Laufdatum das Datendatum *nicht* mitzieht: Beim nächsten Umbau fällt beides sonst leicht wieder zusammen. Im Browser gesehen: „Daten vom: 8. November 2026“ über „Zuletzt aktualisiert (nächtlicher Lauf): 5. November 2026“.
+  - **Drei Tests halten die Trennung fest**, darunter einer, der prüft, dass das Laufdatum das Datendatum _nicht_ mitzieht: Beim nächsten Umbau fällt beides sonst leicht wieder zusammen. Im Browser gesehen: „Daten vom: 8. November 2026“ über „Zuletzt aktualisiert (nächtlicher Lauf): 5. November 2026“.
   - **Geschrieben wird das Laufdatum bei jedem echten Lauf**, auch wenn nichts fällig war: `saveChecked()` in `scripts/import/auto-update.mts` läuft in beiden Zweigen und stempelt die Zeit. Ein Probelauf (`--dry`) schreibt nichts.
 
-- [x] 19.15 **„Zuletzt geprüft“ auf `/abdeckung`, und alle amtlichen Quellen werden wirklich verglichen** (Torsten, 2026-11-01: „warum nicht überall der Stand heute?“). **Befund, den ich vorher nicht gesehen hatte:** Der Datenlauf hat nur Städte angefasst, deren Quelle ein *Änderungsdatum* nennt und jünger war. Berlin, Gelsenkirchen und Bottrop nennen keines (Vergleich nur durch Neuholen, vorher erst nach 182 Tagen), **München** hat eine handgepflegte Quelle und lief als „kein Datum“ durch, und der **regionale Satz (TRK, zwölf Gemeinden)** läuft über `import:regional`, das der Lauf gar nicht kannte. Diese Städte wurden also nie aktualisiert, obwohl ich „alle prüfen“ gesagt hatte.
+- [x] 19.15 **„Zuletzt geprüft“ auf `/abdeckung`, und alle amtlichen Quellen werden wirklich verglichen** (Torsten, 2026-11-01: „warum nicht überall der Stand heute?“). **Befund, den ich vorher nicht gesehen hatte:** Der Datenlauf hat nur Städte angefasst, deren Quelle ein _Änderungsdatum_ nennt und jünger war. Berlin, Gelsenkirchen und Bottrop nennen keines (Vergleich nur durch Neuholen, vorher erst nach 182 Tagen), **München** hat eine handgepflegte Quelle und lief als „kein Datum“ durch, und der **regionale Satz (TRK, zwölf Gemeinden)** läuft über `import:regional`, das der Lauf gar nicht kannte. Diese Städte wurden also nie aktualisiert, obwohl ich „alle prüfen“ gesagt hatte.
   - **Jetzt:** Quellen ohne Datum und München werden monatlich neu geholt und verglichen (`NO_DATE_REIMPORT_DAYS = 30`), der TRK-Satz alle 30 Tage über `checkRegional` (mit derselben Notbremse und Gleichheitsprüfung). `npm run data:update -- --all` vergleicht alles sofort, ohne Obergrenze.
   - **Zwei Spalten statt einer:** „Daten vom“ (letzte Änderung des Bestands) und „Zuletzt geprüft“ (letzter Vergleich mit der Quelle, auch ohne Änderung). Der Stand oben auf der Seite ist der jüngere von beiden. Die Prüfdaten stehen in `geprueft.json` **neben der Datenbank** (`/app/var/` im Container, `.data/` lokal), nicht im Repository: Ein Lauf ohne Änderung soll keinen Commit und keinen Neubau auslösen. Das NAS-Skript kopiert die Datei per `docker exec` ins Volume der App. Gelesen von `src/lib/checked.ts`; fehlt sie, steht „–“, nie ein erfundenes Datum.
   - **„Geprüft“ heißt ein gelungener Vergleich:** Eine Quelle, die sich meldet, deren Dienst aber nichts liefert, zählt nicht (Köln, Heidelberg bleiben „–“). Der Vergleich der Standorte ist grob (Platz, Lage, Anzahl, Zeitbeschränkung, nach dem Entdoppeln); Straßennamen trägt `import:streets` nach und sind kein Unterschied, sonst wäre jede Stadt täglich „geändert“.
@@ -1915,7 +1922,7 @@ Torsten, 2026-10-30: „19 alle umsetzen, die ohne mich gehen.“ 13 bleibt gesp
   - **Protokoll im Übrigen:** keine IP (auch nicht gehasht), keine Parameterwerte (`?bbox=…` wird zu `?bbox`), keine Inhalte. `errorFields` schreibt fremde Fehlermeldungen mit – `JSON.parse`-Meldungen enthalten einen Ausschnitt der Eingabe, erreichen diese Stelle aber nicht, weil **jede** Route den Parse-Fehler selbst fängt und mit 400 antwortet (nachgesehen für alle 18 Stellen).
   - **Eingeschleustes Markup:** `dangerouslySetInnerHTML` gibt es dreimal – das Theme-Skript (feste Zeichenkette) und die zwei JSON-LD-Blöcke, beide mit maskiertem `<` und Nonce. Die vom Browser geschickten Felder einer Rückmeldung (`url`, `userAgent`) werden in der Verwaltung nur als Text gezeigt, **nicht als `href`**; ein `javascript:`-Verweis wäre dort der naheliegende Angriff gewesen und ist nicht möglich.
   - **Container:** läuft als `nextjs` (uid 1001), nicht als root; der Port ist an die Tailscale-Adresse gebunden, nicht an `0.0.0.0`.
-  - **Abhängigkeiten:** `npm audit` meldet **8 moderate**, alle aus **einer** Wurzel: `minimatch` (GHSA-g3hv-75wg-m249, ReDoS) über `typescript-eslint` → `eslint-config-next`. `npm ls minimatch` zeigt die betroffene Fassung 10.2.6 nur unter ESLint; die übrigen Vorkommen (3.1.5) liegen außerhalb des Bereichs. **Das ist Bauwerkzeug und steckt nicht im Abbild** (der Runner kopiert nur `.next/standalone`), trifft also keine ausgelieferte Zeile. `npm audit fix --force` wollte ESLint umbauen – nicht gemacht, das gehört nicht in eine Sicherheitsprüfung hinein. Beim nächsten Anfassen von 1.8 mitnehmen. *Am 2026-10-30 meldete `npm audit` noch 0; die Meldung ist seitdem hinzugekommen, nicht übersehen worden.*
+  - **Abhängigkeiten:** `npm audit` meldet **8 moderate**, alle aus **einer** Wurzel: `minimatch` (GHSA-g3hv-75wg-m249, ReDoS) über `typescript-eslint` → `eslint-config-next`. `npm ls minimatch` zeigt die betroffene Fassung 10.2.6 nur unter ESLint; die übrigen Vorkommen (3.1.5) liegen außerhalb des Bereichs. **Das ist Bauwerkzeug und steckt nicht im Abbild** (der Runner kopiert nur `.next/standalone`), trifft also keine ausgelieferte Zeile. `npm audit fix --force` wollte ESLint umbauen – nicht gemacht, das gehört nicht in eine Sicherheitsprüfung hinein. Beim nächsten Anfassen von 1.8 mitnehmen. _Am 2026-10-30 meldete `npm audit` noch 0; die Meldung ist seitdem hinzugekommen, nicht übersehen worden._
 
   **Was offen bleibt und nicht als erledigt gilt:**
   - **`'unsafe-inline'` für Stile** bleibt in der CSP, weil Leaflet die Position jeder Kachel als `style`-Attribut setzt. Damit ist Schadcode über Stile nicht ausgeschlossen (steht schon so in der README). Ein Weg dahin wäre, Leaflets Positionierung zu ersetzen – kein Nebenbei-Umbau.
@@ -1929,16 +1936,15 @@ Torsten, 2026-10-30: „19 alle umsetzen, die ohne mich gehen.“ 13 bleibt gesp
 
 - [~] 12.17 **Der maschinelle Teil ist durchgelaufen, der Durchgang von Hand steht aus** (Rest in [ToDos.md](ToDos.md)). Gelaufen nach 10.23, 12.16 und 12.18 – also auf dem Stand, den der Gesamttest prüfen soll:
 
-  | Prüfung | Ergebnis |
-  | --- | --- |
-  | `npm run test` | 724 Tests in 68 Dateien |
-  | `npm run typecheck` | ohne Befund |
-  | `npm run lint` | ohne Befund |
-  | `npm run check:slugs` | keine verwaiste Seed-Datei (10.754 Gemeinden, 3.763 Seeds) |
-  | `npx playwright test` (Entwicklungsserver) | **142 grün**, 2 übersprungen |
-  | `npm run test:e2e:prod` (Produktionsbau) | **144 grün** |
-  | `npm audit` | 0 Schwachstellen |
-
+  | Prüfung                                    | Ergebnis                                                   |
+  | ------------------------------------------ | ---------------------------------------------------------- |
+  | `npm run test`                             | 724 Tests in 68 Dateien                                    |
+  | `npm run typecheck`                        | ohne Befund                                                |
+  | `npm run lint`                             | ohne Befund                                                |
+  | `npm run check:slugs`                      | keine verwaiste Seed-Datei (10.754 Gemeinden, 3.763 Seeds) |
+  | `npx playwright test` (Entwicklungsserver) | **142 grün**, 2 übersprungen                               |
+  | `npm run test:e2e:prod` (Produktionsbau)   | **144 grün**                                               |
+  | `npm audit`                                | 0 Schwachstellen                                           |
   - **Die zwei im Entwicklungsserver übersprungenen Prüfungen sind die Offline-Tests** und laufen gegen den Produktionsbau mit (142 + 2 = 144). Damit ist die Auflage aus der Aufgabe erfüllt, sie „einmal von Hand gegen `npm run start`" zu sehen – der Produktionslauf baut und startet selbst. `e2e/offline.spec.ts` überspringt sich im eingebetteten Browser, weil `register('/sw.js')` dort scheitert; das ist eine Eigenschaft jener Umgebung und steht seit dem 2026-10-17 in `next.config.ts`.
   - **Der Produktionslauf ist zugleich die breite Gegenprobe zu 12.16:** Er baut neu und prüft alle 144 Fälle gegen einen Bau, in dem `/api/spots`, `/api/cities` und `/api/offline` gzip liefern. Keiner ist daran gescheitert.
   - **`e2e/smoke.spec.ts` lief diesmal ohne Ausfall durch** – derselbe Test, der am 2026-10-30 und noch einmal am 2026-11-09 unter Nebenlast einmal ausfiel. Ohne Nebenlast also wieder grün; die Ursache bleibt ungemessen und die Beobachtung damit unbewiesen.
@@ -1976,15 +1982,14 @@ Torsten, 2026-10-30: „19 alle umsetzen, die ohne mich gehen.“ 13 bleibt gesp
 
   **Der Befund, und er war nicht der erwartete:** **Next komprimiert HTML und statische Dateien, Route-Handler aber nicht.** Über die Leitung gingen:
 
-  | Antwort | vorher | jetzt |
-  | --- | --- | --- |
-  | `/api/spots` Stadtansicht Köln (1.420 Standorte) | **429,2 KB** | 41,2 KB |
-  | `/api/cities` (3.763 Städte) | **591,2 KB** | 84,1 KB |
-  | `/api/offline?city=koeln` (1.193 Standorte) | **359,2 KB** | 32,5 KB |
-  | `/api/spots?lat&lng` (100 Standorte) | 36,8 KB | 5,7 KB |
-  | Startseite (HTML) | 12,1 KB | unverändert (Next komprimiert sie) |
-
-  - **Warum das so lange niemand sah:** Mit `fetch` ist es nicht zu messen. `undici` packt gzip transparent aus, und die Zahl, die man dann liest, ist die Rohgröße – egal ob komprimiert übertragen wurde oder nicht. Erst `node:http` mit ausdrücklichem `accept-encoding` zeigt den Unterschied: Die Startseite kam mit `Content-Encoding: gzip` und `Vary: Accept-Encoding`, die Schnittstellen ohne beides. *In `Erledigt.md` stand zu 2e.6 Stufe 4 „`/api/cities` 605 KB roh, **87 KB gzip-komprimiert**". Die Zahl stimmt (84,1 KB) – sie war **errechnet**, nicht an der Antwort gemessen. Ausgeliefert wurden 591 KB.*
+  | Antwort                                          | vorher       | jetzt                              |
+  | ------------------------------------------------ | ------------ | ---------------------------------- |
+  | `/api/spots` Stadtansicht Köln (1.420 Standorte) | **429,2 KB** | 41,2 KB                            |
+  | `/api/cities` (3.763 Städte)                     | **591,2 KB** | 84,1 KB                            |
+  | `/api/offline?city=koeln` (1.193 Standorte)      | **359,2 KB** | 32,5 KB                            |
+  | `/api/spots?lat&lng` (100 Standorte)             | 36,8 KB      | 5,7 KB                             |
+  | Startseite (HTML)                                | 12,1 KB      | unverändert (Next komprimiert sie) |
+  - **Warum das so lange niemand sah:** Mit `fetch` ist es nicht zu messen. `undici` packt gzip transparent aus, und die Zahl, die man dann liest, ist die Rohgröße – egal ob komprimiert übertragen wurde oder nicht. Erst `node:http` mit ausdrücklichem `accept-encoding` zeigt den Unterschied: Die Startseite kam mit `Content-Encoding: gzip` und `Vary: Accept-Encoding`, die Schnittstellen ohne beides. _In `Erledigt.md` stand zu 2e.6 Stufe 4 „`/api/cities` 605 KB roh, **87 KB gzip-komprimiert**". Die Zahl stimmt (84,1 KB) – sie war **errechnet**, nicht an der Antwort gemessen. Ausgeliefert wurden 591 KB._
   - **Die Größenordnung macht es zum Hauptbefund:** Eine Stadtansicht zog an Parkplatzdaten **mehr als die ganze App an JavaScript** (325 KB komprimiert), und zwar bei jeder Kartenbewegung neu – im Mobilfunknetz, bei jemandem, der schon im Auto sitzt.
   - **Behoben** in `src/lib/json-compressed.ts`, benutzt von `/api/spots`, `/api/cities` und `/api/offline`. **In der Anwendung und nicht im Nginx Proxy Manager** – dieselbe Begründung wie bei den Sicherheits-Kopfzeilen (10.6): Im Proxy wäre es im Entwicklungsbetrieb nicht da, also genau dort nicht, wo ein Rückschritt auffallen müsste. Dazu kommt, dass von hier **nicht nachzusehen ist**, ob der NPM `gzip` für `application/json` überhaupt eingeschaltet hat (kein Zugang); eine Verbesserung, die davon abhängt, wäre eine Vermutung. Komprimiert der Proxy zusätzlich, reicht er eine Antwort mit `Content-Encoding` durch.
   - **Stufe 6 (zlib-Vorgabe), gemessen an der Stadtansicht:** Stufe 1 → 47,4 KB in 1,0 ms, **Stufe 6 → 41,2 KB in 2,5 ms**, Stufe 9 → 39,4 KB in 4,7 ms. Brotli wäre 30,7 KB, rechnet aber deutlich länger. Bei 388 gesparten Kilobyte entscheidet nicht das letzte Zehntel, sondern dass überhaupt komprimiert wird.
@@ -1994,14 +1999,14 @@ Torsten, 2026-10-30: „19 alle umsetzen, die ohne mich gehen.“ 13 bleibt gesp
 
   **Die übrigen Zahlen, damit die nächste Messung etwas zum Vergleichen hat** (Median aus 7 Läufen, übertragen = komprimiert):
 
-  | Seite | HTML | JS/CSS | TTFB |
-  | --- | --- | --- | --- |
-  | Startseite `/` | 12,1 KB | 325,4 KB (12 Dateien) | 18 ms |
-  | Stadtseite Hamburg | 15,3 KB | 293,5 KB (11) | 11 ms |
-  | Verzeichnis `/parkplaetze` | 7,4 KB | 293,5 KB | 6 ms |
-  | Verzeichnis Buchstabe B | 18,3 KB | 293,5 KB | 12 ms |
-  | `/abdeckung` | 36,6 KB roh | 293,5 KB | 7 ms |
-  | `/info` | 6,5 KB | 293,5 KB | 3 ms |
+  | Seite                      | HTML        | JS/CSS                | TTFB  |
+  | -------------------------- | ----------- | --------------------- | ----- |
+  | Startseite `/`             | 12,1 KB     | 325,4 KB (12 Dateien) | 18 ms |
+  | Stadtseite Hamburg         | 15,3 KB     | 293,5 KB (11)         | 11 ms |
+  | Verzeichnis `/parkplaetze` | 7,4 KB      | 293,5 KB              | 6 ms  |
+  | Verzeichnis Buchstabe B    | 18,3 KB     | 293,5 KB              | 12 ms |
+  | `/abdeckung`               | 36,6 KB roh | 293,5 KB              | 7 ms  |
+  | `/info`                    | 6,5 KB      | 293,5 KB              | 3 ms  |
 
   **Angesehen und ausdrücklich nicht geändert:**
   - **Alle Seiten sind `ƒ` und tragen `no-store`** (bekannter Faden aus der Aufgabe). Das ist der Preis der Nonce (10.7) und bleibt – gemessen kostet es nichts: TTFB 3 bis 18 ms, und zwischen kalt (erster Aufruf nach dem Start) und warm liegen 25 gegen 18 ms. Es gibt keinen Aufwärmeffekt, weil die Seed-Daten statisch im Bündel liegen.
@@ -2024,10 +2029,10 @@ Torsten, 2026-10-30: „19 alle umsetzen, die ohne mich gehen.“ 13 bleibt gesp
 
   **Der Messaufbau, damit er wiederholbar ist:** `npx playwright test e2e/smoke.spec.ts --repeat-each=10 --workers=4`, also 100 Durchläufe der zehn Tests, zweimal – einmal ohne und einmal mit Nebenlast (drei Prozesse `npx vitest run` in Dauerschleife). Das Skript dafür liegt nicht im Repository, der Aufbau steht hier.
 
-  | Durchgang | Ergebnis |
-  | --- | --- |
-  | ohne Nebenlast | **100 von 100 grün** |
-  | mit Nebenlast | **98 von 100**, 2 Fehlschläge |
+  | Durchgang      | Ergebnis                      |
+  | -------------- | ----------------------------- |
+  | ohne Nebenlast | **100 von 100 grün**          |
+  | mit Nebenlast  | **98 von 100**, 2 Fehlschläge |
 
   **Damit ist die Beobachtung bewiesen, aber sie war falsch zugeordnet.** Die Datei nennt an drei Stellen „mit Standort erscheint die Navigationsleiste" bzw. „die aufgeklappte Auswahl lässt Karte übrig" als den wackelnden Test. Es ist **kein einzelner Test**: Im ersten Durchgang fiel „beide Enden der Luftlinie bleiben im Bild" aus, in den Gegenproben danach die beiden anderen. Betroffen ist, was mit Karte und Standort zu tun hat – und zwar aus **zwei** Gründen, die beide nichts mit der App zu tun haben:
 
@@ -2040,14 +2045,14 @@ Torsten, 2026-10-30: „19 alle umsetzen, die ohne mich gehen.“ 13 bleibt gesp
 
   **Der maschinelle Teil von 12.17 ist danach wiederholt**, wie es die Auflage dort verlangt („läuft danach noch etwas am Code, gehört der maschinelle Teil wiederholt"). Alle Zahlen gleich wie am 2026-11-09:
 
-  | Prüfung | Ergebnis |
-  | --- | --- |
-  | `npm run test` | 724 Tests in 68 Dateien |
-  | `npm run typecheck` · `npm run lint` | ohne Befund |
-  | `npm run check:slugs` | keine verwaiste Seed-Datei (10.754 Gemeinden, 3.763 Seeds) |
-  | `npx playwright test` (Entwicklungsserver) | **142 grün**, 2 übersprungen |
-  | `npm run test:e2e:prod` (Produktionsbau) | **144 grün** |
-  | `npm audit` | 0 Schwachstellen |
+  | Prüfung                                    | Ergebnis                                                   |
+  | ------------------------------------------ | ---------------------------------------------------------- |
+  | `npm run test`                             | 724 Tests in 68 Dateien                                    |
+  | `npm run typecheck` · `npm run lint`       | ohne Befund                                                |
+  | `npm run check:slugs`                      | keine verwaiste Seed-Datei (10.754 Gemeinden, 3.763 Seeds) |
+  | `npx playwright test` (Entwicklungsserver) | **142 grün**, 2 übersprungen                               |
+  | `npm run test:e2e:prod` (Produktionsbau)   | **144 grün**                                               |
+  | `npm audit`                                | 0 Schwachstellen                                           |
 
   **Was offen bleibt:** Die Ausfälle von `ziel.spec.ts` („Enter sucht sofort", 2026-10-30) und `log.test.ts` unter Last sind damit **nicht** erklärt; sie sind nicht nachgemessen. Wer sie sieht, hat denselben Aufbau wie oben zur Hand.
 
@@ -2097,13 +2102,12 @@ hier.
   und die Dateien selbst sagen das: `…-2019-4.csv` und `…-2019-2.csv`.
   Gemessen, nicht geschätzt:
 
-  | | Standorte | Stellplätze |
-  | --- | --- | --- |
-  | amtlich, Straßenraum | 38 | 72 |
-  | amtlich, Stellplatzanlagen | 22 | 74 |
-  | **amtlich zusammen** | **60** | **146** |
-  | Bestand (OSM, `data/moers.json`) | 64 | 64 |
-
+  |                                  | Standorte | Stellplätze |
+  | -------------------------------- | --------- | ----------- |
+  | amtlich, Straßenraum             | 38        | 72          |
+  | amtlich, Stellplatzanlagen       | 22        | 74          |
+  | **amtlich zusammen**             | **60**    | **146**     |
+  | Bestand (OSM, `data/moers.json`) | 64        | 64          |
   - **Die Standortzahl sinkt, und das Datum springt sieben Jahre zurück.** Der
     Gewinn wären die Stellplatzzahlen (146 statt 64, weil OSM dort fast überall
     „1" annimmt). Dafür alle Parkplatz-IDs zu wechseln – mit den Bewertungen
@@ -2193,6 +2197,22 @@ die Angabe, die sonst beim nächsten Mal wieder zusammengesucht wird.
 - **„Erkannt" ist nicht „aufgenommen".** Die 3.793 sagen nur, dass Google die
   Liste lesen konnte. Wie viele Seiten im Index landen, steht unter „Seiten“
   und wächst über Wochen – deshalb bleibt der Punkt offen.
+
+---
+
+## 9. Ergänzung 2: Oberfläche nach Apple-Vorbild (2026-11-11)
+
+- [~] 9.31 **Die Oberfläche folgt den Systemapps von Apple; Einstellungen ganz umgebaut** (Torsten, 2026-11-11, beim Testen auf dem Telefon: „gutes UX-Design, simple Auswahl, nicht zu viel Text“ – mit vier benannten Stellen). Umgebaut sind Einstellungen, Kopfzeile und Detailblatt; der **Rest der Ansichten steht in [ToDos.md](ToDos.md)**.
+  - **Neu: `src/components/ui/List.tsx`** – die Bausteine („Inset Grouped List“): `ListGroup` (kleine Überschrift über der Gruppe, Fußnote darunter), `Row`, `Switch`, `SelectRow`, `Segmented`, `Chevron`. **Als Bausteine und nicht als Klassen je Komponente:** Dieselbe Form fünfmal zu kopieren hat schon einmal fünf Fassungen ergeben – das war der Anlass für `SettingsSection` (9.21). Die Regeln dahinter: die **Zeile** ist das Bedienelement, zwei Zustände sind ein **Schalter** statt zweier Felder, und Erklärungen sind **Fußnoten** unter der Gruppe statt Sätze über dem Bedienelement.
+  - **Standort: ein Schalter** (ausdrücklich verlangt). Vorher zwei Radiozeilen („Standort verwenden“ / „Nicht verwenden“) für eine Frage mit zwei Antworten; den Zustand musste man aus beiden Beschriftungen zusammenlesen. Der Erklärungssatz ging von 47 auf 6 Wörter: Was mit dem Standort geschieht, steht vollständig in der Datenschutzerklärung – hier zählt die eine Zusage, dass er das Gerät nicht verlässt.
+  - **Sprache und Karten-App als Auswahlzeile**, rechts der geltende Wert. Neun Sprachen als Radioliste füllten einen halben Bildschirm. **Das `<select>` liegt unsichtbar über der ganzen Zeile:** Damit öffnet das Telefon sein eigenes Auswahlrad, Tastatur und Screenreader arbeiten wie bisher, und `selectOption` in den Tests bleibt gültig. Ein nachgebautes Menü wäre der kürzeste Weg, Bedienbarkeit zu verlieren.
+  - **„Automatisch“ nennt jetzt das Ergebnis** („Automatisch (Google Maps)“). Vorher stand das geratene Ziel in einem Satz über der Liste; in der Zeile selbst war nicht zu sehen, was „automatisch“ bedeutet.
+  - **Vorab laden: ein Feld statt dreier Bedienelemente** (ausdrücklich verlangt). Suchfeld, Auswahlliste und Knopf sind ein Feld mit Vorschlägen ab dem ersten Buchstaben; **der Vorschlag ist der Knopf**. Vorschläge beginnen am Wortanfang, Treffer in der Mitte stehen dahinter, höchstens acht. Zwei Dinge wurden dabei gemessen statt vermutet: Die Vorschlagsliste **schwebte** zuerst über der Gruppe und war von deren `overflow-hidden` unsichtbar beschnitten (jetzt steht sie in der Gruppe), und der Klick ging verloren, weil `onBlur` die Liste schloss, bevor er ankam (jetzt `preventDefault` auf dem Druck, kein Zeitfenster).
+  - **Kopfzeile: Segmentschalter statt vier Knöpfen** – eine Fläche, die gewählte Stellung erhoben. Im Dunkelmodus ist die erhobene Fläche **dunkler**, nicht heller: Die Palette dieses Projekts dreht die Grauwerte (`globals.css`), weiße Schrift auf `neutral-600` käme auf 2,6 : 1 statt der verlangten 4,5 : 1 (9.7). Gerechnet, bevor es gebaut war.
+  - **Detailblatt** mit größerem Eckradius und Greifbalken. Der Balken ist **Zeichen, kein Griff** – gezogen wird nichts; ein Balken, der nach Griff aussieht, ohne einer zu sein, wäre ein Versprechen, das die App nicht hält. Geschlossen wird weiter mit dem ×.
+  - **Text gekürzt, in allen neun Sprachen.** Entfallen sind `settings.appearanceNote`, `settings.languageNote`, `settings.mapsAppNote`, `settings.mapsAppDeviceOnly`, `settings.feedbackNote` und `settings.locationOff`; gekürzt sind Standort-, Übersetzungs- und Offline-Hinweis. Geändert wurde mit einem Node-Skript, nicht mit PowerShell (CLAUDE.md). **Nicht gekürzt: der Haftungshinweis** – er ist der Grund, warum niemand blind losfährt (10.5), und steht ungekürzt oben.
+  - **Was die Tests gefunden haben, und das ist der Punkt:** Das Rückmeldeformular öffnet als Blatt und war von der neuen Gruppe abgeschnitten – unbedienbar, sichtbar nur als Zeitüberschreitung in `e2e/rueckmeldungen.spec.ts`. Daher `clip={false}` an `ListGroup`. Beim Draufschauen war nichts zu sehen.
+  - **Geprüft:** Typecheck, Lint, **724 Unit-Tests**, **142 E2E-Tests** gegen den Entwicklungsserver (2 übersprungen: Service Worker gibt es dort nicht), darunter die Zugänglichkeitsprüfung in hell und dunkel. Angepasst wurden die Tests, die am alten Bedienelement hingen: `staedte.spec.ts` (Auswahlliste → Vorschläge), `vorab-laden.spec.ts`, `smoke.spec.ts` (Radio → Auswahlzeile). **Nicht geprüft:** der Produktionsbau und ein echtes iPhone – beides gehört zu 12.17.
 
 ---
 

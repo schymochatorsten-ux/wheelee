@@ -19,7 +19,10 @@ test("Auskunft liefert die eigenen Daten, Löschen beendet das Konto", async ({
 
   expect(
     (
-      await konto.post("/api/auth/register", { data: { email: adresse, password: PASSWORT }, headers: herkunft() })
+      await konto.post("/api/auth/register", {
+        data: { email: adresse, password: PASSWORT },
+        headers: herkunft(),
+      })
     ).status(),
   ).toBe(200);
   await konto.put("/api/account/maps", { data: { preference: "waze" } });
