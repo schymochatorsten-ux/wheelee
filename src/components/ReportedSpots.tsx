@@ -118,7 +118,7 @@ export function ReportedSpots({ onShowSpot }: ReportedSpotsProps) {
       <div className="space-y-3">
         <div className="flex flex-wrap items-end gap-3">
           <div>
-            <label htmlFor="gemeldet-ab" className="block text-xs text-neutral-500 uppercase">
+            <label htmlFor="gemeldet-ab" className="block text-sm font-medium">
               {t("reported.minimum")}
             </label>
             <select

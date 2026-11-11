@@ -2224,6 +2224,11 @@ die Angabe, die sonst beim nächsten Mal wieder zusammengesucht wird.
   - **Die Tabellen auf `/abdeckung` wandern jetzt seitwärts**, statt ihre Spalten zu quetschen: Auf 375 px stand „Zuletzt geprüft“ dreizeilig. Der Rahmen scrollt, die Seite nicht (9.8).
   - **Geprüft nach dem zweiten Teil:** Typecheck, Lint, 724 Unit-Tests, 142 E2E-Tests – unverändert grün, **ohne dass eine weitere Testanpassung nötig war**. Das ist der eigentliche Beleg dafür, dass hier die Form geändert wurde und nicht der Baum darunter: Rollen, Beschriftungen und Bedienwege sind dieselben geblieben.
 
+  **Die Verwaltung angemeldet durchgesehen (2026-11-11, auf Torstens „ja, nachsehen“).** Dafür ein Prüfkonto in der Entwicklungsdatenbank angelegt, Startpasswort gewechselt (das schaltet die Rechte frei, 18.7), alle fünf Bereiche in hell und dunkel angesehen – und das Konto danach wieder gelöscht. **Zwei Dinge hat erst das Hinsehen gefunden**, beide behoben:
+  - **Feldbeschriftungen sahen aus wie Gruppenüberschriften.** `AdminUsers`, `FeedbackAdmin` und `ReportedSpots` beschrifteten ihre Felder seit jeher klein und in Großbuchstaben. Seit die **Gruppen** genau so überschrieben sind (9.31), standen in derselben Ansicht zwei verschiedene Dinge in derselben Schrift: „RÜCKMELDUNGEN“ (die Gruppe) und „ART“ (ein Auswahlfeld darin). Die Feldbeschriftungen sind jetzt normale Schrift; großgeschrieben ist nur noch, was eine Gruppe benennt. **Kein Test hätte das gemeldet** – die Namen stimmten ja.
+  - **Zwei Kästchen beim Mailversand sind Schalter geworden** („TLS von Anfang an“, „Versand einschalten“). Ein Kästchen neben Schaltern in derselben App ist dieselbe Frage in zwei Formen.
+  - Nicht geändert: die Filter der Verwaltung bleiben einfache Auswahlfelder (kein `SelectRow`). Sie stehen zu zweit nebeneinander über einer Liste, die sie einengen – dort ist das Feld die Sache selbst, nicht der Wert einer Einstellung.
+
 ---
 
 ## Erwägungen zu 13, 15 und 16

@@ -206,7 +206,7 @@ export function AdminUsers() {
 
         <form onSubmit={invite} className="flex flex-wrap items-end gap-3">
           <div className="min-w-0 flex-1 basis-full sm:basis-0">
-            <label htmlFor="einladung-mail" className="block text-xs text-neutral-500 uppercase">
+            <label htmlFor="einladung-mail" className="block text-sm font-medium">
               {t("users.inviteEmail")}
             </label>
             <input
@@ -219,7 +219,7 @@ export function AdminUsers() {
             />
           </div>
           <div>
-            <label htmlFor="einladung-rolle" className="block text-xs text-neutral-500 uppercase">
+            <label htmlFor="einladung-rolle" className="block text-sm font-medium">
               {t("users.inviteRole")}
             </label>
             <select
@@ -258,7 +258,7 @@ export function AdminUsers() {
 
         <div>
           <h3 className="text-sm font-semibold">{t("users.accounts")}</h3>
-          <label htmlFor="konten-suche" className="mt-2 block text-xs text-neutral-500 uppercase">
+          <label htmlFor="konten-suche" className="mt-2 block text-sm font-medium">
             {t("users.search")}
           </label>
           <input
@@ -365,10 +365,7 @@ export function AdminUsers() {
                 {editing === account.id ? (
                   <div className="mt-3 space-y-3 border-t border-neutral-200 pt-3 dark:border-neutral-800">
                     <div>
-                      <label
-                        htmlFor={`name-${account.id}`}
-                        className="block text-xs text-neutral-500 uppercase"
-                      >
+                      <label htmlFor={`name-${account.id}`} className="block text-sm font-medium">
                         {t("users.username")}
                       </label>
                       <div className="mt-1 flex flex-wrap gap-2">
@@ -393,10 +390,7 @@ export function AdminUsers() {
                     </div>
 
                     <div>
-                      <label
-                        htmlFor={`mail-${account.id}`}
-                        className="block text-xs text-neutral-500 uppercase"
-                      >
+                      <label htmlFor={`mail-${account.id}`} className="block text-sm font-medium">
                         {t("users.email")}
                       </label>
                       <div className="mt-1 flex flex-wrap gap-2">
@@ -427,10 +421,7 @@ export function AdminUsers() {
                   */}
                     {account.isYou ? null : (
                       <div>
-                        <label
-                          htmlFor={`pw-${account.id}`}
-                          className="block text-xs text-neutral-500 uppercase"
-                        >
+                        <label htmlFor={`pw-${account.id}`} className="block text-sm font-medium">
                           {t("users.newPassword")}
                         </label>
                         <div className="mt-1 flex flex-wrap gap-2">

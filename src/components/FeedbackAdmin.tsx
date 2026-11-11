@@ -203,7 +203,7 @@ export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
       <div className="space-y-4">
         <div className="flex flex-wrap gap-3">
           <div>
-            <label htmlFor="filter-art" className="block text-xs text-neutral-500 uppercase">
+            <label htmlFor="filter-art" className="block text-sm font-medium">
               {t("feedbackAdmin.filterKind")}
             </label>
             <select
@@ -218,7 +218,7 @@ export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
             </select>
           </div>
           <div>
-            <label htmlFor="filter-stand" className="block text-xs text-neutral-500 uppercase">
+            <label htmlFor="filter-stand" className="block text-sm font-medium">
               {t("feedbackAdmin.filterStatus")}
             </label>
             <select
@@ -428,7 +428,7 @@ function NoteField({
 
   return (
     <div className="mt-2">
-      <label htmlFor={`notiz-${id}`} className="text-xs text-neutral-500 uppercase">
+      <label htmlFor={`notiz-${id}`} className="text-sm font-medium">
         {t("feedbackAdmin.note")}
       </label>
       <textarea

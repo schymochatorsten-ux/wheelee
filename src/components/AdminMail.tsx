@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { useT } from "@/i18n/context";
 import { SettingsSection } from "./SettingsSection";
+import { Switch } from "./ui/List";
 
 /**
  * Mailversand einrichten (ToDo 10.22) – nur für Administratoren.
@@ -228,15 +229,18 @@ export function AdminMail() {
               onChange={(event) => setForm({ ...form, port: event.target.value })}
             />
           </label>
-          <label className="flex items-end gap-2 pb-2 text-sm">
-            <input
-              type="checkbox"
-              className="size-5"
+          {/*
+            Schalter statt Kästchen (ToDo 9.31): Ein- und Ausschalten sieht in
+            der ganzen App gleich aus, hier wie bei der Standortfreigabe.
+          */}
+          <div className="flex items-end gap-3 pb-2 text-sm">
+            <span className="flex-1">{t("adminMail.secure")}</span>
+            <Switch
               checked={form.secure}
-              onChange={(event) => setForm({ ...form, secure: event.target.checked })}
+              onChange={(next) => setForm({ ...form, secure: next })}
+              label={t("adminMail.secure")}
             />
-            {t("adminMail.secure")}
-          </label>
+          </div>
         </div>
 
         <label className="block text-sm">
@@ -324,15 +328,14 @@ export function AdminMail() {
           <span className="mt-1 block text-xs text-neutral-500">{t("adminMail.providerNote")}</span>
         </label>
 
-        <label className="flex items-center gap-2 text-sm">
-          <input
-            type="checkbox"
-            className="size-5"
+        <div className="flex items-center gap-3 text-sm">
+          <span className="flex-1">{t("adminMail.enabled")}</span>
+          <Switch
             checked={form.enabled}
-            onChange={(event) => setForm({ ...form, enabled: event.target.checked })}
+            onChange={(next) => setForm({ ...form, enabled: next })}
+            label={t("adminMail.enabled")}
           />
-          {t("adminMail.enabled")}
-        </label>
+        </div>
       </div>
 
       {/*
