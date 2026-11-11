@@ -4,6 +4,7 @@ import { useCallback, useState } from "react";
 import { useLocale, useT } from "@/i18n/context";
 import { distanceMeters, formatDistance, type LatLng } from "@/lib/geo";
 import type { ParkingSpot } from "@/lib/types";
+import { ListGroup, Row } from "./ui/List";
 
 /**
  * Gespeicherte Parkplätze im Konto-Bereich (ToDo 11.5).
@@ -34,7 +35,7 @@ interface MyFavoritesProps {
 }
 
 const SMALL_BUTTON =
-  "min-h-11 rounded-lg border border-neutral-300 px-2.5 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none disabled:opacity-60 dark:border-neutral-700";
+  "min-h-11 rounded-xl bg-neutral-200/80 px-2.5 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none disabled:opacity-60 dark:bg-neutral-800";
 
 export function MyFavorites({ onShowSpot, position }: MyFavoritesProps) {
   const t = useT();
@@ -104,25 +105,26 @@ export function MyFavorites({ onShowSpot, position }: MyFavoritesProps) {
   };
 
   return (
-    <section
-      aria-labelledby="meine-favoriten"
-      className="border-t border-neutral-200 pt-3 dark:border-neutral-800"
-    >
-      <h3 id="meine-favoriten" className="sr-only">
-        {t("myFavorites.open")}
-      </h3>
-      <button
-        type="button"
-        onClick={toggle}
-        aria-expanded={open}
-        aria-controls="meine-favoriten-liste"
-        className={SMALL_BUTTON}
-      >
-        {open ? t("myFavorites.close") : t("myFavorites.open")}
-      </button>
+    /*
+      **Als Gruppe wie alles andere** (ToDo 9.31). Die Überschrift war
+      `sr-only` und der Knopf trug den Namen doppelt; jetzt steht der Name
+      einmal über der Gruppe, und der Knopf sagt nur noch, was er tut.
+    */
+    <ListGroup title={t("myFavorites.open")} clip={false}>
+      <Row>
+        <button
+          type="button"
+          onClick={toggle}
+          aria-expanded={open}
+          aria-controls="meine-favoriten-liste"
+          className={SMALL_BUTTON}
+        >
+          {open ? t("myFavorites.close") : t("myFavorites.open")}
+        </button>
+      </Row>
 
       {open && (
-        <div id="meine-favoriten-liste" className="mt-3 space-y-3">
+        <div id="meine-favoriten-liste" className="space-y-3 px-4 py-3">
           <p className="text-xs text-neutral-500">{t("myFavorites.intro")}</p>
 
           {error && (
@@ -150,7 +152,7 @@ export function MyFavorites({ onShowSpot, position }: MyFavoritesProps) {
               return (
                 <li
                   key={entry.spotId}
-                  className="rounded-xl border border-neutral-200 p-3 dark:border-neutral-800"
+                  className="rounded-xl bg-neutral-100/70 p-3 dark:bg-neutral-800/40"
                 >
                   <p className="text-sm font-medium">
                     {entry.spot ? name : t("myFavorites.notInStock")}
@@ -192,6 +194,6 @@ export function MyFavorites({ onShowSpot, position }: MyFavoritesProps) {
           </ul>
         </div>
       )}
-    </section>
+    </ListGroup>
   );
 }

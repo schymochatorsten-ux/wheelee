@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { useLocale, useT } from "@/i18n/context";
 import { SettingsSection } from "./SettingsSection";
+import { segmentGroup, segmentItem } from "./ui/styles";
 
 /**
  * Besucherzahlen der letzten Tage (ToDo 20.1) – nur für Administratoren.
@@ -59,7 +60,7 @@ export function AdminVisits() {
 
   return (
     <SettingsSection title={t("visits.title")} description={t("visits.note")}>
-      <div role="radiogroup" aria-label={t("visits.range")} className="flex gap-2">
+      <div role="radiogroup" aria-label={t("visits.range")} className={segmentGroup}>
         {RANGES.map((option) => (
           <button
             key={option}
@@ -67,11 +68,7 @@ export function AdminVisits() {
             role="radio"
             aria-checked={range === option}
             onClick={() => setRange(option)}
-            className={`min-h-11 rounded-lg border px-3 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none ${
-              range === option
-                ? "border-blue-700 bg-blue-700 text-white"
-                : "border-neutral-300 dark:border-neutral-700"
-            }`}
+            className={segmentItem(range === option)}
           >
             {t("visits.lastDays", { count: option })}
           </button>
@@ -87,23 +84,31 @@ export function AdminVisits() {
       {data ? (
         <>
           <dl className="mt-3 grid grid-cols-2 gap-2 text-sm sm:grid-cols-4">
-            <div className="rounded-lg border border-neutral-200 p-2 dark:border-neutral-800">
+            <div className="rounded-xl bg-neutral-100/70 p-2 dark:bg-neutral-800/40">
               <dt className="text-xs text-neutral-500">{t("visits.today")}</dt>
-              <dd className="text-lg font-semibold">{(todayRow?.visitors ?? 0).toLocaleString(locale)}</dd>
+              <dd className="text-lg font-semibold">
+                {(todayRow?.visitors ?? 0).toLocaleString(locale)}
+              </dd>
             </div>
-            <div className="rounded-lg border border-neutral-200 p-2 dark:border-neutral-800">
+            <div className="rounded-xl bg-neutral-100/70 p-2 dark:bg-neutral-800/40">
               <dt className="text-xs text-neutral-500">{t("visits.inRange", { count: range })}</dt>
-              <dd className="text-lg font-semibold">{sum(days, "visitors").toLocaleString(locale)}</dd>
+              <dd className="text-lg font-semibold">
+                {sum(days, "visitors").toLocaleString(locale)}
+              </dd>
             </div>
-            <div className="rounded-lg border border-neutral-200 p-2 dark:border-neutral-800">
+            <div className="rounded-xl bg-neutral-100/70 p-2 dark:bg-neutral-800/40">
               <dt className="text-xs text-neutral-500">{t("visits.views")}</dt>
               <dd className="text-lg font-semibold">{sum(days, "views").toLocaleString(locale)}</dd>
             </div>
-            <div className="rounded-lg border border-neutral-200 p-2 dark:border-neutral-800">
+            <div className="rounded-xl bg-neutral-100/70 p-2 dark:bg-neutral-800/40">
               <dt className="text-xs text-neutral-500">
-                {data.total.since ? t("visits.totalSince", { date: date(data.total.since) }) : t("visits.total")}
+                {data.total.since
+                  ? t("visits.totalSince", { date: date(data.total.since) })
+                  : t("visits.total")}
               </dt>
-              <dd className="text-lg font-semibold">{data.total.visitors.toLocaleString(locale)}</dd>
+              <dd className="text-lg font-semibold">
+                {data.total.visitors.toLocaleString(locale)}
+              </dd>
             </div>
           </dl>
 
@@ -113,10 +118,13 @@ export function AdminVisits() {
             <ul className="mt-3 space-y-1" aria-label={t("visits.title")}>
               {days.map((entry) => (
                 <li key={entry.day} className="flex items-center gap-2 text-sm">
-                  <span className="w-24 shrink-0 tabular-nums text-neutral-600 dark:text-neutral-400">
+                  <span className="w-24 shrink-0 text-neutral-600 tabular-nums dark:text-neutral-400">
                     {date(entry.day)}
                   </span>
-                  <span className="h-3 flex-1 rounded bg-neutral-100 dark:bg-neutral-900" aria-hidden="true">
+                  <span
+                    className="h-3 flex-1 rounded bg-neutral-100 dark:bg-neutral-900"
+                    aria-hidden="true"
+                  >
                     <span
                       className="block h-3 rounded bg-blue-700"
                       style={{ width: `${Math.max(2, (entry.visitors / peak) * 100)}%` }}

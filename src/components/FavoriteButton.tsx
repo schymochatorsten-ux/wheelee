@@ -77,7 +77,7 @@ export function FavoriteButton({ spotId, signedIn }: FavoriteButtonProps) {
         onClick={() => void toggle()}
         disabled={!signedIn || busy || favorite === null}
         aria-pressed={favorite === true}
-        className="flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border border-neutral-300 px-4 font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none disabled:opacity-55 dark:border-neutral-700"
+        className="flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-neutral-200/80 px-4 font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none disabled:opacity-55 dark:bg-neutral-800"
       >
         <svg
           viewBox="0 0 24 24"

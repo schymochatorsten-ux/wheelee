@@ -6,6 +6,7 @@ import { localeTag, type Locale } from "@/i18n";
 import type { ParkingSpot } from "@/lib/types";
 import { formatDate } from "./DataDisclaimer";
 import { SettingsSection } from "./SettingsSection";
+import { secondaryButton } from "./ui/styles";
 
 /**
  * Mehrfach als aufgehoben gemeldete Parkplätze – die Prüfliste (ToDo 8.8).
@@ -115,140 +116,136 @@ export function ReportedSpots({ onShowSpot }: ReportedSpotsProps) {
       })}
     >
       <div className="space-y-3">
-      <div className="flex flex-wrap items-end gap-3">
-        <div>
-          <label htmlFor="gemeldet-ab" className="block text-xs text-neutral-500 uppercase">
-            {t("reported.minimum")}
-          </label>
-          <select
-            id="gemeldet-ab"
-            value={minimum}
-            onChange={(event) => setMinimum(Number(event.target.value))}
-            className="mt-1 min-h-11 rounded-lg border border-neutral-300 bg-white px-2 text-sm dark:border-neutral-700 dark:bg-neutral-950"
-          >
-            {/* 1 ist bewusst wählbar: Um sich alles anzusehen, was gemeldet
+        <div className="flex flex-wrap items-end gap-3">
+          <div>
+            <label htmlFor="gemeldet-ab" className="block text-xs text-neutral-500 uppercase">
+              {t("reported.minimum")}
+            </label>
+            <select
+              id="gemeldet-ab"
+              value={minimum}
+              onChange={(event) => setMinimum(Number(event.target.value))}
+              className="mt-1 min-h-11 rounded-xl bg-neutral-200/70 px-2 text-sm dark:bg-neutral-800/70"
+            >
+              {/* 1 ist bewusst wählbar: Um sich alles anzusehen, was gemeldet
                 wurde. Die Vorgabe bleibt 2, weil eine einzelne Meldung auch
                 ein Fehlgriff sein kann. */}
-            <option value={1}>{t("reported.minimumAll")}</option>
-            <option value={2}>2</option>
-            <option value={3}>3</option>
-            <option value={5}>5</option>
-          </select>
+              <option value={1}>{t("reported.minimumAll")}</option>
+              <option value={2}>2</option>
+              <option value={3}>3</option>
+              <option value={5}>5</option>
+            </select>
+          </div>
+          <button type="button" onClick={() => void load()} className={secondaryButton}>
+            {t("admin.reload")}
+          </button>
         </div>
-        <button
-          type="button"
-          onClick={() => void load()}
-          className="min-h-11 rounded-lg border border-neutral-300 px-3 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
-        >
-          {t("admin.reload")}
-        </button>
-      </div>
 
-      {error && (
-        <p
-          role="alert"
-          className="rounded-lg bg-red-50 p-3 text-sm text-red-800 dark:bg-red-950 dark:text-red-200"
-        >
-          {error}
-        </p>
-      )}
-
-      {loading && <p className="text-sm text-neutral-500">{t("admin.loading")}</p>}
-
-      {!loading && spots.length === 0 && !error && (
-        <p className="rounded-xl border border-neutral-200 p-4 text-sm text-neutral-500 dark:border-neutral-800">
-          {t("reported.none")}
-        </p>
-      )}
-
-      <ul className="space-y-3">
-        {spots.map((entry) => (
-          <li
-            key={entry.spotId}
-            className="rounded-xl border border-neutral-200 p-3 dark:border-neutral-800"
+        {error && (
+          <p
+            role="alert"
+            className="rounded-xl bg-red-50 p-3 text-sm text-red-800 dark:bg-red-950 dark:text-red-200"
           >
-            <div className="flex flex-wrap items-center gap-2 text-xs">
-              <span className="rounded bg-amber-100 px-1.5 py-0.5 font-medium text-amber-900 dark:bg-amber-950 dark:text-amber-200">
-                {t("reported.goneCount", { count: entry.goneCount })}
-              </span>
-              {/*
+            {error}
+          </p>
+        )}
+
+        {loading && <p className="text-sm text-neutral-500">{t("admin.loading")}</p>}
+
+        {!loading && spots.length === 0 && !error && (
+          <p className="rounded-xl bg-neutral-100/70 p-4 text-sm text-neutral-500 dark:bg-neutral-800/40">
+            {t("reported.none")}
+          </p>
+        )}
+
+        <ul className="space-y-3">
+          {spots.map((entry) => (
+            <li
+              key={entry.spotId}
+              className="rounded-xl bg-neutral-100/70 p-3 dark:bg-neutral-800/40"
+            >
+              <div className="flex flex-wrap items-center gap-2 text-xs">
+                <span className="rounded bg-amber-100 px-1.5 py-0.5 font-medium text-amber-900 dark:bg-amber-950 dark:text-amber-200">
+                  {t("reported.goneCount", { count: entry.goneCount })}
+                </span>
+                {/*
                 Der Gegenwert steht daneben, und zwar nur wenn es ihn gibt:
                 Drei Meldungen bei null Bestätigungen sind eine andere Lage als
                 drei bei zwanzig. Ohne diese Zahl liest man die Liste als
                 Urteil statt als Hinweis.
               */}
-              {entry.existsCount > 0 && (
-                <span className="rounded bg-emerald-100 px-1.5 py-0.5 font-medium text-emerald-900 dark:bg-emerald-950 dark:text-emerald-200">
-                  {t("reported.existsCount", { count: entry.existsCount })}
-                </span>
-              )}
-              <span className="text-neutral-500">{entry.spotId}</span>
-            </div>
+                {entry.existsCount > 0 && (
+                  <span className="rounded bg-emerald-100 px-1.5 py-0.5 font-medium text-emerald-900 dark:bg-emerald-950 dark:text-emerald-200">
+                    {t("reported.existsCount", { count: entry.existsCount })}
+                  </span>
+                )}
+                <span className="text-neutral-500">{entry.spotId}</span>
+              </div>
 
-            <p className="mt-2 text-sm font-medium">
-              {entry.spot ? entry.spot.name : t("reported.notInStock")}
-            </p>
+              <p className="mt-2 text-sm font-medium">
+                {entry.spot ? entry.spot.name : t("reported.notInStock")}
+              </p>
 
-            {/* Warum dieser Parkplatz hier steht – sonst liest man die Liste als Urteil. */}
-            <ul className="mt-1 space-y-0.5 text-xs" aria-label={t("reported.reasonLabel")}>
-              {entry.reasons.map((reason) => (
-                <li key={reason} className="font-medium text-amber-900 dark:text-amber-200">
-                  {t(`reported.reason.${reason}`, { count: entry.goneCount })}
-                </li>
-              ))}
-            </ul>
-            <p className="mt-1 text-xs text-neutral-500" title={t("reported.weightedHint")}>
-              {t("reported.weighted", {
-                gone: formatWeight(entry.goneWeight, locale),
-                exists: formatWeight(entry.existsWeight, locale),
-              })}
-            </p>
+              {/* Warum dieser Parkplatz hier steht – sonst liest man die Liste als Urteil. */}
+              <ul className="mt-1 space-y-0.5 text-xs" aria-label={t("reported.reasonLabel")}>
+                {entry.reasons.map((reason) => (
+                  <li key={reason} className="font-medium text-amber-900 dark:text-amber-200">
+                    {t(`reported.reason.${reason}`, { count: entry.goneCount })}
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-1 text-xs text-neutral-500" title={t("reported.weightedHint")}>
+                {t("reported.weighted", {
+                  gone: formatWeight(entry.goneWeight, locale),
+                  exists: formatWeight(entry.existsWeight, locale),
+                })}
+              </p>
 
-            <dl className="mt-1 space-y-0.5 text-xs text-neutral-500">
-              {entry.spot && (
-                <div className="flex gap-2">
-                  <dt>{t("reported.place")}</dt>
-                  <dd>
-                    {entry.spot.district}
-                    {entry.spot.spotCount > 1 &&
-                      t("reported.spaces", { count: entry.spot.spotCount })}
-                  </dd>
-                </div>
-              )}
-              {entry.lastGoneAt && (
-                <div className="flex gap-2">
-                  <dt>{t("reported.lastReported")}</dt>
-                  <dd>{formatDate(entry.lastGoneAt.slice(0, 10), locale)}</dd>
-                </div>
-              )}
-              {entry.lastExistsAt && (
-                <div className="flex gap-2">
-                  <dt>{t("reported.lastConfirmed")}</dt>
-                  <dd>{formatDate(entry.lastExistsAt.slice(0, 10), locale)}</dd>
-                </div>
-              )}
-            </dl>
+              <dl className="mt-1 space-y-0.5 text-xs text-neutral-500">
+                {entry.spot && (
+                  <div className="flex gap-2">
+                    <dt>{t("reported.place")}</dt>
+                    <dd>
+                      {entry.spot.district}
+                      {entry.spot.spotCount > 1 &&
+                        t("reported.spaces", { count: entry.spot.spotCount })}
+                    </dd>
+                  </div>
+                )}
+                {entry.lastGoneAt && (
+                  <div className="flex gap-2">
+                    <dt>{t("reported.lastReported")}</dt>
+                    <dd>{formatDate(entry.lastGoneAt.slice(0, 10), locale)}</dd>
+                  </div>
+                )}
+                {entry.lastExistsAt && (
+                  <div className="flex gap-2">
+                    <dt>{t("reported.lastConfirmed")}</dt>
+                    <dd>{formatDate(entry.lastExistsAt.slice(0, 10), locale)}</dd>
+                  </div>
+                )}
+              </dl>
 
-            {/*
+              {/*
               Ein Parkplatz, den der Bestand nicht mehr kennt, bleibt in der
               Liste stehen – das ist kein Fehlerfall, sondern die
               Bestätigung der Meldung. Nur der Knopf auf die Karte fehlt dann,
               denn es gibt nichts zu zeigen.
             */}
-            {entry.spot ? (
-              <button
-                type="button"
-                onClick={() => void showSpot(entry.spotId)}
-                className="mt-2 min-h-11 rounded-lg border border-neutral-300 px-2.5 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
-              >
-                {t("reported.showOnMap")}
-              </button>
-            ) : (
-              <p className="mt-2 text-xs text-neutral-500">{t("reported.confirmedGone")}</p>
-            )}
-          </li>
-        ))}
-      </ul>
+              {entry.spot ? (
+                <button
+                  type="button"
+                  onClick={() => void showSpot(entry.spotId)}
+                  className="mt-2 min-h-11 rounded-xl bg-neutral-200/80 px-2.5 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-800"
+                >
+                  {t("reported.showOnMap")}
+                </button>
+              ) : (
+                <p className="mt-2 text-xs text-neutral-500">{t("reported.confirmedGone")}</p>
+              )}
+            </li>
+          ))}
+        </ul>
       </div>
     </SettingsSection>
   );

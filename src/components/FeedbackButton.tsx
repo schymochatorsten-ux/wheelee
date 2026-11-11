@@ -57,7 +57,7 @@ export function FeedbackButton({
   const className =
     variant === "primary"
       ? "flex min-h-12 w-full items-center justify-center rounded-xl bg-blue-700 px-4 text-center font-medium text-white hover:bg-blue-800 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 focus-visible:outline-none"
-      : "flex min-h-12 w-full items-center justify-center rounded-xl border border-neutral-300 px-4 text-center font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700";
+      : "flex min-h-12 w-full items-center justify-center rounded-xl bg-neutral-200/80 px-4 text-center font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-800";
 
   return (
     <>
@@ -81,7 +81,7 @@ export function FeedbackButton({
             role="dialog"
             aria-modal="true"
             aria-labelledby="feedback-dialog-titel"
-            className="relative max-h-[90vh] w-full overflow-y-auto rounded-t-2xl bg-white p-4 pb-6 shadow-[0_-4px_24px_rgba(0,0,0,.25)] sm:max-w-lg sm:rounded-2xl dark:bg-neutral-900"
+            className="relative max-h-[90vh] w-full overflow-y-auto rounded-t-3xl bg-white p-4 pb-6 shadow-[0_-4px_24px_rgba(0,0,0,.25)] sm:max-w-lg sm:rounded-3xl dark:bg-neutral-900"
           >
             <div className="flex items-start gap-3">
               <h2 id="feedback-dialog-titel" className="flex-1 text-lg font-semibold">
@@ -91,7 +91,7 @@ export function FeedbackButton({
                 type="button"
                 onClick={close}
                 aria-label={t("feedback.close")}
-                className="-mt-1 -mr-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-2xl text-neutral-500 hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:hover:bg-neutral-800"
+                className="-mt-1 -mr-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-neutral-200/70 text-xl text-neutral-600 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-800 dark:text-neutral-300"
               >
                 ×
               </button>

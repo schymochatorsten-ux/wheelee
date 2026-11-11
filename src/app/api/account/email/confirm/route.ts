@@ -20,7 +20,10 @@ async function postHandler(request: Request) {
   if (!mailConfigured()) return NextResponse.json({ error: t("api.notFound") }, { status: 404 });
 
   if (!allow(`mail-redeem:${clientKey(request)}`, LIMITS.mailRedeem)) {
-    return NextResponse.json({ error: t("api.tooManyAttempts") }, { status: 429, headers: retryAfter(LIMITS.mailRedeem) });
+    return NextResponse.json(
+      { error: t("api.tooManyAttempts") },
+      { status: 429, headers: retryAfter(LIMITS.mailRedeem) },
+    );
   }
 
   let body: { token?: unknown };

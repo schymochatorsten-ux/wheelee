@@ -15,7 +15,8 @@ import { withLogging } from "@/lib/log";
  * nichts davon wird gespeichert (`lib/visits.ts`).
  */
 async function postHandler(request: Request) {
-  const empty = () => new NextResponse(null, { status: 204, headers: { "Cache-Control": "no-store" } });
+  const empty = () =>
+    new NextResponse(null, { status: 204, headers: { "Cache-Control": "no-store" } });
 
   // Zu viele Pings von einer Herkunft zählen nicht mehr mit: Ein Browser schickt
   // einen je Seitenaufruf, ein Skript Tausende.

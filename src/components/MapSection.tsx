@@ -760,7 +760,7 @@ export function MapSection({ initialNearby, defaultCity, user: initialUser }: Ma
                 // Grund nennt, ist das eindeutig. Vorgelesen fehlte der
                 // Zusammenhang, deshalb der vollständige Name.
                 aria-label={t("map.retryLocation")}
-                className="min-h-11 shrink-0 rounded-lg border border-neutral-300 px-2.5 text-xs font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
+                className="min-h-11 shrink-0 rounded-xl bg-neutral-200/80 px-2.5 text-xs font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-800"
               >
                 {t("search.retry")}
               </button>

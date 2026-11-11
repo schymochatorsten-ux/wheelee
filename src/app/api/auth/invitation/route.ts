@@ -21,7 +21,10 @@ import { readJson } from "@/lib/read-json";
  */
 async function postHandler(request: Request) {
   if (!allow(`invitation:${clientKey(request)}`, LIMITS.invitationRedeem)) {
-    return NextResponse.json({ error: t("api.tooManyAttempts") }, { status: 429, headers: retryAfter(LIMITS.invitationRedeem) });
+    return NextResponse.json(
+      { error: t("api.tooManyAttempts") },
+      { status: 429, headers: retryAfter(LIMITS.invitationRedeem) },
+    );
   }
 
   let body: { token?: unknown; password?: unknown };
@@ -57,7 +60,7 @@ async function postHandler(request: Request) {
         mapsPreference: null,
         language: null,
         locationPreference: null,
-      mustChangePassword: false,
+        mustChangePassword: false,
       }),
     },
     { headers: { "Cache-Control": "no-store" } },

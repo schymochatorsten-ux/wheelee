@@ -175,9 +175,9 @@ export function AdminMail() {
   }
 
   const field =
-    "mt-1 w-full min-h-11 rounded-lg border border-neutral-300 px-3 text-sm focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700 dark:bg-neutral-900";
+    "mt-1 w-full min-h-11 rounded-xl bg-neutral-200/80 px-3 text-sm focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-800/70";
   const button =
-    "min-h-11 rounded-lg border border-neutral-300 px-3 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none disabled:opacity-50 dark:border-neutral-700";
+    "min-h-11 rounded-xl bg-neutral-200/80 px-3 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none disabled:opacity-50 dark:bg-neutral-800";
 
   return (
     <SettingsSection
@@ -283,7 +283,9 @@ export function AdminMail() {
             placeholder="https://wheelee.de"
             onChange={(event) => setForm({ ...form, publicUrl: event.target.value })}
           />
-          <span className="mt-1 block text-xs text-neutral-500">{t("adminMail.publicUrlNote")}</span>
+          <span className="mt-1 block text-xs text-neutral-500">
+            {t("adminMail.publicUrlNote")}
+          </span>
         </label>
 
         {/*
@@ -339,7 +341,9 @@ export function AdminMail() {
         verarbeitet die App erstmals Adressen für den Versand, und das gehört
         in die Erklärung, bevor jemand den Schalter umlegt.
       */}
-      <p className="mt-3 text-xs text-amber-700 dark:text-amber-300">{t("adminMail.privacyNote")}</p>
+      <p className="mt-3 text-xs text-amber-700 dark:text-amber-300">
+        {t("adminMail.privacyNote")}
+      </p>
 
       <div className="mt-3 flex flex-wrap gap-2">
         <button type="button" className={button} disabled={busy} onClick={() => void save()}>

@@ -48,7 +48,10 @@ export default function Abdeckung() {
    * Datei, steht „noch nicht gelaufen“ – nie ein erfundenes Datum.
    */
   const checked = readChecked();
-  const newestImport = cities.reduce((latest, city) => (city.importedAt > latest ? city.importedAt : latest), "2026-01-01");
+  const newestImport = cities.reduce(
+    (latest, city) => (city.importedAt > latest ? city.importedAt : latest),
+    "2026-01-01",
+  );
   // Die größten Städte insgesamt, gleich welcher Quelle – die Tabelle der amtlichen
   // Listen allein zeigt nicht, wo es die meisten Stellplätze gibt.
   const largest = [...cities].sort((a, b) => b.spaceCount - a.spaceCount).slice(0, 25);
@@ -70,72 +73,83 @@ export default function Abdeckung() {
           Einträge bedeuten nicht, dass es dort keine Plätze gibt.
         </p>
         <p>
-          In {number(confirmation.cities)} Städten wurden die amtlichen Standorte mit
-          OpenStreetMap abgeglichen: {number(confirmation.confirmed)} Standorte kennen beide Quellen,{" "}
+          In {number(confirmation.cities)} Städten wurden die amtlichen Standorte mit OpenStreetMap
+          abgeglichen: {number(confirmation.confirmed)} Standorte kennen beide Quellen,{" "}
           {number(confirmation.officialOnly)} nur die Stadt.
         </p>
       </section>
 
       <section>
         <h2>Städte mit amtlicher Liste</h2>
-        <table className="mt-2 w-full text-left text-sm">
-          <thead>
-            <tr>
-              <th>Stadt</th>
-              <th>Standorte</th>
-              <th>Stellplätze</th>
-              <th>Daten vom</th>
-              <th>Zuletzt geprüft</th>
-            </tr>
-          </thead>
-          <tbody>
-            {official.map((city) => (
-              <tr key={city.slug}>
-                <td>{city.name}</td>
-                <td>{number(city.spotCount)}</td>
-                <td>{number(city.spaceCount)}</td>
-                <td>{city.importedAt.slice(0, 10)}</td>
-                <td>{checked.cities[city.slug]?.slice(0, 10) ?? "–"}</td>
+        {/*
+          **Die Tabelle wandert, statt sich zu quetschen** (ToDo 9.31). Auf
+          375 px blieben für „Zuletzt geprüft“ zwei Zeichen je Zeile; das
+          Datum stand dreizeilig. Der Rahmen scrollt jetzt seitwärts, die
+          Seite selbst nicht (9.8) – negative Ränder, damit er am
+          Bildschirmrand beginnt und nicht mitten im Text.
+        */}
+        <div className="-mx-4 overflow-x-auto px-4">
+          <table className="mt-2 w-full min-w-[22rem] text-left text-sm">
+            <thead>
+              <tr>
+                <th>Stadt</th>
+                <th>Standorte</th>
+                <th>Stellplätze</th>
+                <th>Daten vom</th>
+                <th>Zuletzt geprüft</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {official.map((city) => (
+                <tr key={city.slug}>
+                  <td>{city.name}</td>
+                  <td>{number(city.spotCount)}</td>
+                  <td>{number(city.spaceCount)}</td>
+                  <td>{city.importedAt.slice(0, 10)}</td>
+                  <td>{checked.cities[city.slug]?.slice(0, 10) ?? "–"}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
         <p className="mt-2 text-sm">
           „Daten vom“ ist der Tag, an dem sich der Bestand zuletzt geändert hat; „Zuletzt geprüft“
-          der Tag des letzten Vergleichs mit der Quelle der Stadt, auch wenn sich nichts geändert hat.
-          Quellen ohne Änderungsdatum werden dafür monatlich neu geholt und verglichen. „–“ heißt:
-          noch nicht geprüft, oder die Quelle ist derzeit nicht erreichbar.
+          der Tag des letzten Vergleichs mit der Quelle der Stadt, auch wenn sich nichts geändert
+          hat. Quellen ohne Änderungsdatum werden dafür monatlich neu geholt und verglichen. „–“
+          heißt: noch nicht geprüft, oder die Quelle ist derzeit nicht erreichbar.
         </p>
       </section>
 
       <section>
         <h2>Die 25 Städte mit den meisten Stellplätzen</h2>
         <p>
-          Aus allen Quellen, nach Stellplätzen sortiert. Dass Städte wie Stuttgart oder
-          Nürnberg hier stehen, aber nicht oben bei den amtlichen Listen, liegt an der Quelle:
-          Sie haben keine veröffentlichte Liste, ihre Zahlen stammen aus OpenStreetMap und sind
-          eine Mindestzahl.
+          Aus allen Quellen, nach Stellplätzen sortiert. Dass Städte wie Stuttgart oder Nürnberg
+          hier stehen, aber nicht oben bei den amtlichen Listen, liegt an der Quelle: Sie haben
+          keine veröffentlichte Liste, ihre Zahlen stammen aus OpenStreetMap und sind eine
+          Mindestzahl.
         </p>
-        <table className="mt-2 w-full text-left text-sm">
-          <thead>
-            <tr>
-              <th>Stadt</th>
-              <th>Standorte</th>
-              <th>Stellplätze</th>
-              <th>Quelle</th>
-            </tr>
-          </thead>
-          <tbody>
-            {largest.map((city) => (
-              <tr key={city.slug}>
-                <td>{city.name}</td>
-                <td>{number(city.spotCount)}</td>
-                <td>{number(city.spaceCount)}</td>
-                <td>{city.coverage === "official" ? "amtlich" : "OpenStreetMap"}</td>
+        <div className="-mx-4 overflow-x-auto px-4">
+          <table className="mt-2 w-full min-w-[22rem] text-left text-sm">
+            <thead>
+              <tr>
+                <th>Stadt</th>
+                <th>Standorte</th>
+                <th>Stellplätze</th>
+                <th>Quelle</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {largest.map((city) => (
+                <tr key={city.slug}>
+                  <td>{city.name}</td>
+                  <td>{number(city.spotCount)}</td>
+                  <td>{number(city.spaceCount)}</td>
+                  <td>{city.coverage === "official" ? "amtlich" : "OpenStreetMap"}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </section>
     </LegalPage>
   );

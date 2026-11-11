@@ -58,8 +58,13 @@ in [Erledigt.md](Erledigt.md) bei 19.3 und in [deploy/Datenlauf.md](deploy/Daten
 **Zum Schluss steht 12.17** (abschließender Gesamttest), weil er sonst einen
 Stand prüft, den es danach nicht mehr gibt. _10.23 (Sicherheit), 12.16
 (Geschwindigkeit) und 12.18 (npm audit) sind am 2026-11-09 erledigt, 12.19
-(wackelnder Smoke-Test) und Köln aus 2d.8a am 2026-11-10, Bochum aus 2d.8a und
-2d.12 (Moers) am 2026-11-11._
+(wackelnder Smoke-Test) und Köln aus 2d.8a am 2026-11-10, Bochum aus 2d.8a,
+2d.12 (Moers) und 9.31 (Oberfläche nach Apple-Vorbild) am 2026-11-11._
+
+**Neue Bedienelemente kommen aus `src/components/ui/`** (`List.tsx` für
+Gruppen, Zeilen, Schalter und Auswahlzeilen, `styles.ts` für Felder und
+Knöpfe; 9.31). Eigene Klassen an einer einzelnen Stelle laufen auseinander –
+genau das war der Zustand vor dem 2026-11-11.
 
 **Neue Knöpfe und Meldungen kommen gleich in `src/i18n/de.ts`, nicht in die
 Komponente** (Aufbau in [Erledigt.md](Erledigt.md) unter 15.2) – und in die
@@ -73,10 +78,6 @@ maschinelle Mehrfachprüfung.
 
 - [~] 2d.8a **Städte mit ungenutzter amtlicher Quelle.** München, Bielefeld, Köln und – seit dem 2026-11-11 – Bochum sind abgeschlossen; Befunde in [Erledigt.md](Erledigt.md). Offen ist einer:
   - [~] **Heidelberg – Anfrage ist raus, Antwort steht aus.** Am 2026-11-11 an `mobilitaet@heidelberg.de` geschickt (Wortlaut und Befund in [Erledigt.md](Erledigt.md)): neuer Bezugsweg, sonst die Liste einmalig samt Lizenzhinweis. **Hier zu tun ist nichts, bis eine Antwort kommt** – danach entweder Import oder, bei Absage, Vermerk und Schluss. Der Bestand vom 2026-10-08 (214 Standorte) bleibt bis dahin. **Ohne Antwort nach drei bis vier Wochen einmal nachfassen.**
-
-## 9. Darstellung und Bedienung
-
-- [~] 9.31 **Die übrigen Ansichten auf die Form der Systemapps bringen.** Gebaut sind Einstellungen, Kopfzeile und Detailblatt (Befund und Begründung in [Erledigt.md](Erledigt.md)); dieselben Bausteine aus `src/components/ui/List.tsx` fehlen noch in **Konto** (`AccountPanel.tsx`), **Verwaltung** (`AdminUsers`, `AdminMail`, `FeedbackAdmin`, `ReportedSpots`, `AdminVisits` – dort steht noch `SettingsSection`), **Listenansicht** (`SpotList`, `SpotRow`) und den **Rechtstexten** (`LegalPage`). Pro Ansicht gilt dasselbe: Zeile statt Kästchen, Schalter statt zweier Felder, Erklärung als Fußnote – und jeder gekürzte Satz in allen neun Sprachdateien.
 
 ## 12. Qualität und Deployment
 

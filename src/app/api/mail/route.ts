@@ -7,5 +7,8 @@ import { mailConfigured } from "@/lib/mail";
  * ja oder nein.
  */
 export function GET() {
-  return NextResponse.json({ enabled: mailConfigured() }, { headers: { "Cache-Control": "no-store" } });
+  return NextResponse.json(
+    { enabled: mailConfigured() },
+    { headers: { "Cache-Control": "no-store" } },
+  );
 }

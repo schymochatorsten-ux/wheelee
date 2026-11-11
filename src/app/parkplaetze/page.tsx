@@ -45,10 +45,15 @@ export default function StaedteIndex() {
           href="/"
           className="inline-flex min-h-11 items-center gap-1.5 text-sm font-medium text-blue-800 hover:underline focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"
         >
-          <span aria-hidden="true">←</span> Zurück zur Karte
+          <span aria-hidden="true" className="text-lg leading-none">
+            ‹
+          </span>{" "}
+          Zurück zur Karte
         </Link>
 
-        <h1 className="mt-3 text-2xl font-semibold">Behindertenparkplätze nach Stadt</h1>
+        <h1 className="mt-3 text-[28px] leading-tight font-bold tracking-tight">
+          Behindertenparkplätze nach Stadt
+        </h1>
         <p className="mt-3 text-sm leading-relaxed">
           wheelee kennt {number(cities.length)} Städte und Gemeinden mit zusammen{" "}
           {number(cities.reduce((sum, city) => sum + city.spotCount, 0))} Standorten. Jede Stadt hat

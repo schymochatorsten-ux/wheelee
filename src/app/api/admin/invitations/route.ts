@@ -28,7 +28,10 @@ async function postHandler(request: Request) {
   }
 
   if (!allow(`invite:${user.id}`, LIMITS.invitationCreate)) {
-    return NextResponse.json({ error: t("api.tooManyInvitations") }, { status: 429, headers: retryAfter(LIMITS.invitationCreate) });
+    return NextResponse.json(
+      { error: t("api.tooManyInvitations") },
+      { status: 429, headers: retryAfter(LIMITS.invitationCreate) },
+    );
   }
 
   let body: { email?: unknown; role?: unknown };

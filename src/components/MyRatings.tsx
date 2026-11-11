@@ -4,6 +4,7 @@ import { useCallback, useState } from "react";
 import { useLocale, useT } from "@/i18n/context";
 import type { ParkingSpot, RatingVote } from "@/lib/types";
 import { formatDate } from "./DataDisclaimer";
+import { ListGroup, Row } from "./ui/List";
 
 /**
  * Die eigenen Bewertungen einsehen und zurückziehen (ToDo 11.4).
@@ -30,7 +31,7 @@ interface MyRatingsProps {
 }
 
 const SMALL_BUTTON =
-  "min-h-11 rounded-lg border border-neutral-300 px-2.5 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none disabled:opacity-60 dark:border-neutral-700";
+  "min-h-11 rounded-xl bg-neutral-200/80 px-2.5 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none disabled:opacity-60 dark:bg-neutral-800";
 
 export function MyRatings({ onShowSpot }: MyRatingsProps) {
   const t = useT();
@@ -100,25 +101,22 @@ export function MyRatings({ onShowSpot }: MyRatingsProps) {
   };
 
   return (
-    <section
-      aria-labelledby="meine-bewertungen"
-      className="border-t border-neutral-200 pt-3 dark:border-neutral-800"
-    >
-      <h3 id="meine-bewertungen" className="sr-only">
-        {t("myRatings.open")}
-      </h3>
-      <button
-        type="button"
-        onClick={toggle}
-        aria-expanded={open}
-        aria-controls="meine-bewertungen-liste"
-        className={SMALL_BUTTON}
-      >
-        {open ? t("myRatings.close") : t("myRatings.open")}
-      </button>
+    // Dieselbe Gruppe wie bei den Favoriten (ToDo 9.31).
+    <ListGroup title={t("myRatings.open")} clip={false}>
+      <Row>
+        <button
+          type="button"
+          onClick={toggle}
+          aria-expanded={open}
+          aria-controls="meine-bewertungen-liste"
+          className={SMALL_BUTTON}
+        >
+          {open ? t("myRatings.close") : t("myRatings.open")}
+        </button>
+      </Row>
 
       {open && (
-        <div id="meine-bewertungen-liste" className="mt-3 space-y-3">
+        <div id="meine-bewertungen-liste" className="space-y-3 px-4 py-3">
           <p className="text-xs text-neutral-500">{t("myRatings.intro")}</p>
 
           {error && (
@@ -139,7 +137,7 @@ export function MyRatings({ onShowSpot }: MyRatingsProps) {
               return (
                 <li
                   key={entry.spotId}
-                  className="rounded-xl border border-neutral-200 p-3 dark:border-neutral-800"
+                  className="rounded-xl bg-neutral-100/70 p-3 dark:bg-neutral-800/40"
                 >
                   <div className="flex flex-wrap items-center gap-2 text-xs">
                     <span
@@ -193,6 +191,6 @@ export function MyRatings({ onShowSpot }: MyRatingsProps) {
           </ul>
         </div>
       )}
-    </section>
+    </ListGroup>
   );
 }

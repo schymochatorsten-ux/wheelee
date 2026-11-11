@@ -79,7 +79,10 @@ async function getHandler(request: Request) {
     !allow(`geocode:${clientKey(request)}`, LIMITS.geocode) ||
     !allow("geocode:all", LIMITS.geocodeAll)
   ) {
-    return NextResponse.json({ places: [], error: t("api.searchUnavailable") }, { status: 429, headers: retryAfter(LIMITS.geocode) });
+    return NextResponse.json(
+      { places: [], error: t("api.searchUnavailable") },
+      { status: 429, headers: retryAfter(LIMITS.geocode) },
+    );
   }
 
   const url = new URL("https://nominatim.openstreetmap.org/search");

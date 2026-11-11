@@ -78,11 +78,15 @@ export function ResetPasswordForm() {
               required
               value={password}
               onChange={(event) => setPassword(event.target.value)}
-              className="min-h-11 rounded border px-3"
+              className="min-h-11 rounded-xl bg-neutral-200/70 px-3 dark:bg-neutral-800/70"
             />
           </label>
           {error ? <p role="alert">{error}</p> : null}
-          <button type="submit" disabled={busy} className="min-h-11 rounded border px-4 font-medium">
+          <button
+            type="submit"
+            disabled={busy}
+            className="min-h-11 rounded-xl bg-blue-700 px-4 font-medium text-white"
+          >
             {t("reset.submit")}
           </button>
         </form>

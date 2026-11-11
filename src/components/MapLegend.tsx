@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { type MessageKey } from "@/i18n";
 import { useT } from "@/i18n/context";
+import { floatingPanel } from "@/components/ui/styles";
 
 /**
  * Erklärt die Farben der Kartenmarker.
@@ -28,7 +29,8 @@ export function MapLegend() {
       {open && (
         <div
           id="karten-legende"
-          className="pointer-events-auto max-w-72 rounded-xl bg-white/95 p-3 text-sm shadow-lg backdrop-blur dark:bg-neutral-900/95"
+          // Dieselbe schwebende Fläche wie Leiste und Zielsuche (ToDo 9.31).
+          className={`${floatingPanel} max-w-72 p-3 text-sm`}
         >
           <h2 className="font-semibold">{t("legend.title")}</h2>
           <ul className="mt-2 space-y-2">

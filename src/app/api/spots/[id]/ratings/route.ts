@@ -69,10 +69,16 @@ async function postHandler(request: Request, context: { params: Promise<{ id: st
    * allein nicht abfängt.
    */
   if (!allow(`rating:${user.id}`, LIMITS.rating)) {
-    return NextResponse.json({ error: t("api.tooManyRatings") }, { status: 429, headers: retryAfter(LIMITS.rating) });
+    return NextResponse.json(
+      { error: t("api.tooManyRatings") },
+      { status: 429, headers: retryAfter(LIMITS.rating) },
+    );
   }
   if (!allow(`rating-ip:${clientKey(request)}`, LIMITS.ratingPerClient)) {
-    return NextResponse.json({ error: t("api.tooManyRatings") }, { status: 429, headers: retryAfter(LIMITS.ratingPerClient) });
+    return NextResponse.json(
+      { error: t("api.tooManyRatings") },
+      { status: 429, headers: retryAfter(LIMITS.ratingPerClient) },
+    );
   }
 
   if (!spotById(id)) {
@@ -113,10 +119,16 @@ async function deleteHandler(request: Request, context: { params: Promise<{ id: 
   }
 
   if (!allow(`rating:${user.id}`, LIMITS.rating)) {
-    return NextResponse.json({ error: t("api.tooManyRatings") }, { status: 429, headers: retryAfter(LIMITS.rating) });
+    return NextResponse.json(
+      { error: t("api.tooManyRatings") },
+      { status: 429, headers: retryAfter(LIMITS.rating) },
+    );
   }
   if (!allow(`rating-ip:${clientKey(request)}`, LIMITS.ratingPerClient)) {
-    return NextResponse.json({ error: t("api.tooManyRatings") }, { status: 429, headers: retryAfter(LIMITS.ratingPerClient) });
+    return NextResponse.json(
+      { error: t("api.tooManyRatings") },
+      { status: 429, headers: retryAfter(LIMITS.ratingPerClient) },
+    );
   }
 
   withdrawVote(id, user.id);

@@ -37,7 +37,10 @@ async function putHandler(request: Request) {
   // Sitzung und wechselnden Adressen ließe sich das alte Passwort sonst
   // beliebig oft raten. Fehlversuche zählen außerdem für die Anmeldepause.
   if (!allow(`password:${user.id}`, LIMITS.passwordChange) || loginPauseSeconds(user.email) > 0) {
-    return NextResponse.json({ error: t("api.tooManyPasswordChanges") }, { status: 429, headers: retryAfter(LIMITS.passwordChange) });
+    return NextResponse.json(
+      { error: t("api.tooManyPasswordChanges") },
+      { status: 429, headers: retryAfter(LIMITS.passwordChange) },
+    );
   }
 
   if (oldPassword.length === 0) {

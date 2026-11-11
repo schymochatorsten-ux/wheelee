@@ -32,7 +32,10 @@ async function deleteHandler(request: Request) {
 
   // Je Konto, Fehlversuche zählen für die Anmeldepause (siehe PUT /api/account/password).
   if (!allow(`delete:${user.id}`, LIMITS.passwordChange) || loginPauseSeconds(user.email) > 0) {
-    return NextResponse.json({ error: t("api.tooManyPasswordChanges") }, { status: 429, headers: retryAfter(LIMITS.passwordChange) });
+    return NextResponse.json(
+      { error: t("api.tooManyPasswordChanges") },
+      { status: 429, headers: retryAfter(LIMITS.passwordChange) },
+    );
   }
 
   if (password.length === 0) {

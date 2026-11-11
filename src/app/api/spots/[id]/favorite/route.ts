@@ -32,7 +32,10 @@ function throttled(request: Request, accountId: string) {
     !allow(`favorite:${accountId}`, LIMITS.favorite) ||
     !allow(`favorite-ip:${clientKey(request)}`, LIMITS.favoritePerClient);
   return tooMany
-    ? NextResponse.json({ error: t("api.tooManyFavorites") }, { status: 429, headers: retryAfter(LIMITS.favorite) })
+    ? NextResponse.json(
+        { error: t("api.tooManyFavorites") },
+        { status: 429, headers: retryAfter(LIMITS.favorite) },
+      )
     : null;
 }
 

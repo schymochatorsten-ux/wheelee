@@ -123,7 +123,8 @@ export function SpotDetails({
           type="button"
           onClick={onClose}
           aria-label={t("details.close")}
-          className="-mt-1 -mr-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-2xl text-neutral-500 hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:hover:bg-neutral-800"
+          // Gefülltes Rund wie das Schließzeichen der Systemapps (ToDo 9.31).
+          className="-mt-1 -mr-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-neutral-200/70 text-xl text-neutral-600 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-800 dark:text-neutral-300"
         >
           ×
         </button>
@@ -181,14 +182,14 @@ export function SpotDetails({
         deuten lässt, steht hier bewusst nichts.
       */}
       {state === "gilt-nicht" && (
-        <p className="mt-3 rounded-lg bg-emerald-50 p-2.5 text-sm text-emerald-900 dark:bg-emerald-950 dark:text-emerald-200">
+        <p className="mt-3 rounded-xl bg-emerald-50 p-2.5 text-sm text-emerald-900 dark:bg-emerald-950 dark:text-emerald-200">
           {tr("details.restrictionOff", {
             strong: <strong>{t("details.restrictionOffStrong")}</strong>,
           })}
         </p>
       )}
       {state === "gilt" && (
-        <p className="mt-3 rounded-lg bg-amber-50 p-2.5 text-sm text-amber-900 dark:bg-amber-950 dark:text-amber-200">
+        <p className="mt-3 rounded-xl bg-amber-50 p-2.5 text-sm text-amber-900 dark:bg-amber-950 dark:text-amber-200">
           {tr("details.restrictionOn", {
             strong: <strong>{t("details.restrictionOnStrong")}</strong>,
           })}
@@ -213,19 +214,19 @@ export function SpotDetails({
         **keine** Aussage.
       */}
       {spot.confirmation === "bestaetigt" && (
-        <p className="mt-3 rounded-lg bg-emerald-50 p-2.5 text-sm text-emerald-900 dark:bg-emerald-950 dark:text-emerald-200">
+        <p className="mt-3 rounded-xl bg-emerald-50 p-2.5 text-sm text-emerald-900 dark:bg-emerald-950 dark:text-emerald-200">
           {tr("details.confirmed", { strong: <strong>{t("details.confirmedStrong")}</strong> })}
         </p>
       )}
 
       {spot.confirmation === "nur_osm" && (
-        <p className="mt-3 rounded-lg bg-amber-50 p-2.5 text-sm text-amber-900 dark:bg-amber-950 dark:text-amber-200">
+        <p className="mt-3 rounded-xl bg-amber-50 p-2.5 text-sm text-amber-900 dark:bg-amber-950 dark:text-amber-200">
           {tr("details.osmOnly", { strong: <strong>{t("details.osmOnlyStrong")}</strong> })}
         </p>
       )}
 
       {spot.geoAccuracy !== "house" && (
-        <p className="mt-3 rounded-lg bg-amber-50 p-2.5 text-sm text-amber-900 dark:bg-amber-950 dark:text-amber-200">
+        <p className="mt-3 rounded-xl bg-amber-50 p-2.5 text-sm text-amber-900 dark:bg-amber-950 dark:text-amber-200">
           {t("details.approx")}
         </p>
       )}

@@ -47,10 +47,15 @@ export default async function BuchstabenSeite({ params }: Props) {
           href="/parkplaetze"
           className="inline-flex min-h-11 items-center gap-1.5 text-sm font-medium text-blue-800 hover:underline focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"
         >
-          <span aria-hidden="true">←</span> Alle Städte
+          <span aria-hidden="true" className="text-lg leading-none">
+            ‹
+          </span>{" "}
+          Alle Städte
         </Link>
 
-        <h1 className="mt-3 text-2xl font-semibold">Städte mit {found.key}</h1>
+        <h1 className="mt-3 text-[28px] leading-tight font-bold tracking-tight">
+          Städte mit {found.key}
+        </h1>
         <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
           {found.cities.length} Städte und Gemeinden.
         </p>
@@ -65,7 +70,10 @@ export default async function BuchstabenSeite({ params }: Props) {
 
         {/* Die übrigen Buchstaben, damit man nicht über die Übersicht zurück
             muss – und damit jede Buchstabenseite auf jede andere zeigt. */}
-        <nav aria-label="Weitere Buchstaben" className="mt-8 border-t border-neutral-200 pt-4 dark:border-neutral-800">
+        <nav
+          aria-label="Weitere Buchstaben"
+          className="mt-8 border-t border-neutral-200 pt-4 dark:border-neutral-800"
+        >
           <ul className={LINK_LIST}>
             {found.letters
               .filter((letter) => letter !== found.key)

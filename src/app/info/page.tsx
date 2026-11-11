@@ -17,7 +17,7 @@ import { publicReach } from "@/lib/visits";
 
 /** Karte im Stil der Einstellungen (dasselbe Glas wie `SettingsPanel`). */
 const CARD =
-  "rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/50";
+  "rounded-2xl border border-neutral-200/70 bg-white/80 p-4 shadow-sm backdrop-blur dark:border-neutral-800 dark:bg-neutral-900/60";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = translator(await getLocale());
@@ -36,10 +36,15 @@ export default async function Info() {
           href="/"
           className="inline-flex min-h-11 items-center gap-1.5 text-sm font-medium text-blue-800 hover:underline focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"
         >
-          <span aria-hidden="true">←</span> {t("error.backToMap")}
+          <span aria-hidden="true" className="text-lg leading-none">
+            ‹
+          </span>{" "}
+          {t("error.backToMap")}
         </Link>
 
-        <h1 className="mt-3 bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-2xl font-bold text-transparent dark:from-blue-300 dark:to-cyan-300">{t("settings.info")}</h1>
+        <h1 className="mt-3 text-[28px] leading-tight font-bold tracking-tight text-blue-800 dark:text-blue-200">
+          {t("settings.info")}
+        </h1>
         <p className="mt-3 text-lg leading-snug">{t("info.lead")}</p>
         {reach !== null && (
           <p className="mt-3 text-sm font-medium text-blue-800 dark:text-blue-300">
@@ -80,7 +85,7 @@ export default async function Info() {
 
         <Link
           href="/"
-          className="mt-6 inline-flex min-h-11 items-center rounded-lg bg-blue-700 px-4 text-sm font-medium text-white hover:bg-blue-800 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 focus-visible:outline-none"
+          className="mt-6 inline-flex min-h-11 items-center rounded-xl bg-blue-700 px-4 text-sm font-medium text-white hover:bg-blue-800 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 focus-visible:outline-none"
         >
           {t("info.toMap")}
         </Link>

@@ -28,7 +28,10 @@ import { readJson } from "@/lib/read-json";
  */
 async function postHandler(request: Request) {
   if (!allow(`register:${clientKey(request)}`, LIMITS.register)) {
-    return NextResponse.json({ error: t("api.tooManyAttempts") }, { status: 429, headers: retryAfter(LIMITS.register) });
+    return NextResponse.json(
+      { error: t("api.tooManyAttempts") },
+      { status: 429, headers: retryAfter(LIMITS.register) },
+    );
   }
 
   let body: { email?: unknown; password?: unknown };
@@ -83,19 +86,22 @@ async function postHandler(request: Request) {
     }).catch(() => {});
   }
 
-  const response = NextResponse.json({
-    // `mapsPreference` gehört dazu, seit die Karten-App am Konto hängt
-    // (ToDo 11.3a) – bei einem neuen Konto ist sie leer.
-    user: publicUser({
-      id: account.id,
-      email: account.email,
-      isAdmin: isAdminAccount(account),
-      mapsPreference: null,
-      language: null,
-      locationPreference: null,
-      mustChangePassword: false,
-    }),
-  }, { headers: { "Cache-Control": "no-store" } });
+  const response = NextResponse.json(
+    {
+      // `mapsPreference` gehört dazu, seit die Karten-App am Konto hängt
+      // (ToDo 11.3a) – bei einem neuen Konto ist sie leer.
+      user: publicUser({
+        id: account.id,
+        email: account.email,
+        isAdmin: isAdminAccount(account),
+        mapsPreference: null,
+        language: null,
+        locationPreference: null,
+        mustChangePassword: false,
+      }),
+    },
+    { headers: { "Cache-Control": "no-store" } },
+  );
   response.cookies.set(sessionCookie(createSession(account.id)));
   return response;
 }

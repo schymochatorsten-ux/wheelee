@@ -46,7 +46,10 @@ async function postHandler(request: Request) {
    */
   const client = clientKey(request);
   if (!allow(`login-ip:${client}`, LIMITS.loginPerClient)) {
-    return NextResponse.json({ error: t("api.tooManyLogins") }, { status: 429, headers: retryAfter(LIMITS.loginPerClient) });
+    return NextResponse.json(
+      { error: t("api.tooManyLogins") },
+      { status: 429, headers: retryAfter(LIMITS.loginPerClient) },
+    );
   }
 
   // Eine Adresse, die länger sein kann als jede echte, ist nie ein Konto – und
@@ -57,7 +60,10 @@ async function postHandler(request: Request) {
 
   const key = `login:${client}:${email}`;
   if (!allow(key, LIMITS.login)) {
-    return NextResponse.json({ error: t("api.tooManyLogins") }, { status: 429, headers: retryAfter(LIMITS.login) });
+    return NextResponse.json(
+      { error: t("api.tooManyLogins") },
+      { status: 429, headers: retryAfter(LIMITS.login) },
+    );
   }
 
   if (email.length === 0 || password.length === 0) {
@@ -85,21 +91,24 @@ async function postHandler(request: Request) {
   }
   clearLoginFailures(email);
 
-  const response = NextResponse.json({
-    // Mit der Anmeldung kommt die am Konto gewählte Karten-App zurück
-    // (ToDo 11.3a) – das ist der Weg, auf dem sie ein zweites Gerät erreicht.
-    user: publicUser({
-      id: account.id,
-      email: account.email,
-      isAdmin: isAdminAccount(account),
-      mustChangePassword: account.mustChangePassword,
-      mapsPreference: isMapsPreference(account.mapsPreference) ? account.mapsPreference : null,
-      language: isLocale(account.language) ? account.language : null,
-      locationPreference: isLocationPreference(account.locationPreference)
-        ? account.locationPreference
-        : null,
-    }),
-  }, { headers: { "Cache-Control": "no-store" } });
+  const response = NextResponse.json(
+    {
+      // Mit der Anmeldung kommt die am Konto gewählte Karten-App zurück
+      // (ToDo 11.3a) – das ist der Weg, auf dem sie ein zweites Gerät erreicht.
+      user: publicUser({
+        id: account.id,
+        email: account.email,
+        isAdmin: isAdminAccount(account),
+        mustChangePassword: account.mustChangePassword,
+        mapsPreference: isMapsPreference(account.mapsPreference) ? account.mapsPreference : null,
+        language: isLocale(account.language) ? account.language : null,
+        locationPreference: isLocationPreference(account.locationPreference)
+          ? account.locationPreference
+          : null,
+      }),
+    },
+    { headers: { "Cache-Control": "no-store" } },
+  );
   response.cookies.set(sessionCookie(createSession(account.id)));
   return response;
 }

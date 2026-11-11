@@ -19,7 +19,7 @@ export default function GlobalError({ reset }: { error: Error; reset: () => void
     <html lang="de">
       <body className="flex min-h-dvh items-center justify-center p-6 antialiased">
         <div className="max-w-md text-center">
-          <h1 className="text-xl font-semibold">{t("globalError.title")}</h1>
+          <h1 className="text-2xl font-bold tracking-tight">{t("globalError.title")}</h1>
           <p className="mt-2 text-sm leading-relaxed">{t("globalError.text")}</p>
           <button
             type="button"

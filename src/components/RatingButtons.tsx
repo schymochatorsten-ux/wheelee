@@ -243,14 +243,20 @@ interface RatingButtonProps {
 
 function RatingButton({ label, icon, count, active, disabled, tone, onClick }: RatingButtonProps) {
   const t = useT();
+  /*
+   * **Gefüllt statt umrandet** (ToDo 9.31), wie alle Knöpfe der App. Die
+   * gesetzte Stimme bleibt farbig – hier trägt die Farbe eine Bedeutung
+   * („meine Stimme steht auf …") und ist nicht Schmuck; dass sie allein nicht
+   * genügt, sagt weiterhin `aria-pressed` (9.9).
+   */
   const base =
-    "flex min-h-12 flex-1 items-center justify-center gap-2 rounded-xl border px-3 text-sm font-medium transition-colors focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none disabled:opacity-55";
+    "flex min-h-12 flex-1 items-center justify-center gap-2 rounded-xl px-3 text-sm font-medium transition-colors focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none disabled:opacity-55";
 
   const colours = active
     ? tone === "positive"
-      ? "border-emerald-600 bg-emerald-50 text-emerald-900 dark:bg-emerald-950 dark:text-emerald-100"
-      : "border-amber-600 bg-amber-50 text-amber-900 dark:bg-amber-950 dark:text-amber-100"
-    : "border-neutral-300 dark:border-neutral-700";
+      ? "bg-emerald-100 text-emerald-900 dark:bg-emerald-950 dark:text-emerald-100"
+      : "bg-amber-100 text-amber-900 dark:bg-amber-950 dark:text-amber-100"
+    : "bg-neutral-200/80 dark:bg-neutral-800";
 
   return (
     <button

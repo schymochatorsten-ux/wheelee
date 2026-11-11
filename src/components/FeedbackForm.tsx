@@ -6,6 +6,7 @@ import { localeTag } from "@/i18n";
 import type { ParkingSpot } from "@/lib/types";
 import { spotTitle } from "@/lib/parking/display";
 import { deviceId } from "@/lib/device";
+import { segmentGroup, segmentItem } from "./ui/styles";
 import {
   CONTACT_HINT,
   CONTACT_PRIVACY,
@@ -36,7 +37,7 @@ interface FeedbackFormProps {
 }
 
 const FIELD =
-  "min-h-11 w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-base focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700 dark:bg-neutral-950";
+  "min-h-11 w-full rounded-xl bg-neutral-200/70 px-3 py-2 text-base focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-800/70";
 
 export function FeedbackForm({
   spot = null,
@@ -149,7 +150,7 @@ export function FeedbackForm({
               setKind(null);
               setMessage("");
             }}
-            className="min-h-11 rounded-lg border border-emerald-700/40 px-3 font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none"
+            className="min-h-11 rounded-xl bg-emerald-700/10 px-3 font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-emerald-400/15"
           >
             {t("feedback.again")}
           </button>
@@ -157,7 +158,7 @@ export function FeedbackForm({
             <button
               type="button"
               onClick={onDone}
-              className="min-h-11 rounded-lg bg-emerald-700 px-3 font-medium text-white focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none"
+              className="min-h-11 rounded-xl bg-emerald-700 px-3 font-medium text-white focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none"
             >
               {t("feedback.done")}
             </button>
@@ -177,7 +178,11 @@ export function FeedbackForm({
       */}
       <fieldset>
         <legend className="text-sm font-medium">{t("feedback.whatAbout")}</legend>
-        <div role="radiogroup" aria-label={t("feedback.kindGroup")} className="mt-2 flex gap-2">
+        <div
+          role="radiogroup"
+          aria-label={t("feedback.kindGroup")}
+          className={`mt-2 ${segmentGroup}`}
+        >
           {(Object.keys(KIND_LABELS) as FeedbackKind[]).map((option) => (
             <button
               key={option}
@@ -188,11 +193,7 @@ export function FeedbackForm({
                 setKind(option);
                 setProblem(null);
               }}
-              className={`min-h-11 flex-1 rounded-lg border px-3 text-sm font-medium transition-colors focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none ${
-                kind === option
-                  ? "border-blue-700 bg-blue-700 text-white"
-                  : "border-neutral-300 dark:border-neutral-700"
-              }`}
+              className={segmentItem(kind === option)}
             >
               {t(KIND_LABELS[option])}
             </button>
@@ -208,7 +209,7 @@ export function FeedbackForm({
       {/* Aus der Detailansicht heraus ist klar, worum es geht – das muss man
           nicht noch einmal tippen, und es darf auch nicht falsch sein. */}
       {spot && (
-        <p className="rounded-lg bg-neutral-100 px-3 py-2 text-sm dark:bg-neutral-800">
+        <p className="rounded-xl bg-neutral-100 px-3 py-2 text-sm dark:bg-neutral-800">
           <span className="text-neutral-500">{t("feedback.reportAbout")} </span>
           <span className="font-medium">{spotTitle(spot)}</span>
         </p>
@@ -303,7 +304,7 @@ export function FeedbackForm({
           <button
             type="button"
             onClick={onDone}
-            className="min-h-12 rounded-xl border border-neutral-300 px-4 font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
+            className="min-h-12 rounded-xl bg-neutral-200/80 px-4 font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-800"
           >
             {t("feedback.cancel")}
           </button>

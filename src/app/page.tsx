@@ -79,7 +79,8 @@ export default async function Home({
       <script
         type="application/ld+json"
         nonce={nonce}
-        dangerouslySetInnerHTML={{ __html: jsonLd(description) }} />
+        dangerouslySetInnerHTML={{ __html: jsonLd(description) }}
+      />
       <MapSection
         initialNearby={nearestSpots(defaultCity.center, 100)}
         defaultCity={defaultCity}

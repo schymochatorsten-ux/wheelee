@@ -201,197 +201,193 @@ export function FeedbackAdmin({ onShowSpot }: FeedbackAdminProps) {
       }
     >
       <div className="space-y-4">
-
-      <div className="flex flex-wrap gap-3">
-        <div>
-          <label htmlFor="filter-art" className="block text-xs text-neutral-500 uppercase">
-            {t("feedbackAdmin.filterKind")}
-          </label>
-          <select
-            id="filter-art"
-            value={kind}
-            onChange={(event) => setKind(event.target.value as FeedbackKind | "alle")}
-            className="mt-1 min-h-11 rounded-lg border border-neutral-300 bg-white px-2 text-sm dark:border-neutral-700 dark:bg-neutral-950"
+        <div className="flex flex-wrap gap-3">
+          <div>
+            <label htmlFor="filter-art" className="block text-xs text-neutral-500 uppercase">
+              {t("feedbackAdmin.filterKind")}
+            </label>
+            <select
+              id="filter-art"
+              value={kind}
+              onChange={(event) => setKind(event.target.value as FeedbackKind | "alle")}
+              className="mt-1 min-h-11 rounded-xl bg-neutral-200/70 px-2 text-sm dark:bg-neutral-800/70"
+            >
+              <option value="alle">{t("feedbackAdmin.all")}</option>
+              <option value="fehler">{t(KIND_LABELS.fehler)}</option>
+              <option value="vorschlag">{t(KIND_LABELS.vorschlag)}</option>
+            </select>
+          </div>
+          <div>
+            <label htmlFor="filter-stand" className="block text-xs text-neutral-500 uppercase">
+              {t("feedbackAdmin.filterStatus")}
+            </label>
+            <select
+              id="filter-stand"
+              value={status}
+              onChange={(event) => setStatus(event.target.value as FeedbackStatus | "alle")}
+              className="mt-1 min-h-11 rounded-xl bg-neutral-200/70 px-2 text-sm dark:bg-neutral-800/70"
+            >
+              <option value="alle">{t("feedbackAdmin.all")}</option>
+              {FEEDBACK_STATUSES.map((option) => (
+                <option key={option} value={option}>
+                  {t(STATUS_LABELS[option])}
+                </option>
+              ))}
+            </select>
+          </div>
+          <button
+            type="button"
+            onClick={() => void load()}
+            className="mt-5 min-h-11 rounded-xl bg-neutral-200/80 px-3 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-800"
           >
-            <option value="alle">{t("feedbackAdmin.all")}</option>
-            <option value="fehler">{t(KIND_LABELS.fehler)}</option>
-            <option value="vorschlag">{t(KIND_LABELS.vorschlag)}</option>
-          </select>
+            {t("admin.reload")}
+          </button>
         </div>
-        <div>
-          <label htmlFor="filter-stand" className="block text-xs text-neutral-500 uppercase">
-            {t("feedbackAdmin.filterStatus")}
-          </label>
-          <select
-            id="filter-stand"
-            value={status}
-            onChange={(event) => setStatus(event.target.value as FeedbackStatus | "alle")}
-            className="mt-1 min-h-11 rounded-lg border border-neutral-300 bg-white px-2 text-sm dark:border-neutral-700 dark:bg-neutral-950"
+
+        {error && (
+          <p
+            role="alert"
+            className="rounded-xl bg-red-50 p-3 text-sm text-red-800 dark:bg-red-950 dark:text-red-200"
           >
-            <option value="alle">{t("feedbackAdmin.all")}</option>
-            {FEEDBACK_STATUSES.map((option) => (
-              <option key={option} value={option}>
-                {t(STATUS_LABELS[option])}
-              </option>
-            ))}
-          </select>
-        </div>
-        <button
-          type="button"
-          onClick={() => void load()}
-          className="mt-5 min-h-11 rounded-lg border border-neutral-300 px-3 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
-        >
-          {t("admin.reload")}
-        </button>
-      </div>
+            {error}
+          </p>
+        )}
 
-      {error && (
-        <p
-          role="alert"
-          className="rounded-lg bg-red-50 p-3 text-sm text-red-800 dark:bg-red-950 dark:text-red-200"
-        >
-          {error}
-        </p>
-      )}
+        {loading && <p className="text-sm text-neutral-500">{t("admin.loading")}</p>}
 
-      {loading && <p className="text-sm text-neutral-500">{t("admin.loading")}</p>}
+        {!loading && entries.length === 0 && !error && (
+          <p className="rounded-xl bg-neutral-100/70 p-4 text-sm text-neutral-500 dark:bg-neutral-800/40">
+            {t("feedbackAdmin.empty")}
+          </p>
+        )}
 
-      {!loading && entries.length === 0 && !error && (
-        <p className="rounded-xl border border-neutral-200 p-4 text-sm text-neutral-500 dark:border-neutral-800">
-          {t("feedbackAdmin.empty")}
-        </p>
-      )}
+        <ul className="space-y-3">
+          {entries.map((entry) => (
+            <li key={entry.id} className="rounded-xl bg-neutral-100/70 p-3 dark:bg-neutral-800/40">
+              <div className="flex flex-wrap items-center gap-2 text-xs">
+                <span className="rounded bg-neutral-100 px-1.5 py-0.5 font-medium dark:bg-neutral-800">
+                  {t(KIND_LABELS[entry.kind])}
+                </span>
+                <span className={`rounded px-1.5 py-0.5 font-medium ${STATUS_STYLE[entry.status]}`}>
+                  {t(STATUS_LABELS[entry.status])}
+                </span>
+                <span className="text-neutral-500">#{entry.id}</span>
+                <span className="text-neutral-500">{formatMoment(entry.createdAt, locale)}</span>
+              </div>
 
-      <ul className="space-y-3">
-        {entries.map((entry) => (
-          <li
-            key={entry.id}
-            className="rounded-xl border border-neutral-200 p-3 dark:border-neutral-800"
-          >
-            <div className="flex flex-wrap items-center gap-2 text-xs">
-              <span className="rounded bg-neutral-100 px-1.5 py-0.5 font-medium dark:bg-neutral-800">
-                {t(KIND_LABELS[entry.kind])}
-              </span>
-              <span className={`rounded px-1.5 py-0.5 font-medium ${STATUS_STYLE[entry.status]}`}>
-                {t(STATUS_LABELS[entry.status])}
-              </span>
-              <span className="text-neutral-500">#{entry.id}</span>
-              <span className="text-neutral-500">{formatMoment(entry.createdAt, locale)}</span>
-            </div>
+              <p className="mt-2 text-sm whitespace-pre-wrap">{entry.message}</p>
 
-            <p className="mt-2 text-sm whitespace-pre-wrap">{entry.message}</p>
-
-            <dl className="mt-2 space-y-0.5 text-xs text-neutral-500">
-              {entry.contactEmail && (
-                <div className="flex gap-2">
-                  <dt>{t("feedbackAdmin.replyTo")}</dt>
-                  <dd>
-                    {/*
+              <dl className="mt-2 space-y-0.5 text-xs text-neutral-500">
+                {entry.contactEmail && (
+                  <div className="flex gap-2">
+                    <dt>{t("feedbackAdmin.replyTo")}</dt>
+                    <dd>
+                      {/*
                       Ein `mailto:`-Link – hier ist er richtig, anders als im
                       Formular: Der Administrator sitzt an einem Gerät mit
                       Mailprogramm, und die Adresse ist ihm schon bekannt.
                     */}
-                    <a href={`mailto:${entry.contactEmail}`} className="underline">
-                      {entry.contactEmail}
-                    </a>
-                  </dd>
-                </div>
-              )}
-              {/*
+                      <a href={`mailto:${entry.contactEmail}`} className="underline">
+                        {entry.contactEmail}
+                      </a>
+                    </dd>
+                  </div>
+                )}
+                {/*
                 Stand hier einmal eine Adresse und ist sie nach der Frist
                 entfernt worden, muss das dastehen (ToDo 17.6). Sonst sieht die
                 Meldung aus wie eine ohne Adresse – und der Unterschied ist
                 genau der, auf den es ankommt: Hier wollte jemand eine Antwort.
               */}
-              {!entry.contactEmail && entry.contactRemovedAt && (
-                <div className="flex gap-2">
-                  <dt>{t("feedbackAdmin.replyTo")}</dt>
-                  <dd>
-                    {t("feedbackAdmin.addressRemoved", {
-                      date: formatMoment(entry.contactRemovedAt, locale),
-                    })}
-                  </dd>
-                </div>
-              )}
-              {entry.accountEmail && (
-                <div className="flex gap-2">
-                  <dt>{t("feedbackAdmin.account")}</dt>
-                  <dd>{entry.accountEmail}</dd>
-                </div>
-              )}
-              {entry.city && (
-                <div className="flex gap-2">
-                  <dt>{t("details.city")}</dt>
-                  <dd>{entry.city}</dd>
-                </div>
-              )}
-              {entry.userAgent && (
-                <div className="flex gap-2">
-                  <dt>{t("feedbackAdmin.browser")}</dt>
-                  <dd className="truncate">{entry.userAgent}</dd>
-                </div>
-              )}
-              {entry.updatedAt && (
-                <div className="flex gap-2">
-                  <dt>{t("feedbackAdmin.changed")}</dt>
-                  <dd>{formatDate(entry.updatedAt.slice(0, 10), locale)}</dd>
-                </div>
-              )}
-            </dl>
+                {!entry.contactEmail && entry.contactRemovedAt && (
+                  <div className="flex gap-2">
+                    <dt>{t("feedbackAdmin.replyTo")}</dt>
+                    <dd>
+                      {t("feedbackAdmin.addressRemoved", {
+                        date: formatMoment(entry.contactRemovedAt, locale),
+                      })}
+                    </dd>
+                  </div>
+                )}
+                {entry.accountEmail && (
+                  <div className="flex gap-2">
+                    <dt>{t("feedbackAdmin.account")}</dt>
+                    <dd>{entry.accountEmail}</dd>
+                  </div>
+                )}
+                {entry.city && (
+                  <div className="flex gap-2">
+                    <dt>{t("details.city")}</dt>
+                    <dd>{entry.city}</dd>
+                  </div>
+                )}
+                {entry.userAgent && (
+                  <div className="flex gap-2">
+                    <dt>{t("feedbackAdmin.browser")}</dt>
+                    <dd className="truncate">{entry.userAgent}</dd>
+                  </div>
+                )}
+                {entry.updatedAt && (
+                  <div className="flex gap-2">
+                    <dt>{t("feedbackAdmin.changed")}</dt>
+                    <dd>{formatDate(entry.updatedAt.slice(0, 10), locale)}</dd>
+                  </div>
+                )}
+              </dl>
 
-            <div className="mt-2 flex flex-wrap gap-1.5">
-              {entry.spotId && (
+              <div className="mt-2 flex flex-wrap gap-1.5">
+                {entry.spotId && (
+                  <button
+                    type="button"
+                    onClick={() => void showSpot(entry.spotId!)}
+                    className="min-h-11 rounded-xl bg-neutral-200/80 px-2.5 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-800"
+                  >
+                    {t("reported.showOnMap")}
+                  </button>
+                )}
+                {entry.status !== "umgesetzt" ? (
+                  <button
+                    type="button"
+                    onClick={() => void setEntryStatus(entry.id, "umgesetzt")}
+                    className="min-h-11 rounded-xl bg-emerald-700 px-2.5 text-sm font-medium text-white focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none"
+                  >
+                    {t("feedbackAdmin.markDone")}
+                  </button>
+                ) : (
+                  <button
+                    type="button"
+                    onClick={() => void setEntryStatus(entry.id, "neu")}
+                    className="min-h-11 rounded-xl bg-neutral-200/80 px-2.5 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-800"
+                  >
+                    {t("feedbackAdmin.reopen")}
+                  </button>
+                )}
+                {entry.status !== "verworfen" && (
+                  <button
+                    type="button"
+                    onClick={() => void setEntryStatus(entry.id, "verworfen")}
+                    className="min-h-11 rounded-xl bg-neutral-200/80 px-2.5 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-800"
+                  >
+                    {t("feedbackAdmin.discard")}
+                  </button>
+                )}
                 <button
                   type="button"
-                  onClick={() => void showSpot(entry.spotId!)}
-                  className="min-h-11 rounded-lg border border-neutral-300 px-2.5 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
+                  onClick={() => void remove(entry)}
+                  className="min-h-11 rounded-xl px-2.5 text-sm font-medium text-red-700 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-red-400"
                 >
-                  {t("reported.showOnMap")}
+                  {t("feedbackAdmin.delete")}
                 </button>
-              )}
-              {entry.status !== "umgesetzt" ? (
-                <button
-                  type="button"
-                  onClick={() => void setEntryStatus(entry.id, "umgesetzt")}
-                  className="min-h-11 rounded-lg bg-emerald-700 px-2.5 text-sm font-medium text-white focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none"
-                >
-                  {t("feedbackAdmin.markDone")}
-                </button>
-              ) : (
-                <button
-                  type="button"
-                  onClick={() => void setEntryStatus(entry.id, "neu")}
-                  className="min-h-11 rounded-lg border border-neutral-300 px-2.5 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
-                >
-                  {t("feedbackAdmin.reopen")}
-                </button>
-              )}
-              {entry.status !== "verworfen" && (
-                <button
-                  type="button"
-                  onClick={() => void setEntryStatus(entry.id, "verworfen")}
-                  className="min-h-11 rounded-lg border border-neutral-300 px-2.5 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
-                >
-                  {t("feedbackAdmin.discard")}
-                </button>
-              )}
-              <button
-                type="button"
-                onClick={() => void remove(entry)}
-                className="min-h-11 rounded-lg px-2.5 text-sm font-medium text-red-700 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-red-400"
-              >
-                {t("feedbackAdmin.delete")}
-              </button>
-            </div>
+              </div>
 
-            <NoteField
-              id={entry.id}
-              note={entry.note}
-              onSave={(note) => void saveNote(entry.id, note)}
-            />
-          </li>
-        ))}
-      </ul>
+              <NoteField
+                id={entry.id}
+                note={entry.note}
+                onSave={(note) => void saveNote(entry.id, note)}
+              />
+            </li>
+          ))}
+        </ul>
       </div>
     </SettingsSection>
   );
@@ -440,7 +436,7 @@ function NoteField({
         value={value}
         onChange={(event) => setValue(event.target.value)}
         rows={2}
-        className="mt-1 w-full rounded-lg border border-neutral-300 bg-white px-2 py-1.5 text-sm dark:border-neutral-700 dark:bg-neutral-950"
+        className="mt-1 w-full rounded-xl bg-neutral-200/70 px-2 py-1.5 text-sm dark:bg-neutral-800/70"
       />
       <button
         type="button"
@@ -448,7 +444,7 @@ function NoteField({
           onSave(value);
           setOpen(false);
         }}
-        className="mt-1 min-h-11 rounded-lg border border-neutral-300 px-2.5 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
+        className="mt-1 min-h-11 rounded-xl bg-neutral-200/80 px-2.5 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-800"
       >
         {t("feedbackAdmin.saveNote")}
       </button>

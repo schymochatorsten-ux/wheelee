@@ -5,6 +5,7 @@ import { useLocale, useT } from "@/i18n/context";
 import { localeTag, type Locale } from "@/i18n";
 import type { CityInfo } from "@/lib/parking/spots";
 import { ListGroup, Row } from "./ui/List";
+import { smallButton } from "./ui/styles";
 import {
   formatBytes,
   listOfflineCities,
@@ -35,9 +36,6 @@ import {
 
 const formatDate = (iso: string, locale: Locale) =>
   new Intl.DateTimeFormat(localeTag(locale), { dateStyle: "medium" }).format(new Date(iso));
-
-const smallButton =
-  "inline-flex min-h-9 items-center rounded-full bg-neutral-200/80 px-3 text-xs font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none disabled:opacity-50 dark:bg-neutral-800";
 
 /** So viele Vorschläge auf einmal – mehr liest niemand, und sie kosten Platz. */
 const SUGGESTION_LIMIT = 8;
@@ -194,7 +192,7 @@ export function OfflineCities({ cities }: { cities: readonly CityInfo[] }) {
                   id="offline-vorschlaege"
                   role="listbox"
                   aria-label={t("offline.suggestions")}
-                  className="mt-1 overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700"
+                  className="mt-1 overflow-hidden rounded-xl bg-neutral-100 dark:bg-neutral-800"
                 >
                   {suggestions.map((city, index) => (
                     <li key={city.slug} role="none">

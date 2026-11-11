@@ -32,7 +32,10 @@ async function getHandler(request: Request) {
   const params = new URL(request.url).searchParams;
   const query = params.get("q") ?? "";
   const asked = Number(params.get("limit"));
-  const limit = Number.isFinite(asked) && asked > 0 ? Math.min(Math.floor(asked), ACCOUNTS_MAX) : ACCOUNTS_PAGE_SIZE;
+  const limit =
+    Number.isFinite(asked) && asked > 0
+      ? Math.min(Math.floor(asked), ACCOUNTS_MAX)
+      : ACCOUNTS_PAGE_SIZE;
 
   return NextResponse.json(
     {

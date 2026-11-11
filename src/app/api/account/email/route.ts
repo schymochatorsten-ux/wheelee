@@ -29,7 +29,10 @@ async function postHandler(request: Request) {
     !allow(`mail:${clientKey(request)}`, LIMITS.mailRequest) ||
     !allow(`mail-account:${user.id}`, LIMITS.passwordChange)
   ) {
-    return NextResponse.json({ error: t("api.tooManyAttempts") }, { status: 429, headers: retryAfter(LIMITS.mailRequest) });
+    return NextResponse.json(
+      { error: t("api.tooManyAttempts") },
+      { status: 429, headers: retryAfter(LIMITS.mailRequest) },
+    );
   }
 
   let body: { password?: unknown; newEmail?: unknown };
@@ -42,7 +45,8 @@ async function postHandler(request: Request) {
   const password = typeof body.password === "string" ? body.password : "";
   const newEmail = typeof body.newEmail === "string" ? normalizeEmail(body.newEmail) : "";
 
-  if (password.length === 0) return NextResponse.json({ error: t("api.passwordRequired") }, { status: 400 });
+  if (password.length === 0)
+    return NextResponse.json({ error: t("api.passwordRequired") }, { status: 400 });
   if (!looksLikeEmail(newEmail)) {
     return NextResponse.json({ error: t("account.emailInvalid") }, { status: 400 });
   }

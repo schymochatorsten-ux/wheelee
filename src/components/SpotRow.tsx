@@ -53,7 +53,7 @@ export function SpotRow({
       type="button"
       onClick={onClick}
       aria-current={selected || undefined}
-      className={`flex min-h-11 w-full items-center gap-2 rounded-lg px-1.5 py-1.5 text-left transition-colors hover:bg-neutral-100/70 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:hover:bg-neutral-800/70 ${
+      className={`flex min-h-11 w-full items-center gap-2 rounded-xl px-1.5 py-1.5 text-left transition-colors hover:bg-neutral-100/70 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:hover:bg-neutral-800/70 ${
         selected ? "bg-blue-50/70 dark:bg-blue-950/40" : ""
       }`}
     >

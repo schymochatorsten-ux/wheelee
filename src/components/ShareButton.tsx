@@ -81,7 +81,7 @@ export function ShareButton({ spot }: ShareButtonProps) {
     <button
       type="button"
       onClick={share}
-      className="min-h-12 w-full rounded-xl border border-neutral-300 px-4 font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
+      className="min-h-12 w-full rounded-xl bg-neutral-200/80 px-4 font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-800"
     >
       {state === "kopiert" && t("share.copied")}
       {state === "fehler" && t("share.copyFailed")}

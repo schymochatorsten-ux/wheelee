@@ -11,6 +11,15 @@ import type { ParkingSpot } from "@/lib/types";
 import type { LatLng } from "@/lib/geo";
 import { MyFavorites } from "./MyFavorites";
 import { MyRatings } from "./MyRatings";
+import { ListGroup, Row } from "./ui/List";
+import {
+  dangerButton,
+  fieldClass,
+  primaryButton,
+  secondaryButton,
+  segmentGroup,
+  segmentItem,
+} from "./ui/styles";
 
 /**
  * Anmelden, Konto anlegen, abmelden (ToDos 11.1, 11.2).
@@ -37,8 +46,8 @@ interface AccountPanelProps {
   position: LatLng | null;
 }
 
-const FIELD =
-  "min-h-11 w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-base focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700 dark:bg-neutral-950";
+/** Die Form der Felder steht seit 9.31 für die ganze App in `ui/styles.ts`. */
+const FIELD = fieldClass;
 
 type Mode = "anmelden" | "registrieren";
 
@@ -102,7 +111,7 @@ function PasswordChange({ forced = false }: { forced?: boolean }) {
             setOpen(true);
             setDone(false);
           }}
-          className="min-h-11 rounded-lg border border-neutral-300 px-3 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
+          className={secondaryButton}
         >
           {t("account.changePassword")}
         </button>
@@ -116,10 +125,7 @@ function PasswordChange({ forced = false }: { forced?: boolean }) {
   }
 
   return (
-    <form
-      onSubmit={submit}
-      className="space-y-3 border-t border-neutral-200 pt-3 dark:border-neutral-800"
-    >
+    <form onSubmit={submit} className="space-y-3">
       <p className="text-xs text-neutral-500">{t("account.changePasswordNote")}</p>
       <div>
         <label htmlFor="konto-altes-passwort" className="text-sm font-medium">
@@ -164,11 +170,7 @@ function PasswordChange({ forced = false }: { forced?: boolean }) {
         </p>
       )}
       <div className="flex gap-2">
-        <button
-          type="submit"
-          disabled={busy}
-          className="min-h-11 flex-1 rounded-lg bg-blue-700 px-3 text-sm font-medium text-white hover:bg-blue-800 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 focus-visible:outline-none disabled:opacity-60"
-        >
+        <button type="submit" disabled={busy} className={`${primaryButton} flex-1 text-sm`}>
           {busy ? "…" : t("account.changePassword")}
         </button>
         <button
@@ -179,7 +181,7 @@ function PasswordChange({ forced = false }: { forced?: boolean }) {
             setOldPassword("");
             setNewPassword("");
           }}
-          className="min-h-11 rounded-lg border border-neutral-300 px-3 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
+          className={secondaryButton}
         >
           {t("account.cancel")}
         </button>
@@ -222,21 +224,14 @@ function DeleteAccount({ onDeleted }: { onDeleted: () => void }) {
 
   if (!open) {
     return (
-      <button
-        type="button"
-        onClick={() => setOpen(true)}
-        className="min-h-11 rounded-lg border border-red-300 px-3 text-sm font-medium text-red-800 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-red-900 dark:text-red-300"
-      >
+      <button type="button" onClick={() => setOpen(true)} className={dangerButton}>
         {t("account.delete")}
       </button>
     );
   }
 
   return (
-    <form
-      onSubmit={submit}
-      className="space-y-3 border-t border-neutral-200 pt-3 dark:border-neutral-800"
-    >
+    <form onSubmit={submit} className="space-y-3">
       <p role="note" className="text-sm">
         {t("account.deleteWarning")}
       </p>
@@ -260,11 +255,7 @@ function DeleteAccount({ onDeleted }: { onDeleted: () => void }) {
         </p>
       )}
       <div className="flex gap-2">
-        <button
-          type="submit"
-          disabled={busy}
-          className="min-h-11 flex-1 rounded-lg bg-red-700 px-3 text-sm font-medium text-white hover:bg-red-800 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 focus-visible:outline-none disabled:opacity-60"
-        >
+        <button type="submit" disabled={busy} className={`${dangerButton} flex-1`}>
           {busy ? "…" : t("account.deleteConfirm")}
         </button>
         <button
@@ -274,7 +265,7 @@ function DeleteAccount({ onDeleted }: { onDeleted: () => void }) {
             setError(null);
             setPassword("");
           }}
-          className="min-h-11 rounded-lg border border-neutral-300 px-3 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
+          className={secondaryButton}
         >
           {t("account.cancel")}
         </button>
@@ -284,9 +275,9 @@ function DeleteAccount({ onDeleted }: { onDeleted: () => void }) {
 }
 
 const SECONDARY_BUTTON =
-  "min-h-11 rounded-lg border border-neutral-300 px-3 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700";
+  "min-h-11 rounded-xl bg-neutral-200/80 px-3 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-800";
 const PRIMARY_BUTTON =
-  "min-h-11 flex-1 rounded-lg bg-blue-700 px-3 text-sm font-medium text-white hover:bg-blue-800 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 focus-visible:outline-none disabled:opacity-60";
+  "min-h-11 flex-1 rounded-xl bg-blue-700 px-3 text-sm font-medium text-white hover:bg-blue-800 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 focus-visible:outline-none disabled:opacity-60";
 
 /**
  * „Passwort vergessen" (ToDo 11.1). Nur sichtbar, wenn der Mailversand
@@ -346,7 +337,7 @@ function ForgotPassword() {
   }
 
   return (
-    <div className="space-y-3 border-t border-neutral-200 pt-3 dark:border-neutral-800">
+    <div className="space-y-3">
       <p className="text-xs text-neutral-500">{t("account.forgotIntro")}</p>
       <div>
         <label htmlFor="konto-vergessen-email" className="text-sm font-medium">
@@ -459,10 +450,7 @@ function EmailChange() {
   }
 
   return (
-    <form
-      onSubmit={submit}
-      className="space-y-3 border-t border-neutral-200 pt-3 dark:border-neutral-800"
-    >
+    <form onSubmit={submit} className="space-y-3">
       <p className="text-xs text-neutral-500">{t("emailChange.note")}</p>
       <div>
         <label htmlFor="konto-neue-email" className="text-sm font-medium">
@@ -536,7 +524,9 @@ export function AccountPanel({ user, onUserChange, onShowSpot, position }: Accou
 
     // Beim Anmelden darf es auch ein Benutzername sein (ToDo 18.7): Nur was ein „@“
     // enthält, wird als Adresse geprüft.
-    if (mode === "registrieren" || email.includes("@") ? !looksLikeEmail(email) : email.trim() === "") {
+    if (
+      mode === "registrieren" || email.includes("@") ? !looksLikeEmail(email) : email.trim() === ""
+    ) {
       setError(t("account.emailInvalid"));
       emailRef.current?.focus();
       return;
@@ -604,12 +594,7 @@ export function AccountPanel({ user, onUserChange, onShowSpot, position }: Accou
           {t("account.mustChange")}
         </p>
         <PasswordChange forced />
-        <button
-          type="button"
-          onClick={logout}
-          disabled={busy}
-          className="min-h-11 rounded-lg border border-neutral-300 px-3 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none disabled:opacity-60 dark:border-neutral-700"
-        >
+        <button type="button" onClick={logout} disabled={busy} className={secondaryButton}>
           {busy ? "…" : t("account.logout")}
         </button>
       </div>
@@ -617,54 +602,84 @@ export function AccountPanel({ user, onUserChange, onShowSpot, position }: Accou
   }
 
   if (user) {
+    /*
+     * **Das Konto als Gruppen von Zeilen** (ToDo 9.31), wie in den
+     * Einstellungen und in den Systemapps: oben, wer angemeldet ist, darunter
+     * je eine Gruppe für Passwort, Adresse, Daten und Löschen. Vorher war es
+     * eine einzige Spalte aus Absätzen, Knöpfen und Trennlinien – zwölf
+     * Elemente ohne erkennbare Zusammengehörigkeit, und das Löschen des
+     * Kontos stand darin genauso beiläufig wie das Abmelden.
+     */
     return (
-      <div className="space-y-2">
-        <p className="text-sm">
-          {tr("account.signedInAs", {
-            email: <span className="font-medium">{user.email}</span>,
-          })}
-          {user.isAdmin && (
-            <span className="ml-2 rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-900 dark:bg-blue-950 dark:text-blue-200">
-              {t("account.admin")}
-            </span>
-          )}
-        </p>
-        <p className="text-xs text-neutral-500">{t("account.storedData")}</p>
-        <button
-          type="button"
-          onClick={logout}
-          disabled={busy}
-          className="min-h-11 rounded-lg border border-neutral-300 px-3 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none disabled:opacity-60 dark:border-neutral-700"
-        >
-          {busy ? "…" : t("account.logout")}
-        </button>
-        {error && (
-          <p role="alert" className="text-sm text-red-700 dark:text-red-400">
-            {error}
-          </p>
-        )}
+      <div className="space-y-6">
+        <ListGroup title={t("settings.account")} footer={t("account.storedData")} clip={false}>
+          <Row
+            label={tr("account.signedInAs", {
+              email: <span className="font-medium">{user.email}</span>,
+            })}
+          >
+            {user.isAdmin ? (
+              <span className="rounded-full bg-blue-100 px-2 py-0.5 text-xs font-medium text-blue-900 dark:bg-blue-950 dark:text-blue-200">
+                {t("account.admin")}
+              </span>
+            ) : undefined}
+          </Row>
+          <Row>
+            <button type="button" onClick={logout} disabled={busy} className={secondaryButton}>
+              {busy ? "…" : t("account.logout")}
+            </button>
+          </Row>
+          {error ? (
+            <Row>
+              <p role="alert" className="text-sm text-red-700 dark:text-red-400">
+                {error}
+              </p>
+            </Row>
+          ) : null}
+        </ListGroup>
+
         <MyFavorites onShowSpot={onShowSpot} position={position} />
         <MyRatings onShowSpot={onShowSpot} />
-        <PasswordChange />
-        {mailEnabled && <EmailChange />}
-        <div className="border-t border-neutral-200 pt-3 dark:border-neutral-800">
-          <p className="text-xs text-neutral-500">{t("account.exportNote")}</p>
-          <a
-            href="/api/account/export"
-            download
-            className="mt-2 inline-flex min-h-11 items-center rounded-lg border border-neutral-300 px-3 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
-          >
-            {t("account.export")}
-          </a>
-        </div>
-        <DeleteAccount onDeleted={() => onUserChange(null)} />
+
+        <ListGroup title={t("account.changePassword")} clip={false}>
+          <Row>
+            <PasswordChange />
+          </Row>
+        </ListGroup>
+
+        {mailEnabled && (
+          <ListGroup title={t("account.email")} clip={false}>
+            <Row>
+              <EmailChange />
+            </Row>
+          </ListGroup>
+        )}
+
+        <ListGroup title={t("account.export")} footer={t("account.exportNote")} clip={false}>
+          <Row>
+            <a href="/api/account/export" download className={`${secondaryButton} inline-flex`}>
+              {t("account.export")}
+            </a>
+          </Row>
+        </ListGroup>
+
+        {/*
+          **Das Löschen steht allein, ganz unten.** Es ist der einzige Schritt
+          hier, den niemand zurücknehmen kann; zwischen Passwort und Daten
+          wäre er ein Knopf unter Knöpfen.
+        */}
+        <ListGroup title={t("account.delete")} clip={false}>
+          <Row>
+            <DeleteAccount onDeleted={() => onUserChange(null)} />
+          </Row>
+        </ListGroup>
       </div>
     );
   }
 
   return (
     <form onSubmit={submit} className="space-y-3">
-      <div role="radiogroup" aria-label={t("account.modeGroup")} className="flex gap-2">
+      <div role="radiogroup" aria-label={t("account.modeGroup")} className={segmentGroup}>
         {(["anmelden", "registrieren"] as Mode[]).map((option) => (
           <button
             key={option}
@@ -675,11 +690,7 @@ export function AccountPanel({ user, onUserChange, onShowSpot, position }: Accou
               setMode(option);
               setError(null);
             }}
-            className={`min-h-11 flex-1 rounded-lg border px-3 text-sm font-medium transition-colors focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none ${
-              mode === option
-                ? "border-blue-700 bg-blue-700 text-white"
-                : "border-neutral-300 dark:border-neutral-700"
-            }`}
+            className={segmentItem(mode === option)}
           >
             {option === "anmelden" ? t("account.login") : t("account.register")}
           </button>
@@ -740,11 +751,7 @@ export function AccountPanel({ user, onUserChange, onShowSpot, position }: Accou
         </p>
       )}
 
-      <button
-        type="submit"
-        disabled={busy}
-        className="min-h-12 w-full rounded-xl bg-blue-700 px-4 font-medium text-white hover:bg-blue-800 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 focus-visible:outline-none disabled:opacity-60"
-      >
+      <button type="submit" disabled={busy} className={`${primaryButton} min-h-12 w-full`}>
         {busy ? "…" : mode === "anmelden" ? t("account.login") : t("account.register")}
       </button>
 

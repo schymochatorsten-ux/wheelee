@@ -20,7 +20,7 @@ export default function Error({ reset }: { error: Error; reset: () => void }) {
   return (
     <main className="min-h-0 flex-1 overflow-y-auto">
       <div className="mx-auto max-w-md px-4 py-10 text-center">
-        <h1 className="text-xl font-semibold">{t("error.title")}</h1>
+        <h1 className="text-2xl font-bold tracking-tight">{t("error.title")}</h1>
         <p className="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-300">
           {t("error.text")}
         </p>
@@ -35,7 +35,7 @@ export default function Error({ reset }: { error: Error; reset: () => void }) {
           </button>
           <Link
             href="/"
-            className="min-h-11 content-center rounded-xl border border-neutral-300 px-4 font-medium hover:bg-neutral-50 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700 dark:hover:bg-neutral-900"
+            className="min-h-11 content-center rounded-xl bg-neutral-200/80 px-4 font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-800"
           >
             {t("error.backToMap")}
           </Link>

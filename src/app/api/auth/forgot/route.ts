@@ -25,7 +25,10 @@ async function postHandler(request: Request) {
   if (!mailConfigured()) return NextResponse.json({ error: t("api.notFound") }, { status: 404 });
 
   if (!allow(`mail:${clientKey(request)}`, LIMITS.mailRequest)) {
-    return NextResponse.json({ error: t("api.tooManyAttempts") }, { status: 429, headers: retryAfter(LIMITS.mailRequest) });
+    return NextResponse.json(
+      { error: t("api.tooManyAttempts") },
+      { status: 429, headers: retryAfter(LIMITS.mailRequest) },
+    );
   }
 
   let body: { email?: unknown };

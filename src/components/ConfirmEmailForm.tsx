@@ -71,7 +71,7 @@ export function ConfirmEmailForm() {
             type="button"
             onClick={confirm}
             disabled={busy}
-            className="min-h-11 rounded border px-4 font-medium"
+            className="min-h-11 rounded-xl bg-blue-700 px-4 font-medium text-white"
           >
             {t("confirmEmail.submit")}
           </button>

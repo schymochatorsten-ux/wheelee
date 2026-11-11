@@ -8,6 +8,7 @@ import type { Locale, Translate } from "@/i18n";
 import { mapsNavigateLabel, mapsUrl, type MapsTarget } from "@/lib/navigation";
 import { spotTitle } from "@/lib/parking/display";
 import { SpotRow } from "./SpotRow";
+import { floatingPanel } from "@/components/ui/styles";
 
 /**
  * Leiste über der Karte: der nächstgelegene Parkplatz und ein Knopf, der die
@@ -129,9 +130,12 @@ function PinIcon() {
 const ICON_BUTTON =
   "flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-neutral-500 transition-colors hover:bg-neutral-100 hover:text-neutral-900 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:hover:bg-neutral-800 dark:hover:text-neutral-100";
 
-/** Die schwebenden Flächen über der Karte – einheitlich, damit es ruhig wirkt. */
-const PANEL =
-  "pointer-events-auto rounded-xl border border-black/5 bg-white/90 shadow-md ring-1 ring-black/5 backdrop-blur-md dark:border-white/10 dark:bg-neutral-900/90 dark:ring-white/10";
+/**
+ * Die schwebenden Flächen über der Karte – einheitlich, damit es ruhig wirkt.
+ * Seit 9.31 steht die Fassung in `ui/styles.ts`, weil Zielsuche und Legende
+ * dieselbe brauchen.
+ */
+const PANEL = floatingPanel;
 
 export function NearestBar({
   candidates,
@@ -278,7 +282,7 @@ export function NearestBar({
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex min-h-11 flex-1 items-center justify-center rounded-lg bg-blue-700 px-3 text-center text-sm font-medium text-white transition-colors hover:bg-blue-800 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 focus-visible:outline-none"
+            className="flex min-h-11 flex-1 items-center justify-center rounded-xl bg-blue-700 px-3 text-center text-sm font-medium text-white transition-colors hover:bg-blue-800 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 focus-visible:outline-none"
           >
             {mapsNavigateLabel(mapsTarget)}
           </a>
@@ -286,7 +290,7 @@ export function NearestBar({
         <button
           type="button"
           onClick={() => onShowDetails(target)}
-          className="min-h-11 shrink-0 rounded-lg px-2.5 text-sm font-medium text-neutral-700 transition-colors hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-neutral-300 dark:hover:bg-neutral-800"
+          className="min-h-11 shrink-0 rounded-xl px-2.5 text-sm font-medium text-neutral-700 transition-colors hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-neutral-300 dark:hover:bg-neutral-800"
         >
           {t("nearest.details")}
         </button>
@@ -322,7 +326,7 @@ export function NearestBar({
                 role="radio"
                 aria-checked={radius === meters}
                 onClick={() => onRadiusChange(meters)}
-                className={`min-h-10 rounded-lg px-2.5 transition-colors focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none ${
+                className={`min-h-10 rounded-xl px-2.5 transition-colors focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none ${
                   radius === meters
                     ? "bg-white font-medium text-blue-800 shadow-sm dark:bg-neutral-900 dark:text-blue-300"
                     : "text-neutral-600 dark:text-neutral-400"
@@ -347,7 +351,7 @@ export function NearestBar({
             onClick={() => setExpanded((previous) => !previous)}
             aria-expanded={expanded}
             aria-controls="parkplatz-auswahl"
-            className="mt-1 min-h-11 w-full rounded-lg text-xs font-medium text-blue-800 transition-colors hover:bg-blue-50 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300 dark:hover:bg-neutral-800"
+            className="mt-1 min-h-11 w-full rounded-xl text-xs font-medium text-blue-800 transition-colors hover:bg-blue-50 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300 dark:hover:bg-neutral-800"
           >
             {expanded
               ? t("nearest.closeSelection")

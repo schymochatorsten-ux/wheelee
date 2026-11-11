@@ -20,7 +20,10 @@ export const metadata: Metadata = {
 };
 
 export default function Quellen() {
-  const groups = new Map<string, { attribution: string; license: string | null; cities: string[] }>();
+  const groups = new Map<
+    string,
+    { attribution: string; license: string | null; cities: string[] }
+  >();
   for (const city of getCities()) {
     const key = `${city.attribution}\u0000${city.license ?? ""}`;
     const group = groups.get(key) ?? {
@@ -32,7 +35,8 @@ export default function Quellen() {
     groups.set(key, group);
   }
   const sorted = [...groups.values()].sort(
-    (a, b) => b.cities.length - a.cities.length || a.attribution.localeCompare(b.attribution, "de-DE"),
+    (a, b) =>
+      b.cities.length - a.cities.length || a.attribution.localeCompare(b.attribution, "de-DE"),
   );
 
   return (

@@ -1,6 +1,6 @@
 "use client";
 
-import { useId } from "react";
+import { ListGroup } from "./ui/List";
 
 /**
  * Ein umrahmter Einstellungsblock – die eine Form für **alle** Bereiche, in
@@ -36,24 +36,24 @@ interface SettingsSectionProps {
 }
 
 export function SettingsSection({ title, description, aside, children }: SettingsSectionProps) {
-  // `useId`, damit zwei Blöcke mit gleichem Titel nicht dieselbe ID tragen –
-  // eine doppelte ID macht `aria-labelledby` für Screenreader unbrauchbar.
-  const headingId = useId();
-
+  /*
+   * **Seit 9.31 nur noch eine dünne Hülle um `ListGroup`.** Die Form aller
+   * Gruppen steht jetzt an einer Stelle (`ui/List.tsx`), und die Verwaltung
+   * folgt ihr, ohne dass jede ihrer fünf Ansichten angefasst werden musste.
+   *
+   * **Die Beschreibung ist von oben nach unten gewandert.** Sie stand als
+   * erster Satz im Rahmen, also zwischen Überschrift und Bedienelement: Wer
+   * etwas einstellen wollte, musste sie jedes Mal überspringen. Als Fußnote
+   * unter der Gruppe ist sie da, wo man nachliest – nicht im Weg, wo man
+   * bedient. Das ist dieselbe Entscheidung wie bei den Einstellungen.
+   *
+   * `clip={false}`, weil mehrere Verwaltungsansichten Blätter und Menüs
+   * öffnen, die über den Rand der Gruppe hinausragen – abgeschnitten wären
+   * sie unbedienbar (gefunden von `e2e/rueckmeldungen.spec.ts`).
+   */
   return (
-    <section aria-labelledby={headingId}>
-      <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
-        <h2 id={headingId} className="text-base font-semibold">
-          {title}
-        </h2>
-        {aside}
-      </div>
-      <div className="mt-2 rounded-2xl border border-neutral-200/70 bg-white/70 p-4 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/50">
-        {description ? (
-          <p className="text-sm text-neutral-600 dark:text-neutral-400">{description}</p>
-        ) : null}
-        <div className={description ? "mt-3" : undefined}>{children}</div>
-      </div>
-    </section>
+    <ListGroup title={title} aside={aside} footer={description} clip={false}>
+      <div className="px-4 py-3">{children}</div>
+    </ListGroup>
   );
 }

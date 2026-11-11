@@ -4,6 +4,7 @@ import { useCallback, useEffect, useId, useMemo, useRef, useState } from "react"
 import { useLocale, useT } from "@/i18n/context";
 import { dedupePlaces, forgetPlace, rememberPlace, readRecent, type Place } from "@/lib/geocode";
 import { distanceMeters, formatDistance, type LatLng } from "@/lib/geo";
+import { floatingPanel } from "@/components/ui/styles";
 
 /**
  * Ziel eingeben und dort parken (ToDo 6.12).
@@ -151,8 +152,7 @@ function ChevronUpIcon() {
  * Alles, was hier kräftiger wird, nimmt der Karte Aufmerksamkeit weg – und
  * die Karte ist das, was beantwortet, ob ein Parkplatz erreichbar ist.
  */
-const PANEL =
-  "pointer-events-auto rounded-xl border border-black/5 bg-white/90 shadow-md ring-1 ring-black/5 backdrop-blur-md dark:border-white/10 dark:bg-neutral-900/90 dark:ring-white/10";
+const PANEL = floatingPanel;
 
 const ICON_BUTTON =
   "flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-neutral-500 transition-colors hover:bg-neutral-100 hover:text-neutral-900 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:hover:bg-neutral-800 dark:hover:text-neutral-100";
@@ -357,9 +357,13 @@ export function DestinationSearch({
   const recentMatches =
     term.length === 0
       ? []
-      : recent.filter((place) => place.label.toLowerCase().includes(term.toLowerCase())).slice(0, 2);
+      : recent
+          .filter((place) => place.label.toLowerCase().includes(term.toLowerCase()))
+          .slice(0, 2);
   const shown =
-    term.length === 0 ? recent : dedupePlaces([...recentMatches, ...local, ...results]).slice(0, 10);
+    term.length === 0
+      ? recent
+      : dedupePlaces([...recentMatches, ...local, ...results]).slice(0, 10);
 
   /** Statuszeile: nur, wenn sie etwas zu sagen hat. */
   const statusText =
@@ -405,7 +409,12 @@ export function DestinationSearch({
         void search(typed).then((places) => {
           if (!places || places.length === 0) return;
           const merged = dedupePlaces([...recentMatches, ...local, ...places]).slice(0, 10);
-          setActive(Math.max(0, merged.findIndex((place) => samePlace(place, places[0]))));
+          setActive(
+            Math.max(
+              0,
+              merged.findIndex((place) => samePlace(place, places[0])),
+            ),
+          );
         });
       }
       return;
@@ -437,7 +446,7 @@ export function DestinationSearch({
         <button
           type="button"
           onClick={() => setOpen(true)}
-          className="min-h-11 shrink-0 rounded-lg px-2.5 text-xs font-medium text-blue-800 transition-colors hover:bg-blue-50 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300 dark:hover:bg-neutral-800"
+          className="min-h-11 shrink-0 rounded-xl px-2.5 text-xs font-medium text-blue-800 transition-colors hover:bg-blue-50 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300 dark:hover:bg-neutral-800"
         >
           {t("search.change")}
         </button>
@@ -557,7 +566,7 @@ export function DestinationSearch({
             <button
               type="button"
               onClick={() => void search(query.trim())}
-              className="min-h-11 shrink-0 rounded-lg border border-neutral-300 px-2.5 text-xs font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:border-neutral-700"
+              className="min-h-11 shrink-0 rounded-xl bg-neutral-200/80 px-2.5 text-xs font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-800"
             >
               {t("search.retry")}
             </button>

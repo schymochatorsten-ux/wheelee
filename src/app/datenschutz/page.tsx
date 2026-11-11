@@ -57,7 +57,8 @@ export default function Datenschutz() {
    */
   const mailConfig = readMailConfig();
   const hasAdmins = adminAccountEmails().length > 0;
-  const mailProvider = mailConfig?.provider?.trim() || process.env.WHEELEE_MAIL_PROVIDER?.trim() || null;
+  const mailProvider =
+    mailConfig?.provider?.trim() || process.env.WHEELEE_MAIL_PROVIDER?.trim() || null;
   /*
    * Die Benachrichtigung des Betreibers bei neuer Rückmeldung (ToDo 17.9) ist
    * ein **eigener Zweck** und steht nur da, wenn sie eingerichtet ist. Ohne
@@ -76,10 +77,11 @@ export default function Datenschutz() {
   return (
     <LegalPage title="Datenschutzerklärung" updated="2026-10-30">
       <section>
-        <p className="rounded-xl border border-neutral-200 bg-neutral-50 p-3 dark:border-neutral-800 dark:bg-neutral-900">
+        <p className="rounded-xl bg-neutral-100/70 p-3 dark:bg-neutral-800/40">
           <strong>Das Wichtigste zuerst:</strong> Dein Standort verlässt dein Gerät nicht. Er wird
           im Browser berechnet, nirgends übertragen und nirgends gespeichert – auch nicht mit Konto
-          und auch nicht in einer Rückmeldung. Ohne Anmeldung und ohne eigene Sprachwahl setzt die App kein einziges Cookie.
+          und auch nicht in einer Rückmeldung. Ohne Anmeldung und ohne eigene Sprachwahl setzt die
+          App kein einziges Cookie.
         </p>
       </section>
 
@@ -185,9 +187,9 @@ export default function Datenschutz() {
           </li>
           <li>
             <code>wheelee-geraet</code> – eine Zufallszahl ohne Bezug zu dir oder deinem Gerät. Sie
-            dient allein dazu, massenhaft abgeschickte Rückmeldungen zu bremsen. <strong>Beim
-            Abschicken einer Rückmeldung wird sie mitgesendet</strong> und dort nur als gekürzter
-            Hash bei der Meldung gespeichert (siehe Abschnitt 8).
+            dient allein dazu, massenhaft abgeschickte Rückmeldungen zu bremsen.{" "}
+            <strong>Beim Abschicken einer Rückmeldung wird sie mitgesendet</strong> und dort nur als
+            gekürzter Hash bei der Meldung gespeichert (siehe Abschnitt 8).
           </li>
           <li>
             <code>wheelee-language</code> und <code>wheelee-maps-app</code> werden mit deinem Konto
@@ -212,20 +214,21 @@ export default function Datenschutz() {
         <h2>5. Cookies</h2>
         <p>
           Die App setzt <strong>höchstens zwei</strong> Cookies, und beide erst auf deine Handlung
-          hin. <strong>Beim Anmelden:</strong> <code>wheelee-session</code>. Es enthält ein zufälliges Sitzungstoken, ist für JavaScript
-          nicht lesbar (<code>HttpOnly</code>), wird bei Aufrufen von fremden Seiten nicht
-          mitgeschickt (<code>SameSite=Lax</code>) und läuft nach 30 Tagen ab. Beim Abmelden wird
-          die Sitzung auch auf dem Server gelöscht, nicht nur das Cookie entfernt.
+          hin. <strong>Beim Anmelden:</strong> <code>wheelee-session</code>. Es enthält ein
+          zufälliges Sitzungstoken, ist für JavaScript nicht lesbar (<code>HttpOnly</code>), wird
+          bei Aufrufen von fremden Seiten nicht mitgeschickt (<code>SameSite=Lax</code>) und läuft
+          nach 30 Tagen ab. Beim Abmelden wird die Sitzung auch auf dem Server gelöscht, nicht nur
+          das Cookie entfernt.
         </p>
         <p>
           <strong>Beim Wählen einer Sprache</strong> in den Einstellungen – oder nach dem Anmelden,
-          wenn an deinem Konto eine früher gewählte Sprache steht, die von der angezeigten
-          abweicht: <code>wheelee-lang</code>.
-          Es enthält nur den Sprachcode (zum Beispiel <code>de</code>), läuft nach einem Jahr ab und
-          wird gebraucht, weil der Server die Sprache schon beim ersten Aufbau der Seite kennen muss
-          – der lokale Speicher ist für ihn unsichtbar. Es dient nicht der Wiedererkennung. Ohne
-          eine solche Wahl wird es nicht gesetzt; die Sprache richtet sich dann nach der Spracheinstellung
-          deines Browsers, die dieser bei jedem Seitenaufruf ohnehin mitschickt.
+          wenn an deinem Konto eine früher gewählte Sprache steht, die von der angezeigten abweicht:{" "}
+          <code>wheelee-lang</code>. Es enthält nur den Sprachcode (zum Beispiel <code>de</code>),
+          läuft nach einem Jahr ab und wird gebraucht, weil der Server die Sprache schon beim ersten
+          Aufbau der Seite kennen muss – der lokale Speicher ist für ihn unsichtbar. Es dient nicht
+          der Wiedererkennung. Ohne eine solche Wahl wird es nicht gesetzt; die Sprache richtet sich
+          dann nach der Spracheinstellung deines Browsers, die dieser bei jedem Seitenaufruf ohnehin
+          mitschickt.
         </p>
         <p>
           Wer die App nur benutzt, bekommt kein Cookie. Ein Einwilligungsbanner ist deshalb nicht
@@ -234,10 +237,10 @@ export default function Datenschutz() {
         </p>
         <p>
           Dieselbe Vorschrift betrifft auch den lokalen Speicher aus Abschnitt 4. Dort wird{" "}
-          <strong>nichts angelegt, bevor du etwas tust</strong>: Darstellung oder Karten-App
-          wählen, ein Ziel suchen, eine Sprache wählen, eine Rückmeldung abschicken. Die
-          Offline-Kopien im Zwischenspeicher dagegen legt die App beim Aufruf an, damit sie ohne
-          Netz nicht leer bleibt.
+          <strong>nichts angelegt, bevor du etwas tust</strong>: Darstellung oder Karten-App wählen,
+          ein Ziel suchen, eine Sprache wählen, eine Rückmeldung abschicken. Die Offline-Kopien im
+          Zwischenspeicher dagegen legt die App beim Aufruf an, damit sie ohne Netz nicht leer
+          bleibt.
         </p>
       </section>
 
@@ -254,18 +257,17 @@ export default function Datenschutz() {
           wählst, <strong>die bevorzugte Karten-App</strong>, <strong>die gewählte Sprache</strong>{" "}
           und <strong>ob die App nach deinem Standort fragen darf</strong> – damit sie auch auf
           einem zweiten Gerät gelten. Das Letzte ist ein Ja oder Nein; dein Standort selbst wird
-          weder übertragen noch gespeichert. Ohne
-          Konto bleiben diese Wahlen allein im Browser. Rechtsgrundlage ist Art. 6
-          Abs. 1 lit. b DSGVO.
+          weder übertragen noch gespeichert. Ohne Konto bleiben diese Wahlen allein im Browser.
+          Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO.
         </p>
         <p>
           <strong>Verwaltung und Einladungen:</strong> Konten mit der Rolle Administrator:in sehen
-          in der Verwaltung die Liste aller Konten (E-Mail-Adresse, Rolle, Anlage, letzte
-          Anmeldung, ob gesperrt) sowie alle Rückmeldungen samt freiwilliger Antwortadresse. Sie
-          können Konten sperren oder löschen und Einladungen erzeugen. Eine Einladung speichert die
-          E-Mail-Adresse der eingeladenen Person, die vorgesehene Rolle, den Ablauf (sieben Tage)
-          und das Einladungstoken nur als Hash. Den Link sieht die einladende Person einmal und
-          gibt ihn selbst weiter; <strong>Einladungen versendet die App nicht per E-Mail.</strong>{" "}
+          in der Verwaltung die Liste aller Konten (E-Mail-Adresse, Rolle, Anlage, letzte Anmeldung,
+          ob gesperrt) sowie alle Rückmeldungen samt freiwilliger Antwortadresse. Sie können Konten
+          sperren oder löschen und Einladungen erzeugen. Eine Einladung speichert die E-Mail-Adresse
+          der eingeladenen Person, die vorgesehene Rolle, den Ablauf (sieben Tage) und das
+          Einladungstoken nur als Hash. Den Link sieht die einladende Person einmal und gibt ihn
+          selbst weiter; <strong>Einladungen versendet die App nicht per E-Mail.</strong>{" "}
           Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO – der Schutz der Seite davor, dass sich
           Unbefugte Verwaltungsrechte verschaffen.
         </p>
@@ -273,27 +275,26 @@ export default function Datenschutz() {
           <>
             <p>
               <strong>E-Mails der App:</strong> Nur auf deine Anforderung hin verschickt die App
-              eine E-Mail – für „Passwort vergessen“ an die Adresse deines Kontos und für „E-Mail-Adresse
-              ändern“ an die <em>neue</em> Adresse. Die E-Mail enthält einen Link, der eine Stunde
-              gilt und einmal einlösbar ist; in der Datenbank steht nur ein Hash davon (bei einem
-              Adresswechsel zusätzlich die neue Adresse bis zum Ablauf, danach wird sie gelöscht).
-              Es gibt keine Werbe-, Rundschreiben- oder Erinnerungsmails. Rechtsgrundlage ist Art. 6
-              Abs. 1 lit. b DSGVO (Vertragserfüllung: Zugang zum Konto) beziehungsweise bei der
-              neuen Adresse die von dir ausgelöste Anforderung.
+              eine E-Mail – für „Passwort vergessen“ an die Adresse deines Kontos und für
+              „E-Mail-Adresse ändern“ an die <em>neue</em> Adresse. Die E-Mail enthält einen Link,
+              der eine Stunde gilt und einmal einlösbar ist; in der Datenbank steht nur ein Hash
+              davon (bei einem Adresswechsel zusätzlich die neue Adresse bis zum Ablauf, danach wird
+              sie gelöscht). Es gibt keine Werbe-, Rundschreiben- oder Erinnerungsmails.
+              Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung: Zugang zum Konto)
+              beziehungsweise bei der neuen Adresse die von dir ausgelöste Anforderung.
             </p>
             {notifyEnabled ? (
               <p>
                 <strong>Benachrichtigung des Betreibers:</strong> Schickst du eine Rückmeldung
-                (Fehler oder Verbesserungsvorschlag), geht eine E-Mail an den Betreiber. Sie
-                enthält deinen Meldungstext und – falls du sie freiwillig angegeben hast – deine
+                (Fehler oder Verbesserungsvorschlag), geht eine E-Mail an den Betreiber. Sie enthält
+                deinen Meldungstext und – falls du sie freiwillig angegeben hast – deine
                 Antwortadresse; der Versanddienstleister unten sieht beides. Diese Mail geht
-                <strong> an niemanden sonst</strong> und ist keine Antwort an dich.
-                Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO: Eine Meldung über einen falschen
-                Parkplatz nützt nur, wenn sie jemand zeitnah liest.
+                <strong> an niemanden sonst</strong> und ist keine Antwort an dich. Rechtsgrundlage
+                ist Art. 6 Abs. 1 lit. f DSGVO: Eine Meldung über einen falschen Parkplatz nützt
+                nur, wenn sie jemand zeitnah liest.
               </p>
             ) : null}
-            <p>
-            </p>
+            <p></p>
             <p>
               <strong>Versanddienstleister:</strong>{" "}
               {mailProvider ? (
@@ -303,10 +304,10 @@ export default function Datenschutz() {
                 </>
               ) : (
                 <strong className="text-red-700 dark:text-red-400">
-                  [Angabe fehlt: Der Betreiber hat den Versanddienstleister nicht eingetragen
-                  (im Reiter „Rückmeldungen“ unter „Mailversand“, ersatzweise Variable
-                  WHEELEE_MAIL_PROVIDER). Dieser Abschnitt ist erst vollständig, wenn Name, Sitz
-                  und der Stand des Auftragsverarbeitungsvertrags dort stehen.]
+                  [Angabe fehlt: Der Betreiber hat den Versanddienstleister nicht eingetragen (im
+                  Reiter „Rückmeldungen“ unter „Mailversand“, ersatzweise Variable
+                  WHEELEE_MAIL_PROVIDER). Dieser Abschnitt ist erst vollständig, wenn Name, Sitz und
+                  der Stand des Auftragsverarbeitungsvertrags dort stehen.]
                 </strong>
               )}
             </p>
@@ -337,10 +338,10 @@ export default function Datenschutz() {
           <strong>Gespeicherte Parkplätze:</strong> Mit Konto kannst du dir Parkplätze merken, die
           du häufig ansteuerst. Gespeichert werden der Parkplatz, dein Konto und der Zeitpunkt –
           kein Standort und keine Gerätekennung. Die Liste sehen nur du und, als Teil der Daten
-          deines Kontos, die Betreiber:innen der Datenbank; sie wird nirgends ausgewertet.
-          Entfernst du einen Parkplatz, wird der Eintrag gelöscht; löschst du dein Konto,
-          verschwindet die ganze Liste mit. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO – die
-          Funktion, die du mit deinem Konto nutzt.
+          deines Kontos, die Betreiber:innen der Datenbank; sie wird nirgends ausgewertet. Entfernst
+          du einen Parkplatz, wird der Eintrag gelöscht; löschst du dein Konto, verschwindet die
+          ganze Liste mit. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO – die Funktion, die du mit
+          deinem Konto nutzt.
         </p>
       </section>
 
@@ -387,20 +388,20 @@ export default function Datenschutz() {
           wird fortlaufend überschrieben (höchstens 30 MB, danach fällt das Älteste weg).
         </p>
         <p className="mt-2">
-          <strong>Besucherzählung.</strong> Damit der Betreiber weiß, ob die App benutzt wird,
-          zählt sie, wie viele Menschen sie pro Tag öffnen. Dafür schickt deine Seite nach dem
-          Laden einmal einen leeren Hinweis an unseren Server – ohne Cookie, ohne Eintrag im
+          <strong>Besucherzählung.</strong> Damit der Betreiber weiß, ob die App benutzt wird, zählt
+          sie, wie viele Menschen sie pro Tag öffnen. Dafür schickt deine Seite nach dem Laden
+          einmal einen leeren Hinweis an unseren Server – ohne Cookie, ohne Eintrag im
           Browser-Speicher und ohne Inhalt. Der Server bildet aus IP-Adresse und Browserkennung
           einen Hash, gesalzen mit einem Zufallswert, der <strong>nur im Arbeitsspeicher</strong>{" "}
-          liegt und jeden Tag neu gewürfelt wird, und merkt sich damit bis Mitternacht (Mitteleuropa),
-          ob er dich heute schon gezählt hat. <strong>In die Datenbank kommt nur die Summe je
-          Tag</strong> (Besucher und Seitenaufrufe), keine Adresse, keine Kennung, auch nicht
-          gehasht; ein Neustart des Servers vergisst die Hashes. Zugriffe von Suchmaschinen,
-          Messdiensten, Linkvorschauen und Programmen werden nicht gezählt, ebenso nicht,
-          wenn dein Browser „Do Not Track“ oder „Global Privacy Control“ sendet. Rechtsgrundlage
-          ist Art. 6 Abs. 1 lit. f DSGVO (Interesse, den Betrieb einzuschätzen); durch die
-          sofortige Verdichtung auf Tagessummen ist der Eingriff gering. Die Summen sieht nur der
-          Administrator. Sie lassen sich keiner Person zuordnen.
+          liegt und jeden Tag neu gewürfelt wird, und merkt sich damit bis Mitternacht
+          (Mitteleuropa), ob er dich heute schon gezählt hat.{" "}
+          <strong>In die Datenbank kommt nur die Summe je Tag</strong> (Besucher und Seitenaufrufe),
+          keine Adresse, keine Kennung, auch nicht gehasht; ein Neustart des Servers vergisst die
+          Hashes. Zugriffe von Suchmaschinen, Messdiensten, Linkvorschauen und Programmen werden
+          nicht gezählt, ebenso nicht, wenn dein Browser „Do Not Track“ oder „Global Privacy
+          Control“ sendet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (Interesse, den Betrieb
+          einzuschätzen); durch die sofortige Verdichtung auf Tagessummen ist der Eingriff gering.
+          Die Summen sieht nur der Administrator. Sie lassen sich keiner Person zuordnen.
         </p>
         <p className="mt-2">
           Das gilt für die App selbst. Zwischen deinem Gerät und der App steht ein
@@ -431,8 +432,7 @@ export default function Datenschutz() {
             stattdessen daneben.
           </li>
           <li>
-            <strong>Gespeicherte Parkplätze:</strong> bis du sie entfernst oder dein Konto
-            löschst.
+            <strong>Gespeicherte Parkplätze:</strong> bis du sie entfernst oder dein Konto löschst.
           </li>
           <li>
             <strong>Sitzungen:</strong> mit dem Ablauf, spätestens 30 Tage nach der Anmeldung.
@@ -463,8 +463,9 @@ export default function Datenschutz() {
           <strong>Mit Konto geht beides in der App selbst</strong>, unter Einstellungen → Konto:
           <em> Meine Daten herunterladen</em> liefert eine JSON-Datei mit E-Mail-Adresse,
           Anlagedatum, letzter Anmeldung, Bewertungen, gespeicherten Parkplätzen, eigenen
-          Rückmeldungen, der gewählten Karten-App und Sprache (Art. 15 und 20). <em>Konto löschen</em>{" "}
-          entfernt das Konto, alle Sitzungen, deine Bewertungen und gespeicherten Parkplätze sofort und endgültig; dazu wird dein Passwort abgefragt. Deine
+          Rückmeldungen, der gewählten Karten-App und Sprache (Art. 15 und 20).{" "}
+          <em>Konto löschen</em> entfernt das Konto, alle Sitzungen, deine Bewertungen und
+          gespeicherten Parkplätze sofort und endgültig; dazu wird dein Passwort abgefragt. Deine
           Rückmeldungen bleiben als Hinweise erhalten, verlieren aber den Bezug zu dir, und eine
           dort freiwillig angegebene Antwortadresse wird entfernt (Art. 17).
         </p>
@@ -479,16 +480,19 @@ export default function Datenschutz() {
         <h2>12. Keine Weitergabe, keine automatische Entscheidung</h2>
         <p>
           Deine Daten werden nicht verkauft, nicht für Werbung genutzt und nicht an Dritte
-          weitergegeben{mailEnabled ? " – mit Ausnahme des in Abschnitt 6 genannten Versanddienstleisters für die E-Mails, die du selbst anforderst" : ""}.
-          Die Daten, die die App selbst speichert (Konten, Bewertungen, Rückmeldungen), liegen auf
+          weitergegeben
+          {mailEnabled
+            ? " – mit Ausnahme des in Abschnitt 6 genannten Versanddienstleisters für die E-Mails, die du selbst anforderst"
+            : ""}
+          . Die Daten, die die App selbst speichert (Konten, Bewertungen, Rückmeldungen), liegen auf
           einem Server in Deutschland und werden von uns nicht in ein Drittland übermittelt
           {mailEnabled ? "; beim Versanddienstleister gilt die Angabe in Abschnitt 6" : ""}.{" "}
           <strong>Eine Ausnahme liegt außerhalb unseres Servers:</strong> Die Kartenkacheln
-          (Abschnitt 3) lädt dein Browser direkt von der OpenStreetMap Foundation, die ihren Sitz
-          im Vereinigten Königreich hat und für die Auslieferung weitere Dienstleister einsetzen
-          kann, auch außerhalb der EU. Welche, steht in deren Datenschutzerklärung; wir haben darauf
-          keinen Einfluss. Eine automatisierte Entscheidungsfindung oder ein Profiling nach Art.
-          22 DSGVO findet nicht statt.
+          (Abschnitt 3) lädt dein Browser direkt von der OpenStreetMap Foundation, die ihren Sitz im
+          Vereinigten Königreich hat und für die Auslieferung weitere Dienstleister einsetzen kann,
+          auch außerhalb der EU. Welche, steht in deren Datenschutzerklärung; wir haben darauf
+          keinen Einfluss. Eine automatisierte Entscheidungsfindung oder ein Profiling nach Art. 22
+          DSGVO findet nicht statt.
         </p>
       </section>
 

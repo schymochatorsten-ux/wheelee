@@ -45,7 +45,9 @@ export function formatDate(iso: string, locale: Locale = DEFAULT_LOCALE): string
 export function DataDisclaimer({ importedAt = null, variant = "kurz" }: DataDisclaimerProps) {
   const locale = useLocale();
   const t = useT();
-  const stand = importedAt ? ` ${t("disclaimer.stand", { date: formatDate(importedAt, locale) })}` : "";
+  const stand = importedAt
+    ? ` ${t("disclaimer.stand", { date: formatDate(importedAt, locale) })}`
+    : "";
 
   if (variant === "kurz") {
     return (
@@ -68,7 +70,8 @@ export function DataDisclaimer({ importedAt = null, variant = "kurz" }: DataDisc
         {t("disclaimer.heading")}
       </h2>
       <p className="mt-1">
-        {t("disclaimer.body")} <strong>{t("disclaimer.bodyStrong")}</strong> {t("disclaimer.bodyEnd")}
+        {t("disclaimer.body")} <strong>{t("disclaimer.bodyStrong")}</strong>{" "}
+        {t("disclaimer.bodyEnd")}
       </p>
       <p className="mt-2">{t("disclaimer.feedback")}</p>
     </section>

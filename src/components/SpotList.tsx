@@ -8,6 +8,7 @@ import type { CityInfo } from "@/lib/parking/spots";
 import { formatTimeRestriction } from "@/lib/opening-hours";
 import { DataDisclaimer, formatDate } from "./DataDisclaimer";
 import { SpotRow } from "./SpotRow";
+import { ListGroup } from "./ui/List";
 import { useLocale, useT } from "@/i18n/context";
 import { localeTag, type Locale, type Translate } from "@/i18n";
 import { useRich } from "@/i18n/rich";
@@ -97,7 +98,7 @@ function CityList({ cities }: { cities: readonly CityInfo[] }) {
             onChange={(event) => setQuery(event.target.value)}
             aria-label={t("list.cityFilter")}
             placeholder={t("list.cityFilter")}
-            className="mt-1 w-full rounded border border-neutral-300 bg-white px-3 py-2 dark:border-neutral-700 dark:bg-neutral-900"
+            className="mt-1 w-full rounded-xl bg-neutral-200/70 px-3 py-2 dark:bg-neutral-800/70"
           />
           {shown.length === 0 && <p className="mt-2">{t("list.cityNone")}</p>}
           <ul className="mt-2 space-y-2">
@@ -148,15 +149,18 @@ export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect 
     <div className="space-y-6">
       <DataDisclaimer variant="lang" />
 
-      <section aria-labelledby="nearby-heading">
-        <h2 id="nearby-heading" className="text-base font-semibold">
-          {hasUserPosition ? t("list.nearby") : t("list.nearest")}
-        </h2>
-        {!hasUserPosition && (
-          <p className="mt-1 text-sm text-neutral-500">{t("list.noLocation")}</p>
-        )}
-
-        <ul className="mt-2 divide-y divide-neutral-200 dark:divide-neutral-800">
+      {/*
+        **Die Liste als Gruppe** (ToDo 9.31), wie die Einstellungen und das
+        Konto: Name der Gruppe klein darüber, die Einträge in einer Fläche,
+        der Hinweis als Fußnote darunter. Vorher standen Überschrift,
+        Hinweissatz und Einträge frei untereinander, nur durch Trennlinien
+        verbunden.
+      */}
+      <ListGroup
+        title={hasUserPosition ? t("list.nearby") : t("list.nearest")}
+        footer={hasUserPosition ? undefined : t("list.noLocation")}
+      >
+        <ul className="divide-y divide-neutral-200/70 px-2 dark:divide-neutral-800">
           {nearby.map((spot) => (
             <li key={spot.id}>
               <SpotRow
@@ -173,17 +177,16 @@ export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect 
             </li>
           ))}
         </ul>
-      </section>
+      </ListGroup>
 
       {unlocated.length > 0 && (
-        <section aria-labelledby="unlocated-heading">
-          <h2 id="unlocated-heading" className="text-base font-semibold">
-            {t("list.unlocated", { count: unlocated.length })}
-          </h2>
-          <p className="mt-1 text-sm text-neutral-500">{t("list.unlocatedNote")}</p>
-          <ul className="mt-2 divide-y divide-neutral-200 dark:divide-neutral-800">
+        <ListGroup
+          title={t("list.unlocated", { count: unlocated.length })}
+          footer={t("list.unlocatedNote")}
+        >
+          <ul className="divide-y divide-neutral-200/70 dark:divide-neutral-800">
             {unlocated.map((spot) => (
-              <li key={spot.id} className="py-2.5">
+              <li key={spot.id} className="px-4 py-2.5">
                 <span className="block font-medium">{stripRedundantPrefix(spot.label)}</span>
                 <span className="block text-sm text-neutral-500">
                   {spot.district} · {spaceCount(spot.spotCount, t)}
@@ -191,7 +194,7 @@ export function SpotList({ nearby, unlocated, hasUserPosition, cities, onSelect 
               </li>
             ))}
           </ul>
-        </section>
+        </ListGroup>
       )}
 
       <section aria-labelledby="sources-heading" className="text-sm text-neutral-500">

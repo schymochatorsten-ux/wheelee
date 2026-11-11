@@ -79,13 +79,26 @@ export async function LegalPage({
           href="/"
           className="inline-flex min-h-11 items-center gap-1.5 text-sm font-medium text-blue-800 hover:underline focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"
         >
-          <span aria-hidden="true">←</span> {t("error.backToMap")}
+          {/*
+            Das Winkelzeichen nach links ist in den Systemapps das Zeichen für
+            „zurück“ (ToDo 9.31); der Pfeil ← war dafür ein Behelf.
+          */}
+          <span aria-hidden="true" className="text-lg leading-none">
+            ‹
+          </span>{" "}
+          {t("error.backToMap")}
         </Link>
 
-        <h1 lang="de" className="mt-3 text-2xl font-semibold hyphens-auto">
+        {/* Große, eng gesetzte Überschrift wie in den Systemapps. */}
+        <h1
+          lang="de"
+          className="mt-3 text-[28px] leading-tight font-bold tracking-tight hyphens-auto"
+        >
           {title}
         </h1>
-        <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">{t(updatedKey, { date })}</p>
+        <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
+          {t(updatedKey, { date })}
+        </p>
         {lastRun !== undefined && (
           <p className="text-sm text-neutral-600 dark:text-neutral-400">
             {lastRun === null
@@ -96,7 +109,7 @@ export async function LegalPage({
         {locale !== DEFAULT_LOCALE && (
           <p
             lang={locale}
-            className="mt-3 rounded-lg border border-neutral-200 bg-neutral-50 p-3 text-sm dark:border-neutral-800 dark:bg-neutral-900"
+            className="mt-3 rounded-xl bg-neutral-100/70 p-3 text-sm dark:bg-neutral-800/40"
           >
             {t("legal.germanOnly")}
           </p>
