@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-12):** **256 Einträge** auf oberster Ebene –
-davon 230, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-12):** **257 Einträge** auf oberster Ebene –
+davon 231, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 26, die das nicht tun. _Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -2267,6 +2267,20 @@ die Angabe, die sonst beim nächsten Mal wieder zusammengesucht wird.
   - **Was das die Tests gekostet hat, und warum es trotzdem so gebaut ist:** 43 Stellen in 17 Dateien klickten `getByRole("tab", …)` – im Telefonformat, in dem die Reiter jetzt hinter dem Menü liegen. Statt 43-mal dieselben zwei Zeilen zu schreiben, gibt es `e2e/ansicht.ts`: Es öffnet das Menü nur, wenn der Reiter nicht ohnehin sichtbar ist, und findet das Zahnrad über `data-testid` statt über den Namen – der heißt in jeder Sprache anders, und `sprache.spec.ts` wechselt sie. Fünf Prüfungen hingen an der Kopfzeile selbst; sie prüfen jetzt das Zahnrad oder `main[data-ansicht]`, also die Ansicht statt ihres Bedienelements.
   - **Ein Test fiel auf, der am entfernten Text hing:** `sprache.spec.ts` wartete auf „– 0 m“ in der Kopfzeile, um zu wissen, dass der Standort angekommen ist. Er liest die Entfernung jetzt in der Leiste. Das ist kein Nachteil des Umbaus, sondern der Hinweis darauf, dass die Angabe dort ohnehin steht.
   - **Geprüft:** Typecheck, Lint, 724 Unit-Tests, 142 E2E-Tests; Telefonformat und 1.280 px im Browser angesehen und nachgemessen.
+
+---
+
+## 9.36 Der Weichzeichner, zum vierten Mal (2026-11-12)
+
+- [x] 9.36 **Milchglas raus: die schwebenden Flächen sind deckend** (Torsten, 2026-11-12 mit Screenshot vom iPhone 17 Pro: „Der obere Bereich der App ist unscharf, die oberste geschriebene Zeile sieht aus als wäre ein Weichzeichner davor“; Verdacht auf die Dynamic Island).
+
+  **An der Dynamic Island lag es nicht** – die Fläche beginnt weit unterhalb der Statusleiste. Es war `backdrop-blur-md` in `floatingPanel` (`src/components/ui/styles.ts`): Ein Weichzeichner zwingt den Browser zu einer eigenen Ebene, und auf der zeichnet er Schrift ohne Subpixel-Glättung. Genau diese Ursache stand schon bei **9.26** (Kopfzeile) und **9.29** (Reiterschatten); mit 9.31 kam sie über die neue gemeinsame Fläche zurück an eine Stelle, an der sie noch nicht behoben war. Deshalb jetzt überall dasselbe: `floatingPanel`, die Gruppen in `ui/List.tsx`, der Legendenknopf, `/info` und die Parkplatzseite deckend und ohne `backdrop-blur`.
+
+  **Dazu die kleine Zeile selbst** („NÄCHSTER BEHINDERTENPARKPLATZ“): 10 px und ein für beide Darstellungen gleiches `text-neutral-500`. Im Dunkelmodus stand sie damit knapp über dem Untergrund – wenig Kontrast liest sich wie Unschärfe. Jetzt 11 px und dieselben Grauwerte wie die Gruppenüberschriften in den Einstellungen.
+
+  **Die Regel aus 9.29 hat getragen:** zuerst nach `blur`, `shadow-*` und `bg-clip-text` gesucht, nicht am Bild geraten – der Fund stand in der ersten Suche. Umgekehrt zeigt der Rückfall, dass Milchglas in diesem Projekt keine Geschmacksfrage mehr ist: **Es war viermal die Ursache für „sieht unscharf aus“ und wird nicht wieder eingeführt.**
+
+  - **Geprüft:** Typecheck, Lint, 724 Unit-Tests, 142 E2E-Tests (2 übersprungen); im Browser bei 375 px nachgesehen und über `getComputedStyle` bestätigt, dass kein Element mehr einen `backdrop-filter` trägt.
 
 ---
 

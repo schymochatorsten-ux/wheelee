@@ -57,7 +57,7 @@ export function MapLegend() {
         onClick={() => setOpen((previous) => !previous)}
         aria-expanded={open}
         aria-controls="karten-legende"
-        className="pointer-events-auto flex h-11 w-11 items-center justify-center rounded-full bg-white/95 text-lg font-semibold shadow-lg backdrop-blur focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-900/95"
+        className="pointer-events-auto flex h-11 w-11 items-center justify-center rounded-full bg-white text-lg font-semibold shadow-lg focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-900/95"
       >
         <span aria-hidden="true">?</span>
         <span className="sr-only">{open ? t("legend.close") : t("legend.open")}</span>

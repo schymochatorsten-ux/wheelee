@@ -267,7 +267,14 @@ export function NearestBar({
           className="-m-1 flex min-w-0 flex-1 items-center gap-2 rounded-xl p-1 text-left transition-colors hover:bg-neutral-100/70 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:hover:bg-neutral-800/70"
         >
           <span className="min-w-0 flex-1">
-            <span className="block truncate text-[10px] font-medium tracking-wide text-neutral-500 uppercase">
+            {/*
+              11 px und dieselben Grauwerte wie die Gruppenüberschriften in
+              den Einstellungen (ToDo 9.36). Mit 10 px und einem für beide
+              Darstellungen gleichen Grau stand die Zeile im Dunkelmodus
+              knapp über dem Untergrund – zusammen mit dem Weichzeichner der
+              Fläche las sich das als Unschärfe.
+            */}
+            <span className="block truncate text-[11px] font-medium tracking-wide text-neutral-600 uppercase dark:text-neutral-400">
               {destinationLabel
                 ? t("nearest.spotAt", { place: destinationLabel })
                 : target === nearest

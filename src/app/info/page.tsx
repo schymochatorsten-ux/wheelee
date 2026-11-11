@@ -17,7 +17,7 @@ import { publicReach } from "@/lib/visits";
 
 /** Karte im Stil der Einstellungen (dasselbe Glas wie `SettingsPanel`). */
 const CARD =
-  "rounded-2xl border border-neutral-200/70 bg-white/80 p-4 shadow-sm backdrop-blur dark:border-neutral-800 dark:bg-neutral-900/60";
+  "rounded-2xl border border-neutral-200/70 bg-white p-4 shadow-sm dark:border-neutral-800 dark:bg-neutral-900";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = translator(await getLocale());

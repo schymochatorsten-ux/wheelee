@@ -71,9 +71,16 @@ export const segmentItem = (selected: boolean) =>
  * und zwei verschiedene Eckradien nebeneinander sieht man sofort, ohne sagen
  * zu können, woran es liegt. `rounded-2xl` wie die Gruppen in den
  * Einstellungen und wie das Blatt der Detailansicht.
+ *
+ * **Deckend und ohne `backdrop-blur`** (ToDo 9.36, dieselbe Ursache wie 9.26
+ * und 9.29). Ein Weichzeichner zwingt den Browser zu einer eigenen Ebene, und
+ * auf der zeichnet er Schrift ohne Subpixel-Glättung: Die kleine Zeile oben
+ * („Nächster Behindertenparkplatz“) wirkte auf dem iPhone verwaschen, während
+ * die Schrift darunter scharf stand. Milchglas ist hübsch, aber es war hier
+ * schon dreimal die Ursache für „sieht unscharf aus“.
  */
 export const floatingPanel =
-  "pointer-events-auto rounded-2xl border border-black/5 bg-white/90 shadow-md ring-1 ring-black/5 backdrop-blur-md dark:border-white/10 dark:bg-neutral-900/90 dark:ring-white/10";
+  "pointer-events-auto rounded-2xl border border-black/5 bg-white shadow-md ring-1 ring-black/5 dark:border-white/10 dark:bg-neutral-900 dark:ring-white/10";
 
 /** Beschriftung über einem Feld. */
 export const labelClass = "text-sm font-medium";

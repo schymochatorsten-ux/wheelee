@@ -146,7 +146,7 @@ export default async function CityPage({ params }: Props) {
           {t("city.openMap")}
         </Link>
 
-        <section className="mt-6 rounded-2xl border border-neutral-200/70 bg-white/80 p-4 shadow-sm backdrop-blur dark:border-neutral-800 dark:bg-neutral-900/60">
+        <section className="mt-6 rounded-2xl border border-neutral-200/70 bg-white p-4 shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
           <h2 className="text-base font-semibold">{t("city.list", vars)}</h2>
           <ul className="mt-2 space-y-1 text-sm">
             {rows.map((spot) => (

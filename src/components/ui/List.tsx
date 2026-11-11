@@ -70,7 +70,7 @@ export function ListGroup({
         {aside}
       </div>
       <div
-        className={`mt-1.5 rounded-2xl border border-neutral-200/70 bg-white/80 shadow-sm backdrop-blur dark:border-neutral-800 dark:bg-neutral-900/60 ${clip ? "overflow-hidden" : ""}`}
+        className={`mt-1.5 rounded-2xl border border-neutral-200/70 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-900 ${clip ? "overflow-hidden" : ""}`}
       >
         {/*
           Die Trennlinie sitzt zwischen den Zeilen und nicht um sie herum: So
