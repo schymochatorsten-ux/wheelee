@@ -8,7 +8,7 @@
 **Legende:** `[ ]` offen · `[~]` teils gebaut, Rest hier · `[!]` braucht eine
 Entscheidung oder Angabe von dir · `[-]` gesperrt bis zur Freigabe
 
-**Letzte Aktualisierung:** 2026-11-10
+**Letzte Aktualisierung:** 2026-11-11
 
 **Stand:** wird nachgezählt, nicht fortgeschrieben:
 
@@ -58,7 +58,8 @@ in [Erledigt.md](Erledigt.md) bei 19.3 und in [deploy/Datenlauf.md](deploy/Daten
 **Zum Schluss steht 12.17** (abschließender Gesamttest), weil er sonst einen
 Stand prüft, den es danach nicht mehr gibt. _10.23 (Sicherheit), 12.16
 (Geschwindigkeit) und 12.18 (npm audit) sind am 2026-11-09 erledigt, 12.19
-(wackelnder Smoke-Test) und Köln aus 2d.8a am 2026-11-10._
+(wackelnder Smoke-Test) und Köln aus 2d.8a am 2026-11-10, Bochum aus 2d.8a und
+2d.12 (Moers) am 2026-11-11._
 
 **Neue Knöpfe und Meldungen kommen gleich in `src/i18n/de.ts`, nicht in die
 Komponente** (Aufbau in [Erledigt.md](Erledigt.md) unter 15.2) – und in die
@@ -70,11 +71,8 @@ maschinelle Mehrfachprüfung.
 
 ## 2. Datenquellen und Import
 
-- [~] 2d.8a **Städte mit ungenutzter amtlicher Quelle.** München, Bielefeld und – seit dem 2026-11-10 – Köln sind erledigt; Befunde in [Erledigt.md](Erledigt.md). Offen sind zwei, und beide brauchen eine Handlung nach außen:
-  - [!] **Bochum – im Browser nachgesehen, es geht ohne Zugangsdaten nicht** (2026-11-10, Befund in [Erledigt.md](Erledigt.md)). Der Download verlangt eine **Anmeldung** auf dem Portal der Stadt, der ArcGIS-Dienst ist abgeschaltet, und eine Lizenz nennt der Datensatz nicht mehr. **Nötig ist eine Entscheidung, nicht ein Abruf:** Zugang beim Portal erfragen, oder Bochum bleibt bei OpenStreetMap.
+- [~] 2d.8a **Städte mit ungenutzter amtlicher Quelle.** München, Bielefeld, Köln und – seit dem 2026-11-11 – Bochum sind abgeschlossen; Befunde in [Erledigt.md](Erledigt.md). Offen ist einer:
   - [!] **Heidelberg.** Die CKAN-Quelle ist samt Host weg, GovData verweist weiter auf sie, einen anderen Bezugsweg gibt es nicht (gesucht am 2026-11-10, Einzelheiten in [Erledigt.md](Erledigt.md)). **Nötig:** Anfrage beim Amt für Mobilität der Stadt, also Schritt 3 aus [Datenpflege.md](Datenpflege.md). Der Bestand vom 2026-10-08 bleibt bis dahin.
-
-- [!] 2d.12 **Moers hat eine amtliche Quelle, die wir nicht nutzen.** Beim Nachsehen zu 2d.8a gefunden: „Behindertenparkplätze (Stadt Moers)“ auf `offenesdatenportal.de`, CSV, **Datenlizenz Deutschland Zero 2.0**, abrufbar. Im Bestand steht Moers mit 66 Standorten aus OpenStreetMap. **Braucht deine Entscheidung, weil es den Bestand ersetzt:** Wie bei München (2d.8a) ändern sich dabei alle Parkplatz-IDs, und Bewertungen und gespeicherte Parkplätze auf dem NAS zeigen danach ins Leere. Nicht importiert.
 
 ## 12. Qualität und Deployment
 

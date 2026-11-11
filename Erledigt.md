@@ -10,7 +10,7 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-10):** **250 Einträge** auf oberster Ebene –
+**Stand (nachgezählt 2026-11-11):** **250 Einträge** auf oberster Ebene –
 davon 224, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 26, die das nicht tun. *Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
@@ -2072,7 +2072,59 @@ Der Punkt bleibt in `ToDos.md` offen (`[~]`); hierher gehört, was gemessen wurd
   - **Der ArcGIS-Dienst ist abgeschaltet, nicht umgezogen.** Die im Datensatz genannte Quelle liegt auf `geoservicekkm.bochum.de` – ein **anderer Host** als der früher geprüfte. Er antwortet, und seine Antwort ist eindeutig: `Service maponline/Behindertenparkplaetze/MapServer not found`. Der Ordner `maponline` listet **63 Dienste**, keiner davon handelt von Parken.
   - **Dazu fehlt jetzt die Lizenz.** Hier stand „CC0“ bzw. „CC0-1.0“. Das Portal nennt heute „Keine Lizenz angegeben“, und das Feld in den Metadaten ist leer. Nach `Datenpflege.md` ist eine ungeklärte Lizenz allein schon ein Ausschlussgrund – selbst mit der Datei in der Hand dürfte sie so nicht in den Bestand.
   - **Ergebnis:** Bochum bleibt bei OpenStreetMap. Was offen ist, ist keine Abrufarbeit mehr, sondern eine Entscheidung (Zugang beim Portal erfragen oder dabei bleiben); so steht es jetzt in `ToDos.md`. **Nichts umgangen:** keine Anmeldung, keine verstellten Kopfzeilen.
-- **Nebenbefund: Moers hat eine amtliche Quelle, die wir nicht nutzen** (neu als 2d.12 in `ToDos.md`). Die Suche auf `opendata.ruhr` nach Behindertenparkplätzen liefert fünf Datensätze: Bochum (oben), Bottrop und Gelsenkirchen (nutzen wir schon amtlich), die Verkehrs-POIs des Regionalverbands – und **Moers**, CSV auf `offenesdatenportal.de` unter **Datenlizenz Deutschland Zero 2.0**, ohne Sperre abrufbar. Moers steht bei uns mit 66 Standorten aus OpenStreetMap. **Nicht importiert:** Eine Umstellung ersetzt den Bestand und wechselt alle Parkplatz-IDs, und daran hängen Bewertungen und gespeicherte Parkplätze (so bei München, 2d.8a) – das ist Torstens Entscheidung, keine Routine.
+- **Nebenbefund: Moers hat eine amtliche Quelle, die wir nicht nutzen** (neu als 2d.12 in `ToDos.md`). Die Suche auf `opendata.ruhr` nach Behindertenparkplätzen liefert fünf Datensätze: Bochum (oben), Bottrop und Gelsenkirchen (nutzen wir schon amtlich), die Verkehrs-POIs des Regionalverbands – und **Moers**, CSV auf `offenesdatenportal.de` unter **Datenlizenz Deutschland Zero 2.0**, ohne Sperre abrufbar. Moers steht bei uns mit 64 Standorten aus OpenStreetMap (hier stand zuerst 66, nachgezählt am 2026-11-11). **Nicht importiert:** Eine Umstellung ersetzt den Bestand und wechselt alle Parkplatz-IDs, und daran hängen Bewertungen und gespeicherte Parkplätze (so bei München, 2d.8a) – das ist Torstens Entscheidung, keine Routine.
+
+---
+
+## 2d.8a Bochum geschlossen, 2d.12 Moers nachgemessen (2026-11-11)
+
+Torsten hat am 2026-11-11 entschieden: Bochum wie empfohlen schließen, Moers
+„amtliche Quelle, wenn es geht". **Bei Moers geht es nicht** – das stand nicht
+vorher fest, sondern ist beim Nachsehen herausgekommen, und deshalb steht es
+hier.
+
+- **Bochum bleibt bei OpenStreetMap, der Punkt ist zu.** Der Befund vom
+  2026-11-10 (oben) hatte zwei Hindernisse genannt, und nur das erste wäre eine
+  Abrufsache: die Anmeldung. Das zweite nicht – **der Datensatz nennt keine
+  Lizenz.** Nach `Datenpflege.md` ist das allein ein Ausschlussgrund, also
+  würde ein Zugang nichts freigeben: Mit der Datei in der Hand dürfte sie
+  trotzdem nicht in den Bestand. **Zugang erfragen löst das falsche Problem.**
+  Wird der Stadt doch geschrieben, lautet die Frage nach der **Lizenz**, nicht
+  nach dem Zugang; dann ist es ein neuer Punkt und nicht dieser.
+- **Moers: die amtliche Quelle ist von 2019 und wäre ein Rückschritt.** Die
+  Datensatzseite ist abrufbar wie beschrieben (DL-DE Zero 2.0, Stand der
+  Metadaten 2026-10-19), aber darunter liegen **zwei CSV-Dateien aus 2019**,
+  und die Dateien selbst sagen das: `…-2019-4.csv` und `…-2019-2.csv`.
+  Gemessen, nicht geschätzt:
+
+  | | Standorte | Stellplätze |
+  | --- | --- | --- |
+  | amtlich, Straßenraum | 38 | 72 |
+  | amtlich, Stellplatzanlagen | 22 | 74 |
+  | **amtlich zusammen** | **60** | **146** |
+  | Bestand (OSM, `data/moers.json`) | 64 | 64 |
+
+  - **Die Standortzahl sinkt, und das Datum springt sieben Jahre zurück.** Der
+    Gewinn wären die Stellplatzzahlen (146 statt 64, weil OSM dort fast überall
+    „1" annimmt). Dafür alle Parkplatz-IDs zu wechseln – mit den Bewertungen
+    und gespeicherten Parkplätzen daran – lohnt bei einem Stand von 2019 nicht.
+    **„Lieber kein Import als ein falscher"** zählt auch gegen einen veralteten.
+  - **Die Koordinaten stehen in einer Form, die geraten werden müsste.** In den
+    Dateien steht `66.349.141` und `514.498.503`; gemeint ist 6,6349141 und
+    51,4498503. Der Dezimalpunkt ist nicht kodiert, sondern muss aus der
+    Kenntnis erschlossen werden, wo Moers liegt – genau der Fallstrick aus
+    `CLAUDE.md` („plausible Koordinaten 450 km daneben"). Beim Nachmessen ist
+    die erste Fassung der Umrechnung prompt um einen Faktor 10 falsch gelegen.
+  - **Dazu zwei kleine Zeichen von ungepflegten Dateien:** Die eine CSV ist
+    Windows-1252, die andere UTF-8 (in derselben Veröffentlichung), die
+    Spaltenüberschrift lautet `latidude`, und die erste Datei verteilt ihren
+    Kopf auf zwei Zeilen.
+  - **Ergebnis: nicht umgestellt, Moers bleibt bei OpenStreetMap.** Das ist
+    keine Verweigerung der Entscheidung, sondern ihr Vorbehalt („wenn es geht")
+    – die Quelle ist erreichbar, aber schlechter als der Bestand.
+  - **Nebenbefund, gleich berichtigt:** Oben stand „Moers … mit 66 Standorten
+    aus OpenStreetMap". Es sind **64** (`data/moers.json`, Stand 2026-10-08).
+    Die 66 waren aus dem Gedächtnis, nicht gezählt.
 
 ---
 
