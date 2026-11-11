@@ -248,7 +248,11 @@ export function NearestBar({
     */
     <div
       id="parkplatz-leiste"
-      className={`${PANEL} max-h-[46vh] w-full overflow-y-auto p-2 sm:ml-auto sm:w-auto sm:max-w-md sm:min-w-80`}
+      // `max-sm:order-first`: Auf dem Telefon steht die Leiste **ganz oben**
+      // (9.35, Wunsch vom 2026-11-11) – sie beantwortet die Frage, deretwegen
+      // jemand die App öffnet. Suche und Zahnrad rücken darunter; auf dem
+      // Rechner bleibt die Reihenfolge wie gehabt.
+      className={`${PANEL} max-h-[46vh] w-full overflow-y-auto p-2 max-sm:order-first sm:ml-auto sm:w-auto sm:max-w-md sm:min-w-80`}
     >
       <div className="flex items-start gap-1">
         {/*

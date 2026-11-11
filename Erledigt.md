@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-11):** **255 Einträge** auf oberster Ebene –
-davon 229, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-12):** **256 Einträge** auf oberster Ebene –
+davon 230, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 26, die das nicht tun. _Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -2267,6 +2267,19 @@ die Angabe, die sonst beim nächsten Mal wieder zusammengesucht wird.
   - **Was das die Tests gekostet hat, und warum es trotzdem so gebaut ist:** 43 Stellen in 17 Dateien klickten `getByRole("tab", …)` – im Telefonformat, in dem die Reiter jetzt hinter dem Menü liegen. Statt 43-mal dieselben zwei Zeilen zu schreiben, gibt es `e2e/ansicht.ts`: Es öffnet das Menü nur, wenn der Reiter nicht ohnehin sichtbar ist, und findet das Zahnrad über `data-testid` statt über den Namen – der heißt in jeder Sprache anders, und `sprache.spec.ts` wechselt sie. Fünf Prüfungen hingen an der Kopfzeile selbst; sie prüfen jetzt das Zahnrad oder `main[data-ansicht]`, also die Ansicht statt ihres Bedienelements.
   - **Ein Test fiel auf, der am entfernten Text hing:** `sprache.spec.ts` wartete auf „– 0 m“ in der Kopfzeile, um zu wissen, dass der Standort angekommen ist. Er liest die Entfernung jetzt in der Leiste. Das ist kein Nachteil des Umbaus, sondern der Hinweis darauf, dass die Angabe dort ohnehin steht.
   - **Geprüft:** Typecheck, Lint, 724 Unit-Tests, 142 E2E-Tests; Telefonformat und 1.280 px im Browser angesehen und nachgemessen.
+
+---
+
+## 9.35 Die Kartenansicht auf dem Telefon ohne Kopfzeile (2026-11-12)
+
+- [x] 9.35 **Kein Balken mehr über der Karte; die Vorschlagsleiste steht ganz oben** (Torsten, 2026-11-11 abends: „das große Hauptfenster ganz nach oben, das Zahnrad klein oben rechts neben das Suchfenster, den riesigen Balken oben entfernen“). Nach 9.34 trug die Kopfzeile auf dem Telefon nur noch das Zahnrad und – selten – die Standortmeldung, kostete aber weiter rund 60 Pixel. Jetzt ist in der Kartenansicht die ganze Höhe Karte.
+  - **Die Kopfzeile entfällt nur dort**, wo es eine Karte gibt, über der etwas schweben kann. In Liste, Einstellungen, Konto und Verwaltung bleibt sie – sonst gäbe es keinen Weg zurück.
+  - **Reihenfolge über der Karte:** Leiste (`max-sm:order-first`), darunter Zielsuche links und Zahnrad rechts, darunter die Standortmeldung. Auf dem Rechner bleibt alles, wie es nach 9.33 war: Suche links, Leiste rechts.
+  - **Das Zahnrad ist jetzt eine Komponente** (`AnsichtMenue`), weil es an zwei Stellen steht – in der Kopfzeile der übrigen Ansichten und schwebend über der Karte. **Im Baum steht immer nur eines davon:** Zwei gleiche Knöpfe wären für Screenreader zwei Wege zum selben Ziel und für die Tests zweideutig.
+  - **Die `h1` bleibt der Seite erhalten.** Ohne Kopfzeile fehlte sie in der Kartenansicht; sie steht dort jetzt als `sr-only` in der Karte selbst. Eine Seite ohne `h1` verliert ihre Gliederung – für Screenreader und für die Auffindbarkeit (19.12).
+  - **Die Standortmeldung schwebt mit** („wird gesucht“, „abgelehnt“, „Erneut“), in derselben Fläche wie Leiste und Suche, und nur, wenn es etwas zu melden gibt. Sie steht jetzt **nur noch einmal** im Baum: in der Listenansicht in der Kopfzeile, in der Kartenansicht über der Karte. Zwei `aria-live`-Bereiche für dieselbe Meldung wären eine Ansage zu viel.
+  - **Ein Test hing an der alten Stelle:** `smoke.spec.ts` suchte die Statuszeile als `header p[aria-live]`. Er prüft jetzt dieselbe Sache über `data-testid="standort-meldung"` – dass die Meldung bei der Karte steht und in den Einstellungen verschwindet –, unabhängig davon, in welchem Kasten sie gerade hängt.
+  - **Geprüft:** Typecheck, Lint, 724 Unit-Tests, 142 E2E-Tests; im Browser auf 375 px (Leiste bei y = 8, Zahnrad bei x = 367 von 375) und auf 1.280 px nachgemessen.
 
 ---
 

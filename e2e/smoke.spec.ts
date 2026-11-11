@@ -60,25 +60,28 @@ test.describe("wheelee", () => {
     await expect(page.getByRole("heading", { name: "Bitte vor der Fahrt lesen" })).toBeVisible();
   });
 
-  test("Kopfzeile schweigt in den Einstellungen", async ({ page }) => {
+  test("die Standortmeldung steht bei der Karte, nicht in den Einstellungen", async ({ page }) => {
     await page.goto("/");
 
     /*
-     * Geprüft wird die Statuszeile als Ganzes, nicht ein bestimmter Satz
-     * darin: Sie zeigt je nach Standortzustand Verschiedenes – die
-     * Bestandszahlen („17.864 Parkplätze in 209 Städten"), den nächsten
-     * Parkplatz oder eine Standortmeldung. Auf den Text zu prüfen hieße, den
-     * Test an den Zufall zu hängen, ob der Browser Standortzugriff gewährt.
+     * Geprüft wird die Meldung als Ganzes, nicht ein bestimmter Satz darin:
+     * Sie zeigt je nach Standortzustand Verschiedenes („wird gesucht“,
+     * „abgelehnt“, „nicht verfügbar“). Auf den Text zu prüfen hieße, den Test
+     * an den Zufall zu hängen, welchen Zustand der Browser meldet. Ohne
+     * erteilte Erlaubnis gibt es immer einen.
+     *
+     * **Seit 9.35 schwebt sie über der Karte** statt in der Kopfzeile zu
+     * stehen: Auf dem Telefon gibt es in der Kartenansicht keine mehr.
      */
-    const statuszeile = page.locator('header p[aria-live="polite"]');
-    await expect(statuszeile).toBeVisible();
+    const meldung = page.getByTestId("standort-meldung");
+    await expect(meldung).toBeVisible();
 
     await ansicht(page, "Einstellungen");
-    await expect(statuszeile).toHaveCount(0);
+    await expect(meldung).toHaveCount(0);
 
     // Zurück auf die Karte ist sie wieder da – ausgeblendet, nicht entfernt.
     await ansicht(page, "Karte");
-    await expect(statuszeile).toBeVisible();
+    await expect(meldung).toBeVisible();
   });
 
   test("Detailansicht öffnet aus der Leiste und schließt mit Escape", async ({ page, context }) => {

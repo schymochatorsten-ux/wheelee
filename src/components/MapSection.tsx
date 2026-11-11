@@ -8,6 +8,7 @@ import type { ParkingSpot, ParkingSpotWithDistance } from "@/lib/types";
 import { distanceMeters, hasCoordinates } from "@/lib/geo";
 import { detectMapsTarget, type MapsTarget } from "@/lib/navigation";
 import { truncationHint } from "@/lib/map-hint";
+import { floatingPanel } from "./ui/styles";
 import {
   effectiveMapsPreference,
   readMapsPreference,
@@ -209,6 +210,96 @@ const GEAR_PATH = (() => {
   );
 })();
 
+/**
+ * Das Zahnrad mit dem Menü aller Ansichten – **nur auf dem Telefon** (ToDo
+ * 9.34; seit 9.35 eine eigene Komponente, weil es an zwei Stellen steht: in
+ * der Kopfzeile der Listen- und Einstellungsansichten und, in der
+ * Kartenansicht, schwebend neben der Zielsuche).
+ *
+ * **Es sind dieselben Reiter, nicht nachgebaute Knöpfe:** `role=tab` in einer
+ * `tablist`, wie der Segmentschalter auf dem Rechner. Dadurch bleibt die
+ * Bedienung mit Screenreader dieselbe, und die Oberfläche hat **eine**
+ * Wahrheit darüber, welche Ansicht gilt.
+ *
+ * **Es steht immer nur eines davon im Baum** (die Kopfzeile blendet ihres in
+ * der Kartenansicht aus): Zwei gleiche Knöpfe gleichzeitig wären für die
+ * Tests zweideutig und für Screenreader zwei Wege zum selben Ziel.
+ */
+function AnsichtMenue({
+  views,
+  view,
+  onChoose,
+  className = "",
+}: {
+  views: readonly View[];
+  view: View;
+  onChoose: (next: View) => void;
+  className?: string;
+}) {
+  const t = useT();
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className={`relative shrink-0 sm:hidden ${className}`.trimEnd()}>
+      <button
+        type="button"
+        data-testid="ansicht-menue"
+        aria-haspopup="true"
+        aria-expanded={open}
+        aria-label={t("view.menu")}
+        onClick={() => setOpen((previous) => !previous)}
+        className="flex min-h-11 min-w-11 items-center justify-center rounded-xl bg-neutral-200/80 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-800"
+      >
+        <span aria-hidden="true">
+          <GearIcon />
+        </span>
+      </button>
+
+      {open && (
+        <>
+          {/* Daneben tippen schließt – wie bei jedem Menü. */}
+          <div
+            className="fixed inset-0 z-[1100]"
+            onClick={() => setOpen(false)}
+            aria-hidden="true"
+          />
+          <div
+            role="tablist"
+            aria-label={t("view.choose")}
+            className="absolute right-0 z-[1200] mt-1 w-56 overflow-hidden rounded-2xl border border-neutral-200/70 bg-white shadow-lg dark:border-neutral-800 dark:bg-neutral-900"
+          >
+            {views.map((option) => (
+              <button
+                key={option}
+                type="button"
+                role="tab"
+                aria-selected={view === option}
+                onClick={() => {
+                  onChoose(option);
+                  setOpen(false);
+                }}
+                className={`flex min-h-12 w-full items-center justify-between gap-3 px-4 text-left text-[15px] focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none ${
+                  view === option ? "font-semibold" : ""
+                }`}
+              >
+                <span>{t(VIEW_LABELS[option])}</span>
+                {/* Der Haken sagt, welche Ansicht gerade gilt – ohne ihn wäre
+                    die Fettschrift das einzige Zeichen, und die ist bei
+                    kleiner Schrift kaum zu sehen. */}
+                {view === option ? (
+                  <span aria-hidden="true" className="text-blue-700 dark:text-blue-300">
+                    ✓
+                  </span>
+                ) : null}
+              </button>
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
 function GearIcon() {
   return (
     <svg className={TAB_ICON} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -272,8 +363,6 @@ export function MapSection({ initialNearby, defaultCity, user: initialUser }: Ma
   const geo = useGeolocation();
   const [selected, setSelected] = useState<ParkingSpot | null>(null);
   const [view, setView] = useState<View>("map");
-  /** Ob das Menü hinter dem Zahnrad offen ist – nur auf dem Telefon (9.34). */
-  const [menuOpen, setMenuOpen] = useState(false);
   const [focus, setFocus] = useState<FocusTarget | null>(null);
 
   /**
@@ -598,7 +687,23 @@ export function MapSection({ initialNearby, defaultCity, user: initialUser }: Ma
         Oben etwas mehr Luft (`pt-3`), weil die Zeile auf dem iPhone direkt
         an der Statusleiste klebte und abgeschnitten wirkte.
       */}
-      <header className="shrink-0 border-b border-neutral-200 bg-white px-3 pt-3 pb-2 dark:border-neutral-800 dark:bg-neutral-900">
+      {/*
+        **In der Kartenansicht hat das Telefon keine Kopfzeile mehr** (ToDo
+        9.35, Wunsch vom 2026-11-11: „den riesigen Balken oben entfernen“).
+        Sie trug dort zuletzt nur noch das Zahnrad und – selten – die
+        Standortmeldung, kostete aber auf jedem Gerät rund 60 Pixel Karte.
+        Beides steht jetzt über der Karte: das Zahnrad neben der Zielsuche,
+        die Meldung als schmale Fläche darunter.
+
+        **Nur in der Kartenansicht**, denn dort gibt es die Karte, über der
+        etwas schweben kann. In Liste, Einstellungen, Konto und Verwaltung
+        bleibt die Kopfzeile – sonst gäbe es keinen Weg zurück.
+      */}
+      <header
+        className={`shrink-0 border-b border-neutral-200 bg-white px-3 pt-3 pb-2 dark:border-neutral-800 dark:bg-neutral-900 ${
+          view === "map" ? "max-sm:hidden" : ""
+        }`}
+      >
         {/*
           `flex-wrap`, damit bei großer Schrift die Ansichtswahl in die
           nächste Zeile rutscht, statt die Seite breiter zu machen: Bei 200 %
@@ -739,75 +844,9 @@ export function MapSection({ initialNearby, defaultCity, user: initialUser }: Ma
             ))}
           </div>
 
-          {/*
-            **Auf dem Telefon ein Zahnrad statt einer Reihe von Reitern**
-            (ToDo 9.34, Wunsch vom 2026-11-11). Vier Flächen nebeneinander
-            kosteten die halbe Kopfzeile; dahinter steht jetzt ein Menü mit
-            denselben Punkten, ausgeschrieben und 44 px hoch – auf dem Telefon
-            sogar leichter zu treffen als vier Symbole nebeneinander.
-
-            **Es sind dieselben Reiter, nicht nachgebaute Knöpfe:** `role=tab`
-            in einer `tablist`, wie auf dem Rechner. Dadurch bleibt die
-            Bedienung mit Screenreader dieselbe, und die Oberfläche hat
-            weiterhin **eine** Wahrheit darüber, welche Ansicht gilt.
-          */}
-          <div className="relative shrink-0 sm:hidden">
-            <button
-              type="button"
-              data-testid="ansicht-menue"
-              aria-haspopup="true"
-              aria-expanded={menuOpen}
-              aria-label={t("view.menu")}
-              onClick={() => setMenuOpen((previous) => !previous)}
-              className="flex min-h-11 min-w-11 items-center justify-center rounded-xl bg-neutral-200/80 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-800"
-            >
-              <span aria-hidden="true">
-                <GearIcon />
-              </span>
-            </button>
-
-            {menuOpen && (
-              <>
-                {/* Daneben tippen schließt – wie bei jedem Menü. */}
-                <div
-                  className="fixed inset-0 z-[1100]"
-                  onClick={() => setMenuOpen(false)}
-                  aria-hidden="true"
-                />
-                <div
-                  role="tablist"
-                  aria-label={t("view.choose")}
-                  className="absolute right-0 z-[1200] mt-1 w-56 overflow-hidden rounded-2xl border border-neutral-200/70 bg-white shadow-lg dark:border-neutral-800 dark:bg-neutral-900"
-                >
-                  {views.map((option) => (
-                    <button
-                      key={option}
-                      type="button"
-                      role="tab"
-                      aria-selected={view === option}
-                      onClick={() => {
-                        setView(option);
-                        setMenuOpen(false);
-                      }}
-                      className={`flex min-h-12 w-full items-center justify-between gap-3 px-4 text-left text-[15px] focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none ${
-                        view === option ? "font-semibold" : ""
-                      }`}
-                    >
-                      <span>{t(VIEW_LABELS[option])}</span>
-                      {/* Der Haken sagt, welche Ansicht gerade gilt – ohne
-                          ihn wäre die Fettschrift das einzige Zeichen, und
-                          die ist bei kleiner Schrift kaum zu sehen. */}
-                      {view === option ? (
-                        <span aria-hidden="true" className="text-blue-700 dark:text-blue-300">
-                          ✓
-                        </span>
-                      ) : null}
-                    </button>
-                  ))}
-                </div>
-              </>
-            )}
-          </div>
+          {/* Auf dem Telefon steht hier das Zahnrad – außer in der
+              Kartenansicht, wo es über der Karte schwebt (9.35). */}
+          {view !== "map" && <AnsichtMenue views={views} view={view} onChoose={setView} />}
         </div>
 
         {/*
@@ -837,7 +876,13 @@ export function MapSection({ initialNearby, defaultCity, user: initialUser }: Ma
           jemand erführe, warum. Deshalb erscheint die Zeile jetzt **nur
           dann**, wenn es etwas zu melden gibt.
         */}
-        {(view === "map" || view === "list") && (geo.status !== "ready" || geo.message) && (
+        {/*
+          **Nur noch in der Listenansicht** (9.35): In der Kartenansicht steht
+          dieselbe Meldung über der Karte, damit sie dort ohne Kopfzeile
+          auskommt. Zweimal dasselbe wäre eine Zeile zu viel – und zwei
+          `aria-live`-Bereiche für eine Meldung.
+        */}
+        {view === "list" && (geo.status !== "ready" || geo.message) && (
           <div className="mt-0.5 flex items-center gap-2">
             <p
               aria-live="polite"
@@ -874,6 +919,13 @@ export function MapSection({ initialNearby, defaultCity, user: initialUser }: Ma
       <main data-ansicht={view} className="relative min-h-0 flex-1">
         {view === "map" ? (
           <>
+            {/*
+              Die Überschrift der Seite, wenn die Kopfzeile fehlt (9.35): Auf
+              dem Telefon ist sie in der Kartenansicht ausgeblendet, und eine
+              Seite ohne `h1` verliert ihre Gliederung – für Screenreader und
+              für Suchmaschinen (19.12).
+            */}
+            <h1 className="sr-only sm:hidden">{t("app.title")}</h1>
             <ParkingMap
               spots={hint === "city-level" ? [] : mapSpots}
               clusters={clusters}
@@ -928,6 +980,18 @@ export function MapSection({ initialNearby, defaultCity, user: initialUser }: Ma
                   onChoose={chooseDestination}
                   onClear={() => setDestination(null)}
                 />
+                {/*
+                  **Das Zahnrad steht neben der Suche** (9.35), klein und
+                  rechts: Die Kartenansicht hat auf dem Telefon keine
+                  Kopfzeile mehr. `ml-auto` hält es am rechten Rand, auch wenn
+                  die Suche nur eine Pille breit ist.
+                */}
+                <AnsichtMenue
+                  views={views}
+                  view={view}
+                  onChoose={setView}
+                  className="pointer-events-auto ml-auto"
+                />
                 <NearestBar
                   candidates={candidates}
                   mapsTarget={mapsTarget}
@@ -942,6 +1006,43 @@ export function MapSection({ initialNearby, defaultCity, user: initialUser }: Ma
                   radius={radius}
                   onRadiusChange={setRadius}
                 />
+
+                {/*
+                  **Die Standortmeldung schwebt jetzt über der Karte** (9.35),
+                  weil es hier keine Kopfzeile mehr gibt, die sie tragen
+                  könnte. Sie erscheint nur, wenn es etwas zu melden gibt –
+                  sonst stünde die Karte auf der Stadtmitte, ohne dass jemand
+                  erführe, warum. `order-last` hält sie unter der Suchzeile,
+                  auch wenn die Leiste darüber nach oben rückt.
+                */}
+                {(geo.status !== "ready" || geo.message) && (
+                  <div
+                    data-testid="standort-meldung"
+                    // Auf dem Rechner begrenzt: Über 1.280 px gezogen wäre aus
+                    // der Meldung ein Balken (derselbe Grund wie bei 9.16).
+                    className={`${floatingPanel} order-last flex w-full items-center gap-2 px-3 py-1.5 sm:max-w-md`}
+                  >
+                    <p
+                      aria-live="polite"
+                      className="min-w-0 flex-1 truncate text-xs text-neutral-700 dark:text-neutral-300"
+                    >
+                      {geo.status === "locating" && t("map.locating")}
+                      {geo.message}
+                    </p>
+                    {(geo.status === "denied" ||
+                      geo.status === "timeout" ||
+                      geo.status === "unavailable") && (
+                      <button
+                        type="button"
+                        onClick={geo.request}
+                        aria-label={t("map.retryLocation")}
+                        className="min-h-9 shrink-0 rounded-full bg-neutral-200/80 px-3 text-xs font-medium focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-800"
+                      >
+                        {t("search.retry")}
+                      </button>
+                    )}
+                  </div>
+                )}
               </div>
             )}
             {/*
