@@ -2184,10 +2184,15 @@ die Angabe, die sonst beim nächsten Mal wieder zusammengesucht wird.
 - **`robots.txt` nennt die Sitemap bereits** (`Sitemap: https://wheelee.de/sitemap.xml`,
   dazu `Disallow: /api/`). Das Einreichen ersetzt das nicht, es beschleunigt
   nur – gegengeprüft, damit nicht zwei Stellen etwas Verschiedenes sagen.
-- **„Erfolgreich eingereicht" heißt nicht „abgerufen".** Die Spalten „Zuletzt
-  gelesen" und „Erkannte Seiten" standen danach auf 0 bzw. leer; das ist der
-  Normalfall und kein Fehler. Wer zu früh nachsieht und neu einreicht, erzeugt
-  nur einen zweiten Eintrag.
+- **Noch am selben Tag gelesen: „Erfolgreich", 3.793 erkannte Seiten** – genau
+  die Zahl der Adressen in der Datei, also ohne Ausfall beim Abruf. **Hier
+  stand zuerst das Gegenteil** („zuletzt gelesen: leer, das ist normal"); das
+  war aus Erfahrung geschrieben, nicht abgelesen, und die Ansicht zeigte eine
+  Minute später etwas anderes. Wieder derselbe Fehler: eine plausible Aussage
+  ohne Blick auf den Fall.
+- **„Erkannt" ist nicht „aufgenommen".** Die 3.793 sagen nur, dass Google die
+  Liste lesen konnte. Wie viele Seiten im Index landen, steht unter „Seiten“
+  und wächst über Wochen – deshalb bleibt der Punkt offen.
 
 ---
 
