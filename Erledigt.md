@@ -2128,6 +2128,36 @@ hier.
 
 ---
 
+## 2d.8a Heidelberg: Anfrage an die Stadt (2026-11-11)
+
+Der Punkt bleibt in `ToDos.md` offen (`[~]`), weil eine Antwort aussteht.
+Hierher gehört, **was gefragt wurde und an wen** – sonst wird in einigen Wochen
+neu formuliert statt nachgefasst.
+
+- **Empfänger: `mobilitaet@heidelberg.de`** (Amt für Mobilität, Bergheimer
+  Straße 111, 69115 Heidelberg). **Die Adresse ist auf der Seite der Stadt
+  gelesen, nicht aus einer Suchzusammenfassung übernommen** – im Impressum des
+  Anliegen-Melders (`anliegen.heidelberg.de/page/impressum`). Das ist die Lehre
+  aus 2a.5 und aus der falschen Fundmeldung zu Baden-Württemberg vom
+  2026-11-10, beide in dieser Datei.
+- **Gefragt wurde zweierlei, in dieser Reihenfolge:** erstens nach einem neuen
+  Bezugsweg (Datei, WFS oder Geoportal), zweitens – nur falls der Datensatz
+  nicht mehr veröffentlicht wird – nach der einmaligen Herausgabe der Liste
+  samt **Lizenz- oder Quellenangabe**. Die Lizenzfrage steht ausdrücklich
+  darin, weil sie bei Bochum (oben) der eigentliche Ausschlussgrund war: Daten
+  ohne geklärte Lizenz nützen uns auch dann nichts, wenn wir sie bekommen.
+- **Ausdrücklich nur Lage und Stellplatzzahl verlangt, keine
+  personenbezogenen Angaben.** Personenbezogene Plätze stehen schon bei München
+  auf der Ausnahmeliste; eine Anfrage, die mehr verlangt als nötig, wird
+  zu Recht abgelehnt.
+- **Mitgeteilt, was wir heute zeigen:** Stand vom 2026-10-08 mit Datum und der
+  Stadt als Quelle. Wer gefragt wird, soll sehen können, was mit der Antwort
+  geschieht.
+- **Verschickt hat Torsten** (Anfrage nach außen unter eigenem Namen, wie bei
+  19.5 die OSM-Notizen). Von hier aus ging nichts hinaus.
+
+---
+
 ## Erwägungen zu 13, 15 und 16
 
 > **15 und 16 sind am 2026-10-20 freigegeben** und stehen seitdem als offene

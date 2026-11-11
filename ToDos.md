@@ -72,7 +72,7 @@ maschinelle Mehrfachprüfung.
 ## 2. Datenquellen und Import
 
 - [~] 2d.8a **Städte mit ungenutzter amtlicher Quelle.** München, Bielefeld, Köln und – seit dem 2026-11-11 – Bochum sind abgeschlossen; Befunde in [Erledigt.md](Erledigt.md). Offen ist einer:
-  - [!] **Heidelberg.** Die CKAN-Quelle ist samt Host weg, GovData verweist weiter auf sie, einen anderen Bezugsweg gibt es nicht (gesucht am 2026-11-10, Einzelheiten in [Erledigt.md](Erledigt.md)). **Nötig:** Anfrage beim Amt für Mobilität der Stadt, also Schritt 3 aus [Datenpflege.md](Datenpflege.md). Der Bestand vom 2026-10-08 bleibt bis dahin.
+  - [~] **Heidelberg – Anfrage ist raus, Antwort steht aus.** Am 2026-11-11 an `mobilitaet@heidelberg.de` geschickt (Wortlaut und Befund in [Erledigt.md](Erledigt.md)): neuer Bezugsweg, sonst die Liste einmalig samt Lizenzhinweis. **Hier zu tun ist nichts, bis eine Antwort kommt** – danach entweder Import oder, bei Absage, Vermerk und Schluss. Der Bestand vom 2026-10-08 (214 Standorte) bleibt bis dahin. **Ohne Antwort nach drei bis vier Wochen einmal nachfassen.**
 
 ## 12. Qualität und Deployment
 
