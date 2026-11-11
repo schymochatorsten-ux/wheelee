@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { ansicht } from "./ansicht";
 
 /** Städteliste nachgeladen statt im HTML (ToDo 19.9). */
 
@@ -32,7 +33,7 @@ test.describe("Städteliste", () => {
    */
   test("die Vorschläge kommen aus den nachgeladenen Städten", async ({ page }) => {
     await page.goto("/");
-    await page.getByRole("tab", { name: "Einstellungen" }).click();
+    await ansicht(page, "Einstellungen");
 
     const feld = page.getByRole("combobox", { name: "Stadt" });
     // Die Seite trägt nur die Standardstadt; der Rest kommt von /api/cities.
@@ -46,7 +47,7 @@ test.describe("Städteliste", () => {
     page,
   }) => {
     await page.goto("/");
-    await page.getByRole("tab", { name: "Einstellungen" }).click();
+    await ansicht(page, "Einstellungen");
 
     const feld = page.getByRole("combobox", { name: "Stadt" });
     await feld.fill("Mo");

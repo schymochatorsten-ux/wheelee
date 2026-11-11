@@ -239,14 +239,16 @@ export function NearestBar({
 
       Schmal ist `w-full` richtig: Die Leiste trägt zwei Knopfreihen, daneben
       passt nichts mehr, und die Zielsuche rutscht durch den Umbruch nach oben
-      (9.30). Ab `sm` ist Platz für beides nebeneinander – `flex-1` nimmt den
-      Rest der Zeile neben der Suche, `max-w-md` hält die Leiste davon ab, sich
-      über einen breiten Bildschirm zu ziehen. Öffnet jemand die Suche, nimmt
-      **sie** die volle Zeile und die Leiste rückt von selbst darunter.
+      (9.30). Ab `sm` ist Platz für beides nebeneinander – `max-w-md` hält die
+      Leiste davon ab, sich über einen breiten Bildschirm zu ziehen, und
+      `ml-auto` setzt sie **an den rechten Rand** (9.34, Wunsch vom
+      2026-11-11). Dort steht sie neben der Suche und nimmt der Karte in der
+      Mitte nichts weg. Öffnet jemand die Suche, nimmt **sie** die volle Zeile
+      und die Leiste rückt von selbst darunter.
     */
     <div
       id="parkplatz-leiste"
-      className={`${PANEL} max-h-[46vh] w-full overflow-y-auto p-2 sm:w-auto sm:max-w-md sm:flex-1`}
+      className={`${PANEL} max-h-[46vh] w-full overflow-y-auto p-2 sm:ml-auto sm:w-auto sm:max-w-md sm:min-w-80`}
     >
       <div className="flex items-start gap-1">
         {/*

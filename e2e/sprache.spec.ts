@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { ansicht } from "./ansicht";
 
 /**
  * Sprachwahl (ToDo 15.5, 15.3).
@@ -27,7 +28,7 @@ test("ein unbekannter Cookie-Wert fällt auf die Browsersprache zurück", async 
 
 test("die Einstellungen bieten die Sprachwahl", async ({ page }) => {
   await page.goto("/");
-  await page.getByRole("tab", { name: "Einstellungen" }).click();
+  await ansicht(page, "Einstellungen");
   await expect(page.getByRole("heading", { name: "Sprache", level: 2 })).toBeVisible();
   await expect(page.locator("#sprache-auswahl")).toHaveValue("de");
 });
@@ -41,7 +42,7 @@ test.describe("Englisch", () => {
     const page = await context.newPage();
     await page.goto("/");
     await expect(page.locator("html")).toHaveAttribute("lang", "en");
-    await page.getByRole("tab", { name: "Settings" }).click();
+    await ansicht(page, "Settings");
     await expect(page.getByRole("heading", { name: "Language", level: 2 })).toBeVisible();
     await expect(page.locator("#sprache-auswahl")).toHaveValue("en");
 
@@ -57,7 +58,7 @@ test.describe("Englisch", () => {
     const context = await browser.newContext({ locale: "en-GB", baseURL });
     const page = await context.newPage();
     await page.goto("/");
-    await page.getByRole("tab", { name: "Settings" }).click();
+    await ansicht(page, "Settings");
     await expect(
       page.getByRole("heading", { name: "Please read before you set off" }),
     ).toBeVisible();
@@ -73,7 +74,7 @@ test.describe("Englisch", () => {
     const context = await browser.newContext({ locale: "en-GB", baseURL });
     const page = await context.newPage();
     await page.goto("/");
-    await page.getByRole("tab", { name: "Settings" }).click();
+    await ansicht(page, "Settings");
     await page.locator("#sprache-auswahl").selectOption("de");
 
     await expect(page.locator("html")).toHaveAttribute("lang", "de");
@@ -125,7 +126,7 @@ test.describe("Spanisch", () => {
     const page = await context.newPage();
     await page.goto("/");
     await expect(page.locator("html")).toHaveAttribute("lang", "es");
-    await page.getByRole("tab", { name: "Ajustes" }).click();
+    await ansicht(page, "Ajustes");
     await expect(page.getByRole("heading", { name: "Idioma", level: 2 })).toBeVisible();
     await expect(page.locator("#sprache-auswahl")).toHaveValue("es");
     await expect(page.getByRole("heading", { name: "Léelo antes de salir" })).toBeVisible();
@@ -148,7 +149,7 @@ test.describe("Französisch", () => {
     const page = await context.newPage();
     await page.goto("/");
     await expect(page.locator("html")).toHaveAttribute("lang", "fr");
-    await page.getByRole("tab", { name: "Paramètres" }).click();
+    await ansicht(page, "Paramètres");
     await expect(page.getByRole("heading", { name: "Langue", level: 2 })).toBeVisible();
     await expect(page.locator("#sprache-auswahl")).toHaveValue("fr");
     await expect(page.getByRole("heading", { name: "À lire avant de partir" })).toBeVisible();
@@ -170,7 +171,7 @@ test.describe("Italienisch", () => {
     const page = await context.newPage();
     await page.goto("/");
     await expect(page.locator("html")).toHaveAttribute("lang", "it");
-    await page.getByRole("tab", { name: "Impostazioni" }).click();
+    await ansicht(page, "Impostazioni");
     await expect(page.getByRole("heading", { name: "Lingua", level: 2 })).toBeVisible();
     await expect(page.locator("#sprache-auswahl")).toHaveValue("it");
     await expect(page.getByRole("heading", { name: "Da leggere prima di partire" })).toBeVisible();
@@ -192,7 +193,7 @@ test.describe("Polnisch", () => {
     const page = await context.newPage();
     await page.goto("/");
     await expect(page.locator("html")).toHaveAttribute("lang", "pl");
-    await page.getByRole("tab", { name: "Ustawienia" }).click();
+    await ansicht(page, "Ustawienia");
     await expect(page.getByRole("heading", { name: "Język", level: 2 })).toBeVisible();
     await expect(page.locator("#sprache-auswahl")).toHaveValue("pl");
     await expect(page.getByRole("heading", { name: "Przeczytaj przed wyjazdem" })).toBeVisible();
@@ -214,7 +215,7 @@ test.describe("Niederländisch", () => {
     const page = await context.newPage();
     await page.goto("/");
     await expect(page.locator("html")).toHaveAttribute("lang", "nl");
-    await page.getByRole("tab", { name: "Instellingen" }).click();
+    await ansicht(page, "Instellingen");
     await expect(page.getByRole("heading", { name: "Taal", level: 2 })).toBeVisible();
     await expect(page.locator("#sprache-auswahl")).toHaveValue("nl");
     await expect(page.getByRole("heading", { name: "Lezen voor je vertrekt" })).toBeVisible();
@@ -236,7 +237,7 @@ test.describe("Portugiesisch", () => {
     const page = await context.newPage();
     await page.goto("/");
     await expect(page.locator("html")).toHaveAttribute("lang", "pt");
-    await page.getByRole("tab", { name: "Definições" }).click();
+    await ansicht(page, "Definições");
     await expect(page.getByRole("heading", { name: "Idioma", level: 2 })).toBeVisible();
     await expect(page.locator("#sprache-auswahl")).toHaveValue("pt");
     await expect(page.getByRole("heading", { name: "Ler antes de partir" })).toBeVisible();
@@ -258,7 +259,7 @@ test.describe("Russisch", () => {
     const page = await context.newPage();
     await page.goto("/");
     await expect(page.locator("html")).toHaveAttribute("lang", "ru");
-    await page.getByRole("tab", { name: "Настройки" }).click();
+    await ansicht(page, "Настройки");
     await expect(page.getByRole("heading", { name: "Язык", level: 2 })).toBeVisible();
     await expect(page.locator("#sprache-auswahl")).toHaveValue("ru");
     await expect(page.getByRole("heading", { name: "Прочтите перед поездкой" })).toBeVisible();
@@ -294,9 +295,20 @@ test.describe("Zeitangaben und Entfernungen (ToDo 15.3, 15.4)", () => {
     });
     const page = await context.newPage();
     await page.goto("/");
-    // Erst wenn der Standort da ist: Davor zeigt die Leiste den Parkplatz nahe der
-    // Stadtmitte von Hamburg, und der Klick träfe den falschen.
-    await expect(page.getByText(/– 0 m\b/u).first()).toBeVisible();
+    /*
+     * Erst wenn der Standort da ist: Davor zeigt die Leiste den Parkplatz nahe
+     * der Stadtmitte von Hamburg, und der Klick träfe den falschen.
+     *
+     * **Abgelesen wird das seit 9.34 in der Leiste selbst**: Die Zeile über
+     * der Karte („Nächster Parkplatz: … – 0 m“) gibt es nicht mehr – sie
+     * stand doppelt zur Leiste darunter.
+     */
+    await expect(
+      page
+        .locator("#parkplatz-leiste")
+        .getByText(/\b0 m\b/u)
+        .first(),
+    ).toBeVisible();
     await page.getByRole("button", { name: detailsName, exact: true }).first().click();
     return { page, context };
   };

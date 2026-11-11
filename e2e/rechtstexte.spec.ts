@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { ansicht } from "./ansicht";
 
 /**
  * Impressum und Datenschutzerklärung (ToDo 10.2).
@@ -36,7 +37,7 @@ test.describe("Rechtstexte", () => {
   test("sind aus den Einstellungen erreichbar", async ({ page }) => {
     await page.goto("/");
     await devLeisteDurchklickbarMachen(page);
-    await page.getByRole("tab", { name: "Einstellungen" }).click();
+    await ansicht(page, "Einstellungen");
 
     // Die Gruppe heißt seit dem 2026-11-11 „Mehr“ (sie führt nicht nur
     // Pflichttexte, sondern auch Infoseite, Städte, Quellen und Abdeckung).

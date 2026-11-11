@@ -1,5 +1,6 @@
 import { expect, test } from "@playwright/test";
 import { herkunft } from "./herkunft";
+import { ansicht } from "./ansicht";
 
 /**
  * Eigene Bewertungen einsehen und zurückziehen (ToDo 11.4).
@@ -49,7 +50,7 @@ test.describe("Meine Bewertungen", () => {
     await page.goto("/");
     await page.addStyleTag({ content: "nextjs-portal { pointer-events: none; }" });
     // Konto seit 9.27 hinter dem Benutzersymbol oben rechts.
-    await page.getByRole("tab", { name: "Konto" }).click();
+    await ansicht(page, "Konto");
     await page.getByRole("radio", { name: "Anmelden" }).click();
     await page.getByLabel("E-Mail-Adresse").fill(KONTO.email);
     await page.getByLabel("Passwort").fill(KONTO.password);
@@ -73,12 +74,14 @@ test.describe("Meine Bewertungen", () => {
 
     // Auf der Karte zeigen: Wechsel auf den Kartenreiter mit Detailansicht.
     await liste.getByRole("button", { name: /auf der Karte zeigen/u }).click();
-    await expect(page.getByRole("tab", { name: "Karte" })).toHaveAttribute("aria-selected", "true");
+    // Am `main` und nicht am Reiter: Der liegt auf dem Telefon seit 9.34
+    // hinter dem Menü, und geprüft werden soll die Ansicht, nicht das Menü.
+    await expect(page.locator("main")).toHaveAttribute("data-ansicht", "map");
     await expect(page.getByRole("dialog")).toBeVisible();
 
     // Zurückziehen.
     await page.getByRole("button", { name: "Details schließen" }).click();
-    await page.getByRole("tab", { name: "Konto" }).click();
+    await ansicht(page, "Konto");
     await page.getByRole("button", { name: "Meine Bewertungen", exact: true }).click();
     await page.getByRole("button", { name: /Stimme zu .* zurückziehen/u }).click();
     await expect(page.getByText("Du hast noch keinen Parkplatz bewertet.")).toBeVisible();

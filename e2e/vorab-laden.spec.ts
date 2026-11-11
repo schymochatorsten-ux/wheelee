@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { ansicht } from "./ansicht";
 
 /**
  * Parkplatzdaten einer Stadt vorab laden (ToDo 16.1).
@@ -9,7 +10,7 @@ import { expect, test } from "@playwright/test";
  */
 async function openOfflineSection(page: import("@playwright/test").Page) {
   await page.goto("/");
-  await page.getByRole("tab", { name: "Einstellungen" }).click();
+  await ansicht(page, "Einstellungen");
   await expect(page.getByRole("heading", { name: "Ohne Netz" })).toBeVisible();
 }
 
@@ -29,7 +30,7 @@ test("Stadt vorab laden, Größe und Alter sehen, wieder löschen", async ({ pag
   // Aus einem früheren Lauf könnte noch etwas liegen.
   await page.evaluate(() => caches.delete("wheelee-city"));
   await page.reload();
-  await page.getByRole("tab", { name: "Einstellungen" }).click();
+  await ansicht(page, "Einstellungen");
   await expect(page.getByText("Noch keine Stadt auf diesem Gerät gespeichert.")).toBeVisible();
 
   await stadtLaden(page, "Köln", "koeln");

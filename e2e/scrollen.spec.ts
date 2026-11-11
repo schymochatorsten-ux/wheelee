@@ -1,5 +1,6 @@
 import { expect, test } from "@playwright/test";
 import { herkunft } from "./herkunft";
+import { ansicht } from "./ansicht";
 
 /**
  * Es gibt genau **einen** Scrollbalken, und man scrollt nicht ins Leere
@@ -34,7 +35,7 @@ test.describe("Kein zweiter Scrollbalken", () => {
     expect(angelegt.status()).toBe(200);
 
     await page.goto("/");
-    await page.getByRole("tab", { name: "Einstellungen" }).click();
+    await ansicht(page, "Einstellungen");
     await expect(page.getByRole("heading", { name: "Darstellung" })).toBeVisible();
     await pruefen(page);
 
@@ -46,7 +47,7 @@ test.describe("Kein zweiter Scrollbalken", () => {
      * ab sofort die Stelle, an der der Fehler gerade **nicht** mehr sein
      * kann.
      */
-    await page.getByRole("tab", { name: "Konto" }).click();
+    await ansicht(page, "Konto");
     await expect(page.getByRole("heading", { name: "Konto", exact: true })).toBeVisible();
     await pruefen(page);
   });

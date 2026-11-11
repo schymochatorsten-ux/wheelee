@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { ansicht } from "./ansicht";
 
 /**
  * Offline-Fähigkeit (ToDos 12.8, 12.9).
@@ -27,9 +28,9 @@ test.describe("ohne Netz", () => {
     // liegen sie im Speicher des Service Workers. Vorher ging das über die
     // Listenansicht; deren Reiter ist seit 2026-10-10 ausgeblendet.
     await expect(page.locator(".leaflet-marker-icon").first()).toBeVisible();
-    await page.getByRole("tab", { name: "Einstellungen" }).click();
+    await ansicht(page, "Einstellungen");
     await expect(page.getByRole("heading", { name: "Bitte vor der Fahrt lesen" })).toBeVisible();
-    await page.getByRole("tab", { name: "Karte" }).click();
+    await ansicht(page, "Karte");
 
     await context.setOffline(true);
     await page.reload();

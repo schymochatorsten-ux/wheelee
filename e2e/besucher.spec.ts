@@ -2,6 +2,7 @@ import { expect, test } from "@playwright/test";
 import { DatabaseSync } from "node:sqlite";
 import path from "node:path";
 import { herkunft } from "./herkunft";
+import { ansicht } from "./ansicht";
 
 /**
  * Besucherzählung und Auswertung in der Verwaltung (ToDo 20.1).
@@ -97,7 +98,7 @@ test("ein Administrator sieht die Zahlen in der Verwaltung", async ({
   const context = await browser.newContext({ baseURL, storageState: await api.storageState() });
   const page = await context.newPage();
   await page.goto("/");
-  await page.getByRole("tab", { name: "Rückmeldungen" }).click();
+  await ansicht(page, "Rückmeldungen");
   await expect(page.getByRole("heading", { name: "Besucher", level: 2 })).toBeVisible();
   await expect(page.getByText("Gezählt werden nur Menschen")).toBeVisible();
   await context.close();

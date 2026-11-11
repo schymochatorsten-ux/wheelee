@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-11):** **254 Einträge** auf oberster Ebene –
-davon 228, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-11):** **255 Einträge** auf oberster Ebene –
+davon 229, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 26, die das nicht tun. _Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -2254,6 +2254,19 @@ die Angabe, die sonst beim nächsten Mal wieder zusammengesucht wird.
   - **Der Scrollbalken stand mitten im Bild.** Die Reiter „Rückmeldungen“ und „Konto“ hatten `mx-auto max-w-2xl` **am scrollenden Kasten**; sein Balken sitzt dann an der Kante der Spalte, auf einem breiten Bildschirm also mittig. Jetzt scrollt die ganze Fläche und begrenzt ist der Inhalt darin – so, wie es der Reiter „Einstellungen“ schon hatte. **Die Regel dahinter:** Was scrollt, ist die Fläche; was lesbar bleiben soll, ist der Inhalt. Zwei Angaben an einem Element, und eine davon wirkt an der falschen Stelle.
   - **Nachgemessen statt angesehen:** Der scrollende Kasten ist jetzt 1.280 px breit und endet bei 1.280 – vorher bei 768. Für die Verwaltung eigens ein Prüfkonto angelegt, nachgesehen und wieder gelöscht; mit angemeldetem Konto sieht man den Reiter sonst gar nicht.
   - **Geprüft:** Typecheck, Lint, 724 Unit-Tests, 142 E2E-Tests; beide Ansichten auf 1.280 px und das Telefonformat im Browser angesehen.
+
+---
+
+## 9.34 Platz sparen auf dem Telefon (2026-11-11)
+
+- [x] 9.34 **Kopfzeile auf dem Telefon auf ein Zahnrad eingedampft; Vorschlagsleiste rechts** (Torsten, 2026-11-11: „in der mobilen Version etwas Platz sparen“, mit vier Vorgaben). Zusammen sind oben auf dem Telefon rund **80 Pixel** frei geworden, die der Karte gehören (9.15).
+  - **Die Überschrift ist verborgen, nicht gelöscht.** Sie stand über jeder Ansicht und sagte, was man ohnehin sieht. Entfernen hieße aber, der Seite ihre `h1` zu nehmen – Screenreader springen danach, und 19.12 hängt daran. `sr-only` ab Telefonbreite hält beides.
+  - **Ein Zahnrad statt vier Reitern.** Dahinter liegt ein Menü mit denselben Punkten, ausgeschrieben und 44 px hoch – leichter zu treffen als vier Symbole nebeneinander. **Es sind dieselben Reiter** (`role=tab` in einer `tablist`), nicht nachgebaute Knöpfe: Die Oberfläche behält eine Wahrheit darüber, welche Ansicht gilt, und die Bedienung mit Screenreader ändert sich nicht. Auf dem Rechner bleibt der Segmentschalter.
+  - **„Nächster Parkplatz“ steht nicht mehr in der Kopfzeile.** Er stand zweimal auf demselben Bildschirm: einmal als abgeschnittene Textzeile, einmal – mit Adresse, Entfernung und Navigationsknopf – in der Leiste darunter. Geblieben ist die **Standortmeldung** („wird gesucht“, „abgelehnt“, „Erneut“), und die Zeile erscheint nur noch, wenn es etwas zu melden gibt: Ohne sie stünde die Karte auf der Stadtmitte, ohne dass jemand erführe, warum. Die beiden Schlüssel `map.nearestSpot` und `map.noneNearby` sind in allen neun Sprachen entfallen.
+  - **Auf dem Rechner steht die Leiste ganz rechts** (`sm:ml-auto`, gemessen: rechte Kante bei 1.272 von 1.280 px). Zusammen mit 9.33 heißt das: Suche links, Vorschlag rechts, die Karte dazwischen frei.
+  - **Was das die Tests gekostet hat, und warum es trotzdem so gebaut ist:** 43 Stellen in 17 Dateien klickten `getByRole("tab", …)` – im Telefonformat, in dem die Reiter jetzt hinter dem Menü liegen. Statt 43-mal dieselben zwei Zeilen zu schreiben, gibt es `e2e/ansicht.ts`: Es öffnet das Menü nur, wenn der Reiter nicht ohnehin sichtbar ist, und findet das Zahnrad über `data-testid` statt über den Namen – der heißt in jeder Sprache anders, und `sprache.spec.ts` wechselt sie. Fünf Prüfungen hingen an der Kopfzeile selbst; sie prüfen jetzt das Zahnrad oder `main[data-ansicht]`, also die Ansicht statt ihres Bedienelements.
+  - **Ein Test fiel auf, der am entfernten Text hing:** `sprache.spec.ts` wartete auf „– 0 m“ in der Kopfzeile, um zu wissen, dass der Standort angekommen ist. Er liest die Entfernung jetzt in der Leiste. Das ist kein Nachteil des Umbaus, sondern der Hinweis darauf, dass die Angabe dort ohnehin steht.
+  - **Geprüft:** Typecheck, Lint, 724 Unit-Tests, 142 E2E-Tests; Telefonformat und 1.280 px im Browser angesehen und nachgemessen.
 
 ---
 

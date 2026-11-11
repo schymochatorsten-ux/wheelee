@@ -1,5 +1,6 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test, type Page } from "@playwright/test";
+import { ansicht } from "./ansicht";
 
 /**
  * Automatische Zugänglichkeitsprüfung (ToDo 19.1).
@@ -36,13 +37,13 @@ for (const modus of ["light", "dark"] as const) {
 
     test("Startseite mit Karte", async ({ page }) => {
       await page.goto("/");
-      await expect(page.getByRole("tab", { name: "Einstellungen" })).toBeVisible();
+      await expect(page.getByTestId("ansicht-menue")).toBeVisible();
       await pruefen(page);
     });
 
     test("Einstellungen", async ({ page }) => {
       await page.goto("/");
-      await page.getByRole("tab", { name: "Einstellungen" }).click();
+      await ansicht(page, "Einstellungen");
       await expect(page.getByRole("heading", { name: "Sprache", level: 2 })).toBeVisible();
       await pruefen(page);
     });
@@ -52,7 +53,7 @@ for (const modus of ["light", "dark"] as const) {
     // Stelle, an der eine fehlende Beschriftung am teuersten wäre.
     test("Konto", async ({ page }) => {
       await page.goto("/");
-      await page.getByRole("tab", { name: "Konto" }).click();
+      await ansicht(page, "Konto");
       await expect(page.getByRole("heading", { name: "Konto", exact: true })).toBeVisible();
       await pruefen(page);
     });

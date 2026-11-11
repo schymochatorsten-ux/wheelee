@@ -1,5 +1,6 @@
 import { expect, test } from "@playwright/test";
 import { herkunft } from "./herkunft";
+import { ansicht } from "./ansicht";
 
 /**
  * Bewertungen (ToDos 8.1–8.7, Regel festgelegt 2026-10-19).
@@ -75,12 +76,12 @@ const KONTO = {
 async function anmelden(page: import("@playwright/test").Page) {
   // Seit 9.27 liegt das Konto hinter dem Benutzersymbol oben rechts und
   // nicht mehr unten in den Einstellungen.
-  await page.getByRole("tab", { name: "Konto" }).click();
+  await ansicht(page, "Konto");
   await page.getByRole("radio", { name: "Anmelden" }).click();
   await page.getByLabel("E-Mail-Adresse").fill(KONTO.email);
   await page.getByLabel("Passwort").fill(KONTO.password);
   await page.getByRole("button", { name: "Anmelden" }).click();
-  await page.getByRole("tab", { name: "Karte" }).click();
+  await ansicht(page, "Karte");
 }
 
 test.describe("Bewertungen", () => {

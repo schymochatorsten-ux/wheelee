@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { ansicht } from "./ansicht";
 
 /**
  * Infoseite (ToDo 19.11): sagt, wofür wheelee da ist, und bittet um
@@ -12,7 +13,7 @@ test.describe("Infoseite", () => {
   }) => {
     await page.goto("/");
     await page.addStyleTag({ content: "nextjs-portal { pointer-events: none; }" });
-    await page.getByRole("tab", { name: "Einstellungen" }).click();
+    await ansicht(page, "Einstellungen");
     await page.getByRole("link", { name: "Über wheelee" }).click();
 
     await expect(page).toHaveURL(/\/info$/u);

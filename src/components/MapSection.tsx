@@ -3,9 +3,9 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import { type MessageKey } from "@/i18n";
-import { useLocale, useT } from "@/i18n/context";
+import { useT } from "@/i18n/context";
 import type { ParkingSpot, ParkingSpotWithDistance } from "@/lib/types";
-import { distanceMeters, formatDistance, hasCoordinates } from "@/lib/geo";
+import { distanceMeters, hasCoordinates } from "@/lib/geo";
 import { detectMapsTarget, type MapsTarget } from "@/lib/navigation";
 import { truncationHint } from "@/lib/map-hint";
 import {
@@ -268,11 +268,12 @@ function UserIcon({ filled }: { filled: boolean }) {
 export function MapSection({ initialNearby, defaultCity, user: initialUser }: MapSectionProps) {
   const t = useT();
   const cities = useCities(defaultCity);
-  const locale = useLocale();
   const center = defaultCity.center;
   const geo = useGeolocation();
   const [selected, setSelected] = useState<ParkingSpot | null>(null);
   const [view, setView] = useState<View>("map");
+  /** Ob das Menü hinter dem Zahnrad offen ist – nur auf dem Telefon (9.34). */
+  const [menuOpen, setMenuOpen] = useState(false);
   const [focus, setFocus] = useState<FocusTarget | null>(null);
 
   /**
@@ -606,7 +607,13 @@ export function MapSection({ initialNearby, defaultCity, user: initialUser }: Ma
           (ToDo 9.8). `min-w-0` erlaubt der Überschrift zu schrumpfen – ohne
           das gewinnt sie den Platzstreit und schiebt die Reiter hinaus.
         */}
-        <div className="flex flex-wrap items-center justify-between gap-2">
+        {/*
+          `max-sm:justify-end`: Auf dem Telefon ist die Überschrift nur noch
+          für Screenreader da (9.34) und nimmt keinen Platz ein – ohne diese
+          Zeile rutschte das Zahnrad damit nach links. Es gehört nach rechts,
+          wo der Daumen es trifft und wo es vorher stand.
+        */}
+        <div className="flex flex-wrap items-center justify-between gap-2 max-sm:justify-end">
           {/* `hyphens-auto` greift, weil <html lang="de"> gesetzt ist:
               „Behindertenparkplätze" passt bei großer Schrift sonst in keine
               Telefonzeile und würde abgeschnitten. */}
@@ -631,7 +638,19 @@ export function MapSection({ initialNearby, defaultCity, user: initialUser }: Ma
             Eine Volltonfarbe ist hier nicht Geschmack, sondern Lesbarkeit:
             Die Zielgruppe liest das auf einem Telefon, oft im Auto.
           */}
-          <h1 className="min-w-0 text-base font-bold break-words hyphens-auto text-blue-800 dark:text-blue-200">
+          {/*
+            **Auf dem Telefon nur noch für Screenreader** (ToDo 9.34, Wunsch
+            vom 2026-11-11: „Überschrift Behindertenparkplätze entfernen“, um
+            Platz zu sparen). Sie stand über jeder Ansicht und sagte dort, was
+            man ohnehin sieht; auf dem Telefon kostete sie eine Zeile, die der
+            Karte gehört (9.15).
+
+            **Gelöscht wird sie trotzdem nicht, sondern nur verborgen:** Eine
+            Seite ohne `h1` verliert ihre Gliederung – für Screenreader, die
+            danach springen, und für Suchmaschinen (19.12). `sr-only` hält
+            beides, ohne einen Pixel zu kosten.
+          */}
+          <h1 className="min-w-0 text-base font-bold break-words hyphens-auto text-blue-800 max-sm:sr-only dark:text-blue-200">
             {t("app.title")}
           </h1>
           {/*
@@ -645,7 +664,7 @@ export function MapSection({ initialNearby, defaultCity, user: initialUser }: Ma
           <div
             role="tablist"
             aria-label={t("view.choose")}
-            className="flex shrink-0 gap-0.5 rounded-xl bg-neutral-200/80 p-0.5 text-xs dark:bg-neutral-800/80"
+            className="flex shrink-0 gap-0.5 rounded-xl bg-neutral-200/80 p-0.5 text-xs max-sm:hidden dark:bg-neutral-800/80"
           >
             {views.map((option) => (
               <button
@@ -719,6 +738,76 @@ export function MapSection({ initialNearby, defaultCity, user: initialUser }: Ma
               </button>
             ))}
           </div>
+
+          {/*
+            **Auf dem Telefon ein Zahnrad statt einer Reihe von Reitern**
+            (ToDo 9.34, Wunsch vom 2026-11-11). Vier Flächen nebeneinander
+            kosteten die halbe Kopfzeile; dahinter steht jetzt ein Menü mit
+            denselben Punkten, ausgeschrieben und 44 px hoch – auf dem Telefon
+            sogar leichter zu treffen als vier Symbole nebeneinander.
+
+            **Es sind dieselben Reiter, nicht nachgebaute Knöpfe:** `role=tab`
+            in einer `tablist`, wie auf dem Rechner. Dadurch bleibt die
+            Bedienung mit Screenreader dieselbe, und die Oberfläche hat
+            weiterhin **eine** Wahrheit darüber, welche Ansicht gilt.
+          */}
+          <div className="relative shrink-0 sm:hidden">
+            <button
+              type="button"
+              data-testid="ansicht-menue"
+              aria-haspopup="true"
+              aria-expanded={menuOpen}
+              aria-label={t("view.menu")}
+              onClick={() => setMenuOpen((previous) => !previous)}
+              className="flex min-h-11 min-w-11 items-center justify-center rounded-xl bg-neutral-200/80 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:bg-neutral-800"
+            >
+              <span aria-hidden="true">
+                <GearIcon />
+              </span>
+            </button>
+
+            {menuOpen && (
+              <>
+                {/* Daneben tippen schließt – wie bei jedem Menü. */}
+                <div
+                  className="fixed inset-0 z-[1100]"
+                  onClick={() => setMenuOpen(false)}
+                  aria-hidden="true"
+                />
+                <div
+                  role="tablist"
+                  aria-label={t("view.choose")}
+                  className="absolute right-0 z-[1200] mt-1 w-56 overflow-hidden rounded-2xl border border-neutral-200/70 bg-white shadow-lg dark:border-neutral-800 dark:bg-neutral-900"
+                >
+                  {views.map((option) => (
+                    <button
+                      key={option}
+                      type="button"
+                      role="tab"
+                      aria-selected={view === option}
+                      onClick={() => {
+                        setView(option);
+                        setMenuOpen(false);
+                      }}
+                      className={`flex min-h-12 w-full items-center justify-between gap-3 px-4 text-left text-[15px] focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none ${
+                        view === option ? "font-semibold" : ""
+                      }`}
+                    >
+                      <span>{t(VIEW_LABELS[option])}</span>
+                      {/* Der Haken sagt, welche Ansicht gerade gilt – ohne
+                          ihn wäre die Fettschrift das einzige Zeichen, und
+                          die ist bei kleiner Schrift kaum zu sehen. */}
+                      {view === option ? (
+                        <span aria-hidden="true" className="text-blue-700 dark:text-blue-300">
+                          ✓
+                        </span>
+                      ) : null}
+                    </button>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
         </div>
 
         {/*
@@ -734,20 +823,27 @@ export function MapSection({ initialNearby, defaultCity, user: initialUser }: Ma
           Karte am meisten zählt, weil es keinen Vorschlag gibt – war die
           Kopfzeile dadurch 125 px hoch statt 80.
         */}
-        {(view === "map" || view === "list") && (
+        {/*
+          **Der nächste Parkplatz steht nicht mehr hier** (ToDo 9.34, Wunsch
+          vom 2026-11-11: „‚nächster Parkplatz‘ oben nicht anzeigen, sondern
+          nur im Parkplatz-Suchfenster“). Er stand zweimal auf demselben
+          Bildschirm – in dieser Zeile und, mit Entfernung, Adresse und
+          Navigationsknopf, in der Leiste über der Karte. Die Zeile war die
+          ärmere von beiden und kostete eine Zeile Karte.
+
+          **Was hier bleibt, ist die Standortmeldung:** „wird gesucht“,
+          „abgelehnt“, „nicht verfügbar“ – samt „Erneut“. Das sagt sonst
+          niemand, und ohne sie stünde die Karte auf der Stadtmitte, ohne dass
+          jemand erführe, warum. Deshalb erscheint die Zeile jetzt **nur
+          dann**, wenn es etwas zu melden gibt.
+        */}
+        {(view === "map" || view === "list") && (geo.status !== "ready" || geo.message) && (
           <div className="mt-0.5 flex items-center gap-2">
             <p
               aria-live="polite"
               className="min-w-0 flex-1 truncate text-xs text-neutral-600 dark:text-neutral-400"
             >
               {geo.status === "locating" && t("map.locating")}
-              {geo.status === "ready" &&
-                (nearest
-                  ? t("map.nearestSpot", {
-                      name: nearest.street ?? nearest.label,
-                      distance: formatDistance(nearest.distanceMeters, locale),
-                    })
-                  : t("map.noneNearby"))}
               {geo.message}
             </p>
             {(geo.status === "denied" ||
@@ -769,7 +865,13 @@ export function MapSection({ initialNearby, defaultCity, user: initialUser }: Ma
         )}
       </header>
 
-      <main className="relative min-h-0 flex-1">
+      {/*
+        `data-ansicht` ist der stabile Griff für die Tests (9.34): Welche
+        Ansicht gilt, stand vorher nur am gewählten Reiter – und der liegt auf
+        dem Telefon jetzt hinter dem Menü. Ein Test, der dafür erst ein Menü
+        öffnen muss, prüft das Menü statt der Ansicht.
+      */}
+      <main data-ansicht={view} className="relative min-h-0 flex-1">
         {view === "map" ? (
           <>
             <ParkingMap

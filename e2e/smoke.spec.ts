@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { ansicht } from "./ansicht";
 
 /**
  * Smoke-Test: Läuft die App im echten Browser?
@@ -53,7 +54,7 @@ test.describe("wheelee", () => {
    */
   test("Haftungshinweis steht in den Einstellungen", async ({ page }) => {
     await page.goto("/");
-    await page.getByRole("tab", { name: "Einstellungen" }).click();
+    await ansicht(page, "Einstellungen");
 
     // Er hing vorher nur in der Listenansicht und war mit ihr verschwunden.
     await expect(page.getByRole("heading", { name: "Bitte vor der Fahrt lesen" })).toBeVisible();
@@ -72,11 +73,11 @@ test.describe("wheelee", () => {
     const statuszeile = page.locator('header p[aria-live="polite"]');
     await expect(statuszeile).toBeVisible();
 
-    await page.getByRole("tab", { name: "Einstellungen" }).click();
+    await ansicht(page, "Einstellungen");
     await expect(statuszeile).toHaveCount(0);
 
     // Zurück auf die Karte ist sie wieder da – ausgeblendet, nicht entfernt.
-    await page.getByRole("tab", { name: "Karte" }).click();
+    await ansicht(page, "Karte");
     await expect(statuszeile).toBeVisible();
   });
 
@@ -256,14 +257,14 @@ test.describe("wheelee", () => {
 
   test("Einstellungen merken die Karten-App", async ({ page }) => {
     await page.goto("/");
-    await page.getByRole("tab", { name: "Einstellungen" }).click();
+    await ansicht(page, "Einstellungen");
 
     // Seit 9.31 eine Auswahlzeile statt einer Liste von Radioknöpfen.
     const auswahl = page.getByRole("combobox", { name: "Karten-App wählen" });
     await auswahl.selectOption("waze");
     await page.reload();
 
-    await page.getByRole("tab", { name: "Einstellungen" }).click();
+    await ansicht(page, "Einstellungen");
     await expect(page.getByRole("combobox", { name: "Karten-App wählen" })).toHaveValue("waze");
   });
 });

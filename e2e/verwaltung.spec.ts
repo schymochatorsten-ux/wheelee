@@ -2,6 +2,7 @@ import { DatabaseSync } from "node:sqlite";
 import path from "node:path";
 import { expect, test, type APIRequestContext, type Page } from "@playwright/test";
 import { herkunft } from "./herkunft";
+import { ansicht } from "./ansicht";
 
 /**
  * Einladungen und Benutzerverwaltung (ToDos 18.1–18.3, geprüft unter 18.5).
@@ -67,7 +68,7 @@ async function einladen(api: APIRequestContext, email: string, role = "user") {
 
 async function verwaltungOeffnen(page: Page) {
   await page.goto("/");
-  await page.getByRole("tab", { name: "Rückmeldungen" }).click();
+  await ansicht(page, "Rückmeldungen");
   await expect(page.getByRole("heading", { name: "Benutzer und Einladungen" })).toBeVisible();
 }
 

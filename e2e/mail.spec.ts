@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { ansicht } from "./ansicht";
 
 /**
  * Mail-Funktionen ohne eingerichteten Versand (D-10, ToDos 11.1 und 11.8).
@@ -30,7 +31,7 @@ test("die Anmeldemaske bietet kein „Passwort vergessen“ an, sondern sagt, wa
   page,
 }) => {
   await page.goto("/");
-  await page.getByRole("tab", { name: "Konto" }).click();
+  await ansicht(page, "Konto");
   await expect(page.getByText("lässt sich derzeit nicht selbst zurücksetzen")).toBeVisible();
   await expect(page.getByRole("button", { name: "Passwort vergessen?" })).toHaveCount(0);
 });

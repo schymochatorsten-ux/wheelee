@@ -100,7 +100,8 @@ test.describe("Sicherheits-Kopfzeilen", () => {
     await page.goto("/");
     // Das Theme-Skript hat vor dem ersten Zeichnen gelaufen, die Hydration auch.
     await expect(page.locator("html")).toHaveAttribute("data-theme", /.+/u);
-    await expect(page.getByRole("tab").first()).toBeVisible();
+    // Siehe 9.34: Auf dem Telefon liegen die Reiter hinter dem Zahnrad.
+    await expect(page.getByTestId("ansicht-menue")).toBeVisible();
 
     expect(verstoesse).toEqual([]);
   });

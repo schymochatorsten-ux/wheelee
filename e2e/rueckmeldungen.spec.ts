@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { ansicht } from "./ansicht";
 
 /**
  * Rückmeldungen und die Übersicht dahinter (ToDos 17.2–17.4).
@@ -69,7 +70,7 @@ test.describe("Rückmeldung abschicken", () => {
   /** Das Formular aus den Einstellungen heraus öffnen. */
   async function formularOeffnen(page: import("@playwright/test").Page) {
     await page.goto("/");
-    await page.getByRole("tab", { name: "Einstellungen" }).click();
+    await ansicht(page, "Einstellungen");
     await page.getByRole("button", { name: /Fehler melden oder Vorschlag/u }).click();
     await expect(page.getByRole("dialog", { name: "Rückmeldung" })).toBeVisible();
   }

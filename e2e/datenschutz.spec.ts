@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { ansicht } from "./ansicht";
 
 /**
  * Keine Tracker, keine Drittanbieter (ToDo 10.4).
@@ -33,8 +34,8 @@ test("fragt keine fremden Dienste und setzt keine Tracker", async ({ page, conte
 
   // Durch alle erreichbaren Ansichten, damit auch nachgeladene Teile erfasst
   // werden. Der Reiter „Liste" ist seit 2026-10-10 ausgeblendet.
-  await page.getByRole("tab", { name: "Einstellungen" }).click();
-  await page.getByRole("tab", { name: "Karte" }).click();
+  await ansicht(page, "Einstellungen");
+  await ansicht(page, "Karte");
 
   /*
    * Die Zielsuche gehört hierher, weil sie den einzigen Weg nach außen
@@ -83,6 +84,8 @@ test("fragt keine fremden Dienste und setzt keine Tracker", async ({ page, conte
  */
 test("ohne Handlung legt die App nichts im lokalen Speicher ab", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("tab").first()).toBeVisible();
+  // Die Kopfzeile steht – auf dem Telefon ist das seit 9.34 das Zahnrad, die
+  // Reiter liegen dahinter.
+  await expect(page.getByTestId("ansicht-menue")).toBeVisible();
   expect(await page.evaluate(() => Object.keys(localStorage))).toEqual([]);
 });
