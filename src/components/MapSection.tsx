@@ -908,9 +908,15 @@ export function MapSection({ initialNearby, defaultCity, user: initialUser }: Ma
             weit auseinander, dass man die Zeile verliert – auf einem breiten
             Bildschirm der häufigste Grund, warum eine Einstellungsseite
             unübersichtlich wirkt.
+
+            **Der scrollende Kasten ist aber die ganze Breite** (ToDo 9.33,
+            gemeldet am 2026-11-11): Lag die Begrenzung am Kasten selbst, stand
+            sein Scrollbalken an der Kante der Spalte – mitten im Bild.
+            Gescrollt wird die Fläche, begrenzt wird der Inhalt.
           */
-          <div className="relative mx-auto h-full w-full max-w-2xl space-y-6 overflow-y-auto px-4 py-4">
-            {/*
+          <div className="relative h-full overflow-y-auto px-4 py-4">
+            <div className="mx-auto w-full max-w-2xl space-y-6">
+              {/*
               Die Prüfliste aus den Bewertungen (8.8) steht im **selben**
               Reiter und nicht in einem eigenen. Beide Abschnitte beantworten
               dieselbe Frage – „wo stimmen die Daten nicht?" –, nur aus zwei
@@ -929,17 +935,18 @@ export function MapSection({ initialNearby, defaultCity, user: initialUser }: Ma
               beiden: nach oben begrenzt durch die Mindestzahl, im Normalfall
               drei Zeilen. Die Rückmeldungen wachsen unbegrenzt.
             */}
-            <ReportedSpots onShowSpot={select} />
-            {/* Ein gemeldeter Parkplatz führt über `select` auf die Karte –
+              <ReportedSpots onShowSpot={select} />
+              {/* Ein gemeldeter Parkplatz führt über `select` auf die Karte –
                 dieselbe Bewegung wie aus der Liste, samt Detailansicht und
                 Luftlinie. Die Meldung wird damit sofort nachprüfbar. */}
-            <FeedbackAdmin onShowSpot={select} />
-            <AdminUsers />
-            <AdminVisits />
-            {/* Mailversand einrichten (10.22): steht unten, weil man ihn einmal
+              <FeedbackAdmin onShowSpot={select} />
+              <AdminUsers />
+              <AdminVisits />
+              {/* Mailversand einrichten (10.22): steht unten, weil man ihn einmal
                 einstellt und dann jahrelang nicht ansieht – anders als die
                 Prüflisten darüber, die bei jedem Öffnen zählen. */}
-            <AdminMail />
+              <AdminMail />
+            </div>
           </div>
         ) : view === "account" ? (
           /*
@@ -948,17 +955,23 @@ export function MapSection({ initialNearby, defaultCity, user: initialUser }: Ma
             damit 1.978 px tief – hinter Darstellung, Sprache, Karten-App und
             der Städteliste. Wer sich anmelden wollte, fand es nicht.
 
-            `relative` und begrenzte Breite wie überall sonst (9.21, 9.22).
+            `relative` und begrenzte Breite wie überall sonst (9.21, 9.22) –
+            die Breite am Inhalt, nicht am scrollenden Kasten (9.33).
           */
-          <div className="relative mx-auto h-full w-full max-w-2xl overflow-y-auto px-4 py-4">
-            <SettingsSection title={t("settings.account")} description={t("settings.accountNote")}>
-              <AccountPanel
-                user={user}
-                onUserChange={setUser}
-                onShowSpot={select}
-                position={geo.position}
-              />
-            </SettingsSection>
+          <div className="relative h-full overflow-y-auto px-4 py-4">
+            <div className="mx-auto w-full max-w-2xl">
+              <SettingsSection
+                title={t("settings.account")}
+                description={t("settings.accountNote")}
+              >
+                <AccountPanel
+                  user={user}
+                  onUserChange={setUser}
+                  onShowSpot={select}
+                  position={geo.position}
+                />
+              </SettingsSection>
+            </div>
           </div>
         ) : (
           /*

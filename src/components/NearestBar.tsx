@@ -232,9 +232,22 @@ export function NearestBar({
     // Gestaltungsklasse zu hängen: Er suchte zuvor nach `rounded-2xl` und
     // schlug fehl, als die Ecken schlanker wurden – ein Fehlalarm über eine
     // Änderung, die nichts kaputt gemacht hatte.
-    // `w-full`: Aufgeklappt gehört der Leiste die ganze Zeile, und die
-    // Knöpfe daneben rutschen durch den Umbruch nach unten (9.30).
-    <div id="parkplatz-leiste" className={`${PANEL} max-h-[46vh] w-full overflow-y-auto p-2`}>
+    /*
+      **Auf dem Telefon die ganze Zeile, auf dem Rechner nur ein Teil davon**
+      (ToDo 9.33, gemeldet am 2026-11-11: „Suche und ‚Nächster
+      Behindertenparkplatz‘ auf eine Ebene“).
+
+      Schmal ist `w-full` richtig: Die Leiste trägt zwei Knopfreihen, daneben
+      passt nichts mehr, und die Zielsuche rutscht durch den Umbruch nach oben
+      (9.30). Ab `sm` ist Platz für beides nebeneinander – `flex-1` nimmt den
+      Rest der Zeile neben der Suche, `max-w-md` hält die Leiste davon ab, sich
+      über einen breiten Bildschirm zu ziehen. Öffnet jemand die Suche, nimmt
+      **sie** die volle Zeile und die Leiste rückt von selbst darunter.
+    */
+    <div
+      id="parkplatz-leiste"
+      className={`${PANEL} max-h-[46vh] w-full overflow-y-auto p-2 sm:w-auto sm:max-w-md sm:flex-1`}
+    >
       <div className="flex items-start gap-1">
         {/*
           Der ganze Textblock ist der Knopf „auf der Karte zeigen". Das ist die

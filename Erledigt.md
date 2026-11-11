@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-11):** **253 Einträge** auf oberster Ebene –
-davon 227, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-11):** **254 Einträge** auf oberster Ebene –
+davon 228, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 26, die das nicht tun. _Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -2244,6 +2244,16 @@ die Angabe, die sonst beim nächsten Mal wieder zusammengesucht wird.
   - **Was damit nicht mehr dasteht, gehört festgehalten, weil es eine Anweisung gegen eine Pflichtangabe war:** Art. 13 Abs. 1 lit. e DSGVO verlangt Empfänger oder Kategorien von Empfängern, und wer die Mails ausliefert, ist Auftragsverarbeiter nach Art. 28. Der Einwand ist genannt und die Entscheidung steht; die Erklärung sagt jetzt nicht mehr, dass es keinen Versanddienstleister gibt – sie sagt dazu gar nichts. Das betrifft nur den Fall, dass der Mailversand eingeschaltet ist; ohne ihn war der Abschnitt ohnehin nie zu sehen.
   - **Drei Unit-Tests haben die alte Zusage festgehalten** (Name aus der Umgebung, Name aus der Verwaltung, roter Hinweis bei fehlendem Namen). Sie prüfen jetzt das Gegenteil: dass **nirgends** ein Dienstleister auftaucht, auch nicht, wenn in der Verwaltung noch ein Name steht. Eine Zusage zu streichen, ohne den Test umzudrehen, hieße, sie später versehentlich wiederherzustellen.
   - **Geprüft:** Typecheck, Lint, 724 Unit-Tests, 142 E2E-Tests; die Seite im Browser durchgesehen – kein „Versanddienstleister“, kein „Angabe fehlt“, nichts Rotes.
+
+---
+
+## 9.33 Zwei Befunde vom Rechner (2026-11-11)
+
+- [x] 9.33 **Zielsuche und Parkplatzvorschlag auf einer Ebene; Scrollbalken wieder am Fensterrand** (Torsten, 2026-11-11, mit Bildschirmfoto vom Rechner). Beide Male war die Ursache eine Klasse, die auf dem Telefon richtig ist und auf dem Rechner falsch.
+  - **`w-full` an der Parkplatzleiste.** Auf dem Telefon gehört ihr die ganze Zeile – sie trägt zwei Knopfreihen, daneben passt nichts –, und die Zielsuche rutscht durch den Umbruch darüber (9.30). Auf 1.280 px sah dasselbe aus wie zwei gestapelte Balken über der Karte. Ab `sm` nimmt die Leiste jetzt `flex-1` statt der vollen Breite, begrenzt auf `max-w-md`: Suche links, Vorschlag rechts, **eine** Zeile. Öffnet jemand die Suche, nimmt sie weiterhin die volle Zeile und der Vorschlag rückt darunter – das war ausdrücklich erwünscht („wenn man eins von beiden auswählt, kann es gerne größer werden“).
+  - **Der Scrollbalken stand mitten im Bild.** Die Reiter „Rückmeldungen“ und „Konto“ hatten `mx-auto max-w-2xl` **am scrollenden Kasten**; sein Balken sitzt dann an der Kante der Spalte, auf einem breiten Bildschirm also mittig. Jetzt scrollt die ganze Fläche und begrenzt ist der Inhalt darin – so, wie es der Reiter „Einstellungen“ schon hatte. **Die Regel dahinter:** Was scrollt, ist die Fläche; was lesbar bleiben soll, ist der Inhalt. Zwei Angaben an einem Element, und eine davon wirkt an der falschen Stelle.
+  - **Nachgemessen statt angesehen:** Der scrollende Kasten ist jetzt 1.280 px breit und endet bei 1.280 – vorher bei 768. Für die Verwaltung eigens ein Prüfkonto angelegt, nachgesehen und wieder gelöscht; mit angemeldetem Konto sieht man den Reiter sonst gar nicht.
+  - **Geprüft:** Typecheck, Lint, 724 Unit-Tests, 142 E2E-Tests; beide Ansichten auf 1.280 px und das Telefonformat im Browser angesehen.
 
 ---
 
