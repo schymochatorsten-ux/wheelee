@@ -82,7 +82,7 @@ maschinelle Mehrfachprüfung.
 
 Was von 19 baubar war, ist gebaut (19.1, 19.4, 19.7, 19.8; Begründung in [Erledigt.md](Erledigt.md)). Offen ist, was auf dem NAS oder von Hand geschieht:
 
-- [!] 19.13 **Google Search Console einrichten.** Dort `wheelee.de` als Eigentum bestätigen (DNS-Eintrag oder Datei), `https://wheelee.de/sitemap.xml` einreichen und nach einigen Tagen unter „Seiten“ prüfen, ob die Stadtseiten aufgenommen sind (19.12). Braucht Torsten (Google-Konto, DNS beim Registrar).
+- [~] 19.13 **Google Search Console: eingerichtet, Aufnahme steht aus.** Am 2026-11-11 erledigt: Domain-Property bestätigt (TXT bei netcup) und `sitemap.xml` eingereicht, angenommen (Einzelheiten in [Erledigt.md](Erledigt.md)). **Offen ist nur das Nachsehen:** in einigen Tagen unter „Seiten“ prüfen, ob die Stadtseiten aufgenommen sind (19.12), und was dort als Grund für Ausschlüsse steht. **Der TXT-Eintrag darf nicht gelöscht werden**, sonst verfällt die Bestätigung.
 - [!] 19.5 **„Nur OSM“ und „aufgehoben gemeldet“ als OpenStreetMap-Hinweise zurückgeben.** Geschieht von Hand in OSM-Notizen mit eigenem Konto; die Liste der Kandidaten steht in `data/_validierung.md`.
 
 ---

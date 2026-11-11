@@ -2158,6 +2158,39 @@ neu formuliert statt nachgefasst.
 
 ---
 
+## 19.13 Search Console eingerichtet (2026-11-11)
+
+Der Punkt bleibt in `ToDos.md` auf `[~]`, weil die Aufnahme der Seiten erst in
+einigen Tagen zu sehen ist. Hier steht, **wo was eingetragen ist** – das ist
+die Angabe, die sonst beim nächsten Mal wieder zusammengesucht wird.
+
+- **Die Zone liegt bei netcup, nicht beim VPS und nicht auf dem NAS.** Das war
+  die eigentliche Unklarheit und wurde gemessen statt vermutet: `wheelee.de`
+  nennt fünf Nameserver (`netcup.firstns.cc` und vier weitere), der A-Eintrag
+  zeigt auf `212.227.160.5`, und ein TXT-Eintrag war vorher **gar keiner**
+  vorhanden. Bearbeitet wird die Zone im netcup-CCP unter **Domains → Lupe →
+  CloudDNS** („CloudDNS-Zone bearbeiten"), **nicht** unter dem in netcups
+  eigener Hilfe genannten Reiter „DNS“ – den gibt es für diese Domain nicht.
+- **Bestätigt als Domain-Property** (nicht als URL-Präfix), also mit einem
+  TXT-Eintrag auf `@`, TTL 300. Damit gilt der Nachweis für alle Hostnamen und
+  beide Protokolle; bei einem Präfix wären `www` und `https` getrennte
+  Eigentümer. **Der Eintrag muss stehen bleiben** – Google prüft ihn weiter
+  nach.
+- **Sitemap angenommen.** `https://wheelee.de/sitemap.xml` antwortet mit
+  HTTP 200, `application/xml`, 583 KB, **3.793 Adressen** – vor dem Einreichen
+  von hier aus geprüft, damit ein Fehlschlag nicht in Googles Protokoll steht.
+  Bei einer Domain-Property steht kein Präfix im Feld: Die **volle** Adresse
+  gehört hinein.
+- **`robots.txt` nennt die Sitemap bereits** (`Sitemap: https://wheelee.de/sitemap.xml`,
+  dazu `Disallow: /api/`). Das Einreichen ersetzt das nicht, es beschleunigt
+  nur – gegengeprüft, damit nicht zwei Stellen etwas Verschiedenes sagen.
+- **„Erfolgreich eingereicht" heißt nicht „abgerufen".** Die Spalten „Zuletzt
+  gelesen" und „Erkannte Seiten" standen danach auf 0 bzw. leer; das ist der
+  Normalfall und kein Fehler. Wer zu früh nachsieht und neu einreicht, erzeugt
+  nur einen zweiten Eintrag.
+
+---
+
 ## Erwägungen zu 13, 15 und 16
 
 > **15 und 16 sind am 2026-10-20 freigegeben** und stehen seitdem als offene
