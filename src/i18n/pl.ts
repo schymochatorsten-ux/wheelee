@@ -192,6 +192,9 @@ export const pl: Messages = {
   "info.free.title": "Za darmo – dla wszystkich, na zawsze",
   "info.free.text":
     "Zobowiązujemy się, że wheelee zawsze pozostanie darmowe dla wszystkich. Nie będzie funkcji premium, płatnych poziomów ani ukrytych kosztów: kto szuka miejsca parkingowego, nigdy nie powinien za to płacić.",
+  "info.contact.title": "Kontakt",
+  "info.contact.text":
+    "Pytania o projekt – od stowarzyszeń, prasy czy urzędów – trafiają na ten adres. Błąd przy konkretnym miejscu lepiej zgłosić w aplikacji: zgłoszenie zostaje przypisane do tego miejsca, e-mail nie.",
   "info.toMap": "Do mapy",
 
   "account.emailInvalid": "Ten adres e-mail wygląda niepoprawnie.",

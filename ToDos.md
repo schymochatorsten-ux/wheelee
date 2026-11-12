@@ -8,7 +8,7 @@
 **Legende:** `[ ]` offen · `[~]` teils gebaut, Rest hier · `[!]` braucht eine
 Entscheidung oder Angabe von dir · `[-]` gesperrt bis zur Freigabe
 
-**Letzte Aktualisierung:** 2026-11-11
+**Letzte Aktualisierung:** 2026-11-12
 
 **Stand:** wird nachgezählt, nicht fortgeschrieben:
 
@@ -101,9 +101,9 @@ Die App hilft nur, wer sie kennt. Bisher gibt es dafür allein die Suchmaschine
 Torsten** (Absender, Adresse und Stimme gehören ihm); vorbereiten lassen sich
 Textentwürfe, Adresslisten und Zahlen.
 
-- [!] 21.1 **Behindertenverbände ansprechen.** Sozialverband VdK und SoVD (beide mit Landes- und Kreisverbänden), BSK, Bundesverband Selbsthilfe Körperbehinderter, Lebenshilfe, örtliche Behindertenbeiräte. Ziel: ein Hinweis in Mitgliederzeitschrift, Newsletter oder auf der Website – und, wichtiger, **Rückmeldungen zu falschen Daten** von Leuten, die die Plätze täglich brauchen. Vor der ersten Mail zu klären: unter welchem Absender, und ob eine Antwort an dich oder an eine Projektadresse geht.
+- [!] 21.0 **`WHEELEE_OPERATOR_EMAIL=wheelee@gmx.net` in der `.env` auf dem NAS setzen** (und `WHEELEE_OPERATOR_NAME`, falls dort noch leer). **Nur von Torsten zu tun**, und ohne das ändert sich auf der laufenden Seite nichts: Impressum, Datenschutzerklärung und `/info` zeigen die Adresse aus der Umgebung, nie aus dem Quelltext. Bis zum 2026-11-12 stand auf `wheelee.de/impressum` gar keine Kontaktangabe (Begründung in [Erledigt.md](Erledigt.md) unter 21.3).
+- [!] 21.1 **Behindertenverbände ansprechen.** Sozialverband VdK und SoVD (beide mit Landes- und Kreisverbänden), BSK, Bundesverband Selbsthilfe Körperbehinderter, Lebenshilfe, örtliche Behindertenbeiräte. Ziel: ein Hinweis in Mitgliederzeitschrift, Newsletter oder auf der Website – und, wichtiger, **Rückmeldungen zu falschen Daten** von Leuten, die die Plätze täglich brauchen. **Absender und Antwortadresse sind entschieden** (2026-11-12): `wheelee@gmx.net`, Postfach liegt in Torstens Outlook. Textentwürfe und Adressliste kann Claude vorbereiten, geschickt wird von Torsten.
 - [!] 21.2 **Politik und Verwaltung.** Behindertenbeauftragte von Bund, Ländern und größeren Städten; dazu die Straßenverkehrsbehörden, die ohnehin für 2d.8a angeschrieben werden. Zwei Anliegen, die sich nicht vermischen sollten: die App bekannt machen – und amtliche Listen als offene Daten erbitten (das trägt direkt zum Bestand bei, siehe `data/_quellen-status.md`).
-- [!] 21.3 **Was vor dem ersten Kontakt stehen muss.** Eine Seite, die erklärt, was wheelee ist und was es nicht ist (es gibt `/info`, 19.11 – als Grundlage prüfen), die Zahlen zur Abdeckung (`/abdeckung`) und eine Antwortadresse, die gelesen wird. Ohne das wird aus einer Anfrage eine Rückfrage.
 - [ ] 21.4 **Reihenfolge und Maß.** Erst ein oder zwei Verbände anschreiben und abwarten, was zurückkommt – dann breiter. Eine Rundmail an fünfzig Adressen, die niemand beantworten kann, verbrennt genau die Kontakte, auf die es ankommt. Was geantwortet wurde, gehört nach `Erledigt.md`, nicht in den Kopf.
 
 ---

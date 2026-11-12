@@ -22,7 +22,12 @@
 export interface Operator {
   /** Name der verantwortlichen Person oder Körperschaft. */
   name: string;
-  /** Anschrift, zeilenweise – Straße, Postleitzahl und Ort, Land. */
+  /**
+   * Anschrift, zeilenweise – Straße, Postleitzahl und Ort, Land.
+   *
+   * **Kann leer sein** (siehe `operator()`): Dann steht der Name ohne
+   * Anschrift da, statt dass die ganze Angabe verschwindet.
+   */
   address: string[];
   /** E-Mail-Adresse für die Kontaktaufnahme (§ 5 Abs. 1 Nr. 2 DDG). */
   email: string;
@@ -60,21 +65,30 @@ function value(name: string): string | null {
 }
 
 /**
- * Die Betreiberangaben – oder `null`, wenn die Pflichtangaben fehlen.
+ * Die Betreiberangaben – oder `null`, wenn Name oder E-Mail fehlen.
  *
- * Pflicht sind Name, Anschrift und E-Mail. Fehlt eines davon, gilt die
- * Konfiguration als nicht vorhanden: Ein halbes Impressum erfüllt die Pflicht
- * nicht, sieht aber so aus.
+ * **Die Anschrift ist seit dem 2026-11-12 nicht mehr Bedingung.** Vorher
+ * galt: fehlt eine der drei Angaben, zeigt die Seite gar nichts – „ein halbes
+ * Impressum erfüllt die Pflicht nicht, sieht aber so aus". Die Folge in der
+ * Wirklichkeit war eine andere: Torsten hat die Anschrift am 2026-10-24
+ * bewusst weggelassen (10.2a), und damit stand auf `wheelee.de/impressum`
+ * **auch keine E-Mail-Adresse** – nachgesehen am 2026-11-12, die Seite trug
+ * unter „Verantwortlich für den Inhalt" nur „Siehe oben." und darüber nichts.
+ *
+ * Das ist die schlechtere der beiden Unvollständigkeiten: Ohne Anschrift ist
+ * das Impressum nach § 5 DDG lückenhaft, ohne jede Kontaktangabe fehlt
+ * zusätzlich der Weg, auf dem sich jemand überhaupt melden kann – und genau
+ * den verlangt § 5 Abs. 1 Nr. 2 („schnelle elektronische Kontaktaufnahme").
+ * Gezeigt wird deshalb, was da ist; was fehlt, fehlt sichtbar.
  */
 export function operator(): Operator | null {
   const name = value("WHEELEE_OPERATOR_NAME");
   const rawAddress = value("WHEELEE_OPERATOR_ADDRESS");
   const email = value("WHEELEE_OPERATOR_EMAIL");
 
-  if (!name || !rawAddress || !email) return null;
+  if (!name || !email) return null;
 
-  const address = addressLines(rawAddress);
-  if (address.length === 0) return null;
+  const address = rawAddress ? addressLines(rawAddress) : [];
 
   return {
     name,
@@ -83,6 +97,18 @@ export function operator(): Operator | null {
     phone: value("WHEELEE_OPERATOR_PHONE"),
     vatId: value("WHEELEE_OPERATOR_VAT_ID"),
   };
+}
+
+/**
+ * Nur die Kontaktadresse – für Seiten, die keinen Betreiber darstellen,
+ * sondern nur sagen, wohin man schreiben kann (`/info`, ToDo 21.3).
+ *
+ * Eigene Funktion statt `operator()?.email`, damit die Adresse nicht daran
+ * hängt, ob Name und Anschrift gesetzt sind: Für „schreib uns" ist der Name
+ * des Betreibers unerheblich.
+ */
+export function contactEmail(): string | null {
+  return value("WHEELEE_OPERATOR_EMAIL");
 }
 
 /** Nur für Tests und die Anzeige: Zerlegen der Anschrift einzeln prüfbar. */

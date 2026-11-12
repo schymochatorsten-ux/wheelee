@@ -10,8 +10,8 @@ die wirklich passiert sind; sie stehen hier, damit niemand – auch kein
 späterer Durchgang durch dieses Projekt – dieselbe Entscheidung noch einmal
 anders trifft.
 
-**Stand (nachgezählt 2026-11-12):** **257 Einträge** auf oberster Ebene –
-davon 231, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
+**Stand (nachgezählt 2026-11-12):** **258 Einträge** auf oberster Ebene –
+davon 232, die mit einer ToDo- oder D-Nummer **beginnen** (so zählt der
 Einzeiler unten), und 26, die das nicht tun. _Bis zum 2026-10-29 stand hier „12
 ohne Nummer“; das passte nicht zu 189 gesamt und 168 mit Nummer und war aus
 einer älteren Zählung weitergeschrieben – nachgezählt ergibt der Einzeiler die
@@ -2370,6 +2370,23 @@ der eigentliche Inhalt dieser Arbeit:
   `check:slugs` ohne verwaiste Datei, 727 Unit-Tests, 142 E2E-Tests, Typecheck
   und Lint. Die Stadtseite im Browser angesehen: 226 Standorte, Zeitangaben
   stehen an den neuen Einträgen.
+
+---
+
+## 21.3 und 10.2a Die Kontaktadresse steht jetzt auf der Seite (2026-11-12)
+
+- [x] 21.3 **Was vor dem ersten Kontakt stehen muss** (Torsten, 2026-11-12: „umsetzen“; dazu die Festlegung „`wheelee@gmx.net` ist eingerichtet, darüber sendest du, das Postfach liegt in meinem Outlook“).
+
+  **Der Befund zuerst, denn er war das eigentliche Problem:** Auf `wheelee.de/impressum` stand **keine Kontaktangabe** – kein Name, keine Anschrift, keine E-Mail. Nachgesehen am 2026-11-12 auf der laufenden Seite; unter „Verantwortlich für den Inhalt“ stand nur „Siehe oben.“, und oben stand nichts. Das war kein Fehler in der Konfiguration, sondern die eingebaute Regel: `operator()` gab `null` zurück, sobald **eine** der drei Angaben fehlte, und die Anschrift fehlt seit dem 2026-10-24 bewusst (10.2a). Gedacht war die Regel gegen ein halbes Impressum, das vollständig aussieht. Erreicht hat sie das Gegenteil: ein Impressum ohne jeden Weg, den Betreiber zu erreichen – und genau den verlangt § 5 Abs. 1 Nr. 2 DDG („schnelle elektronische Kontaktaufnahme“).
+
+  **Jetzt gilt: gezeigt wird, was da ist.** Pflicht sind nur noch Name und E-Mail, die Anschrift darf leer bleiben. Die Lücke bleibt eine Lücke – ohne Anschrift ist das Impressum nach § 5 DDG unvollständig, das hat Torsten am 2026-10-24 benannt übernommen –, aber sie zieht die Kontaktadresse nicht mehr mit sich. „Anschrift wie oben“ heißt ohne Anschrift „Kontakt wie oben“, sonst verwiese der Satz auf nichts.
+
+  **Wo die Adresse jetzt steht:** Impressum (Abschnitt „Kontakt“), Datenschutzerklärung (Abschnitt 1, Verantwortlicher) und neu auf `/info`. Alle drei lesen dieselbe Umgebungsvariable `WHEELEE_OPERATOR_EMAIL`; nirgends steht sie im Quelltext. **Nicht** an den einzelnen Parkplatz und nicht in das Rückmeldefenster: Eine Mail über einen falschen Parkplatz hat keinen Bezug zu ihm, die Rückmeldung in der App schon – wer beides gleichberechtigt anbietet, bekommt den schlechteren Weg.
+
+  **Für 21.3 war das die Lücke.** Die drei Voraussetzungen waren: eine Seite, die erklärt, was wheelee ist (`/info`, 19.11 – vorhanden und tragfähig: Ziel, Weg, Herkunft der Daten samt ihren Grenzen, Bitte um Rückmeldung, „kostenlos für immer“), Zahlen zur Abdeckung (`/abdeckung` – vorhanden, aber von `/info` aus nicht erreichbar; jetzt verlinkt, mit der vorhandenen Beschriftung statt eines neuen Satzes in neun Sprachen) und eine Antwortadresse, die gelesen wird (fehlte, siehe oben). Der neue Abschnitt „Kontakt“ steht in allen neun Sprachen.
+
+  - **Geprüft:** 727 Unit-Tests, 142 E2E-Tests, Typecheck, Lint; die drei Seiten im Browser mit gesetzter Adresse angesehen (Impressum, Datenschutz, `/info` zeigen `wheelee@gmx.net`), axe-Prüfung der Rechtsseiten grün.
+  - **Offen und nur von Torsten zu tun:** `WHEELEE_OPERATOR_EMAIL=wheelee@gmx.net` in der `.env` auf dem NAS setzen (steht in `ToDos.md`). Ohne das ändert sich auf der laufenden Seite nichts – der Code zeigt nur, was die Umgebung hergibt.
 
 ---
 

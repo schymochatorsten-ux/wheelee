@@ -190,6 +190,9 @@ export const nl: Messages = {
   "info.free.title": "Gratis – voor iedereen, voor altijd",
   "info.free.text":
     "We beloven wheelee altijd gratis te houden voor iedereen. Er komen geen premiumfuncties, geen betaalde niveaus en geen verborgen kosten: wie een parkeerplaats zoekt, hoeft daar nooit voor te betalen.",
+  "info.contact.title": "Contact",
+  "info.contact.text":
+    "Vragen over het project – van verenigingen, pers of overheden – gaan naar dit adres. Een fout bij één parkeerplaats meld je beter in de app: die melding hangt aan die plek, een e-mail niet.",
   "info.toMap": "Naar de kaart",
 
   "account.emailInvalid": "Dit e-mailadres ziet er onjuist uit.",

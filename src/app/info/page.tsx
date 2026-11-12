@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { localeTag, translator } from "@/i18n";
 import { getLocale } from "@/i18n/server";
+import { contactEmail } from "@/lib/legal/operator";
 import { publicReach } from "@/lib/visits";
 
 /**
@@ -28,6 +29,7 @@ export default async function Info() {
   const locale = await getLocale();
   const t = translator(locale);
   const reach = publicReach();
+  const kontakt = contactEmail();
 
   return (
     <main className="min-h-0 flex-1 overflow-y-auto">
@@ -70,6 +72,22 @@ export default async function Info() {
           <section className={CARD}>
             <h2 className="text-base font-semibold">{t("info.data.title")}</h2>
             <p className="mt-1">{t("info.data.text")}</p>
+            {/*
+              Verweis auf die Zahlen (ToDo 21.3). Wer das Projekt empfehlen
+              soll – ein Verband, eine Redaktion –, fragt als Erstes „wie
+              viele Städte?". Ohne diesen Weg steht die Antwort auf einer
+              Seite, die von hier aus niemand findet. Der Text dafür gibt es
+              schon als Beschriftung in den Einstellungen; ein neuer Satz in
+              neun Sprachen wäre dafür zu viel.
+            */}
+            <p className="mt-2">
+              <Link
+                href="/abdeckung"
+                className="font-medium text-blue-800 hover:underline focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"
+              >
+                {t("settings.coverage")}
+              </Link>
+            </p>
           </section>
 
           <section className="rounded-2xl border border-blue-300/60 bg-blue-50/80 p-4 dark:border-blue-700/60 dark:bg-blue-950/60">
@@ -81,6 +99,31 @@ export default async function Info() {
             <h2 className="text-base font-semibold">{t("info.free.title")}</h2>
             <p className="mt-1">{t("info.free.text")}</p>
           </section>
+
+          {/*
+            Kontaktadresse (ToDo 21.3). **Nur hier und im Impressum, nicht an
+            jedem Parkplatz:** Fehler zu einzelnen Standorten gehören in die
+            Rückmeldung, die am Parkplatz hängt – eine Mail ohne diesen Bezug
+            kostet eine Rückfrage. Diese Adresse ist für die, die das Projekt
+            als Ganzes ansprechen: Verbände, Presse, Verwaltungen.
+
+            Die Adresse kommt aus derselben Umgebungsvariable wie das
+            Impressum. Fehlt sie, fehlt der Abschnitt – nie ein Platzhalter.
+          */}
+          {kontakt && (
+            <section className={CARD}>
+              <h2 className="text-base font-semibold">{t("info.contact.title")}</h2>
+              <p className="mt-1">{t("info.contact.text")}</p>
+              <p className="mt-2">
+                <a
+                  href={`mailto:${kontakt}`}
+                  className="font-medium text-blue-800 hover:underline focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:outline-none dark:text-blue-300"
+                >
+                  {kontakt}
+                </a>
+              </p>
+            </section>
+          )}
         </div>
 
         <Link

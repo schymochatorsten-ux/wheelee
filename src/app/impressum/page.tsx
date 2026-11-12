@@ -69,8 +69,16 @@ export default function Impressum() {
       <section>
         <h2>Verantwortlich für den Inhalt</h2>
         {/* Der Name als eigener Satz – sonst läuft er ohne Punkt in den
-            folgenden: „Erika Mustermann wheelee ist ein …". */}
-        <p>{betreiber ? `${betreiber.name}, Anschrift wie oben.` : "Siehe oben."}</p>
+            folgenden: „Erika Mustermann wheelee ist ein …".
+            „Anschrift wie oben" nur, wenn oben eine steht: Ohne Anschrift
+            (10.2a) verwiese der Satz auf etwas, das es nicht gibt. */}
+        <p>
+          {betreiber
+            ? betreiber.address.length > 0
+              ? `${betreiber.name}, Anschrift wie oben.`
+              : `${betreiber.name}, Kontakt wie oben.`
+            : "Siehe oben."}
+        </p>
         <p>
           wheelee ist ein unentgeltliches Privatprojekt. Es verfolgt keine wirtschaftlichen Zwecke,
           enthält keine Werbung und verkauft keine Daten.

@@ -183,6 +183,9 @@ export const de = {
   "info.free.title": "Kostenlos – für alle, für immer",
   "info.free.text":
     "Wir verpflichten uns, wheelee immer für alle kostenlos zu halten. Es wird keine Premium-Funktionen, keine Bezahlstufen und keine versteckten Kosten geben: Wer einen Parkplatz sucht, soll dafür nie bezahlen müssen.",
+  "info.contact.title": "Kontakt",
+  "info.contact.text":
+    "Fragen zum Projekt – etwa von Verbänden, Presse oder Verwaltungen – gehen an diese Adresse. Fehler an einem einzelnen Parkplatz sind in der Rückmeldung besser aufgehoben: Sie hängt am Parkplatz, eine Mail nicht.",
   "info.toMap": "Zur Karte",
 
   "account.emailInvalid": "Diese E-Mail-Adresse sieht nicht richtig aus.",

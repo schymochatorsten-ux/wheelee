@@ -55,13 +55,26 @@ describe("operator", () => {
 
   it.each([
     ["Name", "WHEELEE_OPERATOR_NAME"],
-    ["Anschrift", "WHEELEE_OPERATOR_ADDRESS"],
     ["E-Mail", "WHEELEE_OPERATOR_EMAIL"],
   ])("gibt null zurück, wenn die %s fehlt", (_label, key) => {
     setPflichtangaben();
     delete process.env[key];
 
     expect(operator()).toBeNull();
+  });
+
+  it("zeigt Name und E-Mail auch ohne Anschrift", () => {
+    // Die Anschrift fehlt bewusst (10.2a). Vorher verschwand damit auch die
+    // E-Mail-Adresse, und das Impressum stand ganz ohne Kontaktweg da –
+    // genau den verlangt § 5 Abs. 1 Nr. 2 DDG.
+    setPflichtangaben();
+    delete process.env.WHEELEE_OPERATOR_ADDRESS;
+
+    const result = operator();
+
+    expect(result?.name).toBe("Erika Mustermann");
+    expect(result?.email).toBe("kontakt@example.de");
+    expect(result?.address).toEqual([]);
   });
 
   it("behandelt eine leere Angabe wie eine fehlende", () => {
@@ -74,11 +87,11 @@ describe("operator", () => {
     expect(operator()).toBeNull();
   });
 
-  it("gibt null zurück, wenn die Anschrift nur Trennzeichen enthält", () => {
+  it("lässt die Anschrift leer, wenn sie nur Trennzeichen enthält", () => {
     setPflichtangaben();
     process.env.WHEELEE_OPERATOR_ADDRESS = "||";
 
-    expect(operator()).toBeNull();
+    expect(operator()?.address).toEqual([]);
   });
 
   it("nimmt Telefon und Umsatzsteuer-ID mit, wenn sie da sind", () => {

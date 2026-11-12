@@ -189,6 +189,9 @@ export const en: Messages = {
   "info.free.title": "Free – for everyone, for good",
   "info.free.text":
     "We are committed to keeping wheelee free for everyone, always. There will be no premium features, no paid tiers and no hidden costs: nobody looking for a parking space should ever have to pay for it.",
+  "info.contact.title": "Contact",
+  "info.contact.text":
+    "Questions about the project – from associations, the press or public authorities, say – go to this address. A problem with a single parking space is better reported in the app: the report is attached to that space, an email is not.",
   "info.toMap": "To the map",
 
   "account.emailInvalid": "This email address does not look right.",
