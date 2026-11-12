@@ -28,7 +28,12 @@ data/raw
 
 # Dokumentation – ändert sich oft, geht den Container nichts an
 *.md
-!README.md
+
+# Private Unterlagen (Schriftverkehr, Projektdokumentation). Sie liegen schon
+# außerhalb der Versionsverwaltung; hier stehen sie zusätzlich, weil der
+# Bauvorgang den Arbeitsbaum liest und nicht das Repository – `.gitignore`
+# allein hielte sie **nicht** aus dem Image heraus.
+AAAPrivat
 
 # Quell-PDFs der Importkette (nur für die Skripte, nicht für die App)
 Parkplätze

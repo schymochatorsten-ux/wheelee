@@ -47,6 +47,12 @@ next-env.d.ts
 # Import-Zwischenergebnisse (Rohtext, Geocoding-Cache-Rohdaten)
 /data/raw/
 
+# Schriftverkehr und andere private Unterlagen (Torsten, 2026-11-12). Sie
+# liegen neben dem Projekt, damit Claude sie lesen kann, gehören aber nicht
+# in ein öffentliches Repository – dort bliebe jeder Entwurf für immer in
+# der Historie stehen, auch nach dem Löschen.
+/AAAPrivat/
+
 # Die Datenbank der Entwicklung (Konten, Rückmeldungen). Sie entsteht beim
 # ersten Start und gehört niemandem außer diesem Rechner – im Betrieb liegt
 # sie in einem Docker-Volume, nicht im Arbeitsbaum.
