@@ -81,7 +81,7 @@ maschinelle Mehrfachprüfung.
 ## 2. Datenquellen und Import
 
 - [~] 2d.8a **Städte mit ungenutzter amtlicher Quelle.** München, Bielefeld, Köln und – seit dem 2026-11-11 – Bochum sind abgeschlossen; Befunde in [Erledigt.md](Erledigt.md). Offen ist einer:
-  - [~] **Heidelberg – Anfrage ist raus, Antwort steht aus.** Am 2026-11-11 an `mobilitaet@heidelberg.de` geschickt (Wortlaut und Befund in [Erledigt.md](Erledigt.md)): neuer Bezugsweg, sonst die Liste einmalig samt Lizenzhinweis. **Hier zu tun ist nichts, bis eine Antwort kommt** – danach entweder Import oder, bei Absage, Vermerk und Schluss. Der Bestand vom 2026-10-08 (214 Standorte) bleibt bis dahin. **Ohne Antwort nach drei bis vier Wochen einmal nachfassen.**
+  - [~] **Heidelberg – die Webseite der Stadt ist eingearbeitet, 22 Zeilen sind offen.** Am 2026-11-12 ergänzt (Befund und Begründung in [Erledigt.md](Erledigt.md)): 12 neue Standorte von `heidelberg.de`, Bestand jetzt 226. **Offen sind die 22 Zeilen auf Straßen, die es im Bestand schon gibt, mit einer Hausnummer, die dort fehlt** (etwa „Seminarstraße 4“). Ob das neue Plätze sind oder dieselben unter anderer Nummer, entscheidet nur ein Blick auf die einzelne Stelle; automatisch ergäbe es Dubletten. Die Liste zeigt `npm run import:heidelberg-web -- --dry`. **Braucht Torsten** (oder jemanden mit Ortskenntnis).
 
 ## 12. Qualität und Deployment
 

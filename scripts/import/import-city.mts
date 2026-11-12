@@ -31,6 +31,7 @@ import {
 } from "./geo-source.mjs";
 import { importFromOsm } from "./osm-source.mjs";
 import { manualSourcesFor, type ManualSource } from "./manual-sources.mjs";
+import { mergeZusatz, readZusatz } from "./zusatz.mjs";
 
 interface SourceEntry {
   title: string;
@@ -185,9 +186,12 @@ async function writeSeed(
   }>(path.join(projectRoot, "data", `${city.slug}.overrides.json`), {});
   license = overrides.license?.trim() || license;
 
-  const merged = spots
-    .map((spot) => ({ ...spot, ...(overrides.spots?.[spot.id] ?? {}) }))
-    .sort((a, b) => a.label.localeCompare(b.label, "de-DE"));
+  // Von Hand ergänzte Standorte (zusatz.mts) überleben so einen Neu-Import.
+  const zusatz = await readZusatz(city.slug);
+  const merged = mergeZusatz(
+    spots.map((spot) => ({ ...spot, ...(overrides.spots?.[spot.id] ?? {}) })),
+    zusatz?.spots ?? [],
+  ).sort((a, b) => a.label.localeCompare(b.label, "de-DE"));
 
   await fs.mkdir(path.dirname(file), { recursive: true });
   await fs.writeFile(

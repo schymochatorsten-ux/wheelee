@@ -1,0 +1,117 @@
+{
+  "Emil-Maier-Straße": {
+    "lat": 49.4084214,
+    "lng": 8.6725838,
+    "accuracy": "approximate",
+    "query": "Emil-Maier-Straße",
+    "displayName": "Emil-Maier-Straße, Bergheim, Heidelberg, Baden-Württemberg, 69115, Deutschland"
+  },
+  "Friedhof Handschuhsheim": {
+    "lat": 49.4319758,
+    "lng": 8.6865111,
+    "accuracy": "approximate",
+    "query": "Friedhof Handschuhsheim",
+    "displayName": "Friedhof Handschuhsheim, Zum Steinberg, Handschuhsheim, Heidelberg, Baden-Württemberg, 69121, Deutschland"
+  },
+  "Friedhof Kirchheim": {
+    "lat": 49.3743693,
+    "lng": 8.6587456,
+    "accuracy": "approximate",
+    "query": "Friedhof Kirchheim",
+    "displayName": "Friedhof Kirchheim, Kirchheim, Heidelberg, Baden-Württemberg, Deutschland"
+  },
+  "Friedhof Rohrbach": {
+    "lat": 49.3759884,
+    "lng": 8.6941549,
+    "accuracy": "approximate",
+    "query": "Friedhof Rohrbach",
+    "displayName": "Friedhof Heidelberg-Rohrbach, Rohrbach, Heidelberg, Baden-Württemberg, Deutschland"
+  },
+  "Friedhof Wieblingen": {
+    "lat": 49.4313565,
+    "lng": 8.641799,
+    "accuracy": "approximate",
+    "query": "Friedhof Wieblingen",
+    "displayName": "Friedhof Heidelberg-Wieblingen, Wieblingen, Heidelberg, Baden-Württemberg, Deutschland"
+  },
+  "Friedhof Ziegelhausen": {
+    "lat": 49.4213665,
+    "lng": 8.746017,
+    "accuracy": "approximate",
+    "query": "Friedhof Ziegelhausen",
+    "displayName": "Friedhof Ziegelhausen / Köpfel, Ziegelhausen, Heidelberg, Baden-Württemberg, Deutschland"
+  },
+  "Gewerbeschule II": null,
+  "Grüne Meile 35": {
+    "lat": 49.4044969,
+    "lng": 8.6623078,
+    "accuracy": "approximate",
+    "query": "Grüne Meile 35",
+    "displayName": "35, Grüne Meile, Bahnstadt, Heidelberg, Baden-Württemberg, 69115, Deutschland"
+  },
+  "Handschuhsheimer Landstraße 62": {
+    "lat": 49.4241207,
+    "lng": 8.6893613,
+    "accuracy": "house",
+    "query": "Handschuhsheimer Landstraße 62",
+    "displayName": "62, Handschuhsheimer Landstraße, Handschuhsheim, Heidelberg, Baden-Württemberg, 69121, Deutschland"
+  },
+  "Hauptbahnhof": {
+    "lat": 49.4034737,
+    "lng": 8.6754223,
+    "accuracy": "approximate",
+    "query": "Hauptbahnhof",
+    "displayName": "Heidelberg Hauptbahnhof, 5, Willy-Brandt-Platz, Weststadt, Heidelberg, Baden-Württemberg, 69115, Deutschland"
+  },
+  "Kerweplatz Kirchheim": {
+    "lat": 49.376951,
+    "lng": 8.6659934,
+    "accuracy": "approximate",
+    "query": "Kerweplatz Kirchheim",
+    "displayName": "Kerweplatz, Kirchheim, Heidelberg, Baden-Württemberg, Deutschland"
+  },
+  "Königstuhl 5a": {
+    "lat": 49.401942,
+    "lng": 8.7295668,
+    "accuracy": "approximate",
+    "query": "Königstuhl 5a",
+    "displayName": "Märchenparadies Heidelberg, 5a, Königstuhl, Altstadt, Heidelberg, Baden-Württemberg, 69117, Deutschland"
+  },
+  "Köpfel": {
+    "lat": 49.4230136,
+    "lng": 8.7421418,
+    "accuracy": "approximate",
+    "query": "Köpfel",
+    "displayName": "Köpfel, Stiftweg, Ziegelhausen, Heidelberg, Baden-Württemberg, 69118, Deutschland"
+  },
+  "Ladenburger Straße 60": {
+    "lat": 49.4141887,
+    "lng": 8.6865101,
+    "accuracy": "house",
+    "query": "Ladenburger Straße 60",
+    "displayName": "60, Ladenburger Straße, Neuenheim, Heidelberg, Baden-Württemberg, 69120, Deutschland"
+  },
+  "Mönchsgasse": null,
+  "Plöck": {
+    "lat": 49.4086778,
+    "lng": 8.6933173,
+    "accuracy": "approximate",
+    "query": "Plöck",
+    "displayName": "Plöck, Bergheim, Heidelberg, Baden-Württemberg, 69115, Deutschland"
+  },
+  "Schlossparkplatz": null,
+  "Theaterstraße": {
+    "lat": 49.4101201,
+    "lng": 8.7040413,
+    "accuracy": "approximate",
+    "query": "Theaterstraße",
+    "displayName": "Theaterstraße, Altstadt, Heidelberg, Baden-Württemberg, 69117, Deutschland"
+  },
+  "Zollhofgarten": {
+    "lat": 49.4018155,
+    "lng": 8.670636,
+    "accuracy": "approximate",
+    "query": "Zollhofgarten",
+    "displayName": "Zollhofgarten, Bahnstadt, Heidelberg, Baden-Württemberg, Deutschland"
+  }
+}

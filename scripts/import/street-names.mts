@@ -608,7 +608,7 @@ async function main() {
 
   const dataDir = path.join(projectRoot, "data");
   const skip =
-    /^_|\.(overrides|parsed|report|line-fixups)\.|^geocode-cache|^osm-address|^frankfurt-pdf-liste/u;
+    /^_|\.(overrides|parsed|report|line-fixups|zusatz)\.|^geocode-cache|^osm-address|^frankfurt-pdf-liste/u;
 
   const files = (await fs.readdir(dataDir)).filter(
     (file) => file.endsWith(".json") && !skip.test(file),

@@ -1,6 +1,6 @@
 # Abdeckung
 
-Stand: 2026-10-30
+Stand: 2026-11-12
 
 Erzeugt von `npm run report:abdeckung`. Nicht von Hand bearbeiten.
 
@@ -28,7 +28,7 @@ zweite auf „wie vielen Menschen nützt es schon".**
 | Importversuch fehlgeschlagen | 0 |
 
 Davon aus amtlicher Quelle: **25**, der Rest aus OpenStreetMap.
-Erfasst sind **38.414 Standorte** mit **64.341 Stellplätzen**.
+Erfasst sind **38.402 Standorte** mit **64.119 Stellplätzen**.
 
 ## Nach Bundesland
 

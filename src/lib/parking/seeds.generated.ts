@@ -23,9 +23,9 @@ import seed16 from "../../../data/euskirchen.json";
 import seed17 from "../../../data/essen.json";
 import seed18 from "../../../data/leipzig.json";
 import seed19 from "../../../data/witten.json";
-import seed20 from "../../../data/chemnitz.json";
-import seed21 from "../../../data/gelsenkirchen.json";
-import seed22 from "../../../data/heidelberg.json";
+import seed20 from "../../../data/heidelberg.json";
+import seed21 from "../../../data/chemnitz.json";
+import seed22 from "../../../data/gelsenkirchen.json";
 import seed23 from "../../../data/magdeburg.json";
 import seed24 from "../../../data/hamm.json";
 import seed25 from "../../../data/potsdam.json";
@@ -3793,8 +3793,8 @@ export const seeds: SeedEntry[] = [
   { seed: seed17 as SeedFile, coverage: "crowdsourced" },
   { seed: seed18 as SeedFile, coverage: "crowdsourced" },
   { seed: seed19 as SeedFile, coverage: "crowdsourced" },
-  { seed: seed20 as SeedFile, coverage: "crowdsourced" },
-  { seed: seed21 as SeedFile, coverage: "official" },
+  { seed: seed20 as SeedFile, coverage: "official" },
+  { seed: seed21 as SeedFile, coverage: "crowdsourced" },
   { seed: seed22 as SeedFile, coverage: "official" },
   { seed: seed23 as SeedFile, coverage: "crowdsourced" },
   { seed: seed24 as SeedFile, coverage: "crowdsourced" },

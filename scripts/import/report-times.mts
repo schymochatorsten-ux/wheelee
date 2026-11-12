@@ -18,7 +18,7 @@ import {
 import { projectRoot } from "./config.mjs";
 
 const skip =
-  /^_|\.(overrides|parsed|report|line-fixups)\.|^geocode-cache|^osm-address|^frankfurt-pdf-liste/u;
+  /^_|\.(overrides|parsed|report|line-fixups|zusatz)\.|^geocode-cache|^osm-address|^frankfurt-pdf-liste/u;
 
 async function main() {
   const dataDir = path.join(projectRoot, "data");

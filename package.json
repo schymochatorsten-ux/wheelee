@@ -16,6 +16,7 @@
     "test:watch": "vitest",
     "import:parse": "tsx scripts/import/parse-pdf.mts",
     "import:geocode": "tsx scripts/import/geocode.mts",
+    "import:heidelberg-web": "tsx scripts/import/heidelberg-web.mts",
     "import:build": "tsx scripts/import/build-seed.mts",
     "import:report": "tsx scripts/import/report.mts",
     "import:osm": "tsx scripts/import/osm-import.mts",

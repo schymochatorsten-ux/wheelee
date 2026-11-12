@@ -2270,6 +2270,109 @@ die Angabe, die sonst beim nächsten Mal wieder zusammengesucht wird.
 
 ---
 
+## 2d.8a Heidelberg: die Antwort der Stadt (2026-11-12)
+
+Der Punkt bleibt in `ToDos.md` offen, jetzt als `[!]`: Die Antwort ist da, die
+Entscheidung daraus steht aus. Hierher gehört, **was geantwortet wurde und was
+die genannte Seite tatsächlich hergibt**.
+
+- **Die Antwort** (Amt für Mobilität, i. A. Frau Schmid, 2026-11-12): Die
+  allgemeinen Behindertenparkplätze stünden auf der Seite
+  „Schwerbehindertenparkplätze“ der Stadt, nach Stadtteilen geteilt. **Kein
+  Wort zu einer Datei, einem WFS oder dem toten CKAN-Eintrag** – die zweite
+  Frage (Liste einmalig samt Lizenzhinweis) ist damit weder zu- noch abgesagt.
+- **Die Seite angesehen, nicht geglaubt**
+  (`heidelberg.de/hd/HD/Leben/Schwerbehindertenparkplaetze.html`): 16
+  HTML-Tabellen in Aufklappern – zweimal A–Z und je eine je Stadtteil
+  (dieselben Einträge, anders geordnet). Die A–Z-Tabellen führen **100
+  Standorte mit zusammen 188 Plätzen**, je Zeile Straße mit Hausnummer, eine
+  laufende Nummer und die Platzzahl, bei manchen eine Zeitbeschränkung
+  („Montag bis Freitag 7 bis 17 Uhr“).
+- **Was fehlt, ist das Entscheidende: Koordinaten.** Unser Bestand vom
+  2026-10-08 hat 214 Einträge mit gemessener Lage aus dem (inzwischen toten)
+  amtlichen GeoJSON. Die Seite hätte Adressen; daraus eine Karte zu machen
+  heißt geokodieren – Adressen an eine dritte Stelle geben und gerundete Lagen
+  übernehmen. **Das ist eine Verschlechterung der Lagegenauigkeit bei einer
+  kleinen Verbesserung der Aktualität**, und beides zusammen ist genau die
+  Abwägung, die nach `Datenpflege.md` nicht nebenbei getroffen wird. Deshalb
+  liegt sie als `[!]` bei Torsten.
+- **Die Größenordnungen passen zusammen** (196 Plätze auf der Seite, 214
+  Einträge im Bestand): Das ist kein Beleg für Richtigkeit, aber es spricht
+  dagegen, dass die Seite nur ein Ausschnitt ist. **Berichtigung:** Oben stand
+  zuerst „188 Plätze“; das war von Hand gezählt und hat die Zeilen mit „je 1
+  Platz“ und die Doppelzeile Uferstraße zu niedrig angesetzt. Das Skript zählt 196.
+
+### Die Ergänzung, auf Torstens Freigabe vom 2026-11-12
+
+Entschieden wurde: **ergänzen, nicht ersetzen.** Die 214 vorhandenen
+Koordinaten sind gemessen, geokodierte wären gerundet; sie zu tauschen wäre
+eine Verschlechterung. Gebaut dafür:
+
+- **`scripts/import/heidelberg-web.mts`** (`npm run import:heidelberg-web`,
+  mit `--dry` nur berichten). Holt die Seite, liest die beiden A–Z-Tabellen
+  (die Stadtteiltabellen führen dieselben Zeilen noch einmal), geokodiert über
+  Nominatim mit einer Anfrage je 1,1 s und schreibt `data/heidelberg.zusatz.json`.
+- **Ein Riegel gegen stille Änderungen:** Das Skript bricht ab, wenn die Seite
+  nicht 100 Zeilen mit 196 Plätzen liefert. Ein Regex-Durchgang durch fremdes
+  HTML ist genau dann gefährlich, wenn sich die Seite ändert und niemand es
+  merkt.
+- **`scripts/import/zusatz.mts`:** `data/<stadt>.zusatz.json` wird beim Bauen
+  der Seed-Datei angehängt (`import-city.mts`), vorhandene IDs gewinnen. Nötig,
+  weil `overrides.json` nur bestehende Einträge über ihre ID ändert und keine
+  neuen hinzufügen kann – und weil ein späterer Import die Seed-Datei sonst
+  überschriebe und die Ergänzung lautlos verlöre. Drei Tests.
+
+**Übernommen wurden 12 von 100 Zeilen**, der Bestand steht jetzt bei **226
+Standorten mit 231 Stellplätzen**. Was die anderen 88 ausgeschlossen hat, ist
+der eigentliche Inhalt dieser Arbeit:
+
+- **22 Zeilen auf bekannten Straßen mit unbekannter Hausnummer** (etwa
+  „Seminarstraße 4“, „Bergheimer Straße 109a“) sind **nicht** übernommen. Ob
+  das neue Plätze sind oder dieselben unter anderer Hausnummer, ist von hier
+  aus nicht zu entscheiden, und `dedupe` fängt sie nicht ab: Es führt nur
+  zusammen, was keine 1,5 m auseinanderliegt – zwischen einer gemessenen und
+  einer geokodierten Koordinate liegen immer mehr. Sie stehen im Bericht des
+  Laufs und wären der nächste Schritt, wenn jemand sie einzeln ansieht.
+- **Dubletten über den Abstand gefunden, aber nicht über den Abstand allein.**
+  „Hauptbahnhof (Willy-Brandt-Platz)“ landet 108 m neben den fünf vorhandenen
+  Plätzen am Willy-Brandt-Platz und ist derselbe Parkplatz; „Friedhof
+  Rohrbach“ liegt 85 m vom Bierhelderweg und ist ein anderer. Eine einzige
+  Schwelle hätte entweder den einen durchgelassen oder den anderen
+  verschluckt. Deshalb: **40 m blind, bis 150 m nur bei Namensgleichheit** –
+  die Seite nennt den Zweitnamen selbst in Klammern.
+- **4 Zeilen ohne Treffer** (Gewerbeschule II, Mönchsgasse/Heiliggeiststraße,
+  Schlossparkplatz, Plöck) wurden übersprungen statt geraten.
+- **10 der 12 sind `approximate`** – Geländemittelpunkte, etwa bei den
+  Friedhöfen. Die App zeigt dort „Position ungefähr“; das ist genau das Feld,
+  für das `geoAccuracy` da ist.
+
+**Zwei Fehler beim Bauen, beide durch Nachrechnen gefunden:**
+
+1. **Der zweite Lauf ergab null neue Standorte.** Die Prüfung „ist die Straße
+   im Bestand bekannt?“ las die Seed-Datei – in der die eigenen Einträge nach
+   dem ersten Lauf schon standen. Jede Zeile galt damit als bekannt. Das
+   Skript rechnet jetzt ohne die Einträge mit dem Präfix `heidelberg-web-` und
+   ersetzt sie bei jedem Lauf; zweimal hintereinander ergibt jetzt denselben
+   Stand.
+2. **Paare und Ecken in einer Zeile** („Poststraße 5 und Poststraße 17“,
+   „Kußmaulstraße / Handschuhsheimer Landstraße“) wurden als unbekannte Straße
+   gelesen, weil die zweite Straße im Namen der ersten landete. Ungeprüft
+   hätte das neun Dubletten ergeben.
+
+- **Zur Lizenz:** Die 12 Einträge tragen als Quelle die Webseite der Stadt,
+  nicht den toten CKAN-Datensatz. Es sind Adressen – Tatsachen –, und die
+  Stadt hat am 2026-11-12 schriftlich auf genau diese Seite verwiesen. Ein
+  Lizenzvermerk steht auf der Seite nicht; der Bestand führt für Heidelberg
+  weiterhin CC BY 4.0 aus `heidelberg.overrides.json`, was für diese 12 Zeilen
+  **nicht** belegt ist. Falls das einmal wichtig wird, ist es hier vermerkt.
+- **Geprüft:** Streuung 8,9 km (Grenze 15 km), 14,8 Plätze je 10.000 Einwohner
+  (Median rund 7, verdächtig ab dem Dreifachen), `dedupe` entfernt nichts,
+  `check:slugs` ohne verwaiste Datei, 727 Unit-Tests, 142 E2E-Tests, Typecheck
+  und Lint. Die Stadtseite im Browser angesehen: 226 Standorte, Zeitangaben
+  stehen an den neuen Einträgen.
+
+---
+
 ## 9.36 Der Weichzeichner, zum vierten Mal (2026-11-12)
 
 - [x] 9.36 **Milchglas raus: die schwebenden Flächen sind deckend** (Torsten, 2026-11-12 mit Screenshot vom iPhone 17 Pro: „Der obere Bereich der App ist unscharf, die oberste geschriebene Zeile sieht aus als wäre ein Weichzeichner davor“; Verdacht auf die Dynamic Island).
