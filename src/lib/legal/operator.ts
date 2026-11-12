@@ -20,8 +20,11 @@
  */
 
 export interface Operator {
-  /** Name der verantwortlichen Person oder Körperschaft. */
-  name: string;
+  /**
+   * Name der verantwortlichen Person oder Körperschaft – **kann fehlen**,
+   * wenn die Umgebung ihn nicht nennt (siehe `operator()`).
+   */
+  name: string | null;
   /**
    * Anschrift, zeilenweise – Straße, Postleitzahl und Ort, Land.
    *
@@ -59,6 +62,20 @@ function addressLines(raw: string): string[] {
     .filter((line) => line.length > 0);
 }
 
+/**
+ * Die Kontaktadresse des Projekts, fest im Quelltext (Torsten, 2026-11-12:
+ * „bitte einfach in den Texten mit angeben, das sollte ohne mich gehen").
+ *
+ * **Warum das kein Widerspruch zur Regel oben ist.** Dort geht es um die
+ * ladungsfähige Anschrift – eine Wohnadresse, die niemand in die Historie
+ * eines öffentlichen Repositories schreiben will. Diese Adresse ist eine
+ * eigens für das Projekt eingerichtete Postfachadresse, sie steht ohnehin
+ * auf jeder Seite, und sie soll gerade dann da sein, wenn auf dem NAS
+ * niemand etwas eingetragen hat. `WHEELEE_OPERATOR_EMAIL` sticht sie, falls
+ * sich das Postfach einmal ändert.
+ */
+const VORGABE_EMAIL = "wheelee@gmx.net";
+
 function value(name: string): string | null {
   const raw = process.env[name]?.trim();
   return raw && raw.length > 0 ? raw : null;
@@ -80,13 +97,18 @@ function value(name: string): string | null {
  * zusätzlich der Weg, auf dem sich jemand überhaupt melden kann – und genau
  * den verlangt § 5 Abs. 1 Nr. 2 („schnelle elektronische Kontaktaufnahme").
  * Gezeigt wird deshalb, was da ist; was fehlt, fehlt sichtbar.
+ *
+ * **Seit dem 2026-11-12 reicht die E-Mail-Adresse**, und die hat eine
+ * Vorgabe (`VORGABE_EMAIL`) – `null` kommt damit praktisch nicht mehr vor.
+ * Der Name bleibt, wo er hingehört: in der Umgebung. Fehlt er, steht der
+ * Kontakt trotzdem da; das ist besser als eine Seite ohne jede Angabe.
  */
 export function operator(): Operator | null {
   const name = value("WHEELEE_OPERATOR_NAME");
   const rawAddress = value("WHEELEE_OPERATOR_ADDRESS");
-  const email = value("WHEELEE_OPERATOR_EMAIL");
+  const email = contactEmail();
 
-  if (!name || !email) return null;
+  if (!email) return null;
 
   const address = rawAddress ? addressLines(rawAddress) : [];
 
@@ -108,7 +130,7 @@ export function operator(): Operator | null {
  * des Betreibers unerheblich.
  */
 export function contactEmail(): string | null {
-  return value("WHEELEE_OPERATOR_EMAIL");
+  return value("WHEELEE_OPERATOR_EMAIL") ?? VORGABE_EMAIL;
 }
 
 /** Nur für Tests und die Anzeige: Zerlegen der Anschrift einzeln prüfbar. */

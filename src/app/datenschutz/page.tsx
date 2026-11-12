@@ -85,14 +85,16 @@ export default function Datenschutz() {
         <h2>1. Verantwortlicher</h2>
         {betreiber ? (
           <>
-            <address className="mt-2 not-italic">
-              {betreiber.name}
-              {betreiber.address.map((line) => (
-                <span key={line} className="block">
-                  {line}
-                </span>
-              ))}
-            </address>
+            {(betreiber.name || betreiber.address.length > 0) && (
+              <address className="mt-2 not-italic">
+                {betreiber.name}
+                {betreiber.address.map((line) => (
+                  <span key={line} className="block">
+                    {line}
+                  </span>
+                ))}
+              </address>
+            )}
             <p className="mt-2">
               E-Mail: <a href={`mailto:${betreiber.email}`}>{betreiber.email}</a>
             </p>

@@ -37,9 +37,18 @@ export default function Impressum() {
 
   return (
     <LegalPage title="Impressum" updated="2026-10-19">
+      {/*
+        **Die Überschrift bleibt, auch wenn nichts darunter steht.** Der
+        Gedanke, den Abschnitt dann zu verbergen, war naheliegend – eine leere
+        Überschrift sieht aus wie ein Ladefehler – und wurde von
+        `e2e/rechtstexte.spec.ts` zurückgewiesen: Der Test hält die
+        Pflichtabschnitte des § 5 DDG fest, und ein Abschnitt, der je nach
+        Konfiguration verschwindet, ist keiner. Einen Satz „Angaben fehlen"
+        gibt es hier ebenfalls nicht mehr (19.14, auf Torstens Wunsch).
+      */}
       <section>
         <h2>Angaben gemäß § 5 DDG</h2>
-        {betreiber ? (
+        {betreiber && (betreiber.name || betreiber.address.length > 0) ? (
           <address className="mt-2 not-italic">
             {betreiber.name}
             {betreiber.address.map((line) => (
@@ -73,7 +82,7 @@ export default function Impressum() {
             „Anschrift wie oben" nur, wenn oben eine steht: Ohne Anschrift
             (10.2a) verwiese der Satz auf etwas, das es nicht gibt. */}
         <p>
-          {betreiber
+          {betreiber?.name
             ? betreiber.address.length > 0
               ? `${betreiber.name}, Anschrift wie oben.`
               : `${betreiber.name}, Kontakt wie oben.`

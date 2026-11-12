@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
-import { addressLines, operator } from "./operator";
+import { addressLines, contactEmail, operator } from "./operator";
 
 /**
  * Betreiberangaben für Impressum und Datenschutzerklärung (ToDo 10.2).
@@ -49,18 +49,31 @@ describe("operator", () => {
     expect(result?.email).toBe("kontakt@example.de");
   });
 
-  it("gibt null zurück, wenn gar nichts gesetzt ist", () => {
-    expect(operator()).toBeNull();
+  it("fällt ohne Umgebung auf die Projektadresse zurück", () => {
+    // Seit dem 2026-11-12 steht die Kontaktadresse im Quelltext, damit die
+    // Seite auch ohne Eintrag auf dem NAS einen Weg nennt (21.0).
+    const result = operator();
+
+    expect(result?.email).toBe("wheelee@gmx.net");
+    expect(result?.name).toBeNull();
+    expect(contactEmail()).toBe("wheelee@gmx.net");
   });
 
-  it.each([
-    ["Name", "WHEELEE_OPERATOR_NAME"],
-    ["E-Mail", "WHEELEE_OPERATOR_EMAIL"],
-  ])("gibt null zurück, wenn die %s fehlt", (_label, key) => {
-    setPflichtangaben();
-    delete process.env[key];
+  it("lässt die Umgebung gegen die Vorgabe gewinnen", () => {
+    process.env.WHEELEE_OPERATOR_EMAIL = "anders@example.de";
 
-    expect(operator()).toBeNull();
+    expect(operator()?.email).toBe("anders@example.de");
+    expect(contactEmail()).toBe("anders@example.de");
+  });
+
+  it("zeigt die Adresse auch ohne Namen", () => {
+    setPflichtangaben();
+    delete process.env.WHEELEE_OPERATOR_NAME;
+
+    const result = operator();
+
+    expect(result?.name).toBeNull();
+    expect(result?.email).toBe("kontakt@example.de");
   });
 
   it("zeigt Name und E-Mail auch ohne Anschrift", () => {
@@ -80,11 +93,12 @@ describe("operator", () => {
   it("behandelt eine leere Angabe wie eine fehlende", () => {
     // Eine Variable, die in der `.env` steht, aber nichts enthält, ist der
     // wahrscheinlichste Fall beim Einrichten – jemand kopiert die Vorlage und
-    // löscht den Beispielwert, statt ihn zu ersetzen.
+    // löscht den Beispielwert, statt ihn zu ersetzen. Bei der E-Mail greift
+    // dann die Vorgabe aus dem Quelltext, nicht die leere Zeichenkette.
     setPflichtangaben();
     process.env.WHEELEE_OPERATOR_EMAIL = "   ";
 
-    expect(operator()).toBeNull();
+    expect(operator()?.email).toBe("wheelee@gmx.net");
   });
 
   it("lässt die Anschrift leer, wenn sie nur Trennzeichen enthält", () => {
