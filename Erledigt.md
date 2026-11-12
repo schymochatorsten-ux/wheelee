@@ -2373,6 +2373,40 @@ der eigentliche Inhalt dieser Arbeit:
 
 ---
 
+## 19.10 Was der nächtliche Lauf mit München macht (2026-11-12)
+
+Nachgesehen auf Torstens Frage „wird nächtlich geprüft, ob München aktuellere
+Daten hat?“. Kein offener Punkt daraus, aber die Antwort gehört festgehalten –
+sie steht an drei Stellen im Code verteilt und wird sonst jedes Mal neu
+zusammengesucht.
+
+- **Ja, München läuft mit – aber nicht jede Nacht geholt.** Der Münchner WFS
+  nennt kein Änderungsdatum, es gibt also nichts, woran eine nächtliche
+  Nachfrage etwas erkennen könnte. `auto-update.mts` zählt Städte mit
+  handgepflegter amtlicher Quelle deshalb ausdrücklich mit und stellt sie
+  **nach 30 Tagen** fällig; dann wird die Quelle wirklich geholt und
+  Standort für Standort verglichen. Letzter Import 2026-11-05, nächster
+  Termin also ab dem 2026-12-05. Ein Vergleich der Daten ist mehr wert als
+  ein Metadatum: Er findet auch Änderungen, die keinen Zeitstempel bewegen.
+- **Deshalb steht auf `/abdeckung` bei München „–“.** „Zuletzt geprüft“
+  schreibt der Lauf nur bei einem gelungenen Vergleich; für München gab es
+  den auf dem NAS noch nicht, der Lauf dort läuft erst seit dem 2026-11-09.
+  Der Import vom 2026-11-05 lief auf Torstens Rechner, sein Vermerk steht in
+  der dortigen `.data/geprueft.json` – die Webseite sieht nur die Datei neben
+  der Datenbank auf dem NAS. Das Feld füllt sich von selbst, sobald der
+  Termin da ist.
+- **Dabei einen falschen Text gefunden und berichtigt** (`check-sources.mts`):
+  Der Prüflauf meldete „München · OpenStreetMap, zuletzt vor 7 Tagen geholt“.
+  Der Zweig gilt für Städte ohne Eintrag in `_quellen-status.json`, und
+  München hat keinen, weil `sources:scan` nur GovData kennt – die Stadt steht
+  dort nicht. Die Meldung unterstellte dann OpenStreetMap, obwohl die Stadt
+  seit dem 2026-10-29 amtlich kommt. Jetzt heißt es „amtliche Quelle von Hand
+  gepflegt“. **Am Takt ändert das nichts** – wer fällig ist, entscheidet
+  `auto-update.mts` –, aber der Bericht war das Einzige, woran man es
+  ablesen konnte, und er sagte das Falsche.
+
+---
+
 ## 9.36 Der Weichzeichner, zum vierten Mal (2026-11-12)
 
 - [x] 9.36 **Milchglas raus: die schwebenden Flächen sind deckend** (Torsten, 2026-11-12 mit Screenshot vom iPhone 17 Pro: „Der obere Bereich der App ist unscharf, die oberste geschriebene Zeile sieht aus als wäre ein Weichzeichner davor“; Verdacht auf die Dynamic Island).

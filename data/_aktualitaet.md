@@ -13,10 +13,10 @@ heißt also „sieh nach“, nicht „die Daten sind neu“.
 
 | Befund | Städte |
 | --- | ---: |
-| 🔄 geändert | 2 |
+| 🔄 geändert | 9 |
 | 💀 nicht mehr abrufbar | 0 |
 | 🟡 amtliche Quelle ungenutzt | 6 |
-| ✅ unverändert | 10 |
+| ✅ unverändert | 3 |
 | ❔ nicht prüfbar | 2 |
 | ⬜ kein Änderungsdatum | 3738 |
 
@@ -37,7 +37,7 @@ geschah.
 npm run import:city -- bochum karlsruhe kiel rostock norderstedt viersen
 ```
 
-- **Bochum** – amtliche Quelle erreichbar, verwendet wird OpenStreetMap · Quelle vom 2026-11-07 · Importvermerk: amtliche Quelle nicht nutzbar, OSM verwendet
+- **Bochum** – amtliche Quelle erreichbar, verwendet wird OpenStreetMap · Quelle vom 2026-11-12 · Importvermerk: amtliche Quelle nicht nutzbar, OSM verwendet
 - **Karlsruhe** – amtliche Quelle erreichbar, verwendet wird OpenStreetMap · Quelle vom 2026-11-09 · Importvermerk: amtliche Quelle nicht nutzbar, OSM verwendet
 - **Kiel** – amtliche Quelle erreichbar, verwendet wird OpenStreetMap · Quelle vom 2026-11-11 · Importvermerk: amtliche Quelle nicht nutzbar, OSM verwendet
 - **Rostock** – amtliche Quelle erreichbar, verwendet wird OpenStreetMap · Quelle vom 2026-11-08 · Importvermerk: amtliche Quelle „Rostocker Heide" lieferte nur 9 Stellplätze (9 Standorte) – verdächtig leer, OSM verwendet
@@ -47,110 +47,119 @@ npm run import:city -- bochum karlsruhe kiel rostock norderstedt viersen
 ## Neu zu importieren
 
 ```bash
-npm run import:city -- duesseldorf bielefeld
+npm run import:city -- berlin koeln frankfurt duesseldorf dortmund dresden bielefeld gelsenkirchen neuss ulm bottrop
 npm run import:streets
 npm run import:index
 ```
 
-- **Düsseldorf** – Quelle vom 2026-11-12, Import vom 2026-11-11
-- **Bielefeld** – Quelle vom 2026-11-12, Import vom 2026-11-11
+- **Berlin** – Quelle vom 2026-11-04, Import vom 2026-11-01
+- **Köln** – Quelle vom 2026-11-12, Import vom 2026-11-10
+- **Frankfurt am Main** – Quelle vom 2026-11-09, Import vom 2026-11-01
+- **Düsseldorf** – Quelle vom 2026-11-12, Import vom 2026-11-12
+- **Dortmund** – Quelle vom 2026-11-12, Import vom 2026-11-01
+- **Dresden** – Quelle vom 2026-11-12, Import vom 2026-11-10
+- **Bielefeld** – Quelle vom 2026-11-12, Import vom 2026-11-01
+- **Gelsenkirchen** – Quelle nennt kein Änderungsdatum
+- **Neuss** – Quelle vom 2026-11-12, Import vom 2026-11-01
+- **Ulm** – Quelle vom 2026-11-09, Import vom 2026-11-01
+- **Bottrop** – Quelle nennt kein Änderungsdatum
 
 ## Alle Städte
 
 | | Stadt | Befund | Einzelheiten |
 | --- | --- | --- | --- |
-| ✅ | Berlin | unverändert | Quelle vom 2026-11-04 |
+| 🔄 | Berlin | geändert | Quelle vom 2026-11-04, Import vom 2026-11-01 |
 | ✅ | Hamburg | unverändert | Quelle vom 2026-11-09 · 6 Ressource(n) mit Problem |
-| ⬜ | München | kein Änderungsdatum | OpenStreetMap, zuletzt vor 6 Tagen geholt |
-| ✅ | Köln | unverändert | Quelle vom 2026-11-09 |
-| ✅ | Frankfurt am Main | unverändert | Quelle vom 2026-11-09 |
-| 🔄 | Düsseldorf | geändert | Quelle vom 2026-11-12, Import vom 2026-11-11 |
-| ⬜ | Stuttgart | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Leipzig | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ✅ | Dortmund | unverändert | Quelle vom 2026-11-08 |
-| ⬜ | Bremen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Essen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ✅ | Dresden | unverändert | Quelle vom 2026-11-09 |
-| ⬜ | Nürnberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Hannover | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Duisburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| 🟡 | Bochum | amtliche Quelle ungenutzt | amtliche Quelle erreichbar, verwendet wird OpenStreetMap · Quelle vom 2026-11-07 · Importvermerk: amtliche Quelle nicht nutzbar, OSM verwendet |
-| ⬜ | Wuppertal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| 🔄 | Bielefeld | geändert | Quelle vom 2026-11-12, Import vom 2026-11-11 |
-| ⬜ | Bonn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Mannheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
+| ⬜ | München | kein Änderungsdatum | amtliche Quelle von Hand gepflegt, zuletzt vor 7 Tagen geholt |
+| 🔄 | Köln | geändert | Quelle vom 2026-11-12, Import vom 2026-11-10 |
+| 🔄 | Frankfurt am Main | geändert | Quelle vom 2026-11-09, Import vom 2026-11-01 |
+| 🔄 | Düsseldorf | geändert | Quelle vom 2026-11-12, Import vom 2026-11-12 |
+| ⬜ | Stuttgart | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Leipzig | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| 🔄 | Dortmund | geändert | Quelle vom 2026-11-12, Import vom 2026-11-01 |
+| ⬜ | Bremen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Essen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| 🔄 | Dresden | geändert | Quelle vom 2026-11-12, Import vom 2026-11-10 |
+| ⬜ | Nürnberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Hannover | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Duisburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| 🟡 | Bochum | amtliche Quelle ungenutzt | amtliche Quelle erreichbar, verwendet wird OpenStreetMap · Quelle vom 2026-11-12 · Importvermerk: amtliche Quelle nicht nutzbar, OSM verwendet |
+| ⬜ | Wuppertal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| 🔄 | Bielefeld | geändert | Quelle vom 2026-11-12, Import vom 2026-11-01 |
+| ⬜ | Bonn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Mannheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
 | 🟡 | Karlsruhe | amtliche Quelle ungenutzt | amtliche Quelle erreichbar, verwendet wird OpenStreetMap · Quelle vom 2026-11-09 · Importvermerk: amtliche Quelle nicht nutzbar, OSM verwendet |
-| ⬜ | Münster | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Augsburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Wiesbaden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
+| ⬜ | Münster | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Augsburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Wiesbaden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
 | ❔ | Gelsenkirchen | nicht prüfbar | Quelle nennt kein Änderungsdatum |
-| ⬜ | Mönchengladbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
+| ⬜ | Mönchengladbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
 | ⬜ | Aachen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Braunschweig | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
+| ⬜ | Braunschweig | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
 | 🟡 | Kiel | amtliche Quelle ungenutzt | amtliche Quelle erreichbar, verwendet wird OpenStreetMap · Quelle vom 2026-11-11 · Importvermerk: amtliche Quelle nicht nutzbar, OSM verwendet |
-| ⬜ | Chemnitz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 32 Tagen geholt |
-| ⬜ | Magdeburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
+| ⬜ | Chemnitz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 33 Tagen geholt |
+| ⬜ | Magdeburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
 | ✅ | Freiburg im Breisgau | unverändert | Quelle vom 2026-09-23 |
-| ⬜ | Krefeld | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Halle (Saale) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Mainz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Erfurt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Lübeck | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Oberhausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
+| ⬜ | Krefeld | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Halle (Saale) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Mainz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Erfurt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Lübeck | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Oberhausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
 | 🟡 | Rostock | amtliche Quelle ungenutzt | amtliche Quelle erreichbar, verwendet wird OpenStreetMap · Quelle vom 2026-11-08 · Importvermerk: amtliche Quelle „Rostocker Heide" lieferte nur 9 Stellplätze (9 Standorte) – verdächtig leer, OSM verwendet |
-| ⬜ | Kassel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Hagen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Potsdam | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Saarbrücken | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Hamm | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Ludwigshafen am Rhein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Oldenburg (Oldb) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Mülheim an der Ruhr | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Leverkusen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Darmstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Osnabrück | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Solingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Paderborn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Herne | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
+| ⬜ | Kassel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Hagen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Potsdam | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Saarbrücken | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Hamm | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Ludwigshafen am Rhein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Oldenburg (Oldb) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Mülheim an der Ruhr | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Leverkusen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Darmstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Osnabrück | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Solingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Paderborn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Herne | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
 | ✅ | Heidelberg | unverändert | Quelle vom 2026-09-23 · 1 Ressource(n) mit Problem |
-| ✅ | Neuss | unverändert | Quelle vom 2026-11-09 |
-| ⬜ | Regensburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Ingolstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Pforzheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Würzburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Offenbach am Main | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Fürth | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Heilbronn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ✅ | Ulm | unverändert | Quelle vom 2026-11-09 · 1 Ressource(n) mit Problem |
-| ⬜ | Wolfsburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Göttingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Reutlingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Bremerhaven | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
+| 🔄 | Neuss | geändert | Quelle vom 2026-11-12, Import vom 2026-11-01 |
+| ⬜ | Regensburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Ingolstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Pforzheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Würzburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Offenbach am Main | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Fürth | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Heilbronn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| 🔄 | Ulm | geändert | Quelle vom 2026-11-09, Import vom 2026-11-01 |
+| ⬜ | Wolfsburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Göttingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Reutlingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Bremerhaven | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
 | ❔ | Bottrop | nicht prüfbar | Quelle nennt kein Änderungsdatum |
-| ⬜ | Erlangen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Recklinghausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Remscheid | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Koblenz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Bergisch Gladbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Jena | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Salzgitter | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Trier | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Siegen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Moers | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Gütersloh | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Kaiserslautern | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Hildesheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
+| ⬜ | Erlangen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Recklinghausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Remscheid | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Koblenz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Bergisch Gladbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Jena | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Salzgitter | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Trier | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Siegen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Moers | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Gütersloh | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Kaiserslautern | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
+| ⬜ | Hildesheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
 | ⬜ | Schwerin | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
 | ⬜ | Hanau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
 | ⬜ | Flensburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
 | ⬜ | Esslingen am Neckar | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
 | ⬜ | Gera | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Cottbus | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
+| ⬜ | Cottbus | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
 | ⬜ | Düren | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
 | ⬜ | Ludwigsburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
 | ⬜ | Tübingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
 | ⬜ | Iserlohn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Witten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
+| ⬜ | Witten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 35 Tagen geholt |
 | ⬜ | Villingen-Schwenningen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
 | ⬜ | Ratingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
 | ⬜ | Gießen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
@@ -230,7 +239,7 @@ npm run import:index
 | ⬜ | Hilden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
 | ⬜ | Wetzlar | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
 | ⬜ | Schweinfurt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
-| ⬜ | Bad Kreuznach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Bad Kreuznach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Langenhagen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
 | ⬜ | Stralsund | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
 | ⬜ | Bad Salzuflen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 33 Tagen geholt |
@@ -249,509 +258,509 @@ npm run import:index
 | ⬜ | Gummersbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
 | ⬜ | Peine | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
 | ⬜ | Lahr/Schwarzwald | kein Änderungsdatum | OpenStreetMap, zuletzt vor 33 Tagen geholt |
-| ⬜ | Rastatt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 33 Tagen geholt |
+| ⬜ | Rastatt | kein Änderungsdatum | amtliche Quelle von Hand gepflegt, zuletzt vor 33 Tagen geholt |
 | ⬜ | Ravensburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 34 Tagen geholt |
 | ⬜ | Bad Oeynhausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 33 Tagen geholt |
 | ⬜ | Heidenheim an der Brenz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 33 Tagen geholt |
 | ⬜ | Gronau (Westf.) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 33 Tagen geholt |
 | ⬜ | Cuxhaven | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Leonberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bergkamen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Leonberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Bergkamen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Oranienburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Straubing | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Alsdorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Erftstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Stade | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Herzogenrath | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Landau in der Pfalz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 33 Tagen geholt |
-| ⬜ | Bornheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Straubing | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Alsdorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Erftstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Stade | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Herzogenrath | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Landau in der Pfalz | kein Änderungsdatum | amtliche Quelle von Hand gepflegt, zuletzt vor 33 Tagen geholt |
+| ⬜ | Bornheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Hennef (Sieg) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Frankenthal (Pfalz) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Rheda-Wiedenbrück | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Dülmen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bruchsal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 33 Tagen geholt |
-| ⬜ | Soest | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Frankenthal (Pfalz) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Rheda-Wiedenbrück | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Dülmen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Bruchsal | kein Änderungsdatum | amtliche Quelle von Hand gepflegt, zuletzt vor 33 Tagen geholt |
+| ⬜ | Soest | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Singen (Hohentwiel) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
 | ⬜ | Neunkirchen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Dachau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Fellbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Albstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Hof | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Oberursel (Taunus) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Melle | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Gotha | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bünde | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Filderstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Kaufbeuren | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Weinheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Schwerte | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Falkensee | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Rottenburg am Neckar | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Brühl | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Erkelenz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Rodgau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Wittenberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Pinneberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Neustadt am Rübenberge | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bernau bei Berlin | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Lehrte | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Memmingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Seevetal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Erkrath | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Monheim am Rhein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bietigheim-Bissingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Wismar | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Kaarst | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Heinsberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Borken | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Gifhorn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Aurich | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Schwäbisch Hall | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Amberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Dachau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Fellbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Albstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Hof | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Oberursel (Taunus) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Melle | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Gotha | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Bünde | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Filderstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Kaufbeuren | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Weinheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Schwerte | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Falkensee | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Rottenburg am Neckar | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Brühl | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Erkelenz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Rodgau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Wittenberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Pinneberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Neustadt am Rübenberge | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Bernau bei Berlin | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Lehrte | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Memmingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Seevetal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Erkrath | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Monheim am Rhein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Bietigheim-Bissingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Wismar | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Kaarst | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Heinsberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Borken | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Gifhorn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Aurich | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Schwäbisch Hall | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Amberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Siegburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Weiden i.d.OPf. | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Kamen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Kirchheim unter Teck | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Nettetal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Laatzen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Weiden i.d.OPf. | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Kamen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Kirchheim unter Teck | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Nettetal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Laatzen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Buchholz in der Nordheide | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Dreieich | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Schorndorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Freiberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Eberswalde | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Wunstorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Hückelhoven | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Leinfelden-Echterdingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bensheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Dreieich | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Schorndorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Freiberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Eberswalde | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Wunstorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Hückelhoven | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Leinfelden-Echterdingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Bensheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Neumarkt i.d.OPf. | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Coburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Coburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Völklingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Germering | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Buxtehude | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Schwabach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Löhne | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Nürtingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Nordhausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Eisenach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Ansbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Königswinter | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Ahaus | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Würselen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Pirna | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Lemgo | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Ostfildern | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Pirmasens | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Kehl | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Mettmann | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Königs Wusterhausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Freital | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Hofheim am Taunus | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Maintal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Germering | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Buxtehude | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Schwabach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Löhne | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Nürtingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Nordhausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Eisenach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Ansbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Königswinter | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Ahaus | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Würselen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Pirna | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Lemgo | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Ostfildern | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Pirmasens | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Kehl | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Mettmann | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Königs Wusterhausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Freital | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Hofheim am Taunus | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Maintal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Ilmenau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Backnang | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Langen (Hessen) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Ettlingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 33 Tagen geholt |
-| ⬜ | Niederkassel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Coesfeld | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Kamp-Lintfort | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Greven | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Haltern am See | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Wesseling | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Weißenfels | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Neu-Isenburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Halberstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Stendal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Warendorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Backnang | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Langen (Hessen) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Ettlingen | kein Änderungsdatum | amtliche Quelle von Hand gepflegt, zuletzt vor 33 Tagen geholt |
+| ⬜ | Niederkassel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Coesfeld | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Kamp-Lintfort | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Greven | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Haltern am See | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Wesseling | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Weißenfels | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Neu-Isenburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Halberstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Stendal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Warendorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Saarlouis | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bautzen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Fürstenfeldbruck | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Papenburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Bautzen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Fürstenfeldbruck | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Papenburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Erding | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Beckum | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Tuttlingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Sinsheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Winsen (Luhe) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Meppen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Beckum | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Tuttlingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Sinsheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Winsen (Luhe) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Meppen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Bitterfeld-Wolfen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Cloppenburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Porta Westfalica | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Mühlhausen/Thüringen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Emsdetten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bad Vilbel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Limburg a.d.Lahn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Crailsheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Voerde (Niederrhein) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Balingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Dietzenbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Datteln | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Cloppenburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Porta Westfalica | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Mühlhausen/Thüringen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Emsdetten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Bad Vilbel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Limburg a.d.Lahn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Crailsheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Voerde (Niederrhein) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Balingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Dietzenbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Datteln | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | St. Ingbert | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Lage | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Lage | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Deggendorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Ingelheim am Rhein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Hemer | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Geldern | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Wedel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Goch | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Jülich | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Steinfurt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Suhl | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Rheinfelden (Baden) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Korschenbroich | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Biberach an der Riß | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Ahrensburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Viernheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Merseburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Wermelskirchen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Seelze | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Herrenberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Kempen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Leer (Ostfriesland) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Kornwestheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Barsinghausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Stuhr | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Schwedt/Oder | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Vechta | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Geesthacht | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Zweibrücken | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Forchheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Radebeul | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bad Nauheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Ingelheim am Rhein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Hemer | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Geldern | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Wedel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Goch | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Jülich | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Steinfurt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Suhl | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Rheinfelden (Baden) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Korschenbroich | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Biberach an der Riß | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Ahrensburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Viernheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Merseburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Wermelskirchen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Seelze | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Herrenberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Kempen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Leer (Ostfriesland) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Kornwestheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Barsinghausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Stuhr | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Schwedt/Oder | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Vechta | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Geesthacht | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Zweibrücken | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Forchheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Radebeul | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Bad Nauheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Achim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Uelzen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Itzehoe | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Uelzen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Itzehoe | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Nienburg (Weser) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Lampertheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Weil am Rhein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Wernigerode | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Delbrück | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Fürstenwalde/Spree | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Lampertheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Weil am Rhein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Wernigerode | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Delbrück | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Fürstenwalde/Spree | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Neuruppin | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Naumburg (Saale) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Emmerich am Rhein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Radolfzell am Bodensee | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Naumburg (Saale) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Emmerich am Rhein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Radolfzell am Bodensee | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Merzig | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Mörfelden-Walldorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Ganderkesee | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Oer-Erkenschwick | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Georgsmarienhütte | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Rheinberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Altenburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Mörfelden-Walldorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Ganderkesee | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Oer-Erkenschwick | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Georgsmarienhütte | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Rheinberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Altenburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Geestland | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Burgdorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Walsrode | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bernburg (Saale) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Lohmar | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Weyhe | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Kreuztal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bad Hersfeld | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Hoyerswerda | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Rendsburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Schönebeck (Elbe) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Friedberg (Hessen) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bretten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 33 Tagen geholt |
-| ⬜ | Werne | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Idar-Oberstein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Taunusstein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Neuburg a.d.Donau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Haan | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Rietberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Andernach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Gevelsberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Burgdorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Walsrode | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Bernburg (Saale) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Lohmar | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Weyhe | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Kreuztal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Bad Hersfeld | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Hoyerswerda | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Rendsburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Schönebeck (Elbe) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Friedberg (Hessen) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Bretten | kein Änderungsdatum | amtliche Quelle von Hand gepflegt, zuletzt vor 33 Tagen geholt |
+| ⬜ | Werne | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Idar-Oberstein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Taunusstein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Neuburg a.d.Donau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Haan | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Rietberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Andernach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Gevelsberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Friedberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Schwandorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Winnenden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Wedemark | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Einbeck | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Osterholz-Scharmbeck | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bad Zwischenahn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Meschede | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Werl | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Gaggenau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 33 Tagen geholt |
-| ⬜ | Ludwigsfelde | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Emmendingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Ennepetal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Riesa | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Griesheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Landsberg am Lech | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Tönisvorst | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Baesweiler | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Mühlheim am Main | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Schwandorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Winnenden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Wedemark | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Einbeck | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Osterholz-Scharmbeck | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Bad Zwischenahn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Meschede | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Werl | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Gaggenau | kein Änderungsdatum | amtliche Quelle von Hand gepflegt, zuletzt vor 33 Tagen geholt |
+| ⬜ | Ludwigsfelde | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Emmendingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Ennepetal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Riesa | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Griesheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Landsberg am Lech | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Tönisvorst | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Baesweiler | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Mühlheim am Main | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Mechernich | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Waltrop | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Blankenfelde-Mahlow | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Saalfeld/Saale | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Güstrow | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Vaihingen an der Enz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Meißen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Waltrop | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Blankenfelde-Mahlow | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Saalfeld/Saale | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Güstrow | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Vaihingen an der Enz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Meißen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Rödermark | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Rösrath | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Springe | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Arnstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bühl | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Geilenkirchen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Unterschleißheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Hattersheim am Main | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Wangen im Allgäu | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Zeitz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Henstedt-Ulzburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Rösrath | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Springe | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Arnstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Bühl | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Geilenkirchen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Unterschleißheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Hattersheim am Main | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Wangen im Allgäu | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Zeitz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Henstedt-Ulzburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Garmisch-Partenkirchen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Kevelaer | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Reinbek | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bramsche | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Kelkheim (Taunus) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Höxter | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Lohne (Oldenburg) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Wegberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Leichlingen (Rhld.) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bad Neuenahr-Ahrweiler | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Schwelm | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Baunatal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Kevelaer | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Reinbek | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Bramsche | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Kelkheim (Taunus) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Höxter | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Lohne (Oldenburg) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Wegberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Leichlingen (Rhld.) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Bad Neuenahr-Ahrweiler | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Schwelm | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Baunatal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Königsbrunn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Heppenheim (Bergstraße) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Geislingen an der Steige | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Ehingen (Donau) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Wiesloch | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Strausberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Teltow | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Sundern (Sauerland) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Grimma | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Northeim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Olching | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Neukirchen-Vluyn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Heppenheim (Bergstraße) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Geislingen an der Steige | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Ehingen (Donau) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Wiesloch | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Strausberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Teltow | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Sundern (Sauerland) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Grimma | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Northeim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Olching | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Neukirchen-Vluyn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Verden (Aller) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Weinstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Werder (Havel) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Butzbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Pfaffenhofen a.d.Ilm | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Weinstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Werder (Havel) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Butzbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Pfaffenhofen a.d.Ilm | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Rheinbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Hamminkeln | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Hamminkeln | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Leimen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Hohen Neuendorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Lübbecke | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Mühlacker | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Hohen Neuendorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Lübbecke | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Mühlacker | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Achern | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Hennigsdorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Hennigsdorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Overath | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Kulmbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Weiterstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Unterhaching | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Neckarsulm | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Schloß Holte-Stukenbrock | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Heiligenhaus | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Zirndorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Kulmbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Weiterstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Unterhaching | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Neckarsulm | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Schloß Holte-Stukenbrock | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Heiligenhaus | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Zirndorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Remseck am Neckar | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Lauf a.d.Pegnitz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Lauf a.d.Pegnitz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Wetter (Ruhr) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Geretsried | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Selm | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Delitzsch | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Nordenham | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Friedrichsdorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Lindau (Bodensee) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Verl | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Waldkraiburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Öhringen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Horb am Neckar | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Aschersleben | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Rinteln | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Espelkamp | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Harsewinkel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Roth | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Geretsried | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Selm | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Delitzsch | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Nordenham | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Friedrichsdorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Lindau (Bodensee) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Verl | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Waldkraiburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Öhringen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Horb am Neckar | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Aschersleben | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Rinteln | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Espelkamp | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Harsewinkel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Roth | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | St. Wendel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Salzkotten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Brilon | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Pfungstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Salzkotten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Brilon | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Pfungstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Sangerhausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
 | ⬜ | Groß-Gerau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bingen am Rhein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Schleswig | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Petershagen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Markkleeberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bedburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Obertshausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Zittau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Syke | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Lüdinghausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Stutensee | kein Änderungsdatum | OpenStreetMap, zuletzt vor 33 Tagen geholt |
-| ⬜ | Norden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Wiehl | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Helmstedt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Rathenow | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bad Honnef | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Waldshut-Tiengen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Meiningen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Calw | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Ellwangen (Jagst) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Warstein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Rottweil | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Vaterstetten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Weingarten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Bingen am Rhein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Schleswig | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Petershagen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Markkleeberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Bedburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Obertshausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Zittau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Syke | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Lüdinghausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Stutensee | kein Änderungsdatum | amtliche Quelle von Hand gepflegt, zuletzt vor 33 Tagen geholt |
+| ⬜ | Norden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Wiehl | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Helmstedt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Rathenow | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Bad Honnef | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Waldshut-Tiengen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Meiningen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Calw | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Ellwangen (Jagst) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Warstein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Rottweil | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Vaterstetten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Weingarten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Meckenheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Rudolstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bad Oldesloe | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Schmallenberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Varel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Eisenhüttenstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Olpe | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Wandlitz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Starnberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Freudenstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Mosbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Plettenberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Haren (Ems) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Übach-Palenberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Lennestadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Herzogenaurach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Sprockhövel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Leutkirch im Allgäu | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Köthen (Anhalt) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Husum | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Isernhagen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bad Mergentheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Westerstede | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Jüchen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Nagold | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Döbeln | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Ronnenberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Rudolstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Bad Oldesloe | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Schmallenberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Varel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Eisenhüttenstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Olpe | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Wandlitz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Starnberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Freudenstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Mosbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Plettenberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Haren (Ems) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Übach-Palenberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Lennestadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Herzogenaurach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Sprockhövel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Leutkirch im Allgäu | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Köthen (Anhalt) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Husum | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Isernhagen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Bad Mergentheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Westerstede | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Jüchen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Nagold | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Döbeln | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Ronnenberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Alfter | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Limbach-Oberfrohna | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Senden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Attendorn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Neu Wulmstorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Limbach-Oberfrohna | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Senden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Attendorn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Neu Wulmstorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Kaltenkirchen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Hann.Münden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Senftenberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Sehnde | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Gersthofen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Moormerland | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Hann.Münden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Senftenberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Sehnde | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Gersthofen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Moormerland | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Gelnhausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Weilheim i.OB | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Warburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bad Kissingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Staßfurt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Weilheim i.OB | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Warburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Bad Kissingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Staßfurt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Metzingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Riedstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Quedlinburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Rotenburg (Wümme) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bad Soden am Taunus | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Vreden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Netphen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Dillenburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Salzwedel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Kitzingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Riedstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Quedlinburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Rotenburg (Wümme) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Bad Soden am Taunus | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Vreden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Netphen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Dillenburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Salzwedel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Kitzingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Neusäß | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
 | ⬜ | Korbach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Rastede | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Haar | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Wertheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Rastede | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Haar | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Wertheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Sonneberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Laupheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Ottobrunn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Apolda | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Herdecke | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Überlingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Laupheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Ottobrunn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Apolda | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Herdecke | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Überlingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Bad Rappenau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Ditzingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Eppingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Stadthagen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Wallenhorst | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Karben | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Ditzingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Eppingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Stadthagen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Wallenhorst | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Karben | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Burg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bad Salzungen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Lengerich | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Quickborn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Soltau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Eisleben | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Mühldorf a.Inn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Waghäusel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 33 Tagen geholt |
-| ⬜ | Büdingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Eschborn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Eislingen/Fils | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Aichach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Heide | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Rees | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Gauting | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Gardelegen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Donaueschingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Zülpich | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Schwetzingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bad Krozingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Mössingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Sonthofen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Germersheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 33 Tagen geholt |
-| ⬜ | Hockenheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Lindlar | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Wipperfürth | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Bad Salzungen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Lengerich | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Quickborn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Soltau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Eisleben | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Mühldorf a.Inn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Waghäusel | kein Änderungsdatum | amtliche Quelle von Hand gepflegt, zuletzt vor 33 Tagen geholt |
+| ⬜ | Büdingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Eschborn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Eislingen/Fils | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Aichach | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Heide | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Rees | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Gauting | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Gardelegen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Donaueschingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Zülpich | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Schwetzingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Bad Krozingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Mössingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Sonthofen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Germersheim | kein Änderungsdatum | amtliche Quelle von Hand gepflegt, zuletzt vor 33 Tagen geholt |
+| ⬜ | Hockenheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Lindlar | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Wipperfürth | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Osterode am Harz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Büren | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Büren | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Radevormwald | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Eckernförde | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Eckernförde | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Dillingen/Saar | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Versmold | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Waldkirch | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Glauchau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Stadtallendorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Elsdorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Günzburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Versmold | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Waldkirch | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Glauchau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Stadtallendorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Elsdorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Günzburg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Zossen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Karlsfeld | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Halle (Westf.) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Schifferstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Flörsheim am Main | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Seligenstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Rheinstetten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 33 Tagen geholt |
-| ⬜ | Groß-Umstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Xanten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Wildeshausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Panketal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Spremberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Westoverledingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Zerbst/Anhalt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Neufahrn b.Freising | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Luckenwalde | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Schortens | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Stadtlohn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Geseke | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Sondershausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Traunstein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Puchheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Karlsfeld | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Halle (Westf.) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Schifferstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Flörsheim am Main | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Seligenstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Rheinstetten | kein Änderungsdatum | amtliche Quelle von Hand gepflegt, zuletzt vor 33 Tagen geholt |
+| ⬜ | Groß-Umstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Xanten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Wildeshausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Panketal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Spremberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Westoverledingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Zerbst/Anhalt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Neufahrn b.Freising | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Luckenwalde | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Schortens | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Stadtlohn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Geseke | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Sondershausen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Traunstein | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Puchheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Senden | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bad Waldsee | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Dingolfing | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Wülfrath | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Enger | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Schramberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Werdau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Bruchköbel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Fröndenberg/Ruhr | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Lichtenfels | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Coswig | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Wachtberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Bad Waldsee | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Dingolfing | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Wülfrath | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Enger | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Schramberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Werdau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Bruchköbel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Fröndenberg/Ruhr | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Lichtenfels | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Coswig | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Wachtberg | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Herborn | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Haßloch | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Ochtrup | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Burgwedel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Traunreut | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Duderstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Nördlingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Schopfheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Steinhagen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Neunkirchen-Seelscheid | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Waren (Müritz) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Haßloch | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Ochtrup | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Burgwedel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Traunreut | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Duderstadt | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Nördlingen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Schopfheim | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Steinhagen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Neunkirchen-Seelscheid | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Waren (Müritz) | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Blieskastel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Neustrelitz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Hörstel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Lilienthal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Borna | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Nidderau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Müllheim im Markgräflerland | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Telgte | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Uetze | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Wilnsdorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Wittmund | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Kürten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Meinerzhagen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
-| ⬜ | Moosburg a.d.Isar | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
+| ⬜ | Neustrelitz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Hörstel | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Lilienthal | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Borna | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Nidderau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Müllheim im Markgräflerland | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Telgte | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Uetze | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Wilnsdorf | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Wittmund | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Kürten | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Meinerzhagen | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
+| ⬜ | Moosburg a.d.Isar | kein Änderungsdatum | OpenStreetMap, zuletzt vor 14 Tagen geholt |
 | ⬜ | Torgau | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
 | ⬜ | Donauwörth | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |
 | ⬜ | Giengen an der Brenz | kein Änderungsdatum | OpenStreetMap, zuletzt vor 13 Tagen geholt |

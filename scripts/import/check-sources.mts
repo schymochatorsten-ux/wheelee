@@ -209,16 +209,27 @@ async function checkCity(
 
   const usesOsm = /OpenStreetMap/iu.test(record.usedSource ?? "");
 
-  // Ohne amtliche Quelle entscheidet bei OpenStreetMap allein der Takt.
+  // Ohne Eintrag in `_quellen-status.json` entscheidet allein der Takt.
+  //
+  // **Das trifft auch Städte mit handgepflegter amtlicher Quelle** (München):
+  // `sources:scan` kennt sie nicht, weil sie nicht in GovData steht, also
+  // findet sich hier kein `quellen`-Eintrag. Bis zum 2026-11-12 schrieb dieser
+  // Zweig dann „OpenStreetMap, zuletzt vor N Tagen geholt“ – für München
+  // schlicht falsch, seit es am 2026-10-29 auf den WFS des Mobilitätsreferats
+  // umgestellt wurde, und genau deshalb gefragt worden („wird München
+  // nächtlich geprüft?“). Am Takt ändert die Beschriftung nichts: Über den
+  // Neuabruf entscheidet `auto-update.mts`, das solche Städte nach 30 Tagen
+  // fällig stellt.
   if (!quellen || quellen.official.length === 0) {
     const due = age !== null && age >= OSM_INTERVAL_DAYS;
+    const herkunft = usesOsm ? "OpenStreetMap" : "amtliche Quelle von Hand gepflegt";
     return {
       ...base,
       verdict: "kein-datum",
       detail:
         age === null
-          ? "OpenStreetMap, kein Importdatum vermerkt"
-          : `OpenStreetMap, zuletzt vor ${age} Tagen geholt` +
+          ? `${herkunft}, kein Importdatum vermerkt`
+          : `${herkunft}, zuletzt vor ${age} Tagen geholt` +
             (due ? ` – über dem Takt von ${OSM_INTERVAL_DAYS} Tagen` : ""),
       reimport: due,
     };
@@ -482,7 +493,12 @@ export async function checkAll(
 
   const results: Result[] = [];
   for (const record of records) {
-    const result = await checkCity(record, quellenBySlug.get(record.slug), seen, lookedAt[record.slug]);
+    const result = await checkCity(
+      record,
+      quellenBySlug.get(record.slug),
+      seen,
+      lookedAt[record.slug],
+    );
     results.push(result);
     if (result.verdict !== "kein-datum") {
       console.log(`  ${SYMBOL[result.verdict]} ${result.city.padEnd(24)} ${result.detail}`);
