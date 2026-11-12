@@ -101,9 +101,9 @@ Die App hilft nur, wer sie kennt. Bisher gibt es dafür allein die Suchmaschine
 Torsten** (Absender, Adresse und Stimme gehören ihm); vorbereiten lassen sich
 Textentwürfe, Adresslisten und Zahlen.
 
-**Anschreiben und geprüfte Adressen stehen in
-[Bekanntmachen.md](Bekanntmachen.md)** (seit 2026-11-12), dort auch, was
-überhaupt verschickt wird und was nicht.
+**Die Anschreiben stehen nicht im Repository** (Torsten, 2026-11-12: Text
+kopiert, soll hier nicht liegen). Wer einen neuen braucht, schreibt ihn neu;
+was beim ersten überlegt wurde, steht in [Erledigt.md](Erledigt.md) unter 21.1.
 
 - [!] 21.0 **`WHEELEE_OPERATOR_EMAIL=wheelee@gmx.net` in der `.env` auf dem NAS setzen** (und `WHEELEE_OPERATOR_NAME`, falls dort noch leer). **Nur von Torsten zu tun**, und ohne das ändert sich auf der laufenden Seite nichts: Impressum, Datenschutzerklärung und `/info` zeigen die Adresse aus der Umgebung, nie aus dem Quelltext. Bis zum 2026-11-12 stand auf `wheelee.de/impressum` gar keine Kontaktangabe (Begründung in [Erledigt.md](Erledigt.md) unter 21.3).
 - [!] 21.1 **Behindertenverbände ansprechen.** Sozialverband VdK und SoVD (beide mit Landes- und Kreisverbänden), BSK, Bundesverband Selbsthilfe Körperbehinderter, Lebenshilfe, örtliche Behindertenbeiräte. Ziel: ein Hinweis in Mitgliederzeitschrift, Newsletter oder auf der Website – und, wichtiger, **Rückmeldungen zu falschen Daten** von Leuten, die die Plätze täglich brauchen. **Absender und Antwortadresse sind entschieden** (2026-11-12): `wheelee@gmx.net`, Postfach liegt in Torstens Outlook. Textentwürfe und Adressliste kann Claude vorbereiten, geschickt wird von Torsten.

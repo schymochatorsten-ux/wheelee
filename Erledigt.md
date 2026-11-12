@@ -2373,6 +2373,45 @@ der eigentliche Inhalt dieser Arbeit:
 
 ---
 
+## 21.1 Das erste Anschreiben – was überlegt wurde (2026-11-12)
+
+Der Punkt bleibt in `ToDos.md` offen: Geschickt ist noch nichts. Hierher
+gehört, was entschieden wurde, denn **der Text selbst liegt nicht im
+Repository** – Torsten hat ihn kopiert und die Datei `Bekanntmachen.md` am
+2026-11-12 löschen lassen. Ohne diese Notiz sähe die Löschung wie ein
+Versehen aus, und die Überlegungen wären weg.
+
+- **Der erste Adressat ist der VdK**, und zwar `presse@vdk.de` – nicht die
+  allgemeine Adresse `kontakt@vdk.de`. Die führt in die Mitgliederberatung
+  (Rente, Sozialrecht); die Abteilung Presse- und Öffentlichkeitsarbeit
+  verantwortet dagegen beides, worum es geht: die VdK-Zeitung (zehnmal im
+  Jahr, über 1,9 Millionen Exemplare) und die Website. **Ein
+  Abteilungspostfach statt einer Person,** weil eine Mail an die
+  Pressesprecherin im Urlaub stillliegt; namentlich nachfassen kann man
+  danach immer noch. Alle Angaben am 2026-11-12 auf
+  `vdk.de/presse/pressekontakt/` gelesen, nicht aus einer Suchzusammenfassung
+  (Lehre aus 2a.5).
+- **Die Bitte um Rückmeldungen steht vor der Bitte um Bekanntheit.** Ein
+  Hinweis in der Mitgliederzeitung bringt Besucher; Meldungen von Menschen,
+  die die Plätze täglich brauchen, bringen richtige Daten – und das ist der
+  Engpass, nicht die Reichweite.
+- **Die Zahlen im Text kommen aus `data/_abdeckung.md`** (2026-11-12: 38.402
+  Standorte, 64.119 Stellplätze, 3.758 Gemeinden, 85 % der Bevölkerung), mit
+  Verweis auf `wheelee.de/abdeckung` zum Nachsehen. Vor jedem Abschicken neu
+  nachzählen: Nach einem Datenlauf stimmen sie nicht mehr.
+- **Was verschickt wird und was nicht** (Torstens Frage): das einmalige
+  Anschreiben, keine Serie; Antworten auf Rückmeldungen von Hand, wenn
+  jemand freiwillig eine Adresse hinterlassen hat; und die vier Mails, die
+  die App selbst verschickt (Registrierung, Passwort, Adressänderung,
+  Benachrichtigung an den Betreiber). **Eine Mail „dein Fehler ist behoben“
+  gibt es nicht** – dafür bräuchte jede Meldung eine Adresse, und genau die
+  wird nicht verlangt.
+- **Reihenfolge:** erst einer, Antwort abwarten, Text danach ändern (21.4).
+  Ohne Antwort nach drei bis vier Wochen einmal nachfassen, dann namentlich;
+  kommt auch darauf nichts, zum nächsten Verband statt ein drittes Mal.
+
+---
+
 ## 21.3 und 10.2a Die Kontaktadresse steht jetzt auf der Seite (2026-11-12)
 
 - [x] 21.3 **Was vor dem ersten Kontakt stehen muss** (Torsten, 2026-11-12: „umsetzen“; dazu die Festlegung „`wheelee@gmx.net` ist eingerichtet, darüber sendest du, das Postfach liegt in meinem Outlook“).
