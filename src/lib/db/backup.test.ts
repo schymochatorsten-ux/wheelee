@@ -39,9 +39,14 @@ describe("backupDatabase", () => {
     db.close();
 
     const kopie = new DatabaseSync(target, { readOnly: true });
-    const rows = kopie.prepare("SELECT adresse FROM konto ORDER BY id").all() as { adresse: string }[];
+    const rows = kopie.prepare("SELECT adresse FROM konto ORDER BY id").all() as {
+      adresse: string;
+    }[];
     expect(rows.map((row) => row.adresse)).toEqual(["a@example.org", "b@example.org"]);
-    expect((kopie.prepare("PRAGMA integrity_check").get() as { integrity_check: string }).integrity_check).toBe("ok");
+    expect(
+      (kopie.prepare("PRAGMA integrity_check").get() as { integrity_check: string })
+        .integrity_check,
+    ).toBe("ok");
     kopie.close();
   });
 
@@ -54,9 +59,9 @@ describe("backupDatabase", () => {
   });
 
   it("meldet eine fehlende Datenbank, statt eine leere anzulegen", () => {
-    expect(() => backupDatabase(path.join(folder, "gibt-es-nicht.sqlite"), path.join(folder, "x.sqlite"))).toThrow(
-      /nicht gefunden/,
-    );
+    expect(() =>
+      backupDatabase(path.join(folder, "gibt-es-nicht.sqlite"), path.join(folder, "x.sqlite")),
+    ).toThrow(/nicht gefunden/);
     expect(fs.existsSync(path.join(folder, "gibt-es-nicht.sqlite"))).toBe(false);
   });
 });

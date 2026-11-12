@@ -4,13 +4,7 @@ import os from "node:os";
 import path from "node:path";
 import { closeDb, db } from "./sqlite";
 import { createAccount, deleteAccount, exportAccountData } from "./accounts";
-import {
-  addFavorite,
-  isFavorite,
-  listFavorites,
-  MAX_FAVORITES,
-  removeFavorite,
-} from "./favorites";
+import { addFavorite, isFavorite, listFavorites, MAX_FAVORITES, removeFavorite } from "./favorites";
 
 /**
  * Gespeicherte Parkplätze (ToDo 11.5), gegen eine echte Datenbank – die

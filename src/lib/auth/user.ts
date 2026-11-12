@@ -43,12 +43,7 @@ export interface SessionUser {
  */
 export type PublicUser = Pick<
   SessionUser,
-  | "email"
-  | "isAdmin"
-  | "mapsPreference"
-  | "language"
-  | "locationPreference"
-  | "mustChangePassword"
+  "email" | "isAdmin" | "mapsPreference" | "language" | "locationPreference" | "mustChangePassword"
 >;
 
 export const publicUser = (user: SessionUser): PublicUser => ({

@@ -36,20 +36,22 @@ const NOMINATIM_INTERVAL_MS = 1100;
  * Unterschiede.
  */
 export function normalizeStreet(name: string): string {
-  return name
-    // Manche Quellen führen die Hausnummer im Straßenfeld („Bismarckstraße 313“,
-    // Gelsenkirchen); die Rückwärtssuche liefert sie getrennt. Beidseitig entfernt.
-    .replace(/\s+\d+\s?[a-z]?(?:\s?[-/]\s?\d+\s?[a-z]?)?\s*$/iu, "")
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/\p{Diacritic}/gu, "")
-    .replace(/ß/gu, "ss")
-    // „St.-Bonifatius-Straße“ und „Sankt-Bonifatius-Straße“ sind dieselbe Straße.
-    .replace(/\bst\.[\s-]*/gu, "sankt")
-    .replace(/\bstr\b\.?/gu, "strasse")
-    .replace(/str\./gu, "strasse")
-    .replace(/(?<=\p{L})strasse\b/gu, "strasse")
-    .replace(/[\s\-–.,'’]/gu, "");
+  return (
+    name
+      // Manche Quellen führen die Hausnummer im Straßenfeld („Bismarckstraße 313“,
+      // Gelsenkirchen); die Rückwärtssuche liefert sie getrennt. Beidseitig entfernt.
+      .replace(/\s+\d+\s?[a-z]?(?:\s?[-/]\s?\d+\s?[a-z]?)?\s*$/iu, "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/\p{Diacritic}/gu, "")
+      .replace(/ß/gu, "ss")
+      // „St.-Bonifatius-Straße“ und „Sankt-Bonifatius-Straße“ sind dieselbe Straße.
+      .replace(/\bst\.[\s-]*/gu, "sankt")
+      .replace(/\bstr\b\.?/gu, "strasse")
+      .replace(/str\./gu, "strasse")
+      .replace(/(?<=\p{L})strasse\b/gu, "strasse")
+      .replace(/[\s\-–.,'’]/gu, "")
+  );
 }
 
 /** Dieselbe Straße? „Hauptstr.“ und „Hauptstraße“ ja, „Hauptstraße“ und „Nebenstraße“ nein. */
@@ -98,7 +100,13 @@ async function reverse(lat: number, lng: number): Promise<Address> {
 
 interface Seed {
   city: { name: string };
-  spots: { id: string; label: string; street: string | null; lat: number | null; lng: number | null }[];
+  spots: {
+    id: string;
+    label: string;
+    street: string | null;
+    lat: number | null;
+    lng: number | null;
+  }[];
 }
 
 async function main() {
@@ -127,7 +135,9 @@ async function main() {
       .sort((a, b) => a.id.localeCompare(b.id));
     const chosen = all ? candidates : evenSample(candidates, n);
 
-    console.log(`\n=== ${seed.city.name}: ${chosen.length} von ${candidates.length} Standorten mit Straße`);
+    console.log(
+      `\n=== ${seed.city.name}: ${chosen.length} von ${candidates.length} Standorten mit Straße`,
+    );
     let same = 0;
     let noStreet = 0;
     const different: string[] = [];
@@ -147,7 +157,10 @@ async function main() {
       }
       if (!address.street) noStreet += 1;
       else if (sameStreet(spot.street!, address.street)) same += 1;
-      else different.push(`  ${spot.id}  Quelle: „${spot.street}“ · Rückwärtssuche: „${address.street}“ (${spot.lat!.toFixed(5)}, ${spot.lng!.toFixed(5)})`);
+      else
+        different.push(
+          `  ${spot.id}  Quelle: „${spot.street}“ · Rückwärtssuche: „${address.street}“ (${spot.lat!.toFixed(5)}, ${spot.lng!.toFixed(5)})`,
+        );
     }
     await fs.writeFile(cachePath, `${JSON.stringify(cache, null, 2)}\n`, "utf8");
 

@@ -116,8 +116,14 @@ function buildFile(
       3,
       Buffer.concat([
         intField(1, way.id),
-        packedField(2, entries.map(([k]) => index(k))),
-        packedField(3, entries.map(([, v]) => index(v))),
+        packedField(
+          2,
+          entries.map(([k]) => index(k)),
+        ),
+        packedField(
+          3,
+          entries.map(([, v]) => index(v)),
+        ),
         packedField(8, deltas),
       ]),
     );
@@ -208,7 +214,12 @@ describe("extractDisabledParking", () => {
           { id: 1, lat: 50.0, lon: 8.0 },
           { id: 2, lat: 50.0, lon: 8.002 },
           { id: 3, lat: 50.004, lon: 8.002 },
-          { id: 4, lat: 51.0, lon: 9.0, tags: { amenity: "parking_space", parking_space: "disabled" } },
+          {
+            id: 4,
+            lat: 51.0,
+            lon: 9.0,
+            tags: { amenity: "parking_space", parking_space: "disabled" },
+          },
           { id: 5, lat: 52.0, lon: 10.0, tags: { amenity: "bench" } },
         ],
         [

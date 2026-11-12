@@ -75,10 +75,20 @@ describe("Konto mit Startpasswort", () => {
   it("lehnt vergebene Adresse und vergebenen Namen ab", () => {
     admin();
     expect(
-      createOperatorAccount({ email: "andere@example.org", username: "torsten", password: START, role: "user" }),
+      createOperatorAccount({
+        email: "andere@example.org",
+        username: "torsten",
+        password: START,
+        role: "user",
+      }),
     ).toBeNull();
     expect(
-      createOperatorAccount({ email: "torsten@example.org", username: "Anderer", password: START, role: "user" }),
+      createOperatorAccount({
+        email: "torsten@example.org",
+        username: "Anderer",
+        password: START,
+        role: "user",
+      }),
     ).toBeNull();
   });
 });

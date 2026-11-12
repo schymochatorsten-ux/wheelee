@@ -13,7 +13,8 @@ import path from "node:path";
 import { projectRoot } from "./config.mjs";
 
 /** Dateien, die keine Stadt-Seeds sind. */
-const SKIP = /^_|\.(overrides|parsed|report|line-fixups|zusatz)\.|^geocode-cache|^frankfurt-pdf-liste/u;
+const SKIP =
+  /^_|\.(overrides|parsed|report|line-fixups|zusatz)\.|^geocode-cache|^frankfurt-pdf-liste/u;
 
 async function main() {
   const dataDir = path.join(projectRoot, "data");

@@ -214,7 +214,9 @@ describe("parseGml", () => {
 
 describe("pointFromWkt", () => {
   it("liest einen Punkt aus der WFS-CSV (Bielefeld, EPSG:25832)", () => {
-    expect(pointFromWkt("POINT (467960.721758392 5763515.68933441)")).toEqual([467960.721758392, 5763515.68933441]);
+    expect(pointFromWkt("POINT (467960.721758392 5763515.68933441)")).toEqual([
+      467960.721758392, 5763515.68933441,
+    ]);
   });
 
   it("rät bei anderen Geometrien nichts", () => {

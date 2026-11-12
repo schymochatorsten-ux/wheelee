@@ -51,7 +51,10 @@ interface Seed {
  * die OSM-Seite gebraucht: Das sind alle, die nicht als „nur OSM“ übrig
  * blieben. Weil die Paarung eins zu eins ist, sind beide Zahlen gleich.
  */
-export function confirmedOsmIds(osm: readonly CrossCheckPoint[], osmOnly: readonly CrossCheckPoint[]): string[] {
+export function confirmedOsmIds(
+  osm: readonly CrossCheckPoint[],
+  osmOnly: readonly CrossCheckPoint[],
+): string[] {
   const unmatched = new Set(osmOnly.map((point) => point.id));
   return osm.filter((point) => !unmatched.has(point.id)).map((point) => point.id);
 }
@@ -70,7 +73,10 @@ async function main() {
   const bestaetigtPfad = path.join(projectRoot, "data", "_bestaetigt.json");
   const bestaetigt = JSON.parse(await fs.readFile(bestaetigtPfad, "utf8")) as {
     standorte: Record<string, string>;
-    regional?: Record<string, { quelle: string; geprueftAm: string; bestaetigt: number; toleranzMeter: number }>;
+    regional?: Record<
+      string,
+      { quelle: string; geprueftAm: string; bestaetigt: number; toleranzMeter: number }
+    >;
   };
   bestaetigt.regional ??= {};
   const heute = new Date().toISOString().slice(0, 10);
@@ -93,10 +99,14 @@ async function main() {
     zeilen.push("| --- | ---: | ---: | ---: | ---: | ---: |");
     const beispiele: string[] = [];
 
-    for (const [slug, { name, spots }] of [...bySlug].sort((a, b) => b[1].spots.length - a[1].spots.length)) {
+    for (const [slug, { name, spots }] of [...bySlug].sort(
+      (a, b) => b[1].spots.length - a[1].spots.length,
+    )) {
       let seed: Seed;
       try {
-        seed = JSON.parse(await fs.readFile(path.join(projectRoot, "data", `${slug}.json`), "utf8")) as Seed;
+        seed = JSON.parse(
+          await fs.readFile(path.join(projectRoot, "data", `${slug}.json`), "utf8"),
+        ) as Seed;
       } catch {
         continue;
       }
@@ -145,7 +155,11 @@ async function main() {
   }
 
   await fs.writeFile(bestaetigtPfad, `${JSON.stringify(bestaetigt, null, 2)}\n`, "utf8");
-  await fs.writeFile(path.join(projectRoot, "data", "_gegenpruefung-regional.md"), `${zeilen.join("\n")}\n`, "utf8");
+  await fs.writeFile(
+    path.join(projectRoot, "data", "_gegenpruefung-regional.md"),
+    `${zeilen.join("\n")}\n`,
+    "utf8",
+  );
   console.log("\nGeschrieben: data/_gegenpruefung-regional.md");
 }
 

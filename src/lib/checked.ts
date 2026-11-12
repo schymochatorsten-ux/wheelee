@@ -19,7 +19,9 @@ export interface CheckedInfo {
 
 function checkedFile(): string {
   const db = process.env.WHEELEE_DB_PATH?.trim();
-  return db ? path.join(path.dirname(db), "geprueft.json") : path.join(process.cwd(), ".data", "geprueft.json");
+  return db
+    ? path.join(path.dirname(db), "geprueft.json")
+    : path.join(process.cwd(), ".data", "geprueft.json");
 }
 
 export function readChecked(): CheckedInfo {

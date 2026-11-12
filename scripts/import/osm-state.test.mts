@@ -5,7 +5,12 @@ describe("spreadKm", () => {
   it("ist null bei weniger als zwei verorteten Standorten", () => {
     expect(spreadKm([])).toBe(0);
     expect(spreadKm([{ lat: 50, lng: 8 }])).toBe(0);
-    expect(spreadKm([{ lat: 50, lng: 8 }, { lat: null, lng: null }])).toBe(0);
+    expect(
+      spreadKm([
+        { lat: 50, lng: 8 },
+        { lat: null, lng: null },
+      ]),
+    ).toBe(0);
   });
 
   it("misst die Diagonale des Rechtecks in Kilometern", () => {

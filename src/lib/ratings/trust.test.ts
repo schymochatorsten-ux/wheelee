@@ -121,7 +121,11 @@ describe("accountFactors", () => {
   it("zählt keinen Gleichstand der anderen", () => {
     const votes: VoteRecord[] = [];
     for (let i = 0; i < 8; i++) {
-      votes.push(vote(`p${i}`, "x", "exists"), vote(`p${i}`, "y", "exists"), vote(`p${i}`, "z", "gone"));
+      votes.push(
+        vote(`p${i}`, "x", "exists"),
+        vote(`p${i}`, "y", "exists"),
+        vote(`p${i}`, "z", "gone"),
+      );
     }
     // x: andere = {exists, gone} → Gleichstand, nichts gezählt.
     expect(accountFactors(votes).get("x")).toBeUndefined();
@@ -149,7 +153,13 @@ describe("assessSpot", () => {
 });
 
 describe("reportReasons", () => {
-  const base = { existsCount: 4, goneCount: 3, existsWeight: 2, goneWeight: 3, lastThreeGone: true };
+  const base = {
+    existsCount: 4,
+    goneCount: 3,
+    existsWeight: 2,
+    goneWeight: 3,
+    lastThreeGone: true,
+  };
 
   it("nennt beide Gründe, wenn beide zutreffen", () => {
     expect(reportReasons(base, 2)).toEqual(["lastThreeGone", "reports"]);

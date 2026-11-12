@@ -77,8 +77,7 @@ export function cellSize(bounds: GridBounds, zoom: number | null): GridCell {
   // eine Division durch fast null.
   const cosLat = Math.max(Math.cos((midLat * Math.PI) / 180), 0.05);
 
-  let lng =
-    zoom === null ? spanLng / 12 : (CELL_PX * 360) / (256 * Math.pow(2, clampZoom(zoom)));
+  let lng = zoom === null ? spanLng / 12 : (CELL_PX * 360) / (256 * Math.pow(2, clampZoom(zoom)));
 
   // Notbremse je Achse. Die Höhe hängt an der Breite, deshalb wird auch die
   // Zeilenzahl über die Breite begrenzt.

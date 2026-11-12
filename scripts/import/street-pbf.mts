@@ -102,7 +102,11 @@ export function extractStreets(file: string): PbfStreets {
       streetWays.push({ id: element.id, name: tags.name, refs });
       for (const ref of refs) needed.add(ref);
     } else if (tags["addr:housenumber"] && tags["addr:street"]) {
-      addressWays.push({ street: tags["addr:street"], number: tags["addr:housenumber"], ref: refs[0] });
+      addressWays.push({
+        street: tags["addr:street"],
+        number: tags["addr:housenumber"],
+        ref: refs[0],
+      });
       needed.add(refs[0]);
     }
   }
@@ -158,14 +162,20 @@ export function extractStreets(file: string): PbfStreets {
   return {
     waysIn(box) {
       const unique = new Map<number, StreetWay>();
-      for (const tile of tilesOf(box)) for (const way of ways.get(tile) ?? []) unique.set(way.id, way);
+      for (const tile of tilesOf(box))
+        for (const way of ways.get(tile) ?? []) unique.set(way.id, way);
       return [...unique.values()];
     },
     addressesIn(box) {
       const found: AddressPoint[] = [];
       for (const tile of tilesOf(box)) {
         for (const point of addresses.get(tile) ?? []) {
-          if (point.lat >= box.south && point.lat <= box.north && point.lon >= box.west && point.lon <= box.east) {
+          if (
+            point.lat >= box.south &&
+            point.lat <= box.north &&
+            point.lon >= box.west &&
+            point.lon <= box.east
+          ) {
             found.push(point);
           }
         }

@@ -374,16 +374,22 @@ function dichteMelden(
   }
 
   if (weit.length > 0) {
-    console.log(`  ⚠️ ${weit.length} Gemeinden an der Reihe mit Streuung über 15 km (Zuordnung prüfen):`);
+    console.log(
+      `  ⚠️ ${weit.length} Gemeinden an der Reihe mit Streuung über 15 km (Zuordnung prüfen):`,
+    );
     for (const eintrag of weit.sort((a, b) => b.km - a.km).slice(0, listenLaenge)) {
-      console.log(`     ${eintrag.name}: ${eintrag.km.toFixed(1)} km${vollstaendig ? ` [${eintrag.slug}]` : ""}`);
+      console.log(
+        `     ${eintrag.name}: ${eintrag.km.toFixed(1)} km${vollstaendig ? ` [${eintrag.slug}]` : ""}`,
+      );
     }
   }
   const dicht = dichten
     .filter((e) => anDerReihe.has(e.slug) && e.wert > median * 3)
     .sort((a, b) => b.wert - a.wert);
   if (dicht.length > 0) {
-    console.log(`  ⚠️ ${dicht.length} Gemeinden an der Reihe über dem Dreifachen (werden nicht geschrieben):`);
+    console.log(
+      `  ⚠️ ${dicht.length} Gemeinden an der Reihe über dem Dreifachen (werden nicht geschrieben):`,
+    );
     for (const e of dicht.slice(0, listenLaenge)) {
       console.log(
         `     ${e.name}: ${e.wert.toFixed(1)} (${e.standorte} Standorte)${vollstaendig ? ` [${e.slug}]` : ""}`,
@@ -668,11 +674,15 @@ async function main() {
   const pbfIndex = args.indexOf("--pbf");
   const pbfFile = pbfIndex >= 0 ? (args[pbfIndex + 1] ?? null) : null;
   if (pbfIndex >= 0 && (!pbfFile || pbfFile.startsWith("--"))) {
-    console.log("--pbf braucht eine Datei: npm run import:osm-state -- saarland --pbf saarland-latest.osm.pbf");
+    console.log(
+      "--pbf braucht eine Datei: npm run import:osm-state -- saarland --pbf saarland-latest.osm.pbf",
+    );
     return;
   }
   if (pbfFile && args.includes("--alle")) {
-    console.log("--pbf gilt für genau ein Bundesland (ein Auszug enthält nur eines) – nicht mit --alle.");
+    console.log(
+      "--pbf gilt für genau ein Bundesland (ein Auszug enthält nur eines) – nicht mit --alle.",
+    );
     return;
   }
 

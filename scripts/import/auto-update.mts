@@ -93,10 +93,14 @@ const REGIONAL_DAYS = 30;
 const OFFICIAL_VERDICTS = ["geaendert", "unveraendert", "unpruefbar"];
 
 function run(script: string, args: string[] = []): boolean {
-  const result = spawnSync(process.execPath, [tsx, path.join("scripts", "import", script), ...args], {
-    cwd: projectRoot,
-    stdio: "inherit",
-  });
+  const result = spawnSync(
+    process.execPath,
+    [tsx, path.join("scripts", "import", script), ...args],
+    {
+      cwd: projectRoot,
+      stdio: "inherit",
+    },
+  );
   return result.status === 0;
 }
 
@@ -251,7 +255,12 @@ async function main() {
       state.looked[slug] = new Date().toISOString();
       checked.cities[slug] = new Date().toISOString();
       delete state.tried[slug];
-      outcomes.push({ ...base, accepted: false, unchanged: true, note: "Quelle neu geholt, Standorte unverändert" });
+      outcomes.push({
+        ...base,
+        accepted: false,
+        unchanged: true,
+        note: "Quelle neu geholt, Standorte unverändert",
+      });
       console.log(`  = ${result.city}: Standorte unverändert, nichts zu übernehmen`);
     } else if (judgement.accept) {
       state.looked[slug] = new Date().toISOString();
@@ -299,10 +308,13 @@ async function checkRegional(state: UpdateState, checked: CheckedFile): Promise<
   const last = state.regionalAt ? new Date(state.regionalAt).getTime() : 0;
   if (!ALL && Date.now() - last < REGIONAL_DAYS * 86_400_000) return;
 
-  const before = (await loadStatus()).records.filter((r) => /regional: trk/u.test(r.usedSource ?? ""));
+  const before = (await loadStatus()).records.filter((r) =>
+    /regional: trk/u.test(r.usedSource ?? ""),
+  );
   if (before.length === 0) return;
   const savedSeeds = new Map<string, string | null>();
-  for (const record of before) savedSeeds.set(record.slug, await readOrNull(data(`${record.slug}.json`)));
+  for (const record of before)
+    savedSeeds.set(record.slug, await readOrNull(data(`${record.slug}.json`)));
   const savedJson = await readOrNull(data("_import-status.json"));
   const savedMd = await readOrNull(data("_import-status.md"));
 
@@ -321,8 +333,11 @@ async function checkRegional(state: UpdateState, checked: CheckedFile): Promise<
     const saved = savedSeeds.get(record.slug) ?? null;
     const fresh = await readOrNull(seedFile);
     const now = after.get(record.slug);
-    const verdict = now ? judgeUpdate({ locations: record.locations }, now) : { accept: false as const, reason: "fehlt" };
-    const same = saved !== null && fresh !== null && sameSpots(JSON.parse(saved), JSON.parse(fresh));
+    const verdict = now
+      ? judgeUpdate({ locations: record.locations }, now)
+      : { accept: false as const, reason: "fehlt" };
+    const same =
+      saved !== null && fresh !== null && sameSpots(JSON.parse(saved), JSON.parse(fresh));
     if (!verdict.accept || same) {
       await restore(seedFile, saved);
       if (!verdict.accept) console.log(`  ↩ regional ${record.slug}: ${verdict.reason}`);

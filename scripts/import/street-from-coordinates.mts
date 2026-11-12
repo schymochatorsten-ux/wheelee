@@ -99,10 +99,9 @@ async function main() {
   const cachePath = path.join(projectRoot, "data", "_address-cache.json");
 
   const seed = await readJson<{ spots: Spot[] } & Record<string, unknown>>(seedPath, { spots: [] });
-  const overrides = await readJson<{ spots?: Record<string, Partial<Spot>> } & Record<string, unknown>>(
-    overridesPath,
-    {},
-  );
+  const overrides = await readJson<
+    { spots?: Record<string, Partial<Spot>> } & Record<string, unknown>
+  >(overridesPath, {});
   const cache = await readJson<Record<string, Address>>(cachePath, {});
 
   const changes: Record<string, Partial<Spot>> = {};
@@ -146,7 +145,9 @@ async function main() {
       label: address.street,
       street: address.street,
       houseNumber: null,
-      note: [original !== address.street ? original : null, spot.note].filter(Boolean).join(" · ") || null,
+      note:
+        [original !== address.street ? original : null, spot.note].filter(Boolean).join(" · ") ||
+        null,
     };
   }
 
@@ -169,7 +170,9 @@ async function main() {
 
   overrides.spots = { ...(overrides.spots ?? {}), ...changes };
   await fs.writeFile(overridesPath, `${JSON.stringify(overrides, null, 2)}\n`, "utf8");
-  seed.spots = seed.spots.map((spot) => (changes[spot.id] ? { ...spot, ...changes[spot.id] } : spot));
+  seed.spots = seed.spots.map((spot) =>
+    changes[spot.id] ? { ...spot, ...changes[spot.id] } : spot,
+  );
   await fs.writeFile(seedPath, `${JSON.stringify(seed, null, 2)}\n`, "utf8");
   console.log(`Geschrieben: ${path.basename(overridesPath)} und ${path.basename(seedPath)}`);
 }

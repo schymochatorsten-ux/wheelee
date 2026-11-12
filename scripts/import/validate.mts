@@ -391,7 +391,9 @@ function checkReportedGone(slug: string, matches: GoneMatch[]): Finding[] {
             `${match.spot ? spotTitle(match.spot) : match.spotId} – ` +
             `${match.goneCount}× aufgehoben, ${match.existsCount}× bestätigt ` +
             `(gewichtet ${match.goneWeight} / ${match.existsWeight})` +
-            (match.reasons.includes("lastThreeGone") ? " – die letzten drei Stimmen: aufgehoben" : ""),
+            (match.reasons.includes("lastThreeGone")
+              ? " – die letzten drei Stimmen: aufgehoben"
+              : ""),
         ),
     },
   ];

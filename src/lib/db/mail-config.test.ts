@@ -3,7 +3,12 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { closeDb } from "./sqlite";
-import { clearMailConfig, readMailConfig, saveMailConfig, type MailConfigInput } from "./mail-config";
+import {
+  clearMailConfig,
+  readMailConfig,
+  saveMailConfig,
+  type MailConfigInput,
+} from "./mail-config";
 
 /** SMTP-Zugangsdaten in der Datenbank (ToDo 10.22), gegen eine echte Datei. */
 

@@ -35,7 +35,9 @@ function issue(accountId: string, kind: Kind, newEmail: string | null): string {
   handle.exec("BEGIN");
   try {
     handle
-      .prepare("UPDATE mail_token SET used_at = ? WHERE account_id = ? AND kind = ? AND used_at IS NULL")
+      .prepare(
+        "UPDATE mail_token SET used_at = ? WHERE account_id = ? AND kind = ? AND used_at IS NULL",
+      )
       .run(now(), accountId, kind);
     handle
       .prepare(
@@ -63,11 +65,14 @@ function claim(token: string, kind: Kind): { accountId: string; newEmail: string
   const handle = db();
   const row = handle
     .prepare("SELECT id, account_id, new_email FROM mail_token WHERE token_hash = ? AND kind = ?")
-    .get(hashToken(token), kind) as { id: string; account_id: string; new_email: string | null } | undefined;
+    .get(hashToken(token), kind) as
+    { id: string; account_id: string; new_email: string | null } | undefined;
   if (!row) return null;
 
   const result = handle
-    .prepare("UPDATE mail_token SET used_at = ? WHERE id = ? AND used_at IS NULL AND expires_at > ?")
+    .prepare(
+      "UPDATE mail_token SET used_at = ? WHERE id = ? AND used_at IS NULL AND expires_at > ?",
+    )
     .run(now(), row.id, now());
   if (Number(result.changes) !== 1) return null;
   return { accountId: row.account_id, newEmail: row.new_email };
@@ -161,7 +166,8 @@ export function requestEmailChange(
 
   const address = normalizeEmail(newEmail);
   if (address === row.email) return { status: "same" };
-  if (db().prepare("SELECT 1 FROM account WHERE email = ?").get(address)) return { status: "taken" };
+  if (db().prepare("SELECT 1 FROM account WHERE email = ?").get(address))
+    return { status: "taken" };
 
   return { status: "ok", token: issue(accountId, "email", address) };
 }
@@ -185,7 +191,9 @@ export function confirmEmailChange(token: string): string | null {
       // Mittel dient der Bestätigung bei der Registrierung: dort ist die neue
       // Adresse die eigene.
       handle
-        .prepare("UPDATE account SET email = ?, email_verified_at = COALESCE(email_verified_at, ?) WHERE id = ?")
+        .prepare(
+          "UPDATE account SET email = ?, email_verified_at = COALESCE(email_verified_at, ?) WHERE id = ?",
+        )
         .run(claimed.newEmail, now(), claimed.accountId);
     } catch (error) {
       handle.exec("ROLLBACK");

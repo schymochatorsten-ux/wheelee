@@ -456,9 +456,12 @@ async function processCity(file: string, seed: SeedFile, dryRun: boolean) {
   const project = projector(seed.city.center.lat);
 
   const ways: OverpassWay[] = pbfStreets
-    ? pbfStreets
-        .waysIn(box)
-        .map((way) => ({ type: "way" as const, id: way.id, tags: { name: way.name }, geometry: way.geometry }))
+    ? pbfStreets.waysIn(box).map((way) => ({
+        type: "way" as const,
+        id: way.id,
+        tags: { name: way.name },
+        geometry: way.geometry,
+      }))
     : (await fetchStreets(box)).filter((element): element is OverpassWay => element.type === "way");
 
   // Mit Auszug heißt „keine Straße“: Die Stadt liegt in einem anderen Land.
@@ -598,12 +601,16 @@ async function main() {
 
   if (pbfIndex >= 0) {
     if (!pbfFile) {
-      console.log("--pbf braucht eine Datei: npm run import:streets -- --pbf bayern-latest.osm.pbf");
+      console.log(
+        "--pbf braucht eine Datei: npm run import:streets -- --pbf bayern-latest.osm.pbf",
+      );
       return;
     }
     console.log(`Lese Straßen aus ${path.basename(pbfFile)} …`);
     pbfStreets = extractStreets(pbfFile);
-    console.log(`  ${pbfStreets.counts.ways} benannte Straßen, ${pbfStreets.counts.addresses} Adresspunkte`);
+    console.log(
+      `  ${pbfStreets.counts.ways} benannte Straßen, ${pbfStreets.counts.addresses} Adresspunkte`,
+    );
   }
 
   const dataDir = path.join(projectRoot, "data");

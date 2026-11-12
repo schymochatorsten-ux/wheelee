@@ -92,24 +92,22 @@ function allSpots(): ParkingSpot[] {
       return confirmation ? { ...spot, confirmation } : spot;
     }),
     // Nur in OpenStreetMap (ToDo 3.11): ergänzt, mit Kennzeichnung "nur_osm".
-    ...osmOnlySpots().map(
-      (spot): ParkingSpot => ({
-        id: spot.id,
-        city: spot.city,
-        label: spot.label,
-        street: null,
-        houseNumber: null,
-        note: null,
-        timeRestriction: null,
-        district: "",
-        spotCount: 1,
-        lat: spot.lat,
-        lng: spot.lng,
-        geoAccuracy: "house",
-        source: "OpenStreetMap",
-        confirmation: "nur_osm",
-      }),
-    ),
+    ...osmOnlySpots().map((spot): ParkingSpot => ({
+      id: spot.id,
+      city: spot.city,
+      label: spot.label,
+      street: null,
+      houseNumber: null,
+      note: null,
+      timeRestriction: null,
+      district: "",
+      spotCount: 1,
+      lat: spot.lat,
+      lng: spot.lng,
+      geoAccuracy: "house",
+      source: "OpenStreetMap",
+      confirmation: "nur_osm",
+    })),
   ];
   return cached;
 }

@@ -7,7 +7,12 @@ describe("pickDue", () => {
 
   it("nimmt höchstens max Städte, die am längsten unbesehenen zuerst", () => {
     const result = pickDue(
-      [c("a", "2026-10-05T00:00:00Z"), c("b", "2026-09-01T00:00:00Z"), c("c", null), c("d", "2026-10-30T00:00:00Z")],
+      [
+        c("a", "2026-10-05T00:00:00Z"),
+        c("b", "2026-09-01T00:00:00Z"),
+        c("c", null),
+        c("d", "2026-10-30T00:00:00Z"),
+      ],
       [],
       { tried: {} },
       2,
@@ -18,7 +23,13 @@ describe("pickDue", () => {
   });
 
   it("holt Vorgemerktes nach und führt Doppelte nur einmal", () => {
-    const result = pickDue([c("a", "2026-10-05T00:00:00Z")], [c("a", "2026-10-05T00:00:00Z"), c("z", "2026-08-01T00:00:00Z")], { tried: {} }, 5, now);
+    const result = pickDue(
+      [c("a", "2026-10-05T00:00:00Z")],
+      [c("a", "2026-10-05T00:00:00Z"), c("z", "2026-08-01T00:00:00Z")],
+      { tried: {} },
+      5,
+      now,
+    );
     expect(result.run).toEqual(["z", "a"]);
   });
 
@@ -44,11 +55,19 @@ describe("sameSpots", () => {
   });
 
   it("vergleicht grob: Straßennamen zählen nicht, Lage und Anzahl schon", () => {
-    const withStreet = { spots: [{ id: "x", lat: 1, lng: 2, spotCount: 1, label: "Parkplatz", street: "Hauptstraße" }] };
-    const fresh = { spots: [{ id: "x", lat: 1, lng: 2, spotCount: 1, label: "Behindertenparkplatz Ulm", street: null }] };
+    const withStreet = {
+      spots: [{ id: "x", lat: 1, lng: 2, spotCount: 1, label: "Parkplatz", street: "Hauptstraße" }],
+    };
+    const fresh = {
+      spots: [
+        { id: "x", lat: 1, lng: 2, spotCount: 1, label: "Behindertenparkplatz Ulm", street: null },
+      ],
+    };
     expect(sameSpots(withStreet, fresh)).toBe(false);
     expect(sameSpots(withStreet, fresh, { coarse: true })).toBe(true);
-    expect(sameSpots(withStreet, { spots: [{ ...fresh.spots[0], spotCount: 2 }] }, { coarse: true })).toBe(false);
+    expect(
+      sameSpots(withStreet, { spots: [{ ...fresh.spots[0], spotCount: 2 }] }, { coarse: true }),
+    ).toBe(false);
   });
 
   it("hält fehlende oder kaputte Dateien nie für gleich", () => {
@@ -66,7 +85,10 @@ describe("judgeUpdate", () => {
   });
 
   it("lehnt einen Rückfall auf OpenStreetMap ab", () => {
-    const result = judgeUpdate({ locations: 900 }, { status: "fertig", usedSource: "OpenStreetMap", locations: 950 });
+    const result = judgeUpdate(
+      { locations: 900 },
+      { status: "fertig", usedSource: "OpenStreetMap", locations: 950 },
+    );
     expect(result.accept).toBe(false);
   });
 
@@ -76,7 +98,12 @@ describe("judgeUpdate", () => {
   });
 
   it("lehnt Fehlschlag und leeres Ergebnis ab", () => {
-    expect(judgeUpdate({ locations: 10 }, { status: "fehlgeschlagen", usedSource: null, locations: null }).accept).toBe(false);
+    expect(
+      judgeUpdate(
+        { locations: 10 },
+        { status: "fehlgeschlagen", usedSource: null, locations: null },
+      ).accept,
+    ).toBe(false);
     expect(judgeUpdate({ locations: 10 }, { ...amtlich, locations: 0 }).accept).toBe(false);
   });
 });

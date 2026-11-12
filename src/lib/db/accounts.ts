@@ -116,7 +116,9 @@ export function setLanguage(accountId: string, language: string | null): void {
  * Wert wird am Endpunkt geprüft, nicht hier.
  */
 export function setLocationPreference(accountId: string, preference: string | null): void {
-  db().prepare("UPDATE account SET location_preference = ? WHERE id = ?").run(preference, accountId);
+  db()
+    .prepare("UPDATE account SET location_preference = ? WHERE id = ?")
+    .run(preference, accountId);
 }
 
 export function findAccountByEmail(email: string): Account | null {
@@ -259,7 +261,10 @@ export function authenticate(identifier: string, password: string): Account | nu
  * Weg, den Unbekannte beliebig oft aufrufen können; die übrigen prüfen ein
  * Passwort erst hinter einer gültigen Sitzung.
  */
-export async function authenticateAsync(identifier: string, password: string): Promise<Account | null> {
+export async function authenticateAsync(
+  identifier: string,
+  password: string,
+): Promise<Account | null> {
   bootstrapAdmins();
   const row = accountRowByLogin(identifier);
 
@@ -422,8 +427,7 @@ export function activeAdminCount(): number {
 
 function roleRow(accountId: string): { role: string; disabled_at: string | null } | undefined {
   return db().prepare("SELECT role, disabled_at FROM account WHERE id = ?").get(accountId) as
-    | { role: string; disabled_at: string | null }
-    | undefined;
+    { role: string; disabled_at: string | null } | undefined;
 }
 
 /**
@@ -659,7 +663,8 @@ export function deleteAccount(
   const handle = db();
   const row = handle
     .prepare("SELECT password_hash, role, disabled_at FROM account WHERE id = ?")
-    .get(accountId) as { password_hash: string; role: string; disabled_at: string | null } | undefined;
+    .get(accountId) as
+    { password_hash: string; role: string; disabled_at: string | null } | undefined;
   if (!row || !verifyPassword(password, row.password_hash)) return "wrong-password";
   if (row.role === "admin" && !row.disabled_at && activeAdminCount() <= 1) return "last-admin";
 
@@ -674,9 +679,10 @@ export function deleteAccount(
     // Die Adresse steht sonst weiter in den Einladungen (und in der Admin-Liste),
     // obwohl das Konto weg ist (ToDo 10.19). Zeilen, die für eine Einladung
     // dieser Adresse stehen, gehen mit; sie wären ohnehin nicht mehr einlösbar.
-    const address = (handle.prepare("SELECT email FROM account WHERE id = ?").get(accountId) as
-      | { email: string }
-      | undefined)?.email;
+    const address = (
+      handle.prepare("SELECT email FROM account WHERE id = ?").get(accountId) as
+        { email: string } | undefined
+    )?.email;
     if (address) handle.prepare("DELETE FROM invitation WHERE email = ?").run(address);
     handle.prepare("DELETE FROM account WHERE id = ?").run(accountId);
     handle.exec("COMMIT");

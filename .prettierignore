@@ -10,3 +10,6 @@ data/*.md
 test-results
 playwright-report
 Parkplätze
+# Private Unterlagen – gehören nicht zum Quelltext und werden von Hand
+# gepflegt; ein Formatierlauf soll sie nicht anfassen.
+AAAPrivat

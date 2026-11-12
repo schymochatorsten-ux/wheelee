@@ -64,7 +64,8 @@ export function distanceToSegment(point: LatLng, a: LatLng, b: LatLng): number {
   const dy = pb.y - pa.y;
   const lengthSquared = dx * dx + dy * dy;
   // Der Punkt liegt im Ursprung; t ist der Fußpunkt auf der Strecke.
-  const t = lengthSquared === 0 ? 0 : Math.max(0, Math.min(1, -(pa.x * dx + pa.y * dy) / lengthSquared));
+  const t =
+    lengthSquared === 0 ? 0 : Math.max(0, Math.min(1, -(pa.x * dx + pa.y * dy) / lengthSquared));
   return Math.hypot(pa.x + t * dx, pa.y + t * dy);
 }
 
@@ -101,7 +102,13 @@ export function farFromStreets(
     if (spot.lat === null || spot.lng === null) continue;
     const distanceMeters = distanceToNearestStreet({ lat: spot.lat, lng: spot.lng }, streets);
     if (distanceMeters > threshold) {
-      findings.push({ id: spot.id, label: spot.label, lat: spot.lat, lng: spot.lng, distanceMeters });
+      findings.push({
+        id: spot.id,
+        label: spot.label,
+        lat: spot.lat,
+        lng: spot.lng,
+        distanceMeters,
+      });
     }
   }
   return findings.sort((a, b) => b.distanceMeters - a.distanceMeters);
@@ -134,14 +141,19 @@ out geom;
       try {
         const response = await fetch(endpoint, {
           method: "POST",
-          headers: { "User-Agent": USER_AGENT, "Content-Type": "application/x-www-form-urlencoded" },
+          headers: {
+            "User-Agent": USER_AGENT,
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
           body: `data=${encodeURIComponent(query)}`,
           signal: AbortSignal.timeout(200_000),
         });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const data = (await response.json()) as { elements?: OverpassWay[] };
         const lines = (data.elements ?? [])
-          .filter((element) => element.type === "way" && element.geometry && element.geometry.length > 0)
+          .filter(
+            (element) => element.type === "way" && element.geometry && element.geometry.length > 0,
+          )
           .map((element) => element.geometry!.map((p) => ({ lat: p.lat, lng: p.lon })));
         // Leer heißt hier: Überlast, nicht „keine Straßen" – in einer Stadt gibt es welche.
         if (lines.length === 0) throw new Error("leere Antwort");
@@ -164,7 +176,9 @@ async function main() {
   const args = process.argv.slice(2);
   const maxIndex = args.indexOf("--max");
   const max = maxIndex >= 0 ? Number(args[maxIndex + 1]) || 40 : 40;
-  const slugs = args.filter((a, i) => !a.startsWith("--") && !(maxIndex >= 0 && i === maxIndex + 1));
+  const slugs = args.filter(
+    (a, i) => !a.startsWith("--") && !(maxIndex >= 0 && i === maxIndex + 1),
+  );
 
   if (slugs.length === 0) {
     console.log("Welche Stadt? npm run check:streets -- frankfurt");
@@ -203,7 +217,8 @@ async function main() {
           `(${f.lat.toFixed(5)}, ${f.lng.toFixed(5)})`,
       );
     }
-    if (findings.length > max) console.log(`  … und ${findings.length - max} weitere (mit --max erhöhen)`);
+    if (findings.length > max)
+      console.log(`  … und ${findings.length - max} weitere (mit --max erhöhen)`);
   }
 }
 

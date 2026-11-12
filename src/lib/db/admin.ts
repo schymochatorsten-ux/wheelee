@@ -62,7 +62,9 @@ function accountFilter(query: string | undefined): { where: string; params: stri
 /** Wie viele Konten die Suche trifft – unabhängig von der Seitengröße. */
 export function countAccounts(query?: string): number {
   const { where, params } = accountFilter(query);
-  const row = db().prepare(`SELECT COUNT(*) AS n FROM account ${where}`).get(...params) as { n: number };
+  const row = db()
+    .prepare(`SELECT COUNT(*) AS n FROM account ${where}`)
+    .get(...params) as { n: number };
   return row.n;
 }
 
@@ -73,7 +75,9 @@ export function countAccounts(query?: string): number {
 export function listAccounts(options: AccountListOptions = {}): AccountSummary[] {
   const { where, params } = accountFilter(options.query);
   const limit =
-    options.limit === undefined ? -1 : Math.max(0, Math.min(Math.floor(options.limit), ACCOUNTS_MAX));
+    options.limit === undefined
+      ? -1
+      : Math.max(0, Math.min(Math.floor(options.limit), ACCOUNTS_MAX));
   const rows = db()
     .prepare(
       `SELECT id, email, username, role, created_at, last_login_at, disabled_at,
@@ -177,9 +181,9 @@ export function deleteAccountByAdmin(
   if (accountId === actingAccountId) return "self";
   const handle = db();
 
-  const row = handle.prepare("SELECT role, disabled_at FROM account WHERE id = ?").get(accountId) as
-    | { role: string; disabled_at: string | null }
-    | undefined;
+  const row = handle
+    .prepare("SELECT role, disabled_at FROM account WHERE id = ?")
+    .get(accountId) as { role: string; disabled_at: string | null } | undefined;
   if (!row) return "not-found";
   if (row.role === "admin" && !row.disabled_at && activeAdminCount() <= 1) return "last-admin";
 

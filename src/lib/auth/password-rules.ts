@@ -31,6 +31,7 @@ export function passwordProblem(password: string): string | null {
    * bei jedem Versuch für Sekunden beschäftigen. 200 Zeichen schränken
    * niemanden ein, der sich einen Satz merkt.
    */
-  if (password.length > MAX_PASSWORD_LENGTH) return t("account.passwordTooLong", { max: MAX_PASSWORD_LENGTH });
+  if (password.length > MAX_PASSWORD_LENGTH)
+    return t("account.passwordTooLong", { max: MAX_PASSWORD_LENGTH });
   return null;
 }

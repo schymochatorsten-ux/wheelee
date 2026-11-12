@@ -5,7 +5,13 @@ import path from "node:path";
 import { closeDb, db } from "./sqlite";
 import { createAccount, setRole } from "./accounts";
 import { createInvitation } from "./invitations";
-import { countAccounts, deleteAccountByAdmin, listAccounts, listInvitations, revokeInvitation } from "./admin";
+import {
+  countAccounts,
+  deleteAccountByAdmin,
+  listAccounts,
+  listInvitations,
+  revokeInvitation,
+} from "./admin";
 import { purgeExpired } from "./cleanup";
 
 /** Benutzerverwaltung (ToDo 18.3), gegen eine echte Datenbank. */
@@ -48,7 +54,9 @@ describe("listAccounts / listInvitations", () => {
     const alt = konto("alt@example.org");
     for (const n of ["a", "b", "c"]) konto(`${n}@example.org`);
     const gesperrt = konto("gesperrt@example.org");
-    db().prepare("UPDATE account SET disabled_at = ? WHERE id = ?").run("2026-01-01T00:00:00.000Z", gesperrt.id);
+    db()
+      .prepare("UPDATE account SET disabled_at = ? WHERE id = ?")
+      .run("2026-01-01T00:00:00.000Z", gesperrt.id);
 
     expect(countAccounts()).toBe(6);
     const alle = listAccounts().map((a) => a.email);
@@ -75,7 +83,9 @@ describe("listAccounts / listInvitations", () => {
     const offen = createInvitation(chef.id, "a@example.org", "user")!;
     const alt = createInvitation(chef.id, "b@example.org", "user")!;
     const weg = createInvitation(chef.id, "c@example.org", "user")!;
-    db().prepare("UPDATE invitation SET expires_at = ? WHERE id = ?").run("2020-01-01T00:00:00.000Z", alt.id);
+    db()
+      .prepare("UPDATE invitation SET expires_at = ? WHERE id = ?")
+      .run("2020-01-01T00:00:00.000Z", alt.id);
     revokeInvitation(weg.id);
 
     const states = Object.fromEntries(listInvitations().map((i) => [i.email, i.state]));
@@ -141,10 +151,11 @@ describe("purgeExpired: Einladungen", () => {
 
     const result = purgeExpired();
     expect(result.invitations).toBe(1);
-    expect(listInvitations().map((i) => i.email).sort()).toEqual([
-      "jung@example.org",
-      "offen@example.org",
-    ]);
+    expect(
+      listInvitations()
+        .map((i) => i.email)
+        .sort(),
+    ).toEqual(["jung@example.org", "offen@example.org"]);
     expect(offen.id).toBeTruthy();
   });
 });

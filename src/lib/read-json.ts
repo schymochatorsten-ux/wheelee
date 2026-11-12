@@ -24,7 +24,10 @@ export class BodyTooLargeError extends Error {
 }
 
 /** Wie `request.json()`, wirft aber bei mehr als `maxBytes` Bytes. */
-export async function readJson(request: Request, maxBytes: number = MAX_JSON_BYTES): Promise<unknown> {
+export async function readJson(
+  request: Request,
+  maxBytes: number = MAX_JSON_BYTES,
+): Promise<unknown> {
   const declared = Number(request.headers.get("content-length"));
   if (Number.isFinite(declared) && declared > maxBytes) throw new BodyTooLargeError();
 

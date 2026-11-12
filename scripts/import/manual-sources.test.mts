@@ -15,7 +15,9 @@ describe("München (handgepflegte Quelle)", () => {
       baustelle_ende: "20261211103557",
       hinweis: "Der Standort ist verlegt.",
     });
-    expect(note).toBe("Wegen einer Baustelle vorübergehend geändert (bis 11.12.2026) – Der Standort ist verlegt.");
+    expect(note).toBe(
+      "Wegen einer Baustelle vorübergehend geändert (bis 11.12.2026) – Der Standort ist verlegt.",
+    );
   });
 
   it("nimmt ein Datum, das schon lesbar ist, unverändert", () => {

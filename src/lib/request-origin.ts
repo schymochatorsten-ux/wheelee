@@ -17,7 +17,8 @@ const WRITING = new Set(["POST", "PUT", "PATCH", "DELETE"]);
 
 import { MAX_JSON_BYTES } from "./read-json";
 
-export type OriginVerdict = "ok" | "foreign-origin" | "unsupported-media-type" | "payload-too-large";
+export type OriginVerdict =
+  "ok" | "foreign-origin" | "unsupported-media-type" | "payload-too-large";
 
 function hostOf(value: string | null): string | null {
   if (!value) return null;

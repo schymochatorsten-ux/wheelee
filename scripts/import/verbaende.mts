@@ -75,7 +75,9 @@ export function buildVerbaende(
 
     const verband = verbaende.get(ars.slice(0, 9));
     if (!verband) {
-      throw new Error(`Gemeinde ${ags} (${row.GEN}) gilt als gemeinschaftsangehörig, aber der Verband ${ars.slice(0, 9)} fehlt.`);
+      throw new Error(
+        `Gemeinde ${ags} (${row.GEN}) gilt als gemeinschaftsangehörig, aber der Verband ${ars.slice(0, 9)} fehlt.`,
+      );
     }
     result.set(ags, verband);
   }

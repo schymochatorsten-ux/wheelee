@@ -239,7 +239,8 @@ export function* readPbf(file: string): Generator<PbfElement> {
     const lengthBuffer = Buffer.alloc(4);
 
     while (position < size) {
-      if (fs.readSync(fd, lengthBuffer, 0, 4, position) !== 4) throw new Error("Abgeschnittene Datei");
+      if (fs.readSync(fd, lengthBuffer, 0, 4, position) !== 4)
+        throw new Error("Abgeschnittene Datei");
       const headerLength = lengthBuffer.readUInt32BE(0);
       position += 4;
       if (headerLength > 64 * 1024) throw new Error("Unplausible Kopfgröße – keine PBF-Datei?");

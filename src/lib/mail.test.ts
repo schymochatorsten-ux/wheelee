@@ -158,7 +158,11 @@ describe("Versand", () => {
       process.env.SMTP_FROM = "wheelee <noreply@example.org>";
       process.env.WHEELEE_PUBLIC_URL = "https://wheelee.example.org";
 
-      await sendMail({ to: "jemand@example.com", subject: "Hallo Test", text: "Der Link: https://x.example/#abc" });
+      await sendMail({
+        to: "jemand@example.com",
+        subject: "Hallo Test",
+        text: "Der Link: https://x.example/#abc",
+      });
       const raw = await server.received;
       expect(raw).toContain("Subject: Hallo Test");
       expect(raw).toContain("To: jemand@example.com");

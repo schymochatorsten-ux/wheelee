@@ -79,9 +79,15 @@ describe("recordVisit", () => {
 
   it("zählt einen Besucher einmal je Tag, weitere Aufrufe als Seitenaufrufe", () => {
     const now = at("2026-10-29T10:00:00Z");
-    expect(recordVisit({ ip: "203.0.113.5", userAgent: FIREFOX, optedOut: false, now })).toBe("counted");
-    expect(recordVisit({ ip: "203.0.113.5", userAgent: FIREFOX, optedOut: false, now })).toBe("repeat");
-    expect(recordVisit({ ip: "203.0.113.5", userAgent: FIREFOX, optedOut: false, now })).toBe("repeat");
+    expect(recordVisit({ ip: "203.0.113.5", userAgent: FIREFOX, optedOut: false, now })).toBe(
+      "counted",
+    );
+    expect(recordVisit({ ip: "203.0.113.5", userAgent: FIREFOX, optedOut: false, now })).toBe(
+      "repeat",
+    );
+    expect(recordVisit({ ip: "203.0.113.5", userAgent: FIREFOX, optedOut: false, now })).toBe(
+      "repeat",
+    );
 
     expect(readVisits()).toEqual([{ day: "2026-10-29", visitors: 1, views: 3 }]);
   });
@@ -95,8 +101,18 @@ describe("recordVisit", () => {
   });
 
   it("zählt am nächsten Tag neu – dieselbe Person ist dann wieder ein Besucher", () => {
-    recordVisit({ ip: "203.0.113.5", userAgent: FIREFOX, optedOut: false, now: at("2026-10-29T10:00:00Z") });
-    recordVisit({ ip: "203.0.113.5", userAgent: FIREFOX, optedOut: false, now: at("2026-10-30T10:00:00Z") });
+    recordVisit({
+      ip: "203.0.113.5",
+      userAgent: FIREFOX,
+      optedOut: false,
+      now: at("2026-10-29T10:00:00Z"),
+    });
+    recordVisit({
+      ip: "203.0.113.5",
+      userAgent: FIREFOX,
+      optedOut: false,
+      now: at("2026-10-30T10:00:00Z"),
+    });
     const days = readVisits();
     expect(days.map((d) => [d.day, d.visitors])).toEqual([
       ["2026-10-30", 1],
@@ -108,14 +124,24 @@ describe("recordVisit", () => {
   it("zählt Roboter und „nicht verfolgen“ gar nicht", () => {
     const now = at("2026-10-29T10:00:00Z");
     expect(
-      recordVisit({ ip: "203.0.113.5", userAgent: "Googlebot/2.1 (+http://www.google.com/bot.html)", optedOut: false, now }),
+      recordVisit({
+        ip: "203.0.113.5",
+        userAgent: "Googlebot/2.1 (+http://www.google.com/bot.html)",
+        optedOut: false,
+        now,
+      }),
     ).toBe("bot");
     expect(recordVisit({ ip: "203.0.113.5", userAgent: FIREFOX, optedOut: true, now })).toBe("dnt");
     expect(readVisits()).toEqual([]);
   });
 
   it("speichert weder Adresse noch Browserkennung", () => {
-    recordVisit({ ip: "203.0.113.77", userAgent: FIREFOX, optedOut: false, now: at("2026-10-29T10:00:00Z") });
+    recordVisit({
+      ip: "203.0.113.77",
+      userAgent: FIREFOX,
+      optedOut: false,
+      now: at("2026-10-29T10:00:00Z"),
+    });
     closeDb(); // schreibt den Zwischenstand aus der WAL-Datei in die Hauptdatei
     // Alle Dateien der Datenbank, auch `-wal`: Dort liegt, was noch nicht übernommen ist.
     const raw = Buffer.concat(

@@ -64,18 +64,26 @@ export function confirmationOf(spotId: string): ConfirmationState | null {
  * Wandert er, ist es ein neuer Standort – Bewertungen am alten laufen ins
  * Leere, was bei einem verschobenen Punkt richtig ist.
  */
-export function osmOnlySpots(): { id: string; city: string; label: string; lat: number; lng: number }[] {
+export function osmOnlySpots(): {
+  id: string;
+  city: string;
+  label: string;
+  lat: number;
+  lng: number;
+}[] {
   const seen = new Set<string>();
-  return Object.entries(data.staedte)
-    .flatMap(([city, entry]) =>
-      (entry.nurOsmStandorte ?? []).map((spot) => ({
-        id: `${city}-osm-${Math.round(spot.lat * 1e5)}-${Math.round(spot.lng * 1e5)}`,
-        city,
-        ...spot,
-      })),
-    )
-    // Zwei OSM-Punkte im selben Meter wären eine Stelle mit doppelter ID.
-    .filter((spot) => !seen.has(spot.id) && seen.add(spot.id));
+  return (
+    Object.entries(data.staedte)
+      .flatMap(([city, entry]) =>
+        (entry.nurOsmStandorte ?? []).map((spot) => ({
+          id: `${city}-osm-${Math.round(spot.lat * 1e5)}-${Math.round(spot.lng * 1e5)}`,
+          city,
+          ...spot,
+        })),
+      )
+      // Zwei OSM-Punkte im selben Meter wären eine Stelle mit doppelter ID.
+      .filter((spot) => !seen.has(spot.id) && seen.add(spot.id))
+  );
 }
 
 /** Wurde diese Stadt überhaupt schon abgeglichen? */

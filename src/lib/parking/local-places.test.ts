@@ -26,7 +26,9 @@ describe("searchLocalPlaces", () => {
   it("findet eine Stadt am Wortanfang und kennzeichnet sie", () => {
     const places = searchLocalPlaces("frankfurt", null);
     expect(places.length).toBeGreaterThan(0);
-    expect(places.some((place) => place.kind === "city" && place.label.startsWith("Frankfurt"))).toBe(true);
+    expect(
+      places.some((place) => place.kind === "city" && place.label.startsWith("Frankfurt")),
+    ).toBe(true);
   });
 
   it("zeigt die Stadt vor gleich gut passenden Straßen, auch wenn diese näher liegen", () => {
@@ -34,7 +36,9 @@ describe("searchLocalPlaces", () => {
     // trotzdem soll die Stadt unter den fünf Vorschlägen sein.
     const koeln = { lat: 50.938, lng: 6.9551 };
     const places = searchLocalPlaces("frankfurt", koeln, 5);
-    expect(places.some((place) => place.kind === "city" && place.label.startsWith("Frankfurt"))).toBe(true);
+    expect(
+      places.some((place) => place.kind === "city" && place.label.startsWith("Frankfurt")),
+    ).toBe(true);
   });
 
   it("findet Straßen mit Ortsangabe und gültigen Koordinaten", () => {
@@ -52,14 +56,18 @@ describe("searchLocalPlaces", () => {
     // „bahnhof“ steckt in „Hauptbahnhof“, soll dort aber nicht treffen.
     for (const place of searchLocalPlaces("bahnhof", null, 50)) {
       const key = normalizeForSearch(place.label);
-      expect(key.startsWith("bahnhof") || key.includes(" bahnhof") || key.includes("-bahnhof")).toBe(true);
+      expect(
+        key.startsWith("bahnhof") || key.includes(" bahnhof") || key.includes("-bahnhof"),
+      ).toBe(true);
     }
   });
 
   it("ordnet mit Bezugspunkt gleichrangige Treffer nach Nähe", () => {
     const koeln = { lat: 50.938, lng: 6.9551 };
     const places = searchLocalPlaces("bahnhofstr", koeln, 20);
-    const first = places.filter((place) => normalizeForSearch(place.label).startsWith("bahnhofstr"));
+    const first = places.filter((place) =>
+      normalizeForSearch(place.label).startsWith("bahnhofstr"),
+    );
     // Dieselbe Entfernung wie die Suche – eine Flächennäherung kippt bei zwei fast gleich weiten Treffern.
     const meters = first.map((place) => distanceMeters(koeln, place));
     expect(meters).toEqual([...meters].sort((a, b) => a - b));

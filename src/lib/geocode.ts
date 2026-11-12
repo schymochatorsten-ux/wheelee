@@ -31,7 +31,15 @@ interface NominatimResult {
   addresstype?: string;
 }
 
-const CITY_TYPES = new Set(["city", "town", "village", "hamlet", "municipality", "suburb", "borough"]);
+const CITY_TYPES = new Set([
+  "city",
+  "town",
+  "village",
+  "hamlet",
+  "municipality",
+  "suburb",
+  "borough",
+]);
 
 function kindOf(addresstype: string | undefined): PlaceKind | undefined {
   if (!addresstype) return undefined;

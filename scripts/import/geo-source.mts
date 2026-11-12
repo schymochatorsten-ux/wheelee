@@ -807,5 +807,8 @@ export async function fetchGeoJson(url: string): Promise<{ features: GeoFeature[
 
   // Das Koordinatensystem nennt bei WFS-Abrufen die URL selbst (`SRSNAME=EPSG:25832`).
   const srs = /[?&]srsname=([^&]+)/iu.exec(resolved)?.[1];
-  return { features: recordsToFeatures(parseCsv(text), srs ? decodeURIComponent(srs) : undefined), url: resolved };
+  return {
+    features: recordsToFeatures(parseCsv(text), srs ? decodeURIComponent(srs) : undefined),
+    url: resolved,
+  };
 }

@@ -51,12 +51,21 @@ function build(): Entry[] {
     names.set(city.slug, city.name);
     entries.push({
       key: normalizeForSearch(city.name),
-      place: { label: city.name, detail: "", lat: city.center.lat, lng: city.center.lng, kind: "city" },
+      place: {
+        label: city.name,
+        detail: "",
+        lat: city.center.lat,
+        lng: city.center.lng,
+        kind: "city",
+      },
       weight: city.spotCount,
     });
   }
 
-  const streets = new Map<string, { label: string; city: string; lats: number[]; lngs: number[] }>();
+  const streets = new Map<
+    string,
+    { label: string; city: string; lats: number[]; lngs: number[] }
+  >();
   for (const spot of getAllSpots()) {
     if (!spot.street || spot.lat === null || spot.lng === null) continue;
     const id = `${spot.city}|${spot.street}`;
@@ -72,7 +81,8 @@ function build(): Entry[] {
   }
 
   for (const street of streets.values()) {
-    const mean = (values: number[]) => values.reduce((sum, value) => sum + value, 0) / values.length;
+    const mean = (values: number[]) =>
+      values.reduce((sum, value) => sum + value, 0) / values.length;
     entries.push({
       key: normalizeForSearch(street.label),
       place: {

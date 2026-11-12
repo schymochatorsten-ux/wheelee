@@ -3,7 +3,13 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { closeDb, db } from "./sqlite";
-import { authenticate, createAccount, createSession, accountForSession, setDisabled } from "./accounts";
+import {
+  authenticate,
+  createAccount,
+  createSession,
+  accountForSession,
+  setDisabled,
+} from "./accounts";
 import {
   confirmEmailChange,
   createResetToken,
@@ -72,7 +78,9 @@ describe("Passwort zurücksetzen", () => {
   it("lehnt abgelaufene und erfundene Tokens ab", () => {
     konto();
     const link = createResetToken("a@example.org")!;
-    db().prepare("UPDATE mail_token SET expires_at = ?").run(new Date(Date.now() - 1000).toISOString());
+    db()
+      .prepare("UPDATE mail_token SET expires_at = ?")
+      .run(new Date(Date.now() - 1000).toISOString());
     expect(resetPassword(link.token, NEU)).toBe(false);
     expect(resetPassword("", NEU)).toBe(false);
     expect(resetPassword("erfunden", NEU)).toBe(false);
@@ -81,7 +89,9 @@ describe("Passwort zurücksetzen", () => {
   it("speichert nur den Hash des Tokens", () => {
     konto();
     const link = createResetToken("a@example.org")!;
-    const rows = db().prepare("SELECT token_hash FROM mail_token").all() as { token_hash: string }[];
+    const rows = db().prepare("SELECT token_hash FROM mail_token").all() as {
+      token_hash: string;
+    }[];
     expect(rows).toHaveLength(1);
     expect(rows[0].token_hash).not.toContain(link.token);
   });

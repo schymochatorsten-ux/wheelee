@@ -22,7 +22,9 @@ afterEach(() => {
 });
 
 const add = (day: string, visitors: number) =>
-  db().prepare("INSERT INTO visit_day (day, visitors, views) VALUES (?, ?, ?)").run(day, visitors, visitors);
+  db()
+    .prepare("INSERT INTO visit_day (day, visitors, views) VALUES (?, ?, ?)")
+    .run(day, visitors, visitors);
 
 describe("publicReach", () => {
   it("zeigt die Zahl von Anfang an, auch bei 0 und 1", () => {

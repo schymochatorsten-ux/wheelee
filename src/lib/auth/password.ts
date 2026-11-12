@@ -83,7 +83,12 @@ export function verifyPassword(password: string, stored: string): boolean {
 
   let actual: Buffer;
   try {
-    actual = scryptSync(password.normalize("NFKC"), parsed.salt, parsed.expected.length, parsed.options);
+    actual = scryptSync(
+      password.normalize("NFKC"),
+      parsed.salt,
+      parsed.expected.length,
+      parsed.options,
+    );
   } catch {
     // Unsinnige Parameter in der Datei: nicht anmelden, aber auch nicht
     // abstürzen.
@@ -141,9 +146,19 @@ export function verifyPasswordAsync(password: string, stored: string): Promise<b
   return slot(
     () =>
       new Promise<boolean>((resolve) => {
-        scrypt(password.normalize("NFKC"), parsed.salt, parsed.expected.length, parsed.options, (error, actual) => {
-          resolve(!error && actual.length === parsed.expected.length && timingSafeEqual(actual, parsed.expected));
-        });
+        scrypt(
+          password.normalize("NFKC"),
+          parsed.salt,
+          parsed.expected.length,
+          parsed.options,
+          (error, actual) => {
+            resolve(
+              !error &&
+                actual.length === parsed.expected.length &&
+                timingSafeEqual(actual, parsed.expected),
+            );
+          },
+        );
       }),
   );
 }

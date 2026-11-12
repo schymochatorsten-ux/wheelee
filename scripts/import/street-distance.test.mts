@@ -51,7 +51,9 @@ describe("farFromStreets", () => {
   });
 
   it("überspringt Standorte ohne Koordinate", () => {
-    expect(farFromStreets([{ id: "x", label: "ohne", lat: null, lng: null }], [street])).toEqual([]);
+    expect(farFromStreets([{ id: "x", label: "ohne", lat: null, lng: null }], [street])).toEqual(
+      [],
+    );
   });
 
   it("nimmt die nächste von mehreren Straßen", () => {

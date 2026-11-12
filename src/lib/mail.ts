@@ -106,8 +106,8 @@ export function mailConfigured(): boolean {
 export function envMailConfigured(): boolean {
   return Boolean(
     process.env.SMTP_HOST?.trim() &&
-      process.env.SMTP_FROM?.trim() &&
-      validUrl(process.env.WHEELEE_PUBLIC_URL),
+    process.env.SMTP_FROM?.trim() &&
+    validUrl(process.env.WHEELEE_PUBLIC_URL),
   );
 }
 

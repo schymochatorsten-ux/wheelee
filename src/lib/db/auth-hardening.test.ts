@@ -22,7 +22,12 @@ import {
 import { hashPassword, verifyPasswordAsync } from "../auth/password";
 import { isAdminAccount } from "../auth/session";
 import { readJson } from "../read-json";
-import { BACKOFF, loginPauseSeconds, recordLoginFailure, resetLoginBackoff } from "../login-backoff";
+import {
+  BACKOFF,
+  loginPauseSeconds,
+  recordLoginFailure,
+  resetLoginBackoff,
+} from "../login-backoff";
 
 /** Härtung der Konten (ToDo 10.19), gegen eine echte Datenbank. */
 
@@ -48,7 +53,9 @@ const PASSWORT = "ein gutes langes Passwort";
 function vorhandenesKonto(email: string, bestaetigt = true): void {
   const jetzt = new Date().toISOString();
   db()
-    .prepare("INSERT INTO account (id, email, password_hash, created_at, email_verified_at) VALUES (?, ?, ?, ?, ?)")
+    .prepare(
+      "INSERT INTO account (id, email, password_hash, created_at, email_verified_at) VALUES (?, ?, ?, ?, ?)",
+    )
     .run(email, email, hashPassword(PASSWORT), jetzt, bestaetigt ? jetzt : null);
 }
 
@@ -126,12 +133,16 @@ describe("Mail-Links nach Passwort- und Adresswechsel", () => {
 
 describe("Bestätigte Adresse (ToDo 10.21)", () => {
   const lesen = (email: string) =>
-    db().prepare("SELECT email_verified_at AS v FROM account WHERE email = ?").get(email) as { v: string | null };
+    db().prepare("SELECT email_verified_at AS v FROM account WHERE email = ?").get(email) as {
+      v: string | null;
+    };
 
   it("ist bei einem neuen Konto leer und nach dem Link gesetzt", () => {
     const konto = createAccount("a@example.org", PASSWORT)!;
     expect(lesen("a@example.org").v).toBeNull();
-    expect(confirmEmailChange(createVerificationToken(konto.id, konto.email))).toBe("a@example.org");
+    expect(confirmEmailChange(createVerificationToken(konto.id, konto.email))).toBe(
+      "a@example.org",
+    );
     expect(lesen("a@example.org").v).not.toBeNull();
   });
 
@@ -159,7 +170,9 @@ describe("Konto löschen und Einladungen", () => {
     if (!("account" in eingeloest)) throw new Error("nicht eingelöst");
 
     expect(deleteAccount(eingeloest.account.id, PASSWORT)).toBe("deleted");
-    const rest = db().prepare("SELECT COUNT(*) AS n FROM invitation WHERE email = ?").get("gast@example.org") as {
+    const rest = db()
+      .prepare("SELECT COUNT(*) AS n FROM invitation WHERE email = ?")
+      .get("gast@example.org") as {
       n: number;
     };
     expect(Number(rest.n)).toBe(0);
@@ -187,8 +200,11 @@ describe("Pause nach Fehlversuchen", () => {
   it("verdrängt bei voller Tabelle den ältesten Eintrag statt neue zu ignorieren", () => {
     const start = Date.now();
     for (let i = 0; i < BACKOFF.maxTracked; i += 1) recordLoginFailure(`a${i}@example.org`, start);
-    for (let i = 0; i <= BACKOFF.freeFailures + 1; i += 1) recordLoginFailure("ziel@example.org", start + i);
-    expect(loginPauseSeconds("ziel@example.org", start + BACKOFF.freeFailures + 2)).toBeGreaterThan(0);
+    for (let i = 0; i <= BACKOFF.freeFailures + 1; i += 1)
+      recordLoginFailure("ziel@example.org", start + i);
+    expect(loginPauseSeconds("ziel@example.org", start + BACKOFF.freeFailures + 2)).toBeGreaterThan(
+      0,
+    );
   });
 });
 
