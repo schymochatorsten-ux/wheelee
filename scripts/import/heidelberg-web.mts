@@ -23,6 +23,12 @@
  * Geschrieben wird `data/heidelberg.zusatz.json`; `import-city.mts` hängt die
  * Einträge beim Bauen der Seed-Datei an. So überlebt die Ergänzung einen
  * späteren Import, falls die amtliche Quelle je zurückkommt.
+ *
+ * **Die 22 berichteten Zeilen sind keine offene Aufgabe mehr** (Torsten,
+ * 2026-11-13): Sie sind geprüft und verworfen, 2d.8a ist abgeschlossen.
+ * Der Lauf zählt sie weiter auf, weil die Zahl zeigt, dass die Seite
+ * unverändert ist – **wer sie liest, soll sie nicht für eine Liste
+ * unerledigter Arbeit halten.** Begründung in `Erledigt.md` unter 2d.8a.
  */
 import fs from "node:fs/promises";
 import path from "node:path";
