@@ -65,6 +65,24 @@ export interface ParkingSpot {
    * `undefined` heißt „nicht geprüft", nicht „nicht bestätigt".
    */
   confirmation?: ConfirmationState;
+  /**
+   * Woher dieser Standort kommt (ToDo 8.11).
+   *
+   * Fehlt die Angabe, ist es ein importierter Standort – so bleiben die
+   * tausenden Seed-Einträge unverändert. `gemeldet` heißt: von einer Nutzerin
+   * eingetragen und noch nicht genug bestätigt; solche Standorte stehen in der
+   * Datenbank, nicht in einer Seed-Datei.
+   */
+  origin?: "import" | "gemeldet";
+  /**
+   * Hat der Import diese Zeile selbst als zweifelhaft übernommen (ToDo 8.11)?
+   *
+   * **Das ist das Gegenstück zum Weglassen.** Bisher blieb draußen, was sich
+   * nicht belegen ließ; seit dem 2026-11-13 darf es herein – aber gekennzeichnet.
+   * Gesetzt wird das Feld in der Seed- oder Zusatzdatei, nicht hier berechnet;
+   * was daraus folgt, steht in `parking/certainty.ts`.
+   */
+  unsicher?: boolean;
 }
 
 /** Bewertungsrichtung durch Nutzer:innen. */

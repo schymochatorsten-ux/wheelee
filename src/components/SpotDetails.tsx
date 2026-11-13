@@ -6,6 +6,7 @@ import { formatDistance } from "@/lib/geo";
 import { mapsLabel, mapsUrl, type MapsTarget } from "@/lib/navigation";
 import { formatTimeRestriction, maxStay, restrictionState } from "@/lib/opening-hours";
 import { spotTitle } from "@/lib/parking/display";
+import { uncertaintyReasons } from "@/lib/parking/certainty";
 import { DataDisclaimer } from "./DataDisclaimer";
 import { FeedbackButton } from "./FeedbackButton";
 import { RatingButtons } from "./RatingButtons";
@@ -76,6 +77,10 @@ export function SpotDetails({
   const tr = useRich();
   const closeButton = useRef<HTMLButtonElement>(null);
   const href = mapsUrl(spot, mapsTarget);
+  // Die Gründe, warum dieser Platz als unsicher gilt – die Regel steht in
+  // `parking/certainty.ts` und nicht hier, damit Oberfläche, Endpunkt und
+  // Schwellenrechnung dieselbe benutzen.
+  const reasons = uncertaintyReasons(spot);
 
   // „24/7“ und „von 00:00 Uhr bis 24:00 Uhr“ sind keine Beschränkungen –
   // als „Nur: 24/7“ gelesen wirken sie aber wie eine.
@@ -219,16 +224,44 @@ export function SpotDetails({
         </p>
       )}
 
-      {spot.confirmation === "nur_osm" && (
-        <p className="mt-3 rounded-xl bg-amber-50 p-2.5 text-sm text-amber-900 dark:bg-amber-950 dark:text-amber-200">
-          {tr("details.osmOnly", { strong: <strong>{t("details.osmOnlyStrong")}</strong> })}
-        </p>
-      )}
+      {/*
+        **Der Hinweis auf einen unsicheren Parkplatz, direkt über dem
+        Navigationsknopf** (ToDo 8.11, Torsten am 2026-11-13: „KLAR vorm
+        Navigieren davor sagen, der Parkplatz ist unsicher").
 
-      {spot.geoAccuracy !== "house" && (
-        <p className="mt-3 rounded-xl bg-amber-50 p-2.5 text-sm text-amber-900 dark:bg-amber-950 dark:text-amber-200">
-          {t("details.approx")}
-        </p>
+        **Warum ein Kasten statt drei.** Vorher standen hier bis zu drei
+        getrennte Meldungen untereinander – „nur in OpenStreetMap", „Position
+        ungefähr" und seit 8.11 auch „gemeldet". Drei gelbe Kästen liest
+        niemand; der dritte entwertet den ersten. Jetzt ist es **eine** Aussage
+        („dieser Platz ist unsicher") mit den Gründen darunter.
+
+        **Und warum er hier steht und nicht weiter oben.** Die Reihenfolge
+        folgt der Entscheidung: Wer bis zum Knopf „In Karten öffnen" gekommen
+        ist, fährt im nächsten Moment los. Der Hinweis muss genau davor stehen,
+        nicht über den Stellplatzzahlen, wo er schon weggescrollt ist.
+      */}
+      {reasons.length > 0 && (
+        <section
+          aria-labelledby="spot-uncertain-title"
+          className="mt-4 rounded-xl border-2 border-amber-500 bg-amber-50 p-3 text-sm text-amber-900 dark:border-amber-600 dark:bg-amber-950 dark:text-amber-100"
+        >
+          <h3 id="spot-uncertain-title" className="font-semibold">
+            {t("details.uncertainTitle")}
+          </h3>
+          <p className="mt-1">{t("details.uncertainLead")}</p>
+          <ul className="mt-2 list-disc space-y-1 pl-5">
+            {reasons.map((reason) => (
+              <li key={reason}>
+                {reason === "gemeldet" && t("details.uncertainReasonReported")}
+                {reason === "nur_osm" &&
+                  tr("details.osmOnly", { strong: <strong>{t("details.osmOnlyStrong")}</strong> })}
+                {reason === "lage" && t("details.approx")}
+                {reason === "quelle" && t("details.uncertainReasonSource")}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-2">{t("details.uncertainAsk")}</p>
+        </section>
       )}
 
       {href && (

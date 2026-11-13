@@ -100,7 +100,78 @@ export const pt: Messages = {
   "details.osmOnlyStrong": "Apenas no OpenStreetMap",
   "details.approx":
     "A posição só é conhecida aproximadamente – o lugar de estacionamento fica nesta rua, o ponto exato pode variar.",
+  "details.uncertainTitle": "Lugar incerto – leia antes de ir",
+  "details.uncertainLead":
+    "Esta informação não está confirmada: o lugar pode não existir ou estar noutro sítio.",
+  "details.uncertainReasonReported":
+    "Comunicado por um utilizador e ainda não confirmado por ninguém.",
+  "details.uncertainReasonSource":
+    "A fonte não esclareceu se este lugar existe realmente. Preferimos mostrá-lo com um aviso a não o mostrar.",
+  "details.uncertainAsk":
+    "Se já esteve lá: confirme o lugar ou comunique que já não existe. Lugares incertos desaparecem do mapa após poucas comunicações.",
   "details.source": "Fonte: {source}",
+
+  "report.open": "Comunicar lugar",
+  "report.title": "Comunicar um lugar que falta",
+  "report.lead": "O ponto é o centro do mapa. Mova o mapa até o centro ficar sobre o lugar.",
+  "report.label": "Designação ou endereço",
+  "report.labelPlaceholder": "p. ex. Bahnhofstraße 12",
+  "report.spaces": "Lugares",
+  "report.note": "Observação (opcional)",
+  "report.position": "Ponto: {lat}, {lng}",
+  "report.positionMissing": "O mapa ainda não carregou – aguarde um momento.",
+  "report.submit": "Comunicar",
+  "report.sending": "A enviar …",
+  "report.cancel": "Cancelar",
+  "report.close": "Fechar",
+  "report.done":
+    "Obrigado. O lugar já está no mapa – marcado como incerto até outros o confirmarem.",
+  "report.failed": "Não funcionou. Tente mais tarde.",
+  "report.needsAccount":
+    "Para comunicar um lugar é necessária uma conta. Só assim uma comunicação pode ser atribuída a uma pessoa.",
+  "report.afterwards":
+    "O lugar é visível de imediato e marcado como incerto. Quando contas suficientes o confirmarem, torna-se um lugar normal.",
+
+  "thresholds.title": "Quando um lugar desaparece",
+  "thresholds.intro":
+    "Contam-se contas, e apenas o excedente: comunicações de que já não existe menos confirmações.",
+  "thresholds.uncertain": "Lugares incertos",
+  "thresholds.uncertainHint":
+    "Comunicados, apenas no OpenStreetMap ou com posição aproximada. Neles está aberto desde o início se são corretos – por isso mais baixo.",
+  "thresholds.certain": "Lugares confirmados",
+  "thresholds.certainHint":
+    "De uma lista oficial, com posição exata. Aqui um dado verificado opõe-se às comunicações – por isso mais alto.",
+  "thresholds.coupledHint":
+    "O segundo número vale também no sentido inverso: são essas as confirmações de que um lugar comunicado precisa para se tornar normal. Acrescentar deve ser mais difícil do que retirar.",
+  "thresholds.save": "Guardar",
+  "thresholds.saving": "A guardar …",
+  "thresholds.saved": "Guardado.",
+  "thresholds.loadFailed": "Não foi possível carregar os limites.",
+  "thresholds.saveFailed": "Não foi possível guardar os limites.",
+
+  "userSpots.title": "Lugares comunicados",
+  "userSpots.intro":
+    "Adicionados por utilizadores. Aparecem como incertos no mapa até {count} contas os confirmarem – ou até alguém decidir aqui.",
+  "userSpots.none": "Nada comunicado.",
+  "userSpots.loadFailed": "Não foi possível carregar a lista.",
+  "userSpots.decideFailed": "Não foi possível guardar a decisão.",
+  "userSpots.approve": "Confirmar",
+  "userSpots.reject": "Descartar",
+  "userSpots.confirmations": "{count} de {needed} confirmações",
+  "userSpots.place": "{city} · {spaces} lugares · {lat}, {lng}",
+  "userSpots.status.offen": "aberto",
+  "userSpots.status.bestaetigt": "confirmado",
+  "userSpots.status.verworfen": "descartado",
+
+  "reported.statusHidden": "oculto",
+  "reported.statusKept": "mantido à mão",
+  "reported.uncertain": "incerto – um excedente de {count} comunicações remove-o",
+  "reported.certain": "confirmado – um excedente de {count} comunicações remove-o",
+  "reported.hide": "Ocultar",
+  "reported.restore": "Recuperar",
+  "reported.auto": "Automático",
+  "reported.autoHint": "Anular a decisão manual – depois valem de novo os limites.",
+  "reported.decideFailed": "Não foi possível guardar a decisão.",
 
   "maps.auto": "Automático (consoante o dispositivo)",
   "maps.google.open": "Abrir no Google Maps",
@@ -580,8 +651,10 @@ export const pt: Messages = {
   "api.accountExists": "Já existe uma conta para este endereço. Inicie sessão com ela.",
   "api.searchUnavailable": "A pesquisa não está disponível neste momento.",
   "api.unknownSpot": "Identificador de lugar de estacionamento desconhecido.",
+  "api.spotTooFar": "Este ponto está demasiado longe de qualquer município registado.",
   "api.unknownCity": "Cidade desconhecida.",
   "api.ratingNeedsAccount": "Para avaliar é preciso uma conta.",
+  "api.reportNeedsAccount": "É necessária uma conta para comunicar um lugar.",
   "api.favoriteNeedsAccount": "Para guardar lugares de estacionamento é preciso uma conta.",
   "api.tooManyFavorites": "Demasiadas alterações em pouco tempo. Aguarde um momento.",
   "api.favoritesFull":

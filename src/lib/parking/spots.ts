@@ -4,6 +4,8 @@ import { attributionOf, licenseOf } from "./license";
 import { confirmationOf, osmOnlySpots } from "./confirmation";
 import { cellKey, cellSize } from "./grid";
 import { seeds } from "./seeds.generated";
+import { hiddenSpotIds } from "../db/spot-state";
+import { visibleUserSpots } from "../db/user-spots";
 
 /**
  * Zugriff auf die Parkplatzdaten.
@@ -85,7 +87,14 @@ export function getAllSpots(): ParkingSpot[] {
  */
 let cached: ParkingSpot[] | null = null;
 
-function allSpots(): ParkingSpot[] {
+/**
+ * Der statische Teil: Seed-Dateien plus Kreuzvergleich. Einmal je Prozess.
+ *
+ * **Was hier nicht hineingehört, ist alles aus der Datenbank** – gemeldete und
+ * ausgeblendete Plätze. Die ändern sich im Betrieb, und ein Zwischenstand, der
+ * sie enthielte, wäre bis zum nächsten Neustart falsch.
+ */
+function seedSpots(): ParkingSpot[] {
   cached ??= [
     ...getAllSpots().map((spot) => {
       const confirmation = confirmationOf(spot.id);
@@ -110,6 +119,65 @@ function allSpots(): ParkingSpot[] {
     })),
   ];
   return cached;
+}
+
+/**
+ * Der Bestand, wie die App ihn zeigt: Seed-Dateien **plus** gemeldete Plätze,
+ * **minus** die ausgeblendeten (ToDo 8.11).
+ *
+ * **Warum der Datenbankteil nicht zwischengespeichert wird.** Er ist klein –
+ * ein paar gemeldete Plätze, ein paar ausgeblendete – und er ändert sich,
+ * während die App läuft. Ein Zwischenstand müsste bei jeder Stimme verworfen
+ * werden; das wäre ein zweiter Mechanismus, der bei jedem Vergessen eine
+ * falsche Karte ergibt.
+ *
+ * **Gemessen, nicht angenommen** (2026-11-13): `spotsInBounds` über den ganzen
+ * Kölner Ausschnitt (479 Standorte im Ergebnis, Durchlauf über den gesamten
+ * Bestand) braucht **1,4 ms** – samt den beiden Abfragen und dem Aufbau der
+ * Liste. Zum Vergleich: Das gzip der Antwort allein wog 2,5 ms (12.16). Der
+ * Zwischenspeicher für den **Seed-Teil** bleibt trotzdem, denn er spart das
+ * Zusammensetzen von 187 Dateien.
+ *
+ * **Fehlt die Datenbank, gilt nur der Bestand aus den Dateien.** Kein Fehler,
+ * sondern die einzige vertretbare Antwort: Eine Karte ohne gemeldete Plätze
+ * ist unvollständig, eine Karte, die wegen der Datenbank gar nicht erscheint,
+ * ist nutzlos. Dieselbe Richtung wie bei `validate` – nur dass dort das
+ * Fehlen **benannt** wird, weil es ein Bericht ist.
+ */
+function allSpots(): ParkingSpot[] {
+  let hidden: Set<string>;
+  try {
+    hidden = hiddenSpotIds();
+  } catch {
+    return withUserSpots();
+  }
+
+  const alle = withUserSpots();
+  return hidden.size === 0 ? alle : alle.filter((spot) => !hidden.has(spot.id));
+}
+
+/** Seed-Bestand plus gemeldete Plätze, **ohne** das Ausblenden anzuwenden. */
+function withUserSpots(): ParkingSpot[] {
+  const base = seedSpots();
+  try {
+    return [...base, ...visibleUserSpots()];
+  } catch {
+    // Keine Datenbank erreichbar (Test, Skript, erster Start).
+    return base;
+  }
+}
+
+/**
+ * Ein Parkplatz über seine ID – **auch wenn er ausgeblendet ist** (ToDo 8.11).
+ *
+ * Gebraucht von der Moderation und der Verwaltung. Beide müssen über einen
+ * Platz entscheiden, der gerade nicht sichtbar ist: `spotById` findet ihn
+ * nicht, und ohne den Standort wäre nicht zu erkennen, welche der beiden
+ * Schwellen für ihn gilt – und ein zurückgezogene Stimme könnte ihn nicht
+ * zurückholen.
+ */
+export function spotByIdAny(id: string): ParkingSpot | null {
+  return withUserSpots().find((spot) => spot.id === id) ?? null;
 }
 
 export interface Bounds {
@@ -239,7 +307,14 @@ export function spotsOfCity(slug: string): { city: CityInfo; spots: ParkingSpot[
   return {
     city: getCities()[index],
     spots: allSpots().filter(
-      (spot) => ids.has(spot.id) || (spot.confirmation === "nur_osm" && spot.city === slug),
+      (spot) =>
+        ids.has(spot.id) ||
+        // Standorte, die keine Seed-ID haben, aber zur Stadt gehören: „nur OSM"
+        // (3.11) und gemeldete Plätze (8.11). Offline soll die Karte dasselbe
+        // zeigen wie online – auch das Unsichere, sonst fehlt genau der Platz,
+        // den jemand gerade gemeldet hat.
+        (spot.city === slug &&
+          (spot.confirmation === "nur_osm" || spot.id.startsWith("gemeldet-"))),
     ),
   };
 }

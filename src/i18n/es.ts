@@ -101,7 +101,78 @@ export const es: Messages = {
   "details.osmOnlyStrong": "Solo en OpenStreetMap",
   "details.approx":
     "La posición solo se conoce de forma aproximada: la plaza está en esta calle, el lugar exacto puede variar.",
+  "details.uncertainTitle": "Plaza incierta: lea antes de ir",
+  "details.uncertainLead":
+    "Este dato no está confirmado: puede que la plaza no exista o que esté en otro lugar.",
+  "details.uncertainReasonReported": "Comunicada por un usuario y aún sin confirmar por nadie más.",
+  "details.uncertainReasonSource":
+    "La fuente no aclaró si esta plaza existe realmente. Preferimos mostrarla con un aviso que no mostrarla.",
+  "details.uncertainAsk":
+    "Si ha estado allí: confirme la plaza o comunique que ya no existe. Las plazas inciertas desaparecen del mapa con pocos avisos.",
   "details.source": "Fuente: {source}",
+
+  "report.open": "Comunicar plaza",
+  "report.title": "Comunicar una plaza que falta",
+  "report.lead":
+    "El punto es el centro del mapa. Mueva el mapa hasta que el centro esté sobre la plaza.",
+  "report.label": "Nombre o dirección",
+  "report.labelPlaceholder": "p. ej. Bahnhofstraße 12",
+  "report.spaces": "Plazas",
+  "report.note": "Observación (opcional)",
+  "report.position": "Punto: {lat}, {lng}",
+  "report.positionMissing": "El mapa aún no se ha cargado; espere un momento.",
+  "report.submit": "Comunicar",
+  "report.sending": "Enviando …",
+  "report.cancel": "Cancelar",
+  "report.close": "Cerrar",
+  "report.done":
+    "Gracias. La plaza ya aparece en el mapa, marcada como incierta hasta que otros la confirmen.",
+  "report.failed": "No ha funcionado. Inténtelo más tarde.",
+  "report.needsAccount":
+    "Para comunicar una plaza hace falta una cuenta. Solo así se puede atribuir un aviso a una persona.",
+  "report.afterwards":
+    "La plaza se ve de inmediato y queda marcada como incierta. Cuando suficientes cuentas la confirmen, pasa a ser una plaza normal.",
+
+  "thresholds.title": "Cuándo desaparece una plaza",
+  "thresholds.intro":
+    "Se cuentan cuentas, y solo el excedente: avisos de que ya no existe menos confirmaciones.",
+  "thresholds.uncertain": "Plazas inciertas",
+  "thresholds.uncertainHint":
+    "Comunicadas, solo en OpenStreetMap o con posición aproximada. En ellas está abierto desde el principio si son correctas; por eso es más bajo.",
+  "thresholds.certain": "Plazas confirmadas",
+  "thresholds.certainHint":
+    "De una lista oficial, con posición exacta. Aquí un dato verificado se opone a los avisos; por eso es más alto.",
+  "thresholds.coupledHint":
+    "La segunda cifra vale también al contrario: tantas confirmaciones necesita una plaza comunicada para pasar a normal. Añadir debe ser más difícil que quitar.",
+  "thresholds.save": "Guardar",
+  "thresholds.saving": "Guardando …",
+  "thresholds.saved": "Guardado.",
+  "thresholds.loadFailed": "No se han podido cargar los umbrales.",
+  "thresholds.saveFailed": "No se han podido guardar los umbrales.",
+
+  "userSpots.title": "Plazas comunicadas",
+  "userSpots.intro":
+    "Añadidas por usuarios. Aparecen como inciertas en el mapa hasta que {count} cuentas las confirmen, o hasta que alguien decida aquí.",
+  "userSpots.none": "Nada comunicado.",
+  "userSpots.loadFailed": "No se ha podido cargar la lista.",
+  "userSpots.decideFailed": "No se ha podido guardar la decisión.",
+  "userSpots.approve": "Confirmar",
+  "userSpots.reject": "Descartar",
+  "userSpots.confirmations": "{count} de {needed} confirmaciones",
+  "userSpots.place": "{city} · {spaces} plazas · {lat}, {lng}",
+  "userSpots.status.offen": "abierta",
+  "userSpots.status.bestaetigt": "confirmada",
+  "userSpots.status.verworfen": "descartada",
+
+  "reported.statusHidden": "oculta",
+  "reported.statusKept": "mantenida a mano",
+  "reported.uncertain": "incierta: un excedente de {count} avisos la retira",
+  "reported.certain": "confirmada: un excedente de {count} avisos la retira",
+  "reported.hide": "Ocultar",
+  "reported.restore": "Recuperar",
+  "reported.auto": "Automático",
+  "reported.autoHint": "Deshacer la decisión manual; después vuelven a valer los umbrales.",
+  "reported.decideFailed": "No se ha podido guardar la decisión.",
 
   "maps.auto": "Automático (según el dispositivo)",
   "maps.google.open": "Abrir en Google Maps",
@@ -583,8 +654,10 @@ export const es: Messages = {
   "api.accountExists": "Ya existe una cuenta con esta dirección. Inicia sesión con ella.",
   "api.searchUnavailable": "La búsqueda no está disponible ahora.",
   "api.unknownSpot": "ID de plaza desconocido.",
+  "api.spotTooFar": "Este punto está demasiado lejos de cualquier municipio registrado.",
   "api.unknownCity": "Ciudad desconocida.",
   "api.ratingNeedsAccount": "Para valorar necesitas una cuenta.",
+  "api.reportNeedsAccount": "Necesita una cuenta para comunicar una plaza.",
   "api.favoriteNeedsAccount": "Para guardar plazas necesitas una cuenta.",
   "api.tooManyFavorites": "Demasiados cambios en poco tiempo. Espera un momento.",
   "api.favoritesFull": "Has alcanzado el número máximo de plazas guardadas. Quita primero una.",

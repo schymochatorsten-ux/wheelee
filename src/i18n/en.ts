@@ -98,7 +98,78 @@ export const en: Messages = {
   "details.osmOnlyStrong": "Only in OpenStreetMap",
   "details.approx":
     "The position is only approximately known – the parking space is on this street, the exact spot may differ.",
+  "details.uncertainTitle": "Uncertain parking space – please read before you drive",
+  "details.uncertainLead":
+    "This entry is not confirmed: the parking space may not exist, or it may be somewhere else.",
+  "details.uncertainReasonReported": "Reported by a user and not yet confirmed by anyone else.",
+  "details.uncertainReasonSource":
+    "The source left it open whether this parking space really exists. We would rather show it with a warning than not at all.",
+  "details.uncertainAsk":
+    "If you have been there: please confirm the parking space or report that it is gone. Uncertain spaces disappear from the map after only a few reports.",
   "details.source": "Source: {source}",
+
+  "report.open": "Report a space",
+  "report.title": "Report a missing parking space",
+  "report.lead":
+    "The location is the centre of the map. Move the map until the centre is on the parking space.",
+  "report.label": "Name or address",
+  "report.labelPlaceholder": "e.g. Bahnhofstraße 12",
+  "report.spaces": "Spaces",
+  "report.note": "Note (optional)",
+  "report.position": "Location: {lat}, {lng}",
+  "report.positionMissing": "The map has not loaded yet – please wait a moment.",
+  "report.submit": "Report",
+  "report.sending": "Reporting …",
+  "report.cancel": "Cancel",
+  "report.close": "Close",
+  "report.done":
+    "Thank you. The parking space is now on the map – marked as uncertain until others confirm it.",
+  "report.failed": "That did not work. Please try again later.",
+  "report.needsAccount":
+    "An account is needed to report a parking space. Only then can a report be attributed to a person.",
+  "report.afterwards":
+    "The parking space is visible immediately and marked as uncertain. Once enough accounts confirm it, it becomes a regular parking space.",
+
+  "thresholds.title": "When a parking space disappears",
+  "thresholds.intro":
+    "Accounts are counted, and only the surplus: reports that it no longer exists minus confirmations.",
+  "thresholds.uncertain": "Uncertain parking spaces",
+  "thresholds.uncertainHint":
+    "Reported, only in OpenStreetMap, or location only approximate. For these it is open from the start whether they are correct – hence lower.",
+  "thresholds.certain": "Confirmed parking spaces",
+  "thresholds.certainHint":
+    "From an official list, with an exact location. Here a verified entry stands against the reports – hence higher.",
+  "thresholds.coupledHint":
+    "The second number also works the other way round: that many confirmations are needed for a reported space to become a regular one. Adding should be harder than removing.",
+  "thresholds.save": "Save",
+  "thresholds.saving": "Saving …",
+  "thresholds.saved": "Saved.",
+  "thresholds.loadFailed": "The thresholds could not be loaded.",
+  "thresholds.saveFailed": "The thresholds could not be saved.",
+
+  "userSpots.title": "Reported parking spaces",
+  "userSpots.intro":
+    "Added by users. They appear as uncertain on the map until {count} accounts confirm them – or until someone decides here.",
+  "userSpots.none": "Nothing reported.",
+  "userSpots.loadFailed": "The list could not be loaded.",
+  "userSpots.decideFailed": "The decision could not be saved.",
+  "userSpots.approve": "Confirm",
+  "userSpots.reject": "Discard",
+  "userSpots.confirmations": "{count} of {needed} confirmations",
+  "userSpots.place": "{city} · {spaces} spaces · {lat}, {lng}",
+  "userSpots.status.offen": "open",
+  "userSpots.status.bestaetigt": "confirmed",
+  "userSpots.status.verworfen": "discarded",
+
+  "reported.statusHidden": "hidden",
+  "reported.statusKept": "kept manually",
+  "reported.uncertain": "uncertain – a surplus of {count} reports removes it",
+  "reported.certain": "confirmed – a surplus of {count} reports removes it",
+  "reported.hide": "Hide",
+  "reported.restore": "Bring back",
+  "reported.auto": "Automatic",
+  "reported.autoHint": "Undo the manual decision – the thresholds apply again afterwards.",
+  "reported.decideFailed": "The decision could not be saved.",
 
   "maps.auto": "Automatic (by device)",
   "maps.google.open": "Open in Google Maps",
@@ -571,8 +642,10 @@ export const en: Messages = {
   "api.accountExists": "There is already an account for this address. Sign in with it.",
   "api.searchUnavailable": "Search is not available right now.",
   "api.unknownSpot": "Unknown parking space ID.",
+  "api.spotTooFar": "This location is too far from any recorded municipality.",
   "api.unknownCity": "Unknown city.",
   "api.ratingNeedsAccount": "You need an account to rate.",
+  "api.reportNeedsAccount": "You need an account to report a parking space.",
   "api.favoriteNeedsAccount": "You need an account to save parking spaces.",
   "api.tooManyFavorites": "Too many changes in a short time. Please wait a moment.",
   "api.favoritesFull":

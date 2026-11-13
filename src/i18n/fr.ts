@@ -100,7 +100,79 @@ export const fr: Messages = {
   "details.osmOnlyStrong": "Uniquement dans OpenStreetMap",
   "details.approx":
     "La position n'est connue qu'approximativement – la place se trouve dans cette rue, l'emplacement exact peut différer.",
+  "details.uncertainTitle": "Place incertaine – à lire avant de partir",
+  "details.uncertainLead":
+    "Cette information n'est pas confirmée : la place peut ne pas exister ou se trouver ailleurs.",
+  "details.uncertainReasonReported":
+    "Signalée par un utilisateur et encore confirmée par personne.",
+  "details.uncertainReasonSource":
+    "La source ne dit pas si cette place existe vraiment. Nous préférons l'afficher avec un avertissement que pas du tout.",
+  "details.uncertainAsk":
+    "Si vous y êtes allé : confirmez la place ou signalez qu'elle n'existe plus. Les places incertaines disparaissent de la carte après peu de signalements.",
   "details.source": "Source : {source}",
+
+  "report.open": "Signaler une place",
+  "report.title": "Signaler une place manquante",
+  "report.lead":
+    "L'emplacement est le centre de la carte. Déplacez la carte jusqu'à ce que le centre soit sur la place.",
+  "report.label": "Nom ou adresse",
+  "report.labelPlaceholder": "par ex. Bahnhofstraße 12",
+  "report.spaces": "Places",
+  "report.note": "Remarque (facultatif)",
+  "report.position": "Emplacement : {lat}, {lng}",
+  "report.positionMissing": "La carte n'est pas encore chargée – veuillez patienter.",
+  "report.submit": "Signaler",
+  "report.sending": "Envoi …",
+  "report.cancel": "Annuler",
+  "report.close": "Fermer",
+  "report.done":
+    "Merci. La place figure désormais sur la carte – signalée comme incertaine jusqu'à ce que d'autres la confirment.",
+  "report.failed": "Cela n'a pas fonctionné. Veuillez réessayer plus tard.",
+  "report.needsAccount":
+    "Un compte est nécessaire pour signaler une place. C'est le seul moyen d'attribuer un signalement à une personne.",
+  "report.afterwards":
+    "La place est visible immédiatement et signalée comme incertaine. Lorsque suffisamment de comptes la confirment, elle devient une place ordinaire.",
+
+  "thresholds.title": "Quand une place disparaît",
+  "thresholds.intro":
+    "Ce sont les comptes qui sont comptés, et seulement l'excédent : signalements de disparition moins confirmations.",
+  "thresholds.uncertain": "Places incertaines",
+  "thresholds.uncertainHint":
+    "Signalées, présentes seulement dans OpenStreetMap ou position approximative. Pour elles, il est ouvert dès le départ si elles sont justes – d'où un seuil plus bas.",
+  "thresholds.certain": "Places confirmées",
+  "thresholds.certainHint":
+    "Issues d'une liste officielle, avec position exacte. Ici une donnée vérifiée s'oppose aux signalements – d'où un seuil plus élevé.",
+  "thresholds.coupledHint":
+    "Le second nombre vaut aussi dans l'autre sens : il faut autant de confirmations pour qu'une place signalée devienne ordinaire. Ajouter doit être plus difficile que retirer.",
+  "thresholds.save": "Enregistrer",
+  "thresholds.saving": "Enregistrement …",
+  "thresholds.saved": "Enregistré.",
+  "thresholds.loadFailed": "Les seuils n'ont pas pu être chargés.",
+  "thresholds.saveFailed": "Les seuils n'ont pas pu être enregistrés.",
+
+  "userSpots.title": "Places signalées",
+  "userSpots.intro":
+    "Ajoutées par des utilisateurs. Elles apparaissent comme incertaines sur la carte jusqu'à ce que {count} comptes les confirment – ou qu'une décision soit prise ici.",
+  "userSpots.none": "Rien de signalé.",
+  "userSpots.loadFailed": "La liste n'a pas pu être chargée.",
+  "userSpots.decideFailed": "La décision n'a pas pu être enregistrée.",
+  "userSpots.approve": "Confirmer",
+  "userSpots.reject": "Rejeter",
+  "userSpots.confirmations": "{count} confirmations sur {needed}",
+  "userSpots.place": "{city} · {spaces} places · {lat}, {lng}",
+  "userSpots.status.offen": "ouverte",
+  "userSpots.status.bestaetigt": "confirmée",
+  "userSpots.status.verworfen": "rejetée",
+
+  "reported.statusHidden": "masquée",
+  "reported.statusKept": "conservée à la main",
+  "reported.uncertain": "incertaine – un excédent de {count} signalements la retire",
+  "reported.certain": "confirmée – un excédent de {count} signalements la retire",
+  "reported.hide": "Masquer",
+  "reported.restore": "Rétablir",
+  "reported.auto": "Automatique",
+  "reported.autoHint": "Annuler la décision manuelle – les seuils s'appliquent ensuite de nouveau.",
+  "reported.decideFailed": "La décision n'a pas pu être enregistrée.",
 
   "maps.auto": "Automatique (selon l'appareil)",
   "maps.google.open": "Ouvrir dans Google Maps",
@@ -602,8 +674,10 @@ export const fr: Messages = {
   "api.accountExists": "Il existe déjà un compte pour cette adresse. Connectez-vous avec celui-ci.",
   "api.searchUnavailable": "Recherche momentanément indisponible.",
   "api.unknownSpot": "Identifiant de place inconnu.",
+  "api.spotTooFar": "Ce point est trop éloigné de toute commune enregistrée.",
   "api.unknownCity": "Ville inconnue.",
   "api.ratingNeedsAccount": "Pour évaluer, il faut un compte.",
+  "api.reportNeedsAccount": "Un compte est nécessaire pour signaler une place.",
   "api.favoriteNeedsAccount": "Pour enregistrer des places, il faut un compte.",
   "api.tooManyFavorites": "Trop de modifications en peu de temps. Veuillez patienter un peu.",
   "api.favoritesFull":

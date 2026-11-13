@@ -1,12 +1,15 @@
 import { NextResponse } from "next/server";
 import { castVote, ownVote, ratingSummary, withdrawVote } from "@/lib/db/ratings";
-import { spotById } from "@/lib/parking/spots";
+import { spotById, spotByIdAny } from "@/lib/parking/spots";
 import { userFromRequest } from "@/lib/auth/session";
 import { allow, clientKey, LIMITS, retryAfter } from "@/lib/rate-limit";
 import type { RatingVote } from "@/lib/types";
 import { withLogging } from "@/lib/log";
 import { t } from "@/i18n";
 import { readJson } from "@/lib/read-json";
+import { spotPolicy } from "@/lib/db/spot-policy";
+import { isUncertain, removalThreshold } from "@/lib/parking/certainty";
+import { evaluateSpot } from "@/lib/spot-moderation";
 
 /**
  * Bewertungen zu einem Parkplatz (ToDos 8.2–8.5).
@@ -32,9 +35,21 @@ function isVote(value: unknown): value is RatingVote {
  * sonst zeichnet sie den Knopf einmal falsch, bis die zweite Antwort da ist.
  */
 function state(spotId: string, accountId: string | null) {
+  const spot = spotByIdAny(spotId);
+  const policy = spotPolicy();
+
   return {
     summary: ratingSummary(spotId),
     myVote: accountId ? ownVote(spotId, accountId) : null,
+    /*
+     * Wie viele Meldungen diesen Platz entfernen (ToDo 8.11) und ob er als
+     * unsicher gilt. **Beides gehört in die Antwort, nicht nur in den Server:**
+     * Wer eine Stimme abgibt, soll vorher wissen, was sie bewirkt – „noch zwei
+     * Meldungen und dieser Platz verschwindet" ist eine andere Entscheidung als
+     * ein Daumen ins Leere.
+     */
+    threshold: spot ? removalThreshold(spot, policy) : null,
+    uncertain: spot ? isUncertain(spot) : null,
   };
 }
 
@@ -81,7 +96,13 @@ async function postHandler(request: Request, context: { params: Promise<{ id: st
     );
   }
 
-  if (!spotById(id)) {
+  /*
+   * **Auch ein ausgeblendeter Platz nimmt Stimmen an** (ToDo 8.11). Er ist
+   * nicht verschwunden, sondern von Meldungen weggenommen – und genau dort
+   * muss ein „doch, den gibt es" ankommen, sonst ist das Ausblenden
+   * endgültig und nur noch von der Verwaltung umkehrbar.
+   */
+  if (!spotByIdAny(id)) {
     return NextResponse.json({ error: t("api.unknownSpot") }, { status: 404 });
   }
 
@@ -98,8 +119,21 @@ async function postHandler(request: Request, context: { params: Promise<{ id: st
 
   const result = castVote(id, user.id, body.vote);
 
+  /*
+   * **Jetzt entscheidet die Stimme etwas** (ToDo 8.11): Genug Meldungen
+   * blenden den Platz aus, genug Bestätigungen machen aus einem gemeldeten
+   * einen gewöhnlichen. Die Begründung, warum das von der alten Festlegung
+   * abweicht, steht in `lib/spot-moderation.ts`.
+   *
+   * **Die Auswertung läuft nach dem Schreiben der Stimme**, nicht davor und
+   * nicht in derselben Abfrage: Scheitert sie, ist die Stimme trotzdem
+   * gespeichert. Dieselbe Reihenfolge wie bei der Benachrichtigungsmail zu
+   * einer Rückmeldung (17.9) – die Hauptsache darf nicht am Nebenwerk hängen.
+   */
+  const moderation = evaluateSpot(id);
+
   return NextResponse.json(
-    { result, ...state(id, user.id) },
+    { result, moderation, ...state(id, user.id) },
     { headers: { "Cache-Control": "no-store" } },
   );
 }
@@ -133,8 +167,15 @@ async function deleteHandler(request: Request, context: { params: Promise<{ id: 
 
   withdrawVote(id, user.id);
 
+  /*
+   * Auch das Zurückziehen wird ausgewertet: Fällt der Überhang damit unter die
+   * Schwelle, kommt ein automatisch ausgeblendeter Platz zurück. Sonst wäre
+   * ein erkannter Irrtum folgenlos – siehe `lib/spot-moderation.ts`.
+   */
+  const moderation = evaluateSpot(id);
+
   return NextResponse.json(
-    { ok: true, ...state(id, user.id) },
+    { ok: true, moderation, ...state(id, user.id) },
     { headers: { "Cache-Control": "no-store" } },
   );
 }

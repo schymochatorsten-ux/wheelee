@@ -37,6 +37,9 @@ import { SpotDetails } from "./SpotDetails";
 import { SpotList } from "./SpotList";
 import { FeedbackAdmin } from "./FeedbackAdmin";
 import { ReportedSpots } from "./ReportedSpots";
+import { UserSpots } from "./UserSpots";
+import { ReportSpotForm } from "./ReportSpotForm";
+import { SpotThresholds } from "./SpotThresholds";
 import { AdminUsers } from "./AdminUsers";
 import { AdminVisits } from "./AdminVisits";
 import { AdminMail } from "./AdminMail";
@@ -398,6 +401,8 @@ export function MapSection({ initialNearby, defaultCity, user: initialUser }: Ma
    * nach – siehe `useSpots`.
    */
   const [bounds, setBounds] = useState<MapBounds | null>(null);
+  /** Ist das Formular „fehlenden Parkplatz melden" offen (8.11)? */
+  const [reporting, setReporting] = useState(false);
   const { spots: mapSpots, clusters, truncated } = useSpotsInBounds(bounds, initialNearby);
   /*
    * Zu viele Standorte für Einzelmarker: Der Server schickt dann Zähler je
@@ -1043,6 +1048,46 @@ export function MapSection({ initialNearby, defaultCity, user: initialUser }: Ma
                     )}
                   </div>
                 )}
+                {/*
+                  **Einen fehlenden Parkplatz melden** (8.11). Der Knopf steht
+                  in derselben umbrechenden Zeile wie Suche und Zahnrad und
+                  nicht in den Einstellungen: Gemeldet wird dort, wo man steht
+                  und die Karte sieht – die Stelle ist die Kartenmitte. In den
+                  Einstellungen wäre er unauffindbar und die Mitte zufällig.
+                */}
+                <button
+                  type="button"
+                  onClick={() => setReporting(true)}
+                  className={`${floatingPanel} order-last min-h-9 px-3 text-xs font-medium`}
+                >
+                  {t("report.open")}
+                </button>
+
+                {reporting && (
+                  <div className="pointer-events-auto order-last w-full sm:max-w-md">
+                    <ReportSpotForm
+                      center={
+                        bounds
+                          ? {
+                              lat: (bounds.minLat + bounds.maxLat) / 2,
+                              lng: (bounds.minLng + bounds.maxLng) / 2,
+                            }
+                          : null
+                      }
+                      signedIn={user !== null}
+                      onClose={() => setReporting(false)}
+                      /*
+                        Nach der Meldung den Ausschnitt neu holen, damit der
+                        eigene Platz sofort auf der Karte steht. Ohne das wäre
+                        die Rückmeldung „Danke" eine Behauptung, die die Karte
+                        daneben nicht bestätigt.
+                      */
+                      onReported={() =>
+                        setBounds((current) => (current ? { ...current } : current))
+                      }
+                    />
+                  </div>
+                )}
               </div>
             )}
             {/*
@@ -1139,6 +1184,21 @@ export function MapSection({ initialNearby, defaultCity, user: initialUser }: Ma
               drei Zeilen. Die Rückmeldungen wachsen unbegrenzt.
             */}
               <ReportedSpots onShowSpot={select} />
+              {/*
+                **Die gemeldeten Parkplätze direkt unter der Prüfliste**
+                (8.11). Beide handeln von denselben Stimmen, nur in die zwei
+                Richtungen: Die eine nimmt Plätze weg, die andere nimmt sie
+                auf. Und beide sind kurz – die Rückmeldungen darunter wachsen
+                unbegrenzt.
+              */}
+              <UserSpots />
+              {/*
+                Die Schwellen dahinter, nicht davor: Sie werden einmal
+                eingestellt, während die beiden Listen bei jedem Öffnen zählen.
+                Sie stehen aber **vor** den Rückmeldungen, weil man sie
+                nachstellt, nachdem man die Listen gesehen hat.
+              */}
+              <SpotThresholds />
               {/* Ein gemeldeter Parkplatz führt über `select` auf die Karte –
                 dieselbe Bewegung wie aus der Liste, samt Detailansicht und
                 Luftlinie. Die Meldung wird damit sofort nachprüfbar. */}

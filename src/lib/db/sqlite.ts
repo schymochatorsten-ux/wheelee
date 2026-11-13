@@ -337,6 +337,111 @@ const MIGRATIONS: readonly string[] = [
   -- Wert wird am Endpunkt geprüft.
   ALTER TABLE account ADD COLUMN location_preference TEXT;
   `,
+
+  // 17 – Unsichere Parkplätze, Schwellen und gemeldete Standorte (ToDo 8.11).
+  `
+  -- **Hier kehrt sich eine Festlegung um, und das muss man wissen.** Bisher
+  -- galt (Konzept, Abschnitt 2 und 8.6): Bewertungen ändern **nichts** an den
+  -- Daten, kein Parkplatz verschwindet, die Meldungen führen auf eine
+  -- Prüfliste für einen Menschen. Torsten hat am 2026-11-13 das Gegenteil
+  -- verlangt, und zwar mit Begründung: **Lieber ein Parkplatz zu viel, klar
+  -- als unsicher gekennzeichnet, und bei Rückmeldungen raus.** Ein fehlender
+  -- Platz hilft niemandem; ein zweifelhafter, der sich als falsch erweist,
+  -- verschwindet jetzt von selbst.
+  --
+  -- **Ausgeblendet heißt nicht gelöscht.** Die Zeile bleibt, die Verwaltung
+  -- zeigt sie und kann sie zurückholen. Löschen wäre nicht umkehrbar, und bei
+  -- einem Standort aus einer Seed-Datei käme er beim nächsten Import ohnehin
+  -- wieder – dann mit verlorener Begründung.
+  -- **Zwei Zustände in einer Tabelle, und der zweite ist nötig.** „Wieder
+  -- einblenden" kann nicht einfach das Löschen der Zeile sein: Die Stimmen
+  -- bleiben ja stehen, also überschritte die nächste Prüfung die Schwelle
+  -- erneut und der Platz wäre sofort wieder weg – die Verwaltung hätte einen
+  -- Knopf, der nichts bewirkt. \`kept\` ist deshalb eine eigene Entscheidung:
+  -- **von Hand gesetzt, und die Automatik rührt sie nicht an.**
+  CREATE TABLE spot_decision (
+    -- Ohne Fremdschlüssel auf den Bestand, wie \`rating\` und \`favorite\`: Der
+    -- Bestand liegt in Dateien, nicht in der Datenbank.
+    spot_id    TEXT PRIMARY KEY,
+    -- 'hidden' = nicht mehr sichtbar, 'kept' = sichtbar, Automatik ausgesetzt.
+    status     TEXT NOT NULL CHECK (status IN ('hidden', 'kept')),
+    -- 'votes' = automatisch nach Erreichen der Schwelle, 'admin' = von Hand.
+    reason     TEXT NOT NULL CHECK (reason IN ('votes', 'admin')),
+    -- Die Zählerstände im Moment des Ausblendens. Sie stehen hier als Beleg:
+    -- Wer die Liste später ansieht, soll sehen, **weshalb** der Platz ging,
+    -- auch wenn Stimmen danach zurückgezogen wurden.
+    gone_count   INTEGER NOT NULL DEFAULT 0,
+    exists_count INTEGER NOT NULL DEFAULT 0,
+    -- Ob der Platz zum Zeitpunkt des Ausblendens als unsicher galt; damit ist
+    -- nachvollziehbar, welche der beiden Schwellen angewandt wurde.
+    was_unsicher INTEGER NOT NULL DEFAULT 0,
+    decided_at   TEXT NOT NULL,
+    decided_by   TEXT REFERENCES account(id) ON DELETE SET NULL
+  );
+  CREATE INDEX spot_decision_status ON spot_decision(status, decided_at DESC);
+
+  -- **Eine Zeile, erzwungen durch \`CHECK (id = 1)\`** – dieselbe Begründung
+  -- wie bei \`mail_config\` (Migration 13): Zwei Konfigurationen hätten eine
+  -- stille Reihenfolgefrage.
+  --
+  -- **Gezählt werden Konten, nicht gewichtete Summen.** Die Gewichtung aus
+  -- 11.6 (\`ratings/trust.ts\`) bleibt der Verwaltung als Zusatzinfo. Eine
+  -- Schwelle muss erklärbar sein: „drei Leute" heißt drei Leute. Mit
+  -- Gewichtung wäre „3" je nach Alter der Stimmen auch mal 2,4 – und niemand
+  -- könnte sagen, wann ein Platz verschwindet.
+  CREATE TABLE spot_policy (
+    id                INTEGER PRIMARY KEY CHECK (id = 1),
+    -- Wie viele Konten „existiert nicht mehr" melden müssen, damit ein
+    -- **unsicherer** Platz verschwindet. Niedriger, weil bei ihm von Anfang an
+    -- offen ist, ob er stimmt.
+    schwelle_unsicher INTEGER NOT NULL DEFAULT 2 CHECK (schwelle_unsicher >= 1),
+    -- Dasselbe für einen **gesicherten** Platz aus amtlicher, bestätigter
+    -- Quelle. Höher, weil hier eine geprüfte Angabe gegen einige Stimmen steht.
+    schwelle_sicher   INTEGER NOT NULL DEFAULT 5 CHECK (schwelle_sicher >= 1),
+    updated_at        TEXT NOT NULL,
+    updated_by        TEXT REFERENCES account(id) ON DELETE SET NULL
+  );
+
+  -- Von Nutzer:innen gemeldete Parkplätze.
+  --
+  -- **Nur mit Konto** (Torsten, 2026-11-13) – dieselbe Zugangsregel wie beim
+  -- Bewerten. Eine Karte, in die jeder ohne Konto Punkte setzen kann, ist in
+  -- einer Woche voller Unsinn, und es gäbe niemanden, dem man die Stimme
+  -- entziehen könnte.
+  --
+  -- **Sichtbar ist der Platz sofort, aber als unsicher.** Er wird erst zum
+  -- gewöhnlichen Platz, wenn ihn so viele Konten bestätigt haben, wie
+  -- \`schwelle_sicher\` verlangt – **nicht** \`schwelle_unsicher\`: Etwas in den
+  -- Bestand aufzunehmen soll schwerer sein, als es wieder loszuwerden.
+  CREATE TABLE user_spot (
+    id           TEXT PRIMARY KEY,
+    -- **\`SET NULL\` und nicht \`CASCADE\`, anders als bei \`rating\` und
+    -- \`favorite\`.** Eine Bewertung ist eine Aussage **einer Person** – ohne
+    -- sie ist sie nichts und geht mit dem Konto. Ein gemeldeter Parkplatz ist
+    -- nach der Bestätigung eine Angabe über einen **Ort**: Löschte ihn die
+    -- Kontolöschung mit, verschwände ein Platz, auf den sich inzwischen andere
+    -- verlassen – und das wäre keine Datensparsamkeit, sondern ein Datenverlust
+    -- bei Dritten. Die Zuordnung zur Person verschwindet, der Ort bleibt.
+    account_id   TEXT REFERENCES account(id) ON DELETE SET NULL,
+    label        TEXT NOT NULL,
+    street       TEXT,
+    house_number TEXT,
+    note         TEXT,
+    city         TEXT NOT NULL,
+    lat          REAL NOT NULL,
+    lng          REAL NOT NULL,
+    spot_count   INTEGER NOT NULL DEFAULT 1 CHECK (spot_count >= 1),
+    -- 'offen' = sichtbar als unsicher, 'bestaetigt' = genug Zustimmung,
+    -- 'verworfen' = von der Verwaltung abgelehnt, nicht mehr sichtbar.
+    status       TEXT NOT NULL DEFAULT 'offen'
+                 CHECK (status IN ('offen', 'bestaetigt', 'verworfen')),
+    created_at   TEXT NOT NULL,
+    decided_at   TEXT,
+    decided_by   TEXT REFERENCES account(id) ON DELETE SET NULL
+  );
+  CREATE INDEX user_spot_status ON user_spot(status, created_at DESC);
+  CREATE INDEX user_spot_account ON user_spot(account_id);
+  `,
 ];
 
 let database: DatabaseSync | null = null;

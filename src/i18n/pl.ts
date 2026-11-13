@@ -100,7 +100,79 @@ export const pl: Messages = {
   "details.osmOnlyStrong": "Tylko w OpenStreetMap",
   "details.approx":
     "Pozycja jest znana tylko w przybliżeniu – miejsce parkingowe leży przy tej ulicy, dokładny punkt może się różnić.",
+  "details.uncertainTitle": "Niepewne miejsce – przeczytaj przed wyjazdem",
+  "details.uncertainLead":
+    "Ta informacja nie jest potwierdzona: miejsce może nie istnieć albo znajdować się gdzie indziej.",
+  "details.uncertainReasonReported":
+    "Zgłoszone przez użytkownika i przez nikogo jeszcze nie potwierdzone.",
+  "details.uncertainReasonSource":
+    "Źródło nie rozstrzyga, czy to miejsce rzeczywiście istnieje. Wolimy pokazać je z ostrzeżeniem niż wcale.",
+  "details.uncertainAsk":
+    "Jeśli tam byłeś: potwierdź miejsce albo zgłoś, że już go nie ma. Niepewne miejsca znikają z mapy już po kilku zgłoszeniach.",
   "details.source": "Źródło: {source}",
+
+  "report.open": "Zgłoś miejsce",
+  "report.title": "Zgłoś brakujące miejsce",
+  "report.lead":
+    "Punktem jest środek mapy. Przesuń mapę tak, aby środek znalazł się na miejscu postojowym.",
+  "report.label": "Nazwa lub adres",
+  "report.labelPlaceholder": "np. Bahnhofstraße 12",
+  "report.spaces": "Miejsca",
+  "report.note": "Uwaga (opcjonalnie)",
+  "report.position": "Punkt: {lat}, {lng}",
+  "report.positionMissing": "Mapa jeszcze się nie wczytała – chwilę cierpliwości.",
+  "report.submit": "Zgłoś",
+  "report.sending": "Wysyłanie …",
+  "report.cancel": "Anuluj",
+  "report.close": "Zamknij",
+  "report.done":
+    "Dziękujemy. Miejsce jest już na mapie – oznaczone jako niepewne, dopóki inni go nie potwierdzą.",
+  "report.failed": "Nie udało się. Spróbuj później.",
+  "report.needsAccount":
+    "Do zgłoszenia miejsca potrzebne jest konto. Tylko tak można przypisać zgłoszenie do osoby.",
+  "report.afterwards":
+    "Miejsce jest widoczne od razu i oznaczone jako niepewne. Gdy potwierdzi je dość kont, stanie się zwykłym miejscem.",
+
+  "thresholds.title": "Kiedy miejsce znika",
+  "thresholds.intro":
+    "Liczone są konta, i tylko nadwyżka: zgłoszenia o nieistnieniu minus potwierdzenia.",
+  "thresholds.uncertain": "Niepewne miejsca",
+  "thresholds.uncertainHint":
+    "Zgłoszone, obecne tylko w OpenStreetMap albo o przybliżonym położeniu. Przy nich od początku nie wiadomo, czy są prawdziwe – dlatego niżej.",
+  "thresholds.certain": "Pewne miejsca",
+  "thresholds.certainHint":
+    "Z urzędowego wykazu, z dokładnym położeniem. Tu sprawdzona informacja stoi wobec zgłoszeń – dlatego wyżej.",
+  "thresholds.coupledHint":
+    "Druga liczba działa też w drugą stronę: tyle potwierdzeń potrzebuje zgłoszone miejsce, aby stać się zwykłym. Dodawanie ma być trudniejsze niż usuwanie.",
+  "thresholds.save": "Zapisz",
+  "thresholds.saving": "Zapisywanie …",
+  "thresholds.saved": "Zapisano.",
+  "thresholds.loadFailed": "Nie udało się wczytać progów.",
+  "thresholds.saveFailed": "Nie udało się zapisać progów.",
+
+  "userSpots.title": "Zgłoszone miejsca",
+  "userSpots.intro":
+    "Dodane przez użytkowników. Widnieją na mapie jako niepewne, dopóki nie potwierdzi ich {count} kont – albo ktoś nie zdecyduje tutaj.",
+  "userSpots.none": "Nic nie zgłoszono.",
+  "userSpots.loadFailed": "Nie udało się wczytać listy.",
+  "userSpots.decideFailed": "Nie udało się zapisać decyzji.",
+  "userSpots.approve": "Potwierdź",
+  "userSpots.reject": "Odrzuć",
+  "userSpots.confirmations": "{count} z {needed} potwierdzeń",
+  "userSpots.place": "{city} · {spaces} miejsc · {lat}, {lng}",
+  "userSpots.status.offen": "otwarte",
+  "userSpots.status.bestaetigt": "potwierdzone",
+  "userSpots.status.verworfen": "odrzucone",
+
+  "reported.statusHidden": "ukryte",
+  "reported.statusKept": "zachowane ręcznie",
+  "reported.uncertain": "niepewne – nadwyżka {count} zgłoszeń je usuwa",
+  "reported.certain": "pewne – nadwyżka {count} zgłoszeń je usuwa",
+  "reported.hide": "Ukryj",
+  "reported.restore": "Przywróć",
+  "reported.auto": "Automatycznie",
+  "reported.autoHint": "Cofnij decyzję ręczną – potem znów obowiązują progi.",
+  "reported.decideFailed": "Nie udało się zapisać decyzji.",
 
   "maps.auto": "Automatycznie (według urządzenia)",
   "maps.google.open": "Otwórz w Mapach Google",
@@ -574,8 +646,10 @@ export const pl: Messages = {
   "api.accountExists": "Dla tego adresu istnieje już konto. Zaloguj się nim.",
   "api.searchUnavailable": "Wyszukiwanie jest teraz niedostępne.",
   "api.unknownSpot": "Nieznany identyfikator miejsca parkingowego.",
+  "api.spotTooFar": "Ten punkt jest zbyt daleko od jakiejkolwiek zarejestrowanej gminy.",
   "api.unknownCity": "Nieznane miasto.",
   "api.ratingNeedsAccount": "Do oceniania potrzebne jest konto.",
+  "api.reportNeedsAccount": "Do zgłoszenia miejsca potrzebne jest konto.",
   "api.favoriteNeedsAccount": "Do zapisywania miejsc parkingowych potrzebne jest konto.",
   "api.tooManyFavorites": "Zbyt wiele zmian w krótkim czasie. Poczekaj chwilę.",
   "api.favoritesFull":

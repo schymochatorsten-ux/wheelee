@@ -92,7 +92,69 @@ export const de = {
   "details.osmOnlyStrong": "Nur in OpenStreetMap",
   "details.approx":
     "Die Position ist nur ungefähr bekannt – der Parkplatz liegt in dieser Straße, die genaue Stelle kann abweichen.",
+  "details.uncertainTitle": "Unsicherer Parkplatz – bitte vor der Fahrt lesen",
+  "details.uncertainLead":
+    "Diese Angabe ist nicht gesichert: Es kann sein, dass es den Parkplatz nicht gibt oder dass er an einer anderen Stelle liegt.",
+  "details.uncertainReasonReported":
+    "Von einer Nutzerin oder einem Nutzer gemeldet und noch von niemandem bestätigt.",
+  "details.uncertainReasonSource":
+    "Die Quelle ließ offen, ob es diesen Parkplatz wirklich gibt. Wir zeigen ihn lieber mit Hinweis als gar nicht.",
+  "details.uncertainAsk":
+    "Wenn Sie dort waren: Bitte bestätigen Sie den Parkplatz oder melden Sie, dass es ihn nicht mehr gibt. Unsichere Parkplätze verschwinden schon nach wenigen Meldungen von der Karte.",
   "details.source": "Quelle: {source}",
+
+  "report.open": "Parkplatz melden",
+  "report.title": "Fehlenden Parkplatz melden",
+  "report.lead":
+    "Die Stelle ist die Mitte der Karte. Verschieben Sie die Karte, bis die Mitte auf dem Parkplatz liegt.",
+  "report.label": "Bezeichnung oder Adresse",
+  "report.labelPlaceholder": "z. B. Bahnhofstraße 12",
+  "report.spaces": "Stellplätze",
+  "report.note": "Hinweis (freiwillig)",
+  "report.position": "Stelle: {lat}, {lng}",
+  "report.positionMissing": "Die Karte ist noch nicht geladen – bitte kurz warten.",
+  "report.submit": "Melden",
+  "report.sending": "Wird gemeldet …",
+  "report.cancel": "Abbrechen",
+  "report.close": "Schließen",
+  "report.done":
+    "Danke. Der Parkplatz steht ab jetzt auf der Karte – als unsicher gekennzeichnet, bis andere ihn bestätigen.",
+  "report.failed": "Das hat nicht geklappt. Bitte später erneut versuchen.",
+  "report.needsAccount":
+    "Zum Melden eines Parkplatzes ist ein Konto nötig. Nur so lässt sich eine Meldung einer Person zuordnen.",
+  "report.afterwards":
+    "Der Parkplatz ist sofort sichtbar und als unsicher gekennzeichnet. Bestätigen genug Konten ihn, wird er ein gewöhnlicher Parkplatz.",
+
+  "thresholds.title": "Wann ein Parkplatz verschwindet",
+  "thresholds.intro":
+    "Gezählt werden Konten, und zwar der Überhang: Meldungen über das Nicht-mehr-Vorhandensein minus Bestätigungen.",
+  "thresholds.uncertain": "Unsichere Parkplätze",
+  "thresholds.uncertainHint":
+    "Gemeldet, nur in OpenStreetMap oder Lage nur ungefähr. Bei ihnen ist von Anfang an offen, ob sie stimmen – deshalb niedriger.",
+  "thresholds.certain": "Gesicherte Parkplätze",
+  "thresholds.certainHint":
+    "Aus einer amtlichen Liste, mit genauer Lage. Hier steht eine geprüfte Angabe gegen die Meldungen – deshalb höher.",
+  "thresholds.coupledHint":
+    "Die zweite Zahl gilt auch in die andere Richtung: So viele Bestätigungen braucht ein gemeldeter Parkplatz, um ein gewöhnlicher zu werden. Aufnehmen soll schwerer sein als loswerden.",
+  "thresholds.save": "Speichern",
+  "thresholds.saving": "Wird gespeichert …",
+  "thresholds.saved": "Gespeichert.",
+  "thresholds.loadFailed": "Die Schwellen konnten nicht geladen werden.",
+  "thresholds.saveFailed": "Die Schwellen konnten nicht gespeichert werden.",
+
+  "userSpots.title": "Gemeldete Parkplätze",
+  "userSpots.intro":
+    "Von Nutzer:innen eingetragen. Sie stehen als unsicher auf der Karte, bis {count} Konten sie bestätigen – oder bis hier jemand entscheidet.",
+  "userSpots.none": "Nichts gemeldet.",
+  "userSpots.loadFailed": "Die Liste konnte nicht geladen werden.",
+  "userSpots.decideFailed": "Die Entscheidung konnte nicht gespeichert werden.",
+  "userSpots.approve": "Bestätigen",
+  "userSpots.reject": "Verwerfen",
+  "userSpots.confirmations": "{count} von {needed} Bestätigungen",
+  "userSpots.place": "{city} · {spaces} Stellplätze · {lat}, {lng}",
+  "userSpots.status.offen": "offen",
+  "userSpots.status.bestaetigt": "bestätigt",
+  "userSpots.status.verworfen": "verworfen",
 
   "maps.auto": "Automatisch (nach Gerät)",
   "maps.google.open": "In Google Maps öffnen",
@@ -417,6 +479,15 @@ export const de = {
   "reported.lastReported": "Zuletzt gemeldet",
   "reported.lastConfirmed": "Zuletzt bestätigt",
   "reported.showOnMap": "Parkplatz auf der Karte",
+  "reported.statusHidden": "ausgeblendet",
+  "reported.statusKept": "von Hand behalten",
+  "reported.uncertain": "unsicher – {count} Meldungen Überhang entfernen ihn",
+  "reported.certain": "gesichert – {count} Meldungen Überhang entfernen ihn",
+  "reported.hide": "Ausblenden",
+  "reported.restore": "Zurückholen",
+  "reported.auto": "Automatik",
+  "reported.autoHint": "Die Entscheidung von Hand aufheben – danach gelten wieder die Schwellen.",
+  "reported.decideFailed": "Die Entscheidung konnte nicht gespeichert werden.",
   "reported.confirmedGone":
     "Beim letzten Import nicht mehr enthalten – die Meldung hat sich damit bestätigt.",
 
@@ -593,8 +664,10 @@ export const de = {
   "api.accountExists": "Für diese Adresse gibt es schon ein Konto. Melde dich damit an.",
   "api.searchUnavailable": "Suche gerade nicht erreichbar.",
   "api.unknownSpot": "Unbekannte Parkplatz-ID.",
+  "api.spotTooFar": "Diese Stelle liegt zu weit von jeder erfassten Gemeinde entfernt.",
   "api.unknownCity": "Unbekannte Stadt.",
   "api.ratingNeedsAccount": "Zum Bewerten brauchst du ein Konto.",
+  "api.reportNeedsAccount": "Zum Melden eines Parkplatzes brauchst du ein Konto.",
   "api.favoriteNeedsAccount": "Zum Speichern von Parkplätzen brauchst du ein Konto.",
   "api.tooManyFavorites": "Zu viele Änderungen in kurzer Zeit. Bitte etwas warten.",
   "api.favoritesFull":

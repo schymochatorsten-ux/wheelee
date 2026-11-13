@@ -706,6 +706,24 @@ export interface AccountExport {
   };
   ratings: { spotId: string; vote: string; createdAt: string; updatedAt: string | null }[];
   favorites: { spotId: string; createdAt: string }[];
+  /**
+   * Selbst gemeldete Parkplätze (ToDo 8.11).
+   *
+   * **Gehören in die Auskunft, obwohl die Angaben öffentlich sind.** Öffentlich
+   * ist der Parkplatz; dass **diese Person** ihn gemeldet hat, ist es nicht –
+   * und genau diese Verbindung ist das personenbezogene Datum, über das Art. 15
+   * Auskunft verlangt.
+   */
+  reportedSpots: {
+    label: string;
+    city: string;
+    lat: number;
+    lng: number;
+    spotCount: number;
+    note: string | null;
+    status: string;
+    createdAt: string;
+  }[];
   feedback: {
     kind: string;
     message: string;
@@ -793,6 +811,32 @@ export function exportAccountData(accountId: string): AccountExport | null {
       updatedAt: r.updated_at,
     })),
     favorites: listFavorites(accountId),
+    reportedSpots: (
+      handle
+        .prepare(
+          `SELECT label, city, lat, lng, spot_count, note, status, created_at
+             FROM user_spot WHERE account_id = ? ORDER BY created_at`,
+        )
+        .all(accountId) as {
+        label: string;
+        city: string;
+        lat: number;
+        lng: number;
+        spot_count: number;
+        note: string | null;
+        status: string;
+        created_at: string;
+      }[]
+    ).map((s) => ({
+      label: s.label,
+      city: s.city,
+      lat: Number(s.lat),
+      lng: Number(s.lng),
+      spotCount: Number(s.spot_count),
+      note: s.note,
+      status: s.status,
+      createdAt: s.created_at,
+    })),
     feedback: feedback.map((f) => ({
       kind: f.kind,
       message: f.message,

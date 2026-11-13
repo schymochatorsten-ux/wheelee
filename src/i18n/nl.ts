@@ -99,7 +99,78 @@ export const nl: Messages = {
   "details.osmOnlyStrong": "Alleen in OpenStreetMap",
   "details.approx":
     "De positie is slechts bij benadering bekend – de parkeerplaats ligt in deze straat, het exacte punt kan afwijken.",
+  "details.uncertainTitle": "Onzekere plek – lees dit voordat u rijdt",
+  "details.uncertainLead":
+    "Deze gegevens zijn niet bevestigd: de plek bestaat misschien niet of ligt elders.",
+  "details.uncertainReasonReported": "Door een gebruiker gemeld en door niemand anders bevestigd.",
+  "details.uncertainReasonSource":
+    "De bron liet open of deze plek echt bestaat. Wij tonen hem liever met een waarschuwing dan helemaal niet.",
+  "details.uncertainAsk":
+    "Als u er geweest bent: bevestig de plek of meld dat hij niet meer bestaat. Onzekere plekken verdwijnen al na enkele meldingen van de kaart.",
   "details.source": "Bron: {source}",
+
+  "report.open": "Plek melden",
+  "report.title": "Een ontbrekende plek melden",
+  "report.lead":
+    "De plek is het midden van de kaart. Verschuif de kaart tot het midden op de parkeerplek ligt.",
+  "report.label": "Naam of adres",
+  "report.labelPlaceholder": "bijv. Bahnhofstraße 12",
+  "report.spaces": "Plekken",
+  "report.note": "Opmerking (optioneel)",
+  "report.position": "Plek: {lat}, {lng}",
+  "report.positionMissing": "De kaart is nog niet geladen – een ogenblik geduld.",
+  "report.submit": "Melden",
+  "report.sending": "Versturen …",
+  "report.cancel": "Annuleren",
+  "report.close": "Sluiten",
+  "report.done":
+    "Dank u. De plek staat nu op de kaart – als onzeker gemarkeerd tot anderen hem bevestigen.",
+  "report.failed": "Dat is niet gelukt. Probeer het later opnieuw.",
+  "report.needsAccount":
+    "Voor het melden van een plek is een account nodig. Alleen zo is een melding aan een persoon toe te wijzen.",
+  "report.afterwards":
+    "De plek is direct zichtbaar en als onzeker gemarkeerd. Zodra genoeg accounts hem bevestigen, wordt het een gewone plek.",
+
+  "thresholds.title": "Wanneer een plek verdwijnt",
+  "thresholds.intro":
+    "Er worden accounts geteld, en alleen het overschot: meldingen dat hij niet meer bestaat minus bevestigingen.",
+  "thresholds.uncertain": "Onzekere plekken",
+  "thresholds.uncertainHint":
+    "Gemeld, alleen in OpenStreetMap of ligging slechts bij benadering. Bij hen is van begin af aan open of ze juist zijn – daarom lager.",
+  "thresholds.certain": "Zekere plekken",
+  "thresholds.certainHint":
+    "Uit een officiële lijst, met exacte ligging. Hier staat een gecontroleerd gegeven tegenover de meldingen – daarom hoger.",
+  "thresholds.coupledHint":
+    "Het tweede getal geldt ook andersom: zoveel bevestigingen heeft een gemelde plek nodig om een gewone te worden. Opnemen moet moeilijker zijn dan verwijderen.",
+  "thresholds.save": "Opslaan",
+  "thresholds.saving": "Opslaan …",
+  "thresholds.saved": "Opgeslagen.",
+  "thresholds.loadFailed": "De drempels konden niet worden geladen.",
+  "thresholds.saveFailed": "De drempels konden niet worden opgeslagen.",
+
+  "userSpots.title": "Gemelde plekken",
+  "userSpots.intro":
+    "Door gebruikers toegevoegd. Ze staan als onzeker op de kaart tot {count} accounts ze bevestigen – of tot hier iemand beslist.",
+  "userSpots.none": "Niets gemeld.",
+  "userSpots.loadFailed": "De lijst kon niet worden geladen.",
+  "userSpots.decideFailed": "De beslissing kon niet worden opgeslagen.",
+  "userSpots.approve": "Bevestigen",
+  "userSpots.reject": "Verwerpen",
+  "userSpots.confirmations": "{count} van {needed} bevestigingen",
+  "userSpots.place": "{city} · {spaces} plekken · {lat}, {lng}",
+  "userSpots.status.offen": "open",
+  "userSpots.status.bestaetigt": "bevestigd",
+  "userSpots.status.verworfen": "verworpen",
+
+  "reported.statusHidden": "verborgen",
+  "reported.statusKept": "handmatig behouden",
+  "reported.uncertain": "onzeker – een overschot van {count} meldingen verwijdert hem",
+  "reported.certain": "zeker – een overschot van {count} meldingen verwijdert hem",
+  "reported.hide": "Verbergen",
+  "reported.restore": "Terughalen",
+  "reported.auto": "Automatisch",
+  "reported.autoHint": "De handmatige beslissing opheffen – daarna gelden de drempels weer.",
+  "reported.decideFailed": "De beslissing kon niet worden opgeslagen.",
 
   "maps.auto": "Automatisch (afhankelijk van het apparaat)",
   "maps.google.open": "Openen in Google Maps",
@@ -574,8 +645,10 @@ export const nl: Messages = {
   "api.accountExists": "Voor dit adres bestaat al een account. Meld je ermee aan.",
   "api.searchUnavailable": "Zoeken is nu niet beschikbaar.",
   "api.unknownSpot": "Onbekend parkeerplaats-ID.",
+  "api.spotTooFar": "Dit punt ligt te ver van elke vastgelegde gemeente.",
   "api.unknownCity": "Onbekende stad.",
   "api.ratingNeedsAccount": "Om te beoordelen is een account nodig.",
+  "api.reportNeedsAccount": "Voor het melden van een plek is een account nodig.",
   "api.favoriteNeedsAccount": "Om parkeerplaatsen op te slaan is een account nodig.",
   "api.tooManyFavorites": "Te veel wijzigingen in korte tijd. Wacht even.",
   "api.favoritesFull":

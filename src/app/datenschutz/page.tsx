@@ -341,6 +341,34 @@ export default function Datenschutz() {
           ganze Liste mit. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO – die Funktion, die du mit
           deinem Konto nutzt.
         </p>
+        {/*
+          **Gemeldete Parkplätze** (ToDo 8.11). Der Abschnitt steht hier und
+          nicht bei den Rückmeldungen, weil es etwas anderes ist: Eine
+          Rückmeldung liest ein Mensch, eine Meldung dieser Art steht sofort
+          **öffentlich** auf der Karte. Das muss vorher dastehen und nicht
+          hinterher.
+        */}
+        <p>
+          <strong>Von dir gemeldete Parkplätze:</strong> Mit Konto kannst du einen fehlenden
+          Parkplatz eintragen. Gespeichert werden die Stelle (die Mitte der Karte), deine
+          Bezeichnung, die Zahl der Stellplätze, dein freiwilliger Hinweis, dein Konto und der
+          Zeitpunkt. <strong>Die Angaben zum Parkplatz werden sofort öffentlich angezeigt</strong> –
+          gekennzeichnet als unsicher, bis andere sie bestätigen.{" "}
+          <strong>Wer gemeldet hat, sieht niemand</strong>: Dein Konto steht nur in der Datenbank
+          und wird nicht angezeigt; die Betreiber:innen sehen es in der Verwaltung. Bedenke, dass
+          die Stelle verrät, wo ein Parkplatz ist – nicht, wo du bist oder warst. Löschst du dein
+          Konto, verschwindet die Zuordnung zu dir; der Parkplatz selbst bleibt, weil er inzwischen
+          eine Angabe über einen Ort ist und nicht über dich. Rechtsgrundlage ist Art. 6 Abs. 1 lit.
+          b DSGVO.
+        </p>
+        <p>
+          <strong>Wenn ein Parkplatz verschwindet:</strong> Melden genügend Konten, dass es einen
+          Parkplatz nicht mehr gibt, wird er ausgeblendet. Festgehalten werden dann die
+          Parkplatz-ID, die Zählerstände und der Zeitpunkt –{" "}
+          <strong>keine Angabe darüber, wer gemeldet hat</strong>. Entscheiden die Betreiber:innen
+          von Hand, steht ihr Konto daneben. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO – das
+          Interesse, niemanden zu einem Parkplatz zu schicken, den es nicht mehr gibt.
+        </p>
       </section>
 
       <section>

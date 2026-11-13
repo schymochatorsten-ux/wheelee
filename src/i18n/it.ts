@@ -97,7 +97,78 @@ export const it: Messages = {
   "details.osmOnlyStrong": "Solo in OpenStreetMap",
   "details.approx":
     "La posizione è nota solo approssimativamente – il parcheggio si trova su questa via, il punto esatto può differire.",
+  "details.uncertainTitle": "Posto incerto – da leggere prima di partire",
+  "details.uncertainLead":
+    "Questo dato non è confermato: il posto potrebbe non esistere o trovarsi altrove.",
+  "details.uncertainReasonReported":
+    "Segnalato da un utente e non ancora confermato da nessun altro.",
+  "details.uncertainReasonSource":
+    "La fonte non chiarisce se questo posto esista davvero. Preferiamo mostrarlo con un avviso piuttosto che non mostrarlo.",
+  "details.uncertainAsk":
+    "Se ci è stato: confermi il posto o segnali che non esiste più. I posti incerti scompaiono dalla mappa dopo poche segnalazioni.",
   "details.source": "Fonte: {source}",
+
+  "report.open": "Segnala un posto",
+  "report.title": "Segnala un posto mancante",
+  "report.lead": "Il punto è il centro della mappa. Sposti la mappa finché il centro è sul posto.",
+  "report.label": "Denominazione o indirizzo",
+  "report.labelPlaceholder": "ad es. Bahnhofstraße 12",
+  "report.spaces": "Posti",
+  "report.note": "Nota (facoltativa)",
+  "report.position": "Punto: {lat}, {lng}",
+  "report.positionMissing": "La mappa non è ancora caricata – attenda un momento.",
+  "report.submit": "Segnala",
+  "report.sending": "Invio …",
+  "report.cancel": "Annulla",
+  "report.close": "Chiudi",
+  "report.done":
+    "Grazie. Il posto è ora sulla mappa, contrassegnato come incerto finché altri non lo confermano.",
+  "report.failed": "Non ha funzionato. Riprovi più tardi.",
+  "report.needsAccount":
+    "Per segnalare un posto serve un account. Solo così una segnalazione può essere attribuita a una persona.",
+  "report.afterwards":
+    "Il posto è visibile subito e contrassegnato come incerto. Quando un numero sufficiente di account lo conferma, diventa un posto normale.",
+
+  "thresholds.title": "Quando un posto scompare",
+  "thresholds.intro":
+    "Si contano gli account, e solo l'eccedenza: segnalazioni di inesistenza meno conferme.",
+  "thresholds.uncertain": "Posti incerti",
+  "thresholds.uncertainHint":
+    "Segnalati, presenti solo in OpenStreetMap o con posizione approssimativa. Per loro è aperto dall'inizio se siano corretti – perciò più basso.",
+  "thresholds.certain": "Posti confermati",
+  "thresholds.certainHint":
+    "Da un elenco ufficiale, con posizione esatta. Qui un dato verificato si oppone alle segnalazioni – perciò più alto.",
+  "thresholds.coupledHint":
+    "Il secondo numero vale anche nell'altro senso: tante conferme servono a un posto segnalato per diventare normale. Aggiungere deve essere più difficile che togliere.",
+  "thresholds.save": "Salva",
+  "thresholds.saving": "Salvataggio …",
+  "thresholds.saved": "Salvato.",
+  "thresholds.loadFailed": "Non è stato possibile caricare le soglie.",
+  "thresholds.saveFailed": "Non è stato possibile salvare le soglie.",
+
+  "userSpots.title": "Posti segnalati",
+  "userSpots.intro":
+    "Inseriti da utenti. Restano incerti sulla mappa finché {count} account non li confermano – o finché qui non si decide.",
+  "userSpots.none": "Nessuna segnalazione.",
+  "userSpots.loadFailed": "Non è stato possibile caricare l'elenco.",
+  "userSpots.decideFailed": "Non è stato possibile salvare la decisione.",
+  "userSpots.approve": "Conferma",
+  "userSpots.reject": "Scarta",
+  "userSpots.confirmations": "{count} di {needed} conferme",
+  "userSpots.place": "{city} · {spaces} posti · {lat}, {lng}",
+  "userSpots.status.offen": "aperto",
+  "userSpots.status.bestaetigt": "confermato",
+  "userSpots.status.verworfen": "scartato",
+
+  "reported.statusHidden": "nascosto",
+  "reported.statusKept": "mantenuto a mano",
+  "reported.uncertain": "incerto – un'eccedenza di {count} segnalazioni lo rimuove",
+  "reported.certain": "confermato – un'eccedenza di {count} segnalazioni lo rimuove",
+  "reported.hide": "Nascondi",
+  "reported.restore": "Ripristina",
+  "reported.auto": "Automatico",
+  "reported.autoHint": "Annullare la decisione manuale – poi valgono di nuovo le soglie.",
+  "reported.decideFailed": "Non è stato possibile salvare la decisione.",
 
   "maps.auto": "Automatico (in base al dispositivo)",
   "maps.google.open": "Apri in Google Maps",
@@ -578,8 +649,10 @@ export const it: Messages = {
   "api.accountExists": "Esiste già un account per questo indirizzo. Accedi con quello.",
   "api.searchUnavailable": "La ricerca al momento non è disponibile.",
   "api.unknownSpot": "ID del parcheggio sconosciuto.",
+  "api.spotTooFar": "Questo punto è troppo lontano da qualsiasi comune registrato.",
   "api.unknownCity": "Città sconosciuta.",
   "api.ratingNeedsAccount": "Per valutare serve un account.",
+  "api.reportNeedsAccount": "Per segnalare un posto serve un account.",
   "api.favoriteNeedsAccount": "Per salvare i parcheggi serve un account.",
   "api.tooManyFavorites": "Troppe modifiche in poco tempo. Attendi un momento.",
   "api.favoritesFull": "Hai raggiunto il numero massimo di parcheggi salvati. Rimuovine prima uno.",
