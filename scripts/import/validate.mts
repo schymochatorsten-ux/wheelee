@@ -46,6 +46,16 @@ interface CityReport {
   source: string;
   spots: number;
   spaces: number;
+  /**
+   * Standorte, die der Import selbst als zweifelhaft übernommen hat
+   * (ToDo 8.11, Feld `unsicher`).
+   *
+   * **Gezählt, nicht bewertet.** Ein unsicherer Standort ist kein Befund – er
+   * ist ausdrücklich gewollt und in der App gekennzeichnet. Die Zahl steht im
+   * Bericht, damit auffällt, **wenn sie groß wird**: Dann ist nicht die
+   * Datenlage schlecht, sondern die Regel zu großzügig.
+   */
+  uncertain: number;
   /** Anteil der Standorte, die auch OpenStreetMap kennt. */
   confirmedByOsm: number | null;
   findings: Finding[];
@@ -742,6 +752,10 @@ function renderReport(
     `| Stellplätze | ${reports.reduce((sum, report) => sum + report.spaces, 0).toLocaleString("de-DE")} |`,
     `| Städte mit Fehlern | ${errors.length} |`,
     `| Städte mit Verdachtsfällen | ${withFindings.length - errors.length} |`,
+    // Kein Befund, sondern eine Kennzahl: So viele Standorte hat der Import
+    // bewusst als zweifelhaft übernommen (8.11). Fällt sie groß aus, ist die
+    // Regel zu großzügig und nicht die Datenlage schlecht.
+    `| davon unsicher übernommen | ${reports.reduce((sum, report) => sum + report.uncertain, 0).toLocaleString("de-DE")} Standorte |`,
     "",
     "Bewertung: 🔴 Fehler – muss angesehen werden · 🟡 Verdacht – sollte angesehen werden · ⬜ Hinweis",
     "",
@@ -909,6 +923,7 @@ async function main() {
       source: seed.source,
       spots: seed.spots.length,
       spaces: seed.spots.reduce((sum, spot) => sum + spot.spotCount, 0),
+      uncertain: seed.spots.filter((spot) => spot.unsicher === true).length,
       confirmedByOsm: null,
       findings: [
         ...checkCoordinates(seed),

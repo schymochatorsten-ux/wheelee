@@ -1,7 +1,8 @@
 /**
  * Heidelberg: die Standorte von der Webseite der Stadt holen (ToDo 2d.8a).
  *
- *     npm run import:heidelberg-web -- --dry   # nur berichten, nichts schreiben
+ *     npm run import:heidelberg-web -- --dry       # nur berichten, nichts schreiben
+ *     npm run import:heidelberg-web -- --unsicher  # die 22 zweifelhaften Zeilen mitnehmen
  *     npm run import:heidelberg-web            # fehlende Standorte geokodieren
  *
  * **Warum ein eigenes Skript und kein regulärer Import.** Heidelbergs amtliche
@@ -29,6 +30,10 @@
  * Der Lauf zählt sie weiter auf, weil die Zahl zeigt, dass die Seite
  * unverändert ist – **wer sie liest, soll sie nicht für eine Liste
  * unerledigter Arbeit halten.** Begründung in `Erledigt.md` unter 2d.8a.
+ *
+ * **Seit 8.11 gibt es `--unsicher`**, das sie gekennzeichnet mitnimmt. Die
+ * Entscheidung vom 2026-11-13 bleibt davon unberührt: Der Schalter ist
+ * vorhanden, die Vorgabe ist weiter „nicht übernehmen".
  */
 import fs from "node:fs/promises";
 import path from "node:path";
@@ -244,6 +249,19 @@ async function geocode(query: string): Promise<GeocodeHit | null> {
 
 async function main() {
   const dry = process.argv.includes("--dry");
+  /*
+   * **`--unsicher` nimmt die zweifelhaften Zeilen mit** (8.11, ab 2026-11-14):
+   * die auf einer bekannten Straße mit unbekannter Hausnummer. Sie kommen dann
+   * mit `unsicher: true` herein, bekommen in der App den Hinweis vor dem
+   * Navigieren und verschwinden schon nach wenigen Meldungen wieder.
+   *
+   * **Ein Schalter und nicht die neue Vorgabe**, und das ist Absicht: Torsten
+   * hat diese 22 Zeilen am 2026-11-13 ausdrücklich verworfen (2d.8a in
+   * `Erledigt.md`). Die neue Regel macht sie wieder möglich, hebt aber keine
+   * Entscheidung auf, die jemand getroffen hat. Wer den Schalter setzt, nimmt
+   * sie bewusst auf.
+   */
+  const mitUnsicheren = process.argv.includes("--unsicher");
 
   const response = await fetch(PAGE, { headers: { "user-agent": USER_AGENT } });
   if (!response.ok) throw new Error(`Seite antwortet mit ${response.status}`);
@@ -284,7 +302,8 @@ async function main() {
   );
 
   console.log(
-    `Neue Straßen: ${neu.length} Zeilen · bekannte Straße, andere Hausnummer: ${unklar.length} (nicht übernommen)`,
+    `Neue Straßen: ${neu.length} Zeilen · bekannte Straße, andere Hausnummer: ${unklar.length} ` +
+      (mitUnsicheren ? "(als unsicher übernommen)" : "(nicht übernommen)"),
   );
   for (const row of unklar) console.log(`  ? ${row.label}`);
   if (dry) {
@@ -294,7 +313,16 @@ async function main() {
 
   const cache = await loadCache();
   const spots: Record<string, unknown>[] = [];
-  for (const [index, row] of neu.entries()) {
+  // Die zweifelhaften hinten anhängen: Die IDs der sicheren Zeilen bleiben
+  // damit dieselben wie vorher, und daran hängen Bewertungen und Favoriten.
+  const zuImportieren = mitUnsicheren
+    ? [
+        ...neu.map((row) => ({ row, unsicher: false })),
+        ...unklar.map((row) => ({ row, unsicher: true })),
+      ]
+    : neu.map((row) => ({ row, unsicher: false }));
+
+  for (const [index, { row, unsicher }] of zuImportieren.entries()) {
     const query = row.houseNumber ? `${row.street} ${row.houseNumber}` : row.street;
     let hit = cache[query];
     if (hit === undefined) {
@@ -339,6 +367,7 @@ async function main() {
       geoAccuracy: hit.accuracy,
       source: SOURCE,
       geocodedFrom: hit.displayName,
+      ...(unsicher ? { unsicher: true } : {}),
     });
   }
 

@@ -12,6 +12,7 @@
 import { createHash } from "node:crypto";
 import type { ParkingSpot } from "../../src/lib/types.js";
 import type { GermanCity } from "./german-cities.mjs";
+import { readSpotCount } from "./spot-count.mjs";
 
 const USER_AGENT = "wheelee-import/0.1 (Behindertenparkplatz-Karte; Kontakt via Repository)";
 const NOMINATIM = "https://nominatim.openstreetmap.org";
@@ -138,23 +139,7 @@ async function fetchOverpass(query: string): Promise<OverpassElement[]> {
   throw new Error(`Overpass lieferte kein verwertbares Ergebnis: ${problems.join("; ")}`);
 }
 
-/**
- * Anzahl der Behindertenstellplätze aus den Tags.
- * `capacity:disabled=no` heißt ausdrücklich „hier keine" – solche Objekte
- * gehören nicht in die Karte.
- */
-function readSpotCount(tags: Record<string, string>): number | null {
-  const raw = tags["capacity:disabled"];
-
-  if (raw === undefined) {
-    return tags.parking_space?.includes("disabled") || tags.wheelchair === "designated" ? 1 : null;
-  }
-  if (/^(no|none|0)$/iu.test(raw)) return null;
-
-  const parsed = Number.parseInt(raw, 10);
-  if (Number.isFinite(parsed) && parsed > 0) return parsed;
-  return /^(yes|designated)$/iu.test(raw) ? 1 : null;
-}
+/* Die Stellplatzzahl liest `spot-count.mts` – einmal für alle drei Importwege. */
 
 export async function importFromOsm(
   city: GermanCity,
@@ -217,12 +202,13 @@ export async function importFromOsm(
           .join(" · ") || null,
       timeRestriction: tags.opening_hours ?? null,
       district: tags["addr:suburb"] ?? city.name,
-      spotCount,
+      spotCount: spotCount.count,
       lat,
       lng,
       // Punkte sind genau, Flächen liefern ihren Mittelpunkt.
       geoAccuracy: element.type === "node" ? "house" : "street",
       source: `OpenStreetMap (${element.type}/${element.id}), ODbL`,
+      ...(spotCount.unsicher ? { unsicher: true as const } : {}),
     });
   }
 

@@ -40,6 +40,7 @@ import { allMunicipalities, germanCities, toSlug } from "./german-cities.mjs";
 import { loadGrenzen, type Grenzen } from "./grenzen.mjs";
 import { recordCity } from "./status.mjs";
 import { extractDisabledParking } from "./pbf.mjs";
+import { readSpotCount } from "./spot-count.mjs";
 
 const USER_AGENT = "wheelee-import/0.1 (Behindertenparkplatz-Karte; Kontakt via Repository)";
 
@@ -233,19 +234,10 @@ async function fetchSpots(
 }
 
 /** Wie der Einzelimport: `capacity:disabled=no` heißt ausdrücklich „hier keine". */
-function readSpotCount(tags: Record<string, string>): number | null {
-  const raw = tags["capacity:disabled"];
-  if (raw === undefined) {
-    return tags.parking_space?.includes("disabled") || tags.wheelchair === "designated" ? 1 : null;
-  }
-  if (/^(no|none|0)$/iu.test(raw)) return null;
-  const parsed = Number.parseInt(raw, 10);
-  if (Number.isFinite(parsed) && parsed > 0) return parsed;
-  return /^(yes|designated)$/iu.test(raw) ? 1 : null;
-}
-
 function toSpot(element: OverpassElement, slug: string, cityName: string): ParkingSpot | null {
   const tags = element.tags ?? {};
+  // Gemeinsam mit dem Einzelimport (`spot-count.mts`): Dieselbe Regel darf
+  // nicht in zwei Läufen zwei Ergebnisse liefern.
   const spotCount = readSpotCount(tags);
   if (spotCount === null) return null;
 
@@ -276,11 +268,14 @@ function toSpot(element: OverpassElement, slug: string, cityName: string): Parki
         .join(" · ") || null,
     timeRestriction: tags.opening_hours ?? null,
     district: tags["addr:suburb"] ?? cityName,
-    spotCount,
+    spotCount: spotCount.count,
     lat,
     lng,
     geoAccuracy: element.type === "node" ? "house" : "street",
     source: `OpenStreetMap (${element.type}/${element.id}), ODbL`,
+    // Nur setzen, wenn es zutrifft: `unsicher: false` an 38.000 Standorten
+    // wäre eine Zeile Daten je Standort für die Aussage „nichts Besonderes".
+    ...(spotCount.unsicher ? { unsicher: true as const } : {}),
   };
 }
 

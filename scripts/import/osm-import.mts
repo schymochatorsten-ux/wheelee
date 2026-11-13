@@ -21,6 +21,7 @@ import path from "node:path";
 import { createHash } from "node:crypto";
 import type { GeoAccuracy, ParkingSpot } from "../../src/lib/types.js";
 import { addressCachePath, cityPaths, osmCities, type OsmCity } from "./cities.mjs";
+import { readSpotCount } from "./spot-count.mjs";
 
 const USER_AGENT = "wheelee-import/0.1 (Behindertenparkplatz-Karte; Kontakt via Repository)";
 const NOMINATIM = "https://nominatim.openstreetmap.org";
@@ -203,26 +204,7 @@ async function fetchOverpass(area: CityArea): Promise<OverpassElement[]> {
   );
 }
 
-/**
- * Anzahl der Behindertenstellplätze aus den Tags lesen.
- * `capacity:disabled` ist oft eine Zahl, manchmal „yes"; „no" bedeutet, dass es
- * dort ausdrücklich keine gibt – solche Einträge gehören nicht in die Karte.
- */
-function readSpotCount(tags: Record<string, string>): number | null {
-  const raw = tags["capacity:disabled"];
-
-  if (raw === undefined) {
-    // Kein Zähler, aber als Behindertenstellplatz ausgewiesen.
-    return tags.parking_space?.includes("disabled") || tags.wheelchair === "designated" ? 1 : null;
-  }
-  if (/^(no|none|0)$/iu.test(raw)) return null;
-
-  const parsed = Number.parseInt(raw, 10);
-  if (Number.isFinite(parsed) && parsed > 0) return parsed;
-
-  // „yes" und Ähnliches: vorhanden, Anzahl unbekannt.
-  return /^(yes|designated)$/iu.test(raw) ? 1 : null;
-}
+/* Die Stellplatzzahl liest `spot-count.mts` – einmal für alle drei Importwege. */
 
 /** Mittelpunkt eines Elements – Knoten direkt, Flächen über `out center`. */
 function coordinatesOf(element: OverpassElement): { lat: number; lng: number } | null {
@@ -354,13 +336,14 @@ async function importCity(city: OsmCity, cache: AddressCache): Promise<CityResul
       note: note.length > 0 ? note : null,
       timeRestriction: tags["opening_hours"] ?? null,
       district: address.district ?? city.name,
-      spotCount,
+      spotCount: spotCount.count,
       lat: coordinates.lat,
       lng: coordinates.lng,
       // Die Koordinate stammt aus der Geometrie des Objekts selbst, nicht aus
       // einer Adresssuche – bei Flächen ist sie der Mittelpunkt.
       geoAccuracy: (element.type === "node" ? "house" : "street") as GeoAccuracy,
       source: `OpenStreetMap (${element.type}/${element.id}), ODbL`,
+      ...(spotCount.unsicher ? { unsicher: true as const } : {}),
     };
 
     spots.push({ ...base, ...(overrides.spots?.[id] ?? {}) });
@@ -404,6 +387,11 @@ async function writeCity({ city, spots, skipped }: CityResult) {
     `| Standorte | ${spots.length} |`,
     `| Stellplätze (laut OSM) | ${totalSpaces} |`,
     `| verworfene OSM-Objekte | ${skipped} |`,
+    // Seit 8.11: Objekte mit nicht deutbarer Stellplatzzahl kommen herein und
+    // tragen `unsicher`. **Die Zahl gehört in den Bericht**, sonst merkt
+    // niemand, wenn sie plötzlich groß wird – und dann wäre nicht die
+    // Datenlage schlecht, sondern die Regel falsch.
+    `| davon unsicher übernommen | ${spots.filter((spot) => spot.unsicher).length} |`,
     "",
     "## Standorte",
     "",
