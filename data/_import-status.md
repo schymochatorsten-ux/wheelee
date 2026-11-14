@@ -1,6 +1,6 @@
 # Importstand der deutschen Gemeinden
 
-Zuletzt aktualisiert: 2026-11-13T05:30:44.015Z
+Zuletzt aktualisiert: 2026-11-14T04:59:35.832Z
 
 Diese Datei schreiben die Importskripte selbst nach **jeder einzelnen Stadt**.
 Sie ist damit auch nach einem Abbruch mitten im Lauf korrekt.
