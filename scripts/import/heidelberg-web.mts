@@ -92,6 +92,37 @@ const DUBLETTE_METER = 40;
  */
 const NAMENSGLEICH_METER = 150;
 
+/**
+ * Zeilen, die die Seite führt, die aber nicht in den Bestand gehören – mit dem
+ * Grund daneben. **Keine Dublette, sondern eine Aussage der Quelle:** Der
+ * Zentralbetriebshof ist kein öffentlicher Platz, die Beschilderung ist
+ * abdeckbar und gilt nur bei Veranstaltungen. Nach `Datenpflege.md` ist das
+ * kein Fall für „unsicher“, sondern zu verwerfen (2d.8a, bestätigt in 2d.13).
+ */
+const AUSGESCHLOSSEN = new Map([
+  ["hardtstr|2", "Zentralbetriebshof, Beschilderung nur bei Veranstaltungen"],
+]);
+
+/** Schlüssel für `AUSGESCHLOSSEN`: Straße und Hausnummer getrennt normiert. */
+const adressSchluessel = (row: { street: string; houseNumber: string | null }) =>
+  `${norm(row.street)}|${(row.houseNumber ?? "").replace(/[–—]/gu, "-")}`;
+
+/**
+ * Hausnummern einer Zeile gegen die der Straße im Bestand halten. **Zwei
+ * Schreibweisen derselben Angabe haben hier 22 Zeilen als neu erscheinen
+ * lassen** (2d.13): Die Seite schreibt „53–57“ mit Gedankenstrich, der Bestand
+ * „53-57“ mit Bindestrich, und „20–22“ steht dort als zwei Einträge „20“ und
+ * „22“. Deshalb gilt als bekannt: dieselbe Nummer nach Angleichung des
+ * Striches **oder** ein Bereich, dessen beide Enden im Bestand stehen.
+ */
+function nummerBekannt(nr: string | null, imBestand: Set<string>): boolean {
+  if (nr === null) return false;
+  const plain = nr.replace(/[–—]/gu, "-");
+  if (imBestand.has(plain)) return true;
+  const bereich = /^(\d+[a-z]?)-(\d+[a-z]?)$/u.exec(plain);
+  return bereich !== null && imBestand.has(bereich[1]) && imBestand.has(bereich[2]);
+}
+
 function distanceMeters(a: { lat: number; lng: number }, b: { lat: number; lng: number }): number {
   const toRad = (x: number) => (x * Math.PI) / 180;
   const dLat = toRad(b.lat - a.lat);
@@ -290,16 +321,31 @@ async function main() {
   const seed = { spots: seedAll.spots.filter((spot) => !spot.id.startsWith("heidelberg-web-")) };
   const bekannteStrassen = new Set(seed.spots.map((s) => norm(s.street ?? "")));
 
-  const neu = rows.filter((row) => !bekannteStrassen.has(norm(row.street)));
-  const unklar = rows.filter(
+  // Hausnummern je Straße, einmal vorbereitet – mit angeglichenem Strich,
+  // damit „53–57“ und „53-57“ dieselbe Angabe sind.
+  const nummernJeStrasse = new Map<string, Set<string>>();
+  for (const spot of seed.spots) {
+    const key = norm(spot.street ?? "");
+    if (spot.houseNumber === null) continue;
+    const vorhanden = nummernJeStrasse.get(key) ?? new Set<string>();
+    vorhanden.add(spot.houseNumber.replace(/[–—]/gu, "-"));
+    nummernJeStrasse.set(key, vorhanden);
+  }
+
+  const ausgeschlossen = rows.filter((row) => AUSGESCHLOSSEN.has(adressSchluessel(row)));
+  const uebrig = rows.filter((row) => !ausgeschlossen.includes(row));
+
+  const neu = uebrig.filter((row) => !bekannteStrassen.has(norm(row.street)));
+  const unklar = uebrig.filter(
     (row) =>
       bekannteStrassen.has(norm(row.street)) &&
       row.houseNumber !== null &&
-      !seed.spots.some(
-        (s) =>
-          norm(s.street ?? "") === norm(row.street) && (s.houseNumber ?? "") === row.houseNumber,
-      ),
+      !nummerBekannt(row.houseNumber, nummernJeStrasse.get(norm(row.street)) ?? new Set()),
   );
+
+  for (const row of ausgeschlossen) {
+    console.log(`  × ${row.label}: ${AUSGESCHLOSSEN.get(adressSchluessel(row))}`);
+  }
 
   console.log(
     `Neue Straßen: ${neu.length} Zeilen · bekannte Straße, andere Hausnummer: ${unklar.length} ` +
@@ -339,6 +385,16 @@ async function main() {
     const nah = seed.spots.find((s) => {
       const meter = distanceMeters(hit, s);
       if (meter <= DUBLETTE_METER) return true;
+      /*
+       * **Die Namensregel gilt nur für die neuen Straßen, nicht für die
+       * unsicheren Zeilen** (2d.13). Sie unterscheidet dort, wo ein Zweitname
+       * auftaucht („Hauptbahnhof“ neben „Willy-Brandt-Platz“). Bei einer Zeile
+       * auf einer **bekannten** Straße steht der Straßenname zwangsläufig in
+       * beiden Namen – die Regel würde zu „150 m blind“ und hat beim ersten
+       * Lauf alle 22 Zeilen verschluckt, auch hausgenaue 50 m daneben. Für
+       * diese Gruppe zählt deshalb nur der blinde Radius.
+       */
+      if (unsicher) return false;
       if (meter > NAMENSGLEICH_METER) return false;
       const strasse = norm(s.street ?? "");
       return strasse.length >= 6 && labelNorm.includes(strasse);
@@ -398,7 +454,7 @@ async function main() {
     `\nGeschrieben: data/heidelberg.zusatz.json mit ${spots.length} Standorten; ` +
       `data/heidelberg.json hat jetzt ${merged.length}.`,
   );
-  console.log("Danach nötig: npm run generate:index");
+  console.log("Danach nötig: npm run import:index");
 }
 
 await main();

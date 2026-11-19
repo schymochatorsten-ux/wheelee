@@ -9,7 +9,8 @@ import { db, now } from "./sqlite";
  * es in beide Richtungen (verwechselter Platz, kurzzeitige Baustelle,
  * zugeparkt statt aufgehoben). Ein Platz, der von Anfang an als **unsicher**
  * gekennzeichnet ist, hat dieses Gewicht nicht: Bei ihm ist offen, ob er
- * überhaupt stimmt, und zwei unabhängige Meldungen genügen.
+ * überhaupt stimmt, und schon wenige Meldungen genügen – seit dem 2026-11-19
+ * eine (siehe `POLICY_DEFAULT`).
  *
  * **Beide Zahlen gehören dem Betreiber, nicht dem Code.** Die richtige Höhe
  * hängt davon ab, wie viele Menschen die App benutzen – bei hundert
@@ -34,16 +35,22 @@ export interface SpotPolicy {
 /**
  * Die Vorgabe, solange niemand etwas eingestellt hat.
  *
- * **2 und 5 sind gewählt, nicht gemessen** – es gibt noch keine Zahlen, aus
- * denen sich etwas ableiten ließe (117 Besucher im letzten Monat). Die
- * Begründung ist nur die Rangfolge: Zwei unabhängige Meldungen sind das
- * Minimum, bei dem nicht eine einzelne Person etwas entfernen kann, und fünf
- * ist genug, dass eine amtliche Angabe nicht an einer Verwechslung scheitert.
- * Sobald es Nutzung gibt, gehören beide Zahlen angesehen.
+ * **1 und 2, auf Torstens Vorgabe vom 2026-11-19** (bis dahin 2 und 5; ToDo
+ * 8.12). Der Grund ist die Nutzung, nicht eine Messung: Bei 117 Besuchern im
+ * Monat wurden „fünf Konten" nie erreicht – die Schwelle für gesicherte Plätze
+ * war damit keine Schwelle, sondern eine Abschaltung. Ein Melden, das nichts
+ * bewirkt, ist schlimmer als keines: Es sieht aus wie Mitarbeit.
+ *
+ * **Was der Preis ist, und er ist bewusst bezahlt:** Bei `1` entfernt **eine**
+ * einzelne Meldung einen unsicheren Platz. Tragbar ist das, weil nichts
+ * gelöscht wird – der Platz ist unsichtbar, steht in der Verwaltung und ist mit
+ * einem Klick zurück –, und weil es die Rangfolge aus `Datenpflege.md` zu Ende
+ * geht: Ein unsicherer Platz ist eine Vermutung, eine Meldung eine Beobachtung.
+ * **Beide Zahlen gehören wieder angesehen, sobald es Nutzung gibt** (8.12).
  */
 export const POLICY_DEFAULT: SpotPolicy = {
-  schwelleUnsicher: 2,
-  schwelleSicher: 5,
+  schwelleUnsicher: 1,
+  schwelleSicher: 2,
   updatedAt: null,
 };
 

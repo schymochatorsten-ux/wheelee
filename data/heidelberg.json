@@ -9,7 +9,7 @@
   },
   "source": "Behindertenparkplätze in Heidelberg – Heidelberg (nicht angegeben)",
   "license": "Creative Commons Namensnennung 4.0 (CC BY 4.0)",
-  "generatedAt": "2026-11-12",
+  "generatedAt": "2026-11-19",
   "spots": [
     {
       "id": "heidelberg-951ac24c10",
@@ -237,6 +237,23 @@
       "source": "Behindertenparkplätze in Heidelberg – Heidelberg (nicht angegeben)"
     },
     {
+      "id": "heidelberg-web-21",
+      "city": "heidelberg",
+      "label": "Bahnhofstraße 30",
+      "street": "Bahnhofstraße",
+      "houseNumber": "30",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Heidelberg",
+      "spotCount": 1,
+      "lat": 49.4052052,
+      "lng": 8.6858228,
+      "geoAccuracy": "approximate",
+      "source": "Schwerbehindertenparkplätze (Webseite der Stadt Heidelberg)",
+      "geocodedFrom": "Bahnhofstraße, Weststadt, Heidelberg, Baden-Württemberg, 69115, Deutschland",
+      "unsicher": true
+    },
+    {
       "id": "heidelberg-675e12952b",
       "city": "heidelberg",
       "label": "Bahnhofstraße 32",
@@ -325,6 +342,23 @@
       "lng": 8.680116,
       "geoAccuracy": "house",
       "source": "Behindertenparkplätze in Heidelberg – Heidelberg (nicht angegeben)"
+    },
+    {
+      "id": "heidelberg-web-24",
+      "city": "heidelberg",
+      "label": "Bergheimer Straße 109a",
+      "street": "Bergheimer Straße",
+      "houseNumber": "109a",
+      "note": null,
+      "timeRestriction": "werktags 8 bis 18 Uhr, 1 Stunde",
+      "district": "Heidelberg",
+      "spotCount": 1,
+      "lat": 49.4078058,
+      "lng": 8.6790883,
+      "geoAccuracy": "approximate",
+      "source": "Schwerbehindertenparkplätze (Webseite der Stadt Heidelberg)",
+      "geocodedFrom": "Bergheimer Straße, Bergheim, Heidelberg, Baden-Württemberg, 69115, Deutschland",
+      "unsicher": true
     },
     {
       "id": "heidelberg-a48a5716c3",
@@ -915,6 +949,23 @@
       "lng": 8.760532,
       "geoAccuracy": "house",
       "source": "Behindertenparkplätze in Heidelberg – Heidelberg (nicht angegeben)"
+    },
+    {
+      "id": "heidelberg-web-28",
+      "city": "heidelberg",
+      "label": "Friedrich-Ebert-Anlage 1 (Juristisches Seminar)",
+      "street": "Friedrich-Ebert-Anlage",
+      "houseNumber": "1",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Heidelberg",
+      "spotCount": 2,
+      "lat": 49.407787,
+      "lng": 8.6948952,
+      "geoAccuracy": "approximate",
+      "source": "Schwerbehindertenparkplätze (Webseite der Stadt Heidelberg)",
+      "geocodedFrom": "Meisteratelier Kirsten Ehhalt, 1, Friedrich-Ebert-Anlage, Altstadt, Heidelberg, Baden-Württemberg, 69117, Deutschland",
+      "unsicher": true
     },
     {
       "id": "heidelberg-eb081c1e99",
@@ -3201,6 +3252,23 @@
       "lng": 8.681103,
       "geoAccuracy": "house",
       "source": "Behindertenparkplätze in Heidelberg – Heidelberg (nicht angegeben)"
+    },
+    {
+      "id": "heidelberg-web-38",
+      "city": "heidelberg",
+      "label": "Vangerowstraße 2 (Parkplatz)",
+      "street": "Vangerowstraße",
+      "houseNumber": "2",
+      "note": null,
+      "timeRestriction": null,
+      "district": "Heidelberg",
+      "spotCount": 1,
+      "lat": 49.4089398,
+      "lng": 8.6823783,
+      "geoAccuracy": "approximate",
+      "source": "Schwerbehindertenparkplätze (Webseite der Stadt Heidelberg)",
+      "geocodedFrom": "Epple, 2, Vangerowstraße, Bergheim, Heidelberg, Baden-Württemberg, 69115, Deutschland",
+      "unsicher": true
     },
     {
       "id": "heidelberg-ee472080f6",

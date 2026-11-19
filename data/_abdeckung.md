@@ -1,6 +1,6 @@
 # Abdeckung
 
-Stand: 2026-11-12
+Stand: 2026-11-19
 
 Erzeugt von `npm run report:abdeckung`. Nicht von Hand bearbeiten.
 

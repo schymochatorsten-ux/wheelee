@@ -113,5 +113,153 @@
     "accuracy": "approximate",
     "query": "Zollhofgarten",
     "displayName": "Zollhofgarten, Bahnstadt, Heidelberg, Baden-Württemberg, Deutschland"
+  },
+  "Alte Eppelheimer Straße 36": {
+    "lat": 49.4063581,
+    "lng": 8.6783073,
+    "accuracy": "house",
+    "query": "Alte Eppelheimer Straße 36",
+    "displayName": "36, Alte Eppelheimer Straße, Bergheim, Heidelberg, Baden-Württemberg, 69115, Deutschland"
+  },
+  "Bahnhofstraße 30": {
+    "lat": 49.4052052,
+    "lng": 8.6858228,
+    "accuracy": "approximate",
+    "query": "Bahnhofstraße 30",
+    "displayName": "Bahnhofstraße, Weststadt, Heidelberg, Baden-Württemberg, 69115, Deutschland"
+  },
+  "Bahnhofstraße 36": {
+    "lat": 49.4055473,
+    "lng": 8.6869151,
+    "accuracy": "approximate",
+    "query": "Bahnhofstraße 36",
+    "displayName": "easy Apotheke, 36, Bahnhofstraße, Weststadt, Heidelberg, Baden-Württemberg, 69115, Deutschland"
+  },
+  "Bergheimer Straße 17": {
+    "lat": 49.4084178,
+    "lng": 8.6905175,
+    "accuracy": "house",
+    "query": "Bergheimer Straße 17",
+    "displayName": "17, Bergheimer Straße, Bergheim, Heidelberg, Baden-Württemberg, 69115, Deutschland"
+  },
+  "Bergheimer Straße 53–57": {
+    "lat": 49.4080227,
+    "lng": 8.6876765,
+    "accuracy": "house",
+    "query": "Bergheimer Straße 53–57",
+    "displayName": "53-57, Bergheimer Straße, Bergheim, Heidelberg, Baden-Württemberg, 69115, Deutschland"
+  },
+  "Bergheimer Straße 109a": {
+    "lat": 49.4078058,
+    "lng": 8.6790883,
+    "accuracy": "approximate",
+    "query": "Bergheimer Straße 109a",
+    "displayName": "Bergheimer Straße, Bergheim, Heidelberg, Baden-Württemberg, 69115, Deutschland"
+  },
+  "Blumenthalstraße 38": {
+    "lat": 49.4208026,
+    "lng": 8.6839839,
+    "accuracy": "house",
+    "query": "Blumenthalstraße 38",
+    "displayName": "38, Blumenthalstraße, Neuenheimer Feld, Neuenheim, Heidelberg, Baden-Württemberg, 69120, Deutschland"
+  },
+  "Brahmsstraße 2": {
+    "lat": 49.4174493,
+    "lng": 8.7611327,
+    "accuracy": "house",
+    "query": "Brahmsstraße 2",
+    "displayName": "2, Brahmsstraße, Ziegelhausen, Heidelberg, Baden-Württemberg, 69118, Deutschland"
+  },
+  "Dossenheimer Landstraße 18a": {
+    "lat": 49.4279656,
+    "lng": 8.6844245,
+    "accuracy": "house",
+    "query": "Dossenheimer Landstraße 18a",
+    "displayName": "18a, Dossenheimer Landstraße, Handschuhsheim, Heidelberg, Baden-Württemberg, 69121, Deutschland"
+  },
+  "Friedrich-Ebert-Anlage 1": {
+    "lat": 49.407787,
+    "lng": 8.6948952,
+    "accuracy": "approximate",
+    "query": "Friedrich-Ebert-Anlage 1",
+    "displayName": "Meisteratelier Kirsten Ehhalt, 1, Friedrich-Ebert-Anlage, Altstadt, Heidelberg, Baden-Württemberg, 69117, Deutschland"
+  },
+  "Hardtstraße 2": {
+    "lat": 49.389325,
+    "lng": 8.6765857,
+    "accuracy": "house",
+    "query": "Hardtstraße 2",
+    "displayName": "2, Hardtstraße, Kirchheim, Heidelberg, Baden-Württemberg, 69124, Deutschland"
+  },
+  "Kirchstraße 20–22": {
+    "lat": 49.4065898,
+    "lng": 8.679056,
+    "accuracy": "approximate",
+    "query": "Kirchstraße 20–22",
+    "displayName": "Kirchstraße, Bergheim, Heidelberg, Baden-Württemberg, 69115, Deutschland"
+  },
+  "Kleinschmidtstraße 5": {
+    "lat": 49.4049993,
+    "lng": 8.6872606,
+    "accuracy": "approximate",
+    "query": "Kleinschmidtstraße 5",
+    "displayName": "5, Kleinschmidtstraße, Weststadt, Heidelberg, Baden-Württemberg, 69115, Deutschland"
+  },
+  "Kriegsstraße 16": {
+    "lat": 49.428895,
+    "lng": 8.6862651,
+    "accuracy": "approximate",
+    "query": "Kriegsstraße 16",
+    "displayName": "Friedenskirche, 16, Kriegsstraße, Handschuhsheim, Heidelberg, Baden-Württemberg, 69121, Deutschland"
+  },
+  "Kurfürstenanlage 36": null,
+  "Lindenweg 6": {
+    "lat": 49.3805713,
+    "lng": 8.6863876,
+    "accuracy": "house",
+    "query": "Lindenweg 6",
+    "displayName": "6, Lindenweg, Rohrbach, Heidelberg, Baden-Württemberg, 69126, Deutschland"
+  },
+  "Lutherstraße 15": {
+    "lat": 49.4146816,
+    "lng": 8.6900535,
+    "accuracy": "house",
+    "query": "Lutherstraße 15",
+    "displayName": "15, Lutherstraße, Neuenheim, Heidelberg, Baden-Württemberg, 69120, Deutschland"
+  },
+  "Poststraße 5": {
+    "lat": 49.4079383,
+    "lng": 8.6916037,
+    "accuracy": "approximate",
+    "query": "Poststraße 5",
+    "displayName": "5, Poststraße, Bergheim, Heidelberg, Baden-Württemberg, 69115, Deutschland"
+  },
+  "Poststraße 50": {
+    "lat": 49.4072871,
+    "lng": 8.6869844,
+    "accuracy": "house",
+    "query": "Poststraße 50",
+    "displayName": "50, Poststraße, Bergheim, Heidelberg, Baden-Württemberg, 69115, Deutschland"
+  },
+  "Seminarstraße 4": {
+    "lat": 49.4097527,
+    "lng": 8.708552,
+    "accuracy": "house",
+    "query": "Seminarstraße 4",
+    "displayName": "Kunsthistorisches Institut, 4, Seminarstraße, Altstadt, Heidelberg, Baden-Württemberg, 69117, Deutschland"
+  },
+  "Steubenstraße 56–58": {
+    "lat": 49.4256186,
+    "lng": 8.6876426,
+    "accuracy": "house",
+    "query": "Steubenstraße 56–58",
+    "displayName": "Fachkräftehaus, 56-58, Steubenstraße, Handschuhsheim, Heidelberg, Baden-Württemberg, 69121, Deutschland"
+  },
+  "Vangerowstraße 2": {
+    "lat": 49.4089398,
+    "lng": 8.6823783,
+    "accuracy": "approximate",
+    "query": "Vangerowstraße 2",
+    "displayName": "Epple, 2, Vangerowstraße, Bergheim, Heidelberg, Baden-Württemberg, 69115, Deutschland"
   }
 }

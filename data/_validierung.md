@@ -1,6 +1,6 @@
 # Validierung der Parkplatzdaten
 
-Stand: 2026-10-29
+Stand: 2026-11-19
 
 Erzeugt von `npm run validate`. Das Skript ändert keine Daten – es benennt,
 was ein Mensch ansehen sollte. Vorgehen siehe [Datenpflege.md](../Datenpflege.md).
@@ -10,10 +10,11 @@ was ein Mensch ansehen sollte. Vorgehen siehe [Datenpflege.md](../Datenpflege.md
 | Kennzahl | Wert |
 | --- | --- |
 | geprüfte Städte | 1 |
-| Standorte | 935 |
-| Stellplätze | 1.309 |
+| Standorte | 230 |
+| Stellplätze | 236 |
 | Städte mit Fehlern | 0 |
 | Städte mit Verdachtsfällen | 0 |
+| davon unsicher übernommen | 4 Standorte |
 
 Bewertung: 🔴 Fehler – muss angesehen werden · 🟡 Verdacht – sollte angesehen werden · ⬜ Hinweis
 
@@ -112,4 +113,4 @@ Geprüft, nichts gefunden: Kein Parkplatz ist von 2 oder mehr Konten als „exis
 
 | Stadt | Standorte | Stellplätze | je 10.000 Einw. | von OSM bestätigt | Befunde |
 | --- | ---: | ---: | ---: | ---: | --- |
-| Hamburg | 935 | 1309 | 7.0 | 0 (0 %) | – |
+| Heidelberg | 230 | 236 | 15.2 | 30 (13 %) | – |

@@ -57,14 +57,24 @@ test.describe("Meine Bewertungen", () => {
     await page.getByRole("button", { name: "Anmelden" }).click();
     await expect(page.getByRole("button", { name: "Abmelden" })).toBeVisible();
 
+    /*
+     * **Bestätigen und nicht melden** – und das ist seit dem 2026-11-19 keine
+     * Geschmacksfrage mehr (ToDo 8.12): Die Schwelle für unsichere Plätze steht
+     * auf **1**, und die Kölner Plätze stammen alle aus OpenStreetMap, sind
+     * also unsicher. Eine einzige „gone"-Stimme blendet den Platz damit aus,
+     * `entry.spot` ist null, und `MyRatings` zeigt dann **keinen** Knopf „Auf
+     * der Karte zeigen" – richtig so, aber dieser Test käme nicht mehr bis zur
+     * Karte. Genau daran ist er am 2026-11-19 gescheitert. Der ausgeblendete
+     * Fall steht deshalb als eigener Test darunter.
+     */
     const vote = await page.request.post(`/api/spots/${spotId}/ratings`, {
-      data: { vote: "gone" },
+      data: { vote: "exists" },
     });
     expect(vote.status()).toBe(200);
 
     await page.getByRole("button", { name: "Meine Bewertungen", exact: true }).click();
     const liste = page.locator("#meine-bewertungen-liste");
-    await expect(liste.getByText("Existiert nicht mehr")).toBeVisible();
+    await expect(liste.getByText("Existiert")).toBeVisible();
 
     // Trefferflächen mindestens 44 px.
     for (const knopf of await liste.getByRole("button").all()) {
@@ -88,5 +98,55 @@ test.describe("Meine Bewertungen", () => {
 
     const danach = await page.request.get(`/api/spots/${spotId}/ratings`);
     expect(((await danach.json()) as { myVote: unknown }).myVote).toBeNull();
+  });
+
+  test("eine eigene Meldung blendet den unsicheren Platz aus – die Liste bleibt", async ({
+    playwright,
+    baseURL,
+  }) => {
+    /*
+     * **Die Folge der Schwelle 1 festgehalten** (ToDo 8.12, 2026-11-19): Wer
+     * einen unsicheren Platz als aufgehoben meldet, lässt ihn damit allein
+     * verschwinden. Das ist gewollt – gelöscht wird nichts, die Verwaltung holt
+     * ihn zurück –, aber es darf **nicht** die eigene Stimme verschlucken:
+     * Sonst kann niemand zurücknehmen, was er gemeldet hat.
+     *
+     * **Ein selbst gemeldeter Platz und kein vorhandener**, und das ist der
+     * Kern: Beim ersten Versuch stand hier `spots[6]` aus Köln – und der Test
+     * fiel im Gesamtlauf um, weil `bewertungen.spec.ts` denselben Platz vorher
+     * bestätigt hatte. Gezählt wird der **Überhang**, und eine Bestätigung
+     * gegen eine Meldung ergibt null. Ein frisch gemeldeter Platz gehört
+     * dagegen niemandem sonst: unsicher von Anfang an, ohne fremde Stimmen.
+     */
+    const api = await playwright.request.newContext({ baseURL });
+    const konto = {
+      email: `meine-bewertungen-ausgeblendet-${Date.now()}@example.de`,
+      password: "ein gutes langes Passwort",
+    };
+    expect(
+      (await api.post("/api/auth/register", { data: konto, headers: herkunft() })).status(),
+    ).toBe(200);
+
+    const gemeldet = await api.post("/api/spots/melden", {
+      data: { label: "Ausgeblendet-Teststraße 1", lat: 50.9381, lng: 6.9552 },
+      headers: herkunft(),
+    });
+    expect(gemeldet.status()).toBe(201);
+    const anderer = ((await gemeldet.json()) as { spotId: string }).spotId;
+
+    expect(
+      (await api.post(`/api/spots/${anderer}/ratings`, { data: { vote: "gone" } })).status(),
+    ).toBe(200);
+
+    const liste = (await (await api.get("/api/account/ratings")).json()) as {
+      ratings: { spotId: string; vote: string; spot: unknown }[];
+    };
+    const eintrag = liste.ratings.find((r) => r.spotId === anderer);
+    expect(eintrag?.vote).toBe("gone");
+    // **Der Platz ist weg, der Eintrag nicht.** `spot` ist null, und genau
+    // daran erkennt die Oberfläche, dass sie keinen Kartenknopf anbieten darf.
+    expect(eintrag?.spot).toBeNull();
+
+    await api.dispose();
   });
 });

@@ -31,8 +31,13 @@ interface Policy {
 
 export function SpotThresholds() {
   const t = useT();
-  const [unsicher, setUnsicher] = useState("2");
-  const [sicher, setSicher] = useState("5");
+  // Dieselben Zahlen wie `POLICY_DEFAULT` in `src/lib/db/spot-policy.ts`. Sie
+  // stehen hier als Zeichenkette, weil das Modul dort `node:sqlite` lädt und
+  // nicht in eine Client-Komponente gehört; überschrieben werden sie gleich
+  // vom Abruf. Weicht die Vorgabe dort ab, steht hier für einen Augenblick
+  // eine Zahl, die nicht gilt – deshalb bei einer Änderung beide anfassen.
+  const [unsicher, setUnsicher] = useState("1");
+  const [sicher, setSicher] = useState("2");
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
