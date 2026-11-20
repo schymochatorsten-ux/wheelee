@@ -1,6 +1,6 @@
 # Importstand der deutschen Gemeinden
 
-Zuletzt aktualisiert: 2026-11-19T05:13:31.118Z
+Zuletzt aktualisiert: 2026-11-20T05:02:10.459Z
 
 Diese Datei schreiben die Importskripte selbst nach **jeder einzelnen Stadt**.
 Sie ist damit auch nach einem Abbruch mitten im Lauf korrekt.
@@ -30,8 +30,8 @@ npm run import:city -- --rest
 | davon geprüft, nichts gefunden | 0 |
 | noch nicht geprüft | 6.996 |
 | mit Problem | 0 |
-| importierte Standorte | 38.402 |
-| importierte Stellplätze | 64.119 |
+| importierte Standorte | 38.401 |
+| importierte Stellplätze | 64.118 |
 
 „Geprüft, nichts gefunden" ist etwas anderes als „noch nicht geprüft": Dort
 lief die Abfrage sauber durch und war leer. Diese Gemeinden werden nicht
@@ -96,7 +96,7 @@ liest niemand.
  | ✅ | 9 | Dortmund | 603.462 | amtlich (GEOJSON) | 368 | 368 | fertig | 
  | ✅ | 10 | Bremen | 586.271 | OpenStreetMap | 112 | 187 | fertig | 
  | ✅ | 11 | Essen | 574.682 | OpenStreetMap | 244 | 549 | fertig | 
- | ✅ | 12 | Dresden | 564.904 | amtlich (WFS) | 481 | 680 | fertig | 
+ | ✅ | 12 | Dresden | 564.904 | amtlich (WFS) | 480 | 679 | fertig | 
  | ✅ | 13 | Nürnberg | 529.508 | OpenStreetMap | 487 | 640 | fertig | 
  | ✅ | 14 | Hannover | 522.131 | OpenStreetMap | 173 | 335 | fertig | 
  | ✅ | 15 | Duisburg | 502.270 | OpenStreetMap | 116 | 213 | fertig | 

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T05:13:31.118Z",
+  "updatedAt": "2026-11-20T05:02:10.459Z",
   "records": [
     {
       "rank": 1,
@@ -188,9 +188,9 @@
       "usedSource": "amtlich (WFS)",
       "usedUrl": "https://kommisdd.dresden.de/net3/public/ogc.ashx?NodeId=1462&service=WFS&version=2.0.0&request=GetFeature&typeNames=cls%3AL1113",
       "status": "fertig",
-      "locations": 481,
-      "spaces": 680,
-      "attemptedAt": "2026-11-16T05:22:48.154Z",
+      "locations": 480,
+      "spaces": 679,
+      "attemptedAt": "2026-11-20T05:02:10.459Z",
       "message": null
     },
     {

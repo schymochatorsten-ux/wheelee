@@ -9,7 +9,7 @@
   },
   "source": "Parken für Menschen mit Behinderungen – Dresden (nicht angegeben)",
   "license": null,
-  "generatedAt": "2026-11-16",
+  "generatedAt": "2026-11-20",
   "spots": [
     {
       "id": "dresden-33d6c27148",
@@ -3998,21 +3998,6 @@
       "spotCount": 1,
       "lat": 51.06681988160858,
       "lng": 13.752301676924326,
-      "geoAccuracy": "house",
-      "source": "Parken für Menschen mit Behinderungen – Dresden (nicht angegeben)"
-    },
-    {
-      "id": "dresden-30f2a2afd7",
-      "city": "dresden",
-      "label": "Louisenstraße 46",
-      "street": "Louisenstraße",
-      "houseNumber": "46",
-      "note": null,
-      "timeRestriction": "von 00:00 Uhr bis 24:00 Uhr",
-      "district": "Dresden",
-      "spotCount": 1,
-      "lat": 51.06616704460526,
-      "lng": 13.754430857375114,
       "geoAccuracy": "house",
       "source": "Parken für Menschen mit Behinderungen – Dresden (nicht angegeben)"
     },
