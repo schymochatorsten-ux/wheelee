@@ -9,7 +9,7 @@
   },
   "source": "Parken für Menschen mit Behinderungen – Dresden (nicht angegeben)",
   "license": null,
-  "generatedAt": "2026-11-25",
+  "generatedAt": "2026-11-26",
   "spots": [
     {
       "id": "dresden-33d6c27148",
@@ -672,17 +672,17 @@
       "source": "Parken für Menschen mit Behinderungen – Dresden (nicht angegeben)"
     },
     {
-      "id": "dresden-a3732510cb",
+      "id": "dresden-8849baa27e",
       "city": "dresden",
-      "label": "Aussiger Straße 10",
+      "label": "Aussiger Straße",
       "street": "Aussiger Straße",
-      "houseNumber": "10",
+      "houseNumber": null,
       "note": null,
-      "timeRestriction": "Mo - Fr, 8 - 18 Uhr",
+      "timeRestriction": null,
       "district": "Dresden",
       "spotCount": 1,
-      "lat": 51.032696008412834,
-      "lng": 13.810132054296524,
+      "lat": 51.03274664749526,
+      "lng": 13.810284602763069,
       "geoAccuracy": "house",
       "source": "Parken für Menschen mit Behinderungen – Dresden (nicht angegeben)"
     },
